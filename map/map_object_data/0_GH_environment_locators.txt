@@ -1,0 +1,185 @@
+﻿object={
+	name="gh_crystal_01"
+	render_pass=MapUnderWater
+	clamp_to_water_level=yes
+	generated_content=no
+	layer="gh_environmental"
+	entity="gh_crystal_1_entity"
+	count=19
+	transform="2195.356689 -13.586792 2120.070312 0.000000 0.741168 0.000000 0.671320 0.693956 0.693956 0.693956
+1975.335938 -13.586792 1819.056030 0.000000 0.741168 0.000000 0.671320 0.424588 0.424588 0.424588
+1962.346313 -3.873901 1939.582764 0.000000 0.068169 0.000000 0.997674 0.207509 0.207509 0.207509
+2042.283325 -3.873901 1896.475586 0.000000 0.998561 0.000000 -0.053629 0.233351 0.233351 0.233351
+2039.740112 -4.135986 1891.626709 0.000000 0.484986 0.000000 0.874521 0.233351 0.233351 0.233351
+2043.745483 -4.135986 1886.080322 0.000000 0.628312 0.000000 0.777961 0.170361 0.170361 0.170361
+2039.381348 -7.769043 1894.488892 0.000000 0.758440 0.000000 0.651743 0.297715 0.297715 0.297715
+2043.911743 -6.144165 1932.288818 0.000000 0.988310 0.000000 0.152460 0.206678 0.206678 0.206678
+2044.164429 -5.332886 1933.154541 0.000000 0.993603 0.000000 0.112929 0.149196 0.149196 0.149196
+2036.682739 -12.877686 1873.718262 0.000000 0.357254 0.000000 0.934007 0.514275 0.514275 0.514275
+2039.927368 -8.006104 1893.874756 0.000000 0.894276 0.000000 0.447515 0.348650 0.348650 0.348650
+2052.385742 -5.438721 1889.063232 0.000000 0.000000 0.000000 1.000000 0.269659 0.269659 0.269659
+2692.488037 -0.131348 2395.011719 0.000000 -0.993205 0.000000 -0.116378 0.100000 0.100000 0.100000
+3083.292480 -3.635742 2736.697998 0.000000 -0.243638 0.000000 -0.969866 0.119955 0.119955 0.119955
+3164.249756 -1.802979 2738.277344 0.000000 -0.971564 0.000000 -0.236778 0.119955 0.119955 0.119955
+1596.564087 -1.642090 1780.241455 0.000000 0.433940 0.000000 -0.900942 0.059484 0.059484 0.059484
+1590.594482 -4.468262 1775.081055 0.000000 -0.632352 0.000000 0.774681 0.117393 0.117393 0.117393
+1590.659790 -2.450928 1777.861084 0.000000 0.000000 0.000000 1.000000 0.072992 0.072992 0.072992
+2391.130615 -2.035156 2555.603760 0.000000 0.000000 0.000000 1.000000 0.100000 0.100000 0.100000
+"}
+object={
+	name="gh_rock_canyon_01"
+	render_pass=MapUnderWater
+	clamp_to_water_level=yes
+	generated_content=no
+	layer="gh_environmental"
+	entity="rock_canyon_01_entity"
+	count=0
+}
+object={
+	name="gh_rock_canyon_02"
+	render_pass=MapUnderWater
+	clamp_to_water_level=yes
+	generated_content=no
+	layer="gh_environmental"
+	entity="rock_canyon_02_entity"
+	count=1
+	transform="2413.231689 -1.552307 1006.713135 0.000000 0.861589 0.000000 0.507607 0.647607 0.647607 0.647607
+"}
+object={
+	name="gh_rock_canyon_03"
+	render_pass=MapUnderWater
+	clamp_to_water_level=yes
+	generated_content=no
+	layer="gh_environmental"
+	entity="rock_canyon_03_entity"
+	count=0
+}
+object={
+	name="gh_rock_canyon_04"
+	render_pass=MapUnderWater
+	clamp_to_water_level=yes
+	generated_content=no
+	layer="gh_environmental"
+	entity="rock_canyon_04_entity"
+	count=1
+	transform="2409.477783 -2.440308 1008.152100 0.000000 0.000000 0.000000 1.000000 0.495819 0.495819 0.495819
+"}
+object={
+	name="gh_rock_canyon_05"
+	render_pass=MapUnderWater
+	clamp_to_water_level=yes
+	generated_content=no
+	layer="gh_environmental"
+	entity="rock_canyon_05_entity"
+	count=1
+	transform="2052.299072 -1.613770 1004.427002 0.000000 0.440903 0.000000 0.897555 1.000000 1.000000 1.000000
+"}
+object={
+	name="gh_rock_canyon_06"
+	render_pass=MapUnderWater
+	clamp_to_water_level=yes
+	generated_content=no
+	layer="gh_environmental"
+	entity="rock_canyon_06_entity"
+	count=0
+}
+object={
+	name="gh_rock_canyon_07"
+	render_pass=MapUnderWater
+	clamp_to_water_level=yes
+	generated_content=no
+	layer="gh_environmental"
+	entity="rock_canyon_07_entity"
+	count=0
+}
+object={
+	name="gh_rock_canyon_08"
+	render_pass=MapUnderWater
+	clamp_to_water_level=yes
+	generated_content=no
+	layer="gh_environmental"
+	entity="rock_canyon_03_entity"
+	count=0
+}
+object={
+	name="gh_rock_canyon_red_01"
+	render_pass=MapUnderWater
+	clamp_to_water_level=yes
+	generated_content=no
+	layer="gh_environmental"
+	entity="rock_canyon_01_red_entity"
+	count=0
+}
+object={
+	name="gh_rock_canyon_red_02"
+	render_pass=MapUnderWater
+	clamp_to_water_level=yes
+	generated_content=no
+	layer="gh_environmental"
+	entity="rock_canyon_02_red_entity"
+	count=0
+}
+object={
+	name="gh_rock_canyon_red_03"
+	render_pass=MapUnderWater
+	clamp_to_water_level=yes
+	generated_content=no
+	layer="gh_environmental"
+	entity="rock_canyon_03_red_entity"
+	count=0
+}
+object={
+	name="gh_rock_canyon_red_04"
+	render_pass=MapUnderWater
+	clamp_to_water_level=yes
+	generated_content=no
+	layer="gh_environmental"
+	entity="rock_canyon_04_red_entity"
+	count=0
+}
+object={
+	name="gh_rock_canyon_red_05"
+	render_pass=MapUnderWater
+	clamp_to_water_level=yes
+	generated_content=no
+	layer="gh_environmental"
+	entity="rock_canyon_05_red_entity"
+	count=0
+}
+object={
+	name="gh_rock_canyon_red_06"
+	render_pass=MapUnderWater
+	clamp_to_water_level=yes
+	generated_content=no
+	layer="gh_environmental"
+	entity="rock_canyon_06_red_entity"
+	count=0
+}
+object={
+	name="gh_rock_canyon_red_07"
+	render_pass=MapUnderWater
+	clamp_to_water_level=yes
+	generated_content=no
+	layer="gh_environmental"
+	entity="rock_canyon_07_red_entity"
+	count=0
+}
+object={
+	name="gh_rock_canyon_red_08"
+	render_pass=MapUnderWater
+	clamp_to_water_level=yes
+	generated_content=no
+	layer="gh_environmental"
+	entity="rock_canyon_03_red_entity"
+	count=0
+}
+object={
+	name="gh_special_sea_arm"
+	render_pass=MapUnderWater
+	clamp_to_water_level=yes
+	generated_content=no
+	layer="gh_environmental"
+	entity="gh_special_sea_arm_entity"
+	count=1
+	transform="2012.201538 -3.703613 2075.687256 0.000000 -0.997237 0.000000 0.074283 4.103571 4.103571 4.103571
+"}

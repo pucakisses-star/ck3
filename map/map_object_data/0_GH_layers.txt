@@ -1,0 +1,56 @@
+﻿layer={
+	name="gh_animals"
+	fade_in=0
+	fade_out=12
+	category="map_other_category"
+	masks="low|medium|high"
+	visibility_tags=""
+}
+layer={
+	name="gh_bones"
+	fade_in=0
+	fade_out=9
+	category="map_other_category"
+	masks=""
+	visibility_tags=""
+}
+layer={
+	name="gh_buildings"
+	fade_in=0
+	fade_out=9
+	category="map_buildings_category"
+	masks="low|medium|high"
+	visibility_tags=""
+}
+layer={
+	name="gh_cave_walls"
+	fade_in=0
+	fade_out=9
+	category="map_buildings_category"
+	masks="low|medium|high"
+	visibility_tags=""
+}
+layer={
+	name="gh_environmental"
+	fade_in=0
+	fade_out=9
+	category="map_other_category"
+	masks="low|medium|high"
+	visibility_tags=""
+}
+layer={
+	name="gh_ruins"
+	fade_in=0
+	fade_out=9
+	category="map_buildings_category"
+	masks="low|medium|high"
+	visibility_tags=""
+}
+layer={
+	name="gh_special_buildings"
+	fade_in=0
+	fade_out=12
+	category="map_buildings_category"
+	masks="low|medium|high"
+	visibility_tags=""
+}

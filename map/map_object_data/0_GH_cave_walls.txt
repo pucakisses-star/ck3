@@ -1,0 +1,281 @@
+﻿object={
+	name="cave column 01"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="column_01_mesh"
+	count=1
+	transform="3205.067139 -0.283203 2707.441650 0.000000 0.000000 0.000000 1.000000 1.000000 1.000000 1.000000
+"}
+object={
+	name="cave column 02"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="column_02_mesh"
+	count=1
+	transform="3155.139160 -0.174805 2699.864990 0.000000 0.000000 0.000000 1.000000 1.000000 1.000000 1.000000
+"}
+object={
+	name="cave column 03"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="column_03_mesh"
+	count=3
+	transform="3232.222412 -1.014648 2709.006836 0.000000 0.000000 0.000000 1.000000 1.000000 1.000000 1.000000
+2740.430420 -0.415527 2545.395508 0.000000 0.000000 0.000000 1.000000 0.640576 0.640576 0.640576
+2746.110596 -1.529785 2544.443115 0.000000 0.000000 0.000000 1.000000 1.000000 1.000000 1.000000
+"}
+object={
+	name="flowstone walls 01"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="stalactite_wall_01_mesh"
+	count=0
+}
+object={
+	name="flowstone walls 02"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="stalactite_wall_02_mesh"
+	count=0
+}
+object={
+	name="flowstone walls 03"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="stalactite_wall_03_mesh"
+	count=0
+}
+object={
+	name="karst walls long 1"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="karst_wall_01_mesh"
+	count=0
+}
+object={
+	name="karst walls long 2"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="karst_wall_02_mesh"
+	count=0
+}
+object={
+	name="ravine walls 01"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="ravine_wall_01_mesh"
+	count=1
+	transform="2777.439209 -1.560547 2493.355469 0.000000 0.517150 0.000000 0.855895 1.000000 1.000000 1.000000
+"}
+object={
+	name="ravine walls 02"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="ravine_wall_02_mesh"
+	count=3
+	transform="3356.179199 -2.088135 2849.244629 0.000000 0.000000 0.000000 1.000000 1.000000 1.000000 1.000000
+2775.501221 -0.883545 2493.755371 0.000000 0.972474 0.000000 -0.233011 1.000000 1.000000 1.000000
+2776.694092 -1.509033 2501.126953 0.000000 -0.907793 0.000000 -0.419419 1.000000 1.000000 1.000000
+"}
+object={
+	name="ravine walls 03"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="ravine_wall_03_mesh"
+	count=3
+	transform="2768.478760 -2.016846 2499.968506 0.000000 0.206579 0.000000 -0.978430 1.000000 1.000000 1.000000
+2745.174805 -2.297607 2546.656250 0.000000 0.960736 0.000000 0.277465 1.000000 1.000000 1.000000
+2773.736084 -0.882812 2502.120361 0.000000 0.661585 0.000000 0.749870 1.000000 1.000000 1.000000
+"}
+object={
+	name="ravine walls 04"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="ravine_wall_04_mesh"
+	count=3
+	transform="2772.428223 -2.253662 2496.617676 0.000000 0.407466 0.000000 0.913220 1.000000 1.000000 1.000000
+2778.058105 -2.397705 2498.756836 0.000000 0.922214 0.000000 0.386680 1.000000 1.000000 1.000000
+2770.949219 -2.038818 2493.566162 0.000000 0.199399 0.000000 0.979918 1.000000 1.000000 1.000000
+"}
+object={
+	name="ravine walls 05"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="ravine_wall_05_mesh"
+	count=1
+	transform="2772.455078 -2.258301 2498.356689 0.000000 -0.737278 0.000000 -0.675590 1.000000 1.000000 1.000000
+"}
+object={
+	name="rough boulder 01"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="rough_boulder_01_mesh"
+	count=2
+	transform="2799.175049 -3.140381 2565.805176 0.000000 0.000000 0.000000 1.000000 1.000000 1.000000 1.000000
+2803.502686 -3.420166 2550.446533 0.000000 0.737366 0.000000 0.675493 1.000000 1.000000 1.000000
+"}
+object={
+	name="rough boulder 02"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="rough_boulder_02_mesh"
+	count=1
+	transform="3175.084473 0.000000 2720.932617 0.000000 0.000000 0.000000 1.000000 1.000000 1.000000 1.000000
+"}
+object={
+	name="rough boulder 03"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="rough_boulder_03_mesh"
+	count=2
+	transform="3358.625000 -0.426758 2826.236084 0.000000 0.000000 0.000000 1.000000 1.000000 1.000000 1.000000
+2802.402100 0.000000 1981.680176 0.000000 0.000000 0.000000 1.000000 0.356348 0.356348 0.356348
+"}
+object={
+	name="rough walls long 2"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="rough_wall_02_mesh"
+	count=0
+}
+object={
+	name="rough walls long 3"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="rough_wall_03_mesh"
+	count=0
+}
+object={
+	name="stalactite 01"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="stalactite_01_mesh"
+	count=0
+}
+object={
+	name="stalagmite 01"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="stalagmite_01_mesh"
+	count=3
+	transform="3174.669434 0.000000 2706.694336 0.000000 0.000000 0.000000 1.000000 1.000000 1.000000 1.000000
+3200.883301 -0.021973 2733.545654 0.000000 0.000000 0.000000 1.000000 1.000000 1.000000 1.000000
+2750.689209 -0.426514 2534.677246 0.000000 0.584429 0.000000 0.811445 1.575781 1.575781 1.575781
+"}
+object={
+	name="stalagmite 02"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="stalagmite_02_mesh"
+	count=5
+	transform="3200.158691 -0.436279 2722.486816 0.000000 0.000000 0.000000 1.000000 1.000000 1.000000 1.000000
+3157.164307 -0.539307 2710.794434 0.000000 0.000000 0.000000 1.000000 1.000000 1.000000 1.000000
+2797.017578 -1.133789 2554.719238 0.000000 0.000000 0.000000 1.000000 1.000000 1.000000 1.000000
+2789.517578 -1.214600 2559.476074 0.000000 0.000000 0.000000 1.000000 1.000000 1.000000 1.000000
+2792.514648 -1.427002 2565.648926 0.000000 -0.584676 0.000000 0.811267 1.000000 1.000000 1.000000
+"}
+object={
+	name="tunnel wall long"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="worked_wall_02_mesh"
+	count=2
+	transform="1907.656860 -1.251465 834.742798 0.000000 0.417585 0.000000 0.908638 0.443886 0.443886 0.443886
+1906.858032 -1.127747 835.744446 0.000000 0.428149 0.000000 0.903708 0.439728 0.439728 0.439728
+"}
+object={
+	name="tunnel wall short"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="worked_wall_01_mesh"
+	count=0
+}
+object={
+	name="worked gate"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="worked_gate_01_mesh"
+	count=6
+	transform="1553.163208 -0.617188 1712.099243 0.000000 -0.389708 0.000000 0.920939 1.000000 1.000000 1.000000
+1903.315430 0.000000 831.946655 0.000000 -0.905628 0.000000 0.424073 0.752509 0.752509 0.752509
+1911.971436 0.000000 839.324219 0.000000 0.428039 0.000000 0.903760 0.808055 0.808055 0.808055
+2977.419189 -1.446045 2439.669434 0.000000 0.121192 0.000000 0.992629 1.000000 1.000000 1.000000
+2795.410400 -2.978516 1936.317139 0.000000 -0.791207 0.000000 0.611548 1.000000 1.000000 1.000000
+2912.067627 -2.153076 2003.921143 0.000000 -0.193384 0.000000 0.981123 1.000000 1.000000 1.000000
+"}
+object={
+	name="worked stone column"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="worked_column_01_mesh"
+	count=7
+	transform="3225.483643 -6.644531 2716.249268 0.000000 0.930140 0.000000 0.367205 1.741089 1.741089 1.741089
+3226.511475 -4.375000 2712.306641 0.000000 -0.280253 0.000000 0.959926 1.741089 1.741089 1.741089
+3361.031006 -3.283691 2844.238770 0.000000 0.000000 0.000000 1.000000 1.000000 1.000000 1.000000
+3360.823975 -2.200439 2833.345459 0.000000 0.000000 0.000000 1.000000 1.000000 1.000000 1.000000
+3365.966797 -1.061523 2838.911621 0.000000 0.000000 0.000000 1.000000 1.000000 1.000000 1.000000
+3354.262695 -1.061523 2836.669189 0.000000 0.000000 0.000000 1.000000 1.000000 1.000000 1.000000
+2555.606689 -6.911560 1019.298218 0.000000 -0.400487 0.000000 0.916302 2.485943 2.485943 2.485943
+"}
+object={
+	name="worked stone column line"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_cave_walls"
+	pdxmesh="worked_column_line_01_mesh"
+	count=3
+	transform="1581.120728 -1.626831 1652.867310 0.000000 0.165792 0.000000 -0.986161 1.000000 1.000000 1.000000
+1900.259521 0.000000 830.104980 0.000000 -0.332635 0.000000 0.943056 0.388214 0.388214 0.388214
+1914.600952 0.000000 842.058044 0.000000 -0.333124 0.000000 0.942883 0.400616 0.400616 0.400616
+"}

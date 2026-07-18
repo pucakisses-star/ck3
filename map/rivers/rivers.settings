@@ -1,0 +1,23 @@
+#AGOT Modified
+#"FlowNormalUvScale" = 0.400000
+#"FlowNormalSpeed" = 0.075000
+#"FoamFactorNear" = 0.500000
+#"FoamFactorFar" = 1.000000
+"FlowNormalUvScale" = 0.100000
+"FlowNormalSpeed" = 0.025000
+"FoamFactorNear" = 1.500000
+"FoamFactorFar" = 4.000000
+"FoamFactorFarZoomstep" = 10
+"NoiseScale" = 0.250000
+"NoiseSpeed" = 2.000000
+#AGOT Modified
+#"FlattenMult" = 1.000000
+"FlattenMult" = 0.10000
+"DepthFakeFactor" = 2.000000
+"OceanFadeRate" = 0.800000
+#AGOT Modified
+#"Depth" = 0.150000
+"Depth" = 0.25
+"Bottom.DiffuseTexture" = "gfx/map/rivers/river_bottom_diffuse.dds"
+"Bottom.NormalTexture" = "gfx/map/rivers/river_bottom_normal.dds"
+"Bottom.MaterialTexture" = "gfx/map/rivers/river_bottom_gloss.dds"
