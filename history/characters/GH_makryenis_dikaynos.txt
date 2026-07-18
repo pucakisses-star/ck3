@@ -1,0 +1,166 @@
+﻿makryenis_dikaynos_1 = {
+	name = "Eudokia"
+	dna = makryenis_dikaynos_1
+	religion = "dikaynos"
+	culture = "makryenis"
+	female = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_western_10
+		}
+	}
+
+	1193.2.16 = {
+		birth = yes
+	}
+
+	1205.1.1 = {
+		trait = diligent
+	trait = arbitrary
+	trait = vengeful
+	}
+
+	1209.2.16 = {
+		trait = education_learning_4
+	trait = scholar
+	}
+
+	1237.9.4 = {
+		trait = blind
+	}
+}
+
+makryenis_dikaynos_2 = {
+	name = "Alcon"
+	religion = "dikaynos"
+	culture = "makryenis"
+
+	1230.8.21 = {
+		birth = yes
+		trait = beauty_good_1
+	}
+
+	1242.1.1 = {
+		trait = just
+		trait = honest
+		trait = brave
+	}
+
+	1246.8.21 = {
+		trait = education_diplomacy_4
+	}
+}
+
+makryenis_dikaynos_3 = {
+	name = "Koinos"
+	religion = "dikaynos"
+	culture = "makryenis"
+
+	1215.7.18 = {
+		birth = yes
+	}
+}
+
+makryenis_dikaynos_4 = {
+	name = "Melissa"
+	religion = "dikaynos"
+	culture = "makryenis"
+	female = yes
+
+	1222.7.18 = {
+		birth = yes
+	}
+}
+
+makryenis_dikaynos_5 = {
+	name = "Nikarete"
+	religion = "dikaynos"
+	culture = "makryenis"
+	female = yes
+
+	1227.7.18 = {
+		birth = yes
+	}
+
+	1239.1.1 = {
+		trait = paranoid
+		trait = arbitrary
+		trait = vengeful
+	}
+
+	1242.7.18 = {
+		trait = education_learning_3
+	}
+}
+
+makryenis_dikaynos_6 = {
+	name = "Kannadis"
+	religion = "dikaynos"
+	culture = "makryenis"
+
+	1219.7.18 = {
+		birth = yes
+	}
+
+	1231.1.1 = {
+		trait = deceitful
+		trait = greedy
+		trait = callous
+	}
+
+	1235.9.13 = {
+		trait = education_stewardship_3
+	}
+}
+
+makryenis_dikaynos_7 = {
+	name = "Boethios"
+	religion = "dikaynos"
+	culture = "makryenis"
+
+	1218.9.13 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		trait = sadistic
+		trait = wrathful
+		trait = zealous
+	}
+
+	1234.9.13 = {
+		trait = education_martial_2
+	}
+}
+
+makryenis_dikaynos_8 = {
+	name = "Nestor"
+	religion = "dikaynos"
+	culture = "makryenis"
+
+	1220.7.18 = {
+		birth = yes
+	}
+}
+
+makryenis_dikaynos_9 = {
+	name = "Pulcheria"
+	religion = "dikaynos"
+	culture = "makryenis"
+	female = yes
+
+	1230.10.11 = {
+		birth = yes
+	}
+
+	1242.1.1 = {
+		trait = wrathful
+		trait = arbitrary
+		trait = gluttonous
+	}
+
+	1246.10.11 = {
+		trait = education_intrigue_3
+	}
+}

@@ -1,0 +1,4805 @@
+﻿tasurmad_wardenism_1 = {
+	name = "Adabyn"
+	dna = tasurmad_wardenism_1
+	religion = "wardenism"
+	culture = "tasurmad"
+	martial = 3
+	diplomacy = 12
+	intrigue = 8
+	stewardship = 3
+	father = tasurmad_wardenism_19
+	mother = tasurmad_wardenism_67
+	trait = patient
+	trait = humble
+	trait = calm
+	trait = cautious_leader
+	trait = education_learning_4
+	trait = magic_good_1
+	dynasty = dyn_warden_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_mena_04
+			custom_beards = male_beard_mena_02
+		}
+	}
+
+	1199.4.11 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 3 }
+		}
+	}
+	1220.1.1 = {
+		trait = lifestyle_jurist
+	}
+	1266.3.11 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_2 = {
+	name = "A_rI_f"
+	dna = tasurmad_wardenism_2
+	religion = "wardenism"
+	culture = "tasurmad"
+	sexuality = asexual
+	diplomacy = 14
+	father = tasurmad_haradar_6
+
+	trait = ambitious
+	trait = brave
+	trait = impatient
+
+	trait = intellect_good_1
+	dynasty = dyn_warden_2
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = no_hair
+			custom_beards = no_beard
+		}
+	}
+
+	1220.3.20 = {
+		birth = yes
+		trait = magic_good_4
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 4 }
+		}
+	}
+
+	1236.3.20 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+		trait = education_diplomacy_3
+		trait = aggressive_attacker
+		trait = gh_historical_blademaster_2
+	}
+
+	1288.8.9 = { #killed in Obarek's coup
+		death = {
+			death_reason = death_execution
+			killer = tasurmad_wardenism_72
+		}
+	}
+}
+
+tasurmad_wardenism_3 = {
+	name = "SajaH_"
+	religion = "wardenism"
+	culture = "tasurmad"
+	trait = magic_good_4
+	female = yes
+	1199.1.15 = {
+		birth = yes
+	}
+	1212.1.15 = {
+		trait = chaste
+		trait = temperate
+		trait = callous
+		trait = education_diplomacy_2
+	}
+	1216.7.25 = {
+		add_spouse = tasurmad_wardenism_1
+	}
+	1260.11.1 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_4 = {
+	name = "YusU_f"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1220.6.18 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_5 = {
+	name = "Bakr"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1224.6.18 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_6 = {
+	name = "S_abI_ir"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1212.6.18 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_7 = {
+	name = "YusA_r"
+	dna = yusar
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+	father = tasurmad_wardenism_99
+	763.7.1 = {
+		birth = yes
+		trait = magic_good_5
+		trait = intellect_good_2
+	}
+	775.1.1 = {
+		trait = wrathful
+		trait = sadistic
+		trait = paranoid
+	}
+	779.7.1 = {
+		trait = strategist
+		trait = overseer
+		trait = education_arcana_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+	795.1.1 = {
+		trait = gh_glowing_veins
+		trait = gh_glowing_eyes
+	}
+
+	802.9.13 = { # Went insane from Halakdun
+		trait = lunatic_1
+		trait = gh_beset_by_visions
+	}
+
+	809.3.17 = {
+		death = {
+			death_reason = death_duel
+			killer = tasurmad_wardenism_8
+		}
+	}
+}
+
+tasurmad_wardenism_8 = {
+	name = "Tathtali"
+	dna = tathtali
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+
+	father = tasurmad_wardenism_7
+
+	785.8.18 = {
+		birth = yes
+		trait = physique_good_2
+		trait = intellect_good_2
+		trait = magic_good_3
+	}
+	797.1.1 = {
+		trait = brave
+		trait = just
+		trait = ambitious
+	}
+
+	801.8.18 = {
+		trait = education_learning_5
+	}
+
+	809.3.17 = {
+		trait = kinslayer_3
+	}
+
+	865.12.3 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_9 = {
+	name = "Usamar"
+	dna = uthman
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+	father = tasurmad_wardenism_8
+	mother = tasurmad_wardenism_66
+	trait = magic_good_3
+	trait = trusting
+	trait = impatient
+	trait = shy
+	trait = education_diplomacy_3
+
+	812.7.12 = {
+		birth = yes
+	}
+
+	874.12.12 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_10 = {
+	name = "AnSI_r"
+	dna = nasir
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+	father = tasurmad_wardenism_9
+	trait = magic_good_2
+	trait = scholar
+	trait = patient
+	trait = honest
+	trait = gluttonous
+	trait = education_learning_4
+
+	852.7.12 = {
+		birth = yes
+	}
+
+	899.10.11 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_11 = {
+	name = "YusU_f"
+	dna = yusuf
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+	father = tasurmad_wardenism_10
+	trait = magic_good_2
+	trait = ambitious
+	trait = just
+	trait = vengeful
+	trait = education_learning_5
+
+	890.7.12 = {
+		birth = yes
+	}
+
+	956.10.11 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_12 = {
+	name = "Essaid"
+	dna = essaid
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+	father = tasurmad_wardenism_11
+	trait = magic_good_2
+	trait = lustful
+	trait = gregarious
+	trait = callous
+
+	926.10.1 = {
+		birth = yes
+	}
+
+	966.10.11 = {
+		death = {
+			death_reason = death_execution
+			killer = tasurmad_wardenism_13
+		}
+	}
+}
+
+tasurmad_wardenism_13 = {
+	name = "Mukasim"
+	dna = muktafi
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+	father = tasurmad_wardenism_11
+	trait = magic_good_3
+	trait = sadistic
+	trait = arbitrary
+	trait = vengeful
+
+	931.10.1 = {
+		birth = yes
+	}
+
+	979.10.11 = {
+		death = {
+			death_reason = death_poison
+		}
+	}
+}
+
+tasurmad_wardenism_14 = {
+	name = "Qa_im"
+	dna = qaim
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+	father = tasurmad_wardenism_11
+	trait = magic_good_4
+	sexuality = homosexual
+	trait = compassionate
+	trait = patient
+	trait = just
+
+	939.10.1 = {
+		birth = yes
+	}
+
+	1002.10.11 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_15 = {
+	name = "Mutarshid"
+	dna = mutarshid
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+	father = tasurmad_wardenism_13
+	trait = magic_good_4
+	trait = arbitrary
+	trait = trusting
+	trait = humble
+
+	976.10.1 = {
+		birth = yes
+	}
+
+	1049.10.11 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_16 = {
+	name = "Ista_S_im"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+	father = tasurmad_wardenism_15
+	mother = easternimperial_aversarinas_aagiokrata_63
+	trait = shy
+	trait = arrogant
+	trait = magic_good_5
+	trait = patient
+
+	1015.10.1 = {
+		birth = yes
+	}
+	1063.11.12 = {
+		add_spouse = northernimperial_aversarinas_aagiokrata_5
+	}
+	1099.10.11 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+tasurmad_wardenism_17 = {
+	name = "RaDI_"
+	dna = radi_mustasim
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+
+	father = tasurmad_wardenism_16
+	mother = northernimperial_aversarinas_aagiokrata_5
+
+	1067.10.1 = {
+		birth = yes
+		trait = magic_good_8
+		trait = intellect_good_2
+	}
+
+	1079.1.1 = {
+		trait = ambitious
+		trait = callous
+		trait = paranoid
+	}
+
+	1083.10.1 = {
+	trait = education_learning_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:school_of_esoterics }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1099.10.24 = {
+		trait = kinslayer_3
+	}
+
+	1121.2.2 = {
+		effect = {
+			upgrade_stacking_modifier_by_level_effect = { MODIFIER = magic_life_extension_modifier TYPE = character LEVEL = 10 YEARS = -1  } 
+			upgrade_stacking_modifier_by_level_effect = { MODIFIER = magic_arcane_degeneration_modifier TYPE = character LEVEL = 1 YEARS = -1  } 
+			set_variable = {
+				name = life_extention_amount_raw
+				value = 10
+			}
+		}
+	}
+
+	1179.10.11 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_18 = {
+	name = "RaDI_"
+	dna = radi_radi
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+	father = tasurmad_wardenism_17
+	mother = easternimperial_lifepath_1
+	trait = magic_good_1
+	trait = honest
+	trait = callous
+	trait = stubborn
+
+	1141.10.1 = {
+		birth = yes
+		give_nickname = nick_the_youngest
+        effect = {
+            add_character_flag = {
+                flag = had_nickname_event
+            }
+        }
+	}
+
+	1162.1.1 = { # Permanently disabled after a life threatening riding accident.
+		trait = infirm
+		trait = intellect_bad_1
+		trait = dull
+	}
+
+	1183.10.11 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_19 = {
+	name = "QahI_r"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+	father = tasurmad_wardenism_18
+	mother = easternimperial_aversarinas_aagiokrata_64
+	trait = magic_good_2
+	trait = ambitious
+	trait = cynical
+	trait = impatient
+
+	1161.10.1 = {
+		birth = yes
+	}
+
+	1215.1.1 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_20 = {
+	name = "AkI_n"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1221.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_21 = {
+	name = "Musah"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1224.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_22 = {
+	name = "Mahdi"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1219.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_23 = {
+	name = "Shujah"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1234.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_24 = {
+	name = "Sa_daddin"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1222.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_25 = {
+	name = "Bakr"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1231.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_26 = {
+	name = "SamI_"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1215.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_27 = {
+	name = "AlI_m"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1226.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_28 = {
+	name = "MurH_ajdI_l" #Formerly Muhammad
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1216.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_29 = {
+	name = "Idris"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1220.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_30 = {
+	name = "IsA_f"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1219.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_31 = {
+	name = "Idris"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1232.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_32 = {
+	name = "Musah"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1225.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_33 = {
+	name = "AH_sI_n" #Formerly Hussayn
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_34 = {
+	name = "Ak_In"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1217.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_35 = {
+	name = "Alyah"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1215.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_36 = {
+	name = "AghlI_b"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1233.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_37 = {
+	name = "Sadiq"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1228.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_38 = {
+	name = "Alyah"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1217.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_39 = {
+	name = "H_usA_n"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1226.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_40 = {
+	name = "AghlI_b"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1234.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_41 = {
+	name = "Mura_im"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_42 = {
+	name = "Qawurd"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1233.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_43 = {
+	name = "YusU_f"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1218.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_44 = {
+	name = "Asdaddiyah"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1226.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_45 = {
+	name = "MurH_ajdI_l"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1220.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_46 = {
+	name = "AH_sI_n" #Formerly Hussayn
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_4
+
+	1231.1.1 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 1 }
+		}
+	}
+}
+
+tasurmad_wardenism_47 = {
+	name = "Z_a_nuddiyah" #Formerly Zainuddin
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1223.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_48 = {
+	name = "HusA_m"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1219.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_49 = {
+	name = "Z_ifriddiyah" #Formerly Muzaffaraddin
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1231.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_50 = {
+	name = "Adsal_adl" #Formerly Abdullah
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_5
+	1217.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_51 = {
+	name = "JabI_r"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1218.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_52 = {
+	name = "T_alI_b"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_53 = { #Judge Zeyd, will appear in 1298
+	name = "Zeyd"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1219.1.1 = {
+		birth = yes
+	}
+	1235.1.1 = {
+		trait = education_learning_4
+		trait = zealous
+		trait = patient
+		trait = paranoid
+	}
+	1252.1.1 = {
+		trait = lifestyle_jurist
+	}
+}
+
+tasurmad_wardenism_54 = {
+	name = "AH_sI_n" #Formerly Hussayn
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1220.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_55 = {
+	name = "BaHI_r"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_56 = {
+	name = "Wuhayb" #Formerly Abdul-Wahab
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1222.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_57 = {
+	name = "Zulfiqar"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1224.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_58 = {
+	name = "Shaiban"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_5
+
+	1227.8.12 = {
+		birth = yes
+		trait = magic_good_4
+	}
+	1243.8.12 = {
+		trait = education_arcana_4
+		trait = compassionate
+		trait = calm
+		trait = content
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:greenwenders_of_sarradon }
+			set_variable = { name = historical_magic_school_min_spells value = 12 }
+			learn_global_spell_effect = { SPELL_IDENTIFIER = embercrown_coronation }
+			learn_global_spell_effect = { SPELL_IDENTIFIER = fire_elementals }
+			learn_global_spell_effect = { SPELL_IDENTIFIER = justice_of_the_primeval_garden }
+		}
+	}
+}
+
+tasurmad_wardenism_59 = {
+	name = "Sa_daddin"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1219.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_60 = {
+	name = "Malik"
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1217.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_61 = {
+	name = "SamI_"
+	religion = wardenism
+	culture = tasurmad
+	dynasty_house = house_diqaynid
+
+	father = tasurmad_wardenism_77
+
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 3
+	intrigue = 6
+	stewardship = 8
+	learning = 6
+	prowess = 8
+
+	1221.3.3 = {
+		birth = yes
+	}
+
+	1233.1.1 = {
+		trait = diligent
+		trait = just
+		trait = gluttonous
+	}
+
+	1237.3.3 = {
+		trait = education_intrigue_4
+		trait = lifestyle_jurist
+	}
+}
+
+tasurmad_wardenism_62 = {
+	name = "Awabt" #Formerly Sulayman
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1221.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_63 = {
+	name = "Inul_IsA_h" #Formerly Abdul-Qadir
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1221.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_64 = {
+	name = "Adi_Ajjahi" #Formerly Abu-Bakr
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1219.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_65 = {
+	name = "Qa_ammah" #Formerly Youkhanna
+	religion = "wardenism"
+	culture = "tasurmad"
+
+	1228.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_wardenism_66 = {
+	name = "Sanad"
+	dna = sanad
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_3
+	female = yes
+
+	787.5.2 = {
+		birth = yes
+		trait = physique_good_1
+		trait = intellect_good_3
+	}
+	799.1.1 = {
+		trait = brave
+		trait = zealous
+		trait = ambitious
+	}
+
+	803.5.2 = {
+		trait = education_martial_4
+		trait = adventurer
+		trait = poet
+		trait = gh_historical_blademaster_3
+	}
+
+	810.5.28 = {
+		add_spouse = tasurmad_wardenism_8
+	}
+
+	832.3.17 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_67 = {
+	name = "Aisha"
+	religion = "wardenism"
+	culture = "tasurmad"
+	trait = magic_good_1
+	female = yes
+	1176.8.12 = {
+		birth = yes
+	}
+	1196.11.5 = {
+		add_spouse = tasurmad_wardenism_19
+	}
+	1252.1.11 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_68 = { # Harthah dead wife
+	name = "IshA_"
+	dna = tasurmad_wardenism_68
+	religion = "wardenism"
+	culture = "tasurmad"
+	female = yes
+	trait = education_diplomacy_3
+	trait = generous
+	trait = patient
+	trait = compassionate
+	trait = beauty_good_2
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp2_iberian_muslim_02
+		}
+	}
+
+	1203.6.18 = {
+		birth = yes
+	}
+
+	1240.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = makryenis_calysto_1
+		}
+	}
+}
+
+tasurmad_wardenism_69 = { # Dikaynos' wife
+	name = "Maymuna"
+	religion = wardenism
+	culture = tasurmad
+	dynasty = dyn_warden_1
+	female = yes
+
+	father = tasurmad_wardenism_16
+	mother = northernimperial_aversarinas_aagiokrata_5
+
+	disallow_random_traits = yes
+
+	martial = 4
+	diplomacy = 8
+	intrigue = 5
+	stewardship = 3
+	learning = 5
+	prowess = 5
+
+	1057.2.15 = {
+		birth = yes
+		trait = magic_good_4
+		trait = beauty_good_2
+	}
+
+	1069.1.1 = {
+		trait = brave
+		trait = humble
+		trait = wrathful
+	}
+
+	1075.2.15 = {
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1119.7.19 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+tasurmad_wardenism_70 = { # Ba'l Imran of Karibad
+	name = "Imran"
+	religion = wardenism
+	culture = tasurmad
+	dynasty = dyn_khenemhat_26
+
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 4
+	learning = 3
+	prowess = 7
+
+	1028.3.17 = {
+		birth = yes
+		trait = beauty_good_2
+	}
+
+	1040.1.1 = {
+		trait = callous
+		trait = calm
+		trait = temperate
+	}
+
+	1044.3.17 = {
+		trait = education_diplomacy_3
+		trait = lifestyle_jurist
+	}
+
+	1074.7.23 = {
+		death = {
+			death_reason = death_assassination
+		}
+	}
+}
+
+tasurmad_wardenism_71 = {
+	name = "Imru_ttayil"
+	religion = wardenism
+	culture = tasurmad
+	dynasty = dyn_khenemhat_26
+
+	father = tasurmad_wardenism_70
+
+	disallow_random_traits = yes
+
+	martial = 3
+	diplomacy = 8
+	intrigue = 4
+	stewardship = 5
+	learning = 7
+	prowess = 5
+
+	1050.9.8 = {
+		birth = yes
+	}
+
+	1062.1.1 = {
+		trait = callous
+		trait = arbitrary
+		trait = arrogant
+	}
+
+	1066.9.8 = {
+		trait = education_martial_3
+		trait = flexible_leader
+	}
+
+	1112.4.28 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+tasurmad_wardenism_72 = {
+	name = "Na_lA_"
+	religion = wardenism
+	culture = tasurmad
+	dynasty = dyn_khenemhat_26
+	female = yes
+
+	father = tasurmad_wardenism_70
+
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 9
+	intrigue = 4
+	stewardship = 7
+	learning = 5
+	prowess = 4
+
+	1055.1.20 = {
+		birth = yes
+		trait = beauty_good_1
+	}
+
+	1067.1.1 = {
+		trait = patient
+		trait = generous
+		trait = lazy
+	}
+
+	1071.1.20 = {
+		trait = education_learning_2
+	}
+
+	1088.3.17 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+tasurmad_wardenism_73 = { # Last of his dynasty
+	name = "Mu_awwaz"
+	religion = wardenism
+	culture = tasurmad
+	dynasty = dyn_khenemhat_26
+
+	father = tasurmad_wardenism_71
+
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 8
+	intrigue = 7
+	stewardship = 8
+	learning = 4
+	prowess = 7
+
+	1074.9.19 = {
+		birth = yes
+	}
+
+	1086.1.1 = {
+		trait = compassionate
+		trait = shy
+		trait = zealous
+	}
+
+	1090.9.19 = {
+		trait = education_martial_3
+		trait = holy_warrior
+		trait = gh_historical_blademaster_2
+	}
+
+	1123.3.27 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+tasurmad_wardenism_74 = { # Created Dikaynos cadet house in Sarradon, influential jurist during his time, served as a member of the High Court for much of Mamur Radi I's reign
+	name = "Azam"
+	religion = wardenism
+	culture = tasurmad
+	dynasty_house = house_diqaynid
+
+	father = westernimperial_aversarinas_aagiokrata_497
+	mother = tasurmad_wardenism_72
+
+	disallow_random_traits = yes
+
+	martial = 9
+	diplomacy = 4
+	intrigue = 8
+	stewardship = 9
+	learning = 9
+	prowess = 9
+
+	1088.3.17 = {
+		birth = yes
+		trait = intellect_good_2
+	}
+
+	1100.1.1 = {
+		trait = chaste
+		trait = stubborn
+		trait = patient
+	}
+
+	1104.3.17 = {
+		trait = education_diplomacy_4
+		trait = lifestyle_jurist
+	}
+
+	1165.5.18 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+tasurmad_wardenism_75 = {
+	name = "Alqama"
+	religion = wardenism
+	culture = tasurmad
+	dynasty_house = house_diqaynid
+
+	father = tasurmad_wardenism_74
+
+	disallow_random_traits = yes
+
+	martial = 10
+	diplomacy = 8
+	intrigue = 6
+	stewardship = 7
+	learning = 5
+	prowess = 3
+
+	1121.12.12 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+
+	1133.1.1 = {
+		trait = paranoid
+		trait = ambitious
+		trait = gluttonous
+	}
+
+	1137.12.12 = {
+		trait = education_diplomacy_2
+		trait = lifestyle_jurist
+		trait = depressed_1
+		trait = hashishiyah
+	}
+
+	1162.5.24 = {
+		death = {
+			death_reason = death_suicide
+		}
+	}
+}
+
+tasurmad_wardenism_76 = { # Also an outstanding jurist, died in the Beid Faluh uprising
+	name = "Dhahhak"
+	religion = wardenism
+	culture = tasurmad
+	dynasty_house = house_diqaynid
+
+	father = tasurmad_wardenism_75
+
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 3
+	intrigue = 5
+	stewardship = 5
+	learning = 9
+	prowess = 8
+
+	1149.2.9 = {
+		birth = yes
+	}
+
+	1161.1.1 = {
+		trait = callous
+		trait = patient
+		trait = stubborn
+	}
+
+	1165.2.9 = {
+		trait = education_learning_2
+		trait = lifestyle_jurist
+		trait = shrewd
+	}
+
+	1212.6.26 = {
+		death = {
+			death_reason = death_siege
+		}
+	}
+}
+
+tasurmad_wardenism_77 = { # Died in an attempted reclamation of his ancestral home of Khalkamah
+	name = "Azam"
+	religion = wardenism
+	culture = tasurmad
+	dynasty_house = house_diqaynid
+
+	father = tasurmad_wardenism_76
+
+	disallow_random_traits = yes
+
+	martial = 2
+	diplomacy = 7
+	intrigue = 6
+	stewardship = 7
+	learning = 6
+	prowess = 6
+
+	1186.4.4 = {
+		birth = yes
+	}
+
+	1198.1.1 = {
+		trait = diligent
+		trait = temperate
+		trait = wrathful
+	}
+
+	1202.4.4 = {
+		trait = education_martial_3
+		trait = reckless
+		trait = gallant
+	}
+
+	1244.11.28 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+
+tasurmad_wardenism_78 = { #Samaw's wife, tarshayn's mom
+	name = "Ramila"
+	religion = "wardenism"
+	culture = "tasurmad"
+	female = yes
+	1215.8.12 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	1261.8.12 = {
+		trait = education_diplomacy_2
+		trait = callous
+		trait = gluttonous
+		trait = lazy
+	}
+	1262.1.1 = {
+		add_spouse = tasurmad_wardenism_98
+	}
+}
+
+tasurmad_wardenism_79 = { #Adabyn's second son
+	name = "Hudhafa"
+	religion = "wardenism"
+	culture = "tasurmad"
+	father = tasurmad_wardenism_1
+	mother = tasurmad_wardenism_3
+	dynasty = dyn_warden_1
+	1240.8.9 = {
+		birth = yes
+		trait = magic_good_3
+	}
+	1264.8.9 = {
+		trait = education_stewardship_2
+		trait = compassionate
+		trait = calm
+		trait = temperate
+	}
+	1288.8.9 = { #killed in Obarek's coup
+		death = {
+			death_reason = death_execution
+			killer = tasurmad_wardenism_93
+		}
+	}
+}
+
+tasurmad_wardenism_80 = { #Adabyn's daughter, mainly a going concern for the 1254 start date or w/e
+	name = "Lubayna"
+	female = yes
+	religion = "wardenism"
+	culture = "tasurmad"
+	father = tasurmad_wardenism_1
+	mother = tasurmad_wardenism_3
+	dynasty = dyn_warden_1
+	1224.8.9 = {
+		birth = yes
+		trait = magic_good_2
+	}
+	1240.8.9 = {
+		trait = education_intrigue_2
+		trait = callous
+		trait = diligent
+		trait = ambitious
+	}
+	1262.8.9 = { #killed in freak accident
+		death = yes
+	}
+}
+
+tasurmad_wardenism_81 = { #Adabyn's other daughter, mainly a going concern for the 1254 start date
+	name = "Lubaba"
+	female = yes
+	religion = "wardenism"
+	culture = "tasurmad"
+	father = tasurmad_wardenism_1
+	mother = tasurmad_wardenism_3
+	dynasty = dyn_warden_1
+	1243.12.10 = {
+		birth = yes
+		trait = magic_good_7 #genetic freak
+		trait = physique_bad_1 #not long for this world
+	}
+	1253.12.30 = {
+		trait = smallpox
+	}
+	1256.11.11 = { #such a cruel world for children
+		death = {
+			death_reason = death_smallpox
+		}
+	}
+}
+
+tasurmad_wardenism_82 = { #Nabidus, powerful magi in 1298
+	name = "Nabidus"
+	religion = "wardenism"
+	culture = "tasurmad"
+	1252.5.1 = {
+		birth = yes
+		trait = magic_good_8
+		trait = intellect_good_1
+	}
+	1268.5.1 = {
+		trait = callous
+		trait = ambitious
+		trait = diligent
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:school_of_malignancies }
+			set_variable = { name = historical_magic_school_min_spells value = 9 }
+		}
+	}
+	1341.12.2 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_83 = { #Aarif's son and heir
+	name = "Imran"
+	religion = "wardenism"
+	culture = "tasurmad"
+	father = tasurmad_wardenism_2
+	mother = tasurmad_wardenism_84
+	dynasty = dyn_warden_2
+	1266.12.1 = {
+		birth = yes
+		trait = magic_good_2
+		trait = intellect_good_1
+	}
+	1282.12.1 = {
+		trait = vengeful
+		trait = brave
+		trait = education_martial_2
+		trait = ambitious
+		trait = arrogant
+	}
+}
+
+tasurmad_wardenism_84 = { #Aarif's wife
+	name = "Sanad"
+	female = yes
+	religion = "wardenism"
+	culture = "tasurmad"
+	1232.8.12 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	1248.8.12 = {
+		trait = education_stewardship_3
+		trait = calm
+		trait = ambitious
+		trait = impatient
+	}
+	1269.4.20 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_85 = { #Adabyn's youngest brother, Abbad the Posthumous
+	name = "Abbad"
+	religion = "wardenism"
+	culture = "tasurmad"
+	father = tasurmad_wardenism_19
+	mother = tasurmad_wardenism_67
+	dynasty = dyn_warden_1	
+	1215.3.5 = {
+		birth = yes
+		trait = magic_good_4
+	}
+	1231.3.5 = {
+		trait = education_learning_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:school_of_manifestations }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+		trait = generous
+		trait = lazy
+		trait = gluttonous
+	}
+}
+
+tasurmad_wardenism_86 = {
+	name = "Idris"
+	religion = "wardenism"
+	culture = "tasurmad"
+	father = tasurmad_wardenism_85
+	mother = tasurmad_wardenism_87
+	1250.5.5 = {
+		birth = yes
+		trait = magic_good_3
+	}
+	1266.5.5 =  {
+		trait = education_stewardship_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:school_of_manifestations }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+		trait = zealous
+		trait = just
+		trait = content
+	}
+	1288.8.9 = { #killed in Obarek's coup
+		death = {
+			death_reason = death_execution
+			killer = tasurmad_wardenism_93
+		}
+	}
+}
+
+tasurmad_wardenism_87 = { #Abbad's wife
+	name = "Sumayya"
+	religion = "wardenism"
+	culture = "tasurmad"
+	female = yes
+	1225.5.3 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	1241.5.3 = {
+		trait = education_intrigue_2
+		trait = vengeful
+		trait = wrathful
+		trait = temperate
+	}
+	1244.8.7 = {
+		add_spouse = tasurmad_wardenism_85
+	}
+	1272.5.5 = {
+		death = {
+			death_reason = death_smallpox
+		}
+	}
+}
+
+tasurmad_wardenism_88 = { #bandit king 
+	name = "Dubayn"
+	religion = "wardenism"
+	culture = "tasurmad"
+	1278.1.22 = {
+		birth = yes
+	}
+	1294.1.22 = {
+		trait = greedy
+		trait = ambitious
+		trait = vengeful
+		trait = education_martial_2
+	}
+	1296.2.22 = {
+		trait = peasant_leader
+	}
+}
+
+tasurmad_wardenism_89 = { #bandit king 2 but this ones evil camped out in the marcher castle
+	name = "Asema"
+	religion = "wardenism"
+	culture = "tasurmad"
+	female = yes
+	1264.12.1 = {
+		birth = yes
+	}
+	1280.12.1 = {
+		trait = sadistic
+		trait = paranoid
+		trait = wrathful
+		trait = education_martial_3
+	}
+	1282.2.22 = {
+		trait = peasant_leader
+	}
+	1283.2.22 = {
+		trait = murderer
+	}
+}
+
+
+tasurmad_wardenism_90 = { #the original
+	name = "Ishawq"
+	religion = "wardenism"
+	culture = "tasurmad"
+	father = tasurmad_wardenism_94
+	mother = tasurmad_wardenism_95
+	1276.3.12 = {
+		birth = yes
+		trait = magic_good_3
+	}
+	1288.8.9 = {
+		death = {
+			death_reason = death_execution
+			killer = tasurmad_wardenism_93
+		}
+	}
+}
+
+tasurmad_wardenism_91 = { #Ishawq 2
+	name = "Ishawq"
+	religion = "wardenism"
+	culture = "tasurmad"
+	
+	1276.3.15 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	1282.3.15 = {
+		trait = ambitious
+		trait = brave
+		trait = compassionate
+		trait = education_diplomacy_2
+	}
+	1306.12.1 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_92 = { # Prince Tarshayn, 1298 pretender
+	name = "Tarshayn"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+	father = tasurmad_wardenism_98
+	#mother = tasurmad_wardenism_99 needs fixing
+	1268.12.15 =  {
+		birth = yes
+	}
+	1284.12.15 = {
+		trait = ambitious
+		trait = trusting
+		trait = impatient
+		trait = lustful
+		trait = education_learning_3
+	}
+	1290.5.6 = {
+		trait = lifestyle_mystic
+	}
+	1292.12.3 = {
+		trait = lifestyle_blademaster
+	}
+	1293.1.2 = {
+		trait = adulterer
+	}
+}
+
+tasurmad_wardenism_93 = { #Obarek
+	name = "Obarek"
+	religion = "wardenism"
+	culture = "tasurmad"
+	1245.6.15 = {
+		birth = yes
+		trait = physique_good_2
+	}
+	1261.6.15 = {
+		trait = education_martial_4
+		trait = brave
+		trait = sadistic
+		trait = ambitious
+		trait = wrathful
+	}
+	1271.1.1 = {
+		trait = strong
+	}
+	1288.8.9 = {
+		trait = murderer
+	}
+}
+
+tasurmad_wardenism_94 = { #Adabyn's failson and heir
+	name = "Harith"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+	father = tasurmad_wardenism_1
+	mother = tasurmad_wardenism_3
+	1231.8.12 = {
+		birth = yes
+		trait = magic_good_4
+	}
+	1258.8.12 = {
+		trait = content
+		trait = trusting
+		trait = craven
+		trait = education_learning_1
+	}
+	1280.3.3 = {
+		trait = lifestyle_jurist
+	}
+	1282.12.1 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_95 = { #Harith's wife
+	name = "Nabila"
+	religion = "wardenism"
+	culture = "tasurmad"
+	female = yes
+	1252.12.30 = {
+		birth = yes
+		trait = magic_good_2
+	}
+	1268.12.30 = {
+		trait = education_diplomacy_1
+		trait = content
+		trait = calm
+		trait = compassionate
+	}
+	1274.8.12 = {
+		add_spouse = tasurmad_wardenism_94
+	}
+	1294.8.20 = { #died in the Sterilization
+		death = yes
+	}
+}
+
+tasurmad_wardenism_96 = { #the other kid
+	name = "Dhilik"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+	father = tasurmad_wardenism_94
+	mother = tasurmad_wardenism_95
+	1279.8.17 = {
+		birth = yes
+		trait = magic_good_4
+	}
+	1290.1.1 = {
+		trait = scarred
+	}
+	1294.8.20 = { #died in the Sterilization
+		death = yes
+	}
+}
+
+tasurmad_wardenism_97 = { #the other other kid, hanging around somewhere landless
+	name = "WarI_d"
+	religion = "wardenism"
+	culture = "tasurmad"
+	father = tasurmad_wardenism_94
+	mother = tasurmad_wardenism_95
+	dynasty = dyn_warden_1
+	1281.9.6 = {
+		birth = yes
+		trait = magic_good_2
+	}
+	
+	1297.9.6 = { #personality like a kicked dog
+		trait = education_learning_2
+		trait = ambitious
+		trait = craven
+		trait = sadistic
+	}
+}
+
+tasurmad_wardenism_98 = { #Adabyn's younger brother, Tarshayn's dad
+	name = "Samaw_al"
+	religion = "wardenism"
+	culture = "tasurmad"
+	father = tasurmad_wardenism_19
+	mother = tasurmad_wardenism_67
+	dynasty = dyn_warden_1
+	1209.8.12 = {
+		birth = yes
+		trait = magic_good_2
+	}
+	1255.8.12 = {
+		trait = education_martial_2
+		trait = content
+		trait = chaste
+		trait = wrathful
+	}
+	1288.8.9 = { #killed in Obarek's coup
+		death = {
+			death_reason = death_execution
+			killer = tasurmad_wardenism_93
+		}
+	}
+}
+
+tasurmad_wardenism_qasimid_1 = {
+    name = "Khaireddin" 
+
+    dynasty = dyn_qasimid
+    religion = ritualist
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = stubborn
+    trait = brave
+    trait = greedy
+
+    diplomacy = 6
+    martial = 8
+    stewardship = 7
+    intrigue = 3
+    learning = 7
+    prowess = 4
+
+    trait = education_martial_1
+
+    2.4.15 = {
+        birth = yes
+    }
+
+    35.9.17 = {
+        add_spouse = tasurmad_wardenism_qasimid_2
+    }
+
+    76.8.4 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_2 = {
+    name = "Samira" 
+    female = yes
+
+    religion = ritualist
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = greedy
+    trait = stubborn
+    trait = just
+
+    diplomacy = 8
+    martial = 3
+    stewardship = 6
+    intrigue = 7
+    learning = 7
+    prowess = 2
+
+    trait = education_diplomacy_2
+
+    18.12.4 = {
+        birth = yes
+    }
+
+    64.7.28 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_3 = {
+    name = "Uways" 
+
+    dynasty = dyn_qasimid
+    religion = ritualist
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_1
+    mother = tasurmad_wardenism_qasimid_2
+
+    sexuality = heterosexual
+
+    trait = content
+    trait = compassionate
+    trait = fickle
+
+    diplomacy = 5
+    martial = 5
+    stewardship = 4
+    intrigue = 4
+    learning = 9
+    prowess = 4
+
+    trait = education_learning_3
+
+    38.11.22 = {
+        birth = yes
+    }
+
+    85.3.3 = {
+        add_spouse = tasurmad_wardenism_qasimid_4
+    }
+
+    103.11.27 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_4 = {
+    name = "Semeah" 
+    female = yes
+
+    religion = ritualist
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = cynical
+    trait = content
+    trait = deceitful
+
+    diplomacy = 5
+    martial = 6
+    stewardship = 6
+    intrigue = 4
+    learning = 5
+    prowess = 6
+
+    trait = education_martial_4
+
+    68.4.12 = {
+        birth = yes
+    }
+
+    131.1.18 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_5 = {
+    name = "Thabit" 
+
+    dynasty = dyn_qasimid
+    religion = ritualist
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_3
+    mother = tasurmad_wardenism_qasimid_4
+
+    sexuality = heterosexual
+
+    trait = trusting
+    trait = greedy
+    trait = ambitious
+
+    diplomacy = 3
+    martial = 11
+    stewardship = 7
+    intrigue = 7
+    learning = 5
+    prowess = 5
+
+    trait = education_martial_1
+
+    90.8.2 = {
+        birth = yes
+    }
+
+    143.4.16 = {
+        add_spouse = tasurmad_wardenism_qasimid_6
+    }
+
+    167.9.24 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_6 = {
+    name = "Habiba" 
+    female = yes
+
+    religion = ritualist
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = impatient
+    trait = brave
+    trait = generous
+
+    diplomacy = 7
+    martial = 3
+    stewardship = 2
+    intrigue = 4
+    learning = 5
+    prowess = 11
+
+    trait = education_diplomacy_3
+
+    126.1.12 = {
+        birth = yes
+    }
+
+    186.4.20 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_7 = {
+    name = "H_usA_n" #Formerly Hasan
+
+    dynasty = dyn_qasimid
+    religion = ritualist
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_5
+    mother = tasurmad_wardenism_qasimid_6
+
+    sexuality = heterosexual
+
+    trait = impatient
+    trait = arbitrary
+    trait = stubborn
+
+    diplomacy = 4
+    martial = 5
+    stewardship = 5
+    intrigue = 4
+    learning = 8
+    prowess = 6
+
+    trait = education_learning_1
+
+    145.4.3 = {
+        birth = yes
+    }
+
+    176.7.11 = {
+        add_spouse = tasurmad_wardenism_qasimid_8
+    }
+
+    186.7.24 = {
+        death = { death_reason = death_beaten }
+    }
+}
+
+tasurmad_wardenism_qasimid_8 = {
+    name = "Khadijah" 
+    female = yes
+
+    religion = ritualist
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = humble
+    trait = vengeful
+    trait = just
+
+    diplomacy = 6
+    martial = 8
+    stewardship = 9
+    intrigue = 3
+    learning = 5
+    prowess = 6
+
+    trait = education_stewardship_3
+
+    159.10.18 = {
+        birth = yes
+    }
+
+    186.1.24 = {
+        death = { death_reason = death_pneumonic }
+    }
+}
+
+tasurmad_wardenism_qasimid_9 = {
+    name = "Walid" 
+
+    dynasty = dyn_qasimid
+    religion = ritualist
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_7
+    mother = tasurmad_wardenism_qasimid_8
+
+    sexuality = heterosexual
+
+    trait = temperate
+    trait = gregarious
+    trait = craven
+
+    diplomacy = 2
+    martial = 7
+    stewardship = 2
+    intrigue = 4
+    learning = 5
+    prowess = 5
+
+    trait = education_martial_3
+
+    178.3.17 = {
+        birth = yes
+    }
+
+    225.12.12 = {
+        add_spouse = tasurmad_wardenism_qasimid_10
+    }
+
+    235.6.14 = {
+        death = { death_reason = death_ripped_apart_limb_by_limb }
+    }
+}
+
+tasurmad_wardenism_qasimid_10 = {
+    name = "Zunayra" 
+    female = yes
+
+    religion = ritualist
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = chaste
+    trait = trusting
+    trait = eccentric
+
+    diplomacy = 6
+    martial = 8
+    stewardship = 8
+    intrigue = 2
+    learning = 6
+    prowess = 6
+
+    trait = education_martial_2
+
+    208.3.12 = {
+        birth = yes
+    }
+
+    255.8.15 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_11 = {
+    name = "Sufyan" 
+
+    dynasty = dyn_qasimid
+    religion = ritualist
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_9
+    mother = tasurmad_wardenism_qasimid_10
+
+    sexuality = heterosexual
+
+    trait = vengeful
+    trait = temperate
+    trait = fickle
+
+    diplomacy = 6
+    martial = 6
+    stewardship = 8
+    intrigue = 6
+    learning = 7
+    prowess = 9
+
+    trait = education_stewardship_3
+
+    225.2.8 = {
+        birth = yes
+    }
+
+    283.4.28 = {
+        add_spouse = tasurmad_wardenism_qasimid_12
+    }
+
+    293.8.28 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_12 = {
+    name = "Paywand" 
+    female = yes
+
+    religion = ritualist
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = fickle
+    trait = chaste
+    trait = patient
+
+    diplomacy = 5
+    martial = 5
+    stewardship = 7
+    intrigue = 8
+    learning = 7
+    prowess = 7
+
+    trait = education_intrigue_3
+
+    266.9.28 = {
+        birth = yes
+    }
+
+    335.11.7 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_13 = {
+    name = "Julaybib" 
+
+    dynasty = dyn_qasimid
+    religion = ritualist
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_11
+    mother = tasurmad_wardenism_qasimid_12
+
+    sexuality = heterosexual
+
+    trait = fickle
+    trait = generous
+    trait = lustful
+
+    diplomacy = 3
+    martial = 9
+    stewardship = 6
+    intrigue = 7
+    learning = 5
+    prowess = 9
+
+    trait = education_martial_1
+
+    292.9.13 = {
+        birth = yes
+    }
+
+    340.5.10 = {
+        add_spouse = tasurmad_wardenism_qasimid_14
+    }
+
+    350.4.8 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_14 = {
+    name = "Saghar" 
+    female = yes
+
+    religion = ritualist
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = gregarious
+    trait = diligent
+    trait = lustful
+
+    diplomacy = 8
+    martial = 10
+    stewardship = 8
+    intrigue = 5
+    learning = 2
+    prowess = 8
+
+    trait = education_martial_1
+
+    323.4.22 = {
+        birth = yes
+    }
+
+    395.10.24 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_15 = {
+    name = "FaDI_l" 
+
+    dynasty = dyn_qasimid
+    religion = ritualist
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_13
+    mother = tasurmad_wardenism_qasimid_14
+
+    sexuality = heterosexual
+
+    trait = lazy
+    trait = gregarious
+    trait = craven
+
+    diplomacy = 6
+    martial = 7
+    stewardship = 9
+    intrigue = 4
+    learning = 8
+    prowess = 1
+
+    trait = education_stewardship_1
+
+    343.11.7 = {
+        birth = yes
+    }
+
+    399.10.27 = {
+        add_spouse = tasurmad_wardenism_qasimid_16
+    }
+
+    409.7.24 = {
+        death = { death_reason = death_consumption }
+    }
+}
+
+tasurmad_wardenism_qasimid_16 = {
+    name = "Nyawela" 
+    female = yes
+
+    religion = ritualist
+    culture = tasurmad
+
+    sexuality = asexual
+
+    trait = craven
+    trait = forgiving
+    trait = diligent
+
+    diplomacy = 6
+    martial = 4
+    stewardship = 7
+    intrigue = 8
+    learning = 7
+    prowess = 5
+
+    trait = education_intrigue_4
+
+    382.5.25 = {
+        birth = yes
+    }
+
+    447.6.17 = {
+        death = { death_reason = death_typhus }
+    }
+}
+
+tasurmad_wardenism_qasimid_17 = {
+    name = "Hanzala" 
+
+    dynasty = dyn_qasimid
+    religion = ritualist
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_15
+    mother = tasurmad_wardenism_qasimid_16
+
+    sexuality = homosexual
+
+    trait = lazy
+    trait = paranoid
+    trait = lustful
+
+    diplomacy = 2
+    martial = 7
+    stewardship = 5
+    intrigue = 5
+    learning = 5
+    prowess = 5
+
+    trait = education_martial_2
+
+    399.8.21 = {
+        birth = yes
+    }
+
+    400.5.18 = {
+        give_nickname = nick_the_theologian
+        effect = {
+            add_character_flag = {
+                flag = had_nickname_event
+            }
+        }
+    }
+
+    446.4.22 = {
+        add_spouse = tasurmad_wardenism_qasimid_18
+    }
+
+    456.3.15 = {
+        death = { death_reason = death_piteously_cut_down }
+    }
+}
+
+tasurmad_wardenism_qasimid_18 = {
+    name = "Maryam" 
+    female = yes
+
+    religion = ritualist
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = just
+    trait = chaste
+    trait = brave
+
+    diplomacy = 7
+    martial = 7
+    stewardship = 6
+    intrigue = 6
+    learning = 5
+    prowess = 5
+
+    trait = education_diplomacy_2
+
+    429.5.28 = {
+        birth = yes
+    }
+
+    491.11.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_19 = {
+    name = "Mirza" 
+
+    dynasty = dyn_qasimid
+    religion = ritualist
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_17
+    mother = tasurmad_wardenism_qasimid_18
+
+    sexuality = heterosexual
+
+    trait = trusting
+    trait = compassionate
+    trait = wrathful
+
+    diplomacy = 4
+    martial = 1
+    stewardship = 4
+    intrigue = 5
+    learning = 8
+    prowess = 7
+
+    trait = education_learning_3
+
+    453.1.1 = {
+        birth = yes
+    }
+
+    476.10.10 = {
+        add_spouse = tasurmad_wardenism_qasimid_20
+    }
+
+    526.4.14 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_20 = {
+    name = "Sumayyah" 
+    female = yes
+
+    religion = ritualist
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = trusting
+    trait = fickle
+    trait = lazy
+
+    diplomacy = 5
+    martial = 9
+    stewardship = 8
+    intrigue = 9
+    learning = 6
+    prowess = 7
+
+    trait = education_martial_4
+
+    459.2.26 = {
+        birth = yes
+    }
+
+    510.8.28 = {
+        death = { death_reason = death_smallpox }
+    }
+}
+
+tasurmad_wardenism_qasimid_21 = {
+    name = "Tamim" 
+
+    dynasty = dyn_qasimid
+    religion = ritualist
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_19
+    mother = tasurmad_wardenism_qasimid_20
+
+    sexuality = heterosexual
+
+    trait = gluttonous
+    trait = sadistic
+    trait = arbitrary
+
+    diplomacy = 7
+    martial = 7
+    stewardship = 9
+    intrigue = 5
+    learning = 4
+    prowess = 7
+
+    trait = education_stewardship_1
+
+    492.7.1 = {
+        birth = yes
+    }
+
+    531.12.9 = {
+        add_spouse = tasurmad_wardenism_qasimid_22
+    }
+
+    543.5.22 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_22 = {
+    name = "TanI_n" 
+    female = yes
+
+    religion = ritualist
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = just
+    trait = content
+    trait = chaste
+
+    diplomacy = 7
+    martial = 7
+    stewardship = 6
+    intrigue = 6
+    learning = 8
+    prowess = 4
+
+    trait = education_learning_1
+
+    514.10.17 = {
+        birth = yes
+    }
+
+    570.6.27 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_23 = {
+    name = "Mu_adh" 
+
+    dynasty = dyn_qasimid
+    religion = ritualist
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_21
+    mother = tasurmad_wardenism_qasimid_22
+
+    sexuality = heterosexual
+
+    trait = gluttonous
+    trait = ambitious
+    trait = callous
+
+    diplomacy = 2
+    martial = 5
+    stewardship = 8
+    intrigue = 5
+    learning = 6
+    prowess = 5
+
+    trait = education_stewardship_3
+
+    532.12.16 = {
+        birth = yes
+    }
+
+    558.12.23 = {
+        add_spouse = tasurmad_wardenism_qasimid_24
+    }
+
+    611.8.9 = {
+        death = { death_reason = death_consumption }
+    }
+}
+
+tasurmad_wardenism_qasimid_24 = {
+    name = "SajaH_" 
+    female = yes
+
+    religion = ritualist
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = diligent
+    trait = generous
+    trait = compassionate
+
+    diplomacy = 6
+    martial = 8
+    stewardship = 2
+    intrigue = 7
+    learning = 7
+    prowess = 8
+
+    trait = education_martial_2
+
+    541.5.19 = {
+        birth = yes
+    }
+
+    587.10.23 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_25 = {
+    name = "Dhahhak" 
+
+    dynasty = dyn_qasimid
+    religion = ritualist
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_23
+    mother = tasurmad_wardenism_qasimid_24
+
+    sexuality = heterosexual
+
+    trait = gluttonous
+    trait = vengeful
+    trait = fickle
+
+    diplomacy = 1
+    martial = 6
+    stewardship = 10
+    intrigue = 8
+    learning = 10
+    prowess = 6
+
+    trait = education_stewardship_3
+
+    567.2.12 = {
+        birth = yes
+    }
+
+    611.10.27 = {
+        add_spouse = tasurmad_wardenism_qasimid_26
+    }
+
+    626.10.28 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_26 = {
+    name = "TanI_n" 
+    female = yes
+
+    religion = ritualist
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = greedy
+    trait = lustful
+    trait = honest
+
+    diplomacy = 7
+    martial = 4
+    stewardship = 10
+    intrigue = 4
+    learning = 7
+    prowess = 4
+
+    trait = education_stewardship_2
+
+    594.12.14 = {
+        birth = yes
+    }
+
+    672.5.17 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_27 = {
+    name = "Antarah" 
+
+    dynasty = dyn_qasimid
+    religion = ritualist
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_25
+    mother = tasurmad_wardenism_qasimid_26
+
+    sexuality = heterosexual
+
+    trait = arrogant
+    trait = chaste
+    trait = cynical
+
+    diplomacy = 6
+    martial = 3
+    stewardship = 7
+    intrigue = 3
+    learning = 8
+    prowess = 4
+
+    trait = education_learning_2
+
+    612.7.5 = {
+        birth = yes
+    }
+
+    658.4.21 = {
+        add_spouse = tasurmad_wardenism_qasimid_28
+    }
+
+    673.4.1 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_28 = {
+    name = "Labad" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = lazy
+    trait = temperate
+    trait = just
+
+    diplomacy = 7
+    martial = 6
+    stewardship = 7
+    intrigue = 6
+    learning = 11
+    prowess = 8
+
+    trait = education_learning_2
+
+    641.6.21 = {
+        birth = yes
+    }
+
+    689.3.26 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_29 = {
+    name = "Mus_ab" 
+
+    dynasty = dyn_qasimid
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_27
+    mother = tasurmad_wardenism_qasimid_28
+
+    sexuality = heterosexual
+
+    trait = vengeful
+    trait = ambitious
+    trait = calm
+
+    diplomacy = 8
+    martial = 6
+    stewardship = 7
+    intrigue = 6
+    learning = 7
+    prowess = 3
+
+    trait = education_diplomacy_4
+
+    664.10.16 = {
+        birth = yes
+    }
+
+    692.6.20 = {
+        add_spouse = tasurmad_wardenism_qasimid_30
+    }
+
+    723.6.13 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_30 = {
+    name = "Reshawna" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = lazy
+    trait = greedy
+    trait = patient
+
+    diplomacy = 9
+    martial = 8
+    stewardship = 8
+    intrigue = 10
+    learning = 4
+    prowess = 4
+
+    trait = education_intrigue_2
+
+    675.10.25 = {
+        birth = yes
+    }
+
+    727.6.22 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_31 = {
+    name = "Ubayd" 
+
+    dynasty = dyn_qasimid
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_29
+    mother = tasurmad_wardenism_qasimid_30
+
+    sexuality = heterosexual
+
+    trait = zealous
+    trait = chaste
+    trait = deceitful
+
+    diplomacy = 6
+    martial = 10
+    stewardship = 5
+    intrigue = 3
+    learning = 4
+    prowess = 3
+
+    trait = education_martial_2
+
+    710.3.6 = {
+        birth = yes
+    }
+
+    769.4.3 = {
+        add_spouse = tasurmad_wardenism_qasimid_32
+    }
+
+    786.10.17 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_32 = {
+    name = "Paywand" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = humble
+    trait = content
+    trait = craven
+
+    diplomacy = 6
+    martial = 10
+    stewardship = 7
+    intrigue = 2
+    learning = 9
+    prowess = 5
+
+    trait = education_martial_1
+
+    752.5.18 = {
+        birth = yes
+    }
+
+    813.8.15 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_33 = {
+    name = "Isah" 
+
+    dynasty = dyn_qasimid
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_31
+    mother = tasurmad_wardenism_qasimid_32
+
+    sexuality = heterosexual
+
+    trait = shy
+    trait = chaste
+    trait = brave
+
+    diplomacy = 4
+    martial = 2
+    stewardship = 6
+    intrigue = 6
+    learning = 4
+    prowess = 5
+
+    trait = education_stewardship_2
+
+    778.7.20 = {
+        birth = yes
+    }
+
+    794.1.14 = {
+        add_spouse = tasurmad_wardenism_qasimid_34
+    }
+
+    830.7.17 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_34 = {
+    name = "Maryam" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = arbitrary
+    trait = fickle
+    trait = generous
+
+    diplomacy = 8
+    martial = 6
+    stewardship = 3
+    intrigue = 7
+    learning = 6
+    prowess = 7
+
+    trait = education_diplomacy_1
+
+    777.11.4 = {
+        birth = yes
+    }
+
+    856.2.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_35 = {
+    name = "Iyad" 
+
+    dynasty = dyn_qasimid
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_33
+    mother = tasurmad_wardenism_qasimid_34
+
+    sexuality = homosexual
+
+    trait = generous
+    trait = paranoid
+    trait = ambitious
+
+    diplomacy = 5
+    martial = 10
+    stewardship = 7
+    intrigue = 6
+    learning = 7
+    prowess = 7
+
+    trait = education_martial_3
+
+    815.12.28 = {
+        birth = yes
+    }
+
+    843.5.3 = {
+        add_spouse = tasurmad_wardenism_qasimid_36
+    }
+
+    881.7.22 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_36 = {
+    name = "SajaH_" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = patient
+    trait = arbitrary
+    trait = compassionate
+
+    diplomacy = 7
+    martial = 3
+    stewardship = 5
+    intrigue = 2
+    learning = 7
+    prowess = 6
+
+    trait = education_diplomacy_2
+
+    826.1.27 = {
+        birth = yes
+    }
+
+    867.6.26 = {
+        death = { death_reason = death_smallpox }
+    }
+}
+
+tasurmad_wardenism_qasimid_37 = {
+    name = "Alqama" 
+
+    dynasty = dyn_qasimid
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_35
+    mother = tasurmad_wardenism_qasimid_36
+
+    sexuality = heterosexual
+
+    trait = gregarious
+    trait = greedy
+    trait = lustful
+
+    diplomacy = 8
+    martial = 8
+    stewardship = 2
+    intrigue = 7
+    learning = 7
+    prowess = 3
+
+    trait = education_diplomacy_2
+
+    857.2.7 = {
+        birth = yes
+    }
+
+    877.4.15 = {
+        add_spouse = tasurmad_wardenism_qasimid_38
+    }
+
+    920.6.10 = {
+        death = { death_reason = death_battle }
+    }
+}
+
+tasurmad_wardenism_qasimid_38 = {
+    name = "Yagana" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = vengeful
+    trait = craven
+    trait = chaste
+
+    diplomacy = 9
+    martial = 10
+    stewardship = 6
+    intrigue = 5
+    learning = 4
+    prowess = 7
+
+    trait = education_martial_3
+
+    860.5.13 = {
+        birth = yes
+    }
+
+    917.10.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_39 = {
+    name = "MurA_d" 
+
+    dynasty = dyn_qasimid
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_37
+    mother = tasurmad_wardenism_qasimid_38
+
+    sexuality = heterosexual
+
+    trait = craven
+    trait = sadistic
+    trait = honest
+
+    diplomacy = 2
+    martial = 6
+    stewardship = 10
+    intrigue = 8
+    learning = 2
+    prowess = 7
+
+    trait = education_stewardship_1
+
+    910.3.9 = {
+        birth = yes
+    }
+
+    937.9.16 = {
+        add_spouse = tasurmad_wardenism_qasimid_40
+    }
+
+    981.5.22 = {
+        death = { death_reason = death_battle }
+    }
+}
+
+tasurmad_wardenism_qasimid_40 = {
+    name = "Qamara" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = content
+    trait = arrogant
+    trait = lazy
+
+    diplomacy = 10
+    martial = 5
+    stewardship = 7
+    intrigue = 6
+    learning = 7
+    prowess = 5
+
+    trait = education_diplomacy_2
+
+    920.9.25 = {
+        birth = yes
+    }
+
+    995.6.16 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_41 = {
+    name = "Mus_ab" 
+
+    dynasty = dyn_qasimid
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_39
+    mother = tasurmad_wardenism_qasimid_40
+
+    sexuality = heterosexual
+
+    trait = trusting
+    trait = arbitrary
+    trait = ambitious
+
+    diplomacy = 7
+    martial = 8
+    stewardship = 4
+    intrigue = 7
+    learning = 5
+    prowess = 5
+
+    trait = education_martial_1
+
+    968.5.21 = {
+        birth = yes
+    }
+
+    1015.8.10 = {
+        add_spouse = tasurmad_wardenism_qasimid_42
+    }
+
+    1030.8.6 = {
+        death = { death_reason = death_siege }
+    }
+}
+
+tasurmad_wardenism_qasimid_42 = {
+    name = "Semeah" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = vengeful
+    trait = brave
+    trait = callous
+
+    diplomacy = 5
+    martial = 8
+    stewardship = 4
+    intrigue = 6
+    learning = 5
+    prowess = 6
+
+    trait = education_martial_3
+
+    998.7.20 = {
+        birth = yes
+    }
+
+    1044.7.21 = {
+        death = { death_reason = death_great_pox }
+    }
+}
+
+tasurmad_wardenism_qasimid_43 = {
+    name = "Mu_adh" 
+
+    dynasty = dyn_qasimid
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_41
+    mother = tasurmad_wardenism_qasimid_42
+
+    sexuality = heterosexual
+
+    trait = just
+    trait = calm
+    trait = vengeful
+
+    diplomacy = 7
+    martial = 5
+    stewardship = 5
+    intrigue = 2
+    learning = 8
+    prowess = 4
+
+    trait = education_learning_2
+
+    1016.1.21 = {
+        birth = yes
+    }
+
+    1070.10.20 = {
+        add_spouse = tasurmad_wardenism_qasimid_44
+    }
+
+    1080.12.19 = {
+        death = { death_reason = death_typhus }
+    }
+}
+
+tasurmad_wardenism_qasimid_44 = {
+    name = "Shokouh" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = generous
+    trait = trusting
+    trait = arrogant
+
+    diplomacy = 5
+    martial = 7
+    stewardship = 6
+    intrigue = 7
+    learning = 9
+    prowess = 5
+
+    trait = education_learning_1
+
+    1053.1.2 = {
+        birth = yes
+    }
+
+    1125.5.9 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_45 = {
+    name = "Isah" 
+
+    dynasty = dyn_qasimid
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_43
+    mother = tasurmad_wardenism_qasimid_44
+
+    sexuality = heterosexual
+
+    trait = content
+    trait = calm
+    trait = zealous
+
+    diplomacy = 4
+    martial = 6
+    stewardship = 6
+    intrigue = 5
+    learning = 7
+    prowess = 3
+
+    trait = education_learning_4
+
+    1080.5.9 = {
+        birth = yes
+    }
+
+    1108.6.14 = {
+        add_spouse = tasurmad_wardenism_qasimid_46
+    }
+
+    1157.8.8 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_46 = {
+    name = "Habiba" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = eccentric
+    trait = lazy
+    trait = impatient
+
+    diplomacy = 6
+    martial = 6
+    stewardship = 6
+    intrigue = 5
+    learning = 6
+    prowess = 4
+
+    trait = education_diplomacy_2
+
+    1091.7.12 = {
+        birth = yes
+    }
+
+    1166.7.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_47 = {
+    name = "Habib" 
+
+    dynasty = dyn_qasimid
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_45
+    mother = tasurmad_wardenism_qasimid_46
+
+    sexuality = heterosexual
+
+    trait = deceitful
+    trait = chaste
+    trait = zealous
+
+    diplomacy = 7
+    martial = 4
+    stewardship = 7
+    intrigue = 5
+    learning = 7
+    prowess = 6
+
+    trait = education_diplomacy_2
+
+    1117.6.25 = {
+        birth = yes
+    }
+
+    1150.11.11 = {
+        add_spouse = tasurmad_wardenism_qasimid_48
+    }
+
+    1174.11.19 = {
+        death = { death_reason = death_maimed }
+    }
+}
+
+tasurmad_wardenism_qasimid_48 = {
+    name = "Shogofa" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = fickle
+    trait = gregarious
+    trait = lustful
+
+    diplomacy = 6
+    martial = 5
+    stewardship = 3
+    intrigue = 8
+    learning = 4
+    prowess = 9
+
+    trait = education_intrigue_2
+
+    1133.4.7 = {
+        birth = yes
+    }
+
+    1169.6.27 = {
+        death = { death_reason = death_consumption }
+    }
+}
+
+tasurmad_wardenism_qasimid_49 = {
+    name = "Sa_ad" 
+
+    dynasty = dyn_qasimid
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_47
+    mother = tasurmad_wardenism_qasimid_48
+
+    sexuality = heterosexual
+
+    trait = calm
+    trait = gregarious
+    trait = greedy
+
+    diplomacy = 2
+    martial = 6
+    stewardship = 6
+    intrigue = 7
+    learning = 10
+    prowess = 9
+
+    trait = education_learning_1
+
+    1152.8.10 = {
+        birth = yes
+    }
+
+    1176.9.5 = {
+        add_spouse = tasurmad_wardenism_qasimid_50
+    }
+
+    1218.10.20 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_50 = {
+    name = "Na_lA_" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = gregarious
+    trait = chaste
+    trait = ambitious
+
+    diplomacy = 8
+    martial = 8
+    stewardship = 8
+    intrigue = 8
+    learning = 6
+    prowess = 5
+
+    trait = education_diplomacy_4
+
+    1159.5.14 = {
+        birth = yes
+    }
+
+    1214.2.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_51 = {
+    name = "Muawiyah" 
+
+    dynasty = dyn_qasimid
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_49
+    mother = tasurmad_wardenism_qasimid_50
+
+    sexuality = heterosexual
+
+    trait = content
+    trait = vengeful
+    trait = patient
+
+    diplomacy = 5
+    martial = 6
+    stewardship = 6
+    intrigue = 3
+    learning = 9
+    prowess = 6
+
+    trait = education_learning_4
+
+    1176.5.27 = {
+        birth = yes
+    }
+
+    1204.8.8 = {
+        add_spouse = tasurmad_wardenism_qasimid_52
+    }
+
+    1217.5.5 = {
+        death = { death_reason = death_smallpox }
+    }
+}
+
+tasurmad_wardenism_qasimid_52 = {
+    name = "Sumayyah" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = lazy
+    trait = callous
+    trait = calm
+
+    diplomacy = 5
+    martial = 9
+    stewardship = 7
+    intrigue = 6
+    learning = 6
+    prowess = 5
+
+    trait = education_martial_1
+
+    1187.9.13 = {
+        birth = yes
+    }
+
+    1253.4.26 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_53 = {
+    name = "BaHI_r" 
+
+    dynasty = dyn_qasimid
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_51
+    mother = tasurmad_wardenism_qasimid_52
+
+    sexuality = heterosexual
+
+    trait = shy
+    trait = temperate
+    trait = calm
+
+    diplomacy = 9
+    martial = 7
+    stewardship = 4
+    intrigue = 4
+    learning = 1
+    prowess = 9
+
+    trait = education_diplomacy_4
+
+    1205.2.18 = {
+        birth = yes
+    }
+
+    1241.10.7 = {
+        add_spouse = tasurmad_wardenism_qasimid_54
+    }
+
+    1267.9.24 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_54 = {
+    name = "AS_yA_" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = diligent
+    trait = callous
+    trait = eccentric
+
+    diplomacy = 6
+    martial = 5
+    stewardship = 6
+    intrigue = 6
+    learning = 5
+    prowess = 6
+
+    trait = education_diplomacy_3
+
+    1224.12.23 = {
+        birth = yes
+    }
+
+    1299.6.27 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_55 = {
+    name = "Asad" 
+
+    dynasty = dyn_qasimid
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_53
+    mother = tasurmad_wardenism_qasimid_54
+
+    sexuality = heterosexual
+
+    trait = compassionate
+    trait = impatient
+    trait = content
+
+    diplomacy = 9
+    martial = 10
+    stewardship = 7
+    intrigue = 7
+    learning = 7
+    prowess = 5
+
+    trait = education_martial_3
+
+    1245.7.14 = {
+        birth = yes
+    }
+
+    1265.5.8 = {
+        add_spouse = tasurmad_wardenism_qasimid_56
+    }
+
+    1302.1.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_56 = {
+    name = "Setara" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = honest
+    trait = shy
+    trait = lustful
+
+    diplomacy = 4
+    martial = 9
+    stewardship = 6
+    intrigue = 7
+    learning = 3
+    prowess = 7
+
+    trait = education_martial_3
+
+    1248.6.1 = {
+        birth = yes
+    }
+
+    1320.5.4 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_57 = {
+    name = "AS_yA_" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_53
+    mother = tasurmad_wardenism_qasimid_54
+
+    sexuality = heterosexual
+
+    trait = trusting
+    trait = just
+    trait = diligent
+
+    diplomacy = 3
+    martial = 8
+    stewardship = 5
+    intrigue = 3
+    learning = 6
+    prowess = 5
+
+    trait = education_martial_2
+
+    1250.7.4 = {
+        birth = yes
+    }
+
+    1326.12.27 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_58 = {
+    name = "Zaynab" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_53
+    mother = tasurmad_wardenism_qasimid_54
+
+    sexuality = heterosexual
+
+    trait = lustful
+    trait = cynical
+    trait = honest
+
+    diplomacy = 5
+    martial = 9
+    stewardship = 6
+    intrigue = 6
+    learning = 6
+    prowess = 8
+
+    trait = education_martial_2
+
+    1252.1.5 = {
+        birth = yes
+    }
+
+    1300.1.27 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_59 = {
+    name = "Qawurd" 
+
+    dynasty = dyn_qasimid
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_53
+    mother = tasurmad_wardenism_qasimid_54
+
+    sexuality = heterosexual
+
+    trait = temperate
+    trait = diligent
+    trait = lustful
+
+    diplomacy = 5
+    martial = 4
+    stewardship = 10
+    intrigue = 9
+    learning = 8
+    prowess = 8
+
+    trait = education_stewardship_2
+
+    1254.2.6 = {
+        birth = yes
+    }
+
+    1279.12.11 = {
+        add_spouse = tasurmad_wardenism_qasimid_60
+    }
+
+    1308.11.10 = {
+        death = { death_reason = death_piteously_cut_down }
+    }
+}
+
+tasurmad_wardenism_qasimid_60 = {
+    name = "Qamara" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = lustful
+    trait = eccentric
+    trait = stubborn
+
+    diplomacy = 10
+    martial = 6
+    stewardship = 3
+    intrigue = 6
+    learning = 3
+    prowess = 5
+
+    trait = education_diplomacy_3
+
+    1262.6.15 = {
+        birth = yes
+    }
+
+    1319.8.14 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_61 = {
+    name = "H_ujA_r" 
+
+    dynasty = dyn_qasimid
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_51
+    mother = tasurmad_wardenism_qasimid_52
+
+    sexuality = heterosexual
+
+    trait = fickle
+    trait = generous
+    trait = calm
+
+    diplomacy = 7
+    martial = 9
+    stewardship = 7
+    intrigue = 5
+    learning = 8
+    prowess = 4
+
+    trait = education_martial_3
+
+    1207.6.9 = {
+        birth = yes
+    }
+
+    1252.2.7 = {
+        add_spouse = tasurmad_wardenism_qasimid_62
+    }
+
+    1274.4.27 = {
+        death = { death_reason = death_battle }
+    }
+}
+
+tasurmad_wardenism_qasimid_62 = {
+    name = "Nafisa" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    sexuality = asexual
+
+    trait = eccentric
+    trait = trusting
+    trait = cynical
+
+    diplomacy = 4
+    martial = 4
+    stewardship = 5
+    intrigue = 6
+    learning = 9
+    prowess = 5
+
+    trait = education_learning_2
+
+    1235.12.11 = {
+        birth = yes
+    }
+
+    1286.6.6 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_63 = {
+    name = "Jibril" 
+
+    dynasty = dyn_qasimid
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_61
+    mother = tasurmad_wardenism_qasimid_62
+
+    sexuality = heterosexual
+
+    trait = wrathful
+    trait = ambitious
+    trait = vengeful
+
+    diplomacy = 7
+    martial = 10
+    stewardship = 5
+    intrigue = 9
+    learning = 2
+    prowess = 3
+
+    trait = education_martial_1
+
+    1256.7.13 = {
+        birth = yes
+    }
+
+    1306.7.15 = {
+        add_spouse = tasurmad_wardenism_qasimid_64
+    }
+
+    1316.7.26 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_64 = {
+    name = "Zunayra" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    sexuality = heterosexual
+
+    trait = gregarious
+    trait = temperate
+    trait = trusting
+
+    diplomacy = 8
+    martial = 6
+    stewardship = 4
+    intrigue = 9
+    learning = 7
+    prowess = 5
+
+    trait = education_intrigue_2
+
+    1289.1.3 = {
+        birth = yes
+    }
+
+    1338.5.6 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_65 = {
+    name = "Yasmin" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_61
+    mother = tasurmad_wardenism_qasimid_62
+
+    sexuality = heterosexual
+
+    trait = calm
+    trait = chaste
+    trait = arbitrary
+
+    diplomacy = 3
+    martial = 4
+    stewardship = 6
+    intrigue = 7
+    learning = 6
+    prowess = 9
+
+    trait = education_intrigue_2
+
+    1257.2.4 = {
+        birth = yes
+    }
+
+    1309.4.19 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_66 = {
+    name = "Rumaysa" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_61
+    mother = tasurmad_wardenism_qasimid_62
+
+    sexuality = heterosexual
+
+    trait = lazy
+    trait = eccentric
+    trait = arrogant
+
+    diplomacy = 8
+    martial = 8
+    stewardship = 6
+    intrigue = 7
+    learning = 5
+    prowess = 7
+
+    trait = education_diplomacy_2
+
+    1258.2.20 = {
+        birth = yes
+    }
+
+    1335.2.17 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_67 = {
+    name = "Zaynab" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_61
+    mother = tasurmad_wardenism_qasimid_62
+
+    sexuality = heterosexual
+
+    trait = humble
+    trait = stubborn
+    trait = compassionate
+
+    diplomacy = 5
+    martial = 8
+    stewardship = 6
+    intrigue = 5
+    learning = 7
+    prowess = 5
+
+    trait = education_martial_3
+
+    1262.12.21 = {
+        birth = yes
+    }
+
+    1331.11.27 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_68 = {
+    name = "Khattab" 
+
+    dynasty = dyn_qasimid
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_61
+    mother = tasurmad_wardenism_qasimid_62
+
+    sexuality = heterosexual
+
+    trait = arbitrary
+    trait = vengeful
+    trait = shy
+
+    diplomacy = 2
+    martial = 2
+    stewardship = 5
+    intrigue = 7
+    learning = 8
+    prowess = 6
+
+    trait = education_learning_4
+
+    1263.8.11 = {
+        birth = yes
+    }
+}
+
+
+tasurmad_wardenism_qasimid_70 = {
+    name = "Raqiya" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_51
+    mother = tasurmad_wardenism_qasimid_52
+
+    sexuality = heterosexual
+
+    trait = greedy
+    trait = chaste
+    trait = cynical
+
+    diplomacy = 8
+    martial = 3
+    stewardship = 9
+    intrigue = 6
+    learning = 7
+    prowess = 5
+
+    trait = education_stewardship_2
+
+    1210.10.9 = {
+        birth = yes
+    }
+
+    1257.8.19 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+tasurmad_wardenism_qasimid_71 = {
+    name = "Shahrbano" 
+    female = yes
+
+    religion = wardenism
+    culture = tasurmad
+
+    father = tasurmad_wardenism_qasimid_51
+    mother = tasurmad_wardenism_qasimid_52
+
+    sexuality = bisexual
+
+    trait = trusting
+    trait = temperate
+    trait = shy
+
+    diplomacy = 6
+    martial = 7
+    stewardship = 5
+    intrigue = 10
+    learning = 9
+    prowess = 6
+
+    trait = education_intrigue_2
+
+    1211.9.10 = {
+        birth = yes
+    }
+
+    1298.2.20 = {
+        death = { death_reason = death_cancer }
+    }
+}
+
+tasurmad_wardenism_99 = { 
+	name = "Manar"
+	religion = "wardenism"
+	culture = "tasurmad"
+	father = tasurmad_wardenism_100
+	mother = tasurmad_wardenism_104
+	dynasty = dyn_warden_1
+	717.7.1 = {
+		birth = yes
+		trait = magic_good_3
+	}
+	733.7.1 = {
+		trait = education_stewardship_3
+		trait = calm
+		trait = greedy
+		trait = eccentric
+	}
+	781.8.9 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_100 = { 
+	name = "Issan"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+	697.6.1 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	713.6.1 = {
+		trait = education_diplomacy_4
+		trait = ambitious
+		trait = cynical
+		trait = callous
+	}
+	715.1.1 = {
+		give_nickname = nick_the_blessed
+		add_spouse = tasurmad_wardenism_104
+	}
+	741.12.12 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_101 = { 
+	name = "Qwatif"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_qaftis
+	father = tasurmad_wardenism_100
+	mother = tasurmad_wardenism_104
+	717.8.1 = {
+		birth = yes
+	}
+	730.12.12 = {
+		give_nickname = nick_the_unfortunate
+		death = yes
+	}
+}
+
+tasurmad_wardenism_102 = { 
+	name = "Phadash"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_qaftis
+	633.1.11 = {
+		birth = yes
+	}
+	649.1.11 = {
+		trait = just
+		trait = calm
+		trait = zealous
+		trait = education_learning_3
+		trait = shrewd
+	}
+	700.5.25 = {
+		trait = gh_nearly_blind
+		trait = infirm
+		give_nickname = nick_the_old
+	}
+	725.10.1 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_103 = {
+	name = "Issai"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_qaftis
+	689.3.1 = {
+		birth = yes
+	}
+	705.3.1 = {
+		trait = impatient
+		trait = wrathful
+		trait = callous
+		trait = education_martial_4
+	}
+	719.3.1 = {
+		give_nickname = nick_one_day
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+tasurmad_wardenism_104 = {
+	name = "Samasa"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_qaftis
+	female = yes
+	697.3.1 = {
+		birth = yes
+	}
+	713.3.1 = {
+		trait = zealous
+		trait = compassionate
+		trait = craven
+		trait = education_learning_2
+	}
+	715.1.1 = {
+		add_spouse = tasurmad_wardenism_100
+	}
+	740.2.1 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_105 = {
+	name = "Umath"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_qaftis
+	father = tasurmad_wardenism_107
+	691.2.16 = {
+		birth = yes
+		trait = twin
+	}
+	707.2.16 = {
+		trait = brave
+		trait = temperate
+		trait = ambitious
+		trait = education_martial_5
+		give_nickname = nick_warlike
+	}
+	719.3.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+tasurmad_wardenism_106 = {
+	name = "AnSI_r"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_qaftis
+	father = tasurmad_wardenism_107
+	691.2.16 = {
+		birth = yes
+		trait = twin
+	}
+	707.2.16 = {
+		trait = brave
+		trait = content
+		trait = wrathful
+		trait = education_martial_4
+		trait = loyal
+	}
+	719.3.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+tasurmad_wardenism_107 = {
+	name = "Thalus"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_qaftis
+	father = tasurmad_wardenism_109
+	642.7.30 = {
+		birth = yes
+	}
+	658.7.30 = {
+		trait = ambitious
+		trait = cynical
+		trait = calm
+		trait = education_learning_5
+		give_nickname = nick_black_ink
+	}
+	707.5.25 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_108 = {
+	name = "Awqif"
+	religion = "wardenism"
+	culture = "tasurmad"
+	616.3.20 = {
+		birth = yes
+	}
+	632.3.20 = {
+		trait = just
+		trait = patient
+		trait = ambitious
+		trait = education_learning_4
+	}
+	690.3.21 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_109 = {
+	name = "Abdarshid"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_qaftis
+	father = tasurmad_wardenism_110
+	611.4.21 = {
+		birth = yes
+	}
+	627.4.21 = {
+		trait = lustful
+		trait = content
+		trait = calm
+		trait = education_stewardship_2
+	}
+	648.5.25 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_110 = {
+	name = "Zulfiqar"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_qaftis
+
+	#father = tasurmad_wardenism_110
+	591.6.18 = {
+
+		birth = yes
+	}
+	587.6.18 = {
+		trait = ambitious
+		trait = chaste
+		trait = temperate
+		trait = callous
+		trait = education_stewardship_5
+		give_nickname = nick_the_hammer
+	}
+	650.6.21 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_111 = { # Zayd, Radi's brother
+	name = "Zayd"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+
+	father = tasurmad_wardenism_16
+	mother = northernimperial_aversarinas_aagiokrata_5
+
+	1062.10.1 = {
+		birth = yes
+		trait = magic_good_3
+		trait = intellect_good_1
+	}
+
+	1074.10.1 = {
+		trait = patient
+		trait = gregarious
+		trait = diligent
+	}
+
+	1078.10.1 = {
+		trait = education_diplomacy_4
+	}
+
+	1099.10.24 = {
+		death = {
+			death_reason = death_execution
+			killer = tasurmad_wardenism_17
+		}
+	}
+}
+
+tasurmad_wardenism_112 = { # Child of Radi I
+	name = "Muzaffar"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+	father = tasurmad_wardenism_17
+	mother = easternimperial_lifepath_1
+	trait = magic_good_7
+
+	1129.6.22 = {
+		birth = yes
+	}
+
+	1175.10.11 = {
+		death = yes
+	}
+}
+
+tasurmad_wardenism_113 = { # Child of Radi I
+	name = "Yusuf"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+	father = tasurmad_wardenism_17
+	mother = easternimperial_lifepath_1
+	trait = magic_good_9
+
+	1131.7.4 = {
+		birth = yes
+	}
+
+	1148.3.16 = {
+		death = {
+			death_reason = death_mysterious
+			killer = tasurmad_wardenism_17
+		}
+	}
+}
+
+tasurmad_wardenism_114 = { # Child of Radi I
+	name = "RaDI_"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+	father = tasurmad_wardenism_17
+	mother = easternimperial_lifepath_1
+	trait = magic_good_6
+
+	1134.11.13 = {
+		birth = yes
+	}
+
+	1164.12.4 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+
+tasurmad_wardenism_115 = { # Child of Radi I
+	name = "RaDI_"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+	father = tasurmad_wardenism_17
+	mother = easternimperial_lifepath_1
+	trait = magic_good_7
+
+	1138.3.18 = {
+		birth = yes
+	}
+
+	1152.3.11 = {
+		death = {
+			death_reason = death_mysterious
+			killer = tasurmad_wardenism_17
+		}
+	}
+}
+
+tasurmad_wardenism_116 = { # Child of Radi I
+	name = "Ithtar"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_warden_1
+	father = tasurmad_wardenism_17
+	mother = easternimperial_lifepath_1
+	trait = magic_good_7
+
+	1140.4.12 = {
+		birth = yes
+	}
+
+	1152.7.26 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+
+tasurmad_wardenism_117 = { # Abdar 'Godrender'
+	name = "Abdar"
+	religion = "wardenism"
+	culture = "tasurmad"
+	dynasty = dyn_sarhadyn
+
+	martial = 15
+	stewardship = 8
+	diplomacy = 4
+	learning = 11
+	intrigue = 5
+	prowess = 9
+
+
+	908.3.14 = {
+		birth = yes
+		trait = intellect_good_1
+		trait = physique_good_2
+	}
+
+	920.3.14 = {
+		trait = wrathful
+		trait = ambitious
+		trait = arrogant
+	}
+
+	924.3.14 = {
+		trait = education_martial_4
+		trait = organizer
+	}
+
+	927.3.14 = {
+		give_nickname = nick_godrender
+        effect = {
+            add_character_flag = {
+                flag = had_nickname_event
+            }
+        }
+	}
+
+	978.5.16 = {
+		death = {
+			death_reason = death_assassination
+		}
+	}
+}

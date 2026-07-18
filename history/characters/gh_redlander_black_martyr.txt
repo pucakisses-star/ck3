@@ -1,0 +1,87 @@
+﻿redlander_black_martyr_1 = {
+	name = "Salvorn"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1110.8.31 = {
+		birth = yes
+		trait = magic_good_7
+		trait = gh_blackspawn_2
+	}
+	1126.8.31 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:absolution_of_the_void }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			add_character_flag = dont_generate_family
+		}
+	}
+}
+
+redlander_black_martyr_2 = {
+	name = "Blane"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1102.9.25 = {
+		birth = yes
+		trait = magic_good_8
+		trait = gh_blackspawn_2
+	}
+	1118.9.25 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:absolution_of_the_void }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			add_character_flag = dont_generate_family
+		}
+	}
+}
+
+redlander_black_martyr_3 = {
+	name = "Quwas"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1017.7.11 = {
+		birth = yes
+		trait = magic_good_12
+		trait = gh_blackspawn_3
+	}
+	1033.7.11 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:absolution_of_the_void }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			add_character_flag = dont_generate_family
+		}
+	}
+}
+
+redlander_black_martyr_4 = {
+	name = "Thord"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	908.5.22 = {
+		birth = yes
+		trait = magic_good_8
+		trait = gh_blackspawn_4
+	}
+	924.5.22 = {
+		trait = humble
+		trait = sadistic
+		trait = ambitious
+		trait = education_arcana_5
+		
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:absolution_of_the_void }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			add_character_flag = dont_generate_family
+		}
+	}
+	981.6.11 = {
+		trait = disfigured
+		trait = blind
+		trait = stuttering
+		
+		give_nickname = nick_redlander_the_faceless
+	}
+}

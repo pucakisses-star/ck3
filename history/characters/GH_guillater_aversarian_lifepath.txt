@@ -1,0 +1,30 @@
+﻿guillater_aversarian_lifepath_1 = {
+    name = "Elena" 
+    female = yes
+
+    religion = lifepath
+    culture = guillater_aversarian
+
+    sexuality = heterosexual
+
+    trait = forgiving
+    trait = greedy
+    trait = callous
+
+    diplomacy = 4
+    martial = 7
+    stewardship = 5
+    intrigue = 4
+    learning = 4
+    prowess = 3
+
+    trait = education_martial_3
+
+    1131.10.28 = {
+        birth = yes
+    }
+
+    1227.9.16 = {
+        death = { death_reason = death_natural_causes }
+    }
+}

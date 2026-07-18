@@ -1,0 +1,541 @@
+1479 = {
+	culture = aiyqarbkhiyl
+	religion = ahridar
+	holding = tribal_holding
+}
+
+1480 = {
+	holding = church_holding
+}
+
+1805 = {
+	religion = harfi
+	culture = kirinarth
+}
+
+1815 = {
+	religion = harfi
+	culture = kirinarth
+	holding = castle_holding
+}
+
+2369 = {
+	holding = none
+}
+
+2374 = {
+	culture = kirinarth
+	religion = stranuni
+	holding = castle_holding
+}
+
+2376 = {
+	culture = kirinarth
+	religion = xwestrozen
+	holding = castle_holding
+}
+
+2377 = {
+	holding = none
+}
+
+2379 = {
+	culture = kirinarth
+	religion = stranuni
+	holding = castle_holding
+}
+
+
+2380 = {
+	culture = kirinarth
+	religion = xwestrozen
+	holding = castle_holding
+}
+
+2385 = {
+	holding = none
+}
+
+2495 = {
+	culture = kirinarth
+	religion = xwestrozen
+	holding = castle_holding
+}
+
+2500 = {
+	holding = none
+}
+
+2501 = {
+	holding = none
+}
+
+2502 = {
+	culture = kirinarth
+	religion = stranuni
+	holding = castle_holding
+}
+
+2503 = {
+	holding = church_holding
+}
+
+2504 = {
+	holding = none
+}
+
+2507 = {
+	culture = kirinarth
+	religion = stranuni
+	holding = castle_holding
+}
+
+
+2515 = {
+	holding = church_holding
+}
+
+2516 = {
+	holding = none
+}
+
+2519 = {
+	holding = none
+}
+
+2520 = {
+	holding = none
+}
+
+
+
+2535 = {
+	holding = none
+}
+
+2536 = {
+	culture = kirinarth
+	religion = stranuni
+	holding = castle_holding
+}
+
+2537 = {
+	culture = sinasan
+	religion = xwestrozen
+	holding = castle_holding
+}
+
+2539 = {
+	holding = none
+}
+
+2542 = {
+	holding = none
+}
+
+2543 = {
+	holding = none
+}
+
+
+
+2560 = {
+	holding = none
+}
+
+2561 = {
+	holding = none
+}
+
+
+2565 = {
+	culture = lawgiri
+	religion = stranuni
+	holding = castle_holding
+}
+
+
+2567 = {
+	holding = none
+}
+
+
+1745 = {
+	holding = none
+}
+
+2574 = {
+	holding = none
+}
+
+2579 = {
+	holding = none
+}
+
+2588 = {
+	culture = lawgiri
+	religion = stranuni
+	holding = castle_holding
+}
+
+2591 = {
+	culture = lawgiri
+	religion = xwestrozen
+	holding = castle_holding
+}
+
+2592 = {
+	holding = none
+}
+
+
+
+
+2601 = {
+	holding = none
+}
+
+2602 = {
+	holding = none
+}
+
+2603 = {
+	holding = none
+}
+
+
+2607 = {
+	culture = lawgiri
+	religion = xwestrozen
+	holding = castle_holding
+}
+
+2608 = {
+	culture = lawgiri
+	religion = xwestrozen
+	holding = castle_holding
+}
+
+
+
+2615 = {
+	culture = lawgiri
+	religion = xwestrozen
+	holding = castle_holding
+}
+
+2620 = {
+	holding = none
+}
+
+2623 = {
+	holding = none
+}
+
+
+
+
+2628 = {
+	holding = none
+}
+
+
+2631 = {
+	culture = lawgiri
+	religion = stranuni
+	holding = castle_holding
+}
+
+
+
+2638 = {
+	culture = lawgiri
+	religion = stranuni
+	holding = castle_holding
+}
+
+
+2642 = {
+	culture = kirinarth
+	religion = stranuni
+	holding = castle_holding
+}
+
+2643 = {
+	holding = none
+}
+
+2648 = {
+	holding = none
+}
+
+2651 = {
+	culture = sinasan
+	religion = stranuni
+	holding = metro_holding
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+}
+
+2653 = {
+	holding = city_holding
+}
+
+2661 = {
+	holding = city_holding
+}
+
+2662 = {
+	holding = castle_holding
+}
+
+2674 = {
+	holding = none
+}
+
+2727 = {
+	holding = none
+}
+
+
+
+
+2901 = {
+	holding = none
+
+}
+
+
+2922 = {
+	culture = sinasan
+	religion = xwestrozen
+	holding = castle_holding
+}
+
+
+2928 = {
+	holding = none
+}
+
+
+
+
+2956 = {
+	holding = none
+}
+
+2957 = {
+	culture = tagrodar
+	religion = ahridar
+	holding = tribal_holding
+	803.1.1 = {
+		special_building = 01_light_wall
+	}
+}
+
+2963 = {
+	holding = none
+}
+
+
+2967 = {
+	culture = aiyqarbkhiyl
+	religion = ahridar
+	holding = tribal_holding
+}
+
+2970 = {
+	holding = none
+}
+
+2972 = {
+	holding = none
+}
+
+2974 = {
+	culture = aaoyuotaa
+	religion = ahridar
+	holding = tribal_holding
+}
+
+2979 = {
+	holding = none
+}
+
+2981 = {
+	holding = none
+}
+
+2982 = {
+	holding = none
+}
+
+2983 = {
+	holding = none
+}
+
+2984 = {
+	culture = aaoyuotaa
+	religion = ahridar
+	holding = tribal_holding
+}
+
+2985 = {
+	holding = none
+}
+
+2989 = {
+	holding = none
+}
+
+2990 = {
+	culture = aaoyuotaa
+	religion = ahridar
+	holding = tribal_holding
+	139.1.1 = {
+		special_building = 01_tomb_of_the_suns
+	}
+}
+
+2991 = {
+	holding = none
+}
+
+2996 = {
+	culture = aiyqarbkhiyl
+	religion = ahridar
+	holding = castle_holding
+}
+
+2999 = {
+	religion = ahridar
+	culture = tagrodar
+	holding = tribal_holding
+}
+
+3006 = {
+	holding = none
+}
+
+3009 = {
+	holding = none
+}
+
+3012 = {
+	holding = none
+}
+
+3013 = {
+	culture = aiyqarbkhiyl
+	religion = ahridar
+	holding = castle_holding
+	10.1.1 = {
+		special_building = 01_house_of_ohrasik
+	}
+}
+
+3014 = {
+	holding = none
+}
+
+3022 = {
+	holding = none
+}
+
+3023 = {
+	culture = aiyqarbkhiyl
+	religion = ahridar
+	holding = tribal_holding
+}
+
+3029 = {
+	culture = aiyqarbkhiyl
+	religion = ahridar
+	holding = castle_holding
+}
+
+3030 = {
+	holding = none
+}
+
+3033 = {
+	holding = none
+}
+
+3881 = {
+	religion = ahridar
+	culture = tagrodar
+	holding = tribal_holding
+}
+
+1563 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1248.2.5 = {
+		holding = castle_holding
+		culture = dawasid
+		faith = aversarinas_aagiokrata
+	}
+}
+
+1830 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+2059 = {
+	culture = utyalid
+	religion = wardenism
+	holding = tribal_holding
+}
+4404 = {
+	culture = sinasan
+	religion = xwestrozen
+	holding = castle_holding
+}
+
+4731 = {
+	culture = utyalid
+	religion = wardenism
+	holding = tribal_holding
+}
+
+1816 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+1776 = {
+	holding = none
+}
+5928 = {
+	holding = none
+}
+5579 = {
+	holding = none
+}
+1840 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+2962 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5401 = {
+	holding = none
+}
+
+4967 = {
+	religion = harfi
+	culture = kirinarth
+	holding = castle_holding
+}

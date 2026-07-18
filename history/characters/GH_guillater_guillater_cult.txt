@@ -1,0 +1,17 @@
+﻿guillater_guillater_cult_1 = {
+	name = "Felicia"
+	female = yes
+	religion = guillater_cult
+	culture = guillater
+	1212.9.1 = {
+		birth = yes
+	}
+	1224.9.1 = {
+		trait = zealous
+		trait = patient
+		trait = ambitious
+	}
+	1228.9.1 = {
+		trait = education_learning_3
+	}
+}

@@ -1,0 +1,56 @@
+﻿makryenis_eos_1 = { # Ordermaster in 1254, only recently promoted with the death of their insanely long-lived predecessor
+	name = "Avrioxis" #Renamed from Andreas
+	dna = makryenis_eos_1
+	religion = "eos"
+	culture = "makryenis"
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_04
+			custom_beards = male_beard_custom_06
+		}
+	}
+
+	1226.6.18 = {
+		birth = yes
+		trait = physique_good_2
+		trait = intellect_good_1
+	}
+
+	1238.1.1 = {
+		trait = brave
+		trait = compassionate
+		trait = just
+		trait = education_martial_4
+		trait = scarred
+	}
+}
+
+makryenis_eos_2 = {
+	name = "Avronike" #Renamed from Andronike
+	religion = "eos"
+	culture = "makryenis"
+	female = yes
+
+	1166.11.2 = {
+		birth = yes
+		trait = physique_good_3
+		trait = intellect_good_2
+	}
+
+	1178.1.1 = {
+		trait = brave
+		trait = stubborn
+		trait = paranoid
+	}
+
+	1182.11.2 = {
+		trait = education_martial_4
+		trait = strong
+		trait = gh_historical_blademaster_3
+	}
+
+	1253.12.27 = {
+		death = yes
+	}
+}

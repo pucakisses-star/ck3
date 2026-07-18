@@ -1,0 +1,43 @@
+﻿paradila_yakasak_1 = {
+	name = "Ravindu"
+	culture = "paradila"
+	religion = "yakasak"
+
+	1214.1.1 = {
+		birth = yes
+	}
+	1253.10.8 = {
+		death = {
+			death_reason = death_duel
+			killer = hokanta_vidvaookeyatra_34
+		}
+	}
+}
+
+paradila_yakasak_2 = {
+	name = "Damith"
+	religion = "yakasak"
+	culture = "paradila"
+	1225.7.4 = {
+		birth = yes
+	}
+}
+
+paradila_yakasak_3 = {
+	name = "Yokhunan"
+	culture = "paradila"
+	religion = "yakasak"
+	father = dadkawji_nolosaanyo_1
+
+	1231.4.8 = {
+		birth = yes
+		trait = intellect_bad_1
+		trait = beauty_good_2
+	}
+	1240.9.18 = {
+		death = {
+			death_reason = death_head_ripped_off
+			killer = rethara_yakasak_1
+		}
+	}
+}

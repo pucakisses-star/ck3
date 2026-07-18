@@ -1,0 +1,92 @@
+d_meresok = {
+	820.1.1 = {
+		de_jure_liege = k_sinasan
+	}
+	1200.3.1 = {
+		holder = kirinarth_xwestrozen_9
+		liege = k_sinasan
+	}
+	1225.1.1 = {
+		de_jure_liege = k_kazhomi
+	}
+	1227.1.1 = {
+		holder = erimatos_calysto_1
+		government = pirate_government
+	}
+	1250.1.1 = {
+		holder = kirinarth_stranuni_1
+		liege = k_eastern_frontier
+		change_development_level = 3
+	}
+}
+d_mehamani = {
+	820.1.1 = {
+		de_jure_liege = k_sinasan
+	}
+	1216.3.14={
+		holder = kirinarth_stranuni_1
+	}
+	1225.1.1 = {
+		de_jure_liege = k_kazhomi
+	}
+	1243.1.1 = {
+		liege = k_eastern_frontier
+		#change_development_level = 5
+	}
+}
+d_ebed14 = {
+	820.1.1 = {
+		de_jure_liege = k_sinasan
+	}
+	1216.3.14={
+		holder = kirinarth_stranuni_1
+	}
+	1225.1.1 = {
+		de_jure_liege = k_kazhomi
+	}
+	1243.1.1 = {
+		liege = k_eastern_frontier
+		#change_development_level = 5
+	}
+}
+d_erziwas = {
+	820.1.1 = {
+		de_jure_liege = k_sinasan
+	}
+	1200.3.1 = {
+		holder = kirinarth_xwestrozen_101
+		liege = k_sinasan
+	}
+	1220.1.1 = {
+		holder = kirinarth_stranuni_1
+	}
+	1225.1.1 = {
+		de_jure_liege = k_kazhomi
+	}
+	1249.1.1 = {
+		liege = k_eastern_frontier
+		#change_development_level = 8
+	}
+}
+d_sinasan = {
+	803.1.1 = {
+		holder = sinasan_xwestrozen_2
+	}
+	820.1.1 = {
+		de_jure_liege = k_sinasan
+	}
+	1207.1.1 = {
+		holder = aiyqarbkhiyl_ahridar_1
+	}
+	1217.3.28 = {
+		holder = aiyqarbkhiyl_ahridar_2
+	}
+	1225.1.1 = {
+		de_jure_liege = k_kazhomi
+	}
+	1250.1.1 = {
+		holder = kirinarth_stranuni_1
+		liege = k_eastern_frontier
+		#change_development_level = 6
+	}
+}

@@ -1,0 +1,43 @@
+﻿c_astassus = {
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1230.1.1 = {
+		holder = marcher_21
+	}
+}
+c_vorinmont = {
+	1230.1.1 = {
+		holder = dielecender_lifepath_1
+		change_development_level = 9
+	}
+}
+c_chevalie_islands_4 = {
+	1230.1.1 = {
+		holder = konijkmener_coastpath_1
+		change_development_level = 7
+	}
+	1285.5.19 = {
+		holder = konijkmener_lifepath_106
+		government = republic_playable_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = administrative_republic_playable_government
+				}
+			}
+		}
+		liege = "k_de_kanzelerij"
+	}
+
+}
+c_chevalie_islands_3 = {
+	1230.1.1 = {
+		holder = voyagen_coastpath_1
+		change_development_level = 7
+	}
+}

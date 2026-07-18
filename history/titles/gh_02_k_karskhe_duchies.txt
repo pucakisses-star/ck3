@@ -1,0 +1,5 @@
+d_tsojita = {
+	1232.1.1 = {
+		holder = yylaxxaz_xaxbaxakanax_1
+	}
+}

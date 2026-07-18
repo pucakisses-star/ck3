@@ -1,0 +1,68 @@
+﻿# Legan Eupraxia of Legio VII 'Anthiope'. Last legan of the legion before its destruction to the Fog. Loyal Aeschraeist and one of his main enforcers in Katraddia.
+# After chasing Kathalitos out of the empire, conducted mop-up operations against his supporters throughout the province.
+# Ultimately overstretched her lines and became trapped in the Katraddia Mikra valley in 1219 by Kerkyon 'the Tollman'. Legion slowly succumbed to the Fog and was completely dead by 1221
+apokiakas_aeschraes_aagiokrata_1 = {
+	name = "Eupraxia"
+	religion = "aeschraes_aagiokrata"
+	female = yes
+	culture = "apokiakas"
+	sexuality = homosexual
+	
+	diplomacy = 6
+	intrigue = 2
+	learning = 7
+	martial = 9
+	stewardship = 2
+	
+	1175.8.25 = {
+		birth = yes
+	}
+	1187.1.1 = {
+		trait = stubborn
+		trait = trusting
+		trait = zealous
+	}
+	1191.8.25 = {
+		trait = education_martial_3
+		trait = gh_legon
+	}
+	1219.10.3 = {
+		death = {
+			death_reason = death_raid
+			killer = apokiakas_aversarinas_aagiokratia_36 # Kerkyon 'the Tollman'
+		}
+	}
+}
+
+apokiakas_aeschraes_aagiokrata_2 = { # Arch-Letalagos Metrilos, led Legio VII 'Anthiope' after the death of Legan Eupraxia, died to the Fog with the rest of the Legion
+	name = "Metrilos"
+	religion = "aeschraes_aagiokrata"
+	culture = "apokiakas"
+
+	disallow_random_traits = yes
+	
+	diplomacy = 6
+	intrigue = 5
+	learning = 9
+	martial = 7
+	stewardship = 6
+	prowess = 6
+	
+	1181.7.2 = {
+		birth = yes
+	}
+	1193.1.1 = {
+		trait = fickle
+		trait = arrogant
+		trait = honest
+	}
+	1197.7.2 = {
+		trait = education_stewardship_3
+		trait = logistician
+	}
+	1221.1.2 = {
+		death = {
+			death_reason = death_fog
+		}
+	}
+}

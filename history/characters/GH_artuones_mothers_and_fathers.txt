@@ -1,0 +1,178 @@
+﻿#artuones_mothers_and_fathers_1 = {
+    #name = "Ceuttoech" 
+#
+    #dynasty = dyn_clanlander_1
+    #religion = mothers_and_fathers
+    #culture = artuones
+#
+    #sexuality = heterosexual
+#
+    #trait = paranoid
+    #trait = just
+    #trait = generous
+#
+    #1216.10.2 = {
+        #birth = yes
+        #trait = magic_good_2
+    #}
+#
+    #1239.4.28 = {
+        #add_spouse = artuones_mothers_and_fathers_2
+    #}
+#
+    #1249.12.18 = {
+        #death = { death_reason = death_smallpox }
+    #}
+#}
+#
+#artuones_mothers_and_fathers_2 = {
+    #name = "Icauna" 
+    #female = yes
+#
+    #religion = mothers_and_fathers
+    #culture = artuones
+#
+    #sexuality = bisexual
+#
+    #trait = temperate
+    #trait = vengeful
+    #trait = gregarious
+#
+    #1222.9.17 = {
+        #birth = yes
+        #trait = magic_good_1
+    #}
+#
+    #1280.11.16 = {
+        #death = { death_reason = death_natural_causes }
+    #}
+#}
+#
+#artuones_mothers_and_fathers_3 = {
+    #name = "Vylloech" 
+#
+    #dynasty = dyn_clanlander_1
+    #religion = mothers_and_fathers
+    #culture = artuones
+#
+    #father = artuones_mothers_and_fathers_1
+    #mother = artuones_mothers_and_fathers_2
+#
+    #sexuality = heterosexual
+#
+    #trait = just
+    #trait = cynical
+    #trait = stubborn
+#
+    #1249.10.8 = {
+        #birth = yes
+        #trait = magic_good_3
+    #}
+#
+    #1280.3.23 = {
+        #add_spouse = artuones_mothers_and_fathers_4
+    #}
+#}
+#
+#artuones_mothers_and_fathers_4 = {
+    #name = "Rigani" 
+    #female = yes
+#
+    #religion = mothers_and_fathers
+    #culture = artuones
+#
+    #sexuality = heterosexual
+#
+    #trait = forgiving
+    #trait = generous
+    #trait = temperate
+#
+    #1263.6.2 = {
+        #birth = yes
+    #}
+#}
+#
+#artuones_mothers_and_fathers_5 = {
+    #name = "Damona" 
+    #female = yes
+#
+    #religion = mothers_and_fathers
+    #culture = artuones
+#
+    #father = artuones_mothers_and_fathers_3
+    #mother = artuones_mothers_and_fathers_4
+#
+    #sexuality = heterosexual
+#
+    #trait = content
+    #trait = lazy
+    #trait = wrathful
+#
+    #1287.3.17 = {
+        #birth = yes
+        #trait = magic_good_2
+    #}
+#}
+#
+#artuones_mothers_and_fathers_6 = {
+    #name = "Basovur" 
+#
+    #dynasty = dyn_clanlander_1
+    #religion = mothers_and_fathers
+    #culture = artuones
+#
+    #father = artuones_mothers_and_fathers_3
+    #mother = artuones_mothers_and_fathers_4
+#
+    #sexuality = heterosexual
+#
+    #trait = fickle
+    #trait = paranoid
+    #trait = gluttonous
+#
+    #1290.2.4 = {
+        #birth = yes
+        #trait = magic_good_1
+    #}
+#}
+#
+#artuones_mothers_and_fathers_7 = {
+    #name = "Eulast"
+    #female = yes
+    #religion = mothers_and_fathers
+    #culture = artuones
+#
+    #mother = artuones_mothers_and_fathers_2
+#
+    #1257.2.1 = {
+        #birth = yes
+        #trait = bastard
+        #trait = magic_good_2
+    #}
+#
+    #1277.1.1 = {
+        ##add_matrilineal_spouse = sjavlolki_husband 
+    #}
+#}
+#
+#artuones_mothers_and_fathers_8 = {
+    #name = "Gyvreu"
+    #religion = mothers_and_fathers
+    #culture = artuones
+    #mother = artuones_mothers_and_fathers_7
+#
+    #1282.3.6 = {
+        #birth = yes
+        #trait = magic_good_1
+    #}   
+#}
+#artuones_mothers_and_fathers_9 = {
+    #name = "Ceuttoech"
+    #religion = mothers_and_fathers
+    #culture = artuones
+    #mother = artuones_mothers_and_fathers_7
+#
+    #1284.6.17 = {
+        #birth = yes
+    #}   
+#}

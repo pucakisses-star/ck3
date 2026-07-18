@@ -1,0 +1,25 @@
+d_vidhan = { 
+	1000.1.1 = {
+		holder = wasteland
+	}
+	#1230.1.1 = {
+	#	holder = babura_ruidari_7
+	#	change_development_level = 4
+	#}
+}
+d_vabhkrun = {
+	1214.1.1 = { 
+		change_development_level = 21 
+	}	
+	1230.1.1 = {
+		holder = simevian_sheharddi_1
+		liege = 0
+	}
+}
+d_sashravun = { 
+	#1230.1.1 = {
+	#	holder = ashital_sheharddi_1
+	#	liege = 0
+	#}
+	1230.1.1 = { change_development_level = 16 	}
+}

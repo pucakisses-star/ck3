@@ -1,0 +1,676 @@
+﻿506 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = irmionoth
+		religion = sjalvolki
+	}
+}
+
+539 = {
+	culture = tasurmad
+	religion = ritualist
+	holding = castle_holding
+}
+
+772 = {
+	culture = hudi
+	religion = wardenism
+	holding = castle_holding
+}
+
+1326 = {
+	holding = none
+}
+
+1328 = {
+	holding = city_holding
+}
+
+1407 = {
+	culture = trustians
+	religion = lifepath
+}
+
+1438 = {
+	culture = carsavisians
+	religion = lifepath
+}
+
+1727 = {
+	religion = wasteland_faith
+	culture = wasteland
+	1200.1.1 = {
+		culture = fog_eaters
+		religion = fogeater
+		holding = tribal_holding
+	}
+}
+
+1775 = {
+	culture = westernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	1240.1.1 = {
+		culture = westernimperial
+		religion = omitilos_aagiokrata
+	}
+}
+
+1779 = {
+	culture = westernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	1240.1.1 = {
+		culture = westernimperial
+		religion = omitilos_aagiokrata
+	}
+}
+
+1807 = {
+	culture = westernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	1240.1.1 = {
+		culture = westernimperial
+		religion = omitilos_aagiokrata
+	}
+}
+
+1888 = {
+	culture = islander
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	1240.1.1 = {
+		culture = islander
+		religion = aversarian_axiaotheaism
+	}
+}
+
+2009 = {
+	culture = westernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+2070 = {
+	culture = skolix
+	religion = hero_religion
+	holding = castle_holding
+}
+
+2071 = {
+	culture = skolix
+	religion = hero_religion
+	holding = castle_holding
+}
+
+2082 = {
+	religion = aversarinas_aagiokrata
+	culture = skolix
+	holding = castle_holding
+}
+
+2109 = {
+	culture = westernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+2116 = {
+	culture = westernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+2123 = {
+	culture = westernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+2163 = {
+	culture = islander
+	religion = cult_of_the_waves
+}
+
+2175 = {
+	religion = wasteland_faith
+	culture = wasteland
+	1200.1.1 = {
+		culture = fog_eaters
+		religion = fogeater
+		holding = tribal_holding
+	}
+}
+
+2181 = {
+	culture = redrunner
+	religion = aversarinas_aagiokrata
+	holding = metro_holding
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+	1200.1.1 = {
+		buildings = {
+			
+			
+			
+			
+			
+		}
+	}
+}
+
+2381 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = irmionoth
+		religion = sjalvolki
+	}
+}
+
+
+2429 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = adrakamp
+		religion = sjalvolki
+	}
+}
+
+2433 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = adrakamp
+		religion = sjalvolki
+	}
+}
+
+2450 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = auteonic
+		religion = partic
+	}
+}
+
+2493 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = adrakamp
+		religion = sjalvolki
+	}
+}
+
+2494 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = vrodkin
+		religion = sjalvolki
+	}
+}
+
+2512 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+}
+
+2525 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = daukeni
+		religion = sjalvolki
+	}
+}
+
+2580 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = greulokin
+		religion = sjalvolki
+	}
+}
+
+2680 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = daukeni
+		religion = sjalvolki
+	}
+}
+
+
+2709 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = vrodkin
+		religion = sjalvolki
+	}
+}
+
+2716 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = caemansi
+		religion = sjalvolki
+	}
+}
+
+2757 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+}
+
+2776 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = kardwens
+		religion = kardawai
+	}
+}
+
+2792 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+}
+
+2806 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = daukeni
+		religion = sjalvolki
+	}
+}
+
+2812 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = karzarads
+		religion = kakarataki
+	}
+}
+
+2826 = {
+	religion = wasteland_faith
+	culture = wasteland
+	1200.1.1 = {
+		culture = fog_eaters
+		religion = fogeater
+		holding = tribal_holding
+	}
+}
+
+2852 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = curgerski
+		religion = sjalvolki
+	}
+}
+
+2875 = {
+	culture = skolix
+	religion = aversarinas_aagiokrata
+}
+
+2889 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = brigandines
+		religion = partic
+	}
+}
+
+2906 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = curgerski
+		religion = sjalvolki
+	}
+}
+
+2920 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = curgerski
+		religion = sjalvolki
+	}
+}
+
+2942 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = curgerski
+		religion = sjalvolki
+	}
+}
+
+3005 = {
+	culture = skolix
+	religion = aversarian_axiaotheaism
+	holding = castle_holding
+}
+
+
+3088 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = barki
+		religion = sjalvolki
+	}
+}
+
+3114 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = barki
+		religion = sjalvolki
+	}
+}
+
+3122 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = mastikigni
+		religion = sjalvolki
+	}
+}
+
+3142 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = mastikigni
+		religion = sjalvolki
+	}
+}
+
+3144 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = mastikigni
+		religion = sjalvolki
+	}
+}
+
+3145 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = mastikigni
+		religion = sjalvolki
+	}
+}
+
+3226 = {
+	culture = etrandanexi
+	religion = aversarinas_aagiokrata
+}
+
+3373 = {
+	religion = wasteland_faith
+	culture = wasteland
+	1200.1.1 = {
+		culture = fog_eaters
+		religion = fogeater
+		holding = tribal_holding
+	}
+}
+
+3399 = {
+	religion = aversarinas_aagiokrata
+	culture = practitioner
+}
+
+3407 = {
+	religion = sjalvolki
+	culture = daukeni
+}
+
+3491 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = tribocicai
+		religion = sjalvolki
+	}
+}
+
+3530 = {
+	religion = sjalvolki
+	culture = tribocicai
+}
+
+3562 = {
+	religion = sjalvolki
+	culture = daukeni
+}
+
+3566 = {
+	religion = sjalvolki
+	culture = daukeni
+}
+
+
+3570 = {
+	religion = sjalvolki
+	culture = daukeni
+}
+
+3614 = {
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+}
+
+3622 = {
+	religion = iyrossi_aagiokrata
+	culture = jassi
+}
+
+3634 = {
+	religion = aversarinas_aagiokrata
+	culture = cerussiai
+}
+
+
+
+3739 = {
+	religion = kikarsagi_aagiokrata
+	culture = kunsag
+}
+
+
+3761 = {
+	religion = kikarsagi_aagiokrata
+	culture = kunsag
+}
+
+3809 = {
+	culture = centralislander
+	religion = cult_of_the_waves
+	holding = castle_holding
+}
+
+3882 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3886 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3961 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3968 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4036 = {
+	culture = irmionoth
+	religion = praznarva
+}
+
+
+4061 = {
+	culture = southernimperial
+	religion = aversarian_axiaotheaism
+	holding = castle_holding
+}
+
+4072 = {
+	culture = southernimperial
+	religion = aversarian_axiaotheaism
+	holding = castle_holding
+}
+
+4096 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4145 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4179 = {
+	culture = southernimperial
+	religion = aversarian_gorassos
+	holding = castle_holding
+}
+
+4187 = {
+	culture = southernimperial
+	religion = aversarian_gorassos
+	holding = castle_holding
+}
+
+4193 = {
+	culture = southernimperial
+	religion = aversarian_gorassos
+	holding = castle_holding
+}
+
+4217 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4233 = {
+	culture = southernimperial
+	religion = aversarian_axiaotheaism
+	holding = castle_holding
+}
+
+
+4264 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+4302 = {
+	culture = practitioner
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4324 = {
+	culture = mineris
+	religion = dejorig
+	holding = castle_holding
+}
+
+4342 = {
+	religion = wasteland_faith
+	culture = wasteland
+	1200.1.1 = {
+		culture = fog_eaters
+		religion = fogeater
+		holding = tribal_holding
+	}
+}
+
+4346 = {
+	religion = wasteland_faith
+	culture = wasteland
+	1200.1.1 = {
+		culture = fog_eaters
+		religion = fogeater
+		holding = tribal_holding
+	}
+}
+
+4376 = {
+	culture = sycharcegs
+	religion = kikarsagi_aagiokrata
+	holding = castle_holding
+}
+
+4400 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4451 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+6647 = {
+	religion = wasteland_faith
+	culture = wasteland
+	1200.1.1 = {
+		culture = fog_eaters
+		religion = fogeater
+		holding = tribal_holding
+	}
+}
+
+9168 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}

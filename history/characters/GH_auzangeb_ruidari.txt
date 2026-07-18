@@ -1,0 +1,278 @@
+﻿auzangeb_ruidari_1 = { # main dude
+	name = "Gopala"
+	dna = auzangeb_ruidari_1
+	dynasty = dyn_auzangeb_ruidari_1
+	religion = "ruidari"
+	culture = "auzangeb"
+	trait = gregarious
+	trait = patient
+	trait = fickle
+	trait = education_diplomacy_3
+	trait = gh_historical_reveler_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = mena_curled_mustache_chinstrap_01
+			custom_hair = male_hair_indian_03
+		}
+	}
+
+	1204.4.14 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 5 }
+		}
+	}
+
+	1216.1.1 = {
+		capital = c_leontyras
+	}
+
+	1230.1.1 = {
+		add_spouse = auzangeb_ruidari_2
+	}
+}
+
+auzangeb_ruidari_2 = { # main wife
+	name = "Amrapali"
+	religion = "ruidari"
+	culture = "auzangeb"
+	female = yes
+
+	1210.4.14 = {
+		birth = yes
+	}
+}
+
+auzangeb_ruidari_3 = { # main daughter 1
+	name = "Devavati"
+	dynasty = dyn_auzangeb_ruidari_1	
+	religion = "ruidari"
+	culture = "auzangeb"
+	female = yes
+	mother = auzangeb_ruidari_2
+	father = auzangeb_ruidari_1
+
+	1232.4.14 = {
+		birth = yes
+	}
+}
+
+auzangeb_ruidari_4 = { # main daughter 2
+	name = "Vina"
+	dynasty = dyn_auzangeb_ruidari_1	
+	religion = "ruidari"
+	culture = "auzangeb"
+	female = yes
+	mother = auzangeb_ruidari_2
+	father = auzangeb_ruidari_1
+
+	1234.4.14 = {
+		birth = yes
+	}
+}
+
+auzangeb_ruidari_5 = { # heir
+	name = "Srimanta"
+	dynasty = dyn_auzangeb_ruidari_1	
+	religion = "ruidari"
+	culture = "auzangeb"
+	mother = auzangeb_ruidari_2
+	father = auzangeb_ruidari_1
+
+	1236.4.14 = {
+		birth = yes
+	}
+}
+
+auzangeb_ruidari_6 = { 
+	name = "Amritnarayan"
+	dynasty = dyn_auzangeb_ruidari_6
+	religion = "ruidari"
+	culture = "auzangeb"
+
+	1220.4.14 = {
+		birth = yes
+	}
+}
+
+auzangeb_ruidari_7 = { 
+	name = "Narasingha"
+	dynasty = dyn_auzangeb_ruidari_7
+	religion = "ruidari"
+	culture = "auzangeb"
+
+	1215.4.14 = {
+		birth = yes
+	}
+}
+
+auzangeb_ruidari_8 = { 
+	name = "Chandranarayan"
+	dynasty = dyn_auzangeb_ruidari_8
+	religion = "ruidari"
+	culture = "auzangeb"
+
+	1217.4.14 = {
+		birth = yes
+	}
+}
+
+auzangeb_ruidari_9 = { 
+	name = "Kumarapala"
+	dynasty = dyn_auzangeb_ruidari_9
+	religion = "ruidari"
+	culture = "babura"
+
+	1222.4.14 = {
+		birth = yes
+	}
+}
+
+auzangeb_ruidari_10 = { 
+	name = "Vijaysingha"
+	dynasty = dyn_auzangeb_ruidari_10
+	religion = "ruidari"
+	culture = "auzangeb"
+
+	1223.4.14 = {
+		birth = yes
+	}
+}
+
+auzangeb_ruidari_11 = { 
+	name = "Vijasin"
+	dynasty = dyn_auzangeb_ruidari_11
+	religion = "ruidari"
+	culture = "auzangeb"
+
+	1229.4.14 = {
+		birth = yes
+	}
+}
+
+auzangeb_ruidari_12 = { 
+	name = "Danujmadhava"
+	dynasty = dyn_auzangeb_ruidari_12
+	religion = "ruidari"
+	culture = "auzangeb"
+
+	1229.4.14 = {
+		birth = yes
+	}
+}
+
+auzangeb_ruidari_13 = { 
+	name = "Rajabhata"
+	dynasty = dyn_auzangeb_ruidari_13
+	religion = "ruidari"
+	culture = "auzangeb"
+
+	1216.4.14 = {
+		birth = yes
+	}
+}
+
+auzangeb_ruidari_14 = { 
+	name = "Prannath"
+	dynasty = dyn_auzangeb_ruidari_14
+	religion = "ruidari"
+	culture = "auzangeb"
+
+	1232.4.14 = {
+		birth = yes
+	}
+}
+
+auzangeb_ruidari_15 = { 
+	name = "Chilarai"
+	dynasty = dyn_auzangeb_ruidari_15
+	religion = "ruidari"
+	culture = "auzangeb"
+
+	1209.4.14 = {
+		birth = yes
+	}
+}
+
+auzangeb_ruidari_16 = { 
+	name = "Kalyanachandra"
+	dynasty = dyn_auzangeb_ruidari_16
+	religion = "ruidari"
+	culture = "auzangeb"
+
+	1212.4.14 = {
+		birth = yes
+	}
+}
+
+auzangeb_ruidari_17 = { 
+	name = "Bhairav_Singh"
+	dynasty = dyn_auzangeb_ruidari_17
+	religion = "ruidari"
+	culture = "babura"
+
+	1232.4.14 = {
+		birth = yes
+	}
+}
+
+auzangeb_ruidari_18 = { 
+	name = "Shivanarayan"
+	dynasty = dyn_auzangeb_ruidari_18
+	religion = "ruidari"
+	culture = "auzangeb"
+
+	1215.4.14 = {
+		birth = yes
+	}
+}
+
+auzangeb_ruidari_19 = { 
+	name = "Mahendrapala"
+	dynasty = dyn_auzangeb_ruidari_19
+	religion = "ruidari"
+	culture = "auzangeb"
+
+	1230.4.14 = {
+		birth = yes
+	}
+}
+
+auzangeb_ruidari_20 = { 
+	name = "Raghudev"
+	dynasty = dyn_auzangeb_ruidari_20
+	religion = "ruidari"
+	culture = "auzangeb"
+
+	1225.4.14 = {
+		birth = yes
+	}
+}
+
+auzangeb_ruidari_21 = { 
+	name = "Aghude"
+	dynasty = dyn_auzangeb_ruidari_21
+	religion = "ruidari"
+	culture = "auzangeb"
+
+	1227.4.14 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 1 }
+		}
+	}
+}
+
+auzangeb_ruidari_22 = { # Placeholder to have the Ayyari exist in 1200
+	name = Hemantasen
+	religion = "ruidari"
+	culture = "auzangeb"
+
+	1178.11.1 = {
+		birth = yes
+	}
+	1207.4.14 = {
+		death = yes
+	}
+}

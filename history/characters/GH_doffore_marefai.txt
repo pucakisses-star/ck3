@@ -1,0 +1,55 @@
+﻿doffore_marefai_1 = { # Marefai count, decent person, still good fighter, dynastic remnant of Marefai Mezawe
+	name = "Zinalesh"
+	religion = marefai
+	culture = doffore
+	
+	dynasty = dyn_damota_5
+	
+	diplomacy = 7
+	martial = 11
+	stewardship = 8
+	intrigue = 5
+	learning = 6
+	
+	1221.4.16 = {
+		birth = yes
+	}
+	1233.4.16 = {
+		trait = compassionate
+		trait = patient
+		trait = brave
+	}
+	1237.4.16 = {
+		trait = education_martial_3
+		effect = {
+	dynasty = { add_dynasty_prestige_level = 5 }
+		}
+	}
+}
+
+doffore_marefai_2 = { # Marefai count of Addagalla
+	name = "Nizela"
+	religion = marefai
+	culture = fedagesh
+	female = yes
+	
+	dynasty = dyn_damota_16
+	
+	diplomacy = 6
+	martial = 5
+	stewardship = 9
+	intrigue = 8
+	learning = 9
+	
+	1232.10.1 = {
+		birth = yes
+	}
+	1244.10.1 = {
+		trait = fickle
+		trait = honest
+		trait = temperate
+	}
+	1248.10.1 = {
+		trait = education_learning_2
+	}
+}

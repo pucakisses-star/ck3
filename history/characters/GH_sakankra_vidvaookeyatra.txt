@@ -1,0 +1,735 @@
+﻿sakankra_vidvaookeyatra_1 = { # Sakankra Sun Prince, killed in Frod
+	name = "Puranjaya"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	sexuality = heterosexual
+	dynasty = dyn_sakankra_2
+
+	1152.9.11 = {
+		birth = yes
+	}
+	1164.9.11 = {
+		trait = zealous
+		trait = calm
+		trait = arrogant
+	}
+	1168.9.11 = {
+		trait = education_diplomacy_3
+	}
+	1170.10.4 = {
+		add_spouse = sakankra_vidvaookeyatra_8
+		give_nickname = nick_the_sun_prince
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sakankra_vidvaookeyatra_2 = { # Sakankra Sun Prince's eldest daughter
+	name = "Gauri"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	sexuality = heterosexual
+	father = sakankra_vidvaookeyatra_1
+	mother = sakankra_vidvaookeyatra_8
+	dynasty = dyn_sakankra_2
+	female = yes
+
+	1171.11.14 = {
+		birth = yes
+	}
+	1183.11.14 = {
+		trait = compassionate
+		trait = temperate
+		trait = shy
+	}
+	1187.11.14 = {
+		trait = education_diplomacy_2
+	}
+	1192.10.4 = {
+		add_matrilineal_spouse = sakankra_vidvaookeyatra_9
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sakankra_vidvaookeyatra_3 = { # 1200 Sakankra Lord
+	name = "Vamana"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	sexuality = heterosexual
+	father = sakankra_vidvaookeyatra_1
+	mother = sakankra_vidvaookeyatra_8
+	dynasty = dyn_sakankra_2
+
+	1174.6.19 = {
+		birth = yes
+	}
+	1186.6.19 = {
+		trait = trusting
+		trait = content
+		trait = fickle
+	}
+	1190.6.19 = {
+		trait = education_learning_1
+	}
+	1193.10.17 = {
+		add_spouse = sakankra_vidvaookeyatra_10
+	}
+	1200.3.1 = {
+		trait = depressed_1
+		trait = gh_widow
+	}
+	1207.8.1 = {
+		death = {
+			death_reason = death_suicide
+		}
+	}
+}
+
+sakankra_vidvaookeyatra_4 = { # Sakankra Sun Prince's second daughter
+	name = "Vasumati"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	sexuality = bisexual
+	father = sakankra_vidvaookeyatra_1
+	mother = sakankra_vidvaookeyatra_8
+	dynasty = dyn_sakankra_2
+	female = yes
+
+	1176.12.4 = {
+		birth = yes
+	}
+	1188.12.4 = {
+		trait = gluttonous
+		trait = gregarious
+		trait = impatient
+	}
+	1192.12.4 = {
+		trait = education_intrigue_2
+		trait = gh_historical_reveler_1
+	}
+	1194.10.4 = {
+		add_matrilineal_spouse = sakankra_vidvaookeyatra_11
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sakankra_vidvaookeyatra_5 = { # Sakankra Sun Prince's second son
+	name = "Ranabhita"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	sexuality = homosexual
+	father = sakankra_vidvaookeyatra_1
+	mother = sakankra_vidvaookeyatra_8
+	dynasty = dyn_sakankra_2
+
+	1178.2.20 = {
+		birth = yes
+	}
+	1190.2.20 = {
+		trait = callous
+		trait = chaste
+		trait = forgiving
+	}
+	1194.2.20 = {
+		trait = education_martial_3
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sakankra_vidvaookeyatra_6 = { # Sakankra Sun Prince's third son
+	name = "Netta"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	sexuality = heterosexual
+	father = sakankra_vidvaookeyatra_1
+	mother = sakankra_vidvaookeyatra_8
+	dynasty = dyn_sakankra_2
+
+	1180.4.5 = {
+		birth = yes
+	}
+	1192.4.5 = {
+		trait = stubborn
+		trait = lustful
+		trait = vengeful
+	}
+	1196.4.5 = {
+		trait = education_stewardship_2
+	}
+	1198.2.12 = {
+		add_spouse = sakankra_vidvaookeyatra_12
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sakankra_vidvaookeyatra_7 = { # Sakankra Sun Prince's third daughter
+	name = "Dharma"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	sexuality = asexual
+	father = sakankra_vidvaookeyatra_1
+	mother = sakankra_vidvaookeyatra_8
+	dynasty = dyn_sakankra_2
+	female = yes
+
+	1181.12.11 = {
+		birth = yes
+	}
+	1193.12.11 = {
+		trait = temperate
+		trait = patient
+		trait = cynical
+	}
+	1197.12.11 = {
+		trait = education_learning_2
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sakankra_vidvaookeyatra_8 = { # Sakankra Sun Prince's wife
+	name = "Vakulamahadevi"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	sexuality = heterosexual
+	female = yes
+
+	1153.4.19 = {
+		birth = yes
+	}
+	1165.4.19 = {
+		trait = shy
+		trait = paranoid
+		trait = generous
+	}
+	1169.4.19 = {
+		trait = education_learning_3
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sakankra_vidvaookeyatra_9 = { # Sakankra Sun Prince's son-in-law 1
+	name = "Teja"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	sexuality = heterosexual
+	trait = magic_good_1
+
+	1172.1.15 = {
+		birth = yes
+	}
+	1184.1.15 = {
+		trait = brave
+		trait = vengeful
+		trait = generous
+	}
+	1188.1.15 = {
+		trait = education_martial_4
+		trait = organizer
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sakankra_vidvaookeyatra_10 = { # Sakankra Sun Prince's daughter-in-law 1
+	name = "Gandharavati"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	sexuality = bisexual
+	female = yes
+
+	1179.12.11 = {
+		birth = yes
+	}
+	1191.12.11 = {
+		trait = greedy
+		trait = patient
+		trait = ambitious
+	}
+	1195.12.11 = {
+		trait = education_stewardship_3
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sakankra_vidvaookeyatra_11 = { # Sakankra Sun Prince's son-in-law 2
+	name = "Mukunda"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	sexuality = homosexual
+	trait = beauty_bad_1
+
+	1171.5.9 = {
+		birth = yes
+	}
+	1183.5.9 = {
+		trait = sadistic
+		trait = gluttonous
+		trait = chaste
+	}
+	1187.5.9 = {
+		trait = education_martial_2
+		trait = gh_historical_track_hunter_1
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sakankra_vidvaookeyatra_12 = { # Sakankra Sun Prince's daughter-in-law 2
+	name = "Bhogavati"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	sexuality = heterosexual
+	female = yes
+
+	1177.2.4 = {
+		birth = yes
+	}
+	1189.2.4 = {
+		trait = deceitful
+		trait = cynical
+		trait = craven
+	}
+	1193.2.4 = {
+		trait = education_intrigue_2
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sakankra_vidvaookeyatra_13 = { # Sakankra Sun Prince's granddaughter 1
+	name = "Lakshmi"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	father = sakankra_vidvaookeyatra_9
+	mother = sakankra_vidvaookeyatra_2
+	dynasty = dyn_sakankra_2
+	female = yes
+
+	1194.6.18 = {
+		birth = yes
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sakankra_vidvaookeyatra_14 = { # Sakankra Sun Prince's grandson 1
+	name = "Ranabhanja"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	father = sakankra_vidvaookeyatra_9
+	mother = sakankra_vidvaookeyatra_2
+	dynasty = dyn_sakankra_2
+
+	1196.8.22 = {
+		birth = yes
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sakankra_vidvaookeyatra_15 = { # Sakankra Sun Prince's grandson 2
+	name = "Kapilendradeva"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	father = sakankra_vidvaookeyatra_3
+	mother = sakankra_vidvaookeyatra_10
+	dynasty = dyn_sakankra_2
+
+	1195.7.30 = {
+		birth = yes
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sakankra_vidvaookeyatra_16 = { # 1217&39 Sakankra duchess, a shrewd woman
+	name = "Vasumati"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	father = sakankra_vidvaookeyatra_11
+	mother = sakankra_vidvaookeyatra_4
+	dynasty = dyn_sakankra_2
+	sexuality = heterosexual
+	female = yes
+	trait = intellect_good_1
+
+	1197.10.8 = {
+		birth = yes
+	}
+	1209.10.8 = {
+		trait = patient
+		trait = just
+		trait = gregarious
+	}
+	1213.10.8 = {
+		trait = education_stewardship_4
+		trait = gh_historical_reveler_2
+	}
+	1216.2.14 = {
+		add_matrilineal_spouse = adani_vidvaookeyatra_1
+	}
+	1244.11.14 = {
+		death = {
+			death_reason = death_poison
+			killer = karkit_vidvaookeyatra_1
+		}
+	}
+}
+
+sakankra_vidvaookeyatra_17 = { # Sakankra Sun Prince's grandson 3
+	name = "Kalua"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	father = sakankra_vidvaookeyatra_6
+	mother = sakankra_vidvaookeyatra_12
+	dynasty = dyn_sakankra_2
+
+	1199.1.6 = {
+		birth = yes
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sakankra_vidvaookeyatra_18 = { # 1254 Sakankra Duke
+	name = "Damodara"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	father = adani_vidvaookeyatra_1
+	mother = sakankra_vidvaookeyatra_16
+	dynasty = dyn_sakankra_2
+	sexuality = heterosexual
+	trait = intellect_good_1
+
+	1219.5.24 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 5 }
+		}
+	}
+	1231.5.24 = {
+		trait = wrathful
+		trait = vengeful
+		trait = arbitrary
+		trait = strong
+	}
+	1235.5.24 = {
+		trait = education_martial_3
+		trait = reckless
+		trait = aggressive_attacker
+		trait = gh_historical_track_hunter_1
+	}
+	1242.9.18 = {
+		add_spouse = karkit_vidvaookeyatra_1
+	}
+	1247.3.6 = {
+		remove_spouse = karkit_vidvaookeyatra_1
+	}
+	1251.3.2 = {
+		add_spouse = sakankra_vidvaookeyatra_22
+	}
+	1253.2.4 = {
+		trait = gh_widow
+		trait = reclusive
+	}
+}
+
+sakankra_vidvaookeyatra_19 = { # 1254 Sakankra Duke's daughter
+	name = "Ahiavadevi"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	father = sakankra_vidvaookeyatra_18
+	mother = karkit_vidvaookeyatra_1
+	dynasty = dyn_sakankra_2
+	female = yes
+
+	1245.10.3 = {
+		birth = yes
+	}
+}
+
+sakankra_vidvaookeyatra_20 = { # 1254 Sakankra Duke's son
+	name = "Mahinda"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	father = sakankra_vidvaookeyatra_18
+	mother = sakankra_vidvaookeyatra_22
+	dynasty = dyn_sakankra_2
+	trait = intellect_good_1
+
+	1253.2.4 = {
+		birth = yes
+	}
+}
+
+sakankra_vidvaookeyatra_21 = { # 1254 Sakankra Duke's brother
+	name = "Bhimasena"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	father = adani_vidvaookeyatra_1
+	mother = sakankra_vidvaookeyatra_16
+	dynasty = dyn_sakankra_2
+	sexuality = asexual
+	trait = intellect_good_1
+
+	1222.2.12 = {
+		birth = yes
+	}
+	1234.2.12 = {
+		trait = impatient
+		trait = craven
+		trait = arbitrary
+	}
+	1238.2.12 = {
+		trait = education_learning_2
+		trait = hashishiyah
+	}
+}
+
+sakankra_vidvaookeyatra_22 = { # 1254 would-be Sakankra Duchess, died giving birth
+	name = "Vijnayavati"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	father = sakankra_vidvaookeyatra_23
+	mother = sakankra_vidvaookeyatra_25
+	dynasty = dyn_sakankra_1
+	sexuality = heterosexual
+	female = yes
+
+	1226.5.24 = {
+		birth = yes
+	}
+	1238.5.24 = {
+		trait = generous
+		trait = arbitrary
+		trait = trusting
+	}
+	1244.5.24 = {
+		trait = education_diplomacy_3
+	}
+	1253.2.4 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+sakankra_vidvaookeyatra_23 = { # Janmejaya 'Skyhammer'
+	name = "Janmejaya"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	dynasty = dyn_sakankra_1
+	sexuality = bisexual
+	trait = physique_good_2
+
+	1183.12.17 = {
+		birth = yes
+	}
+	1195.12.17 = {
+		trait = wrathful
+		trait = brave
+		trait = gregarious
+	}
+	1199.12.17 = {
+		trait = education_martial_4
+		trait = gh_historical_blademaster_1
+		trait = organizer
+		give_nickname = nick_skyhammer
+	}
+	1208.2.14 = {
+		add_spouse = sakankra_vidvaookeyatra_24
+	}
+	1224.2.14 = {
+		add_spouse = sakankra_vidvaookeyatra_25
+	}
+	1253.3.19 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+sakankra_vidvaookeyatra_24 = { # Janmejaya 'Skyhammer' Wife 1
+	name = "Dandimahadevi"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	sexuality = heterosexual
+	female = yes
+
+	1190.2.11 = {
+		birth = yes
+	}
+	1202.2.11 = {
+		trait = compassionate
+		trait = fickle
+		trait = chaste
+	}
+	1206.2.11 = {
+		trait = education_diplomacy_2
+	}
+	1214.5.19 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+
+sakankra_vidvaookeyatra_25 = { # Janmejaya 'Skyhammer' Wife 2
+	name = "Vijnayavati"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	sexuality = heterosexual
+	female = yes
+
+	1200.8.6 = {
+		birth = yes
+	}
+	1212.8.6 = {
+		trait = stubborn
+		trait = temperate
+		trait = forgiving
+	}
+	1216.8.6 = {
+		trait = education_stewardship_3
+	}
+}
+
+sakankra_vidvaookeyatra_26 = { # Skyhammer's eldest son
+	name = "Pulindasena"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	father = sakankra_vidvaookeyatra_23
+	mother = sakankra_vidvaookeyatra_24
+	dynasty = dyn_sakankra_1
+	sexuality = asexual
+	trait = physique_good_1
+
+	1209.5.24 = {
+		birth = yes
+	}
+	1221.5.24 = {
+		trait = craven
+		trait = callous
+		trait = shy
+	}
+	1225.5.24 = {
+		trait = education_learning_3
+	}
+	1249.3.6 = {
+		add_spouse = karkit_vidvaookeyatra_1
+		effect = {
+			set_relation_friend = character:sakankra_vidvaookeyatra_18
+		}
+	}
+}
+
+sakankra_vidvaookeyatra_27 = { # Skyhammer's younger son
+	name = "Gundama"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	father = sakankra_vidvaookeyatra_23
+	mother = sakankra_vidvaookeyatra_25
+	dynasty = dyn_sakankra_1
+	sexuality = heterosexual
+	trait = physique_good_1
+
+	1229.1.28 = {
+		birth = yes
+	}
+	1241.1.28 = {
+		trait = paranoid
+		trait = sadistic
+		trait = calm
+	}
+	1245.1.28 = {
+		trait = education_intrigue_1
+	}
+}
+
+sakankra_vidvaookeyatra_28 = { # 1254 wife of the 'heir' to the Paidem
+	name = "Lakshmi"
+	religion = "vidvaookeyatra"
+	culture = "sakankra"
+	sexuality = heterosexual
+	female = yes
+	trait = magic_good_3
+
+	1206.7.2 = {
+		birth = yes
+	}
+	1218.7.2 = {
+		trait = diligent
+		trait = patient
+		trait = deceitful
+	}
+	1222.7.2 = {
+		trait = education_stewardship_4
+	}
+}

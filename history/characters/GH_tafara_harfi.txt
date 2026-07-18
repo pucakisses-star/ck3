@@ -1,0 +1,29 @@
+﻿tafara_harfi_1 = {
+	name = "Bolonq"
+	religion = "harfi"
+	culture = "tafara"
+
+	1214.2.12 = {
+		birth = yes
+	}
+}
+
+tafara_harfi_2 = {
+	name = "Usnaf"
+	religion = "harfi"
+	culture = "tafara"
+
+	1231.6.5 = {
+		birth = yes
+	}
+}
+
+tafara_harfi_3 = {
+	name = "Filije"
+	religion = "harfi"
+	culture = "tafara"
+
+	1216.1.14 = {
+		birth = yes
+	}
+}

@@ -1,0 +1,88 @@
+﻿d_dusk = {
+	1.1.2 = {
+		holder = unsorted_37
+	}
+	100.1.1 = {
+		holder = 0
+	}
+	1251.4.14 = {
+		holder = southernimperial_aversarinas_aagiokrata_30
+		liege = 0
+		change_development_level = 5
+	}
+}
+
+d_epidyros = {
+	1251.4.14 = {
+		holder = westernimperial_aversarinas_aagiokrata_158
+		change_development_level = 5
+	}
+}
+
+d_megalarina = {
+	1.1.2 = {
+		holder = unsorted_37
+	}
+	100.1.1 = {
+		holder = 0
+	}
+	964.12.16 = {
+		holder = southernimperial_aversarinas_aagiokrata_73
+	}
+	1024.10.25 = {
+		holder = southernimperial_aversarinas_aagiokrata_75
+	}
+	1051.4.16 = {
+		holder = southernimperial_aversarinas_aagiokrata_82
+	}
+	1105.11.17 = {
+		holder = southernimperial_aversarinas_aagiokrata_84
+	}
+	1153.11.26 = {
+		holder = southernimperial_aversarinas_aagiokrata_86
+	}
+	1194.9.7 = {
+		holder = southernimperial_aversarinas_aagiokrata_93
+	}
+	1196.10.23 = {
+		holder = southernimperial_aversarinas_aagiokrata_99
+	}
+	1200.3.1 = {
+		holder = southernimperial_aversarinas_aagiokrata_101
+	}
+	1219.6.24 = {
+		holder = southernimperial_aversarinas_aagiokrata_104
+	}
+	1222.10.25 = {
+		holder = southernimperial_aversarinas_aagiokrata_30
+		change_development_level = 5
+	}
+	1245.2.14 = {
+		holder = southernimperial_aversarinas_aagiokrata_41
+		change_development_level = 5
+	}
+}
+
+#d_eretithos = {
+#	1230.1.1 = { change_development_level = 8 }
+#
+#	1248.4.11 = {
+#		holder = centralislander_aversarinas_aagiokrata_2
+#		liege = k_high_kingdom_of_the_isles
+#	}
+#
+#	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+#		de_jure_liege = k_gevek
+#	}
+#}
+
+d_pelelis = {
+	1251.4.14 = {
+		holder = southernimperial_aversarinas_aagiokrata_46
+		liege = 0
+		change_development_level = 6
+	}
+	1267.3.28 = {
+		liege = 0
+	}
+}

@@ -1,0 +1,150 @@
+c_radiant_glory = {
+	1250.1.1 = {
+		holder = adrakamp_sjalvolki_5
+		government = continental_clan_government
+	}
+	1252.1.5 = {
+		holder = adrakamp_sjalvolki_6
+	}
+}
+c_sicerma = { 
+	1250.1.1 = {
+		holder = adrakamp_sjalvolki_6
+		government = continental_clan_government
+		liege = "d_sanctum"
+	}
+}
+c_solstice = { 
+	1252.2.14 = {
+		holder = adrakamp_sjalvolki_aagiokrata_1
+		government = continental_clan_government
+		liege = "d_sanctum"
+	}
+
+	1275.1.1 = {
+		liege = k_suncourt
+	}
+}
+c_agrinyreum_isles1 = {
+	1251.4.14 = {
+		holder = agiopadis_saintly_order_1
+		liege = 0
+	}
+	1263.5.30 = {
+		holder = adrakamp_sjalvolki_21
+		liege = k_suncourt
+	}
+	1274.8.26 = {
+		holder = adrakamp_sjalvolki_23
+	}
+	1293.10.23 = {
+		holder = adrakamp_sjalvolki_25
+	}
+}
+c_solar_throne = {
+	1251.4.14 = {
+		holder = southernimperial_aversarinas_aagiokrata_58
+		liege = d_radix
+	}
+	1267.5.6 = {
+		holder = adrakamp_sjalvolki_4
+	}
+	1278.4.13 = {
+		holder = adrakamp_sjalvolki_31
+	}
+	1278.5.1 = {
+		holder = adrakamp_sjalvolki_44
+	}
+	1295.12.3 = {
+		holder = adrakamp_sjalvolki_34
+	}
+	1298.1.1 = {
+		government = feudal_government
+	}
+}
+c_tarigeneia = {
+	1058.7.12 = {
+		holder = southernimperial_aversarinas_aagiokrata_127
+		liege = k_governorate_opakhasia_kingdom
+	}
+	1106.8.22 = {
+		holder = southernimperial_aversarinas_aagiokrata_128
+	}
+	1119.9.17 = {
+		holder = southernimperial_aversarinas_aagiokrata_129
+	}
+	1162.6.24 = {
+		holder = southernimperial_aversarinas_aagiokrata_130
+	}
+	1162.12.28 = {
+		holder = southernimperial_aversarinas_aagiokrata_131
+	}
+	1251.4.14 = {
+		holder = southernimperial_aversarinas_aagiokrata_57
+		liege = 0
+	}
+	1263.5.30 = {
+		holder = adrakamp_sjalvolki_21
+		liege = k_suncourt
+	}
+	1274.8.26 = {
+		holder = adrakamp_sjalvolki_23
+	}
+	1293.10.23 = {
+		holder = adrakamp_sjalvolki_25
+	}
+}
+c_rhamnythrae = {
+	1251.4.14 = {
+		holder = erridai_aversarinas_aagiokrata_1
+		government = theocracy_government
+	}
+	1293.1.2 = {
+		holder = erridai_aversarinas_aagiokrata_3
+	}
+}
+c_equinox = {
+	1251.4.14 = { 
+		change_development_level = 2
+		holder = southernimperial_aversarinas_aagiokrata_71
+		liege = 0
+	}
+}
+c_morningstar = {
+	1251.4.14 = { 
+		change_development_level = 2
+		holder = southernimperial_aversarinas_aagiokrata_72
+		liege = 0
+	}
+	1269.6.17 = {
+		holder = adrakamp_sjalvolki_17
+	}
+
+	1280.1.1 = {
+		liege = k_suncourt
+	}
+}
+c_ochon = {
+	1.1.2 = {
+		holder = unsorted_39
+	}
+	1252.1.1 = {
+		holder = adrakamp_sjalvolki_7
+		government = continental_clan_government
+		liege = "d_sanctum"
+	}
+	1267.5.6 = {
+		holder = adrakamp_sjalvolki_4
+	}
+	1278.4.13 = {
+		holder = adrakamp_sjalvolki_31
+		liege = k_suncourt
+	}
+}
+c_artesmos_isles1d = {
+
+	1252.2.14 = {
+		holder = adrakamp_sjalvolki_aagiokrata_2
+		liege = "d_sanctum"
+	}
+}

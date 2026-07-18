@@ -1,0 +1,17 @@
+d_dyazmineh = {
+	1230.1.1 = {
+		holder = makryenis_sansia_1
+	}
+	1230.1.1 = { change_development_level = 4 }
+}
+d_bidiyyeh = {
+	1168.1.1 = {
+		holder = erimatos_aversarinas_aagiokrata_9
+	}
+	1230.1.1 = {
+		holder = makryenis_sansia_4
+		liege = "k_mukhtab"
+		government = landed_order_government
+	}
+	1230.1.1 = { change_development_level = 12 }
+}

@@ -1,0 +1,72 @@
+c_easternkatraddia34 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia28 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia8 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia5 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia25 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia22 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia12 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia15 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia39 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia45 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia10 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia4 = {
+	1230.1.1 = {
+		holder = fog_eaters_fogeater_9
+		government = migratory_government
+	}
+}
+c_easternkatraddia43 = {
+	1230.1.1 = {
+		holder = fog_eaters_fogeater_12
+		government = migratory_government
+	}
+}
+c_easternkatraddia_new19 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}

@@ -1,0 +1,134 @@
+﻿redlander_screaming_host_1 = {
+	name = "Lorm"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	943.5.14 = {
+		birth = yes
+		trait = magic_good_8
+		trait = gh_blackspawn_4
+		trait = physique_good_2
+		
+		trait = education_learning_4
+		trait = gh_historical_blademaster_3
+		trait = theologian
+		
+		trait = cynical
+		trait = honest
+		trait = callous
+	}
+	958.5.14 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:absolution_of_the_void }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			add_character_flag = dont_generate_family
+		}
+	}
+	1000.1.1 = {
+		give_nickname = nick_redlander_the_fallen_prophet
+	}
+}
+
+redlander_screaming_host_2 = {
+	name = "Labynt"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1013.5.27 = {
+		birth = yes
+		trait = magic_good_9
+		trait = gh_blackspawn_4
+		trait = physique_good_3
+		trait = gh_deep_mutation
+		
+		trait = education_learning_4
+		trait = gh_historical_physician_3
+		
+		trait = sadistic
+		trait = diligent
+		trait = lustful
+	}
+	1029.5.27 = {
+		effect = {
+			add_to_variable_list = { name = historical_magic_school_list target = flag:absolution_of_the_void }
+			add_to_variable_list = { name = historical_magic_school_list target = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 5 }
+			add_character_flag = dont_generate_family
+		}
+	}
+	1050.1.1 = {
+		give_nickname = nick_redlander_the_patchwork_man
+	}
+}
+
+redlander_screaming_host_3 = {
+	name = "Zadyr"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = no_hair
+			custom_beards = no_beard
+			#custom_headgear = no_headgear
+			# NOTE: Extracted to portrait_effect_black_figure_trigger in common\scripted_triggers\GH_portrait_effect_triggers.txt
+			#       as a workaround for this portrait_override usage causing shaders to zero out sun brightness.
+			#gh_portrait_effects_flat = flat_figure_black
+			# END NOTE
+		}
+	}
+
+	928.3.11 = {
+		birth = yes
+		trait = magic_good_7
+		trait = gh_blackspawn_3
+		
+		trait = education_intrigue_4
+		
+		trait = eccentric
+		trait = sadistic
+		trait = deceitful
+	}
+	944.1.1 = {
+		effect = {
+			add_to_variable_list = { name = historical_magic_school_list target = flag:absolution_of_the_void }
+			add_to_variable_list = { name = historical_magic_school_list target = flag:silentspeak }
+			set_variable = { name = historical_magic_school_min_spells value = 5 }
+			add_character_flag = dont_generate_family
+		}
+	}
+	980.1.1 = {
+		give_nickname = nick_redlander_the_thing_in_the_dream
+	}
+}
+
+redlander_screaming_host_4 = {
+	name = "Twax"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1229.8.7 = {
+		birth = yes
+		trait = magic_good_6
+	}
+}
+
+redlander_screaming_host_5 = {
+	name = "Serap"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	921.10.11 = {
+		birth = yes
+		trait = magic_good_7
+		trait = gh_blackspawn_3
+	}
+	
+	937.10.11 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:absolution_of_the_void }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			add_character_flag = dont_generate_family
+		}
+	}
+}

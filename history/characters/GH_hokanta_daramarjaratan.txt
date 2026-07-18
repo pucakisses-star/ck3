@@ -1,0 +1,30 @@
+﻿hokanta_daramarjaratan_1 = {
+	name = "Payang"
+	dynasty = dynasty_mysaalo
+	religion = daramarjaratan
+	culture = hokanta
+	father = hokanta_vidvaookeyatra_28
+	mother = hokanta_vidvaookeyatra_29
+
+	1199.1.4 = {
+		birth = yes
+		trait = physique_bad_1
+	}
+
+	1205.1.4 = {
+		trait = education_intrigue_3
+		trait = callous
+		trait = craven
+		trait = fickle
+	}
+
+	1220.11.11 = {
+		trait = heresiarch
+	}
+	1226.9.8 = {
+		death = {
+			death_reason = death_battle
+			killer = hokanta_vidvaookeyatra_21
+		}
+	}
+}

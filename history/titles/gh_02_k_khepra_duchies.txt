@@ -1,0 +1,61 @@
+#d_mtkhet = {
+#	1198.1.1 = {
+#		government = tribal_government
+#		holder = aljibal_kemsari_kemsar_3
+#	}
+#	1230.1.1 = { change_development_level = 1 	}
+#
+#	1236.1.1 = {
+#		government = tribal_government
+#		holder = 0
+#	}
+#}
+d_diuhedju = { 
+	1195.1.1 = {
+		government = tribal_government
+		holder = aljibal_kemsari_kemsar_21
+	}
+	1230.1.1 = { change_development_level = 1 	}
+	1244.1.1 = {
+		government = tribal_government
+		holder = aljibal_kemsari_kemsar_7
+	}
+}
+d_snenys = { 
+	1195.1.1 = {
+		government = tribal_government
+		holder = aljibal_kemsari_kemsar_28
+	}
+	1230.1.1 = { change_development_level = 1 	}
+	1244.1.1 = {
+		government = tribal_government
+		holder = aljibal_kemsari_kemsar_9
+	}
+}
+#d_kheprahedjet = {
+#	1195.1.1 = {
+#		government = tribal_government
+##		holder = aljibal_kemsari_kemsar_26
+##	}
+##	1230.1.1 = { change_development_level = 1 	}
+##	1230.1.1 = {
+#		holder = 0
+#	}
+#}
+#d_srenmakaure = { 
+#		1230.1.1 = { change_development_level = 1 	}
+#		1244.1.1 = {
+#		government = tribal_government
+#		holder = aljibal_kemsari_kemsar_10
+#	}
+#}
+#d_jshekh_wratam = {
+##	1195.1.1 = {
+##		government = tribal_government
+###		holder = aljibal_kemsari_kemsar_30
+###	}
+###	1230.1.1 = { change_development_level = 1 	}
+###	1230.1.1 = {
+##		holder = 0
+#	}
+#}

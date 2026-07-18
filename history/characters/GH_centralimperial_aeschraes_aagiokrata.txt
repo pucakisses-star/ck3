@@ -1,0 +1,181 @@
+﻿centralimperial_aeschraes_aagiokrata_1 = { # Karthyn Delenel
+	name = "Karthyn"
+	dynasty = dyn_aversarian_12
+	dna = karthyn
+	religion = "aeschraes_aagiokrata"
+	culture = "centralimperial"
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_06
+			custom_beards = male_beard_fp2_iberian_christian_03
+		}
+	}
+
+	father = centralimperial_aversarinas_aagiokrata_42
+
+	1171.12.6 = {
+		birth = yes
+		trait = intellect_good_1
+		trait = magic_good_2 # Is said to have had limited magical powers
+		trait = physique_good_3
+	}
+
+	1183.1.1 = {
+		trait = sadistic
+		trait = diligent
+		trait = vengeful
+	}
+
+	1187.12.6 = {
+		trait = education_martial_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+		trait = gh_historical_blademaster_3
+	}
+
+	1192.3.16 = {
+		trait = scarred
+	}
+
+	1194.12.15 = {
+		trait = poet
+	}
+
+	1229.11.3 = { # Wounded by Isacea to near death
+		trait = wounded_3
+	}
+
+	1229.12.12 = {
+		death = {
+			death_reason = death_strangled_with_own_intestines
+			killer = southernimperial_aversarian_gorassos_1 # Gorassos
+		}
+	}
+}
+
+centralimperial_aeschraes_aagiokrata_2 = { # Asia Xuthos, one of Aeschraes' classmates
+	name = "Asia"
+	dynasty = dyn_central_empire_11
+	religion = aeschraes_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = centralimperial_aversarinas_aagiokrata_52
+	mother = centralimperial_aversarinas_aagiokrata_53
+
+	martial = 8
+	diplomacy = 7
+	intrigue = 3
+	stewardship = 6
+	learning = 3
+	prowess = 7
+
+	1167.12.25 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	1179.1.1 = {
+		trait = patient
+		trait = arrogant
+		trait = ambitious
+	}
+
+	1183.12.25 = {
+		trait = gh_glowing_veins
+		trait = education_arcana_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aeschraes_aagiokrata_3 = {
+	name = "Kephalos"
+	dynasty = dyn_central_empire_9
+	religion = "aeschraes_aagiokrata"
+	culture = "centralimperial"
+
+	1230.4.12 = {
+		birth = yes
+	}
+
+	1250.1.1 = {
+		effect = {
+			set_relation_rival = character:centralimperial_aversarinas_aagiokrata_118
+		}
+	}
+}
+
+centralimperial_aeschraes_aagiokrata_4 = {
+	name = "Komitas"
+	religion = "aeschraes_aagiokrata"
+	culture = "centralimperial"
+
+	1215.4.12 = {
+		birth = yes
+	}
+
+	1250.1.1 = {
+		effect = {
+			set_relation_rival = character:centralimperial_aversarinas_aagiokrata_122
+		}
+	}
+}
+
+centralimperial_aeschraes_aagiokrata_5 = { # Legon Darkblood, killed by Axiaothea in battle at the Citadel of Axarathad
+	name = "Achrameos"
+	religion = aeschraes_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+
+	dna = darkblood
+
+	martial = 4
+	diplomacy = 5
+	intrigue = 3
+	stewardship = 6
+	learning = 4
+	prowess = 9
+
+	1154.4.20 = {
+		birth = yes
+	}
+
+	1166.1.1 = {
+		trait = vengeful
+		trait = temperate
+		trait = shy
+	}
+
+	1170.4.20 = {
+		trait = education_intrigue_3
+	}
+
+	1182.8.27 = {
+		trait = gh_legon
+		trait = gh_historical_blademaster_2
+		give_nickname = nick_darkblood
+	}
+
+	1197.12.26 = {
+		death = {
+			death_reason = death_battle
+			killer = easternimperial_aversarian_axiaotheaism_1
+		}
+	}
+}

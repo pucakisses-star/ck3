@@ -1,0 +1,130 @@
+d_dulia = {
+	436.12.23 = {
+		holder = centralimperial_aversarinas_aagiokrata_17
+		liege = k_governorate_malcois_kingdom
+	}
+	497.9.13 = {
+		holder = centralimperial_aversarinas_aagiokrata_18
+		liege = k_governorate_malcois_kingdom
+	}
+	504.12.14 = {
+		holder = centralimperial_aversarinas_aagiokrata_19
+		liege = k_governorate_malcois_kingdom
+	}
+	539.12.3 = {
+		holder = centralimperial_aversarinas_aagiokrata_20
+		liege = k_governorate_malcois_kingdom
+	}
+	1180.4.15 = {
+		holder = centralimperial_aversarinas_aagiokrata_99
+		liege = k_governorate_malcois_kingdom
+	}
+	1200.3.1 = {
+		holder = centralimperial_aversarinas_aagiokrata_100
+		liege = k_governorate_malcois_kingdom
+	}
+	1238.4.15 = {
+		holder = centralimperial_aversarinas_aagiokrata_98
+		liege = k_governorate_malcois_kingdom
+	}
+	1240.8.13 = {
+		holder = cerussiai_iyrossi_aagiokrata_2
+		change_development_level = 9
+	}
+}
+
+#d_rhophones = {
+#	436.12.23 = {
+#		holder = centralimperial_aversarinas_aagiokrata_17
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	497.9.13 = {
+#		holder = centralimperial_aversarinas_aagiokrata_18
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	504.12.14 = {
+#		holder = centralimperial_aversarinas_aagiokrata_19
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	539.12.3 = {
+#		holder = centralimperial_aversarinas_aagiokrata_20
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	1180.4.15 = {
+#		holder = centralimperial_aversarinas_aagiokrata_99
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	1200.3.1 = {
+#		holder = centralimperial_aversarinas_aagiokrata_100
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	1238.4.15 = {
+#		holder = centralimperial_aversarinas_aagiokrata_98
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	1240.8.13 = {
+#		holder = centralimperial_aeschraes_aagiokrata_4
+#		change_development_level = 15
+#		liege = 0
+#	}
+#	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+#		de_jure_liege = k_dlak
+#	}
+#}
+
+d_eretrona = {
+	1.1.2 = {
+		holder = unsorted_41
+		liege = 0
+	}
+	80.1.1 = {
+		holder = 0
+	}
+	436.12.23 = {
+		holder = centralimperial_aversarinas_aagiokrata_17
+		liege = k_governorate_malcois_kingdom
+	}
+	497.9.13 = {
+		holder = centralimperial_aversarinas_aagiokrata_18
+		liege = k_governorate_malcois_kingdom
+	}
+	504.12.14 = {
+		holder = centralimperial_aversarinas_aagiokrata_19
+		liege = k_governorate_malcois_kingdom
+	}
+	539.12.3 = {
+		holder = centralimperial_aversarinas_aagiokrata_20
+		liege = k_governorate_malcois_kingdom
+	}
+	1180.4.15 = {
+		holder = centralimperial_aversarinas_aagiokrata_99
+		liege = k_governorate_malcois_kingdom
+	}
+	1200.3.1 = {
+		holder = centralimperial_aversarinas_aagiokrata_100
+		liege = k_governorate_malcois_kingdom
+	}
+	1238.4.15 = {
+		holder = centralimperial_aversarinas_aagiokrata_98
+		liege = k_governorate_malcois_kingdom
+	}
+	1240.8.13 = {
+		liege = 0
+		holder = oxalanti_iyrossi_aagiokrata_1
+		change_development_level = 15
+	}
+}
+
+d_olynthagoria = {
+	1.1.2 = {
+		holder = unsorted_41
+		liege = 0
+	}
+	80.1.1 = {
+		holder = 0
+	}
+	1230.1.1 = {
+		holder = oxalanti_iyrossi_aagiokrata_2
+		change_development_level = 10
+	}
+}

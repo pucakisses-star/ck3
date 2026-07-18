@@ -1,0 +1,30 @@
+
+c_easternkatraddia118 = {
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia133 = {
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+#c_easternkatraddia138 = {
+#	1227.12.16 = {
+#		holder = druhandaehzag_orndaehz_1
+#	}
+#}
+c_easternkatraddia137 = {
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}

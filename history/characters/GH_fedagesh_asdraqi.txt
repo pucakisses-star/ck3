@@ -1,0 +1,25 @@
+﻿fedagesh_asdraqi_1 = { #Rashali's wife
+	name = "Nizela"
+	religion = asdraqi
+	culture = fedagesh
+	sexuality = heterosexual
+	female = yes
+	
+	diplomacy = 7
+	martial = 8
+	stewardship = 10
+	intrigue = 6
+	learning = 8
+	
+	1230.5.18 = {
+		birth = yes
+	}
+	1242.5.18 = {
+		trait = loyal
+		trait = honest
+		trait = lustful
+	}
+	1246.5.18 = {
+		trait = education_stewardship_2
+	}
+}

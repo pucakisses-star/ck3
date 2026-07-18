@@ -1,0 +1,39 @@
+﻿redlander_yalgabaot_1 = {
+	name = "Labynt"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1217.11.6 = {
+		birth = yes
+	}
+}
+
+redlander_yalgabaot_2 = {
+	name = "Streder"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1226.4.19 = {
+		birth = yes
+	}
+}
+
+redlander_yalgabaot_3 = {
+	name = "Drem"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1230.9.17 = {
+		birth = yes
+	}
+}
+
+redlander_yalgabaot_4 = {
+	name = "Cxuira"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1236.6.10 = {
+		birth = yes
+	}
+}

@@ -1,0 +1,218 @@
+c_kilahijan = {
+	1170.1.1 = {
+		government = republic_playable_government
+		succession_laws = { clique_republic_elective_title_succession_law }
+		holder = doffore_mogowai_13
+	}
+	1200.1.1 = { change_development_level = 12 }
+	1230.1.1 = {
+		liege = "d_sokoi"
+		government = republic_playable_government
+		holder = doffore_mogowai_2
+	}
+	1230.1.1 = {
+		change_development_level = 4
+	}
+	1282.5.19 = {
+		holder = adnanari_asdraqi_1
+	}
+}
+c_hadewa = {
+	1230.1.1 = {
+		liege = "d_sokoi"
+		government = republic_playable_government
+		succession_laws = { clique_republic_elective_title_succession_law }
+		holder = doffore_mogowai_1
+	}
+	1230.1.1 = {
+		change_development_level = 17
+	}
+	1282.5.19 = {
+		holder = adnanari_asdraqi_1
+	}
+	1282.5.19 = {
+		change_development_level = 10
+	}
+}
+#c_gomolej = {
+#	1230.1.1 = {
+#		liege = "d_sokoi"
+#		government = republic_playable_government
+#		holder = doffore_mogowai_4
+#	}
+#	1230.1.1 = {
+#		change_development_level = 14
+#	}
+#}
+c_faille = {
+	1230.1.1 = {
+		liege = "d_sokoi"
+		government = republic_playable_government
+		succession_laws = { clique_republic_elective_title_succession_law }
+		holder = doffore_mogowai_3
+	}
+	1230.1.1 = {
+		change_development_level = 10
+	}
+	1261.3.14 = {
+		holder = doffore_mogowai_5
+	}
+	1291.11.26 = {
+		holder = adnanari_asdraqi_1
+	}
+}
+#c_gotet = {
+#	1230.1.1 = {
+#		government = feudal_government
+#		holder = doffore_marefai_1
+#	}
+#	1230.1.1 = {
+#		change_development_level = 12
+#	}
+#}
+c_berahle = {
+	1230.1.1 = {
+		government = feudal_government
+		holder = doffore_marefai_1
+	}
+	1230.1.1 = {
+		change_development_level = 9
+	}
+	1276.8.14 = {
+		holder = adnanari_asdraqi_1
+	}
+}
+#c_contura = {
+#	1230.1.1 = {
+#		liege = "d_ainamba"
+#		government = feudal_government
+#		holder = doffore_mogowai_5
+#	}
+#	1230.1.1 = {
+#		change_development_level = 13
+#	}
+#}
+c_aboskul = {
+	1230.1.1 = {
+		liege = "d_ainamba"
+		government = feudal_government
+		holder = doffore_mogowai_6
+	}
+	1230.1.1 = {
+		change_development_level = 9
+	}
+	1284.4.17 = {
+		holder = adnanari_asdraqi_1
+	}
+}
+c_murilaz = {
+	1170.1.1 = {
+		holder = doffore_mogowai_14
+	}
+	1230.1.1 = {
+		liege = "d_ainamba"
+		government = feudal_government
+		holder = doffore_mogowai_7
+	}
+	1230.1.1 = {
+		change_development_level = 9
+	}
+	1290.4.12 = {
+		holder = adnanari_asdraqi_1
+	}
+}
+c_teratenya = {
+	1170.1.1 = {
+		government = feudal_government
+		holder = doffore_mogowai_14
+	}
+	1230.1.1 = {
+		government = feudal_government
+		holder = doffore_mogowai_5
+	}
+}
+#c_uakdzhira = {
+#	1170.1.1 = {
+#		holder = doffore_mogowai_16
+#	}
+#	1230.1.1 = {
+#		government = feudal_government
+#		holder = doffore_mogowai_8
+#	}
+#	1230.1.1 = {
+#		change_development_level = 10
+#	}
+#}
+c_omein = {
+	1170.1.1 = {
+		holder = doffore_mogowai_18
+	}
+	1230.1.1 = {
+		government = feudal_government
+		holder = doffore_mogowai_9
+	}
+	1230.1.1 = {
+		change_development_level = 10
+	}
+}
+c_gydzhet = {
+	1170.1.1 = {
+		holder = kawoch_mogowai_17
+	}
+	1230.1.1 = {
+		government = feudal_government
+		holder = doffore_mogowai_9
+	}
+	1230.1.1 = {
+		change_development_level = 7
+	}
+}
+c_danghela = {
+	1170.1.1 = {
+		holder = doffore_mogowai_20
+	}
+	1230.1.1 = {
+		liege = "d_sahate"
+		government = feudal_government
+		holder = doffore_mogowai_10
+	}
+	1230.1.1 = {
+		change_development_level = 6
+	}
+}
+c_paludag = {
+	1170.1.1 = {
+		holder = doffore_mogowai_20
+	}
+	1230.1.1 = {
+		liege = "d_sahate"
+		government = feudal_government
+		holder = doffore_mogowai_10
+	}
+	1230.1.1 = {
+		change_development_level = 7
+	}
+}
+#c_logahi = {
+#	1170.1.1 = {
+#		holder = kawoch_mogowai_17
+#	}
+#	1230.1.1 = {
+#		liege = "d_sahate"
+#		government = feudal_government
+#		holder = kawoch_mogowai_1
+#	}
+#	1230.1.1 = {
+#		change_development_level = 10
+#	}
+#}
+c_gonan = {
+	1250.1.1 = {
+		holder = asarey_harfi_1
+	}
+}
+c_beni_haqiya = {
+	1250.1.1 = {
+		holder = asarey_harfi_3
+	}
+}

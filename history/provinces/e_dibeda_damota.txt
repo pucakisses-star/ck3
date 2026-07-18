@@ -1,0 +1,243 @@
+#c_zahali
+4237 = {
+    culture = kawoch
+    religion = mogowai
+    holding = metro_holding
+        258.1.1 = {
+            special_building = 01_tabik_betemisit
+        }
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+        1200.1.1 = {
+        buildings = {
+            
+            
+            
+        }
+    }
+}
+4240 = {
+holding = ruin_holding
+}
+4241 = {
+    holding = city_holding
+}
+4238 = {
+    holding = ruin_holding
+}
+#c_kaselej
+4249 = {
+    culture = kawoch
+    religion = mogowai
+    holding = castle_holding
+}
+4250 = {
+    holding = city_holding
+}
+#c_qalisul
+4271 = {
+    culture = kawoch
+    religion = mogowai
+    holding = castle_holding
+}
+4380 = {
+    holding = none
+}
+#c_kometta
+3725 = {
+    culture = kawoch
+    religion = mogowai
+    holding = castle_holding
+}
+4269 = {
+    holding = city_holding
+}
+4251 = {
+    holding = none
+}
+#c_restoredamota1
+3327 = {
+    culture = kawoch
+    religion = nitsafai
+    holding = castle_holding
+    200.1.1 = {
+        special_building = 01_biyakaddu
+    }
+}
+2912 = {
+    holding = church_holding
+}
+#c_restoredamota6
+1354 = {
+    culture = kawoch
+    religion = nitsafai
+    holding = castle_holding
+}
+4613 = {
+    holding = church_holding
+}
+#c_repeza
+1429 = {
+    culture = kawoch
+    religion = nitsafai
+    holding = castle_holding
+}
+1339 = {
+    holding = city_holding
+}
+#c_siralab
+3193 = {
+    culture = kawoch
+    religion = nitsafai
+    holding = castle_holding
+}
+1489 = {
+    holding = church_holding
+    1.1.1 = {
+        special_building = 01_haseti_mekab
+    }
+}
+1341 = {
+    holding = none
+}
+#c_orunlaz
+3297 = {
+    culture = kawoch
+    religion = nitsafai
+    holding = castle_holding
+}
+1420 = {
+    holding = city_holding
+}
+3214 = {
+    holding = none
+}
+#c_sariya
+4267 = {
+    culture = kawoch
+    religion = waharai
+    holding = castle_holding
+}
+3353 = {
+    holding = church_holding
+}
+4266 = {
+    holding = none
+}
+#c_lastira
+1086 = {
+    culture = kawoch
+    religion = waharai
+    holding = castle_holding
+}
+3618 = {
+    holding = city_holding
+}
+1075 = {
+    holding = none
+}
+#c_restoredamota7
+1087 = {
+    culture = kawoch
+    religion = waharai
+    holding = castle_holding
+}
+1068 = {
+    holding = none
+}
+#c_rehelja
+4257 = {
+    culture = kawoch
+    religion = waharai
+    holding = castle_holding
+}
+4228 = {
+    holding = city_holding
+}
+4262 = {
+    holding = none
+}
+#c_restoredamota2
+4222 = {
+    culture = kawoch
+    religion = mogowai
+    holding = castle_holding
+}
+1080 = {
+    holding = city_holding
+}
+3636 = {
+    holding = none
+}
+#c_darmalej
+3673 = {
+    culture = kawoch
+    religion = mogowai
+    holding = castle_holding
+    270.1.1 = {
+        special_building = 01_benoriya_atawek
+    }
+}
+3681 = {
+    holding = city_holding
+}
+3674 = {
+    holding = church_holding
+}
+3670 = {
+    holding = none
+}
+#c_ralolaz
+4195 = {
+    culture = kawoch
+    religion = mogowai
+    holding = castle_holding
+}
+3676 = {
+    holding = city_holding
+}
+3680 = {
+    holding = none
+}
+#c_gydzhet
+1071 = {
+    culture = kawoch
+    religion = mogowai
+    holding = castle_holding
+}
+3162 = {
+    holding = church_holding
+}
+1057 = {
+    holding = none
+}
+1051 = {
+    holding = none
+}
+#c_paludag
+1083 = {
+    culture = kawoch
+    religion = mogowai
+    holding = castle_holding
+}
+8204 = {
+    holding = city_holding
+}
+1073 = {
+    holding = none
+}
+#c_danghela
+1058 = {
+    culture = kawoch
+    religion = mogowai
+    holding = castle_holding
+}
+1064 = {
+    holding = none
+}
+1072 = {
+    holding = none
+}

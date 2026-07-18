@@ -1,0 +1,431 @@
+
+462 = {
+	holding = none
+}
+
+463 = {
+	holding = none
+}
+
+
+
+
+
+464 = {
+	holding = city_holding
+}
+
+
+
+465 = {
+	holding = city_holding
+}
+
+
+466 = {
+	holding = church_holding
+
+	37.7.27 = {
+		special_building = 01_umlojtemplecomplex
+	}
+}
+
+467 = {
+	culture = amuaad
+	religion = kathsiti
+	holding = castle_holding
+}
+
+
+468 = {
+	culture = amuaad
+	religion = kathsiti
+	holding = castle_holding
+}
+
+469 = {
+	holding = none
+}
+
+470 = {
+	culture = amuaad
+	religion = kathsiti
+	holding = castle_holding
+}
+
+
+472 = {
+	holding = city_holding
+}
+
+473 = {
+	culture = amuaad
+	religion = kathsiti
+	holding = castle_holding
+}
+
+
+474 = {
+	holding = church_holding
+}
+
+
+
+475 = {
+	holding = none
+}
+
+
+476 = {
+	holding = none
+}
+
+
+
+477 = {
+	holding = church_holding
+}
+
+
+479 = {
+	culture = amuaad
+	religion = kathsiti
+	holding = castle_holding
+}
+
+
+
+
+482 = {
+	culture = amuaad
+	religion = kathsiti
+	holding = castle_holding
+}
+
+484 = {
+	holding = city_holding
+}
+
+
+
+486 = {
+	culture = amuaad
+	religion = kathsiti
+	holding = castle_holding
+}
+
+487 = {
+	holding = city_holding
+}
+
+
+500 = {
+	culture = amuaad
+	religion = kathsiti
+	holding = castle_holding
+}
+
+501 = {
+	holding = city_holding
+}
+
+
+502 = {
+	culture = amuaad
+	religion = wardenism
+	holding = castle_holding
+}
+
+
+
+
+
+
+503 = {
+	holding = church_holding
+}
+
+504 = {
+	holding = church_holding
+}
+
+
+507 = {
+	holding = none
+}
+
+
+508 = {
+	holding = church_holding
+}
+
+509 = {
+	culture = amuaad
+	religion = kathsiti
+	holding = castle_holding
+}
+
+
+510 = {
+	culture = amuaad
+	religion = kathsiti
+	holding = castle_holding
+}
+
+512 = {
+	holding = none
+}
+
+
+513 = {
+	holding = city_holding
+}
+
+
+
+515 = {
+	holding = city_holding
+}
+
+
+516 = {
+	culture = saruyad
+	religion = ritualist
+	holding = castle_holding
+}
+
+
+519 = {
+	holding = none
+}
+
+
+520 = {
+	holding = none
+}
+
+
+
+
+522 = {
+	culture = saruyad
+	religion = ritualist
+	holding = castle_holding
+	0.1.1 = {
+		special_building = 01_thewatchers
+	}
+}
+
+
+
+524 = {
+	holding = none
+}
+
+525 = {
+	holding = city_holding
+}
+
+
+
+529 = {
+	holding = church_holding
+}
+
+530 = {
+	culture = saruyad
+	religion = ritualist
+	holding = castle_holding
+}
+
+531 = {
+	holding = none
+}
+
+
+533 = {
+	holding = none
+}
+
+534 = {
+	culture = saruyad
+	religion = ritualist
+	holding = castle_holding
+}
+
+535 = {
+	culture = saruyad
+	religion = wardenism
+	holding = castle_holding
+}
+
+
+
+537 = {
+	culture = saruyad
+	religion = ritualist
+	holding = castle_holding
+	1.1.1 = {
+		special_building = 01_walls_of_qarmuz
+	}
+}
+
+538 = {
+	holding = city_holding
+}
+
+
+544 = {
+	culture = saruyad
+	religion = ritualist
+	holding = castle_holding
+}
+
+545 = {
+	holding = church_holding
+}
+
+612 = {
+	culture = saruyad
+	religion = ritualist
+	holding = castle_holding
+}
+
+614 = {
+	holding = none
+}
+
+615 = {
+	holding = city_holding
+}
+
+616 = {
+	culture = saruyad
+	religion = ritualist
+	holding = castle_holding
+}
+
+1158 = {
+	culture = amuaad
+	religion = kathsiti
+	holding = metro_holding
+	998.4.14 = {
+		special_building = 01_universityofgiherehalwajaf
+	}
+	1000.1.1 = {
+		buildings = {
+			metro_03
+		}
+	}	
+}
+
+1159 = {
+	holding = city_holding
+}
+
+1162 = {
+	holding = castle_holding
+}
+
+
+
+5335 = {
+	holding = church_holding
+}
+
+
+5522 = {
+	culture = saruyad
+	religion = ataabay_zatanai
+	holding = castle_holding
+}
+
+
+5775 = {
+	holding = city_holding
+}
+
+5812 = {
+	culture = saruyad
+	religion = ritualist
+	holding = castle_holding
+}
+
+5815 = {
+	holding = city_holding
+}
+
+6004 = {
+	holding = none
+}
+
+
+6326 = {
+	culture = barzawa
+	religion = tulharsin
+	holding = castle_holding
+}
+
+6423 = {
+	holding = city_holding
+}
+
+6424 = {
+	culture = amuaad
+	religion = kathsiti
+	holding = castle_holding
+}
+
+7625 = {
+	culture = karadamos
+	religion = kidarian_dance
+	holding = castle_holding
+}
+
+7788 = {
+	holding = church_holding
+}
+
+8009 = {
+	culture = karadamos
+	religion = kidarian_dance
+	holding = castle_holding
+}
+
+8278 = {
+	culture = barzawa
+	religion = tulharsin
+	holding = tribal_holding
+	0.1.1 = {
+		special_building = 01_rafhamah_pass
+	}
+}
+
+8529 = {
+	holding = none
+}
+
+8635 = {
+	holding = none
+}
+
+8829 = {
+	culture = barzawa
+	religion = kothori
+	holding = tribal_holding
+}
+
+8835 = {
+	holding = none
+}
+
+8847 = {
+	culture = barzawa
+	religion = kothori
+	holding = tribal_holding
+}
+
+8855 = {
+	holding = none
+}
+

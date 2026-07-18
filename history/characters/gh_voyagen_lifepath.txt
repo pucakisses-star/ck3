@@ -1,0 +1,2998 @@
+﻿voyagen_lifepath_1 = {
+	name = "Gardfrei" # Gardfrei den va Seignon
+	dna = marcher_1000
+	dynasty = dyn_marcher_1
+	martial = 14
+	diplomacy = 12
+	intrigue = 9
+	stewardship = 11
+	religion = "lifepath"
+	culture = "voyagen"
+	father = voyagen_lifepath_22
+	mother = salisians_lifepath_25
+	trait = brave
+	trait = honest
+	trait = impatient
+	trait = irritable
+	trait = reclusive
+	trait = scarred
+	trait = strong
+	trait = adventurer
+	trait = depressed_1
+	trait = intellect_good_1
+	trait = education_martial_4
+	trait = way_of_swords_follower
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_07
+			custom_beards = male_beard_custom_06
+		}
+	}
+
+	1205.3.18 = {
+		birth = yes
+		effect = {
+			add_pressed_claim = title:e_chevalie
+		}
+	}
+
+	1224.6.12 = {
+		add_spouse = voyagen_lifepath_64 # Mathilde den va Seignon
+	}
+
+	1253.11.12 = {
+		death = {
+			death_reason = death_mysterious_quest
+		}
+	}
+}
+
+voyagen_lifepath_2 = { # Marcher Anti-Magi
+	name = "Mederice"
+	religion = "lifepath"
+	culture = "voyagen"
+
+	trait = calm
+	trait = diligent
+	trait = zealous
+	trait = celibate
+	trait = order_member
+
+	1197.11.11 = {
+		birth = yes
+	}
+
+	1213.11.11 = {
+		trait = way_of_justice_follower
+		trait = gh_historical_blademaster_3
+	}
+
+	1218.1.11 = {
+		effect = {
+			create_character_memory = { # Black-Gold War
+				type = fought_in_black_gold_war
+			}
+		}
+	}
+
+	1227.4.30 = {
+		set_relation_rival = {
+			target = character:salisians_lifepath_5
+			reason = rival_duel_vengeance
+		}
+	}
+}
+
+voyagen_lifepath_3 = { # Marcher Anti-Magi
+	name = "Jozelin"
+	religion = "lifepath"
+	culture = "voyagen"
+	
+	trait = compassionate
+	trait = generous
+	trait = brave
+	trait = gh_historical_blademaster_1
+	trait = intellect_good_1
+	trait = order_member
+
+	1201.2.15 = {
+		birth = yes
+	}
+
+	1217.2.15 = {
+		trait = way_of_nullification_follower
+	}
+
+	1218.1.11 = {
+		effect = {
+			create_character_memory = { # Black-Gold War
+				type = fought_in_black_gold_war
+			}
+		}
+	}
+
+	1230.2.23 = {
+		trait = one_legged
+	}
+
+	1232.4.21 = {
+		give_nickname = nick_good_father
+		#trait = way_of_nullification_father
+	}
+}
+
+voyagen_lifepath_4 = { # Marcher Anti-Magi
+	name = "Rose_de"
+	female = yes
+	religion = "lifepath"
+	culture = "voyagen"
+
+	trait = cynical
+	trait = trusting
+	trait = ambitious
+	trait = celibate
+	trait = order_member
+
+	1204.1.22 = {
+		birth = yes
+	}
+
+	1220.1.22 = {
+		trait = way_of_nullification_follower
+		trait = gh_historical_blademaster_3
+	}
+}
+
+voyagen_lifepath_5 = { # The Company of the Crownman’s Sword, swashbuckling captain, bit of a chad
+	name = "Baudouin"
+	dna = voyagen_lifepath_5
+	dynasty = dyn_central_empire_21
+	religion = "lifepath"
+	culture = "voyagen"
+
+	trait = brave
+	trait = ambitious
+	trait = vengeful
+	prowess = 5
+	martial = 5
+	trait = education_martial_prowess_3
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_custom_03
+			custom_hair = male_hair_northern_02
+		}
+	}
+
+	1222.4.12 = {
+		birth = yes
+	}
+
+	1273.2.15 = {
+		add_spouse = tribocicai_sjalvolki_12
+	}
+}
+
+voyagen_lifepath_6 = { # Redlands mercenary Anti-Magi former guard to a merchant post now surrounded by bullshit
+	name = "Roger"
+	religion = "lifepath"
+	culture = "voyagen"
+
+	1226.11.18 = {
+		birth = yes
+	}
+
+	1239.11.18 = {
+		trait = way_of_nullification_follower
+	}
+}
+
+voyagen_lifepath_7 = {
+	name = "Benouet" # Benouét den va Seignon
+	dna = marcher_3
+	dynasty = dyn_marcher_1
+	martial = 9
+	diplomacy = 10
+	intrigue = 4
+	stewardship = 5
+	religion = "lifepath"
+	culture = "voyagen"
+
+	trait = brave
+	trait = honest
+	trait = impatient
+	trait = intellect_bad_3
+	trait = education_martial_1
+	trait = way_of_crowns_follower
+	father = voyagen_lifepath_1 # Gardfrei den va Seignon
+	mother = voyagen_lifepath_64 # Mathilde den va Seignon
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_western_9b
+			custom_hair = male_hair_frankish_01
+		}
+	}
+
+	1230.3.18 = {
+		birth = yes
+		effect = {
+			add_pressed_claim = title:e_chevalie
+		}
+	}
+
+	1253.1.1 = {
+		add_character_modifier = {
+			modifier = claimant_to_the_high_kingdom
+		}
+	}
+}
+
+voyagen_lifepath_8 = {
+	name = "Rene" # Réné den va Seignon
+	dna = voyagen_lifepath_8
+	dynasty = dyn_marcher_1
+	sexuality = bisexual
+	religion = "lifepath"
+	culture = "voyagen"
+	
+	martial = 12
+	diplomacy = 7
+	intrigue = 11
+	stewardship = 9
+	prowess = 6
+
+
+
+	father = voyagen_lifepath_1 # Gardfrei den va Seignon
+	mother = voyagen_lifepath_21
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_fp2_iberian_christian_01
+			custom_hair = male_hair_byzantine_02
+		}
+	}
+
+	1224.1.12 = {
+		birth = yes
+		trait = intellect_good_1
+		effect = {
+			add_pressed_claim = title:e_chevalie
+			give_nickname = nick_the_black_bastard
+		}
+	}
+
+	1236.1.1 = {
+		trait = brave
+		trait = ambitious
+		trait = stubborn
+	}
+
+	1240.1.12 = {
+		trait = education_martial_4
+		trait = way_of_nullification_follower
+		trait = adventurer
+		trait = gh_historical_blademaster_2
+	}
+
+	1244.9.12 = {
+		trait = bastard_founder
+		effect = {
+			spawn_army = {
+				name = band_of_bastards
+				levies = 600
+				men_at_arms = {
+					type = armored_footmen
+					stacks = 2
+				}
+				men_at_arms = {
+					type = marcher_anti_mage
+					stacks = 1
+				}
+				men_at_arms = {
+					type = konijkmener_pikes
+					stacks = 1
+				}
+				men_at_arms = {
+					type = sjalvolki_berserkers
+					stacks = 1
+				}
+				men_at_arms = {
+					type = armored_horsemen
+					stacks = 1
+				}
+				men_at_arms = {
+					type = camel_rider
+					stacks = 1
+				}
+
+				location = province:1425
+				origin = province:1425
+				inheritable = no
+			}
+		}
+	}
+
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_marcher
+		trait = scarred
+		effect = {
+			create_character_memory = { # Battle of the Elysian Pass
+				type = fought_in_elysian_pass_marcher
+			}
+		}
+	}
+
+	1253.1.1 = {
+		add_character_modifier = {
+			modifier = claimant_to_the_high_kingdom
+		}
+	}
+}
+
+voyagen_lifepath_9 = {
+	name = "Cliement" # Cliément den va Seignon
+	dna = marcher_5
+	dynasty = dyn_marcher_1
+	martial = 2
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 3
+	religion = "lifepath"
+	culture = "voyagen"
+
+	trait = pensive
+	father = voyagen_lifepath_1 # Gardfrei den va Seignon
+	mother = voyagen_lifepath_64 # Mathilde den va Seignon
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_fp2_iberian_muslim_01
+		}
+	}
+
+	1248.1.12 = {
+		birth = yes
+
+		effect = {
+			add_pressed_claim = title:e_chevalie
+			dynasty = { add_dynasty_prestige_level = 3 }
+		}
+	}
+
+	1253.1.1 = {
+		add_character_modifier = {
+			modifier = claimant_to_the_high_kingdom
+		}
+	}
+}
+
+voyagen_lifepath_10 = {
+	name = "Englemar" # Englemar den va Spencer
+	dna = marcher_6
+	dynasty = dyn_marcher_2
+	martial = 11
+	diplomacy = 9
+	intrigue = 10
+	stewardship = 4
+	religion = "lifepath"
+	culture = "voyagen"
+
+	trait = ambitious
+	trait = deceitful
+	trait = arbitrary
+	trait = schemer
+	trait = adventurer
+	trait = education_martial_2
+	trait = way_of_crows_follower
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_western_05
+			custom_hair = male_hair_western_07
+		}
+	}
+
+	1218.6.11 = {
+		birth = yes
+	}
+	1252.11.13 = {
+		effect = {
+			set_relation_lover = { target = character:voyagen_lifepath_64 reason = lover_history }
+			dynasty = { add_dynasty_prestige_level = 2 }
+		}
+	}
+	1253.11.16 = {
+		employer = voyagen_lifepath_9
+		give_council_position = councillor_marshal
+		add_hook = {
+			target = character:voyagen_lifepath_9
+			type = loyalty_hook
+		}
+		add_hook = {
+			target = character:voyagen_lifepath_64
+			type = loyalty_hook
+		}
+	}
+}
+
+voyagen_lifepath_11 = { # Marcher Republic with claim / Drogue den va Deschampoise
+	name = "Drogue"
+	religion = "lifepath"
+	culture = "voyagen"
+	dna = marcher_8
+	martial = 5
+	diplomacy = 6
+	intrigue = 8
+	stewardship = 7
+	trait = calm
+	trait = greedy
+	trait = arrogant
+	trait = education_stewardship_3
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_fp2_iberian_christian_02
+		}
+	}
+
+	1217.1.1 = {
+		birth = yes
+	}
+	1217.1.2 = {
+		add_character_modifier = {
+			modifier = claimant_to_the_high_kingdom
+		}
+	}
+}
+
+voyagen_lifepath_12 = { # Ambitious adventurer who *really* wants to stake a claim on some Aversarian land, but can't because he's too poor; really miffed by this
+	name = "Evrard"
+	dna = voyagen_lifepath_12
+	religion = "lifepath"
+	culture = voyagen
+	dynasty = dyn_marcher_33
+	disallow_random_traits = yes
+	sexuality = asexual
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_05
+			custom_beards = mena_islamic_pointed_beard_03
+		}
+	}
+
+	father = voyagen_lifepath_61
+
+	martial = 8
+	diplomacy = 6
+	stewardship = 5
+	intrigue = 4
+	learning = 8
+	prowess = 7
+
+	1220.12.25 = {
+		birth = yes
+	}
+
+	1232.1.1 = {
+		trait = ambitious
+		trait = impatient
+		trait = arrogant
+	}
+
+	1236.12.25 = {
+		trait = education_martial_2
+		trait = way_of_swords_follower
+		trait = flexible_leader
+	}
+
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_marcher
+		trait = adventurer
+		effect = {
+			create_character_memory = { # Battle of the Elysian Pass
+				type = fought_in_elysian_pass_marcher
+			}
+		}
+	}
+}
+
+voyagen_lifepath_13 = {
+	name = "Jourdain" # Fervently loyal to Benouet, suspicious of the tetrarchy, unfortunately Benouet in his infinite wisdom doesn't trust him
+	dna = voyagen_lifepath_13
+	religion = "lifepath"
+	culture = "voyagen"
+	dynasty = dyn_marcher_36
+
+	father = voyagen_lifepath_76
+
+	martial = 14
+	diplomacy = 10
+	intrigue = 7
+	stewardship = 6
+
+	trait = paranoid
+	trait = diligent
+	trait = stubborn
+	trait = education_martial_2
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_03
+			custom_beards = male_beard_custom_06
+		}
+	}
+
+	1218.4.23 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+}
+
+voyagen_lifepath_14 = {
+	name = "Marsueur"
+	religion = "lifepath"
+	culture = "voyagen"
+
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+voyagen_lifepath_15 = { # Old Patreon character I believe
+	name = "Iris_Primevere"
+	religion = "lifepath"
+	culture = "voyagen"
+	female = yes
+
+	1222.1.1 = {
+		birth = yes
+	}
+
+	1253.12.31 = {
+		employer = voyagen_lifepath_13
+	}
+
+	1364.4.21 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+voyagen_lifepath_16 = {
+	name = "Piette"
+	religion = "lifepath"
+	culture = "voyagen"
+
+	1178.6.7 = {
+		birth = yes
+	}
+
+	1218.1.11 = {
+		effect = {
+			create_character_memory = { # Black-Gold War
+				type = fought_in_black_gold_war
+			}
+		}
+	}
+}
+
+voyagen_lifepath_17 = {
+	name = "Braton"
+	religion = "lifepath"
+	culture = "voyagen"
+
+	1206.6.6 = {
+		birth = yes
+	}
+}
+
+voyagen_lifepath_18 = {	#Marcher Mercenary captain and adventurer trying to get the Abyssal Prism out of the city
+	name = "Seryc"
+	religion = "lifepath"
+	culture = "voyagen"
+
+	dna = voyagen_lifepath_18
+
+	trait = adventurer
+
+	trait = lustful
+	trait = brave
+	trait = arrogant
+
+	trait = education_martial_4
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_fp2_iberian_muslim_01
+			custom_hair = male_hair_fp2_iberian_muslim_03
+		}
+	}
+
+	1204.7.18 = {
+		birth = yes
+	}
+	1229.11.14 = {
+		employer = salisians_lifepath_7
+		give_nickname = nick_seaglide
+	}
+	1235.4.27 = {
+		employer = salisians_lifepath_2
+	}
+
+	1240.8.4 = {
+		set_relation_friend = character:tretosai_aversarinas_aagiokrata_2
+	}
+	1251.3.5 = {
+		employer = tretosai_aversarinas_aagiokrata_2
+	}
+	1266.9.19 = {
+		death = { death_reason = death_murdered_by_rebels }
+	}
+}
+
+voyagen_lifepath_19 = {
+	name = "Dayna" # Dayna den va Seignon
+	dynasty = dyn_marcher_1
+	religion = "lifepath"
+	culture = "voyagen"
+	father = voyagen_lifepath_22
+	mother = salisians_lifepath_25
+	female = yes
+	trait = beauty_good_2
+	trait = way_of_family_follower
+
+	1204.2.2 = {
+		birth = yes
+	}
+
+	1251.4.14 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+voyagen_lifepath_20 = {
+	name = "Breten" # Breten den va Seignon
+	dynasty = dyn_marcher_1
+	religion = "lifepath"
+	culture = "voyagen"
+	father = voyagen_lifepath_22
+	mother = salisians_lifepath_25
+	trait = intellect_good_2
+	trait = way_of_nullification_follower
+	trait = brave
+	trait = vengeful
+	trait = generous
+	trait = education_martial_3
+
+		1191.2.2 = {
+		birth = yes
+	}
+
+	1210.1.3 = {
+		death = {
+			death_reason = death_lich_raid
+		}
+	}
+}
+
+voyagen_lifepath_21 = {
+	name = "Elyna"
+	dna = voyagen_lifepath_21
+	religion = "lifepath"
+	culture = "voyagen"
+	female = yes
+	trait = beauty_good_2
+	trait = brave
+	trait = lustful
+	trait = stubborn
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp2_iberian_christian_01
+
+		}
+	}
+
+	1200.1.2 = {
+		birth = yes
+	}
+
+	1224.1.12 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+voyagen_lifepath_22 = {
+	name = "Dendon" # Dendon den va Seignon
+	dna = voyagen_lifepath_22
+	dynasty = dyn_marcher_1
+	martial = 2
+	diplomacy = 5
+	intrigue = 3
+	stewardship = 5
+	religion = "lifepath"
+	culture = "voyagen"
+	father = voyagen_lifepath_23
+	trait = compassionate
+	trait = trusting
+	trait = craven
+	trait = way_of_family_follower
+	trait = education_diplomacy_2
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_frankish_01
+			custom_beards = no_beard
+		}
+	}
+
+	1172.3.16 = {
+		birth = yes
+		add_pressed_claim = title:e_chevalie
+	}
+
+	1189.5.11 = {
+		add_spouse = salisians_lifepath_25
+	}
+
+	1217.4.12 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+
+voyagen_lifepath_23 = {
+	name = "ChrysE_" # Chrysé den va Seignon
+	dynasty = dyn_marcher_1
+	martial = 11
+	diplomacy = 3
+	intrigue = 8
+	stewardship = 6
+	religion = "lifepath"
+	culture = "voyagen"
+	father = voyagen_lifepath_24
+	trait = sadistic
+	trait = patient
+	trait = ambitious
+	trait = education_martial_4
+	trait = gh_chevalie_uniter
+	trait = way_of_nullification_follower
+
+	1130.3.11 = {
+		birth = yes
+	}
+
+	1199.9.26 = {
+		effect = {
+			if = {
+				limit = { NOT = { has_dlc_feature = legends } }
+				dynasty = {
+					add_dynasty_perk = cristoff_legacy_1
+				}
+			}
+		}
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+voyagen_lifepath_24 = {
+	name = "Kierre" # Kierre den va Seignon, was slain by Dexas Deathrender in the Battle of the Passes
+	dynasty = dyn_marcher_1
+	religion = "lifepath"
+	culture = "voyagen"
+	father = voyagen_lifepath_25
+	trait = way_of_swords_follower
+
+	1110.5.4 = {
+		birth = yes
+	}
+
+	1166.7.21 = {
+		death = {
+			death_reason = death_lich_battle
+			killer = lich_culture_rejection_11 # Dexas 'Deathrender'
+		}
+	}
+}
+
+voyagen_lifepath_25 = {
+	name = "Averd" # Averd den va Seignon
+	dynasty = dyn_marcher_1
+	religion = "lifepath"
+	culture = "voyagen"
+
+	father = voyagen_lifepath_56
+
+	trait = way_of_crowns_follower
+
+	1090.3.25 = {
+		birth = yes
+	}
+
+	1140.3.25 = {
+		death = {
+			death_reason = death_poison
+		}
+	}
+}
+
+voyagen_lifepath_26 = {
+	name = "Valden" # Valden
+	dna = valden
+	martial = 12
+	diplomacy = 11
+	intrigue = 9
+	stewardship = 7
+	learning = 8
+	religion = "lifepath"
+	culture = "voyagen"
+	dynasty = dyn_marcher_9
+	trait = just
+	trait = brave
+	trait = ambitious
+	trait = beauty_good_3
+	trait = intellect_good_1
+	trait = education_stewardship_4
+	trait = way_of_justice_follower
+	father = voyagen_lifepath_27
+
+	1075.11.5 = {
+		birth = yes
+		add_pressed_claim = title:e_chevalie
+	}
+
+	1101.2.30 = {
+		death = {
+			death_reason = death_cancer
+		}
+	}
+}
+
+voyagen_lifepath_27 = {
+	name = "Oliers" # Oliers
+	martial = 3
+	diplomacy = 3
+	intrigue = 3
+	stewardship = 5
+	learning = 6
+	religion = "lifepath"
+	culture = "voyagen"
+	dynasty = dyn_marcher_9
+	trait = zealous
+	trait = stubborn
+	trait = paranoid
+	trait = lunatic_genetic
+	trait = education_learning_2
+	trait = way_of_crows_follower
+	father = voyagen_lifepath_28
+
+	1029.3.3 = {
+		birth = yes
+		add_pressed_claim = title:e_chevalie
+	}
+
+	1077.4.27 = {
+		death = {
+			death_reason = death_suicide
+		}
+	}
+}
+
+voyagen_lifepath_28 = {
+	name = "Bredan" # Bredan
+	martial = 8
+	diplomacy = 4
+	intrigue = 2
+	stewardship = 1
+	religion = "lifepath"
+	culture = "voyagen"
+	dynasty = dyn_marcher_9
+	trait = content
+	trait = cynical
+	trait = forgiving
+	trait = lunatic_genetic
+	trait = education_martial_2
+	trait = way_of_harvests_follower
+	trait = physique_good_1
+	father = voyagen_lifepath_29
+
+	1011.1.2 = {
+		birth = yes
+		add_pressed_claim = title:e_chevalie
+	}
+
+	1055.2.30 = {
+		death = {
+			death_reason = death_duel
+		}
+	}
+}
+
+voyagen_lifepath_29 = {
+	name = "Remis" # Rémis
+	dna = remi
+	martial = 4
+	diplomacy = 4
+	intrigue = 2
+	stewardship = 4
+	learning = 5
+	religion = "lifepath"
+	culture = "voyagen"
+	dynasty = dyn_marcher_9
+	trait = patient
+	trait = shy
+	trait = diligent
+	trait = shrewd
+	trait = education_stewardship_4
+	trait = way_of_crowns_follower
+	father = voyagen_lifepath_30
+
+	966.2.2 = {
+		birth = yes
+		add_pressed_claim = title:e_chevalie
+	}
+
+	1025.4.26 = {
+		death = {
+			death_reason = death_stress
+		}
+	}
+}
+
+voyagen_lifepath_30 = {
+	name = "Agiers" # Agiers
+	father = voyagen_lifepath_31
+	martial = 2
+	diplomacy = 5
+	intrigue = 3
+	stewardship = 2
+	learning = 1
+	religion = "lifepath"
+	culture = "voyagen"
+	dynasty = dyn_marcher_9
+	trait = gluttonous
+	trait = lazy
+	trait = humble
+	trait = education_diplomacy_1
+	trait = lunatic_genetic
+	trait = way_of_crowns_follower
+	trait = gh_chevalie_uniter
+
+	943.1.12 = {
+		birth = yes
+		add_pressed_claim = title:e_chevalie
+	}
+
+	974.12.22 = {
+		death = {
+			death_reason = death_poison
+		}
+	}
+}
+
+voyagen_lifepath_31 = {
+	name = "Huegons" # Huegons
+	martial = 11
+	diplomacy = 9
+	intrigue = 7
+	stewardship = 9
+	learning = 8
+	religion = "lifepath"
+	culture = "voyagen"
+
+	trait = patient
+	trait = just
+	trait = ambitious
+	trait = education_martial_4
+	trait = physique_good_3
+	trait = intellect_good_2
+	trait = beauty_good_2
+	trait = way_of_justice_follower
+	trait = gh_chevalie_uniter
+	dynasty = dyn_marcher_9
+
+	910.3.9 = {
+		birth = yes
+	}
+
+	963.5.15 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+voyagen_lifepath_32 = {
+	name = "Thamean" # Thamean
+	dna = thamean
+	martial = 4
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 3
+	learning = 4
+	religion = "lifepath"
+	culture = "voyagen"
+
+	trait = education_diplomacy_2
+	trait = way_of_justice_follower
+	trait = lunatic_1
+	trait = paranoid
+	trait = vengeful
+	trait = craven
+	dynasty = dyn_marcher_10
+
+	823.3.3 = {
+		birth = yes
+	}
+
+	878.3.8 = {
+		death = {
+			death_reason = death_suicide
+		}
+	}
+}
+
+voyagen_lifepath_33 = {
+	name = "Giliman" # Thamean's second son
+	dna = giliman
+	religion = "lifepath"
+	culture = "voyagen"
+	father = voyagen_lifepath_32
+	dynasty = dyn_marcher_10
+	trait = way_of_crows_follower
+
+	856.2.23 = {
+		birth = yes
+	}
+
+	878.2.29 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+voyagen_lifepath_34 = {
+	name = "Varlen" # Thamean's first son
+	dna = varlen
+	religion = "lifepath"
+	culture = "voyagen"
+	father = voyagen_lifepath_32
+	dynasty = dyn_marcher_10
+	trait = way_of_crowns_follower
+
+	851.3.11 = {
+		birth = yes
+	}
+
+	878.3.7 = {
+		death = {
+			death_reason = death_murder_known
+			killer = voyagen_lifepath_32
+		}
+	}
+}
+
+voyagen_lifepath_35 = { # Thamean's third son
+	name = "Tancrede"
+	dna = tancrede
+	religion = "lifepath"
+	culture = "voyagen"
+	father = voyagen_lifepath_32
+	dynasty = dyn_marcher_10
+	trait = way_of_swords_follower
+
+	861.4.4 = {
+		birth = yes
+	}
+
+	878.3.7 = {
+		death = {
+			death_reason = death_murder_known
+			killer = voyagen_lifepath_32
+		}
+	}
+}
+
+voyagen_lifepath_36 = { # Thamean's daughter
+	name = "Heloise"
+	dna = heloise
+	religion = "lifepath"
+	culture = "voyagen"
+	female = yes
+	father = voyagen_lifepath_32
+	dynasty = dyn_marcher_10
+	trait = way_of_family_follower
+
+	856.3.15 = {
+		birth = yes
+	}
+
+	878.3.7 = {
+		death = {
+			death_reason = death_murder_known
+			killer = voyagen_lifepath_32
+		}
+	}
+}
+
+voyagen_lifepath_37 = { # Widen den va Seignon was a mercenary knight and the son of recently uplifted nobility. He took much of Chaute Albaux during the Anarchy of the Five Kings and would marry into the Melsne's of Saulxvil. He would soon after declare himself king and take Montmoyedgne from the risen Gallicaders, though would die before his claim would be recognized.
+	name = "Widen"
+	dna = widen
+	religion = "lifepath"
+	culture = "voyagen"
+	dynasty = dyn_marcher_1
+	trait = brave
+	trait = ambitious
+	trait = greedy
+	trait = way_of_swords_follower
+	trait = education_martial_3
+
+	841.3.3 = {
+		birth = yes
+	}
+	
+	860.1.1 = {
+		add_spouse = voyagen_lifepath_43
+	}
+	
+	885.1.1 = {
+		add_pressed_claim = title:k_de_porte_de_bastione #claimed but not recognized in his lifetime
+	}
+
+	890.1.2 = {
+		death = yes #listed originally as old age but... 48? even by medieval standards thats too young man
+	}
+}
+
+voyagen_lifepath_38 = { # Louise den va Seignon was a cruel warlord who butchered his way to holding most of the west during the Anarchy of the Five Kings. He was preparing an invasion of the Gisredde's when he was assassinated, many believe by Gisreddian blades.
+	name = "Louise"
+	dna = louise
+	religion = "lifepath"
+	culture = "voyagen"
+	dynasty = dyn_marcher_1
+	father = voyagen_lifepath_37
+	mother = voyagen_lifepath_43
+	trait = ambitious
+	trait = callous
+	trait = wrathful
+	trait = way_of_swords_follower
+	trait = education_martial_3
+
+	860.12.1 = {
+		birth = yes
+	}
+
+	902.2.22 = {
+		death = {
+			death_reason = death_poison
+		}
+	}
+}
+
+voyagen_lifepath_39 = { # Gardfrei (first of his name) was the son of Louise. After his father's poisoning he fought a rather brutal civil war and barely managed to retain the throne. Largely considered inept, he would march his forces east and annex most of Varrdevet after the death of Gofrei. He would soon after be killed by Stavro's forces.
+	name = "Gardfrei"
+	dna = gardfrei
+	religion = "lifepath"
+	culture = "voyagen"
+	dynasty = dyn_marcher_1
+	father = voyagen_lifepath_38
+	trait = callous
+	trait = ambitious
+	trait = fickle
+	trait = intellect_bad_1
+	trait = way_of_crowns_follower
+	trait = education_learning_2
+
+	889.4.21 = {
+		birth = yes
+	}
+
+	934.5.6 = {
+		death = {
+			death_reason = death_lich_battle
+		}
+	}
+}
+
+voyagen_lifepath_40 = { # Rodald, son of Gardfrei (the first) struggled to maintain the west after his father's death. Quickly abandoning their new lands in Varrdevet, he would ally himself with Mélanî and assist in returning her to the throne. After aiding the Champion of Chevalie, earning great renown at the Battle of Grande Lafadai and then in Peti Gisredde, he would relinquish his claims to kingship and return to the family lands of Chaute Albaux and Saulxvil as duke.
+	name = "Rodald"
+	dna = rodald
+	religion = "lifepath"
+	culture = "voyagen"
+	dynasty = dyn_marcher_1
+	father = voyagen_lifepath_39
+	trait = brave
+	trait = humble
+	trait = zealous
+	trait = way_of_nullification_follower
+	trait = beauty_good_2
+	trait = education_stewardship_3
+
+	910.11.15 = {
+		birth = yes
+	}
+
+	962.4.12 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+voyagen_lifepath_41 = {
+	name = "Valcioc"
+	dynasty = dyn_marcher_22
+	religion = "lifepath"
+	culture = "voyagen"
+
+	810.1.1 = {
+		birth = yes
+	}
+
+	878.3.7 = {
+		death = {
+			death_reason = death_murder_known
+			killer = voyagen_lifepath_32
+		}
+	}
+}
+
+voyagen_lifepath_42 = {
+	name = "Naulet"
+	female = yes
+	dynasty = dyn_marcher_22
+	religion = "lifepath"
+	culture = "voyagen"
+	
+	father = voyagen_lifepath_41
+
+	829.11.4 = {
+		birth = yes
+	}
+
+	890.4.19 = {
+		death = {
+			death_reason = death_mysterious
+			#killer = voyagen_lifepath_38 #maybe leave this implied
+		}
+	}
+}
+
+voyagen_lifepath_43 = {
+	name = "Simoise"
+	female = yes
+	dynasty = dyn_marcher_22
+	religion = "lifepath"
+	culture = "voyagen"
+	
+	father = voyagen_lifepath_41
+
+	832.3.27 = {
+		birth = yes
+	}
+
+	889.4.4 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+voyagen_lifepath_44 = {
+	name = "Vuerac"
+	dynasty = dyn_marcher_22
+	religion = "lifepath"
+	culture = "voyagen"
+	
+	father = voyagen_lifepath_41
+
+	824.12.25 = {
+		birth = yes
+	}
+
+	878.3.7 = {
+		death = {
+			death_reason = death_murder_known
+			killer = voyagen_lifepath_32
+		}
+	}
+}
+
+voyagen_lifepath_45 = {
+	name = "Credon" #Found the family sword in an Aelfir ruin
+	dynasty = dyn_marcher_1
+	religion = "lifepath"
+	culture = "voyagen"
+	trait = ambitious
+	trait = arrogant
+	trait = stubborn
+	dna = credon
+	
+	father = voyagen_lifepath_37
+	mother = voyagen_lifepath_43
+
+	866.2.14 = {
+		birth = yes
+	}
+
+	900.1.1 = {
+		add_pressed_claim = title:k_varrdevet
+		give_nickname = nick_king_of_varrdevet #mocking
+	}
+
+	924.12.4 = {
+		trait = ill
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+voyagen_lifepath_46 = {
+	name = "Hycancylin"
+	dna = voyagen_lifepath_46
+	dynasty = dyn_marcher_5
+	religion = "lifepath"
+	culture = "voyagen"
+	martial = 5
+	intrigue = 10
+	stewardship = 12
+	learning = 8
+
+	trait = education_stewardship_3
+	trait = greedy
+	trait = ambitious
+	trait = diligent
+	trait = intellect_good_1
+	trait = way_of_coins_follower
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_western_05
+			custom_hair = no_hair
+		}
+	}
+
+	1212.11.4 = {
+		birth = yes
+	}
+
+	1240.1.1 = {
+		spawn_army = {
+			name = company_mercs
+			levies = 300
+			men_at_arms = {
+				type = armored_footmen
+				stacks = 1
+			}
+			men_at_arms = {
+				type = marcher_anti_mage
+				stacks = 2
+			}
+			men_at_arms = {
+				type = camel_rider
+				stacks = 1
+			}
+			location = province:158
+			origin = province:1416
+			inheritable = no
+		}
+		add_character_modifier = {
+				modifier = fraternal_connections_anti_magic_access
+		}
+	}
+
+}
+
+voyagen_lifepath_47 = {
+	name = "Martin"
+	dna = voyagen_lifepath_47
+	religion = "lifepath"
+	culture = "voyagen"
+	sexuality = heterosexual
+	trait = way_of_swords_follower
+	trait = just
+	trait = diligent
+	trait = stubborn
+	trait = cynical
+	trait = comfort_eater
+	trait = intellect_good_2
+	trait = education_martial_3
+	trait = logistician
+	trait = organizer
+
+		portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_rtt_01
+			custom_beards = male_beard_custom_06
+		}
+	}
+
+	1215.11.23 = {
+		birth = yes
+	}
+}
+
+voyagen_lifepath_48 = {
+	name = "Faroin"
+	religion = "lifepath"
+	culture = "voyagen"
+
+	1219.11.23 = {
+		birth = yes
+	}
+}
+
+voyagen_lifepath_49 = {
+	name = "Childeric"
+	religion = "lifepath"
+	culture = "voyagen"
+
+	1225.11.23 = {
+		birth = yes
+	}
+}
+
+voyagen_lifepath_50 = {
+	name = "Gaudulf"
+	religion = "lifepath"
+	culture = "voyagen"
+
+	1230.11.23 = {
+		birth = yes
+	}
+}
+
+voyagen_lifepath_51 = {
+	name = "Seguin"
+	religion = "lifepath"
+	culture = "voyagen"
+
+	1215.11.23 = {
+		birth = yes
+	}
+}
+
+voyagen_lifepath_52 = { # Son of Duke Rodald den va Seignon
+	name = "Jaqaume"
+	dynasty = dyn_marcher_1
+	religion = "lifepath"
+	culture = voyagen
+	disallow_random_traits = yes
+
+	father = voyagen_lifepath_40
+	
+	martial = 4
+	diplomacy = 7
+	stewardship = 6
+	intrigue = 5
+	learning = 8
+	prowess = 5
+
+	950.11.22 = {
+		birth = yes
+	}
+
+	962.1.1 = {
+		trait = calm
+		trait = greedy
+		trait = shy
+	}
+
+	966.11.22 = {
+		trait = education_intrigue_4
+		trait = way_of_coins_follower
+	}
+
+	1000.12.23 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+voyagen_lifepath_53 = {
+	name = "Abroger"
+	dynasty = dyn_marcher_1
+	religion = "lifepath"
+	culture = voyagen
+	disallow_random_traits = yes
+
+	father = voyagen_lifepath_52
+	
+	martial = 3
+	diplomacy = 2
+	stewardship = 5
+	intrigue = 7
+	learning = 7
+	prowess = 8
+
+	972.12.12 = {
+		birth = yes
+	}
+
+	984.1.1 = {
+		trait = chaste
+		trait = content
+		trait = arrogant
+	}
+
+	988.12.12 = {
+		trait = education_martial_2
+		trait = forder
+		trait = way_of_swords_follower
+	}
+
+	1000.12.23 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+voyagen_lifepath_54 = {
+	name = "Budouil"
+	dynasty = dyn_marcher_1
+	religion = "lifepath"
+	culture = voyagen
+	disallow_random_traits = yes
+
+	father = voyagen_lifepath_53
+	
+	martial = 6
+	diplomacy = 3
+	stewardship = 7
+	intrigue = 8
+	learning = 5
+	prowess = 3
+
+	997.1.16 = {
+		birth = yes
+	}
+
+	1009.1.1 = {
+		trait = stubborn
+		trait = gregarious
+		trait = trusting
+	}
+
+	1013.1.16 = {
+		trait = education_stewardship_1
+		trait = profligate
+		trait = way_of_crowns_follower
+	}
+
+	1060.2.15 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+voyagen_lifepath_55 = {
+	name = "Ludouin"
+	dynasty = dyn_marcher_1
+	religion = "lifepath"
+	culture = voyagen
+	disallow_random_traits = yes
+
+	father = voyagen_lifepath_54
+	
+	martial = 8
+	diplomacy = 6
+	stewardship = 8
+	intrigue = 8
+	learning = 5
+	prowess = 8
+
+	1026.4.26 = {
+		birth = yes
+		trait = intellect_good_2
+	}
+
+	1038.1.1 = {
+		trait = craven
+		trait = chaste
+		trait = just
+	}
+
+	1042.4.26 = {
+		trait = education_stewardship_3
+		trait = administrator
+		trait = way_of_justice_follower
+	}
+
+	1080.7.20 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+voyagen_lifepath_56 = { # Father of Duke Averd den va Seignon
+	name = "Leuhard"
+	dynasty = dyn_marcher_1
+	religion = "lifepath"
+	culture = voyagen
+	disallow_random_traits = yes
+
+	father = voyagen_lifepath_55
+	
+	martial = 3
+	diplomacy = 6
+	stewardship = 2
+	intrigue = 7
+	learning = 4
+	prowess = 8
+
+	1063.8.30 = {
+		birth = yes
+	}
+
+	1075.1.1 = {
+		trait = lazy
+		trait = stubborn
+		trait = impatient
+	}
+
+	1079.8.30 = {
+		trait = education_learning_2
+		trait = way_of_knowledge_follower
+	}
+
+	1095.2.28 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+voyagen_lifepath_57 = { # King Ferrane and Queen Genevieve's father, slain in the Black-Gold War
+	name = "Hammart"
+	dynasty = dyn_marcher_31
+	religion = "lifepath"
+	culture = voyagen
+	disallow_random_traits = yes
+
+	martial = 7
+	diplomacy = 7
+	stewardship = 2
+	intrigue = 4
+	learning = 8
+	prowess = 4
+
+	1175.7.19 = {
+		birth = yes
+	}
+
+	1187.1.1 = {
+		trait = honest
+		trait = humble
+		trait = trusting
+	}
+
+	1191.7.19 = {
+		trait = education_stewardship_1
+		trait = way_of_family_follower
+	}
+
+	1222.4.30 = {
+		death = {
+			death_reason = death_battle
+			killer = salisians_lifepath_19 # Alderic den va Monteaux
+		}
+	}
+}
+
+voyagen_lifepath_58 = { # Maria den va Theydia, slew the lich Dexas Deathrender
+	name = "Maria"
+	dna = maria
+	religion = "lifepath"
+	culture = voyagen
+	dynasty = dyn_marcher_33
+	disallow_random_traits = yes
+	female = yes
+
+	father = voyagen_lifepath_59
+
+	martial = 8
+	diplomacy = 4
+	stewardship = 8
+	intrigue = 7
+	learning = 6
+	prowess = 8
+
+	1144.6.18 = {
+		birth = yes
+	}
+
+	1156.1.1 = {
+		trait = brave
+		trait = compassionate
+		trait = just
+	}
+
+	1160.6.18 = {
+		trait = education_diplomacy_3
+		trait = way_of_nullification_follower
+
+	}
+
+	1218.11.14 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+voyagen_lifepath_59 = { # Maria den va Theydia's father, the Duke of Colarmas
+	name = "Guiles"
+	religion = "lifepath"
+	culture = voyagen
+	dynasty = dyn_marcher_33
+	disallow_random_traits = yes
+
+	martial = 5
+	diplomacy = 6
+	stewardship = 3
+	intrigue = 5
+	learning = 4
+	prowess = 6
+
+	1113.8.5 = {
+		birth = yes
+	}
+
+	1125.1.1 = {
+		trait = zealous
+		trait = calm
+		trait = gregarious
+	}
+
+	1129.8.5 = {
+		trait = education_stewardship_4
+		trait = way_of_coins_follower
+	}
+
+	1169.11.14 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+voyagen_lifepath_60 = { # Maria den va Theydia's elder brother
+	name = "Galobert"
+	religion = "lifepath"
+	culture = voyagen
+	dynasty = dyn_marcher_33
+	disallow_random_traits = yes
+
+	father = voyagen_lifepath_59
+
+	martial = 4
+	diplomacy = 8
+	stewardship = 6
+	intrigue = 4
+	learning = 4
+	prowess = 8
+
+	1137.6.2 = {
+		birth = yes
+	}
+
+	1149.1.1 = {
+		trait = zealous
+		trait = just
+		trait = compassionate
+	}
+
+	1153.6.2 = {
+		trait = education_martial_3
+		trait = holy_warrior
+		trait = way_of_crowns_follower
+		trait = flagellant
+	}
+
+	1201.1.2 = {
+		death = {
+			death_reason = death_flagellant
+		}
+	}
+}
+
+voyagen_lifepath_61 = { # Duke Agefrei den va Theydia, died in the Black-Gold War
+	name = "Agefrei"
+	religion = "lifepath"
+	culture = voyagen
+	dynasty = dyn_marcher_33
+	disallow_random_traits = yes
+
+	father = voyagen_lifepath_60
+
+	martial = 7
+	diplomacy = 3
+	stewardship = 5
+	intrigue = 7
+	learning = 8
+	prowess = 3
+
+	1176.2.27 = {
+		birth = yes
+	}
+
+	1189.1.1 = {
+		trait = generous
+		trait = gregarious
+		trait = arrogant
+	}
+
+	1193.2.27 = {
+		trait = education_diplomacy_1
+		trait = way_of_crowns_follower
+	}
+
+	1222.4.30 = {
+		death = {
+			death_reason = death_battle
+			killer = salisians_lifepath_20 # Duke Marcomer den va Rocheault
+		}
+	}
+}
+
+voyagen_lifepath_62 = { # Duke Manohar den va Theydia, brother of 1254 Duke of Colarmas
+	name = "Manohar"
+	religion = "lifepath"
+	culture = voyagen
+	dynasty = dyn_marcher_33
+	disallow_random_traits = yes
+	sexuality = asexual
+
+	father = voyagen_lifepath_61
+
+	martial = 8
+	diplomacy = 7
+	stewardship = 3
+	intrigue = 6
+	learning = 8
+	prowess = 5
+
+	1199.7.31 = {
+		birth = yes
+	}
+
+	1211.1.1 = {
+		trait = chaste
+		trait = fickle
+		trait = shy
+	}
+
+	1215.7.31 = {
+		trait = education_learning_2
+		trait = way_of_crows_follower
+	}
+
+	1253.3.23 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+voyagen_lifepath_63 = { # Sir Hildebert, Anti-Magi slain by the Lich Crasmer Crasvir
+	name = "Hildebert"
+	religion = "lifepath"
+	culture = voyagen
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 6
+	stewardship = 2
+	intrigue = 8
+	learning = 7
+	prowess = 8
+
+	1112.1.4 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+
+	1124.1.1 = {
+		trait = chaste
+		trait = just
+		trait = cynical
+	}
+
+	1128.1.4 = {
+		trait = education_martial_2
+		trait = cautious_leader
+		trait = way_of_nullification_follower
+	}
+
+	1143.3.25 = {
+		death = {
+			death_reason = death_lich_battle
+			killer = lich_culture_rejection_13 # Crasmer Crasvir
+		}
+	}
+}
+
+voyagen_lifepath_64 = {
+	name = "Genevieve" # Genevieve den va Davouil, wife of Gardfrei
+	dna = voyagen_lifepath_64
+	female = yes
+	dynasty = dyn_marcher_31
+	martial = 6
+	diplomacy = 16
+	intrigue = 12
+	stewardship = 9
+	religion = "lifepath"
+	culture = "voyagen"
+
+	father = voyagen_lifepath_57
+
+	trait = shy
+	trait = arrogant
+	trait = calm
+	trait = education_diplomacy_2
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp2_iberian_christian_03
+
+		}
+	}
+
+	1213.3.18 = {
+		birth = yes
+	}
+
+	1224.6.12 = {
+		add_spouse = voyagen_lifepath_1 # Gardfrei den va Seignon
+	}
+}
+
+voyagen_lifepath_65 = {
+	name = "Ferrane" # Former lord of De Porte Den La Bastione and chancellor under Gardfrei, decent guy but schemey children
+	dna = voyagen_lifepath_65
+	dynasty = dyn_marcher_31
+	martial = 8
+	diplomacy = 11
+	intrigue = 5
+	stewardship = 10
+	religion = "lifepath"
+	culture = "voyagen"
+
+	father = voyagen_lifepath_57
+
+	trait = temperate
+	trait = just
+	trait = content
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_09
+			custom_beards = epe_male_beard_fp1_04
+		}
+	}
+
+	1203.1.1 = {
+		birth = yes
+	}
+	1221.8.21 = {
+		add_spouse = salisians_lifepath_10
+		effect = {
+			set_relation_soulmate = character:salisians_lifepath_10
+		}
+	}
+	1245.1.1 = {
+		trait = gh_widow
+		trait = depressed_1
+	}
+	1252.1.1 = {
+		death = yes
+	}
+}
+
+voyagen_lifepath_66 = {
+	name = "Sauvaige" # Part of the 'tetrarchy' of brothers that make up Benouet's council; spymaster and sneaky bugger but mostly loyal to Benouet, whispers in his ear
+	dna = voyagen_lifepath_66
+	dynasty = dyn_marcher_31
+	martial = 5
+	diplomacy = 8
+	intrigue = 13
+	stewardship = 9
+	religion = "lifepath"
+	culture = "voyagen"
+
+	trait = deceitful
+	trait = greedy
+	trait = content
+	trait = education_intrigue_3
+	father = voyagen_lifepath_65
+	mother = salisians_lifepath_10
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_byzantine_02
+			custom_beards = male_beard_western_03
+		}
+	}
+
+	1225.1.1 = {
+		birth = yes
+	}
+}
+
+voyagen_lifepath_67 = {
+	name = "Hannequin" # Part of the 'tetrarchy' of brothers that make up Benouet's council; chancellor, eldest of the pack, despises his brothers, wants to rule Bastione for himself but willing to play the long game
+	dna = voyagen_lifepath_67
+	dynasty = dyn_marcher_31
+	martial = 5
+	diplomacy = 14
+	intrigue = 9
+	stewardship = 7
+	religion = "lifepath"
+	culture = "voyagen"
+
+	trait = ambitious
+	trait = arrogant
+	trait = patient
+	trait = education_diplomacy_2
+	father = voyagen_lifepath_65
+	mother = salisians_lifepath_10
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_rtt_01
+			custom_beards = male_beard_custom_06
+		}
+	}
+
+	1222.1.1 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 3 }
+		}
+	}
+}
+
+voyagen_lifepath_68 = {
+	name = "Jaqaume" # Part of the 'tetrarchy' of brothers that make up Benouet's council; marshal, connections to Réné, willing to support his claim to Chevalie in return for lordship of Bastione
+	dna = voyagen_lifepath_68
+	dynasty = dyn_marcher_31
+	martial = 15
+	diplomacy = 9
+	intrigue = 5
+	stewardship = 7
+	religion = "lifepath"
+	culture = "voyagen"
+
+	trait = deceitful
+	trait = diligent
+	trait = ambitious
+	trait = education_martial_3
+	father = voyagen_lifepath_65
+	mother = salisians_lifepath_10
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_western_2b
+			custom_hair = no_hair
+		}
+	}
+
+	1223.1.1 = {
+		birth = yes
+	}
+
+	1254.1.1 = {
+		employer = voyagen_lifepath_7
+		give_council_position = councillor_marshal
+	}
+}
+
+voyagen_lifepath_69 = {
+	name = "Senesien" # Part of the 'tetrarchy' of brothers that make up Benouet's council; steward, just wants to do his job, guys please chill out
+	dna = voyagen_lifepath_69
+	dynasty = dyn_marcher_31
+	martial = 9
+	diplomacy = 10
+	intrigue = 4
+	stewardship = 11
+	religion = "lifepath"
+	culture = "voyagen"
+
+	trait = honest
+	trait = diligent
+	trait = content
+	trait = education_stewardship_2
+	father = voyagen_lifepath_65
+	mother = salisians_lifepath_10
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_02
+			custom_beards = male_beard_custom_03
+		}
+	}
+
+	1226.1.1 = {
+		birth = yes
+	}
+}
+
+voyagen_lifepath_70 = {
+	name = "Thaddee"
+	dynasty = dyn_central_empire_5
+	religion = "lifepath"
+	culture = "voyagen"
+
+	1219.4.12 = {
+		birth = yes
+	}
+	1250.1.1 = {
+		spawn_army = {
+			name = marcher_incursion_troops
+			uses_supply = yes
+			inheritable = no
+			location = province:3790
+			levies = {
+				value = 200
+			}
+			men_at_arms = {
+				type = armored_footmen
+				stacks = 1
+			}
+		}
+	}
+}
+
+voyagen_lifepath_71 = {
+	name = "Astar"
+	dynasty = dyn_central_empire_13
+	religion = "lifepath"
+	culture = "voyagen"
+
+	1224.4.12 = {
+		birth = yes
+	}
+	1244.4.12 = {
+		trait = zealous
+		trait = gregarious
+		trait = compassionate
+		trait = education_diplomacy_4
+	}
+}
+
+voyagen_lifepath_72 = { # Marcher crusaders
+	name = "Valent"
+	religion = "lifepath"
+	culture = "voyagen"
+
+	1228.6.18 = {
+		birth = yes
+	}
+}
+
+voyagen_lifepath_73 = { # Sir Melthew 'of the Rose and Swan', Marcher mercenary in the Battle of Ten Trees
+	name = "Melthew"
+	religion = lifepath
+	culture = voyagen
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 8
+	stewardship = 2
+	intrigue = 4
+	learning = 3
+	prowess = 4
+
+	1225.5.1 = {
+		birth = yes
+		trait = beauty_good_3
+	}
+
+	1237.1.1 = {
+		trait = calm
+		trait = arrogant
+		trait = gregarious
+	}
+
+	1241.10.5 = {
+		trait = education_martial_2
+		trait = way_of_swords_follower
+	}
+
+	1244.3.17 = {
+		trait = adventurer
+		give_nickname = nick_of_the_rose_and_swan
+	}
+
+	1247.3.15 = { # Ten Trees
+		death = {
+			death_reason = death_battle
+			killer = kardwens_kardawai_1
+		}
+	}
+}
+
+voyagen_lifepath_74 = { # Ande of the Quick Fingers, marcher knight that fought for the Agionists
+	name = "Ande"
+	religion = lifepath
+	culture = voyagen
+	disallow_random_traits = yes
+	female = yes
+
+	martial = 7
+	diplomacy = 6
+	stewardship = 6
+	intrigue = 6
+	learning = 5
+	prowess = 6
+
+	1061.6.9 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+
+	1073.1.1 = {
+		trait = brave
+		trait = deceitful
+		trait = compassionate
+	}
+
+	1077.6.9 = {
+		trait = education_martial_2
+		trait = way_of_swords_follower
+	}
+
+	1081.7.16 = {
+		trait = adventurer
+		trait = gh_historical_blademaster_2
+		give_nickname = nick_of_the_quick_fingers
+	}
+
+	1094.11.3 = { # Siege of Geca
+		death = {
+			death_reason = death_battle
+			killer = westernimperial_aversarinas_aagiokrata_55
+		}
+	}
+}
+
+voyagen_lifepath_75 = { # Leader of the Beid Faluh Revolt of 1212
+	name = "Agefrei"
+	religion = lifepath
+	culture = voyagen
+	disallow_random_traits = yes
+
+	martial = 8
+	diplomacy = 4
+	stewardship = 7
+	intrigue = 7
+	learning = 4
+	prowess = 4
+
+	1175.12.1 = {
+		birth = yes
+	}
+
+	1187.1.1 = {
+		trait = ambitious
+		trait = chaste
+		trait = calm
+	}
+
+	1191.12.1 = {
+		trait = education_martial_3
+		trait = way_of_swords_follower
+		trait = organizer
+	}
+
+	1235.10.5 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+voyagen_lifepath_76 = { # Famous artisan and inventor, joined Gardfrei in his quest to the north
+	name = "Quile"
+	religion = lifepath
+	culture = voyagen
+	dynasty = dyn_marcher_36
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_headgear = male_headgear_special_spectacles_01
+			custom_beards = epe_male_beard_fp1_04
+		}
+	}
+
+	martial = 6
+	diplomacy = 7
+	stewardship = 5
+	intrigue = 7
+	learning = 4
+	prowess = 4
+
+	1197.8.2 = {
+		birth = yes
+		trait = intellect_good_3
+		trait = gh_peasant_birth
+	}
+
+	1209.1.1 = {
+		trait = diligent
+		trait = chaste
+		trait = fickle
+	}
+
+	1213.8.2 = {
+		trait = education_learning_4
+		trait = way_of_knowledge_follower
+		trait = scholar
+	}
+
+	1253.11.12 = {
+		death = {
+			death_reason = death_mysterious_quest
+		}
+	}
+}
+
+voyagen_lifepath_77 = { # Comte of Chevarie, died of sickness in the Black-Gold War while on the march
+	name = "Hugoulf"
+	religion = lifepath
+	culture = voyagen
+	dynasty = dyn_marcher_37
+	disallow_random_traits = yes
+
+	martial = 5
+	diplomacy = 8
+	stewardship = 8
+	intrigue = 6
+	learning = 4
+	prowess = 7
+
+	1171.2.11 = {
+		birth = yes
+	}
+
+	1183.1.1 = {
+		trait = shy
+		trait = wrathful
+		trait = forgiving
+	}
+
+	1187.2.11 = {
+		trait = education_stewardship_3
+		trait = way_of_knowledge_follower
+		trait = logistician
+	}
+
+	1222.1.12 = {
+		death = {
+			death_reason = death_typhus
+		}
+	}
+}
+
+voyagen_lifepath_78 = { # Comte of Tillieze, died in battle during the Black-Gold War
+	name = "Ranohar"
+	religion = lifepath
+	culture = voyagen
+	dynasty = dyn_marcher_38
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 10
+	stewardship = 5
+	intrigue = 7
+	learning = 4
+	prowess = 7
+
+	1196.8.1 = {
+		birth = yes
+	}
+
+	1208.1.1 = {
+		trait = just
+		trait = content
+		trait = arrogant
+	}
+
+	1212.8.1 = {
+		trait = education_martial_3
+		trait = way_of_swords_follower
+		trait = unyielding_defender
+	}
+
+	1227.4.30 = { # Battle of Yuicourt
+		death = {
+			death_reason = death_battle
+			killer = salisians_lifepath_19
+		}
+	}
+}
+
+voyagen_lifepath_79 = { # Grand Mayor of Aastauxporte, major supporter of Gardfrei during the Black-Gold War, but died in a siege
+	name = "Gudomer"
+	religion = lifepath
+	culture = voyagen
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 7
+	stewardship = 5
+	intrigue = 7
+	learning = 4
+	prowess = 4
+
+	1171.5.20 = {
+		birth = yes
+	}
+
+	1183.1.1 = {
+		trait = diligent
+		trait = chaste
+		trait = arbitrary
+	}
+
+	1187.5.20 = {
+		trait = education_stewardship_3
+		trait = way_of_coins_follower
+		trait = administrator
+	}
+
+	1219.12.27 = {
+		death = {
+			death_reason = death_siege
+			killer = salisians_lifepath_15
+		}
+	}
+}
+
+voyagen_lifepath_80 = { # Grand Mayor of Aastauxporte after Gudomer
+	name = "Theudobert"
+	religion = lifepath
+	culture = voyagen
+	disallow_random_traits = yes
+
+	martial = 5
+	diplomacy = 9
+	stewardship = 7
+	intrigue = 7
+	learning = 6
+	prowess = 3
+
+	1180.9.25 = {
+		birth = yes
+	}
+
+	1192.1.1 = {
+		trait = diligent
+		trait = temperate
+		trait = forgiving
+	}
+
+	1196.9.25 = {
+		trait = education_diplomacy_2
+		trait = way_of_coins_follower
+	}
+
+	1244.9.13 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+voyagen_lifepath_81 = { # Duc Rene Vouirard, famed marshal of Gardfrei's forces in the Black-Gold War
+	name = "Rene"
+	religion = lifepath
+	culture = voyagen
+	dynasty = dyn_marcher_44
+	disallow_random_traits = yes
+
+	martial = 7
+	diplomacy = 9
+	stewardship = 8
+	intrigue = 4
+	learning = 4
+	prowess = 5
+
+	1175.11.11 = {
+		birth = yes
+		trait = beauty_bad_1
+		trait = intellect_good_1
+	}
+
+	1187.1.1 = {
+		trait = patient
+		trait = gluttonous
+		trait = diligent
+	}
+
+	1191.11.11 = {
+		trait = education_martial_4
+		trait = way_of_crows_follower
+		trait = unyielding_defender
+		trait = flexible_leader
+		trait = strategist
+	}
+
+	1243.6.8 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+voyagen_lifepath_82 = { # Duc Hilderic Vouirard, cruel lord of Bassons
+	name = "Hilderic"
+	religion = lifepath
+	culture = voyagen
+	dynasty = dyn_marcher_44
+	disallow_random_traits = yes
+
+	father = voyagen_lifepath_81
+
+	martial = 3
+	diplomacy = 5
+	stewardship = 6
+	intrigue = 8
+	learning = 3
+	prowess = 3
+
+	1196.1.3 = {
+		birth = yes
+		trait = beauty_bad_2
+	}
+
+	1208.1.1 = {
+		trait = arbitrary
+		trait = callous
+		trait = brave
+	}
+
+	1212.1.3 = {
+		trait = education_intrigue_3
+		trait = way_of_swords_follower
+		trait = torturer
+	}
+
+	1244.10.25 = {
+		death = {
+			death_reason = death_murder_feast
+		}
+	}
+}
+
+voyagen_lifepath_83 = {
+	name = "Genvuis"
+	religion = lifepath
+	culture = voyagen
+	dynasty = dyn_marcher_44
+	disallow_random_traits = yes
+
+	female = yes
+
+	father = voyagen_lifepath_82
+
+	martial = 3
+	diplomacy = 5
+	stewardship = 6
+	intrigue = 8
+	learning = 3
+	prowess = 3
+
+	1226.6.7 = {
+		birth = yes
+		trait = beauty_good_3
+	}
+
+	1238.1.1 = {
+		trait = greedy
+		trait = deceitful
+		trait = trusting
+	}
+
+	1242.6.7 = {
+		trait = education_intrigue_3
+		trait = way_of_family_follower
+	}
+
+	1244.10.25 = {
+		death = {
+			death_reason = death_murder_feast
+		}
+	}
+}
+
+voyagen_lifepath_84 = { # Bastard son of Duc Hilderic, member of the Band of Bastards
+	name = "Hareric"
+	religion = lifepath
+	culture = voyagen
+	dynasty = dyn_marcher_44
+	disallow_random_traits = yes
+
+	father = voyagen_lifepath_82
+
+	martial = 9
+	diplomacy = 11
+	stewardship = 8
+	intrigue = 6
+	learning = 8
+	prowess = 10
+
+	1229.3.3 = {
+		birth = yes
+		trait = beauty_bad_1
+		trait = bastard
+	}
+
+	1241.1.1 = {
+		trait = deceitful
+		trait = callous
+		trait = ambitious
+	}
+
+	1245.3.3 = {
+		trait = education_martial_2
+		trait = way_of_coins_follower
+		trait = logistician
+		trait = shrewd
+	}
+
+	1247.2.2 = {
+			effect = {
+		        set_relation_friend = { reason = friend_generic_history target = character:voyagen_lifepath_8 } # Fought with each other for years
+		    }
+	}
+
+	1248.12.9 = {
+		employer = voyagen_lifepath_8
+	}
+
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_marcher
+		trait = one_eyed
+		effect = {
+			create_character_memory = { # Battle of the Elysian Pass
+				type = fought_in_elysian_pass_marcher
+			}
+		}
+	}
+}
+
+voyagen_lifepath_85 = {
+	name = "Anvre"
+	religion = "lifepath"
+	culture = "voyagen"
+
+	1217.11.15 = {
+		birth = yes
+	}
+}
+
+voyagen_lifepath_86 = {
+	name = "Huchon"
+	religion = "lifepath"
+	culture = "voyagen"
+
+	1212.6.21 = {
+		birth = yes
+	}
+}
+
+voyagen_lifepath_87 = { # Ser Alaurent den va Celmar, Marcher adventurer that joined the Orydian Expedition and was betrayed after its conclusion
+	name = "Alaurent"
+	religion = "lifepath"
+	culture = "voyagen"
+
+	dynasty = dyn_marcher_46
+	sexuality = heterosexual
+
+	martial = 3
+	diplomacy = 9
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	prowess = 5
+
+	1069.12.3 = {
+		birth = yes
+		trait = strong
+	}
+
+	1081.1.1 = {
+		trait = lustful
+		trait = trusting
+		trait = just
+	}
+
+	1085.12.3 = {
+		trait = education_martial_4
+		trait = way_of_swords_follower
+		trait = rakish
+	}
+
+	1090.4.22 = {
+		death = {
+			death_reason = death_murder_known
+			killer = southernimperial_aversarinas_aagiokrata_121
+		}
+	}
+}
+
+voyagen_lifepath_88 = { # Anton Descradau, warlord king of Varrdevet during the early 11th century
+    name = "Anton"
+    religion = "lifepath"
+    culture = "voyagen"
+
+    dynasty = dyn_marcher_47
+    sexuality = heterosexual
+    dna = anton
+
+    martial = 8
+    diplomacy = 6
+    stewardship = 3
+    intrigue = 6
+    learning = 6
+    prowess = 3
+
+    980.10.21 = {
+        birth = yes
+    }
+
+    992.1.1 = {
+        trait = wrathful
+        trait = just
+        trait = impatient
+    }
+
+    996.10.21 = {
+        effect = { set_base_arcana = { AMOUNT = 3 } }
+        trait = education_martial_3
+        trait = way_of_swords_follower
+        trait = aggressive_attacker
+    }
+
+    1014.11.18 = {
+    	trait = adventurer
+    }
+
+    1031.8.8 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+voyagen_lifepath_89 = { # Sir Rose den va Kreysauns, one of the few female marchers ever to be knighted
+    name = "Rose"
+    religion = "lifepath"
+    culture = "voyagen"
+
+    dynasty = dyn_marcher_48
+    sexuality = heterosexual
+    dna = rose
+    female = yes
+
+    martial = 7
+    diplomacy = 6
+    stewardship = 7
+    intrigue = 6
+    learning = 6
+    prowess = 4
+
+    1006.5.16 = {
+        birth = yes
+        trait = physique_good_2
+    }
+
+    1018.1.1 = {
+        trait = brave
+        trait = compassionate
+        trait = diligent
+    }
+
+    1022.5.16 = {
+        effect = { set_base_arcana = { AMOUNT = 6 } }
+        trait = education_diplomacy_4
+        trait = way_of_nullification_follower
+        trait = gh_historical_blademaster_2
+    }
+
+   	1069.9.24 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+voyagen_lifepath_90 = { # Saint Cathd den va Krecce, Waysaint of Justice. Martyred by High King Agiers in a fit of insanity
+    name = "Cathd"
+    religion = "lifepath"
+    culture = "voyagen"
+
+    dynasty = dyn_marcher_51
+    sexuality = heterosexual
+    dna = cathd
+
+    martial = 10
+    diplomacy = 10
+    stewardship = 8
+    intrigue = 6
+    learning = 7
+    prowess = 6
+
+    946.2.11 = {
+        birth = yes
+    }
+
+    958.1.1 = {
+        trait = impatient
+        trait = zealous
+        trait = just
+    }
+
+    962.2.11 = {
+        effect = { set_base_arcana = { AMOUNT = 8 } }
+        trait = education_diplomacy_2
+        trait = way_of_justice_follower
+        trait = diplomat
+    }
+
+   	974.5.26 = {
+		death = {
+			death_reason = death_burned_witch
+			killer = voyagen_lifepath_30
+		}
+	}
+}
+
+voyagen_lifepath_91 = { # Lord Kavin Shevaun, author of 'How to Read a Book'
+    name = "Kavin"
+    religion = "lifepath"
+    culture = "voyagen"
+
+    dynasty = dyn_marcher_52
+    sexuality = heterosexual
+    dna = kavin
+
+    martial = 5
+    diplomacy = 4
+    stewardship = 7
+    intrigue = 10
+    learning = 1
+    prowess = 5
+
+    1012.3.19 = {
+        birth = yes
+    }
+
+    1024.1.1 = {
+        trait = compassionate
+        trait = honest
+        trait = impatient
+    }
+
+    1028.3.19 = {
+        effect = { set_base_arcana = { AMOUNT = 4 } }
+        trait = education_learning_2
+        trait = way_of_crowns_follower
+        trait = dull
+    }
+
+    1072.12.10 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+voyagen_lifepath_92 = { # Ragambald Manswel, famed Chevalien adventurer who was said to have reached Kathun-Kai. Authored a well-known bestiary.
+    name = "Ragambald"
+    religion = "lifepath"
+    culture = "voyagen"
+
+    dynasty = dyn_marcher_53
+    sexuality = heterosexual
+    dna = ragambald
+
+    martial = 7
+    diplomacy = 3
+    stewardship = 3
+    intrigue = 4
+    learning = 5
+    prowess = 3
+
+    1103.7.27 = {
+        birth = yes
+        trait = physique_good_2
+        trait = intellect_good_1
+    }
+
+    1115.1.1 = {
+        trait = ambitious
+        trait = diligent
+        trait = brave
+    }
+
+    1119.7.27 = {
+        effect = { set_base_arcana = { AMOUNT = 8 } }
+        trait = education_diplomacy_3
+        trait = way_of_knowledge_follower
+        trait = shrewd
+        trait = adventurer
+        trait = lifestyle_wayfarer
+        trait = lifestyle_voyager
+        trait = lifestyle_surveyor
+    }
+
+    1162.2.11 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+voyagen_lifepath_93 = { # Lhao Manswel, son of Ragambald, named after a Kathunian friend
+    name = "Lhao"
+    religion = "lifepath"
+    culture = "voyagen"
+
+    dynasty = dyn_marcher_53
+    sexuality = heterosexual
+    father = voyagen_lifepath_92
+
+    martial = 3
+    diplomacy = 5
+    stewardship = 10
+    intrigue = 5
+    learning = 7
+    prowess = 5
+
+    1141.8.12 = {
+        birth = yes
+        trait = physique_good_1
+    }
+
+    1153.1.1 = {
+        trait = wrathful
+        trait = patient
+        trait = lazy
+    }
+
+    1157.8.12 = {
+        effect = { set_base_arcana = { AMOUNT = 5 } }
+        trait = education_stewardship_2
+        trait = way_of_coins_follower
+        trait = lifestyle_surveyor
+        trait = administrator
+        trait = adventurer
+    }
+
+    1179.6.19 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}

@@ -1,0 +1,369 @@
+﻿qoltaam_vidvaookeyatra_1 = {
+	name = "Lakshmanadeva"
+	religion = "vidvaookeyatra"
+	culture = "qoltaam"
+	1214.8.8 = {
+		birth = yes
+	}
+}
+
+qoltaam_vidvaookeyatra_2 = {
+	name = "Manavasimha"
+	religion = "vidvaookeyatra"
+	culture = "qoltaam"
+	father = qoltaam_vidvaookeyatra_12
+	mother = qoltaam_vidvaookeyatra_13
+	1211.8.8 = {
+		birth = yes
+	}
+
+	1250.12.4 = {
+		effect = { add_character_flag = should_become_independent }
+	}
+}
+
+qoltaam_vidvaookeyatra_3 = {
+    name = "Karandeva" 
+
+    dynasty = dynasty_qoltaam_1
+    religion = vidvaookeyatra
+    culture = qoltaam
+
+    sexuality = heterosexual
+
+    trait = vengeful
+    trait = greedy
+    trait = fickle
+
+    1017.4.20 = {
+        birth = yes
+    }
+
+    1044.10.8 = {
+        add_spouse = qoltaam_vidvaookeyatra_4
+    }
+
+    1058.11.8 = {
+        give_nickname = nick_the_unready
+        effect = {
+            add_character_flag = {
+                flag = had_nickname_event
+            }
+        }
+    }
+
+    1059.2.18 = {
+        death = { death_reason = death_wounds }
+    }
+}
+
+qoltaam_vidvaookeyatra_4 = {
+    name = "Hariyadevi" 
+    female = yes
+
+    religion = vidvaookeyatra
+    culture = qoltaam
+
+    sexuality = heterosexual
+
+    trait = honest
+    trait = craven
+    trait = impatient
+
+    1027.2.7 = {
+        birth = yes
+    }
+
+    1079.12.9 = {
+        death = { death_reason = death_pneumonic }
+    }
+}
+
+qoltaam_vidvaookeyatra_5 = {
+    name = "Kumarapala" 
+
+    dynasty = dynasty_qoltaam_1
+    religion = vidvaookeyatra
+    culture = qoltaam
+
+    father = qoltaam_vidvaookeyatra_3
+    mother = qoltaam_vidvaookeyatra_4
+
+    sexuality = heterosexual
+
+    trait = forgiving
+    trait = stubborn
+    trait = diligent
+
+    1044.3.19 = {
+        birth = yes
+    }
+
+    1079.3.3 = {
+        add_spouse = qoltaam_vidvaookeyatra_6
+    }
+
+    1124.2.12 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+qoltaam_vidvaookeyatra_6 = {
+    name = "Sidhawa" 
+    female = yes
+
+    religion = vidvaookeyatra
+    culture = qoltaam
+
+    sexuality = heterosexual
+
+    trait = humble
+    trait = sadistic
+    trait = stubborn
+
+    1062.11.20 = {
+        birth = yes
+    }
+
+    1130.1.28 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+qoltaam_vidvaookeyatra_7 = {
+    name = "Mahap" 
+
+    dynasty = dynasty_qoltaam_1
+    religion = vidvaookeyatra
+    culture = qoltaam
+
+    father = qoltaam_vidvaookeyatra_5
+    mother = qoltaam_vidvaookeyatra_6
+
+    sexuality = heterosexual
+
+    trait = generous
+    trait = just
+    trait = shy
+
+    1099.12.23 = {
+        birth = yes
+    }
+
+    1131.5.7 = {
+        add_spouse = qoltaam_vidvaookeyatra_8
+    }
+
+    1166.5.14 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+qoltaam_vidvaookeyatra_8 = {
+    name = "Rupadevi" 
+    female = yes
+
+    religion = vidvaookeyatra
+    culture = qoltaam
+
+    sexuality = bisexual
+
+    trait = content
+    trait = humble
+    trait = arbitrary
+
+    1114.6.2 = {
+        birth = yes
+    }
+
+    1179.10.8 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+qoltaam_vidvaookeyatra_9 = {
+    name = "Sanyukhta" 
+    female = yes
+
+    religion = vidvaookeyatra
+    culture = qoltaam
+
+    father = qoltaam_vidvaookeyatra_7
+    mother = qoltaam_vidvaookeyatra_8
+
+    sexuality = heterosexual
+
+    trait = gluttonous
+    trait = greedy
+    trait = calm
+
+    1142.2.22 = {
+        birth = yes
+    }
+
+    1208.4.2 = {
+        death = { death_reason = death_dungeon killer = qoltaam_vidvaookeyatra_10 }
+    }
+}
+
+qoltaam_vidvaookeyatra_10 = {
+    name = "Nagraja" 
+
+    dynasty = dynasty_qoltaam_1
+    religion = vidvaookeyatra
+    culture = qoltaam
+
+    father = qoltaam_vidvaookeyatra_7
+    mother = qoltaam_vidvaookeyatra_8
+
+    sexuality = bisexual
+
+    trait = sadistic
+    trait = chaste
+    trait = stubborn
+
+    1146.8.17 = {
+        birth = yes
+    }
+
+    1147.9.10 = {
+        give_nickname = nick_the_black
+        effect = {
+            add_character_flag = {
+                flag = had_nickname_event
+            }
+        }
+    }
+
+    1166.8.27 = {
+        add_spouse = qoltaam_vidvaookeyatra_11
+    }
+
+    1215.1.7 = {
+        death = { death_reason = death_beaten killer = qoltaam_vidvaookeyatra_12}
+    }
+}
+
+qoltaam_vidvaookeyatra_11 = {
+    name = "Rasaladevi" 
+    female = yes
+
+    religion = vidvaookeyatra
+    culture = qoltaam
+
+    sexuality = heterosexual
+
+    trait = generous
+    trait = gregarious
+    trait = calm
+
+    1149.7.6 = {
+        birth = yes
+    }
+
+    1212.5.1 = {
+        death = { death_reason = death_torture killer = qoltaam_vidvaookeyatra_10 }
+    }
+}
+
+qoltaam_vidvaookeyatra_12 = {
+    name = "Kshemraja" 
+
+    dynasty = dynasty_qoltaam_1
+    religion = vidvaookeyatra
+    culture = qoltaam
+
+    father = qoltaam_vidvaookeyatra_10
+    mother = qoltaam_vidvaookeyatra_11
+
+    sexuality = homosexual
+
+    trait = lazy
+    trait = content
+    trait = shy
+
+    1180.5.21 = {
+        birth = yes
+    }
+
+    1209.8.2 = {
+        add_spouse = qoltaam_vidvaookeyatra_13
+    }
+
+    1246.5.21 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+qoltaam_vidvaookeyatra_13 = {
+    name = "Pratha" 
+    female = yes
+
+    religion = vidvaookeyatra
+    culture = qoltaam
+
+    sexuality = heterosexual
+
+    trait = lazy
+    trait = calm
+    trait = just
+
+    1192.10.9 = {
+        birth = yes
+    }
+
+    1259.2.10 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+qoltaam_vidvaookeyatra_14 = {
+    name = "Rudrani" 
+    female = yes
+
+    religion = vidvaookeyatra
+    culture = qoltaam
+
+    father = qoltaam_vidvaookeyatra_12
+    mother = qoltaam_vidvaookeyatra_13
+
+    sexuality = heterosexual
+
+    trait = generous
+    trait = humble
+    trait = vengeful
+
+    1222.6.21 = {
+        birth = yes
+    }
+
+    1287.6.16 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+qoltaam_vidvaookeyatra_15 = {
+    name = "Kharagraha" 
+
+    dynasty = dynasty_qoltaam_1
+    religion = vidvaookeyatra
+    culture = qoltaam
+
+    father = qoltaam_vidvaookeyatra_12
+    mother = qoltaam_vidvaookeyatra_13
+
+    sexuality = heterosexual
+
+    trait = temperate
+    trait = lazy
+    trait = chaste
+
+    1224.7.5 = {
+        birth = yes
+    }
+
+    1267.6.2 = {
+        death = { death_reason = death_smallpox }
+    }
+}
+

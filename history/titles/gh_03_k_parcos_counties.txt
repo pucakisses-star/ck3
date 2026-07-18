@@ -1,0 +1,160 @@
+c_imanolos = {
+	1000.1.1 = { change_development_level = 4 }
+	1183.9.24 = {
+		holder = westernimperial_aversarinas_aagiokrata_14
+	}
+	1200.3.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_16
+	}
+	1222.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_188
+	}
+	1250.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_188
+		liege = k_assocaea
+	}
+	1254.8.13 = {
+		holder = goans_gethian_1
+	}
+}
+c_stymphanais = {
+	1250.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_209
+	}
+	1252.1.1 = {
+		holder = goans_gethian_1
+	}
+	1256.5.25 = {
+		holder = caemansi_sjalvolki_13
+		liege = 0
+	}
+	1267.1.7 = {
+		holder = caemansi_sjalvolki_27
+	}
+	1280.4.21 = {
+		holder = caemansi_sjalvolki_29
+	}
+	1295.2.26 = {
+		holder = caemansi_sjalvolki_32
+	}
+	1297.6.26 = {
+		government = landed_order_government
+	}
+}
+c_zakanixapoli = {
+	1000.1.1 = { change_development_level = 7 }
+	1183.9.24 = {
+		holder = westernimperial_aversarinas_aagiokrata_14
+	}
+	1200.3.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_16
+	}
+	1230.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_154
+	}
+	1254.8.13 = {
+		holder = goans_gethian_1
+	}
+}
+c_megapeze = {
+	1000.1.1 = { change_development_level = 8 }
+	1186.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_184
+	}	
+	1230.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_190
+		liege = d_toskopeion
+	}
+}
+#c_leibarnae = {
+#	1000.1.1 = { change_development_level = 8 }
+#	
+#	1230.1.1 = {
+#		holder = goans_gethian_1
+#	}
+#}
+c_pellera = {
+	1119.4.11 = {
+		holder = westernimperial_aversarinas_aagiokrata_3
+	}
+
+	1180.1.1 = { change_development_level = 16 }
+
+	1200.1.1 = { change_development_level = 8 }
+	
+	# Lonely Note: Giving a null holder to a county triggers an error, make a placeholder
+	# character and remove when possible.
+	#1201.3.4 = {
+	#	holder = 0
+	#}
+
+	1230.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_186
+		liege = k_assocaea
+	}
+	1254.8.15 = {
+		holder = vrodkin_sjalvolki_25
+		liege = k_vrodkin
+	}
+	1275.1.1 = {
+		liege = d_dasikgara_sanarsa
+	}
+}
+c_tominope = {
+	1158.5.16 = {
+		holder = westernimperial_aversarinas_aagiokrata_539
+	}
+	1179.7.25 = {
+		holder = westernimperial_aversarinas_aagiokrata_540
+	}
+	1194.4.9 = {
+		holder = westernimperial_aversarinas_aagiokrata_252
+	}
+
+	1180.1.1 = { change_development_level = 25 }
+
+	1200.1.1 = { change_development_level = 8 }
+
+	1249.3.14 = {
+		holder = westernimperial_aversarinas_aagiokrata_253
+	}
+	1252.3.11 = { # Given by Idaeus to Kallistos to fortify, and as thanks for saving his life in Elysian Pass
+		holder = westernimperial_aversarinas_aagiokrata_203
+	}
+	1256.5.25 = {
+		holder = goans_gethian_1
+	}
+	1267.1.7 = {
+		holder = caemansi_sjalvolki_27
+	}
+	1280.4.21 = {
+		holder = caemansi_sjalvolki_29
+	}
+	1295.2.26 = {
+		holder = caemansi_sjalvolki_33
+	}
+	1274.5.15 = {
+		holder = vrodkin_sjalvolki_61
+	}
+}
+c_messiopolis = {
+	1158.5.16 = {
+		holder = westernimperial_aversarinas_aagiokrata_539
+	}
+	1179.7.25 = {
+		holder = westernimperial_aversarinas_aagiokrata_540
+	}
+	1194.4.9 = {
+		holder = westernimperial_aversarinas_aagiokrata_252
+	}
+	1249.3.14 = {
+		holder = westernimperial_aversarinas_aagiokrata_253
+		liege = 0
+	}
+	1256.5.25 = {
+		holder = vrodkin_sjalvolki_31
+	}
+	1274.5.15 = {
+		holder = vrodkin_sjalvolki_61
+	}
+}

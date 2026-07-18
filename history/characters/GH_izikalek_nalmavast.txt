@@ -1,0 +1,1214 @@
+﻿izikalek_nalmavast_1 = {
+	name = "Valdava"
+	culture = "izikalek"
+	religion = "nalmavast"
+	dynasty = dyn_izikalek_1
+	female = yes
+	disallow_random_traits = yes	
+	father = izikalek_nalmavast_15
+	mother = izikalek_nalmavast_16
+	1220.11.3 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1232.1.1 = {
+		trait = ambitious
+		trait = cynical
+		trait = gregarious	
+	}
+
+	1236.11.3 = {
+		trait = education_learning_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:silentspeak }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+	
+	1243.5.10 = {
+		add_matrilineal_spouse = izikalek_nalmavast_4
+
+	}		
+}
+
+izikalek_nalmavast_2 = {
+	name = "Nekhot"
+	dynasty = dyn_izikalek_1
+	religion = nalmavast
+	culture = izikalek
+	father = izikalek_nalmavast_13
+	mother = izikalek_nalmavast_14
+
+	1197.12.3 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1213.1.1 = {
+		trait = zealous
+		trait = diligent
+		trait = gregarious
+	}
+
+	1217.12.3 = {
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:silentspeak }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+	
+	1241.5.23 = {
+		death = {
+			death_reason = death_fog
+		}	
+	}	
+}
+
+izikalek_nalmavast_3 = {
+	name = "Uzhara"
+	culture = "izikalek"
+	religion = "nalmavast"
+	dynasty = dyn_izikalek_1
+	father = izikalek_nalmavast_2
+	
+	trait = bastard	
+
+	1224.11.3 = {
+		birth = yes
+		
+	}
+
+	1242.1.1 = {
+		trait = education_martial_3
+		trait = ambitious
+		trait = zealous
+		trait = brave
+	}
+}
+
+izikalek_nalmavast_4 = {
+	name = "Andyamo"
+	culture = "izikalek"
+	religion = "nalmavast"
+
+	1221.11.3 = {
+		birth = yes
+	}
+
+	1239.1.1 = {
+		trait = education_stewardship_2
+		trait = greedy
+		trait = compassionate
+		trait = calm
+	}
+	
+	1243.5.10 = {
+		add_matrilineal_spouse = izikalek_nalmavast_1
+
+	}		
+}
+
+izikalek_nalmavast_5 = {
+	name = "Tatka"
+	culture = "izikalek"
+	religion = "nalmavast"
+	female = yes
+	mother = izikalek_nalmavast_1
+	father = izikalek_nalmavast_4
+	trait = twin
+	dynasty = dyn_izikalek_1	
+	
+	1247.12.31 = {
+		birth = yes
+		trait = magic_good_3		
+	}
+	
+}
+
+izikalek_nalmavast_6 = {
+	name = "Tul"
+	culture = "izikalek"
+	religion = "nalmavast"
+	mother = izikalek_nalmavast_1
+	father = izikalek_nalmavast_4
+	trait = twin
+	dynasty = dyn_izikalek_1	
+	
+	1247.12.31 = {
+		birth = yes
+		trait = magic_good_4
+	}
+	
+}
+
+izikalek_nalmavast_7 = {
+	name = "Saksa" 
+
+	dynasty = dyn_izikalek_1
+	religion = nalmavast
+	culture = izikalek
+
+	sexuality = heterosexual
+
+	trait = gregarious
+	trait = zealous
+	trait = ambitious
+	trait = magic_good_2
+	diplomacy = 5
+	martial = 7
+	stewardship = 5
+	intrigue = 2
+	learning = 7
+	prowess = 6
+
+	trait = education_martial_2
+
+	987.6.26 = {
+	birth = yes
+	}
+
+	1036.3.12 = {
+	add_spouse = izikalek_nalmavast_8
+	}
+
+	1063.8.14 = {
+	death = { death_reason = death_great_pox }
+	}
+}
+
+izikalek_nalmavast_8 = {
+	name = "Styaka" 
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	sexuality = heterosexual
+
+	trait = content
+	trait = callous
+	trait = gregarious
+
+	diplomacy = 4
+	martial = 10
+	stewardship = 8
+	intrigue = 9
+	learning = 5
+	prowess = 6
+
+	trait = education_martial_4
+
+	1019.7.12 = {
+	birth = yes
+	}
+
+	1046.6.18 = {
+	death = { death_reason = death_typhus }
+	}
+}
+
+izikalek_nalmavast_9 = {
+	name = "Onton" 
+
+	dynasty = dyn_izikalek_1
+	religion = nalmavast
+	culture = izikalek
+
+	father = izikalek_nalmavast_7
+	mother = izikalek_nalmavast_8
+	trait = magic_good_1
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = diligent
+	trait = stubborn
+
+	diplomacy = 8
+	martial = 4
+	stewardship = 4
+	intrigue = 6
+	learning = 5
+	prowess = 8
+
+	trait = education_diplomacy_2
+
+	1041.1.3 = {
+	birth = yes
+	}
+
+	1070.10.2 = {
+	add_spouse = izikalek_nalmavast_10
+	}
+
+	1090.9.8 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_10 = {
+	name = "Mastorava" 
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+	trait = magic_good_1
+	sexuality = heterosexual
+
+	trait = zealous
+	trait = forgiving
+	trait = arbitrary
+
+	diplomacy = 3
+	martial = 7
+	stewardship = 7
+	intrigue = 10
+	learning = 5
+	prowess = 4
+
+	trait = education_intrigue_3
+
+	1053.2.28 = {
+	birth = yes
+	}
+
+	1087.5.4 = {
+	death = { death_reason = death_typhus }
+	}
+}
+
+izikalek_nalmavast_11 = {
+	name = "Matyo" 
+
+	dynasty = dyn_izikalek_1
+	religion = nalmavast
+	culture = izikalek
+
+	father = izikalek_nalmavast_9
+	mother = izikalek_nalmavast_10
+	trait = magic_good_1
+	sexuality = heterosexual
+
+	trait = gregarious
+	trait = zealous
+	trait = deceitful
+
+	diplomacy = 8
+	martial = 8
+	stewardship = 4
+	intrigue = 6
+	learning = 10
+	prowess = 8
+
+	trait = education_learning_3
+
+	1084.10.21 = {
+	birth = yes
+	}
+
+	1141.7.17 = {
+	add_spouse = izikalek_nalmavast_12
+	}
+
+	1151.9.21 = {
+	death = { death_reason = death_smallpox }
+	}
+}
+
+izikalek_nalmavast_12 = {
+	name = "Nulzyava" 
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+	trait = magic_good_1
+	sexuality = heterosexual
+
+	trait = greedy
+	trait = gregarious
+	trait = ambitious
+
+	diplomacy = 4
+	martial = 7
+	stewardship = 4
+	intrigue = 5
+	learning = 4
+	prowess = 6
+
+	trait = education_martial_3
+
+	1124.3.19 = {
+	birth = yes
+	}
+
+	1151.10.7 = {
+	death = { death_reason = death_typhus }
+	}
+}
+
+izikalek_nalmavast_13 = {
+	name = "Kezhedey" 
+
+	dynasty = dyn_izikalek_1
+	religion = nalmavast
+	culture = izikalek
+
+	father = izikalek_nalmavast_11
+	mother = izikalek_nalmavast_12
+	trait = magic_good_4
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = gluttonous
+	trait = content
+
+	diplomacy = 1
+	martial = 3
+	stewardship = 8
+	intrigue = 6
+	learning = 7
+	prowess = 3
+
+	trait = education_stewardship_3
+
+	1149.6.11 = {
+	birth = yes
+	}
+
+	1186.8.2 = {
+	add_spouse = izikalek_nalmavast_14
+	}
+
+	1216.10.26 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_14 = {
+	name = "Cheymarina" 
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+	
+	sexuality = heterosexual
+
+	trait = gluttonous
+	trait = calm
+	trait = ambitious
+
+	diplomacy = 7
+	martial = 4
+	stewardship = 10
+	intrigue = 6
+	learning = 8
+	prowess = 5
+
+	trait = education_stewardship_2
+
+	1169.1.14 = {
+	birth = yes
+	}
+
+	1244.5.27 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_15 = {
+	name = "Kvedor" 
+
+	dynasty = dyn_izikalek_1
+	religion = nalmavast
+	culture = izikalek
+	trait = magic_good_3
+	father = izikalek_nalmavast_13
+	mother = izikalek_nalmavast_14
+
+	sexuality = heterosexual
+
+	trait = zealous
+	trait = just
+	trait = greedy
+
+	diplomacy = 8
+	martial = 6
+	stewardship = 9
+	intrigue = 9
+	learning = 7
+	prowess = 7
+
+	trait = education_stewardship_2
+
+	1203.9.25 = {
+	birth = yes
+	}
+
+	1232.8.16 = {
+	add_spouse = izikalek_nalmavast_16
+	}
+
+	1293.3.18 = {
+	death = { death_reason = death_stress }
+	}
+}
+
+izikalek_nalmavast_16 = {
+	name = "Yalgava" 
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	sexuality = heterosexual
+	trait = magic_good_1
+	trait = trusting
+	trait = impatient
+	trait = lustful
+
+	diplomacy = 6
+	martial = 8
+	stewardship = 6
+	intrigue = 8
+	learning = 6
+	prowess = 2
+
+	trait = education_martial_2
+
+	1200.11.10 = {
+	birth = yes
+	}
+
+	1256.3.24 = {
+	death = { death_reason = death_plotting  }
+	}
+}
+
+izikalek_nalmavast_17 = {
+	name = "Nalka" 
+
+	dynasty = dyn_izikalek_1
+	religion = nalmavast
+	culture = izikalek
+
+	father = izikalek_nalmavast_15
+	mother = izikalek_nalmavast_16
+	trait = magic_good_3
+	sexuality = heterosexual
+
+	trait = trusting
+	trait = humble
+	trait = patient
+
+	diplomacy = 19
+	martial = 26
+	stewardship = 14
+	intrigue = 16
+	learning = 15
+	prowess = 26
+
+	trait = education_martial_4
+
+	1241.7.10 = {
+	birth = yes
+	}
+
+	1263.4.10 = {
+	add_spouse = izikalek_nalmavast_18
+	}
+
+	1306.12.13 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_18 = {
+	name = "Sangasa" 
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+	trait = magic_good_1
+	sexuality = heterosexual
+
+	trait = diligent
+	trait = brave
+	trait = temperate
+
+	diplomacy = 7
+	martial = 4
+	stewardship = 6
+	intrigue = 6
+	learning = 5
+	prowess = 6
+
+	trait = education_diplomacy_1
+
+	1246.10.21 = {
+	birth = yes
+	}
+
+	1319.2.24 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_19 = {
+	name = "Doro" 
+
+	dynasty = dyn_izikalek_1
+	religion = nalmavast
+	culture = izikalek
+
+	father = izikalek_nalmavast_17
+	mother = izikalek_nalmavast_18
+	trait = magic_good_2
+	sexuality = heterosexual
+
+	trait = shy
+	trait = content
+	trait = cynical
+
+	diplomacy = 6
+	martial = 10
+	stewardship = 8
+	intrigue = 5
+	learning = 5
+	prowess = 5
+
+	trait = education_martial_4
+
+	1264.10.24 = {
+	birth = yes
+	}
+
+	1288.3.19 = {
+	add_spouse = izikalek_nalmavast_20
+	}
+
+	1321.10.14 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_20 = {
+	name = "Vezhav" 
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	sexuality = heterosexual
+
+	trait = paranoid
+	trait = greedy
+	trait = lustful
+
+	diplomacy = 6
+	martial = 6
+	stewardship = 5
+	intrigue = 5
+	learning = 10
+	prowess = 5
+
+	trait = education_learning_3
+
+	1271.2.21 = {
+	birth = yes
+	}
+
+	1343.6.16 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_21 = {
+	name = "Sangasa" 
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	sexuality = heterosexual
+	
+	trait = diligent
+	trait = brave
+	trait = temperate
+	trait = magic_good_1
+	diplomacy = 7
+	martial = 4
+	stewardship = 6
+	intrigue = 6
+	learning = 5
+	prowess = 6
+
+	trait = education_diplomacy_1
+	
+	father = izikalek_nalmavast_15
+	
+	1268.10.21 = {
+	birth = yes
+	}
+
+	1319.2.24 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_22 = {
+	name = "Nuyanza" 
+
+	dynasty = dyn_izikalek_1
+	religion = nalmavast
+	culture = izikalek
+
+	father = izikalek_nalmavast_15
+	mother = izikalek_nalmavast_16
+
+	sexuality = homosexual
+
+	trait = compassionate
+	trait = patient
+	trait = shy
+	trait = magic_good_3
+	diplomacy = 15
+	martial = 16
+	stewardship = 21
+	intrigue = 17
+	learning = 14
+	prowess = 21
+
+	trait = education_stewardship_4
+
+	1249.6.20 = {
+	birth = yes
+	}
+
+	1310.9.22 = {
+	death = { death_reason = death_smallpox }
+	}
+}
+
+izikalek_nalmavast_23 = {
+	name = "Vergava" 
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	sexuality = heterosexual
+
+	trait = just
+	trait = sadistic
+	trait = humble
+
+	diplomacy = 7
+	martial = 8
+	stewardship = 6
+	intrigue = 5
+	learning = 5
+	prowess = 3
+
+	trait = education_martial_2
+
+	1283.10.3 = {
+	birth = yes
+	}
+
+	1353.6.27 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+
+izikalek_nalmavast_24 = {
+	name = "Chindyapa" 
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	sexuality = heterosexual
+
+	trait = arbitrary
+	trait = sadistic
+	trait = ambitious
+
+	diplomacy = 6
+	martial = 5
+	stewardship = 3
+	intrigue = 6
+	learning = 4
+	prowess = 6
+
+	trait = education_diplomacy_3
+
+	1270.2.2 = {
+	birth = yes
+	}
+
+	1355.2.5 = {
+	death = { death_reason = death_leper }
+	}
+}
+
+izikalek_nalmavast_25 = {
+	name = "Pokshayka" 
+ 
+	religion = nalmavast
+	culture = izikalek
+
+	sexuality = heterosexual
+
+	trait = trusting
+	trait = eccentric
+	trait = fickle
+
+	diplomacy = 11
+	martial = 5
+	stewardship = 8
+	intrigue = 8
+	learning = 5
+	prowess = 6
+
+	trait = education_diplomacy_1
+
+	1265.11.17 = {
+	birth = yes
+	}
+
+}
+
+izikalek_nalmavast_26 = { # Mother of Salaza
+	name = "Yalgava"
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	trait = compassionate
+	trait = trusting
+	trait = temperate
+	trait = lifestyle_herbalist
+
+	trait = education_diplomacy_2
+
+	622.6.23 = {
+		birth = yes
+	}
+
+	676.11.3 = {
+		death = { death_reason = death_bear }
+	}
+}
+
+izikalek_nalmavast_27 = { # Sister of Salaza
+	name = "Litava"
+	female = yes
+
+	mother = izikalek_nalmavast_26
+
+	religion = nalmavast
+	culture = izikalek
+
+	trait = forgiving
+	trait = gregarious
+	trait = brave
+	trait = gh_historical_track_hunter_1
+
+	trait = education_martial_3
+
+	652.1.19 = {
+		birth = yes
+	}
+
+	669.4.29 = {
+		death = {
+			death_reason = death_mysterious
+			killer = izikalek_nalmavast_28
+		}
+	}
+}
+
+izikalek_nalmavast_28 = { # Salaza
+	name = "SA_laza"
+	female = yes
+	dynasty = dyn_sarminian_3
+
+	mother = izikalek_nalmavast_26
+
+	religion = nalmavast
+	culture = izikalek
+
+	diplomacy = 12
+	martial = 21
+	stewardship = 9
+	intrigue = 29
+	learning = 14
+	prowess = 15
+
+	trait = arrogant
+	trait = ambitious
+	trait = brave
+	trait = callous
+	trait = possessed_1
+	trait = gh_historical_mystic_3
+
+	trait = education_intrigue_5
+
+	654.9.27 = {
+		birth = yes
+	}
+
+	684.5.10 = {
+		religion = salacad
+	}
+
+	700.1.1 = {
+		culture = sarminians
+		trait = lifestyle_gh_steppe_queen
+	}
+
+	708.8.4 = {
+		death = { death_reason = death_murdered_by_religious_rebels }
+	}
+}
+
+izikalek_nalmavast_29 = {
+	name = "Ashava"
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	611.10.8 = {
+		birth = yes
+	}
+
+	678.1.30 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_30 = {
+	name = "Putyayka"
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	621.6.12 = {
+		birth = yes
+	}
+
+	670.6.10 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_31 = {
+	name = "Ordava"
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	591.3.18 = {
+		birth = yes
+	}
+
+	658.11.7 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_32 = {
+	name = "Chinzhay"
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	589.8.6 = {
+		birth = yes
+	}
+
+	638.4.20 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_33 = {
+	name = "Virtyava"
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	573.6.14 = {
+		birth = yes
+	}
+
+	633.2.4 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_34 = {
+	name = "Pokshava"
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	542.12.29 = {
+		birth = yes
+	}
+
+	624.12.14 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_35 = {
+	name = "Ashava"
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	527.3.4 = {
+		birth = yes
+	}
+
+	605.7.5 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_36 = {
+	name = "Nasta"
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	537.4.21 = {
+		birth = yes
+	}
+
+	588.9.21 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_37 = {
+	name = "Slyugan_ka"
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	521.10.5 = {
+		birth = yes
+	}
+
+	584.3.14 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_38 = {
+	name = "Kirdyava"
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	470.6.8 = {
+		birth = yes
+	}
+
+	577.10.17 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_39 = {
+	name = "Tundya"
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	469.9.2 = {
+		birth = yes
+	}
+
+	544.2.30 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_40 = {
+	name = "Pekshayka"
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	446.2.10 = {
+		birth = yes
+	}
+
+	521.6.9 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_41 = {
+	name = "Sochava"
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	431.11.15 = {
+		birth = yes
+	}
+
+	500.11.4 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_42 = {
+	name = "Unzhutka"
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	420.3.16 = {
+		birth = yes
+	}
+
+	489.5.24 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_43 = {
+	name = "Mazava"
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	412.11.7 = {
+		birth = yes
+	}
+
+	469.9.7 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_44 = {
+	name = "Nulzyava"
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	374.9.26 = {
+		birth = yes
+	}
+
+	454.8.16 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_45 = {
+	name = "Mel_shay"
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	352.1.14 = {
+		birth = yes
+	}
+
+	425.3.7 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_46 = {
+	name = "Shukshtoroyka"
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	282.6.20 = {
+		birth = yes
+	}
+
+	336.3.11 = {
+		death = { death_reason = death_cut_off_by_enemy_troops_defensive }
+	}
+}
+
+izikalek_nalmavast_47 = {
+	name = "Oksya"
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	277.5.18 = {
+		birth = yes
+	}
+
+	329.11.8 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_48 = {
+	name = "Tekay"
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	246.12.4 = {
+		birth = yes
+	}
+
+	322.5.29 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+izikalek_nalmavast_49 = {
+	name = "Valdava"
+	female = yes
+
+	religion = nalmavast
+	culture = izikalek
+
+	243.2.11 = {
+		birth = yes
+	}
+
+	296.1.22 = {
+		death = { death_reason = death_natural_causes }
+	}
+}

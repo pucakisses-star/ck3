@@ -1,0 +1,201 @@
+#c_lakeview_chase = {
+#	1253.1.1 = {
+#		liege = "e_migrant_coalition"
+#		holder = sarminians_salacad_1
+#		government = tribal_government
+#	}
+#}
+c_sugarholt = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1253.1.1 = {
+		liege = "e_migrant_coalition"
+		holder = brigandines_partic_1
+		government = continental_clan_government
+	}
+	1255.1.1 = {
+		holder = sarminians_salacad_1 # GH_TODO TOGNOTE: Needs new holder post migration
+	}
+}
+c_unterfahrenbach = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	66.11.14 = {
+		holder = wasteland
+	}
+	1253.1.1 = {
+		liege = "e_migrant_coalition"
+		holder = sarminians_salacad_2
+		government = tribal_government
+	}
+}
+c_dragoncourt = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	66.11.14 = {
+		holder = wasteland
+	}
+	172.9.26 = {
+		holder = dragon_beast_7	# Tyrandax 'the Dragon-King'
+	}
+	184.5.7 = {
+		holder = etrandanexi_lifepath_3	# Clothar I
+	}
+	215.2.20 = {
+		holder = etrandanexi_lifepath_5	# Rudohar
+	}
+	259.9.18 = {
+		holder = etrandanexi_lifepath_7	# Clothar II
+	}
+	306.9.17 = {
+		holder = etrandanexi_lifepath_10	# Clothar III 'Witchblood'
+	}
+	332.6.7 = {
+		holder = etrandanexi_lifepath_9	# Valoric I 'the Good'
+	}
+	354.6.7 = {
+		holder = etrandanexi_lifepath_11	# Leuhard 'the Worthy'
+	}
+	381.9.4 = {
+		holder = etrandanexi_lifepath_13	# Aloric 'the Haughty' (final independent king)
+	}
+	418.6.25 = {
+		holder = etrandanexi_lifepath_16	# Ansfrei (first baron)
+	}
+	450.11.6 = {
+		holder = etrandanexi_lifepath_18	# Gudoulf
+	}
+	477.7.18 = {
+		holder = etrandanexi_lifepath_20	# Dageric
+	}
+	521.8.21 = {
+		holder = etrandanexi_lifepath_22	# Marcomer
+	}
+	587.5.21 = {
+		holder = wasteland
+	}
+	1253.1.1 = {
+		liege = "e_migrant_coalition"
+		holder = sarminians_salacad_1
+		government = tribal_government
+	}
+}
+c_dryadstones = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	66.11.14 = {
+		holder = wasteland
+	}
+	1253.1.1 = {
+		liege = "d_faegift_vale"
+		holder = karzarads_kakarataki_2
+		government = continental_clan_government
+	}
+}
+c_silverspruce = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	66.11.14 = {
+		holder = wasteland
+	}
+	1253.1.1 = {
+		liege = "d_faegift_vale"
+		holder = sarminians_salacad_1
+		government = tribal_government
+	}
+}
+c_foxgrove = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	66.11.14 = {
+		holder = wasteland
+	}
+
+	# Lonely Note: Giving a null holder to a county triggers an error, make a placeholder
+	# character and remove when possible.
+	#1229.11.3 = {
+	#	holder = 0
+	#}
+
+	1230.1.1 = {
+		change_development_level = 7
+	}
+
+	1253.1.1 = {
+		liege = "e_migrant_coalition"
+		holder = curgerski_sjalvolki_2
+		government = continental_clan_government
+	}
+}
+c_medanor = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	66.11.14 = {
+		holder = wasteland
+	}
+	1253.1.1 = {
+		liege = "k_curgerski"
+		holder = karzarads_kakarataki_3
+		government = continental_clan_government
+	}
+}
+c_giants_ford = {
+	1253.1.1 = {
+		liege = "e_migrant_coalition"
+		holder = kardwens_kardawai_1
+		government = tribal_government
+	}
+}
+c_wethumps = {
+	1253.1.1 = {
+		liege = "e_migrant_coalition"
+		holder = kardwens_kardawai_1
+		government = tribal_government
+	}
+}
+c_kathanouxene = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	66.11.14 = {
+		holder = wasteland
+	}
+	649.7.1 = {
+		holder = dailennir_kathanouxiac_18	# Carttuen 'Silver-Hair'
+	}
+	1253.1.1 = {
+		liege = "e_migrant_coalition"
+		holder = curgerski_sjalvolki_2
+	}
+}
+c_fairycourts = {
+	1232.6.17 = {
+		holder = bricotaves_mothers_and_fathers_1
+		government = continental_clan_government
+	}
+	1249.12.18 = {
+		holder = bricotaves_mothers_and_fathers_3
+	}
+	1250.1.1 = {
+		liege = e_migrant_coalition
+	}
+}
+c_shrouded_vale = {
+	1232.6.17 = {
+		holder = bricotaves_mothers_and_fathers_1
+		government = continental_clan_government
+	}
+	1249.12.18 = {
+		holder = bricotaves_mothers_and_fathers_3
+	}
+	1250.1.1 = {
+		liege = e_migrant_coalition
+	}
+}

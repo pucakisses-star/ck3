@@ -1,0 +1,49 @@
+﻿asarey_harfi_1 = {
+	name = "Badis"
+	religion = "harfi"
+	culture = "asarey"
+
+	1217.1.19 = {
+		birth = yes
+	}
+}
+
+asarey_harfi_2 = {
+	name = "Majen"
+	religion = "harfi"
+	culture = "asarey"
+
+	1222.6.19 = {
+		birth = yes
+	}
+}
+
+asarey_harfi_3 = {
+	name = "Atisi"
+	religion = "harfi"
+	culture = "asarey"
+
+	1210.11.16 = {
+		birth = yes
+	}
+}
+
+asarey_harfi_4 = {
+	name = "Atbir"
+	religion = "harfi"
+	culture = "asarey"
+
+	1225.10.8 = {
+		birth = yes
+	}
+}
+
+asarey_harfi_5 = {
+	name = "Amassine"
+	religion = "harfi"
+	culture = "asarey"
+
+	1237.6.12 = {
+		birth = yes
+	}
+}

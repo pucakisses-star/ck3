@@ -1,0 +1,1135 @@
+﻿balauri_zaldrigas_1 = {
+	name = "Rigozus"
+	culture = "balauri"
+	religion = "zaldrigas"
+	dynasty = dyn_balauri_1
+
+	1204.11.3 = {
+		birth = yes
+		trait = strong
+	}
+
+	1222.1.1 = {
+		trait = education_martial_3
+		trait = zealous
+		trait = stubborn
+		trait = brave
+	}
+
+	1230.5.18 = {
+		add_spouse = balauri_zaldrigas_2
+
+	}	
+}
+
+balauri_zaldrigas_2 = {
+	name = "Vandano"
+	culture = "balauri"
+	religion = "zaldrigas"
+	female = yes
+
+	1210.1.3 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1228.1.3 = {
+		trait = education_intrigue_2
+		trait = shy
+		trait = patient
+		trait = paranoid
+	}
+
+	1230.5.18 = {
+		add_spouse = balauri_zaldrigas_1
+
+	}	
+}
+
+balauri_zaldrigas_3 = {
+	name = "Nebato"
+	culture = "balauri"
+	religion = "zaldrigas"
+	dynasty = dyn_balauri_1
+	female = yes
+	father = balauri_zaldrigas_1
+	mother = balauri_zaldrigas_2	
+
+	1231.11.3 = {
+		birth = yes
+	}
+
+}
+
+balauri_zaldrigas_4 = {
+	name = "Daitor"
+	culture = "balauri"
+	religion = "zaldrigas"
+	dynasty = dyn_balauri_1
+	father = balauri_zaldrigas_1
+	mother = balauri_zaldrigas_2	
+
+	1233.11.3 = {
+		birth = yes
+	}
+
+}
+
+balauri_zaldrigas_5 = {
+	name = "Rubostes"
+	culture = "balauri"
+	religion = "zaldrigas"
+	dynasty = dyn_balauri_1
+	father = balauri_zaldrigas_1
+	mother = balauri_zaldrigas_2	
+
+	1237.11.3 = {
+		birth = yes
+	}
+
+}
+
+#6 through 37 generic autogen guys
+
+balauri_zaldrigas_6 = {
+    name = "Dasmenos" 
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    sexuality = heterosexual
+
+    trait = paranoid
+    trait = forgiving
+    trait = brave
+
+    diplomacy = 6
+    martial = 8
+    stewardship = 8
+    intrigue = 5
+    learning = 9
+    prowess = 6
+
+    trait = education_learning_2
+
+    1240.7.20 = {
+        birth = yes
+    }
+
+    1273.5.25 = {
+        add_spouse = balauri_zaldrigas_7
+    }
+
+    1312.3.18 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+balauri_zaldrigas_7 = {
+    name = "Glabikida" 
+    female = yes
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    sexuality = heterosexual
+
+    trait = brave
+    trait = generous
+    trait = zealous
+
+    diplomacy = 3
+    martial = 4
+    stewardship = 5
+    intrigue = 8
+    learning = 7
+    prowess = 6
+
+    trait = education_intrigue_3
+
+    1256.4.6 = {
+        birth = yes
+    }
+
+    1283.12.19 = {
+        death = { death_reason = death_mysterious  }
+    }
+}
+
+balauri_zaldrigas_8 = {
+    name = "Nebato" 
+    female = yes
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    father = balauri_zaldrigas_6
+    mother = balauri_zaldrigas_7
+
+    sexuality = heterosexual
+
+    trait = sadistic
+    trait = gregarious
+    trait = just
+
+    diplomacy = 5
+    martial = 8
+    stewardship = 2
+    intrigue = 4
+    learning = 5
+    prowess = 4
+
+    trait = education_martial_2
+
+    1278.11.23 = {
+        birth = yes
+    }
+
+    1324.12.28 = {
+        death = { death_reason = death_smallpox }
+    }
+}
+
+balauri_zaldrigas_9 = {
+    name = "Passia" 
+    female = yes
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    father = balauri_zaldrigas_6
+    mother = balauri_zaldrigas_7
+
+    sexuality = asexual
+
+    trait = content
+    trait = diligent
+    trait = forgiving
+
+    diplomacy = 6
+    martial = 7
+    stewardship = 7
+    intrigue = 8
+    learning = 8
+    prowess = 6
+
+    trait = education_intrigue_3
+
+    1279.12.27 = {
+        birth = yes
+    }
+
+    1331.1.8 = {
+        death = { death_reason = death_pneumonic }
+    }
+}
+
+balauri_zaldrigas_10 = {
+    name = "Vendes" 
+
+    #dynasty = 
+    religion = "zaldrigas"
+    culture = balauri
+
+    sexuality = heterosexual
+
+    trait = callous
+    trait = zealous
+    trait = trusting
+
+    diplomacy = 3
+    martial = 6
+    stewardship = 7
+    intrigue = 3
+    learning = 7
+    prowess = 6
+
+    trait = education_stewardship_3
+
+    1240.11.10 = {
+        birth = yes
+    }
+
+    1262.4.9 = {
+        add_spouse = balauri_zaldrigas_11
+    }
+
+    1280.8.24 = {
+        death = { death_reason = death_script_cruelty   }
+    }
+}
+
+balauri_zaldrigas_11 = {
+    name = "Poia" 
+    female = yes
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    sexuality = heterosexual
+
+    trait = calm
+    trait = ambitious
+    trait = vengeful
+
+    diplomacy = 6
+    martial = 4
+    stewardship = 5
+    intrigue = 2
+    learning = 6
+    prowess = 4
+
+    trait = education_diplomacy_3
+
+    1245.9.28 = {
+        birth = yes
+    }
+
+    1314.4.6 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+balauri_zaldrigas_12 = {
+    name = "Tritano" 
+    female = yes
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    father = balauri_zaldrigas_10
+    mother = balauri_zaldrigas_11
+
+    sexuality = heterosexual
+
+    trait = humble
+    trait = compassionate
+    trait = gregarious
+
+    diplomacy = 9
+    martial = 5
+    stewardship = 4
+    intrigue = 10
+    learning = 6
+    prowess = 8
+
+    trait = education_intrigue_2
+
+    1269.5.16 = {
+        birth = yes
+    }
+
+    1288.3.9 = {
+        death = { death_reason = death_great_pox }
+    }
+}
+
+balauri_zaldrigas_13 = {
+    name = "Passia" 
+    female = yes
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    father = balauri_zaldrigas_10
+    mother = balauri_zaldrigas_11
+
+    sexuality = heterosexual
+
+    trait = gregarious
+    trait = patient
+    trait = just
+
+    diplomacy = 5
+    martial = 1
+    stewardship = 5
+    intrigue = 3
+    learning = 5
+    prowess = 5
+
+    trait = education_diplomacy_2
+
+    1274.1.28 = {
+        birth = yes
+    }
+
+    1312.12.6 = {
+        death = { death_reason = death_smallpox }
+    }
+}
+
+balauri_zaldrigas_14 = {
+    name = "Opis" 
+    religion = "zaldrigas"
+    culture = balauri
+
+    sexuality = heterosexual
+
+    trait = patient
+    trait = greedy
+    trait = gregarious
+
+    diplomacy = 8
+    martial = 10
+    stewardship = 6
+    intrigue = 8
+    learning = 9
+    prowess = 3
+
+    trait = education_martial_4
+
+    1201.8.12 = {
+        birth = yes
+    }
+
+    1239.9.19 = {
+        add_spouse = balauri_zaldrigas_15
+    }
+
+    1288.7.22 = {
+        death = { death_reason = death_pneumonic }
+    }
+}
+
+balauri_zaldrigas_15 = {
+    name = "Stennato" 
+    female = yes
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    sexuality = heterosexual
+
+    trait = impatient
+    trait = compassionate
+    trait = greedy
+
+    diplomacy = 8
+    martial = 4
+    stewardship = 9
+    intrigue = 6
+    learning = 6
+    prowess = 5
+
+    trait = education_stewardship_2
+
+    1222.8.6 = {
+        birth = yes
+    }
+
+    1282.5.21 = {
+        death = { death_reason = death_ill }
+    }
+}
+
+balauri_zaldrigas_16 = {
+    name = "Genthena" 
+    female = yes
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    father = balauri_zaldrigas_14
+    mother = balauri_zaldrigas_15
+
+    sexuality = heterosexual
+
+    trait = arrogant
+    trait = chaste
+    trait = stubborn
+
+    diplomacy = 7
+    martial = 6
+    stewardship = 6
+    intrigue = 7
+    learning = 9
+    prowess = 8
+
+    trait = education_learning_2
+
+    1244.5.6 = {
+        birth = yes
+    }
+
+    1328.11.6 = {
+        death = { death_reason = death_typhus }
+    }
+}
+
+balauri_zaldrigas_17 = {
+    name = "Temaios" 
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    father = balauri_zaldrigas_14
+    mother = balauri_zaldrigas_15
+
+    sexuality = homosexual
+
+    trait = shy
+    trait = sadistic
+    trait = forgiving
+
+    diplomacy = 7
+    martial = 6
+    stewardship = 7
+    intrigue = 8
+    learning = 6
+    prowess = 8
+
+    trait = education_intrigue_3
+
+    1245.7.14 = {
+        birth = yes
+    }
+
+    1265.3.12 = {
+        add_spouse = balauri_zaldrigas_18
+    }
+
+    1299.1.21 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+balauri_zaldrigas_18 = {
+    name = "Koursolabia" 
+    female = yes
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    sexuality = heterosexual
+
+    trait = cynical
+    trait = lustful
+    trait = shy
+
+    diplomacy = 8
+    martial = 8
+    stewardship = 7
+    intrigue = 5
+    learning = 6
+    prowess = 7
+
+    trait = education_diplomacy_2
+
+    1248.7.22 = {
+        birth = yes
+    }
+
+    1309.4.23 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+balauri_zaldrigas_19 = {
+    name = "Byousas" 
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    father = balauri_zaldrigas_17
+    mother = balauri_zaldrigas_18
+
+    sexuality = heterosexual
+
+    trait = shy
+    trait = callous
+    trait = wrathful
+
+    diplomacy = 7
+    martial = 5
+    stewardship = 6
+    intrigue = 9
+    learning = 5
+    prowess = 3
+
+    trait = education_intrigue_1
+
+    1273.5.7 = {
+        birth = yes
+    }
+
+    1295.1.1 = {
+        add_spouse = balauri_zaldrigas_20
+    }
+
+    1305.6.25 = {
+        death = { death_reason = death_consumption }
+    }
+}
+
+balauri_zaldrigas_20 = {
+    name = "Vandano" 
+    female = yes
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    sexuality = heterosexual
+
+    trait = paranoid
+    trait = ambitious
+    trait = chaste
+
+    diplomacy = 5
+    martial = 5
+    stewardship = 6
+    intrigue = 3
+    learning = 5
+    prowess = 6
+
+    trait = education_stewardship_2
+
+    1278.4.5 = {
+        birth = yes
+    }
+
+    1314.8.10 = {
+        death = { death_reason = death_stress }
+    }
+}
+
+balauri_zaldrigas_21 = {
+    name = "Temaios" 
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    father = balauri_zaldrigas_17
+    mother = balauri_zaldrigas_18
+
+    sexuality = heterosexual
+
+    trait = calm
+    trait = eccentric
+    trait = trusting
+
+    diplomacy = 6
+    martial = 7
+    stewardship = 6
+    intrigue = 6
+    learning = 7
+    prowess = 4
+
+    trait = education_martial_3
+
+    1277.12.14 = {
+        birth = yes
+    }
+
+    1309.3.23 = {
+        add_spouse = balauri_zaldrigas_22
+    }
+
+    1319.6.2 = {
+        death = { death_reason = death_leper }
+    }
+}
+
+balauri_zaldrigas_22 = {
+    name = "Genthena" 
+    female = yes
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    sexuality = heterosexual
+
+    trait = gregarious
+    trait = sadistic
+    trait = greedy
+
+    diplomacy = 6
+    martial = 6
+    stewardship = 9
+    intrigue = 4
+    learning = 4
+    prowess = 2
+
+    trait = education_stewardship_3
+
+    1292.1.26 = {
+        birth = yes
+    }
+
+    1344.4.20 = {
+        death = { death_reason = death_ill }
+    }
+}
+
+balauri_zaldrigas_24 = {
+    name = "Aplo" 
+    female = yes
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    sexuality = heterosexual
+
+    trait = humble
+    trait = brave
+    trait = just
+
+    diplomacy = 10
+    martial = 6
+    stewardship = 4
+    intrigue = 7
+    learning = 8
+    prowess = 7
+
+    trait = education_diplomacy_1
+
+    1322.2.25 = {
+        birth = yes
+    }
+
+    1383.1.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+balauri_zaldrigas_25 = {
+    name = "Surio" 
+    female = yes
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    father = balauri_zaldrigas_14
+    mother = balauri_zaldrigas_15
+
+    sexuality = heterosexual
+
+    trait = patient
+    trait = fickle
+    trait = gregarious
+
+    diplomacy = 4
+    martial = 7
+    stewardship = 7
+    intrigue = 4
+    learning = 10
+    prowess = 8
+
+    trait = education_learning_2
+
+    1246.11.21 = {
+        birth = yes
+    }
+
+    1294.10.7 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+balauri_zaldrigas_26 = {
+    name = "Baolios" 
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    father = balauri_zaldrigas_14
+    mother = balauri_zaldrigas_15
+
+    sexuality = heterosexual
+
+    trait = paranoid
+    trait = arbitrary
+    trait = deceitful
+
+    diplomacy = 7
+    martial = 8
+    stewardship = 8
+    intrigue = 7
+    learning = 5
+    prowess = 5
+
+    trait = education_martial_4
+
+    1247.1.1 = {
+        birth = yes
+    }
+
+    1277.6.8 = {
+        add_spouse = balauri_zaldrigas_27
+    }
+
+    1287.6.27 = {
+        death = { death_reason = death_smallpox }
+    }
+}
+
+balauri_zaldrigas_27 = {
+    name = "Pantia" 
+    female = yes
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    sexuality = heterosexual
+
+    trait = trusting
+    trait = generous
+    trait = arrogant
+
+    diplomacy = 3
+    martial = 11
+    stewardship = 8
+    intrigue = 5
+    learning = 2
+    prowess = 3
+
+    trait = education_martial_4
+
+    1260.3.10 = {
+        birth = yes
+    }
+
+    1310.2.9 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+balauri_zaldrigas_28 = {
+    name = "Surio" 
+    female = yes
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    father = balauri_zaldrigas_26
+    mother = balauri_zaldrigas_27
+
+    sexuality = heterosexual
+
+    trait = patient
+    trait = diligent
+    trait = gregarious
+
+    diplomacy = 7
+    martial = 5
+    stewardship = 5
+    intrigue = 7
+    learning = 7
+    prowess = 5
+
+    trait = education_diplomacy_2
+
+    1280.11.11 = {
+        birth = yes
+    }
+
+    1337.5.17 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+balauri_zaldrigas_29 = {
+    name = "Seio" 
+    female = yes
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    father = balauri_zaldrigas_26
+    mother = balauri_zaldrigas_27
+
+    sexuality = heterosexual
+
+    trait = arrogant
+    trait = compassionate
+    trait = ambitious
+
+    diplomacy = 7
+    martial = 7
+    stewardship = 3
+    intrigue = 8
+    learning = 5
+    prowess = 7
+
+    trait = education_intrigue_1
+
+    1283.8.5 = {
+        birth = yes
+    }
+
+    1372.4.4 = {
+        death = { death_reason = death_pneumonic }
+    }
+}
+
+balauri_zaldrigas_30 = {
+    name = "Genthena" 
+    female = yes
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    father = balauri_zaldrigas_26
+    mother = balauri_zaldrigas_27
+
+    sexuality = bisexual
+
+    trait = greedy
+    trait = arrogant
+    trait = diligent
+
+    diplomacy = 4
+    martial = 5
+    stewardship = 7
+    intrigue = 2
+    learning = 6
+    prowess = 8
+
+    trait = education_stewardship_3
+
+    1284.2.7 = {
+        birth = yes
+    }
+
+    1340.8.27 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+balauri_zaldrigas_31 = {
+    name = "Aploudos" 
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    father = balauri_zaldrigas_14
+    mother = balauri_zaldrigas_15
+
+    sexuality = heterosexual
+
+    trait = craven
+    trait = wrathful
+    trait = cynical
+
+    diplomacy = 6
+    martial = 4
+    stewardship = 5
+    intrigue = 6
+    learning = 4
+    prowess = 7
+
+    trait = education_diplomacy_3
+
+    1250.3.2 = {
+        birth = yes
+    }
+
+    1285.2.25 = {
+        add_spouse = balauri_zaldrigas_32
+    }
+
+    1320.11.25 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+balauri_zaldrigas_32 = {
+    name = "Kourbania" 
+    female = yes
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    sexuality = heterosexual
+
+    trait = fickle
+    trait = gluttonous
+    trait = lazy
+
+    diplomacy = 9
+    martial = 7
+    stewardship = 7
+    intrigue = 6
+    learning = 9
+    prowess = 4
+
+    trait = education_diplomacy_2
+
+    1268.11.4 = {
+        birth = yes
+    }
+
+    1323.12.7 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+balauri_zaldrigas_33 = {
+    name = "Tourranios" 
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    father = balauri_zaldrigas_31
+    mother = balauri_zaldrigas_32
+
+    sexuality = heterosexual
+
+    trait = lustful
+    trait = forgiving
+    trait = paranoid
+
+    diplomacy = 2
+    martial = 5
+    stewardship = 9
+    intrigue = 6
+    learning = 9
+    prowess = 5
+
+    trait = education_stewardship_3
+
+    1290.5.15 = {
+        birth = yes
+    }
+
+    1314.8.8 = {
+        add_spouse = balauri_zaldrigas_34
+    }
+
+    1334.6.25 = {
+        death = { death_reason = death_battle }
+    }
+}
+
+balauri_zaldrigas_34 = {
+    name = "Nonntio" 
+    female = yes
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    sexuality = heterosexual
+
+    trait = greedy
+    trait = arrogant
+    trait = impatient
+
+    diplomacy = 6
+    martial = 10
+    stewardship = 5
+    intrigue = 9
+    learning = 5
+    prowess = 7
+
+    trait = education_martial_1
+
+    1297.2.24 = {
+        birth = yes
+    }
+
+    1370.6.24 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+balauri_zaldrigas_35 = {
+    name = "Likko" 
+    female = yes
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    father = balauri_zaldrigas_31
+    mother = balauri_zaldrigas_32
+
+    sexuality = heterosexual
+
+    trait = ambitious
+    trait = craven
+    trait = lustful
+
+    diplomacy = 5
+    martial = 10
+    stewardship = 6
+    intrigue = 5
+    learning = 7
+    prowess = 7
+
+    trait = education_martial_3
+
+    1291.10.17 = {
+        birth = yes
+    }
+
+    1368.11.22 = {
+        death = { death_reason = death_vanished  }
+    }
+}
+
+balauri_zaldrigas_36 = {
+    name = "Tritto" 
+    female = yes
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    father = balauri_zaldrigas_31
+    mother = balauri_zaldrigas_32
+
+    sexuality = heterosexual
+
+    trait = craven
+    trait = patient
+    trait = compassionate
+
+    diplomacy = 8
+    martial = 8
+    stewardship = 10
+    intrigue = 6
+    learning = 9
+    prowess = 5
+
+    trait = education_stewardship_2
+
+    1295.1.2 = {
+        birth = yes
+    }
+
+    1362.2.27 = {
+        death = { death_reason = death_bubonic_plague }
+    }
+}
+
+balauri_zaldrigas_37 = {
+    name = "Deidmou" 
+    female = yes
+
+    religion = "zaldrigas"
+    culture = balauri
+
+    father = balauri_zaldrigas_31
+    mother = balauri_zaldrigas_32
+
+    sexuality = heterosexual
+
+    trait = deceitful
+    trait = calm
+    trait = greedy
+
+    diplomacy = 9
+    martial = 6
+    stewardship = 8
+    intrigue = 8
+    learning = 6
+    prowess = 9
+
+    trait = education_diplomacy_2
+
+    1296.3.20 = {
+        birth = yes
+    }
+
+    1369.12.17 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+

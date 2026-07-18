@@ -1,0 +1,1204 @@
+﻿carsavisians_lifepath_1 = { # Marcher Anti-Magi
+	name = "Mathile"
+	female = yes
+	religion = "lifepath"
+	culture = "carsavisians"
+	
+	trait = way_of_nullification_follower
+	trait = physique_good_2
+	trait = brave
+	trait = lustful
+	trait = callous
+	trait = order_member
+
+	1204.4.4 = {
+		birth = yes
+	}
+
+	1220.4.4 = {
+		trait = gh_historical_blademaster_3
+	}
+}
+
+carsavisians_lifepath_2 = { #Rhaon II's Great-Grandfather and namesake
+	name = "Rhaon"
+	dynasty = dyn_marcher_23
+	religion = lifepath
+	culture = carsavisians
+	disallow_random_traits = yes
+
+	martial = 5
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 5
+	learning = 5
+	prowess = 6
+
+	1137.9.5 = {
+		birth = yes
+	}
+
+	1149.1.1 = {
+		trait = greedy
+		trait = ambitious
+		trait = gregarious
+	}
+
+	1153.9.5 = {
+		trait = way_of_coins_follower
+		trait = education_stewardship_4
+		trait = avaricious
+	}
+
+	1167.1.1 = {
+		add_spouse = northernimperial_aversarinas_aagiokrata_23
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+carsavisians_lifepath_3 = { #Rhaon II's Grandfather, half-aversarian from his mother
+	name = "Raven"
+	dynasty = dyn_marcher_23
+	religion = lifepath
+	culture = carsavisians
+	disallow_random_traits = yes
+
+	father = carsavisians_lifepath_2
+	mother = northernimperial_aversarinas_aagiokrata_23
+
+	martial = 6
+	diplomacy = 3
+	intrigue = 7
+	stewardship = 3
+	learning = 8
+	prowess = 7
+
+	1169.7.7 = {
+		birth = yes
+		trait = magic_good_3
+		trait = beauty_good_2
+	}
+
+	1181.1.1 = {
+		trait = shy
+		trait = arrogant
+		trait = patient
+	}
+
+	1185.7.7 = {
+		trait = way_of_crows_follower
+		trait = education_learning_3
+	}
+
+	1195.1.1 = {
+		add_spouse = carsavisians_lifepath_8
+	}
+
+	1233.12.25 = {
+		death = {
+			death_reason = death_lich_raid
+			killer = lich_culture_rejection_6 # Solstice Scourge
+		}
+	}
+}
+
+carsavisians_lifepath_4 = { #Rhaon II's father
+	name = "Valdare"
+	dynasty = dyn_marcher_23
+	religion = lifepath
+	culture = carsavisians
+	disallow_random_traits = yes
+
+	father = carsavisians_lifepath_3
+	mother = carsavisians_lifepath_8
+
+	martial = 5
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 8
+	learning = 7
+	prowess = 2
+
+	1196.8.22 = {
+		birth = yes
+		trait = magic_good_2
+		trait = beauty_good_1
+	}
+
+	1208.1.1 = {
+		trait = humble
+		trait = temperate
+		trait = compassionate
+	}
+
+	1212.8.22 = {
+		trait = way_of_harvests_follower
+		trait = education_learning_2
+	}
+
+	1230.1.1 = {
+		add_spouse = voyagen_lifepath_19
+	}
+
+	1245.12.25 = {
+		death = {
+			death_reason = death_lich_raid
+			killer = lich_culture_rejection_6 # Solstice Scourge
+		}
+	}
+}
+
+carsavisians_lifepath_5 = { #Rhaon II's uncle
+	name = "Rosier"
+	dynasty = dyn_marcher_23
+	religion = lifepath
+	culture = carsavisians
+	disallow_random_traits = yes
+
+	martial = 8
+	diplomacy = 3
+	intrigue = 3
+	stewardship = 3
+	learning = 8
+	prowess = 7
+
+	father = carsavisians_lifepath_3
+	mother = carsavisians_lifepath_8
+
+	1204.5.27 = {
+		birth = yes
+		trait = magic_good_1
+		trait = physique_good_1
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 3 }
+		}
+	}
+
+	1216.1.1 = {
+		trait = vengeful
+		trait = stubborn
+		trait = callous
+	}
+
+	1220.5.27 = {
+		trait = way_of_nullification_follower
+		trait = education_martial_2
+		trait = aggressive_attacker
+	}
+
+	1248.11.28 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+
+	1251.10.13 = {
+		trait = scarred
+		trait = one_legged
+		effect = {
+			set_relation_rival = {
+				target = character:voluntic_partic_1
+				reason = betrayed_ash_war
+			}
+			set_relation_rival = {
+				target = character:voluntic_partic_10
+				reason = nemesis_killed_relative
+				involved_character = character:carsavisians_lifepath_6
+			}
+
+			add_pressed_claim = title:d_faisitelbouren
+		}
+	}
+}
+
+carsavisians_lifepath_6 = { #Rhaon II, Duke of Faisitelbouren that was slain during the Ash War
+	name = "Rhaon"
+	dynasty = dyn_marcher_23
+	religion = lifepath
+	culture = carsavisians
+	sexuality = homosexual
+	disallow_random_traits = yes
+
+	father = carsavisians_lifepath_4
+	mother = voyagen_lifepath_19
+
+	martial = 7
+	diplomacy = 6
+	intrigue = 3
+	stewardship = 7
+	learning = 5
+	prowess = 7
+
+	1230.4.12 = {
+		birth = yes
+		trait = magic_good_1
+		trait = beauty_good_3
+
+	}
+
+	1242.1.1 = {
+		trait = wrathful
+		trait = ambitious
+		trait = impatient
+	}
+
+	1246.4.12 = {
+		trait = way_of_swords_follower
+		trait = education_martial_1
+		trait = reckless
+	}
+
+	1251.10.13 = {
+		death = {
+			death_reason = death_battle
+			killer = voluntic_partic_10 # Maolag
+		}
+	}
+}
+
+carsavisians_lifepath_7 = { #Alouil, Duke of Banneret
+	name = "Alouil"
+	dynasty = dyn_marcher_24
+	religion = lifepath
+	culture = carsavisians
+	disallow_random_traits = yes
+
+	martial = 7
+	diplomacy = 6
+	intrigue = 2
+	stewardship = 5
+	learning = 7
+	prowess = 5
+
+	1147.6.16 = {
+		birth = yes
+		trait = physique_good_2
+	}
+
+	1159.1.1 = {
+		trait = stubborn
+		trait = brave
+		trait = calm
+	}
+
+	1163.6.16 = {
+		trait = way_of_nullification_follower
+		trait = education_martial_1
+		trait = unyielding_defender
+	}
+
+	1212.12.12 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+carsavisians_lifepath_8 = { #Mathilde, daughter of Duke Alouil
+	name = "Mathilde"
+	dynasty = dyn_marcher_24
+	religion = lifepath
+	culture = carsavisians
+	female = yes
+	disallow_random_traits = yes
+
+	father = carsavisians_lifepath_7
+
+	martial = 5
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 8
+	learning = 3
+	prowess = 8
+
+	1175.11.2 = {
+		birth = yes
+		trait = physique_good_2
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 2 }
+		}
+	}
+
+	1187.1.1 = {
+		trait = stubborn
+		trait = patient
+		trait = arrogant
+	}
+
+	1191.11.2 = {
+		trait = way_of_nullification_follower
+		trait = education_diplomacy_2
+	}
+}
+
+carsavisians_lifepath_9 = { #Andre, Ailing Duke of Banereset that made Ogier his heir
+	name = "Andre"
+	dynasty = dyn_marcher_24
+	religion = lifepath
+	culture = carsavisians
+	disallow_random_traits = yes
+
+	father = carsavisians_lifepath_7
+
+	martial = 6
+	diplomacy = 8
+	intrigue = 3
+	stewardship = 6
+	learning = 7
+	prowess = 5
+
+	1182.5.10 = {
+		birth = yes
+		trait = physique_good_2
+	}
+
+	1194.1.1 = {
+		trait = stubborn
+		trait = just
+		trait = compassionate
+	}
+
+	1198.5.10 = {
+		trait = way_of_nullification_follower
+		trait = education_martial_2
+		trait = unyielding_defender
+	}
+
+	1240.1.1 = {
+		trait = infirm
+	}
+
+	1249.12.4 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+carsavisians_lifepath_10 = { #Rene den va Mureve, slain son of Duke Andre of Banereset
+	name = "Rene"
+	dynasty = dyn_marcher_24
+	religion = lifepath
+	culture = carsavisians
+	disallow_random_traits = yes
+
+	father = carsavisians_lifepath_9
+
+	martial = 6
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 6
+	learning = 5
+	prowess = 6
+
+	1221.6.11 = {
+		birth = yes
+		trait = physique_good_2
+	}
+
+	1233.1.1 = {
+		trait = stubborn
+		trait = brave
+		trait = ambitious
+	}
+
+	1237.6.11 = {
+		trait = way_of_nullification_follower
+		trait = education_martial_1
+		trait = reckless
+	}
+
+	1245.12.25 = {
+		death = {
+			death_reason = death_lich_battle
+			killer = lich_culture_rejection_6 # Solstice Scourge
+		}
+	}
+}
+
+carsavisians_lifepath_11 = { # Sir Landett of the Lakes, wielder of Sun-Piercer, alleged founder of House Sissaux
+	name = "Landett"
+	religion = lifepath
+	culture = carsavisians
+	disallow_random_traits = yes
+
+	martial = 5
+	diplomacy = 8
+	intrigue = 4
+	stewardship = 5
+	learning = 4
+	prowess = 7
+
+	318.5.11 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+
+	330.1.1 = {
+		trait = chaste
+		trait = callous
+		trait = brave
+	}
+
+	334.5.11 = {
+		trait = way_of_swords_follower
+		trait = education_diplomacy_3
+		trait = gh_historical_blademaster_3
+	}
+
+	401.4.15 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+carsavisians_lifepath_12 = { # Random Marcher so that the mercenary republic is free
+	name = "Guiles"
+	religion = "lifepath"
+	culture = "carsavisians"
+
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+carsavisians_lifepath_13 = { # Random Marcher so that the peasant republic is free
+	name = "Remy"
+	religion = "lifepath"
+	culture = "carsavisians"
+
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+carsavisians_lifepath_14 = {
+	name = "Andre"
+	religion = "lifepath"
+	culture = "carsavisians"
+
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+carsavisians_lifepath_15 = { # Badass Marcher duke Ogier den va Rodarae
+	name = "Ogier"
+	dna = carsavisians_lifepath_15
+	religion = "lifepath"
+	culture = "carsavisians"
+
+	martial = 9
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 7
+	trait = brave
+	trait = honest
+	trait = cynical
+	trait = education_martial_3
+	trait = physique_good_3
+	trait = way_of_nullification_follower
+	trait = scarred
+
+	father = carsavisians_lifepath_22
+	mother = carsavisians_lifepath_23
+	dynasty = dyn_marcher_8
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = m_beard_fp3_iranian_02
+			custom_hair = male_hair_western_04
+		}
+	}
+
+	1221.6.11 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 1 }
+		}
+	}
+
+	1240.5.14 = {
+		give_nickname = nick_the_ogre
+	}
+
+	1245.12.25 = {
+		create_character_memory = {
+			type = slew_lich
+			participants = {
+				dead_relation = character:lich_culture_rejection_6 # Solstice Scourge
+			}
+		}
+	}
+
+	1248.11.28 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+}
+
+carsavisians_lifepath_16 = {
+	name = "Valdare"
+	religion = "lifepath"
+	culture = "carsavisians"
+
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+carsavisians_lifepath_17 = {
+	name = "Baudrain"
+	religion = "lifepath"
+	culture = "carsavisians"
+
+	1234.1.1 = {
+		birth = yes
+	}
+}
+
+carsavisians_lifepath_18 = {
+	name = "Guilon"
+	religion = "lifepath"
+	culture = "carsavisians"
+
+	1227.1.1 = {
+		birth = yes
+	}
+}
+
+carsavisians_lifepath_19 = {
+	name = "Jaccoud"
+	religion = "lifepath"
+	culture = "carsavisians"
+
+	1225.1.1 = {
+		birth = yes
+	}
+}
+
+carsavisians_lifepath_20 = {
+	name = "Gazonus"
+	religion = "lifepath"
+	culture = "carsavisians"
+
+	1219.1.1 = {
+		birth = yes
+	}
+}
+
+carsavisians_lifepath_21 = {
+	name = "Eleanois"
+	religion = "lifepath"
+	culture = "carsavisians"
+	female = yes
+
+	1218.11.12 = {
+		birth = yes
+	}
+}
+
+carsavisians_lifepath_22 = {
+	name = "Lothar"
+	dynasty = dyn_marcher_8
+	religion = "lifepath"
+	culture = "carsavisians"
+
+	trait = ambitious
+	father = carsavisians_lifepath_24
+	mother = carsavisians_lifepath_25
+
+	1199.2.18 = {
+		birth = yes
+	}
+
+	1219.8.21 = {
+		add_spouse = carsavisians_lifepath_23
+	}
+
+	1233.12.25 = {
+		death = {
+			death_reason = death_lich_raid
+			killer = lich_culture_rejection_6 # Solstice Scourge
+		}
+	}
+}
+
+carsavisians_lifepath_23 = {
+	name = "Ingohildis"
+	religion = "lifepath"
+	culture = "carsavisians"
+	female = yes
+
+	1200.10.1 = {
+		birth = yes
+	}
+
+	1219.8.21 = {
+		add_spouse = carsavisians_lifepath_22
+	}
+
+	1233.12.25 = {
+		death = {
+			death_reason = death_lich_raid
+			killer = lich_culture_rejection_6 # Solstice Scourge
+		}
+	}
+}
+
+carsavisians_lifepath_24 = {
+	name = "Tetbert"
+	religion = "lifepath"
+	culture = "carsavisians"
+
+	1175.2.18 = {
+		birth = yes
+	}
+
+	1192.8.21 = {
+		add_spouse = carsavisians_lifepath_25
+	}
+
+	1231.1.4 = {
+		death = yes
+	}
+}
+
+carsavisians_lifepath_25 = {
+	name = "Audovera"
+	religion = "lifepath"
+	culture = "carsavisians"
+	female = yes
+
+	1174.8.14 = {
+		birth = yes
+	}
+
+	1192.8.21 = {
+		add_spouse = carsavisians_lifepath_24
+	}
+
+	1233.12.25 = {
+		death = {
+			death_reason = death_lich_raid
+			killer = lich_culture_rejection_6 # Solstice Scourge
+		}
+	}
+}
+
+carsavisians_lifepath_26 = {
+	name = "Piette" # Piette
+	dna = piette
+	martial = 1
+	diplomacy = 2
+	intrigue = 5
+	stewardship = 4
+	learning = 3
+	religion = "lifepath"
+	culture = "carsavisians"
+
+	trait = education_martial_1
+	trait = way_of_swords_follower
+	trait = stubborn
+	trait = ambitious
+	trait = impatient
+	dynasty = dyn_marcher_12
+
+	389.4.14 = {
+		birth = yes
+	}
+
+	442.6.16 = {
+		death = {
+			death_reason = death_ritual
+		}
+	}
+}
+
+carsavisians_lifepath_27 = { # Valeri Pontaget was the Chancellor to Theaman before he yeeted everyone in the Brutality. Thanks to his position he got warning beforehand and fled to the northeast where he held Dellec and Cherborne, but he allowed the Brutality to begin without warning his fellow vassals in order to use the chaos to take their lands and beat the others into submission. A cunning dickhead, his son largely took after him.
+	name = "Valeri"
+	dna = valeri
+	religion = "lifepath"
+	culture = "carsavisians"
+	dynasty = dyn_marcher_18
+	trait = deceitful
+	trait = arbitrary
+	trait = ambitious
+	trait = intellect_good_2
+	trait = way_of_crowns_follower
+	trait = education_intrigue_4
+
+	860.1.12 = {
+		birth = yes
+	}
+
+	933.3.24 = {
+		death = {
+			death_reason = death_lich_duel
+		}
+	}
+}
+
+carsavisians_lifepath_28 = { # Avenon was the son of Valeri Pontaget and spent most of his life in the shadow of his	father. Desperate to outdo him, he would blunder from scheme to scheme attempting to destroy the other Kings during the Anarchy of the Five Kings. When Silas Stavro invaded, he put his men behind King Gofrei of Varrdevet, swearing his life upon the Path that he would stay true to the bond, and without any better options Gofrei accepted. Avenon expectedly betrayed him, his men abandoning the field at the moment the Lich showed up and then blocking Gofrei's retreat, leading to Gofrei's death at the hands of Stavro. Expecting the rest of the campaign to be easy with the Liches forces weakened, he was quite surprised when his armies were then absolutely stomped by Stavro. He would later betray the Champion of Chevalie, who would work to his son to imprison and depose Avenon.
+	name = "Avenon"
+	dna = avenon
+	religion = "lifepath"
+	culture = "carsavisians"
+	dynasty = dyn_marcher_18
+	father = carsavisians_lifepath_27
+
+	trait = deceitful
+	trait = arbitrary
+	trait = paranoid
+	trait = intellect_good_1
+	trait = way_of_crows_follower
+	trait = education_intrigue_3
+
+	889.4.21 = {
+		birth = yes
+	}
+
+	945.7.17 = {
+		death = {
+			death_reason = death_dungeon_passive
+		}
+	}
+}
+
+carsavisians_lifepath_29 = { # Raven Pontaget was largely ignored by his father and did not take much after him. Despite being a bit of a scoundrel himself, he nonetheless rejected the throne and traveled across the world as a mercenary for much of his life. He returned to fight in the Red River War against Silas Stavro, and aided the Champion of Chevalie in deposing his father so that Rohr would join the war against the Lich proper. He would give up the throne afterwards, and then abdicate his families lands to his son and retire in Peti Gisredde.
+	name = "Raven"
+	dna = raven
+	religion = "lifepath"
+	culture = "carsavisians"
+	dynasty = dyn_marcher_18
+	father = carsavisians_lifepath_28
+
+	trait = humble
+	trait = deceitful
+	trait = impatient
+	trait = intellect_good_1
+	trait = way_of_crows_follower
+	trait = education_intrigue_4
+
+	911.10.5 = {
+		birth = yes
+	}
+
+	961.11.15 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+carsavisians_lifepath_30 = { # Isodor of Vy would depose Mélanî Illurdian during the Anarchy of the Five Crowns. He would be killed by the Champion of Chevalie after a moral choice between having him lead as king instead of Melani and probably would have been a possible companion during the evil or morally neutral route, but the player chose the boss fight instead either for the Melani romance or for the loot and exp.
+	name = "Isodor"
+	dna = isodor
+	religion = "lifepath"
+	culture = "carsavisians"
+
+	trait = humble
+	trait = deceitful
+	trait = ambitious
+	trait = way_of_crows_follower
+	trait = education_intrigue_3
+
+	891.3.21 = {
+		birth = yes
+	}
+
+	934.12.1 = {
+		death = {
+			death_reason = death_duel
+		}
+	}
+}
+
+carsavisians_lifepath_31 = { # Murchard was Ravens son, and ruled after his	fathers abdication. He would assist Huegons Hadcourte-Vedron in uniting Chevalie, becoming his chief minister.
+	name = "Murchard"
+	dna = murchard
+	religion = "lifepath"
+	culture = "carsavisians"
+	dynasty = dyn_marcher_18
+	father = carsavisians_lifepath_29
+
+	930.1.17 = {
+		birth = yes
+	}
+
+	984.7.28 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+carsavisians_lifepath_32 = { # High King Ardorac den va Metedryx
+	name = "Ardorac"
+	dynasty = dyn_marcher_13
+	religion = "lifepath"
+	culture = carsavisians
+	disallow_random_traits = yes
+
+	father = shewigad_lifepath_1
+
+	martial = 6
+	diplomacy = 4
+	stewardship = 6
+	intrigue = 3
+	learning = 3
+	prowess = 2
+
+	240.1.18 = {
+		birth = yes
+	}
+
+	252.1.1 = {
+		trait = stubborn
+		trait = vengeful
+		trait = greedy
+	}
+
+	256.1.18 = {
+		trait = education_diplomacy_4
+		trait = way_of_swords_follower
+	}
+
+	311.8.3 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+carsavisians_lifepath_33 = { # High Queen Genvuis den va Metedryx
+	name = "Genvuis"
+	dynasty = dyn_marcher_13
+	religion = "lifepath"
+	culture = carsavisians
+	disallow_random_traits = yes
+	female = yes
+
+	father = carsavisians_lifepath_32
+
+	martial = 2
+	diplomacy = 2
+	stewardship = 6
+	intrigue = 8
+	learning = 2
+	prowess = 3
+
+	270.9.23 = {
+		birth = yes
+		trait = beauty_bad_2
+	}
+
+	282.1.1 = {
+		trait = lustful
+		trait = ambitious
+		trait = gluttonous
+		trait = comfort_eater
+	}
+
+	286.9.23 = {
+		trait = education_intrigue_2
+		trait = way_of_crows_follower
+	}
+
+	324.9.23 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+
+carsavisians_lifepath_34 = { # High King Abrouin den va Metedryx, last ruler from Aloysian's line, slain by Yakub Illspeaker
+	name = "Abrouin"
+	dynasty = dyn_marcher_13
+	religion = "lifepath"
+	culture = carsavisians
+	disallow_random_traits = yes
+
+	mother = carsavisians_lifepath_33
+
+	martial = 4
+	diplomacy = 7
+	stewardship = 4
+	intrigue = 6
+	learning = 3
+	prowess = 4
+
+	295.2.14 = {
+		birth = yes
+	}
+
+	307.1.1 = {
+		trait = chaste
+		trait = content
+		trait = brave
+	}
+
+	311.2.14 = {
+		trait = education_martial_3
+		trait = organizer
+		trait = way_of_crowns_follower
+	}
+
+	339.10.30 = {
+		death = {
+			death_reason = death_lich_battle
+			killer = lich_culture_rejection_5 # Yakub Illspeaker
+		}
+	}
+}
+
+carsavisians_lifepath_35 = { # Prince Castolac den va Metedryx, slain and raised as an undead by Yakub Illspeaker
+	name = "Castolac"
+	dynasty = dyn_marcher_13
+	religion = "lifepath"
+	culture = carsavisians
+	disallow_random_traits = yes
+
+	father = carsavisians_lifepath_34
+
+	martial = 7
+	diplomacy = 2
+	stewardship = 3
+	intrigue = 2
+	learning = 8
+	prowess = 8
+
+	320.10.4 = {
+		birth = yes
+	}
+
+	332.1.1 = {
+		trait = wrathful
+		trait = gregarious
+		trait = ambitious
+	}
+
+	336.10.4 = {
+		trait = education_martial_1
+		trait = reckless
+		trait = way_of_swords_follower
+	}
+
+	339.10.30 = {
+		death = {
+			death_reason = death_ritual
+			killer = lich_culture_rejection_5 # Yakub Illspeaker
+		}
+	}
+}
+
+carsavisians_lifepath_36 = { # Wayfather Peyton, slew the Lich Crasmer Crasvir
+	name = "Peyton"
+	dna = peyton
+	religion = "lifepath"
+	culture = carsavisians
+	disallow_random_traits = yes
+
+	martial = 5
+	diplomacy = 3
+	stewardship = 3
+	intrigue = 6
+	learning = 5
+	prowess = 8
+
+	1086.5.29 = {
+		birth = yes
+	}
+
+	1098.1.1 = {
+		trait = brave
+		trait = wrathful
+		trait = diligent
+	}
+
+	1102.5.29 = {
+		trait = education_stewardship_3
+		trait = way_of_harvests_follower
+		#trait = way_of_harvests_father
+		trait = gh_historical_blademaster_2
+	}
+
+	1154.2.18 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+carsavisians_lifepath_37 = { # Duc Theudouil Sollac, wrested control of Cavrine after Metile Valadec's death
+	name = "Theudouil"
+	religion = "lifepath"
+	culture = carsavisians
+	dynasty = dyn_marcher_39
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 5
+	stewardship = 7
+	intrigue = 5
+	learning = 8
+	prowess = 4
+
+	1122.3.12 = {
+		birth = yes
+	}
+
+	1134.1.1 = {
+		trait = paranoid
+		trait = impatient
+		trait = greedy
+	}
+
+	1138.3.12 = {
+		trait = education_intrigue_3
+		trait = way_of_coins_follower
+	}
+
+	1190.7.13 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+carsavisians_lifepath_38 = { # Duc Hildeger Sollac, slain during the Black-Gold War
+	name = "Hildeger"
+	religion = "lifepath"
+	culture = carsavisians
+	dynasty = dyn_marcher_39
+	disallow_random_traits = yes
+
+	father = carsavisians_lifepath_37
+
+	martial = 6
+	diplomacy = 5
+	stewardship = 7
+	intrigue = 5
+	learning = 8
+	prowess = 4
+
+	1162.2.1 = {
+		birth = yes
+	}
+
+	1174.1.1 = {
+		trait = vengeful
+		trait = honest
+		trait = lazy
+	}
+
+	1178.2.1 = {
+		trait = education_stewardship_2
+		trait = way_of_crowns_follower
+	}
+
+	1226.8.14 = { # Black-Gold War, unexpected siege from the Grand Duke of Ziemojycz
+		death = {
+			death_reason = death_siege
+			killer = oejeynica_graveright_2
+		}
+	}
+}
+
+carsavisians_lifepath_39 = { # last of his line, was able to escape the Siege of Mont de Breassau and flee southwards. Died in the Black-Gold League's last stand at Gravgosc
+	name = "Courue"
+	religion = "lifepath"
+	culture = carsavisians
+	dynasty = dyn_marcher_39
+	disallow_random_traits = yes
+
+	father = carsavisians_lifepath_38
+
+	martial = 4
+	diplomacy = 4
+	stewardship = 5
+	intrigue = 6
+	learning = 5
+	prowess = 6
+
+	1200.8.23 = {
+		birth = yes
+	}
+
+	1212.1.1 = {
+		trait = greedy
+		trait = deceitful
+		trait = trusting
+	}
+
+	1216.8.23 = {
+		trait = education_intrigue_3
+		trait = way_of_swords_follower
+	}
+
+	1227.4.30 = { # Black-Gold War, Battle of Gravgosc
+		death = {
+			death_reason = death_battle
+			killer = oejeynica_graveright_4
+		}
+	}
+}
+
+carsavisians_lifepath_40 = { # Saint Hugoric, 8th century Waysaint of Coins and chirurgeon that significantly advanced non-magical techniques in the field
+	name = "Hugoric"
+	religion = "lifepath"
+	culture = carsavisians
+	disallow_random_traits = yes
+
+	martial = 4
+	diplomacy = 9
+	stewardship = 12
+	intrigue = 8
+	learning = 10
+	prowess = 5
+
+	684.12.29 = {
+		birth = yes
+	}
+
+	696.1.1 = {
+		trait = greedy
+		trait = gluttonous
+		trait = callous
+		
+		trait = way_of_coins_follower
+	}
+	
+	700.12.29 = {
+		trait = education_learning_3
+		trait = lifestyle_physician
+	}
+	
+	710.1.1 = {
+		trait = drunkard
+		effect = {
+			add_trait_xp = {
+				trait = lifestyle_physician
+				value = 100
+			}
+		}
+	}
+
+	762.5.23 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}

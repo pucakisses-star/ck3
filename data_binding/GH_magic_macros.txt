@@ -1,0 +1,18 @@
+﻿
+macro = {
+	description = "Get the spell's name"
+	definition = "GetSpellName"
+	replace_with = "Custom('SpellName')"
+}
+
+macro = {
+	description = "Convert a number to a roman numeral"
+	definition = "ConvertToRomanNumeral(Number)"
+	replace_with = "SelectLocalization(EqualTo_CFixedPoint( Number , '(CFixedPoint)1' ), 'I', SelectLocalization(EqualTo_CFixedPoint( Number , '(CFixedPoint)2' ), 'II', SelectLocalization(EqualTo_CFixedPoint( Number , '(CFixedPoint)3' ), 'III', SelectLocalization(EqualTo_CFixedPoint( Number , '(CFixedPoint)4' ), 'IV', SelectLocalization(EqualTo_CFixedPoint( Number , '(CFixedPoint)5' ), 'V', SelectLocalization(EqualTo_CFixedPoint( Number , '(CFixedPoint)6' ), 'VI', SelectLocalization(EqualTo_CFixedPoint( Number , '(CFixedPoint)7' ), 'VII', SelectLocalization(EqualTo_CFixedPoint( Number , '(CFixedPoint)8' ), 'VIII', SelectLocalization(EqualTo_CFixedPoint( Number , '(CFixedPoint)9' ), 'IX', 'X')))))))))"
+}
+
+macro = {
+	description = "Get the character's spell being prepared"
+	definition = "GetSpellBeingPrepared"
+	replace_with = "Var('spell_preparation_story_cycle')"
+}

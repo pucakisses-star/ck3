@@ -1,0 +1,116 @@
+﻿dielecender_lifepath_1 = {
+	name = "Hammart"
+	dna = marcher_20
+	religion = "lifepath"
+	culture = "dielecender"
+	dynasty = dyn_salisians_lifepath_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_western_10
+			custom_hair = male_hair_fp2_iberian_muslim_03
+		}
+	}
+
+	1228.8.12 = {
+		birth = yes
+		trait = magic_good_2
+		trait = lisping
+		trait = clubfooted
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 1 }
+		}
+	}
+
+	1237.3.14 = {
+		give_nickname = nick_twisttongue
+	}
+
+	1240.1.1 = {
+		trait = wrathful
+		trait = ambitious
+		trait = generous
+	}
+
+	1244.8.12 = {
+		trait = schemer
+		trait = way_of_crows_follower
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+dielecender_lifepath_2 = {
+	name = "Metielle"
+	religion = "lifepath"
+	culture = "dielecender"
+	female = yes
+
+	1110.11.5 = {
+		birth = yes
+		trait = beauty_good_2
+	}
+
+	1126.11.5 = {
+		trait = lustful
+		trait = arrogant
+		trait = cynical
+		trait = education_intrigue_4
+		trait = way_of_crowns_follower
+	}
+
+	1150.1.1 = {
+		trait = seducer
+	}
+	
+	1156.4.19 = {
+		death = { death_reason = death_magic_fire }
+	}
+}
+
+dielecender_lifepath_3 = { # Sir Courise, Marcher Magi slain by the Lich Crasmer Crasvir
+	name = "Courise"
+	religion = "lifepath"
+	culture = dielecender
+	disallow_random_traits = yes
+	female = yes
+
+	martial = 3
+	diplomacy = 8
+	stewardship = 1
+	intrigue = 6
+	learning = 1
+	prowess = 7
+
+	1117.5.12 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1129.1.1 = {
+		trait = compassionate
+		trait = diligent
+		trait = fickle
+	}
+
+	1133.5.12 = {
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:illuminated_order_of_holy_principles }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+		trait = way_of_crows_follower
+	}
+
+	1143.3.25 = {
+		death = {
+			death_reason = death_lich_battle
+			killer = lich_culture_rejection_13 # Crasmer Crasvir
+		}
+	}
+}

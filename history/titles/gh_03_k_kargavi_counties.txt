@@ -1,0 +1,31 @@
+c_tsahitir = {
+	1230.1.1 = {
+		holder = kuridorig_arayymorog_2
+		change_development_level = 3
+	}
+}
+c_uchoch = {
+	1240.1.1 = {
+		change_development_level = 3
+		holder = jarakmar_ertomax_14
+	}
+}
+c_baysaloog = {
+	1181.4.24 = {
+		# liege = d_gavsges # GH TODO: Duchy removed, find a new one or cut this line
+		holder = kuridorig_arayymorog_1
+		government = nomad_government
+	}
+	1200.2.25 = {
+		# liege = d_gavsges # GH TODO: Duchy removed, find a new one or cut this line
+		holder = kuridorig_arayymorog_2
+		government = nomad_government
+		change_development_level = 4
+	}
+}
+c_sergeld = {
+	1240.1.1 = {
+		change_development_level = 3
+		holder = jarakmar_ertomax_15
+	}
+}

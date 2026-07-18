@@ -1,0 +1,35 @@
+
+c_ebed27 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_ebed28 = {
+	1215.1.2 = {
+		liege = 0
+		government = migratory_government
+		holder = utyalid_wardenism_5
+		change_development_level = 5
+	}
+}
+c_ebed33 = {
+	1225.9.12 = {
+		liege = 0
+		government = migratory_government
+		holder = utyalid_wardenism_7
+		change_development_level = 5
+	}
+}
+c_ebed34 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+#c_ebed36 = {
+#	1241.9.15 = {
+#		liege = 0
+#		government = migratory_government
+#		holder = utyalid_wardenism_8
+#		change_development_level = 2
+#	}
+#}

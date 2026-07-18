@@ -1,0 +1,36 @@
+﻿simevian_sheharddi_1 = { 
+	name = Yoel
+	dynasty = dyn_israel_3
+	religion = "sheharddi"
+	culture = "simevian"
+
+	1202.4.14 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 2 }
+		}
+	}
+}
+
+simevian_sheharddi_3 = { 
+	name = Gedalyah
+	dynasty = dyn_israel_8
+	religion = "sheharddi"
+	culture = "simevian"
+
+	1230.4.14 = {
+		birth = yes
+	}
+}
+
+simevian_sheharddi_4 = { 
+	name = Elyakim
+	dynasty = dyn_israel_9
+	religion = "sheharddi"
+	culture = "simevian"
+
+	1228.4.14 = {
+		birth = yes
+	}
+}
+

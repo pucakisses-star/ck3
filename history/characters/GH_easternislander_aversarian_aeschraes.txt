@@ -1,0 +1,55 @@
+﻿easternislander_aeschraes_aagiokrata_1 = { # 1200 Duke of Sohrati
+	name = "Valtor"
+	dna = easternislander_aeschraes_aagiokrata_1
+	religion = "aeschraes_aagiokrata"
+	culture = "easternislander"
+	sexuality = heterosexual
+	dynasty = dyn_aversarian_18
+
+	trait = shrewd
+	trait = magic_good_6
+	trait = lunatic_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_western_02
+		}
+	}
+
+	1179.7.20 = {
+		birth = yes
+	}
+
+	1191.7.20 = {
+		trait = zealous
+		trait = ambitious
+		trait = arrogant
+	}
+
+	1195.7.20 = {
+		trait = education_learning_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1195.7.20 = {
+		# trait = gh_boneshape # GH UREGNT: Removed, replace these with modifiersd_beauty_1
+	}
+
+	1207.4.3 = {
+		trait = gh_glowing_eyes
+		trait = theologian
+	}
+	
+	1223.4.12 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}

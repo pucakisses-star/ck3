@@ -1,0 +1,937 @@
+﻿caemansi_sjalvolki_1 = {
+	name = "Vocinj" #Formerly Balduin
+	religion = "sjalvolki"
+	culture = "caemansi"
+
+	1220.4.12 = {
+		birth = yes
+	}
+	1267.4.3 = {
+		death = { death_reason = death_battle } # Killed in Opak
+	}
+}
+
+caemansi_sjalvolki_2 = {
+	name = "Radjek" #Formerly Rudigar
+	dynasty = dyn_sjalvolki_31
+	religion = "sjalvolki"
+	culture = "caemansi"
+
+	1219.3.14 = {
+		birth = yes
+	}
+}
+
+caemansi_sjalvolki_3 = {
+	name = "HoS_ek" #Formerly Hans
+	religion = "sjalvolki"
+	culture = "caemansi"
+
+	1235.8.1 = {
+		birth = yes
+		trait = albino
+	}
+	1256.7.1 = {
+		add_spouse = caemansi_sjalvolki_39
+	}
+	1278.9.22 = {
+		death = { death_reason = death_cut_off_by_enemy_troops_offensive } # Killed in an ambush by Hecaeda's Magi during the Imperrech wars in Aironoi
+	}
+}
+
+caemansi_sjalvolki_4 = {
+	name = "Hrajek" #Formerly Gehrke
+	religion = "sjalvolki"
+	culture = "caemansi"
+
+	1217.2.22 = {
+		birth = yes
+	}
+
+	1268.7.23 = {
+		death = { death_reason = death_fell_bedchamber }
+	}
+}
+
+caemansi_sjalvolki_5 = { # Regent for Skogul in 1298
+	name = "CeS_tinj" #Formerly Konstantin
+	religion = "sjalvolki"
+	culture = "caemansi"
+
+	1231.4.12 = {
+		birth = yes
+	}
+
+	1251.4.12 = {
+		trait = just
+		trait = diligent
+		trait = greedy
+		trait = education_diplomacy_3
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+
+caemansi_sjalvolki_6 = {
+	name = "Bornodj" #Formerly Bernd
+	dynasty = dyn_sjalvolki_16
+	religion = "sjalvolki"
+	culture = "caemansi"
+
+	1220.4.12 = {
+		birth = yes
+		trait = stuttering
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 1 }
+		}
+	}
+
+	1236.4.12 = {
+		trait = generous
+		trait = shy
+		trait = brave
+		trait = education_intrigue_2
+	}
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_sjalvolki
+		effect = {
+			create_character_memory = { # Battle of the Elysian Pass
+				type = fought_in_elysian_pass_sjalvolki
+			}
+		}
+	}
+
+	1257.5.18 = {
+		add_spouse = caemansi_sjalvolki_19
+	}
+
+	1259.3.2 = {
+		trait = one_legged
+	}
+	1265.3.24 = {
+		death = { death_reason = death_attempted_treatment }
+	}
+}
+
+caemansi_sjalvolki_7 = { 
+	name = "Kaj" #Formerly Kye
+	dna = caemansi_sjalvolki_7 
+	trait = sadistic
+	trait = flagellant
+	trait = education_intrigue_3
+	religion = "sjalvolki"
+	culture = "caemansi"
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_fp1_08
+		}
+	}
+
+	1220.4.12 = {
+		birth = yes
+	}
+	
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_sjalvolki
+		effect = {
+			create_character_memory = { # Battle of the Elysian Pass
+				type = fought_in_elysian_pass_sjalvolki
+			}
+		}
+	}
+}
+
+caemansi_sjalvolki_8 = {
+	name = "Valkronja" #Formerly Frederuna
+	dna = caemansi_sjalvolki_8
+	religion = "sjalvolki"
+	culture = "caemansi"
+ 
+	trait = beauty_good_3
+	trait = ambitious
+	trait = lustful
+	trait = vengeful
+	trait = education_intrigue_2
+	female = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp1_05
+		}
+	}
+	
+	1220.1.1 = {
+		birth = yes
+	}
+}
+
+caemansi_sjalvolki_9 = {
+	name = "JaS_ti"
+	dynasty = dyn_sjalvolki_30
+	religion = "sjalvolki"
+	culture = "caemansi"
+
+	1234.1.1 = {
+		birth = yes
+	}
+}
+
+caemansi_sjalvolki_10 = {
+	name = "Kar"
+	religion = "sjalvolki"
+	culture = "caemansi"
+
+	1229.1.1 = {
+		birth = yes
+	}
+	1271.6.28 = {
+		death = { death_reason = death_battle killer = southernimperial_aversarian_gorassos_1 }
+	}
+}
+
+caemansi_sjalvolki_11 = {
+	name = "Goran"
+	religion = "sjalvolki"
+	culture = "caemansi"
+	dynasty = dyn_sjalvolki_51
+	1227.1.1 = {
+		birth = yes
+	}
+
+	1259.3.26 = {
+		add_spouse = daukeni_sjalvolki_155
+	}
+
+	1286.4.20 = {
+		death = { death_reason = death_gout_ridden }
+	}
+}
+
+caemansi_sjalvolki_12 = {
+	name = "Babic"
+	religion = "sjalvolki"
+	culture = "caemansi"
+
+	1218.1.1 = {
+		birth = yes
+	}
+}
+
+caemansi_sjalvolki_13 = { 
+	name = "Acilvroj" #Formerly Adalbert
+	religion = "sjalvolki"
+	culture = "caemansi"
+
+	1198.12.28 = {
+		birth = yes
+		
+	}
+
+	1226.11.14 = {
+		add_spouse = caemansi_sjalvolki_26
+	}
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_sjalvolki
+		trait = education_learning_2
+		trait = forder
+		trait = gh_historical_track_hunter_3
+		effect = {
+			create_character_memory = { # Battle of the Elysian Pass
+				type = fought_in_elysian_pass_sjalvolki
+			}
+		}
+	}
+
+	1267.1.7 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+caemansi_sjalvolki_14 = { # "Step on me mommy" ~ Aversarians victims
+	name = "Sigrun"
+	dna = caemansi_sjalvolki_14
+	dynasty = dyn_sjalvolki_4
+	father = caemansi_sjalvolki_17
+	mother = caemansi_sjalvolki_18
+	religion = "sjalvolki"
+	culture = "caemansi"
+	female = yes
+
+	martial = 10
+	diplomacy = 8
+	stewardship = 8
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_rtt_01
+		}
+	}
+
+	1228.6.18 = {
+		birth = yes
+		trait = physique_good_3
+	}
+
+	1240.1.1 = {
+		trait = brave
+		trait = wrathful
+		trait = ambitious
+	}
+
+	1244.6.18 = {
+		trait = education_martial_3
+		trait = gh_historical_blademaster_3
+	}
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+
+	1247.8.12 = {
+		trait = berserker
+		give_nickname = nick_axe_in_the_hand
+		effect = {
+			set_variable = {
+				name = sjalvolki_conquest_contribution
+				value = 100
+			}
+			add_character_flag = sjalvolki_vanguard
+		}
+	}
+	
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_sjalvolki
+		effect = {
+			create_character_memory = { # Battle of the Elysian Pass
+				type = fought_in_elysian_pass_sjalvolki
+			}
+		}
+	}
+
+	1278.9.22 = {
+		death = { death_reason = death_cut_off_by_enemy_troops_offensive } # Killed in an ambush by Hecaeda's Magi during the Imperrech wars in Aironoi
+	}
+}
+
+caemansi_sjalvolki_15 = {
+	name = "Skogul"
+	dynasty = dyn_sjalvolki_4
+	mother = caemansi_sjalvolki_14
+	father = vrodkin_sjalvolki_44
+	trait = physique_good_1
+	trait = legitimized_bastard
+	religion = "sjalvolki"
+	culture = "caemansi"
+
+	1248.6.18 = {
+		birth = yes
+	}
+
+	1277.5.19 = {
+		add_spouse = greulokin_sjalvolki_26
+	}
+}
+
+caemansi_sjalvolki_16 = {
+	name = "Rota"
+	dynasty = dyn_sjalvolki_4
+	mother = caemansi_sjalvolki_14
+	father = vrodkin_sjalvolki_44
+	trait = physique_good_2
+	trait = legitimized_bastard
+	religion = "sjalvolki"
+	culture = "caemansi"
+	female = yes
+
+	1250.6.18 = {
+		birth = yes
+	}
+}
+
+caemansi_sjalvolki_17 = {
+	name = "Kreyvik"
+	dynasty = dyn_sjalvolki_4
+	religion = "sjalvolki"
+	culture = "caemansi"
+
+	1200.2.10 = {
+		birth = yes
+	}
+	1225.1.1 = {
+		add_spouse = caemansi_sjalvolki_18
+	}
+	1242.8.9 = {
+		death = {
+			death_reason = death_fog
+		}	
+	}
+}
+
+caemansi_sjalvolki_18 = {
+	name = "Sigra"
+	religion = "sjalvolki"
+	culture = "fenvir"
+	female = yes
+
+	1200.1.1 = {
+		birth = yes
+	}
+	1225.1.1 = {
+		add_spouse = caemansi_sjalvolki_17
+	}
+	1242.8.9 = {
+		death = {
+			death_reason = death_fog
+		}	
+	}
+}
+
+
+caemansi_sjalvolki_19 = {
+    name = "Mirdva" 
+    female = yes
+
+    religion = sjalvolki
+    culture = caemansi
+
+    sexuality = heterosexual
+
+    trait = shy
+    trait = generous
+    trait = callous
+
+    1240.11.14 = {
+        birth = yes
+    }
+
+    1272.6.28 = {
+        death = { death_reason = death_consumption }
+    }
+}
+
+caemansi_sjalvolki_20 = {
+    name = "Mirkvel" 
+
+    dynasty = dyn_sjalvolki_16
+    religion = sjalvolki
+    culture = caemansi
+
+    father = caemansi_sjalvolki_6
+    mother = caemansi_sjalvolki_19
+
+    sexuality = heterosexual
+
+    trait = arrogant
+    trait = wrathful
+    trait = content
+
+    1258.10.7 = {
+        birth = yes
+    }
+
+    1291.8.3 = {
+        add_spouse = caemansi_sjalvolki_21
+    }
+}
+
+caemansi_sjalvolki_21 = {
+    name = "AjS_na" 
+    female = yes
+
+    religion = sjalvolki
+    culture = caemansi
+
+    sexuality = heterosexual
+
+    trait = deceitful
+    trait = gluttonous
+    trait = craven
+
+    1274.3.10 = {
+        birth = yes
+    }
+}
+
+caemansi_sjalvolki_22 = {
+    name = "Bukmila" 
+    female = yes
+
+    religion = sjalvolki
+    culture = caemansi
+
+    father = caemansi_sjalvolki_20
+    mother = caemansi_sjalvolki_21
+
+    1291.2.16 = {
+        birth = yes
+    }
+}
+
+caemansi_sjalvolki_23 = {
+    name = "Orlin" 
+
+    dynasty = dyn_sjalvolki_16
+    religion = sjalvolki
+    culture = caemansi
+
+    father = caemansi_sjalvolki_20
+    mother = caemansi_sjalvolki_21
+
+    1296.9.22 = {
+        birth = yes
+    }
+}
+
+caemansi_sjalvolki_24 = {
+    name = "Tjosce" 
+
+    dynasty = dyn_sjalvolki_16
+    religion = sjalvolki
+    culture = caemansi
+
+    father = caemansi_sjalvolki_6
+    mother = caemansi_sjalvolki_19
+
+    sexuality = heterosexual
+
+    trait = trusting
+    trait = craven
+    trait = deceitful
+
+    1261.3.13 = {
+        birth = yes
+    }
+}
+
+caemansi_sjalvolki_25 = {
+    name = "Irvalnj" 
+
+    dynasty = dyn_sjalvolki_16
+    religion = sjalvolki
+    culture = caemansi
+
+    father = caemansi_sjalvolki_6
+    mother = caemansi_sjalvolki_19
+
+    sexuality = heterosexual
+
+    trait = impatient
+    trait = content
+    trait = gluttonous
+
+    1264.11.1 = {
+        birth = yes
+    }
+
+    1291.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+caemansi_sjalvolki_26 = {
+    name = "Irlova" 
+    female = yes
+
+    religion = sjalvolki
+    culture = caemansi
+
+    sexuality = heterosexual
+
+    trait = diligent
+    trait = zealous
+    trait = calm
+
+    1209.6.3 = {
+        birth = yes
+    }
+
+    1274.5.15 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+caemansi_sjalvolki_27 = {
+    name = "Mirhrav" 
+
+    dynasty = dyn_sjalvolki_48
+    religion = sjalvolki
+    culture = caemansi
+
+    father = caemansi_sjalvolki_13
+    mother = caemansi_sjalvolki_26
+
+    sexuality = heterosexual
+
+    trait = vengeful
+    trait = honest
+    trait = lazy
+
+    1239.7.4 = {
+        birth = yes
+    }
+
+    1267.8.24 = {
+        add_spouse = caemansi_sjalvolki_28
+    }
+
+    1277.6.19 = {
+        religion = orispolj_rite
+    }
+
+    1280.4.21 = {
+        death = { death_reason = death_heart_attack }
+    }
+}
+
+caemansi_sjalvolki_28 = {
+    name = "Jormiha" 
+    female = yes
+
+    religion = sjalvolki
+    culture = caemansi
+
+    sexuality = heterosexual
+
+    trait = cynical
+    trait = wrathful
+    trait = just
+
+    1250.6.18 = {
+        birth = yes
+    }
+
+    1277.6.19 = {
+        religion = orispolj_rite
+    }
+
+    1295.1.3 = {
+    	death = { death_reason = death_beaten_by_mob }
+    }
+}
+
+caemansi_sjalvolki_29 = {
+    name = "Mirvroj" 
+
+    dynasty = dyn_sjalvolki_48
+    religion = sjalvolki
+    culture = caemansi
+
+    father = caemansi_sjalvolki_27
+    mother = caemansi_sjalvolki_28
+
+    sexuality = homosexual
+
+    diplomacy = 5
+    martial = 8
+    stewardship = 3
+    intrigue = 4
+    learning = 7
+
+    trait = paranoid
+    trait = callous
+    trait = cynical
+    1270.3.28 = {
+        birth = yes
+    }
+    1295.2.26 = {
+        death = { death_reason = death_execution killer = caemansi_sjalvolki_32 }
+    }
+}
+
+caemansi_sjalvolki_30 = {
+    name = "Havravek"
+    religion = sjalvolki
+    culture = caemansi
+
+    1243.3.2 = {
+        birth = yes
+        trait = gh_peasant_birth
+    }
+    1276.2.1 = {
+        add_spouse = caemansi_sjalvolki_31
+    }
+    1278.2.2 = {
+        death = { death_reason = death_battle }
+    }
+}
+caemansi_sjalvolki_31 = {
+    name = "Radjavca"
+    religion = sjalvolki
+    culture = caemansi
+    female = yes
+    1243.3.1 = {
+        birth = yes
+        trait = gh_peasant_birth
+    }
+    1278.2.2 = {
+        death = { death_reason = death_battle }
+    }
+}
+caemansi_sjalvolki_32 = {
+    name = "Saumrjelc" 
+
+    religion = orispolj_rite
+    culture = caemansi
+    father = caemansi_sjalvolki_30
+    mother = caemansi_sjalvolki_31
+
+    sexuality = homosexual
+
+    diplomacy = 5
+    martial = 8
+    stewardship = 3
+    intrigue = 4
+    learning = 7
+
+    trait = wrathful
+    trait = zealous
+    trait = ambitious
+    trait = gh_historical_track_hunter_2
+    trait = education_martial_3
+
+    1260.3.28 = {
+        birth = yes
+    }
+    1297.6.26 = {
+        give_nickname = nick_the_waymaker
+    }
+}
+
+caemansi_sjalvolki_33 = {
+    name = "Hromihil"
+    dynasty = dyn_sjalvolki_48
+    religion = sjalvolki
+    culture = caemansi
+
+    father = caemansi_sjalvolki_27
+    mother = caemansi_sjalvolki_28
+
+    1273.6.22 = {
+        birth = yes
+    }
+
+    1293.1.1 = {
+        trait = sadistic
+        trait = vengeful
+        trait = craven
+        trait = education_intrigue_1
+        religion = orispolj_rite
+    }
+
+    1295.2.26 = {
+    	effect = {
+    		set_relation_rival = {
+    			target = character:caemansi_sjalvolki_33 
+    			reason = nemesis_killed_relative
+    		}
+    	}
+    }
+}
+
+caemansi_sjalvolki_34 = {
+	name = "Ardrein"
+	religion = sjalvolki
+	culture = caemansi
+	father = caemansi_sjalvolki_10
+
+	1259.2.10 = {
+		birth = yes
+	}
+
+	1279.2.10 = {
+		trait = shy
+		trait = cynical
+		trait = deceitful
+		trait = education_intrigue_3
+	}
+
+	1288.10.2 = {
+		add_spouse = islander_aversarian_axiaotheaism_4
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+
+caemansi_sjalvolki_35 = {
+	name = "Valkvel"
+	religion = "sjalvolki"
+	culture = "caemansi"
+	dynasty = dyn_sjalvolki_51
+	father = caemansi_sjalvolki_11
+	mother = daukeni_sjalvolki_155
+
+	1262.11.26 = {
+		birth = yes
+	}
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+
+caemansi_sjalvolki_36 = {
+	name = "Ovrenj"
+	religion = "sjalvolki"
+	culture = "caemansi"
+	father = caemansi_sjalvolki_4
+
+	1239.12.5 = {
+		birth = yes
+	}
+	1264.3.26 = {
+		add_spouse = caemansi_sjalvolki_38 
+	}
+	1281.7.15 = {
+		death = { death_reason = death_hunting_mistakenly_shot }
+	}
+}
+
+caemansi_sjalvolki_37 = {
+	name = "S_elvir"
+	religion = "sjalvolki"
+	culture = "caemansi"
+	father = caemansi_sjalvolki_36
+	mother = caemansi_sjalvolki_38
+	1269.11.4 = {
+		birth = yes
+	}
+	1298.1.1 = {
+		religion = orispolj_rite 
+	}
+}
+
+caemansi_sjalvolki_38 = {
+	name = "Dajrona"
+	religion = "sjalvolki"
+	culture = "caemansi"
+	female = yes
+	1242.10.25 = {
+		birth = yes
+	}
+	1283.5.1 = {
+		death = { death_reason = death_depressed }
+	}
+}
+
+caemansi_sjalvolki_39 = {
+	name = "Vinja" #Formerly Hans
+	religion = "sjalvolki"
+	culture = "caemansi"
+	female = yes
+
+	1236.10.10 = {
+		birth = yes
+		trait = magic_good_1
+	}
+}
+caemansi_sjalvolki_40 = {
+	name = "VeS_ridoj" #Formerly Hans
+	religion = "sjalvolki"
+	culture = "caemansi"
+	father = caemansi_sjalvolki_3
+	mother = caemansi_sjalvolki_39
+
+	1259.2.15 = {
+		birth = yes
+		trait = magic_good_1
+		trait = albino
+	}
+
+	1283.3.7 = {
+		death = { death_reason = death_camp_fever }
+	}
+}
+caemansi_sjalvolki_41 = {
+	name = "Sajra" #Formerly Hans
+	religion = "sjalvolki"
+	culture = "caemansi"
+	female = yes
+	father = caemansi_sjalvolki_3
+	mother = caemansi_sjalvolki_39
+
+	1262.4.16 = {
+		birth = yes
+		trait = albino
+		trait = magic_good_1
+	}
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+caemansi_sjalvolki_42 = {
+	name = "AC_lek" #Formerly Hans
+	religion = "sjalvolki"
+	culture = "caemansi"
+	father = caemansi_sjalvolki_3
+	mother = caemansi_sjalvolki_39
+
+	1265.9.23 = {
+		birth = yes
+		trait = albino
+		trait = magic_good_2
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+
+caemansi_sjalvolki_43 = {
+	name = "Irlerode"
+	religion = sjalvolki
+	culture = caemansi
+	father = caemansi_sjalvolki_10
+	female = yes
+
+	1263.1.28 = {
+		birth = yes
+		trait = intellect_bad_1
+	}
+	1283.1.28 = {
+		trait = compassionate
+		trait = patient
+		trait = temperate
+		trait = education_learning_1
+	}
+	1285.3.1 = {
+		trait = gh_widow
+	}
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}

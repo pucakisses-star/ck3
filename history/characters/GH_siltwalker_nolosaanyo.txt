@@ -1,0 +1,265 @@
+﻿siltwalker_nolosaanyo_1 = {
+    name = "Lalinda" 
+
+    dynasty = dyn_pirate_coast_4
+    religion = nolosaanyo
+    culture = siltwalker
+
+    sexuality = heterosexual
+
+    1227.7.8 = {
+        birth = yes
+    }
+
+    1247.1.1 = {
+        trait = ambitious
+        trait = compassionate
+        trait = patient
+        trait = education_martial_3
+    }
+
+    1250.12.10 = {
+        add_spouse = siltwalker_nolosaanyo_3
+    }
+
+    1264.4.27 = {
+        death = { death_reason = death_wounds }
+    }
+}
+
+
+siltwalker_nolosaanyo_2 = {
+    name = "Rubathas"
+    culture = "siltwalker"
+    religion = "nolosaanyo"
+
+    1220.1.1 = {
+        birth = yes
+    }
+
+    1270.5.1 = {
+        death = { death_reason = death_vanished }
+    }
+}
+
+siltwalker_nolosaanyo_3 = {
+    name = "Use" 
+    female = yes
+
+    religion = nolosaanyo
+    culture = siltwalker
+
+    sexuality = heterosexual
+
+    trait = just
+    trait = generous
+    trait = patient
+
+    1233.3.19 = {
+        birth = yes
+    }
+
+    1264.4.27 = {
+        trait = gh_widow
+    }
+
+    1297.5.21 = {
+        death = { death_reason = death_depressed }
+    }
+}
+
+siltwalker_nolosaanyo_4 = {
+    name = "Iftiin" 
+    female = yes
+
+    religion = nolosaanyo
+    culture = siltwalker
+
+    father = siltwalker_nolosaanyo_1
+    mother = siltwalker_nolosaanyo_3
+
+    sexuality = homosexual
+
+    1251.5.14 = {
+        birth = yes
+    }
+
+    1267.5.14 = {
+        trait = content
+        trait = humble
+        trait = calm
+    }
+
+    1269.9.1 = {
+        add_spouse = siltwalker_nolosaanyo_12
+    }
+
+    1269.10.2 = {
+        trait = pregnant
+    }
+
+    1270.5.1 = {
+        death = { death_reason = death_mysterious }
+    }
+}
+
+siltwalker_nolosaanyo_5 = {
+    name = "Haweeya" 
+    female = yes
+
+    religion = nolosaanyo
+    culture = siltwalker
+
+    father = siltwalker_nolosaanyo_1
+    mother = siltwalker_nolosaanyo_3
+
+    trait = gluttonous
+    trait = vengeful
+    trait = fickle
+
+    1256.11.18 = {
+        birth = yes
+    }
+
+    1270.5.1 = {
+        death = { death_reason = death_mysterious }
+    }
+}
+
+siltwalker_nolosaanyo_6 = {
+    name = "Shumikani" 
+
+    dynasty = dyn_pirate_coast_4
+    religion = nolosaanyo
+    culture = siltwalker
+
+    father = siltwalker_nolosaanyo_1
+    mother = siltwalker_nolosaanyo_3
+
+    sexuality = homosexual
+
+    trait = generous
+    trait = wrathful
+    trait = deceitful
+    trait = education_intrigue_3
+
+    1257.8.4 = {
+        birth = yes
+    }
+
+    1283.12.7 = {
+        add_spouse = siltwalker_nolosaanyo_7
+    }
+}
+
+siltwalker_nolosaanyo_7 = {
+    name = "Tsuru" 
+    female = yes
+
+    religion = nolosaanyo
+    culture = siltwalker
+
+    sexuality = heterosexual
+
+    trait = brave
+    trait = deceitful
+    trait = compassionate
+
+    1266.7.6 = {
+        birth = yes
+    }
+}
+
+siltwalker_nolosaanyo_8 = {
+    name = "Sahra" 
+    female = yes
+
+    religion = nolosaanyo
+    culture = siltwalker
+
+    father = siltwalker_nolosaanyo_6
+    mother = siltwalker_nolosaanyo_7
+
+    sexuality = heterosexual
+
+    trait = shy
+    trait = forgiving
+    trait = generous
+
+    1284.10.8 = {
+        birth = yes
+    }
+}
+
+siltwalker_nolosaanyo_9 = {
+    name = "Cawo" 
+    female = yes
+
+    religion = nolosaanyo
+    culture = siltwalker
+
+    father = siltwalker_nolosaanyo_6
+    mother = siltwalker_nolosaanyo_7
+
+    sexuality = bisexual
+
+    trait = calm
+    trait = vengeful
+    trait = shy
+
+    1289.2.17 = {
+        birth = yes
+    }
+}
+
+siltwalker_nolosaanyo_10 = {
+    name = "Ambro" 
+    female = yes
+
+    religion = nolosaanyo
+    culture = siltwalker
+
+    father = siltwalker_nolosaanyo_6
+    mother = siltwalker_nolosaanyo_7
+
+    1291.4.27 = {
+        birth = yes
+    }
+}
+
+siltwalker_nolosaanyo_11 = {
+    name = "Balad" 
+
+    dynasty = dyn_pirate_coast_4
+    religion = nolosaanyo
+    culture = siltwalker
+
+    father = siltwalker_nolosaanyo_6
+    mother = siltwalker_nolosaanyo_7
+    1293.9.26 = {
+        birth = yes
+    }
+}
+
+siltwalker_nolosaanyo_12 = {
+    name = "Isman" 
+
+    father = siltwalker_nolosaanyo_2
+    religion = nolosaanyo
+    culture = siltwalker
+
+    1250.2.1 = {
+        birth = yes
+    }
+
+    1267.2.1 = {
+        trait = arrogant
+        trait = brave
+        trait = just
+        trait = education_martial_2
+    }
+
+    1270.5.1 = {
+        death = { death_reason = death_mysterious }
+    }
+}

@@ -1,0 +1,59 @@
+c_mishrab = {
+	1250.1.1 = {
+		government = migratory_government
+		holder = leegenders_lifepath_3
+		change_development_level = 4
+	}
+}
+#c_khurrfin = {
+#	1200.3.1 = {
+#		holder = wasteland
+#	}
+#}
+#c_bhaffiya = {
+#	1200.3.1 = {
+#		holder = wasteland
+#	}
+#}
+c_teshbaraby = {
+	1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}
+c_mazykh = {
+	1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}
+c_khajbir = {
+	1250.1.1 = {
+		holder = qahsarides_kathsiti_1
+		change_development_level = 4
+	}
+}
+c_balujala = {
+	1250.1.1 = {
+		holder = qahsarides_kathsiti_2
+		change_development_level = 3
+	}
+}
+c_dalmelal = {
+	1250.1.1 = {
+		holder = qahsarides_ruidari_1
+		change_development_level = 3
+	}
+}
+c_azzul = {
+	1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}
+c_tiyyun = {
+	1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}

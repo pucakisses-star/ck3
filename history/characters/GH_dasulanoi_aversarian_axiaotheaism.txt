@@ -1,0 +1,24 @@
+﻿dasulanoi_aversarian_axiaotheaism_1 = {
+    name = "Ariovistus"
+    religion = aversarian_axiaotheaism
+    culture = dasulanoi
+    1210.4.19 = {
+        birth = yes
+        trait = magic_good_2
+    }
+    1222.4.19 = {
+        trait = trusting
+        trait = generous
+        trait = vengeful
+    }
+    1226.4.19 = {
+        trait = education_diplomacy_2
+        trait = depressed_1
+        trait = gh_historical_school
+        effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+        add_pressed_claim = title:c_zireddca
+    }
+}

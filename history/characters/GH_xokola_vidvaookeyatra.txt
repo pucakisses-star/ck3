@@ -1,0 +1,132 @@
+﻿xokola_vidvaookeyatra_1 = { # 1228 Rahikaya Queen
+	name = "Vijnayavati"
+	religion = "vidvaookeyatra"
+	culture = "xokola"
+	sexuality = heterosexual
+	dynasty = dyn_rahikaya_3
+	father = xokola_vidvaookeyatra_4
+	mother = xokola_vidvaookeyatra_3
+	female = yes
+
+	dna = xokola_vidvaookeyatra_1
+
+    portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_indian_02
+		}
+	}
+
+	1206.11.19 = {
+		birth = yes
+	}
+	1220.11.19 = {
+		trait = paranoid
+		trait = vengeful
+		trait = cynical
+	}
+	1224.11.19 = {
+		trait = education_intrigue_2
+	}
+	1231.4.6 = {
+		death = {
+			death_reason = death_murder
+			killer = rahikaya_vidvaookeyatra_8
+		}
+	}
+}
+
+xokola_vidvaookeyatra_2 = { # 1254 Xokola Duchess, enemy of the Rahikaya
+	name = "Dandi"
+	religion = "vidvaookeyatra"
+	culture = "xokola"
+	sexuality = heterosexual
+	dynasty = dyn_rahikaya_3
+	father = xokola_vidvaookeyatra_4
+	mother = xokola_vidvaookeyatra_3
+	female = yes
+	trait = physique_good_1
+
+	1203.4.20 = {
+		birth = yes
+	}
+	1215.4.20 = {
+		trait = trusting
+		trait = zealous
+		trait = compassionate
+	}
+	1219.4.20 = {
+		trait = education_diplomacy_3
+	}
+}
+
+xokola_vidvaookeyatra_3 = { # 1200 Xokola Duchess
+	name = "Dandi"
+	religion = "vidvaookeyatra"
+	culture = "xokola"
+	sexuality = heterosexual
+	female = yes
+	trait = physique_good_2
+
+	1180.9.12 = {
+		birth = yes
+	}
+	1192.9.12 = {
+		trait = temperate
+		trait = forgiving
+		trait = fickle
+	}
+	1196.9.12 = {
+		trait = education_diplomacy_2
+	}
+}
+
+xokola_vidvaookeyatra_4 = { # 1200 Xokola Duke
+	name = "Satru"
+	religion = "vidvaookeyatra"
+	culture = "xokola"
+	sexuality = homosexual
+	dynasty = dyn_rahikaya_3
+
+	1181.7.4 = {
+		birth = yes
+	}
+	1193.7.4 = {
+		trait = cynical
+		trait = compassionate
+		trait = chaste
+	}
+	1197.7.4 = {
+		trait = education_stewardship_2
+	}
+	1201.5.2 = {
+		add_spouse = xokola_vidvaookeyatra_3
+	}
+	1222.7.11 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+
+xokola_vidvaookeyatra_5 = { # 1254 Xokola heir
+	name = "Manamatra"
+	religion = "vidvaookeyatra"
+	culture = "xokola"
+	sexuality = bisexual
+	dynasty = dyn_rahikaya_3
+	father = paidem_vidvaookeyatra_2
+	mother = xokola_vidvaookeyatra_2
+	trait = physique_good_2
+
+	1229.5.16 = {
+		birth = yes
+	}
+	1241.5.16 = {
+		trait = sadistic
+		trait = zealous
+		trait = shy
+	}
+	1245.5.16 = {
+		trait = education_martial_3
+	}
+}

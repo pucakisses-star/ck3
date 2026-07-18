@@ -1,0 +1,22 @@
+﻿hokanta_varodaism_1 = {
+	name = "Wanna"
+
+	dynasty = dynasty_mysaalo
+	religion = varodaism
+	culture = hokanta
+	father = hokanta_vidvaookeyatra_28
+	mother = hokanta_vidvaookeyatra_29
+
+	1194.9.1 = {
+		birth = yes
+		trait = intellect_good_2
+		trait = magic_good_4
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}

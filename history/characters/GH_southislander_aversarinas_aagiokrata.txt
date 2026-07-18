@@ -1,0 +1,97 @@
+﻿southislander_aversarinas_aagiokrata_1 = { # Despexir Prethoran od Psacus and Ayteos, defeated by Legon Ultirnos and marched in chains during the Saintsmeet
+	name = "Prethoran"
+	religion = aversarinas_aagiokrata
+	culture = southernimperial
+	dynasty = dyn_aversarian_137
+	disallow_random_traits = yes
+
+	dna = prethoran
+
+	martial = 7
+	diplomacy = 3
+	intrigue = 7
+	stewardship = 7
+	learning = 2
+	prowess = 6
+
+	1048.4.24 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	1060.1.1 = {
+		trait = sadistic
+		trait = temperate
+		trait = vengeful
+	}
+
+	1064.4.24 = {
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1078.1.5 = {
+		trait = gh_glowing_eyes
+		trait = overseer
+	}
+
+	1097.2.6 = {
+		death = {
+			death_reason = death_dungeon
+		}
+	}
+}
+
+southislander_aversarinas_aagiokrata_2 = {
+	name = "Taurulon"
+	religion = "aversarinas_aagiokrata"
+	culture = "southislander"
+
+	1210.1.1 = {
+		birth = yes
+	}
+}
+
+southislander_aversarinas_aagiokrata_3 = {
+	name = "Gelios"
+	religion = "aversarinas_aagiokrata"
+	culture = "southislander"
+
+	1226.1.1 = {
+		birth = yes
+	}
+}
+
+southislander_aversarinas_aagiokrata_4 = {
+	name = "Dexos"
+	religion = "aversarinas_aagiokrata"
+	culture = "southislander"
+
+	1220.1.11 = {
+		birth = yes
+	}
+}
+
+southislander_aversarinas_aagiokrata_5 = {
+	name = "Kleiphos"
+	religion = "aversarinas_aagiokrata"
+	culture = "southislander"
+
+	1209.9.3 = {
+		birth = yes
+	}
+}
+
+southislander_aversarinas_aagiokrata_6 = {
+	name = "Akalionixos"
+	religion = "aversarinas_aagiokrata"
+	culture = "southislander"
+
+	1218.3.18 = {
+		birth = yes
+	}
+}

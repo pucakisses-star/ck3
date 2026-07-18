@@ -1,0 +1,731 @@
+﻿voluntic_partic_1 = {
+	name = "Eoghar-Argeadh" #Eoghar-Argaidh Mac Duaghar Armhorach
+	dna = voluntic_partic_1
+	dynasty = dyn_partic_1
+	religion = "partic"
+	culture = "voluntic"
+
+	trait = cynical
+	trait = compassionate
+	trait = stubborn
+	trait = education_martial_3
+	trait = depressed_1
+	trait = reclusive
+	father = voluntic_partic_4
+	
+	martial = 8
+	diplomacy = 6
+	stewardship = 6
+	intrigue = 4
+	learning = 8
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_rtt_01
+			custom_beards = male_beard_western_09
+		}
+	}
+
+	1215.11.23 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 3 }
+		}										 
+	}
+
+	1245.8.21 = {
+		add_spouse = voluntic_partic_2
+	}
+
+	1250.10.8 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+
+	1251.10.11 = {
+		effect = {
+			create_character_memory = { # Won the Ash War
+				type = war_won
+
+				participants = {
+					winner = character:voluntic_partic_1
+					loser = character:apokiakas_aversarinas_aagiokratia_23
+				}
+			}
+		}
+	}
+
+	1251.12.21 = {
+		effect = {
+			create_character_memory = { # Occupied territories in Rohr
+				type = war_won
+
+				participants = {
+					winner = character:voluntic_partic_1
+					loser = character:salisians_lifepath_1
+				}
+			}
+		}
+	}
+
+	1253.8.21 = {
+		add_concubine = brigandines_partic_4
+	}
+
+	1253.9.21 = {
+		add_concubine = auteonic_partic_6
+	}
+
+	1253.10.21 = {
+		add_concubine = voluntic_partic_3
+	}
+}
+
+voluntic_partic_2 = {
+	name = "Cneis" #Wife
+	female = yes
+	religion = "partic"
+	culture = "voluntic"
+
+	1220.4.12 = {
+		birth = yes
+	}
+	1245.8.21 = {
+		add_spouse = voluntic_partic_1
+	}
+}
+
+voluntic_partic_3 = {
+	name = "Lann" #Concubine
+	female = yes
+	religion = "partic"
+	culture = "voluntic"
+	
+	trait = magic_good_1
+
+	1236.1.1 = {
+		birth = yes
+	}
+	1253.8.20 = {
+		employer = voluntic_partic_1
+	}
+}
+
+voluntic_partic_4 = {
+	name = "Duaghar" #Father
+	religion = "partic"
+	culture = "voluntic"
+
+	1178.1.1 = {
+		birth = yes
+	}			 
+	1240.1.1 = {
+		death = yes
+	}
+}
+
+voluntic_partic_5 = {
+	name = "Siogaibh" #Druid
+	religion = "partic"
+	culture = "voluntic"
+
+	1201.1.26 = {
+		birth = yes
+		trait = magic_good_7
+	}
+
+	1217.1.26 = {
+		trait = education_learning_4
+		trait = theologian
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1250.10.8 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+
+	1254.1.1 = {
+		employer = voluntic_partic_1
+		trait = gh_necronic_skin
+	}
+}
+
+voluntic_partic_6 = {
+	name = "Flathbhoch" #Druid
+	religion = "partic"
+	culture = "voluntic"
+
+	1187.3.1 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1203.3.1 = {
+		trait = theologian
+		trait = education_learning_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:wood_law }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1250.10.8 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+
+	1254.1.1 = {
+		employer = voluntic_partic_1
+		trait = gh_glowing_veins
+	}
+}
+
+voluntic_partic_7 = {
+	name = "Moroch" #Druid
+	dynasty = dyn_partic_19
+	religion = "partic"
+	culture = "voluntic"
+	
+	trait = zealous
+	
+	learning = 10
+	
+	1175.10.24 = {
+		birth = yes
+		trait = magic_good_6
+		trait = intellect_good_2
+	}
+
+	1191.10.24 = {
+		trait = gh_transmuturgist
+		trait = education_arcana_3 #more of a practical learner
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1250.1.1 = {
+		effect = {
+			upgrade_stacking_modifier_by_level_effect = { MODIFIER = magic_life_extension_modifier TYPE = character LEVEL = 3 YEARS = -1  } 
+			#upgrade_stacking_modifier_by_level_effect = { MODIFIER = magic_arcane_degeneration_modifier TYPE = character LEVEL = 1 YEARS = -1  } 
+			set_variable = {
+				name = life_extention_amount_raw
+				value = 3
+			}
+		}
+		trait = gh_excessively_pale
+		trait = gh_glowing_eyes
+	}
+
+	1250.10.8 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+
+	1254.1.1 = {
+		employer = voluntic_partic_1
+		give_council_position = councillor_court_magi
+	}
+}
+
+voluntic_partic_8 = {
+	name = "Ruaibhre"
+	dynasty = dyn_partic_19
+	religion = "partic"
+	culture = "voluntic"
+	female = yes
+
+	father = voluntic_partic_7
+
+	1207.4.4 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1223.4.4 = {
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:wood_law }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+	
+	1250.10.8 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+
+	1254.1.1 = {
+		employer = voluntic_partic_1
+	}
+}
+
+voluntic_partic_9 = {
+	name = "Uailne"
+	dynasty = dyn_partic_19
+	religion = "partic"
+	culture = "voluntic"
+	female = yes
+
+	father = voluntic_partic_7
+
+	1210.9.23 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1226.9.23 = {
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:silentspeak }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+	
+	1250.10.8 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+
+
+	1254.1.1 = {
+		employer = voluntic_partic_1
+		trait = gh_beset_by_visions
+		trait = lifestyle_herbalist
+		trait = gh_nearly_blind
+	}
+}
+
+voluntic_partic_10 = {
+	name = "Maolag"
+	dynasty = dyn_partic_19
+	religion = "partic"
+	culture = "voluntic"
+
+	father = voluntic_partic_7
+
+	1221.11.15 = {
+		birth = yes
+		trait = twin
+		trait = magic_good_4
+	}
+
+	1237.11.15 = {
+		trait = education_martial_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1250.1.1 = {
+		# trait = gh_boneshape # GH UREGNT: Removed, replace these with modifiersd_strong_1
+		employer = voluntic_partic_1
+	}
+
+	1250.10.8 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+}
+
+voluntic_partic_11 = {
+	name = "Maoilig"
+	dynasty = dyn_partic_19
+	religion = "partic"
+	culture = "voluntic"
+	female = yes
+
+	father = voluntic_partic_7
+
+	1221.11.15 = {
+		birth = yes
+		trait = twin
+		trait = magic_good_4
+	}
+
+	1237.11.15 = {
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1250.1.1 = {
+		# trait = gh_boneshape # GH UREGNT: Removed, replace these with modifiersd_beauty_1
+		add_spouse = auteonic_partic_1
+	}
+
+	1250.10.8 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+}
+
+voluntic_partic_12 = {
+	name = "Maolchras"
+	dynasty = dyn_partic_3
+	religion = "partic"
+	culture = "voluntic"
+
+	1228.10.25 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1244.10.25 = {
+		trait = education_intrigue_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1250.10.8 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+}
+
+voluntic_partic_13 = {
+	name = "Caolchar"
+	dynasty = dyn_partic_6
+	religion = "partic"
+	culture = "voluntic"
+
+	1223.1.1 = {
+		birth = yes
+	}
+}
+
+voluntic_partic_14 = {
+	name = "Sioth"
+	religion = "partic"
+	culture = "voluntic"
+
+	1209.1.1 = {
+		birth = yes
+	}
+}
+
+voluntic_partic_15 = {
+	name = "Ciongach"
+	dynasty = dyn_partic_5
+	religion = "partic"
+	culture = "voluntic"
+
+	1202.1.1 = {
+		birth = yes
+	}
+
+	1250.10.8 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+
+	1251.10.11 = {
+		trait = one_eyed
+	}
+}
+
+voluntic_partic_16 = {
+	name = "Eorloch"
+	religion = "partic"
+	culture = "voluntic"
+
+	1212.1.1 = {
+		birth = yes
+	}
+}
+
+voluntic_partic_17 = {
+	name = "Gaoidhig"
+	dynasty = dyn_partic_7
+	female = yes
+	religion = "partic"
+	culture = "voluntic"
+
+	1223.1.1 = {
+		birth = yes
+	}
+}
+
+voluntic_partic_18 = {
+	name = "Ailghe"
+	dynasty = dyn_partic_9
+	female = yes
+	religion = "partic"
+	culture = "voluntic"
+
+	1214.1.1 = {
+		birth = yes
+	}
+}
+
+voluntic_partic_19 = {
+	name = "Tomhaltach"
+	religion = "partic"
+	culture = "voluntic"
+
+	1217.1.1 = {
+		birth = yes
+	}
+}
+
+voluntic_partic_20 = {
+	name = "Lochlannas"
+	dynasty = dyn_partic_10
+	religion = "partic"
+	culture = "voluntic"
+
+	1217.1.1 = {
+		birth = yes
+	}
+}
+
+voluntic_partic_21 = {
+	name = "Orthanach"
+	religion = "partic"
+	culture = "voluntic"
+
+	1231.3.14 = {
+		birth = yes
+	}
+}
+
+voluntic_partic_22 = {
+	name = "Domhanghar"
+	dynasty = dyn_partic_13
+	religion = "partic"
+	culture = "voluntic"
+
+	1220.2.1 = {
+		birth = yes
+	}
+}
+
+voluntic_partic_23 = {
+	name = "Caolmhas"
+	dynasty = dyn_partic_14
+	religion = "partic"
+	culture = "voluntic"
+
+	1241.12.12 = {
+		birth = yes
+	}
+}
+
+voluntic_partic_24 = {
+	name = "Lochlas"
+	religion = "partic"
+	culture = "voluntic"
+
+	1202.3.14 = {
+		birth = yes
+	}
+}
+
+#d_neufrisa
+voluntic_partic_25 = {
+	name = "Faorchras"
+	dynasty = dyn_partic_12
+	dna = voluntic_partic_25
+	religion = "partic"
+	culture = "voluntic"
+	female = no
+	trait = education_martial_1
+	sexuality = homosexual
+	trait = lustful
+	trait = forgiving
+	trait = calm
+	trait = seducer
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp2_iberian_christian_03
+					custom_beards = male_beard_mena_04
+		}
+	}
+	
+	1212.1.1 = {
+		birth = yes
+	}
+
+	1250.10.8 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+
+	1251.10.13 = {
+		set_relation_rival = {
+			target = character:salisians_lifepath_5
+			reason = rival_bad_breakup
+		}
+	}
+}
+
+#d_dudsky
+voluntic_partic_26 = {
+	name = "Collughach"
+	dynasty = dyn_partic_15
+	dna = voluntic_partic_26
+	religion = "partic"
+	culture = "voluntic"
+	female = no
+	trait = education_martial_3
+	trait = lazy
+	trait = craven
+	trait = patient
+	
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = no_hair
+					custom_beards = male_beard_indian_02
+		}
+	}
+
+	1201.2.24 = {
+		birth = yes
+	}
+
+	1250.10.8 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+}
+
+#d_tinec
+voluntic_partic_27 = {
+	name = "Aoilghis"
+	dynasty = dyn_partic_11
+	dna = voluntic_partic_27
+	religion = "partic"
+	culture = "voluntic"
+	female = yes
+	trait = education_martial_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp1_01
+		}
+	}
+	
+	1228.1.1 = {
+		birth = yes
+	}
+
+	1250.10.8 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+}
+#c_malawka
+voluntic_partic_28 = {
+	name = "Cannog"
+	dynasty = dyn_partic_4
+	religion = "partic"
+	culture = "voluntic"
+	female = no
+	trait = education_martial_1
+
+	1227.1.1 = {
+		birth = yes
+	}
+
+	1250.10.8 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+}
+
+#c_budalis
+voluntic_partic_29 = {
+	name = "Draois"
+	dynasty = dyn_partic_8
+	dna = voluntic_partic_29
+	religion = "partic"
+	culture = "voluntic"
+	female = yes
+	trait = education_diplomacy_2
+	trait = gregarious
+	trait = ambitious
+	trait = beauty_good_2
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_northern_02
+		}
+	}
+	
+	1229.1.1 = {
+		birth = yes
+	}
+	
+	1250.1.1 = {
+		add_spouse = voluntic_partic_25
+	}
+
+	1250.10.8 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+}

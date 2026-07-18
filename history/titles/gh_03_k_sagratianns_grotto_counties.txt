@@ -1,0 +1,20 @@
+c_mayik_caves_16 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_caves_17 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_caves_21 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_corridor_16 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

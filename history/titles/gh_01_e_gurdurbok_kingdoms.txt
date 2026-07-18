@@ -1,0 +1,26 @@
+k_niidinia = {
+	1.1.1 = {
+		holder = unsorted_17
+	}
+	40.2.21 = {
+		holder = 0
+	}
+	1248.10.11 = {
+		holder = apokiakas_aversarinas_aagiokratia_23
+	}
+}
+
+k_vyshtanka = {
+	1.1.1 = {
+		holder = unsorted_17
+	}
+	40.2.21 = {
+		holder = 0
+	}
+	1240.7.12 = {
+		holder = sarridians_aversarinas_aagiokrata_1
+	}
+	1247.10.17 = {
+		holder = 0
+	}
+}

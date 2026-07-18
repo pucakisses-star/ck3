@@ -1,0 +1,243 @@
+c_auberley = {
+	850.1.1 = {
+		holder = voyagen_lifepath_41 #Valcioc d'va Melsne
+	}
+	878.3.7 = {
+		holder = voyagen_lifepath_42 #Naulet d'va Melsne
+	}
+	890.4.19 = {
+		holder = voyagen_lifepath_38 #Louise den va Seignon
+	}
+	902.2.22 = {
+		holder = voyagen_lifepath_39 #Gardfrei den va Seignon
+	}
+	934.5.6 = {
+		holder = voyagen_lifepath_40 #Rodald den va Seignon
+	}
+	1253.1.1 = {
+		liege = "k_de_porte_de_bastione"
+		holder = trustians_lifepath_5
+	}
+}
+c_sant_de_ranos = {
+	1.1.2 = {
+		holder = unsorted_28
+	}
+	79.1.1 = {
+		holder = shewigad_starvayrd_3
+	}
+	897.7.1 = {
+		holder = voyagen_lifepath_38 #Louise den va Seignon
+	}
+	902.2.22 = {
+		holder = voyagen_lifepath_39 #Gardfrei den va Seignon
+	}
+	934.5.6 = {
+		holder = voyagen_lifepath_40 #Rodald den va Seignon
+	}
+	940.9.15 = { # Rodald's Abdication, gave rise to Huegons
+		holder = voyagen_lifepath_31 #Huegons
+	}
+	963.5.15 = {
+		holder = voyagen_lifepath_30 #Agiers
+	}
+	974.12.22 = {
+		holder = voyagen_lifepath_29 #Rémis
+	}
+	1025.4.26 = {
+		holder = voyagen_lifepath_28 #Bredan
+	}
+	1055.2.30 = {
+		holder = voyagen_lifepath_27 #Oliers
+	}
+	1077.4.27 = {
+		holder = voyagen_lifepath_26 #Valden
+	}
+	1253.1.1 = {
+		liege = "k_de_porte_de_bastione"
+		holder = voyagen_lifepath_66
+	}
+}
+c_tillieze = {
+	1218.3.16 = {
+		liege = "e_chevalie"
+		holder = voyagen_lifepath_78
+	}
+	1227.4.30 = {
+		liege = "e_chevalie"
+		holder = voyagen_lifepath_1
+	}
+	1227.10.19 = {
+		liege = "e_chevalie"
+		holder = voyagen_lifepath_76
+	}
+	1253.11.12 = {
+		liege = "k_de_porte_de_bastione"
+		holder = voyagen_lifepath_13
+	}
+}
+#c_arlanex = {
+#	1129.8.5 = {
+#		liege = "k_de_porte_de_bastione"
+#		holder = voyagen_lifepath_59
+#	}
+#	1169.11.14 = {
+#		liege = "k_de_porte_de_bastione"
+#		holder = voyagen_lifepath_60
+# 	}
+#	1201.1.2 = {
+#		liege = "k_de_porte_de_bastione"
+#		holder = voyagen_lifepath_61
+#	}
+#	1222.4.30 = {
+#		liege = "k_de_porte_de_bastione"
+#		holder = voyagen_lifepath_62
+#	}
+#	1253.3.23 = {
+#		liege = "k_de_porte_de_bastione"
+#		holder = voyagen_lifepath_12
+#	}
+#}
+c_lestoffe = {
+	1129.8.5 = {
+		liege = "k_de_porte_de_bastione"
+		holder = voyagen_lifepath_59
+	}
+	1169.11.14 = {
+		liege = "k_de_porte_de_bastione"
+		holder = voyagen_lifepath_60
+ 	}
+	1201.1.2 = {
+		liege = "k_de_porte_de_bastione"
+		holder = voyagen_lifepath_61
+	}
+	1222.4.30 = {
+		liege = "k_de_porte_de_bastione"
+		holder = voyagen_lifepath_62
+	}
+	1253.3.23 = {
+		liege = "k_de_porte_de_bastione"
+		holder = voyagen_lifepath_12
+	}
+}
+c_clois = {
+	1.1.2 = {
+		holder = unsorted_28
+	}
+	79.1.1 = {
+		holder = shewigad_starvayrd_3
+	}
+	1253.1.1 = {
+		liege = "d_clois_en_cleusaun"
+		holder = trustians_lifepath_16
+	}
+}
+c_andalau = {
+	1253.1.1 = {
+		liege = "k_de_porte_de_bastione"
+		holder = voyagen_lifepath_67
+	}
+}
+c_provincenewgonnela = {
+	1253.1.1 = {
+		liege = "k_de_porte_de_bastione"
+		holder = voyagen_lifepath_67
+	}
+}
+c_cande = {
+	1253.1.1 = {
+		liege = "k_de_porte_de_bastione"
+		holder = voyagen_lifepath_69
+	}
+}
+c_chevalie_islands_2 = {
+	1253.1.1 = {
+		liege = "k_de_porte_de_bastione"
+		holder = voyagen_lifepath_69
+	}
+}
+c_de_bassneux = {
+	850.1.1 = {
+		holder = voyagen_lifepath_41 #Valcioc d'va Melsne
+	}
+	878.3.7 = {
+		holder = voyagen_lifepath_42 #Naulet d'va Melsne
+	}
+	890.4.19 = {
+		holder = voyagen_lifepath_38 #Louise den va Seignon
+	}
+	902.2.22 = {
+		holder = voyagen_lifepath_39 #Gardfrei den va Seignon
+	}
+	934.5.6 = {
+		holder = voyagen_lifepath_40 #Rodald den va Seignon
+	}
+	962.4.12  = {
+		holder = voyagen_lifepath_52
+	}
+	1000.12.23  = {
+		holder = voyagen_lifepath_54
+	}
+	1060.2.15  = {
+		holder = voyagen_lifepath_55
+	}
+	1080.7.20 = {
+		holder = voyagen_lifepath_56
+	}
+	1095.2.28 = {
+		holder = voyagen_lifepath_25
+	}
+	1140.3.25 = {
+		holder = voyagen_lifepath_24
+ 	}
+	1166.7.21 = {
+		holder = voyagen_lifepath_23
+	}
+	1199.9.26 = {
+		holder = voyagen_lifepath_22
+	}
+	1217.4.12 = {
+		holder = voyagen_lifepath_1
+	}
+	1253.11.12 = {
+		holder = voyagen_lifepath_7
+	}
+}
+c_methons = {
+	1198.5.22 = {
+		holder = voyagen_lifepath_77
+	}
+	1222.1.12 = {
+		holder = voyagen_lifepath_1
+	}
+	1253.11.12 = {
+		holder = voyagen_lifepath_7
+	}
+}
+c_arrsaux = {
+	1.1.2 = {
+		holder = unsorted_24
+	}
+	60.1.1 = {
+		holder = wasteland
+	}
+	1029.2.23 = {
+		holder = voyagen_lifepath_91
+		liege = "k_de_porte_de_bastione"
+	}
+	1253.11.12 = {
+		holder = voyagen_lifepath_7
+	}
+}
+c_nessaut = {
+	1.1.2 = {
+		holder = unsorted_24
+	}
+	60.1.1 = {
+		holder = wasteland
+	}
+	1249.11.15 = {
+		holder = sceyfig_lighter_lifepath_1
+		liege = "k_de_porte_de_bastione"
+	}
+}

@@ -1,0 +1,2048 @@
+2414 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+3384 = {
+	culture = meistras
+	religion = oirigan
+	holding = castle_holding
+}
+
+3889 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4028 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4129 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+4273 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+4274 = {
+	holding = city_holding
+}
+
+4275 = {
+	culture = meistras
+	religion = oirigan
+	holding = castle_holding
+}
+
+
+4276 = {
+	holding = none
+}
+
+
+4278 = {
+	culture = meistras
+	religion = oirigan
+	holding = castle_holding
+}
+
+4279 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+
+4280 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4281 = {
+	culture = ukininkas
+	religion = oirigan
+	holding = castle_holding
+}
+
+
+4282 = {
+	culture = ukininkas
+	religion = oirigan
+	holding = castle_holding
+}
+
+4283 = {
+	holding = none
+}
+
+4284 = {
+	holding = none
+}
+
+4285 = {
+	culture = meistras
+	religion = oirigan
+	holding = castle_holding
+}
+
+4286 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4287 = {
+	culture = meistras
+	religion = oirigan
+	holding = castle_holding
+}
+
+4288 = {
+	culture = meistras
+	religion = oirigan
+	holding = castle_holding
+}
+
+
+4289 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+
+
+
+
+4291 = {
+	culture = skausmas
+	religion = dejorig
+	holding = castle_holding
+}
+
+
+
+4292 = {
+	holding = none
+}
+
+4293 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4294 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4295 = {
+	culture = mineris
+	religion = dejorig
+	holding = castle_holding
+}
+
+4297 = {
+	holding = none
+}
+
+4298 = {
+	holding = none
+}
+
+4299 = {
+	holding = castle_holding
+	650.1.1 = {
+		special_building = 01_mayikprolollan
+	}
+}
+
+4300 = {
+	holding = city_holding
+	650.1.1 = {
+		special_building = 01_mayikprolollan
+	}
+}
+
+4301 = {
+	holding = none
+}
+
+4303 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4304 = {
+	culture = practitioner
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4305 = {
+	culture = practitioner
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4307 = {
+	culture = mineris
+	religion = dejorig
+	holding = castle_holding
+}
+
+4308 = {
+	holding = none
+}
+
+4309 = {
+	holding = none
+}
+
+4310 = {
+	culture = practitioner
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	650.1.1 = {
+		special_building = 01_mayikprolollan
+	}
+}
+
+
+4311 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4312 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4314 = {
+	culture = practitioner
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4315 = {
+	culture = practitioner
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4316 = {
+	holding = none
+}
+
+4317 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4318 = {
+	culture = mineris
+	religion = dejorig
+	holding = castle_holding
+}
+
+4319 = {
+	culture = mineris
+	religion = dejorig
+	holding = castle_holding
+}
+
+4322 = {
+	culture = mineris
+	religion = dejorig
+	holding = castle_holding
+}
+
+
+4323 = {
+	holding = none
+}
+
+4325 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4326 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4327 = {
+	culture = mineris
+	religion = dejorig
+	holding = castle_holding
+}
+
+4328 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4329 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+4330 = {
+	holding = city_holding
+}
+
+4331 = {
+	holding = none
+}
+
+4659 = {
+	culture = meistras
+	religion = oirigan
+	holding = castle_holding
+}
+
+4660 = {
+	holding = none
+}
+
+4661 = {
+	culture = daukeni
+	religion = sjalvolki
+	holding = tribal_holding
+}
+
+4662 = {
+	holding = none
+}
+
+4663 = {
+	holding = none
+}
+
+4685 = {
+	holding = none
+}
+
+5074 = {
+	holding = none
+}
+
+5077 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5162 = {
+	holding = none
+}
+
+5229 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+5232 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+6016 = {
+	culture = practitioner
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+6026 = {
+	culture = ukininkas
+	religion = oirigan
+	holding = castle_holding
+}
+
+6027 = {
+	culture = ukininkas
+	religion = oirigan
+	holding = castle_holding
+}
+
+6054 = {
+	culture = practitioner
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+6131 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+6136 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6137 = {
+	holding = none
+}
+
+6138 = {
+	holding = none
+}
+
+6142 = {
+	religion = orndaehz
+	culture = druhandaehzag
+	holding = castle_holding
+}
+
+
+
+6147 = {
+	culture = trustians
+	religion = lifepath
+	holding = tribal_holding
+}
+
+6154 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6160 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6162 = {
+		culture = penetworin
+		religion = ethowos
+		holding = tribal_holding
+	}
+
+6164 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6167 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6170 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6171 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6267 = {
+	holding = none
+}
+
+6271 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6314 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6321 = {
+		culture = penetworin
+		religion = ethowos
+		holding = tribal_holding
+	}
+
+6339 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+
+6356 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6360 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+6416 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+6436 = {
+	holding = city_holding
+}
+
+
+
+6486 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6512 = {
+	culture = penetworin
+	religion = ethowos
+	holding = tribal_holding
+}
+
+6519 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+6522 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+6533 = {
+	holding = none
+}
+
+6542 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6560 = {
+	holding = ruin_holding
+}
+
+
+
+
+6588 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6589 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6598 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6608 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6614 = {
+	holding = none
+}
+
+
+6658 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+6667 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+6730 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6746 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+
+
+
+6779 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6792 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6818 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+6846 = {
+	holding = none
+}
+
+
+6847 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6848 = {
+	holding = none
+}
+
+6849 = {
+	culture = nevtanei
+	religion = karannai
+	holding = tribal_holding
+}
+
+
+6856 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6864 = {
+	culture = nevtanei
+	religion = karannai
+	holding = tribal_holding
+}
+
+
+6874 = {
+	holding = none
+}
+
+6875 = {
+	holding = none
+}
+
+6879 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6880 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+6890 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6891 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6892 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6899 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6916 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6941 = {
+	holding = none
+}
+
+
+6944 = {
+	culture = practitioner
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+6946 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6951 = {
+	religion = oulaupi
+	culture = dodragn
+	holding = tribal_holding
+}
+
+
+6954 = {
+	culture = penetworin
+	religion = ethowos
+	holding = tribal_holding
+}
+
+6960 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6974 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6977 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6993 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6994 = {
+	religion = ethowos
+	culture = penetworin
+	holding = tribal_holding
+}
+
+6996 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7002 = {
+	holding = city_holding
+}
+
+7012 = {
+	religion = cosnaupi
+	culture = krupleg
+	holding = tribal_holding
+}
+
+
+7014 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7018 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7050 = {
+	religion = aversarinas_aagiokrata
+	culture = practitioner
+	holding = city_holding
+}
+
+7059 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7083 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7088 = {
+	culture = skausmas
+	religion = dejorig
+	holding = castle_holding
+}
+
+7091 = {
+	holding = none
+}
+
+7100 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7108 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+7154 = {
+	holding = none
+}
+
+7155 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7170 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7171 = {
+	religion = oulaupi
+	culture = krupleg
+	holding = tribal_holding
+	special_building = 01_great_guerlogs_bowl
+}
+
+
+7186 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7204 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+7247 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7283 = {
+	religion = oulaupi
+	culture = krupleg
+	holding = tribal_holding
+}
+
+7334 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7372 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7393 = {
+	religion = cosnaupi
+	culture = krupleg
+	holding = tribal_holding
+}
+
+
+
+7412 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7442 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7446 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7451 = {
+	culture = hrunzag
+	religion = oulaupi
+	holding = tribal_holding
+}
+
+7681 = {
+	holding = none
+}
+
+7458 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7465 = {
+	religion = oulaupi
+	culture = hrunzag
+	holding = tribal_holding
+}
+
+7019 = {
+	holding = none
+}
+
+7472 = {
+	religion = oulaupi
+	culture = krupleg
+	holding = tribal_holding
+}
+
+
+
+
+7535 = {
+	culture = practitioner
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+7591 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+7600 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7602 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+7603 = {
+	holding = church_holding
+}
+
+7606 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7609 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+7656 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+7679 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7709 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7713 = {
+	religion = oulaupi
+	culture = krupleg
+	holding = tribal_holding
+}
+
+7714 = {
+	holding = none
+}
+
+7740 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7743 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7750 = {
+	holding = none
+}
+
+7775 = {
+	religion = aversarinas_aagiokrata
+	culture = practitioner
+	holding = castle_holding
+}
+
+7780 = {
+	culture = zoldagn
+	religion = solungvend
+	holding = tribal_holding
+}
+
+
+7937 = {
+	holding = none
+}
+
+7783 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7795 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7837 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7856 = {
+	culture = practitioner
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+7892 = {
+	culture = practitioner
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+7932 = {
+	culture = practitioner
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+7945 = {
+	culture = penetworin
+	religion = ethowos
+	holding = tribal_holding
+}
+
+7959 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7975 = {
+	culture = penetworin
+	religion = ethowos
+	holding = tribal_holding
+}
+
+7989 = {
+	holding = none
+}
+
+7997 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8003 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8087 = {
+	culture = hrunzag
+	religion = oulaupi
+	holding = tribal_holding
+}
+
+
+8127 = {
+	religion = orndaehz
+	culture = druhandaehzag
+	holding = tribal_holding
+}
+
+8116 = {
+	holding = none
+}
+
+8158 = {
+	religion = orndaehz
+	culture = druhandaehzag
+	holding = tribal_holding
+}
+
+8274 = {
+	holding = none
+}
+
+8160 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8165 = {
+	religion = oulaupi
+	culture = hrunzag
+	holding = tribal_holding
+}
+
+
+
+
+8223 = {
+	culture = mineris
+	religion = dejorig
+	holding = castle_holding
+}
+
+8237 = {
+	holding = none
+}
+
+8285 = {
+	religion = orndaehz
+	culture = druhandaehzag
+	holding = tribal_holding
+}
+
+
+
+8328 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+8334 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8335 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8336 = {
+	holding = none
+}
+
+8338 = {
+	holding = castle_holding
+}
+
+8358 = {
+	culture = skausmas
+	religion = dejorig
+	holding = castle_holding
+}
+
+8364 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+
+8368 = {
+	holding = church_holding
+}
+
+8370 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+
+
+
+8373 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8378 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8389 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8404 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8407 = {
+		culture = penetworin
+		religion = ethowos
+		holding = tribal_holding
+	}
+
+
+8418 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+8423 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+8431 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8434 = {
+	holding = none
+}
+
+8436 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8437 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8451 = {
+	holding = none
+}
+
+8452 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8455 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8458 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+8468 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8470 = {
+	culture = zoldagn
+	religion = solungvend
+	holding = tribal_holding
+}
+
+8946 = {
+	holding = none
+}
+
+
+8488 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8490 = {
+	religion = ethowos
+	culture = penetworin
+	holding = tribal_holding
+}
+
+8523 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8538 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8557 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+8565 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8574 = {
+	holding = none
+}
+
+8575 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+
+8583 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8597 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8600 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8607 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8608 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+8622 = {
+	holding = none
+}
+
+8627 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8640 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8642 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+8651 = {
+	religion = aversarinas_aagiokrata
+	culture = practitioner
+	holding = castle_holding
+}
+
+8652 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8657 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+
+8664 = {
+	religion = aversarinas_aagiokrata
+	culture = practitioner
+	holding = castle_holding
+}
+
+
+8676 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8689 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8692 = {
+	holding = none
+}
+
+8693 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8703 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8709 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8712 = {
+	religion = aversarinas_aagiokrata
+	culture = practitioner
+	holding = city_holding
+}
+
+8717 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8723 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+8819 = {
+	holding = none
+}
+
+
+8833 = {
+	religion = oulaupi
+	culture = dodragn
+	holding = tribal_holding
+}
+
+8862 = {
+	holding = none
+}
+
+
+
+
+
+8864 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8867 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8868 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8877 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8911 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8912 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+
+
+
+8920 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+8921 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+
+
+8927 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8928 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8929 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+8931 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8932 = {
+	culture = mineris
+	religion = dejorig
+	holding = castle_holding
+}
+
+8933 = {
+	culture = penetworin
+	religion = ethowos
+	holding = tribal_holding
+}
+
+8934 = {
+	holding = none
+}
+
+8935 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+8936 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8937 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8938 = {
+	holding = none
+}
+
+
+
+8940 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+
+8942 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8943 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+
+
+8959 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8960 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8963 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8966 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8968 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8969 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+8977 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8979 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+8981 = {
+	holding = none
+}
+
+8982 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8983 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8987 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+8992 = {
+	holding = none
+}
+
+8993 = {
+	culture = penetworin
+	religion = ethowos
+	holding = tribal_holding
+}
+
+8996 = {
+	holding = none
+}
+
+8997 = {
+	culture = penetworin
+	religion = ethowos
+	holding = tribal_holding
+
+}
+
+8998 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8999 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+9001 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9002 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+9005 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9006 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+9007 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+
+
+9017 = {
+	holding = none
+}
+
+9021 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9024 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9025 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9027 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9028 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9032 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9039 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9040 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+
+9058 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+9062 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9063 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9084 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+9086 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9090 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+9124 = {
+	holding = none
+}
+
+
+9129 = {
+	holding = none
+}
+
+9132 = {
+	holding = church_holding
+}
+
+9134 = {
+	holding = none
+}
+
+9137 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+
+9141 = {
+	culture = mineris
+	religion = dejorig
+	holding = castle_holding
+}
+
+3699 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7370 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6003 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8051 = {
+	holding = none
+}
+
+
+6869 = {
+	holding = none
+}
+
+6870 = {
+	holding = none
+}
+
+
+7099 = {
+	culture = mineris
+	religion = dejorig
+	holding = castle_holding
+}

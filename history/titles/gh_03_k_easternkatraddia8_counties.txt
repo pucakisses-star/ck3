@@ -1,0 +1,30 @@
+c_easternkatraddia131 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia123 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia122 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia127 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia125 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia128 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

@@ -1,0 +1,1099 @@
+﻿barki_sjalvolki_1 = {
+	name = "Rodna"
+	female = yes
+	religion = "sjalvolki"
+	culture = "barki"
+
+	1212.4.12 = {
+		birth = yes
+	}
+
+	1228.4.12 = {
+		trait = gh_historical_track_hunter_1
+	}
+}
+
+barki_sjalvolki_2 = {
+	name = "Goswin"
+	dynasty = dyn_sjalvolki_15
+	religion = "sjalvolki"
+	culture = "barki"
+
+	father = barki_sjalvolki_11
+	mother = fog_eaters_fogeater_146
+
+	1205.4.12 = {
+		birth = yes
+		trait = albino
+	}
+
+	1225.4.12 = {
+		trait = ambitious
+		trait = patient
+		trait = calm
+		trait = education_diplomacy_3
+	}
+
+	1243.2.28 = {
+        add_spouse = barki_sjalvolki_18
+    }
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+
+	1266.4.16 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+barki_sjalvolki_3 = {
+	name = "Vocik" #Formerly Boddic
+	religion = "sjalvolki"
+	culture = "barki"
+	dynasty = dyn_sjalvolki_40
+
+	father = barki_sjalvolki_14
+
+	1226.4.12 = {
+		birth = yes
+		trait = intellect_good_1
+		trait = twin
+	}
+
+	1242.4.12 = {
+		trait = gh_historical_track_hunter_1
+	}
+
+	1279.4.13 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+barki_sjalvolki_4 = {
+	name = "Imma"
+	religion = "sjalvolki"
+	culture = "barki"
+	female = yes
+
+	1221.4.12 = {
+		birth = yes
+	}
+
+	1240.9.22 = {
+		add_matrilineal_spouse = barki_sjalvolki_6
+	}
+
+	1237.4.12 = {
+		trait = gh_historical_track_hunter_2
+	}
+
+	1278.10.15 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+barki_sjalvolki_5 = {
+	name = "Virnek" #Warinechin
+	religion = "sjalvolki"
+	culture = "barki"
+
+	1230.4.12 = {
+		birth = yes
+	}
+
+	1246.3.14 = {
+		add_spouse = barki_sjalvolki_8
+	}
+
+	1286.3.3 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+barki_sjalvolki_6 = {
+	name = "Ditroj"
+	religion = "sjalvolki"
+	culture = "barki"
+
+	1215.4.12 = {
+		birth = yes
+	}
+
+	1259.4.1 = {
+		death = { death_reason = death_hunting_accident }
+	}
+}
+
+barki_sjalvolki_7 = {
+	name = "Donar"
+	religion = "sjalvolki"
+	culture = "barki"
+	dynasty = dyn_sjalvolki_47
+	1211.4.12 = {
+		birth = yes
+	}
+
+	1253.7.22 = {
+        add_spouse = barki_sjalvolki_44
+    }
+
+    1266.11.7 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+barki_sjalvolki_8 = {
+	name = "Jolka"
+	religion = "sjalvolki"
+	culture = "barki"
+	female = yes
+
+	1222.4.12 = {
+		birth = yes
+	}
+
+	1291.6.19 = {
+		religion = orispolj_rite
+	}
+}
+
+barki_sjalvolki_9 = {
+	name = "Virnek" #Werneke
+	religion = "sjalvolki"
+	culture = "barki"
+
+	1202.4.12 = {
+		birth = yes
+	}
+
+	1225.11.6 = {
+        add_spouse = barki_sjalvolki_30
+    }
+	1240.4.12 = {
+		trait = gh_historical_track_hunter_2
+	}
+
+	1259.3.28 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+barki_sjalvolki_10 = {
+	name = "Vulkinj" #Floki
+	dynasty = dyn_central_empire_14
+	religion = "sjalvolki"
+	culture = "barki"
+
+	1226.4.12 = {
+		birth = yes
+	}
+}
+
+barki_sjalvolki_11 = { # Ilya 'Lover-Killer', Sjalvolki champion at the Battle of Ten Trees
+	name = "Ilya"
+	religion = "sjalvolki"
+	culture = "barki"
+	dynasty = dyn_sjalvolki_15
+	disallow_random_traits = yes
+
+	martial = 3
+	diplomacy = 4
+	stewardship = 7
+	intrigue = 6
+	learning = 5
+	prowess = 4
+
+	1183.9.12 = {
+		birth = yes
+		trait = albino
+	}
+
+	1195.1.1 = {
+		trait = just
+		trait = deceitful
+		trait = trusting
+	}
+
+	1199.9.12 = {
+		trait = education_martial_3
+		trait = forder
+	}
+
+	1204.5.15 = {
+		add_spouse = fog_eaters_fogeater_146
+	}
+
+	1228.7.26 = {
+		trait = gh_historical_blademaster_3
+		trait = depressed_1
+		give_nickname = nick_lover_killer
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	1247.3.15 = { # Ten Trees
+		death = {
+			death_reason = death_battle
+			killer = northernimperial_aversarinas_aagiokrata_55
+		}
+	}
+}
+
+barki_sjalvolki_12 = {
+	name = "Radjavik"
+	religion = "sjalvolki"
+	culture = "barki"
+	dynasty = dyn_sjalvolki_15
+	disallow_random_traits = yes
+
+	father = barki_sjalvolki_11
+	mother = fog_eaters_fogeater_146
+
+	martial = 4
+	diplomacy = 8
+	stewardship = 5
+	intrigue = 3
+	learning = 5
+	prowess = 5
+
+	1203.6.22 = {
+		birth = yes
+		trait = albino
+	}
+
+	1215.1.1 = {
+		trait = brave
+		trait = humble
+		trait = wrathful
+	}
+
+	1219.6.22 = {
+		trait = education_martial_2
+		trait = aggressive_attacker
+	}
+
+	1246.7.26 = { # Killed by the Butcher of the Barki
+		death = {
+			death_reason = death_battle
+			killer = northernimperial_aversarinas_aagiokrata_54
+		}
+	}
+}
+
+barki_sjalvolki_13 = { # Nicanoneus' mom
+	name = "Mirkvela"
+	religion = "sjalvolki"
+	culture = "barki"
+	dynasty = dyn_sjalvolki_40
+	disallow_random_traits = yes
+	female = yes
+
+	father = barki_sjalvolki_15
+
+	martial = 5
+	diplomacy = 9
+	stewardship = 7
+	intrigue = 7
+	learning = 3
+	prowess = 6
+
+	1192.5.11 = {
+		birth = yes
+		trait = intellect_good_2
+	}
+
+	1204.1.1 = {
+		trait = diligent
+		trait = temperate
+		trait = forgiving
+	}
+
+	1208.5.11 = {
+		trait = education_learning_3
+		trait = lifestyle_herbalist
+	}
+
+	1238.1.4 = {
+		death = {
+			death_reason = death_fog
+		}
+	}
+}
+
+barki_sjalvolki_14 = { # Nicanoneus' Barki uncle
+	name = "Adraj"
+	religion = "sjalvolki"
+	culture = "barki"
+	dynasty = dyn_sjalvolki_40
+	disallow_random_traits = yes
+
+	father = barki_sjalvolki_15
+
+	martial = 3
+	diplomacy = 7
+	stewardship = 4
+	intrigue = 8
+	learning = 5
+	prowess = 4
+
+	1199.7.2 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+
+	1211.1.1 = {
+		trait = brave
+		trait = honest
+		trait = compassionate
+	}
+
+	1215.7.2 = {
+		trait = education_diplomacy_2
+		trait = gh_historical_track_hunter_2
+	}
+
+	1246.7.26 = { # Killed by the Butcher of the Barki
+		death = {
+			death_reason = death_battle
+			killer = northernimperial_aversarinas_aagiokrata_54
+		}
+	}
+}
+
+barki_sjalvolki_15 = { # Nicanoneus' Barki grandfather
+	name = "Oledmir"
+	religion = "sjalvolki"
+	culture = "barki"
+	dynasty = dyn_sjalvolki_40
+	disallow_random_traits = yes
+
+	martial = 4
+	diplomacy = 6
+	stewardship = 5
+	intrigue = 7
+	learning = 6
+	prowess = 4
+
+	1165.10.5 = {
+		birth = yes
+	}
+
+	1177.1.1 = {
+		trait = calm
+		trait = vengeful
+		trait = stubborn
+	}
+
+	1181.10.5 = {
+		trait = education_intrigue_4
+		trait = shrewd
+	}
+
+	1220.9.11 = {
+		death = {
+			death_reason = death_fog
+		}
+	}
+}
+
+barki_sjalvolki_16 = { # Nicanoneus' Barki cousin
+	name = "Dobovolk"
+	religion = "sjalvolki"
+	culture = "barki"
+	dynasty = dyn_sjalvolki_40
+	disallow_random_traits = yes
+
+	father = barki_sjalvolki_14
+
+	martial = 6
+	diplomacy = 8
+	stewardship = 2
+	intrigue = 4
+	learning = 3
+	prowess = 4
+
+	1225.5.1 = {
+		birth = yes
+	}
+
+	1237.1.1 = {
+		trait = wrathful
+		trait = gregarious
+		trait = paranoid
+	}
+
+	1241.5.1 = {
+		trait = education_martial_2
+		trait = berserker
+	}
+
+	1246.7.26 = { # Killed by the Butcher of the Barki
+		death = {
+			death_reason = death_battle
+			killer = northernimperial_aversarinas_aagiokrata_54
+		}
+	}
+}
+
+barki_sjalvolki_17 = {
+	name = "Oledmir"
+	religion = "sjalvolki"
+	culture = "barki"
+	dynasty = dyn_sjalvolki_40
+	disallow_random_traits = yes
+
+	father = barki_sjalvolki_3
+
+	martial = 7
+	diplomacy = 4
+	stewardship = 3
+	intrigue = 6
+	learning = 5
+	prowess = 4
+	trait = bossy
+
+	1250.5.17 = {
+		birth = yes
+		trait = twin
+	}
+}
+
+barki_sjalvolki_18a = {
+	name = "Adraj"
+	religion = "sjalvolki"
+	culture = "barki"
+	dynasty = dyn_sjalvolki_40
+	disallow_random_traits = yes
+
+	father = barki_sjalvolki_3
+
+	martial = 4
+	diplomacy = 4
+	stewardship = 5
+	intrigue = 4
+	learning = 4
+	prowess = 5
+	trait = curious
+
+	1250.5.17 = {
+		birth = yes
+		trait = twin
+	}
+
+	1291.6.19 = {
+		religion = orispolj_rite
+	}
+}
+
+
+barki_sjalvolki_18 = {
+    name = "Drevmiha" 
+    female = yes
+
+    religion = sjalvolki
+    culture = barki
+    dynasty = dyn_sjalvolki_40
+
+    father = barki_sjalvolki_14
+    sexuality = heterosexual
+
+    trait = gluttonous
+    trait = vengeful
+    trait = fickle
+
+    1226.4.12 = {
+        birth = yes
+        trait = twin
+    }
+
+    1277.6.19 = {
+    	#culture = itnicavingi
+    }
+
+    1289.5.3 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+barki_sjalvolki_19 = {
+    name = "Valkvel" 
+
+    dynasty = dyn_sjalvolki_15
+    religion = sjalvolki
+    culture = barki
+
+    father = barki_sjalvolki_2
+    mother = barki_sjalvolki_18
+
+    sexuality = heterosexual
+
+    trait = generous
+    trait = wrathful
+    trait = gluttonous
+    trait = drunkard
+
+    1249.7.24 = {
+        birth = yes
+    }
+
+    1276.6.16 = {
+        add_spouse = barki_sjalvolki_20
+    }
+
+    1277.6.19 = {
+    	#culture = itnicavingi
+    }
+
+    1287.6.9 = {
+    	death = { death_reason = death_battle } # killed fighting rabid sjalvolki warriors
+    }
+}
+
+barki_sjalvolki_20 = {
+    name = "Jormiha" 
+    female = yes
+
+    religion = sjalvolki
+    culture = barki
+
+    sexuality = heterosexual
+
+    trait = brave
+    trait = deceitful
+    trait = compassionate
+
+    1257.3.13 = {
+        birth = yes
+    }
+    1291.6.19 = {
+    	religion = orispolj_rite
+    	#culture = itnicavingi
+    }
+}
+
+barki_sjalvolki_21 = {
+    name = "Valkrona" 
+    female = yes
+
+    religion = orispolj_rite
+    ##culture = itnicavingi
+
+    father = barki_sjalvolki_19
+    mother = barki_sjalvolki_20
+
+    sexuality = heterosexual
+
+    1276.5.19 = {
+        birth = yes
+    }
+
+    1298.1.1 = {
+    	trait = deceitful
+    	trait = gregarious
+    	trait = fickle
+    	trait = education_intrigue_2
+    }
+}
+
+barki_sjalvolki_22 = {
+    name = "Havril" 
+
+    religion = orispolj_rite
+    ##culture = itnicavingi
+
+    father = barki_sjalvolki_19
+    mother = barki_sjalvolki_20
+
+    sexuality = bisexual
+
+    1279.9.3 = {
+        birth = yes
+    }
+
+    1298.1.1 = {
+    	trait = callous
+    	trait = diligent
+    	trait = patient
+    	trait = education_stewardship_4
+    }
+}
+
+barki_sjalvolki_23 = {
+    name = "Dvika" 
+    female = yes
+
+    religion = orispolj_rite
+    ##culture = itnicavingi
+
+    father = barki_sjalvolki_19
+    mother = barki_sjalvolki_20
+
+    sexuality = heterosexual
+
+    1285.4.9 = {
+        birth = yes
+    }
+}
+
+barki_sjalvolki_24 = {
+    name = "Irlovek" 
+
+    dynasty = dyn_sjalvolki_15
+    religion = sjalvolki
+    culture = barki
+
+    father = barki_sjalvolki_2
+    mother = barki_sjalvolki_18
+
+    sexuality = heterosexual
+
+    trait = vengeful
+    trait = wrathful
+    trait = gluttonous
+
+    1253.4.14 = {
+        birth = yes
+    }
+
+    1280.3.21 = {
+        add_spouse = barki_sjalvolki_25
+    }
+
+    1291.6.19 = {
+    	religion = orispolj_rite
+    	#culture = itnicavingi
+    }
+}
+
+barki_sjalvolki_25 = {
+    name = "DrevC_a" 
+    female = yes
+
+    religion = sjalvolki
+    culture = barki
+
+    sexuality = heterosexual
+
+    trait = paranoid
+    trait = brave
+    trait = ambitious
+
+    1263.10.13 = {
+        birth = yes
+    }
+
+    1277.6.19 = {
+    	religion = orispolj_rite
+    	#culture = itnicavingi
+    }
+}
+
+barki_sjalvolki_26 = {
+    name = "BorC_a" 
+    female = yes
+
+    religion = orispolj_rite
+    ##culture = itnicavingi
+
+    father = barki_sjalvolki_24
+    mother = barki_sjalvolki_25
+
+    sexuality = heterosexual
+
+    trait = brave
+    trait = honest
+    trait = just
+
+    1280.5.23 = {
+        birth = yes
+    }
+}
+
+barki_sjalvolki_27 = {
+    name = "Kelnvolk" 
+
+    dynasty = dyn_sjalvolki_15
+    religion = orispolj_rite
+    ##culture = itnicavingi
+
+    father = barki_sjalvolki_24
+    mother = barki_sjalvolki_25
+
+    sexuality = heterosexual
+
+    trait = content
+    trait = arbitrary
+    trait = greedy
+
+    1282.8.13 = {
+        birth = yes
+    }
+}
+
+barki_sjalvolki_28 = {
+    name = "Irvoka" 
+    female = yes
+
+    religion = orispolj_rite
+    ##culture = itnicavingi
+
+    1298.1.3 = {
+        birth = yes
+    }
+
+}
+
+barki_sjalvolki_29 = {
+    name = "Dovuka" 
+    female = yes
+
+    religion = orispolj_rite
+    ##culture = itnicavingi
+
+    father = barki_sjalvolki_24
+    mother = barki_sjalvolki_25
+
+    sexuality = heterosexual
+
+    1287.9.1 = {
+        birth = yes
+    }
+}
+
+
+barki_sjalvolki_30 = {
+    name = "Kvalnja" 
+    female = yes
+
+    dynasty = dyn_sjalvolki_15
+    religion = "sjalvolki"
+    culture = "barki"
+
+    father = barki_sjalvolki_11
+    mother = fog_eaters_fogeater_146
+
+    sexuality = heterosexual
+
+    trait = impatient
+    trait = sadistic
+    trait = stubborn
+
+    1208.11.8 = {
+        birth = yes
+    }
+
+    1258.9.4 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+barki_sjalvolki_31 = {
+    name = "Oledmir" 
+
+    dynasty = dyn_sjalvolki_46
+    religion = sjalvolki
+    culture = barki
+
+    father = barki_sjalvolki_9
+    mother = barki_sjalvolki_30
+
+    sexuality = heterosexual
+
+    trait = content
+    trait = generous
+    trait = deceitful
+
+    1228.9.20 = {
+        birth = yes
+    }
+
+    1259.11.14 = {
+        add_spouse = barki_sjalvolki_32
+    }
+
+    1281.5.28 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+barki_sjalvolki_32 = {
+    name = "Havrica" 
+    female = yes
+
+    religion = sjalvolki
+    culture = barki
+    father = barki_sjalvolki_6
+    mother = barki_sjalvolki_4
+
+    sexuality = heterosexual
+
+    trait = shy
+    trait = ambitious
+    trait = arrogant
+
+    1242.9.9 = {
+        birth = yes
+    }
+
+    1277.6.19 = {
+    	religion = orispolj_rite
+    }
+
+    1293.9.24 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+barki_sjalvolki_33 = {
+    name = "Dvoja" 
+    female = yes
+
+    religion = sjalvolki
+    culture = barki
+
+    father = barki_sjalvolki_31
+    mother = barki_sjalvolki_32
+
+    sexuality = heterosexual
+
+    trait = forgiving
+    trait = fickle
+    trait = lustful
+
+    1261.3.11 = {
+        birth = yes
+    }
+
+    1277.6.19 = {
+    	religion = orispolj_rite
+    	#culture = itnicavingi
+    }
+
+}
+
+barki_sjalvolki_34 = {
+    name = "Vinko" 
+
+    dynasty = dyn_sjalvolki_46
+    religion = sjalvolki
+    culture = barki
+
+    father = barki_sjalvolki_31
+    mother = barki_sjalvolki_32
+
+    sexuality = heterosexual
+
+    trait = forgiving
+    trait = zealous
+    trait = gregarious
+
+    1267.12.26 = {
+        birth = yes
+    }
+
+    1287.10.17 = {
+        add_spouse = barki_sjalvolki_35
+    }
+
+    1277.6.19 = {
+    	religion = orispolj_rite
+    	#culture = itnicavingi
+    }
+}
+
+barki_sjalvolki_35 = {
+    name = "Mirilda" 
+    female = yes
+
+    religion = sjalvolki
+    culture = barki
+
+    sexuality = heterosexual
+
+    trait = arrogant
+    trait = gluttonous
+    trait = lustful
+
+    1270.11.22 = {
+        birth = yes
+    }
+
+    1277.6.19 = {
+    	religion = orispolj_rite
+    	#culture = itnicavingi
+    }
+}
+
+barki_sjalvolki_36 = {
+    name = "Jozdar" 
+
+    dynasty = dyn_sjalvolki_46
+    religion = orispolj_rite
+    ##culture = itnicavingi
+
+    father = barki_sjalvolki_34
+    mother = barki_sjalvolki_35
+
+    sexuality = heterosexual
+    1292.11.4 = {
+        birth = yes
+    }
+}
+
+
+barki_sjalvolki_38 = {
+    name = "Adroj" 
+
+    dynasty = dyn_sjalvolki_46
+    religion = orispolj_rite
+    ##culture = itnicavingi
+
+    father = barki_sjalvolki_34
+    mother = barki_sjalvolki_35
+
+    sexuality = heterosexual
+
+    1295.8.21 = {
+        birth = yes
+    }
+}
+
+barki_sjalvolki_42 = {
+    name = "Vilmiha" 
+    female = yes
+
+    religion = sjalvolki
+    culture = barki
+
+    father = barki_sjalvolki_31
+    mother = barki_sjalvolki_32
+
+    sexuality = heterosexual
+
+    trait = greedy
+    trait = callous
+    trait = honest
+
+    1268.1.15 = {
+        birth = yes
+    }
+    1277.6.19 = {
+    	religion = orispolj_rite
+    	#culture = itnicavingi
+    }
+}
+
+barki_sjalvolki_43 = {
+    name = "Arlovik"
+    religion = sjalvolki
+    culture = barki
+    father = barki_sjalvolki_6
+    mother = barki_sjalvolki_4
+
+    1249.10.7 = {
+        birth = yes
+    }
+
+    1277.6.19 = {
+        religion = orispolj_rite
+        #culture = itnicavingi
+    }
+}
+
+
+
+barki_sjalvolki_44 = {
+    name = "Dojca" 
+    female = yes
+
+    religion = sjalvolki
+    culture = barki
+
+    sexuality = heterosexual
+
+    trait = callous
+    trait = deceitful
+    trait = cynical
+
+    1229.12.1 = {
+        birth = yes
+    }
+}
+
+barki_sjalvolki_45 = {
+    name = "Zjelvolk" 
+
+    dynasty = dyn_sjalvolki_47
+    religion = sjalvolki
+    culture = barki
+
+    father = barki_sjalvolki_7
+    mother = barki_sjalvolki_44
+
+    sexuality = heterosexual
+
+    trait = calm
+    trait = temperate
+    trait = patient
+
+    1261.6.2 = {
+        birth = yes
+    }
+
+    1282.5.9 = {
+        add_spouse = barki_sjalvolki_46
+    }
+
+    1277.6.19 = {
+        religion = orispolj_rite
+        #culture = itnicavingi
+    }
+}
+
+barki_sjalvolki_46 = {
+    name = "Sterninja" 
+    female = yes
+
+    religion = sjalvolki
+    culture = barki
+
+    sexuality = heterosexual
+
+    trait = stubborn
+    trait = gluttonous
+    trait = craven
+
+    1265.7.8 = {
+        birth = yes
+    }
+
+    1277.6.19 = {
+        religion = orispolj_rite
+        #culture = itnicavingi
+    }
+}
+
+barki_sjalvolki_47 = {
+    name = "Virnek"
+
+    religion = sjalvolki
+    culture = barki
+    father = barki_sjalvolki_5
+    mother = barki_sjalvolki_8
+
+    1250.3.1 = {
+        birth = yes
+    }
+    1277.6.19 = {
+        religion = orispolj_rite
+        #culture = itnicavingi
+    }
+}

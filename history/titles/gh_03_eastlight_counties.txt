@@ -1,0 +1,61 @@
+﻿c_new_lonelylight_county_5 = {
+	1203.7.16 = {
+		holder = sceyfig_lighter_aegispact_2
+		government = tribal_government
+	}
+	1241.11.16 = {
+		holder = sceyfig_lighter_aegispact_1
+	}
+}
+c_new_lonelylight_county_7 = {
+	1244.1.5 = {
+		holder = eastlighter_aegispact_1
+		government = tribal_government
+	}
+}
+c_new_lonelylight_county_9 = {
+	1244.1.5 = {
+		holder = eastlighter_aegispact_1
+		government = tribal_government
+	}
+}
+c_new_lonelylight_county_10 = {
+	1244.1.5 = {
+		holder = eastlighter_aegispact_1
+		government = tribal_government
+	}
+}
+c_new_lonelylight_county_13 = {
+	1244.1.5 = {
+		holder = eastlighter_aegispact_1
+		government = tribal_government
+	}
+}
+c_new_lonelylight_county_3 = {
+	1241.11.16 = {
+		holder = sceyfig_lighter_aegispact_3
+		government = tribal_government
+	}
+}
+c_west_lichdoms_20221 = {
+	171.1.1 = {
+		holder = wasteland
+	}
+	1121.10.14 = {
+		holder = lich_culture_rejection_20
+	}
+}
+c_new_lonelylight_county_38 = {
+	1241.11.16 = {
+		holder = sceyfig_lighter_aegispact_3
+		government = tribal_government
+	}
+}
+c_west_lichdoms_20223 = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1121.10.14 = {
+		holder = lich_culture_rejection_20
+	}
+}

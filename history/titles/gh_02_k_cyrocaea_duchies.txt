@@ -1,0 +1,53 @@
+d_elrio = {
+	929.2.26 = {
+		holder = centralimperial_aversarinas_aagiokrata_177
+		liege = e_aversarinas_aautokrata
+		government = feudal_government
+	}
+	942.11.13 = {
+		holder = centralimperial_aversarinas_aagiokrata_178
+	}
+	1009.8.12 = {
+		holder = centralimperial_aversarinas_aagiokrata_179
+	}
+	1010.11.25 = {
+		holder = 0
+	}
+	1010.11.25 = {
+		holder = 0
+	}
+	1204.3.14 = {
+		holder = southernimperial_aeschraes_aagiokrata_1
+	}
+	1230.10.27 = {
+		holder = tribocicai_sjalvolki_10
+		liege = 0
+		government = continental_clan_government
+		change_development_level = 6
+	}
+	1291.2.14 = {
+		holder = tribocicai_sjalvolki_13
+	}
+	1298.1.1 = {
+		government = feudal_government
+	}
+}
+
+# d_keblaia = { 
+# 	1230.1.1 = {
+# 		holder = centralimperial_aversarinas_aagiokrata_118
+# 		change_development_level = 5
+# 	}
+# 	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+# 		de_jure_liege = k_helski
+# 	}
+# }
+
+d_arysarnaria = { 
+	1230.1.1 = {
+		#holder = cerussiai_iyrossi_aagiokrata_1
+		change_development_level = 6
+	}
+}
+
+

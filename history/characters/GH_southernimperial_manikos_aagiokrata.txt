@@ -1,0 +1,263 @@
+﻿southernimperial_manikos_aagiokrata_1 = { # MEGISTOS
+	name = "Megistos"
+	dna = megistos_the_handsome
+	religion = "manikos_aagiokrata"
+	culture = "southernimperial"
+	dynasty = dyn_aversarian_148
+	sexuality = bisexual
+
+	trait = gregarious
+	trait = arrogant
+	trait = lustful
+	trait = education_diplomacy_1
+	trait = lunatic_genetic
+	trait = weak
+	trait = deviant
+	trait = gh_historical_reveler_3
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_indian_03
+			custom_beards = no_beard		 
+		}
+	}
+	
+	1224.1.1 = {
+		birth = yes
+	}
+
+	1244.1.1 = {
+		give_nickname = nick_the_most_fair_and_beautiful_ruler
+	}
+
+	1249.6.12 = {
+		add_spouse = southernimperial_manikos_aagiokrata_2 
+		add_character_modifier = prince_of_madness_modifier
+	}
+	
+	1249.7.13 = {
+		add_spouse = southernimperial_manikos_aagiokrata_3
+	}
+	
+	1249.8.14 = {
+		add_spouse = southernimperial_manikos_aagiokrata_4
+	}
+	
+	1249.9.15 = {
+		add_spouse = adrakamp_sjalvolki_12
+	}
+	
+	1249.6.13 = {
+		effect = {
+			set_relation_lover = character:southernimperial_manikos_aagiokrata_2
+		}
+	}
+	
+	1249.7.14 = {
+		effect = {
+			set_relation_lover = character:southernimperial_manikos_aagiokrata_3
+		}
+	}
+	
+	1249.8.15 = {
+		effect = {
+			set_relation_lover = character:southernimperial_manikos_aagiokrata_4
+		}
+	}
+	
+	1249.9.16 = {
+		effect = {
+			set_relation_lover = character:adrakamp_sjalvolki_12
+		}
+	}
+}
+
+southernimperial_manikos_aagiokrata_2 = {
+	name = "Anastasia"
+	dna = southernimperial_manikos_aagiokrata_2
+	female = yes
+	trait = beauty_good_3
+	trait = lustful
+	trait = ambitious
+	religion = "manikos_aagiokrata"
+	culture = "southernimperial"
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_custom_01		
+		}
+	}
+
+	1228.1.1 = {
+		birth = yes
+	}
+}
+
+southernimperial_manikos_aagiokrata_3 = {
+	name = "Aura"
+	dna = southernimperial_manikos_aagiokrata_3
+	female = yes
+	trait = beauty_good_3
+	trait = lustful
+	trait = albino
+	religion = "manikos_aagiokrata"
+	culture = "southernimperial"
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp2_iberian_muslim_01_common 
+		}
+	}
+
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+southernimperial_manikos_aagiokrata_4 = {
+	name = "Laurentias"
+	dna = southernimperial_manikos_aagiokrata_4
+	female = yes
+	trait = beauty_good_3
+	trait = gregarious
+	trait = dwarf
+	religion = "manikos_aagiokrata"
+	culture = "southernimperial"
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_western_cover	 
+		}
+	}
+
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+southernimperial_manikos_aagiokrata_5 = { # Megistos I JR
+	name = "Megistos"
+	father = southernimperial_manikos_aagiokrata_1
+	mother = southernimperial_manikos_aagiokrata_2
+	trait = beauty_good_2
+	religion = "manikos_aagiokrata"
+	culture = "southernimperial"
+	dynasty = dyn_aversarian_148
+
+	1243.1.1 = {
+		birth = yes
+	}
+	
+	1243.1.2 = {
+		give_nickname = nick_I
+	}
+}
+
+southernimperial_manikos_aagiokrata_6 = { # kid
+	name = "Demetra"
+	father = southernimperial_manikos_aagiokrata_1
+	mother = southernimperial_manikos_aagiokrata_3
+	female = yes
+	trait = beauty_good_2
+	religion = "manikos_aagiokrata"
+	culture = "southernimperial"
+	dynasty = dyn_aversarian_148
+
+	1245.1.1 = {
+		birth = yes
+	}
+}
+
+southernimperial_manikos_aagiokrata_7 = { # kid
+	name = "Eirene"
+	father = southernimperial_manikos_aagiokrata_1
+	mother = adrakamp_sjalvolki_12
+	female = yes
+	trait = beauty_good_1
+	religion = "manikos_aagiokrata"
+	culture = "southernimperial"
+	dynasty = dyn_aversarian_148
+
+	1246.1.1 = {
+		birth = yes
+	}
+}
+
+southernimperial_manikos_aagiokrata_8 = { # Megistos II
+	name = "Megistos"
+	father = southernimperial_manikos_aagiokrata_1
+	mother = southernimperial_manikos_aagiokrata_4
+	trait = beauty_good_1
+	religion = "manikos_aagiokrata"
+	culture = "southernimperial"
+	dynasty = dyn_aversarian_148
+
+	1247.1.1 = {
+		birth = yes
+	}
+	
+	1247.1.2 = {
+		give_nickname = nick_II
+	}
+}
+
+southernimperial_manikos_aagiokrata_9 = { # Megistos III
+	name = "Megistos"
+	father = southernimperial_manikos_aagiokrata_1
+	mother = adrakamp_sjalvolki_12
+	trait = beauty_good_1
+	religion = "manikos_aagiokrata"
+	culture = "southernimperial"
+	dynasty = dyn_aversarian_148
+
+	1248.1.1 = {
+		birth = yes
+	}
+	
+	1248.1.2 = {
+		give_nickname = nick_III_the_older_Megistos
+	}
+}
+
+southernimperial_manikos_aagiokrata_10 = { # kid
+	name = "Aikaterine"
+	father = southernimperial_manikos_aagiokrata_1
+	mother = southernimperial_manikos_aagiokrata_2
+	female = yes
+	trait = beauty_good_2
+	religion = "manikos_aagiokrata"
+	culture = "southernimperial"
+	dynasty = dyn_aversarian_148
+
+	1250.1.1 = {
+		birth = yes
+	}
+}
+
+southernimperial_manikos_aagiokrata_11 = { # Megistos IV
+	name = "Megistos"
+	father = southernimperial_manikos_aagiokrata_1
+	mother = southernimperial_manikos_aagiokrata_2
+	trait = beauty_good_3
+	religion = "manikos_aagiokrata"
+	culture = "southernimperial"
+	dynasty = dyn_aversarian_148
+
+	1251.1.1 = {
+		birth = yes
+	}
+	
+	1251.1.2 = {
+		give_nickname = nick_III_the_younger_Megistos
+	}
+}
+
+southernimperial_manikos_aagiokrata_12 = {
+	name = "Phokas"
+	religion = "manikos_aagiokrata"
+	culture = "southernimperial"
+
+	1222.1.1 = {
+		birth = yes
+	}
+}

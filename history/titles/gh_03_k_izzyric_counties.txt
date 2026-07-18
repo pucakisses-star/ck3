@@ -1,0 +1,24 @@
+c_mayik_caves_8 = {
+	1183.9.14 = {
+		holder = practitioner_aversarinas_aagiokrata_3
+		liege = e_mayikprolollan
+		government = magocratic_government
+	}
+	1250.1.1 = {
+		holder = trustians_lifepath_12
+		liege = 0
+		government = feudal_government
+	}
+}
+c_mayik_rooms_34 = {
+	1250.1.1 = {
+		holder = penetworin_ethowos_5
+		liege = 0
+		government = tribal_government
+	}
+}
+c_mayik_caves_5 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

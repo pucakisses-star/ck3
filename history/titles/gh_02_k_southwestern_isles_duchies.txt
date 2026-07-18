@@ -1,0 +1,48 @@
+d_duchytest9999 = {
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1205.1.1 = {
+		holder = 0
+	}
+	1250.1.1 = {
+		change_development_level = 8
+	}
+}
+d_duchytesti86 = {
+	1250.1.1 = {
+		change_development_level = 7
+	}
+}
+d_duchytesti84 = {
+	1250.1.1 = {
+		change_development_level = 6
+	}
+}
+d_duchytest888 = {
+	1250.1.1 = {
+		change_development_level = 6
+	}
+}
+d_duchytest222 = {
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1205.1.1 = {
+		holder = 0
+	}
+	1250.1.1 = {
+		change_development_level = 5
+	}
+}
+d_duchytesti83 = {
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1205.1.1 = {
+		holder = 0
+	}
+	1250.1.1 = {
+		change_development_level = 4
+	}
+}

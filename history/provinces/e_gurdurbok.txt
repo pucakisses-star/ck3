@@ -1,0 +1,827 @@
+1933 = {
+	holding = city_holding
+}
+
+1978 = {
+	399.1.1 = { # GH TODO: Generic date for Pathos conquering Kalathipsomi
+		culture = northernimperial
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1240.1.1 = { # GH TODO: Generic date for Sjal Migrations into Kalathipsomi
+		culture = huegodocs
+		religion = apti
+	}
+}
+
+2795 = {
+	holding = none
+}
+
+2797 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	399.1.1 = { # GH TODO: Generic date for Pathos conquering Kalathipsomi
+		culture = northernimperial
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	921.11.12 = {
+		culture = practitioner
+		religion = aversarinas_aagiokrata
+		holding = metro_holding
+		special_building = 01_academyofswords
+	}
+	1000.1.1 = {
+		buildings = {
+			metro_02
+			arena_04
+			merchant_guild_04
+		}
+	}
+}
+
+2818 = {
+	holding = none
+}
+
+2836 = {
+	holding = none
+}
+
+2837 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1.1.1 = {
+		religion = ethylisiac
+		culture = mezzodriacc
+		holding = castle_holding
+	}
+	40.2.21 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+	399.1.1 = { # GH TODO: Generic date for Pathos conquering Kalathipsomi
+		culture = northernimperial
+		religion = aversarinas_aagiokrata
+		holding = city_holding
+	}
+}
+
+2908 = {
+	holding = none
+}
+
+2913 = {
+	holding = none
+}
+
+2923 = {
+	holding = city_holding
+}
+
+2925 = {
+	holding = none
+}
+
+9205 = {
+	religion = wyrdpath
+	culture = ardothanes
+	holding = castle_holding
+}
+2927 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1.1.1 = {
+		religion = ethylisiac
+		culture = mezzodriacc
+		holding = castle_holding
+	}
+	40.2.21 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+	399.1.1 = { # GH TODO: Generic date for Pathos conquering Kalathipsomi
+		culture = northernimperial
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1240.1.1 = {
+		culture = ardothanes
+		religion = wyrdpath
+	}
+}
+
+2951 = {
+	holding = none
+}
+
+2954 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1.1.1 = {
+		religion = ethylisiac
+		culture = mezzodriacc
+		holding = castle_holding
+	}
+	40.2.21 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+	399.1.1 = { # GH TODO: Generic date for Pathos conquering Kalathipsomi
+		culture = northernimperial
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1240.1.1 = {
+		culture = ardothanes
+		religion = wyrdpath
+	}
+}
+
+3016 = {
+	holding = none
+}
+
+
+3020 = {
+	holding = none
+}
+
+
+3081 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	
+	1200.1.1 = {
+		special_building = 01_listikraxos
+	}
+	1240.1.1 = {
+		culture = ardothanes
+		religion = wyrdpath
+	}
+}
+
+3101 = {
+	holding = city_holding
+}
+
+3152 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = voluntic
+		religion = partic
+	}
+	holding = city_holding
+}
+
+3153 = {
+	holding = church_holding
+}
+
+3155 = {
+	holding = none
+}
+
+3157 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = voluntic
+		religion = partic
+	}
+	holding = tribal_holding
+}
+
+3163 = {
+	holding = none
+}
+
+3164 = {
+	holding = church_holding
+}
+
+3166 = {
+	holding = city_holding
+}
+
+3167 = {
+	culture = apokiakas
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	1240.1.1 = {
+		culture = voluntic
+		religion = partic
+		holding = tribal_holding
+	}
+}
+
+3170 = {
+	culture = apokiakas
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+3172 = {
+	holding = church_holding
+	0.1.1 = {
+		special_building = 01_statuefacingwest
+	}
+}
+
+
+3177 = {
+	culture = apokiakas
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3179 = {
+	culture = apokiakas
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3180 = {
+	holding = city_holding
+}
+
+3182 = {
+	culture = sarridians
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3184 = {
+	holding = castle_holding
+}
+
+3185 = {
+	culture = apokiakas
+	religion = aversarinas_aagiokrata
+	holding = metro_holding
+	300.1.1 = {
+		special_building = 02_special_bloodcrystal
+	}
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+}
+
+3186 = {
+	holding = city_holding
+}
+
+3187 = {
+	culture = apokiakas
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3188 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = warisnik
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+4946 = {
+	culture = sarridians
+	religion = aversarinas_aagiokrata
+	1237.1.16 = {
+		special_building = 01_grod_cruprag
+	}
+	1240.1.1 = {
+		culture = warisnik
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+3189 = {
+	holding = none
+}
+
+
+3191 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = warisnik
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+3192 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = warisnik
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+3195 = {
+	holding = none
+}
+
+3197 = {
+	holding = castle_holding
+}
+
+3198 = {
+	culture = sarridians
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3199 = {
+	holding = city_holding
+}
+
+3201 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = warisnik
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+3202 = {
+	holding = ruin_holding
+}
+
+3203 = {
+	holding = none
+}
+
+3204 = {
+	holding = ruin_holding
+}
+
+3206 = {
+	holding = castle_holding
+}
+
+3208 = {
+	culture = apokiakas
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3212 = {
+	holding = none
+}
+
+3216 = {
+	holding = city_holding
+}
+
+3217 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1.1.1 = {
+		religion = ethylisiac
+		culture = mezzodriacc
+		holding = castle_holding
+	}
+	150.1.1 = { # GH TODO: Generic date for Marcher's colonizing Kalathipsomi
+		culture = etrandanexi # GH TODO: Etrandanexi predecessor
+		religion = lifepath
+		duchy_capital_building = march_01
+		buildings = {
+			ramparts_01
+		}
+	}
+	200.1.1 = {
+		buildings = {
+			ramparts_02
+			barracks_01
+		}
+	}
+	400.1.1 = {
+		buildings = {
+			castle_02
+			ramparts_03
+			barracks_02
+		}
+	}
+	550.1.1 = {
+		special_building = 01_gurardport
+	}
+	800.1.1 = {
+		duchy_capital_building = march_02
+		buildings = {
+			ramparts_04
+			barracks_03
+		}
+		holding = castle_holding
+	}
+	
+}
+
+3219 = {
+	holding = none
+}
+
+3222 = {
+	holding = none
+}
+
+
+3224 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1.1.1 = {
+		religion = ethylisiac
+		culture = mezzodriacc
+		holding = city_holding
+	}
+	150.1.1 = { # GH TODO: Generic date for Marcher's colonizing Kalathipsomi
+		culture = etrandanexi # GH TODO: Etrandanexi predecessor
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+}
+
+
+3228 = {
+	holding = none
+}
+
+3230 = {
+	holding = city_holding
+}
+
+3234 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1.1.1 = {
+		religion = ethylisiac
+		culture = mezzodriacc
+		holding = castle_holding
+	}
+	46.2.21 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+	150.1.1 = { # GH TODO: Generic date for Marcher's colonizing Kalathipsomi
+		culture = etrandanexi # GH TODO: Etrandanexi predecessor
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+}
+
+3236 = {
+	holding = none
+}
+
+3238 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1.1.1 = {
+		religion = ethylisiac
+		culture = mezzodriacc
+		holding = castle_holding
+	}
+	172.2.21 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+	399.1.1 = { # GH TODO: Generic date for Pathos conquering Kalathipsomi
+		culture = northernimperial
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+}
+
+3240 = {
+	holding = city_holding
+}
+
+3242 = {
+	holding = none
+}
+
+3254 = {
+	holding = none
+}
+
+3256 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1.1.1 = {
+		religion = ethylisiac
+		culture = mezzodriacc
+		holding = castle_holding
+		special_building = 01_fidhasil
+	}
+	212.2.21 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+	399.1.1 = { # GH TODO: Generic date for Pathos conquering Kalathipsomi
+		culture = northernimperial
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1240.1.1 = { # GH TODO: Generic date for Sjal Migrations into Kalathipsomi
+		culture = greulokin
+		religion = sjalvolki
+		holding = castle_holding
+	}
+}
+
+3260 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1.1.1 = {
+		religion = ethylisiac
+		culture = mezzodriacc
+		holding = castle_holding
+	}
+	192.2.21 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+	399.1.1 = { # GH TODO: Generic date for Pathos conquering Kalathipsomi
+		culture = northernimperial
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1240.1.1 = {
+		culture = sarridians
+		religion = aversarinas_aagiokrata
+	}
+	
+}
+
+3261 = {
+	holding = church_holding
+}
+
+3266 = {
+	holding = none
+}
+
+3269 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = warisnik
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+3272 = {
+	holding = none
+}
+
+3276 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = warisnik
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+3278 = {
+	holding = none
+}
+
+3288 = {
+	holding = city_holding
+}
+
+3289 = {
+	holding = none
+}
+
+3294 = {
+	holding = none
+}
+
+3300 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = warisnik
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+
+
+
+
+3317 = {
+	holding = none
+}
+
+3318 = {
+	holding = none
+}
+
+
+
+3332 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1.1.1 = {
+		religion = ethylisiac
+		culture = mezzodriacc
+		holding = castle_holding
+	}
+	112.5.11 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+	399.1.1 = { # GH TODO: Generic date for Pathos conquering Kalathipsomi
+		culture = northernimperial
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1240.1.1 = {
+		culture = ardothanes
+		religion = wyrdpath
+	}
+}
+
+
+3350 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = daukeni
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+
+
+3354 = {
+	holding = none
+}
+
+
+3360 = {
+	holding = none
+}
+
+
+3362 = {
+	holding = none
+}
+
+
+3365 = {
+	holding = none
+}
+
+3366 = {
+	holding = none
+}
+
+3367 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1.1.1 = {
+		special_building = 01_duragarn_kharathi
+	}
+	1240.1.1 = {
+		culture = daukeni
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+
+3372 = {
+	holding = none
+}
+
+
+3375 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = daukeni
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+3378 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = daukeni
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+3383 = {
+	holding = none
+}
+
+3385 = {
+	holding = city_holding
+}
+
+3994 = {
+	holding = none
+}
+
+5507 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	3.1.1 = {
+		special_building = 01_tower_golden_seeker
+	}
+	399.1.1 = { # GH TODO: Generic date for Pathos conquering Kalathipsomi
+		culture = northernimperial
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+}
+
+8319 = {
+	culture = apokiakas
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	1240.1.1 = {
+		culture = voluntic
+		religion = partic
+		holding = tribal_holding
+	}
+}
+
+9279 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = warisnik
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+9280 = {
+	holding = city_holding
+}
+
+3275 = {
+	holding = none
+}
+
+9275 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = warisnik
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+9278 = {
+	holding = none
+}

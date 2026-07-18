@@ -1,0 +1,9 @@
+﻿parakh_vidvaookeyatra_1 = { # Ind count
+	name = "Zorawar"
+	religion = "dravadari"
+	culture = "parakh"
+	dynasty = dyn_north_kashirya_7
+	1210.8.8 = {
+		birth = yes
+	}
+}

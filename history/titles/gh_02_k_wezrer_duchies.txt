@@ -1,0 +1,23 @@
+d_libizi = {
+	1230.1.1 = {
+		government = feudal_government
+		holder = kawoch_mogowai_10
+	}
+}
+d_halakoi = {
+	1170.1.1 = {
+		holder = kawoch_mogowai_25
+	}
+	1230.1.1 = {
+		holder = kawoch_mogowai_7
+	}
+}
+
+#d_isigol = {
+#	1280.8.23 = {
+#		holder = kawoch_mogowai_8
+#	}
+#	1285.4.19 = {
+#		liege = k_hibyaalki_damotada
+#	}
+#}

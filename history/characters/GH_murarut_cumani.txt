@@ -1,0 +1,294 @@
+﻿murarut_cumani_1 = { # Yesugei Vaskhad, Khatan of Chvor that rode with Jajak Otroka's Horde
+	name = "Yesugei"
+	dynasty = dyn_murarut_1
+	religion = cumani
+	culture = khorinot
+	disallow_random_traits = yes
+
+	martial = 8
+	diplomacy = 10
+	intrigue = 4
+	stewardship = 2
+	learning = 4
+	prowess = 5
+
+	1157.10.31 = {
+		birth = yes
+	}
+
+	1169.1.1 = {
+		trait = zealous
+		trait = brave
+		trait = trusting
+	}
+
+	1173.10.31 = {
+		trait = education_martial_2
+		trait = holy_warrior
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+murarut_cumani_2 = { # Yesugei Vaskhad's son
+	name = "Arasen"
+	dynasty = dyn_murarut_1
+	religion = cumani
+	culture = khorinot
+	disallow_random_traits = yes
+
+	father = murarut_cumani_1
+
+	martial = 3
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 10
+	learning = 5
+	prowess = 5
+
+	1184.10.12 = {
+		birth = yes
+	}
+
+	1196.1.1 = {
+		trait = patient
+		trait = diligent
+		trait = gregarious
+	}
+
+	1200.10.12 = {
+		trait = education_stewardship_3
+		trait = shrewd
+	}
+
+	1249.1.12 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+murarut_cumani_3 = { # Belgutei Qorhaid, Beiy of Erdeg, rode with Jajak Otroka in his Horde
+	name = "Belgutei"
+	dynasty = dyn_murarut_3
+	religion = cumani
+	culture = murarut
+	disallow_random_traits = yes
+
+	martial = 7
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 4
+	learning = 5
+	prowess = 9
+
+	1170.2.24 = {
+		birth = yes
+	}
+
+	1182.1.1 = {
+		trait = brave
+		trait = fickle
+		trait = impatient
+	}
+
+	1186.2.24 = {
+		trait = education_martial_2
+		trait = gh_historical_blademaster_2
+	}
+
+	1200.2.25 = {
+		death = {
+			death_reason = death_battle
+			killer = easternimperial_aversarinas_practitioner_1 # Velaras 'Bleak Speaker'
+		}
+	}
+}
+
+murarut_cumani_4 = { # Tumen Guraut, Beiy of Churbay, rode with Jajak Otroka in his Horde
+	name = "Tumen"
+	dynasty = dyn_murarut_4
+	religion = cumani
+	culture = murarut
+	disallow_random_traits = yes
+
+	father = murarut_cumani_5
+
+	martial = 6
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 7
+	learning = 5
+	prowess = 7
+
+	1172.10.2 = {
+		birth = yes
+	}
+
+	1184.1.1 = {
+		trait = brave
+		trait = greedy
+		trait = arbitrary
+	}
+
+	1188.10.2 = {
+		trait = education_martial_2
+		trait = logistician
+	}
+
+	1199.11.23 = {
+		death = {
+			death_reason = death_battle
+			killer = etrandanexi_aversarian_axiaotheaism_1 # Agos Slyn
+		}
+	}
+}
+
+murarut_cumani_5 = { # Tumen Guraut's father
+	name = "Jebe"
+	dynasty = dyn_murarut_4
+	religion = cumani
+	culture = khorinot
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 3
+	intrigue = 8
+	stewardship = 7
+	learning = 7
+	prowess = 7
+
+	1145.3.18 = {
+		birth = yes
+	}
+
+	1157.1.1 = {
+		trait = deceitful
+		trait = stubborn
+		trait = chaste
+	}
+
+	1161.3.18 = {
+		trait = education_intrigue_3
+	}
+
+	1194.6.14 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+murarut_cumani_6 = { # Tumen Guraut's brother
+	name = "Burkhan"
+	dynasty = dyn_murarut_4
+	religion = cumani
+	culture = khorinot
+	disallow_random_traits = yes
+
+	father = murarut_cumani_5
+
+	martial = 4
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 8
+	learning = 7
+	prowess = 5
+
+	1167.9.13 = {
+		birth = yes
+	}
+
+	1179.1.1 = {
+		trait = patient
+		trait = compassionate
+		trait = calm
+	}
+
+	1183.9.13 = {
+		trait = education_stewardship_2
+	}
+
+	1227.12.5 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+murarut_cumani_7 = { # Tumen Guraut's nephew, 1254 Beiy of Churbay
+	name = "Ghazan"
+	dynasty = dyn_murarut_4
+	religion = cumani
+	culture = khorinot
+	disallow_random_traits = yes
+
+	father = murarut_cumani_6
+
+	martial = 4
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 5
+	learning = 4
+	prowess = 8
+
+	1207.5.20 = {
+		birth = yes
+	}
+
+	1219.1.1 = {
+		trait = ambitious
+		trait = arbitrary
+		trait = sadistic
+	}
+
+	1223.5.20 = {
+		trait = education_intrigue_4
+		trait = schemer
+	}
+}
+
+murarut_cumani_8 = {
+	name = "Bolkaghai"
+	religion = "cumani"
+	culture = khorinot
+
+	1221.1.30 = {
+		birth = yes
+	}
+}
+
+murarut_cumani_9 = { # 1254 Khatan of Chvor
+	name = "Bukhatai"
+	dynasty = dyn_murarut_1
+	religion = cumani
+	culture = khorinot
+
+	father = murarut_cumani_2
+
+	martial = 6
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 7
+	learning = 5
+	prowess = 4
+
+	1224.5.2 = {
+		birth = yes
+	}
+
+	1236.1.1 = {
+		trait = just
+		trait = diligent
+		trait = stubborn
+	}
+
+	1240.5.2 = {
+		trait = education_stewardship_2
+	}
+}

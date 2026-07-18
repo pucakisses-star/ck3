@@ -1,0 +1,117 @@
+﻿mazunic_hubarism_1 = {
+	name = "Pad_eyil"
+	religion = "hubarism"
+	culture = "mazunic"
+	sexuality = heterosexual
+
+	dynasty = dyn_mazunic_1
+
+	martial = 10
+	diplomacy = 6
+	intrigue = 8
+	stewardship = 7
+	learning = 12
+
+	1235.3.6 = {
+		birth = yes
+		trait = magic_good_6
+		effect = { set_base_arcana = { AMOUNT = 9 } }
+	}
+
+	1247.1.1 = {
+		trait = ambitious
+		trait = zealous
+		trait = diligent
+	}
+
+	1251.3.6 = {
+		trait = theologian
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:luminous_discipline }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+}
+
+mazunic_hubarism_2 = {
+	name = "Shihala"
+	religion = "hubarism"
+	culture = mazunic
+
+	133.6.23 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	145.6.23 = {
+		trait = arrogant
+		trait = brave
+		trait = calm
+	}
+
+	149.6.23 = {
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+		trait = gh_historical_blademaster_2
+	}
+
+	233.8.11 = {
+		death = yes
+	}
+}
+
+mazunic_hubarism_3 = { # Last ruler of last major Hubarite kingdom
+	name = "Lasiyahul"
+	religion = "hubarism"
+	culture = "mazunic"
+
+	diplomacy = 10
+	martial = 9
+	stewardship = 11
+	intrigue = 8
+	learning = 18
+
+	504.4.27 = {
+		birth = yes
+		trait = magic_good_4
+		trait = intellect_good_2
+	}
+
+	513.1.1 = {
+		trait = craven
+		trait = diligent
+		trait = patient
+	}
+
+	520.4.27 = {
+		trait = education_learning_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	584.1.1 = {
+		effect = {
+			upgrade_stacking_modifier_by_level_effect = { MODIFIER = magic_life_extension_modifier TYPE = character LEVEL = 10 YEARS = -1  } 
+			upgrade_stacking_modifier_by_level_effect = { MODIFIER = magic_arcane_degeneration_modifier TYPE = character LEVEL = 1 YEARS = -1  } 
+			set_variable = {
+				name = life_extention_amount_raw
+				value = 10
+			}
+		}
+	}
+
+	598.1.1 = {
+		death = {
+			death_reason = death_execution
+		}
+	}
+}

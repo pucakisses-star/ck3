@@ -1,0 +1,360 @@
+d_morullr = {
+	640.2.21 = {
+		holder = watumimba_corkkattirkana_17
+	}
+	662.1.14 = {
+		holder = watumimba_corkkattirkana_23
+	}
+	726.3.10 = {
+		holder = watumimba_corkkattirkana_26
+	}
+	734.9.13 = {
+		holder = watumimba_corkkattirkana_27
+	}
+	734.12.12 = {
+		holder = watumimba_corkkattirkana_28
+	}
+	745.12.14 = {
+		holder = watumimba_corkkattirkana_30
+	}
+	778.1.3 = {
+		holder = watumimba_corkkattirkana_32
+	}
+	788.10.6 = {
+		holder = watumimba_corkkattirkana_34
+	}
+	791.4.17 = {
+		holder = watumimba_corkkattirkana_68
+	}
+	801.11.29 = {
+		holder = watumimba_corkkattirkana_36
+	}
+	818.7.22 = {
+		holder = watumimba_corkkattirkana_37
+	}
+	820.2.1 = {
+		holder = watumimba_corkkattirkana_38
+	}
+	820.10.3 = { 
+		holder = watumimba_corkkattirkana_39
+	}
+	847.3.1 = {
+		holder = watumimba_corkkattirkana_45
+	}
+	899.12.29 = {
+		holder = watumimba_corkkattirkana_46
+	}
+	926.4.12 = {
+		holder = watumimba_corkkattirkana_48
+	}
+	935.7.1 = { 
+		holder = watumimba_corkkattirkana_50
+	}
+	941.3.6 = {
+		holder = watumimba_corkkattirkana_51
+	}
+	954.10.10 = {
+		holder = watumimba_corkkattirkana_58
+	}
+	968.5.4 = {
+		holder = watumimba_corkkattirkana_60
+	}
+	973.3.16 = {
+		holder = watumimba_corkkattirkana_53
+	}
+	1235.12.1 = {
+		holder = vanaarik_yakasak_5
+		change_development_level = 6
+	}
+	1272.5.8 = {
+		holder = vanaarik_yakasak_12
+	}
+	1292.5.28 = {
+		holder = vanaarik_yakasak_3
+	}
+	1294.11.26 = {
+		holder = vanaarik_yakasak_19
+	}
+}
+d_rapagodacon = {
+	660.7.28 = {
+		holder = watumimba_corkkattirkana_63
+	}
+	707.12.14 = {
+		holder = watumimba_corkkattirkana_28
+	}
+	745.12.14 = {
+		holder = watumimba_corkkattirkana_30
+	}
+	778.1.3 = {
+		holder = watumimba_corkkattirkana_32
+	}
+	788.10.6 = {
+		holder = watumimba_corkkattirkana_34
+	}
+	801.11.29 = {
+		holder = watumimba_corkkattirkana_36
+	}
+	818.7.22 = {
+		holder = watumimba_corkkattirkana_37
+	}
+	820.2.1 = {
+		holder = watumimba_corkkattirkana_38
+	}
+	820.10.3 = { 
+		holder = watumimba_corkkattirkana_39
+	}
+	847.3.1 = {
+		holder = watumimba_corkkattirkana_45
+	}
+	899.12.29 = {
+		holder = 0
+	}
+	1240.1.1 = {
+		holder = prakaani_yakasak_1
+		liege = 0
+		change_development_level = 9
+		government = pirate_government
+	}
+	1271.2.10 = {
+		holder = prakaani_yakasak_3
+	}
+	1279.11.2 = {
+		holder = prakaani_yakasak_5
+	}
+	1280.2.14 = {
+		holder = 0
+	}
+	1295.8.14 = {
+		holder = prakaani_yakasak_7
+		liege = k_ellawala_coalition
+	}
+}
+d_kesvatavi = {
+	1198.3.4 = {
+		holder = tapuso_yakasak_3
+		government = pirate_government
+	}
+	1221.6.5 = {
+		holder = 0
+	}
+	1245.6.7 = {
+		holder = rethara_yakasak_2
+		government = feudal_government
+		change_development_level = 5
+	}
+}
+d_akkadalaiya = {
+	596.3.13 = {
+		holder = watumimba_corkkattirkana_13
+	}
+	607.8.28 = {
+		holder = watumimba_corkkattirkana_15
+	}
+	635.2.21 = {
+		holder = watumimba_corkkattirkana_17
+	}
+	662.1.14 = {
+		holder = watumimba_corkkattirkana_23
+	}
+	726.3.10 = {
+		holder = watumimba_corkkattirkana_26
+	}
+	734.9.13 = {
+		holder = watumimba_corkkattirkana_27
+	}
+	734.12.12 = {
+		holder = watumimba_corkkattirkana_28
+	}
+	745.12.14 = {
+		holder = watumimba_corkkattirkana_30
+	}
+	778.1.3 = {
+		holder = watumimba_corkkattirkana_32
+	}
+	788.10.6 = {
+		holder = watumimba_corkkattirkana_34
+	}
+	801.11.29 = {
+		holder = watumimba_corkkattirkana_36
+	}
+	818.7.22 = {
+		holder = watumimba_corkkattirkana_37
+	}
+	820.2.1 = {
+		holder = watumimba_corkkattirkana_38
+	}
+	820.10.3 = { 
+		holder = watumimba_corkkattirkana_39
+	}
+	847.3.1 = {
+		holder = watumimba_corkkattirkana_45
+	}
+	899.12.29 = {
+		holder = watumimba_corkkattirkana_46
+	}
+	926.4.12 = {
+		holder = watumimba_corkkattirkana_48
+	}
+	935.7.1 = { 
+		holder = watumimba_corkkattirkana_50
+	}
+	941.3.6 = {
+		holder = watumimba_corkkattirkana_51
+	}
+	954.10.10 = {
+		holder = watumimba_corkkattirkana_58
+	}
+	968.5.4 = {
+		holder = watumimba_corkkattirkana_60
+	}
+	973.3.16 = {
+		holder = 0
+	}
+	995.3.1 = {
+		holder = saruta_yakasak_1
+		government = pirate_government
+	}
+	1010.12.7 = {
+		holder = 0
+	}
+	1179.8.6 = {
+		holder = ikanita_yakasak_4
+		government = pirate_government
+	}
+	1190.4.5 = {
+		holder = ikanita_yakasak_5
+		government = pirate_government
+	}
+	1206.3.7 = {
+		holder = ikanita_yakasak_1
+		government = pirate_government
+	}
+	1259.6.16 = {
+		holder = ikanita_yakasak_7
+	}
+	1276.9.18 = {
+		holder = ikanita_yakasak_11
+	}
+	1287.1.3 = {
+		holder = ikanita_yakasak_12
+	}
+}
+d_trinapaawa = {
+	566.10.7 = { # Founder of Ufaliracci, learned to fight in Sarradon, migrated eastward over time, develops a skill with magic while in Rovarksa
+		holder = watumimba_corkkattirkana_11
+	}
+	591.9.25 = { # Self-conscious and self serious eldest son, ultimately killed drowning trying to win a bet over his brother
+		holder = watumimba_corkkattirkana_13a
+	}
+	596.3.13 = { # Depressed & sullen monarch after causing elder brothers death, rules a period of economic stability and expansion with the establishment of the Mdala Hasira system
+		holder = watumimba_corkkattirkana_13
+	}
+	607.8.28 = { # Most notably crushes an uprising of Wellatolla natives angry over the construction of a great mine & number of smaller ones across their island, governed with the help of powerful Regents that begin a doctrine of naval trade supremacy
+		holder = watumimba_corkkattirkana_15
+	}
+	635.2.21 = { # Reinforces Monarch authority after a period of Regency. Expands the Mdala Hasiras, establishing key shipping ports throughout the Pirate Coast such as Mji'Safi
+		holder = watumimba_corkkattirkana_17
+	}
+	662.1.14 = { # The Magi-King, takes thrown from nephew, begins to notably shown signs of Vampirism in elder years, ultimately killed in a palace coup by backstabbing royal guard & general
+		holder = watumimba_corkkattirkana_23
+	}
+	726.3.10 = { # Takes control through a coup against the Magi-King, crushes dissent, forces the royal family into exile in Dahangon & later KathunKai, ultimately killed with poison in his sleep
+		holder = watumimba_corkkattirkana_26
+	}
+	734.9.13 = { # Child of the Betrayer, killed in an "accident" before Jamyras' father takes the thrown 
+		holder = watumimba_corkkattirkana_27
+	}
+	734.12.12 = { # Establishes the 2nd Dynasty of Ufaliracci, expanding control of spice trade, expands Mji'Safi Port
+		holder = watumimba_corkkattirkana_28
+	}
+	745.12.14 = { # Kattupu Jamryas, Warrior Poet & Smith, created & planned the Silver Palace complex, expanded Ufaliracci to its greatest territorial extent, mocked for refusing to take a new wife in his later life to protect his children's interests
+		holder = watumimba_corkkattirkana_30
+	}
+	778.1.3 = { # Killed in a climbing accident on Ma'Taa, otherwise competent ruler whose unexpected death convinces KK to support 1st Dynasty's claim against Ufaliracci
+		holder = watumimba_corkkattirkana_32
+	}
+	788.10.6 = { # Manages to fend off a claim war against Ufaliracci supported by Kathuni privateers & pirates from the South
+		holder = watumimba_corkkattirkana_34
+	}
+	801.11.29 = { # More focused on scholarship, funds several chronicles covering Ufaliracci early history, astronomy, & development of mining practices for Ma'Taa's crystal veins
+		holder = watumimba_corkkattirkana_36
+	}
+	818.7.22 = { # Boisterous and proud, leads a failed campaign against the Mainland, dies at sea
+		holder = watumimba_corkkattirkana_37
+	}
+	820.2.1 = { # Attempts to continue the war of his brother, but is assassinated
+		holder = watumimba_corkkattirkana_38
+	}
+	820.10.3 = { # Succeeds where her brothers failed, taking Ulfairacci's first continental ports & negotiating deals with the Dye & Spice Cities along the Sarradonian coast
+		holder = watumimba_corkkattirkana_39
+	}
+	847.3.1 = { # Rules a long and peaceful reign, untested, before being sureptisiouly murdered in his sleep along with much of the royal family during the Murtuy ka Varha, killed by cultists seeking to become a Lich
+		holder = watumimba_corkkattirkana_45
+	}
+	899.12.15 = {
+		holder = lich_culture_rejection_21
+	}
+	899.12.29 = { # Overwhelms the Salt-Lich in the Duel of Silver Moons, establishing the 3rd Dynasty 
+		holder = watumimba_corkkattirkana_46
+	}
+	926.4.12 = { # Loses control of the Sarradonian ports besides Mji'Safi to Magaala & the burdgeoning Spice League, stuck in disputes with Kathuni traders
+		holder = watumimba_corkkattirkana_48
+	}
+	935.7.1 = { # Known for little beyond extravagant feasts, crippling debt, and nearly being couped by her siblings 
+		holder = watumimba_corkkattirkana_50
+	}
+	941.3.6 = { # Known for little, dies of illness shortly into their reign, younger sibling takes over
+		holder = watumimba_corkkattirkana_51
+	}
+	954.10.10 = { # Known for expanding the silver trade, losing war against Cinnamon Cities
+		holder = watumimba_corkkattirkana_58
+	}
+	968.5.4 = { # Known for little, dies untested as a child
+		holder = watumimba_corkkattirkana_60
+	}
+	973.3.16 = { # Loses ground to pirates in the east and west, but averts disaster at Mji'Safi
+		holder = watumimba_corkkattirkana_53
+	}
+	989.8.14 = { # Killed in an assassination by Cinnamon traders, sees the loss of Mji'Safi to Cinnamon Cities & the lucrative Ma'Taa trade route, Fortifies the capital island, expands the fleet, but fails to make gains
+		holder = watumimba_corkkattirkana_61
+	}
+	999.4.15 = {
+		holder = watumimba_corkkattirkana_3
+	}
+	1010.12.6 = {
+		holder = saruta_yakasak_1
+		government = pirate_government
+	}
+	1010.12.7 = {
+		holder = 0
+	}
+	1179.8.6 = {
+		holder = ikanita_yakasak_4
+		government = pirate_government
+	}
+	1190.4.5 = {
+		holder = ikanita_yakasak_5
+		government = pirate_government
+	}
+	1206.3.7 = {
+		holder = rethara_yakasak_3
+	}
+	1212.3.8 = {
+		holder = 0
+	}
+	1229.9.26 = {
+		holder = deraani_yakasak_14
+	}
+	1248.11.16 = {
+		holder = deraani_yakasak_1
+		government = pirate_government
+		change_development_level = 5
+	}
+	1271.2.11 = {
+		holder = deraani_yakasak_4a
+	}
+	1271.3.1 = {
+		holder = deraani_yakasak_4
+	}
+}

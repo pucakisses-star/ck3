@@ -1,0 +1,27 @@
+d_sokoi = {
+	1170.1.1 = {
+		government = republic_playable_government
+		succession_laws = { clique_republic_elective_title_succession_law }
+		holder = doffore_mogowai_13
+	}
+	1230.1.1 = {
+		government = republic_playable_government
+		holder = doffore_mogowai_1
+	}
+}
+d_ainamba = {
+	1170.1.1 = {
+		government = feudal_government
+		holder = doffore_mogowai_14
+	}
+	1230.1.1 = {
+		government = feudal_government
+		holder = doffore_mogowai_5
+	}
+}
+d_sahate = {
+	1230.1.1 = {
+		government = feudal_government
+		holder = doffore_mogowai_10
+	}
+}

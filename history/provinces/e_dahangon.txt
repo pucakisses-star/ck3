@@ -1,0 +1,720 @@
+#k_angryravine
+6903 = {
+	religion = fourteen_heavenly_methods
+	culture = lakoeng
+	holding = metro_holding
+
+	926.6.30 = {
+		special_building = 01_bronzeport
+	}
+	1200.1.1 = {
+		buildings = {
+			
+			metro_03
+			gh_walls_06
+		}
+	}
+}
+
+7399 = {
+	religion = fourteen_heavenly_methods
+	culture = lakoeng
+	holding = castle_holding
+
+	824.9.14 = {
+		special_building = 01_the_first_claw
+	}
+}
+
+6229 = {
+	holding = city_holding
+}
+
+6236 = {
+	holding = none
+}
+
+
+
+6244 = {
+	religion = fourteen_heavenly_methods
+	culture = lakoeng
+	holding = castle_holding
+
+	845.9.14 = {
+		special_building = 01_the_second_claw
+	}
+}
+
+8113 = {
+	holding = city_holding
+}
+
+8225 = {
+	holding = church_holding
+}
+
+
+6564 = {
+	holding = city_holding
+}
+
+6303 = {
+	holding = church_holding
+}
+
+
+
+6491 = {
+	religion = narina
+	culture = lihakan
+	holding = castle_holding
+}
+
+
+8363 = {
+	religion = fourteen_heavenly_methods
+	culture = lakoeng
+	holding = castle_holding
+}
+
+
+7971 = {
+	religion = dahala
+	culture = banwagul
+	holding = castle_holding
+}
+
+
+9013 = {
+	holding = none
+}
+
+8603 = {
+	religion = dahala
+	culture = banwagul
+	holding = castle_holding
+}
+
+6448 = {
+	holding = city_holding
+}
+
+6649 = {
+	holding = city_holding
+}
+
+
+
+8672 = {
+	religion = dahala
+	culture = banwagul
+	holding = castle_holding
+}
+
+7977 = {
+	holding = none
+}
+
+
+6537 = {
+	religion = dahala
+	culture = lihakan
+	holding = castle_holding
+}
+
+
+6680 = {
+	holding = none
+}
+
+9015 = {
+	religion = dahala
+	culture = lakoeng
+	holding = castle_holding
+}
+
+8863 = {
+	holding = city_holding
+}
+
+7502 = {
+	holding = city_holding
+}
+
+
+8163 = {
+	holding = city_holding
+}
+
+6650 = {
+	holding = city_holding
+}
+
+
+
+8962 = {
+	holding = city_holding
+}
+
+#k_autumngate
+6757 = {
+	religion = dahala
+	culture = banwagul
+	holding = castle_holding
+}
+
+
+8854 = {
+	religion = dahala
+	culture = lihakan
+	holding = castle_holding
+}
+
+
+
+6444 = {
+	holding = none
+}
+
+
+7378 = {
+	religion = saldakas
+	culture = kedari
+	holding = tribal_holding
+}
+
+9081 = {
+	holding = none
+}
+
+7195 = {
+	holding = none
+}
+
+7297 = {
+	religion = saldakas
+	culture = kedari
+	holding = tribal_holding
+}
+
+
+6782 = {
+	holding = none
+}
+
+
+6395 = {
+	religion = saldakas
+	culture = kedari
+	holding = tribal_holding
+}
+
+6807 = {
+	holding = wasteland_empty_holding
+}
+
+
+8798 = {
+	holding = wasteland_empty_holding
+}
+
+8939 = {
+	religion = dahala
+	culture = banwagul
+	holding = castle_holding
+}
+
+7185 = {
+	religion = dahala
+	culture = dayarka
+	holding = castle_holding
+}
+
+7508 = {
+	religion = dahala
+	culture = dayarka
+	holding = castle_holding
+}
+
+7427 = {
+	holding = city_holding
+}
+
+8479 = {
+	religion = saldakas
+	culture = kedari
+	holding = tribal_holding
+}
+
+
+
+8793 = {
+	holding = none
+}
+
+
+8512 = {
+	holding = none
+}
+
+
+
+8513 = {
+	religion = saldakas
+	culture = kedari
+	holding = tribal_holding
+}
+
+
+
+8748 = {
+	holding = none
+}
+
+7960 = {
+	religion = saldakas
+	culture = kedari
+	holding = tribal_holding
+}
+
+
+8379 = {
+	holding = none
+}
+
+#k_highheath
+7055 = {
+	religion = dahala
+	culture = banwagul
+	holding = castle_holding
+}
+
+8424 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+
+	1242.12.21 = {
+		special_building = 01_dawang_tarmak
+	}
+}
+
+337 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8453 = {
+	holding = wasteland_empty_holding
+}
+
+7685 = {
+	holding = wasteland_empty_holding
+}
+
+
+7741 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+
+	1242.12.21 = {
+		special_building = 01_kadtarak
+	}
+}
+
+
+7939 = {
+	holding = wasteland_empty_holding
+}
+
+8616 = {
+	holding = wasteland_empty_holding
+}
+
+
+7973 = {
+	religion = dahala
+	culture = lihakan
+	holding = castle_holding
+
+	1060.2.6 = {
+		special_building = 02_dilapamal_mines
+	}
+}
+
+
+
+7980 = {
+	holding = city_holding
+}
+
+
+7577 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+
+	100.1.1 = {
+		special_building = 01_rakarongs_lair
+	}
+}
+
+
+4962 = {
+	holding = city_holding
+
+	489.5.5 = {
+		special_building = 01_laon_gia
+	}
+}
+
+6232 = {
+	holding = none
+}
+
+
+7962 = {
+	holding = none
+}
+
+7504 = {
+	holding = none
+}
+
+7184 = {
+	religion = dahala
+	culture = banwagul
+	holding = castle_holding
+}
+
+8880 = {
+	holding = none
+}
+
+
+8025 = {
+	holding = none
+}
+
+
+
+6320 = {
+	holding = city_holding
+}
+
+
+7979 = {
+	religion = dahala
+	culture = banwagul
+	holding = castle_holding
+}
+
+7978 = {
+	religion = dahala
+	culture = banwagul
+	holding = castle_holding
+}
+
+8941 = {
+	holding = none
+}
+
+
+7511 = {
+	holding = none
+}
+
+8020 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+
+	928.2.30 = {
+		special_building = 01_pakaras_pass
+	}
+}
+
+8346 = {
+	holding = none
+}
+
+#k_bowerenclosure
+
+
+
+7918 = {
+	holding = city_holding
+}
+
+7919 = {
+	religion = dahala
+	culture = banwagul
+	holding = castle_holding
+}
+
+
+6322 = {
+	religion = dahala
+	culture = banwagul
+	holding = castle_holding
+}
+
+
+5073 = {
+	holding = none
+}
+
+7718 = {
+	religion = fourteen_heavenly_methods
+	culture = lakoeng
+	holding = castle_holding
+
+	1086.10.14 = {
+		special_building = 01_white_hall_castle
+	}
+}
+
+
+8667 = {
+	religion = dahala
+	culture = banwagul
+	holding = castle_holding
+
+	1077.1.3 = {
+		special_building = 01_xanglis_lantern
+	}
+}
+
+7120 = {
+	religion = dahala
+	culture = banwagul
+	holding = castle_holding
+}
+
+
+9023 = {
+	religion = dahala
+	culture = banwagul
+	holding = castle_holding
+
+	1058.10.23 = {
+		special_building = 01_paswatun_mines
+	}
+}
+
+6509 = {
+	religion = fourteen_heavenly_methods
+	culture = lakoeng
+	holding = castle_holding
+}
+
+8419 = {
+	holding = none
+}
+
+
+7491 = {
+	holding = none
+}
+
+7447 = {
+	holding = church_holding
+}
+
+
+
+8164 = {
+	religion = labaqiri
+	culture = dathanites
+	holding = castle_holding
+}
+
+8142 = {
+	religion = dahala
+	culture = banwagul
+	holding = castle_holding
+}
+
+6712 = {
+	religion = labaqiri
+	culture = dathanites
+	holding = castle_holding
+}
+
+
+8296 = {
+	holding = none
+}
+
+6928 = {
+	religion = dahala
+	culture = banwagul
+	holding = castle_holding
+}
+
+6908 = {
+	holding = none
+}
+
+8183 = {
+	holding = none
+}
+
+9343 = {
+	religion = dahala
+	culture = banwagul
+	holding = castle_holding
+}
+7456 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+
+	568.11.20 = {
+		special_building = 01_laon_ratab
+	}
+}
+9344 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+9345 = {
+	holding = none
+}
+9346 = {
+	holding = city_holding
+}
+9347 = {
+	holding = none
+}
+9348 = {
+	holding = city_holding
+}
+9349 = {
+	holding = city_holding
+}
+9350 = {
+	holding = city_holding
+}
+9351 = {
+	religion = dahala
+	culture = banwagul
+	holding = castle_holding
+}
+9352 = {
+	holding = none
+}
+9353 = {
+	holding = none
+}
+9354 = {
+	holding = none
+}
+9355 = {
+	holding = none
+}
+9356 = {
+	holding = none
+}
+9357 = {
+	holding = none
+}
+9358 = {
+	holding = none
+}
+9359 = {
+	holding = none
+}
+9360 = {
+	holding = none
+}
+9361 = {
+	holding = none
+}
+9362 = {
+	holding = none
+}
+9363 = {
+	holding = none
+}
+9364 = {
+	holding = none
+}
+9365 = {
+	holding = none
+}
+9366 = {
+	holding = none
+}
+9367 = {
+	holding = none
+}
+9368 = {
+	holding = none
+}
+9369 = {
+	holding = none
+}
+9370 = {
+	holding = none
+}
+9371 = {
+	holding = none
+}
+9372 = {
+	holding = none
+}
+9373 = {
+	religion = fourteen_heavenly_methods
+	culture = lakoeng
+	holding = castle_holding
+}
+9374 = {
+	holding = none
+}
+9375 = {
+	holding = none
+}
+9376 = {
+	holding = none
+}
+9377 = {
+	holding = none
+}
+9378 = {
+	religion = dahala
+	culture = banwagul
+	holding = castle_holding
+}
+9379 = {
+	holding = none
+}
+9380 = {
+	holding = none
+}
+9381 = {
+	holding = none
+}
+9382 = {
+	holding = none
+}
+9383 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+9384 = {
+	holding = none
+}
+9385 = {
+	religion = dahala
+	culture = lihakan
+	holding = metro_holding
+		buildings = {			
+			metro_03
+		}
+}

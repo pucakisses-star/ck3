@@ -1,0 +1,25 @@
+c_mayik_caves_1 = {
+	1250.1.1 = {
+		holder = penetworin_ethowos_1
+		liege = 0
+		government = migratory_government
+	}
+}
+c_mayik_corridor_10 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_room_3 = {
+	1176.5.29 = {
+		holder = easternimperial_aversarinas_aagiokrata_80
+	}
+  1211.2.17 = {
+		holder = wasteland
+	}
+}
+c_mayik_room_4 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

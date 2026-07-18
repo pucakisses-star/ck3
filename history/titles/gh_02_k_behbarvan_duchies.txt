@@ -1,0 +1,56 @@
+d_kulaybeh = {
+	243.3.3 = { # Maklea
+		holder = westernimperial_aversarinas_aagiokrata_119
+	}
+	265.5.15 = {
+		holder = 0
+	}
+	1240.1.1 = {
+		holder = makryenis_calysto_1
+		government = landed_order_government
+	}
+	1240.1.1 = { change_development_level = 19 }
+}
+d_central_sarradon5 = {
+	1240.1.1 = {
+		holder = makryenis_calysto_1
+		government = landed_order_government
+	}
+	1240.1.1 = { change_development_level = 15 }	
+}
+d_aversaria_peripontica = {
+	243.3.3 = { # Maklea
+		holder = westernimperial_aversarinas_aagiokrata_119
+	}
+	265.5.15 = {
+		holder = 0
+	}
+	1230.1.1 = {
+		holder = makryenis_thysia_1
+	}
+	1230.1.1 = { change_development_level = 20 }
+}
+d_tragoneia = {
+	1230.1.1 = {
+		holder = makryenis_thysia_2
+		liege = k_emporia
+		government = landed_order_government
+	}
+	1230.1.1 = { change_development_level = 17 }
+}
+d_central_sarradon4 = {
+	1230.1.1 = {
+		holder = makryenis_thysia_14
+		liege = k_emporia
+		government = landed_order_government
+		change_development_level = 10
+	}
+}
+d_thronelands = {
+	1230.1.1 = {
+		holder = makryenis_thysia_7
+		government = landed_order_government
+		liege = k_emporia
+	}
+	1230.1.1 = { change_development_level = 16 }
+}

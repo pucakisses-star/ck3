@@ -1,0 +1,23 @@
+1590 = {
+	culture = adabyann
+	religion = adabyssian
+	holding = castle_holding
+}
+
+1599 = {
+	holding = city_holding
+}
+
+1634 = {
+	holding = castle_holding
+	culture = adabyann
+	religion = adabyssian
+	300.1.17 = {
+		special_building = 01_nagom_kakezihi
+	}
+}
+
+2284 = {
+	holding = castle_holding
+}
+

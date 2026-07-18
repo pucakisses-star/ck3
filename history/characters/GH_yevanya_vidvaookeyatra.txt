@@ -1,0 +1,16 @@
+﻿yevanya_vidvaookeyatra_1 = { # King of talesh
+	name = "Narain"
+	religion = "vidvaookeyatra"
+	culture = "yevanya"
+	dynasty = dyn_north_kashirya_1
+	1218.8.8 = {
+		birth = yes
+	}
+
+	1238.3.2 = {
+		trait = compassionate
+		trait = humble
+		trait = generous
+		trait = education_learning_2
+	}
+}

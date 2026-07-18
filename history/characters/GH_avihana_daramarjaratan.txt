@@ -1,0 +1,34 @@
+﻿avihana_daramarjaratan_1 = {
+	name = "Katilana"
+	dna = avihana_daramarjaratan_1
+	religion = "daramarjaratan"
+	culture = "avihana"
+	female = yes
+	martial = 3
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 5
+	learning = 8
+	dynasty = dyn_avihana_4
+	trait = deceitful
+	trait = ambitious
+	trait = zealous
+	trait = education_intrigue_4
+	trait = seducer
+	trait = shrewd
+	trait = beauty_good_3
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_custom_02
+		}
+	}
+
+	1203.10.31 = {
+		birth = yes
+	}
+
+	1227.4.22 = {
+		add_spouse = avihana_askevaryaa_1
+	}
+}

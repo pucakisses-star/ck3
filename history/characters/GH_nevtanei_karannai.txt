@@ -1,0 +1,8 @@
+﻿nevtanei_karannai_1 = {
+	name = "Kradomos"
+	religion = "karannai"
+	culture = "nevtanei"
+	1196.9.14 = {
+		birth = yes
+	}
+}

@@ -1,0 +1,9 @@
+﻿islander_aversarian_black_fraternity_1 = {
+	name = "Alkhrios" #Renamed from Cromus
+	religion = "black_fraternity"
+	culture = "islander"
+
+	1226.4.2 = {
+		birth = yes
+	}
+}

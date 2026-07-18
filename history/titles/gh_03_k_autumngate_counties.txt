@@ -1,0 +1,46 @@
+c_butlerswaterfall = {
+	1248.3.27 = {
+		holder = kedari_saldakas_1
+	}
+}
+
+c_hugharbor = {
+	1248.3.27 = {
+		holder = kedari_saldakas_1
+	}
+}
+
+c_harpys_delta  = {
+  1253.3.1 = {
+		holder = kedari_saldakas_1
+	}
+}
+
+c_stewardgulf = {
+	1246.1.6 = {
+		holder = dayarka_dahala_2
+	}
+}
+
+c_plumheath = {
+  1253.3.1 = {
+		holder = kedari_saldakas_2
+	}
+}
+
+c_underledge = {
+  1253.3.1 = {
+		holder = kedari_saldakas_3
+	}
+}
+
+c_lowheight = {
+  1253.3.1 = {
+		holder = kedari_saldakas_1
+	}
+}
+c_barrenmount = {
+  1253.3.1 = {
+		holder = kedari_saldakas_4
+	}
+}

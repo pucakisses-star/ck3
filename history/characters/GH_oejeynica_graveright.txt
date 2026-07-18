@@ -1,0 +1,287 @@
+﻿oejeynica_graveright_1 = {
+	name = "Casimir" #Casimir IV
+	dna = oejeynica_graveright_1
+	dynasty_house = house_ostaczny
+	religion = "graveright"
+	culture = "oejeynica"
+	trait = callous
+	trait = calm
+	trait = stubborn
+	trait = education_stewardship_2
+	trait = way_of_crowns_follower
+
+	father = oejeynica_graveright_2
+	mother = oejeynica_graveright_3
+
+	martial = 4
+	diplomacy = 4
+	stewardship = 7
+	intrigue = 8
+	learning = 8
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_western_09
+		}
+	}
+
+	1214.11.23 = {
+		birth = yes
+	}
+}
+
+oejeynica_graveright_2 = { #Casimir III
+	name = "Casimir"
+	dynasty_house = house_ostaczny
+	religion = "graveright"
+	culture = "oejeynica"
+	
+	father = oejeynica_graveright_6
+
+	1165.4.21 = {
+		birth = yes
+	}
+	1200.1.1 = {
+		add_spouse = oejeynica_graveright_3
+	}
+	1229.1.1 = {
+		trait = ill
+	}
+	1229.11.22 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+oejeynica_graveright_3 = {
+	name = "AL_ora"
+	female = yes
+	religion = "graveright"
+	culture = "oejeynica"
+
+	1183.5.15 = {
+		birth = yes
+	}
+	1200.1.1 = {
+		add_spouse = oejeynica_graveright_2
+	}
+}
+
+oejeynica_graveright_4 = {
+	name = "L_odzimir"
+	dynasty_house = house_ostaczny
+	religion = "graveright"
+	culture = "oejeynica"
+
+	father = oejeynica_graveright_2
+	mother = oejeynica_graveright_3
+	
+	trait = arrogant
+	trait = lazy
+	trait = gluttonous
+
+	1203.6.9 = {
+		birth = yes
+	}
+
+	1220.4.12 = {
+		effect = {
+			create_character_memory = { # Black-Gold War (Oejeynicans participated late)
+				type = fought_in_black_gold_war
+			}
+		}
+	}
+
+	1229.11.22 = {
+		trait = disinherited
+		trait = drunkard
+	}
+}
+
+oejeynica_graveright_5 = {
+	name = "ErL_eja"
+	female = yes
+	dynasty_house = house_ostaczny
+	religion = "graveright"
+	culture = "oejeynica"
+
+	father = oejeynica_graveright_2
+	mother = oejeynica_graveright_3
+
+	1217.8.19 = {
+		birth = yes
+	}
+}
+
+oejeynica_graveright_6 = {
+	name = "WaL_mir"
+	dynasty_house = house_ostaczny
+	religion = "graveright"
+	culture = "oejeynica"
+	trait = callous
+	trait = ambitious
+
+	mother = oejeynica_graveright_9
+
+	1143.9.17 = {
+		birth = yes
+	}
+
+	1220.10.10 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+oejeynica_graveright_7 = {
+	name = "Casimir" #Casimir II
+	dynasty_house = house_ostaczny
+	religion = "graveright"
+	culture = "oejeynica"
+	trait = gluttonous
+
+	mother = oejeynica_graveright_9
+
+	1136.1.9 = {
+		birth = yes
+	}
+
+	1152.1.9 = {
+		trait = gh_historical_reveler_3
+	}
+
+	1160.1.1 = {
+		trait = gout_ridden
+	}
+
+	1168.12.4 = {
+		death = { death_reason = death_physician_mistreatment }
+	}
+}
+
+oejeynica_graveright_8 = {
+	name = "Ertrieu"
+	dynasty_house = house_ostaczny
+	religion = "graveright"
+	culture = "oejeynica"
+
+	father = oejeynica_graveright_7
+
+	1165.2.28 = {
+		birth = yes
+	}
+
+	1176.8.4 = {
+		death = {
+			death_reason = death_disappearance
+			killer = oejeynica_graveright_6
+		}
+	}
+}
+
+oejeynica_graveright_9 = {
+	name = "DobL_awa"
+	dynasty_house = house_ostaczny
+	female = yes
+	religion = "graveright"
+	culture = "oejeynica"
+
+	father = oejeynica_graveright_10
+
+	1117.12.15 = {
+		birth = yes
+	}
+
+	1155.10.30 = {
+		death = { death_reason = death_stress }
+	}
+}
+
+oejeynica_graveright_10 = {
+	name = "Rychieu" #Rychieu II
+	dynasty_house = house_ostaczny
+	religion = "graveright"
+	culture = "oejeynica"
+
+	father = oejeynica_graveright_12
+
+	1092.3.13 = {
+		birth = yes
+	}
+
+	1129.1.1 = {
+		trait = smallpox
+	}
+
+	1130.1.26 = {
+		death = { death_reason = death_smallpox }
+	}
+}
+
+oejeynica_graveright_11 = {
+	name = "RoZ_yda"
+	dynasty_house = house_ostaczny
+	female = yes
+	religion = "graveright"
+	culture = "oejeynica"
+
+	father = oejeynica_graveright_12
+
+	1089.8.13 = {
+		birth = yes
+	}
+
+	1129.1.1 = {
+		trait = smallpox
+	}
+
+	1129.11.6 = {
+		death = { death_reason = death_smallpox }
+	}
+}
+
+oejeynica_graveright_12 = {
+	name = "Casimir" #Casimir I
+	dynasty_house = house_ostaczny
+	religion = "graveright"
+	culture = "oejeynica"
+
+	father = oejeynica_graveright_13
+
+	1066.1.20 = {
+		birth = yes
+	}
+
+	1126.2.12 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+oejeynica_graveright_13 = {
+	name = "Rychieu" #Rychieu I
+	dynasty_house = house_ostaczny
+	religion = "graveright"
+	culture = "oejeynica"
+	father = oejeynica_graveright_14
+	1030.1.1 = {
+		birth = yes
+	}
+
+	1100.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+oejeynica_graveright_14 = { # Needed for dyn_ojycz_1 to have a founder
+	name = "Magniew"
+	religion = "graveright"
+	culture = "oejeynica"
+	dynasty = dyn_ojycz_1
+	995.3.10 = {
+		birth = yes
+	}
+	1047.10.25 = {
+		death = { death_reason = death_natural_causes }
+	}
+}

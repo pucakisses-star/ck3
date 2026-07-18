@@ -1,0 +1,259 @@
+﻿enisaloi_aversarinas_aagiokrata_1 = { # Archex of Krehejad in 1254
+	name = "Basiriox"
+	dna = enisaloi_aversarinas_aagiokrata_1
+	religion = "aversarinas_aagiokrata"
+	culture = "enisaloi"
+	sexuality = heterosexual
+	
+	father = enisaloi_aversarinas_aagiokrata_2
+	mother = enisaloi_aversarinas_aagiokrata_3
+	
+	dynasty = dyn_aversarian_80
+	
+	diplomacy = 7
+	martial = 5
+	stewardship = 5
+	intrigue = 6
+	learning = 5
+	
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_03
+			custom_beards = male_beard_western_9b
+		}
+	}
+	
+	1218.9.23 = {
+		birth = yes
+        effect = {
+            dynasty = { add_dynasty_prestige_level = 3 }
+        }
+	} 
+	
+	1234.9.23 = {
+		trait = paranoid
+		trait = diligent
+		trait = shy
+	}
+	
+	1238.9.23 = {
+		trait = education_diplomacy_3
+	}
+}
+
+enisaloi_aversarinas_aagiokrata_2 = { # Archex in 1214 IS, started a slow process of reintegration of Krehejad, ending with roughly the 1254 borders
+	name = "Serapaxos"
+	religion = aversarinas_aagiokrata
+	culture = enisaloi
+	sexuality = heterosexual
+	
+	father = enisaloi_aversarinas_aagiokrata_4
+	mother = enisaloi_aversarinas_aagiokrata_5
+	
+	dynasty = dyn_aversarian_80
+	
+	diplomacy = 7
+	martial = 5
+	stewardship = 5
+	intrigue = 6
+	learning = 5
+	
+	1188.9.23 = {
+		birth = yes
+		trait = magic_good_3
+	}
+	1200.9.23 = {
+		trait = gregarious
+		trait = forgiving
+		trait = callous
+	}
+	1204.9.23 = {
+		trait = education_diplomacy_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+	1210.1.28 = {
+		add_spouse = enisaloi_aversarinas_aagiokrata_3
+		set_relation_soulmate = character:enisaloi_aversarinas_aagiokrata_3
+	}
+	1247.4.8 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+enisaloi_aversarinas_aagiokrata_3 = { # Wife of above, helped her husband, also a cruel person, but genuinely had a good relationship with him
+	name = "Chrysogone"
+	female = yes
+	religion = aversarinas_aagiokrata
+	culture = enisaloi
+	sexuality = asexual
+	
+	diplomacy = 6
+	martial = 5
+	stewardship = 6
+	intrigue = 6
+	learning = 5
+	
+	1182.3.14 = {
+		birth = yes
+	}
+	1204.3.14 = {
+		trait = sadistic
+		trait = trusting
+		trait = deceitful
+	}
+	1208.3.14 = {
+		trait = education_learning_3
+	}
+	1257.5.4 = {
+		death = {
+			death_reason = death_cancer
+		}
+	}
+}
+
+enisaloi_aversarinas_aagiokrata_4 = { # Archex in 1200 IS, appointed by Axiaotheia early on, generally unpopular
+	name = "Aesarion"
+	religion = aversarinas_aagiokrata
+	culture = enisaloi
+	sexuality = heterosexual
+	
+	dynasty = dyn_aversarian_80
+	
+	diplomacy = 4
+	martial = 5
+	stewardship = 6
+	intrigue = 6
+	learning = 6
+	
+	1154.11.5 = {
+		birth = yes
+		trait = magic_good_5
+	}
+	1166.11.5 = {
+		trait = callous
+		trait = arrogant
+		trait = impatient
+	}
+	1170.11.5 = {
+		trait = education_diplomacy_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+	1185.6.17 = {
+		add_spouse = enisaloi_aversarinas_aagiokrata_7
+	}
+	1214.3.19 = {
+		death = {
+			death_reason = death_wounded_1
+		}
+	}
+}
+
+enisaloi_aversarinas_aagiokrata_5 = { # Wife of above, political marriage to lower noble
+	name = "Elpir"
+	female = yes
+	religion = aversarinas_aagiokrata
+	culture = enisaloi
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 5
+	stewardship = 6
+	intrigue = 5
+	learning = 6
+	
+	1158.8.1 = {
+		birth = yes
+	}
+	1170.8.1 = {
+		trait = shy
+		trait = craven
+		trait = wrathful
+	}
+	1174.8.1 = {
+		trait = education_learning_3
+	}
+	1212.5.4 = {
+		death = {
+			death_reason = death_magic_fire
+			#killer = 1212 leader once i add him
+		}
+	}
+}
+
+enisaloi_aversarinas_aagiokrata_6 = { # Southern warlord, broke away from the Archexate after capturing an island
+	name = "Aeschraes"
+	religion = aversarinas_aagiokrata
+	culture = enisaloi
+	sexuality = bisexual
+
+	diplomacy = 6
+	martial = 6
+	stewardship = 4
+	intrigue = 4
+	learning = 5
+
+	#dynasty = something interesting someday
+
+	1163.4.26 = {
+		birth = yes
+	}
+	1175.4.26 = {
+		trait = ambitious
+		trait = paranoid
+		trait = lustful
+	}
+	1179.4.26 = {
+		trait = education_martial_3
+	}
+	1233.6.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+enisaloi_aversarinas_aagiokrata_7 = { # Broke away from above and seized his own land
+	name = "Talae" #Renamed from Talaus. TRANS
+	religion = aversarinas_aagiokrata
+	culture = enisaloi
+	sexuality = heterosexual
+	female = yes #Mother to another character, but had a male name and refered to as male above
+
+	diplomacy = 5
+	martial = 7
+	stewardship = 4
+	intrigue = 4
+	learning = 4
+
+	#dynasty = some shit
+
+	1172.3.14 = {
+		birth = yes
+	}
+	1184.3.14 = {
+		trait = chaste
+		trait = callous
+		trait = cynical
+	}
+	1188.3.14 = {
+		trait = education_martial_3
+	}
+	1210.1.22 = {
+		set_relation_rival = character:enisaloi_aversarinas_aagiokrata_6
+	}
+	1237.6.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}

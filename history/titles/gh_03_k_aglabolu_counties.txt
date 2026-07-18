@@ -1,0 +1,199 @@
+c_kashalfa = {
+	1200.1.1 = {
+		holder = madikirib_manats_6
+	}
+	1211.3.29 = {
+		holder = madikirib_manats_5
+	}
+	1236.11.6 = {
+		holder = madikirib_manats_12
+	}
+}
+#c_jaeaydd = {
+#	1200.1.1 = {
+#		holder = madikirib_manats_6
+#	}
+#	1211.3.29 = {
+#		holder = madikirib_manats_5
+#	}
+#	1236.11.6 = {
+#		holder = madikirib_manats_12
+#	}
+#}
+#c_disughada = {
+#	1200.1.1 = {
+#		holder = madikirib_manats_6
+#	}
+#	1211.3.29 = {
+#		holder = madikirib_manats_5
+#	}
+#	1236.11.6 = {
+#		holder = madikirib_manats_12
+#	}
+#}
+#c_hamastan = {
+#	1200.1.1 = {
+#		holder = madikirib_manats_7
+#	}
+#	1235.6.15 = {
+#		holder = madikirib_manats_11
+#	}
+#}
+#c_mallamiya = {
+#	1200.1.1 = {
+#		holder = madikirib_manats_7
+#	}
+#	1219.1.1 = {
+#		holder = madikirib_manats_1
+#	}
+#	1245.1.1 = {
+#		holder = madikirib_manats_11
+#	}
+#}
+c_hudabam = {
+	1200.1.1 = {
+		holder = madikirib_manats_9
+		liege = d_almudir
+	}
+	1240.1.3 = {
+		holder = madikirib_manats_14
+	}
+}
+#c_rezvanshahr = {
+#	1200.1.1 = {
+#		holder = madikirib_manats_8
+#		liege = d_almudir
+#	}
+#	1237.2.12 = {
+#		holder = madikirib_manats_15
+#	}
+#}
+c_sasaqaq = {
+	1200.1.1 = {
+		holder = madikirib_manats_7
+	}
+	1235.6.15 = {
+		holder = madikirib_manats_11
+	}
+}
+c_baisit = {
+	1200.1.1 = {
+		holder = madikirib_manats_7
+	}
+	1219.1.1 = {
+		holder = madikirib_manats_1
+	}
+	1239.7.13 = {
+		holder = madikirib_manats_13
+	}
+	1249.1.1 = {
+		liege = k_eastern_frontier
+	}
+}
+#c_khami = {
+#	1200.1.1 = {
+#		holder = madikirib_manats_6
+#	}
+#	1211.3.29 = {
+#		holder = madikirib_manats_5
+#	}
+#	1219.1.1 = {
+#		holder = madikirib_manats_1
+#	}
+#	1239.7.13 = {
+#		holder = madikirib_manats_13
+#	}
+#	1249.1.1 = {
+#		liege = k_eastern_frontier
+#	}
+#}
+#c_khoraneh = {
+#	1200.1.1 = {
+#		holder = madikirib_manats_10
+#	}
+#	1221.4.8 = {
+#		holder = madikirib_manats_3
+#	}
+#	1244.1.1 = {
+#		holder = dawasid_harthahi_1
+#		liege = k_eastern_frontier
+#		government = pirate_government
+#	}
+#}
+c_alkanarish = {
+	1200.1.1 = {
+		holder = madikirib_manats_10
+	}
+	1221.4.8 = {
+		holder = madikirib_manats_3
+	}
+	1244.1.1 = {
+		holder = dawasid_harthahi_1
+		liege = k_eastern_frontier
+		government = pirate_government
+	}
+}
+#c_thuwacca = {
+#	1221.5.9 = {
+#		holder = madikirib_manats_3
+#	}
+#	1244.1.1 = {
+#		holder = dawasid_harthahi_1
+#		liege = k_eastern_frontier
+#		government = pirate_government
+#	}
+#}
+c_nasillah = {
+	1230.1.1 = {
+		holder = dawasid_harthahi_2
+		liege = k_eastern_frontier
+	}
+}
+c_adefal = {
+	1230.1.1 = {
+		holder = dawasid_harthahi_2
+		liege = k_eastern_frontier
+	}
+}
+c_chronicon = {
+	1230.1.1 = {
+		holder = dawasid_harthahi_2
+		liege = k_eastern_frontier
+	}
+}
+c_east_sarradon11 = {
+	1230.1.1 = {
+		holder = dawasid_wardenism_2
+		change_development_level = 5
+	}
+}
+#c_provinceprovince9266 = {
+#	1230.1.1 = {
+#		holder = dawasid_wardenism_2
+#		change_development_level = 7
+#	}
+#	1248.2.5 = {
+#		holder = easternimperial_aversarinas_aagiokrata_8
+#	}
+#}
+c_ayymash = {
+	1168.1.1 = {
+		holder = erimatos_aversarinas_aagiokrata_9
+	}
+	1200.1.1 = {
+		holder = madikirib_manats_4
+		liege = d_kemayeri
+	}
+	1234.9.8 = {
+		holder = madikirib_manats_2
+	}
+}
+#c_blooming_sands2 = {
+#	1200.1.1 = {
+#		holder = madikirib_manats_4
+#		liege = d_kemayeri
+#	}
+#	1234.9.8 = {
+#		holder = madikirib_manats_2
+#	}
+#}

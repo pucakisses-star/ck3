@@ -1,0 +1,84 @@
+d_saulxvil = {
+	850.1.1 = {
+		holder = voyagen_lifepath_41 #Valcioc d'va Melsne
+	}
+	878.3.7 = {
+		holder = voyagen_lifepath_42 #Naulet d'va Melsne
+	}
+	890.4.19 = {
+		holder = voyagen_lifepath_38 #Louise den va Seignon
+	}
+	902.2.22 = {
+		holder = voyagen_lifepath_39 #Gardfrei den va Seignon
+	}
+	934.5.6 = {
+		holder = voyagen_lifepath_40 #Rodald den va Seignon
+	}
+	962.4.12  = {
+		holder = voyagen_lifepath_52
+	}
+	1000.12.23  = {
+		holder = voyagen_lifepath_54
+	}
+	1060.2.15  = {
+		holder = voyagen_lifepath_55
+	}
+	1080.7.20 = {
+		holder = voyagen_lifepath_56
+	}
+	1095.2.28 = {
+		holder = voyagen_lifepath_25
+	}
+	1140.3.25 = {
+		holder = voyagen_lifepath_24
+ 	}
+	1166.7.21 = {
+		holder = voyagen_lifepath_23
+	}
+	1199.9.26 = {
+		holder = voyagen_lifepath_22
+	}
+	1217.4.12 = {
+		holder = voyagen_lifepath_1
+	}
+	1253.11.12 = {
+		holder = voyagen_lifepath_7
+	}
+	1230.1.1 = { 
+		change_development_level = 3 
+	}
+}
+d_clois_en_cleusaun = {
+	1253.1.1 = {
+		liege = "k_de_porte_de_bastione"
+		holder = voyagen_lifepath_67
+	}
+	1230.1.1 = { 
+		change_development_level = 17 
+	}
+}
+d_colarmas = {
+	1129.8.5 = {
+		liege = "k_de_porte_de_bastione"
+		holder = voyagen_lifepath_59
+	}
+	1169.11.14 = {
+		liege = "k_de_porte_de_bastione"
+		holder = voyagen_lifepath_60
+ 	}
+	1201.1.2 = {
+		liege = "k_de_porte_de_bastione"
+		holder = voyagen_lifepath_61
+	}
+	1222.4.30 = {
+		liege = "k_de_porte_de_bastione"
+		holder = voyagen_lifepath_62
+	}
+	1253.3.23 = {
+		liege = "k_de_porte_de_bastione"
+		holder = voyagen_lifepath_12
+	}
+	1230.1.1 = { 
+		change_development_level = 16 
+	}
+}

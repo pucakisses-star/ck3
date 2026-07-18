@@ -1,0 +1,10 @@
+c_central_sarradon32 = {
+	1231.2.15 = {
+		holder = makryenis_sansia_1
+	}
+}
+c_central_sarradon28 = {
+	1224.1.13 = {
+		holder = jaduyada_wardenism_2
+	}
+}

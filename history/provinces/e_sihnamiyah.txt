@@ -1,0 +1,710 @@
+
+489 = {
+	holding = none
+}
+
+491 = {
+	culture = amuaad
+	religion = kathsiti
+	holding = castle_holding
+	0.1.1 = {
+		special_building = 01_buraiwf_pass
+	}
+}
+
+
+493 = {
+	culture = barzawa
+	religion = tulharsin
+	holding = tribal_holding
+}
+
+494 = {
+	holding = none
+}
+
+496 = {
+	holding = none
+}
+
+497 = {
+	culture = barzawa
+	religion = tulharsin
+	holding = tribal_holding
+}
+
+548 = {
+	culture = barzawa
+	religion = tulharsin
+	holding = tribal_holding
+
+}
+
+549 = {
+	holding = none
+}
+
+550 = {
+	culture = barzawa
+	religion = tulharsin
+	holding = tribal_holding
+}
+
+
+552 = {
+	culture = barzawa
+	religion = tulharsin
+	holding = castle_holding
+}
+
+554 = {
+	holding = none
+}
+
+
+557 = {
+	holding = none
+}
+
+
+559 = {
+	holding = church_holding
+}
+
+561 = {
+	holding = none
+}
+
+
+
+
+564 = {
+	holding = none
+}
+
+
+565 = {
+	holding = city_holding
+}
+
+
+569 = {
+	holding = none
+}
+
+571 = {
+	holding = none
+}
+
+
+
+
+
+
+
+
+579 = {
+	holding = none
+}
+
+
+580 = {
+	culture = tasurmad
+	religion = anban_sarradon
+	holding = castle_holding
+}
+
+
+583 = {
+	holding = church_holding
+}
+
+584 = {
+	holding = castle_holding
+	culture = tasurmad
+	religion = wardenism
+}
+
+587 = {
+	holding = city_holding
+}
+
+
+588 = {
+	holding = none
+}
+
+
+589 = {
+	culture = tasurmad
+	religion = wardenism
+	holding = church_holding
+}
+
+
+
+591 = {
+	holding = none
+}
+
+
+593 = {
+	holding = church_holding
+}
+
+596 = {
+	holding = none
+}
+
+597 = {
+	culture = tasurmad
+	religion = ritualist
+	holding = castle_holding
+}
+
+
+598 = {
+	holding = church_holding
+}
+
+
+
+601 = {
+	holding = church_holding
+}
+
+
+
+
+602 = {
+	culture = tasurmad
+	religion = hanaaist
+	holding = castle_holding
+}
+
+603 = {
+	holding = city_holding
+}
+
+
+607 = {
+	holding = church_holding
+}
+
+
+
+608 = {
+	culture = tasurmad
+	religion = ataabay_zatanai
+	holding = castle_holding
+}
+
+
+610 = {
+	holding = none
+}
+
+611 = {
+	holding = church_holding
+}
+
+618 = {
+	culture = saruyad
+	religion = ritualist
+	holding = church_holding
+}
+
+619 = {
+	holding = city_holding
+}
+
+
+622 = {
+	holding = church_holding
+}
+
+
+623 = {
+	holding = none
+}
+
+627 = {
+	culture = voyagen
+	religion = lifepath
+	holding = castle_holding
+}
+
+628 = {
+	holding = church_holding
+}
+
+
+631 = {
+	holding = city_holding
+}
+
+
+
+636 = {
+	culture = tasurmad
+	religion = wardenism
+	holding = castle_holding
+}
+
+
+637 = {
+	culture = tasurmad
+	religion = wardenism
+	holding = church_holding
+}
+
+
+639 = {
+	holding = church_holding
+}
+
+
+
+641 = {
+	holding = city_holding
+}
+
+
+643 = {
+	culture = tasurmad
+	religion = wardenism
+	holding = castle_holding
+}
+
+
+645 = {
+	holding = city_holding
+}
+
+647 = {
+	culture = tasurmad
+	religion = wardenism
+	holding = castle_holding
+}
+
+648 = {
+	holding = city_holding
+}
+
+649 = {
+	holding = city_holding
+}
+
+
+651 = {
+	holding = city_holding
+}
+
+652 = {
+	holding = church_holding
+}
+
+654 = {
+	culture = tasurmad
+	religion = ritualist4
+	holding = castle_holding
+}
+
+655 = {
+	culture = tasurmad
+	religion = wardenism
+	holding = castle_holding
+}
+
+
+
+656 = {
+	culture = barzawa
+	religion = tulharsin
+	holding = tribal_holding
+}
+
+
+659 = {
+	holding = none
+}
+
+
+661 = {
+	holding = church_holding
+}
+
+662 = {
+	culture = tasurmad
+	religion = wardenism
+	holding = castle_holding
+}
+
+663 = {
+	holding = church_holding
+}
+
+
+664 = {
+	holding = city_holding
+}
+
+6549 = {
+	holding = church_holding
+}
+
+
+667 = {
+	culture = tasurmad
+	religion = wardenism
+	holding = castle_holding
+}
+
+
+
+670 = {
+	culture = tasurmad
+	religion = wardenism
+	holding = metro_holding
+
+	1.1.1 = {
+		special_building = 01_greattempleofelqulatha
+	}
+	1000.1.1 = {
+		buildings = {
+			metro_03
+		}
+	}	
+	1200.1.1 = {
+		buildings = {
+			
+			
+			gh_university_02
+			
+			
+		}
+	}
+}
+
+
+672 = {
+	holding = city_holding
+}
+
+676 = {
+	holding = church_holding
+}
+
+677 = {
+	culture = tasurmad
+	religion = wardenism
+	holding = castle_holding
+}
+
+679 = {
+	holding = church_holding
+	1.1.1 = {
+		special_building = 01_zokah_forest
+	}
+}
+
+
+682 = {
+	culture = tasurmad
+	religion = wardenism
+	holding = castle_holding
+}
+
+
+
+684 = {
+	holding = church_holding
+}
+
+685 = {
+	culture = tasurmad
+	religion = hulawite
+	holding = castle_holding
+}
+
+687 = {
+	holding = church_holding
+}
+
+689 = {
+	holding = city_holding
+}
+
+
+691 = {
+	culture = tasurmad
+	religion = wardenism
+	holding = castle_holding
+}
+
+692 = {
+	holding = none
+}
+
+694 = {
+	culture = tasurmad
+	religion = wardenism
+	holding = castle_holding
+}
+
+
+697 = {
+	culture = tasurmad
+	religion = hulawite
+	holding = castle_holding
+}
+
+699 = {
+	holding = city_holding
+}
+
+
+703 = {
+	culture = tasurmad
+	religion = wardenism
+	holding = castle_holding
+}
+
+
+706 = {
+	culture = tasurmad
+	religion = hulawite
+	holding = castle_holding
+	0.1.1 = {
+		special_building = 01_libraryofzheggarah
+	}
+}
+
+
+709 = {
+	holding = church_holding
+}
+
+
+710 = {
+	culture = tasurmad
+	religion = wardenism
+	holding = castle_holding
+}
+
+
+714 = {
+	holding = church_holding
+}
+
+715 = {
+	culture = tasurmad
+	religion = wardenism
+	0.1.1 = {
+		special_building = 01_citadel_of_almi
+	}
+	holding = castle_holding
+}
+
+
+
+717 = {
+	holding = none
+}
+
+719 = {
+	holding = none
+}
+
+721 = {
+	holding = city_holding
+}
+
+722 = {
+	holding = city_holding
+}
+
+725 = {
+	holding = city_holding
+}
+
+726 = {
+	culture = hudi
+	religion = yuagaug
+	holding = castle_holding
+}
+
+
+729 = {
+	holding = city_holding
+}
+
+
+731 = {
+	culture = hudi
+	religion = yuagaug
+	holding = castle_holding
+}
+
+733 = {
+	culture = tasurmad
+	religion = hulawite
+	holding = castle_holding
+}
+
+
+
+735 = {
+	holding = city_holding
+}
+
+
+736 = {
+	holding = church_holding
+}
+
+
+
+739 = {
+	holding = none
+}
+
+
+743 = {
+	holding = church_holding
+	0.1.1 = {
+		special_building = 01_graveofthemillion
+	}
+}
+
+744 = {
+	holding = none
+
+}
+
+
+748 = {
+	culture = hudi
+	religion = yuagaug
+	holding = castle_holding
+	
+
+}
+
+976 = {
+	holding = church_holding
+	
+	1000.1.1 = {
+		special_building = 01_sunarsarwena_gardens
+	}
+}
+
+977 = {
+	holding = none	
+}
+
+1161 = {
+	holding = city_holding
+	
+	0.1.1 = {
+		special_building = 01_ashmarite_hospital
+	}
+
+}
+
+
+1847 = {
+	holding = church_holding
+}
+
+1903 = {
+	holding = castle_holding
+}
+
+1923 = {
+	culture = tasurmad
+	religion = lifepath
+	holding = metro_holding
+	0.1.1 = {
+		special_building = 01_four_cliffs_five_walls
+	}
+	1000.1.1 = {
+		buildings = {
+			metro_03
+		}
+	}
+	1100.1.1 = {
+		buildings = {
+			
+			
+			
+			gh_walls_02
+		}
+		special_building = 02_four_cliffs_five_walls
+	}
+}
+
+1927 = {
+	holding = city_holding
+}
+
+
+3259 = {
+	holding = city_holding
+}
+
+3283 = {
+	culture = tasurmad
+	religion = wardenism
+	holding = metro_holding
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+}
+
+4221 = {
+	holding = castle_holding
+}
+
+
+6637 = {
+	culture = tasurmad
+	religion = wardenism
+	holding = castle_holding
+}
+
+7846 = {
+	culture = barzawa
+	religion = kothori
+	holding = tribal_holding
+}
+
+
+7905 = {
+	holding = none
+}
+
+8073 = {
+	culture = barzawa
+	religion = kothori
+	holding = tribal_holding
+}
+
+8198 = {
+	culture = barzawa
+	religion = kothori
+	holding = tribal_holding
+}
+
+
+8504 = {
+	holding = none
+}
+
+
+6221 = {
+	holding = church_holding
+}
+

@@ -1,0 +1,66 @@
+﻿krupleg_cosnaupi_1 = { # Krupleg Cosnaupi Chief
+	name = "Bragurn"
+	religion = cosnaupi
+	culture = krupleg
+	dynasty = dyn_aupagn_7
+	disallow_random_traits = yes
+
+	martial = 4
+	diplomacy = 8
+	stewardship = 5
+	intrigue = 3
+	learning = 5
+	prowess = 5
+
+	1218.7.15 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		trait = brave
+		trait = wrathful
+		trait = sadistic
+	}
+
+	1234.7.15 = {
+		trait = education_martial_3
+		trait = gh_historical_blademaster_2
+		trait = rough_terrain_expert
+	}
+}
+
+krupleg_cosnaupi_2 = { # Krupleg Cosnaupi Chief
+	name = "Alvmun"
+	religion = cosnaupi
+	culture = krupleg
+	dynasty = dyn_aupagn_8
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 7
+	stewardship = 5
+	intrigue = 7
+	learning = 4
+	prowess = 4
+
+	1203.1.5 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1215.1.1 = {
+		trait = brave
+		trait = wrathful
+		trait = sadistic
+	}
+
+	1219.1.5 = {
+		trait = education_learning_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+		trait = shrewd
+	}
+}

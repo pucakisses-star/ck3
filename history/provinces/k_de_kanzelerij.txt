@@ -1,0 +1,248 @@
+1496 = {
+	holding = church_holding
+}
+
+1497 = {
+	holding = city_holding
+}
+
+1498 = {
+	holding = none
+}
+
+
+1499 = {
+	culture = konijkmener # GH TODO: Konij predecessor
+	religion = gestanwoder
+	holding = tribal_holding
+	60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+}
+
+
+1500 = {
+	holding = church_holding
+}
+
+1501 = {
+	culture = konijkmener
+	religion = gestanwoder
+	holding = castle_holding
+}
+
+
+1503 = {
+	holding = none
+}
+
+
+
+1508 = {
+	culture = konijkmener # GH TODO: Konij predecessor
+	religion = gestanwoder
+	holding = tribal_holding
+	60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = city_holding
+	}
+}
+
+1511 = {
+	holding = city_holding
+}
+
+1512 = {
+	holding = castle_holding
+}
+
+1516 = {
+	culture = konijkmener # GH TODO: Konij predecessor
+	religion = gestanwoder
+	holding = tribal_holding
+	60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = city_holding
+	}
+}
+
+1517 = {
+	culture = konijkmener # GH TODO: Konij predecessor
+	religion = gestanwoder
+	holding = tribal_holding
+	60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+}
+
+1518 = {
+	holding = city_holding
+}
+
+1519 = {
+	holding = church_holding
+}
+
+
+
+1520 = {
+	religion = gestanwoder
+	culture = konijkmener
+	0.1.1 = {
+		special_building = 01_sunkentower
+	}
+	holding = castle_holding
+}
+
+1521 = {
+	culture = konijkmener # GH TODO: Konij predecessor
+	religion = gestanwoder
+	holding = tribal_holding
+	60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+}
+
+1522 = {
+	holding = city_holding
+}
+
+1523 = {
+	holding = city_holding
+}
+
+1524 = {
+	culture = urdermantern # GH TODO: Konij predecessor
+	religion = gestanwoder
+	holding = tribal_holding
+	60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = city_holding
+	}
+	1011.3.21 = {
+		special_building = 01_potionworks
+	}
+}
+
+
+1525 = {
+	holding = city_holding
+}
+
+1526 = {
+	culture = konijkmener # GH TODO: Konij predecessor
+	religion = gestanwoder
+	holding = tribal_holding
+	60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	800.1.1 = {
+		holding = metro_holding
+	}
+	1000.1.1 = {
+		buildings = {
+			metro_03
+			luxury_goods_05
+			merchant_guild_05
+ 	
+		}
+	}
+	1108.3.22 = {
+		special_building = 01_orangepalace
+	}
+}
+
+1527 = {
+	culture = urdermantern
+	religion = lifepath
+	holding = castle_holding
+}
+
+1528 = {
+	holding = church_holding
+}
+
+1530 = {
+	holding = none
+}
+
+
+1532 = {
+	culture = urdermantern
+	religion = lifepath
+	holding = castle_holding
+}
+
+1533 = {
+	holding = church_holding
+}
+
+
+1535 = {
+	culture = urdermantern # GH TODO: Konij predecessor
+	religion = gestanwoder
+	holding = tribal_holding
+	60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+}
+
+1536 = {
+	holding = city_holding
+}
+
+1848 = {
+	holding = city_holding
+}
+
+1852 = {
+	holding = city_holding
+}
+
+2042 = {
+	holding = church_holding
+}
+
+2632 = {
+	culture = konijkmener
+	religion = lifepath
+	holding = castle_holding
+}
+
+4485 = {
+	holding = church_holding
+}
+
+6696 = {
+	holding = city_holding
+}
+

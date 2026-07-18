@@ -1,0 +1,186 @@
+c_oliontos = {
+	1186.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_162
+		liege = e_etepezea
+	}
+	1252.1.1 = {
+		holder = daukeni_sjalvolki_38
+		liege = 0
+	}
+	1278.7.6 = {
+		holder = caemansi_sjalvolki_9
+		liege = k_pergicos
+	}
+}
+c_vaselea = {
+	1230.1.1 = { change_development_level = 13 }
+	1252.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_240
+		liege = 0
+	}
+	1258.7.17 = {
+		holder = caemansi_sjalvolki_10
+	}
+	1270.1.1 = {
+		liege = k_pergicos
+	}
+	1271.6.28 = {
+		holder = caemansi_sjalvolki_34
+	}
+}
+c_smyrnynthus = {
+	1230.1.1 = { change_development_level = 8 }
+	
+	1230.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_223
+		liege = 0
+	}
+	1258.2.30 = {
+		holder = daukeni_sjalvolki_65
+	}
+	1284.10.10 = {
+		holder = daukeni_sjalvolki_151
+	}
+}
+c_phocathon = {
+	1230.1.1 = { change_development_level = 9 }
+	
+	1230.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_216
+		liege = d_hyelocaea
+	}
+	1259.3.26 = {
+		holder = caemansi_sjalvolki_3
+	}
+	1270.1.1 = {
+		liege = k_pergicos
+	}
+	1278.9.22 = {
+		holder = caemansi_sjalvolki_40
+	}
+	1283.3.7 = {
+		holder = caemansi_sjalvolki_42
+	}
+}
+c_deleiros = {
+	
+	1186.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_169
+		liege = e_etepezea
+	}
+	1200.3.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_168
+		liege = e_etepezea
+	}
+	1230.1.1 = { change_development_level = 11 }
+	1252.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_152
+	}
+	1259.3.15 = {
+		holder = caemansi_sjalvolki_4
+	}
+	1268.7.23 = {
+		holder = caemansi_sjalvolki_36
+	}
+	1281.7.15 = {
+		holder = caemansi_sjalvolki_37
+	}
+	1270.1.1 = {
+		liege = k_pergicos
+	}
+}
+c_thassiopolis = {
+	1203.1.1 = {
+		change_development_level = 8
+		 
+		holder = westernimperial_aversarinas_aagiokrata_250
+		liege = 0
+	}
+	1255.9.20 = {
+		holder = caemansi_sjalvolki_11
+	} 
+	1286.4.20 = {
+		holder = caemansi_sjalvolki_35
+	}
+}
+c_kannystus = {
+	1230.1.1 = { change_development_level = 10 }
+	1186.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_234
+		liege = k_pergicos
+	}
+	1235.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_231
+	}
+	1256.10.17 = {
+		holder = daukeni_sjalvolki_38
+	}
+	1278.7.6 = {
+		holder = caemansi_sjalvolki_9
+		liege = k_pergicos
+	}
+}
+c_amberae = {
+	1242.1.1 = { change_development_level = 11 }
+	1186.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_228
+		liege = k_pergicos
+	}	
+	1200.3.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_229
+		liege = k_pergicos
+	}
+	1230.1.1 = {
+		holder = westernimperial_omitilos_aagiokrata_11
+		liege = d_kourorion
+	}
+	1257.12.7 = {
+		holder = daukeni_sjalvolki_74
+	}
+	1268.2.1 = {
+		holder = daukeni_sjalvolki_43
+	}
+	1295.3.16 = {
+		holder = daukeni_sjalvolki_149
+	}
+}
+c_delphike = {
+	1230.1.1 = { change_development_level = 8 }
+	
+	1230.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_218
+		liege = 0
+	}
+	1258.3.20 = {
+		holder = daukeni_sjalvolki_68
+	}
+	1280.1.2 = {
+		holder = daukeni_sjalvolki_151
+	}
+}
+c_borame = {
+	1121.1.12 = {
+		holder = westernimperial_aversarinas_aagiokrata_104
+	}
+	1186.12.19 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1187.3.14 = {
+		holder = westernimperial_aversarinas_aagiokrata_107
+	}
+	1238.1.1 = { change_development_level = 13 }
+		
+	1240.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_224
+		liege = k_palitake
+	}
+	1257.12.7 = {
+		holder = daukeni_sjalvolki_74
+	}
+	1268.2.1 = {
+		holder = daukeni_sjalvolki_43
+	}
+	1295.3.16 = {
+		holder = daukeni_sjalvolki_149
+	}
+}

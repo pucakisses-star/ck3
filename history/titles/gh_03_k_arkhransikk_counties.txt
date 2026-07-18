@@ -1,0 +1,46 @@
+c_jetrdo = {
+	1230.1.1 = {
+		holder = redrunner_aversarinas_aagiokrata_4
+		change_development_level = 4
+	}
+}
+c_kharbyl = {
+	1193.7.5 = {
+		holder = easternimperial_aversarian_axiaotheaism_12
+		government = magocratic_government
+	}
+	1199.8.12 = {
+		holder = easternimperial_aversarinas_practitioner_1
+		government = magocratic_government
+	}
+	1230.1.1 = {
+		holder = redrunner_aversarinas_aagiokrata_2
+		government = tribal_government
+		change_development_level = 5
+	}
+}
+c_pyrhathon = {
+	1230.1.1 = {
+		holder = redrunner_aversarinas_aagiokrata_14
+		change_development_level = 5
+	}
+}
+c_heparthox = {
+	1230.1.1 = {
+		holder = redrunner_aversarinas_aagiokrata_5
+		change_development_level = 6
+	}
+}
+c_dirrahhh = {
+	1230.1.1 = {
+		holder = redlander_speaking_moon_7
+		government = magocratic_government
+		change_development_level = 4
+	}
+}
+c_uyoch = {
+	1230.1.1 = {
+		holder = lattani_sunarwei_1
+		change_development_level = 3
+	}
+}

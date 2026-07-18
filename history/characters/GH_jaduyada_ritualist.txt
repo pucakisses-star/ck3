@@ -1,0 +1,174 @@
+﻿jaduyada_ritualist_1 = { # Rehdyia Uddayir, slew the Worldeater and later became the queen of Sarradon
+    name = "Rehdyia"
+    religion = "ritualist"
+    culture = "jaduyada"
+
+    dynasty = dyn_sarradon_2
+    sexuality = heterosexual
+    female = yes
+    dna = rehdyia
+
+    martial = 12
+    diplomacy = 13
+    stewardship = 9
+    intrigue = 9
+    learning = 6
+    prowess = 6
+
+    131.8.21 = {
+        birth = yes
+        trait = beauty_good_1
+    }
+
+    143.1.1 = {
+        trait = ambitious
+        trait = temperate
+        trait = brave
+    }
+
+    147.8.21 = {
+        effect = { set_base_arcana = { AMOUNT = 8 } }
+        trait = education_martial_4
+        trait = gh_historical_blademaster_2
+        trait = shrewd
+        trait = flexible_leader
+        trait = organizer
+    }
+
+    153.7.4 = { # Worldeater's death
+		trait = scarred
+		add_trait_xp = {
+            trait = scarred
+            value = 40
+        }
+    }
+
+    199.4.12 = {
+        death = {
+            death_reason = death_old_age
+        }
+    }
+}
+
+jaduyada_ritualist_2 = { # Ubayd Uddayir, died before his mother
+    name = "Ubayd"
+    religion = "ritualist"
+    culture = "jaduyada"
+
+    dynasty = dyn_sarradon_2
+    sexuality = heterosexual
+    mother = jaduyada_ritualist_1
+
+    martial = 6
+    diplomacy = 2
+    stewardship = 7
+    intrigue = 8
+    learning = 5
+    prowess = 6
+
+    152.2.14 = {
+        birth = yes
+    }
+
+    164.1.1 = {
+        trait = cynical
+        trait = forgiving
+        trait = paranoid
+    }
+
+    168.2.14 = {
+        effect = { set_base_arcana = { AMOUNT = 5 } }
+        trait = education_intrigue_3
+        trait = lifestyle_herbalist
+        trait = schemer
+    }
+
+    190.5.5 = {
+    	trait = pneumonic
+        death = {
+            death_reason = death_pneumonic
+        }
+    }
+}
+
+jaduyada_ritualist_3 = { # Alqad Uddayir, last of the Uddayirs to rule Sarradon
+    name = "Alqad"
+    religion = "ritualist"
+    culture = "jaduyada"
+
+    dynasty = dyn_sarradon_2
+    sexuality = asexual
+    father = jaduyada_ritualist_2
+    dna = alqad
+
+    martial = 6
+    diplomacy = 7
+    stewardship = 5
+    intrigue = 3
+    learning = 7
+    prowess = 6
+
+    180.2.2 = {
+        birth = yes
+        trait = magic_good_2
+    }
+
+    192.1.1 = {
+        trait = chaste
+        trait = greedy
+        trait = shy
+    }
+
+    196.2.2 = {
+        effect = { set_base_arcana = { AMOUNT = 6 } }
+        trait = education_learning_3
+        trait = scholar
+    }
+
+    201.11.21 = {
+        death = {
+            death_reason = death_mysterious
+        }
+    }
+}
+
+jaduyada_ritualist_4 = { # Faghira, Ritualist priest that led the Faghira-Jalil revolt in the West
+    name = "Faghira"
+    religion = "ritualist"
+    culture = "jaduyada"
+
+    sexuality = heterosexual
+    dna = faghira
+
+    martial = 6
+    diplomacy = 5
+    stewardship = 4
+    intrigue = 7
+    learning = 5
+    prowess = 4
+
+    1174.3.22 = {
+        birth = yes
+    }
+
+    1186.1.1 = {
+        trait = honest
+        trait = brave
+        trait = paranoid
+    }
+
+    1190.3.22 = {
+        effect = { set_base_arcana = { AMOUNT = 5 } }
+        trait = education_learning_4
+        trait = scholar
+        trait = holy_warrior
+        trait = theologian
+    }
+
+    1228.3.22 = {
+        death = {
+            death_reason = death_execution
+            killer = makryenis_dikaynos_1
+        }
+    }
+}

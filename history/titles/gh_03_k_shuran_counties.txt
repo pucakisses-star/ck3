@@ -1,0 +1,146 @@
+c_dirhad = {
+	1243.5.13 = { 
+		holder = amsari_mahndayana_324
+		liege = e_amsari
+	}
+	1230.1.1 = { change_development_level = 17 }
+}
+#c_dehe_mardeh = {
+#	1220.1.1 = { 
+#		holder = amsari_mahndayana_324
+#		liege = e_amsari
+#	}
+#}
+#c_sarban = {
+#	1220.1.1 = { 
+#		holder = amsari_mahndayana_324
+#		liege = e_amsari
+#	}
+#}
+#c_golijan = {
+#	1220.1.1 = { 
+#		holder = amsari_mahndayana_324
+#		liege = e_amsari
+#	}
+#}
+#c_dumuli = {
+#	1220.1.1 = { 
+#		holder = amsari_mahndayana_324
+#		liege = e_amsari
+#	}
+#}
+c_nivlar = {
+	1249.1.1 = {
+		holder = hixartii_mahndayana_3
+		liege = k_shuran
+	}
+}
+c_kalatehye = {
+	1249.1.1 = {
+		holder = hixartii_mahndayana_3
+		liege = k_shuran
+	}
+}
+#c_huk = {
+#	1253.1.1 = {
+#		holder = hixartii_mahndayana_3
+#		liege = k_shuran
+#	}
+#}
+c_sousamush = {
+	1253.1.1 = {
+		holder = hixartii_mahndayana_1
+		liege = k_shuran
+	}
+}
+#c_amjaz = {
+#	1253.1.1 = {
+#		holder = amsari_mahndayana_52
+#		liege = d_burjaki
+#	}
+#}
+c_sorkheh_cheshmeh = {
+	1243.1.23 = {
+		holder = hixartii_mahndayana_1
+		liege = k_shuran
+	}
+}
+#c_siah_val = {
+#	1253.1.1 = {
+#		holder = amsari_mahndayana_55
+#		liege = d_kord_kandi
+#	}
+#}
+#c_kall_ab_chenar = {
+#	1253.1.1 = {
+#		holder = amsari_mahndayana_57
+#		liege = d_gaud
+#	}
+#}
+#c_deh_hendi = {
+#	1253.1.1 = {
+#		holder = amsari_mahndayana_58
+#		liege = d_gaud
+#	}
+#}
+c_valayat = {
+	1253.1.1 = {
+		holder = hixartii_mahndayana_2
+		liege = k_shuran
+	}
+}
+#c_pirakuh = {
+#	1253.1.1 = {
+#		holder = amsari_mahndayana_61
+#		liege = d_shastakan
+#	}
+#}
+#c_newamsarcounty10 = {
+#	1200.3.1 = { 
+#		holder = wasteland
+#		liege = 0
+#		change_development_level = 2
+#	}
+#}
+c_newamsarcounty11 = {
+	300.3.1 = { 
+		holder = wasteland
+		liege = 0
+		change_development_level = 2
+	}
+	1231.1.1 = {
+		holder = hixartii_mahndayana_4
+		liege = k_shuran
+	}	
+}
+#c_newamsarcounty12 = {
+#	1200.3.1 = { 
+#		holder = wasteland
+#		liege = 0
+#		change_development_level = 2
+#	}
+#}
+#c_amsar_county_fix = {
+#	1200.3.1 = { 
+#		holder = wasteland
+#		liege = 0
+#		change_development_level = 2
+#	}
+#}
+#c_newamsarcounty9 = {
+#	1200.3.1 = {
+#		holder = amsari_mahndayana_321
+#		liege = k_shuran
+#	}
+#}
+c_amsar_county_1 = {
+	400.3.1 = { 
+		holder = wasteland
+		liege = 0
+		change_development_level = 2
+	}
+	1195.1.1 = {
+		holder = hixartii_mahndayana_5
+		liege = k_shuran
+	}
+}

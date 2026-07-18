@@ -1,0 +1,73 @@
+﻿dasulanoi_aversarinas_aagiokrata_1 = {
+    name = "Maeve"
+    female = yes
+    religion = aversarinas_aagiokrata
+    culture = dasulanoi
+    trait = physique_good_2
+    1221.10.15 = {
+        birth = yes
+    }
+    1233.10.15 = {
+        trait = shy
+        trait = humble
+        trait = brave
+    }
+    1237.10.15 = {
+        trait = education_martial_3
+        trait = gh_historical_blademaster_1
+        trait = scarred
+        set_relation_friend = { target = character:dasulanoi_arthenaxian_2 reason = friend_generic_history }
+    }
+}
+
+dasulanoi_aversarinas_aagiokrata_2 = {
+    name = "Inamarcus"
+    religion = aversarinas_aagiokrata
+    culture = dasulanoi
+    trait = intellect_good_1
+    trait = physique_good_1
+    1229.7.26 = {
+        birth = yes
+    }
+    1241.7.26 = {
+        trait = ambitious
+        trait = diligent
+        trait = callous
+    }
+    1245.7.26 = {
+        trait = education_martial_4
+        trait = organizer
+        add_unpressed_claim = title:d_green_isle
+        trait = gh_historical_blademaster_2
+    }
+}
+
+dasulanoi_aversarinas_aagiokrata_3 = {
+    name = "Squria"
+    female = yes
+    religion = aversarinas_aagiokrata
+    culture = dasulanoi
+
+    1217.11.3 = {
+        birth = yes
+        trait = magic_good_1
+    }
+
+    1229.11.13 = {
+        trait = ambitious
+        trait = forgiving
+        trait = patient
+    }
+
+    1233.11.13 = {
+        trait = education_diplomacy_3
+        set_relation_rival = character:dasulanoi_drakanorix_aagiokrata_1
+        set_relation_friend = character:dasulanoi_aversarian_axiaotheaism_1
+        add_pressed_claim = title:c_provincenew6239
+        trait = gh_historical_school
+        effect = {
+            set_variable = { name = historical_magic_school value = flag:silentspeak }
+            set_variable = { name = historical_magic_school_min_spells value = 4 }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+﻿gwasillikh_ruidari_1 = {
+	name = "Aklouf"
+	religion = "ruidari"
+	culture = "gwasillikh"
+
+	1212.10.18 = {
+		birth = yes
+	}
+}
+
+gwasillikh_ruidari_2 = {
+	name = "Masuwa"
+	religion = "ruidari"
+	culture = "gwasillikh"
+
+	1220.11.3 = {
+		birth = yes
+	}
+}
+
+gwasillikh_ruidari_3 = {
+	name = "Amasin"
+	religion = "ruidari"
+	culture = "gwasillikh"
+
+	1223.6.19 = {
+		birth = yes
+	}
+}

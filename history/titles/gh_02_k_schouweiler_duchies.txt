@@ -1,0 +1,92 @@
+#d_uggleberg = {
+#	1189.2.12 = {
+#		holder = westernimperial_aversarinas_aagiokrata_3
+#	}
+#	1201.3.4 = {
+#		holder = 0
+#	}
+#	1230.1.1 = {
+#		change_development_level = 10
+#	}
+#	1250.1.1 = {
+#		holder = vrodkin_sjalvolki_33
+#		liege = e_migrant_coalition
+#		government = continental_clan_government
+#	}
+#}
+
+d_weidingen = {
+	1159.6.7 = {
+		holder = northernimperial_aversarinas_aagiokrata_44
+		liege = k_governorate_the_reach_kingdom
+	}
+	1200.3.1 = {
+		holder = northernimperial_aversarinas_aagiokrata_42
+	}
+	1209.10.3 = {
+		holder = northernimperial_aversarinas_aagiokrata_45
+	}
+	1218.7.27 = {
+		holder = northernimperial_aversarinas_aagiokrata_19
+	}
+	1229.11.3 = {
+		holder = northernimperial_aversarinas_aagiokrata_14
+	}
+	1230.7.24 = {
+		holder = westernimperial_aeschraes_aagiokrata_6
+	}
+	1230.1.1 = {
+		change_development_level = 10
+	}
+	1231.9.20 = {
+		holder = northernimperial_aversarinas_aagiokrata_14
+	}
+	1234.10.14 = {
+		holder = northernimperial_aversarinas_aagiokrata_15
+	}
+	1243.8.23 = {
+		holder = northernimperial_aversarinas_aagiokrata_16
+	}
+	1245.3.6 = {
+		holder = northernimperial_aversarinas_aagiokrata_17
+	}
+	1251.7.8 = {
+		holder = vrodkin_sjalvolki_31
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1255.1.1 = {
+		holder = 0
+	}
+}
+
+d_aspelt = {
+	1159.6.7 = {
+		holder = northernimperial_aversarinas_aagiokrata_44
+	}
+	1200.3.1 = {
+		holder = northernimperial_aversarinas_aagiokrata_42
+	}
+	1209.10.3 = {
+		holder = northernimperial_aversarinas_aagiokrata_46
+	}
+	1217.7.7 = {
+		holder = northernimperial_aversarinas_aagiokrata_19
+	}
+	1229.11.3 = {
+		holder = 0
+	}
+	1230.1.1 = {
+		change_development_level = 10
+	}
+	1255.10.3 = {
+		holder = barki_sjalvolki_7
+	}
+	1260.1.1 = {
+		liege = k_pearlcoast
+	}
+	1266.11.7 = {
+		holder = barki_sjalvolki_45
+		government = feudal_government
+	}
+}

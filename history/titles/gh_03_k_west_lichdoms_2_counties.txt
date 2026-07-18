@@ -1,0 +1,109 @@
+c_west_lichdoms_2022 = {
+	171.1.1 = {
+		holder = wasteland
+	}
+	1241.11.16 = {
+		holder = sceyfig_lighter_aegispact_3
+		government = tribal_government
+	}
+}
+c_west_lichdoms_2161 = {
+	171.1.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_2181 = {
+	1.1.2 = {
+		holder = unsorted_24
+	}
+	171.1.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_2131 = {
+	171.1.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_2122 = {
+	171.1.1 = {
+		holder = wasteland
+	}
+	1241.11.16 = {
+		holder = sceyfig_lighter_aegispact_3
+		government = tribal_government
+	}
+}
+c_west_lichdoms_2171 = {
+	171.1.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_12191 = {
+	1.1.2 = {
+		holder = unsorted_24
+	}
+	171.1.1 = {
+		holder = wasteland
+	}
+}
+c_provinceprovince9277 = {
+	1.1.2 = {
+		holder = unsorted_24
+	}
+	171.1.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_56 = {
+	1.1.2 = {
+		holder = unsorted_24
+	}
+	171.1.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_41 = {
+	171.1.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_39 = {
+	171.1.1 = {
+		holder = wasteland
+	}
+	1121.10.14 = {
+		holder = lich_culture_rejection_20
+	}
+}
+c_west_lichdoms_42 = {
+	171.1.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_36 = {
+	171.1.1 = {
+		holder = wasteland
+	}
+}
+c_provinceprovince10627 = {
+	1.1.2 = {
+		holder = unsorted_24
+	}
+	171.1.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_51 = {
+	1.1.2 = {
+		holder = unsorted_24
+	}
+	171.1.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_49 = {
+	171.1.1 = {
+		holder = wasteland
+	}
+}

@@ -1,0 +1,407 @@
+109 = {
+	holding = none
+}
+
+154 = {
+	holding = city_holding
+}
+
+330 = {
+	culture = qaanhai
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+555 = {
+	culture = yevanya
+	religion = vidvaookeyatra
+	holding = metro_holding
+	1000.1.1 = {
+		buildings = {
+			metro_03
+		}
+	}
+}
+
+560 = {
+	holding = castle_holding
+}
+
+568 = {
+	holding = church_holding
+}
+
+570 = {
+	holding = city_holding
+}
+
+1220 = {
+	holding = church_holding
+}
+
+1679 = {
+	holding = none
+}
+
+1690 = {
+	holding = city_holding
+}
+
+1694 = {
+	culture = huxayakha
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+1708 = {
+	holding = church_holding
+}
+
+1714 = {
+	culture = nizhbata
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+1734 = {
+	holding = none
+}
+
+1741 = {
+	culture = mithaista
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+1792 = {
+	culture = mithaista
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+1804 = {
+	culture = mithaista
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+1808 = {
+	holding = none
+}
+
+1828 = {
+	holding = city_holding
+}
+
+1891 = {
+	holding = church_holding
+}
+
+1905 = {
+	holding = none
+}
+
+1912 = {
+	holding = none
+}
+
+
+1941 = {
+	holding = none
+}
+
+1953 = {
+	holding = church_holding
+}
+
+1955 = {
+	culture = aezentiam
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+1972 = {
+	holding = church_holding
+}
+
+1984 = {
+	culture = qaanhai
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+1987 = {
+	holding = none
+}
+
+1996 = {
+	culture = holganud
+	religion = iek_otached
+	holding = castle_holding
+}
+
+2012 = {
+	holding = castle_holding
+}
+
+2013 = {
+	holding = church_holding
+}
+
+
+2016 = {
+	culture = yonata	
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+2052 = {
+	culture = yevanya
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+2110 = {
+	holding = castle_holding
+}
+
+2112 = {
+	holding = castle_holding
+}
+
+2122 = {
+	culture = qaanhai
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+2128 = {
+	holding = none
+}
+
+2151 = {
+	holding = church_holding
+}
+
+2167 = {
+	holding = church_holding
+}
+
+2180 = {
+	holding = city_holding
+}
+
+2185 = {
+	culture = yevanya
+	religion = cuthanagi
+	holding = castle_holding
+}
+
+2192 = {
+	holding = church_holding
+}
+
+2196 = {
+	holding = none
+}
+
+2198 = {
+	culture = gwenuyos
+	religion = cuthanagi
+	holding = city_holding
+}
+
+2207 = {
+	culture = mithaista
+	religion = cuthanagi
+	holding = castle_holding
+}
+
+2210 = {
+	culture = armanas
+	religion = cuthanagi
+	holding = castle_holding
+}
+
+2222 = {
+	holding = none
+}
+
+2226 = {
+	culture = sarishta
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+2234 = {
+	holding = city_holding
+}
+
+2244 = {
+	culture = sarishta
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+2245 = {
+	culture = sarishta
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+2246 = {
+	holding = city_holding
+}
+
+2258 = {
+	holding = church_holding
+}
+
+2324 = {
+	holding = none
+}
+
+2335 = {
+	culture = nizhbata
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+2373 = {
+	culture = paidem
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+2451 = {
+	culture = vastarnai
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+2566 = {
+	culture = tanumarei
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+2573 = {
+	holding = castle_holding
+}
+
+2656 = {
+	holding = castle_holding
+	1.1.1 = {
+		special_building = 01_abandoned_labyrinth
+	}
+}
+
+2714 = {
+	holding = none
+}
+
+2851 = {
+	holding = city_holding 
+}
+
+2897 = {
+	culture = vastarnai
+	religion = vidvaookeyatra
+	holding = metro_holding
+	1000.1.1 = {
+		buildings = {
+			metro_03
+		}
+	}
+}
+
+2904 = {
+	holding = castle_holding
+}
+
+2973 = {
+	holding = castle_holding
+}
+
+2997 = {
+	culture = vastarnai
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+3247 = {
+	holding = none
+}
+
+3311 = {
+  holding = city_holding 
+}
+
+3371 = {
+	culture = tanumarei
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+2001 = {
+	culture = uthanata
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+3490 = {
+	culture = tanumarei
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+3538 = {
+	holding = none
+}
+
+
+3990 = {
+	culture = vaxanaka
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+4130 = {
+	holding = none
+}
+
+4143 = {
+	culture = easternimperial
+	religion = aironoian_aagiokrata
+	holding = castle_holding
+}
+
+4188 = {
+	culture = vaxanaka
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+4210 = {
+	holding = none
+}
+
+4367 = {
+	culture = parakh
+	religion = dravadari
+	holding = castle_holding
+}
+
+5801 = {
+	culture = vastarnai
+	religion = vidvaookeyatra
+	holding = castle_holding
+	1.1.1 = {
+		special_building = 01_halite_temple
+	}
+}
+
+5831 = {
+	holding = castle_holding
+}
+

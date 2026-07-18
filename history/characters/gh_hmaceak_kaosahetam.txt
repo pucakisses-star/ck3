@@ -1,0 +1,55 @@
+﻿hmaceak_kaosahetam_01 = {
+	name = "Manukathi"
+	dynasty = dyn_hmaceak_1
+	religion = "kaosahetam"
+	culture = "hmaceak"
+	
+	martial = 1
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 8
+	prowess = 4
+
+	trait = greedy
+	trait = arrogant
+	trait = calm
+	trait = education_stewardship_4
+	trait = shrewd
+	
+	1214.9.21= {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 2 }
+		}
+	}
+}
+
+hmaceak_kaosahetam_02 = {
+	name = "Wenjie"
+	religion = "kaosahetam"
+	culture = "hmaceak"
+	
+	1220.3.14= {
+		birth = yes
+	}
+}
+
+hmaceak_kaosahetam_03 = {
+	name = "Yun"
+	religion = "kaosahetam"
+	culture = "hmaceak"
+	
+	1225.9.17 = {
+		birth = yes
+	}
+}
+
+hmaceak_kaosahetam_04 = {
+	name = "Chuyue"
+	religion = "kaosahetam"
+	culture = "hmaceak"
+	
+	1228.12.1 = {
+		birth = yes
+	}
+}

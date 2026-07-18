@@ -1,0 +1,140 @@
+3437 = {
+	culture = tlakalak
+	religion = uakaklo
+	holding = tribal_holding
+}
+3459 = {
+	holding = none
+}
+3580 = {
+	culture = tlakalak
+	religion = uakaklo
+	holding = tribal_holding
+}
+3465 = {
+	holding = none
+}
+3481 = {
+	culture = tlakalak
+	religion = mitikaka
+	holding = tribal_holding
+}
+4107 = {
+	culture = tlakalak
+	religion = uakaklo
+	holding = tribal_holding
+}
+3486 = {
+	culture = tlakalak
+	religion = uakaklo
+	holding = tribal_holding
+}
+3455 = {
+	culture = tlakalak
+	religion = uakaklo
+	holding = tribal_holding
+}
+3514 = {
+	holding = none
+}
+3521 = {
+	culture = tlakalak
+	religion = uakaklo
+	holding = tribal_holding
+}
+3508 = {
+	culture = tlakalak
+	religion = uakaklo
+	holding = church_holding
+}
+3502 = {
+	holding = none
+}
+
+8286 = {
+	culture = surugin
+	religion = ehatm
+	holding = tribal_holding
+}
+8081 = {
+	culture = surugin
+	religion = ehatm
+	holding = tribal_holding
+}
+3592 = {
+	holding = none
+}
+3589 = {
+	culture = surugin
+	religion = ehatm
+	holding = tribal_holding
+}
+3602 = {
+	holding = none
+}
+3522 = {
+	holding = none
+}
+3542 = {
+	culture = surugin
+	religion = ehatm
+	holding = tribal_holding
+}
+3551 = {
+	culture = surugin
+	religion = ehatm
+	holding = tribal_holding
+}
+3541 = {
+	holding = none
+}
+3556 = {
+	holding = none
+}
+3585 = {
+	holding = none
+}
+3597 = {
+	culture = surugin
+	religion = ehatm
+	holding = tribal_holding
+}
+3596 = {
+	culture = surugin
+	religion = ehatm
+	holding = tribal_holding
+}
+3601 = {
+	holding = none
+}
+1806 = {
+	culture = surugin
+	religion = ehatm
+	holding = metro_holding
+}
+3532 = {
+	holding = ruin_holding
+}
+1823 = {
+	holding = city_holding
+}
+
+#empty provinces
+3594 = {
+	holding = none
+}
+3540 = {
+	holding = none
+}
+3511 = {
+	holding = none
+}
+3559 = {
+	holding = none
+}
+3507 = {
+	holding = none
+}
+8110 = {
+	holding = none
+}

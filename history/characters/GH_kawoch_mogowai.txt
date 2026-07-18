@@ -1,0 +1,1246 @@
+﻿kawoch_mogowai_1 = { # Vassal of above, left collapsing kingdom in the south
+	name = "Farilom"
+	religion = mogowai
+	culture = kawoch
+	
+	1220.1.5 = {
+		birth = yes
+	}
+	1232.1.5 = {
+		trait = craven
+		trait = forgiving
+		trait = trusting
+	}
+	1236.1.5 = {
+		trait = education_diplomacy_2
+	}
+}
+
+kawoch_mogowai_2 = { # Same as above
+	name = "Berali"
+	religion = mogowai
+	culture = kawoch
+	
+	1228.1.27 = {
+		birth = yes
+	}
+	1240.1.27 = {
+		trait = gluttonous
+		trait = arbitrary
+		trait = greedy
+	}
+	1244.1.27 = {
+		trait = education_stewardship_3
+	}
+}
+
+kawoch_mogowai_3 = { # Descendant of the Belars, successor kingdom is dying however, inheirited recently
+	name = "Runalem"
+	dna = kawoch_mogowai_3
+	religion = mogowai
+	culture = kawoch
+	sexuality = heterosexual
+	
+	dynasty = dyn_damota_6
+	father = kawoch_mogowai_4
+	mother = kawoch_mogowai_14
+	
+	diplomacy = 5
+	martial = 5
+	stewardship = 4
+	intrigue = 11
+	learning = 8
+	
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_sub_saharan_01
+			custom_hair = male_hair_sub_saharan_01
+		}
+	}
+
+	1230.8.26 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 5 }
+		}
+	}
+	1242.8.26 = {
+		trait = paranoid
+		trait = arbitrary
+		trait = impatient
+	}
+	1246.8.26 = {
+		trait = education_stewardship_1
+	}
+	1247.1.1 = {
+		set_relation_friend = character:kawoch_mogowai_5
+	}
+}
+
+kawoch_mogowai_4 = { # 3's father
+	name = "Gareleb"
+	dna = kawoch_mogowai_4 
+	religion = mogowai
+	culture = kawoch
+	sexuality = heterosexual
+	father = kawoch_mogowai_17
+	mother = kawoch_mogowai_18	
+	
+	dynasty = dyn_damota_6
+	
+	
+	diplomacy = 9
+	martial = 9
+	stewardship = 12
+	intrigue = 5
+	learning = 7
+	
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_sub_saharan_03
+		}
+	}
+
+	1187.12.27 = {
+		birth = yes
+	}
+	1199.12.27 = {
+		trait = gregarious
+		trait = just
+		trait = cynical
+	}
+	1203.12.17 = {
+		trait = education_stewardship_3
+	}
+	1213.2.16 = {
+		add_spouse = kawoch_mogowai_14
+	}
+	1221.8.3 = {
+		effect = {
+			set_relation_soulmate = character:kawoch_mogowai_14
+		}
+	}
+	1249.5.16 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+kawoch_mogowai_5 = { # loyal vassal of 3, genuinely wants to support 3
+	name = "Wanala"
+	religion = mogowai
+	culture = kawoch
+	sexuality = bisexual
+	
+	1213.11.7 = {
+		birth = yes
+#		effect = { # GH TODO: Commented this out atm since this guy has no assigned dynasty - ScionEol
+#			dynasty = { add_dynasty_prestige_level = 2 }
+#		}
+	}
+	1225.11.7 = {
+		trait = brave
+		trait = honest
+		trait = humble
+	}
+	1229.11.7 = {
+		trait = education_martial_4
+	}
+}
+
+kawoch_mogowai_6 = { # less loyal to 3, prefers him to other options
+	name = "Kiwad"
+	religion = mogowai
+	culture = kawoch
+	
+	1219.10.20 = {
+		birth = yes
+	}
+	1231.10.20 = {
+		trait = temperate
+		trait = shy
+		trait = lustful
+	}
+	1235.10.20 = {
+		trait = education_intrigue_2
+	}
+}
+
+kawoch_mogowai_7 = { # Remnant of Halakoi north of theocracy, probably the first target of Kihineti Mogotada.
+	name = "Zamiko"
+	religion = mogowai
+	culture = kawoch
+	
+	dynasty = dyn_damota_11
+	
+	diplomacy = 7
+	martial = 9
+	stewardship = 6
+	intrigue = 6
+	learning = 5
+	
+	1213.4.25 = {
+		birth = yes
+	}
+	1225.4.25 = {
+		trait = calm
+		trait = fickle
+		trait = vengeful
+	}
+	1229.4.25 = {
+		trait = education_intrigue_2
+	}
+	1280.4.17 = {
+		death = { #Kills himself from stress after the collapse of his realm
+			death_reason = death_suicide
+		}
+	}
+}
+
+kawoch_mogowai_8 = { # another loyal vassal of belar guy
+	name = "Rayinak"
+	religion = mogowai
+	culture = kawoch
+	
+	1228.9.2 = {
+		birth = yes
+	}
+	1240.9.2 = {
+		trait = chaste
+		trait = stubborn
+		trait = cynical
+	}
+	1244.9.2 = {
+		trait = education_diplomacy_3
+	}
+}
+
+kawoch_mogowai_9 = { # Aderi, the royal guard guy
+	name = "Aderi"
+	dna = kawoch_mogowai_9
+	religion = mogowai
+	culture = kawoch
+	sexuality = heterosexual
+	
+	dynasty = dyn_damota_12
+	
+	diplomacy = 8
+	martial = 10
+	stewardship = 7
+	intrigue = 4
+	learning = 6
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_mena_07
+			custom_hair = no_hair
+		}
+	}
+	
+	1229.7.11 = {
+		birth = yes
+	}
+	1241.7.11 = {
+		trait = arrogant
+		trait = gregarious
+		trait = ambitious
+	}
+	1245.7.11 = {
+		trait = education_martial_3
+	}
+	1294.7.27 = {
+		death = {
+			death_reason = death_cancer
+		}
+	}
+}
+
+kawoch_mogowai_10 = { # duke who starts in zahali
+	name = "Ubala"
+	religion = mogowai
+	culture = kawoch
+	sexuality = heterosexual
+	
+	dynasty = dyn_damota_13
+	father = kawoch_mogowai_30
+	
+	diplomacy = 5
+	martial = 8
+	stewardship = 6
+	intrigue = 9
+	learning = 6
+	
+	1199.6.20 = {
+		birth = yes
+	}
+	1211.6.20 = {
+		trait = generous
+		trait = lazy
+		trait = paranoid
+	}
+	1215.6.20 = {
+		trait = education_intrigue_2
+	}
+	1270.8.12 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+kawoch_mogowai_11 = { # vassal under zahali
+	name = "Isagi"
+	religion = mogowai
+	culture = kawoch
+	
+	1223.8.16 = {
+		birth = yes
+	}
+}
+
+kawoch_mogowai_12 = { # 2-county Magi north of Aderi, coward who is fine sitting around
+	name = "Wobala"
+	religion = mogowai
+	culture = kawoch
+	sexuality = homosexual
+	
+	dynasty = dyn_damota_14
+	
+	diplomacy = 8
+	martial = 6
+	stewardship = 7
+	intrigue = 7
+	learning = 5
+	
+	1220.5.17 = {
+		birth = yes
+		trait = magic_good_3
+		effect = { set_base_arcana = { AMOUNT = 7 } }
+	}
+	1232.5.17 = {
+		trait = content
+		trait = gluttonous
+		trait = craven
+	}
+	1236.5.17 = {
+		trait = education_diplomacy_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:songs_of_service_and_sight }
+			set_variable = { name = historical_magic_school_min_spells value = 5 }
+		}
+	}
+	1280.4.10 = {
+		death = {
+			death_reason = death_execution
+			killer = kawoch_mogowai_8
+		}
+	}
+}
+
+kawoch_mogowai_13 = { # count next to Aderi, put on throne by rayakuux, decent person
+	name = "Enaril"
+	religion = mogowai
+	culture = kawoch
+	
+	dynasty = dyn_damota_15
+	
+	diplomacy = 9
+	martial = 7
+	stewardship = 9
+	intrigue = 8
+	learning = 9
+	
+	1227.11.4 = {
+		birth = yes
+	}
+	1239.11.4 = {
+		trait = patient
+		trait = humble
+		trait = honest
+	}
+	1243.11.4 = {
+		trait = education_learning_3
+	}
+	1289.8.23 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+	
+kawoch_mogowai_14 = { # Wife of 4, close to him
+	name = "Anorusa"
+	dna = kawoch_mogowai_14
+	religion = mogowai
+	culture = kawoch
+	female = yes
+	sexuality = heterosexual
+	
+	diplomacy = 6
+	martial = 7
+	stewardship = 6
+	intrigue = 6
+	learning = 7
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_sub_saharan_child_01
+		}
+	}
+	
+	1197.1.13 = {
+		birth = yes
+	}
+	1209.1.13 = {
+		trait = generous
+		trait = arbitrary
+		trait = shy
+	}
+	1213.1.13 = {
+		trait = education_martial_2
+	}
+	1268.4.27 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+kawoch_mogowai_15 = { # younger brother of Runalem (3), politically unmotivated but smart scholar
+	name = "Sonare"
+	dna = kawoch_mogowai_15
+	religion = mogowai
+	culture = kawoch
+	sexuality = heterosexual
+	
+	dynasty = dyn_damota_6
+	father = kawoch_mogowai_4
+	mother = kawoch_mogowai_14
+	
+	diplomacy = 5
+	martial = 4
+	stewardship = 6
+	intrigue = 5
+	learning = 9
+	
+	 portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_sub_saharan_02
+			custom_hair = male_hair_sub_saharan_02
+		}
+	}
+	
+	1232.5.15 = {
+		birth = yes
+	}
+	1232.5.16 = {
+		trait = intellect_good_1
+	}
+	1244.5.15 = {
+		trait = shy
+		trait = patient
+		trait = lazy
+	}
+	1248.5.15 = {
+		trait = education_learning_4
+	}
+}
+
+kawoch_mogowai_16 = { # sister of Runalem, underage as of start date, but seems ambitious, eventually coups Runalem and rules a rump state in 1298
+	name = "Womala"
+	religion = mogowai
+	culture = kawoch
+	female = yes
+	sexuality = homosexual
+	
+	dynasty = dyn_damota_6
+	father = kawoch_mogowai_4
+	mother = kawoch_mogowai_14
+	
+	diplomacy = 6
+	martial = 6
+	stewardship = 7
+	intrigue = 7
+	learning = 5
+
+	1240.11.22 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	1252.11.22 = {
+		trait = ambitious
+		trait = wrathful
+		trait = diligent
+	}
+	1256.11.22 = {
+		trait = education_martial_3
+	}
+	1262.4.2 = {
+		set_relation_rival = character:kawoch_mogowai_3
+	}
+}
+	
+kawoch_mogowai_17 = { # Belar ruler of Dihalet, before the crisis that hits them, but pretty meh ruler. Dies in Frodbrokna
+	name = "Helayi"
+	dna = kawoch_mogowai_17
+	religion = mogowai
+	culture = kawoch
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 4
+	stewardship = 6
+	intrigue = 5
+	learning = 5
+	
+	dynasty = dyn_damota_6
+	
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_western_10
+			custom_hair = male_hair_sub_saharan_01
+		}
+	}
+	
+	1157.6.18 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 9 }
+		}
+	}
+	1169.6.18 = {
+		trait = lazy
+		trait = gregarious
+		trait = just
+	}
+	1173.6.18 = {
+		trait = education_diplomacy_1
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+kawoch_mogowai_18 = { # 17's wife
+	name = "Amensuba"
+	dna = kawoch_mogowai_18
+	religion = mogowai
+	culture = kawoch
+	female = yes
+	sexuality = heterosexual
+	
+	diplomacy = 6
+	martial = 5
+	stewardship = 7
+	intrigue = 6
+	learning = 6
+	
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_sub_saharan_02
+		}
+	}
+	
+	1156.4.19 = {
+		birth = yes
+	}
+	1168.4.19 = {
+		trait = content
+		trait = humble
+		trait = vengeful
+	}
+	1172.4.19 = {
+		trait = education_stewardship_2
+	}
+	1175.11.15 = {
+		add_spouse = kawoch_mogowai_17
+	}
+	1226.9.7 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+kawoch_mogowai_19 = { # Count of Debali and Debakem
+	name = "Lebare"
+	religion = mogowai
+	culture = kawoch
+	sexuality = homosexual
+	
+	diplomacy = 5
+	martial = 7
+	stewardship = 6
+	intrigue = 5
+	learning = 7
+	
+	1139.11.28 = {
+		birth = yes
+		trait = magic_good_3
+	}
+	1151.11.28 = {
+		trait = diligent
+		trait = impatient
+		trait = trusting
+	}
+	1155.11.28 = {
+		trait = education_diplomacy_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+kawoch_mogowai_20 = { # Count of Bilete
+	name = "Felesse"
+	religion = mogowai
+	culture = kawoch
+	sexuality = heterosexual
+	
+	diplomacy = 7
+	martial = 5
+	stewardship = 6
+	intrigue = 7
+	learning = 6
+	
+	1135.4.11 = {
+		birth = yes
+	}
+	1147.4.11 = {
+		trait = callous
+		trait = humble
+		trait = stubborn
+	}
+	1151.4.11 = {
+		trait = education_learning_2
+	}
+	1196.2.29 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+kawoch_mogowai_21 = { # Yarkiye of Hayika, killed by the Nitsafai rise, ending his realm which has stood since the early 1000s
+	name = "Oruni"
+	religion = mogowai
+	culture = kawoch
+	sexuality = heterosexual
+	
+	dynasty = dyn_damota_25
+	
+	diplomacy = 8
+	martial = 6
+	stewardship = 7
+	intrigue = 6
+	learning = 4
+	
+	1165.12.17 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 3 }
+		}
+	}
+	1177.12.17 = {
+		trait = calm
+		trait = arbitrary
+		trait = deceitful
+	}
+	1181.12.17 = {
+		trait = education_stewardship_3
+	}
+	1225.3.14 = {
+		death = {
+			death_reason = death_battle
+			killer = kawoch_nitsafai_1
+		}
+	}
+}
+
+kawoch_mogowai_22 = { # 21's wife
+	name = "Oruni"
+	religion = mogowai
+	culture = kawoch
+	female = yes
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 7
+	stewardship = 5
+	intrigue = 6
+	learning = 5
+	
+	1167.9.22 = {
+		birth = yes
+	}
+	1179.9.22 = {
+		trait = honest
+		trait = cynical
+		trait = craven
+	}
+	1183.9.22 = {
+		trait = education_martial_3
+	}
+	1185.4.18 = {
+		add_spouse = kawoch_mogowai_21
+	}
+	1229.5.15 = {
+		death = {
+			death_reason = death_cancer
+		}
+	}
+}
+
+kawoch_mogowai_23 = { # Yarkiye of Mekidez-Meheda, realm falls apart due to Tetenik when they die, but pretty competent and good
+	name = "Ebirali"
+	religion = mogowai
+	culture = kawoch
+	sexuality = heterosexual
+	
+	dynasty = dyn_damota_24
+	
+	diplomacy = 9
+	martial = 6
+	stewardship = 7
+	intrigue = 7
+	learning = 5
+	
+	1158.8.30 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 4 }
+		}
+	}
+	1160.8.30 = {
+		trait = content
+		trait = chaste
+		trait = generous
+	}
+	1164.8.30 = {
+		trait = education_stewardship_4
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+kawoch_mogowai_24 = { # 23's wife, pretty good as well, overall 23's death is a tragedy that leads to the rise of fundamentalists
+	name = "Tenori"
+	religion = mogowai
+	culture = kawoch
+	female = yes
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 6
+	stewardship = 7
+	intrigue = 7
+	learning = 6
+	
+	1163.1.12 = {
+		birth = yes
+	}
+	1175.1.12 = {
+		trait = brave
+		trait = trusting
+		trait = forgiving
+	}
+	1179.1.12 = {
+		trait = education_martial_3
+	}
+	1184.12.4 = {
+		add_spouse = kawoch_mogowai_23
+	}
+	1223.6.24 = {
+		death = {
+			death_reason = death_execution
+			killer = kawoch_nitsafai_1
+		}
+	}
+}
+
+kawoch_mogowai_25 = { # Ruler of Halakoi, with a marital alliance to the Yenusaawi. Descendent is kawoch_mogowai_7
+	name = "Birwit"
+	dna = kawoch_mogowai_25
+	religion = mogowai
+	culture = kawoch
+	sexuality = heterosexual
+	
+	dynasty = dyn_damota_11
+	
+	diplomacy = 6
+	martial = 7
+	stewardship = 5
+	intrigue = 7
+	learning = 9
+	
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_western_04
+			custom_hair = no_hair
+		}
+	}
+	
+	1143.5.25 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 3 }
+		}
+	}
+	1155.5.25 = {
+		##trait = content
+		trait = wrathful
+		trait = ambitious
+	}
+	1159.5.25 = {
+		trait = education_learning_3
+	}
+	1167.6.23 = {
+		add_spouse = kawoch_mogowai_26
+	}
+	1193.3.7 = {
+		death = {
+			death_reason = death_smallpox
+		}
+	}
+}
+
+kawoch_mogowai_26 = {
+	name = "Helayhu"
+	dna = kawoch_mogowai_26
+	religion = mogowai
+	culture = kawoch
+	female = yes
+	sexuality = heterosexual
+	father = kawoch_mogowai_27
+	mother = kawoch_mogowai_28
+	
+	dynasty = dyn_damota_12
+	
+	diplomacy = 6
+	martial = 4
+	stewardship = 6
+	intrigue = 5
+	learning = 6
+	
+	 portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_sub_saharan_02
+		}
+	}
+	
+	1151.6.16 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 3 }
+		}
+	}
+	1163.6.16 = {
+		trait = trusting
+		trait = cynical
+		trait = callous
+	}
+	1167.6.16 = {
+		trait = education_martial_1
+	}
+	1214.7.27 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+kawoch_mogowai_27 = { # Yenusaawi leader, old, and more adept at diplo than combat
+	name = "Raloshwo"
+	dna = kawoch_mogowai_27 
+	religion = mogowai
+	culture = kawoch
+	sexuality = bisexual
+	
+	dynasty = dyn_damota_12
+	
+	diplomacy = 10
+	martial = 5
+	stewardship = 6
+	intrigue = 8
+	learning = 6
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_sub_saharan_01
+		}
+	}
+	
+	1122.8.5 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 4 }
+		}
+	}
+	1134.8.5 = {
+		trait = brave
+		trait = trusting
+		trait = gregarious
+	}
+	1138.8.5 = {
+		trait = education_martial_2
+	}
+	1143.4.13 = {
+		add_spouse = kawoch_mogowai_28
+	}
+	1188.1.31 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+kawoch_mogowai_28 = { # Wife of 27
+	name = "Kelwer"
+	dna = kawoch_mogowai_28
+	religion = mogowai
+	culture = kawoch
+	female = yes
+	sexuality = heterosexual
+	
+	diplomacy = 6
+	martial = 7
+	stewardship = 8
+	intrigue = 7
+	learning = 6
+	
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_sub_saharan_03
+		}
+	}
+	
+	1124.9.17 = {
+		birth = yes
+	}
+	1136.9.17 = {
+		trait = lustful
+		trait = arrogant
+		trait = shy
+	}
+	1140.9.17 = {
+		trait = education_stewardship_4
+	}
+	1187.6.23 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+kawoch_mogowai_29 = { # Holder of Zahali and Kaselej, died in frod
+	name = "Binare"
+	religion = mogowai
+	culture = kawoch
+	sexuality = asexual	
+	
+	diplomacy = 6
+	martial = 4
+	stewardship = 5
+	intrigue = 8
+	learning = 7
+	
+	1149.3.14 = {
+		birth = yes
+	}
+	1161.3.14 = {
+		trait = chaste
+		trait = wrathful
+		trait = craven
+	}
+	1165.3.14 = {
+		trait = education_intrigue_2
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+kawoch_mogowai_30 = { # Ralolaz, ancestor of kawoch_mogowai_10
+	name = "Halore"
+	religion = mogowai
+	culture = kawoch
+	sexuality = heterosexual	
+	
+	dynasty = dyn_damota_13
+	
+	diplomacy = 5
+	martial = 6
+	stewardship = 6
+	intrigue = 6
+	learning = 4
+	
+	1159.5.24 = {
+		birth = yes
+	}
+	1171.5.24 = {
+		trait = calm
+		trait = greedy
+		trait = impatient
+	}
+	1175.5.24 = {
+		trait = education_learning_1
+	}
+	1221.3.1 = {
+		death = {
+			death_reason = death_smallpox
+		}
+	}
+}
+
+kawoch_mogowai_31 = { # Count of Purtet in 1186, incredibly shitty Magi
+	name = "Nadoreb"
+	religion = mogowai
+	culture = kawoch
+	sexuality = bisexual
+	
+	diplomacy = 4
+	martial = 6
+	stewardship = 7
+	intrigue = 7
+	learning = 6
+	
+	1161.1.2 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	1173.1.2 = {
+		trait = calm
+		trait = craven
+		trait = lustful
+	}
+	1177.1.2 = {
+		trait = education_stewardship_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+	1225.4.13 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+kawoch_mogowai_32 = { #Head of League in 1298, took over Yenusaawi after father's death, good diplomat and administrator but maybe not the best military leader
+	name = "Bahali"
+	religion = mogowai
+	culture = kawoch
+	sexuality = bisexual
+	
+	dynasty = dyn_damota_12
+	father = kawoch_mogowai_9
+	mother = kawoch_mogowai_33
+	
+	diplomacy = 10
+	martial = 4
+	stewardship = 6
+	intrigue = 6
+	learning = 8
+
+	#portrait_override = {
+	#	portrait_modifier_overrides = {
+	#		custom_beards = male_beard_mena_08
+	#		custom_hair = no_hair
+	#	}
+	#}
+	
+	1262.3.31 = {
+		birth = yes
+	}
+	1274.3.31 = {
+		trait = patient
+		trait = gregarious
+		trait = forgiving
+	}
+	1278.3.31 = {
+		trait = education_diplomacy_3
+	}
+}
+
+kawoch_mogowai_33 = { #Wife of 9, daughter of 7
+	name = "Azim"
+	religion = mogowai
+	culture = kawoch
+	sexuality = heterosexual
+	female = yes
+	
+	dynasty = dyn_damota_11
+	father = kawoch_mogowai_7
+	mother = kawoch_mogowai_36
+	
+	diplomacy = 7
+	martial = 6
+	stewardship = 9
+	intrigue = 8
+	learning = 9
+
+	#portrait_override = {
+	#	portrait_modifier_overrides = {
+	#		custom_beards = male_beard_mena_08
+	#		custom_hair = no_hair
+	#	}
+	#}
+	
+	1243.12.24 = {
+		birth = yes
+	}
+	1255.12.24 = {
+		trait = calm
+		trait = gregarious
+		trait = forgiving
+	}
+	1259.12.24 = {
+		trait = education_diplomacy_3
+	}
+	1260.11.17 = {
+		add_spouse = kawoch_mogowai_9
+	}
+}
+
+kawoch_mogowai_34 = { #son of 13
+	name = "Lehayla"
+	religion = mogowai
+	culture = kawoch
+	sexuality = heterosexual
+
+	dynasty = dyn_damota_15
+	father = kawoch_mogowai_13
+	mother = kawoch_mogowai_35
+
+	diplomacy = 8
+	martial = 7
+	stewardship = 5
+	intrigue = 7
+	learning = 7
+
+	1258.5.13 = {
+		birth = yes
+	}
+	1270.5.13 = {
+		trait = patient
+		trait = greedy
+		trait = forgiving
+	}
+	1274.5.13 = {
+		trait = education_diplomacy_2
+	}
+}
+
+kawoch_mogowai_35 = { #Wife of 13 and mother of above
+	name = "Gebreselassi"
+	religion = mogowai
+	culture = kawoch
+	sexuality = heterosexual
+	female = yes
+
+	diplomacy = 7
+	martial = 8
+	stewardship = 7
+	intrigue = 8
+	learning = 8
+
+	1231.3.13 = {
+		birth = yes
+	}
+	1243.3.13 = {
+		trait = zealous
+		trait = chaste
+		trait = trusting
+	}
+	1247.3.13 = {
+		trait = education_diplomacy_1
+	}
+	1250.7.18 = {
+		add_spouse = kawoch_mogowai_13
+	}
+}
+
+kawoch_mogowai_36 = { #Wife of 7, mother of 33 and 37
+	name = "Segole"
+	religion = mogowai
+	culture = kawoch
+	sexuality = heterosexual
+	female = yes
+
+	diplomacy = 8
+	martial = 6
+	stewardship = 9
+	intrigue = 7
+	learning = 7
+
+	1223.12.20 = {
+		birth = yes
+	}
+	1243.12.20 = {
+		trait = arbitrary
+		trait = ambitious
+		trait = calm
+	}
+	1247.12.20 = {
+		trait = education_stewardship_2
+	}
+	1250.7.18 = {
+		add_spouse = kawoch_mogowai_7
+	}
+}
+
+kawoch_mogowai_37 = { #heir to halakoi, though by the time he took over it was already mostly lost
+	name = "Helore"
+	religion = mogowai
+	culture = kawoch
+	sexuality = heterosexual
+
+	dynasty = dyn_damota_11
+	father = kawoch_mogowai_7
+	mother = kawoch_mogowai_36
+
+	diplomacy = 8
+	martial = 7
+	stewardship = 5
+	intrigue = 7
+	learning = 7
+
+	1252.6.19 = {
+		birth = yes
+		trait = magic_good_2
+	}
+	1270.5.13 = {
+		trait = humble
+		trait = chaste
+		trait = fickle
+	}
+	1274.5.13 = {
+		trait = education_martial_3
+	}
+}

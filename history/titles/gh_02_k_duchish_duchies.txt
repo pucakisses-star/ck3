@@ -1,0 +1,9 @@
+﻿d_solotroi = {
+	1235.1.1 = {
+		holder = hmaceak_kaosahetam_01
+		government = tribal_government
+	}
+	1230.1.1 = {
+		change_development_level = 7
+	}
+}

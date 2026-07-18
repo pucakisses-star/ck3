@@ -1,0 +1,89 @@
+﻿guillater_lifepath_1 = {
+    name = "Salinguerra" 
+    female = yes
+
+    religion = lifepath
+    culture = guillater
+
+    father = konijkmener_lifepath_82
+    mother = konijkmener_lifepath_83
+
+    sexuality = heterosexual
+
+    trait = lustful
+    trait = just
+    trait = generous
+    trait = twin
+    trait = education_martial_3
+    trait = way_of_swords_follower
+    trait = forder
+
+    1148.11.20 = {
+        birth = yes
+    }
+
+    1247.8.23 = {
+        death = { death_reason = death_depressed }
+    }
+}
+
+guillater_lifepath_2 = {
+    name = "Rudouide" 
+    female = yes
+
+    religion = lifepath
+    culture = guillater
+
+    father = konijkmener_lifepath_82
+    mother = konijkmener_lifepath_83
+
+    sexuality = heterosexual
+
+    trait = lazy
+    trait = gluttonous
+    trait = vengeful
+    trait = way_of_swords_follower
+    trait = reckless
+    trait = twin
+    trait = education_martial_3
+
+    1148.11.20 = {
+        birth = yes
+    }
+
+    1242.10.6 = {
+        death = { death_reason = death_pneumonic }
+    }
+}
+
+guillater_lifepath_3 = {
+    name = "Pellegrino" 
+
+    dynasty = dyn_guillate_1
+    religion = lifepath
+    culture = guillater
+
+    father = konijkmener_lifepath_85
+    mother = guillater_aversarian_lifepath_1
+
+    sexuality = heterosexual
+
+    trait = sadistic
+    trait = ambitious
+    trait = vengeful
+
+    trait = way_of_knowledge_follower
+    trait = education_learning_4
+
+    1162.9.20 = {
+        birth = yes
+    }
+
+    1199.6.9 = {
+        add_spouse = guillater_hero_religion_12
+    }
+
+    1222.10.20 = {
+        death = { death_reason = death_natural_causes }
+    }
+}

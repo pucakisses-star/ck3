@@ -1,0 +1,9 @@
+﻿ixsian_aversarinas_aagiokrata_1 = {
+	name = "Amyntas"
+	religion = "aversarinas_aagiokrata"
+	culture = "ixsian"
+
+	1227.2.8 = {
+		birth = yes
+	}
+}

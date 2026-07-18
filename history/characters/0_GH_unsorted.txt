@@ -1,0 +1,488 @@
+﻿## MISC HISTORY
+
+#### 37 IS SETUP ####
+
+## KARTHARADD
+
+# 36 IS
+unsorted_15 = { # Kartharaddi Imperator
+	name = "Kryjas_Drevya_Vilodrakh" #Imperator-Kryjas Drevya-Vilodrakh Ologkryjy Nyjosvarolov, lit. "Blood-Commander Oaken Vilodrakh the Holy-Blooded son of Nyjosvar
+	dynasty = dyn_kartharaddi_1
+	religion = orphecian
+	culture = kartharaddi
+	1.1.1 = {
+		birth = yes
+	}
+	101.3.15 = {
+		death = yes
+	}
+}
+# 679 IS
+
+unsorted_48 = {
+	name = "Isvar_Dvernyjul" #Isvar VI 'Atyakh' Dvernyjul
+
+	dynasty = dyn_kartharaddi_2
+	religion = orphecian
+	culture = kartharaddi
+	604.4.5 = {
+		birth = yes
+	}
+	748.3.21 = {
+		death = yes
+	}
+}
+
+## PARTIC
+
+unsorted_16 = { # Greensea Council
+	name = "Miodhroghath-Ghois"
+	religion = partic
+	culture = voluntic # GH TODO: High Elf culture
+	1.1.1 = {
+		birth = yes
+	}
+	78.11.21 = {
+		death = yes
+	}
+}
+
+## ETHYLISIAC
+
+unsorted_17 = { # Ethylisiad - looooves enslaving Marchers
+	name = "Mithliur" #Vaguely sindarin? elf = slaver i don't know im tired
+	religion = ethylisiac
+	culture = mezzodriacc
+	1.1.1 = {
+		birth = yes
+	}
+	40.2.21 = {
+		death = {
+			death_reason = death_duel
+			killer = shewigad_starvayrd_1 # Good King Bastione
+		}
+	}
+}
+
+## KEMSAR
+
+unsorted_18 = { # Kemsari ruler
+	name = "Anukataht" #Pre-set name Anuktaḥt
+	religion = "kemsar"
+	culture = "ran_kemsari"
+	14.11.25 = {
+		birth = yes
+	}
+	98.6.2 = {
+		death = yes
+	}
+}
+
+## LICHDOMS
+
+unsorted_20 = { # k_enlightency_of_vrawsyl
+	name = "Ojtovylch" #Ancient ojyczayn
+	religion = graveright
+	culture = ojyczaynz
+	1.1.2 = {
+		birth = yes
+	}
+	60.1.1 = {
+		death = yes
+	}
+}
+
+unsorted_21 = { # e_avermore
+	name = "Kniwa" #Reference to old gothic king Cniva, but spelled polish
+	religion = graveright
+	culture = ojyczaynz #PLACEHOLDER
+	1.1.2 = {
+		birth = yes
+	}
+	60.1.1 = {
+		death = yes
+	}
+}
+
+unsorted_22 = { # e_the_septarchy
+	name = "Cztivilasz" #Ancient ojyczayn
+	religion = graveright
+	culture = ojyczaynz
+	1.1.2 = {
+		birth = yes
+	}
+	60.1.1 = {
+		death = yes
+	}
+}
+
+unsorted_23 = { # k_the_matron_crown
+	name = "Ingilth" #Continental relatives of lonely light, colony?
+	female = yes
+	religion = ethylisiac #PLACEHOLDER
+	culture = astilik #PLACEHOLDER
+	1.1.2 = {
+		birth = yes
+	}
+	60.1.1 = {
+		death = yes
+	}
+}
+
+unsorted_24 = { # k_del_lan_de_damanyanta
+	name = "Axtzarro" #Basqo-Spanish
+	dynasty = dyn_marcher_45
+	religion = ethylisiac #PLACEHOLDER
+	culture = astilik #PLACEHOLDER
+	1.1.2 = {
+		birth = yes
+	}
+	60.1.1 = {
+		death = yes
+	}
+}
+
+unsorted_25 = { # k_theymastro
+	name = "Jykka" #Cousin of vaguely finnic whisperveil tribes
+	religion = ethylisiac #PLACEHOLDER
+	culture = astilik #PLACEHOLDER
+	1.1.2 = {
+		birth = yes
+	}
+	60.1.1 = {
+		death = yes
+	}
+}
+
+unsorted_26 = { # k_kalaratt_estates
+	name = "Jarsavik" #Vaguely slavic vaguely baltic distant ojyczayn cousin
+	religion = ethylisiac #PLACEHOLDER
+	culture = astilik #PLACEHOLDER
+	1.1.2 = {
+		birth = yes
+	}
+	60.1.1 = {
+		death = yes
+	}
+}
+
+unsorted_27 = { # d_the_seventy_tribes
+	name = "Ilautaj" #Ancient samojitan related culture
+	religion = ethylisiac #PLACEHOLDER
+	culture = astilik #PLACEHOLDER
+	1.1.2 = {
+		birth = yes
+	}
+	60.1.1 = {
+		death = yes
+	}
+}
+
+## GALLICADERS
+
+unsorted_28 = { # d_sweverat_nirdrl
+	name = "Cadrouan" #Might be historically inaccurate chevalien form of name, only how he's remembered
+	religion = gallicader
+	culture = gallicads
+	1.1.2 = {
+		birth = yes
+	}
+	79.1.1 = {
+		death = {
+			death_reason = death_skull_removed
+			killer = shewigad_starvayrd_3 # Inian was a dick and loved having the skull of a high priest they brutally murdered to 'tell their weak gods they were next' (gallicaders cant go to heaven without their skull anyway, Inian was a dick)
+		}
+	}
+}
+
+unsorted_29 = { # d_druysthuric_pact
+	name = "Maurcant" #Might be later chevalienized form of gallicader name
+	religion = starvayrd
+	culture = shewigad
+	1.1.2 = {
+		birth = yes
+	}
+	60.1.1 = {
+		death = yes
+	}
+}
+
+unsorted_30 = { # d_interior_viceroyalty
+	name = "Cerogant" #Might be later chevalienized form of gallicader name
+	religion = starvayrd
+	culture = shewigad
+	1.1.2 = {
+		birth = yes
+	}
+	64.1.1 = {
+		death = yes
+	}
+}
+
+## ETEPEZEA
+
+unsorted_31 = { # k_seychescian_concordat
+	name = "Cteo_Tloscae" #Weird consonant clusters, greek version of etruscans, might be a title?
+	religion = aerasodiax #PLACEHOLDER
+	culture = lomonios #PLACEHOLDER
+	1.1.2 = {
+		birth = yes
+	}
+	90.1.1 = {
+		death = yes
+	}
+}
+
+## OPAKHASIA
+
+unsorted_36 = { # Mountain-Sun lord of d_tegina (Sunhorn)
+	name = "Acthrios"
+	religion = mountain_sun_temple
+	culture = enynanthari
+	1.1.2 = {
+		birth = yes
+	}
+	100.1.1 = {
+		death = yes
+	}
+}
+unsorted_37 = { # Mountain-Sun lord of d_dusk d_megalarina
+	name = "Kybraxas"
+	religion = mountain_sun_temple
+	culture = enynanthari
+	1.1.2 = {
+		birth = yes
+	}
+	100.1.1 = {
+		death = yes
+	}
+}
+unsorted_38 = { # Mountain-Sun lord of c_mylicapaeum c_pelelis_isles4
+	name = "Odrimnys"
+	religion = mountain_sun_temple
+	culture = enynanthari
+	1.1.2 = {
+		birth = yes
+	}
+	100.1.1 = {
+		death = yes
+	}
+}
+unsorted_39 = { # Mountain-Sun lord of c_ochon|c_histrynthos|c_posinda
+	name = "Aphrae"
+	religion = mountain_sun_temple
+	culture = enynanthari
+	1.1.2 = {
+		birth = yes
+	}
+	100.1.1 = {
+		death = yes
+	}
+}
+unsorted_40 = { # Mountain-Sun lord of d_aeric_noon (counties) c_golgembria|c_potale d_sun_walkers_of_zurn_ran_ro
+	name = "Azuras"
+	religion = mountain_sun_temple
+	culture = enynanthari
+	1.1.2 = {
+		birth = yes
+	}
+	100.1.1 = {
+		death = yes
+	}
+}
+
+## IYROSSI
+
+unsorted_41 = { # Iyrossi duke of d_olynthagoria|d_eretrona
+	name = "Indrios"
+	religion = iyrossi
+	culture = oxalanti #PLACEHOLDER
+	1.1.2 = {
+		birth = yes
+	}
+	80.1.1 = {
+		death = yes
+	}
+}
+unsorted_42 = { # Iyrossi king of rump k_mytidon, predecessor (father?) of Pothacleas (who reunited it)
+	name = "Ipsos"
+	religion = iyrossi
+	culture = cerussiai #PLACEHOLDER
+	1.1.2 = {
+		birth = yes
+	}
+	81.5.12 = {
+		death = yes
+	}
+}
+
+## KATRADDIA
+
+unsorted_43 = { # Katraddian lord of the possibly not human k_bronze_men d_133a|d_124|c_2213|c_2225
+	name = "Igwaithar"
+	religion = sjalvolki #PLACEHOLDER
+	culture = kartharaddi #PLACEHOLDER
+	1.1.2 = {
+		birth = yes
+	}
+	200.1.1 = {
+		death = yes
+	}
+}
+unsorted_44 = { # Katraddian lord of the most deff not human actually (they're ancient bronze golems that gained sentience) d_awakened_servants c_1133|c_1143|c_1323
+	name = "Golos"
+	religion = sjalvolki #PLACEHOLDER
+	culture = kartharaddi #PLACEHOLDER
+	1.1.2 = {
+		birth = yes
+	}
+	200.1.1 = {
+		death = yes
+	}
+}
+
+## MISC HISTORY
+
+unsorted_13 = { # Exists to make Reepsholt independent
+	name = "Cracked"
+	religion = ethylisiac #PLACEHOLDER
+	culture = astilik #PLACEHOLDER
+	1.1.2 = {
+		birth = yes
+	}
+	50.7.9 = {
+		death = yes
+	}
+}
+unsorted_14 = { # Exists to make Dragonmarch independent
+	name = "Cracked"
+	religion = ethylisiac #PLACEHOLDER
+	culture = astilik #PLACEHOLDER
+	11.11.11 = { # skyrim gedeora birth they r dragonborn
+		birth = yes
+	}
+	40.1.3 = { # rip
+		death = yes
+	}
+}
+unsorted_32 = { # so c_vuonae is independent
+	name = "Cracked"
+	religion = ethylisiac #PLACEHOLDER
+	culture = astilik #PLACEHOLDER
+	1.1.2 = {
+		birth = yes
+	}
+	50.1.1 = {
+		death = yes
+	}
+}
+
+unsorted_33 = { # so c_gwynant is independent
+	name = "Cracked"
+	religion = ethylisiac #PLACEHOLDER
+	culture = astilik #PLACEHOLDER
+	1.1.2 = {
+		birth = yes
+	}
+	50.1.1 = {
+		death = yes
+	}
+}
+unsorted_34 = { # so c_lofoion is independent
+	name = "Cracked"
+	religion = ethylisiac #PLACEHOLDER
+	culture = astilik #PLACEHOLDER
+	1.1.2 = {
+		birth = yes
+	}
+	50.1.1 = {
+		death = yes
+	}
+}
+unsorted_35 = { # so d_acaphos is independent
+	name = "Cracked"
+	religion = ethylisiac #PLACEHOLDER
+	culture = astilik #PLACEHOLDER
+	1.1.2 = {
+		birth = yes
+	}
+	50.1.1 = {
+		death = yes
+	}
+}
+unsorted_46 = { # So that c_zawiecin is independent
+	name = "Cracked"
+	religion = ethylisiac #PLACEHOLDER
+	culture = astilik #PLACEHOLDER
+	1.1.2 = {
+		birth = yes
+	}
+	52.1.1 = {
+		death = yes
+	}
+}
+unsorted_47 = { # So that d_oakendale is independent (also controls d_swords_of_the_free) - SPARTACUS
+	name = "Cracked"
+	religion = ethylisiac #PLACEHOLDER
+	culture = astilik #PLACEHOLDER
+	1.1.2 = {
+		birth = yes
+	}
+	62.1.1 = {
+		death = yes
+	}
+}
+
+unsorted_49 = { # A participant in the Warmic Wars
+	name = "forgottensaint"
+	female = yes
+	religion = aruvasue # PLACEHOLDER
+	culture = warma
+	sexuality = asexual
+	disallow_random_traits = yes
+
+	2.1.1 = { # Actually around -40 BI
+		birth = yes
+		trait = magic_good_6
+		trait = vengeful
+		trait = stubborn
+		trait = ambitious
+		trait = bleeder
+	}
+
+	20.1.1 = {
+		trait = education_arcana_4
+		trait = shrewd
+	}
+
+	33.4.8 = {
+		religion = redland_cults
+		culture = redlander
+		trait = gh_blackspawn_3
+		give_nickname = nick_the_red_seeress
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:absolution_of_the_void }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	43.9.29 = {
+		death = {
+			death_reason = death_duel
+			killer = astilik_astiliak_3
+		}
+	}
+}
+
+unsorted_1000 = { # To unset Wastelands after year 1 and have them flip to anything else
+	name = "Cracked"
+	religion = ethylisiac #PLACEHOLDER
+	culture = astilik #PLACEHOLDER
+	1.1.2 = {
+		birth = yes
+	}
+	2.1.1 = {
+		death = yes
+	}
+}

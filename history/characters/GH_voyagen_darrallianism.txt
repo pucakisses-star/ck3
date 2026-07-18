@@ -1,0 +1,17 @@
+﻿voyagen_darrallianism_1 = {
+	name = "Rictrude"
+	female = yes
+	religion = darrallianism
+	culture = voyagen
+	1198.8.16 = {
+		birth = yes
+	}
+	1210.8.16 = {
+		trait = zealous
+		trait = just
+		trait = stubborn
+	}
+	1214.8.16 = {
+		trait = education_learning_3
+	}
+}

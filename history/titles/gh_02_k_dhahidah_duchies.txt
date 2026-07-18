@@ -1,0 +1,21 @@
+d_dozzan = {
+	1230.1.1 = { change_development_level = 6 }
+} 
+d_abu_lebdour = {
+	1230.1.1 = { change_development_level = 6 }
+	1240.1.1 = {
+		liege = "k_karadoon"
+	}
+	1244.1.1 = {
+		holder = tasurmad_wardenism_23
+	}
+	1296.2.5 = { 
+		holder = tasurmad_wardenism_93
+	}
+}
+d_banaidat = {
+	1230.1.1 = {
+		holder = voyagen_lifepath_47
+	}
+	1230.1.1 = { change_development_level = 4 }
+} 

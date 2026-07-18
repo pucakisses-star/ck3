@@ -1,0 +1,35 @@
+﻿mtuwe_kyaalic_1 = { 
+	name = "Thurogo"
+	dynasty = dyn_mtuwe_1
+	religion = "kyaalic"
+	culture = "mtuwe"
+	martial = 8
+	diplomacy = 3
+	intrigue = 6
+	stewardship = 5
+	learning = 5
+	prowess = 6
+	trait = stubborn
+	trait = zealous
+	trait = brave
+	trait = education_martial_3
+	trait = scarred
+	trait = jungle_stalker
+	
+	1224.7.28= {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 1 }
+		}
+	}
+}
+
+mtuwe_kyaalic_2 = {
+	name = "Xita"
+	religion = "kyaalic"
+	culture = "mtuwe"
+
+	1219.5.5 = {
+		birth = yes
+	}
+}

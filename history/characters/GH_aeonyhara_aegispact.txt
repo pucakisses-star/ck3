@@ -1,0 +1,22 @@
+﻿
+# Aeonyhara Sacredity
+aeonyhara_aegispact_1 = { # Holy priesthood
+	name = "Oscytel"
+	religion = aegispact
+	culture = sceyfig_lighter
+
+	1171.4.21 = {
+		birth = yes
+	}
+
+	1191.4.21 = {
+		trait = patient
+		trait = compassionate
+		trait = stubborn
+		trait = education_learning_4
+	}
+
+	1201.4.21 = {
+		trait = lifestyle_mystic
+	}
+}

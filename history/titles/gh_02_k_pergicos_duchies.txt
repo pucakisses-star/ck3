@@ -1,0 +1,86 @@
+d_zakrerna = {
+	1.1.2 = {
+		holder = unsorted_31
+	}
+	90.1.1 = {
+		holder = 0
+	}
+	1230.1.1 = {
+		change_development_level = 8
+	}
+	1186.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_236
+		liege = k_pergicos
+	}
+	1200.3.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_238
+		liege = k_pergicos
+	}
+	1240.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_235
+		liege = 0
+	}
+	1252.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_231
+	}
+}
+
+d_epigus = {
+	1.1.2 = {
+		holder = unsorted_31
+	}
+	90.1.1 = {
+		holder = 0
+	}
+}
+
+d_alidnae = {
+	1.1.2 = {
+		holder = unsorted_31
+	}
+	90.1.1 = {
+		holder = 0
+	}
+	1230.1.1 = {
+		change_development_level = 8
+	}
+	1186.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_169
+		liege = e_etepezea
+	}
+	1200.3.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_168
+		liege = e_etepezea
+	}
+	1252.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_152
+	}
+	1258.10.4 = {
+		holder = 0
+	}
+}
+
+d_kourorion = {
+	1.1.2 = {
+		holder = unsorted_31
+	}
+	90.1.1 = {
+		holder = 0
+	}
+	1121.1.12 = {
+		holder = westernimperial_aversarinas_aagiokrata_104
+	}
+	1186.12.19 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1187.3.14 = {
+		holder = westernimperial_aversarinas_aagiokrata_107
+	}
+	1230.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_224
+		liege = k_palitake
+	}
+	1242.1.1 = {
+		change_development_level = 13
+	}
+}

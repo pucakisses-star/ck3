@@ -1,0 +1,157 @@
+d_gelale = {
+	1200.1.1 = {
+		change_development_level = 8
+	}
+
+	1159.6.7 = {
+		holder = northernimperial_aversarinas_aagiokrata_44
+		liege = k_governorate_the_reach_kingdom
+	}
+
+	1200.3.1 = {
+		holder = northernimperial_aversarinas_aagiokrata_42
+		liege = k_governorate_the_reach_kingdom
+	}
+
+	1209.10.3 = {
+		holder = northernimperial_aversarinas_aagiokrata_47
+		liege = e_aversarinas_aautokrata
+	}
+
+	1216.11.21 = {
+		holder = northernimperial_aversarinas_aagiokrata_19
+		liege = k_governorate_the_reach_kingdom
+	}
+
+	1229.11.3 = {
+		holder = 0
+	}
+
+	1231.9.26 = {
+		holder = northernimperial_aversarinas_aagiokrata_28
+		government = military_unit_government
+		liege = k_kresoxian_league
+	}
+
+	1251.11.19 = {
+		holder = daukeni_sjalvolki_74
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+
+	1257.12.7 = {
+		holder = huegodocs_apti_2
+	}
+	
+	1298.1.1 = {
+		government = republic_playable_government
+	}
+}
+
+d_knokidbes = {
+	1151.3.16 = {
+		holder = centralimperial_aversarinas_aagiokrata_88 # Amyntas Varsaxoan
+	}
+	1178.2.21 = {
+		holder = centralimperial_aversarinas_aagiokrata_85 # Dukon 'the Old' Varsaxoan
+	}
+	1196.4.15 = {
+		holder = westernimperial_aversarinas_aagiokrata_16
+	}
+	1211.4.11 = {
+		holder = 0
+	}
+	1230.1.1 = { change_development_level = 7}
+	1231.9.26 = {
+		holder = northernimperial_aversarinas_aagiokrata_48
+		government = military_unit_government
+		liege = k_kresoxian_league
+	}
+	1251.11.19 = {
+		holder = mondecny_portenchant_1
+		liege = e_migrant_coalition
+		government = tribal_government
+	}
+}
+
+d_moorende = {
+	1200.1.1 = {
+		change_development_level = 7
+	}
+	1216.11.21 = {
+		holder = northernimperial_aversarinas_aagiokrata_19
+		liege = k_governorate_the_reach_kingdom
+	}
+	1229.11.3 = {
+		holder = 0
+	}
+	1231.9.26 = {
+		holder = northernimperial_aversarinas_aagiokrata_48
+		government = military_unit_government
+		liege = k_kresoxian_league
+	}
+	1251.11.19 = {
+		holder = caemansi_sjalvolki_6
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+}
+
+d_thururii = {
+	1250.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_6 
+		government = magocratic_republic
+		liege = 0
+		change_development_level = 18
+	}
+}
+
+#d_seopuse = {
+#	1231.9.26 = {
+#		holder = northernimperial_aversarinas_aagiokrata_48
+#		government = military_unit_government
+#		liege = k_kresoxian_league
+#	}
+#	1251.11.19 = {
+#		holder = daukeni_sjalvolki_76
+#		liege = e_migrant_coalition
+#		government = tribal_government
+#		change_development_level = 18
+#	}
+#	1257.5.1 = {
+#		holder = huegodocs_apti_2
+#	}
+#	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+#		de_jure_liege = k_descki
+#	}
+#	1298.1.1 = {
+#		government = republic_playable_government
+#	}
+#}
+#
+#d_ithna = {
+#	1151.3.16 = {
+#		holder = centralimperial_aversarinas_aagiokrata_88 # Amyntas Varsaxoan
+#	}
+#	1178.2.21 = {
+#		holder = centralimperial_aversarinas_aagiokrata_85 # Dukon 'the Old' Varsaxoan
+#	}
+#	1211.4.11 = {
+#		holder = 0
+#	}
+#	1230.1.1 = { change_development_level = 7}
+#	1231.9.26 = {
+#		holder = northernimperial_aversarinas_aagiokrata_48
+#		government = military_unit_government
+#		liege = k_kresoxian_league
+#	}
+#	1251.11.19 = {
+#		holder = mondecny_portenchant_1
+#		liege = e_migrant_coalition
+#		government = tribal_government
+#	}
+#	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+#		de_jure_liege = k_descki
+#	}
+#}
+

@@ -1,0 +1,11 @@
+d_dedezkale = {
+	1230.1.1 = { change_development_level = 3 }
+}
+d_valley_of_the_djinn_kings = {
+	1200.1.1 = { change_development_level = 12 }
+	1230.1.1 = {
+		holder = mutsartan_harthahi_1
+		liege = "k_eastern_frontier"
+	}
+	1230.1.1 = { change_development_level = 3 }
+}

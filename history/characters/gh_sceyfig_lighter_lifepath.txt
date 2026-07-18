@@ -1,0 +1,33 @@
+﻿sceyfig_lighter_lifepath_1 = {
+	name = "Daedarwriusz"
+	religion = lifepath
+	culture = sceyfig_lighter
+	dna = sceyfig_lighter_lifepath_1
+	
+	dynasty = dyn_marcher_20
+	
+	trait = temperate
+	trait = honest
+	trait = shy
+	
+	trait = education_stewardship_2
+	
+	trait = forder
+	
+	diplomacy = 5
+	martial = 9
+	stewardship = 6
+	intrigue = 4
+	learning = 4
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_northern_02
+			custom_beards = male_beard_fp2_iberian_christian_02			 
+		}
+	} 
+
+	1222.2.22 = {
+		birth = yes
+	}
+}

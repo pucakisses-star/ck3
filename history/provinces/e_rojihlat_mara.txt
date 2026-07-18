@@ -1,0 +1,211 @@
+
+
+2636 = {
+	holding = none
+}
+
+
+
+2649 = {
+	culture = maebalah
+	religion = masaagnite
+	holding = tribal_holding
+}
+
+2664 = {
+	holding = none
+}
+
+2668 = {
+	holding = none
+}
+
+
+
+2678 = {
+	holding = none
+}
+
+2683 = {
+	holding = none
+}
+
+
+
+2689 = {
+	holding = tribal_holding
+	1.1.1 = {
+		special_building = 01_stone_battlefield
+	}
+}
+
+2693 = {
+	holding = none
+}
+
+2729 = {
+	culture = maebalah
+	religion = mukaasubat
+	holding = tribal_holding
+}
+
+2743 = {
+	culture = maebalah
+	religion = masaagnite
+	holding = tribal_holding
+}
+
+2753 = {
+	holding = none
+}
+
+
+
+2769 = {
+	holding = none
+}
+
+2770 = {
+	culture = ualeren
+	religion = orgarrd
+	holding = tribal_holding
+}
+
+2779 = {
+	culture = maebalah
+	religion = mukaasubat
+	holding = tribal_holding
+}
+
+
+2794 = {
+	holding = none
+}
+
+
+2821 = {
+	holding = none
+}
+
+2835 = {
+	holding = none
+}
+
+
+2839 = {
+	holding = none
+}
+
+
+2862 = {
+	holding = none
+}
+
+
+
+
+
+2879 = {
+	holding = none
+}
+
+
+
+
+2881 = {
+	culture = ualeren
+	religion = orgarrd
+	holding = tribal_holding
+
+	1200.1.1 = {
+		special_building = 01_lachish_mines
+	}	
+	
+}
+
+2885 = {
+	holding = none
+}
+
+
+
+
+2893 = {
+	holding = none
+}
+
+3394 = {
+	culture = mtuwe
+	religion = kyaalic
+	holding = tribal_holding
+}
+3418 = {
+	holding = none
+}
+2822 = {
+	holding = none
+}
+2804 = {
+	culture = hmaceak
+	religion = kaosahetam
+	holding = tribal_holding
+}
+2848 = {
+	culture = hmaceak
+	religion = kaosahetam
+	holding = tribal_holding
+}
+5125 = {
+	culture = hmaceak
+	religion = kaosahetam
+	holding = tribal_holding
+}
+#Metro
+2720 = {
+	culture = hmaceak
+	religion = kaosahetam
+	holding = ruined_district_holding
+}
+2721 = {
+	holding = ruin_holding
+}
+2723 = {
+	holding = ruin_holding
+}
+2739 = {
+	culture = maebalah
+	religion = masaagnite
+	holding = tribal_holding
+	special_building = 01_huraihr
+}
+2778 = {
+	holding = none
+}
+2790 = {
+	culture = maebalah
+	religion = masaagnite
+	holding = tribal_holding
+}
+2842 = {
+	culture = ualeren
+	religion = orgarrd
+	holding = tribal_holding
+	special_building = 01_gehazetower
+}
+3026 = {
+	holding = none
+}
+8043 = {
+	holding = none
+}
+
+#Empty provinces
+3436 = {
+	holding = none
+}
+3395 = {
+	holding = none
+}
+8171 = {
+	holding = none
+}

@@ -1,0 +1,17 @@
+﻿yaknha_andaronshak_1 = {
+	name = "Indraraja"
+	religion = "andaronshak"
+	culture = "yaknha"
+	1196.8.8 = {
+		birth = yes
+	}
+}
+
+yaknha_andaronshak_2 = {
+	name = "Goggiraja"
+	religion = "andaronshak"
+	culture = "yaknha"
+	1208.8.8 = {
+		birth = yes
+	}
+}

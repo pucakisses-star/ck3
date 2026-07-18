@@ -1,0 +1,17 @@
+﻿dergi_aversarinas_aagiokrata_1 = {
+	name = "Arevio"
+	culture = "dergi"
+	religion = "aversarinas_aagiokrata"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+dergi_aversarinas_aagiokrata_2 = {
+	name = "Limios"
+	culture = "dergi"
+	religion = "aversarinas_aagiokrata"
+	1229.1.1 = {
+		birth = yes
+	}
+}

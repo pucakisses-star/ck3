@@ -1,0 +1,204 @@
+c_tikumi = {
+	1194.4.20 = {
+		liege = d_tshkigri
+		holder = amaghean_amaghean_aagiokrata_25
+		change_development_level = 7
+	}
+	1249.4.17 = {
+		liege = d_tshkigri
+		holder = amaghean_amaghean_aagiokrata_3
+		change_development_level = 7
+	}
+	1252.11.6 = {
+		liege = d_tshkigri
+		holder = mahratian_omrayytor_1
+	}
+}
+#c_vaneli = {
+#	1161.11.4 = {
+#		liege = d_tshkigri
+#		holder = amaghean_amaghean_aagiokrata_26
+#		change_development_level = 8
+#	}
+#	1226.2.4 = {
+#		liege = k_coluehis
+#		holder = amaghean_amaghean_aagiokrata_41
+#	}
+#	1249.6.7 = {
+#		holder = amaghean_amaghean_aagiokrata_2
+#	}
+#	1253.6.2 = {
+#		# liege = d_onemo # GH TODO: Duchy removed, find another
+#		holder = amaghean_amaghean_aagiokrata_2
+#	}
+#}
+c_sighalokho = {
+	1161.11.4 = {
+		liege = d_tshkigri
+		holder = amaghean_amaghean_aagiokrata_26
+		change_development_level = 7
+	}
+	1252.11.6 = {
+		liege = d_tshkigri
+		holder = draneti_hurimak_1
+	}
+}
+#c_khobsha = {
+#	1194.4.20 = {
+#		liege = d_tshkigri
+#		holder = amaghean_amaghean_aagiokrata_25
+#		change_development_level = 7
+#	}
+#	1249.4.17 = {
+#		liege = d_tshkigri
+#		holder = amaghean_amaghean_aagiokrata_3
+#	}
+#}
+c_anjarvi = {
+	1200.3.1 = {
+		# liege = d_sighali # GH TODO: Sighali removed, find new
+		holder = amaghean_amaghean_aagiokrata_19
+		change_development_level = 8
+	}
+	1223.7.11 = {
+		holder = amaghean_amaghean_aagiokrata_4
+	}
+
+}
+
+c_dujaro = {
+	1161.11.4 = {
+		liege = k_svatavego
+		holder = amaghean_amaghean_aagiokrata_26
+	}
+	1226.2.4 = {
+		liege = k_svatavego
+		holder = amaghean_amaghean_aagiokrata_41
+	}
+	1249.6.7 = {
+		liege = 0
+		holder = amaghean_amaghean_aagiokrata_3
+	}
+}
+c_tsnarketa = {
+	1197.4.12 = {
+		liege = d_ksageri
+		holder = amaghean_amaghean_aagiokrata_23
+		change_development_level = 7
+	}
+	1242.11.3 = {
+		holder = amaghean_amaghean_aagiokrata_5
+	}
+}
+
+c_olstabasha = {
+	1197.4.12 = {
+		liege = d_ksageri
+		holder = amaghean_amaghean_aagiokrata_23
+		change_development_level = 5
+	}
+	1242.11.3 = {
+		liege = d_ksageri
+		holder = amaghean_amaghean_aagiokrata_5
+	}
+}
+c_laghodisi = {
+	1197.4.12 = {
+		liege = d_ksageri
+		holder = amaghean_amaghean_aagiokrata_23
+		change_development_level = 4
+	}
+	1242.11.3 = {
+		liege = d_ksageri
+		holder = amaghean_amaghean_aagiokrata_5
+	}
+	1250.3.30 = {
+		liege = d_vaycovolki_kymbela
+		holder = izikalek_nalmavast_1
+		change_development_level = 2
+	}
+}
+c_aironoi_mountain_6 = {
+	1176.5.4 = {
+		holder = amaghean_amaghean_aagiokrata_9
+		change_development_level = 7
+	}
+	1200.3.1 = {
+		holder = amaghean_amaghean_aagiokrata_8
+	}
+	1250.1.1 = {
+		liege = d_legio_lxxx_shield_of_the_north
+		holder = apokiakas_aversarinas_aagiokratia_30
+	}
+}
+c_2224 = {
+	1197.4.12 = {
+		liege = d_ksageri
+		holder = amaghean_amaghean_aagiokrata_23
+		change_development_level = 7
+	}
+	1242.11.3 = {
+		holder = amaghean_amaghean_aagiokrata_5
+	}
+	1250.3.30 = {
+		holder = theugombrians_cnevobarthane_1
+	}
+}
+c_aironoi_mountain_7 = {
+	1156.9.24 = {
+		liege = d_aironoi_mountain_2
+		holder = amaghean_amaghean_aagiokrata_120
+	}
+	1209.5.10 = {
+		liege = d_aironoi_mountain_2
+		holder = amaghean_amaghean_aagiokrata_30
+		change_development_level = 2
+	}
+	1220.6.29 = {
+		liege = d_aironoi_mountain_2
+		holder = amaghean_amaghean_aagiokrata_11
+	}
+	1250.1.1 = {
+		liege = d_legio_lxxx_shield_of_the_north
+		holder = apokiakas_aversarinas_aagiokratia_30
+	}
+}
+c_aironoi_mountain_3 = {
+	1194.1.1 = {
+		# liege = d_aironoi_mountain_1 # GH TODO: Duchy removed, get a new one
+		holder = amaghean_amaghean_aagiokrata_22
+		change_development_level = 2
+	}
+	1250.1.1 = {
+		liege = d_vaycovolki_kymbela
+		holder = balauri_zaldrigas_1
+	}
+}
+c_aironoi_mountain_4 = {
+	1194.1.1 = {
+		# liege = d_aironoi_mountain_1 # GH TODO: Duchy removed, get a new one
+		holder = amaghean_amaghean_aagiokrata_22
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_aironoi_mountain_5 = {
+	1156.9.24 = {
+		liege = d_aironoi_mountain_2
+		holder = amaghean_amaghean_aagiokrata_120
+	}
+	1209.5.10 = {
+		liege = d_aironoi_mountain_2
+		holder = amaghean_amaghean_aagiokrata_30
+		change_development_level = 2
+	}
+	1220.6.29 = {
+		liege = d_aironoi_mountain_2
+		holder = amaghean_amaghean_aagiokrata_11
+	}
+	1250.1.1 = {
+		liege = d_legio_lxxx_shield_of_the_north
+		holder = apokiakas_aversarinas_aagiokratia_30
+	}		
+}

@@ -1,0 +1,88 @@
+d_kemayeri = {
+	1200.1.1 = {
+		holder = madikirib_manats_6
+		change_development_level = 4
+		liege = k_sinasan
+	}
+	1211.3.29 = {
+		holder = madikirib_manats_5
+	}
+	1219.1.1 = {
+		liege = "k_aglabolu"
+	}
+	1236.11.6 = {
+		holder = madikirib_manats_12
+	}
+	1244.1.1 = {
+		liege = "k_eastern_frontier"
+	}
+}
+d_almudir = {
+	1168.1.1 = {
+		holder = erimatos_aversarinas_aagiokrata_9
+	}
+	1200.1.1 = {
+		holder = madikirib_manats_7
+		change_development_level = 8
+	}
+	1219.1.1 = {
+		liege = k_aglabolu
+	}
+	1235.6.15 = {
+		holder = madikirib_manats_11
+	}
+	1245.1.1 = {
+		liege = k_eastern_frontier
+	}
+}
+#d_almilada = {
+#	1168.1.1 = {
+#		holder = erimatos_aversarinas_aagiokrata_9
+#	}
+#	1200.1.1 = {
+#		change_development_level = 7
+#	}
+#	1219.1.1 = {
+#		holder = madikirib_manats_1
+#	}
+#	1239.7.13 = {
+#		holder = madikirib_manats_13
+#	}
+#	1249.1.1 = {
+#		liege = k_eastern_frontier
+#	}
+#}
+#d_geyime = {
+#	1168.1.1 = {
+#		holder = erimatos_aversarinas_aagiokrata_9
+#	}
+#	1200.1.1 = {
+#		change_development_level = 7
+#		holder = madikirib_manats_10
+#	}
+#	1221.4.8 = {
+#		holder = madikirib_manats_3
+#	}
+#	1244.1.1 = {
+#		holder = dawasid_harthahi_1
+#		liege = k_eastern_frontier
+#		government = pirate_government
+#	}
+#}
+d_tall_falludariyah = {
+	1168.1.1 = {
+		holder = erimatos_aversarinas_aagiokrata_9
+	}
+	1230.1.1 = {
+		holder = dawasid_harthahi_2
+		liege = k_eastern_frontier
+		government = pirate_government
+	}
+	1230.1.1 = { change_development_level = 4 }
+}
+d_east_sarradon4 = {
+	1230.1.1 = {
+		holder = dawasid_wardenism_2
+		government = pirate_government
+	}
+}

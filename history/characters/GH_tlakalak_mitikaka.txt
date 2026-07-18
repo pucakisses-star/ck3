@@ -1,0 +1,49 @@
+﻿tlakalak_mitikaka_1 = { # Ruler of Laparion and Chythus
+	name = "Ozohuatl"
+	religion = mitikaka
+	culture = tlakalak
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 5
+	stewardship = 6
+	intrigue = 6
+	learning = 5
+	
+	1222.8.1 = {
+		birth = yes
+	}
+	1234.8.1 = {
+		trait = paranoid
+		trait = arrogant
+		trait = wrathful
+	}
+	1238.8.1 = {
+		trait = education_intrigue_2
+	}
+}
+
+tlakalak_mitikaka_3 = { # Ruler of Laparion and Chythus
+	name = "Ozohuatl"
+	religion = mitikaka
+	culture = tlakalak
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 5
+	stewardship = 6
+	intrigue = 6
+	learning = 5
+	
+	1222.8.1 = {
+		birth = yes
+	}
+	1234.8.1 = {
+		trait = paranoid
+		trait = arrogant
+		trait = wrathful
+	}
+	1238.8.1 = {
+		trait = education_intrigue_2
+	}
+}

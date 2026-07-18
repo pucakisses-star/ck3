@@ -1,0 +1,31 @@
+﻿musar_cumani_1 = {
+	name = "Targitaos"
+	dynasty = dyn_vhanavid_1
+	religion = "cumani"
+	culture = "musar"
+
+	1220.2.21 = {
+		birth = yes
+	}
+}
+
+musar_cumani_2 = {
+	name = "Skolo"
+	dynasty = dyn_vhanavid_3
+	religion = "cumani"
+	culture = "musar"
+
+	1220.2.21 = {
+		birth = yes
+	}
+}
+
+musar_cumani_3 = {
+	name = "Toghtoga"
+	religion = "cumani"
+	culture = "musar"
+
+	1220.2.21 = {
+		birth = yes
+	}
+}

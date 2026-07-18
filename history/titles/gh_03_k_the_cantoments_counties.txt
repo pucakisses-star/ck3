@@ -1,0 +1,38 @@
+c_mayik_room_16 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_corridor_12 = {
+	1181.1.13 = {
+		holder = northernimperial_aversarinas_aagiokrata_32
+	}
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_room_5 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_ruins_3 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_ruins_4 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_corridor_13 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_ruins_5 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

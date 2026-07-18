@@ -1,0 +1,74 @@
+d_jhanadahoo = {
+	1250.8.19 = {
+		holder = vastarnai_vidvaookeyatra_3
+		liege = k_kasharya
+		change_development_level = 9
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+}
+d_khutdang = {
+	1237.7.23 = {
+		holder = vastarnai_vidvaookeyatra_9
+		government = administrative_government
+		succession_laws = {
+			acclamation_succession_law
+		}
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+	1253.12.27 = {
+		holder = vastarnai_vidvaookeyatra_1
+	}
+}
+#d_narotang = {
+#	1250.1.1 = {
+#		holder = uthanata_vidvaookeyatra_1
+#		change_development_level = 14
+#	}
+#}
+d_jhenagaon = {
+	1243.7.22 = {
+		holder = vaxanaka_vidvaookeyatra_1
+		change_development_level = 9
+		liege = k_kasharya
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+}
+
+d_chittamavara = {
+	1250.1.1 = {		
+		change_development_level = 7
+	}
+}

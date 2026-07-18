@@ -1,0 +1,49 @@
+﻿guillater_aversarian_black_fraternity_1 = {
+	name = "Antipatra"
+	female = yes
+	religion = black_fraternity
+	culture = lorodegi
+	trait = physique_good_2
+	1214.3.11 = {
+		birth = yes
+		trait = magic_good_2
+	}
+	1226.3.11 = {
+		trait = zealous
+		trait = sadistic
+		trait = stubborn
+	}
+	1230.3.11 = {
+		trait = education_martial_3
+		trait = gh_historical_blademaster_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+guillater_aversarian_black_fraternity_2 = {
+	name = "Arsindis"
+	female = yes
+	religion = black_fraternity
+	culture = guillater_aversarian
+	1230.3.5 = {
+		birth = yes
+		trait = magic_good_3
+	}
+	1242.3.5 = {
+		trait = patient
+		trait = zealous
+		trait = ambitious
+	}
+	1246.3.5 = {
+		trait = education_learning_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}

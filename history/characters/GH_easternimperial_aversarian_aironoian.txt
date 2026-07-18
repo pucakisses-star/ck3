@@ -1,0 +1,3985 @@
+﻿easternimperial_aironoian_aagiokrata_1 = {
+	name = "Hecaeda"
+	dynasty = dyn_aversarian_5 # Anoteris
+	religion = "aironoian_aagiokrata"
+	culture = "easternimperial"
+	father = easternimperial_aversarinas_aagiokrata_55
+	mother = jaravad_cumani_6
+	female = yes
+	dna = hecaeda_easternimperial_aironoian_aagiokrata_1
+	sexuality = bisexual
+	trait = compassionate
+	trait = brave
+	trait = just
+	trait = legitimized_bastard
+	trait = education_martial_3
+	trait = gh_peasant_birth
+	trait = gh_legon
+	
+	diplomacy = 8
+	martial = 5
+	stewardship = 6
+	intrigue = 7
+	learning = 7
+	
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_western_03
+		}
+	}					  
+	1224.1.1 = { birth = yes }
+	1250.3.11 = {
+		trait = scarred
+	}
+}
+
+easternimperial_aironoian_aagiokrata_2 = { # Patrician
+	name = "Patralios"
+	dynasty = dyn_aversarian_93
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+
+	father = easternimperial_aironoian_aagiokrata_8
+	mother = easternimperial_aironoian_aagiokrata_67
+
+	martial = 5
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 6
+	learning = 6
+
+	1190.5.23 = {
+		birth = yes
+		trait = magic_good_3
+        effect = {
+            dynasty = { add_dynasty_prestige_level = 1 }
+        }
+	}
+
+	1202.1.1 = {
+		trait = arrogant
+		trait = sadistic
+		trait = ambitious
+	}
+
+	1206.5.23 = {
+		trait = education_diplomacy_4
+	}
+
+	1214.9.15 = {
+		add_spouse = easternimperial_aironoian_aagiokrata_69
+	}
+
+	1250.1.1 = {
+		trait = august
+	}
+}
+
+easternimperial_aironoian_aagiokrata_3 = { # Three cities league
+	name = "Metricion"
+	dynasty = dyn_aversarian_95
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+
+	mother = easternimperial_aironoian_aagiokrata_15
+
+	martial = 5
+	diplomacy = 8
+	intrigue = 6
+	stewardship = 7
+	learning = 3
+	prowess = 1
+
+	1213.1.16 = {
+		birth = yes
+		trait = magic_good_2
+		trait = intellect_good_1
+	}
+
+	1225.1.1 = {
+		trait = ambitious
+		trait = arrogant
+		trait = arbitrary
+	}
+
+	1229.1.16 = {
+		trait = education_diplomacy_3
+	}
+
+	1244.9.28 = {
+		add_spouse = easternimperial_aironoian_aagiokrata_60
+	}
+}
+
+easternimperial_aironoian_aagiokrata_4 = { # esterax the glorious
+	name = "Esterax"
+	dna = easternimperial_aironoian_aagiokrata_4
+	culture = "easternimperial"
+	religion = "aironoian_aagiokrata"
+	dynasty = dyn_aversarian_17
+	sexuality = heterosexual
+	
+	diplomacy = 8
+	martial = 5
+	stewardship = 5
+	intrigue = 7
+	learning = 4
+	
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = mena_curled_mustache_chinstrap_01
+			custom_hair = male_hair_fp2_iberian_muslim_01
+		}
+	}
+ 
+	1222.9.16 = {
+		birth = yes
+		trait = magic_good_4
+		trait = beauty_good_1
+		trait = disputed_heritage
+	}
+
+	1234.1.1 = {
+		trait = deceitful
+		trait = greedy
+		trait = ambitious
+	}
+
+	1238.9.16 = {
+		trait = shrewd
+		trait = education_diplomacy_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+
+	1240.1.1 = {
+		give_nickname = nick_glorious_esterax
+		effect = {
+			add_prestige = 500
+		}
+	}
+	1244.10.12 = {
+		set_relation_rival = {
+			target = character:easternimperial_aironoian_aagiokrata_3 # Metricion
+			reason = nemesis_tostig_harold
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_5 = { # Eramasios the silverblood
+	name = "Eramasios"
+	dynasty = dyn_aversarian_94
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	dna = easternimperial_aironoian_aagiokrata_5
+
+    portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = m_hair_ep2_western_01
+		}
+	}
+
+	martial = 6
+	diplomacy = 8
+	intrigue = 6
+	stewardship = 6
+	learning = 6
+
+	father = easternimperial_aironoian_aagiokrata_10
+
+	1219.4.5 = {
+		birth = yes
+        effect = {
+            dynasty = { add_dynasty_prestige_level = 1 }
+        }
+	}
+
+	1231.1.1 = {
+		trait = ambitious
+		trait = sadistic
+		trait = greedy
+	}
+
+	1235.1.1 = {
+		trait = adventurer
+		give_nickname = nick_the_silverblood
+		effect = {
+			add_prestige = 500
+		}
+	}
+
+	1235.4.5 = {
+		trait = education_martial_3
+	}
+}
+
+easternimperial_aironoian_aagiokrata_6 = { # somedude
+	name = "Biton"
+	culture = "easternimperial"
+	religion = "aironoian_aagiokrata"
+	1185.2.4 = {
+		birth = yes
+		trait = magic_good_3
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_7 = { # Belisarios Frostblood
+	name = "Belisarios" 
+	dna = easternimperial_aironoian_aagiokrata_7 
+	
+	dynasty = dyn_aversarian_77
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = centralimperial_aversarinas_aagiokrata_108
+	mother = easternimperial_aironoian_aagiokrata_90
+
+	sexuality = heterosexual
+
+	diplomacy = 3
+	martial = 6
+	stewardship = 6
+	intrigue = 8
+	learning = 6
+	prowess = 5
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_western_10
+			custom_hair = male_hair_fp2_iberian_christian_01
+		}
+	}
+
+	1232.1.9 = {
+		birth = yes
+		trait = magic_good_7
+		trait = physique_good_1
+		trait = beauty_good_1
+		effect = {
+			add_character_flag = dont_generate_family
+            dynasty = { add_dynasty_prestige_level = 5 }
+		}		 											
+	}
+
+	1238.1.2 = { 
+		trait = depressed_1
+		give_nickname = nick_frostblood
+		set_relation_friend = {
+			target = character:easternimperial_aironoian_aagiokrata_96
+			REASON = saved_from_parents_murderer
+			involved_character = character:southernimperial_aversarian_gorassos_2
+		}
+		set_relation_nemesis = {
+			target = character:southernimperial_aversarian_gorassos_2 # Frostblood
+			reason = nemesis_killed_parents
+		}
+	}
+
+	1244.1.1 = {
+		trait = callous
+		trait = brave
+		trait = vengeful
+	}
+
+	1248.1.9 = {
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+		trait = gh_historical_blademaster_3
+	}
+
+	1290.1.1 = {
+		trait = celibate
+		trait = reclusive
+		trait = whole_of_body
+		trait = scarred
+		trait = gh_glowing_eyes
+		trait = gh_glowing_veins
+		trait = gh_excessively_pale
+		remove_trait = depressed_1
+		remove_trait = vengeful
+		remove_trait = callous
+		trait = patient
+		trait = ambitious
+		effect = {
+			if = {
+				limit = { NOT = { has_perk = arcana_actuation_perk1_tree1 } }
+				add_perk = arcana_actuation_perk1_tree1
+			}
+			if = {
+				limit = { NOT = { has_perk = arcana_actuation_perk2_tree1 } }
+				add_perk = arcana_actuation_perk2_tree1
+			}
+			if = {
+				limit = { NOT = { has_perk = arcana_actuation_perk3_tree1 } }
+				add_perk = arcana_actuation_perk3_tree1
+			}
+			if = {
+				limit = { NOT = { has_perk = arcana_actuation_perk4_tree1 } }
+				add_perk = arcana_actuation_perk4_tree1
+			}
+			if = {
+				limit = { NOT = { has_perk = arcana_actuation_perk5_tree1 } }
+				add_perk = arcana_actuation_perk5_tree1
+			}
+			if = {
+				limit = { NOT = { has_perk = arcana_actuation_perk6_tree1 } }
+				add_perk = arcana_actuation_perk6_tree1
+			}
+			if = {
+				limit = { NOT = { has_perk = arcana_actuation_perk7_tree1 } }
+				add_perk = arcana_actuation_perk7_tree1
+			}
+			if = {
+				limit = { NOT = { has_perk = arcana_actuation_perk8_tree1 } }
+				add_perk = arcana_actuation_perk8_tree1
+			}
+			if = {
+				limit = { NOT = { has_perk = arcana_actuation_perk9_tree1 } }
+				add_perk = arcana_actuation_perk9_tree1
+			}
+		}	
+		give_nickname = nick_old_frostblood
+	}
+	
+	1301.3.14 = { death = { death_reason = death_natural_causes } }
+}
+
+easternimperial_aironoian_aagiokrata_8 = { # Patrician's father
+	name = "Pascos"
+	dynasty = dyn_aversarian_93
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_9
+	mother = easternimperial_aironoian_aagiokrata_64
+
+	martial = 6
+	diplomacy = 6
+	intrigue = 8
+	stewardship = 8
+	learning = 4
+	prowess = 5
+
+	1153.3.21 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1165.1.1 = {
+		trait = vengeful
+		trait = arbitrary
+		trait = stubborn
+	}
+
+	1169.3.21 = {
+		trait = education_intrigue_3
+	}
+
+	1188.5.25 = {
+		add_spouse = easternimperial_aironoian_aagiokrata_67
+	}
+
+	1201.3.31 = {
+		death = {
+			death_reason = death_battle
+			killer = kuridorig_cumani_5 # Oltenic Invasion
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_9 = { # Patrician's grandfather
+	name = "Laxathos"
+	dynasty = dyn_aversarian_93
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_57
+
+	martial = 8
+	diplomacy = 8
+	intrigue = 5
+	stewardship = 8
+	learning = 3
+	prowess = 6
+
+	1117.5.8 = {
+		birth = yes
+		trait = magic_good_7
+	}
+
+	1129.1.1 = {
+		trait = vengeful
+		trait = sadistic
+		trait = paranoid
+	}
+
+	1133.5.8 = {
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1149.1.7 = {
+		add_spouse = easternimperial_aironoian_aagiokrata_64
+	}
+
+	1153.1.1 = {
+		trait = gh_glowing_eyes
+	}
+
+	1168.3.14 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_10 = { # Silverblood's dad
+	name = "Icarium"
+	dynasty = dyn_aversarian_94
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_militant_cliques_2
+	mother = easternimperial_aversarian_axiaotheaism_20
+
+	martial = 5
+	diplomacy = 2
+	intrigue = 5
+	stewardship = 5
+	learning = 1
+	prowess = 3
+
+	1192.2.13 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1204.1.1 = {
+		trait = humble
+		trait = content
+		trait = paranoid
+	}
+
+	1208.2.13 = {
+		trait = education_stewardship_1
+	}
+
+	1240.2.25 = {
+		trait = pneumonic
+	}
+
+	1240.3.14 = {
+		death = {
+			death_reason = death_pneumonic
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_11 = { # Legon Xipheos' father, one of the key figures in the Three Cities War
+	name = "Zanachrios"
+	dynasty = dyn_aversarian_95
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	martial = 7
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 1
+	learning = 4
+	prowess = 5
+
+	1118.6.12 = {
+		birth = yes
+		trait = magic_good_5
+		trait = intellect_good_1
+	}
+
+	1130.1.1 = {
+		trait = temperate
+		trait = arrogant
+		trait = deceitful
+	}
+
+	1134.6.12 = {
+		trait = education_diplomacy_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1137.10.11 = {
+		add_spouse = easternimperial_aironoian_aagiokrata_48
+	}
+
+	1188.9.25 = {
+		death = {
+			death_reason = death_punishment
+			killer = easternimperial_aversarian_axiaotheaism_1 #Axiaothea, Three Cities War
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_12 = { # Legon Bylaxes' father, one of the key figures in the Three Cities War
+	name = "Rhesus"
+	dynasty = dyn_aversarian_96
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_53
+
+	martial = 2
+	diplomacy = 4
+	intrigue = 6
+	stewardship = 6
+	learning = 5
+	prowess = 3
+
+	1139.10.28 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1151.1.1 = {
+		trait = gluttonous
+		trait = greedy
+		trait = craven
+	}
+
+	1155.10.28 = {
+		trait = education_diplomacy_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1161.10.3 = {
+		add_spouse = easternimperial_aironoian_aagiokrata_51
+	}
+
+	1188.9.25 = {
+		death = {
+			death_reason = death_punishment
+			killer = easternimperial_aversarian_axiaotheaism_1 #Axiaothea, Three Cities War
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_13 = { # 'Sub-Aautokratia' Delendea Bhatajharrax, leader of the Three Cities Rebellion
+	name = "Delendea"
+	dynasty = dyn_aversarian_100
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_58
+	mother = easternimperial_aironoian_aagiokrata_56
+
+	martial = 2
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 3
+	learning = 6
+	prowess = 3
+
+	1145.2.27 = {
+		birth = yes
+		trait = magic_good_8
+	}
+
+	1157.1.1 = {
+		trait = ambitious
+		trait = cynical
+		trait = arbitrary
+	}
+
+	1161.10.28 = {
+		trait = education_intrigue_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1165.4.1 = {
+		add_matrilineal_spouse = easternimperial_aironoian_aagiokrata_50
+	}
+
+	1168.3.14 = {
+		trait = lunatic_1
+		give_nickname = nick_sub_aautokratia
+	}
+
+	1188.9.25 = {
+		death = {
+			death_reason = death_magic_fire
+			killer = easternimperial_aversarian_axiaotheaism_1 #Axiaothea, Three Cities War
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_14 = { # Legon Xipheos' brother
+	name = "Teleon"
+	dynasty = dyn_aversarian_95
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_11
+	mother = easternimperial_aironoian_aagiokrata_48
+
+	martial = 6
+	diplomacy = 5
+	intrigue = 8
+	stewardship = 4
+	learning = 5
+	prowess = 4
+
+	1140.2.12 = {
+		birth = yes
+		trait = magic_good_2
+		trait = intellect_good_1
+	}
+
+	1152.1.1 = {
+		trait = wrathful
+		trait = arrogant
+		trait = vengeful
+	}
+
+	1156.2.12 = {
+		trait = education_diplomacy_3
+	}
+
+	1199.9.26 = {
+		death = {
+			death_reason = death_retributive_march
+			killer = etrandanexi_aversarian_axiaotheaism_1 # Agos Slyn
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_15 = { # Legon Xipheos' niece and Metricion's mother
+	name = "Pythia"
+	dynasty = dyn_aversarian_95
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	female = yes
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_14
+
+	martial = 6
+	diplomacy = 6
+	intrigue = 8
+	stewardship = 5
+	learning = 6
+	prowess = 1
+
+	1183.3.10 = {
+		birth = yes
+		trait = magic_good_3
+		trait = intellect_good_2
+	}
+
+	1195.1.1 = {
+		trait = ambitious
+		trait = arrogant
+		trait = sadistic
+	}
+
+	1199.3.10 = {
+		trait = education_intrigue_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1244.10.12 = {
+		death = {
+			death_reason = death_stress
+		}
+	}
+}
+easternimperial_aironoian_aagiokrata_16 = { # Legon Bylaxes' brother
+	name = "Rhemnon"
+	dynasty = dyn_aversarian_96
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_12
+	mother = easternimperial_aironoian_aagiokrata_51
+
+	martial = 6
+	diplomacy = 3
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+	prowess = 8
+
+	1163.6.30 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1175.1.1 = {
+		trait = lustful
+		trait = deceitful
+		trait = lazy
+	}
+
+	1179.6.30 = {
+		trait = education_martial_1
+	}
+
+	1201.3.29 = {
+		death = {
+			death_reason = death_battle
+			killer = lattani_sunwarwei_aagiokrata_3 # Artabanus Argdaos, Lattani Invasion
+		}
+	}
+}
+easternimperial_aironoian_aagiokrata_17 = { # Legan Ouarzieh's dad, Champion of the rebels during the Three Cities War
+	name = "Thrasalioxas"
+	dynasty = dyn_aversarian_97
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_19
+	mother = easternimperial_aironoian_aagiokrata_52
+
+	martial = 5
+	diplomacy = 6
+	intrigue = 1
+	stewardship = 6
+	learning = 1
+	prowess = 5
+
+	1142.4.18 = {
+		birth = yes
+		trait = magic_good_3
+		trait = giant
+	}
+
+	1154.1.1 = {
+		trait = wrathful
+		trait = impatient
+		trait = sadistic
+	}
+
+	1158.4.18 = {
+		trait = education_martial_1
+		trait = strong
+		trait = gh_historical_blademaster_2
+	}
+
+	1169.12.11 = {
+		add_spouse = easternimperial_aironoian_aagiokrata_59
+	}
+
+	1188.9.25 = {
+		death = {
+			death_reason = death_punishment
+			killer = easternimperial_aversarian_axiaotheaism_1 #Axiaothea, Three Cities War
+		}
+	}
+}
+easternimperial_aironoian_aagiokrata_18 = { # Legan Ouarzieh's uncle, supported the Blue Robe Rebellion but did not overtly participate
+	name = "Euneas"
+	dynasty = dyn_aversarian_97
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_19
+	mother = easternimperial_aironoian_aagiokrata_52
+
+	martial = 3
+	diplomacy = 8
+	intrigue = 5
+	stewardship = 6
+	learning = 4
+	prowess = 4
+
+	1152.7.8 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1164.1.1 = {
+		trait = patient
+		trait = paranoid
+		trait = callous
+	}
+
+	1168.7.8 = {
+		trait = education_intrigue_4
+		trait = schemer
+	}
+
+	1220.10.3 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_19 = { # Legan Ouarzieh's grandfather, died in the Fourth Aironoi-Opakhasian War
+	name = "Alkinos"
+	dynasty = dyn_aversarian_97
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_49
+
+	martial = 6
+	diplomacy = 2
+	intrigue = 3
+	stewardship = 4
+	learning = 3
+	prowess = 8
+
+	1117.9.1 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1129.1.1 = {
+		trait = wrathful
+		trait = honest
+		trait = ambitious
+	}
+
+	1133.9.1 = {
+		trait = education_martial_3
+	}
+
+	1139.11.23 = {
+		add_spouse = easternimperial_aironoian_aagiokrata_52
+	}
+
+	1175.8.10 = {
+		death = {
+			death_reason = death_siege # Siege of Asiupoli
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_20 = { # Legan Ouarzieh's cousin
+	name = "Mamercus"
+	dynasty = dyn_aversarian_97
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_18
+
+	martial = 5
+	diplomacy = 1
+	intrigue = 6
+	stewardship = 4
+	learning = 8
+	prowess = 7
+
+	1197.3.25 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1209.1.1 = {
+		trait = patient
+		trait = gregarious
+		trait = arrogant
+	}
+
+	1213.3.25 = {
+		trait = education_stewardship_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1221.4.20 = {
+		add_spouse = easternimperial_aironoian_aagiokrata_77
+	}
+
+	1250.6.22 = {
+		death = {
+			death_reason = death_magic_fire
+			killer = easternimperial_aversarian_axiaotheaism_19 #evil uncle character
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_21 = { # Last of House Ouarzieh
+	name = "Selagus"
+	dynasty = dyn_aversarian_97
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_20
+	mother = easternimperial_aironoian_aagiokrata_77
+
+	martial = 3
+	diplomacy = 5
+	intrigue = 8
+	stewardship = 7
+	learning = 6
+	prowess = 6
+
+	1232.4.7 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1244.1.1 = {
+		trait = patient
+		trait = ambitious
+		trait = vengeful
+	}
+
+	1248.4.7 = {
+		trait = education_martial_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1250.6.22 = {
+		set_relation_rival = {
+			target = character:easternimperial_aversarian_axiaotheaism_19 # evil uncle guy
+			reason = nemesis_killed_father
+			involved_character = character:easternimperial_aironoian_aagiokrata_20
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_22 = { # Legan Athioeasa's father, vassal to House Idaerion
+	name = "Nothox"
+	dynasty = dyn_aversarian_98
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	martial = 4
+	diplomacy = 3
+	intrigue = 5
+	stewardship = 6
+	learning = 4
+	prowess = 7
+
+	1146.9.16 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1158.1.1 = {
+		trait = wrathful
+		trait = chaste
+		trait = brave
+	}
+
+	1162.9.16 = {
+		trait = education_stewardship_2
+	}
+
+	1199.11.18 = {
+		death = {
+			death_reason = death_battle # Battle of Baytor's Grave
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_23 = { # Legan Athioeasa's brother
+	name = "Cois"
+	dynasty = dyn_aversarian_98
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_22
+
+	martial = 5
+	diplomacy = 8
+	intrigue = 8
+	stewardship = 5
+	learning = 6
+	prowess = 6
+
+	1169.12.26 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1181.1.1 = {
+		trait = temperate
+		trait = patient
+		trait = brave
+	}
+
+	1185.12.26 = {
+		trait = education_stewardship_3
+	}
+
+	1232.4.17 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_24 = { # Legan Athioeasa's nephew, Patrician's vassal
+	name = "Iros"
+	dynasty = dyn_aversarian_98
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_23
+
+	martial = 7
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 5
+	learning = 7
+	prowess = 6
+
+	1210.6.19 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1222.1.1 = {
+		trait = calm
+		trait = sadistic
+		trait = arbitrary
+	}
+
+	1226.6.19 = {
+		trait = education_stewardship_4
+	}
+}
+
+easternimperial_aironoian_aagiokrata_25 = { # Patriatch of House Kreyshati, father of Velaras Bleak Speaker
+	name = "Eos"
+	dynasty = dyn_aversarian_99
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	martial = 3
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 3
+	learning = 2
+	prowess = 4
+
+	1094.11.28 = {
+		birth = yes
+		trait = magic_good_5
+		trait = intellect_good_2
+	}
+
+	1106.1.1 = {
+		trait = content
+		trait = calm
+		trait = temperate
+	}
+
+	1110.11.28 = {
+		trait = education_diplomacy_2
+	}
+
+	1142.3.10 = {
+		death = {
+			death_reason = death_ritual_mistake
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_26 = { # island av
+	name = "Lycus"
+	religion = "aironoian_aagiokrata"
+	culture = "easternimperial"
+	1225.5.9 = {
+		birth = yes
+	}
+	1250.3.2 = {
+		add_spouse = easternimperial_aironoian_aagiokrata_94
+	}
+	1253.11.6 = {
+		effect = {
+			create_character_memory = {
+				type = war_won
+
+				participants = {
+					winner = character:easternimperial_aironoian_aagiokrata_26
+					loser = character:hokanta_vidvaookeyatra_33
+				}
+			}
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_27 = { # Legon Xipheos, joined the Blue Robe Revolt on the rebels' side
+	name = "Kleiphos"
+	dynasty = dyn_aversarian_95
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_11
+	mother = easternimperial_aironoian_aagiokrata_48
+
+	martial = 4
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 3
+	learning = 5
+	prowess = 8
+
+	1143.10.24 = {
+		birth = yes
+		trait = magic_good_6
+		trait = intellect_good_2
+	}
+
+	1155.1.1 = {
+		trait = deceitful
+		trait = arrogant
+		trait = gregarious
+	}
+
+	1159.10.24 = {
+		trait = gh_legon
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1171.8.25 = {
+		add_spouse = easternimperial_aironoian_aagiokrata_75
+	}
+
+	1200.2.27 = {
+		death = {
+			death_reason = death_battle
+			killer = kuridorig_iek_otached_1 # Jajak Otroka
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_28 = { # Legon Bylaxes, joined Blue Robe Revolt, somehow made it alive and lived happily ever after
+	name = "Rhubias"
+	dynasty = dyn_aversarian_96
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_12
+	mother = easternimperial_aironoian_aagiokrata_51
+
+	martial = 2
+	diplomacy = 8
+	intrigue = 5
+	stewardship = 7
+	learning = 3
+	prowess = 7
+
+	1170.7.8 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1182.1.1 = {
+		trait = gluttonous
+		trait = greedy
+		trait = fickle
+	}
+
+	1186.7.8 = {
+		trait = gh_legon
+		trait = education_martial_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+		trait = shrewd
+		trait = gh_historical_reveler_2
+	}
+
+	1225.11.11 = {
+		death = {
+			death_reason = death_old_age #lucky guy
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_29 = { # Legan Ouarzieh, spoiled brat who rose to Legon due to her name, joined the rebels after Baytor's Grave
+	name = "Athrione"
+	dynasty = dyn_aversarian_97
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_17
+	mother = easternimperial_aironoian_aagiokrata_59
+
+	martial = 2
+	diplomacy = 2
+	intrigue = 5
+	stewardship = 4
+	learning = 7
+	prowess = 3
+
+	1170.9.27 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1182.1.1 = {
+		trait = arrogant
+		trait = sadistic
+		trait = greedy
+	}
+
+	1186.9.27 = {
+		trait = education_martial_1
+		trait = gh_legon
+	}
+
+	1200.2.26 = {
+		death = {
+			death_reason = death_battle
+			killer = lattani_sunwarwei_aagiokrata_2 # # Barzanes Argdaos, Leader of Lattani Revolt
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_30 = { # Legon Bylaxes' son, inherited Legio LXXI
+	name = "Narthros"
+	dynasty = dyn_aversarian_96
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_28
+
+	martial = 3
+	diplomacy = 2
+	intrigue = 2
+	stewardship = 5
+	learning = 6
+	prowess = 7
+
+	1195.9.22 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1207.1.1 = {
+		trait = arrogant
+		trait = gregarious
+		trait = sadistic
+	}
+
+	1211.9.22 = {
+		trait = education_diplomacy_2
+		trait = gh_legon
+		trait = gh_historical_reveler_1
+	}
+
+	1219.6.4 = {
+		add_spouse = easternimperial_aironoian_aagiokrata_62
+	}
+}
+
+easternimperial_aironoian_aagiokrata_31 = { # Legon Xipheos' daughter, one of the Blue Robes
+	name = "Iria"
+	dynasty = dyn_aversarian_95
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_27
+	mother = easternimperial_aironoian_aagiokrata_75
+
+	martial = 4
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 5
+	learning = 6
+	prowess = 2
+
+	1177.12.12 = {
+		birth = yes
+		trait = magic_good_5
+		trait = intellect_good_1
+	}
+
+	1189.1.1 = {
+		trait = compassionate
+		trait = brave
+		trait = stubborn
+	}
+
+	1193.12.12 = {
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+		trait = gh_historical_physician_2
+	}
+
+	1200.2.27 = {
+		death = {
+			death_reason = death_battle
+			killer = jaduyada_eabuyad_ilah_al_atilaam_3 # Imran Tahzirid, Slave Revolt Leader
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_32 = { # Fridge's Great-Grandfather, died in the Fourth Aironoi-Opakhasian War, led Legio XCII 'Swords of Tharenion'
+	name = "Orox"
+	dynasty = dyn_aversarian_16
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_65
+
+	martial = 6
+	diplomacy = 2
+	intrigue = 3
+	stewardship = 2
+	learning = 4
+	prowess = 5
+
+	1122.9.15 = {
+		birth = yes
+		trait = magic_good_4
+		trait = giant
+	}
+
+	1134.1.1 = {
+		trait = arrogant
+		trait = greedy
+		trait = callous
+	}
+
+	1138.9.15 = {
+		trait = education_martial_2
+		trait = organizer
+		trait = gh_legon
+		trait = gh_historical_blademaster_2
+	}
+
+	1150.8.1 = {
+		add_spouse = easternimperial_aironoian_aagiokrata_83
+	}
+
+	1173.5.19 = {
+		death = {
+			death_reason = death_battle # Fourth Aironoi-Opakhasian War
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_33 = { # Fridge's Grandfather, killed by a Slave Revolt
+	name = "Likourgos"
+	dynasty = dyn_aversarian_16
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_32
+	mother = easternimperial_aironoian_aagiokrata_83
+
+	martial = 2
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 7
+	learning = 5
+	prowess = 6
+
+	1151.5.23 = {
+		birth = yes
+		trait = magic_good_4
+		trait = twin
+		trait = giant
+	}
+
+	1163.1.1 = {
+		trait = arrogant
+		trait = lustful
+		trait = impatient
+	}
+
+	1167.5.23 = {
+		trait = education_diplomacy_3
+	}
+
+	1189.5.17 = {
+		add_spouse = easternimperial_aironoian_aagiokrata_86
+	}
+
+	1211.12.15 = {
+		death = {
+			death_reason = death_battle
+			killer = jaduyada_eabuyad_ilah_al_atilaam_3 # Imran Tahzirid
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_34 = { # Fridge's Great-Aunt, led Legio XCII 'Swords of Tharenion', died in the Three Cities War
+	name = "Lyliake"
+	dynasty = dyn_aversarian_16
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_32
+	mother = easternimperial_aironoian_aagiokrata_83
+
+	martial = 2
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 7
+	learning = 5
+	prowess = 6
+
+	1151.5.23 = {
+		birth = yes
+		trait = magic_good_5
+		trait = twin
+		trait = giant
+	}
+
+	1163.1.1 = {
+		trait = ambitious
+		trait = stubborn
+		trait = arrogant
+	}
+
+	1167.5.23 = {
+		trait = education_martial_3
+		trait = gh_legon
+	}
+
+	1186.2.1 = {
+		death = {
+			death_reason = death_battle # Three Cities War
+			killer = easternimperial_aironoian_aagiokrata_13 # Delendea Bhatajarrax
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_35 = { # Fridge's Dad, slain by Esterax
+	name = "Ixodios"
+	dynasty = dyn_aversarian_16
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_33
+	mother = easternimperial_aironoian_aagiokrata_86
+
+	martial = 8
+	diplomacy = 1
+	intrigue = 6
+	stewardship = 3
+	learning = 8
+	prowess = 7
+
+	1192.7.3 = {
+		birth = yes
+		trait = magic_good_2
+		trait = giant
+	}
+
+	1204.1.1 = {
+		trait = arrogant
+		trait = greedy
+		trait = trusting
+	}
+
+	1208.7.3 = {
+		trait = education_stewardship_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+
+	1216.7.8 = {
+		add_spouse = easternimperial_aironoian_aagiokrata_78
+	}
+
+	1246.12.13 = {
+		death = {
+			death_reason = death_battle
+			killer = easternimperial_aironoian_aagiokrata_4 # Esterax the Glorious
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_36 = { # Legon Arthion Kantallides of State Legio XXXVIII 'Vigilant'
+	name = "Arthion"
+	dynasty = dyn_aversarian_101
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_37
+
+	martial = 8
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 6
+	learning = 6
+	prowess = 6
+
+	1164.9.21 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1176.1.1 = {
+		trait = stubborn
+		trait = humble
+		trait = brave
+	}
+
+	1180.7.3 = {
+		trait = education_martial_3
+		trait = unyielding_defender
+		trait = gh_historical_blademaster_1
+		trait = gh_legon
+	}
+
+	1199.11.12 = {
+		death = {
+			death_reason = death_battle
+			killer = kuridorig_cumani_1 # Battle of Baytor's Grave
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_37 = { # Legon Arthion Kantallides' father
+	name = "Euchenor"
+	dynasty = dyn_aversarian_101
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_84
+
+	martial = 4
+	diplomacy = 2
+	intrigue = 6
+	stewardship = 2
+	learning = 6
+	prowess = 3
+
+	1130.12.15 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1142.1.1 = {
+		trait = stubborn
+		trait = shy
+		trait = callous
+	}
+
+	1146.12.15 = {
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1174.6.15 = {
+		death = {
+			death_reason = death_battle
+			killer = kuridorig_iek_otached_5 # Dagun Blackmask, during the Otrokan invasion of Dartar
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_38 = { # Legon Kantallides' brother
+	name = "Ischys"
+	dynasty = dyn_aversarian_101
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_37
+
+	martial = 1
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 2
+	learning = 8
+	prowess = 5
+
+	1156.2.25 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1168.1.1 = {
+		trait = stubborn
+		trait = ambitious
+		trait = zealous
+	}
+
+	1172.2.25 = {
+		trait = education_diplomacy_2
+	}
+
+	1200.3.28 = {
+		death = {
+			death_reason = death_battle
+			killer = easternimperial_aeschraes_aagiokrata_1 # Governor Isliados
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_39 = { # Legon Kantallides' niece
+	name = "Agamnythe"
+	dynasty = dyn_aversarian_101
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_38
+
+	martial = 4
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	learning = 7
+	prowess = 5
+
+	1183.5.3 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1195.1.1 = {
+		trait = stubborn
+		trait = brave
+		trait = forgiving
+	}
+
+	1199.5.3 = {
+		trait = education_stewardship_3
+	}
+
+	1200.3.28 = {
+		death = {
+			death_reason = death_piteously_cut_down
+			killer = easternimperial_aeschraes_aagiokrata_1 # Governor Isliados
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_40 = { # Legon Xathon Palagrios of State Legio XXXVIII 'Vigilant'
+	name = "Xathon"
+	dynasty = dyn_aversarian_102
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_45
+	mother = easternimperial_aironoian_aagiokrata_85
+
+	martial = 7
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 8
+	learning = 2
+	prowess = 6
+
+	1170.8.17 = {
+		birth = yes
+		trait = magic_good_5
+		trait = beauty_good_3
+	}
+
+	1182.1.1 = {
+		trait = arrogant
+		trait = impatient
+		trait = callous
+	}
+
+	1186.8.17 = {
+		trait = education_martial_2
+		trait = gh_ritual_tattoos
+		trait = gh_legon
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1200.11.19 = {
+		death = {
+			death_reason = death_battle
+			killer = murarut_cumani_1 # Battle of Baytor's Grave
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_41 = { # Legon Palagrios' aunt
+	name = "Philomela"
+	dynasty = dyn_aversarian_102
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_46
+	mother = easternimperial_aironoian_aagiokrata_93
+
+	martial = 3
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 6
+	learning = 7
+	prowess = 2
+
+	1142.7.30 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	1154.1.1 = {
+		trait = arrogant
+		trait = ambitious
+		trait = gregarious
+	}
+
+	1158.7.30 = {
+		trait = education_arcana_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1168.1.1 = {
+		# trait = gh_boneshape # GH UREGNT: Removed, replace these with modifiersd_beauty_2
+	}
+
+	1175.4.22 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_42 = { # Legon Palagrios' cousin
+	name = "Haedras"
+	dynasty = dyn_aversarian_102
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	mother = easternimperial_aironoian_aagiokrata_41
+
+	martial = 4
+	diplomacy = 1
+	intrigue = 8
+	stewardship = 1
+	learning = 6
+	prowess = 4
+
+	1168.2.11 = {
+		birth = yes
+		trait = magic_good_4
+		trait = beauty_good_3
+	}
+
+	1180.1.1 = {
+		trait = arrogant
+		trait = compassionate
+		trait = lustful
+	}
+
+	1184.2.11 = {
+		trait = education_intrigue_4
+		trait = seducer
+	}
+
+	1215.2.3 = {
+		death = {
+			death_reason = death_siege
+			killer = easternimperial_aeschraes_aagiokrata_1 # Governor Isliados
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_43 = { # Haedras' legitimized bastard son
+	name = "Dexon"
+	dynasty = dyn_aversarian_102
+	religion = mahrator
+	culture = mahratian
+	disallow_random_traits = yes
+
+	mother = easternimperial_aironoian_aagiokrata_42
+
+	martial = 5
+	diplomacy = 3
+	intrigue = 6
+	stewardship = 3
+	learning = 1
+	prowess = 5
+
+	1203.1.17 = {
+		birth = yes
+		trait = magic_good_3
+		trait = beauty_good_2
+		trait = physique_good_2
+	}
+
+	1215.1.1 = {
+		trait = humble
+		trait = calm
+		trait = chaste
+		trait = legitimized_bastard
+	}
+
+	1219.1.17 = {
+		trait = education_martial_2
+		trait = open_terrain_expert
+	}
+
+	1249.4.11 = {
+		death = {
+			death_reason = death_accident # Same one that killed Orbeli the Victorious
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_44 = { # Last of the Palagrios
+	name = "Nothox"
+	dynasty = dyn_aversarian_102
+	religion = mahrator
+	culture = mahratian
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_43
+
+	martial = 5
+	diplomacy = 3
+	intrigue = 6
+	stewardship = 3
+	learning = 1
+	prowess = 5
+
+	1234.10.8 = {
+		birth = yes
+		trait = magic_good_2
+		trait = physique_good_1
+        effect = {
+            dynasty = { add_dynasty_prestige_level = 3 }
+        }
+	}
+
+	1246.1.1 = {
+		trait = impatient
+		trait = just
+		trait = ambitious
+	}
+
+	1250.10.8 = {
+		trait = education_martial_3
+		trait = open_terrain_expert
+	}
+}
+
+easternimperial_aironoian_aagiokrata_45 = { # Legon Palagrios' father
+	name = "Gallephon"
+	dynasty = dyn_aversarian_102
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_46
+	mother = easternimperial_aironoian_aagiokrata_93
+
+	martial = 3
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 6
+	learning = 4
+	prowess = 8
+
+	1148.7.30 = {
+		birth = yes
+		trait = magic_good_3
+		trait = beauty_good_2
+	}
+
+	1160.1.1 = {
+		trait = arrogant
+		trait = diligent
+		trait = cynical
+	}
+
+	1164.7.30 = {
+		trait = education_stewardship_4
+		trait = administrator
+	}
+
+	1169.11.19 = {
+		add_spouse = easternimperial_aironoian_aagiokrata_85
+	}
+
+	1215.2.3 = {
+		death = {
+			death_reason = death_siege
+			killer = easternimperial_aeschraes_aagiokrata_1 # Governor Isliados
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_46 = { # Legon Palagrios' grandfather
+	name = "Lycus"
+	dynasty = dyn_aversarian_102
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	mother = easternimperial_aironoian_aagiokrata_82
+
+	martial = 3
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 6
+	learning = 4
+	prowess = 8
+
+	1103.7.22 = {
+		birth = yes
+		trait = magic_good_4
+		trait = beauty_good_3
+	}
+
+	1115.1.1 = {
+		trait = arrogant
+		trait = deceitful
+		trait = sadistic
+	}
+
+	1119.7.22 = {
+		trait = education_diplomacy_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1141.8.22 = {
+		add_spouse = easternimperial_aironoian_aagiokrata_93
+	}
+
+	1162.2.3 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_47 = { # Legon Crios Rhovides, took over Legio LXXIV 'Riverwards' after Legon Palagrios' death
+	name = "Crios"
+	dynasty = dyn_aversarian_103
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	martial = 5
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 6
+	learning = 1
+	prowess = 8
+
+	1172.4.17 = {
+		birth = yes
+	}
+
+	1184.1.1 = {
+		trait = ambitious
+		trait = deceitful
+		trait = greedy
+	}
+
+	1188.4.17 = {
+		trait = education_martial_3
+		trait = military_engineer
+	}
+
+	1200.11.19 = {
+		trait = gh_legon
+	}
+
+	1241.3.16 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_48 = { # Legon Xipheos' mother
+	name = "Hyphrinthe"
+	dynasty = dyn_aversarian_97
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	female = yes
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_49
+
+	martial = 1
+	diplomacy = 8
+	intrigue = 5
+	stewardship = 4
+	learning = 5
+	prowess = 3
+
+	1120.8.2 = {
+		birth = yes
+		trait = magic_good_4
+		trait = beauty_good_2
+	}
+
+	1132.1.1 = {
+		trait = gregarious
+		trait = cynical
+		trait = callous
+	}
+
+	1136.8.2 = {
+		trait = education_learning_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1169.1.6 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_49 = { # Ouarzieh Patriarch
+	name = "Evenus"
+	dynasty = dyn_aversarian_97
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 2
+	intrigue = 6
+	stewardship = 5
+	learning = 8
+	prowess = 6
+
+	1080.10.7 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	1092.1.1 = {
+		trait = brave
+		trait = patient
+		trait = gregarious
+	}
+
+	1096.10.7 = {
+		trait = education_martial_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+		trait = gh_glowing_veins
+	}
+
+	1147.3.15 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_50 = { # Delendea Bhatajarrax' husband
+	name = "Ultirnos"
+	dynasty = dyn_aversarian_95
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_11
+	mother = easternimperial_aironoian_aagiokrata_48
+
+	martial = 8
+	diplomacy = 8
+	intrigue = 2
+	stewardship = 8
+	learning = 6
+	prowess = 6
+
+	1150.5.27 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1162.1.1 = {
+		trait = arrogant
+		trait = ambitious
+		trait = fickle
+	}
+
+	1166.5.27 = {
+		trait = education_diplomacy_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1188.9.25 = {
+		death = {
+			death_reason = death_execution
+			killer = easternimperial_aversarian_axiaotheaism_1 #Axiaothea, Three Cities War
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_51 = { # Legon Bylaxes' mother
+	name = "Rhiake"
+	dynasty = dyn_aversarian_95
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_11
+	mother = easternimperial_aironoian_aagiokrata_48
+
+	martial = 6
+	diplomacy = 8
+	intrigue = 3
+	stewardship = 8
+	learning = 8
+	prowess = 8
+
+	1144.11.9 = {
+		birth = yes
+		trait = magic_good_3
+		trait = beauty_good_1
+	}
+
+	1156.1.1 = {
+		trait = trusting
+		trait = content
+		trait = patient
+	}
+
+	1160.11.9 = {
+		trait = education_stewardship_2
+	}
+
+	1201.3.29 = {
+		death = {
+			death_reason = death_siege
+			killer = lattani_sunwarwei_aagiokrata_3 # Artabanus Argdaos, Lattani Invasion
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_52 = { # Legan Ouarzieh's grandmother
+	name = "Lysothia"
+	dynasty = dyn_aversarian_96
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_54
+
+	martial = 2
+	diplomacy = 6
+	intrigue = 1
+	stewardship = 8
+	learning = 7
+	prowess = 1
+
+	1122.4.6 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1134.1.1 = {
+		trait = sadistic
+		trait = arbitrary
+		trait = wrathful
+	}
+
+	1138.4.6 = {
+		trait = education_arcana_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+
+	1184.5.14 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_53 = { # Rhesus Bylaxes' father
+	name = "Arthagion"
+	dynasty = dyn_aversarian_96
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_54
+
+	martial = 6
+	diplomacy = 4
+	intrigue = 6
+	stewardship = 1
+	learning = 7
+	prowess = 8
+
+	1115.11.10 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1127.1.1 = {
+		trait = chaste
+		trait = sadistic
+		trait = shy
+	}
+
+	1131.11.10 = {
+		trait = education_martial_2
+	}
+
+	1168.2.19 = {
+		death = {
+			death_reason = death_magic_crush_armor
+			killer = easternimperial_aironoian_aagiokrata_88 # Legon Pathocas Anesimedes of Legio Anoterion
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_54 = { # Rhesus Bylaxes' grandfather
+	name = "Aeolus"
+	dynasty = dyn_aversarian_96
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 5
+	learning = 1
+	prowess = 1
+
+	1083.10.5 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1095.1.1 = {
+		trait = stubborn
+		trait = lustful
+		trait = brave
+	}
+
+	1099.10.5 = {
+		trait = education_learning_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1152.5.14 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_55 = { # Vilos Kreyshati's wife
+	name = "Iana"
+	dynasty = dyn_aversarian_97
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_20
+
+	martial = 6
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 5
+	learning = 1
+	prowess = 1
+
+	1237.2.21 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1249.1.1 = {
+		trait = honest
+		trait = craven
+		trait = forgiving
+	}
+
+	1253.2.21 = {
+		trait = education_diplomacy_3
+	}
+}
+
+easternimperial_aironoian_aagiokrata_56 = { # Delendea Bhatajarrax' mother
+	name = "Laodamia"
+	dynasty = dyn_aversarian_93
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_57
+
+	martial = 3
+	diplomacy = 1
+	intrigue = 5
+	stewardship = 8
+	learning = 8
+	prowess = 5
+
+	1119.3.29 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1131.1.1 = {
+		trait = fickle
+		trait = arrogant
+		trait = impatient
+	}
+
+	1135.3.29 = {
+		trait = education_intrigue_1
+	}
+
+	1157.5.30 = {
+		death = {
+			death_reason = death_bonfire_accident
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_57 = { # Idaerion Patriarch
+	name = "Talaus"
+	dynasty = dyn_aversarian_93
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	martial = 1
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 8
+	learning = 5
+	prowess = 6
+
+	1075.4.24 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	1087.1.1 = {
+		trait = arrogant
+		trait = zealous
+		trait = just
+	}
+
+	1091.4.24 = {
+		trait = education_diplomacy_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+		trait = gh_glowing_eyes
+		trait = gh_ritual_tattoos
+	}
+
+	1099.1.1 = {
+		trait = gh_arch_legon
+		trait = overseer
+	}
+
+	1149.2.13 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_58 = { # Delendea Bhatajharrax' father
+	name = "Vissarion"
+	dynasty = dyn_aversarian_100
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 5
+	intrigue = 1
+	stewardship = 6
+	learning = 6
+	prowess = 6
+
+	1114.6.17 = {
+		birth = yes
+		trait = magic_good_7
+	}
+
+	1126.1.1 = {
+		trait = ambitious
+		trait = arrogant
+		trait = gregarious
+	}
+
+	1130.6.17 = {
+		trait = education_diplomacy_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+		trait = gh_excessively_pale
+	}
+
+	1140.4.9 = {
+		add_spouse = easternimperial_aironoian_aagiokrata_56
+	}
+
+	1168.3.14 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_59 = { # Legan Athrione Ouarzieh's mother
+	name = "Timandaria"
+	dynasty = dyn_aversarian_100
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_58
+	mother = easternimperial_aironoian_aagiokrata_56
+
+	martial = 2
+	diplomacy = 6
+	intrigue = 8
+	stewardship = 1
+	learning = 4
+	prowess = 2
+
+	1151.7.20 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1163.1.1 = {
+		trait = wrathful
+		trait = arrogant
+		trait = shy
+	}
+
+	1167.7.20 = {
+		trait = education_diplomacy_3
+	}
+
+	1188.9.25 = {
+		death = {
+			death_reason = death_execution
+			killer = easternimperial_aversarian_axiaotheaism_1 #Axiaothea, Three Cities War
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_60 = { # Metricion Xipheos' wife
+	name = "Vilisse"
+	dynasty = dyn_aversarian_96
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_30
+	mother = easternimperial_aironoian_aagiokrata_62
+
+	martial = 6
+	diplomacy = 8
+	intrigue = 4
+	stewardship = 2
+	learning = 4
+	prowess = 6
+
+	1223.2.9 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1235.1.1 = {
+		trait = temperate
+		trait = compassionate
+		trait = patient
+	}
+
+	1239.2.9 = {
+		trait = education_stewardship_2
+	}
+}
+
+easternimperial_aironoian_aagiokrata_61 = { # Narthros Bylaxes' son
+	name = "Osethos"
+	dynasty = dyn_aversarian_96
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_30
+	mother = easternimperial_aironoian_aagiokrata_62
+
+	martial = 7
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 8
+	learning = 5
+	prowess = 3
+
+	1221.8.20 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1233.1.1 = {
+		trait = arrogant
+		trait = cynical
+		trait = vengeful
+	}
+
+	1237.8.20 = {
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_62 = { # Patrician's sister, wife to Narthros Bylaxes
+	name = "Auxesia"
+	dynasty = dyn_aversarian_93
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	female = yes
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_8
+
+	martial = 4
+	diplomacy = 2
+	intrigue = 7
+	stewardship = 2
+	learning = 3
+
+	1193.8.15 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1205.1.1 = {
+		trait = arrogant
+		trait = paranoid
+		trait = lazy
+	}
+
+	1209.8.15 = {
+		trait = education_intrigue_1
+	}
+}
+
+easternimperial_aironoian_aagiokrata_63 = { # Delendea's son
+	name = "Aelitios"
+	dynasty = dyn_aversarian_100
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_50
+	mother = easternimperial_aironoian_aagiokrata_13
+
+	martial = 5
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 5
+	learning = 6
+	prowess = 3
+
+	1166.6.21 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1178.1.1 = {
+		trait = ambitious
+		trait = sadistic
+		trait = chaste
+	}
+
+	1182.6.21 = {
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1188.9.25 = {
+		death = {
+			death_reason = death_punishment
+			killer = easternimperial_aversarian_axiaotheaism_1 #Axiaothea, Three Cities War
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_64 = { # Patrician's Grandmother
+	name = "Asklione"
+	dynasty = dyn_aversarian_16
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_65
+
+	martial = 5
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 6
+	learning = 5
+	prowess = 6
+
+	1124.7.29 = {
+		birth = yes
+		trait = magic_good_2
+		trait = giant
+	}
+
+	1136.1.1 = {
+		trait = brave
+		trait = just
+		trait = trusting
+	}
+
+	1140.7.29 = {
+		trait = education_stewardship_2
+	}
+
+	1168.6.23 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_65 = { # Tharenion Patriarch
+	name = "Diochrodes"
+	dynasty = dyn_aversarian_16
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 3
+	learning = 5
+	prowess = 6
+
+	1080.8.17 = {
+		birth = yes
+		trait = magic_good_4
+		trait = giant
+	}
+
+	1092.1.1 = {
+		trait = wrathful
+		trait = impatient
+		trait = callous
+	}
+
+	1096.7.29 = {
+		trait = education_martial_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1147.7.9 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_67 = { # Patrician's mother
+	name = "Briseis"
+	dynasty = dyn_aversarian_98
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_22
+
+	martial = 1
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 5
+	learning = 8
+	prowess = 5
+
+	1171.3.26 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1183.1.1 = {
+		trait = diligent
+		trait = content
+		trait = patient
+	}
+
+	1187.3.26 = {
+		trait = education_stewardship_3
+	}
+
+	1238.2.5 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_68 = { # Patrician's brother
+	name = "Gelios"
+	dynasty = dyn_aversarian_93
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_8
+	mother = easternimperial_aironoian_aagiokrata_67
+
+	martial = 1
+	diplomacy = 5
+	intrigue = 8
+	stewardship = 6
+	learning = 3
+
+	1199.3.28 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1211.1.1 = {
+		trait = calm
+		trait = compassionate
+		trait = generous
+	}
+
+	1215.3.28 = {
+		trait = education_stewardship_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1245.10.18 = {
+		trait = depressed_1
+		effect = {
+			create_character_memory = {
+				type = lover_died
+
+				participants = {
+					dead_relation = character:easternimperial_aversarian_axiaotheaism_18 # Niokreta Kreyshati
+				}
+			}
+		}
+
+		set_relation_nemesis = {
+			target = character:easternimperial_aironoian_aagiokrata_5 # Silverblood
+			reason = nemesis_killed_partner
+			involved_character = character:easternimperial_aversarian_axiaotheaism_18
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_69 = { # Patrician's wife
+	name = "Themis"
+	dynasty = dyn_aversarian_102
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_40
+
+	martial = 3
+	diplomacy = 3
+	intrigue = 6
+	stewardship = 6
+	learning = 6
+	prowess = 3
+
+	1195.5.14 = {
+		birth = yes
+		trait = magic_good_5
+		trait = beauty_good_2
+	}
+
+	1207.1.1 = {
+		trait = arrogant
+		trait = zealous
+		trait = just
+	}
+
+	1211.5.14 = {
+		trait = education_diplomacy_2
+	}
+
+	1233.10.4 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_70 = { # Patrician's son
+	name = "Phaelox"
+	dynasty = dyn_aversarian_93
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_2
+	mother = easternimperial_aironoian_aagiokrata_69
+
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 6
+	learning = 2
+	prowess = 5
+
+	1223.8.5 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1235.1.1 = {
+		trait = arrogant
+		trait = temperate
+		trait = cynical
+	}
+
+	1239.8.5 = {
+		trait = education_stewardship_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_71 = { # Patrician's daughter
+	name = "Phaedre"
+	dynasty = dyn_aversarian_93
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_2
+	mother = easternimperial_aironoian_aagiokrata_69
+
+	martial = 5
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 5
+	learning = 5
+	prowess = 8
+
+	1233.10.4 = {
+		birth = yes
+		trait = beauty_good_3
+	}
+
+	1231.1.1 = {
+		trait = patient
+		trait = temperate
+		trait = compassionate
+	}
+
+	1235.8.5 = {
+		trait = education_diplomacy_1
+	}
+}
+
+easternimperial_aironoian_aagiokrata_72 = { #Legon Anesimedes' father
+	name = "Maxios"
+	dynasty = dyn_aversarian_94
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_73
+
+	martial = 6
+	diplomacy = 1
+	intrigue = 1
+	stewardship = 8
+	learning = 6
+	prowess = 6
+
+	1119.6.8 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1131.1.1 = {
+		trait = ambitious
+		trait = shy
+		trait = temperate
+	}
+
+	1135.6.8 = {
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1143.12.8 = {
+		add_spouse = easternimperial_aironoian_aagiokrata_74
+	}
+
+	1168.11.11 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_73 = { #Legon Anesimedes' grandfather, fought in the Agionist Rebellion as the second Legon of the 12th Aironoian Governorial Legion
+	name = "Icarion"
+	dynasty = dyn_aversarian_94
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 7
+	intrigue = 1
+	stewardship = 5
+	learning = 1
+	prowess = 4
+
+	1075.8.5 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1087.1.1 = {
+		trait = stubborn
+		trait = content
+		trait = callous
+	}
+
+	1091.8.5 = {
+		trait = education_martial_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+		trait = gh_ritual_tattoos
+		trait = gh_glowing_veins
+		trait = gh_legon
+	}
+
+	1158.8.7 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_74 = { # Legon Anasimedes' mother
+	name = "Otonia"
+	dynasty = dyn_aversarian_93
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_57
+
+	martial = 5
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 6
+	learning = 7
+	prowess = 7
+
+	1120.6.27 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1132.1.1 = {
+		trait = craven
+		trait = greedy
+		trait = compassionate
+	}
+
+	1136.6.27 = {
+		trait = education_stewardship_3
+	}
+
+	1185.10.8 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_75 = { # Legon Xipheos' wife
+	name = "Eskathea"
+	dynasty = dyn_aversarian_100
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_58
+	mother = easternimperial_aironoian_aagiokrata_56
+
+	martial = 5
+	diplomacy = 3
+	intrigue = 5
+	stewardship = 7
+	learning = 4
+	prowess = 1
+
+	1152.10.20 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1164.1.1 = {
+		trait = craven
+		trait = vengeful
+		trait = impatient
+	}
+
+	1168.10.20 = {
+		trait = education_intrigue_2
+	}
+
+	1188.9.25 = {
+		death = {
+			death_reason = death_execution
+			killer = easternimperial_aversarian_axiaotheaism_1 #Axiaothea, Three Cities War
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_76 = { # Fridge's Grand-Uncle
+	name = "Rhadas"
+	dynasty = dyn_aversarian_16
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_32
+	mother = easternimperial_aironoian_aagiokrata_83
+
+	martial = 6
+	diplomacy = 6
+	intrigue = 8
+	stewardship = 6
+	learning = 8
+	prowess = 1
+
+	1161.6.1 = {
+		birth = yes
+		trait = magic_good_5
+		trait = giant
+	}
+
+	1173.1.1 = {
+		trait = stubborn
+		trait = calm
+		trait = lazy
+	}
+
+	1177.6.1 = {
+		trait = education_intrigue_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1199.9.26 = {
+		death = {
+			death_reason = death_retributive_march
+			killer = etrandanexi_aversarian_axiaotheaism_1 # Agos Slyn
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_77 = { # Selagus Ouarzieh's mother
+	name = "Hippodamia"
+	dynasty = dyn_aversarian_16
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_76
+
+	martial = 4
+	diplomacy = 5
+	intrigue = 1
+	stewardship = 4
+	learning = 5
+	prowess = 4
+
+	1199.6.30 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1211.1.1 = {
+		trait = shy
+		trait = vengeful
+		trait = greedy
+	}
+
+	1215.6.30 = {
+		trait = education_learning_3
+	}
+}
+
+easternimperial_aironoian_aagiokrata_78 = { # Fridge's mother
+	name = "Maklea"
+	dynasty = dyn_aversarian_98
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_22
+
+	martial = 6
+	diplomacy = 5
+	intrigue = 2
+	stewardship = 6
+	learning = 8
+	prowess = 4
+
+	1195.11.15 = {
+		birth = yes
+		trait = magic_good_2
+		trait = lunatic_genetic
+	}
+
+	1207.1.1 = {
+		trait = cynical
+		trait = fickle
+		trait = wrathful
+	}
+
+	1211.11.15 = {
+		trait = education_diplomacy_3
+	}
+
+	1246.12.13 = {
+		death = {
+			death_reason = death_siege
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_79 = { # Iros Athioeasa's son
+	name = "Dexas"
+	dynasty = dyn_aversarian_98
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_24
+
+	martial = 5
+	diplomacy = 2
+	intrigue = 6
+	stewardship = 6
+	learning = 6
+	prowess = 7
+
+	1234.10.6 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1246.1.1 = {
+		trait = honest
+		trait = diligent
+		trait = calm
+	}
+
+	1250.10.6 = {
+		trait = education_stewardship_3
+	}
+}
+
+easternimperial_aironoian_aagiokrata_80 = { # Metricion's sister
+	name = "Polydora"
+	dynasty = dyn_aversarian_95
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	female = yes
+
+	mother = easternimperial_aironoian_aagiokrata_15
+
+	martial = 1
+	diplomacy = 6
+	intrigue = 1
+	stewardship = 7
+	learning = 5
+	prowess = 4
+
+	1221.7.28 = {
+		birth = yes
+		trait = magic_good_2
+		trait = intellect_good_1
+	}
+
+	1233.1.1 = {
+		trait = ambitious
+		trait = shy
+		trait = greedy
+	}
+
+	1237.7.28 = {
+		trait = education_learning_1
+	}
+}
+
+easternimperial_aironoian_aagiokrata_81 = { # Legan Ouarzieh's aunt
+	name = "Irrhia"
+	dynasty = dyn_aversarian_97
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_19
+	mother = easternimperial_aironoian_aagiokrata_52
+
+	martial = 4
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 3
+	learning = 3
+	prowess = 2
+
+	1154.7.8 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	1164.1.1 = {
+		trait = stubborn
+		trait = shy
+		trait = chaste
+	}
+
+	1168.7.8 = {
+		trait = education_arcana_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+
+	1199.9.26 = {
+		death = {
+			death_reason = death_retributive_march
+			killer = etrandanexi_aversarian_axiaotheaism_1 # Agos Slyn
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_82 = { # Legon Palagrios' great-grandmother
+	name = "MaxiA_the"
+	dynasty = dyn_aversarian_102
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	martial = 8
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 7
+	learning = 2
+	prowess = 6
+
+	1083.5.29 = {
+		birth = yes
+		trait = magic_good_7
+		trait = beauty_good_2
+	}
+
+	1095.1.1 = {
+		trait = arrogant
+		trait = just
+		trait = brave
+	}
+
+	1099.5.29 = {
+		trait = education_martial_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+		trait = gh_glowing_eyes
+	}
+
+	1129.8.25 = {
+		death = {
+			death_reason = death_disappearance
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_83 = { # Fridge's great-grandmother
+	name = "Lychthia"
+	dynasty = dyn_aversarian_102
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	mother = easternimperial_aironoian_aagiokrata_82
+
+	martial = 2
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 4
+	learning = 3
+	prowess = 8
+
+	1123.7.12 = {
+		birth = yes
+		trait = magic_good_2
+		trait = beauty_good_1
+	}
+
+	1135.1.1 = {
+		trait = stubborn
+		trait = impatient
+		trait = zealous
+	}
+
+	1139.7.12 = {
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1161.6.1 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_84 = { # Legon Arthion Kantallides' grandfather
+	name = "Mastriodes"
+	dynasty = dyn_aversarian_101
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	martial = 5
+	diplomacy = 8
+	intrigue = 6
+	stewardship = 2
+	learning = 3
+	prowess = 5
+
+	1098.6.20 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1110.1.1 = {
+		trait = arbitrary
+		trait = gluttonous
+		trait = callous
+	}
+
+	1114.6.20 = {
+		trait = education_diplomacy_2
+	}
+
+	1162.10.26 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_85 = { # Legon Palagrios' mother
+	name = "Rythike"
+	dynasty = dyn_aversarian_101
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_84
+
+	martial = 2
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 6
+	learning = 5
+	prowess = 8
+
+	1140.7.19 = {
+		birth = yes
+		trait = magic_good_5
+		trait = beauty_good_2
+	}
+
+	1152.1.1 = {
+		trait = calm
+		trait = lazy
+		trait = temperate
+	}
+
+	1156.7.19 = {
+		trait = education_learning_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1215.2.3 = {
+		death = {
+			death_reason = death_siege
+			killer = easternimperial_aeschraes_aagiokrata_1 # Governor Isliados
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_86 = { # Fridge's Grandmother
+	name = "Eubraxis"
+	dynasty = dyn_aversarian_94
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_72
+	mother = easternimperial_aironoian_aagiokrata_74
+
+	martial = 8
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 1
+	learning = 5
+	prowess = 5
+
+	1155.5.30 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1167.1.1 = {
+		trait = vengeful
+		trait = gregarious
+		trait = just
+		trait = strong
+	}
+
+	1171.5.30 = {
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_87 = { # Legon Pyxarxos of the 12th Aironoian Governorial Legion, died in imprisonment after losing to Agionists
+	name = "Pyxarxos"
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 3
+	learning = 8
+	prowess = 6
+
+	1055.8.5 = {
+		birth = yes
+	}
+
+	1067.1.1 = {
+		trait = stubborn
+		trait = wrathful
+		trait = greedy
+	}
+
+	1071.8.5 = {
+		trait = education_martial_2
+		trait = reckless
+		trait = gh_legon
+	}
+
+	1091.10.12 = {
+		death = {
+			death_reason = death_dungeon
+			killer = westernimperial_philantrios_1 # Legon Ultirnos
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_88 = { # Legon Pathocas Anesimedes of Legio Anoterion
+	name = "Pathocas"
+	dynasty = dyn_aversarian_94
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_73
+
+	1124.2.13 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1136.1.1 = {
+		trait = wrathful
+		trait = arrogant
+		trait = sadistic
+	}
+
+	1140.2.13 = {
+		trait = education_martial_4
+		trait = gh_legon
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1168.3.1 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_89 = { # River Authority
+	name = "Tolios"
+	dynasty = dyn_aversarian_103
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	martial = 7
+	diplomacy = 1
+	intrigue = 5
+	stewardship = 6
+	learning = 3
+	prowess = 3
+
+	father = easternimperial_aironoian_aagiokrata_47
+
+	1215.5.9 = {
+		birth = yes
+	}
+
+	1227.1.1 = {
+		trait = fickle
+		trait = deceitful
+		trait = greedy
+	}
+
+	1231.5.9 = {
+		trait = education_intrigue_2
+	}
+}
+
+easternimperial_aironoian_aagiokrata_90 = {
+	name = "Anthousa" 
+	female = yes
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+
+	sexuality = heterosexual
+
+	trait = diligent
+	trait = cynical
+	trait = gregarious
+
+	diplomacy = 3
+	martial = 7
+	stewardship = 6
+	intrigue = 1
+	learning = 6
+	prowess = 5
+
+	trait = education_stewardship_3
+
+	1207.3.3 = {
+		birth = yes
+	}
+
+	1238.1.2 = {
+		death = {
+			death_reason = death_attacked
+			killer = southernimperial_aversarian_gorassos_2
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_91 = { # Mathotos Asonox' grandfather
+	name = "Qathrioxes"
+	dynasty = dyn_aversarian_90
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_92
+
+	martial = 1
+	diplomacy = 4
+	intrigue = 7
+	stewardship = 5
+	learning = 7
+
+	1093.6.7 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	1105.1.1 = {
+		trait = fickle
+		trait = forgiving
+		trait = calm
+	}
+
+	1109.6.7 = {
+		trait = education_martial_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1163.6.18 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_92 = { # Asonox Patriarch
+	name = "Prethoran"
+	dynasty = dyn_aversarian_90
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	martial = 7
+	diplomacy = 3
+	intrigue = 8
+	stewardship = 3
+	learning = 6
+	prowess = 8
+
+	1066.1.16 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1078.1.1 = {
+		trait = lustful
+		trait = ambitious
+		trait = zealous
+	}
+
+	1082.6.7 = {
+		trait = education_arcana_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1134.11.6 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_93 = { # Gallephon Palagrios' mother
+	name = "Agamede"
+	dynasty = dyn_aversarian_90
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_92
+
+	martial = 6
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 6
+	learning = 2
+	prowess = 4
+
+	1108.10.9 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1120.1.1 = {
+		trait = shy
+		trait = ambitious
+		trait = wrathful
+	}
+
+	1124.10.9 = {
+		trait = education_stewardship_2
+	}
+
+	1168.8.7 = {
+		death = {
+			death_reason = death_mysterious # Odrstund
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_94 = {
+	name = "Peltra"
+	dynasty = dyn_aversarian_94
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_10
+
+	1221.7.5 = {
+		birth = yes
+	}
+
+	1241.7.5 = {
+		trait = compassionate
+		trait = cynical
+		trait = arbitrary
+	}
+}
+
+easternimperial_aironoian_aagiokrata_95 = {
+	name = "Arthagion"  #belisarios' adopted son, named after mentor
+	father = easternimperial_aironoian_aagiokrata_7
+	dynasty = dyn_aversarian_77
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+	prowess = 9
+	diplomacy = 5
+	martial = 7
+	stewardship = 5
+	intrigue = 5
+	learning = 7
+	1277.1.1 = {
+		birth = yes
+	}
+	1297.1.1 = {
+		trait = gregarious
+		trait = generous
+		trait = diligent
+		trait = education_learning_2
+		trait = disputed_heritage
+		trait = gh_historical_blademaster_2
+		trait = shrewd
+		set_relation_friend = {
+			target = character:easternimperial_aironoian_aagiokrata_7
+			reason = was_adopted
+		}
+	}
+}
+
+easternimperial_aironoian_aagiokrata_96 = {
+	name = "Arthagion" #mentor of Belisarios
+	religion = aironoian_aagiokrata
+	culture = easternimperial
+	dna = easternimperial_aironoian_aagiokrata_96
+	disallow_random_traits = yes
+	martial = 9
+	prowess = 10
+	trait = brave
+	trait = just
+	trait = diligent
+	trait = loyal
+	trait = gh_historical_blademaster_3
+	trait = education_martial_2
+	trait = strong
+	1201.1.1 = {
+		birth = yes
+	}
+	#1251.1.1 = { #easternimperial_aironoian_aagiokrata_7 is not landed so cannot be employer
+	#	employer = easternimperial_aironoian_aagiokrata_7
+	#}
+}

@@ -1,0 +1,58 @@
+﻿adani_vidvaookeyatra_1 = { # 1217&39 Sakankra Duke, the man who sold his father out for love
+	name = "Sobhanaraja"
+	religion = "vidvaookeyatra"
+	culture = "adani"
+	father = adani_nabbarek_1
+	mother = adani_nabbarek_2
+	dynasty = dyn_adani_1
+	sexuality = heterosexual
+
+	1196.4.11 = {
+		birth = yes
+	}
+	1208.4.11 = {
+		trait = deceitful
+		trait = brave
+		trait = lustful
+	}
+	1212.4.11 = {
+		trait = education_martial_3
+		trait = strong
+	}
+	1220.9.19 = {
+		trait = rough_terrain_expert
+		trait = scarred
+		trait = gh_historical_blademaster_2
+	}
+}
+
+adani_vidvaookeyatra_2 = { # 1254 love-fuelled, revenge-driven anger machine (Sakankra enemy vassal)
+	name = "Vinita"
+	religion = "vidvaookeyatra"
+	culture = "adani"
+	father = adani_nabbarek_3
+	dynasty = dyn_adani_1
+	sexuality = heterosexual
+	trait = legitimized_bastard
+	trait = physique_good_1
+
+	1218.4.16 = {
+		birth = yes
+	}
+	1230.4.16 = {
+		trait = deceitful
+		trait = craven
+		trait = lustful
+	}
+	1234.4.16 = {
+		trait = education_intrigue_4
+		trait = irritable
+	}
+	1249.3.6 = {
+		effect = {
+			set_relation_rival = character:sakankra_vidvaookeyatra_18
+			set_relation_rival = character:sakankra_vidvaookeyatra_26
+			set_relation_soulmate = character:karkit_vidvaookeyatra_1
+		}
+	}
+}

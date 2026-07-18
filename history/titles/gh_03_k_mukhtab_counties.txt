@@ -1,0 +1,151 @@
+c_taytuzlikha = {
+	1230.1.1 = {
+		holder = makryenis_sansia_1
+	}
+	1288.1.1 = {
+		holder = hudi_ritualist_2
+		liege = "d_al_hadded"
+	}
+}
+#c_muamilleh = {
+#	1230.1.1 = {
+#		holder = makryenis_sansia_1
+#	}
+#}
+#c_beni_mhalta = {
+#	1230.1.1 = {
+#		holder = makryenis_sansia_11
+#		government = landed_order_government
+#		liege = "d_dyazmineh"
+#	}
+#}
+#c_eyyem = {
+#	1230.1.1 = {
+#		holder = makryenis_sansia_12
+#		government = landed_order_government
+#		liege = "d_dyazmineh"
+#	}
+#}
+c_douhar_fenaz = {
+	1230.1.1 = {
+		holder = makryenis_sansia_8
+		government = landed_order_government
+		liege = "d_dyazmineh"
+	}
+	1288.1.1 = {
+		holder = hudi_ritualist_2
+		liege = "d_al_hadded"
+	}
+}
+#c_wadi_tredem = {
+#	1252.7.4 = {
+#		holder = makryenis_sansia_2
+#		government = landed_order_government
+#		liege = "d_dyazmineh"
+#	}
+#	1288.1.1 = {
+#		holder = hudi_ritualist_2
+#		liege = "d_al_hadded"
+#	}
+#}
+c_shaukehbad = {
+	1230.1.1 = {
+		holder = makryenis_sansia_7
+		government = landed_order_government
+		liege = "k_mukhtab"
+	}
+}
+#c_beni_hezan = {
+#	1230.1.1 = {
+#		holder = makryenis_sansia_7
+#		government = landed_order_government
+#		liege = "k_mukhtab"
+#	}
+#}
+#c_zarsiyyah = {
+#	1288.1.1 = {
+#		holder = hudi_ritualist_2
+#		liege = "d_al_hadded"
+#	}
+#}
+c_tethikys = {
+	1230.1.1 = {
+		holder = makryenis_sansia_4
+		liege = "k_mukhtab"
+		government = landed_order_government
+	}
+}
+c_central_sarradon30 = {
+	1230.1.1 = {
+		holder = makryenis_sansia_4
+		liege = "k_mukhtab"
+		government = landed_order_government
+	}
+}
+c_central_sarradon13 = {
+	1243.9.2 = {
+		holder = makryenis_sansia_3
+		liege = "d_bidiyyeh"
+		government = landed_order_government
+	}
+}
+c_provincenewrybna = {
+	1251.12.6 = {
+		holder = makryenis_sansia_5
+		liege = "d_bidiyyeh"
+		government = landed_order_government
+	}
+}
+c_anaan = {
+	1230.1.1 = {
+		holder = makryenis_sansia_13
+		liege = "d_bidiyyeh"
+		government = landed_order_government
+	}
+}
+c_arasar = {
+	1230.1.1 = {
+		holder = makryenis_sansia_6
+		liege = "k_mukhtab"
+		government = landed_order_government
+	}
+}
+#c_qalet_al_shams = {
+#	1230.1.1 = {
+#		holder = makryenis_sansia_6
+#		liege = "k_mukhtab"
+#		government = landed_order_government
+#	}
+#}
+c_tiybechar = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_41
+		liege = "k_four_rivers"
+	}
+	1281.11.12 = {
+		holder = hudi_ritualist_1
+	}
+}
+#c_mahdonah = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_41
+#		liege = "k_four_rivers"
+#	}
+#	1281.11.12 = {
+#		holder = hudi_ritualist_1
+#	}
+#}
+#c_ash_shabesh = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_42
+#		liege = "k_four_rivers"
+#	}
+#	1281.11.12 = {
+#		holder = hudi_ritualist_1
+#	}
+#}
+#c_al_arago = {
+#	1281.11.12 = {
+#		holder = hudi_ritualist_1
+#	}
+#}

@@ -1,0 +1,33 @@
+﻿charchac_mokmanur_1 = { # Khvicha's Charchac Warlord
+	name = "Kaasderai"
+	religion = "mokmanur"
+	culture = "charchac"
+	sexuality = heterosexual
+	trait = intellect_good_2
+
+	1215.9.22 = {
+		birth = yes
+	}
+	1227.9.22 = {
+		trait = patient
+		trait = paranoid
+		trait = ambitious
+	}
+	1231.9.22 = {
+		trait = education_intrigue_4
+		trait = torturer
+	}
+	1252.11.6 = {
+		#effect = { # Not currently landed!
+		#	vassal_contract_set_obligation_level = {
+		#		type = religious_rights
+		#		level = 1
+		#	}
+		#	vassal_contract_set_obligation_level = {
+		#		type = title_revocation_rights
+		#		level = 1
+		#	}
+		#}
+		add_gold = 200
+	}
+}

@@ -1,0 +1,112 @@
+﻿rethara_yakasak_1 = { # Roving Fiends pirate
+	name = "Angrees"
+	culture = "rethara"
+	religion = "yakasak"
+	father = rethara_yakasak_3
+
+	dna = rethara_yakasak_1
+
+    portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_indian_01
+			custom_beards = no_beard
+		}
+	}
+
+	1210.1.1 = {
+		birth = yes
+		trait = beauty_bad_3
+		trait = sadistic
+		trait = arbitrary
+		trait = gluttonous
+	}
+	1236.1.1 = {
+		trait = reaver
+		trait = one_eyed
+		trait = cannibal
+		give_nickname = nick_rahksasa_maw
+		effect = {
+			set_relation_rival = character:ikanita_yakasak_1
+			add_character_modifier = {
+				modifier = obese_modifier
+			}
+		}
+	}
+	1253.9.4 = {
+		imprison = {
+			target = character:deraani_yakasak_2
+			type = house_arrest
+		}
+	}
+
+	1265.6.8 = {
+		trait = gh_one_handed
+		death = {
+			death_reason = death_execution
+			killer = deraani_yakasak_1
+		}
+	}
+}
+
+rethara_yakasak_2 = {
+	name = "Mahinda"
+	culture = "rethara"
+	religion = "yakasak"
+
+	1220.1.1 = {
+		birth = yes
+	}
+}
+
+rethara_yakasak_3 = {
+	name = "Depaari"
+	religion = "yakasak"
+	culture = "rethara"
+
+	dna = rethara_yakasak_3
+
+    portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_indian_02
+			custom_hair = no_hair
+		}
+	}
+
+	1182.12.5 = {
+		birth = yes
+		trait = wheezing
+	}
+
+	1198.12.5 = {
+		trait = education_intrigue_3
+		trait = paranoid
+		trait = arrogant
+		trait = lustful
+		give_nickname = nick_sick_rat
+	}
+	1212.3.8 = {
+		death = {
+			death_reason = death_battle
+			killer = ikanita_yakasak_6
+		}
+	}
+}
+
+rethara_yakasak_4 = {
+	name = "Shunten"
+	father = rethara_yakasak_1
+	religion = "yakasak"
+	culture = "rethara"
+
+	1237.2.11 = {
+		birth = yes
+		trait = bastard
+	}
+
+	1237.2.11 = {
+		trait = sadistic
+		trait = wrathful
+		trait = arrogant
+		trait = education_intrigue_2
+	}
+}

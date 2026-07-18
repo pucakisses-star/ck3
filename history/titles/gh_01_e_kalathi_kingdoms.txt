@@ -1,0 +1,103 @@
+﻿k_pearlcoast = {
+	1183.9.24 = {
+		holder = westernimperial_aversarinas_aagiokrata_14
+	}
+
+	1186.11.15 = {
+		liege = "e_oraispol_aautokrata"
+	}
+	
+	1200.3.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_16
+		liege = "e_oraispol_aautokrata"
+	}
+	
+	1200.5.3 = {
+		holder = westernimperial_aversarinas_aagiokrata_16
+		liege = 0
+	}
+
+	1211.1.6 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+
+	1224.2.12 = {
+		holder = northernimperial_aversarinas_aagiokrata_19
+		liege = e_aversarinas_aautokrata
+	}
+
+	1229.11.3 = {
+		 holder = 0
+	}
+
+	1260.1.1 = {
+		holder = barki_sjalvolki_2
+		liege = e_migrant_coalition
+	}
+	1266.4.16 = {
+		holder = barki_sjalvolki_19
+	}
+	1275.1.1 = {
+		liege = 0
+	}
+	1287.6.9= {
+		holder = barki_sjalvolki_22
+	}
+	1298.1.1 = {
+		government = feudal_government
+	}
+}
+k_westhold = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	66.11.14 = {
+		holder = 0
+	}
+	1260.1.1 = {
+		holder = irmionoth_sjalvolki_1
+		liege = e_migrant_coalition
+		government = tribal_government
+	}
+	1266.2.11 = {
+		holder = irmionoth_sjalvolki_14
+	}
+	1276.1.1 = {
+		liege = 0
+	}
+	1284.1.2 = {
+		holder = irmionoth_sjalvolki_18
+	}
+	1298.1.1 = {
+		government = feudal_government
+	}
+}
+k_redwald = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	66.11.14 = {
+		holder = 0
+	}
+	1200.3.1 = {
+		holder = northernimperial_aversarinas_aagiokrata_35
+	}
+	1244.4.24 = {
+		holder = northernimperial_aversarinas_aagiokrata_36
+	}
+	1247.3.15 = {
+		holder = 0
+	}
+	1260.1.1 = {
+		holder = brigandines_partic_1
+	}
+	1276.4.20 = {
+		holder = brigandines_partic_7
+	}
+	1295.3.7 = {
+		holder = brigandines_partic_9
+	}
+	1297.12.1 = {
+		holder = laodantine_partic_1
+	}
+}

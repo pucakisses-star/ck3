@@ -1,0 +1,89 @@
+﻿c_ihala_minh = {
+	1240.1.1 = {
+		holder = mahatha_yakasak_1
+		government = pirate_government
+		change_development_level = 5
+	}
+	1277.3.10 = {
+		holder = voyagen_coastpath_2
+		government = republic_playable_government
+	}
+}
+c_boshtra = {
+	1240.1.1 = {
+		holder = vanaarik_yakasak_2
+		government = pirate_government
+		change_development_level = 4
+	}
+	1283.12.27 = {
+		holder = tasurmad_haradar_14
+		government = landed_order_government
+	}
+}
+c_mattrannar = {
+	1245.8.11 = {
+		holder = rethara_yakasak_1
+		government = pirate_government
+		change_development_level = 4
+	}
+	1265.6.8 = {
+		holder = rethara_yakasak_4
+	}
+}
+c_matalla = {
+	1245.8.11 = {
+		holder = rethara_yakasak_1
+		government = pirate_government
+	}
+}
+c_kolonnalle = {
+	1236.1.20 = {
+		holder = arolyan_yakasak_1a
+		government = feudal_government
+	}
+ 	1250.9.11 = {
+ 		holder = arolyan_yakasak_1
+ 		government = pirate_government
+ 		change_development_level = 4
+ 	}
+ 	1283.8.20 = {
+ 		holder = arolyan_yakasak_4
+ 	}
+ 	1289.6.26 = {
+ 		holder = arolyan_yakasak_14
+ 	}
+ 	1298.2.26 = {
+ 		holder = arolyan_yakasak_6
+ 	}
+}
+c_jallur = {
+ 	1236.1.20 = {
+		holder = arolyan_yakasak_1a
+		government = feudal_government
+	}
+ 	1250.9.11 = {
+ 		holder = arolyan_yakasak_1
+ 		government = pirate_government
+ 		change_development_level = 4
+ 	}
+ 	1283.8.20 = {
+ 		holder = arolyan_yakasak_14
+ 	}
+}
+c_thenamara = {
+	1185.11.10 = {
+		holder = watumimba_corkkattirkana_2
+		liege = k_spice_cities
+	}
+	1210.3.19 = {
+		holder = westernimperial_aversarinas_aagiokrata_202
+		government = military_unit_government
+	}
+	1218.3.1 = {
+		holder = wasteland
+	}
+	1273.10.18 = {
+		holder = voyagen_coastpath_2
+	}
+}
+

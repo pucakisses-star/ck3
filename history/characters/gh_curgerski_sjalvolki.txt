@@ -1,0 +1,250 @@
+﻿curgerski_sjalvolki_1 = { # Bo 'the Witch-Lover', a Curgerski chieftain with an almost childlike fascination with magic
+	name = "Borvoj"
+	dynasty = dyn_sjalvolki_14
+	religion = "sjalvolki"
+	culture = "curgerski"
+	sexuality = heterosexual
+	
+	diplomacy = 4
+	intrigue = 1
+	learning = 5
+	martial = 3
+	stewardship = 7
+
+	1226.11.13 = {
+		birth = yes
+	}
+	1238.1.1 = {
+		trait = trusting
+		trait = greedy
+		trait = diligent
+	}
+	1242.11.13 = {
+		trait = education_learning_3
+		give_nickname = nick_witch_lover
+	}
+	1250.1.1 = {
+		trait = scholar
+	}
+}
+
+curgerski_sjalvolki_2 = {
+	name = "Kresmir"
+	dna = curgerski_sjalvolki_2
+	dynasty = dyn_sjalvolki_13
+	sexuality = heterosexual
+	religion = "sjalvolki"
+	culture = "curgerski"
+	trait = brave
+	trait = wrathful
+	trait = lustful
+	trait = scarred
+	trait = beauty_good_1
+	trait = physique_good_3
+	trait = dwarf
+	trait = education_martial_2
+	trait = gh_historical_blademaster_1
+	trait = reckless
+	trait = berserker
+
+	
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_northern_01
+			custom_beards = male_beard_fp1_04
+		}
+	}
+
+	1216.1.1 = {
+		birth = yes
+	}
+	
+	1239.7.11 = {
+		give_nickname = nick_giantlayer
+		trait = gh_historical_track_hunter_3
+	}
+	
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_sjalvolki
+		effect = {
+			create_character_memory = { # Battle of the Elysian Pass
+				type = fought_in_elysian_pass_sjalvolki
+			}
+		}
+	}
+}
+
+curgerski_sjalvolki_3 = {
+	name = "Unwan"
+	religion = "sjalvolki"
+	culture = "curgerski"
+
+	1215.1.1 = {
+		birth = yes
+	}
+}
+
+curgerski_sjalvolki_4 = {
+	name = "Volrad"
+	religion = "sjalvolki"
+	culture = "curgerski"
+
+	1215.1.1 = {
+		birth = yes
+	}
+}
+
+curgerski_sjalvolki_5 = {
+	name = "Orlin"
+	religion = "sjalvolki"
+	culture = "curgerski"
+
+	1203.1.1 = {
+		birth = yes
+	}
+}
+
+curgerski_sjalvolki_6 = {
+	name = "Radic" #Formerly Rudigar
+	religion = "sjalvolki"
+	culture = "curgerski"
+
+	1208.1.1 = {
+		birth = yes
+	}
+}
+
+curgerski_sjalvolki_7 = {
+	name = "Milovan"
+	religion = "sjalvolki"
+	culture = "curgerski"
+
+	1213.1.1 = {
+		birth = yes
+	}
+}
+
+curgerski_sjalvolki_8 = {
+	name = "Sava"
+	religion = "sjalvolki"
+	culture = "curgerski"
+	female = yes
+
+	1211.1.1 = {
+		birth = yes
+	}
+}
+
+curgerski_sjalvolki_9 = {
+	name = "Viric"
+	religion = "sjalvolki"
+	culture = "curgerski"
+
+	1228.1.1 = {
+		birth = yes
+	}
+}
+
+curgerski_sjalvolki_10 = {
+	name = "Vetjcin" #Formerly Witikind
+	religion = "sjalvolki"
+	culture = "curgerski"
+
+	1221.1.1 = {
+		birth = yes
+	}
+}
+
+curgerski_sjalvolki_11 = { #Eylrig of the Queer Eyes, Curgerski champion at the Battle of Ten Trees
+	name = "Eylrig"
+	religion = "sjalvolki"
+	culture = "curgerski"
+	dynasty = dyn_sjalvolki_38
+	disallow_random_traits = yes
+
+	martial = 4
+	diplomacy = 6
+	stewardship = 5
+	intrigue = 4
+	learning = 7
+	prowess = 6
+
+	1214.11.2 = {
+		birth = yes
+		trait = beauty_bad_3
+	}
+
+	1226.1.1 = {
+		trait = calm
+		trait = sadistic
+		trait = shy
+	}
+
+	1230.11.2 = {
+		trait = education_intrigue_4
+		trait = torturer
+	}
+
+	1239.5.23 = {
+		trait = gh_historical_blademaster_2
+		trait = gh_historical_track_hunter_3
+		give_nickname = nick_of_the_queer_eyes
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	1247.3.15 = { # Ten Trees
+		death = {
+			death_reason = death_battle
+			killer = northernimperial_aversarinas_aagiokrata_51
+		}
+	}
+}
+
+curgerski_sjalvolki_12 = { #Eylrig's son
+	name = "Havrek"
+	religion = "sjalvolki"
+	culture = "curgerski"
+	dynasty = dyn_sjalvolki_38
+	disallow_random_traits = yes
+
+	father = curgerski_sjalvolki_11
+
+	martial = 6
+	diplomacy = 8
+	stewardship = 2
+	intrigue = 4
+	learning = 3
+	prowess = 8
+
+	1234.8.26 = {
+		birth = yes
+		trait = beauty_bad_3
+	}
+
+	1246.1.1 = {
+		trait = wrathful
+		trait = gluttonous
+		trait = gregarious
+	}
+
+	1250.8.26 = {
+		trait = education_martial_2
+		trait = rough_terrain_expert
+		trait = gh_historical_blademaster_1
+	}
+	1253.12.21 = {
+		employer = curgerski_sjalvolki_2
+	}
+}

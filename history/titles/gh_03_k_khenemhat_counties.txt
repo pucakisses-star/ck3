@@ -1,0 +1,158 @@
+b_affaltern = {
+	1230.1.1 = {
+		holder = ee_nd_14
+	}
+}
+#c_kirkudariya = {
+#	1230.1.1 = {
+#		holder = mutsartan_harthahi_1
+#		liege = "k_eastern_frontier"
+#	}
+#}
+#c_ar_rath = {
+#	1230.1.1 = {
+#		holder = adnanari_harthahi_10
+#		liege = d_exiles_cities
+#	}
+#}
+c_utopia_hulawitensis = {
+	1230.1.1 = {
+		holder = adnanari_harthahi_11
+		liege = k_eastern_frontier
+	}
+}
+c_shahmaranu = {
+	1230.1.1 = {
+		holder = adnanari_harthahi_3
+		liege = k_eastern_frontier
+	}
+}
+#c_thibischa = {
+#	1230.1.1 = {
+#		holder = adnanari_harthahi_4
+#		liege = k_eastern_frontier
+#	}
+#}
+#c_brounawat = {
+#	1230.1.1 = {
+#		holder = adnanari_harthahi_5
+#		liege = k_eastern_frontier
+#	}
+#}
+#c_deylatian = {
+#	1230.1.1 = {
+#		holder = adnanari_harthahi_5
+#		liege = k_eastern_frontier
+#	}
+#}
+c_horologion = {
+	1230.1.1 = {
+		holder = adnanari_harthahi_5
+		liege = k_eastern_frontier
+	}
+}
+#c_sakamim = {
+#	1230.1.1 = {
+#		holder = adnanari_harthahi_6
+#		liege = k_eastern_frontier
+#	}
+#}
+#c_sahafroun = {
+#	1230.1.1 = {
+#		holder = adnanari_harthahi_6
+#		liege = k_eastern_frontier
+#	}
+#}
+c_kudahhar = {
+	1230.1.1 = {
+		holder = tasurmad_harthahi_1
+	}
+	1230.1.1 = { change_development_level = 18 }
+}
+#c_mosufar = {
+#	1230.1.1 = {
+#		holder = mutsartan_harthahi_5
+#		liege = k_eastern_frontier
+#	}
+#}
+#c_qudsabk = {
+#	1230.1.1 = {
+#		holder = mutsartan_harthahi_2
+#		liege = k_eastern_frontier
+#	}
+#}
+#c_el_banayem = {
+#	1230.1.1 = {
+#		holder = mutsartan_harthahi_2
+#		liege = k_eastern_frontier
+#	}
+#}
+#c_zarrishtar = {
+#	1230.1.1 = {
+#		holder = mutsartan_harthahi_2
+#		liege = k_eastern_frontier
+#	}
+#}
+#c_kassabak = {
+#	1230.1.1 = {
+#		holder = mutsartan_harthahi_6
+#		liege = k_eastern_frontier
+#	}
+#}
+
+c_kemerdi = {
+	1230.1.1 = {
+		holder = adnanari_harthahi_2
+		liege = k_eastern_frontier
+	}
+}
+
+c_crocodilea = {
+	1230.1.1 = {
+		holder = adnanari_harthahi_4
+		liege = k_eastern_frontier
+	}
+}
+
+c_methuch = {
+	1230.1.1 = {
+		holder = mutsartan_harthahi_6
+		liege = k_eastern_frontier
+	}
+}
+c_sakalla = {
+	1230.1.1 = {
+		holder = mutsartan_harthahi_1
+		liege = k_eastern_frontier
+	}
+}
+#c_alghairbah = {
+#	1230.1.1 = {
+#		holder = mutsartan_harthahi_3
+#		liege = k_eastern_frontier
+#	}
+#}
+c_mirrorgaol = {
+	1230.1.1 = {
+		holder = mutsartan_harthahi_4
+		liege = k_eastern_frontier
+	}
+}
+c_iskariya = {
+	1230.1.1 = {
+		holder = mutsartan_harthahi_3
+		liege = "k_eastern_frontier"
+	}
+}
+c_diriraidah = {
+	1230.1.1 = {
+		holder = mutsartan_harthahi_1
+		liege = "k_eastern_frontier"
+	}
+}
+c_agandik = {
+	1230.1.1 = {
+		holder = mutsartan_harthahi_1
+		liege = "k_eastern_frontier"
+	}
+}

@@ -1,0 +1,130 @@
+c_anudrapaawa = {
+	1240.5.4 = {
+		holder = arolyan_yakasak_2
+		government = pirate_government
+		change_development_level = 4
+	}
+	1290.1.4 = {
+		holder = arolyan_yakasak_15
+	}
+}
+c_triniopara = {
+	1240.5.4 = {
+		holder = arolyan_yakasak_2
+		government = pirate_government
+		change_development_level = 4
+	}
+	1290.1.4 = {
+		holder = arolyan_yakasak_15
+	}
+}
+c_eratticaloa = {
+	635.2.21 = { # Reinforces Monarch authority after a period of Regency. Expands the Mdala Hasiras, establishing key shipping ports throughout the Pirate Coast such as Mji'Safi
+		holder = watumimba_corkkattirkana_17
+	}
+	662.1.14 = { # The Magi-King, takes thrown from nephew, begins to notably shown signs of Vampirism in elder years, ultimately killed in a palace coup by backstabbing royal guard & general
+		holder = watumimba_corkkattirkana_23
+	}
+	726.3.10 = { # Takes control through a coup against the Magi-King, crushes dissent, forces the royal family into exile in Dahangon & later KathunKai, ultimately killed with poison in his sleep
+		holder = watumimba_corkkattirkana_26
+	}
+	734.9.13 = { # Child of the Betrayer, killed in an "accident" before Jamyras' father takes the thrown 
+		holder = watumimba_corkkattirkana_27
+	}
+	734.12.12 = { # Establishes the 2nd Dynasty of Ufaliracci, expanding control of spice trade, expands Mji'Safi Port
+		holder = watumimba_corkkattirkana_28
+	}
+	745.12.14 = { # Kattupu Jamryas, Warrior Poet & Smith, created & planned the Silver Palace complex, expanded Ufaliracci to its greatest territorial extent, mocked for refusing to take a new wife in his later life to protect his children's interests
+		holder = watumimba_corkkattirkana_30
+	}
+	778.1.3 = { # Killed in a climbing accident on Ma'Taa, otherwise competent ruler whose unexpected death convinces KK to support 1st Dynasty's claim against Ufaliracci
+		holder = watumimba_corkkattirkana_32
+	}
+	788.10.6 = { # Manages to fend off a claim war against Ufaliracci supported by Kathuni privateers & pirates from the South
+		holder = watumimba_corkkattirkana_34
+	}
+	801.11.29 = { # More focused on scholarship, funds several chronicles covering Ufaliracci early history, astronomy, & development of mining practices for Ma'Taa's crystal veins
+		holder = watumimba_corkkattirkana_36
+	}
+	818.7.22 = { # Boisterous and proud, leads a failed campaign against the Mainland, dies at sea
+		holder = watumimba_corkkattirkana_37
+	}
+	820.2.1 = { # Attempts to continue the war of his brother, but is assassinated
+		holder = watumimba_corkkattirkana_38
+	}
+	820.10.3 = { # Succeeds where her brothers failed, taking Ulfairacci's first continental ports & negotiating deals with the Dye & Spice Cities along the Sarradonian coast
+		holder = watumimba_corkkattirkana_39
+	}
+	847.3.1 = { # Rules a long and peaceful reign, untested, before being sureptisiouly murdered in his sleep along with much of the royal family during the Murtuy ka Varha, killed by cultists seeking to become a Lich
+		holder = watumimba_corkkattirkana_45
+	}
+	899.12.15 = {
+		holder = lich_culture_rejection_21
+	}
+	899.12.29 = { # Overwhelms the Salt-Lich in the Duel of Silver Moons, establishing the 3rd Dynasty 
+		holder = watumimba_corkkattirkana_46
+	}
+	926.4.12 = { # Loses control of the Sarradonian ports besides Mji'Safi to Magaala & the burdgeoning Spice League, stuck in disputes with Kathuni traders
+		holder = watumimba_corkkattirkana_48
+	}
+	935.7.1 = { # Known for little beyond extravagant feasts, crippling debt, and nearly being couped by her siblings 
+		holder = watumimba_corkkattirkana_50
+	}
+	941.3.6 = { # Known for little, dies of illness shortly into their reign, younger sibling takes over
+		holder = watumimba_corkkattirkana_51
+	}
+	954.10.10 = { # Known for expanding the silver trade, losing war against Cinnamon Cities
+		holder = watumimba_corkkattirkana_58
+	}
+	968.5.4 = { # Known for little, dies untested as a child
+		holder = watumimba_corkkattirkana_60
+	}
+	973.3.16 = { # Loses ground to pirates in the east and west, but averts disaster at Mji'Safi
+		holder = watumimba_corkkattirkana_53
+	}
+	1184.5.20 = {
+		holder = watumimba_yakasak_5
+		government = administrative_republic_playable_government
+	}
+	1193.7.15 = {
+		holder = watumimba_yakasak_4
+		government = administrative_republic_playable_government
+	}
+	1203.11.2 = {
+		holder = watumimba_corkkattirkana_2
+		government = administrative_republic_playable_government
+	}
+	1240.5.4 = {
+		holder = watumimba_corkkattirkana_1 
+		change_development_level = 5
+		government = republic_playable_government
+	}
+}
+c_pannala = {
+	1240.5.4 = {
+		holder = samayani_yakasak_1
+		government = pirate_government
+		change_development_level = 4
+	}
+}
+c_haputatota = {
+	1240.5.4 = {
+		holder = tapuso_yakasak_2
+		government = pirate_government
+		change_development_level = 4
+	}
+}
+c_chilambo = {
+	1240.5.4 = {
+		holder = tapuso_yakasak_1
+		government = pirate_government
+		change_development_level = 4
+	}
+}
+c_negotuwa = {
+	1240.5.4 = {
+		holder = rokgana_nolosaanyo_1
+		government = tribal_government
+		change_development_level = 6
+	}
+}

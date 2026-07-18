@@ -1,0 +1,10 @@
+﻿guillater_deep_one_cult_1 = {
+	name = "Flavia"
+	female = yes
+	religion = deep_one_cult
+	culture = guillater
+
+	1224.2.1 = {
+		birth = yes
+	}
+}

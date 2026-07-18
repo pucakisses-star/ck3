@@ -1,0 +1,99 @@
+c_nabammam = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_dimnablah = {
+	1230.1.1 = {
+		holder = utyalid_harthahi_1
+		government = migratory_government
+	}
+}
+c_pelinekin = {
+	1230.1.1 = {
+		holder = utyalid_harthahi_1
+		government = migratory_government
+	}
+}
+#c_diyah = {
+#	1230.1.1 = {
+#		holder = utyalid_harthahi_1
+#		government = migratory_government
+#	}
+#}
+#c_banawa = {
+#	1230.1.1 = {
+#		holder = utyalid_harthahi_1
+#		liege = k_eastern_frontier
+#		government = migratory_government
+#	}
+#}
+c_lahibid = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_dorepios = {
+	1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}
+c_ebed20 = {
+	1230.1.1 = {
+		liege = k_eastern_frontier
+		holder = utyalid_wardenism_3
+		change_development_level = 5
+	}
+}
+#c_new_sarradon_county27 = {
+#	1230.1.1 = {
+#		liege = k_eastern_frontier
+#		holder = utyalid_wardenism_3
+#		change_development_level = 5
+#	}
+#}
+c_ebed32 = {
+	1235.9.12 = {
+		liege = k_eastern_frontier
+		holder = utyalid_wardenism_6
+		change_development_level = 6
+	}
+}
+c_new_sarradon_county25 = {
+	1230.1.1 = {
+		holder = utyalid_harfi_1
+		government = migratory_government
+	}
+}
+#c_ebed05 = {
+#	1230.1.1 = {
+#		holder = utyalid_harfi_2
+#		liege = k_eastern_frontier
+#	}
+#}
+c_ebed06 = {
+	1230.1.1 = {
+		holder = utyalid_harfi_2
+		liege = k_eastern_frontier
+	}
+}
+#c_east_sarradon6 = {
+#	1230.1.1 = {
+#		holder = utyalid_harfi_2
+#		liege = k_eastern_frontier
+#	}
+#}
+#c_ebed03 = {
+#	1230.1.1 = {
+#		holder = utyalid_wardenism_4
+#		liege = k_eastern_frontier
+#	}
+#}
+#c_new_sarradon_county26 = {
+#	1230.1.1 = {
+#		liege = k_eastern_frontier
+#		holder = utyalid_harthahi_1
+#		change_development_level = 2
+#	}
+#}

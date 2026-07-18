@@ -1,0 +1,82 @@
+﻿akhtarfi_wardenism_1 = {
+	name = "Ishawk"
+	religion = "wardenism"
+	culture = "akhtarfi"
+
+	martial = 7
+	diplomacy = 8
+	intrigue = 7
+	stewardship = 3
+	learning = 8
+	prowess = 6
+
+	1228.1.19 = {
+		birth = yes
+	}
+
+	1240.1.1 = {
+		trait = humble
+		trait = fickle
+		trait = gluttonous
+	}
+
+	1244.1.19 = {
+		trait = education_martial_3
+	}
+}
+
+akhtarfi_wardenism_2 = {
+	name = "Iesdan"
+	religion = "wardenism"
+	culture = "akhtarfi"
+
+	martial = 5
+	diplomacy = 6
+	intrigue = 7
+	stewardship = 3
+	learning = 6
+	prowess = 6
+
+	1211.5.7 = {
+		birth = yes
+		trait = magic_good_3
+		effect = {
+			set_base_arcana = { AMOUNT = 5 }
+		}
+	}
+
+	1223.1.1 = {
+		trait = zealous
+		trait = craven
+		trait = callous
+	}
+
+	1227.5.7 = {
+		trait = education_learning_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:obsidian_mirror_oneiroscopy }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+akhtarfi_wardenism_3 = {
+	name = "Amasin"
+	religion = "wardenism"
+	culture = "akhtarfi"
+
+	1224.10.21 = {
+		birth = yes
+	}
+}
+
+akhtarfi_wardenism_4 = {
+	name = "Ilasen"
+	religion = "wardenism"
+	culture = "akhtarfi"
+
+	1210.12.7 = {
+		birth = yes
+	}
+}

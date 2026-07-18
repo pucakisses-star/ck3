@@ -1,0 +1,87 @@
+##################
+## Thura Taw ##
+##################
+
+e_thura_taw = {
+	520.1.1 = {
+		holder = nathanalmic_nattanan_7
+		government = tribal_government
+	}
+	520.1.10 = {
+		holder = 0
+	}
+}
+
+k_west_nattana = {
+	500.1.1 = {
+		holder = nathanalmic_nattanan_7
+		government = tribal_government
+	}
+
+	520.1.10 = {
+		holder = 0
+	}
+
+	740.1.1 = {
+		holder = nathanalmic_nattanan_10 #Warlord 3
+	}
+
+	770.5.7 = {
+		holder = 0
+	}
+}
+
+k_east_nattana = {
+	519.9.21 = {
+		holder = nathanalmic_nattanan_7
+		government = tribal_government
+	}
+
+	520.1.10 = {
+		holder = 0
+	}
+
+	650.1.1 = {
+		holder = nathanalmic_nattanan_9 #Warlord 2
+		government = tribal_government
+	}
+
+	670.5.17 = {
+		holder = 0
+	}
+
+	937.1.1 = {
+		holder = nathanalmic_nattanan_12 #Warlord 5
+	}
+
+	970.3.9 = {
+		holder = 0
+	}
+}
+
+k_currentsprings = {
+	493.7.30 = {
+		holder = nathanalmic_nattanan_7
+		government = tribal_government
+	}
+
+	520.1.10 = {
+		holder = 0
+	}
+
+	544.1.1 = {
+		holder = nathanalmic_nattanan_8 #Warlord 1
+	}
+
+	575.1.1 = {
+		holder = 0
+	}
+
+	840.1.1 = {
+		holder = nathanalmic_nattanan_11 #Warlord 4
+	}
+
+	870.10.22 = {
+		holder = 0
+	}
+}

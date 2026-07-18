@@ -1,0 +1,191 @@
+﻿c_shrascens = {
+	760.1.1 = {
+		holder = oejeynica_gravewatch_2
+	}
+	775.1.1 = {
+		holder = oejeynica_gravewatch_3
+	}
+	1070.1.1 = {
+		holder = oejeynica_graveright_13
+	}
+	1100.1.1 = {
+		holder = oejeynica_graveright_12
+	}
+	1126.2.12 = {
+		holder = oejeynica_graveright_11
+	}
+	1129.11.6 = {
+		holder = oejeynica_graveright_10
+	}
+	1130.1.26 = {
+		holder = oejeynica_graveright_9
+	}
+	1155.10.30 = {
+		holder = oejeynica_graveright_7
+	}
+	1168.12.4 = {
+		holder = oejeynica_graveright_8
+	}
+	1176.8.4 = {
+		holder = oejeynica_graveright_6
+	}
+	1220.10.10 = {
+		holder = oejeynica_graveright_2
+	}
+	1229.11.22 = {
+		holder = oejeynica_graveright_1
+	}
+}
+c_tieresc = {
+	760.1.1 = {
+		holder = oejeynica_gravewatch_2
+	}
+	775.1.1 = {
+		holder = oejeynica_gravewatch_3
+	}
+	1070.1.1 = {
+		holder = oejeynica_graveright_13
+	}
+	1100.1.1 = {
+		holder = oejeynica_graveright_12
+	}
+	1126.2.12 = {
+		holder = oejeynica_graveright_11
+	}
+	1129.11.6 = {
+		holder = oejeynica_graveright_10
+	}
+	1130.1.26 = {
+		holder = oejeynica_graveright_9
+	}
+	1155.10.30 = {
+		holder = oejeynica_graveright_7
+	}
+	1168.12.4 = {
+		holder = oejeynica_graveright_8
+	}
+	1176.8.4 = {
+		holder = oejeynica_graveright_6
+	}
+	1220.10.10 = {
+		holder = oejeynica_graveright_2
+	}
+	1229.11.22 = {
+		holder = oejeynica_graveright_1
+	}
+}
+c_spenica = {
+	760.1.1 = {
+		holder = oejeynica_gravewatch_2
+	}
+	775.1.1 = {
+		holder = oejeynica_gravewatch_3
+	}
+	1070.1.1 = {
+		holder = oejeynica_graveright_13
+	}
+	1100.1.1 = {
+		holder = oejeynica_graveright_12
+	}
+	1126.2.12 = {
+		holder = oejeynica_graveright_11
+	}
+	1129.11.6 = {
+		holder = oejeynica_graveright_10
+	}
+	1130.1.26 = {
+		holder = oejeynica_graveright_9
+	}
+	1155.10.30 = {
+		holder = oejeynica_graveright_7
+	}
+	1168.12.4 = {
+		holder = oejeynica_graveright_8
+	}
+	1176.8.4 = {
+		holder = oejeynica_graveright_6
+	}
+	1220.10.10 = {
+		holder = oejeynica_graveright_2
+	}
+	1229.11.22 = {
+		holder = oejeynica_graveright_1
+	}
+}
+c_deceiex = {
+	1070.1.1 = {
+		holder = oejeynica_graveright_13
+	}
+	1100.1.1 = {
+		holder = oejeynica_graveright_12
+	}
+	1126.2.12 = {
+		holder = oejeynica_graveright_11
+	}
+	1129.11.6 = {
+		holder = oejeynica_graveright_10
+	}
+	1130.1.26 = {
+		holder = oejeynica_graveright_9
+	}
+	1155.10.30 = {
+		holder = oejeynica_graveright_7
+	}
+	1168.12.4 = {
+		holder = oejeynica_graveright_8
+	}
+	1176.8.4 = {
+		holder = oejeynica_graveright_6
+	}
+	1220.10.10 = {
+		holder = oejeynica_graveright_2
+	}
+	1229.11.22 = {
+		holder = oejeynica_gravewatch_1
+		liege = d_ziemojycz
+	}
+}
+c_vardain = {
+	1230.10.18 = {
+		holder = oejeynica_gravewatch_1
+		liege = d_ziemojycz
+	}
+}
+c_granae = {
+	760.1.1 = {
+		holder = oejeynica_gravewatch_2
+	}
+	775.1.1 = {
+		holder = oejeynica_gravewatch_3
+	}
+	1070.1.1 = {
+		holder = oejeynica_graveright_13
+	}
+	1100.1.1 = {
+		holder = oejeynica_graveright_12
+	}
+	1126.2.12 = {
+		holder = oejeynica_graveright_11
+	}
+	1129.11.6 = {
+		holder = oejeynica_graveright_10
+	}
+	1130.1.26 = {
+		holder = oejeynica_graveright_9
+	}
+	1155.10.30 = {
+		holder = oejeynica_graveright_7
+	}
+	1168.12.4 = {
+		holder = oejeynica_graveright_8
+	}
+	1176.8.4 = {
+		holder = oejeynica_graveright_6
+	}
+	1220.10.10 = {
+		holder = oejeynica_graveright_2
+	}
+	1229.11.22 = {
+		holder = oejeynica_graveright_1
+	}
+}

@@ -1,0 +1,34 @@
+﻿xrahantiia_vidvaookeyatra_1 = { # Ind duke
+	name = "Rokhshan"
+	religion = "vidvaookeyatra"
+	culture = "xrahantiia"
+	1230.8.8 = {
+		birth = yes
+	}
+}
+
+xrahantiia_vidvaookeyatra_2 = { # 1200 would-be duchess of the Paidem, killed in Frod
+	name = "Shirin"
+	religion = "vidvaookeyatra"
+	culture = "xrahantiia"
+	sexuality = heterosexual
+	female = yes
+
+	1176.4.10 = {
+		birth = yes
+	}
+	1188.9.22 = {
+		trait = compassionate
+		trait = calm
+		trait = shy
+	}
+	1192.9.22 = {
+		trait = education_diplomacy_2
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}

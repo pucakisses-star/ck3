@@ -1,0 +1,19 @@
+﻿jalanka_wardenism_1 = {
+	name = "Bubacar"
+	religion = "wardenism"
+	culture = "jalanka"
+
+	1225.9.5 = {
+		birth = yes
+	}
+}
+
+jalanka_wardenism_2 = {
+	name = "Qaberl"
+	religion = "wardenism"
+	culture = "jalanka"
+
+	1218.3.26 = {
+		birth = yes
+	}
+}

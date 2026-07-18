@@ -1,0 +1,37 @@
+c_zardarridfka = {
+	1.1.1 = {
+		holder = wasteland
+	}
+}
+c_zigdardik = {	
+	
+	1225.1.1 = {
+		holder = redrunner_aversarinas_aagiokrata_40 
+	}
+		
+	1247.3.27 = {
+		holder = redlander_elated_victim_1
+		government = magocratic_government
+		change_development_level = 4
+	}
+}
+c_kreshtorfar = {
+
+	33.4.8 = {
+		holder = unsorted_49
+	}
+	43.9.29 = {
+		holder = wasteland
+	}
+
+	1230.1.1 = {
+		holder = easternimperial_aversarinas_aagiokrata_6
+		change_development_level = 4
+	}
+}
+c_zartta = {
+	1230.1.1 = {
+		holder = redrunner_aversarinas_aagiokrata_13
+		change_development_level = 5
+	}
+}

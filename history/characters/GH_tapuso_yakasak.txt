@@ -1,0 +1,67 @@
+﻿tapuso_yakasak_1 = {
+	name = "Eranga"
+	religion = "yakasak"
+	culture = "tapuso"
+
+	1229.12.1 = {
+		birth = yes
+	}
+}
+
+tapuso_yakasak_2 = {
+	name = "Suvik"
+	religion = "yakasak"
+	culture = "tapuso"
+
+	dna = tapuso_yakasak_2
+
+	portrait_override = {
+		portrait_modifier_overrides={
+			custom_hair=male_hair_indian_01
+			custom_beards=m_beard_ep2_western_01
+		}
+	}
+
+	1234.11.11 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	1250.11.11 = {
+		trait = gh_historical_school
+		trait = education_arcana_1
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:school_of_night_scrying }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+		trait = stubborn
+		trait = lunatic_1
+		trait = shy
+		trait = cynical
+	}
+}
+
+tapuso_yakasak_3 = {
+	name = "Sitepu"
+	religion = "yakasak"
+	culture = "tapuso"
+
+	1175.5.9 = {
+		birth = yes
+		trait = legitimized_bastard
+		trait = sadistic
+		trait = wrathful
+		trait = greedy
+		trait = strong
+	}
+	1191.5.9 = {
+		trait = education_intrigue_4
+		trait = reckless
+		give_nickname = nick_empty_heart
+	}
+	1228.6.5 = {
+		death = {
+			death_reason = death_duel
+			killer = ikanita_yakasak_1
+		}
+	}
+}

@@ -1,0 +1,105 @@
+c_jayamanapera = {
+	1251.1.1 = {
+		holder = siklasa_dravadari_1
+		change_development_level = 10
+	}
+}
+c_nibal = {
+	1251.1.1 = {
+		holder = siklasa_dravadari_1
+	}
+}
+c_samayake = {
+	1251.1.1 = {
+		holder = kathunian_fourteen_heavenly_methods_3
+		change_development_level = 11
+	}
+}
+c_akkapatacoa = {
+	1251.1.1 = {
+		holder = lainar_vidvaookeyatra_4
+		liege = k_sheytara
+		change_development_level = 16
+	}
+}
+c_nuthus = {
+	1251.1.1 = {
+		holder = sindaara_vidvaookeyatra_2
+		liege = d_omkhlur
+		change_development_level = 8
+	}
+}
+c_southkashirya_isles_2 = {
+	1200.1.1 = {
+		holder = lainar_vidvaookeyatra_12
+		change_development_level = 10
+	}
+	1228.4.7 = {
+		holder = lainar_vidvaookeyatra_11
+	}
+	1232.4.3 = {
+		holder = lainar_vidvaookeyatra_8
+	}
+	1235.7.3 = {
+		holder = lainar_vidvaookeyatra_1
+	}
+}
+c_kegalewa = {
+	1200.1.1 = {
+		holder = lainar_vidvaookeyatra_12
+		change_development_level = 10
+	}
+	1228.4.7 = {
+		holder = lainar_vidvaookeyatra_11
+	}
+	1232.4.3 = {
+		holder = lainar_vidvaookeyatra_8
+	}
+	1235.7.3 = {
+		holder = lainar_vidvaookeyatra_1
+	}
+}
+c_south_kashirya_2 = {
+	1210.11.12 = {
+		holder = vanaarik_yakasak_1
+		change_development_level = 9
+		government = pirate_government
+	}
+	1234.3.2 = {
+		holder = vanaarik_yakasak_3
+		government = pirate_government
+	}
+	1294.11.26 = {
+		holder = vanaarik_yakasak_19
+		government = feudal_government
+	}
+}
+c_south_kashirya_3 = {
+	1251.1.1 = {
+		holder = jakana_vidvaookeyatra_1
+		change_development_level = 9
+		government = pirate_government
+	}
+}
+c_radampet = {
+	1100.2.8 = {
+		holder = sindaara_vidvaookeyatra_14
+		change_development_level = 9
+	}
+	1127.11.5 = {
+		holder = sindaara_vidvaookeyatra_13	 }
+	1166.11.5 = {
+		holder = sindaara_vidvaookeyatra_10	 }
+	1200.11.5 = {
+		holder = sindaara_vidvaookeyatra_6	 }
+	1230.11.2 = {
+		holder = sindaara_vidvaookeyatra_7	 }
+	1231.2.4 = {
+		holder = sindaara_vidvaookeyatra_8	 }
+	1231.12.1 = {
+		holder = sindaara_vidvaookeyatra_9	 }
+	1231.12.6 = {
+		holder = sindaara_vidvaookeyatra_5	 }
+	1236.11.2 = {
+		holder = sindaara_vidvaookeyatra_1	 }
+}

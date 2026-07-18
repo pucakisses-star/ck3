@@ -1,0 +1,17 @@
+﻿skoronyk_slain_eagle_cult_1 = {
+	name = "Mieszko"
+	religion = slain_eagle_cult
+	culture = skoronyk
+	1233.1.2 = {
+		birth = yes
+	}
+	1245.1.2 = {
+		trait = vengeful
+		trait = patient
+		trait = zealous
+	}
+	1249.1.2 = {
+		trait = education_diplomacy_3
+		trait = gh_historical_blademaster_2
+	}
+}

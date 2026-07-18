@@ -1,0 +1,14 @@
+﻿d_kurdirik = {
+	
+	1200.1.1 = {
+		holder = redrunner_aversarinas_aagiokrata_17
+	}
+	
+	1220.1.1 = {
+		holder = redrunner_aversarinas_aagiokrata_15
+	}
+	
+	1230.1.1 = {
+		holder = redrunner_aversarinas_aagiokrata_1
+	}
+}

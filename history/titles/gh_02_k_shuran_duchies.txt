@@ -1,0 +1,23 @@
+#d_kord_kandi = {
+#	1249.1.1 = {
+#		holder = amsari_mahndayana_321
+#		liege = k_shuran
+#	}
+#	1230.1.1 = { change_development_level = 10 }
+#}
+#d_gaud = {
+#	1249.1.1 = {
+#		holder = amsari_mahndayana_321
+#		liege = k_shuran
+#	}
+#	1230.1.1 = { change_development_level = 11 }
+#}
+d_tolombehye_habibabad = {
+	1230.1.1 = { change_development_level = 13 }
+}
+d_burjaki = {
+	1230.1.1 = { change_development_level = 4 }
+	1230.1.1 = {
+		holder = 0
+	}
+}

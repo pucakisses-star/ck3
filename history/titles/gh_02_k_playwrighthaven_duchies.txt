@@ -1,0 +1,16 @@
+d_journey_upland = {
+	1235.6.18 = {
+		holder = dathanites_labaqiri_5
+		government = republic_playable_government
+	}
+	1245.6.12 = {
+		holder = dathanites_labaqiri_6
+	}
+}
+
+d_candlemakers_flat = {
+  1245.12.16 = {
+		holder = saielaian_bayn_huac_1
+		government = feudal_government
+	}
+}

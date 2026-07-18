@@ -1,0 +1,68 @@
+﻿mirzana_jahar_ruidari_1 = { 
+	name = "Narsingh_Dev"
+	dynasty = dyn_mirzana_jahar_ruidari_1
+	religion = "ruidari"
+	culture = "mirzana_jahar"
+
+	1221.4.14 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 3 }
+		}
+	}
+}
+
+mirzana_jahar_ruidari_2 = { 
+	name = "Chaturanan"
+	dynasty = dyn_mirzana_jahar_ruidari_2
+	religion = "ruidari"
+	culture = "mirzana_jahar"
+
+	1225.4.14 = {
+		birth = yes
+	}
+}
+
+mirzana_jahar_ruidari_3 = { 
+	name = "Udirnakhadga"
+	dynasty = dyn_mirzana_jahar_ruidari_3
+	religion = "ruidari"
+	culture = "mirzana_jahar"
+
+	1213.4.14 = {
+		birth = yes
+	}
+}
+
+mirzana_jahar_ruidari_4 = { 
+	name = "Vakapala"
+	dynasty = dyn_mirzana_jahar_ruidari_4
+	religion = "ruidari"
+	culture = "mirzana_jahar"
+
+	1202.4.14 = {
+		birth = yes
+	}
+}
+
+mirzana_jahar_ruidari_5 = { 
+	name = "Gang_Dev"
+	dynasty = dyn_mirzana_jahar_ruidari_5
+	religion = "ruidari"
+	culture = "mirzana_jahar"
+
+	1232.4.14 = {
+		birth = yes
+	}
+}
+
+mirzana_jahar_ruidari_6 = { 
+	name = "Mahendra"
+	dynasty = dyn_mirzana_jahar_ruidari_6
+	religion = "ruidari"
+	culture = "mirzana_jahar"
+
+	1220.4.14 = {
+		birth = yes
+	}
+}

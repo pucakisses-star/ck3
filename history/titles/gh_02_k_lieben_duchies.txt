@@ -1,0 +1,43 @@
+d_white_river = {
+	1250.1.1 = {
+		holder = mastikigni_sjalvolki_4
+		liege = k_mastikigni
+		government = continental_clan_government
+		change_development_level = 2
+	}
+}
+
+d_crag = {
+	1250.1.1 = {
+		holder = mastikigni_sjalvolki_3
+		government = continental_clan_government
+		liege = k_mastikigni
+		change_development_level = 2
+	}
+}
+
+d_bwlcheit = {
+	1250.1.1 = {
+		holder = mastikigni_sjalvolki_2
+		government = continental_clan_government
+		change_development_level = 1
+	}
+}
+
+d_skycrown_lowlands = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	66.11.14 = {
+		holder = 0
+	}
+	1256.2.1 = {
+		holder = mastikigni_sjalvolki_2
+		government = continental_clan_government
+		change_development_level = 3
+	}
+	1279.4.13 = {
+		holder = barki_sjalvolki_17
+		government = feudal_government
+	}
+}

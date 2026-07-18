@@ -1,0 +1,17 @@
+﻿dasulanoi_drakanorix_aagiokrata_1 = {
+    name = "Ria"
+    female = yes
+    religion = hero_religion
+    culture = dasulanoi
+    1226.2.21 = {
+        birth = yes
+    }
+    1238.2.21 = {
+        trait = temperate
+        trait = gregarious
+        trait = stubborn
+    }
+    1242.2.21 = {
+        trait = education_stewardship_3
+    }
+}

@@ -1,0 +1,240 @@
+c_peti_gisredde = {
+	1.1.2 = {
+		holder = unsorted_28
+	}
+	79.1.1 = {
+		holder = shewigad_starvayrd_3
+	}
+	144.1.30 = {
+		holder = shewigad_starvayrd_4
+	}
+	862.12.23 = {
+		holder = gisreddan_lifepath_6
+	}
+	971.4.4 = {
+		holder = gisreddan_lifepath_8
+	}
+	1004.3.4 = {
+		holder = gisreddan_lifepath_9
+	}
+	1230.1.1 = {
+		holder = gisreddean_lifepath_3
+	}
+}
+c_dverote = {
+	1.1.2 = {
+		holder = unsorted_28
+	}
+	79.1.1 = {
+		holder = shewigad_starvayrd_3
+	}
+	144.1.30 = {
+		holder = shewigad_starvayrd_4
+	}
+	862.12.23 = {
+		holder = gisreddan_lifepath_6
+	}
+	971.4.4 = {
+		holder = gisreddan_lifepath_8
+	}
+	1004.3.4 = {
+		holder = gisreddan_lifepath_9
+	}
+	1230.1.1 = {
+		holder = gisreddean_lifepath_3
+	}
+}
+b_gressonne = {
+	79.1.1 = {
+		holder = shewigad_starvayrd_3
+	}
+
+	144.1.30 = {
+		holder = shewigad_starvayrd_4
+	}
+
+	862.12.23 = {
+		holder = gisreddan_lifepath_6
+	}
+
+	971.4.4 = {
+		holder = gisreddan_lifepath_8
+	}
+
+	1004.3.4 = {
+		holder = gisreddan_lifepath_9
+	}
+	
+	1230.1.1 = {
+		holder = gisreddean_lifepath_3
+	}
+}
+b_sur_elorn = {
+	79.1.1 = {
+		holder = shewigad_starvayrd_3
+	}
+
+	144.1.30 = {
+		holder = shewigad_starvayrd_4
+	}
+
+	862.12.23 = {
+		holder = gisreddan_lifepath_6
+	}
+
+	971.4.4 = {
+		holder = gisreddan_lifepath_8
+	}
+
+	1004.3.4 = {
+		holder = gisreddan_lifepath_9
+	}
+	
+	1230.1.1 = {
+		holder = gisreddean_lifepath_3
+	}
+}
+b_harelport = {
+	79.1.1 = {
+		holder = shewigad_starvayrd_3
+	}
+
+	144.1.30 = {
+		holder = shewigad_starvayrd_4
+	}
+
+	862.12.23 = {
+		holder = gisreddan_lifepath_6
+	}
+
+	971.4.4 = {
+		holder = gisreddan_lifepath_8
+	}
+
+	1004.3.4 = {
+		holder = gisreddan_lifepath_9
+	}
+	
+	1230.1.1 = {
+		holder = gisreddean_lifepath_3
+	}
+	
+	1245.6.1 = {
+		holder = ee_2
+	}
+}
+c_grande_gisredde = {
+	1.1.2 = {
+		holder = unsorted_28
+	}
+	79.1.1 = {
+		holder = shewigad_starvayrd_3
+		government = feudal_government
+	}
+
+	144.1.30 = {
+		holder = shewigad_starvayrd_4
+		government = feudal_government
+	}
+
+	789.1.1 = {
+		holder = gisreddan_lifepath_5
+		government = theocracy_government
+	}
+
+	939.1.1 = {
+		holder = gisreddan_lifepath_7
+		government = feudal_government
+	}
+
+	967.7.30 = {
+		holder = gisreddan_lifepath_10
+		government = feudal_government
+	}
+
+	1015.12.17 = {
+		holder = gisreddan_lifepath_11
+		government = feudal_government
+	}
+
+	1075.1.29 = {
+		holder = gisreddan_lifepath_12
+		government = feudal_government
+	}
+
+	1091.4.12 = {
+		holder = gisreddan_lifepath_14
+		government = feudal_government
+	}
+
+	1155.5.27 = {
+		holder = gisreddan_lifepath_16
+		government = feudal_government
+	}
+
+	1179.5.14 = {
+		holder = marcher_1002
+		government = feudal_government
+	}
+
+	1245.12.11 = {
+		holder = gisreddean_lifepath_2
+		government = feudal_government
+	}
+}
+c_giveddni = {
+	79.1.1 = {
+		holder = shewigad_starvayrd_3
+		government = feudal_government
+	}
+
+	144.1.30 = {
+		holder = shewigad_starvayrd_4
+		government = feudal_government
+	}
+
+	789.1.1 = {
+		holder = gisreddan_lifepath_5
+		government = theocracy_government
+	}
+
+	939.1.1 = {
+		holder = gisreddan_lifepath_7
+		government = feudal_government
+	}
+
+	967.7.30 = {
+		holder = gisreddan_lifepath_10
+		government = feudal_government
+	}
+
+	1015.12.17 = {
+		holder = gisreddan_lifepath_11
+		government = feudal_government
+	}
+
+	1075.1.29 = {
+		holder = gisreddan_lifepath_12
+		government = feudal_government
+	}
+
+	1091.4.12 = {
+		holder = gisreddan_lifepath_14
+		government = feudal_government
+	}
+
+	1155.5.27 = {
+		holder = gisreddan_lifepath_16
+		government = feudal_government
+	}
+
+	1179.5.14 = {
+		holder = marcher_1002
+		government = feudal_government
+	}
+
+	1245.12.11 = {
+		holder = gisreddean_lifepath_2
+		government = feudal_government
+	}
+}

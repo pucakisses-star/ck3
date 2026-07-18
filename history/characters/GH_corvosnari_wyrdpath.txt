@@ -1,0 +1,77 @@
+﻿corvosnari_wyrdpath_1 = {
+	name = "Toeddun"
+	culture = corvosnari
+	religion = wyrdpath
+
+	1236.10.30 = {
+		birth = yes
+	}
+}
+
+corvosnari_wyrdpath_2 = {
+	name = "Cottauc"
+	culture = corvosnari
+	religion = wyrdpath
+	father = corvosnari_wyrdpath_6
+
+	1205.3.2 = {
+		birth = yes
+	}
+}
+
+corvosnari_wyrdpath_3 = {
+	name = "Gyvreu"
+	culture = corvosnari
+	religion = wyrdpath
+
+	1210.11.27 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+
+	1254.1.1 = {
+		effect = { add_character_flag = holdover_in_old_lands } 
+	}
+}
+
+corvosnari_wyrdpath_4 = {
+	name = "Anovur"
+	culture = corvosnari
+	religion = wyrdpath
+
+	1236.6.25 = {
+		birth = yes
+	}
+}
+corvosnari_wyrdpath_5 = {
+	name = "Basovur"
+	culture = corvosnari
+	religion = wyrdpath
+
+	1217.6.25 = {
+		birth = yes
+	}
+
+	1254.1.1 = {
+		effect = { add_character_flag = holdover_in_old_lands } 
+	}
+}
+
+corvosnari_wyrdpath_6 = {
+	name = "Atreuc"
+	culture = corvosnari
+	religion = wyrdpath
+
+	1184.2.30 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	1200.2.30 = {
+		trait = gh_historical_blademaster_1
+		trait = adventurer
+	}
+
+	1245.7.24 = {
+		death = { death_reason = death_old_age }
+	}
+}

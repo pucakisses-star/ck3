@@ -1,0 +1,739 @@
+﻿katharnalmic_kyawkan_19 = {
+	name = "Kyaw_Aung_Thura"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+	dynasty = dyn_zeyathura
+	840.6.25 = { 
+		birth = yes 
+	}
+
+	856.6.25 = { 
+		trait = brave
+		trait = zealous
+		trait = stubborn
+		trait = physique_good_1
+		trait = intellect_good_1
+		trait = education_martial_4
+		trait = gh_historical_blademaster_2
+		trait = gh_historical_track_hunter_2
+		trait = magic_good_7
+	}
+	900.1.1 = {
+		give_nickname = nick_guardian_of_the_western_pass
+	}
+	912.5.10 = { 
+		death = { 
+			death_reason = death_battle
+		} 
+	}
+}
+
+katharnalmic_kyawkan_18 = {
+	name = "Kyaw_Min_Htet"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+	dynasty = dyn_zeyathura
+	father = katharnalmic_kyawkan_19
+	
+	870.3.12 = { birth = yes }
+	945.9.22 = { death = { death_reason = death_battle } }
+}
+
+katharnalmic_kyawkan_17 = {
+	name = "Myat_Aung_Zaw"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+	dynasty = dyn_zeyathura
+	father = katharnalmic_kyawkan_18
+	
+	900.11.8 = { birth = yes }
+	978.7.15 = { death = { death_reason = death_old_age } }
+}
+
+katharnalmic_kyawkan_16 = {
+	name = "Ye_Aung_Kyaw"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+	dynasty = dyn_zeyathura
+	father = katharnalmic_kyawkan_17
+	
+	930.6.25 = { birth = yes }
+	1005.4.10 = { death = { death_reason = death_murder } }
+}
+
+katharnalmic_kyawkan_15 = {
+	name = "Maung_Zaya_Htun"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+	dynasty = dyn_zeyathura
+	father = katharnalmic_kyawkan_16
+	
+	960.8.3 = { birth = yes }
+	1032.2.17 = { death = { death_reason = death_natural_causes } }
+}
+
+katharnalmic_kyawkan_14 = {
+	name = "Sai_Thein_Tun"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+	dynasty = dyn_zeyathura
+	father = katharnalmic_kyawkan_15
+	
+	990.4.19 = { birth = yes }
+	1065.11.30 = { death = { death_reason = death_natural_causes } }
+}
+
+katharnalmic_kyawkan_13 = {
+	name = "Ye_Myint"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+	dynasty = dyn_zeyathura
+	father = katharnalmic_kyawkan_14
+	
+	1020.9.12 = { birth = yes }
+	1092.3.5 = { death = { death_reason = death_natural_causes } }
+}
+
+katharnalmic_kyawkan_12 = {
+	name = "Zaw_Lin_Htut"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+	dynasty = dyn_zeyathura
+	father = katharnalmic_kyawkan_13
+	
+	1050.2.28 = { birth = yes }
+	1120.10.14 = { death = { death_reason = death_natural_causes } }
+}
+
+katharnalmic_kyawkan_11 = {
+	name = "Htet_Myat_Thura"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+	dynasty = dyn_zeyathura
+	father = katharnalmic_kyawkan_12
+	
+	1080.7.7 = { birth = yes }
+	1155.1.22 = { death = { death_reason = death_natural_causes } }
+}
+
+katharnalmic_kyawkan_5 = { # Father of katharnalmic_kyawkan_7
+	name = "Zaw_Min_Htike"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+	dynasty = dyn_zeyathura
+	father = katharnalmic_kyawkan_11
+	sexuality = heterosexual
+	disallow_random_traits = yes 
+
+	martial = 10
+	prowess = 8
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 6
+
+	1100.3.15 = {
+		birth = yes
+	}
+
+	1116.3.15 = {
+		trait = brave
+		trait = zealous
+		trait = stubborn
+		trait = physique_good_2
+		trait = education_martial_3
+		trait = gh_historical_blademaster_1
+		trait = gh_historical_track_hunter_2
+		trait = magic_good_2
+		trait = unyielding_defender
+	}
+	
+	1116.3.15 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 7 }
+		}
+		effect = { set_base_arcana = { AMOUNT = 12 } }
+	}
+	
+	1129.7.10 = {
+		add_spouse = katharnalmic_kyawkan_6
+	}
+	
+	1140.9.5 = {
+		give_nickname = nick_the_unyielding
+	}
+
+	1170.11.25 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+
+katharnalmic_kyawkan_6 = { # Mother of katharnalmic_kyawkan_7
+	name = "Thandar_Aung"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+	female = yes
+	sexuality = heterosexual
+	disallow_random_traits = yes 
+	martial = 7
+	prowess = 5
+	diplomacy = 9
+	intrigue = 8
+	stewardship = 7
+
+	1105.9.8 = {
+		birth = yes
+	}
+
+	1121.9.8 = {
+		trait = patient
+		trait = deceitful
+		trait = ambitious
+		trait = intellect_good_1
+		trait = education_intrigue_3
+		trait = magic_good_2
+	}
+	
+	1121.9.8 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+		effect = { set_base_arcana = { AMOUNT = 11 } }
+	}
+	
+	1129.7.10 = {
+		add_spouse = katharnalmic_kyawkan_5
+	}
+	
+
+	1175.6.18 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+
+katharnalmic_kyawkan_7 = { # Father of katharnalmic_kyawkan_9; dies on 1200.3.1
+	name = "Myat_Tun"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+	dynasty = dyn_zeyathura
+	sexuality = heterosexual
+	disallow_random_traits = yes 
+
+	martial = 5
+	prowess = 5
+	diplomacy = 6
+	intrigue = 3
+	stewardship = 5
+
+	1130.8.20 = {
+		birth = yes
+	}
+
+	1146.8.20 = {
+		trait = brave
+		trait = wrathful
+		trait = ambitious
+		trait = physique_good_3
+		trait = education_martial_4
+		trait = gh_historical_blademaster_3
+		trait = gh_historical_track_hunter_2
+		trait = magic_good_3
+	}
+	
+	1146.8.20 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+		effect = { set_base_arcana = { AMOUNT = 13 } }
+	}
+	
+	1159.5.5 = {
+		add_spouse = katharnalmic_kyawkan_8
+	}
+	
+	1170.11.10 = {
+		give_nickname = nick_the_fierce
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+
+katharnalmic_kyawkan_8 = { # Mother of katharnalmic_kyawkan_9
+	name = "Khin_Myo_Chit"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+	female = yes
+	sexuality = heterosexual
+	disallow_random_traits = yes 
+
+	martial = 8
+	prowess = 6
+	diplomacy = 2
+	intrigue = 8
+	stewardship = 6
+
+	1135.11.15 = {
+		birth = yes
+	}
+
+	1151.11.15 = {
+		trait = patient
+		trait = gregarious
+		trait = compassionate
+		trait = education_diplomacy_2
+		trait = magic_good_2
+	}
+	
+	1151.11.15 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 7 }
+		}
+		effect = { set_base_arcana = { AMOUNT = 11 } }
+	}
+	
+	1159.5.5 = {
+		add_spouse = katharnalmic_kyawkan_7
+	}
+
+	1205.7.12 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+katharnalmic_kyawkan_9 = { # Father of katharnalmic_kyawkan_1
+	name = "Ye_Htut_Kyaw"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+	father = katharnalmic_kyawkan_7
+	mother = katharnalmic_kyawkan_8
+	dynasty = dyn_zeyathura
+	sexuality = heterosexual
+	disallow_random_traits = yes 
+	martial = 5
+	prowess = 5
+	diplomacy = 5
+	intrigue = 3
+	stewardship = 5
+
+	1160.5.15 = {
+		birth = yes
+	}
+
+	1176.5.15 = {
+		trait = brave
+		trait = just
+		trait = patient
+		trait = physique_good_1
+		trait = shrewd
+		trait = education_martial_2
+		trait = gh_historical_blademaster_2
+		trait = gh_historical_track_hunter_2
+		trait = magic_good_4
+	}
+	
+	1176.5.15 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 9 }
+		}
+		effect = { set_base_arcana = { AMOUNT = 10 } }
+	}
+	
+	1189.3.10 = {
+		add_spouse = katharnalmic_kyawkan_10
+	}
+	
+	1200.7.20 = {
+		give_nickname = nick_the_golden_arrow
+	}
+
+	1205.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = nargul_ebohephai_olten_4 # Kiled by Beksultan
+		}
+	}
+}
+
+katharnalmic_kyawkan_10 = { # Mother of katharnalmic_kyawkan_1
+	name = "Khin_Myo"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+	female = yes
+	sexuality = heterosexual
+	disallow_random_traits = yes
+	martial = 2
+	prowess = 6
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 5
+
+	1165.9.3 = {
+		birth = yes
+	}
+
+	1181.9.3 = {
+		trait = trusting
+		trait = diligent
+		trait = gregarious
+		trait = intellect_good_1
+		trait = education_stewardship_3
+		trait = magic_good_5
+	}
+	
+	1181.9.3 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+		effect = { set_base_arcana = { AMOUNT = 8 } }
+	}
+	
+	1189.3.10 = {
+		add_spouse = katharnalmic_kyawkan_9
+	}
+	
+
+	1210.6.17 = {
+		death = {
+			death_reason = death_viciously_dismembered
+		}
+	}
+}
+
+katharnalmic_kyawkan_1 = {
+	name = "Thet_Naung_Zin"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+	dynasty = dyn_zeyathura
+	father = katharnalmic_kyawkan_9
+	mother = katharnalmic_kyawkan_10
+	sexuality = heterosexual
+	disallow_random_traits = yes 
+
+	martial = 7
+	prowess = 8
+	diplomacy = 3
+	intrigue = 1
+	stewardship = 5
+
+	1190.1.1 = {
+		birth = yes
+	}
+
+	1204.1.1 = {
+		trait = brave
+		trait = just
+		trait = temperate
+		trait = scarred
+		trait = physique_good_2
+		trait = education_martial_2
+		trait = gh_historical_blademaster_1
+		trait = gh_historical_track_hunter_2
+		trait = magic_good_5
+	}
+	
+	1205.1.1 = {
+		set_relation_rival = character:nargul_ebohephai_olten_4 # Beksultan kills Thet's dad Kath 9
+	}
+	
+	1206.1.1 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+		effect = { set_base_arcana = { AMOUNT = 6 } }
+	}
+	1220.1.1 = {
+		add_spouse = katharnalmic_kyawkan_2
+	}
+	1225.1.1 = { #Need to come up with a name for this battle
+		give_nickname = nick_the_winged_tiger # given the nickname when he kills Beksultan
+	}
+
+	1240.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = nargul_ebohephai_olten_6
+		}
+	}
+}
+
+katharnalmic_kyawkan_2 = {
+	name = "Nwe_Nwe"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+	dynasty = dyn_zeyathura
+	female = yes
+	sexuality = heterosexual
+	diplomacy = 7
+	intrigue = 5
+	learning = 3
+	stewardship = 2
+	martial = 5
+	disallow_random_traits = yes
+
+	1195.1.1 = {
+		birth = yes
+	}
+
+	1209.1.1 = {
+		trait = compassionate
+		trait = humble
+		trait = forgiving
+		trait = education_arcana_2
+		trait = beauty_good_2
+		trait = magic_good_2
+		trait = organizer
+		trait = logistician
+		trait = aggressive_attacker
+	}
+
+	1210.1.1 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 5 }
+		}
+		effect = { set_base_arcana = { AMOUNT = 8 } }
+	}
+	1220.1.1 = {
+		add_spouse = katharnalmic_kyawkan_1
+	}
+
+	1240.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = nargul_ebohephai_olten_6
+		}
+	}
+}
+
+katharnalmic_kyawkan_3 = {
+	name = "Min_Thu"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+	dynasty = dyn_zeyathura
+	sexuality = heterosexual
+
+	father = katharnalmic_kyawkan_1
+	mother = katharnalmic_kyawkan_2
+	disallow_random_traits = yes
+	intrigue = 7
+	learning = 10
+	martial = 3
+	stewardship = 8
+	diplomacy = 8
+	trait = deceitful
+	trait = wrathful
+	trait = sadistic
+	trait = education_intrigue_3
+	trait = magic_good_6
+	trait = shrewd
+	
+	1227.1.1 = {
+		birth = yes
+	}
+
+	1240.1.1 = { #Nurbek kills his parents and takes his eye in exchange for sparing him
+		set_relation_rival = character:nargul_ebohephai_olten_6
+		trait = one_eyed 
+	}
+
+	1243.1.1 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			set_base_arcana = { AMOUNT = 8 }
+		}
+		effect = { learn_global_spell_effect = { SPELL_IDENTIFIER = spawn_nature_elementals_army } }
+		effect = { learn_global_spell_effect = { SPELL_IDENTIFIER = spawn_mountain_spirit_elementals_army } }
+	}
+	
+
+	1250.1.1 = {
+		give_nickname = nick_the_shrewd
+		effect = {
+			spawn_army = { # GH_EP3_TODO: this army is way over tuned # Scion: Lessened this a bit
+				name = vanguard_western_pass
+				levies = 1000
+				men_at_arms = {
+					type = mountain_spirit_elementals
+					stacks = 2
+				}
+			location = province:8582
+			origin = province:8582
+			inheritable = no
+			}
+		}
+	}
+}
+
+katharnalmic_kyawkan_4 = {
+	name = "Su_Myat"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+	dynasty = dyn_zeyathura
+	female = yes
+	disallow_random_traits = yes
+	martial = 8
+	prowess = 12
+	diplomacy = 8
+	stewardship = 4
+	learning = 9
+	intrigue = 5
+	trait = education_martial_2
+	trait = brave
+	trait = sadistic
+	trait = vengeful
+	trait = albino
+	trait = physique_good_2
+	trait = magic_good_3
+	father = katharnalmic_kyawkan_1
+	mother = katharnalmic_kyawkan_2
+	1236.1.1 = {
+		birth = yes
+	}
+	1240.1.1 = {
+		set_relation_rival = character:nargul_ebohephai_olten_6 # Nurbek kills her mom and dad and permanently wounds her brother (1 eye)
+	}
+	1252.1.1 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+			set_base_arcana = { AMOUNT = 5 }
+			learn_global_spell_effect = { SPELL_IDENTIFIER = spawn_wild_leshens_armies} 
+			learn_global_spell_effect = { SPELL_IDENTIFIER = spawn_woodland_hydra_army }
+		}
+	}
+	1252.5.5 = {
+		give_nickname = nick_the_white_rose
+		effect = {
+			spawn_army = {
+				name = army_white_rose
+				levies = 1000
+				men_at_arms = {  # GH_EP3_TODO: this army is way over tuned # Scion: Lessened this a bit
+					type = mountain_spirit_elementals
+					stacks = 10
+				}
+			location = province:6555
+			origin = province:6555
+			inheritable = no
+			}
+		}
+	}
+}
+
+katharnalmic_kyawkan_20 = { # PLACEHOLDER CHAR FOR HISTORY
+	name = "Yaza_Zin"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+
+	1233.2.1 = {
+		birth = yes
+	}
+}
+
+katharnalmic_kyawkan_21 = { # PLACEHOLDER CHAR FOR HISTORY
+	name = "Kyaw_Min_Htet"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+	trait = magic_good_2
+	1222.2.1 = {
+		birth = yes
+	}
+	1238.2.1 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 2 }
+			set_base_arcana = { AMOUNT = 8 }
+		}
+	}
+}
+
+
+katharnalmic_kyawkan_22 = { # PLACEHOLDER CHAR FOR HISTORY
+	name = "Khin_Myo_Chit"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+	#dynasty = dyn_kyawlin
+
+	1237.2.1 = {
+		birth = yes
+	}
+}
+
+
+katharnalmic_kyawkan_23 = { # PLACEHOLDER CHAR FOR HISTORY
+	name = "Sai_Thein_Tun"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+
+
+	1211.8.2 = {
+		birth = yes
+	}
+}
+
+katharnalmic_kyawkan_24 = { # PLACEHOLDER CHAR FOR HISTORY
+	name = "U_Tay_Myint"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+
+
+	1214.3.11 = {
+		birth = yes
+	}
+}
+
+katharnalmic_kyawkan_25 = { # PLACEHOLDER CHAR FOR HISTORY
+	name = "Thet_Naung_Zin"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+
+
+	1200.8.11 = {
+		birth = yes
+	}
+}
+
+
+
+katharnalmic_kyawkan_26 = { # PLACEHOLDER CHAR FOR HISTORY
+	name = "Thet_Naung_Zin"
+	religion = "katharnalmic"
+	culture = "kyawkan"
+	trait = education_diplomacy_3
+	trait = stubborn
+	trait = patient
+	trait = lifestyle_hunter
+	trait = magic_good_5
+	trait = gh_gedeora_child 
+
+	1200.11.9 = {
+		birth = yes
+	}
+
+	1216.11.9 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			set_base_arcana = { AMOUNT = 11 }
+		}
+	}
+}

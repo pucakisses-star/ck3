@@ -1,0 +1,38 @@
+d_uladahn = {
+	1152.3.20 = {
+		liege = k_chvor
+		holder = murarut_iek_otached_1
+		government = nomad_government
+	}
+	1200.5.12 = {
+		liege = 0
+		government = nomad_government
+	}
+	1220.5.12 = {
+		liege = 0
+		holder = murarut_iek_otached_2
+		government = nomad_government
+	}
+	1246.1.20 = {
+		liege = 0
+		holder = murarut_iek_otached_3
+		government = nomad_government
+	}
+}
+d_churbay = {
+	1161.3.18 = {
+		liege = k_chvor
+		holder = murarut_cumani_5
+		government = nomad_government
+	}
+	1194.6.14 = {
+		liege = k_chvor
+		holder = murarut_cumani_6
+		government = nomad_government
+	}
+	1227.12.5 = {
+		liege = k_chvor
+		holder = murarut_cumani_7
+		government = nomad_government
+	}
+}

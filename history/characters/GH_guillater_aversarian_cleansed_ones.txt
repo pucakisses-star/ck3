@@ -1,0 +1,67 @@
+﻿guillater_aversarian_cleansed_ones_1 = {
+	name = "Athanasia"
+	female = yes
+	religion = cleansed_ones
+	culture = guillater_aversarian
+	sexuality = heterosexual
+
+	dynasty = dyn_aversarian_146
+
+	trait = beauty_good_2
+	martial = 5
+	diplomacy = 5
+	stewardship = 5
+	intrigue = 11
+	learning = 9
+
+	1220.4.19 = {
+		birth = yes
+		trait = magic_good_3
+	}
+	1232.4.19 = {
+		trait = zealous
+		trait = arrogant
+		trait = callous
+	}
+	1236.4.19 = {
+		trait = education_intrigue_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+	1240.4.19 = {
+		trait = scarred
+	}
+	1251.4.19 = {
+		set_relation_rival = character:guillater_aversarian_black_fraternity_1
+	}
+}
+
+guillater_aversarian_cleansed_ones_2 = {
+	name = "Pathos"
+	religion = cleansed_ones
+	culture = guillater_aversarian
+	trait = shrewd
+	1219.7.2 = {
+		birth = yes
+		trait = magic_good_4
+	}
+	1241.7.2 = {
+		trait = calm
+		trait = patient
+		trait = zealous
+	}
+	1245.7.2 = {
+		trait = education_learning_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+	1250.7.2 = {
+		trait = scarred
+	}
+}

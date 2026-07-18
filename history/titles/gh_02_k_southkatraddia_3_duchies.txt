@@ -1,0 +1,32 @@
+d_southkatraddia_10 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_8
+	}
+	1200.3.1 = {
+		holder = 0
+	}
+}
+d_southkatraddia_9 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_9
+	}
+	1200.3.1 = {
+		holder = 0
+	}
+}
+#d_southkatraddia_11 = {
+#	1186.1.1 = {
+#		holder = apokiakas_aversarinas_aagiokratia_10
+#	}
+#	1200.3.1 = {
+#		holder = 0
+#	}
+#}
+d_southkatraddia_8 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_11
+	}
+	1200.3.1 = {
+		holder = 0
+	}
+}

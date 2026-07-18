@@ -1,0 +1,54 @@
+﻿meistras_oirigan_1 = {
+	name = "Virja" #Vavrova
+	religion = "oirigan"
+	culture = "meistras"
+	female = yes
+	trait = peasant_leader
+
+	1216.1.1 = {
+		birth = yes
+		give_nickname = nick_the_liberator_virja
+	}
+}
+
+meistras_oirigan_2 = { # Seen as betrayer for being a Magi
+	name = "Mirajla" #Jarmila
+	religion = "oirigan"
+	culture = "meistras"
+	female = yes
+
+	1217.5.25 = {
+		birth = yes
+		trait = magic_good_4
+		give_nickname = nick_the_betrayer_mirajla
+	}
+
+	1229.1.1 = {
+		trait = ambitious
+		trait = just
+		trait = deceitful
+	}
+
+	1233.5.25 = {
+		trait = education_diplomacy_4
+		trait = peasant_leader
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+}
+
+meistras_oirigan_3 = {
+	name = "Samjek" #Samojik
+	religion = "oirigan"
+	culture = "meistras"
+
+	trait = peasant_leader
+
+	1234.1.1 = {
+		birth = yes
+		give_nickname = nick_magi_bane_samjek
+	}
+}

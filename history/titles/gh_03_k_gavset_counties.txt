@@ -1,0 +1,54 @@
+c_modoot = {
+	1151.10.10 = {
+		holder = jarakmar_ertomax_12
+	}
+	1200.3.1 = {
+		#liege = d_ovod
+		holder = jarakmar_ertomax_5
+		change_development_level = 4
+	}
+	1214.11.18 = {
+		#liege = d_ovod
+		holder = jarakmar_ertomax_7
+	}
+	1231.5.22 = {
+		#liege = d_ovod
+		holder = jarakmar_ertomax_1
+	}
+}
+c_hongoay = {
+	1151.10.10 = {
+		holder = jarakmar_ertomax_12
+	}
+	1200.3.1 = {
+		#liege = d_ovod
+		holder = jarakmar_ertomax_5
+		change_development_level = 4
+	}
+	1214.11.18 = {
+		#liege = d_ovod
+		holder = jarakmar_ertomax_7
+	}
+	1231.5.22 = {
+		#liege = d_ovod
+		holder = jarakmar_ertomax_1
+	}
+}
+c_hovba = {
+	1151.10.10 = {
+		holder = jarakmar_ertomax_12
+	}
+	1200.3.1 = {
+		#liege = d_ovod
+		holder = jarakmar_ertomax_5
+		change_development_level = 4
+	}
+	1214.11.18 = {
+		#liege = d_ovod
+		holder = jarakmar_ertomax_7
+	}
+	1231.5.22 = {
+		#liege = d_ovod
+		holder = jarakmar_ertomax_1
+	}
+}

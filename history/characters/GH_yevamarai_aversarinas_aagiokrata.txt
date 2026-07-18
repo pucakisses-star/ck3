@@ -1,0 +1,143 @@
+﻿yevamarai_aversarinas_aagiokrata_1 = {
+	name = "Wyazios"
+	culture = "yevamarai"
+	religion = "aversarinas_aagiokrata"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+yevamarai_aversarinas_aagiokrata_2 = {
+	name = "Aeschros"
+	culture = "yevamarai"
+	religion = "aversarinas_aagiokrata"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+yevamarai_aversarinas_aagiokrata_3 = {
+	name = "Megistes"
+	culture = "yevamarai"
+	religion = "aversarinas_aagiokrata"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+yevamarai_aversarinas_aagiokrata_4 = {
+	name = "Terros"
+	culture = "yevamarai"
+	religion = "aversarinas_aagiokrata"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+yevamarai_aversarinas_aagiokrata_5 = {
+	name = "Iomom"
+	culture = "yevamarai"
+	religion = "aversarinas_aagiokrata"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+yevamarai_aversarinas_aagiokrata_6 = {
+	name = "Relikios"
+	culture = "yevamarai"
+	religion = "aversarinas_aagiokrata"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+yevamarai_aversarinas_aagiokrata_7 = {
+	name = "Sezial"
+	culture = "yevamarai"
+	religion = "aversarinas_aagiokrata"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+yevamarai_aversarinas_aagiokrata_8 = {
+	name = "Awiaxia"
+	culture = "yevamarai"
+	religion = "aversarinas_aagiokrata"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+yevamarai_aversarinas_aagiokrata_9 = {
+	name = "Vasilios"
+	culture = "yevamarai"
+	religion = "aversarinas_aagiokrata"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+yevamarai_aversarinas_aagiokrata_10 = {
+	name = "Vemenos"
+	culture = "yevamarai"
+	religion = "aversarinas_aagiokrata"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+yevamarai_aversarinas_aagiokrata_11 = { # Viesaudos
+	name = "Viesaudos"
+	culture = "yevamarai"
+	religion = "aversarinas_aagiokrata"
+
+	1136.1.1 = {
+		birth = yes
+		trait = strong
+	}
+
+	1152.1.1 = {
+		trait = education_martial_3
+		trait = gh_historical_blademaster_2
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+
+}
+
+yevamarai_aversarinas_aagiokrata_12 = {
+	name = "Alexandre"
+	religion = "aversarinas_aagiokrata"
+	culture = "yevamarai"
+
+	trait = twin
+	father = easternimperial_aversarinas_aagiokrata_52
+	trait = education_stewardship_3
+	trait = generous
+
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+yevamarai_aversarinas_aagiokrata_13 = {
+	name = "Adanarse"
+	religion = "aversarinas_aagiokrata"
+	culture = "yevamarai"
+
+	trait = twin
+	trait = education_stewardship_4
+	trait = just
+
+	father = easternimperial_aversarinas_aagiokrata_52
+
+	1229.1.1 = {
+		birth = yes
+	}
+}

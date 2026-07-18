@@ -1,0 +1,151 @@
+﻿#c_merrosphio = {
+#	1250.1.1 = {
+#		holder = goans_gethian_3
+#		government = tribal_government
+#	}
+#}
+c_knoike = {
+	1140.5.1 = {
+		holder = skorikiakas_aversarinas_aagiokrata_2
+		government = feudal_government
+	}
+	1170.7.27 = {
+		holder = skorikiakas_aversarinas_aagiokrata_3
+	}
+	1203.6.25 = {
+		holder = skorikiakas_aversarinas_aagiokrata_4
+	}
+	1234.12.30 = {
+		holder = skorikiakas_aversarinas_aagiokrata_5
+	}
+	1247.3.15 = {
+		holder = daukeni_sjalvolki_69
+		liege = k_tribocicai
+		government = continental_clan_government
+	}
+}
+c_malcois_1aa = {
+	1248.8.3 = {
+		holder = daukeni_sjalvolki_28
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+}
+c_messis = {
+	1042.9.23 = {
+		holder = centralimperial_aversarinas_aagiokrata_169
+		liege = e_malcois
+		government = feudal_government
+	}
+	1071.9.4 = {
+		holder = centralimperial_aversarinas_aagiokrata_168
+	}
+	1250.1.1 = {
+		holder = daukeni_sjalvolki_72
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1267.3.13 = {
+		holder = skorikiakas_aversarinas_aagiokrata_12
+		government = feudal_government
+	}
+}
+c_assoesnai = {
+	1250.1.1 = {
+		holder = daukeni_sjalvolki_71
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1267.3.28 = {
+		holder = skorikiakas_aversarinas_aagiokrata_10
+		liege = 0
+		government = feudal_government
+	}
+}
+c_amblana = {
+	1250.1.1 = {
+		holder = daukeni_sjalvolki_44
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1266.12.3 = {
+		holder =skorikiakas_aversarinas_aagiokrata_13
+		government = feudal_government
+	}
+}
+c_lekos = {
+	1250.1.1 = {
+		holder = goans_gethian_3
+		liege = e_migrant_coalition
+		government = tribal_government
+	}
+}
+c_kela = {
+	1250.1.1 = {
+		holder = goans_gethian_2
+		government = tribal_government
+	}
+}
+c_vindhdenae = {
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_zidyyena = {
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_znaw = {
+	1082.8.15 = {
+		holder = centralimperial_aversarinas_aagiokrata_167
+	}
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_asinene = {
+	1082.8.15 = {
+		holder = centralimperial_aversarinas_aagiokrata_167
+	}
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_prtolahraia = {
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_chronar = {
+	1045.3.23 = {
+		holder = skorikiakas_aversarinas_aagiokrata_9
+	}
+	1062.10.14 = {
+		holder = skorikiakas_aversarinas_aagiokrata_8
+	}
+	1065.1.24 = {
+		holder = centralimperial_aversarinas_aagiokrata_168
+	}
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}

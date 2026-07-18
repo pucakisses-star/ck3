@@ -1,0 +1,319 @@
+﻿rahikaya_vidvaookeyatra_1 = { # 1200 Rahikaya King
+	name = "Solyana"
+	religion = "karitkarmaic"
+	culture = "rahikaya"
+	sexuality = bisexual
+	dynasty = dyn_rahikaya_1
+
+	dna = rahikaya_vidvaookeyatra_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair=male_hair_mena_04
+			custom_beards=male_beard_indian_02
+		}
+	}
+
+	1173.4.19 = {
+		birth = yes
+	}
+	1185.4.19 = {
+		trait = patient
+		trait = honest
+		trait = brave
+		trait = shrewd
+	}
+	1189.4.19 = {
+		trait = education_diplomacy_3
+	}
+	1194.8.16 = {
+		add_spouse = ekaachi_vidvaookeyatra_1
+		give_nickname = nick_the_magnificent_solyana
+	}
+	1213.11.3 = {
+		trait = ill
+	}
+	1226.6.9 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+rahikaya_vidvaookeyatra_7 = { # 1228 Rahikaya King
+	name = "Jayasimha"
+	religion = "karitkarmaic"
+	culture = "rahikaya"
+	sexuality = heterosexual
+	father = rahikaya_vidvaookeyatra_1
+	mother = ekaachi_vidvaookeyatra_1
+	dynasty = dyn_rahikaya_1
+
+	dna = rahikaya_vidvaookeyatra_7
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair=male_hair_mena_03
+			custom_beards=no_beard
+		}
+	}
+
+	1196.3.11 = {
+		birth = yes
+	}
+	1208.3.11 = {
+		trait = compassionate
+		trait = forgiving
+		trait = trusting
+		trait = dull
+	}
+	1212.3.11 = {
+		trait = education_diplomacy_2
+	}
+	1221.5.19 = {
+		add_spouse = xokola_vidvaookeyatra_1
+	}
+	1230.1.9 = {
+		death = {
+			death_reason = death_murder
+			killer = rahikaya_vidvaookeyatra_8
+		}
+	}
+}
+
+rahikaya_vidvaookeyatra_8 = { # 1228 Rahikaya King's brother, the usurper regent
+	name = "Yayati"
+	religion = "karitkarmaic"
+	culture = "rahikaya"
+	sexuality = asexual
+	father = rahikaya_vidvaookeyatra_1
+	mother = ekaachi_vidvaookeyatra_1
+	dynasty = dyn_rahikaya_1
+
+	dna = rahikaya_vidvaookeyatra_8
+
+	portrait_override = {
+		portrait_modifier_overrides={
+			custom_hair=male_hair_mena_02
+			custom_beards=m_beard_sp2_western_01
+		}
+	}
+
+	1199.2.16 = {
+		birth = yes
+	}
+	1210.2.16 = {
+		trait = callous
+		trait = ambitious
+		trait = calm
+	}
+	1214.2.16 = {
+		trait = education_martial_3
+	}
+	1230.1.9 = {
+		give_nickname = nick_the_hand_that_bites
+	}
+	1231.4.6 = {
+		effect = {
+			set_relation_rival = character:xokola_vidvaookeyatra_2
+		}
+	}
+}
+
+rahikaya_vidvaookeyatra_9 = { # 1228 Rahikaya King's elder sister
+	name = "Syamadevi"
+	religion = "karitkarmaic"
+	culture = "rahikaya"
+	sexuality = heterosexual
+	father = rahikaya_vidvaookeyatra_1
+	mother = ekaachi_vidvaookeyatra_1
+	dynasty = dyn_rahikaya_1
+	female = yes
+
+	dna = rahikaya_vidvaookeyatra_9
+
+	portrait_override = {
+		portrait_modifier_overrides={
+			custom_hair=female_hair_indian_02
+			custom_beards=no_beard
+		}
+	}
+
+	1201.1.22 = {
+		birth = yes
+	}
+	1213.1.22 = {
+		trait = temperate
+		trait = craven
+		trait = content
+	}
+	1217.1.22 = {
+		trait = education_stewardship_1
+	}
+	1219.5.4 = {
+		add_spouse = ulakada_karitkarmaic_1
+	}
+}
+
+rahikaya_vidvaookeyatra_10 = { # 1228 Rahikaya King's younger sister
+	name = "Kuladevi"
+	religion = "karitkarmaic"
+	culture = "rahikaya"
+	sexuality = homosexual
+	father = rahikaya_vidvaookeyatra_1
+	mother = ekaachi_vidvaookeyatra_1
+	dynasty = dyn_rahikaya_1
+	female = yes
+
+	dna = rahikaya_vidvaookeyatra_10
+
+    portrait_override = {
+		portrait_modifier_overrides={
+			custom_hair=female_hair_indian_03
+			custom_beards=no_beard
+		}
+	}
+
+	1202.9.4 = {
+		birth = yes
+	}
+	1214.9.4 = {
+		trait = lustful
+		trait = gregarious
+		trait = ambitious
+	}
+	1218.9.4 = {
+		trait = education_learning_4
+	}
+}
+
+rahikaya_vidvaookeyatra_11 = { # 1254 Rahikaya puppet 'king'/duke
+	name = "Digbhanja"
+	religion = "vidvaookeyatra"
+	culture = "rahikaya"
+	sexuality = asexual
+	father = rahikaya_vidvaookeyatra_7
+	mother = xokola_vidvaookeyatra_1
+	dynasty = dyn_rahikaya_1
+	trait = depressed_1
+
+	dna = rahikaya_vidvaookeyatra_11
+
+	portrait_override = {
+		portrait_modifier_overrides={
+			custom_hair=m_hair_ep2_western_01
+			custom_beards=male_beard_fp2_iberian_christian_01
+		}
+	}
+
+	1227.12.2 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 4 }
+		}
+	}
+	1239.12.2 = {
+		trait = content
+		trait = shy
+		trait = trusting
+	}
+	1243.12.2 = {
+		trait = education_learning_1
+		give_nickname = nick_the_hollow_digbhanja
+	}
+}
+
+rahikaya_vidvaookeyatra_12 = { # 1254 Rahikaya puppet 'king'/duke's brother
+	name = "Nandavarman"
+	religion = "karitkarmaic"
+	culture = "rahikaya"
+	sexuality = heterosexual
+	father = rahikaya_vidvaookeyatra_7
+	mother = xokola_vidvaookeyatra_1
+	dynasty = dyn_rahikaya_1
+	trait = depressed_1
+	trait = weak
+
+	dna = rahikaya_vidvaookeyatra_12
+
+	portrait_override = {
+		portrait_modifier_overrides={
+			custom_hair=male_hair_iranian_01
+			custom_beards=m_beard_ep2_western_01
+		}
+	}
+
+	1229.3.11 = {
+		birth = yes
+	}
+	1241.3.11 = {
+		trait = zealous
+		trait = shy
+		trait = callous
+		give_nickname = nick_weak_legs_nandavarman
+	}
+	1245.3.11 = {
+		trait = education_martial_1
+	}
+}
+
+rahikaya_vidvaookeyatra_13 = { # 1254 Karana Duke Lover
+	name = "Hemantavarman"
+	religion = "karitkarmaic"
+	culture = "rahikaya"
+	sexuality = bisexual
+
+	1222.7.21 = {
+		birth = yes
+	}
+	1234.7.21 = {
+		trait = deceitful
+		trait = calm
+		trait = zealous
+	}
+	1238.7.21 = {
+		trait = education_intrigue_4
+		trait = gh_historical_reveler_3
+	}
+}
+
+rahikaya_vidvaookeyatra_14 = { # Chief Scholar of the Haryaadad Academy during the Sabar Lambay Raad, slain by the magi-guru Vogib at its end
+    name = "Lajai"
+    religion = "vidvaookeyatra"
+    culture = "rahikaya"
+
+    sexuality = heterosexual
+
+    martial = 5
+    diplomacy = 6
+    stewardship = 9
+    intrigue = 9
+    learning = 6
+    prowess = 8
+
+    787.12.21 = {
+        birth = yes
+        trait = magic_good_9
+        trait = intellect_good_2
+    }
+
+    799.1.1 = {
+        trait = greedy
+        trait = ambitious
+        trait = zealous
+    }
+
+    803.12.21 = {
+        effect = { set_base_arcana = { AMOUNT = 12 } }
+        trait = education_arcana_4
+        trait = gh_historical_school
+        trait = scholar
+    }
+
+   	835.4.20 = {
+		death = {
+			death_reason = death_duel
+			killer = ilahanai_asritayka_1
+		}
+	}
+}

@@ -1,0 +1,10 @@
+﻿atrakar_kikarsagi_aagiokrata_1 = {
+    name = "Ozkan"
+    dynasty = dyn_kikarsag_5
+    religion = "kikarsagi_aagiokrata"
+    culture = "atrakar"
+
+    1228.4.12 = {
+        birth = yes
+    }
+}

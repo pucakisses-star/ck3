@@ -1,0 +1,19 @@
+﻿easternimperial_lifepath_1 = {
+	name = "Caresonnia"
+	religion = "lifepath"
+	culture = "easternimperial"
+	trait = magic_good_4
+	trait = ambitious
+	trait = forgiving
+	trait = arrogant
+	female = yes
+	1111.11.11 = {
+		birth = yes
+	}
+	1128.1.5 = {
+		add_spouse = tasurmad_wardenism_17
+	}
+	1149.10.11 = {
+		death = yes
+	}
+}

@@ -1,0 +1,89 @@
+c_ambrobi = {
+	1200.3.1 = {
+		holder = amaghean_amaghean_aagiokrata_39
+		change_development_level = 3
+	}
+	1239.9.18 = {
+		liege = d_ksakho
+		holder = amaghean_amaghean_aagiokrata_6
+	}
+}
+#c_tsagre = {
+#	1200.3.1 = {
+#		holder = amaghean_amaghean_aagiokrata_39
+#		change_development_level = 4
+#	}
+#	1239.9.18 = {
+#		holder = amaghean_amaghean_aagiokrata_12
+#	}
+#}
+c_borjvita = {
+	1197.8.30 = {
+		holder = amaghean_amaghean_aagiokrata_32
+		change_development_level = 7
+	}
+	1224.9.4 = {
+		liege = k_svanti
+		holder = draneti_izaerto_bosar_7
+	}
+	1250.2.12 = {
+		liege = d_tsnemo
+		holder = draneti_izaerto_bosar_3
+	}
+}
+c_gagri = {
+	1197.8.30 = {
+		holder = amaghean_amaghean_aagiokrata_32
+		change_development_level = 6
+	}
+	1224.9.4 = {
+		liege = k_svanti
+		holder = draneti_izaerto_bosar_7
+	}
+	1250.2.12 = {
+		liege = d_tsnemo
+		holder = draneti_izaerto_bosar_4
+	}
+}
+c_ochmati = {
+	1200.3.1 = {
+		holder = amaghean_amaghean_aagiokrata_39
+		change_development_level = 4
+	}
+	1248.4.9 = {
+		holder = amaghean_amaghean_aagiokrata_11
+		liege = 0
+	}
+}
+c_tbiobi = {
+	1200.3.1 = {
+		holder = charchac_alau_koev_10
+		change_development_level = 4
+	}
+	1224.9.4 = {
+		liege = d_ksagro
+	}
+	1234.5.4 = {
+		# liege = d_menetr # GH TODO: Menetr removed, get a new liege
+	}
+	1250.2.20 = {
+		liege = 0
+		holder = charchac_alau_koev_1
+	}
+}
+c_kameo = {
+	1200.3.1 = {
+		holder = charchac_alau_koev_9
+		change_development_level = 6
+	}
+	1224.9.4 = {
+		liege = d_ksagro
+	}
+	1234.5.4 = {
+		# liege = d_menetr # GH TODO: Menetr removed, get a new liege
+	}
+	1250.2.14 = {
+		liege = d_ksagro
+		holder = charchac_alau_koev_2
+	}
+}

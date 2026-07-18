@@ -1,0 +1,270 @@
+			c_inangodra = {
+				1200.3.1 = {
+					holder = wasteland
+				}
+			}
+			c_kanhala = {
+				1230.1.1 = {
+					holder = watumimba_yakasak_2
+					government = pirate_government
+					change_development_level = 6
+				}
+				1281.2.23 = {
+					holder = watumimba_corkkattirkana_8
+				}
+			}
+			c_lavangur = {
+				1190.1.1 = {
+					holder = yevamarai_aversarinas_aagiokrata_11
+					government = military_unit_government		
+				}
+
+				1200.3.1 = {
+					holder = centralimperial_aversarinas_aagiokrata_130
+					government = military_unit_government
+				}
+
+				1207.6.9 = {
+					holder = easternislander_aversarinas_aagiokrata_7
+					government = military_unit_government
+				}
+
+				1207.7.6 = {
+					holder = centralislander_aversarinas_aagiokrata_3
+					government = military_unit_government
+				}
+				1213.5.7 = {
+					holder = outerislander_aversarinas_aagiokrata_1
+					government = military_unit_government
+				}
+				1232.8.6 = {
+					holder = islander_aversarinas_aagiokrata_15
+					government = military_unit_government
+					change_development_level = 6
+				}				
+			}
+			c_alaruppu = {
+				1190.1.1 = {
+					holder = yevamarai_aversarinas_aagiokrata_11
+					government = military_unit_government		
+				}
+	
+				1200.3.1 = {
+					holder = centralimperial_aversarinas_aagiokrata_130
+					government = military_unit_government
+				}
+				1207.6.9 = {
+					holder = easternislander_aversarinas_aagiokrata_7
+					government = military_unit_government
+				}
+	
+				1207.8.6 = {
+					holder = centralislander_aversarinas_aagiokrata_3
+					government = military_unit_government
+				}
+
+				1209.6.4 = {
+					holder = yayanka_yakasak_1
+					government = pirate_government 
+					change_development_level = 6
+				}
+				1263.7.14 = {
+					holder = watumimba_yakasak_2
+				}
+				1281.2.23 = {
+					holder = watumimba_corkkattirkana_10
+				}
+			}
+			c_polawatta = {
+				1190.1.1 = {
+					holder = yevamarai_aversarinas_aagiokrata_11
+					government = military_unit_government		
+				}
+
+				1200.3.1 = {
+					holder = centralimperial_aversarinas_aagiokrata_130
+					government = military_unit_government
+				}
+				1207.6.9 = {
+					holder = easternislander_aversarinas_aagiokrata_7
+					government = military_unit_government
+				}
+
+				1207.8.6 = {
+					holder = centralislander_aversarinas_aagiokrata_3
+					government = military_unit_government
+				}
+
+				1209.3.1 = {
+					holder = westernimperial_aversarinas_aagiokrata_202
+					government = military_unit_government
+				}
+
+				1213.3.14 = {
+					holder = outerislander_aversarinas_aagiokrata_1
+					government = military_unit_government 
+				}
+				1232.6.6 = {
+					holder = easternislander_aversarinas_aagiokrata_8
+					government = pirate_government
+					change_development_level = 6
+				}
+			}
+			c_jaelwala = {
+				1250.3.10 = {
+					holder = jayakayin_yakasak_4
+				}
+				1254.5.2 = {
+					holder = rethara_yakasak_1
+				}
+				1265.6.8 = {
+					holder = rethara_yakasak_4
+				}
+				1270.7.24 = {
+					holder = jayakayin_yakasak_2
+				}
+				1281.12.11 = {
+					holder = jayakayin_yakasak_5
+				}
+			}
+			c_peliya = { 
+				1179.2.3 = {
+					holder = watumimba_yakasak_4
+					liege = k_spice_cities
+				}
+				1203.11.2 = {
+					holder = watumimba_yakasak_1
+					liege = 0
+				}
+				1228.6.5 = {
+					holder = jayakayin_yakasak_3
+					liege = 0
+				}
+				1246.11.29= {
+					holder = jayakayin_yakasak_2
+					change_development_level = 5
+				}
+				1281.12.11 = {
+					holder = jayakayin_yakasak_5
+				}
+			}
+			c_horutara = {
+				1230.1.1 = {
+					holder = siltwalker_nolosaanyo_1
+					change_development_level = 5
+				}
+				1264.4.27 = {
+					holder = siltwalker_nolosaanyo_4
+				}
+				1270.5.1 = {
+					holder = siltwalker_nolosaanyo_6
+				}
+			}
+			c_badulawela = {
+				1185.11.10 = {
+					holder = watumimba_corkkattirkana_2
+					liege = k_spice_cities
+				}
+				1210.3.19 = {
+					holder = velrika_nolosaanyo_1
+					change_development_level = 4
+					liege = 0
+				}
+				1261.9.27 = {
+					holder = velrika_nolosaanyo_3
+				}
+				1281.1.7 = {
+					holder = velrika_nolosaanyo_5
+				}
+			}
+			c_kattacash = {
+				1230.1.1 = {
+					holder = velrika_yakasak_1
+					government = pirate_government
+					change_development_level = 4
+				}
+			}
+			c_kurinduv = {
+				1230.1.1 = {
+					holder = paradila_yakasak_1
+					government = pirate_government
+					change_development_level = 4
+				}
+				1253.10.8 = {
+					holder = hokanta_vidvaookeyatra_34
+					government = pirate_government
+				}
+			}
+			c_minuratna = {
+				1230.1.1 = {
+					holder = siltwalker_nolosaanyo_2
+					change_development_level = 6
+					government = tribal_government
+				}
+				1259.7.26 = {
+					holder = siltwalker_nolosaanyo_1
+				}
+				1264.4.27 = {
+					holder = siltwalker_nolosaanyo_4
+				}
+				1270.5.1 = {
+					holder = siltwalker_nolosaanyo_6
+				}
+			}
+			c_hayolatt = {
+				778.1.3 = {
+					holder = watumimba_corkkattirkana_32
+				}
+				788.10.6 = {
+					holder = watumimba_corkkattirkana_34
+				}
+				801.11.29 = {
+					holder = watumimba_corkkattirkana_36
+				}
+				818.7.22 = {
+					holder = watumimba_corkkattirkana_37
+				}
+				820.2.1 = {
+					holder = watumimba_corkkattirkana_38
+				}
+				820.10.3 = { 
+					holder = watumimba_corkkattirkana_39
+				}
+				847.3.1 = {
+					holder = watumimba_corkkattirkana_45
+				}
+				1184.5.20 = {
+					holder = watumimba_yakasak_5
+					government = administrative_republic_playable_government
+				}
+				1193.7.15 = {
+					holder = watumimba_yakasak_4
+					government = administrative_republic_playable_government
+				}
+				1203.11.2 = {
+					holder = watumimba_corkkattirkana_2
+					government = administrative_republic_playable_government
+				}
+				1228.1.1 = {
+					holder = dadkawji_nolosaanyo_1
+					change_development_level = 18
+					government = republic_playable_government
+					succession_laws = { clique_republic_elective_title_succession_law }
+				}
+			}
+			c_matalanar = {
+				1230.1.1 = {
+					holder = paradila_nolosaanyo_1
+					government = republic_playable_government
+					succession_laws = { clique_republic_elective_title_succession_law }
+					change_development_level = 6
+				}
+			}
+			c_bolyanda = {
+				1230.1.1 = {
+					holder = paradila_nolosaanyo_1
+					government = republic_playable_government
+					succession_laws = { clique_republic_elective_title_succession_law }
+					change_development_level = 7
+				}
+			}

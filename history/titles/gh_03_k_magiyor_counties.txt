@@ -1,0 +1,128 @@
+c_nekhirachi = {
+	1237.7.23 = {
+		holder = vastarnai_vidvaookeyatra_9
+	}
+	1253.12.27 = {
+		holder = vastarnai_vidvaookeyatra_1
+		change_development_level = 18
+	}
+}
+c_barucheru = {
+	1251.1.1 = {
+		holder = vaxanaka_vidvaookeyatra_3
+		liege = d_jhenagaon
+		change_development_level = 9
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+}
+c_rehlaru = {
+	1200.3.1 = {
+		holder = sakankra_vidvaookeyatra_23
+		liege = d_eshkatabad
+		change_development_level = 8
+	}
+	1253.3.19 = {
+		holder = sakankra_vidvaookeyatra_26
+		liege = d_eshkatabad
+	}  
+}
+c_kibagora = {
+  1200.3.1 = {
+		holder = sakankra_vidvaookeyatra_23
+		liege = d_eshkatabad
+		change_development_level = 8
+	}
+	1253.3.19 = {
+		holder = sakankra_vidvaookeyatra_27
+		liege = d_eshkatabad
+	}	
+}
+c_lunga = {
+  1200.3.1 = {
+		holder = adani_nabbarek_1
+		change_development_level = 8
+	}
+	1220.9.19 = {
+		holder = adani_vidvaookeyatra_1
+		liege = d_eshkatabad
+	}	 
+}
+c_hipperthu = {
+  1200.3.1 = {
+		holder = adani_nabbarek_1
+		change_development_level = 8
+	}
+	1220.9.19 = {
+		holder = adani_vidvaookeyatra_2
+		liege = d_eshkatabad
+	}	 
+}
+c_injar = {
+	1250.1.1 = {
+		holder = latur_ebohephai_olten_1
+		liege = k_magiyor
+		change_development_level = 7
+		government = nomad_government
+	}
+}
+c_huragaon = {
+	1250.1.1 = {
+		holder = latur_ebohephai_olten_1
+		liege = k_magiyor
+		government = nomad_government
+	}
+}
+c_ambalshira = {
+	1250.1.1 = {
+		holder = xasamdaas_ebohephai_olten_1
+		liege = k_magiyor	  
+		government = nomad_government
+	}
+}
+c_kharenga = {
+	1250.1.1 = {
+		holder = nargul_ebohephai_olten_2
+		liege = k_magiyor	 
+		government = nomad_government 
+	}
+}
+c_potamshepur = {
+	1197.4.16 = {
+		holder = paidem_vidvaookeyatra_1
+		change_development_level = 8
+	}
+	1239.11.14 = {
+		holder = paidem_vidvaookeyatra_3
+		change_development_level = 8
+	}	  
+}
+c_mandaparagh = {
+	1148.10.11 = {
+		holder = hokanta_vidvaookeyatra_16
+	}
+	1150.3.2 = {
+		holder = virlani_vidvaookeyatra_2
+		liege = k_kinilam
+	}
+	1199.6.16 = {
+		holder = virlani_vidvaookeyatra_4
+		liege = k_kinilam
+	}
+
+	1248.4.22 = {
+		holder = vaxanaka_vidvaookeyatra_4
+		liege = k_kinilam
+		change_development_level = 12
+	}
+}

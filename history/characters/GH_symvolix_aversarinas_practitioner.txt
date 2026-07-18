@@ -1,0 +1,25 @@
+﻿symvolix_aversarinas_practitioner_1 = {
+    name = "Eustathios"
+    religion = aversarinas_practitioner
+    culture = symvolix
+    trait = shrewd
+    1228.1.12 = {
+        birth = yes
+        trait = magic_good_2
+    }
+
+    1240.1.12 = {
+        trait = arbitrary
+        trait = paranoid
+        trait = fickle
+    }
+    
+    1244.1.12 = {
+        trait = education_learning_3
+        trait = gh_historical_school
+        effect = {
+            set_variable = { name = historical_magic_school value = flag:silentspeak }
+            set_variable = { name = historical_magic_school_min_spells value = 6 }
+        }
+    }
+}

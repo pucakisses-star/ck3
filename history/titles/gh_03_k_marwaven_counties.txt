@@ -1,0 +1,114 @@
+c_hakkuyid = {
+	1193.4.1 = {
+		holder = lawgiri_xwestrozen_2
+#		liege = d_erziqer
+	}
+	1212.1.1 = {
+		holder = aiyqarbkhiyl_ahridar_6
+		liege = k_aekershaan
+	}
+	1250.1.1 = {
+		holder = maebalah_mukaasubat_05
+	}
+}
+#c_hakkinan = {
+#	1212.1.1 = {
+#		holder = aiyqarbkhiyl_ahridar_6
+#		liege = k_aekershaan
+#	}
+#	1250.1.1 = {
+#		holder = maebalah_mukaasubat_05
+#	}
+#}
+c_daysadid = {
+	1214.1.1 = {
+		holder = aiyqarbkhiyl_ahridar_7
+		liege = k_aekershaan
+	}
+	1250.1.1 = {
+		holder = maebalah_mukaasubat_05
+	}
+}
+c_aishanol = {
+	1214.1.1 = {
+		holder = aiyqarbkhiyl_ahridar_8
+		liege = k_aekershaan
+	}
+}
+c_saraboy = {
+	1214.1.1 = {
+		holder = aiyqarbkhiyl_ahridar_9
+		liege = k_aekershaan
+	}
+	1229.1.1 = {
+		holder = maebalah_mukaasubat_05
+	}
+}
+c_baridya = {
+	1198.4.23 = {
+		holder = lawgiri_xwestrozen_4
+		liege = k_sinasan
+	}
+	1217.3.28 = {
+		holder = aiyqarbkhiyl_ahridar_2
+	}
+	1250.1.1 = {
+		holder = maebalah_mukaasubat_05
+	}
+}
+c_bingost = {
+	1200.3.1 = {
+		holder = lawgiri_xwestrozen_5
+		liege = d_xurelok
+	}
+	1214.1.1 = {
+		holder = aiyqarbkhiyl_ahridar_9
+		liege = k_aekershaan
+	}
+	1229.1.1 = {
+		holder = maebalah_mukaasubat_05
+	}
+}
+c_hazron = {
+	1234.12.12 = {
+		liege = 0
+		government = migratory_government
+		holder = utyalid_wardenism_16
+		change_development_level = 2
+	}
+}
+c_sasalan = {
+	1194.10.15 = {
+		holder = lawgiri_xwestrozen_6
+		liege = k_sinasan
+	}
+	1228.1.1 = {
+		holder = maebalah_mukaasubat_05
+	}
+}
+c_hazranid = {
+	1200.1.1 = {
+		holder = kirinarth_xwestrozen_104
+		liege = d_erziwas
+	}
+	1216.1.2 = {
+		holder = kirinarth_stranuni_1
+	}
+}
+c_tuyyadid = {
+	1200.1.1 = {
+		holder = kirinarth_xwestrozen_104
+	}
+	1216.1.2 = {
+		holder = kirinarth_stranuni_1
+	}
+}
+c_bradiks = {
+	1200.3.1 = {
+		holder = lawgiri_xwestrozen_8
+		liege = k_sinasan
+	}
+	1228.1.1 = {
+		holder = maebalah_mukaasubat_05
+	}
+}

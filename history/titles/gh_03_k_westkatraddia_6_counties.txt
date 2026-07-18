@@ -1,0 +1,102 @@
+
+c_westkatraddia_11ii = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1.1.2 = {
+		holder = unsorted_1000
+	}
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_9aa = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1.1.2 = {
+		holder = unsorted_1000
+	}
+	1.1.2 = {
+		holder = unsorted_1000
+	}
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_11cc = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	764.1.1 = {
+		holder = centralimperial_aversarinas_aagiokrata_28
+	}
+	784.9.1 = {
+		holder = wasteland
+	}
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_12ff = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_11ee = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1.1.2 = {
+		holder = unsorted_1000
+	}
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_11dd = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1.1.2 = {
+		holder = unsorted_1000
+	}
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_12aa = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1.1.2 = {
+		holder = unsorted_1000
+	}
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}

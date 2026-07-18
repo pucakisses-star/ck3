@@ -1,0 +1,20 @@
+﻿erimatos_calysto_1 = { # Sponsored by the Calystoan holy order, take the crater rim isles from the weakened Sinasan kingdom, and goes to town from there
+	name = "Alkinoos"
+	religion = calysto
+	culture = erimatos
+	1194.5.2 = {
+		birth = yes
+	}
+	1210.5.2 = {
+		trait = greedy
+		trait = ambitious
+		trait = wrathful
+		trait = education_martial_3
+	}
+	1243.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = tasurmad_harthahi_1
+		}
+	}
+}

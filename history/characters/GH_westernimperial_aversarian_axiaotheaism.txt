@@ -1,0 +1,170 @@
+﻿westernimperial_aversarian_axiaotheaism_1 = { # Kydos
+	name = "Aevreas" #Renamed from Andreas
+	religion = "aversarian_axiaotheaism"
+	culture = "westernimperial"
+	father = westernimperial_aversarian_axiaotheaism_2
+	mother = westernimperial_aversarian_axiaotheaism_3
+	dynasty = dyn_kydone
+
+	1211.6.18 = {
+		birth = yes
+        effect = {
+            dynasty = { add_dynasty_prestige_level = 2 }
+        }
+	}
+
+	1263.6.2 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+westernimperial_aversarian_axiaotheaism_2 = {
+	name = "Diodoros"
+	religion = "aversarian_axiaotheaism"
+	culture = "westernimperial"
+	dynasty = dyn_kydone
+
+	1160.6.18 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_suicide
+		}
+	}
+}
+
+westernimperial_aversarian_axiaotheaism_3 = {
+	name = "Chersis"
+	religion = "aversarian_axiaotheaism"
+	culture = "westernimperial"
+	female = yes
+
+	1160.6.18 = {
+		birth = yes
+		add_spouse = westernimperial_aversarian_axiaotheaism_2
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_murder
+			killer = westernimperial_aversarian_axiaotheaism_2
+		}
+	}
+}
+
+westernimperial_aversarian_axiaotheaism_4 = {
+	name = "Kephalon"
+	religion = "aversarian_axiaotheaism"
+	culture = "westernimperial"
+	father = westernimperial_aversarian_axiaotheaism_2
+	mother = westernimperial_aversarian_axiaotheaism_3
+	dynasty = dyn_kydone
+
+	1222.6.18 = {
+		birth = yes
+	}
+}
+
+westernimperial_aversarian_axiaotheaism_5 = { # Axiaotheist warlord in Imperial Isle, claims to have killed Aeschraes
+	name = "Akakios"
+	religion = "aversarian_axiaotheaism"
+	culture = "westernimperial"
+	dynasty = dyn_aversaria_western_isle_9
+	father = westernimperial_aversarian_axiaotheaism_6
+	mother = westernimperial_aversarian_axiaotheaism_7
+
+	diplomacy = 4
+	martial = 5
+	stewardship = 5
+	intrigue = 6
+	learning = 5
+
+	1212.6.18 = {
+		birth = yes
+		trait = magic_good_5
+	}
+	1224.6.18 = {
+		trait = trusting
+		trait = zealous
+		trait = arrogant
+	}
+	1228.6.18 = {
+		trait = education_intrigue_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+	1232.1.11 = {
+		give_nickname = nick_ash_killer
+	}
+
+	1265.3.10 = {
+		death = { death_reason = death_ill }
+	}
+}
+
+westernimperial_aversarian_axiaotheaism_6 = {
+	name = "Mecistios"
+	religion = "aversarian_axiaotheaism"
+	culture = "westernimperial"
+	father = westernimperial_aversarinas_aagiokrata_200
+	mother = westernimperial_aversarinas_aagiokrata_201
+	dynasty = dyn_aversaria_western_isle_9
+
+	1177.2.8 = {
+		birth = yes
+	}
+
+	1205.1.1 = {
+		add_spouse = westernimperial_aversarian_axiaotheaism_7
+	}
+
+	1244.1.1 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+westernimperial_aversarian_axiaotheaism_7 = {
+	name = "Antheia"
+	religion = "aversarian_axiaotheaism"
+	culture = "westernimperial"
+	female = yes
+
+	1186.6.18 = {
+		birth = yes
+	}
+}
+
+westernimperial_aversarian_axiaotheaism_8 = { # GH: was sidalos_1
+	name = "Theodoulos"
+	religion = "aversarian_axiaotheaism"
+	culture = "westernimperial"
+
+	1230.6.18 = {
+		birth = yes
+	}
+}
+
+westernimperial_aversarian_axiaotheaism_9 = { # Conquered by lmao legion
+	name = "Lysikles"
+	religion = "aversarian_axiaotheaism"
+	culture = "westernimperial"
+	dynasty = dyn_aversaria_western_isle_11
+
+	1184.1.1 = {
+		birth = yes
+	}
+
+	1254.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = westernimperial_aversarinas_aagiokrata_155
+		}
+	}
+}

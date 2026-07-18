@@ -1,0 +1,13 @@
+﻿konijkmener_coastpath_1 = {
+	name = "Aagerijk"
+	religion = "coastpath"
+	culture = "konijkmener"
+
+	1226.2.23 = {
+		birth = yes
+	}
+
+	1287.7.13 = {
+		death = { death_reason = death_vanished }
+	}
+}

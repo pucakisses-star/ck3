@@ -1,0 +1,40 @@
+c_northern_katraddia_24 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_northern_katraddia_27 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_northern_katraddia_29 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_northern_katraddia_20 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_northern_katraddia_21 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_northern_katraddia_31 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_northern_katraddia_28 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_northern_katraddia_19 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

@@ -1,0 +1,40 @@
+﻿skausmas_dejorig_1 = {
+	name = "Polasek" #Podlezl
+	religion = "dejorig"
+	culture = "skausmas"
+	father = skausmas_oirigan_1
+
+	trait = peasant_leader
+	trait = twin
+
+	1252.1.1 = {
+		birth = yes
+	}
+}
+
+skausmas_dejorig_2 = {
+	name = "Olisaj" #Alexej
+	religion = "dejorig"
+	culture = "skausmas"
+	father = skausmas_oirigan_1
+
+	trait = peasant_leader
+	trait = twin
+
+	1252.1.1 = {
+		birth = yes
+	}
+}
+
+skausmas_dejorig_3 = {
+	name = "Jarosaj" #Jaros
+	dynasty = dyn_samojitian_1
+	religion = "dejorig"
+	culture = "skausmas"
+	father = mineris_dejorig_5
+	trait = peasant_leader
+
+	1237.1.1 = {
+		birth = yes
+	}
+}

@@ -1,0 +1,23 @@
+#d_goshte_sofla = { 
+#	1250.1.1 = { 
+#		holder = amsari_mahndayana_6
+#		liege = e_amsari
+#	}
+#	1230.1.1 = { change_development_level = 15 }
+#}
+d_gerd_mehdiabad = { 
+	1187.9.13 = { 
+		holder = amsari_mahndayana_500
+		liege = e_amsari
+	}
+	1200.3.1 = { 
+		holder = amsari_mahndayana_504
+		liege = e_amsari
+	}
+	1230.1.1 = { change_development_level = 20 }	
+	1251.1.1 = { 
+		holder = amsari_mahndayana_506
+		liege = e_amsari
+	}
+}
+

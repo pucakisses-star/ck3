@@ -1,0 +1,55 @@
+﻿talareg_sjalvolki_1 = { # The Last Talareg
+	name = "Boelufwu"
+	religion = "sjalvolki"
+	culture = "talareg"
+	dynasty = dyn_talareg_1
+
+	sexuality = heterosexual
+
+	martial = 8
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 7
+	learning = 5
+	prowess = 6
+
+	1204.7.13 = {
+		birth = yes
+		trait = intellect_good_1
+		trait = magic_good_4
+	}
+
+	1216.1.1 = {
+		trait = brave
+		trait = honest
+		trait = cynical
+	}
+
+	1220.7.13 = {
+		trait = education_diplomacy_3
+		trait = adventurer
+		trait = gh_historical_blademaster_1
+	}
+
+	1244.3.2 = { # Mayik Raid
+		trait = eccentric
+	}
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_sjalvolki
+		effect = {
+			create_character_memory = { # Battle of the Elysian Pass
+				type = fought_in_elysian_pass_sjalvolki
+			}
+			add_dread = 40
+		}
+	}
+}

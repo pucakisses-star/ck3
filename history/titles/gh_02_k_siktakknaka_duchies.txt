@@ -1,0 +1,6 @@
+
+#d_izzinarra = {
+#	1249.2.16 = {
+#		holder = redrunner_aversarinas_aagiokrata_10
+#	}
+#}

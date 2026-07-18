@@ -1,0 +1,15 @@
+d_epicheirisi = {
+	1250.1.1 = {
+		change_development_level = 6
+	}
+}
+d_pistmata = {
+	1250.1.1 = {
+		change_development_level = 7
+	}
+}
+d_namestria = {
+	1250.1.1 = {
+		change_development_level = 7
+	}
+}

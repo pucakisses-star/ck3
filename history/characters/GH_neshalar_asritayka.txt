@@ -1,0 +1,174 @@
+﻿neshalar_asritayka_1 = { # Asojiva, legendary Kashiryan emperor that slew the Lich Holkkarak and founded the Taryaad Saramsaasan
+    name = "Asojiva"
+    religion = "asritayka"
+    culture = "neshalar"
+
+    dynasty = dyn_taryaad_1
+    sexuality = bisexual
+    dna = asojiva
+
+    martial = 9
+    diplomacy = 7
+    stewardship = 8
+    intrigue = 9
+    learning = 8
+    prowess = 7
+
+    876.3.21 = {
+        birth = yes
+        trait = intellect_good_3
+        trait = magic_good_5
+    }
+
+    888.1.1 = {
+        trait = ambitious
+        trait = gregarious
+        trait = temperate
+    }
+
+    892.3.21 = {
+        effect = { set_base_arcana = { AMOUNT = 8 } }
+        trait = education_diplomacy_5
+        trait = theologian
+        trait = diplomat
+    }
+
+    904.1.27 = { # Defeated Holkkarak
+        trait = shrewd
+        trait = gh_historical_blademaster_1
+        trait = august
+    }    
+
+    945.2.7 = {
+        death = {
+            death_reason = death_old_age
+        }
+    }
+}
+
+neshalar_asritayka_2 = { # son of Asojiva
+    name = "Indahim"
+    religion = "asritayka"
+    culture = "neshalar"
+
+    dynasty = dyn_taryaad_1
+    sexuality = homosexual
+
+    father = neshalar_asritayka_1
+
+    martial = 9
+    diplomacy = 3
+    stewardship = 8
+    intrigue = 5
+    learning = 5
+    prowess = 3
+
+    904.6.19 = {
+        birth = yes
+        trait = intellect_good_2
+        trait = magic_good_4
+    }
+
+    916.1.1 = {
+        trait = zealous
+        trait = trusting
+        trait = temperate
+    }
+
+    920.6.19 = {
+        effect = { set_base_arcana = { AMOUNT = 5 } }
+        trait = education_diplomacy_4
+        trait = diplomat
+    }
+
+    972.7.12 = {
+        death = {
+            death_reason = death_old_age
+        }
+    }
+}
+
+neshalar_asritayka_3 = { # grandson of Asojiva and Chutagrat's father, his disputed heritage being uncovered led to the Vaarash
+    name = "Karasha"
+    religion = "asritayka"
+    culture = "neshalar"
+
+    dynasty = dyn_taryaad_1
+    sexuality = heterosexual
+
+    father = neshalar_asritayka_2
+
+    martial = 5
+    diplomacy = 10
+    stewardship = 6
+    intrigue = 10
+    learning = 6
+    prowess = 7
+
+    941.3.16 = {
+        birth = yes
+        trait = disputed_heritage
+        trait = magic_good_2
+    }
+
+    953.1.1 = {
+        trait = fickle
+        trait = gregarious
+        trait = cynical
+    }
+
+    957.3.16 = {
+        effect = { set_base_arcana = { AMOUNT = 3 } }
+        trait = education_martial_2
+        trait = gallant
+        trait = strong
+    }
+
+    1004.1.23 = {
+        death = {
+            death_reason = death_old_age
+        }
+    }
+}
+
+neshalar_asritayka_4 = { # great-grandson of Asojiva, last ruler of the Taryaad Saramsaasan
+    name = "Chutagrat"
+    religion = "asritayka"
+    culture = "neshalar"
+
+    dynasty = dyn_taryaad_1
+    sexuality = heterosexual
+    dna = chutagrat
+
+    father = neshalar_asritayka_3
+
+    martial = 7
+    diplomacy = 7
+    stewardship = 9
+    intrigue = 8
+    learning = 7
+    prowess = 7
+
+    980.5.7 = {
+        birth = yes
+        trait = magic_good_1
+    }
+
+    992.1.1 = {
+        trait = impatient
+        trait = arrogant
+        trait = greedy
+    }
+
+    996.3.16 = {
+        effect = { set_base_arcana = { AMOUNT = 5 } }
+        trait = education_stewardship_3
+        trait = avaricious
+    }
+
+    1024.5.9 = { # End of the Vaarash
+        death = {
+            death_reason = death_assassination
+        }
+    }
+}

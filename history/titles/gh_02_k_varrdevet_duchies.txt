@@ -1,0 +1,84 @@
+#d_montmoyedgne = {
+#	884.1.1 = { #Put down a gallien uprising
+#		holder = voyagen_lifepath_37 #Widen den va Seignon
+#	}
+#	890.1.2 = {
+#		holder = voyagen_lifepath_38 #Louise den va Seignon
+#	}
+#	902.2.22 = {
+#		holder = voyagen_lifepath_39 #Gardfrei den va Seignon
+#	}
+#	934.5.6 = {
+#		holder = 0
+#	}
+#	1230.1.1 = { 
+#		change_development_level = 6 
+#	}
+#	1253.1.1 = {
+#		liege = "k_de_porte_de_bastione"
+#		holder = trustians_lifepath_4
+#	}
+#}
+d_devex = {
+	875.1.1 = {
+		holder = salisians_lifepath_13 #Gofrei Monteaux
+	}
+	933.3.24 = {
+		holder = 0
+	}
+	934.1.1 = { #Very shortlived occupation
+		holder = voyagen_lifepath_39 #Gardfrei den va Seignon
+	}
+	934.5.6 = {
+		holder = 0
+	}
+	1215.4.1 = {
+		liege = "e_chevalie"
+		holder = trustians_lifepath_29
+	}
+	1253.11.12 = {
+		liege = "k_varrdevet"
+		holder = trustians_lifepath_7
+	}
+	1230.1.1 = { 
+		change_development_level = 3 
+	}
+}
+d_ferrond = {
+	1.1.2 = {
+		holder = unsorted_24
+	}
+	60.1.1 = {
+		holder = 0
+	}
+	1215.4.1 = {
+		liege = "e_chevalie"
+		holder = trustians_lifepath_29
+	}
+	1253.11.12 = {
+		liege = "k_varrdevet"
+		holder = trustians_lifepath_7
+	}
+	1230.1.1 = { change_development_level = 2 }
+}
+
+d_soleilienne = {
+	1253.1.1 = {
+		holder = voyagen_lifepath_9
+	}
+}
+
+d_feinde = {
+	593.8.18 = {
+		holder = trustians_lifepath_27
+	}
+	623.6.8 = {
+		holder = trustians_lifepath_26
+	}
+	631.5.15 = {
+		holder = 0
+	}
+	1230.1.1 = { 
+		change_development_level = 3 
+	}
+}

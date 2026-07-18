@@ -1,0 +1,192 @@
+﻿shewigad_starvayrd_1 = {
+	name = "Bastione" # Bastione
+	martial = 11
+	diplomacy = 9
+	intrigue = 7
+	stewardship = 9
+	learning = 8
+	dna = shewigad_starvayrd_1
+	religion = "starvayrd"
+	culture = "shewigad"
+
+	dynasty = dyn_marcher_15
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_rtt_02
+			custom_beards = male_beard_western_08
+		}
+	}
+
+	0.2.2 = {
+		birth = yes
+		trait = physique_good_3
+		trait = intellect_good_3
+	}
+
+	12.1.1 = {
+		trait = patient
+		trait = just
+		trait = ambitious
+	}
+
+	16.2.2 = {
+		trait = education_martial_4
+		trait = gh_historical_blademaster_3
+		trait = gh_historical_track_hunter_4
+	}
+
+	39.1.11 = {
+		give_nickname = nick_good_king
+		trait = gh_chevalie_uniter_og
+	}
+
+	85.1.12 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+shewigad_starvayrd_2 = {
+	name = "Vercigex" # Vercigex
+	dna = vercigex
+	religion = "starvayrd"
+	culture = "shewigad"
+	dynasty = dyn_marcher_14
+
+	martial = 5
+	diplomacy = 5
+	intrigue = 4
+	stewardship = 11
+	learning = 14	
+
+	13.7.15 = {
+		birth = yes
+		trait = intellect_good_3
+		trait = magic_good_4
+	}
+
+	25.1.1 = {
+		trait = patient
+		trait = diligent
+		trait = chaste
+	}
+
+	29.7.15 = {
+		trait = education_stewardship_4
+		trait = gh_historical_physician_3
+		trait = reclusive
+		trait = inappetetic
+		trait = depressed_1
+		trait = way_of_crows_follower
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	139.2.11 = {
+		death = {
+			death_reason = death_murder
+			killer = shewigad_starvayrd_3 # Inian Wisestar
+		}
+	}
+}
+
+shewigad_starvayrd_3 = { # Inian Wisestar, Viceroy of the West and Founder of Peti Gisredde
+	name = "Inian"
+	dna = inian
+	dynasty = dyn_marcher_28
+	religion = "starvayrd"
+	culture = "shewigad"
+	disallow_random_traits = yes
+	
+	martial = 7
+	diplomacy = 7
+	stewardship = 8
+	intrigue = 3
+	learning = 7
+	prowess = 5
+
+	59.11.1 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+
+	71.1.1 = {
+		trait = deceitful
+		trait = sadistic
+		trait = ambitious
+	}
+
+	75.11.1 = {
+		trait = education_intrigue_4
+		trait = way_of_justice_follower
+		trait = schemer
+	}
+
+	100.1.1 = {
+		give_nickname = nick_wisestar
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	144.1.30 = {
+		death = {
+			death_reason = death_assassination
+		}
+	}
+}
+
+shewigad_starvayrd_4 = { # Mical Wisestar
+	name = "Mical"
+	dna = mical
+	dynasty = dyn_marcher_28
+	religion = "starvayrd"
+	culture = "shewigad"
+	disallow_random_traits = yes
+
+	father = shewigad_starvayrd_3
+	
+	martial = 7
+	diplomacy = 7
+	stewardship = 8
+	intrigue = 8
+	learning = 7
+	prowess = 5
+
+	91.1.10 = {
+		birth = yes
+	}
+
+	103.1.1 = {
+		trait = arrogant
+		trait = wrathful
+		trait = impatient
+	}
+
+	107.1.10 = {
+		trait = education_stewardship_2
+		trait = way_of_crowns_follower
+	}
+
+	147.1.1 = {
+		give_nickname = nick_wisestar
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	157.3.25 = {
+		death = {
+			death_reason = death_malnourishment
+		}
+	}
+}

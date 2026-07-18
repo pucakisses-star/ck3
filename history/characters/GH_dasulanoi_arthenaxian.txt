@@ -1,0 +1,20 @@
+﻿
+
+dasulanoi_arthenaxian_2 = {
+    name = "Tursikina"
+    religion = arthenaxian
+    culture = dasulanoi
+    trait = shrewd
+    1210.8.25 = {
+        birth = yes
+    }
+    1222.8.25 = {
+        trait = stubborn
+        trait = gregarious
+        trait = honest
+    }
+    1226.8.25 = {
+        trait = education_diplomacy_4
+        set_relation_rival = character:dasulanoi_theryionist_1
+    }
+}

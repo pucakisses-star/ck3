@@ -1,0 +1,341 @@
+﻿makryenis_thysia_1 = {
+	name = "Pelagios"
+	dna = makryenis_thysia_1
+	religion = "thysia"
+	culture = "makryenis"
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_09
+			custom_beards = male_beard_western_05
+		}
+	}
+
+	1202.11.12 = {
+		birth = yes
+			trait = intellect_good_1
+	}
+
+	1214.1.1 = {
+		trait = sadistic
+		trait = patient
+		trait = shy
+	}
+
+	1218.11.12 = {
+		trait = torturer
+		trait = scholar
+		trait = education_learning_4
+		trait = reclusive
+		trait = gh_historical_physician_3
+	}
+}
+
+makryenis_thysia_2 = {
+	name = "Sabarus"
+	religion = "thysia"
+	culture = "makryenis"
+
+	1222.6.12 = {
+		birth = yes
+	}
+
+	1234.1.1 = {
+		trait = greedy
+		trait = callous
+		trait = patient
+	}
+
+	1238.6.12 = {
+		trait = education_stewardship_4
+		trait = gh_historical_physician_1
+	}
+}
+
+makryenis_thysia_3 = {
+	name = "adrastea"
+	religion = "thysia"
+	culture = "makryenis"
+	female = yes
+
+	1229.3.29 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1241.1.1 = {
+		trait = callous
+		trait = arrogant
+		trait = zealous
+	}
+
+	1245.3.29 = {
+		trait = scholar
+		trait = theologian
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+}
+
+makryenis_thysia_4 = {
+	name = "Aniketos"
+	religion = "thysia"
+	culture = "makryenis"
+
+	1201.3.17 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1213.1.1 = {
+		trait = sadistic
+		trait = lustful
+		trait = arbitrary
+	}
+
+	1217.3.17 = {
+		trait = scholar
+		trait = education_learning_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+
+	1224.1.1 = {
+		trait = torturer
+		trait = deviant
+	}
+}
+
+makryenis_thysia_5 = {
+	name = "delphike"
+	religion = "thysia"
+	culture = "makryenis"
+	female = yes
+
+	1237.6.18 = {
+		birth = yes
+	}
+}
+
+makryenis_thysia_6 = {
+	name = "Anthousa"
+	religion = "thysia"
+	culture = "makryenis"
+	female = yes
+
+	1231.6.18 = {
+		birth = yes
+	}
+}
+
+makryenis_thysia_7 = {
+	name = "Hypatia"
+	religion = "thysia"
+	culture = "makryenis"
+	female = yes
+
+	1231.6.6 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1243.1.1 = {
+		trait = craven
+		trait = ambitious
+		trait = temperate
+	}
+
+	1247.6.6 = {
+		trait = scholar
+		trait = gh_historical_physician_2
+		trait = education_learning_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+}
+
+makryenis_thysia_8 = {
+	name = "Bisaltes"
+	religion = "thysia"
+	culture = "makryenis"
+
+	1236.6.18 = {
+		birth = yes
+		trait = intellect_good_2
+	}
+
+	1248.1.1 = {
+		trait = zealous
+		trait = diligent
+		trait = compassionate
+	}
+
+	1252.6.18 = {
+		trait = education_learning_3
+		trait = gh_historical_physician_3
+	}
+}
+
+makryenis_thysia_9 = {
+	name = "Apollophanes"
+	religion = "thysia"
+	culture = "makryenis"
+
+	1227.6.18 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1239.1.1 = {
+		trait = zealous
+		trait = diligent
+		trait = callous
+	}
+
+	1242.6.18 = {
+		trait = education_learning_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+		trait = gh_historical_physician_1
+	}
+}
+
+makryenis_thysia_10 = {
+	name = "Callimorphus"
+	religion = "thysia"
+	culture = "makryenis"
+
+	1219.6.18 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1231.1.1 = {
+		trait = cynical
+		trait = temperate
+		trait = patient
+	}
+
+	1235.6.18 = {
+		trait = education_intrigue_3
+		trait = gh_historical_physician_1
+	}
+}
+
+makryenis_thysia_11 = {
+	name = "Zenobia"
+	religion = "thysia"
+	culture = "makryenis"
+	female = yes
+
+	1211.6.18 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1223.1.1 = {
+		trait = sadistic
+		trait = calm
+		trait = diligent
+	}
+
+	1227.6.18 = {
+		trait = gh_historical_physician_2
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+makryenis_thysia_12 = {
+	name = "Ascanius"
+	religion = "thysia"
+	culture = "makryenis"
+
+	1216.6.18 = {
+		birth = yes
+	}
+}
+
+makryenis_thysia_13 = {
+	name = "Chrysogone"
+	religion = "thysia"
+	culture = "makryenis"
+	female = yes
+
+	1235.6.18 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1247.1.1 = {
+		trait = arrogant
+		trait = callous
+		trait = stubborn
+	}
+
+	1251.6.18 = {
+		trait = scholar
+		trait = education_stewardship_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+		trait = gh_historical_physician_2
+	}
+}
+
+makryenis_thysia_14 = {
+	name = "Gronkos"
+	religion = "thysia"
+	culture = "makryenis"
+
+	1227.5.6 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1239.1.1 = {
+		trait = zealous
+		trait = sadistic
+		trait = arbitrary
+	}
+
+	1243.5.6 = {
+		trait = education_martial_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+		trait = gh_historical_physician_1
+		trait = gh_historical_blademaster_1
+	}
+}
+
+makryenis_thysia_15 = {
+	name = "Corydon"
+	religion = "thysia"
+	culture = "makryenis"
+
+	1230.6.18 = {
+		birth = yes
+	}
+}

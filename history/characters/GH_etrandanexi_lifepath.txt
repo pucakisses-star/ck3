@@ -1,0 +1,798 @@
+﻿etrandanexi_lifepath_1 = {	# Marcomer 'the Hesitant', first and only High King of the Reach
+	name = "Marcomer"
+	religion = "lifepath"
+	culture = "etrandanexi"
+	
+	martial = 12
+	diplomacy = 10
+	intrigue = 2
+	stewardship = 5
+	learning = 6
+	prowess = 10
+
+	346.8.14 = {
+		birth = yes
+		trait = magic_good_1
+		trait = intellect_good_1
+	}
+	358.1.1 = {
+		trait = humble
+		trait = content
+		trait = brave
+		trait = shrewd
+	}
+	362.8.14 = {
+		trait = education_martial_4
+		trait = forest_fighter
+	}
+	370.1.1 = {
+		trait = strategist
+	}
+	381.10.5 = {
+		give_nickname = nick_the_hesitant
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+	387.2.12 = {
+		trait = scarred
+	}
+	409.2.28 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+etrandanexi_lifepath_2 = {
+	name = "RoudE_rix"
+	religion = lifepath
+	culture = etrandanexi
+
+	1210.10.25 = {
+		birth = yes
+	}
+
+	1254.1.1 = {
+		effect = { add_character_flag = holdover_in_old_lands } 
+	}
+}
+
+etrandanexi_lifepath_3 = {	# Clothar I, first etrandanexi king of Faegift and slayer of the dragon Tyrandax
+	name = "Clothar"
+	
+	#dynasty = dyn_etrandexi_1 #Does not exist
+	religion = "lifepath"
+	culture = "etrandanexi"
+	
+	martial = 10
+	diplomacy = 6
+	intrigue = 12
+	stewardship = 4
+	learning = 8
+	prowess = 12
+
+	139.4.5 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+	151.1.1 = {
+		trait = eccentric
+		trait = ambitious
+		trait = brave
+	}
+	155.4.5 = {
+		trait = education_martial_3
+	}
+	184.5.7 = {
+		add_spouse = dailennir_kathanouxiac_16	# Aedre, last surviving member of the house of Rhuvain
+	}
+	215.2.20 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+etrandanexi_lifepath_5 = {	# Rudohar, king of Faegift
+	name = "Rudohar" 
+
+	#dynasty = dyn_etrandexi_1 #Does not exist
+	religion = starvayrd
+	culture = shewigad
+
+	father = etrandanexi_lifepath_3
+	mother = dailennir_kathanouxiac_16
+
+	sexuality = heterosexual
+
+	trait = lazy
+	trait = arbitrary
+	trait = generous
+
+	diplomacy = 4
+	martial = 8
+	stewardship = 4
+	intrigue = 6
+	learning = 7
+	prowess = 6
+
+	trait = education_martial_3
+
+	190.10.25 = {
+	birth = yes
+	}
+
+	227.5.4 = {
+	add_spouse = etrandanexi_lifepath_6
+	}
+
+	259.9.18 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+etrandanexi_lifepath_6 = {
+	name = "Aleme_re" 
+	female = yes
+
+	religion = starvayrd
+	culture = shewigad
+
+	sexuality = heterosexual
+
+	trait = gluttonous
+	trait = compassionate
+	trait = fickle
+
+	diplomacy = 5
+	martial = 9
+	stewardship = 4
+	intrigue = 6
+	learning = 5
+	prowess = 5
+
+	trait = education_martial_4
+
+	210.12.16 = {
+	birth = yes
+	}
+
+	268.1.10 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+etrandanexi_lifepath_7 = {	# Clothar II, king of Faegift
+	name = "Clothar" 
+
+	#dynasty = dyn_etrandexi_1 #Does not exist
+	religion = starvayrd
+	culture = shewigad
+
+	father = etrandanexi_lifepath_5
+	mother = etrandanexi_lifepath_6
+
+	sexuality = heterosexual
+	
+	trait = infertile
+
+	trait = cynical
+	trait = craven
+	trait = gluttonous
+
+	diplomacy = 5
+	martial = 9
+	stewardship = 6
+	intrigue = 7
+	learning = 5
+	prowess = 5
+
+	trait = education_martial_3
+
+	237.12.5 = {
+	birth = yes
+	}
+
+	266.10.20 = {
+	add_spouse = etrandanexi_lifepath_8
+	}
+
+	306.9.17 = {
+	death = { death_reason = death_mysterious }
+	}
+}
+
+etrandanexi_lifepath_8 = {
+	name = "Alesint" 
+	female = yes
+
+	religion = starvayrd
+	culture = shewigad
+
+	sexuality = heterosexual
+
+	trait = temperate
+	trait = calm
+	trait = lustful
+
+	diplomacy = 4
+	martial = 3
+	stewardship = 6
+	intrigue = 9
+	learning = 5
+	prowess = 5
+
+	trait = education_intrigue_4
+
+	239.5.21 = {
+	birth = yes
+	}
+
+	299.9.13 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+etrandanexi_lifepath_9 = {	# Valoric I 'the Good'
+	name = "Valoric" 
+
+	#dynasty = dyn_etrandexi_1 #Does not exist
+	religion = starvayrd
+	culture = shewigad
+
+	father = etrandanexi_lifepath_7
+
+	sexuality = heterosexual
+
+	trait = beauty_bad_2
+	trait = hunchbacked
+	trait = intellect_good_2
+
+	diplomacy = 4
+	martial = 11
+	stewardship = 5
+	intrigue = 17
+	learning = 7
+	prowess = 10
+
+	279.10.3 = {
+	birth = yes
+	}
+	
+	291.1.1 = {
+		trait = compassionate
+		trait = humble
+		trait = shy
+		trait = shrewd
+	}
+	295.10.3 = {
+		trait = education_intrigue_4
+	}
+	320.1.1 = {
+		give_nickname = nick_the_good
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+	354.6.7 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+etrandanexi_lifepath_10 = {	# Clothar III 'Witchblood', king of Faegift
+	name = "Clothar" 
+
+	#dynasty = dyn_etrandexi_1 #Does not exist
+	religion = starvayrd
+	culture = shewigad
+
+	father = etrandanexi_lifepath_7
+
+	sexuality = heterosexual
+
+	trait = magic_good_9
+	trait = beauty_good_3
+	trait = physique_good_2
+	trait = lunatic_genetic
+
+	trait = arrogant
+	trait = eccentric
+	trait = sadistic
+
+	diplomacy = 4
+	martial = 11
+	stewardship = 5
+	intrigue = 17
+	learning = 7
+	prowess = 10
+
+	trait = education_arcana_4
+
+	306.9.17 = {
+	birth = yes
+	}
+	320.1. = {
+		give_nickname = nick_witchblood
+		trait = gh_historical_school
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+			set_variable = { name = historical_magic_school value = flag:night_court }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+	332.6.7 = {
+	death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+etrandanexi_lifepath_11 = {	# King Leuhard 'the Worthy' of Faegift
+	name = "Leuhard" 
+
+	#dynasty = dyn_etrandexi_2 # Does not exist
+	religion = starvayrd
+	culture = shewigad
+
+	sexuality = heterosexual
+
+	trait = honest
+	trait = just
+	trait = ambitious
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 4
+	intrigue = 7
+	learning = 4
+	prowess = 1
+
+	trait = education_martial_3
+
+	305.5.25 = {
+	birth = yes
+	}
+
+	332.7.1 = {
+		give_nickname = nick_the_worthy
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	add_spouse = etrandanexi_lifepath_12
+	}
+
+	368.8.16 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+etrandanexi_lifepath_12 = {
+	name = "Alesint" 
+	female = yes
+
+	religion = starvayrd
+	culture = shewigad
+
+	sexuality = heterosexual
+
+	trait = deceitful
+	trait = fickle
+	trait = ambitious
+
+	diplomacy = 6
+	martial = 6
+	stewardship = 5
+	intrigue = 10
+	learning = 5
+	prowess = 5
+
+	trait = education_intrigue_4
+
+	315.5.18 = {
+	birth = yes
+	}
+
+	402.9.21 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+etrandanexi_lifepath_13 = {	# King Aloric 'the Haughty', last independent king of Faegift before the Aversarian conquest
+	name = "Aloric" 
+
+	#dynasty = dyn_etrandexi_2 # Does not exist
+	religion = starvayrd
+	culture = shewigad
+
+	father = etrandanexi_lifepath_11
+	mother = etrandanexi_lifepath_12
+
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = arbitrary
+	trait = brave
+
+	diplomacy = 6
+	martial = 5
+	stewardship = 4
+	intrigue = 3
+	learning = 8
+	prowess = 6
+
+	trait = education_martial_2
+
+	343.10.11 = {
+	birth = yes
+	}
+
+	365.1.8 = {
+	add_spouse = etrandanexi_lifepath_14
+	}
+	
+	384.1.26 = {
+		give_nickname = nick_the_haughty
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+		death = { death_reason = death_battle }
+	}
+}
+
+etrandanexi_lifepath_14 = {
+	name = "SiE_gre" 
+	female = yes
+
+	religion = starvayrd
+	culture = shewigad
+
+	sexuality = heterosexual
+
+	trait = lazy
+	trait = gregarious
+	trait = stubborn
+
+	diplomacy = 8
+	martial = 7
+	stewardship = 8
+	intrigue = 4
+	learning = 4
+	prowess = 6
+
+	trait = education_diplomacy_2
+
+	348.9.23 = {
+	birth = yes
+	}
+
+	396.4.5 = {
+	death = { death_reason = death_attempted_treatment }
+	}
+}
+
+etrandanexi_lifepath_15 = {
+	name = "Courise" 
+	female = yes
+
+	religion = starvayrd
+	culture = shewigad
+
+	father = etrandanexi_lifepath_13
+	mother = etrandanexi_lifepath_14
+
+	sexuality = heterosexual
+
+	trait = arbitrary
+	trait = gluttonous
+	trait = craven
+
+	diplomacy = 5
+	martial = 6
+	stewardship = 10
+	intrigue = 8
+	learning = 4
+	prowess = 7
+
+	trait = education_stewardship_3
+
+	374.10.3 = {
+	birth = yes
+	}
+
+	436.2.10 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+etrandanexi_lifepath_16 = {	# Baron Ansfrei of Faegift, first post-Conquest baron of Faegift
+	name = "Ansfrei" 
+
+	#dynasty = dyn_etrandexi_2 # Does not exist
+	religion = starvayrd
+	culture = shewigad
+
+	father = etrandanexi_lifepath_13
+	mother = etrandanexi_lifepath_14
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = shy
+	trait = trusting
+
+	diplomacy = 7
+	martial = 10
+	stewardship = 4
+	intrigue = 8
+	learning = 9
+	prowess = 5
+
+	trait = education_martial_4
+
+	380.7.20 = {
+	birth = yes
+	}
+
+	410.2.23 = {
+	add_spouse = etrandanexi_lifepath_17
+	}
+
+	450.11.6 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+etrandanexi_lifepath_17 = {
+	name = "Marilde" 
+	female = yes
+
+	religion = starvayrd
+	culture = shewigad
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = shy
+	trait = temperate
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 1
+	intrigue = 7
+	learning = 8
+	prowess = 5
+
+	trait = education_learning_3
+
+	393.8.6 = {
+	birth = yes
+	}
+
+	467.1.12 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+etrandanexi_lifepath_18 = {	# Baron Gudoulf of Faegift
+	name = "Gudoulf" 
+
+	#dynasty = dyn_etrandexi_2 # Does not exist
+	religion = starvayrd
+	culture = shewigad
+
+	father = etrandanexi_lifepath_16
+	mother = etrandanexi_lifepath_17
+
+	sexuality = heterosexual
+
+	trait = gluttonous
+	trait = content
+	trait = diligent
+
+	diplomacy = 7
+	martial = 3
+	stewardship = 6
+	intrigue = 6
+	learning = 6
+	prowess = 5
+
+	trait = education_diplomacy_3
+
+	419.12.9 = {
+	birth = yes
+	}
+
+	442.11.17 = {
+	add_spouse = etrandanexi_lifepath_19
+		give_nickname = nick_the_rotund
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	477.7.18 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+etrandanexi_lifepath_19 = {
+	name = "Hadouise" 
+	female = yes
+
+	religion = starvayrd
+	culture = shewigad
+
+	sexuality = heterosexual
+
+	trait = stubborn
+	trait = lazy
+	trait = chaste
+
+	diplomacy = 8
+	martial = 5
+	stewardship = 6
+	intrigue = 5
+	learning = 5
+	prowess = 8
+
+	trait = education_diplomacy_2
+
+	425.9.25 = {
+	birth = yes
+	}
+
+	479.10.7 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+etrandanexi_lifepath_20 = {
+	name = "Dageric" 
+
+	#dynasty = dyn_etrandexi_2 # Does not exist
+	religion = starvayrd
+	culture = shewigad
+
+	father = etrandanexi_lifepath_18
+	mother = etrandanexi_lifepath_19
+
+	sexuality = homosexual
+
+	trait = craven
+	trait = compassionate
+	trait = content
+
+	diplomacy = 7
+	martial = 4
+	stewardship = 7
+	intrigue = 6
+	learning = 5
+	prowess = 4
+
+	trait = education_diplomacy_3
+
+	468.12.8 = {
+	birth = yes
+	}
+
+	495.6.4 = {
+	add_spouse = etrandanexi_lifepath_21
+	}
+
+	521.8.21 = {
+	death = { death_reason = death_typhus }
+	}
+}
+
+etrandanexi_lifepath_21 = {
+	name = "Remie_t" 
+	female = yes
+
+	religion = starvayrd
+	culture = shewigad
+
+	sexuality = heterosexual
+
+	trait = content
+	trait = shy
+	trait = just
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 5
+	intrigue = 7
+	learning = 11
+	prowess = 6
+
+	trait = education_learning_2
+
+	478.1.12 = {
+	birth = yes
+	}
+
+	533.2.12 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+etrandanexi_lifepath_22 = {	# Baron Marcomer of Faegift
+	name = "Marcomer" 
+
+	#dynasty = dyn_etrandexi_2 # Does not exist
+	religion = starvayrd
+	culture = shewigad
+
+	father = etrandanexi_lifepath_20
+	mother = etrandanexi_lifepath_21
+
+	sexuality = heterosexual
+
+	trait = zealous
+	trait = temperate
+	trait = compassionate
+
+	diplomacy = 4
+	martial = 7
+	stewardship = 8
+	intrigue = 5
+	learning = 4
+	prowess = 7
+
+	trait = education_stewardship_3
+
+	505.8.13 = {
+	birth = yes
+	}
+
+	526.3.6 = {
+	add_spouse = etrandanexi_lifepath_23
+	}
+
+	587.5.21 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+etrandanexi_lifepath_23 = {
+	name = "Marilde" 
+	female = yes
+
+	religion = starvayrd
+	culture = shewigad
+
+	sexuality = heterosexual
+
+	trait = cynical
+	trait = paranoid
+	trait = chaste
+
+	diplomacy = 3
+	martial = 3
+	stewardship = 5
+	intrigue = 5
+	learning = 3
+	prowess = 6
+
+	trait = education_stewardship_3
+
+	519.11.11 = {
+	birth = yes
+	}
+
+	582.11.22 = {
+	death = { death_reason = death_natural_causes }
+	}
+}

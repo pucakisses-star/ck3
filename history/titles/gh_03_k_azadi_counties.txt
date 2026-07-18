@@ -1,0 +1,281 @@
+c_madgh_kariz = {
+	1187.9.13 = { 
+		holder = amsari_mahndayana_500
+		liege = e_amsari
+	}
+	1200.3.1 = { 
+		holder = amsari_mahndayana_510
+		liege = e_amsari
+	}
+}
+#c_qazi_akhavi = {
+#	1250.1.1 = { 
+#		holder = amsari_mahndayana_6
+#		liege = e_amsari
+#	}
+#}
+#c_rahmanabad = {
+#	1250.1.1 = { 
+#		holder = amsari_mahndayana_6
+#		liege = e_amsari
+#	}
+#}
+c_horafteh = {
+	1187.9.13 = { 
+		holder = amsari_mahndayana_500
+		liege = e_amsari
+	}
+	1200.3.1 = { 
+		holder = amsari_mahndayana_504
+		liege = e_amsari
+	}
+	1251.1.1 = { 
+		holder = amsari_mahndayana_506
+		liege = e_amsari
+	}
+}
+#c_mazraeh_emam = {
+#	1250.1.1 = { 
+#		holder = amsari_mahndayana_4
+#		liege = e_amsari
+#	}
+#}
+#c_bagh_shaleh = {
+#	1244.1.1 = {
+#		holder = amsari_mahndayana_16
+#		liege = e_amsari
+#	}
+#}
+#c_darvid = {
+#	1253.1.1 = {
+#		holder = amsari_mahndayana_38
+#		liege = d_takyeh
+#	}
+#}
+#c_tu_sorkhe_bala = {
+#	1253.1.1 = {
+#		holder = amsari_mahndayana_3
+#		liege = e_amsari
+#	}
+#}
+#c_dehnowye_gudarz = {
+#	1253.1.1 = {
+#		holder = amsari_mahndayana_3
+#		liege = e_amsari
+#	}
+#}
+#c_seventu = {
+#	1253.1.1 = {
+#		holder = amsari_mahndayana_17
+#		liege = e_amsari
+#	}
+#}
+c_siuni = {
+	1188.11.3 = {
+		holder = amsari_mahndayana_332
+		liege = d_gerd_mehdiabad
+	}
+	1203.6.12 = {
+		holder = amsari_mahndayana_320
+		liege = e_amsari
+	}
+	1236.2.23 = {
+		holder = amsari_mahndayana_324
+		liege = e_amsari
+	}
+	1243.5.13 = {
+		holder = amsari_mahndayana_323
+		liege = e_amsari
+	}
+}
+#c_chahi_aliabad = {
+#	1253.1.1 = {
+#		holder = amsari_mahndayana_5
+#		liege = e_amsari
+#	}
+#}
+c_tchouran = {
+	201.11.14 = { 
+		holder = amsari_mahndayana_1
+	}
+	242.3.16 = {
+		holder = amsari_mahndayana_122
+	} # Adarayan
+	278.1.1 = {
+		holder = amsari_mahndayana_126
+	} # Mehran
+	286.1.1 = {
+		holder = amsari_mahndayana_127
+	} # Zarvandar
+	313.1.1 = {
+		holder = amsari_mahndayana_129
+	} # Yahziri
+	362.1.1 = {
+		holder = amsari_mahndayana_131
+	} # Mehran II
+	382.1.1 = {
+		holder = amsari_mahndayana_132
+	} # Vahhab
+	427.1.1 = {
+		holder = amsari_mahndayana_133
+	} # Iralya
+	456.1.1 = {
+		holder = amsari_mahndayana_137
+	} # Nuya
+	493.1.1 = {
+		holder = amsari_mahndayana_141
+	} # Navrosh
+	529.1.1 = {
+		holder = amsari_mahndayana_142
+	} # Shahr_Nira
+	551.1.1 = {
+		holder = amsari_mahndayana_143
+	} # Oshvari
+	579.1.1 = {
+		holder = amsari_mahndayana_144
+	} # Kavashid
+	582.1.1 = {
+		holder = amsari_mahndayana_145
+	} # DestAran
+	649.1.1 = {
+		holder = amsari_mahndayana_147
+	} # Mehran
+	674.1.1 = {
+		holder = amsari_mahndayana_148
+	} # Ashakhet
+	682.1.1 = {
+		holder = amsari_mahndayana_149
+	} # Javareh
+	709.1.1 = {
+		holder = amsari_mahndayana_150
+	} # Mazdari ########################
+	720.1.1 = { 
+		holder = amsari_mahndayana_154
+	} # Arika #########################
+	731.1.1 = {
+		holder = amsari_mahndayana_151
+	} # Rouzbeh
+	747.1.1 = {
+		holder = amsari_mahndayana_155
+	} # Rouzbeh II
+	763.1.1 = {
+		holder = amsari_mahndayana_175
+	} # Ardava
+	786.1.1 = {
+		holder = amsari_mahndayana_176
+	} # Zartosht
+	818.1.1 = {
+		holder = amsari_mahndayana_182
+	} # Zayar
+	865.1.1 = {
+		holder = amsari_mahndayana_184
+	} # Gholshan
+	899.1.1 = {
+		holder = amsari_mahndayana_189
+	} # Adarva (899-906 IS)
+	906.1.1 = {
+		holder = amsari_mahndayana_197
+	} # Bahran (906-908 IS)
+	908.1.1 = {
+		holder = amsari_mahndayana_186
+	} # Aushedar (908-913 IS)
+	913.1.1 = {
+		holder = amsari_mahndayana_198
+	} # Majhra (913-924 IS)
+	924.1.1 = {
+		holder = amsari_mahndayana_199
+	} # Majhra II (924-933 IS)
+	933.1.1 = {
+		holder = amsari_mahndayana_193
+	} # Yazarith (933-957 IS) - His reign saw Zoen and Rexil set the Amsari Hikhlan ablaze.
+	957.1.1 = {
+		holder = amsari_mahndayana_241
+	} # Itet (957-966 IS)
+	966.1.1 = {
+		holder = amsari_mahndayana_247
+	} # Farvan (966-978 IS)
+	978.1.1 = {
+		holder = amsari_mahndayana_268
+	} # Zayar (978-999 IS)
+	999.1.1 = {
+		holder = amsari_mahndayana_269
+	} # Aushedar (999-1046 IS)
+	1046.1.1 = {
+		holder = amsari_mahndayana_270 
+	} # Razemi (1046-1074 IS)
+	1074.1.1 = {
+		holder = amsari_mahndayana_271
+	} # ParashAd (1074-1118 IS)
+	1118.1.1 = {
+		holder = amsari_mahndayana_272
+	} # Tova (1118-1148 IS)
+	1148.1.1 = {
+		holder = amsari_mahndayana_274
+	} # Israyana (1148-1169 IS)
+	1169.1.1 = {
+		holder = amsari_mahndayana_275
+	} # Jahanshah (1169-1184 IS)
+	1184.1.1 = {
+		holder = amsari_mahndayana_2
+	} # Pejman (1184-1257 IS)
+	
+	1200.1.1 = { change_development_level = 30 }
+}
+b_pelicos = {
+	1220.1.1 = {
+		holder = amsari_mahndayana_2
+	}
+}
+b_sinagas = {
+	1220.1.1 = {
+		holder = amsari_mahndayana_2
+	}
+}
+b_kourakros = {
+	1220.1.1 = {
+		holder = amsari_mahndayana_2
+	}
+}
+#c_newamsarcounty3 = {
+#	1200.3.1 = { 
+#		holder = amsari_mahndayana_2
+#		liege = e_amsari
+#	}
+#}
+c_newamsarcounty5 = {
+	1177.5.6 = { 
+		holder = amsari_mahndayana_225
+		liege = d_gerd_mehdiabad
+	}
+	1194.9.13 = { 
+		holder = amsari_mahndayana_226
+		liege = d_gerd_mehdiabad
+	}	
+	1200.1.1 = { change_development_level = 15 }
+	1211.3.17 = { 
+		holder = amsari_mahndayana_504
+		liege = e_amsari
+	}
+	1251.1.1 = { 
+		holder = amsari_mahndayana_506
+		liege = e_amsari
+	}
+}
+
+c_kirathu = {
+	1196.1.14 = {
+		holder = leviden_sheharddi_4
+		government = republic_playable_government
+		liege = 0
+	}
+	1204.9.11 = {
+		holder = leviden_sheharddi_3
+		government = republic_playable_government
+		liege = 0
+	}
+	1233.7.21 = {
+		holder = leviden_sheharddi_2
+		government = theocracy_government
+		liege = 0
+	}
+}

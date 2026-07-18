@@ -1,0 +1,31 @@
+
+c_sunken_depths_6 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_sunken_depths_9 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_sunken_depths_14 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_sunken_depths_3 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_sunken_depths_5 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_sunken_depths_12 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

@@ -1,0 +1,312 @@
+﻿surugin_ehatm_1 = { # Returned descendant of pirate queen
+	name = "Dirabti"
+	dna = surugin_ehatm_1
+	culture = "surugin"
+	religion = "ehatm"
+	female = yes
+	sexuality = heterosexual
+	dynasty = dyn_agadari_1
+	
+	diplomacy = 6
+	martial = 7
+	stewardship = 5
+	intrigue = 5
+	learning = 4
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp2_iberian_christian_01
+		}
+	}
+	
+	1221.9.15 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 2 }
+		}
+	}
+	1233.9.15 = {
+		trait = brave
+		trait = impatient
+		trait = shy
+	}
+	1237.9.15 = {
+		trait = education_martial_2
+	}
+}
+
+surugin_ehatm_2 = { # Husband of 11
+	name = "Ozerbaaal"
+	religion = ehatm
+	culture = surugin
+	sexuality = heterosexual
+	
+	diplomacy = 6
+	martial = 7
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+
+	
+	1229.1.14 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	1241.1.14 = {
+		trait = brave
+		trait = compassionate
+		trait = gluttonous
+	}
+	1245.1.14 = {
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+	1248.4.27 = {
+		add_matrilineal_spouse = surugin_ehatm_11
+	}
+}
+
+surugin_ehatm_3 = { # Ruler of Kouris
+	name = "Bod_Milk"
+	religion = ehatm
+	culture = surugin
+	sexuality = heterosexual
+	
+	diplomacy = 7
+	martial = 6
+	stewardship = 4
+	intrigue = 5
+	learning = 4
+
+	
+	1220.6.18 = {
+		birth = yes
+		trait = physique_bad_3
+	}
+	1232.6.18 = {
+		trait = lustful
+		trait = gluttonous
+		trait = gregarious
+	}
+}
+
+surugin_ehatm_4 = { # Asshole. building up realm on southeast coast
+	name = "Bar-Noat"
+	religion = ehatm
+	culture = surugin
+	female = yes
+	sexuality = heterosexual
+	
+	diplomacy = 4
+	martial = 7
+	stewardship = 5
+	intrigue = 5
+	learning = 6
+
+	
+	1217.9.23 = {
+		birth = yes
+	}
+	1229.9.23 = {
+		trait = sadistic
+		trait = trusting
+		trait = stubborn
+	}
+	1233.9.23 = {
+		trait = education_martial_2
+	}
+}
+
+surugin_ehatm_5 = { # Husband of 4
+	name = "Ahoumm"
+	religion = ehatm
+	culture = surugin
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 4
+	learning = 6
+
+	
+	1224.8.19 = {
+		birth = yes
+	}
+	1236.8.19 = {
+		trait = cynical
+		trait = gregarious
+		trait = temperate
+	}
+	1240.8.19 = {
+		trait = education_intrigue_3
+	}
+	1241.3.2 = {
+		add_matrilineal_spouse = surugin_ehatm_4
+	}
+}
+
+surugin_ehatm_6 = { # Ruler of Chytossos and Kourithos
+	name = Elaran
+	religion = ehatm
+	culture = surugin
+	female = yes
+	sexuality = heterosexual
+	
+	diplomacy = 6
+	martial = 5
+	stewardship = 4
+	intrigue = 5
+	learning = 6
+
+	
+	1230.4.1 = {
+		birth = yes
+	}
+	1242.4.1 = {
+		trait = lustful
+		trait = zealous
+		trait = forgiving
+	}
+	1246.4.1 = {
+		trait = education_diplomacy_3
+	}
+}
+
+surugin_ehatm_7 = { # Ruler of Tamagol and Kokkrinagusta
+	name = "Kindial"
+	religion = ehatm
+	culture = surugin
+	female = yes
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 6
+	stewardship = 6
+	intrigue = 5
+	learning = 4
+
+	
+	1230.4.1 = {
+		birth = yes
+	}
+	1242.4.1 = {
+		trait = greedy
+		trait = paranoid
+		trait = shy
+	}
+	1246.4.1 = {
+		trait = education_stewardship_4
+	}
+}
+
+surugin_ehatm_8 = { # Ruler of Chytremnos
+	name = "Zuzat"
+	religion = ehatm
+	culture = surugin
+	female = yes
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 3
+	stewardship = 7
+	intrigue = 4
+	learning = 7
+
+	
+	1230.4.1 = {
+		birth = yes
+	}
+	1242.4.1 = {
+		trait = chaste
+		trait = cynical
+		trait = shy
+	}
+	1246.4.1 = {
+		trait = education_learning_4
+	}
+}
+
+surugin_ehatm_9 = { # Ruler of Lapedra
+	name = "Kelidon"
+	religion = ehatm
+	culture = surugin
+	female = yes
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 3
+	stewardship = 7
+	intrigue = 4
+	learning = 7
+
+	
+	1230.4.1 = {
+		birth = yes
+	}
+	1242.4.1 = {
+		trait = chaste
+		trait = cynical
+		trait = shy
+	}
+	1246.4.1 = {
+		trait = education_learning_4
+	}
+}
+
+surugin_ehatm_10 = { # Ruler of Afarin, invading neighboring uakaklo out of conviction that she needs to save them
+	name = "Bequth"
+	religion = ehatm
+	culture = surugin
+	female = yes
+	sexuality = homosexual
+	
+	diplomacy = 6
+	martial = 7
+	stewardship = 4
+	intrigue = 5
+	learning = 5
+
+	
+	1230.4.1 = {
+		birth = yes
+	}
+	1242.4.1 = {
+		trait = wrathful
+		trait = brave
+		trait = callous
+	}
+	1246.4.1 = {
+		trait = education_martial_3
+	}
+}
+
+surugin_ehatm_11 = { # Ruler of old-ass Ehatmic colony
+	name = "Ytab"
+	religion = ehatm
+	culture = surugin
+	female = yes
+	sexuality = asexual
+	
+	diplomacy = 5
+	martial = 6
+	stewardship = 5
+	intrigue = 7
+	learning = 6
+	
+	1226.5.11= {
+		birth = yes
+	}
+	1238.5.11 = {
+		trait = patient
+		trait = ambitious
+		trait = deceitful
+	}
+	1242.5.11 = {
+		trait = education_stewardship_2
+	}
+}

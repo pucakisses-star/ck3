@@ -1,0 +1,90 @@
+﻿# Lonely Light
+sceyfig_lighter_aegispact_1 = { # Couped the Lonely Light title and stole the Aegis from their brother / father / sister / cousin / friend / whoever while they were off in the east, struggling to get their claim recognized
+	name = "Cuthberht"
+	religion = aegispact
+	culture = sceyfig_lighter
+	father = sceyfig_lighter_aegispact_2
+	1217.10.2 = {
+		birth = yes
+	}
+	1241.1.1 = {
+		trait = deceitful
+		trait = gregarious
+		trait = impatient
+		trait = education_intrigue_3
+	}
+}
+
+sceyfig_lighter_aegispact_2 = {
+	name = "Beorhtsige"
+	religion = aegispact
+	culture = sceyfig_lighter
+
+	1181.7.13 = {
+		birth = yes
+	}
+
+	1201.7.13 = {
+		trait = fickle
+		trait = paranoid
+		trait = diligent
+		trait = education_learning_2
+	}
+
+	1241.11.14 = {
+		trait = incapable
+	}
+
+	1241.11.16 = {
+		death = { death_reason = death_ill }
+	}
+}
+
+# Eastlight
+sceyfig_lighter_aegispact_3 = { # Rightful King/Queen of Lonely Light, their predecessor began the move into the Lichdoms now that the Liches are fucked up but they got couped back home and are trying to get back
+	name = "Beorhtsige"
+	religion = aegispact
+	culture = sceyfig_lighter
+	father = sceyfig_lighter_aegispact_2
+	1210.10.10 = {
+		birth = yes
+	}
+
+	1230.10.10 = {
+		trait = stubborn
+		trait = vengeful
+		trait = ambitious
+		trait = education_diplomacy_3
+	}
+}
+
+sceyfig_lighter_aegispact_4 = {
+	name = "Maud"
+	religion = aegispact
+	culture = sceyfig_lighter
+	dynasty = dyn_sceyfig_1
+	1219.5.16 = {
+		birth = yes
+		trait = physique_good_2
+		trait = intellect_good_1
+		trait = magic_good_3
+	}
+	1239.5.16 = {
+		trait = education_intrigue_4
+		trait = shrewd
+		trait = unyielding_defender
+		trait = temperate
+		trait = calm
+		trait = brave
+		trait = diligent
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 7 }
+		}
+	}
+	1254.1.1 = {
+		employer = sceyfig_lighter_aegispact_1
+		give_council_position = councillor_court_magi
+	}
+}

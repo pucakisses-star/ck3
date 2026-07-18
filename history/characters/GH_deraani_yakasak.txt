@@ -1,0 +1,292 @@
+﻿deraani_yakasak_1 = {
+	name = "Weddagala"
+	culture = "deraani"
+	religion = "yakasak"
+	dna = deraani_yakasak_1
+	dynasty = dyn_pirate_coast_8
+	father = deraani_yakasak_14
+
+    portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair=male_hair_indian_03
+			custom_beards=male_beard_fp2_iberian_muslim_01
+		}
+	}
+
+	1222.9.9 = {
+		birth = yes
+		trait = physique_good_1
+	}
+	1236.1.1 = {
+		trait = education_stewardship_2
+		trait = vengeful
+		trait = greedy
+		trait = ambitious
+		trait = gh_historical_blademaster_3
+	}
+	1240.11.1 = {
+		add_spouse = deraani_yakasak_2
+		effect = {
+			set_relation_soulmate = character:deraani_yakasak_2
+		}
+	}
+	1253.9.4 = {
+		effect = {
+			set_relation_rival = character:prakaani_yakasak_1
+			set_relation_rival = character:rethara_yakasak_1
+		}
+	}
+
+	1271.2.11 = {
+		death = { death_reason = death_heart_attack }
+	}
+}
+
+deraani_yakasak_2 = {
+	name = "Sanra"
+	culture = "deraani"
+	religion = "yakasak"
+	female = yes
+
+	1223.11.1 = {
+		birth = yes
+		trait = beauty_good_2
+	}
+	1239.11.1 = {
+		trait = lustful
+		trait = compassionate
+		trait = forgiving
+	}
+
+	1255.3.1 = {
+		trait = gh_one_handed
+	}
+
+	1287.2.10 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+deraani_yakasak_4 = {
+    name = "Hamar" 
+
+    dynasty = dyn_pirate_coast_8
+    religion = yakasak
+    culture = deraani
+
+    father = deraani_yakasak_1
+    mother = deraani_yakasak_2
+
+    sexuality = heterosexual
+
+
+    1249.5.14 = {
+        birth = yes
+        trait = physique_good_1
+    }
+
+    1274.4.18 = {
+        trait = trusting
+        trait = ambitious
+        trait = vengeful
+        trait = gh_historical_blademaster_2
+        add_spouse = deraani_yakasak_5
+    }
+}
+
+deraani_yakasak_4a = {
+    name = "Hemavati"
+
+    dynasty = dyn_pirate_coast_8
+    religion = yakasak
+    culture = deraani
+
+    father = deraani_yakasak_1
+    mother = deraani_yakasak_2
+    female = yes
+
+    1245.3.14 = {
+        birth = yes
+        trait = physique_good_2
+    }
+
+    1265.3.14 = {
+        trait = content
+        trait = gregarious
+        trait = humble
+        trait = education_martial_3
+    }
+
+    1271.5.1 = {
+    	employer = lakoeng_fourteen_heavenly_methods_1
+    }
+}
+
+deraani_yakasak_5 = {
+    name = "Sanra" 
+    female = yes
+
+    religion = yakasak
+    culture = deraani
+
+    sexuality = heterosexual
+
+    trait = impatient
+    trait = arbitrary
+    trait = generous
+
+    1257.6.17 = {
+        birth = yes
+    }
+}
+
+deraani_yakasak_6 = {
+    name = "Shurapala" 
+
+    dynasty = dyn_pirate_coast_8
+    religion = yakasak
+    culture = deraani
+
+    father = deraani_yakasak_4
+    mother = deraani_yakasak_5
+
+    sexuality = heterosexual
+
+    trait = diligent
+    trait = humble
+    trait = temperate
+
+    1277.10.6 = {
+        birth = yes
+    }
+}
+
+deraani_yakasak_8 = {
+    name = "Nattadevi" 
+    female = yes
+
+    religion = yakasak
+    culture = deraani
+
+    father = deraani_yakasak_4
+    mother = deraani_yakasak_5
+
+    sexuality = asexual
+
+    trait = temperate
+    trait = humble
+    trait = lazy
+
+    1278.9.16 = {
+        birth = yes
+        trait = physique_bad_1
+    }
+
+    1281.10.9 = {
+        death = { death_reason = death_typhus }
+    }
+}
+
+deraani_yakasak_9 = {
+    name = "Kanwar" 
+    female = yes
+
+    dynasty = dyn_pirate_coast_8
+    religion = yakasak
+    culture = deraani
+
+    father = deraani_yakasak_4
+    mother = deraani_yakasak_5
+
+    sexuality = heterosexual
+
+    trait = wrathful
+    trait = honest
+    trait = generous
+
+    1281.11.20 = {
+        birth = yes
+    }
+
+    1298.1.15 = {
+        add_matrilineal_spouse = prakaani_yakasak_10
+    }
+}
+
+
+deraani_yakasak_11 = {
+    name = "Devavarman" 
+
+    dynasty = dyn_pirate_coast_8
+    religion = yakasak
+    culture = deraani
+
+    father = deraani_yakasak_4
+    mother = deraani_yakasak_5
+
+    sexuality = heterosexual
+
+    trait = arrogant
+    trait = wrathful
+    trait = content
+
+    1282.9.13 = {
+        birth = yes
+        trait = physique_good_2
+    }
+}
+
+
+deraani_yakasak_13 = {
+    name = "Tomi" 
+    female = yes
+
+    religion = yakasak
+    culture = deraani
+
+    father = deraani_yakasak_14
+
+    sexuality = heterosexual
+
+    trait = honest
+    trait = humble
+    trait = stubborn
+
+    1225.12.8 = {
+        birth = yes
+    }
+
+    1246.7.24 = {
+        trait = one_eyed
+        trait = wounded_3
+        death = { death_reason = death_wounds }
+    }
+}
+
+deraani_yakasak_14 = {
+    name = "Devavarman" 
+
+    dynasty = dyn_pirate_coast_8
+    religion = yakasak
+    culture = deraani
+
+    1202.6.7 = {
+        birth = yes
+        trait = physique_good_1
+    }
+
+    1222.6.7 = {
+        trait = ambitious
+        trait = arrogant
+        trait = impatient
+        trait = education_martial_1
+    }
+
+    1230.7.6 = {
+        trait = scarred
+    }
+
+    1248.11.16 = {
+        death = { death_reason = death_battle }
+    }
+}

@@ -1,0 +1,6 @@
+#d_narakat = {
+#	1250.1.1 = {
+#		holder = qaanhai_vidvaookeyatra_1
+#		change_development_level = 8
+#	}
+#}

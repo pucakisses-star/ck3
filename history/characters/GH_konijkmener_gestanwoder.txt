@@ -1,0 +1,50 @@
+﻿konijkmener_gestanwoder_1 = { 
+	name = "Bloes"
+	dynasty = dyn_konijkmener_4
+	religion = "lifepath"
+	culture = "konijkmener"
+	
+	father = konijkmener_lifepath_33
+	mother = konijkmener_lifepath_40
+
+	trait = cynical
+	trait = avaricious
+
+	1165.10.13 = {
+		birth = yes
+		add_pressed_claim = title:k_de_kanzelerij
+	}
+	
+	1229.1.1 = {
+		name = "Ribaal"
+		religion = "gestanwoder"
+		give_nickname = nick_the_apostate_ribaal
+		trait = lifestyle_herbalist
+	}
+
+	1230.2.7 = {
+		death = {
+			death_reason = death_burned_witch
+			killer = konijkmener_lifepath_2
+		}
+	}
+}
+
+konijkmener_gestanwoder_2 = {
+	name = "Belhaar" #Corneel
+	dynasty = dyn_konijkmener_4
+	religion = "gestanwoder"
+	culture = "konijkmener"
+	
+	father = konijkmener_gestanwoder_1
+
+	1220.6.7 = {
+		birth = yes
+	}
+	1250.1.1 = {
+		employer = konijkmener_lifepath_3
+	}
+	1283.11.7 = {
+		death = { death_reason = death_stress }
+	}
+}

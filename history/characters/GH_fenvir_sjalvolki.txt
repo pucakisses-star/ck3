@@ -1,0 +1,600 @@
+﻿fenvir_sjalvolki_1 = { #Cormag Fenrus
+	name = "Cormag"
+	dna = fenvir_sjalvolki_1
+	dynasty = dyn_sjalvolki_2
+	religion = "sjalvolki"
+	culture = "fenvir"
+
+	martial = 10
+	diplomacy = 10
+	intrigue = 9
+	stewardship = 4
+	learning = 11
+	prowess = 8
+
+	sexuality = heterosexual
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_northern_01
+			custom_beards = male_beard_western_05
+		}
+	}
+
+	1192.4.12 = {
+		birth = yes
+		trait = intellect_good_1
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 2 }
+		}
+	}
+
+	1204.1.1 = {
+		trait = stubborn
+		trait = vengeful
+		trait = zealous
+	}
+
+	1208.4.12 = {
+		trait = education_learning_3
+		trait = lifestyle_herbalist
+		trait = gh_historical_track_hunter_3
+	}
+
+	1239.7.11 = {
+		trait = one_eyed
+		trait = one_legged
+		trait = scarred
+		trait = berserker
+		give_nickname = nick_the_old_dog
+		spawn_army = {
+			name = fenvir_dogs
+			uses_supply = yes
+			inheritable = no
+			location = province:4467
+			levies = 800
+			men_at_arms = {
+				type = sjalvolki_berserkers
+				stacks = 8
+			}
+		}
+	}
+
+	1244.2.16 = { # Put two years after the Imperrech forms
+		reverse_add_opinion = {
+			target = character:daukeni_sjalvolki_1
+			opinion = -80
+			modifier = gh_cormag_dislike
+		}
+	}
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+
+	1254.1.1 = {
+		effect = {
+			set_variable = {
+				name = sjalvolki_conquest_contribution
+				value = 100
+			}
+			add_character_flag = sjalvolki_vanguard
+		}
+	}
+
+	1261.3.13 = { # Arbitrary date, feel free to change
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+fenvir_sjalvolki_2 = {
+	name = "Viorga" #Fearchar, un-gaelicised
+	religion = "sjalvolki"
+	culture = "fenvir"
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+
+fenvir_sjalvolki_4 = {
+	name = "Galvrog" #Gillebride, un-gaelicised
+	religion = "sjalvolki"
+	culture = "fenvir"
+
+	1212.2.12 = {
+		birth = yes
+	}
+
+	1238.2.12 = {
+		trait = gh_historical_track_hunter_2
+	}
+	1254.1.1 = {
+		effect = {
+			set_variable = {
+				name = sjalvolki_conquest_contribution
+				value = 100
+			}
+			add_character_flag = sjalvolki_vanguard
+		}
+	}
+}
+
+fenvir_sjalvolki_5 = {
+	name = "Siora" #Seoras, un-gaelicised
+	religion = "sjalvolki"
+	culture = "fenvir"
+
+	1200.6.10 = {
+		birth = yes
+	}
+
+	1216.6.10 = {
+		trait = gh_historical_track_hunter_2
+	}
+}
+
+fenvir_sjalvolki_6 = {
+	name = "SioD_na" #Seathan, un-gaelicised
+	religion = "sjalvolki"
+	culture = "fenvir"
+
+	1223.3.13 = {
+		birth = yes
+	}
+	1254.1.1 = {
+		effect = {
+			set_variable = {
+				name = sjalvolki_conquest_contribution
+				value = 100
+			}
+			add_character_flag = sjalvolki_vanguard
+		}
+	}
+}
+
+fenvir_sjalvolki_7 = {
+	name = "Vroga" #Frang
+	dynasty = dyn_sjalvolki_12
+	religion = "sjalvolki"
+	culture = "fenvir"
+
+	1229.4.29 = {
+		birth = yes
+	}
+	1254.1.1 = {
+		effect = {
+			set_variable = {
+				name = sjalvolki_conquest_contribution
+				value = 100
+			}
+			add_character_flag = sjalvolki_vanguard
+		}
+	}
+}
+
+fenvir_sjalvolki_8 = {
+	name = "FenD_" #Fionn, un-gaelicised
+	religion = "sjalvolki"
+	culture = "fenvir"
+
+	1225.3.14 = {
+		birth = yes
+	}
+
+	1241.3.14 = {
+		trait = gh_historical_track_hunter_1
+	}
+}
+
+fenvir_sjalvolki_11 = {
+	name = "Marc"
+	religion = "sjalvolki"
+	culture = "fenvir"
+
+	1223.4.30 = {
+		birth = yes
+	}
+}
+
+fenvir_sjalvolki_12 = {
+	name = "IoganD_" #Eachann, un-gaelicised
+	religion = "sjalvolki"
+	culture = "fenvir"
+
+	1190.10.12 = {
+		birth = yes
+	}
+	1254.1.1 = {
+		effect = {
+			set_variable = {
+				name = sjalvolki_conquest_contribution
+				value = 100
+			}
+			add_character_flag = sjalvolki_vanguard
+		}
+	}
+}
+
+fenvir_sjalvolki_13 = {
+	name = "Iomor" #Iomhar, un-gaelicised
+	religion = "sjalvolki"
+	culture = "fenvir"
+
+	1225.3.21 = {
+		birth = yes
+	}
+
+	1241.3.21 = {
+		trait = gh_historical_track_hunter_2
+	}
+}
+
+fenvir_sjalvolki_14 = {
+	name = "Niogal" #Neacal, un-gaelicised
+	religion = "sjalvolki"
+	culture = "fenvir"
+
+	1222.2.2 = {
+		birth = yes
+	}
+	1254.1.1 = {
+		effect = {
+			set_variable = {
+				name = sjalvolki_conquest_contribution
+				value = 100
+			}
+			add_character_flag = sjalvolki_vanguard
+		}
+	}
+}
+
+
+
+fenvir_sjalvolki_15 = {
+	name = "Gibraug" #Gerberga
+	religion = "sjalvolki"
+	culture = "fenvir"
+	female = yes
+	
+	1221.1.1 = {
+		birth = yes
+	}
+
+	1237.1.1 = {
+		trait = gh_historical_track_hunter_1
+	}
+}
+
+fenvir_sjalvolki_16 = {
+	name = "AlbranD_" #Alebrand
+	religion = "sjalvolki"
+	culture = "fenvir"
+	female = no
+	
+	1216.1.1 = {
+		birth = yes
+	}
+
+	1232.1.1 = {
+		trait = gh_historical_track_hunter_2
+	}
+}
+
+fenvir_sjalvolki_17 = {
+	name = "GolmaD_" #Reginbern
+	religion = "sjalvolki"
+	culture = "fenvir"
+	female = no
+	
+	1204.5.1 = {
+		birth = yes
+	}
+	1254.1.1 = {
+		effect = {
+			set_variable = {
+				name = sjalvolki_conquest_contribution
+				value = 100
+			}
+			add_character_flag = sjalvolki_vanguard
+		}
+	}
+}
+
+fenvir_sjalvolki_18 = {
+	name = "Sava" #Formerly Sophia
+	religion = "sjalvolki"
+	culture = "fenvir"
+	female = yes
+	
+	1216.1.1 = {
+		birth = yes
+	}
+}
+
+fenvir_sjalvolki_19 = {
+	name = "GeD_lmir" #Giselmar
+	religion = "sjalvolki"
+	culture = "fenvir"
+	female = no
+	
+	1230.1.1 = {
+		birth = yes
+	}
+
+	1246.1.1 = {
+		trait = gh_historical_track_hunter_1
+	}
+}
+
+fenvir_sjalvolki_20 = {
+	name = "Ravmir" #Formerly Aelle
+	dna = fenvir_sjalvolki_20 
+	religion = "sjalvolki"
+	culture = "fenvir"
+	female = no
+	trait = education_diplomacy_1
+	trait = gregarious
+	trait = drunkard
+	trait = gluttonous
+	trait = brave
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_07
+			custom_beards = male_beard_western_01
+		}
+	}
+	
+	1200.1.1 = {
+		birth = yes
+	}
+
+	1216.1.1 = {
+		trait = gh_historical_track_hunter_2
+	}
+
+	1254.1.1 = {
+		effect = {
+			set_variable = {
+				name = sjalvolki_conquest_contribution
+				value = 100
+			}
+			add_character_flag = sjalvolki_vanguard
+		}
+	}
+}
+
+fenvir_sjalvolki_21 = { # Kresalja Kraken-Eater
+	name = "Krasalja"
+	religion = "sjalvolki"
+	culture = "fenvir"
+	female = yes
+	dynasty = dyn_sjalvolki_43
+	trait = intellect_good_1
+	1232.8.8 = {
+		birth = yes
+	}
+	1245.8.8 = {
+		trait = brave
+		trait = ambitious
+		trait = zealous
+	}
+	1249.8.8 = {
+		trait = education_martial_4
+	}	
+	1252.9.1 = {
+		trait = gallant
+		trait = reaver
+		give_nickname = nick_krakeneater
+		trait = gh_historical_blademaster_2
+	}
+}
+
+fenvir_sjalvolki_22 = { # Chieftain of Clan Aerdonorg, Cenware loyalists
+	name = "AsnoD_" #Askan
+	religion = "sjalvolki"
+	culture = "fenvir"
+	dynasty = dyn_sjalvolki_37
+
+	father = fenvir_sjalvolki_26
+
+	1227.1.1 = {
+		birth = yes
+		trait = physique_good_1
+	}
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+}
+
+fenvir_sjalvolki_23 = {
+	name = "AvD_al" #Formerly Gosschalk, which is a bit explicitly christian
+	religion = "sjalvolki"
+	culture = "fenvir"
+
+	1211.1.1 = {
+		birth = yes
+	}
+	1252.1.1 = {
+		trait = compassionate
+		effect = { dynasty = { add_dynasty_prestige = 100 } }
+	}
+	1254.1.1 = {
+		effect = {
+			set_variable = {
+				name = sjalvolki_conquest_contribution
+				value = 100
+			}
+			add_character_flag = sjalvolki_vanguard
+		}
+	}
+}
+
+fenvir_sjalvolki_24 = {
+	name = "Jaroc"
+	religion = sjalvolki
+	culture = fenvir
+	disallow_random_traits = yes
+	dynasty = dyn_sjalvolki_10
+
+	martial = 9
+	diplomacy = 4
+	intrigue = 2
+	stewardship = 4
+	learning = 2
+	prowess = 9
+
+	941.10.18 = {
+		birth = yes
+		trait = physique_good_2
+	}
+
+	953.1.1 = {
+		trait = brave
+		trait = trusting
+		trait = diligent
+	}
+
+	957.10.18 = {
+		trait = education_martial_2
+		trait = forest_fighter
+	}
+
+	965.11.27 = {
+		trait = adventurer
+		trait = gh_historical_blademaster_1
+		give_nickname = nick_bitter_root
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	980.5.14 = {
+		death = {
+			death_reason = death_disappearance
+		}
+	}
+}
+
+fenvir_sjalvolki_25 = { # Ravmir Shield-Eater, rival Fenvir cheiftain to Fenrus, made his nickname
+	name = "Ravmir"
+	religion = sjalvolki
+	culture = fenvir
+	disallow_random_traits = yes
+	dynasty = dyn_sjalvolki_33
+
+	martial = 2
+	diplomacy = 5
+	intrigue = 8
+	stewardship = 5
+	learning = 3
+	prowess = 4
+
+	1190.8.2 = {
+		birth = yes
+	}
+
+	1202.1.1 = {
+		trait = wrathful
+		trait = deceitful
+		trait = arbitrary
+	}
+
+	1206.8.2 = {
+		trait = education_martial_3
+		trait = reckless
+		trait = gh_historical_blademaster_1
+		give_nickname = nick_shield_eater
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	1218.11.25 = {
+		death = {
+			death_reason = death_head_ripped_off
+			killer = fenvir_sjalvolki_1 # Cormag Fenrus
+		}
+	}
+}
+
+fenvir_sjalvolki_26 = { # Ulfric Shout-Maker, Sjalvolki champion at the Battle of Ten Trees
+	name = "Ulfric"
+	religion = sjalvolki
+	culture = fenvir
+	disallow_random_traits = yes
+	dynasty = dyn_sjalvolki_37
+
+	martial = 8
+	diplomacy = 5
+	intrigue = 4
+	stewardship = 6
+	learning = 6
+	prowess = 7
+
+	1197.3.18 = {
+		birth = yes
+		trait = physique_good_1
+		trait = beauty_good_2
+	}
+
+	1209.1.1 = {
+		trait = wrathful
+		trait = arrogant
+		trait = ambitious
+	}
+
+	1213.3.18 = {
+		trait = education_diplomacy_2
+	}
+
+	1231.12.23 = {
+		trait = august
+		trait = strong
+		trait = berserker
+		give_nickname = nick_shout_maker
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	1247.3.15 = { # Ten Trees
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+fenvir_sjalvolki_27 = { #Historic King mentioned to have sacked Ampurion in 1178
+	name = "Wittiga"
+	religion = sjalvolki
+	culture = fenvir
+
+	1124.1.1 = {
+		birth = yes
+	}
+
+	1197.1.1 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}

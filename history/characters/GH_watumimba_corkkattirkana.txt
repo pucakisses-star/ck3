@@ -1,0 +1,3199 @@
+﻿watumimba_corkkattirkana_1 = {
+	name = "Thrana"
+	religion = "corkkattirkana"
+	culture = "watumimba"
+
+	1214.4.5 = {
+		birth = yes
+	}
+}
+
+watumimba_corkkattirkana_2 = {
+	name = "Varakunan"
+	religion = "corkkattirkana"
+	culture = "watumimba"
+
+	1165.4.14 = {
+		birth = yes
+		trait = beauty_good_2
+	}
+
+	1185.1.1 = {
+		trait = arrogant
+		trait = paranoid
+		trait = compassionate
+	}
+
+	1210.3.19 = {
+		death = {
+			death_reason = death_drowned
+		}
+	}
+}
+
+watumimba_corkkattirkana_3 = {
+	name = "Hamar" 
+
+	dynasty = dynasty_ufaliracci_1
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_62
+	mother = watumimba_corkkattirkana_61
+
+	sexuality = heterosexual
+
+	trait = generous
+	trait = gluttonous
+	trait = forgiving
+
+	979.3.15 = {
+	birth = yes
+	}
+
+	1000.1.26 = {
+	add_spouse = watumimba_corkkattirkana_4
+	}
+
+	1010.12.7 = {
+	death = { death_reason = death_siege_of_ufaliracci }
+	}
+}
+
+watumimba_corkkattirkana_4 = {
+	name = "Asha" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = impatient
+	trait = shy
+	trait = content
+
+	983.10.18 = {
+	birth = yes
+	}
+
+	1010.12.7 = {
+	death = { death_reason = death_siege_of_ufaliracci }
+	}
+}
+
+watumimba_corkkattirkana_5 = {
+	name = "Dobira" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+	dynasty = dynasty_ufaliracci_1
+	father = watumimba_corkkattirkana_3
+	mother = watumimba_corkkattirkana_4
+
+	1004.4.18 = {
+	birth = yes
+	}
+
+	1010.12.7 = {
+	death = { death_reason = death_siege_of_ufaliracci }
+	}
+}
+
+watumimba_corkkattirkana_6 = {
+	name = "Deeqa" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+	dynasty = dynasty_ufaliracci_1
+	father = watumimba_corkkattirkana_3
+	mother = watumimba_corkkattirkana_4
+
+	1007.11.12 = {
+	birth = yes
+	}
+
+	1010.12.7 = {
+	death = { death_reason = death_siege_of_ufaliracci }
+	}
+}
+
+watumimba_corkkattirkana_7 = {
+	name = "Hantale" 
+
+	dynasty = dynasty_ufaliracci_1
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_3
+	mother = watumimba_corkkattirkana_4
+
+	1002.11.6 = {
+	birth = yes
+	}
+
+	1010.12.7 = {
+	death = { death_reason = death_vanished }
+	}
+}
+
+watumimba_corkkattirkana_8 = {
+	name = "Liban"
+	culture = watumimba
+	religion = corkkattirkana
+	father = watumimba_corkkattirkana_2
+	mother = watumimba_corkkattirkana_9
+
+	1261.3.30 = {
+	birth = yes
+	}
+
+	1281.3.30 = {
+	trait = impatient
+	trait = diligent
+	trait = stubborn
+	}
+}
+
+watumimba_corkkattirkana_9 = {
+	name = "Aasha"
+	culture = watumimba
+	religion = corkkattirkana
+	female = yes
+
+	1227.4.11 = {
+	birth = yes
+	trait = gh_peasant_birth
+	}
+
+	1293.1.1 = {
+	death = { death_reason = death_old_age }
+	}
+}
+
+watumimba_corkkattirkana_10 = {
+	name = "Sabir"
+	culture = watumimba
+	religion = corkkattirkana
+	father = watumimba_corkkattirkana_2
+	mother = watumimba_corkkattirkana_9
+
+	1264.3.28 = {
+	birth = yes
+	}
+
+	1284.3.28 = {
+	trait = deceitful
+	trait = chaste
+	trait = ambitious
+	}
+}
+
+watumimba_corkkattirkana_11 = {
+	name = "Hamar" 
+
+	dynasty = dyn_pirate_coast_13
+	religion = corkkattirkana
+	culture = ouwabadin
+
+	sexuality = heterosexual
+
+	trait = stubborn
+	trait = ambitious
+	trait = generous
+
+	diplomacy = 5
+	martial = 7
+	stewardship = 6
+	intrigue = 7
+	learning = 3
+	prowess = 3
+
+	trait = education_martial_4
+
+	535.4.19 = {
+	birth = yes
+	trait = magic_good_2
+	}
+
+	564.12.8 = {
+	add_spouse = watumimba_corkkattirkana_12
+	trait = gh_historical_school
+	effect = {
+	set_variable = { name = historical_magic_school value = flag:school_of_night_scrying }
+	set_variable = { name = historical_magic_school_min_spells value = 8 }
+	}
+	}
+
+	591.9.25 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_12 = {
+	name = "Ladan" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = ouwabadin
+
+	sexuality = heterosexual
+
+	trait = fickle
+	trait = paranoid
+	trait = cynical
+
+	diplomacy = 6
+	martial = 5
+	stewardship = 1
+	intrigue = 5
+	learning = 4
+	prowess = 7
+
+	trait = education_diplomacy_4
+
+	547.4.15 = {
+	birth = yes
+	trait = beauty_good_2
+	trait = shrewd
+	}
+
+	614.10.19 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_13 = {
+	name = "Yayyo" 
+
+	dynasty = dyn_pirate_coast_13
+	religion = corkkattirkana
+	culture = ouwabadin
+
+	father = watumimba_corkkattirkana_11
+	mother = watumimba_corkkattirkana_12
+
+	sexuality = heterosexual
+
+	trait = deceitful
+	trait = arrogant
+	trait = patient
+
+	diplomacy = 3
+	martial = 5
+	stewardship = 8
+	intrigue = 5
+	learning = 7
+	prowess = 5
+
+	trait = education_martial_2
+
+	566.11.10 = {
+	birth = yes
+	trait = magic_good_3
+	}
+
+	596.3.13 = {
+	give_nickname = nick_the_foolish
+	death = { death_reason = death_drowned  }
+	}
+}
+
+watumimba_corkkattirkana_13a = {
+	name = "Dagale" 
+
+	dynasty = dyn_pirate_coast_13
+	religion = corkkattirkana
+	culture = ouwabadin
+
+	father = watumimba_corkkattirkana_11
+	mother = watumimba_corkkattirkana_12
+
+	sexuality = heterosexual
+
+	trait = deceitful
+	trait = arrogant
+	trait = patient
+
+	diplomacy = 3
+	martial = 5
+	stewardship = 8
+	intrigue = 5
+	learning = 7
+	prowess = 5
+
+	trait = education_stewardship_4
+
+	566.11.10 = {
+		birth = yes
+		trait = magic_good_1
+		trait = beauty_good_1
+	}
+
+	587.9.1 = {
+		add_spouse = watumimba_corkkattirkana_14
+	}
+
+	596.3.13 = {
+		effect = {
+			remove_trait = deceitful
+			remove_trait = arrogant
+		}
+		trait = humble
+		trait = honest
+		trait = depressed_1
+	}
+
+	607.8.28 = {
+	death = { death_reason = death_natural_causes  }
+	}
+}
+
+watumimba_corkkattirkana_14 = {
+	name = "Amburo" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = ouwabadin
+
+	sexuality = heterosexual
+
+	trait = impatient
+	trait = cynical
+	trait = ambitious
+
+	diplomacy = 10
+	martial = 10
+	stewardship = 8
+	intrigue = 6
+	learning = 7
+	prowess = 6
+
+	trait = education_diplomacy_2
+
+	570.9.25 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	624.3.25 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_15 = {
+	name = "Hamar" 
+
+	dynasty = dyn_pirate_coast_13
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_13a
+	mother = watumimba_corkkattirkana_14
+
+	sexuality = heterosexual
+
+	trait = wrathful
+	trait = vengeful
+	trait = ambitious
+
+	diplomacy = 5
+	martial = 6
+	stewardship = 5
+	intrigue = 10
+	learning = 2
+	prowess = 7
+
+	trait = education_intrigue_3
+
+	595.7.2 = {
+	birth = yes
+	trait = magic_good_2
+	}
+
+	614.8.2 = {
+	add_spouse = watumimba_corkkattirkana_16
+	}
+
+	626.1.1 = {
+	give_nickname = nick_the_merciless
+	}
+
+	635.2.21 = {
+	trait = incapable
+	}
+
+	643.2.15 = {
+	death = { death_reason = death_incapable }
+	}
+}
+
+watumimba_corkkattirkana_16 = {
+	name = "Dobira" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = sadistic
+	trait = fickle
+	trait = forgiving
+
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 6
+	learning = 7
+	prowess = 5
+
+	trait = education_learning_3
+
+	597.10.16 = {
+	birth = yes
+	}
+
+	634.5.27 = {
+	death = { death_reason = death_pneumonic }
+	}
+}
+
+watumimba_corkkattirkana_17 = {
+	name = "Sahra" 
+	female = yes
+
+	dynasty = dyn_pirate_coast_13
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_15
+	mother = watumimba_corkkattirkana_16
+
+	sexuality = homosexual
+
+	trait = diligent
+	trait = stubborn
+	trait = temperate
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 6
+	intrigue = 4
+	learning = 10
+	prowess = 4
+
+	trait = education_stewardship_3
+
+	615.6.20 = {
+	birth = yes
+	trait = magic_good_3
+	trait = wheezing
+	}
+
+	645.5.22 = {
+	add_matrilineal_spouse = watumimba_corkkattirkana_18
+	}
+
+	664.1.14 = {
+	death = { death_reason = death_mysterious }
+	}
+}
+
+watumimba_corkkattirkana_18 = {
+	name = "Abadir" 
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = gluttonous
+	trait = greedy
+	trait = calm
+
+	diplomacy = 6
+	martial = 6
+	stewardship = 3
+	intrigue = 6
+	learning = 4
+	prowess = 4
+
+	trait = education_diplomacy_2
+
+	628.8.6 = {
+	birth = yes
+	}
+
+	662.4.15 = {
+	death = { death_reason = death_hunting_accident }
+	}
+}
+
+watumimba_corkkattirkana_19 = {
+	name = "Umardin" 
+
+	dynasty = dyn_pirate_coast_13
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_18
+	mother = watumimba_corkkattirkana_17
+
+	sexuality = heterosexual
+
+	trait = generous
+	trait = gregarious
+	trait = calm
+
+	diplomacy = 6
+	martial = 9
+	stewardship = 5
+	intrigue = 4
+	learning = 6
+	prowess = 5
+
+	trait = education_martial_3
+
+	658.6.20 = {
+	birth = yes
+	}
+
+	677.9.15 = {
+	add_spouse = watumimba_corkkattirkana_20
+	trait = gh_historical_blademaster_2
+	}
+
+	726.3.10 = {
+	death = { death_reason = death_coup_successful killer = watumimba_corkkattirkana_26 }
+	}
+}
+
+watumimba_corkkattirkana_20 = {
+	name = "Faadumo" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = just
+	trait = forgiving
+	trait = deceitful
+
+	diplomacy = 8
+	martial = 6
+	stewardship = 6
+	intrigue = 5
+	learning = 3
+	prowess = 4
+
+	trait = education_diplomacy_2
+
+	660.8.12 = {
+	birth = yes
+	}
+
+	726.3.10 = {
+	death = { death_reason = death_coup_successful killer = watumimba_corkkattirkana_26 }
+	}
+}
+
+watumimba_corkkattirkana_21 = {
+	name = "Geesi" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_19
+	mother = watumimba_corkkattirkana_20
+
+	sexuality = heterosexual
+
+	trait = chaste
+	trait = craven
+	trait = patient
+
+	diplomacy = 8
+	martial = 6
+	stewardship = 8
+	intrigue = 10
+	learning = 6
+	prowess = 3
+
+	trait = education_intrigue_3
+
+	679.12.24 = {
+	birth = yes
+	trait = magic_good_2
+	}
+
+	722.2.7 = {
+	death = { death_reason = death_ritual killer = watumimba_corkkattirkana_23 }
+	}
+}
+
+watumimba_corkkattirkana_22 = {
+	name = "Cawo" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_19
+	mother = watumimba_corkkattirkana_20
+
+	sexuality = heterosexual
+
+	trait = generous
+	trait = vengeful
+	trait = ambitious
+
+	diplomacy = 8
+	martial = 4
+	stewardship = 6
+	intrigue = 7
+	learning = 6
+	prowess = 7
+
+	trait = education_diplomacy_2
+
+	682.1.19 = {
+	birth = yes
+	trait = magic_good_6
+	}
+
+	710.3.21 = {
+	death = { death_reason = death_childbirth }
+	}
+}
+
+watumimba_corkkattirkana_23 = {
+	name = "Haqq" 
+
+	religion = corkkattirkana
+	culture = watumimba
+	dynasty = dyn_pirate_coast_13
+	father = watumimba_corkkattirkana_15
+	mother = watumimba_corkkattirkana_16
+
+	sexuality = heterosexual
+
+	trait = fickle
+	trait = ambitious
+	trait = callous
+
+	diplomacy = 4
+	martial = 6
+	stewardship = 5
+	intrigue = 5
+	learning = 10
+	prowess = 6
+
+	trait = education_arcana_4
+
+	618.4.23 = {
+	birth = yes
+	trait = magic_good_7
+	}
+
+	638.1.1 = {
+	trait = gh_historical_school
+	trait = shrewd
+	effect = {
+	set_variable = { name = historical_magic_school value = flag:school_of_night_scrying }
+	set_variable = { name = historical_magic_school_min_spells value = 8 }
+	}
+	}
+
+	650.1.1 = {
+	trait = gh_sage
+	effect = {
+	set_variable = { name = historical_magic_school value = flag:school_of_malignancies }
+	set_variable = { name = historical_magic_school_min_spells value = 9 }
+	}
+	}
+
+	660.1.1 = {
+	trait = gh_transmuturgist
+	trait = gh_arcanist
+	}
+
+	700.1.1 = {
+	add_spouse = watumimba_corkkattirkana_22
+	}
+
+	722.2.7 = {
+	trait = kinslayer_1
+	}
+	726.3.10 = {
+	death = { death_reason = death_coup_successful killer = watumimba_corkkattirkana_26 }
+	}
+}
+
+watumimba_corkkattirkana_24 = {
+	name = "Iftiin" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+	dynasty = dyn_pirate_coast_13
+	father = watumimba_corkkattirkana_15
+	mother = watumimba_corkkattirkana_16
+
+	sexuality = heterosexual
+
+	trait = gluttonous
+	trait = impatient
+	trait = diligent
+
+	diplomacy = 9
+	martial = 6
+	stewardship = 7
+	intrigue = 5
+	learning = 5
+	prowess = 7
+
+	trait = education_diplomacy_3
+
+	619.12.9 = {
+	birth = yes
+	trait = magic_good_3
+	trait = gh_gedeora_child
+	}
+
+	669.5.3 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_25 = {
+	name = "Balad" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+	dynasty = dyn_pirate_coast_13
+	father = watumimba_corkkattirkana_15
+	mother = watumimba_corkkattirkana_16
+
+	sexuality = heterosexual
+
+	trait = calm
+	trait = lustful
+	trait = brave
+
+	diplomacy = 6
+	martial = 9
+	stewardship = 5
+	intrigue = 5
+	learning = 8
+	prowess = 6
+
+	trait = education_martial_2
+
+	621.11.1 = {
+	birth = yes
+	trait = beauty_good_3
+	}
+
+	641.1.1 = {
+	trait = gh_historical_blademaster_1
+	}
+
+	650.1.1 = {
+	trait = one_eyed
+	}
+
+	676.5.16 = {
+	death = { death_reason = death_battle }
+	}
+}
+
+watumimba_corkkattirkana_26 = {
+	name = "Sa_ad" 
+
+	religion = corkkattirkana
+	culture = watumimba
+
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = deceitful
+	trait = patient
+
+	diplomacy = 8
+	martial = 6
+	stewardship = 8
+	intrigue = 10
+	learning = 6
+	prowess = 3
+
+	trait = education_martial_3
+
+	679.12.24 = {
+	birth = yes
+	trait = physique_good_2
+	}
+
+	700.1.1 = {
+	trait = rough_terrain_expert
+	trait = strategist
+	}
+
+	726.3.10 = {
+	give_nickname = nick_the_betrayer
+	}
+
+	734.9.13 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_27 = {
+	name = "Sa_ad" 
+
+	father = watumimba_corkkattirkana_26
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = craven
+	trait = deceitful
+	trait = patient
+
+	trait = education_martial_1
+
+	710.2.8 = {
+	birth = yes
+	}
+
+
+
+	734.12.20 = {
+	death = { death_reason = death_mysterious }
+	}
+}
+
+
+watumimba_corkkattirkana_28 = {
+	name = "Awrala" 
+	female = yes
+	dynasty = dyn_pirate_coast_14
+	religion = corkkattirkana
+	culture = watumimba
+	father = watumimba_corkkattirkana_63
+	mother = watumimba_corkkattirkana_64
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = greedy
+	trait = callous
+
+	diplomacy = 5
+	martial = 2
+	stewardship = 8
+	intrigue = 6
+	learning = 6
+	prowess = 9
+
+	trait = education_stewardship_3
+
+	680.9.15 = {
+	birth = yes
+	trait = magic_good_2
+	trait = physique_good_2
+	}
+
+	697.6.18 = {
+		add_matrilineal_spouse = watumimba_corkkattirkana_29
+	}
+
+	700.1.1 = {
+	trait = administrator
+	trait = lifestyle_gardener
+	}
+
+	745.12.14 = {
+	death = { death_reason = death_consumption }
+	}
+}
+
+watumimba_corkkattirkana_29 = {
+	name = "Liban" 
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = deceitful
+	trait = vengeful
+	trait = lustful
+
+	diplomacy = 7
+	martial = 5
+	stewardship = 4
+	intrigue = 5
+	learning = 6
+	prowess = 7
+
+	trait = education_arcana_3
+
+	680.10.15 = {
+	birth = yes
+	trait = magic_good_1
+	}
+
+	750.8.10 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_30 = {
+	name = "Jamyras" 
+
+	dynasty = dyn_pirate_coast_14
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_29
+	mother = watumimba_corkkattirkana_28
+
+	sexuality = heterosexual
+
+	trait = temperate
+	trait = fickle
+	trait = calm
+
+	diplomacy = 6
+	martial = 7
+	stewardship = 10
+	intrigue = 7
+	learning = 9
+	prowess = 9
+
+	trait = education_stewardship_5
+
+	706.7.1 = {
+	birth = yes
+	trait = magic_good_2
+	trait = intellect_good_1
+	trait = fecund
+	}
+
+	723.1.6 = {
+	add_spouse = watumimba_corkkattirkana_31
+	}
+
+	726.1.1 = {
+	trait = gh_historical_school
+	effect = {
+	set_variable = { name = historical_magic_school value = flag:school_of_night_scrying }
+	set_variable = { name = historical_magic_school_min_spells value = 8 }
+	}
+	trait = architect
+	trait = poet
+	trait = gh_historical_blademaster_2
+	}
+
+	757.6.16 = {
+	trait = gh_widow
+	}
+
+	778.1.3 = {
+	death = { death_reason = death_old_age }
+	}
+}
+
+watumimba_corkkattirkana_31 = {
+	name = "Khadra" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = craven
+	trait = temperate
+	trait = paranoid
+
+	diplomacy = 5
+	martial = 6
+	stewardship = 6
+	intrigue = 1
+	learning = 7
+	prowess = 10
+
+	trait = education_learning_1
+
+	706.11.19 = {
+	birth = yes
+	}
+
+	757.6.16 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_32a = {
+	name = "Kadhafo" 
+
+	dynasty = dyn_pirate_coast_14
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_30
+	mother = watumimba_corkkattirkana_31
+
+	sexuality = bisexual
+
+	trait = lustful
+	trait = ambitious
+	trait = craven
+
+	trait = education_arcana_3
+
+	730.4.4 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	791.11.29 = {
+	death = { death_reason = death_refused_to_be_imprisoned } # Killed during Claim War by Kathuni privateers
+	}
+}
+
+watumimba_corkkattirkana_32b = {
+	name = "Xalwo" 
+	female = yes
+
+	dynasty = dyn_pirate_coast_14
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_30
+	mother = watumimba_corkkattirkana_31
+
+	sexuality = bisexual
+
+	trait = wrathful
+	trait = humble
+	trait = lustful
+
+	trait = education_martial_4
+
+	725.2.14 = {
+	birth = yes
+	trait = magic_good_2
+	}
+
+	810.11.29 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_32 = {
+	name = "Hamar" 
+
+	dynasty = dyn_pirate_coast_14
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_30
+	mother = watumimba_corkkattirkana_31
+
+	sexuality = asexual
+
+	trait = patient
+	trait = content
+	trait = brave
+
+	diplomacy = 8
+	martial = 4
+	stewardship = 4
+	intrigue = 5
+	learning = 2
+	prowess = 5
+
+	trait = education_diplomacy_4
+
+	725.2.14 = {
+	birth = yes
+	}
+
+	750.4.18 = {
+	add_spouse = watumimba_corkkattirkana_33
+	}
+
+	788.10.6 = {
+	death = { death_reason = death_fallen_from_a_mountain }
+	}
+}
+
+watumimba_corkkattirkana_33 = {
+	name = "Alaso" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = wrathful
+	trait = trusting
+	trait = ambitious
+
+	diplomacy = 4
+	martial = 7
+	stewardship = 3
+	intrigue = 7
+	learning = 6
+	prowess = 9
+
+	trait = education_martial_2
+
+	733.11.22 = {
+	birth = yes
+	}
+
+	788.11.6 = {
+	death = { death_reason = death_heart_attack }
+	}
+}
+
+watumimba_corkkattirkana_34 = {
+	name = "Siciid" 
+
+	dynasty = dyn_pirate_coast_14
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_32
+	mother = watumimba_corkkattirkana_33
+
+	sexuality = homosexual
+
+	trait = fickle
+	trait = wrathful
+	trait = brave
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 6
+	intrigue = 6
+	learning = 8
+	prowess = 6
+
+	trait = education_martial_3
+
+	755.11.5 = {
+	birth = yes
+	trait = magic_good_2
+	trait = wheezing
+	}
+
+	778.9.10 = {
+	add_spouse = watumimba_corkkattirkana_35
+	trait = strategist
+	}
+
+	795.1.1 = {
+	give_nickname = nick_the_immovable
+	}
+
+	801.11.29 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_35 = {
+	name = "Nasteexo" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = calm
+	trait = gluttonous
+
+	diplomacy = 8
+	martial = 5
+	stewardship = 6
+	intrigue = 11
+	learning = 7
+	prowess = 6
+
+	trait = education_intrigue_4
+
+	761.2.1 = {
+	birth = yes
+	}
+
+	819.3.23 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_36 = {
+	name = "Astur" 
+	female = yes
+	dynasty = dyn_pirate_coast_14
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_34
+	mother = watumimba_corkkattirkana_35
+
+	sexuality = asexual
+
+	trait = gregarious
+	trait = chaste
+	trait = arrogant
+
+	diplomacy = 5
+	martial = 10
+	stewardship = 5
+	intrigue = 5
+	learning = 4
+	prowess = 7
+
+	trait = education_learning_4
+
+	782.1.15 = {
+	birth = yes
+	}
+
+	800.1.1 = {
+	trait = scholar
+	trait = lifestyle_physician
+	trait = celibate
+	}
+
+	818.7.22 = {
+	death = { death_reason = death_ill }
+	}
+}
+
+watumimba_corkkattirkana_37 = {
+	name = "Dagale" 
+	dynasty = dyn_pirate_coast_14
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_34
+	mother = watumimba_corkkattirkana_35
+
+	sexuality = heterosexual
+
+	trait = cynical
+	trait = impatient
+	trait = stubborn
+
+	diplomacy = 6
+	martial = 8
+	stewardship = 4
+	intrigue = 8
+	learning = 6
+	prowess = 6
+
+	trait = education_martial_1
+
+	785.8.4 = {
+	birth = yes
+	}
+
+	819.1.1 = {
+	add_spouse = watumimba_corkkattirkana_40
+	}
+	820.2.1 = {
+	death = { death_reason = death_struck_by_lightning }
+	}
+}
+
+watumimba_corkkattirkana_38 = {
+	name = "Isman" 
+	dynasty = dyn_pirate_coast_14
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_34
+	mother = watumimba_corkkattirkana_35
+
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = impatient
+	trait = trusting
+
+	trait = education_martial_3
+
+	788.3.27 = {
+	birth = yes
+	trait = magic_good_2
+	trait = intellect_bad_1
+	}
+
+	820.2.2 = {
+	add_spouse = watumimba_corkkattirkana_40
+	}
+
+	820.10.3 = {
+	death = { death_reason = death_mysterious }
+	}
+}
+
+watumimba_corkkattirkana_39 = {
+	name = "Iftiin" 
+	dynasty = dyn_pirate_coast_14
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_34
+	mother = watumimba_corkkattirkana_35
+
+	sexuality = heterosexual
+
+	trait = cynical
+	trait = sadistic
+	trait = lustful
+
+	trait = education_intrigue_3
+
+	785.8.4 = {
+	birth = yes
+	trait = magic_good_2
+	trait = infertile
+	}
+
+	806.1.1 = {
+	add_matrilineal_spouse = watumimba_corkkattirkana_40
+	}
+
+	847.3.1 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_40 = {
+	name = "Balad"
+	female = yes
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = gregarious
+	trait = compassionate
+	trait = patient
+
+	trait = education_diplomacy_3
+
+	785.12.1 = {
+	birth = yes
+	}
+
+	870.3.2 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_41 = {
+	name = "Balad" 
+
+	dynasty = dyn_pirate_coast_14
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_39
+	mother = watumimba_corkkattirkana_40
+   
+	807.1.2 = {
+	birth = yes
+	trait = physique_bad_3
+	trait = magic_good_5
+	}
+	807.1.2 = {
+	death = { death_reason = death_delivery }
+	}
+}
+
+watumimba_corkkattirkana_42 = {
+	name = "Harire" 
+
+	dynasty = dyn_pirate_coast_14
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_39
+	mother = watumimba_corkkattirkana_40
+   
+	810.4.16 = {
+	birth = yes
+	trait = physique_bad_3
+	trait = gh_gedeora_child
+	trait = magic_good_3
+	}
+	810.4.20 = {
+	death = { death_reason = death_delivery }
+	}
+}
+
+watumimba_corkkattirkana_43 = {
+	name = "Haqq" 
+
+	dynasty = dyn_pirate_coast_14
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_39
+	mother = watumimba_corkkattirkana_40
+   
+	811.8.7 = {
+	birth = yes
+	trait = wheezing
+	trait = magic_good_2
+	}
+	816.4.6 = {
+	death = { death_reason = death_snapped_neck_climbing_tree }
+	}
+}
+
+watumimba_corkkattirkana_44 = {
+	name = "Jiinow" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = lustful
+	trait = compassionate
+	trait = deceitful
+
+	trait = education_intrigue_2
+
+	788.3.26 = {
+	birth = yes
+	}
+
+	865.4.14 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_45 = {
+	name = "Jamyras" 
+
+	dynasty = dyn_pirate_coast_14
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_38
+	mother = watumimba_corkkattirkana_44
+
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = compassionate
+	trait = deceitful
+
+	trait = education_diplomacy_4
+
+	821.4.20 = {
+	birth = yes
+	trait = magic_good_3
+	trait = wheezing
+	}
+
+	899.12.15 = {
+	death = { death_reason = death_execution_killer killer = lich_culture_rejection_21 }
+	}
+}
+
+watumimba_corkkattirkana_46 = {
+	name = "Aul" 
+
+	dynasty = dynasty_ufaliracci_1
+	religion = corkkattirkana
+	culture = watumimba
+	father = watumimba_corkkattirkana_97
+
+	sexuality = heterosexual
+
+	trait = humble
+	trait = fickle
+	trait = gluttonous
+
+	diplomacy = 7
+	martial = 8
+	stewardship = 7
+	intrigue = 3
+	learning = 6
+	prowess = 8
+
+	trait = education_martial_4
+
+	875.2.7 = {
+	birth = yes
+	trait = physique_good_1
+	trait = magic_good_2
+	}
+
+	896.8.20 = {
+	add_spouse = watumimba_corkkattirkana_47
+	trait = gh_historical_blademaster_2
+	}
+
+	899.12.29 = {
+	give_nickname = nick_slayer_of_liches
+	}
+
+	926.4.12 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_47 = {
+	name = "Adey" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = craven
+	trait = callous
+	trait = forgiving
+
+	diplomacy = 6
+	martial = 7
+	stewardship = 3
+	intrigue = 6
+	learning = 6
+	prowess = 5
+
+	trait = education_martial_3
+
+	879.3.26 = {
+	birth = yes
+	trait = physique_bad_1
+	trait = beauty_good_2
+	}
+
+	944.4.10 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_48 = {
+	name = "Aul" 
+
+	dynasty = dynasty_ufaliracci_1
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_46
+	mother = watumimba_corkkattirkana_47
+
+	sexuality = heterosexual
+
+	trait = paranoid
+	trait = humble
+	trait = compassionate
+
+	diplomacy = 5
+	martial = 7
+	stewardship = 5
+	intrigue = 5
+	learning = 6
+	prowess = 4
+
+	trait = education_stewardship_2
+
+	903.10.24 = {
+	birth = yes
+	}
+
+	923.6.7 = {
+	add_spouse = watumimba_corkkattirkana_49
+	}
+
+	934.1.1 = {
+	trait = cancer
+	}
+	935.7.1 = {
+	death = { death_reason = death_cancer }
+	}
+}
+
+watumimba_corkkattirkana_49 = {
+	name = "Dobira" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = wrathful
+	trait = gluttonous
+	trait = lazy
+
+	diplomacy = 3
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 9
+	prowess = 10
+
+	trait = education_learning_3
+
+	904.10.6 = {
+	birth = yes
+	}
+
+	943.2.21 = {
+	death = { death_reason = death_ill }
+	}
+}
+
+watumimba_corkkattirkana_50 = {
+	name = "Adey" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+	dynasty = dynasty_ufaliracci_1
+	father = watumimba_corkkattirkana_48
+	mother = watumimba_corkkattirkana_49
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = greedy
+	trait = gluttonous
+
+	diplomacy = 5
+	martial = 7
+	stewardship = 4
+	intrigue = 4
+	learning = 6
+	prowess = 3
+
+	trait = education_intrigue_3
+
+	923.9.9 = {
+	birth = yes
+	trait = disputed_heritage
+	}
+
+	941.3.6 = {
+	death = { death_reason = death_coup_successful killer = watumimba_corkkattirkana_51 }
+	}
+}
+
+watumimba_corkkattirkana_51 = {
+	name = "Aul" 
+
+	dynasty = dynasty_ufaliracci_1
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_48
+	mother = watumimba_corkkattirkana_49
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = fickle
+	trait = compassionate
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 3
+	intrigue = 6
+	learning = 7
+	prowess = 9
+
+	trait = education_diplomacy_4
+
+	925.10.19 = {
+	birth = yes
+	}
+
+	941.3.6 = {
+	trait = kinslayer_3
+	}
+
+	953.6.17 = {
+	add_spouse = watumimba_corkkattirkana_52
+	}
+
+	954.10.10 = {
+	death = { death_reason = death_ill }
+	}
+}
+
+watumimba_corkkattirkana_52 = {
+	name = "Canab" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = patient
+	trait = compassionate
+	trait = lazy
+
+
+	928.10.6 = {
+	birth = yes
+	}
+
+	978.2.21 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_53 = {
+	name = "Hamar" 
+
+	dynasty = dynasty_ufaliracci_1
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_51
+	mother = watumimba_corkkattirkana_52
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = arrogant
+	trait = shy
+
+	diplomacy = 8
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 4
+	prowess = 6
+
+	trait = education_diplomacy_2
+
+	954.1.3 = {
+	birth = yes
+	}
+
+	974.4.23 = {
+	add_spouse = watumimba_corkkattirkana_54
+	}
+
+	989.8.14 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_54 = {
+	name = "Maka" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = gregarious
+	trait = content
+	trait = arbitrary
+
+	diplomacy = 7
+	martial = 7
+	stewardship = 8
+	intrigue = 4
+	learning = 8
+	prowess = 4
+
+	trait = education_stewardship_4
+
+	957.6.17 = {
+	birth = yes
+	}
+
+	1010.12.7 = {
+	death = { death_reason = death_siege_of_ufaliracci }
+	}
+}
+
+watumimba_corkkattirkana_55 = {
+	name = "Asli" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_53
+	mother = watumimba_corkkattirkana_54
+
+	sexuality = heterosexual
+
+	trait = gregarious
+	trait = chaste
+	trait = content
+
+	diplomacy = 3
+	martial = 7
+	stewardship = 6
+	intrigue = 6
+	learning = 4
+	prowess = 6
+
+	trait = education_martial_3
+
+	979.9.27 = {
+	birth = yes
+	}
+
+	1010.12.7 = {
+	death = { death_reason = death_siege_of_ufaliracci }
+	}
+}
+
+watumimba_corkkattirkana_56 = {
+	name = "Aul" 
+
+	dynasty = dynasty_ufaliracci_1
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_53
+	mother = watumimba_corkkattirkana_54
+
+	sexuality = heterosexual
+
+	trait = temperate
+	trait = wrathful
+	trait = just
+
+	diplomacy = 2
+	martial = 6
+	stewardship = 6
+	intrigue = 5
+	learning = 10
+	prowess = 8
+
+	trait = education_learning_3
+
+	981.11.28 = {
+	birth = yes
+	}
+
+	1010.12.1 = {
+	add_spouse = watumimba_corkkattirkana_57
+	}
+
+	1010.12.7 = {
+	death = { death_reason = death_siege_of_ufaliracci }
+	}
+}
+
+watumimba_corkkattirkana_57 = {
+	name = "Maka" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = forgiving
+	trait = greedy
+	trait = callous
+
+	diplomacy = 4
+	martial = 7
+	stewardship = 5
+	intrigue = 4
+	learning = 4
+	prowess = 3
+
+	trait = education_martial_3
+
+	993.4.21 = {
+	birth = yes
+	}
+
+	1010.12.7 = {
+	death = { death_reason = death_siege_of_ufaliracci }
+	}
+}
+
+
+watumimba_corkkattirkana_58 = {
+	name = "Hamar" 
+
+	dynasty = dynasty_ufaliracci_1
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_48
+	mother = watumimba_corkkattirkana_49
+
+	sexuality = heterosexual
+
+	trait = generous
+	trait = stubborn
+	trait = patient
+
+	diplomacy = 8
+	martial = 4
+	stewardship = 6
+	intrigue = 9
+	learning = 5
+	prowess = 9
+
+	trait = education_intrigue_2
+
+	927.3.13 = {
+	birth = yes
+	}
+
+	959.10.18 = {
+	add_spouse = watumimba_corkkattirkana_59
+	trait = drunkard
+	}
+
+	968.5.4 = {
+	death = { death_reason = death_drinking_passive }
+	}
+}
+
+watumimba_corkkattirkana_59 = {
+	name = "Hibaaq" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = cynical
+	trait = humble
+	trait = diligent
+
+	diplomacy = 8
+	martial = 3
+	stewardship = 6
+	intrigue = 7
+	learning = 5
+	prowess = 5
+
+	trait = education_diplomacy_3
+
+	942.8.27 = {
+	birth = yes
+	}
+
+	1010.9.26 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_60 = {
+	name = "Harire" 
+
+	dynasty = dynasty_ufaliracci_1
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_58
+	mother = watumimba_corkkattirkana_59
+
+	960.4.1 = {
+	birth = yes
+	trait = twin
+	}
+
+	973.3.16 = {
+	death = { death_reason = death_drowned }
+	}
+}
+
+
+watumimba_corkkattirkana_61 = {
+	name = "Alaso" 
+	female = yes
+	dynasty = dynasty_ufaliracci_1
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_58
+	mother = watumimba_corkkattirkana_59
+
+	sexuality = asexual
+
+	trait = temperate
+	trait = humble
+	trait = diligent
+
+	diplomacy = 6
+	martial = 8
+	stewardship = 8
+	intrigue = 3
+	learning = 6
+	prowess = 6
+
+	trait = education_martial_2
+
+	960.4.1 = {
+	birth = yes
+	trait = twin
+	}
+
+	978.1.1 = {
+	add_matrilineal_spouse = watumimba_corkkattirkana_62
+	}
+
+	999.4.15 = {
+	death = { death_reason = death_typhus }
+	}
+}
+
+watumimba_corkkattirkana_62 = {
+	name = "Abdale" 
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = forgiving
+	trait = greedy
+	trait = callous
+
+	diplomacy = 4
+	martial = 7
+	stewardship = 5
+	intrigue = 4
+	learning = 4
+	prowess = 3
+
+	trait = education_intrigue_2
+
+	962.4.21 = {
+	birth = yes
+	}
+
+	1010.12.7 = {
+	death = { death_reason = death_siege_of_ufaliracci }
+	}
+}
+
+watumimba_corkkattirkana_63 = {
+	name = "Irir" 
+	dynasty = dyn_pirate_coast_14
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = education_stewardship_2
+
+	635.9.15 = {
+	birth = yes
+	trait = physique_good_1
+	}
+
+	655.1.1 = {
+		add_spouse = watumimba_corkkattirkana_64
+	}
+
+	707.12.14 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_64 = {
+	name = "Mariam" 
+	female = yes
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	641.6.29 = {
+	birth = yes
+	trait = magic_good_1
+	}
+
+	709.8.10 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_65 = {
+	name = "Omer" 
+
+	religion = corkkattirkana
+	culture = watumimba
+	dynasty = dyn_pirate_coast_13
+	mother = watumimba_corkkattirkana_24
+
+	sexuality = heterosexual
+	trait = education_diplomacy_3
+
+	641.12.9 = {
+	birth = yes
+	trait = magic_good_1
+	trait = legitimized_bastard
+	}
+
+	710.5.30 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_66 = {
+	name = "Dhidhin" 
+
+	religion = corkkattirkana
+	culture = watumimba
+	dynasty = dyn_pirate_coast_13
+	father = watumimba_corkkattirkana_65
+
+	sexuality = heterosexual
+
+	trait = education_diplomacy_3
+
+	675.4.27 = {
+	birth = yes
+	trait = magic_good_2
+	}
+
+	747.5.3 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_67 = {
+	name = "Nahwi" 
+
+	religion = corkkattirkana
+	culture = watumimba
+	dynasty = dyn_pirate_coast_13
+	father = watumimba_corkkattirkana_66
+
+	sexuality = heterosexual
+
+	702.4.27 = {
+	birth = yes
+	}
+
+	778.10.9 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_68 = {
+	name = "Aydahis" 
+
+	religion = corkkattirkana
+	culture = watumimba
+	dynasty = dyn_pirate_coast_13
+	father = watumimba_corkkattirkana_67
+
+	sexuality = heterosexual
+
+	trait = education_diplomacy_3
+
+	728.10.30 = {
+	birth = yes
+	trait = magic_good_5
+	}
+
+	748.1.1 = {
+	trait = ambitious
+	trait = trusting
+	trait = fickle
+	}
+
+	761.1.1 = {
+	add_spouse = kathunian_mogudorism_4
+	}
+
+	799.6.26 = {
+	death = { death_reason = death_siege }
+	}
+}
+
+watumimba_corkkattirkana_69 = {
+	name = "Hamar" 
+
+	religion = corkkattirkana
+	culture = watumimba
+	dynasty = dyn_pirate_coast_13
+	father = watumimba_corkkattirkana_68
+	mother = kathunian_mogudorism_4
+
+	sexuality = heterosexual
+
+	763.10.30 = {
+	birth = yes
+	trait = magic_good_1
+	trait = beauty_bad_1
+	}
+
+	799.6.26 = {
+	death = { death_reason = death_siege }
+	}
+}
+
+watumimba_corkkattirkana_70 = {
+	name = "Sahra" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+	dynasty = dyn_pirate_coast_13
+	father = watumimba_corkkattirkana_68
+	mother = kathunian_mogudorism_4
+
+	sexuality = heterosexual
+
+	765.4.26 = {
+	birth = yes
+	trait = magic_good_2
+	}
+
+	799.6.26 = {
+	death = { death_reason = death_siege }
+	}
+}
+
+watumimba_corkkattirkana_71 = {
+	name = "Yusuf" 
+
+	dynasty = dynasty_ufaliracci_1
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = humble
+	trait = fickle
+	trait = gluttonous
+
+	diplomacy = 7
+	martial = 8
+	stewardship = 7
+	intrigue = 3
+	learning = 6
+	prowess = 8
+
+	trait = education_martial_4
+
+	700.12.3 = {
+	birth = yes
+	}
+
+	719.3.19 = {
+	add_spouse = watumimba_corkkattirkana_72
+	}
+
+	762.2.7 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_72 = {
+	name = "Nasteexo" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = craven
+	trait = callous
+	trait = forgiving
+
+	diplomacy = 6
+	martial = 7
+	stewardship = 3
+	intrigue = 6
+	learning = 6
+	prowess = 5
+
+	trait = education_martial_3
+
+	702.1.2 = {
+	birth = yes
+	}
+
+	759.12.17 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_73 = {
+	name = "Hantale" 
+
+	dynasty = dynasty_ufaliracci_1
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_71
+	mother = watumimba_corkkattirkana_72
+
+	sexuality = heterosexual
+
+	trait = paranoid
+	trait = humble
+	trait = sadistic
+
+	diplomacy = 5
+	martial = 7
+	stewardship = 10
+	intrigue = 5
+	learning = 6
+	prowess = 4
+
+	trait = education_stewardship_4
+
+	720.6.2 = {
+	birth = yes
+	}
+
+	744.2.12 = {
+	add_spouse = watumimba_corkkattirkana_74
+	}
+
+	779.2.23 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_74 = {
+	name = "Barni" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = wrathful
+	trait = gluttonous
+	trait = lazy
+
+	diplomacy = 3
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 9
+	prowess = 10
+
+	trait = education_learning_3
+
+	727.5.15 = {
+	birth = yes
+	}
+
+	757.1.1 = {
+	trait = cancer
+	}
+	757.9.6 = {
+	death = { death_reason = death_cancer }
+	}
+}
+
+watumimba_corkkattirkana_75 = {
+	name = "Khadra" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_73
+	mother = watumimba_corkkattirkana_74
+
+	sexuality = heterosexual
+
+	trait = just
+	trait = generous
+	trait = patient
+
+	diplomacy = 5
+	martial = 7
+	stewardship = 4
+	intrigue = 4
+	learning = 6
+	prowess = 3
+
+	trait = education_martial_3
+
+	748.10.25 = {
+	birth = yes
+	}
+
+	813.2.17 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_76 = {
+	name = "Yayyo" 
+
+	dynasty = dynasty_ufaliracci_1
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_73
+	mother = watumimba_corkkattirkana_74
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = fickle
+	trait = compassionate
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 3
+	intrigue = 6
+	learning = 7
+	prowess = 9
+
+	trait = education_diplomacy_4
+
+	749.11.3 = {
+	birth = yes
+	}
+
+	778.5.8 = {
+	add_spouse = watumimba_corkkattirkana_77
+	}
+
+	806.2.14 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_77 = {
+	name = "Waris" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = greedy
+	trait = arbitrary
+	trait = shy
+
+	diplomacy = 6
+	martial = 6
+	stewardship = 5
+	intrigue = 6
+	learning = 5
+	prowess = 3
+
+	trait = education_diplomacy_2
+
+	761.7.17 = {
+	birth = yes
+	}
+
+	828.5.8 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_78 = {
+	name = "Siciid" 
+
+	dynasty = dynasty_ufaliracci_1
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_76
+	mother = watumimba_corkkattirkana_77
+
+	sexuality = heterosexual
+
+	trait = shy
+	trait = lustful
+	trait = lazy
+
+	diplomacy = 6
+	martial = 4
+	stewardship = 9
+	intrigue = 7
+	learning = 6
+	prowess = 5
+
+	trait = education_stewardship_2
+
+	780.11.13 = {
+	birth = yes
+	}
+
+	809.12.19 = {
+	add_spouse = watumimba_corkkattirkana_79
+	}
+
+	826.11.20 = {
+	death = { death_reason = death_battle }
+	}
+}
+
+watumimba_corkkattirkana_79 = {
+	name = "Haweeya" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = humble
+	trait = paranoid
+	trait = brave
+
+	diplomacy = 4
+	martial = 3
+	stewardship = 4
+	intrigue = 5
+	learning = 4
+	prowess = 1
+
+	trait = education_intrigue_3
+
+	792.1.3 = {
+	birth = yes
+	}
+
+	856.9.19 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_80 = {
+	name = "Hamar" 
+
+	dynasty = dynasty_ufaliracci_1
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_78
+	mother = watumimba_corkkattirkana_79
+
+	sexuality = heterosexual
+
+	trait = calm
+	trait = content
+	trait = arbitrary
+
+	diplomacy = 5
+	martial = 4
+	stewardship = 7
+	intrigue = 9
+	learning = 6
+	prowess = 3
+
+	trait = education_intrigue_3
+
+	813.5.18 = {
+	birth = yes
+	}
+
+	843.5.12 = {
+	add_spouse = watumimba_corkkattirkana_81
+	}
+
+	863.5.17 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_81 = {
+	name = "Sahra" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = stubborn
+	trait = wrathful
+
+	diplomacy = 6
+	martial = 4
+	stewardship = 9
+	intrigue = 3
+	learning = 6
+	prowess = 5
+
+	trait = education_stewardship_4
+
+	826.9.22 = {
+	birth = yes
+	}
+
+	878.11.22 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_82 = {
+	name = "Mansur" 
+
+	dynasty = dynasty_ufaliracci_1
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_78
+	mother = watumimba_corkkattirkana_79
+
+	sexuality = heterosexual
+
+	trait = diligent
+	trait = wrathful
+	trait = craven
+
+	diplomacy = 8
+	martial = 5
+	stewardship = 5
+	intrigue = 6
+	learning = 5
+	prowess = 5
+
+	trait = education_diplomacy_1
+
+	814.5.23 = {
+	birth = yes
+	}
+
+	840.10.26 = {
+	add_spouse = watumimba_corkkattirkana_83
+	}
+
+	867.11.15 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_83 = {
+	name = "Hoodo" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = humble
+	trait = temperate
+	trait = compassionate
+
+	diplomacy = 5
+	martial = 6
+	stewardship = 3
+	intrigue = 7
+	learning = 6
+	prowess = 10
+
+	trait = education_intrigue_2
+
+	823.1.23 = {
+	birth = yes
+	}
+
+	880.2.3 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_84 = {
+	name = "Awe" 
+
+	dynasty = dynasty_ufaliracci_1
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_78
+	mother = watumimba_corkkattirkana_79
+
+	sexuality = heterosexual
+
+	trait = lustful
+	trait = gregarious
+	trait = ambitious
+
+	diplomacy = 4
+	martial = 2
+	stewardship = 5
+	intrigue = 6
+	learning = 9
+	prowess = 6
+
+	trait = education_learning_3
+
+	815.6.14 = {
+	birth = yes
+	}
+
+	834.6.7 = {
+	add_spouse = watumimba_corkkattirkana_85
+	}
+
+	882.11.22 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_85 = {
+	name = "Sufia" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = impatient
+	trait = sadistic
+	trait = stubborn
+
+	diplomacy = 6
+	martial = 6
+	stewardship = 7
+	intrigue = 4
+	learning = 6
+	prowess = 6
+
+	trait = education_stewardship_4
+
+	817.9.14 = {
+	birth = yes
+	}
+
+	872.3.7 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_86 = {
+	name = "Hantale" 
+
+	dynasty = dynasty_ufaliracci_1
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_76
+	mother = watumimba_corkkattirkana_77
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = arrogant
+	trait = shy
+
+	diplomacy = 8
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 4
+	prowess = 6
+
+	trait = education_diplomacy_2
+
+	782.2.15 = {
+	birth = yes
+	}
+
+	812.5.15 = {
+	add_spouse = watumimba_corkkattirkana_87
+	}
+
+	843.5.8 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_87 = {
+	name = "Canab" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = gregarious
+	trait = content
+	trait = arbitrary
+
+	diplomacy = 7
+	martial = 7
+	stewardship = 8
+	intrigue = 4
+	learning = 8
+	prowess = 4
+
+	trait = education_stewardship_4
+
+	795.12.20 = {
+	birth = yes
+	}
+
+	850.5.15 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_88 = {
+	name = "Ladan" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_86
+	mother = watumimba_corkkattirkana_87
+
+	sexuality = heterosexual
+
+	trait = gregarious
+	trait = chaste
+	trait = content
+
+	diplomacy = 3
+	martial = 7
+	stewardship = 6
+	intrigue = 6
+	learning = 4
+	prowess = 6
+
+	trait = education_martial_3
+
+	812.7.24 = {
+	birth = yes
+	}
+
+	852.3.1 = {
+	death = { death_reason = death_leper }
+	}
+}
+
+watumimba_corkkattirkana_89 = {
+	name = "Irir" 
+
+	dynasty = dynasty_ufaliracci_1
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_86
+	mother = watumimba_corkkattirkana_87
+
+	sexuality = heterosexual
+
+	trait = temperate
+	trait = wrathful
+	trait = just
+
+	diplomacy = 2
+	martial = 6
+	stewardship = 6
+	intrigue = 5
+	learning = 10
+	prowess = 8
+
+	trait = education_learning_3
+
+	814.4.9 = {
+	birth = yes
+	}
+
+	840.2.15 = {
+	add_spouse = watumimba_corkkattirkana_90
+	}
+
+	878.10.13 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_90 = {
+	name = "Luula" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = forgiving
+	trait = greedy
+	trait = callous
+
+	diplomacy = 4
+	martial = 7
+	stewardship = 5
+	intrigue = 4
+	learning = 4
+	prowess = 3
+
+	trait = education_martial_3
+
+	823.10.8 = {
+	birth = yes
+	}
+
+	880.4.16 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_91 = {
+	name = "Yayyo" 
+
+	dynasty = dynasty_ufaliracci_1
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_86
+	mother = watumimba_corkkattirkana_87
+
+	sexuality = heterosexual
+
+	trait = sadistic
+	trait = ambitious
+	trait = vengeful
+
+	diplomacy = 5
+	martial = 6
+	stewardship = 4
+	intrigue = 6
+	learning = 10
+	prowess = 6
+
+	trait = education_learning_4
+
+	817.4.22 = {
+	birth = yes
+	}
+
+	841.8.24 = {
+	add_spouse = watumimba_corkkattirkana_92
+	}
+
+	868.4.21 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_92 = {
+	name = "Amburo" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = calm
+	trait = temperate
+	trait = patient
+
+	diplomacy = 6
+	martial = 4
+	stewardship = 5
+	intrigue = 5
+	learning = 8
+	prowess = 3
+
+	trait = education_learning_3
+
+	824.7.12 = {
+	birth = yes
+	}
+
+	891.10.18 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_93 = {
+	name = "Ciise" 
+
+	dynasty = dynasty_ufaliracci_1
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_86
+	mother = watumimba_corkkattirkana_87
+
+	sexuality = heterosexual
+
+	trait = sadistic
+	trait = trusting
+	trait = arbitrary
+
+	diplomacy = 8
+	martial = 6
+	stewardship = 4
+	intrigue = 9
+	learning = 8
+	prowess = 7
+
+	trait = education_intrigue_3
+
+	819.9.6 = {
+	birth = yes
+	}
+
+	849.5.12 = {
+	add_spouse = watumimba_corkkattirkana_94
+	}
+
+	873.12.7 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_94 = {
+	name = "Haweeya" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	sexuality = heterosexual
+
+	trait = shy
+	trait = generous
+	trait = wrathful
+
+	diplomacy = 5
+	martial = 7
+	stewardship = 8
+	intrigue = 6
+	learning = 4
+	prowess = 8
+
+	trait = education_stewardship_2
+
+	832.4.5 = {
+	birth = yes
+	}
+
+	892.2.1 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_95 = {
+	name = "Nur" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_76
+	mother = watumimba_corkkattirkana_77
+
+	sexuality = heterosexual
+
+	trait = greedy
+	trait = diligent
+	trait = zealous
+
+	diplomacy = 7
+	martial = 5
+	stewardship = 5
+	intrigue = 8
+	learning = 6
+	prowess = 9
+
+	trait = education_intrigue_3
+
+	783.6.24 = {
+	birth = yes
+	}
+
+	838.2.4 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_96 = {
+	name = "Asli" 
+	female = yes
+
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_76
+	mother = watumimba_corkkattirkana_77
+
+	sexuality = heterosexual
+
+	trait = lazy
+	trait = content
+	trait = forgiving
+
+	diplomacy = 1
+	martial = 7
+	stewardship = 8
+	intrigue = 5
+	learning = 7
+	prowess = 6
+
+	trait = education_stewardship_4
+
+	784.2.24 = {
+	birth = yes
+	}
+
+	842.5.20 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_corkkattirkana_97 = {
+	name = "Aul" 
+
+	dynasty = dynasty_ufaliracci_1
+	religion = corkkattirkana
+	culture = watumimba
+
+	father = watumimba_corkkattirkana_84
+
+	840.6.14 = {
+	birth = yes
+	}
+
+	889.11.22 = {
+	death = { death_reason = death_natural_causes }
+	}
+}

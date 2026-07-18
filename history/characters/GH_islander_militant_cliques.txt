@@ -1,0 +1,9 @@
+﻿islander_militant_cliques_1 = {
+	name = "Exadios"
+	religion = "militant_cliques"
+	culture = "islander"
+
+	1213.9.24 = {
+		birth = yes
+	}
+}

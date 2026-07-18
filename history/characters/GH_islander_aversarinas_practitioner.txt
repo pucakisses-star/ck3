@@ -1,0 +1,65 @@
+﻿islander_aversarinas_practitioner_1 = {
+	# aversarian magi who decided she is the top dog on a little island of Kundriatta in the absence of central authority, later killed by slave rebellion
+	name = "Akmionia"
+	female = yes
+	religion = "aversarinas_practitioner"
+	culture = "islander"
+	
+	1181.3.5 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1193.1.1 = {
+		trait = ambitious
+		trait = sadistic
+		trait = arrogant
+	}
+
+	1197.3.5 = {
+		trait = disloyal
+		trait = education_intrigue_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1232.4.5 = {
+		death = {
+			death_reason = death_battle
+			killer = islander_aversarinas_aagiokrata_13
+		}
+	}
+}
+
+islander_aversarinas_practitioner_2 = {
+	name = "Kleoxis" #Renamed from Cleoxis
+	religion = "aversarinas_practitioner"
+	culture = "islander"
+
+	1232.6.22 = {
+		birth = yes
+	}
+}
+
+islander_aversarinas_practitioner_3 = {
+	name = "Mastriodes"
+	religion = "aversarinas_practitioner"
+	culture = "islander"
+
+	1226.9.20 = {
+		birth = yes
+	}
+}
+
+islander_aversarinas_practitioner_4 = {
+	name = "Adriax"
+	religion = "aversarinas_practitioner"
+	culture = "islander"
+
+	1210.12.8 = {
+		birth = yes
+	}
+}

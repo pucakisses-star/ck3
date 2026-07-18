@@ -1,0 +1,201 @@
+﻿### agionists
+agiopadis_saintly_order_1 = {
+	name = "Ixoduis"
+	religion = "saintly_order"
+	culture = "agiopadis"
+	
+	trait = zealous
+	trait = just
+	trait = peasant_leader
+
+	1224.1.1 = {
+		birth = yes
+	}
+
+	1232.6.12 = {
+		add_spouse = agiopadis_saintly_order_11
+	# GH TODO: Find somewhere else for this dude?
+	#	add_pressed_claim = title:d_argatis
+	}
+}
+
+agiopadis_saintly_order_2 = {
+	name = "Methodios"
+	religion = "saintly_order"
+	culture = "agiopadis"
+
+	1200.1.1 = {
+		birth = yes
+	}
+}
+
+agiopadis_saintly_order_3 = {
+	name = "Christophoros"
+	religion = "saintly_order"
+	culture = "agiopadis"
+
+	1212.1.1 = {
+		birth = yes
+	}
+}
+
+agiopadis_saintly_order_4 = {
+	name = "Andreas"
+	religion = "saintly_order"
+	culture = "agiopadis"
+
+	1234.1.1 = {
+		birth = yes
+	}
+}
+
+agiopadis_saintly_order_5 = {
+	name = "Andronikos"
+	religion = "saintly_order"
+	culture = "agiopadis"
+
+	1228.1.1 = {
+		birth = yes
+	}
+}
+
+agiopadis_saintly_order_6 = {
+	name = "Kallistos"
+	religion = "saintly_order"
+	culture = "agiopadis"
+
+	1211.1.1 = {
+		birth = yes
+	}
+}
+
+agiopadis_saintly_order_7 = {
+	name = "Hippolytos"
+	religion = "saintly_order"
+	culture = "agiopadis"
+
+	1204.1.1 = {
+		birth = yes
+	}
+}
+
+agiopadis_saintly_order_8 = {
+	name = "Polykarpos"
+	religion = "saintly_order"
+	culture = "agiopadis"
+
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+agiopadis_saintly_order_9 = {
+	name = "Narses"
+	religion = "saintly_order"
+	culture = "agiopadis"
+
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+agiopadis_saintly_order_10 = {
+	name = "Kosmas"
+	religion = "saintly_order"
+	culture = "agiopadis"
+
+	1222.1.1 = {
+		birth = yes
+	}
+}
+
+agiopadis_saintly_order_11 = {
+	name = "Irene"
+	female = yes
+	religion = "saintly_order"
+	culture = "agiopadis"
+	
+	trait = peasant_leader
+	trait = compassionate
+	trait = beauty_good_2
+
+	1224.1.1 = {
+		birth = yes
+	}
+}
+
+agiopadis_saintly_order_12 = {
+	name = "Astera"
+	female = yes
+	mother = agiopadis_saintly_order_11
+	father = agiopadis_saintly_order_1	
+	religion = "saintly_order"
+	culture = "agiopadis"
+
+	1248.1.1 = {
+		birth = yes
+	}
+}
+
+agiopadis_saintly_order_13 = {
+	name = "Lalage"
+	female = yes
+	mother = agiopadis_saintly_order_11
+	father = agiopadis_saintly_order_1
+	religion = "saintly_order"
+	culture = "agiopadis"
+
+	1250.1.1 = {
+		birth = yes
+	}
+}
+
+agiopadis_saintly_order_14 = {
+	name = "Kaneitic"
+	religion = "saintly_order"
+	culture = "agiopadis"
+
+	1226.3.20 = {
+		birth = yes
+	}
+}
+
+agiopadis_saintly_order_15 = {
+	name = "Rhemnon"
+	religion = "saintly_order"
+	culture = "agiopadis"
+
+	1218.9.8 = {
+		birth = yes
+	}
+}
+
+agiopadis_saintly_order_16 = {
+	name = "Dikaynosic"
+	religion = "saintly_order"
+	culture = "agiopadis"
+
+	1224.5.12 = {
+		birth = yes
+	}
+}
+
+agiopadis_saintly_order_17 = {
+	name = "Calyros"
+	religion = "saintly_order"
+	culture = "agiopadis"
+
+	1224.10.2 = {
+		birth = yes
+	}
+}
+
+agiopadis_saintly_order_18 = {
+	name = "Sansir"
+	religion = "saintly_order"
+	culture = "agiopadis"
+
+	1218.2.2 = {
+		birth = yes
+	}
+}

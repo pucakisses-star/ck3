@@ -1,0 +1,39 @@
+﻿ghudiyy_wardenism_1 = {
+	name = "Belken"
+	religion = "wardenism"
+	culture = "ghudiyy"
+
+	1219.7.6 = {
+		birth = yes
+	}
+}
+
+ghudiyy_wardenism_2 = {
+	name = "Ilasen"
+	religion = "wardenism"
+	culture = "ghudiyy"
+
+	1223.12.7 = {
+		birth = yes
+	}
+}
+
+ghudiyy_wardenism_3 = {
+	name = "Anazir"
+	religion = "wardenism"
+	culture = "ghudiyy"
+
+	1234.4.22 = {
+		birth = yes
+	}
+}
+
+ghudiyy_wardenism_4 = {
+	name = "Mestawa"
+	religion = "wardenism"
+	culture = "ghudiyy"
+
+	1219.1.14	 = {
+		birth = yes
+	}
+}

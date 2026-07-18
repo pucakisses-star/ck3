@@ -1,0 +1,23 @@
+﻿guillater_aversarian_blood_veneration_1 = {
+	name = "Silvana"
+	female = yes
+	religion = blood_veneration
+	culture = guillater_aversarian
+	1209.10.1 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	1221.10.1 = {
+		trait = arrogant
+		trait = greedy
+		trait = arbitrary
+	}
+	1225.10.1 = {
+		trait = education_learning_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+}

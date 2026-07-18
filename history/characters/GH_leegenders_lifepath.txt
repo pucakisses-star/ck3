@@ -1,0 +1,278 @@
+﻿leegenders_lifepath_1 = { # Duke Roebrecht Gurard, powerful leegender duke
+	name = "Roebrecht"
+	dynasty = dyn_marcher_25
+	religion = "lifepath"
+	culture = "leegenders"
+
+	father = leegenders_lifepath_8
+
+	martial = 8
+	diplomacy = 6
+	stewardship = 3
+	intrigue = 5
+	learning = 7
+	prowess = 6
+
+	1231.12.15 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 3 }
+		}
+	}
+
+	1243.1.1 = {
+		trait = diligent
+		trait = compassionate
+		trait = brave
+	}
+
+	1247.12.15 = {
+		trait = education_martial_3
+		trait = way_of_swords_follower
+	}
+
+	1248.11.28 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+
+	1251.10.11 = {
+		set_relation_rival = {
+			target = character:daukeni_sjalvolki_37 # Juries
+			reason = nemesis_killed_father
+			involved_character = character:leegenders_lifepath_8
+		}
+		set_relation_friend = {
+			target = character:salisians_lifepath_23 # Hugomer
+			reason = friend_saved_life
+		}
+	}
+}
+
+leegenders_lifepath_2 = {
+	name = "Seyres"
+	religion = "lifepath"
+	culture = "leegenders"
+
+	1227.1.1 = {
+		birth = yes
+	}
+}
+
+leegenders_lifepath_3 = {
+	name = "Conrrat"
+	religion = "lifepath"
+	culture = "leegenders"
+
+	1210.1.1 = {
+		birth = yes
+	}
+
+	1218.1.11 = {
+		effect = {
+			create_character_memory = { # Black-Gold War
+				type = fought_in_black_gold_war
+			}
+		}
+	}
+}
+
+leegenders_lifepath_4 = {
+	name = "Aagerijk"
+	religion = "lifepath"
+	culture = "leegenders"
+
+	1226.7.7 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1242.7.7 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+		trait = way_of_nullification_follower
+		trait = education_martial_2
+		trait = wrathful
+		trait = impatient
+		trait = cynical
+	}
+}
+
+leegenders_lifepath_5 = { 
+	name = "Waalrijk"
+	dynasty = dyn_marcher_25
+	religion = "lifepath"
+	culture = "leegenders"
+	disallow_random_traits = yes
+
+	martial = 10
+	diplomacy = 8
+	stewardship = 3
+	intrigue = 2
+	learning = 9
+
+	1152.8.30 = {
+		birth = yes
+	}
+
+	1164.1.1 = {
+		trait = brave
+		trait = diligent
+		trait = forgiving
+	}
+
+	1168.8.30 = {
+		trait = education_martial_2
+		trait = way_of_swords_follower
+		trait = adventurer
+	}
+
+	1210.4.14 = {
+		death = {
+			death_reason = death_disappearance #was lost at sea
+		}
+	}
+}
+
+leegenders_lifepath_6 = { # Hielwijk, son of Waalrijk
+	name = "Hielwijk"
+	dynasty = dyn_marcher_25
+	religion = "lifepath"
+	culture = "leegenders"
+	disallow_random_traits = yes
+	
+	father = leegenders_lifepath_5
+
+	martial = 6
+	diplomacy = 2
+	stewardship = 8
+	intrigue = 5
+	learning = 6
+
+	1173.4.16 = {
+		birth = yes
+	}
+
+	1185.1.1 = {
+		trait = stubborn
+		trait = diligent
+		trait = just
+	}
+
+	1189.4.16 = {
+		trait = education_stewardship_2
+		trait = way_of_coins_follower
+	}
+
+	1233.6.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+leegenders_lifepath_7 = { # First wife of Alderic Monteaux, died in childbirth
+	name = "Alesijn"
+	dynasty = dyn_marcher_25
+	religion = "lifepath"
+	culture = "leegenders"
+	disallow_random_traits = yes
+
+	female = yes
+	
+	father = leegenders_lifepath_5
+
+	martial = 7
+	diplomacy = 8
+	stewardship = 4
+	intrigue = 3
+	learning = 8
+
+	1184.9.7 = {
+		birth = yes
+	}
+
+	1196.1.1 = {
+		trait = shy
+		trait = forgiving
+		trait = chaste
+	}
+
+	1200.9.7 = {
+		trait = education_diplomacy_3
+		trait = way_of_family_follower
+	}
+
+	1204.11.4 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+leegenders_lifepath_8 = { # Marcher Duke slain by Juries during the Ash War
+	name = "Roetrijk"
+	dynasty = dyn_marcher_25
+	religion = "lifepath"
+	culture = "leegenders"
+	disallow_random_traits = yes
+	
+	father = leegenders_lifepath_6
+
+	martial = 6
+	diplomacy = 8
+	stewardship = 4
+	intrigue = 9
+	learning = 2
+
+	1207.2.23 = {
+		birth = yes
+	}
+
+	1219.1.1 = {
+		trait = diligent
+		trait = compassionate
+		trait = brave
+	}
+
+	1223.2.23 = {
+		trait = education_martial_1
+		trait = way_of_swords_follower
+	}
+
+	1251.10.11 = {
+		death = {
+			death_reason = death_cloven_in_half
+			killer = daukeni_sjalvolki_37
+		}
+	}
+}
+
+leegender_lifepath_9 = {
+	name = "Metielle"
+	dynasty = dyn_marcher_25
+	religion = "lifepath"
+	culture = "leegenders"
+	female = yes
+	disallow_random_traits = yes
+	
+	father = leegenders_lifepath_8
+
+	1234.2.18 = {
+		birth = yes
+	}
+
+	1254.1.1 = {
+		trait = gluttonous
+		trait = calm
+		trait = fickle
+		trait = education_arcana_2
+		trait = way_of_knowledge_follower
+	}
+}

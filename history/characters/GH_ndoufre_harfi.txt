@@ -1,0 +1,29 @@
+﻿ndoufre_harfi_1 = {
+	name = "Aladji"
+	religion = "harfi"
+	culture = "ndoufre"
+
+	1221.3.30 = {
+		birth = yes
+	}
+}
+
+ndoufre_harfi_2 = {
+	name = "Burama"
+	religion = "harfi"
+	culture = "ndoufre"
+
+	1235.4.25 = {
+		birth = yes
+	}
+}
+
+ndoufre_harfi_3 = {
+	name = "Addo"
+	religion = "harfi"
+	culture = "ndoufre"
+
+	1209.2.1 = {
+		birth = yes
+	}
+}

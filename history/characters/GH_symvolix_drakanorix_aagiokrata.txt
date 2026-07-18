@@ -1,0 +1,64 @@
+﻿symvolix_drakanorix_aagiokrata_1 = {
+    name = "Nikoletta"
+    female = yes
+    religion = hero_religion
+    culture = symvolix
+    1217.11.15 = {
+        birth = yes
+        trait = magic_good_1
+    }
+    1229.11.15 = {
+        trait = content
+        trait = stubborn
+        trait = cynical
+    }
+    1233.11.15 = {
+        trait = education_stewardship_2
+        trait = gh_historical_school
+        effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+        add_pressed_claim = title:c_palai_zkhni # GH TODO: c_gywidiglassd was missing, check if correct
+    }
+}
+
+symvolix_drakanorix_aagiokrata_2 = {
+	name = "Tenex"
+	religion = "drakanorix_aagiokrata"
+	culture = "symvolix"
+
+	1212.10.19 = {
+		birth = yes
+	}
+}
+
+symvolix_drakanorix_aagiokrata_3 = {
+	name = "Krygos"
+	religion = "hero_religion"
+	culture = "symvolix"
+
+	1225.12.21 = {
+		birth = yes
+	}
+}
+
+symvolix_drakanorix_aagiokrata_4 = {
+	name = "Aeranthios"
+	religion = "drakanorix_aagiokrata"
+	culture = "symvolix"
+
+	1223.11.18 = {
+		birth = yes
+	}
+}
+
+symvolix_drakanorix_aagiokrata_5 = {
+	name = "Axos"
+	religion = "drakanorix_aagiokrata"
+	culture = "symvolix"
+
+	1214.11.7 = {
+		birth = yes
+	}
+}

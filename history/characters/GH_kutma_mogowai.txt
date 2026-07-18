@@ -1,0 +1,140 @@
+﻿kutma_mogowai_1 = { # count of montuja and bafilaz
+	name = "Bahali"
+	religion = mogowai
+	culture = kutma
+	
+	1224.8.22 = {
+		birth = yes
+	}
+}
+
+kutma_mogowai_2 = { # count of ralitet
+	name = "Anori"
+	religion = mogowai
+	culture = kutma
+	
+	1220.10.14 = {
+		birth = yes
+	}
+}
+
+kutma_mogowai_3 = { # count of isaleb
+	name = "Erilak"
+	religion = mogowai
+	culture = kutma
+	
+	1226.12.4 = {
+		birth = yes
+	}
+}
+
+kutma_mogowai_4 = { # count of modnai
+	name = "Rihala"
+	religion = mogowai
+	culture = kutma
+	
+	1220.10.14 = {
+		birth = yes
+	}
+}
+
+kutma_mogowai_5 = { # South of above, decent ruler
+	name = "Kayorla"
+	religion = mogowai
+	culture = kutma
+	sexuality = homosexual
+	female = yes
+	
+	diplomacy = 5
+	martial = 7
+	stewardship = 6
+	intrigue = 5
+	learning = 6
+	
+	1145.5.8 = {
+		birth = yes
+	}
+	1157.5.8 = {
+		trait = content
+		trait = diligent
+		trait = chaste
+	}
+	1159.5.8 = {
+		trait = education_martial_2
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+kutma_mogowai_6 = { # Hit by Odrstund in early childhood, meh ruler
+	name = "Ranore"
+	religion = mogowai
+	culture = kutma
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 6
+	stewardship = 6
+	intrigue = 5
+	learning = 5
+	
+	1168.3.4 = {
+		birth = yes
+		trait = lunatic_1
+	}
+	1170.3.4 = {
+		trait = craven
+		trait = lustful
+		trait = generous
+	}
+	1174.3.4 = {
+		trait = education_diplomacy_2
+	}
+	1203.4.17 = { # Dies in battle to person not yet in files
+		death = yes
+	}
+}
+
+kutma_mogowai_7 = { # Skilled, paranoid, gets deposed by Bekashai
+	name = "Marole"
+	religion = mogowai
+	culture = kutma
+	sexuality = heterosexual
+
+	dna = kutma_mogowai_7_dna
+	
+	diplomacy = 7
+	martial = 6
+	stewardship = 5
+	intrigue = 6
+	learning = 5
+	
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_western_10
+			custom_hair = male_hair_special_01
+		}
+	}
+	
+	1157.12.19 = {
+		birth = yes
+	}
+	1169.12.19 = {
+		trait = paranoid
+		trait = deceitful
+		trait = humble
+	}
+	1173.12.19 = {
+		trait = education_intrigue_3
+	}
+	
+	1208.8.24 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}

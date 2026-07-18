@@ -1,0 +1,8 @@
+﻿zalaka_yakasak_1 = {
+	name = "Ravindu"
+	religion = "yakasak"
+	culture = "zalaka"
+	1215.7.4 = {
+		birth = yes
+	}
+}

@@ -1,0 +1,3817 @@
+﻿
+
+471 = {
+	holding = church_holding
+}
+
+481 = {
+	culture = redlander
+	religion = redland_cults
+	holding = castle_holding # GH TODO: Academy holding type for Magocracies
+	
+	1200.3.1 = {
+		buildings = { dark_obelisk_01 }
+	}
+}
+
+492 = {
+	holding = church_holding
+}
+
+499 = {
+	holding = none
+}
+
+
+514 = {
+	culture = redlander
+	religion = redland_cults
+	holding = castle_holding # GH TODO: Academy holding type for Magocracies
+}
+
+527 = {
+	holding = none
+}
+
+532 = {
+	holding = none	 
+}
+
+546 = {
+	holding = none		 
+}
+
+551 = {
+	culture = easternimperial
+	religion = aironoian_aagiokrata
+	holding = metro_holding
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+}
+
+553 = {
+	holding = none
+}
+
+556 = {
+	holding = city_holding
+}
+
+558 = {
+	holding = church_holding
+}
+
+566 = {
+	culture = redlander
+	religion = redland_cults
+	holding = castle_holding # GH TODO: Academy holding type for Magocracies	 
+}
+
+567 = {
+	holding = city_holding
+}
+
+572 = {
+	holding = none
+}
+
+577 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+
+	200.12.6 = {
+		culture = redlander
+		religion = redland_cults
+		holding = castle_holding
+	}
+
+	451.4.21 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+
+	818.3.21 = {
+		culture = redrunner
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+
+	989.6.15 = {
+		holding = metro_holding
+	}
+
+	1253.2.1 = {
+		holding = ruined_district_holding
+	}
+}
+
+578 = {
+	holding = none	
+}
+
+581 = {
+	holding = church_holding
+}
+
+582 = {
+	holding = city_holding
+}
+
+585 = {
+	868.3.21 = {
+		holding = city_holding
+	}
+
+	1024.6.15 = {
+		holding = metro_holding
+	}
+
+	1252.4.11 = {
+		holding = ruined_district_holding
+	}
+}
+
+4085 = {
+	888.6.12 = {
+		holding = church_holding
+	}
+
+	1036.9.11 = {
+		holding = metro_holding
+	}
+
+	1251.3.21 = {
+		holding = ruined_district_holding
+	}
+}
+
+586 = {
+	holding = city_holding
+}
+
+590 = {
+	culture = redlander
+	religion = redland_cults
+	holding = castle_holding # GH TODO: Academy holding type for Magocracies
+}
+
+592 = {
+	holding = none
+}
+
+594 = {
+	holding = none	  
+}
+
+606 = {
+	holding = none
+}
+
+
+609 = {
+	holding = none
+}
+
+621 = {
+	culture = redrunner
+	religion = aversarinas_aagiokrata
+	holding = castle_holding 
+}
+
+625 = {
+	holding = none	 
+}
+
+630 = {
+	holding = none
+}
+
+633 = {
+	holding = none
+}
+
+634 = {
+	culture = lattani
+	religion = sunwarwei_aagiokrata
+	holding = ruined_district_holding
+	
+	1200.3.1 = {
+		special_building = 01_aironoiakaan
+	}
+}
+
+638 = {
+	holding = none
+}
+
+640 = {
+	culture = lattani
+	religion = sunarwei
+	holding = tribal_holding
+}
+
+644 = {
+	holding = city_holding
+}
+
+646 = {
+	holding = none
+}
+
+653 = {
+	holding = none
+}
+
+657 = {
+	holding = none
+}
+
+658 = {
+	culture = zelkavani
+	religion = sunwarwei_aagiokrata
+	holding = castle_holding
+}
+
+666 = {
+	holding = none
+}
+
+669 = {
+	holding = none
+}
+
+671 = {
+	culture = zelkavani
+	religion = sunwarwei_aagiokrata
+	holding = castle_holding
+	1.1.1 = {
+		special_building = 01_gates_of_kaz
+	}
+}
+
+675 = {
+	culture = lattani
+	religion = sunwarwei_aagiokrata
+	holding = tribal_holding
+}
+
+678 = {
+	holding = none
+}
+
+681 = {
+	culture = easternimperial
+	religion = aversarian_axiaotheaism
+	holding = metro_holding
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+}
+
+683 = {
+	holding = city_holding
+}
+
+690 = {
+	culture = easternimperial
+	religion = aironoian_aagiokrata
+	holding = metro_holding
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+}
+
+693 = {
+	holding = city_holding	
+}
+
+696 = {
+	holding = none
+}
+
+698 = {
+	holding = city_holding
+}
+
+700 = {
+	culture = easternimperial
+	religion = aironoian_aagiokrata
+	holding = castle_holding
+}
+
+701 = {
+	holding = city_holding
+}
+
+702 = {
+	holding = church_holding
+}
+
+705 = {
+	holding = none
+}
+
+712 = {
+	holding = none
+}
+
+713 = {
+	culture = zelkavani
+	religion = sunwarwei_aagiokrata
+	holding = castle_holding
+}
+
+716 = {
+	holding = city_holding
+}
+
+718 = {
+	holding = none
+}
+
+720 = {
+	culture = zelkavani
+	religion = sunwarwei_aagiokrata
+	holding = castle_holding
+
+}
+
+723 = {
+	culture = easternimperial
+	religion = aironoian_aagiokrata
+	holding = castle_holding
+}
+
+728 = {
+	culture = easternimperial
+	religion = aironoian_aagiokrata
+	holding = castle_holding
+}
+
+738 = {
+	holding = none
+}
+
+740 = {
+	holding = none
+}
+
+741 = {
+	holding = city_holding
+}
+
+746 = {
+	holding = church_holding
+}
+
+747 = {
+	culture = easternimperial
+	religion = aironoian_aagiokrata
+	holding = castle_holding
+}
+
+750 = {
+	holding = none
+}
+
+755 = {
+	holding = none
+}
+
+756 = {
+	holding = none
+}
+
+757 = {
+	culture = beduleno
+	religion = cuthanagi
+	holding = castle_holding
+}
+
+758 = {
+	holding = church_holding
+}
+
+759 = {
+	culture = easternimperial
+	religion = aironoian_aagiokrata
+	holding = castle_holding
+}
+
+761 = {
+	culture = easternimperial
+	religion = aironoian_aagiokrata
+	holding = castle_holding
+}
+
+763 = {
+	holding = none
+}
+
+765 = {
+	holding = none
+}
+
+769 = {
+	holding = none
+}
+
+773 = {
+	culture = easternimperial
+	religion = aironoian_aagiokrata
+	holding = metro_holding
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+}
+
+
+777 = {
+	holding = none
+}
+
+785 = {
+	culture = murarut
+	religion = iek_otached
+	holding = herder_holding
+}
+
+787 = {
+	holding = none
+}
+
+790 = {
+	culture = beduleno
+	religion = cuthanagi
+}
+
+791 = {
+	holding = none
+}
+
+793 = {
+	culture = murarut
+	religion = iek_otached
+	holding = nomad_holding
+}
+
+794 = {
+	holding = none
+}
+
+796 = {
+	culture = erkalgani
+	religion = zaragett_aagiokrata
+	holding = castle_holding
+}
+
+801 = {
+	holding = none
+}
+
+802 = {
+	culture = murarut
+	religion = iek_otached
+	holding = nomad_holding
+}
+
+806 = {
+	culture = khorinot
+	religion = iek_otached
+	holding = nomad_holding
+}
+
+809 = {
+	holding = none
+}
+
+815 = {
+	holding = none
+}
+
+817 = {
+	holding = none
+}
+
+820 = {
+	holding = none
+}
+
+824 = {
+	holding = none
+}
+
+825 = {
+	culture = murarut
+	religion = iek_otached
+	holding = nomad_holding
+}
+
+833 = {
+	culture = murarut
+	religion = iek_otached
+	holding = metro_holding
+}
+
+835 = {
+	holding = ruin_holding
+}
+
+844 = {
+	culture = mahratian
+	religion = mshvirat
+	holding = castle_holding
+}
+
+846 = {
+	culture = murarut
+	religion = iek_otached
+	holding = castle_holding
+}
+
+
+847 = {
+	culture = beduleno
+	religion = cuthanagi
+}
+
+848 = {
+	holding = castle_holding
+}
+
+
+852 = {
+	culture = beduleno
+	religion = cuthanagi
+	holding = castle_holding
+}
+
+857 = {
+	holding = city_holding
+}
+
+863 = {
+	holding = church_holding
+}
+
+864 = {
+	holding = city_holding
+}
+
+866 = {
+	culture = beduleno
+	religion = cuthanagi
+	holding = castle_holding
+}
+
+870 = {
+	holding = city_holding
+}
+
+871 = {
+	holding = none
+}
+
+872 = {
+	culture = mahratian
+	religion = mahrator
+	holding = castle_holding
+}
+
+883 = {
+	holding = city_holding
+}
+
+
+887 = {
+	culture = mahratian
+	religion = mahrator
+	holding = castle_holding
+}
+
+
+890 = {
+	holding = none
+}
+
+891 = {
+	culture = mahratian
+	religion = mahrator
+	holding = castle_holding
+}
+
+892 = {
+	holding = none
+}
+
+893 = {
+	culture = draneti
+	religion = amaghean_aagiokrata
+	holding = castle_holding
+}
+
+896 = {
+	holding = none
+}
+
+898 = {
+	culture = draneti
+	religion = amaghean_aagiokrata
+	holding = castle_holding
+}
+
+899 = {
+	holding = none
+}
+
+902 = {
+	holding = none
+}
+
+904 = {
+	holding = none
+}
+
+905 = {
+	holding = none
+}
+
+906 = {
+	holding = none
+}
+
+907 = {
+	holding = none
+}
+
+915 = {
+	culture = khorinot
+	religion = cumani
+	holding = nomad_holding
+}
+
+916 = {
+	holding = none
+}
+
+919 = {
+	holding = none	
+}
+
+921 = {
+	holding = none
+}
+
+922 = {
+	culture = khorinot
+	religion = iek_otached
+	holding = nomad_holding
+}
+
+925 = {
+	holding = none
+}
+
+927 = {
+	holding = none
+}
+
+930 = {
+	holding = none
+}
+
+933 = {
+	holding = none
+}
+
+937 = {
+	holding = none
+}
+
+939 = {
+	holding = none
+}
+
+940 = {
+	holding = none
+}
+
+942 = {
+	holding = none
+}
+
+945 = {
+	culture = mahratian
+	religion = mahrator
+	holding = castle_holding
+}
+
+
+947 = {
+	culture = khorinot
+	religion = cumani
+	holding = nomad_holding
+}
+
+
+951 = {
+	culture = khorinot
+	religion = cumani
+	holding = nomad_holding
+}
+
+
+960 = {
+	culture = draneti
+	religion = khourtaul
+	holding = castle_holding
+}
+
+963 = {
+	culture = draneti
+	religion = khourtaul
+	holding = castle_holding
+}
+
+
+971 = {
+	holding = none
+}
+
+973 = {
+	holding = church_holding
+}
+
+975 = {
+	holding = none
+}
+
+980 = {
+	holding = none
+}
+
+983 = {
+	holding = none
+}
+
+
+
+989 = {
+	holding = city_holding
+}
+
+990 = {
+	culture = charchac
+	religion = alau_koev
+	holding = castle_holding
+}
+
+992 = {
+	holding = city_holding
+}
+
+995 = {
+	culture = yylaxxaz
+	religion = xaxbaxakanax
+	holding = castle_holding
+}
+
+997 = {
+	culture = charchac
+	religion = alau_koev
+	holding = castle_holding
+}
+
+998 = {
+	holding = none
+}
+
+
+
+1000 = {
+	holding = none
+}
+
+1001 = {
+	holding = none
+}
+
+1002 = {
+	culture = charchac
+	religion = alau_koev
+	holding = castle_holding
+}
+
+1005 = {
+	holding = city_holding
+}
+
+1007 = {
+	holding = church_holding
+}
+
+
+1011 = {
+	holding = none
+}
+
+1014 = {
+	holding = none
+}
+
+1017 = {
+	holding = none
+}
+
+1019 = {
+	holding = none
+}
+
+1022 = {
+	holding = none
+}
+
+1027 = {
+	holding = none
+}
+
+1035 = {
+	holding = none
+}
+
+1038 = {
+	culture = khorinot
+	religion = iek_otached
+	holding = nomad_holding
+}
+
+1042 = {
+	holding = ruin_holding
+}
+
+1043 = {
+	holding = ruin_holding
+}
+
+
+1091 = {
+	holding = none
+}
+
+1108 = {
+	holding = none
+}
+
+1113 = {
+	culture = draneti
+	religion = izaerto_bosar
+	holding = castle_holding
+}
+
+
+
+1118 = {
+	holding = none
+}
+
+1122 = {
+	holding = none
+}
+
+1124 = {
+	culture = draneti
+	religion = izaerto_bosar
+	holding = castle_holding
+}
+
+1125 = {
+	culture = mahratian
+	religion = mahrator
+	holding = castle_holding
+}
+
+
+
+1132 = {
+	holding = none
+}
+
+1134 = {
+	culture = yylaxxaz
+	religion = xaxbaxakanax
+	holding = castle_holding
+}
+
+1137 = {
+	culture = charchac
+	religion = daminkar
+	holding = castle_holding
+}
+
+1165 = {
+	holding = none
+}
+
+
+1172 = {
+	holding = none
+}
+
+1173 = {
+	holding = church_holding
+}
+
+1176 = {
+	holding = church_holding
+}
+
+1178 = {
+	culture = charchac
+	religion = tsokar
+	holding = castle_holding
+}
+
+1180 = {
+	culture = charchac
+	religion = tsokar
+	holding = castle_holding
+}
+
+
+1184 = {
+	culture = gwenuyos
+	religion = cuthanagi
+	holding = castle_holding
+}
+
+1186 = {
+	holding = church_holding
+}
+
+1200 = {
+	holding = none
+}
+
+1201 = {
+	holding = none
+}
+
+1211 = {
+	culture = gwenuyos
+	religion = cuthanagi
+	holding = castle_holding
+}
+
+1214 = {
+	holding = none
+}
+
+1221 = {
+	holding = none
+}
+
+1233 = {
+	holding = none
+}
+
+1249 = {
+	culture = gwenuyos
+	religion = cuthanagi
+	holding = castle_holding
+}
+
+1257 = {
+	holding = city_holding
+}
+
+
+1266 = {
+	culture = yylaxxaz
+	religion = xaxbaxakanax
+	holding = castle_holding
+}
+
+1270 = {
+	holding = none
+}
+
+1271 = {
+	holding = none
+}
+
+
+1276 = {
+	holding = none
+}
+
+1281 = {
+	holding = none
+}
+
+1283 = {
+	holding = none
+}
+
+1284 = {
+	holding = none
+}
+
+1288 = {
+	holding = none
+}
+
+1291 = {
+	culture = kuridorig
+	religion = arayymorog
+	holding = nomad_holding
+}
+
+1292 = {
+	holding = none
+}
+
+1294 = {
+	holding = city_holding
+}
+
+1296 = {
+	holding = none
+}
+
+1298 = {
+	holding = none
+}
+
+1304 = {
+	culture = draneti
+	religion = izaerto_bosar
+	holding = castle_holding
+}
+
+1307 = {
+	culture = draneti
+	religion = izaerto_bosar
+	holding = castle_holding
+}
+
+1310 = {
+	holding = none
+}
+
+
+
+
+
+
+1418 = {
+	holding = none
+}
+
+1428 = {
+	holding = none
+}
+
+1432 = {
+	holding = none
+}
+
+1437 = {
+	holding = none
+}
+
+1440 = {
+	holding = none
+}
+
+1441 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+1443 = {
+	holding = none
+}
+
+1447 = {
+	culture = khorinot
+	religion = cumani
+	holding = castle_holding
+}
+
+1448 = {
+	holding = none
+}
+
+1450 = {
+	holding = none
+}
+
+1452 = {
+	culture = khorinot
+	religion = cumani
+	holding = nomad_holding
+}
+
+1458 = {
+	culture = kuridorig
+	religion = cumani
+	holding = nomad_holding
+}
+
+
+1481 = {
+	holding = none
+}
+
+1482 = {
+	holding = city_holding
+}
+
+1492 = {
+	holding = none
+}
+
+
+1502 = {
+	culture = khorinot
+	religion = cumani
+	holding = nomad_holding
+}
+
+1509 = {
+	holding = none
+}
+
+1510 = {
+	holding = none
+}
+
+1515 = {
+	holding = none
+}
+
+1529 = {
+	holding = none
+}
+
+
+1531 = {
+	holding = none
+}
+
+1534 = {
+	culture = muhadamd
+	religion = arayymorog
+	holding = herder_holding
+}
+
+1537 = {
+	culture = jarakmar
+	religion = ertomax
+	holding = castle_holding
+}
+
+1546 = {
+	holding = none
+}
+
+1549 = {
+	holding = none
+}
+
+1551 = {
+	holding = none
+}
+
+
+1570 = {
+	holding = none
+}
+
+1571 = {
+	culture = muhadamd
+	religion = cumani
+	holding = castle_holding
+}
+
+
+1582 = {
+	culture = khorinot
+	religion = cumani
+	holding = nomad_holding
+}
+
+1584 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+1585 = {
+	holding = none
+}
+
+1589 = {
+	culture = kuridorig
+	religion = arayymorog
+	holding = tribal_holding
+}
+
+1593 = {
+	holding = none
+}
+
+1595 = {
+	holding = none 
+}
+
+1605 = {
+	holding = none
+}
+
+1606 = {
+	culture = astilik
+	religion = astiliak
+	holding = castle_holding
+}
+
+
+1627 = {
+	holding = none
+}
+
+1630 = {
+	culture = kuridorig
+	religion = arayymorog
+	holding = tribal_holding
+}
+
+1640 = {
+	holding = none
+}
+
+1647 = {
+	holding = none
+}
+
+1650 = {
+	holding = none
+}
+
+1651 = {
+	holding = none
+}
+
+1663 = {
+	culture = jarakmar
+	religion = ertomax
+	holding = castle_holding
+}
+
+1732 = {
+	culture = amaghean
+	religion = amaghean_aagiokrata
+	holding = castle_holding
+}
+
+1749 = {
+	holding = none
+}
+
+
+
+1765 = {
+	holding = none
+}
+
+
+1780 = {
+	holding = city_holding
+}
+
+1791 = {
+	holding = city_holding
+}
+
+1796 = {
+	holding = none
+}
+
+1799 = {
+	holding = city_holding
+}
+
+1801 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+
+	160.4.11 = {
+		culture = redlander
+		religion = redland_cults
+		holding = castle_holding
+	}
+
+	451.4.21 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+
+	828.11.6 = {
+		culture = redrunner
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+}
+
+
+1810 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+
+	182.1.12 = {
+		culture = redlander
+		religion = redland_cults
+		holding = castle_holding
+	}
+
+	451.4.21 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+
+	769.2.21 = { # First Redrunner city on the coast
+		culture = redrunner
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+
+	790.5.6 = {
+		holding = metro_holding
+	}
+
+	850.2.21 = {
+		buildings = {
+			
+			gh_walls_01
+			luxury_goods_02
+			
+		}
+	}
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+
+	1213.1.1 = {
+		special_building = 02_korkivo_port
+	}
+}
+
+1813 = {
+	culture = redlander
+	religion = redland_cults
+	holding = castle_holding # GH TODO: Academy holding type for Magocracies
+	
+	1200.1.1 = {
+		buildings = {
+			abnegation_hall_02
+		}
+	}
+}
+
+1817 = {
+	holding = none
+}
+
+1818 = {
+	holding = none
+}
+
+1819 = {
+	culture = redrunner
+	religion = aversarinas_aagiokrata
+	holding = metro_holding
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+}
+
+1829 = {
+	holding = none
+}
+
+1833 = {
+	holding = none
+}
+
+1837 = {
+	holding = none
+}
+
+1846 = {
+	culture = redlander
+	religion = redland_cults
+	holding = castle_holding # GH TODO: Academy holding type for Magocracies
+}
+
+1850 = {
+	holding = none
+}
+
+1853 = {
+	holding = ruin_holding
+}
+
+1858 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+
+	200.12.6 = {
+		culture = redlander
+		religion = redland_cults
+		holding = castle_holding
+	}
+
+	451.4.21 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+
+	790.4.14 = {
+		culture = redrunner
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+}
+
+
+
+1866 = {
+	holding = city_holding
+}
+
+1868 = {
+	holding = none
+}
+
+1880 = {
+	culture = yevamarai
+	religion = aversarinas_aagiokrata
+	0.1.1 = {
+		special_building = 01_easterntower
+	}
+	holding = castle_holding
+}
+
+1881 = {
+	holding = castle_holding
+}
+
+1895 = {
+	holding = none
+}
+
+
+1899 = {
+	holding = none
+}
+
+1904 = {
+	holding = none
+}
+
+
+1918 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+1939 = {
+	culture = ypsikenai
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+1956 = {
+	holding = none
+}
+
+
+1959 = {
+	holding = none
+}
+
+1968 = {
+	holding = none
+}
+
+
+2006 = {
+	holding = none
+}
+
+2010 = {
+	holding = city_holding
+}
+
+
+2017 = {
+	holding = none
+}
+
+2024 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+2027 = {
+	culture = redrunner
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+2038 = {
+	holding = city_holding
+	1.1.1 = {
+		special_building = 01_temples_of_old_ialyrian
+	}
+}
+
+2039 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+2072 = {
+	holding = none
+}
+
+2081 = {
+	holding = none
+}
+
+2095 = {
+	holding = castle_holding
+}
+
+2096 = {
+	holding = none
+}
+
+
+
+2142 = {
+	holding = church_holding
+}
+
+2146 = {
+	holding = none
+}
+
+2150 = {
+	holding = none
+}
+
+2154 = {
+	holding = ruin_holding
+}
+
+2166 = {
+	holding = none
+}
+
+2174 = {
+	holding = city_holding
+}
+
+2179 = {
+	holding = none
+}
+
+2201 = {
+	holding = city_holding
+}
+
+
+2202 = {
+	holding = none
+}
+
+2212 = {
+	holding = city_holding
+}
+
+2241 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+2247 = {
+	culture = redrunner
+	religion = aversarinas_aagiokrata
+	holding = metro_holding
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+}
+
+2255 = {
+	culture = redlander
+	religion = redland_cults
+	holding = castle_holding # GH TODO: Academy holding type for Magocracies
+}
+
+2263 = {
+	holding = none
+}
+
+2267 = {
+	holding = none
+}
+
+
+2278 = {
+	holding = none
+}
+
+2313 = {
+	holding = none
+}
+
+
+2350 = {
+	holding = none
+}
+
+2352 = {
+	culture = ypsikenai
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+2353 = {
+	culture = ypsikenai
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+2355 = {
+	culture = yaarnami
+	religion = ehatm
+	holding = castle_holding
+}
+
+
+2392 = {
+	holding = none
+}
+
+2397 = {
+	holding = city_holding
+}
+
+2398 = {
+	holding = none
+}
+
+2399 = {
+	holding = none
+}
+
+2402 = {
+	culture = ypsikenai
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+2404 = {
+	culture = nimakiroi
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+2405 = {
+	culture = nimakiroi
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+2409 = {
+	culture = enisaloi
+	religion = aversarinas_aagiokrata
+	holding = metro_holding
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+}
+
+2411 = {
+	holding = city_holding
+}
+
+2416 = {
+	holding = castle_holding
+}
+
+2418 = {
+	culture = enisaloi
+	religion = aversarinas_aagiokrata
+	holding = metro_holding
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+}
+
+2419 = {
+	culture = enisaloi
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+2428 = {
+	holding = city_holding
+}
+
+
+2441 = {
+	culture = enisaloi
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+2447 = {
+	culture = vonatolis
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+2448 = {
+	holding = city_holding
+}
+
+2455 = {
+	holding = church_holding
+}
+
+2460 = {
+	holding = none
+}
+
+2463 = {
+	culture = vonatolis
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+2466 = {
+	holding = none
+}
+
+2471 = {
+	holding = none
+}
+
+
+2472 = {
+	culture = vonatolis
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+2474 = {
+	culture = vonatolis
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+2475 = {
+	culture = vonatolis
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+2477 = {
+	holding = none
+}
+
+
+2482 = {
+	culture = vonatolis
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+2483 = {
+	holding = city_holding
+}
+
+2484 = {
+	culture = vonatolis
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+2491 = {
+	holding = none
+}
+
+
+2521 = {
+	culture = aygaen
+	religion = shyatan
+	holding = castle_holding
+}
+
+2523 = {
+	holding = city_holding
+}
+
+2524 = {
+	holding = none
+}
+
+2610 = {
+	culture = ypsikenai
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+8598 = {
+	culture = ypsikenai
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+2633 = {
+	culture = ypsikenai
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+2705 = {
+	holding = none	
+}
+
+2708 = {
+	holding = none
+}
+
+2711 = {
+	holding = none
+}
+
+2713 = {
+	culture = khorinot
+	religion = cumani
+	holding = nomad_holding
+}
+
+2724 = {
+
+	holding = castle_holding
+	600.1.1 = {
+		special_building = 01_carthara_statue
+	}
+}
+
+2730 = {
+	holding = none
+}
+
+2733 = {
+	holding = none
+}
+
+2734 = {
+	culture = khorinot
+	religion = cumani
+	holding = nomad_holding
+}
+
+2735 = {
+	holding = none
+}
+
+2736 = {
+	culture = khorinot
+	religion = cumani
+	holding = nomad_holding
+}
+
+2738 = {
+	holding = none
+}
+
+2742 = {
+	holding = city_holding
+}
+
+2771 = {
+	holding = none
+}
+
+2798 = {
+	holding = none
+}
+
+2799 = {
+	holding = none	
+}
+
+2800 = {
+	holding = none
+}
+
+2801 = {
+	holding = none
+}
+
+2802 = {
+	culture = amaghean
+	religion = amaghean_aagiokrata
+	holding = castle_holding
+}
+
+2808 = {
+	culture = amaghean
+	religion = amaghean_aagiokrata
+	holding = castle_holding
+}
+
+2832 = {
+	holding = none
+}
+
+2833 = {
+	holding = none
+}
+
+2838 = {
+	holding = none
+}
+
+2855 = {
+	culture = arderwan
+	religion = cumani
+	holding = castle_holding
+}
+
+2858 = {
+	culture = arderwan
+	religion = cumani
+	holding = castle_holding
+}
+
+
+2867 = {
+	holding = none
+}
+
+2868 = {
+	culture = arderwan
+	religion = cumani
+	holding = castle_holding
+}
+
+2877 = {
+	culture = izikalek
+	religion = nalmavast
+	holding = tribal_holding
+}
+
+2916 = {
+	holding = church_holding
+}
+
+2921 = {
+	culture = tretosai
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+2924 = {
+	culture = muhadamd
+	religion = arayymorog
+	holding = nomad_holding
+}
+
+2926 = {
+	culture = muhadamd
+	religion = cumani
+	holding = herder_holding
+	400.1.1 = {
+		special_building = 01_baytors_grave
+	}
+}
+
+2944 = {
+	holding = city_holding
+}
+
+
+2978 = {
+	culture = theugombrians
+	religion = cnevobarthane
+	holding = castle_holding
+}
+
+2995 = {
+	culture = aygaen
+	religion = shyatan
+	holding = castle_holding
+}
+
+3015 = {
+	holding = none
+}
+
+
+3064 = {
+	holding = city_holding
+}
+
+
+3074 = {
+	holding = none
+}
+
+3151 = {
+	holding = none
+}
+
+3154 = {
+	culture = jarakmar
+	religion = ertomax
+	holding = castle_holding
+}
+
+3156 = {
+	culture = kuridorig
+	religion = arayymorog
+	holding = tribal_holding
+}
+
+3158 = {
+	holding = none
+}
+
+3161 = {
+	culture = jarakmar
+	religion = ertomax
+	holding = castle_holding
+	1.1.1 = {
+		special_building = 01_oltenictower
+	}
+	100.1.1 = {
+		duchy_capital_building = gh_axe_house_01
+	}
+}
+
+3168 = {
+	holding = none
+}
+
+3169 = {
+	holding = none
+}
+
+3171 = {
+	holding = none
+}
+
+3174 = {
+	culture = kuridorig
+	religion = iek_otached
+	holding = nomad_holding
+}
+
+3175 = {
+	holding = none
+}
+
+
+3176 = {
+	holding = none
+}
+
+3181 = {
+	holding = none
+}
+
+3190 = {
+	culture = kuridorig
+	religion = arayymorog
+	holding = nomad_holding
+}
+
+3215 = {
+	holding = none
+}
+
+3218 = {
+	holding = none
+}
+
+3220 = {
+	holding = none
+}
+
+3221 = {
+	holding = none
+}
+
+3223 = {
+	holding = city_holding
+}
+
+3225 = {
+	holding = none
+}
+
+3227 = {
+	culture = easternimperial
+	religion = aironoian_aagiokrata
+	holding = castle_holding
+}
+
+3229 = {
+	holding = none
+}
+
+3231 = {
+	holding = none
+}
+
+3233 = {
+	holding = none
+}
+
+3235 = {
+	holding = none
+}
+
+3243 = {
+	holding = none
+}
+
+3250 = {
+	holding = none
+}
+
+3263 = {
+	culture = lattani
+	religion = sunarwei
+	holding = tribal_holding
+}
+
+3265 = {
+	holding = none
+}
+
+3267 = {
+	holding = none
+}
+
+3268 = {
+	holding = none
+}
+
+3270 = {
+	holding = none
+}
+
+3271 = {
+	culture = gwenuyos
+	religion = cuthanagi
+	holding = castle_holding
+}
+
+3273 = {
+	holding = none
+}
+
+3279 = {
+	holding = none
+}
+
+3280 = {
+	holding = none
+}
+
+3290 = {
+	culture = jarakmar
+	religion = aruvasue
+	holding = castle_holding
+}
+
+3291 = {
+	culture = zelkavani
+	religion = aruvasue
+	holding = castle_holding
+}
+
+3296 = {
+	culture = kuridorig
+	religion = iek_otached
+	holding = nomad_holding
+}
+
+3299 = {
+	holding = none
+}
+
+
+3301 = {
+	culture = zelkavani
+	religion = aruvasue
+	holding = castle_holding
+	1.1.1 = {
+		special_building = 01_glassworks_of_ysanda
+	}
+}
+
+3302 = {
+	holding = none
+}
+
+3304 = {
+	holding = none
+}
+
+3305 = {
+	holding = none
+}
+
+3306 = {
+	holding = none
+}
+
+3308 = {
+	holding = none
+}
+
+3314 = {
+	holding = none
+}
+
+3315 = {
+	holding = none
+}
+
+
+3324 = {
+	culture = khorinot
+	religion = cumani
+	holding = nomad_holding
+}
+
+3325 = {
+	culture = khorinot
+	religion = cumani
+	holding = nomad_holding
+}
+
+3329 = {
+	holding = none
+}
+
+3330 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = metro_holding
+}
+
+3331 = {
+	holding = city_holding
+}
+
+3333 = {
+	holding = none
+}
+
+3334 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3335 = {
+	holding = none
+}
+
+3337 = {
+	holding = none
+}
+
+3338 = {
+	culture = khorinot
+	religion = cumani
+	holding = nomad_holding
+}
+
+3339 = {
+	culture = khorinot
+	religion = cumani
+	holding = nomad_holding
+}
+
+3341 = {
+	holding = church_holding
+}
+
+3342 = {
+	holding = none
+}
+
+3343 = {
+	holding = none
+}
+
+3344 = {
+	holding = none
+}
+
+3347 = {
+	holding = none	
+}
+
+3348 = {
+	holding = none	
+}
+
+3355 = {
+	culture = kuridorig
+	religion = arayymorog
+	holding = nomad_holding
+}
+
+3356 = {
+	culture = jarakmar
+	religion = aruvasue
+	holding = castle_holding
+}
+
+3358 = {
+	holding = none
+}
+
+3359 = {
+	holding = none	
+}
+
+3361 = {
+	culture = kuridorig
+	religion = iek_otached
+	holding = nomad_holding
+}
+
+3363 = {
+	holding = none
+}
+
+3364 = {
+	holding = none
+}
+
+
+3379 = {
+	culture = kuridorig
+	religion = arayymorog
+	holding = nomad_holding
+}
+
+3458 = {
+	holding = none
+}
+
+3475 = {
+	holding = ruin_holding
+}
+
+3477 = {
+	holding = none
+}
+
+3574 = {
+	holding = church_holding
+}
+
+3588 = {
+	culture = amaghean
+	religion = amaghean_aagiokrata
+	holding = metro_holding
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+}
+
+3610 = {
+	culture = tretosai
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3652 = {
+	holding = none
+}
+
+3690 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+3700 = {
+	culture = redlander
+	religion = redland_cults
+	holding = castle_holding 
+}
+
+3705 = {
+	holding = none
+}
+
+3713 = {
+	holding = none
+}
+
+3719 = {
+	holding = none
+}
+
+
+3730 = {
+	holding = none
+}
+
+3734 = {
+	holding = none
+}
+
+3753 = {
+	culture = draneti
+	religion = izaerto_bosar
+	holding = castle_holding
+}
+
+3758 = {
+	holding = none
+}
+
+
+3772 = {
+	holding = city_holding
+}
+
+
+
+3815 = {
+	holding = none
+}
+
+3818 = {
+	holding = none
+}
+
+3835 = {
+	culture = redlander
+	religion = redland_cults
+	holding = castle_holding # GH TODO: Academy holding type for Magocracies
+}
+
+
+3877 = {
+	holding = none
+}
+
+
+
+
+4031 = {
+	holding = none
+}
+
+4035 = {
+	culture = lakaloi
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4037 = {
+	holding = none
+}
+
+4042 = {
+	culture = lattani
+	religion = sunwarwei_aagiokrata
+	holding = tribal_holding
+}
+
+4046 = {
+	culture = redlander
+	religion = redland_cults
+	holding = castle_holding # GH TODO: Academy holding type for Magocracies	
+}
+
+
+4057 = {
+	holding = none	
+}
+
+4060 = {
+	holding = none	 
+}
+
+
+4071 = {
+	culture = amaghean
+	religion = amaghean_aagiokrata
+	holding = castle_holding
+}
+
+4074 = {
+	culture = amaghean
+	religion = amaghean_aagiokrata
+	holding = castle_holding
+}
+
+4075 = {
+	holding = none
+}
+
+4077 = {
+	culture = redlander
+	religion = redland_cults
+	1100.1.1 = {
+		special_building = 01_redportal
+	}
+	holding = castle_holding # GH TODO: Academy holding type for Magocracies
+}
+
+4166 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4224 = {
+	holding = none
+}
+
+4235 = {
+	culture = amaghean
+	religion = amaghean_aagiokrata
+	holding = castle_holding
+}
+
+4272 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+
+	1200.1.1 = {
+		special_building = 01_star_tower
+	}
+}
+
+4350 = {
+	holding = city_holding
+}
+
+4353 = {
+	holding = none
+}
+
+4355 = {
+	holding = none
+}
+
+4357 = {
+	holding = none
+}
+
+4359 = {
+	culture = sycharcegs
+	religion = kikarsagi_aagiokrata
+	holding = castle_holding
+}
+
+4360 = {
+	culture = kunsag
+	religion = kikarsagi_aagiokrata
+	holding = castle_holding
+}
+
+4364 = {
+	holding = none
+}
+
+4366 = {
+	holding = none
+}
+
+
+4377 = {
+	holding = none
+}
+
+4379 = {
+	holding = none
+}
+
+4381 = {
+	holding = none
+}
+
+
+4383 = {
+	culture = musar
+	religion = cumani
+	holding = nomad_holding
+}
+
+4384 = {
+	holding = none
+}
+
+4386 = {
+	holding = none
+}
+
+4390 = {
+	holding = none
+}
+
+4398 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4399 = {
+	culture = tretosai
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+4401 = {
+	holding = none
+}
+
+4402 = {
+	holding = none
+}
+
+4405 = {
+	culture = musar
+	religion = cumani
+	holding = castle_holding
+}
+
+
+4407 = {
+	holding = none
+}
+
+4408 = {
+	holding = none
+}
+
+4410 = {
+	holding = none
+}
+
+4411 = {
+	holding = none
+}
+
+4413 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4415 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = metro_holding
+	1200.1.1 = {
+		buildings = {
+			metro_02
+		}
+		special_building = 01_chrys_lymani
+	}
+}
+
+4417 = {
+	holding = none
+}
+
+4418 = {
+	holding = none
+}
+
+4419 = {
+	holding = none
+}
+
+4423 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4424 = {
+	culture = redlander
+	religion = redland_cults
+	holding = castle_holding # GH TODO: Academy holding type for Magocracies
+}
+
+4425 = {
+	holding = church_holding
+}
+
+4428 = {
+	holding = none
+}
+
+4429 = {
+	holding = none
+}
+
+4430 = {
+	holding = none
+}
+
+4433 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4437 = {
+	holding = none
+}
+
+4441 = {
+	holding = none
+}
+
+4444 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+
+	0.1.1 = {
+		special_building = 01_golgelea_mines
+	}
+}
+
+4445 = {
+	holding = none
+}
+
+4446 = {
+	holding = none
+}
+
+
+4452 = {
+	holding = none
+}
+
+4453 = {
+	holding = none
+}
+
+4454 = {
+	holding = none
+}
+
+4456 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4457 = {
+	holding = none
+}
+
+4458 = {
+	holding = none
+}
+
+4459 = {
+	holding = none
+}
+
+4462 = {
+	holding = none
+}
+
+4464 = {
+	holding = none
+}
+
+
+4470 = {
+	holding = none
+}
+
+
+4471 = {
+	holding = none
+}
+
+4472 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4473 = {
+	holding = none
+}
+
+4474 = {
+	holding = none
+}
+
+4476 = {
+	holding = none
+}
+
+4477 = {
+	culture = jaravad
+	religion = cumani
+	holding = nomad_holding
+}
+
+4479 = {
+	holding = none
+}
+
+4480 = {
+	culture = jaravad
+	religion = cumani
+	holding = nomad_holding
+}
+
+4483 = {
+	holding = none
+}
+
+4484 = {
+	holding = none
+}
+
+4486 = {
+	culture = jaravad
+	religion = cumani
+	holding = nomad_holding
+}
+
+4489 = {
+	holding = none
+}
+
+4492 = {
+	holding = none
+}
+
+4494 = {
+	holding = none
+}
+
+4495 = {
+	culture = arderwan
+	religion = cumani
+	holding = castle_holding
+}
+
+4496 = {
+	holding = none
+}
+
+4497 = {
+	holding = none
+}
+
+4498 = {
+	holding = none	
+}
+
+4499 = {
+	holding = none
+}
+
+4500 = {
+	culture = khorinot
+	religion = cumani
+	holding = nomad_holding
+}
+
+4501 = {
+	holding = none
+}
+
+4502 = {
+	holding = none
+}
+
+4503 = {
+	holding = none
+}
+
+4505 = {
+	holding = none
+}
+
+4507 = {
+	holding = none
+}
+
+4508 = {
+	holding = none
+}
+
+4511 = {
+	holding = none
+}
+
+4515 = {
+	holding = none
+}
+
+4521 = {
+	holding = none
+}
+
+4523 = {
+	holding = none
+}
+
+4524 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4528 = {
+	holding = none
+}
+
+
+4529 = {
+	holding = city_holding
+}
+
+
+4530 = {
+	holding = none
+}
+
+4531 = {
+	holding = city_holding
+}
+
+4536 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = herder_holding
+}
+
+4541 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4542 = {
+	holding = city_holding
+}
+
+4544 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4545 = {
+	holding = none
+}
+
+4546 = {
+	holding = none
+}
+
+4548 = {
+	holding = none
+}
+
+4549 = {
+	holding = none
+}
+
+4553 = {
+	holding = none
+}
+
+4554 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4555 = {
+	holding = none
+}
+
+4556 = {
+	holding = none
+}
+
+4557 = {
+	holding = none
+}
+
+4558 = {
+	holding = none
+}
+
+4560 = {
+	holding = none
+}
+
+4562 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4563 = {
+	holding = none
+}
+
+4564 = {
+	holding = none
+}
+
+4565 = {
+	holding = none
+}
+
+4566 = {
+	holding = none
+}
+
+4568 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4569 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4570 = {
+	holding = none
+}
+
+4571 = {
+	holding = none
+}
+
+4572 = {
+	holding = none
+}
+
+4573 = {
+	holding = city_holding
+}
+
+4574 = {
+	holding = none
+}
+
+4576 = {
+	culture = arderwan
+	religion = cumani
+	holding = castle_holding
+}
+
+4577 = {
+	holding = church_holding
+}
+
+4578 = {
+	culture = arderwan
+	religion = cumani
+	holding = castle_holding
+
+	0.1.1 = {
+		special_building = 01_turayyil_mines
+	}
+}
+
+4614 = {
+	holding = city_holding
+}
+
+
+4998 = {
+	holding = none
+}
+
+5001 = {
+	holding = none
+}
+
+5002 = {
+	holding = city_holding
+}
+
+5003 = {
+	holding = none
+}
+
+5006 = {
+	culture = astilik
+	religion = astiliak
+	holding = castle_holding
+}
+
+5007 = {
+	culture = arderwan
+	religion = cumani
+	holding = castle_holding
+}
+
+5008 = {
+	holding = none	
+}
+
+5009 = {
+	holding = none
+}
+
+5010 = {
+	holding = none	
+}
+
+5011 = {
+	holding = none
+}
+
+5013 = {
+	holding = none	
+}
+
+5014 = {
+	culture = arderwan
+	religion = cumani
+	holding = castle_holding
+}
+
+5016 = {
+	holding = none
+}
+
+5018 = {
+	holding = none
+}
+
+5019 = {
+	holding = none	
+}
+
+5020 = {
+	holding = none
+}
+
+5022 = {
+	holding = none	
+}
+
+5023 = {
+	culture = arderwan
+	religion = cumani
+	holding = castle_holding
+}
+
+5026 = {
+	holding = none	
+}
+
+5028 = {
+	holding = none
+}
+
+5030 = {
+	holding = none
+}
+
+5033 = {
+	holding = none
+}
+
+5034 = {
+	culture = astilik
+	religion = astiliak
+	holding = castle_holding
+}
+
+5035 = {
+	holding = none
+}
+
+5036 = {
+	holding = none
+}
+
+5037 = {
+	holding = none
+}
+
+5038 = {
+	holding = none
+}
+
+5039 = {
+	culture = arderwan
+	religion = cumani
+	holding = castle_holding
+
+	1.1.1 = {
+		special_building = 01_khanazdar_khanduz
+	}
+}
+
+5042 = {
+	holding = none
+}
+
+5054 = {
+	holding = none
+}
+
+5217 = {
+	holding = none
+}
+
+5233 = {
+	culture = sycharcegs
+	religion = kikarsagi_aagiokrata
+	holding = castle_holding
+}
+
+5240 = {
+	culture = amaghean
+	religion = amaghean_aagiokrata
+	holding = castle_holding
+	1.1.1 = {
+		special_building = 01_amagheantower
+	}
+}
+
+5256 = {
+	holding = none
+}
+
+5270 = {
+	holding = none
+}
+
+
+5273 = {
+	culture = aygaen
+	religion = shyatan
+	holding = castle_holding
+}
+
+5274 = {
+	holding = none
+}
+
+5278 = {
+	holding = castle_holding
+	culture = iseni
+	religion = zaragett_aagiokrata
+}
+
+5281 = {
+	holding = none
+}
+
+5289 = {
+	holding = none
+}
+
+5294 = {
+	holding = none
+}
+
+5307 = {
+	culture = marndeoticeni
+	religion = marndeoticeni_cult
+	holding = castle_holding
+}
+
+5320 = {
+	culture = redrunner
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5326 = {
+	holding = none
+}
+
+
+5372 = {
+	culture = fenvir
+	religion = sjalvolki
+	holding = church_holding
+}
+
+5392 = {
+	holding = city_holding
+}
+
+5398 = {
+	holding = none
+}
+
+5405 = {
+	culture = redrunner
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5413 = {
+	holding = none
+}
+
+5423 = {
+	culture = rakosakai
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5441 = {
+	culture = marndeoticeni
+	religion = marndeoticeni_cult
+	holding = tribal_holding
+}
+
+5483 = {
+	culture = redrunner
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5487 = {
+	holding = city_holding
+}
+
+5490 = {
+	culture = nimakiroi
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5523 = {
+	culture = rakosakai
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5524 = {
+	culture = nimakiroi
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5568 = {
+	holding = none
+}
+
+
+5584 = {
+	holding = none
+}
+
+5586 = {
+	culture = easternislander
+	religion = aversarian_axiaotheaism
+	holding = castle_holding
+}
+
+5589 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	1200.1.1 = {
+		buildings = { aaimperon_plantations_02 }
+	}
+}
+
+
+5598 = {
+	culture = rakosakai
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5606 = {
+	holding = none
+}
+
+5609 = {
+	holding = none
+}
+
+5625 = {
+	culture = yevamarai
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+5634 = {
+	holding = none
+}
+
+
+5665 = {
+	holding = none
+}
+
+5666 = {
+	culture = easternimperial
+	religion = aironoian_aagiokrata
+	holding = castle_holding
+}
+
+5668 = {
+	holding = none
+}
+
+5669 = {
+	culture = easternislander
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	
+}
+
+5686 = {
+	holding = none
+}
+
+
+
+5704 = {
+	holding = none
+}
+
+5706 = {
+	holding = none
+}
+
+5712 = {
+	holding = none
+}
+
+5719 = {
+	holding = none
+}
+
+5724 = {
+	culture = easternislander
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5731 = {
+	holding = none
+}
+
+
+5736 = {
+	holding = none
+}
+
+5745 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5746 = {
+	culture = tretosai
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5747 = {
+	holding = none
+}
+
+
+5809 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+
+5830 = {
+	culture = dergi
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5832 = {
+	holding = city_holding
+}
+
+5839 = {
+	holding = none
+}
+
+
+5855 = {
+	holding = none
+}
+
+
+5863 = {
+	holding = church_holding
+}
+
+5794 = {
+	holding = city_holding
+}
+
+5869 = {
+	holding = none
+}
+
+5872 = {
+	holding = none
+}
+
+5876 = {
+	culture = easternimperial
+	religion = aironoian_aagiokrata
+	holding = castle_holding
+}
+
+
+5889 = {
+	holding = none
+}
+
+5913 = {
+	culture = nimakiroi
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5960 = {
+	holding = none
+}
+
+
+5992 = {
+	culture = tretosai
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5998 = {
+	culture = vonatolis
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+6102 = {
+	holding = none
+}
+
+6112 = {
+	culture = apokiakas
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+6347 = {
+	holding = castle_holding
+	culture = apokiakas
+	religion = aversarinas_aagiokrata
+}
+
+6479 = {
+	holding = none
+}
+
+6566 = {
+	holding = none
+}
+
+
+6675 = {
+	holding = none
+}
+
+6718 = {
+	holding = none
+}
+
+6727 = {
+	culture = balauri
+	religion = zaldrigas
+	holding = tribal_holding
+}
+
+6729 = {
+	culture = tretosai
+	religion = militant_cliques
+	holding = castle_holding
+}
+
+6733 = {
+	holding = none
+}
+
+6775 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6811 = {
+	holding = none
+}
+
+6831 = {
+	culture = amaghean
+	religion = amaghean_aagiokrata
+	holding = castle_holding
+}
+
+7164 = {
+	culture = rakosakai
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+7209 = {
+	holding = none
+}
+
+8276 = {
+	holding = city_holding
+}
+
+8586 = {
+	holding = none
+}
+
+8598 = {
+	holding = none
+}
+
+8624 = {
+	1186.1.1 = { 
+		culture = easternimperial
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		culture = jaravad
+		religion = cumani
+		holding = nomad_holding
+	}
+}
+
+
+8722 = {
+	holding = none
+}
+
+8824 = {
+	holding = church_holding
+}
+
+8949 = {
+	holding = none
+}
+
+8950 = {
+	holding = none
+}
+
+8951 = {
+	holding = none
+}
+
+642 = {
+	holding = none
+}
+8952 = {
+	culture = lattani
+	religion = sunarwei
+	holding = tribal_holding
+}
+
+8953 = {
+	culture = lattani
+	religion = sunarwei
+	holding = tribal_holding
+}
+
+8954 = {
+	holding = none
+}
+
+
+8955 = {
+	holding = none
+}
+
+
+8957 = {
+	holding = none
+}
+
+
+9010 = {
+	holding = none
+}
+
+9052 = {
+	holding = none
+}
+
+9146 = {
+	holding = none
+}
+
+9387 = {
+	culture = ypsikenai
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+9390 = {
+	holding = none
+}
+
+9391 = {
+	holding = none
+}

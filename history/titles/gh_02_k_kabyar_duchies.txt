@@ -1,0 +1,60 @@
+d_kalbafaraj_mahalleh = { 
+	1187.4.11 = { 
+		holder = amsari_mahndayana_227
+		liege = e_amsari
+	}	
+	1197.2.3 = { 
+		holder = amsari_mahndayana_228
+		liege = e_amsari
+	}
+	1200.1.1 = { change_development_level = 11 }	
+	1229.10.24 = { 
+		holder = amsari_mahndayana_309_father
+		liege = e_amsari
+	}
+	1246.7.18 = { 
+		holder = amsari_mahndayana_309
+		liege = e_amsari
+	}
+}
+#d_nian_kand = { 
+#	1250.1.1 = { 
+#		holder = amsari_mahndayana_7
+#			liege = e_amsari
+#	}
+#	1230.1.1 = { change_development_level = 18 }
+#}
+#d_garathanka = { 
+#	1250.1.1 = { 
+#		holder = amsari_mahndayana_10
+#		liege = e_amsari
+#	}
+#	1230.1.1 = { change_development_level = 15 }
+#}
+d_prathatha = { 
+	1197.4.21 = { 
+		government = clan_government
+		holder = leviden_mahndayana_1
+		liege = e_amsari
+	}
+	1229.6.4 = {
+		holder = leviden_mahndayana_4
+		liege = e_amsari
+	}
+	1230.1.1 = { change_development_level = 15 }
+}
+d_rakrundur = { 
+	1197.4.21 = { 
+		holder = leviden_mahndayana_1
+		liege = e_amsari
+	}
+	1229.6.4 = { 
+		holder = leviden_mahndayana_3
+		liege = e_amsari
+	}
+	1234.6.7 = { 
+		holder = leviden_mahndayana_4
+		liege = e_amsari
+	}
+	1230.1.1 = { change_development_level = 9 }
+}

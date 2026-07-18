@@ -1,0 +1,38 @@
+﻿centralimperial_thixanonic_cult_1 = {
+	name = "Archimanos"
+	dna = centralimperial_thixanonic_cult_1
+	religion = "thixanonic_cult"
+	culture = "centralimperial"
+
+	trait = education_diplomacy_1
+	trait = craven
+	trait = arrogant
+	trait = sadistic
+	trait = magic_good_1
+	trait = wheezing
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_western_10
+			custom_hair = male_hair_western_01
+		}
+	}
+
+	1223.3.11 = {
+		birth = yes
+	}
+}
+
+centralimperial_thixanonic_cult_2 = {
+	name = "Asklepios"
+	dynasty = dyn_central_empire_12
+	religion = "thixanonic_cult"
+	culture = "centralimperial"
+	father = centralimperial_aversarinas_aagiokrata_48
+	mother = centralimperial_aversarinas_aagiokrata_49
+
+	1228.4.12 = {
+		birth = yes
+		trait = magic_good_5
+	}
+}

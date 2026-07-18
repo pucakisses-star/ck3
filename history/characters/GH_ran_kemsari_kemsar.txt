@@ -1,0 +1,711 @@
+﻿ran_kemsari_kemsar_1 = {
+	name = "Amun_thori"
+	dna = kemsar_22
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	trait = intellect_bad_1
+	trait = education_diplomacy_1
+	trait = gregarious
+	trait = drunkard
+	trait = trusting
+	trait = content
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = no_hair
+		}
+	}
+
+	1225.1.1 = {
+		birth = yes
+	}
+}
+
+ran_kemsari_kemsar_2 = {
+	name = "Arnebaskenis"
+	dna = kemsar_23
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	trait = intellect_good_1
+	trait = ambitious
+	trait = deceitful
+	trait = patient
+	trait = bastard
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_sub_saharan_01
+		}
+	}
+
+	1238.1.1 = {
+		birth = yes
+		effect = {
+			#add_pressed_claim = title:d_djedemhor
+		}
+	}
+}
+
+ran_kemsari_kemsar_3 = {
+	name = "Aschsepsen"
+	dna = ran_kemsari_kemsar_3
+
+	religion = "kemsar"
+	culture = "ran_kemsari"
+	dynasty = dyn_kemsar_1
+
+	mother = ran_kemsari_kemsar_4
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_mena_01
+		}
+	}
+
+	1218.11.21 = {
+		birth = yes
+		trait = magic_good_4
+		trait = intellect_good_3
+		effect = {
+			#add_pressed_claim = title:d_sekhmwy
+			add_pressed_claim = title:d_urkhamur
+			give_nickname = nick_the_accursed_aschsepsen
+			dynasty = { add_dynasty_prestige_level = 3 }
+		}
+	}
+
+	1230.1.1 = {
+		trait = paranoid
+		trait = ambitious
+		trait = deceitful	
+	}
+
+	1234.11.21 = {
+		trait = lunatic_1
+		trait = possessed_1
+		trait = education_diplomacy_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:rites_of_the_land_beyond} }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+
+ran_kemsari_kemsar_4 = { # Last of the line of Henutaht, wants to achieve want her ancestor failed and conquer Amsari
+	name = "Anukataht"
+	dna = ran_kemsari_kemsar_4
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	female = yes
+	martial = 13
+	dynasty = dyn_kemsar_1
+	mother = ran_kemsari_kemsar_8
+	trait = wrathful
+	trait = ambitious
+	trait = brave
+	trait = physique_good_1
+	trait = education_martial_3
+	trait = desert_warrior
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_sub_saharan_03
+		}
+	}
+
+	1177.5.17 = {
+		birth = yes
+	}
+
+	1233.8.9 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+ran_kemsari_kemsar_5 = { # The philospher
+	name = "Nephaht"
+	dna = ran_kemsari_kemsar_5
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	trait = patient
+	trait = calm
+	trait = temperate
+	trait = intellect_good_1
+	trait = magic_good_1
+	trait = education_learning_4
+	trait = scholar
+	trait = journaller
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_sub_saharan_02
+		}
+	}
+
+	1133.6.4 = {
+		birth = yes
+		effect = {
+			give_nickname = nick_the_philosopher_nviv
+		}
+	}
+
+	1149.6.4 = {
+		trait = gh_historical_mystic_3
+	}
+
+	1233.8.9 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+ran_kemsari_kemsar_6 = { # Big muscle bound brute. Can't think too good, but who needs to when you can lay out almost anyone with a single punch
+	name = "Draknab"
+	dna = ran_kemsari_kemsar_6
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	prowess = 20
+	trait = arbitrary
+	trait = wrathful
+	trait = stubborn
+	trait = giant
+	trait = physique_good_3
+	trait = intellect_bad_1
+	trait = education_martial_3
+	trait = reaver
+	trait = aggressive_attacker
+	trait = strong
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_sub_saharan_03
+		}
+	}
+
+	1178.8.5 = {
+		birth = yes
+		effect = {
+			give_nickname = nick_the_brute_draknab
+		}
+	}
+
+	1194.8.5 = {
+		trait = gh_historical_track_hunter_2
+	}
+
+	1235.8.9 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+ran_kemsari_kemsar_7 = { # Rather umimportant high queen. Was killed by Draknab, who siezed her teritory.
+	name = "Kamala"
+	dna = ran_kemsari_kemsar_7
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	female = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = female_hair_sub_saharan_01
+		}
+	}
+
+	1157.9.14 = {
+		birth = yes
+	}
+
+	1197.4.26 = {
+		death = {
+			death_reason = death_duel
+			killer = ran_kemsari_kemsar_6
+		}
+	}
+}
+
+ran_kemsari_kemsar_8 = { # Mother of Anukataht, dies soon after 1184 start date, leaving her only daughter to rule.
+	name = "Atim"
+	dna = ran_kemsari_kemsar_8
+	religion = "kemsar"
+	culture = "ran_kemsari"
+	female = yes
+
+	dynasty = dyn_kemsar_1
+	trait = physique_good_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_sub_saharan_03
+		}
+	}
+
+	1156.7.20 = {
+		birth = yes
+	}
+	1189.5.13 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+ran_kemsari_kemsar_9 = { # Was a great warlord who united many of Ran Kemsari in attempt to take over the Amsari and reclaim their ancestral borders. See the year 723 entry in the start years file for more info
+	name = "Henutaht"
+	dna = ran_kemsari_kemsar_9
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	diplomacy = 5
+	martial = 25
+	stewardship = 8
+	intrigue = 8
+	learning = 3
+	dynasty = dyn_kemsar_1
+	trait = wrathful
+	trait = ambitious
+	trait = vengeful
+	trait = physique_good_2
+	trait = education_martial_4
+	trait = desert_warrior
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = no_hair
+		}
+	}
+
+	691.5.9 = {
+		birth = yes
+		effect = {
+			give_nickname = nick_the_unrelenting_henutaht
+		}
+	}
+	726.8.9 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+ran_kemsari_kemsar_10 = {
+	name = "Senb"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	1233.1.1 = {
+		birth = yes
+	}
+}
+
+ran_kemsari_kemsar_11 = {
+	name = "Huni"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	1232.1.1 = {
+		birth = yes
+	}
+}
+
+ran_kemsari_kemsar_12 = {
+	name = "Scemiophris"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	female = yes
+
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+ran_kemsari_kemsar_13 = {
+	name = "Senb"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	1218.1.1 = {
+		birth = yes
+	}
+}
+
+ran_kemsari_kemsar_14 = {
+	name = "Arnebaskenis"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	1217.1.1 = {
+		birth = yes
+	}
+}
+
+ran_kemsari_kemsar_15 = {
+	name = "Arnebaskenis"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	1219.1.1 = {
+		birth = yes
+	}
+}
+
+ran_kemsari_kemsar_16 = {
+	name = "Amun_thori"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	1237.1.1 = {
+		birth = yes
+	}
+}
+
+ran_kemsari_kemsar_17 = {
+	name = "Raziya"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	female = yes
+
+	1234.1.1 = {
+		birth = yes
+	}
+}
+
+ran_kemsari_kemsar_18 = {
+	name = "Sechet"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	female = yes
+
+	1235.1.1 = {
+		birth = yes
+	}
+}
+
+ran_kemsari_kemsar_19 = {
+	name = "Gyasi"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	1225.1.1 = {
+		birth = yes
+	}
+}
+
+ran_kemsari_kemsar_20 = {
+	name = "Aschsepsen"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	1235.1.1 = {
+		birth = yes
+	}
+}
+
+ran_kemsari_kemsar_21 = {
+	name = "Hehet"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	female = yes
+
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+ran_kemsari_kemsar_22 = {
+	name = "Annoub"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	1222.1.1 = {
+		birth = yes
+	}
+}
+
+ran_kemsari_kemsar_23 = {
+	name = "Sotemeit"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	female = yes
+
+	1219.1.1 = {
+		birth = yes
+	}
+}
+
+ran_kemsari_kemsar_24 = {
+	name = "Fai_nofre"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+ran_kemsari_kemsar_25 = {
+	name = "Sotemeit"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	female = yes
+
+	1215.1.1 = {
+		birth = yes
+	}
+}
+
+ran_kemsari_kemsar_26 = {
+	name = "Nuru"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	female = yes
+
+	1225.1.1 = {
+		birth = yes
+	}
+}
+
+ran_kemsari_kemsar_27 = {
+	name = "Amenemope"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	1177.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+ran_kemsari_kemsar_28 = {
+	name = "Mubarak"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	1181.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+ran_kemsari_kemsar_29 = {
+	name = "Shararah"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	female = yes
+
+	1171.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+ran_kemsari_kemsar_30 = {
+	name = "Yakta"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	female = yes
+
+	1172.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+ran_kemsari_kemsar_31 = {
+	name = "Setara"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	female = yes
+
+	1181.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+ran_kemsari_kemsar_32 = {
+	name = "Rhamschosi"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	1180.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+ran_kemsari_kemsar_33 = {
+	name = "Muslihiddin"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	1172.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+ran_kemsari_kemsar_34 = {
+	name = "Her_bad"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	1173.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+ran_kemsari_kemsar_35 = {
+	name = "Msamaki"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	1173.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+ran_kemsari_kemsar_36 = {
+	name = "Faghira"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	female = yes
+
+	1172.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+ran_kemsari_kemsar_37 = {
+	name = "Bakheperuneb"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	1170.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+ran_kemsari_kemsar_38 = {
+	name = "Shogofa"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	female = yes
+
+	1166.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+ran_kemsari_kemsar_39 = {
+	name = "Faghira"
+	religion = "kemsar"
+	culture = "ran_kemsari"
+
+	female = yes
+
+	1178.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}

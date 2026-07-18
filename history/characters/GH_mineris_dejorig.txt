@@ -1,0 +1,67 @@
+﻿mineris_dejorig_1 = {
+	name = "Vlejin" #Vendelin
+	religion = "dejorig"
+	culture = "mineris"
+
+	1227.1.1 = {
+		birth = yes
+		give_nickname = nick_the_free_vlejin
+	}
+}
+
+mineris_dejorig_2 = {
+	name = "Klapil"
+	religion = "dejorig"
+	culture = "mineris"
+	trait = peasant_leader
+
+	1217.1.1 = {
+		birth = yes
+		give_nickname = nick_shackle_breaker
+	}
+}
+
+mineris_dejorig_3 = {
+	name = "Zajca" #Zajicova
+	dynasty = dyn_samojitian_1
+	religion = "dejorig"
+	culture = "mineris"
+	female = yes
+	father = mineris_dejorig_5
+	trait = peasant_leader
+
+	1238.1.1 = {
+		birth = yes
+	}
+}
+
+mineris_dejorig_4 = {
+	name = "Radosaj" #Radosamoj
+	dynasty = dyn_samojitian_1
+	religion = "dejorig"
+	culture = "mineris"
+	father = mineris_dejorig_5
+	trait = peasant_leader
+
+	1238.1.1 = {
+		birth = yes
+	}
+}
+
+mineris_dejorig_5 = { # Brave warrior duke, has his lands divided between his kids
+	name = "Klimaj" #Klement
+	dynasty = dyn_samojitian_1
+	religion = "dejorig"
+	culture = "mineris"
+	trait = brave
+	trait = just
+	trait = stubborn
+	trait = peasant_leader
+
+	trait = education_martial_3
+
+	1216.1.1 = {
+		birth = yes
+		give_nickname = nick_savior_of_the_deeps
+	}
+}

@@ -1,0 +1,8 @@
+﻿pyanaki_daramarjaratan_1 = { # Lich ppl
+	name = "Jayaraja"
+	religion = "daramarjaratan"
+	culture = "pyanaki"
+	1230.8.8 = {
+		birth = yes
+	}
+}

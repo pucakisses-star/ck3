@@ -1,0 +1,2843 @@
+﻿5079 = {
+	holding = wasteland_empty_holding
+}
+
+7079 = {
+	holding = wasteland_empty_holding
+}
+
+5083 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+5820 = {
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+}
+
+6031 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6034 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6036 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6042 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6044 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6045 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6047 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = church_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6049 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+6056 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6057 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6058 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6059 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+6060 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+6063 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6065 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6067 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+6069 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6070 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6073 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6082 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6083 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6085 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6319 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+6327 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = city_holding
+	}
+	1010.1.1 = { 
+		culture = huegodocs
+		religion = aversarinas_aagiokrata
+	}
+	1110.1.1 = {
+		culture = apokiakas
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+6365 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+6380 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = city_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6381 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = city_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+6422 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6487 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6488 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6489 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+6495 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6500 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6501 = {
+	religion = wasteland_faith
+	culture = wasteland
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6504 = {
+	religion = wasteland_faith
+	culture = wasteland
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6547 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6559 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6575 = {
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+}
+
+6576 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+
+6612 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6617 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = city_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6618 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = church_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+6619 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = city_holding
+	}
+	1010.1.1 = { 
+		culture = huegodocs
+		religion = aversarinas_aagiokrata
+	}
+	1110.1.1 = {
+		culture = apokiakas
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+6623 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6634 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6636 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6639 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6651 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+6671 = {
+	holding = none
+}
+
+6674 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6676 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+6695 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+6710 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+6721 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+
+6731 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+6741 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6760 = {
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	874.11.21 = {
+		special_building = 01_mountainhold
+	}
+	holding = castle_holding
+}
+
+6763 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6764 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+6774 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+6778 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+6784 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+
+
+
+6815 = {
+	holding = none
+}
+
+
+7039 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+7051 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7052 = {
+	religion = wasteland_faith
+	culture = wasteland
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = church_holding
+	}
+	1200.1.1 = {
+		culture = fog_eaters
+		religion = fogeater
+		holding = tribal_holding
+	}
+}
+
+
+7064 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = church_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+7068 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7075 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+7086 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+7090 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7092 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+
+
+7115 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+7136 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7138 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7149 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+7191 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+7200 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7233 = {
+	holding = none
+}
+
+7258 = {
+	religion = wasteland_faith
+	culture = wasteland
+	1200.1.1 = {
+		culture = fog_eaters
+		religion = fogeater
+		holding = tribal_holding
+	}
+}
+
+7273 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7274 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7278 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = city_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7285 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+
+7296 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = city_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+7302 = {
+	religion = wasteland_faith
+	culture = wasteland
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+
+
+7316 = {
+	holding = none
+}
+
+
+7323 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7341 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7342 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7348 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+7363 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+7364 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+7374 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+7386 = {
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+}
+
+7388 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7400 = {
+	religion = wasteland_faith
+	culture = wasteland
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7404 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+7431 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+7466 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = church_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7468 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7475 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7476 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = church_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+
+7524 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7548 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = church_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+
+7582 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+7614 = {
+	holding = none
+}
+
+7616 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = metro_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7617 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7618 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = metro_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+7633 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7643 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7668 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7669 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = metro_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7676 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7690 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7696 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7705 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+
+7732 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7737 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7745 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = metro_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+7748 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7758 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+
+
+7769 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+
+7807 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = church_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7817 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = city_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7819 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = church_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+
+
+7877 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7884 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = church_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+7885 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+7907 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+7946 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+8016 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+
+8033 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+
+
+8041 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+8044 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+8047 = {
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	holding = castle_holding
+}
+
+
+8048 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1200.1.1 = {
+		religion = aversarinas_aagiokrata
+		culture = centralimperial
+		holding = castle_holding
+	}
+}
+
+8078 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	850.1.1 = { 
+		culture = huegodocs
+		religion = apti
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+8080 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+8085 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+8090 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+8096 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+8114 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+8139 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+8140 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+
+
+
+8188 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+8194 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+8203 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+8226 = {
+	holding = none
+}
+
+8235 = {
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	holding = castle_holding
+}
+
+8236 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+8249 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+8254 = {
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+8260 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+8262 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+8345 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+8706 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+8729 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+8736 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+
+
+8769 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+8781 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+8796 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+8802 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+8811 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+8825 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+8831 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+8838 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+8841 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+8843 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+8844 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+
+
+6056 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+8861 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+8973 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+
+9022 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1186.1.1 = { 
+		culture = apokiakas
+		religion = aversarinas_aagiokrata
+		holding = castle_holding
+	}
+	1200.3.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+}
+

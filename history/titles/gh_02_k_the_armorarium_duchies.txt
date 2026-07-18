@@ -1,0 +1,10 @@
+d_mayik_duchy_18 = {
+	1182.6.22 = {
+		holder = southernimperial_aversarinas_aagiokrata_20
+		liege = e_mayikprolollan
+		government = magocratic_government
+	}
+	1227.9.10 = {
+		holder = 0
+	}
+}

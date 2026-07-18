@@ -1,0 +1,296 @@
+﻿makryenis_sansia_1 = {
+	name = "Phaedre"
+	dna = makryenis_sansia_1
+	religion = "sansia"
+	culture = "makryenis"
+	female = yes
+	martial = 10
+	intrigue = 10
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp2_iberian_christian_01
+		}
+	}
+
+	1204.4.17 = {
+		birth = yes
+	trait = lunatic_1
+	}
+
+	1216.1.1 = {
+		trait = sadistic
+	trait = deceitful
+	trait = brave
+	}
+
+	1220.4.17 = {
+		trait = aggressive_attacker
+		trait = torturer
+		trait = education_martial_3
+		trait = gh_historical_blademaster_2
+	}
+
+	1227.9.12 = {
+		trait = murderer
+		give_nickname = nick_butcher_of_kahdavraka
+	}
+}
+
+makryenis_sansia_2 = {
+	name = "Themis"
+	religion = "sansia"
+	culture = "makryenis"
+	female = yes
+
+	1229.3.12 = {
+		birth = yes
+	trait = physique_good_3
+	trait = beauty_bad_1
+	}
+
+	1241.1.1 = {
+		trait = sadistic
+	trait = wrathful
+	trait = vengeful
+	}
+
+	1245.3.12 = {
+		trait = education_martial_1
+		trait = gh_historical_blademaster_1
+		trait = scarred
+	}
+}
+
+makryenis_sansia_3 = {
+	name = "Otonia"
+	religion = "sansia"
+	culture = "makryenis"
+	female = yes
+
+	1231.4.7 = {
+		birth = yes
+	}
+
+	1243.1.1 = {
+		trait = deceitful
+	trait = callous
+	trait = ambitious
+	}
+
+	1247.4.7 = {
+		trait = education_intrigue_2
+	}
+}
+
+makryenis_sansia_4 = {
+	name = "Astyoche"
+	religion = "sansia"
+	culture = "makryenis"
+	female = yes
+
+	1222.11.7 = {
+		birth = yes
+		trait = beauty_good_2
+		trait = magic_good_2
+	}
+
+	1241.1.1 = {
+		trait = sadistic
+		trait = lustful
+		trait = arrogant
+	}
+
+	1245.11.7 = {
+		trait = education_martial_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+}
+
+makryenis_sansia_5 = {
+	name = "Briseis"
+	religion = "sansia"
+	culture = "makryenis"
+	female = yes
+	1232.8.12 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1244.1.1 = {
+		trait = sadistic
+		trait = diligent
+		trait = patient
+	}
+
+	1248.8.12 = {
+		trait = education_learning_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+}
+
+makryenis_sansia_6 = {
+	name = "Elcmene"
+	religion = "sansia"
+	culture = "makryenis"
+	female = yes
+	martial = 5
+
+	1233.12.3 = {
+		birth = yes
+		trait = beauty_good_1
+		trait = intellect_good_2
+	}
+
+	1245.1.1 = {
+		trait = compassionate
+		trait = brave
+		trait = cynical
+	}
+
+	1249.12.3 = {
+		trait = education_martial_4
+		effect = {
+			set_variable = good_agionist
+		}
+	}
+}
+
+makryenis_sansia_7 = {
+	name = "Elpir"
+	religion = "sansia"
+	culture = "makryenis"
+	female = yes
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+
+	1178.4.28 = {
+		birth = yes
+	}
+
+	1190.1.1 = {
+		trait = callous
+		trait = calm
+		trait = vengeful
+	}
+
+	1194.4.28 = {
+		trait = education_intrigue_3
+	}
+}
+
+makryenis_sansia_8 = {
+	name = "Agamede"
+	religion = "sansia"
+	culture = "makryenis"
+	female = yes
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+
+	1231.11.6 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1243.1.1 = {
+		trait = callous
+		trait = content
+		trait = brave
+	}
+
+	1247.11.6 = {
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+}
+
+makryenis_sansia_9 = {
+	name = "Hippodamia"
+	religion = "sansia"
+	culture = "makryenis"
+	female = yes
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+
+	1228.1.1 = {
+		birth = yes
+	}
+}
+
+makryenis_sansia_10 = {
+	name = "Anastasia"
+	religion = "sansia"
+	culture = "makryenis"
+	female = yes
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+makryenis_sansia_11 = {
+	name = "Polydora"
+	religion = "sansia"
+	culture = "makryenis"
+	female = yes
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+
+	1219.1.1 = {
+		birth = yes
+	}
+}
+
+makryenis_sansia_12 = {
+	name = "Hecuba"
+	religion = "sansia"
+	culture = "makryenis"
+	female = yes
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+
+	1228.1.1 = {
+		birth = yes
+	}
+}
+
+makryenis_sansia_13 = {
+	name = "Nikasepolis"
+	religion = "sansia"
+	culture = "makryenis"
+	female = yes
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+
+	1233.1.1 = {
+		birth = yes
+	}
+}

@@ -1,0 +1,29 @@
+
+d_rabiqraa = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_34
+		liege = "k_four_rivers"
+		government = tribal_government
+	}
+1230.1.1 = { change_development_level = 14 }
+	1271.1.1 = { #Barzawa incursion seizes passes
+		holder = barzawa_tulharsin_1
+	}
+}
+#d_matrooth = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_46
+#		liege = "k_four_rivers"
+#	}
+#	1230.1.1 = { change_development_level = 11 }
+#	1291.1.1 = {
+#		holder = tasurmad_ritualist_2
+#	}
+#}
+#d_hita = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_47
+#		liege = "k_four_rivers"
+#	}
+#	1230.1.1 = { change_development_level = 12 }
+#}

@@ -1,0 +1,8 @@
+﻿nizhbata_vidvaookeyatra_1 = {
+	name = "Altunopa"
+	religion = "vidvaookeyatra"
+	culture = "nizhbata"
+	1234.8.8 = {
+		birth = yes
+	}
+}

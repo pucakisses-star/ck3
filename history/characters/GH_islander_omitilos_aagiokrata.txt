@@ -1,0 +1,29 @@
+﻿islander_omitilos_aagiokrata_1 = {
+	name = "Philigomix"
+	religion = "omitilos_aagiokrata"
+	culture = "islander"
+
+	1229.2.19 = {
+		birth = yes
+	}
+}
+
+islander_omitilos_aagiokrata_2 = {
+	name = "Athressirios"
+	religion = "omitilos_aagiokrata"
+	culture = "islander"
+
+	1207.11.5 = {
+		birth = yes
+	}
+}
+
+islander_omitilos_aagiokrata_3 = {
+	name = "Phaelox"
+	religion = "omitilos_aagiokrata"
+	culture = "islander"
+
+	1221.11.7 = {
+		birth = yes
+	}
+}

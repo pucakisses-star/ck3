@@ -1,0 +1,13 @@
+﻿yayanka_yakasak_1 = {
+	name = "Hasitha"
+	culture = "yayanka"
+	religion = "yakasak"
+
+	1191.1.1 = {
+		birth = yes
+	}
+
+	1263.7.14 = {
+		death = { death_reason = death_battle killer = watumimba_yakasak_2 }
+	}
+}

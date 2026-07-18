@@ -1,0 +1,23 @@
+d_kuthwyss = {
+	1.1.2 = {
+		holder = unsorted_31
+	}
+	90.1.1 = {
+		holder = 0
+	}
+	1250.1.1 = {
+		change_development_level = 8
+	}
+	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+		de_jure_liege = k_kollos
+	}
+}
+#d_vaskavixas = {
+#	1250.1.1 = {
+#		change_development_level = 9
+#	}
+#
+#	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+#		de_jure_liege = k_kollos
+#	}
+#}

@@ -1,0 +1,83 @@
+d_tsagadavi = {
+	1134.6.12 = {
+		holder = easternimperial_aironoian_aagiokrata_11
+	}
+	1188.9.25 = {
+		holder = easternimperial_aironoian_aagiokrata_14
+	}
+	1199.9.26 = {
+		holder = easternimperial_aironoian_aagiokrata_15
+	}
+	1244.10.12 = {
+		holder = easternimperial_aironoian_aagiokrata_4
+	}
+}
+d_anomara = { # GH TODO: Removed in province rework, reincorporate history
+	1091.8.5 = {
+		holder = easternimperial_aironoian_aagiokrata_73
+	}
+	1158.8.7 = {
+		holder = easternimperial_aironoian_aagiokrata_72
+	}
+	1168.11.11 = {
+		holder = easternimperial_militant_cliques_2
+	}
+	1199.8.26 = {
+		holder = easternimperial_aironoian_aagiokrata_10
+	}
+	1202.1.8 = {
+		holder = easternimperial_aironoian_aagiokrata_28
+		government = military_unit_government
+	}
+	1225.11.11 = {
+		holder = easternimperial_aironoian_aagiokrata_30
+		government = military_unit_government
+	}
+}
+d_nugool = {
+	1096.7.29 = {
+		holder = easternimperial_aironoian_aagiokrata_65
+		government = feudal_government
+	}
+	1147.7.9 = {
+		holder = easternimperial_aironoian_aagiokrata_32
+		government = feudal_government
+	}
+	1173.5.19 = {
+		holder = easternimperial_aironoian_aagiokrata_76
+		government = feudal_government
+	}
+	1199.9.26 = {
+		holder = easternimperial_aironoian_aagiokrata_33
+		government = feudal_government
+	}
+	1211.12.15 = {
+		holder = 0
+	}
+}
+d_karcord = {
+	1096.10.7 = {
+		holder = easternimperial_aironoian_aagiokrata_49
+		government = feudal_government
+	}
+	1147.3.15 = {
+		holder = easternimperial_aironoian_aagiokrata_19
+		government = feudal_government
+	}
+	1175.8.10 = {
+		holder = easternimperial_aironoian_aagiokrata_17
+		government = feudal_government
+	}
+	1188.9.25 = {
+		holder = easternimperial_aironoian_aagiokrata_18
+		government = feudal_government
+	}
+	1220.10.3 = {
+		holder = easternimperial_aironoian_aagiokrata_20
+		government = feudal_government
+	}
+	1250.6.22 = {
+		holder = easternimperial_aironoian_aagiokrata_21
+		change_development_level = 9
+	}
+}

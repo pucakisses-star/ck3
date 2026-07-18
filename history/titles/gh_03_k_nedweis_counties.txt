@@ -1,0 +1,169 @@
+c_stagswood = {
+	1253.1.1 = {
+		holder = huegodocs_apti_3
+		government = feudal_government
+	}
+}
+c_hayshire = {
+	1253.1.1 = {
+		liege = "k_archexate_ti_karanthos"
+		holder = huegodocs_apti_1
+		government = feudal_government
+	}
+}
+c_hazelshaw = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1253.1.1 = {
+		liege = "k_archexate_ti_karanthos"
+		holder = huegodocs_apti_2
+		government = feudal_government
+	}
+	1255.8.15 = {
+		holder = bricotaves_wyrdpath_1
+	}
+}
+c_druidsgrove = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	66.11.14 = {
+		holder = wasteland
+	}
+	1253.1.1 = {
+		holder = huegodocs_apti_3
+		government = feudal_government
+	}
+}
+c_wizardsbridge = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	66.11.14 = {
+		holder = wasteland
+	}
+	1219.3.30 = {
+		liege = "e_the_reach"
+		holder = northernimperial_aversarinas_aagiokrata_26
+		government = feudal_government
+	}
+	1229.7.30 = {
+		liege = "e_etepezea"
+		holder = northernimperial_aversarinas_aagiokrata_25
+		government = feudal_government
+	}
+	1247.8.29 = {
+		holder = daukeni_sjalvolki_95 # Arvolk Černobukovyć
+		liege = "e_migrant_coalition"
+	}
+	1269.3.16 = {
+		holder = daukeni_sjalvolki_99 # Prahomil Černobukovyć
+	}
+	1280.1.1 = {
+		change_development_level = 9
+	}
+}
+c_aervalrflower_cascade = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1253.1.1 = {
+		liege = "e_migrant_coalition"
+		holder = drothacny_dethedklann_1
+		government = tribal_government
+	}
+}
+c_nixie_falls = {
+	1.1.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}
+c_sweetgarden = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	66.11.14 = {
+		holder = wasteland
+	}
+	1247.8.29 = {
+		holder = daukeni_sjalvolki_95 # Arvolk Černobukovyć
+		liege = "e_migrant_coalition"
+	}
+	1269.3.16 = {
+		holder = daukeni_sjalvolki_99 # Prahomil Černobukovyć
+	}
+	1280.1.1 = {
+		change_development_level = 9
+	}
+}
+c_harvestway = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	66.11.14 = {
+		holder = wasteland
+	}
+	1253.7.14 = {
+		liege = "e_migrant_coalition"
+		holder = northernimperial_aversarinas_aagiokrata_1
+	}
+	
+}
+c_faelight = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1184.8.8 = {
+		liege = "e_oraispol_aautokrata"
+		holder = ardothanes_aversarinas_aagiokrata_1
+		government = feudal_government
+	}
+	1232.7.26 = {
+		holder = ardothanes_aversarinas_aagiokrata_2
+	}
+	1247.3.15 = {
+		liege = "d_vhadrodizen"
+		holder = drothacny_dethedklann_1
+		government = tribal_government
+	}
+}
+c_twilightwood = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1184.8.8 = {
+		liege = "e_oraispol_aautokrata"
+		holder = ardothanes_aversarinas_aagiokrata_1
+		government = feudal_government
+	}
+	1230.1.1 = {
+		change_development_level = 4
+	}
+	1232.7.26 = {
+		liege = 0
+		holder = ardothanes_aversarinas_aagiokrata_2
+	}
+	1247.3.15 = {
+		liege = "e_migrant_coalition"
+		holder = daukeni_sjalvolki_42
+		government = continental_clan_government
+	}
+}
+c_honeyheart = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	66.11.14 = {
+		holder = wasteland
+	}
+	363.12.20 = {
+		holder = etrandanexi_lifepath_1	# High King Marcomer 'the Hesitant'
+	}
+	1253.1.1 = {
+		liege = "e_migrant_coalition"
+		holder = brigandines_partic_1
+		government = continental_clan_government
+	}
+}

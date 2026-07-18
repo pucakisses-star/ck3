@@ -1,0 +1,38 @@
+c_daraqqez = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_ebed08 = {
+	1254.1.1 = {
+		holder = dawasid_wardenism_1
+		government = migratory_government
+		change_development_level = 3
+	}
+}
+c_new_sarradon_county30 = {
+	1254.1.1 = {
+		holder = dawasid_wardenism_1
+		change_development_level = 3
+	}
+}
+c_new_sarradon_county28 = {
+	1239.7.13 = {
+		holder = utyalid_harthahi_2
+	}
+}
+c_withered_sea = {
+	1239.7.13 = {
+		holder = utyalid_harthahi_2
+	}
+}
+c_mayik_sgsgsgss = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_sayyamarrum = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

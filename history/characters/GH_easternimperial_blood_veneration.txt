@@ -1,0 +1,52 @@
+﻿easternimperial_blood_veneration_1 = { # Santhos 'Blood-Drinker', infamous vampire count of Chysos, and one of Axiaothea's greatest champions
+	name = "Santhos"
+    religion = "blood_veneration"
+    culture = "easternimperial"
+    dynasty = dyn_aversarian_160
+
+    sexuality = bisexual
+   	dna = santhos
+
+    martial = 7
+    diplomacy = 8
+    stewardship = 5
+    intrigue = 5
+    learning = 8
+    prowess = 8
+
+    1074.12.10 = {
+        birth = yes
+        trait = magic_good_11
+        trait = intellect_good_2
+        trait = beauty_good_3
+    }
+
+    1086.1.1 = {
+        trait = greedy
+        trait = lustful
+        trait = fickle
+    }
+
+    1090.12.10 = {
+        effect = { set_base_arcana = { AMOUNT = 11 } }
+        trait = education_arcana_3
+        trait = gh_historical_school
+        effect = {
+            set_variable = { name = historical_magic_school value = flag:living_magic } # GH: For now
+            set_variable = { name = historical_magic_school_min_spells value = 11 }
+        }
+    }
+
+    1138.3.5 = {
+    	trait = rakish
+        trait = gh_historical_reveler_3
+        give_nickname = nick_blood_drinker
+    }
+
+    1200.3.1 = {
+        death = {
+            death_reason = death_frodbrokna
+            killer = westernimperial_aeschraes_aagiokrata_1
+        }
+    }
+}

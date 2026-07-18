@@ -1,0 +1,294 @@
+﻿tahanati_daramarjaratan_1 = { # 1254 Tahanati Duchess
+	name = "Ahilyabai"
+	religion = "daramarjaratan"
+	culture = "tahanati"
+	sexuality = heterosexual
+	dynasty = dyn_tahanati_1
+	father = tahanati_daramarjaratan_2
+	mother = tahanati_daramarjaratan_3
+	female = yes
+	trait = magic_good_1
+
+	1229.6.6 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 1 }
+		}
+	}
+	1241.6.6 = {
+		trait = stubborn
+		trait = cynical
+		trait = temperate
+	}
+	1245.6.6 = {
+		trait = education_stewardship_3
+		trait = shrewd
+	}
+	1249.10.17 = {
+		add_matrilineal_spouse = tahanati_daramarjaratan_10
+		effect = {
+			set_relation_rival = character:karana_askevaryaa_1
+		}
+	}
+}
+
+tahanati_daramarjaratan_2 = { # 1228 Tahanti Duke
+	name = "Tukkoji"
+	religion = "daramarjaratan"
+	culture = "tahanati"
+	sexuality = heterosexual
+	dynasty = dyn_tahanati_1
+	father = tahanati_daramarjaratan_9
+	mother = tahanati_daramarjaratan_7
+	trait = magic_good_1
+
+	1203.12.1 = {
+		birth = yes
+	}
+	1215.12.1 = {
+		trait = honest
+		trait = compassionate
+		trait = generous
+	}
+	1219.12.1 = {
+		trait = education_diplomacy_2
+		trait = poet
+	}
+	1222.10.17 = {
+		add_spouse = tahanati_daramarjaratan_3
+	}
+	1226.4.14 = {
+		effect = {
+			set_relation_friend = character:xokola_vidvaookeyatra_1
+		}
+	}
+	1231.4.6 = {
+		death = {
+			death_reason = death_murder
+			killer = rahikaya_vidvaookeyatra_8
+		}
+	}
+}
+
+tahanati_daramarjaratan_3 = { # 1228 Tahanati Duchess
+	name = "Durga"
+	religion = "daramarjaratan"
+	culture = "tahanati"
+	sexuality = heterosexual
+	female = yes
+	trait = beauty_good_1
+
+	1204.7.19 = {
+		birth = yes
+	}
+	1216.7.19 = {
+		trait = stubborn
+		trait = trusting
+		trait = gluttonous
+	}
+	1220.7.19 = {
+		trait = education_stewardship_2
+	}
+}
+
+tahanati_daramarjaratan_4 = { # 1217 Tahanti Duke
+	name = "Bhima"
+	religion = "daramarjaratan"
+	culture = "tahanati"
+	sexuality = heterosexual
+	dynasty = dyn_tahanati_1
+	father = tahanati_daramarjaratan_8
+	mother = tahanati_daramarjaratan_7
+	trait = magic_good_3
+	trait = lunatic_genetic
+
+	1189.8.3 = {
+		birth = yes
+	}
+	1201.8.3 = {
+		trait = paranoid
+		trait = shy
+		trait = arbitrary
+	}
+	1205.8.3 = {
+		trait = education_intrigue_1
+		trait = gh_historical_blademaster_1
+		trait = reclusive
+	}
+	1223.2.17 = {
+		death = {
+			death_reason = death_murder
+			killer = rahikaya_vidvaookeyatra_8
+		}
+	}
+}
+
+tahanati_daramarjaratan_5 = { # 1200 Tahanati Duchess Daughter 1
+	name = "Anuradha"
+	religion = "daramarjaratan"
+	culture = "tahanati"
+	dynasty = dyn_tahanati_1
+	father = tahanati_daramarjaratan_8
+	mother = tahanati_daramarjaratan_7
+	trait = magic_good_1
+	female = yes
+
+	1190.10.15 = {
+		birth = yes
+	}
+	1193.10.15 = {
+		# trait = bossy Commented out for error
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+tahanati_daramarjaratan_6 = { # 1200 Tahanati Duchess Daughter 2
+	name = "Jijibai"
+	religion = "daramarjaratan"
+	culture = "tahanati"
+	dynasty = dyn_tahanati_1
+	father = tahanati_daramarjaratan_8
+	mother = tahanati_daramarjaratan_7
+	trait = magic_good_2
+	trait = lunatic_genetic
+	female = yes
+
+	1194.10.12 = {
+		birth = yes
+	}
+	1197.10.12 = {
+		# trait = charming Commented out for error
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+tahanati_daramarjaratan_7 = { # 1200 Tahanati Duchess
+	name = "Jankibai"
+	religion = "daramarjaratan"
+	culture = "tahanati"
+	dynasty = dyn_tahanati_1
+	trait = magic_good_1
+	female = yes
+
+	1169.3.4 = {
+		birth = yes
+	}
+	1181.3.4 = {
+		trait = diligent
+		trait = generous
+		trait = arbitrary
+	}
+	1185.3.4 = {
+		trait = education_stewardship_4
+	}
+	1186.2.19 = {
+		add_matrilineal_spouse = tahanati_daramarjaratan_8
+	}
+	1201.10.4 = {
+		add_matrilineal_spouse = tahanati_daramarjaratan_9
+	}
+	1215.8.11 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+
+tahanati_daramarjaratan_8 = { # 1200 Tahanti Duke-to-be, killed in Frod
+	name = "Mummuniraja"
+	religion = "daramarjaratan"
+	culture = "tahanati"
+	sexuality = bisexual
+	trait = magic_good_2
+	trait = lunatic_genetic
+
+	1168.2.19 = {
+		birth = yes
+	}
+	1180.2.19 = {
+		trait = gluttonous
+		trait = callous
+		trait = craven
+	}
+	1184.2.19 = {
+		trait = education_intrigue_3
+		trait = gh_historical_reveler_1
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+tahanati_daramarjaratan_9 = { # Post-1200 Tahanti Duke, killed by his stepson soon after
+	name = "Ramaswami"
+	religion = "daramarjaratan"
+	culture = "tahanati"
+	sexuality = heterosexual
+	trait = physique_good_1
+
+	1177.1.5 = {
+		birth = yes
+	}
+	1189.1.5 = {
+		trait = just
+		trait = humble
+		trait = brave
+	}
+	1193.1.5 = {
+		trait = education_martial_2
+		trait = gh_historical_blademaster_2
+	}
+	1205.6.14 = {
+		death = {
+			death_reason = death_duel
+			killer = tahanati_daramarjaratan_4
+		}
+	}
+}
+
+tahanati_daramarjaratan_10 = { # 1254 Tahanti Duke
+	name = "Chandraditya"
+	religion = "daramarjaratan"
+	culture = "tahanati"
+	sexuality = heterosexual
+
+	1227.7.22 = {
+		birth = yes
+	}
+	1239.7.22 = {
+		trait = calm
+		trait = gregarious
+		trait = just
+	}
+	1243.7.22 = {
+		trait = education_learning_2
+		trait = lifestyle_herbalist
+	}
+}
+
+tahanati_daramarjaratan_11 = { # 1254 Tahanti heir
+	name = "Suketuvarman"
+	religion = "daramarjaratan"
+	culture = "tahanati"
+	dynasty = dyn_tahanati_1
+	father = tahanati_daramarjaratan_10
+	mother = tahanati_daramarjaratan_1
+	sexuality = asexual
+
+	1251.11.28 = {
+		birth = yes
+	}
+}

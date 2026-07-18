@@ -1,0 +1,43 @@
+﻿
+c_south_bedouins_2012 = {
+	1224.3.1 = {
+		holder = tagrodar_ahridar_2
+		government = tribal_government 
+		change_development_level = 3
+	}
+}
+c_south_bedouins_2013 = {
+	1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}
+c_south_bedouins_101 = {
+	1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}
+c_south_bedouins_10 = {
+	1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}
+c_south_bedouins_12 = {
+	1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}
+c_new_sarradon_county17 = {
+	1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}
+c_south_bedouins_9aa = {
+	1250.3.1 = {
+		holder = takopara_sokaloma_1
+	}
+}

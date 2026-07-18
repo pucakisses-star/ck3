@@ -1,0 +1,27 @@
+d_paeschaes = {
+	1152.1.12 = {
+		liege = "k_kalliados"
+		holder = easternimperial_aversarinas_aagiokrata_79
+	}
+	1174.7.9 = {
+		liege = "k_kalliados"
+		holder = easternimperial_aversarinas_aagiokrata_1
+	}
+}
+
+#d_kalliados_isles = {
+#	1234.1.1 = {
+#		liege = "k_kalliados"
+#		holder = easternimperial_aversarinas_aagiokrata_52
+#	}
+#}
+
+d_phaistetus = {
+	1246.7.11 = {
+		holder = fenvir_sjalvolki_1
+		government = continental_clan_government
+	}
+	1230.1.1 = {
+		change_development_level = 1
+	}
+}

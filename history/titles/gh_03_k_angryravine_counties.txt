@@ -1,0 +1,266 @@
+c_fishershook = {
+	1028.10.13 = {
+		holder = lakoeng_fourteen_heavenly_methods_23
+		government = feudal_government
+		liege = k_bronzeport
+	}
+	1054.4.14 = {
+		holder = lakoeng_fourteen_heavenly_methods_22
+		government = feudal_government
+		liege = k_bronzeport
+	}
+	1091.7.3 = {
+		holder = lakoeng_fourteen_heavenly_methods_20
+		government = feudal_government
+		liege = k_bronzeport
+	}
+	1094.5.11 = {
+		holder = lakoeng_fourteen_heavenly_methods_19
+		government = feudal_government
+		liege = k_bronzeport
+	}
+	1149.10.21 = {
+		holder = lakoeng_fourteen_heavenly_methods_18
+		government = feudal_government
+		liege = k_bronzeport
+	}
+	1162.3.1 = {
+		holder = lakoeng_fourteen_heavenly_methods_17
+		government = feudal_government
+		liege = k_bronzeport
+	}
+	1182.7.2 = {
+		holder = lakoeng_fourteen_heavenly_methods_16
+		government = feudal_government
+		liege = k_bronzeport
+	}
+	1195.8.27 = {
+		holder = lakoeng_fourteen_heavenly_methods_15
+		government = feudal_government
+		liege = k_bronzeport
+	}
+	1245.3.7 = {
+		holder = lakoeng_fourteen_heavenly_methods_2
+		government = feudal_government
+		liege = k_bronzeport
+	}
+}
+
+c_bronzeportcounty = {
+	1039.11.26 = {
+		holder = lakoeng_fourteen_heavenly_methods_23
+	}
+	1054.5.14 = {
+		holder = lakoeng_fourteen_heavenly_methods_29
+	}
+	1061.5.6 = {
+		holder = lakoeng_fourteen_heavenly_methods_22
+	}
+	1091.7.3 = {
+		holder = lakoeng_fourteen_heavenly_methods_20
+	}
+	1094.5.11 = {
+		holder = lakoeng_fourteen_heavenly_methods_30
+	}
+	1124.5.1 = {
+		holder = lakoeng_fourteen_heavenly_methods_13
+	}
+	1135.4.3 = {
+		holder = lakoeng_fourteen_heavenly_methods_24
+	}
+	1159.1.1 = {
+		holder = lakoeng_fourteen_heavenly_methods_25
+	}
+	1169.7.13 = {
+		holder = lakoeng_fourteen_heavenly_methods_17
+	}
+	1182.7.2 = {
+		holder = lakoeng_fourteen_heavenly_methods_16
+	}
+	1195.8.27 = {
+		holder = lakoeng_fourteen_heavenly_methods_27
+	}
+	1240.3.8 = {
+		holder = lakoeng_fourteen_heavenly_methods_15
+	}
+	1243.4.4 = {
+		holder = lakoeng_fourteen_heavenly_methods_1
+		government = feudal_government
+		liege = k_bronzeport
+	}
+}
+
+c_tagsanside = {
+	1235.8.5 = {
+		holder = lakoeng_fourteen_heavenly_methods_35
+		government = feudal_government
+		liege = k_bronzeport
+	}
+}
+
+c_knifetop = {
+	1243.4.4 = {
+		holder = lakoeng_fourteen_heavenly_methods_37
+		government = feudal_government
+		liege = k_bronzeport
+	}
+}
+
+c_knifepoint = {
+	1110.1.10 = {
+		holder = lakoeng_fourteen_heavenly_methods_13
+		government = feudal_government
+		liege = k_bronzeport
+	}
+	1135.4.3 = {
+		holder = lakoeng_fourteen_heavenly_methods_12
+		government = feudal_government
+		liege = k_bronzeport
+	}
+	1166.9.6 = {
+		holder = lakoeng_fourteen_heavenly_methods_11
+		government = feudal_government
+		liege = k_bronzeport
+	}
+	1177.3.17 = {
+		holder = lakoeng_fourteen_heavenly_methods_10
+		government = feudal_government
+		liege = k_bronzeport
+	}
+	1230.7.28 = {
+		holder = lakoeng_fourteen_heavenly_methods_1
+		government = feudal_government
+		liege = k_bronzeport
+	}
+}
+
+c_archipelagoleap = {
+	1231.4.24 = {
+		holder = lihakan_dahala_2
+		government = feudal_government
+		liege = 0
+	}
+	1243.2.3 = {
+		holder = banwagul_narina_1
+		government = pirate_government
+		liege = d_southern_corsairs
+	}
+}
+
+c_nearlake = {
+	1092.12.26 = {
+		holder = lakoeng_fourteen_heavenly_methods_30
+		government = feudal_government
+		liege = k_bronzeport
+	}
+	1124.5.1 = {
+		holder = lakoeng_fourteen_heavenly_methods_24
+		government = feudal_government
+		liege = k_bronzeport
+	}
+	1159.1.1 = {
+		holder = lakoeng_fourteen_heavenly_methods_25
+		government = feudal_government
+		liege = k_bronzeport
+	}
+	1169.7.13 = {
+		holder = lakoeng_fourteen_heavenly_methods_26
+		government = feudal_government
+		liege = k_bronzeport
+	}
+	1185.11.26 = {
+		holder = lakoeng_fourteen_heavenly_methods_27
+		government = feudal_government
+		liege = k_bronzeport
+	}
+	1238.10.18 = {
+		holder = lihakan_dahala_2
+		government = feudal_government
+		liege = 0
+	}
+	1243.2.3 = {
+		holder = dathanites_labaqiri_3
+		government = pirate_government
+		liege = d_southern_corsairs
+	}
+}
+
+c_ordmarsh = {
+	1250.1.1 = {
+		holder = banwagul_fourteen_heavenly_methods_3
+		government = feudal_government
+		liege = d_currentridge
+	}
+}
+
+c_easttagsan = {
+	1250.1.1 = {
+		holder = banwagul_fourteen_heavenly_methods_4
+		government = feudal_government
+		liege = d_currentridge
+	}
+}
+
+c_tamlan = {
+	1196.3.9 = {
+		holder = banwagul_dahala_10
+		government = feudal_government
+		liege = 0
+	}
+	1229.6.28 = {
+		holder = banwagul_fourteen_heavenly_methods_2
+		government = feudal_government
+		liege = 0
+	}
+	1237.5.6 = {
+		liege = k_lay_redaka_banwagul
+	}
+	1237.5.6 = {
+		liege = k_bronzeport
+	}
+	1249.10.1 = {
+		holder = banwagul_fourteen_heavenly_methods_1
+		government = feudal_government
+		liege = k_bronzeport
+	}
+}
+
+c_fuchsiacanyon = {
+	1250.1.1 = {
+		holder = banwagul_fourteen_heavenly_methods_5
+		government = feudal_government
+		liege = d_currentridge
+	}
+}
+
+c_lawstone = {
+	1231.4.24 = {
+		holder = lihakan_dahala_2
+		government = feudal_government
+		liege = 0
+	}
+	1243.2.3 = {
+		holder = dathanites_labaqiri_2
+		government = pirate_government
+		liege = d_southern_corsairs
+	}
+}
+
+c_innhead = {
+  1219.2.2 = {
+		holder = lihakan_dahala_1
+		liege = 0
+	}
+}
+
+b_stargully = {
+  1246.9.14 = {
+		holder = ee_18
+	}
+}
+
+c_westterrace = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

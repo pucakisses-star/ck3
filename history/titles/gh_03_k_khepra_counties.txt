@@ -1,0 +1,127 @@
+c_amenakhreret = { 
+	1195.1.1 = {
+		government = tribal_government
+		holder = aljibal_kemsari_kemsar_25
+	}
+	1244.1.1 = {
+		government = tribal_government
+		holder = aljibal_kemsari_kemsar_5
+	}
+}
+c_khamt_eropesh = { 
+	1195.1.1 = {
+		government = tribal_government
+		holder = aljibal_kemsari_kemsar_27
+		#liege = d_kheprahedjet
+	}
+	1224.1.1 = {
+		liege = 0
+	}
+	1244.1.1 = {
+		government = tribal_government
+		holder = aljibal_kemsari_kemsar_6
+		}
+}
+c_sepesedjet = { 
+		1244.1.1 = {
+		government = tribal_government
+		holder = aljibal_kemsari_kemsar_1
+		}
+}
+c_amereshek = { 
+		1244.1.1 = {
+		government = tribal_government
+		holder = aljibal_kemsari_kemsar_8
+		}
+}
+#c_sesedjabhet = { 
+#	1195.1.1 = {
+#		government = tribal_government
+#		holder = aljibal_kemsari_kemsar_31
+#		liege = d_jshekh_wratam
+#	}
+#	1244.1.1 = {
+#		government = tribal_government
+#		holder = aljibal_kemsari_kemsar_17
+#		liege = 0
+#	}
+#}
+#c_deshretmetkha = { 
+#	1183.1.1 = {
+#		government = tribal_government
+#		holder = aljibal_kemsari_kemsar_3
+#	}
+#	1244.1.1 = {
+#		government = tribal_government
+#		holder = aljibal_kemsari_kemsar_18
+#	}
+#}
+#c_ykkhan = { 
+#	1244.1.1 = {
+#		government = tribal_government
+#		holder = almajun_kemsari_kemsar_4
+#	}
+#}
+c_diuasbadys = {
+	1195.1.1 = {
+		government = tribal_government
+		holder = aljibal_kemsari_kemsar_23
+	}
+	1244.1.1 = {
+		government = tribal_government
+		holder = aljibal_kemsari_kemsar_7
+	}
+}
+c_ineretkash = {
+	1195.1.1 = {
+		government = tribal_government
+		holder = aljibal_kemsari_kemsar_28
+	}
+	1244.1.1 = {
+		government = tribal_government
+		holder = aljibal_kemsari_kemsar_9
+	}
+}
+#c_haspet = {
+#	1195.1.1 = {
+#		government = tribal_government
+#		holder = almajun_kemsari_kemsar_24
+#		liege = d_jshekh_wratam
+#	}
+#	1224.1.1 = {
+#		liege = 0
+#	}
+#	1244.1.1 = {
+#		government = tribal_government
+#		holder = aljibal_kemsari_kemsar_10
+#	}
+#}
+#c_kerektet = { 
+#	1195.1.1 = {
+#		government = tribal_government
+#		holder = almajun_kemsari_kemsar_25
+#		liege = d_khety
+#	}
+#	1224.1.1 = {
+#		liege = 0
+#	}
+#	1244.1.1 = {
+#		government = tribal_government
+#		holder = aljibal_kemsari_kemsar_10
+#	}
+#}
+#c_new_sarradon_county19 = {
+#	1250.1.1 = {
+#		holder = aljibal_kemsari_kemsar_9
+#	}
+#}
+#c_ntysrejekh = { 
+#	1250.1.1 = {
+#		holder = aljibal_kemsari_kemsar_2
+#	}
+#}
+c_sayum_aspadjet = { 
+	1250.1.1 = {
+		holder = aljibal_kemsari_kemsar_2
+	}
+}

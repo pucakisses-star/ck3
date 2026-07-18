@@ -1,0 +1,45 @@
+d_oedi = {
+	1183.9.24 = {
+		holder = westernimperial_aversarinas_aagiokrata_14
+	}
+
+	1200.1.1 = {
+		change_development_level = 10
+	}
+
+	1200.3.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_16
+	}
+
+	1248.3.21 = {
+		holder = daukeni_sjalvolki_66
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1250.1.1 = {
+		holder = apokiakas_militant_cliques_1
+		liege = e_migrant_coalition
+		government = military_unit_government
+	}
+}
+
+d_antaphos = { 
+	1230.1.1 = {
+		holder = tribocicai_sjalvolki_4
+		liege = k_tribocicai
+		change_development_level = 12
+	}
+}
+
+#d_maadoran = {
+#	1230.1.1 = { change_development_level = 8}
+#	1250.1.1 = {
+#		holder = daukeni_sjalvolki_60
+#		liege = e_migrant_coalition
+#		government = continental_clan_government
+#	}
+#	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+#		de_jure_liege = k_descki
+#	}
+#}
+

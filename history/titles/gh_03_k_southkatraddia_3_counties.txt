@@ -1,0 +1,137 @@
+c_west_lichd141241421oms_47 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_8
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+	1245.1.1 = {
+		holder = centralimperial_aversarinas_aagiokrata_4
+		government = military_unit_government
+	}
+	1252.11.1 = {
+		liege = "d_legio_xxvi_exodian"
+	}
+}
+c_west_lfafafafa7 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_8
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+	1245.1.1 = {
+		holder = centralimperial_aversarinas_aagiokrata_4
+		government = military_unit_government
+	}
+	1252.11.1 = {
+		liege = "d_legio_xxvi_exodian"
+	}
+}
+c_southkatraddia_43 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+#c_southkatraddia_42 = {
+#	1186.1.1 = {
+#		holder = apokiakas_aversarinas_aagiokratia_8
+#	}
+#	1200.3.1 = {
+#		holder = wasteland
+#	}
+#}
+c_southkatraddia_41 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_9
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_southkatraddia_44 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_8
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_southkatraddia_32 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_11
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+#c_southkatraddia_33 = {
+#	1186.1.1 = {
+#		holder = apokiakas_aversarinas_aagiokratia_11
+#	}
+#	1200.3.1 = {
+#		holder = wasteland
+#	}
+#}
+c_southkatraddia_38 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_9
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_southkatraddia_34 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_11
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_southkatraddia_35 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_11
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+#c_southkatraddia_40 = {
+#	1186.1.1 = {
+#		holder = apokiakas_aversarinas_aagiokratia_9
+#	}
+#	1200.3.1 = {
+#		holder = wasteland
+#	}
+#}
+c_southkatraddia_39 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_9
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_southkatraddia_37 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_11
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+#c_southkatraddia_36 = {
+#	1186.1.1 = {
+#		holder = apokiakas_aversarinas_aagiokratia_11
+#	}
+#	1200.3.1 = {
+#		holder = wasteland
+#	}
+#}
+c_southkatraddia_45 = {
+	1230.1.1 = {
+		holder = fog_eaters_fogeater_11
+		government = migratory_government
+	}
+}

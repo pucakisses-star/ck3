@@ -1,0 +1,261 @@
+c_egd = {
+	1096.7.29 = {
+		holder = easternimperial_aironoian_aagiokrata_65
+		government = feudal_government
+	}
+	1147.7.9 = {
+		holder = easternimperial_aironoian_aagiokrata_32
+		government = feudal_government
+	}
+	1173.5.19 = {
+		holder = easternimperial_aironoian_aagiokrata_33
+		government = feudal_government
+	}
+	1211.12.15 = {
+		holder = easternimperial_aironoian_aagiokrata_35
+		government = feudal_government
+	}
+	1246.12.13 = {
+		holder = easternimperial_aversarinas_aagiokrata_7
+		change_development_level = 5
+	}
+}
+c_erdeket = {
+	1096.7.29 = {
+		holder = easternimperial_aironoian_aagiokrata_65
+		government = feudal_government
+	}
+	1147.7.9 = {
+		holder = easternimperial_aironoian_aagiokrata_32
+		government = feudal_government
+	}
+	1173.5.19 = {
+		holder = easternimperial_aironoian_aagiokrata_76
+		government = feudal_government
+	}
+	1199.9.26 = {
+		holder = easternimperial_aironoian_aagiokrata_33
+		government = feudal_government
+	}
+	1211.12.15 = {
+		holder = jaduyada_eabuyad_ilah_al_atilaam_3
+		government = tribal_government
+	}
+	1237.9.23 = {
+		holder = jaduyada_eabuyad_ilah_al_atilaam_2
+		government = tribal_government
+	}
+	1239.7.14 = {
+		liege = d_three_cities_league
+		holder = easternimperial_aironoian_aagiokrata_15
+		government = feudal_government
+	}
+	1244.10.12 = {
+		liege = d_three_cities_league
+		government = feudal_government
+		holder = easternimperial_aironoian_aagiokrata_3
+		change_development_level = 6
+	}
+}
+c_nalakh = {
+	1096.7.29 = {
+		holder = easternimperial_aironoian_aagiokrata_65
+		government = feudal_government
+	}
+	1147.7.9 = {
+		holder = easternimperial_aironoian_aagiokrata_32
+		government = feudal_government
+	}
+	1173.5.19 = {
+		holder = easternimperial_aironoian_aagiokrata_76
+		government = feudal_government
+	}
+	1199.9.26 = {
+		holder = easternimperial_aironoian_aagiokrata_33
+		government = feudal_government
+	}
+	1211.12.15 = {
+		holder = jaduyada_eabuyad_ilah_al_atilaam_3
+		government = nomad_government
+	}
+	1237.9.23 = {
+		holder = jaduyada_eabuyad_ilah_al_atilaam_2
+		government = nomad_government
+	}
+	1239.7.14 = {
+		holder = jaduyada_eabuyad_ilah_al_atilaam_1
+		government = nomad_government
+		change_development_level = 4
+	}
+}
+c_natolis = {
+	1091.8.5 = {
+		holder = easternimperial_aironoian_aagiokrata_73
+	}
+	1158.8.7 = {
+		holder = easternimperial_aironoian_aagiokrata_72
+	}
+	1168.11.11 = {
+		holder = easternimperial_militant_cliques_2
+	}
+	1199.8.26 = {
+		holder = easternimperial_aironoian_aagiokrata_10
+	}
+	1202.1.8 = {
+		holder = easternimperial_aironoian_aagiokrata_28
+		government = military_unit_government
+	}
+	1225.11.11 = {
+		holder = easternimperial_aironoian_aagiokrata_30
+		government = military_unit_government
+		change_development_level = 6
+	}
+}
+c_ovork = {
+	1134.6.12 = {
+		liege = d_three_cities_league
+		holder = easternimperial_aironoian_aagiokrata_11
+	}
+	1188.9.25 = {
+		liege = d_tsagadavi
+		holder = easternimperial_aironoian_aagiokrata_14
+	}
+	1199.9.26 = {
+		liege = d_three_cities_league
+		holder = easternimperial_aironoian_aagiokrata_15
+	}
+	1244.10.12 = {
+		liege = d_three_cities_league
+		holder = easternimperial_aironoian_aagiokrata_3
+		change_development_level = 6	
+	}
+}
+c_bagoron = {
+	1134.6.12 = {
+		liege = d_three_cities_league
+		holder = easternimperial_aironoian_aagiokrata_11
+	}
+	1188.9.25 = {
+		liege = d_tsagadavi
+		holder = easternimperial_aironoian_aagiokrata_14
+	}
+	1199.9.26 = {
+		liege = d_three_cities_league
+		holder = easternimperial_aironoian_aagiokrata_15
+	}
+	1244.10.12 = {
+		liege = d_tsagadavi
+		holder = easternimperial_aironoian_aagiokrata_4
+		change_development_level = 7
+	}
+}
+c_sharycoir = {
+	1134.6.12 = {
+		liege = d_three_cities_league
+		holder = easternimperial_aironoian_aagiokrata_11
+	}
+	1188.9.25 = {
+		liege = d_tsagadavi
+		holder = easternimperial_aironoian_aagiokrata_14
+	}
+	1199.9.26 = {
+		liege = d_three_cities_league
+		holder = easternimperial_aironoian_aagiokrata_15
+	}
+	1244.10.12 = {
+		liege = d_three_cities_league
+		holder = easternimperial_aironoian_aagiokrata_3
+		change_development_level = 6	
+	}
+}
+c_sainhad = {
+	1134.6.12 = {
+		liege = d_three_cities_league
+		holder = easternimperial_aironoian_aagiokrata_11
+	}
+	1188.9.25 = {
+		liege = d_tsagadavi
+		holder = easternimperial_aironoian_aagiokrata_14
+	}
+	1199.9.26 = {
+		liege = d_three_cities_league
+		holder = easternimperial_aironoian_aagiokrata_15
+	}
+	1244.10.12 = {
+		liege = d_three_cities_league
+		holder = easternimperial_aironoian_aagiokrata_3
+		change_development_level = 6	
+	}
+}
+c_shireus = {
+	1132.5.24 = {
+		liege = 0
+		holder = kuridorig_cumani_4
+		government = tribal_government
+	}
+	1174.6.15 = {
+		liege = k_dartar
+		holder = kuridorig_cumani_3
+		government = tribal_government
+	}
+	1194.6.14 = {
+		liege = k_dartar
+		holder = kuridorig_cumani_1
+		government = tribal_government
+	}
+	1200.2.26 = {
+		liege = k_dartar
+		holder = kuridorig_cumani_5
+		government = tribal_government
+	}
+	1217.6.16 = {
+		liege = k_dartar
+		holder = kuridorig_cumani_2
+		government = tribal_government
+		change_development_level = 4
+	}
+}
+c_arvaus = {
+	1134.6.12 = {
+		liege = d_three_cities_league
+		holder = easternimperial_aironoian_aagiokrata_11
+	}
+	1188.9.25 = {
+		liege = d_tsagadavi
+		holder = easternimperial_aironoian_aagiokrata_14
+	}
+	1199.9.26 = {
+		liege = d_three_cities_league
+		holder = easternimperial_aironoian_aagiokrata_15
+	}
+	1244.10.12 = {
+		liege = d_tsagadavi
+		holder = easternimperial_aironoian_aagiokrata_4
+		change_development_level = 7
+	}
+}
+
+c_andipur = {
+	1096.7.29 = {
+		holder = easternimperial_aironoian_aagiokrata_65
+		government = feudal_government
+	}
+	1147.7.9 = {
+		holder = easternimperial_aironoian_aagiokrata_32
+		government = feudal_government
+	}
+	1173.5.19 = {
+		# liege = d_zatset # GH TODO: Removed, find a new liege if needed
+		holder = easternimperial_aironoian_aagiokrata_76
+		government = feudal_government
+	}
+	1199.9.26 = {
+		holder = easternimperial_aironoian_aagiokrata_33
+		government = feudal_government
+	}
+	1244.10.12 = {
+		liege = d_tsagadavi
+		holder = easternimperial_aironoian_aagiokrata_4
+		change_development_level = 7
+	}
+}

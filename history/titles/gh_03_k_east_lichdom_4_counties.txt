@@ -1,0 +1,40 @@
+c_east_lichdom_10a = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_province4700 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_provincetomantium = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_east_lichdoms_34aa = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_east_lichdom_34 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_east_lichdom_30 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_east_lichdom_37 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_east_lichdom_26 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

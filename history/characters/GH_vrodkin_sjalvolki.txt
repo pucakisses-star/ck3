@@ -1,0 +1,1875 @@
+﻿vrodkin_sjalvolki_1 = {
+ # Got his nickname drinking on a night out with the boys and then decided with his local frat that dealing with the latest sexual harassment case from their
+ # last rager was totally lame so they decided to invade the Isles on a bunch of stolen boats before old man Principal Cenware could steal all the babes.
+ # Managed to accidentally land his force in the middle of the High Kings entire mercenary army since he's incompetent but then whipped the fuck out of them
+ # since he's still more competent than anyone in the Empire. Now chugging brewskies with the boys and getting ready to shove his dick so hard up the Empire's
+ # backside. He's also a trustfund baby with a hella connected daddy in the Sjalvolki who will blood eagle the fuck out of the High King and every other Aversarian
+ # who can see a coastline if anything happens to his boy.
+	name = "Ulfirx" #Ulfirx 'Mad Dog'
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	dna = vrodkin_sjalvolki_1
+	dynasty = dyn_sjalvolki_3
+	father = vrodkin_sjalvolki_2
+	mother = greulokin_sjalvolki_9
+
+	martial = 9
+	diplomacy = 5
+	stewardship = 4
+	intrigue = 4
+	learning = 5
+
+	trait = ambitious
+	trait = impatient
+	trait = brave
+	trait = education_martial_2
+	trait = gh_historical_reveler_1
+	trait = physique_good_1
+	trait = reckless
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_03
+			custom_beards = no_beard
+		}
+	}
+	
+	1231.6.18 = { birth = yes }
+
+	1249.6.18 = {
+		give_nickname = nick_mad_dog
+		effect = {
+			set_relation_rival = character:centralislander_aversarinas_aagiokrata_1
+		}
+	}
+
+	1249.7.18 = {
+		effect = { # Troops that goes away
+			spawn_army = {
+				name = ulfirx_host
+				levies = 1000
+				men_at_arms = {
+					type = sjalvolki_berserkers
+					stacks = 2
+				}
+				men_at_arms = {
+					type = armored_footmen
+					stacks = 1
+				}
+				location = province:5688
+				origin = province:5688
+				inheritable = no
+			}
+		}
+	}
+
+	1256.10.1 = {
+		add_spouse = sarminians_salacad_11
+	}
+
+	1293.7.3 = {
+		death = { death_reason = death_scuffle_with_soldiers } # Killed by mercenaries in a scuffle while trying to avenge his father's death in his Foglands Expedition of 1277.
+	}
+}
+
+vrodkin_sjalvolki_2 = {
+	name = "Hjorix" #Formerly Herberd
+	dna = vrodkin_sjalvolki_2
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	dynasty = dyn_sjalvolki_3
+	female = no
+	sexuality = heterosexual
+
+	trait = wrathful
+	trait = physique_good_3
+	trait = vengeful
+	trait = gregarious
+	trait = education_martial_4
+	trait = poet
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_custom_07
+			custom_hair = no_hair
+		}
+	}
+
+	1203.1.1 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 2 }
+		}													 
+	}
+	
+	1223.6.21 = {
+		add_spouse = greulokin_sjalvolki_9
+		trait = gh_historical_track_hunter_3
+	}
+	
+	1223.8.1 = {
+		effect = {
+			set_relation_soulmate = character:greulokin_sjalvolki_9 
+		}
+	}
+	
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_sjalvolki
+		effect = {
+			create_character_memory = { # Battle of the Elysian Pass
+				type = fought_in_elysian_pass_sjalvolki
+			}
+		}
+	}
+
+	1277.6.26 = {
+		death = { death_reason = death_fogland_expedition }
+	}
+}
+
+vrodkin_sjalvolki_3 = {
+	name = "Laugr" #Formerly Henneke
+	religion = "sjalvolki"
+	culture = "vrodkin"
+
+	1229.4.12 = {
+		birth = yes
+	}
+}
+
+vrodkin_sjalvolki_4 = {
+	name = "Olbran_D" #Formerly Alebrand
+	religion = "sjalvolki"
+	culture = "vrodkin"
+
+	1232.4.12 = {
+		birth = yes
+	}
+
+	1238.1.6 = {
+		add_spouse = vrodkin_sjalvolki_48
+	}
+	1287.6.17 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+vrodkin_sjalvolki_5 = {
+	name = "MoD_n" #Formerly Simon
+	religion = "sjalvolki"
+	culture = "vrodkin"
+
+	1223.3.30 = {
+		birth = yes
+	}
+
+	1251.3.2 = {
+		add_spouse = vrodkin_sjalvolki_67
+	}
+
+	1254.1.1 = {
+		trait = drunkard
+		trait = wrathful
+		trait = berserker
+		trait = arrogant
+		trait = callous
+		trait = education_martial_2
+	}
+
+	1273.3.30 = {
+		give_nickname = nick_the_brute
+		death = { death_reason = death_drinking_passive }
+	}
+}
+
+vrodkin_sjalvolki_6 = {
+	name = "Vohravn" #Formerly Betram
+	religion = "sjalvolki"
+	culture = "vrodkin"
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+
+vrodkin_sjalvolki_7 = {
+	name = "RoD_logr" #Formerly Rudigar
+	religion = "sjalvolki"
+	culture = "vrodkin"
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+
+vrodkin_sjalvolki_8 = {
+ # Lesser son of a Vrodkin clan of some repute
+ # Sibling rivalry with brother. Largely ignored and left idle during conquest, despite constantly begging for a chance to earn glory
+ # Finally given a small army to scout ahead in late 1248. Naturally, immediately ignored that and advanced straight into Schouweiler
+ # Tagged along with another similarly ambitious, but much more powerful Daukeni warlord and besieged the Mayikprolollan so Thalas in the summer of 1249
+ # Quickly had a falling out when he realized that his 'ally' wasn't planning on sharing the spoils or glory at all - managed to convince a significant contigent of his disgruntled
+ # host to instead join up with him and advance westward. Besieged Pathosopol in late 1249, but got shooed off by a much larger Aversarian force from the south. Rather than
+ # retreating back east like a sane person, instead pressed on westwards, literally just thinking up what to do next on the fly.
+ # Managed to sneak through Megos Kalathipsomi with only a few skirmishes which he won, but with significant losses. Arrived at the gates of Bastonport in late 1250
+ # By a combination of outrageous luck and guile, managed to hoodwink the warlord of Bastonport into leaving the city with a token garrison, and took it in 1250.12.27
+ # Said warlord was, naturally, fuming, and with a 10:1 advantage was prepared to storm the city back, but was intercepted and killed just in time by vrodkin_sjalvolki_2
+	name = "Irvoln" #Formerly Laurentz
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	dynasty = dyn_sjalvolki_6
+	father = vrodkin_sjalvolki_38
+
+	1228.1.5 = {
+		birth = yes
+		trait = physique_bad_1
+		trait = intellect_good_2
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 2 }
+		}
+	}
+
+	1240.1.1 = {
+		trait = ambitious
+		trait = arrogant
+		trait = deceitful
+	}
+
+	1242.1.1 = {
+		effect = {
+			set_relation_rival = character:vrodkin_sjalvolki_31
+		}
+	}
+
+	1244.1.5 = {
+		trait = education_intrigue_3
+	}
+
+	1250.12.27 = {
+		effect = {
+			give_nickname = nick_the_sly_irvoln
+		}
+	}
+
+	1253.4.5 = {
+		add_spouse = vrodkin_sjalvolki_59
+	}
+	1261.2.3 = {
+		add_spouse = irmionoth_sjalvolki_36
+	}
+	1274.5.15 = {
+		trait = kinslayer_3
+	}
+	1276.3.13 = {
+		death = { death_reason = death_heart_attack }
+	}
+}
+
+vrodkin_sjalvolki_9 = {
+	name = "SvarD_u" #Formerly Lembert
+	religion = "sjalvolki"
+	culture = "vrodkin"
+
+	1220.4.12 = {
+		birth = yes
+	}
+	1256.3.2 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+vrodkin_sjalvolki_10 = {
+ # Ambitious tagalong of vrodkin_sjalvolki_8. Not from an important clan. Was assigned to basically babysit vrodkin_sjalvolki_8, but figured that instead following along
+ # was more profitable.
+	name = "LoD_rai" #Formerly Lauderic
+	religion = "sjalvolki"
+	culture = "vrodkin"
+
+	1219.9.19 = {
+		birth = yes
+	}
+
+	1231.1.1 = {
+		trait = ambitious
+	trait = greedy
+	trait = brave
+	}
+
+	1235.9.19 = {
+		trait = education_martial_3
+	}
+}
+
+vrodkin_sjalvolki_11 = {
+	name = "AD_l" #Formerly Erp
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	dynasty = dyn_sjalvolki_44a
+	1223.4.12 = {
+		birth = yes
+	}
+
+	1283.1.20 = {
+		death = { death_reason = death_cancer }
+	}
+}
+
+vrodkin_sjalvolki_12 = {
+	name = "BjorD_u" #Formerly Engelhard
+	religion = "sjalvolki"
+	culture = "vrodkin"
+
+	1220.7.7 = {
+		birth = yes
+	}
+}
+
+vrodkin_sjalvolki_13 = {
+	name = "Asig"
+	religion = "sjalvolki"
+	culture = "vrodkin"
+
+	1220.9.12 = {
+		birth = yes
+	}
+}
+
+vrodkin_sjalvolki_14 = {
+	name = "RoD_gal" #Formerly Rudigar
+	religion = "sjalvolki"
+	culture = "vrodkin"
+
+	1224.10.28 = {
+		birth = yes
+	}
+}
+
+vrodkin_sjalvolki_15 = { # Does not appear anywhere in the mod
+	name = "Vjormir" #Formerly Michael
+	religion = sjalvolki
+	culture = vrodkin
+
+	1227.6.12 = {
+		birth = yes
+	}
+}
+
+vrodkin_sjalvolki_16 = {
+	name = "DroD_ragn" #Formerly Dethard
+	religion = "sjalvolki"
+	culture = "vrodkin"
+
+	1203.11.11 = {
+		birth = yes
+	}
+}
+
+vrodkin_sjalvolki_17 = { # Does not appear anywhere in the mod
+	name = "JornoD_" #Formerly Johann
+	religion = "sjalvolki"
+	culture = "vrodkin"
+
+	1216.7.12 = {
+		birth = yes
+	}
+}
+
+vrodkin_sjalvolki_18 = {
+	name = "Ohravn" #Formerly Jovan
+	religion = "sjalvolki"
+	culture = "vrodkin"
+
+	1228.4.28 = {
+		birth = yes
+	}
+
+	1255.1.1 = {
+		add_spouse = vrodkin_sjalvolki_75
+	}
+
+	1290.5.30 = {
+		trait = gh_widow
+	}
+	1291.10.6 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+vrodkin_sjalvolki_19 = {
+	name = "JoD_rai" #Formerly Josip
+	religion = "sjalvolki"
+	culture = "vrodkin"
+
+	1231.1.17 = {
+		birth = yes
+	}
+}
+
+vrodkin_sjalvolki_20 = {
+	name = "D_agnroD_" #Formerly Danilo
+	religion = "sjalvolki"
+	culture = "vrodkin"
+
+	1225.6.29 = {
+		birth = yes
+	}
+	1244.1.1 = {
+		add_spouse = vrodkin_sjalvolki_82
+	}
+	1277.10.3 = {
+		death = { death_reason = death_march_malaise }
+	}
+}
+
+vrodkin_sjalvolki_21 = {
+	name = "Kjalvolg" #Formerly Kosmin
+	religion = sjalvolki
+	culture = vrodkin
+
+	1216.3.7 = {
+		birth = yes
+	}
+	1238.1.1 = {
+		add_spouse = vrodkin_sjalvolki_81
+	}
+	1267.3.4 = {
+		death = { death_reason = death_stampede }
+	}
+}
+
+vrodkin_sjalvolki_22 = {
+	name = "Bornai" #Formerly Budimir
+	religion = "sjalvolki"
+	culture = "vrodkin"
+
+	1207.4.12 = {
+		birth = yes
+	}
+	1256.2.1 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+vrodkin_sjalvolki_23 = {
+	name = "Braugi" #Formerly Branimir
+	religion = sjalvolki
+	culture = vrodkin
+
+	1222.11.22 = {
+		birth = yes
+	}
+
+	1250.2.11 = {
+		add_spouse = vrodkin_sjalvolki_62
+	}
+
+	1278.10.4 = {
+		death = { death_reason = death_battle } # Died fighting hecaeda with his sons
+	}
+}
+
+vrodkin_sjalvolki_24 = {
+	name = "Borna"
+	religion = sjalvolki
+	culture = vrodkin
+	female = yes
+
+	1231.4.12 = {
+		birth = yes
+	}
+}
+
+vrodkin_sjalvolki_25 = {
+	name = "Halmrai" #Formerly Reineke
+	religion = sjalvolki
+	culture = vrodkin
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+
+vrodkin_sjalvolki_26 = {
+	name = "ViD_gal" #Formerly Withgils
+	religion = sjalvolki
+	culture = vrodkin
+
+	1213.1.23 = {
+		birth = yes
+	}
+
+	1233.1.1 = {
+		trait = one_legged
+	}
+	1233.12.3 = {
+		add_spouse = vrodkin_sjalvolki_88
+	}
+
+	1265.1.1 = {
+		trait = drunkard
+	}
+	1269.2.20 = {
+		death = { death_reason = death_drinking_passive }
+	}
+}
+
+vrodkin_sjalvolki_27 = {
+	name = "Orliga" #Formerly Norbert
+	religion = sjalvolki
+	culture = vrodkin
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+
+vrodkin_sjalvolki_28 = { # Does not appear anywhere in the mod
+	name = "Orlaug" #Formerly Albrecht
+	religion = sjalvolki
+	culture = vrodkin
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+vrodkin_sjalvolki_29 = { # Does not appear anywhere in the mod
+	name = "Hvaln" #Formerly Gunzelin
+	religion = sjalvolki
+	culture = vrodkin
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+
+vrodkin_sjalvolki_30 = {
+	name = "OD_ldai" #Formerly Adaldag
+	religion = sjalvolki
+	culture = vrodkin
+
+	1214.3.27 = {
+		birth = yes
+	}
+}
+
+vrodkin_sjalvolki_31 = {
+	name = "GalD_u" #Formerly Giselmar
+	religion = sjalvolki
+	culture = vrodkin
+	dynasty = dyn_sjalvolki_6
+	
+	father = vrodkin_sjalvolki_38
+
+	1226.9.1 = {
+		birth = yes
+		trait = physique_good_2
+	}
+
+	1238.1.1 = {
+		trait = brave
+		trait = honest
+		trait = arrogant
+	}
+
+	1242.9.1 = {
+		trait = education_martial_3
+		trait = scarred
+		trait = military_engineer
+	}
+
+	1274.5.15 = {
+		death = { death_reason = death_assassination killer = vrodkin_sjalvolki_8 } # find a suitable killer
+	}
+}
+
+vrodkin_sjalvolki_32 = {
+	name = "AvalD_" #Formerly Ewald
+	religion = sjalvolki
+	culture = vrodkin
+
+	1220.4.12 = {
+		birth = yes
+	}
+	1248.2.2 = {
+		trait = eunuch_1
+		trait = berserker
+		trait = wrathful
+		trait = drunkard
+		trait = stubborn
+		trait = content
+	}
+	1288.5.3 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+vrodkin_sjalvolki_33 = {
+	name = "RoD_val" #Formerly Rudigar
+	religion = sjalvolki
+	culture = vrodkin
+	dynasty = dyn_sjalvolki_36
+
+	father = vrodkin_sjalvolki_45
+
+	1213.6.23 = {
+		birth = yes
+	}
+	1254.6.23 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+vrodkin_sjalvolki_34 = {
+	name = "GraD_a" #Formerly Cord
+	religion = sjalvolki
+	culture = vrodkin
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+
+vrodkin_sjalvolki_35 = {
+	name = "MagnvarD_" #Formerly Wolter
+	religion = sjalvolki
+	culture = vrodkin
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+
+vrodkin_sjalvolki_36 = {
+	name = "AvalD_" #Formerly Ewald
+	religion = sjalvolki
+	culture = vrodkin
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+
+vrodkin_sjalvolki_37 = {
+	name = "OrlmaD_" #Formerly Engelbert
+	religion = "sjalvolki"
+	culture = "vrodkin"
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+
+vrodkin_sjalvolki_38 = {
+	name = "HromnoD_" #Formerly Goswin
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	dynasty = dyn_sjalvolki_6
+
+	1205.11.23 = {
+		birth = yes
+	}
+
+	1217.1.1 = {
+		trait = arbitrary
+		trait = wrathful
+		trait = fickle
+	}
+
+	1221.11.23 = {
+		trait = education_diplomacy_1
+	}
+
+	1239.8.12 = {
+		death = {
+			death_reason = death_fog
+		}
+	}
+}
+
+vrodkin_sjalvolki_39 = {
+	name = "Ukrman" #Formerly Ukrman
+	religion = "sjalvolki"
+	culture = "vrodkin"
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+
+vrodkin_sjalvolki_40 = {
+	name = "Freya_Hallquesti"
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	female = yes
+
+	1220.4.12 = {
+		birth = yes
+	}
+
+	1253.12.18 = {
+		employer = daukeni_sjalvolki_1
+	}
+}
+
+vrodkin_sjalvolki_41 = { # Herberd daughter, same name as her mother
+	name = "Ulfrina"
+	dna = vrodkin_sjalvolki_41
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	dynasty = dyn_sjalvolki_3
+	female = yes
+	sexuality = heterosexual
+	father = vrodkin_sjalvolki_2
+	mother = greulokin_sjalvolki_9
+
+	trait = wrathful
+	trait = physique_good_1
+	trait = content
+	trait = gregarious
+	trait = education_martial_1
+	
+	 portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp1_05
+											  
+		}
+	}
+
+	1228.3.11 = { 			 			 
+		birth = yes
+	}
+
+	1244.3.11 = {
+		trait = gh_historical_track_hunter_2
+	}
+}
+
+vrodkin_sjalvolki_42 = {
+	name = "Draugr" #Formerly Ariovistus
+	female = no
+	religion = sjalvolki
+	culture = vrodkin
+	trait = intellect_good_1
+	1223.2.11 = {
+		birth = yes
+	}
+	1235.2.11 = {
+		trait = ambitious
+		trait = impatient
+		trait = brave
+	}
+	1239.2.11 = {
+		trait = education_martial_3
+		trait = gh_historical_blademaster_1
+		add_unpressed_claim = title:c_palai_zkhni
+	}
+}
+
+vrodkin_sjalvolki_43 = {
+	# petty kral of Kundriatta who went ahead because Impatient + Arrogant + Ambitious, and took over little island from peasant rebellion; later on: Ulfirx drinking buddy
+	name = VjorD_rai #Formerly Vyormag
+	female = no
+	religion = sjalvolki
+	culture = vrodkin
+	trait = dull
+
+	martial = 8
+	diplomacy = 8
+	stewardship = 3
+
+	1215.7.1 = {
+		birth = yes
+	}
+	1251.7.1 = {
+		trait = impatient
+		trait = arrogant
+		trait = ambitious
+		trait = education_martial_2
+	}
+	1249.7.18 = {
+		trait = gh_historical_reveler_1
+		effect = {
+			set_relation_friend = character:vrodkin_sjalvolki_1
+		}
+	}
+}
+
+vrodkin_sjalvolki_44 = {
+	name = "Skogul" #Senior
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	trait = education_martial_3
+	trait = beauty_good_2
+
+	1231.9.11 = {
+		birth = yes
+	}
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_sjalvolki
+		trait = gh_historical_blademaster_1
+		effect = {
+			create_character_memory = { # Battle of the Elysian Pass
+				type = fought_in_elysian_pass_sjalvolki
+			}
+		}
+	}
+
+	1254.1.1 = {
+		employer = vrodkin_sjalvolki_1
+	}
+}
+
+vrodkin_sjalvolki_45 = { #Tolrag Water-Drinker, Vrodkin chieftain
+	name = "Tolrag"
+	dna = tolrag
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	dynasty = dyn_sjalvolki_36
+	disallow_random_traits = yes
+
+	martial = 5
+	diplomacy = 9
+	stewardship = 7
+	intrigue = 7
+	learning = 6
+	prowess = 3
+
+	1194.6.2 = {
+		birth = yes
+	}
+
+	1206.1.1 = {
+		trait = compassionate
+		trait = vengeful
+		trait = temperate
+	}
+
+	1210.6.2 = {
+		trait = education_martial_3
+		trait = gh_historical_blademaster_2
+		trait = forder
+	}
+
+	1234.3.9 = {
+		trait = depressed_1
+		trait = berserker
+		trait = scarred
+		trait = one_eyed
+		give_nickname = nick_water_drinker
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	1247.3.15 = { # Ten Trees
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+vrodkin_sjalvolki_46 = { # Saved Hjorix's life in the Battle of Ten Trees, later became his shieldbrother
+	name = "Jornmogr"
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	disallow_random_traits = yes
+
+	martial = 8
+	diplomacy = 2
+	stewardship = 4
+	intrigue = 5
+	learning = 3
+	prowess = 8
+
+	1205.2.16 = {
+		birth = yes
+	}
+
+	1206.1.1 = {
+		trait = brave
+		trait = gregarious
+		trait = stubborn
+	}
+
+	1210.6.2 = {
+		trait = education_martial_1
+		trait = gh_historical_blademaster_1
+		trait = reckless
+	}
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+			set_relation_friend = { 
+				target = character:vrodkin_sjalvolki_2
+				reason = friend_shieldbrother
+			}
+		}
+	}
+
+	1260.4.19 = {
+		add_spouse = goans_gethian_7
+	}
+
+	1282.11.14 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+vrodkin_sjalvolki_47 = {
+	name = "Olbran_D"
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	father = vrodkin_sjalvolki_4
+	mother = vrodkin_sjalvolki_48
+	1258.11.6 = {
+		birth = yes
+	}
+
+	1298.1.1 = {
+		#culture = kaskader
+		religion = orispolj_rite
+	}
+}
+
+vrodkin_sjalvolki_48 = {
+	name = "Euska"
+	religion = sjalvolki
+	culture = vrodkin
+	female = yes
+	1238.1.6 = {
+		birth = yes
+	}
+
+	1298.1.1 = {
+		#culture = kaskader
+		religion = orispolj_rite
+	}
+}
+
+vrodkin_sjalvolki_49 = {
+	name = "Magnavorth" 
+	religion = "sjalvolki"
+	culture = "vrodkin"
+
+	1236.3.30 = {
+		birth = yes
+	}
+
+	1258.12.2 = {
+		add_spouse = vrodkin_sjalvolki_50
+	}
+
+	1280.1.1 = {
+		religion = orispolj_rite
+	}
+
+	1283.11.3 = {
+		death = { death_reason = death_mysterious killer = vrodkin_sjalvolki_53 }
+	}
+}
+
+vrodkin_sjalvolki_50 = {
+	name = "Moridau" 
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	female = yes
+	1242.6.30 = {
+		birth = yes
+	}
+	1296.4.3 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+vrodkin_sjalvolki_51 = {
+	name = "Withruna" 
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	father = vrodkin_sjalvolki_49
+	mother = vrodkin_sjalvolki_50
+	female = yes
+	1261.3.30 = {
+		birth = yes
+	}
+	1290.1.1 = {
+		religion = orispolj_rite
+		#culture = kaskader
+	}
+}
+
+vrodkin_sjalvolki_52 = {
+	name = "Euthrich" 
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	father = vrodkin_sjalvolki_49
+	mother = vrodkin_sjalvolki_50
+	1263.3.30 = {
+		birth = yes
+	}
+
+	1283.3.30 = {
+		trait = arrogant
+		trait = greedy
+		trait = callous
+		trait = education_stewardship_3
+	}
+	1290.1.1 = {
+		religion = orispolj_rite
+		#culture = kaskader
+	}
+}
+
+vrodkin_sjalvolki_53 = {
+	name = "Ichraulm" #Formerly Ukrman
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	sexuality = homosexual
+	1217.4.20 = {
+		birth = yes
+	}
+
+	1237.4.20 = {
+		trait = deceitful
+		trait = generous
+		trait = patient
+		trait = education_intrigue_4
+	}
+
+	1257.1.1 = {
+		trait = lifestyle_gardener
+		trait = schemer
+	}
+
+	1272.5.2 = {
+		trait = gh_one_handed
+	}
+	1290.1.1 = {
+		religion = orispolj_rite
+		#culture = kaskader
+	}
+	1295.1.17 = {
+		death = { death_reason = death_mysterious killer = vrodkin_sjalvolki_52 }
+	}
+}
+
+vrodkin_sjalvolki_54 = {
+	name = "Ichraulm" #Formerly Ukrman
+	religion = "orispolj_rite"
+	culture = "vrodkin"
+	1221.11.9 = {
+		birth = yes
+	}
+	1296.9.29 = {
+		death = { death_reason = death_cancer }
+	}
+}
+
+
+vrodkin_sjalvolki_55 = {
+	name = "AD_l" #Formerly Ukrman
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	father = vrodkin_sjalvolki_11
+	dynasty = dyn_sjalvolki_44a
+	1247.12.12 = {
+		birth = yes
+	}
+	1278.7.3 = {
+		add_spouse = vrodkin_sjalvolki_51
+	}
+	1297.2.3 = {
+		death = { death_reason = death_wounds }
+	}
+}
+
+
+vrodkin_sjalvolki_56 = {
+	name = "AD_l" #Formerly Ukrman
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	father = vrodkin_sjalvolki_55
+	mother = vrodkin_sjalvolki_51
+	dynasty = dyn_sjalvolki_44a
+	1279.4.12 = {
+		birth = yes
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+		#culture = kaskader
+	}
+}
+
+vrodkin_sjalvolki_57 = {
+	name = "Radivil"
+	religion = sjalvolki
+	culture = vrodkin
+	dynasty = dyn_sjalvolki_6
+	father = vrodkin_sjalvolki_8
+	mother = vrodkin_sjalvolki_59
+
+	1257.3.22 = {
+		birth = yes
+		trait = physique_bad_1
+		trait = intellect_good_1
+		trait = twin
+	}
+	1277.3.22 = {
+		trait = deceitful
+		trait = wrathful
+		trait = fickle
+		trait = education_intrigue_3
+	}
+	1298.1.1 = {
+		#culture = kaskader
+		religion = orispolj_rite
+	}
+}
+vrodkin_sjalvolki_58 = {
+	name = "Volker"
+	religion = sjalvolki
+	culture = vrodkin
+	dynasty = dyn_sjalvolki_6
+	father = vrodkin_sjalvolki_8
+	mother = irmionoth_sjalvolki_36
+
+	1257.3.22 = {
+		birth = yes
+		trait = physique_good_1
+		trait = intellect_bad_1
+		trait = twin
+	}
+	1283.2.3 = {
+		trait = compassionate
+		trait = patient
+		trait = brave
+		trait = education_martial_2
+		trait = gh_historical_blademaster_2
+	}
+	1298.1.1 = {
+		#culture = kaskader
+		religion = orispolj_rite
+	}
+}
+vrodkin_sjalvolki_59 = {
+	name = "Irlinda"
+	religion = sjalvolki
+	culture = vrodkin
+	female = yes
+
+	1236.4.2 = {
+		birth = yes
+	}
+	1259.3.2 = {
+		death = { death_reason = death_childbirth }
+	}
+}
+
+vrodkin_sjalvolki_60 = {
+	name = "HelD_ravn"
+	religion = sjalvolki
+	culture = vrodkin
+	dynasty = dyn_sjalvolki_6
+	
+	father = vrodkin_sjalvolki_31
+
+	1256.4.19 = {
+		birth = yes
+		trait = physique_good_1
+	}
+
+	1276.4.19 = {
+		trait = cynical
+		trait = shy
+		trait = diligent
+		trait = depressed_1
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+
+vrodkin_sjalvolki_61 = {
+	name = "VorD_ragn"
+	religion = sjalvolki
+	culture = vrodkin
+	dynasty = dyn_sjalvolki_6
+	
+	father = vrodkin_sjalvolki_31
+
+	1261.7.23 = {
+		birth = yes
+	}
+
+	1281.7.23 = {
+		trait = lazy
+		trait = trusting
+		trait = generous
+		trait = education_stewardship_1
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+
+vrodkin_sjalvolki_62 = {
+	name = "Deive"
+	religion = sjalvolki
+	culture = daukeni
+	female = yes
+
+	1227.6.10 = {
+		birth = yes
+	}
+
+	1285.3.2 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+vrodkin_sjalvolki_63 = {
+	name = "Irmerich"
+	religion = sjalvolki
+	culture = vrodkin
+	father = vrodkin_sjalvolki_23
+	mother = vrodkin_sjalvolki_62
+
+	1251.8.25 = {
+		birth = yes
+	}
+
+	1271.8.25 = {
+		trait = vengeful
+		trait = brave
+		trait = stubborn
+		trait = education_martial_1
+	}
+
+	1278.10.4 = {
+		trait = wounded_3
+		death = { death_reason = death_battle } # Died with his brothers and dad
+	}
+}
+vrodkin_sjalvolki_64 = {
+	name = "Reilich"
+	religion = sjalvolki
+	culture = vrodkin
+	father = vrodkin_sjalvolki_23
+	mother = vrodkin_sjalvolki_62
+
+	1252.11.3 = {
+		birth = yes
+	}
+
+	1272.11.3 = {
+		trait = deceitful
+		trait = generous
+		trait = diligent
+		trait = education_stewardship_2
+	}
+	1278.12.16 = {
+		trait = wounded_2
+		death = { death_reason = death_wounded_2 } # Died with his brothers and dad
+	}
+}
+vrodkin_sjalvolki_65 = {
+	name = "Sauleich"
+	religion = sjalvolki
+	culture = vrodkin
+	father = vrodkin_sjalvolki_23
+	mother = vrodkin_sjalvolki_62
+	1256.2.16 = {
+		birth = yes
+	}
+	1276.2.16 = {
+		trait = fickle
+		trait = callous
+		trait = gregarious
+		trait = education_diplomacy_2
+	}
+	1278.10.4 = {
+		death = { death_reason = death_battle }
+	}
+}
+vrodkin_sjalvolki_66 = {
+	name = "Eivrich"
+	religion = sjalvolki
+	culture = vrodkin
+	father = vrodkin_sjalvolki_23
+	mother = vrodkin_sjalvolki_62
+	1259.4.15 = {
+		birth = yes
+	}
+
+	1279.4.15 = {
+		trait = irritable
+		trait = cynical
+		trait = diligent
+		trait = just
+		trait = education_martial_2
+		trait = forder
+	}
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+
+vrodkin_sjalvolki_67 = {
+	name = "Irlosche"
+	religion = sjalvolki
+	culture = vrodkin
+	female = yes
+
+	1231.10.7 = {
+		birth = yes
+		trait = wheezing
+		trait = magic_good_1
+	}
+
+	1273.3.29 = {
+		death = { death_reason = death_beaten killer = vrodkin_sjalvolki_5 }
+	}
+}
+vrodkin_sjalvolki_68 = {
+	name = "Olmir"
+	religion = sjalvolki
+	culture = vrodkin
+	father = vrodkin_sjalvolki_5
+	mother = vrodkin_sjalvolki_67
+
+	1253.8.20 = {
+		birth = yes
+	}
+
+	1273.8.20 = {
+		trait = cynical
+		trait = compassionate
+		trait = shy
+		trait = education_stewardship_3
+		trait = depressed_1
+	}
+
+	1275.1.1 = {
+		add_spouse = vrodkin_sjalvolki_69
+	}
+
+	1292.4.19 = {
+		give_nickname = nick_sjal_bleak
+		death = { death_reason = death_suicide }
+	}
+}
+vrodkin_sjalvolki_69 = {
+	name = "Osmeit"
+	religion = sjalvolki
+	culture = vrodkin
+	female = yes
+
+	1255.10.17 = {
+		birth = yes
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+vrodkin_sjalvolki_70 = {
+	name = "Ochlachar"
+	religion = sjalvolki
+	culture = vrodkin
+	father = vrodkin_sjalvolki_68
+	mother = vrodkin_sjalvolki_69
+
+	1277.7.28 = {
+		birth = yes
+	}
+
+	1297.7.28 = {
+		trait = compassionate
+		trait = patient
+		trait = diligent
+		trait = education_diplomacy_4
+		trait = family_first
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+vrodkin_sjalvolki_71 = {
+	name = "Harigoth"
+	religion = sjalvolki
+	culture = vrodkin
+	father = vrodkin_sjalvolki_68
+	mother = vrodkin_sjalvolki_69
+
+	1279.2.10 = {
+		birth = yes
+	}
+
+	1298.1.1 = {
+		trait = trusting
+		trait = zealous
+		trait = chaste
+		trait = education_martial_1
+
+		religion = orispolj_rite
+	}
+}
+vrodkin_sjalvolki_72 = {
+	name = "Arlarada"
+	religion = sjalvolki
+	culture = vrodkin
+	father = vrodkin_sjalvolki_5
+	mother = vrodkin_sjalvolki_67
+	female = yes
+	1272.4.29 = {
+		birth = yes
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+vrodkin_sjalvolki_73 = {
+	name = "Valravoth"
+	religion = sjalvolki
+	culture = vrodkin
+	father = vrodkin_sjalvolki_70
+	# needs a mom
+	1296.7.5 = {
+		birth = yes
+		trait = magic_good_1
+	}
+}
+vrodkin_sjalvolki_74 = {
+	name = "Maridach"
+	religion = sjalvolki
+	culture = vrodkin
+	father = vrodkin_sjalvolki_68
+	mother = vrodkin_sjalvolki_69
+
+	1283.10.28 = {
+		birth = yes
+	}
+
+	1298.1.1 = {
+		trait = arrogant
+		trait = craven
+		trait = greedy
+		trait = education_stewardship_1
+		religion = orispolj_rite
+	}
+}
+
+vrodkin_sjalvolki_75 = {
+	name = "Ramnotha"
+	religion = sjalvolki
+	culture = vrodkin
+	female = yes
+	1230.5.25 = {
+		birth = yes
+	}
+	1290.5.30 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+vrodkin_sjalvolki_76 = {
+	name = "Davircha"
+	religion = sjalvolki
+	culture = vrodkin
+	female = yes
+	father = vrodkin_sjalvolki_18
+	mother = vrodkin_sjalvolki_75
+	1257.7.30 = {
+		birth = yes
+	}
+
+	1280.8.14 = {
+		death = { death_reason = death_childbirth }
+	}
+}
+vrodkin_sjalvolki_77 = { # married to daugher of 5 & 67
+	name = "Hamorich"
+	religion = sjalvolki
+	culture = vrodkin
+	father = vrodkin_sjalvolki_18
+	mother = vrodkin_sjalvolki_75
+
+	1261.5.27 = {
+		birth = yes
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+vrodkin_sjalvolki_78 = { # Son of Ulfirx, ruler of Vrodkin migration in 1298, torn between avenging his father and granfathers failure and leading the realm.
+	name = "Hjorix"
+	religion = sjalvolki
+	culture = vrodkin
+	dynasty = dyn_sjalvolki_3
+	father = vrodkin_sjalvolki_1
+	mother = sarminians_salacad_11
+
+	diplomacy = 3
+	martial = 6 
+	stewardship = 2
+	intrigue = 4
+	learning = 2
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_custom_07
+			custom_hair = male_hair_fp1_03
+		}
+	}
+
+	1258.7.12 = {
+		birth = yes
+		trait = physique_good_2
+	}
+	1278.7.12 = {
+		trait = vengeful
+		trait = ambitious
+		trait = gregarious
+		trait = education_martial_3
+		trait = reckless
+		trait = poet
+	}
+
+	1290.1.20 = {
+		effect = {
+			set_relation_friend = {
+				target = character:vrodkin_sjalvolki_79
+				reason = friend_right_hand_man
+			}
+		}
+		give_nickname = nick_sjal_boar_tooth
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+vrodkin_sjalvolki_79 = { # Daughter of Ulfirx, did not contest her brother's ascension to the throne, and has been one of his most loyal supporters
+	name = "Radeit"
+	religion = sjalvolki
+	culture = vrodkin
+	dynasty = dyn_sjalvolki_3
+	father = vrodkin_sjalvolki_1
+	mother = sarminians_salacad_11
+	female = yes
+
+	1265.9.18 = {
+		birth = yes
+		trait = physique_good_1
+	}
+
+	1285.9.18 = {
+		trait = arrogant
+		trait = ambitious
+		trait = impatient
+		trait = education_martial_3
+		trait = gh_historical_reveler_1
+	}
+}
+
+vrodkin_sjalvolki_80 = {
+	name = "RoD_val"
+	father = vrodkin_sjalvolki_32
+	culture = vrodkin
+	religion = orispolj_rite
+	1258.1.26 = {
+		birth = yes
+	}
+}
+
+vrodkin_sjalvolki_81 = {
+	name = "Irlind"
+	religion = sjalvolki
+	culture = vrodkin
+	female = yes
+
+	1218.6.21 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	1279.3.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+vrodkin_sjalvolki_82 = {
+	name = "Adrild"
+	religion = sjalvolki
+	culture = vrodkin
+	female = yes
+
+	1224.11.3 = {
+		birth = yes
+	}
+	1279.12.1 = { trait = pneumonic }
+	1280.1.16 = {
+		death = { death_reason = death_pneumonic }
+	}
+}
+vrodkin_sjalvolki_83 = {
+	name = "Meinard"
+	religion = sjalvolki
+	culture = vrodkin
+	father = vrodkin_sjalvolki_21
+	mother = vrodkin_sjalvolki_81
+	1243.6.2 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	1271.2.1 = {
+		add_spouse = vrodkin_sjalvolki_87
+	}
+	1296.6.9 = {
+		death = { death_reason = death_peaceful }
+	}
+}
+vrodkin_sjalvolki_84 = { # Regent for his young nephew in 1298
+	name = "Karoch"
+	religion = sjalvolki
+	culture = vrodkin
+	father = vrodkin_sjalvolki_21
+	mother = vrodkin_sjalvolki_81
+	1245.2.19 = {
+		birth = yes
+	}
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+vrodkin_sjalvolki_85 = {
+	name = "Ildreim"
+	religion = sjalvolki
+	culture = vrodkin
+	father = vrodkin_sjalvolki_20
+	mother = vrodkin_sjalvolki_82
+	1249.2.1 = {
+		birth = yes
+		trait = physique_good_1
+	}
+}
+vrodkin_sjalvolki_86 = {
+	name = "Osdaue"
+	religion = sjalvolki
+	culture = vrodkin
+	female = yes
+	father = vrodkin_sjalvolki_83
+	mother = vrodkin_sjalvolki_87
+	1277.9.1 = {
+		birth = yes
+	}
+	1297.9.1 = {
+		trait = diligent
+		trait = arbitrary
+		trait = patient
+		trait = education_stewardship_2
+		trait = gh_historical_blademaster_1
+	}
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+vrodkin_sjalvolki_87 = {
+	name = "Irndaue"
+	religion = sjalvolki
+	culture = vrodkin
+	female = yes
+	father = vrodkin_sjalvolki_20
+	mother = vrodkin_sjalvolki_82
+	1252.3.1 = {
+		birth = yes
+	}
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+
+vrodkin_sjalvolki_88 = {
+	name = "Morhvala"
+	religion = sjalvolki
+	culture = vrodkin
+	female = yes
+	1215.2.2 = {
+		birth = yes
+	}
+	1272.3.14 = {
+		death = { death_reason = death_old_age }
+	}
+}
+vrodkin_sjalvolki_89 = {
+	name = "Havrlai"
+	religion = sjalvolki
+	culture = vrodkin
+	father = vrodkin_sjalvolki_26
+	mother = vrodkin_sjalvolki_88
+
+	1235.10.14 = {
+		birth = yes
+	}
+
+	1254.1.1 = {
+		trait = gluttonous
+		trait = arrogant
+		trait = diligent
+		trait = education_stewardship_1
+	}
+
+	1261.1.4 = {
+		add_spouse = vrodkin_sjalvolki_90
+	}
+
+	1281.10.3 = {
+		trait = pneumonic
+	}
+	1282.3.1 = {
+		death = { death_reason = death_pneumonic }
+	}
+}
+vrodkin_sjalvolki_90 = {
+	name = "OrlinD_"
+	religion = sjalvolki
+	culture = vrodkin
+	female = yes
+
+	1241.1.4 = {
+		birth = yes
+		trait = physique_bad_1
+	}
+
+	1281.10.3 = {
+		trait = pneumonic
+	}
+	1282.3.1 = {
+		death = { death_reason = death_pneumonic }
+	}
+}
+vrodkin_sjalvolki_91 = {
+	name = "ViD_gal"
+	religion = sjalvolki
+	culture = vrodkin
+	father = vrodkin_sjalvolki_89
+	mother = vrodkin_sjalvolki_90
+
+	1267.7.30 = {
+		birth = yes
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+vrodkin_sjalvolki_93 = {
+	name = "MorganD_"
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	father = vrodkin_sjalvolki_46
+	mother = goans_gethian_7
+	1261.1.26 = {
+		birth = yes
+		trait = wheezing
+	}
+	1281.1.1 = {
+		trait = impatient
+		trait = ambitious
+		trait = stubborn
+		trait = education_martial_2
+		trait = marine_commander
+	}
+	1283.1.1 = {
+		add_spouse = caemansi_sjalvolki_43
+	}
+	1285.3.1 = {
+		death = { death_reason = death_sea_storm }
+	}
+}
+vrodkin_sjalvolki_94 = {
+	name = "BjorD_u"
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	father = vrodkin_sjalvolki_46
+	mother = goans_gethian_7
+	1262.3.21 = {
+		birth = yes
+	}
+	1278.3.21 = {
+		trait = arrogant
+		trait = fickle
+		trait = brave
+		trait = education_martial_2
+	}
+	1278.6.1 = {
+		death = { death_reason = death_siege killer = easternimperial_aironoian_aagiokrata_1 }
+	}
+}
+vrodkin_sjalvolki_95 = {
+	name = "HravniD_"
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	father = vrodkin_sjalvolki_46
+	mother = goans_gethian_7
+	female = yes
+	1263.4.1 = {
+		birth = yes
+		trait = spindly
+	}
+	1289.10.1 = {
+		death = { death_reason = death_childbirth }
+	}
+}
+vrodkin_sjalvolki_96 = {
+	name = "MorganD_"
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	father = vrodkin_sjalvolki_93
+	mother = caemansi_sjalvolki_43
+	1283.12.18 = {
+		birth = yes
+		trait = intellect_good_1
+		trait = spindly
+	}
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+vrodkin_sjalvolki_97 = {
+	name = "Jornmogr"
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	mother = vrodkin_sjalvolki_95
+
+	1286.2.1 = {
+		birth = yes
+		trait = bastard
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}

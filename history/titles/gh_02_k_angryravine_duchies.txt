@@ -1,0 +1,55 @@
+d_currentridge = {
+	1196.3.9 = {
+		holder = banwagul_dahala_10
+		government = feudal_government
+		liege = 0
+	}
+	1229.6.28 = {
+		holder = banwagul_fourteen_heavenly_methods_2
+		government = feudal_government
+		liege = 0
+	}
+	1237.5.6 = {
+		liege = k_lay_redaka_banwagul
+	}
+	1237.5.6 = {
+		liege = k_bronzeport
+	}
+	1249.10.1 = {
+		holder = banwagul_fourteen_heavenly_methods_1
+		government = feudal_government
+		liege = k_bronzeport
+	}
+}
+
+d_tallswamp = {
+	1200.3.1 = {
+		holder = banwagul_dahala_6
+		government = feudal_government
+	}
+	1237.5.6 = {
+		liege = k_lay_redaka_banwagul
+	}
+	1242.12.21 = {
+		holder = banwagul_dahala_5
+		government = feudal_government
+	}
+	1247.1.9 = {
+		holder = banwagul_dahala_2
+		government = feudal_government
+	}
+}
+
+d_wheatgrove = {
+	1231.4.24 = {
+		holder = lihakan_dahala_2
+		government = feudal_government
+		liege = 0
+	}
+	1237.5.6 = {
+		liege = k_lay_redaka_banwagul
+	}
+	1243.2.3 = {
+		holder = 0
+	}
+}

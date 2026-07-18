@@ -1,0 +1,1097 @@
+2 = {
+	culture = hixartii
+	religion = mahndayana
+	holding = castle_holding
+}
+
+
+3 = {
+	holding = none
+}
+
+
+
+5 = {
+	holding = none
+}
+
+
+6 = {
+	culture = hixartii
+	religion = mahndayana
+	holding = castle_holding
+}
+
+
+
+7 = {
+	holding = church_holding
+}
+
+
+8 = {
+	holding = none
+}
+
+
+9 = {
+	culture = hixartii
+	religion = mahndayana
+	holding = castle_holding
+}
+
+10 = {
+	holding = church_holding
+}
+
+11 = {
+	holding = city_holding
+}
+
+
+
+
+15 = {
+	holding = city_holding
+
+	513.1.1 = {
+		special_building = gh_rivers_wall_01
+	}
+}
+
+16 = {
+	culture = hixartii
+	religion = mahndayana
+	holding = castle_holding
+
+	513.1.1 = {
+		special_building = gh_rivers_wall_01
+	}
+}
+
+
+
+
+17 = {
+	holding = none
+}
+
+20 = {
+	holding = church_holding
+}
+
+
+21 = {
+	culture = hixartii
+	religion = mahndayana
+	holding = castle_holding
+}
+
+
+22 = {
+	holding = none
+}
+
+
+23 = {
+	holding = none
+}
+
+
+
+25 = {
+	culture = thyssae
+	religion = mahndayana
+	holding = castle_holding
+	
+	547.1.1 = {
+		special_building = gh_shahr_nira_walls_01
+	}	
+}
+
+
+26 = {
+	culture = thyssae
+	religion = mahndayana
+	holding = castle_holding
+
+	67.11.21 = {
+		special_building = 01_wehydkaha
+	}
+}
+
+28 = {
+	holding = city_holding
+}
+
+29 = {
+	holding = city_holding
+}
+
+30 = {
+	holding = none
+}
+
+
+
+31 = {
+	holding = city_holding
+}
+
+32 = {
+	culture = thyssae
+	religion = mahndayana
+	holding = castle_holding
+}
+
+33 = {
+	holding = none
+}
+
+36 = {
+	holding = none
+}
+
+37 = {
+	culture = thyssae
+	religion = mahndayana
+	holding = castle_holding
+}
+
+38 = {
+	holding = none
+}
+
+40 = {
+	holding = none
+}
+
+
+41 = {
+	holding = church_holding
+}
+
+42 = {
+	holding = none
+}
+
+45 = {
+	holding = none
+}
+
+
+47 = {
+	holding = church_holding
+	religion = mahndayana
+	
+	
+	1211.5.14 = {
+		faith = tirazhidar
+	}
+}
+
+
+48 = {
+	culture = thyssae
+	religion = mahndayana
+	holding = church_holding
+
+	904.1.1 = {
+		special_building = gh_zarashti_tower_01
+	}
+	
+	1211.5.14 = {
+		faith = tirazhidar
+	}
+}
+
+
+49 = {
+	culture = thyssae
+	religion = mahndayana
+	holding = castle_holding
+
+	1211.5.14 = {
+		faith = tirazhidar
+	}
+}
+
+50 = {
+	culture = thyssae
+	religion = mahndayana
+	holding = castle_holding
+}
+
+
+
+53 = {
+	holding = none
+}
+
+54 = {
+	holding = none
+}
+
+55 = {
+	holding = city_holding
+}
+
+56 = {
+	holding = city_holding
+}
+
+57 = {
+	culture = sarthian
+	religion = mahndayana
+	holding = castle_holding
+}
+
+59 = {
+	culture = sarthian
+	religion = mahndayana
+	holding = castle_holding
+}
+
+61 = {
+	holding = none
+}
+
+
+
+63 = {
+	holding = church_holding
+}
+
+
+64 = {
+	holding = church_holding
+}
+
+65 = {
+	culture = sarthian
+	religion = mahndayana
+	holding = castle_holding
+}
+
+
+67 = {
+	culture = hamaxindi
+	religion = mahndayana
+	holding = castle_holding
+
+	443.7.10 = {
+		special_building = gh_anjari_burz_01
+	}
+}
+
+
+
+68 = {
+	holding = city_holding
+}
+
+
+
+
+70 = {
+	holding = none
+}
+
+71 = {
+	holding = church_holding
+}
+
+
+72 = {
+	culture = thyssae
+	religion = mahndayana
+	holding = castle_holding
+
+	1217.5.14 = {
+		faith = tirazhidar
+	}
+	1251.5.14 = {
+		faith = mahndayana
+	}
+}
+
+
+
+74 = {
+	culture = siralagi
+	religion = mahndayana
+	holding = castle_holding
+}
+
+75 = {
+	holding = city_holding
+}
+
+
+77 = {
+	holding = church_holding
+}
+
+
+78 = {
+	culture = siralagi
+	religion = mahndayana
+	holding = castle_holding
+}
+
+79 = {
+	holding = church_holding
+	
+	406.1.1 = {
+		special_building = gh_shakar_abkaraz_01
+	}
+}
+
+
+80 = {
+	holding = none
+}
+
+81 = {
+	holding = none
+}
+
+
+82 = {
+	holding = city_holding
+}
+
+83 = {
+	holding = none
+}
+
+
+84 = {
+	culture = siralagi
+	religion = mahndayana
+	holding = castle_holding
+}
+
+
+85 = {
+	holding = city_holding
+}
+
+87 = {
+	holding = city_holding
+}
+
+
+88 = {
+	culture = siralagi
+	religion = mahndayana
+	holding = castle_holding
+}
+
+
+90 = {
+	holding = none
+}
+
+
+91 = {
+	holding = church_holding
+}
+
+
+93 = {
+	holding = none
+}
+
+
+
+96 = {
+	holding = none
+}
+
+
+
+
+97 = {
+	holding = none
+}
+
+
+98 = {
+	holding = city_holding
+}
+
+
+99 = {
+	holding = city_holding
+}
+
+
+
+102 = {
+	holding = castle_holding
+}
+
+
+103 = {
+	holding = church_holding
+}
+
+
+
+
+104 = {
+	culture = hamaxindi
+	religion = mahndayana
+	holding = castle_holding
+}
+
+
+
+105 = {
+	culture = hamaxindi
+	religion = mahndayana
+	holding = castle_holding
+}
+
+106 = {
+	holding = church_holding
+}
+
+107 = {
+	culture = hamaxindi
+	religion = mahndayana
+	holding = castle_holding
+}
+
+108 = {
+	holding = none
+}
+
+
+110 = {
+	holding = church_holding
+}
+
+111 = {
+	culture = amsari
+	religion = mahndayana
+	holding = castle_holding
+
+	834.1.1 = {
+		special_building = gh_tisrani_khuneh_01
+	}
+}
+
+
+
+112 = {
+	holding = none
+}
+
+
+113 = {
+	holding = city_holding
+}
+
+
+
+115 = {
+	holding = city_holding
+}
+
+116 = {
+	culture = amsari
+	religion = mahndayana
+	holding = castle_holding
+}
+
+117 = {
+	holding = church_holding
+}
+
+118 = {
+	holding = city_holding
+}
+
+119 = {
+	holding = church_holding
+}
+
+120 = {
+	holding = church_holding
+}
+
+
+
+
+121 = {
+	holding = none
+}
+
+122 = {
+	holding = city_holding
+}
+
+
+123 = {
+	culture = amsari
+	religion = mahndayana
+	holding = castle_holding
+
+	1200.1.1 = {
+		special_building = 01_gujak_mines
+	}
+}
+
+
+124 = {
+	holding = church_holding
+}
+
+126 = {
+	holding = church_holding
+
+	2.1.1 = {
+		special_building = gh_amsari_first_altar_01
+	}	
+}
+
+128 = {
+	holding = none
+}
+
+
+
+129 = {
+	holding = none
+}
+
+
+130 = {
+	holding = none
+}
+
+131 = {
+	culture = amsari
+	religion = mahndayana
+	holding = metro_holding
+
+	342.3.7 = {
+		special_building = 01_whitegoldpalace
+	}
+	1000.1.1 = {
+		buildings = {
+			metro_03
+		}
+	}	
+	1200.1.1 = {
+		buildings = {	
+			luxury_goods_05
+			embassy_02
+		}
+	}
+}
+
+
+132 = {
+	holding = city_holding
+	145.1.1 = {
+		special_building = gh_kharash_01
+	}
+	816.1.1 = {
+		special_building = gh_kharash_02
+	}
+	1044.1.1 = {
+		special_building = gh_kharash_03
+	}
+}
+
+133 = {
+	holding = castle_holding
+}
+
+134 = {
+	culture = amsari
+	religion = mahndayana
+	holding = castle_holding
+}
+
+
+
+
+135 = {
+	holding = none
+}
+
+
+137 = {
+	holding = church_holding
+}
+
+138 = {
+	holding = city_holding
+}
+
+139 = {
+	holding = church_holding
+}
+
+
+
+141 = {
+	holding = church_holding
+}
+
+
+143 = {
+	holding = city_holding
+}
+
+144 = {
+	holding = none
+}
+
+
+
+
+145 = {
+	culture = amsari
+	religion = mahndayana
+	holding = castle_holding
+}
+
+
+148 = {
+	holding = none
+}
+
+149 = {
+	culture = amsari
+	religion = mahndayana
+	holding = castle_holding
+}
+
+150 = {
+	holding = none
+}
+
+151 = {
+	culture = amsari
+	holding = castle_holding
+
+	1020.1.1 = {
+		culture = lahgardi
+	}
+	1178.3.7 = {
+		culture = leviden
+		religion = sheharddi
+	}	
+}
+
+152 = {
+	holding = city_holding
+
+}
+
+153 = {
+	holding = city_holding
+}
+
+155 = {
+	culture = amsari
+	religion = mahndayana
+	holding = castle_holding
+
+	1020.1.1 = {
+		culture = lahgardi
+	}
+}
+
+156 = {
+	holding = none
+}
+
+157 = {
+	culture = amsari
+	religion = mahndayana
+	holding = castle_holding
+
+	1020.1.1 = {
+		culture = lahgardi
+	}
+}
+
+158 = {
+	culture = amsari
+	religion = mahndayana
+	holding = castle_holding
+	
+	1020.1.1 = {
+		culture = lahgardi
+	}	
+	1239.1.1 = {
+		culture = voyagen
+		religion = lifepath
+	}
+}
+
+159 = {
+	holding = city_holding
+}
+
+293 = {
+	holding = church_holding
+}
+
+
+
+295 = {
+	holding = none
+}
+
+297 = {
+	holding = church_holding
+}
+
+
+
+298 = {
+	culture = leviden
+	religion = sheharddi
+	holding = castle_holding
+}
+
+299 = {
+	holding = none
+}
+
+300 = {
+	holding = city_holding
+}
+
+301 = {
+	culture = simevian
+	religion = sheharddi
+	holding = castle_holding
+}
+
+303 = {
+	culture = simevian
+	religion = sheharddi
+	holding = castle_holding
+}
+
+
+
+
+304 = {
+	culture = leviden
+	religion = sheharddi
+	holding = castle_holding
+}
+
+305 = {
+	holding = none
+}
+
+306 = {
+	holding = city_holding
+}
+
+
+
+307 = {
+	culture = leviden
+	religion = sheharddi
+	holding = castle_holding
+}
+
+308 = {
+	holding = church_holding
+}
+
+310 = {
+	culture = leviden
+	religion = sheharddi
+	holding = castle_holding
+}
+
+313 = {
+	holding = church_holding
+}
+
+314 = {
+	culture = leviden
+	religion = sheharddi
+	holding = castle_holding
+}
+
+1877 = {
+	holding = castle_holding
+}
+
+1934 = {
+	holding = castle_holding
+}
+
+1981 = {
+	holding = city_holding
+}
+
+2758 = {
+	culture = hixartii
+	religion = mahndayana
+	holding = castle_holding
+}
+
+3207 = {
+	holding = none
+	
+	2.1.1 = {
+		special_building = gh_keszkecske_cliff_01
+	}	
+}
+
+3258 = {
+	culture = siralagi
+	religion = mahndayana
+	holding = castle_holding
+}
+
+3293 = {
+	holding = city_holding
+}
+
+4092 = {
+	holding = wasteland_empty_holding
+
+	414.1.1 = {
+		special_building = gh_iskandur_02_v2
+	}
+	569.1.1 = {
+		special_building = gh_iskandur_01
+	}	
+}
+
+
+
+4616 = {
+	holding = none
+}
+
+
+4617 = {
+	holding = none
+	religion = mahndayana
+}
+
+4618 = {
+	holding = church_holding
+	religion = mahndayana
+}
+
+7415 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6103 = {
+	holding = city_holding
+	special_building = gh_stone_crescent_01
+}
+
+
+7049 = {
+	holding = wasteland_empty_holding
+	1.1.1 = {
+		special_building = gh_kholrevish_01
+	}	
+}
+
+
+
+7174 = {
+	1.1.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+	429.1.1 = {
+		culture = amsari
+		religion = mahndayana
+		holding = church_holding
+	}	
+	805.1.1 = {
+		culture = hixartii
+	}
+}
+
+7005 = {
+	special_building = gh_prophet_scultpure_01
+	1.1.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+	429.1.1 = {
+		culture = amsari
+		religion = mahndayana
+		holding = city_holding
+	}	
+	805.1.1 = {
+		culture = hixartii
+	}
+}
+
+7762 = {
+	1.1.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+	429.1.1 = {
+		culture = amsari
+		religion = mahndayana
+		holding = city_holding
+	}	
+	805.1.1 = {
+		culture = hixartii
+	}
+}
+
+8816 = {
+	special_building = gh_tamlais_offering_01
+	1.1.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+	429.1.1 = {
+		culture = amsari
+		religion = mahndayana
+		holding = castle_holding
+	}	
+	805.1.1 = {
+		culture = hixartii
+	}
+}
+
+8519 = {
+	holding = castle_holding
+}
+
+8501 = {
+	holding = church_holding
+}
+
+
+7042 = {
+	culture = amsari
+	religion = mahndayana
+	holding = castle_holding
+}
+
+7061 = {
+	holding = castle_holding
+}
+
+
+
+
+8397 = {
+	holding = none
+}
+
+
+
+
+
+
+6922 = {
+	holding = none
+}
+
+
+7248 = {
+	holding = none
+}
+
+
+7023 = {
+	holding = none
+}
+
+
+
+6490 = {
+	holding = none
+}
+
+
+
+
+
+
+6949 = {
+	holding = none
+}
+
+
+6963 = {
+	holding = none
+}
+
+6923 = {
+	culture = thyssae
+	religion = mahndayana
+	holding = castle_holding
+}
+
+
+6956 = {
+	1.1.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+	429.1.1 = {
+		culture = amsari
+		religion = mahndayana
+		holding = castle_holding
+	}	
+	805.1.1 = {
+		culture = hixartii
+	}
+}
+
+
+
+
+
+7220 = {
+	1.1.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = wasteland_empty_holding
+	}
+	429.1.1 = {
+		culture = amsari
+		religion = mahndayana
+		holding = none
+	}	
+	805.1.1 = {
+		culture = hixartii
+	}
+}
+
+7078 = {
+	holding = none
+}
+
+9171 = {
+	culture = thyssae
+	religion = mahndayana
+	holding = city_holding
+}

@@ -1,0 +1,70 @@
+﻿nimakiroi_aversarinas_aagiokrata_1 = { # The countess who rides out the storm
+	name = "Theastia"
+	dynasty_house = house_chrysomon
+	religion = "aversarinas_aagiokrata"
+	culture = "nimakiroi"
+	female = yes
+
+	father = southernimperial_aversarinas_aagiokrata_112
+
+	diplomacy = 7
+	martial = 4
+	stewardship = 5
+	intrigue = 9
+	learning = 5
+	
+	1179.5.9 = {
+		birth = yes
+		trait = twin
+		trait = magic_good_4
+		#effect = {
+		#	add_character_flag = has_scripted_appearance
+		#}
+	}
+	1185.5.9 = {
+		trait = patient
+		trait = ambitious
+		trait = callous
+	}
+	1189.5.9 = {
+		trait = education_diplomacy_3
+	}
+	1215.2.17 = {
+		add_matrilineal_spouse = nimakiroi_aversarinas_aagiokrata_2
+	}
+	1234.6.7 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+nimakiroi_aversarinas_aagiokrata_2 = { # husband of above
+	name = "Theostikos"
+	religion = aversarinas_aagiokrata
+	culture = nimakiroi
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 4
+	stewardship = 6
+	intrigue = 6
+	learning = 5
+	
+	1181.1.12 = {
+		birth = yes
+	}
+	1182.1.12 = {
+		trait = paranoid
+		trait = humble
+		trait = stubborn
+	}
+	1186.1.12 = {
+		trait = education_stewardship_3
+	}
+	1242.4.27 = {
+		death = {
+			death_reason = death_cancer	
+		}
+	}
+}

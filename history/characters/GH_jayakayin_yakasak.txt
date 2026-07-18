@@ -1,0 +1,154 @@
+﻿jayakayin_yakasak_1 = {
+	name = "Supun"
+	culture = "jayakayin"
+	religion = "yakasak"
+
+	1198.2.1 = {
+		birth = yes
+	}
+}
+
+jayakayin_yakasak_2 = {
+	name = "Samarakoon"
+	religion = "yakasak"
+	culture = "jayakayin"
+	female = yes
+	father = jayakayin_yakasak_3
+	dynasty = dyn_pirate_coast_5
+	
+	1224.6.7 = {
+		birth = yes
+		trait = magic_good_2
+		trait = content
+		trait = lifestyle_gardener
+		trait = chaste
+		trait = diligent
+		trait = education_learning_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:school_of_night_scrying }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1245.3.19 = {
+	    add_matrilineal_spouse = jayakayin_yakasak_4
+	}
+
+	1281.12.11 = {
+	    death = { death_reason = death_natural_causes }
+	}
+}
+
+jayakayin_yakasak_3 = {
+	name = "VirA_cakecaripanmar"
+	religion = "yakasak"
+	culture = "jayakayin"
+	dynasty = dyn_pirate_coast_5
+	1198.4.20 = {
+		birth = yes
+	}
+	1218.1.1 = {
+		trait = callous
+		trait = fickle
+		trait = ambitious
+	}
+	1246.11.29 = {
+		death = { death_reason = death_stress }
+	}
+}
+
+jayakayin_yakasak_4 = {
+    name = "Siciid" 
+
+    religion = yakasak
+    culture = jayakayin
+
+    sexuality = heterosexual
+
+    trait = patient
+    trait = craven
+    trait = generous
+
+    1228.4.15 = {
+        birth = yes
+    }
+
+    1288.2.26 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+jayakayin_yakasak_5 = {
+    name = "Aranpo" 
+
+    dynasty = dyn_pirate_coast_5
+    religion = yakasak
+    culture = jayakayin
+
+    father = jayakayin_yakasak_4
+    mother = jayakayin_yakasak_2
+
+    sexuality = heterosexual
+
+    trait = callous
+    trait = zealous
+    trait = craven
+
+    1260.5.27 = {
+        birth = yes
+    }
+
+    1293.8.27 = {
+        add_spouse = jayakayin_yakasak_6
+    }
+}
+
+jayakayin_yakasak_6 = {
+    name = "Basr" 
+    female = yes
+
+    religion = yakasak
+    culture = jayakayin
+
+    sexuality = heterosexual
+
+    trait = temperate
+    trait = craven
+    trait = humble
+
+    1276.5.3 = {
+        birth = yes
+    }
+}
+
+jayakayin_yakasak_7 = {
+    name = "Use" 
+    female = yes
+
+    religion = yakasak
+    culture = jayakayin
+
+    father = jayakayin_yakasak_5
+    mother = jayakayin_yakasak_6
+
+    1293.5.4 = {
+        birth = yes
+    }
+}
+
+jayakayin_yakasak_8 = {
+    name = "Matarukani" 
+
+    dynasty = dyn_pirate_coast_5
+    religion = yakasak
+    culture = jayakayin
+
+    father = jayakayin_yakasak_5
+    mother = jayakayin_yakasak_6
+
+    1296.4.6 = {
+        birth = yes
+    }
+}
+

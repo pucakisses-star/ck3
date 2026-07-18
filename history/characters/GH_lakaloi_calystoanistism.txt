@@ -1,0 +1,9 @@
+﻿lakaloi_calystoanistism_1 = {
+	name = "Theoklaion"
+	religion = "calystoanistism"
+	culture = "lakaloi"
+
+	1226.11.27 = {
+		birth = yes
+	}
+}

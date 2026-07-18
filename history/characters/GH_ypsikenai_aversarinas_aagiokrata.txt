@@ -1,0 +1,177 @@
+﻿ypsikenai_aversarinas_aagiokrata_1 = { # Pirate legon on Krehejad
+	name = "Talaxos"
+	dna= ypsikenai_aversarinas_aagiokrata_1
+	religion = "aversarinas_aagiokrata"
+	culture = "ypsikenai"
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 6
+	stewardship = 6
+	intrigue = 5
+	learning = 6
+	
+	1204.7.4 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	1220.7.4 = {
+		trait = greedy
+		trait = arrogant
+		trait = gregarious
+	}
+	1224.7.4 = {
+		trait = education_martial_2
+	}
+}
+
+ypsikenai_aversarinas_aagiokrata_2 = { # Attempted to assasinate Archexir Aesarion, wounded him and started a rebellion
+	name = "Dukon"
+	religion = aversarinas_aagiokrata
+	culture = ypsikenai
+	sexuality = heterosexual
+
+	#dynasty = SET THIS TO COOL SHIT
+
+	diplomacy = 5
+	martial = 3
+	stewardship = 4
+	intrigue = 7
+	learning = 5
+
+	1184.7.13 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1196.7.13 = {
+		trait = deceitful
+		trait = ambitious
+		trait = arrogant
+	}
+
+	1200.7.13 = {
+		trait = schemer
+		trait = education_intrigue_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:silentspeak }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+	
+	1239.9.19 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+ypsikenai_aversarinas_aagiokrata_3 = { # Pact of Blood Magisters guy, magic supremacist
+	name = "Lysikles"
+	religion = aversarinas_aagiokrata
+	culture = ypsikenai
+	sexuality = heterosexual
+
+	#dynasty = SET THIS TO SOMETHING COOL AS WE FLESH OUT EARLY CHARS
+
+	diplomacy = 4
+	martial = 4
+	stewardship = 5
+	intrigue = 8
+	learning = 7
+
+	1177.5.1 = {
+		birth = yes
+		trait = magic_good_6
+	}
+	1189.5.1 = {
+		trait = arrogant
+		trait = ambitious
+		trait = zealous
+	}
+	1193.5.1 = {
+		trait = education_arcana_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+		trait = theologian
+	}
+	1212.6.9 = {
+		set_relation_rival = character:ypsikenai_aversarinas_aagiokrata_2
+	}
+	1221.6.25 = {
+		death = { # Kills himself as his realm burns down
+			death_reason = death_suicide
+		}
+	}
+}
+
+ypsikenai_aversarinas_aagiokrata_4 = { # Local rebel who seized power during the Aeschraeist withdrawal
+	name = "Xene"
+	religion = aversarinas_aagiokrata
+	culture = ypsikenai
+	sexuality = heterosexual
+	female = yes
+
+	diplomacy = 7
+	martial = 5
+	stewardship = 5
+	intrigue = 4
+	learning = 5
+
+	1194.8.3 = {
+		birth = yes
+	}
+	1206.8.3 = {
+		trait = just
+		trait = humble
+		trait = brave
+	}
+	1210.8.3 = {
+		trait = education_diplomacy_2
+	}
+	1227.10.3 = {
+		trait = peasant_leader
+	}
+	1234.5.1 = {
+		death = {
+			death_reason = death_smallpox
+		}
+	}
+}
+
+ypsikenai_aversarinas_aagiokrata_5 = { # Noble claimant to Emarios' home county, takes over in the collapse
+	name = "Craccarias"
+	religion = aversarinas_aagiokrata
+	culture = ypsikenai
+	female = yes
+	sexuality = bisexual
+	diplomacy = 4
+	martial = 4
+	stewardship = 5
+	intrigue = 5
+	learning = 6
+
+	1197.11.23 = {
+		birth = yes
+	}
+	1209.11.23 = {
+		trait = lazy
+		trait = wrathful
+		trait = stubborn
+	}
+	1213.11.23 = {
+		trait = education_learning_1
+	}
+	1237.7.18 = {
+		death = {
+			death_reason = death_battle
+			killer = ypsikenai_aversarinas_aagiokrata_1
+		}
+	}
+}

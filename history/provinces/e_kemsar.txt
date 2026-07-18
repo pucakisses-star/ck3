@@ -1,0 +1,766 @@
+﻿292 = {
+	holding = none
+}
+
+160 = {
+	culture = alewui_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+
+161 = {
+	holding = none
+}
+
+
+162 = {
+	holding = none
+}
+
+
+163 = {
+	holding = tribal_holding
+	religion = kemsar
+	culture = alewui_kemsari
+}
+
+
+166 = {
+	holding = none
+}
+
+167 = {
+	culture = alewui_kemsari
+	religion = vinderon
+	holding = tribal_holding
+	400.1.1 = {
+		special_building = 01_westtower
+	}
+}
+
+
+168 = {
+	holding = none
+}
+
+
+
+
+
+170 = {
+	holding = none
+}
+
+
+171 = {
+	culture = alewui_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+
+172 = {
+	holding = none
+}
+
+175 = {
+	holding = none
+}
+
+
+177 = {
+	holding = none
+}
+
+178 = {
+	holding = none
+}
+
+
+
+179 = {
+	holding = none
+}
+
+
+
+180 = {
+	holding = none
+}
+
+
+
+181 = {
+	culture = alewui_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+
+
+183 = {
+	culture = aljibal_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+
+188 = {
+	culture = aljibal_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+190 = {
+	holding = tribal_holding
+	religion = kemsar
+	culture = aljibal_kemsari
+}
+
+192 = {
+	holding = none
+}
+
+193 = {
+	holding = none
+}
+
+194 = {
+	holding = none
+}
+
+
+
+195 = {
+	holding = none
+}
+
+
+
+197 = {
+	 culture = aljibal_kemsari
+	 religion = kemsar
+	holding = tribal_holding
+
+	1200.1.1 = {
+		special_building = 01_tiwu_anaan_mines
+	}
+}
+
+
+
+199 = {
+	holding = none
+}
+
+
+203 = {
+	culture = aljibal_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+
+
+205 = {
+	holding = none
+}
+
+
+206 = {
+	holding = none
+}
+
+
+207 = {
+	holding = none
+}
+
+208 = {
+	holding = tribal_holding
+	culture = almajun_kemsari
+	religion = kemsar
+}
+
+209 = {
+	holding = none
+}
+
+
+211 = {
+	culture = almajun_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+212 = {
+	holding = none
+}
+
+
+
+214 = {
+	holding = none
+}
+
+215 = {
+	culture = almajun_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+216 = {
+	holding = none
+}
+
+217 = {
+	holding = none
+}
+
+
+
+
+218 = {
+	holding = none
+}
+
+219 = {
+	holding = none
+}
+
+220 = {
+	culture = almajun_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+221 = {
+	holding = none
+}
+
+222 = {
+	holding = none
+}
+
+223 = {
+	holding = none
+}
+
+224 = {
+	holding = none
+}
+
+225 = {
+	holding = none
+}
+
+226 = {
+	culture = almajun_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+
+227 = {
+	holding = none
+}
+
+228 = {
+	holding = none
+}
+
+
+
+229 = {
+	holding = none
+}
+
+
+230 = {
+	culture = almajun_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+
+
+
+231 = {
+	holding = none
+}
+
+232 = {
+	culture = almajun_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+
+233 = {
+	culture = almajun_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+
+234 = {
+	culture = almajun_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+
+235 = {
+	holding = none
+}
+
+
+236 = {
+	holding = none
+}
+
+237 = {
+	holding = none
+}
+
+238 = {
+	culture = almajun_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+
+288 = {
+	holding = none
+}
+
+
+240 = {
+	culture = ran_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+
+241 = {
+	culture = ran_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+242 = {
+	holding = none
+}
+
+
+
+
+8580 = {
+	holding = none
+}
+
+
+243 = {
+	holding = none
+}
+
+
+245 = {
+	culture = almajun_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+246 = {
+	holding = none
+}
+
+
+247 = {
+	holding = none
+}
+
+
+
+248 = {
+	holding = none
+}
+
+249 = {
+	culture = ran_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+250 = {
+	holding = none
+}
+
+
+251 = {
+	culture = ran_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+
+252 = {
+	holding = none
+}
+
+
+253 = {
+	holding = none
+}
+
+254 = {
+	holding = ruin_holding
+
+	1200.1.1 = {
+		special_building = 01_serpent_gate
+	}
+}
+
+255 = {
+	holding = ruin_holding
+
+	1200.1.1 = {
+		special_building = 01_jackal_gate
+	}
+}
+
+256 = {
+	culture = ran_kemsari
+	religion = kemsar
+	holding = ruined_district_holding
+
+	1200.1.1 = {
+		special_building = 01_dederak_ruin
+	}
+}
+
+257 = {
+	holding = ruin_holding
+
+	1200.1.1 = {
+		special_building = 01_crow_gate
+	}
+}
+
+258 = {
+	culture = ran_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+259 = {
+	holding = none
+}
+
+
+260 = {
+	holding = none
+}
+
+
+261 = {
+	culture = ran_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+
+262 = {
+	holding = none
+}
+
+
+263 = {
+	holding = none
+}
+
+
+264 = {
+	culture = ran_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+
+265 = {
+	holding = none
+}
+
+
+266 = {
+	holding = none
+}
+
+
+
+267 = {
+	holding = none
+}
+
+
+268 = {
+	culture = ran_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+269 = {
+	holding = none
+}
+
+
+270 = {
+	culture = ran_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+271 = {
+	holding = none
+}
+
+272 = {
+	holding = none
+}
+
+4023 = {
+	holding = none
+}
+
+
+273 = {
+	holding = none
+}
+
+
+274 = {
+	holding = none
+}
+
+
+275 = {
+	culture = aljibal_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+276 = {
+	holding = none
+}
+
+277 = {
+	holding = none
+}
+
+
+
+278 = {
+	culture = aljibal_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+279 = {
+	holding = none
+}
+
+280 = {
+	holding = none
+}
+
+
+
+282 = {
+	holding = none
+}
+
+283 = {
+	culture = aljibal_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+284 = {
+	holding = none
+}
+
+
+285 = {
+	holding = none
+}
+
+
+286 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+287 = {
+	holding = none
+}
+
+239 = {
+	holding = none
+}
+
+289 = {
+	culture = aljibal_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+291 = {
+	holding = none
+}
+
+
+7021 = {
+	culture = aljibal_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+1885 = {
+	holding = ruin_holding
+}
+
+1924 = {
+	holding = ruin_holding
+}
+
+202 = {
+	culture = aljibal_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+204 = {
+	holding = none
+}
+
+8707 = {
+	culture = aljibal_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+8568 = {
+	holding = none
+}
+
+186 = {
+	culture = aljibal_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+8083 = {
+	culture = almajun_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+8655 = {
+	holding = none
+}
+
+1150 = {
+	culture = ran_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+6567 = {
+	culture = ran_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+6992 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7127 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8154 = {
+	culture = ran_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+7418 = {
+	culture = ran_kemsari
+	religion = kemsar
+	holding = tribal_holding
+}
+
+7422 = {
+	holding = none
+}
+
+
+7926 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+7659 = {
+	holding = none
+}
+
+
+7518 = {
+	holding = none
+}
+
+
+6379 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6002 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+1929 = {
+	holding = none
+}
+
+7252 = {
+	holding = none
+}
+
+7411 = {
+	holding = none
+}
+
+7716 = {
+	holding = none
+}
+
+7300 = {
+	holding = none
+}
+
+8520 = {
+	holding = none
+}

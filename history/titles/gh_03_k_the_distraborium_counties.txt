@@ -1,0 +1,55 @@
+c_westcatacombs_17bb = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_11cc = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_17ff = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_10bb = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_10dd = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_12bb = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_12aa = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_12cc = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_10aa = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_17ee = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_pruthkut = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

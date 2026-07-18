@@ -1,0 +1,878 @@
+﻿trustians_lifepath_1 = {
+	name = "Mathilde" # Mathilde den va Mayreux
+	dna = trustians_lifepath_1
+	dynasty = dyn_marcher_6
+	female = yes
+	martial = 4
+	diplomacy = 9
+	intrigue = 14
+	stewardship = 6
+	religion = "lifepath"
+	culture = "trustians"
+	father = trustians_lifepath_18
+	mother = trustians_lifepath_19
+	trait = deceitful
+	trait = greedy
+	trait = ambitious
+	trait = education_intrigue_4
+	trait = way_of_crows_follower
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp2_iberian_christian_03
+
+		}
+	}
+
+	1225.8.11 = {
+		birth = yes
+	}
+	1229.3.14 = {
+		add_spouse = trustians_lifepath_20
+	}
+}
+
+trustians_lifepath_2 = { # Marcher Anti-Magi
+	name = "Kristof"
+	religion = "lifepath"
+	culture = "trustians"
+	
+	trait = way_of_nullification_follower
+	trait = strong
+	trait = brave
+	trait = vengeful
+	trait = gregarious
+	trait = drunkard
+	trait = order_member
+
+	1221.3.21 = {
+		birth = yes
+	}
+
+	1237.3.21 = {
+		trait = gh_historical_blademaster_2
+	}
+}
+
+trustians_lifepath_3 = { # Mitheux Chridae, Marcher poet and Cenware fanboy
+	name = "Mitheux"
+	dna = mitheux
+	dynasty = dyn_marcher_21
+	religion = "lifepath"
+	culture = "trustians"
+	sexuality = heterosexual
+	
+	diplomacy = 7
+	intrigue = 1
+	learning = 9
+	martial = 3
+	stewardship = 3
+
+	1232.6.10 = {
+		birth = yes
+		trait = physique_bad_1
+	}
+	1244.1.1 = {
+		trait = trusting
+		trait = craven
+		trait = stubborn
+	}
+	1248.6.10 = {
+		trait = way_of_knowledge_follower
+		trait = education_learning_2
+	}
+	1252.10.2 = {
+		employer = daukeni_sjalvolki_1
+	}
+	1254.1.1 = {
+		if = {
+			limit = { has_dlc_feature = royal_court }
+			set_variable = {
+				name = book_topic
+				value = flag:witchbreakerhero
+			}
+			create_inspiration = book_inspiration
+			set_variable = {
+				name = inspiration_cooldown
+				years = 10
+			}
+		}
+	}
+}
+
+trustians_lifepath_4 = {
+	name = "Harloman" # Retired mercenary who's had his fill of adventuring and slaughtering for big bux, now just wants to sit back and relax and feast and fuck; the liches to the north don't bother him much
+	dna = trustians_lifepath_4
+	martial = 7
+	diplomacy = 6
+	intrigue = 9
+	stewardship = 10
+	religion = "lifepath"
+	culture = "trustians"
+
+	trait = gregarious
+	trait = greedy
+	trait = gluttonous
+	trait = lustful
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_western_1b
+			custom_hair = no_hair
+		}
+	}
+
+	1204.1.1 = {
+		birth = yes
+	}
+	1232.7.21 = {
+		add_spouse = trustians_lifepath_21
+		effect = {
+			set_relation_lover = character:trustians_lifepath_21
+		}
+	}
+}
+
+trustians_lifepath_5 = {
+	name = "Gaultier" # Son of Harloman, assigned to guard the border with his brother, young and naive and wants to live up to his	father
+	dna = trustians_lifepath_5
+	martial = 13
+	diplomacy = 5
+	intrigue = 4
+	stewardship = 7
+	religion = "lifepath"
+	culture = "trustians"
+
+	trait = trusting
+	trait = brave
+	trait = honest
+	father = trustians_lifepath_4
+	mother = trustians_lifepath_21
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_western_10
+			custom_hair = male_hair_western_06
+		}
+	}
+
+	1235.1.1 = {
+		birth = yes
+	}
+}
+
+trustians_lifepath_6 = {
+	name = "Aubert" # Son of Harloman, assigned to guard the border with his brother, hates everything about this and wishes he were out doing something with his life
+	dna = trustians_lifepath_6
+	martial = 16
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 8
+	religion = "lifepath"
+	culture = "trustians"
+
+	trait = stubborn
+	trait = impatient
+	trait = cynical
+	father = trustians_lifepath_4
+	mother = trustians_lifepath_21
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_03
+			custom_beards = male_beard_custom_06
+		}
+	}
+
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+trustians_lifepath_7 = {
+	name = "Huchon"
+	religion = "lifepath"
+	culture = "trustians"
+	dynasty = dyn_marcher_35
+
+	mother = trustians_lifepath_29
+
+	1228.11.14 = {
+		birth = yes
+		trait = physique_good_1
+	}
+}
+
+trustians_lifepath_8 = {
+	name = "Quellere"
+	religion = "lifepath"
+	culture = "trustians"
+
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+trustians_lifepath_9 = {
+	name = "Rolin"
+	religion = "lifepath"
+	culture = "trustians"
+
+	1217.1.1 = {
+		birth = yes
+	}
+}
+
+trustians_lifepath_10 = {
+	name = "Gamlot"
+	religion = "lifepath"
+	culture = "trustians"
+
+	1224.1.1 = {
+		birth = yes
+	}
+}
+
+trustians_lifepath_11 = {
+	name = "Mene_t"
+	religion = "lifepath"
+	culture = "trustians"
+
+	1227.1.1 = {
+		birth = yes
+	}
+}
+
+trustians_lifepath_12 = { # Marcher adventurer in the Mayik
+	name = "Climois"
+	religion = "lifepath"
+	culture = "trustians"
+
+	1222.1.1 = {
+		birth = yes
+	}
+}
+
+trustians_lifepath_13 = {
+	name = "Charlot"
+	religion = "lifepath"
+	culture = "trustians"
+
+	1228.1.1 = {
+		birth = yes
+	}
+}
+
+trustians_lifepath_14 = {
+	name = "Guillemin"
+	religion = "lifepath"
+	culture = "trustians"
+
+	1228.1.1 = {
+		birth = yes
+	}
+}
+
+trustians_lifepath_15 = {
+	name = "Berald"
+	religion = "lifepath"
+	culture = "trustians"
+
+	1221.7.18 = {
+		birth = yes
+	}
+}
+
+trustians_lifepath_16 = {
+	name = "Wathelet"
+	religion = "lifepath"
+	culture = "trustians"
+	dynasty = dyn_marcher_34
+
+	father = trustians_lifepath_28
+
+	1236.3.18 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1248.3.18 = {
+		trait = education_arcana_2
+		trait = way_of_crows_follower
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:illuminated_order_of_holy_principles }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+trustians_lifepath_17 = {
+	name = "Baillairge"
+	religion = "lifepath"
+	culture = "trustians"
+
+	1231.1.1 = {
+		birth = yes
+	}
+}
+
+trustians_lifepath_18 = {
+	name = "Otker"
+	religion = "lifepath"
+	culture = "trustians"
+
+	1206.5.4 = {
+		birth = yes
+	}
+
+	1224.4.11 = {
+		add_spouse = trustians_lifepath_19
+	}
+
+	1231.9.9 = {
+		death = yes
+	}
+}
+
+trustians_lifepath_19 = {
+	name = "Eustadiola"
+	religion = "lifepath"
+	culture = "trustians"
+	female = yes
+
+	1205.10.21 = {
+		birth = yes
+	}
+
+	1224.4.11 = {
+		add_spouse = trustians_lifepath_18
+	}
+
+	1253.1.26 = {
+		death = yes
+	}
+}
+
+trustians_lifepath_20 = {
+	name = "Wilbert"
+	religion = "lifepath"
+	culture = "trustians"
+
+	1186.7.18 = {
+		birth = yes
+	}
+
+	1229.3.14 = {
+		add_spouse = trustians_lifepath_1
+	}
+
+	1229.8.10 = {
+		death = {
+			death_reason = death_mysterious
+			killer = trustians_lifepath_1
+		}
+	}
+}
+
+trustians_lifepath_21 = { # Harlowife
+	name = "Jolie" # Retired mercenary who's had his fill of adventuring and slaughtering for big bux, now just wants to sit back and relax and feast and fuck; the liches to the north don't bother him much
+	dna = trustians_lifepath_21
+	female = yes
+	religion = "lifepath"
+	culture = "trustians"
+
+	trait = ambitious
+	trait = cynical
+	trait = lustful
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_western_10
+		}
+	}
+
+	1210.1.1 = {
+		birth = yes
+	}
+}
+
+trustians_lifepath_22 = {
+	name = "Arelli" # Arelli
+	dna = arelli
+	martial = 6
+	diplomacy = 9
+	intrigue = 7
+	stewardship = 7
+	learning = 6
+	female = yes
+	religion = "lifepath"
+	culture = "trustians"
+
+	trait = education_stewardship_3
+	trait = way_of_coins_follower
+	trait = ambitious
+	dynasty = dyn_trustians_lifepath_1
+	737.2.11 = {
+		birth = yes
+	}
+	779.2.24 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+trustians_lifepath_23 = { # Karth Illurdian was an Anti-Magi mercenary who used the chaos of the Brutality to return home with his men and take much of Perignan. More warlord than noble, he would nonetheless secure his position and establish himself as the strongest lord in Perignan despite his birth.
+	name = "Karth"
+	dna = karth
+	religion = "lifepath"
+	culture = "trustians"
+	dynasty = dyn_marcher_19
+	trait = gh_peasant_birth
+	trait = deceitful
+	trait = zealous
+	trait = shrewd
+	trait = way_of_nullification_follower
+	trait = education_stewardship_3
+
+	841.3.3 = {
+		birth = yes
+	}
+
+	890.1.2 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+trustians_lifepath_24 = { # Erchebars was the son of Karth. He spent most of his reign struggling to maintain and grow his	fathers throne, struggling to overcome a nobility who hated the family for their low origins. He would manage to succeed, though would die of sickness just before Stavro's invasions, and the throne would be thrown into chaos before his daughter could properly respond to the threat.
+	name = "Erchebars"
+	dna = erchebars
+	religion = "lifepath"
+	culture = "trustians"
+	dynasty = dyn_marcher_19
+	father = trustians_lifepath_23
+	trait = cynical
+	trait = lustful
+	trait = wrathful
+	trait = way_of_coins_follower
+	trait = education_diplomacy_2
+
+	866.11.12 = {
+		birth = yes
+	}
+
+	929.5.15 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+trustians_lifepath_25 = { # Mélanî Illurdian was the daughter of Karth. The fourth in line, her brothers either died from sickness or war and she was soon after thrown onto the throne after the death of her	father. She spent much of her reign struggling to maintain the throne. She fought a brutal civil war against her vassals as Stavro invaded, and was then imprisoned by them. She would eventually escape, and join the Champion of Chevalie in retaking her throne and defeating Stavro. Soon after she would relinquish her throne and begin traveling the world until her death.
+	name = "Me_lani_"
+	religion = "lifepath"
+	culture = "trustians"
+	dynasty = dyn_marcher_19
+	father = trustians_lifepath_24
+	female = yes
+	trait = brave
+	trait = content
+	trait = honest
+	trait = way_of_swords_follower
+	trait = education_martial_3
+
+	896.1.1 = {
+		birth = yes
+	}
+
+	958.12.15 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+trustians_lifepath_26 = { # High King Rosier, ended the Marcher-Aversarian War after his coronation, then died a few months later due to Bloodblight
+	name = "Rosier"
+	religion = "lifepath"
+	culture = trustians
+	dynasty = dyn_marcher_32
+	disallow_random_traits = yes
+
+	father = trustians_lifepath_27
+
+	martial = 1
+	diplomacy = 7
+	stewardship = 8
+	intrigue = 6
+	learning = 7
+	prowess = 1
+
+	602.8.28 = {
+		birth = yes
+	}
+
+	614.1.1 = {
+		trait = ambitious
+		trait = cynical
+		trait = deceitful
+	}
+
+	618.8.28 = {
+		trait = education_diplomacy_4
+		trait = scholar
+		trait = way_of_knowledge_follower
+		trait = shrewd
+	}
+
+	631.5.1 = {
+		trait = bubonic_plague
+	}
+
+	631.5.15 = {
+		death = {
+			death_reason = death_bubonic_plague
+		}
+	}
+}
+
+trustians_lifepath_27 = { # High King Rosier's father, slain by Adwaga Adwakampy
+	name = "Alogne"
+	religion = "lifepath"
+	culture = trustians
+	dynasty = dyn_marcher_32
+	disallow_random_traits = yes
+
+	martial = 2
+	diplomacy = 7
+	stewardship = 2
+	intrigue = 7
+	learning = 3
+	prowess = 5
+
+	577.8.18 = {
+		birth = yes
+	}
+
+	589.1.1 = {
+		trait = just
+		trait = generous
+		trait = trusting
+	}
+
+	593.8.18 = {
+		trait = education_diplomacy_1
+		trait = way_of_coins_follower
+
+	}
+
+	623.6.8 = {
+		death = {
+			death_reason = death_lich_battle
+			killer = lich_culture_rejection_3 # Adwaga Adwakampy
+		}
+	}
+}
+
+trustians_lifepath_28 = { # Ludohar the Luminous, greatest Light Magi of his time, joined Gardfrei in his quest to the north
+	name = "Ludohar"
+	religion = "lifepath"
+	culture = trustians
+	dynasty = dyn_marcher_34
+	disallow_random_traits = yes
+
+	martial = 8
+	diplomacy = 5
+	stewardship = 7
+	intrigue = 10
+	learning = 5
+	prowess = 6
+
+	1195.12.13 = {
+		birth = yes
+		trait = magic_good_6
+		trait = intellect_good_1
+	}
+
+	1207.1.1 = {
+		trait = zealous
+		trait = callous
+		trait = paranoid
+	}
+
+	1211.12.13 = {
+		trait = education_learning_3
+		trait = way_of_crows_follower
+		give_nickname = nick_the_luminous
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:illuminated_order_of_holy_principles }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1253.11.12 = {
+		death = {
+			death_reason = death_mysterious_quest
+		}
+	}
+}
+
+trustians_lifepath_29 = { # Siegre the Fortenorn, powerful Duquessa of Ferrond and Devex, joined Gardfrei in his quest to the north
+	name = "SiE_gre"
+	religion = "lifepath"
+	culture = trustians
+	dynasty = dyn_marcher_35
+	disallow_random_traits = yes
+
+	female = yes
+
+	martial = 5
+	diplomacy = 9
+	stewardship = 6
+	intrigue = 4
+	learning = 6
+	prowess = 6
+
+	1190.1.28 = {
+		birth = yes
+		trait = physique_good_2
+	}
+
+	1202.1.1 = {
+		trait = brave
+		trait = wrathful
+		trait = humble
+	}
+
+	1206.1.28 = {
+		trait = education_martial_2
+		trait = way_of_swords_follower
+		trait = gh_historical_blademaster_1
+		trait = unyielding_defender
+		give_nickname = nick_the_fortenorn
+	}
+
+	1253.11.12 = {
+		death = {
+			death_reason = death_mysterious_quest
+		}
+	}
+}
+
+trustians_lifepath_30 = {	# Ruler of the Company of the Watchful Sickle in 1254
+	name = "Marouald"
+	religion = "lifepath"
+	culture = trustians
+	disallow_random_traits = yes
+
+	martial = 8
+	diplomacy = 4
+	stewardship = 2
+	intrigue = 4
+	learning = 4
+	prowess = 11
+
+	1218.9.2 = {
+		birth = yes
+		trait = beauty_good_1
+	}
+
+	1230.1.1 = {
+		trait = gluttonous
+		trait = calm
+		trait = arbitrary
+	}
+
+	1234.9.2 = {
+		trait = education_diplomacy_2
+		trait = way_of_swords_follower
+		trait = gh_historical_blademaster_2
+		trait = gh_historical_track_hunter_2
+	}
+
+	1283.1.30 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+trustians_lifepath_31 = { # Vercimer den va Spencer, founder of the Spencer dynasty and elected Grand Mayor of Aast
+    name = "Vercimer"
+    religion = "lifepath"
+    culture = "trustians"
+
+    dynasty = dyn_marcher_2
+    sexuality = heterosexual
+
+    martial = 5
+    diplomacy = 4
+    stewardship = 8
+    intrigue = 4
+    learning = 6
+    prowess = 7
+
+    770.7.6 = {
+        birth = yes
+        trait = beauty_good_1
+    }
+
+    782.1.1 = {
+        trait = diligent
+        trait = just
+        trait = greedy
+    }
+
+    786.7.6 = {
+        effect = { set_base_arcana = { AMOUNT = 5 } }
+        trait = education_stewardship_3
+        trait = avaricious
+        trait = way_of_coins_follower
+    }
+
+    807.10.4 = {
+        trait = shrewd
+    }
+
+   	832.10.24 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+trustians_lifepath_32 = { # Teryn den va Spencer, was slain by the Lich Methinoire Methiclyz during a raid
+    name = "Teryn"
+    religion = "lifepath"
+    culture = "trustians"
+
+    dynasty = dyn_marcher_2
+    sexuality = heterosexual
+    dna = teryn_den_va_spencer
+
+    father = trustians_lifepath_31
+
+    martial = 7
+    diplomacy = 8
+    stewardship = 6
+    intrigue = 8
+    learning = 10
+    prowess = 6
+
+    797.1.10 = {
+        birth = yes
+        trait = beauty_good_1
+    }
+
+    809.1.1 = {
+        trait = temperate
+        trait = diligent
+        trait = chaste
+    }
+
+    813.1.10 = {
+        effect = { set_base_arcana = { AMOUNT = 6 } }
+        trait = education_learning_1
+        trait = way_of_crowns_follower
+    }
+
+   	837.4.13 = {
+		death = {
+			death_reason = death_lich_raid
+			killer = lich_culture_rejection_12 # Methinoire Methiclyz
+		}
+	}
+}
+
+trustians_lifepath_33 = { # Gaoff den va Spencer, slew the Lich Methinoire Methiclyz to avenge his brother
+    name = "Gaoff"
+    religion = "lifepath"
+    culture = "trustians"
+
+    dynasty = dyn_marcher_2
+    sexuality = heterosexual
+    dna = gaoff
+
+    father = trustians_lifepath_31
+
+    martial = 7
+    diplomacy = 5
+    stewardship = 6
+    intrigue = 8
+    learning = 6
+    prowess = 6
+
+    805.5.24 = {
+        birth = yes
+    }
+
+    817.1.1 = {
+        trait = vengeful
+        trait = diligent
+        trait = calm
+    }
+
+    821.5.24 = {
+        effect = { set_base_arcana = { AMOUNT = 3 } }
+        trait = education_intrigue_2
+        trait = way_of_nullification_follower
+        trait = gh_historical_blademaster_1
+    }
+
+    842.3.17 = {
+    	trait = scarred
+    }
+
+   	863.11.22 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+trustians_lifepath_34 = { # Abael Venodau, marcher author who created the concept of the ‘Fraternity of Chevalie’, later slain in the Brutality by Thamean
+    name = "Abael"
+    religion = "lifepath"
+    culture = "trustians"
+
+    dynasty = dyn_marcher_50
+    sexuality = heterosexual
+    dna = abael
+
+    martial = 6
+    diplomacy = 5
+    stewardship = 5
+    intrigue = 2
+    learning = 10
+    prowess = 7
+
+    837.5.9 = {
+        birth = yes
+        trait = intellect_good_2
+    }
+
+    849.1.1 = {
+        trait = forgiving
+        trait = eccentric
+        trait = gregarious
+    }
+
+    853.5.9 = {
+        effect = { set_base_arcana = { AMOUNT = 7 } }
+        trait = education_learning_4
+        trait = way_of_crows_follower
+        trait = scholar
+        trait = journaller
+    }
+
+   	878.3.7 = {
+		death = {
+			death_reason = death_murder_known
+			killer = voyagen_lifepath_32
+		}
+	}
+}

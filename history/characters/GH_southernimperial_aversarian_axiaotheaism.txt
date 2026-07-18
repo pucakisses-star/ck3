@@ -1,0 +1,163 @@
+﻿southernimperial_aversarian_axiaotheaism_1 = { # Zenobios of Legio XXI 'Axiaothea'
+	name = "Zenobios"
+	dna = southern_imperial_3
+	religion = "aversarian_axiaotheaism"
+	culture = "southernimperial"
+	dynasty = dyn_aversarian_151
+	
+	trait = education_martial_3
+	trait = callous
+	trait = diligent
+	trait = temperate
+	trait = logistician
+	trait = unyielding_defender
+	trait = gh_legon
+	martial = 12
+	diplomacy = 12
+	intrigue = 10
+	stewardship = 10
+	learning = 10
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = no_hair
+			custom_beards = male_beard_western_03		 
+		}
+	}
+
+	1210.1.1 = {
+		birth = yes
+	}
+
+	1239.6.12 = {
+		add_spouse = southernimperial_aversarian_axiaotheaism_9
+	}
+
+	1246.5.1 = {
+		add_unpressed_claim = title:c_askliraki # Ejected from Askliraki by Magnach
+	}
+}
+
+southernimperial_aversarian_axiaotheaism_2 = {
+	name = "Gennadios"
+	
+	trait = bastard
+	father = southernimperial_aversarian_axiaotheaism_1
+	trait = education_martial_4
+	martial = 10
+	trait = strong
+	trait = brave
+	trait = ambitious
+	religion = "aversarian_axiaotheaism"
+	culture = "southernimperial"
+
+	1232.1.1 = {
+		birth = yes
+	}
+}
+
+southernimperial_aversarian_axiaotheaism_3 = {
+	name = "Paerophorios" #Renamed from Christophoros
+	religion = "aversarian_axiaotheaism"
+	culture = "southernimperial"
+
+	1228.1.1 = {
+		birth = yes
+	}
+}
+
+southernimperial_aversarian_axiaotheaism_4 = {
+	name = "Isphioxas" #Renamed from Ioseph
+	religion = "aversarian_axiaotheaism"
+	culture = "southernimperial"
+
+	1224.1.1 = {
+		birth = yes
+	}
+}
+
+southernimperial_aversarian_axiaotheaism_5 = {
+	name = "Iordanes"
+	religion = "aversarian_axiaotheaism"
+	culture = "southernimperial"
+
+	1225.1.1 = {
+		birth = yes
+	}
+}
+
+southernimperial_aversarian_axiaotheaism_6 = {
+	name = "Kyriakos"
+	religion = "aversarian_axiaotheaism"
+	culture = "southernimperial"
+
+	1220.1.1 = {
+		birth = yes
+	}
+}
+
+southernimperial_aversarian_axiaotheaism_7 = {
+	name = "Valerios"
+	religion = "aversarian_axiaotheaism"
+	culture = "southernimperial"
+
+	1219.1.1 = {
+		birth = yes
+	}
+}
+
+southernimperial_aversarian_axiaotheaism_8 = {
+	name = "Gallephon"
+	religion = "aversarian_axiaotheaism"
+	culture = "southernimperial"
+
+	1215.1.1 = {
+		birth = yes
+	}
+}
+
+southernimperial_aversarian_axiaotheaism_9 = { # #wife
+	name = "Anna"
+	female = yes
+	religion = "aversarian_axiaotheaism"
+	culture = "southernimperial"
+
+	1214.1.1 = {
+		birth = yes
+	}
+}
+
+southernimperial_aversarian_axiaotheaism_10 = {
+	name = "Adrianos"
+	mother = southernimperial_aversarian_axiaotheaism_9
+	father = southernimperial_aversarian_axiaotheaism_1
+	religion = "aversarian_axiaotheaism"
+	culture = "southernimperial"
+
+	1242.1.1 = {
+		birth = yes
+	}
+}
+
+southernimperial_aversarian_axiaotheaism_11 = {
+	name = "Alexandros"
+	mother = southernimperial_aversarian_axiaotheaism_9
+	father = southernimperial_aversarian_axiaotheaism_1
+	religion = "aversarian_axiaotheaism"
+	culture = "southernimperial"
+
+	1245.1.1 = {
+		birth = yes
+	}
+}
+
+southernimperial_aversarian_axiaotheaism_12 = { # 38 on map
+	name = "Oribasius"
+	dynasty = dyn_central_empire_24
+	religion = "aversarian_axiaotheaism"
+	culture = "southernimperial"
+
+	1228.4.12 = {
+		birth = yes
+	}
+}

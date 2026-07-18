@@ -1,0 +1,14 @@
+#d_easternkatraddia23 = {
+	#1174.4.17 = {
+		#holder = apokiakas_aversarinas_aagiokratia_2
+	#}
+	#1202.5.26 = {
+		#holder = apokiakas_aversarinas_aagiokratia_4
+	#}
+	#1211.10.19 = {
+		#holder = apokiakas_aeschraes_aagiokrata_1
+	#}
+	#1219.10.3 = {
+		#holder = 0
+	#}
+#}

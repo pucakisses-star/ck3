@@ -1,0 +1,9 @@
+﻿qahsarides_ruidari_1 = {
+	name = "Suhurbiyala"
+	religion = "ruidari"
+	culture = "qahsarides"
+
+	1224.3.22 = {
+		birth = yes
+	}
+}

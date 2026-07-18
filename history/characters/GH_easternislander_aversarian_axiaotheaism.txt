@@ -1,0 +1,17 @@
+﻿easternislander_aversarian_axiaotheaism_1 = {
+	name = "Ioliaxos"
+	culture = "easternislander"
+	religion = "aversarian_axiaotheaism"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+easternislander_aversarian_axiaotheaism_2 = {
+	name = "Qamphrionos"
+	culture = "easternislander"
+	religion = "aversarian_axiaotheaism"
+	1224.5.6 = {
+		birth = yes
+	}
+}

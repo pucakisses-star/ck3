@@ -1,0 +1,14 @@
+d_jitnai = {
+	1251.1.1 = {
+		holder = marakje_vidvaookeyatra_1
+		liege = k_adlurbad
+		change_development_level = 12
+	}
+}
+#d_nugakoda = {
+#	1221.1.1 = {
+#		holder = avihana_askevaryaa_4
+#		liege = k_adlurbad
+#		change_development_level = 13
+#	}
+#}

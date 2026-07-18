@@ -1,0 +1,8 @@
+﻿swabani_karitkarmaic_1 = {
+	name = "Manamatra"
+	religion = "andaronshak"
+	culture = "swabani"
+	1228.8.8 = {
+		birth = yes
+	}
+}

@@ -1,0 +1,18 @@
+d_jaokonnayach = {
+	1198.3.4 = {
+		holder = tapuso_yakasak_3
+		government = pirate_government
+	}
+	1221.6.5 = {
+		holder = 0
+	}
+}
+#d_moracawalaca = {
+	#1198.3.4 = {
+		#holder = tapuso_yakasak_3
+		#government = pirate_government
+	#}
+	#1221.6.5 = {
+		#holder = 0
+	#}
+#}

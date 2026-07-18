@@ -1,0 +1,145 @@
+﻿c_knidalamis = {
+	1196.4.22 = {
+		holder = westernimperial_aversarinas_aagiokrata_3
+	}
+
+	1200.1.1 = {
+		change_development_level = 7
+	}
+
+	# Lonely Note: Giving a null holder to a county triggers an error, make a placeholder
+	# character and remove when possible.
+	#1201.3.4 = {
+	#	holder = 0
+	#}
+
+	1218.3.12 = {
+		holder = westernimperial_aversarian_axiaotheaism_1
+	}
+	1256.5.25 = {
+		holder = goans_gethian_1
+	}
+}
+c_provincenewcreseiris = {
+	1196.4.22 = {
+		holder = westernimperial_aversarinas_aagiokrata_3
+	}
+	1218.3.12 = {
+		holder = westernimperial_aversarinas_aagiokrata_181
+	}
+	1255.9.4 = {
+		holder = vrodkin_sjalvolki_21
+		liege = k_assocaea
+	}
+	1267.3.4 = {
+		holder = vrodkin_sjalvolki_83
+	}
+	1296.6.9 = {
+		holder = vrodkin_sjalvolki_86
+	}
+}
+c_milymna = {
+	1186.7.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_3
+	}
+
+	1200.1.1 = {
+		change_development_level = 9
+	}
+
+	1245.2.15 = {
+		holder = westernimperial_aversarinas_aagiokrata_182
+		liege = 0
+	}
+
+	1256.2.1 = {
+		holder = vrodkin_sjalvolki_18
+		liege = k_assocaea
+	}
+
+	1291.10.6 = {
+		holder = vrodkin_sjalvolki_77
+	}
+}
+c_daykanoss = {
+	1230.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_117
+		liege = d_kameirerna
+	}
+
+	1256.3.19 = {
+		holder = vrodkin_sjalvolki_2
+	}
+
+	1277.6.26 = {
+		holder = vrodkin_sjalvolki_1
+	}
+
+	1293.7.3 = {
+		holder = vrodkin_sjalvolki_78
+	}
+}
+c_kamarerae = {
+	1230.1.1 = { change_development_level = 10 }
+	
+	1230.1.1 = {
+		government = republic_playable_government
+		succession_laws = { clique_republic_elective_title_succession_law }
+		holder = westernimperial_aversarinas_aagiokrata_198
+		liege = d_kameirerna
+	}
+}
+c_hellapeze = {
+	1230.1.1 = { change_development_level = 8 }
+	
+	1230.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_181
+		liege = 0
+	}
+
+	1255.9.4 = {
+		holder = vrodkin_sjalvolki_20
+		liege = k_assocaea
+	}
+	1277.10.3 = {
+		holder = vrodkin_sjalvolki_85
+	}
+}
+c_juktontum = {
+	1230.1.1 = { change_development_level = 8 }
+	1186.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_184
+	}	
+	1230.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_185
+		liege = d_toskopeion
+	}
+}
+c_gournion = {
+	1230.1.1 = { change_development_level = 8 }
+	1186.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_184
+	}
+	1230.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_183
+	}
+}
+c_erythranthus = {
+	1230.1.1 = { change_development_level = 13 }
+	
+	1230.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_196
+		# liege = d_edapeze # GH TODO: Removed in province rework, replace
+	}
+
+	1255.8.17 = {
+		holder = vrodkin_sjalvolki_26
+		liege = k_assocaea
+	}
+	1269.2.20 = {
+		holder = vrodkin_sjalvolki_89
+	}
+	1282.3.1 = {
+		holder = vrodkin_sjalvolki_91
+	}
+}

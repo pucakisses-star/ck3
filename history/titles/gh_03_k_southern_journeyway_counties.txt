@@ -1,0 +1,30 @@
+c_red_chasm_33 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_red_chasm_26 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_red_chasm_23 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_red_chasm_37 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_red_chasm_36 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_red_chasm_28 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

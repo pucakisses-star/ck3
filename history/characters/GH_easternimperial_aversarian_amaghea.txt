@@ -1,0 +1,42 @@
+﻿easternimperial_amaghean_aagiokrata_1 = { # Mother of all the main children
+	name = "Nestani"
+	religion = "amaghean_aagiokrata"
+	culture = "easternimperial"
+
+	female = yes
+
+	1202.3.17 = {
+		birth = yes
+		trait = beauty_good_2
+		trait = magic_good_4
+	}
+	1214.3.17 = {
+		trait = compassionate
+		trait = brave
+		trait = honest
+	}
+	1218.3.17 = {
+		trait = education_diplomacy_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+		trait = diplomat
+	}
+	1242.11.3 = {
+		trait = gh_historical_blademaster_1
+		trait = depressed_1
+
+		set_relation_rival = {
+			target = character:amaghean_amaghean_aagiokrata_1
+			reason = rival_imprisoned
+		}
+
+		set_relation_rival = {
+			target = character:amaghean_amaghean_aagiokrata_6
+			reason = nemesis_killed_partner
+			involved_character = character:amaghean_amaghean_aagiokrata_8
+		}
+	}
+}

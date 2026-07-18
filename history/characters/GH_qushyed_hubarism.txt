@@ -1,0 +1,168 @@
+﻿qushyed_hubarism_1 = {
+	name = "Halasu"
+	religion = "hubarism"
+	culture = "qushyed"
+
+	11.1.30 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	23.1.30 = {
+		trait = shy
+		trait = humble
+		trait = paranoid
+	}
+
+	27.1.30 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+		trait = education_learning_2
+	}
+
+	83.8.1 = {
+		death = yes
+	}
+}
+
+qushyed_hubarism_2 = {
+	name = "Saadir"
+	religion = "hubarism"
+	culture = "qushyed"
+
+	63.11.14 = {
+		birth = yes
+		trait = magic_good_9
+	}
+
+	75.11.14 = {
+		trait = zealous
+		trait = chaste
+		trait = trusting
+	}
+
+	79.11.14 = {
+		trait = education_diplomacy_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+		trait = diplomat
+	}
+
+	120.1.20 = {
+		death = yes
+	}
+}
+
+qushyed_hubarism_3 = {
+	name = "Ammuna"
+	religion = "hubarism"
+	culture = "qushyed"
+
+	124.7.1 = {
+		birth = yes
+		trait = magic_good_8
+		trait = intellect_good_3
+	}
+
+	136.1.1 = {
+		trait = just
+		trait = compassionate
+		trait = brave
+	}
+
+	140.7.1 = {
+		trait = scholar
+		trait = education_arcana_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	199.3.4 = {
+		death = yes
+	}
+}
+
+qushyed_hubarism_4 = {
+	name = "Labarqan"
+	religion = "hubarism"
+	culture = "qushyed"
+
+	281.2.13 = {
+		birth = yes
+		trait = magic_good_6
+		trait = physique_good_3
+		trait = intellect_good_1
+	}
+
+	293.1.1 = {
+		trait = sadistic
+		trait = calm
+		trait = diligent
+	}
+
+	297.2.13 = {
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	341.6.17 = {
+		death = yes
+	}
+}
+
+qushyed_hubarism_5 = {
+	name = "Hattassila"
+	religion = "hubarism"
+	culture = "qushyed"
+	female = yes
+
+	341.11.9 = {
+		birth = yes
+		trait = magic_good_5
+		trait = intellect_good_3
+	}
+
+	353.1.1 = {
+		trait = ambitious
+		trait = brave
+		trait = callous
+	}
+
+	357.11.9 = {
+		trait = schemer
+		trait = education_arcana_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	402.1.1 = {
+		effect = {
+			upgrade_stacking_modifier_by_level_effect = { MODIFIER = magic_life_extension_modifier TYPE = character LEVEL = 10 YEARS = -1  } 
+			upgrade_stacking_modifier_by_level_effect = { MODIFIER = magic_arcane_degeneration_modifier TYPE = character LEVEL = 1 YEARS = -1  } 
+			set_variable = {
+				name = life_extention_amount_raw
+				value = 10
+			}
+		}
+	}
+
+	483.6.13 = {
+		death = yes
+	}
+}

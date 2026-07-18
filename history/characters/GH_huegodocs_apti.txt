@@ -1,0 +1,434 @@
+﻿huegodocs_apti_1 = {
+	name = "Desus"
+	religion = "apti"
+	culture = "huegodocs"
+
+	trait = ambitious
+	trait = callous
+	trait = cynical
+	trait = wrathful
+	trait = legitimized_bastard
+	trait = education_diplomacy_4
+	diplomacy = 15
+	intrigue = 8
+	learning = 0
+
+	1211.1.1 = {
+		birth = yes
+	}
+}
+
+huegodocs_apti_2 = {
+	name = "Phathri"
+	religion = "apti"
+	culture = "huegodocs"
+
+	female = yes
+	sexuality = asexual
+
+	intrigue = 10
+
+	trait = legitimized_bastard
+	trait = ambitious
+	trait = cynical
+	trait = deceitful
+	trait = education_intrigue_4
+	trait = chaste
+
+	1236.5.9 = {
+		birth = yes
+	}
+}
+
+huegodocs_apti_4 = {
+	name = "Bromnir"
+	religion = "apti"
+	culture = "huegodocs"
+
+	martial = 10
+
+	trait = legitimized_bastard
+	trait = education_martial_4
+	trait = ambitious
+	trait = brave
+	trait = just
+
+	1216.1.1 = {
+		birth = yes
+	}
+
+	1232.1.1 = {
+		trait = gh_historical_blademaster_2
+	}
+}
+
+huegodocs_apti_5 = {
+	name = "Vlathugni"
+	religion = "apti"
+	culture = "huegodocs"
+
+	stewardship = 8
+
+	trait = education_stewardship_3
+	trait = cynical
+	trait = greedy
+	trait = callous
+
+	1219.1.1 = {
+		birth = yes
+	}
+}
+
+huegodocs_apti_6 = { # Gundroit's Court Magi
+	name = "Lithanus"
+	religion = "apti"
+	culture = "huegodocs"
+
+	1192.5.23 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1204.1.1 = {
+		trait = patient
+		trait = stubborn
+		trait = diligent	
+	}
+
+	1208.5.23 = {
+		trait = education_learning_2
+		trait = hashishiyah
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:silentspeak }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1254.1.1 = {
+		employer = huegodocs_apti_3
+		give_council_position = councillor_court_magi
+	}
+}
+
+####################
+# HOUSE ANTHEMARAS #
+####################
+
+huegodocs_apti_3 = {
+    name = "Gundroit"
+	dynasty = dyn_anthemaras
+	religion = "apti"
+	culture = "huegodocs"
+
+	learning = 1
+
+	trait = rakish
+	trait = lustful
+	trait = fecund
+	trait = gluttonous
+	trait = drunkard
+	trait = cynical
+	trait = education_learning_2
+
+	1229.9.12 = {
+		birth = yes
+	}
+
+    1259.9.15 = {
+        add_spouse = huegodocs_apti_8
+    }
+
+    1290.7.20 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+huegodocs_apti_8 = {
+    name = "Audentha" 
+    female = yes
+
+    religion = apti
+    culture = huegodocs
+
+    sexuality = heterosexual
+
+    trait = shy
+    trait = generous
+    trait = callous
+
+    diplomacy = 10
+    martial = 6
+    stewardship = 6
+    intrigue = 7
+    learning = 3
+    prowess = 4
+
+    trait = education_diplomacy_2
+
+    1242.9.2 = {
+        birth = yes
+    }
+
+    1293.3.22 = {
+        death = { death_reason = death_consumption }
+    }
+}
+
+huegodocs_apti_9 = {
+    name = "Diothriana" 
+    female = yes
+
+    religion = apti
+    culture = huegodocs
+
+    father = huegodocs_apti_3
+
+    sexuality = heterosexual
+
+	trait = bastard
+
+    diplomacy = 6
+    martial = 3
+    stewardship = 5
+    intrigue = 7
+    learning = 6
+    prowess = 6
+
+    trait = education_intrigue_2
+
+    1251.4.27 = {
+        birth = yes
+    }
+	
+	1263.1.1 = {
+		trait = deceitful
+		trait = gluttonous
+		trait = craven
+	}
+	
+	# Married to Prahomil Černobukovyć in 1283.12.3
+}
+
+huegodocs_apti_10 = {
+    name = "Vioth" 
+
+    dynasty = dyn_anthemaras
+    religion = apti
+    culture = huegodocs
+
+    father = huegodocs_apti_3
+
+    sexuality = heterosexual
+
+    trait = bastard
+
+    diplomacy = 5
+    martial = 7
+    stewardship = 9
+    intrigue = 5
+    learning = 7
+    prowess = 8
+
+    trait = education_stewardship_1
+
+    1253.6.21 = {
+        birth = yes
+    }
+	
+	1265.1.1 = {
+		trait = greedy
+		trait = impatient
+		trait = lustful
+	}
+	
+	1294.4.4 = {
+		trait = devoted
+	}
+}
+
+huegodocs_apti_11 = {
+    name = "Agisilla" 
+    female = yes
+
+    religion = apti
+    culture = huegodocs
+	
+	father = huegodocs_apti_3
+
+    sexuality = heterosexual
+
+	trait = bastard
+	
+    trait = arrogant
+    trait = cynical
+    trait = callous
+
+    diplomacy = 7
+    martial = 2
+    stewardship = 7
+    intrigue = 10
+    learning = 1
+    prowess = 9
+
+    trait = education_intrigue_1
+
+    1257.1.14 = {
+        birth = yes
+    }
+}
+
+huegodocs_apti_12 = {
+    name = "Athcoriana" 
+    female = yes
+
+    religion = apti
+    culture = huegodocs
+
+    father = huegodocs_apti_3
+    mother = huegodocs_apti_8
+
+    sexuality = heterosexual
+
+    trait = craven
+    trait = deceitful
+    trait = stubborn
+
+    diplomacy = 6
+    martial = 6
+    stewardship = 7
+    intrigue = 6
+    learning = 5
+    prowess = 3
+
+    trait = education_stewardship_3
+
+    1264.8.21 = {
+        birth = yes
+    }
+	
+	1291.10.26 = {
+		death = {
+			death_reason = death_murder
+			killer = huegodocs_apti_13
+		}
+	}
+}
+
+huegodocs_apti_13 = {
+    name = "Carathoit" 
+
+    dynasty = dyn_anthemaras
+    religion = apti
+    culture = huegodocs
+
+    father = huegodocs_apti_3
+
+    sexuality = heterosexual
+	
+	trait = bastard
+
+    diplomacy = 6
+    martial = 3
+    stewardship = 4
+    intrigue = 7
+    learning = 5
+    prowess = 3
+
+    1265.2.5 = {
+        birth = yes
+    }
+
+    1277.1.1 = {
+        trait = ambitious
+		trait = sadistic
+		trait = deceitful
+    }
+	
+	1281.2.5 = {
+		trait = education_intrigue_3
+	}
+}
+
+huegodocs_apti_15 = {
+    name = "Thiodar" 
+
+    dynasty = dyn_anthemaras
+    religion = apti
+    culture = huegodocs
+
+    father = huegodocs_apti_3
+    mother = huegodocs_apti_8
+
+    sexuality = heterosexual
+
+    trait = ambitious
+    trait = forgiving
+    trait = deceitful
+
+    diplomacy = 4
+    martial = 6
+    stewardship = 7
+    intrigue = 4
+    learning = 3
+    prowess = 7
+
+    trait = education_stewardship_4
+
+    1271.8.15 = {
+        birth = yes
+    }
+	
+	1288.10.26 = {
+		death = {
+			death_reason = death_murder
+			killer = huegodocs_apti_13
+		}
+	}
+}
+
+huegodocs_apti_16 = {
+    name = "Mathcenia" 
+    female = yes
+
+    religion = apti
+    culture = huegodocs
+
+    father = huegodocs_apti_3
+    mother = huegodocs_apti_8
+
+    sexuality = heterosexual
+
+    trait = forgiving
+    trait = generous
+    trait = temperate
+
+    diplomacy = 6
+    martial = 7
+    stewardship = 6
+    intrigue = 4
+    learning = 5
+    prowess = 3
+
+    trait = education_martial_4
+
+    1275.2.14 = {
+        birth = yes
+    }
+}
+
+huegodocs_apti_17 = {
+    name = "Rithogen"
+	dynasty = dyn_anthemaras
+
+    religion = apti
+    culture = huegodocs
+
+    mother = huegodocs_apti_12
+
+    sexuality = heterosexual
+
+    1288.2.14 = {
+        birth = yes
+    }
+}

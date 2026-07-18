@@ -1,0 +1,140 @@
+﻿ardothanes_aversarinas_aagiokrata_1 = { # Yind the Fairest Witch
+    name = "Yind"
+    religion = "aversarinas_aagiokrata"
+    culture = "ardothanes"
+    dynasty = dyn_aversarian_158
+
+    sexuality = heterosexual
+    female = yes
+    dna = yind
+
+    martial = 9
+    diplomacy = 5
+    stewardship = 7
+    intrigue = 10
+    learning = 5
+    prowess = 6
+
+    1170.9.27 = {
+        birth = yes
+        trait = magic_good_9
+        trait = beauty_good_3
+    }
+
+    1182.1.1 = {
+        trait = arrogant
+        trait = calm
+        trait = temperate
+    }
+
+    1186.9.27 = {
+        effect = { set_base_arcana = { AMOUNT = 10 } }
+        trait = education_diplomacy_4
+        trait = gh_historical_school
+        trait = witch
+        effect = {
+            set_variable = { name = historical_magic_school value = flag:day_court }
+            set_variable = { name = historical_magic_school_min_spells value = 12 }
+        }
+        give_nickname = nick_the_fairest_witch
+    }
+
+    1232.7.26 = {
+        death = {
+            death_reason = death_execution
+            killer = southernimperial_aversarian_axiaotheaism_1
+        }
+    }
+}
+
+ardothanes_aversarinas_aagiokrata_2 = { # Yind's daughter, died at Ten Trees
+    name = "Carcen"
+    religion = "aversarinas_aagiokrata"
+    culture = "ardothanes"
+    dynasty = dyn_aversarian_158
+
+    sexuality = heterosexual
+    female = yes
+
+    mother = ardothanes_aversarinas_aagiokrata_1
+
+    martial = 7
+    diplomacy = 5
+    stewardship = 7
+    intrigue = 4
+    learning = 4
+    prowess = 6
+
+    1197.4.14 = {
+        birth = yes
+        trait = magic_good_6
+        trait = beauty_good_1
+    }
+
+    1209.1.1 = {
+        trait = lustful
+        trait = just
+        trait = generous
+    }
+
+    1213.4.14 = {
+        effect = { set_base_arcana = { AMOUNT = 6 } }
+        trait = education_diplomacy_1
+        trait = gh_historical_school
+        trait = witch
+        effect = {
+            set_variable = { name = historical_magic_school value = flag:day_court }
+            set_variable = { name = historical_magic_school_min_spells value = 7 }
+        }
+    }
+
+    1247.3.15 = {
+        death = {
+            death_reason = death_battle
+            killer = drothacny_dethedklann_1
+        }
+    }
+}
+
+ardothanes_aversarinas_aagiokrata_3 = { # Yind's granddaughter, driven away after Ten Trees, later joined the Shrouded Sisterhood
+    name = "Moruen"
+    religion = "aversarinas_aagiokrata"
+    culture = "ardothanes"
+    dynasty = dyn_aversarian_158
+
+    sexuality = heterosexual
+    female = yes
+    dna = yind
+
+    mother = ardothanes_aversarinas_aagiokrata_2
+
+    martial = 9
+    diplomacy = 7
+    stewardship = 7
+    intrigue = 6
+    learning = 3
+    prowess = 6
+
+    1227.4.1 = {
+        birth = yes
+        trait = magic_good_4
+        trait = beauty_good_2
+    }
+
+    1239.1.1 = {
+        trait = temperate
+        trait = forgiving
+        trait = just
+    }
+
+    1243.4.1 = {
+        effect = { set_base_arcana = { AMOUNT = 8 } }
+        trait = education_diplomacy_3
+        trait = gh_historical_school
+        trait = witch
+        effect = {
+            set_variable = { name = historical_magic_school value = flag:day_court }
+            set_variable = { name = historical_magic_school_min_spells value = 5 }
+        }
+    }
+}

@@ -1,0 +1,5 @@
+c_shargahata = {
+	1250.3.14 = {
+		holder = astilik_astiliak_1
+	}
+}

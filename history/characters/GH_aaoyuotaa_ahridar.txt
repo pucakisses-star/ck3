@@ -1,0 +1,62 @@
+﻿aaoyuotaa_ahridar_1 = { # Taduesz's rival
+	name = "Burab"
+	religion = ahridar
+	culture = aaoyuotaa
+
+	1210.1.1 = {
+		birth = yes
+	}
+	1226.1.1 = {
+		trait = zealous
+		trait = stubborn
+		trait = vengeful
+		trait = education_learning_3
+	}
+	1238.1.1 = {
+		set_relation_rival = character:aiyqarbkhiyl_ahridar_2
+	}
+}
+
+aaoyuotaa_ahridar_2 = {
+	name = "irat_e"
+	religion = ahridar
+	culture = aaoyuotaa
+	1222.4.17 = {
+		birth = yes
+	}
+}
+
+aaoyuotaa_ahridar_3 = {
+	name = "Nisroch"
+	religion = ahridar
+	culture = aaoyuotaa
+	1167.2.17 = {
+		birth = yes
+	}
+	1183.2.17 = {
+		trait = zealous
+		trait = ambitious
+		trait = stubborn
+	}
+	1201.2.7 = {
+		set_relation_rival = character:aiyqarbkhiyl_ahridar_1
+	}
+	1212.9.17 = {
+		death = {
+			death_reason = death_duel
+			killer = aiyqarbkhiyl_ahridar_1
+		}
+	}
+}
+
+aaoyuotaa_ahridar_4 = {
+	name = "Youkhanna"
+	religion = ahridar
+	culture = aaoyuotaa
+	1165.3.12 = {
+		birth = yes
+	}
+	1211.5.7 = {
+		death = yes
+	}
+}

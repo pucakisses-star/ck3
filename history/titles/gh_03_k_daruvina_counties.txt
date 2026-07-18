@@ -1,0 +1,157 @@
+c_dadkhar = {
+	1194.4.16 = {
+		holder = rahikaya_vidvaookeyatra_1
+	}
+	1226.6.9 = {
+		holder = rahikaya_vidvaookeyatra_7
+	}
+	1230.1.9 = {
+		holder = rahikaya_vidvaookeyatra_11
+		change_development_level = 22
+	}
+}
+c_arhanadur = {
+	1251.1.1 = {
+		holder = ulakada_karitkarmaic_1
+		liege = d_kathkot
+	}
+}
+c_appi = {
+	1194.4.16 = {
+		holder = rahikaya_vidvaookeyatra_1
+	}
+	1226.6.9 = {
+		holder = rahikaya_vidvaookeyatra_7
+	}
+	1230.1.9 = {
+		holder = rahikaya_vidvaookeyatra_11
+	}
+	1231.4.6 = {
+		holder = rahikaya_vidvaookeyatra_8
+		liege = d_kathkot
+		change_development_level = 12
+	}
+}
+c_lamai = {
+	1225.11.15 = {
+		holder = zabari_vidvaookeyatra_4
+		government = feudal_government
+		liege = k_kinilam
+	}
+	1249.12.3 = {
+		holder = ekaachi_vidvaookeyatra_2
+		liege = 0
+		government = republic_playable_government
+		change_development_level = 14
+	}
+}
+c_chintallamadur = {
+	904.1.27 = {
+		holder = neshalar_asritayka_1
+		government = administrative_government
+	}
+	945.2.7 = {
+		holder = neshalar_asritayka_2
+	}
+	972.7.12 = {
+		holder = neshalar_asritayka_3
+	}
+	1004.1.23 = {
+		holder = neshalar_asritayka_4
+	}
+	1115.6.1 = {
+		holder = zabari_vidvaookeyatra_10
+		government = feudal_government
+	}
+	1137.7.14 = {
+		holder = zabari_vidvaookeyatra_8
+	}
+	1211.10.2 = {
+		holder = zabari_vidvaookeyatra_6
+	}
+	1227.11.7 = {
+		holder = zabari_vidvaookeyatra_5
+	}
+}
+c_velliram = {
+	1225.11.15 = {
+		holder = zabari_vidvaookeyatra_4
+		government = feudal_government
+		liege = k_kinilam
+	}
+	1249.12.3 = {
+		holder = zabari_vidvaookeyatra_2
+		government = pirate_government
+		change_development_level = 8
+	}
+}
+c_irhat = {
+	1251.1.1 = {
+		holder = zabari_vidvaookeyatra_2
+		liege = k_kinilam		
+		change_development_level = 12
+		government = pirate_government
+	}
+}
+c_kawari = {
+	1251.1.1 = {
+		holder = yadaniya_karitkarmaic_1
+		change_development_level = 6
+	}
+}
+c_baraderi = {
+	1251.1.1 = {
+		holder = pyanaki_daramarjaratan_1
+		change_development_level = 5
+	}
+}
+c_baliyakter = {
+	1250.1.1 = {
+		holder = neshalar_nabbarek_2		
+		change_development_level = 15
+	}
+}
+c_ambiydin = {
+	1250.1.1 = {
+		holder = neshalar_nabbarek_2		
+		change_development_level = 15
+	}
+}
+c_dhanaor = {
+	882.8.22 = {
+		holder = yadaniya_vidvaookeyatra_1
+		government = magocratic_government
+		liege = 0
+		change_development_level = 15
+	}
+	904.9.21 = {
+		holder = neshalar_vidvaookeyatra_1
+		liege = e_taryaad_saramsaasan
+	}
+	962.3.12 = {
+		holder = neshalar_vidvaookeyatra_2
+	}
+	1024.5.9 = {
+		liege = 0
+	}
+	1031.5.27 = {
+		holder = yadaniya_vidvaookeyatra_2
+	}
+	1038.10.20 = {
+		holder = wasteland
+		government = wasteland_government
+		change_development_level = 1
+	}
+}
+c_mirsa = {
+	1250.1.1 = {
+		holder = swabani_karitkarmaic_1		
+		change_development_level = 14
+	}
+}
+c_japget = {
+	1250.1.1 = {
+		holder = swabani_karitkarmaic_1		
+		change_development_level = 14
+	}
+}

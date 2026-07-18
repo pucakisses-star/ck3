@@ -1,0 +1,83 @@
+#c_sornills = {
+#	1165.12.27 = {
+#		holder = islander_aversarinas_aagiokrata_8
+#	}
+#	1218.6.23 = {
+#		holder = islander_aversarinas_aagiokrata_10
+#	}
+#	1252.1.1 = {
+#		holder = islander_aversarinas_aagiokrata_11
+#	}
+#	1262.7.25 = {
+#		holder = caemansi_sjalvolki_13
+#	}
+#	1267.1.7 = {
+#		holder = caemansi_sjalvolki_27
+#	}
+#	1280.4.21 = {
+#		holder = caemansi_sjalvolki_29
+#	}
+#	1295.2.26 = {
+#		holder = caemansi_sjalvolki_32
+#	}
+#	1297.6.26 = {
+#		government = landed_order_government
+#	}
+#}
+
+c_kurses = {
+	1250.1.1 = {
+		holder = islander_blood_veneration_2
+	}
+}
+c_sinoikisms_tngi = {
+	1250.1.1 = {
+		holder = islander_aversarinas_practitioner_4
+	}
+}
+c_provincenew6249 = {
+	1250.1.1 = {
+		holder = islander_drakanorix_aagiokrata_2
+	}
+}
+c_stovoxes = {
+	1165.12.27 = {
+		holder = islander_aversarinas_aagiokrata_8
+		liege = e_etepezea
+	}
+	1218.6.23 = {
+		holder = islander_aversarinas_aagiokrata_10
+		liege = 0
+	}
+	1252.1.1 = {
+		holder = islander_aversarian_black_fraternity_1
+	}
+}
+c_aautokratirs = {
+	1250.1.1 = {
+		holder = islander_militant_cliques_1
+	}
+}
+c_minefaxs_pebbles = {
+	1250.1.1 = {
+		holder = islander_aeschraes_aagiokrata_2
+	}
+}
+c_provincenew6152 = {
+	1165.12.27 = {
+		holder = islander_aversarinas_aagiokrata_8
+		liege = e_etepezea
+	}
+	1218.6.23 = {
+		holder = islander_aversarinas_aagiokrata_10
+		liege = 0
+	}
+	1252.1.1 = {
+		holder = islander_aversarinas_aagiokrata_11
+	}
+}
+c_drakeisles = {
+	1250.1.1 = {
+		holder = islander_drakanorix_aagiokrata_3
+	}
+}

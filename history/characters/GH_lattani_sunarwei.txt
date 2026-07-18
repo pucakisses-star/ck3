@@ -1,0 +1,9 @@
+﻿lattani_sunarwei_1 = {
+	name = "Kyros"
+	religion = "sunarwei"
+	culture = "lattani"
+
+	1210.3.22 = {
+		birth = yes
+	}
+}

@@ -1,0 +1,135 @@
+c_ninostaqaro = {
+	1176.5.4 = {
+		holder = amaghean_amaghean_aagiokrata_9
+		change_development_level = 8
+	}
+	1200.3.1 = {
+		holder = amaghean_amaghean_aagiokrata_8
+	}
+	1242.11.3 = {
+		holder = amaghean_amaghean_aagiokrata_1
+	}
+}
+c_akeca = {
+	1234.1.1 = {
+	liege = "k_kalliados"
+		holder = easternimperial_aversarinas_aagiokrata_52
+	}
+}
+c_chieus = {
+	1230.1.1 = {
+		
+		holder = dergi_aversarinas_aagiokrata_1
+		change_development_level = 2
+	}
+}
+c_illitavi = {
+	1192.4.16 = {
+		# liege = d_zuri # GH TODO: Duchy removed, find another
+		holder = amaghean_amaghean_aagiokrata_31
+		change_development_level = 6
+	}
+	1218.9.4 = {
+		# liege = d_zuri # GH TODO: Duchy removed, find another
+		holder = amaghean_amaghean_aagiokrata_8
+	}
+	1242.11.3 = {
+		# liege = d_zuri # GH TODO: Duchy removed, find another
+		holder = amaghean_amaghean_aagiokrata_1
+	}
+}
+c_rusali = {
+	1200.3.1 = {
+		liege = d_irritarvo
+		holder = amaghean_amaghean_aagiokrata_20
+		change_development_level = 6
+	}
+	1242.11.3 = {
+		# liege = d_zuri # GH TODO: Duchy removed, find another
+		holder = amaghean_amaghean_aagiokrata_1
+	}
+	1250.2.8 = {
+		# liege = d_zuri # GH TODO: Duchy removed, find another
+		holder = amaghean_amaghean_aagiokrata_105 
+	}
+}
+#c_kaisariossoi = {
+#	1142.6.18 = {
+#		# liege = d_amaghean_isles # GH TODO: Duchy removed, find another
+#		holder = amaghean_amaghean_aagiokrata_28
+#		change_development_level = 6
+#	}
+#	1202.2.9 = {
+#		# liege = d_amaghean_isles # GH TODO: Duchy removed, find another
+#		holder = amaghean_amaghean_aagiokrata_27
+#	}
+#	1216.4.17 = {
+#		# liege = d_messopus # GH TODO: Duchy removed, find another
+#		holder = aygaen_shyatan_1
+#	}
+#	1220.9.14 = {
+#		liege = d_irritarvo
+#		holder = amaghean_amaghean_aagiokrata_20
+#	}
+#	1246.1.1 = {
+#		# liege = d_zuri # GH TODO: Duchy removed, find another
+#		holder = amaghean_amaghean_aagiokrata_1
+#	}
+#	1250.2.8 = {
+#		# liege = d_zuri # GH TODO: Duchy removed, find another
+#		holder = amaghean_amaghean_aagiokrata_107 
+#	}
+#}
+c_oranision = {
+	1142.6.18 = {
+		# liege = d_amaghean_isles # GH TODO: Duchy removed, find another
+		holder = amaghean_amaghean_aagiokrata_28
+		change_development_level = 6
+	}
+	1202.2.9 = {
+		# liege = d_amaghean_isles # GH TODO: Duchy removed, find another
+		holder = amaghean_amaghean_aagiokrata_27
+	}
+	1216.4.17 = {
+		# liege = d_messopus # GH TODO: Duchy removed, find another
+		holder = aygaen_shyatan_1
+	}
+	1220.9.14 = {
+		liege = d_irritarvo
+		holder = amaghean_amaghean_aagiokrata_20
+	}
+	1246.1.1 = {
+		# liege = d_zuri # GH TODO: Duchy removed, find another
+		holder = amaghean_amaghean_aagiokrata_1
+	}
+	1250.2.8 = {
+		# liege = d_zuri # GH TODO: Duchy removed, find another
+		holder = amaghean_amaghean_aagiokrata_108 
+	}
+}
+c_znython = {
+	1180.6.13 = {
+		# liege = d_onemo # GH TODO: Duchy removed, find another
+		holder = amaghean_amaghean_aagiokrata_18
+		change_development_level = 5
+	}
+	1239.1.14 = {
+		# liege = d_onemo # GH TODO: Duchy removed, find another
+		holder = amaghean_amaghean_aagiokrata_2
+	}
+}
+c_sestaclea = {
+	1184.4.20 = {
+		# liege = d_messopus # GH TODO: Duchy removed, find another
+		holder = amaghean_amaghean_aagiokrata_24
+		change_development_level = 7
+	}
+	1216.4.17 = {
+		# liege = d_messopus # GH TODO: Duchy removed, find another
+		holder = aygaen_shyatan_1
+	}
+	1220.9.14 = {
+		holder = jaravad_cumani_1
+		government = nomad_government
+	}
+}

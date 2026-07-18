@@ -1,0 +1,16 @@
+
+d_rifeh = {
+	1230.1.1 = {
+		holder = makryenis_katharitos_7
+		liege = k_tifrennesh
+		government = landed_order_government
+	}
+	1230.1.1 = { change_development_level = 14 }
+}
+d_ul_gazho = {
+	1240.1.1 = {
+		holder = makryenis_calysto_1
+		government = landed_order_government
+	}
+	1240.1.1 = { change_development_level = 15 }	
+}

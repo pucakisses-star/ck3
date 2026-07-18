@@ -1,0 +1,264 @@
+﻿lattani_sunwarwei_aagiokrata_1 = { # Zaldarai Argdaos, 1254 Lattani Chieftain
+	name = "Zaldarai"
+	dynasty = dyn_sunarwei_2
+	religion = sunwarwei_aagiokrata
+	culture = lattani
+
+	father = lattani_sunwarwei_aagiokrata_5
+
+	martial = 8
+	diplomacy = 5
+	intrigue = 3
+	stewardship = 3
+	learning = 4
+	prowess = 6
+
+	1232.5.11 = {
+		birth = yes
+	}
+
+	1244.1.1 = {
+		trait = zealous
+		trait = fickle
+		trait = impatient
+	}
+
+	1248.5.11 = {
+		trait = education_martial_2
+	}
+}
+
+lattani_sunwarwei_aagiokrata_2 = { # Barzanes 'Silver-Bane' Argdaos, Leader of Lattani Revolt of 1199 IS
+	name = "Barzanes"
+	dynasty = dyn_sunarwei_2
+	religion = sunwarwei_aagiokrata
+	culture = lattani
+	disallow_random_traits = yes
+
+	martial = 11
+	diplomacy = 7
+	intrigue = 3
+	stewardship = 3
+	learning = 7
+	prowess = 8
+
+	1153.12.17 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1165.1.1 = {
+		trait = zealous
+		trait = ambitious
+		trait = impatient
+	}
+
+	1169.12.17 = {
+		trait = education_martial_4
+		trait = gh_historical_blademaster_1
+	}
+
+	1199.8.26 = {
+		give_nickname = nick_silverbane
+	}
+
+	1200.2.26 = {
+		death = {
+			death_reason = death_battle
+			killer = etrandanexi_aversarian_axiaotheaism_1 # Agos Slyn
+		}
+	}
+}
+
+lattani_sunwarwei_aagiokrata_3 = { # Artabanus Argdaos, led the Lattani in their First and Second invasions of Honarvo
+	name = "Artabanus"
+	dynasty = dyn_sunarwei_2
+	religion = sunwarwei_aagiokrata
+	culture = lattani
+	disallow_random_traits = yes
+
+	father = lattani_sunwarwei_aagiokrata_2
+
+	martial = 10
+	diplomacy = 12
+	intrigue = 4
+	stewardship = 11
+	learning = 7
+	prowess = 10
+
+	1182.6.15 = {
+		birth = yes
+		trait = magic_good_2
+		trait = twin
+	}
+
+	1194.1.1 = {
+		trait = sadistic
+		trait = zealous
+		trait = ambitious
+	}
+
+	1198.6.15 = {
+		trait = education_martial_2
+	}
+
+	1218.7.6 = {
+		death = {
+			death_reason = death_battle
+			killer = easternimperial_aversarian_axiaotheaism_17 # Zekos Kreyshati
+		}
+	}
+}
+
+lattani_sunwarwei_aagiokrata_4 = { # Artabazus Argdaos, Lattani Chief's twin who avenged him
+	name = "Artabazus"
+	dynasty = dyn_sunarwei_2
+	religion = sunwarwei_aagiokrata
+	culture = lattani
+	disallow_random_traits = yes
+
+	father = lattani_sunwarwei_aagiokrata_2
+
+	martial = 11
+	diplomacy = 5
+	intrigue = 4
+	stewardship = 8
+	learning = 10
+	prowess = 8
+
+	1182.6.15 = {
+		birth = yes
+		trait = magic_good_4
+		trait = twin
+	}
+
+	1194.1.1 = {
+		trait = content
+		trait = zealous
+		trait = brave
+	}
+
+	1198.6.15 = {
+		trait = education_intrigue_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1220.3.4 = {
+		death = {
+			death_reason = death_battle
+			killer = jaduyada_eabuyad_ilah_al_atilaam_3 # Imran Tahzirid, Slave Leader
+		}
+	}
+}
+
+lattani_sunwarwei_aagiokrata_5 = { # Orontes Argdaos, led the Lattani in their third invasion of Honarvo
+	name = "Orontes"
+	dynasty = dyn_sunarwei_2
+	religion = sunwarwei_aagiokrata
+	culture = lattani
+	disallow_random_traits = yes
+
+	father = lattani_sunwarwei_aagiokrata_3
+
+	martial = 12
+	diplomacy = 2
+	intrigue = 2
+	stewardship = 3
+	learning = 6
+	prowess = 8
+
+	1205.11.18 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1217.1.1 = {
+		trait = greedy
+		trait = wrathful
+		trait = arbitrary
+	}
+
+	1221.11.18 = {
+		trait = education_martial_1
+	}
+
+	1242.12.14 = {
+		death = {
+			death_reason = death_battle
+			killer = zelkavani_sunarwei_aagiokrata_2 # Dareios Croedes
+		}
+	}
+}
+
+lattani_sunwarwei_aagiokrata_6 = { # Gotarzes Argdaos, son of Artabazus
+	name = "Gotarzes"
+	dynasty = dyn_sunarwei_2
+	religion = sunwarwei_aagiokrata
+	culture = lattani
+	disallow_random_traits = yes
+
+	father = lattani_sunwarwei_aagiokrata_4
+
+	martial = 6
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 9
+	learning = 5
+	prowess = 6
+
+	1211.2.18 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1223.1.1 = {
+		trait = gregarious
+		trait = lustful
+		trait = gluttonous
+	}
+
+	1227.2.18 = {
+		trait = education_stewardship_3
+	}
+}
+
+lattani_sunwarwei_aagiokrata_7 = { # Peucestas Argdaos, son of Artabazus
+	name = "Peucestas"
+	dynasty = dyn_sunarwei_2
+	religion = sunwarwei_aagiokrata
+	culture = lattani
+	disallow_random_traits = yes
+
+	father = lattani_sunwarwei_aagiokrata_4
+
+	martial = 6
+	diplomacy = 6
+	intrigue = 10
+	stewardship = 4
+	learning = 5
+	prowess = 7
+
+	1217.8.8 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1229.1.1 = {
+		trait = ambitious
+		trait = zealous
+		trait = sadistic
+	}
+
+	1233.8.8 = {
+		trait = education_martial_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+}

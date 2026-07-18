@@ -1,0 +1,540 @@
+﻿jarakmar_ertomax_1 = { # Dull Ertomax king Ertoharant
+	name = "Ertoharant"
+	dna = jarakmar_ertomax_1
+	religion = "ertomax"
+	culture = "jarakmar"
+	sexuality = heterosexual
+	father = jarakmar_ertomax_5
+	mother = jarakmar_ertomax_6
+	dynasty = dyn_jarakmar_1
+	trait = dull
+	trait = magic_good_2
+
+	martial = 3
+	diplomacy = 8
+	stewardship = 8
+	intrigue = 5
+	learning = 9
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_fp2_iberian_muslim_02
+		}
+	}
+
+	1205.6.11 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 1 }
+		}
+	}
+	1217.6.11 = {
+		trait = compassionate
+		trait = trusting
+		trait = content
+	}
+	1221.6.11 = {
+		trait = education_learning_2
+	}
+	1233.9.14 = {
+		add_spouse = jarakmar_ertomax_2
+	}
+	1248.7.6 = {
+		trait = scholar
+	}
+}
+
+jarakmar_ertomax_2 = { # Cruel Ertomax wife
+	name = "Aryenis"
+	female = yes
+	religion = "ertomax"
+	culture = "jarakmar"
+	sexuality = heterosexual
+	trait = intellect_good_1
+	trait = magic_good_1
+	trait = torturer
+
+	martial = 8
+	diplomacy = 5
+	stewardship = 6
+	intrigue = 12
+	learning = 6
+
+	1213.4.16 = {
+		birth = yes
+	}
+	1225.4.16 = {
+		trait = sadistic
+		trait = arrogant
+		trait = ambitious
+	}
+	1229.4.16 = {
+		trait = education_intrigue_3
+	}
+}
+
+jarakmar_ertomax_3 = { # Weak Ertomax son
+	name = "Ertozar"
+	father = jarakmar_ertomax_1
+	mother = jarakmar_ertomax_2
+	dynasty = dyn_jarakmar_1
+	religion = "ertomax"
+	culture = "jarakmar"
+	sexuality = heterosexual
+	trait = lunatic_1
+	trait = magic_good_1
+	trait = physique_bad_1
+
+	martial = 3
+	diplomacy = 4
+	stewardship = 5
+	intrigue = 2
+	learning = 5
+
+	1234.9.22 = {
+		birth = yes
+	}
+	1246.9.22 = {
+		trait = paranoid
+		trait = arrogant
+		trait = craven
+	}
+	1250.9.22 = {
+		trait = education_stewardship_1
+	}
+}
+
+jarakmar_ertomax_4 = { # Powerful Ertomax daughter
+	name = "Ertosagra"
+	dynasty = dyn_jarakmar_1
+	religion = "ertomax"
+	culture = "jarakmar"
+	sexuality = bisexual
+	female = yes
+
+	father = jarakmar_ertomax_1
+	mother = jarakmar_ertomax_2
+
+	martial = 9
+	diplomacy = 7
+	stewardship = 5
+	intrigue = 7
+	learning = 4
+
+	1236.3.11 = {
+		birth = yes
+		trait = magic_good_4
+		trait = intellect_good_2
+	}
+
+	1248.3.11 = {
+		trait = cynical
+		trait = ambitious
+		trait = honest
+	}
+
+	1252.3.11 = {
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+jarakmar_ertomax_5 = { # King Ertotevram, 1200 Ertomax leader
+	name = "Ertotevram"
+	religion = "ertomax"
+	culture = "jarakmar"
+	sexuality = bisexual
+	dynasty = dyn_jarakmar_1
+	trait = shrewd
+	trait = magic_good_3
+
+	father = jarakmar_ertomax_12
+
+	martial = 4
+	diplomacy = 7
+	stewardship = 9
+	intrigue = 6
+	learning = 5
+
+	1174.5.19 = {
+		birth = yes
+	}
+	1186.5.19 = {
+		trait = honest
+		trait = just
+		trait = stubborn
+	}
+	1190.5.19 = {
+		trait = education_stewardship_3
+	}
+	1199.4.15 = {
+		add_spouse = jarakmar_ertomax_6
+	}
+	1214.11.18 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+
+jarakmar_ertomax_6 = { # Queen Glaphyra, 1200 Ertomax wife
+	name = "Glaphyra"
+	religion = "ertomax"
+	culture = "jarakmar"
+	sexuality = heterosexual
+	female = yes
+	trait = physique_good_1
+
+	martial = 4
+	diplomacy = 7
+	stewardship = 5
+	intrigue = 6
+	learning = 5
+
+	1176.7.2 = {
+		birth = yes
+	}
+	1188.7.2 = {
+		trait = arrogant
+		trait = compassionate
+		trait = just
+	}
+	1192.7.2 = {
+		trait = education_diplomacy_2
+	}
+	1214.11.18 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+
+jarakmar_ertomax_7 = { # King Ertovan, 1217 Ertomax leader
+	name = "Ertovan"
+	religion = "ertomax"
+	culture = "jarakmar"
+	sexuality = heterosexual
+	father = jarakmar_ertomax_5
+	mother = jarakmar_ertomax_6
+	dynasty = dyn_jarakmar_1
+	trait = physique_good_1
+	trait = magic_good_3
+
+	martial = 8
+	diplomacy = 4
+	stewardship = 5
+	intrigue = 5
+	learning = 3
+
+	1201.4.11 = {
+		birth = yes
+	}
+	1213.4.11 = {
+		trait = vengeful
+		trait = brave
+		trait = greedy
+	}
+	1217.4.11 = {
+		trait = education_martial_4
+	}
+	1219.11.4 = {
+		trait = scarred
+		trait = depressed_1
+	}
+	1223.6.1 = {
+		add_spouse = jarakmar_ertomax_10
+	}
+	1231.5.22 = {
+		death = {
+			death_reason = death_murder_known
+			killer = jarakmar_ertomax_9
+		}
+	}
+}
+
+jarakmar_ertomax_8 = { # Princess Ertovonia, sister of dull and 1217 leaders
+	name = "Ertovonia"
+	religion = "sarmuyr"
+	culture = "jarakmar"
+	sexuality = homosexual
+	female = yes
+	father = jarakmar_ertomax_5
+	mother = jarakmar_ertomax_6
+	dynasty = dyn_jarakmar_1
+	trait = physique_good_1
+	trait = magic_good_2
+
+	martial = 4
+	diplomacy = 9
+	stewardship = 6
+	intrigue = 6
+	learning = 5
+
+	1203.1.10 = {
+		birth = yes
+	}
+	1215.1.10 = {
+		trait = fickle
+		trait = ambitious
+		trait = calm
+	}
+	1219.1.10 = {
+		trait = education_diplomacy_3
+	}
+}
+
+jarakmar_ertomax_9 = { # Prince Ertoffi, brother of dull and 1217 leaders
+	name = "Ertoffi"
+	religion = "ertomax"
+	culture = "jarakmar"
+	sexuality = heterosexual
+	father = jarakmar_ertomax_5
+	mother = jarakmar_ertomax_6
+	dynasty = dyn_jarakmar_1
+	trait = lunatic_1
+	trait = magic_good_1
+
+	martial = 2
+	diplomacy = 4
+	stewardship = 3
+	intrigue = 8
+	learning = 6
+
+	1209.12.3 = {
+		birth = yes
+	}
+	1221.12.3 = {
+		trait = paranoid
+		trait = callous
+		trait = gluttonous
+	}
+	1225.12.3 = {
+		trait = education_intrigue_1
+	}
+	1231.5.22 = {
+		trait = kinslayer_3
+		trait = murderer
+	}
+	1243.5.4 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+jarakmar_ertomax_10 = { # Queen Atossa, wife of 1217 ertomax leader
+	name = "Atossa"
+	religion = "ertomax"
+	culture = "jarakmar"
+	sexuality = heterosexual
+	female = yes
+
+	martial = 3
+	diplomacy = 7
+	stewardship = 5
+	intrigue = 3
+	learning = 6
+
+	1204.2.19 = {
+		birth = yes
+	}
+	1216.2.19 = {
+		trait = patient
+		trait = trusting
+		trait = lazy
+	}
+	1220.2.19 = {
+		trait = education_diplomacy_2
+	}
+	1231.5.22 = {
+		death = {
+			death_reason = death_murder_known
+			killer = jarakmar_ertomax_9
+		}
+	}
+}
+
+jarakmar_ertomax_11 = { # Prince Ertoshan, son of 1217 ertomax leader
+	name = "Ertoshan"
+	religion = "ertomax"
+	culture = "jarakmar"
+	sexuality = asexual
+	father = jarakmar_ertomax_7
+	mother = jarakmar_ertomax_10
+	dynasty = dyn_jarakmar_1
+
+	martial = 2
+	diplomacy = 5
+	stewardship = 6
+	intrigue = 4
+	learning = 7
+
+	1225.6.11 = {
+		birth = yes
+	}
+	1231.5.22 = {
+		death = {
+			death_reason = death_murder_known
+			killer = jarakmar_ertomax_9
+		}
+	}
+}
+
+jarakmar_ertomax_12 = { # King Ertotevram's father
+	name = "Ertovan"
+	religion = ertomax
+	culture = jarakmar
+	dynasty = dyn_jarakmar_1
+	disallow_random_traits = yes
+
+	martial = 7
+	diplomacy = 8
+	intrigue = 8
+	stewardship = 2
+	learning = 8
+	prowess = 6
+
+	1135.10.10 = {
+		birth = yes
+		trait = magic_good_3
+		trait = physique_good_2
+	}
+
+	1147.1.1 = {
+		trait = paranoid
+		trait = ambitious
+		trait = greedy
+	}
+
+	1151.10.10 = {
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+jarakmar_ertomax_13 = { # Ertozar 'the Smiling Axe', Ja'Rakmar Merc that led his own Legion
+	name = "Ertozar"
+	religion = ertomax
+	culture = jarakmar
+	dynasty = dyn_jarakmar_1
+	disallow_random_traits = yes
+
+	father = jarakmar_ertomax_12
+
+	martial = 5
+	diplomacy = 5
+	intrigue = 4
+	stewardship = 1
+	learning = 3
+	prowess = 8
+
+	1162.1.13 = {
+		birth = yes
+		trait = physique_good_3
+		trait = bastard
+	}
+
+	1174.1.1 = {
+		trait = gregarious
+		trait = wrathful
+		trait = impatient
+	}
+
+	1178.1.13 = {
+		trait = education_martial_2
+		trait = gh_legon
+		trait = adventurer
+		trait = gh_historical_blademaster_2
+	}
+
+	1193.9.21 ={
+		give_nickname = "nick_smiling_axe"
+	}
+
+	1200.2.27 = {
+		death = {
+			death_reason = death_battle
+			killer = kuridorig_iek_otached_1 # Jajak Otroka, in the final battle at the Aironoikaan
+		}
+	}
+}
+
+jarakmar_ertomax_14 = {
+	name = "Oiobazos"
+	religion = aruvasue
+	culture = jarakmar
+
+	1232.9.1 = {
+		birth = yes
+	}
+}
+
+jarakmar_ertomax_15 = {
+	name = "Martiya"
+	religion = aruvasue
+	culture = jarakmar
+
+	1238.7.20 = {
+		birth = yes
+	}
+}
+
+jarakmar_ertomax_16 = { # ERTOMAX, THE MAN, THE LEGEND
+	name = "Ertomax"
+	religion = aruvasue
+	culture = jarakmar
+	dynasty = dyn_jarakmar_1
+	disallow_random_traits = yes
+
+	martial = 14
+	diplomacy = 10
+	intrigue = 5
+	stewardship = 6
+	learning = 7
+	prowess = 14
+
+	148.3.27 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	160.3.27 = {
+		trait = gregarious
+		trait = ambitious
+		trait = cynical
+	}
+
+	164.3.27 = {
+		trait = education_diplomacy_5
+		trait = shrewd
+		trait = gh_historical_reveler_3
+		trait = diplomat
+		trait = august
+		trait = rough_terrain_expert
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	199.11.2 = {
+		death = { death_reason = death_assassination }
+	}
+}

@@ -1,0 +1,101 @@
+c_kndhi = {
+	1250.1.1 = {
+		change_development_level = 2
+	}
+	1251.1.1 = {
+		holder = guillater_seaborne_exalted_1
+		government = pirate_government
+	}
+}
+c_scissor = {
+	1251.1.1 = {
+		holder = guillater_aversarian_cleansed_ones_1
+	}
+}
+#b_slicingthing = {
+#	1249.2.4 = {
+#		holder = guillater_aversarian_cleansed_ones_2
+#	}
+#}
+c_vryski = {
+	1251.1.1 = {
+		holder = guillater_aversarian_black_fraternity_1
+	}
+}
+c_karajko = {
+	1251.1.1 = {
+		holder = symvolix_aversarinas_aagiokrata_1
+	}
+}
+c_gamerkillers = {
+	1251.1.1 = {
+		holder = aersodiaxian_islander_militant_cliques_1
+	}
+}
+c_gretchka = {
+	1251.1.1 = {
+		holder = aersodiaxian_islander_militant_cliques_2
+	}
+}
+# c_succisle = {
+# 	1186.1.1 = {
+# 		holder = westernimperial_aeschraes_aagiokrata_1
+# 	}
+# 	1251.1.1 = {
+# 		holder = aersodiaxian_islander_drakanorix_aagiokrata_2
+# 	}
+# }
+c_teddybear = {
+	1251.1.1 = {
+		holder = guillater_aversarian_black_fraternity_2
+	}
+}
+c_biggestisle = {
+	1251.1.1 = {
+		holder = guillater_karoxos_cult_1
+	}
+}
+c_deondel = {
+	1251.1.1 = {
+		holder = guillater_hero_religion_2
+	}
+}
+c_lazynaminginco = {
+	1251.1.1 = {
+		holder = guillater_hero_religion_3
+	}
+}
+c_capstoneia = {
+	1251.1.1 = {
+		holder = guillater_aversarian_calystoanistism_2
+	}
+}
+c_richisle = {
+	1251.1.1 = {
+		holder = guillater_aversarian_the_dragon_cult_1
+	}
+}
+c_thewesternone = {
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1251.1.1 = {
+		holder = abdexorn_abdexorn_aagiokrata_2
+	}
+}
+c_theeasternone = {
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1251.1.1 = {
+		holder = abdexorn_abdexorn_aagiokrata_3
+	}
+}
+c_rolnat_y_thyricos = {
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1251.1.1 = {
+		holder = abdexorn_abdexorn_aagiokrata_4
+	}
+}

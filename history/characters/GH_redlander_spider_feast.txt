@@ -1,0 +1,79 @@
+﻿redlander_spider_feast_1 = {
+	name = "Valarox"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1204.2.28 = {
+		birth = yes
+		trait = magic_good_5
+	}
+}
+
+redlander_spider_feast_2 = {
+	name = "Hathakar"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1026.6.9 = {
+		birth = yes
+		trait = magic_good_7
+		trait = gh_blackspawn_3
+	}
+	1042.6.9 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:absolution_of_the_void }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+}
+
+redlander_spider_feast_3 = {
+	name = "Shaxarn"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1215.7.1 = {
+		birth = yes
+		trait = magic_good_7
+	}
+}
+
+redlander_spider_feast_4 = {
+	name = "Salvorn"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1020.10.27 = {
+		birth = yes
+		trait = magic_good_9
+		trait = gh_blackspawn_2
+	}
+	1036.10.27 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:absolution_of_the_void }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+}
+
+redlander_spider_feast_5 = {
+	name = "Carm"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1231.2.28 = {
+		birth = yes
+		trait = magic_good_4
+	}
+}
+
+redlander_spider_feast_6 = {
+	name = "Zaron"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1228.3.2 = {
+		birth = yes
+		trait = magic_good_4
+	}
+}

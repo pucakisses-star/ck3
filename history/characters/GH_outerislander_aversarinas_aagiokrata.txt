@@ -1,0 +1,16 @@
+﻿outerislander_aversarinas_aagiokrata_1 = { # GH: was viesuados_8
+	name = "Haris"
+	culture = "outerislander"
+	religion = "aversarinas_aagiokrata"
+
+	1190.1.5 = {
+		birth = yes
+	}
+
+	1232.8.6 = {
+		death = {
+			death_reason = death_battle
+			killer = easternislander_aversarinas_aagiokrata_8
+		}
+	}
+}

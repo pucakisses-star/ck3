@@ -1,0 +1,43 @@
+﻿ilahanai_daramarjaratan_1 = { # Lich ppl
+	name = "Shahu"
+	dna = ilahanai_daramarjaratan_1
+	religion = "daramarjaratan"
+	culture = "ilahanai"
+	diplomacy = 8
+	intrigue = 6
+	stewardship = 3
+	learning = 8
+	martial = 10
+	prowess = 9
+	dynasty = dyn_ilahanai_1
+	trait = brave
+	trait = arrogant
+	trait = lazy
+	trait = strategist
+	trait = faith_warrior
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = no_hair
+			custom_beards = male_beard_custom_06
+		}
+	}
+
+	1216.3.25 = {
+		birth = yes
+	}
+
+	1232.3.25 = {
+		trait = education_martial_4
+		trait = gh_historical_blademaster_2
+	}
+
+	1251.9.14 = {
+		effect = {
+			set_relation_rival = character:avihana_askevaryaa_1
+		}
+		effect = {
+			add_character_modifier = banner_of_the_champion_modifier
+		}
+	}
+}

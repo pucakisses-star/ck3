@@ -1,0 +1,77 @@
+d_beid_faluh = {
+	1212.6.26 = {
+		holder = voyagen_lifepath_75
+		liege = 0
+		government = republic_playable_government
+	} 
+	1230.1.1 = { change_development_level = 1 }
+	1235.10.5 = {
+		holder = voyagen_lifepath_49
+		government = republic_playable_government
+	
+	}
+}
+d_chalciana = {
+	1048.1.19 = {
+		holder = tasurmad_wardenism_70
+		liege = "k_four_rivers"
+		government = feudal_government
+	}
+	1074.7.23 = {
+		holder = tasurmad_wardenism_71
+		liege = "k_four_rivers"
+	}
+	1112.4.28 = {
+		holder = tasurmad_wardenism_73
+		liege = "k_four_rivers"
+	}
+	1123.3.27 = {
+		holder = tasurmad_wardenism_74
+		liege = "k_four_rivers"
+	}
+	1165.5.18 = {
+		holder = tasurmad_wardenism_76
+		liege = "k_four_rivers"
+	}
+	1212.6.26 = {
+		holder = voyagen_lifepath_75
+		liege = 0
+		government = republic_playable_government
+	}
+	1235.10.5 = {
+		holder = voyagen_lifepath_49
+		liege = 0
+		government = republic_playable_government
+	}
+	1230.1.1 = { change_development_level = 2 }
+}
+#d_himharuyye = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_36
+#		liege = "k_four_rivers"
+#	}
+#	1230.1.1 = { change_development_level = 2 }
+#	1294.1.1 = {
+#		holder = tasurmad_hulawite_2
+#	}
+#}
+d_al_hadded = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_38
+		liege = "k_four_rivers"
+	}
+	1230.1.1 = { change_development_level = 2 }
+	1281.11.12 = {
+		holder = hudi_ritualist_1
+	}
+}
+#d_kiyeh = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_60
+#		liege = "k_four_rivers"
+#	}
+#	1230.1.1 = { change_development_level = 2 }
+#	1295.1.1 = {
+#		holder = tasurmad_wardenism_92
+#	}
+#}

@@ -1,0 +1,8 @@
+﻿erkalgani_zaragett_1 = {
+	name = "Armin"
+	culture = "erkalgani"
+	religion = "zaragett"
+	1207.6.27 = {
+		birth = yes
+	}
+}

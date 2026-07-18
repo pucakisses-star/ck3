@@ -1,0 +1,599 @@
+1181 = {
+	holding = none
+}
+
+1182 = {
+	holding = castle_holding
+}
+
+1183 = {
+	holding = church_holding
+}
+
+
+1185 = {
+	culture = adnanari
+	religion = harthahi
+	holding = castle_holding
+}
+
+1187 = {
+	holding = none
+}
+
+
+1188 = {
+	holding = city_holding
+}
+
+1189 = {
+	holding = city_holding
+}
+
+1190 = {
+	holding = none
+}
+
+1191 = {
+	culture = makryenis
+	religion = forgotten
+	holding = castle_holding
+}
+
+1192 = {
+	holding = city_holding
+}
+
+1195 = {
+	culture = makryenis
+	religion = forgotten
+	holding = castle_holding
+}
+
+1196 = {
+	culture = makryenis
+	religion = forgotten
+	holding = none
+}
+
+1197 = {
+	holding = none
+}
+
+1198 = {
+	culture = makryenis
+	religion = forgotten
+	holding = castle_holding
+}
+
+1202 = {
+	holding = none
+}
+
+1203 = {
+	holding = city_holding
+}
+
+1209 = {
+	holding = none
+}
+
+1212 = {
+	holding = church_holding
+}
+
+1216 = {
+	holding = none
+}
+
+1217 = {
+	culture = makryenis
+	religion = forgotten
+	holding = castle_holding
+}
+
+1219 = {
+	holding = church_holding
+}
+
+1222 = {
+	holding = church_holding
+}
+
+1224 = {
+	holding = castle_holding
+	culture = makryenis
+	religion = forgotten
+}
+
+1227 = {
+	holding = castle_holding
+}
+
+1228 = {
+	holding = none
+}
+
+1229 = {
+	holding = none
+}
+
+1230 = {
+	holding = church_holding
+}
+
+1231 = {
+	holding = none
+}
+
+1234 = {
+	holding = none
+}
+
+1239 = {
+	holding = church_holding
+}
+
+1240 = {
+	culture = makryenis
+	religion = forgotten
+	holding = castle_holding
+}
+
+1242 = {
+	culture = makryenis
+	religion = forgotten
+	holding = castle_holding
+}
+
+1244 = {
+	holding = city_holding
+}
+
+1245 = {
+	holding = church_holding
+}
+
+1246 = {
+	holding = none
+}
+
+1247 = {
+	culture = erimatos
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+1248 = {
+	holding = church_holding
+}
+
+1250 = {
+	holding = none
+}
+
+1252 = {
+	holding = city_holding
+}
+
+
+1254 = {
+	culture = utyalid
+	religion = harthahi
+	holding = castle_holding
+}
+
+
+1255 = {
+	holding = none
+}
+
+1256 = {
+	holding = none
+}
+
+
+1258 = {
+	culture = utyalid
+	religion = eabuyad_al_duhaad_khubir
+	holding = tribal_holding
+}
+
+1259 = {
+	holding = church_holding
+}
+
+
+1261 = {
+	culture = madugi
+	religion = mafida
+	holding = castle_holding
+}
+
+1263 = {
+	culture = dawasid
+	religion = aarayi
+	holding = castle_holding
+}
+
+
+1264 = {
+	holding = none
+}
+
+
+1265 = {
+	holding = none
+}
+
+
+1267 = {
+	holding = city_holding
+}
+
+
+1269 = {
+	culture = dawasid
+	religion = aarayi
+	holding = castle_holding
+}
+
+1272 = {
+	holding = church_holding
+}
+
+
+
+1273 = {
+	holding = none
+}
+
+1274 = {
+	culture = madikirib
+	religion = manats
+	holding = castle_holding
+	1210.1.1 = {
+		culture = dawasid
+		religion = aarayi
+	}
+}
+
+1277 = {
+	holding = none
+}
+
+
+
+1278 = {
+	culture = dawasid
+	religion = ritualist
+	holding = castle_holding
+}
+
+1280 = {
+	holding = church_holding
+}
+
+1282 = {
+	holding = city_holding
+}
+
+
+1285 = {
+	holding = none
+}
+
+
+1287 = {
+	culture = madikirib
+	religion = manats
+	holding = castle_holding
+	1210.1.1 = {
+		culture = dawasid
+		religion = harthahi
+	}
+}
+
+
+1289 = {
+	culture = madikirib
+	religion = manats
+	holding = castle_holding
+}
+
+1290 = {
+	culture = madikirib
+	religion = manats
+	holding = castle_holding
+}
+
+
+1293 = {
+	holding = church_holding
+}
+
+
+1295 = {
+	holding = none
+}
+
+
+1297 = {
+	culture = dawasid
+	religion = aarayi
+	holding = castle_holding
+}
+
+
+1299 = {
+	holding = none
+}
+
+
+1301 = {
+	culture = madikirib
+	religion = manats
+	holding = castle_holding
+}
+
+
+1302 = {
+	holding = none
+}
+
+
+1364 = {
+	holding = none
+}
+
+
+1306 = {
+	culture = madikirib
+	religion = manats
+	holding = castle_holding
+}
+
+1308 = {
+	culture = madikirib
+	religion = manats
+	holding = castle_holding
+}
+
+1309 = {
+	holding = none
+}
+
+
+1312 = {
+	holding = city_holding
+}
+
+
+2750 = {
+	culture = makryenis
+	religion = forgotten
+	holding = castle_holding
+}
+
+2751 = {
+	holding = church_holding
+}
+
+3376 = {
+	culture = makryenis
+	religion = forgotten
+	holding = castle_holding
+}
+
+
+3424 = {
+	holding = none
+}
+
+3519 = {
+	culture = madikirib
+	religion = manats
+	holding = castle_holding
+}
+
+3985 = {
+	culture = makryenis
+	religion = forgotten
+	holding = castle_holding
+}
+
+4088 = {
+	holding = city_holding
+}
+
+4363 = {
+	culture = makryenis
+	religion = forgotten
+	holding = castle_holding
+}
+
+
+4968 = {
+	holding = city_holding
+}
+
+4969 = {
+	culture = makryenis
+	religion = forgotten
+	holding = castle_holding
+
+	1200.1.1 = {
+		buildings = {
+			castle_02
+			regimental_grounds_01
+		}
+		special_building = 01_the_eye
+	}
+}
+
+5268 = {
+	culture = adnanari
+	religion = akhawwat
+	holding = castle_holding
+}
+
+5279 = {
+	holding = none
+}
+
+5444 = {
+	holding = none
+}
+
+5458 = {
+	culture = adnanari
+	religion = eabuyad_ilah_al_atilaam
+	holding = castle_holding	
+}
+
+5583 = {
+	culture = makryenis
+	religion = forgotten
+	holding = castle_holding
+}
+
+5628 = {
+
+	holding = none
+}
+
+
+5698 = {
+	holding = none
+}
+
+5711 = {
+	holding = city_holding
+}
+
+5846 = {
+	holding = none
+}
+
+5847 = {
+	holding = none
+}
+
+5854 = {
+	culture = makryenis
+	religion = forgotten
+	holding = castle_holding
+}
+
+5856 = {
+	holding = city_holding
+}
+
+5857 = {
+	culture = makryenis
+	religion = forgotten
+	holding = castle_holding
+}
+
+5858 = {
+	culture = makryenis
+	religion = forgotten
+	holding = castle_holding
+}
+
+
+5978 = {
+	holding = city_holding
+}
+
+6032 = {
+	holding = none
+}
+
+
+
+
+
+6391 = {
+	holding = none
+}
+
+6426 = {
+	holding = city_holding
+}
+
+6434 = {
+	culture = dawasid
+	religion = wardenism
+	holding = castle_holding
+}
+
+
+6621 = {
+	holding = none
+}
+
+
+
+6630 = {
+	holding = tribal_holding
+	1240.1.1 = {
+		special_building = 01_bonesoftheworldeater
+	}
+}
+
+6648 = {
+	culture = makryenis
+	religion = forgotten
+	holding = castle_holding
+}
+
+6692 = {
+	culture = utyalid
+	religion = aarayi
+	holding = castle_holding
+}
+
+
+
+8046 = {
+	holding = church_holding
+}
+
+
+8590 = {
+	holding = none
+}
+
+
+8617 = {
+	holding = none
+}
+
+8637 = {
+	holding = none
+}
+
+
+
+8686 = {
+	holding = none
+}
+
+8697 = {
+	holding = city_holding
+}
+
+8818 = {
+	culture = utyalid
+	religion = wardenism
+	holding = tribal_holding
+}
+
+
+9172 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}

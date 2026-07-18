@@ -1,0 +1,1005 @@
+﻿#NATHANALMIC
+nathanalmic_nattanan_1 = { #Dad of Nath 3 and 4 
+	name = "Naing_Min"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	dynasty = dyn_mingala
+	learning = 12
+	trait = education_learning_4
+	trait = lifestyle_mystic
+	trait = temperate
+	trait = patient
+	trait = compassionate
+	trait = theologian
+	trait = magic_good_4
+	1175.5.15 = {
+		birth = yes
+	}
+	1198.3.20 = {
+		add_spouse = nathanalmic_nattanan_2
+	}
+	1249.5.5 = {
+		death = {
+			death_reason = death_duel
+			killer = korlenalmic_korlacan_1 # Kyaw Zaw burns Naing Min to death
+		}
+	}
+} 
+
+nathanalmic_nattanan_2 = { # Mom of Nath 3 and 4; dies in childbirth with Nath 4? Nath 3 
+	name = "Zin_Mar"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	dynasty = dyn_mingala
+	female = yes
+	trait = education_stewardship_3
+	trait = patient
+	trait = compassionate
+	trait = just
+	trait = administrator
+	trait = magic_good_5
+
+	1178.8.3 = {
+		birth = yes
+	}
+
+	1198.3.20 = {
+		add_spouse = nathanalmic_nattanan_1
+	}
+
+	1205.6.12 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+} 
+
+nathanalmic_nattanan_3 = { 
+	name = "Yaza_Zin"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	dynasty = dyn_mingala
+	disallow_random_traits = yes
+	learning = 5
+	stewardship = 6
+	martial = 5
+	intrigue = 7
+	diplomacy = 9
+	father = nathanalmic_nattanan_1
+	mother = nathanalmic_nattanan_2
+	trait = education_learning_4
+	trait = generous
+	trait = stubborn
+	trait = patient
+	trait = lifestyle_hunter
+	trait = intellect_good_2
+	trait = magic_good_7
+	trait = gh_gedeora_child #born 1 year after Frodbrokna--the ambient magic basically supercharged his birth
+
+	1201.10.1 = {
+		birth = yes
+	}
+
+	1217.10.1 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			set_base_arcana = { AMOUNT = 10 }
+			learn_global_spell_effect = { SPELL_IDENTIFIER = spawn_wild_leshens_armies} 
+			learn_global_spell_effect = { SPELL_IDENTIFIER = spawn_nature_elementals_army }
+			add_character_flag = dont_generate_family
+		}
+	}
+
+	1249.5.5 = {
+		set_relation_rival = character:korlenalmic_korlacan_1 # Yaza Zin becomes rivals with Kyaw Zaw when the latter kills Yaza's father
+	}
+
+	1252.1.1 = { # Yaza challenges and defeats Kyaw in a duel to the death, making him rivals with Aung and Htet
+		set_relation_rival = character:korlenalmic_korlacan_3
+		set_relation_rival = character:korlenalmic_korlacan_4
+		effect = {
+			spawn_army = {
+				name = yazas_host
+				levies = 1000
+				men_at_arms = {
+					type = leshens
+					stacks = 2
+				}
+			location = province:8406
+			origin = province:8406
+			inheritable = no
+			}
+			
+		}
+	}
+} 
+nathanalmic_nattanan_4 = {
+	name = "Thet_Htun"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	dynasty = dyn_mingala
+	diplomacy = 8
+	father = nathanalmic_nattanan_1
+	mother = nathanalmic_nattanan_2
+	trait = education_diplomacy_3
+	disallow_random_traits = yes
+	trait = gregarious
+	trait = honest
+	trait = temperate
+	trait = diplomat
+	trait = magic_good_5
+
+	1205.6.12 = {
+		birth = yes
+	}
+
+	1221.6.12 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+			learn_global_spell_effect = { SPELL_IDENTIFIER = spawn_wild_leshens_armies} 
+			learn_global_spell_effect = { SPELL_IDENTIFIER = spawn_nature_elementals_army }
+		}
+	}
+	1234.7.12 = {
+		religion = gotharnalmic
+	}
+}
+
+nathanalmic_nattanan_29 = { #dad of Jerniem and Tarfal + Korlacu
+	name = "Thet_Naung"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	dynasty = dyn_einduya
+	trait = magic_good_15
+	
+
+	2.1.3 = {
+		birth = yes
+	}
+
+	18.1.3 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 11 }
+			set_base_arcana = { AMOUNT = 10 }
+		}
+	}
+
+	18.1.3 = {
+		add_spouse = nathanalmic_nattanan_30 
+	}
+
+	60.1.1 = { 
+		death = {
+			death_reason = death_disappearance
+		}
+	}
+}
+
+nathanalmic_nattanan_30 = { #mom of Twin Gods + Korlacu
+	name = "Khin_Aung"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	dynasty = dyn_einduya
+	female = yes
+	trait = magic_good_15
+
+	2.1.1 = {
+		birth = yes
+	}
+
+	18.1.3 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 11 }
+			set_base_arcana = { AMOUNT = 10 }
+		}
+	}
+
+	18.1.3 = {
+		add_spouse = nathanalmic_nattanan_29
+	}
+
+	60.1.1 = { 
+		death = {
+			death_reason = death_disappearance
+		}
+	}
+}
+
+
+nathanalmic_nattanan_5 = { #JERNIEM
+	name = "Jerniem"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	diplomacy = 15
+	martial = 30
+	dynasty = dyn_einduya
+	trait = magic_good_12
+	trait = kinslayer_1
+	father = nathanalmic_nattanan_29
+	mother = nathanalmic_nattanan_30
+	trait = intellect_good_3
+	trait = physique_good_3
+	trait = twin
+
+	18.11.1 = {
+		trait = immortal
+		birth = yes
+
+	}
+
+	34.1.1 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 11 }
+			set_base_arcana = { AMOUNT = 10 }
+		}
+	}
+
+	330.1.1 = { # 
+		death = {
+			death_reason = death_disappearance
+		}
+	}
+}
+
+
+nathanalmic_nattanan_6 = { # TARFAL
+	name = "Tarfal"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	learning = 30
+	stewardship = 10
+	dynasty = dyn_einduya
+	trait = magic_good_12
+	father = nathanalmic_nattanan_29
+	mother = nathanalmic_nattanan_30
+	trait = intellect_good_3
+	trait = physique_good_3
+	trait = twin
+	18.1.1 = {
+		trait = immortal
+		birth = yes
+	}
+
+	34.1.1 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 11 }
+			set_base_arcana = { AMOUNT = 10 }
+		}
+	}
+
+	330.1.1 = { 
+		death = {
+			death_reason = death_disappearance
+		}
+	}
+}
+
+nathanalmic_nattanan_7 = { #First Nattanan king; gains power over 2/3 of the Nattanan kingdoms but dies before he can get the third
+	name = "Kyaw_Soe"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	learning = 10
+	martial = 25
+	trait = magic_good_5
+
+	473.1.1 = {
+		birth = yes
+	}
+	489.1.1 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 9 }
+			set_base_arcana = { AMOUNT = 14 }
+		}
+	}
+
+
+
+	#500.1.1 = { #Kyaw Soe conquers West Nattana 
+	#	
+	#}
+
+	520.1.1 = {
+		give_nickname = nick_the_first_king
+	}
+
+	520.1.10 = { #subject to change 
+		death = {
+			death_reason = death_assassination
+		}
+	}
+
+}
+
+
+nathanalmic_nattanan_8 = { # Warlord 1
+	name = "Aung_Htoo"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	learning = 6
+	martial = 25
+	trait = magic_good_4
+	trait = just
+
+	515.1.1 = {
+		birth = yes
+	}
+
+	535.1.1 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 9 }
+			set_base_arcana = { AMOUNT = 14 }
+		}
+	}
+
+	550.2.14 = {
+		give_nickname = nick_the_just
+	}
+
+	575.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+nathanalmic_nattanan_9 = { # Warlord 2
+	name = "Thein_Zaw"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	learning = 7
+	martial = 15
+	trait = magic_good_7
+
+	615.5.17 = {
+		birth = yes
+	}
+
+	635.5.17 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			set_base_arcana = { AMOUNT = 7 }
+		}
+	}
+
+	650.8.3 = {
+		give_nickname = nick_the_miracle_worker
+	}
+
+	670.5.17 = { 
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+nathanalmic_nattanan_10 = { # Warlord 3
+	name = "Soe_Myint"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	learning = 6
+	intrigue = 8
+	martial = 20
+	trait = magic_good_4
+
+	715.10.8 = {
+		birth = yes
+	}
+
+	735.10.8 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 11 }
+			set_base_arcana = { AMOUNT = 8 }
+		}
+	}
+
+	750.12.19 = {
+		give_nickname = nick_the_sly
+	}
+
+	770.5.7 = { 
+		death = {
+			death_reason = death_decapitated
+		}
+	}
+}
+
+nathanalmic_nattanan_11 = { # Warlord 4
+	name = "Htun_Aung"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	learning = 6
+	martial = 30
+	trait = magic_good_5
+
+	815.3.22 = {
+		birth = yes
+	}
+
+	835.3.22 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			set_base_arcana = { AMOUNT = 6 }
+		}
+	}
+
+	850.5.7 = {
+		give_nickname = nick_the_thunderbolt
+	}
+
+	870.10.22 = {
+		death = {
+			death_reason = death_assassinated_by_soldiers
+		}
+	}
+}
+
+nathanalmic_nattanan_12 = { # Warlord 5
+	name = "Kyaw_Zaw"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	learning = 12
+	trait = magic_good_3
+
+	915.7.14 = {
+		birth = yes
+	}
+
+	935.7.14 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 9 }
+			set_base_arcana = { AMOUNT = 12 }
+		}
+	}
+
+	950.10.22 = {
+		give_nickname = nick_the_scholar
+	}
+
+	970.3.9 = { 
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+nathanalmic_nattanan_38 = { #Emergence of the High Sepattan following the Sundering of Thura Bawadi
+	name = "Khin_Thanda"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	martial = 13
+	learning = 10
+	trait = magic_good_6
+	410.11.30 = {
+		birth = yes
+	}
+
+	426.11.30 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			set_base_arcana = { AMOUNT = 7 }
+		}
+	}
+ 
+	534.3.9 = { #Htun Myint takes over
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+nathanalmic_nattanan_13 = { #Emergence of the High Sepattan following the  Fall of the First Nattanan King
+	name = "Htun_Myint"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	learning = 12
+	trait = magic_good_9
+	472.6.14 = {
+		birth = yes
+	}
+
+	488.6.14 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			set_base_arcana = { AMOUNT = 7 }
+		}
+	}
+
+	534.3.9 = {
+		give_nickname = nick_the_guru
+	}
+
+	588.7.18 = { #Hla Myint takes over
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+nathanalmic_nattanan_14 = { 
+	name = "Hla_Myint"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	
+	learning = 10
+	trait = magic_good_5
+
+	526.9.3 = {
+		birth = yes
+	}
+
+	542.9.3 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 11 }
+			set_base_arcana = { AMOUNT = 7 }
+		}
+	}
+
+	589.7.18 = {
+		give_nickname = nick_the_elder
+	}
+
+	642.9.16 = { #Soe Aung takes over
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+nathanalmic_nattanan_15 = { 
+	name = "Soe_Aung"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	learning = 12
+	trait = magic_good_7
+
+	580.12.25 = {
+		birth = yes
+	}
+
+	596.12.25 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			set_base_arcana = { AMOUNT = 6 }
+		}
+	}
+
+	643.9.16 = {
+		give_nickname = nick_the_luminous
+	}
+
+	694.4.2 = { #Kyaw Swar takes over
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+nathanalmic_nattanan_16 = { 
+	name = "Kyaw_Swar"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	learning = 11
+	trait = magic_good_6
+	trait = poet
+
+	632.7.8 = {
+		birth = yes
+	}
+
+	648.7.8 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 9 }
+			set_base_arcana = { AMOUNT = 5 }
+		}
+	}
+
+	695.4.2 = {
+		give_nickname = nick_the_bard
+	}
+
+	746.11.20 = { #Aung Naing takes over
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+nathanalmic_nattanan_17 = { 
+	name = "Aung_Naing"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	
+	learning = 6
+	trait = magic_good_4
+	trait = brave
+
+	684.5.19 = {
+		birth = yes
+	}
+
+	700.5.19 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 11 }
+			set_base_arcana = { AMOUNT = 5 }
+		}
+	}
+
+	747.1.1 = {
+		give_nickname = nick_the_fearless
+	}
+
+	799.6.7 = { #Thet Naung takes over
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+
+
+nathanalmic_nattanan_18 = { 
+	name = "Thet_Naung"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	learning = 11
+	trait = magic_good_7
+
+	737.2.14 = {
+		birth = yes
+	}
+
+	753.2.14 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			set_base_arcana = { AMOUNT = 8 }
+			give_nickname = nick_the_anointed
+		}
+	}
+
+	851.8.14 = { #Thu Min takes over
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+nathanalmic_nattanan_19 = { 
+	name = "Thet_Min_Swar"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	learning = 5
+	trait = magic_good_6
+
+	789.5.30 = {
+		birth = yes
+	}
+
+	805.5.30 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 9 }
+			set_base_arcana = { AMOUNT = 5 }
+			give_nickname = nick_the_defiant
+		}
+	}
+
+	904.10.1 = { # Kyaw Min Thu takes over
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+nathanalmic_nattanan_20 = { 
+	name = "Kyaw_Min_Thu"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	learning = 15
+	trait = magic_good_7
+
+	842.8.17 = {
+		birth = yes
+	}
+
+	858.8.17 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			set_base_arcana = { AMOUNT = 6 }
+			give_nickname = nick_the_prophet
+		}
+	}
+
+	958.3.23 = { #Aung Hlaing takes over
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+nathanalmic_nattanan_21 = { 
+	name = "Aung_Hlaing"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	learning = 6
+	trait = magic_good_5
+	trait = calm
+
+	896.11.5 = {
+		birth = yes
+	}
+
+	912.11.5 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 11 }
+			set_base_arcana = { AMOUNT = 8 }
+			give_nickname = nick_the_tranquil
+		}
+	}
+
+	1011.7.9 = { #Zaw Lin takes over
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+nathanalmic_nattanan_22 = { 
+	name = "Zaw_Lin"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	learning = 12
+	trait = magic_good_7
+	trait = gh_riftsight_4
+
+	949.3.21 = {
+		birth = yes
+	}
+
+	965.3.21 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			set_base_arcana = { AMOUNT = 10 }
+			give_nickname = nick_the_seer
+		}
+	}
+
+	1065.12.15 = { #Htun Aung takes over
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+nathanalmic_nattanan_23 = { 
+	name = "Htun_Aung"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	learning = 6
+	diplomacy = 8
+	trait = gregarious
+	trait = magic_good_4
+
+	1003.9.8 = {
+		birth = yes
+	}
+
+	1019.9.8 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 9 }
+			set_base_arcana = { AMOUNT = 5 }
+			give_nickname = nick_the_silver_tongue
+		}
+	}
+
+	1119.5.30 = { #Maung Maung takes over
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+nathanalmic_nattanan_24 = { 
+	name = "U_Maung_Soe"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	learning = 7
+	trait = magic_good_5
+	trait = just
+
+	1057.2.14 = {
+		birth = yes
+	}
+
+	1073.2.14 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			set_base_arcana = { AMOUNT = 4 }
+			give_nickname = nick_the_righteous
+		}
+	}
+
+	1172.9.11 = { #Thura Min takes over
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+nathanalmic_nattanan_25 = {
+	name = "Thura_Min"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	disallow_random_traits = yes
+	learning = 6
+	trait = education_learning_3
+	trait = compassionate
+	trait = ambitious
+	trait = diligent
+	trait = scholar
+	trait = intellect_good_1
+	trait = magic_good_4
+
+	1165.6.30 = {
+		birth = yes
+	}
+
+	1171.6.30 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+			set_base_arcana = { AMOUNT = 6 }
+			give_nickname = nick_the_truthseeker
+		}
+	}
+
+	1217.10.1 = { # Yaza Zin takes over
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+nathanalmic_nattanan_26 = {
+	name = "Htet_Myat_Aung"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	
+	1210.7.7 = { birth = yes }
+	1252.1.1 = { 
+		death = { 
+			death_reason = death_battle 
+			killer = korlenalmic_korlacan_4
+		} 
+	}
+}
+
+nathanalmic_nattanan_27 = { #vassal
+	name = "Herti_Brakc"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	trait = magic_good_4
+	learning = 12
+
+	1230.1.6 = {
+		birth = yes
+	}
+	1246.1.6 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:path_of_the_twin_gods }
+			set_variable = { name = historical_magic_school_min_spells value = 2 }
+			set_base_arcana = { AMOUNT = 6 }
+		}
+	}
+}
+
+nathanalmic_nattanan_28 = { #vassal 
+	name = "Thiri_Zaw"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	
+	1225.4.6 = {
+		birth = yes
+	}
+}
+
+
+
+
+nathanalmic_nattanan_31 = {
+	name = "Zin_Mar"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	
+	1215.12.6 = {
+		birth = yes
+	}
+}
+
+
+nathanalmic_nattanan_32 = {
+	name = "Aung_Hlaing"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	#dynasty = dyn_ywathar
+	
+	1226.12.6 = {
+		birth = yes
+	}
+}
+
+nathanalmic_nattanan_33 = {
+	name = "Khin_Thanda"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	#dynasty = dyn_tun
+	
+	1233.9.6 = {
+		birth = yes
+	}
+}
+
+nathanalmic_nattanan_34 = {
+	name = "Khin_Myo"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	#dynasty = dyn_phyo
+	
+	1197.9.6 = {
+		birth = yes
+	}
+}
+
+nathanalmic_nattanan_35 = {
+	name = "Soe_Myint"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	#dynasty = dyn_santhar
+	
+	1187.10.2 = {
+		birth = yes
+	}
+}
+nathanalmic_nattanan_36 = {
+	name = "Ye_Myint"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	#dynasty = dyn_yatha
+	
+	1199.9.9 = {
+		birth = yes
+	}
+}
+
+nathanalmic_nattanan_37 = {
+	name = "Thandar_Aung"
+	religion = "nathanalmic"
+	culture = "nattanan"
+	#dynasty = dyn_sanlin
+	
+	1199.9.9 = {
+		birth = yes
+	}
+}

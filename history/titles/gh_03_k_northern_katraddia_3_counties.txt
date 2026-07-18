@@ -1,0 +1,15 @@
+c_northern_katraddia_26 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_northern_katraddia_38 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_northern_katraddia_37 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

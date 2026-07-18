@@ -1,0 +1,106 @@
+c_nigarashan = {
+	1169.11.5 = {
+		holder = lainar_vidvaookeyatra_20
+		liege = k_sheytara
+	}
+	1200.11.5 = {
+		holder = lainar_vidvaookeyatra_21 
+		liege = k_sheytara
+	}
+	1234.8.9 = {
+		holder = lainar_vidvaookeyatra_3 
+		liege = k_sheytara
+		change_development_level = 8
+	}
+}
+c_dujbwa = {
+	1100.2.8 = {
+		holder = sindaara_vidvaookeyatra_14
+	}
+	1127.11.5 = {
+		holder = sindaara_vidvaookeyatra_13
+	}
+	1166.11.5 = {
+		holder = sindaara_vidvaookeyatra_10
+	}
+	1200.3.1 = {
+		holder = sindaara_vidvaookeyatra_6
+	}
+	1230.11.2 = {
+		holder = sindaara_vidvaookeyatra_7
+	}
+	1231.2.4 = {
+		holder = sindaara_vidvaookeyatra_8
+	}
+	1231.12.1 = {
+		holder = sindaara_vidvaookeyatra_9
+	}
+	1231.12.6 = {
+		holder = sindaara_vidvaookeyatra_5
+	}
+	1236.11.2 = {
+		holder = sindaara_vidvaookeyatra_1
+	}
+}
+c_vaimej = {
+	1251.1.1 = {
+		holder = marakje_vidvaookeyatra_2
+		change_development_level = 10
+	}
+}
+c_kemsarata = {
+	1251.1.1 = {
+		holder = agunaha_andaronshak_1
+		change_development_level = 12
+	}
+}
+c_tirumajam = {
+	1251.1.1 = {
+		holder = yaknha_andaronshak_2
+		change_development_level = 14
+	}
+}
+c_provinceagizdere = {  
+	1174.3.2 = {
+		holder = hokanta_vidvaookeyatra_24
+		liege = 0 
+	}
+	1201.12.4 = {
+		holder = iafarana_varodaism_4
+		liege = 0
+	}
+	1239.9.18 = {
+		holder = iafarana_varodaism_3
+		liege = 0
+		change_development_level = 7
+	}
+}
+c_sakhtagat = {
+	1226.8.10 = {
+		holder = kadwana_vidvaookeyatra_4
+		liege = k_kinilam
+	}
+	 1249.11.1 = {
+		holder = kadwana_vidvaookeyatra_2
+		change_development_level = 7
+		liege = k_kinilam
+	}
+}
+c_provincedelessa = {
+	1251.1.1 = {
+		holder = iafarana_varodaism_3
+		change_development_level = 7
+	}
+}
+c_chromeapat = {
+	1251.1.1 = {
+		holder = agunaha_andaronshak_2
+		change_development_level = 14
+	}
+}
+c_ujaudat = {
+	1251.1.1 = {
+		holder = qoltaam_vidvaookeyatra_1
+		change_development_level = 8
+	}
+}

@@ -1,0 +1,84 @@
+#c_barinet = {
+#	1230.1.1 = {
+#		holder = adnanari_badari_1
+#		liege = "k_thaliteia"		
+#	}
+#}
+c_mishrat = {
+	1230.1.1 = {
+		holder = adnanari_badari_1
+		liege = "k_thaliteia"		
+	}
+}
+c_tanar = {
+	1230.1.1 = {
+		holder = adnanari_badari_1
+		liege = "k_thaliteia"		
+	}
+}
+#c_ifralimane = {
+#	1230.1.1 = {
+#		holder = adnanari_badari_1
+#		liege = "k_thaliteia"		
+#	}
+#}
+#c_sindgil = {
+#	1230.1.1 = {
+#		holder = adnanari_badari_1
+#		liege = "k_thaliteia"		
+#	}
+#}
+#c_maarableh = {
+#	1230.1.1 = {
+#		holder = adnanari_harthahi_1
+#		liege = "k_eastern_frontier"
+#	}
+#}
+c_teboubib = {
+	1230.1.1 = {
+		holder = adnanari_harthahi_1
+		liege = "k_eastern_frontier"
+	}
+}
+#c_ctesilad = {
+#	1230.1.1 = {
+#		holder = adnanari_harthahi_1
+#		liege = "k_eastern_frontier"
+#	}
+#}
+c_the_columns = {
+	1230.1.1 = {
+		holder = mutsartan_badari_3
+		liege = d_khekech
+	}
+}
+#c_taougane = {
+#	1230.1.1 = {
+#		holder = mutsartan_badari_4
+#		liege = d_khekech
+#	}
+#}
+#c_annaza = {
+#	1230.1.1 = {
+#		holder = mutsartan_badari_1
+#		liege = d_khekech
+#	}
+#}
+#c_youjaj = {
+#	1230.1.1 = {
+#		holder = mutsartan_badari_1
+#		liege = d_khekech
+#	}
+#}
+c_madi = {
+	1230.1.1 = {
+		holder = adnanari_harthahi_7
+		liege = k_eastern_frontier
+	}
+}
+c_epigrapheia = {
+	1230.1.1 = {
+		holder = mutsartan_badari_1
+		liege = "k_thaliteia"
+	}
+}

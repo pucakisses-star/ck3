@@ -1,0 +1,281 @@
+#c_beni_haqiya
+1104 = {
+    culture = utyalid
+    religion = harfi
+    holding = castle_holding
+}
+1100 = {
+    holding = city_holding
+    1.1.1 = {
+        special_building = 01_oasisofgonan
+    }
+}
+1099 = {
+    holding = none
+}
+1105 = {
+    holding = none
+}
+#c_gonan
+1101 = {
+    culture = utyalid
+    religion = harfi
+    holding = city_holding
+    1.1.1 = {
+        special_building = 01_oasisofgonan
+    }
+}
+1102 = {
+    holding = castle_holding
+    1.1.1 = {
+        special_building = 01_oasisofgonan
+    }
+}
+1103 = {
+    holding = church_holding
+    1.1.1 = {
+        special_building = 01_oasisofgonan
+    }
+}
+1095 = {
+    holding = none
+}
+#c_kilahijan
+1093 = {
+    culture = doffore
+    religion = mogowai
+    holding = city_holding
+    689.1.1 = {
+        special_building = 01_irochi_damotada
+    }
+}
+1094 = {
+    holding = none
+}
+#c_hadewa
+3453 = {
+    culture = doffore
+    religion = mogowai
+    holding = city_holding
+}
+1056 = {
+    holding = city_holding
+}
+1055 = {
+    holding = none
+}
+1054 = {
+    holding = none
+}
+#c_faille
+1053 = {
+    culture = doffore
+    religion = mogowai
+    holding = castle_holding
+    1200.1.1 = {
+        special_building = 01_ashuku_mines
+    }
+}
+1061 = {
+    holding = none
+}
+#c_omein
+1049 = {
+    culture = doffore
+    religion = mogowai
+    holding = castle_holding
+}
+1052 = {
+    holding = city_holding
+}
+3007 = {
+    holding = none
+}
+#c_murilaz
+3617 = {
+    culture = doffore
+    religion = mogowai
+    holding = castle_holding
+}
+1059 = {
+    holding = city_holding
+}
+1062 = {
+    holding = none
+}
+#c_aboskul
+1060 = {
+    culture = doffore
+    religion = mogowai
+    holding = castle_holding
+}
+1063 = {
+    holding = city_holding
+}
+1069 = {
+    holding = none
+}
+#c_berahle
+1065 = {
+    culture = doffore
+    religion = marefai
+    holding = castle_holding
+}
+1066 = {
+    holding = none
+}
+#c_restoredamota3
+1067 = {
+    culture = fedagesh
+    religion = marefai
+    holding = castle_holding
+}
+1076 = {
+    holding = city_holding
+}
+1082 = {
+    culture = fedagesh
+    religion = marefai
+    holding = castle_holding
+    509.1.1 = {
+        special_building = 02_dihasma_xiidan
+    }
+}
+1074 = {
+    holding = city_holding
+}
+1077 = {
+    holding = church_holding
+}
+1078 = {
+    holding = none
+}
+#c_restoredamota4
+1085 = {
+    culture = fedagesh
+    religion = marefai
+    holding = castle_holding
+}
+1084 = {
+    holding = none
+}
+#c_adem
+1089 = {
+    culture = fedagesh
+    religion = marefai
+    holding = castle_holding
+}
+1088 = {
+    holding = none
+}
+#c_zernakia
+4133 = {
+    culture = fedagesh
+    religion = marefai
+    holding = castle_holding
+}
+4139 = {
+    holding = city_holding
+}
+#c_gimma
+4157 = {
+    culture = fedagesh
+    religion = mogowai
+    holding = castle_holding
+}
+4141 = {
+    holding = none
+}
+#c_restoredamota5
+3319 = {
+    culture = fedagesh
+    religion = mogowai
+    holding = castle_holding
+    300.1.1 = {
+        special_building = 01_sonas_sikelenizi
+    }
+}
+3322 = {
+    holding = city_holding
+}
+3307 = {
+    holding = church_holding
+}
+1654 = {
+    holding = none
+}
+#c_fheja
+1615 = {
+    culture = kutma
+    religion = mogowai
+    holding = castle_holding
+}
+1643 = {
+    holding = city_holding
+}
+1430 = {
+    holding = none
+}
+#c_isurwa
+1362 = {
+    culture = kutma
+    religion = mogowai
+    holding = castle_holding
+}
+1330 = {
+    holding = church_holding
+}
+4159 = {
+    holding = none
+}
+#c_bafilaz
+1345 = {
+    culture = kutma
+    religion = bekashai
+    holding = castle_holding
+}
+2911 = {
+    holding = church_holding
+}
+2950 = {
+    holding = none
+}
+#c_barilab
+3257 = {
+    culture = kutma
+    religion = bekashai
+    holding = castle_holding
+    426.1.1 = {
+        special_building = 01_degasho_bedelam
+    }
+}
+1403 = {
+    holding = city_holding
+}
+1612 = {
+    holding = church_holding
+}
+#c_dabisag
+1426 = {
+    culture = kutma
+    religion = bekashai
+    holding = castle_holding
+}
+1644 = {
+    holding = city_holding
+}
+3232 = {
+    holding = none
+}
+#c_modnai
+1513 = {
+    culture = kutma
+    religion = mogowai
+    holding = castle_holding
+}
+1621 = {
+    holding = city_holding
+}
+3611 = {
+    holding = none
+}

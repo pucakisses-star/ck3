@@ -1,0 +1,178 @@
+﻿velrika_nolosaanyo_1 = {
+	name = "Yaeshan"
+	culture = "velrika"
+	religion = "nolosaanyo"
+	dynasty = dyn_pirate_coast_3
+
+	1178.12.21 = {
+		birth = yes
+	}
+	1194.1.1 = {
+		trait = education_learning_4
+		trait = temperate
+		trait = content
+		trait = arrogant
+		trait = gh_historical_mystic_3
+	}
+
+	1204.2.4 = {
+	    add_spouse = velrika_nolosaanyo_2
+	}
+
+	1255.1.1 = {
+		give_nickname = nick_the_elder
+	}
+
+	1261.9.27 = {
+	    death = { death_reason = death_natural_causes }
+	}
+}
+
+velrika_nolosaanyo_2 = {
+    name = "Mulki" 
+    female = yes
+
+    religion = nolosaanyo
+    culture = velrika
+
+    sexuality = heterosexual
+
+    trait = patient
+    trait = craven
+    trait = generous
+
+    1187.5.7 = {
+        birth = yes
+    }
+
+    1246.11.24 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+velrika_nolosaanyo_3 = {
+    name = "Kanshin" 
+
+    dynasty = dyn_pirate_coast_3
+    religion = nolosaanyo
+    culture = velrika
+
+    father = velrika_nolosaanyo_1
+    mother = velrika_nolosaanyo_2
+
+    sexuality = heterosexual
+
+    trait = callous
+    trait = zealous
+    trait = craven
+
+    1220.11.3 = {
+        birth = yes
+    }
+
+    1255.12.5 = {
+        add_spouse = velrika_nolosaanyo_4
+    }
+
+    1281.1.7 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+velrika_nolosaanyo_4 = {
+    name = "Kamado" 
+    female = yes
+
+    religion = nolosaanyo
+    culture = velrika
+
+    sexuality = heterosexual
+
+    trait = temperate
+    trait = craven
+    trait = humble
+
+    1238.11.5 = {
+        birth = yes
+    }
+}
+
+velrika_nolosaanyo_5 = { # Needs a husband?
+    name = "Awa" 
+    female = yes
+
+    religion = nolosaanyo
+    culture = velrika
+
+    father = velrika_nolosaanyo_3
+    mother = velrika_nolosaanyo_4
+
+    sexuality = asexual
+
+    trait = just
+    trait = chaste
+    trait = paranoid
+
+    1258.9.7 = {
+        birth = yes
+    }
+}
+
+velrika_nolosaanyo_6 = {
+    name = "Seisho" 
+
+    dynasty = dyn_pirate_coast_3
+    religion = nolosaanyo
+    culture = velrika
+
+    father = velrika_nolosaanyo_3
+    mother = velrika_nolosaanyo_4
+
+    sexuality = bisexual
+
+    trait = cynical
+    trait = ambitious
+    trait = lustful
+
+    1266.9.13 = {
+        birth = yes
+    }
+
+    1293.8.18 = {
+        add_spouse = velrika_nolosaanyo_7
+    }
+}
+
+velrika_nolosaanyo_7 = {
+    name = "Leyla" 
+    female = yes
+
+    religion = nolosaanyo
+    culture = velrika
+
+    sexuality = heterosexual
+
+    trait = wrathful
+    trait = sadistic
+    trait = arbitrary
+
+    1276.2.27 = {
+        birth = yes
+    }
+}
+
+velrika_nolosaanyo_8 = {
+    name = "Gentei" 
+    female = yes
+
+    religion = nolosaanyo
+    culture = velrika
+
+    father = velrika_nolosaanyo_6
+    mother = velrika_nolosaanyo_7
+
+    1295.9.1 = {
+        birth = yes
+    }
+}
+

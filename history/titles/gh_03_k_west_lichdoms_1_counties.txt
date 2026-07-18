@@ -1,0 +1,146 @@
+c_west_lichdoms_181 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_22 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_2 = {
+	1.1.2 = {
+		holder = unsorted_26
+	}
+	60.1.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_7 = {
+	1.1.2 = {
+		holder = unsorted_26
+	}
+	60.1.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_0115 = {
+	1.1.2 = {
+		holder = unsorted_24
+	}
+	171.1.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_30 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_29 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_35 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_11 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_3 = {
+	1.1.2 = {
+		holder = unsorted_26
+	}
+	60.1.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_6 = {
+	1.1.2 = {
+		holder = unsorted_26
+	}
+	60.1.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_15 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_13 = {
+	1.1.2 = {
+		holder = unsorted_24
+	}
+	60.1.1 = {
+		holder = wasteland
+	}
+}
+d_west_lichdoms_18 = {
+	1.1.2 = {
+		holder = unsorted_24
+	}
+	60.1.1 = {
+		holder = 0
+	}
+}
+d_west_lichdoms_19 = {
+	1.1.2 = {
+		holder = unsorted_24
+	}
+	60.1.1 = {
+		holder = 0
+	}
+}
+c_west_lichdoms_25 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_provincenewprovince13078 = {
+	1.1.2 = {
+		holder = unsorted_23
+	}
+	171.1.1 = {
+		holder = wasteland
+	}
+}
+#c_west_lichdoms_16 = {
+#	1.1.2 = {
+#		holder = unsorted_23
+#	}
+#	60.1.1 = {
+#		holder = wasteland
+#	}
+#}
+d_west_lichdoms_13 = {
+	1.1.2 = {
+		holder = unsorted_23
+	}
+	60.1.1 = {
+		holder = 0
+	}
+}
+d_west_lichdoms_12 = {
+	1.1.2 = {
+		holder = unsorted_23
+	}
+	60.1.1 = {
+		holder = 0
+	}
+}
+c_west_lichdoms_0111 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_west_lichdoms_27 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}

@@ -1,0 +1,99 @@
+c_asalia = {
+	1230.1.1 = {
+
+		holder = marndeoticeni_marndeoticeni_cult_1
+		change_development_level = 3
+	}
+}
+c_dorgangai = {
+	1230.1.1 = {
+		liege = d_checoryda
+		holder = murarut_cumani_8
+		government = nomad_government
+		change_development_level = 2
+	}
+}
+c_dungovid = {
+	1230.1.1 = {
+		liege = k_chvor
+		holder = khorinot_cumani_3
+		government = nomad_government 
+	}
+}
+c_lofoopol = {
+	1230.1.1 = {
+		holder = marndeoticeni_marndeoticeni_cult_1
+		change_development_level = 3
+	}
+}
+
+c_vihoj = {
+	1240.1.1 = {
+		holder = khorinot_cumani_15
+		liege = "k_kteumaxa"
+		government = nomad_government
+	}
+}
+c_imbrone = {
+	1220.1.1 = {
+		liege = d_checoryda
+		holder = khorinot_cumani_14
+		government = nomad_government
+	}
+	1200.1.1 = {
+		liege = d_checoryda
+		holder = khorinot_cumani_21
+		government = nomad_government
+		change_development_level = 3
+	}
+}
+c_koperkanger = {
+	1240.1.1 = {
+		holder = khorinot_cumani_1
+		government = nomad_government
+	}
+	1250.1.1 = { change_development_level = 8 }
+}
+c_jarvenruu = {
+	1240.1.1 = {
+		holder = khorinot_cumani_1
+		government = nomad_government
+	}
+	1250.1.1 = { change_development_level = 3 }
+}
+c_provincealeden = {
+	1240.1.1 = {
+		holder = khorinot_cumani_17
+		liege = "k_kteumaxa"
+		government = nomad_government
+		change_development_level = 6
+	}
+}
+c_stukholt = {
+	1240.1.1 = {
+		holder = khorinot_cumani_1
+		government = nomad_government
+	}
+	1250.1.1 = { change_development_level = 3 }
+}
+c_soporna = {
+	1220.1.1 = {
+		liege = d_checoryda
+		holder = khorinot_cumani_14
+		government = nomad_government
+	}
+	1200.1.1 = {
+		liege = d_checoryda
+		holder = khorinot_cumani_21
+		government = nomad_government
+	}
+}
+
+
+#c_rhodanthecois = {
+#	1230.1.1 = {
+#		holder = yevamarai_aversarinas_aagiokrata_10
+#		liege = 0
+#		change_development_level = 3
+#	}
+#}

@@ -1,0 +1,2100 @@
+﻿1319 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = voyagen
+	}
+}
+
+1320 = {
+	holding = none
+}
+
+1321 = {
+	60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+		culture = gallicads
+		religion = gallicader
+		holding = tribal_holding
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = city_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = voyagen
+	}
+}
+
+1323 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = voyagen
+	}
+}
+
+1324 = {
+	holding = none
+}
+
+1325 = {
+	holding = none
+}
+
+1327 = {
+	culture = voyagen
+	religion = lifepath
+	holding = city_holding
+}
+
+1329 = {
+	holding = church_holding
+}
+
+
+
+1331 = {
+	holding = city_holding
+}
+
+1332 = {
+	holding = city_holding
+}
+
+1333 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = voyagen
+	}
+}
+
+1334 = {
+	culture = gallicads
+	religion = gallicader
+	holding = church_holding
+}
+
+1335 = {
+	holding = none
+}
+
+1336 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = voyagen
+	}
+}
+
+1337 = {
+	culture = voyagen
+	religion = lifepath
+	holding = city_holding
+}
+
+1338 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = voyagen
+	}
+}
+
+1340 = {
+	holding = church_holding
+}
+
+1342 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = voyagen
+	}
+}
+
+1343 = {
+	holding = none
+}
+
+1344 = {
+	holding = church_holding
+}
+
+1346 = {
+	holding = city_holding
+}
+
+1347 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = voyagen
+	}
+	800.1.1 = {
+		special_building = 01_fortenorn
+	}
+}
+
+1348 = {
+	holding = city_holding
+}
+
+1349 = {
+	holding = none
+}
+
+1350 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = voyagen
+	}
+}
+
+1351 = {
+	holding = church_holding
+}
+
+1353 = {
+	holding = none
+}
+
+1355 = {
+	holding = church_holding
+}
+
+1356 = {
+	holding = none
+}
+
+1357 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = innerpath
+		holding = castle_holding
+		culture = gallien
+	}
+	#300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+	#	culture = voyagen
+	#}
+}
+
+1358 = {
+	holding = none
+}
+
+
+1359 = {
+	holding = castle_holding
+	800.1.1 = {
+		special_building = 01_fortenorn
+	}
+}
+
+1360 = {
+	holding = church_holding
+}
+
+
+1363 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = voyagen
+	}
+	889.8.5 = {
+		special_building = 01_mond_graz_castle
+	}
+}
+
+1365 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = trustians
+	}
+}
+
+1366 = {
+	culture = trustians
+	religion = lifepath
+
+	holding = castle_holding
+
+	800.1.1 = {
+		special_building = 01_fortenorn
+	}
+}
+
+1367 = {
+	holding = city_holding
+}
+
+1368 = {
+	holding = city_holding
+}
+
+1369 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	100.1.1 = {
+		culture = gallien
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = trustians
+	}
+	800.1.1 = {
+		special_building = 01_fortenorn
+	}
+}
+
+1370 = {
+	holding = church_holding
+}
+
+1371 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	100.1.1 = {
+		culture = gallien
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = voyagen
+	}
+}
+
+1372 = {
+	holding = church_holding
+}
+
+
+1373 = {
+	holding = none
+}
+
+1374 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	100.1.1 = {
+		culture = gallien
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = trustians
+	}
+}
+
+1375 = {
+	holding = none
+}
+
+1376 = {
+	holding = city_holding
+}
+
+1377 = {
+	culture = trustians
+	religion = lifepath
+
+	holding = castle_holding
+
+	800.1.1 = {
+		special_building = 01_fortenorn
+	}
+}
+
+1378 = {
+	holding = city_holding
+}
+
+1379 = {
+	holding = city_holding
+}
+
+
+1380 = {
+	holding = city_holding
+}
+
+1381 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	100.1.1 = {
+		culture = gallien
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = trustians
+	}
+
+	800.1.1 = {
+		special_building = 01_fortenorn
+	}
+}
+
+1383 = {
+	holding = church_holding
+}
+
+1384 = {
+	holding = none
+}
+
+1385 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	100.1.1 = {
+		culture = gallien
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = trustians
+	}
+}
+
+1386 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	100.1.1 = {
+		culture = gallien
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = trustians
+	}
+	800.1.1 = {
+		special_building = 01_fortenorn
+	}
+}
+
+1387 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	100.1.1 = {
+		culture = gallien
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = trustians
+	}
+}
+
+1389 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = trustians
+	}
+	744.3.15 = {
+		special_building = 01_conclave_of_raocourt
+		holding = church_holding
+	}
+}
+
+
+1390 = {
+	holding = church_holding
+}
+
+1391 = {
+	culture = trustians
+	religion = lifepath
+	holding = castle_holding
+}
+
+1392 = {
+	holding = none
+}
+
+
+1394 = {
+	holding = city_holding
+	800.1.1 = {
+		special_building = 01_fortenorn
+	}
+}
+
+1395 = {
+	culture = trustians
+	religion = lifepath
+	holding = city_holding
+}
+
+1396 = {
+	holding = church_holding
+}
+
+1397 = {
+	culture = trustians
+	religion = lifepath
+	holding = church_holding
+}
+
+1398 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	150.1.1 = { # GH TODO: Generic Sorrowing date - replace
+		culture = oejeynica # GH TODO: Traditional Ojy culture
+		religion = graveright
+		holding = castle_holding
+	}
+	800.1.1 = {
+		special_building = 01_fortenorn
+	}
+}
+
+1399 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	100.1.1 = {
+		culture = gallien
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = trustians
+	}
+}
+
+1400 = {
+	holding = city_holding
+}
+
+1401 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = trustians
+	}
+}
+
+
+1402 = {
+	holding = none
+}
+
+1404 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = trustians
+	}
+}
+
+1405 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	150.1.1 = { # GH TODO: Generic Sorrowing date - replace
+		culture = oejeynica # GH TODO: Traditional Ojy culture
+		religion = graveright
+		holding = church_holding
+	}
+}
+
+1408 = {
+	holding = city_holding
+}
+
+
+1411 = {
+	holding = church_holding
+	771.11.4 = {
+		special_building = 01_tomb_of_the_lost
+	}
+}
+
+1412 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	150.1.1 = { # GH TODO: Generic Sorrowing date - replace
+		culture = oejeynica # GH TODO: Traditional Ojy culture
+		religion = graveright
+		holding = castle_holding
+	}
+	800.1.1 = {
+		special_building = 01_fortenorn
+	}
+}
+
+
+1413 = {
+	holding = none
+}
+
+1415 = {
+	holding = city_holding
+}
+
+1416 = {
+	culture = voyagen
+	religion = lifepath
+	holding = city_holding
+}
+
+1417 = {
+	holding = castle_holding
+}
+
+
+1422 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = city_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = voyagen
+	}
+}
+
+1425 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = carsavisians
+	}
+}
+
+1427 = {
+	culture = trustians
+	religion = lifepath
+	holding = castle_holding
+}
+
+1431 = {
+	holding = city_holding
+}
+
+1434 = {
+	holding = city_holding
+}
+
+1435 = {
+	holding = church_holding
+}
+
+1439 = {
+	holding = none
+}
+
+
+
+1449 = {
+	holding = none
+}
+
+1451 = {
+	holding = church_holding
+}
+
+
+1454 = {
+	holding = church_holding
+}
+
+1455 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = carsavisians
+	}
+}
+
+1456 = {
+	holding = city_holding
+}
+
+1459 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = voyagen
+	}
+}
+
+1462 = {
+	holding = city_holding
+}
+
+1463 = {
+	culture = voyagen
+	religion = lifepath
+	holding = castle_holding
+}
+
+1464 = {
+	holding = none
+}
+
+1465 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	100.1.1 = {
+		culture = gallien
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = rivarisians
+	}
+}
+
+1466 = {
+	holding = city_holding
+}
+
+
+1468 = {
+	holding = church_holding
+}
+
+1469 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	100.1.1 = {
+		culture = gallien
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = rivarisians
+	}
+}
+
+1470 = {
+	holding = city_holding
+}
+
+1471 = {
+	holding = church_holding
+}
+
+1472 = {
+	holding = city_holding
+}
+
+1474 = {
+	holding = church_holding
+}
+
+1475 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = rivarisians
+	}
+}
+
+1478 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = dielecender
+	}
+}
+
+1483 = {
+	culture = konijkmener # GH TODO: Konij predecessor
+	religion = gestanwoder
+	holding = tribal_holding
+	60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = coastpath
+		holding = castle_holding
+	}
+}
+
+1486 = {
+	holding = city_holding
+}
+
+1487 = {
+	holding = none
+}
+
+1488 = {
+	holding = none
+}
+
+1491 = {
+	holding = city_holding
+}
+
+1494 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = dielecender
+	}
+}
+
+1495 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = dielecender
+		holding = metro_holding
+	}
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+
+	1099.1.12 = {
+		special_building = 01_dielecport
+	}
+}
+
+1505 = {
+	holding = none
+}
+
+1506 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	100.1.1 = {
+		culture = gallien
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = rivarisians
+	}
+}
+
+1507 = {
+	holding = city_holding
+}
+
+1538 = {
+	holding = church_holding
+}
+
+1539 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = carsavisians
+	}
+}
+
+1540 = {
+	holding = none
+}
+
+1542 = {
+	holding = city_holding
+}
+
+1543 = {
+	holding = none
+}
+
+1545 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = carsavisians
+	}
+}
+
+1547 = {
+	holding = none
+}
+
+1548 = {
+	culture = oejeynica
+	religion = gravewatch
+	holding = castle_holding
+}
+
+1550 = {
+	holding = city_holding
+}
+
+1554 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	150.1.1 = { # GH TODO: Generic Sorrowing date - replace
+		culture = oejeynica # GH TODO: Traditional Ojy culture
+		religion = gravewatch
+		holding = castle_holding
+	}
+	800.1.1 = {
+		special_building = 01_fortenorn
+	}
+}
+
+8846 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = {
+		culture = oejeynica
+	}
+	800.1.1 = {
+		special_building = 01_fortenorn
+	}
+	1220.1.1 = {
+		holding = ruin_holding
+	}
+}
+
+
+1555 = {
+	holding = castle_holding
+
+	800.1.1 = {
+		special_building = 01_fortenorn
+	}
+}
+
+1558 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = carsavisians
+	}
+}
+
+
+1564 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = church_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = carsavisians
+	}
+}
+
+1565 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = carsavisians
+	}
+}
+
+1566 = {
+	culture = carsavisians
+	religion = lifepath
+	holding = church_holding
+
+	1200.1.1 = {
+		special_building = blood_market_00
+	}
+
+}
+
+1567 = {
+	holding = city_holding
+}
+
+1568 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = carsavisians
+	}
+
+	800.1.1 = {
+		special_building = 01_fortenorn
+	}
+}
+
+1569 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = carsavisians
+	}
+	800.1.1 = {
+		special_building = 01_creusons
+	}
+}
+
+
+1572 = {
+	holding = city_holding
+}
+
+1574 = {
+	holding = city_holding
+}
+
+1575 = {
+	holding = church_holding
+}
+
+1578 = {
+
+	800.1.1 = {
+		special_building = 01_fortenorn
+	}
+	holding = castle_holding
+}
+
+1581 = {
+	holding = castle_holding
+
+	800.1.1 = {
+		special_building = 01_fortenorn
+	}
+}
+
+1583 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = carsavisians
+	}
+	800.1.1 = {
+		special_building = 01_fortenorn
+	}
+}
+
+1586 = {
+	holding = church_holding
+}
+
+1587 = {
+	holding = church_holding
+}
+
+1591 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = carsavisians
+	}
+	1248.1.1 = { # GH TODO: Replace with Ash War date
+		culture = voluntic
+		religion = partic
+	}
+}
+
+1592 = {
+	holding = castle_holding
+
+	800.1.1 = {
+		special_building = 01_fortenorn
+	}
+}
+
+3785 = {
+	holding = none
+}
+
+1594 = {
+	holding = none
+}
+
+1597 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = carsavisians
+	}
+	1248.1.1 = { # GH TODO: Replace with Ash War date
+		culture = voluntic
+		religion = partic
+		holding = tribal_holding
+	}
+	1250.10.8 = {
+		special_building = 01_fortifications_muisle
+	}
+}
+
+1598 = {
+	holding = city_holding
+}
+
+1601 = {
+	holding = none
+}
+
+1602 = {
+	holding = none
+}
+
+1604 = {
+	holding = church_holding
+}
+
+1607 = {
+	holding = city_holding
+}
+
+1608 = {
+	holding = none
+}
+
+1609 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = rivarisians
+	}
+}
+
+1610 = {
+	holding = city_holding
+}
+
+1611 = {
+	holding = city_holding
+}
+
+1613 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = carsavisians
+	}
+}
+
+1614 = {
+	holding = city_holding
+}
+
+
+1616 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = salisians
+	}
+}
+
+
+1617 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = rivarisians
+	}
+	1164.4.18 = {
+		duchy_capital_building = blacksmiths_01
+	}
+}
+
+1618 = {
+	holding = none
+}
+
+1619 = {
+	holding = church_holding
+}
+
+
+1620 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = salisians
+	}
+}
+
+1623 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = salisians
+	}
+}
+
+1624 = {
+	holding = none
+}
+
+1625 = {
+	holding = city_holding
+}
+
+1638 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = salisians
+	}
+	1211.1.1 = {
+		special_building = 01_lascife_mines
+	}
+}
+
+1628 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = salisians
+	}
+}
+
+1629 = {
+	holding = city_holding
+}
+
+1631 = {
+	holding = city_holding
+}
+
+1632 = {
+	holding = none
+}
+
+1633 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = salisians
+	}
+}
+
+1635 = {
+	holding = none
+}
+
+1637 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = salisians
+	}
+}
+
+1639 = {
+	holding = none
+}
+
+1642 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = leegenders
+	}
+}
+
+1645 = {
+	holding = church_holding
+}
+
+1646 = {
+	holding = city_holding
+}
+
+
+1652 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = salisians
+	}
+}
+
+1655 = {
+	holding = city_holding
+}
+
+1658 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = salisians
+	}
+}
+
+1659 = {
+	holding = city_holding
+}
+
+1662 = {
+	culture = leegenders
+	religion = lifepath
+	holding = castle_holding
+}
+
+1664 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = leegenders
+	}
+}
+
+1668 = {
+	culture = voyagen
+	religion = lifepath
+
+	holding = castle_holding
+
+	1200.1.1 = {
+		special_building = 01_fort_ranos
+	}
+}
+
+1865 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = voyagen
+		holding = metro_holding
+	}
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+}
+
+1913 = {
+	holding = church_holding
+}
+
+2036 = {
+	holding = church_holding
+}
+
+2153 = {
+	holding = castle_holding
+}
+
+2155 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = dielecender
+	}
+}
+
+2673 = {
+	holding = church_holding
+
+	800.1.1 = {
+		special_building = 01_fortenorn
+	}
+}
+
+
+2949 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = urdermantern
+	}
+}
+
+3058 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = carsavisians
+	}
+	1248.1.1 = { # GH TODO: Replace with Ash War date
+		culture = voluntic
+		religion = partic
+		holding = tribal_holding
+	}
+	800.1.1 = {
+		special_building = 01_fortenorn
+	}
+}
+
+3763 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = voyagen
+	}
+}
+
+4012 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = voyagen
+	}
+}
+
+
+4099 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = voyagen
+	}
+}
+
+4128 = {
+	holding = city_holding
+}
+
+4168 = {
+	holding = city_holding
+}
+
+4182 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = voyagen
+	}
+}
+
+5017 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = carsavisians
+	}
+}
+
+5040 = {
+	holding = city_holding
+}
+
+5041 = {
+	holding = church_holding
+}
+
+5387 = {
+	holding = castle_holding
+	religion = coastpath
+	culture = coldcoaster
+}
+
+5779 = {
+	culture = voyagen
+	religion = coastpath
+	holding = castle_holding
+}
+
+5939 = {
+	holding = none
+}
+
+#6584 = {
+#	culture = gallicads
+#	religion = gallicader
+#	holding = tribal_holding
+#	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+#		culture = shewigad
+#		religion = starvayrd
+#	}
+#	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+#		religion = lifepath
+#		holding = castle_holding
+#	}
+#	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+#		culture = leegenders
+#	}
+#}
+
+6684 = {
+	holding = none
+}
+
+#6931 = {
+#	culture = konijkmener # GH TODO: Konij predecessor
+#	religion = gestanwoder
+#	holding = tribal_holding
+#	60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+#		religion = starvayrd
+#	}
+#	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+#		religion = coastpath
+#		holding = castle_holding
+#	}
+#}
+
+7362 = {
+	holding = none
+}
+
+5284 = {
+	culture = konijkmener # GH TODO: Konij predecessor
+	religion = gestanwoder
+	holding = tribal_holding
+	60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = coastpath
+		holding = castle_holding
+	}
+}
+
+9330 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	10.1.1 = { # GH TODO: Generic first Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	150.1.1 = { # GH TODO: Generic Sorrowing date - replace
+		culture = oejeynica # GH TODO: Traditional Ojy culture
+		religion = graveright
+		holding = castle_holding
+	}
+	800.1.1 = {
+		special_building = 01_fortenorn
+	}
+}
+
+9338 = {
+	holding = none
+}
+
+8725 = {
+	800.1.1 = {
+		culture = oejeynica # GH TODO: Traditional Ojy culture
+		religion = graveright
+		holding = castle_holding
+		special_building = 01_fortenorn
+	}
+}
+
+9331 = {
+	800.1.1 = {
+		holding = church_holding
+		special_building = 01_fortenorn
+	}
+	1196.4.14 = {
+		holding = wasteland_empty_holding
+	}
+}
+
+9337 = {
+	800.1.1 = {
+		holding = castle_holding
+		special_building = 01_fortenorn
+	}
+}

@@ -1,0 +1,17 @@
+﻿latur_ebohephai_olten_1 = { # Oltenic vassals-2nd clan duke
+    name = "Tumen"
+    religion = "ebohephai_olten"
+    culture = "latur"
+    1210.8.8 = {
+        birth = yes
+    }
+}
+
+latur_ebohephai_olten_2 = { # Oltenic vassals
+    name = "Nayaga"
+    religion = "ebohephai_olten"
+    culture = "latur"
+    1220.10.3 = {
+        birth = yes
+    }
+}

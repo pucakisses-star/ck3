@@ -1,0 +1,87 @@
+﻿babura_ruidari_1 = { 
+	name = "Madanapala"
+	dynasty = dyn_babura_ruidari_1
+	religion = "ruidari"
+	culture = "babura"
+
+	1225.4.14 = {
+		birth = yes
+	}
+}
+
+babura_ruidari_2 = { 
+	name = "Amritnarayan"
+	dynasty = dyn_babura_ruidari_2
+	religion = "ruidari"
+	culture = "leriseb"
+
+	1223.4.14 = {
+		birth = yes
+	}
+}
+
+babura_ruidari_3 = { 
+	name = "Vasumitra"
+	dynasty = dyn_babura_ruidari_3
+	religion = "ruidari"
+	culture = "qahsarides"
+
+	1235.4.14 = {
+		birth = yes
+	}
+}
+
+babura_ruidari_4 = { 
+	name = "Jatakhadga"
+	dynasty = dyn_babura_ruidari_4
+	religion = "ruidari"
+	culture = "babura"
+
+	1230.4.14 = {
+		birth = yes
+	}
+}
+
+babura_ruidari_5 = { 
+	name = "Krishanmishra"
+	dynasty = dyn_babura_ruidari_5
+	religion = "ruidari"
+	culture = "qahsarides"
+
+	1215.4.14 = {
+		birth = yes
+	}
+}
+
+babura_ruidari_6 = { 
+	name = "Kanchani"
+	dynasty = dyn_babura_ruidari_6
+	religion = "ruidari"
+	culture = "babura"
+
+	1222.4.14 = {
+		birth = yes
+	}
+}
+
+#babura_ruidari_7 = { 
+#	name = "Keshabsen"
+#	dynasty = dyn_babura_ruidari_7
+#	religion = "ruidari"
+#	culture = "babura"
+#
+#	1223.4.14 = {
+#		birth = yes
+#	}
+#}
+
+babura_ruidari_8 = { 
+	name = "Vijaysen"
+	dynasty = dyn_babura_ruidari_8
+	religion = "ruidari"
+	culture = "babura"
+
+	1230.4.14 = {
+		birth = yes
+	}
+}

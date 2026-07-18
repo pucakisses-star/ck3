@@ -1,0 +1,109 @@
+﻿adnanari_badari_1 = { # D_khastelzum son 1
+	name = "Ulmiraan"
+	dynasty = dyn_khenemhat_5
+	religion = "badari"
+	culture = "adnanari"
+	father = adnanari_badari_2
+	mother = adnanari_badari_3
+
+	1212.1.1 = {
+		birth = yes
+	}
+}
+
+adnanari_badari_2 = { # D_khastelzum
+	name = "Amru"
+	dynasty = dyn_khenemhat_5
+	religion = "badari"
+	culture = "adnanari"
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+
+	1185.1.1 = {
+		birth = yes
+	}
+
+	1211.1.1 = {
+		add_spouse = adnanari_badari_3
+	}
+}
+
+adnanari_badari_3 = { # D_khastelzum wife
+	name = "Katima"
+	religion = "badari"
+	culture = "adnanari"
+	female = yes
+
+	1195.1.1 = {
+		birth = yes
+	}
+}
+
+adnanari_badari_4 = { # D_khastelzum son 2
+	name = "Akif"
+	dynasty = dyn_khenemhat_5
+	religion = "badari"
+	culture = "adnanari"
+	father = adnanari_badari_2
+	mother = adnanari_badari_3
+
+	1215.1.1 = {
+		birth = yes
+	}
+}
+
+adnanari_badari_5 = { # D_khastelzum son 3
+	name = "Tamir"
+	dynasty = dyn_khenemhat_5
+	religion = "badari"
+	culture = "adnanari"
+	father = adnanari_badari_2
+	mother = adnanari_badari_3
+
+	1217.1.1 = {
+		birth = yes
+	}
+}
+
+adnanari_badari_6 = { # D_khastelzum daughter 1
+	name = "Manala"
+	dynasty = dyn_khenemhat_5
+	religion = "badari"
+	culture = "adnanari"
+	female = yes
+	father = adnanari_badari_2
+	mother = adnanari_badari_3
+
+	1220.1.1 = {
+		birth = yes
+	}
+}
+
+adnanari_badari_7 = { # D_khastelzum daughter 2
+	name = "Hamira"
+	dynasty = dyn_khenemhat_5
+	religion = "badari"
+	culture = "adnanari"
+	female = yes
+	father = adnanari_badari_2
+	mother = adnanari_badari_3
+
+	1223.1.1 = {
+		birth = yes
+	}
+}
+
+adnanari_badari_8 = { # D_khastelzum son 4
+	name = "Hamrin"
+	dynasty = dyn_khenemhat_5
+	religion = "badari"
+	culture = "adnanari"
+	father = adnanari_badari_2
+	mother = adnanari_badari_3
+
+	1227.1.1 = {
+		birth = yes
+	}
+}

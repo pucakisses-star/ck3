@@ -1,0 +1,35 @@
+﻿c_meghaj = {
+	1251.1.1 = {
+		holder = huxayakha_vidvaookeyatra_1
+		change_development_level = 9
+	}
+}
+c_donkur = {
+	1253.2.10 = {
+		holder = huxayakha_vidvaookeyatra_1
+	}
+}
+c_bijundi = {
+	1251.1.1 = {
+		holder = paidem_vidvaookeyatra_11
+		change_development_level = 9
+	}
+}
+c_viguypa = {
+	1244.11.14 = {
+		holder = sakankra_vidvaookeyatra_18
+		change_development_level = 9
+	}
+}
+c_chopabar = {
+	1251.1.1 = {
+		holder = nizhbata_vidvaookeyatra_1
+		change_development_level = 8
+	}
+}
+c_nimbaund = {
+	1250.1.1 = {
+		holder = qaanhai_vidvaookeyatra_1
+		change_development_level = 8
+	}	
+}

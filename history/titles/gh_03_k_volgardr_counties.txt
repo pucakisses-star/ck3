@@ -1,0 +1,207 @@
+c_lapidon = {
+	1250.1.1 = {
+		holder = daukeni_sjalvolki_1
+		government = continental_clan_government
+	}
+	1255.1.1 = {
+		holder = brigandines_partic_1
+	}
+	1276.4.20 = {
+		holder = brigandines_partic_7
+	}
+	1295.3.7 = {
+		holder = brigandines_partic_9
+	}
+	1297.12.1 = {
+		holder = laodantine_partic_1
+	}
+	1298.1.1 = {
+		government = feudal_government
+	}
+}
+c_soomerchagg_dug = {
+	1200.3.15 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}
+c_owlriver = {
+	1250.1.1 = {
+		holder = irmionoth_sjalvolki_2
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1262.8.27 = {
+		holder = brigandines_partic_13
+	}
+	1275.3.24 = {
+		holder = brigandines_partic_15
+	}
+	1281.1.17 = {
+		holder = brigandines_partic_16
+	}
+	1296.5.16 = {
+		holder = brigandines_partic_17
+	}
+	1298.1.1 = {
+		government = feudal_government
+	}
+}
+c_shrubspan = {
+	1150.9.15 = {
+		holder = northernimperial_aversarinas_aagiokrata_33
+		government = feudal_government
+	}
+	1168.7.14 = {
+		holder = northernimperial_aversarinas_aagiokrata_34
+	}
+	1193.6.2 = {
+		holder = northernimperial_aversarinas_aagiokrata_35
+	}
+	1244.4.24 = {
+		holder = northernimperial_aversarinas_aagiokrata_36
+	}
+	1247.3.15 = {
+		holder = irmionoth_sjalvolki_6
+		liege = d_paroz
+		government = continental_clan_government
+	}
+	1288.2.22 = {
+		holder = irmionoth_sjalvolki_25
+		liege = k_westhold
+	}
+	1298.1.1 = {
+		government = feudal_government
+	}
+}
+c_ouydrs_point = {
+	1250.1.1 = {
+		holder = auteonic_partic_1
+		liege = k_irmionoth
+		government = continental_clan_government
+	}
+	1260.1.1 = {
+		holder = irmionoth_sjalvolki_1
+	}
+	1273.2.5 = {
+		holder = ordikin_mothers_and_fathers_1
+		liege = k_westhold
+	}
+	1284.8.11 = {
+		holder = irmionoth_sjalvolki_18
+	}
+	1298.1.1 = {
+		government = feudal_government 
+	}
+}
+c_giants_end = {
+	1048.10.17 = {
+		holder = northernimperial_aversarinas_aagiokrata_62
+		liege = e_aversarinas_aautokrata
+		government = feudal_government
+	}
+	1102.4.11 = {
+		holder = northernimperial_aversarinas_aagiokrata_61
+	}
+	1129.1.10 = {
+		holder = northernimperial_aversarinas_aagiokrata_59
+	}
+	1164.1.10 = {
+		holder = northernimperial_aversarinas_aagiokrata_58
+	}
+	1194.7.15 = {
+		holder = northernimperial_aversarinas_aagiokrata_57
+	}
+	1200.3.1 = {
+		holder = northernimperial_aversarinas_aagiokrata_54
+	}
+	1220.7.19 = {
+		liege = k_crotyrosian_cult	
+	}
+	1247.3.15 = {
+		holder = irmionoth_sjalvolki_12
+		liege = k_irmionoth
+		government = continental_clan_government
+	}
+	1257.2.7 = {
+		holder = brigandines_partic_13
+	}
+	1275.3.24 = {
+		holder = brigandines_partic_15
+	}
+	1281.1.17 = {
+		holder = brigandines_partic_16
+	}
+	1296.5.16 = {
+		holder = brigandines_partic_17
+	}
+	1298.1.1 = {
+		government = feudal_government
+	}
+}
+c_winehouse = {
+
+	1250.1.1 = {
+		holder = irmionoth_sjalvolki_12
+		liege = k_irmionoth
+		government = continental_clan_government
+	}
+	1265.1.1 = {
+		holder = brigandines_partic_5
+		liege = k_redwald
+	}
+	1298.1.1 = {
+		government = feudal_government
+	}
+}
+c_robstrup = {
+	1250.1.1 = {
+		holder = brigandines_partic_20
+		liege = k_adrakamp
+		government = continental_clan_government
+	}
+	1263.6.6 = {
+		holder = brigandines_partic_19
+		liege = k_redwald
+	}
+	1268.2.5 = {
+		holder = brigandines_partic_21
+	}
+	1273.8.15 = {
+		holder = brigandines_partic_22
+		government = feudal_government
+	}
+	1290.11.25 = {
+		holder = brigandines_partic_24
+	}
+}
+c_sjalvolki_islands_3 = {
+	1250.1.1 = {
+		holder = aguadosian_distant_shore_cult_1
+	}
+}
+c_aeldarn = {
+
+	1250.1.1 = {
+		holder = adrakamp_sjalvolki_16
+		liege = d_steinenkirch
+		government = continental_clan_government
+	}
+}
+c_gasseldorf = {
+	1250.1.1 = {
+		holder = adrakamp_sjalvolki_14
+		liege = d_steinenkirch
+		government = continental_clan_government
+	}
+
+	1257.4.19 = {
+		holder = auteonic_partic_2
+		liege = k_redwald
+	}
+
+	1287.3.14 = {
+		holder = auteonic_partic_11
+		government = feudal_government
+	}
+}

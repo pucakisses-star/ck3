@@ -1,0 +1,98 @@
+﻿# Durandae
+amyenarri_aegispact_1 = {
+	name = "BeornrE_d"
+	religion = aegispact
+	culture = sceyfig_lighter
+
+	1212.8.12 = {
+		birth = yes
+	}
+
+	1228.8.12 = {
+		trait = chaste
+		trait = arrogant
+		trait = vengeful
+		trait = education_intrigue_3
+	}
+}
+
+
+# Clarephonyc
+amyenarri_aegispact_2 = {
+	name = "Gospatric"
+	religion = aegispact
+	culture = sceyfig_lighter
+
+	1221.8.30 = {
+		birth = yes
+	}
+	1241.8.30 = {
+		trait = brave
+		trait = greedy
+		trait = forgiving
+		trait = education_martial_2
+	}
+	1251.1.1 = {
+		trait = scarred
+	}
+}
+
+# The Amyenarri
+amyenarri_aegispact_3 = {
+	name = "Eormenred"
+	religion = aegispact
+	culture = sceyfig_lighter
+
+	1194.2.11 = {
+		birth = yes
+	}
+	1214.2.11 = {
+		trait = callous
+		trait = ambitious
+		trait = gregarious
+		trait = education_diplomacy_3
+		trait = magic_good_2
+	}
+	1230.7.6 = {
+		give_nickname = nick_the_whetstone
+	}
+}
+
+# Alcraddozy War Pacts
+amyenarri_aegispact_4 = {
+	name = "Petre"
+	religion = aegispact
+	culture = acraddozy 
+
+	1190.1.1 = {
+		birth = yes
+	}
+
+	1210.1.1 = {
+		trait = wrathful
+		trait = just
+		trait = diligent
+		trait = education_martial_4
+		trait = physique_good_2
+	}
+}
+
+amyenarri_aegispact_5 = {
+	name = "Morcar"
+	religion = aegispact
+	culture = acraddozy
+
+	1215.4.15 = {
+		birth = yes
+	}
+}
+
+amyenarri_aegispact_6 = {
+	name = "Scule"
+	religion = aegispact
+	culture = acraddozy
+
+	1208.9.27 = {
+		birth = yes
+	}
+}

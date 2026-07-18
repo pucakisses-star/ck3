@@ -1,0 +1,43 @@
+﻿iyronisti_iyrossi_aagiokrata_1 = {
+	name = "Tilus"
+	dynasty = dyn_iyrossi_12
+	religion = "iyrossi_aagiokrata"
+	culture = "iyronisti"
+
+	mother = scusstari_iyrossi_aagiokrata_16
+
+	1219.4.12 = {
+		birth = yes
+	}
+}
+
+iyronisti_iyrossi_aagiokrata_2 = {
+	name = "Ongarus"
+	dynasty = dyn_iyrossi_14
+	religion = "iyrossi_aagiokrata"
+	culture = "iyronisti"
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+
+iyronisti_iyrossi_aagiokrata_3 = {
+	name = "Uros"
+	religion = "iyrossi_aagiokrata"
+	culture = "iyronisti"
+
+	1232.1.1 = {
+		birth = yes
+	}
+}
+
+iyronisti_iyrossi_aagiokrata_4 = {
+	name = "Teodosije"
+	religion = "iyrossi_aagiokrata"
+	culture = "iyronisti"
+
+	1232.1.1 = {
+		birth = yes
+	}
+}

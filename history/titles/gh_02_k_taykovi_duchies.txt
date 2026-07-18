@@ -1,0 +1,70 @@
+d_taliron = {
+	1130.6.17 = {
+		holder = easternimperial_aironoian_aagiokrata_58
+		government = feudal_government
+	}
+	1168.3.14 = {
+		holder = easternimperial_aironoian_aagiokrata_13
+		government = feudal_government
+	}
+	1188.9.25 = {
+		holder = easternimperial_aversarian_axiaotheaism_15
+		government = feudal_government
+	}
+	1194.11.7 = {
+		holder = easternimperial_aversarian_axiaotheaism_16
+		government = feudal_government
+	}
+	1218.7.6 = {
+		holder = easternimperial_aversarian_axiaotheaism_18
+		government = feudal_government
+	}
+	1245.10.18 = {
+		holder = easternimperial_aironoian_aagiokrata_5
+		government = pirate_government
+	}
+}
+d_batset = {
+	1169.12.17 = {
+		holder = lattani_sunwarwei_aagiokrata_2
+		government = tribal_government
+	}
+	1200.2.26 = {
+		holder = lattani_sunwarwei_aagiokrata_3
+		government = tribal_government
+	}
+	1218.7.6 = {
+		holder = lattani_sunwarwei_aagiokrata_5
+		government = tribal_government
+	}
+	1242.12.14 = {
+		holder = lattani_sunwarwei_aagiokrata_1
+		government = tribal_government
+	}
+}
+d_serbar = {
+	1130.6.17 = {
+		holder = easternimperial_aironoian_aagiokrata_58
+		government = feudal_government
+	}
+	1168.3.14 = {
+		holder = easternimperial_aironoian_aagiokrata_13
+		government = feudal_government
+	}
+	1188.9.25 = {
+		holder = easternimperial_aversarian_axiaotheaism_15
+		government = feudal_government
+	}
+	1194.11.7 = {
+		holder = easternimperial_aversarian_axiaotheaism_16
+		government = feudal_government
+	}
+	1218.7.6 = {
+		holder = easternimperial_aversarian_axiaotheaism_18
+		government = feudal_government
+	}
+	1245.10.18 = {
+		holder = easternimperial_aversarian_axiaotheaism_14
+		government = feudal_government
+	}
+}

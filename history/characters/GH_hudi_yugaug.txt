@@ -1,0 +1,15 @@
+﻿hudi_yugaug_1 = {
+	name = "Padderi"
+	religion = "yuagaug"
+	culture = "hudi"
+
+	1233.1.1 = {
+		birth = yes
+	}
+	1249.1.1 = {
+		trait = education_learning_2
+		trait = lustful
+		trait = lazy
+		trait = gluttonous
+	}
+}

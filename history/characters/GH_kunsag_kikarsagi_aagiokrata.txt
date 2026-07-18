@@ -1,0 +1,27 @@
+﻿kunsag_kikarsagi_aagiokrata_1 = {
+    name = "Talgat"
+    dynasty = dyn_kikarsag_3
+    religion = "kikarsagi_aagiokrata"
+    culture = "kunsag"
+
+    trait = intellect_good_2
+    trait = education_martial_3
+    trait = disfigured
+
+    1212.4.12 = {
+        birth = yes
+    }
+}
+
+kunsag_kikarsagi_aagiokrata_2 = {
+    name = "Kotyan"
+    dynasty = dyn_kikarsag_4
+    religion = "kikarsagi_aagiokrata"
+    culture = "kunsag"
+
+    trait = education_martial_2
+
+    1222.7.21 = {
+        birth = yes
+    }
+}

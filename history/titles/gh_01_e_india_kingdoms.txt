@@ -1,0 +1,27 @@
+
+k_magiyor = {
+	1250.1.1 = {
+		holder = nargul_ebohephai_olten_1
+		change_development_level = 10
+		government = nomad_government
+	}
+}
+k_kafasali = {
+	1194.4.16 = {
+		holder = rahikaya_vidvaookeyatra_1
+	}
+	1226.6.9 = {
+		holder = rahikaya_vidvaookeyatra_7
+	}
+	1230.1.9 = {
+		holder = rahikaya_vidvaookeyatra_11
+	}
+	1231.4.6 = {
+		holder = 0
+	}
+	1250.1.1 = {
+		holder = nargul_ebohephai_olten_1
+		change_development_level = 10
+		government = nomad_government
+	}
+}

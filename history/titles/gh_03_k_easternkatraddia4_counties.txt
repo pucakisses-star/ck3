@@ -1,0 +1,45 @@
+﻿c_easternkatraddia81 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_brorki = {
+	1.1.1 = {
+		holder = unsorted_15
+	}
+	604.4.5 = {
+		holder = unsorted_48
+	}
+	748.3.21 = {
+		holder = wasteland
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia78 = {
+	1174.4.17 = {
+		holder = apokiakas_aversarinas_aagiokratia_2
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia85 = {
+	1174.4.17 = {
+		holder = apokiakas_aversarinas_aagiokratia_2
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia77 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_southkatraddia_83 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}

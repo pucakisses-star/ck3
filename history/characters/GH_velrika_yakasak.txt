@@ -1,0 +1,9 @@
+﻿velrika_yakasak_1 = {
+	name = "Kasun"
+	culture = "velrika"
+	religion = "yakasak"
+
+	1220.1.1 = {
+		birth = yes
+	}
+}

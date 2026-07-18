@@ -1,0 +1,280 @@
+d_nf_nararin = { # King in 1254 
+	1244.7.1 = {
+		holder = yevanya_vidvaookeyatra_1
+		government = administrative_government
+		liege = k_taleshtadendar
+		succession_laws = { noble_family_succession_law }
+	}
+	1254.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_nf_abhimanyu = { # Talesh border duke
+	1252.8.4 = {
+		holder = yonata_vidvaookeyatra_4
+		liege = k_taleshtadendar
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	1254.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_nf_akhasar = { # Ahkasar Blue-Robe warlord family
+	1183.8.13 = {
+		holder = yonata_vidvaookeyatra_1
+		liege = k_taleshtadendar
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	1200.3.1 = {
+		holder = yonata_vidvaookeyatra_6
+		liege = k_taleshtadendar
+	}
+	1246.10.26 = {
+		holder = yonata_vidvaookeyatra_5
+		liege = k_taleshtadendar
+	}
+	1254.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_nf_iradha = { # Jhenagaon in 1254
+	1243.7.22 = {
+		holder = vaxanaka_vidvaookeyatra_1
+		liege = k_kasharya
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}	
+	1254.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_nf_indrapal = { # Kashti Kings 1254
+	1237.7.23 = {
+		holder = vastarnai_vidvaookeyatra_9
+		government = administrative_government
+		liege = k_kasharya
+		succession_laws = { noble_family_succession_law }
+	}
+	1253.12.27 = {
+		holder = vastarnai_vidvaookeyatra_1
+	}
+	1254.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_nf_bhagwant = { # Scarbound in 1254
+	1250.8.19 = {
+		holder = vastarnai_vidvaookeyatra_3
+		government = administrative_government
+		liege = k_kasharya
+		succession_laws = { noble_family_succession_law }
+	}
+	1254.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_nf_damodar = { # Landless nobles in 1254 
+	1245.6.23 = {
+		holder = vastarnai_vidvaookeyatra_7
+		government = administrative_government
+		liege = k_kasharya
+		succession_laws = { noble_family_succession_law }
+	}
+	1254.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_nf_mariet = { # Landless nobles in 1254 
+	1245.6.23 = {
+		holder = konijkmener_lifepath_122
+		government = administrative_republic_playable_government
+		liege = "k_de_kanzelerij"
+		succession_laws = { noble_family_succession_law }
+	}
+	1254.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_nf_broeg = { # Landless nobles in 1254 
+	1245.6.23 = {
+		holder = konijkmener_lifepath_5
+		government = administrative_republic_playable_government
+		liege = "k_de_kanzelerij"
+		succession_laws = { noble_family_succession_law }
+	}
+	1254.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_nf_driessens = {
+	1150.1.1 = {
+		holder = konijkmener_lifepath_29
+		government = administrative_republic_playable_government
+		liege = "k_de_kanzelerij"
+		succession_laws = { noble_family_succession_law }
+	}
+	1189.7.9 = {
+		holder = konijkmener_lifepath_15
+	}
+	1245.6.2 = {
+		holder = konijkmener_lifepath_8
+	}
+	1254.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_nf_heldt = { # Landless nobles in 1254 
+	1245.6.23 = {
+		holder = konijkmener_lifepath_123
+		government = administrative_republic_playable_government
+		liege = "k_de_kanzelerij"
+		succession_laws = { noble_family_succession_law }
+	}
+	1254.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_nf_haekethaer = { # Landless nobles in 1254 
+	1245.6.23 = {
+		holder = konijkmener_lifepath_13
+		government = administrative_republic_playable_government
+		liege = "k_de_kanzelerij"
+		succession_laws = { noble_family_succession_law }
+	}
+	1254.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_nf_ee = { # Landless nobles in 1254 
+	1245.6.23 = {
+		holder = urdermantern_lifepath_2
+		government = administrative_republic_playable_government
+		liege = "k_de_kanzelerij"
+		succession_laws = { noble_family_succession_law }
+	}
+	1254.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_nf_gistern = { # Landless nobles in 1254 
+	1245.6.23 = {
+		holder = konijkmener_lifepath_3
+		government = administrative_republic_playable_government
+		liege = "k_de_kanzelerij"
+		succession_laws = { noble_family_succession_law }
+	}
+	1254.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_nf_sidilqas = { # Landless nobles in 1254 
+	1245.6.23 = {
+		holder = amuaad_kathsiti_13
+		government = judicial_republic_government
+		liege = "k_disuwai_republic"
+		succession_laws = { noble_family_succession_law }
+	}
+	1254.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+d_nf_bahabeh = { # Landless nobles in 1254 
+	1245.6.23 = {
+		holder = amuaad_kathsiti_49
+		government = judicial_republic_government
+		liege = "k_disuwai_republic"
+		succession_laws = { noble_family_succession_law }
+	}
+	1254.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+d_nf_shuri = { # Landless nobles in 1254 
+	1245.6.23 = {
+		holder = amuaad_kathsiti_47
+		government = judicial_republic_government
+		liege = "k_disuwai_republic"
+		succession_laws = { noble_family_succession_law }
+	}
+	1254.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_nf_muqsidi = { # Landless nobles in 1254 
+	1245.6.23 = {
+		holder = amuaad_kathsiti_48
+		government = judicial_republic_government
+		liege = "k_disuwai_republic"
+		succession_laws = { noble_family_succession_law }
+	}
+	1254.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_nf_ushbiliyy = { # Landless nobles in 1254 
+	1245.6.23 = {
+		holder = amuaad_kathsiti_50
+		government = judicial_republic_government
+		liege = "k_disuwai_republic"
+		succession_laws = { noble_family_succession_law }
+	}
+	1254.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}

@@ -1,0 +1,23 @@
+﻿dawasid_wardenism_1 = {
+	name = "Harthin"
+	religion = "wardenism"
+	culture = "dawasid"
+	female = no
+	1224.7.2 = {
+		birth = yes
+	}
+}
+
+dawasid_wardenism_2 = { # Independent Dawasid pirate
+	name = "Atbir"
+	religion = wardenism
+	culture = dawasid
+
+	trait = greedy
+	trait = deceitful
+	trait = content
+
+	1223.3.4 = {
+		birth = yes
+	}
+}

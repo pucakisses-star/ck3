@@ -1,0 +1,44 @@
+﻿islander_aversarian_axiaotheaism_1 = {
+	name = "Amyris"
+	religion = "aversarian_axiaotheaism"
+	culture = "islander"
+
+	1231.1.29 = {
+		birth = yes
+	}
+	1276.10.6 = {
+		death  = { death_reason = death_disappearance }
+	}
+}
+
+islander_aversarian_axiaotheaism_2 = {
+	name = "Methinodos"
+	religion = "aversarian_axiaotheaism"
+	culture = "islander"
+
+	1223.6.20 = {
+		birth = yes
+	}
+}
+
+islander_aversarian_axiaotheaism_3 = {
+	name = "Crathis"
+	religion = "aversarian_axiaotheaism"
+	culture = "islander"
+	father = islander_aversarian_axiaotheaism_1
+
+	1253.4.30 = {
+		birth = yes
+	}
+}
+
+islander_aversarian_axiaotheaism_4 = {
+	name = "Kaieka"
+	religion = "aversarian_axiaotheaism"
+	culture = "islander"
+	father = islander_aversarian_axiaotheaism_1
+	female = yes
+	1266.11.2 = {
+		birth = yes
+	}
+}

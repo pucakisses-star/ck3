@@ -1,0 +1,49 @@
+﻿ualeren_orgarrd_01 = {
+	name = "Naveed"
+	religion = "orgarrd"
+	culture = "ualeren"
+	
+	1219.5.24 = {
+		birth = yes
+	}
+}
+
+ualeren_orgarrd_02 = {
+	name = "Ayeshah"
+	religion = "orgarrd"
+	culture = "ualeren"
+	
+	1211.7.25 = {
+		birth = yes
+	}
+}
+
+ualeren_orgarrd_03 = {
+	name = "Aurang"
+	religion = "orgarrd"
+	culture = "ualeren"
+	
+	1225.7.16 = {
+		birth = yes
+	}
+}
+
+ualeren_orgarrd_04 = {
+	name = "Babak"
+	religion = "orgarrd"
+	culture = "ualeren"
+	
+	1223.10.24 = {
+		birth = yes
+	}
+}
+
+ualeren_orgarrd_05 = {
+	name = "Hassan"
+	religion = "orgarrd"
+	culture = "ualeren"
+	
+	1228.1.1 = {
+		birth = yes
+	}
+}

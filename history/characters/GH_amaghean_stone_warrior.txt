@@ -1,0 +1,108 @@
+﻿amaghean_stone_warrior_1 = { # Great Amaghean King
+	name = "TharnazGarnaz"
+	religion = "stone_warrior"
+	culture = "amaghean"
+	trait = physique_good_3
+	diplomacy = 5
+	martial = 10
+	stewardship = 6
+	intrigue = 4
+	learning = 5
+	dynasty = dyn_lerrardin_1
+	prowess = 10
+	give_nickname = nick_tharnaz_garnaz
+	father = amaghean_stone_warrior_2
+
+	510.7.3 = {
+		birth = yes
+	}
+	526.7.3 = {
+		trait = education_martial_4
+		trait = brave
+		trait = arbitrary
+		trait = honest
+		trait = zealous
+		trait = kinslayer_3
+		trait = adventurer
+		trait = gh_historical_blademaster_3
+		trait = gh_historical_track_beasthunter_4
+	}
+	592.10.3 = {
+		death = {
+			death_reason = death_battle
+			killer = easternimperial_aversarinas_aagiokrata_75 # Arch-Legan Carthara 'Ironclad'
+		}
+	}
+}
+
+amaghean_stone_warrior_2 = { # His father
+	name = "Hirakle"
+	religion = "stone_warrior"
+	culture = "amaghean"
+	prowess = 8
+	martial = 10
+	intrigue = 0
+	stewardship = 8
+	trait = giant
+	trait = physique_good_2
+	dynasty = dyn_lerrardin_1
+	trait = intellect_good_3
+	give_nickname = nick_king_of_kings_hirakle
+	father = amaghean_stone_warrior_3
+
+	489.3.2 = {
+		birth = yes
+	}
+	505.7.3 = {
+		trait = education_stewardship_4
+		trait = stubborn
+		trait = ambitious
+		trait = just
+		trait = administrator
+	}
+	532.10.3 = {
+		death = {
+			death_reason = death_strangled_with_own_intestines
+			killer = amaghean_stone_warrior_1
+		}
+	}
+}
+
+amaghean_stone_warrior_3 = { # Tharnaz's Grandfather
+	name = "Gurgen"
+	religion = "stone_warrior"
+	culture = "amaghean"
+	trait = physique_good_2
+	dynasty = dyn_lerrardin_1
+	father = amaghean_stone_warrior_4
+
+	473.1.11 = {
+		birth = yes
+	}
+	491.2.22 = {
+		trait = education_martial_1
+		trait = wrathful
+		trait = zealous
+		trait = impatient
+	}
+	509.1.28 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+amaghean_stone_warrior_4 = { # Thrown in to prevent history errors, Gurgen's father
+	name = "Wikjik"
+	religion = "stone_warrior"
+	culture = "amaghean"
+
+	431.5.16 = {
+		birth = yes
+	}
+	495.7.23 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}

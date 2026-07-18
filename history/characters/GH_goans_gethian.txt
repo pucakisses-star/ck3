@@ -1,0 +1,213 @@
+﻿goans_gethian_1 = { # Ruler of the occupation of Narses' realm
+	name = "Tangatha"
+	dna = goans_gethian_1
+	culture = goans
+	religion = gethian
+	
+	dynasty = dyn_goan_2
+	
+	diplomacy = 5
+	martial = 8
+	stewardship = 6
+	intrigue = 5
+	learning = 6
+	
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_mena_04
+			custom_hair = male_hair_fp1_03
+		}
+	}
+
+	1221.11.4 = {
+		birth = yes
+	}
+
+	1238.3.15 = {
+		trait = ambitious
+		trait = humble
+		trait = chaste
+	}
+
+	1239.3.15 = {
+		trait = education_martial_3
+	}
+	
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_sjalvolki
+		effect = {
+			create_character_memory = { # Battle of the Elysian Pass
+				type = fought_in_elysian_pass_sjalvolki
+			}
+		}
+	}
+}
+
+goans_gethian_2 = {
+	name = "Khoya_2"
+	dna = goans_gethian_2
+	dynasty = dyn_goan_1
+	martial = 14
+	diplomacy = 8
+	stewardship = 11
+	intrigue = 6
+	learning = 8
+	religion = "gethian"
+	culture = "goans"
+
+	father = goans_gethian_6
+
+	trait = gregarious
+	trait = arrogant
+	trait = diligent
+	trait = magic_good_2
+
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_custom_04
+			custom_hair = male_hair_steppe_01
+		}
+	}
+
+	1218.4.12 = {
+		birth = yes
+		effect = { set_base_arcana = { AMOUNT = 7 } }
+	}
+
+	1234.4.12 = {
+		trait = gh_historical_blademaster_3
+		trait = education_martial_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+goans_gethian_3 = {
+	name = "Khongtsi" #Wedo
+	dna = goans_gethian_3
+	dynasty = dyn_goan_1
+	martial = 10
+	diplomacy = 15
+	stewardship = 12
+	intrigue = 5
+	learning = 11
+	religion = "gethian"
+	culture = "goans"
+
+	trait = honest
+	trait = craven
+	trait = humble
+	trait = magic_good_3
+	trait = education_diplomacy_3
+
+	father = goans_gethian_6
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_mena_04
+			custom_hair = male_hair_steppe_02
+		}
+	}
+
+	1223.9.27 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 2 }
+		}
+	}
+}
+
+goans_gethian_4 = {
+	name = "Tseng" #Otti
+	religion = "gethian"
+	culture = "goans"
+
+	1221.4.12 = {
+		birth = yes
+	}
+}
+
+goans_gethian_5 = {
+	name = "Khasuk"
+	female = yes
+	religion = "gethian"
+	culture = "goans"
+
+	1229.4.12 = {
+		birth = yes
+	}
+}
+
+goans_gethian_6 = {
+	name = "Anjung" #Angbo
+	dynasty = dyn_goan_1
+	religion = "gethian"
+	culture = "goans"
+
+	martial = 8
+	diplomacy = 7
+	intrigue = 10
+	stewardship = 7
+	learning = 6
+
+	1172.8.11 = {
+		birth = yes
+		trait = magic_good_4
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+		effect = { set_base_arcana = { AMOUNT = 14 } }
+	}
+
+	1184.1.1 = {
+		trait = ambitious
+		trait = brave
+		trait = humble	
+	}
+
+	1188.8.11 = {
+		trait = gh_historical_blademaster_2
+		trait = education_martial_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}	
+	}
+
+	1207.5.23 = {
+		give_nickname = nick_earthshaker
+	}
+
+	1241.3.27 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+goans_gethian_7 = { 
+	name = "Simkhom"
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	female = yes
+	1243.4.5 = {
+		birth = yes
+	}
+
+	1297.3.15 = {
+		death = { death_reason = death_natural_causes }
+	}
+}

@@ -1,0 +1,17 @@
+d_theygundsouth = {
+	1250.1.1 = {
+		change_development_level = 7
+	}
+	1253.2.11 = {
+		holder = theygundarope_aversarian_theygundaropei_aagiokratian_1
+	}
+}
+
+d_west_sjal_duchy = {
+	1250.1.1 = {
+		change_development_level = 8
+	}
+	1253.2.10 = {
+		holder = northernimperial_aversarinas_aagiokrata_11
+	}
+}

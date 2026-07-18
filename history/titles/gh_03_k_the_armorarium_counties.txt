@@ -1,0 +1,59 @@
+c_mayik_ruins_9 = {
+	1250.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_13
+		government = feudal_government
+	}
+}
+#c_mayik_room_10 = {
+#	1250.1.1 = {
+#		holder = practitioner_aversarinas_aagiokrata_13
+#		government = feudal_government
+#	}
+#}
+c_mayik_room_9 = {
+	1182.6.22 = {
+		holder = southernimperial_aversarinas_aagiokrata_20
+		liege = e_mayikprolollan
+		government = magocratic_government
+	}
+	1250.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_13
+		liege = 0
+		government = feudal_government
+	}
+}
+c_mayik_caves_10 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+#c_mayik_room_6 = {
+#	1182.6.22 = {
+#		holder = southernimperial_aversarinas_aagiokrata_20
+#		liege = e_mayikprolollan
+#		government = magocratic_government
+#	}
+#	1227.9.10 = {
+#		holder = wasteland
+#	}
+#}
+#c_mayik_room_8 = {
+#  1200.3.1 = {
+#		holder = wasteland
+#	}
+#}
+c_mayik_caves_11 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_corridor_20 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_room_12 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

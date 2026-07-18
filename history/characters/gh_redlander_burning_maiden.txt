@@ -1,0 +1,53 @@
+﻿redlander_burning_maiden_1 = {
+	name = "Acutun"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1018.5.4 = {
+		birth = yes
+		trait = magic_good_8
+		trait = gh_blackspawn_3
+	}
+}
+
+redlander_burning_maiden_2 = {
+	name = "Vorkan"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1119.5.13 = {
+		birth = yes
+		trait = magic_good_7
+		trait = gh_blackspawn_4
+	}
+}
+
+redlander_burning_maiden_3 = {
+	name = "Valarox"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	731.8.27 = {
+		birth = yes
+		trait = magic_good_12
+		trait = gh_blackspawn_5
+	}
+	747.8.27 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:absolution_of_the_void }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+}
+
+redlander_burning_maiden_4 = {
+	name = "Grasser"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	925.7.7 = {
+		birth = yes
+		trait = magic_good_7
+		trait = gh_blackspawn_4
+	}
+}

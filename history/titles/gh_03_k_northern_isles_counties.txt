@@ -1,0 +1,67 @@
+c_caladan = {
+	1250.1.1 = {
+		change_development_level = 5
+	}
+	1251.1.1 = {
+		holder = guillater_favoured_ones_1
+	}
+}
+c_thisexists = {
+	1251.1.1 = {
+		holder = lorodegi_cult_of_the_bitter_wave_2
+	}
+}
+c_ioninsplendorax = {
+	1186.1.1 = {
+		holder = voyagen_lifepath_23
+	}
+	1251.1.1 = {
+		holder = lorodegi_cult_of_the_bitter_wave_3
+	}
+}
+c_trios = {
+	1251.1.1 = {
+		holder = lorodegi_hero_religion_2
+	}
+}
+c_ladanisaxat = {
+	1251.1.1 = {
+		holder = anorlori_hero_religion_2
+	}
+}
+c_hotiron = {
+	1251.1.1 = {
+		holder = anorlori_hero_religion_1
+	}
+}
+c_caladanisaxat = {
+	1251.1.1 = {
+		holder = aguadosian_distant_shore_cult_1
+	}
+}
+c_perlepe = {
+	1251.1.1 = {
+		holder = anorlori_hero_religion_3
+	}
+}
+c_mithradeax = {
+	1251.1.1 = {
+		holder = gisreddean_lifepath_2
+	}
+}
+c_lioninsplendor = {
+	1249.1.1 = {
+		holder = diorenic_abathonic_cult_3
+	}
+}
+c_provincepaiene = {
+	1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}
+c_anerioloxon = {
+	1251.1.1 = {
+		holder = anorlori_abathonic_cult_1
+	}
+}

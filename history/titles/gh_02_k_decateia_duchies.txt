@@ -1,0 +1,70 @@
+d_dawn = {
+	1220.1.1 = { change_development_level = 5 }
+	
+	1248.1.1 = {
+		holder = fenvir_sjalvolki_20
+		liege = k_fenvir
+		government = continental_clan_government
+	}
+}
+
+d_cythioch = {
+	1095.6.22 = {
+		holder = westernimperial_aversarinas_aagiokrata_130
+		government = feudal_government
+	}
+	1109.12.7 = {
+		holder = westernimperial_aversarinas_aagiokrata_485
+	}
+	1116.7.18 = {
+		holder = southernimperial_aversarinas_aagiokrata_110
+	}
+	1187.10.18 = {
+		holder = southernimperial_aversarinas_aagiokrata_111
+	}
+	1200.3.1 = {
+		holder = southernimperial_aversarinas_aagiokrata_113
+	}
+	1248.10.10 = {
+		holder = fenvir_sjalvolki_23
+		liege = k_fenvir
+		government = continental_clan_government
+		change_development_level = 2
+	}
+
+}
+
+d_cyrydon = {
+	1251.4.14 = {
+		holder = southernimperial_aversarinas_aagiokrata_66
+		government = military_unit_government
+		change_development_level = 3
+	}
+	1274.6.19 = {
+		holder = greulokin_sjalvolki_6
+	}
+	1275.9.2 = {
+		liege = k_day
+	}
+	1289.9.25 = {
+		holder = greulokin_sjalvolki_37
+	}
+}
+
+#d_decateia_isles1a = {
+#	1247.3.15 = { # First isle taken by Cormag as he hit east after finishing off the Aversarians with Cenware at Ten Trees (and then stealing all the boats and fucking off)
+#		holder = fenvir_sjalvolki_6
+#		liege = k_fenvir
+#		government = tribal_government
+#	}
+#}
+
+d_aeric_noon = {
+	1234.5.23 = {
+		holder = karzarads_kakarataki_5
+	}
+	1238.3.21 = {
+		holder = southernimperial_aversarian_gorassos_1
+		change_development_level = 3
+	}
+}

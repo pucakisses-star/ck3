@@ -1,0 +1,54 @@
+﻿redlander_bloody_feast_1 = {
+	name = "Streder"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1034.9.24 = {
+		birth = yes
+		trait = magic_good_6
+		trait = gh_blackspawn_3
+	}
+}
+
+redlander_bloody_feast_2 = {
+	name = "Wedec"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	819.6.20 = {
+		birth = yes
+		trait = magic_good_7
+		trait = gh_blackspawn_4
+	}
+}
+
+redlander_bloody_feast_3 = {
+	name = "Argun"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1153.3.7 = {
+		birth = yes
+		trait = magic_good_8
+		trait = gh_blackspawn_1
+	}
+}
+
+redlander_bloody_feast_4 = {
+	name = "Drem"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	709.12.28 = {
+		birth = yes
+		trait = magic_good_9
+		trait = gh_blackspawn_4
+	}
+	
+	725.12.28 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:absolution_of_the_void }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+}

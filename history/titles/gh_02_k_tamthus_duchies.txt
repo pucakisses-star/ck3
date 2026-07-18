@@ -1,0 +1,6 @@
+#d_hibthos = {
+#	1230.1.1 = {
+#		holder = surugin_ehatm_4
+#		government = tribal_government
+#	}
+#}

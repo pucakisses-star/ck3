@@ -1,0 +1,74 @@
+c_tebidike = {
+	1250.1.1 = {
+		change_development_level = 2
+	}
+	1251.1.1 = {
+		holder = guillater_seaborne_exalted_3
+		government = pirate_government
+	}
+}
+c_smli = {
+	1250.1.1 = {
+		change_development_level = 8
+	}
+	1251.1.1 = {
+		holder = guillater_hero_religion_5
+	}
+}
+c_mezous = {
+	1186.1.1 = {
+		holder = voyagen_lifepath_23
+	}
+	1250.1.1 = {
+		change_development_level = 6
+	}
+	1251.1.1 = {
+		holder = voyagen_darrallianism_1
+	}
+}
+c_ioulianoseras = {
+	1250.1.1 = {
+		change_development_level = 7
+	}
+	1251.1.1 = {
+		holder = guillater_hero_religion_7
+	}
+}
+c_raphaildothex = {
+	1250.1.1 = {
+		change_development_level = 6
+	}
+	1251.1.1 = {
+		holder = guillater_hero_religion_10
+	}
+}
+c_knodlylia = {
+	1251.1.1 = {
+		holder = guillater_biblosxar_1
+	}
+}
+c_meceris = {
+	1251.1.1 = {
+		holder = lorodegi_cult_of_the_bitter_wave_1
+	}
+}
+c_thestate = {
+	1251.1.1 = {
+		holder = guillater_hero_religion_8
+	}
+}
+c_gamerlandia = {
+	1251.1.1 = {
+		holder = guillater_hero_religion_9
+	}
+}
+c_bigisle = {
+	1251.1.1 = {
+		holder = guillater_calystoanistism_2
+	}
+}
+c_the_devil_isles = {
+	1.1.1 = {
+		holder = wasteland
+	}
+}

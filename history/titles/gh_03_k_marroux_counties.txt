@@ -1,0 +1,421 @@
+c_troscease = {
+	1092.4.19 = {
+		holder = salisians_lifepath_39
+	}
+	1130.2.20 = {
+		holder = salisians_lifepath_40
+	}
+	1151.7.2 = {
+		holder = salisians_lifepath_41
+	}
+	1184.11.20 = {
+		holder = salisians_lifepath_15
+	}
+	1221.6.1 = {
+		holder = salisians_lifepath_16
+	}
+	1227.10.19 = {
+		holder = salisians_lifepath_2
+	}
+
+	1253.11.16 = { 
+		liege = "d_varusiex"
+		holder = trustians_lifepath_15
+	}
+}
+c_veressirlaluc = { 
+	1205.8.24 = { 
+		liege = "d_varusiex"
+		holder = salisians_lifepath_42
+	}
+	1225.7.11 = { 
+		liege = "d_varusiex"
+		holder = salisians_lifepath_43
+	}
+	1230.1.1 = { 
+		change_development_level = 11 
+	}
+}
+c_gideureux = {
+	1203.12.13 = {
+		liege = "d_varusiex"
+		holder = salisians_lifepath_44
+	}
+	1222.5.20 = {
+		liege = "d_varusiex"
+		holder = salisians_lifepath_7
+	} 
+	1242.4.26 = { 
+		liege = "d_varusiex"
+		holder = salisians_lifepath_2
+	}
+	1230.1.1 = { 
+		change_development_level = 11 
+	}
+}
+c_puiveres = {
+	1203.12.13 = {
+		liege = "d_varusiex"
+		holder = salisians_lifepath_44
+	}
+	1222.5.20 = {
+		liege = "d_varusiex"
+		holder = salisians_lifepath_7
+	} 
+	1242.4.26 = { 
+		liege = "d_varusiex"
+		holder = salisians_lifepath_2
+	}
+	1230.1.1 = { 
+		change_development_level = 11 
+	}
+}
+c_quitues = { 
+	875.2.10 = {
+		holder = salisians_lifepath_11
+	}
+
+	903.4.4 = {
+		holder = salisians_lifepath_12
+	}
+
+	935.1.12 = {
+		holder = salisians_lifepath_28
+	}
+
+	985.2.7 = {
+		holder = salisians_lifepath_29
+	}
+
+	1003.3.12 = {
+		holder = salisians_lifepath_30
+	}
+	
+	1025.2.9 = {
+		holder = salisians_lifepath_31
+	}
+
+	1074.2.5 = {
+		holder = salisians_lifepath_32
+	}
+
+	1090.7.6 = {
+		holder = salisians_lifepath_33
+	}
+
+	1117.11.6 = {
+		holder = salisians_lifepath_9
+	}
+
+	1143.3.25 = {
+		holder = salisians_lifepath_8
+	}
+
+	1150.6.13 = {
+		holder = carsavisians_lifepath_37
+	}
+
+	1190.7.13 = {
+		holder = carsavisians_lifepath_38
+	}
+
+	1226.8.14 = {
+		holder = voyagen_lifepath_1
+	}
+
+	1227.10.19 = { # Granted by Gardfrei
+		holder = salisians_lifepath_7
+	}
+
+	1242.4.26 = {
+		holder = salisians_lifepath_2
+	}
+	1230.1.1 = { 
+		change_development_level = 11 
+	}
+}
+c_zaex = { 
+	875.2.10 = {
+		holder = salisians_lifepath_11
+	}
+
+	903.4.4 = {
+		holder = salisians_lifepath_12
+	}
+
+	935.1.12 = {
+		holder = salisians_lifepath_28
+	}
+
+	985.2.7 = {
+		holder = salisians_lifepath_29
+	}
+
+	1003.3.12 = {
+		holder = salisians_lifepath_30
+	}
+
+	1025.2.9 = {
+		holder = salisians_lifepath_31
+	}
+
+	1074.2.5 = {
+		holder = salisians_lifepath_32
+	}
+
+	1090.7.6 = {
+		holder = salisians_lifepath_33
+	}
+
+	1117.11.6 = {
+		holder = salisians_lifepath_9
+	}
+
+	1143.3.25 = {
+		holder = salisians_lifepath_8
+	}
+
+	1183.2.2 = {
+		holder = salisians_lifepath_7
+	}
+
+	1242.4.26 = {
+		holder = salisians_lifepath_2
+	}
+	1230.1.1 = { 
+		change_development_level = 11 
+	}
+}
+c_devahux = {
+	875.2.10 = {
+		holder = salisians_lifepath_11
+	}
+
+	903.4.4 = {
+		holder = salisians_lifepath_12
+	}
+
+	935.1.12 = {
+		holder = salisians_lifepath_28
+	}
+
+	985.2.7 = {
+		holder = salisians_lifepath_29
+	}
+
+	1003.3.12 = {
+		holder = salisians_lifepath_30
+	}
+	
+	1025.2.9 = {
+		holder = salisians_lifepath_31
+	}
+
+	1074.2.5 = {
+		holder = salisians_lifepath_32
+	}
+
+	1090.7.6 = {
+		holder = salisians_lifepath_33
+	}
+
+	1117.11.6 = {
+		holder = salisians_lifepath_9
+	}
+
+	1143.3.25 = {
+		holder = salisians_lifepath_8
+	}
+
+	1150.6.13 = {
+		holder = carsavisians_lifepath_37
+	}
+
+	1190.7.13 = {
+		holder = carsavisians_lifepath_38
+	}
+
+	1226.8.14 = {
+		holder = voyagen_lifepath_1
+	}
+
+	1227.10.19 = { # Granted by Gardfrei
+		holder = salisians_lifepath_7
+	}
+
+	1242.4.26 = {
+		holder = salisians_lifepath_2
+	}
+	1230.1.1 = { 
+		change_development_level = 11 
+	}
+}
+c_bereque = {
+	1044.4.22 = {
+		holder = salisians_lifepath_37
+	}
+	1066.11.25 = {
+		holder = salisians_lifepath_38
+	}
+	1078.1.17 = {
+		holder = salisians_lifepath_39
+	}
+	1130.2.20 = {
+		holder = salisians_lifepath_40
+	}
+	1151.7.2 = {
+		holder = salisians_lifepath_41
+	}
+	1184.11.20 = {
+		holder = salisians_lifepath_15
+	}
+
+	1221.6.1 = {
+		holder = salisians_lifepath_16
+	}
+
+	1227.10.19 = { 
+		liege = "k_marroux"
+		holder = salisians_lifepath_4
+	}
+}
+
+c_araine = {
+	1044.4.22 = {
+		holder = salisians_lifepath_37
+	}
+	1066.11.25 = {
+		holder = salisians_lifepath_38
+	}
+	1078.1.17 = {
+		holder = salisians_lifepath_39
+	}
+	1130.2.20 = {
+		holder = salisians_lifepath_40
+	}
+	1151.7.2 = {
+		holder = salisians_lifepath_41
+	}
+	1184.11.20 = {
+		holder = salisians_lifepath_15
+	}
+
+	1221.6.1 = {
+		holder = salisians_lifepath_16
+	}
+
+	1227.10.19 = { 
+		liege = "k_marroux"
+		holder = salisians_lifepath_4
+	}
+}
+
+c_udgerigt = {
+	1044.4.22 = {
+		holder = salisians_lifepath_37
+	}
+	1066.11.25 = {
+		holder = salisians_lifepath_38
+	}
+	1078.1.17 = {
+		holder = salisians_lifepath_39
+	}
+	1130.2.20 = {
+		holder = salisians_lifepath_40
+	}
+	1151.7.2 = {
+		holder = salisians_lifepath_41
+	}
+	1184.11.20 = {
+		holder = salisians_lifepath_15
+	}
+
+	1221.6.1 = {
+		holder = salisians_lifepath_16
+	}
+
+	1227.10.19 = { 
+		liege = "k_marroux"
+		holder = salisians_lifepath_4
+	}
+}
+c_brabein = { 
+	1152.8.30 = {
+		holder = leegenders_lifepath_5
+	}
+
+	1210.4.14 = {
+		holder = leegenders_lifepath_6
+	}
+
+	1230.1.1 = { 
+		change_development_level = 13 
+	}
+
+	1233.6.1 = {
+		holder = leegenders_lifepath_8
+	}
+
+	1251.10.11 = { 
+		liege = "k_marroux"
+		holder = leegenders_lifepath_1
+	}
+}
+c_deleceu = {
+	1251.10.11 = { 
+		liege = "k_marroux"
+		holder = leegenders_lifepath_1
+	}
+}
+c_sorveue = { 
+	1253.11.16 = { 
+		liege = "d_varusiex"
+		holder = salisians_lifepath_5
+	}
+}
+#c_saychond = { 
+#	1253.11.16 = { 
+#		liege = "d_baresc"
+#		holder = leegenders_lifepath_4
+#	}
+#}
+c_proffengeim = { 
+	1152.8.30 = {
+		holder = leegenders_lifepath_5
+	}
+	1210.4.14 = {
+		holder = leegenders_lifepath_6
+	}
+	1230.1.1 = { 
+		change_development_level = 13 
+	}
+	1233.6.1 = {
+		holder = leegenders_lifepath_8
+	}
+	1253.11.16 = { 
+		liege = "d_baresc"
+		holder = leegenders_lifepath_2
+	}
+}
+c_gravgosc = {
+	1.1.2 = {
+		holder = unsorted_30
+	}
+	1213.11.18 = {
+		holder = rivarisians_lifepath_4
+	}
+	1227.4.30 = {
+		holder = voyagen_lifepath_1
+	}
+	1253.11.12 = {
+		holder = salisians_lifepath_1
+	}
+}
+c_vavrican = {
+	1.1.2 = {
+		holder = unsorted_29
+	}
+	1253.11.12 = {
+		holder = salisians_lifepath_1
+	}
+}

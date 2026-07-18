@@ -1,0 +1,48 @@
+﻿oejeynica_gravewatch_1 = {
+	name = "SzaweL_"
+	dynasty = dyn_ojycz_2
+	religion = "gravewatch"
+	culture = "oejeynica"
+
+	1220.11.23 = {
+		birth = yes
+	}
+
+	1240.1.1 = {
+		add_spouse = oejeynica_graveright_5
+	}
+}
+
+oejeynica_gravewatch_2 = {
+	name = "Magniew"
+	dynasty = dyn_ojycz_3
+	religion = "gravewatch"
+	culture = "oejeynica"
+	trait = gh_peasant_birth
+
+	725.1.1 = {
+		birth = yes
+	}
+
+	775.1.1 = {
+		trait = typhus
+		death = { death_reason = death_typhus }
+	}
+}
+
+oejeynica_gravewatch_3 = {
+	name = "ArL_ew"
+	dynasty = dyn_ojycz_3
+	religion = "gravewatch"
+	culture = "oejeynica"
+	
+	father = oejeynica_gravewatch_2
+
+	769.1.1 = {
+		birth = yes
+	}
+
+	776.1.1 = {
+		death = { death_reason = death_poison }
+	}
+}

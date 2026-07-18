@@ -1,0 +1,74 @@
+c_byzenes = {
+	1251.4.14 = {
+		holder = practitioner_aversarinas_aagiokrata_16
+	}
+}
+#c_ultos = {
+#	1251.4.14 = {
+#		holder = practitioner_aversarinas_aagiokrata_16
+#	}
+#}
+#c_psacus_isles1a = {
+#	1251.4.14 = {
+#		holder = practitioner_aversarinas_aagiokrata_16
+#	}
+#}
+c_kameirigus = {
+	1251.4.14 = {
+		holder = practitioner_aversarinas_aagiokrata_17
+		# liege = d_psacus # GH TODO: Removed in province rework, replace
+	}
+}
+c_askorus = {
+	1251.4.14 = {
+		holder = practitioner_aversarinas_aagiokrata_18
+		# liege = d_psacus # GH TODO: Removed in province rework, replace
+	}
+}
+c_diviners_shore = {
+	1078.1.5 = {
+		holder = southislander_aversarinas_aagiokrata_1
+		# liege = d_psacus # GH TODO: Removed in province rework, replace
+	}
+	1251.4.14 = {
+		holder = practitioner_aversarinas_aagiokrata_20
+	}
+}
+c_ayetos_isles1c = {
+	1251.4.14 = {
+		holder = enynanthari_mountain_sun_temple_1
+		change_development_level = 4
+	}
+}
+c_ialissos = {
+	1191.1.4 = {
+		holder = southislander_black_fraternity_1
+		liege = 0
+	}
+	1251.4.14 = {
+		holder = southernimperial_aversarinas_aagiokrata_61
+		liege = 0
+	}
+}
+c_kamaramum_isles1c = {
+	1251.4.14 = {
+		holder = southernimperial_aversarinas_aagiokrata_61
+		liege = 0
+	}
+}
+c_kamaramumisles1e = {
+	1251.4.14 = {
+		holder = southernimperial_aversarinas_aagiokrata_61
+		liege = 0
+	}
+}
+c_opakisles1c = {
+	1251.4.14 = {
+		holder = lakaloi_calystoanistism_1
+	}
+}
+c_opakisles1f = {
+	1251.4.14 = {
+		holder = lakaloi_aversarinas_aagiokrata_3
+	}
+}

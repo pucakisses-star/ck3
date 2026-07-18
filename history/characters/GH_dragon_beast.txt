@@ -1,0 +1,181 @@
+﻿dragon_beast_1 = { # Arthenax
+	name = "Arthenax"
+	religion = beast
+	culture = gh_dragon_culture
+
+	female = yes
+
+	disallow_random_traits = yes
+
+	169.10.13 = {
+		birth = yes
+	}
+	181.1.1 = {
+		trait = arrogant
+		trait = wrathful
+		trait = vengeful
+		trait = gh_dragon_black
+	}
+	439.5.4 = {
+		death = {
+			death_reason = death_magic_fire
+			killer = westernimperial_aversarinas_aagiokrata_500
+		}
+	}
+}
+
+dragon_beast_2 = {
+	name = "Iluthunax"
+	religion = beast
+	culture = gh_dragon_culture
+	female = yes
+
+	mother = dragon_beast_1
+
+	disallow_random_traits = yes
+
+	261.11.11 = {
+		birth = yes
+	}
+	273.1.1 = {
+		trait = brave
+		trait = arbitrary
+		trait = fickle
+		trait = gh_dragon_black
+	}
+	439.5.4 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+dragon_beast_3 = {
+	name = "Parthagad"
+	religion = beast
+	culture = gh_dragon_culture
+
+	mother = dragon_beast_1
+
+	disallow_random_traits = yes
+
+	287.9.15 = {
+		birth = yes
+	}
+	299.1.1 = {
+		trait = zealous
+		trait = gluttonous
+		trait = lazy
+		trait = gh_dragon_red
+	}
+	439.5.4 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+dragon_beast_4 = {
+	name = "Olaxanat"
+	religion = beast
+	culture = gh_dragon_culture
+
+	mother = dragon_beast_1
+
+	disallow_random_traits = yes
+
+	350.2.9 = {
+		birth = yes
+	}
+	362.1.1 = {
+		trait = deceitful
+		trait = greedy
+		trait = paranoid
+		trait = gh_dragon_blue
+	}
+	439.5.4 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+dragon_beast_5 = {
+	name = "Kutharax"
+	religion = beast
+	culture = gh_dragon_culture
+	female = yes
+
+	mother = dragon_beast_1
+
+	disallow_random_traits = yes
+
+	382.6.14 = {
+		birth = yes
+	}
+	394.1.1 = {
+		trait = ambitious
+		trait = arrogant
+		trait = vengeful
+		trait = gh_dragon_green
+	}
+	439.5.4 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+dragon_beast_6 = {
+	name = "Anatarianax"
+	religion = beast
+	culture = gh_dragon_culture
+	female = yes
+
+	disallow_random_traits = yes
+
+	8.1.12 = {
+		birth = yes
+	}
+	20.1.1 = {
+		trait = compassionate
+		trait = arrogant
+		trait = calm
+		trait = gh_dragon_red
+	}
+	170.7.11 = {
+		death = {
+			death_reason = death_torture
+			killer = aelarvisian_aversarinas_aagiokrata_3
+		}
+	}
+}
+
+# Tyrandax 'the Dragon-King' - an Aversarian dragon that successfully fled the dragon-purges at the conclusion of the War of the Thousand Dragons, he would eventually arrive at the Decceccad realm of Carnacthur (spanning the modern Kepyran basin) where he would overthrow the reigning monarch, Maevis, and in an almost unprecedent move proceed to directly declare himself the king of the human realm. 
+# Though he would hold the kingship directly, and even occasionally indulge in rituals such as holding court, the actual day-to-day minutae of running the realm would be handled by the sorcerer known as Aedean 'Evil-Eye'. The reign of the duo would come to be remembered as a dark time of tyrannical rule. Avaricious and cruel, Tyrandax would spend most of his time brooding over his vast hoard of wealth and artifacts, only occasionally emerging to indulge in 'dispensing justice' (AKA tormenting and pillaging his subjects and occasionally neighboring lands). The Aautokrata would on numerous occasions send adventurers to attempt to slay the dragon, but the fact that Tyrandax had an entire army at his disposal significantly complicated these efforts compared to most other surviving dragons who hid in the wilds instead.
+# The dragon would ultimately be slain by an adventurer known as Clothar. Though said to be a humble shepherd who would slay the dragon through trickery involving decoy sheep stuffed with saltpeter, in actuality he was the leader of a Marcher warband that was campaigning throughout the Pathos basin as mercenaries before starting an invasion of the Kepyran basin. Though there is evidence to suggest that some kind of trickery was involved in the dragon's defeat, the his death ultimately came due to being outnumbered in battle and either failing (or refusing) to flee. Though a vast amount of treasure was found at the spire from which he was ruling, there is lingering myth that this was only a part of the dragon's hoard, most having been hidden away elsewhere
+dragon_beast_7 = {
+	name = "Tyrandax"
+	religion = beast
+	culture = gh_dragon_culture
+	female = yes
+
+	disallow_random_traits = yes
+
+	15.7.26 = {
+		birth = yes
+		trait = gh_dragon_green
+	}
+	50.1.1 = {
+		trait = sadistic
+		trait = arrogant
+		trait = ambitious
+	}
+	184.5.7 = {
+		death = {
+			death_reason = death_battle
+			killer = etrandanexi_lifepath_3
+		}
+	}
+}
+

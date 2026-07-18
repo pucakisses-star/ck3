@@ -1,0 +1,83 @@
+﻿redlander_speaking_moon_1 = {
+	name = "Hazen"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1221.3.3 = {
+		birth = yes
+		trait = magic_good_2
+	}
+}
+
+redlander_speaking_moon_2 = {
+	name = "Semid"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1201.3.10 = {
+		birth = yes
+		trait = magic_good_5
+	}
+}
+
+redlander_speaking_moon_3 = {
+	name = "Mon"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1226.11.1 = {
+		birth = yes
+		trait = magic_good_3
+	}
+}
+
+redlander_speaking_moon_4 = {
+	name = "Quwas"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1223.11.14 = {
+		birth = yes
+		trait = magic_good_1
+	}
+}
+
+redlander_speaking_moon_5 = {
+	name = "Klysx"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1225.8.7 = {
+		birth = yes
+		trait = magic_good_4
+	}
+}
+
+redlander_speaking_moon_6 = {
+	name = "Zaron"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1230.10.14 = {
+		birth = yes
+		trait = magic_good_2
+	}
+}
+
+redlander_speaking_moon_7 = {
+	name = "Mon"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1106.11.5 = {
+		birth = yes
+		trait = magic_good_5
+		trait = gh_blackspawn_1
+	}
+	1122.11.5 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:absolution_of_the_void }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}

@@ -1,0 +1,131 @@
+c_havneby = {
+	1230.9.11 = {
+		holder = northernimperial_aversarinas_aagiokrata_55
+		liege = 0
+		government = military_unit_government
+	}
+	1247.3.15 = {
+		holder = auteonic_partic_2
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1269.6.17 = {
+		liege = k_redwald
+	}
+	1269.6.17 = {
+
+		holder = brigandines_partic_25
+		liege = k_redwald
+		government = feudal_government	
+	}
+}
+c_tlestky = {
+	1227.4.14 = {
+		holder = northernimperial_aversarinas_aagiokrata_53
+		liege = k_governorate_cornucopia_kingdom
+		government = magocratic_government
+	}
+	1247.3.15 = {
+		holder = ordikin_mothers_and_fathers_14
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1267.4.3 = {
+		holder = ordikin_mothers_and_fathers_8
+	}
+	1271.4.18 = {
+		holder = brigandines_partic_25
+		liege = k_redwald
+		government = feudal_government	
+	}
+}
+c_sjalvolki_islands_2 = {
+	1250.1.1 = {
+		holder = ordikin_mothers_and_fathers_14
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1267.4.3 = {
+		holder = ordikin_mothers_and_fathers_8
+	}
+	1285.4.2 = {
+		holder = urdermantern_lifepath_10
+		liege = 0
+		government = republic_playable_government
+	}
+}
+c_smokehouse = {
+	1250.1.1 = {
+		holder = vrodkin_sjalvolki_16
+		liege = k_vrodkin
+		government = continental_clan_government
+	}
+	1274.3.21 = {
+		holder = kaskader_sjalvolki_1
+		liege = 0
+	}
+	1298.1.1 = {
+		government = feudal_government
+	}
+}
+c_sedgefield = {
+	1250.1.1 = {
+		holder = adrakamp_sjalvolki_4
+		government = continental_clan_government
+	}
+	1263.5.30 = {
+		holder = corvosnari_wyrdpath_2
+	}
+	1298.1.1 = {
+		liege = 0
+	}
+}
+c_gabrados = {
+	1250.1.1 = {
+		holder = adrakamp_sjalvolki_4
+		government = continental_clan_government
+	}
+	1263.5.30 = {
+		holder = corvosnari_wyrdpath_2
+	}
+	1298.1.1 = {
+		liege = 0
+	}
+}
+c_dillingen = {
+	1175.7.29 = {
+		holder = northernimperial_aversarinas_aagiokrata_38
+		liege = e_cornucopia
+		government = feudal_government
+	}
+	1191.1.25 = {
+		holder = northernimperial_aversarinas_aagiokrata_37
+	}
+	1200.3.1 = {
+		holder = northernimperial_aversarinas_aagiokrata_39
+	}
+	1247.3.15 = {
+		holder = corvosnari_wyrdpath_3
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1259.3.26 = {
+		liege = 0
+	}
+}
+c_voukrynis = {
+	1244.7.3 = {
+		holder = etrandanexi_aversarinas_aagiokrata_1
+		liege = e_migrant_coalition
+		government = feudal_government
+	}
+	1259.3.15 = {
+		holder = corvosnari_wyrdpath_1
+	}
+}
+c_underclans = {
+	1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}

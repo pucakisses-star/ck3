@@ -1,0 +1,72 @@
+#d_athpal = {
+#	1251.1.1 = {
+#		holder = siklasa_dravadari_1
+#		change_development_level = 8
+#	}
+#}
+d_omkhlur = {
+	1100.2.8 = {
+		holder = sindaara_vidvaookeyatra_14
+		change_development_level = 9
+	}
+	1127.11.5 = {
+		holder = sindaara_vidvaookeyatra_13
+	}
+	1166.11.5 = {
+		holder = sindaara_vidvaookeyatra_10
+	}
+	1200.3.1 = {
+		holder = sindaara_vidvaookeyatra_6
+	}
+	1230.11.2 = {
+		holder = sindaara_vidvaookeyatra_7
+	}
+	1231.2.4 = {
+		holder = sindaara_vidvaookeyatra_8
+	}
+	1231.12.1 = {
+		holder = sindaara_vidvaookeyatra_9
+	}
+	1231.12.6 = {
+		holder = sindaara_vidvaookeyatra_5
+	}
+	1236.11.2 = {
+		holder = sindaara_vidvaookeyatra_1
+	}
+}
+d_south_kashirya_1 = {
+	750.12.14 = {
+		holder = watumimba_corkkattirkana_30
+	}
+	778.1.3 = {
+		holder = watumimba_corkkattirkana_32
+	}
+	788.10.6 = {
+		holder = watumimba_corkkattirkana_34
+	}
+	801.11.29 = {
+		holder = watumimba_corkkattirkana_36
+	}
+	818.7.22 = {
+		holder = watumimba_corkkattirkana_37
+	}
+	820.2.1 = {
+		holder = watumimba_corkkattirkana_38
+	}
+	820.10.3 = { 
+		holder = watumimba_corkkattirkana_39
+	}
+	847.3.1 = {
+		holder = watumimba_corkkattirkana_45
+	}
+	899.12.29 = {
+		holder = 0
+	}
+	1210.11.12 = {
+		holder = vanaarik_yakasak_1
+		change_development_level = 9
+	}
+	1234.3.2 = {
+		holder = 0
+	}
+}

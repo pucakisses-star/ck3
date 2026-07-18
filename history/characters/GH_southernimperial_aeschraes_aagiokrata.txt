@@ -1,0 +1,164 @@
+﻿southernimperial_aeschraes_aagiokrata_1 = { # Pridni the Younger, Opakhasian warlord slain by Gorassos
+	name = "Pridni"
+	religion = "aversarinas_aagiokrata"
+	culture = "southernimperial"
+
+	dynasty = dyn_aversarian_91
+	sexuality = heterosexual
+
+	father = southernimperial_aversarinas_aagiokrata_17
+
+	martial = 8
+	diplomacy = 6
+	stewardship = 4
+	intrigue = 6
+	learning = 5
+	prowess = 9
+
+	1163.3.22 = {
+		birth = yes
+		trait = magic_good_2
+		give_nickname = nick_the_younger
+	}
+
+	1175.1.1 = {
+		trait = ambitious
+		trait = impatient
+		trait = arbitrary
+	}
+
+	1179.3.22 = {
+		trait = education_martial_3
+	}
+
+	1200.3.1 = {
+		religion = "aeschraes_aagiokrata"
+		trait = lunatic_1 # Went insane after the death of his daughter and wife
+	}
+
+	1230.10.27 = {
+		death = {
+			death_reason = death_heart_ripped_out
+			killer = southernimperial_aversarian_gorassos_1
+		}
+	}
+}
+
+southernimperial_aeschraes_aagiokrata_2 = { # Pridni the Younger's children from second marriage
+	name = "Zenirion"
+	religion = "aeschraes_aagiokrata"
+	culture = "southernimperial"
+
+	dynasty = dyn_aversarian_91
+	sexuality = heterosexual
+
+	father = southernimperial_aeschraes_aagiokrata_1
+
+	martial = 7
+	diplomacy = 3
+	stewardship = 6
+	intrigue = 3
+	learning = 7
+	prowess = 7
+
+	1208.10.22 = {
+		birth = yes
+		trait = magic_good_2
+		trait = twin
+	}
+
+	1220.1.1 = {
+		trait = arrogant
+		trait = content
+		trait = callous
+	}
+
+	1224.10.22 = {
+		trait = education_diplomacy_2
+	}
+
+	1230.10.27 = {
+		death = {
+			death_reason = death_beaten
+			killer = southernimperial_aversarian_gorassos_2
+		}
+	}
+}
+
+southernimperial_aeschraes_aagiokrata_3 = { # Pridni the Younger's children from second marriage
+	name = "Sotraniona"
+	religion = "aeschraes_aagiokrata"
+	culture = "southernimperial"
+
+	dynasty = dyn_aversarian_91
+	sexuality = heterosexual
+	female = yes
+
+	father = southernimperial_aeschraes_aagiokrata_1
+
+	martial = 7
+	diplomacy = 5
+	stewardship = 7
+	intrigue = 6
+	learning = 7
+	prowess = 4
+
+	1208.10.22 = {
+		birth = yes
+		trait = magic_good_4
+		trait = twin
+	}
+
+	1220.1.1 = {
+		trait = zealous
+		trait = stubborn
+		trait = lazy
+	}
+
+	1224.10.22 = {
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1230.10.27 = {
+		death = {
+			death_reason = death_ripped_apart_limb_by_limb
+			killer = southernimperial_aversarian_gorassos_1
+		}
+	}
+}
+
+southernimperial_aeschraes_aagiokrata_4 = { # Pridni the Younger's grandson
+	name = "Eramasion"
+	religion = "aeschraes_aagiokrata"
+	culture = "southernimperial"
+
+	dynasty = dyn_aversarian_91
+	sexuality = heterosexual
+	disallow_random_traits = yes
+
+	father = southernimperial_aeschraes_aagiokrata_2
+
+	martial = 3
+	diplomacy = 3
+	stewardship = 2
+	intrigue = 3
+	learning = 1
+	prowess = 3
+
+	1226.4.19 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1230.10.27 = {
+		death = {
+			death_reason = death_piteously_cut_down
+			killer = southernimperial_aversarian_gorassos_1
+		}
+	}
+}

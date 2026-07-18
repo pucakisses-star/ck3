@@ -1,0 +1,497 @@
+﻿westernimperial_aeschraes_aagiokrata_1 = { # THE MAN, THE MYTH, THE LEGEND
+	name = "Aeschraes"
+	dna = aeschraes_westernimperial_aeschraes_aagiokrata_1
+	religion = "aversarinas_aagiokrata"
+	culture = "westernimperial"
+	dynasty = dyn_aversarian_6
+
+	sexuality = heterosexual
+	disallow_random_traits = yes
+
+	father = westernimperial_aversarinas_aagiokrata_105
+	mother = westernimperial_aversarinas_aagiokrata_106
+
+	martial = 14
+	diplomacy = 4
+	intrigue = 16
+	stewardship = 6
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = no_hair
+			custom_beards = male_beard_western_08
+		}
+	}
+
+	1168.3.14 = {
+		birth = yes
+		trait = magic_good_14
+		trait = intellect_good_3
+		effect = {
+			set_variable = {
+			name = magic_protection_gene
+				value = 10
+			}
+		}
+		effect = { set_base_arcana = { AMOUNT = 15 } }
+	}
+
+	1178.3.1 = {
+		effect = {
+			create_character_memory = {
+				type = relative_died
+				participants = {
+					dead_relation = character:westernimperial_aversarinas_aagiokrata_106 # Erigana
+				}
+			}
+		}
+	}
+
+	1180.1.1 = {
+		trait = ambitious
+		trait = sadistic
+		trait = arbitrary
+	}
+
+	1181.5.6 = {
+		effect = {
+			create_character_memory = {
+				type = friend_died_known_killer
+				participants = {
+					dead_relation = character:westernimperial_aversarinas_aagiokrata_110 # Arias (Sister)
+				}
+			}
+			create_character_memory = {
+				type = became_rivals
+				participants = {
+					rival = character:westernimperial_aversarinas_aagiokrata_105 # Epistonicon
+				}
+			}
+		}
+	}
+
+	1181.5.11 = {
+		trait = kinslayer_2
+		trait = gh_glowing_eyes
+		trait = gh_ritual_tattoos
+		trait = gh_ritual_scars_2
+		trait = murderer
+		effect = {
+			create_character_memory = {
+				type = rival_died
+				participants = {
+					dead_relation = character:westernimperial_aversarinas_aagiokrata_105 # Epistonicon
+				}
+			}
+		}
+	}
+
+	1181.9.1 = {
+		effect = {
+			create_character_memory = {
+				type = enrolled_at_mayikprolollan
+			}
+			scope:new_memory = {
+				save_scope_as = enrolled_at_mayikprolollan_memory
+				set_variable = {
+					name = landed_title
+					value = title:e_mayikprolollan
+				}
+			}
+		}
+	}
+
+	1181.11.8 = {
+		effect = {
+			create_character_memory = {
+				type = met_friend_first_time
+				participants = {
+					friend = character:easternimperial_aversarian_axiaotheaism_1 # Axiaothea
+				}
+			}
+		}
+	}
+
+	1184.3.14 = {
+		trait = schemer
+		trait = torturer
+		trait = education_arcana_5
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 14 }
+		}
+		effect = { learn_global_spell_effect = { SPELL_IDENTIFIER = rite_of_the_scarlet_kings_feast } }
+	}
+
+	1184.5.12 = {
+		effect = {
+			create_character_memory = {
+				type = joined_legion
+			}
+			scope:new_memory = {
+				set_variable = {
+					name = landed_title
+					value = title:k_legio_xxi_axiaothea
+				}
+			}
+		}
+	}
+
+	1186.11.1 = {
+		effect = {
+			create_character_memory = { # Imperial Civil War
+				type = offensive_war
+
+				participants = {
+					other_party = character:easternimperial_aversarian_axiaotheaism_1 # Axiaothea
+				}
+			}
+			create_character_memory = {
+				type = stopped_being_friends
+				participants = {
+					old_friend = character:easternimperial_aversarian_axiaotheaism_1 # Axiaothea
+				}
+			}
+			create_character_memory = {
+				type = became_rivals
+				participants = {
+					rival = character:easternimperial_aversarian_axiaotheaism_1 # Axiaothea
+				}
+			}
+		}
+	}
+
+	1188.5.14 = {
+		add_spouse = westernimperial_aeschraes_aagiokrata_2
+	}
+
+	1194.1.1 = {
+		religion = "aeschraes_aagiokrata"
+	}
+
+	1198.6.11 = {
+		effect = {
+			create_character_memory = {
+				type = relative_died
+				participants = {
+					dead_relation = character:westernimperial_aversarinas_aagiokrata_107 # Arios
+				}
+			}
+		}
+	}
+
+	1200.3.1 = {
+		add_character_modifier = aeschraes_pissed_on_my_wife
+		add_character_modifier = magic_no_prowess_loss_from_age
+		trait = incapable
+		effect = {
+			create_character_memory = {
+				type = sacrificed_family_for_spell
+				participants = {
+					sacrificed_family_member_1 = character:westernimperial_aeschraes_aagiokrata_2 # Wife
+					sacrificed_family_member_2 = character:westernimperial_aeschraes_aagiokrata_3
+					sacrificed_family_member_3 = character:westernimperial_aeschraes_aagiokrata_4
+					sacrificed_family_member_4 = character:westernimperial_aeschraes_aagiokrata_5
+				}
+			}
+			create_character_memory = {
+				type = casted_srbm
+			}
+			create_character_memory = {
+				type = nemesis_killed_by_me
+				participants = {
+					dead_relation = character:easternimperial_aversarian_axiaotheaism_1 # Axiaothea
+				}
+			}
+			create_character_memory = {
+				type = war_won
+
+				participants = {
+					winner = character:westernimperial_aeschraes_aagiokrata_1
+					loser = character:easternimperial_aversarian_axiaotheaism_1 # Axiaothea
+				}
+			}
+			create_character_memory = { # Aescoma
+				type = fell_into_coma
+			}
+			if = {
+				limit = { NOT = { has_dlc_feature = legends } }
+				dynasty = {
+					add_dynasty_perk = aeschraes_legacy_1
+				}
+			}
+			dynasty = {
+				add_dynasty_prestige_level = 5
+			}
+		}
+	}
+
+	1200.5.1 = {
+		remove_trait = incapable
+		effect = {
+			end_diarchy = yes
+			create_character_memory = { # Woke up from Aescoma
+				type = woke_up_from_coma
+			}
+		}
+	}
+
+	1200.5.3 = {
+		effect = {
+			create_character_memory = { # Thaxaonic Blood Pact
+				type = defensive_war
+
+				participants = {
+					other_party = character:westernimperial_aversarinas_aagiokrata_16 # Jaxor
+				}
+			}
+		}
+	}
+
+	1211.1.6 = {
+		effect = {
+			create_character_memory = { # Thaxaonic Blood Pact Defeated
+				type = war_won
+
+				participants = {
+					winner = character:westernimperial_aeschraes_aagiokrata_1
+					loser = character:westernimperial_aversarinas_aagiokrata_16 # Jaxor
+				}
+			}
+		}
+	}
+
+	1231.8.13 = {
+		effect = {
+			create_character_memory = { # Lycus's Coup
+				type = lost_title_to_palace_coup
+
+				participants = {
+					couping_character = character:westernimperial_aversarinas_aagiokrata_250 # Lycus
+				}
+			}
+			scope:new_memory = {
+				save_scope_as = lost_title_to_palace_coup_memory
+				set_variable = {
+					name = landed_title
+					value = title:c_oraispol
+				}
+			}
+			create_character_memory = {
+				type = lost_title_to_palace_coup
+
+				participants = {
+					couping_character = character:westernimperial_aversarinas_aagiokrata_250 # Lycus
+				}
+			}
+			scope:new_memory = {
+				save_scope_as = lost_title_to_palace_coup_memory
+				set_variable = {
+					name = landed_title
+					value = title:e_etepezea
+				}
+			}
+		}
+	}
+
+	1234.3.1 = {
+		give_nickname = nick_lord_of_the_ashes
+	}
+
+	1251.1.1 = {
+		# trait = gh_extended_life
+		effect = {
+			upgrade_stacking_modifier_by_level_effect = { MODIFIER = magic_life_extension_modifier TYPE = character LEVEL = 8 YEARS = -1  } 
+			upgrade_stacking_modifier_by_level_effect = { MODIFIER = magic_arcane_degeneration_modifier TYPE = character LEVEL = 1 YEARS = -1  } 
+			set_variable = {
+				name = life_extention_amount_raw
+				value = 8
+			}
+			add_arcana_lifestyle_perk_points = 15
+		}
+	}
+	1254.1.2 = {
+		death = {
+			death_reason = death_vanished_from_history
+			#killer = wouldn't you like to know weather boy
+		}
+	}
+}
+
+westernimperial_aeschraes_aagiokrata_2 = { # Aeschraes' wife
+	name = "Helaeda"
+	dna = westernimperial_aeschraes_aagiokrata_2
+	female = yes
+	religion = "aversarinas_aagiokrata"
+	culture = "northernimperial"
+	dynasty = dyn_aversarian_11
+
+	father = northernimperial_aversarinas_aagiokrata_44
+
+	trait = shrewd
+	trait = humble
+	trait = education_diplomacy_4
+	trait = patient
+	trait = shy
+	trait = magic_good_3
+	trait = intellect_good_2
+	trait = beauty_good_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_byzantine_01
+		}
+	}
+
+	1171.11.21 = {
+		birth = yes
+	}
+
+	1200.2.30 = {
+		death = {
+			death_reason = death_ritual
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+westernimperial_aeschraes_aagiokrata_3 = { # Aeschraes first daughter
+    name = "Arias"
+    religion = "aeschraes_aagiokrata"
+    culture = "westernimperial"
+    female = yes
+    dynasty = dyn_aversarian_6
+    father = westernimperial_aeschraes_aagiokrata_1
+    mother = westernimperial_aeschraes_aagiokrata_2
+    trait = magic_good_10
+    trait = intellect_good_3
+    trait = beauty_good_2
+
+	1189.9.21 = {
+		birth = yes
+	}
+
+	1200.2.30 = {
+		death = {
+			death_reason = death_ritual
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+westernimperial_aeschraes_aagiokrata_4 = { # Aeschraes second daughter
+    name = "Callisthia" #Renamed from Callistamanas
+    religion = "aeschraes_aagiokrata"
+    culture = "westernimperial"
+    female = yes
+    dynasty = dyn_aversarian_6
+    father = westernimperial_aeschraes_aagiokrata_1
+    mother = westernimperial_aeschraes_aagiokrata_2
+    trait = magic_good_3
+    trait = intellect_good_3
+    trait = physique_bad_1
+
+	1191.8.14 = {
+		birth = yes
+	}
+
+	1200.2.30 = {
+		death = {
+			death_reason = death_ritual
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+westernimperial_aeschraes_aagiokrata_5 = { # Aeschraes first son
+    name = "Aericon"
+    religion = "aeschraes_aagiokrata"
+    culture = "westernimperial"
+    dynasty = dyn_aversarian_6
+    father = westernimperial_aeschraes_aagiokrata_1
+    mother = westernimperial_aeschraes_aagiokrata_2
+    trait = magic_good_4
+    trait = intellect_good_2
+
+	1194.8.14 = {
+		birth = yes
+	}
+
+	1200.2.30 = {
+		death = {
+			death_reason = death_ritual
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+westernimperial_aeschraes_aagiokrata_6 = { # Aeschraeist loyalist and stooge. Sent to be a pliable governor of Kalathipsomi (or whatever remained of it) in 1228. Lost the city in 1231 to the person he drove out and a bandit warlord
+	name = "Isidoros"
+	religion = "aeschraes_aagiokrata"
+	culture = "westernimperial"
+
+	1161.8.19 = {
+		birth = yes
+	}
+
+	1173.1.1 = {
+		trait = content
+		trait = fickle
+		trait = craven
+	}
+
+	1177.8.19 = {
+		trait = education_stewardship_2
+	}
+
+	1231.9.20 = {
+		death = {
+			death_reason = death_torture
+			killer = northernimperial_aversarinas_aagiokrata_15
+		}
+	}
+}
+
+westernimperial_aeschraes_aagiokrata_7 = { # Legan Callisthia of Noble Legio LXVIII 'Trailblazers', held the Thyxattac Isles after the ODL's downfall
+	name = "Callisthia"
+	religion = "aeschraes_aagiokrata"
+	culture = "westernimperial"
+
+	sexuality = heterosexual
+	female = yes
+
+	martial = 8
+	diplomacy = 3
+	stewardship = 7
+	intrigue = 5
+	learning = 9
+	prowess = 3
+
+	1161.10.23 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1173.1.1 = {
+		trait = diligent
+		trait = brave
+		trait = callous
+	}
+
+	1177.10.23 = {
+		trait = education_martial_3
+		trait = holy_warrior
+	}
+
+	1184.11.23 = {
+		trait = gh_legon
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}

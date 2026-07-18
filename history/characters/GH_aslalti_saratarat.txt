@@ -1,0 +1,230 @@
+﻿aslalti_saratarat_1 = {
+	name = "Megetu"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1214.8.23 = {
+		birth = yes
+	}
+}
+
+aslalti_saratarat_2 = {
+	name = "Jeguredei"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1225.12.13 = {
+		birth = yes
+	}
+}
+
+aslalti_saratarat_3 = {
+	name = "Daritai"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1208.4.7 = {
+		birth = yes
+	}
+}
+
+aslalti_saratarat_4 = {
+	name = "Burkhan"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1198.1.12 = {
+		birth = yes
+	}
+}
+
+aslalti_saratarat_5 = {
+	name = "BegU_nU_tei"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1231.6.20 = {
+		birth = yes
+	}
+}
+
+aslalti_saratarat_6 = {
+	name = "Subetei"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1203.8.26 = {
+		birth = yes
+	}
+}
+
+aslalti_saratarat_7 = {
+	name = "Dayir"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1218.3.8 = {
+		birth = yes
+	}
+}
+
+aslalti_saratarat_8 = {
+	name = "Bogorchu"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1204.2.3 = {
+		birth = yes
+	}
+}
+
+aslalti_saratarat_9 = {
+	name = "Altan"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1218.7.27 = {
+		birth = yes
+	}
+}
+
+aslalti_saratarat_10 = {
+	name = "Kokochu"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1220.11.14 = {
+		birth = yes
+	}
+}
+
+aslalti_saratarat_11 = {
+	name = "Chiledu"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1209.7.7 = {
+		birth = yes
+	}
+}
+
+aslalti_saratarat_12 = {
+	name = "Jeguredei"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1219.1.29 = {
+		birth = yes
+	}
+}
+
+aslalti_saratarat_13 = {
+	name = "Morokha"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1214.3.28 = {
+		birth = yes
+	}
+}
+
+aslalti_saratarat_14 = {
+	name = "Bukha_Khatagi"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1225.7.8 = {
+		birth = yes
+	}
+}
+
+aslalti_saratarat_15 = {
+	name = "Chidukhul"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1216.4.16 = {
+		birth = yes
+	}
+}
+
+aslalti_saratarat_16 = {
+	name = "Suyiketu"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1220.3.16 = {
+		birth = yes
+	}
+}
+
+aslalti_saratarat_17 = {
+	name = "Eljigedei"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1201.1.18 = {
+		birth = yes
+	}
+}
+
+aslalti_saratarat_18 = {
+	name = "Bugidai"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1213.10.2 = {
+		birth = yes
+	}
+}
+
+aslalti_saratarat_19 = {
+	name = "Kadan"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1210.11.14 = {
+		birth = yes
+	}
+}
+
+aslalti_saratarat_20 = {
+	name = "Bilge"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1229.8.21 = {
+		birth = yes
+	}
+}
+
+aslalti_saratarat_21 = {
+	name = "Aguchu"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1211.6.17 = {
+		birth = yes
+	}
+}
+
+aslalti_saratarat_22 = {
+	name = "Khachi"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1229.5.28 = {
+		birth = yes
+	}
+}
+
+aslalti_saratarat_23 = {
+	name = "Semsochule"
+	religion = "saratarat"
+	culture = "aslalti"
+
+	1202.4.12 = {
+		birth = yes
+	}
+}
+

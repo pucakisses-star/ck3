@@ -1,0 +1,331 @@
+﻿vonatolis_aversarinas_aagiokrata_1 = { # Murder Legon
+	name = "Iokharos"
+	dna = vonatolis_aversarinas_aagiokrata_1
+	religion = "aversarinas_aagiokrata"
+	culture = "vonatolis"
+	
+	diplomacy = 5
+	martial = 6
+	stewardship = 4
+	intrigue = 5
+	learning = 6
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_09
+			custom_beards = male_beard_western_05				 
+		}
+	} 
+	
+	1221.4.11 = {
+		birth = yes
+	}
+	1237.4.11 = {
+		trait = sadistic
+		trait = ambitious
+		trait = brave
+	}
+	1241.4.11 = {
+		trait = education_martial_3
+		trait = gh_legon
+	}
+}
+
+vonatolis_aversarinas_aagiokrata_2 = { # Leader of Watervoid Compact, good Magi
+	name = "Dikarnos"
+	religion = aversarinas_aagiokrata
+	culture = vonatolis
+	sexuality = heterosexual
+	
+	dynasty = dyn_aversarian_83
+	
+	diplomacy = 6
+	martial = 5
+	stewardship = 5
+	intrigue = 4
+	learning = 5
+	
+	1172.3.18 = {
+		birth = yes
+		trait = magic_good_5
+	}
+	1184.3.18 = {
+		trait = trusting
+		trait = gregarious
+		trait = impatient
+	}
+	1188.3.18 = {
+		trait = scholar
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+	1192.6.2 = {
+		add_spouse = vonatolis_aversarinas_aagiokrata_3
+	}
+	1214.6.11 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+vonatolis_aversarinas_aagiokrata_3 = { # Wife of above
+	name = "Thysia"
+	female = yes
+	religion = aversarinas_aagiokrata
+	culture = vonatolis
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 5
+	stewardship = 6
+	intrigue = 5
+	learning = 6
+	
+	1180.3.12 = {
+		birth = yes
+		trait = magic_good_2
+	}
+	1192.3.12 = {
+		trait = just
+		trait = forgiving
+		trait = arrogant
+	}
+	1196.3.12 = {
+		trait = education_learning_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+	1244.4.5 = {
+		death = {
+			death_reason = death_cancer	
+		}
+	}
+}
+
+vonatolis_aversarinas_aagiokrata_4 = { # Scheming duke who rebels against the Watervoid Compact
+	name = "Maxios"
+	religion = aversarinas_aagiokrata
+	culture = vonatolis
+	sexuality = heterosexual
+	
+	dynasty = dyn_aversarian_84
+	
+	diplomacy = 6
+	martial = 5
+	stewardship = 5
+	intrigue = 7
+	learning = 5
+	
+	1161.3.12 = {
+		birth = yes
+		trait = magic_good_3
+	}
+	1173.3.12 = {
+		trait = ambitious
+		trait = sadistic
+		trait = deceitful
+	}
+	1177.3.12 = {
+		trait = education_intrigue_3
+	}
+	1182.6.26 = {
+		add_spouse = vonatolis_aversarinas_aagiokrata_5
+	}
+	1223.4.5 = {
+		death = {
+			death_reason = death_ritual	
+		}
+	}
+}
+
+vonatolis_aversarinas_aagiokrata_5 = { # Wife of scheming duke
+	name = "Hypatia"
+	female = yes
+	religion = aversarinas_aagiokrata
+	culture = vonatolis
+	sexuality = heterosexual
+	
+	diplomacy = 4
+	martial = 4
+	stewardship = 5
+	intrigue = 7
+	learning = 3
+	
+	1170.1.12 = {
+		birth = yes
+		trait = magic_good_2
+	}
+	1182.1.12 = {
+		trait = wrathful
+		trait = lustful
+		trait = trusting
+	}
+	1186.1.12 = {
+		trait = education_martial_1
+	}
+	1241.3.8 = {
+		death = {
+			death_reason = death_old_age	
+		}
+	}
+}
+
+vonatolis_aversarinas_aagiokrata_6 = { # Watervoid heir
+	name = "Sergia"
+	female = yes
+	religion = aversarinas_aagiokrata
+	culture = vonatolis
+	sexuality = heterosexual
+
+	father = vonatolis_aversarinas_aagiokrata_2
+	mother = vonatolis_aversarinas_aagiokrata_3
+
+	dynasty = dyn_aversarian_83
+
+	diplomacy = 4
+	martial = 5
+	stewardship = 4
+	intrigue = 5
+	learning = 6
+
+	1198.5.12 = {
+		birth = yes
+		trait = magic_good_4
+	}
+	1210.5.12 = {
+		trait = sadistic
+		trait = arrogant
+		trait = wrathful
+	}
+	1214.5.12 = {
+		trait = education_diplomacy_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+	1215.6.7 = {
+		set_relation_rival = character:vonatolis_aversarinas_aagiokrata_4
+	}
+	1221.4.18 = {
+		death = {
+			death_reason = death_execution
+			killer = vonatolis_aversarinas_aagiokrata_4
+		}
+	}
+}
+
+vonatolis_aversarinas_aagiokrata_7 = { # Minor count, related to former High King, claims to be rightful Archex
+	name = "Innokentios"
+	religion = aversarinas_aagiokrata
+	culture = vonatolis
+	sexuality = asexual
+
+	dynasty_house = house_hadrios
+
+	diplomacy = 4
+	martial = 5
+	stewardship = 4
+	intrigue = 3
+	learning = 6
+
+	1186.6.14 = {
+		birth = yes
+	}
+	1198.6.14 = {
+		trait = just
+		trait = humble
+		trait = impatient
+	}
+	1202.6.14 = {
+		trait = education_martial_2
+	}
+	1245.6.17 = {
+		death = {
+			death_reason = death_execution
+			killer = vonatolis_aversarinas_aagiokrata_1
+		}
+	}
+}
+
+vonatolis_aversarinas_aagiokrata_8 = { # Just like dad before him, scheming asshole
+	name = "Pascos"
+	religion = "aversarinas_aagiokrata"
+	culture = vonatolis
+	sexuality = heterosexual
+
+	dynasty = dyn_aversarian_84
+	father = vonatolis_aversarinas_aagiokrata_4
+	mother = vonatolis_aversarinas_aagiokrata_5
+
+	diplomacy = 4
+	martial = 5
+	stewardship = 4
+	intrigue = 7
+	learning = 5
+
+	1189.4.1 = {
+		birth = yes
+		trait = magic_good_2
+	}
+	1201.4.1 = {
+		trait = paranoid
+		trait = callous
+		trait = ambitious
+	}
+	1205.4.1 = {
+		trait = education_intrigue_2
+	}
+	1249.3.11 = {
+		death = {
+			death_reason = death_execution
+			killer = vonatolis_aversarinas_aagiokrata_1
+		}
+	}
+}
+
+vonatolis_aversarinas_aagiokrata_9 = { # Lazy whiny bitch, gets taken out by his brother
+	name = "Kyllophon" #Renamed from Grigoli
+	religion = aversarinas_aagiokrata
+	culture = vonatolis
+	sexuality = heterosexual
+
+	dynasty = dyn_aversarian_84
+	father = vonatolis_aversarinas_aagiokrata_4
+	mother = vonatolis_aversarinas_aagiokrata_5
+
+	diplomacy = 5
+	martial = 4
+	stewardship = 5
+	intrigue = 5
+	learning = 4
+
+	1195.6.11 = {
+		birth = yes
+	}
+	1207.6.11 = {
+		trait = lazy
+		trait = arrogant
+		trait = content
+	}
+	1211.6.11 = {
+		trait = education_intrigue_1
+	}
+	1223.4.5 = {
+		set_relation_rival = character:vonatolis_aversarinas_aagiokrata_8
+	}
+	1231.5.17 = {
+		death = {
+			death_reason = death_suicide
+		}
+	}
+}

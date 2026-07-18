@@ -1,0 +1,6439 @@
+﻿#####################
+# FLORASIOS DYNASTY #
+#####################
+
+centralimperial_aversarinas_aagiokrata_1 = { # Does not appear anywhere in the mod [Scion: Re-used 1,2,8 and 10 for Florasios Governors] Krygos Florasios, 1st Civil Governor of Malcois
+	name = "Krygos"
+	dynasty = dyn_aversarian_104
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+
+	martial = 5
+	diplomacy = 8
+	intrigue = 6
+	stewardship = 7
+	learning = 3
+	prowess = 5
+
+	436.2.28 = {
+		birth = yes
+		trait = magic_good_5
+		trait = intellect_good_2
+	}
+
+	448.1.1 = {
+		trait = diligent
+		trait = calm
+		trait = callous
+	}
+
+	452.2.28 = {
+		trait = education_stewardship_4
+		trait = administrator
+		trait = overseer
+	}
+
+	506.3.22 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_2 = { # Gelios Florasios, 2nd Governor of Malcois
+	name = "Gelios"
+	dynasty = dyn_aversarian_104
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+
+	father = centralimperial_aversarinas_aagiokrata_1
+
+	martial = 3
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 6
+	learning = 2
+	prowess = 5
+
+	473.11.29 = {
+		birth = yes
+		trait = magic_good_4
+		trait = intellect_good_1
+	}
+
+	485.1.1 = {
+		trait = chaste
+		trait = honest
+		trait = stubborn
+	}
+
+	489.11.29 = {
+		trait = education_stewardship_2
+		trait = administrator
+	}
+
+	528.2.6 = {
+		death = {
+			death_reason = death_magic_fire
+			killer = centralimperial_aversarinas_aagiokrata_19
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_8 = { # Gelios' brother
+	name = "Crathis"
+	dynasty = dyn_aversarian_104
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+
+	father = centralimperial_aversarinas_aagiokrata_1
+
+	martial = 4
+	diplomacy = 8
+	intrigue = 1
+	stewardship = 8
+	learning = 6
+	prowess = 3
+
+	479.8.8 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	491.1.1 = {
+		trait = callous
+		trait = arrogant
+		trait = patient
+	}
+
+	495.8.8 = {
+		trait = education_learning_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+		trait = gh_excessively_pale
+	}
+
+	543.10.9 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_10 = { # Gelios' nephew
+	name = "Tenex"
+	dynasty = dyn_aversarian_104
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+
+	father = centralimperial_aversarinas_aagiokrata_8
+
+	martial = 4
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 6
+	learning = 6
+	prowess = 7
+
+	519.9.21 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	531.1.1 = {
+		trait = gregarious
+		trait = arrogant
+		trait = gluttonous
+	}
+
+	535.9.21 = {
+		trait = education_diplomacy_3
+	}
+
+	597.4.10 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_13 = { # Bruxon Florasios, 8th Governor of Malcois, ended war with Kalathipsomi
+	name = "Bruxon"
+	dynasty = dyn_aversarian_104
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+
+	mother = centralimperial_aversarinas_aagiokrata_16
+
+	martial = 8
+	diplomacy = 7
+	intrigue = 2
+	stewardship = 8
+	learning = 7
+	prowess = 2
+
+	584.1.8 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	596.1.1 = {
+		trait = compassionate
+		trait = honest
+		trait = diligent
+	}
+
+	600.1.8 = {
+		trait = education_diplomacy_4
+		trait = diplomat
+		trait = shrewd
+	}
+
+	642.10.16 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_14 = { # Dethas Florasios, 9th and last Florasios Governor of Malcois, died in the Kartharaddi Invasion
+	name = "Dethas"
+	dynasty = dyn_aversarian_104
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = centralimperial_aversarinas_aagiokrata_13
+
+	martial = 5
+	diplomacy = 7
+	intrigue = 4
+	stewardship = 3
+	learning = 7
+	prowess = 5
+
+	616.5.27 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	628.1.1 = {
+		trait = cynical
+		trait = gluttonous
+		trait = honest
+	}
+
+	632.5.27 = {
+		trait = education_martial_1
+		trait = overseer
+		trait = profligate
+		trait = gh_historical_reveler_2
+	}
+
+	645.7.14 = {
+		death = {
+			death_reason = death_siege # Fall of Malcois during the Kartharaddi Imperium's invasion
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_15 = { # Ulton Florasios, surviving son of Governor Dethas, died in battle against Black Adriax during the Kartharaddi invasion
+	name = "Ulton"
+	dynasty = dyn_aversarian_104
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+
+	mother = centralimperial_aversarinas_aagiokrata_14
+
+	martial = 6
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 8
+	learning = 7
+	prowess = 5
+
+	644.8.30 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	656.1.1 = {
+		trait = diligent
+		trait = brave
+		trait = temperate
+	}
+
+	660.8.30 = {
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+		trait = gh_glowing_veins
+	}
+
+	678.12.2 = {
+		death = {
+			death_reason = death_battle
+			killer = centralimperial_aversarinas_aagiokrata_28 # Black Adriax
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_16 = { # Bruxon's mother
+	name = "Rhiake"
+	dynasty = dyn_aversarian_104
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = centralimperial_aversarinas_aagiokrata_10
+
+	martial = 3
+	diplomacy = 2
+	intrigue = 4
+	stewardship = 8
+	learning = 4
+	prowess = 1
+
+	561.11.25 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	573.1.1 = {
+		trait = brave
+		trait = diligent
+		trait = compassionate
+	}
+
+	577.11.25 = {
+		trait = education_stewardship_2
+	}
+
+	606.9.24 = {
+		death = {
+			death_reason = death_battle # Kalathipsomi-Malcois War
+		}
+	}
+}
+
+###################
+# PHRIXES DYNASTY #
+###################
+
+centralimperial_aversarinas_aagiokrata_17 = { # Thasios Phrixes, last Governor Arch-Legon of Malcois
+	name = "Thasios"
+	dynasty = dyn_aversarian_109
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 2
+	intrigue = 3
+	stewardship = 8
+	learning = 3
+	prowess = 7
+
+	420.12.23 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	432.1.1 = {
+		trait = greedy
+		trait = sadistic
+		trait = arrogant
+	}
+
+	436.12.23 = {
+		trait = education_martial_3
+	}
+
+	461.8.18 = {
+		trait = gh_arch_legon
+		trait = overseer
+	}
+
+	497.9.13 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_18 = { # Thasios' son
+	name = "Onaos"
+	dynasty = dyn_aversarian_109
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+
+	father = centralimperial_aversarinas_aagiokrata_17
+
+	martial = 4
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 5
+	learning = 2
+	prowess = 7
+
+	453.7.4 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	465.1.1 = {
+		trait = diligent
+		trait = arbitrary
+		trait = arrogant
+	}
+
+	469.7.4 = {
+		trait = education_intrigue_2
+	}
+
+	504.12.14 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_19 = { # Santhos Phrixes, 3rd Governor of Malcois, usurped the Governorate after death of Aautokratia Aeliadias
+	name = "Santhos"
+	dynasty = dyn_aversarian_109
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+
+	father = centralimperial_aversarinas_aagiokrata_18
+
+	martial = 6
+	diplomacy = 4
+	intrigue = 8
+	stewardship = 4
+	learning = 6
+	prowess = 7
+
+	477.9.16 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	489.1.1 = {
+		trait = sadistic
+		trait = ambitious
+		trait = greedy
+	}
+
+	493.9.16 = {
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+		trait = gh_glowing_eyes
+		trait = gh_glowing_veins
+		trait = overseer
+	}
+
+	539.12.3 = {
+		death = {
+			death_reason = death_strongest_potion
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_20 = { # Ennomus Phrixes, 4th Governor of Malcois, slain by Arthean the Adventurer
+	name = "Ennomus"
+	dynasty = dyn_aversarian_109
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+
+	father = centralimperial_aversarinas_aagiokrata_19
+
+	martial = 8
+	diplomacy = 5
+	intrigue = 2
+	stewardship = 3
+	learning = 3
+	prowess = 5
+
+	509.4.30 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	521.1.1 = {
+		trait = sadistic
+		trait = arbitrary
+		trait = wrathful
+	}
+
+	525.4.30 = {
+		trait = education_martial_2
+		trait = overseer
+		trait = strong
+	}
+
+	560.12.20 = {
+		death = {
+			death_reason = death_duel
+			killer = centralimperial_aversarinas_aagiokrata_3 # Arthean the Adventurer
+		}
+	}
+}
+
+####################
+# RATHYSIX DYNASTY #
+####################
+
+centralimperial_aversarinas_aagiokrata_3 = { # Arthean Rathysix, famed adventurer and later the 5th Governor of Malcois, planned to expand Malcois north
+	name = "Arthean"
+	dynasty = dyn_aversarian_105
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+	dna = arthean
+
+	martial = 10
+	diplomacy = 3
+	intrigue = 7
+	stewardship = 2
+	learning = 7
+	prowess = 8
+
+	509.12.1 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	521.1.1 = {
+		trait = ambitious
+		trait = brave
+		trait = fickle
+	}
+
+	525.12.1 = {
+		trait = education_martial_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+		trait = gh_ritual_tattoos
+	}
+
+	545.1.1 = {
+		trait = adventurer
+		trait = gh_historical_blademaster_1
+		give_nickname = nick_the_adventurer
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	600.6.29 = {
+		death = {
+			death_reason = death_battle # Kalathipsomi-Malcois Civil War
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_12 = { # Iria Rathysix, 6th Governor of Malcois, slain in battle by a Magi
+	name = "Iria"
+	dynasty = dyn_aversarian_105
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = centralimperial_aversarinas_aagiokrata_3
+
+	martial = 6
+	diplomacy = 2
+	intrigue = 5
+	stewardship = 8
+	learning = 5
+	prowess = 6
+
+	551.6.9 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	563.1.1 = {
+		trait = brave
+		trait = vengeful
+		trait = sadistic
+	}
+
+	567.6.9 = {
+		trait = education_intrigue_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+		trait = gh_ritual_tattoos
+	}
+
+	603.9.6 = {
+		death = {
+			death_reason = death_magic_meteor
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_21 = { # Xuthos Rathysix, 7th Governor of Malcois, killed by an angry mob
+	name = "Xuthos"
+	dynasty = dyn_aversarian_105
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+
+	mother = centralimperial_aversarinas_aagiokrata_12
+
+	martial = 3
+	diplomacy = 7
+	intrigue = 6
+	stewardship = 1
+	learning = 5
+	prowess = 7
+
+	573.4.11 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	585.1.1 = {
+		trait = arrogant
+		trait = zealous
+		trait = arbitrary
+	}
+
+	589.4.11 = {
+		trait = education_martial_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+
+	610.1.12 = {
+		death = {
+			death_reason = death_burned_by_mob
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_22 = { # Black Adriax' mother
+	name = "Myrthis"
+	dynasty = dyn_aversarian_105
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = centralimperial_aversarinas_aagiokrata_21
+
+	martial = 1
+	diplomacy = 7
+	intrigue = 4
+	stewardship = 8
+	learning = 2
+	prowess = 2
+
+	608.2.28 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	620.1.1 = {
+		trait = trusting
+		trait = forgiving
+		trait = gregarious
+	}
+
+	624.2.28 = {
+		trait = education_diplomacy_3
+		trait = family_first
+	}
+
+	662.9.3 = {
+		death = {
+			death_reason = death_poison
+			killer = centralimperial_aversarinas_aagiokrata_23 # Axos Rathysix
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_23 = { # Black Adriax' uncle
+	name = "Axos"
+	dynasty = dyn_aversarian_105
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+
+	father = centralimperial_aversarinas_aagiokrata_21
+
+	martial = 1
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 2
+	learning = 8
+	prowess = 7
+
+	617.5.11 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	629.1.1 = {
+		trait = ambitious
+		trait = deceitful
+		trait = sadistic
+	}
+
+	633.5.11 = {
+		trait = education_intrigue_4
+		trait = schemer
+		trait = lifestyle_herbalist
+	}
+
+	665.11.30 = {
+		death = {
+			death_reason = death_magic_petrify
+			killer = centralimperial_aversarinas_aagiokrata_29 # Velyx Hemaxis
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_24 = { # Black Adriax' eldest brother
+	name = "Pyriodas"
+	dynasty = dyn_aversarian_105
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+
+	mother = centralimperial_aversarinas_aagiokrata_22
+
+	martial = 6
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 7
+	learning = 6
+	prowess = 6
+
+	638.1.1 = {
+		birth = yes
+		trait = magic_good_5
+		trait = physique_good_1
+	}
+
+	650.1.1 = {
+		trait = honest
+		trait = just
+		trait = compassionate
+	}
+
+	654.1.1 = {
+		trait = education_martial_3
+		trait = gallant
+	}
+
+	662.9.3 = {
+		death = {
+			death_reason = death_poison
+			killer = centralimperial_aversarinas_aagiokrata_23 # Axos Rathysix
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_25 = { # Black Adriax' second brother
+	name = "Selagus"
+	dynasty = dyn_aversarian_105
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+
+	mother = centralimperial_aversarinas_aagiokrata_22
+
+	martial = 1
+	diplomacy = 5
+	intrigue = 8
+	stewardship = 2
+	learning = 3
+	prowess = 6
+
+	642.2.2 = {
+		birth = yes
+		trait = magic_good_4
+		trait = beauty_good_2
+	}
+
+	654.1.1 = {
+		trait = arrogant
+		trait = lustful
+		trait = gregarious
+	}
+
+	658.2.2 = {
+		trait = education_diplomacy_2
+	}
+
+	662.9.3 = {
+		death = {
+			death_reason = death_poison
+			killer = centralimperial_aversarinas_aagiokrata_23 # Axos Rathysix
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_26 = { # Black Adriax' third brother
+	name = "Thresatos"
+	dynasty = dyn_aversarian_105
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+
+	mother = centralimperial_aversarinas_aagiokrata_22
+
+	martial = 4
+	diplomacy = 8
+	intrigue = 5
+	stewardship = 7
+	learning = 4
+	prowess = 8
+
+	645.3.3 = {
+		birth = yes
+		trait = magic_good_3
+		trait = twin
+	}
+
+	657.1.1 = {
+		trait = wrathful
+		trait = stubborn
+		trait = impatient
+	}
+
+	661.3.3 = {
+		trait = education_stewardship_1
+	}
+
+	662.9.3 = {
+		death = {
+			death_reason = death_poison
+			killer = centralimperial_aversarinas_aagiokrata_23 # Axos Rathysix
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_27 = { # Black Adriax' fourth brother
+	name = "Qavartox"
+	dynasty = dyn_aversarian_105
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+
+	mother = centralimperial_aversarinas_aagiokrata_22
+
+	martial = 3
+	diplomacy = 3
+	intrigue = 6
+	stewardship = 5
+	learning = 7
+	prowess = 5
+
+	645.3.3 = {
+		birth = yes
+		trait = magic_good_3
+		trait = twin
+	}
+
+	657.1.1 = {
+		trait = calm
+		trait = stubborn
+		trait = patient
+	}
+
+	661.3.3 = {
+		trait = education_learning_4
+	}
+
+	662.9.3 = {
+		death = {
+			death_reason = death_poison
+			killer = centralimperial_aversarinas_aagiokrata_23 # Axos Rathysix
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_28 = { # Black Adriax, notorious Magi, betrayed Aversaria in the Kartharaddi War, ruled as Archex of Thanatosia, stuff of legends
+	name = "Adriax"
+	dynasty = dyn_aversarian_105
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+
+	mother = centralimperial_aversarinas_aagiokrata_22
+
+	martial = 2
+	diplomacy = 5
+	intrigue = 10
+	stewardship = 5
+	learning = 10
+	prowess = 6
+
+	656.5.5 = {
+		birth = yes
+		trait = magic_good_7
+		trait = intellect_good_2
+	}
+
+	668.1.1 = {
+		trait = ambitious
+		trait = deceitful
+		trait = vengeful
+	}
+
+	672.5.5 = {
+		trait = education_arcana_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+		trait = gh_ritual_tattoos
+		trait = gh_glowing_veins
+		trait = gh_glowing_eyes
+	}
+
+	680.1.1 = {
+		give_nickname = nick_black_adriax
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	784.9.1 = {
+		death = {
+			death_reason = death_vanished
+		}
+	}
+}
+
+
+#################
+# MISCELLANEOUS #
+#################
+
+centralimperial_aversarinas_aagiokrata_4 = {
+	name = Andronikos
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+
+	1229.4.12 = {
+		birth = yes
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_5 = { # Unlucky lieutenant who is the last man standing in Legio Exodian
+	name = Matthaios
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+	disallow_random_traits = yes
+
+	martial = 7
+	diplomacy = 2
+	intrigue = 3
+	stewardship = 5
+	learning = 2
+	prowess = 5
+
+	1225.4.12 = {
+		birth = yes
+	}
+
+	1238.4.12 = {
+		trait = stubborn
+		trait = calm
+		trait = brave
+	}
+
+	1241.4.12 = {
+		trait = education_martial_3
+		trait = unyielding_defender
+	}
+
+	1249.4.12 = {
+		trait = one_eyed
+		trait = gh_historical_blademaster_1
+	}
+
+	1251.1.13 = {
+		trait = depressed_1
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_6 = {
+	name = Porphyrios
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+
+	1216.4.12 = {
+		birth = yes
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_7 = {
+	name = Kyrillos
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+
+	1215.4.12 = {
+		birth = yes
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_9 = {
+	name = Timotheos
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+
+	1222.4.12 = {
+		birth = yes
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_29 = { # Velyx Hemaxis, Court Magi that usurped Kasmiene in the 7th century
+	name = "Velyx"
+	dynasty = dyn_aversarian_106
+	religion = aversarinas_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 8
+	learning = 6
+	prowess = 1
+
+	629.4.14 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	641.1.1 = {
+		trait = ambitious
+		trait = greedy
+		trait = brave
+	}
+
+	645.4.14 = {
+		trait = gh_glowing_veins
+		trait = education_arcana_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	677.6.25 = {
+		death = {
+			death_reason = death_ritual_torture
+			killer = centralimperial_aversarinas_aagiokrata_28 # Black Adriax
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_30 = { # Legon Messios Xuthos, of Legio XIV 'Chain-Forgers', died in Elysian Pass with his legion
+	name = "Messios"
+	dynasty = dyn_central_empire_11
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+
+	father = centralimperial_aversarinas_aagiokrata_46
+	mother = centralimperial_aversarinas_aagiokrata_47
+
+	martial = 3
+	diplomacy = 8
+	intrigue = 7
+	stewardship = 8
+	learning = 4
+	prowess = 5
+
+	1223.1.28 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1235.1.1 = {
+		trait = fickle
+		trait = greedy
+		trait = callous
+	}
+
+	1239.1.28 = {
+		trait = education_martial_3
+		trait = overseer
+		trait = reaver
+	}
+
+	1249.9.12 = {
+		trait = gh_legon
+	}
+
+	1252.1.1 = {
+		death = {
+			death_reason = death_elysian_pass
+			killer = curgerski_sjalvolki_2 # Kresmir Giant-Layer
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_31 = { # Legan Ionde of State Legio VIII 'Tomanyros', saved the life of Aautokratir Exaduis
+	name = "Ionde"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+	female = yes
+
+	martial = 6
+	diplomacy = 2
+	intrigue = 5
+	stewardship = 8
+	learning = 7
+	prowess = 8
+
+	1027.9.28 = {
+		birth = yes
+	}
+
+	1039.1.1 = {
+		trait = brave
+		trait = diligent
+		trait = honest
+	}
+
+	1043.9.28 = {
+		trait = education_martial_3
+		trait = rough_terrain_expert
+	}
+
+	1053.7.11 = {
+		trait = gh_legon
+	}
+
+	1092.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_32 = { # Legon Iatrokles of State Legio VIII 'Tomanyros', slain by Duvaken Silver-Speaker
+	name = "Iatrokles"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+
+	martial = 4
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 9
+	learning = 4
+	prowess = 8
+
+	1208.10.24 = {
+		birth = yes
+	}
+
+	1210.1.1 = {
+		trait = gregarious
+		trait = diligent
+		trait = forgiving
+	}
+
+	1214.10.24 = {
+		trait = education_martial_2
+		trait = cautious_leader
+	}
+
+	1226.7.19 = {
+		trait = gh_legon
+	}
+
+	1235.10.6 = {
+		death = {
+			death_reason = death_battle
+			killer = karzarads_kakarataki_5 # Duvaken Silver-Speaker
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_33 = { # Aautokratir Kethemodes, Governor of Malcois turned Aautokratir, was slain in the Fall of Malcois during the Kartharaddi Invasion
+	name = "Kethemodes"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+	dynasty = dyn_aversarian_104
+
+	mother = centralimperial_aversarinas_aagiokrata_16
+
+	martial = 9
+	diplomacy = 2
+	intrigue = 7
+	stewardship = 4
+	learning = 3
+	prowess = 4
+
+	580.10.8 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	592.1.1 = {
+		trait = brave
+		trait = patient
+		trait = shy
+	}
+
+	596.10.8 = {
+		trait = education_stewardship_3
+		trait = administrator
+		trait = gh_ritual_tattoos
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	645.6.26 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_41 = { # Yovic Delenel, Karthyn's cooler older brother
+	name = "Yovic"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial #Skorikiakas? Name is not central aversarian
+	disallow_random_traits = yes
+	dynasty = dyn_aversarian_12
+
+	father = centralimperial_aversarinas_aagiokrata_42
+
+	martial = 5
+	diplomacy = 8
+	intrigue = 7
+	stewardship = 6
+	learning = 6
+	prowess = 5
+
+	1166.2.28 = {
+		birth = yes
+		trait = magic_good_6
+		trait = physique_good_2
+		trait = intellect_good_2
+	}
+
+	1178.1.1 = {
+		trait = vengeful
+		trait = ambitious
+		trait = deceitful
+	}
+
+	1182.2.28 = {
+		trait = education_arcana_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+		trait = gh_glowing_veins
+	}
+
+	1186.6.21 = {
+		death = {
+			death_reason = death_axiaothea_blood_senate
+			killer = easternimperial_aversarian_axiaotheaism_1 # Axiaothea
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_42 = { # Archimanos Delenel, Karthyn's dad
+	name = "Archimanos"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+	dynasty = dyn_aversarian_12
+
+	martial = 8
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 2
+	learning = 5
+	prowess = 7
+
+	1134.10.25 = {
+		birth = yes
+		trait = magic_good_3
+		trait = physique_good_2
+	}
+
+	1146.1.1 = {
+		trait = forgiving
+		trait = zealous
+		trait = generous
+	}
+
+	1150.10.25 = {
+		trait = education_martial_2
+		trait = organizer
+	}
+
+	1186.6.21 = {
+		death = {
+			death_reason = death_axiaothea_blood_senate
+			killer = easternimperial_aversarian_axiaotheaism_1 # Axiaothea
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_43 = { # Lasthena Delenel, Karthyn's daughter
+	name = "Lasthena"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+	dynasty = dyn_aversarian_12
+	female = yes
+
+	father = centralimperial_aeschraes_aagiokrata_1
+
+	martial = 6
+	diplomacy = 8
+	intrigue = 4
+	stewardship = 7
+	learning = 7
+	prowess = 7
+
+	1201.5.11 = {
+		birth = yes
+		trait = magic_good_3
+		trait = intellect_good_1
+	}
+
+	1213.1.1 = {
+		trait = calm
+		trait = humble
+		trait = shy
+	}
+
+	1217.5.11 = {
+		trait = education_martial_3
+		trait = cautious_leader
+	}
+
+	1229.12.12 = {
+		death = {
+			death_reason = death_torture
+			killer = southernimperial_aversarian_gorassos_1 # Gorassos
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_44 = { # Aeschratios Delenel, Karthyn's son
+	name = "Aeschratios"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+	dynasty = dyn_aversarian_12
+
+	father = centralimperial_aeschraes_aagiokrata_1
+
+	martial = 2
+	diplomacy = 7
+	intrigue = 3
+	stewardship = 5
+	learning = 8
+	prowess = 5
+
+	1206.7.3 = {
+		birth = yes
+		trait = physique_good_2
+	}
+
+	1218.1.1 = {
+		trait = fickle
+		trait = lustful
+		trait = gregarious
+	}
+
+	1222.7.3 = {
+		trait = education_martial_2
+		trait = military_engineer
+	}
+
+	1229.12.12 = {
+		death = {
+			death_reason = death_dragged
+			killer = southernimperial_aversarian_gorassos_1 # Gorassos
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_46 = {
+	name = "Kyrillos"
+
+	dynasty = dyn_central_empire_11
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_52
+	mother = centralimperial_aversarinas_aagiokrata_53
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = fickle
+	trait = humble
+
+	diplomacy = 4
+	martial = 6
+	stewardship = 5
+	intrigue = 3
+	learning = 6
+	prowess = 4
+
+	trait = education_martial_3
+
+	1180.2.11 = {
+		birth = yes
+	}
+
+	1220.7.27 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_47
+	}
+
+	1236.12.13 = {
+		death = { death_reason = death_hunting_accident }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_47 = {
+	name = "Ioulia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = chaste
+	trait = deceitful
+	trait = arrogant
+
+	diplomacy = 6
+	martial = 6
+	stewardship = 7
+	intrigue = 5
+	learning = 7
+	prowess = 4
+
+	trait = education_stewardship_2
+
+	1203.9.24 = {
+		birth = yes
+	}
+
+	1262.4.8 = {
+		death = { death_reason = death_poison }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_48 = {
+	name = "Qavartox"
+
+	dynasty = dyn_central_empire_12
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_54
+	mother = centralimperial_aversarinas_aagiokrata_55
+
+	sexuality = heterosexual
+
+	trait = calm
+	trait = stubborn
+	trait = sadistic
+
+	diplomacy = 2
+	martial = 5
+	stewardship = 6
+	intrigue = 5
+	learning = 4
+	prowess = 8
+
+	trait = education_stewardship_4
+
+	1175.12.6 = {
+		birth = yes
+	}
+
+	1200.2.19 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_49
+	}
+
+	1231.3.9 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_49 = {
+	name = "Evanthia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = diligent
+	trait = callous
+	trait = just
+
+	diplomacy = 6
+	martial = 7
+	stewardship = 6
+	intrigue = 5
+	learning = 6
+	prowess = 4
+
+	trait = education_martial_3
+
+	1183.10.11 = {
+		birth = yes
+	}
+
+	1260.12.7 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_50 = {
+	name = "Idaeus"
+
+	dynasty = dyn_central_empire_22
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_56
+	mother = centralimperial_aversarinas_aagiokrata_57
+
+	sexuality = heterosexual
+
+	trait = shy
+	trait = ambitious
+	trait = forgiving
+
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 4
+	learning = 6
+	prowess = 8
+
+	trait = education_learning_4
+
+	1180.2.27 = {
+		birth = yes
+	}
+
+	1197.3.21 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_51
+	}
+
+	1232.9.4 = {
+		death = { death_reason = death_disappearance }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_51 = {
+	name = "Themetea" #Renamed from Theodosia
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = sadistic
+	trait = vengeful
+
+	diplomacy = 10
+	martial = 7
+	stewardship = 5
+	intrigue = 8
+	learning = 4
+	prowess = 9
+
+	trait = education_diplomacy_4
+
+	1180.3.7 = {
+		birth = yes
+	}
+
+	1232.9.4 = {
+		death = { death_reason = death_disappearance }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_52 = {
+	name = "Arsenios"
+
+	dynasty = dyn_central_empire_11
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = cynical
+	trait = wrathful
+	trait = ambitious
+
+	diplomacy = 7
+	martial = 8
+	stewardship = 7
+	intrigue = 5
+	learning = 6
+	prowess = 7
+
+	trait = education_martial_4
+
+	1124.9.10 = {
+		birth = yes
+	}
+
+	1167.3.13 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_53
+	}
+
+	1186.4.2 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_53 = {
+	name = "Basiane"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = craven
+	trait = deceitful
+	trait = gregarious
+
+	diplomacy = 4
+	martial = 8
+	stewardship = 10
+	intrigue = 7
+	learning = 9
+	prowess = 6
+
+	trait = education_stewardship_3
+
+	1150.7.19 = {
+		birth = yes
+	}
+
+	1225.4.6 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_54 = {
+	name = "Clytomedes"
+
+	dynasty = dyn_central_empire_12
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_133
+	mother = centralimperial_aversarinas_aagiokrata_134
+
+	sexuality = heterosexual
+
+	trait = just
+	trait = temperate
+	trait = vengeful
+
+	diplomacy = 9
+	martial = 7
+	stewardship = 3
+	intrigue = 4
+	learning = 6
+	prowess = 7
+
+	trait = education_diplomacy_1
+
+	1148.1.20 = {
+		birth = yes
+	}
+
+	1170.8.4 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_55
+	}
+
+	1220.10.2 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_55 = {
+	name = "Maklanea" #Renamed from Margarita
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = compassionate
+	trait = arbitrary
+	trait = greedy
+
+	diplomacy = 4
+	martial = 10
+	stewardship = 7
+	intrigue = 6
+	learning = 6
+	prowess = 7
+
+	trait = education_martial_3
+
+	1153.7.7 = {
+		birth = yes
+	}
+
+	1180.3.16 = {
+		death = { death_reason = death_accident }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_56 = {
+	name = "Exaduis"
+
+	dynasty = dyn_central_empire_22
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_137
+	mother = centralimperial_aversarinas_aagiokrata_138
+
+	sexuality = heterosexual
+
+	trait = sadistic
+	trait = craven
+	trait = wrathful
+
+	diplomacy = 5
+	martial = 7
+	stewardship = 8
+	intrigue = 8
+	learning = 5
+	prowess = 1
+
+	trait = education_stewardship_3
+
+	1131.5.2 = {
+		birth = yes
+	}
+
+	1175.3.17 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_57
+	}
+
+	1185.11.8 = {
+		death = { death_reason = death_ended_on_feast_table }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_57 = {
+	name = "Ktistria" #Renamed from Theoktiste
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = lustful
+	trait = sadistic
+	trait = arrogant
+
+	diplomacy = 3
+	martial = 8
+	stewardship = 4
+	intrigue = 4
+	learning = 4
+	prowess = 7
+
+	trait = education_martial_3
+
+	1158.9.10 = {
+		birth = yes
+	}
+
+	1207.10.26 = {
+		death = { death_reason = death_consumption }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_58 = {
+	name = "Iakobos"
+
+	dynasty = dyn_central_empire_12
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_54
+	mother = centralimperial_aversarinas_aagiokrata_55
+
+	sexuality = heterosexual
+
+	trait = greedy
+	trait = vengeful
+	trait = paranoid
+
+	diplomacy = 7
+	martial = 5
+	stewardship = 7
+	intrigue = 8
+	learning = 8
+	prowess = 6
+
+	trait = education_intrigue_2
+
+	1173.6.20 = {
+		birth = yes
+	}
+
+	1202.4.14 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_132
+	}
+
+	1212.11.7 = {
+		death = { death_reason = death_wounds }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_59 = { # Saint Sansia
+	name = "Sansia"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+	dynasty = dyn_sansia_1
+	dna = sansia
+	female = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp2_iberian_christian_02
+		}
+	}
+
+	martial = 7
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 4
+	learning = 4
+	prowess = 7
+
+	1055.5.6 = {
+		birth = yes
+		trait = beauty_good_3
+		trait = physique_good_2
+		trait = disputed_heritage
+	}
+
+	1067.1.1 = {
+		trait = brave
+		trait = wrathful
+		trait = compassionate	
+	}
+
+	1068.12.12 = {
+		trait = murderer
+	}
+
+	1071.5.6 = {
+		trait = education_martial_4
+		trait = gh_historical_blademaster_2
+	}
+
+	1074.12.1 = {
+		trait = gh_arch_legon
+		trait = scarred
+		trait = strategist
+		trait = aggressive_attacker
+		trait = organizer
+	}
+
+	1095.6.19 = {
+		death = {
+			death_reason = death_burned_witch
+			killer = westernimperial_aversarinas_aagiokrata_82 # Aautokratir Phancis
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_60 = { # Saint Eos
+	name = "Eos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+	dynasty = dyn_eos_1
+	dna = eos
+
+	father = centralimperial_aversarinas_aagiokrata_181
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_frankish_01
+			custom_beards = male_beard_fp2_iberian_christian_01
+		}
+	}
+
+	martial = 5
+	diplomacy = 8
+	intrigue = 7
+	stewardship = 7
+	learning = 3
+	prowess = 6
+
+	1057.10.11 = {
+		birth = yes
+		trait = physique_good_2
+		trait = beauty_good_1
+	}
+
+	1069.1.1 = {
+		trait = brave
+		trait = just
+		trait = honest
+	}
+
+	1073.10.11 = {
+		trait = education_martial_3
+		trait = education_martial_prowess_4
+		trait = celibate
+		trait = athletic
+		trait = gallant
+		trait = gh_historical_blademaster_3
+	}
+	
+	1094.11.3 = {
+		death = {
+			death_reason = death_siege
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_61 = { # Veteran of the Malcoisiac Governorial Legions. Fought for the Aeschraeists largely out of dynastic obligation, but joined the Blood-Pact and brought her lands to rebellion after her brothers and uncle were killed in Frodbrokna
+	name = "Thylia" #Renamed from Theyladaos, TRANS
+	dynasty = dyn_alimede
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+	female = yes #TRANS, was named theyladaos which is unambiguously masculine
+	
+	father = centralimperial_aversarinas_aagiokrata_73
+	mother = centralimperial_aversarinas_aagiokrata_67
+
+	1169.2.25 = {
+		birth = yes
+		trait = intellect_good_1
+		trait = magic_good_5
+	}
+
+	1185.2.25 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+		trait = education_martial_4
+		trait = gh_ritual_tattoos
+		trait = shrewd
+		trait = brave
+		trait = honest
+		trait = callous
+		trait = gh_historical_blademaster_2
+	}
+
+	1211.4.11 = {
+		death = {
+			death_reason = death_duel
+			killer = centralimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_62 = {
+	name = "Dekrados" #His dynasty fought with the neutrals in Malcois during the Civil War. Had come to power just before Frod and largely escaped it from luck. Was convinced Aeschraes would come for him for fighting for the neutrals which ultimately led to him joining the Blood-Pact after being approached by Jaxor, an old acquaintance of his sister, a Mayikprolollan Magi
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+
+	1178.11.21 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	1186.11.21 = {
+		trait = gh_historical_blademaster_1
+		trait = education_stewardship_2
+		trait = ambitious
+		trait = greedy
+		trait = paranoid
+	}
+
+	1208.11.21 = {
+		death = {
+			death_reason = death_ritual_torture
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_63 = {
+	name = "Tenex" #Vassal of Dukon, was considered one of the greatest generals in post-Frod Aversaria.
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+
+	1157.2.27 = {
+		birth = yes
+		trait = magic_good_7
+	}
+
+	1173.2.27 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+		trait = intellect_good_2
+		trait = education_martial_4
+		trait = shrewd
+		trait = brave
+		trait = diligent
+		trait = patient
+		trait = gh_historical_blademaster_3
+	}
+
+	1196.3.21 = {
+		give_nickname = nick_the_greatclaw_tenex
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	1210.2.4 = {
+		death = {
+			death_reason = death_battle
+			killer = centralimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_64 = { # Aautokratir of Aversaria at the tail end of the Chaos of the Seventh Century. Largely responsible for Aversaria not ending up a pile of ashes under Kartharaddi rule.
+	name = "Eramos"
+	dna = eramos
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+	
+	martial = 15
+	diplomacy = 10
+	stewardship = 4
+	intrigue = 7
+	learning = 5
+
+	705.10.5 = {
+		birth = yes
+		trait = intellect_good_1
+		trait = magic_good_4
+		trait = physique_good_2
+	}
+	717.1.1 = {
+		trait = brave
+		trait = cynical
+		trait = wrathful
+	}
+	721.10.5 = {
+		trait = education_martial_5
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+		trait = shrewd
+	}
+	725.1.1 = {
+		trait = strategist
+		trait = scarred
+	}
+	756.10.3 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+#################
+# HOUSE ALIMEDE #
+#################
+
+centralimperial_aversarinas_aagiokrata_65 = {
+	name = "Biton" # Bastard founder of house Alimede
+
+	dynasty = dyn_alimede
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	diplomacy = 9
+	martial = 7
+	stewardship = 2
+	intrigue = 6
+	learning = 4
+	prowess = 9
+
+	1102.7.12 = {
+		birth = yes
+		trait = bastard
+		trait = magic_good_4
+	}
+
+	1114.1.1 = {
+		trait = just
+		trait = forgiving
+		trait = brave
+	}
+	
+	1118.7.12 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+		trait = education_diplomacy_4
+	}
+
+	1121.4.22 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_66
+	}
+
+	1171.10.22 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_66 = {
+	name = "Euphrasia" 
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = compassionate
+	trait = patient
+	trait = trusting
+
+	diplomacy = 10
+	martial = 5
+	stewardship = 5
+	intrigue = 7
+	learning = 3
+	prowess = 5
+
+	trait = education_diplomacy_1
+
+	1104.4.2 = {
+		birth = yes
+	}
+
+	1144.3.20 = {
+		death = { death_reason = death_typhus }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_67 = {
+	name = "Sibylla"
+	female = yes
+
+	dynasty = dyn_alimede
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_65
+	mother = centralimperial_aversarinas_aagiokrata_66
+
+	sexuality = heterosexual
+
+	trait = paranoid
+	trait = brave
+	trait = ambitious
+
+	diplomacy = 6
+	martial = 7
+	stewardship = 9
+	intrigue = 10
+	learning = 8
+	prowess = 7
+
+	trait = education_intrigue_2
+
+	1124.2.5 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1171.10.23 = {
+		death = { death_reason = death_murder }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_68 = {
+	name = "Archelaus" 
+
+	dynasty = dyn_alimede
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_65
+	mother = centralimperial_aversarinas_aagiokrata_66
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = gregarious
+	trait = arrogant
+
+	diplomacy = 6
+	martial = 6
+	stewardship = 7
+	intrigue = 7
+	learning = 3
+	prowess = 9
+
+	trait = education_stewardship_1
+
+	1128.7.3 = {
+		birth = yes
+	}
+
+	1151.7.19 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_69
+	}
+
+	1161.1.21 = {
+		trait = smallpox
+		death = { death_reason = death_smallpox }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_69 = {
+	name = "Lasthena" 
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = deceitful
+	trait = just
+	trait = patient
+
+	diplomacy = 8
+	martial = 2
+	stewardship = 5
+	intrigue = 7
+	learning = 4
+	prowess = 5
+
+	trait = education_diplomacy_2
+
+	1134.4.4 = {
+		birth = yes
+	}
+
+	1206.8.15 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_70 = {
+	name = "Archimanos" # Alimede lord and contender in the Blood Senate of 1186
+
+	dynasty = dyn_alimede
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_68
+	mother = centralimperial_aversarinas_aagiokrata_69
+
+	sexuality = asexual
+
+	diplomacy = 6
+	martial = 11
+	stewardship = 4
+	intrigue = 5
+	learning = 8
+	prowess = 7
+
+	1156.3.17 = {
+		birth = yes
+		trait = magic_good_4
+	}
+	
+	1168.1.1 = {
+		trait = arrogant
+		trait = ambitious
+		trait = wrathful
+	}
+	
+	1172.3.17 = {
+		trait = education_martial_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1178.1.22 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_71
+	}
+
+	1186.6.21 = {
+		death = {
+			death_reason = death_axiaothea_blood_senate
+			killer = easternimperial_aversarian_axiaotheaism_1 # Axiaothea
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_71 = {
+	name = "Epiphania" 
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = paranoid
+	trait = callous
+	trait = fickle
+
+	diplomacy = 3
+	martial = 5
+	stewardship = 5
+	intrigue = 8
+	learning = 6
+	prowess = 7
+
+	trait = education_intrigue_3
+
+	1161.2.8 = {
+		birth = yes
+	}
+
+	1186.6.21 = {
+		death = {
+			death_reason = death_axiaothea_blood_senate
+			killer = easternimperial_aversarian_axiaotheaism_1 # Axiaothea
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_72 = {
+	name = "Katharitos" 
+
+	dynasty = dyn_alimede
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_65
+	mother = centralimperial_aversarinas_aagiokrata_66
+
+	sexuality = heterosexual
+
+	trait = wrathful
+	trait = callous
+	trait = arrogant
+
+	diplomacy = 6
+	martial = 8
+	stewardship = 10
+	intrigue = 3
+	learning = 7
+	prowess = 5
+
+	trait = education_stewardship_3
+
+	1140.6.23 = {
+		birth = yes
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_73 = {
+	name = "Nicios" 
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = wrathful
+	trait = ambitious
+	trait = arrogant
+
+	diplomacy = 8
+	martial = 7
+	stewardship = 5
+	intrigue = 6
+	learning = 7
+	prowess = 8
+
+	trait = education_diplomacy_2
+
+	1124.2.11 = {
+		birth = yes
+	}
+
+	1147.1.13 = {
+		add_matrilineal_spouse = centralimperial_aversarinas_aagiokrata_67
+	}
+
+	1185.11.24 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_74 = {
+	name = "Loukas" 
+
+	dynasty = dyn_alimede
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_73
+	mother = centralimperial_aversarinas_aagiokrata_67
+
+	sexuality = heterosexual
+
+	trait = lazy
+	trait = callous
+	trait = deceitful
+
+	diplomacy = 5
+	martial = 7
+	stewardship = 5
+	intrigue = 8
+	learning = 7
+	prowess = 6
+
+	trait = education_intrigue_2
+
+	1155.6.20 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1185.1.10 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_75
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_75 = {
+	name = "Evanthia" 
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = shy
+	trait = lustful
+	trait = stubborn
+
+	diplomacy = 5
+	martial = 5
+	stewardship = 4
+	intrigue = 9
+	learning = 5
+	prowess = 9
+
+	trait = education_intrigue_2
+
+	1168.6.11 = {
+		birth = yes
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_76 = {
+	name = "Davon" 
+
+	dynasty = dyn_alimede
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_74
+	mother = centralimperial_aversarinas_aagiokrata_75
+
+	1201.8.13 = {
+		birth = yes
+	}
+
+	1211.9.27 = {
+		death = {
+			death_reason = death_burned
+			killer = centralimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_77 = { # Died fighting for Aesch
+	name = "Aeschratios" 
+
+	dynasty = dyn_alimede
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_73
+	mother = centralimperial_aversarinas_aagiokrata_67
+
+	sexuality = heterosexual
+
+	trait = calm
+	trait = arrogant
+	trait = callous
+
+	diplomacy = 3
+	martial = 6
+	stewardship = 4
+	intrigue = 4
+	learning = 8
+	prowess = 6
+
+	trait = education_learning_3
+
+	1156.11.26 = {
+		birth = yes
+		trait = magic_good_7
+	}
+
+	1176.3.17 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_78
+	}
+
+	1195.12.10 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_78 = {
+	name = "Eulalia" 
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = wrathful
+	trait = forgiving
+
+	diplomacy = 8
+	martial = 7
+	stewardship = 7
+	intrigue = 5
+	learning = 6
+	prowess = 7
+
+	trait = education_diplomacy_3
+
+	1159.10.4 = {
+		birth = yes
+	}
+
+	1211.9.27 = {
+		death = {
+			death_reason = death_burned
+			killer = centralimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_79 = {
+	name = "Thekla" 
+	female = yes
+
+	dynasty = dyn_alimede
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_77
+	mother = centralimperial_aversarinas_aagiokrata_78
+
+	sexuality = heterosexual
+
+	trait = paranoid
+	trait = ambitious
+	trait = greedy
+
+	diplomacy = 7
+	martial = 8
+	stewardship = 11
+	intrigue = 4
+	learning = 4
+	prowess = 2
+
+	trait = education_stewardship_3
+
+	1180.8.21 = {
+		birth = yes
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_80 = {
+	name = "Basillike" 
+	female = yes
+
+	dynasty = dyn_alimede
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_77
+	mother = centralimperial_aversarinas_aagiokrata_78
+
+	sexuality = heterosexual
+
+	trait = craven
+	trait = chaste
+	trait = vengeful
+
+	diplomacy = 6
+	martial = 3
+	stewardship = 7
+	intrigue = 6
+	learning = 5
+	prowess = 9
+
+	trait = education_stewardship_3
+
+	1182.9.19 = {
+		birth = yes
+	}
+
+	1211.9.27 = {
+		death = {
+			death_reason = death_burned
+			killer = centralimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_81 = {
+	name = "Hermon" 
+
+	dynasty = dyn_alimede
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_77
+	mother = centralimperial_aversarinas_aagiokrata_78
+
+	sexuality = heterosexual
+
+	trait = chaste
+	trait = paranoid
+	trait = callous
+
+	diplomacy = 8
+	martial = 11
+	stewardship = 9
+	intrigue = 4
+	learning = 5
+	prowess = 7
+
+	trait = education_martial_2
+
+	1184.7.21 = {
+		birth = yes
+	}
+
+	1211.9.27 = {
+		death = {
+			death_reason = death_burned
+			killer = centralimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_82 = {
+	name = "Elaiodora" 
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = shy
+	trait = callous
+	trait = greedy
+
+	diplomacy = 7
+	martial = 8
+	stewardship = 6
+	intrigue = 6
+	learning = 9
+	prowess = 8
+
+	trait = education_learning_2
+
+	1194.10.21 = {
+		birth = yes
+	}
+
+	1211.9.27 = {
+		death = {
+			death_reason = death_burned
+			killer = centralimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_83 = {
+	name = "Polydora" 
+	female = yes
+
+	dynasty = dyn_alimede
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_77
+	mother = centralimperial_aversarinas_aagiokrata_78
+
+	sexuality = heterosexual
+
+	trait = forgiving
+	trait = shy
+	trait = chaste
+
+	diplomacy = 3
+	martial = 8
+	stewardship = 7
+	intrigue = 8
+	learning = 5
+	prowess = 4
+
+	trait = education_martial_3
+
+	1187.7.16 = {
+		birth = yes
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_84 = {
+	name = "Konstantios" 
+
+	dynasty = dyn_alimede
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_77
+	mother = centralimperial_aversarinas_aagiokrata_78
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = sadistic
+	trait = greedy
+
+	diplomacy = 3
+	martial = 5
+	stewardship = 8
+	intrigue = 10
+	learning = 6
+	prowess = 3
+
+	trait = education_intrigue_4
+
+	1189.11.10 = {
+		birth = yes
+	}
+
+	1211.9.27 = {
+		death = {
+			death_reason = death_burned
+			killer = centralimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+###################
+# HOUSE VARSAXOAN #
+###################
+
+centralimperial_aversarinas_aagiokrata_85 = {
+	name = "Dukon" #Old dynastic liege and tutor to Jaxor. Pretty much entire family killed in Frodbrokna, and joined the Blood-Pakt both out of duty to his family and friendship with Jaxor.
+	
+	dynasty = dyn_varsaxoan
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+	
+	father = centralimperial_aversarinas_aagiokrata_88
+	mother = centralimperial_aversarinas_aagiokrata_89
+
+	1142.3.19 = {
+		birth = yes
+		trait = magic_good_8
+	}
+
+	1160.3.19 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+		trait = education_learning_4
+		trait = zealous
+		trait = humble
+		trait = temperate
+		trait = one_eyed
+	}
+	
+	1171.3.14 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_86
+	}
+
+	1198.1.1 = {
+		give_nickname = nick_the_old_dukon
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	1210.7.12 = {
+		death = {
+			death_reason = death_torture
+			killer = centralimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_86 = {
+	name = "Agathe" 
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = patient
+	trait = temperate
+
+	diplomacy = 7
+	martial = 8
+	stewardship = 4
+	intrigue = 8
+	learning = 4
+	prowess = 9
+
+	trait = education_martial_1
+
+	1154.9.25 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_87 = {
+	name = "Amon" 
+
+	dynasty = dyn_varsaxoan
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_85
+	mother = centralimperial_aversarinas_aagiokrata_86
+
+	1187.4.20 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_88 = {
+	name = "Amyntos" 
+
+	dynasty = dyn_varsaxoan
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = impatient
+	trait = fickle
+	trait = trusting
+
+	diplomacy = 6
+	martial = 9
+	stewardship = 5
+	intrigue = 9
+	learning = 4
+	prowess = 10
+
+	trait = education_martial_3
+
+	1119.8.1 = {
+		birth = yes
+	}
+
+	1141.7.3 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_89
+	}
+
+	1178.2.21 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_89 = {
+	name = "Eustathia" 
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = diligent
+	trait = cynical
+	trait = calm
+
+	diplomacy = 6
+	martial = 7
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	prowess = 6
+
+	trait = education_martial_2
+
+	1126.7.4 = {
+		birth = yes
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_90 = {
+	name = "Clytomedes" 
+
+	dynasty = dyn_varsaxoan
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_88
+	mother = centralimperial_aversarinas_aagiokrata_89
+
+	sexuality = heterosexual
+
+	trait = chaste
+	trait = arbitrary
+	trait = callous
+
+	diplomacy = 9
+	martial = 8
+	stewardship = 6
+	intrigue = 6
+	learning = 7
+	prowess = 8
+
+	trait = education_diplomacy_2
+
+	1152.9.9 = {
+		birth = yes
+	}
+
+	1182.5.18 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_91
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_91 = {
+	name = "Stephania" 
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = lustful
+	trait = arrogant
+	trait = wrathful
+
+	diplomacy = 4
+	martial = 7
+	stewardship = 6
+	intrigue = 4
+	learning = 11
+	prowess = 6
+
+	trait = education_learning_1
+
+	1165.2.23 = {
+		birth = yes
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_92 = {
+	name = "Ischenios" 
+
+	dynasty = dyn_varsaxoan
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_90
+	mother = centralimperial_aversarinas_aagiokrata_91
+
+	1188.6.23 = {
+		birth = yes
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_93 = {
+	name = "Melissa" # Only living scion of house Varsaxoan in 1254. Never got a magic education due to constantly jumping around different Malcoisiac courts in youth. Retakes old house seat in 1241 with the help of a warlord she's in service to.
+	female = yes
+
+	dynasty = dyn_varsaxoan
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	
+	father = centralimperial_aversarinas_aagiokrata_90
+	mother = centralimperial_aversarinas_aagiokrata_91
+
+	sexuality = homosexual
+
+	diplomacy = 1
+	martial = 9
+	stewardship = 3
+	intrigue = 5
+	learning = 6
+	prowess = 8
+
+	1199.9.6 = {
+		birth = yes
+		trait = magic_good_3
+        effect = {
+            dynasty = { add_dynasty_prestige_level = 3 }
+        }
+	}
+
+	1211.1.1 = {
+		trait = paranoid
+		trait = stubborn
+		trait = vengeful
+	}
+	
+	1215.9.6 = {
+		trait = education_martial_2
+	}
+	
+	1221.1.1 = {
+		trait = athletic
+		trait = gh_historical_blademaster_1
+	}
+	
+	1229.10.17 = {
+		add_matrilineal_spouse = centralimperial_aversarinas_aagiokrata_94
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_94 = {
+	name = "Ennomus"
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = impatient
+	trait = temperate
+	trait = ambitious
+
+	diplomacy = 7
+	martial = 3
+	stewardship = 5
+	intrigue = 9
+	learning = 8
+	prowess = 4
+
+	trait = education_intrigue_2
+
+	1212.11.21 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1278.1.21 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_95 = {
+	name = "Idaeus" 
+
+	dynasty = dyn_varsaxoan
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_94
+	mother = centralimperial_aversarinas_aagiokrata_93
+
+	sexuality = heterosexual
+
+	trait = diligent
+	trait = impatient
+	trait = arbitrary
+
+	diplomacy = 7
+	martial = 5
+	stewardship = 8
+	intrigue = 7
+	learning = 8
+	prowess = 5
+
+	trait = education_stewardship_2
+
+	1231.9.18 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1299.6.13 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_96 = {
+	name = "Lysikles"
+	dna = central_empire_9
+	dynasty = dyn_central_empire_3
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+
+	trait = peasant_leader
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_western_03
+			custom_hair = male_hair_western_03
+		}
+	}
+
+	1232.4.12 = {
+		birth = yes
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_97 = {
+	name = "Thalpius"
+	dna = centralimperial_4
+	dynasty = dyn_central_empire_10
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+
+	trait = peasant_leader
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_western_9b
+			custom_hair = male_hair_western_02
+		}
+	}
+
+	1229.4.12 = {
+		birth = yes
+	}
+}
+
+###################
+# ATOVID DYNASTY #
+###################
+
+centralimperial_aversarinas_aagiokrata_98 = { # Last Atovid Governor of Malcois
+	name = "Valerios"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+	mother = centralimperial_aversarinas_aagiokrata_100
+	dynasty = dyn_central_empire_26
+
+	1200.2.30 = {
+		birth = yes
+		}
+
+	1240.8.13 = {
+		death = {
+			death_reason = death_attacked
+			killer = southernimperial_aversarian_gorassos_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_99 = { # Died in Frodbrokna, grandfather of guy who got Gorrasos'd
+	name = "Narses"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+	dynasty = dyn_central_empire_26
+	trait = craven
+
+	1149.4.20 = {
+		birth = yes
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_100 = {
+	name = "Anaklea" #Renamed from Georgia
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+	female = yes
+	dynasty = dyn_central_empire_26
+	father = centralimperial_aversarinas_aagiokrata_99
+
+	1173.12.20 = {
+		birth = yes
+	}
+
+	1238.4.15 = {
+		death = {
+			death_reason = death_duel
+			killer = southernimperial_aversarian_gorassos_1
+		}
+	}
+}
+
+#####################
+# DRAKAXIAD DYNASTY #
+#####################
+
+centralimperial_aversarinas_aagiokrata_45 = { # Anesimasios. killed by axiaothea?? or aes??? or katradians???? or marchers????? or liches????? or merchants?????? or
+	name = "Anesimasios"
+	dna = centralimperial_aversarinas_aagiokrata_45
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+	father = centralimperial_aversarinas_aagiokrata_103
+	dynasty = dyn_aversarian_77
+
+	martial = 8
+	diplomacy = 14
+	stewardship = 8
+	intrigue = 10
+	learning = 5
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_mena_04
+			custom_beards = no_beard
+		}
+	}
+
+	1153.1.2 = {
+		birth = yes
+		trait = magic_good_7
+	}
+	1165.1.1 = {
+		trait = compassionate
+		trait = humble
+		trait = ambitious
+	}
+	1169.1.2 = {
+		trait = education_diplomacy_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+	1175.1.1 = {
+		trait = diplomat
+		trait = shrewd
+	}
+	1185.4.14 = { # Scion: Changed this to 1185, so Axiao is 16 to make it consistent with in-game mechanics (also makes more sense primer-wise)
+		add_spouse = easternimperial_aversarian_axiaotheaism_1 # Axiaothea
+		give_nickname = nick_kindblood
+	}
+	1186.2.14 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_101 = { # Pyrros 'Skybane'
+	name = "Pyrros"
+
+	dynasty = dyn_aversarian_77
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = brave
+	trait = vengeful
+	trait = physique_good_3
+
+	diplomacy = 6
+	martial = 15
+	stewardship = 7
+	intrigue = 5
+	learning = 6
+	prowess = 7
+
+	trait = education_martial_4
+
+	1044.12.12 = {
+		birth = yes
+	}
+
+	1097.7.25 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_102
+		give_nickname = nick_skybane
+	}
+
+	1107.3.7 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_102 = { # Saint Eos' niece, married into the Drakaxiad dynasty
+	name = "Machea"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	dynasty = dyn_eos_1
+	female = yes
+
+	father = centralimperial_aversarinas_aagiokrata_183
+
+	disallow_random_traits = yes
+
+	martial = 5
+	diplomacy = 5
+	intrigue = 4
+	stewardship = 5
+	learning = 1
+	prowess = 7
+
+	1080.12.9 = {
+		birth = yes
+	}
+
+	1092.1.1 = {
+		trait = honest
+		trait = zealous
+		trait = stubborn
+	}
+
+	1096.12.9 = {
+		trait = education_diplomacy_4
+	}
+
+	1146.12.18 = {
+		death = {
+			death_reason = death_lost_in_the_forest
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_103 = { # Antonios Flamecaller
+	name = "Antonios"
+
+	dynasty = dyn_aversarian_77
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_101
+	mother = centralimperial_aversarinas_aagiokrata_102
+
+	sexuality = bisexual
+
+	diplomacy = 7
+	martial = 13
+	stewardship = 8
+	intrigue = 7
+	learning = 7
+	prowess = 4
+
+	1099.11.1 = {
+		birth = yes
+		trait = beauty_good_3
+		trait = magic_good_6
+	}
+
+	1111.1.1 = {
+		trait = arrogant
+		trait = brave
+		trait = ambitious
+	}
+
+	1114.11.1 = {
+		trait = strategist
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1133.6.18 = {
+		give_nickname = nick_flamecaller
+	}
+
+	1158.8.9 = {
+		death = { death_reason = death_murder }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_105 = {
+	name = "Akaktimos" #Renamed from Zacharias
+
+	dynasty = dyn_aversarian_77
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_103
+
+	sexuality = heterosexual
+
+	diplomacy = 6
+	martial = 7
+	stewardship = 5
+	intrigue = 6
+	learning = 6
+	prowess = 8
+
+	1136.3.24 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1148.1.1 = {
+		trait = shy
+		trait = greedy
+		trait = sadistic
+	}
+
+	1152.3.24 = {
+		trait = overseer
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1173.4.7 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_106
+	}
+
+	1190.3.1 = {
+		death = {
+			death_reason = death_magic_fire
+			killer = easternimperial_aversarian_axiaotheaism_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_106 = {
+	name = "Thysalia" #Renamed from Theodosia
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = asexual
+
+	trait = generous
+	trait = content
+	trait = cynical
+
+	diplomacy = 5
+	martial = 6
+	stewardship = 7
+	intrigue = 8
+	learning = 4
+	prowess = 6
+
+	trait = education_intrigue_2
+
+	1156.5.21 = {
+		birth = yes
+	}
+
+	1229.12.20 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_107 = {
+	name = "Stathria" #Renamed from Sergia
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_105
+	mother = centralimperial_aversarinas_aagiokrata_106
+
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = paranoid
+	trait = cynical
+
+	diplomacy = 6
+	martial = 5
+	stewardship = 6
+	intrigue = 8
+	learning = 2
+	prowess = 4
+
+	trait = education_intrigue_3
+
+	1185.1.2 = {
+		birth = yes
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_108 = {
+	name = "Pankratios"
+
+	dynasty = dyn_aversarian_77
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_105
+	mother = centralimperial_aversarinas_aagiokrata_106
+
+	sexuality = heterosexual
+
+	diplomacy = 8
+	martial = 3
+	stewardship = 6
+	intrigue = 7
+	learning = 4
+	prowess = 6
+
+	1188.1.9 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1200.1.1 = {
+		trait = ambitious
+		trait = deceitful
+		trait = temperate
+	}
+
+	1204.1.9 = {
+		trait = education_martial_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+
+	1235.10.24 = {
+		add_spouse = easternimperial_aironoian_aagiokrata_90
+	}
+
+	1238.1.2 = {
+		death = {
+			death_reason = death_attacked
+			killer = southernimperial_aversarian_gorassos_2
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_109 = {
+	name = "Georgios"
+
+	dynasty = dyn_aversarian_77
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_103
+
+	sexuality = heterosexual
+
+	diplomacy = 6
+	martial = 10
+	stewardship = 7
+	intrigue = 7
+	learning = 6
+	prowess = 7
+
+	1151.7.28 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1163.1.1 = {
+		trait = arrogant
+		trait = content
+		trait = trusting
+	}
+
+	1167.7.28 = {
+		trait = education_martial_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1188.8.19 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_110
+	}
+
+	1198.3.25 = {
+		death = {
+		death_reason = death_magic_fire
+		killer = centralimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_110 = {
+	name = "Iouliana"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = stubborn
+	trait = forgiving
+	trait = temperate
+
+	diplomacy = 7
+	martial = 5
+	stewardship = 8
+	intrigue = 9
+	learning = 8
+	prowess = 4
+
+	trait = education_intrigue_4
+
+	1171.8.5 = {
+		birth = yes
+	}
+
+	1236.3.5 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_111 = {
+	name = "Dydistion" #Renamed from David
+
+	dynasty = dyn_aversarian_77
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_109
+	mother = centralimperial_aversarinas_aagiokrata_110
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = diligent
+	trait = arrogant
+
+	diplomacy = 8
+	martial = 8
+	stewardship = 7
+	intrigue = 8
+	learning = 2
+	prowess = 5
+
+	trait = education_diplomacy_1
+
+	1192.5.20 = {
+		birth = yes
+	}
+
+	1198.3.25 = {
+		death = {
+		death_reason = death_head_ripped_off
+		killer = centralimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_112 = {
+	name = "Philotheos"
+
+	dynasty = dyn_aversarian_77
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_109
+	mother = centralimperial_aversarinas_aagiokrata_110
+
+	sexuality = heterosexual
+
+	trait = sadistic
+	trait = just
+	trait = shy
+
+	diplomacy = 10
+	martial = 10
+	stewardship = 3
+	intrigue = 7
+	learning = 7
+	prowess = 8
+
+	trait = education_diplomacy_2
+
+	1196.10.1 = {
+		birth = yes
+	}
+
+	1198.3.25 = {
+		death = {
+		death_reason = death_beaten
+		killer = centralimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_113 = {
+	name = "Pelagios"
+
+	dynasty = dyn_aversarian_77
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_109
+	mother = centralimperial_aversarinas_aagiokrata_110
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = greedy
+	trait = cynical
+
+	diplomacy = 8
+	martial = 8
+	stewardship = 7
+	intrigue = 6
+	learning = 2
+	prowess = 6
+
+	trait = education_diplomacy_3
+
+	1197.11.18 = {
+		birth = yes
+	}
+
+	1226.8.10 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_114
+	}
+
+	1227.2.22 = {
+		death = {
+			death_reason = death_piteously_cut_down
+			killer = centralimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_114 = {
+	name = "Apollonia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = patient
+	trait = ambitious
+	trait = callous
+
+	diplomacy = 8
+	martial = 7
+	stewardship = 6
+	intrigue = 5
+	learning = 8
+	prowess = 8
+
+	trait = education_diplomacy_1
+
+	1205.12.11 = {
+		birth = yes
+	}
+
+	1232.11.12 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_115 = {
+	name = "Anthousa"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_101
+	mother = centralimperial_aversarinas_aagiokrata_102
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = greedy
+	trait = trusting
+
+	diplomacy = 6
+	martial = 8
+	stewardship = 1
+	intrigue = 5
+	learning = 10
+	prowess = 6
+
+	trait = education_learning_4
+
+	1102.9.23 = {
+		birth = yes
+	}
+
+	1115.10.15 = {
+		death = { death_reason = death_smallpox }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_116 = {
+	name = "Agitias" #Renamed from Georgia
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_101
+	mother = centralimperial_aversarinas_aagiokrata_102
+
+	sexuality = heterosexual
+
+	trait = wrathful
+	trait = greedy
+	trait = callous
+
+	diplomacy = 7
+	martial = 7
+	stewardship = 3
+	intrigue = 5
+	learning = 4
+	prowess = 4
+
+	trait = education_diplomacy_4
+
+	1103.5.1 = {
+		birth = yes
+	}
+
+	1127.10.11 = {
+		death = { death_reason = death_script_cruelty }
+	}
+}
+
+##
+
+centralimperial_aversarinas_aagiokrata_117 = {
+	name = "Mintheus"
+	dynasty = dyn_central_empire_2
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+
+	1222.4.12 = {
+		birth = yes
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_118 = {
+	name = "Epulon"
+	dynasty = dyn_central_empire_8
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+
+	1216.4.12 = {
+		birth = yes
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_119 = {
+	name = "Ion"
+	dynasty = dyn_central_empire_11
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+	father = centralimperial_aversarinas_aagiokrata_46
+	mother = centralimperial_aversarinas_aagiokrata_47
+
+	1225.4.12 = {
+		birth = yes
+        effect = {
+            dynasty = { add_dynasty_prestige_level = 3 }
+        }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_120 = {
+	name = "Euphemios"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+
+	1215.4.12 = {
+		birth = yes
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_121 = {
+	name = "Sophanes"
+	dynasty = dyn_central_empire_16
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+
+	1226.4.12 = {
+		birth = yes
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_122 = {
+	name = "Tenthredon"
+	dynasty = dyn_central_empire_22
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+	father = centralimperial_aversarinas_aagiokrata_50
+	mother = centralimperial_aversarinas_aagiokrata_51
+
+	1228.4.12 = {
+		birth = yes
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_123 = {
+	name = "Silos" #Renamed from Samuel
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_124 = {
+	name = "Tiberios"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+
+	1227.1.1 = {
+		birth = yes
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_125 = {
+	name = "Galestios"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+
+	trait = craven
+
+	1176.1.1 = {
+		birth = yes
+	}
+
+	1251.1.27 = {
+		death = {
+			death_reason = death_attacked
+			killer = scusstari_iyrossi_aagiokrata_13
+			}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_126 = { # Big man
+	name = "Pavlos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+
+	trait = ambitious
+	dynasty = dyn_central_empire_18
+
+	1178.3.2 = {
+		birth = yes
+	}
+
+	1243.6.9 = {
+		death = yes
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_127 = { # twin with Paterse who managed to seize power in the area around 1223.4.5. His brother was scarred in the namejishta rebelion
+	name = "Daterse"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+	
+	martial = 8
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 3
+	learning = 4
+	prowess = 9
+
+	disallow_random_traits = yes
+	dynasty = dyn_central_empire_27
+	father = centralimperial_aversarinas_aagiokrata_129
+	1198.3.2 = {
+		birth = yes
+		trait = magic_good_1 
+		trait = twin
+	}
+	1218.3.2 = {
+		trait = education_martial_3
+		trait = gh_historical_blademaster_1
+		trait = ambitious
+		trait = stubborn
+		trait = sadistic
+	}
+	1230.1.1 = {
+		effect = {
+			set_relation_rival = character:dubadin_namejisht_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_128 = { # twin with Daterse who managed to seize power in the area around 1223.4.5 was scarred in the Namejishta rebellion
+	name = "Paterse"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+		
+	martial = 6
+	diplomacy = 6
+	intrigue = 3
+	stewardship = 4
+	learning = 8
+	prowess = 5
+
+    disallow_random_traits = yes
+
+	dynasty = dyn_central_empire_27
+	father = centralimperial_aversarinas_aagiokrata_129
+	1198.3.2 = {
+		birth = yes
+		trait = magic_good_1 
+		effect = { set_base_arcana = { AMOUNT = 10 } }
+		trait = twin
+	}
+	1218.3.2 = {
+		trait = education_arcana_3
+		trait = vengeful
+		trait = ambitious
+		trait = arbitrary
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 5 }
+		}
+	}
+	1230.1.1 = {
+		trait = scarred
+		effect = {
+			set_relation_rival = character:dubadin_namejisht_1
+			add_pressed_claim = title:c_mykimae
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_129 = { # Father of the twins, split his land between his sons.
+	name = "Paisuro"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+
+	trait = gregarious
+	dynasty = dyn_central_empire_27
+
+	1167.9.24 = {
+		birth = yes
+	}
+	1223.4.5 = {
+		death = yes
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_130 = { # was viesuados_6
+	name = "Ariston" #Renamed from Ariss
+	culture = "centralimperial"
+	religion = "aversarinas_aagiokrata"
+
+	1164.7.6 = {
+		birth = yes
+	}
+
+	1205.6.9 = {
+		death = {
+			death_reason = death_battle
+			killer = watumimba_yakasak_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_131 = { # Tarnaz Wife 2
+	name = "Parthena"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+	sexuality = heterosexual
+	female = yes
+
+	1233.5.16 = {
+		birth = yes
+	}
+	1245.5.16 = {
+		trait = trusting
+		trait = gregarious
+		trait = honest
+	}
+	1249.5.16 = {
+		trait = education_intrigue_3
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_132 = {
+	name = "Lasthena"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = gluttonous
+	trait = deceitful
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 7
+	intrigue = 5
+	learning = 5
+	prowess = 9
+
+	trait = education_diplomacy_4
+
+	1182.6.22 = {
+		birth = yes
+	}
+
+	1212.6.15 = {
+		death = { death_reason = death_pneumonic }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_133 = {
+	name = "Maxios"
+
+	dynasty = dyn_central_empire_12
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_143
+	mother = centralimperial_aversarinas_aagiokrata_144
+
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = greedy
+	trait = shy
+
+	diplomacy = 4
+	martial = 4
+	stewardship = 6
+	intrigue = 8
+	learning = 5
+	prowess = 7
+
+	trait = education_intrigue_2
+
+	1107.4.27 = {
+		birth = yes
+	}
+
+	1143.11.15 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_134
+	}
+
+	1186.4.4 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_134 = {
+	name = "Martha"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = greedy
+	trait = sadistic
+	trait = deceitful
+
+	diplomacy = 6
+	martial = 4
+	stewardship = 4
+	intrigue = 7
+	learning = 4
+	prowess = 5
+
+	trait = education_intrigue_3
+
+	1126.8.11 = {
+		birth = yes
+	}
+
+	1205.4.13 = {
+		death = { death_reason = death_smallpox }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_135 = {
+	name = "Iouliana"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_133
+	mother = centralimperial_aversarinas_aagiokrata_134
+
+	sexuality = heterosexual
+
+	trait = forgiving
+	trait = arrogant
+	trait = ambitious
+
+	diplomacy = 6
+	martial = 5
+	stewardship = 4
+	intrigue = 7
+	learning = 9
+	prowess = 9
+
+	trait = education_learning_2
+
+	1144.7.21 = {
+		birth = yes
+	}
+
+	1221.8.13 = {
+		death = { death_reason = death_dog_attack }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_136 = {
+	name = "Thysia" #Renamed from Theodosia
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_133
+	mother = centralimperial_aversarinas_aagiokrata_134
+
+	sexuality = heterosexual
+
+	trait = craven
+	trait = stubborn
+	trait = generous
+
+	diplomacy = 4
+	martial = 5
+	stewardship = 3
+	intrigue = 5
+	learning = 3
+	prowess = 4
+
+	trait = education_martial_3
+
+	1154.12.1 = {
+		birth = yes
+	}
+
+	1248.6.7 = {
+		death = { death_reason = death_poison }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_137 = {
+	name = "Eudoxios"
+
+	dynasty = dyn_central_empire_22
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = deceitful
+	trait = patient
+
+	diplomacy = 6
+	martial = 3
+	stewardship = 7
+	intrigue = 7
+	learning = 7
+	prowess = 5
+
+	trait = education_stewardship_2
+
+	1084.11.5 = {
+		birth = yes
+	}
+
+	1123.8.13 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_138
+	}
+
+	1150.4.6 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_138 = {
+	name = "Themis"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = craven
+	trait = calm
+
+	diplomacy = 2
+	martial = 8
+	stewardship = 6
+	intrigue = 7
+	learning = 7
+	prowess = 2
+
+	trait = education_martial_2
+
+	1106.1.8 = {
+		birth = yes
+	}
+
+	1165.1.19 = {
+		death = { death_reason = death_disappearance }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_139 = {
+	name = "Anaklea" #Renamed from Georgia
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_137
+	mother = centralimperial_aversarinas_aagiokrata_138
+
+	sexuality = heterosexual
+
+	trait = lustful
+	trait = sadistic
+	trait = ambitious
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 7
+	intrigue = 11
+	learning = 8
+	prowess = 3
+
+	trait = education_intrigue_4
+
+	1123.8.4 = {
+		birth = yes
+	}
+
+	1198.12.28 = {
+		death = { death_reason = death_vanished }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_140 = {
+	name = "Eriphyle"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_137
+	mother = centralimperial_aversarinas_aagiokrata_138
+
+	sexuality = heterosexual
+
+	trait = greedy
+	trait = vengeful
+	trait = cynical
+
+	diplomacy = 4
+	martial = 6
+	stewardship = 9
+	intrigue = 8
+	learning = 8
+	prowess = 6
+
+	trait = education_stewardship_2
+
+	1124.9.10 = {
+		birth = yes
+	}
+
+	1183.12.11 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_141 = {
+	name = "Ione"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_137
+	mother = centralimperial_aversarinas_aagiokrata_138
+
+	sexuality = heterosexual
+
+	trait = arbitrary
+	trait = wrathful
+	trait = lustful
+
+	diplomacy = 5
+	martial = 5
+	stewardship = 6
+	intrigue = 2
+	learning = 4
+	prowess = 4
+
+	trait = education_stewardship_4
+
+	1128.10.17 = {
+		birth = yes
+	}
+
+	1191.6.27 = {
+		death = { death_reason = death_training_accident }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_142 = {
+	name = "Leganike" #Renamed from Nikasepolis
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_143
+	mother = centralimperial_aversarinas_aagiokrata_144
+
+	sexuality = heterosexual
+
+	trait = patient
+	trait = callous
+	trait = ambitious
+
+	diplomacy = 8
+	martial = 7
+	stewardship = 10
+	intrigue = 4
+	learning = 10
+	prowess = 9
+
+	trait = education_stewardship_2
+
+	1104.7.24 = {
+		birth = yes
+	}
+
+	1176.8.19 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_143 = {
+	name = "Thresatos"
+
+	dynasty = dyn_central_empire_12
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = wrathful
+	trait = chaste
+	trait = sadistic
+
+	diplomacy = 8
+	martial = 6
+	stewardship = 9
+	intrigue = 9
+	learning = 7
+	prowess = 11
+
+	trait = education_stewardship_2
+
+	1052.4.6 = {
+		birth = yes
+	}
+
+	1096.5.11 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_144
+	}
+
+	1123.6.5 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_144 = {
+	name = "Phaedre"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = cynical
+	trait = vengeful
+	trait = wrathful
+
+	diplomacy = 5
+	martial = 5
+	stewardship = 9
+	intrigue = 5
+	learning = 7
+	prowess = 7
+
+	trait = education_stewardship_4
+
+	1079.4.27 = {
+		birth = yes
+	}
+
+	1138.9.11 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_145 = {
+	name = "Apollonis"
+
+	dynasty = dyn_central_empire_11
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_46
+	mother = centralimperial_aversarinas_aagiokrata_47
+
+	sexuality = heterosexual
+
+	trait = stubborn
+	trait = deceitful
+	trait = sadistic
+
+	diplomacy = 7
+	martial = 8
+	stewardship = 8
+	intrigue = 4
+	learning = 7
+	prowess = 5
+
+	trait = education_martial_1
+
+	1224.10.16 = {
+		birth = yes
+	}
+
+	1270.7.16 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_158
+	}
+
+	1309.10.3 = {
+		death = { death_reason = death_pneumonic }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_146 = {
+	name = "Theophilos"
+
+	dynasty = dyn_central_empire_11
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_46
+	mother = centralimperial_aversarinas_aagiokrata_47
+
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = honest
+	trait = lustful
+
+	diplomacy = 5
+	martial = 8
+	stewardship = 6
+	intrigue = 5
+	learning = 6
+	prowess = 5
+
+	trait = education_martial_3
+
+	1225.2.6 = {
+		birth = yes
+	}
+
+	1247.5.12 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_159
+	}
+
+	1298.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_147 = {
+	name = "Agitiona" #Renamed from Garyphallia
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_46
+	mother = centralimperial_aversarinas_aagiokrata_47
+
+	sexuality = heterosexual
+
+	trait = greedy
+	trait = arrogant
+	trait = deceitful
+
+	diplomacy = 7
+	martial = 9
+	stewardship = 4
+	intrigue = 5
+	learning = 7
+	prowess = 8
+
+	trait = education_martial_3
+
+	1232.9.12 = {
+		birth = yes
+	}
+
+	1291.11.9 = {
+		death = { death_reason = death_cancer }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_148 = {
+	name = "Ioulia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_54
+	mother = centralimperial_aversarinas_aagiokrata_55
+
+	sexuality = heterosexual
+
+	trait = brave
+	trait = cynical
+	trait = lazy
+
+	diplomacy = 9
+	martial = 5
+	stewardship = 3
+	intrigue = 10
+	learning = 5
+	prowess = 7
+
+	trait = education_intrigue_2
+
+	1172.4.10 = {
+		birth = yes
+	}
+
+	1267.2.4 = {
+		death = { death_reason = death_fall }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_149 = {
+	name = "Gregorios"
+
+	dynasty = dyn_central_empire_12
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_58
+	mother = centralimperial_aversarinas_aagiokrata_132
+
+	sexuality = heterosexual
+
+	trait = humble
+	trait = lustful
+	trait = impatient
+
+	diplomacy = 9
+	martial = 7
+	stewardship = 6
+	intrigue = 10
+	learning = 7
+	prowess = 5
+
+	trait = education_intrigue_3
+
+	1211.4.22 = {
+		birth = yes
+	}
+
+	1251.3.5 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_160
+	}
+
+	1291.12.15 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_150 = {
+	name = "Themis"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_48
+	mother = centralimperial_aversarinas_aagiokrata_49
+
+	sexuality = heterosexual
+
+	trait = sadistic
+	trait = lustful
+	trait = lazy
+
+	diplomacy = 6
+	martial = 8
+	stewardship = 2
+	intrigue = 5
+	learning = 5
+	prowess = 4
+
+	trait = education_martial_3
+
+	1205.1.1 = {
+		birth = yes
+	}
+
+	1273.12.27 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_151 = {
+	name = "Krathia" #Renamed from Konstantia
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_48
+	mother = centralimperial_aversarinas_aagiokrata_49
+
+	sexuality = heterosexual
+
+	trait = stubborn
+	trait = forgiving
+	trait = greedy
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 4
+	intrigue = 9
+	learning = 7
+	prowess = 4
+
+	trait = education_intrigue_3
+
+	1209.7.8 = {
+		birth = yes
+	}
+
+	1285.1.15 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_152 = {
+	name = "Pankratios"
+
+	dynasty = dyn_central_empire_12
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_48
+	mother = centralimperial_aversarinas_aagiokrata_49
+
+	sexuality = homosexual
+
+	trait = ambitious
+	trait = diligent
+	trait = fickle
+
+	diplomacy = 6
+	martial = 5
+	stewardship = 5
+	intrigue = 7
+	learning = 5
+	prowess = 10
+
+	trait = education_intrigue_3
+
+	1212.4.27 = {
+		birth = yes
+	}
+
+	1250.2.22 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_161
+	}
+
+	1289.11.12 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_153 = {
+	name = "Zoe"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_54
+	mother = centralimperial_aversarinas_aagiokrata_55
+
+	sexuality = heterosexual
+
+	trait = wrathful
+	trait = patient
+	trait = cynical
+
+	diplomacy = 5
+	martial = 7
+	stewardship = 3
+	intrigue = 1
+	learning = 6
+	prowess = 4
+
+	trait = education_martial_2
+
+	1176.7.14 = {
+		birth = yes
+	}
+
+	1240.8.3 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_154 = {
+	name = "Themis"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_54
+	mother = centralimperial_aversarinas_aagiokrata_55
+
+	sexuality = heterosexual
+
+	trait = impatient
+	trait = cynical
+	trait = wrathful
+
+	diplomacy = 3
+	martial = 9
+	stewardship = 7
+	intrigue = 6
+	learning = 6
+	prowess = 4
+
+	trait = education_martial_3
+
+	1177.12.28 = {
+		birth = yes
+	}
+
+	1185.4.13 = {
+		death = { death_reason = death_pneumonic }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_155 = {
+	name = "Gregorios"
+
+	dynasty = dyn_central_empire_22
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_56
+	mother = centralimperial_aversarinas_aagiokrata_57
+
+	sexuality = heterosexual
+
+	trait = greedy
+	trait = sadistic
+	trait = arbitrary
+
+	diplomacy = 2
+	martial = 5
+	stewardship = 3
+	intrigue = 7
+	learning = 4
+	prowess = 6
+
+	trait = education_intrigue_1
+
+	1175.12.25 = {
+		birth = yes
+	}
+
+	1218.12.15 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_162
+	}
+
+	1249.10.3 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_156 = {
+	name = "Euthynos"
+
+	dynasty = dyn_central_empire_22
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_56
+	mother = centralimperial_aversarinas_aagiokrata_57
+
+	sexuality = heterosexual
+
+	trait = gluttonous
+	trait = callous
+	trait = wrathful
+
+	diplomacy = 9
+	martial = 6
+	stewardship = 6
+	intrigue = 9
+	learning = 4
+	prowess = 4
+
+	trait = education_diplomacy_3
+
+	1176.2.4 = {
+		birth = yes
+	}
+
+	1210.2.5 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_163
+	}
+
+	1272.2.2 = {
+		death = { death_reason = death_horse_riding_accident }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_157 = {
+	name = "Astyoche"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	father = centralimperial_aversarinas_aagiokrata_56
+	mother = centralimperial_aversarinas_aagiokrata_57
+
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = brave
+	trait = paranoid
+
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 8
+	learning = 7
+	prowess = 5
+
+	trait = education_intrigue_3
+
+	1178.6.2 = {
+		birth = yes
+	}
+
+	1251.6.23 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_158 = {
+	name = "Kyra"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = brave
+	trait = patient
+
+	diplomacy = 4
+	martial = 6
+	stewardship = 5
+	intrigue = 5
+	learning = 6
+	prowess = 10
+
+	trait = education_martial_3
+
+	1253.4.24 = {
+		birth = yes
+	}
+
+	1328.4.22 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_159 = {
+	name = "Aplydina" #Renamed from Pulcheria
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = trusting
+	trait = just
+	trait = ambitious
+
+	diplomacy = 1
+	martial = 7
+	stewardship = 4
+	intrigue = 7
+	learning = 10
+	prowess = 6
+
+	trait = education_learning_4
+
+	1230.5.15 = {
+		birth = yes
+	}
+
+	1289.8.12 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_160 = {
+	name = "Phyllis"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = asexual
+
+	trait = compassionate
+	trait = arrogant
+	trait = vengeful
+
+	diplomacy = 8
+	martial = 8
+	stewardship = 7
+	intrigue = 8
+	learning = 7
+	prowess = 4
+
+	trait = education_diplomacy_4
+
+	1234.7.9 = {
+		birth = yes
+	}
+
+	1261.9.15 = {
+		death = { death_reason = death_smallpox }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_161 = {
+	name = "Lasthena"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = cynical
+	trait = gluttonous
+	trait = greedy
+
+	diplomacy = 6
+	martial = 7
+	stewardship = 6
+	intrigue = 5
+	learning = 6
+	prowess = 7
+
+	trait = education_martial_2
+
+	1233.11.6 = {
+		birth = yes
+	}
+
+	1310.5.11 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_162 = {
+	name = "Otonia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = wrathful
+	trait = compassionate
+	trait = gregarious
+
+	diplomacy = 7
+	martial = 7
+	stewardship = 5
+	intrigue = 7
+	learning = 9
+	prowess = 6
+
+	trait = education_learning_3
+
+	1201.6.8 = {
+		birth = yes
+	}
+
+	1271.6.23 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_163 = {
+	name = "Kale"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = forgiving
+	trait = callous
+
+	diplomacy = 5
+	martial = 9
+	stewardship = 8
+	intrigue = 6
+	learning = 7
+	prowess = 8
+
+	trait = education_martial_3
+
+	1193.7.4 = {
+		birth = yes
+	}
+
+	1280.10.12 = {
+		death = { death_reason = death_accident }
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_164 = { # Nathsa, Kleiphos Vathdiax' dead wife
+	name = "Nathsa"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+	female = yes
+
+	dna = nathsa
+
+	martial = 5
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 8
+	learning = 5
+	prowess = 6
+
+	1053.3.23 = {
+		birth = yes
+	}
+
+	1065.1.1 = {
+		trait = diligent
+		trait = trusting
+		trait = humble
+	}
+
+	1069.3.23 = {
+		trait = education_intrigue_2
+	}
+
+	1082.3.27 = {
+		death = {
+			death_reason = death_ritual_unknown
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_165 = { # Kleiphos Vathdiax' father
+	name = "Ketrynos"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+	dynasty = dyn_aversarian_130
+
+	martial = 4
+	diplomacy = 8
+	intrigue = 5
+	stewardship = 3
+	learning = 5
+	prowess = 5
+
+	1025.4.10 = {
+		birth = yes
+	}
+
+	1027.1.1 = {
+		trait = brave
+		trait = wrathful
+		trait = humble
+	}
+
+	1031.4.10 = {
+		trait = education_martial_2
+		trait = unyielding_defender
+	}
+
+	1085.6.18 = {
+		death = {
+			death_reason = death_cancer
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_166 = { # Legon Alkinos of Malcosiac Noble Legio XXI 'Veracity'
+	name = "Alkinos"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+
+	father = centralimperial_aversarinas_aagiokrata_167
+
+	martial = 5
+	diplomacy = 9
+	intrigue = 7
+	stewardship = 7
+	learning = 6
+	prowess = 3
+
+	1065.2.2 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1077.1.1 = {
+		trait = diligent
+		trait = temperate
+		trait = vengeful
+	}
+
+	1081.2.2 = {
+		trait = education_martial_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+
+	1088.7.8 = {
+		trait = gh_legon
+		trait = organizer
+		trait = gh_historical_blademaster_1
+	}
+
+	1102.7.8 = {
+		death = {
+			death_reason = death_consumption
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_167 = { # Kothexir Qamphrionos of Asinene, the nowhere land where Kleiphos (and Legio XXI Veracity) hailed from
+	name = "Qamphrionos"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 7
+	learning = 4
+	prowess = 4
+
+	1038.8.3 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1050.1.1 = {
+		trait = lazy
+		trait = lustful
+		trait = just
+	}
+
+	1054.8.3 = {
+		trait = education_martial_3
+		trait = overseer
+	}
+
+	1121.7.7 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_168 = { # Ilrig Bled-Bane, infamous Aversarian Magi during the Agionist Rebellion
+	name = "Ilrig"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial #Skorikiakas? Name Ilrig is Skorikiakas
+	disallow_random_traits = yes
+	dynasty = dyn_aversarian_132
+
+	father = centralimperial_aversarinas_aagiokrata_169
+	mother = skorikiakas_aversarinas_aagiokrata_8
+
+	dna = ilrig
+
+	martial = 4
+	diplomacy = 5
+	intrigue = 3
+	stewardship = 6
+	learning = 4
+	prowess = 9
+
+	1045.4.6 = {
+		birth = yes
+		trait = magic_good_8
+	}
+
+	1057.1.1 = {
+		trait = greedy
+		trait = sadistic
+		trait = gregarious
+	}
+
+	1061.4.6 = {
+		trait = education_intrigue_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+		trait = gh_glowing_eyes
+		trait = overseer
+		give_nickname = nick_bled_bane
+	}
+
+	1089.1.26 = {
+		death = {
+			death_reason = death_battle
+			killer = centralimperial_sansia_1
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_169 = { # Ilrig's father
+	name = "MaxiA_thon"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+	dynasty = dyn_aversarian_132
+
+	martial = 7
+	diplomacy = 5
+	intrigue = 3
+	stewardship = 2
+	learning = 5
+	prowess = 8
+
+	1015.6.24 = {
+		birth = yes
+		trait = magic_good_3
+		trait = beauty_good_2
+	}
+
+	1027.1.1 = {
+		trait = zealous
+		trait = temperate
+		trait = lazy
+	}
+
+	1031.6.24 = {
+		trait = education_diplomacy_2
+	}
+
+	1044.9.2 = {
+		add_spouse = skorikiakas_aversarinas_aagiokrata_8
+	}
+
+	1071.9.4 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_170 = { # Ilrig's brother, Legon Antidoros of Malcosiac Noble Legio VI 'Manherders'
+	name = "Antidoros"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+	dynasty = dyn_aversarian_132
+
+	father = centralimperial_aversarinas_aagiokrata_169
+	mother = skorikiakas_aversarinas_aagiokrata_8
+
+	martial = 6
+	diplomacy = 7
+	intrigue = 9
+	stewardship = 5
+	learning = 6
+	prowess = 3
+
+	1050.6.4 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1062.1.1 = {
+		trait = brave
+		trait = gregarious
+		trait = ambitious
+	}
+
+	1066.6.4 = {
+		trait = education_martial_3
+		trait = unyielding_defender
+	}
+
+	1077.9.23 = {
+		trait = gh_legon
+		trait = gh_historical_blademaster_1
+	}
+
+	1088.1.26 = {
+		death = {
+			death_reason = death_battle
+			killer = westernimperial_aversarinas_aagiokrata_482
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_171 = { # Legan Auxesia of Malcosiac Noble Legio VI 'Manherders'
+	name = "Auxesia"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	disallow_random_traits = yes
+	female = yes
+
+	martial = 7
+	diplomacy = 3
+	intrigue = 7
+	stewardship = 7
+	learning = 2
+	prowess = 6
+
+	1056.8.11 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+
+	1068.1.1 = {
+		trait = temperate
+		trait = gregarious
+		trait = vengeful
+	}
+
+	1072.8.11 = {
+		trait = education_martial_3
+		trait = logistician
+	}
+
+	1088.1.26 = {
+		trait = gh_legon
+		trait = overseer
+	}
+
+	1117.2.10 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_172 = { # Spathanos dynasty founder, minor legon rewarded with land after the Karth wars
+	name = "Iornos"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	dynasty = dyn_eos_1
+
+	disallow_random_traits = yes
+
+	martial = 9
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 10
+	learning = 5
+	prowess = 6
+
+	735.1.10 = {
+		birth = yes
+		trait = physique_good_2
+	}
+
+	747.1.1 = {
+		trait = diligent
+		trait = trusting
+		trait = humble
+	}
+
+	751.1.10 = {
+		trait = education_martial_2
+		trait = unyielding_defender
+	}
+
+	758.7.16 = {
+		trait = gh_legon
+	}
+
+	795.5.25 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_173 = {
+	name = "Karthyn"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	dynasty = dyn_eos_1
+
+	father = centralimperial_aversarinas_aagiokrata_172
+
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 7
+	learning = 4
+	prowess = 4
+
+	771.2.24 = {
+		birth = yes
+		trait = physique_good_3
+	}
+
+	783.1.1 = {
+		trait = diligent
+		trait = chaste
+		trait = just
+	}
+
+	787.2.24 = {
+		trait = education_martial_3
+		trait = forder
+	}
+
+	797.2.22 = {
+		trait = gh_legon
+	}
+
+	842.2.22 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_174 = {
+	name = "Uridion"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	dynasty = dyn_eos_1
+
+	father = centralimperial_aversarinas_aagiokrata_173
+
+	disallow_random_traits = yes
+
+	martial = 7
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 6
+	learning = 5
+	prowess = 6
+
+	806.5.18 = {
+		birth = yes
+		trait = physique_good_1
+	}
+
+	818.1.1 = {
+		trait = brave
+		trait = deceitful
+		trait = compassionate
+	}
+
+	822.5.18 = {
+		trait = education_diplomacy_2
+	}
+
+	868.11.6 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_175 = {
+	name = "Zekos"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	dynasty = dyn_eos_1
+
+	father = centralimperial_aversarinas_aagiokrata_174
+
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 8
+	intrigue = 2
+	stewardship = 4
+	learning = 3
+	prowess = 4
+
+	840.8.3 = {
+		birth = yes
+	}
+
+	852.1.1 = {
+		trait = wrathful
+		trait = gluttonous
+		trait = gregarious
+	}
+
+	856.8.3 = {
+		trait = education_martial_2
+		trait = reckless
+	}
+
+	872.9.12 = {
+		trait = gh_legon
+	}
+
+	901.8.4 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_176 = {
+	name = "Arthion"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	dynasty = dyn_eos_1
+
+	father = centralimperial_aversarinas_aagiokrata_175
+
+	disallow_random_traits = yes
+
+	martial = 4
+	diplomacy = 5
+	intrigue = 3
+	stewardship = 6
+	learning = 4
+	prowess = 9
+
+	871.12.12 = {
+		birth = yes
+	}
+
+	883.1.1 = {
+		trait = generous
+		trait = temperate
+		trait = gregarious
+	}
+
+	887.12.12 = {
+		trait = education_intrigue_1
+	}
+
+	919.6.5 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_177 = {
+	name = "Seraphon"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	dynasty = dyn_eos_1
+
+	father = centralimperial_aversarinas_aagiokrata_176
+
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 7
+	intrigue = 9
+	stewardship = 3
+	learning = 6
+	prowess = 5
+
+	906.9.7 = {
+		birth = yes
+		trait = beauty_good_2
+	}
+
+	918.1.1 = {
+		trait = brave
+		trait = gregarious
+		trait = ambitious
+	}
+
+	922.9.7 = {
+		trait = education_stewardship_4
+		trait = shrewd
+	}
+
+	942.11.13 = {
+		death = {
+			death_reason = death_dungeon
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_178 = {
+	name = "Arthion"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	dynasty = dyn_eos_1
+
+	father = centralimperial_aversarinas_aagiokrata_177
+
+	disallow_random_traits = yes
+
+	martial = 7
+	diplomacy = 7
+	intrigue = 11
+	stewardship = 5
+	learning = 5
+	prowess = 6
+
+	941.11.25 = {
+		birth = yes
+		trait = beauty_good_1
+	}
+
+	953.1.1 = {
+		trait = honest
+		trait = generous
+		trait = paranoid
+	}
+
+	957.11.25 = {
+		trait = education_martial_3
+		trait = strong
+	}
+
+	965.3.28 = {
+		trait = gh_legon
+	}
+
+	1009.8.12 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_179 = {
+	name = "Atyria"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	dynasty = dyn_eos_1
+	female = yes
+
+	father = centralimperial_aversarinas_aagiokrata_178
+
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 4
+	intrigue = 7
+	stewardship = 7
+	learning = 7
+	prowess = 8
+
+	971.10.20 = {
+		birth = yes
+	}
+
+	983.1.1 = {
+		trait = ambitious
+		trait = humble
+		trait = forgiving
+	}
+
+	987.10.20 = {
+		trait = education_stewardship_2
+	}
+
+	1010.11.25 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_180 = { # Saint Eos' grandfather
+	name = "Iochros" #Renamed from Jaxor
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	dynasty = dyn_eos_1
+
+	mother = centralimperial_aversarinas_aagiokrata_179
+
+	disallow_random_traits = yes
+
+	martial = 7
+	diplomacy = 3
+	intrigue = 7
+	stewardship = 7
+	learning = 2
+	prowess = 6
+
+	1001.5.10 = {
+		birth = yes
+		trait = physique_good_2
+	}
+
+	1013.1.1 = {
+		trait = gregarious
+		trait = temperate
+		trait = vengeful
+	}
+
+	1017.5.10 = {
+		trait = education_diplomacy_3
+	}
+
+	1079.11.13 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_181 = { # Saint Eos' father
+	name = "Teleon"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	dynasty = dyn_eos_1
+
+	father = centralimperial_aversarinas_aagiokrata_180
+
+	disallow_random_traits = yes
+
+	martial = 10
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+	prowess = 6
+
+	1032.5.13 = {
+		birth = yes
+		trait = physique_good_1
+	}
+
+	1044.1.1 = {
+		trait = honest
+		trait = greedy
+		trait = callous
+	}
+
+	1048.5.13 = {
+		trait = education_martial_2
+	}
+
+	1054.5.16 = {
+		trait = gh_legon
+	}
+
+	1080.5.13 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_182 = { # Saint Eos' uncle
+	name = "Seraphon"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	dynasty = dyn_eos_1
+
+	father = centralimperial_aversarinas_aagiokrata_180
+
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 7
+	intrigue = 3
+	stewardship = 7
+	learning = 7
+	prowess = 6
+
+	1037.6.6 = {
+		birth = yes
+	}
+
+	1049.1.1 = {
+		trait = deceitful
+		trait = cynical
+		trait = arbitrary
+	}
+
+	1053.6.6 = {
+		trait = education_diplomacy_2
+	}
+
+	1099.5.28 = {
+		death = {
+			death_reason = death_stress
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_183 = { # Saint Eos' cousin, last ruler of the Spathanos dynasty
+	name = "Aplydos"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	dynasty = dyn_eos_1
+
+	father = centralimperial_aversarinas_aagiokrata_182
+
+	disallow_random_traits = yes
+
+	martial = 10
+	diplomacy = 8
+	intrigue = 7
+	stewardship = 9
+	learning = 8
+	prowess = 6
+
+	1063.11.10 = {
+		birth = yes
+	}
+
+	1075.1.1 = {
+		trait = honest
+		trait = temperate
+		trait = trusting
+	}
+
+	1079.11.10 = {
+		trait = education_stewardship_3
+	}
+
+	1117.5.17 = {
+		death = {
+			death_reason = death_murder_feast
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_184 = { # Saint Eos' nephew
+	name = "Pavron"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	dynasty = dyn_eos_1
+
+	father = centralimperial_aversarinas_aagiokrata_183
+
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 5
+	intrigue = 8
+	stewardship = 7
+	learning = 5
+	prowess = 5
+
+	1093.1.22 = {
+		birth = yes
+	}
+
+	1105.1.1 = {
+		trait = vengeful
+		trait = temperate
+		trait = stubborn
+	}
+
+	1109.1.1 = {
+		trait = education_stewardship_1
+	}
+
+	1117.5.17 = {
+		death = {
+			death_reason = death_murder_feast
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_185 = { # Governor Rythike of Malcois, went all scorched earth on the Agionists
+	name = "Rythike"
+	religion = aversarinas_aagiokrata
+	culture = centralimperial
+	dynasty = dyn_aversarian_139
+	female = yes
+
+	disallow_random_traits = yes
+
+	martial = 9
+	diplomacy = 11
+	intrigue = 8
+	stewardship = 6
+	learning = 8
+	prowess = 10
+
+	1041.12.11 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1053.1.1 = {
+		trait = deceitful
+		trait = ambitious
+		trait = callous
+	}
+
+	1057.12.11 = {
+		trait = education_martial_3
+		trait = overseer
+	}
+
+	1113.12.10 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_186 = { # Terros Xanis, malcoisiac noble who joined Mataex Oryd's expedition to wreak vengeance upon the Agionists, descended from legion veterans given land in Malcois after the Kartharaddi War
+	name = "Terros"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+
+	dynasty = dyn_aversarian_153
+	sexuality = bisexual
+
+	martial = 10
+	diplomacy = 7
+	stewardship = 5
+	intrigue = 4
+	learning = 6
+	prowess = 7
+
+	1056.6.23 = {
+		birth = yes
+		trait = magic_good_4
+		trait = strong
+	}
+
+	1068.1.1 = {
+		trait = honest
+		trait = zealous
+		trait = vengeful
+	}
+
+	1072.6.23 = {
+		trait = education_martial_3
+		trait = gh_historical_blademaster_1
+		trait = organizer # Provided much of the soldiers for the Orydian Expedition
+	}
+
+	1090.11.5 = { # Valley War
+		trait = scarred
+		trait = one_eyed
+		trait = overseer
+		give_nickname = nick_stonehide
+	}
+
+	1090.4.22 = { # Orydian Expedition
+		trait = adventurer
+	}
+
+	1123.12.14 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_187 = { # Phalox Messchrian, originally a mere young deck-hand in Terros Xanis' fleet, distinguished himself during the Orydian Expedition and rose to become lord of Paflaakes after saving Mataex Oryd's life
+	name = "Phalox"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+
+	dynasty = dyn_aversarian_4
+	sexuality = heterosexual
+
+	martial = 9
+	diplomacy = 5
+	stewardship = 7
+	intrigue = 10
+	learning = 5
+	prowess = 6
+
+	1073.3.19 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1085.1.1 = {
+		trait = diligent
+		trait = trusting
+		trait = humble
+	}
+
+	1089.3.19 = {
+		trait = education_intrigue_1
+		trait = shrewd # clever lad
+	}
+
+	1090.4.22 = { # Orydian Expedition
+		trait = adventurer
+		trait = scarred
+	}
+
+	1121.4.26 = {
+		add_spouse = southernimperial_aversarinas_aagiokrata_123
+	}
+
+	1153.9.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_188 = { # Braxos the Manhunter, notorious Malcoisiac slaver that joined the Orydian expedition
+	name = "Braxos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+
+	dynasty = dyn_aversarian_4
+	sexuality = heterosexual
+
+	martial = 3
+	diplomacy = 8
+	stewardship = 2
+	intrigue = 10
+	learning = 7
+	prowess = 9
+
+	1064.10.3 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1076.1.1 = {
+		trait = greedy
+		trait = deceitful
+		trait = sadistic
+	}
+
+	1080.10.3 = {
+		trait = education_stewardship_3
+		trait = avaricious
+		trait = overseer
+		give_nickname = nick_manhunter
+	}
+
+	1090.4.22 = {
+		death = {
+			death_reason = death_magic_fire
+			killer = southernimperial_aversarinas_aagiokrata_121
+		}
+	}
+}
+
+centralimperial_aversarinas_aagiokrata_189 = { # Axos 'Iron-Walker', feared Magi that was part of Aeschraes' cabal
+	name = Axos
+    religion = "aversarinas_aagiokrata"
+    culture = "centralimperial"
+    dynasty = dyn_alimede
+
+    sexuality = heterosexual
+    dna = axos
+
+	father = centralimperial_aversarinas_aagiokrata_73
+	mother = centralimperial_aversarinas_aagiokrata_67
+
+    martial = 10
+    diplomacy = 6
+    stewardship = 9
+    intrigue = 7
+    learning = 10
+    prowess = 9
+
+    1166.9.24 = {
+        birth = yes
+        trait = magic_good_11
+        trait = intellect_good_2
+        trait = physique_bad_3 # Frail Body
+
+    }
+
+    1178.1.1 = {
+        trait = stubborn
+        trait = patient
+        trait = shy
+    }
+
+    1182.9.24 = {
+        effect = { set_base_arcana = { AMOUNT = 10 } }
+        trait = education_learning_4
+        trait = gh_historical_school
+        effect = {
+            set_variable = { name = historical_magic_school value = flag:dead_magic } # GH: For now
+            set_variable = { name = historical_magic_school_min_spells value = 10 }
+        }
+    }
+
+    1186.2.4 = {
+    	trait = scholar
+        give_nickname = nick_iron_walker
+    }
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_srbm_casting
+		}
+	}
+}

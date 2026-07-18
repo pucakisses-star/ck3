@@ -1,0 +1,109 @@
+c_cloudtouch = {
+	1250.1.1 = {
+		holder = daukeni_sjalvolki_2
+		liege = d_wolfsfeld
+		government = continental_clan_government
+	}
+}
+c_skyfountains = {
+	1250.1.1 = {
+		holder = daukeni_sjalvolki_11
+		liege = d_wolfsfeld
+		government = continental_clan_government
+	}
+}
+c_western_grey_gate = {
+	1250.1.1 = {
+		holder = daukeni_sjalvolki_9
+		liege = d_white_river
+		government = continental_clan_government
+	}
+}
+c_kuoni = {
+	1250.1.1 = {
+		holder = mastikigni_sjalvolki_4
+		liege = k_mastikigni
+		government = continental_clan_government
+	}
+	1256.2.3 = {
+		holder = ardothanes_wyrdpath_1
+		liege = 0
+	}
+}
+c_voidfallows = {
+	1.1.1 = {
+		holder = unsorted_17
+	}
+	19.1.2 = { # SPARTACUS!!!
+		holder = unsorted_47
+	}
+	62.1.1 = { # rip
+		holder = wasteland
+	}
+	1253.2.3 = {
+		holder = ardothanes_wyrdpath_1
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1256.1.1 = {
+		liege = 0
+	}
+}
+c_whistling_glen = {
+	1.1.1 = {
+		holder = unsorted_17
+	}
+	19.1.2 = { # SPARTACUS!!!
+		holder = unsorted_47
+	}
+	62.1.1 = { # rip
+		holder = wasteland
+	}
+	1253.1.1 = {
+		holder = ardothanes_wyrdpath_4
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1258.7.17 = {
+		liege = 0
+	}
+	1287.2.1 = {
+		holder = ardothanes_wyrdpath_5
+	}
+}
+c_leshensgrave = {
+	1.1.1 = {
+		holder = unsorted_17
+	}
+	40.2.21 = {
+		holder = wasteland
+	}
+	1253.7.17 = {
+		liege = e_migrant_coalition
+		holder = ardothanes_wyrdpath_4
+		government = continental_clan_government
+	}
+	1258.7.17 = {
+		liege = 0
+	}
+	1287.2.1 = {
+		holder = ardothanes_wyrdpath_5
+	}
+}
+c_yewcircle = {
+	1247.4.9 = {
+		holder = ardothanes_wyrdpath_8
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1278.7.6 = {
+		liege = 0
+		holder = ardothanes_wyrdpath_7
+	}
+}
+#c_juniper = {
+#	1253.1.1 = {
+#		holder = barki_sjalvolki_2
+#		government = continental_clan_government
+#	}
+#}

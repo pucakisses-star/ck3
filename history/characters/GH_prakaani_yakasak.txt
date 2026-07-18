@@ -1,0 +1,405 @@
+﻿prakaani_yakasak_1 = {
+	name = "Abheeth"
+	culture = "prakaani"
+	religion = "yakasak"
+
+	dna = prakaani_yakasak_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair=male_hair_indian_03
+			custom_beards=m_beard_ep2_western_02
+		}
+	}
+
+	1215.1.1 = {
+		birth = yes
+	}
+	1236.8.7 = {
+		trait = reaver
+		trait = drunkard
+		trait = one_eyed
+		trait = fickle
+		trait = calm
+		trait = education_martial_1
+	}
+
+	1235.10.23 = {
+	    add_spouse = samayani_yakasak_3
+	}
+
+	1271.2.10 = {
+	    death = { death_reason = death_heart_attack }
+	}
+}
+
+prakaani_yakasak_3 = {
+    name = "Abheeth" 
+
+    dynasty = dyn_pirate_coast_12
+    religion = yakasak
+    culture = prakaani
+
+    father = prakaani_yakasak_1
+    mother = samayani_yakasak_3
+
+    sexuality = heterosexual
+
+    trait = calm
+    trait = gluttonous
+    trait = vengeful
+
+    1239.4.19 = {
+        birth = yes
+    }
+
+    1258.4.6 = {
+        add_spouse = prakaani_yakasak_4
+    }
+
+    1279.10.1 = {
+        trait = wounded_3
+        trait = eunuch_1
+        trait = magic_good_1
+    }
+
+    1279.11.2 = {
+        death = { death_reason = death_treatment }
+    }
+}
+
+prakaani_yakasak_4 = {
+    name = "Akunu" 
+    female = yes
+
+    religion = yakasak
+    culture = prakaani
+
+    sexuality = heterosexual
+
+    trait = craven
+    trait = impatient
+    trait = honest
+
+    1241.3.7 = {
+        birth = yes
+        trait = magic_good_1
+    }
+
+    1279.11.20 = {
+        death = { death_reason = death_mysterious }
+    }
+}
+
+prakaani_yakasak_5 = {
+    name = "Pokatui" 
+
+    dynasty = dyn_pirate_coast_12
+    religion = yakasak
+    culture = prakaani
+
+    father = prakaani_yakasak_3
+    mother = prakaani_yakasak_4
+
+    sexuality = heterosexual
+
+    trait = temperate
+    trait = vengeful
+    trait = cynical
+
+    1259.2.11 = {
+        birth = yes
+        trait = magic_good_3
+    }
+
+    1277.8.23 = {
+        add_spouse = prakaani_yakasak_6
+    }
+
+    1280.2.14 = {
+        death = { death_reason = death_depressed }
+    }
+}
+
+prakaani_yakasak_6 = {
+    name = "Lakani" 
+    female = yes
+
+    religion = yakasak
+    culture = prakaani
+
+    sexuality = heterosexual
+
+    trait = brave
+    trait = greedy
+    trait = lazy
+
+    1260.4.13 = {
+        birth = yes
+    }
+
+    1291.2.15 = {
+        death = { death_reason = death_cancer }
+    }
+}
+
+prakaani_yakasak_7 = {
+    name = "Na_ilano" 
+
+    dynasty = dyn_pirate_coast_12
+    religion = yakasak
+    culture = prakaani
+
+    father = prakaani_yakasak_3
+    mother = prakaani_yakasak_4
+
+    sexuality = heterosexual
+
+    trait = generous
+    trait = impatient
+    trait = eccentric
+
+    1261.2.28 = {
+        birth = yes
+        trait = magic_good_1
+    }
+
+    1286.8.3 = {
+        add_spouse = prakaani_yakasak_8
+    }
+}
+
+prakaani_yakasak_8 = {
+    name = "Hapeo" 
+    female = yes
+
+    religion = yakasak
+    culture = prakaani
+
+    sexuality = homosexual
+
+    trait = chaste
+    trait = just
+    trait = forgiving
+
+    1269.3.9 = {
+        birth = yes
+    }
+}
+
+prakaani_yakasak_9 = {
+    name = "Paitua" 
+    female = yes
+
+    religion = yakasak
+    culture = prakaani
+
+    father = prakaani_yakasak_3
+    mother = prakaani_yakasak_4
+
+    sexuality = heterosexual
+
+    trait = greedy
+    trait = callous
+    trait = honest
+
+    1262.9.10 = {
+        birth = yes
+    }
+
+    1280.6.14 = {
+        death = { death_reason = death_duel }
+    }
+}
+
+prakaani_yakasak_10 = {
+    name = "Sonpala" 
+
+    religion = yakasak
+    culture = prakaani
+
+    father = prakaani_yakasak_3
+    mother = prakaani_yakasak_4
+    dynasty = dyn_pirate_coast_12
+
+    sexuality = heterosexual
+
+    trait = vengeful
+    trait = lazy
+    trait = shy
+
+    1270.8.18 = {
+        birth = yes
+    }
+}
+
+prakaani_yakasak_11 = {
+    name = "Emalua" 
+    female = yes
+
+    religion = yakasak
+    culture = prakaani
+
+    father = prakaani_yakasak_1
+    mother = samayani_yakasak_3
+    dynasty = dyn_pirate_coast_12
+
+    sexuality = bisexual
+
+    trait = deceitful
+    trait = cynical
+    trait = arbitrary
+
+    1241.1.6 = {
+        birth = yes
+    }
+
+    1261.3.2 = {
+        religion = asritayka
+    }
+
+    1294.4.20 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+prakaani_yakasak_12 = {
+    name = "Nalui" 
+    female = yes
+
+    religion = yakasak
+    culture = prakaani
+
+    father = prakaani_yakasak_1
+    mother = samayani_yakasak_3
+    dynasty = dyn_pirate_coast_12
+
+    sexuality = heterosexual
+
+    trait = temperate
+    trait = patient
+    trait = shy
+
+    1245.2.2 = {
+        birth = yes
+    }
+
+    1295.9.26 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+prakaani_yakasak_13 = {
+    name = "Na_ilano"
+
+    dynasty = dyn_pirate_coast_12
+    religion = yakasak
+    culture = prakaani
+
+    father = prakaani_yakasak_7
+    mother = prakaani_yakasak_8
+
+    1287.10.4 = {
+        birth = yes
+        trait = magic_good_1
+    }
+}
+
+prakaani_yakasak_14 = {
+    name = "Hapeo"
+    female = yes
+    dynasty = dyn_pirate_coast_12
+    religion = yakasak
+    culture = prakaani
+
+    father = prakaani_yakasak_7
+    mother = prakaani_yakasak_8
+
+    1290.2.18 = {
+        birth = yes
+        trait = magic_good_2
+    }
+
+    1298.1.15 = {
+    	employer = deraani_yakasak_4
+    	character:deraani_yakasak_4 = { take_hostage = root }
+    }
+}
+
+prakaani_yakasak_15 = {
+	name = "Rajamati"
+	female = yes
+
+	religion = yakasak
+	culture = prakaani
+	dynasty = dyn_pirate_coast_12
+	mother = prakaani_yakasak_12
+
+	sexuality = heterosexual
+
+	1267.9.13 = {
+		birth = yes
+		trait = legitimized_bastard
+		trait = intellect_good_1
+	}
+
+	1287.9.13 = {
+		trait = arbitrary
+		trait = compassionate
+		trait = ambitious
+		trait = education_stewardship_3
+	}
+
+	1290.1.1 = {
+		add_matrilineal_spouse = prakaani_yakasak_16
+	}
+}
+
+prakaani_yakasak_16 = {
+	name = "Varshpal"
+
+	religion = yakasak
+	culture = prakaani
+
+	1269.2.15 = {
+		birth = yes
+		trait = strong
+	}
+	1289.1.1 = {
+		trait = shy
+		trait = brave
+		trait = chaste
+		trait = education_martial_2
+	}
+}
+
+
+prakaani_yakasak_17 = {
+	name = "Rajamati"
+	female = yes
+	father = prakaani_yakasak_16
+	mother = prakaani_yakasak_15
+
+	religion = yakasak
+	culture = prakaani
+	dynasty = dyn_pirate_coast_12
+
+	1292.7.28 = {
+		birth = yes
+		trait = twin
+	}
+}
+prakaani_yakasak_18 = {
+	name = "Kakanvati"
+	female = yes
+	father = prakaani_yakasak_16
+	mother = prakaani_yakasak_15
+
+	religion = yakasak
+	culture = prakaani
+	dynasty = dyn_pirate_coast_12
+	1292.7.28 = {
+		birth = yes
+		trait = twin
+	}
+}

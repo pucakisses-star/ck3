@@ -1,0 +1,13 @@
+d_karrosisles_2a = {
+	1154.4.14 = {
+		holder = southernimperial_aversarinas_aagiokrata_21
+		liege = e_opakhasia
+		government = feudal_government
+	}
+	1176.10.26 = {
+		holder = southernimperial_aversarinas_aagiokrata_22
+	}
+	1199.10.12 = {
+		holder = 0
+	}
+}

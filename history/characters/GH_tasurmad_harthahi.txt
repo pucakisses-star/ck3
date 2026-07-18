@@ -1,0 +1,216 @@
+﻿tasurmad_harthahi_1 = {
+	name = "HA_rthah" # Harthah ibn Sarradon
+	dna = tasurmad_harthahi_1
+	dynasty = dyn_sarradon_1
+	martial = 13
+	diplomacy = 15
+	intrigue = 10
+	stewardship = 7
+	learning = 12
+	health = 5.5
+	religion = "harthahi"
+	culture = "tasurmad"
+	sexuality = heterosexual
+	trait = vengeful
+	trait = zealous
+	trait = just
+	trait = theologian
+	trait = scarred
+	trait = confider
+	trait = gh_widow
+	trait = intellect_good_2
+	trait = education_learning_4
+	trait = desert_warrior
+	trait = holy_warrior
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_07
+			custom_beards = male_beard_fp2_iberian_christian_03
+		}
+	}
+
+	1201.2.21 = {
+		birth = yes
+		effect = {
+			add_character_flag = dont_generate_family
+			dynasty = { add_dynasty_prestige_level = 2 }
+		}
+	}
+
+	1215.1.1 = {
+		trait = conqueror
+		give_nickname = nick_the_father_of_sarradon
+	}
+
+	1222.1.31 = {
+		add_spouse = tasurmad_wardenism_68
+	}
+
+	1240.1.1 = {
+		effect = {
+			add_piety = 2000
+		}
+		set_relation_nemesis = {
+			target = character:makryenis_calysto_1
+			reason = nemesis_killed_partner
+			involved_character = character:tasurmad_wardenism_68
+		}
+	}
+
+	1250.1.1 = {
+		spawn_army = {
+			name = sarradon_reconquest_troops
+			uses_supply = yes
+			inheritable = no
+			location = province:3318
+			levies = {
+				value = 3950
+			}
+			men_at_arms = {
+				type = camel_rider
+				stacks = 5
+			}
+			men_at_arms = {
+				type = mangonel
+				stacks = 5
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 5
+			}
+		}
+		spawn_army = {
+			name = sarradon_reconquest_troops
+			uses_supply = yes
+			inheritable = no
+			location = province:3318
+			levies = {
+				value = 3950
+			}
+			men_at_arms = {
+				type = camel_rider
+				stacks = 5
+			}
+			men_at_arms = {
+				type = mangonel
+				stacks = 5
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 5
+			}
+		}
+		spawn_army = {
+			name = sarradon_reconquest_troops
+			uses_supply = yes
+			inheritable = no
+			location = province:3318
+			levies = {
+				value = 3950
+			}
+			men_at_arms = {
+				type = camel_rider
+				stacks = 5
+			}
+			men_at_arms = {
+				type = mangonel
+				stacks = 5
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 5
+			}
+		}
+		spawn_army = {
+			name = sarradon_reconquest_troops
+			uses_supply = yes
+			inheritable = no
+			location = province:3318
+			levies = {
+				value = 3950
+			}
+			men_at_arms = {
+				type = camel_rider
+				stacks = 5
+			}
+			men_at_arms = {
+				type = mangonel
+				stacks = 5
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 5
+			}
+		}
+	}
+}
+
+tasurmad_harthahi_2 = {
+	name = "HA_rthah" # Harthah ibn Sarradon the Younger
+	father = tasurmad_harthahi_1
+	mother = tasurmad_wardenism_68
+	dynasty = dyn_sarradon_1
+	martial = 8
+	diplomacy = 8
+	intrigue = 6
+	stewardship = 9
+	learning = 10
+	religion = "harthahi"
+	culture = "tasurmad"
+	sexuality = heterosexual
+	trait = calm
+	trait = honest
+	trait = compassionate
+	trait = intellect_good_2
+	trait = beauty_good_2
+	trait = education_diplomacy_4
+
+	1222.8.22 = {
+		birth = yes
+		give_nickname = nick_the_younger_harthah
+	}
+
+	1240.1.1 = {
+		set_relation_nemesis = {
+			target = character:makryenis_calysto_1
+			reason = nemesis_killed_mother
+			involved_character = character:tasurmad_wardenism_68
+		}
+	}
+}
+
+tasurmad_harthahi_3 = {
+	name = "YusA_r" # Yusar ibn Sarradon
+	father = tasurmad_harthahi_1
+	mother = tasurmad_wardenism_68
+	dynasty = dyn_sarradon_1
+	martial = 13
+	diplomacy = 3
+	intrigue = 5
+	stewardship = 6
+	learning = 11
+	religion = "harthahi"
+	culture = "tasurmad"
+	sexuality = heterosexual
+	trait = vengeful
+	trait = cynical
+	trait = brave
+	trait = depressed_genetic
+	trait = beauty_good_3
+	trait = intellect_good_1
+	trait = education_martial_4
+
+	1228.6.27 = {
+		birth = yes
+		give_nickname = nick_the_grim
+	}
+
+	1240.1.1 = {
+		set_relation_nemesis = {
+			target = character:makryenis_calysto_1
+			reason = nemesis_killed_mother
+			involved_character = character:tasurmad_wardenism_68
+		}
+	}
+}

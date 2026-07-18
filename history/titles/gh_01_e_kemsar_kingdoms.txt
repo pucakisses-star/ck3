@@ -1,0 +1,29 @@
+k_ankhur = {
+	1189.6.22 = {
+		government = tribal_government
+		holder = almajun_kemsari_kemsar_10
+	}
+	1199.8.9 = {
+		holder = 0
+	}
+	1200.1.1 = {
+		change_development_level = 1
+	}
+}
+k_djeret = {
+	711.5.18 = {
+		government = tribal_government
+		holder = ran_kemsari_kemsar_9
+	}
+	726.8.10 = {
+		holder = 0
+	}
+	1200.1.1 = {
+		change_development_level = 2
+	}
+}
+k_khepra = {
+	1200.1.1 = {
+		change_development_level = 3
+	}
+}

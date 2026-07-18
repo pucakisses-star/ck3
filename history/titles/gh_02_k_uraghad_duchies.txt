@@ -1,0 +1,58 @@
+d_khefyyih = {
+	1149.7.20 = {
+		holder = amuaad_kathsiti_22
+	}
+	
+	1158.12.1 = {
+		holder = amuaad_kathsiti_24
+	}
+	1155.1.1 = {
+		government = republic_playable_government
+	}
+	1230.1.1 = {
+		holder = amuaad_kathsiti_4
+	}
+	1230.1.1 = { change_development_level = 8 }
+}
+#d_al_saitan = {
+#	1230.1.1 = {
+#		holder = amuaad_kathsiti_6
+#	}
+#	1230.1.1 = { change_development_level = 7 }
+#}
+d_merrha = {
+	1149.7.20 = {
+		holder = amuaad_kathsiti_22
+	}
+	
+	1158.12.1 = {
+		holder = amuaad_kathsiti_24
+	}
+	1230.1.1 = {
+		holder = amuaad_kathsiti_8
+	}
+	1230.1.1 = { change_development_level = 8 }
+}
+d_tel_habja = {
+	1149.7.19 = {
+		government = republic_playable_government
+	}
+	1149.7.20 = {
+		holder = amuaad_kathsiti_22
+	}
+	
+	1158.12.1 = {
+		holder = amuaad_kathsiti_24
+	}
+	1230.1.1 = {
+		holder = amuaad_kathsiti_13
+	}
+	1230.1.1 = { change_development_level = 8 }
+}
+#d_lavagheh = {
+#	1230.1.1 = {
+#		holder = amuaad_kathsiti_13
+#	}
+#	1230.1.1 = { change_development_level = 7 }
+#} 
+#

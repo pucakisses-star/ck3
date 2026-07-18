@@ -1,0 +1,23 @@
+c_mayik_ruins_14 = {
+	1250.1.1 = {
+		holder = mineris_dejorig_2
+		government = migratory_government
+	}
+}
+c_mayik_ruins_13 = {
+	1250.1.1 = {
+		holder = penetworin_ethowos_3
+		liege = 0
+		government = migratory_government
+	}
+}
+c_mayik_ruins_11 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_ruins_15 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

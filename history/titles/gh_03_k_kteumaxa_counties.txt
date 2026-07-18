@@ -1,0 +1,69 @@
+c_platares = {
+	1230.1.1 = {
+		liege = d_mochlurion
+		holder = easternimperial_aversarinas_aagiokrata_4
+		change_development_level = 3
+	}
+}
+c_neapenai = {
+	1230.1.1 = {
+		liege = d_mochlurion
+		holder = easternimperial_aversarinas_aagiokrata_4
+		change_development_level = 4
+	}
+}
+c_edodosia = {
+	1230.1.1 = {
+		liege = k_kteumaxa
+		holder = khorinot_cumani_4
+		change_development_level = 2
+		government = nomad_government
+	}
+}
+
+#c_phogae = {
+#	1230.1.1 = {
+#		
+#		holder = yevamarai_aversarinas_aagiokrata_6
+#		change_development_level = 3
+#	}
+#}
+c_kannypes = {
+	1230.1.1 = {
+		
+		holder = yevamarai_aversarinas_aagiokrata_7
+		change_development_level = 3
+	}
+}
+#c_provinceanzothus = {
+#	1230.1.1 = {
+#		holder = yevamarai_aversarinas_aagiokrata_2
+#		change_development_level = 3
+#	}
+#}
+c_selous = {
+	1230.1.1 = {
+		liege = "k_kteumaxa"
+		holder = khorinot_cumani_10
+		government = herder_government
+	}
+}
+
+#c_provincedanisovce = {
+#	1230.1.1 = {
+#		holder = yevamarai_aversarinas_aagiokrata_1
+#	}
+#}
+c_petrosthos = {
+	1230.1.1 = {
+		holder = yevamarai_aversarinas_aagiokrata_1
+	}
+}
+
+#c_theaphonos = {
+#	1230.1.1 = {
+#		
+#		holder = yevamarai_aversarinas_aagiokrata_4
+#		change_development_level = 4
+#	}
+#}

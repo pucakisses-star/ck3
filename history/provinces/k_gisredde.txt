@@ -1,0 +1,164 @@
+﻿1121 = {
+	holding = city_holding
+
+	1200.1.1 = {
+		buildings = {
+			
+		}
+		special_building = 03_last_standers_street
+	}
+}
+
+1314 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	79.1.1 = {
+		culture = shewigad
+		religion = starvayrd
+		holding = city_holding
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = metro_holding
+	}
+	239.1.1 = {
+		culture = gisreddean
+	}
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+		special_building = 03_gisreddeport
+	}
+}
+
+1317 = {
+	holding = city_holding
+
+	1200.1.1 = {
+		buildings = {
+			
+			
+		}
+		special_building = 02_seychunds_square
+	}
+}
+
+1318 = {
+	holding = city_holding
+
+	1200.1.1 = {
+		buildings = {
+			
+			
+		}
+		special_building = 03_the_minteries
+	}
+}
+
+1322 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	79.1.1 = {
+		culture = shewigad
+		religion = starvayrd
+		holding = city_holding
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = metro_holding
+	}
+	239.1.1 = {
+		culture = gisreddean
+	}
+	999.1.1 = {
+		buildings = {
+			metro_02
+			luxury_goods_04
+		}
+	}
+	1000.1.1 = {
+		buildings = {
+			
+
+			
+		}
+		special_building = 04_calmensons_crest
+	}
+}
+
+1931 = {
+	holding = city_holding
+}
+
+1992 = {
+	holding = city_holding
+
+	1200.1.1 = {
+		buildings = {
+			
+		}
+		special_building = 02_bastards_run
+	}
+}
+
+2007 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	79.1.1 = {
+		culture = shewigad
+		religion = starvayrd
+		holding = castle_holding
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+	}
+	239.1.1 = {
+		culture = gisreddean
+	}
+}
+
+2930 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	79.1.1 = {
+		culture = shewigad
+		religion = starvayrd
+		holding = castle_holding
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+	}
+	239.1.1 = {
+		culture = coldcoaster
+	}
+}
+
+3492 = {
+	holding = church_holding
+
+	1200.1.1 = {
+		buildings = {
+			
+
+			
+		}
+		special_building = 01_preachers_hill
+	}
+}
+
+3493 = {
+	holding = city_holding
+
+	1200.1.1 = {
+		buildings = {
+			
+		}
+		special_building = 02_jans_market
+	}
+}
+

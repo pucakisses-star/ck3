@@ -1,0 +1,157 @@
+﻿kardwens_kardawai_1 = {
+	name = "Wishiwashi"
+	dna = kardwens_kardawai_1
+	sexuality = heterosexual
+	religion = "kardawai"
+	culture = "kardwens"
+	dynasty = dyn_sjalvolki_44
+		trait = cannibal
+		trait = calm
+		trait = just
+		trait = gregarious
+		trait = education_learning_2
+		trait = whole_of_body
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_04
+			custom_beards = male_beard_fp1_02
+		}
+	}
+
+	1194.7.12 = {
+		birth = yes
+	}
+
+	1210.7.12 = {
+		trait = gh_historical_mystic_2
+	}
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+}
+
+kardwens_kardawai_2 = {
+	name = "Wayse"
+	religion = "kardawai"
+	culture = "kardwens"
+
+	1220.1.1 = {
+		birth = yes
+	}
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+}
+
+kardwens_kardawai_3 = {
+	name = "Hesheh"
+	religion = "benkassai"
+	culture = "kardwens"
+
+	1218.4.16 = {
+		birth = yes
+	}
+}
+
+kardwens_kardawai_4 = {
+	name = "Heshe"
+	religion = "kardawai"
+	culture = "kardwens"
+
+	1218.10.7 = {
+		birth = yes
+	}
+	1241.10.7 = {
+		trait = cynical
+		trait = gregarious
+		trait = brave
+		trait = education_martial_2
+		trait = one_eyed
+		trait = gh_historical_blademaster_2
+	}
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+}
+
+kardwens_kardawai_5 = {
+	name = "Wyshahah"
+	religion = "kardawai"
+	culture = "kardwens"
+
+	1227.1.1 = {
+		birth = yes
+	}
+}
+
+kardwens_kardawai_6 = {
+	name = "Washasha"
+	religion = "kardawai"
+	culture = "kardwens"
+
+	1215.1.1 = {
+		birth = yes
+	}
+}
+
+kardwens_kardawai_7 = {
+	name = "Wayse"
+	religion = "kardawai"
+	culture = "kardwens"
+
+	1220.1.1 = {
+		birth = yes
+	}
+}
+
+kardwens_kardawai_8 = {
+	name = "Wisha"
+	religion = "kardawai"
+	culture = "kardwens"
+	dna = kardwens_kardawai_8
+	dynasty = dyn_kardwens_1
+	mother = kardwens_kardawai_9
+	1253.3.13 = {
+		birth = yes
+		trait = physique_good_2
+		trait = magic_good_3
+	}
+	1254.1.1 = {
+		employer = kardwens_kardawai_1
+	}
+	1273.3.13 = {
+		trait = viking
+		trait = adventurer
+	}
+}
+
+kardwens_kardawai_9 = {
+	name = "Hesha"
+	religion = "kardawai"
+	culture = "kardwens"
+	dynasty = dyn_kardwens_1
+	female = yes
+	1220.3.13 = {
+		birth = yes
+	}
+	1240.3.13 = {
+		trait = viking
+	}
+	1253.3.13 = {
+		death = { death_reason = death_childbirth }
+	}
+}

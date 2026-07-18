@@ -1,0 +1,21 @@
+d_sagecrowns = {
+	1230.1.1 = {
+		holder = makryenis_katharitos_13
+		liege = k_tifrennesh
+		government = landed_order_government
+	}
+	1230.1.1 = { change_development_level = 15 }
+}
+d_tibah = {
+	1230.1.1 = {
+		holder = makryenis_philanthrios_1
+		government = landed_order_government
+	}
+	1230.1.1 = { change_development_level = 4 }
+}
+d_radnaabah = { 
+	1230.1.1 = {
+		holder = mazunic_wardenism_1
+	}
+1230.1.1 = { change_development_level = 6 }
+}

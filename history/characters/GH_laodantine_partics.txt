@@ -1,0 +1,35 @@
+﻿laodantine_partic_1 = { # Queen of Fiogh Fen in 1298, elevated to position over siblings due to her mastery of magic
+	name = "Laoighech"
+	religion = "partic"
+	culture = "laodantines"
+
+	diplomacy = 3
+	martial = 8
+	stewardship = 2
+	intrigue = 5
+	learning = 3
+	prowess = 9
+
+    father = brigandines_partic_7
+    mother = brigandines_partic_8
+    dynasty = dyn_partic_18
+	female = yes
+
+	1278.3.24 = {
+		birth = yes
+		trait = magic_good_5
+		trait = gh_gedeora_child
+	}
+
+	1298.1.1 = {
+		trait = ambitious
+		trait = vengeful
+		trait = patient
+		trait = lustful
+		trait = education_arcana_4
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+}

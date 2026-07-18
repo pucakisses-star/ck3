@@ -1,0 +1,40 @@
+﻿c_thelittleisle = {
+	1250.1.1 = {
+		change_development_level = 5
+	}
+	1251.1.1 = {
+		holder = guillater_guillater_cult_1
+	}
+}
+c_lastresort = {
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1250.1.1 = {
+		change_development_level = 5
+	}
+	1251.1.1 = {
+		holder = theygundarope_theygundaropi_cult_1
+	}
+}
+c_chevalie_islands_6 = {
+	1250.1.1 = {
+		change_development_level = 15
+	}
+	1251.1.1 = {
+		holder = guillater_hero_religion_11
+		government = republic_playable_government
+		succession_laws = { clique_republic_elective_title_succession_law }
+	}
+}
+c_notsohugeisle = {
+	1249.8.10 = {
+		holder = walakon_hero_religion_1
+		government = pirate_government
+	}
+}
+c_badboyisle = {
+	1235.4.8 = {
+		holder = guillater_hero_religion_1
+	}
+}

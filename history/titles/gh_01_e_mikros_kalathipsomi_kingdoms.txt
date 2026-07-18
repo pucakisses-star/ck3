@@ -1,0 +1,24 @@
+k_easternkatraddia8 = {
+	1250.1.1 = {
+		change_development_level = 0
+	}
+	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+		de_jure_liege = e_fogmarches
+	}
+}
+
+k_everrain = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	66.11.14 = {
+		holder = 0
+	}
+	1221.7.15 = {
+		holder = northernimperial_aversarinas_aagiokrata_19
+		liege = e_aversarinas_aautokrata
+	}
+	1229.11.3 = {
+		 holder = 0
+	}
+}

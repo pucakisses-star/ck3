@@ -1,0 +1,9 @@
+﻿vargenis_aversarinas_aagiokrata_1 = {
+	name = "Aplos"
+	religion = "aversarinas_aagiokrata"
+	culture = "vargenis"
+
+	1231.7.20 = {
+		birth = yes
+	}
+}

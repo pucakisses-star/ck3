@@ -1,0 +1,155 @@
+﻿jaduyada_eabuyad_ilah_al_atilaam_1 = { # Slave Revolt Descendant, 1254 Ritualist in Aironoi
+	name = "Sisines"
+	dynasty = dyn_ritualist_2
+	religion = eabuyad_ilah_al_atilaam
+	culture = jaduyada
+
+	father = jaduyada_eabuyad_ilah_al_atilaam_2
+
+	martial = 8
+	diplomacy = 3
+	intrigue = 3
+	stewardship = 6
+	learning = 1
+	prowess = 8
+
+	1224.12.3 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1236.1.1 = {
+		trait = vengeful
+		trait = brave
+		trait = wrathful
+	}
+
+	1240.12.3 = {
+		trait = education_martial_2
+	}
+}
+
+jaduyada_eabuyad_ilah_al_atilaam_2 = { #Slave Leader's son
+	name = "Amer"
+	dynasty = dyn_ritualist_2
+	religion = eabuyad_ilah_al_atilaam
+	culture = jaduyada
+	disallow_random_traits = yes
+
+	father = jaduyada_eabuyad_ilah_al_atilaam_3
+	mother = jaduyada_eabuyad_ilah_al_atilaam_4
+
+	martial = 2
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 8
+	learning = 1
+	prowess = 4
+
+	1199.4.21 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1211.1.1 = {
+		trait = trusting
+		trait = generous
+		trait = just
+	}
+
+	1215.4.21 = {
+		trait = education_stewardship_4
+	}
+
+	1239.7.14 = {
+		death = {
+			death_reason = death_battle
+			killer = easternimperial_aironoian_aagiokrata_15 # Pythia Xipheos
+		}
+	}
+}
+
+jaduyada_eabuyad_ilah_al_atilaam_3 = { # Imran Tahzirid, Slave Leader during the Blue Robe Revolt
+	name = "Imran"
+	dynasty = dyn_ritualist_2
+	religion = eabuyad_ilah_al_atilaam
+	culture = jaduyada
+	disallow_random_traits = yes
+
+	martial = 8
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 3
+	learning = 5
+	prowess = 7
+
+	1176.8.9 = {
+		birth = yes
+	}
+
+	1188.1.1 = {
+		trait = vengeful
+		trait = ambitious
+		trait = wrathful
+	}
+
+	1192.8.9 = {
+		trait = education_martial_4
+		trait = organizer
+		trait = logistician
+		trait = strong
+	}
+
+	1198.1.1 = {
+		add_spouse = jaduyada_eabuyad_ilah_al_atilaam_4
+	}
+
+	1237.9.23 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+jaduyada_eabuyad_ilah_al_atilaam_4 = { # Imran's wife
+	name = "Zunayra"
+	religion = eabuyad_ilah_al_atilaam
+	culture = jaduyada
+	disallow_random_traits = yes
+	female = yes
+
+	martial = 4
+	diplomacy = 8
+	intrigue = 8
+	stewardship = 6
+	learning = 10
+	prowess = 5
+
+	1179.6.6 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1191.1.1 = {
+		trait = calm
+		trait = impatient
+		trait = brave
+	}
+
+	1195.6.6 = {
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:school_of_malignancies }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+		trait = gh_dehanded
+	}
+
+	1200.1.12 = {
+		death = {
+			death_reason = death_ritual
+			killer = easternimperial_aversarinas_practitioner_1 # Magister Velaras 'Bleak Speaker'
+		}
+	}
+}

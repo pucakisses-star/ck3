@@ -1,0 +1,19 @@
+﻿centralislander_cult_of_the_waves_1 = {
+	name = "Dexon"
+	religion = "cult_of_the_waves"
+	culture = "centralislander"
+
+	1203.4.4 = {
+		birth = yes
+	}
+}
+
+centralislander_cult_of_the_waves_2 = {
+	name = "Archimanos"
+	religion = "cult_of_the_waves"
+	culture = "centralislander"
+
+	1189.8.14 = {
+		birth = yes
+	}
+}

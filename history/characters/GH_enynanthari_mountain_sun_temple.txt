@@ -1,0 +1,30 @@
+﻿enynanthari_mountain_sun_temple_1 = {
+	name = "Boethios"
+	female = yes
+	religion = "mountain_sun_temple"
+	culture = "enynanthari"
+
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+enynanthari_mountain_sun_temple_2 = {
+	name = "Makarios"
+	religion = "mountain_sun_temple"
+	culture = "enynanthari"
+
+	1232.1.1 = {
+		birth = yes
+	}
+}
+
+enynanthari_mountain_sun_temple_3 = {
+	name = "Themos"
+	religion = "mountain_sun_temple"
+	culture = "enynanthari"
+
+	1234.5.18 = {
+		birth = yes
+	}
+}

@@ -1,0 +1,116 @@
+﻿adrakamp_sjalvolki_aagiokrata_1 = { # Dragos' Court Magi
+	name = "Orlos"
+	dna = adrakamp_sjalvolki_aagiokrata_1
+	religion = "sjalvolki_aagiokrata"
+	culture = "adrakamp"
+	disallow_random_traits = yes
+
+	martial = 8
+	diplomacy = 10
+	intrigue = 8
+	stewardship = 6
+	learning = 10
+	prowess = 6
+	
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_western_07
+		}
+	}
+
+
+	1210.7.16 = {
+		birth = yes
+		trait = magic_good_4
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+
+	1222.1.1 = {
+		trait = zealous
+		trait = deceitful
+		trait = callous
+	}
+
+	1226.7.16 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+		trait = one_eyed
+		trait = shrewd
+		trait = theologian
+		trait = education_arcana_2
+	}
+
+
+	1252.1.5 = {
+		give_nickname = nick_the_acolyte
+		give_council_position = councillor_court_magi
+		effect = {
+			add_character_flag = sjalvolki_vanguard
+		}
+	}
+
+	1255.1.1 = {
+		effect = { learn_global_spell_effect = { SPELL_IDENTIFIER = vampirism } }
+	}
+
+	1295.1.1 = {
+		effect = {
+			upgrade_stacking_modifier_by_level_effect = { MODIFIER = magic_life_extension_modifier TYPE = character LEVEL = 5 YEARS = -1  } 
+			upgrade_stacking_modifier_by_level_effect = { MODIFIER = magic_arcane_degeneration_modifier TYPE = character LEVEL = 1 YEARS = -1  } 
+			set_variable = {
+				name = life_extention_amount_raw
+				value = 5
+			}
+		}
+	}
+}
+
+adrakamp_sjalvolki_aagiokrata_2 = {
+	name = "Lazar"
+	religion = "sjalvolki"
+	culture = "adrakamp"
+
+	1212.1.1 = {
+		birth = yes
+	}
+
+	1250.1.1 = {
+		effect = {
+			add_character_flag = sjalvolki_vanguard
+		}
+	}
+
+	1251.1.12 = {
+		set_relation_grudge = character:adrakamp_sjalvolki_6
+	}
+}
+
+adrakamp_sjalvolki_aagiokrata_3 = {
+	name = "Vukan"
+	religion = "sjalvolki"
+	culture = "adrakamp"
+
+	1227.1.1 = {
+		birth = yes
+	}
+}
+
+adrakamp_sjalvolki_aagiokrata_4 = {
+	name = "Chrothigar"
+	religion = "sjalvolki"
+	culture = "adrakamp"
+
+	1225.1.1 = {
+		birth = yes
+	}
+	1252.1.5 = {
+		religion = sjalvolki_aagiokrata
+		name = "Salvrios"
+	}
+}

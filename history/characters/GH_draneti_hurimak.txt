@@ -1,0 +1,32 @@
+﻿draneti_hurimak_1 = { # Khvicha's Draneti warlord
+	name = "Sumbat"
+	religion = "hurimak"
+	culture = "draneti"
+	sexuality = bisexual
+	trait = intellect_bad_1
+
+	1222.1.6 = {
+		birth = yes
+	}
+	1234.1.6 = {
+		trait = brave
+		trait = fickle
+		trait = deceitful
+	}
+	1238.1.6 = {
+		trait = education_intrigue_2
+	}
+	1252.11.6 = {
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = religious_rights
+				level = 1
+			}
+			vassal_contract_set_obligation_level = {
+				type = title_revocation_rights
+				level = 1
+			}
+		}
+		add_gold = 200
+	}
+}

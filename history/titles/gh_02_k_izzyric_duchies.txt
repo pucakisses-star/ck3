@@ -1,0 +1,10 @@
+d_mayik_duchy_12 = {
+	1183.9.14 = {
+		holder = practitioner_aversarinas_aagiokrata_3
+		liege = e_mayikprolollan
+		government = magocratic_government
+	}
+	1229.1.21 = {
+		holder = 0
+	}
+}

@@ -1,0 +1,122 @@
+﻿charchac_daminkar_1 = { # Weak mask vassal
+	name = "Tedaieh"
+	religion = "daminkar"
+	culture = "charchac"
+	female = yes
+	sexuality = heterosexual
+	trait = physique_bad_2
+	trait = shrewd
+
+	martial = 7
+	diplomacy = 6
+	stewardship = 9
+	intrigue = 5
+	learning = 3
+
+	1202.4.16 = {
+		birth = yes
+	}
+	1214.4.16 = {
+		trait = greedy
+		trait = arrogant
+		trait = stubborn
+	}
+	1218.4.16 = {
+		trait = education_stewardship_3
+	}
+}
+
+charchac_daminkar_2 = { # 1200-1240 Charchac leader
+	name = "Mesankabir"
+	religion = "daminkar"
+	culture = "charchac"
+	sexuality = heterosexual
+	dynasty = dyn_lerrardin_5
+	trait = intellect_good_1
+
+	martial = 5
+	diplomacy = 10
+	stewardship = 7
+	intrigue = 5
+	learning = 6
+
+	1177.8.18 = {
+		birth = yes
+	}
+	1189.8.18 = {
+		trait = diligent
+		trait = compassionate
+		trait = gregarious
+	}
+	1193.8.18 = {
+		trait = education_diplomacy_4
+	}
+	1200.3.1 = {
+		trait = peasant_leader
+	}
+	1216.7.13 = {
+		add_spouse = charchac_daminkar_3
+	}
+	1240.11.15 = {
+		death = {
+			death_reason = death_murder
+			killer = charchac_alau_koev_2
+		}
+	}
+}
+
+charchac_daminkar_3 = { # 1200-1240 Charchac leader wife
+	name = "Girshese"
+	religion = "daminkar"
+	culture = "charchac"
+	sexuality = heterosexual
+	female = yes
+	trait = beauty_good_2
+
+	1199.3.11 = {
+		birth = yes
+	}
+	1211.3.11 = {
+		trait = temperate
+		trait = chaste
+		trait = stubborn
+	}
+	1215.3.11 = {
+		trait = education_stewardship_3
+	}
+	1240.11.15 = {
+		death = {
+			death_reason = death_murder
+			killer = charchac_alau_koev_2
+		}
+	}
+}
+
+charchac_daminkar_4 = { # Metal Mask sister-in-law
+	name = "Chaidu"
+	religion = "daminkar"
+	culture = "charchac"
+	sexuality = homosexual
+	father = charchac_daminkar_2
+	mother = charchac_daminkar_3
+	dynasty = dyn_lerrardin_5
+	female = yes
+
+	1223.4.1 = {
+		birth = yes
+	}
+	1235.4.1 = {
+		trait = vengeful
+		trait = deceitful
+		trait = lustful
+	}
+	1239.4.1 = {
+		trait = education_intrigue_3
+	}
+	1250.12.10 = {
+		death = {
+			death_reason = death_murder
+			killer = charchac_alau_koev_1
+		}
+	}
+}

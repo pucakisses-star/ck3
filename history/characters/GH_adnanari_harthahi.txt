@@ -1,0 +1,195 @@
+﻿adnanari_harthahi_1 = { # D_amvalzum
+	name = "Nooriq"
+	dynasty = dyn_khenemhat_4
+	religion = "harthahi"
+	culture = "adnanari"
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+
+	1235.1.1 = {
+		birth = yes
+	}
+
+	1251.1.1 = {
+		add_spouse = adnanari_harthahi_12
+	}
+}
+
+adnanari_harthahi_2 = {
+	name = "YusU_f"
+	dynasty = dyn_khenemhat_16
+	religion = "harthahi"
+	culture = "adnanari"
+
+	1210.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		add_spouse = adnanari_harthahi_13
+	}
+}
+
+adnanari_harthahi_3 = {
+	name = "Yusri"
+	dynasty = dyn_khenemhat_19
+	religion = "harthahi"
+	culture = "adnanari"
+
+	1228.1.1 = {
+		birth = yes
+	}
+}
+
+adnanari_harthahi_4 = {
+	name = "Haitham"
+	dynasty = dyn_khenemhat_20
+	religion = "harthahi"
+	culture = "adnanari"
+
+	1224.1.1 = {
+		birth = yes
+	}
+}
+
+adnanari_harthahi_5 = {
+	name = "Amma_Ghani"
+	dynasty = dyn_khenemhat_21
+	religion = "harthahi"
+	culture = "adnanari"
+
+	1220.1.1 = {
+		birth = yes
+	}
+}
+
+adnanari_harthahi_6 = { #unlanded and unimportant
+	name = "A_rI_f"
+	dynasty = dyn_khenemhat_22
+	religion = "harthahi"
+	culture = "adnanari"
+
+	1218.1.1 = {
+		birth = yes
+	}
+}
+
+adnanari_harthahi_7 = {
+	name = "Haarith"
+	religion = "harthahi"
+	culture = "adnanari"
+
+	1221.1.1 = {
+		birth = yes
+	}
+}
+
+adnanari_harthahi_8 = {
+	name = "Thaamir"
+	religion = "harthahi"
+	culture = "adnanari"
+
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+adnanari_harthahi_9 = {
+	name = "Saabir"
+	religion = "wardenism"
+	culture = "adnanari"
+
+	dynasty = dyn_warden_7
+	father = adnanari_wardenism_1
+
+	1214.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		religion = "harthahi"
+	}	
+}
+
+adnanari_harthahi_10 = { #unlanded and unimportant
+	name = "Ghaazi"
+	religion = "harthahi"
+	culture = "adnanari"
+
+	1212.1.1 = {
+		birth = yes
+	}
+}
+
+adnanari_harthahi_11 = {
+	name = "Mukarram"
+	religion = "harthahi"
+	culture = "adnanari"
+
+	1223.1.1 = {
+		birth = yes
+	}
+}
+
+adnanari_harthahi_12 = { # D_amvalzum wife
+	name = "Rasya"
+	religion = "harthahi"
+	culture = "adnanari"
+	female = yes
+
+	1234.1.1 = {
+		birth = yes
+	}
+}
+
+adnanari_harthahi_13 = {
+	name = "Tahaani"
+	religion = "harthahi"
+	culture = "adnanari"
+	female = yes
+
+	1212.1.1 = {
+		birth = yes
+	}
+}
+
+adnanari_harthahi_14 = { # D_amvalzum son 1
+	name = "Mutazim"
+	dynasty = dyn_khenemhat_4
+	religion = "harthahi"
+	culture = "adnanari"
+	father = adnanari_harthahi_1
+	mother = adnanari_harthahi_12
+
+	1253.1.1 = {
+		birth = yes
+	}
+}
+
+adnanari_harthahi_15 = { # Son 1
+	name = "Arkaan"
+	dynasty = dyn_khenemhat_16
+	religion = "harthahi"
+	culture = "adnanari"
+	father = adnanari_harthahi_2
+	mother = adnanari_harthahi_13
+
+	1231.1.1 = {
+		birth = yes
+	}
+}
+
+adnanari_harthahi_16 = { # Son 2
+	name = "Nazmi"
+	dynasty = dyn_khenemhat_16
+	religion = "harthahi"
+	culture = "adnanari"
+	father = adnanari_harthahi_2
+	mother = adnanari_harthahi_13
+
+	1234.1.1 = {
+		birth = yes
+	}
+}

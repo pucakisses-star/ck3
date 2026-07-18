@@ -1,0 +1,65 @@
+﻿ashital_sheharddi_1 = { 
+	name = Ivomai
+	dynasty = dyn_israel_2
+	religion = "sheharddi"
+	culture = "ashital"
+	female = yes
+
+	1212.4.14 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 2 }
+		}
+	}
+
+	1242.5.20 = {
+		effect = {
+			add_realm_law = female_only_law
+		}
+	}
+}
+
+ashital_sheharddi_2 = { 
+	name = Acha
+	dynasty = dyn_israel_4
+	religion = "sheharddi"
+	culture = "ashital"
+
+	1218.4.14 = {
+		birth = yes
+	}
+
+	1249.1.1 = {
+		spawn_army = {
+			inheritable = yes
+			location = province:370
+			name = tribe_of_kings_descendants
+			men_at_arms = {
+				type = enlevett
+				stacks = 10
+			}
+		}
+	}
+}
+
+ashital_sheharddi_3 = { 
+	name = Natroi
+	dynasty = dyn_israel_5
+	religion = "sheharddi"
+	culture = "ashital"
+
+	1225.4.14 = {
+		birth = yes
+	}
+}
+
+ashital_sheharddi_4 = { 
+	name = Chelbo
+	dynasty = dyn_israel_6
+	religion = "sheharddi"
+	culture = "ashital"
+
+	1220.4.14 = {
+		birth = yes
+	}
+}

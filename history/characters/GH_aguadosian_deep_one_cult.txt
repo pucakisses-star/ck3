@@ -1,0 +1,24 @@
+﻿aguadosian_deep_one_cult_1 = {
+	name = "Antonino"
+	religion = deep_one_cult
+	culture = aguadosian
+	1230.2.6 = {
+		birth = yes
+	}
+	1242.2.6 = {
+		trait = zealous
+		trait = trusting
+		trait = callous
+	}
+	1246.2.6 = {
+		trait = education_learning_3
+		trait = viking
+	}
+	1248.4.3 = {
+		trait = scarred
+		trait = one_eyed
+		trait = possessed_1
+		trait = lunatic_1
+		give_nickname = nick_second_breath
+	}
+}

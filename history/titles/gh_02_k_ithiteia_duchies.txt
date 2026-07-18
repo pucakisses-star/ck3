@@ -1,0 +1,33 @@
+d_isles_of_aervalr = {
+	1251.4.14 = { change_development_level = 4 }
+}
+d_inner_halo = {
+	1251.4.14 = {
+		holder = southislander_aversarinas_aagiokrata_3
+		liege = 0
+		change_development_level = 4
+	}
+}
+
+#d_phalalia = {
+#	1251.4.14 = {
+#		holder = agiopadis_saintly_order_1
+#		change_development_level = 3
+#	}
+#
+#	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+#		de_jure_liege = k_slavka
+#	}
+#}
+d_isle_of_light = {
+	1078.1.5 = {
+		holder = southislander_aversarinas_aagiokrata_1
+		# liege = d_psacus # GH TODO: Removed in province rework, replace
+	}
+
+	1251.4.14 = { change_development_level = 3 }
+	
+	1251.4.14 = {
+		holder = agiopadis_saintly_order_1
+	}
+}

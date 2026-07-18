@@ -1,0 +1,12 @@
+﻿mahatha_yakasak_1 = {
+	name = "Sumudu"
+	religion = "yakasak"
+	culture = "mahatha"
+	1225.7.4 = {
+		birth = yes
+	}
+
+	1277.3.10 = {
+		death = { death_reason = death_siege killer = voyagen_coastpath_2 }
+	}
+}

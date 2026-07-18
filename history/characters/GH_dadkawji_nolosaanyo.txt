@@ -1,0 +1,20 @@
+﻿dadkawji_nolosaanyo_1 = {
+    name = "Chamara"
+    culture = "dadkawji"
+    religion = "nolosaanyo"
+
+    1208.3.1 = {
+        birth = yes
+    }
+    1220.1.1 = {
+        trait = education_diplomacy_3
+        trait = patient
+        trait = vengeful
+        trait = fickle
+        trait = disfigured
+        trait = shrewd
+        effect = {
+            set_relation_rival = character:rethara_yakasak_1
+        }
+    }
+}

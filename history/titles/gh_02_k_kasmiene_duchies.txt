@@ -1,0 +1,84 @@
+d_hieraros = { 
+	1234.5.23 = {
+		holder = karzarads_kakarataki_5
+	}
+	1238.3.21 = {
+		holder = 0
+		liege = 0
+	}
+}
+
+#d_sedypethedia = {
+#	545.1.1 = {
+#		holder = centralimperial_aversarinas_aagiokrata_3
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	600.6.29 = {
+#		holder = centralimperial_aversarinas_aagiokrata_12
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	603.9.6 = {
+#		holder = centralimperial_aversarinas_aagiokrata_21
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	610.1.12 = {
+#		holder = centralimperial_aversarinas_aagiokrata_22
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	662.9.3 = {
+#		holder = centralimperial_aversarinas_aagiokrata_23
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	665.11.30 = {
+#		holder = centralimperial_aversarinas_aagiokrata_29
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	677.6.25 = {
+#		holder = 0
+#		liege = 0
+#	}
+#	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+#		de_jure_liege = k_spedk
+#	}
+#}
+
+d_olylama = {
+	1234.5.23 = {
+		holder = karzarads_kakarataki_5
+	}
+	1238.3.21 = {
+		holder = 0
+		change_development_level = 9
+	}
+}
+
+d_hotterfozen = {
+	545.1.1 = {
+		holder = centralimperial_aversarinas_aagiokrata_3
+		liege = k_governorate_malcois_kingdom
+	}
+	600.6.29 = {
+		holder = centralimperial_aversarinas_aagiokrata_12
+		liege = k_governorate_malcois_kingdom
+	}
+	610.1.12 = {
+		holder = centralimperial_aversarinas_aagiokrata_21
+		liege = k_governorate_malcois_kingdom
+	}
+	618.4.17 = {
+		holder = centralimperial_aversarinas_aagiokrata_22
+		liege = k_governorate_malcois_kingdom
+	}
+	662.9.3 = {
+		holder = centralimperial_aversarinas_aagiokrata_23
+		liege = k_governorate_malcois_kingdom
+	}
+	665.11.30 = {
+		holder = centralimperial_aversarinas_aagiokrata_29
+		liege = k_governorate_malcois_kingdom
+	}
+	677.6.25 = {
+		holder = 0
+		liege = 0
+	}
+}

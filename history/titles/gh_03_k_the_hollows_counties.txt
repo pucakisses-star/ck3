@@ -1,0 +1,10 @@
+c_westcatacombs_1 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_4 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

@@ -1,0 +1,90 @@
+﻿tasurmad_ritualist_1 = {
+	name = "Isa"
+	dna = tasurmad_ritualist_1
+	religion = "ritualist"
+	culture = "tasurmad"
+
+	trait = zealous
+	trait = education_diplomacy_3
+	trait = brave
+	trait = shy
+	trait = intellect_good_2
+	trait = physique_bad_1
+	dynasty = dyn_ritualist_1
+	female = yes
+
+		portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp2_iberian_muslim_02
+		}
+	}
+
+	1223.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_ritualist_2 = { #1298 ritualist warlord left high and dry by parshad
+	name = "Khubayb"
+	religion = "akhawwat"
+	culture = "tasurmad"
+	1258.1.1 = {
+		birth = yes
+	}
+	1274.1.1 = {
+		trait = ambitious
+		trait = vengeful
+		trait = greedy
+		trait = education_stewardship_3
+	}
+}
+
+tasurmad_ritualist_3 = { 
+	# 2nd century court physician (and political player) of the Kingdom of Sarradon. Had a noted interest in Aversarian Living Magic, and is credited with being one of the key figures that started the popularization of the school in Sarradon.
+	# Killed by the Worldeater
+	name = "Ikrima"
+	religion = "ritualist"
+	culture = "tasurmad"
+	disallow_random_traits = yes
+
+	martial = 5
+	diplomacy = 3
+	intrigue = 6
+	stewardship = 4
+	learning = 12
+	prowess = 8
+
+	85.2.7 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	97.1.1 = {
+		trait = deceitful
+		trait = ambitious
+		trait = arrogant
+	}
+
+	101.2.7 = {
+		trait = education_intrigue_3
+		trait = lifestyle_physician
+	}
+	
+	110.1.1 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+			add_trait_xp = {
+				trait = lifestyle_physician
+				value = 100
+			}
+		}
+	}
+
+	144.4.4 = {
+		death = {
+			death_reason = death_worldeater
+		}
+	}
+}

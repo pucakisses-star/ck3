@@ -1,0 +1,19 @@
+﻿walakon_seaborne_exalted_1 = {
+    name = "Tzadok"
+    religion = seaborne_exalted
+    culture = walakon
+    trait = beauty_good_3
+
+    1230.5.6 = {
+        birth = yes
+    }
+    1242.5.6 = {
+        trait = sadistic
+        trait = gregarious
+        trait = lustful
+    }
+    1246.5.6 = {
+        trait = education_intrigue_3
+        trait = gh_historical_blademaster_3
+    }
+}

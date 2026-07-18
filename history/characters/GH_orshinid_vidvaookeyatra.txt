@@ -1,0 +1,39 @@
+﻿orshinid_vidvaookeyatra_1 = { # Mad Blade son, Chandranarayan's bodyguard
+	name = "Otun"
+	religion = "vidvaookeyatra"
+	culture = "orshinid"
+
+	dna = orshinid_vidvaookeyatra_1
+
+	martial = 9
+
+	trait = bastard
+
+	mother = vanaarik_yakasak_1
+	father = orshinid_chakkarai_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_mena_04
+			custom_hair = no_hair
+		}
+	}
+
+	1224.1.5 = {
+		birth = yes
+	}
+
+	1240.1.5 = {
+		trait = gluttonous
+		trait = wrathful
+		trait = brave
+		trait = education_martial_4
+	}
+
+	1254.1.1 = {
+		employer = marakje_vidvaookeyatra_2
+		set_relation_friend = character:marakje_vidvaookeyatra_2
+		trait = scarred
+		trait = gh_historical_blademaster_2
+	}
+}

@@ -1,0 +1,155 @@
+﻿penetworin_ethowos_1 = { # Zimrabar, now nerfed
+	name = "Zimrabar"
+	religion = "ethowos"
+	culture = "penetworin"
+	sexuality = heterosexual
+
+	trait = humble
+	trait = fickle
+	trait = gluttonous
+
+	diplomacy = 7
+	martial = 7
+	stewardship = 7
+	intrigue = 6
+	learning = 6
+	prowess = 6
+
+	trait = education_martial_4
+
+	1191.12.11 = {
+		birth = yes
+	}
+}
+
+penetworin_ethowos_2 = {
+	name = "Urifel"
+	female = yes
+	religion = "ethowos"
+	culture = "penetworin"
+	sexuality = bisexual
+
+	trait = zealous
+	trait = craven
+	trait = callous
+
+	diplomacy = 5
+	martial = 6
+	stewardship = 7
+	intrigue = 3
+	learning = 6
+	prowess = 6
+
+	trait = education_stewardship_2
+
+	1227.7.6 = {
+		birth = yes
+	}
+}
+
+penetworin_ethowos_3 = {
+	name = "Balkumagan"
+	religion = "ethowos"
+	culture = "penetworin"
+	sexuality = heterosexual
+
+	trait = lazy
+	trait = paranoid
+	trait = humble
+
+	diplomacy = 9
+	martial = 5
+	stewardship = 7
+	intrigue = 10
+	learning = 5
+	prowess = 6
+
+	trait = education_intrigue_2
+
+	1213.6.8 = {
+		birth = yes
+	}
+
+	1214.12.24 = {
+		give_nickname = nick_the_dull_balkumagan
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+}
+
+penetworin_ethowos_4 = {
+	name = "Baldereya"
+	religion = "ethowos"
+	culture = "penetworin"
+
+	sexuality = heterosexual
+
+	trait = humble
+	trait = wrathful
+	trait = gluttonous
+
+	diplomacy = 5
+	martial = 3
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	prowess = 9
+
+	trait = education_diplomacy_4
+
+	1223.10.10 = {
+		birth = yes
+	}
+}
+
+penetworin_ethowos_5 = {
+	name = "Sakalbar"
+	religion = "ethowos"
+	culture = "penetworin"
+	sexuality = heterosexual
+
+	trait = lustful
+	trait = just
+	trait = generous
+
+	diplomacy = 7
+	martial = 5
+	stewardship = 7
+	intrigue = 4
+	learning = 4
+	prowess = 6
+
+	trait = education_diplomacy_1
+
+	1238.3.23 = {
+		birth = yes
+	}
+}
+
+penetworin_ethowos_6 = {
+	name = "Karadeya"
+	female = yes
+	religion = "ethowos"
+	culture = "penetworin"
+	sexuality = heterosexual
+
+	trait = gluttonous
+	trait = vengeful
+	trait = fickle
+
+	diplomacy = 9
+	martial = 7
+	stewardship = 7
+	intrigue = 6
+	learning = 3
+	prowess = 6
+
+	trait = education_diplomacy_3
+
+	1228.2.21 = {
+		birth = yes
+	}
+}

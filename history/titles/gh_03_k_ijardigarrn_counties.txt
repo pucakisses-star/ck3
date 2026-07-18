@@ -1,0 +1,14 @@
+c_digniadartd = {
+	1230.1.1 = {
+		holder = redlander_screaming_host_5
+		government = magocratic_government
+		change_development_level = 3
+	}
+}
+c_iznid = {
+	1230.1.1 = {
+		holder = redrunner_aversarinas_aagiokrata_9
+		government = military_unit_government
+		change_development_level = 2
+	}
+}

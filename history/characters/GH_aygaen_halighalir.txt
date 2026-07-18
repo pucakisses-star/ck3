@@ -1,0 +1,35 @@
+﻿aygaen_halighalir_1 = { # Khvicha's Aygaen warlord
+	name = "Zeraul"
+	religion = "halighalir"
+	culture = "aygaen"
+	sexuality = heterosexual
+
+	1225.11.4 = {
+		birth = yes
+	}
+	1237.11.4 = {
+		trait = lustful
+		trait = greedy
+		trait = callous
+	}
+	1241.11.4 = {
+		trait = education_martial_3
+		trait = strong
+		trait = rakish
+		give_nickname = nick_the_lavender_knight_zeraul
+		trait = gh_historical_blademaster_2
+	}
+	1252.11.6 = { # NOT CURRENTLY LANDED
+		#effect = {
+		#	vassal_contract_set_obligation_level = {
+		#		type = religious_rights
+		#		level = 1
+		#	}
+		#	vassal_contract_set_obligation_level = {
+		#		type = title_revocation_rights
+		#		level = 1
+		#	}
+		#}
+		add_gold = 200
+	}
+}

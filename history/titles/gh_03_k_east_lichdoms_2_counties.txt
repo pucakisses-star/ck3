@@ -1,0 +1,60 @@
+c_east_lichdoms_7cc = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_east_lichdoms_anotherone = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_east_lichdoms_13cc = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_east_lichdoms_13ee = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_east_lichdoms_14bb = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_east_lichdoms_14dd = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_east_lichdoms_15cc = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_east_lichdoms_15bb = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_east_lichdoms_15ee = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_province5735 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_east_lichdoms_14aa = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_east_lichdoms_14ee = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

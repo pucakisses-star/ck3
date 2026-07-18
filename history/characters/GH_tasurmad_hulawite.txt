@@ -1,0 +1,92 @@
+﻿tasurmad_hulawite_1 = { 
+	name = "Sanawada"
+	religion = "hulawite"
+	culture = "tasurmad"
+	female = yes
+	martial = 8
+	1270.6.12 = {
+		birth = yes
+	}
+	1286.6.12 = {
+		trait = education_martial_4
+		trait = wrathful
+		trait = cynical
+		trait = callous
+	}
+}
+tasurmad_hulawite_2 = { #adoptive father of above
+	name = "Masudi"
+	religion = "hulawite"
+	culture = "tasurmad"
+
+	1242.1.9 = {
+		birth = yes
+	}
+	1258.1.9 = {
+		trait = education_diplomacy_3
+		trait = content
+		trait = compassionate
+		trait = calm
+	}
+}
+tasurmad_hulawite_3 = { #This guy gonna get killed
+	name = "NabI_l"
+	religion = anban_sarradon
+	culture = "tasurmad"
+	1258.8.19 = {
+		birth = yes
+	}
+	1274.8.19 = {
+		trait = education_learning_2
+		trait = compassionate
+		trait = zealous
+		trait = chaste
+	}
+}
+tasurmad_hulawite_4 = {
+	name = "IsrA__a"
+	religion = beshashuriyya
+	culture = "tasurmad"
+	1278.7.1 = {
+		birth = yes
+	}
+	1294.7.1 = {
+		trait = education_martial_4
+		trait = ambitious
+		trait = zealous
+		trait = lustful
+		trait = generous
+	}	
+}
+tasurmad_hulawite_5 = { # 8th century Hulawite philosopher and alchemist; credited with inventing countless tinctures and alchemical treatments for diseases both common and rare 
+	name = "Talhah"
+	religion = hulawite
+	culture = "tasurmad"
+	
+	695.12.12 = {
+		birth = yes
+	}
+	707.1.1 = {
+		trait = eccentric
+		trait = gregarious
+		trait = diligent
+	}
+	711.12.12 = {
+		trait = education_learning_3
+		trait = lifestyle_physician
+		trait = lifestyle_herbalist
+	}
+	720.1.1 = {
+		effect = {
+			add_trait_xp = {
+				trait = lifestyle_physician
+				value = 100
+			}
+		}
+	}
+	759.1.10 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}

@@ -1,0 +1,21 @@
+﻿csorsca_kikarsagi_aagiokrata_1 = {
+    name = "Togortok"
+    dynasty = dyn_kikarsag_6
+    religion = "kikarsagi_aagiokrata"
+    culture = "csorsca"
+
+    1225.4.12 = {
+        birth = yes
+		trait = magic_good_3
+    }
+	1241.4.12 = {
+       trait = arrogant
+	   trait = zealous
+	   trait = ambitious
+	   trait = education_arcana_3
+	   effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 7 }
+		}
+    }
+}

@@ -1,0 +1,229 @@
+﻿fedagesh_mogowai_1 = { # count of murol and adeyle
+	name = "Darnaleb"
+	religion = mogowai
+	culture = fedagesh
+	
+	dynasty = dyn_damota_19
+	
+	diplomacy = 8
+	martial = 5
+	stewardship = 9
+	intrigue = 7
+	learning = 8
+	
+	1215.11.28 = {
+		birth = yes
+	}
+	1227.11.28 = {
+		trait = callous
+		trait = humble
+		trait = content
+	}
+	1231.11.28 = {
+		trait = education_stewardship_2
+	}
+	
+}
+
+fedagesh_mogowai_3 = { # count of darbatta
+	name = "Eralnik"
+	religion = mogowai
+	culture = fedagesh
+	
+	1234.5.6 = {
+		birth = yes
+	}
+}
+
+fedagesh_mogowai_4 = { # count of Bekrim
+	name = "Berale"
+	religion = mogowai
+	culture = fedagesh
+	
+	1235.9.17 = {
+		birth = yes
+	}
+}
+
+fedagesh_mogowai_5 = { # count of Remali
+	name = "Yozari"
+	religion = mogowai
+	culture = fedagesh
+	
+	1225.8.24 = {
+		birth = yes
+	}
+}
+
+fedagesh_mogowai_6 = { # count of Terzet
+	name = "Dahala"
+	religion = mogowai
+	culture = fedagesh
+	
+	1228.6.29 = {
+		birth = yes
+	}
+}
+
+fedagesh_mogowai_7 = { # count of Eheja and Omalej
+	name = "Nadoreb"
+	religion = mogowai
+	culture = fedagesh
+	
+	1237.4.15 = {
+		birth = yes
+	}
+}
+
+fedagesh_mogowai_8 = {
+	name = "Fornala"
+	religion = mogowai
+	culture = fedagesh
+	female = yes
+	
+	1226.3.7 = {
+		birth = yes
+	}
+}
+
+fedagesh_mogowai_10 = { # Count of Gidali and Gyuzol
+	name = "Ranoka"
+	religion = mogowai
+	culture = fedagesh
+
+	dynasty = dyn_damota_20
+	
+	diplomacy = 11
+	martial = 9
+	stewardship = 7
+	intrigue = 8
+	learning = 9
+	
+	1222.1.23 = {
+		birth = yes
+	}
+	
+	1236.1.23 = {
+		trait = ambitious
+		trait = chaste
+		trait = greedy
+	}
+	
+	1240.1.23 = {
+		trait = education_diplomacy_3
+	}
+}
+
+fedagesh_mogowai_11 = { # Count of Lekarut
+	name = "Anoku"
+	religion = mogowai
+	culture = fedagesh
+	
+	1221.7.19 = {
+		birth = yes
+	}
+}
+
+fedagesh_mogowai_12 = { # Asshole whose vassals all hate him
+	name = "Helore"
+	religion = mogowai
+	culture = fedagesh
+	sexuality = heterosexual
+	
+	diplomacy = 4
+	martial = 7
+	stewardship = 5
+	intrigue = 7
+	learning = 6
+	
+	1159.5.17 = {
+		birth = yes
+	}
+	1171.5.17 = {
+		trait = callous
+		trait = arrogant
+		trait = deceitful
+	}
+	1175.5.17 = {
+		trait = education_intrigue_3
+	}
+	1194.4.6 = {
+		death = {
+			death_reason = death_murder
+			killer = fedagesh_mogowai_13
+		}
+	}
+}
+
+fedagesh_mogowai_13 = { # Wife of above, hates him and eventually murders him omce rebellion breaks out
+	name = "Noriha"
+	religion = mogowai
+	culture = fedagesh
+	female = yes
+	sexuality = heterosexual
+	
+	diplomacy = 6
+	martial = 5
+	stewardship = 6
+	intrigue = 7
+	learning = 6
+	
+	1163.6.29 = {
+		birth = yes
+	}
+	1175.6.29 = {
+		trait = ambitious
+		trait = deceitful
+		trait = shy
+	}
+	1179.6.29 = {
+		trait = education_diplomacy_3
+	}
+	1180.1.12 = {
+		add_spouse = fedagesh_mogowai_12
+	}
+	1180.3.26 = {
+		# Lonely Note: Set to historical since this was set incorrectly before, replace with something more relevant if applicable (or remove this comment if not)
+		set_relation_nemesis = {
+			target = character:fedagesh_mogowai_13
+			reason = nemesis_historical
+		}
+	}
+	1195.2.4 = { # Gets killed in battle afterwards
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+fedagesh_mogowai_14 = { # Ruler of Gimma-Lekarut, ancestors used to stretch further north
+	name = "Haderi"
+	religion = mogowai
+	culture = fedagesh
+	sexuality = heterosexual
+	
+#	dynasty = dyn_damota_27
+	
+	diplomacy = 5
+	martial = 7
+	stewardship = 6
+	intrigue = 6
+	learning = 5
+	
+	1164.3.14 = {
+		birth = yes
+	}
+	1176.3.14 = {
+		trait = brave
+		trait = humble
+		trait = patient
+	}
+	1180.3.14 = {
+		trait = education_martial_2
+	}
+	1235.4.26 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}

@@ -1,0 +1,77 @@
+﻿#GOTHARNALMIC
+gotharnalmic_nattanan_1 = {
+	name = "Zaw_Lin"
+	dynasty = dyn_mertang
+	religion = "gotharnalmic"
+	culture = "nattanan"
+	learning = 4
+	martial = 1
+	diplomacy = 5
+	intrigue = 2
+	stewardship = 5
+	trait = education_learning_2
+	trait = gregarious
+	trait = lazy
+	trait = temperate
+	disallow_random_traits = yes
+
+	1220.8.23 = {
+		birth = yes
+	}
+}
+
+
+gotharnalmic_nattanan_2 = { # PLACEHOLDER CHAR FOR HISTORY
+	name = "Khin_Win"
+	religion = "gotharnalmic"
+	culture = "nattanan"
+	female = yes
+	martial = 10
+	intrigue = 8
+	trait = temperate
+
+
+	1227.11.14 = {
+		birth = yes
+	}
+}
+
+
+gotharnalmic_nattanan_3 = { # PLACEHOLDER CHAR FOR HISTORY
+	name = "Naing_Min"
+	religion = "gotharnalmic"
+	culture = "nattanan"
+	diplomacy = 10
+	stewardship = 2
+	trait = education_diplomacy_3
+	trait = brave
+
+	1231.1.03 = {
+		birth = yes
+	}
+
+}
+
+gotharnalmic_nattanan_4 = { # PLACEHOLDER CHAR FOR HISTORY
+	name = "Naing_Min"
+	religion = "gotharnalmic"
+	culture = "nattanan"
+
+	1210.4.28 = {
+		birth = yes
+	}
+
+}
+ 
+
+gotharnalmic_nattanan_5 = { # PLACEHOLDER CHAR FOR HISTORY
+	name = "Thanda_Su"
+	religion = "gotharnalmic"
+	culture = "nattanan"
+	female = yes
+
+	1219.4.28 = {
+		birth = yes
+	}
+
+}

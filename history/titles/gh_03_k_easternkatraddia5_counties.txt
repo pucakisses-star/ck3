@@ -1,0 +1,45 @@
+c_easternkatraddia95 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia104 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia96 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia101 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia91 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia100 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia98 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia93 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia92 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}

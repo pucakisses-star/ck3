@@ -1,0 +1,1322 @@
+﻿ee_1 = {
+	name = "Alyssa" #The Mess Express
+	dynasty = dyn_supporter_1
+	martial = 6
+	diplomacy = 8
+	intrigue = 2
+	stewardship = 5
+	female = yes
+	religion = "lifepath"
+	culture = "voyagen"
+	dna = alyssa
+	trait = patient
+	trait = temperate
+	trait = gregarious
+	trait = education_diplomacy_2
+	trait = way_of_knowledge_follower
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp1_02
+			#custom_headgear = no_headgear
+		}
+	}
+
+	1230.3.11 = {
+		birth = yes
+	}
+
+	1246.3.11 = {
+		trait = gh_historical_mystic_2
+	}
+}
+
+ee_2 = {
+	name = "Jaay" #Pink the Tyrant
+	dynasty = dyn_ee_2
+	martial = 8
+	diplomacy = 4
+	intrigue = 2
+	stewardship = 7
+	religion = "lifepath"
+	culture = "voyagen"
+	sexuality = bisexual
+        female = yes
+	dna = pink
+	trait = diligent
+	trait = sadistic
+	trait = impatient
+	trait = education_martial_3
+	trait = lunatic_1
+	trait = intellect_good_1
+	trait = organizer
+	trait = order_member
+	trait = way_of_swords_follower
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp2_iberian_christian_03
+			#custom_headgear = no_headgear
+			custom_beards = no_beard
+		}
+	}
+
+	1228.6.18 = {
+		birth = yes
+		effect = { add_character_flag = easteregg_baron }
+	}
+
+	1244.6.18 = {
+		trait = gh_historical_blademaster_2
+	}
+}
+
+ee_3 = {
+	name = "Lucarax" #Manezao
+	dynasty = dyn_ee_3
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+	sexuality = heterosexual
+	dna = manezao
+
+	martial = 5
+	diplomacy = 4
+	intrigue = 2
+	stewardship = 5
+	learning = 6
+		
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_07
+			custom_beards = mena_islamic_pointed_beard_03
+			#custom_headgear = no_headgear
+            #custom_gh_masks = male_empty
+           	#custom_gh_neck_accessories = male_empty
+			#custom_gh_hoods = hood_aversarian_down
+		}
+	}
+
+	1228.9.1 = {
+		birth = yes
+		trait = magic_good_2
+		trait = beauty_good_1
+	}
+
+	1240.1.1 = {
+		trait = calm
+		trait = compassionate
+		trait = cynical
+	}
+	
+	1242.2.16 = {
+		learn_language = language_amsari
+		learn_language = language_marcher
+		learn_language = language_thalite
+		learn_language = language_vhanavid
+		learn_language = language_redlander
+	}
+
+	1243.1.11 = {
+		give_nickname = nick_the_face_sculptor
+	}
+
+	1244.9.1 = {
+		trait = education_arcana_3
+		trait = journaller
+		trait = scholar
+		trait = gh_glass_smith_03
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+}
+
+ee_4 = {
+	name = "Anwoud" #Hola-man
+	dynasty = dyn_ee_4
+	religion = "lifepath"
+	culture = "urdermantern"
+	dna = holaman
+	
+	martial = 6
+	diplomacy = 3
+	intrigue = 3
+	stewardship = 2
+	learning = 7
+
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_03
+			#custom_headgear = no_headgear
+			custom_beards = no_beard
+		}
+	}
+
+	1227.1.1 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1239.1.1 = {
+		trait = wrathful
+		trait = lustful
+		trait = just
+	}
+
+	1243.1.1 = {
+		trait = education_learning_4
+		trait = rakish
+		trait = fornicator
+		trait = gh_historical_physician_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:silentspeak }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+}
+
+ee_5 = {
+	name = "Nicolas" #Wolwerine422
+	martial = 4
+	diplomacy = 3
+	intrigue = 2
+	stewardship = 6
+	learning = 8
+	religion = "lifepath"
+	culture = "voyagen"
+	sexuality = heterosexual
+	dna = wolwerine422
+	trait = content
+	trait = lazy
+	trait = just
+	trait = education_learning_3
+	trait = gh_historical_physician_1
+	trait = way_of_knowledge_follower
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_mena_03
+			#custom_headgear = no_headgear
+			custom_beards = no_beard
+		}
+	}
+
+	1232.1.1 = {
+		birth = yes
+	}
+}
+
+ee_6 = {
+	name = "Benjamine" #doodleSM
+	dynasty = dyn_ee_5
+	martial = 8
+	diplomacy = 2
+	intrigue = 7
+	stewardship = 2
+	learning = 2
+	religion = "lifepath"
+	culture = "voyagen"
+	sexuality = heterosexual
+	dna = doodleSM
+	trait = content
+	trait = honest
+	trait = wrathful
+	trait = education_martial_3
+	trait = holy_warrior
+	trait = gh_historical_blademaster_1
+	trait = way_of_nullification_follower
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_09
+			#custom_headgear = no_headgear
+			custom_beards = no_beard
+			##custom_gh_headgear = male_empty
+		}
+	}
+
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+ee_7 = {
+	name = "Kitt" #TBPineapple
+	dynasty = dyn_ee_6
+	martial = 5
+	diplomacy = 6
+	intrigue = 3
+	stewardship = 4
+	learning = 2
+	religion = "lifepath"
+	culture = "voyagen"
+	sexuality = heterosexual
+	dna = tbpineapple
+	trait = calm
+	trait = forgiving
+	trait = stubborn
+	trait = education_martial_3
+	trait = gh_historical_blademaster_1
+	trait = cautious_leader
+	trait = way_of_justice_follower
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_06
+			#custom_headgear = no_headgear
+			custom_beards = no_beard
+			#custom_gh_headgear = male_empty
+		}
+	}
+
+	1232.1.1 = {
+		birth = yes
+	}
+}
+
+ee_8 = {
+	name = "Richard" #Claystead
+	martial = 3
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 3
+	learning = 5
+	religion = "lifepath"
+	culture = "trustians"
+	sexuality = heterosexual
+	dna = claystead
+	trait = scholar
+	trait = education_learning_3
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_09
+			#custom_headgear = no_headgear
+			custom_beards = male_beard_fp1_02
+			#custom_gh_headgear = male_empty
+		}
+	}
+
+	trait = way_of_knowledge_follower
+
+	1228.1.1 = {
+		birth = yes
+	}
+
+	1228.1.11 = {
+		give_nickname = nick_of_the_claylands
+	}
+}
+
+ee_9 = {
+	name = "Goobegos" #Amazing_Goob
+	dna = amazing_goob
+	martial = 8
+	diplomacy = 6
+	intrigue = 2
+	stewardship = 4
+	learning = 3
+	religion = "lifepath"
+	culture = "voyagen"
+	sexuality = heterosexual
+	trait = arrogant
+	trait = craven
+	trait = calm
+	trait = intellect_bad_3
+	trait = education_diplomacy_1
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_02
+			#custom_headgear = no_headgear
+			custom_beards = male_beard_sub_saharan_02
+			#custom_gh_headgear = male_empty
+		}
+	}
+
+	1227.1.1 = {
+		birth = yes
+	}
+}
+
+ee_10 = {
+	name = "Mykelis" #Admiral Ackbar
+	dynasty = dyn_ee_7
+	dna = admiral_ackbar
+	martial = 7
+	diplomacy = 2
+	intrigue = 4
+	stewardship = 7
+	learning = 7
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+	sexuality = heterosexual
+	trait = lazy
+	trait = humble
+	trait = gregarious
+	trait = comfort_eater
+	trait = logistician
+	trait = education_diplomacy_2
+	trait = scholar
+	trait = deviant
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_09
+			#custom_headgear = no_headgear
+			custom_beards = no_beard
+			#custom_gh_headgear = male_empty
+		}
+	}
+
+	1231.7.12 = {
+		birth = yes
+	}
+	 1242.2.16 = {
+		learn_language = language_marcher
+	}
+}
+
+ee_11 = {
+	name = "Ammo" #ammoburger
+	dna = ammoburger
+	martial = 3
+	diplomacy = 2
+	intrigue = 4
+	stewardship = 11
+	learning = 7
+	religion = "lifepath"
+	culture = "voyagen"
+	sexuality = homosexual
+	trait = craven
+	trait = chaste
+	trait = forgiving
+	trait = intellect_bad_3
+	trait = humble
+	trait = education_stewardship_3
+	trait = beauty_good_3
+	trait = contrite
+	trait = way_of_coins_follower
+	trait = drunkard
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_09
+			#custom_headgear = no_headgear
+			custom_beards = no_beard
+			#custom_gh_headgear = male_empty
+		}
+	}
+
+	1227.1.1 = {
+		birth = yes
+	}
+}
+
+ee_12 = {
+	name = "Weiss" #festivity
+	dna = festivity
+	female = yes
+	martial = 3
+	diplomacy = 5
+	intrigue = 8
+	stewardship = 5
+	learning = 4
+	religion = "lifepath"
+	culture = "konijkmener"
+	sexuality = heterosexual
+	trait = sadistic
+	trait = arbitrary
+	trait = gregarious
+	trait = seducer
+	trait = education_intrigue_3
+	trait = beauty_good_3
+	trait = way_of_crowns_follower
+	trait = reclusive
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_northern_03
+			#custom_headgear = no_headgear
+			#custom_gh_headgear = male_empty
+		}
+	}
+
+
+	1232.1.1 = {
+		birth = yes
+	}
+}
+
+ee_13 = {
+	name = "Tony" #super7700
+	dna = super7700
+	dynasty = dyn_ee_8
+	religion = "lifepath"
+	culture = "voyagen"
+	sexuality = heterosexual
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 5
+	intrigue = 4
+	learning = 8
+	prowess = 3
+
+	trait = education_diplomacy_2
+	trait = shy
+	trait = craven
+	trait = just
+	trait = forgiving
+	trait = beauty_bad_1
+	trait = reclusive
+	trait = way_of_knowledge_follower
+
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_06
+			#custom_headgear = no_headgear
+			custom_beards = male_beard_western_07
+			#custom_gh_headgear = male_empty
+		}
+	}
+
+	1231.10.25 = {
+		birth = yes
+	}
+}
+
+ee_15 = {
+	name = "Mitchellfar" #Netgearghost
+	dna = netgear
+	dynasty = dyn_ee_9
+	martial = 4
+	diplomacy = 8
+	intrigue = 2
+	stewardship =6
+	religion = "vinderon"
+	culture = "amsari"
+	trait = ambitious
+	trait = lazy
+	trait = gregarious
+	trait = education_diplomacy_3
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_09
+			#custom_headgear = no_headgear
+			custom_beards = no_beard
+			#custom_gh_headgear = male_empty
+		}
+	}
+
+	1230.3.11 = {
+		birth = yes
+	}
+	1242.2.16 = {
+		learn_language = language_aversarian
+		learn_language = language_marcher
+	}
+}
+
+ee_16 = {
+	name = "Fabien" # Borrisnator
+	dna = borrisnator
+	religion = "lifepath"
+	culture = "voyagen"
+	dynasty = dyn_supporter_10
+	trait = compassionate
+	trait = content
+	trait = calm
+	trait = way_of_knowledge_follower
+	trait = education_stewardship_2
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_08
+			#custom_headgear = no_headgear
+			custom_beards = male_beard_mena_04
+			#custom_gh_headgear = male_empty
+		}
+	}
+
+	1231.1.1 = {
+		birth = yes
+	}
+}
+
+ee_17 = {
+	name = "Aidan" # aidan_eragonragnold
+	dna = aidan
+	religion = "kakarataki"
+	culture = "iyronisti"
+	dynasty = dyn_ee_10
+	trait = diligent
+	trait = content
+	trait = calm
+    trait = magic_good_3
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_byzantine_02
+            custom_gh_hoods = hood_aversarian_down
+            #custom_gh_neck_accessories = male_empty
+        	gh_clothes = male_clothes_robes_aversarian
+			custom_beards = male_beard_fp2_iberian_christian_01
+			#custom_gh_headgear = male_empty
+            #custom_headgear = male_headgear_special_spectacles_01
+		}
+	}
+
+	1231.1.1 = {
+		birth = yes
+	}
+        1240.9.1 = {
+		trait = education_arcana_3
+		trait = scholar
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:keepers_of_legends }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+        1250.4.5 = {
+		effect = {
+			set_relation_friend = character:karzarads_kakarataki_2
+		}
+	} 
+	    1251.5.16 = {
+		learn_language = language_karzarad
+	}
+        1253.1.2 = {
+		employer = karzarads_kakarataki_2
+		give_council_position = councillor_court_magi
+	}
+
+}
+
+ee_18 = { # ScionEol
+	name = "Iyol"
+	religion = "dahala"
+	culture = "banwagul"
+	dynasty = dyn_ee_11
+
+	dna = iyol
+	disallow_random_traits = yes
+
+	martial = 3
+	diplomacy = 3
+	intrigue = 3
+	stewardship = 3
+	learning = 3
+	prowess = 3
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_06
+			custom_beards = no_beard
+			#custom_headgear = no_headgear
+			#custom_gh_headgear = male_empty
+			gh_clothes = male_clothes_robes_generic
+			custom_clothes = male_clothes_secular_western_nudity_01
+			custom_gh_hoods = hood_generic_down
+			#custom_gh_neck_accessories = male_empty
+			#custom_gh_masks = male_empty
+			#custom_special = male_empty
+			custom_cloaks = male_cloak_fantasy_wam_wizzard_cloak_01
+			custom_legwear = male_legwear_secular_mena_common_01
+		}
+	}
+
+	1226.11.18 = {
+		birth = yes
+		effect = { add_character_flag = easteregg_baron }
+		trait = intellect_good_2
+		trait = magic_good_4
+		effect = { set_base_arcana = { AMOUNT = 3 } }
+	}
+
+	1238.1.1 = {
+		trait = ambitious
+		trait = lazy
+		trait = stubborn
+	}
+
+	1242.11.18 = {
+		trait = education_arcana_3
+		trait = journaller
+		trait = overseer
+		trait = lifestyle_jurist
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:lemad_dakta }
+			set_variable = { name = historical_magic_school_min_spells value = 3 }
+		}
+		give_nickname = nick_iyol_scion
+	}
+}
+
+ee_19 = { #BlueDiablo18
+	name = "Misha"
+	sexuality = heterosexual
+	disallow_random_traits = yes
+	dynasty = dyn_ee_12
+	martial = 5
+	diplomacy = 6
+	stewardship = 6
+	intrigue = 8
+	learning = 8
+	religion = amaghean_aagiokrata
+	culture = amaghean
+	dna = misha
+	trait = education_learning_4
+	trait = lifestyle_blademaster
+	trait = organizer
+	trait = logistician
+	trait = intellect_good_2
+	trait = physique_good_1
+	trait = magic_good_5
+	trait = diligent
+	trait = just
+	trait = honest
+
+	portrait_override = {
+        portrait_modifier_overrides = {
+            custom_hair = male_hair_western_09
+            custom_beards = no_beard
+        }
+    }
+
+	1227.5.5 = {
+		birth = yes
+	}
+
+	1243.5.5 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+}
+
+ee_nd_1 = {
+	name = "Trashius"
+	dynasty = dyn_supporter_2
+	martial = 1
+	diplomacy = 1
+	intrigue = 1
+	stewardship = 5
+	religion = "aversarinas_aagiokrata"
+	culture = "centralimperial"
+	dna = trashius
+	trait = lazy
+	trait = content
+	trait = fickle
+	trait = education_stewardship_2
+	trait = dull
+	trait = magic_good_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_09
+			custom_beards = no_beard
+		}
+	}
+
+	1226.3.11 = {
+		birth = yes
+		effect = { add_character_flag = easteregg_baron }
+	}
+}
+
+ee_nd_2 = {
+	name = "Renseb"
+	dynasty = dyn_supporter_3
+	religion = "hubarism"
+	culture = "mazunic"
+
+	dna = renseb
+
+	martial = 1
+	diplomacy = 1
+	intrigue = 1
+	stewardship = 5
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_07
+			custom_beards = male_beard_sub_saharan_03
+		}
+	}
+
+	1235.3.11 = {
+		birth = yes
+		trait = magic_good_6
+		trait = weak
+		effect = { add_character_flag = easteregg_baron }
+	}
+
+	1243.1.11 = {
+		give_nickname = nick_the_glass_renseb
+	}
+
+	1247.1.1 = {
+		trait = ambitious
+		trait = diligent
+		trait = lustful
+	}
+
+	1251.3.11 = {
+		trait = gh_glass_smith_01
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+ee_nd_3 = {
+	name = "Asteriodh"
+	martial = 6
+	diplomacy = 2
+	intrigue = 2
+	stewardship = 3
+	religion = "partic"
+	culture = "voluntic"
+	dna = asterix
+	trait = brave
+	trait = compassionate
+	trait = patient
+	trait = education_martial_1
+	trait = adventurer
+	trait = intellect_good_1
+	trait = strong
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_07
+			custom_beards = epe_male_beard_fp1_04
+		}
+	}
+
+	1220.3.11 = {
+		birth = yes
+	}
+	1230.1.1 = {
+		effect = {
+			set_relation_friend = character:ee_nd_4
+		}
+	}
+	1242.4.27 = {
+		employer = voluntic_partic_1
+	}
+}
+
+ee_nd_4 = {
+	name = "Obeliodh"
+	martial = 6
+	diplomacy = 1
+	intrigue = 1
+	stewardship = 1
+	religion = "partic"
+	culture = "voluntic"
+	dna = obelix
+	trait = brave
+	trait = compassionate
+	trait = gluttonous
+	trait = wrathful
+	trait = education_martial_1
+	trait = strong
+	trait = physique_good_3
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair=male_hair_turkic_04
+			custom_beards = epe_male_beard_fp1_04
+		}
+	}
+
+	1220.3.11 = {
+		birth = yes
+	}
+	1242.4.27 = {
+		employer = voluntic_partic_1
+	}
+}
+
+ee_nd_5 = {
+	name = "Edurand"
+	dynasty = dyn_ee_nd_5
+	religion = lifepath
+	culture = sceyfig_lighter
+	dna = robert
+
+	martial = 6
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 3
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp2_iberian_muslim_01
+			custom_beards = no_beard
+			custom_gh_hoods = hood_generic_down
+		}
+	}
+
+	1225.3.11 = {
+		birth = yes
+		trait = magic_good_2
+		trait = beauty_good_2
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+
+	1230.1.1 = {
+		effect = {
+			set_relation_friend = character:ee_nd_7
+		}
+	}
+
+	1237.1.1 = {
+		trait = stubborn
+		trait = compassionate
+		trait = patient
+	}
+
+	1241.3.11 = {
+		trait = education_diplomacy_1
+		trait = reclusive
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+			upgrade_stacking_modifier_by_level_effect = { MODIFIER = magic_life_extension_modifier TYPE = character LEVEL = 10 YEARS = -1  } 
+			upgrade_stacking_modifier_by_level_effect = { MODIFIER = magic_arcane_degeneration_modifier TYPE = character LEVEL = 1 YEARS = -1  } 
+			set_variable = {
+				name = life_extention_amount_raw
+				value = 10
+			}
+		}
+	}
+
+	1249.12.11 = {
+		employer = sceyfig_lighter_lifepath_1
+	}
+}
+
+ee_nd_6 = {
+	name = "Morbeonos"
+	dynasty = dyn_ee_nd_6
+	religion = "aversarinas_aagiokrata"
+	culture = "westernimperial"
+	dna = morbius
+
+	martial = 4
+	diplomacy = 2
+	intrigue = 5
+	stewardship = 3
+	learning = 5
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp2_iberian_muslim_03
+			custom_beards = male_beard_mena_04
+			custom_gh_hoods = hood_aversarian_down
+		}
+	}
+
+	1225.12.26 = {
+		birth = yes
+		trait = magic_good_2
+		trait = intellect_good_3
+	}
+
+	1237.1.1 = {
+		trait = stubborn
+		trait = just
+		trait = paranoid
+		trait = wrathful
+	}
+
+	1241.12.26 = {
+		trait = reclusive
+		trait = education_learning_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+			upgrade_stacking_modifier_by_level_effect = { MODIFIER = magic_life_extension_modifier TYPE = character LEVEL = 10 YEARS = -1  } 
+			upgrade_stacking_modifier_by_level_effect = { MODIFIER = magic_arcane_degeneration_modifier TYPE = character LEVEL = 1 YEARS = -1  } 
+			set_variable = {
+				name = life_extention_amount_raw
+				value = 10
+			}
+		}
+	}
+}
+
+ee_nd_7 = {
+	name = "William"
+	dynasty = dyn_ee_nd_3
+	martial = 6
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 6
+	religion = lifepath
+	culture = sceyfig_lighter
+	dna = william
+	trait = ambitious
+	trait = callous
+	trait = paranoid
+	trait = education_stewardship_2
+	trait = intellect_good_2
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_04
+			custom_beards = no_beard
+		}
+	}
+
+	1206.3.11 = {
+		birth = yes
+	}
+	1249.12.11 = {
+		employer = sceyfig_lighter_lifepath_1
+	}
+}
+
+ee_nd_8 = {
+	name = "Amynitas"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+
+	dna = amyntas
+
+	martial = 8
+	diplomacy = 6
+	intrigue = 2
+	stewardship = 8
+	learning = 20
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_05
+			custom_beards = male_beard_mena_04
+		}
+	}
+
+	1228.3.11 = {
+		birth = yes
+		trait = physique_bad_2
+		trait = intellect_good_2
+		trait = magic_good_4
+	}
+
+	1240.1.1 = {
+		trait = ambitious
+		trait = zealous
+		trait = arrogant
+	}
+
+	1244.3.11 = {
+		trait = shrewd
+		trait = education_learning_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+}
+
+ee_nd_9 = {
+	name = "Hancaes"
+	dynasty = dyn_ee_nd_4
+	martial = 6
+	diplomacy = 3
+	intrigue = 4
+	stewardship = 2
+		learning = 1
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	dna = hank
+	trait = diligent
+	trait = stubborn
+	trait = wrathful
+	trait = education_diplomacy_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_mena_01
+			custom_beards = no_beard
+		}
+	}
+
+	1213.3.11 = {
+		birth = yes
+	}
+	1253.4.27 = {
+		employer = apokiakas_aversarinas_aagiokratia_23
+	}
+}
+
+ee_nd_11 = {
+	name = "Eggiers"
+	dna = eggman
+	religion = "lifepath"
+	culture = "voyagen"
+	sexuality = asexual
+
+	diplomacy = 1
+	martial = 1
+	stewardship =1
+	intrigue = 1
+	learning = 8
+	prowess = 1
+
+	trait = education_learning_4
+	trait = arrogant
+	trait = wrathful
+	trait = arbitrary
+	trait = ambitious
+	trait = intellect_good_3
+	trait = beauty_bad_1
+	trait = lunatic_1
+	trait = way_of_knowledge_follower
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = no_hair
+			#custom_headgear = male_headgear_special_spectacles_01
+			custom_beards = epe_male_beard_fp1_04
+		}
+	}
+
+	1201.10.25 = {
+		birth = yes
+	}
+}
+
+ee_nd_12 = {
+	name = Sjreek # Canon, THE Shrek
+	dynasty = dyn_ee_nd_7
+	dna = shrek
+
+	martial = 7
+	diplomacy = 1
+	intrigue = 1
+	stewardship = 5
+	learning = 2
+	prowess = 10
+
+	religion = "lifepath"
+	culture = "konijkmener"
+	sexuality = heterosexual
+
+	trait = education_martial_2
+	trait = wrathful
+	trait = stubborn
+	trait = content
+	trait = reclusive
+	trait = reaver
+	trait = strong
+	trait = physique_good_2
+	trait = beauty_good_3
+
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_fp2_iberian_muslim_01
+		}
+	}
+
+	1224.1.1 = {
+		birth = yes
+	}
+        1230.1.1 = {
+		effect = {
+			set_relation_friend = character:carsavisians_lifepath_15
+		}
+	}
+        1232.2.16 = {
+		learn_language = language_marcher
+	}
+		1243.1.11 = {
+		give_nickname = nick_the_onion_knight
+	}
+	1250.1.1 = {
+		employer = carsavisians_lifepath_15
+	}
+}
+
+ee_nd_13 = {
+	name = "Bobelinox"
+	dynasty = dyn_ee_nd_4
+	martial = 6
+	diplomacy = 3
+	intrigue = 4
+	stewardship = 2
+	learning = 1
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	trait = compassionate
+	trait = patient
+	trait = content
+	trait = education_diplomacy_1
+	father = ee_nd_9
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = no_hair
+			custom_beards = no_beard
+		}
+	}
+
+	1243.3.11 = {
+		birth = yes
+	}
+}
+
+ee_nd_14 = {
+	name = "Jacques" 
+	dynasty = dyn_supporter_4
+	martial = 10
+	diplomacy = 4
+	intrigue = 2
+	stewardship = 7
+	learning = 10
+	religion = "harthahi"
+	culture = "etrandanexi"
+	dna = jacques
+	trait = diligent
+	trait = ambitious
+	trait = gregarious
+	trait = education_martial_2
+	trait = journaller
+	trait = adventurer
+	trait = organizer
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp2_iberian_muslim_01
+			#custom_headgear = male_headgear_special_spectacles_01
+			custom_beards = no_beard
+		}
+	}
+
+	1228.6.18 = {
+		birth = yes
+		effect = { add_character_flag = easteregg_baron }
+	}
+
+	1244.6.18 = {
+		trait = gh_historical_blademaster_2
+	}
+}
+
+ee_nd_15 = { #Victor Marcinelle
+	name = "Elpidira" 
+	dynasty = dyn_supporter_5
+	martial = 2
+	diplomacy = 10
+	intrigue = 4
+	stewardship = 7
+	learning = 10
+	religion = "aversarinas_aagiokrata"
+	culture = "practitioner"
+	dna = marcelle
+	female = yes
+	trait = diligent
+	trait = generous
+	trait = eccentric
+	trait = education_learning_2
+	trait = journaller
+
+	trait = magic_good_3
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair=female_hair_western_10
+			custom_beards=female_empty
+		}
+	}
+
+	1230.7.19 = {
+		birth = yes
+		effect = { set_base_arcana = { AMOUNT = 10 } }
+	}
+
+	1250.6.18 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 5 }
+		}
+	}
+}
+
+ee_nd_16 = { #Shrekoth-ur
+	name = "Mychalor" 
+	dynasty = dyn_supporter_6
+	martial = 6
+	diplomacy = 7
+	intrigue = 10
+	stewardship = 7
+	learning = 8
+	religion = "black_fraternity"
+	culture = "imperialislander"
+	dna = shrek
+	trait = arrogant
+	trait = ambitious
+	trait = calm
+	trait = education_arcana_2
+	trait = magic_good_4
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair=male_hair_byzantine_02
+			custom_beards=male_beard_fp2_iberian_christian_01
+		}
+	}
+
+	1230.6.18 = {
+		birth = yes
+		effect = { set_base_arcana = { AMOUNT = 13 } }
+	}
+
+	1244.6.18 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+}

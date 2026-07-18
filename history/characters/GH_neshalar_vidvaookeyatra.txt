@@ -1,0 +1,77 @@
+﻿neshalar_vidvaookeyatra_1 = { # childhood friend and longtime magi of Asojiva, was appointed to lead the Vidvakastilaya Dorajpor after Navad Javhad's death
+    name = "Pathai"
+    religion = "vidvaookeyatra"
+    culture = "neshalar"
+
+    sexuality = heterosexual
+
+    martial = 10
+    diplomacy = 8
+    stewardship = 8
+    intrigue = 5
+    learning = 11
+    prowess = 7
+
+    880.10.7 = {
+        birth = yes
+        trait = magic_good_6
+    }
+
+    892.1.1 = {
+        trait = trusting
+        trait = calm
+        trait = chaste
+    }
+
+    896.10.7 = {
+        effect = { set_base_arcana = { AMOUNT = 10 } }
+        trait = education_arcana_4
+        trait = scholar
+        trait = gh_historical_school
+    }
+
+    962.3.12 = {
+        death = {
+            death_reason = death_old_age
+        }
+    }
+}
+
+neshalar_vidvaookeyatra_2 = { # Pathai's successor as chief scholar of Dorajpor
+    name = "Satyat"
+    religion = "vidvaookeyatra"
+    culture = "neshalar"
+
+    sexuality = heterosexual
+
+    martial = 4
+    diplomacy = 3
+    stewardship = 6
+    intrigue = 9
+    learning = 5
+    prowess = 5
+
+    925.8.13 = {
+        birth = yes
+        trait = magic_good_5
+    }
+
+    937.1.1 = {
+        trait = just
+        trait = calm
+        trait = temperate
+    }
+
+    941.8.13 = {
+        effect = { set_base_arcana = { AMOUNT = 7 } }
+        trait = education_arcana_3
+        trait = scholar
+        trait = gh_historical_school
+    }
+
+    992.10.27 = {
+        death = {
+            death_reason = death_old_age
+        }
+    }
+}

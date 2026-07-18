@@ -1,0 +1,42 @@
+﻿aersodiaxian_islander_militant_cliques_1 = {
+    name = "Bosporios"
+    religion = militant_cliques
+    culture = aersodiaxian_islander
+    1220.6.19 = {
+        birth = yes
+    }
+    1232.6.19 = {
+        trait = arbitrary
+        trait = fickle
+        trait = trusting
+    }
+    1236.6.19 = {
+        trait = education_martial_2
+    }
+}
+
+aersodiaxian_islander_militant_cliques_2 = {
+    name = "Begrosthea"
+    female = yes
+    religion = militant_cliques
+    culture = aersodiaxian_islander
+    trait = physique_good_1
+    1234.2.18 = {
+        birth = yes
+        trait = magic_good_1
+    }
+    1246.2.18 = {
+        trait = brave
+        trait = impatient
+        trait = diligent
+    }
+    1250.2.18 = {
+        trait = education_martial_3
+        trait = gh_historical_school
+        effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+        trait = unyielding_defender
+    }
+}

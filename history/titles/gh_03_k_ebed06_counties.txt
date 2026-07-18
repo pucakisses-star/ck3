@@ -1,0 +1,52 @@
+c_ebed47 = {
+	1238.6.7 = {
+		liege = 0
+		government = migratory_government
+		holder = utyalid_wardenism_12
+		change_development_level = 2
+	}
+}
+c_ebed48 = {
+	1200.3.1 = {
+		holder = tagrodar_ahridar_7
+	}
+	1212.10.28 = {
+		holder = tagrodar_ahridar_6
+	}
+}
+
+c_ebed50 = {
+	1238.6.8 = {
+		liege = 0
+		government = tribal_government
+		holder = tagrodar_ahridar_5
+		change_development_level = 5
+	}
+}
+c_ebed52 = {
+	1206.3.1 = {
+		holder = tagrodar_ahridar_3
+		government = tribal_government
+		change_development_level = 2
+	}
+}
+c_ebed67 = {
+	1225.4.14 = {
+		liege = 0
+		government = migratory_government
+		holder = utyalid_wardenism_20
+		change_development_level = 2
+	}
+}
+c_ebed68 = {
+	1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}
+c_new_sarradon_county_0001 = {
+	1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}

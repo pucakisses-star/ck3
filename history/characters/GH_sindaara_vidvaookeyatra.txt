@@ -1,0 +1,610 @@
+﻿sindaara_vidvaookeyatra_1 = {
+	name = "Naivarman"
+	religion = "vidvaookeyatra"
+	culture = "sindaara"
+	dynasty = "dyn_sheytaran_2"
+
+	disallow_random_traits = yes
+	sexuality = homosexual
+
+	mother = sindaara_vidvaookeyatra_4
+	father = sindaara_vidvaookeyatra_5
+
+	intrigue = 0
+	learning = 5
+	diplomacy = 5
+
+	1237.2.6 = {
+		birth = yes
+		trait = magic_good_1
+		trait = intellect_good_1
+		effect = {
+			add_character_flag = has_scripted_appearance
+			add_character_flag = dont_generate_family
+			dynasty = { add_dynasty_prestige_level = 1 }
+		}
+	}
+
+	1240.12.6 = {
+		add_matrilineal_spouse = lainar_vidvaookeyatra_1
+		set_relation_friend = character:lainar_vidvaookeyatra_1
+	}
+
+	1249.2.6 = {
+		trait = eccentric
+		trait = compassionate
+		trait = trusting	
+	}
+
+	1253.2.6 = {
+		trait = education_diplomacy_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:empiricists }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+}
+
+sindaara_vidvaookeyatra_2 = {
+	name = "Jatiga"
+	religion = "vidvaookeyatra"
+	culture = "sindaara"
+	dynasty_house = "house_haratali"
+
+	father = sindaara_vidvaookeyatra_20
+
+	trait = ambitious
+	trait = callous
+	trait = diligent
+
+	1210.8.29 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+}
+
+sindaara_vidvaookeyatra_3 = {
+	name = "Goggiraja"
+	religion = "vidvaookeyatra"
+	culture = "sindaara"
+
+	diplomacy = 0
+	stewardship = 0
+	learning = 0
+	martial = 0
+	intrigue = 5
+
+	trait = intellect_bad_2
+
+	trait = vengeful
+	trait = arrogant
+	trait = ambitious
+
+	trait = education_intrigue_4
+
+	1231.8.8 = {
+		birth = yes
+	}
+	1250.9.6 = {
+		give_nickname = nick_the_worm_goggiraja
+		set_relation_rival = character:sindaara_vidvaookeyatra_1
+		add_opinion = {
+			target = character:sindaara_vidvaookeyatra_1
+			modifier = gh_family_reputation
+			opinion = -75
+		}
+	}
+}
+
+sindaara_vidvaookeyatra_4 = {
+	name = "Sondemevi"
+	religion = "vidvaookeyatra"
+	culture = "sindaara"
+
+	female = yes
+
+	intrigue = 8
+	diplomacy = 6
+
+	trait = deceitful
+	trait = compassionate
+	trait = vengeful
+
+	trait = intellect_good_2
+	trait = education_intrigue_4
+
+	1213.8.8 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	1234.6.9 = {
+		add_spouse = sindaara_vidvaookeyatra_5
+	}
+
+	1245.9.4 = {
+		give_nickname = nick_the_snake_slayer
+	}
+
+	1253.11.2 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+sindaara_vidvaookeyatra_5 = {
+	name = "Jandaman"
+	religion = "vidvaookeyatra"
+	culture = "sindaara"
+	dynasty = "dyn_sheytaran_2"
+
+	father = sindaara_vidvaookeyatra_6
+
+	trait = craven
+	trait = compassionate
+	trait = humble
+
+	1208.5.4 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+
+	1234.6.9 = {
+		add_spouse = sindaara_vidvaookeyatra_4
+	}
+
+	1235.9.5 = {
+		trait = depressed_1
+	}
+
+	1238.11.2 = {
+		death = {
+			death_reason = death_stress
+		}
+	}
+}
+
+sindaara_vidvaookeyatra_6 = {
+	name = "Kshetra"
+	religion = "vidvaookeyatra"
+	culture = "sindaara"
+	dynasty = "dyn_sheytaran_2"
+
+	trait = ambitious
+	trait = brave
+	trait = greedy
+
+	father = sindaara_vidvaookeyatra_10
+
+	1181.5.4 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+
+	1230.11.2 = {
+		death = {
+			death_reason = death_mysterious
+			killer = sindaara_vidvaookeyatra_4
+		}
+	}
+}
+
+sindaara_vidvaookeyatra_7 = {
+	name = "Prashanti"
+	religion = "vidvaookeyatra"
+	culture = "sindaara"
+	dynasty = "dyn_sheytaran_2"
+
+	father = sindaara_vidvaookeyatra_6
+
+	trait = forgiving
+	trait = shy
+	trait = lazy
+
+	1202.6.5 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+
+	1231.2.4 = {
+		death = {
+			death_reason = death_defenestration
+			killer = sindaara_vidvaookeyatra_8
+		}
+	}
+}
+
+sindaara_vidvaookeyatra_8 = {
+	name = "Nuthala"
+	religion = "vidvaookeyatra"
+	culture = "sindaara"
+	dynasty = "dyn_sheytaran_2"
+
+	father = sindaara_vidvaookeyatra_6
+
+	female = yes
+
+	trait = wrathful
+	trait = brave
+	trait = sadistic
+
+	trait = education_martial_3
+	trait = twin
+	trait = physique_good_2
+
+	1204.8.2 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+
+	1231.12.1 = {
+		death = {
+			death_reason = death_ritual_mistake
+			killer = sindaara_vidvaookeyatra_20
+		}
+	}
+}
+
+sindaara_vidvaookeyatra_9 = {
+	name = "Nadembar"
+	religion = "vidvaookeyatra"
+	culture = "sindaara"
+	dynasty = "dyn_sheytaran_2"
+
+	father = sindaara_vidvaookeyatra_6
+
+	trait = deceitful
+	trait = arrogant
+	trait = sadistic
+
+	trait = education_intrigue_3
+	trait = twin
+
+	1204.8.2 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+
+	1231.12.6 = {
+		death = {
+			death_reason = death_suicide
+		}
+	}
+}
+
+sindaara_vidvaookeyatra_10 = {
+	name = "Kelhana"
+	religion = "vidvaookeyatra"
+	culture = "sindaara"
+	dynasty = "dyn_sheytaran_2"
+
+	father = sindaara_vidvaookeyatra_13
+
+	1145.5.4 = {
+		birth = yes
+		trait = magic_good_2
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+
+	1161.5.4 = {
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:empiricists }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sindaara_vidvaookeyatra_11 = {
+	name = "Kvarma"
+	religion = "vidvaookeyatra"
+	culture = "sindaara"
+	dynasty = "dyn_sheytaran_2"
+
+	father = sindaara_vidvaookeyatra_10
+
+	1167.7.6 = {
+		birth = yes
+		trait = magic_good_1
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+
+	1183.7.6 = {
+		trait = education_martial_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:empiricists }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sindaara_vidvaookeyatra_12 = {
+	name = "Karnadevi"
+	religion = "vidvaookeyatra"
+	culture = "sindaara"
+	dynasty = "dyn_sheytaran_2"
+	female = yes
+
+	father = sindaara_vidvaookeyatra_10
+
+	1171.6.2 = {
+		birth = yes
+		trait = magic_good_1
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+
+	1187.6.2 = {
+		trait = education_diplomacy_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:empiricists }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sindaara_vidvaookeyatra_13 = {
+	name = "Avasara"
+	religion = "vidvaookeyatra"
+	culture = "sindaara"
+	dynasty = "dyn_sheytaran_2"
+
+	father = sindaara_vidvaookeyatra_14
+
+	1115.5.4 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+
+	1166.11.5 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+sindaara_vidvaookeyatra_14 = {
+	name = "Vapyata"
+	religion = "vidvaookeyatra"
+	culture = "sindaara"
+	dynasty = "dyn_sheytaran_2"
+
+	1096.1.4 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+
+	1127.11.5 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+sindaara_vidvaookeyatra_15 = {
+	name = "Prashanti"
+	religion = "vidvaookeyatra"
+	culture = "sindaara"
+	dynasty_house = "house_haratali"
+
+	father = sindaara_vidvaookeyatra_14
+
+	1119.1.19 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+
+	1199.11.5 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+sindaara_vidvaookeyatra_16 = {
+	name = "Chandra"
+	religion = "vidvaookeyatra"
+	culture = "sindaara"
+	dynasty_house = "house_haratali"
+
+	father = sindaara_vidvaookeyatra_14
+
+	1119.1.19 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+
+	1199.11.5 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+sindaara_vidvaookeyatra_17 = {
+	name = "Naivarman"
+	religion = "vidvaookeyatra"
+	culture = "sindaara"
+	dynasty_house = "house_haratali"
+
+	father = sindaara_vidvaookeyatra_16
+
+	1146.1.19 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sindaara_vidvaookeyatra_18 = {
+	name = "Indrama"
+	religion = "vidvaookeyatra"
+	culture = "sindaara"
+	dynasty_house = "house_haratali"
+
+	father = sindaara_vidvaookeyatra_17
+
+	1164.5.22 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+
+	1174.6.11 = {
+		add_spouse = sindaara_vidvaookeyatra_19
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sindaara_vidvaookeyatra_19 = {
+	name = "Mahidevi"
+	religion = "vidvaookeyatra"
+	culture = "sindaara"
+	dynasty = "dyn_sheytaran_2"
+
+	father = sindaara_vidvaookeyatra_10
+
+	female = yes
+
+	1164.7.12 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+
+	1174.6.11 = {
+		add_spouse = sindaara_vidvaookeyatra_18
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sindaara_vidvaookeyatra_20 = {
+	name = "Yedu"
+	religion = "vidvaookeyatra"
+	culture = "sindaara"
+	dynasty_house = "house_haratali"
+
+	father = sindaara_vidvaookeyatra_18
+	mother = sindaara_vidvaookeyatra_19
+
+	1180.5.22 = {
+		birth = yes
+		trait = magic_good_3
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+
+	1196.5.22 = {
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:empiricists }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1231.12.1 = {
+		death = {
+			death_reason = death_ritual_mistake
+		}
+	}
+}
+
+sindaara_vidvaookeyatra_21 = {
+	name = "Vijay"
+	religion = "vidvaookeyatra"
+	culture = "sindaara"
+	dynasty_house = "house_haratali"
+
+	father = sindaara_vidvaookeyatra_18
+	mother = sindaara_vidvaookeyatra_19
+
+	1183.5.22 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+
+	1231.12.1 = {
+		death = {
+			death_reason = death_ritual_mistake
+			killer = sindaara_vidvaookeyatra_20
+		}
+	}
+}

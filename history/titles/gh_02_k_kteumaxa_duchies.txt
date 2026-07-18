@@ -1,0 +1,12 @@
+﻿d_mochlurion = {
+	1254.1.1 = {
+		liege = k_kalliados
+		holder = easternimperial_aversarinas_aagiokrata_4
+	}
+}
+
+d_pavios_isles = {
+	1230.1.1 = {
+		holder = yevamarai_aversarinas_aagiokrata_1
+	}
+}

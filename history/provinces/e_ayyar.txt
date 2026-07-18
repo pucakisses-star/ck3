@@ -1,0 +1,538 @@
+316 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+318 = {
+	religion = sheharddi
+	culture = leriseb
+	holding = castle_holding
+}
+
+319 = {
+	holding = none
+}
+
+320 = {
+	holding = none
+}
+
+321 = {
+	holding = none
+}
+
+322 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+324 = {
+	holding = city_holding
+}
+
+326 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = ruin_holding
+	500.1.1 = {
+		special_building = 01_wizzhaod
+	}
+	1200.3.1 = {
+		special_building = 02_wizzhaod
+	}
+}
+
+327 = {
+	holding = none
+}
+
+328 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+329 = {
+	holding = none
+}
+
+331 = {
+	holding = none
+}
+
+341 = {
+	holding = none
+}
+
+342 = {
+	holding = none
+}
+
+344 = {
+	culture = qahsarides
+	religion = anaanides
+	holding = tribal_holding
+}
+
+346 = {
+	holding = none
+}
+
+348 = {
+	culture = ashital
+	religion = sheharddi
+	holding = castle_holding
+}
+
+349 = {
+	holding = church_holding
+}
+
+350 = {
+	holding = none
+}
+
+393 = {
+	holding = none
+}
+
+352 = {
+	holding = none
+}
+
+354 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+356 = {
+	culture = qahsarides
+	religion = anaanides
+	holding = tribal_holding
+}
+
+357 = {
+	holding = none
+}
+
+361 = {
+	culture = leriseb
+	religion = sheharddi
+	holding = castle_holding
+}
+
+
+362 = {
+	holding = city_holding
+}
+
+363 = {
+	culture = leriseb
+	religion = sheharddi
+	holding = castle_holding
+}
+
+365 = {
+	holding = church_holding
+}
+
+366 = {
+	holding = none
+}
+
+368 = {
+	culture = ashital
+	religion = sheharddi
+	holding = castle_holding
+}
+
+369 = {
+	holding = city_holding
+}
+
+370 = {
+	culture = ashital
+	religion = sheharddi
+	holding = metro_holding
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+}
+
+371 = {
+	holding = none
+}
+
+372 = {
+	culture = ashital
+	religion = sheharddi
+	holding = castle_holding
+}
+
+373 = {
+	holding = city_holding
+}
+
+374 = {
+	culture = ashital
+	religion = sheharddi
+	holding = castle_holding
+}
+
+375 = {
+	holding = none
+}
+
+376 = {
+	holding = city_holding
+}
+
+377 = {
+	holding = church_holding
+}
+
+378 = {
+	holding = city_holding
+}
+
+379 = {
+	holding = none
+}
+
+381 = {
+	culture = leriseb
+	religion = ruidari
+	holding = castle_holding
+}
+
+382 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = ruin_holding
+}
+
+383 = {
+	holding = city_holding
+}
+
+384 = {
+	culture = ashital
+	religion = sheharddi
+	holding = castle_holding
+}
+
+385 = {
+	holding = none
+}
+
+386 = {
+	holding = city_holding
+}
+
+387 = {
+	culture = leriseb
+	religion = sheharddi
+	holding = castle_holding
+}
+
+388 = {
+	holding = church_holding
+}
+
+389 = {
+	holding = city_holding
+}
+
+392 = {
+	holding = none
+}
+
+395 = {
+	culture = ashital
+	religion = sheharddi
+	holding = metro_holding
+
+	430.1.1 = {
+	special_building = 01_dalath_analoth
+	}
+}
+
+396 = {
+	culture = leriseb
+	religion = ruidari
+	holding = castle_holding
+	1200.1.1 = {
+		special_building = 01_zakran_mines
+	}
+}
+
+398 = {
+	holding = metro_holding
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+}
+
+399 = {
+	culture = mirzana_jahar
+	religion = ruidari
+	holding = castle_holding
+}
+
+400 = {
+	holding = city_holding
+}
+
+403 = {
+	holding = none
+}
+
+407 = {
+	holding = church_holding
+}
+
+
+409 = {
+	culture = mirzana_jahar
+	religion = ruidari
+	holding = castle_holding
+}
+
+410 = {
+	holding = church_holding
+}
+
+
+413 = {
+	culture = auzangeb
+	religion = ruidari
+	holding = castle_holding
+}
+
+414 = {
+	holding = none
+}
+
+
+416 = {
+	holding = church_holding
+}
+
+
+
+418 = {
+	culture = babura
+	religion = ruidari
+	holding = castle_holding
+}
+
+
+420 = {
+	holding = city_holding
+}
+
+
+423 = {
+	holding = none
+}
+
+426 = {
+	culture = qahsarides
+	religion = harfi
+	holding = castle_holding
+}
+
+428 = {
+	culture = auzangeb
+	religion = ruidari
+	holding = castle_holding
+}
+
+
+
+
+430 = {
+	culture = auzangeb
+	religion = ruidari
+	holding = castle_holding
+}
+
+
+432 = {
+	holding = city_holding
+}
+
+
+
+433 = {
+	culture = auzangeb
+	religion = ruidari
+	holding = castle_holding
+}
+
+
+
+
+
+
+436 = {
+	culture = babura
+	religion = ruidari
+	holding = castle_holding
+}
+
+
+438 = {
+	culture = babura
+	religion = ruidari
+	holding = castle_holding
+}
+
+
+
+
+440 = {
+	holding = church_holding
+}
+
+444 = {
+	culture = jangkar
+	religion = ruidari
+	holding = castle_holding
+}
+
+445 = {
+	culture = babura
+	religion = ruidari
+	holding = castle_holding
+}
+
+
+
+447 = {
+	holding = church_holding
+}
+
+448 = {
+	culture = auzangeb
+	religion = ruidari
+	holding = castle_holding
+}
+
+
+449 = {
+	holding = city_holding
+}
+
+451 = {
+	culture = jangkar
+	religion = ruidari
+	holding = castle_holding
+}
+
+454 = {
+	culture = jangkar
+	religion = ruidari
+	holding = castle_holding
+}
+
+456 = {
+	holding = none
+}
+
+
+
+458 = {
+	culture = amuaad
+	religion = kathsiti
+	holding = castle_holding
+}
+
+
+459 = {
+	holding = city_holding
+}
+
+
+461 = {
+	culture = amuaad
+	religion = kathsiti
+	holding = castle_holding
+}
+
+1785 = {
+	culture = qahsarides
+	religion = anaanides
+	holding = tribal_holding
+}
+
+1786 = {
+	holding = none
+}
+
+1926 = {
+	culture = auzangeb
+	religion = ruidari
+	holding = metro_holding
+	998.4.26 = {
+		special_building = 01_lionspalace
+	}
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}	
+}
+
+2030 = {
+	holding = city_holding
+}
+
+2035 = {
+	holding = city_holding
+}
+
+2156 = {
+	holding = church_holding
+}
+
+3213 = {
+	culture = ashital
+	religion = sheharddi
+	holding = metro_holding
+	
+	980.1.1 = {
+	special_building = 01_malah_enlevettah
+	}
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+}
+
+3264 = {
+	holding = city_holding
+}
+
+3281 = {
+	holding = city_holding
+}
+
+
+5382 = {
+	culture = babura
+	religion = ruidari
+	holding = castle_holding
+}
+
+5386 = {
+	holding = none
+}

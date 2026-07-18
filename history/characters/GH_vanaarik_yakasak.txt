@@ -1,0 +1,504 @@
+﻿vanaarik_yakasak_1 = {
+	name = "Nakamui"
+	religion = "yakasak"
+	culture = "vanaarik"
+	dynasty = "dyn_sheytaran_4"
+	sexuality = heterosexual
+
+	dna = vanaarik_yakasak_1
+
+	female = yes
+
+	trait = lunatic_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_western_cover
+		}
+	}
+
+	1192.5.7 = {
+		birth = yes
+	}
+
+	1208.5.7 = {
+		trait = lustful
+		trait = greedy
+		trait = brave
+		trait = education_martial_4
+	}
+
+	1125.6.2 = {
+		give_nickname = nick_the_mad_blade
+		trait = seducer
+		trait = gh_historical_blademaster_3
+	}
+
+	1234.3.2 = {
+		death = {
+			death_reason = death_mysterious
+			killer = sindaara_vidvaookeyatra_4
+		}
+	}
+}
+
+vanaarik_yakasak_2 = {
+	name = "Kanakui"
+	religion = "yakasak"
+	culture = "vanaarik"
+
+	dna = vanaarik_yakasak_2
+
+	father = voyagen_lifepath_18
+	mother = vanaarik_yakasak_1
+
+	trait = bastard
+	trait = lunatic_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_fp2_iberian_muslim_01
+			custom_hair = male_hair_western_09
+		}
+	}
+
+	1225.7.4 = {
+		birth = yes
+	}
+
+	1241.7.4 = {
+		trait = arbitrary
+		trait = greedy
+		trait = ambitious
+		trait = education_martial_3
+		trait = shrewd
+	}
+
+	1247.6.5 = {
+		give_nickname = nick_gutterblade
+	}
+
+	1283.12.27 = {
+		death = { death_reason = death_execution killer = tasurmad_haradar_14 }
+	}
+}
+
+vanaarik_yakasak_3 = {
+	name = "Luamani"
+	religion = "yakasak"
+	culture = "vanaarik"
+	dynasty = "dyn_sheytaran_4"
+	female = yes
+
+	intrigue = 6
+
+	father = lainar_vidvaookeyatra_8
+	mother = vanaarik_yakasak_1
+
+	trait = stuttering
+
+	trait = bastard
+
+	1230.3.6 = {
+		birth = yes
+	}
+
+	1246.3.6 = {
+		trait = ambitious
+		trait = deceitful
+		trait = patient
+		trait = education_intrigue_3
+		give_nickname = nick_mutterblade
+	}
+
+	1253.5.9 = {
+		set_relation_rival = character:vanaarik_yakasak_2
+	}
+
+	1255.3.28 = {
+	    add_matrilineal_spouse = vanaarik_yakasak_18
+	}
+
+	1294.11.26 = {
+	    death = { death_reason = death_mysterious }
+	}
+}
+
+vanaarik_yakasak_4 = {
+	name = "Gayashan"
+	culture = "vanaarik"
+	religion = "yakasak"
+	dynasty = dyn_pirate_coast_2
+	1184.4.3 = {
+		birth = yes
+		trait = gh_peasant_birth
+	}
+	1200.4.3 = {
+		trait = education_stewardship_3
+		trait = ambitious
+		trait = paranoid
+		trait = callous
+		trait = logistician
+	}
+	1242.7.6 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+vanaarik_yakasak_5 = {
+	name = "Gayashan"
+	culture = "vanaarik"
+	religion = "yakasak"
+	dynasty = dyn_pirate_coast_2
+	father = vanaarik_yakasak_4
+
+	1227.11.1 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 1 }
+		}
+	}
+	1236.1.1 = {
+		trait = content
+		trait = compassionate
+		trait = gregarious
+		trait = education_learning_2
+		trait = lifestyle_herbalist
+	}
+
+	1262.9.13 = {
+	    add_spouse = vanaarik_yakasak_10
+	}
+
+	1272.5.8 = {
+	    death = { death_reason = death_battle }
+	}
+}
+
+vanaarik_yakasak_6 = {
+	name = "Sujee"
+	religion = "yakasak"
+	culture = "vanaarik"
+
+	1219.7.7 = {
+		birth = yes
+	}
+}
+
+vanaarik_yakasak_7 = {
+	name = "Madampe"
+	religion = "yakasak"
+	culture = "vanaarik"
+
+	1222.9.9 = {
+		birth = yes
+	}
+}
+
+vanaarik_yakasak_8 = {
+	name = "Toba"
+	religion = "yakasak"
+	culture = "vanaarik"
+
+	1183.1.7 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1195.1.1 = {
+		trait = wrathful
+		trait = callous
+	}
+
+	1199.1.7 = {
+		trait = education_intrigue_2
+		give_nickname = nick_blackrock
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1219.4.1 = {
+		death = {
+			death_reason = death_duel
+			killer = watumimba_yakasak_1
+		}
+	}
+}
+
+vanaarik_yakasak_9 = {
+	name = "Maloani"
+	religion = "yakasak"
+	culture = "vanaarik"
+	dynasty = "dyn_sheytaran_4"
+	mother = vanaarik_yakasak_1
+
+	trait = twin
+	trait = physique_good_1
+
+	trait = bastard
+
+	1232.9.8 = {
+		birth = yes
+	}
+
+	1248.9.8 = {
+		trait = paranoid
+		trait = arrogant
+		trait = wrathful
+		trait = education_martial_2
+	}
+
+	1253.5.9 = {
+		employer = vanaarik_yakasak_3
+	}
+
+	1292.5.28 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+vanaarik_yakasak_10 = {
+	name = "Inaina"
+	religion = "yakasak"
+	culture = "vanaarik"
+	dynasty = "dyn_sheytaran_4"
+	female = yes
+	mother = vanaarik_yakasak_1
+
+	trait = twin
+	trait = physique_good_1
+
+	trait = bastard
+
+	1232.9.8 = {
+		birth = yes
+	}
+
+	1248.9.8 = {
+		trait = trusting
+		trait = humble
+		trait = brave
+		trait = education_martial_3
+	}
+
+	1248.5.9 = {
+		employer = vanaarik_yakasak_2
+	}
+
+	1292.5.28 = {
+	    death = { death_reason = death_coup_successful }
+	}
+}
+
+vanaarik_yakasak_12 = {
+    name = "Gayashan" 
+
+    dynasty = dyn_pirate_coast_2
+    religion = yakasak
+    culture = vanaarik
+
+    father = vanaarik_yakasak_5
+    mother = vanaarik_yakasak_10
+
+    sexuality = heterosexual
+
+    trait = temperate
+    trait = impatient
+    trait = lazy
+
+    1263.11.14 = {
+        birth = yes
+    }
+
+    1285.4.1 = {
+        add_spouse = vanaarik_yakasak_13
+    }
+
+    1292.5.28 = {
+    	death = { death_reason = death_coup_successful }
+    }
+}
+
+vanaarik_yakasak_13 = {
+    name = "Akapa" 
+    female = yes
+
+    religion = yakasak
+    culture = vanaarik
+
+    sexuality = heterosexual
+
+    trait = lazy
+    trait = generous
+    trait = forgiving
+
+    1268.5.28 = {
+        birth = yes
+    }
+
+    1292.5.28 = {
+    	death = { death_reason = death_coup_successful }
+    }
+}
+
+vanaarik_yakasak_14 = {
+    name = "Masanda" 
+
+    dynasty = dyn_pirate_coast_2
+    religion = yakasak
+    culture = vanaarik
+
+    father = vanaarik_yakasak_12
+    mother = vanaarik_yakasak_13
+
+    sexuality = heterosexual
+
+    1285.5.13 = {
+        birth = yes
+    }
+}
+
+vanaarik_yakasak_16 = {
+    name = "Gayashan" 
+
+    dynasty = dyn_pirate_coast_2
+    religion = yakasak
+    culture = vanaarik
+
+    father = vanaarik_yakasak_12
+    mother = vanaarik_yakasak_13
+
+    sexuality = heterosexual
+
+    trait = generous
+
+    1288.1.26 = {
+        birth = yes
+    }
+}
+
+vanaarik_yakasak_17 = {
+    name = "Lakani" 
+
+    dynasty = dyn_pirate_coast_2
+    religion = yakasak
+    culture = vanaarik
+
+    father = vanaarik_yakasak_12
+    mother = vanaarik_yakasak_13
+
+    sexuality = heterosexual
+
+    trait = trusting
+
+    1290.9.1 = {
+        birth = yes
+    }
+}
+
+vanaarik_yakasak_18 = {
+    name = "Apiki" 
+
+    religion = yakasak
+    culture = vanaarik
+
+    sexuality = heterosexual
+
+    trait = forgiving
+    trait = stubborn
+    trait = ambitious
+
+    1238.3.12 = {
+        birth = yes
+    }
+
+    1295.8.26 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+vanaarik_yakasak_19 = {
+    name = "Apiki" 
+
+    dynasty = dyn_sheytaran_4
+    religion = yakasak
+    culture = vanaarik
+
+    mother = vanaarik_yakasak_3
+    father = vanaarik_yakasak_18
+
+    sexuality = heterosexual
+
+    trait = ambitious
+    trait = patient
+    trait = callous
+
+    1258.1.19 = {
+        birth = yes
+    }
+
+    1279.1.3 = {
+        add_spouse = vanaarik_yakasak_20
+    }
+}
+
+vanaarik_yakasak_20 = {
+    name = "Akinaha" 
+    female = yes
+
+    religion = yakasak
+    culture = vanaarik
+
+    sexuality = heterosexual
+
+    trait = diligent
+    trait = vengeful
+    trait = humble
+
+    1262.10.12 = {
+        birth = yes
+    }
+
+    1297.11.19 = {
+        death = { death_reason = death_smallpox }
+    }
+}
+
+vanaarik_yakasak_21 = {
+    name = "Keoni" 
+    female = yes
+
+    religion = yakasak
+    culture = vanaarik
+
+    father = vanaarik_yakasak_19
+    mother = vanaarik_yakasak_20
+
+    sexuality = heterosexual
+
+    1286.4.1 = {
+        birth = yes
+    }
+}
+
+vanaarik_yakasak_22 = {
+    name = "Luamani" 
+    female = yes
+
+    religion = yakasak
+    culture = vanaarik
+
+    father = vanaarik_yakasak_19
+    mother = vanaarik_yakasak_20
+
+    sexuality = heterosexual
+
+    1292.4.28 = {
+        birth = yes
+    }
+}

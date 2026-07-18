@@ -1,0 +1,17 @@
+d_ksakho = {
+	1239.9.18 = {
+		holder = amaghean_amaghean_aagiokrata_6
+	}
+}
+d_tsnemo = {
+	1197.8.30 = {
+		holder = amaghean_amaghean_aagiokrata_32
+	}
+	1224.9.4 = {
+		liege = k_svanti
+		holder = draneti_izaerto_bosar_7
+	}
+	1250.2.12 = {
+		holder = draneti_izaerto_bosar_2
+	}
+}

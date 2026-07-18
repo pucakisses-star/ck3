@@ -1,0 +1,103 @@
+﻿yaarnami_ehatm_1 = { # Leader of main slave revolt in 1200, generally disdainful towards Aversarians and bitter about her servitude
+	name = "Kelidon"
+	culture = "yaarnami"
+	religion = "ehatm"
+	female = yes
+	sexuality = heterosexual
+	
+	diplomacy = 6
+	martial = 4
+	stewardship = 4
+	intrigue = 5
+	learning = 5
+	
+	1173.3.16 = {
+		birth = yes
+	}
+	1185.3.16 = {
+		trait = brave
+		trait = arrogant
+		trait = wrathful
+	}
+	1189.3.16 = {
+		trait = education_diplomacy_2
+	}
+	1200.3.2 = {
+		trait = peasant_leader
+	}
+	1206.4.29 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+yaarnami_ehatm_2 = { # Leader of rebellion in Vatox
+	name = "Qartha"
+	culture = "yaarnami"
+	religion = "ehatm"
+	female = yes
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 6
+	stewardship = 5
+	intrigue = 4
+	learning = 6
+	
+	1175.6.1 = {
+		birth = yes
+	}
+	1187.6.1 = {
+		trait = brave
+		trait = cynical
+		trait = wrathful
+	}
+	1193.6.1 = {
+		trait = education_martial_1
+	}
+	1200.3.7 = {
+		trait = peasant_leader
+	}
+	1209.8.5 = {
+		death = {
+			death_reason = death_execution
+			killer = vonatolis_aversarinas_aagiokrata_2 #leader of the Watervoid Pact
+		}
+	}
+}
+
+yaarnami_ehatm_3 = { # Third rebel leader, pretty much just wants to rule her little island as an independent thing
+	name = "Abt_Baaluth"
+	culture = "yaarnami"
+	religion = "ehatm"
+	female = yes
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 5
+	stewardship = 4
+	intrigue = 6
+	learning = 5
+	
+	1171.1.18 = {
+		birth = yes
+	}
+	1183.1.18 = {
+		trait = patient
+		trait = zealous
+		trait = content
+	}
+	1187.1.18 = {
+		trait = education_learning_2
+	}
+	1200.3.20 = {
+		trait = peasant_leader
+	}
+	1213.3.15 = {
+		death = {
+			death_reason = death_battle
+			killer = nimakiroi_aversarinas_aagiokrata_1 #patient countess
+		}
+	}
+}	

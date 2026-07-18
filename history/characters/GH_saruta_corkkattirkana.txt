@@ -1,0 +1,134 @@
+﻿saruta_corkkattirkana_1 = {
+	name = "Mahinda"
+	culture = "saruta"
+	religion = "corkkattirkana"
+
+	1234.8.1 = {
+		birth = yes
+	}
+	1252.11.11 = {
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = religious_rights
+				level = 1
+			}
+			vassal_contract_set_obligation_level = {
+				type = title_revocation_rights
+				level = 1
+			}
+		}
+	}
+	1254.1.1 = {
+		trait = paranoid
+		trait = just
+		trait = generous
+	}
+
+	1262.12.24 = {
+	    add_spouse = saruta_corkkattirkana_2
+	}
+
+	1272.6.5 = {
+	    death = { death_reason = death_smallpox }
+	}
+}
+
+saruta_corkkattirkana_2 = {
+    name = "Na_ilano" 
+    female = yes
+
+    religion = corkkattirkana
+    culture = saruta
+
+    sexuality = bisexual
+
+    trait = temperate
+    trait = vengeful
+    trait = gregarious
+
+    1245.2.11 = {
+        birth = yes
+    }
+
+    1297.7.28 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+saruta_corkkattirkana_3 = {
+    name = "Haqq" 
+
+    dynasty = dyn_pirate_coast_10
+    religion = corkkattirkana
+    culture = saruta
+
+    father = saruta_corkkattirkana_1
+    mother = saruta_corkkattirkana_2
+
+    sexuality = heterosexual
+
+    trait = just
+    trait = cynical
+    trait = stubborn
+
+    1264.9.20 = {
+        birth = yes
+    }
+
+    1286.2.10 = {
+        add_spouse = saruta_corkkattirkana_4
+    }
+}
+
+saruta_corkkattirkana_4 = {
+    name = "Kanakui" 
+    female = yes
+
+    religion = corkkattirkana
+    culture = saruta
+
+
+    sexuality = heterosexual
+
+    trait = forgiving
+    trait = generous
+    trait = temperate
+
+    1269.9.17 = {
+        birth = yes
+    }
+
+}
+
+saruta_corkkattirkana_5 = {
+    name = "Nalui" 
+    female = yes
+
+    religion = corkkattirkana
+    culture = saruta
+    dynasty = dyn_pirate_coast_10
+
+    father = saruta_corkkattirkana_3
+    mother = saruta_corkkattirkana_4
+
+    sexuality = heterosexual
+    1292.6.11 = {
+        birth = yes
+    }
+}
+
+saruta_corkkattirkana_6 = {
+    name = "Haqq" 
+
+    dynasty = dyn_pirate_coast_10
+    religion = corkkattirkana
+    culture = saruta
+
+    father = saruta_corkkattirkana_3
+    mother = saruta_corkkattirkana_4
+
+    sexuality = heterosexual
+    1295.10.12 = {
+        birth = yes
+    }
+}

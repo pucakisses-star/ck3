@@ -1,0 +1,41 @@
+
+c_east_lichdom_21 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_east_lichdoms_7bb = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_east_lichdom_25 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_east_lichdom_19 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_east_lichdom_18 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_east_lichdoms_22 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_provinceprovince12439 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_east_lichdom_24 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

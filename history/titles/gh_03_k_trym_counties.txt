@@ -1,0 +1,15 @@
+
+c_karthosx = {
+	1230.1.1 = {
+		holder = redlander_black_martyr_4
+		government = magocratic_government
+		change_development_level = 3
+	}
+}
+c_keshkarrtarkka = {
+	1230.1.1 = {
+		holder = redlander_screaming_host_3
+		government = magocratic_government
+		change_development_level = 3
+	}
+}

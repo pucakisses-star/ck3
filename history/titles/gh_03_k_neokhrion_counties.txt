@@ -1,0 +1,127 @@
+c_lysatrix = {
+	1250.1.1 = {
+		holder = symvolix_arthenaxian_1
+		change_development_level = 9
+	}
+}
+c_emporica_ponticum = {
+	1250.1.1 = {
+		holder = symvolix_drakanorix_aagiokrata_5
+		change_development_level = 8
+	}
+}
+c_messesos = {
+	1242.1.1 = { change_development_level = 12 }
+	
+	1230.1.1 = {
+		holder = islander_aversarinas_aagiokrata_14
+	}
+}
+c_bokouron = {
+	1250.1.1 = {
+		holder = islander_drakanorix_aagiokrata_1
+		change_development_level = 3
+	}
+}
+c_katakalaoi = {
+	1250.1.1 = {
+		holder = islander_drakanorix_aagiokrata_1
+		change_development_level = 3
+	}
+}
+c_zamoas = {
+	1250.1.1 = {
+		holder = voyagen_lifepath_86
+		change_development_level = 3
+	}
+}
+c_makhals = {
+	1250.1.1 = {
+		holder = islander_aversarinas_aagiokrata_139
+	}
+	1259.8.23 = {
+		holder = daukeni_sjalvolki_61
+	}
+}
+c_tsokka = {
+	1250.1.1 = {
+		holder = islander_aversarinas_aagiokrata_141
+	}
+}
+c_iflix = {
+	1250.1.1 = {
+		holder = symvolix_theryionist_2
+	}
+}
+c_pompenyx = {
+	1250.1.1 = {
+		holder = symvolix_theryionist_3
+	}
+}
+c_provincenewmedenice = {
+	1250.1.1 = {
+		holder = symvolix_arthenaxian_2
+	}
+}
+c_lemnosa = {
+	1250.1.1 = {
+		holder = symvolix_drakanorix_aagiokrata_2
+	}
+}
+c_rodholvos = {
+	1250.1.1 = {
+		holder = symvolix_drakanorix_aagiokrata_3
+	}
+}
+c_honey_isles = {
+	1250.1.1 = {
+		holder = symvolix_drakanorix_aagiokrata_3
+	}
+}
+c_casprotinida = {
+	1250.1.1 = {
+		holder = symvolix_drakanorix_aagiokrata_4
+	}
+}
+
+#Battery Isles
+c_eladron = {
+	1250.1.1 = {
+		holder = skolix_aversarinas_aagiokrata_1
+	}
+}
+c_marnarix = {
+	1250.1.1 = {
+		holder = skolix_aversarinas_aagiokrata_2
+	}
+}
+c_mithoriaxn = {
+	1250.1.1 = {
+		holder = skolix_aversarinas_aagiokrata_3
+	}
+}
+c_ayrsodiaxynia = {
+	1250.1.1 = {
+		holder = skolix_aversarinas_aagiokrata_4
+	}
+}
+c_hatanzuryi = {
+	1250.1.1 = {
+		holder = skolix_aversarinas_aagiokrata_5
+	}
+}
+c_sartharon = {
+	1250.1.1 = {
+		holder = skolix_aversarinas_aagiokrata_6
+	}
+}
+c_ios = {
+	1250.1.1 = {
+		holder = skolix_aversarinas_aagiokrata_7
+	}
+}
+c_oothan_diorg = {
+	1230.1.1 = {
+		holder = skolix_aversarinas_aagiokrata_8
+	}
+}

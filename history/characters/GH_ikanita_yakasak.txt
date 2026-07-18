@@ -1,0 +1,537 @@
+﻿ikanita_yakasak_1 = { # Queen of wellatola
+	name = "Amittiravalli"
+	religion = "yakasak"
+	culture = "ikanita"
+	dynasty = dyn_pirate_coast_1
+	mother = ikanita_yakasak_5
+	female = yes
+
+	dna = ikanita_yakasak_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = f_hair_ep2_western_02
+		}
+	}
+
+	1189.8.8 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 1 }
+		}
+	}
+	1205.8.8 = {
+		trait = education_martial_4
+		trait = vengeful
+		trait = gregarious
+		trait = cynical
+		trait = shrewd
+		trait = reaver
+		give_nickname = nick_burning_star
+	}
+	1226.7.7 = {
+		trait = gh_widow
+	}
+	1229.1.1 = {
+		effect = { 
+			add_prestige = 1500
+			dynasty = { add_dynasty_prestige_level = 2 }
+		}
+	}
+	1259.6.16 = {
+		death = { death_reason = death_mysterious }
+	}
+}
+
+ikanita_yakasak_2 = {
+	name = "Varakunan"
+	religion = "yakasak"
+	culture = "ikanita"
+	dynasty = dyn_pirate_coast_11
+	1209.8.8 = {
+		birth = yes
+	}
+
+	1229.1.1 = {
+		trait = shy
+		trait = vengeful
+		trait = wrathful
+	}
+
+	1239.5.19 = {
+	    add_spouse = ikanita_yakasak_14
+	}
+
+	1275.2.21 = {
+	    death = { death_reason = death_battle killer = voyagen_coastpath_3 }
+	}
+}
+
+ikanita_yakasak_3 = {
+	name = "Netuntukkai"
+	religion = "yakasak"
+	culture = "ikanita"
+	female = yes
+	1229.8.8 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+
+	1259.10.3 = {
+		death = { death_reason = death_execution killer = ikanita_yakasak_7 }
+	}
+}
+
+ikanita_yakasak_4 = { # Adritti's Mother
+	name = "Adritti"
+	religion = "yakasak"
+	culture = "ikanita"
+	dynasty = dyn_pirate_coast_1
+	female = yes
+	1143.7.5 = {
+		birth = yes
+	}
+	1160.4.4 = {
+		trait = education_stewardship_3
+		trait = diligent
+		trait = stubborn
+		trait = paranoid
+		trait = bastard_founder
+		trait = architect
+	}
+	1190.4.5 = {
+		death = {
+			death_reason = death_cancer
+		}
+	}
+}
+
+ikanita_yakasak_5 = { # Amittiravalli's Mother
+	name = "Adritti"
+	religion = "yakasak"
+	culture = "ikanita"
+	dynasty = dyn_pirate_coast_1
+	mother = ikanita_yakasak_4
+	female = yes
+
+	dna = ikanita_yakasak_5
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp2_iberian_muslim_01
+		}
+	}
+
+	1169.1.7 = {
+		birth = yes
+	}
+	1185.1.7 = {
+		trait = education_martial_4
+		trait = ambitious
+		trait = brave
+		trait = arrogant
+		trait = strong
+		give_nickname = nick_the_wildfire
+		trait = gh_historical_blademaster_3
+	}
+	1206.3.7 = {
+		death = {
+			death_reason = death_murder_known
+			killer = rethara_yakasak_3
+		}
+	}
+}
+
+ikanita_yakasak_6 = { # Queens husband
+	name = "Serishe"
+	religion = "yakasak"
+	culture = "ikanita"
+
+	dna = ikanita_yakasak_6
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_mena_07
+			custom_hair = male_hair_mena_02
+		}
+	}
+
+	1185.12.1 = {
+		birth = yes
+	}
+	1200.1.1 = {
+		trait = education_diplomacy_3
+		trait = compassionate
+		trait = gregarious
+		trait = patient
+		trait = adventurer
+		trait = gh_historical_reveler_3
+	}
+	1205.8.8 = {
+		add_matrilineal_spouse = ikanita_yakasak_1
+		effect = {
+			set_relation_soulmate = character:ikanita_yakasak_1
+		}
+	}
+	1226.7.7 = {
+		death = {
+			death_reason = death_whipping
+			killer = tapuso_yakasak_3
+		}
+	}
+}
+
+ikanita_yakasak_7 = { # Kids
+	name = "Namoyik"
+	religion = "yakasak"
+	culture = "ikanita"
+	father = ikanita_yakasak_6
+	mother = ikanita_yakasak_1
+	dynasty = dyn_pirate_coast_1
+
+	dna = ikanita_yakasak_7
+
+	portrait_override = {
+		portrait_modifier_overrides={
+			custom_hair=male_hair_indian_03
+			custom_beards=male_mustache_iranian_05
+		}
+	}
+
+	1220.11.5 = {
+		birth = yes
+	}
+	1236.11.5 = {
+		trait = patient
+		trait = cynical
+		trait = lazy
+		trait = gh_historical_reveler_1
+		trait = rakish
+		trait = gh_historical_blademaster_2
+	}
+
+	1252.3.27 = {
+		add_spouse = saruta_varodaism_1a
+	}
+
+	1276.9.18 = {
+		death = { death_reason = death_stress }
+	}
+}
+
+ikanita_yakasak_8 = { # Kids
+	name = "Charitlla"
+	religion = "yakasak"
+	culture = "ikanita"
+	father = ikanita_yakasak_6
+	mother = ikanita_yakasak_1
+	dynasty = dyn_pirate_coast_1
+	female = yes
+
+	dna = ikanita_yakasak_8
+
+	portrait_override = {
+		portrait_modifier_overrides={
+			custom_hair=female_hair_indian_02
+		}
+	}
+
+	1222.11.5 = {
+		birth = yes
+	}
+	1240.11.5 = {
+		trait = compassionate
+		trait = ambitious
+		trait = vengeful
+		trait = strong
+		trait = irritable
+	}
+	1255.10.1 = {
+		trait = scarred
+	}
+
+	1285.4.18 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+ikanita_yakasak_9 = { # Kids
+	name = "Dumindu"
+	religion = "yakasak"
+	culture = "ikanita"
+	father = ikanita_yakasak_6
+	mother = ikanita_yakasak_1
+	dynasty = dyn_pirate_coast_1
+
+	dna = ikanita_yakasak_9
+
+	portrait_override = {
+		portrait_modifier_overrides={
+			custom_hair=male_hair_indian_01
+			custom_beards=m_beard_ep2_western_01
+		}
+	}
+
+	1224.8.7 = {
+		birth = yes
+	}
+	1242.8.7 = {
+		trait = shy
+		trait = paranoid
+		trait = cynical
+		trait = depressed_1
+		trait = contrite
+	}
+
+	1257.8.13 = {
+		death = { death_reason = death_battle killer = rethara_yakasak_1 }
+	}
+}
+
+ikanita_yakasak_10 = {
+	name = "Munasinghe"
+	religion = "yakasak"
+	culture = "ikanita"
+
+	1214.3.6 = {
+		birth = yes
+	}
+}
+
+ikanita_yakasak_11 = {
+	name = "Serishe"
+	religion = "yakasak"
+	culture = "ikanita"
+	father = ikanita_yakasak_7
+	mother = saruta_varodaism_1a
+	dynasty = dyn_pirate_coast_1
+
+	1253.1.18 = {
+		birth = yes
+	}
+
+	1269.1.18 = {
+		trait = stubborn
+		trait = arrogant
+		trait = wrathful
+	}
+
+	1270.3.22 = {
+		add_spouse = ikanita_yakasak_22
+	}
+
+	1287.1.3 = {
+		death = { death_reason = death_battle } # Killed in a raid
+	}
+}
+
+
+
+
+ikanita_yakasak_12 = {
+	name = Siciid
+	religion = "yakasak"
+	culture = "ikanita"
+	father = ikanita_yakasak_11
+	dynasty = dyn_pirate_coast_1
+
+	1271.9.15 = {
+		birth = yes
+	}
+	1291.9.15 = {
+		trait = gh_historical_blademaster_1
+		trait = stubborn
+		trait = gregarious
+		trait = fickle
+	}
+}
+
+ikanita_yakasak_13 = {
+	name = "Harsa"
+	religion = "yakasak"
+	culture = "ikanita"
+	father = ikanita_yakasak_7
+	mother = saruta_varodaism_1a
+	dynasty = dyn_pirate_coast_1
+
+	1254.10.16 = {
+		birth = yes
+	}
+	1256.9.18 = {
+		death = { death_reason = death_sickly }
+	}
+}
+
+ikanita_yakasak_14 = {
+    name = "Popui" 
+    female = yes
+
+    religion = yakasak
+    culture = ikanita
+
+    sexuality = heterosexual
+
+    trait = humble
+    trait = paranoid
+    trait = brave
+
+    1222.11.2 = {
+        birth = yes
+    }
+
+    1276.5.27 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+ikanita_yakasak_15 = {
+    name = "Anaru" 
+
+    dynasty = dyn_pirate_coast_11
+    religion = yakasak
+    culture = ikanita
+
+    father = ikanita_yakasak_2
+    mother = ikanita_yakasak_14
+
+    sexuality = heterosexual
+
+    trait = chaste
+    trait = brave
+    trait = honest
+
+    1246.1.4 = {
+        birth = yes
+    }
+
+    1275.5.27 = {
+        add_spouse = ikanita_yakasak_16
+    }
+
+    1297.12.19 = {
+        death = { death_reason = death_accident }
+    }
+}
+
+ikanita_yakasak_16 = {
+    name = "Alaki" 
+    female = yes
+
+    religion = yakasak
+    culture = ikanita
+
+    sexuality = heterosexual
+
+    trait = calm
+    trait = content
+    trait = arbitrary
+
+    1258.12.10 = {
+        birth = yes
+    }
+}
+
+ikanita_yakasak_17 = {
+    name = "Anaru" 
+
+    religion = yakasak
+    culture = ikanita
+
+    father = ikanita_yakasak_15
+    mother = ikanita_yakasak_16
+
+    sexuality = heterosexual
+
+    trait = patient
+    trait = compassionate
+    trait = honest
+
+    1276.7.14 = {
+        birth = yes
+    }
+}
+
+
+ikanita_yakasak_19 = {
+    name = "Akilu" 
+    female = yes
+
+    religion = yakasak
+    culture = ikanita
+
+    father = ikanita_yakasak_15
+    mother = ikanita_yakasak_16
+
+    sexuality = heterosexual
+
+    trait = compassionate
+    trait = wrathful
+    trait = greedy
+
+    1281.7.18 = {
+        birth = yes
+    }
+}
+
+ikanita_yakasak_20 = {
+    name = "Rajamati" 
+    female = yes
+
+    religion = yakasak
+    culture = ikanita
+
+    father = ikanita_yakasak_15
+    mother = ikanita_yakasak_16
+
+    sexuality = heterosexual
+
+    1283.11.24 = {
+        birth = yes
+        trait = weak
+    }
+
+    1293.12.14 = {
+        death = { death_reason = death_sickly }
+    }
+}
+
+ikanita_yakasak_21 = {
+    name = "Kapono" 
+    female = yes
+
+    religion = yakasak
+    culture = ikanita
+
+    father = ikanita_yakasak_15
+    mother = ikanita_yakasak_16
+
+    sexuality = heterosexual
+
+    1285.3.13 = {
+        birth = yes
+    }
+}
+
+ikanita_yakasak_22 = {
+    name = "Adritti"
+    female = yes
+    dynasty = dyn_pirate_coast_11
+    religion = yakasak
+    culture = ikanita
+
+    father = ikanita_yakasak_2
+    mother = ikanita_yakasak_14
+
+    sexuality = heterosexual
+
+    1251.9.13 = {
+        birth = yes
+    }
+
+    1271.1.1 = {
+        trait = ambitious
+        trait = lustful
+        trait = fickle
+        trait = education_martial_2
+    }
+}

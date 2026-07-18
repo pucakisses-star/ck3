@@ -1,0 +1,44 @@
+c_agronomika = {
+	1230.1.1 = { change_development_level = 2 }
+	
+	1230.1.1 = {
+		holder = islander_cult_of_the_waves_1
+	}
+}
+
+c_vuonae = {
+	1.1.2 = {
+		holder = unsorted_32
+		liege = 0
+	}
+	1230.1.1 = {
+		holder = islander_aversarian_axiaotheaism_1
+		change_development_level = 2
+	}
+	1276.10.6 = {
+		holder = islander_aversarian_axiaotheaism_3
+	}
+}
+
+c_gwynant = {
+	1.1.2 = {
+		holder = unsorted_33
+		liege = 0
+	}
+	1230.1.1 = {
+		holder = islander_aeschraes_aagiokrata_1
+		change_development_level = 2
+	}
+	1267.10.23 = {
+		holder = daukeni_sjalvolki_152
+	}
+	1281.2.17 = {
+		holder = daukeni_sjalvolki_154
+	}
+}
+c_stahwarpol = {
+	1230.1.1 = {
+		holder = islander_aversarinas_aagiokrata_137
+		change_development_level = 2
+	}
+}

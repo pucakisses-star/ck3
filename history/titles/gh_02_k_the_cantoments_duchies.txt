@@ -1,0 +1,10 @@
+d_mayik_duchy_8 = {
+	1181.1.13 = {
+		holder = northernimperial_aversarinas_aagiokrata_32
+		liege = e_mayikprolollan
+		government = magocratic_government
+	}
+	1200.3.1 = {
+		holder = 0
+	}
+}

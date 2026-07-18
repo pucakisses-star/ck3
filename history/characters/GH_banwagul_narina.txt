@@ -1,0 +1,132 @@
+﻿banwagul_narina_1 = { # Banwagul Pirate-Lord
+	name = "Gamalan"
+	religion = "narina"
+	culture = "banwagul"
+	dynasty = dyn_tanarka_3
+
+	martial = 6
+	diplomacy = 7
+	intrigue = 9
+	stewardship = 5
+	learning = 6
+	prowess = 3
+
+	1197.7.8 = {
+		birth = yes
+	}
+
+	1209.1.1 = {
+		trait = craven
+		trait = gregarious
+		trait = ambitious
+	}
+
+	1209.11.11 = {
+		trait = eunuch_1
+		give_nickname = nick_the_gelded_gamalan
+	}
+
+	1213.7.8 = {
+		trait = education_martial_4
+		trait = viking
+		trait = reaver
+		trait = strategist
+	}
+
+	1242.12.21 = {
+		effect = {
+			create_character_memory = { # Ratarakaw
+				type = saw_ratarakaw
+			}
+		}
+	}
+}
+
+banwagul_narina_2 = {
+	name = "Tarad"
+	religion = "narina"
+	culture = "banwagul"
+	dynasty = dyn_tanarka_1
+
+	father = banwagul_dahala_4
+
+	martial = 8
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 5
+	learning = 5
+	prowess = 7
+
+	1227.2.10 = {
+		birth = yes
+	}
+
+	1239.1.1 = {
+		trait = brave
+		trait = deceitful
+		trait = ambitious
+	}
+
+	1242.12.21 = {
+		add_pressed_claim = title:k_lay_redaka_banwagul
+		effect = {
+			create_character_memory = { # Ratarakaw
+				type = saw_ratarakaw
+			}
+		}
+	}
+
+	1243.2.10 = {
+		trait = education_diplomacy_2
+	}
+
+	1253.8.7 = {
+		effect = {
+			create_alliance = {
+				target = character:dathanites_labaqiri_1
+				allied_through_owner = character:banwagul_narina_2
+				allied_through_target = character:banwagul_narina_3
+			}
+		}
+	}
+}
+
+banwagul_narina_3 = {
+	name = "Wademi"
+	religion = "narina"
+	culture = "banwagul"
+	dynasty = dyn_tanarka_1
+
+	female = yes
+
+	father = banwagul_dahala_4
+
+	martial = 6
+	diplomacy = 5
+	intrigue = 4
+	stewardship = 4
+	learning = 7
+	prowess = 6
+
+	1236.8.9 = {
+		birth = yes
+	}
+
+	1242.12.21 = {
+		effect = {
+			create_character_memory = { # Ratarakaw
+				type = saw_ratarakaw
+			}
+		}
+	}
+
+	1248.1.1 = {
+		trait = calm
+		trait = vengeful
+		trait = shy
+	}
+
+	1252.8.9 = {
+		trait = education_intrigue_4
+	}
+}

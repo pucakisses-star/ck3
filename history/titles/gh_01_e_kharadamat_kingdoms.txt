@@ -1,0 +1,33 @@
+k_emporia = {
+	1168.1.1 = {
+		holder = erimatos_aversarinas_aagiokrata_9
+	}
+	1200.1.1 = {
+		change_development_level = 8
+	}
+	1230.1.1 = {
+		holder = makryenis_thysia_1
+		government = landed_order_government
+	}
+}
+k_mukhtab = {
+	1200.1.1 = {
+		change_development_level = 6
+	}
+	1230.1.1 = {
+		holder = makryenis_sansia_1
+		government = landed_order_government
+	}
+}
+k_tifrennesh = {
+	1168.1.1 = {
+		holder = erimatos_aversarinas_aagiokrata_9
+	}
+	1200.1.1 = {
+		change_development_level = 7
+	}
+	1230.1.1 = {
+		holder = makryenis_katharitos_1
+		government = landed_order_government
+	}
+}

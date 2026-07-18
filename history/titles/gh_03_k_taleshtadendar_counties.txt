@@ -1,0 +1,141 @@
+c_inkovtara = {
+	1235.1.1 = {
+		liege = d_taliron
+		holder = easternimperial_aironoian_aagiokrata_5
+		change_development_level = 9
+	}
+}
+c_maerod = {
+	1251.1.1 = {
+		holder = armanas_cuthanagi_2
+		change_development_level = 7
+		government = republic_playable_government
+	}
+}
+c_valapuiwan = {
+	1235.2.27 = {
+		holder = yevanya_vidvaookeyatra_1
+		change_development_level = 23
+	}
+}
+c_mahipatd = {
+	1244.7.1 = {
+		holder = yevanya_vidvaookeyatra_1
+		change_development_level = 15
+	}
+}
+c_kowucha = {
+	1183.8.13 = {
+		holder = yonata_vidvaookeyatra_1
+		liege = k_taleshtadendar
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+	1200.3.1 = {
+		holder = yonata_vidvaookeyatra_6
+		liege = k_taleshtadendar
+	}
+	1246.10.26 = {
+		holder = yonata_vidvaookeyatra_5
+		liege = k_taleshtadendar
+		change_development_level = 7
+	}
+}
+c_aromas = {
+	1183.3.19 = {
+		holder = yonata_vidvaookeyatra_7
+		liege = k_taleshtadendar
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+	1200.2.26 = {
+		holder = yonata_vidvaookeyatra_8
+		liege = k_taleshtadendar
+
+	}
+	1240.8.7 = {
+		holder = yonata_vidvaookeyatra_2
+		liege = k_taleshtadendar
+		change_development_level = 6
+	}
+}
+c_khrishauli = {
+	1251.1.1 = {
+		holder = sarishta_vidvaookeyatra_1
+		liege = d_sundakana
+		change_development_level = 8
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+}
+c_pachadura = {
+	1250.1.1 = {
+		holder = yonata_vidvaookeyatra_4
+		liege = k_taleshtadendar
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+}
+c_nadivara = {
+	1244.6.12 = {
+		holder = uthanata_vidvaookeyatra_1
+		liege = k_taleshtadendar
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+}
+c_kudrathar = {
+	1240.1.1 = {
+		holder = mithaista_vidvaookeyatra_1
+	}
+}

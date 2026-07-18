@@ -1,0 +1,41 @@
+﻿armanas_cuthanagi_1 = { # River count
+	name = "Niphates"
+	religion = "cuthanagi"
+	culture = "armanas"
+	1224.7.5 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1240.7.5 = {
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:adio_kasir }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1252.11.6 = {
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = religious_rights
+				level = 1
+			}
+			vassal_contract_set_obligation_level = {
+				type = title_revocation_rights
+				level = 1
+			}
+		}
+		add_gold = 150
+	}
+}
+
+armanas_cuthanagi_2 = { # River count 2
+	name = "Mausolus"
+	religion = "cuthanagi"
+	culture = "gwenuyos"
+	1220.8.8 = {
+		birth = yes
+	}
+}

@@ -1,0 +1,70 @@
+# d_ephoupoli = {
+# 	1230.1.1 = { change_development_level = 9 }
+# 
+# 	1234.1.1 = {
+# 		holder = centralislander_aversarinas_aagiokrata_1
+# 	}
+# 
+# 	1253.12.2 = {
+# 		holder = westernimperial_aversarinas_aagiokrata_158
+# 		government = mercenary_government
+# 		liege = k_high_kingdom_of_the_isles
+# 	}
+# }
+d_petalounia = {
+	1186.11.7 = {
+		holder = southernimperial_aversarinas_aagiokrata_121
+		liege = k_orydian_dynastic_league
+	}
+	1193.4.22 = {
+		holder = centralislander_aversarinas_aagiokrata_23
+	}
+	1195.7.21 = {
+		holder = westernimperial_aeschraes_aagiokrata_7
+	}
+	1200.3.1 = {
+		holder = 0
+		liege = 0
+	}
+	1230.1.1 = { change_development_level = 8 }
+
+	1234.1.1 = {
+		holder = centralislander_aversarinas_aagiokrata_1
+	}
+	1253.12.2 = {
+		holder = islander_cult_of_the_waves_2
+		liege = 0
+	}
+}
+d_kedrassos = {
+	1230.1.1 = { change_development_level = 4 }
+
+	1230.1.1 = {
+		holder = agiopadis_saintly_order_1
+		liege = 0
+	}
+}
+d_hyelegea = {
+	1230.1.1 = { change_development_level = 8 }
+
+	1186.6.14 = {
+		holder = southernimperial_aversarinas_aagiokrata_121
+		liege = k_orydian_dynastic_league
+	}
+	1193.4.22 = {
+		holder = centralislander_aversarinas_aagiokrata_23
+	}
+	1195.7.21 = {
+		holder = westernimperial_aeschraes_aagiokrata_7
+	}
+	1200.3.1 = {
+		holder = 0
+		liege = 0
+	}
+	1201.3.1 = {
+		holder = centralislander_aversarinas_aagiokrata_4
+	}
+	1234.3.16 = {
+		liege = k_high_kingdom_of_the_isles
+	}
+}

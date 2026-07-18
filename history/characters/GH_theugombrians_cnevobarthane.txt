@@ -1,0 +1,670 @@
+﻿theugombrians_cnevobarthane_1 = {
+	name = "Bathrus"
+	culture = "theugombrians"
+	religion = "cnevobarthane"
+	dynasty = dyn_sjalvolki_7
+	mother = theugombrians_cnevobarthane_15
+	father = theugombrians_cnevobarthane_8
+	1187.3.3 = {
+		birth = yes
+		trait = strong
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 1 }
+		}
+	}
+
+	1205.3.3 = {
+		trait = education_diplomacy_4
+		trait = brave
+		trait = stubborn
+		trait = gregarious
+	}
+
+	1210.4.11 = {
+		trait = gh_historical_track_falconer_2
+	}
+
+	1221.5.18 = {
+		add_spouse = theugombrians_cnevobarthane_5
+
+	}
+
+	1245.1.21 = {
+		trait = gh_widow
+
+	}
+
+	1250.7.6 = {
+		trait = shrewd
+	}
+	1266.11.20 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+theugombrians_cnevobarthane_2 = {
+	name = "Saumina"
+	culture = "theugombrians"
+	religion = "cnevobarthane"
+	dynasty = dyn_sjalvolki_7
+	father = theugombrians_cnevobarthane_1
+	mother = theugombrians_cnevobarthane_5
+	female = yes
+
+	stewardship = 6
+
+	1222.11.3 = {
+		birth = yes
+		trait = magic_good_2
+		trait = twin
+	}
+
+	1238.11.3 = {
+		trait = education_stewardship_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+		trait = administrator
+		trait = generous
+		trait = calm
+		trait = honest
+	}
+}
+
+theugombrians_cnevobarthane_3 = {
+	name = "Menic"
+	culture = "theugombrians"
+	religion = "cnevobarthane"
+	dynasty = dyn_sjalvolki_7
+
+	father = theugombrians_cnevobarthane_1
+	mother = theugombrians_cnevobarthane_5
+
+	1222.11.3 = {
+		birth = yes
+		trait = magic_good_3
+		trait = twin
+	}
+
+	1234.1.1 = {
+		trait = content
+		trait = diligent
+		trait = patient
+	}
+
+	1238.11.3 = {
+		trait = diplomat
+		trait = education_diplomacy_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+}
+
+theugombrians_cnevobarthane_4 = {
+	name = "Coson"
+	culture = "theugombrians"
+	religion = "cnevobarthane"
+	dynasty = dyn_sjalvolki_7
+	father = theugombrians_cnevobarthane_1
+	mother = theugombrians_cnevobarthane_5
+
+	1225.11.3 = {
+		birth = yes
+	}
+
+	1241.11.3 = {
+		trait = ambitious
+		trait = brave
+		trait = wrathful
+		trait = education_martial_4
+	}
+
+	1244.1.1 = {
+		trait = gh_historical_blademaster_1
+	}
+
+}
+
+theugombrians_cnevobarthane_5 = {
+	name = "Rhemaxa"
+	culture = "theugombrians"
+	religion = "cnevobarthane"
+	dynasty = dyn_sjalvolki_7
+	female = yes
+
+	1196.11.3 = {
+		birth = yes
+		trait = magic_good_1
+
+	}
+
+	1208.1.1 = {
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1245.1.1 = {
+		death = {
+			death_reason = death_fog
+		}
+	}
+}
+
+#6 through 14 autogen family
+
+theugombrians_cnevobarthane_6 = {
+    name = "Venel" 
+
+    dynasty = dyn_sjalvolki_7
+    religion = cnevobarthane
+    culture = theugombrians
+
+    sexuality = heterosexual
+
+    trait = temperate
+    trait = callous
+    trait = lazy
+
+    diplomacy = 4
+    martial = 6
+    stewardship = 4
+    intrigue = 6
+    learning = 6
+    prowess = 6
+
+    trait = education_martial_2
+
+    1100.12.24 = {
+        birth = yes
+    }
+
+    1139.8.6 = {
+        add_spouse = theugombrians_cnevobarthane_7
+    }
+
+    1169.4.27 = {
+        death = { death_reason = death_smallpox }
+    }
+}
+
+theugombrians_cnevobarthane_7 = {
+    name = "Urzuri" 
+    female = yes
+
+    religion = cnevobarthane
+    culture = theugombrians
+
+    sexuality = heterosexual
+
+    trait = compassionate
+    trait = arrogant
+    trait = wrathful
+
+    diplomacy = 7
+    martial = 6
+    stewardship = 6
+    intrigue = 2
+    learning = 7
+    prowess = 7
+
+    trait = education_diplomacy_2
+
+    1122.4.19 = {
+        birth = yes
+    }
+
+    1194.12.26 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+theugombrians_cnevobarthane_8 = {
+    name = "Metie" 
+
+    dynasty = dyn_sjalvolki_7
+    religion = cnevobarthane
+    culture = theugombrians
+
+    father = theugombrians_cnevobarthane_6
+    mother = theugombrians_cnevobarthane_7
+
+    sexuality = heterosexual
+
+    trait = diligent
+    trait = trusting
+    trait = stubborn
+
+    diplomacy = 12
+    martial = 29
+    stewardship = 25
+    intrigue = 15
+    learning = 13
+    prowess = 18
+
+    trait = education_martial_4
+
+    1164.8.16 = {
+        birth = yes
+    }
+	1185.1.1 = {
+		add_spouse = theugombrians_cnevobarthane_15
+	}
+    1210.2.3 = {
+        add_spouse = theugombrians_cnevobarthane_9
+    }
+
+    1225.12.23 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+theugombrians_cnevobarthane_9 = {
+    name = "Pexi" 
+    female = yes
+
+    religion = cnevobarthane
+    culture = theugombrians
+
+    sexuality = heterosexual
+
+    trait = generous
+    trait = diligent
+    trait = sadistic
+
+    diplomacy = 5
+    martial = 6
+    stewardship = 10
+    intrigue = 7
+    learning = 8
+    prowess = 8
+
+    trait = education_stewardship_1
+
+    1193.5.26 = {
+        birth = yes
+    }
+
+    1260.1.27 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+theugombrians_cnevobarthane_10 = {
+    name = "Faxia" 
+    female = yes
+
+    religion = cnevobarthane
+    culture = theugombrians
+
+    father = theugombrians_cnevobarthane_1
+    mother = theugombrians_cnevobarthane_5
+
+    sexuality = heterosexual
+
+    trait = wrathful
+    trait = just
+    trait = trusting
+
+    diplomacy = 7
+    martial = 7
+    stewardship = 5
+    intrigue = 6
+    learning = 5
+    prowess = 7
+
+    trait = education_diplomacy_3
+
+    1214.4.11 = {
+        birth = yes
+    }
+
+    1256.8.28 = {
+        death = { death_reason = death_typhus }
+    }
+}
+
+theugombrians_cnevobarthane_11 = {
+    name = "Polixarpcno" 
+
+    dynasty = dyn_sjalvolki_7
+    religion = cnevobarthane
+    culture = theugombrians
+
+    father = theugombrians_cnevobarthane_1
+    mother = theugombrians_cnevobarthane_5
+
+    sexuality = heterosexual
+
+    trait = temperate
+    trait = patient
+    trait = compassionate
+
+    diplomacy = 4
+    martial = 7
+    stewardship = 10
+    intrigue = 4
+    learning = 7
+    prowess = 5
+
+    trait = education_stewardship_4
+
+    1215.5.16 = {
+        birth = yes
+    }
+
+    1243.3.17 = {
+        add_spouse = theugombrians_cnevobarthane_12
+    }
+
+    1264.7.13 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+theugombrians_cnevobarthane_12 = {
+    name = "Icnarla" 
+    female = yes
+
+    religion = cnevobarthane
+    culture = theugombrians
+
+    sexuality = heterosexual
+
+    trait = content
+    trait = arbitrary
+    trait = calm
+
+    diplomacy = 6
+    martial = 5
+    stewardship = 7
+    intrigue = 2
+    learning = 5
+    prowess = 6
+
+    trait = education_stewardship_2
+
+    1226.2.24 = {
+        birth = yes
+    }
+
+    1308.8.19 = {
+        death = { death_reason = death_typhus }
+    }
+}
+
+theugombrians_cnevobarthane_13 = {
+    name = "Aktathur" 
+
+    dynasty = dyn_sjalvolki_7
+    religion = cnevobarthane
+    culture = theugombrians
+
+    father = theugombrians_cnevobarthane_11
+    mother = theugombrians_cnevobarthane_12
+
+    sexuality = heterosexual
+
+    trait = content
+    trait = lazy
+    trait = lustful
+
+    diplomacy = 8
+    martial = 9
+    stewardship = 8
+    intrigue = 6
+    learning = 9
+    prowess = 2
+
+    trait = education_martial_3
+
+    1253.3.3 = {
+        birth = yes
+    }
+
+    1306.2.27 = {
+        add_spouse = theugombrians_cnevobarthane_14
+    }
+
+    1326.10.13 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+theugombrians_cnevobarthane_14 = {
+    name = "Racnaela" 
+    female = yes
+
+    religion = cnevobarthane
+    culture = theugombrians
+
+    sexuality = heterosexual
+
+    trait = brave
+    trait = callous
+    trait = gluttonous
+
+    diplomacy = 6
+    martial = 6
+    stewardship = 3
+    intrigue = 8
+    learning = 3
+    prowess = 7
+
+    trait = education_intrigue_2
+
+    1289.12.22 = {
+        birth = yes
+    }
+
+    1370.11.27 = {
+        death = { death_reason = death_consumption }
+    }
+}
+
+theugombrians_cnevobarthane_15 = {
+    name = "Icnarla" 
+    female = yes
+
+    religion = cnevobarthane
+    culture = theugombrians
+
+    sexuality = heterosexual
+
+    trait = content
+    trait = arbitrary
+    trait = calm
+
+    diplomacy = 6
+    martial = 5
+    stewardship = 7
+    intrigue = 2
+    learning = 5
+    prowess = 6
+
+    trait = education_stewardship_2
+
+    1165.2.24 = {
+        birth = yes
+    }
+
+    1192.8.19 = {
+        death = { death_reason = death_typhus }
+    }
+}
+
+theugombrians_cnevobarthane_16 = {
+    name = "Lizardi" 
+
+    dynasty = dyn_sjalvolki_7
+    religion = cnevobarthane
+    culture = theugombrians
+
+    sexuality = heterosexual
+
+    trait = brave
+    trait = lazy
+    trait = ambitious
+
+    diplomacy = 4
+    martial = 7
+    stewardship = 9
+    intrigue = 7
+    learning = 4
+    prowess = 1
+
+    trait = education_stewardship_1
+
+    1260.5.2 = {
+        birth = yes
+    }
+
+    1310.11.5 = {
+        add_spouse = theugombrians_cnevobarthane_7
+    }
+
+    1320.6.21 = {
+        death = { death_reason = death_typhus }
+    }
+}
+
+theugombrians_cnevobarthane_17 = {
+    name = "Axodroi" 
+
+    religion = cnevobarthane
+    culture = theugombrians
+
+    sexuality = heterosexual
+
+    trait = patient
+    trait = vengeful
+    trait = diligent
+
+    diplomacy = 4
+    martial = 5
+    stewardship = 5
+    intrigue = 3
+    learning = 5
+    prowess = 7
+
+    trait = education_martial_3
+
+    1260.12.17 = {
+        birth = yes
+    }
+
+    1284.2.16 = {
+        add_spouse = theugombrians_cnevobarthane_18
+    }
+	1298.3.1 = {
+		trait = ill
+	}
+    1298.5.25 = {
+        death = { death_reason = death_smallpox }
+    }
+}
+
+theugombrians_cnevobarthane_18 = {
+    name = "Arnthia" 
+    female = yes
+
+    religion = cnevobarthane
+    culture = theugombrians
+
+    sexuality = heterosexual
+
+    trait = generous
+    trait = impatient
+    trait = sadistic
+
+    diplomacy = 5
+    martial = 6
+    stewardship = 5
+    intrigue = 6
+    learning = 7
+    prowess = 6
+
+    trait = education_learning_2
+
+    1267.12.9 = {
+        birth = yes
+    }
+
+    1333.8.4 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+theugombrians_cnevobarthane_19 = {
+    name = "Metie" 
+
+    religion = cnevobarthane
+    culture = theugombrians
+
+    sexuality = heterosexual
+
+    trait = fickle
+    trait = ambitious
+    trait = humble
+
+    diplomacy = 7
+    martial = 9
+    stewardship = 10
+    intrigue = 4
+    learning = 3
+    prowess = 7
+
+    trait = education_stewardship_4
+
+    1271.5.9 = {
+        birth = yes
+    }
+
+    1300.5.1 = {
+        add_spouse = theugombrians_cnevobarthane_18
+    }
+
+    1324.11.22 = {
+        death = { death_reason = death_consumption }
+    }
+}
+
+theugombrians_cnevobarthane_20 = {
+    name = "Abelixes" 
+    female = yes
+
+    religion = cnevobarthane
+    culture = theugombrians
+
+    sexuality = heterosexual
+
+    trait = ambitious
+    trait = stubborn
+    trait = callous
+
+    diplomacy = 5
+    martial = 8
+    stewardship = 9
+    intrigue = 7
+    learning = 1
+    prowess = 2
+
+    trait = education_stewardship_2
+
+    1283.4.15 = {
+        birth = yes
+    }
+
+    1351.4.19 = {
+        death = { death_reason = death_smallpox }
+    }
+}
+

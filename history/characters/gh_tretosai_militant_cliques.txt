@@ -1,0 +1,63 @@
+﻿tretosai_militant_cliques_1 = { # Second Legon of the Safe Harbors, killed by the 'Sea-Sword' after a last stand
+	name = "Latios"
+	religion = "militant_cliques"
+	culture = "tretosai"	
+	
+	diplomacy = 5
+	martial = 5
+	stewardship = 6
+	intrigue = 4
+	learning = 4
+
+	1190.3.14 = {
+		birth = yes
+	}
+	1202.3.14 = {
+		trait = brave
+		trait = diligent
+		trait = patient
+	}
+	1206.6.18 = {
+		trait = education_diplomacy_2
+	}
+	1213.5.17 = {
+		death = {
+			death_reason = death_execution
+			killer = ypsikenai_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+tretosai_militant_cliques_2 = { # Rebel against the collapse of Sea-Sword, still sworn to Aeschraes briefly before deserting after Vilnian, killed by one of her lieutenants.
+	name = "Euchryle"
+	religion = "militant_cliques"
+	culture = "tretosai"
+	female = yes
+
+	diplomacy = 5
+	martial = 6
+	stewardship = 4
+	intrigue = 5
+	learning = 4
+
+	1204.6.16 = {
+		birth = yes
+	}
+	1216.6.16 = {
+		trait = brave
+		trait = gregarious
+		trait = trusting
+	}
+	1220.6.18 = {
+		trait = education_diplomacy_2
+	}
+	1226.7.3 = {
+		trait = peasant_leader
+	}
+	1241.12.30 = {
+		death = {
+			death_reason = death_murder
+			#killer = tretosai_aversarinas_aagiokrata_1 GH: Commented out since the linked character is already dead by this date
+		}
+	}
+}

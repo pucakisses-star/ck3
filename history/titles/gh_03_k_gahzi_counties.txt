@@ -1,0 +1,88 @@
+#c_beit_shulas = {
+#	1230.1.1 = {
+#		holder = makryenis_katharitos_8
+#		liege = d_rifeh
+#		government = landed_order_government
+#	}
+#}
+#c_amaryen = {
+#	1230.1.1 = {
+#		holder = makryenis_katharitos_2
+#		liege = k_tifrennesh
+#		government = landed_order_government
+#	}
+#}
+#c_tel_nammoura = {
+#	1230.1.1 = {
+#		holder = makryenis_katharitos_3
+#		liege = k_tifrennesh
+#		government = landed_order_government
+#	}
+#}
+#c_khor_siluma = {
+#	1230.1.1 = {
+#		holder = makryenis_katharitos_4
+#		liege = k_tifrennesh
+#		government = landed_order_government
+#	}
+#}
+c_dayr_natar = {
+	1230.1.1 = {
+		holder = makryenis_katharitos_4
+		liege = k_tifrennesh
+		government = landed_order_government
+	}
+}
+c_ul_bileis = {
+	1230.1.1 = {
+		holder = makryenis_katharitos_6
+		liege = k_tifrennesh
+		government = landed_order_government
+	}
+}
+c_astrologicon = {
+	1230.1.1 = {
+		holder = makryenis_katharitos_7
+		liege = k_tifrennesh
+		government = landed_order_government
+	}
+}
+c_malindra = {
+	1230.1.1 = {
+		holder = makryenis_katharitos_10
+		liege = k_tifrennesh
+		government = landed_order_government
+	}
+}
+c_central_sarradon23 = {
+	1240.1.1 = {
+		government = landed_order_government
+		holder = makryenis_calysto_4
+		liege = d_kulaybeh
+	}
+}
+c_central_sarradon22 = {
+	1240.1.1 = {
+		government = landed_order_government
+		holder = makryenis_calysto_4
+		liege = d_kulaybeh
+	}
+}
+c_titania = {
+	1240.1.1 = {
+		government = landed_order_government
+		holder = makryenis_calysto_4
+		liege = d_kulaybeh
+	}
+}
+#c_tebuddah = {
+#	1230.1.1 = {
+#		holder = mazunic_haradar_1
+#	}
+#}
+#c_sirnagh = {
+#	1235.1.1 = {
+#		holder = tasurmad_haradar_1
+#		liege = d_mountain_order
+#	}
+#}

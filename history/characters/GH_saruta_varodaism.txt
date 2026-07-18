@@ -1,0 +1,372 @@
+﻿saruta_varodaism_1 = { # Saruta duke
+	name = "Yohannaan"
+	religion = "varodaism"
+	culture = "saruta"
+	father = saruta_varodaism_18
+
+	dna = saruta_varodaism_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair=no_hair
+			custom_beards=male_mustache_iranian_05
+		}
+	}
+
+	1229.8.8 = {
+		birth = yes
+		trait = one_legged
+		trait = stubborn
+		trait = calm
+		trait = just
+		trait = journaller
+		trait = education_martial_4
+		trait = aggressive_attacker
+	}
+
+	1245.8.8 = {
+		trait = gh_historical_blademaster_3
+	}
+
+	1250.1.1 = {
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = title_revocation_rights
+				level = 1
+			}
+			vassal_contract_set_obligation_level = {
+				type = council_rights
+				level = 1
+			}
+		}
+		give_nickname = nick_the_bull_yohannaan
+		give_council_position = councillor_marshal
+	}
+}
+
+saruta_varodaism_1a = { # Bull's sister, later wife of Namoyik of Wellatola 
+	name = "Hemavati"
+	female = yes
+	religion = "varodaism"
+	culture = "saruta"
+	father = saruta_varodaism_18
+
+	1232.9.13 = {
+		birth = yes
+		trait = beauty_good_1
+		trait = wheezing
+	}
+
+	1288.12.4 = {
+		death = { death_reason = death_ill }
+	}
+}
+
+saruta_varodaism_2 = { # Saruta count
+	name = "ManavA_lapperumA_l"
+	religion = "varodaism"
+	culture = "saruta"
+	1238.8.8 = {
+		birth = yes
+	}
+}
+
+saruta_varodaism_3 = { # Saruta count, family used to rule more of the Duchy before The Bull took power
+	name = "Lukose"
+	religion = "varodaism"
+	culture = "saruta"
+	father = saruta_varodaism_10
+	mother = saruta_varodaism_11
+	dynasty = dynasty_saruta_1
+
+	1231.8.8 = {
+		birth = yes
+		trait = possessed_1
+	}
+}
+
+saruta_varodaism_4 = { # Saruta count
+	name = "Arulmolivarman"
+	religion = "varodaism"
+	culture = "saruta"
+	
+	1228.8.8 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1240.1.1 = {
+		trait = fickle
+		trait = arbitrary
+		trait = gregarious
+	}
+
+	1244.8.8 = {
+		trait = drunkard
+		trait = education_diplomacy_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:school_of_night_scrying }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1253.1.25 = {
+		add_spouse = saruta_varodaism_16
+	}
+}
+
+saruta_varodaism_5 = {
+    name = "Arjunpal" 
+
+    dynasty = dynasty_saruta_1
+    religion = varodaism
+    culture = saruta
+
+    sexuality = heterosexual
+
+    trait = forgiving
+    trait = generous
+    trait = temperate
+
+    1096.2.25 = {
+        birth = yes
+    }
+
+    1125.10.2 = {
+        add_spouse = saruta_varodaism_6
+    }
+
+    1145.8.7 = {
+        death = { death_reason = death_consumption }
+    }
+}
+
+saruta_varodaism_5a = {
+    name = "Arjunpal" 
+
+    dynasty = dynasty_saruta_1
+    father = saruta_varodaism_5
+    mother = saruta_varodaism_6
+    religion = varodaism
+    culture = saruta
+
+    sexuality = heterosexual
+
+    trait = callous
+    trait = zealous
+    trait = impatient
+
+    1127.6.9 = {
+        birth = yes
+    }
+
+    1172.4.3 = {
+    	death = { death_reason = death_natural_causes }
+    }
+}
+
+saruta_varodaism_6 = {
+    name = "Kakanvati" 
+    female = yes
+
+    religion = varodaism
+    culture = saruta
+
+    sexuality = heterosexual
+
+    trait = content
+    trait = lazy
+    trait = wrathful
+
+    1108.4.19 = {
+        birth = yes
+    }
+
+    1135.8.7 = {
+        trait = gh_widow
+    }
+
+    1175.7.4 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+saruta_varodaism_7 = {
+    name = "Jagatpal" 
+
+    dynasty = dynasty_saruta_1
+    religion = varodaism
+    culture = saruta
+
+    father = saruta_varodaism_5a
+    sexuality = heterosexual
+
+    trait = fickle
+    trait = paranoid
+    trait = gluttonous
+
+    1151.11.8 = {
+        birth = yes
+        trait = legitimized_bastard
+    }
+
+    1179.8.21 = {
+        add_spouse = hokanta_vidvaookeyatra_38
+    }
+
+    1200.3.1 = {
+    	trait = incapable
+    }
+
+    1204.1.18 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+
+saruta_varodaism_9 = {
+    name = "Prabhavati" 
+    female = yes
+
+    religion = varodaism
+    culture = saruta
+
+    father = saruta_varodaism_7
+    mother = hokanta_vidvaookeyatra_38
+
+    sexuality = heterosexual
+
+    trait = stubborn
+    trait = temperate
+    trait = arrogant
+
+    1191.9.10 = {
+        birth = yes
+    }
+
+    1262.1.18 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+saruta_varodaism_10 = {
+    name = "Kanvarpala" 
+
+    dynasty = dynasty_saruta_1
+    religion = varodaism
+    culture = saruta
+
+    father = saruta_varodaism_7
+    mother = hokanta_vidvaookeyatra_38
+
+    sexuality = heterosexual
+
+    trait = arrogant
+    trait = content
+    trait = cynical
+
+    1192.6.20 = {
+        birth = yes
+    }
+
+    1221.8.12 = {
+        add_spouse = saruta_varodaism_11
+    }
+
+    1250.1.19 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+saruta_varodaism_11 = {
+    name = "Kakanvati" 
+    female = yes
+
+    religion = varodaism
+    culture = saruta
+
+    sexuality = heterosexual
+
+    trait = temperate
+    trait = impatient
+    trait = lazy
+
+    1204.7.14 = {
+        birth = yes
+    }
+
+    1275.2.8 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+
+saruta_varodaism_16 = {
+    name = "Mahidevi" 
+    female = yes
+    dynasty = dynasty_saruta_1
+    religion = varodaism
+    culture = saruta
+
+    father = saruta_varodaism_10
+    mother = saruta_varodaism_11
+
+    sexuality = heterosexual
+
+    trait = gregarious
+    trait = impatient
+    trait = temperate
+
+    1237.10.26 = {
+        birth = yes
+    }
+
+}
+
+saruta_varodaism_17 = {
+	name = "Bachraj"
+	religion = "varodaism"
+	culture = "saruta"
+
+	1178.2.7 = {
+		birth = yes
+	}
+	1198.2.7 = {
+		trait = ambitious
+		trait = cynical
+		trait = gluttonous
+	}
+	1226.11.11 = {
+		death = {
+			death_reason = death_battle
+			killer = watumimba_yakasak_1
+
+		}
+	}
+}
+
+saruta_varodaism_18 = {
+	name = "Harsa"
+	religion = "varodaism"
+	culture = "saruta"
+	father = saruta_varodaism_17
+
+	1206.3.19 = {
+		birth = yes
+		trait = physique_bad_1
+	}
+
+	1226.3.19 = {
+		trait = gregarious
+		trait = content
+		trait = lazy
+	}
+
+	1246.9.21 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+

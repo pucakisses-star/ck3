@@ -1,0 +1,24 @@
+﻿utyalid_harfi_1 = {
+	name = "Jiyaad"
+	dynasty = dyn_bedouin_2
+	religion = "harfi"
+	culture = "utyalid"
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+
+	1215.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_harfi_2 = {
+	name = "Adjan"
+	religion = "harfi"
+	culture = "utyalid"
+
+	1222.10.17 = {
+		birth = yes
+	}
+}

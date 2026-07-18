@@ -1,0 +1,66 @@
+﻿kutma_bekashai_1 = { # bekashai guy who rules a decent realm in the south
+	name = "Benare"
+	religion = bekashai
+	culture = kutma
+	sexuality = heterosexual
+	
+	dynasty = dyn_damota_21
+	
+	diplomacy = 6
+	martial = 10
+	stewardship = 8
+	intrigue = 9
+	learning = 7
+	
+	1227.9.30 = {
+		birth = yes
+	}
+	1239.9.30 = {
+		trait = paranoid
+		trait = brave
+		trait = honest
+	}
+	1239.9.30 = {
+		trait = education_martial_4
+	}
+}
+
+kutma_bekashai_2 = { # vassal of above
+	name = "Karoneb"
+	religion = bekashai
+	culture = kutma
+	
+	1231.4.6 = {
+		birth = yes
+	}
+}
+
+kutma_bekashai_3 = { # vassal of 1
+	name = "Benari"
+	religion = bekashai
+	culture = kutma
+	
+	1230.2.28 = {
+		birth = yes
+	}
+}
+
+kutma_bekashai_4 = { # count in dabisag and ghoja
+	name = "Lodala"
+	religion = bekashai
+	culture = kutma
+	
+	1227.1.25 = {
+		birth = yes
+	}
+}
+
+kutma_bekashai_5 = { # count of bekrem and harille
+	name = "Belori"
+	religion = bekashai
+	culture = kutma
+	
+	1234.7.16 = {
+		birth = yes
+	}
+}

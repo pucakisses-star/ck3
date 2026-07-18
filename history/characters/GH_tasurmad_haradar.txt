@@ -1,0 +1,258 @@
+﻿tasurmad_haradar_1 = {
+	name = "NazI_r"
+	dna = tasurmad_haradar_1
+	religion = "haradar"
+	culture = "tasurmad"
+
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 7
+	learning = 7
+
+	trait = deceitful
+	trait = just
+	trait = patient
+
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = no_hair
+			custom_beards = male_beard_mena_03
+		}
+	}
+
+	1184.2.3 = {
+		birth = yes
+	}
+
+	1200.2.3 = {
+		trait = education_intrigue_3
+		trait = gh_historical_blademaster_3
+	}
+}
+
+tasurmad_haradar_2 = {
+	name = "Altair"
+	dna = tasurmad_haradar_2
+	religion = "haradar"
+	culture = "tasurmad"
+	martial = 7
+	diplomacy = 7
+	intrigue = 10
+	stewardship = 7
+	learning = 7
+
+	trait = brave
+	trait = calm
+	trait = patient
+
+	disallow_random_traits = yes
+
+	father = tasurmad_haradar_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_09
+			custom_beards = no_beard
+		}
+	}
+
+	1204.4.3 = {
+		birth = yes
+	}
+
+	1220.4.3 = {
+		trait = education_intrigue_4
+		trait = gh_historical_blademaster_3
+	}
+}
+
+tasurmad_haradar_3 = {
+	name = "Ezriel"
+	dna = tasurmad_haradar_3
+	religion = "haradar"
+	culture = "tasurmad"
+	martial = 8
+	diplomacy = 6
+	intrigue = 8
+	stewardship = 7
+	learning = 4
+
+	trait = education_intrigue_4
+	trait = gh_historical_blademaster_1
+
+	father = tasurmad_haradar_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_mena_01
+			custom_beards = male_beard_mena_04
+		}
+	}
+
+	1214.4.7 = {
+		birth = yes
+	}
+}
+
+tasurmad_haradar_4 = {
+	name = "Cahnorizm"
+	dna = tasurmad_haradar_4
+	religion = "haradar"
+	culture = "tasurmad"
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 7
+	learning = 7
+
+	father = tasurmad_haradar_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_sub_saharan_02
+			custom_beards = male_beard_mena_02
+		}
+	}
+
+	1224.5.3 = {
+		birth = yes
+	}
+
+	1240.5.3 = {
+		trait = education_intrigue_2
+		trait = gh_historical_blademaster_3
+	}
+}
+
+tasurmad_haradar_5 = {
+	name = "Badr"
+	religion = "haradar"
+	culture = "tasurmad"
+	dynasty = dyn_warden_2
+
+	1157.1.1 = {
+		birth = yes
+	trait = magic_good_4
+	}
+
+	1212.1.1 = {
+		death = yes
+	}
+}
+
+tasurmad_haradar_6 = {
+	name = "yazid"
+	religion = "haradar"
+	culture = "tasurmad"
+	dynasty = dyn_warden_2
+	father = tasurmad_haradar_5
+
+	1180.1.1 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1241.1.1 = {
+		death = yes
+	}
+}
+
+tasurmad_haradar_7 = {
+	name = "Farrokh"
+	religion = "haradar"
+	culture = "tasurmad"
+	father = tasurmad_haradar_1
+
+	1227.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_haradar_8 = {
+	name = "Gulandam"
+	religion = "haradar"
+	culture = "tasurmad"
+	female = yes
+	father = tasurmad_haradar_1
+
+	1234.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_haradar_9 = {
+	name = "Mitra"
+	religion = "haradar"
+	culture = "tasurmad"
+	female = yes
+	father = tasurmad_haradar_1
+
+	1234.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_haradar_10 = {
+	name = "Anahita"
+	religion = "haradar"
+	culture = "tasurmad"
+	female = yes
+	father = tasurmad_haradar_1
+
+	1244.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_haradar_11 = {
+	name = "Kooroush"
+	religion = "haradar"
+	culture = "tasurmad"
+	father = tasurmad_haradar_1
+
+	1239.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_haradar_12 = {
+	name = "Omid"
+	religion = "haradar"
+	culture = "tasurmad"
+	father = tasurmad_haradar_1
+
+	1247.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_haradar_13 = {
+	name = "Davoud"
+	religion = "haradar"
+	culture = "tasurmad"
+	father = tasurmad_haradar_1
+
+	1228.1.1 = {
+		birth = yes
+	}
+}
+
+tasurmad_haradar_14 = { # Founder of the Haradar Expedition to the Pirate Coast in search of the Pillars
+	name = "Badr"
+	religion = haradar
+	culture = tasurmad
+
+	1259.12.23 = {
+		birth = yes
+		trait = gh_peasant_birth
+	}
+	1279.12.23 = {
+		trait = zealous
+		trait = wrathful
+		trait = ambitious
+		trait = education_martial_4
+	}
+}

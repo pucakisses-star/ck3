@@ -1,0 +1,349 @@
+
+480 = {
+	culture = samorihya
+	religion = daramarjaratan
+	holding = castle_holding
+}
+
+485 = {
+	holding = castle_holding
+	culture = orshinid
+	religion = chakkarai
+}
+
+488 = {
+	culture = sindaara
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+495 = {
+	holding = none
+}
+
+517 = {
+	culture = sindaara
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+528 = {
+	holding = church_holding
+}
+
+562 = {
+	holding = city_holding
+}
+
+573 = {
+	culture = marakje
+	religion = vidvaookeyatra
+	holding = castle_holding
+	1.1.1 = {
+		special_building = 01_vilunnak_mines
+	}
+}
+
+605 = {
+	culture = taminiai
+	religion = vidvaookeyatra
+	holding = castle_holding
+	1.1.1 = {
+		special_building = 01_klyabasala
+	}
+}
+
+613 = {
+	culture = sindaara
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+617 = {
+	culture = taminiai
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+629 = {
+	holding = church_holding
+}
+
+635 = {
+	holding = castle_holding
+}
+
+673 = {
+	holding = castle_holding
+	culture = avihana
+	religion = askevaryaa
+}
+
+704 = {
+	culture = yadaniya
+	religion = askevaryaa
+	holding = castle_holding
+}
+
+707 = {
+	culture = qoltaam
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+708 = {
+	culture = sindaara
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+711 = {
+	holding = none 
+}
+
+730 = {
+	holding = church_holding
+}
+
+742 = {
+	culture = marakje
+	religion = askevaryaa
+	holding = castle_holding
+}
+
+754 = {
+	holding = church_holding
+}
+
+786 = {
+	culture = ilahanai
+	religion = daramarjaratan
+	holding = castle_holding
+}
+
+805 = {
+	culture = orshinid
+	religion = chakkarai
+	holding = castle_holding
+}
+
+811 = {
+	holding = none
+}
+
+822 = {
+	holding = none
+}
+
+1473 = {
+	holding = none
+}
+
+830 = {
+	culture = yadaniya
+	religion = andaronshak
+	holding = castle_holding
+	1.1.1 = {
+		special_building = 01_kashiryatower
+	}
+}
+
+869 = {
+	culture = marakje
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+964 = {
+	culture = kadwana
+	religion = varodaism
+	holding = castle_holding
+}
+
+978 = {
+	holding = church_holding
+}
+
+478 = {
+	holding = castle_holding
+	culture = orshinid
+	religion = chakkarai
+}
+
+1025 = {
+	holding = castle_holding
+	1.1.1 = {
+		special_building = 01_candamarun_academy
+	}
+}
+
+
+1036 = {
+	holding = castle_holding
+}
+
+1037 = {
+	holding = church_holding
+}
+
+1046 = {
+	culture = yaknha
+	religion = andaronshak
+	holding = castle_holding
+}
+
+1208 = {
+	holding = none
+}
+
+1251 = {
+	culture = agunaha
+	religion = andaronshak
+	holding = castle_holding
+}
+
+
+1303 = {
+	culture = kadwana
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+1514 = {
+	holding = church_holding
+}
+
+
+1603 = {
+	culture = avihana
+	religion = askevaryaa
+	holding = castle_holding
+}
+
+
+1843 = {
+	holding = ruin_holding
+}
+
+1886 = {
+	holding = none
+}
+
+1906 = {
+	culture = tehaina
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+1914 = {
+	holding = castle_holding
+}
+
+2026 = {
+	holding = church_holding
+}
+
+2043 = {
+	holding = city_holding
+}
+
+2047 = {
+	holding = church_holding
+}
+
+2069 = {
+	culture = kadwana
+	religion = asritayka
+	holding = castle_holding
+}
+
+
+2292 = {
+	culture = samorihya
+	religion = daramarjaratan
+	holding = castle_holding
+}
+
+2304 = {
+	culture = lainar
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+2328 = {
+	culture = lainar
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+2337 = {
+	culture = siklasa
+	religion = dravadari
+	holding = castle_holding
+}
+
+2338 = {
+	holding = city_holding
+}
+
+
+
+4132 = {
+	culture = marakje
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+5612 = {
+	culture = avihana
+	religion = askevaryaa
+	holding = castle_holding
+}
+
+5972 = {
+	culture = lainar
+	religion = vidvaookeyatra
+	holding = castle_holding
+	1036.5.4 = {
+		special_building = 01_harekana_observatory
+	}
+}
+
+6048 = {
+	culture = jakana
+	religion = varodaism
+	holding = castle_holding
+}
+
+6051 = {
+	culture = jakana
+	religion = varodaism
+	holding = castle_holding
+}
+
+8649 = {
+	culture = avihana
+	religion = askevaryaa
+	holding = metro_holding
+	1000.1.1 = {
+		buildings = {
+			metro_03
+		}
+	}
+}
+
+8670 = {
+	holding = city_holding
+}
+
+8714 = {
+	holding = castle_holding
+}
+
+9296 = {
+	holding = church_holding
+}
+
+9298 = {
+	holding = church_holding
+}

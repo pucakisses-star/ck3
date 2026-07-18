@@ -1,0 +1,73 @@
+c_maradihana = { 
+	1230.1.1 = {
+		liege = k_lahkoryun
+		holder = mirzana_jahar_ruidari_2
+	}
+}
+c_skivrinv = { 
+	1229.12.12 = {
+		liege = e_ayyar
+		holder = leriseb_sheharddi_2
+		government = republic_playable_government
+		succession_laws = { clique_republic_elective_title_succession_law }
+	}
+}
+c_bharak = { 
+	1252.7.4 = {
+		liege = 0
+		holder = leriseb_sheharddi_3
+	}
+}
+c_mrevridad = { 
+	1230.1.1 = {
+		liege = e_ayyar
+		holder = mirzana_jahar_ruidari_6
+	}
+}
+c_dvrenuni = { 
+	1230.1.1 = {
+		liege = e_ayyar
+		holder = babura_ruidari_1
+	}
+}
+c_gruvan = { 
+	1230.1.1 = {
+		liege = e_ayyar
+		holder = babura_ruidari_1
+	}
+}
+c_beveb = {
+	1230.1.1 = {
+		liege = e_ayyar
+		holder = mirzana_jahar_ruidari_1
+	}
+}
+c_verevheth = {
+	1000.1.1 = {
+		holder = wasteland
+	}
+}
+#c_vevrani = {
+#	1230.1.1 = {
+#		liege = e_ayyar
+#		holder = auzangeb_ruidari_21
+#	}
+#}
+c_payar = {
+	1230.1.1 = {
+		liege = e_ayyar
+		holder = auzangeb_ruidari_21
+	}
+}
+c_krakrenv = {
+	1230.1.1 = {
+		liege = e_ayyar
+		holder = auzangeb_ruidari_21
+	}
+}
+#c_vokuri = {
+#	1230.1.1 = {
+#		liege = e_ayyar
+#		holder = auzangeb_ruidari_21
+#	}
+#}

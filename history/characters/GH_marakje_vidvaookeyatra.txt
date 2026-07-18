@@ -1,0 +1,25 @@
+﻿marakje_vidvaookeyatra_1 = { # Avihana vassal
+	name = "Samudrasen"
+	religion = "vidvaookeyatra"
+	culture = "marakje"
+
+	trait = gregarious
+	trait = gluttonous
+	trait = lazy
+
+	trait = drunkard
+
+	trait = education_diplomacy_2
+	1211.8.8 = {
+		birth = yes
+	}
+}
+
+marakje_vidvaookeyatra_2 = {
+	name = "Venkatrao"
+	religion = "vidvaookeyatra"
+	culture = "marakje"
+	1225.8.8 = {
+		birth = yes
+	}
+}

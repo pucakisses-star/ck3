@@ -1,0 +1,160 @@
+﻿
+###KORLONALMIC HERETICS###
+korlonalmic_korlacan_1 = {
+	name = "Ming_Kyaw"
+	religion = "korlonalmic"
+	culture = "korlacan"
+	trait = magic_good_4
+	470.1.1 = { 
+		birth = yes 
+	}
+	486.1.1 = { 
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:disciples_of_the_sacred_flame }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			set_base_arcana = { AMOUNT = 5 }
+		}
+	}
+	525.1.1 = { 
+		death = { 
+			death_reason = death_natural_causes
+		} 
+	}
+}
+
+
+korlonalmic_korlacan_2 = {
+	name = "Thiri_Zaw"
+	religion = "korlonalmic"
+	culture = "korlacan"
+	trait = magic_good_5
+	500.1.1 = { 
+		birth = yes 
+	}
+	516.1.1 = { 
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:disciples_of_the_sacred_flame }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			set_base_arcana = { AMOUNT = 6 }
+		}
+	}
+	575.1.1 = { 
+		death = { 
+			death_reason = death_natural_causes
+		} 
+	}
+}
+
+korlonalmic_korlacan_3 = {
+	name = "Aung_Min"
+	religion = "korlonalmic"
+	culture = "korlacan"
+	
+	trait = magic_good_4
+	525.1.1 = { 
+		birth = yes 
+	}
+	541.1.1 = { 
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:disciples_of_the_sacred_flame }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			set_base_arcana = { AMOUNT = 6 }
+		}
+	}
+	625.1.1 = { 
+		death = { 
+			death_reason = death_natural_causes
+		} 
+	}
+}
+
+korlonalmic_korlacan_4 = {
+	name = "Khin_Maung"
+	religion = "korlonalmic"
+	culture = "korlacan"
+	trait = magic_good_3
+	575.1.1 = { 
+		birth = yes 
+	}
+	591.1.1 = { 
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:disciples_of_the_sacred_flame }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			set_base_arcana = { AMOUNT = 3 }
+		}
+	}
+	675.1.1 = { 
+		death = { 
+			death_reason = death_natural_causes
+		} 
+	}
+}
+
+korlonalmic_korlacan_5 = {
+	name = "Htun_Kyaw" 
+	religion = "korlonalmic"
+	culture = "korlacan"
+	trait = magic_good_5
+	675.1.1 = { 
+		birth = yes 
+	}
+	691.1.1 = { 
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:disciples_of_the_sacred_flame }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			set_base_arcana = { AMOUNT = 7 }
+		}
+	}
+	730.1.1 = { 
+		death = { 
+			death_reason = death_natural_causes
+		} 
+	}
+}
+
+korlonalmic_korlacan_6 = {
+	name = "Kyaw_Thura"
+	religion = "korlonalmic"
+	culture = "korlacan"
+	trait = magic_good_5
+	675.1.1 = { 
+		birth = yes 
+	}
+	691.1.1 = { 
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:disciples_of_the_sacred_flame }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			set_base_arcana = { AMOUNT = 6 }
+		}
+	}
+	747.1.1 = { 
+		death = { 
+			death_reason = death_duel
+			killer = nathanalmic_nattanan_17 # Aung Naing is HIM...
+		} 
+	}
+}
+
+korlonalmic_korlacan_7 = {
+	name = "Zaw_Aung_Min"
+	religion = "korlonalmic"
+	culture = "korlacan"
+	
+	trait = magic_good_4
+	685.1.1 = { 
+		birth = yes 
+	}
+	701.1.1 = { 
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:disciples_of_the_sacred_flame }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			set_base_arcana = { AMOUNT = 7 }
+		}
+	}
+	760.1.1 = { 
+		death = { 
+			death_reason = death_battle
+			killer = nathanalmic_nattanan_17 # Aung Naing strikes again and destroys the heresy
+		} 
+	}
+}

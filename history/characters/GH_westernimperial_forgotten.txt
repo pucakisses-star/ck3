@@ -1,0 +1,129 @@
+﻿westernimperial_forgotten_1 = { # Adazon the Voidborne
+	name = "Adazon"
+	religion = aversarinas_aagiokrata
+	culture = westernimperial
+	disallow_random_traits = yes
+
+	dna = adazon
+
+	martial = 6
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 7
+	learning = 4
+	prowess = 4
+
+	1063.9.24 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1075.1.1 = {
+		trait = zealous
+		trait = deceitful
+		trait = calm
+	}
+
+	1079.9.24 = {
+		trait = education_intrigue_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+		trait = schemer
+		trait = shrewd
+	}
+
+	1135.2.25 = {
+		religion = forgotten
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+westernimperial_forgotten_2 = { # Safiran the Voidborne
+	name = "Safiran"
+	religion = aversarinas_aagiokrata
+	culture = westernimperial
+	disallow_random_traits = yes
+	female = yes
+
+	dna = safiran
+
+	martial = 5
+	diplomacy = 8
+	intrigue = 7
+	stewardship = 7
+	learning = 6
+	prowess = 3
+
+	1064.7.21 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1076.1.1 = {
+		trait = vengeful
+		trait = wrathful
+		trait = diligent
+	}
+
+	1080.7.21 = {
+		trait = gh_historical_blademaster_2
+		trait = gh_ritual_tattoos
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1128.6.9 = {
+		religion = forgotten
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+westernimperial_forgotten_3 = { # Letalagos Zekos of the Forgotten Saint's Order Militant
+	name = "Zekos"
+	religion = aversarinas_aagiokrata
+	culture = westernimperial
+	disallow_random_traits = yes
+
+	dna = zekos
+
+	martial = 4
+	diplomacy = 8
+	intrigue = 5
+	stewardship = 3
+	learning = 5
+	prowess = 5
+
+	1031.3.8 = {
+		birth = yes
+	}
+
+	1043.1.1 = {
+		trait = brave
+		trait = humble
+		trait = wrathful
+	}
+
+	1047.3.8 = {
+		trait = education_martial_2
+		trait = reckless
+	}
+
+	1090.11.5 = {
+		religion = forgotten
+		death = {
+			death_reason = death_battle
+			killer = centralimperial_aversarinas_aagiokrata_166
+		}
+	}
+}

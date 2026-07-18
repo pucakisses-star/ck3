@@ -1,0 +1,63 @@
+c_south_bedouins_67 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_south_bedouins_66 = {
+	1200.3.1 = {
+		government = migratory_government
+		holder = tafara_harfi_2
+	}
+}
+c_south_bedouins_56 = {
+	1200.3.1 = {
+		holder = takopara_sokaloma_3
+	}
+}
+#c_south_bedouins_55 = {
+#	1200.3.1 = {
+#		holder = takopara_sokaloma_4
+#	}
+#}
+c_south_bedouins_54 = {
+	1200.3.1 = {
+		government = migratory_government
+		holder = tafara_harfi_3
+	}
+}
+c_south_bedouins_52 = {
+	1200.3.1 = {
+	holder = wasteland
+	}
+}
+c_south_bedouins_63 = {
+	1200.3.1 = {
+	holder = wasteland
+	}
+}
+c_south_bedouins_58 = {
+	1200.3.1 = {
+	holder = wasteland
+	}
+}
+c_south_bedouins_68 = {
+	1200.3.1 = {
+		holder = wasteland
+		}
+}
+c_south_bedouins_69 = {
+	1200.3.1 = {
+		holder = takopara_sokaloma_2
+	}
+}
+c_new_sarradon_county15 = {
+	1200.3.1 = {
+	holder = wasteland
+	}
+}
+c_new_sarradon_county22 = {
+	1200.3.1 = {
+		government = migratory_government
+		holder = tafara_harfi_1
+	}
+}

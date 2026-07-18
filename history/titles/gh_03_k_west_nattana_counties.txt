@@ -1,0 +1,290 @@
+c_lastshade = { #id = 8582 # Hilaynan
+	730.1.1 = {
+		holder = korlonalmic_korlacan_6 
+	}
+
+	747.1.1 = {
+		holder = korlonalmic_korlacan_7 
+	}
+
+	756.1.1 = {
+		holder = nathanalmic_nattanan_17
+	}
+
+	860.6.25 = {
+		holder = katharnalmic_kyawkan_19 # Kyaw Min Htet
+	}
+	912.5.10 = {
+		holder = katharnalmic_kyawkan_18 # Kyaw Min Htet
+	}
+
+	945.9.22 = {
+		holder = katharnalmic_kyawkan_17 # Myat Aung Zaw
+	}
+
+	978.7.15 = {
+		holder = katharnalmic_kyawkan_16 # Nanda Kyaw
+	}
+
+	1005.4.10 = {
+		holder = katharnalmic_kyawkan_15 # Thet Naing
+	}
+
+	1032.2.17 = {
+		holder = katharnalmic_kyawkan_14 # Soe Aung
+	}
+
+	1065.11.30 = {
+		holder = katharnalmic_kyawkan_13 # Ye Myint
+	}
+
+	1092.3.5 = {
+		holder = katharnalmic_kyawkan_12 # Zaw Lin Htut
+	}
+
+	1120.10.14 = {
+		holder = katharnalmic_kyawkan_11 # Aung Myo
+	}
+
+	1155.1.22 = {
+		holder = katharnalmic_kyawkan_5 # Aung Kyaw
+	}
+
+	1170.11.25 = {
+		holder = katharnalmic_kyawkan_7
+	}
+	1200.3.1 = {
+		holder = katharnalmic_kyawkan_9
+	}
+   1225.3.1 = {
+		holder = katharnalmic_kyawkan_1 #Thet Naung Zin
+		government = tribal_government
+	}
+	1249.1.1 = { 
+		holder = katharnalmic_kyawkan_4
+		government = tribal_government
+	}
+}
+
+c_fieryforge = {  #id 9216
+	
+	730.1.1 = {
+		holder = korlonalmic_korlacan_6 
+	}
+
+	747.1.1 = {
+		holder = korlonalmic_korlacan_7 
+	}
+
+	760.1.1 = {
+		holder = nathanalmic_nattanan_17
+	}
+
+	860.6.25 = {
+		holder = katharnalmic_kyawkan_19 # Kyaw Min Htet
+	}
+	912.5.10 = {
+		holder = katharnalmic_kyawkan_18 # Kyaw Min Htet
+	}
+
+	945.9.22 = {
+		holder = katharnalmic_kyawkan_17 # Myat Aung Zaw
+	}
+
+	978.7.15 = {
+		holder = katharnalmic_kyawkan_16 # Nanda Kyaw
+	}
+
+	1005.4.10 = {
+		holder = katharnalmic_kyawkan_15 # Thet Naing
+	}
+
+	1032.2.17 = {
+		holder = katharnalmic_kyawkan_14 # Soe Aung
+	}
+
+	1065.11.30 = {
+		holder = katharnalmic_kyawkan_13 # Ye Myint
+	}
+
+	1092.3.5 = {
+		holder = katharnalmic_kyawkan_12 # Zaw Lin Htut
+	}
+
+	1120.10.14 = {
+		holder = katharnalmic_kyawkan_11 # Aung Myo
+	}
+
+	1155.1.22 = {
+		holder = katharnalmic_kyawkan_5 # Aung Kyaw
+	}
+
+	1170.11.25 = {
+		holder = katharnalmic_kyawkan_7
+	}
+	
+ 	1200.3.1 = {
+		holder = katharnalmic_kyawkan_9
+	}
+
+	1225.3.1 = {
+		holder = katharnalmic_kyawkan_1 
+		government = tribal_government
+	}
+	1240.1.1 = {
+		holder = katharnalmic_kyawkan_23 
+		government = tribal_government
+	}
+}
+
+c_suns_rest = {  #id 8970
+	
+	730.1.1 = {
+		holder = korlonalmic_korlacan_6 
+	}
+
+	747.1.1 = {
+		holder = korlonalmic_korlacan_7 
+	}
+
+	760.1.1 = {
+		holder = nathanalmic_nattanan_17
+	}
+
+	1213.8.1 = {
+		holder = katharnalmic_kyawkan_26
+	}
+
+}
+
+c_iron_fortress = {  #id 8970
+	
+	730.1.1 = {
+		holder = korlonalmic_korlacan_6 
+	}
+
+	747.1.1 = {
+		holder = korlonalmic_korlacan_7 
+	}
+
+	760.1.1 = {
+		holder = nathanalmic_nattanan_17
+	}
+
+	860.6.25 = {
+		holder = katharnalmic_kyawkan_19 # Kyaw Min Htet
+	}
+	912.5.10 = {
+		holder = katharnalmic_kyawkan_18 # Kyaw Min Htet
+	}
+
+	945.9.22 = {
+		holder = katharnalmic_kyawkan_17 # Myat Aung Zaw
+	}
+
+	978.7.15 = {
+		holder = katharnalmic_kyawkan_16 # Nanda Kyaw
+	}
+
+	1005.4.10 = {
+		holder = katharnalmic_kyawkan_15 # Thet Naing
+	}
+
+	1032.2.17 = {
+		holder = katharnalmic_kyawkan_14 # Soe Aung
+	}
+
+	1065.11.30 = {
+		holder = katharnalmic_kyawkan_13 # Ye Myint
+	}
+
+	1092.3.5 = {
+		holder = katharnalmic_kyawkan_12 # Zaw Lin Htut
+	}
+
+	1120.10.14 = {
+		holder = katharnalmic_kyawkan_11 # Aung Myo
+	}
+
+	1155.1.22 = {
+		holder = katharnalmic_kyawkan_5 # Aung Kyaw
+	}
+
+	1170.11.25 = {
+		holder = katharnalmic_kyawkan_7
+	}
+	
+ 	1200.3.1 = {
+		holder = katharnalmic_kyawkan_9
+	}
+
+	1225.3.1 = {
+		holder = katharnalmic_kyawkan_1 
+		government = tribal_government
+	}
+	1249.1.1 = { 
+		holder = katharnalmic_kyawkan_3
+		government = tribal_government
+	}
+}
+
+c_fallhomestead = { #id = 7915; Nukuric
+  1235.3.1 = {
+		holder = nathanalmic_nattanan_31
+  }
+}
+
+c_paths_edge = { 
+  1235.3.1 = {
+		holder = katharnalmic_kyawkan_20
+  }
+}
+
+c_dense_crags = {
+	1249.1.1 = { 
+		holder = katharnalmic_kyawkan_3
+		government = tribal_government
+	}
+}
+
+c_safedivide = {  #id = 8902; Samarang
+	500.1.1 = {
+		holder = korlonalmic_korlacan_1
+	}
+	525.1.1 = { 
+		holder = korlonalmic_korlacan_2
+	}
+	575.1.1 = {
+		holder = korlonalmic_korlacan_3
+	}
+	625.1.1 = {
+		holder = korlonalmic_korlacan_4
+	}
+	695.1.1 = { 
+		holder = korlonalmic_korlacan_5
+	}
+	730.1.1 = {
+		holder = korlonalmic_korlacan_6 # Killed by Aung Naing (Sepattan High priest)
+	}
+	747.11.1 = {
+		holder = nathanalmic_nattanan_17
+	}
+	1242.2.1 = {
+		holder = katharnalmic_kyawkan_21
+		government = magocratic_government
+	}
+}
+
+c_strong_redoubt = {
+	1227.7.4 = { 
+		holder = katharnalmic_kyawkan_24
+		government = tribal_government
+	}
+}
+
+c_highpoint = {
+	1227.7.4 = { 
+		holder = katharnalmic_kyawkan_25
+		government = tribal_government
+	}
+}

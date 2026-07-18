@@ -1,0 +1,50 @@
+﻿karana_karitkarmaic_1 = { # Kaytha, famed Kashiryan mercenary that ended the Chojakaan ka Ghatada  
+    name = "Kaytha"
+    religion = "karitkarmaic"
+    culture = "karana"
+
+    female = yes
+    sexuality = heterosexual
+    dna = kaytha
+
+    martial = 9
+    diplomacy = 4
+    stewardship = 6
+    intrigue = 5
+    learning = 5
+    prowess = 10
+
+    998.10.17 = {
+        birth = yes
+        trait = physique_good_1
+    }
+
+    1010.1.1 = {
+        trait = temperate
+        trait = vengeful
+        trait = just
+    }
+
+    1014.10.17 = {
+        effect = { set_base_arcana = { AMOUNT = 5 } }
+        trait = education_martial_3
+        trait = gh_historical_blademaster_2
+        trait = strong
+        trait = adventurer
+    }
+
+    1038.10.20 = { # Ended the Chojakaan ka Ghatada at great personal cost
+		trait = gh_one_handed
+		trait = scarred
+		add_trait_xp = {
+            trait = scarred
+            value = 60
+        }
+    }
+
+    1042.10.4 = { # Died in one of the many battles during the Dharya Varha
+        death = {
+            death_reason = death_battle
+        }
+    }
+}

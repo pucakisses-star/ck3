@@ -1,0 +1,8 @@
+﻿muhadamd_arayymorog_1 = {
+	name = "Arkhai"
+	religion = arayymorog
+	culture = muhadamd
+	1225.11.29 = {
+		birth = yes
+	}
+}

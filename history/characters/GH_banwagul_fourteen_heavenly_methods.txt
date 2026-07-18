@@ -1,0 +1,172 @@
+﻿banwagul_fourteen_heavenly_methods_1 = { # Bronzeport vassal
+	name = "Dirokan"
+	religion = "fourteen_heavenly_methods"
+	culture = "banwagul"
+	dynasty = dyn_tanarka_2
+
+	father = banwagul_fourteen_heavenly_methods_2
+
+	martial = 9
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 10
+	learning = 5
+	prowess = 6
+
+	1217.2.6 = {
+		birth = yes
+	}
+
+	1229.1.1 = {
+		trait = lazy
+		trait = paranoid
+		trait = humble
+	}
+
+	1233.2.6 = {
+		trait = education_stewardship_2
+	}
+
+	1242.12.21 = {
+		effect = {
+			create_character_memory = { # Ratarakaw
+				type = saw_ratarakaw
+			}
+		}
+	}
+
+	1249.10.1 = {
+		#employer = lakoeng_fourteen_heavenly_methods_1
+		give_council_position = councillor_steward
+	}
+}
+
+banwagul_fourteen_heavenly_methods_2 = { # Betrayed Talati
+	name = "Adikan"
+	religion = "dahala"
+	culture = "banwagul"
+	dynasty = dyn_tanarka_2
+
+	father = banwagul_dahala_10
+
+	martial = 5
+	diplomacy = 4
+	intrigue = 11
+	stewardship = 4
+	learning = 4
+	prowess = 6
+
+	1182.1.24 = {
+		birth = yes
+	}
+
+	1194.1.1 = {
+		trait = compassionate
+		trait = brave
+		trait = arrogant
+	}
+
+	1198.1.24 = {
+		trait = education_intrigue_2
+		trait = shrewd
+	}
+
+	1247.1.9 = {
+		religion = fourteen_heavenly_methods
+		trait = murderer
+	}
+
+	1249.10.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+banwagul_fourteen_heavenly_methods_3 = { 
+	name = "Muyad"
+	religion = "dahala"
+	culture = "banwagul"
+
+
+	1198.1.24 = {
+		birth = yes
+	}
+}
+
+banwagul_fourteen_heavenly_methods_4 = { 
+	name = "Taskal"
+	religion = "dahala"
+	culture = "banwagul"
+
+
+	1229.1.24 = {
+		birth = yes
+	}
+}
+
+banwagul_fourteen_heavenly_methods_5 = { 
+	name = "Lapyo"
+	religion = "dahala"
+	culture = "banwagul"
+
+
+	1192.1.24 = {
+		birth = yes
+	}
+}
+
+banwagul_fourteen_heavenly_methods_6 = { 
+	name = "Daykan"
+	religion = "dahala"
+	culture = "banwagul"
+
+
+	1228.1.24 = {
+		birth = yes
+	}
+}
+
+banwagul_fourteen_heavenly_methods_7 = { 
+	name = "Gimhal"
+	religion = "dahala"
+	culture = "banwagul"
+
+
+	1219.1.24 = {
+		birth = yes
+	}
+}
+
+banwagul_fourteen_heavenly_methods_8 = { 
+	name = "Pasad"
+	religion = "dahala"
+	culture = "banwagul"
+
+
+	1225.1.24 = {
+		birth = yes
+	}
+}
+
+banwagul_fourteen_heavenly_methods_9 = { 
+	name = "Dawikan"
+	religion = "dahala"
+	culture = "banwagul"
+
+
+	1198.1.24 = {
+		birth = yes
+	}
+}
+
+banwagul_fourteen_heavenly_methods_10 = { 
+	name = "Pasad"
+	religion = "dahala"
+	culture = "banwagul"
+
+
+	1226.1.24 = {
+		birth = yes
+	}
+}

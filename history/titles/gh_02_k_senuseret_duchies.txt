@@ -1,0 +1,40 @@
+d_impekheret = { 
+	1195.1.1 = {
+		holder = alewui_kemsari_kemsar_11
+		government = tribal_government
+	}
+	1244.1.1 = {
+		holder = alewui_kemsari_kemsar_1
+		government = tribal_government
+	}
+	1230.1.1 = { change_development_level = 4 	}
+}
+#d_deshsenuseret = { 
+#	1195.1.1 = {
+#		government = tribal_government
+#		holder = alewui_kemsari_kemsar_13
+#	}
+#	1244.1.1 = {
+#		government = tribal_government
+#		holder = alewui_kemsari_kemsar_2
+#	}
+#	1230.1.1 = { change_development_level = 4 	}
+#}
+d_kamun = { 
+	1244.1.1 = {
+		government = tribal_government
+		holder = alewui_kemsari_vinderon_1
+	}
+	1230.1.1 = { change_development_level = 3 	}
+}
+d_khepesh = { 
+	1175.1.1 = {
+		government = tribal_government
+		holder = alewui_kemsari_kemsar_10
+	}
+	1244.1.1 = {
+		government = tribal_government
+		holder = alewui_kemsari_kemsar_3
+	}
+	1230.1.1 = { change_development_level = 4 	}
+}

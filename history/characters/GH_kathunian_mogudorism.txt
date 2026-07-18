@@ -1,0 +1,151 @@
+﻿kathunian_mogudorism_1 = { # Kathuni governor of the Southlands Protectorate
+	name = "Jaisha"
+	dynasty  = dyn_kathunian_mogudorism_1
+	religion = "fourteen_heavenly_methods"
+	culture = "kathunian"
+	disallow_random_traits = yes
+
+	martial = 7
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 8
+	learning = 6
+	prowess = 6
+
+	1209.8.28 = {
+		birth = yes
+		trait = intellect_good_2
+	}
+
+	1221.1.1 = {
+		trait = vengeful
+		trait = lazy
+		trait = calm
+	}
+
+	1225.8.28 = {
+		trait = education_intrigue_2
+		trait = scholar
+	}
+
+	1250.2.7 = {
+	religion = "mogudorism"
+	}
+}
+
+kathunian_mogudorism_2 = { # Son of Ma Sou-Wel, converted to Mogudorism
+	name = "Daiju"
+	religion = "fourteen_heavenly_methods"
+	culture = "kathunian"
+
+	dynasty = dyn_kathunian_fourteen_heavenly_methods_4
+	sexuality = heterosexual
+	father = kathunian_fourteen_heavenly_methods_5
+
+	martial = 6
+	diplomacy = 5
+	stewardship = 7
+	intrigue = 4
+	learning = 3
+	prowess = 8
+
+	1201.2.22 = {
+	birth = yes
+	}
+
+	1213.1.1 = {
+	trait = arrogant
+	trait = gluttonous
+	trait = greedy
+	}
+
+	1217.2.22 = {
+	effect = { set_base_arcana = { AMOUNT = 8 } }
+	trait = education_stewardship_1
+	trait = profligate
+	trait = drunkard
+	}
+
+	1248.8.4 = {
+	religion = "mogudorism"
+	}
+}
+
+kathunian_mogudorism_3 = { # Ma Taijin, Jaisha's chief advisor
+	name = "Taijin"
+	religion = "fourteen_heavenly_methods"
+	culture = "kathunian"
+
+	dynasty = dyn_kathunian_fourteen_heavenly_methods_4
+	sexuality = heterosexual
+	father = kathunian_mogudorism_2
+
+	martial = 8
+	diplomacy = 8
+	stewardship = 4
+	intrigue = 7
+	learning = 6
+	prowess = 9
+
+	1229.5.11 = {
+	birth = yes
+	trait = physique_good_1
+	}
+
+	1241.1.1 = {
+	trait = greedy
+	trait = ambitious
+	trait = sadistic
+	}
+
+	1245.5.11 = {
+	effect = { set_base_arcana = { AMOUNT = 6 } }
+	trait = education_diplomacy_4
+	trait = shrewd
+	}
+
+	1248.8.4 = {
+	trait = schemer
+	religion = "mogudorism"
+	}
+
+	1250.2.7 = {
+		employer = kathunian_mogudorism_1
+		give_council_position = councillor_chancellor
+	}
+}
+
+kathunian_mogudorism_4 = { # Wife of Aydahis, Hatubahi claimant to Ufaliracci during a Protectorate financed claim war from 790-799
+	name = "Huiduan"
+	female = yes
+	religion = "mogudorism"
+	culture = "kathunian"
+
+	735.9.17 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	755.1.1 = {
+		trait = deceitful
+		trait = paranoid
+		trait = lustful
+		trait = education_intrigue_4
+	}
+
+	760.1.1 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:scarlet_bronze_formulae }
+			set_variable = { name = historical_magic_school_min_spells value = 1 }
+		}
+	}
+
+	761.1.1 = {
+		# trait = gh_boneshape # GH UREGNT: Removed, replace these with modifiersd_beauty_2
+	}
+
+	799.6.26 = {
+		death = { death_reason = death_siege }
+	}
+}

@@ -1,0 +1,59 @@
+﻿utyalid_harthahi_1 = {
+	name = "Dhaki"
+	dynasty = dyn_bedouin_1
+	religion = "harthahi"
+	culture = "utyalid"
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+
+	1220.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_harthahi_2 = {
+	name = "Yusri"
+	dynasty = dyn_bedouin_4
+	religion = "harthahi"
+	culture = "utyalid"
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_harthahi_3 = {
+	name = "Qaasim"
+	dynasty = dyn_khenemhat_13
+	religion = "harthahi"
+	culture = "utyalid"
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+
+	1216.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_harthahi_4 = {
+	name = "Muammar"
+	dynasty = dyn_khenemhat_14
+	religion = "harthahi"
+	culture = "utyalid"
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+
+	1215.1.1 = {
+		birth = yes
+	}
+}

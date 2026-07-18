@@ -1,0 +1,8 @@
+﻿k_westkatraddia_6 = { #Thanatosia
+	764.1.1 = {
+		holder = centralimperial_aversarinas_aagiokrata_28
+	}
+	784.9.1 = {
+		holder = 0
+	}
+}

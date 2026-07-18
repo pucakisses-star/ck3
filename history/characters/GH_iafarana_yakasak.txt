@@ -1,0 +1,15 @@
+﻿iafarana_yakasak_1 = {
+	name = "VirA_cakecaripanmar"
+	religion = "varodaism"
+	culture = "iafarana"
+	dynasty = dynasty_iafarana_1
+	father = iafarana_varodaism_4
+	mother = iafarana_varodaism_5
+	1222.8.8 = {
+		birth = yes
+	}
+
+	1242.1.1 = {
+		religion = "yakasak"
+	}
+}

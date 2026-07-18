@@ -1,0 +1,32 @@
+#d_132 = {
+#	1230.1.1 = { change_development_level = 1 }
+#	
+#	1230.1.1 = {
+#		holder = fog_eaters_fogeater_141
+#		liege = 0
+#		government = migratory_government
+#	}
+#}
+d_124 = {
+	1.1.2 = {
+		holder = unsorted_43
+	}
+	200.1.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}
+d_133a = {
+	1.1.2 = {
+		holder = unsorted_43
+	}
+	200.1.1 = {
+		holder = wasteland
+	}
+	1168.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_31
+	}
+	1200.3.1 = {
+		holder = 0
+	}
+}

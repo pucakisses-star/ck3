@@ -1,0 +1,565 @@
+﻿brigandines_partic_1 = {
+	name = "Beoth-Aoidh"
+	dynasty = dyn_partic_18
+	religion = "partic"
+	culture = "brigandines"
+
+	1219.1.1 = {
+		birth = yes
+	}
+	1250.1.1 = {
+		add_spouse = brigandines_partic_2
+	}
+
+	1276.4.20 = {
+		death = { death_reason = death_magic_petrify }
+	}
+}
+
+brigandines_partic_2 = {
+	name = "Aona"
+	religion = "partic"
+	culture = "brigandines"
+	female = yes
+
+	1220.10.1 = {
+		birth = yes
+		trait = intellect_good_1
+		trait = magic_good_7
+	}
+
+	1236.10.1 = {
+		trait = education_arcana_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:silentspeak }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1250.1.1 = {
+		add_spouse = brigandines_partic_1
+		trait = blind
+		trait = gh_riftsight_4
+	}
+}
+
+brigandines_partic_3 = {
+	name = "Criochas"
+	religion = "partic"
+	culture = "brigandines"
+
+	1225.1.1 = {
+		birth = yes
+		trait = magic_good_4
+	}
+	1245.1.1 = {
+		trait = gh_ritual_scars_3
+		trait = gh_ritual_tattoos
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+	1254.1.1 = {
+		employer = brigandines_partic_1
+		trait = gh_dehanded
+		trait = depressed_1
+	}
+
+	1292.12.28 = { death = { death_reason = death_old_age } }
+}
+
+brigandines_partic_4 = {
+	name = "Faolacht" #Concubine
+	female = yes
+	religion = "partic"
+	culture = "brigandines"
+
+	1229.1.1 = {
+		birth = yes
+	}
+	1251.8.20 = {
+		employer = voluntic_partic_1
+	}
+
+	1256.2.2 = {
+		death = { death_reason = death_childbirth }
+	}
+}
+
+brigandines_partic_5 = {
+    name = "Gamhlas" 
+
+    
+    religion = partic
+    culture = brigandines
+
+    sexuality = heterosexual
+
+    trait = humble
+    trait = fickle
+    trait = gluttonous
+
+    1238.5.14 = {
+        birth = yes
+        trait = wheezing
+    }
+    1279.8.27 = {
+        add_spouse = irmionoth_sjalvolki_28
+    }
+    1283.5.1 = {
+        culture = laodantines
+    }
+}
+
+brigandines_partic_6 = {
+    name = "Orlach" 
+
+    
+    religion = partic
+    culture = brigandines
+
+    father = brigandines_partic_5
+    mother = irmionoth_sjalvolki_28
+
+    sexuality = heterosexual
+
+    trait = callous
+    trait = zealous
+    trait = craven
+
+    1280.5.17 = {
+        birth = yes
+    }
+
+    1283.5.1 = {
+        culture = laodantines
+    }
+}
+
+brigandines_partic_7 = {
+    name = "Ogair" 
+    father = brigandines_partic_1
+    mother = brigandines_partic_4
+    dynasty = dyn_partic_18
+    religion = partic
+    culture = brigandines
+
+    sexuality = heterosexual
+    1252.3.5 = {
+        birth = yes
+        trait = magic_good_1
+    }
+
+    1271.1.1 = {
+        add_spouse = brigandines_partic_8
+        trait = gluttonous
+        trait = humble
+        trait = lustful
+    }
+
+    1283.5.1 = {
+        culture = laodantines
+    }
+
+    1286.1.1 = {
+        trait = drunkard
+    }
+
+    1295.3.7 = {
+        death = { death_reason = death_drinking_passive }
+    }
+}
+
+brigandines_partic_8 = {
+    name = "Aoilne" 
+    female = yes
+
+    religion = partic
+    culture = brigandines
+
+    sexuality = heterosexual
+
+    trait = gluttonous
+    trait = vengeful
+    trait = fickle
+
+    1255.8.11 = {
+        birth = yes
+    }
+
+    1283.5.1 = {
+        culture = laodantines
+    }
+
+    1286.2.15 = {
+        death = { death_reason = death_childbirth }
+    }
+}
+
+brigandines_partic_9 = { # rules briefly before being couped by his younger sister and the druid council
+    name = "Tuaidhriogh" 
+
+    
+    religion = partic
+    culture = laodantines
+
+    father = brigandines_partic_7
+    mother = brigandines_partic_8
+    dynasty = dyn_partic_18
+    sexuality = heterosexual
+
+    trait = generous
+    trait = wrathful
+    trait = deceitful
+
+    1272.12.15 = {
+        birth = yes
+    }
+
+    1283.5.1 = {
+        culture = laodantines
+    }
+
+    1297.12.1 = {
+    	employer = daukeni_sjalvolki_105
+    }
+}
+
+brigandines_partic_11 = {
+    name = "NA_irbhe" 
+    female = yes
+
+    religion = partic
+    culture = brigandines
+
+    father = brigandines_partic_7
+    mother = brigandines_partic_8
+    dynasty = dyn_partic_18
+    sexuality = heterosexual
+
+    trait = shy
+    trait = forgiving
+    trait = generous
+
+    1275.1.16 = {
+        birth = yes
+        trait = magic_good_2
+    }
+
+    1283.5.1 = {
+        culture = laodantines
+    }
+}
+
+brigandines_partic_12 = {
+    name = "Draois" 
+    female = yes
+
+    religion = partic
+    culture = brigandines
+
+    father = brigandines_partic_7
+    mother = brigandines_partic_8
+    dynasty = dyn_partic_18
+    sexuality = bisexual
+
+    trait = calm
+    trait = vengeful
+    trait = shy
+
+    1282.10.3 = {
+        birth = yes
+    }
+
+    1283.5.1 = {
+        culture = laodantines
+    }
+}
+
+brigandines_partic_13 = {
+	name = "Amhaoir"
+	religion = "partic"
+	culture = "brigandines"
+
+	father = brigandines_partic_20
+	mother = ordikin_mothers_and_fathers_5
+
+	1222.11.2 = {
+		birth = yes
+	}
+
+	1242.11.2 = {
+		trait = eccentric
+		trait = impatient
+		trait = compassionate
+	}
+
+	1248.3.15 = {
+		add_spouse = brigandines_partic_14
+	}
+	1254.1.1 = {
+		employer = brigandines_partic_1
+	}
+	1275.3.24 = {
+		death = { death_reason = death_obesity }
+	}
+}
+
+brigandines_partic_14 = {
+	name = "Garbha"
+	religion = "partic"
+	culture = "brigandines"
+	female = yes
+	1227.11.2 = {
+		birth = yes
+	}
+
+	1254.1.1 = {
+		employer = brigandines_partic_1
+	}
+
+	1282.9.2 = {
+		death = { death_reason = death_pneumonic }
+	}
+}
+
+brigandines_partic_15 = {
+	name = "Osgach"
+	religion = "partic"
+	culture = "brigandines"
+	father = brigandines_partic_13
+	mother = brigandines_partic_14
+
+	1256.11.2 = {
+		birth = yes
+	}
+
+	1274.11.2 = {
+		trait = brave
+		trait = stubborn
+		trait = compassionate
+		trait = education_martial_1
+	}
+
+	1281.1.17 = {
+		death = { death_reason = death_fallen_from_a_mountain }
+	}
+}
+
+brigandines_partic_16 = {
+	name = "Odhras"
+	religion = "partic"
+	culture = "brigandines"
+	father = brigandines_partic_13
+	mother = brigandines_partic_14
+
+	1254.11.2 = {
+		birth = yes
+	}
+
+	1272.11.2 = {
+		trait = sadistic
+		trait = just
+		trait = shy
+		trait = contrite
+		trait = education_intrigue_2
+	}
+
+	1280.1.1 = {
+		add_spouse = konijkmener_lifepath_86
+	}
+
+	1283.5.1 = {
+	    culture = laodantines
+	}
+
+	1296.5.16 = {
+		death = { death_reason = death_raid } # killed in a raid by long-march bandits
+	}
+}
+
+brigandines_partic_17 = {
+	name = "Maonach"
+	religion = "partic"
+	culture = "brigandines"
+	father = brigandines_partic_16
+	mother = konijkmener_lifepath_86
+
+	1281.2.9 = {
+		birth = yes
+	}
+
+	1283.5.1 = {
+	    culture = laodantines
+	}
+
+	1298.1.1 = {
+		trait = content
+		trait = calm
+		trait = vengeful
+	}
+}
+
+brigandines_partic_18 = {
+	name = "Omhaill"
+	religion = "partic"
+	culture = "brigandines"
+	father = brigandines_partic_1
+    mother = brigandines_partic_4
+    dynasty = dyn_partic_18
+	1255.6.9 = {
+		birth = yes
+	}
+
+	1283.5.1 = {
+	    culture = laodantines
+	}
+
+	1297.5.4 = {
+		set_relation_lover = {
+			target = character:laodantine_partic_1 reason = lover_close_family
+		}
+		add_secret = { type = secret_lover }
+	}
+
+	1298.1.1 = {
+		trait = lustful
+		trait = calm
+		trait = vengeful
+		trait = education_stewardship_4
+		trait = shrewd
+		employer = laodantine_partic_1
+	}
+}
+
+brigandines_partic_19 = {
+	name = "Conghus"
+	religion = "partic"
+	culture = "brigandines"
+
+	1206.6.9 = {
+		birth = yes
+	}
+
+	1268.2.5 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+brigandines_partic_20 = {
+	name = "Raimhriogh"
+	religion = "partic"
+	culture = "brigandines"
+
+	1202.11.16 = {
+		birth = yes
+		trait = beauty_good_1
+	}
+
+	1220.1.1 = {
+		add_spouse = ordikin_mothers_and_fathers_5
+	}
+
+	1261.5.1 = {
+		death = { death_reason = death_mysterious }
+	}
+}
+
+brigandines_partic_21 = {
+	name = "Bramhlas"
+	religion = "partic"
+	culture = "brigandines"
+	father = brigandines_partic_20
+	mother = ordikin_mothers_and_fathers_5
+
+	1229.5.30 = {
+		birth = yes
+	}
+
+	1273.8.15 = {
+		death = {
+			death_reason = death_pneumonic
+		}
+	}
+}
+
+brigandines_partic_22 = {
+	name = "Eorcag"
+	religion = "partic"
+	culture = "brigandines"
+	father = brigandines_partic_21
+	mother = brigandines_partic_23
+
+	1257.2.18 = {
+		birth = yes
+	}
+
+
+	1283.5.1 = {
+	    culture = laodantines
+	}
+
+	1290.11.25 ={
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+
+brigandines_partic_23 = {
+	name = "Naola"
+	religion = "partic"
+	culture = "brigandines"
+	female = yes
+
+	1237.8.23 = {
+		birth = yes
+	}
+
+
+	1283.5.1 = {
+	    culture = laodantines
+	}
+
+	1295.12.3 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+brigandines_partic_24 = {
+	name = "Sorgach"
+	religion = "partic"
+	culture = "brigandines"
+	father = brigandines_partic_21
+	mother = brigandines_partic_23
+
+	1266.1.20 = {
+		birth = yes
+	}
+
+	
+	1283.5.1 = {
+	    culture = laodantines
+	}
+}
+
+brigandines_partic_25 = {
+	name = "Tathla"
+	religion = "partic"
+	culture = "brigandines"
+	dynasty = dyn_partic_17
+	1255.12.3 = {
+		birth = yes
+		trait = physique_good_2
+	}
+
+	1283.5.1 = {
+	    culture = laodantines
+	}
+}

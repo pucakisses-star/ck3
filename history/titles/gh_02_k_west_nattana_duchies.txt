@@ -1,0 +1,17 @@
+d_korlacus_fortress = { 
+	1.1.1 = {
+		change_development_level = 3 
+	}
+}
+
+d_azure_beach = { 
+	1.1.1 = {
+		change_development_level = 3 
+	}
+}
+
+d_graythorpe = { 
+	1.1.1 = {
+		change_development_level = 3 
+	}
+}

@@ -1,0 +1,79 @@
+c_south_bedouins_30022 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_south_bedouins_30023 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_south_bedouins_30012 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_south_bedouins_30011 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_south_bedouins_30021 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_south_bedouins_31 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_south_bedouins_33 = {
+  1200.3.1 = {
+	 government = migratory_government
+   holder = ndoufre_harfi_3
+  }
+}
+c_south_bedouins_35 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_south_bedouins_36 = {
+  1200.3.1 = {
+	 government = migratory_government
+   holder = ndoufre_harfi_1
+  }
+}
+c_south_bedouins_37 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+#c_south_bedouins_38 = {
+#  1200.3.1 = {
+#	 government = migratory_government
+#   holder = ndoufre_wardenism_1
+#  }
+#}
+c_south_bedouins_39 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_south_bedouins_40 = {
+  1200.3.1 = {
+	 government = migratory_government
+   holder = ndoufre_harfi_2
+  }
+}
+c_buried_cradle = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_tashfik = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

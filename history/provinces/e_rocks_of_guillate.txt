@@ -1,0 +1,526 @@
+
+
+1674 = {
+	holding = metro_holding
+	culture = guillater
+	religion = hero_religion
+	60.1.1 = {
+		special_building = 01_slums_of_den_teriatrixx
+	}
+}
+
+1677 = {
+	holding = church_holding
+}
+
+2054 = {
+	holding = city_holding
+}
+
+2058 = {
+	holding = none
+}
+
+2211 = {
+	holding = church_holding
+}
+
+2225 = {
+	religion = seaborne_exalted
+	culture = guillater
+	holding = castle_holding
+}
+
+2253 = {
+	holding = church_holding
+}
+
+2323 = {
+	holding = none
+}
+
+3024 = {
+	holding = city_holding
+}
+
+3210 = {
+	culture = guillater
+	religion = black_abyss_cult
+	holding = tribal_holding
+}
+
+3479 = {
+	holding = none
+}
+
+3515 = {
+	holding = none
+}
+
+3526 = {
+	culture = guillater
+	religion = hero_religion
+	holding = castle_holding
+}
+
+3645 = {
+	culture = voyagen
+	religion = darrallianism
+	holding = castle_holding
+}
+
+3648 = {
+	holding = church_holding
+}
+
+3649 = {
+	culture = guillater
+	religion = biblosxar
+	holding = tribal_holding
+}
+
+3754 = {
+	holding = city_holding
+}
+
+3822 = {
+	holding = none
+}
+
+3854 = {
+	holding = none
+}
+
+4358 = {
+	holding = none
+}
+
+4391 = {
+	culture = guillater
+	religion = hero_religion
+	holding = castle_holding
+	75.1.1 = {
+		special_building = 01_gardens_of_de_illiterat
+	}
+}
+
+4958 = {
+	holding = church_holding
+}
+
+4961 = {
+	holding = none
+}
+
+5252 = {
+	culture = guillater
+	religion = hero_religion
+	holding = castle_holding
+}
+
+5254 = {
+	culture = skoronyk
+	religion = hero_religion
+	holding = castle_holding
+}
+
+5265 = {
+	culture = theygundarope
+	religion = theygundaropei_cult
+	holding = castle_holding
+}
+
+5266 = {
+	culture = guillater
+	religion = calystoanistism
+	holding = tribal_holding
+}
+
+5269 = {
+	culture = aguadosian
+	religion = seaborne_exalted
+	holding = castle_holding
+}
+
+5292 = {
+	culture = coldcoaster
+	religion = lifepath
+	holding = city_holding
+}
+
+5321 = {
+	culture = lorodegi
+	religion = hero_religion
+	holding = tribal_holding
+}
+
+5329 = {
+	holding = castle_holding
+}
+
+5367 = {
+	holding = none
+}
+
+5371 = {
+	holding = city_holding
+}
+
+5384 = {
+	holding = none
+}
+
+5404 = {
+	holding = church_holding
+}
+
+5412 = {
+	holding = none
+}
+
+5426 = {
+	holding = none
+}
+
+5446 = {
+	culture = anorlori
+	religion = hero_religion
+	holding = tribal_holding
+}
+
+5452 = {
+	holding = castle_holding
+	culture = guillater
+	religion = hero_religion
+	25.1.1 = {
+		special_building = 01_halls_of_everard
+	}
+}
+
+5454 = {
+	holding = none
+}
+
+5473 = {
+	holding = none
+}
+
+5478 = {
+	culture = diorenic
+	religion = abathonic_cult
+	holding = castle_holding
+	150.1.1 = {
+		special_building = 01_abathon_throne
+	}
+
+}
+
+5479 = {
+	culture = coldcoaster
+	religion = darrallianism
+	holding = castle_holding
+
+}
+
+5502 = {
+	culture = aguadosian
+	religion = hero_religion
+	holding = city_holding
+	1202.1.1 = {
+		special_building = 01_light_of_guillate
+	}
+}
+
+5510 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5538 = {
+	holding = church_holding
+}
+
+5552 = {
+	culture = anorlori
+	religion = abathonic_cult
+	holding = tribal_holding
+}
+
+5555 = {
+	culture = lorodegi
+	religion = cult_of_the_bitter_wave
+	holding = tribal_holding
+
+}
+
+5556 = {
+	holding = none
+
+}
+
+5565 = {
+	holding = none
+}
+
+5585 = { # Devil Isles
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5591 = {
+	holding = none
+}
+
+5617 = {
+	holding = city_holding
+}
+
+5635 = {
+	culture = aguadosian
+	religion = slain_eagle_cult
+	holding = tribal_holding
+	1.1.1 = {
+		special_building = 01_mourners_rest
+	}
+}
+
+5639 = {
+	culture = guillater
+	religion = guillater_cult
+	holding = castle_holding
+}
+
+5653 = {
+	holding = none
+}
+
+5664 = {
+	holding = none
+}
+
+5677 = {
+	holding = none
+}
+
+5681 = {
+	holding = none
+}
+
+5685 = {
+	holding = none
+}
+
+5692 = {
+	culture = lorodegi
+	religion = cult_of_the_bitter_wave
+	holding = tribal_holding
+}
+
+5700 = {
+	holding = none
+}
+
+5734 = {
+	holding = church_holding
+	culture = anorlori
+	religion = seaborne_exalted
+}
+
+5738 = {
+	holding = church_holding
+}
+
+5742 = {
+	holding = church_holding
+}
+
+5744 = {
+	holding = none
+}
+
+5750 = {
+	holding = city_holding
+}
+
+5752 = {
+	holding = none
+}
+
+5770 = {
+	culture = anorlori
+	religion = abathonic_cult
+	holding = castle_holding
+}
+
+5793 = {
+	holding = city_holding
+}
+
+
+5802 = {
+	culture = guillater
+	religion = hero_religion
+	holding = tribal_holding
+}
+
+5816 = {
+	holding = none
+}
+
+5821 = {
+	holding = church_holding
+}
+
+5827 = {
+	culture = diorenic
+	religion = abathonic_cult
+	holding = castle_holding
+
+}
+
+5836 = {
+	holding = church_holding
+}
+
+5838 = {
+	holding = church_holding
+}
+
+5843 = {
+	holding = none
+}
+
+5848 = {
+	holding = none
+}
+
+5861 = {
+	holding = none
+}
+
+5864 = {
+	culture = guillater
+	religion = hero_religion
+	holding = tribal_holding
+}
+
+5868 = {
+	holding = none
+}
+
+5882 = {
+	culture = walakon
+	religion = hero_religion
+	holding = castle_holding
+}
+
+5883 = {
+	culture = aguadosian
+	religion = distant_shore_cult
+	holding = castle_holding
+}
+
+5904 = {
+	holding = none
+}
+
+5914 = {
+	holding = none
+}
+
+5926 = {
+	culture = aguadosian
+	religion = sacred_stars_cult
+	holding = castle_holding
+	1205.1.1 = {
+		religion = shattered_stars_cult
+	}
+}
+
+5935 = {
+	culture = lorodegi
+	religion = cult_of_the_bitter_wave
+	holding = tribal_holding
+}
+
+5940 = {
+	culture = anorlori
+	religion = hero_religion
+	holding = castle_holding
+}
+
+5958 = {
+	holding = none
+}
+
+5976 = {
+	holding = none
+}
+
+5981 = {
+	holding = none
+}
+
+5994 = {
+	culture = abdexorn
+	religion = abdexorn_aagiokrata
+	holding = castle_holding
+}
+
+6420 = {
+	holding = none
+}
+
+7766 = {
+	culture = gallien
+	religion = gallicader
+	holding = tribal_holding
+	60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+		culture = shewigad
+		religion = starvayrd
+	}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = lifepath
+		holding = castle_holding
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = dielecender
+	}
+}
+
+8119 = {
+	culture = guillater
+	religion = favoured_ones
+	holding = tribal_holding
+	200.1.1 = {
+		special_building = 01_thousand_hero_circle
+	}
+}
+
+9016 = {
+	holding = church_holding
+}
+
+9020 = {
+	holding = church_holding
+}
+
+7435 = {
+	culture = gallicads
+	religion = gallicader
+	holding = tribal_holding
+	#60.1.1 = { # GH TODO: Generic Shewigad Migrations date - replace
+	#	culture = shewigad
+	#	religion = starvayrd
+	#}
+	220.1.1 = { # GH TODO: Generic faith conversion to Lifepath and feudalization date - replace
+		religion = coastpath
+		holding = castle_holding
+		culture = gallien
+	}
+	300.1.1 = { # GH TODO: Generic culture conversion to Marcher date - replace
+		culture = coldcoaster
+	}
+}

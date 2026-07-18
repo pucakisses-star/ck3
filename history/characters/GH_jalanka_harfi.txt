@@ -1,0 +1,19 @@
+﻿jalanka_harfi_1 = {
+	name = "Idi"
+	religion = "harfi"
+	culture = "jalanka"
+
+	1230.10.12 = {
+		birth = yes
+	}
+}
+
+jalanka_harfi_2 = {
+	name = "Ousman"
+	religion = "harfi"
+	culture = "jalanka"
+
+	1215.10.9 = {
+		birth = yes
+	}
+}

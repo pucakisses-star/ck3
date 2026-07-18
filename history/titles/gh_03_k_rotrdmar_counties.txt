@@ -1,0 +1,14 @@
+c_hejzart = {
+	1230.1.1 = {
+		holder = redlander_bloody_feast_4
+		government = magocratic_government
+		change_development_level = 4
+	}
+}
+c_rumnos = {
+	1230.1.1 = {
+		holder = redlander_spider_feast_4
+		government = magocratic_government
+		change_development_level = 3
+	}
+}

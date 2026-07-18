@@ -1,0 +1,145 @@
+#c_gidali = {
+#	1170.1.1 = {
+#		holder = fedagesh_mogowai_12
+#	}
+#	
+#	1230.1.1 = {
+#		government = feudal_government
+#		holder = fedagesh_mogowai_10
+#	}
+#	1230.1.1 = {
+#		change_development_level = 8
+#	}
+#}
+#c_lekarut = {
+#	1170.1.1 = {
+#		holder = fedagesh_mogowai_14
+#	}
+#	1230.1.1 = {
+#		government = feudal_government
+#		holder = fedagesh_mogowai_11
+#	}
+#	1230.1.1 = {
+#		change_development_level = 7
+#	}
+#}
+c_barilab = {
+	1230.1.1 = {
+		liege = d_zenraleb
+		government = feudal_government
+		holder = kutma_bekashai_1
+	}
+	1230.1.1 = {
+		change_development_level = 8
+	}
+}
+c_isurwa = {
+	1170.1.1 = {
+		holder = kutma_mogowai_6
+	}
+	1230.1.1 = {
+		liege = d_zenraleb
+		government = feudal_government
+		holder = kutma_bekashai_1
+	}
+	1230.1.1 = {
+		change_development_level = 9
+	}
+}
+#c_iyiler = {
+#	1230.1.1 = {
+#		liege = d_zenraleb
+#		government = feudal_government
+#		holder = kutma_bekashai_2
+#	}
+#	1230.1.1 = {
+#		change_development_level = 6
+#	}
+#}
+#c_abulle = {
+#	1230.1.1 = {
+#		liege = d_zenraleb
+#		government = feudal_government
+#		holder = kutma_bekashai_3
+#	}
+#	1230.1.1 = {
+#		change_development_level = 7
+#	}
+#}
+c_dabisag = {
+	1230.1.1 = {
+		government = feudal_government
+		holder = kutma_bekashai_4
+	}
+	1230.1.1 = {
+		change_development_level = 7
+	}
+}
+#c_ghoja = {
+#	1170.1.1 = {
+#		holder = kutma_mogowai_6
+#	}
+#	1230.1.1 = {
+#		government = feudal_government
+#		holder = kutma_bekashai_4
+#	}
+#	1230.1.1 = {
+#		change_development_level = 6
+#	}
+#}
+#c_bekrem = {
+#	1230.1.1 = {
+#		government = feudal_government
+#		holder = kutma_bekashai_5
+#	}
+#	1230.1.1 = {
+#		change_development_level = 10
+#	}
+#}
+#c_harille = {
+#	1230.1.1 = {
+#		government = feudal_government
+#		holder = kutma_bekashai_5
+#	}
+#	1230.1.1 = {
+#		change_development_level = 7
+#	}
+#}
+#c_isalab = {
+#	1230.1.1 = {
+#		government = feudal_government
+#		holder = kutma_mogowai_3
+#	}
+#	1230.1.1 = {
+#		change_development_level = 6
+#	}
+#}
+c_modnai = {
+	1230.1.1 = {
+		government = feudal_government
+		holder = kutma_mogowai_4
+	}
+	1230.1.1 = {
+		change_development_level = 7
+	}
+}
+#c_wishak = {
+#	1230.1.1 = {
+#		government = feudal_government
+#		holder = kutma_mogowai_4
+#	}
+#	1230.1.1 = {
+#		change_development_level = 8
+#	}
+#}
+c_gimma = {
+	1170.1.1 = {
+		holder = fedagesh_mogowai_14
+	}
+	1230.1.1 = {
+		holder = adnanari_asdraqi_1
+	}
+	1230.1.1 = {
+		change_development_level = 7
+	}
+}

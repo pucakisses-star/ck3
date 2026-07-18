@@ -1,0 +1,67 @@
+
+c_kushrel = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_durakul = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_galuk = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mudkesh = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_suhorto = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_sinudh = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_new_sarradon_county10 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_corodol = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_new_sarradon_county18 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_klephexes = {
+	1200.3.1 = {
+		  holder = wasteland
+	  }
+}
+c_mikhdal = {
+	1200.3.1 = {
+		  holder = wasteland
+	  }
+}
+c_zhufarr = {
+	1200.3.1 = {
+		holder = wasteland
+	  }
+}
+c_usurrain = {
+	1200.3.1 = {
+		government = migratory_government
+		holder = asarey_harfi_4
+	  }
+}

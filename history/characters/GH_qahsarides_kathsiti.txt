@@ -1,0 +1,19 @@
+﻿qahsarides_kathsiti_1 = {
+	name = "Kunni"
+	religion = "kathsiti"
+	culture = "qahsarides"
+
+	1224.1.28 = {
+		birth = yes
+	}
+}
+
+qahsarides_kathsiti_2 = {
+	name = "Tarhuntaradu"
+	religion = "kathsiti"
+	culture = "qahsarides"
+
+	1208.9.19 = {
+		birth = yes
+	}
+}

@@ -1,0 +1,188 @@
+#
+#c_addagalla = {
+#	1170.1.1 = {
+#		holder = fedagesh_marefai_3
+#	}
+#	1230.1.1 = {
+#		government = feudal_government
+#		holder = doffore_marefai_2
+#	}
+#	1230.1.1 = {
+#		change_development_level = 9
+#	}
+#}
+#c_mezbir = {
+#	1170.1.1 = {
+#		holder = fedagesh_marefai_3
+#	}
+#	1230.1.1 = {
+#		government = feudal_government
+#		holder = fedagesh_marefai_1
+#	}
+#	1230.1.1 = {
+#		change_development_level = 10
+#	}
+#}
+c_beri = {
+	1169.1.1 = {
+		holder = fedagesh_marefai_3
+	}
+	1230.1.1 = {
+		government = feudal_government
+		holder = fedagesh_marefai_2
+	}
+	1230.1.1 = {
+		change_development_level = 8
+	}
+	1263.1.23 = {
+		holder = adnanari_asdraqi_1
+	}
+}
+c_cawamarzi = {
+	1170.1.1 = {
+		holder = fedagesh_marefai_3
+	}
+	1230.1.1 = {
+		government = feudal_government
+		holder = fedagesh_marefai_2
+	}
+	1230.1.1 = {
+		change_development_level = 5
+	}
+}
+#c_adeyle = {
+#	1170.1.1 = {
+#		holder = fedagesh_marefai_3
+#	}
+#	1230.1.1 = {
+#		government = feudal_government
+#		holder = fedagesh_mogowai_1
+#	}
+#	1230.1.1 = {
+#		change_development_level = 7
+#	}
+#}
+#c_murol = {
+#	1170.1.1 = {
+#		holder = fedagesh_marefai_3
+#	}
+#	1230.1.1 = {
+#		government = feudal_government
+#		holder = fedagesh_mogowai_1
+#	}
+#	1230.1.1 = {
+#		change_development_level = 9
+#	}
+#}
+c_adem = {
+	1170.1.1 = {
+		holder = fedagesh_marefai_3
+	}
+	1230.1.1 = {
+		holder = adnanari_asdraqi_1
+	}
+	1230.1.1 = {
+		change_development_level = 6
+	}
+}
+c_darbatta = {
+	1170.1.1 = {
+		holder = fedagesh_marefai_3
+	}
+	1230.1.1 = {
+		government = feudal_government
+		holder = fedagesh_mogowai_4
+	}
+	1230.1.1 = {
+		change_development_level = 7
+	}
+	1270.6.6 = {
+		holder = adnanari_asdraqi_1
+	}
+}
+#c_remali = {
+#	1170.1.1 = {
+#		holder = fedagesh_mogowai_12
+#	}
+#	
+#	1230.1.1 = {
+#		government = feudal_government
+#		holder = fedagesh_mogowai_5
+#	}
+#	1230.1.1 = {
+#		change_development_level = 8
+#	}
+#}
+c_yesanitimi_ketema = {
+	1170.1.1 = {
+		holder = fedagesh_mogowai_12
+	}
+	
+	1230.1.1 = {
+		government = feudal_government
+		holder = fedagesh_mogowai_8
+		change_development_level = 9
+	}
+}
+#c_terzet = {
+#	1170.1.1 = {
+#		holder = fedagesh_mogowai_12
+#	}
+#	
+#	1230.1.1 = {
+#		government = feudal_government
+#		holder = fedagesh_mogowai_6
+#	}
+#	1230.1.1 = {
+#		change_development_level = 7
+#	}
+#}
+c_fheja = {
+	1170.1.1 = {
+		holder = kutma_mogowai_5
+	}
+	
+	1230.1.1 = {
+		government = feudal_government
+		holder = fedagesh_mogowai_7
+	}
+	1230.1.1 = {
+		change_development_level = 6
+	}
+}
+#c_omalej = {
+#	
+#	1230.1.1 = {
+#		government = feudal_government
+#		holder = fedagesh_mogowai_7
+#	}
+#	1230.1.1 = {
+#		change_development_level = 9
+#	}
+#}
+#c_montuja = {
+#	1170.1.1 = {
+#		holder = kutma_mogowai_5
+#	}
+#	
+#	1230.1.1 = {
+#		government = feudal_government
+#		holder = kutma_mogowai_1
+#	}
+#	1230.1.1 = {
+#		change_development_level = 7
+#	}
+#}
+c_bafilaz = {
+	1170.1.1 = {
+		holder = kutma_mogowai_5
+	}
+	
+	1230.1.1 = {
+		government = feudal_government
+		holder = kutma_mogowai_1
+	}
+	1230.1.1 = {
+		change_development_level = 6
+	}
+}

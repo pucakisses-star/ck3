@@ -1,0 +1,31 @@
+﻿cerussiai_iyrossi_aagiokrata_1 = {
+	name = "Bardyllis"
+	dynasty = dyn_iyrossi_1
+	religion = "iyrossi_aagiokrata"
+	culture = "cerussiai"
+
+	1222.4.12 = {
+		birth = yes
+	}
+}
+
+cerussiai_iyrossi_aagiokrata_2 = {
+	name = "Opis"
+	dynasty = dyn_iyrossi_5
+	religion = "iyrossi_aagiokrata"
+	culture = "cerussiai"
+
+	1229.4.12 = {
+		birth = yes
+	}
+}
+
+cerussiai_iyrossi_aagiokrata_3 = {
+	name = "Andreas"
+	religion = "iyrossi_aagiokrata"
+	culture = "cerussiai"
+
+	1215.4.12 = {
+		birth = yes
+	}
+}

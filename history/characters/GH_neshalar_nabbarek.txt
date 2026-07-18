@@ -1,0 +1,17 @@
+﻿neshalar_nabbarek_1 = {
+	name = "Soddhala"
+	religion = "nabbarek"
+	culture = "neshalar"
+	1211.8.8 = {
+		birth = yes
+	}
+}
+
+neshalar_nabbarek_2 = { # Heir to asojiva
+	name = "Naivarman"
+	religion = "nabbarek"
+	culture = "neshalar"
+	1226.8.8 = {
+		birth = yes
+	}
+}

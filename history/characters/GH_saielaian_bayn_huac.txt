@@ -1,0 +1,154 @@
+﻿saielaian_bayn_huac_1 = { # Saielai Rebel Princess
+	name = "Rati"
+	religion = "bayn_huac"
+	culture = "saielaian"
+	female = yes
+	dynasty = dyn_saielaian_1
+
+	father = saielaian_bayn_huac_2
+
+	martial = 8
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 5
+	learning = 5
+	prowess = 8
+
+	1231.2.3 = {
+		birth = yes
+	}
+
+	1243.1.1 = {
+		trait = brave
+		trait = ambitious
+		trait = gregarious
+	}
+
+	1247.2.3 = {
+		trait = education_martial_3
+		trait = adventurer
+	}
+}
+
+saielaian_bayn_huac_2 = { # King of New Shrunfan
+	name = "Liehan"
+	religion = "bayn_huac"
+	culture = "saielaian"
+	dynasty = dyn_saielaian_1
+
+	martial = 3
+	diplomacy = 5
+	intrigue = 10
+	stewardship = 7
+	learning = 7
+	prowess = 3
+
+	1196.9.11 = {
+		birth = yes
+	}
+
+	1208.1.1 = {
+		trait = wrathful
+		trait = impatient
+		trait = diligent
+	}
+
+	1212.9.11 = {
+		trait = education_stewardship_2
+		trait = shrewd
+	}
+}
+
+saielaian_bayn_huac_3 = {
+	name = "Thacse"
+	religion = "bayn_huac"
+	culture = "saielaian"
+	dynasty = dyn_saielaian_1
+
+	father = saielaian_bayn_huac_2
+
+	martial = 6
+	diplomacy = 6
+	intrigue = 2
+	stewardship = 5
+	learning = 4
+	prowess = 7
+
+	1221.3.6 = {
+		birth = yes
+	}
+
+	1233.1.1 = {
+		trait = generous
+		trait = forgiving
+		trait = sadistic
+	}
+
+	1237.3.6 = {
+		trait = education_diplomacy_2
+	}
+}
+
+saielaian_bayn_huac_4 = {
+	name = "Khenh"
+	religion = "bayn_huac"
+	culture = "saielaian"
+	dynasty = dyn_saielaian_1
+
+	father = saielaian_bayn_huac_2
+
+	martial = 8
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 5
+	learning = 5
+	prowess = 8
+
+	1230.5.20 = {
+		birth = yes
+		trait = child_of_concubine_female
+		trait = intellect_good_1
+	}
+
+	1242.1.1 = {
+		trait = paranoid
+		trait = ambitious
+		trait = gregarious
+	}
+
+	1246.5.20 = {
+		trait = education_stewardship_3
+	}
+}
+
+saielaian_bayn_huac_5 = {
+	name = "Chayc"
+	religion = "bayn_huac"
+	culture = "saielaian"
+	dynasty = dyn_saielaian_1
+
+	father = saielaian_bayn_huac_2
+
+	martial = 7
+	diplomacy = 3
+	intrigue = 3
+	stewardship = 4
+	learning = 5
+	prowess = 5
+
+	1236.12.28 = {
+		birth = yes
+		trait = child_of_concubine_female
+		trait = intellect_good_1
+	}
+
+	1248.1.1 = {
+		trait = arrogant
+		trait = patient
+		trait = diligent
+	}
+
+	1252.12.28 = {
+		trait = education_learning_3
+	}
+}

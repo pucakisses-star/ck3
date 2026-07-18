@@ -1,0 +1,55 @@
+﻿ekaachi_vidvaookeyatra_1 = { # 1200 Rahikaya Queen
+	name = "Devavati"
+	religion = "vidvaookeyatra"
+	culture = "ekaachi"
+	sexuality = heterosexual
+	dynasty = dyn_rahikaya_2
+	female = yes
+
+	dna = ekaachi_vidvaookeyatra_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair=female_hair_indian_01
+			#custom_beards=no_beard
+		}
+	}
+
+	1175.2.3 = {
+		birth = yes
+	}
+	1187.2.3 = {
+		trait = zealous
+		trait = shy
+		trait = content
+	}
+	1191.2.3 = {
+		trait = education_learning_2
+	}
+	1194.8.16 = {
+		add_spouse = rahikaya_vidvaookeyatra_1
+	}
+	1252.5.7 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+ekaachi_vidvaookeyatra_2 = {
+	name = "Lakshmikaradeva"
+	religion = "vidvaookeyatra"
+	culture = "ekaachi"
+
+	1229.1.15 = {
+		birth = yes
+	}
+	1241.1.1 = {
+		trait = greedy
+		trait = callous
+		trait = honest
+	}
+	1245.1.15 = {
+		trait = education_stewardship_2
+	}
+}

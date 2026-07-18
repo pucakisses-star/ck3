@@ -1,0 +1,74 @@
+k_eve = {
+	1186.11.15 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1205.1.1 = {
+		holder = 0
+	}
+}
+k_suncourt = {
+	1186.11.15 = {
+		holder = easternimperial_aversarian_axiaotheaism_1
+		change_development_level = 44
+	}
+	1200.3.1 = {
+		holder = 0
+		change_development_level = 1
+	}
+	1246.4.16 = {
+		change_development_level = 2
+		liege = 0
+	}
+	1267.5.6 = {
+		holder = adrakamp_sjalvolki_4
+		liege = 0
+	}
+	1278.4.13 = {
+		holder = adrakamp_sjalvolki_31
+	}
+	1278.5.1 = {
+		holder = adrakamp_sjalvolki_44
+	}
+	1295.12.3 = {
+		holder = adrakamp_sjalvolki_34
+	}
+}
+k_morn = {
+	1186.11.15 = {
+		holder = easternimperial_aversarian_axiaotheaism_1
+	}
+	1200.3.1 = {
+		holder = 0
+	}
+}
+#k_karthos = {
+#	1200.3.1 = {
+#		holder = 0
+#	}
+#}
+k_day = {
+	1186.11.15 = {
+		holder = easternimperial_aversarian_axiaotheaism_1
+		change_development_level = 41
+	}
+	1200.3.1 = {
+		holder = 0
+		change_development_level = 9
+	}
+	1251.4.14 = {
+		change_development_level = 4
+		 
+		holder = southernimperial_aversarian_gorassos_1
+		liege = 0
+	}
+	1274.7.15 = {
+		holder = southernimperial_aversarian_gorassos_4
+	}
+	1275.9.2 = {
+		holder = greulokin_sjalvolki_1
+		government = feudal_government
+	}
+	1293.3.28 = {
+		holder = greulokin_sjalvolki_22
+	}
+}

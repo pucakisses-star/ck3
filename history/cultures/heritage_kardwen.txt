@@ -1,0 +1,23 @@
+1200.1.1 = {
+	#Tribal Mil Innovations
+	discover_innovation = innovation_bannus
+	discover_innovation = innovation_quilted_armor
+	discover_innovation = innovation_mustering_grounds
+	discover_innovation = innovation_adventurers
+	#Tribal Civ Innovations
+	discover_innovation = innovation_gavelkind
+	discover_innovation = innovation_crop_rotation
+	discover_innovation = innovation_ledger
+	discover_innovation = innovation_plenary_assemblies
+	#Tribal MAA Innovations
+	
+	discover_innovation = innovation_thrill_of_the_hunt
+	discover_innovation = innovation_tribal_magic
+	#Era Unlock
+	join_era = culture_era_early_medieval
+}
+
+1201.1.1 = { 
+	# Early Mil Innovations
+	# Early Civ Innovations
+}

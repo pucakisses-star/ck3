@@ -1,0 +1,127 @@
+﻿kuridorig_arayymorog_1 = { # Megujin Barduhk, Air Magi that rode with Jajak Otroka in his Horde
+	name = "Megujin"
+	dynasty = dyn_kuridorig_4
+	religion = arayymorog
+	culture = kuridorig
+	disallow_random_traits = yes
+
+	martial = 8
+	diplomacy = 6
+	intrigue = 2
+	stewardship = 3
+	learning = 8
+	prowess = 10
+
+	1165.4.24 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	1177.1.1 = {
+		trait = calm
+		trait = content
+		trait = chaste
+	}
+
+	1181.4.24 = {
+		trait = education_martial_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:spirit_voice }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+		trait = gh_glowing_eyes
+		trait = gh_ritual_tattoos
+	}
+
+	1191.1.1 = {
+		give_nickname = nick_storm_whisper
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	1200.2.25 = {
+		death = {
+			death_reason = death_battle
+			killer = easternimperial_aironoian_aagiokrata_27 # Legon Xipheos
+		}
+	}
+}
+
+kuridorig_arayymorog_2 = { # Megujin's son, 1254 Beiy of Gavsges
+	name = "Temujin"
+	dynasty = dyn_kuridorig_4
+	religion = arayymorog
+	culture = kuridorig
+	disallow_random_traits = yes
+
+	father = kuridorig_arayymorog_1
+
+	martial = 3
+	diplomacy = 2
+	intrigue = 9
+	stewardship = 4
+	learning = 10
+	prowess = 9
+
+	1200.1.19 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1212.1.1 = {
+		trait = calm
+		trait = chaste
+		trait = patient
+	}
+
+	1216.1.19 = {
+		trait = education_intrigue_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:spirit_voice }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+		trait = gh_ritual_tattoos
+	}
+}
+
+kuridorig_arayymorog_3 = { # Megujin's grandson
+	name = "Chaujin_Ortagai"
+	dynasty = dyn_kuridorig_4
+	religion = arayymorog
+	culture = kuridorig
+	disallow_random_traits = yes
+
+	father = kuridorig_arayymorog_2
+
+	martial = 3
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 4
+	learning = 8
+	prowess = 5
+
+	1231.11.23 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1243.1.1 = {
+		trait = calm
+		trait = temperate
+		trait = shy
+	}
+
+	1247.11.23 = {
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:spirit_voice }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+}

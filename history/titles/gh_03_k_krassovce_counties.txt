@@ -1,0 +1,162 @@
+c_wloclabrowa = {
+	1.1.1 = {
+		holder = unsorted_17
+	}
+	40.2.21 = {
+		holder = wasteland
+	}
+	1253.1.1 = {
+		liege = "e_migrant_coalition"
+		holder = caemansi_sjalvolki_13
+	}
+	1256.5.25 = {
+		holder = sarridians_aversarinas_aagiokrata_4
+	}
+}
+c_riftwatch = {
+	1.1.1 = {
+		holder = unsorted_17
+	}
+	19.1.2 = { # SPARTACUS!!!
+		holder = unsorted_47
+	}
+	62.1.1 = { # rip
+		holder = wasteland
+	}
+	1253.1.1 = {
+		liege = "e_migrant_coalition"
+		holder = caemansi_sjalvolki_13
+	}
+	1256.5.25 = {
+		holder = sarridians_aversarinas_aagiokrata_4
+	}
+}
+c_cadeni = {
+	1.1.1 = {
+		holder = unsorted_17
+	}
+	40.2.21 = {
+		holder = wasteland
+	}
+	1158.5.27 = {
+		holder = etrandanexi_aversarinas_aagiokrata_5
+		government = feudal_government
+		liege = e_the_reach
+	}
+	1190.12.12 = {
+		holder = etrandanexi_aversarinas_aagiokrata_6
+	}
+	1212.10.6 = {
+		holder = etrandanexi_aversarinas_aagiokrata_7
+	}
+	1242.4.6 = {
+		holder = salisians_lifepath_3
+		liege = 0
+	}
+}
+c_teredilna = {
+	1.1.1 = {
+		holder = unsorted_17
+	}
+	40.2.21 = {
+		holder = wasteland
+	}
+	1232.5.3 = {
+ 		holder = northernimperial_aversarinas_aagiokrata_20
+	}
+	1248.3.8 = {
+		holder = urdermantern_lifepath_1
+	}
+}
+c_zawiecin = {
+	1.1.1 = {
+		holder = unsorted_17
+	}
+	14.1.1 = {
+		holder = unsorted_46
+		liege = 0
+	}
+	52.1.1 = {
+		holder = wasteland
+	}
+	1232.5.3 = {
+ 		holder = northernimperial_aversarinas_aagiokrata_20
+	}
+	1248.3.8 = {
+		holder = urdermantern_lifepath_1
+	}
+}
+c_soroci = {
+	1.1.1 = {
+		holder = unsorted_17
+	}
+	40.2.21 = {
+		holder = wasteland
+	}
+	1253.1.1 = {
+		liege = "e_migrant_coalition"
+		holder = kardwens_kardawai_1
+		government = tribal_government
+	}
+}
+c_sedlovice = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	#66.11.14 = {
+	#	holder = 0
+	#}
+	1253.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_10
+		liege = 0
+		government = magocratic_government
+		succession_laws = { magocratic_elective_title_succession_law }
+	}
+}
+c_krodavic = {
+	1253.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_10
+		liege = 0
+		government = magocratic_government
+		succession_laws = { magocratic_elective_title_succession_law }
+	}
+}
+c_wolfsway = {
+	1.1.1 = {
+		holder = unsorted_17
+	}
+	40.2.21 = {
+		holder = wasteland
+	}
+	1253.1.1 = {
+		liege = "e_migrant_coalition"
+		holder = curgerski_sjalvolki_1 
+		government = continental_clan_government 
+	}
+	1278.11.3 = {
+		liege = "d_honeyreach"
+	}
+}
+c_arcanewater = {
+	1253.1.1 = {
+		liege = "e_migrant_coalition"
+		holder = curgerski_sjalvolki_1 
+		government = continental_clan_government
+	}
+	1278.11.3 = {
+		liege = "d_honeyreach"
+	}
+}
+c_anthelas = {
+	1.1.1 = {
+		holder = unsorted_17
+	}
+	40.2.21 = {
+		holder = wasteland
+	}
+	1253.9.20 = {
+		liege = e_migrant_coalition
+		holder = ardothanes_wyrdpath_6
+		government = continental_clan_government
+	}
+}

@@ -1,0 +1,46 @@
+﻿southislander_black_fraternity_1 = { # Kasathox Oseaythx, feared Magi that led the Black Fraternity during the late 11th century, was later part of Axiaothea's cabal
+	name = "Kasathox"
+    religion = "black_fraternity"
+    culture = "southislander"
+    dynasty = dyn_aversarian_161
+
+    sexuality = asexual
+   	dna = kasathox
+
+    martial = 5
+    diplomacy = 11
+    stewardship = 8
+    intrigue = 9
+    learning = 5
+    prowess = 4
+
+    1164.4.2 = {
+        birth = yes
+        trait = magic_good_13
+        trait = beauty_good_2
+    }
+
+    1176.1.1 = {
+        trait = calm
+        trait = deceitful
+        trait = arbitrary
+    }
+
+    1180.4.2 = {
+        effect = { set_base_arcana = { AMOUNT = 12 } }
+        trait = education_arcana_4
+        trait = gh_glowing_veins
+        trait = gh_historical_school
+        effect = {
+            set_variable = { name = historical_magic_school value = flag:dead_magic }
+            set_variable = { name = historical_magic_school_min_spells value = 15 }
+        }
+    }
+
+    1200.3.1 = {
+        death = {
+            death_reason = death_frodbrokna
+            killer = westernimperial_aeschraes_aagiokrata_1
+        }
+    }
+}

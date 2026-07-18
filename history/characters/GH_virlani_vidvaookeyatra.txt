@@ -1,0 +1,182 @@
+﻿virlani_vidvaookeyatra_1 = { # 1254 Mad Paidem's brother-in-law
+	name = "Dhaulshaya"
+	religion = "vidvaookeyatra"
+	culture = "virlani"
+	sexuality = heterosexual
+
+	1192.11.20 = {
+		birth = yes
+	}
+	1204.11.20 = {
+		trait = brave
+		trait = zealous
+		trait = vengeful
+	}
+	1208.11.20 = {
+		trait = education_martial_3
+		trait = gh_historical_blademaster_3
+	}
+}
+
+virlani_vidvaookeyatra_2 = {
+    name = "Indrapal" 
+
+    dynasty = dynasty_virlani_1
+    religion = vidvaookeyatra
+    culture = virlani
+
+    sexuality = heterosexual
+
+    trait = cynical
+    trait = arbitrary
+    trait = greedy
+
+    diplomacy = 3
+    martial = 7
+    stewardship = 7
+    intrigue = 6
+    learning = 4
+    prowess = 5
+
+    trait = education_martial_2
+
+    1119.7.18 = {
+        birth = yes
+    }
+
+    1147.7.18 = {
+        add_spouse = virlani_vidvaookeyatra_3
+    }
+
+    1199.6.16 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+virlani_vidvaookeyatra_3 = {
+    name = "Rajamati" 
+    female = yes
+
+    religion = vidvaookeyatra
+    culture = virlani
+
+    sexuality = heterosexual
+
+    trait = trusting
+    trait = stubborn
+    trait = sadistic
+
+    diplomacy = 8
+    martial = 7
+    stewardship = 2
+    intrigue = 8
+    learning = 1
+    prowess = 4
+
+    trait = education_stewardship_4
+
+    1130.12.10 = {
+        birth = yes
+    }
+
+    1157.7.21 = {
+        death = { death_reason = death_consumption }
+    }
+}
+
+virlani_vidvaookeyatra_4 = {
+    name = "Mahendrapala" 
+
+    dynasty = dynasty_virlani_1
+    religion = vidvaookeyatra
+    culture = virlani
+
+    father = virlani_vidvaookeyatra_2
+    mother = virlani_vidvaookeyatra_3
+
+    sexuality = heterosexual
+
+    trait = brave
+    trait = lustful
+    trait = shy
+
+    diplomacy = 4
+    martial = 1
+    stewardship = 1
+    intrigue = 8
+    learning = 2
+    prowess = 4
+
+    trait = education_intrigue_4
+
+    1157.8.15 = {
+        birth = yes
+    }
+
+    1199.8.22 = {
+        add_spouse = virlani_vidvaookeyatra_5
+    }
+
+    1248.4.22 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+virlani_vidvaookeyatra_5 = {
+    name = "Nattadevi" 
+    female = yes
+
+    religion = vidvaookeyatra
+    culture = virlani
+
+    sexuality = heterosexual
+
+    trait = ambitious
+    trait = greedy
+    trait = diligent
+
+    diplomacy = 2
+    martial = 7
+    stewardship = 5
+    intrigue = 5
+    learning = 3
+    prowess = 6
+
+    trait = education_diplomacy_4
+
+    1182.5.24 = {
+        birth = yes
+    }
+
+    1247.5.24 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+virlani_vidvaookeyatra_7 = {
+    name = "Prabhavatigupta" 
+    female = yes
+
+    religion = vidvaookeyatra
+    culture = virlani
+
+    sexuality = heterosexual
+
+    trait = generous
+    trait = stubborn
+    trait = patient
+
+    diplomacy = 5
+    martial = 3
+    stewardship = 1
+    intrigue = 1
+    learning = 9
+    prowess = 5
+
+    trait = education_learning_4
+
+    1224.3.4 = {
+        birth = yes
+    }
+}
+

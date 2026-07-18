@@ -1,0 +1,419 @@
+2053 = {
+	holding = city_holding
+}
+
+2064 = {
+	holding = none
+}
+
+2065 = {
+	holding = none
+}
+
+2067 = {
+	holding = castle_holding
+}
+
+2106 = {
+	holding = none
+}
+
+2132 = {
+	holding = none
+}
+
+2188 = {
+	culture = symvolix
+	religion = hero_religion
+	holding = castle_holding
+}
+
+
+2227 = {
+	culture = symvolix
+	religion = aversarinas_practitioner
+	holding = castle_holding
+}
+
+2302 = {
+	culture = aersodiaxian_islander
+	religion = drakanorix_aagiokrata
+	holding = castle_holding
+}
+
+2317 = {
+	holding = city_holding
+}
+
+
+2614 = {
+	holding = city_holding
+}
+
+2622 = {
+	holding = none
+}
+
+2639 = {
+	culture = guillater_aversarian
+	religion = calystoanistism
+	holding = castle_holding
+}
+
+2677 = {
+	religion = hero_religion
+	culture = symvolix
+	holding = castle_holding
+}
+
+
+3038 = {
+	holding = city_holding
+}
+
+
+3126 = {
+	holding = church_holding
+}
+
+3129 = {
+	holding = none
+}
+
+3138 = {
+	holding = none
+}
+
+3200 = {
+	culture = dasulanoi
+	religion = aversarian_axiaotheaism
+	holding = castle_holding
+}
+
+3246 = {
+	culture = aersodiaxian_islander
+	religion = drakanorix_aagiokrata
+	holding = castle_holding
+}
+
+3249 = {
+	holding = none
+}
+
+3251 = {
+	culture = lorodegi
+	religion = hero_religion
+	holding = castle_holding
+}
+
+3336 = {
+	holding = none
+}
+
+3409 = {
+	culture = guillater_aversarian
+	religion = the_dragon_cult
+	holding = castle_holding
+}
+
+3421 = {
+	culture = guillater_aversarian
+	religion = calystoanistism
+	holding = castle_holding
+}
+
+3464 = {
+	holding = church_holding
+}
+
+3476 = {
+	culture = abdexorn
+	religion = abdexorn_aagiokrata
+	holding = castle_holding
+}
+
+3485 = {
+	culture = guillater
+	religion = seaborne_exalted
+	holding = castle_holding
+}
+
+3494 = {
+	holding = none
+}
+
+3517 = {
+	holding = church_holding
+}
+
+3529 = {
+	holding = city_holding
+}
+
+3546 = {
+	culture = guillater_aversarian
+	religion = the_dragon_cult
+	holding = castle_holding
+}
+
+3656 = {
+	culture = guillater_aversarian
+	religion = hero_religion
+	holding = castle_holding
+}
+
+3657 = {
+	culture = symvolix
+	religion = theryionist
+	holding = castle_holding
+}
+
+3830 = {
+	holding = church_holding
+}
+
+3864 = {
+	holding = none
+}
+
+3895 = {
+	holding = none
+}
+
+3925 = {
+	culture = dasulanoi
+	religion = aeschraes_aagiokrata
+	holding = castle_holding
+}
+
+3928 = {
+	culture = aersodiaxian_islander
+	religion = militant_cliques
+	holding = castle_holding
+}
+
+3932 = {
+	culture = dasulanoi
+	religion = hero_religion
+	holding = castle_holding
+}
+
+
+3976 = {
+	holding = none
+}
+
+4043 = {
+	culture = guillater
+	religion = karoxos_cult
+	holding = tribal_holding
+}
+
+4058 = {
+	culture = karadamos
+	religion = kidarian_dance
+	holding = tribal_holding
+	1.1.1 = {
+		special_building = 01_isle_of_iyondel
+	}
+	1200.3.1 = {
+		religion = shattered_stars_cult
+	}
+}
+
+4090 = {
+	culture = abdexorn
+	religion = abdexorn_aagiokrata
+	holding = castle_holding
+}
+
+4117 = {
+	holding = none
+}
+
+4125 = {
+	holding = none
+}
+
+4209 = {
+	holding = city_holding
+}
+
+4277 = {
+	holding = city_holding
+}
+955 = {
+	holding = none
+}
+
+4351 = {
+	holding = none
+}
+
+4388 = {
+	holding = city_holding
+}
+
+4482 = {
+	holding = church_holding
+}
+
+5261 = {
+	holding = none
+}
+
+5272 = {
+	holding = none
+}
+
+5283 = {
+	culture = dasulanoi
+	religion = hero_religion
+	holding = castle_holding
+	1.1.1 = {
+		special_building = 01_towers_of_pytheceas
+	}
+}
+
+5285 = {
+	holding = city_holding
+}
+
+5298 = {
+	holding = church_holding
+}
+
+5378 = {
+	culture = dasulanoi
+	religion = theryionist
+	holding = castle_holding
+}
+
+5399 = {
+	holding = none
+}
+
+5419 = {
+	culture = guillater_aversarian
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+5429 = {
+	holding = city_holding
+}
+
+5436 = {
+	culture = guillater
+	religion = sacred_stars_cult
+	holding = tribal_holding
+	1205.1.1 = {
+		religion = shattered_stars_cult
+	}
+}
+
+5462 = {
+	holding = church_holding
+}
+
+
+5496 = {
+	culture = dasulanoi
+	religion = aversarinas_practitioner
+	holding = castle_holding
+}
+
+5557 = {
+	holding = church_holding
+}
+
+5571 = {
+	holding = none
+}
+
+5581 = {
+	culture = dasulanoi
+	religion = hero_religion
+	holding = city_holding
+}
+
+5632 = {
+	holding = church_holding
+}
+
+5659 = {
+	holding = church_holding
+}
+
+5691 = {
+	holding = none
+}
+
+
+5806 = {
+	culture = dasulanoi
+	religion = theryionist
+	holding = castle_holding
+}
+
+5833 = {
+	holding = none
+}
+
+5837 = {
+	culture = guillater_aversarian
+	religion = calystoanistism
+	holding = castle_holding
+	
+}
+
+5878 = {
+	culture = dasulanoi
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5915 = {
+	culture = abdexorn
+	religion = abdexorn_aagiokrata
+	holding = castle_holding
+}
+
+5541 = {
+	culture = skolix
+	religion = aversarinas_aagiokrata
+}
+5974 = {
+	culture = guillater_aversarian
+	religion = cleansed_ones
+	holding = castle_holding
+}
+
+7230 = {
+	culture = walakon
+	religion = hero_religion
+	holding = castle_holding
+}
+
+9011 = {
+	holding = none
+}
+
+3285 = {
+	culture = skolix
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+2625 = {
+	culture = aersodiaxian_islander
+	religion = militant_cliques
+	holding = castle_holding
+}
+
+4290 = {
+	culture = skolix
+	religion = aversarinas_aagiokrata
+}

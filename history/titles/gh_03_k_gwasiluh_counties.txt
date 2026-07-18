@@ -1,0 +1,73 @@
+﻿c_kalfekh = {
+  1200.3.1 = {
+	 holder = wasteland
+  }
+}
+c_imbahar = {
+  1250.3.1 = {
+	 government = migratory_government
+   holder = gwasillikh_ruidari_2
+  }
+}
+c_dundain = {
+  1250.3.1 = {
+	 government = migratory_government
+   holder = gwasillikh_ruidari_3
+  }
+}
+c_kolfez = {
+  1200.3.1 = {
+   holder = wasteland
+  }
+}
+c_tashbirr = {
+  1250.3.1 = {
+	 government = migratory_government
+   holder = gwasillikh_ruidari_1
+  }
+}
+c_khuzemawes = {
+  1200.3.1 = {
+    holder = wasteland
+  }
+}
+c_karfara = {
+  1200.3.1 = {
+    holder = wasteland
+  }
+}
+c_khuyyu = {
+  1200.3.1 = {
+   holder = wasteland
+  }
+}
+c_new_sarradon_county20 = {
+  1200.3.1 = {
+  holder = wasteland
+  }
+}
+c_south_bedouins_1022 = {
+  1200.3.1 = {
+    holder = wasteland
+  }
+}
+c_new_sarradon_county5 = {
+  1200.3.1 = {
+  holder = wasteland
+  }
+}
+c_south_bedouins_61 = {
+  1200.3.1 = {
+    holder = wasteland
+    }
+}
+c_khurrmar = {
+  1200.3.1 = {
+    holder = wasteland
+  }
+}
+c_kuffiyad = {
+  1200.3.1 = {
+    holder = wasteland
+  }
+}

@@ -1,0 +1,83 @@
+#d_adne = {
+#	1140.5.1 = {
+#		holder = skorikiakas_aversarinas_aagiokrata_2
+#		liege = e_malcois
+#		government = feudal_government
+#	}
+#	1170.7.27 = {
+#		holder = skorikiakas_aversarinas_aagiokrata_3
+#		liege = e_malcois
+#	}
+#	1203.6.25 = {
+#		holder = skorikiakas_aversarinas_aagiokrata_4
+#		liege = e_malcois
+#	}
+#	1234.12.30 = {
+#		holder = skorikiakas_aversarinas_aagiokrata_5
+#		liege = e_malcois
+#	}
+#	1247.3.15 = {
+#		holder = 0
+#	}
+#	1230.1.1 = { change_development_level = 5}
+#	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+#		de_jure_liege = k_pdvi
+#	}
+#}
+
+d_oios = {
+	1042.9.23 = {
+		holder = centralimperial_aversarinas_aagiokrata_169
+		liege = e_malcois
+		government = feudal_government
+	}
+	1071.9.4 = {
+		holder = centralimperial_aversarinas_aagiokrata_168
+	}
+	1250.1.1 = {
+		holder = daukeni_sjalvolki_72
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1230.1.1 = { change_development_level = 6}
+	1267.3.13 = {
+		holder = skorikiakas_aversarinas_aagiokrata_12
+		government = feudal_government
+	}
+}
+
+d_anadres = {
+	1230.1.1 = { change_development_level = 5}
+	1250.1.1 = {
+		holder = goans_gethian_2
+		liege = e_migrant_coalition
+		government = tribal_government
+	}
+}
+
+d_vroradi = {
+	1230.1.1 = { change_development_level = 9}
+	1250.1.1 = {
+		holder = goans_gethian_3
+		liege = e_migrant_coalition
+		government = tribal_government
+	}
+}
+
+d_kicyon = {
+	1045.3.23 = {
+		holder = skorikiakas_aversarinas_aagiokrata_9
+		liege = e_malcois
+		government = feudal_government
+	}
+	1062.10.14 = {
+		holder = skorikiakas_aversarinas_aagiokrata_8
+	}
+	1065.1.24 = {
+		holder = centralimperial_aversarinas_aagiokrata_168
+	}
+	1089.1.26 = {
+		holder = 0
+	}
+	1230.1.1 = { change_development_level = 6}
+}

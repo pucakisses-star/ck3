@@ -1,0 +1,41 @@
+k_aekershaan = {
+	1202.5.18 = {
+		holder = aiyqarbkhiyl_ahridar_1
+	}
+	1217.3.28 = {
+		holder = aiyqarbkhiyl_ahridar_2
+	}
+	1222.4.2 = {
+		holder = 0
+	}
+}
+k_kazhomi = {
+	1250.1.1 = {
+		holder = tasurmad_harthahi_1
+	}
+}
+k_marwaven = {
+	1250.1.1 = {
+		holder = tasurmad_harthahi_1
+	}
+}
+k_sinasan = {
+	820.1.1 = {
+		holder = sinasan_xwestrozen_2
+	}
+	1116.5.28 = {
+		holder = sinasan_xwestrozen_5
+	}
+	1187.12.5 = {
+		holder = sinasan_xwestrozen_4
+	}
+	1192.10.7 = {
+		holder = sinasan_xwestrozen_3
+	}
+	1200.3.2 = {
+		holder = sinasan_xwestrozen_1
+	}
+	1224.5.13 = {
+		holder = 0
+	}
+}

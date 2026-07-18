@@ -1,0 +1,81 @@
+c_northern_katraddia_18a = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_northern_katraddia_1 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_northern_katraddia_3 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_northern_katraddia_9 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_northern_katraddia_7 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_northern_katraddia_8 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_northern_katraddia_15 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_northern_katraddia_11 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_northern_katraddia_17 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_northern_katraddia_2 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_northern_katraddia_12 = {
+	1230.1.1 = {
+		holder = fog_eaters_fogeater_28
+		government = migratory_government
+	}
+}
+c_northern_katraddia_13 = {
+	1230.1.1 = {
+		holder = fog_eaters_fogeater_28
+		government = migratory_government
+	}
+}
+c_northern_katraddia_14 = {
+	1230.1.1 = {
+		holder = fog_eaters_fogeater_28
+		government = migratory_government
+	}
+}
+# GH TODO: Uncomment after restoring c_northern_kisles4 in 00_landed_titles.txt .
+#c_northern_kisles4 = {
+#	1230.1.1 = {
+#		holder = fog_eaters_fogeater_32
+#		government = migratory_government
+#	}
+#}
+c_northern_kisles12 = {
+	1230.1.1 = {
+		holder = fog_eaters_fogeater_39
+		government = migratory_government
+	}
+}

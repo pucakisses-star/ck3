@@ -1,0 +1,360 @@
+894 = {
+	holding = none
+}
+
+959 = {
+	holding = city_holding
+}
+
+965 = {
+	culture = makryenis
+	religion = dikaynos
+	holding = castle_holding
+}
+
+966 = {
+	holding = none
+}
+
+968 = {
+	culture = mutsartan
+	religion = wardenism
+	holding = castle_holding
+
+	1200.1.1 = {
+		special_building = 01_beban_mines
+	}
+}
+
+970 = {
+	holding = none
+}
+
+972 = {
+	culture = mutsartan
+	religion = quwazaw
+	holding = castle_holding
+}
+
+974 = {
+	holding = church_holding
+}
+
+979 = {
+	holding = none
+}
+
+981 = {
+	holding = none
+}
+
+982 = {
+	culture = adnanari
+	religion = ritualist4
+	holding = castle_holding
+}
+
+984 = {
+	holding = none
+}
+
+985 = {
+	culture = adnanari
+	religion = badari
+	holding = castle_holding
+}
+
+986 = {
+	holding = church_holding
+}
+
+987 = {
+	holding = none
+}
+
+991 = {
+	holding = city_holding
+}
+
+993 = {
+	culture = mutsartan
+	religion = ataabay_zatanai
+	holding = castle_holding
+}
+
+994 = {
+	holding = none
+}
+
+996 = {
+	holding = church_holding
+}
+
+999 = {
+	holding = none
+}
+
+1003 = {
+	culture = mutsartan
+	religion = quwazaw
+	holding = castle_holding
+}
+
+1004 = {
+	holding = church_holding
+}
+
+1006 = {
+	holding = none
+}
+
+1008 = {
+	culture = adnanari
+	religion = ataabay_zatanai
+	holding = castle_holding
+}
+
+1010 = {
+	culture = adnanari
+	religion = aarayi
+	holding = castle_holding
+	
+	1.1.1 = {
+		special_building = 01_easterncabal
+	}
+}
+
+1096 = {
+	culture = utyalid
+	religion = harthahi
+	holding = castle_holding
+}
+
+1097 = {
+	holding = city_holding
+}
+
+1098 = {
+	holding = city_holding
+}
+
+1106 = {
+	holding = church_holding
+}
+
+1107 = {
+	culture = mutsartan
+	religion = harthahi
+	holding = castle_holding
+}
+
+1110 = {
+	holding = none
+}
+
+1111 = {
+	holding = none
+}
+
+1112 = {
+	culture = mutsartan
+	religion = quwazaw
+	holding = castle_holding
+}
+
+1114 = {
+	holding = none
+}
+
+1115 = {
+	holding = none
+}
+
+1116 = {
+	culture = mutsartan
+	religion = quwazaw
+	holding = castle_holding
+}
+
+1120 = {
+	culture = mutsartan
+	religion = quwazaw
+	holding = castle_holding
+}
+
+1123 = {
+	holding = none
+}
+
+1128 = {
+	culture = adnanari
+	religion = aarayi
+	holding = metro_holding
+	1200.1.1 = {
+		buildings = {
+			
+			luxury_goods_04
+			embassy_02
+		}
+	}
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+}
+
+1129 = {
+	holding = city_holding
+}
+
+1130 = {
+	culture = adnanari
+	religion = aarayi
+	holding = castle_holding
+}
+
+1131 = {
+	holding = city_holding
+}
+
+1133 = {
+	holding = city_holding
+}
+
+1135 = {
+	culture = adnanari
+	religion = harthahi
+	holding = castle_holding
+}
+
+1136 = {
+	holding = none
+}
+
+1160 = {
+	culture = adnanari
+	religion = kamayed
+	holding = city_holding
+}
+
+1163 = {
+	culture = adnanari
+	religion = aarayi
+	holding = castle_holding
+}
+
+1166 = {
+	holding = none
+}
+
+1167 = {
+	holding = city_holding
+}
+
+1168 = {
+	holding = city_holding
+}
+
+1170 = {
+	culture = adnanari
+	religion = hayawan
+	holding = castle_holding
+}
+
+1171 = {
+	holding = city_holding
+}
+
+1174 = {
+	culture = adnanari
+	religion = aarayi
+	holding = castle_holding
+}
+
+1177 = {
+	culture = adnanari
+	religion = harthahi
+	holding = castle_holding
+
+	1200.1.1 = {
+		special_building = 01_mayaliha_mines
+	}
+}
+
+1179 = {
+	holding = none
+}
+
+1562 = {
+	holding = city_holding
+}
+
+2910 = {
+	holding = church_holding
+}
+
+2914 = {
+	holding = city_holding
+}
+
+2915 = {
+	holding = city_holding
+}
+
+3052 = {
+	holding = city_holding
+}
+
+3282 = {
+	culture = adnanari
+	religion = aarayi
+	holding = metro_holding
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+}
+
+3520 = {
+	culture = adnanari
+	religion = ritualist4
+	holding = castle_holding
+}
+
+3905 = {
+	culture = adnanari
+	religion = aarayi
+	holding = castle_holding
+}
+
+5156 = {
+	culture = mutsartan
+	religion = harthahi
+	holding = castle_holding
+}
+
+5158 = {
+	culture = mutsartan
+	religion = harthahi
+	holding = castle_holding
+}
+
+5163 = {
+	holding = city_holding
+}
+
+5186 = {
+	holding = church_holding
+}
+
+7951 = {
+	holding = none
+}
+
+5826 = {
+	culture = utyalid
+	religion = harfi
+	holding = tribal_holding
+}

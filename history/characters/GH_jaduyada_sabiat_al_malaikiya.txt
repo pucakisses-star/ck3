@@ -1,0 +1,47 @@
+﻿jaduyada_sabiat_al_malaikiya_1 = { 
+	# 9th century noble scion and physician that refounded the healing house at the base of Sophocos after the previous incarnation was left destroyed by the Halakdun
+	# Responsible for the preservation of a significant corpus of knowledge through the chaos of the Downfall
+	name = "Sirin"
+	
+	religion = sabiat_al_malaikiya
+	culture = jaduyada
+	
+	female = yes
+
+	martial = 8
+	diplomacy = 6
+	intrigue = 2
+	stewardship = 12
+	learning = 10
+	prowess = 1
+
+	779.7.30 = {
+		birth = yes
+	}
+	
+	791.1.1 = {
+		trait = zealous
+		trait = generous
+		trait = forgiving
+	}
+	
+	795.7.30 = {
+		trait = education_learning_4
+		trait = lifestyle_physician
+	}
+	
+	802.1.1 = {
+		effect = {
+			add_trait_xp = {
+				trait = lifestyle_physician
+				value = 100
+			}
+		}
+	}
+
+	856.3.17 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}

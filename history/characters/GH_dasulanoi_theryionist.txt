@@ -1,0 +1,45 @@
+﻿dasulanoi_theryionist_1 = {
+    name = "Carvilius"
+    religion = theryionist
+    culture = dasulanoi
+    trait = beauty_good_1
+    1234.9.11 = {
+        birth = yes
+        trait = magic_good_1
+    }
+    1246.9.11 = {
+        trait = zealous
+        trait = just
+        trait = impatient
+    }
+    1250.9.11 = {
+        trait = education_learning_3
+        trait = gh_historical_school
+        effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+    }
+    1251.9.11 = {
+        trait = lunatic_1
+        add_unpressed_claim = title:c_gamerisle
+    }
+}
+
+dasulanoi_theryionist_2 = {
+    name = "Lethei"
+    religion = theryionist
+    culture = dasulanoi
+    1225.7.14 = {
+        birth = yes
+    }
+    1237.7.14 = {
+        trait = arrogant
+        trait = ambitious
+        trait = calm
+    }
+    1241.7.14 = {
+        trait = education_stewardship_3
+        add_pressed_claim = title:c_dragonteeth
+    }
+}

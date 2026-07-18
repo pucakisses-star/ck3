@@ -1,0 +1,589 @@
+﻿aljibal_kemsari_kemsar_1 = {
+	name = "Bakheperuneb"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+	dna = kemsar_10
+	trait = cannibal
+	trait = sadistic
+	trait = ambitious
+	trait = zealous
+	trait = education_martial_3
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = no_hair
+		}
+	}
+
+	1236.1.1 = {
+		birth = yes
+		effect = {
+			give_nickname = nick_the_cannibal_bakheperuneb
+#			add_pressed_claim = title:c_sesedjabhet # GH TODO: Removed in province rework, find another
+		}
+	}
+}
+
+aljibal_kemsari_kemsar_2 = {
+	name = "Nuru"
+	dna = aljibal_kemsari_kemsar_2
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	female = yes
+	martial = 20
+	trait = wrathful
+	trait = ambitious
+	trait = unyielding_defender
+	trait = education_martial_4
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_sub_saharan_02
+		}
+	}
+
+	1215.1.1 = {
+		birth = yes
+		effect = {
+			give_nickname = nick_the_glorious_nuru
+#			add_pressed_claim = title:c_deshretmetkha
+			add_pressed_claim = title:c_diuasbadys
+		}
+	}
+}
+
+aljibal_kemsari_kemsar_3 = { # Pint size Magi with a short temper. Also uses living magic, so a bit of an anomaly for the region
+#missing province
+	name = "Khep_Hosep"
+	dna = aljibal_kemsari_kemsar_3
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_sub_saharan_01
+		}
+	}
+
+	1167.11.3 = {
+		birth = yes
+		trait = dwarf
+		trait = magic_good_2
+	}
+
+	1179.1.1 = {
+		trait = impatient
+		trait = wrathful
+		trait = vengeful
+	}
+
+	1183.11.3 = {
+		trait = education_martial_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+			give_nickname = nick_the_aggressive_dwarf_khephosep
+		}
+	}
+
+	1235.8.9 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+aljibal_kemsari_kemsar_4 = { #missing county
+	name = "Heteph"
+	dna = aljibal_kemsari_kemsar_4
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+	female = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_sub_saharan_02
+		}
+	}
+
+	1160.4.28 = {
+		birth = yes
+		trait = magic_good_3
+		effect = {
+			give_nickname = nick_the_silent_heteph
+		}
+	}
+
+	1172.1.1 = {
+		trait = fickle
+		trait = arbitrary
+		trait = zealous
+	}
+
+	1176.4.28 = {
+		trait = education_intrigue_2
+		trait = disfigured
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:rites_of_the_land_beyond }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1197.4.26 = {
+		death = {
+			death_reason = death_duel
+			killer = ran_kemsari_kemsar_6
+		}
+	}
+}
+
+aljibal_kemsari_kemsar_5 = {
+	name = "Scemiophris"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	female = yes
+
+	1231.1.1 = {
+		birth = yes
+	}
+}
+
+aljibal_kemsari_kemsar_6 = {
+	name = "Theoris"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	female = yes
+
+	1221.1.1 = {
+		birth = yes
+	}
+}
+
+aljibal_kemsari_kemsar_7 = {
+	name = "Takhat"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	female = yes
+
+	1220.1.1 = {
+		birth = yes
+	}
+}
+
+aljibal_kemsari_kemsar_8 = {
+	name = "Arnebaskenis"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+aljibal_kemsari_kemsar_9 = {
+	name = "Mut_snat_em"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	female = yes
+
+	1216.1.1 = {
+		birth = yes
+	}
+}
+
+aljibal_kemsari_kemsar_10 = {
+	name = "Kema"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	female = yes
+
+	1235.1.1 = {
+		birth = yes
+	}
+}
+
+aljibal_kemsari_kemsar_11 = {
+	name = "Rhamschosi"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	1221.1.1 = {
+		birth = yes
+	}
+}
+
+aljibal_kemsari_kemsar_12 = {
+	name = "Raziya"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	female = yes
+
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+aljibal_kemsari_kemsar_13 = {
+	name = "Msamaki"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	1219.1.1 = {
+		birth = yes
+	}
+}
+
+aljibal_kemsari_kemsar_14 = {
+	name = "Renenet"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	female = yes
+
+	1218.1.1 = {
+		birth = yes
+	}
+}
+
+aljibal_kemsari_kemsar_15 = {
+	name = "Tsiskha"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	1217.1.1 = {
+		birth = yes
+	}
+}
+
+aljibal_kemsari_kemsar_16 = {
+	name = "Tes_bast_peru"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	female = yes
+
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+aljibal_kemsari_kemsar_17 = { #missing county
+	name = "Gyasi"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+aljibal_kemsari_kemsar_18 = { #missing county
+	name = "Msamaki"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	1236.1.1 = {
+		birth = yes
+	}
+}
+
+aljibal_kemsari_kemsar_19 = { #missing county
+	name = "Amun_thori"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	1222.1.1 = {
+		birth = yes
+	}
+}
+
+aljibal_kemsari_kemsar_20 = {
+	name = "Renenet"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	female = yes
+
+	1224.1.1 = {
+		birth = yes
+	}
+}
+
+aljibal_kemsari_kemsar_21 = {
+	name = "Nofret"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	female = yes
+
+	1183.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+aljibal_kemsari_kemsar_22 = {
+	name = "Alim"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	1170.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+aljibal_kemsari_kemsar_23 = {
+	name = "Idris"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	1182.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+aljibal_kemsari_kemsar_24 = {
+	name = "Maryam"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	female = yes
+
+	1178.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+aljibal_kemsari_kemsar_25 = {
+	name = "Yakareb"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	1171.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+aljibal_kemsari_kemsar_26 = { #missing county
+	name = "Jabir"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	1184.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+aljibal_kemsari_kemsar_27 = {
+	name = "Rashida"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	female = yes
+
+	1169.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+aljibal_kemsari_kemsar_28 = {
+	name = "Talib"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	1177.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+aljibal_kemsari_kemsar_29 = {
+	name = "Isa"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	1177.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+aljibal_kemsari_kemsar_30 = { #missing county
+	name = "Hasan"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	1170.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+aljibal_kemsari_kemsar_31 = { #missing county
+	name = "Parand"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	female = yes
+
+	1178.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+aljibal_kemsari_kemsar_32 = { #missing county
+	name = "Sechet"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	female = yes
+
+	1184.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+aljibal_kemsari_kemsar_33 = { #missing county
+	name = "Taneen"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	female = yes
+
+	1183.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+aljibal_kemsari_kemsar_34 = {
+	name = "Muzaffaraddin"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	1174.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+aljibal_kemsari_kemsar_35 = { #missing county
+	name = "Ghalib"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	1172.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+aljibal_kemsari_kemsar_36 = { #missing county
+	name = "Malik"
+	religion = "kemsar"
+	culture = "aljibal_kemsari"
+
+	1164.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}

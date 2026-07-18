@@ -1,0 +1,56 @@
+c_baqerabad = {
+	1169.1.1 = {
+		holder = amsari_mahndayana_275
+	} # Jahanshah (1169-1184 IS)
+	1184.1.1 = {
+		holder = amsari_mahndayana_2
+	} # Pejman (1184-1257 IS)
+	1248.5.12 = {
+		holder = voyagen_lifepath_46
+	}
+}
+c_khaglun = {
+	1122.9.10 = {
+		#government = pirate_government #Pirate gov is too overpowered for now
+		holder = siralagi_mahndayana_100
+		liege = e_amsari
+	}
+	1175.5.16 = {
+		holder = siralagi_mahndayana_101
+		liege = e_amsari
+	}
+	1198.3.30 = {
+		holder = siralagi_mahndayana_102
+		liege = e_amsari
+	}
+	1200.1.1 = {
+		change_development_level = 23
+	}	
+	1222.1.22 = {
+		holder = siralagi_mahndayana_103
+		liege = e_amsari
+	}
+	1242.4.7 = {
+		holder = amsari_mahndayana_21
+		liege = e_amsari
+	}
+}
+c_garmeh_cheshmeh = {
+	1200.1.1 = {
+		change_development_level = 23
+	}
+	1219.5.19 = {
+		holder = leviden_mahndayana_13
+		liege = k_dizaje_dul
+	}
+}
+#c_andadeh = {
+#	1200.1.1 = {
+#		change_development_level = 23
+#	}
+#	1240.1.1 = {
+#		government = pirate_government
+#		holder = amsari_mahndayana_21
+#		liege = e_amsari
+#	}
+#}
