@@ -1,0 +1,80 @@
+name: Build map assets
+
+# Rebuilds docs/ (the GitHub Pages site) whenever the app sources or the mod's
+# map data change on main: regenerates docs/map/* from the mod files, bundles
+# the Vite/Three.js app, and commits the result back to main. Pages then
+# serves the fresh build from /docs — no binaries ever travel through PRs.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'index.html'
+      - 'tools/build_fixed_map.py'
+      - 'package.json'
+      - 'vite.config.ts'
+      - 'map_data/**'
+      - 'common/landed_titles/**'
+      - 'history/provinces/**'
+      - 'tools/build_map_objects.py'
+      - 'tools/build_coa.py'
+      - 'tools/province_art.json'
+      - 'common/coat_of_arms/**'
+      - 'common/named_colors/**'
+      - 'gfx/coat_of_arms/**'
+      - 'gfx/*'
+      - 'gfx/models/**'
+      - 'gfx/map/map_object_data/**'
+      - 'content_source/map_objects/**'
+      - '.github/workflows/build-map.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-map
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pillow numpy
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Generate map assets from mod data
+        run: python tools/build_fixed_map.py
+
+      - name: Convert the mod's 3-D models & placements
+        run: python tools/build_map_objects.py
+
+      - name: Render realm coats of arms
+        run: python tools/build_coa.py
+
+      - name: Build app into docs/
+        run: |
+          npm ci
+          rm -rf docs/assets
+          npm run build
+
+      - name: Commit built site
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add docs/
+          if git diff --cached --quiet; then
+            echo 'docs/ unchanged'
+          else
+            git commit -m 'Build map assets [skip ci]'
+            git push
+          fi
