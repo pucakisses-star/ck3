@@ -1,0 +1,134 @@
+﻿#c_pitchdal = {
+#	1230.1.1 = {
+#		holder = ualeren_orgarrd_03
+#		government = tribal_government
+#	}
+#}
+
+c_lachish = {
+	1230.1.1 = {
+		holder = ualeren_orgarrd_04
+		government = tribal_government
+	}
+}
+
+#c_hakkati = {
+#	1230.1.1 = {
+#		holder = ualeren_orgarrd_05
+#		government = tribal_government
+#	}
+#}
+
+#c_mosara = {
+#	1230.1.1 = {
+#		holder = ualeren_orgarrd_05
+#		government = tribal_government
+#	}
+#}
+
+#c_naganis = {
+#	1230.1.1 = {
+#		holder = maebalah_masaagnite_01
+#		government = tribal_government
+#	}
+#}
+#
+#c_dadalikent = {
+#	1230.1.1 = {
+#		holder = maebalah_masaagnite_02
+#		government = tribal_government
+#	}
+#}
+#
+#c_annaspid = {
+#	1230.1.1 = {
+#		holder = maebalah_masaagnite_02
+#		government = tribal_government
+#	}
+#}
+#
+#c_yenikhur = {
+#	1230.1.1 = {
+#		holder = maebalah_masaagnite_03
+#		government = tribal_government
+#	}
+#}
+
+c_dulimadi = {
+	1230.1.1 = {
+		holder = maebalah_masaagnite_04
+		government = tribal_government
+	}
+}
+
+
+c_mahbol = {
+	1230.1.1 = {
+		holder = maebalah_masaagnite_05
+		government = tribal_government
+	}
+}
+
+#c_bametfa = {
+#	1230.1.1 = {
+#		holder = maebalah_masaagnite_05
+#		government = tribal_government
+#	}
+#}
+
+c_pazost = {
+	1200.1.1 = {
+		holder = wasteland
+	}
+}
+
+c_siroyan = {
+	1230.1.1 = {
+		holder = maebalah_mukaasubat_01
+		government = tribal_government
+	}
+}
+#
+#c_kelurlu = {
+#	1230.1.1 = {
+#		holder = maebalah_mukaasubat_01
+#		government = tribal_government
+#	}
+#}
+#
+#c_blooming_sands3 = {
+#	1230.1.1 = {
+#		holder = maebalah_mukaasubat_02
+#		government = tribal_government
+#	}
+#}
+
+c_silkho = {
+	1218.1.1 = {
+		holder = maebalah_mukaasubat_06
+		government = tribal_government
+	}
+	1226.3.13 = {
+		holder = maebalah_mukaasubat_05
+	}
+}
+
+c_nazazak = {
+	1200.1.1 = {
+		holder = wasteland
+	}
+}
+
+#c_zah = {
+#	1230.1.1 = {
+#		holder = maebalah_mukaasubat_04
+#		government = tribal_government
+#	}
+#}
+#
+#c_kurtajar = {
+#	1230.1.1 = {
+#		holder = maebalah_mukaasubat_04
+#		government = tribal_government
+#	}
+#}

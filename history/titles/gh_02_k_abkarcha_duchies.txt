@@ -1,0 +1,12 @@
+d_ksagro = {
+	1197.8.30 = {
+		holder = amaghean_amaghean_aagiokrata_33
+	}
+	1224.9.4 = {
+		liege = k_svanti
+		holder = charchac_daminkar_2
+	}
+	1240.11.15 = {
+		holder = charchac_alau_koev_2
+	}
+}

@@ -1,0 +1,875 @@
+﻿imperialislander_aversarinas_aagiokrata_1 = { # Legan Visaya of Etepezean Governorial Legio LXXXVII 'Shatter-Swords', joined the Agionist Cause
+	name = "Visaya" 
+
+	dna = visaya
+	religion = sansia
+	culture = imperialislander
+	disallow_random_traits = yes
+	female = yes
+
+	martial = 6
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 6
+	learning = 4
+	prowess = 5
+
+	1062.3.8 = {
+		birth = yes
+		trait = beauty_good_1
+	}
+
+	1074.1.1 = {
+		trait = diligent
+		trait = gregarious
+		trait = generous
+	}
+
+	1078.3.8 = {
+		trait = education_martial_2
+		trait = flexible_leader
+	}
+
+	1088.9.18 ={
+		trait = gh_legon
+	}
+
+	1094.11.3 = {
+		death = {
+			death_reason = death_battle
+			killer = westernimperial_aversarinas_aagiokrata_55 # Legon Orox Aelmithras
+		}
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_2 = { # Legon Mechres Cymodon of Legio XLIII 'Firstborn', was slain in the Battle of Elysian Pass
+	name = "Mikhros" 
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = imperialislander
+	disallow_random_traits = yes
+
+	father = imperialislander_aversarinas_aagiokrata_22
+	mother = islander_aversarinas_aagiokrata_31
+
+	martial = 7
+	diplomacy = 8
+	intrigue = 3
+	stewardship = 7
+	learning = 6
+	prowess = 6
+
+	1200.2.20 = {
+		birth = yes
+	}
+
+	1212.1.1 = {
+		trait = arrogant
+		trait = lustful
+		trait = brave
+	}
+
+	1216.2.20 = {
+		trait = education_martial_3
+		trait = forder
+	}
+
+	1238.10.24 ={
+		trait = gh_legon
+	}
+
+	1252.1.1 = {
+		death = {
+			death_reason = death_elysian_pass
+			killer = irmionoth_sjalvolki_2 # Gunzelin Blood-Beard
+		}
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_3 = { # Tower warden
+	name = "Phaeniktriox" #Renamed from Pantoleon
+	dna = imperialislander_aversarinas_aagiokrata_3
+	dynasty = dyn_aversaria_western_isle_7
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	trait = education_learning_4
+	trait = scholar
+	learning = 10
+	trait = zealous
+	trait = patient
+	trait = temperate
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_mena_04
+			custom_beards = male_beard_rtt_01
+		}
+	}
+
+	1192.6.18 = {
+		birth = yes
+	}
+
+	1259.1.2 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_4 = { # Cult dude named after a noble gas
+	name = "Zenon"
+	dna = imperialislander_aversarinas_aagiokrata_4
+	father = imperialislander_aversarinas_aagiokrata_17
+	dynasty = dyn_aversaria_western_isle_5
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	
+	intrigue = 10
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_rtt_02
+			custom_beards = male_beard_western_10
+		}
+	}
+
+	1212.6.18 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1224.1.1 = {
+		trait = deceitful
+		trait = ambitious
+		trait = vengeful	
+	}
+
+	1228.6.18 = {
+		trait = education_intrigue_3
+		trait = schemer
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+
+	1239.5.19 = {
+		add_spouse = imperialislander_aversarinas_aagiokrata_5
+	}
+
+	1259.3.16 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_5 = { # Cult mom
+	name = "Aigidia"
+	dna = imperialislander_aversarinas_aagiokrata_5
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	female = yes
+	dynasty = dyn_aversaria_western_isle_5
+	trait = magic_good_1
+	trait = education_diplomacy_3
+	trait = deceitful
+	trait = gregarious
+	trait = ambitious
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_byzantine_01
+		}
+	}
+
+	1215.6.18 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+
+	1248.4.4 = {
+		add_spouse = islander_aversarinas_aagiokrata_25
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_6 = { # Declared empress-young
+	name = "Pelagia"
+	dna = imperialislander_aversarinas_aagiokrata_6
+	father = imperialislander_aversarinas_aagiokrata_7
+	dynasty = dyn_aversaria_western_isle_6
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	trait = ambitious
+	trait = magic_good_2
+	trait = education_diplomacy_4
+	trait = cynical
+	trait = stubborn
+	trait = intellect_good_2
+	female = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp2_iberian_christian_01
+		}
+	}
+
+	1235.6.18 = {
+		birth = yes
+        effect = {
+            dynasty = { add_dynasty_prestige_level = 4 }
+        }
+	}
+
+	1288.4.2 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_7 = { # Empress	father
+	name = "Damianos"
+	dna = imperialislander_aversarinas_aagiokrata_7
+	father = imperialislander_aversarinas_aagiokrata_22
+	mother = islander_aversarinas_aagiokrata_31
+	dynasty = dyn_aversaria_western_isle_6
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	trait = magic_good_2
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_indian_01
+			custom_beards = mena_islamic_pointed_beard_03
+		}
+	}
+
+	1192.6.18 = {
+		birth = yes
+	}
+
+	1251.1.6 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_8 = { # Empress brother
+	name = "Niketas"
+	dna = imperialislander_aversarinas_aagiokrata_8
+	dynasty = dyn_aversaria_western_isle_6
+	father = imperialislander_aversarinas_aagiokrata_7
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_09
+			custom_beards = male_beard_mena_04
+		}
+	}
+
+	1237.6.18 = {
+		birth = yes
+	}
+
+	1254.1.1 = {
+		add_spouse = islander_aversarinas_aagiokrata_20
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_9 = { # Empress sister
+	name = "Apollonia"
+	dna = imperialislander_aversarinas_aagiokrata_9
+	dynasty = dyn_aversaria_western_isle_6
+	father = imperialislander_aversarinas_aagiokrata_7
+	female = yes
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	trait = magic_good_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp2_iberian_christian_02
+		}
+	}
+
+	1242.6.18 = {
+		birth = yes
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_10 = {
+	name = "Isidoros"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	dynasty = dyn_aversaria_western_isle_8
+	father = imperialislander_aversarinas_aagiokrata_11
+	mother = imperialislander_aversarinas_aagiokrata_31
+
+	1220.6.18 = {
+		birth = yes
+	}
+
+	1244.5.19 = {
+		add_spouse = imperialislander_aversarinas_aagiokrata_30
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_11 = {
+	name = "Laogonus"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	father = imperialislander_aversarinas_aagiokrata_12
+	mother = imperialislander_aversarinas_aagiokrata_32
+	dynasty = dyn_aversaria_western_isle_8
+
+	1180.8.9 = {
+		birth = yes
+	}
+
+	1225.6.18 = {
+		death = {
+			death_reason = death_duel
+		}
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_12 = {
+	name = "Diodaxos"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	dynasty = dyn_aversaria_western_isle_8
+
+	1154.2.28 = {
+		birth = yes
+	}
+
+	1178.5.5 = {
+		add_spouse = imperialislander_aversarinas_aagiokrata_32
+	}
+
+	1190.6.6 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_13 = {
+	name = "Tryphon"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	dynasty = dyn_aversaria_western_isle_10
+
+	1221.6.18 = {
+		birth = yes
+	}
+
+	1272.8.25 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_14 = {
+	name = "Keteus"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	dynasty = dyn_aversaria_western_isle_10
+
+	1170.4.4 = {
+		birth = yes
+	}
+
+	1235.6.18 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_15 = {
+	name = "Helgesippos"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	dynasty = dyn_aversaria_western_isle_7
+	trait = education_learning_4
+	trait = scholar
+	trait = zealous
+
+	1145.4.30 = {
+		birth = yes
+	}
+
+	1200.3.1 = {
+		death = {
+		death_reason = death_frodbrokna
+		}
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_16 = {
+	name = "Akhrisios"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	dynasty = dyn_aversaria_western_isle_7
+	trait = education_learning_4
+	trait = scholar
+	trait = zealous
+
+	1170.3.2 = {
+		birth = yes
+	}
+
+	1244.1.1 = {
+		death = {
+		death_reason = death_battle
+		}
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_17 = {
+	name = "Deiphobus"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	dynasty = dyn_aversaria_western_isle_5
+
+	1170.5.12 = {
+		birth = yes
+	}
+
+	1244.1.1 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_18 = {
+	name = "Evangelos"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	dynasty = dyn_aversaria_western_isle_2
+	father = imperialislander_aversarinas_aagiokrata_19
+	mother = imperialislander_aversarinas_aagiokrata_33
+
+	1224.6.18 = {
+		birth = yes
+		trait = magic_good_4
+        effect = {
+            dynasty = { add_dynasty_prestige_level = 2 }
+        }
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_19 = {
+	name = "Heliodorus"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	dynasty = dyn_aversaria_western_isle_2
+	father = imperialislander_aversarinas_aagiokrata_21
+	mother = imperialislander_aversarinas_aagiokrata_34
+
+	1184.6.18 = {
+		birth = yes
+	}
+
+	1220.9.1 = {
+		add_spouse = imperialislander_aversarinas_aagiokrata_33
+	}
+
+	1244.1.1 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_20 = {
+	name = "Nycteia" #Renamed from Evangelos, a male name. TRANS! or maybe mistake, but trans tho
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	dynasty = dyn_aversaria_western_isle_2
+	female = yes
+	father = imperialislander_aversarinas_aagiokrata_19
+	mother = imperialislander_aversarinas_aagiokrata_33
+
+	1221.6.18 = {
+		birth = yes
+	}
+
+	1245.9.18 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_21 = {
+	name = "Ennomus"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	trait = magic_good_2
+
+	1159.6.18 = {
+		birth = yes
+	}
+
+	1181.10.1 = {
+		add_spouse = imperialislander_aversarinas_aagiokrata_34
+	}
+
+	1200.3.1 = {
+		death = {
+		death_reason = death_frodbrokna
+		}
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_22 = { # Usurper
+	name = "Apollonis"
+	dynasty = dyn_aversaria_western_isle_6
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	father = islander_aversarinas_aagiokrata_2
+	mother = islander_aversarinas_aagiokrata_3
+	trait = magic_good_1
+	trait = education_martial_3
+	trait = overseer
+	trait = sadistic
+	trait = arrogant
+	trait = ambitious
+	stewardship = 10
+
+	1160.3.28 = {
+		birth = yes
+	}
+
+	1199.1.1 = {
+	effect = {
+		imprison = {
+			target = character:imperialislander_aversarinas_aagiokrata_27
+				type = house_arrest
+		}
+	}
+	}
+
+	1216.1.1 = {
+		death = {
+		death_reason = death_battle
+		}
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_23 = {
+	name = "Kyros"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	1226.6.18 = {
+		birth = yes
+	}
+
+	1263.2.1 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_24 = {
+	name = "Orestes"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	1218.6.18 = {
+		birth = yes
+	}
+	1268.5.10 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_25 = {
+	name = "Meletios"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	dynasty = dyn_aversaria_western_isle_4
+	father = imperialislander_aversarinas_aagiokrata_26
+	mother = imperialislander_aversarinas_aagiokrata_35
+	trait = education_martial_4
+	martial = 5
+
+	1229.6.18 = {
+		birth = yes
+        effect = {
+            dynasty = { add_dynasty_prestige_level = 1 }
+        }
+	}
+
+	1242.1.1 = {
+		add_spouse = islander_aversarinas_aagiokrata_26
+	}
+
+	1273.7.19 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_26 = {
+	name = "Pataikos"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	dynasty = dyn_aversaria_western_isle_4
+	father = imperialislander_aversarinas_aagiokrata_27
+
+	1202.6.18 = {
+		birth = yes
+	}
+
+	1228.9.1 = {
+		add_spouse = imperialislander_aversarinas_aagiokrata_35
+	}
+
+	1253.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_27 = { # Imperial governor
+	name = "Epistrophos"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	dynasty = dyn_aversaria_western_isle_4
+	trait = education_diplomacy_1
+	trait = dull
+	trait = arrogant
+	trait = content
+
+	1170.8.8 = {
+		birth = yes
+	}
+
+	1186.1.1 = {
+		effect = {
+			set_relation_rival = character:imperialislander_aversarinas_aagiokrata_22
+		}
+	}
+
+	1203.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = imperialislander_aversarinas_aagiokrata_22
+		}
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_28 = {
+	name = "Akakios"
+	father = imperialislander_aversarinas_aagiokrata_29
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	1231.6.18 = {
+		birth = yes
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_29 = {
+	name = "Anchimolios"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	1160.1.1 = {
+		birth = yes
+	}
+
+	1215.1.1 = {
+		death = {
+		death_reason = death_ill
+		}
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_30 = {
+	name = "Eudoxia"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	female = yes
+
+	1222.6.18 = {
+		birth = yes
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_31 = { #Cydippe
+	name = "Kydippe"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	female = yes
+
+	1190.8.2 = {
+		birth = yes
+	}
+
+	1240.6.18 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_32 = {
+	name = "Pherenike"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	female = yes
+
+	1156.2.28 = {
+		birth = yes
+	}
+
+	1180.8.9 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_33 = {
+	name = "Deianeira"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	female = yes
+	trait = lustful
+	trait = trusting
+	trait = fickle
+	intrigue = 0
+	trait = education_stewardship_1
+
+	1196.6.18 = {
+		birth = yes
+	}
+
+	1244.10.1 = {
+		add_spouse = islander_aversarinas_aagiokrata_21
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_34 = {
+	name = "Raisa"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	female = yes
+
+	1158.6.14 = {
+		birth = yes
+	}
+
+	1210.5.8 = {
+		death = {
+		death_reason = death_ill
+		}
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_35 = {
+	name = "Arkhesilaus"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+
+	female = yes #Note: supposed to be trans, but causes a crash if this is commented out atm
+
+
+	1203.6.18 = {
+		birth = yes
+	}
+
+	1250.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_36 = {
+	name = "Polykarpos"
+	mother = imperialislander_aversarinas_aagiokrata_30
+	father = imperialislander_aversarinas_aagiokrata_10
+	dynasty = dyn_aversaria_western_isle_8
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+
+	1247.6.18 = {
+		birth = yes
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_37 = {
+	name = "Ioustinianos"
+	mother = imperialislander_aversarinas_aagiokrata_30
+	father = imperialislander_aversarinas_aagiokrata_10
+	dynasty = dyn_aversaria_western_isle_8
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+
+	1250.6.18 = {
+		birth = yes
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_38 = {
+	name = "Borus"
+	mother = imperialislander_aversarinas_aagiokrata_31
+	father = imperialislander_aversarinas_aagiokrata_11
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	dynasty = dyn_aversaria_western_isle_8
+
+	1224.6.18 = {
+		birth = yes
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_39 = {
+	name = "Apisaon"
+	mother = imperialislander_aversarinas_aagiokrata_30
+	father = imperialislander_aversarinas_aagiokrata_10
+	dynasty = dyn_aversaria_western_isle_8
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+
+	1249.6.18 = {
+		birth = yes
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_40 = {
+	name = "Siromos"
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	dynasty = dyn_aversaria_western_isle_4
+	father = imperialislander_aversarinas_aagiokrata_26
+	mother = imperialislander_aversarinas_aagiokrata_35
+
+	1235.6.18 = {
+		birth = yes
+	}
+
+	1244.1.1 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+
+imperialislander_aversarinas_aagiokrata_41 = { # Creepy cult kid
+	name = "Niphon"
+	mother = imperialislander_aversarinas_aagiokrata_5
+	father = imperialislander_aversarinas_aagiokrata_4
+	religion = "aversarinas_aagiokrata"
+	culture = "imperialislander"
+	dynasty = dyn_aversaria_western_isle_5
+	trait = albino
+	trait = magic_good_3
+
+	1242.6.18 = {
+		birth = yes
+	}
+}

@@ -1,0 +1,279 @@
+﻿d_laamp_sun_seekers = { # Kraken-Eater
+	1252.2.1 = {
+		holder = fenvir_sjalvolki_21
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_laamp_thunderhoof_troupe = { # Lihejin Bronzeport Claimant
+	1240.3.8 = {
+		holder = lakoeng_fourteen_heavenly_methods_28
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_laamp_rusted_remnants = { # Last Skorikiakas
+	1247.3.15 = {
+		holder = skorikiakas_aversarinas_aagiokrata_7
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_laamp_unbound = { # Shape-Changer
+	1247.11.24 = {
+		holder = tribocicai_sjalvolki_1
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_laamp_vengeance_seekers = { # Sirras
+	1251.2.12 = {
+		holder = scusstari_iyrossi_aagiokrata_13
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_laamp_aagiokratian_archailogikos_sokoinias = { # Archaeologists
+	1250.6.21 = {
+		holder = erimatos_aversarinas_aagiokrata_2
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_laamp_stonefists = { # Stone-Fist Maurikios
+	1248.1.14 = {
+		holder = southernimperial_aversarian_gorassos_2
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_laamp_greenguard = { # Maolag
+	1251.12.21 = {
+		holder = voluntic_partic_10
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_laamp_ashen_legion = { # Emarios Sea-Sword
+	1213.5.17 = { # GH: Bit unsure about the date, but this is when he slew Latios of the Safe Harbors
+		holder = ypsikenai_aeschraes_aagiokrata_1
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_band_of_bastards = {
+	1244.1.1 = {
+		holder = voyagen_lifepath_8
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_laamp_peltsnatchers = { # Morigoth
+	1252.1.1 = {
+		holder = mastikigni_sjalvolki_11
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_laamp_crimson_blades = { # Azarg
+	1250.5.31 = {
+		holder = azarg_kutahnuug_guusag_bikhesektan_1
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_laamp_knowledge_recovery = { # patreon expeditionary force
+	1252.5.31 = {
+		holder = ee_nd_15
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_laamp_heralds_of_apotheosis = { # patreon black frat party
+	1244.5.31 = {
+		holder = ee_nd_16
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_laamp_heirs_of_the_sands = { # Asahsepsin the Accursed
+	1244.12.13 = {
+		holder = ran_kemsari_kemsar_3
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_laamp_frozen_fellowship = { # The Last Talareg
+	1250.1.1 = {
+		holder = talareg_sjalvolki_1
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_laamp_valorous_few = { # Konijkmener adventurer
+	1250.2.1 = {
+		holder = konijkmener_lifepath_119
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+
+d_laamp_order_of_the_pureblood = { # Aeschraeist mercs
+	1184.7.1 = {
+		holder = islander_aversarinas_aagiokrata_145
+	}
+	1250.2.1 = {
+		holder = islander_aeschraes_aagiokrata_3
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_laamp_shrouded_sisterhood = { # Night Court Witches
+	1.1.1 = {
+		holder = ardothanes_mothers_and_fathers_3
+	}
+	1200.3.1 = {
+		holder = ardothanes_mothers_and_fathers_1
+	}
+	1247.3.15 = {
+		holder = ardothanes_mothers_and_fathers_2
+		government = landless_adventurer_government
+		succession_laws = {
+			landless_adventurer_succession_law
+			female_only_law
+		}
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+
+d_laamp_brotherhood_of_plenty = { # The Brotherhood of Plenty
+	1168.7.17 = {
+		holder = etrandanexi_aversarinas_aagiokrata_10
+		government = landless_adventurer_government
+	}
+	1203.6.5 = {
+		holder = etrandanexi_aversarinas_aagiokrata_11
+	}
+	1219.1.11 = {
+		holder = etrandanexi_aversarinas_aagiokrata_12
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}

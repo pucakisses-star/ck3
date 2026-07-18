@@ -1,0 +1,175 @@
+c_qadayea = {
+	1083.12.22 = {
+		holder = westernimperial_aversarinas_aagiokrata_483
+		liege = k_colonia_authority
+	}
+	1101.10.14 = {
+		holder = erimatos_aversarinas_aagiokrata_10
+	}
+	1140.9.23 = {
+		holder = erimatos_aversarinas_aagiokrata_11
+	}
+	1182.5.25 = {
+		holder = erimatos_aversarinas_aagiokrata_12
+	}
+	1207.1.18 = {
+		holder = erimatos_aversarinas_aagiokrata_14
+	}
+	1227.9.6 = {
+		holder = adnanari_wardenism_1
+		liege = 0
+	}
+	1230.1.1 = {
+		liege = k_eastern_frontier
+	}
+	1247.1.22 = {
+		holder = adnanari_harthahi_9
+	}
+}
+c_faidiyah = {
+	1230.1.1 = {
+		holder = utyalid_harthahi_3
+		liege = k_eastern_frontier
+	}
+}
+#c_tabutin = {
+#	1230.1.1 = {
+#		holder = utyalid_harthahi_3
+#		liege = k_eastern_frontier
+#	}
+#}
+c_alfakuk = {
+	1230.1.1 = {
+		holder = utyalid_harthahi_4
+		liege = k_eastern_frontier
+	}
+}
+#c_bebinnish = {
+#	1230.1.1 = {
+#		holder = utyalid_harthahi_4
+#		liege = k_eastern_frontier
+#	}
+#}
+#c_latiaqqez = {
+#	1230.1.1 = {
+#		holder = utyalid_harthahi_4
+#		liege = k_eastern_frontier
+#	}
+#}
+c_medihat = {
+	1230.1.1 = {
+		holder = dawasid_harthahi_3
+		liege = k_eastern_frontier
+		government = pirate_government
+	}
+}
+#c_aralfa = {
+#	1230.1.1 = {
+#		holder = adnanari_harthahi_2
+#		liege = k_eastern_frontier
+#	}
+#}
+#c_tamisus = {
+#	1230.1.1 = {
+#		holder = adnanari_harthahi_2
+#		liege = k_eastern_frontier
+#	}
+#}
+#c_muqdabaid = {
+#	1230.1.1 = {
+#		holder = adnanari_harthahi_9
+#		liege = d_exiles_cities
+#	}
+#}
+#c_as_sulatoorah = {
+#	1230.1.1 = {
+#		holder = makryenis_forgotten_1
+#	}
+#}
+#c_khotoorah = {
+#	1200.1.1 = {
+#		holder = erimatos_aversarinas_aagiokrata_1
+#	}
+#	1208.1.5 = {
+#		holder = erimatos_aversarinas_aagiokrata_17
+#	}
+#	1252.9.11 = {
+#		holder = erimatos_aversarinas_aagiokrata_4
+#	}
+#	1250.1.1 = { change_development_level = 4 }
+#}
+#c_addahilif = {
+#	1252.9.11 = {
+#		holder = erimatos_aversarinas_aagiokrata_4
+#	}
+#	1250.1.1 = { change_development_level = 4 }
+#}
+c_ninebjah = {
+	1083.12.22 = {
+		holder = westernimperial_aversarinas_aagiokrata_483
+		liege = k_colonia_authority
+	}
+	1101.10.14 = {
+		holder = erimatos_aversarinas_aagiokrata_10
+	}
+	1140.9.23 = {
+		holder = erimatos_aversarinas_aagiokrata_11
+	}
+	1182.5.25 = {
+		holder = erimatos_aversarinas_aagiokrata_12
+	}
+	1207.1.18 = {
+		holder = erimatos_aversarinas_aagiokrata_14
+	}
+	1227.9.6 = {
+		liege = d_colonia_authority
+	}
+	1250.1.1 = { change_development_level = 4 }
+}
+c_blooming_sands = {
+	1252.9.11 = {
+		holder = erimatos_aversarinas_aagiokrata_4
+	}
+}
+c_wardens_landing = {
+	1250.1.1 = {
+		government = republic_playable_government
+		succession_laws = { clique_republic_elective_title_succession_law }
+		holder = erimatos_aversarinas_aagiokrata_5
+		liege = d_colonia_authority
+	}
+}
+c_kings_reach = {
+	1203.10.3 = {
+		holder = erimatos_aversarinas_aagiokrata_16
+		liege = k_colonia_authority
+	}
+	1227.9.6 = {
+		holder = erimatos_aversarinas_aagiokrata_6
+		liege = d_colonia_authority
+	}
+}
+#c_east_sarradon3 = {
+#	1250.1.1 = {
+#		holder = utyalid_harthahi_4
+#		liege = k_eastern_frontier
+#	}
+#}
+#c_east_sarradon5 = {
+#	1250.1.1 = {
+#		holder = utyalid_harthahi_4
+#		liege = k_eastern_frontier
+#	}
+#}
+#c_east_sarradon4 = {
+#	1250.1.1 = {
+#		holder = utyalid_harthahi_4
+#		liege = k_eastern_frontier
+#	}
+#}
+c_ebed04 = {
+	1250.1.1 = {
+		holder = utyalid_harthahi_4
+		liege = k_eastern_frontier
+	}
+}

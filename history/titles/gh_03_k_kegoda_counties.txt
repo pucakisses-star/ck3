@@ -1,0 +1,95 @@
+﻿
+c_southkashirya_isles_4 = { 
+	1180.1.9 = {
+		holder = hokanta_vidvaookeyatra_24
+		liege = 0 
+	} 
+	1201.12.4 = {
+		holder = iafarana_varodaism_4
+		liege = 0
+	}
+	1239.9.18 = {
+		holder = iafarana_yakasak_1
+		liege = 0
+		change_development_level = 8
+	}
+}
+c_kegnatalla = {  
+	1176.9.9 = {
+		holder = hokanta_vidvaookeyatra_24
+		liege = 0 
+	}
+	1201.12.4 = {
+		holder = iafarana_varodaism_4
+		liege = 0
+	}
+	1239.9.18 = {
+		holder = iafarana_varodaism_2
+		change_development_level = 9
+	}
+}
+c_kandavur = {  
+	1248.9.3 = {
+		holder = saruta_varodaism_2
+		liege = d_gegapalle
+		change_development_level = 6
+	}
+	1252.7.23 = {
+		holder = saruta_varodaism_1
+	}
+}
+c_dehiwalaiya = {  
+	1121.4.15 = {
+		holder = saruta_varodaism_5
+		liege = 0
+	}
+	1145.8.7 = {
+		holder = saruta_varodaism_5a
+		liege = 0
+	}
+	1172.4.3 = {
+		holder = saruta_varodaism_7
+		liege = k_kebnachi
+	}
+	1176.9.9 = {
+		holder = hokanta_vidvaookeyatra_24
+		liege = 0 
+	}
+	1201.12.4 = {
+		holder = iafarana_varodaism_4
+		liege = 0
+	}
+	1204.3.1 = {
+		holder = saruta_varodaism_9
+		liege = k_kebnachi
+	}
+	1212.6.22 = {
+		holder = saruta_varodaism_10
+		liege = k_kebnachi
+	}
+	1250.1.19 = {
+		holder = saruta_varodaism_3
+		liege = d_gegapalle
+		change_development_level = 15
+	}
+}
+c_south_kashirya_5 = {
+	1251.1.1 = {
+		holder = lainar_vidvaookeyatra_22
+		liege = d_rateha
+		change_development_level = 8
+	}
+}
+c_berotuwa = {
+	1251.1.1 = {
+		holder = iafarana_varodaism_1
+		liege = k_sheytara
+		change_development_level = 12
+	}	
+}
+c_puttapuran = {
+	1251.1.1 = {
+		holder = lainar_vidvaookeyatra_2
+		liege = k_sheytara
+	}	
+}

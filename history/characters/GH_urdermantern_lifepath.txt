@@ -1,0 +1,339 @@
+﻿urdermantern_lifepath_1 = {
+	name = "Latwijk"
+	dynasty = dyn_konijkmener_6
+	religion = "lifepath"
+	culture = "urdermantern"
+	
+	trait = way_of_crowns_follower
+	trait = education_martial_4
+	
+	mother = konijkmener_lifepath_18
+	father = urdermantern_lifepath_3
+
+	1219.1.1 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 1 }
+		}
+	}
+
+	1253.1.1 = {
+		#effect = { # GH TODO: Was throwing an error - we should probably make an equivalent for Republics
+		#	vassal_contract_set_obligation_level = {
+		#		type = title_revocation_rights
+		#		level = 1
+		#	}
+		#}
+	}
+}
+
+urdermantern_lifepath_2 = {
+	name = "Lasonder" #Head of the Councillist Clique
+	religion = "lifepath"
+	culture = "urdermantern"
+	
+	trait = way_of_family_follower #Oligarch
+	trait = family_first
+	trait = ambitious
+	trait = education_stewardship_3
+	
+	mother = konijkmener_lifepath_18
+
+	1217.11.24 = {
+		birth = yes
+		#trait = bastard
+	}
+	1247.6.5 = {
+		add_spouse = konijkmener_lifepath_87
+	}
+	1250.1.1 = { 
+		#remove_trait = bastard
+		trait = bastard_founder
+		dynasty_house = "house_te_ee"
+	}
+
+	1253.1.1 = {
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = title_revocation_rights
+				level = 1
+			}
+		}
+	}
+
+	1288.3.17 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+urdermantern_lifepath_3 = {
+	name = "Ruihaar"
+	dynasty = dyn_konijkmener_6
+	religion = "lifepath"
+	culture = "urdermantern"
+
+	1176.4.2 = {
+		birth = yes
+	}
+
+	1218.1.11 = {
+		effect = {
+			create_character_memory = { # Black-Gold War
+				type = fought_in_black_gold_war
+			}
+		}
+	}
+
+	1218.1.1 = {
+		add_spouse = konijkmener_lifepath_18
+	}
+
+	1260.11.23 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+urdermantern_lifepath_4 = {
+	name = "Liusscarn"
+	religion = "lifepath"
+	culture = "urdermantern"
+	father = urdermantern_lifepath_4a
+	mother = konijkmener_lifepath_50
+	dynasty = dyn_konijkmener_13
+	1104.10.6 = {
+		birth = yes
+	}
+	1110.10.6 = {
+		trait = way_of_swords_follower
+		trait = forder
+		trait = scarred
+		trait = wrathful
+		trait = arrogant
+		trait = gregarious
+		trait = education_martial_3
+		trait = gh_historical_blademaster_2
+	}
+
+	1130.9.4 = {
+		add_spouse = dielecender_lifepath_2
+	}
+
+	1155.1.1 = {
+		give_nickname = nick_the_bitter_liusscarn
+	}
+	1156.4.19 = {
+		death = { death_reason = death_siege }
+	}
+}
+
+urdermantern_lifepath_4a = {
+	name = "Leeuwaard"
+	religion = "lifepath"
+	culture = "urdermantern"
+	dynasty = dyn_konijkmener_13
+	1072.9.2 = {
+		birth = yes
+	}
+
+	1092.9.2 = {
+		trait = way_of_crows_follower
+		trait = callous
+		trait = patient
+		trait = fickle
+		trait = education_intrigue_3
+	}
+	1100.1.1 = {
+		trait = schemer
+	}
+	1103.10.10 = {
+		add_spouse = konijkmener_lifepath_50
+	}
+	1111.3.1 = {
+		trait = leper
+	}
+	1120.1.7 = {
+		death = { death_reason = death_leper }
+	}
+}
+
+
+urdermantern_lifepath_5 = {
+	name = "Leeuwaard"
+	religion = "lifepath"
+	culture = "urdermantern"
+	dynasty = dyn_konijkmener_13
+	father = urdermantern_lifepath_4
+	mother = dielecender_lifepath_2
+
+	1132.5.4 = {
+		birth = yes
+	}
+
+	1150.1.1 = {
+		trait = education_martial_1
+		trait = way_of_harvests_follower
+		trait = gluttonous
+		trait = brave
+		trait = shy
+	}
+
+	1156.4.19 = {
+		death = {
+			death_reason = death_battle 
+			killer = rivarisians_lifepath_7
+		}
+	}
+}
+
+urdermantern_lifepath_6 = {
+	name = "Riegte"
+	religion = "lifepath"
+	culture = "urdermantern"
+	female = yes
+	dynasty = dyn_konijkmener_13
+	father = urdermantern_lifepath_4
+	mother = dielecender_lifepath_2
+
+	1140.1.7 = {
+		birth = yes
+	}
+
+	1156.1.7 = {
+		trait = way_of_justice_follower
+		trait = education_stewardship_2
+		trait = impatient
+		trait = compassionate
+		trait = lazy
+	}
+
+	1156.4.19 = {
+		death = { death_reason = death_magic_fire }
+	}
+}
+
+urdermantern_lifepath_7 = {
+	name = "Oejne"
+	religion = "lifepath"
+	culture = "urdermantern"
+	female = yes
+	dynasty = dyn_konijkmener_13
+	father = urdermantern_lifepath_4
+	mother = dielecender_lifepath_2
+
+	1143.9.6 = {
+		birth = yes
+	}
+	1156.4.19 = {
+		death = { death_reason = death_magic_fire }
+	}
+}
+
+urdermantern_lifepath_8 = {
+	name = "Broeg"
+	religion = "lifepath"
+	culture = "urdermantern"
+	dynasty = dyn_konijkmener_13
+	father = urdermantern_lifepath_4
+	mother = dielecender_lifepath_2
+
+	1135.9.5 = {
+		birth = yes
+	}
+
+	1155.9.5 = {
+		trait = strong
+		trait = way_of_crowns_follower
+		trait = compassionate
+		trait = diligent
+		trait = greedy
+		trait = rakish
+	}
+
+	1156.4.19 = {
+		death = { death_reason = death_magic_fire }
+	}
+}
+
+
+
+
+urdermantern_lifepath_9 = {
+	name = "Rijger"
+	dynasty_house = house_te_ee
+	religion = "lifepath"
+	culture = "urdermantern"
+	father = urdermantern_lifepath_2
+	mother = konijkmener_lifepath_87
+
+	1248.1.26 = {
+		birth = yes
+	}
+
+	1268.5.3 = {
+		trait = ambitious
+		trait = gluttonous
+		trait = just
+		trait = education_diplomacy_3
+		trait = way_of_crowns_follower
+	}
+}
+
+urdermantern_lifepath_10 = {
+	name = "Barwiege" #Velde
+	dynasty_house = house_te_ee
+	religion = "lifepath"
+	culture = "urdermantern"
+	female = yes
+	father = urdermantern_lifepath_2
+	mother = konijkmener_lifepath_87
+
+	1252.11.30 = {
+		birth = yes
+		trait = twin
+	}
+
+	1272.2.1 = {
+		trait = chaste
+		trait = brave
+		trait = zealous
+		trait = way_of_swords_follower
+		trait = education_stewardship_2
+	}
+}
+
+urdermantern_lifepath_11 = {
+	name = "Martiege" #Velde
+	dynasty_house = house_te_ee
+	religion = "lifepath"
+	culture = "urdermantern"
+	female = yes
+	father = urdermantern_lifepath_2
+	mother = konijkmener_lifepath_87
+
+	1252.11.30 = {
+		birth = yes
+		trait = twin
+	}
+
+	1272.11.30 = {
+		trait = gregarious
+		trait = lustful
+		trait = greedy
+		trait = way_of_coins_follower
+		trait = education_intrigue_3
+	}
+}
+
+urdermantern_lifepath_12 = {
+	name = "Kieldtte"
+	religion = lifepath
+	culture = urdermantern
+	dynasty = dyn_konijkmener_6
+	female = yes
+	father = urdermantern_lifepath_3
+	mother = konijkmener_lifepath_18
+	1221.10.8 = {
+		birth = yes
+		trait = beauty_good_1
+	}
+}

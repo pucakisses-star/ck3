@@ -1,0 +1,275 @@
+﻿charchac_alau_koev_1 = { # Slow peasant warlord
+	name = "Domsrik"
+	religion = "alau_koev"
+	culture = "charchac"
+	dynasty = dyn_lerrardin_9
+	father = charchac_alau_koev_12
+	mother = charchac_alau_koev_13
+	trait = intellect_bad_1
+	sexuality = asexual
+
+	martial = 9
+	diplomacy = 3
+	stewardship = 4
+	intrigue = 7
+	learning = 1
+
+	1226.9.17 = {
+		birth = yes
+	}
+	1238.9.17 = {
+		trait = wrathful
+		trait = brave
+		trait = vengeful
+	}
+	1242.9.17 = {
+		trait = education_martial_2
+	}
+	1250.12.10 = {
+		trait = rough_terrain_expert
+		trait = aggressive_attacker
+		effect = {
+			set_relation_rival = character:charchac_alau_koev_2
+		}
+	}
+}
+
+charchac_alau_koev_2 = { # Metal mask
+	name = "Krenverso"
+	dna = charchac_alau_koev_2
+	religion = "alau_koev"
+	culture = "charchac"
+	sexuality = heterosexual
+	dynasty = dyn_lerrardin_6
+	trait = schemer
+	trait = lisping
+	trait = magic_good_6
+	trait = gh_ritual_tattoos
+	trait = gh_peasant_birth
+
+	martial = 8
+	diplomacy = 6
+	stewardship = 9
+	intrigue = 13
+	learning = 7
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_byzantine_02
+		}
+	}
+
+	1222.4.27 = {
+		birth = yes
+	}
+	1234.4.27 = {
+		trait = zealous
+		trait = callous
+		trait = deceitful
+	}
+	1238.4.27 = {
+		trait = education_intrigue_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+	1249.10.14 = {
+		add_spouse = charchac_alau_koev_3
+	}
+	1250.2.12 = {
+		trait = disfigured
+		give_nickname = nick_the_metal_mask_krenverso
+	}
+}
+
+charchac_alau_koev_3 = { # Metal mask wife
+	name = "Nedaieh"
+	religion = "alau_koev"
+	culture = "charchac"
+	female = yes
+	sexuality = bisexual
+	father = charchac_daminkar_2
+	mother = charchac_daminkar_3
+	dynasty = dyn_lerrardin_5
+	trait = beauty_good_1
+	trait = magic_good_1
+
+	martial = 4
+	diplomacy = 11
+	stewardship = 7
+	intrigue = 5
+	learning = 6
+
+	1228.9.11 = {
+		birth = yes
+	}
+	1240.9.11 = {
+		trait = craven
+		trait = trusting
+		trait = fickle
+	}
+	1244.9.11 = {
+		trait = education_diplomacy_2
+	}
+	1250.2.12 = {
+		trait = depressed_1
+	}
+}
+
+charchac_alau_koev_9 = { # 1200 Kameo Count
+	name = "Kien"
+	religion = "alau_koev"
+	culture = "charchac"
+	sexuality = heterosexual
+
+	1183.6.4 = {
+		birth = yes
+	}
+	1195.6.4 = {
+		trait = vengeful
+		trait = craven
+		trait = sadistic
+	}
+	1199.6.4 = {
+		trait = education_intrigue_1
+	}
+	1200.3.1 = {
+		trait = peasant_leader
+	}
+	1250.2.14 = {
+		death = {
+			death_reason = death_murder
+			killer = charchac_alau_koev_2
+		}
+	}
+}
+
+charchac_alau_koev_10 = { # 1200 Tbiobi Count
+	name = "Giselnih"
+	religion = "alau_koev"
+	culture = "charchac"
+	sexuality = asexual
+	female = yes
+
+	1171.8.9 = {
+		birth = yes
+	}
+	1183.8.9 = {
+		trait = chaste
+		trait = callous
+		trait = brave
+	}
+	1187.8.9 = {
+		trait = education_learning_2
+	}
+	1200.3.1 = {
+		trait = peasant_leader
+	}
+	1250.2.20 = {
+		death = {
+			death_reason = death_murder
+			killer = charchac_alau_koev_1
+		}
+	}
+}
+
+charchac_alau_koev_11 = { # 1200 Javzgi Count
+	name = "Meleyerain"
+	religion = "alau_koev"
+	culture = "charchac"
+	sexuality = heterosexual
+
+	1166.2.4 = {
+		birth = yes
+	}
+	1178.2.4 = {
+		trait = gregarious
+		trait = stubborn
+		trait = generous
+	}
+	1182.2.4 = {
+		trait = education_stewardship_2
+	}
+	1200.3.1 = {
+		trait = peasant_leader
+	}
+	1234.5.4 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+charchac_alau_koev_12 = { # Metal Mask's dead rival
+	name = "Bhan"
+	religion = "alau_koev"
+	culture = "charchac"
+	dynasty = dyn_lerrardin_9
+	sexuality = heterosexual
+	trait = gh_peasant_birth
+
+	1204.7.15 = {
+		birth = yes
+	}
+	1216.7.15 = {
+		trait = brave
+		trait = sadistic
+		trait = impatient
+	}
+	1220.7.15 = {
+		trait = education_martial_3
+		trait = reckless
+	}
+	1223.3.18 = {
+		add_spouse = charchac_alau_koev_13
+	}
+	1250.2.20 = {
+		death = {
+			death_reason = death_execution
+			killer = charchac_alau_koev_2
+		}
+	}
+}
+
+charchac_alau_koev_13 = { # Metal Mask's dead rival's wife
+	name = "Psedha"
+	religion = "alau_koev"
+	culture = "charchac"
+	sexuality = heterosexual
+	female = yes
+
+	1205.3.6 = {
+		birth = yes
+	}
+	1217.3.6 = {
+		trait = vengeful
+		trait = gregarious
+		trait = wrathful
+	}
+	1221.3.6 = {
+		trait = education_intrigue_2
+	}
+	1226.9.17 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+charchac_alau_koev_14 = { # Metal Mask's son
+	name = "Jadserain"
+	religion = "alau_koev"
+	culture = "charchac"
+	sexuality = heterosexual
+	dynasty = dyn_lerrardin_6
+	father = charchac_alau_koev_2
+	mother = charchac_alau_koev_3
+	trait = magic_good_3
+
+	1252.6.19 = {
+		birth = yes
+	}
+}

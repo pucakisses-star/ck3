@@ -1,0 +1,43 @@
+﻿northernimperial_calysto_1 = { # Drurag Marhax, celebrated Agionist hero during the Saintsmeet
+	name = "Drurag"
+	religion = aversarinas_aagiokrata
+	culture = northernimperial
+	disallow_random_traits = yes
+	dynasty = dyn_aversarian_131
+
+	dna = drurag
+
+	martial = 6
+	diplomacy = 8
+	intrigue = 2
+	stewardship = 4
+	learning = 3
+	prowess = 4
+
+	1049.2.4 = {
+		birth = yes
+	}
+
+	1061.1.1 = {
+		trait = gregarious
+		trait = gluttonous
+		trait = wrathful
+	}
+
+	1065.2.4 = {
+		trait = education_martial_3
+		trait = flexible_leader
+	}
+
+	1092.4.8 = {
+		trait = gh_historical_blademaster_2
+		trait = gallant
+	}
+
+	1097.1.6 = {
+		religion = calysto
+		death = {
+			death_reason = death_battle
+		}
+	}
+}

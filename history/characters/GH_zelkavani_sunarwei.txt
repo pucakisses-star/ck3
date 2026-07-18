@@ -1,0 +1,166 @@
+﻿zelkavani_sunarwei_1 = { # Gyges 'Glassblade''s father
+	name = "Arppakhu"
+	dynasty = dyn_sunarwei_1
+	religion = sunarwei
+	culture = zelkavani
+	disallow_random_traits = yes
+
+	martial = 4
+	diplomacy = 5
+	intrigue = 9
+	stewardship = 10
+	learning = 5
+	prowess = 2
+
+	1125.7.5 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1137.1.1 = {
+		trait = calm
+		trait = zealous
+		trait = stubborn
+	}
+
+	1141.7.5 = {
+		trait = education_diplomacy_3
+		trait = gh_glass_smith_02
+	}
+
+	1189.8.26 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+zelkavani_sunarwei_2 = { # Gyges 'Glassblade''s sister
+	name = "Rinu"
+	dynasty = dyn_sunarwei_1
+	religion = sunarwei
+	culture = zelkavani
+	disallow_random_traits = yes
+
+	female = yes
+	father = zelkavani_sunarwei_1
+
+	martial = 3
+	diplomacy = 11
+	intrigue = 4
+	stewardship = 1
+	learning = 5
+	prowess = 3
+
+	1160.4.14 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1172.1.1 = {
+		trait = calm
+		trait = just
+		trait = chaste
+	}
+
+	1176.4.14 = {
+		trait = education_learning_3
+	}
+
+	1202.12.8 = {
+		death = {
+			death_reason = death_battle
+			killer = lattani_sunwarwei_aagiokrata_4 # Artabazus Argdaos
+		}
+	}
+}
+
+zelkavani_sunarwei_3 = { # Gyges 'Glassblade''s nephew
+	name = "Niphates"
+	dynasty = dyn_sunarwei_1
+	religion = sunarwei
+	culture = zelkavani
+	disallow_random_traits = yes
+
+	mother = zelkavani_sunarwei_2
+
+	martial = 7
+	diplomacy = 8
+	intrigue = 3
+	stewardship = 3
+	learning = 2
+	prowess = 7
+
+	1196.5.4 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1208.1.1 = {
+		trait = forgiving
+		trait = just
+		trait = trusting
+	}
+
+	1212.5.4 = {
+		trait = education_learning_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+		trait = gh_glass_smith_01
+	}
+
+	1242.12.14 = {
+		death = {
+			death_reason = death_battle
+			killer = lattani_sunwarwei_aagiokrata_7 # Peucestas Argdaos
+		}
+	}
+}
+
+zelkavani_sunarwei_4 = { # Zekos Kreyshati's mother
+	name = "Artanis"
+	dynasty = dyn_sunarwei_1
+	religion = sunarwei
+	culture = zelkavani
+	disallow_random_traits = yes
+	female = yes
+
+	father = zelkavani_sunarwei_1
+
+	martial = 7
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 6
+	learning = 6
+	prowess = 6
+
+	1163.2.3 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1175.1.1 = {
+		trait = fickle
+		trait = temperate
+		trait = cynical
+	}
+
+	1179.2.3 = {
+		trait = gh_glass_smith_01
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1221.10.6 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}

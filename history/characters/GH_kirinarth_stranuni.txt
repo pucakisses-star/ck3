@@ -1,0 +1,42 @@
+﻿kirinarth_stranuni_1 = {
+	name = "Fejjer"
+	dna = arapa_1
+	religion = stranuni
+	culture = kirinarth
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_mena_03
+			custom_hair = male_hair_sub_saharan_01
+		}
+	}
+
+	1192.6.17 = {
+		birth = yes
+	}
+	1196.6.7 = {
+		# trait = rowdy
+	}
+	1206.6.7 = {
+		remove_trait = rowdy
+		trait = zealous
+		trait = brave
+		trait = stubborn
+	}
+	1208.6.7 = {
+		trait = education_martial_3
+		trait = holy_warrior
+	}
+	1254.1.1 = {
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = religious_rights
+				level = 1
+			}
+			vassal_contract_set_obligation_level = {
+				type = title_revocation_rights
+				level = 1
+			}
+		}
+	}
+}

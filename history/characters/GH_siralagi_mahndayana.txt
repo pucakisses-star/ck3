@@ -1,0 +1,363 @@
+﻿siralagi_mahndayana_1 = { 
+	name = "Nahid"
+	religion = "mahndayana"
+	culture = "siralagi"
+	dynasty = dyn_amsari_6
+	female = yes
+
+	1092.7.12 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 4 }
+		}
+	}
+	
+	1151.2.11 = {
+		death = yes
+	}
+}
+
+siralagi_mahndayana_2 = {
+	name = "Tehmina"
+	religion = "mahndayana"
+	culture = "siralagi"
+	dynasty = dyn_amsari_6
+	female = yes
+	mother = siralagi_mahndayana_1
+	
+	trait = infertile
+
+	1115.7.28 = {
+		birth = yes
+	}
+
+	1176.11.3 = {
+		death = yes
+	}
+}
+
+siralagi_mahndayana_3 = {
+	name = "Nuz"
+	religion = "mahndayana"
+	culture = "siralagi"
+	dynasty = dyn_amsari_6
+	female = yes
+	mother = siralagi_mahndayana_1
+
+	1121.4.7 = {
+		birth = yes
+	}
+
+	1180.3.7 = {
+		death = yes
+	}
+}
+
+siralagi_mahndayana_4 = {
+	name = "Fila"
+	religion = "mahndayana"
+	culture = "siralagi"
+	dynasty = dyn_amsari_6
+	female = yes
+	mother = siralagi_mahndayana_3
+
+	1140.12.2 = {
+		birth = yes
+	}
+
+	1204.1.22 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+siralagi_mahndayana_5 = {
+	name = "Tehmina"
+	religion = "mahndayana"
+	culture = "siralagi"
+	dynasty = dyn_amsari_6
+	mother = siralagi_mahndayana_4
+	sexuality = heterosexual
+	female = yes
+	
+	trait = calm
+	trait = stubborn
+	trait = temperate
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 7
+	stewardship = 8
+	intrigue = 6
+	learning = 7
+	prowess = 6
+
+	1182.5.14 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1205.5.14 = {
+		trait = education_diplomacy_3
+		trait = diplomat
+	}
+	1230.6.20 = {	
+		trait = august
+	}
+	1212.1.5 = {
+		set_relation_friend = character:amsari_mahndayana_2
+	}
+}
+
+
+
+siralagi_mahndayana_6 = { #son of queen
+	name = "Zahak"
+	dna = siralagi_mahndayana_1
+	religion = "mahndayana"
+	culture = "siralagi"
+	dynasty = dyn_amsari_6
+	mother = siralagi_mahndayana_5
+
+	trait = wrathful
+	trait = greedy
+	trait = lazy
+	disallow_random_traits = yes
+
+	martial = 4 ###He's really bad
+	diplomacy = 7
+	stewardship = 6
+	intrigue = 9
+	learning = 7
+	prowess = 7
+
+	 portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_indian_02
+			custom_hair = male_hair_western_09
+		}
+	}
+
+	1212.7.27 = {
+		birth = yes
+	}
+	1228.7.27 = {
+		trait = education_stewardship_2
+	}
+}
+
+siralagi_mahndayana_7 = {
+	name = "Golpari" #daughter of queen
+	religion = "mahndayana"
+	culture = "siralagi"
+	dynasty = dyn_amsari_6
+	female = yes
+	father = siralagi_mahndayana_6
+
+	1249.1.1 = {
+		birth = yes
+	}
+}
+
+siralagi_mahndayana_8 = {
+	name = "Roshanora"
+	religion = "mahndayana"
+	culture = "siralagi"
+	dynasty = dyn_amsari_6
+	female = yes
+	father = siralagi_mahndayana_6
+
+	1249.1.1 = {
+		birth = yes
+	}
+}
+
+siralagi_mahndayana_9 = {
+	name = "Anusheh"
+	religion = "mahndayana"
+	culture = "siralagi"
+	dynasty = dyn_amsari_6
+	female = yes
+	father = siralagi_mahndayana_6
+
+	1248.1.1 = {
+		birth = yes
+	}
+}
+
+siralagi_mahndayana_10 = {
+	name = "Pouria"
+	religion = "mahndayana"
+	culture = "siralagi"
+	dynasty = dyn_amsari_6
+	father = siralagi_mahndayana_6
+
+	1246.1.1 = {
+		birth = yes
+	}
+}
+
+siralagi_mahndayana_11 = {
+	name = "Shirin"
+	religion = "mahndayana"
+	culture = "siralagi"
+	dynasty = dyn_amsari_6
+	female = yes
+	father = siralagi_mahndayana_6
+
+	1246.1.1 = {
+		birth = yes
+	}
+}
+
+siralagi_mahndayana_12 = {
+	name = "Arsha"
+	religion = "mahndayana"
+	culture = "siralagi"
+	female = yes
+	
+	trait = wrathful
+	trait = brave
+	trait = fickle
+	disallow_random_traits = yes
+
+	martial = 4
+	diplomacy = 5
+	stewardship = 6
+	intrigue = 4
+	learning = 7
+	prowess = 6	
+
+	1224.4.21 = {
+		birth = yes
+		trait = magic_good_2
+		trait = strong
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 2 }
+		}
+	}
+	1240.4.21 = {
+		trait = education_martial_4
+	}
+	1247.3.15 = {
+		give_nickname = nick_stormreaver
+	}
+}
+
+#c_tazehabade_badr_gerd
+siralagi_mahndayana_13 = {
+	name = "Keyvahn"
+	religion = "mahndayana"
+	culture = "siralagi"
+
+	1231.1.7 = {
+		birth = yes
+	}
+}
+
+siralagi_mahndayana_14 = {
+	name = "Vishtasb"
+	religion = "mahndayana"
+	culture = "siralagi"
+
+	1211.8.11 = {
+		birth = yes
+	}
+}
+
+siralagi_mahndayana_15 = {
+	name = "Hamdam"
+	religion = "mahndayana"
+	culture = "siralagi"
+	female = yes
+
+	1228.8.11 = {
+		birth = yes
+	}
+}
+
+siralagi_mahndayana_16 = {
+	name = "Soraya"
+	religion = "mahndayana"
+	culture = "siralagi"
+
+	1211.8.11 = {
+		birth = yes
+	}
+}
+
+
+
+### To move later 
+
+siralagi_mahndayana_100 = {
+	name = "Setareh"
+	religion = "mahndayana"
+	culture = "siralagi"
+	dynasty = dyn_amsari_9
+	female = yes
+	1111.8.11 = {
+		birth = yes
+	}
+	1175.5.16 = {
+		death = yes
+	}
+}
+
+siralagi_mahndayana_101 = {
+	name = "Soraya"
+	religion = "mahndayana"
+	culture = "siralagi"
+	dynasty = dyn_amsari_9
+	mother = siralagi_mahndayana_100
+	female = yes
+
+	1134.1.3 = {
+		birth = yes
+	}
+	1198.3.30 = {
+		death = yes
+	}
+}
+
+siralagi_mahndayana_102_mother = {
+	name = "Yekta"
+	religion = "mahndayana"
+	culture = "siralagi"
+	dynasty = dyn_amsari_9
+	mother = siralagi_mahndayana_101
+	female = yes
+	1168.1.17 = {
+		birth = yes
+	}
+	1201.8.1 = {
+		death = yes
+	}
+}
+
+siralagi_mahndayana_102 = {
+	name = "Khudayar"
+	religion = "mahndayana"
+	culture = "siralagi"
+	dynasty = dyn_amsari_9
+	mother = siralagi_mahndayana_102_mother
+	1190.8.11 = {
+		birth = yes
+	}
+	1212.4.1 = {
+		death = yes
+	}
+}
+
+siralagi_mahndayana_103 = {
+	name = "Javeed"
+	religion = "mahndayana"
+	culture = "siralagi"
+	dynasty = dyn_amsari_9
+	father = siralagi_mahndayana_102
+	1211.8.11 = {
+		birth = yes
+	}
+	1242.4.7 = {
+		death = yes
+	}
+}

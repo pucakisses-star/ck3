@@ -1,0 +1,209 @@
+﻿sinasan_xwestrozen_1 = { # Qelsi, came into power thanks to the Frod wiping out all the actually competent members to the Zikanya. Uncle of Tecemayt
+	name = "Qelsi"
+	dna = zikanya_1
+	religion = xwestrozen
+	culture = sinasan
+	dynasty = dyn_naza
+	mother = sinasan_xwestrozen_5
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_western_05
+			custom_hair = no_hair
+		}
+	}
+
+	1152.2.23 = {
+		birth = yes
+	}
+	1168.2.23 = {
+		trait = education_learning_1
+		trait = craven
+		trait = paranoid
+		trait = stubborn
+	}
+	1224.5.13 = {
+		death = yes
+	}
+}
+
+sinasan_xwestrozen_2 = {
+	name = "Naza"
+	dna = zikanya_1001
+	religion = xwestrozen
+	culture = sinasan
+	female = yes
+	dynasty = dyn_naza
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp2_iberian_muslim_01
+		}
+	}
+
+	778.1.1 = {
+		birth = yes
+	}
+	778.1.2 = {
+		trait = zealous
+		trait = ambitious
+		trait = calm
+		trait = education_martial_4
+	}
+	850.1.1 = {
+		death = yes
+	}
+}
+
+sinasan_xwestrozen_3 = { # Tecemayt, ruling queen at time of Frodbrokna
+	name = "Tecemayt"
+	religion = xwestrozen
+	culture = sinasan
+	female = yes
+	dynasty = dyn_naza
+
+	mother = sinasan_xwestrozen_4
+	
+	1168.5.27 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1184.5.27 = {
+		trait = education_learning_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sinasan_xwestrozen_4 = { # Tecemayt mother, died relatively young (need to come up with a reason, possibly sickness?)
+	name = "Merkida"
+	religion = xwestrozen
+	culture = sinasan
+	female = yes
+	dynasty = dyn_naza
+
+	mother = sinasan_xwestrozen_5
+
+	1143.8.30 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1159.8.30 = {
+		trait = education_stewardship_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+
+	1192.10.7 = {
+		death = yes
+	}
+}
+
+sinasan_xwestrozen_5 = { # Tayyurt, Grandmother of Tecemayt
+	name = "Tayyurt"
+	religion = xwestrozen
+	culture = sinasan
+	female = yes
+	dynasty = dyn_naza
+
+	1116.5.27 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1132.5.27 = {
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1187.12.5 = {
+		death = yes
+	}
+}
+
+sinasan_xwestrozen_6 = {
+	name = "Amasin"
+	religion = xwestrozen
+	culture = sinasan
+	dynasty = dyn_naza
+	
+	mother = sinasan_xwestrozen_3
+
+	1187.5.27 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sinasan_xwestrozen_7 = {
+	name = "Tayan"
+	religion = xwestrozen
+	culture = sinasan
+	female = yes
+	dynasty = dyn_naza
+	mother = sinasan_xwestrozen_3
+	trait = magic_good_3
+	1191.5.27 = {
+		birth = yes
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sinasan_xwestrozen_8 = {
+	name = "Masugrada"
+	religion = xwestrozen
+	culture = sinasan
+	dynasty = dyn_naza
+	mother = sinasan_xwestrozen_3
+	trait = magic_good_4
+	1196.5.27 = {
+		birth = yes
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+sinasan_xwestrozen_9 = {
+	name = "Bahtuta"
+	religion = xwestrozen
+	culture = sinasan
+	female = yes
+	1155.6.20 = {
+		birth = yes
+	}
+}

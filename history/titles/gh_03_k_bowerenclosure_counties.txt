@@ -1,0 +1,389 @@
+c_ewererscottage = {
+	1192.10.12 = {
+		holder = banwagul_dahala_3
+		government = feudal_government
+	}
+	1200.8.28 = {
+		holder = banwagul_dahala_1
+		government = feudal_government
+		liege = k_lay_redaka_banwagul
+	}
+	1237.5.6 = {
+		holder = banwagul_dahala_4
+		government = feudal_government
+		liege = k_lay_redaka_banwagul
+	}
+	1242.12.21 = {
+		holder = banwagul_narina_2
+		government = feudal_government
+		liege = 0
+	}
+}
+
+c_cottarcorner = {
+	1167.12.7 = {
+		holder = lakoeng_fourteen_heavenly_methods_4
+		government = feudal_government
+	}
+	1202.6.2 = {
+		holder = lakoeng_fourteen_heavenly_methods_5
+		government = feudal_government
+	}
+	1237.5.6 = {
+		liege = k_lay_redaka_banwagul
+	}
+	1240.3.8 = {
+		holder = lakoeng_fourteen_heavenly_methods_6
+		government = feudal_government
+	}
+	1242.12.21 = {
+		liege = 0
+	}
+	1246.12.11 = {
+		holder = lakoeng_fourteen_heavenly_methods_7
+		government = feudal_government
+	}
+}
+
+c_mudmarsh = {
+	1246.12.11 = {
+		holder = banwagul_dahala_20
+		government = feudal_government
+		liege = d_shortfall
+	}
+}
+
+c_naklanshill = {
+	1248.1.18 = {
+		holder = lakoeng_fourteen_heavenly_methods_38
+		government = feudal_government
+		liege = d_shortfall
+	}
+}
+
+c_tidewood = {
+	1192.10.12 = {
+		holder = banwagul_dahala_3
+		government = feudal_government
+	}
+	1200.8.28 = {
+		holder = banwagul_dahala_1
+		government = feudal_government
+		liege = k_lay_redaka_banwagul
+	}
+	1242.12.21 = {
+		holder = banwagul_dahala_2
+		government = feudal_government
+		liege = k_lay_redaka_banwagul
+	}
+}
+
+c_betweenrivers = {
+	1250.1.1 = {
+		holder = banwagul_fourteen_heavenly_methods_6
+		government = feudal_government
+		liege = k_lay_redaka_banwagul
+	}
+}
+
+c_wrotefortress = {
+	1250.1.1 = {
+		holder = banwagul_fourteen_heavenly_methods_8
+		government = feudal_government
+		liege = 0
+	}
+}
+
+c_northmarsh = {
+	1250.1.1 = {
+		holder = banwagul_fourteen_heavenly_methods_8
+		government = feudal_government
+		liege = 0
+	}
+}
+
+c_riversbirth = {
+	1250.1.1 = {
+		holder = banwagul_fourteen_heavenly_methods_8
+		government = feudal_government
+		liege = 0
+	}
+}
+
+c_copperland = {
+	1192.10.12 = {
+		holder = banwagul_dahala_3
+		government = feudal_government
+	}
+	1200.8.28 = {
+		holder = banwagul_dahala_1
+		government = feudal_government
+		liege = k_lay_redaka_banwagul
+	}
+	1242.12.21 = {
+		holder = banwagul_dahala_2
+		government = feudal_government
+		liege = k_lay_redaka_banwagul
+	}
+}
+
+c_escarpment_east = {
+	1167.12.7 = {
+		holder = lakoeng_fourteen_heavenly_methods_4
+		government = feudal_government
+	}
+	1202.6.2 = {
+		holder = lakoeng_fourteen_heavenly_methods_5
+		government = feudal_government
+	}
+	1237.5.6 = {
+		liege = k_lay_redaka_banwagul
+	}
+	1240.3.8 = {
+		holder = lakoeng_fourteen_heavenly_methods_6
+		government = feudal_government
+	}
+	1242.12.21 = {
+		liege = 0
+	}
+	1246.12.11 = {
+		holder = dathanites_labaqiri_1
+		government = pirate_government
+		liege = d_cliffplain
+	}
+}
+
+c_deepmarsh = {
+	1167.12.7 = {
+		holder = lakoeng_fourteen_heavenly_methods_4
+		government = feudal_government
+	}
+	1202.6.2 = {
+		holder = lakoeng_fourteen_heavenly_methods_5
+		government = feudal_government
+	}
+	1237.5.6 = {
+		liege = k_lay_redaka_banwagul
+	}
+	1240.3.8 = {
+		holder = lakoeng_fourteen_heavenly_methods_6
+		government = feudal_government
+	}
+	1242.12.21 = {
+		liege = 0
+	}
+	1246.12.11 = {
+		holder = dathanites_labaqiri_1
+		government = pirate_government
+		liege = d_cliffplain
+	}
+}
+
+c_weakwoods = {
+	1167.12.7 = {
+		holder = lakoeng_fourteen_heavenly_methods_4
+		government = feudal_government
+	}
+	1202.6.2 = {
+		holder = lakoeng_fourteen_heavenly_methods_5
+		government = feudal_government
+	}
+	1237.5.6 = {
+		liege = k_lay_redaka_banwagul
+	}
+	1240.3.8 = {
+		holder = lakoeng_fourteen_heavenly_methods_6
+		government = feudal_government
+	}
+	1242.12.21 = {
+		liege = 0
+	}
+	1246.12.11 = {
+		holder = dathanites_labaqiri_1
+		government = pirate_government
+		liege = d_cliffplain
+	}
+}
+
+c_ivoryheadland = {
+	1167.12.7 = {
+		holder = lakoeng_fourteen_heavenly_methods_4
+		government = feudal_government
+	}
+	1202.6.2 = {
+		holder = lakoeng_fourteen_heavenly_methods_5
+		government = feudal_government
+	}
+	1237.5.6 = {
+		liege = k_lay_redaka_banwagul
+	}
+	1240.3.8 = {
+		holder = lakoeng_fourteen_heavenly_methods_6
+		government = feudal_government
+	}
+	1242.12.21 = {
+		liege = 0
+	}
+	1246.12.11 = {
+		holder = dathanites_labaqiri_10
+		government = pirate_government
+		liege = d_cliffplain
+	}
+	1247.7.2 = {
+		holder = dathanites_labaqiri_1
+	}
+}
+
+c_sounddale = {
+	1167.12.7 = {
+		holder = lakoeng_fourteen_heavenly_methods_4
+		government = feudal_government
+	}
+	1202.6.2 = {
+		holder = lakoeng_fourteen_heavenly_methods_5
+		government = feudal_government
+	}
+	1237.5.6 = {
+		liege = k_lay_redaka_banwagul
+	}
+	1240.3.8 = {
+		holder = lakoeng_fourteen_heavenly_methods_6
+		government = feudal_government
+	}
+	1242.12.21 = {
+		liege = 0
+	}
+	1246.12.11 = {
+		holder = dathanites_labaqiri_10
+		government = pirate_government
+		liege = d_cliffplain
+	}
+	1247.7.2 = {
+		holder = dathanites_labaqiri_11
+		liege = 0
+	}
+}
+
+c_ravinepass = {
+	1250.1.1 = {
+		holder = banwagul_fourteen_heavenly_methods_7
+		government = feudal_government
+		liege = k_lay_redaka_banwagul
+	}
+}
+
+c_sundownnarrow = {
+	1200.3.1 = {
+		holder = banwagul_dahala_6
+		government = feudal_government
+	}
+	1237.5.6 = {
+		liege = k_lay_redaka_banwagul
+	}
+	1242.12.21 = {
+		holder = wasteland
+		government = wasteland_government
+		liege = 0
+	}
+}
+
+c_catchers_east = {
+	1200.3.1 = {
+		holder = banwagul_dahala_6
+		government = feudal_government
+	}
+	1237.5.6 = {
+		liege = k_lay_redaka_banwagul
+	}
+	1242.12.21 = {
+		holder = wasteland
+		government = wasteland_government
+		liege = 0
+	}
+}
+
+c_shadowflats = {
+  1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}
+
+c_croclair = {
+  1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}
+
+#c_capeterrace = {
+#  1200.3.1 = {
+#		holder = wasteland
+#	}
+#}
+#  1200.3.1 = {
+#
+c_castleflat = {
+	1230.7.28 = {
+		holder = lihakan_dahala_3
+	}
+}
+
+c_soundcave = {
+  1188.6.23 = {
+		holder = banwagul_dahala_14
+		liege = 0
+		government = feudal_government
+	}
+	1230.7.28 = {
+		holder = banwagul_dahala_15
+	}
+	1237.5.6 = {
+		liege = k_lay_redaka_banwagul
+	}
+	1249.11.9 = {
+		holder = banwagul_dahala_16
+		liege = 0
+	}
+}
+
+c_spy_river = {
+  1198.7.18 = {
+		holder = banwagul_dahala_12
+		liege = 0
+		government = feudal_government
+	}
+	1237.5.6 = {
+		liege = k_lay_redaka_banwagul
+	}
+	1242.12.21 = {
+		holder = banwagul_dahala_13
+	}
+	1247.1.9 = {
+		liege = 0
+	}
+}
+
+c_greendeath = {
+  1198.7.18 = {
+		holder = banwagul_dahala_12
+		liege = 0
+		government = feudal_government
+	}
+	1237.5.6 = {
+		liege = k_lay_redaka_banwagul
+	}
+	1242.12.21 = {
+		holder = banwagul_dahala_13
+	}
+	1247.1.9 = {
+		liege = 0
+	}
+}
+
+c_oldmount = {
+  1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}

@@ -1,0 +1,485 @@
+﻿etrandanexi_aversarinas_aagiokrata_1 = {
+	name = "Garniex"
+	religion = "aversarinas_aagiokrata"
+	culture = "etrandanexi"
+	martial = 10
+	intrigue = 8
+	dna = etrandanexi_aversarinas_aagiokrata_1_dna
+	dynasty = dyn_aversarian_78
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_02
+			custom_beards = male_beard_western_9b
+		}
+	}
+
+	1219.3.16 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1237.3.16 = {
+		trait = education_intrigue_3
+		trait = way_of_nullification_follower
+		trait = shrewd
+		trait = cynical
+		trait = ambitious
+		trait = deceitful
+		trait = gh_historical_blademaster_3
+	}
+
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_sjalvolki
+		add_spouse = adrakamp_sjalvolki_3 #Garniex requested her hand in return for 'bravery' at the Elysian Pass
+		effect = {
+			create_character_memory = { # Battle of the Elysian Pass
+				type = fought_in_elysian_pass_sjalvolki
+			}
+			create_alliance = {
+				target = character:adrakamp_sjalvolki_4
+				allied_through_owner = character:etrandanexi_aversarinas_aagiokrata_1
+				allied_through_target = character:adrakamp_sjalvolki_3
+			}
+		}
+	}
+	1269.3.15 = {
+		death = yes
+	}
+}
+
+etrandanexi_aversarinas_aagiokrata_2 = { # Dexas Deathrender's father
+	name = "Brucos"
+	religion = "lifepath"
+	culture = etrandanexi
+	dynasty = dyn_aversarian_113
+	disallow_random_traits = yes
+
+	martial = 8
+	diplomacy = 7
+	stewardship = 3
+	intrigue = 6
+	learning = 8
+	prowess = 5
+
+	958.8.9 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	970.1.1 = {
+		trait = brave
+		trait = trusting
+		trait = generous
+	}
+
+	974.8.9 = {
+		trait = education_martial_1
+		trait = way_of_swords_follower
+	}
+
+	987.2.17 = {
+		add_spouse = etrandanexi_aversarinas_aagiokrata_3
+	}
+
+	992.8.23 = {
+		death = {
+			death_reason = death_assassination
+		}
+	}
+}
+
+etrandanexi_aversarinas_aagiokrata_3 = { # Dexas Deathrender's mother
+	name = "Agathe"
+	religion = "lifepath"
+	culture = etrandanexi
+	disallow_random_traits = yes
+	female = yes
+
+	martial = 3
+	diplomacy = 2
+	stewardship = 6
+	intrigue = 8
+	learning = 5
+	prowess = 8
+
+	962.5.8 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	974.1.1 = {
+		trait = fickle
+		trait = chaste
+		trait = arbitrary
+	}
+
+	978.5.8 = {
+		trait = education_intrigue_2
+		trait = way_of_family_follower
+	}
+
+	992.8.23 = {
+		trait = depressed_1
+	}
+
+	993.4.10 = {
+		death = {
+			death_reason = death_suicide
+		}
+	}
+}
+
+etrandanexi_aversarinas_aagiokrata_4 = { # Vedon den va Laroux, disappeared in a journey to the north, Aesch classmate
+	name = "Vedon"
+	religion = aversarinas_aagiokrata
+	culture = etrandanexi
+	dynasty = dyn_aversarian_119
+	disallow_random_traits = yes
+
+	father = etrandanexi_aversarinas_aagiokrata_5
+
+	martial = 7
+	diplomacy = 6
+	stewardship = 7
+	intrigue = 3
+	learning = 7
+	prowess = 7
+
+	1166.3.14 = {
+		birth = yes
+		trait = magic_good_8
+	}
+
+	1178.1.1 = {
+		trait = ambitious
+		trait = diligent
+		trait = zealous
+	}
+
+	1182.3.14 = {
+		trait = scholar
+		trait = education_arcana_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1187.9.8 = {
+		death = {
+			death_reason = death_disappearance
+		}
+	}
+}
+
+etrandanexi_aversarinas_aagiokrata_5 = { # Despexir Metheox den va Laroux
+	name = "ME_thE_ox"
+	religion = aversarinas_aagiokrata
+	culture = etrandanexi
+	dynasty = dyn_aversarian_119
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 6
+	stewardship = 4
+	intrigue = 8
+	learning = 5
+	prowess = 5
+
+	1126.12.17 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1138.1.1 = {
+		trait = wrathful
+		trait = ambitious
+		trait = greedy
+	}
+
+	1142.12.17 = {
+		trait = education_stewardship_3
+		trait = avaricious
+	}
+
+	1190.12.12 = {
+		death = {
+			death_reason = death_cancer
+		}
+	}
+}
+
+etrandanexi_aversarinas_aagiokrata_6 = { # Despexir Veleos den va Laroux
+	name = "VE_lE_os"
+	religion = aversarinas_aagiokrata
+	culture = etrandanexi
+	dynasty = dyn_aversarian_119
+	disallow_random_traits = yes
+
+	father = etrandanexi_aversarinas_aagiokrata_5
+
+	martial = 6
+	diplomacy = 8
+	stewardship = 6
+	intrigue = 4
+	learning = 4
+	prowess = 5
+
+	1168.6.6 = {
+		birth = yes
+	}
+
+	1180.1.1 = {
+		trait = trusting
+		trait = gluttonous
+		trait = stubborn
+	}
+
+	1184.6.6 = {
+		trait = education_martial_3
+		trait = unyielding_defender
+	}
+
+	1212.10.6 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+etrandanexi_aversarinas_aagiokrata_7 = { # Crieges den va Laroux
+	name = "CriE_gE_s"
+	religion = aversarinas_aagiokrata
+	culture = etrandanexi
+	dynasty = dyn_aversarian_119
+	disallow_random_traits = yes
+
+	father = etrandanexi_aversarinas_aagiokrata_6
+
+	martial = 7
+	diplomacy = 4
+	stewardship = 4
+	intrigue = 5
+	learning = 5
+	prowess = 6
+
+	1205.3.9 = {
+		birth = yes
+	}
+
+	1225.1.1 = {
+		trait = content
+		trait = patient
+		trait = brave
+	}
+
+	1226.6.6 = {
+		trait = education_diplomacy_2
+	}
+}
+
+etrandanexi_aversarinas_aagiokrata_8 = { # Neceneos den va Laroux
+	name = "NE_cenE_os"
+	religion = aversarinas_aagiokrata
+	culture = etrandanexi
+	dynasty = dyn_aversarian_119
+	disallow_random_traits = yes
+
+	father = etrandanexi_aversarinas_aagiokrata_7
+
+	martial = 5
+	diplomacy = 2
+	stewardship = 5
+	intrigue = 5
+	learning = 8
+	prowess = 7
+
+	1235.8.1 = {
+		birth = yes
+	}
+
+	1247.1.1 = {
+		trait = temperate
+		trait = greedy
+		trait = cynical
+	}
+
+	1251.8.1 = {
+		trait = education_martial_2
+		trait = forder
+	}
+}
+
+etrandanexi_aversarinas_aagiokrata_9 = { # Legon Aoles of Kalathipsomian Noble Legio XLIX 'Starward'
+	name = "AolE_s"
+	religion = aversarinas_aagiokrata
+	culture = etrandanexi
+	disallow_random_traits = yes
+
+	martial = 3
+	diplomacy = 4
+	stewardship = 7
+	intrigue = 6
+	learning = 5
+	prowess = 4
+
+	1215.5.17 = {
+		birth = yes
+	}
+
+	1227.1.1 = {
+		trait = just
+		trait = honest
+		trait = trusting
+	}
+
+	1231.5.17 = {
+		trait = education_martial_3
+		trait = military_engineer
+	}
+
+	1242.1.14 = {
+		trait = gh_legon
+	}
+
+	1247.3.15 = { # Ten Trees
+		death = {
+			death_reason = death_battle
+			killer = kardwens_kardawai_2
+		}
+	}
+}
+
+etrandanexi_aversarinas_aagiokrata_10 = { # Mathos den va Seychanax, famed etrandanexi adventurer and merc that pledged allegiance to Axiaothea during the ICW
+    name = "Mathos"
+    religion = "aversarinas_aagiokrata"
+    culture = "etrandanexi"
+    dynasty = dyn_aversarian_162
+
+    sexuality = heterosexual
+    dna = mathos
+
+    martial = 3
+    diplomacy = 3
+    stewardship = 8
+    intrigue = 10
+    learning = 2
+    prowess = 7
+
+    1141.3.28 = {
+        birth = yes
+    }
+
+    1153.1.1 = {
+        trait = gluttonous
+        trait = greedy
+        trait = deceitful
+    }
+
+    1157.3.28 = {
+        effect = { set_base_arcana = { AMOUNT = 3 } }
+        trait = education_intrigue_4
+        trait = schemer
+        trait = adventurer
+        trait = shrewd
+    }
+
+    1203.6.5 = {
+        death = {
+            death_reason = death_too_much_dessert
+        }
+    }
+}
+
+etrandanexi_aversarinas_aagiokrata_11 = { # Led the brotherhood after his father's death, was slain by Ludohar the Luminous during the Black-Gold War
+    name = "EuthE_os"
+    religion = "aversarinas_aagiokrata"
+    culture = "etrandanexi"
+    dynasty = dyn_aversarian_162
+
+    father = etrandanexi_aversarinas_aagiokrata_10
+
+    sexuality = heterosexual
+
+    martial = 4
+    diplomacy = 9
+    stewardship = 7
+    intrigue = 8
+    learning = 7
+    prowess = 5
+
+    1179.4.24 = {
+        birth = yes
+    }
+
+    1191.1.1 = {
+        trait = fickle
+        trait = ambitious
+        trait = gluttonous
+    }
+
+    1195.4.24 = {
+        effect = { set_base_arcana = { AMOUNT = 5 } }
+        trait = education_martial_2
+        trait = strong
+        trait = flexible_leader
+    }
+
+    1219.1.11 = {
+        death = {
+            death_reason = death_battle
+            killer = trustians_lifepath_28
+        }
+    }
+}
+
+etrandanexi_aversarinas_aagiokrata_12 = { # 3rd gen leader of the Brotherhood, fought valiantly during the Ash War
+    name = "ArE_stE_on"
+    religion = "aversarinas_aagiokrata"
+    culture = "etrandanexi"
+    dynasty = dyn_aversarian_162
+
+    father = etrandanexi_aversarinas_aagiokrata_11
+
+    sexuality = heterosexual
+
+    martial = 6
+    diplomacy = 8
+    stewardship = 5
+    intrigue = 4
+    learning = 9
+    prowess = 6
+
+    1203.2.27 = {
+        birth = yes
+    }
+
+    1215.1.1 = {
+        trait = ambitious
+        trait = sadistic
+        trait = patient
+    }
+
+    1219.2.27 = {
+        effect = { set_base_arcana = { AMOUNT = 7 } }
+        trait = education_martial_3
+        trait = poet
+        trait = organizer
+        trait = gh_historical_blademaster_1
+    }
+
+	1248.11.28 = {
+		trait = scarred
+		add_trait_xp = {
+            trait = scarred
+            value = 60
+        }
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+}

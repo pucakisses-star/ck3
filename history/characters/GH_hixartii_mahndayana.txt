@@ -1,0 +1,53 @@
+﻿#c_sorkheh_cheshmeh
+hixartii_mahndayana_1 = {
+	name = "Atousa"
+	religion = "mahndayana"
+	culture = "hixartii"
+	female = yes
+
+	1229.5.3 = {
+		birth = yes
+	}
+}
+
+#c_valayat
+hixartii_mahndayana_2 = {
+	name = "Kambarz"
+	religion = "mahndayana"
+	culture = "hixartii"
+
+	1220.4.21 = {
+		birth = yes
+	}
+}
+
+hixartii_mahndayana_3 = {
+	name = "Morteza"
+	religion = "mahndayana"
+	culture = "hixartii"
+
+	1187.4.21 = {
+		birth = yes
+	}
+}
+
+hixartii_mahndayana_4 = {
+	name = "Sori"
+	religion = "mahndayana"
+	culture = "hixartii"
+	female = yes
+
+	1207.1.13 = {
+		birth = yes
+	}
+}
+
+hixartii_mahndayana_5 = {
+	name = "Hourmin"
+	religion = "mahndayana"
+	culture = "hixartii"
+
+	1175.12.27 = {
+		birth = yes
+	}
+}

@@ -1,0 +1,18 @@
+﻿aguadosian_distant_shore_cult_1 = {
+	name = "Fabrizio"
+	religion = distant_shore_cult
+	culture = aguadosian
+	1203.6.5 = {
+		birth = yes
+	}
+}
+
+aguadosian_distant_shore_cult_2 = {
+	name = "Leonello"
+	religion = distant_shore_cult
+	culture = aguadosian
+
+	1212.3.9 = {
+		birth = yes
+	}
+}

@@ -1,0 +1,108 @@
+c_leontyras = { # THIS IS THE CAPITAL AND SHOULD ALWAYS BE HELD BY THE LIRENARA
+	1200.1.1 = {
+		holder = auzangeb_ruidari_22
+	}
+	1230.1.1 = {
+		holder = auzangeb_ruidari_1
+	}
+	1250.1.1 = { change_development_level = 20 }
+}
+#c_sereksi = { 
+#	1230.1.1 = {
+#		holder = auzangeb_ruidari_1
+#	}
+#	1250.1.1 = { change_development_level = 16 }	
+#}
+#c_kherevi = {
+#	1230.1.1 = {
+#		liege = e_ayyar
+#		holder = auzangeb_ruidari_6
+#	}
+#}
+#c_arrakar = {
+#	1230.1.1 = {
+#		liege = e_ayyar
+#		holder = auzangeb_ruidari_6
+#	}
+#}
+#c_layyat = {
+#	1230.1.1 = {
+#		liege = e_ayyar
+#		holder = auzangeb_ruidari_7
+#	}
+#}
+#c_nrevnuki = {
+#	1230.1.1 = {
+#		liege = e_ayyar
+#		holder = auzangeb_ruidari_7
+#	}
+#}
+c_teremhur = {
+	1230.1.1 = {
+		liege = e_ayyar
+		holder = auzangeb_ruidari_17
+	}
+}
+c_tavrun = { 
+	1230.1.1 = {
+		liege = e_ayyar
+		holder = auzangeb_ruidari_9
+	}
+}
+#c_ferev = { 
+#	1230.1.1 = {
+#		liege = e_ayyar
+#		holder = auzangeb_ruidari_10
+#	}
+#}
+#c_srevkikv = { 
+#	1230.1.1 = {
+#		liege = d_haradad
+#		holder = auzangeb_ruidari_13
+#	}
+#}
+#c_ferdur = { 
+#	1230.1.1 = {
+#		liege = d_haradad
+#		holder = auzangeb_ruidari_13
+#	}
+#}
+c_eki = { 
+	1230.1.1 = {
+		liege = d_haradad
+		holder = auzangeb_ruidari_14
+	}
+}
+#c_derepv = { 
+#	1230.1.1 = {
+#		liege = d_haradad
+#		holder = auzangeb_ruidari_15
+#	}
+#}
+#c_keref = { 
+#	1230.1.1 = {
+#		liege = e_ayyar
+#		holder = auzangeb_ruidari_16
+#	}
+#}
+#c_unaiazeha = {
+#	1230.1.1 = {
+#		holder = auzangeb_ruidari_1
+#	}
+#}
+c_tabarrayala = {
+	1230.1.1 = {
+		holder = auzangeb_ruidari_1
+	}
+}
+c_krasceti = {
+	1230.1.1 = {
+		holder = auzangeb_ruidari_1
+	}
+}
+c_new_sarradon_county14 = {
+	1230.1.1 = {
+		liege = e_ayyar
+		holder = auzangeb_ruidari_17
+	}
+}

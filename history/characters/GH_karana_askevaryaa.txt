@@ -1,0 +1,248 @@
+﻿karana_askevaryaa_1 = { # 1254 Gardener Duke
+	name = "Nahusa"
+	religion = "askevaryaa"
+	culture = "karana"
+	sexuality = homosexual
+	dynasty = dyn_karana_1
+	father = karana_askevaryaa_2
+	mother = karana_askevaryaa_3
+	trait = intellect_good_1
+
+	1222.2.18 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 2 }
+		}
+	}
+	1234.2.18 = {
+		trait = patient
+		trait = zealous
+		trait = diligent
+	}
+	1238.2.18 = {
+		trait = education_martial_4
+		trait = lifestyle_gardener
+		trait = rough_terrain_expert
+		trait = cautious_leader
+	}
+	1244.5.13 = {
+		effect = {
+			set_relation_lover = character:rahikaya_vidvaookeyatra_13
+			add_secret = { type = secret_homosexual }
+		}
+	}
+	1248.11.6 = {
+		add_spouse = karana_askevaryaa_9
+	}
+}
+
+karana_askevaryaa_2 = { # 1217 Karana Duke
+	name = "Sila"
+	religion = "askevaryaa"
+	culture = "karana"
+	sexuality = heterosexual
+	dynasty = dyn_karana_1
+	father = karana_askevaryaa_5
+	mother = karana_askevaryaa_6
+
+	1199.5.22 = {
+		birth = yes
+	}
+	1211.5.22 = {
+		trait = greedy
+		trait = calm
+		trait = lazy
+	}
+	1215.5.22 = {
+		trait = education_stewardship_1
+	}
+	1220.6.15 = {
+		add_spouse = karana_askevaryaa_3
+	}
+	1231.4.6 = {
+		death = {
+			death_reason = death_murder
+			killer = rahikaya_vidvaookeyatra_8
+		}
+	}
+}
+
+karana_askevaryaa_3 = { # 1217 Karana Duchess
+	name = "Bhogavati"
+	religion = "askevaryaa"
+	culture = "karana"
+	sexuality = bisexual
+	female = yes
+	trait = intellect_good_2
+
+	1198.9.24 = {
+		birth = yes
+	}
+	1210.9.24 = {
+		trait = zealous
+		trait = shy
+		trait = patient
+	}
+	1214.9.24 = {
+		trait = education_learning_3
+	}
+}
+
+karana_askevaryaa_4 = { # 1217 Karana Duke's Sister
+	name = "Lilavati"
+	religion = "askevaryaa"
+	culture = "karana"
+	sexuality = heterosexual
+	dynasty = dyn_karana_1
+	father = karana_askevaryaa_5
+	mother = karana_askevaryaa_6
+	female = yes
+	trait = scaly
+
+	1202.11.6 = {
+		birth = yes
+	}
+	1214.11.6 = {
+		trait = compassionate
+		trait = content
+		trait = shy
+	}
+	1218.11.6 = {
+		trait = education_diplomacy_2
+	}
+	1222.10.17 = {
+		add_matrilineal_spouse = karana_askevaryaa_7
+	}
+	1237.2.19 = {
+		death = {
+			death_reason = death_murder
+			killer = rahikaya_vidvaookeyatra_8
+		}
+	}
+}
+
+karana_askevaryaa_5 = { # 1200 Karana Duke
+	name = "Apsaradeva"
+	religion = "askevaryaa"
+	culture = "karana"
+	sexuality = asexual
+	dynasty = dyn_karana_1
+	trait = scaly
+
+	1178.3.14 = {
+		birth = yes
+	}
+	1190.3.14 = {
+		trait = vengeful
+		trait = wrathful
+		trait = ambitious
+	}
+	1194.3.14 = {
+		trait = education_martial_2
+		trait = aggressive_attacker
+		trait = reckless
+	}
+	1197.10.17 = {
+		add_spouse = karana_askevaryaa_6
+	}
+	1204.11.16 = {
+		death = {
+			death_reason = death_battle
+			killer = rahikaya_vidvaookeyatra_1
+		}
+	}
+}
+
+karana_askevaryaa_6 = { # 1200 Karana Duchess
+	name = "Vakula"
+	religion = "askevaryaa"
+	culture = "karana"
+	sexuality = heterosexual
+	female = yes
+
+	1179.12.19 = {
+		birth = yes
+	}
+	1191.12.19 = {
+		trait = impatient
+		trait = lustful
+		trait = callous
+	}
+	1195.12.19 = {
+		trait = education_intrigue_3
+	}
+	1204.11.22 = {
+		death = {
+			death_reason = death_vanished
+		}
+	}
+}
+
+karana_askevaryaa_7 = { # 1217 Lilavati husband
+	name = "Utidavarsha"
+	religion = "askevaryaa"
+	culture = "karana"
+	sexuality = heterosexual
+
+	1201.9.14 = {
+		birth = yes
+	}
+	1213.9.14 = {
+		trait = brave
+		trait = chaste
+		trait = gregarious
+	}
+	1217.9.14 = {
+		trait = education_martial_1
+	}
+	1240.12.1 = {
+		death = {
+			death_reason = death_murder
+			killer = rahikaya_vidvaookeyatra_8
+		}
+	}
+}
+
+karana_askevaryaa_8 = { # 1217 Lilavati daughter
+	name = "Durlabha"
+	religion = "askevaryaa"
+	culture = "karana"
+	dynasty = dyn_karana_1
+	father = karana_askevaryaa_7
+	mother = karana_askevaryaa_4
+	sexuality = heterosexual
+	female = yes
+
+	1224.3.20 = {
+		birth = yes
+	}
+	1236.3.20 = {
+		trait = patient
+		trait = cynical
+		trait = paranoid
+	}
+	1240.3.20 = {
+		trait = education_intrigue_3
+	}
+}
+
+karana_askevaryaa_9 = { # 1254 Karana Duchess
+	name = "Rajasundari"
+	religion = "askevaryaa"
+	culture = "karana"
+	sexuality = heterosexual
+	female = yes
+	trait = beauty_good_1
+
+	1226.5.14 = {
+		birth = yes
+	}
+	1238.5.14 = {
+		trait = honest
+		trait = trusting
+		trait = compassionate
+	}
+	1242.5.14 = {
+		trait = education_diplomacy_2
+	}
+}

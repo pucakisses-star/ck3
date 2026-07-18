@@ -1,0 +1,222 @@
+﻿zabari_vidvaookeyatra_1 = {
+	name = "Ranubai"
+	religion = "vidvaookeyatra"
+	culture = "zabari"
+	female = yes
+	father = zabari_vidvaookeyatra_4
+	1222.8.8 = {
+		birth = yes
+	}
+}
+
+zabari_vidvaookeyatra_2 = { # Vassal of majapahit
+	name = "Sambhaji"
+	religion = "vidvaookeyatra"
+	culture = "zabari"
+	1217.8.8 = {
+		birth = yes
+	}
+
+	1240.1.1 = {
+		trait = sadistic
+		trait = craven
+		trait = patient
+	}
+	1253.1.1 = {
+		effect = {
+			set_relation_rival = {
+				target = character:fenvir_sjalvolki_21
+				reason = rival_covetted_claim
+			}
+			create_character_memory = { # Lost to Krakeneater 
+				type = war_lost
+
+				participants = {
+					winner = character:fenvir_sjalvolki_21
+					loser = character:zabari_vidvaookeyatra_2
+				}
+			}
+		}
+	}
+}
+
+zabari_vidvaookeyatra_3 = { # 1254 would-be duchess of the Paidem, had her husband not stabbed her 37 times in her sleep
+	name = "Anubai"
+	religion = "vidvaookeyatra"
+	culture = "zabari"
+	sexuality = bisexual
+	female = yes
+	father = zabari_vidvaookeyatra_6
+	mother = zabari_vidvaookeyatra_7
+
+	1199.1.4 = {
+		birth = yes
+	}
+	1211.1.4 = {
+		trait = trusting
+		trait = fickle
+		trait = lazy
+	}
+	1215.1.4 = {
+		trait = education_diplomacy_2
+	}
+	1253.3.29 = {
+		death = {
+			death_reason = death_murder
+			killer = paidem_vidvaookeyatra_3
+		}
+	}
+}
+
+zabari_vidvaookeyatra_4 = {
+	name = "Gandadeva"
+	religion = "vidvaookeyatra"
+	culture = "zabari"
+
+	1192.3.1 = {
+		birth = yes
+	}
+	1210.1.1 = {
+		trait = zealous
+		trait = impatient
+		trait = content
+	}
+	1249.11.3 = {
+		death = {
+			death_reason = death_murder
+			killer = zabari_vidvaookeyatra_2
+		}
+	}
+}
+
+zabari_vidvaookeyatra_5 = {
+	name = "Ankur"
+	religion = "vidvaookeyatra"
+	culture = "zabari"
+	father = zabari_vidvaookeyatra_6
+	mother = zabari_vidvaookeyatra_7
+	sexuality = homosexual
+	1203.4.24 = {
+		birth = yes
+		trait = magic_good_3
+	}
+	1223.4.24 = {
+		trait = patient
+		trait = vengeful
+		trait = gregarious
+		trait = education_arcana_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:oraculars }
+			set_variable = { name = historical_magic_school_min_spells value = 9 }
+		}
+	}
+	1237.6.14 = { # Survives an ordeal against a Gajara
+		trait = possessed_1
+		trait = scarred
+	}
+}
+
+zabari_vidvaookeyatra_6 = {
+	name = "Yedu"
+	religion = "nabbarek"
+	culture = "zabari"
+	father = zabari_vidvaookeyatra_8
+
+	1165.4.24 = {
+		birth = yes
+		trait = magic_good_2
+		trait = legitimized_bastard
+	}
+	1185.4.24 = {
+		trait = impatient
+		trait = shy
+		trait = brave
+		trait = education_diplomacy_2
+	}
+	1192.1.1 = {
+		add_spouse = zabari_vidvaookeyatra_7
+	}
+	1227.11.7 = {
+		death = { death_reason = death_ill }
+	}
+}
+zabari_vidvaookeyatra_7 = {
+	name = "Rajama"
+	religion = "nabbarek"
+	culture = "zabari"
+	female = yes
+
+	1171.9.19 = {
+		birth = yes
+	}
+	1191.9.19 = {
+		trait = chaste
+		trait = diligent
+		trait = cynical
+		trait = education_stewardship_4
+	}
+	1246.1.2 = {
+		death = { death_reason = death_old_age }
+	}
+}
+zabari_vidvaookeyatra_8 = {
+	name = "Satru"
+	religion = "nabbarek"
+	culture = zabari
+	father = zabari_vidvaookeyatra_10
+	mother = zabari_vidvaookeyatra_9
+	1111.2.27 = {
+		birth = yes
+		trait = magic_good_6
+		trait = gh_gedeora_child
+	}
+	1131.2.27 = {
+		trait = fickle
+		trait = callous
+		trait = diligent
+		trait = education_arcana_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:empiricists }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+	1161.1.1 = {
+		trait = gh_glowing_eyes
+		trait = gh_glowing_veins
+		trait = gh_ritual_tattoos
+		give_nickname = nick_the_riddle
+	}
+	1211.10.2 = {
+		death = { death_reason = death_old_age }
+	}
+}
+zabari_vidvaookeyatra_9 = {
+	name = "Sayeebai"
+	religion = "vidvaookeyatra"
+	culture = "zabari"
+	female = yes
+
+	1090.2.14 = {
+		birth = yes
+		trait = magic_good_4
+	}
+	1111.2.27 = {
+		death = { death_reason = death_childbirth }
+	}
+}
+
+zabari_vidvaookeyatra_10 = {
+	name = "Manamatra"
+	religion = "vidvaookeyatra"
+	culture = "zabari"
+
+	1089.2.2 ={
+		birth = yes
+		trait = magic_good_1
+	}
+	1137.7.14 = {
+		death = { death_reason = death_mysterious } # Killed by his own son
+	}
+}

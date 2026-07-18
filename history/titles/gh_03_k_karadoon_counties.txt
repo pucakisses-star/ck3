@@ -1,0 +1,92 @@
+
+c_as_khasaireb = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_2
+	}
+}
+c_almarawi = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_2
+	}
+}
+c_rana = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_2
+	}
+}
+c_saruq = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_20
+	}
+	1240.1.1 = {
+		liege = "k_karadoon"
+	}
+}
+c_sabura = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_20
+	}
+	1240.1.1 = {
+		liege = "k_karadoon"
+	}
+}
+c_central_sarradon5 = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_20
+	}
+	1240.1.1 = {
+		liege = "k_karadoon"
+	}
+}
+c_uzliya = {
+	1180.1.1 = {
+		holder = saruyad_ritualist_01
+	}
+	1214.7.18 = {
+		holder = saruyad_ritualist_03
+	}
+	1233.8.19 = {
+		holder = tasurmad_wardenism_21
+		liege = "d_tall_hillana"
+	}
+}
+#c_miris = {
+#	1180.1.1 = {
+#		holder = saruyad_ritualist_01
+#	}
+#	1214.7.18 = {
+#		holder = saruyad_ritualist_03
+#	}
+#	1233.8.19 = {
+#		holder = tasurmad_wardenism_22
+#		liege = "d_zazakirmid"
+#	}
+#}
+c_mecinpasa = {
+	1230.1.1 = {
+		holder = tasurmad_ritualist_1
+		liege = "d_tall_hillana"
+	}
+}
+c_hadibjah = {
+	1230.1.1 = {
+		holder = tasurmad_ritualist_1
+		liege = "d_tall_hillana"
+	}
+}
+c_mayakiyah = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_32
+		liege = "k_four_rivers"
+	}
+}
+c_central_sarradon6 = {
+	1246.11.17 = {
+		holder = karadamos_kidarian_dance_1
+	}
+}
+c_central_sarradon7 = {
+	1239.4.15 = {
+		holder = karadamos_kidarian_dance_2
+	}
+}

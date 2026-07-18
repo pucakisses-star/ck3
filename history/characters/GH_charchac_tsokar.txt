@@ -1,0 +1,26 @@
+﻿charchac_tsokar_1 = { # Homely mask vassal
+	name = "Shoylar"
+	religion = "tsokar"
+	culture = "charchac"
+	sexuality = homosexual
+	trait = beauty_bad_1
+	trait = intellect_good_1
+
+	martial = 6
+	diplomacy = 9
+	stewardship = 6
+	intrigue = 4
+	learning = 11
+
+	1233.1.22 = {
+		birth = yes
+	}
+	1245.1.22 = {
+		trait = chaste
+		trait = patient
+		trait = honest
+	}
+	1249.1.22 = {
+		trait = education_learning_2
+	}
+}

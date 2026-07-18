@@ -1,0 +1,59 @@
+﻿sycharcegs_kikarsagi_aagiokrata_1 = {
+    name = "Toghoril"
+    dynasty = dyn_vhanavid_2
+    religion = "kikarsagi_aagiokrata"
+    culture = "sycharcegs"
+
+    1223.3.19 = {
+        birth = yes
+    }
+    1235.1.1 = {
+        trait = sadistic
+        trait = calm
+        trait = zealous
+    }
+    1239.3.19 = {
+        trait = education_martial_3
+    }
+}
+
+sycharcegs_kikarsagi_aagiokrata_2 = {
+    name = "Cihansha"
+    dynasty = dyn_kikarsag_1
+    religion = "kikarsagi_aagiokrata"
+    culture = "sycharcegs"
+
+    1216.10.1 = {
+        birth = yes
+    }
+    1228.1.1 = {
+        trait = brave
+        trait = generous
+        trait = arrogant
+    }
+    1239.3.19 = {
+        trait = education_diplomacy_2
+    }
+}
+
+sycharcegs_kikarsagi_aagiokrata_3 = {
+    name = "Isxak"
+    dynasty = dyn_kikarsag_2
+    religion = "kikarsagi_aagiokrata"
+    culture = "sycharcegs"
+
+    1227.2.21 = {
+        birth = yes
+    }
+}
+
+sycharcegs_kikarsagi_aagiokrata_4 = { # Kikarsag
+    name = "Zeng"
+    dynasty = dyn_chinese_1
+    religion = "kikarsagi_aagiokrata"
+    culture = "sycharcegs"
+
+    1213.4.12 = {
+        birth = yes
+    }
+}

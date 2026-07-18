@@ -1,0 +1,335 @@
+﻿druhandaehzag_orndaehz_1 = { #oddfolk chieftain
+	name = "Zognus"
+	religion = orndaehz
+	culture = druhandaehzag
+	dynasty = dyn_aupagn_11
+	disallow_random_traits = yes
+
+	martial = 9
+	diplomacy = 5
+	stewardship = 6
+	intrigue = 7
+	learning = 3
+	prowess = 6
+
+	1209.7.6 = {
+		birth = yes
+	}
+
+	1221.1.1 = {
+		trait = callous
+		trait = zealous
+		trait = brave
+	}
+
+	1225.7.6 = {
+		trait = education_martial_3
+		trait = reaver
+		trait = strong
+		trait = gh_historical_reveler_2
+	}
+
+	1226.2.22 = {
+		effect = {
+			create_character_memory = {
+				type = became_lovers_public
+				participants = { new_relation = character:druhandaehzag_orndaehz_2 }
+			}
+		}
+	}
+
+	1236.7.7 = {
+		add_spouse = druhandaehzag_orndaehz_5
+	}
+
+	1239.5.10 = {
+		trait = depressed_1
+		effect = {
+			create_character_memory = {
+				type = lover_died_public
+				participants = { dead_relation = character:druhandaehzag_orndaehz_2 }
+			}
+		}
+	}
+
+	1240.2.14 = {
+		add_spouse = druhandaehzag_orndaehz_6
+	}
+}
+
+druhandaehzag_orndaehz_2 = { #oddfolk chieftain's lifematch
+	name = "Cosmun"
+	religion = orndaehz
+	culture = druhandaehzag
+	disallow_random_traits = yes
+
+	martial = 7
+	diplomacy = 5
+	stewardship = 6
+	intrigue = 6
+	learning = 8
+	prowess = 7
+
+	1209.7.21 = {
+		birth = yes
+	}
+
+	1221.1.1 = {
+		trait = humble
+		trait = fickle
+		trait = gluttonous
+	}
+
+	1225.7.21 = {
+		trait = education_stewardship_4
+		trait = gh_historical_reveler_1
+	}
+
+	1239.5.10 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+druhandaehzag_orndaehz_3 = { #oddfolk chieftain's son
+	name = "Aulgovl"
+	religion = orndaehz
+	culture = druhandaehzag
+	dynasty = dyn_aupagn_11
+	disallow_random_traits = yes
+
+	father = druhandaehzag_orndaehz_1
+	mother = druhandaehzag_orndaehz_5
+
+	martial = 4
+	diplomacy = 5
+	stewardship = 7
+	intrigue = 5
+	learning = 5
+	prowess = 6
+
+	1237.5.17 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1249.1.1 = {
+		trait = lazy
+		trait = paranoid
+		trait = humble
+	}
+
+	1253.5.17 = {
+		trait = education_learning_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+		trait = gh_historical_reveler_1
+	}
+}
+
+druhandaehzag_orndaehz_4 = { #oddfolk chieftain's second son
+	name = "Toculz"
+	religion = orndaehz
+	culture = druhandaehzag
+	dynasty = dyn_aupagn_11
+	disallow_random_traits = yes
+
+	father = druhandaehzag_orndaehz_1
+	mother = druhandaehzag_orndaehz_6
+
+	martial = 4
+	diplomacy = 8
+	stewardship = 5
+	intrigue = 3
+	learning = 5
+	prowess = 5
+
+	1241.4.23 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+
+	1247.4.23 = {
+		trait = rowdy
+	}
+
+	1253.1.1 = {
+		trait = brave
+		trait = humble
+		trait = wrathful
+	}
+}
+
+druhandaehzag_orndaehz_5 = { #oddfolk chieftain's first concubine
+	name = "Golnfagli"
+	religion = orndaehz
+	culture = druhandaehzag
+	disallow_random_traits = yes
+	female = yes
+
+	martial = 6
+	diplomacy = 7
+	stewardship = 5
+	intrigue = 7
+	learning = 4
+	prowess = 4
+
+	1219.1.8 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1231.1.1 = {
+		trait = lazy
+		trait = lustful
+		trait = just
+	}
+
+	1235.1.8 = {
+		trait = education_martial_2
+		trait = reaver
+		trait = gh_historical_blademaster_1
+	}
+}
+
+druhandaehzag_orndaehz_6 = { #oddfolk chieftain's second concubine
+	name = "Aulvtugi"
+	religion = orndaehz
+	culture = druhandaehzag
+	dynasty = dyn_aupagn_12
+	disallow_random_traits = yes
+	female = yes
+
+	father = druhandaehzag_orndaehz_8
+
+	martial = 5
+	diplomacy = 8
+	stewardship = 7
+	intrigue = 7
+	learning = 6
+	prowess = 3
+
+	1222.12.25 = {
+		birth = yes
+		trait = intellect_good_2
+	}
+
+	1234.1.1 = {
+		trait = diligent
+		trait = gluttonous
+		trait = vengeful
+	}
+
+	1238.12.25 = {
+		trait = education_intrigue_3
+		trait = gh_historical_reveler_1
+	}
+}
+
+druhandaehzag_orndaehz_7 = { #oddfolk reveler chieftain
+	name = "Boglun"
+	religion = orndaehz
+	culture = druhandaehzag
+	dynasty = dyn_aupagn_12
+	disallow_random_traits = yes
+
+	father = druhandaehzag_orndaehz_8
+
+	martial = 7
+	diplomacy = 6
+	stewardship = 6
+	intrigue = 6
+	learning = 5
+	prowess = 6
+
+	1216.5.25 = {
+		birth = yes
+	}
+
+	1228.1.1 = {
+		trait = brave
+		trait = deceitful
+		trait = gluttonous
+	}
+
+	1232.5.25 = {
+		trait = education_diplomacy_2
+		trait = gh_historical_reveler_3
+		trait = comfort_eater
+	}
+}
+
+druhandaehzag_orndaehz_8 = { #oddfolk reveler chieftain's dad
+	name = "Schnur"
+	religion = orndaehz
+	culture = druhandaehzag
+	dynasty = dyn_aupagn_12
+	disallow_random_traits = yes
+
+	martial = 4
+	diplomacy = 6
+	stewardship = 5
+	intrigue = 3
+	learning = 6
+	prowess = 4
+
+	1176.6.26 = {
+		birth = yes
+		trait = intellect_good_2
+	}
+
+	1188.1.1 = {
+		trait = calm
+		trait = lustful
+		trait = gregarious
+	}
+
+	1192.6.26 = {
+		trait = education_intrigue_4
+		trait = gh_historical_reveler_2
+		trait = seducer
+	}
+
+	1237.5.13 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+druhandaehzag_orndaehz_9 = { #oddfolk lustful chieftain
+	name = "Norvenda"
+	religion = orndaehz
+	culture = druhandaehzag
+	dynasty = dyn_aupagn_13
+	disallow_random_traits = yes
+	female = yes
+
+	martial = 6
+	diplomacy = 8
+	stewardship = 2
+	intrigue = 4
+	learning = 3
+	prowess = 4
+
+	1227.5.26 = {
+		birth = yes
+		trait = beauty_good_2
+	}
+
+	1239.1.1 = {
+		trait = wrathful
+		trait = lustful
+		trait = gregarious
+	}
+
+	1243.5.26 = {
+		trait = education_martial_2
+		trait = gh_historical_track_hunter_2
+		trait = rakish
+	}
+}

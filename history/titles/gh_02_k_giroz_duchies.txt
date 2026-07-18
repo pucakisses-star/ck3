@@ -1,0 +1,5 @@
+d_shaqetin = {
+	1250.1.1 = {
+		change_development_level = 7
+	}
+}

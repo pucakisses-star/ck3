@@ -1,0 +1,729 @@
+﻿kuridorig_cumani_1 = { # Khaidu Takhaid, rode with Jajak Otroka in his horde
+	name = "Khaidu"
+	dynasty = dyn_kuridorig_2
+	religion = arayymorog
+	culture = kuridorig
+	disallow_random_traits = yes
+
+	father = kuridorig_cumani_3
+
+	martial = 7
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 8
+	learning = 3
+	prowess = 5
+
+	1171.9.13 = {
+		birth = yes
+	}
+
+	1183.1.1 = {
+		trait = brave
+		trait = generous
+		trait = temperate
+	}
+
+	1187.9.13 = {
+		trait = education_martial_1
+		trait = gh_historical_blademaster_1
+	}
+
+	1200.2.26 = {
+		death = {
+			death_reason = death_battle
+			killer = yonata_vidvaookeyatra_1 # Akhasar
+		}
+	}
+}
+
+kuridorig_cumani_2 = { # 1254 Khatan of Dartar
+	name = "Buldai"
+	dynasty = dyn_kuridorig_2
+	religion = arayymorog
+	culture = kuridorig
+
+	father = kuridorig_cumani_5
+
+	martial = 7
+	diplomacy = 4
+	intrigue = 6
+	stewardship = 3
+	learning = 6
+	prowess = 8
+
+	1194.3.28 = {
+		birth = yes
+	}
+
+	1167.1.1 = {
+		trait = sadistic
+		trait = zealous
+		trait = arbitrary
+	}
+
+	1171.3.28 = {
+		trait = education_intrigue_1
+	}
+}
+
+kuridorig_cumani_3 = { # Khaidu Takhaid's father
+	name = "Bogen"
+	dynasty = dyn_kuridorig_2
+	religion = arayymorog
+	culture = kuridorig
+	disallow_random_traits = yes
+
+	father = kuridorig_cumani_4
+
+	martial = 9
+	diplomacy = 7
+	intrigue = 9
+	stewardship = 6
+	learning = 5
+	prowess = 4
+
+	1145.10.27 = {
+		birth = yes
+	}
+
+	1157.1.1 = {
+		trait = calm
+		trait = lustful
+		trait = ambitious
+	}
+
+	1161.10.27 = {
+		trait = education_martial_3
+		trait = logistician
+	}
+
+	1194.6.14 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+kuridorig_cumani_4 = { # Khaidu Takhaid's grandfather
+	name = "Belgutei"
+	dynasty = dyn_kuridorig_2
+	religion = arayymorog
+	culture = kuridorig
+	disallow_random_traits = yes
+
+	martial = 8
+	diplomacy = 2
+	intrigue = 1
+	stewardship = 7
+	learning = 7
+	prowess = 7
+
+	1116.5.24 = {
+		birth = yes
+	}
+
+	1128.1.1 = {
+		trait = arrogant
+		trait = wrathful
+		trait = lustful
+	}
+
+	1132.5.24 = {
+		trait = education_martial_2
+		trait = aggressive_attacker
+	}
+
+	1174.6.15 = {
+		death = {
+			death_reason = death_duel
+			killer = kuridorig_iek_otached_2 # Jurchedei Otroka's conquest of Dartar
+		}
+	}
+}
+
+kuridorig_cumani_5 = { # Khaidu Takhaid's uncle, usurped Dartar after Jajak Otroka's disappearance
+	name = "Okhotur"
+	dynasty = dyn_kuridorig_2
+	religion = arayymorog
+	culture = kuridorig
+	disallow_random_traits = yes
+
+	father = kuridorig_cumani_4
+
+	martial = 4
+	diplomacy = 5
+	intrigue = 9
+	stewardship = 3
+	learning = 8
+	prowess = 6
+
+	1155.2.12 = {
+		birth = yes
+	}
+
+	1167.1.1 = {
+		trait = arrogant
+		trait = callous
+		trait = vengeful
+	}
+
+	1171.2.12 = {
+		trait = education_intrigue_4
+		trait = schemer
+	}
+
+	1217.6.16 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+kuridorig_cumani_6 = { # Dartar Khatan's son
+	name = "Subetei"
+	dynasty = dyn_kuridorig_2
+	religion = arayymorog
+	culture = kuridorig
+
+	father = kuridorig_cumani_2
+
+	martial = 8
+	diplomacy = 5
+	intrigue = 2
+	stewardship = 4
+	learning = 5
+	prowess = 6
+
+	1229.4.3 = {
+		birth = yes
+	}
+
+	1241.1.1 = {
+		trait = brave
+		trait = zealous
+		trait = lustful
+	}
+
+	1245.4.3 = {
+		trait = education_martial_3
+		trait = reaver
+	}
+}
+
+kuridorig_cumani_7 = { # Okhotur Arjigin, rode with Jajak Otroka's horde
+	name = "Okhotur"
+	dynasty = dyn_kuridorig_3
+	religion = cumani
+	culture = kuridorig
+	disallow_random_traits = yes
+
+	father = kuridorig_cumani_8
+
+	martial = 8
+	diplomacy = 2
+	intrigue = 3
+	stewardship = 6
+	learning = 4
+	prowess = 10
+
+	1167.11.1 = {
+		birth = yes
+	}
+
+	1179.1.1 = {
+		trait = compassionate
+		trait = content
+		trait = honest
+	}
+
+	1183.11.1 = {
+		trait = education_martial_1
+		trait = strong
+	}
+
+	1199.11.23 = {
+		death = {
+			death_reason = death_battle
+			killer = easternimperial_aversarinas_aagiokrata_88 # Legon Karthanad of Legio LXI 'Anoterion' at the Battle of Baytor's Grave
+		}
+	}
+}
+
+kuridorig_cumani_8 = { # Okhotur Arjigin's father
+	name = "Buri"
+	dynasty = dyn_kuridorig_3
+	religion = cumani
+	culture = kuridorig
+	disallow_random_traits = yes
+
+	martial = 2
+	diplomacy = 8
+	intrigue = 4
+	stewardship = 9
+	learning = 9
+	prowess = 5
+
+	1138.5.16 = {
+		birth = yes
+	}
+
+	1150.1.1 = {
+		trait = forgiving
+		trait = content
+		trait = gregarious
+	}
+
+	1154.5.16 = {
+		trait = education_diplomacy_2
+	}
+
+	1210.8.19 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+kuridorig_cumani_9 = { # Okhotur Arjigin's son
+	name = "Tumen"
+	dynasty = dyn_kuridorig_3
+	religion = cumani
+	culture = kuridorig
+
+	father = kuridorig_cumani_7
+
+	martial = 6
+	diplomacy = 2
+	intrigue = 4
+	stewardship = 6
+	learning = 8
+	prowess = 5
+
+	1197.12.21 = {
+		birth = yes
+	}
+
+	1209.1.1 = {
+		trait = stubborn
+		trait = content
+		trait = trusting
+	}
+
+	1213.12.21 = {
+		trait = education_stewardship_2
+	}
+}
+
+kuridorig_cumani_10 = {
+	name = "Khogaghchin"
+	religion = "cumani"
+	culture = "kuridorig"
+	female = yes
+
+	1165.1.21 = {
+		birth = yes
+	}
+	1234.11.11 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+kuridorig_cumani_11 = {
+	name = "Chabi"
+	religion = "cumani"
+	culture = "arderwan"
+	female = yes
+
+	1175.1.21 = {
+		birth = yes
+	}
+	1244.11.11 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+kuridorig_cumani_12 = {
+	name = "Chabi"
+	religion = "cumani"
+	culture = "kuridorig"
+	female = yes
+
+	1175.1.21 = {
+		birth = yes
+	}
+	1244.11.11 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+kuridorig_cumani_13 = {
+	name = "Khojin"
+	religion = "cumani"
+	culture = "kuridorig"
+	female = yes
+
+	1175.1.21 = {
+		birth = yes
+	}
+}
+
+kuridorig_cumani_14 = {
+	name = "Checheyigen"
+	religion = "cumani"
+	culture = "kuridorig"
+	female = yes
+
+	1181.1.21 = {
+		birth = yes
+	}
+}
+
+kuridorig_cumani_15 = {
+	name = "Checheyigen"
+	religion = "cumani"
+	culture = "arderwan"
+	female = yes
+
+	1181.1.21 = {
+		birth = yes
+	}
+}
+
+kuridorig_cumani_16 = {
+	name = "Akhutai"
+	religion = "cumani"
+	culture = "kuridorig"
+
+	1179.11.21 = {
+		birth = yes
+	}
+	1250.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+kuridorig_cumani_17 = {
+	name = "Chakha"
+	religion = "cumani"
+	culture = "kuridorig"
+	female = yes
+
+	1181.1.21 = {
+		birth = yes
+	}
+}
+
+kuridorig_cumani_18 = {
+	name = "Baeda"
+	religion = "cumani"
+	culture = "arderwan"
+	female = yes
+	father = kuridorig_cumani_29
+	mother = kuridorig_cumani_10
+
+	1210.4.15 = {
+		birth = yes
+	}
+}
+
+kuridorig_cumani_19 = {
+	name = "Achigh"
+	religion = "cumani"
+	culture = "arderwan"
+	father = kuridorig_cumani_37
+	mother = kuridorig_cumani_11
+
+	1234.1.12 = {
+		birth = yes
+	}
+}
+
+kuridorig_cumani_20 = {
+	name = "Chakha"
+	religion = "cumani"
+	culture = "arderwan"
+	female = yes
+	father = kuridorig_cumani_31
+	mother = kuridorig_cumani_11
+
+	1209.1.12 = {
+		birth = yes
+	}
+}
+
+kuridorig_cumani_21 = {
+	name = "Ambaghai"
+	religion = "cumani"
+	culture = "kuridorig"
+	father = kuridorig_cumani_36
+	mother = kuridorig_cumani_14
+
+	1226.1.12 = {
+		birth = yes
+	}
+}
+
+kuridorig_cumani_22 = {
+	name = "Ukhuna"
+	religion = "cumani"
+	culture = "arderwan"
+	father = kuridorig_cumani_37
+	mother = kuridorig_cumani_15
+
+	1231.1.12 = {
+		birth = yes
+	}
+}
+
+kuridorig_cumani_23 = {
+	name = "Khaidu"
+	religion = "cumani"
+	culture = "kuridorig"
+	father = kuridorig_cumani_35
+	mother = kuridorig_cumani_13
+
+	1230.1.12 = {
+		birth = yes
+	}
+}
+
+kuridorig_cumani_24 = {
+	name = "Attalon"
+	religion = "cumani"
+	culture = "kuridorig"
+	trait = gregarious
+	trait = education_diplomacy_2
+	trait = magic_good_1
+	trait = temperate
+	trait = patient
+	father = kuridorig_cumani_36
+	mother = kuridorig_cumani_10
+
+	1214.1.12 = {
+		birth = yes
+	}
+}
+
+kuridorig_cumani_25 = {
+	name = "Sokhatai"
+	religion = "cumani"
+	culture = "kuridorig"
+	female = yes
+	father = kuridorig_cumani_16
+	mother = kuridorig_cumani_38
+
+	1202.1.12 = {
+		birth = yes
+	}
+}
+
+kuridorig_cumani_26 = {
+	name = "Khutula"
+	religion = "cumani"
+	culture = "kuridorig"
+	father = kuridorig_cumani_39
+	mother = kuridorig_cumani_17
+
+	1214.1.12 = {
+		birth = yes
+	}
+}
+
+kuridorig_cumani_27 = {
+	name = "Chanai"
+	religion = "cumani"
+	culture = "arderwan"
+
+	1224.1.12 = {
+		birth = yes
+	}
+}
+
+kuridorig_cumani_28 = {
+	name = "Belgunutei"
+	religion = "cumani"
+	culture = "kuridorig"
+
+	1122.6.1 = {
+		birth = yes
+	}
+	1189.8.7 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+kuridorig_cumani_29 = {
+	name = "Munglig"
+	religion = "cumani"
+	culture = "kuridorig"
+	father = kuridorig_cumani_28
+
+	1164.11.21 = {
+		birth = yes
+	}
+	1230.11.11 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+kuridorig_cumani_30 = {
+	name = "Jochi"
+	religion = "cumani"
+	culture = "arderwan"
+
+	1132.6.1 = {
+		birth = yes
+	}
+	1198.8.7 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+kuridorig_cumani_31 = {
+	name = "Tumen"
+	religion = "cumani"
+	culture = "arderwan"
+	father = kuridorig_cumani_30
+
+	1174.11.21 = {
+		birth = yes
+	}
+	1240.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+kuridorig_cumani_32 = {
+	name = "Chilagun"
+	religion = "cumani"
+	culture = "kuridorig"
+
+	1132.6.1 = {
+		birth = yes
+	}
+	1198.8.9 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+kuridorig_cumani_33 = {
+	name = "Tolui"
+	religion = "cumani"
+	culture = "kuridorig"
+	father = kuridorig_cumani_32
+
+	1174.11.21 = {
+		birth = yes
+	}
+	1240.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+kuridorig_cumani_34 = {
+	name = "Ajai"
+	religion = "cumani"
+	culture = "kuridorig"
+
+	1132.6.1 = {
+		birth = yes
+	}
+	1198.8.19 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+kuridorig_cumani_35 = {
+	name = "Tumbinai_Setsen"
+	religion = "cumani"
+	culture = "kuridorig"
+	father = kuridorig_cumani_34
+
+	1174.11.21 = {
+		birth = yes
+	}
+	1250.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+kuridorig_cumani_36 = {
+	name = "Abagha"
+	religion = "cumani"
+	culture = "kuridorig"
+
+	1179.11.21 = {
+		birth = yes
+	}
+	1250.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+kuridorig_cumani_37 = {
+	name = "Abagha"
+	religion = "cumani"
+	culture = "arderwan"
+
+	1179.11.21 = {
+		birth = yes
+	}
+	1250.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+kuridorig_cumani_38 = {
+	name = "Chakha"
+	religion = "cumani"
+	culture = "kuridorig"
+	female = yes
+
+	1181.1.21 = {
+		birth = yes
+	}
+}
+
+kuridorig_cumani_39 = {
+	name = "Akhutai"
+	religion = "cumani"
+	culture = "kuridorig"
+
+	1179.11.21 = {
+		birth = yes
+	}
+	1250.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}

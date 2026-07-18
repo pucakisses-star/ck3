@@ -1,0 +1,869 @@
+﻿irmionoth_sjalvolki_1 = { # Bjärne of Sonnenfall, Irmionoth chieftain with a penchant for trade and peaceful development at odds with most of his kin
+	name = "Ebrinoth" #Formerly Bjarne
+	dynasty = dyn_sjalvolki_18
+	religion = "sjalvolki"
+	culture = "irmionoth"
+	sexuality = heterosexual
+	
+	diplomacy = 4
+	intrigue = 1
+	learning = 5
+	martial = 3
+	stewardship = 7
+
+	1211.1.18 = {
+		birth = yes
+	}
+	1223.1.1 = {
+		trait = diligent
+		trait = greedy
+		trait = calm
+	}
+	1227.1.18 = {
+		trait = education_stewardship_3
+	}
+	1235.1.1 = {
+		trait = avaricious
+	}
+	1236.8.2 = {
+		add_spouse = irmionoth_sjalvolki_13
+	}
+	1266.2.11 = {
+		death = {
+			death_reason = death_ill
+			
+		}
+	}
+}
+
+irmionoth_sjalvolki_2 = {
+	name = "Vorich" #Formerly Gunzelin
+	dna = irmionoth_sjalvolki_2
+	religion = "sjalvolki"
+	culture = "irmionoth"
+	trait = physique_good_3
+	diplomacy = 3
+	martial = 8
+	stewardship = 6
+	intrigue = 4
+	learning = 3
+	prowess = 9
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_07
+			custom_beards = male_beard_northern_03
+		}
+	}
+
+	1222.2.19 = {
+		birth = yes
+	}
+
+	1234.1.1 = {
+		trait = gregarious
+		trait = gluttonous
+		trait = fickle
+	}
+
+	1238.2.19 = {
+		trait = education_martial_2	
+	}
+
+	1245.1.1 = {
+		effect = {
+			set_relation_friend = { 
+				target = character:daukeni_sjalvolki_1 
+				reason = friend_shieldbrother
+			}
+		}
+	}
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_sjalvolki
+		trait = berserker
+		give_nickname = nick_bloodbeard
+		effect = {
+			create_character_memory = { # Battle of the Elysian Pass
+				type = fought_in_elysian_pass_sjalvolki
+			}
+		}
+	}
+
+	1284.4.7 = {
+		death = { death_reason = death_battle } #killed by islander pirates
+	}
+}
+
+irmionoth_sjalvolki_3 = {
+	name = "Harigoth" #Formerly Aelfgar
+	dynasty = dyn_central_empire_17
+	religion = "sjalvolki"
+	culture = "irmionoth"
+
+	1221.4.12 = {
+		birth = yes
+	}
+}
+
+irmionoth_sjalvolki_4 = {
+	name = "Almorich" #Formerly Jaspar
+	religion = "sjalvolki"
+	culture = "irmionoth"
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+
+irmionoth_sjalvolki_5 = {
+	name = "Archonith" #Formerly Merten
+	religion = "sjalvolki"
+	culture = "irmionoth"
+	father = irmionoth_sjalvolki_21
+	mother = irmionoth_sjalvolki_20
+	dynasty = dyn_sjalvolki_43a
+	1220.4.12 = {
+		birth = yes
+	}
+
+	1283.12.3 = {
+		death = { death_reason = death_battle killer = ordikin_mothers_and_fathers_1 }
+	}
+}
+
+irmionoth_sjalvolki_6 = {
+	name = "Vorich"
+	religion = "sjalvolki"
+	culture = "irmionoth"
+	father = irmionoth_sjalvolki_21
+	mother = irmionoth_sjalvolki_20
+	dynasty = dyn_sjalvolki_43a
+	1242.4.19 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1262.1.1 = {
+		trait = arrogant
+		trait = calm
+		trait = gluttonous
+		trait = education_arcana_2
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:wood_law }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+	1280.1.1 = {
+		religion = orispolj_rite
+		give_nickname = nick_sjal_witch_blood
+	}
+
+	1296.1.1 = {
+		#culture = rohfulka
+	}
+}
+
+irmionoth_sjalvolki_7 = {
+	name = "Ichraulm" #Formerly Gehrke
+	religion = "sjalvolki"
+	culture = "irmionoth"
+
+	1230.4.20 = {
+		birth = yes
+	}
+
+	1250.1.1 = {
+		trait = wrathful
+		trait = patient
+		trait = sadistic
+		trait = education_stewardship_3
+	}
+
+	1253.3.22 = {
+		add_spouse = ordikin_mothers_and_fathers_2
+	}
+
+	1285.1.1 = {
+		religion = orispolj_rite
+	}
+
+
+	1288.2.22 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+irmionoth_sjalvolki_8 = {
+	name = "Gauthichil" #Formerly Gunzelin
+	religion = "sjalvolki"
+	culture = "irmionoth"
+
+	1211.4.5 = {
+		birth = yes
+	}
+}
+
+irmionoth_sjalvolki_9 = {
+	name = "Vorich"
+	religion = "sjalvolki"
+	culture = "irmionoth"
+
+	1220.4.11 = {
+		birth = yes
+	}
+}
+
+irmionoth_sjalvolki_10 = {
+	name = "Euchar" #Formerly Floribert
+	religion = "sjalvolki"
+	culture = "irmionoth"
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+
+irmionoth_sjalvolki_11 = {
+	name = "Morichrau" #Formerly Michael
+	religion = "sjalvolki"
+	culture = "irmionoth"
+
+	1214.12.12 = {
+		birth = yes	
+	}
+	1234.12.12 = {
+		trait = cynical
+		trait = diligent
+		trait = brave
+		trait = education_martial_3
+		trait = strong
+	}
+	1254.1.1 = {
+		trait = depressed_1 
+	}
+}
+
+irmionoth_sjalvolki_12 = {
+	name = "Valravoth" #Formerly Freawine
+	religion = "sjalvolki"
+	culture = "irmionoth"
+
+	1220.4.12 = {
+		birth = yes
+	}
+
+	1246.2.2 = {
+		add_spouse = irmionoth_sjalvolki_19
+	}
+
+	1278.3.5 = {
+		death = { death_reason = death_battle killer = ordikin_mothers_and_fathers_1 }
+	}
+}
+
+irmionoth_sjalvolki_13 = { #Ebrinoth's Spouse
+	name = "Ochrilth"
+	religion = "sjalvolki"
+	culture = "irmionoth"
+	female = yes
+
+	1213.9.21 = {
+		birth = yes
+	}
+
+	1228.9.21 = {
+		trait = stubborn
+		trait = cynical
+		trait = gregarious
+		trait = education_diplomacy_2
+	}
+
+	1266.2.1 = {
+		trait = depressed_1
+	}
+	1267.1.6 = {
+		death = {
+			death_reason = death_depressed
+			
+		}
+	}
+}
+
+irmionoth_sjalvolki_14 = { #Ebrinoth II, brief monarch and now duke
+	name = "Ebrinoth"
+	religion = "sjalvolki"
+	culture = "irmionoth"
+	father = irmionoth_sjalvolki_1
+	mother = irmionoth_sjalvolki_13
+	dynasty = dyn_sjalvolki_18
+	1231.3.7 = {
+		birth = yes
+	}
+
+	1251.1.1 = {
+		trait = fickle
+		trait = ambitious
+		trait = impatient
+		trait = education_martial_1
+	}
+
+	1261.2.4 = {
+		trait = gh_historical_blademaster_1
+	}
+
+	1265.8.2 = {
+		add_spouse = leegender_lifepath_9
+	}
+
+	1295.2.2 = {
+		#culture = rohfulka
+		religion = orispolj_rite
+	}
+}
+
+
+irmionoth_sjalvolki_15 = { #Ebrinoth III, killed in the Clanlander Spring of '83
+	name = "Ebrinoth"
+	religion = "orispolj_rite"
+	culture = "irmionoth"
+	father = irmionoth_sjalvolki_14
+	mother = leegender_lifepath_9
+	dynasty = dyn_sjalvolki_18
+	1267.11.7 = {
+		birth = yes
+	}
+
+	1283.11.7 = {
+		trait = callous
+		trait = zealous
+		trait = chaste
+		trait = education_martial_1
+	}
+
+	1283.12.3 = {
+		death = { death_reason = death_battle killer = ordikin_mothers_and_fathers_1 }
+	}
+}
+
+
+irmionoth_sjalvolki_16 = { #Second child of Ebrinoth
+	name = "Irmnilth"
+	religion = "sjalvolki"
+	culture = "irmionoth"
+	father = irmionoth_sjalvolki_14
+	mother = leegender_lifepath_9
+	dynasty = dyn_sjalvolki_18
+	1269.5.17 = {
+		birth = yes
+	}
+
+	1289.1.1 = {
+		trait = brave
+		trait = ambitious
+		trait = impatient
+		trait = education_martial_3
+	}
+
+	1290.2.4 = {
+		trait = berserker
+	}
+	
+	1295.2.2 = {
+		#culture = rohfulka
+		religion = orispolj_rite
+	}
+}
+
+
+irmionoth_sjalvolki_17 = { #third child of Ebrinoth, bastard
+	name = "Odalchar"
+	religion = "orispolj_rite"
+	culture = "irmionoth"
+	father = irmionoth_sjalvolki_14
+
+	1293.3.7 = {
+		birth = yes
+		trait = bastard
+	}
+
+	1295.2.2 = {
+		#culture = rohfulka
+	}
+}
+
+irmionoth_sjalvolki_18 = { # Current ruler of Westhold in 1298, couped the realm from Ebrinoth II after his failure to prevent Clanlander raids by Cosauc
+	name = "Euchar"
+	religion = "sjalvolki"
+	culture = "irmionoth"
+	father = irmionoth_sjalvolki_21
+	mother = irmionoth_sjalvolki_20
+	dynasty = dyn_sjalvolki_43a
+	diplomacy = 4
+	martial = 8
+	stewardship = 6
+	intrigue = 3
+	learning = 6
+
+	1233.12.6 = {
+		birth = yes
+		trait = physique_good_1
+	}
+
+	1243.2.1 = {
+		trait = cynical
+		trait = brave
+		trait = vengeful
+		trait = education_martial_3
+	}
+
+	1247.3.15 = {
+		trait = berserker
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+		give_nickname = nick_sjal_red_shield
+	}
+
+	1253.11.6 = {
+		add_spouse = irmionoth_sjalvolki_34
+	}
+
+	1285.1.1 = {
+		religion = orispolj_rite
+	}
+
+	1295.2.2 = {
+		#culture = rohfulka
+	}
+}
+
+irmionoth_sjalvolki_19 = {
+	name = "Boridau"
+	religion = "sjalvolki"
+	culture = "irmionoth"
+	female = yes
+
+	1225.3.2 = {
+		birth = yes
+	}
+
+	1278.3.5 = {
+		death = { death_reason = death_suicide }
+	}
+}
+
+irmionoth_sjalvolki_20 = {
+	name = "Morilth"
+	religion = "sjalvolki"
+	culture = "irmionoth"
+	female = yes
+
+	1201.11.1 = {
+		birth = yes
+	}
+
+	1262.5.15 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+irmionoth_sjalvolki_21 = {
+	name = "Harithau"
+	religion = "sjalvolki"
+	culture = "irmionoth"
+	dynasty = dyn_sjalvolki_43a
+	1198.3.29 = {
+		birth = yes
+	}
+
+	1220.1.1 = {
+		add_spouse = irmionoth_sjalvolki_20
+	}
+
+	1247.3.15 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+irmionoth_sjalvolki_22 = {
+	name = "Ochriwal"
+	religion = "sjalvolki"
+	culture = "irmionoth"
+	father = irmionoth_sjalvolki_12
+	mother = irmionoth_sjalvolki_19
+
+	1249.3.2 = {
+		birth = yes
+	}
+
+	1269.3.2 = {
+		trait = trusting
+		trait = fickle
+		trait = gregarious
+		trait = education_diplomacy_3
+		trait = lifestyle_herbalist
+	}
+
+	1285.1.1 = {
+		religion = orispolj_rite
+	}
+
+	1295.2.2 = {
+		#culture = rohfulka
+	}
+}
+
+irmionoth_sjalvolki_23 = {
+	name = "Ragnamar"
+	religion = "sjalvolki"
+	culture = "irmionoth"
+	father = irmionoth_sjalvolki_7
+	mother = ordikin_mothers_and_fathers_2
+	1253.11.24 = {
+		birth = yes
+	}
+
+	1273.1.1 = {
+		trait = arbitrary
+		trait = greedy
+		trait = gluttonous
+		trait = education_stewardship_2
+	}
+	1280.1.1 = {
+		religion = orispolj_rite
+	}
+	1288.2.22 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+irmionoth_sjalvolki_24 = {
+	name = "Withidau"
+	religion = "sjalvolki"
+	culture = "irmionoth"
+	father = irmionoth_sjalvolki_7
+	mother = ordikin_mothers_and_fathers_2
+	female = yes
+	1255.12.11 = {
+		birth = yes
+	}
+	1262.3.11 = {
+		death = { death_reason = death_ill}
+	}
+}
+
+irmionoth_sjalvolki_25 = {
+	name = "Odalchar"
+	religion = "sjalvolki"
+	culture = "irmionoth"
+	father = irmionoth_sjalvolki_7
+	mother = ordikin_mothers_and_fathers_2
+	1257.7.1 = {
+		birth = yes
+	}
+
+	1280.1.1 = {
+		religion = orispolj_rite
+	}
+	1295.3.5 = {
+		#culture = rohfulka
+	}
+}
+
+irmionoth_sjalvolki_26 = {
+	name = "Askimath" 
+	female = yes
+
+	religion = sjalvolki
+	culture = irmionoth
+
+	sexuality = heterosexual
+
+	1230.3.2 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1250.1.1 = {
+		trait = chaste
+		trait = shy
+		trait = patient
+		trait = education_learning_4
+	}
+
+	1280.1.1 = {
+		religion = orispolj_rite
+	}
+	1295.3.5 = {
+		#culture = rohfulka
+	}
+}
+
+
+irmionoth_sjalvolki_27 = {
+	name = "Irmindau" 
+	female = yes
+	father = daukeni_sjalvolki_46
+	mother = irmionoth_sjalvolki_26
+	religion = sjalvolki
+	culture = irmionoth
+
+	sexuality = heterosexual
+
+	1253.12.2 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1270.1.1 = {
+		trait = lustful
+		trait = gregarious
+		trait = impatient
+		trait = education_intrigue_4
+	}
+
+	1277.1.1 = {
+		add_matrilineal_spouse = irmionoth_sjalvolki_25
+	}
+
+	1280.1.1 = {
+		religion = orispolj_rite
+	}
+	1295.3.5 = {
+		#culture = rohfulka
+	}
+}
+
+
+irmionoth_sjalvolki_28 = {
+    name = "Boradova" 
+    female = yes
+    father = irmionoth_sjalvolki_7
+	mother = ordikin_mothers_and_fathers_2
+    religion = sjalvolki
+    culture = irmionoth
+
+    sexuality = heterosexual
+
+    trait = patient
+    trait = craven
+    trait = generous
+
+    1262.9.17 = {
+        birth = yes
+    }
+
+    1280.1.1 = {
+		religion = orispolj_rite
+	}
+	1295.3.5 = {
+		#culture = rohfulka
+	}
+
+    1331.9.20 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+irmionoth_sjalvolki_29 = {
+	name = "Eugisal"
+	religion = "sjalvolki"
+	culture = "irmionoth"
+
+	1240.2.29 = {
+		birth = yes
+		trait = clubfooted
+		trait = intellect_good_2
+	}
+	1260.1.1 = {
+		trait = greedy
+		trait = patient
+		trait = eccentric
+		trait = education_intrigue_4
+	}
+	1273.2.1 = {
+		death = { death_reason = death_execution killer = irmionoth_sjalvolki_30 }
+	}
+}
+irmionoth_sjalvolki_30 = {
+	name = "Radivoch"
+	religion = "sjalvolki"
+	culture = "irmionoth"
+	father = irmionoth_sjalvolki_18
+
+	1267.12.30 = {
+		birth = yes
+		trait = bastard
+	}
+	1287.1.1 = {
+		trait = callous
+		trait = ambitious
+		trait = wrathful
+		trait = education_martial_3
+	}
+	1290.1.1 = {
+		trait = one_eyed
+		trait = gh_historical_blademaster_3
+	}
+	1293.2.1 = {
+		trait = berserker
+		trait = disinherited
+		give_nickname = nick_sjal_hot_blood
+	}
+}
+
+
+irmionoth_sjalvolki_31 = {
+	name = "Irmnilth"
+	religion = sjalvolki
+	culture = irmionoth
+	female = yes
+	father = irmionoth_sjalvolki_18
+	mother = irmionoth_sjalvolki_34
+	dynasty = dyn_sjalvolki_43a
+	1257.1.16 = {
+		birth = yes
+		trait = physique_good_1
+	}
+
+	1265.1.16 = {
+		trait = stubborn
+		trait = humble
+		trait = gregarious
+		trait = education_diplomacy_3
+	}
+
+	1298.1.1 = {
+		#culture = rohfulka
+		religion = orispolj_rite
+	}
+}
+
+irmionoth_sjalvolki_32 = {
+	name = "Ochrilth"
+	religion = sjalvolki
+	culture = irmionoth
+	female = yes
+	father = irmionoth_sjalvolki_18
+	mother = irmionoth_sjalvolki_34
+	dynasty = dyn_sjalvolki_43a
+	1258.3.22 = {
+		birth = yes
+	}
+
+	1277.3.22 = {
+		trait = compassionate
+		trait = shy
+		trait = deceitful
+		trait = education_intrigue_2
+	}
+
+	1298.1.1 = {
+		#culture = rohfulka
+		religion = orispolj_rite
+	}
+}
+
+irmionoth_sjalvolki_33 = {
+	name = "Morilth"
+	religion = sjalvolki
+	culture = irmionoth
+	female = yes
+	father = irmionoth_sjalvolki_18
+	mother = irmionoth_sjalvolki_34
+	dynasty = dyn_sjalvolki_43a
+	1265.12.22 = {
+		birth = yes
+	}
+
+	1281.12.22 = {
+		trait = lazy
+		trait = content
+		trait = chaste
+		trait = education_diplomacy_1
+	}
+
+	1298.1.1 = {
+		#culture = rohfulka
+		religion = orispolj_rite
+	}
+}
+
+irmionoth_sjalvolki_34 = {
+	name = "Vjorhvala"
+	religion = sjalvolki
+	culture = fenvir
+	father = fenvir_sjalvolki_4
+	female = yes
+	1235.11.6 = {
+		birth = yes
+	}
+
+	1255.11.6 = {
+		trait = calm
+		trait = diligent
+		trait = humble
+		trait = education_diplomacy_4
+		trait = shrewd
+	}
+
+	1298.1.1 = {
+		#culture = rohfulka
+		religion = orispolj_rite
+	}
+}
+
+irmionoth_sjalvolki_35 = {
+	name = "Ramnilth"
+	religion = sjalvolki
+	culture = irmionoth
+	female = yes
+	father = irmionoth_sjalvolki_18
+	mother = irmionoth_sjalvolki_34
+	dynasty = dyn_sjalvolki_43a
+	1267.2.25 = {
+		birth = yes
+		trait = physique_good_2
+	}
+
+	1289.2.25 = {
+		trait = vengeful
+		trait = generous
+		trait = stubborn
+		trait = education_martial_3
+		trait = gh_historical_blademaster_2
+	}
+
+	1298.1.1 = {
+		#culture = rohfulka
+		religion = orispolj_rite
+	}
+}
+
+irmionoth_sjalvolki_36 = {
+	name = "Vordva"
+	religion = sjalvolki
+	culture = irmionoth
+	female = yes
+	father = irmionoth_sjalvolki_1
+	mother = irmionoth_sjalvolki_13
+	dynasty = dyn_sjalvolki_18
+	1239.7.1 = {
+		birth = yes
+	}
+	1298.1.1 = {
+		#culture = rohfulka
+		religion = orispolj_rite
+	}
+}

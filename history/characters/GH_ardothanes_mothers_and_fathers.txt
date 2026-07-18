@@ -1,0 +1,131 @@
+﻿ardothanes_mothers_and_fathers_1 = { # The Witch of the North
+    name = "Moruen"
+    religion = "mothers_and_fathers"
+    culture = "ardothanes"
+
+    sexuality = heterosexual
+    female = yes
+
+    martial = 9
+    diplomacy = 5
+    stewardship = 7
+    intrigue = 10
+    learning = 5
+    prowess = 6
+
+    1148.12.13 = {
+        birth = yes
+        trait = magic_good_8
+        give_nickname = nick_the_witch_of_the_north
+    }
+
+    1160.1.1 = {
+        trait = diligent
+        trait = paranoid
+        trait = arrogant
+    }
+
+    1164.12.13 = {
+        effect = { set_base_arcana = { AMOUNT = 8 } }
+        trait = education_intrigue_2
+        trait = gh_historical_school
+        trait = witch
+        effect = {
+            set_variable = { name = historical_magic_school value = flag:night_court }
+            set_variable = { name = historical_magic_school_min_spells value = 10 }
+        }
+    }
+
+    1247.3.15 = { # Ten Trees
+        death = {
+            death_reason = death_battle
+            killer = daukeni_sjalvolki_2
+        }
+    }
+}
+
+ardothanes_mothers_and_fathers_2 = {
+    name = "Carttuen"
+    religion = "mothers_and_fathers"
+    culture = "ardothanes"
+
+    sexuality = bisexual
+    female = yes
+
+    martial = 5
+    diplomacy = 6
+    stewardship = 7
+    intrigue = 3
+    learning = 6
+    prowess = 6
+
+    1226.9.11 = {
+        birth = yes
+        trait = magic_good_5
+    }
+
+    1238.1.1 = {
+        trait = zealous
+        trait = craven
+        trait = callous
+    }
+
+    1242.9.11 = {
+        effect = { set_base_arcana = { AMOUNT = 8 } }
+        trait = education_learning_2
+        trait = gh_historical_school
+        trait = witch
+        effect = {
+            set_variable = { name = historical_magic_school value = flag:night_court }
+            set_variable = { name = historical_magic_school_min_spells value = 6 }
+        }
+    }
+}
+
+ardothanes_mothers_and_fathers_3 = { # The Blighted Witch
+    name = "Ranuelle"
+    religion = "mothers_and_fathers"
+    culture = "ardothanes"
+
+    sexuality = asexual
+    female = yes
+    dna = blighted_witch
+
+    martial = 14
+    diplomacy = 17
+    stewardship = 15
+    intrigue = 13
+    learning = 16
+    prowess = 14
+
+    1.1.1 = {
+        birth = yes
+        trait = magic_good_13
+        trait = intellect_good_2
+        give_nickname = nick_the_blighted_witch
+    }
+
+    12.1.1 = {
+        trait = arrogant
+        trait = fickle
+        trait = arbitrary
+    }
+
+    16.1.1 = {
+        effect = { set_base_arcana = { AMOUNT = 20 } }
+        trait = education_arcana_4
+        trait = gh_historical_school
+        trait = witch
+        trait = lifestyle_herbalist
+        effect = {
+            set_variable = { name = historical_magic_school value = flag:night_court }
+            set_variable = { name = historical_magic_school_min_spells value = 20 }
+        }
+    }
+
+    1200.3.1 = {
+        death = {
+            death_reason = death_srbm_casting
+        }
+    }
+}

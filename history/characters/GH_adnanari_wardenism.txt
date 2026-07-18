@@ -1,0 +1,40 @@
+﻿adnanari_wardenism_1 = { # Jalil, Wardenite jurist that led the Faghira-Jalil revolt in the East, later took over the Exiles' Cities after the Wardenite victory
+    name = "Jalil"
+    religion = "wardenism"
+    culture = "adnanari"
+
+    dynasty = dyn_warden_7
+    sexuality = heterosexual
+    #dna = jalil # Doesnt exist?
+
+    martial = 7
+    diplomacy = 4
+    stewardship = 9
+    intrigue = 5
+    learning = 5
+    prowess = 2
+
+    1187.11.20 = {
+        birth = yes
+        trait = intellect_good_1
+    }
+
+    1199.1.1 = {
+        trait = ambitious
+        trait = gregarious
+        trait = just
+    }
+
+    1203.11.20 = {
+        effect = { set_base_arcana = { AMOUNT = 7 } }
+        trait = education_stewardship_4
+        trait = lifestyle_jurist
+        trait = administrator
+    }
+
+    1247.1.22 = {
+        death = {
+            death_reason = death_ill
+        }
+    }
+}

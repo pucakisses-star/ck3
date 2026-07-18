@@ -1,0 +1,393 @@
+﻿westernimperial_omitilos_aagiokrata_1 = { # Rhesus the Enlightened
+	name = "Rhesus"
+	dna = westernimperial_omitilos_aagiokrata_1
+	religion = "omitilos_aagiokrata"
+	culture = "westernimperial"
+	martial = 6
+	diplomacy = 9
+	intrigue = 9
+	stewardship = 7
+
+	trait = education_intrigue_4
+	trait = intellect_good_2
+	trait = ambitious
+	trait = deceitful
+	trait = arbitrary
+	trait = schemer
+	trait = magic_good_2
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_mena_02
+			custom_beards = male_beard_fp2_iberian_christian_03
+		}
+	}
+
+	1199.5.5 = {
+		birth = yes
+		effect = {
+			add_character_modifier = gh_sound_of_body
+		}
+	}
+
+	1231.4.16 = {
+		give_nickname = nick_the_enlightened_rhesus
+	}
+
+	1236.2.13 = {
+		effect = {
+			create_character_memory = { # Rhesus's Coup
+				type = launched_palace_coup
+
+				participants = {
+					couped_character = character:westernimperial_aversarinas_aagiokrata_250 # Lycus
+				}
+			}
+			scope:new_memory = {
+				save_scope_as = launched_palace_coup_memory
+				set_variable = {
+					name = landed_title
+					value = title:c_oraispol
+				}
+			}
+		}
+	}
+	1257.12.5 = {
+		death = { death_reason = death_violent_storm }
+	}
+}
+
+westernimperial_omitilos_aagiokrata_2 = { # Cois
+	name = "Cois"
+	dna = westernimperial_omitilos_aagiokrata_2
+	religion = "omitilos_aagiokrata"
+	culture = "westernimperial"
+	martial = 6
+	diplomacy = 9
+	intrigue = 9
+	stewardship = 7
+	dynasty = dyn_aversarian_9
+	trait = beauty_good_1
+	trait = gh_peasant_birth
+	trait = cynical
+	trait = brave
+	trait = shy
+	trait = magic_good_1
+	trait = education_intrigue_3
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_mena_03
+			custom_beards = male_beard_western_05
+		}
+	}
+
+	1236.11.11 = {
+		birth = yes
+	}
+
+	1243.3.15 = {
+		give_nickname = nick_chosen_of_the_purest
+	}
+}
+
+westernimperial_omitilos_aagiokrata_3 = { # Legon Ariston Silanos of Legio XX 'Conclave's Own', slain at Elysian Pass
+	name = "Ariston" 
+	dynasty = dyn_western_aversarian_5
+	religion = omitilos_aagiokrata
+	culture = westernimperial
+	disallow_random_traits = yes
+
+	father = westernimperial_aversarinas_aagiokrata_255
+	mother = westernimperial_aversarinas_aagiokrata_256
+
+	martial = 7
+	diplomacy = 3
+	intrigue = 2
+	stewardship = 5
+	learning = 12
+	prowess = 9
+
+	1219.12.15 = {
+		birth = yes
+	}
+
+	1231.1.1 = {
+		trait = zealous
+		trait = arrogant
+		trait = trusting
+	}
+
+	1235.12.15 = {
+		trait = education_martial_2
+		trait = holy_warrior
+	}
+
+	1243.9.6 ={
+		trait = gh_legon
+	}
+
+	1252.1.1 = {
+		death = {
+			death_reason = death_elysian_pass
+			killer = vrodkin_sjalvolki_2 # Herberd Cerylak
+		}
+	}
+}
+
+westernimperial_omitilos_aagiokrata_4 = {
+	name = "Ioannes"
+	religion = "omitilos_aagiokrata"
+	culture = "westernimperial"
+
+	1222.6.18 = {
+		birth = yes
+	}
+
+	1282.9.15 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+westernimperial_omitilos_aagiokrata_5 = {
+	name = "Icarion"
+	religion = "omitilos_aagiokrata"
+	culture = "westernimperial"
+	father = westernimperial_aversarinas_aagiokrata_255
+	mother = westernimperial_aversarinas_aagiokrata_256
+	dynasty = dyn_western_aversarian_5
+	trait = arrogant
+	trait = gregarious
+	trait = gluttonous
+	trait = education_stewardship_2
+	trait = magic_good_1
+
+	1210.6.18 = {
+		birth = yes
+        effect = {
+            dynasty = { add_dynasty_prestige_level = 2 }
+        }
+	}
+
+	1232.6.12 = {
+		add_spouse = westernimperial_aversarinas_aagiokrata_257
+		trait = gh_historical_reveler_2
+	}
+	1265.9.3 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+westernimperial_omitilos_aagiokrata_6 = {
+	name = "Leontios"
+	religion = "omitilos_aagiokrata"
+	culture = "westernimperial"
+
+	father = westernimperial_aversarinas_aagiokrata_516
+
+	1222.6.18 = {
+		birth = yes
+		trait = infertile
+	}
+	1298.1.27 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+westernimperial_omitilos_aagiokrata_7 = {
+	name = "Laurentios"
+	religion = "omitilos_aagiokrata"
+	culture = "westernimperial"
+
+	1213.6.18 = {
+		birth = yes
+	}
+	1258.3.2 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+westernimperial_omitilos_aagiokrata_8 = {
+	name = "Anastasios"
+	religion = "omitilos_aagiokrata"
+	culture = "westernimperial"
+
+	1232.6.18 = {
+		birth = yes
+	}
+}
+
+westernimperial_omitilos_aagiokrata_9 = {
+	name = "Helias"
+	religion = "omitilos_aagiokrata"
+	culture = "westernimperial"
+
+	1225.6.18 = {
+		birth = yes
+	}
+	1276.5.2 = {
+		death = { death_reason = death_drinking_passive }
+	}
+}
+
+westernimperial_omitilos_aagiokrata_10 = {
+	name = "Antiochos"
+	religion = "omitilos_aagiokrata"
+	culture = "westernimperial"
+
+	1233.6.18 = {
+		birth = yes
+	}
+	1296.3.7 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+westernimperial_omitilos_aagiokrata_11 = {
+	name = "Sergios"
+	religion = "omitilos_aagiokrata"
+	culture = "westernimperial"
+
+	1229.6.18 = {
+		birth = yes
+	}
+
+	1259.4.2 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+westernimperial_omitilos_aagiokrata_12 = {
+	name = "Likourgos"
+	dynasty = dyn_western_aversarian_8
+	father = westernimperial_aversarinas_aagiokrata_264
+	religion = "omitilos_aagiokrata"
+	culture = "westernimperial"
+
+	1189.6.18 = {
+		birth = yes
+	}
+
+	1221.1.1 = {
+		add_spouse = westernimperial_aversarinas_aagiokrata_263
+	}
+}
+
+westernimperial_omitilos_aagiokrata_13 = { # Child
+	name = "Leontia"
+	religion = "omitilos_aagiokrata"
+	culture = "westernimperial"
+	female = yes
+	father = westernimperial_omitilos_aagiokrata_5
+	mother = westernimperial_aversarinas_aagiokrata_257
+	dynasty = dyn_western_aversarian_5
+	trait = magic_good_2
+	trait = education_intrigue_3
+	trait = ambitious
+	trait = temperate
+	trait = vengeful
+
+	1234.6.18 = {
+		birth = yes
+	}
+
+	1271.7.10 = {
+		death = { death_reason = death_murder_known killer = daukeni_sjalvolki_76 }
+	}
+}
+
+westernimperial_omitilos_aagiokrata_14 = { # Child
+	name = "Phaenos"
+	religion = "omitilos_aagiokrata"
+	culture = "westernimperial"
+	father = westernimperial_omitilos_aagiokrata_5
+	mother = westernimperial_aversarinas_aagiokrata_257
+	dynasty = dyn_western_aversarian_5
+	trait = stubborn
+	trait = lazy
+	trait = brave
+	trait = education_diplomacy_3
+
+	1236.7.18 = {
+		birth = yes
+	}
+
+	1259.3.23 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+westernimperial_omitilos_aagiokrata_15 = { # Brother
+	name = "Ocytos"
+	religion = "omitilos_aagiokrata"
+	culture = "westernimperial"
+	father = westernimperial_aversarinas_aagiokrata_255
+	mother = westernimperial_aversarinas_aagiokrata_256
+	dynasty = dyn_western_aversarian_5
+	trait = brave
+	trait = wrathful
+	trait = cynical
+
+	1216.6.18 = {
+		birth = yes
+	}
+
+	1232.6.18 = {
+		trait = education_martial_3
+		trait = gh_historical_blademaster_3
+	}
+}
+
+westernimperial_omitilos_aagiokrata_16 = {
+	name = "Valerios"
+	religion = "omitilos_aagiokrata"
+	culture = "westernimperial"
+	father = westernimperial_aversarinas_aagiokrata_266
+
+	1215.6.18 = {
+		birth = yes
+	}
+}
+
+westernimperial_omitilos_aagiokrata_17 = {
+	name = "Georgios"
+	religion = "omitilos_aagiokrata"
+	culture = "westernimperial"
+	father = westernimperial_aversarinas_aagiokrata_266
+
+	1217.6.18 = {
+		birth = yes
+	}
+}
+
+westernimperial_omitilos_aagiokrata_18 = {
+	name = "Adrianos"
+	dynasty = dyn_western_aversarian_8
+	father = westernimperial_omitilos_aagiokrata_12
+	mother = westernimperial_aversarinas_aagiokrata_263
+	religion = "omitilos_aagiokrata"
+	culture = "westernimperial"
+
+	1224.6.18 = {
+		birth = yes
+	}
+}
+
+westernimperial_omitilos_aagiokrata_19 = {
+	name = "Adrianos"
+	religion = "omitilos_aagiokrata"
+	culture = westernimperial
+	mother = westernimperial_omitilos_aagiokrata_13
+	dynasty = dyn_western_aversarian_5
+	trait = magic_good_1
+
+	1262.10.9 = {
+		birth = yes
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}

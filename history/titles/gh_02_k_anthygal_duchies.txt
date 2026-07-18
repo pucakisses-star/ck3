@@ -1,0 +1,73 @@
+d_bodgiv = {
+	1099.5.29 = {
+		liege = k_governorate_eastriver
+		holder = easternimperial_aironoian_aagiokrata_82
+		government = feudal_government
+	}
+	1129.8.25 = {
+		liege = k_governorate_eastriver
+		holder = easternimperial_aironoian_aagiokrata_46
+		government = feudal_government
+	}
+	1162.2.3 = {
+		liege = k_governorate_eastriver
+		holder = easternimperial_aironoian_aagiokrata_41
+		government = feudal_government
+	}
+	1174.6.15 = {
+		liege = k_dartar
+		holder = kuridorig_iek_otached_5
+		government = nomad_government
+	}
+	1199.11.23 = {
+		liege = k_dartar
+		holder = kuridorig_iek_otached_7
+		government = nomad_government
+	}
+	1200.8.1 = {
+		liege = 0
+	}
+	1212.7.27 = {
+		liege = 0
+		holder = easternimperial_aeschraes_aagiokrata_1
+		government = feudal_government
+	}
+	1228.1.13 = {
+		liege = 0
+		holder = kuridorig_iek_otached_3
+		government = nomad_government
+	}
+	1235.3.30 = {
+		liege = 0
+		holder = kuridorig_iek_otached_8
+		government = nomad_government
+	}
+}
+d_bagorae = {
+	1099.5.29 = {
+		liege = k_governorate_eastriver
+		holder = easternimperial_aironoian_aagiokrata_82
+		government = feudal_government
+	}
+	1129.8.25 = {
+		liege = k_governorate_eastriver
+		holder = easternimperial_aironoian_aagiokrata_46
+		government = feudal_government
+	}
+	1162.2.3 = {
+		liege = k_governorate_eastriver
+		holder = easternimperial_aironoian_aagiokrata_45
+	}
+	1202.12.17 = {
+		liege = 0
+		holder = easternimperial_aironoian_aagiokrata_47
+	}
+	1241.3.16 = {
+		liege = 0
+		holder = easternimperial_aironoian_aagiokrata_89
+	}
+	1271.1.1 = {
+		holder = theugombrians_cnevobarthane_13
+		liege = 0
+	}
+}

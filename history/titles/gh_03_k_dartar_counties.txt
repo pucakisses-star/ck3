@@ -1,0 +1,223 @@
+c_omnogayn = {
+	1125.5.8 = {
+		holder = kuridorig_iek_otached_6
+		government = nomad_government
+	}
+	1169.6.9 = {
+		holder = kuridorig_iek_otached_2
+		government = nomad_government
+	}
+	1194.6.14 = {
+		holder = kuridorig_iek_otached_1
+		government = nomad_government
+	}
+	1200.2.10 = {
+		holder = kuridorig_iek_otached_3
+		government = nomad_government
+	}
+	1200.8.1 = {
+		holder = kuridorig_cumani_5
+		government = nomad_government
+	}
+	1217.6.16 = {
+		liege = k_dartar
+		holder = kuridorig_cumani_2
+		government = nomad_government
+		change_development_level = 4
+	}
+}
+c_dornogiva = {
+	1132.5.24 = {
+		liege = 0
+		holder = kuridorig_cumani_4
+		government = nomad_government
+	}
+	1174.6.15 = {
+		liege = k_dartar
+		holder = kuridorig_cumani_3
+		government = nomad_government
+	}
+	1194.6.14 = {
+		liege = k_dartar
+		holder = kuridorig_cumani_1
+		government = nomad_government
+	}
+	1200.2.26 = {
+		liege = k_dartar
+		holder = kuridorig_cumani_5
+		government = nomad_government
+	}
+	1217.6.16 = {
+		liege = k_dartar
+		holder = kuridorig_cumani_2
+		government = nomad_government
+		change_development_level = 4
+	}
+}
+c_murkher = {
+	1091.4.24 = {
+		liege = 0
+		holder = easternimperial_aironoian_aagiokrata_57
+	}
+	1149.2.13 = {
+		liege = 0
+		holder = easternimperial_aironoian_aagiokrata_9
+	}
+	1168.3.14 = {
+		liege = 0
+		holder = easternimperial_aironoian_aagiokrata_8
+	}
+	1201.3.31 = {
+		liege = 0
+		holder = easternimperial_aironoian_aagiokrata_2
+		change_development_level = 7
+	}
+}
+c_thimat = {
+	1175.2.20 = {
+		liege = d_saigoor
+		holder = easternimperial_aironoian_aagiokrata_22
+	}
+	1199.11.18 = {
+		holder = easternimperial_aironoian_aagiokrata_23
+	}
+	1232.4.17 = {
+		holder = easternimperial_aironoian_aagiokrata_24
+		change_development_level = 7
+	}
+}
+c_choirgai = {
+	1091.4.24 = {
+		liege = 0
+		holder = easternimperial_aironoian_aagiokrata_57
+	}
+	1149.2.13 = {
+		liege = 0
+		holder = easternimperial_aironoian_aagiokrata_9
+	}
+	1168.3.14 = {
+		liege = 0
+		holder = easternimperial_aironoian_aagiokrata_8
+	}
+	1201.3.31 = {
+		liege = 0
+		holder = easternimperial_aironoian_aagiokrata_2
+		change_development_level = 6
+	}
+}
+c_senjat = {
+	1132.5.24 = {
+		liege = 0
+		holder = kuridorig_cumani_4
+		government = nomad_government
+	}
+	1174.6.15 = {
+		liege = k_dartar
+		holder = kuridorig_cumani_3
+		government = nomad_government
+	}
+	1194.6.14 = {
+		liege = k_dartar
+		holder = kuridorig_cumani_1
+		government = nomad_government
+	}
+	1200.2.26 = {
+		liege = k_dartar
+		holder = kuridorig_cumani_5
+		government = nomad_government
+	}
+	1217.6.16 = {
+		liege = k_dartar
+		holder = kuridorig_cumani_2
+		government = nomad_government
+		change_development_level = 4
+	}
+}
+c_mohoo = {
+	1154.5.16 = {
+		liege = 0
+		holder = kuridorig_cumani_8
+		government = nomad_government
+	}
+	1174.6.15 = {
+		liege = k_dartar
+	}
+	1210.8.19 = {
+		liege = k_dartar
+		holder = kuridorig_cumani_9
+		government = nomad_government
+		change_development_level = 4
+	}
+}
+c_mororee = {
+	1154.5.16 = {
+		liege = 0
+		holder = kuridorig_cumani_8
+		government = nomad_government
+	}
+	1174.6.15 = {
+		liege = k_dartar
+	}
+	1210.8.19 = {
+		liege = k_dartar
+		holder = kuridorig_cumani_9
+		government = nomad_government
+		change_development_level = 4
+	}
+}
+c_arlybal = {
+	1174.6.15 = {
+		holder = kuridorig_iek_otached_2
+		government = nomad_government
+	}
+	1194.6.14 = {
+		holder = kuridorig_iek_otached_1
+		government = nomad_government
+	}
+	1200.2.10 = {
+		liege = k_dartar
+		holder = kuridorig_iek_otached_3
+		government = nomad_government
+	}
+	1200.8.1 = {
+		liege = 0
+	}
+	1235.3.30 = {
+		liege = 0
+		holder = kuridorig_iek_otached_8
+		government = nomad_government
+		change_development_level = 3
+	}
+	1280.1.1 = {
+		holder = izikalek_nalmavast_24
+		liege = d_vaycovolki_kymbela
+	}
+}
+c_tseteretii = {
+	1174.6.15 = {
+		holder = kuridorig_iek_otached_2
+		government = nomad_government
+	}
+	1194.6.14 = {
+		holder = kuridorig_iek_otached_1
+		government = nomad_government
+	}
+	1200.2.10 = {
+		liege = k_dartar
+		holder = kuridorig_iek_otached_3
+		government = nomad_government
+	}
+	1200.8.1 = {
+		liege = 0
+	}
+	1235.3.30 = {
+		liege = 0
+		holder = kuridorig_iek_otached_8
+		government = nomad_government
+		change_development_level = 3
+	}
+	1280.1.1 = {
+		holder = izikalek_nalmavast_25
+		liege = d_vaycovolki_kymbela
+	}
+}

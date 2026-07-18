@@ -1,0 +1,72 @@
+﻿# Hathakar of Damianethos, leader of the Flame Eternal sect on the archipelago
+# Recently wrestled control of the only remaining Redrunner outpost on the archipelago, and has now set his sights on the islands to his west
+redlander_flame_eternal_1 = {
+	name = "Hathakar"
+	religion = "redland_cults"
+	culture = "redlander"
+	sexuality = heterosexual
+	
+	diplomacy = 1
+	intrigue = 5
+	learning = 4
+	martial = 9
+	stewardship = 1
+
+	1225.3.15 = {
+		birth = yes
+	}
+	1237.1.1 = {
+		trait = sadistic
+		trait = zealous
+		trait = diligent
+	}
+	1241.3.15 = {
+		trait = education_martial_3		
+		trait = gh_blackspawn_3
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:absolution_of_the_void }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			add_character_flag = dont_generate_family
+		}
+	}
+}
+
+redlander_flame_eternal_2 = {
+	name = "Hazen"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1224.12.22 = {
+		birth = yes
+	}
+}
+
+redlander_flame_eternal_3 = {
+	name = "Armens"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1220.11.18 = {
+		birth = yes
+	}
+}
+
+redlander_flame_eternal_4 = {
+	name = "Shu"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1236.9.3 = {
+		birth = yes
+	}
+}
+
+redlander_flame_eternal_5 = {
+	name = "Cxuira"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1233.3.12 = {
+		birth = yes
+	}
+}

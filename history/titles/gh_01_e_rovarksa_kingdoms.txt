@@ -1,0 +1,34 @@
+k_peytrelle = {
+	1200.1.1 = {
+		change_development_level = 8
+	}
+	1200.2.3 = {
+		holder = vanaarik_yakasak_8
+		government = pirate_government
+	}
+	1217.4.1 = {
+		holder = 0
+	}
+	1221.4.2 = {
+		holder = vanaarik_yakasak_4
+		government = feudal_government
+	}
+	1242.7.6 = {
+		holder = vanaarik_yakasak_5
+		government = feudal_government
+	}
+	1272.5.8 = {
+		holder = vanaarik_yakasak_12
+	}
+	1292.5.28 = {
+		holder = vanaarik_yakasak_3
+	}
+	1294.11.26 = {
+		holder = vanaarik_yakasak_19
+	}
+}
+k_akkescha = {
+	1200.1.1 = {
+		change_development_level = 8
+	}
+}

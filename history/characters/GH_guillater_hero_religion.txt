@@ -1,0 +1,255 @@
+﻿guillater_hero_religion_1 = {
+	name = "Valentero"
+	religion = hero_religion
+	culture = guillater
+	1215.9.8 = {
+		birth = yes
+	}
+	1227.9.8 = {
+		trait = arrogant
+		trait = diligent
+		trait = callous
+	}
+	1231.9.8 = {
+		trait = education_diplomacy_4
+	}
+}
+
+guillater_hero_religion_2 = {
+	name = "Manuele"
+	religion = shattered_stars_cult
+	culture = guillater
+	trait = beauty_bad_1
+	1232.2.14 = {
+		birth = yes
+	}
+	1244.2.14 = {
+		trait = compassionate
+		trait = chaste
+		trait = calm
+	}
+	1248.2.14 = {
+		trait = education_diplomacy_1
+	}
+}
+
+guillater_hero_religion_3 = {
+	name = "Gedalbert"
+	religion = hero_religion
+	culture = guillater
+	1234.9.20 = {
+		birth = yes
+	}
+	1246.9.20 = {
+		trait = humble
+		trait = content
+		trait = chaste
+	}
+	1250.9.20 = {
+		trait = education_stewardship_2
+	}
+}
+
+guillater_hero_religion_4 = {
+	name = "Ragnald"
+	religion = hero_religion
+	culture = guillater
+	1197.8.16 = {
+		birth = yes
+	}
+}
+
+guillater_hero_religion_5 = {
+	name = "Autgari"
+	religion = hero_religion
+	culture = guillater
+	1216.11.12 = {
+		birth = yes
+		trait = magic_good_2
+	}
+	1228.11.12 = {
+		trait = gregarious
+		trait = temperate
+		trait = callous
+	}
+	1232.11.12 = {
+		trait = education_learning_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+}
+
+guillater_hero_religion_6 = {
+	name = "Zenobia"
+	female = yes
+	religion = hero_religion
+	culture = guillater
+	1226.8.4 = {
+		birth = yes
+	}
+}
+
+guillater_hero_religion_7 = {
+	name = "Niketas"
+	female = yes
+	religion = hero_religion
+	culture = guillater
+	1208.4.10 = {
+		birth = yes
+	}
+	1220.4.10 = {
+		trait = just
+		trait = arrogant
+		trait = gregarious
+	}
+	1224.4.10 = {
+		trait = education_diplomacy_2
+	}
+}
+
+guillater_hero_religion_8 = {
+	name = "Antipatra"
+	female = yes
+	religion = hero_religion
+	culture = guillater
+	1218.1.10 = {
+		birth = yes
+	}
+}
+
+guillater_hero_religion_9 = {
+	name = "Martino"
+	religion = hero_religion
+	culture = guillater
+	1197.10.27 = {
+		birth = yes
+	}
+}
+
+guillater_hero_religion_10 = {
+	name = "Nastes"
+	religion = hero_religion
+	culture = guillater
+	1231.6.27 = {
+		birth = yes
+	}
+	1243.6.27 = {
+		trait = ambitious
+		trait = greedy
+		trait = wrathful
+	}
+	1247.6.27 = {
+		trait = education_stewardship_3
+	}
+}
+
+guillater_hero_religion_11 = {
+	name = "Carla"
+	female = yes
+	religion = hero_religion
+	culture = guillater
+	trait = intellect_good_2
+	1221.2.3 = {
+		birth = yes
+	}
+	1233.2.3 = {
+		trait = diligent
+		trait = greedy
+		trait = stubborn
+	}
+	1237.2.3 = {
+		trait = education_stewardship_3
+	}
+}
+
+guillater_hero_religion_12 = {
+    name = "Alesint" 
+    female = yes
+
+    religion = hero_religion
+    culture = guillater
+
+    sexuality = heterosexual
+
+    trait = calm
+    trait = temperate
+    trait = patient
+
+    diplomacy = 6
+    martial = 4
+    stewardship = 5
+    intrigue = 5
+    learning = 8
+    prowess = 3
+
+    trait = education_learning_3
+
+    1175.11.26 = {
+        birth = yes
+    }
+
+    1243.1.25 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+guillater_hero_religion_13 = {
+    name = "Harilde" 
+    female = yes
+    dynasty = dyn_guillate_1
+    religion = hero_religion
+    culture = guillater
+
+    father = guillater_lifepath_3
+    mother = guillater_hero_religion_12
+
+    sexuality = heterosexual
+
+    trait = diligent
+    trait = stubborn
+    trait = trusting
+
+    trait = education_stewardship_2
+    trait = way_of_harvests_follower
+
+    1205.9.2 = {
+        birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 3 }
+		}
+    }
+
+    1230.3.10 = {
+        add_matrilineal_spouse = guillater_hero_religion_14
+    }
+
+}
+
+guillater_hero_religion_14 = {
+    name = "Alderic" 
+
+    religion = hero_religion
+    culture = guillater
+
+    sexuality = heterosexual
+
+    trait = generous
+    trait = wrathful
+    trait = lazy
+
+    diplomacy = 7
+    martial = 8
+    stewardship = 6
+    intrigue = 4
+    learning = 8
+    prowess = 5
+
+    trait = education_martial_2
+
+    1208.3.28 = {
+        birth = yes
+    }
+}

@@ -1,0 +1,43 @@
+d_aironoi_mountain_2 = {
+	1176.5.4 = {
+		holder = amaghean_amaghean_aagiokrata_9
+	}
+	1200.3.1 = {
+		holder = amaghean_amaghean_aagiokrata_8
+	}
+	1250.1.1 = {
+		holder = 0
+	}
+}
+d_ksageri = {
+	1197.4.12 = {
+		liege = k_coluehis
+		holder = amaghean_amaghean_aagiokrata_23
+	}
+	1242.11.3 = {
+		holder = amaghean_amaghean_aagiokrata_5
+	}
+}
+d_tshkigri = {
+	1161.11.4 = {
+		liege = k_svatavego
+		holder = amaghean_amaghean_aagiokrata_26
+	}
+	1226.2.4 = {
+		liege = k_svatavego
+		holder = amaghean_amaghean_aagiokrata_41
+	}
+	1249.6.7 = {
+		liege = 0
+		holder = amaghean_amaghean_aagiokrata_3
+	}
+}
+d_athoduta = {
+	1194.4.20 = {
+		liege = k_coluehis
+		holder = amaghean_amaghean_aagiokrata_25
+	}
+	1249.4.17 = {
+		holder = 0
+	}
+}

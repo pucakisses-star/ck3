@@ -1,0 +1,8 @@
+k_angryravine = {
+	590.5.16 = {
+		holder = banwagul_dahala_19
+	}
+	595.8.14 = {
+		holder = 0
+	}
+}

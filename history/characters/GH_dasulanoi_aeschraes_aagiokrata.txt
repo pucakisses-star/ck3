@@ -1,0 +1,26 @@
+﻿dasulanoi_aeschraes_aagiokrata_1 = {
+    name = "Titocuna"
+    female = yes
+    religion = aeschraes_aagiokrata
+    culture = dasulanoi
+    
+    1207.11.23 = {
+        birth = yes
+        trait = magic_good_2
+    }
+    1219.11.23 = {
+        trait = arrogant
+        trait = wrathful
+        trait = zealous
+    }
+    1223.11.23 = {
+        trait = education_intrigue_2
+        trait = gh_historical_school
+        effect = {
+            set_variable = { name = historical_magic_school value = flag:living_magic }
+            set_variable = { name = historical_magic_school_min_spells value = 6 }
+        }
+        add_pressed_claim = title:c_kosherix
+        set_relation_rival = character:dasulanoi_aversarian_axiaotheaism_1
+    }
+}

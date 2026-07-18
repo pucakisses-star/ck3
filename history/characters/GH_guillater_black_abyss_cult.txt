@@ -1,0 +1,17 @@
+﻿guillater_black_abyss_cult_1 = {
+	name = "Theoderada"
+	female = yes
+	religion = black_abyss_cult
+	culture = guillater
+	1214.8.27 = {
+		birth = yes
+	}
+	1226.8.27 = {
+		trait = paranoid
+		trait = just
+		trait = impatient
+	}
+	1230.8.27 = {
+		trait = education_stewardship_2
+	}
+}

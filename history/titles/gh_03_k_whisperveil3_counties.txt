@@ -1,0 +1,45 @@
+c_whisperveil45 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_whisperveil43 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_whisperveil39 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_whisperveil38 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_whipserveil36 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_whisperveil32 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_whisperveil33 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_whisperveil35 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_whisperveil42 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}

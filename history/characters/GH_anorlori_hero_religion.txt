@@ -1,0 +1,26 @@
+﻿anorlori_hero_religion_1 = {
+	name = "Severo"
+	religion = hero_religion
+	culture = anorlori
+	1219.4.23 = {
+		birth = yes
+	}
+}
+
+anorlori_hero_religion_2 = {
+	name = "Sante"
+	religion = hero_religion
+	culture = anorlori
+	1225.9.12 = {
+		birth = yes
+	}
+}
+
+anorlori_hero_religion_3 = {
+	name = "Bassiano"
+	religion = hero_religion
+	culture = anorlori
+	1212.7.3 = {
+		birth = yes
+	}
+}

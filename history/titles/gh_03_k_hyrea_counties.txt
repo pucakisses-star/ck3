@@ -1,0 +1,72 @@
+c_calion = {
+	1234.1.1 = {
+		liege = "k_kalliados"
+		holder = jaravad_cumani_7
+		government = nomad_government
+		change_development_level = 6
+	}
+}
+c_pycanos = {
+	1230.1.1 = {
+		holder = easternislander_aversarinas_aagiokrata_12
+		change_development_level = 7
+	}
+}
+c_chysos = {
+	1138.3.5 = {
+		holder = easternimperial_blood_veneration_1
+	}
+	1230.1.1 = {
+		holder = musar_cumani_2
+		government = nomad_government
+		change_development_level = 13
+	}
+}
+c_spartephyrian = {
+	1230.1.1 = {
+		holder = musar_cumani_1
+		government = nomad_government
+		change_development_level = 8
+	}
+}
+c_nullnos = {
+	1230.1.1 = {
+		holder = musar_cumani_1
+		government = nomad_government
+	}
+}
+c_hermeidonia = {
+	1230.1.1 = {
+		holder = musar_cumani_1
+		government = nomad_government
+	}
+}
+c_kosios = {
+	1234.1.1 = {
+		liege = "k_kalliados"
+		holder = jaravad_cumani_7
+		government = nomad_government
+	}
+}
+c_oulogos = {
+	1230.1.1 = {
+		holder = sycharcegs_kikarsagi_aagiokrata_2
+		government = nomad_government
+	}
+	1230.1.1 = { change_development_level = 14}
+}
+c_elephos = { 
+	1230.1.1 = {
+		holder = sycharcegs_kikarsagi_aagiokrata_3
+		government = nomad_government
+		liege = 0
+	}
+	1230.1.1 = { change_development_level = 14}
+}
+c_westkatraddia_60 = {
+	1234.1.1 = {
+		liege = "k_kalliados"
+		holder = jaravad_cumani_7
+		government = nomad_government
+	}
+}

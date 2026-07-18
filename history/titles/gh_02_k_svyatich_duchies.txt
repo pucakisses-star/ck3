@@ -1,0 +1,44 @@
+d_agaricea = {
+	1230.1.1 = {
+		change_development_level = 4
+	}
+	1250.1.1 = {
+		holder = 0
+	}
+}
+
+d_stormhook = {
+	1230.1.1 = {
+		change_development_level = 4
+	}
+	1232.5.1 = {
+		holder = northernimperial_aversarinas_aagiokrata_49
+		liege = 0
+	}
+	1251.11.19 = {
+		liege = "e_migrant_coalition"
+		holder = kardwens_kardawai_2
+		government = tribal_government
+	}
+}
+
+d_aldergreen = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	66.11.14 = {
+		holder = 0
+	}
+	1230.1.1 = {
+		change_development_level = 3
+	}
+	1232.5.1 = {
+		holder = northernimperial_aversarinas_aagiokrata_49
+		liege = 0
+	}
+	1251.11.19 = {
+		liege = "e_migrant_coalition"
+		holder = kardwens_kardawai_1
+		government = tribal_government
+	}
+}

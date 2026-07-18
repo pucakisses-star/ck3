@@ -1,0 +1,21 @@
+#d_bverenu = { 
+#	1230.1.1 = {
+#		holder = auzangeb_ruidari_6
+#		liege = e_ayyar
+#	}
+#	1230.1.1 = { change_development_level = 10 }
+#}
+#d_bharemhev = { 
+#	1230.1.1 = {
+#		holder = auzangeb_ruidari_7
+#		liege = e_ayyar
+#	}
+#	1230.1.1 = { change_development_level = 10 }
+#}
+d_haradad = { 
+	1230.1.1 = {
+		holder = auzangeb_ruidari_17
+		liege = e_ayyar
+	}
+	1230.1.1 = { change_development_level = 12 }
+}

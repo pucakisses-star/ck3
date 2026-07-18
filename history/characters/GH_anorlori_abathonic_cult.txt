@@ -1,0 +1,9 @@
+﻿anorlori_abathonic_cult_1 = {
+	name = "Alcide"
+	religion = abathonic_cult
+	culture = anorlori
+	
+	1234.6.11 = {
+		birth = yes
+	}
+}

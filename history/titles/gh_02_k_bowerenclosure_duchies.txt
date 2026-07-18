@@ -1,0 +1,60 @@
+d_cliffplain = {
+	1167.12.7 = {
+		holder = lakoeng_fourteen_heavenly_methods_4
+		government = feudal_government
+	}
+	1202.6.2 = {
+		holder = lakoeng_fourteen_heavenly_methods_5
+		government = feudal_government
+	}
+	1237.5.6 = {
+		liege = k_lay_redaka_banwagul
+	}
+	1240.3.8 = {
+		holder = lakoeng_fourteen_heavenly_methods_6
+		government = feudal_government
+	}
+	1242.12.21 = {
+		liege = 0
+	}
+	1246.12.11 = {
+		holder = dathanites_labaqiri_10
+		government = pirate_government
+	}
+	1247.7.2 = {
+		holder = dathanites_labaqiri_1
+	}
+}
+
+d_shortfall = {
+	1167.12.7 = {
+		holder = lakoeng_fourteen_heavenly_methods_4
+		government = feudal_government
+	}
+	1202.6.2 = {
+		holder = lakoeng_fourteen_heavenly_methods_5
+		government = feudal_government
+	}
+	1237.5.6 = {
+		liege = k_lay_redaka_banwagul
+	}
+	1240.3.8 = {
+		holder = lakoeng_fourteen_heavenly_methods_6
+		government = feudal_government
+	}
+	1242.12.21 = {
+		liege = 0
+	}
+	1246.12.11 = {
+		holder = lakoeng_fourteen_heavenly_methods_7
+		government = feudal_government
+	}
+}
+
+d_waterfallland = {
+	1250.1.1 = {
+		holder = banwagul_fourteen_heavenly_methods_8
+		government = feudal_government
+		liege = 0
+	}
+}

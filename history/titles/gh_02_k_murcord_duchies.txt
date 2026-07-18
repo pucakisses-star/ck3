@@ -1,0 +1,20 @@
+
+d_majat = {
+	1183.7.3 = {
+		liege = 0
+		holder = khorinot_cumani_23
+		government = nomad_government
+	}
+	1200.2.27 = {
+		liege = 0
+		holder = khorinot_cumani_24
+	}
+	1228.9.1 = {
+		liege = 0
+		holder = khorinot_cumani_27
+	}
+	1231.10.27 = {
+		liege = 0
+		holder = khorinot_cumani_25
+	}
+}

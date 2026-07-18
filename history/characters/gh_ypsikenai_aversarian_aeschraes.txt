@@ -1,0 +1,82 @@
+﻿ypsikenai_aeschraes_aagiokrata_1 = { # Emarios 'The Sea-Sword', Aeschraeist warlord who invades Krehejad. Young, dashing, and charismatic. Native to Krehejad
+	name = "Emarios"
+	religion = aeschraes_aagiokrata
+	culture = ypsikenai
+	sexuality = heterosexual
+
+	dynasty = dyn_aversarian_87
+
+	diplomacy = 8
+	martial = 5
+	stewardship = 6
+	intrigue = 5
+	learning = 6
+
+	1192.9.17 = {
+		birth = yes
+		trait = magic_good_3
+        effect = {
+            dynasty = { add_dynasty_prestige_level = 1 }
+        }
+	}
+	1204.9.17 = {
+		trait = gregarious
+		trait = just
+		trait = compassionate
+	}
+	1208.9.17 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+		trait = education_diplomacy_4
+	}
+	1216.7.30 = {
+		give_nickname = nick_the_sea_sword
+	}
+	1227.6.15 = { # F in the chat for his dreams. and his wife.
+		trait = gh_widow
+	}
+	1266.2.17 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+ypsikenai_aeschraes_aagiokrata_2 = { # Member of Alevanalir Pact, joined for protection against the slaves, is on the mainland. Later steps down to Sea-Sword
+	name = "Pelinos"
+	religion = aeschraes_aagiokrata
+	culture = ypsikenai
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 5
+	stewardship = 6
+	intrigue = 4
+	learning = 5
+	
+	1170.4.2 = {
+		birth = yes
+		trait = magic_good_2
+	}
+	1182.4.2 = {
+		trait = wrathful
+		trait = craven
+		trait = chaste
+	}
+	1186.4.2 = {
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+	1235.7.30 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}

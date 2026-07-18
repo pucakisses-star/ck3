@@ -1,0 +1,115 @@
+c_malawka = {
+	1171.2.17 = {
+		holder = salisians_lifepath_20
+	}
+
+	1227.10.19 = {
+		holder = salisians_lifepath_22
+	}
+
+	1251.10.13 = {
+		holder = voluntic_partic_26
+		liege = d_neufrisa
+	}
+}
+c_preberec = {
+	1.1.2 = {
+		holder = unsorted_24
+	}
+	60.1.1 = {
+		holder = wasteland
+	}
+	1249.1.1 = {
+		holder = voluntic_partic_27
+		liege = k_calagonii
+	}
+}
+c_durlezia = {
+	1249.1.1 = {
+		holder = voluntic_partic_15
+		liege = d_tinec
+	}
+}
+c_budalis = {
+	1251.10.13 = {
+		holder = sarridians_aversarinas_aagiokrata_3
+		liege = k_calagonii
+	}
+}
+c_otodauti = {
+	1230.7.12 = {
+		holder = sarridians_aversarinas_aagiokrata_2
+		liege = e_gurdurbok
+	}
+	1247.9.3 = {
+		holder = apokiakas_aversarinas_aagiokratia_23
+	}
+	1251.10.11 = {
+		holder = daukeni_sjalvolki_37
+		liege = k_epavarion
+	}
+}
+c_east_lichdoms_20a = {
+	1171.2.17 = {
+		holder = salisians_lifepath_20
+	}
+
+	1227.10.19 = {
+		holder = salisians_lifepath_22
+	}
+
+	1251.10.13 = {
+		holder = voluntic_partic_25
+		liege = k_calagonii
+	}
+}
+c_dethiclos = {
+	1211.11.11 = {
+		holder = northernimperial_aversarinas_aagiokrata_111
+	}
+	1230.7.12 = { # Gurdurbrok's Rebellion
+		holder = sarridians_aversarinas_aagiokrata_2
+		liege = e_gurdurbok
+	}
+	1247.9.3 = {
+		holder = apokiakas_aversarinas_aagiokratia_23
+	}
+}
+
+c_pldov = {
+	1211.11.11 = {
+		holder = northernimperial_aversarinas_aagiokrata_111
+	}
+	1230.7.12 = { # Gurdurbrok's Rebellion
+		holder = sarridians_aversarinas_aagiokrata_2
+		liege = e_gurdurbok
+	}
+	1247.9.3 = {
+		holder = northernimperial_aversarinas_aagiokrata_110
+	}
+}
+c_kalomend = {
+	1247.9.3 = {
+		holder = apokiakas_aversarinas_aagiokratia_23
+	}
+	1253.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_26
+		liege = k_epavarion
+	}
+}
+
+b_vyerhichyn = {
+	1247.9.3 = {
+		holder = apokiakas_aversarinas_aagiokratia_38
+	}
+}
+
+c_argina = {
+	1247.9.3 = {
+		holder = apokiakas_aversarinas_aagiokratia_23
+	}
+	1253.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_24
+		liege = k_epavarion
+	}
+}

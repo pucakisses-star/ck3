@@ -1,0 +1,130 @@
+﻿# Child of the former ambasaddor from the far east to Aversaria and the last thing holding the diaspora together. P worried about his homeland probably being devoured by Fog.
+kathunian_fourteen_heavenly_methods_1 = {
+	name = "Huaizhen"
+	dynasty = dyn_kathunian_fourteen_heavenly_methods_1
+	dna = kathunian_fourteen_heavenly_methods_1
+	religion = "fourteen_heavenly_methods"
+	culture = "kathunian"
+	father = kathunian_fourteen_heavenly_methods_2
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_indian_03
+			custom_beards = epe_male_beard_fp1_02  
+		}
+	}
+
+	1189.2.12 = {
+		birth = yes
+	}
+}
+
+# Former ambassador
+kathunian_fourteen_heavenly_methods_2 = {
+	name = "Xi"
+	dynasty = dyn_kathunian_fourteen_heavenly_methods_1
+	religion = "fourteen_heavenly_methods"
+	culture = "kathunian"
+
+	1163.8.19 = {
+		birth = yes
+	}
+	
+	1240.9.1 = {
+		death = yes
+	}
+}
+
+kathunian_fourteen_heavenly_methods_3 = { # Kashiryan Kathuni
+	name = "Xuanwei"
+	dynasty = dyn_kathunian_fourteen_heavenly_methods_2
+	religion = "fourteen_heavenly_methods"
+	culture = "kathunian"
+	1211.8.8 = {
+		birth = yes
+	}
+}
+
+kathunian_fourteen_heavenly_methods_4 = {
+	name = "Fa_Zhi"
+	religion = "fourteen_heavenly_methods"
+	culture = "kathunian"
+	dynasty = dyn_kathunian_fourteen_heavenly_methods_3
+
+	martial = 6
+	diplomacy = 7
+	intrigue = 9
+	stewardship = 5
+	learning = 6
+	prowess = 3
+
+	1003.9.28 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1015.1.1 = {
+		trait = brave
+		trait = gregarious
+		trait = ambitious
+	}
+
+	1019.9.28 = {
+		trait = education_martial_3
+		trait = shrewd
+		trait = gh_historical_blademaster_3
+	}
+
+	1025.11.12 = {
+		trait = adventurer
+	}
+
+	1039.2.19 = {
+		death = {
+			death_reason = death_dungeon #Verdigris Affair
+		}	
+	}
+}
+
+kathunian_fourteen_heavenly_methods_5 = { # Ma Sou-Wel, grandson of Ragambald Manswel, was appointed Dáshī or Officer of Kaeriram in the Southern Protectorate
+    name = "Sou_Wel"
+    religion = "fourteen_heavenly_methods"
+    culture = "kathunian"
+
+    dynasty = dyn_kathunian_fourteen_heavenly_methods_4
+    sexuality = heterosexual
+    father = voyagen_lifepath_93
+
+    martial = 8
+    diplomacy = 6
+    stewardship = 6
+    intrigue = 5
+    learning = 5
+    prowess = 8
+
+    1171.4.27 = {
+        birth = yes
+        trait = physique_good_2
+    }
+
+    1183.1.1 = {
+        trait = trusting
+        trait = ambitious
+        trait = gregarious
+    }
+
+    1187.4.27 = {
+        effect = { set_base_arcana = { AMOUNT = 3 } }
+        trait = education_martial_3
+        trait = adventurer
+        trait = overseer
+        trait = logistician
+        trait = gh_historical_blademaster_1
+    }
+
+    1241.8.8 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}

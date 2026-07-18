@@ -1,0 +1,164 @@
+﻿c_ithphaon = {
+	1197.2.21 = {
+		holder = westernimperial_aversarinas_aagiokrata_3
+	}
+
+	1200.1.1 = {
+		change_development_level = 8
+	}
+
+	# Lonely Note: Giving a null holder to a county triggers an error, make a placeholder
+	# character and remove when possible.
+	#1201.3.4 = {
+	#	holder = 0
+	#}
+
+	1251.4.15 = {
+		holder = mondecny_portenchant_1
+		government = tribal_government
+	}
+}
+c_poios = {
+	1250.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_6
+		liege = "d_thururii"
+		government = magocratic_republic
+	}
+}
+c_thraadmis = {
+	1231.9.26 = {
+		holder = northernimperial_aversarinas_aagiokrata_48
+		government = military_unit_government
+	}
+	1251.11.19 = {
+		holder = mondecny_portenchant_1 #CHANGE
+		liege = e_migrant_coalition
+	}
+	1298.1.1 = {
+		government = republic_playable_government
+	}
+}
+c_ticycortatis = {
+	1151.3.16 = {
+		holder = centralimperial_aversarinas_aagiokrata_88 # Amyntas Varsaxoan
+	}
+	1178.2.21 = {
+		holder = centralimperial_aversarinas_aagiokrata_85 # Dukon 'the Old' Varsaxoan
+	}
+	1253.1.1 = {
+		holder = mondecny_portenchant_1
+		liege = e_migrant_coalition
+	}
+}
+c_cythone = {
+	1250.1.1 = {
+		holder = daukeni_sjalvolki_74
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1257.12.7 = {
+		holder = huegodocs_apti_2
+	}
+	1298.1.1 = {
+		government = republic_playable_government
+	}
+}
+c_nollidiri = {
+	1159.6.7 = {
+		holder = northernimperial_aversarinas_aagiokrata_44
+	}
+
+	1200.3.1 = {
+		holder = northernimperial_aversarinas_aagiokrata_42
+	}
+
+	1209.10.3 = {
+		holder = northernimperial_aversarinas_aagiokrata_47
+	}
+
+	1216.11.21 = {
+		holder = northernimperial_aversarinas_aagiokrata_19
+	}
+	1231.9.26 = {
+		holder = northernimperial_aversarinas_aagiokrata_28
+	}
+	1251.11.19 = {
+		holder = daukeni_sjalvolki_75
+		liege = d_gelale
+		government = continental_clan_government
+	}
+	1256.2.1 = {
+		holder = huegodocs_apti_2
+	}
+	1298.1.1 = {
+		government = republic_playable_government
+	}
+}
+c_heropta = {
+	1151.3.16 = {
+		holder = centralimperial_aversarinas_aagiokrata_88 # Amyntas Varsaxoan
+	}
+	1178.2.21 = {
+		holder = centralimperial_aversarinas_aagiokrata_85 # Dukon 'the Old' Varsaxoan
+	}
+	1239.2.21 = {
+		holder = centralimperial_aversarinas_aagiokrata_93 # Melissa Varsaxoan
+	}
+	1253.1.1 = {
+		liege = e_migrant_coalition
+	}
+}
+c_mysthos = {
+	1250.1.1 = {
+		holder = mondecny_portenchant_2
+		liege = k_marrudolem
+		government = tribal_government
+	}
+}
+c_emos = {
+	1231.9.26 = {
+		holder = northernimperial_aversarinas_aagiokrata_29
+	}
+	1251.11.19 = {
+		holder = mondecny_portenchant_4
+		liege = k_marrudolem
+		government = tribal_government
+	}
+}
+c_haller = {
+
+	1250.1.1 = {
+		holder = daukeni_sjalvolki_26
+		liege = d_moorende
+		government = continental_clan_government
+	}
+	#1256.3.1 = {
+	#	holder = artuones_mothers_and_fathers_3
+	#}
+}
+c_hargen = {
+	1250.1.1 = {
+		holder = caemansi_sjalvolki_6
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	#1258.10.4 = {
+	#	holder = artuones_mothers_and_fathers_3
+	#}
+	#1276.5.3 = {
+	#	holder = artuones_mothers_and_fathers_7
+	#}
+}
+c_sugarholt_rename = {
+	1250.1.1 = {
+		holder = caemansi_sjalvolki_6
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	#1258.10.4 = {
+	#	holder = artuones_mothers_and_fathers_3
+	#}
+	#1276.5.3 = {
+	#	holder = artuones_mothers_and_fathers_7
+	#}
+}

@@ -1,0 +1,969 @@
+﻿# Kathanouxa, the 'Wizard King'
+dailennir_kathanouxiac_1 = {
+	name = "Kathanouxa"
+	dna = kathanouxa
+	religion = "kathanouxiac"
+	culture = "dailennir"
+	dynasty = dyn_kathanouxa_1
+	
+	diplomacy = 22
+	intrigue = 38
+	martial = 28
+	stewardship = 45
+	learning = 50
+
+	sexuality = bisexual
+
+	0.1.1 = {
+		birth = yes
+		trait = magic_good_12
+		trait = intellect_good_2
+		trait = immortal
+	}
+
+	1.1.1 = {
+		trait = sadistic
+		trait = arbitrary
+		trait = arrogant
+		
+		trait = education_arcana_5
+		
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:day_court }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+	
+	66.11.14 = {
+		death = {
+			death_reason = death_duel
+			killer = shewigad_starvayrd_1 # Good King Bastione
+		}
+	}
+}
+
+dailennir_kathanouxiac_2 = { # Cyn of the Golden Rowan, first king of Faegift
+	name = "Cyn" 
+
+	dynasty = dyn_dailennir_2
+	religion = kathanouxiac
+	culture = dailennir
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = gregarious
+	trait = deceitful
+	
+	trait = beauty_good_2
+
+	diplomacy = 12
+	martial = 25
+	stewardship = 9
+	intrigue = 13
+	learning = 8
+	prowess = 19
+
+	trait = education_martial_4
+
+	# GH TODO: Actual birth date is in the 1st century BI
+	0.7.17 = {
+		birth = yes
+		give_nickname = nick_of_the_golden_rowan
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	24.7.13 = {
+		add_spouse = dailennir_kathanouxiac_3
+	}
+
+	91.12.15 = {
+		death = {
+			death_reason = death_battle
+			killer = dailennir_kathanouxiac_18	# Carttuen 'Silver-Hair'
+		}
+	}
+}
+
+dailennir_kathanouxiac_3 = {
+	name = "Moruen" 
+	female = yes
+
+	religion = kathanouxiac
+	culture = dailennir
+
+	sexuality = heterosexual
+
+	trait = humble
+	trait = shy
+	trait = zealous
+
+	diplomacy = 6
+	martial = 8
+	stewardship = 8
+	intrigue = 3
+	learning = 6
+	prowess = 6
+
+	trait = education_martial_3
+
+	7.11.4 = {
+		birth = yes
+	}
+
+	66.10.25 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+dailennir_kathanouxiac_4 = {
+	name = "Cottauc" 
+
+	dynasty = dyn_dailennir_2
+	religion = kathanouxiac
+	culture = dailennir
+
+	father = dailennir_kathanouxiac_2
+	mother = dailennir_kathanouxiac_3
+
+	sexuality = heterosexual
+
+	trait = arbitrary
+	trait = patient
+	trait = shy
+
+	diplomacy = 8
+	martial = 4
+	stewardship = 7
+	intrigue = 5
+	learning = 8
+	prowess = 7
+
+	trait = education_diplomacy_2
+
+	51.7.3 = {
+		birth = yes
+	}
+
+	77.12.25 = {
+		add_spouse = dailennir_kathanouxiac_5
+	}
+
+	118.11.11 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+dailennir_kathanouxiac_5 = {
+	name = "Toege" 
+	female = yes
+
+	religion = kathanouxiac
+	culture = dailennir
+
+	sexuality = heterosexual
+
+	trait = arbitrary
+	trait = fickle
+	trait = wrathful
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 6
+	intrigue = 8
+	learning = 9
+	prowess = 4
+
+	trait = education_learning_2
+
+	50.11.22 = {
+	birth = yes
+	}
+
+	127.11.19 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+dailennir_kathanouxiac_6 = {
+	name = "Anovur" 
+
+	dynasty = dyn_dailennir_2
+	religion = kathanouxiac
+	culture = dailennir
+
+	father = dailennir_kathanouxiac_4
+	mother = dailennir_kathanouxiac_5
+
+	sexuality = heterosexual
+
+	trait = paranoid
+	trait = gluttonous
+	trait = vengeful
+
+	diplomacy = 5
+	martial = 6
+	stewardship = 6
+	intrigue = 6
+	learning = 7
+	prowess = 5
+
+	trait = education_learning_2
+
+	78.2.26 = {
+	birth = yes
+	}
+
+	104.5.6 = {
+	add_spouse = dailennir_kathanouxiac_7
+	}
+
+	153.11.25 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+dailennir_kathanouxiac_7 = {
+	name = "Barluen" 
+	female = yes
+
+	religion = kathanouxiac
+	culture = dailennir
+
+	sexuality = heterosexual
+
+	trait = lustful
+	trait = diligent
+	trait = content
+
+	diplomacy = 6
+	martial = 10
+	stewardship = 5
+	intrigue = 5
+	learning = 7
+	prowess = 5
+
+	trait = education_martial_3
+
+	87.9.6 = {
+	birth = yes
+	}
+
+	139.1.13 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+dailennir_kathanouxiac_8 = {
+	name = "Damona" 
+	female = yes
+
+	dynasty = dyn_dailennir_2
+	religion = kathanouxiac
+	culture = dailennir
+
+	father = dailennir_kathanouxiac_6
+	mother = dailennir_kathanouxiac_7
+
+	sexuality = heterosexual
+
+	trait = arbitrary
+	trait = sadistic
+	trait = vengeful
+
+	diplomacy = 5
+	martial = 6
+	stewardship = 7
+	intrigue = 5
+	learning = 8
+	prowess = 8
+
+	trait = education_learning_3
+
+	107.9.11 = {
+	birth = yes
+	}
+
+	153.7.20 = {
+	death = { death_reason = death_treatment }
+	}
+}
+
+dailennir_kathanouxiac_9 = {
+	name = "Aruen" 
+	female = yes
+
+	religion = kathanouxiac
+	culture = dailennir
+
+	father = dailennir_kathanouxiac_4
+	mother = dailennir_kathanouxiac_5
+
+	sexuality = heterosexual
+
+	trait = sadistic
+	trait = brave
+	trait = stubborn
+
+	diplomacy = 7
+	martial = 5
+	stewardship = 5
+	intrigue = 4
+	learning = 5
+	prowess = 6
+
+	trait = education_diplomacy_4
+
+	81.11.3 = {
+	birth = yes
+	}
+
+	141.12.23 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+dailennir_kathanouxiac_10 = {
+	name = "Maevis"
+
+	religion = kathanouxiac
+	culture = dailennir
+
+	dynasty = dyn_dailennir_2
+	father = dailennir_kathanouxiac_6
+	mother = dailennir_kathanouxiac_7
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = trusting
+	trait = arrogant
+
+	diplomacy = 7
+	martial = 5
+	stewardship = 5
+	intrigue = 4
+	learning = 5
+	prowess = 6
+
+	trait = education_diplomacy_4
+
+	112.11.3 = {
+	birth = yes
+	}
+	
+	141.2.14 = {
+	add_spouse = dailennir_kathanouxiac_11
+	}
+
+	172.9.26 = {
+	death = {
+			death_reason = death_murder_known
+			killer = dragon_beast_7	# Tyrandax 'the Dragon King'
+		}
+	}
+}
+
+dailennir_kathanouxiac_11 = {
+	name = "Carttuen" 
+	female = yes
+
+	religion = kathanouxiac
+	culture = dailennir
+
+	sexuality = bisexual
+
+	trait = vengeful
+	trait = arrogant
+	trait = chaste
+
+	diplomacy = 7
+	martial = 7
+	stewardship = 8
+	intrigue = 8
+	learning = 7
+	prowess = 5
+
+	trait = education_stewardship_3
+
+	124.8.16 = {
+		birth = yes
+	}
+
+	172.9.26 = {
+	death = {
+			death_reason = death_murder_known
+			killer = dragon_beast_7	# Tyrandax 'the Dragon King'
+		}
+	}
+}
+
+dailennir_kathanouxiac_12 = {
+	name = "Attreu" 
+
+	dynasty = dyn_dailennir_2
+	religion = kathanouxiac
+	culture = dailennir
+
+	father = dailennir_kathanouxiac_10
+	mother = dailennir_kathanouxiac_11
+
+	sexuality = homosexual
+
+	trait = diligent
+	trait = zealous
+	trait = humble
+
+	diplomacy = 8
+	martial = 4
+	stewardship = 5
+	intrigue = 3
+	learning = 6
+	prowess = 5
+
+	trait = education_diplomacy_3
+
+	149.11.21 = {
+	birth = yes
+	}
+
+	171.9.20 = {
+	add_spouse = dailennir_kathanouxiac_13
+	}
+
+	172.9.26 = {
+	death = {
+			death_reason = death_murder_known
+			killer = dragon_beast_7	# Tyrandax 'the Dragon King'
+		}
+	}
+}
+
+dailennir_kathanouxiac_13 = {
+	name = "Biduen" 
+	female = yes
+
+	religion = kathanouxiac
+	culture = dailennir
+
+	sexuality = heterosexual
+
+	trait = calm
+	trait = stubborn
+	trait = vengeful
+
+	diplomacy = 6
+	martial = 5
+	stewardship = 9
+	intrigue = 6
+	learning = 5
+	prowess = 9
+
+	trait = education_stewardship_3
+
+	156.5.19 = {
+	birth = yes
+	}
+
+	172.9.26 = {
+	death = {
+			death_reason = death_murder_known
+			killer = dragon_beast_7	# Tyrandax 'the Dragon King'
+		}
+	}
+}
+
+dailennir_kathanouxiac_14 = {
+	name = "Coseu" 
+
+	dynasty = dyn_dailennir_2
+	religion = kathanouxiac
+	culture = dailennir
+
+	father = dailennir_kathanouxiac_10
+	mother = dailennir_kathanouxiac_11
+
+	sexuality = heterosexual
+
+	trait = trusting
+	trait = calm
+	trait = patient
+
+	diplomacy = 5
+	martial = 7
+	stewardship = 4
+	intrigue = 5
+	learning = 5
+	prowess = 6
+
+	trait = education_martial_4
+
+	151.4.2 = {
+	birth = yes
+	}
+
+	172.9.26 = {
+	death = {
+			death_reason = death_murder_known
+			killer = dragon_beast_7	# Tyrandax 'the Dragon King'
+		}
+	}
+}
+
+dailennir_kathanouxiac_16 = {
+	name = "Aedre" 
+	female = yes
+
+	religion = kathanouxiac
+	culture = dailennir
+
+	father = dailennir_kathanouxiac_10
+	mother = dailennir_kathanouxiac_11
+
+	sexuality = heterosexual
+
+	trait = beauty_good_2
+
+	trait = shy
+	trait = compassionate
+	trait = cynical
+	
+	trait = depressed_1
+
+	diplomacy = 8
+	martial = 9
+	stewardship = 5
+	intrigue = 8
+	learning = 5
+	prowess = 6
+
+	trait = education_diplomacy_1
+
+	154.5.17 = {
+	birth = yes
+	}
+
+	222.9.26 = {
+	death = { death_reason = death_natural_causes }
+	}
+}
+
+dailennir_kathanouxiac_17 = {
+	name = "Cottauc" 
+
+	dynasty = dyn_dailennir_2
+	religion = kathanouxiac
+	culture = dailennir
+
+	father = dailennir_kathanouxiac_10
+	mother = dailennir_kathanouxiac_11
+
+	sexuality = heterosexual
+
+	trait = chaste
+	trait = arbitrary
+	trait = brave
+
+	diplomacy = 6
+	martial = 5
+	stewardship = 7
+	intrigue = 6
+	learning = 5
+	prowess = 4
+
+	trait = education_stewardship_3
+
+	156.6.4 = {
+	birth = yes
+	}
+
+	172.9.26 = {
+		death = {
+			death_reason = death_murder_known
+			killer = dragon_beast_7	# Tyrandax 'the Dragon King'
+		}
+	}
+}
+
+# Carttuen 'Silver-Hair'
+dailennir_kathanouxiac_18 = {
+	name = "Carttuen"
+	
+	female = yes
+
+	religion = kathanouxiac
+	culture = dailennir
+
+	sexuality = heterosexual
+
+	trait = patient
+	trait = vengeful
+	trait = callous
+
+	# GH TODO: These stats are more relevant for the 7th century than they are for the 1st.
+	diplomacy = 23
+	martial = 12
+	stewardship = 10
+	intrigue = 29
+	learning = 31
+	prowess = 4
+
+	trait = education_arcana_5
+
+	# GH TODO: Actual birth date is in the 1st century BI
+	1.1.1 = {
+		birth = yes
+		
+		trait = intellect_good_2
+		trait = beauty_good_3
+		trait = magic_good_9
+		
+		give_nickname = nick_silver_hair
+		trait = gh_historical_school
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+			set_variable = { name = historical_magic_school value = flag:day_court }
+			set_variable = { name = historical_magic_school_min_spells value = 20 }
+		}
+	}
+	
+	34.1.1 = {
+		trait = immortal	# A temporary measure, doesn't actually become truly immortal until 50ish years later
+		effect = {
+			set_immortal_age = 24
+		}
+	}
+	
+	50.1.1 = {
+		set_relation_lover = character:dailennir_kathanouxiac_19	# Mornegeu
+	}
+	
+	91.12.18 = {
+		trait = blind
+	}
+	
+	94.2.8 = {
+		set_relation_soulmate = character:dailennir_kathanouxiac_19	# Mornegeu
+		add_matrilineal_spouse = dailennir_kathanouxiac_19
+	}
+	
+	100.1.1 = {
+		religion = mothers_and_fathers
+	}
+	
+	200.1.1 = {
+		trait = lifestyle_gardener
+		trait = lifestyle_herbalist
+		trait = gh_arcanist
+		trait = schemer
+	}
+	
+	654.5.5 = {
+		death = {
+			death_reason = death_withered_to_dust
+		}
+	}
+}
+
+# Mornegeu
+dailennir_kathanouxiac_19 = {
+	name = "Mornegeu"
+
+	religion = kathanouxiac
+	culture = dailennir
+
+	sexuality = heterosexual
+
+	trait = trusting
+	trait = brave
+	trait = callous
+	
+	trait = loyal
+
+	# GH TODO: These stats are more relevant for the 7th century than they are for the 1st.
+	diplomacy = 13
+	martial = 21
+	stewardship = 8
+	intrigue = 23
+	learning = 13
+	prowess = 26
+
+	trait = education_intrigue_4
+
+	# GH TODO: Actual birth date is in the 1st century BI
+	1.1.1 = {
+		birth = yes
+		
+		trait = physique_good_3
+		trait = beauty_good_2
+		trait = magic_good_3
+	}
+	
+	37.1.1 = {
+		trait = immortal	# A temporary measure, doesn't actually become truly immortal until 50ish years later
+		effect = {
+			set_immortal_age = 27
+		}
+	}
+	
+	90.1.1 = {
+		religion = mothers_and_fathers
+	}
+	
+	200.1.1 = {
+		trait = gh_historical_blademaster_3
+		trait = gh_historical_track_hunter_2
+		trait = gh_historical_track_beasthunter_2
+		trait = gallant
+		
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:day_court }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+	
+	654.5.5 = {
+		death = {
+			death_reason = death_withered_to_dust
+		}
+	}
+}
+
+# Eldaceu 'Snowbeard'
+dailennir_kathanouxiac_20 = {
+	name = "Eldaceu"
+
+	dynasty = dyn_dailennir_3
+	religion = kathanouxiac
+	culture = dailennir
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = generous
+	trait = calm
+	
+	trait = scholar
+	trait = gh_arcanist
+	trait = gh_sage
+
+	diplomacy = 15
+	martial = 14
+	stewardship = 27
+	intrigue = 18
+	learning = 26
+	prowess = 7
+
+	trait = education_learning_5
+
+	# GH TODO: Actual birth date is in the 3rd century BI
+	1.1.1 = {
+		birth = yes
+		
+		trait = intellect_good_3
+		trait = magic_good_10
+		
+		trait = shrewd
+		
+		give_nickname = nick_snowbeard
+		trait = gh_historical_school
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+			set_variable = { name = historical_magic_school value = flag:day_court }
+			set_variable = { name = historical_magic_school_min_spells value = 20 }
+		}
+	}
+	
+	66.1.1 = {
+		trait = immortal	# A temporary measure, doesn't actually become truly immortal until 50ish years later
+		effect = {
+			set_immortal_age = 66
+		}
+	}
+	
+	91.12.15 = {
+		death = {
+			death_reason = death_battle
+			killer = dailennir_kathanouxiac_18	# Carttuen 'Silver-Hair'
+		}
+	}
+}
+
+# Meiandun 'the Exile'
+dailennir_kathanouxiac_21 = {
+	name = "Meiandun"
+
+	dynasty = dyn_dailennir_3
+	religion = kathanouxiac
+	culture = dailennir
+	
+	father = dailennir_kathanouxiac_20	# Eldaceu 'Snowbeard' - GH NOTE: Adoptive father
+
+	sexuality = heterosexual
+
+	diplomacy = 9
+	martial = 15
+	stewardship = 8
+	intrigue = 4
+	learning = 13
+	prowess = 11
+
+	43.5.7 = {
+		birth = yes
+		
+		trait = intellect_good_1
+		trait = magic_good_4
+	}
+	
+	55.1.1 = {
+		trait = wrathful
+		trait = impatient
+		trait = compassionate
+	}
+	
+	59.5.7 = {
+		trait = education_martial_4
+		trait = strategist
+	}
+	
+	91.12.15 = {
+		trait = depressed_1
+	
+		give_nickname = nick_the_exile
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+	
+	111.3.16 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+# Eldaceu II 'Breaker of Malkhador'
+dailennir_kathanouxiac_23 = {
+	name = "Eldaceu"
+
+	dynasty = dyn_dailennir_3
+	religion = kathanouxiac
+	culture = dailennir
+	
+	father = dailennir_kathanouxiac_21	# Meiandun 'the Exile'
+
+	sexuality = heterosexual
+
+	diplomacy = 11
+	martial = 17
+	stewardship = 15
+	intrigue = 6
+	learning = 7
+	prowess = 8
+
+	86.9.10 = {
+		birth = yes
+		
+		trait = magic_good_3
+	}
+	
+	98.1.1 = {
+		trait = ambitious
+		trait = diligent
+		trait = vengeful
+	}
+	
+	102.9.10 = {
+		trait = education_martial_4
+		trait = strategist
+	}
+	
+	150.6.12 = {
+		give_nickname = nick_breaker_of_malkhador
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+	
+	160.2.23 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+# Aldos 'the Mute Sage'
+dailennir_kathanouxiac_25 = {
+	name = "Aldos"
+
+	dynasty = dyn_dailennir_3
+	religion = kathanouxiac
+	culture = dailennir
+	
+	father = dailennir_kathanouxiac_23	# Eldaceu II 'Breaker of Malkhador'
+
+	sexuality = homosexual
+
+	diplomacy = 2
+	martial = 5
+	stewardship = 17
+	intrigue = 3
+	learning = 15
+	prowess = 0
+
+	118.12.21 = {
+		birth = yes
+		
+		trait = intellect_good_1
+		trait = magic_good_6
+		trait = stuttering
+	}
+	
+	130.1.1 = {
+		trait = shy
+		trait = eccentric
+		trait = diligent
+	}
+	
+	134.12.21 = {
+		trait = education_arcana_4
+		trait = gh_historical_school
+		
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:day_court }
+			set_variable = { name = historical_magic_school_min_spells value = 15 }
+		}
+	}
+	
+	150.1.1 = {
+		trait = reclusive
+		trait = gh_arcanist
+		trait = gh_sage
+	
+		give_nickname = nick_the_mute_sage
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+	
+	196.12.14 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}

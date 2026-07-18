@@ -1,0 +1,157 @@
+﻿
+c_zehthaaa = {
+	1200.01.01 = {
+		holder = redrunner_aversarinas_aagiokrata_18  # Telanus
+	}
+	1208.07.01 = {
+		holder = redrunner_aversarinas_aagiokrata_19  # Aristophis
+	}
+	1216.11.15 = {
+		holder = redrunner_aversarinas_aagiokrata_20  # Eumathius
+	}
+	1225.04.10 = {
+		holder = redrunner_aversarinas_aagiokrata_21  # Pheron
+	}
+	1232.03.25 = {
+		holder = redrunner_aversarinas_aagiokrata_22  # Lycander
+	}
+	1234.3.27 = {
+		holder = redrunner_aversarinas_aagiokrata_36 # Diogenes 
+	}
+	1235.12.01 = {
+		holder = redrunner_aversarinas_aagiokrata_23  # Nearchus
+	}
+	1236.3.27 = {
+		holder = redrunner_aversarinas_aagiokrata_39 # Callisthenes
+	}
+	1238.05.17 = {
+		holder = redrunner_aversarinas_aagiokrata_24  # Theonides
+	}
+	1239.08.01 = {
+		holder = redrunner_aversarinas_aagiokrata_25  # Meleander
+	}
+	
+	1240.04.15 = {
+		holder = voyagen_lifepath_6	# Roger
+		change_development_level = 16
+	}
+}
+
+c_jett = {
+	1200.1.1 = {
+		liege = d_kurdirik
+		holder = redrunner_aversarinas_aagiokrata_17
+	}
+	
+	1220.1.1 = {
+		liege = d_kurdirik
+		holder = redrunner_aversarinas_aagiokrata_15
+	}
+
+	1230.1.1 = {
+		liege = d_kurdirik
+		holder = redrunner_aversarinas_aagiokrata_1
+	}
+}
+c_krezz = {
+	
+	1200.1.1 = {
+		liege = d_kurdirik
+		holder = redrunner_aversarinas_aagiokrata_17
+	}
+	
+	1220.1.1 = {
+		liege = d_kurdirik
+		holder = redrunner_aversarinas_aagiokrata_15
+	}
+	
+	1230.1.1 = {
+		liege = d_kurdirik
+		holder = redrunner_aversarinas_aagiokrata_1
+		change_development_level = 14
+	}
+}
+c_nikotha = {
+	1200.1.1 = {
+		liege = d_kurdirik
+		holder = redrunner_aversarinas_aagiokrata_17
+	}
+	
+	1220.1.1 = {
+		liege = d_kurdirik
+		holder = redrunner_aversarinas_aagiokrata_15
+	}
+	
+	1230.1.1 = {
+		liege = d_kurdirik
+		holder = redrunner_aversarinas_aagiokrata_1
+		change_development_level = 5
+	}
+}
+c_anerion = {
+	1200.3.15 = {
+		government = military_unit_government
+		holder = easternimperial_militant_cliques_1
+	}
+	1213.5.7 = {
+		change_development_level = 6
+		holder = tretosai_militant_cliques_1
+	}
+	1216.11.4 = {
+		holder = ypsikenai_aeschraes_aagiokrata_1
+		government = feudal_government
+		liege = e_oraispol_aautokrata
+	}
+	1227.6.17 = {
+		holder = ypsikenai_aeschraes_aagiokrata_2
+	}
+	1250.1.1 = {
+		government = feudal_government
+		holder = redrunner_aversarinas_aagiokrata_1
+	}
+}
+c_deballis = {
+	1200.3.17 = {
+		government = military_unit_government
+		holder = easternimperial_militant_cliques_1
+	}
+	1213.5.7 = {
+		change_development_level = 6
+		holder = tretosai_militant_cliques_1
+	}
+	1219.5.1 = {
+		holder = ypsikenai_aeschraes_aagiokrata_1
+		government = feudal_government
+	}
+	1227.6.17 = {
+		holder = ypsikenai_aeschraes_aagiokrata_2
+	}
+	1227.7.3 = {
+		holder = tretosai_militant_cliques_2
+		liege = e_oraispol_aautokrata
+	}
+	1230.4.27 = {
+		liege = 0
+	}
+	1241.12.30 = {
+		holder = tretosai_aversarinas_aagiokrata_1
+	}
+	1250.1.1 = {
+		change_development_level = 7
+	}
+}
+c_elaithex = {
+	1230.1.1 = {
+		change_development_level = 2
+	}
+
+	1252.12.24 = {
+		holder = redrunner_aversarinas_aagiokrata_8
+		government = tribal_government 
+	}
+
+	1253.1.1 = {
+		holder = redlander_elated_victim_5
+		government = magocratic_government
+	}
+}

@@ -1,0 +1,319 @@
+c_oldthrone = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_59
+		liege = "k_four_rivers"
+	}
+	1296.2.22 = {
+		holder = tasurmad_wardenism_88
+	}
+}
+c_el_qulatha = {
+	641.1.1 = {
+		holder = tasurmad_wardenism_110
+	}
+	650.1.1 = {
+		holder = tasurmad_wardenism_108
+	}
+	674.1.1 = {
+		holder = tasurmad_wardenism_107
+	}
+	707.1.1 = {
+		holder = tasurmad_wardenism_105
+	}
+	719.1.1 = {
+		holder = tasurmad_wardenism_102
+	}
+	727.1.1 = {
+		holder = tasurmad_wardenism_101
+	}
+	730.1.1 = {
+		holder = tasurmad_wardenism_100
+	}
+	741.1.1 = {
+		holder = tasurmad_wardenism_99
+	}
+	793.9.12 = {
+		holder = tasurmad_wardenism_7
+	}
+	809.3.17 = {
+		holder = tasurmad_wardenism_8
+	}
+	865.3.17 ={
+		holder = tasurmad_wardenism_9
+	}
+	874.12.12 = {
+		holder = tasurmad_wardenism_10
+	}
+	899.10.11 = {
+		holder = tasurmad_wardenism_11
+	}
+	956.10.11 = {
+		holder = tasurmad_wardenism_12
+	}
+	966.10.11 = {
+		holder = tasurmad_wardenism_13
+	}
+	979.10.11 = {
+		holder = tasurmad_wardenism_14
+	}
+	1002.10.11 = {
+		holder = tasurmad_wardenism_15
+	}
+	1049.10.11 = {
+		holder = tasurmad_wardenism_16
+	}
+	1099.10.11 = {
+		holder = tasurmad_wardenism_17
+	}
+	1179.10.11 = {
+		holder = tasurmad_wardenism_18
+	}
+	1183.10.11 = {
+		holder = tasurmad_wardenism_19
+	}
+	1230.1.1 = {
+		holder = tasurmad_wardenism_1
+	}
+	1230.1.1 = { change_development_level = 28 }
+	1266.3.11 = {
+		holder = tasurmad_wardenism_94
+	}
+	1281.12.1 = {
+		holder = tasurmad_wardenism_90
+	}
+	1288.8.9 = {
+		holder = tasurmad_wardenism_93
+	}
+	1294.8.20 = {
+		holder = wasteland
+	}
+}
+c_barleyshrine = {
+	641.1.1 = {
+		holder = tasurmad_wardenism_110
+	}
+	650.1.1 = {
+		holder = tasurmad_wardenism_108
+	}
+	674.1.1 = {
+		holder = tasurmad_wardenism_107
+	}
+	707.1.1 = {
+		holder = tasurmad_wardenism_105
+	}
+	719.1.1 = {
+		holder = tasurmad_wardenism_102
+	}
+	727.1.1 = {
+		holder = tasurmad_wardenism_101
+	}
+	730.1.1 = {
+		holder = tasurmad_wardenism_100
+	}
+	741.1.1 = {
+		holder = tasurmad_wardenism_99
+	}
+	793.9.12 = {
+		holder = tasurmad_wardenism_7
+	}
+	809.3.17 = {
+		holder = tasurmad_wardenism_8
+	}
+	865.3.17 ={
+		holder = tasurmad_wardenism_9
+	}
+	874.12.12 = {
+		holder = tasurmad_wardenism_10
+	}
+	899.10.11 = {
+		holder = tasurmad_wardenism_11
+	}
+	956.10.11 = {
+		holder = tasurmad_wardenism_12
+	}
+	966.10.11 = {
+		holder = tasurmad_wardenism_13
+	}
+	979.10.11 = {
+		holder = tasurmad_wardenism_14
+	}
+	1002.10.11 = {
+		holder = tasurmad_wardenism_15
+	}
+	1049.10.11 = {
+		holder = tasurmad_wardenism_16
+	}
+	1099.10.11 = {
+		holder = tasurmad_wardenism_17
+	}
+	1179.10.11 = {
+		holder = tasurmad_wardenism_18
+	}
+	1183.10.11 = {
+		holder = tasurmad_wardenism_19
+	}
+	1230.1.1 = {
+		holder = tasurmad_wardenism_1
+	}
+	1230.1.1 = { change_development_level = 28 }
+	1266.3.11 = {
+		holder = tasurmad_wardenism_94
+	}
+	1281.12.1 = {
+		holder = tasurmad_wardenism_90
+	}
+	1288.8.9 = {
+		holder = tasurmad_wardenism_93
+	}
+	1294.8.20 = {
+		holder = wasteland
+	}
+}
+#c_el_buqaani = {
+#	793.9.12 = {
+#		holder = tasurmad_wardenism_7
+#	}
+#	809.3.17 = {
+#		holder = tasurmad_wardenism_8
+#	}
+#	865.3.17 ={
+#		holder = tasurmad_wardenism_9
+#	}
+#	874.12.12 = {
+#		holder = tasurmad_wardenism_10
+#	}
+#	899.10.11 = {
+#		holder = tasurmad_wardenism_11
+#	}
+#	956.10.11 = {
+#		holder = tasurmad_wardenism_12
+#	}
+#	966.10.11 = {
+#		holder = tasurmad_wardenism_13
+#	}
+#	979.10.11 = {
+#		holder = tasurmad_wardenism_14
+#	}
+#	1002.10.11 = {
+#		holder = tasurmad_wardenism_15
+#	}
+#	1049.10.11 = {
+#		holder = tasurmad_wardenism_16
+#	}
+#	1099.10.11 = {
+#		holder = tasurmad_wardenism_17
+#	}
+#	1179.10.11 = {
+#		holder = tasurmad_wardenism_18
+#	}
+#	1183.10.11 = {
+#		holder = tasurmad_wardenism_19
+#	}
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_1
+#	}
+#	1266.3.11 = {
+#		holder = tasurmad_wardenism_94
+#	}
+#	1281.12.1 = {
+#		holder = tasurmad_wardenism_90
+#	}
+#	1295.1.1 = {
+#		holder = tasurmad_wardenism_92
+#	}
+#}
+c_lower_asred = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_50
+		liege = "k_four_rivers"
+	}
+	1296.2.22 = {
+		holder = tasurmad_wardenism_88
+	}
+}
+c_sareef = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_50
+		liege = "k_four_rivers"
+	}
+	#1295.1.1 = {
+		#liege = "d_bir_zekra"
+	#}
+}
+#c_umm_an_masri = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_51
+#		liege = "d_bir_zekra"
+#	}
+#	1290.1.1 = {
+#		holder = tasurmad_wardenism_85
+#		liege = 0
+#	}
+#}
+c_naybam_al_murmah = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_52
+		liege = "k_four_rivers"
+	}
+}
+c_posht_e_bagh = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_53
+		liege = "k_four_rivers"
+	}
+}
+#c_zugain_al_banaan = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_53
+#		liege = "k_four_rivers"
+#	}
+#	1295.1.1 = {
+#		holder = tasurmad_wardenism_91
+#	}
+#}
+#c_makmodhani = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_54
+#		liege = "d_dakhani_arg"
+#	}
+#	1290.1.1 = {
+#		holder = tasurmad_wardenism_85
+#		liege = 0
+#	}
+#}
+#c_marsah_el_bregah = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_50
+#		liege = "k_four_rivers"
+#	}
+#	1296.2.22 = {
+#		holder = tasurmad_wardenism_88
+#	}
+#}
+c_upper_asred = {
+	1245.8.9 = {
+		holder = akhtarfi_wardenism_1
+		#liege = d_bir_zekra
+	}
+	1295.1.1 = {
+		holder = tasurmad_wardenism_91
+	}
+}
+#c_ishmarref = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_63
+#		liege = "k_four_rivers"
+#	}
+#	1294.1.1 = {
+#		holder = tasurmad_hulawite_2
+#	}
+#}
+#c_yorrf = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_63
+#		liege = "k_four_rivers"
+#	}
+#	1294.1.1 = {
+#		holder = tasurmad_hulawite_2
+#	}
+#}

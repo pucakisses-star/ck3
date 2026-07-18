@@ -1,0 +1,91 @@
+﻿ardothanes_wyrdpath_1 = {
+	name = "Tusnute"
+	culture = ardothanes
+	religion = wyrdpath
+
+	1236.10.5 = {
+		birth = yes
+		trait = physique_good_2
+		trait = fecund
+	}
+	1254.1.1 = {
+		effect = { add_character_flag = holdover_in_old_lands } 
+	}
+}
+
+ardothanes_wyrdpath_2 = {
+	name = "Ceuttoech"
+	culture = ardothanes
+	religion = wyrdpath
+
+	1248.3.2 = {
+		birth = yes
+	}
+}
+
+ardothanes_wyrdpath_4 = {
+	name = "Avotteu"
+	culture = ardothanes
+	religion = wyrdpath
+
+	1237.9.8 = {
+		birth = yes
+		trait = physique_bad_1
+	}
+
+	1254.1.1 = {
+		effect = { add_character_flag = holdover_in_old_lands } 
+	}
+
+	1287.2.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+ardothanes_wyrdpath_5 = {
+	name = "Avolur"
+	culture = ardothanes
+	religion = wyrdpath
+
+	1261.9.8 = {
+		birth = yes
+		trait = physique_bad_1
+	}
+}
+
+ardothanes_wyrdpath_6 = {
+	name = "Guelet"
+	culture = ardothanes
+	religion = wyrdpath
+	female = yes
+	1240.11.8 = {
+		birth = yes
+	}
+
+	1254.1.1 = {
+		effect = { add_character_flag = holdover_in_old_lands } 
+	}
+}
+
+ardothanes_wyrdpath_7 = {
+	name = "Avotteu"
+	culture = ardothanes
+	religion = wyrdpath
+	father = ardothanes_wyrdpath_8
+	1252.4.1 = {
+		birth = yes
+	}
+}
+
+ardothanes_wyrdpath_8 = {
+	name = "Avotteu"
+	culture = ardothanes
+	religion = wyrdpath
+	1227.4.8 = {
+		birth = yes
+	}
+
+	1254.1.1 = {
+		effect = { add_character_flag = holdover_in_old_lands } 
+	}
+}

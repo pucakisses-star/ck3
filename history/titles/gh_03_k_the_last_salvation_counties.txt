@@ -1,0 +1,6 @@
+
+c_main_lab = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

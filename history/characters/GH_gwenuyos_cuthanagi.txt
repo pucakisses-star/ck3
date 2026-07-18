@@ -1,0 +1,8 @@
+﻿gwenuyos_cuthanagi_1 = { # Gwenuyos Count
+	name = "Oromedon"
+	religion = cuthanagi
+	culture = gwenuyos
+	1206.2.8 = {
+		birth = yes
+	}
+}

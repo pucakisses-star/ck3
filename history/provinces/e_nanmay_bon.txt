@@ -1,0 +1,926 @@
+#k_western_nattana
+8970 = { #formerly c_battingcove pre-Hap's work
+	religion = nathanalmic
+	culture = nattanan
+	holding = tribal_holding
+	500.1.1 = {
+		religion = korlonalmic
+		culture = korlacan
+	}
+	761.1.1 = {
+		religion = katharnalmic
+		culture = kyawkan
+	}
+}
+ 
+7915 = { 
+	holding = none
+}
+
+6376 = { 
+	holding = none
+}
+
+9342 = { #c_sunsrest
+	religion = nathanalmic
+	culture = nattanan
+	holding = tribal_holding
+	1.1.1 = {
+		special_building = 01_korlacan_mines
+	}
+	500.1.1 = {
+		religion = korlonalmic
+		culture = korlacan
+	}
+	750.1.1 = {
+		religion = katharnalmic
+		culture = kyawkan
+	}
+}
+
+
+8582 = { #c_lastshade, aka Hilaynan; this did not change post-Hap's work
+	religion = nathanalmic
+	culture = nattanan
+	holding = tribal_holding
+	500.1.1 = {
+		religion = korlonalmic
+		culture = korlacan
+	}
+	750.1.1 = {
+		religion = katharnalmic
+		culture = kyawkan
+	}
+	
+}
+
+6703 = { #c_safedivide, aka "Samarang"
+	religion = nathanalmic
+	culture = nattanan
+	holding = church_holding
+	1.1.1 = {
+		special_building = 01_overgrown_temple
+	}
+	500.1.1 = {
+		religion = korlonalmic
+		culture = korlacan
+	}
+	747.11.1 = {
+		religion = katharnalmic
+		culture = kyawkan
+	}
+}
+
+9207 = { #path_edge
+	religion = nathanalmic
+	culture = nattanan
+	holding = tribal_holding
+	500.1.1 = {
+		religion = korlonalmic
+		culture = korlacan
+	}
+	750.1.1 = {
+		religion = katharnalmic
+		culture = kyawkan
+	}
+}
+
+9208 = {
+	holding = none
+}
+9209 = {
+	holding = none
+}
+
+9211 = {
+	holding = none
+}
+
+9212 = {
+	holding = none
+}
+
+9213 = {
+	religion = nathanalmic
+	culture = nattanan
+	holding = tribal_holding
+	500.1.1 = {
+		religion = korlonalmic
+		culture = korlacan
+	}
+	747.1.1 = {
+		religion = katharnalmic
+		culture = kyawkan
+	}
+}
+
+9215 = {
+	religion = nathanalmic
+	holding = tribal_holding
+	500.1.1 = {
+		religion = korlonalmic
+		culture = korlacan
+	}
+	760.1.1 = {
+		religion = katharnalmic
+		culture = kyawkan
+	}
+}
+
+9218 = { #fieryforge
+	religion = nathanalmic
+	holding = tribal_holding
+	500.1.1 = {
+		religion = korlonalmic
+		culture = korlacan
+	}
+	760.1.1 = {
+		religion = katharnalmic
+		culture = kyawkan
+	}
+}
+
+9216 = { #c_fiery_forge
+	religion = nathanalmic
+	culture = nattanan
+	holding = tribal_holding
+
+	1.1.1 = {
+		religion = korlonalmic
+		culture = korlacan
+		special_building = 01_forsaken_fortress
+	}
+
+	500.1.1 = {
+		religion = korlonalmic
+		culture = korlacan
+	}
+	760.1.1 = {
+		religion = katharnalmic
+		culture = kyawkan
+	}
+}
+
+9214 = {
+	holding = none
+}
+
+
+9217 = {
+	holding = none
+}
+
+9224 = {
+	religion = nathanalmic
+	culture = nattanan
+	holding = tribal_holding
+	500.1.1 = {
+		religion = korlonalmic
+		culture = korlacan
+	}
+	755.1.3 = {
+		religion = katharnalmic
+		culture = kyawkan
+	}
+}
+
+9221 = {
+	holding = none
+}
+
+8902 = {   
+	holding = none
+}
+
+9246 = {
+	holding = none
+}
+
+9249 = { # c_fallhomestead:0 "Nukuric"
+	religion = nathanalmic
+	culture = nattanan
+	holding = tribal_holding
+
+}
+
+#k_currentsprings
+
+8589 = {  #c_chapelwaterfall, aka Weanegarang
+	religion = nathanalmic
+	culture = nattanan
+	holding = tribal_holding
+}
+
+
+9254 = {
+	religion = nathanalmic
+	culture = nattanan
+	holding = church_holding
+}
+
+
+
+9255 = {
+	religion = ebohephai_olten
+	culture = nargul
+	holding = tribal_holding
+}
+
+9256 = {
+	religion = nathanalmic
+	culture = nattanan
+	holding = tribal_holding
+}
+
+9257 = {
+	holding = none
+}
+
+9258 = {
+	holding = none
+}
+
+9259 = {
+	holding = none
+}
+
+9260 = {
+	holding = none
+}
+9262 = {
+	holding = none
+}
+
+6555 = {
+	holding = none
+}
+
+6222 = {
+	holding = none
+}
+
+6539 = { #c_shadowroot:0 "Tinhung"	
+	religion = nathanalmic
+	culture = nattanan
+	holding = tribal_holding
+}
+
+6534 = {
+	holding = none
+}
+
+7823 = {
+	holding = none
+}
+
+8417 = {
+	holding = none
+}
+
+8646 = { # c_leafdeep:0 "Narapan"	
+	holding = none
+}
+
+6344 = {
+	holding = none
+}
+
+6417 = {
+	religion = nathanalmic
+	culture = nattanan
+	holding = tribal_holding
+}
+
+9253 = {
+	holding = none
+}
+
+9261 = {
+	holding = none
+}
+
+8406 = { # "Bulolo"
+	religion = nathanalmic
+	culture = nattanan
+	holding = church_holding
+	1.1.1 = {
+		special_building = 01_tarfal_garden
+	}
+
+}
+
+	
+
+6336 = { 
+	holding = none
+}
+
+6405 = {
+	holding = none
+}
+
+8567 = {
+	holding = none
+}
+
+8628 = {
+	holding = none
+}
+
+8601 = {
+	religion = nathanalmic
+	culture = nattanan
+	holding = tribal_holding
+	1.1.1 = {
+		special_building = 01_ruins_of_thuriya_pyinnya
+	}
+	1230.1.1 = {
+		religion = korlenalmic
+		culture = korlacan
+	}
+}
+
+8494 = {
+	holding = tribal_holding
+}
+
+8876 = { # 
+	holding = none
+}
+
+9219 = { #new c_battingcove (post Hap's map work) aka Pangura; previously was 8970
+	religion = nathanalmic
+	culture = nattanan
+	holding = tribal_holding
+	500.1.1 = {
+		religion = korlonalmic
+		culture = korlacan
+		special_building = 01_ruins_of_korlacu
+	}
+	740.1.1 = {
+		religion = katharnalmic
+		culture = kyawkan
+	}
+	
+}
+
+9220 = {
+	holding = none
+}
+
+9222 = {
+	holding = none
+}
+
+9223 = {
+	religion = gotharnalmic
+	culture = nattanan
+	holding = tribal_holding
+}
+
+9225 = {
+	holding = none
+}
+
+9226 = { # c_inverted_jungle
+	religion = nathanalmic
+	culture = nattanan
+	holding = tribal_holding
+	1.1.1 = {
+		special_building = 01_hanging_gardens
+	}
+}
+
+9227 = {
+	holding = none
+}
+
+9228 = {
+	holding = none
+}
+
+9229 = {
+	holding = none
+}
+
+9230 = {
+	holding = none
+}
+
+
+
+9238 = {
+	holding = none
+}
+
+9247 = {
+	religion = gotharnalmic
+	culture = nattanan
+	holding = tribal_holding
+}
+
+9248 = {
+	religion = nathanalmic
+	culture = nattanan
+	holding = tribal_holding
+	500.1.1 = {
+		religion = korlonalmic
+		culture = korlacan
+	}
+	758.1.3 = {
+		religion = katharnalmic
+		culture = kyawkan
+	}
+}
+
+9251 = { # c_deepwood
+	holding = none
+}
+
+9252 = {
+	holding = none
+}
+
+
+
+#k_east_nattana
+
+8454 = {
+	religion = nathanalmic
+	culture = nattanan
+	holding = tribal_holding
+}
+
+
+
+9240 = {
+	holding = none
+}
+
+9241 = {
+	religion = nathanalmic 
+	culture = nattanan
+	holding = tribal_holding
+}
+
+9243 = {
+	holding = none
+}
+
+
+
+6325 = { #c_stonerigg:0 "Gasepun"
+	religion = gotharnalmic
+	culture = nattanan
+	holding = tribal_holding
+}
+
+9231 = {
+	religion = gotharnalmic
+	culture = nattanan
+	holding = tribal_holding
+}
+
+9232 = {
+	religion = gotharnalmic
+	culture = nattanan
+	holding = tribal_holding
+}
+
+9233 = {
+	holding = none
+}
+
+9234 = {
+	holding = none
+}
+
+9235 = {
+	holding = none
+}
+
+9236 = {
+	holding = none
+}
+
+9237 = { #c_chan_jerneim_suleaan 
+	religion = gotharnalmic
+	culture = nattanan
+	holding = church_holding
+}
+
+9239 = {
+	holding = none
+}
+
+9242 = {
+	holding = none
+}
+
+
+9244 = {
+	holding = none
+}
+
+
+#k_badlandsheather
+
+7596 = {
+	religion = mogudorism
+	culture = kathunian
+	holding = castle_holding
+}
+
+8539 = {
+	holding = none
+}
+
+8576 = {
+	holding = city_holding
+}
+
+8344 = {
+	holding = castle_holding
+}
+
+6881 = {
+	religion = thuantyan_sraidyan
+	culture = kathunian
+	holding = castle_holding
+}
+
+8247 = {
+	holding = none
+}
+
+6333 = {
+	holding = none
+}
+
+6836 = {
+	religion = mogudorism
+	culture = kathunian
+	holding = castle_holding
+}
+
+7567 = {
+	holding = none
+}
+
+8988 = {
+	holding = city_holding
+}
+
+6403 = {
+	religion = mogudorism
+	culture = kathunian
+	holding = castle_holding
+}
+
+7604 = {
+	holding = none
+}
+
+8976 = {
+	religion = mogudorism
+	culture = kathunian
+	holding = castle_holding
+}
+
+7599 = {
+	holding = city_holding
+}
+
+7636 = {
+	holding = none
+}
+
+7851 = {
+	religion = bayn_huac
+	culture = saielaian
+	holding = metro_holding
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+}
+
+8200 = {
+	holding = city_holding
+}
+
+7620 = {
+	holding = city_holding
+}
+
+8057 = {
+	holding = none
+}
+
+6804 = {
+	holding = castle_holding
+
+	1093.9.18 = {
+		special_building = 02_lang_ky_mines
+	}
+}
+
+8461 = {
+	religion = bayn_huac
+	culture = saielaian
+	holding = castle_holding
+}
+
+8383 = {
+	holding = city_holding
+}
+
+7987 = {
+	holding = none
+}
+
+7824 = {
+	religion = mogudorism
+	culture = kathunian
+	holding = castle_holding
+}
+
+8478 = {
+	holding = none
+}
+
+8900 = {
+	holding = none
+}
+
+7687 = {
+	religion = bayn_huac
+	culture = saielaian
+	holding = castle_holding
+}
+
+7605 = {
+	holding = none
+}
+
+6747 = {
+	holding = city_holding
+}
+
+7626 = {
+	religion = bayn_huac
+	culture = saielaian
+	holding = castle_holding
+}
+
+8367 = {
+	holding = none
+}
+
+6570 = {
+	holding = none
+}
+
+#k_bakerskeep
+
+7426 = {
+	religion = labaqiri
+	culture = dathanites
+	holding = castle_holding
+}
+
+6195 = {
+	holding = none
+}
+
+6984 = {
+	holding = none
+}
+
+8308 = {
+	religion = labaqiri
+	culture = dathanites
+	holding = castle_holding
+}
+
+8240 = {
+	holding = none
+}
+
+7269 = {
+	holding = none
+}
+
+8396 = {
+	holding = none
+}
+
+
+7522 = {
+	religion = dahala
+	culture = dayarka
+	holding = castle_holding
+}
+
+6386 = {
+	religion = dahala
+	culture = dayarka
+	holding = castle_holding
+}
+
+6521 = {
+	religion = dahala
+	culture = dayarka
+	holding = castle_holding
+
+	683.9.7 = {
+		special_building = 01_thornfort
+	}
+}
+
+6613 = {
+	holding = none
+}
+
+8965 = {
+	religion = dahala
+	culture = banwagul
+	holding = castle_holding
+}
+
+8168 = {
+	holding = church_holding
+}
+
+8251 = {
+	religion = dahala
+	culture = dayarka
+	holding = castle_holding
+}
+
+8536 = {
+	holding = none
+}
+
+7287 = {
+	religion = dahala
+	culture = dayarka
+	holding = castle_holding
+
+	100.1.1 = {
+		special_building = 01_fount_of_heroes
+	}
+}
+
+6528 = {
+	religion = dahala
+	culture = dayarka
+	holding = castle_holding
+}
+
+6428 = {
+	holding = none
+}
+
+8445 = {
+	holding = none
+}
+
+8914 = {
+	religion = dahala
+	culture = dayarka
+	holding = castle_holding
+}
+
+6234 = {
+	holding = none
+}
+
+8511 = {
+	holding = none
+}
+
+#k_playwrighthaven
+8675 = {
+	religion = labaqiri
+	culture = dathanites
+	holding = castle_holding
+
+	935.3.26 = {
+		special_building = 01_carapace_cove
+	}
+}
+
+7619 = {
+	religion = labaqiri
+	culture = dathanites
+	holding = castle_holding
+}
+
+6363 = {
+	holding = none
+}
+
+6456 = {
+	holding = none
+}
+
+6633 = {
+	holding = none
+}
+
+7034 = {
+	religion = labaqiri
+	culture = dathanites
+	holding = castle_holding
+}
+
+4296 = {
+	holding = none
+}
+
+6457 = {
+	holding = none
+}
+
+6672 = {
+	religion = bayn_huac
+	culture = saielaian
+	holding = castle_holding
+}
+
+6604 = {
+	holding = none
+}
+
+6796 = {
+	holding = none
+}
+
+8347 = {
+	religion = bayn_huac
+	culture = saielaian
+	holding = castle_holding
+}
+
+8554 = {
+	holding = none
+}
+
+6740 = {
+	religion = thuantyan_sraidyan
+	culture = saielaian
+	holding = castle_holding
+}
+
+6732 = {
+	holding = none
+}
+
+6957 = {
+	holding = none
+}
+
+7660 = {
+	holding = none
+}
+
+6239 = {
+	religion = bayn_huac
+	culture = saielaian
+	holding = castle_holding
+}
+
+6439 = {
+	holding = none
+}
+
+6402 = {
+	religion = bayn_huac
+	culture = dayarka
+	holding = castle_holding
+}
+
+4332 = {
+	holding = none
+}
+
+6241 = {
+	religion = thuantyan_sraidyan
+	culture = saielaian
+	holding = castle_holding
+}
+
+1952 = {
+	holding = none
+}
+
+8644 = {
+	holding = none
+}
+
+8904 = {
+	holding = none
+}
+

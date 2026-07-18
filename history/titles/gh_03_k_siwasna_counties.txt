@@ -1,0 +1,246 @@
+#c_halawah = {
+#	1230.1.1 = {
+#		holder = barzawa_wardenism_1
+#	}
+#}
+#c_masyarem = {
+#	1230.1.1 = {
+#		holder = barzawa_wardenism_1
+#	}
+#}
+#c_nakha = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_29
+#		liege = "d_hita"
+#	}
+#}
+c_rafhamah = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_34
+		liege = "k_four_rivers"
+	}
+	1296.1.1 = {
+		holder = barzawa_tulharsin_5
+		liege = "d_rabiqraa"
+		government = tribal_government
+	}
+}
+c_badaihan = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_34
+		liege = "k_four_rivers"
+	}
+	1296.1.1 = {
+		holder = barzawa_tulharsin_4
+		liege = "d_rabiqraa"
+		government = tribal_government
+	}
+}
+#c_yushu = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_34
+#		liege = "k_four_rivers"
+#	}
+#	1296.1.1 = {
+#		holder = barzawa_tulharsin_4
+#		liege = "d_rabiqraa"
+#		government = tribal_government
+#	}
+#}
+#c_khaa = {
+#	1238.3.27 = {
+#		holder = akhtarfi_wardenism_2
+#	}
+#	1250.1.1 = {
+#		holder = barzawa_tulharsin_1
+#		liege = "d_rabiqraa"
+#		government = tribal_government
+#	}
+#	1296.1.1 = {
+#		holder = barzawa_tulharsin_3
+#		liege = "d_rabiqraa"
+#		government = tribal_government
+#	}
+#}
+c_musut = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_35
+		liege = "d_rabiqraa"
+	}
+	1296.1.1 = {
+		holder = barzawa_tulharsin_5
+		liege = "d_rabiqraa"
+		government = tribal_government
+	}
+}
+#c_shahhaza = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_44
+#		liege = "d_matrooth"
+#	}
+#	1296.1.1 = {
+#		holder = barzawa_tulharsin_3
+#		liege = "d_rabiqraa"
+#		government = tribal_government
+#	}
+#}
+#c_faratif = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_44
+#		liege = "d_matrooth"
+#	}
+#	1291.1.1 = {
+#		holder = tasurmad_ritualist_2
+#	}
+#}
+#c_madinat_mehairi = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_46
+#		liege = "k_four_rivers"
+#	}
+#	1291.1.1 = {
+#		holder = tasurmad_ritualist_2
+#	}
+#}
+#c_ashkebleh = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_46
+#		liege = "k_four_rivers"
+#	}
+#	1294.1.1 = {
+#		holder = tasurmad_hulawite_3
+#	}
+#}
+c_safaqous = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_46
+		liege = "k_four_rivers"
+	}
+	1296.1.1 = {
+		holder = barzawa_tulharsin_1
+		government = tribal_government
+	}
+}
+c_arakkar = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_47
+		liege = "k_four_rivers"
+	}
+	1294.10.12 = {
+		holder = tasurmad_wardenism_93
+	}
+}
+#c_naidra = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_48
+#		liege = "d_hita"
+#	}
+#	1294.11.1 = {
+#		holder = tasurmad_wardenism_93
+#	}
+#}
+#c_belghuli = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_55
+#		liege = "d_dakhani_arg"
+#		government = tribal_government
+#	}
+#}
+#c_quaracha = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_56
+#		liege = "k_four_rivers"
+#	}
+#	1282.1.1 = {
+#		holder = tasurmad_wardenism_53
+#	}
+#}
+c_dillyklaar_al_nusr = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_58
+		liege = "k_four_rivers"
+	}
+	1291.1.1 = {
+		holder = tasurmad_ritualist_2
+	}
+}
+
+c_central_sarradon11 = {
+	1253.6.3 = {
+		holder = barzawa_kothori_1
+	}
+}
+c_kamish = {
+	1253.6.3 = {
+		holder = barzawa_kothori_1
+	}
+}
+#c_sumuzar = {
+#	1170.1.1 = {
+#		holder = tasurmad_haradar_5
+#		liege = "k_four_rivers"
+#	}
+#	#1212.1.1 = {
+#	#	holder = mazunic_hubarism_1
+#	#	liege = "k_four_rivers"
+#	#}
+#	1241.1.1 = {
+#		holder = tasurmad_wardenism_45
+#		liege = "k_karadoon"
+#	}
+#	1230.1.1 = { change_development_level = 7 }
+#	1296.1.1 = {
+#		holder = barzawa_tulharsin_2
+#		liege = "d_rabiqraa"
+#		government = tribal_government
+#	}
+#}
+#c_qadaba = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_28
+#		liege = "k_karadoon"
+#	}
+#	1296.1.1 = {
+#		holder = barzawa_tulharsin_2
+#		liege = "d_rabiqraa"
+#		government = tribal_government
+#	}
+#}
+#c_hararera = {
+#	1170.1.1 = {
+#		holder = tasurmad_haradar_5
+#		liege = "k_four_rivers"
+#	}
+#	#1212.1.1 = {
+#	#	holder = mazunic_hubarism_1
+#	#	liege = "k_four_rivers"
+#	#}
+#	1241.1.1 = {
+#		holder = tasurmad_wardenism_28
+#	}
+#	1230.1.1 = { change_development_level = 7 }
+#	1296.1.1 = {
+#		holder = barzawa_tulharsin_1
+#		government = tribal_government
+#	}
+#}
+#c_herichan = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_26
+#		liege = "k_karadoon"
+#	}
+#	1294.12.5 = {
+#		holder = tasurmad_wardenism_93
+#	}
+#}
+c_farwureem = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_27
+	}
+	1240.1.1 = {
+		liege = "k_karadoon"
+	}
+	1294.11.1 = {
+		holder = tasurmad_wardenism_93
+	}
+}

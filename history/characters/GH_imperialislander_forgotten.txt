@@ -1,0 +1,38 @@
+﻿imperialislander_forgotten_1 = { # Parthsa, member of Kleiphos' sect
+	name = "Parthsa"
+	religion = aversarinas_aagiokrata
+	culture = imperialislander
+	disallow_random_traits = yes
+	female = yes
+
+	dna = parthsa
+
+	martial = 5
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 4
+	learning = 4
+	prowess = 3
+
+	1057.7.20 = {
+		birth = yes
+	}
+
+	1069.1.1 = {
+		trait = zealous
+		trait = brave
+		trait = wrathful
+	}
+
+	1073.7.20 = {
+		trait = education_learning_3
+	}
+
+	1092.11.3 = {
+		religion = forgotten
+		death = {
+			death_reason = death_battle
+			killer = northernimperial_aversarinas_aagiokrata_60
+		}
+	}
+}

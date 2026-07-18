@@ -1,0 +1,111 @@
+b_paetidia = {
+	1246.1.1 = {
+		holder = ee_nd_1
+	}
+}
+c_ithi = {
+	763.7.6 = {
+		holder = centralimperial_aversarinas_aagiokrata_172
+	}
+	795.5.25 = {
+		holder = centralimperial_aversarinas_aagiokrata_173
+	}
+	842.2.22 = {
+		holder = centralimperial_aversarinas_aagiokrata_174
+	}
+	868.11.6 = {
+		holder = centralimperial_aversarinas_aagiokrata_175
+	}
+	901.8.4 = {
+		holder = centralimperial_aversarinas_aagiokrata_176
+	}
+	919.6.5 = {
+		holder = centralimperial_aversarinas_aagiokrata_177
+	}
+	942.11.13 = {
+		holder = centralimperial_aversarinas_aagiokrata_178
+	}
+	1009.8.12 = {
+		holder = centralimperial_aversarinas_aagiokrata_179
+	}
+	1010.11.25 = {
+		holder = centralimperial_aversarinas_aagiokrata_180
+	}
+	1079.11.13 = {
+		holder = centralimperial_aversarinas_aagiokrata_181
+	}
+	1080.5.13 = {
+		holder = centralimperial_aversarinas_aagiokrata_182
+	}
+	1099.5.28 = {
+		holder = centralimperial_aversarinas_aagiokrata_183
+	}
+	1230.1.1 = {
+		holder = voyagen_lifepath_71
+	}
+	1295.1.1 = {
+		holder = tribocicai_sjalvolki_14
+	}
+	1230.1.1 = { change_development_level = 8}
+}
+c_herkaneus = { 
+	1247.1.1 = {
+		holder = centralimperial_aeschraes_aagiokrata_3
+	}
+}
+c_avaridenikades = {
+	1204.3.14 = {
+		holder = southernimperial_aeschraes_aagiokrata_1
+	}
+	1230.10.27 = {
+		holder = tribocicai_sjalvolki_10
+		liege = 0
+	}
+	1291.2.14 = {
+		holder = tribocicai_sjalvolki_13
+	}
+}
+c_yirihyri_vikos = {
+	1204.3.14 = {
+		holder = southernimperial_aeschraes_aagiokrata_1
+	}
+	1230.10.27 = {
+		holder = tribocicai_sjalvolki_10
+		liege = 0
+	}
+	1291.2.14 = {
+		holder = tribocicai_sjalvolki_13
+	}
+}
+c_cunai = {
+	1230.1.1 = {
+		holder = centralimperial_aversarinas_aagiokrata_118
+	}
+}
+c_zalikis = { 
+	1230.1.1 = {
+		holder = kunsag_kikarsagi_aagiokrata_1
+	}
+	1230.1.1 = { change_development_level = 5}
+}
+c_sycugas = { 
+	1230.1.1 = {
+		holder = atrakar_kikarsagi_aagiokrata_1
+	}
+}
+c_barastiraki = {
+	1230.1.1 = {
+		holder = southernimperial_aversarian_axiaotheaism_12
+	}
+}
+c_amphelea = { 
+	1251.4.14 = {
+		holder = southernimperial_manikos_aagiokrata_1
+	}
+}
+c_phasephyrian = { 
+	1251.4.14 = {
+		holder = southernimperial_manikos_aagiokrata_12
+		liege = "k_kasmiene"
+	}
+}

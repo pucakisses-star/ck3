@@ -1,0 +1,148 @@
+
+c_hellurii = {
+	1151.3.16 = {
+		holder = centralimperial_aversarinas_aagiokrata_88 # Amyntas Varsaxoan
+	}
+	1178.2.21 = {
+		holder = centralimperial_aversarinas_aagiokrata_85 # Dukon 'the Old' Varsaxoan
+	}
+	1180.1.1 = {
+		change_development_level = 19
+	}
+	1211.4.11 = {
+		holder = kathunian_fourteen_heavenly_methods_2
+	}
+	1240.9.1 = {
+		holder = kathunian_fourteen_heavenly_methods_1
+	}
+}
+c_paecyris = {
+	436.12.23 = {
+		holder = centralimperial_aversarinas_aagiokrata_17
+		liege = k_governorate_malcois_kingdom
+	}
+	497.9.13 = {
+		holder = centralimperial_aversarinas_aagiokrata_18
+		liege = k_governorate_malcois_kingdom
+	}
+	504.12.14 = {
+		holder = centralimperial_aversarinas_aagiokrata_19
+		liege = k_governorate_malcois_kingdom
+	}
+	539.12.3 = {
+		holder = centralimperial_aversarinas_aagiokrata_20
+		liege = k_governorate_malcois_kingdom
+	}
+	1230.1.1 = {
+		holder = cerussiai_iyrossi_aagiokrata_2
+		liege = 0
+	}
+}
+c_claydchdia = {
+	1230.1.1 = {
+		holder = adnanari_harfi_2
+	}
+}
+c_myrespiae = {
+	1230.1.1 = {
+		holder = centralimperial_aeschraes_aagiokrata_4
+	}
+}
+c_lapithymna = {
+	461.8.18 = {
+		holder = centralimperial_aversarinas_aagiokrata_17
+		government = military_unit_government
+		liege = k_governorate_malcois_kingdom
+	}
+	475.6.17 = {
+		holder = centralimperial_aversarinas_aagiokrata_1
+		government = feudal_government
+		liege = k_governorate_malcois_kingdom
+	}
+	506.3.22 = {
+		holder = centralimperial_aversarinas_aagiokrata_2
+		liege = k_governorate_malcois_kingdom
+	}
+	528.2.6 = {
+		holder = centralimperial_aversarinas_aagiokrata_19
+		liege = k_governorate_malcois_kingdom
+	}
+	539.12.3 = {
+		holder = centralimperial_aversarinas_aagiokrata_20
+		liege = k_governorate_malcois_kingdom
+	}
+	560.12.20 = {
+		holder = centralimperial_aversarinas_aagiokrata_3
+		liege = k_governorate_malcois_kingdom
+	}
+	600.6.29 = {
+		holder = centralimperial_aversarinas_aagiokrata_12
+		liege = k_governorate_malcois_kingdom
+	}
+	603.9.6 = {
+		holder = centralimperial_aversarinas_aagiokrata_21
+		liege = k_governorate_malcois_kingdom
+	}
+	610.1.12 = { # Kethemodes
+		holder = centralimperial_aversarinas_aagiokrata_33
+		liege = k_governorate_malcois_kingdom
+	}
+	618.4.17 = {
+		liege = e_aversarinas_aautokrata
+	}
+	645.6.26 = {
+		holder = centralimperial_aversarinas_aagiokrata_14
+		liege = k_governorate_malcois_kingdom
+	}
+	725.5.29 = { # Eramos
+		holder = centralimperial_aversarinas_aagiokrata_64
+		liege = e_aversarinas_aautokrata
+	}
+	1058.6.15 = {
+		holder = centralimperial_aversarinas_aagiokrata_185
+		liege = k_governorate_malcois_kingdom
+	}
+	1180.4.15 = {
+		holder = centralimperial_aversarinas_aagiokrata_99
+		liege = k_governorate_malcois_kingdom
+	}
+	1200.3.1 = {
+		holder = centralimperial_aversarinas_aagiokrata_100
+		liege = k_governorate_malcois_kingdom
+	}
+	1238.4.15 = {
+		holder = centralimperial_aversarinas_aagiokrata_98
+		liege = k_governorate_malcois_kingdom
+	}
+	1240.8.13 = {
+		holder = centralimperial_aversarinas_aagiokrata_122
+		liege = 0
+	}
+}
+c_origulum = {
+	1230.1.1 = {
+		holder = oxalanti_iyrossi_aagiokrata_2
+	}
+}
+c_phanarina = {
+	1220.1.1 = {
+		holder = oxalanti_iyrossi_aagiokrata_2
+	}
+}
+c_myloton = {
+	1220.1.1 = {
+		liege = "d_dulia"
+		holder = cerussiai_iyrossi_aagiokrata_3
+	}
+	1253.2.9 = {
+		holder = voyagen_lifepath_5
+	}
+	1267.5.26 = {
+		holder = cerussiai_iyrossi_aagiokrata_2
+	}
+}
+c_diosioch = {
+	1230.1.1 = {
+		holder = oxalanti_iyrossi_aagiokrata_1
+	}
+}

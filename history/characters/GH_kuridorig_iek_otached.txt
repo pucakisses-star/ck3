@@ -1,0 +1,330 @@
+﻿kuridorig_iek_otached_1 = { # Jajak Otroka, Oltenic warlord during the Blue Robe Revolt
+	name = "Jajak"
+	dynasty = dyn_kuridorig_1
+	religion = iek_otached
+	culture = kuridorig
+	disallow_random_traits = yes
+
+	dna = kuridorig_iek_otached_1
+
+	father = kuridorig_iek_otached_2
+
+	martial = 7
+	diplomacy = 9
+	intrigue = 7
+	stewardship = 8
+	learning = 2
+	prowess = 8
+	
+	portrait_override = {
+		portrait_modifier_overrides = {
+			#custom_gh_masks = male_empty
+			#custom_headgear = no_headgear
+			custom_beards = male_beard_steppe_01
+			custom_hair = male_hair_turkic_03
+		}
+	}
+
+	1175.10.7 = {
+		birth = yes
+		trait = physique_good_3
+	}
+
+	1187.1.1 = {
+		trait = ambitious
+		trait = arrogant
+		trait = wrathful
+	}
+
+	1191.10.7 = {
+		trait = education_martial_4
+		trait = strategist
+		trait = organizer
+		trait = open_terrain_expert
+		trait = gh_historical_blademaster_3
+	}
+
+	1200.3.9 = {
+		trait = lunatic_1
+		portrait_override = {
+			portrait_modifier_overrides = {
+				custom_gh_masks = male_empty
+			}
+		}
+	}
+
+	1200.3.10 = {
+		death = {
+			death_reason = death_disappearance # Charged headlong into the Redlands
+		}
+	}
+}
+
+kuridorig_iek_otached_2 = { # Jajak Otroka's father
+	name = "Jurchedei"
+	dynasty = dyn_kuridorig_1
+	religion = iek_otached
+	culture = kuridorig
+	disallow_random_traits = yes
+
+	father = kuridorig_iek_otached_6
+
+	martial = 6
+	diplomacy = 3
+	intrigue = 5
+	stewardship = 6
+	learning = 4
+	prowess = 8
+
+	1138.6.15 = {
+		birth = yes
+		trait = physique_good_2
+	}
+
+	1150.1.1 = {
+		trait = trusting
+		trait = ambitious
+		trait = brave
+	}
+
+	1154.6.15 = {
+		trait = education_martial_3
+		trait = open_terrain_expert
+	}
+
+	1194.6.14 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+kuridorig_iek_otached_3 = { # Jajak Otroka's brother
+	name = "Husun"
+	dynasty = dyn_kuridorig_1
+	religion = iek_otached
+	culture = kuridorig
+	disallow_random_traits = yes
+
+	father = kuridorig_iek_otached_2
+
+	martial = 5
+	diplomacy = 7
+	intrigue = 6
+	stewardship = 9
+	learning = 5
+	prowess = 7
+
+	1178.10.11 = {
+		birth = yes
+		trait = physique_good_2
+	}
+
+	1190.1.1 = {
+		trait = honest
+		trait = callous
+		trait = brave
+	}
+
+	1194.10.11 = {
+		trait = education_martial_3
+		trait = open_terrain_expert
+	}
+
+	1235.3.30 = {
+		death = {
+			death_reason = death_battle # Killed by River Authority
+		}
+	}
+}
+
+kuridorig_iek_otached_4 = { # Beiy of Orskord's ambitious son
+	name = "Khaidu"
+	dynasty = dyn_kuridorig_1
+	religion = iek_otached
+	culture = kuridorig
+
+	father = kuridorig_iek_otached_8
+
+	martial = 8
+	diplomacy = 9
+	intrigue = 4
+	stewardship = 6
+	learning = 8
+	prowess = 10
+
+	1237.3.7 = {
+		birth = yes
+		trait = physique_good_2
+	}
+
+	1249.1.1 = {
+		trait = ambitious
+		trait = zealous
+		trait = brave
+	}
+
+	1253.3.7 = {
+		trait = education_martial_3
+		trait = open_terrain_expert
+	}
+}
+
+kuridorig_iek_otached_5 = { # Dagun 'Blackmask', Jajak Otroka's uncle and absolute terror of the steppes
+	name = "Dagun"
+	dynasty = dyn_kuridorig_1
+	religion = iek_otached
+	culture = kuridorig
+	disallow_random_traits = yes
+
+	father = kuridorig_iek_otached_6
+
+	martial = 8
+	diplomacy = 2
+	intrigue = 11
+	stewardship = 5
+	learning = 4
+	prowess = 8
+
+	1140.1.10 = {
+		birth = yes
+	}
+
+	1152.1.1 = {
+		trait = diligent
+		trait = callous
+		trait = deceitful
+	}
+
+	1156.1.10 = {
+		trait = education_martial_3
+		trait = open_terrain_expert
+		trait = schemer
+		trait = gh_historical_blademaster_2
+	}
+
+	1176.1.1 = {
+		give_nickname = nick_blackmask
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	1199.11.23 = {
+		death = {
+			death_reason = death_battle
+			killer = easternimperial_aversarinas_aagiokrata_86 # Valerix Anoteris, at the Battle of Baytor's Grave
+		}
+	}
+}
+
+kuridorig_iek_otached_6 = { # Jajak Otroka's grandfather
+	name = "Inalchi"
+	dynasty = dyn_kuridorig_1
+	religion = iek_otached
+	culture = kuridorig
+	disallow_random_traits = yes
+
+	martial = 9
+	diplomacy = 6
+	intrigue = 8
+	stewardship = 3
+	learning = 1
+	prowess = 4
+
+	1109.5.8 = {
+		birth = yes
+	}
+
+	1121.1.1 = {
+		trait = brave
+		trait = chaste
+		trait = honest
+	}
+
+	1125.5.8 = {
+		trait = education_martial_2
+		trait = open_terrain_expert
+	}
+
+	1169.6.9 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+kuridorig_iek_otached_7 = { # Dagun's son, chief of Orskord killed by Governor Isliados
+	name = "Khudu"
+	dynasty = dyn_kuridorig_1
+	religion = iek_otached
+	culture = kuridorig
+	disallow_random_traits = yes
+
+	father = kuridorig_iek_otached_5
+
+	martial = 9
+	diplomacy = 8
+	intrigue = 5
+	stewardship = 1
+	learning = 8
+	prowess = 8
+
+	1179.1.29 = {
+		birth = yes
+	}
+
+	1191.1.1 = {
+		trait = stubborn
+		trait = arrogant
+		trait = impatient
+	}
+
+	1195.1.29 = {
+		trait = education_martial_1
+		trait = open_terrain_expert
+	}
+
+	1212.7.27 = {
+		death = {
+			death_reason = death_battle
+			killer = easternimperial_aeschraes_aagiokrata_1 # Governor Isliados
+		}
+	}
+}
+
+kuridorig_iek_otached_8 = { # Jajak Otroka's nephew, Beiy of Orskord on 1254
+	name = "Toghoril"
+	dynasty = dyn_kuridorig_1
+	religion = iek_otached
+	culture = kuridorig
+
+	father = kuridorig_iek_otached_3
+
+	martial = 6
+	diplomacy = 4
+	intrigue = 2
+	stewardship = 6
+	learning = 3
+	prowess = 9
+
+	1208.4.8 = {
+		birth = yes
+		trait = physique_good_1
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 1 }
+		}
+	}
+
+	1220.1.1 = {
+		trait = greedy
+		trait = paranoid
+		trait = sadistic
+	}
+
+	1224.4.8 = {
+		trait = education_martial_1
+	}
+}

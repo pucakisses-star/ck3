@@ -1,0 +1,9 @@
+﻿agiopadis_agiopolei_1 = {
+	name = "Calyriot"
+	religion = "agiopolei"
+	culture = "agiopadis"
+
+	1221.7.19 = {
+		birth = yes
+	}
+}

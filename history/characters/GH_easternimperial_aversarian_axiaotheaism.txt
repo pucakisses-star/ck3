@@ -1,0 +1,835 @@
+﻿easternimperial_aversarian_axiaotheaism_1 = { # rip
+	name = "Axiaothea"
+	dynasty = dyn_aversarian_10
+	dna = easternimperial_aversarian_axiaotheaism_1
+	religion = "aversarinas_aagiokrata"
+	culture = "easternimperial"
+	female = yes
+	martial = 18
+	diplomacy = 8
+	intrigue = 12
+	stewardship = 8
+	father = easternimperial_aversarinas_aagiokrata_15
+	mother = easternimperial_aversarinas_aagiokrata_16
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_custom_01
+		}
+	}
+
+	1169.1.10 = {
+		birth = yes
+		trait = magic_good_14
+		trait = beauty_good_2
+		trait = intellect_good_3
+
+	}
+	1171.1.10 = {
+		trait = ambitious
+		trait = brave
+		trait = wrathful
+		set_relation_friend = { # Was good friends with her older sister
+			target = character:easternimperial_aversarinas_aagiokrata_12 reason = friend_generic_history
+		}
+		effect = { set_base_arcana = { AMOUNT = 15 } }
+	}
+	1181.4.3 = {
+		add_spouse = easternimperial_aversarinas_aagiokrata_93 # married off by her father to Laxathos Sitharask
+	}
+	1184.1.10 = {
+		trait = strategist
+		trait = overseer
+		trait = irritable
+		trait = gh_historical_blademaster_3
+		trait = education_arcana_5
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+	1185.4.14 = { # Scion: Changed this to 1185, so Axiao is 16 to make it consistent with in-game mechanics (also makes more sense primer-wise)
+		add_spouse = centralimperial_aversarinas_aagiokrata_45 #Anesimasios
+		trait = gh_glowing_veins
+		trait = gh_ritual_scars_2
+	}
+	1186.6.21 = {
+		trait = kinslayer_3
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+easternimperial_aversarian_axiaotheaism_2 = { # Axiaothea's younger sister, was raised in Axiaothea's court and was her presumed heir. Served as her adjutant and then was given her own command and led forces in the Civil War. Was killed by SRBM.
+	name = "Nicalathea"
+	dynasty = dyn_aversarian_10
+	religion = "aversarian_axiaotheaism"
+	culture = "easternimperial"
+	father = easternimperial_aversarinas_aagiokrata_15
+	mother = easternimperial_aversarinas_aagiokrata_16
+	female = yes
+
+	1176.10.19 = {
+		birth = yes
+		trait = magic_good_9
+		trait = beauty_good_3
+		trait = intellect_good_3
+	}
+	1186.6.21 = {
+		set_relation_guardian = character:easternimperial_aversarian_axiaotheaism_1
+	}
+	1192.10.19 = {
+		trait = education_martial_4
+		trait = brave
+		trait = content
+		trait = diligent
+		trait = gh_historical_blademaster_2
+	}
+	1194.4.6 = {
+		trait = gh_legon
+		trait = strategist
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+easternimperial_aversarian_axiaotheaism_3 = { # Axiaothea Cousin
+	name = "Theophylaktos"
+	dynasty = dyn_aversarian_10
+	religion = "aversarian_axiaotheaism"
+	culture = "easternimperial"
+
+	father = easternimperial_aversarinas_aagiokrata_17
+	mother = easternimperial_aversarinas_aagiokrata_18
+
+	1172.10.8 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1184.1.1 = {
+		trait = vengeful
+		trait = ambitious
+		trait = diligent
+	}
+
+	1188.10.8 = {
+		trait = education_martial_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+	
+	1202.5.19 = {
+		add_spouse = easternimperial_aversarian_axiaotheaism_4
+	}
+
+	1239.3.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+easternimperial_aversarian_axiaotheaism_4 = { # Theo Wife
+	name = "Apollonia"
+	religion = "aversarian_axiaotheaism"
+	culture = "easternimperial"
+	female = yes
+
+	1185.10.10 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	1197.1.1 = {
+		trait = cynical
+		trait = craven
+		trait = honest	
+	}
+
+	1201.10.10 = {
+		trait = education_learning_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+
+	1256.3.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+easternimperial_aversarian_axiaotheaism_5 = { # Theophylaktos kid 1
+	name = "Grigorios"
+	dynasty = dyn_aversarian_10
+	religion = "aversarian_axiaotheaism"
+	culture = "easternimperial"
+	father = easternimperial_aversarian_axiaotheaism_3
+	mother = easternimperial_aversarian_axiaotheaism_4 
+
+	1205.4.1 = {
+		birth = yes
+	}
+	
+	1205.4.2 = {
+		death = {
+			death_reason = death_childbirth				
+		}
+	}
+}
+
+easternimperial_aversarian_axiaotheaism_6 = { # Theophylaktos kid 2
+	name = "Stathis"
+	dynasty = dyn_aversarian_10
+	religion = "aversarian_axiaotheaism"
+	culture = "easternimperial"
+	father = easternimperial_aversarian_axiaotheaism_3
+	mother = easternimperial_aversarian_axiaotheaism_4 
+
+	1210.2.1 = {
+		birth = yes
+	}
+	
+	1214.5.5 = {
+		trait = ill
+	}
+	
+	1217.4.2 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+easternimperial_aversarian_axiaotheaism_7 = { # Theophylaktos kid 3
+	name = "Sotranaios" #Renamed from Christodoulos
+	dynasty = dyn_aversarian_10
+	religion = "aversarian_axiaotheaism"
+	culture = "easternimperial"
+
+	father = easternimperial_aversarian_axiaotheaism_3
+	mother = easternimperial_aversarian_axiaotheaism_4
+
+	1216.2.1 = {
+		birth = yes
+		trait = magic_good_7
+		trait = physique_bad_1 
+		trait = intellect_good_2
+	}
+
+	1228.1.1 = {
+		trait = ambitious
+		trait = vengeful
+		trait = patient
+	}
+
+	1232.2.1 = {
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+	
+	1245.1.1 = {
+		add_spouse = easternimperial_aversarinas_aagiokrata_90
+		effect = {
+			set_relation_soulmate = character:easternimperial_aversarinas_aagiokrata_90
+		}
+	}
+	
+	1253.4.1 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+easternimperial_aversarian_axiaotheaism_8 = { # Christodoulos son
+	name = "Axiotheos"
+	dna = easternimperial_aversarian_axiaotheaism_8
+	dynasty = dyn_aversarian_10
+	religion = "aversarian_axiaotheaism"
+	culture = "easternimperial"
+	father = easternimperial_aversarian_axiaotheaism_7 
+	mother = easternimperial_aversarinas_aagiokrata_90 
+	trait = magic_good_8
+	trait = beauty_good_1
+	trait = intellect_good_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp2_iberian_muslim_03
+			custom_beards = male_beard_mena_04
+		}
+	}
+
+	1249.1.10 = {
+		birth = yes
+		effect = {
+			set_variable = {
+			name = magic_protection_gene
+				value = 7
+			}
+            dynasty = { add_dynasty_prestige_level = 5 }
+        }
+	}
+
+	1250.1.1 = {
+		employer = easternimperial_aversarinas_aagiokrata_1 # Tetradia managed to get Axiotheos as a 'ward', giving him some legitimacy
+		set_relation_guardian = character:easternimperial_aversarinas_aagiokrata_1
+
+	}
+}
+
+easternimperial_aversarian_axiaotheaism_9 = { # Magister-Legon Mathotos 'Black of Eyes' Asonox, Axiaothea's childhood friend
+	name = "Mathotos"
+	dynasty = dyn_aversarian_90
+	religion = aversarian_axiaotheaism
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	martial = 7
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 5
+	learning = 7
+
+	father = easternimperial_aversarian_axiaotheaism_13
+
+	1171.4.28 = {
+		birth = yes
+		trait = magic_good_8
+	}
+
+	1183.1.1 = {
+		trait = patient
+		trait = stubborn
+		trait = brave
+	}
+
+	1187.4.28 = {
+		trait = gh_legon
+		trait = overseer
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1197.9.23 = {
+		give_nickname = "nick_black_of_eyes"
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+easternimperial_aversarian_axiaotheaism_10 = { # Legon Idaerion of State Legio LIV 'The Particulars', died in the Blue Robe Revolt
+	name = "Phaelox"
+	dynasty = dyn_aversarian_93
+	religion = aversarian_axiaotheaism
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_9
+	mother = easternimperial_aironoian_aagiokrata_64
+
+	martial = 8
+	diplomacy = 3
+	intrigue = 6
+	stewardship = 6
+	learning = 1
+	prowess = 7
+
+	1161.1.14 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	1173.1.1 = {
+		trait = lazy
+		trait = arbitrary
+		trait = cynical
+	}
+
+	1177.1.14 = {
+		trait = education_martial_3
+		trait = gh_legon
+	}
+
+	1199.8.19 = {
+		death = {
+			death_reason = death_battle
+			killer = yonata_vidvaookeyatra_1 # Akhasar
+		}
+	}
+}
+
+easternimperial_aversarian_axiaotheaism_11 = { # Legan Axas 'Splinter' Athioeasa, alleged lover of Agos Slyn, killed in Blue Robe Revolt
+	name = "Axas"
+	dynasty = dyn_aversarian_98
+	religion = aversarian_axiaotheaism
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aironoian_aagiokrata_22
+
+	martial = 6
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 4
+	learning = 3
+	prowess = 5
+
+	1174.8.1 = {
+		birth = yes
+		trait = magic_good_5
+		trait = beauty_good_1
+	}
+
+	1186.1.1 = {
+		trait = temperate
+		trait = calm
+		trait = arrogant
+	}
+
+	1190.8.1 = {
+		trait = education_martial_2
+		trait = gh_legon
+		trait = adventurer
+	}
+
+	1198.2.11 ={
+		give_nickname = "nick_splinter"
+	}
+
+	1199.8.19 = {
+		death = {
+			death_reason = death_battle
+			killer = yonata_vidvaookeyatra_1 # Akhasar, during the Blue Robe Revolt
+		}
+	}
+}
+
+easternimperial_aversarian_axiaotheaism_12 = { # Magister Pyriodas Asonox, first Arch-Magi of the Aironoiakaan, slain in the Blue Robe Revolt
+	name = "Pyriodas"
+	dynasty = dyn_aversarian_90
+	religion = aversarian_axiaotheaism
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_91
+
+	martial = 5
+	diplomacy = 3
+	intrigue = 7
+	stewardship = 6
+	learning = 8
+	prowess = 5
+
+	1131.9.26 = {
+		birth = yes
+		trait = magic_good_10
+	}
+
+	1143.1.1 = {
+		trait = arrogant
+		trait = sadistic
+		trait = ambitious
+	}
+
+	1147.4.28 = {
+		trait = education_arcana_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+		trait = scholar
+	}
+
+	1199.8.12 = {
+		death = {
+			death_reason = death_magic_fire
+			killer = easternimperial_aversarinas_practitioner_1	# Velaras 'Bleak-Speaker'
+		}
+	}
+}
+
+easternimperial_aversarian_axiaotheaism_13 = { # Magister-Legon Mathotos Asonox' father
+	name = "Mnestrion"
+	dynasty = dyn_aversarian_90
+	religion = aversarian_axiaotheaism
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_91
+
+	martial = 6
+	diplomacy = 1
+	intrigue = 8
+	stewardship = 6
+	learning = 4
+
+	1130.12.18 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1142.1.1 = {
+		trait = callous
+		trait = patient
+		trait = calm
+	}
+
+	1146.12.18 = {
+		trait = education_intrigue_3
+	}
+
+	1192.3.16 = {
+		death = {
+			death_reason = death_battle
+			killer = westernimperial_aversarinas_aagiokrata_3 # Barthonex Firedrake
+		}
+	}
+}
+
+easternimperial_aversarian_axiaotheaism_14 = { # Axiaotheist Count in the East
+	name = "Praxion"
+	dynasty = dyn_aversarian_99
+	religion = aversarian_axiaotheaism
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	mother = easternimperial_aversarian_axiaotheaism_18
+	father = easternimperial_aironoian_aagiokrata_68
+
+	martial = 5
+	diplomacy = 3
+	intrigue = 5
+	stewardship = 5
+	learning = 7
+	prowess = 8
+
+	1231.3.15 = {
+		birth = yes
+		trait = magic_good_3
+		trait = intellect_good_1
+	}
+
+	1243.1.1 = {
+		trait = paranoid
+		trait = calm
+		trait = vengeful
+	}
+
+	1245.10.18 = {
+		set_relation_rival = {
+			target = character:easternimperial_aironoian_aagiokrata_5 # Silverblood
+			reason = nemesis_killed_mother
+			involved_character = character:easternimperial_aversarian_axiaotheaism_18
+		}
+	}
+
+	1247.3.15 = {
+		trait = education_diplomacy_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+easternimperial_aversarian_axiaotheaism_15 = { # Magister Velaras' brother
+	name = "Pelinos"
+	dynasty = dyn_aversarian_99
+	religion = aversarian_axiaotheaism
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aironoian_aagiokrata_25
+
+	martial = 6
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 6
+	learning = 6
+	prowess = 8
+
+	1123.6.7 = {
+		birth = yes
+		trait = magic_good_4
+		trait = intellect_good_1
+	}
+
+	1135.1.1 = {
+		trait = diligent
+		trait = calm
+		trait = brave
+	}
+
+	1139.6.7 = {
+		trait = education_martial_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+		trait = gh_historical_blademaster_2
+	}
+
+	1194.11.7 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+easternimperial_aversarian_axiaotheaism_16 = { # Magister Velaras' nephew, stayed loyal to Axiaothea during the Blue Robe Revolt
+	name = "Tetradia"
+	dynasty = dyn_aversarian_99
+	religion = aversarian_axiaotheaism
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aversarian_axiaotheaism_15
+
+	martial = 7
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 6
+	learning = 5
+	prowess = 2
+
+	1153.1.3 = {
+		birth = yes
+		trait = magic_good_4
+		trait = intellect_good_2
+	}
+
+	1165.1.1 = {
+		trait = just
+		trait = zealous
+		trait = shy
+	}
+
+	1169.1.3 = {
+		trait = education_stewardship_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1180.6.1 = {
+		add_spouse = zelkavani_sunarwei_4
+	}
+
+	1218.7.6 = {
+		death = {
+			death_reason = death_battle
+			killer = lattani_sunwarwei_aagiokrata_3 # Artabanus Argdaos, Lattani Invader
+		}
+	}
+}
+
+
+easternimperial_aversarian_axiaotheaism_17 = { # 1254 Kreyshati count's grandfather
+	name = "Zekos"
+	dynasty = dyn_aversarian_99
+	religion = aversarian_axiaotheaism
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aversarian_axiaotheaism_16
+	mother = zelkavani_sunarwei_4
+
+	martial = 7
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 6
+	learning = 1
+	prowess = 5
+
+	1182.4.23 = {
+		birth = yes
+		trait = magic_good_3
+		trait = intellect_good_1
+	}
+
+	1194.1.1 = {
+		trait = diligent
+		trait = calm
+		trait = compassionate
+	}
+
+	1198.4.23 = {
+		trait = education_martial_2
+	}
+
+	1218.7.6 = {
+		death = {
+			death_reason = death_battle
+			killer = lattani_sunwarwei_aagiokrata_4 # Artabazus Argdaos, avenged his brother
+		}
+	}
+}
+
+easternimperial_aversarian_axiaotheaism_18 = { # Axiotheist Count's Mother
+	name = "Niokreta"
+	dynasty = dyn_aversarian_99
+	religion = aversarian_axiaotheaism
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aversarian_axiaotheaism_17
+
+	martial = 4
+	diplomacy = 8
+	intrigue = 2
+	stewardship = 6
+	learning = 5
+	prowess = 1
+
+	1207.3.28 = {
+		birth = yes
+		trait = magic_good_5
+		trait = intellect_good_2
+	}
+
+	1219.1.1 = {
+		trait = trusting
+		trait = calm
+		trait = just
+	}
+
+	1223.3.28 = {
+		trait = education_stewardship_3
+		trait = architect
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1229.9.6 = {
+		add_matrilineal_spouse = easternimperial_aironoian_aagiokrata_68
+	}
+
+	1245.10.18 = {
+		death = {
+			death_reason = death_battle
+			killer = easternimperial_aironoian_aagiokrata_5 # Eramasios the Silverblood
+		}
+	}
+}
+
+easternimperial_aversarian_axiaotheaism_19 = { # Axiotheist Count's Evil Uncle
+	name = "Vilos"
+	dynasty = dyn_aversarian_99
+	religion = aversarian_axiaotheaism
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	father = easternimperial_aversarian_axiaotheaism_17
+
+	martial = 3
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 3
+	learning = 2
+	prowess = 6
+
+	1212.1.23 = {
+		birth = yes
+		trait = magic_good_5
+		trait = intellect_good_2
+	}
+
+	1224.1.1 = {
+		trait = sadistic
+		trait = ambitious
+		trait = patient
+	}
+
+	1228.1.23 = {
+		trait = education_intrigue_4
+trait = gh_historical_school
+		trait = torturer
+		set_variable = { name = historical_magic_school value = flag:living_magic }
+		set_variable = { name = historical_magic_school_min_spells value = 7 }
+	}
+
+	1253.4.11 = {
+		add_spouse = easternimperial_aironoian_aagiokrata_55
+	}
+}
+
+easternimperial_aversarian_axiaotheaism_20 = { # Silverblood's grandmother
+	name = "Myrthis"
+	dynasty = dyn_aversarian_99
+	religion = aversarian_axiaotheaism
+	culture = easternimperial
+	disallow_random_traits = yes
+	female = yes
+
+	father = easternimperial_aversarian_axiaotheaism_15
+
+	martial = 8
+	diplomacy = 3
+	intrigue = 5
+	stewardship = 2
+	learning = 8
+	prowess = 3
+
+	1160.1.29 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1172.1.1 = {
+		trait = callous
+		trait = trusting
+		trait = greedy
+	}
+
+	1176.1.29 = {
+		trait = education_intrigue_4
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}

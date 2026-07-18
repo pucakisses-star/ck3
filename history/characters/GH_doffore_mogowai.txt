@@ -1,0 +1,641 @@
+﻿doffore_mogowai_1 = { # greedy ambitious merchant, republic leader, couldn't give a shit about reunification
+	name = "Farwah"
+	dna = doffore_mogowai_1
+	religion = mogowai
+	culture = doffore
+	dynasty = dyn_damota_22
+	sexuality = heterosexual
+
+	diplomacy = 10
+	martial = 5
+	stewardship = 9
+	intrigue = 6
+	learning = 7
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_mustache_iranian_05
+			custom_hair = no_hair
+		}
+	}
+
+	1218.7.13 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 2 }
+		}
+	}
+	1230.7.13 = {
+		trait = greedy
+		trait = ambitious
+		trait = paranoid
+	}
+	1234.7.13 = {
+		trait = education_stewardship_3
+	}
+}
+
+doffore_mogowai_2 = { # damotan merchant next to Gonan, coward
+	name = "Gibali"
+	religion = mogowai
+	culture = doffore
+	1209.5.29 = {
+		birth = yes
+	}
+	1221.5.29 = {
+		trait = deceitful
+		trait = craven
+		trait = shy
+	}
+	1225.5.29 = {
+		trait = education_intrigue_2
+	}
+}
+
+doffore_mogowai_3 = { # merchant in faille, lazy asshole
+	name = "Belahe"
+	religion = mogowai
+	culture = doffore
+	1224.4.5 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 2 }
+		}
+	}
+	1236.4.5 = {
+		trait = lazy
+		trait = wrathful
+		trait = impatient
+	}
+	1240.4.5 = {
+		trait = education_stewardship_2
+	}
+}
+
+doffore_mogowai_4 = { # hedonistic merchant
+	name = "Hedal"
+	religion = mogowai
+	culture = doffore
+	1229.9.23 = {
+		birth = yes
+	}
+	1241.9.23 = {
+		trait = gluttonous
+		trait = lustful
+		trait = stubborn
+	}
+	1245.9.23 = {
+		trait = education_stewardship_3
+	}
+}
+
+doffore_mogowai_5 = { # ruler of a small duchy, fairly decent ruler
+	name = "Monrali"
+	religion = mogowai
+	culture = doffore
+
+	dna = doffore_mogowai_5_dna
+
+	dynasty = dyn_damota_1
+
+	diplomacy = 10
+	martial = 6
+	stewardship = 8
+	intrigue = 7
+	learning = 7
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_custom_06
+			custom_hair = male_hair_special_01
+		}
+	}
+
+
+	1206.7.18 = {
+		birth = yes
+		effect = {
+	dynasty = { add_dynasty_prestige_level = 3 }
+		}
+	}
+	1218.7.18 = {
+		trait = honest
+		trait = fickle
+		trait = just
+	}
+	1222.7.18 = {
+		trait = education_diplomacy_3
+	}
+}
+
+doffore_mogowai_6 = { # count under 5, shitty magi
+	name = "Lehayla"
+	religion = mogowai
+	culture = doffore
+
+	1211.4.26 = {
+		birth = yes
+		trait = magic_good_2
+		effect = { set_base_arcana = { AMOUNT = 5 } }
+	}
+
+	1223.4.26 = {
+		trait = deceitful
+		trait = humble
+		trait = generous
+	}
+	
+	1222.7.18 = {
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:songs_of_service_and_sight }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+}
+
+doffore_mogowai_7 = { # another count under 5
+	name = "Anoru"
+	religion = mogowai
+	culture = doffore
+
+	1215.7.13 = {
+		birth = yes
+	}
+	1227.4.26 = {
+		trait = gregarious
+		trait = content
+		trait = callous
+	}
+	1231.7.18 = {
+		trait = education_martial_2
+	}
+}
+
+doffore_mogowai_8 = { # somewhat smart petty count, hates 9
+	name = "Kulare"
+	religion = mogowai
+	culture = doffore
+
+	dynasty = dyn_damota_2
+
+	diplomacy = 5
+	martial = 4
+	stewardship = 13
+	intrigue = 11
+	learning = 9
+
+	1206.6.19 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+	1218.6.19 = {
+		trait = stubborn
+		trait = chaste
+		trait = cynical
+	}
+	1222.6.19 = {
+		trait = education_intrigue_3
+	}
+	1234.2.24 = {
+		# Lonely Note: Set to historical since this was set incorrectly before, replace with something more relevant if applicable (or remove this comment if not)
+		set_relation_nemesis = {
+			target = character:doffore_mogowai_9
+			reason = nemesis_historical
+		}
+	}
+}
+
+doffore_mogowai_9 = { # slightly larger count, hates 8
+	name = "Rolib"
+	religion = mogowai
+	culture = doffore
+
+	dynasty = dyn_damota_3
+
+	diplomacy = 8
+	martial = 8
+	stewardship = 6
+	intrigue = 5
+	learning = 9
+
+	1209.9.3 = {
+		birth = yes
+	}
+	1221.9.3 = {
+		trait = temperate
+		trait = wrathful
+		trait = just
+	}
+	1225.9.3 = {
+		trait = education_learning_2
+	}
+}
+
+doffore_mogowai_10 = { # gifted mixed Magi who overthrew or threatened a bunch of people to get his realm, also an asshole
+	name = "Azhela"
+	dna = doffore_mogowai_10
+	religion = mogowai
+	culture = doffore
+	sexuality = heterosexual
+
+	dynasty = dyn_damota_4
+
+	diplomacy = 5
+	martial = 11
+	stewardship = 6
+	intrigue = 12
+	learning = 9
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_sub_saharan_01
+			custom_hair = male_hair_sub_saharan_02
+		}
+	}
+
+	1221.7.29 = {
+		birth = yes
+		trait = magic_good_6
+		effect = { set_base_arcana = { AMOUNT = 11 } }
+	}
+
+	1233.7.29 = {
+		trait = sadistic
+		trait = diligent
+		trait = arrogant
+	}
+
+	1237.7.19 = {
+		trait = schemer
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:chants_of_the_tomb }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+		effect = { learn_global_spell_effect = { SPELL_IDENTIFIER = summonfog } }
+	}
+}
+
+doffore_mogowai_11 = {  #1's wife
+	name = "Henara"
+	religion = mogowai
+	culture = doffore
+	female = yes
+	sexuality = heterosexual
+
+	diplomacy = 6
+	martial = 5
+	stewardship = 4
+	intrigue = 5
+	learning = 6
+
+	1220.7.18 = {
+		birth = yes
+	}
+	1232.7.18 = {
+		trait = gregarious
+		trait = ambitious
+		trait = craven
+	}
+	1236.7.18 = {
+		trait = education_learning_2
+	}
+	1243.1.5 = {
+		add_spouse = doffore_mogowai_1
+	}
+}
+
+doffore_mogowai_12 = { # 1's son
+	name = "Raloki"
+	religion = mogowai
+	culture = doffore
+	father = doffore_mogowai_1
+	mother = doffore_mogowai_11
+	1250.9.14 = {
+		birth = yes
+	}
+}
+
+doffore_mogowai_13 = { # Yarkiye of Sokoi, also old
+	name = "Renori"
+	religion = mogowai
+	culture = doffore
+	dynasty = dyn_damota_23
+	sexuality = asexual
+
+	diplomacy = 8
+	martial = 4
+	stewardship = 10
+	intrigue = 7
+	learning = 6
+
+	1123.7.19 = {
+		birth = yes
+		effect = {
+	dynasty = { add_dynasty_prestige_level = 2 }
+		}
+	}
+	1135.7.19 = {
+		trait = gregarious
+		trait = diligent
+		trait = callous
+	}
+	1139.7.19 = {
+		trait = education_diplomacy_2
+	}
+	1192.12.26 = {
+		death = yes
+	}
+}
+
+doffore_mogowai_14 = { # ruler of ainamba
+	name = "Eshori"
+	religion = mogowai
+	culture = doffore
+	sexuality = heterosexual
+
+	dynasty = dyn_damota_1
+
+	diplomacy = 5
+	martial = 7
+	stewardship = 6
+	intrigue = 4
+	learning = 5
+
+	1151.10.10 = {
+		birth = yes
+	}
+	1163.10.10 = {
+		trait = forgiving
+		trait = arbitrary
+		trait = stubborn
+	}
+	1167.10.10 = {
+		trait = education_stewardship_1
+	}
+	1172.3.14 = {
+		add_spouse = doffore_mogowai_15
+	}
+	1204.2.13 = {
+		death = yes
+	}
+}
+
+doffore_mogowai_15 = { # Wife of 14, perhaps even the real ruler
+	name = "Bewala"
+	religion = mogowai
+	culture = doffore
+	female = yes
+	sexuality = heterosexual
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 3
+	intrigue = 8
+	learning = 4
+
+	1153.1.7 = {
+		birth = yes
+	}
+	1165.1.7 = {
+		trait = deceitful
+		trait = arbitrary
+		trait = arrogant
+	}
+	1167.1.7 = {
+		trait = education_intrigue_3
+	}
+	1202.5.20 = {
+		death = yes
+	}
+}
+
+doffore_mogowai_16 = { # Has family feud with 18, this has been a thing for generations, the borders havent moved
+	name = "Montib"
+	religion = mogowai
+	culture = doffore
+	sexuality = bisexual
+
+	dynasty = dyn_damota_2
+
+	diplomacy = 6
+	martial = 5
+	stewardship = 6
+	intrigue = 5
+	learning = 7
+
+	1147.8.6 = {
+		birth = yes
+	}
+	1159.8.6 = {
+		trait = lustful
+		trait = zealous
+		trait = patient
+	}
+	1163.8.6 = {
+		trait = education_learning_3
+	}
+	1165.3.9 = {
+		set_relation_nemesis = {
+			target = character:doffore_mogowai_18
+			reason = nemesis_house_feud
+		}
+		add_spouse = doffore_mogowai_17
+	}
+	1205.9.12 = {
+		death = yes
+	}
+}
+
+doffore_mogowai_17 = { # Wife of 16
+	name = "Teneraz"
+	religion = mogowai
+	culture = doffore
+	female = yes
+	sexuality = heterosexual
+
+	diplomacy = 8
+	martial = 4
+	stewardship = 7
+	intrigue = 6
+	learning = 4
+
+	1150.11.16 = {
+		birth = yes
+	}
+	1159.8.6 = {
+		trait = content
+		trait = compassionate
+		trait = craven
+	}
+	1163.8.6 = {
+		trait = education_learning_3
+	}
+	1167.3.9 = {
+		# Lonely Note: Set to historical since this was set incorrectly before, replace with something more relevant if applicable (or remove this comment if not)
+		set_relation_nemesis = {
+			target = character:doffore_mogowai_18
+			reason = nemesis_historical
+		}
+	}
+	1167.5.22 = {
+		add_spouse = doffore_mogowai_16
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+doffore_mogowai_18 = { # Rival of 16
+	name = "Lelare"
+	religion = mogowai
+	culture = doffore
+	sexuality = heterosexual
+
+	dynasty = dyn_damota_3
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 6
+	intrigue = 3
+	learning = 5
+
+	1149.4.15 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	1151.4.15 = {
+		trait = vengeful
+		trait = brave
+		trait = fickle
+	}
+	1155.4.15 = {
+		trait = education_diplomacy_4
+	}
+	1160.5.4 = {
+		add_spouse = doffore_mogowai_19
+	}
+	1199.12.4 = {
+		death = yes
+	}
+}
+
+doffore_mogowai_19 = { # Wife of 18
+	name = "Newori"
+	religion = mogowai
+	culture = doffore
+	female = yes
+	sexuality = heterosexual
+
+	1154.1.25 = {
+		birth = yes
+	}
+	1203.6.17 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+doffore_mogowai_20 = { # Ruler of Paludag and Danghela
+	name = "Wuletaz"
+	religion = mogowai
+	culture = doffore
+	female = yes
+	sexuality = heterosexual
+
+	diplomacy = 6
+	martial = 10
+	stewardship = 7
+	intrigue = 6
+	learning = 6
+
+	1162.11.24 = {
+		birth = yes
+	}
+	1174.11.24 = {
+		trait = brave
+		trait = ambitious
+		trait = callous
+	}
+	1178.11.24 = {
+		trait = education_martial_2
+	}
+	1225.3.16 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+doffore_mogowai_21 = { # Leader of the Far Flung
+	name = "Deen"
+	religion = mogowai
+	culture = doffore
+	dynasty = dyn_amaros
+	dna = doffore_mogowai_21
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_hair=male_hair_ethiopian_01
+			custom_beards=male_beard_fp2_iberian_muslim_01
+		}
+	}
+
+	diplomacy = 7
+	martial = 12
+	stewardship = 1
+	intrigue = 5
+	learning = 4
+	prowess = 16
+
+	1216.8.24 = {
+		birth = yes
+		trait = magic_good_1
+		trait = gh_peasant_birth
+	}
+
+	1246.8.24 = {
+		trait = diligent
+		trait = zealous
+		trait = content
+
+		effect = { set_base_arcana = { AMOUNT = 3 } }
+	}
+
+	1248.1.1 = {
+		give_nickname = nick_far_flung
+		spawn_army = {
+			name = maple_marauders
+			men_at_arms = {
+				type = war_hounds
+				stacks = 2
+			}
+
+			location = province:1314
+			origin = province:1314
+			inheritable = yes
+		}
+	}
+
+	1254.1.1 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:songs_of_service_and_sight }
+			set_variable = { name = historical_magic_school_min_spells value = 5 }
+		}
+		trait = adventurer
+		trait = lifestyle_traveler
+		trait = tahariat_evader
+		trait = gh_ritual_tattoos
+		trait = fornicator
+		trait = gh_shortsighted
+		trait = education_arcana_3
+	}
+}

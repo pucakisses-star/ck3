@@ -1,0 +1,27 @@
+﻿symvolix_aversarinas_aagiokrata_1 = {
+    name = "Iostitia"
+    female = yes
+    religion = hero_religion
+    culture = symvolix
+    1227.7.25 = {
+        birth = yes
+    }
+    1239.7.25 = {
+        trait = craven
+        trait = shy
+        trait = calm
+    }
+    1243.7.25 = {
+        trait = education_stewardship_1
+    }
+}
+
+symvolix_aversarinas_aagiokrata_2 = {
+	name = "Apathiox"
+	religion = "aversarinas_aagiokrata"
+	culture = "symvolix"
+
+	1231.5.18 = {
+		birth = yes
+	}
+}

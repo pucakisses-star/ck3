@@ -1,0 +1,63 @@
+c_provincepelrythpia = {
+	1250.1.1 = {
+		change_development_level = 6
+	}
+	1251.1.1 = {
+		holder = theygundarope_aversarian_theygundaropei_aagiokratian_5
+		liege = k_westhold
+	}
+	1253.2.10 = {
+		liege = d_west_sjal_duchy
+	}
+}
+c_osterides_strand = {
+	1.1.1 = {
+		holder = unsorted_13
+	}
+	1251.1.1 = {
+		holder = theygundarope_aversarian_theygundaropei_aagiokratian_1
+		liege = k_westhold
+	}
+	1253.2.10 = {
+		liege = 0
+	}
+}
+c_convergence = {
+	1225.3.12 = {
+		holder = northernimperial_aversarinas_aagiokrata_10
+	}
+	1251.1.1 = {
+		holder = northernimperial_aversarinas_aagiokrata_11
+	}
+	1262.3.2 = {
+		holder = irmionoth_sjalvolki_7
+	}
+	1288.2.22 = {
+		holder = irmionoth_sjalvolki_25
+		liege = k_westhold
+	}
+	1298.1.1 = {
+		government = feudal_government
+	}
+}
+#c_sjalvolki_islands_4 = {
+#	1251.1.1 = {
+#		holder = theygundarope_aversarian_theygundaropei_aagiokratian_4
+#		liege = k_westhold
+#	}
+#	1253.2.10 = {
+#		liege = d_west_sjal_duchy
+#	}
+#}
+#c_provincenew8832 = {
+#	1251.1.1 = {
+#		holder = theygundarope_aversarian_theygundaropei_aagiokratian_2
+#		liege = k_westhold
+#	}
+#	1253.2.10 = {
+#		liege = 0
+#	}
+#	1253.2.11 = {
+#		liege = d_theygundsouth
+#	}
+#}

@@ -1,0 +1,156 @@
+﻿# The Pale Hag
+redlander_elated_victim_1 = {
+	name = "Cxuira"
+	religion = "redland_cults"
+	culture = "redlander"
+	sexuality = heterosexual
+	dna = redlander_elated_victim_1
+	female = yes
+	
+	diplomacy = 3
+	intrigue = 7
+	learning = 9
+	martial = 5
+	stewardship = 2
+
+	676.8.22 = {
+		birth = yes
+		trait = magic_good_9
+		trait = beauty_bad_3
+		trait = hunchbacked
+	}
+	690.1.1 = {
+		trait = gluttonous
+		trait = arrogant
+		trait = callous
+	}
+	750.1.1 = {
+		trait = education_intrigue_4
+		trait = gh_blackspawn_5
+		trait = cannibal
+		trait = gh_excessively_pale
+		
+		give_nickname = nick_redlander_the_pale_hag
+		
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:absolution_of_the_void }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			add_character_flag = dont_generate_family
+		}
+	}
+}
+
+redlander_elated_victim_2 = {
+	name = "Salvorn"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1015.7.21 = {
+		birth = yes
+		trait = magic_good_8
+		trait = gh_blackspawn_4
+	}
+	
+	1031.7.21 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:absolution_of_the_void }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			add_character_flag = dont_generate_family
+		}
+	}
+}
+
+redlander_elated_victim_3 = {
+	name = "Valarox"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1132.2.17 = {
+		birth = yes
+		trait = magic_good_7
+		trait = gh_blackspawn_3
+	}
+	1148.2.17 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:absolution_of_the_void }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			add_character_flag = dont_generate_family
+		}
+	}
+}
+
+
+redlander_elated_victim_4 = {
+    name = "Zuln"
+    religion = "redland_cults"
+    culture = "redlander"
+	learning = 35
+
+    903.04.10 = {
+        birth = yes
+        trait = magic_good_9
+		trait = intellect_good_3
+    }
+
+	919.4.10 = {
+		trait = gh_blackspawn_4
+		trait = education_learning_5
+		
+		trait = arbitrary
+		trait = eccentric
+		trait = callous
+		
+		effect = {
+			add_to_variable_list = { name = historical_magic_school_list target = flag:absolution_of_the_void }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			add_character_flag = dont_generate_family
+		}
+	}
+
+	1000.1.1 = {
+		trait = gh_beset_by_visions
+		trait = possessed_1
+		trait = lunatic_1
+		give_nickname = nick_redlander_the_void_speaker
+		effect = { learn_global_spell_effect = { SPELL_IDENTIFIER = spawn_dark_elementals_army } }
+	}		
+}
+
+
+
+redlander_elated_victim_5 = {
+    name = "Temnota"
+    religion = "redland_cults"
+    culture = "redlander"
+	female = yes
+
+
+    923.07.05 = {
+        birth = yes
+        trait = magic_good_7
+        trait = gh_blackspawn_3
+    }
+	
+	939.7.05 = {
+		trait = sadistic
+		trait = vengeful
+		trait = impatient
+		
+		trait = gh_excessively_pale
+		trait = scaly
+		trait = scarred
+		
+		effect = {
+			add_to_variable_list = { name = historical_magic_school_list target = flag:absolution_of_the_void }
+			add_to_variable_list = { name = historical_magic_school_list target = flag:amber_cup_rites }
+			set_variable = { name = historical_magic_school_min_spells value = 5 }
+			add_character_flag = dont_generate_family
+		}
+	}
+
+	1000.1.1 = {
+		trait = torturer
+		give_nickname = nick_redlander_the_wavestalker
+		effect = { learn_global_spell_effect = { SPELL_IDENTIFIER = spawn_night_gaunts_army } }
+	}		
+}

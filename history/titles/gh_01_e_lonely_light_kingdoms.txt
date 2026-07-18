@@ -1,0 +1,57 @@
+﻿
+k_saerdyciard_queenship = {
+	1244.1.5 = {
+		holder = eastlighter_aegispact_1
+		government = tribal_government
+		
+	}
+	1245.1.1 = {
+		succession_laws = { female_only_law }
+	}
+	1253.1.1 = {
+		liege = 0
+	}
+}
+k_black_sea_throne = {
+	1121.10.14 = {
+		holder = lich_culture_rejection_20
+		government = lichdom_government
+		liege = 0
+	}
+}
+k_aeonyhara_sacredity = {
+	1200.1.1 = {
+		holder = aeonyhara_aegispact_1
+		government = theocracy_government
+		liege = 0
+	}
+}
+k_eastlight = {
+	1241.11.16 = {
+		holder = sceyfig_lighter_aegispact_3
+		government = tribal_government
+	}
+	1253.1.1 = {
+		liege = 0
+	}
+}
+
+
+d_alcraddozy_war_pacts = {
+	1219.4.1 = {
+		holder = amyenarri_aegispact_4
+		government = tribal_government
+	}
+	1253.1.1 = {
+		liege = 0
+	}
+}
+d_amyenarri = {
+	1229.4.15 = {
+		holder = amyenarri_aegispact_3
+		government = tribal_government
+	}
+	1253.1.1 = {
+		liege = 0
+	}
+}

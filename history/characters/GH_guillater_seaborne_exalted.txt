@@ -1,0 +1,62 @@
+﻿guillater_seaborne_exalted_1 = {
+	name = "Arderico"
+	religion = seaborne_exalted
+	culture = guillater
+	trait = whole_of_body
+	trait = giant
+	1228.11.8 = {
+		birth = yes
+	}
+	1240.11.8 = {
+		trait = callous
+		trait = brave
+		trait = impatient
+	}
+	1244.11.8 = {
+		trait = education_martial_4
+		trait = reaver
+		trait = gh_historical_blademaster_3
+	}
+}
+
+guillater_seaborne_exalted_2 = {
+	name = "Giolio"
+	religion = seaborne_exalted
+	culture = guillater
+	1231.6.11 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	1243.6.11 = {
+		trait = arrogant
+		trait = wrathful
+		trait = greedy
+	}
+	1247.6.11 = {
+		trait = education_learning_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+}
+
+guillater_seaborne_exalted_3 = {
+	name = "Wolfari"
+	religion = seaborne_exalted
+	culture = guillater
+	trait = beauty_bad_1
+	trait = physique_good_1
+	1217.10.15 = {
+		birth = yes
+	}
+	1229.10.15 = {
+		trait = wrathful
+		trait = fickle
+		trait = sadistic
+	}
+	1233.10.15 = {
+		trait = education_martial_2
+	}
+}

@@ -1,0 +1,47 @@
+﻿redlander_devourer_of_all_1 = {
+	name = "Breyc"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1206.4.3 = {
+		birth = yes
+		trait = magic_good_5
+		trait = gh_blackspawn_1
+	}
+}
+
+redlander_devourer_of_all_2 = {
+	name = "Dantes"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1107.12.11 = {
+		birth = yes
+		trait = magic_good_4
+		trait = gh_blackspawn_2
+	}
+}
+
+redlander_devourer_of_all_3 = {
+	name = "Quwas"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1004.1.29 = {
+		birth = yes
+		trait = magic_good_7
+		trait = gh_blackspawn_4
+	}
+}
+
+redlander_devourer_of_all_4 = {
+	name = "Fisn"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	937.11.15 = {
+		birth = yes
+		trait = magic_good_6
+		trait = gh_blackspawn_4
+	}
+}

@@ -1,0 +1,264 @@
+﻿rakosakai_aversarinas_aagiokrata_1 = { # Leader of Alevanalir Pact, charismatic and well-learned, but not much of a war leader
+	name = "Megisomos"
+	religion = aversarinas_aagiokrata
+	culture = rakosakai
+	sexuality = heterosexual
+	
+	dynasty = dyn_aversarian_81
+	
+	diplomacy = 6
+	martial = 5
+	stewardship = 4
+	intrigue = 5
+	learning = 6
+	
+	1149.4.2 = {
+		birth = yes
+		trait = magic_good_4
+	}
+	1161.4.2 = {
+		trait = gregarious
+		trait = patient
+		trait = callous
+	}
+	1165.4.2 = {
+		trait = education_diplomacy_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+	1178.2.11 = {
+		add_spouse = rakosakai_aversarinas_aagiokrata_2
+	}
+	1221.10.30 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+rakosakai_aversarinas_aagiokrata_2 = { # Wife of above, actually a good partner
+	name = "Eriphyle"
+	female = yes
+	religion = aversarinas_aagiokrata
+	culture = rakosakai
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 6
+	stewardship = 5
+	intrigue = 4
+	learning = 5
+	
+	1150.2.14 = {
+		birth = yes
+		trait = magic_good_6
+	}
+	1162.2.14 = {
+		trait = cynical
+		trait = wrathful
+		trait = stubborn
+	}
+	1166.2.14 = {
+		trait = education_stewardship_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+	1178.9.23 = {
+		set_relation_soulmate = character:rakosakai_aversarinas_aagiokrata_1
+	}
+	1216.9.4 = {
+		death = {
+			death_reason = death_execution
+			#killer = Sea-Sword
+		}
+	}
+}
+
+rakosakai_aversarinas_aagiokrata_3 = { # Member of Alevanalir Pact, later leads the rebellion against the Pact
+	name = "Syacos"
+	religion = aversarinas_aagiokrata
+	culture = rakosakai
+	sexuality = heterosexual
+	
+	dynasty = dyn_aversarian_82
+	
+	diplomacy = 5
+	martial = 6
+	stewardship = 5
+	intrigue = 5
+	learning = 6
+	
+	1165.3.18 = {
+		birth = yes
+	}
+	1177.3.18 = {
+		trait = brave
+		trait = ambitious
+		trait = patient
+	}
+	1181.3.18 = {
+		trait = education_stewardship_1
+	}
+	1187.5.14 = {
+		add_spouse = rakosakai_aversarinas_aagiokrata_4
+	}
+	1208.2.8 = {
+		set_relation_rival = character:rakosakai_aversarinas_aagiokrata_1
+	}
+	1225.2.15 = {
+		death = {
+			death_reason = death_smallpox
+		}
+	}
+}
+
+rakosakai_aversarinas_aagiokrata_4 = { # Wife of above
+	name = "Eriphyle"
+	female = yes
+	religion = aversarinas_aagiokrata
+	culture = rakosakai
+	sexuality = heterosexual
+	
+	diplomacy = 4
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	
+	1160.4.16 = {
+		birth = yes
+		trait = magic_good_6
+	}
+	1172.4.16 = {
+		trait = arbitrary
+		trait = stubborn
+		trait = brave
+	}
+	1176.4.16 = {
+		trait = education_learning_2
+	}
+	1221.4.5 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+rakosakai_aversarinas_aagiokrata_5 = { # Eventual Pact of Arteseos leader, before that a loyalist to the archexate.
+	name = "Eirenaios"
+	religion = aversarinas_aagiokrata
+	culture = rakosakai
+	sexuality = heterosexual
+	
+	dynasty = dyn_aversarian_88
+	
+	diplomacy = 5
+	martial = 6
+	stewardship = 4
+	intrigue = 4
+	learning = 5
+	
+	1173.3.18 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	1185.3.18 = {
+		trait = gluttonous
+		trait = shy
+		trait = fickle
+	}
+	1189.3.18 = {
+		trait = education_diplomacy_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+	1190.1.1 = {
+		capital = c_arteseos
+	}
+	1194.5.14 = {
+		add_spouse = rakosakai_aversarinas_aagiokrata_6
+	}
+	1210.2.8 = {
+		set_relation_rival = character:vonatolis_aversarinas_aagiokrata_7
+	}
+	1234.2.15 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+rakosakai_aversarinas_aagiokrata_6 = { # Wife of above
+	name = "Kale"
+	religion = aversarinas_aagiokrata
+	culture = rakosakai
+	sexuality = homosexual
+	female = yes
+
+	diplomacy = 5
+	martial = 4
+	stewardship = 5
+	intrigue = 4
+	learning = 3
+
+	1174.5.16 = {
+		birth = yes
+	}
+	1186.5.16 = {
+		trait = greedy
+		trait = callous
+		trait = lazy
+	}
+	1190.5.16 = {
+		trait = education_intrigue_1
+	}
+	1237.4.19 = {
+		death = {
+			death_reason = death_cancer
+		}
+	}
+}
+
+rakosakai_aversarinas_aagiokrata_7 = { # Daughter of 3, continues to lead her little fiefdom, eventually becomes a subject of the pirate legion
+	name = "Astyoche"
+	religion = aversarinas_aagiokrata
+	culture = rakosakai
+	sexuality = homosexual
+	female = yes
+
+	dynasty = dyn_aversarian_82
+	father = rakosakai_aversarinas_aagiokrata_3
+	mother = rakosakai_aversarinas_aagiokrata_4
+
+	diplomacy = 6
+	martial = 5
+	stewardship = 5
+	intrigue = 4
+	learning = 7
+
+	1192.5.16 = {
+		birth = yes
+	}
+	1204.5.16 = {
+		trait = patient
+		trait = deceitful
+		trait = arrogant
+	}
+	1208.5.16 = {
+		trait = education_diplomacy_2
+	}
+	1262.4.24 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}

@@ -1,0 +1,490 @@
+﻿muhadamd_cumani_1 = {
+	name = "Odchidin"
+	religion = "cumani"
+	culture = "muhadamd"
+	1217.3.30 = {
+		birth = yes
+	}
+
+	1259.2.11 = {
+		add_spouse = easternimperial_aironoian_aagiokrata_1 # Marries Hecaeda
+	}
+
+	1271.4.12 = {
+		death = { death_reason = death_hunting_accident }
+	}
+}
+
+muhadamd_cumani_3 = {
+	name = "Baeda"
+	religion = "cumani"
+	culture = "arderwan"
+	female = yes
+
+	1193.2.12 = {
+		birth = yes
+	}
+}
+
+muhadamd_cumani_4 = {
+	name = "Khutulan"
+	religion = "cumani"
+	culture = "muhadamd"
+	female = yes
+
+	1193.2.12 = {
+		birth = yes
+	}
+	1252.3.18 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+muhadamd_cumani_5 = {
+	name = "Botokhui"
+	religion = "cumani"
+	culture = "muhadamd"
+	female = yes
+
+	1194.12.24 = {
+		birth = yes
+	}
+}
+
+muhadamd_cumani_8 = {
+	name = "Doquz"
+	religion = "cumani"
+	culture = "muhadamd"
+	female = yes
+
+	1201.12.11 = {
+		birth = yes
+	}
+}
+
+muhadamd_cumani_9 = {
+	name = "Doquz"
+	religion = "cumani"
+	culture = "muhadamd"
+	female = yes
+
+	1201.12.11 = {
+		birth = yes
+	}
+}
+
+muhadamd_cumani_10 = {
+	name = "Altani"
+	religion = "cumani"
+	culture = "arderwan"
+	female = yes
+
+	1175.1.21 = {
+		birth = yes
+	}
+}
+
+muhadamd_cumani_11 = {
+	name = "Khojin"
+	religion = "cumani"
+	culture = "muhadamd"
+	female = yes
+
+	1175.1.21 = {
+		birth = yes
+	}
+}
+
+muhadamd_cumani_12 = {
+	name = "Curda"
+	religion = "cumani"
+	culture = "arderwan"
+	father = muhadamd_cumani_21
+	mother = muhadamd_cumani_3
+
+	1216.9.11 = {
+		birth = yes
+	}
+}
+
+muhadamd_cumani_13 = {
+	name = "Shiraghul"
+	religion = "cumani"
+	culture = "muhadamd"
+	father = muhadamd_cumani_35
+	mother = kuridorig_cumani_12
+
+	1222.1.12 = {
+		birth = yes
+	}
+}
+
+muhadamd_cumani_14 = {
+	name = "Temuge"
+	religion = "cumani"
+	culture = "arderwan"
+	father = muhadamd_cumani_36
+	mother = muhadamd_cumani_10
+
+	1237.1.12 = {
+		birth = yes
+	}
+}
+
+muhadamd_cumani_15 = {
+	name = "Batu"
+	religion = "cumani"
+	culture = "muhadamd"
+	father = muhadamd_cumani_23
+	mother = muhadamd_cumani_4
+
+	1226.1.12 = {
+		birth = yes
+	}
+}
+
+muhadamd_cumani_16 = {
+	name = "Hulegu"
+	religion = "cumani"
+	culture = "muhadamd"
+	father = muhadamd_cumani_31
+	mother = muhadamd_cumani_8
+
+	1229.1.12 = {
+		birth = yes
+	}
+}
+
+muhadamd_cumani_17 = {
+	name = "Godan"
+	religion = "cumani"
+	culture = "muhadamd"
+	father = muhadamd_cumani_33
+	mother = muhadamd_cumani_9
+
+	1226.1.12 = {
+		birth = yes
+	}
+}
+
+muhadamd_cumani_18 = {
+	name = "Gurbesu"
+	religion = "cumani"
+	culture = "muhadamd"
+	female = yes
+	father = muhadamd_cumani_25
+	mother = muhadamd_cumani_5
+
+	1223.1.12 = {
+		birth = yes
+	}
+}
+
+muhadamd_cumani_21 = {
+	name = "Ukhuna"
+	religion = "cumani"
+	culture = "arderwan"
+	father = muhadamd_cumani_22
+
+	1185.3.4 = {
+		birth = yes
+	}
+	1212.4.11 = {
+		add_spouse = muhadamd_cumani_3
+	}
+	1238.3.14 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+muhadamd_cumani_22 = {
+	name = "Khaidu"
+	religion = "cumani"
+	culture = "arderwan"
+
+	1148.3.1 = {
+		birth = yes
+	}
+	1215.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+muhadamd_cumani_23 = {
+	name = "Aguchu"
+	religion = "cumani"
+	culture = "muhadamd"
+	father = muhadamd_cumani_24
+
+	1195.3.4 = {
+		birth = yes
+	}
+	1220.4.11 = {
+		add_spouse = muhadamd_cumani_3
+	}
+	1250.3.14 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+muhadamd_cumani_24 = {
+	name = "Khagatai"
+	religion = "cumani"
+	culture = "muhadamd"
+
+	1178.3.5 = {
+		birth = yes
+	}
+	1215.1.4 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+muhadamd_cumani_25 = {
+	name = "Dagun"
+	religion = "cumani"
+	culture = "muhadamd"
+	father = muhadamd_cumani_26
+
+	1194.3.4 = {
+		birth = yes
+	}
+	1221.8.10 = {
+		add_spouse = muhadamd_cumani_3
+	}
+	1248.1.24 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+muhadamd_cumani_26 = {
+	name = "Yeke"
+	religion = "cumani"
+	culture = "muhadamd"
+
+	1165.3.1 = {
+		birth = yes
+	}
+	1213.8.4 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+muhadamd_cumani_31 = {
+	name = "Chulgetei"
+	religion = "cumani"
+	culture = "muhadamd"
+	father = muhadamd_cumani_32
+
+	1192.3.21 = {
+		birth = yes
+	}
+	1249.11.8 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+muhadamd_cumani_32 = {
+	name = "Horkhudagh"
+	religion = "cumani"
+	culture = "muhadamd"
+
+	1178.3.21 = {
+		birth = yes
+	}
+	1223.11.4 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+muhadamd_cumani_33 = {
+	name = "Chulgetei"
+	religion = "cumani"
+	culture = "muhadamd"
+	father = muhadamd_cumani_32
+
+	1192.3.21 = {
+		birth = yes
+	}
+	1249.11.8 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+muhadamd_cumani_34 = {
+	name = "Chiledu"
+	religion = "cumani"
+	culture = "muhadamd"
+
+	1132.6.1 = {
+		birth = yes
+	}
+	1198.8.9 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+muhadamd_cumani_35 = {
+	name = "Narin"
+	religion = "cumani"
+	culture = "muhadamd"
+	father = muhadamd_cumani_34
+
+	1174.11.21 = {
+		birth = yes
+	}
+	1240.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+muhadamd_cumani_36 = {
+	name = "Semsochule"
+	religion = "cumani"
+	culture = "arderwan"
+
+	1174.11.21 = {
+		birth = yes
+	}
+	1250.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+muhadamd_cumani_37 = {
+	name = "Aguchu"
+	religion = "cumani"
+	culture = "muhadamd"
+
+	1174.11.21 = {
+		birth = yes
+	}
+	1250.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+muhadamd_cumani_38 = { # Altan muhadamd vassal
+	name = "Khagatai"
+	religion = cumani
+	culture = muhadamd
+	dynasty = dyn_muhadamd_1
+	disallow_random_traits = yes
+
+	martial = 8
+	diplomacy = 6
+	stewardship = 7
+	intrigue = 4
+	learning = 5
+	prowess = 2
+
+	1200.3.25 = {
+		birth = yes
+	}
+
+	1212.1.1 = {
+		trait = vengeful
+		trait = content
+		trait = sadistic
+	}
+
+	1216.3.25 = {
+		trait = education_diplomacy_4
+		trait = gh_historical_blademaster_2
+	}
+}
+
+muhadamd_cumani_39 = {
+	name = "Khubilai"
+	religion = cumani
+	culture = muhadamd
+	dynasty = dyn_muhadamd_1
+	disallow_random_traits = yes
+
+	father = muhadamd_cumani_38
+
+	martial = 9
+	diplomacy = 11
+	stewardship = 8
+	intrigue = 6
+	learning = 8
+	prowess = 10
+
+	1229.5.25 = {
+		birth = yes
+		trait = physique_good_2
+	}
+
+	1241.1.1 = {
+		trait = deceitful
+		trait = ambitious
+		trait = callous
+	}
+
+	1244.5.25 = {
+		trait = education_martial_2
+		trait = gh_historical_blademaster_1
+		trait = open_terrain_expert
+	}
+}
+
+muhadamd_cumani_40 = { # Altan muhadamd vassal 2
+	name = "Sengun_Bilge"
+	religion = cumani
+	culture = muhadamd
+	dynasty = dyn_muhadamd_2
+	disallow_random_traits = yes
+
+	martial = 4
+	diplomacy = 4
+	stewardship = 5
+	intrigue = 6
+	learning = 5
+	prowess = 6
+
+	1228.1.24 = {
+		birth = yes
+	}
+
+	1240.1.1 = {
+		trait = greedy
+		trait = deceitful
+		trait = trusting
+	}
+
+	1244.1.24 = {
+		trait = education_intrigue_3
+	}
+}
+
+
+
+

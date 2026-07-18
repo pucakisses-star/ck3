@@ -1,0 +1,58 @@
+d_nisoni = {
+	1253.1.1 = {
+		liege = "k_fenvir"
+		holder = fenvir_sjalvolki_12 
+		government = continental_clan_government
+	}
+	1230.1.1 = {
+		change_development_level = 2
+	}
+}
+
+d_epidamnus = {
+	1082.6.7 = {
+		holder = easternimperial_aironoian_aagiokrata_92
+		government = feudal_government
+	}
+	1134.11.6 = {
+		holder = easternimperial_aironoian_aagiokrata_91
+		government = feudal_government
+	}
+	1163.6.18 = {
+		holder = easternimperial_aversarian_axiaotheaism_13
+		government = feudal_government
+	}
+	1192.3.16 = {
+		holder = easternimperial_aversarian_axiaotheaism_9
+		government = feudal_government
+	}
+	1249.1.1 = {
+		holder = 0
+	}
+	1230.1.1 = {
+		change_development_level = 4
+	}
+}
+
+d_lasanoi = {
+	1145.6.27 = {
+		holder = southernimperial_aversarinas_aagiokrata_110
+		liege = e_aironoi
+		government = feudal_government
+	}
+	1187.10.18 = {
+		holder = southernimperial_aversarinas_aagiokrata_112
+	}
+	1211.5.15 = {
+		holder = easternislander_aversarinas_aagiokrata_9
+	}
+	1237.11.19 = {
+		holder = easternislander_aversarinas_aagiokrata_10
+	}
+	1230.1.1 = {
+		change_development_level = 3
+	}
+	1253.7.17 = {
+		holder = easternislander_aversarinas_aagiokrata_11
+	}
+}

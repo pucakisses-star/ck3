@@ -1,0 +1,108 @@
+c_derkenv = {
+	1000.1.1 = {
+		holder = wasteland
+	}
+}
+c_fashirund = {
+	1230.1.1 = {
+		holder = qahsarides_anaanides_1
+		liege = 0
+	}
+}
+c_betaddis = {
+	1230.1.1 = {
+		holder = simevian_sheharddi_1
+		liege = 0
+		government = theocracy_government
+	}
+}
+c_bherv = {
+	1230.1.1 = {
+		holder = babura_ruidari_2
+		liege = e_ayyar
+	}
+}
+c_puraturan = {
+	1000.1.1 = {
+		holder = wasteland
+	}
+	#1230.1.1 = {
+	#	holder = babura_ruidari_7
+	#	change_development_level = 4
+	#}
+}
+c_garathadi = {
+	1230.1.1 = {
+		holder = babura_ruidari_3
+		liege = e_ayyar
+	}
+}
+c_gradhva = {
+	1000.1.1 = {
+		holder = wasteland
+	}
+}
+c_svikvita = {
+	1230.1.1 = {
+		holder = babura_ruidari_5
+		liege = e_ayyar
+	}
+}
+c_herekrathi = {
+	1226.1.1 = {
+		holder = leriseb_sheharddi_1
+	}
+}
+c_dattad = {
+	1242.5.12 = {
+		holder = ashital_sheharddi_1
+		liege = 0
+	}
+	1254.1.1 = {
+		succession_laws = { female_only_law }
+	}
+}
+c_afkan = {
+	1242.5.12 = {
+		holder = ashital_sheharddi_1
+		liege = 0
+	}
+	1254.1.1 = {
+		succession_laws = { female_only_law }
+	}
+}
+c_shenidad = {
+	1230.1.1 = {
+		holder = leviden_sheharddi_1
+		government = republic_playable_government
+		liege = 0
+	}
+}
+c_confikur = {
+	1230.1.1 = {
+		holder = leviden_sheharddi_1
+		government = republic_playable_government
+		liege = 0
+	}
+}
+
+c_rarathgaik = {
+	1196.6.14 = {
+		holder = wasteland
+	}
+}
+c_korradad = {
+	1000.1.1 = {
+		holder = wasteland
+	}
+	#1230.1.1 = {
+	#	holder = babura_ruidari_7
+	#	change_development_level = 4
+	#}
+}
+c_deefit = {
+	1230.1.1 = {
+		holder = ashital_sheharddi_2
+		government = republic_playable_government
+	}
+}

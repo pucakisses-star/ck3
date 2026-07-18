@@ -1,0 +1,35 @@
+﻿uthanata_vidvaookeyatra_1 = { # Kasharya narotang
+	name = "Dayaram"
+	religion = "vidvaookeyatra"
+	culture = "uthanata"
+	1216.8.8 = {
+		birth = yes
+	}
+}
+
+uthanata_vidvaookeyatra_2 = { # Kasharya narotang
+	name = "Narayan"
+	religion = "vidvaookeyatra"
+	culture = "uthanata"
+	1235.8.8 = {
+		birth = yes
+	}
+}
+
+uthanata_vidvaookeyatra_3 = { # Kasharya narotang
+	name = "Jetha"
+	religion = "vidvaookeyatra"
+	culture = "uthanata"
+	1205.8.8 = {
+		birth = yes
+	}
+}
+
+uthanata_vidvaookeyatra_4 = { # Kasharya narotang
+	name = "Mohan"
+	religion = "vidvaookeyatra"
+	culture = "uthanata"
+	1225.8.8 = {
+		birth = yes
+	}
+}

@@ -1,0 +1,30 @@
+﻿azarg_kutahnuug_guusag_bikhesektan_1 = { # Azarg Adventurer
+	name = "Zahjang"
+	religion = "guusag_bikhesektan"
+	culture = "azarg_kutahnuug"
+	dynasty = dyn_azargi_1
+
+	martial = 9
+	diplomacy = 6
+	intrigue = 8
+	stewardship = 3
+	learning = 5
+	prowess = 10
+
+	1234.5.31 = {
+		birth = yes
+		trait = strong
+	}
+
+	1246.1.1 = {
+		trait = sadistic
+		trait = brave
+		trait = patient
+	}
+
+	1250.5.31 = {
+		trait = education_martial_2
+		trait = gh_historical_blademaster_1
+		trait = one_eyed
+	}
+}

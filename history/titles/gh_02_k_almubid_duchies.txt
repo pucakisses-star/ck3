@@ -1,0 +1,32 @@
+d_east_sarradon3 = {
+	1230.1.1 = { change_development_level = 4 }
+}
+d_eastern_dreamrend_isles = {
+	1230.1.1 = {
+		holder = makryenis_forgotten_5
+		liege = k_isle_of_visions		
+		government = landed_order_government
+	}
+	1230.1.1 = { change_development_level = 6 }
+}
+d_western_dreamrend_isles = {
+	1230.1.1 = {
+		government = landed_order_government 
+		holder = makryenis_forgotten_7
+		liege = k_isle_of_visions		
+	}
+	1230.1.1 = { change_development_level = 11 }
+}
+d_isle_of_visions = {
+	1230.1.1 = {
+		holder = makryenis_forgotten_11
+		liege = k_isle_of_visions		
+	}
+	1230.1.1 = { change_development_level = 12 }
+}
+d_the_eye = {
+	1230.1.1 = {
+		holder = makryenis_forgotten_1
+	}
+	1230.1.1 = { change_development_level = 4 }
+}

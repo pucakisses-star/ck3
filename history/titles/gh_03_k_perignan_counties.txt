@@ -1,0 +1,208 @@
+c_permapilese = {
+	1230.1.1 = { change_development_level = 12 }
+	
+	1230.1.1 = {
+		holder = voyagen_lifepath_17
+		government = republic_playable_government
+		liege = 0
+	}
+}
+c_nambre = {
+	1230.1.1 = { change_development_level = 11 }
+	
+	1253.12.21 = {
+		holder = voyagen_lifepath_17
+ 		government = republic_playable_government
+		liege = 0
+	}
+}
+c_maanasc = {
+	1192.8.27 = {
+		holder = voyagen_lifepath_81
+		government = feudal_government
+		liege = e_chevalie
+	}
+	1243.6.8 = {
+		holder = voyagen_lifepath_82
+		government = feudal_government
+		liege = e_chevalie
+	}
+	1244.10.25 = {
+		holder = voyagen_lifepath_1
+		government = feudal_government
+		liege = e_chevalie
+	}
+	1253.11.12 = {
+		holder = trustians_lifepath_1
+		government = feudal_government
+		liege = 0
+	}
+}
+#c_siconbre = {
+#	1228.3.14 = {
+#		holder = carsavisians_lifepath_21
+#	}
+#}
+#c_bacsi = {
+#	1230.1.1 = {
+#		change_development_level = 10
+#	}
+#	1253.11.16 = {
+#		liege = "k_varrdevet"
+#		holder = carsavisians_lifepath_19
+#	}
+#}
+#c_chaudchien = {
+#	1253.11.16 = {
+#		liege = "k_varrdevet"
+#		holder = voyagen_lifepath_14
+#	}
+#}
+c_geedern = {
+	1.1.2 = {
+		holder = unsorted_29
+	}
+	1253.11.16 = {
+		liege = "k_varrdevet"
+		holder = voyagen_lifepath_14
+	}
+}
+c_vaduex = {
+	1.1.2 = {
+		holder = unsorted_29
+	}
+	1191.8.6 = {
+		liege = "e_chevalie"
+		holder = rivarisians_lifepath_3
+	}
+	1219.3.9 = {
+		liege = "k_black_gold_league"
+		holder = salisians_lifepath_7
+	}
+	1224.6.2 = {
+		liege = "e_chevalie"
+		holder = rivarisians_lifepath_3
+	}
+	1236.11.20 = {
+		holder = rivarisians_lifepath_2
+	}
+	1253.11.16 = {
+		liege = "k_varrdevet"
+	}
+}
+c_scoc = {
+	1230.1.1 = {
+		change_development_level = 10
+	}
+	1253.11.16 = {
+		liege = "k_varrdevet"
+		holder = carsavisians_lifepath_20
+	}
+}
+c_varidean = {
+	1.1.2 = {
+		holder = unsorted_29
+	}
+	1130.11.1 = {
+		holder = rivarisians_lifepath_11
+	}
+	1140.2.9 = {
+		liege = "k_de_kanzelerij"
+		holder = urdermantern_lifepath_4
+		government = republic_playable_government
+	}
+	1140.9.10 = {
+		liege = "k_de_kanzelerij"
+		holder = konijkmener_lifepath_48
+		government = republic_playable_government
+	}
+	1145.10.2 = {
+		liege = "k_de_kanzelerij"
+		holder = konijkmener_lifepath_49
+		government = administrative_republic_playable_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = republic_playable_government
+				}
+			}
+		}
+	}
+	1152.11.23 = {
+		liege = "e_chevalie"
+		holder = voyagen_lifepath_23
+		government = feudal_government
+	}
+	1190.7.5 = {
+		liege = "e_chevalie"
+		holder = rivarisians_lifepath_7
+		government = feudal_government
+	}
+	1210.8.3 = {
+		liege = "e_chevalie"
+		holder = rivarisians_lifepath_8
+		government = feudal_government
+	}
+	1220.11.18 = {
+		liege = "e_chevalie"
+		holder = rivarisians_lifepath_9
+	}
+	1220.11.20 = {
+		holder = rivarisians_lifepath_4
+	}
+	1226.9.3 = {
+		holder = rivarisians_lifepath_10
+		government = feudal_government
+	}
+	1236.11.20 = {
+		liege = "d_vallguedoc"
+	}
+}
+c_aastauxporte = {
+	807.10.4 = {
+		holder = trustians_lifepath_31
+		liege = e_chevalie
+		government = republic_playable_government
+	}
+	1197.10.14 = {
+		holder = voyagen_lifepath_79
+		liege = e_chevalie
+		government = republic_playable_government
+	}
+	1219.12.27 = {
+		holder = salisians_lifepath_15
+		liege = k_black_gold_league
+		government = feudal_government
+	}
+	1221.6.1 = {
+		holder = salisians_lifepath_16
+		liege = k_black_gold_league
+		government = feudal_government
+	}
+	1222.3.27 = {
+		holder = voyagen_lifepath_80
+		liege = e_chevalie
+		government = republic_playable_government
+		succession_laws = { clique_republic_elective_title_succession_law }
+	}
+	1244.9.13 = {
+		holder = voyagen_lifepath_11
+		liege = e_chevalie
+		government = republic_playable_government
+	}
+	1253.11.12 = {
+		liege = 0
+	}
+}
+c_faiville = {
+	1230.1.1 = {
+		holder = voyagen_lifepath_11
+		liege = 0
+		government = republic_playable_government
+		succession_laws = { clique_republic_elective_title_succession_law }
+	}
+}

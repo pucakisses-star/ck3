@@ -1,0 +1,17 @@
+﻿d_east_passage = { 
+	1.1.1 = {
+		change_development_level = 3 
+	}
+}
+
+d_northern_hills = { 
+	1.1.1 = {
+		change_development_level = 3 
+	}
+}
+
+d_jerneims_hunting_jungle = { 
+	1.1.1 = {
+		change_development_level = 3 
+	}
+}

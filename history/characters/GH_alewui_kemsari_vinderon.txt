@@ -1,0 +1,27 @@
+﻿alewui_kemsari_vinderon_1 = { # Shy bookkeeper
+	name = "Msamaki"
+	dna = kemsar_3
+	religion = "vinderon"
+	culture = "alewui_kemsari"
+	dynasty = dyn_kemsar_3
+
+	trait = diligent
+	trait = greedy
+	trait = shy
+	trait = education_stewardship_2
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_western_03
+		}
+	}
+
+	1226.1.1 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 1 }
+		}
+	}
+}

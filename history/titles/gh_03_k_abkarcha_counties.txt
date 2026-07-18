@@ -1,0 +1,50 @@
+c_gulripstia = {
+	1197.8.30 = {
+		holder = amaghean_amaghean_aagiokrata_33
+		change_development_level = 9
+	}
+	1224.9.4 = {
+		liege = k_svanti
+		holder = charchac_daminkar_2
+	}
+	1240.11.15 = {
+		liege = d_ksagro
+		holder = charchac_tsokar_1
+	}
+}
+c_gagtekhi = {
+	1195.7.20 = {
+		# liege = d_sohrati # GH TODO: Sohrati removed find new duchy
+		holder = easternislander_aeschraes_aagiokrata_1
+		change_development_level = 7
+	}
+	1230.1.1 = {
+		# liege = d_sohrati # GH TODO: Sohrati removed find new duchy
+		holder = yylaxxaz_xaxbaxakanax_5
+	}
+}
+c_sigholdepo = {
+	1195.7.20 = {
+		# liege = d_sohrati # GH TODO: Sohrati removed find new duchy
+		holder = easternislander_aeschraes_aagiokrata_1
+		change_development_level = 6
+	}
+	1230.1.1 = {
+		liege = 0
+		holder = mahratian_mahrator_7
+	}
+	1269.1.1 = {
+		holder = balauri_zaldrigas_21
+		liege = d_vaycovolki_kymbela
+	}
+}
+c_rustlai = {
+	1230.1.1 = {
+		holder = yylaxxaz_xaxbaxakanax_4
+		change_development_level = 7
+	}
+	1269.1.1 = {
+		holder = balauri_zaldrigas_19
+		liege = d_vaycovolki_kymbela
+	}
+}

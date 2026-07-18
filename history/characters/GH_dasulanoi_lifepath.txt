@@ -1,0 +1,21 @@
+﻿dasulanoi_lifepath_1 = {
+    name = "Maeve"
+    female = yes
+    culture = dasulanoi
+    religion = lifepath
+
+    1073.1.15 = {
+        birth = yes
+    }
+
+    1089.1.15 = {
+        trait = gregarious
+        trait = calm
+        trait = stubborn
+        trait = education_diplomacy_2
+    }
+
+    1133.9.5 = {
+        death = { death_reason = death_old_age }
+    }
+}

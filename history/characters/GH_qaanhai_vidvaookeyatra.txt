@@ -1,0 +1,17 @@
+﻿qaanhai_vidvaookeyatra_1 = {
+	name = "Itlar"
+	religion = "vidvaookeyatra"
+	culture = "qaanhai"
+	1222.8.8 = {
+		birth = yes
+	}
+}
+
+qaanhai_vidvaookeyatra_2 = {
+	name = "Kozel"
+	religion = "vidvaookeyatra"
+	culture = "qaanhai"
+	1218.8.8 = {
+		birth = yes
+	}
+}

@@ -1,0 +1,17 @@
+﻿lorodegi_hero_religion_1 = {
+	name = "Alberto"
+	religion = hero_religion
+	culture = lorodegi
+	1215.11.26 = {
+		birth = yes
+	}
+}
+
+lorodegi_hero_religion_2 = {
+	name = "Camillo"
+	religion = hero_religion
+	culture = lorodegi
+	1214.2.14 = {
+		birth = yes
+	}
+}

@@ -1,0 +1,60 @@
+d_outer_halo = {
+	1251.4.14 = { change_development_level = 3 }
+
+}
+
+#d_psacus = {
+#	1078.1.5 = {
+#		holder = southislander_aversarinas_aagiokrata_1
+#	}
+#
+#	1251.4.14 = { change_development_level = 3 }
+#	
+#	1251.4.14 = {
+#		holder = practitioner_aversarinas_aagiokrata_16
+#	}
+#
+#	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+#		de_jure_liege = k_sladia
+#	}
+#}
+
+#d_ayteos = {
+#	1078.1.5 = {
+#		holder = southislander_aversarinas_aagiokrata_1
+#	}
+#	
+#	1251.4.14 = { change_development_level = 3 }
+#	
+#	1251.4.14 = {
+#		holder = practitioner_aversarinas_aagiokrata_16
+#	}
+#
+#	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+#		de_jure_liege = k_sladia
+#	}
+#}
+
+d_aervalrs_halo = {
+	1191.1.4 = {
+		holder = southislander_black_fraternity_1
+		liege = 0
+	}
+
+	1200.3.1 = {
+		holder = 0
+	}
+
+	1251.4.14 = { change_development_level = 2 }
+	
+	1251.4.14 = {
+		holder = southernimperial_aversarinas_aagiokrata_61
+		liege = 0
+	}
+}
+
+#d_artesmos_isles = {
+#	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+#		de_jure_liege = k_siktak
+#	}
+#}

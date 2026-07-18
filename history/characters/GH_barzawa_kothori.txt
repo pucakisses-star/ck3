@@ -1,0 +1,107 @@
+﻿barzawa_kothori_1 = {
+	name = "Tapanuna"
+	religion = "kothori"
+	culture = "barzawa"
+
+	martial = 9
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 10
+	learning = 5
+	prowess = 6
+
+	1233.9.9 = {
+		birth = yes
+	}
+
+	1245.1.1 = {
+		trait = humble
+		trait = diligent
+		trait = paranoid
+	}
+
+	1249.9.9 = {
+		trait = education_intrigue_2
+	}
+}
+barzawa_kothori_2 = {
+	name = "Bibi"
+	religion = "kothori"
+	culture = "barzawa"
+	female = yes
+
+	martial = 5
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 10
+	learning = 5
+	prowess = 5
+
+	1232.5.21 = {
+		birth = yes
+	}
+
+	1244.1.1 = {
+		trait = compassionate
+		trait = brave
+		trait = calm
+	}
+
+	1248.5.21 = {
+		trait = education_stewardship_4
+	}
+}
+barzawa_kothori_3 = {
+	name = "Matawata"
+	religion = "kothori"
+	culture = "barzawa"
+	female = yes
+
+	martial = 4
+	diplomacy = 9
+	intrigue = 3
+	stewardship = 3
+	learning = 5
+	prowess = 10
+
+	1220.2.6 = {
+		birth = yes
+	}
+
+	1232.1.1 = {
+		trait = arrogant
+		trait = wrathful
+		trait = content
+	}
+
+	1236.2.6 = {
+		trait = education_learning_2
+	}
+}
+barzawa_kothori_4 = {
+	name = "Tiwatawazi"
+	religion = "kothori"
+	culture = "barzawa"
+	female = yes
+
+	martial = 5
+	diplomacy = 4
+	intrigue = 2
+	stewardship = 8
+	learning = 5
+	prowess = 8
+
+	1214.1.1 = {
+		birth = yes
+	}
+
+	1226.1.1 = {
+		trait = temperate
+		trait = gregarious
+		trait = lustful
+	}
+
+	1230.1.1 = {
+		trait = education_diplomacy_3
+	}
+}

@@ -1,0 +1,84 @@
+k_kebnachi = {
+	1188.9.4 = {
+		holder = garami_varodaism_1a
+	}
+	1200.1.1 = {
+		change_development_level = 14
+	}
+	1200.3.1 = {
+		holder = garami_varodaism_1b
+	}
+	1218.5.10 = {
+		holder = garami_varodaism_1
+	}
+}
+#k_kegoda = {
+#	1178.9.7 = {
+#		holder = hokanta_vidvaookeyatra_24
+#	}
+#	1202.9.7 = {
+#		holder = 0
+#	}
+#}
+k_kinilam = {
+	1091.8.4 = {
+		holder = hokanta_vidvaookeyatra_4
+	}
+	1112.1.14 = {
+		holder = hokanta_vidvaookeyatra_6
+	}
+	1135.4.2 = {
+		holder = hokanta_vidvaookeyatra_10
+	}
+	1140.1.13 = {
+		holder = hokanta_vidvaookeyatra_14
+	}
+	1147.4.26 = { 
+		holder = hokanta_vidvaookeyatra_16
+	}
+	1178.8.20 = {
+		holder = hokanta_vidvaookeyatra_18
+	}
+	1200.1.1 = {
+		change_development_level = 16
+	}
+	1213.8.26 = {
+		holder = hokanta_vidvaookeyatra_1
+	}
+	1248.11.11 = {
+		holder = hokanta_vidvaookeyatra_33
+	}
+}
+k_wellatola = {
+	998.3.1 = {
+		holder = saruta_yakasak_1
+		government = pirate_government
+	}
+	1001.1.1 = {
+		holder = 0
+	}
+	1200.1.1 = {
+		change_development_level = 10
+	}
+	1179.8.6 = {
+		holder = ikanita_yakasak_4
+		government = pirate_government
+	}
+	1190.4.5 = {
+		holder = ikanita_yakasak_5
+		government = pirate_government
+	}
+	1206.3.7 = {
+		holder = ikanita_yakasak_1
+		government = pirate_government
+	}
+	1259.6.16 = {
+		holder = ikanita_yakasak_7
+	}
+	1276.9.18 = {
+		holder = ikanita_yakasak_11
+	}
+	1287.1.3 = {
+		holder = ikanita_yakasak_12
+	}
+}

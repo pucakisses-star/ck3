@@ -1,0 +1,76 @@
+c_dragasineu = {
+	1240.7.12 = {
+		holder = sarridians_aversarinas_aagiokrata_1
+	}
+	1252.7.19 = {
+		holder = warisnik_sjalvolki_12
+		liege = k_warisnik
+		government = continental_clan_government
+	}
+}
+c_rudisvalus = {
+	1240.7.12 = {
+		holder = sarridians_aversarinas_aagiokrata_1
+	}
+	1252.7.19 = {
+		holder = warisnik_sjalvolki_8
+		government = continental_clan_government
+		liege = k_warisnik
+	}
+}
+c_hemererna = {
+	1240.7.12 = {
+		holder = sarridians_aversarinas_aagiokrata_1
+	}
+	1252.7.19 = {
+		holder = warisnik_sjalvolki_2
+		government = continental_clan_government
+	}
+}
+c_hodomin = {
+	1252.7.19 = {
+		holder = warisnik_sjalvolki_9
+		government = continental_clan_government
+		liege = k_warisnik
+	}
+}
+c_garrtai = {
+	1252.7.19 = {
+		holder = warisnik_sjalvolki_11
+		government = continental_clan_government
+		liege = k_warisnik
+	}
+}
+c_tareg = {
+	1252.7.19 = {
+		holder = warisnik_sjalvolki_4
+		government = continental_clan_government
+	}
+}
+c_verebony = {
+	1.1.2 = {
+		holder = unsorted_24
+	}
+	60.1.1 = {
+		holder = wasteland
+	}
+	1252.7.19 = {
+		holder = daukeni_sjalvolki_24
+		liege = k_warisnik
+		government = continental_clan_government
+	}
+}
+c_varmahsandur = {
+	1252.7.19 = {
+		holder = warisnik_sjalvolki_4
+		liege = k_warisnik
+		government = continental_clan_government
+	}
+}
+c_kardar = {
+	1252.7.19 = {
+		holder = warisnik_sjalvolki_10
+		government = continental_clan_government
+		liege = k_warisnik
+	}
+}

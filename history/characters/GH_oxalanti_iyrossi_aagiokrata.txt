@@ -1,0 +1,31 @@
+﻿oxalanti_iyrossi_aagiokrata_1 = {
+	name = "Grabus"
+	dynasty = dyn_iyrossi_11
+	religion = "iyrossi_aagiokrata"
+	culture = "oxalanti"
+
+	1215.4.12 = {
+		birth = yes
+	}
+}
+
+oxalanti_iyrossi_aagiokrata_2 = {
+	name = "Iballus"
+	dynasty = dyn_iyrossi_13
+	religion = "iyrossi_aagiokrata"
+	culture = "oxalanti"
+
+	1222.4.12 = {
+		birth = yes
+	}
+}
+
+oxalanti_iyrossi_aagiokrata_3 = {
+	name = "Nenad"
+	religion = "iyrossi_aagiokrata"
+	culture = "oxalanti"
+
+	1237.1.1 = {
+		birth = yes
+	}
+}

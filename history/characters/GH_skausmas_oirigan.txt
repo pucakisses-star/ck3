@@ -1,0 +1,17 @@
+﻿skausmas_oirigan_1 = {
+	name = "Radosaj" #Radosamoj
+	religion = "oirigan"
+	culture = "skausmas"
+	trait = peasant_leader
+
+	trait = arrogant
+	trait = lazy
+	trait = content
+
+	trait = education_martial_2
+
+	1232.1.1 = {
+		birth = yes
+		give_nickname = nick_redblade_radosaj
+	}
+}

@@ -1,0 +1,40 @@
+﻿hamaxindi_mahndayana_1 = {
+	name = "Kurush"
+	religion = "mahndayana"
+	culture = "hamaxindi"
+
+	1149.1.1 = {
+		birth = yes
+	}
+	1196.12.14 = {
+		death = yes
+	}
+}
+
+hamaxindi_mahndayana_2 = {
+	name = "Godarz"
+	religion = "mahndayana"
+	culture = "hamaxindi"
+	father = hamaxindi_mahndayana_1
+
+	1176.1.1 = {
+		birth = yes
+	}
+	1201.9.19 = {
+		death = yes
+	}
+}
+
+hamaxindi_mahndayana_3 = {
+	name = "Delaram"
+	religion = "mahndayana"
+	culture = "hamaxindi"
+	female = yes
+
+	1162.4.17 = {
+		birth = yes
+	}
+	1207.5.20 = {
+		death = yes
+	}
+}

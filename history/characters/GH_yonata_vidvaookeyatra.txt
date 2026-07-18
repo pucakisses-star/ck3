@@ -1,0 +1,340 @@
+﻿yonata_vidvaookeyatra_1 = { # Akhasar, Kashiryan warlord during the Blue Robe Revolt
+	name = "Akhasar"
+	dynasty = dyn_yonata_1
+	religion = vidvaookeyatra
+	culture = yonata
+	disallow_random_traits = yes
+
+	dna = yonata_vidvaookeyatra_1
+
+	portrait_override = {
+		portrait_modifier_overrides={
+			custom_hair=no_hair
+			custom_beards=male_beard_indian_02
+		}
+	}
+
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 7
+	learning = 7
+	prowess = 7
+
+	1167.8.13 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1179.1.1 = {
+		trait = brave
+		trait = deceitful
+		trait = patient
+	}
+
+	1183.8.13 = {
+		trait = education_martial_4
+		trait = strategist
+		trait = organizer
+		trait = flexible_leader
+		trait = shrewd
+		trait = gh_historical_blademaster_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:oraculars }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1193.1.1 = {
+		give_nickname = "nick_son_of_many_suns"
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_disappearance
+		}
+	}
+}
+
+yonata_vidvaookeyatra_2 = { # Talesh count
+	name = "Vimala"
+	dynasty = dyn_yonata_2
+	religion = vidvaookeyatra
+	culture = yonata
+	disallow_random_traits = yes
+	female = yes
+
+	father = yonata_vidvaookeyatra_8
+
+	martial = 3
+	diplomacy = 3
+	intrigue = 8
+	stewardship = 5
+	learning = 5
+	prowess = 7
+
+	1237.8.8 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 1 }
+		}
+	}
+
+	1249.1.1 = {
+		trait = ambitious
+		trait = diligent
+		trait = vengeful
+	}
+
+	1253.9.6 = {
+		trait = education_intrigue_4
+	}
+}
+
+yonata_vidvaookeyatra_3 = { # Talesh border count
+	name = "Bansi"
+	religion = "vidvaookeyatra"
+	culture = "yonata"
+	dynasty = dyn_north_kashirya_3
+	1220.8.8 = {
+		birth = yes
+	}
+}
+
+yonata_vidvaookeyatra_4 = { # Talesh border duke w/sarishta vassals
+	name = "Abhimanyu"
+	religion = "vidvaookeyatra"
+	culture = "yonata"
+	dynasty = dyn_north_kashirya_2
+	1217.8.8 = {
+		birth = yes
+	}
+}
+
+yonata_vidvaookeyatra_5 = { # Talesh yonata Magi count
+	name = "Lalit"
+	dynasty = dyn_yonata_1
+	religion = vidvaookeyatra
+	culture = yonata
+	disallow_random_traits = yes
+
+	father = yonata_vidvaookeyatra_6
+
+	martial = 3
+	diplomacy = 8
+	intrigue = 5
+	stewardship = 1
+	learning = 7
+	prowess = 2
+
+	1227.8.8 = {
+		birth = yes
+		trait = magic_good_3
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 3 }
+		}
+	}
+
+	1209.1.1 = {
+		trait = vengeful
+		trait = temperate
+		trait = paranoid
+	}
+
+	1213.9.14 = {
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:oraculars }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+yonata_vidvaookeyatra_6 = { # Akhasar's son
+	name = "Rahul"
+	dynasty = dyn_yonata_1
+	religion = vidvaookeyatra
+	culture = yonata
+	disallow_random_traits = yes
+
+	father = yonata_vidvaookeyatra_1
+
+	martial = 2
+	diplomacy = 8
+	intrigue = 7
+	stewardship = 6
+	learning = 1
+	prowess = 5
+
+	1197.9.14 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1209.1.1 = {
+		trait = brave
+		trait = sadistic
+		trait = greedy
+	}
+
+	1213.9.14 = {
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:oraculars }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1246.10.26 = {
+		death = {
+			death_reason = death_battle
+			killer = easternimperial_aironoian_aagiokrata_5 # Eramasios the Silverblood
+		}
+	}
+}
+
+yonata_vidvaookeyatra_7 = { # Akhasar's Lieutenant
+	name = "Suresh"
+	dynasty = dyn_yonata_2
+	religion = vidvaookeyatra
+	culture = yonata
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 1
+	intrigue = 7
+	stewardship = 5
+	learning = 5
+	prowess = 7
+
+	1167.3.19 = {
+		birth = yes
+	}
+
+	1179.1.1 = {
+		trait = calm
+		trait = patient
+		trait = brave
+	}
+
+	1183.3.19 = {
+		trait = education_intrigue_3
+		trait = gh_historical_blademaster_1
+	}
+
+	1200.2.26 = {
+		death = {
+			death_reason = death_battle
+			killer = kuridorig_iek_otached_1 # Jajak Otroka
+		}
+	}
+}
+
+yonata_vidvaookeyatra_8 = { # Suresh' son
+	name = "Krishan"
+	dynasty = dyn_yonata_2
+	religion = vidvaookeyatra
+	culture = yonata
+	disallow_random_traits = yes
+
+	father = yonata_vidvaookeyatra_7
+
+	martial = 1
+	diplomacy = 10
+	intrigue = 6
+	stewardship = 7
+	learning = 8
+	prowess = 5
+
+	1198.9.6 = {
+		birth = yes
+	}
+
+	1210.1.1 = {
+		trait = calm
+		trait = compassionate
+		trait = generous
+	}
+
+	1214.9.6 = {
+		trait = education_learning_3
+	}
+
+	1240.8.7 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+yonata_vidvaookeyatra_9 = { # Morthor the Spider, attempted to assassinate the Governor of Aironoi in the 9th Century
+	name = "Morthor"
+	religion = vidvaookeyatra
+	culture = yonata
+	disallow_random_traits = yes
+
+	martial = 1
+	diplomacy = 10
+	intrigue = 6
+	stewardship = 7
+	learning = 11
+	prowess = 5
+
+	930.6.22 = {
+		birth = yes
+	}
+
+	942.1.1 = {
+		trait = callous
+		trait = deceitful
+		trait = diligent
+	}
+
+	946.6.22 = {
+		trait = gh_glowing_veins
+		trait = education_intrigue_4
+		give_nickname = "nick_the_spider_morthor"
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:oraculars }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	975.11.27 = {
+		death = {
+			death_reason = death_cloven_in_half
+			killer = fenvir_sjalvolki_24 # Jaroc Bitter-Root
+		}
+	}
+}
+
+yonata_vidvaookeyatra_10 = {
+	name = "Rahul"
+	dynasty = dyn_yonata_1
+	religion = vidvaookeyatra
+	culture = yonata
+	disallow_random_traits = yes
+
+	father = yonata_vidvaookeyatra_6
+
+	1229.4.21 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1249.4.21 = {
+		trait = cynical
+		trait = gregarious
+		trait = diligent
+		trait = education_stewardship_2
+	}
+}

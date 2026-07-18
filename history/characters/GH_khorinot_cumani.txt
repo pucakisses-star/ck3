@@ -1,0 +1,536 @@
+﻿###kteumaxa vassals
+
+khorinot_cumani_1 = {
+	name = "Altan"
+	religion = "cumani"
+	culture = "khorinot"
+
+	dna = khorinot_cumani_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards=male_beard_fp2_iberian_christian_03
+			custom_hair = male_hair_turkic_06
+		}
+	}
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+
+khorinot_cumani_3 = {
+	name = "Jajiradai"
+	religion = "cumani"
+	culture = "khorinot"
+
+	1224.4.12 = {
+		birth = yes
+	}
+}
+
+khorinot_cumani_4 = {
+	name = "Chiledu"
+	religion = "cumani"
+	culture = "khorinot"
+
+	1225.4.12 = {
+		birth = yes
+	}
+}
+
+khorinot_cumani_5 = {
+	name = "Tumen"
+	religion = "cumani"
+	culture = "khorinot"
+
+	1215.4.12 = {
+		birth = yes
+	}
+}
+
+khorinot_cumani_6 = {
+	name = "Ogodei"
+	religion = "cumani"
+	culture = "khorinot"
+
+	1232.4.12 = {
+		birth = yes
+	}
+}
+
+khorinot_cumani_7 = {
+	name = "Dayir"
+	religion = "cumani"
+	culture = "khorinot"
+
+	1228.4.12 = {
+		birth = yes
+	}
+}
+
+khorinot_cumani_8 = {
+	name = "django_fedd"
+	religion = "cumani"
+	culture = "khorinot"
+
+	1222.4.12 = {
+		birth = yes
+	}
+}
+
+khorinot_cumani_9 = {
+	name = "Mongke"
+	religion = "cumani"
+	culture = "khorinot"
+
+	1212.4.12 = {
+		birth = yes
+	}
+}
+
+khorinot_cumani_10 = {
+	name = "Arasen"
+	religion = "cumani"
+	culture = "khorinot"
+
+	1234.4.12 = {
+		birth = yes
+	}
+}
+
+khorinot_cumani_11 = {
+	name = "Khuyildar"
+	religion = "cumani"
+	culture = "khorinot"
+
+	1221.4.12 = {
+		birth = yes
+	}
+}
+
+khorinot_cumani_12 = {
+	name = "Daritai"
+	religion = "cumani"
+	culture = "khorinot"
+
+	1218.4.12 = {
+		birth = yes
+	}
+}
+
+khorinot_cumani_13 = {
+	name = "Jochi"
+	religion = "cumani"
+	culture = "khorinot"
+
+	1159.11.21 = {
+		birth = yes
+	}
+	1220.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+khorinot_cumani_14 = {
+	name = "Gordjen"
+	religion = "cumani"
+	culture = "khorinot"
+	father = khorinot_cumani_13
+	mother = khorinot_cumani_21
+
+	1201.1.12 = {
+		birth = yes
+	}
+}
+
+khorinot_cumani_15 = {
+	name = "Chulgetei"
+	religion = "cumani"
+	culture = "khorinot"
+
+	1222.1.12 = {
+		birth = yes
+	}
+}
+
+khorinot_cumani_16 = {
+	name = "Borjigidai"
+	religion = "cumani"
+	culture = "khorinot"
+
+	1215.1.12 = {
+		birth = yes
+	}
+}
+
+khorinot_cumani_17 = {
+	name = "Munglig"
+	religion = "cumani"
+	culture = "khorinot"
+
+	1211.1.12 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1227.1.12 = {
+		trait = education_learning_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+khorinot_cumani_18 = {
+	name = "Dagun"
+	religion = "cumani"
+	culture = "khorinot"
+
+	1225.1.12 = {
+		birth = yes
+	}
+}
+
+khorinot_cumani_19 = {
+	name = "Khutulan"
+	religion = "cumani"
+	culture = "khorinot"
+	female = yes
+
+	1229.1.12 = {
+		birth = yes
+	}
+}
+
+khorinot_cumani_20 = {
+	name = "Tokhtamis"
+	religion = "cumani"
+	culture = "khorinot"
+
+	1204.1.12 = {
+		birth = yes
+	}
+}
+
+khorinot_cumani_21 = {
+	name = "Borte"
+	religion = "cumani"
+	culture = "khorinot"
+	female = yes
+
+	1161.1.21 = {
+		birth = yes
+	}
+}
+
+khorinot_cumani_22 = {
+	name = "Nakhu"
+	religion = cumani
+	culture = khorinot
+	dynasty = dyn_khorinot_1
+	disallow_random_traits = yes
+
+	martial = 7
+	diplomacy = 9
+	stewardship = 6
+	intrigue = 5
+	learning = 8
+	prowess = 3
+
+	1231.5.17 = {
+		birth = yes
+	}
+
+	1243.1.1 = {
+		trait = compassionate
+		trait = generous
+		trait = lazy
+	}
+
+	1247.5.17 = {
+		trait = education_martial_1
+	}
+}
+
+khorinot_cumani_23 = { # Muhadmd high chieftain, joined Jajak Otroka's horde
+	name = "Jamugha"
+	religion = cumani
+	culture = khorinot
+	dynasty = dyn_khorinot_2
+	disallow_random_traits = yes
+
+	martial = 10
+	diplomacy = 11
+	stewardship = 6
+	intrigue = 1
+	learning = 7
+	prowess = 7
+
+	1157.9.5 = {
+		birth = yes
+	}
+
+	1169.1.1 = {
+		trait = brave
+		trait = wrathful
+		trait = forgiving
+	}
+
+	1173.9.5 = {
+		trait = education_martial_2
+		trait = aggressive_attacker
+	}
+
+	1200.2.27 = { # Blue Robe Revolt
+		death = {
+			death_reason = death_battle
+			killer = jarakmar_ertomax_13
+		}
+	}
+}
+
+khorinot_cumani_24 = { # Eldest son
+	name = "Morokha"
+	religion = cumani
+	culture = khorinot
+	dynasty = dyn_khorinot_2
+	disallow_random_traits = yes
+
+	father = khorinot_cumani_23
+
+	martial = 5
+	diplomacy = 4
+	stewardship = 6
+	intrigue = 7
+	learning = 5
+	prowess = 10
+
+	1185.11.22 = {
+		birth = yes
+	}
+
+	1197.1.1 = {
+		trait = craven
+		trait = sadistic
+		trait = paranoid
+	}
+
+	1201.11.22 = {
+		trait = education_intrigue_2
+		trait = schemer
+	}
+
+	1228.9.1 = {
+		death = {
+			death_reason = death_assassinated_by_soldiers
+		}
+	}
+}
+
+khorinot_cumani_25 = { # Middle son
+	name = "Ghazan"
+	religion = iek_otached
+	culture = khorinot
+	dynasty = dyn_khorinot_2
+	disallow_random_traits = yes
+
+	father = khorinot_cumani_23
+
+	martial = 2
+	diplomacy = 2
+	stewardship = 6
+	intrigue = 7
+	learning = 7
+	prowess = 3
+
+	1188.12.4 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+
+	1200.1.1 = {
+		trait = gregarious
+		trait = calm
+		trait = vengeful
+	}
+
+	1204.12.4 = {
+		trait = education_martial_4
+		trait = unyielding_defender
+		trait = open_terrain_expert
+	}
+}
+
+khorinot_cumani_26 = { # Youngest son
+	name = "Chagatai"
+	religion = cumani
+	culture = khorinot
+	dynasty = dyn_khorinot_2
+	disallow_random_traits = yes
+
+	father = khorinot_cumani_23
+
+	martial = 8
+	diplomacy = 6
+	stewardship = 10
+	intrigue = 5
+	learning = 7
+	prowess = 4
+
+	1191.4.18 = {
+		birth = yes
+	}
+
+	1203.1.1 = {
+		trait = arbitrary
+		trait = ambitious
+		trait = humble
+	}
+
+	1207.4.18 = {
+		trait = education_stewardship_3
+	}
+}
+
+khorinot_cumani_27 = {
+	name = "Todogen"
+	religion = cumani
+	culture = khorinot
+	dynasty = dyn_khorinot_2
+	disallow_random_traits = yes
+
+	father = khorinot_cumani_24
+
+	martial = 8
+	diplomacy = 6
+	stewardship = 10
+	intrigue = 5
+	learning = 7
+	prowess = 4
+
+	1214.1.11 = {
+		birth = yes
+	}
+
+	1226.1.1 = {
+		trait = arbitrary
+		trait = lazy
+		trait = greedy
+	}
+
+	1230.1.11 = {
+		trait = education_stewardship_2
+	}
+}
+
+khorinot_cumani_28 = {
+	name = "Goland"
+	religion = cumani
+	culture = khorinot
+	dynasty = dyn_khorinot_2
+	female = yes
+
+	father = khorinot_cumani_27
+
+	martial = 2
+	diplomacy = 3
+	stewardship = 1
+	intrigue = 1
+	learning = 2
+	prowess = 1
+
+	1247.2.13 = {
+		birth = yes
+	}
+}
+
+khorinot_cumani_29 = {
+	name = "Chanai"
+	religion = iek_otached
+	culture = khorinot
+	dynasty = dyn_khorinot_2
+	disallow_random_traits = yes
+
+	father = khorinot_cumani_25
+
+	martial = 6
+	diplomacy = 2
+	stewardship = 9
+	intrigue = 2
+	learning = 4
+	prowess = 7
+
+	1224.7.23 = {
+		birth = yes
+	}
+
+	1236.1.1 = {
+		trait = callous
+		trait = diligent
+		trait = arbitrary
+	}
+
+	1240.7.23 = {
+		trait = education_stewardship_3
+	}
+}
+
+khorinot_cumani_30 = {
+	name = "Semsochule"
+	religion = cumani
+	culture = khorinot
+	dynasty = dyn_khorinot_2
+	disallow_random_traits = yes
+
+	father = khorinot_cumani_26
+
+	martial = 5
+	diplomacy = 7
+	stewardship = 8
+	intrigue = 10
+	learning = 6
+	prowess = 9
+
+	1227.6.30 = {
+		birth = yes
+	}
+
+	1239.1.1 = {
+		trait = trusting
+		trait = diligent
+		trait = just
+	}
+
+	1243.6.30 = {
+		trait = education_intrigue_3
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

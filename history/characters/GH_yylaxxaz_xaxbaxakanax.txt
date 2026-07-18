@@ -1,0 +1,103 @@
+﻿yylaxxaz_xaxbaxakanax_1 = {
+	name = "Zvyyaoryys"
+	religion = "xaxbaxakanax"
+	culture = "yylaxxaz"
+	dynasty = "dyn_yylaxxaz_1"
+
+	1210.5.15 = {
+		birth = yes
+	}
+	1220.6.9 = {
+		trait = content
+		trait = compassionate
+		trait = trusting
+	}
+	1221.9.5 = {
+		trait = hashishiyah
+	}
+}
+
+yylaxxaz_xaxbaxakanax_2 = {
+	name = "Mlraz"
+	religion = "xaxbaxakanax"
+	culture = "yylaxxaz"
+	dynasty = "dyn_yylaxxaz_2"
+
+	1234.8.5 = {
+		birth = yes
+	}
+	1242.9.3 = {
+		trait = ambitious
+		trait = stubborn
+		trait = zealous
+	}
+}
+
+yylaxxaz_xaxbaxakanax_3 = {
+	name = "Tyyymuuso"
+	religion = "xaxbaxakanax"
+	culture = "yylaxxaz"
+	dynasty = "dyn_yylaxxaz_3"
+
+	1228.2.14 = {
+		birth = yes
+	}
+
+	1238.8.9 = {
+		trait = paranoid
+		trait = stubborn
+		trait = humble
+	}
+
+	1249.8.4 = {
+		trait = hashishiyah
+	}
+}
+
+yylaxxaz_xaxbaxakanax_4 = {
+	name = "Ydrzznyyk"
+	religion = "xaxbaxakanax"
+	culture = "yylaxxaz"
+	dynasty = "dyn_yylaxxaz_4"
+
+	1203.4.8 = {
+		birth = yes
+	}
+	1213.5.9 = {
+		trait = content
+		trait = compassionate
+		trait = calm
+	}
+	1241.8.9 = {
+		trait = hashishiyah
+		trait = gh_historical_mystic_3
+	}
+}
+
+yylaxxaz_xaxbaxakanax_5 = {
+	name = "Xxzyyoxzyyaa"
+	religion = "xaxbaxakanax"
+	culture = "yylaxxaz"
+	dynasty = "dyn_yylaxxaz_5"
+	dna = yylaxxaz_xaxbaxakanax_5
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_mena_04
+			custom_hair = male_hair_western_06
+		}
+	}
+
+	1237.9.16 = {
+		birth = yes
+	}
+	1253.1.1 = {
+		give_nickname = nick_bane_of_azzykrazz
+	}
+	1254.1.1 = {
+		trait = vengeful
+		trait = brave
+		trait = compassionate
+		trait = education_martial_2
+	}
+}

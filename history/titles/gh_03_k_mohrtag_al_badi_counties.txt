@@ -1,0 +1,94 @@
+c_farajran = {
+	1230.1.1 = {
+		holder = makryenis_dikaynos_1
+	}
+}
+c_samsankuraxoli = {
+	1230.1.1 = {
+		holder = imperialislander_aversarinas_aagiokrata_18
+	}
+}
+#c_tel_narn = {
+#	1230.1.1 = {
+#		holder = makryenis_dikaynos_2
+#		liege = d_noualal
+#		government = landed_order_government
+#	}
+#}
+#c_sahrehkhowt = {
+#	1230.1.1 = {
+#		holder = makryenis_dikaynos_3
+#		liege = d_noualal
+#	#	government = landed_order_government
+#	}
+#}
+c_baloyeh = {
+	1230.1.1 = {
+		holder = makryenis_dikaynos_4
+		liege = d_noualal
+		government = landed_order_government
+	}
+}
+#c_tel_ethra = {
+#	1230.1.1 = {
+#		holder = makryenis_dikaynos_4
+#		liege = d_noualal
+#		government = landed_order_government
+#	}
+#}
+#c_blihari = {
+#	1230.1.1 = {
+#		holder = makryenis_dikaynos_5
+#		liege = d_noualal
+#		government = landed_order_government
+#	}
+#}
+#c_abemah = {
+#	1230.1.1 = {
+#		holder = makryenis_dikaynos_6
+#		liege = d_noualal
+#		government = landed_order_government
+#	}
+#}
+c_mawtalmumin = {
+	1230.1.1 = {
+		holder = makryenis_dikaynos_6
+		liege = d_noualal
+		government = landed_order_government
+	}
+}
+#c_ulad_alar = {
+#	1230.1.1 = {
+#		holder = makryenis_dikaynos_7
+#		liege = d_noualal
+#		government = landed_order_government
+#	}
+#}
+#c_ash_shabbri = {
+#	1230.1.1 = {
+#		holder = makryenis_dikaynos_7
+#		liege = d_noualal
+#		government = landed_order_government
+#	}
+#}
+#c_mishemayn = {
+#	1230.1.1 = {
+#		holder = makryenis_dikaynos_8
+#		liege = d_noualal
+#		government = landed_order_government
+#	}
+#}
+#c_sidiyana = {
+#	1230.1.1 = {
+#		holder = makryenis_dikaynos_9
+#		liege = d_noualal
+#		government = landed_order_government
+#	}
+#}
+#c_eastern_undercity_37 = {
+#	1230.1.1 = {
+#		holder = makryenis_dikaynos_2
+#		liege = d_noualal
+#		government = landed_order_government
+#	}
+#}

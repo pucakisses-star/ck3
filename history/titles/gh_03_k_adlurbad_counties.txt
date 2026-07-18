@@ -1,0 +1,76 @@
+c_kishagret = {
+	1251.1.1 = {
+		holder = yadaniya_karitkarmaic_2
+		change_development_level = 7
+	}
+}
+c_hawathara = {
+	1251.1.1 = {
+		holder = yadaniya_karitkarmaic_2
+		change_development_level = 7
+	}
+}
+c_kasni = {
+	1251.1.1 = {
+		holder = avihana_askevaryaa_2
+		liege = k_adlurbad
+		change_development_level = 9
+	}
+}
+c_vegas = {
+	1251.1.1 = {
+		holder = orshinid_chakkarai_2
+		change_development_level = 12
+	}
+}
+c_chinddao = {
+	1251.1.1 = {
+		holder = orshinid_chakkarai_2
+		change_development_level = 12
+	}
+}
+c_tirumoksha = {
+	1251.1.1 = {
+		holder = taminiai_vidvaookeyatra_1
+		change_development_level = 10
+	}
+}
+c_santpur = {
+	1251.1.1 = {
+		holder = ilahanai_daramarjaratan_1
+		change_development_level = 10
+	}
+}
+c_mithokai = {
+	1251.1.1 = {
+		holder = avihana_askevaryaa_5
+		liege = k_adlurbad
+		change_development_level = 16
+	}
+}
+c_marhond = {
+	1251.1.1 = {
+		holder = marakje_vidvaookeyatra_1
+		liege = k_adlurbad
+		change_development_level = 12
+	}	
+}
+c_provinceal_fayamayn = {
+	1251.1.1 = {
+		holder = marakje_vidvaookeyatra_1
+		liege = k_adlurbad
+		change_development_level = 12
+	}	
+}
+c_southkashirya_isles_1 = {
+	1250.1.14 = {
+		holder = avihana_daramarjaratan_1
+		liege = k_adlurbad
+	}
+}
+c_south_kashirya_7 = {
+	1250.1.1 = {
+		holder = avihana_askevaryaa_1
+		change_development_level = 14
+	}
+}

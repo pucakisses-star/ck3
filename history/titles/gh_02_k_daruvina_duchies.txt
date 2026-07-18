@@ -1,0 +1,24 @@
+d_kathkot = {
+	1194.4.16 = {
+		holder = rahikaya_vidvaookeyatra_1
+	}
+	1226.6.9 = {
+		holder = rahikaya_vidvaookeyatra_7
+	}
+	1230.1.9 = {
+		holder = rahikaya_vidvaookeyatra_11		
+		change_development_level = 16
+	}
+}
+d_kamqam = {
+	1250.1.1 = {
+		holder = neshalar_nabbarek_2		
+		change_development_level = 15
+	}
+}
+d_dhupawa = {
+	1250.1.1 = {
+		holder = swabani_karitkarmaic_1		
+		change_development_level = 14
+	}
+}

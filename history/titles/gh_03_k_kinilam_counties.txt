@@ -1,0 +1,164 @@
+
+c_natawalaga = {
+	1131.2.26 = {
+		holder = hokanta_vidvaookeyatra_35
+		liege = k_kinilam
+	}
+	1167.6.18 = {
+		holder = hokanta_vidvaookeyatra_39
+		liege = k_kinilam
+	}
+	1200.3.1 = {
+		holder = hokanta_vidvaookeyatra_42
+		liege = k_kinilam
+	}
+	1242.12.24 = {
+		holder = hokanta_vidvaookeyatra_2
+		liege = k_kinilam
+		change_development_level = 13
+	}
+}
+c_welituva = {
+	1131.2.26 = {
+		holder = hokanta_vidvaookeyatra_35
+		liege = k_kinilam
+	}
+	1167.6.18 = {
+		holder = hokanta_vidvaookeyatra_39
+		liege = k_kinilam
+	}
+	1200.3.1 = {
+		holder = hokanta_vidvaookeyatra_42
+		liege = k_kinilam
+	}
+	1242.12.24 = {
+		holder = hokanta_vidvaookeyatra_2
+		liege = k_kinilam
+		change_development_level = 9
+	}
+}
+c_seethasripura = {
+	1163.3.23 = {
+		holder = hokanta_vidvaookeyatra_44
+		liege = k_kinilam
+	}
+	1197.10.10 = {
+		holder = hokanta_vidvaookeyatra_46
+		liege = k_kinilam
+	}
+	1230.1.9 = {
+		holder = hokanta_vidvaookeyatra_48
+		liege = k_kinilam
+	}
+	1252.4.3 = {
+		holder = hokanta_vidvaookeyatra_3
+		liege = k_kinilam
+		change_development_level = 9
+	}
+}
+c_kulipata = {
+	1091.8.4 = {
+		holder = hokanta_vidvaookeyatra_4
+	}
+	1112.1.14 = {
+		holder = hokanta_vidvaookeyatra_6
+	}
+	1135.4.2 = {
+		holder = hokanta_vidvaookeyatra_10
+	}
+	1140.1.13 = {
+		holder = hokanta_vidvaookeyatra_14
+	}
+	1147.4.26 = { 
+		holder = hokanta_vidvaookeyatra_16
+	}
+	1178.8.20 = {
+		holder = hokanta_vidvaookeyatra_18
+	}
+	1213.8.26 = {
+		holder = hokanta_vidvaookeyatra_1
+	}
+	1248.11.11 = {
+		holder = hokanta_vidvaookeyatra_33
+	}
+}
+c_kinniyirai = {
+	1091.8.4 = {
+		holder = hokanta_vidvaookeyatra_4
+	}
+	1112.1.14 = {
+		holder = hokanta_vidvaookeyatra_6
+	}
+	1135.4.2 = {
+		holder = hokanta_vidvaookeyatra_10
+	}
+	1140.1.13 = {
+		holder = hokanta_vidvaookeyatra_14
+	}
+	1147.4.26 = { 
+		holder = hokanta_vidvaookeyatra_16
+	}
+	1178.8.20 = {
+		holder = hokanta_vidvaookeyatra_18
+	}
+	1213.8.26 = {
+		holder = hokanta_vidvaookeyatra_1
+	}
+	1248.11.11 = {
+		holder = hokanta_vidvaookeyatra_33
+	}
+}
+c_jaeldula = {
+	1149.7.6 = {
+		holder = prapataro_asritayka_3
+		liege = k_kinilam
+	}
+	1167.12.23 = {
+		holder = prapataro_asritayka_5
+		liege = k_kinilam
+	}
+	1188.2.5 = {
+		liege = 0
+	}
+	1216.10.9 = {
+		holder = prapataro_asritayka_8
+		liege = 0
+	}
+	1223.12.20 = {
+		holder = prapataro_asritayka_7
+		liege = 0
+	}
+	1236.8.5 = {
+		holder = prapataro_asritayka_11
+		liege = 0
+	}
+	1251.11.11 = {
+		holder = prapataro_asritayka_2
+		liege = 0
+	}
+}
+c_ambakkara = {
+	1149.7.6 = {
+		holder = prapataro_asritayka_3
+		liege = k_kinilam
+	}
+	1167.12.23 = {
+		holder = prapataro_asritayka_5
+		liege = k_kinilam
+	}
+	1216.10.9 = {
+		holder = prapataro_asritayka_7
+		liege = 0
+	}
+	1236.8.5 = {
+		holder = prapataro_asritayka_11
+		liege = 0
+	}
+	1251.11.11 = {
+		holder = prapataro_asritayka_2
+		liege = 0
+	}
+	1252.1.11 = {
+		holder = prapataro_asritayka_1
+	}
+}

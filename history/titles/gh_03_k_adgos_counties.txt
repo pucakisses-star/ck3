@@ -1,0 +1,122 @@
+
+c_cures = {
+	1151.3.16 = {
+		holder = centralimperial_aversarinas_aagiokrata_88 # Amyntas Varsaxoan
+	}
+	1178.2.21 = {
+		holder = centralimperial_aversarinas_aagiokrata_85 # Dukon 'the Old' Varsaxoan
+	}
+	1180.1.1 = {
+		change_development_level = 22
+	}
+	1210.7.12 = {
+		holder = centralimperial_aversarinas_aagiokrata_129
+	}
+	1223.4.5 = { 
+		holder = centralimperial_aversarinas_aagiokrata_127
+	}
+}
+c_nigidi = {
+	1180.1.1 = {
+		change_development_level = 19
+	}
+	1199.10.21 = {
+		holder = centralimperial_aversarinas_aagiokrata_62
+		liege = 0
+	}
+	1200.3.1 = {
+		change_development_level = 5
+	}
+	1251.2.12 = {
+		holder = kinambrosti_iyrossi_aagiokrata_1
+	}
+}
+c_zadeus = {
+	1180.1.1 = {
+		change_development_level = 14
+	}
+	1181.3.22 = {
+		holder = centralimperial_aversarinas_aagiokrata_63
+	}
+	1200.3.1 = {
+		change_development_level = 3
+	}
+	1210.2.4 = {
+		holder = scusstari_iyrossi_aagiokrata_15
+	}
+	1213.3.11 = {
+		holder = scusstari_iyrossi_aagiokrata_14
+	}
+	1218.4.8 = {
+		holder = centralimperial_aversarinas_aagiokrata_126
+	}
+	1243.6.9 = {
+		holder = scusstari_iyrossi_aagiokrata_14
+	}
+}
+c_rhephon = {
+	1209.3.1 = {
+		liege = "k_adgos"
+	}
+	1197.12.5 = {
+		holder = centralimperial_aversarinas_aagiokrata_125
+	}
+	1243.6.9 = {
+		liege = 0
+	}
+	1251.1.27 = {
+		holder = centralimperial_thixanonic_cult_1
+	}
+}
+c_deris = {
+	1200.1.1 = { change_development_level = 4}
+	1251.1.27 = {
+		holder = centralimperial_thixanonic_cult_1
+	}
+}
+c_syte = {
+	1199.12.30 = {
+		holder = scusstari_iyrossi_aagiokrata_18
+	}
+	1207.8.1 = {
+		holder = centralimperial_aversarinas_aagiokrata_126
+	}
+	1241.4.27 = {
+		holder = kinambrosti_iyrossi_aagiokrata_2
+	}
+}
+c_mykimae = { 
+	1196.6.11 = {
+		holder = centralimperial_aversarinas_aagiokrata_129
+	}
+	1223.4.5 = {
+		holder = centralimperial_aversarinas_aagiokrata_128
+	}
+	1230.1.1 = {
+		holder = dubadin_namejisht_1
+	}
+	1230.1.1 = { change_development_level = 7}
+}
+c_arryns = { 
+	1230.1.1 = {
+		holder = iyronisti_iyrossi_aagiokrata_2
+	}
+	1230.1.1 = { change_development_level = 10}
+}
+c_smyca = {
+	1241.4.7 = {
+		liege = "d_paos"
+		holder = dawasid_thixanonic_cult_1
+	}
+}
+c_skykanceoe = {
+	1220.1.1 = {
+		holder = centralimperial_aversarinas_aagiokrata_120
+	}
+}
+c_ephinda = {
+	1220.1.1 = {
+		holder = iyronisti_iyrossi_aagiokrata_1
+		liege = d_monaros
+	}
+}

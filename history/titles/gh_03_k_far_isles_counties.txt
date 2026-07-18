@@ -1,0 +1,22 @@
+c_yddra = {
+	1250.1.1 = {
+		change_development_level = 5
+	}
+	1251.1.1 = {
+		holder = diorenic_abathonic_cult_1
+	}
+}
+c_lioninsplendoraxatan = {
+	1250.1.1 = {
+		change_development_level = 4
+	}
+	1251.1.1 = {
+		holder = diorenic_abathonic_cult_2
+	}
+}
+c_perlepeanretreat = {
+	1251.1.1 = {
+		holder = coldcoaster_darrallianism_1
+		liege = d_peti_gisredde
+	}
+}

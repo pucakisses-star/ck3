@@ -1,0 +1,27 @@
+﻿dasulanoi_blood_veneration_1 = {
+    name = "Pesna"
+    religion = blood_veneration
+    culture = dasulanoi
+    
+    1208.4.16 = {
+        birth = yes
+        trait = magic_good_3
+        trait = physique_bad_1
+    }
+
+    1220.1.1 = {
+        trait = deceitful
+        trait = patient
+        trait = callous
+    }
+
+    1224.4.16 = {
+        trait = education_learning_3
+        trait = gh_historical_school
+        set_relation_rival = character:dasulanoi_theryionist_1
+        effect = {
+            set_variable = { name = historical_magic_school value = flag:living_magic }
+            set_variable = { name = historical_magic_school_min_spells value = 6 }
+        }
+    }
+}

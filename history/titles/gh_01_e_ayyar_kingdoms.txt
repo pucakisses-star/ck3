@@ -1,0 +1,31 @@
+k_barunkazeb = {
+	1200.1.1 = {
+		change_development_level = 16
+	}
+}
+k_lahkoryun = { 
+	1.1.1 = {
+		holder = unsorted_18
+	}
+	98.6.2 = {
+		holder = 0
+	}
+	1200.1.1 = {
+		change_development_level = 19
+	}
+	1230.1.1 = {
+		liege = e_ayyar
+		holder = mirzana_jahar_ruidari_1
+	}
+}
+k_tayalhun = { 
+	1.1.1 = {
+		holder = unsorted_18
+	}
+	98.6.2 = {
+		holder = 0
+	}
+	1200.1.1 = {
+		change_development_level = 14
+	}
+}

@@ -1,0 +1,578 @@
+﻿warisnik_sjalvolki_1 = { # daughter of Ebislano Water-Lover
+    name = "Dajrona"
+	religion = "sjalvolki"
+	culture = "warisnik"
+
+    dynasty = dyn_sjalvolki_32
+    sexuality = heterosexual
+    dna = warisnik_sjalvolki_1
+
+    female = yes
+    father = warisnik_sjalvolki_6
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp1_06 
+		}
+	}
+
+    martial = 7
+    diplomacy = 6
+    stewardship = 6
+    intrigue = 6
+    learning = 5
+    prowess = 6
+
+    1237.11.28 = {
+        birth = yes
+        trait = beauty_good_3
+    }
+
+    1247.3.15 = {
+    	add_pressed_claim = title:k_warisnik
+    }
+
+    1249.1.1 = {
+		trait = ambitious
+		trait = brave
+		trait = vengeful
+    }
+
+    1253.11.28 = {
+        effect = { set_base_arcana = { AMOUNT = 2 } }
+        trait = education_diplomacy_3
+        trait = shrewd
+        employer = warisnik_sjalvolki_2
+    }
+}
+
+warisnik_sjalvolki_2 = { # Warisnik 1254 leader
+    name = "Michrav"
+	religion = "sjalvolki"
+	culture = "warisnik"
+
+    dynasty = dyn_sjalvolki_32
+    sexuality = heterosexual
+    dna = warisnik_sjalvolki_2
+
+    father = warisnik_sjalvolki_5
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_08
+			custom_beards = no_beard
+		}
+	}
+
+    martial = 10
+    diplomacy = 8
+    stewardship = 8
+    intrigue = 4
+    learning = 2
+    prowess = 8
+
+    1229.10.17 = {
+        birth = yes
+        trait = intellect_good_1
+    }
+
+    1241.1.1 = {
+		trait = brave
+		trait = diligent
+		trait = wrathful
+    }
+
+    1245.10.17 = {
+        effect = { set_base_arcana = { AMOUNT = 5 } }
+        trait = education_diplomacy_4
+    }
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+
+	1249.4.10 = {
+		effect = {
+			spawn_army = {
+				name = warisnik_veterans
+				men_at_arms = {
+					type = sjalvolki_berserkers
+					stacks = 2
+				}
+				men_at_arms = {
+					type = war_mammoth
+					stacks = 1
+				}
+				location = province:3314
+				inheritable = yes
+			}
+		}
+	}
+
+	1250.11.4 = {
+		add_spouse = warisnik_sjalvolki_3
+		trait = gh_historical_track_hunter_3
+		trait = reckless
+		trait = rough_terrain_expert
+	}
+}
+
+warisnik_sjalvolki_3 = { # Michrav's wife
+    name = "Urhica"
+	religion = "sjalvolki"
+	culture = "warisnik"
+
+    dynasty = dyn_sjalvolki_60
+    sexuality = heterosexual
+    dna = warisnik_sjalvolki_3
+
+    female = yes
+    father = warisnik_sjalvolki_7
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp1_03
+		}
+	}
+
+    martial = 4
+    diplomacy = 6
+    stewardship = 5
+    intrigue = 7
+    learning = 6
+    prowess = 4
+
+    1227.12.14 = {
+        birth = yes
+        trait = beauty_good_1
+    }
+
+    1239.1.1 = {
+		trait = content
+		trait = brave
+		trait = vengeful
+    }
+
+    1243.12.14 = {
+        effect = { set_base_arcana = { AMOUNT = 6 } }
+        trait = education_intrigue_3
+    }
+}
+
+warisnik_sjalvolki_4 = { # Radjema, eldest daughter and heir of Radivek the Red
+    name = "Radjema"
+	religion = "sjalvolki"
+	culture = "warisnik"
+
+    dynasty = dyn_sjalvolki_60
+    sexuality = bisexual
+    dna = warisnik_sjalvolki_4
+
+    female = yes
+    father = warisnik_sjalvolki_7
+
+    martial = 6
+    diplomacy = 8
+    stewardship = 9
+    intrigue = 7
+    learning = 8
+    prowess = 6
+
+    1226.8.23 = {
+        birth = yes
+    }
+
+    1238.1.1 = {
+		trait = impatient
+		trait = gregarious
+		trait = brave
+    }
+
+    1242.8.23 = {
+        effect = { set_base_arcana = { AMOUNT = 4 } }
+        trait = education_martial_3
+        trait = gh_historical_blademaster_1
+        trait = holy_warrior
+    }
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+}
+
+warisnik_sjalvolki_5 = { # Kral Michrav's father
+	name = "Mirkvel" #Formerly Dothlau, formerly Detleff
+	religion = "sjalvolki"
+	culture = "warisnik"
+	dynasty = dyn_sjalvolki_32
+	disallow_random_traits = yes
+
+	martial = 5
+	diplomacy = 6
+	stewardship = 6
+	intrigue = 7
+	learning = 7
+	prowess = 6
+
+	1189.9.5 = {
+		birth = yes
+		trait = intellect_good_2
+	}
+
+	1201.1.1 = {
+		trait = humble
+		trait = fickle
+		trait = gluttonous
+	}
+
+	1205.9.5 = {
+		effect = { set_base_arcana = { AMOUNT = 8 } }
+		trait = education_learning_4
+		trait = theologian
+	}
+
+	1247.3.15 = { # Ten Trees
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+warisnik_sjalvolki_6 = { # Ebislano Water-Lover, Sjalvolki map-maker
+	name = "Ebislano"
+	dna = ebislano
+	religion = "sjalvolki"
+	culture = "warisnik"
+	dynasty = dyn_sjalvolki_32
+	disallow_random_traits = yes
+
+	father = warisnik_sjalvolki_5
+
+	martial = 4
+	diplomacy = 5
+	stewardship = 7
+	intrigue = 5
+	learning = 5
+	prowess = 6
+
+	1220.3.11 = {
+		birth = yes
+		trait = intellect_good_2
+	}
+
+	1232.1.1 = {
+		trait = humble
+		trait = diligent
+		trait = paranoid
+	}
+
+	1236.3.11 = {
+		trait = education_intrigue_2
+		trait = adventurer
+		trait = gh_historical_track_hunter_2
+	}
+
+	1242.9.4 = {
+		give_nickname = nick_water_lover
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	1247.3.15 = { # Ten Trees
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+warisnik_sjalvolki_7 = { # Radivek the Red, second in command of Kral Mirkvel
+    name = "Radivek"
+	religion = "sjalvolki"
+	culture = "warisnik"
+
+    dynasty = dyn_sjalvolki_60
+    sexuality = heterosexual
+    dna = warisnik_sjalvolki_7
+
+    martial = 6
+    diplomacy = 8
+    stewardship = 9
+    intrigue = 7
+    learning = 8
+    prowess = 6
+
+    1190.8.6 = {
+        birth = yes
+        trait  = beauty_good_2
+    }
+
+    1202.1.1 = {
+		trait = wrathful
+		trait = gregarious
+		trait = brave
+    }
+
+    1206.8.6 = {
+        effect = { set_base_arcana = { AMOUNT = 6 } }
+        trait = education_martial_2
+        trait = strong
+        trait = gh_historical_blademaster_2
+        trait = aggressive_attacker
+    }
+
+	1233.1.6 = {
+		give_nickname = nick_the_red
+	}
+
+	1247.3.15 = { # Ten Trees
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+warisnik_sjalvolki_8 = { # Borek Bone-Brow, chief magi of the Warisnik
+    name = "Borek"
+	religion = "sjalvolki"
+	culture = "warisnik"
+
+    dynasty = dyn_sjalvolki_61
+    sexuality = heterosexual
+
+    martial = 5
+    diplomacy = 6
+    stewardship = 9
+    intrigue = 8
+    learning = 7
+    prowess = 6
+
+    1187.10.3 = {
+        birth = yes
+        trait = magic_good_5
+        trait = albino
+    }
+
+    1199.1.1 = {
+		trait = just
+		trait = deceitful
+		trait = eccentric
+    }
+
+    1203.10.3 = {
+        effect = { set_base_arcana = { AMOUNT = 8 } }
+        trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:wood_law }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+    }
+
+	1236.4.21 = {
+		give_nickname = nick_bone_brow
+	}
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+}
+
+warisnik_sjalvolki_9 = { # famed Mammoth herder
+    name = "Ajvog"
+	religion = "sjalvolki"
+	culture = "warisnik"
+
+    dynasty = dyn_sjalvolki_62
+    sexuality = heterosexual
+
+    martial = 4
+    diplomacy = 5
+    stewardship = 3
+    intrigue = 6
+    learning = 4
+    prowess = 9
+
+    1196.11.27 = {
+        birth = yes
+    }
+
+    1208.1.1 = {
+		trait = temperate
+		trait = generous
+		trait = trusting
+    }
+
+    1212.11.27 = {
+        effect = { set_base_arcana = { AMOUNT = 5 } }
+        trait = education_stewardship_2
+        trait = gh_historical_track_hunter_2
+        trait = organizer
+    }
+
+	1216.5.2 = {
+		effect = {
+			spawn_army = {
+				name = warisnik_mammoth_herd
+				men_at_arms = {
+					type = war_mammoth
+					stacks = 2
+				}
+				location = province:3191
+				inheritable = yes
+			}
+		}
+	}
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+}
+
+warisnik_sjalvolki_10 = { # Cervenko the Cruel, greatest warrior of the Warisnik Clanrech
+    name = "C_ervenko"
+	religion = "sjalvolki"
+	culture = "warisnik"
+
+    dynasty = dyn_sjalvolki_63
+    sexuality = heterosexual
+
+    martial = 7
+    diplomacy = 5
+    stewardship = 3
+    intrigue = 2
+    learning = 5
+    prowess = 8
+
+    1213.9.25 = {
+        birth = yes
+        trait = magic_good_1
+        trait = physique_good_3
+    }
+
+    1225.1.1 = {
+		trait = zealous
+		trait = sadistic
+		trait = wrathful
+    }
+
+    1229.9.25 = {
+        effect = { set_base_arcana = { AMOUNT = 3 } }
+        trait = education_martial_2
+        trait = aggressive_attacker
+    }
+
+	1239.9.20 = {
+		give_nickname = nick_the_cruel
+		trait = cannibal
+		trait = strong
+	}
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+}
+
+warisnik_sjalvolki_11 = { # hunter poet
+    name = "SonC_mil"
+	religion = "sjalvolki"
+	culture = "warisnik"
+
+    sexuality = heterosexual
+
+    martial = 6
+    diplomacy = 7
+    stewardship = 5
+    intrigue = 6
+    learning = 3
+    prowess = 3
+
+    1202.10.18 = {
+        birth = yes
+    }
+
+    1214.1.1 = {
+		trait = brave
+		trait = shy
+		trait = content
+    }
+
+    1218.10.18 = {
+        effect = { set_base_arcana = { AMOUNT = 3 } }
+        trait = education_learning_3
+    }
+
+    1231.10.12 = {
+        trait = gh_historical_track_hunter_3
+        trait = poet
+        trait = depressed_1
+    }
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+}
+
+warisnik_sjalvolki_12 = { # cheese scholar
+    name = "CerS_il"
+	religion = "sjalvolki"
+	culture = "warisnik"
+
+    dynasty = dyn_sjalvolki_64
+    sexuality = heterosexual
+
+    martial = 5
+    diplomacy = 4
+    stewardship = 6
+    intrigue = 4
+    learning = 2
+    prowess = 4
+
+    1214.7.25 = {
+        birth = yes
+    }
+
+    1226.1.1 = {
+		trait = chaste
+		trait = gluttonous
+		trait = diligent
+    }
+
+    1230.7.25 = {
+        effect = { set_base_arcana = { AMOUNT = 8 } }
+        trait = education_learning_4
+    }
+
+    1244.5.17 = {
+        give_nickname = nick_the_caseous
+        trait = scholar
+        trait = journaller
+        trait = lifestyle_gardener
+    }
+}

@@ -1,0 +1,78 @@
+c_ebed54 = {
+	1238.8.19 = {
+		liege = 0
+		government = tribal_government
+		holder = tagrodar_ahridar_1
+		change_development_level = 5
+	}
+}
+c_ebed55 = {
+	1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+	1248.2.5 = {
+		holder = easternimperial_aversarinas_aagiokrata_8
+		change_development_level = 5
+		government = feudal_government
+	}
+}
+c_ebed56 = {
+	1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}
+c_ebed57 = {
+	1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}
+c_ebed58 = {
+	1234.12.12 = {
+		liege = 0
+		government = migratory_government
+		holder = utyalid_wardenism_16
+		change_development_level = 2
+	}
+}
+c_ebed59 = {
+	1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}
+c_ebed65 = {
+	1241.12.9 = {
+		liege = 0
+		government = migratory_government
+		holder = utyalid_wardenism_19
+		change_development_level = 5
+	}
+}
+c_ebed62 = {
+	1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}
+c_khushkh = {
+	1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}
+
+c_new_sarradon_county_0002 = {
+	1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}
+c_olenae = {
+	1200.3.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+}

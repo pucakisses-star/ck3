@@ -1,0 +1,45 @@
+﻿islander_cult_of_the_waves_1 = {
+	name = "Isidoros"
+	culture = "islander"
+	religion = "cult_of_the_waves"
+
+	1202.6.18 = {
+		birth = yes
+	}
+}
+
+islander_cult_of_the_waves_2 = { # Local cult leader going big time, likes abducting people and sacrificing them to shadow gods, High King letting him run some islands for a while might have been a bad idea now that he wants to sacrifice the high king (and ulfirx (and everyone else (hes a crazy person)))
+	name = "Telemakhion" # Telemachion
+	dna = islander_cult_of_the_waves_2
+	religion = "cult_of_the_waves"
+	culture = "islander"
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_byzantine_01
+			custom_beards = no_beard
+		}
+	}
+
+	1198.5.27 = {
+		birth = yes
+	}
+	martial = 5
+	diplomacy = 4
+	stewardship = 6
+	intrigue = 7
+	learning = 9
+
+	trait = zealous
+	trait = paranoid
+	trait = sadistic
+	trait = lunatic_1
+	trait = education_learning_2
+
+	1198.5.27 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+}

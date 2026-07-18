@@ -1,0 +1,128 @@
+#c_eryrmyny = {
+#	1230.1.1 = {
+#		holder = mastikigni_sjalvolki_2
+#		government = continental_clan_government
+#	}
+#}
+c_bukowsko = {
+	1230.1.1 = {
+		holder = mastikigni_sjalvolki_3
+		liege = d_crag
+		government = continental_clan_government
+	}
+}
+#c_nocher = {
+#	1230.1.1 = {
+#		holder = mastikigni_sjalvolki_3
+#		liege = d_crag
+#		government = continental_clan_government
+#	}
+#}
+c_eastern_grey_gate = {
+	1250.1.1 = {
+		holder = mastikigni_sjalvolki_1
+		liege = d_white_river
+		government = continental_clan_government
+	}
+}
+c_lwydmyny_uchav = {
+	1240.1.1 = {
+		holder = mastikigni_sjalvolki_2
+	}
+}
+c_lwydmyny = {
+	1240.1.1 = {
+		holder = mastikigni_sjalvolki_2
+	}
+}
+#c_hora = {
+#	1250.1.1 = {
+#		holder = barki_sjalvolki_1
+#		liege = k_mastikigni
+#		government = continental_clan_government
+#	}
+#}
+c_sicciole = {
+	1250.1.1 = {
+		holder = barki_sjalvolki_1
+		liege = k_mastikigni
+		government = continental_clan_government
+	}
+	1256.2.1 = {
+		holder = mastikigni_sjalvolki_2
+	}
+}
+#c_leithum = {
+#	1250.1.1 = {
+#		holder = mastikigni_sjalvolki_7
+#		liege = d_white_river
+#		government = continental_clan_government
+#	}
+#}
+#c_schotterey = {
+#	1250.1.1 = {
+#		holder = barki_sjalvolki_6
+#		# liege = d_schalkshofen # GH TODO: Removed, replace with correct one
+#		government = continental_clan_government
+#	}
+#}
+c_tur_senach = {
+	91.12.14 = {
+		holder = dailennir_kathanouxiac_20	# Eldaceu 'Snowbeard'; never ruled or even set foot in Skycrown, but nominally treated as its first king for proper regnal numbering of his successors
+	}
+	91.12.15 = {
+		holder = dailennir_kathanouxiac_21	# King Meiandun 'the Exile' of Syronim
+	}
+	111.3.16 = {
+		holder = dailennir_kathanouxiac_23	# King Eldaceu II 'Breaker of Malkhador'
+	}
+	160.2.23 = {
+		holder = dailennir_kathanouxiac_25	# King Aldos 'the Mute Sage'
+	}
+	196.12.14 = {
+		holder = wasteland
+	}
+	639.11.5 = {
+		holder = fey_mothers_and_fathers_1	# The Fairy of Lake Migraddr
+	}
+	712.11.25 = {
+		holder = kartharaddi_orphecian_1	# General Chyvar
+	}
+	728.12.9 = {
+		holder = wasteland
+	}
+	739.5.25 = {
+		holder = northernimperial_aversarinas_aagiokrata_112	# Kothexir/Arch Magi Lathaeox
+	}
+	760.9.4 = {
+		holder = wasteland
+	}
+	1247.3.15 = {
+		holder = barki_sjalvolki_2
+		government = continental_clan_government
+	}
+	1256.2.1 = {
+		holder = mastikigni_sjalvolki_2
+	}
+}
+c_neujahrsdorf = {
+	1247.3.15 = {
+		holder = barki_sjalvolki_2
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1256.2.1 = {
+		holder = mastikigni_sjalvolki_2
+	}
+}
+c_ilmindir = {
+	1247.3.15 = {
+		holder = barki_sjalvolki_2
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1279.4.13 = {
+		holder = barki_sjalvolki_17
+		government = feudal_government
+	}
+}

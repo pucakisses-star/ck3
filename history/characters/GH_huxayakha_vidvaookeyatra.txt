@@ -1,0 +1,9 @@
+﻿huxayakha_vidvaookeyatra_1 = { # Vassal at lake
+	name = "Sanakhram"
+	religion = "vidvaookeyatra"
+	culture = "huxayakha"
+	female = yes
+	1230.8.8 = {
+		birth = yes
+	}
+}

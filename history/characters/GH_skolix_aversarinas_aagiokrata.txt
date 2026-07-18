@@ -1,0 +1,74 @@
+﻿skolix_aversarinas_aagiokrata_1 = {
+	name = "Epistrophos"
+	religion = aversarinas_aagiokrata
+	culture = skolix
+	1223.3.5 = {
+		birth = yes
+	}
+}
+
+skolix_aversarinas_aagiokrata_2 = {
+	name = "Aelcivrea"
+	religion = aversarinas_aagiokrata
+	culture = skolix
+	female = yes
+	1232.4.2 = {
+		birth = yes
+	}
+}
+
+skolix_aversarinas_aagiokrata_3 = {
+	name = "Mikhros"
+	religion = aversarinas_aagiokrata
+	culture = skolix
+	1211.9.15 = {
+		birth = yes
+	}
+}
+
+skolix_aversarinas_aagiokrata_4 = {
+	name = "Kythare"
+	religion = aversarinas_aagiokrata
+	culture = skolix
+	female = yes
+	1231.5.26 = {
+		birth = yes
+	}
+}
+
+skolix_aversarinas_aagiokrata_5 = {
+	name = "Onaos"
+	religion = aversarinas_aagiokrata
+	culture = skolix
+	1225.12.3 = {
+		birth = yes
+	}
+}
+
+skolix_aversarinas_aagiokrata_6 = {
+	name = "Prokopis"
+	religion = aversarinas_aagiokrata
+	culture = skolix
+	1202.5.4 = {
+		birth = yes
+	}
+}
+
+skolix_aversarinas_aagiokrata_7 = {
+	name = "Ve_liox"
+	religion = aversarinas_aagiokrata
+	culture = skolix
+	1209.8.5 = {
+		birth = yes
+	}
+}
+
+skolix_aversarinas_aagiokrata_8 = {
+	name = "Theochria"
+	religion = aversarinas_aagiokrata
+	culture = skolix
+	female = yes
+	1216.3.20 = {
+		birth = yes
+	}
+}

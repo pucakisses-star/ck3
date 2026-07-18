@@ -1,0 +1,1055 @@
+﻿#lich_culture_rejection_1 = { # Vilas Venslau
+#
+#}
+
+
+#lich_culture_rejection_2 = { # Silas Stavro
+#    name = "Silas"
+#    religion = "lifepath"
+#    culture = "trustians"
+#
+#    dynasty = dyn_marcher_2
+#    sexuality = heterosexual
+#    dna = silas
+#
+#    martial = 7
+#    diplomacy = 5
+#    stewardship = 6
+#    intrigue = 8
+#    learning = 6
+#    prowess = 6
+#
+#    805.5.24 = {
+#        birth = yes
+#    }
+#
+#    817.1.1 = {
+#        trait = vengeful
+#        trait = diligent
+#        trait = calm
+#    }
+#
+#    821.5.24 = {
+#        effect = { set_base_arcana = { AMOUNT = 3 } }
+#        trait = education_intrigue_2
+#        trait = way_of_nullification_follower
+#        trait = gh_historical_blademaster_1
+#    }
+#
+#    842.3.17 = {
+#    	trait = scarred
+#    }
+#
+#   	863.11.22 = {
+#		death = {
+#			death_reason = death_battle
+#		}
+#	}
+#}
+
+lich_culture_rejection_3 = { # Adwaga Adwakampy
+	name = "Adwaga"
+	dynasty = dyn_lich_culture_rejection_3
+	religion = rejection
+	culture = lich_culture
+	disallow_random_traits = yes
+	female = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_gh_headgear = female_lich_crown
+			#custom_headgear = female_empty
+		}
+	}
+
+	martial = 14
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 9
+	learning = 7
+	prowess = 8
+
+	129.4.13 = {
+		birth = yes
+		trait = magic_good_10
+	}
+
+	141.1.1 = {
+		trait = ambitious
+		trait = patient
+		trait = shy
+	}
+
+	145.4.13 = {
+		trait = education_arcana_4
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	169.4.27 = {
+		trait = education_lich_5
+		trait = gh_arch_lich_1
+		trait = necromancy_undead_lich
+		trait = gh_cult_everlasting
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:silentspeak }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	629.10.19 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+#lich_culture_rejection_4 = { # Themos
+#
+#}
+
+lich_culture_rejection_5 = { # Yakub 'Illspeaker'
+	name = "Yakub"
+	dynasty = dyn_lich_culture_rejection_5
+	religion = rejection
+	culture = lich_culture
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_gh_headgear = male_lich_crown
+			#custom_headgear = no_headgear
+		}
+	}
+
+	martial = 13
+	diplomacy = 9
+	intrigue = 6
+	stewardship = 12
+	learning = 10
+	prowess = 14
+
+	140.12.3 = {
+		birth = yes
+		trait = magic_good_7
+	}
+
+	152.1.1 = {
+		trait = arrogant
+		trait = wrathful
+		trait = greedy
+	}
+
+	156.12.3 = {
+		trait = education_diplomacy_3
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	164.2.20 = {
+		trait = education_lich_4
+		trait = gh_arch_lich_1
+		trait = necromancy_undead_lich
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+		trait = gh_cult_everlasting
+		give_nickname = nick_illspeaker
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	347.7.25 = {
+		death = {
+			death_reason = death_duel
+			killer = carsavisians_lifepath_11 # Sir Landett of the Lakes
+		}
+	}
+}
+
+lich_culture_rejection_6 = { # Solstice Scourge
+	name = "Wellky"
+	dynasty = dyn_lich_culture_rejection_6
+	religion = rejection
+	culture = lich_culture
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_gh_headgear = male_lich_crown
+			#custom_headgear = no_headgear
+		}
+	}
+
+	martial = 12
+	diplomacy = 12
+	intrigue = 12
+	stewardship = 12
+	learning = 12
+	prowess = 12
+
+	1101.12.25 = {
+		birth = yes
+		trait = magic_good_7
+	}
+
+	1113.1.1 = {
+		trait = diligent
+		trait = temperate
+		trait = stubborn
+	}
+
+	1117.12.25 = {
+		trait = education_arcana_3
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1173.12.25 = {
+		trait = education_lich_3
+		trait = necromancy_undead_lich
+		give_nickname = nick_solstice_scourge
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	1245.12.25 = {
+		death = {
+			death_reason = death_duel
+			killer = carsavisians_lifepath_15 # Ogier the Ogre
+		}
+	}
+}
+
+lich_culture_rejection_7 = { # Wwenslawyv Wisleyx, slain by High King Aloysian
+	name = "Wwenslawyv"
+	dynasty = dyn_lich_culture_rejection_7
+	religion = rejection
+	culture = lich_culture
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_gh_headgear = male_lich_crown
+			#custom_headgear = no_headgear
+		}
+	}
+
+	martial = 15
+	diplomacy = 7
+	intrigue = 12
+	stewardship = 10
+	learning = 8
+	prowess = 11
+
+	91.5.30 = {
+		birth = yes
+		trait = magic_good_9
+	}
+
+	103.1.1 = {
+		trait = calm
+		trait = chaste
+		trait = cynical
+	}
+
+	107.5.30 = {
+		trait = education_martial_3
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	157.11.28 = {
+		trait = education_lich_5
+		trait = gh_arch_lich_1
+		trait = necromancy_undead_lich
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+		trait = gh_cult_everlasting
+	}
+
+	254.5.6 = {
+		death = {
+			death_reason = death_battle
+			killer = shewigad_lifepath_1 # High King Aloysian
+		}
+	}
+}
+
+lich_culture_rejection_8 = { # Wethynod Wethydoltek, slain by Saint Eos
+	name = "Wethynod"
+	dynasty = dyn_lich_culture_rejection_8
+	religion = rejection
+	culture = lich_culture
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_gh_headgear = male_lich_crown
+			#custom_headgear = no_headgear
+		}
+	}
+
+	martial = 9
+	diplomacy = 15
+	intrigue = 6
+	stewardship = 14
+	learning = 14
+	prowess = 17
+
+	850.8.28 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	862.1.1 = {
+		trait = lustful
+		trait = gregarious
+		trait = deceitful
+	}
+
+	866.5.30 = {
+		trait = education_intrigue_2
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	905.2.18 = {
+		trait = education_lich_2
+		trait = shrewd
+		trait = necromancy_undead_lich
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+
+	1080.8.1 = {
+		death = {
+			death_reason = death_duel
+			killer = centralimperial_aversarinas_aagiokrata_60 # Saint Eos
+		}
+	}
+}
+
+lich_culture_rejection_9 = { # Milon 'the Godtouched' Zackowic, slain by High King Valden
+	name = "Milon"
+	dynasty = dyn_lich_culture_rejection_9
+	religion = rejection
+	culture = lich_culture
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_gh_headgear = male_lich_crown
+			#custom_headgear = no_headgear
+		}
+	}
+
+	martial = 10
+	diplomacy = 9
+	intrigue = 10
+	stewardship = 6
+	learning = 5
+	prowess = 10
+
+	936.3.21 = {
+		birth = yes
+		trait = magic_good_9
+	}
+
+	948.1.1 = {
+		trait = arbitrary
+		trait = zealous
+		trait = sadistic
+	}
+
+	952.3.21 = {
+		trait = education_learning_4
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	970.2.23 = {
+		trait = education_lich_4
+		trait = gh_arch_lich_1
+		trait = necromancy_undead_lich
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+		give_nickname = nick_the_godtouched
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	1094.8.28 = {
+		death = {
+			death_reason = death_duel
+			killer = voyagen_lifepath_26 # High King Valden
+		}
+	}
+}
+
+lich_culture_rejection_10 = { # Petrovos Petrynix, part of Aesch's cabal, later tasked to research lichdom, which he achieved for himself
+	name = "Petrovos" 
+	religion = rejection
+	culture = lich_culture
+	dynasty = dyn_lich_culture_rejection_10
+
+	disallow_random_traits = yes
+
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 4
+	learning = 3
+	prowess = 5
+
+	1144.6.13 = {
+		birth = yes
+		trait = magic_good_10
+		trait = intellect_good_1
+	}
+
+	1156.1.1 = {
+		trait = ambitious
+		trait = stubborn
+		trait = arrogant
+	}
+
+	1160.6.13 = {
+		effect = { set_base_arcana = { AMOUNT = 10 } }
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1196.7.11 = {
+		trait = education_lich_2
+		trait = necromancy_undead_lich
+		religion = rejection
+		culture = lich_culture
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:school_of_rejection }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1198.9.21 = {
+		death = {
+			death_reason = death_duel
+			killer = centralimperial_aversarinas_aagiokrata_189 # Slain in a magical duel by Axos Iron-Walker and Nycenea the Void Walker
+		}
+	}
+}
+
+lich_culture_rejection_11 = { # Dexas 'Deathrender', anti-magi turned lich, slain by Maria den va Theydia
+	name = "Dexas"
+	dynasty = dyn_lich_culture_rejection_11
+	religion = rejection
+	culture = lich_culture
+	disallow_random_traits = yes
+	female = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_gh_headgear = female_lich_crown
+			#custom_headgear = female_empty
+		}
+	}
+
+	martial = 5
+	diplomacy = 10
+	intrigue = 6
+	stewardship = 9
+	learning = 9
+	prowess = 4
+
+	988.7.20 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	1000.1.1 = {
+		trait = shy
+		trait = temperate
+		trait = diligent
+	}
+
+	1004.7.20 = {
+		trait = education_martial_2
+		trait = way_of_justice_follower
+		trait = depressed_1
+	}
+
+	1009.1.1 = {
+		trait = lunatic_1
+	}
+
+	1019.5.14 = {
+		trait = education_lich_4
+		trait = necromancy_undead_lich
+		give_nickname = nick_deathrender
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:silentspeak }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1166.7.21 = {
+		death = {
+			death_reason = death_duel
+			killer = voyagen_lifepath_58 # Maria den va Theydia
+		}
+	}
+}
+
+lich_culture_rejection_12 = { # Methinoire Methiclyz
+	name = "Methinoire" 
+	religion = rejection
+	culture = lich_culture
+	dynasty = dyn_lich_culture_rejection_12
+	sexuality = asexual
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_gh_headgear = male_lich_crown
+		}
+	}
+
+	martial = 3
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 9
+	learning = 5
+	prowess = 4
+
+	240.6.27 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	252.1.1 = {
+		trait = arrogant
+		trait = lazy
+		trait = greedy
+	}
+
+	256.6.27 = {
+		effect = { set_base_arcana = { AMOUNT = 7 } }
+		trait = education_arcana_3
+	}
+
+	304.1.16 = {
+		trait = necromancy_undead_lich
+		trait = gh_historical_school
+		religion = rejection
+		culture = lich_culture
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:school_of_rejection }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}	
+	}
+
+	762.3.17 = {
+		trait = education_lich_4
+	}
+
+	842.3.17 = {
+		death = {
+			death_reason = death_duel
+			killer = trustians_lifepath_33 # Gaoff den va Spencer
+		}
+	}
+}
+
+lich_culture_rejection_13 = { # Crasmer Crasvir, slain by Wayfather Peyton
+	name = "Crasmer"
+	dynasty = dyn_lich_culture_rejection_13
+	religion = rejection
+	culture = lich_culture
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_gh_headgear = male_lich_crown
+			#custom_headgear = no_headgear
+		}
+	}
+
+	martial = 5
+	diplomacy = 9
+	intrigue = 10
+	stewardship = 7
+	learning = 5
+	prowess = 11
+
+	1015.4.14 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1027.1.1 = {
+		trait = vengeful
+		trait = arrogant
+		trait = trusting
+	}
+
+	1031.4.14 = {
+		trait = education_arcana_4
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1058.9.3 = {
+		trait = education_lich_3
+		trait = necromancy_undead_lich
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+
+	1143.3.25 = {
+		death = {
+			death_reason = death_duel
+			killer = carsavisians_lifepath_36 # Wayfather Peyton
+		}
+	}
+}
+
+lich_culture_rejection_14 = { # Satayan Holkkarak
+	name = "Satayan" 
+	religion = rejection
+	culture = kashiryan_lich_culture
+	dynasty = dyn_lich_culture_rejection_14
+
+	disallow_random_traits = yes
+
+	martial = 8
+	diplomacy = 3
+	intrigue = 4
+	stewardship = 7
+	learning = 6
+	prowess = 5
+
+	855.6.10 = {
+		birth = yes
+		trait = magic_good_7
+		trait = intellect_good_2
+	}
+
+	867.1.1 = {
+		trait = ambitious
+		trait = chaste
+		trait = arrogant
+	}
+
+	871.6.10 = {
+		effect = { set_base_arcana = { AMOUNT = 8 } }
+		trait = education_learning_4
+		trait = scholar
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:empiricists }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	893.6.7 = {
+		trait = education_lich_1
+		trait = necromancy_undead_lich
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:school_of_rejection }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	904.1.27 = {
+		death = {
+			death_reason = death_duel
+			killer = neshalar_asritayka_1 # Asojiva
+		}
+	}
+}
+
+#lich_culture_rejection_15 = { # Avedexar Avedexarax
+#
+#}
+
+lich_culture_rejection_16 = { # Iurdoc Iurdian, slain by Dexas Deathrender
+	name = "Iurdoc"
+	dynasty = dyn_lich_culture_rejection_16
+	religion = rejection
+	culture = lich_culture
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_gh_headgear = male_lich_crown
+			#custom_headgear = no_headgear
+		}
+	}
+
+	martial = 5
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 6
+	learning = 7
+	prowess = 11
+
+	1033.8.24 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	1045.1.1 = {
+		trait = chaste
+		trait = ambitious
+		trait = zealous
+	}
+
+	1049.8.24 = {
+		trait = education_stewardship_3
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1069.8.24 = {
+		trait = education_lich_2
+		trait = necromancy_undead_lich
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1166.2.17 = {
+		death = {
+			death_reason = death_lich_duel
+			killer = lich_culture_rejection_11 # Dexas Deathrender
+		}
+	}
+}
+
+lich_culture_rejection_17 = { # Mathex 'Hate-Heart', slain by Dexas Deathrender
+	name = "Mathex"
+	dynasty = dyn_lich_culture_rejection_17
+	religion = rejection
+	culture = lich_culture
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_gh_headgear = male_lich_crown
+			#custom_headgear = no_headgear
+		}
+	}
+
+	martial = 6
+	diplomacy = 8
+	intrigue = 10
+	stewardship = 7
+	learning = 11
+	prowess = 4
+
+	1073.6.26 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1085.1.1 = {
+		trait = vengeful
+		trait = callous
+		trait = wrathful
+	}
+
+	1089.6.26 = {
+		trait = education_intrigue_2
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1100.4.17 = {
+		trait = education_lich_1
+		trait = necromancy_undead_lich
+		give_nickname = nick_hate_heart
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	1166.2.17 = {
+		death = {
+			death_reason = death_lich_duel
+			killer = lich_culture_rejection_11 # Dexas Deathrender
+		}
+	}
+}
+
+lich_culture_rejection_18 = { # Jorvik the Black, slain by Dexas Deathrender
+	name = "Jorvik"
+	dynasty = dyn_lich_culture_rejection_18
+	religion = rejection
+	culture = lich_culture
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_gh_headgear = male_lich_crown
+			#custom_headgear = no_headgear
+		}
+	}
+
+	martial = 11
+	diplomacy = 10
+	intrigue = 4
+	stewardship = 8
+	learning = 9
+	prowess = 7
+
+	989.7.14 = {
+		birth = yes
+		trait = magic_good_7
+	}
+
+	1001.1.1 = {
+		trait = fickle
+		trait = gluttonous
+		trait = wrathful
+	}
+
+	1005.7.14 = {
+		trait = education_intrigue_4
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1065.1.13 = {
+		trait = education_lich_3
+		trait = necromancy_undead_lich
+		give_nickname = nick_the_black_jorvik
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:silentspeak }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1166.2.17 = {
+		death = {
+			death_reason = death_lich_duel
+			killer = lich_culture_rejection_11 # Dexas Deathrender
+		}
+	}
+}
+
+lich_culture_rejection_19 = { # Ilnar Illadir, invaded Chevalie during the Ash War
+	name = "Ilnar"
+	dynasty = dyn_lich_culture_rejection_19
+	religion = rejection
+	culture = lich_culture
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_gh_headgear = male_lich_crown
+			#custom_headgear = no_headgear
+		}
+	}
+
+	martial = 10
+	diplomacy = 7
+	intrigue = 9
+	stewardship = 5
+	learning = 8
+	prowess = 12
+
+	961.8.30 = {
+		birth = yes
+		trait = magic_good_8
+	}
+
+	973.1.1 = {
+		trait = zealous
+		trait = craven
+		trait = callous
+	}
+
+	977.8.30 = {
+		trait = reaver
+		trait = education_martial_3
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+
+	1033.11.9 = {
+		trait = education_lich_3
+		trait = necromancy_undead_lich
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:silentspeak }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1252.6.23 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+lich_culture_rejection_20 = { # Vlamir Navos
+	name = "Vlamir"
+	dynasty = dyn_lich_culture_rejection_20
+	religion = rejection
+	culture = lich_culture
+	disallow_random_traits = yes
+
+	martial = 10
+	diplomacy = 6
+	intrigue = 7
+	stewardship = 6
+	learning = 6
+	prowess = 9
+
+	1009.1.11 = {
+		birth = yes
+		trait = magic_good_7
+	}
+
+	1021.1.11 = {
+		trait = patient
+		trait = stubborn
+		trait = cynical
+	}
+
+	1025.1.11 = {
+		trait = education_intrigue_4
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1061.1.11 = {
+		trait = education_lich_5
+		trait = necromancy_undead_lich
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:silentspeak }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+}
+
+lich_culture_rejection_21 = { # Salt-Lich
+    name = "Taik"
+    religion = rejection
+    culture = kashiryan_lich_culture
+    dynasty = dyn_lich_culture_rejection_21
+
+    disallow_random_traits = yes
+
+    martial = 10
+    diplomacy = 0
+    intrigue = 8
+    stewardship = 6
+    learning = 5
+    prowess = 8
+
+    863.6.17 = {
+        birth = yes
+        trait = magic_good_5
+        trait = physique_good_2
+    }
+
+    883.1.1 = {
+        trait = ambitious
+        trait = gluttonous
+        trait = vengeful
+        trait = education_arcana_4
+    }
+
+    885.1.1 = {
+        effect = { set_base_arcana = { AMOUNT = 8 } }
+        trait = gh_sage
+        trait = gh_historical_school
+        effect = {
+            set_variable = { name = historical_magic_school value = flag:school_of_night_scrying }
+            set_variable = { name = historical_magic_school_min_spells value = 8 }
+        }
+    }
+
+    899.1.1 = {
+        trait = education_lich_1
+        trait = necromancy_undead_lich
+        effect = {
+            set_variable = { name = historical_magic_school value = flag:school_of_rejection }
+            set_variable = { name = historical_magic_school_min_spells value = 10 }
+        }
+        give_nickname = nick_salt_lich
+    }
+
+    899.12.29 = {
+        death = {
+            death_reason = death_duel
+            killer = watumimba_corkkattirkana_46
+        }
+    }
+}

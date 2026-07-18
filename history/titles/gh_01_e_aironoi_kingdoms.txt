@@ -1,0 +1,282 @@
+k_anthygal = {
+	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+		de_jure_liege = e_olteneria
+	}
+}
+
+k_arbaz = {
+	1230.1.1 = {
+		change_development_level = 4
+	}
+	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+		de_jure_liege = e_anokryosae
+	}
+}
+
+k_arderwan = { 
+	1180.8.7 = {
+		holder = kuridorig_cumani_28
+		government = feudal_government 
+	}
+	1189.8.7 = {
+		holder = kuridorig_cumani_29
+		government = feudal_government 
+	}
+	1230.1.1 = {
+		change_development_level = 2
+	}
+	1230.11.11 = {
+		holder = kuridorig_cumani_18
+		government = feudal_government 
+	}
+	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+		de_jure_liege = e_asiupoliox
+	}
+}
+
+k_chvor = {
+	1173.10.31 = {
+		holder = murarut_cumani_1
+		government = nomad_government
+	}
+	1200.3.1 = {
+		holder = murarut_cumani_2
+		government = nomad_government
+	}
+	1249.1.12 = {
+		holder = murarut_cumani_9
+		change_development_level = 3
+		government = nomad_government
+	}
+	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+		de_jure_liege = e_olteneria
+	}
+}
+
+k_coluehis = {
+	143.4.17 = {
+		holder = amaghean_lost_heroes_1
+	}
+	188.4.16 = {
+		holder = 0
+	}
+	439.12.22 = {
+		holder = amaghean_stone_warrior_4
+	}
+	495.7.23 = {
+		holder = amaghean_stone_warrior_3
+	}
+	509.1.28 = {
+		holder = amaghean_stone_warrior_2
+	}
+	532.10.3 = {
+		holder = amaghean_stone_warrior_1
+	}
+	592.10.3 = {
+		holder = 0
+	} 
+	1176.5.4 = {
+		holder = amaghean_amaghean_aagiokrata_9
+	}
+	1200.3.1 = {
+		holder = amaghean_amaghean_aagiokrata_8
+	}
+	1230.1.1 = {
+		change_development_level = 5
+	}
+	1242.11.3 = {
+		holder = 0
+	}
+	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+		de_jure_liege = e_amaghea
+	}
+}
+
+k_dartar = {
+	1174.6.15 = {
+		holder = kuridorig_iek_otached_2
+		government = nomad_government
+	}
+	1194.6.14 = {
+		holder = kuridorig_iek_otached_1
+		government = nomad_government
+	}
+	1200.2.10 = {
+		holder = kuridorig_iek_otached_3
+		government = nomad_government
+	}
+	1200.8.1 = {
+		holder = kuridorig_cumani_5
+		government = nomad_government
+	}
+	1217.6.16 = {
+		holder = kuridorig_cumani_2
+		government = nomad_government
+	}
+	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+		de_jure_liege = e_olteneria
+	}
+}
+
+k_dethskel = {
+	1230.1.1 = {
+		change_development_level = 5
+	}
+	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+		de_jure_liege = e_redlands
+	}
+}
+
+k_hyrea = {
+	1230.1.1 = {
+		change_development_level = 2
+	}
+	1250.1.1 = {
+		holder = 0
+	}
+	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+		de_jure_liege = e_asiupoliox
+	}
+}
+
+k_ijardigarrn = {
+	1.1.1 = {
+		change_development_level = 0
+	}
+	1250.1.1 = {
+		holder = 0
+	}
+	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+		de_jure_liege = e_redlands
+	}
+}
+
+k_imrezstav = {
+	1218.7.5 = {
+		holder = mahratian_mahrator_2
+		change_development_level = 8
+		government = feudal_government
+	}
+	1239.4.11 = {
+		holder = mahratian_mahrator_1
+	}
+	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+		de_jure_liege = e_amaghea
+	}
+}
+
+k_kalliados = {
+	1230.1.1 ={
+		change_development_level = 1
+		holder = easternimperial_aironoian_aagiokrata_1
+	}
+	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+		de_jure_liege = e_asiupoliox
+	}
+}
+
+k_krehejad = {
+	1191.6.7 = {
+		holder = enisaloi_aversarinas_aagiokrata_4
+	}
+	1214.3.19 = {
+		holder = enisaloi_aversarinas_aagiokrata_2
+	}
+	1247.4.8 = {
+		holder = enisaloi_aversarinas_aagiokrata_1
+	}
+	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+		de_jure_liege = e_stellios_aautokrata
+	}
+}
+
+k_kteumaxa = { 
+	1230.1.1 = {
+		holder = khorinot_cumani_1
+		government = nomad_government		 
+	}
+	1230.1.1 = { change_development_level = 2 }
+	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+		de_jure_liege = e_asiupoliox
+	}
+	1297.1.1 = {
+		holder = easternimperial_aironoian_aagiokrata_1
+		government = feudal_government
+	}
+}
+
+k_muthathk = { 
+	1198.1.1 = {
+		holder = muhadamd_cumani_22
+		government = feudal_government
+	}
+	1230.1.1 = {
+		holder = muhadamd_cumani_21
+		government = feudal_government
+		change_development_level = 2
+	}
+	1238.3.14 = {
+		holder = muhadamd_cumani_12
+		government = feudal_government
+	}
+	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+		de_jure_liege = e_olteneria
+	}
+}
+
+k_svanti = {
+	1224.9.4 = {
+		holder = charchac_daminkar_2
+	}
+	1240.11.15 = {
+		holder = charchac_alau_koev_2
+	}
+	1250.12.10 = {
+		holder = 0
+	}
+	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+		de_jure_liege = e_amaghea
+	}
+}
+
+k_svatavego = {
+	1176.5.4 = {
+		holder = amaghean_amaghean_aagiokrata_9
+	}
+	1200.3.1 = {
+		holder = amaghean_amaghean_aagiokrata_8
+	}
+	1230.1.1 = {
+		change_development_level = 6
+	}
+	1242.11.3 = {
+		holder = 0
+	}
+	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+		de_jure_liege = e_amaghea
+	}
+}
+
+k_taykovi = {
+	1230.1.1 = {
+		change_development_level = 5
+	}
+	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+		de_jure_liege = e_anokryosae
+	}
+}
+
+k_aryvann_vos = {
+	174.8.16 = {
+		holder = jarakmar_ertomax_16
+	}
+	199.11.2 = {
+		holder = 0
+	}
+	1230.1.1 = {
+		change_development_level = 5
+	}
+	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+		de_jure_liege = e_anokryosae
+	}
+}

@@ -1,0 +1,97 @@
+﻿erridai_forgotten_1 = {
+	name = "forgottensaint"
+	religion = "forgotten"
+	culture = "erridai"
+	sexuality = asexual
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = no_hair
+			custom_beards = no_beard
+			#custom_headgear = no_headgear
+			#custom_gh_hoods = aversarian_magi_hood
+			custom_gh_masks = vanilla_face_mask_hoodless
+			# NOTE: Extracted to portrait_effect_black_figure_trigger in common\scripted_triggers\GH_portrait_effect_triggers.txt
+			#       as a workaround for this portrait_override usage causing shaders to zero out sun brightness.
+			#gh_portrait_effects_flat = flat_figure_black
+			# END NOTE
+		}
+	}
+	
+	1.1.1 = {
+		birth = yes
+		trait = magic_good_20
+		give_nickname = nick_the_forgotten_saint
+	}
+
+	12.1.1 = {
+		trait = humble
+		trait = cynical
+		trait = calm	
+	}
+
+	16.1.1 = {
+		trait = education_arcana_5
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:silentspeak }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1095.6.5 = {
+		death = {
+			death_reason = death_fs_disappearance
+		}
+	}
+}
+
+erridai_forgotten_2 = { # The Whisperer, FS Magi during the Agionist Rebellion
+	name = "forgottensaint"
+	religion = aversarinas_aagiokrata
+	culture = erridai
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 8
+	intrigue = 2
+	stewardship = 4
+	learning = 3
+	prowess = 4
+
+	1027.5.2 = {
+		birth = yes
+		trait = magic_good_7
+		trait = intellect_good_2
+	}
+
+	1039.1.1 = {
+		trait = zealous
+		trait = calm
+		trait = diligent
+	}
+
+	1043.5.2 = {
+		trait = education_arcana_5
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1059.12.23 = {
+		trait = gh_glowing_eyes
+		trait = gh_ritual_tattoos
+		trait = gh_historical_blademaster_2
+		give_nickname = nick_the_whisperer_agionist
+	}
+
+	1095.4.26 = {
+		religion = forgotten
+		death = {
+			death_reason = death_vanished
+		}
+	}
+}

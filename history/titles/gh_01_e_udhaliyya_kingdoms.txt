@@ -1,0 +1,15 @@
+k_uraghad = {
+	1200.1.1 = {
+		change_development_level = 12
+	}
+}
+
+k_karadoon = {
+	1200.1.1 = {
+		change_development_level = 11
+	}
+	1234.1.22 = {
+		holder = tasurmad_wardenism_2
+		liege = "e_central_mamuramat"
+	}
+}

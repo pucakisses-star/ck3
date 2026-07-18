@@ -1,0 +1,69 @@
+﻿redlander_great_unknown_one_1 = {
+	name = "Grasser"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1211.1.28 = {
+		birth = yes
+	}
+}
+
+redlander_great_unknown_one_2 = {
+	name = "Quwas"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1221.2.9 = {
+		birth = yes
+	}
+}
+
+redlander_great_unknown_one_3 = {
+	name = "Lorr"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1214.7.15 = {
+		birth = yes
+	}
+}
+
+redlander_great_unknown_one_4 = {
+	name = "Wedec"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1224.6.28 = {
+		birth = yes
+	}
+}
+
+redlander_great_unknown_one_5 = {
+	name = "Lerd"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1218.1.19 = {
+		birth = yes
+	}
+}
+
+redlander_great_unknown_one_6 = {
+	name = "Forgann"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1233.7.20 = {
+		birth = yes
+	}
+}
+
+redlander_great_unknown_one_7 = {
+	name = "Argun"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1224.11.14 = {
+		birth = yes
+	}
+}

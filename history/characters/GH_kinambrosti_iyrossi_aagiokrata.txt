@@ -1,0 +1,22 @@
+﻿kinambrosti_iyrossi_aagiokrata_1 = {
+	name = "Daor"
+	dynasty = dyn_iyrossi_7
+	religion = "iyrossi_aagiokrata"
+	culture = "kinambrosti"
+
+	1230.4.12 = {
+		birth = yes
+	}
+}
+
+kinambrosti_iyrossi_aagiokrata_2 = {
+	name = "Hyllus"
+	dynasty = dyn_iyrossi_9
+	religion = "iyrossi_aagiokrata"
+	culture = "kinambrosti"
+	female = yes
+
+	1212.4.12 = {
+		birth = yes
+	}
+}

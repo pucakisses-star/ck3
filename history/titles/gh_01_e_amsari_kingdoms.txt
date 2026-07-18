@@ -1,0 +1,248 @@
+k_azadi = {
+	1.1.1 = {
+		holder = unsorted_18
+	}
+	98.6.2 = {
+		holder = 0
+	}
+	242.3.16 = {
+		holder = amsari_mahndayana_122
+	} # Adarayan
+	278.1.1 = {
+		holder = amsari_mahndayana_126
+	} # Mehran
+	286.1.1 = {
+		holder = amsari_mahndayana_127
+	} # Zarvandar
+	313.1.1 = {
+		holder = amsari_mahndayana_129
+	} # Yahziri
+	362.1.1 = {
+		holder = amsari_mahndayana_131
+	} # Mehran II
+	382.1.1 = {
+		holder = amsari_mahndayana_132
+	} # Vahhab
+	427.1.1 = {
+		holder = amsari_mahndayana_133
+	} # Iralya
+	456.1.1 = {
+		holder = amsari_mahndayana_137
+	} # Nuya
+	493.1.1 = {
+		holder = amsari_mahndayana_141
+	} # Navrosh
+	529.1.1 = {
+		holder = amsari_mahndayana_142
+	} # Shahr_Nira
+	551.1.1 = {
+		holder = amsari_mahndayana_143
+	} # Oshvari
+	579.1.1 = {
+		holder = amsari_mahndayana_144
+	} # Kavashid
+	582.1.1 = {
+		holder = amsari_mahndayana_145
+	} # DestAran
+	649.1.1 = {
+		holder = amsari_mahndayana_147
+	} # Mehran
+	674.1.1 = {
+		holder = amsari_mahndayana_148
+	} # Ashakhet
+	682.1.1 = {
+		holder = amsari_mahndayana_149
+	} # Javareh
+	709.1.1 = {
+		holder = amsari_mahndayana_150
+	} # Mazdari ########################
+	720.1.1 = { 
+		holder = amsari_mahndayana_154
+	} # Arika #########################
+	731.1.1 = {
+		holder = amsari_mahndayana_151
+	} # Rouzbeh
+	747.1.1 = {
+		holder = amsari_mahndayana_155
+	} # Rouzbeh II
+	763.1.1 = {
+		holder = amsari_mahndayana_175
+	} # Ardava
+	786.1.1 = {
+		holder = amsari_mahndayana_176
+	} # Zartosht
+	818.1.1 = {
+		holder = amsari_mahndayana_182
+	} # Zayar
+	865.1.1 = {
+		holder = amsari_mahndayana_184
+	} # Gholshan
+	899.1.1 = {
+		holder = amsari_mahndayana_189
+	} # Adarva (899-906 IS)
+	906.1.1 = {
+		holder = amsari_mahndayana_197
+	} # Bahran (906-908 IS)
+	908.1.1 = {
+		holder = amsari_mahndayana_186
+	} # Aushedar (908-913 IS)
+	913.1.1 = {
+		holder = amsari_mahndayana_198
+	} # Majhra (913-924 IS)
+	924.1.1 = {
+		holder = amsari_mahndayana_199
+	} # Majhra II (924-933 IS)
+	933.1.1 = {
+		holder = amsari_mahndayana_193
+	} # Yazarith (933-957 IS)
+	957.1.1 = {
+		holder = amsari_mahndayana_241
+	} # Itet (957-966 IS)
+	966.1.1 = {
+		holder = amsari_mahndayana_247
+	} # Farvan (966-978 IS)
+	978.1.1 = {
+		holder = amsari_mahndayana_268
+	} # Zayar (978-999 IS)
+	999.1.1 = {
+		holder = amsari_mahndayana_269
+	} # Aushedar (999-1046 IS)
+	1046.1.1 = {
+		holder = amsari_mahndayana_270 
+	} # Razemi (1046-1074 IS)
+	1074.1.1 = {
+		holder = amsari_mahndayana_271
+	} # ParashAd (1074-1118 IS)
+	1118.1.1 = {
+		holder = amsari_mahndayana_272
+	} # Tova (1118-1148 IS)
+	1148.1.1 = {
+		holder = amsari_mahndayana_274
+	} # Israyana (1148-1169 IS)
+	1169.1.1 = {
+		holder = amsari_mahndayana_275
+	} # Jahanshah (1169-1184 IS)
+	1184.1.1 = {
+		holder = amsari_mahndayana_2
+	} # Pejman (1184-1257 IS)
+}
+k_chupanlar = {
+	1.1.1 = {
+		holder = unsorted_18
+	}
+	98.6.2 = {
+		holder = 0
+	}
+	
+	# First Maraghid Kigdom
+	755.1.1 = {
+		holder = thyssae_mahndayana_17
+		liege = 0
+	}
+	794.7.30 = {
+		holder = thyssae_mahndayana_18
+		liege = 0
+	}	
+	839.1.1 = {
+		holder = thyssae_mahndayana_19
+		liege = 0
+	}
+	848.1.1 = {
+		holder = 0
+	}
+	
+	# Second Maraghid Kigdom
+	948.1.1 = {
+		holder = thyssae_mahndayana_20
+		liege = 0
+	}
+	979.1.1 = {
+		holder = thyssae_mahndayana_21
+		liege = 0
+	}
+	1002.1.1 = {
+		holder = thyssae_mahndayana_22
+		liege = 0
+	}
+	1006.1.1 = {
+		holder = 0
+	}
+	
+	1200.1.1 = {
+		change_development_level = 19
+	}
+}
+k_durab = {
+	1.1.1 = {
+		holder = unsorted_18
+	}
+	98.6.2 = {
+		holder = 0
+	}
+
+	1109.5.12 = {
+		holder = siralagi_mahndayana_1
+		liege = e_amsari
+	}
+	1151.2.11 = {
+		holder = siralagi_mahndayana_2
+		liege = e_amsari
+	}
+	1176.11.3 = {
+		holder = siralagi_mahndayana_3
+		liege = e_amsari
+	}
+	1180.3.7 = {
+		holder = siralagi_mahndayana_4
+		liege = e_amsari
+	}
+	1204.1.22 = {
+		holder = siralagi_mahndayana_5
+		liege = e_amsari
+	}	
+	1200.1.1 = {
+		change_development_level = 20
+	}
+}
+k_dizaje_dul = {
+	1122.9.10 = {
+		holder = siralagi_mahndayana_100
+		liege = e_amsari
+	}
+	1175.5.16 = {
+		holder = siralagi_mahndayana_101
+		liege = e_amsari
+	}
+	1198.3.30 = {
+		holder = siralagi_mahndayana_102
+		liege = e_amsari
+	}
+	1222.1.22 = {
+		holder = siralagi_mahndayana_103
+		liege = e_amsari
+	}
+	1242.4.7 = {
+		holder = amsari_mahndayana_21
+		liege = e_amsari
+	}
+}
+#k_kabyar = {
+#	1200.1.1 = {
+#		change_development_level = 21
+#	}
+#}
+k_shuran = {
+	1.1.1 = {
+		holder = unsorted_18
+	}
+	98.6.2 = {
+		holder = 0
+	}
+	1200.1.1 = {
+		change_development_level = 19
+	}
+	1243.5.13 = {
+		holder = amsari_mahndayana_324
+		liege = e_amsari
+	}
+}

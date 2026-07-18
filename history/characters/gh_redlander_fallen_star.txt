@@ -1,0 +1,39 @@
+﻿redlander_fallen_star_1 = {
+	name = "Acutun"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1219.7.10 = {
+		birth = yes
+	}
+}
+
+redlander_fallen_star_2 = {
+	name = "Thorne"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1218.3.27 = {
+		birth = yes
+	}
+}
+
+redlander_fallen_star_3 = {
+	name = "Neorn"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1218.7.10 = {
+		birth = yes
+	}
+}
+
+redlander_fallen_star_4 = {
+	name = "Carm"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1220.6.12 = {
+		birth = yes
+	}
+}

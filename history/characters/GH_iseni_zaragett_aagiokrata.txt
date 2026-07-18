@@ -1,0 +1,9 @@
+﻿iseni_zaragett_aagiokrata_1 = {
+	name = "Hermenexildo"
+	religion = "zaragett_aagiokrata"
+	culture = "iseni"
+
+	1223.5.12 = {
+		birth = yes
+	}
+}

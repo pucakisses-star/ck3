@@ -1,0 +1,9 @@
+k_akhtarfesh = {
+	1230.1.1 = { change_development_level = 2 }
+}
+k_asreyones = {
+	1230.1.1 = { change_development_level = 2 }
+}
+k_gwasiluh = {
+	1230.1.1 = { change_development_level = 2 }
+}

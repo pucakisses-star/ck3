@@ -1,0 +1,64 @@
+d_neufrisa = {
+	1.1.1 = {
+		holder = shewigad_starvayrd_1
+	}
+	85.1.12 = {
+		holder = 0
+	}
+	1171.2.17 = {
+		holder = salisians_lifepath_20
+	}
+
+	1227.10.19 = {
+		holder = salisians_lifepath_22
+	}
+
+	1230.1.1 = { 
+		change_development_level = 8 
+	}
+	
+	1251.10.13 = {
+		holder = 0
+	}
+	
+	1252.1.1 = {
+		holder = voluntic_partic_25
+		liege = k_calagonii
+	}
+	1230.1.1 = { change_development_level = 2 }
+}
+d_tinec = {
+	1.1.1 = {
+		holder = shewigad_starvayrd_1
+	}
+	85.1.12 = {
+		holder = 0
+	}
+	1249.1.1 = {
+		holder = voluntic_partic_27
+		liege = k_calagonii
+	}
+	1230.1.1 = { change_development_level = 1 }
+}
+d_kezly = {
+	11.2.21 = { # Generic Shewigad rebellion date
+		holder = 0
+	}
+	1211.11.11 = {
+		holder = northernimperial_aversarinas_aagiokrata_111
+	}
+	1230.7.12 = { # Gurdurbrok's Rebellion
+		holder = sarridians_aversarinas_aagiokrata_2
+		liege = e_gurdurbok
+	}
+	1247.9.3 = {
+		holder = northernimperial_aversarinas_aagiokrata_110
+	}
+	1251.10.11 = {
+		liege = k_epavarion
+	}
+	1230.1.1 = { change_development_level = 4 }
+}
+d_zhabirhon = {
+	1230.1.1 = { change_development_level = 3 }
+}

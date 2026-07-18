@@ -1,0 +1,578 @@
+1 = {
+	holding = none
+}
+
+4 = {
+	holding = none
+}
+
+12 = {
+	holding = none
+}
+
+13 = {
+	holding = none
+}
+
+14 = {
+	culture = siltwalker
+	religion = nolosaanyo
+	holding = tribal_holding
+}
+
+19 = {
+	culture = siltwalker
+	religion = nolosaanyo
+	holding = tribal_holding
+}
+
+24 = {
+	holding = none
+}
+
+35 = {
+	holding = city_holding
+}
+
+39 = {
+	holding = none
+}
+
+43 = {
+	holding = none
+}
+
+44 = {
+	culture = rethara
+	religion = yakasak
+	holding = castle_holding  
+}
+
+51 = {
+	culture = tapuso
+	religion = nolosaanyo
+	holding = castle_holding
+}
+
+
+58 = {
+	holding = none
+}
+
+66 = {
+	culture = tapuso
+	religion = nolosaanyo
+	holding = castle_holding
+}
+
+69 = {
+	holding = none
+}
+
+62 = {
+	holding = none
+}
+
+6220 = {
+	holding = ruin_holding
+}
+
+73 = {
+	holding = none
+}
+
+76 = {
+	holding = none
+} 
+
+86 = {
+	holding = none
+}
+
+89 = {
+	culture = velrika
+	religion = corkkattirkana
+	holding = castle_holding
+}
+
+92 = {
+	culture = siltwalker
+	religion = nolosaanyo
+	holding = tribal_holding
+}
+
+94 = {
+	holding = none
+}
+
+100 = {
+	holding = none
+}
+
+101 = {
+
+	holding = none
+}
+
+114 = {
+	holding = city_holding
+}
+
+125 = {
+	culture = saruta
+	religion = corkkattirkana
+	holding = castle_holding
+}
+
+136 = {
+	holding = none
+}
+
+140 = {
+	culture = siltwalker
+	religion = nolosaanyo
+	holding = tribal_holding
+}
+
+164 = {
+	holding = none
+}
+
+174 = {
+	culture = rethara
+	religion = yakasak
+	holding = castle_holding  
+}
+
+176 = {
+	culture = prakaani
+	religion = yakasak
+	holding = castle_holding
+}
+
+182 = {
+	holding = none
+}
+
+187 = {
+	holding = none
+}
+
+200 = {
+	culture = watumimba
+	religion = yakasak
+	holding = castle_holding
+}
+
+201 = {
+	culture = prakaani
+	religion = yakasak
+	holding = castle_holding
+}
+
+294 = {
+	culture = saruta
+	religion = varodaism
+	holding = castle_holding
+}
+
+312 = {
+	culture = vanaarik
+	religion = corkkattirkana
+	holding = castle_holding
+
+	1.1.1 = {
+		special_building = 01_mlima_taa
+	}
+}
+
+315 = {
+	culture = deraani
+	religion = yakasak
+	holding = castle_holding
+}
+
+
+325 = {
+	culture = jayakayin
+	religion = yakasak
+	holding = castle_holding
+}
+
+333 = {
+	holding = none
+}
+
+345 = {
+	culture = watumimba
+	religion = corkkattirkana
+	holding = city_holding
+	650.1.1 = {
+		special_building = 01_mji_safi
+	}
+	740.1.1 = {
+		special_building = 02_mji_safi
+	}
+}
+
+347 = {
+	culture = deraani
+	religion = corkkattirkana
+	holding = castle_holding
+}
+
+355 = {
+	culture = jayakayin
+	religion = yakasak
+	holding = castle_holding
+}
+
+359 = {
+	holding = none
+}
+
+360 = {
+	holding = none
+}
+
+390 = {
+	holding = none
+}
+
+404 = {
+	holding = none
+}
+
+406 = {
+	culture = arolyan
+	religion = yakasak
+	holding = castle_holding
+}
+
+412 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+446 = {
+	holding = none
+}
+
+6352 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1.1.1 = {
+		special_building = 01_frozentower
+	}
+}
+
+6110 = {
+	holding = wasteland_empty_holding
+}
+
+415 = {
+	holding = none
+}
+
+
+417 = {
+	holding = wasteland_empty_holding
+}
+
+419 = {
+	culture = arolyan
+	religion = yakasak
+	holding = castle_holding
+}
+
+421 = {
+	culture = arolyan
+	religion = yakasak
+	holding = castle_holding
+}
+
+429 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+431 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+	1274.9.14 = {
+		religion = coastpath
+		culture = voyagen
+		holding = castle_holding
+	}
+}
+
+434 = {
+	culture = rokgana
+	religion = nolosaanyo
+	holding = tribal_holding
+}
+
+441 = {
+	culture = arolyan
+	religion = yakasak
+	holding = castle_holding
+}
+
+442 = {
+	culture = rokgana
+	religion = nolosaanyo
+	holding = tribal_holding
+}
+
+443 = {
+	holding = none
+}
+
+450 = {
+	holding = none
+}
+
+452 = {
+	holding = none
+}
+
+453 = {
+	culture = watumimba
+	religion = corkkattirkana
+	holding = castle_holding
+}
+
+455 = {
+	culture = jayakayin
+	religion = yakasak
+	holding = castle_holding
+}
+
+460 = {
+	culture = easternislander
+	religion = aironoian_aagiokrata
+	holding = castle_holding
+}
+
+1787 = {
+	culture = watumimba
+	religion = yakasak
+	holding = castle_holding  
+}
+
+2265 = {
+	holding = none
+}
+
+3112 = {
+	holding = none 
+}
+
+4619 = {
+	culture = siltwalker
+	religion = nolosaanyo
+	holding = tribal_holding
+}
+
+5314 = {
+	culture = tehaina
+	religion = varodaism
+	holding = castle_holding
+}
+
+5346 = {
+	culture = samayani
+	religion = corkkattirkana
+	holding = castle_holding
+}
+
+5349 = {
+	culture = paradila
+	religion = yakasak
+	holding = castle_holding
+}
+
+5485 = {
+	culture = jakana
+	religion = corkkattirkana
+	holding = castle_holding
+}
+
+5616 = {
+	culture = elekraya
+	religion = yakasak
+	holding = castle_holding
+}
+
+5629 = {
+	culture = ikanita
+	religion = yakasak
+	holding = castle_holding
+}
+
+5658 = {
+	holding = none
+}
+
+5660 = {
+	culture = watumimba
+	religion = corkkattirkana
+	holding = city_holding
+}
+
+5676 = {
+	holding = none
+}
+
+5682 = {
+	culture = mahatha
+	religion = yakasak
+	holding = castle_holding
+}
+
+5723 = {
+	holding = none
+}
+
+5725 = {
+	culture = jayakayin
+	religion = yakasak
+	holding = castle_holding
+}
+
+5768 = {
+	culture = paradila
+	religion = yakasak
+	holding = tribal_holding
+}
+
+5810 = {
+	culture = yayanka
+	religion = yakasak
+	holding = castle_holding
+}
+
+5961 = {
+	holding = none
+}
+
+6252 = {
+	holding = none
+}
+
+6330 = {
+	culture = elekraya
+	religion = yakasak
+	holding = castle_holding
+}
+
+5482 = {
+	holding = none
+}
+5655 = {
+	holding = none
+}
+6410 = {
+	holding = none
+}
+
+6620 = {
+	holding = none
+}
+
+6668 = {
+	culture = samayani
+	religion = yakasak
+	holding = castle_holding
+}
+
+7272 = {
+	culture = watumimba
+	religion = corkkattirkana
+	holding = castle_holding
+}
+
+7308 = {
+	culture = zalaka
+	religion = yakasak
+	holding = castle_holding
+}
+
+7385 = {
+	culture = yayanka
+	religion = yakasak
+	holding = castle_holding
+}
+
+7781 = {
+	culture = mahatha
+	religion = yakasak
+	holding = castle_holding
+}
+
+8135 = {
+	culture = vanaarik
+	religion = yakasak
+	holding = castle_holding
+}
+
+9158 = {
+	holding = city_holding
+}
+
+9159 = {
+	holding = city_holding
+}
+
+9160 = {
+	culture = dadkawji
+	religion = nolosaanyo
+	holding = metro_holding
+	500.1.1 = {
+		special_building = 01_magaala_qaaday
+	}
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+}
+
+9165 = {
+
+	holding = city_holding  
+}
+
+9166 = {
+	culture = watumimba
+	religion = corkkattirkana
+	holding = metro_holding 
+	689.8.6 = {
+		special_building = 01_silverpalace
+	}
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	} 
+}
+
+9167 = {
+	holding = church_holding 
+}
+
+6418 = {
+	culture = watumimba
+	religion = corkkattirkana
+}
+
+7321 = {
+	holding = none
+}
+7143 = {
+	holding = none
+}

@@ -1,0 +1,39 @@
+d_kattatoya = {
+	1203.1.7 = {
+		holder = ikanita_yakasak_6
+		government = pirate_government
+	}
+	1226.7.7 = {
+		holder = 0
+	}
+	1234.4.4 = {
+		change_development_level = 6
+	}
+}
+d_javaw = {
+	1220.6.7 = {
+		change_development_level = 4
+	}
+}
+d_akkidakoya = {
+	1230.1.1 = {
+		holder = siltwalker_nolosaanyo_1
+		change_development_level = 6
+		government = tribal_government
+	}
+	1264.4.27 = {
+		holder = siltwalker_nolosaanyo_4
+	}
+	1270.5.1 = {
+		holder = siltwalker_nolosaanyo_6
+	}
+}
+d_behtir_duvatal = {
+	1195.2.5 = {
+		holder = watumimba_yakasak_1
+		government = pirate_government
+	}
+	1228.6.5 = {
+		holder = 0
+	}
+}

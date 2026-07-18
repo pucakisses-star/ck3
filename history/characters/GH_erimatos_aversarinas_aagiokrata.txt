@@ -1,0 +1,473 @@
+﻿erimatos_aversarinas_aagiokrata_1 = { # Placeholder ruler of the wardenism colonies in 1200
+	name = paxanos
+	religion = "aversarinas_aagiokrata"
+	culture = "erimatos"
+
+	1180.1.24 = {
+		birth = yes
+	}
+	1201.2.5 = {
+		death = yes
+	}
+}
+
+erimatos_aversarinas_aagiokrata_2 = { # Girl indiana jones
+	name = "Adriane"
+	dna = erimatos_aversarinas_aagiokrata_2
+	religion = "aversarinas_aagiokrata"
+	culture = "westernimperial"
+	female = yes
+
+	trait = brave
+	trait = ambitious
+	trait = arrogant
+	trait = journaller
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp2_iberian_muslim_02
+		}
+	}
+
+	1249.7.29 = {
+		trait = education_stewardship_2
+		trait = avaricious
+	}
+
+	1228.6.18 = {
+		birth = yes
+	}
+}
+
+erimatos_aversarinas_aagiokrata_3 = {
+	name = "Heraklios" # Heraklios
+	dna = erimatos_aversarinas_aagiokrata_3
+	religion = "aversarinas_aagiokrata"
+	culture = "erimatos"
+	dynasty = dyn_aversarian_2
+
+	martial = 7
+	diplomacy = 9
+	intrigue = 9
+	stewardship = 4
+	learning = 1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp2_iberian_christian_03
+			custom_beards = male_beard_rtt_01
+			#custom_gh_headgear = male_empty
+			custom_gh_hoods = hood_generic_down
+			#custom_gh_neck_accessories = male_empty
+		}
+	}
+
+	1214.2.27 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1226.1.1 = {
+		trait = greedy
+		trait = ambitious
+		trait = deceitful	
+	}
+
+	1230.2.27 = {
+		trait = education_intrigue_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+
+	1249.4.14 = {
+		give_nickname = nick_seaking
+	}
+}
+
+erimatos_aversarinas_aagiokrata_4 = {
+	name = "Mavrikios"
+	dynasty = dyn_colonia_1
+	religion = "aversarinas_aagiokrata"
+	culture = "erimatos"
+
+	father = erimatos_aversarinas_aagiokrata_17
+
+	1232.7.29 = {
+		birth = yes
+	}
+
+	1245.1.1 = {
+		trait = greedy
+		trait = ambitious
+		trait = impatient
+	}
+
+	1249.7.29 = {
+		trait = education_stewardship_2
+		trait = avaricious
+	}
+}
+
+erimatos_aversarinas_aagiokrata_5 = {
+	name = "Ignatios"
+	religion = "aversarinas_aagiokrata"
+	culture = "erimatos"
+
+	1212.6.18 = {
+		birth = yes
+	}
+}
+
+erimatos_aversarinas_aagiokrata_6 = {
+	name = "Hypatios"
+	dynasty = dyn_colonia_2
+	religion = "aversarinas_aagiokrata"
+	culture = "erimatos"
+
+	father = erimatos_aversarinas_aagiokrata_16
+
+	1215.6.18 = {
+		birth = yes
+	}
+}
+
+erimatos_aversarinas_aagiokrata_7 = {
+	name = "Serapion"
+	religion = "aversarinas_aagiokrata"
+	culture = "erimatos"
+
+	1226.6.18 = {
+		birth = yes
+	}
+}
+
+erimatos_aversarinas_aagiokrata_8 = {
+	name = "Makarios"
+	religion = "aversarinas_aagiokrata"
+	culture = "erimatos"
+
+	1232.6.18 = {
+		birth = yes
+	}
+
+	1249.2.1 = {
+		employer = erimatos_aversarinas_aagiokrata_3
+	}
+}
+
+erimatos_aversarinas_aagiokrata_9 = {
+	name = "Makarios"
+	religion = "aversarinas_aagiokrata"
+	culture = "erimatos"
+
+	1160.6.18 = {
+		birth = yes
+	}
+	1200.5.1 = {
+		death = yes
+	}
+}
+
+erimatos_aversarinas_aagiokrata_10 = { # Nicios Hixaros' son
+	name = "Astrobion" 
+	religion = aversarinas_aagiokrata
+	culture = erimatos
+	disallow_random_traits = yes
+	dynasty = dyn_aversarian_135
+
+	father = westernimperial_aversarinas_aagiokrata_483
+
+	martial = 6
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 7
+	learning = 4
+	prowess = 4
+
+	1083.3.18 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1095.1.1 = {
+		trait = lazy
+		trait = lustful
+		trait = just
+	}
+
+	1099.3.18 = {
+		trait = education_martial_3
+		trait = overseer
+	}
+
+	1140.9.23 = {
+		death = {
+			death_reason = death_sarradonian_elephant
+		}
+	}
+}
+
+erimatos_aversarinas_aagiokrata_11 = {
+	name = "Achrameos" 
+	religion = aversarinas_aagiokrata
+	culture = erimatos
+	disallow_random_traits = yes
+	dynasty = dyn_aversarian_135
+
+	father = erimatos_aversarinas_aagiokrata_10
+
+	martial = 7
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 6
+	learning = 6
+	prowess = 6
+
+	1119.4.23 = {
+		birth = yes
+		trait = magic_good_4
+		trait = intellect_good_2
+	}
+
+	1131.1.1 = {
+		trait = brave
+		trait = ambitious
+		trait = compassionate
+	}
+
+	1135.4.23 = {
+		trait = education_diplomacy_4
+		trait = diplomat
+	}
+
+	1182.5.25 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+erimatos_aversarinas_aagiokrata_12 = {
+	name = "Achrameos" 
+	religion = aversarinas_aagiokrata
+	culture = erimatos
+	disallow_random_traits = yes
+	dynasty = dyn_aversarian_135
+
+	father = erimatos_aversarinas_aagiokrata_11
+
+	martial = 6
+	diplomacy = 8
+	intrigue = 2
+	stewardship = 4
+	learning = 3
+	prowess = 4
+
+	1147.3.19 = {
+		birth = yes
+		trait = magic_good_3
+		trait = intellect_good_1
+	}
+
+	1159.1.1 = {
+		trait = wrathful
+		trait = gluttonous
+		trait = gregarious
+	}
+
+	1163.3.19 = {
+		trait = education_martial_2
+		trait = aggressive_attacker
+	}
+
+	1207.1.18 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+erimatos_aversarinas_aagiokrata_13 = {
+	name = "Zenirion" 
+	religion = aversarinas_aagiokrata
+	culture = erimatos
+	disallow_random_traits = yes
+	dynasty = dyn_aversarian_135
+
+	father = erimatos_aversarinas_aagiokrata_12
+
+	martial = 4
+	diplomacy = 5
+	intrigue = 3
+	stewardship = 6
+	learning = 4
+	prowess = 9
+
+	1167.12.3 = {
+		birth = yes
+		trait = magic_good_3
+		trait = intellect_good_1
+	}
+
+	1179.1.1 = {
+		trait = temperate
+		trait = generous
+		trait = gregarious
+	}
+
+	1183.3.19 = {
+		trait = education_arcana_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+
+	1207.1.18 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+erimatos_aversarinas_aagiokrata_14 = {
+	name = "Dethona" 
+	religion = aversarinas_aagiokrata
+	culture = erimatos
+	disallow_random_traits = yes
+	dynasty = dyn_aversarian_135
+	female = yes
+
+	father = erimatos_aversarinas_aagiokrata_13
+
+	martial = 4
+	diplomacy = 5
+	intrigue = 3
+	stewardship = 6
+	learning = 4
+	prowess = 9
+
+	1198.2.18 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1210.1.1 = {
+		trait = craven
+		trait = ambitious
+		trait = gregarious
+	}
+
+	1214.2.18 = {
+		trait = education_stewardship_3
+	}
+}
+
+erimatos_aversarinas_aagiokrata_15 = {
+	name = "Achrameos" 
+	religion = aversarinas_aagiokrata
+	culture = erimatos
+	disallow_random_traits = yes
+	dynasty = dyn_aversarian_135
+
+	mother = erimatos_aversarinas_aagiokrata_14
+
+	martial = 7
+	diplomacy = 8
+	intrigue = 8
+	stewardship = 5
+	learning = 7
+	prowess = 7
+
+	1226.3.14 = {
+		birth = yes
+		trait = intellect_good_2
+	}
+
+	1238.1.1 = {
+		trait = honest
+		trait = generous
+		trait = paranoid
+	}
+
+	1242.3.14 = {
+		trait = education_stewardship_3
+	}
+}
+
+erimatos_aversarinas_aagiokrata_16 = { # Hypatios' father
+	name = "Ioxtheos" 
+	religion = aversarinas_aagiokrata
+	culture = erimatos
+	disallow_random_traits = yes
+	dynasty = dyn_colonia_2
+
+	martial = 6
+	diplomacy = 4
+	intrigue = 7
+	stewardship = 7
+	learning = 7
+	prowess = 8
+
+	1170.7.11 = {
+		birth = yes
+	}
+
+	1182.1.1 = {
+		trait = ambitious
+		trait = humble
+		trait = forgiving
+	}
+
+	1186.7.11 = {
+		trait = education_martial_2
+		trait = gh_historical_blademaster_1
+		trait = strong
+	}
+
+	1227.9.6 = {
+		death = {
+			death_reason = death_battle # Faghira-Jalil Revolt
+		}
+	}
+}
+
+erimatos_aversarinas_aagiokrata_17 = { # Mavrikios' father
+	name = "Biton" 
+	religion = aversarinas_aagiokrata
+	culture = erimatos
+	disallow_random_traits = yes
+	dynasty = dyn_colonia_1
+
+	martial = 7
+	diplomacy = 3
+	intrigue = 7
+	stewardship = 7
+	learning = 2
+	prowess = 6
+
+	1188.4.24 = {
+		birth = yes
+	}
+
+	1200.1.1 = {
+		trait = gregarious
+		trait = temperate
+		trait = vengeful
+	}
+
+	1204.4.24 = {
+		trait = education_diplomacy_3
+		trait = shrewd
+	}
+
+	1252.9.11 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}

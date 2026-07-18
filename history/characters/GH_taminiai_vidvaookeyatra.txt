@@ -1,0 +1,8 @@
+﻿taminiai_vidvaookeyatra_1 = {
+	name = "Vapyata"
+	religion = "vidvaookeyatra"
+	culture = "taminiai"
+	1227.8.8 = {
+		birth = yes
+	}
+}

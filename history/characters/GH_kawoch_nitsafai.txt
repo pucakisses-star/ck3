@@ -1,0 +1,312 @@
+﻿kawoch_nitsafai_1 = { # leader and semi founder of the fundamentalists, genuinely believes it, seemingly the incarnation of their values. in 1217 will have special content for his expansion
+	name = "Herizeb"
+	dna = kawoch_nitsafai_1
+	religion = nitsafai
+	culture = kawoch
+	sexuality = asexual
+	
+	dynasty = dyn_damota_8
+	
+	diplomacy = 7
+	martial = 9
+	stewardship = 8
+	intrigue = 9
+	learning = 12
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_sub_saharan_03
+			custom_hair = no_hair
+		}
+	}
+	
+	1199.7.29 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 3 }
+		}
+	}
+		1199.7.30 = {
+		trait = physique_good_1
+		trait = intellect_good_1
+	}
+	1211.7.21 = {
+		trait = diligent
+		trait = zealous
+		trait = compassionate
+	}
+	1215.7.29 = {
+		trait = education_learning_4
+	}
+	1221.8.11 = {
+		set_relation_friend = character:kawoch_nitsafai_3
+	}
+	1224.2.23 = {
+		set_relation_friend = character:kawoch_nitsafai_2
+	}
+	1267.7.19 = {
+		death = death_old_age
+	}
+}
+
+kawoch_nitsafai_2 = { # One of founder's lieutenants, skilled general
+	name = "Fadari"
+	religion = nitsafai
+	culture = kawoch
+	sexuality = heterosexual
+	
+	dynasty = dyn_damota_9
+	
+	diplomacy = 6
+	martial = 11
+	stewardship = 8
+	intrigue = 5
+	learning = 4
+	
+	1203.11.30 = {
+		birth = yes
+	}
+	1215.11.30 = {
+		trait = brave
+		trait = zealous
+		trait = humble
+	}
+	1219.11.30 = {
+		trait = education_martial_3
+	}
+#	1224.2.23 = {
+#		set_relation_friend = character:kawoch_nitsafai_1
+#	}
+	1227.3.4 = {
+		set_relation_friend = character:kawoch_nitsafai_3
+	}
+	1268.5.24 = {
+		death = {
+			death_reason = death_smallpox
+		}
+	}
+}
+
+kawoch_nitsafai_3 = { # Another lieutenant, statebuilder
+	name = "Nabera"
+	religion = nitsafai
+	culture = kawoch
+	sexuality = heterosexual
+	
+	dynasty = dyn_damota_10
+	
+	diplomacy = 10
+	martial = 5
+	stewardship = 11
+	intrigue = 7
+	learning = 8
+	
+	1198.3.26 = {
+		birth = yes
+	}
+	1210.3.26 = {
+		trait = zealous
+		trait = patient
+		trait = diligent
+	}
+	1214.3.26 = {
+		trait = education_stewardship_4
+	}
+	1271.3.2 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+kawoch_nitsafai_4 = { # vassal of 3 in theocracy northern edge
+	name = "Delaka"
+	religion = nitsafai
+	culture = kawoch
+	
+	1223.8.17 = {
+		birth = yes
+	}
+
+}
+
+kawoch_nitsafai_5 = { # vassal of 3, eventually succeeds him as Kihinet
+	name = "Raloba"
+	religion = nitsafai
+	culture = kawoch
+	
+	diplomacy = 8
+	martial = 7
+	stewardship = 6
+	intrigue = 9
+	learning = 7
+
+	1229.5.26 = {
+		birth = yes
+	}
+	1241.5.26 = {
+		trait = honest
+		trait = gluttonous
+		trait = greedy
+	}
+	1245.8.19 = {
+		trait = education_intrigue_3
+	}
+	1294.11.13 = {
+		death = {
+			death_reason = death_cancer
+		}
+	}
+}
+
+kawoch_nitsafai_6 = { # vassal of 1
+	name = "Binari"
+	religion = nitsafai
+	culture = kawoch
+	
+	1226.1.3 = {
+		birth = yes
+	}
+	1276.5.18 = {
+		death = {
+			death_reason = death_cancer
+		}
+	}
+}
+
+kawoch_nitsafai_7 = { # vassal of 1
+	name = "Omalib"
+	religion = nitsafai
+	culture = kawoch
+	
+	1208.11.14 = {
+		birth = yes
+	}
+	1278.2.14 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+kawoch_nitsafai_8 = { # vassal of 2 on eastern edge
+	name = "Tenerat"
+	religion = nitsafai
+	culture = kawoch
+	
+	1205.10.21 = {
+		birth = yes
+	}
+}
+
+kawoch_nitsafai_9 = { # vassal of 2 on eastern edge
+	name = "Linorot"
+	religion = nitsafai
+	culture = kawoch
+	
+	1217.9.10 = {
+		birth = yes
+	}
+}
+
+kawoch_nitsafai_10 = { # vassal of 2
+	name = "Mezilar"
+	religion = nitsafai
+	culture = kawoch
+	
+	1224.8.6 = {
+		birth = yes
+	}
+}
+
+kawoch_nitsafai_11 = { #Ruler of the Kihineti Mogotada in 1298, set on continuing the wars
+	name = "Retempla"
+	religion = nitsafai
+	culture = kawoch
+	sexuality = heterosexual
+
+	1262.4.20 = {
+		birth = yes
+	}
+	1266.4.20 = {
+		trait = brave
+		trait = gregarious
+		trait = diligent
+	}
+	1270.4.20 = {
+		trait = education_martial_3
+	}
+}
+
+
+#Kihinet vassals made for 1298
+
+kawoch_nitsafai_12 = { 
+	name = "Meheran"
+	religion = nitsafai
+	culture = kawoch
+
+	1258.9.12 = {
+		birth = yes
+	}
+}
+
+kawoch_nitsafai_13 = {
+	name = "Halori"
+	religion = nitsafai
+	culture = kawoch
+
+	1258.9.12 = {
+		birth = yes
+	}
+}
+
+kawoch_nitsafai_14 = {
+	name = "Tesfa"
+	religion = nitsafai
+	culture = kawoch
+
+	1258.9.12 = {
+		birth = yes
+	}
+}
+
+kawoch_nitsafai_15 = {
+	name = "Telare"
+	religion = nitsafai
+	culture = kawoch
+
+	1258.9.12 = {
+		birth = yes
+	}
+}
+
+kawoch_nitsafai_16 = {
+	name = "Helore"
+	religion = nitsafai
+	culture = kawoch
+
+	1258.9.12 = {
+		birth = yes
+	}
+}
+
+kawoch_nitsafai_17 = {
+	name = "Mekuria"
+	religion = nitsafai
+	culture = kawoch
+
+	1258.9.12 = {
+		birth = yes
+	}
+}
+
+kawoch_nitsafai_18 = {
+	name = "Tadesse"
+	religion = nitsafai
+	culture = kawoch
+
+	1258.9.12 = {
+		birth = yes
+	}
+}

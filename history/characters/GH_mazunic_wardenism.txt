@@ -1,0 +1,46 @@
+﻿mazunic_wardenism_1 = { # The Ghelyymads
+	name = "Mishaari"
+	dynasty = dyn_ghelyymads_1
+	religion = "wardenism"
+	culture = "mazunic"
+
+	1202.6.18 = {
+		birth = yes
+	}
+}
+
+mazunic_wardenism_2 = { # The Ghelyymads
+	name = "Saahir"
+	dynasty = dyn_ghelyymads_1
+	religion = "wardenism"
+	culture = "mazunic"
+	father = mazunic_wardenism_1
+
+	1223.6.18 = {
+		birth = yes
+	}
+}
+
+mazunic_wardenism_3 = { # The Ghelyymads
+	name = "Ghaazi"
+	dynasty = dyn_ghelyymads_1
+	religion = "wardenism"
+	culture = "mazunic"
+	father = mazunic_wardenism_1
+
+	1219.6.18 = {
+		birth = yes
+	}
+}
+
+mazunic_wardenism_4 = { # The Ghelyymads
+	name = "Bandar"
+	dynasty = dyn_ghelyymads_1
+	religion = "wardenism"
+	culture = "mazunic"
+	father = mazunic_wardenism_1
+
+	1227.6.18 = {
+		birth = yes
+	}
+}

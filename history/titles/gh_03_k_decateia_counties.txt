@@ -1,0 +1,175 @@
+b_daube = {
+	1251.4.14 = {
+		holder = southernimperial_aversarinas_aagiokrata_64
+	}
+}
+c_arkima = {
+	1234.5.23 = {
+		holder = karzarads_kakarataki_5
+		change_development_level = 3
+		government = continental_clan_government
+	}
+	1238.3.21 = {
+		holder = karzarads_kakarataki_6
+	}
+}
+c_disles_1bb = {
+	1230.1.1 = {
+		holder = iseni_zaragett_aagiokrata_1
+		change_development_level = 5
+	}
+}
+c_karrosisles_1cc = {
+	1230.1.1 = {
+		holder = southislander_aversarinas_aagiokrata_5
+		change_development_level = 5
+	}
+}
+c_craxos = {
+	1220.1.1 = { change_development_level = 2 }
+	
+	1248.1.1 = {
+		holder = fenvir_sjalvolki_20
+		liege = d_dawn
+		government = continental_clan_government
+	}
+}
+c_diosippi = {
+	1220.1.1 = { change_development_level = 5 }
+	
+	1248.1.1 = {
+		holder = fenvir_sjalvolki_19
+		liege = d_dawn
+		government = continental_clan_government
+	}
+}
+c_knidike = {
+	1220.1.1 = { change_development_level = 2 }
+	
+	1248.1.1 = {
+		holder = fenvir_sjalvolki_20
+		liege = d_dawn
+		government = continental_clan_government
+	}
+}
+c_edinion = {
+	1220.1.1 = { change_development_level = 2 }
+	
+	1248.1.1 = {
+		holder = fenvir_sjalvolki_23
+		liege = k_fenvir
+		government = continental_clan_government
+	}
+}
+c_lassidos = {
+	1220.1.1 = { change_development_level = 4 }
+	
+	1248.7.1 = {
+		holder = fenvir_sjalvolki_17
+		liege = d_dawn
+		government = continental_clan_government
+	}
+}
+c_assesos = {
+	1095.6.22 = {
+		holder = westernimperial_aversarinas_aagiokrata_130
+		government = feudal_government
+	}
+	1109.12.7 = {
+		holder = westernimperial_aversarinas_aagiokrata_485
+	}
+	1146.7.18 = {
+		holder = southernimperial_aversarinas_aagiokrata_110
+	}
+	1187.10.18 = {
+		holder = southernimperial_aversarinas_aagiokrata_111
+	}
+	1200.3.1 = {
+		holder = southernimperial_aversarinas_aagiokrata_113
+	}
+	1220.1.1 = { change_development_level = 2 }
+	
+	1248.10.10 = {
+		holder = fenvir_sjalvolki_16
+		liege = d_cythioch
+		government = continental_clan_government
+	}
+}
+c_golgassa = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_decateia_isles1a = {
+	1220.1.1 = { change_development_level = 2 }
+	
+	1247.3.15 = { # First isle taken by Cormag as he hit east after finishing off the Aversarians with Cenware at Ten Trees (and then stealing all the boats and fucking off)
+		holder = fenvir_sjalvolki_6
+		liege = d_cythioch
+		government = continental_clan_government
+	}
+}
+c_theanex = {
+	1248.1.1 = {
+		liege = k_fenvir
+		holder = fenvir_sjalvolki_2
+		change_development_level = 1
+	}
+}
+c_salikon = {
+	1251.4.14 = { change_development_level = 3 }
+	
+	1251.4.14 = {
+		holder = southernimperial_aversarinas_aagiokrata_66
+	}
+}
+c_potale = {
+	1.1.2 = {
+		holder = unsorted_40
+	}
+	1251.4.14 = {
+		holder = southernimperial_aversarinas_aagiokrata_68
+		liege = d_cyrydon
+		government = military_unit_government
+	}
+}
+c_tomacuse = {
+	
+	1251.4.14 = {
+		holder = southernimperial_aversarinas_aagiokrata_70
+		government = military_unit_government
+		liege = d_cyrydon
+	}
+
+	1274.2.20 = {
+		holder = greulokin_sjalvolki_8
+		liege = 0
+	}
+
+	1286.8.24 = {
+		holder = greulokin_sjalvolki_41
+		liege = d_cyrydon
+	}
+	1298.1.1 = {
+		government = feudal_government
+	}
+}
+#c_kallistopolis = {
+	#1230.1.1 = {
+		#change_development_level = 6
+	#}
+	#1251.4.14 = {
+		#holder = southernimperial_aversarinas_aagiokrata_66
+	#}
+	#1269.3.18 = { # Imperrech reaches this part of Opakhasia?
+		#holder = greulokin_sjalvolki_8
+		#liege = 0
+	#}
+	#1286.8.24 = {
+		#holder = greulokin_sjalvolki_52
+		#liege = d_cyrydon
+	#}
+	#1298.1.1 = {
+		#government = feudal_government
+	#}
+#}

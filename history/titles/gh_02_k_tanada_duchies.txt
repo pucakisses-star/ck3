@@ -1,0 +1,52 @@
+﻿d_dymetra = {
+	1094.4.14 = { 
+		change_development_level = 31 
+		liege = e_aversarinas_aautokrata
+		holder = southernimperial_aversarinas_aagiokrata_7
+	}
+	1188.2.14 = { 
+		change_development_level = 36
+ 		liege = e_oraispol_aautokrata
+		holder = southernimperial_aversarinas_aagiokrata_6
+	}
+	1200.3.1 = { 
+		change_development_level = 14
+ 		liege = e_oraispol_aautokrata
+		holder = southernimperial_aversarinas_aagiokrata_5
+	}
+	1229.4.15 = {
+		change_development_level = 8 
+		holder = southernimperial_aversarian_gorassos_1
+		liege = e_oraispol_aautokrata
+	}
+	1251.4.14 = {
+		liege = 0
+	}
+	1274.7.15 = {
+		holder = southerimperial_aversarian_gorassos_4
+	}
+	1275.9.2 = {
+		holder = greulokin_sjalvolki_1
+	}
+	1293.3.28 = {
+		holder = greulokin_sjalvolki_22
+	}
+}
+
+
+d_eryras = {
+	1160.1.1 = {
+		holder = centralimperial_aversarinas_aagiokrata_42
+		liege = "e_oraispol_aautokrata"
+	}
+	1186.6.21 = {
+		holder = centralimperial_aeschraes_aagiokrata_1
+	}
+	1229.12.12 = {
+		holder = southernimperial_aversarinas_aagiokrata_62
+		liege = "k_the_bloodied_throne"
+	}
+	1274.6.19 = {
+		holder = 0
+	}
+}

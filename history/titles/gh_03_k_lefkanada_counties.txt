@@ -1,0 +1,320 @@
+﻿c_vrofos = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_tower_of_mythian_dusk = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_atce = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_statfjord = {
+	1250.1.1 = {
+		holder = daukeni_sjalvolki_10
+		liege = d_wolfsfeld
+		government = continental_clan_government
+	}
+}
+c_ariacas = {
+	1249.1.1 = {
+		holder = meistras_oirigan_2
+	}
+}
+#c_cones = {
+#	1251.1.1 = {
+#		holder = mineris_dejorig_3
+#	}
+#}
+c_aplleboni = {
+	1251.1.1 = {
+		holder = mineris_dejorig_4
+	}
+}
+c_skykeaba = {
+	1249.1.1 = {
+		government = magocratic_government
+		holder = practitioner_aversarinas_aagiokrata_11
+		liege = e_mayikprolollan
+	}
+}
+c_provincenewlefdia = {
+	1249.1.1 = {
+		government = magocratic_government
+		holder = practitioner_aversarinas_aagiokrata_11
+		liege = e_mayikprolollan
+	}
+}
+#c_tower_of_helic_dawn = {
+#	1249.1.1 = {
+#		government = magocratic_government
+#		holder = practitioner_aversarinas_aagiokrata_11
+#		liege = e_mayikprolollan
+#	}
+#}
+#c_pedoryns = {
+#	1249.1.1 = {
+#		government = magocratic_government
+#		holder = practitioner_aversarinas_aagiokrata_11
+#		liege = e_mayikprolollan
+#	}
+#}
+c_mayik_ruins_31 = {
+	1250.1.1 = {
+		holder = daukeni_sjalvolki_13
+		government = continental_clan_government
+	}
+}
+#c_mayik_room_31d = {
+#	1250.1.1 = {
+#		holder = meistras_oirigan_1
+#		liege = 0
+#		government = feudal_government
+#	}
+#}
+#c_emthemae = {
+#	1249.1.1 = {
+#		holder = meistras_oirigan_2
+#	}
+#}
+#c_lephobasae = {
+#  1200.3.1 = {
+#		holder = wasteland
+#	}
+#}
+c_provincenewdyboemthos = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_provinceprovince10667 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+#c_provinceprovince10675 = {
+#  1226.7.15 = {
+#		holder = dodragn_oulaupi_6
+#		government = tribal_government
+#	}
+#  1246.8.16 = {
+#		holder = dodragn_oulaupi_5
+#	}
+#}
+c_oevuinal = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_provinceprovince10792 = {
+  1230.6.1 = {
+		holder = krupleg_cosnaupi_2
+	}
+}
+c_provinceprovince10909 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_mountain_7 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_piomane = {
+  1235.5.25 = {
+		holder = krupleg_oulaupi_3
+		government = tribal_government
+	}
+  1243.12.7 = {
+		holder = krupleg_oulaupi_1
+	}
+}
+c_vixstea = {
+  1235.5.25 = {
+		holder = krupleg_oulaupi_3
+		government = tribal_government
+	}
+  1243.12.7 = {
+		holder = krupleg_oulaupi_1
+	}
+}
+c_sap_okratsi = {
+  1238.10.10 = {
+		holder = krupleg_cosnaupi_1
+	}
+}
+c_provincenewprovince11487 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_tiprex = {
+	1210.6.21 = {
+		holder = hrunzag_oulaupi_8
+		government = tribal_government
+	}
+	1224.2.18 = {
+		holder = hrunzag_oulaupi_3
+	}
+	1243.4.8 = {
+		holder = hrunzag_oulaupi_2
+	}
+}
+c_xasures = {
+  1208.7.25 = {
+		holder = krupleg_oulaupi_2
+		government = tribal_government
+	}
+}
+c_essmine = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_provincenewprovince12714 = {
+  1225.8.14 = {
+		holder = druhandaehzag_orndaehz_8
+		government = tribal_government
+	}
+  1237.5.13 = {
+		holder = druhandaehzag_orndaehz_7
+	}
+}
+c_provincenewprovince12763 = {
+  1246.5.19 = {
+		holder = druhandaehzag_orndaehz_9
+		government = tribal_government
+	}
+}
+#c_esmunesi = {
+#	1209.11.12 = {
+#		holder = hrunzag_oulaupi_3
+#		government = tribal_government
+#	}
+#	1243.4.8 = {
+#		holder = hrunzag_oulaupi_1
+#	}
+#}
+c_provincenewprovince12968 = {
+  1227.12.16 = {
+		holder = druhandaehzag_orndaehz_1
+		government = tribal_government
+	}
+}
+c_provincenewprovince13252 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_starwatcher_grotto = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_vatal = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_xarin = {
+  1233.2.22 = {
+		holder = dodragn_oulaupi_2
+		government = tribal_government
+	}
+  1243.4.8 = {
+		holder = dodragn_oulaupi_1
+	}
+}
+c_sap_sourath = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_vinualna = {
+	1200.3.1 = {
+		holder = nevtanei_karannai_1
+	}
+}
+c_mayik_mountain_2 = {
+	1251.3.29 = {
+		holder = zoldagn_solungvend_1
+		government = tribal_government
+	}
+}
+c_reinusu = {
+	1200.3.1 = {
+		holder = nevtanei_karannai_1
+	}
+}
+c_vroseiarcenae = {
+	1230.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_5
+	}
+}
+c_crenos = {
+	1230.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_5
+	}
+}
+c_vredynaia = {
+	1168.11.11 = {
+		holder = skorikiakas_aversarinas_aagiokrata_1
+		government = magocratic_government
+	}
+	1230.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_5
+	}
+}
+c_ioai = {
+	1230.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_5
+	}
+}
+c_provincezadia = {
+	1230.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_5
+	}
+}
+c_mayik_mountain_9 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_forest_2 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_forest_3 = {
+	1209.11.12 = {
+		holder = hrunzag_oulaupi_3
+		government = tribal_government
+	}
+	1243.4.8 = {
+		holder = hrunzag_oulaupi_1
+	}
+}
+c_mayik_mountain_10 = {
+	1209.11.12 = {
+		holder = hrunzag_oulaupi_3
+		government = tribal_government
+	}
+	1243.4.8 = {
+		holder = hrunzag_oulaupi_5
+	}
+}
+c_mayik_mountain_3 = {
+	1243.11.10 = {
+		holder = zoldagn_solungvend_2
+	}
+}
+c_tribespass = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

@@ -1,0 +1,18 @@
+d_murdetaal = {
+	1151.10.10 = {
+		holder = jarakmar_ertomax_12
+		government = feudal_government
+	}
+	1200.3.1 = {
+		holder = jarakmar_ertomax_5
+		government = feudal_government
+	}
+	1214.11.18 = {
+		holder = jarakmar_ertomax_7
+		government = feudal_government
+	}
+	1231.5.22 = {
+		holder = jarakmar_ertomax_1
+		government = feudal_government
+	}
+}

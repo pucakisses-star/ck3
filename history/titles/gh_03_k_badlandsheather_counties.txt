@@ -1,0 +1,60 @@
+c_sunnymeander = {
+	1236.5.5 = {
+		holder = kathunian_mogudorism_1
+	}
+}
+c_gorgewater = {
+	1235.3.1 = {
+		holder = kathunian_thuantyan_sraidyan_1
+	}
+}
+c_portbroad = {
+	1248.10.11 = {
+		holder = saielaian_bayn_huac_2
+		government = feudal_government
+	}
+}
+c_bottlersworth = {
+	1196.2.28 = {
+		holder = kathunian_fourteen_heavenly_methods_5
+		government = feudal_government
+		liege = k_protectorate_of_the_southlands
+	}
+	1241.8.8 = {
+		holder = kathunian_mogudorism_2
+	}
+}
+c_herbalists_quarry = {
+	1248.10.11 = {
+		holder = saielaian_bayn_huac_2
+		government = feudal_government
+	}
+}
+c_crimsonquay = {
+	1248.10.11 = {
+		holder = saielaian_bayn_huac_2
+		government = feudal_government
+	}
+}
+c_undeadsplain = {
+	1236.5.5 = {
+		holder = kathunian_mogudorism_1
+	}
+}
+c_canyonbluff = {
+	1248.10.11 = {
+		holder = saielaian_bayn_huac_2
+		government = feudal_government
+	}
+}
+c_jadehills = {
+	1248.10.11 = {
+		holder = saielaian_bayn_huac_2
+		government = feudal_government
+	}
+}
+c_jadeshore = {
+	1236.5.5 = {
+		holder = kathunian_mogudorism_1
+	}
+}

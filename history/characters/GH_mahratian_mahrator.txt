@@ -1,0 +1,156 @@
+﻿mahratian_mahrator_1 = { # Son of the King-Unifier of the Mahratians
+	name = "Diorgi"
+	religion = "mahrator"
+	culture = "mahratian"
+	sexuality = heterosexual
+	dynasty = dyn_lerrardin_7
+	father = mahratian_mahrator_2
+	mother = mahratian_mahrator_3
+	trait = physique_good_2
+
+	1225.9.10 = {
+		birth = yes
+	}
+	1237.9.10 = {
+		trait = just
+		trait = patient
+		trait = brave
+	}
+	1241.9.10 = {
+		trait = education_martial_3
+		trait = flexible_leader
+	}
+}
+
+mahratian_mahrator_2 = { # King-Unifier of the Mahratians
+	name = "Orbeli"
+	religion = "mahrator"
+	culture = "mahratian"
+	sexuality = bisexual
+	dynasty = dyn_lerrardin_7
+	trait = physique_good_3
+	trait = beauty_good_1
+
+	1198.12.6 = {
+		birth = yes
+	}
+	1210.12.6 = {
+		trait = ambitious
+		trait = gregarious
+		trait = brave
+	}
+	1214.12.6 = {
+		trait = education_martial_3
+		trait = aggressive_attacker
+	}
+	1223.4.12 = {
+		trait = open_terrain_expert
+		give_nickname = nick_the_victorious_orbeli
+	}
+	1224.4.7 = {
+		add_spouse = mahratian_mahrator_3
+	}
+	1239.4.11 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+
+mahratian_mahrator_3 = { # Queen-Unifier of the Mahratians
+	name = "Shukhia"
+	religion = "mahrator"
+	culture = "mahratian"
+	sexuality = heterosexual
+	female = yes
+	father = mahratian_mahrator_4
+
+	1201.1.2 = {
+		birth = yes
+	}
+	1213.1.2 = {
+		trait = calm
+		trait = humble
+		trait = shy
+	}
+	1217.1.2 = {
+		trait = education_learning_2
+	}
+}
+
+mahratian_mahrator_4 = { # 1217 Duke of Tsano
+	name = "Teimuraz"
+	religion = "mahrator"
+	culture = "mahratian"
+	sexuality = heterosexual
+
+	1179.4.16 = {
+		birth = yes
+	}
+	1191.4.16 = {
+		trait = ambitious
+		trait = gregarious
+		trait = brave
+	}
+	1195.4.16 = {
+		trait = education_martial_3
+	}
+	1209.11.6 = {
+		trait = one_eyed
+		trait = scarred
+		trait = cautious_leader
+	}
+	1218.7.5 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+mahratian_mahrator_5 = { # 1217 Duke of Dumao
+	name = "Djavakhi"
+	religion = "mahrator"
+	culture = "mahratian"
+	sexuality = heterosexual
+
+	1191.8.22 = {
+		birth = yes
+	}
+	1203.8.22 = {
+		trait = callous
+		trait = lustful
+		trait = shy
+	}
+	1207.8.22 = {
+		trait = education_intrigue_2
+	}
+}
+
+mahratian_mahrator_6 = { # 1217 Duke of Detbora
+	name = "Iveri"
+	religion = "mahrator"
+	culture = "mahratian"
+	sexuality = homosexual
+
+	1187.3.11 = {
+		birth = yes
+	}
+	1199.3.11 = {
+		trait = temperate
+		trait = gregarious
+		trait = diligent
+	}
+	1203.3.11 = {
+		trait = education_stewardship_3
+		trait = forder
+	}
+}
+
+mahratian_mahrator_7 = {
+	name = "Kaikhosro"
+	religion = "mahrator"
+	culture = "mahratian"
+	1220.8.2 = {
+		birth = yes
+	}
+}

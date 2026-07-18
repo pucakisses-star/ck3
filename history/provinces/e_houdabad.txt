@@ -1,0 +1,779 @@
+943 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+1138 = {
+	holding = none
+}
+
+1139 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8547 = {
+	holding = none
+}
+
+1140 = {
+	holding = none
+}
+
+1141 = {
+	culture = utyalid
+	religion = harthahi
+	holding = tribal_holding
+}
+
+1142 = {
+	holding = none
+}
+
+1143 = {
+	holding = none
+}
+
+1144 = {
+	culture = utyalid
+	religion = harthahi
+	holding = tribal_holding
+}
+
+
+
+1145 = {
+	holding = none
+}
+
+
+1146 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+1090 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+1147 = {
+	holding = none
+}
+
+1148 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+1149 = {
+	holding = none
+}
+
+1151 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+1152 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+1153 = {
+	holding = none
+}
+
+1156 = {
+	holding = none
+}
+
+
+1157 = {
+	holding = none
+}
+
+
+4148 = {
+	holding = none
+}
+
+
+5390 = {
+	holding = none
+}
+
+
+5468 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5504 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+5517 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+5518 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5519 = {
+	holding = none
+}
+
+5520 = {
+	culture = utyalid
+	religion = wardenism
+	holding = tribal_holding
+}
+
+5526 = {
+	holding = none
+}
+
+5529 = {
+	holding = none
+}
+
+5530 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5531 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5506 = {
+	holding = none
+}
+
+
+
+5542 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5544 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+5549 = {
+	holding = none
+}
+
+5554 = {
+	culture = utyalid
+	religion = wardenism
+	holding = tribal_holding
+}
+
+5561 = {
+	culture = tagrodar
+	religion = ahridar
+	holding = tribal_holding
+}
+
+5566 = {
+	holding = none
+}
+
+
+5573 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+5576 = {
+	holding = none
+}
+
+5594 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5602 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5603 = {
+	culture = utyalid
+	religion = wardenism
+	holding = tribal_holding
+}
+
+5608 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5613 = {
+	holding = none
+}
+
+
+
+5622 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5623 = {
+	holding = none
+}
+
+
+5637 = {
+	holding = none
+}
+
+5643 = {
+	culture = utyalid
+	religion = stranuni
+	holding = tribal_holding
+}
+
+5645 = {
+	holding = none
+}
+
+5648 = {
+	holding = none
+}
+
+5649 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5650 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5652 = {
+	religion = xwestrozen
+	culture = kirinarth
+	holding = castle_holding
+}
+
+5663 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5667 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding	
+}
+
+5673 = {
+	holding = none
+}
+
+5679 = {
+	culture = kirinarth
+	religion = stranuni
+	holding = castle_holding
+}
+
+5690 = {
+	holding = none
+}
+
+3750 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5716 = {
+	holding = none
+}
+
+5715 = {
+	culture = utyalid
+	religion = harfi
+	holding = tribal_holding
+}
+
+5703 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5722 = {
+	holding = none
+}
+
+5730 = {
+	holding = none
+}
+
+
+5737 = {
+	holding = none
+}
+
+5741 = {
+	culture = asarey
+	religion = harfi
+	holding = tribal_holding
+}
+
+
+5749 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5776 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+8687 = {
+	holding = none
+}
+
+5828 = {
+	holding = none
+}
+
+5894 = {
+	holding = none
+}
+
+5955 = {
+	culture = utyalid
+	religion = aarayi
+	holding = tribal_holding
+}
+
+8216 = {
+	holding = none
+}
+
+6018 = {
+	culture = utyalid
+	religion = wardenism
+	holding = tribal_holding
+}
+
+6020 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+6025 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6028 = {
+	holding = none
+}
+
+2509 = {
+	holding = none
+}
+
+6037 = {
+	culture = utyalid
+	religion = ritualist
+	holding = tribal_holding
+}
+
+
+6040 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+6334 = {
+	culture = utyalid
+	religion = wardenism
+	holding = tribal_holding
+}
+
+6358 = {
+	culture = utyalid
+	religion = ritualist
+	holding = tribal_holding
+}
+
+6366 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6503 = {
+	holding = none
+}
+
+6540 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6545 = {
+	holding = none
+}
+
+6581 = {
+	holding = none
+}
+
+6587 = {
+	holding = none
+}
+
+6657 = {
+	culture = dawasid
+	religion = harfi
+	holding = tribal_holding
+}
+
+6660 = {
+	culture = dawasid
+	religion = harfi
+	holding = tribal_holding
+}
+
+6790 = {
+	culture = utyalid
+	religion = harfi
+	holding = tribal_holding
+}
+
+7148 = {
+	holding = none
+}
+
+7197 = {
+	holding = none
+}
+
+7281 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+7357 = {
+	culture = utyalid
+	religion = wardenism
+	holding = tribal_holding
+}
+
+7361 = {
+	holding = none
+}
+
+
+7401 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7444 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7478 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+7490 = {
+	holding = none
+}
+
+7505 = {
+	culture = dawasid
+	religion = wardenism
+	holding = tribal_holding
+}
+
+7568 = {
+	holding = none
+}
+
+7380 = {
+	holding = none
+}
+
+7509 = {
+	culture = tagrodar
+	religion = ahridar
+	holding = tribal_holding
+}
+
+
+
+7583 = {
+	holding = none
+}
+
+7673 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7689 = {
+	holding = none
+}
+
+7730 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+7739 = {
+	holding = none
+}
+
+7751 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7756 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+7791 = {
+	holding = none
+}
+
+7855 = {
+	holding = none
+}
+
+
+7914 = {
+	religion = ahridar
+	culture = tagrodar
+	holding = tribal_holding
+}
+
+7948 = {
+	holding = none
+}
+
+7956 = {
+	religion = ahridar
+	culture = tagrodar	
+	holding = tribal_holding
+}
+
+8032 = {
+	holding = none
+}
+
+1827 = {
+	holding = none
+}
+
+
+1445 = {
+	religion = ahridar
+	culture = tagrodar
+	holding = tribal_holding
+}
+
+8079 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8101 = {
+	culture = kirinarth
+	religion = stranuni
+	holding = castle_holding
+}
+
+8126 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+
+8283 = {
+	culture = utyalid
+	religion = harfi
+	holding = tribal_holding
+}
+
+
+8348 = {
+	holding = none
+}
+
+8460 = {
+	culture = utyalid
+	religion = wardenism
+	holding = tribal_holding
+}
+
+
+8487 = {
+	culture = utyalid
+	religion = harfi
+	holding = tribal_holding
+}
+
+8489 = {
+	holding = none
+}
+
+8500 = {
+	holding = none
+}
+
+
+
+8591 = {
+	culture = utyalid
+	religion = harfi
+	holding = tribal_holding
+}
+
+8595 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8596 = {
+	culture = kirinarth
+	religion = stranuni
+	holding = castle_holding
+}
+
+
+
+
+8713 = {
+	holding = none
+}
+
+
+5886 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding	
+}
+
+
+
+8134 = {
+	culture = dawasid
+	religion = wardenism
+	holding = tribal_holding
+}
+
+7935 = {
+	holding = none
+}
+
+5708 = {
+	culture = dawasid
+	religion = wardenism
+	holding = tribal_holding
+}
+
+
+1154 = {
+	culture = dawasid
+	religion = harfi
+	holding = tribal_holding
+}
+
+1692 = {
+	culture = wasteland
+	religion = wasteland_faith
+	holding = wasteland_empty_holding
+}
+
+3499 = {
+	holding = none
+}
+
+1238 = {
+	holding = none
+}
+
+1622 = {
+	holding = none
+}
+
+1657 = {
+	holding = none
+}

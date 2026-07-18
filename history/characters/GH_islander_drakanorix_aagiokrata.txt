@@ -1,0 +1,29 @@
+﻿islander_drakanorix_aagiokrata_1 = {
+	name = "Nicanoneus"
+	religion = "drakanorix_aagiokrata"
+	culture = "islander"
+
+	1229.2.19 = {
+		birth = yes
+	}
+}
+
+islander_drakanorix_aagiokrata_2 = {
+	name = "Zekos"
+	religion = "drakanorix_aagiokrata"
+	culture = "islander"
+
+	1230.5.12 = {
+		birth = yes
+	}
+}
+
+islander_drakanorix_aagiokrata_3 = {
+	name = "Ioxoras"
+	religion = "drakanorix_aagiokrata"
+	culture = "islander"
+
+	1237.6.6 = {
+		birth = yes
+	}
+}

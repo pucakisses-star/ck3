@@ -1,0 +1,99 @@
+﻿c_coria = {
+	1250.1.1 = {
+		government = magocratic_government
+		holder = practitioner_aversarinas_aagiokrata_12
+		liege = e_mayikprolollan
+	}
+	#1253.1.1 = {
+	#	liege = d_peonopnes
+	#}
+}
+c_vresos = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_drymethezoma = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_annpia = {
+	1170.12.8 = {
+		holder = westernimperial_aversarinas_aagiokrata_71
+		liege = e_mayikprolollan
+		government = magocratic_government
+	}
+	1251.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_15
+		liege = 0
+		government = feudal_government
+	}
+	1230.1.1 = { change_development_level = 1 }
+}
+c_charea = {
+	1253.1.1 = {
+		holder = skausmas_dejorig_1
+	}
+}
+c_atrium = {
+	1249.1.1 = {
+		government = magocratic_government
+		holder = practitioner_aversarinas_aagiokrata_12
+		liege = e_mayikprolollan
+	}
+}
+c_test42 = {
+	1250.1.1 = {
+		holder = penetworin_ethowos_6
+		liege = 0
+		government = tribal_government
+	}
+}
+c_test43 = {
+	1250.1.1 = {
+		holder = mineris_dejorig_1
+		liege = 0
+		government = feudal_government
+	}
+}
+c_amdia = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_provincenewaranos = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_6 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_caves_14d = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_2ee = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_danaia = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_caves_14 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_the_velian_spire = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

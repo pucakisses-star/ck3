@@ -1,0 +1,60 @@
+
+c_bashuk = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_kuthat = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_darnawz = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_new_sarradon_county11 = {
+	1230.1.1 = {
+		government = migratory_government
+	}
+	1238.3.27 = {
+		holder = akhtarfi_wardenism_2
+	}
+}
+c_farrkuz = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_shefarn = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_darsh_alhayf = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_shuffiyan = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_khuteffiy = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_harranx = {
+	1250.1.1 = {
+		government = migratory_government
+		holder = akhtarfi_wardenism_3
+	}
+}
+c_nadarat = {
+	1223.7.6 = {
+		holder = ghudiyy_wardenism_1
+	}
+}

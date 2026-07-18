@@ -1,0 +1,9 @@
+﻿jakana_vidvaookeyatra_1 = {
+	name = "Kamlabai"
+	religion = "vidvaookeyatra"
+	culture = "jakana"
+	female = yes
+	1222.8.8 = {
+		birth = yes
+	}
+}

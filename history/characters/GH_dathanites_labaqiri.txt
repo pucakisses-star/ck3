@@ -1,0 +1,479 @@
+﻿dathanites_labaqiri_1 = { # dathanite pirate
+	name = "Sadiqil"
+	religion = "labaqiri"
+	culture = "dathanites"
+	dynasty = dyn_dathanites_1
+
+	martial = 10
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 10
+	learning = 3
+	prowess = 3
+
+	1227.11.6 = {
+		birth = yes
+	}
+
+	1239.1.1 = {
+		trait = greedy
+		trait = callous
+		trait = deceitful
+	}
+
+	1242.12.21 = {
+		effect = {
+			create_character_memory = { # Ratarakaw
+				type = saw_ratarakaw
+			}
+		}
+	}
+
+	1243.2.6 = {
+		trait = education_diplomacy_2
+		trait = shrewd
+	}
+
+	1253.8.7 = {
+		add_spouse = banwagul_narina_3
+	}
+}
+
+dathanites_labaqiri_2 = { # dathanite pirate vassal
+	name = "Ziryis"
+	religion = "labaqiri"
+	culture = "dathanites"
+	dynasty = dyn_dathanites_2
+
+	female = yes
+
+	martial = 7
+	diplomacy = 8
+	intrigue = 7
+	stewardship = 5
+	learning = 7
+	prowess = 5
+
+	1220.1.8 = {
+		birth = yes
+	}
+
+	1232.1.1 = {
+		trait = arrogant
+		trait = temperate
+		trait = just
+	}
+
+	1236.1.8 = {
+		trait = education_martial_3
+		trait = gh_historical_blademaster_1
+	}
+
+	1242.12.21 = {
+		effect = {
+			create_character_memory = { # Ratarakaw
+				type = saw_ratarakaw
+			}
+		}
+	}
+}
+
+dathanites_labaqiri_3 = { # dathanite pirate vassal
+	name = "Mazafay"
+	religion = "labaqiri"
+	culture = "dathanites"
+	dynasty = dyn_dathanites_3
+
+	martial = 5
+	diplomacy = 6
+	intrigue = 7
+	stewardship = 3
+	learning = 6
+	prowess = 6
+
+	1213.3.14 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+
+	1225.1.1 = {
+		trait = cynical
+		trait = brave
+		trait = callous
+	}
+
+	1229.3.14 = {
+		trait = education_stewardship_2
+	}
+
+	1242.12.21 = {
+		effect = {
+			create_character_memory = { # Ratarakaw
+				type = saw_ratarakaw
+			}
+		}
+	}
+}
+
+dathanites_labaqiri_4 = { # dathanite jurist
+	name = "Imshar"
+	religion = "labaqiri"
+	culture = "dathanites"
+	dynasty = dyn_dathanites_4
+
+	martial = 7
+	diplomacy = 5
+	intrigue = 9
+	stewardship = 6
+	learning = 7
+	prowess = 5
+
+	1198.10.26 = {
+		birth = yes
+	}
+
+	1210.1.1 = {
+		trait = zealous
+		trait = stubborn
+		trait = brave
+	}
+
+	1214.10.26 = {
+		trait = education_learning_4
+	}
+
+	1237.12.21 = {
+		trait = lifestyle_jurist
+		add_trait_xp = {
+			trait = lifestyle_jurist
+			value = trait_third_level
+		}
+	}
+
+	1242.12.21 = {
+		effect = {
+			create_character_memory = { # Ratarakaw
+				type = saw_ratarakaw
+			}
+		}
+	}
+}
+
+dathanites_labaqiri_5 = { # Dathanite Republic Ruler, slain by Pirates
+	name = "Kalian"
+	religion = "labaqiri"
+	culture = "dathanites"
+	dynasty = dyn_dathanites_5
+
+	sexuality = heterosexual
+
+	martial = 9
+	diplomacy = 8
+	intrigue = 7
+	stewardship = 3
+	learning = 6
+	prowess = 3
+
+	1198.4.10 = {
+		birth = yes
+	}
+
+	1210.1.1 = {
+		trait = diligent
+		trait = patient
+		trait = arrogant
+	}
+
+	1214.4.10 = {
+		trait = education_diplomacy_3
+	}
+
+	1221.3.28 = {
+		trait = lifestyle_jurist
+	}
+
+	1245.6.12 = {
+		death = { 
+			death_reason = death_heart_ripped_out
+			killer = dathanites_labaqiri_10 #Rakshen the Sea Lion
+		}
+	}
+}
+
+dathanites_labaqiri_6 = { # current Dathanite Republic Ruler, puppet of Kalimdan
+	name = "Bazyir"
+	religion = "labaqiri"
+	culture = "dathanites"
+	dynasty = dyn_dathanites_5
+
+	father = dathanites_labaqiri_5
+
+	sexuality = homosexual
+
+	martial = 5
+	diplomacy = 3
+	intrigue = 5
+	stewardship = 7
+	learning = 4
+	prowess = 8
+
+	1227.11.26 = {
+		birth = yes
+	}
+
+	1239.1.1 = {
+		trait = gluttonous
+		trait = generous
+		trait = content
+	}
+
+	1242.12.21 = {
+		effect = {
+			create_character_memory = { # Ratarakaw
+				type = saw_ratarakaw
+			}
+		}
+	}
+
+	1243.11.26 = {
+		trait = education_intrigue_2
+	}
+
+	1250.7.3 = {
+		trait = dull
+	}
+}
+
+dathanites_labaqiri_7 = { # Dathanite general, slain in Pirate Invasion, but not before maiming Rakshen the Sea Lion
+	name = "Ikyenir"
+	religion = "labaqiri"
+	culture = "dathanites"
+	dynasty = dyn_dathanites_6
+
+	sexuality = heterosexual
+
+	martial = 5
+	diplomacy = 3
+	intrigue = 5
+	stewardship = 7
+	learning = 4
+	prowess = 8
+
+	1195.2.23 = {
+		birth = yes
+	}
+
+	1207.1.1 = {
+		trait = arbitrary
+		trait = sadistic
+		trait = vengeful
+	}
+
+	1211.2.23 = {
+		trait = education_martial_3
+		trait = overseer
+		trait = aggressive_attacker
+		trait = gh_historical_blademaster_1
+	}
+
+	1242.12.21 = {
+		effect = {
+			create_character_memory = { # Ratarakaw
+				type = saw_ratarakaw
+			}
+		}
+	}
+
+	1245.6.12 = {
+		death = { 
+			death_reason = death_viciously_dismembered
+			killer = dathanites_labaqiri_10 #Rakshen the Sea Lion
+		}
+	}
+}
+
+dathanites_labaqiri_8 = {
+	name = "Wakgul"
+	religion = "labaqiri"
+	culture = "dathanites"
+	dynasty = dyn_dathanites_6
+
+	sexuality = heterosexual
+
+	father = dathanites_labaqiri_7
+
+	martial = 5
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 6
+	learning = 7
+	prowess = 5
+
+	1223.12.8 = {
+		birth = yes
+	}
+
+	1235.1.1 = {
+		trait = paranoid
+		trait = temperate
+		trait = vengeful
+	}
+
+	1239.12.8 = {
+		trait = education_learning_2
+		trait = lifestyle_jurist
+	}
+
+	1242.12.21 = {
+		effect = {
+			create_character_memory = { # Ratarakaw
+				type = saw_ratarakaw
+			}
+		}
+	}
+}
+
+dathanites_labaqiri_9 = { # Rival pirate
+	name = "Nikfar"
+	religion = "labaqiri"
+	culture = "dathanites"
+	dynasty = dyn_dathanites_7
+
+	sexuality = heterosexual
+
+	martial = 8
+	diplomacy = 4
+	intrigue = 7
+	stewardship = 8
+	learning = 3
+	prowess = 9
+
+	1187.9.5 = {
+		birth = yes
+		trait = physique_good_2
+	}
+
+	1199.1.1 = {
+		trait = arbitrary
+		trait = impatient
+		trait = gregarious
+	}
+
+	1203.9.5 = {
+		trait = education_martial_2
+		trait = gh_historical_blademaster_2
+		trait = reckless
+	}
+
+	1242.12.21 = {
+		effect = {
+			create_character_memory = { # Ratarakaw
+				type = saw_ratarakaw
+			}
+		}
+	}
+
+	1243.12.15 = { #Invaded Datasam before the other pirates
+		trait = one_eyed
+		trait = scarred
+	}
+}
+
+dathanites_labaqiri_10 = { # Rakshen the Sea Lion
+	name = "Rakshen"
+	religion = "labaqiri"
+	culture = "dathanites"
+	dynasty = dyn_dathanites_8
+
+	sexuality = heterosexual
+
+	martial = 5
+	diplomacy = 9
+	intrigue = 3
+	stewardship = 8
+	learning = 3
+	prowess = 7
+
+	1194.12.14 = {
+		birth = yes
+		trait = strong
+	}
+
+	1206.1.1 = {
+		trait = deceitful
+		trait = ambitious
+		trait = gregarious
+	}
+
+	1210.12.14 = {
+		trait = education_martial_4
+		trait = organizer
+		trait = forder
+	}
+
+	1234.1.19 = {
+		trait = gh_historical_blademaster_3
+		give_nickname = nick_sea_lion
+	}
+
+	1246.12.11 = { #Wounded in battle
+		trait = wounded_1
+		trait = ill #infected wound
+	}
+
+	1247.7.2 = {
+		death = { 
+			death_reason = death_ill
+		}
+	}
+}
+
+dathanites_labaqiri_11 = { # The Lion Cub
+	name = "Kiratak"
+	religion = "labaqiri"
+	culture = "dathanites"
+	dynasty = dyn_dathanites_8
+
+	father = dathanites_labaqiri_10
+
+	sexuality = heterosexual
+
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 4
+	learning = 3
+	prowess = 5
+
+	1226.3.15 = {
+		birth = yes
+	}
+
+	1238.1.1 = {
+		trait = brave
+		trait = wrathful
+		trait = arrogant
+	}
+
+	1242.3.15 = {
+		trait = education_martial_2
+		trait = unyielding_defender
+	}
+
+	1242.12.21 = {
+		effect = {
+			create_character_memory = { # Ratarakaw
+				type = saw_ratarakaw
+			}
+		}
+	}
+
+    1247.7.2 = {
+    	effect = {
+    		set_relation_rival = {
+    			target = character:dathanites_labaqiri_1
+    			reason = rival_covetted_claim
+    		}
+    	}
+    }
+}

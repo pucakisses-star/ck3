@@ -1,0 +1,21 @@
+d_kallin = { 
+	1238.3.14 = {
+		holder = muhadamd_cumani_12
+		government = feudal_government
+	}
+	1230.1.1 = {
+		holder = muhadamd_cumani_21
+		government = feudal_government
+	}
+
+	1198.1.1 = {
+		holder = muhadamd_cumani_22
+		government = feudal_government
+	}
+}
+
+d_zaradar = {
+	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+		de_jure_liege = k_crelkvania
+	}
+}

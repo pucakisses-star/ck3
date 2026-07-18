@@ -1,0 +1,26 @@
+﻿guillater_calystoanistism_1 = {
+	name = "Guitard"
+	religion = calystoanistism
+	culture = guillater
+	1230.5.22 = {
+		birth = yes
+	}
+}
+
+guillater_calystoanistism_2 = {
+	name = "Caterina"
+	female = yes
+	religion = calystoanistism
+	culture = guillater
+	1211.10.20 = {
+		birth = yes
+	}
+	1223.10.20 = {
+		trait = content
+		trait = temperate
+		trait = lazy
+	}
+	1227.10.20 = {
+		trait = education_diplomacy_2
+	}
+}

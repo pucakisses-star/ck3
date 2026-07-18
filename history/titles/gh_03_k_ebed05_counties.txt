@@ -1,0 +1,42 @@
+#c_ebed38 = {
+#	1243.1.15 = {
+#		liege = 0
+#		government = migratory_government
+#		holder = utyalid_wardenism_9
+#		change_development_level = 6
+#	}
+#}
+#c_ebed39 = {
+#	
+#}
+c_ebed40 = {
+	1251.1.15 = {
+		liege = 0
+		government = migratory_government
+		holder = utyalid_wardenism_10
+		change_development_level = 5
+	}
+}
+c_ebed41 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_ebed42 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_ebed43 = {
+	1241.1.15 = {
+		liege = 0
+		government = migratory_government
+		holder = utyalid_wardenism_11
+		change_development_level = 5
+	}
+}
+c_ebed45 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}

@@ -1,0 +1,181 @@
+﻿
+#### Korlenalmic
+korlenalmic_korlacan_1 = { #the OG Heretic who killed nathanalmic_nattanan_1 (1249.5.5), and is eventually killed in a duel with nathanalmic_nattanan_3 (1250.1.1); his family is banished
+	name = "Kyaw_Zaw"
+	religion = "korlenalmic"
+	culture = "korlacan"
+	dynasty = dyn_mikyawhmunn
+	martial = 10
+	learning = 8
+	disallow_random_traits = yes
+	trait = education_martial_3
+	trait = zealous
+	trait = ambitious
+	trait = brave
+	trait = magic_good_4
+	trait = organizer
+	
+	1178.3.15 = {
+		birth = yes
+	}
+
+	1194.3.15 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:disciples_of_the_sacred_flame }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1198.1.15 = {
+		add_spouse = korlenalmic_korlacan_2
+	}
+
+	1230.1.1 = {
+		give_nickname = nick_the_heretic
+		add_character_modifier = exiled_one_modifier
+	}
+}
+ 
+korlenalmic_korlacan_2 = { #OG heretic's faithful wife who went along with him
+	name = "Khin_Thanda"
+	religion = "korlenalmic"
+	culture = "korlacan"
+	female = yes
+	dynasty = dyn_mikyawhmunn
+	diplomacy = 9
+	stewardship = 8
+	disallow_random_traits = yes
+	trait = education_stewardship_2
+	trait = compassionate
+	trait = patient
+	trait = temperate
+	trait = magic_good_5
+
+	1180.8.20 = {
+		birth = yes
+	}
+	
+	1196.8.20 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:disciples_of_the_sacred_flame }
+			set_variable = { name = historical_magic_school_min_spells value = 5 }
+			learn_global_spell_effect = { SPELL_IDENTIFIER = spawn_metal_golem_armies }
+		}
+	}
+	1198.1.15 = {
+		add_spouse = korlenalmic_korlacan_1
+	}
+}
+
+korlenalmic_korlacan_3 = { #Eldest son of korlenalmic 1 and 2
+	name = "Aung_Kyaw"
+	religion = "korlenalmic"
+	culture = "korlacan"
+	dynasty = dyn_mikyawhmunn
+	diplomacy = 7
+	father = korlenalmic_korlacan_1
+	mother = korlenalmic_korlacan_2
+	trait = education_diplomacy_3
+	trait = diligent
+	trait = just
+	trait = gregarious
+	trait = magic_good_4
+	
+	1201.5.10 = {
+		birth = yes
+	}
+
+	1217.5.10 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:disciples_of_the_sacred_flame }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+			learn_global_spell_effect = { SPELL_IDENTIFIER = spawn_metal_elementals_army }
+		}
+	}
+}
+korlenalmic_korlacan_4 = { #Younger son; much more powerful than his Dad or brother; need to give him a dope nickname
+	name = "Htet_Myat_Aung"
+	religion = "korlenalmic"
+	culture = "korlacan"
+	dynasty = dyn_mikyawhmunn
+	intrigue = 2
+	learning = 7
+	martial = 5
+	diplomacy = 3
+	stewardship = 6
+	father = korlenalmic_korlacan_1
+	mother = korlenalmic_korlacan_2
+	disallow_random_traits = yes
+	trait = education_intrigue_3
+	trait = arbitrary
+	trait = deceitful
+	trait = zealous
+	trait = lifestyle_mystic
+	trait = magic_good_7
+
+	1204.1.1 = {
+		birth = yes
+	}
+	
+	1220.1.1 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:disciples_of_the_sacred_flame }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			learn_global_spell_effect = { SPELL_IDENTIFIER = spawn_fire_elementals_army }
+		}
+	}
+	1252.1.1 = {
+		give_nickname = nick_the_flame_of_korlacu
+		effect = {
+			spawn_army = {
+				name = flaming_legion
+				levies = 2000
+				men_at_arms = {
+					type = fire_elementals
+					stacks = 2
+				}
+			location = province:8494
+			origin = province:8494
+			inheritable = yes
+			}
+		}
+	}
+}
+
+korlenalmic_korlacan_5 = { #KORLACU
+	name = "Korlacu"
+	religion = "korlenalmic"
+	culture = "korlacan"
+	learning = 15
+	martial = 20
+	intrigue = 15
+	dynasty = dyn_einduya
+	trait = magic_good_12
+	trait = intellect_good_3
+	trait = physique_good_3
+	trait = disfigured
+	father = nathanalmic_nattanan_29
+	mother = nathanalmic_nattanan_30
+
+	40.1.1 = {
+		birth = yes
+		trait = immortal
+	}
+
+	56.1.1 = {
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:disciples_of_the_sacred_flame }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+			set_base_arcana = { AMOUNT = 10 }
+		}
+	}
+
+	310.2.14 = { 
+		death = {
+			death_reason = death_battle
+			killer = nathanalmic_nattanan_5
+		}
+	}
+}
+
+

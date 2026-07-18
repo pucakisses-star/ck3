@@ -1,0 +1,399 @@
+﻿k_de_kanzelerij = {
+	1027.11.18 = {
+		holder = konijkmener_lifepath_51 #Woder Aardt Liittle more than a figurehead during his reign, far more involved with Tournaments, nearly bankrupted the Kanzelerij early in his reign before being reigned in by the Council
+		government = feudal_government
+		succession_laws = { single_heir_succession_law }
+	}
+	1035.9.25 = {
+		holder = konijkmener_lifepath_53 #Woder Conen, suffers a stroke part way into his ill-fated reign wracked by illness and poor health. would slip into a coma, and die some years later.
+		government = feudal_government
+	}
+	1091.9.20 = {
+		holder = konijkmener_lifepath_55 #Woder Causen, Last King of the Konijkmener, would inherit his throne as a child & struggle against his Regency Council until the Popular Revolution radically altered the control of 'his' realm. Pushed out of any semblance of 'authority,' would rise up in revolt some years later attempting to restore his rightful place as king. 
+		government = feudal_government
+	}
+	1099.10.11 = { # Popular Revolution, for a month and a day the nobility and merchant class would deliberate over how to restructure the Council to best suit the needs of the People* *themselves
+		holder = 0
+	}
+	1099.11.12 = { # Broede is the first electee, with few voting against
+		holder = konijkmener_lifepath_0 #Broede, lynched by an angry mob of burghers and peasants after accusations of thievery from the treasury by Unitarians upset by Broede's acquiesence to Councilist demands regarding the navy
+		government = administrative_republic_playable_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = roads_to_power 
+				}
+				holder = { 
+					add_realm_law_skip_effects = republican_centralization_1 
+					add_realm_law_skip_effects = mercantile_election_law
+				}
+				add_title_law = mercantile_elective_law
+			}
+			else_if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = republic_playable_government
+				}
+				add_title_law = clique_republic_elective_title_succession_law
+			}
+		}
+	}
+	1100.8.20 = {
+		holder = konijkmener_lifepath_24 #Wifern, assassinated by disgruntled merchants upset over raised tariffs and a refusal to cooperate 
+		government = administrative_republic_playable_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = roads_to_power 
+				}
+			}
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = republic_playable_government
+				}
+			}
+		}
+	}
+	1102.7.4 = {
+		holder = konijkmener_lifepath_30 #Thienolef, elected by previously disgruntled nobles/merchants, would be executed by Maaudlaw the Mad for alleged crimes of 'deviance' and 'moral depravity' after being deposed for being unfocused on the job at hand.
+		government = administrative_republic_playable_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = roads_to_power 
+				}
+			}
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = republic_playable_government
+				}
+			}
+		}
+	}
+	1104.1.2 = {
+		holder = konijkmener_lifepath_31 #Maadlauw, would die forgotten in the dungeons after the start of Causen's Uprising, couped by the Unitarians led by Iesdtte after he had Thienolef and a number of courtiers executed. Would find a way into the palace once more and push Iesdtte from the upper level perch where she watched the city, killing her instantly. Suffered from a gederoa part way into his term that would destroy his once keen mind.
+		government = administrative_republic_playable_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = roads_to_power 
+				}
+			}
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = republic_playable_government
+				}
+			}
+		}
+	}
+	1109.6.21 = {
+		holder = konijkmener_lifepath_32 #Iesdtte, would be pushed from a window by a maddened Maadlauw, known for her dedication to the Paths & pious nature as well as fierce protection of lowborn, venerated as a Waysaint by most on the peninsula, disputed by some Councilists. 
+		government = administrative_republic_playable_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = roads_to_power 
+				}
+			}
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = republic_playable_government
+				}
+			}
+		}
+	}
+	1113.3.20 = {
+		holder = konijkmener_lifepath_25 #Waalrijk, accidentally fell off his horse after years of success both rebuilding the Kanzelerij and its navy, as well as conquests in the Lowlands betwixt the Marches & the Granmaar Peninsula in the decades of unrest between High King Valden's death & Christoff's ascension to the throne.. 
+		government = administrative_republic_playable_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = roads_to_power 
+				}
+			}
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = republic_playable_government
+				}
+			}
+		}
+	}
+	1137.12.24 = {
+		holder = konijkmener_lifepath_26 #Folbrand, elected sickly after a deadlock in the council, died less than a year after
+		government = administrative_republic_playable_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = roads_to_power 
+				}
+			}
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = republic_playable_government
+				}
+			}
+		}
+	}
+	1138.7.2 = {
+		holder = urdermantern_lifepath_4 #Liusscarn, won through overwhelming force by bringing his personal army with him to the vote, decried as authoritarian and "Would-be King." Deposed following a disastrous campaign against the newly reformed High Kingdom of Chevalie. Would die during a losing siege from his own men killing him (along with his family) after rising up against the Kanzelerij in hopes of restoring the monarchy (with him on the throne)
+		government = administrative_republic_playable_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = roads_to_power 
+				}
+			}
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = republic_playable_government
+				}
+			}
+		}
+	}
+	1154.4.21 = {
+		holder = konijkmener_lifepath_28 #Maanwroos, would die of a stroke following years of struggle with Liusscarn and the recent High King Cristoff
+		government = administrative_republic_playable_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = roads_to_power 
+				}
+			}
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = republic_playable_government
+				}
+			}
+		}
+	}
+	1155.2.1 = {
+		holder = urdermantern_lifepath_4 # Liusscarn briefly manages to take back control over most of the Granmaar but is pushed out by Maanwroos and allies from Rohr & the Black Mountains
+	}
+	1155.10.19 = {
+		holder = konijkmener_lifepath_28 # Maanwroos retakes the capital, also brings back the surviving Hayrdweng dynasty members exiled once Liusscarn took the city
+		government = administrative_republic_playable_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = roads_to_power 
+				}
+			}
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = republic_playable_government
+				}
+			}
+		}
+	}
+	1167.2.6 = {
+		holder = konijkmener_lifepath_33 #Paadt, his boat is destroyed during a storm during a renewed colonization push in the Isles
+		government = administrative_republic_playable_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = roads_to_power 
+				}
+			}
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = republic_playable_government
+				}
+			}
+		}
+	}
+	1171.11.29 = {
+		holder = konijkmener_lifepath_29 #Roetwaan, dies of cancer after a ill-tempered reign, contributed to proxy wars between Etepezea and Kalathipsomi for a time, kept the Kanzelerij out of the rising ICW
+		government = administrative_republic_playable_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = roads_to_power 
+				}
+			}
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = republic_playable_government
+				}
+			}
+		}
+	}
+	1189.7.9 = {
+		holder = konijkmener_lifepath_1 #Ambroos, maintained a fragile stability in the Kanzelerij during the ICW & Frod, would lose his wife and children during Frod while on expedition in the Isle, permenantly shifting his perspective inward on the Kanzelerij & destroying his once jovial spirit. Would hang himself years after, never remarrying
+		government = administrative_republic_playable_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = roads_to_power 
+				}
+			}
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = republic_playable_government
+				}
+			}
+		}
+	}
+	1213.2.11 = {
+		holder =  konijkmener_gestanwoder_1 #Ribaal the Apostate, converted in the Granmaar swamps by a shaman, put to the stake by Order Members called in by the Council
+		government = administrative_republic_playable_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = roads_to_power 
+				}
+			}
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = republic_playable_government
+				}
+			}
+		}
+	}
+	1230.2.7 = {
+		holder = konijkmener_lifepath_15 #Rogier #Semi stable reign with little in the way of failure nor success, mockingly "the untested" dies of likely poisoning at a seasons festival
+		government = administrative_republic_playable_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = roads_to_power 
+				}
+			}
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = republic_playable_government
+				}
+			}
+		}
+	}
+	1245.6.2 = {
+		holder = konijkmener_lifepath_14 #Gust #abruptly took over following Rogiers death, would constantly face opposition from most in politics, especially the growing burghers, would be killed in the street by hired assassins
+		government = administrative_republic_playable_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = roads_to_power 
+				}
+			}
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = republic_playable_government
+				}
+			}
+		}
+	}
+	1248.8.12 = {
+		holder = konijkmener_lifepath_13 #Ard a Burgher of meager means that would rise through Konijk politics and is responsible for the deaths of the two previous Kanzelers. Recently openly accused as the murderer in 1254 but is never outright challenged over the claims.
+		government = administrative_republic_playable_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = roads_to_power 
+				}
+			}
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = republic_playable_government
+				}
+			}
+		}
+	}
+	1266.2.20 = {
+		holder = konijkmener_lifepath_11 #Roel #Ard would die murdered by his own son, and Roel would be chosen as a compromise candidate for the title.		
+	}
+	1274.8.10 = {
+		holder = konijkmener_lifepath_6 #Jurrien #Jurrien would grow extremely wealthy and powerful throughout the mid 50s-60s and capitalize on his resources to buy out votes following Roel's death. would begin efforts to replace the royal family.
+	}
+	1281.4.26 = {
+		holder = konijkmener_lifepath_91 #Anijt rules a shakey realm divided west/east between her house and jurrien's descendants allied to house Ee in the east. Her 'accident' would be used by both as evidence of conspiracy against her reign, though it was actually just an accident
+	}
+	1288.5.29 = {
+		holder = konijkmener_lifepath_12 #Florijn, a lame duck thats chosen to compromise between the Councilists and Royalists. 
+	}
+	1292.9.14 = {
+		holder = urdermantern_lifepath_9 #Rijger, only the second urdermantern Kanzeler & with the first being The Bitter King, bad omens hang over Rijgers term. The House of Jurrien continues to claim the throne and some talk as if the Royalists seek to overturn the Popular Revolution once and for all.
+	}
+}

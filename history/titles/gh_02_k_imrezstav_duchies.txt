@@ -1,0 +1,11 @@
+d_detbora = {
+	1183.4.19 = {
+		holder = amaghean_amaghean_aagiokrata_36
+	}
+	1209.11.6 = {
+		holder = mahratian_mahrator_6
+	}
+	1218.7.5 = {
+		liege = k_imrezstav
+	}
+}

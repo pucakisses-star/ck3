@@ -1,0 +1,21 @@
+d_jastrlawy = {
+	1230.1.1 = {
+		change_development_level = 2
+	}
+	1252.7.19 = {
+		holder = daukeni_sjalvolki_24
+		liege = k_warisnik
+		government = continental_clan_government
+	}
+}
+
+d_sverdok = {
+	1230.1.1 = {
+		change_development_level = 3
+	}
+	1252.7.19 = { 
+		holder = warisnik_sjalvolki_4
+		liege = k_warisnik
+		government = continental_clan_government
+	}
+}

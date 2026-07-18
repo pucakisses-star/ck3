@@ -1,0 +1,278 @@
+c_kalatehye_kabireh = {
+	1175.5.14 = {
+		holder = sarthian_mahndayana_7
+		liege = e_amsari
+	}
+	1184.6.11 = {
+		holder = sarthian_mahndayana_8
+		liege = e_amsari
+	}
+	1219.2.7 = {
+		holder = sarthian_mahndayana_9
+		liege = e_amsari
+	}
+	1232.6.16 = {
+		holder = sarthian_mahndayana_10
+		liege = e_amsari
+	}
+	1239.4.7 = {
+		holder = sarthian_mahndayana_4
+		liege = e_amsari
+	}
+}
+#c_prophets_pass = {
+#	1244.1.1 = {
+#		holder = sarthian_mahndayana_4
+#		liege = e_amsari
+#	}
+#}
+#c_chalma = {
+#	1253.1.1 = {
+#		holder = amsari_mahndayana_51
+#		liege = d_khvoshinane_sofla
+#		}
+#}
+c_khurnugban = {
+	1244.1.1 = {
+		holder = sarthian_mahndayana_2
+		liege = e_amsari
+	}
+}
+c_chaltasiyan = {
+	1244.1.1 = {
+		holder = thyssae_mahndayana_1
+		liege = e_amsari
+	}	
+}
+c_shahrake_shahid_bahonar = {
+	#1121.5.8 = {
+	#	government = clan_government
+	#	holder = thyssae_mahndayana_12
+	#	liege = e_amsari
+	#}
+	#1122.12.5 = {
+	#	holder = thyssae_mahndayana_13
+	#	liege = e_amsari
+	#}
+	1155.7.4 = {
+		government = clan_government
+		holder = thyssae_mahndayana_14
+		liege = e_amsari
+	}
+	1174.9.22 = {
+		holder = thyssae_mahndayana_15
+		liege = e_amsari
+	}
+	1196.7.11 = {
+		holder = thyssae_mahndayana_16
+		liege = e_amsari
+	}	
+	1205.12.5 = {
+		holder = thyssae_mahndayana_9
+		liege = e_amsari
+	}	
+	1234.4.8 = {
+		holder = thyssae_mahndayana_11
+		liege = e_amsari
+	}
+}
+#c_fill_5000 = {
+#	1244.1.1 = {
+#		holder = thyssae_mahndayana_3
+#		liege = e_amsari
+#	}
+#}
+#c_deh_zanan = {
+#	1244.1.1 = {
+#		holder = thyssae_mahndayana_3
+#		liege = e_amsari
+#	}
+#}
+#c_kalateh_joz = {
+#	1244.1.1 = {
+#		holder = thyssae_mahndayana_4
+#		liege = e_amsari
+#	}
+#}
+c_gole_abbas = {
+	# First Maraghid Kigdom
+	755.1.1 = {
+		holder = thyssae_mahndayana_17
+	}
+	794.7.30 = {
+		holder = thyssae_mahndayana_18
+	}	
+	839.1.1 = {
+		holder = thyssae_mahndayana_19
+	}
+	
+	# Second Maraghid Kigdom
+	948.1.1 = {
+		holder = thyssae_mahndayana_20
+	}
+	979.1.1 = {
+		holder = thyssae_mahndayana_21
+	}
+	1002.1.1 = {
+		holder = thyssae_mahndayana_22
+	}
+	
+	1244.1.1 = {
+		holder = thyssae_mahndayana_4
+		liege = e_amsari
+	}
+}
+c_qalat = {
+	1244.1.1 = {
+		holder = thyssae_mahndayana_4
+		liege = e_amsari
+	}
+}
+c_kani_tarn = {
+	1249.1.1 = {
+		government = clan_government
+		holder = thyssae_mahndayana_6
+		liege = d_sar_dasht
+	}
+}
+#c_jowband = {
+#	1252.1.1 = {
+#		holder = amsari_mahndayana_42
+#		liege = d_sar_dasht
+#	}
+#}
+#c_mishab = {
+#	1253.1.1 = {
+#		holder = amsari_mahndayana_45
+#		liege = d_darundel
+#	}
+#}
+c_zargar = {
+	1253.1.1 = {
+		government = clan_government
+		holder = thyssae_mahndayana_7
+		liege = d_darundel
+	}
+}
+c_parum = {
+	1253.1.1 = {
+		government = clan_government
+		holder = thyssae_mahndayana_8
+		liege = d_darundel
+	}
+}
+c_dumbika = {
+	1198.9.18 = {
+		holder = amsari_mahndayana_2
+	}
+}
+#c_qaleh_lar = {
+#	1253.1.1 = {
+#	holder = sarthian_mahndayana_4
+#	liege = e_amsari
+#	}
+#}
+#c_newamsarcounty6 = {
+#	1244.1.1 = {
+#		holder = sarthian_mahndayana_2
+#		liege = e_amsari
+#	}
+#}
+#c_newamsarcounty7 = {
+#	1252.1.1 = { 
+#		holder = amsari_mahndayana_11
+#		liege = e_amsari
+#	}
+#}
+#c_amsar_county_3 = {
+#	1200.3.1 = { 
+#		holder = wasteland
+#		liege = 0
+#	}
+#}
+#c_newamsarcounty = {
+#	1200.3.1 = { 
+#		holder = amsari_mahndayana_50
+#		liege = d_khvoshinane_sofla
+#	}
+#}
+#c_newamsarcounty2 = {
+#	1200.3.1 = { 
+#		holder = sarthian_mahndayana_4
+#		liege = e_amsari
+#	}
+#}
+#c_newamsarcounty8 = {
+#	1200.3.1 = { 
+#		holder = thyssae_mahndayana_1
+#		liege = e_amsari
+#	}
+#}
+#c_kemsar_county_10 = {
+#	1244.1.1 = {
+#		holder = thyssae_mahndayana_3
+#		liege = e_amsari
+#	}
+#}
+
+
+c_tazehabade_badr_gerd = {
+	#1121.5.8 = {
+	#	holder = thyssae_mahndayana_12
+	#	liege = e_amsari
+	#}
+	#1122.12.5 = {
+	#	holder = thyssae_mahndayana_13
+	#	liege = e_amsari
+	#}
+	1155.7.4 = {
+		holder = thyssae_mahndayana_14
+		liege = e_amsari
+	}
+	1174.9.22 = {
+		holder = thyssae_mahndayana_15
+		liege = e_amsari
+	}
+	1196.7.11 = {
+		holder = thyssae_mahndayana_16
+		liege = e_amsari
+	}	
+	1205.12.5 = {
+		holder = thyssae_mahndayana_9
+		liege = e_amsari
+	}	
+	1234.4.8 = {
+		holder = thyssae_mahndayana_11
+		liege = e_amsari
+	}
+	1250.4.8 = {
+		holder = siralagi_mahndayana_15
+		liege = e_amsari
+	}
+}
+
+c_amsar_county_2 = {
+	#1121.5.8 = {
+	#	holder = thyssae_mahndayana_12
+	#	liege = e_amsari
+	#}
+	#1122.12.5 = {
+	#	holder = thyssae_mahndayana_13
+	#	liege = e_amsari
+	#}
+	1155.7.4 = {
+		holder = thyssae_mahndayana_14
+		liege = e_amsari
+	}
+	1174.9.22 = {
+		holder = thyssae_mahndayana_15
+		liege = e_amsari
+	}
+	1183.3.1 = { 
+		holder = wasteland
+	}
+	1240.3.1 = {
+		holder = hixartii_mahndayana_2
+		liege = k_shuran
+	}
+}

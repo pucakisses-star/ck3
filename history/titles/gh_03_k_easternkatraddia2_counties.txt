@@ -1,0 +1,36 @@
+c_provinceprovince10550 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia47 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia51 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia49 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia58 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_provinceoranisarthex = {
+	1230.1.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia46 = {
+	1230.1.1 = {
+		holder = fog_eaters_fogeater_1
+		government = migratory_government
+	}
+}

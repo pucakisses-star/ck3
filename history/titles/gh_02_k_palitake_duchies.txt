@@ -1,0 +1,198 @@
+d_acaphos = {
+	1.1.2 = {
+		holder = unsorted_35
+		liege = 0
+	}
+	1230.1.1 = {
+		holder = westernimperial_omitilos_aagiokrata_5
+		liege = k_palitake
+	}
+
+	1242.1.1 = { change_development_level = 12 }
+	1257.5.1 = {
+		holder = daukeni_sjalvolki_76
+		liege = e_migrant_coalition
+	}
+	1273.9.11 = {
+		holder = daukeni_sjalvolki_139
+	}
+	1275.1.1 = {
+		liege = k_palitake
+		government = feudal_government
+	}	
+}
+d_cosmopol = {
+	1200.1.1 = { change_development_level = 24 }
+	
+	1230.1.1 = {
+		government = theocracy_government
+		holder = westernimperial_omitilos_aagiokrata_1
+		liege = k_palitake
+	}
+
+	1257.7.10 = {
+		holder = daukeni_sjalvolki_1
+		government = continental_clan_government
+	}
+
+	1298.1.1 = {
+		government = feudal_government
+	}
+}
+d_metedon = {
+	958.7.24 = {
+		holder = westernimperial_aversarinas_aagiokrata_519
+		liege = k_governorate_etepezea_kingdom
+	}
+	976.11.20 = {
+		holder = westernimperial_aversarinas_aagiokrata_521
+	}
+	985.10.27 = {
+		holder = westernimperial_aversarinas_aagiokrata_523
+	}
+	1025.5.5 = {
+		holder = westernimperial_aversarinas_aagiokrata_525
+	}
+	1044.7.13 = {
+		holder = westernimperial_aversarinas_aagiokrata_526
+	}
+	1099.3.14 = {
+		holder = westernimperial_aversarinas_aagiokrata_529
+	}
+	1139.8.20 = {
+		holder = westernimperial_aversarinas_aagiokrata_502
+		liege = e_etepezea
+	}
+	1153.10.14 = {
+		holder = westernimperial_aversarinas_aagiokrata_503
+		liege = e_etepezea
+	}
+	1169.3.5 = {
+		holder = westernimperial_aversarinas_aagiokrata_501
+		liege = k_palitake
+	}
+	1198.7.11 = {
+		holder = westernimperial_aversarinas_aagiokrata_504
+		liege = k_palitake
+	}
+	1200.3.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_506
+		liege = k_palitake
+	}
+	1219.1.17 = {
+		holder = westernimperial_aversarinas_aagiokrata_516
+		liege = k_palitake
+	}
+
+	
+	1242.1.1 = { change_development_level = 8 }
+		
+	1230.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_262
+	}
+
+	1257.6.19 = {
+		holder = 0
+	}
+
+	1298.1.1 = {
+		de_jure_liege = k_hromihils_kingdom
+	}
+}
+#d_tragiae = {
+#	1013.8.17 = {
+#		holder = westernimperial_aversarinas_aagiokrata_495
+#		liege = e_aversarinas_aautokrata
+#	}
+#	1055.7.4 = {
+#		holder = westernimperial_aversarinas_aagiokrata_494
+#	}
+#	1077.6.14 = {
+#		holder = westernimperial_aversarinas_aagiokrata_130
+#	}
+#	1109.12.7 = {
+#		holder = westernimperial_aversarinas_aagiokrata_484
+#	}
+#	1123.9.26 = {
+#		holder = westernimperial_aversarinas_aagiokrata_486
+#	}
+#	1191.4.16 = {
+#		holder = westernimperial_aversarinas_aagiokrata_487
+#	}
+#
+#	1200.1.1 = { change_development_level = 10 }
+#
+#	1200.3.1 = {
+#		holder = 0
+#	}
+#
+#	1242.1.1 = { change_development_level = 8 }
+#
+#	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+#		de_jure_liege = k_plekig
+#	}
+#}
+d_voutoufo = {
+	1250.1.1 = {
+		change_development_level = 6
+	}
+
+}
+#d_theodosse = {
+#	1230.1.1 = { change_development_level = 8 }
+#	
+#	1186.1.1 = {
+#		holder = imperialislander_aversarinas_aagiokrata_22
+#		liege = "k_palitake"
+#	}
+#	1250.1.1 = {
+#		holder = imperialislander_aversarinas_aagiokrata_6
+#		liege = 0
+#	}
+#}
+#d_naxembria = {
+#	1230.1.1 = { change_development_level = 8 }
+#	1186.1.1 = {
+#		holder = imperialislander_aversarinas_aagiokrata_21
+#		liege = "k_palitake"
+#	}
+#	1200.3.1 = {
+#		holder = imperialislander_aversarinas_aagiokrata_19
+#		liege = 0
+#	}
+#	1244.1.1 = {
+#		holder = imperialislander_aversarinas_aagiokrata_20
+#	}
+#	1245.9.18 ={
+#		holder = imperialislander_aversarinas_aagiokrata_18
+#	}
+#}
+#d_argontos = {
+#	1230.1.1 = { change_development_level = 6 }
+#	1186.1.1 = {
+#		holder = westernimperial_aversarinas_aagiokrata_200
+#		liege = k_palitake
+#	}
+#	1190.1.1 = {
+#		holder = westernimperial_aversarian_axiaotheaism_6
+#		liege = k_palitake
+#	}
+#	1244.1.1 = {
+#		holder = westernimperial_aversarian_axiaotheaism_5
+#		liege = 0
+#	}
+#}
+d_imperial_isle = {
+	1230.1.1 = { change_development_level = 8 }
+	1186.1.1 = {
+		holder = imperialislander_aversarinas_aagiokrata_27
+		liege = "k_palitake"
+	}
+	1203.1.1 = {
+		holder = imperialislander_aversarinas_aagiokrata_26
+	}
+	1253.1.1 = {
+		holder = imperialislander_aversarinas_aagiokrata_25
+		liege = 0
+	}
+}

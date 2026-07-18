@@ -1,0 +1,103 @@
+﻿jaravad_cumani_1 = {
+	name = "Jajiradai"
+	religion = "cumani"
+	culture = "jaravad"
+	sexuality = homosexual
+	
+	1174.4.11 = {
+		birth = yes
+	}
+}
+
+jaravad_cumani_2 = {
+	name = "Tumbinai_Setsen"
+	religion = "cumani"
+	culture = "jaravad"
+	sexuality = heterosexual
+	
+	1188.10.9 = {
+		birth = yes
+	}
+}
+
+jaravad_cumani_3 = {
+	name = "Khabul"
+	religion = "cumani"
+	culture = "jaravad"
+	sexuality = heterosexual
+	
+	1194.6.2 = {
+		birth = yes
+	}
+}
+
+jaravad_cumani_4 = {
+	name = "Neaera"
+	religion = "cumani"
+	culture = "jaravad"
+	female = yes
+
+	trait = lustful
+	trait = deceitful
+	trait = just
+	trait = beauty_good_3
+	trait = seducer
+	trait = education_intrigue_3
+
+	1215.1.1 = {
+		birth = yes
+	}
+}
+
+jaravad_cumani_5 = {
+	name = "Hagnon"
+	religion = "cumani"
+	culture = "jaravad"
+
+	trait = lustful
+	trait = gregarious
+	trait = gluttonous
+
+	trait = education_diplomacy_2
+
+	trait = depressed_1
+	trait = drunkard
+	trait = rakish
+
+	1220.1.1 = {
+		birth = yes
+	}
+}
+
+jaravad_cumani_6 = {
+	name = "Baeda"
+	religion = "cumani"
+	culture = "jaravad"
+	female = yes
+
+	1203.2.12 = {
+		birth = yes
+	}
+
+	1225.4.14 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+jaravad_cumani_7 = {
+	name = "Subetei"
+	religion = "cumani"
+	culture = "jaravad"
+
+	trait = diligent
+	trait = temperate
+	trait = shy
+	trait = depressed_1
+	trait = education_stewardship_4
+
+	1226.1.1 = {
+		birth = yes
+	}
+}

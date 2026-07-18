@@ -1,0 +1,34 @@
+﻿
+kartharaddi_orphecian_1 = { # Chyvar
+	name = "Chyvar"
+	religion = orphecian
+	culture = kartharaddi
+	
+	sexuality = heterosexual
+	
+	diplomacy = 10
+	martial = 12
+	stewardship = 1
+	intrigue = 6
+	learning = 4
+	prowess = 8
+	
+	677.5.11 = {
+		birth = yes
+	}
+	689.1.1 = {
+		trait = zealous
+		trait = wrathful
+		trait = gregarious
+	}
+	693.5.11 = {
+		trait = education_martial_4
+		trait = strategist
+	}
+	728.12.9 = {
+		death = {
+			death_reason = death_duel
+			killer = centralimperial_aversarinas_aagiokrata_64	# Aautokratir Eramos
+		}
+	}
+}

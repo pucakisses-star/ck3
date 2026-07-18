@@ -1,0 +1,59 @@
+﻿vaxanaka_vidvaookeyatra_1 = { # Kasharya jhenagaon
+	name = "Kapur"
+	religion = "vidvaookeyatra"
+	culture = "vaxanaka"
+	dynasty = dyn_north_kashirya_11
+	1222.8.8 = {
+		birth = yes
+	}
+}
+
+vaxanaka_vidvaookeyatra_2 = { # Kasharya jhenagaon
+	name = "Nanak"
+	religion = "vidvaookeyatra"
+	culture = "uthanata"
+	1214.8.8 = {
+		birth = yes
+	}
+}
+
+vaxanaka_vidvaookeyatra_3 = { # Kasharya jhenagaon
+	name = "Anokhi"
+	religion = "vidvaookeyatra"
+	culture = "vaxanaka"
+	female = yes
+	1219.8.8 = {
+		birth = yes
+	}
+}
+
+vaxanaka_vidvaookeyatra_4 = { # Duke of thinder vassal of majapahit
+	name = "Arjun"
+	religion = "vidvaookeyatra"
+	dynasty = dynasty_virlani_1
+	father = virlani_vidvaookeyatra_4
+	mother = virlani_vidvaookeyatra_5
+	culture = "virlani"
+	1224.8.8 = {
+		birth = yes
+	}
+	1240.8.8 = {
+		trait = eccentric
+		trait = lustful
+		trait = greedy
+	}
+
+	1253.1.1 = {
+		add_spouse = virlani_vidvaookeyatra_7
+		#effect = {
+		#	vassal_contract_set_obligation_level = {
+		#		type = title_revocation_rights
+		#		level = 1
+		#	}
+		#	vassal_contract_set_obligation_level = {
+		#		type = council_rights
+		#		level = 1
+		#	}
+		#}
+	}
+}

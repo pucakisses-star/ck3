@@ -1,0 +1,36 @@
+k_heartwood = { 
+	1260.1.1 = {
+		de_jure_liege = e_the_reach
+	}
+}
+
+k_skycrown = {
+	91.12.14 = {
+		holder = dailennir_kathanouxiac_20	# Eldaceu 'Snowbeard'; never ruled or even set foot in Skycrown, but nominally treated as its first king for proper regnal numbering of his successors
+	}
+	91.12.15 = {
+		holder = dailennir_kathanouxiac_21	# Meiandun 'the Exile'
+	}
+	111.3.16 = {
+		holder = dailennir_kathanouxiac_23	# Eldaceu II 'Breaker of Malkhador'
+	}
+	160.2.23 = {
+		holder = dailennir_kathanouxiac_25	# Aldos 'the Mute Sage'
+	}
+	196.12.14 = {
+		holder = 0
+	}
+	196.12.14 = {
+		holder = 0
+	}
+	712.11.25 = {
+		holder = kartharaddi_orphecian_1	# General Chyvar
+	}
+	728.12.9 = {
+		holder = 0
+	}
+	1260.1.1 = {
+		de_jure_liege = e_the_reach
+	}
+}
+

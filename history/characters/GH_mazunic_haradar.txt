@@ -1,0 +1,25 @@
+﻿mazunic_haradar_1 = { # Ieaya Mujiayja
+	name = "MuhktarEyyan"
+	dna = mazunic_haradar_1
+	religion = "haradar"
+	culture = "ghudiyy"
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_08
+			custom_beards = male_beard_custom_02
+		}
+	}
+
+	1204.6.18 = {
+		birth = yes
+	}
+	1220.4.3 = {
+		trait = education_intrigue_3
+		trait = gh_historical_blademaster_1
+	}
+}

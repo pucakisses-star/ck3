@@ -1,0 +1,139 @@
+#c_smenakhre = {
+#	1195.1.1 = {
+#		government = tribal_government
+#		holder = aljibal_kemsari_kemsar_33
+#		liege = d_uwar
+#	}
+#	1224.1.1 = {
+#		liege = 0
+#	}
+#	1244.1.1 = {
+#		government = tribal_government
+#		holder = aljibal_kemsari_kemsar_11
+#	}
+#}
+c_ashshimmur = {
+	1180.3.7 = {
+	government = tribal_government
+	holder = almajun_kemsari_kemsar_10
+	}
+	1199.1.1 = {
+	government = tribal_government
+	holder = almajun_kemsari_kemsar_5
+	}
+	1244.1.1 = {
+	government = tribal_government
+	holder = aljibal_kemsari_kemsar_12
+	}
+}
+#c_usadjash = {
+#	1180.3.7 = {
+#	government = tribal_government
+#	holder = almajun_kemsari_kemsar_10
+#	}
+#	1199.1.1 = {
+#	government = tribal_government
+#	holder = almajun_kemsari_kemsar_5
+#	}
+#	1244.1.1 = {
+#	government = tribal_government
+#	holder = aljibal_kemsari_kemsar_12
+#	}
+#}
+#c_udja = { 
+#		1199.1.1 = {
+#		government = tribal_government
+#		holder = almajun_kemsari_kemsar_9
+#		}
+#		1244.1.1 = {
+#		government = tribal_government
+#		holder = aljibal_kemsari_kemsar_19
+#		}
+#}
+c_faamun = {
+		1199.1.1 = {
+		government = tribal_government
+		holder = almajun_kemsari_kemsar_9
+		}
+		1244.1.1 = {
+		government = tribal_government
+		holder = aljibal_kemsari_kemsar_20
+		}
+}
+c_ashderaniws = { 
+		1192.11.5 = {
+			government = tribal_government
+			holder = almajun_kemsari_kemsar_8
+		}
+		1244.1.1 = {
+		government = tribal_government
+		holder = aljibal_kemsari_kemsar_14
+		}
+}
+c_khairakherennu = {
+	1000.1.1 = {
+		holder = wasteland
+	}
+}
+#c_espethgiresh = { 
+#	1198.1.1 = {
+#		government = tribal_government
+#		holder = almajun_kemsari_kemsar_9
+#	}
+#	1244.1.1 = {
+#		government = tribal_government
+#		holder = aljibal_kemsari_kemsar_13
+#		liege = 0
+#	}
+#}
+c_bannu = { 
+	1195.1.1 = {
+		government = tribal_government
+		holder = aljibal_kemsari_kemsar_34
+	}
+	1244.1.1 = {
+		government = tribal_government
+		holder = aljibal_kemsari_kemsar_11
+	}
+}
+#c_nimurhet = { 
+#	1195.1.1 = {
+#		government = tribal_government
+#		holder = aljibal_kemsari_kemsar_35
+#	}
+#	1244.1.1 = {
+#		government = tribal_government
+#		holder = aljibal_kemsari_kemsar_11
+#	}
+#}
+c_akku = {
+	1198.1.1 = {
+		government = tribal_government
+		holder = almajun_kemsari_kemsar_6
+	}
+	1230.1.1 = {
+		holder = aljibal_kemsari_kemsar_13
+	}
+}
+#c_akhrehetepusammur = {
+#	1244.1.1 = {
+#		government = tribal_government
+#		holder = aljibal_kemsari_kemsar_11
+#	}
+#}
+#c_new_kemsar_county1 = {
+#	1192.11.5 = {
+#		government = tribal_government
+#		holder = almajun_kemsari_kemsar_8
+#	}
+#	1244.1.1 = {
+#	government = tribal_government
+#	holder = aljibal_kemsari_kemsar_14
+#	}
+#}
+
+c_kemsary_county3 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}

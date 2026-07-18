@@ -1,0 +1,19 @@
+﻿sarishta_vidvaookeyatra_1 = { # Vassal under talesh duke
+	name = "Dinanath"
+	religion = "vidvaookeyatra"
+	culture = "sarishta"
+	dynasty = dyn_north_kashirya_5
+	1221.8.8 = {
+		birth = yes
+	}
+}
+
+sarishta_vidvaookeyatra_2 = { # Vassal under talesh duke
+	name = "Suresh"
+	religion = "vidvaookeyatra"
+	culture = "sarishta"
+	dynasty = dyn_north_kashirya_4
+	1210.8.8 = {
+		birth = yes
+	}
+}

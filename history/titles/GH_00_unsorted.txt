@@ -1,0 +1,424 @@
+﻿# Just thrown in for modcon, move out to proper files **BEFORE** release
+
+
+e_shewigadd_great_kingdom = {
+	1.1.1 = {
+		holder = shewigad_starvayrd_1
+	}
+	39.1.11 = {
+		holder = 0 # Disbanded, Chevalie established
+	}
+}
+
+e_kathanouxiac_empire = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	66.11.14 = {
+		holder = 0
+	}
+}
+
+k_beslog = {
+	1.1.1 = {
+		holder = unsorted_15
+	}
+	101.3.15 = {
+		holder = 0
+	}
+	604.4.5 = {
+		holder = unsorted_48
+	}
+	748.3.21 = {
+		holder = 0
+	}
+}
+k_vasisky = {
+	1.1.1 = {
+		holder = unsorted_15
+	}
+	101.3.15 = {
+		holder = 0
+	}
+	604.4.5 = {
+		holder = unsorted_48
+	}
+	748.3.21 = {
+		holder = 0
+	}
+}
+k_fed_kryturynisk = {
+	1.1.1 = {
+		holder = unsorted_15
+	}
+	101.3.15 = {
+		holder = 0
+	}
+	604.4.5 = {
+		holder = unsorted_48
+	}
+	748.3.21 = {
+		holder = 0
+	}
+}
+e_kartharadd = {
+	1.1.1 = {
+		holder = unsorted_15
+	}
+	101.3.15 = {
+		holder = 0
+	}
+	604.4.5 = {
+		holder = unsorted_48
+	}
+	748.3.21 = {
+		holder = 0
+	}
+}
+k_sharozny = {
+	1.1.1 = {
+		holder = unsorted_15
+	}
+	101.3.15 = {
+		holder = 0
+	}
+	604.4.5 = {
+		holder = unsorted_48
+	}
+	748.3.21 = {
+		holder = 0
+	}
+}
+k_preika = {
+	1.1.1 = {
+		holder = unsorted_15
+	}
+	101.3.15 = {
+		holder = 0
+	}
+	604.4.5 = {
+		holder = unsorted_48
+	}
+	748.3.21 = {
+		holder = 0
+	}
+}
+k_azenaky = {
+	1.1.1 = {
+		holder = unsorted_15
+	}
+	101.3.15 = {
+		holder = 0
+	}
+	604.4.5 = {
+		holder = unsorted_48
+	}
+	748.3.21 = {
+		holder = 0
+	}
+}
+
+e_northgrove = {
+	1.1.1 = {
+		holder = unsorted_16
+	}
+	78.11.21 = {
+		holder = 0
+	}
+}
+
+e_kemsar = {
+	1.1.1 = {
+		holder = unsorted_18
+	}
+	98.6.2 = {
+		holder = 0
+	}
+}
+
+d_interior_viceroyalty = {
+	1.1.2 = {
+		holder = unsorted_30
+	}
+	64.1.1 = {
+		holder = 0
+	}
+	
+	# get counties
+	#d_feinde !
+	#d_grascoi !
+}
+d_druysthuric_pact = {
+	1.1.2 = {
+		holder = unsorted_29
+	}
+	60.1.1 = {
+		holder = 0
+	}
+	
+	# get counties
+	#d_vallguedoc !
+	#d_grascoi !
+}
+d_sweverat_nirdrl = {
+	1.1.2 = {
+		holder = unsorted_28
+	}
+	79.1.1 = {
+		holder = 0
+	}
+	
+	#c_grande_gisredde !
+	#c_peti_gisredde !
+	#c_dverote !
+	#c_clois !
+	#c_sant_de_ramos !
+}
+d_the_seventy_tribes = {
+	1.1.2 = {
+		holder = unsorted_27
+	}
+	60.1.1 = {
+		holder = 0
+	}
+	
+	#d_east_lichdoms_24a !
+}
+k_kalaratt_estates = {
+	1.1.2 = {
+		holder = unsorted_26
+	}
+	60.1.1 = {
+		holder = 0
+	}
+	
+	#d_micbin !
+	#d_ziemojycz !
+	#d_elnwo !
+	#c_rozalie !
+	#c_plaffinmont !
+}
+k_theymastro = {
+	1.1.2 = {
+		holder = unsorted_25
+	}
+	60.1.1 = {
+		holder = 0
+	}
+	
+	#d_east_lichdoms_22a !
+	#c_east_lichdoms_21b !
+	#c_east_lichdoms_22b !
+	#c_east_lichdoms_21c !
+	#c_east_lichdoms_24c !
+	#c_preberec !
+	#c_verebony !
+}
+k_del_lan_de_damanyanta = {
+	1.1.2 = {
+		holder = unsorted_24
+	}
+	60.1.1 = {
+		holder = 0
+	}
+	
+	#d_west_lichdoms_19 !
+	#d_ferrond !
+	#d_west_lichdoms_18 !
+	#c_west_lichdoms_13 !
+	#c_jochendie !
+	#c_nessaut !
+	#c_arrsaux !
+}
+k_the_matron_crown = {
+	1.1.2 = {
+		holder = unsorted_23
+	}
+	60.1.1 = {
+		holder = 0
+	}
+	
+	#d_west_lichdoms_12 !
+	#d_west_lichdoms_13 !
+	#c_west_lichdoms_16 !
+	#c_provincenewprovince13078 !
+}
+
+e_the_septarchy = {
+	1.1.2 = {
+		holder = unsorted_22
+	}
+	60.1.1 = {
+		holder = 0
+	}
+
+	#k_nowpot !
+	#d_krosko !
+}
+k_east_lichdom_3 = {
+	1.1.2 = {
+		holder = unsorted_22
+	}
+	60.1.1 = {
+		holder = 0
+	}
+	}
+d_east_lichdoms_15aa = {
+	1.1.2 = {
+		holder = unsorted_22
+	}
+	60.1.1 = {
+		holder = 0
+	}
+}
+
+e_avermore = {
+	1.1.2 = {
+		holder = unsorted_21
+	}
+	60.1.1 = {
+		holder = 0
+	}
+
+	#k_east_lichdom_4 !
+}
+k_east_lichdom_4 = {
+	1.1.2 = {
+		holder = unsorted_21
+	}
+	60.1.1 = {
+		holder = 0
+	}
+}
+
+k_enlightency_of_vrawsyl = {
+	1.1.2 = {
+		holder = unsorted_20
+	}
+	60.1.1 = {
+		holder = 0
+	}
+
+	#c_vrawsyl !
+	#d_each_lichdom_3 !
+	#c_east_lichdoms_24b !
+	#c_east_lichdoms_25a !
+}
+
+k_seychescian_concordat = {
+	1.1.2 = {
+		holder = unsorted_31
+	}
+	90.1.1 = {
+		holder = 0
+	}
+}
+
+d_sun_walkers_of_zurn_ran_ro = {
+	1.1.2 = {
+		holder = unsorted_40
+	}
+	100.1.1 = {
+		holder = 0
+	}
+}
+
+k_bronze_men = {
+	1.1.2 = {
+		holder = unsorted_43
+	}
+	200.1.1 = {
+		holder = 0
+	}
+}
+d_swords_of_the_free = {
+	1.1.2 = {
+		holder = unsorted_47
+	}
+	62.1.1 = {
+		holder = 0
+	}
+}
+d_awakened_servants = {
+	1.1.2 = {
+		holder = unsorted_44
+	}
+	200.1.1 = {
+		holder = 0
+	}
+}
+
+d_nalmavast_rel = {
+	269.11.8 = {
+		holder = izikalek_nalmavast_49
+	}
+	296.1.22 = {
+		holder = izikalek_nalmavast_48
+	}
+	322.5.29 = {
+		holder = izikalek_nalmavast_47
+	}
+	329.11.8 = {
+		holder = izikalek_nalmavast_46
+	}
+	336.3.11 = {
+		holder = 0
+	}
+	411.7.28 = {
+		holder = izikalek_nalmavast_45
+	}
+	425.3.7 = {
+		holder = izikalek_nalmavast_44
+	}
+	454.8.16 = {
+		holder = izikalek_nalmavast_43
+	}
+	469.9.7 = {
+		holder = izikalek_nalmavast_42
+	}
+	489.5.24 = {
+		holder = izikalek_nalmavast_41
+	}
+	500.11.4 = {
+		holder = izikalek_nalmavast_40
+	}
+	521.6.9 = {
+		holder = izikalek_nalmavast_39
+	}
+	544.2.30 = {
+		holder = izikalek_nalmavast_38
+	}
+	577.10.17 = {
+		holder = izikalek_nalmavast_37
+	}
+	584.3.14 = {
+		holder = izikalek_nalmavast_36
+	}
+	588.9.21 = {
+		holder = izikalek_nalmavast_35
+	}
+	605.7.5 = {
+		holder = izikalek_nalmavast_34
+	}
+	624.12.14 = {
+		holder = izikalek_nalmavast_33
+	}
+	633.2.4 = {
+		holder = izikalek_nalmavast_32
+	}
+	638.4.20 = {
+		holder = izikalek_nalmavast_31
+	}
+	658.11.7 = {
+		holder = izikalek_nalmavast_30
+	}
+	670.6.10 = {
+		holder = izikalek_nalmavast_29
+	}
+	678.1.30 = {
+		holder = izikalek_nalmavast_28
+	}
+	684.5.10 = {
+		holder = 0
+	}
+}

@@ -1,0 +1,44 @@
+c_destiny = {
+	1251.4.14 = {
+		holder = lakaloi_aversarinas_aagiokrata_1
+		liege = 0
+	}
+}
+c_doracuse = {
+	1251.4.14 = {
+		holder = southislander_aversarinas_aagiokrata_3
+		liege = 0
+	}
+}
+c_phalalia_isles1 = {
+	1251.4.14 = {
+		holder = agiopadis_saintly_order_1
+		liege = 0
+	}
+}
+c_dymysthenes = {
+	1251.4.14 = {
+		holder = southislander_aversarinas_aagiokrata_3
+		liege = "d_inner_halo"
+	}
+}
+c_itieia_isles1a = {
+	1251.4.14 = {
+		holder = agiopadis_saintly_order_14
+	}
+}
+c_phanaca_isles3 = {
+	1251.4.14 = {
+		holder = agiopadis_saintly_order_17
+	}
+}
+c_phanaca_isles2 = {
+	1251.4.14 = {
+		holder = agiopadis_saintly_order_18
+	}
+}
+c_itieia_isles1c = {
+	1251.4.14 = {
+		holder = agiopadis_agiopolei_1
+	}
+}

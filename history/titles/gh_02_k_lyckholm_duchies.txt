@@ -1,0 +1,46 @@
+d_wolfsfeld = {
+	1.1.1 = {
+		holder = unsorted_17
+	}
+	40.2.21 = {
+		holder = 0
+	}
+	1250.1.1 = {
+		holder = daukeni_sjalvolki_2
+		liege = 0
+		government = continental_clan_government
+		change_development_level = 3
+	}
+}
+
+d_oakendale = {
+	1.1.1 = {
+		holder = unsorted_17
+	}
+	19.1.2 = { # SPARTACUS!!!
+		holder = 0
+	}
+	1230.1.1 = {
+		change_development_level = 3
+	}
+	1253.2.3 = {
+		holder = ardothanes_wyrdpath_1
+		liege = e_migrant_coalition #GH_URGENT_TODO: Should these be vassals?
+		government = continental_clan_government
+	}
+	1256.1.1 = {
+		liege = 0
+	}
+}
+
+d_leafsea = {
+	1.1.1 = {
+		holder = unsorted_17
+	}
+	40.2.21 = {
+		holder = 0
+	}
+	1230.1.1 = {
+		change_development_level = 5
+	}
+}

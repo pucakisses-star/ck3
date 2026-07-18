@@ -1,0 +1,53 @@
+﻿karadamos_kidarian_dance_1 = {
+	name = "Silos"
+	religion = "kidarian_dance"
+	culture = "karadamos"
+
+	martial = 3
+	diplomacy = 3
+	intrigue = 3
+	stewardship = 2
+	learning = 5
+	prowess = 8
+
+	1230.11.17 = {
+		birth = yes
+	}
+
+	1242.1.1 = {
+		trait = shy
+		trait = diligent
+		trait = impatient
+	}
+
+	1246.11.17 = {
+		trait = education_learning_1
+	}
+}
+
+karadamos_kidarian_dance_2 = {
+	name = "Bruxon"
+	religion = "kidarian_dance"
+	culture = "karadamos"
+
+	martial = 9
+	diplomacy = 6
+	intrigue = 10
+	stewardship = 5
+	learning = 1
+	prowess = 7
+
+	1223.4.15 = {
+		birth = yes
+	}
+
+	1235.1.1 = {
+		trait = brave
+		trait = lazy
+		trait = paranoid
+	}
+
+	1239.4.15 = {
+		trait = education_diplomacy_4
+	}
+}

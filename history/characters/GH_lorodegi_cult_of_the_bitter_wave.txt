@@ -1,0 +1,37 @@
+﻿lorodegi_cult_of_the_bitter_wave_1 = {
+	name = "Ermenegilda"
+	female = yes
+	religion = cult_of_the_bitter_wave
+	culture = lorodegi
+	1200.9.1 = {
+		birth = yes
+	}
+}
+
+lorodegi_cult_of_the_bitter_wave_2 = {
+	name = "Pagano"
+	religion = cult_of_the_bitter_wave
+	culture = lorodegi
+	1220.10.18 = {
+		birth = yes
+	}
+}
+
+lorodegi_cult_of_the_bitter_wave_3 = {
+	name = "Stefano"
+	religion = cult_of_the_bitter_wave
+	culture = lorodegi
+	1224.3.18 = {
+		birth = yes
+	}
+}
+
+lorodegi_cult_of_the_bitter_wave_4 = {
+	name = "Pericle"
+	religion = cult_of_the_bitter_wave
+	culture = lorodegi
+
+	1224.2.1 = {
+		birth = yes
+	}
+}

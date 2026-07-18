@@ -1,0 +1,64 @@
+﻿deresstae_iyrossi_aagiokrata_1 = {
+	name = "Glaucias"
+	dynasty = dyn_iyrossi_2
+	religion = "iyrossi_aagiokrata"
+	culture = "deresstae"
+
+	1217.4.12 = {
+		birth = yes
+	}
+}
+
+deresstae_iyrossi_aagiokrata_2 = {
+	name = "Galaurus"
+	dynasty = dyn_iyrossi_3
+	religion = "iyrossi_aagiokrata"
+	culture = "deresstae"
+
+	1229.4.12 = {
+		birth = yes
+	}
+}
+
+deresstae_iyrossi_aagiokrata_3 = { # Led slave revolt in the central isles
+	name = "Pantadienos"
+	religion = "iyrossi_aagiokrata"
+	culture = "deresstae"
+
+	sexuality = heterosexual
+
+	martial = 6
+	diplomacy = 8
+	stewardship = 6
+	intrigue = 10
+	learning = 4
+	prowess = 7
+
+	1057.10.15 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1069.1.1 = {
+		trait = paranoid
+		trait = wrathful
+		trait = vengeful
+	}
+
+	1073.10.15 = {
+		trait = education_martial_3
+		trait = organizer
+	}
+
+	1089.4.16 = {
+		trait = peasant_leader
+		trait = scarred
+	}
+
+	1090.4.22 = { # Orydian Expedition, slain by Terros Stonehide at the exact time Oryd slew Aeltheniax
+		death = {
+			death_reason = death_battle
+			killer = centralimperial_aversarinas_aagiokrata_186
+		}
+	}
+}

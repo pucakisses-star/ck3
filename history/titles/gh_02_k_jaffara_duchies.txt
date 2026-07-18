@@ -1,0 +1,82 @@
+d_manasupa = {
+	728.5.27 = {
+		holder = watumimba_corkkattirkana_71
+		government = pirate_government
+	}
+	760.1.1 = {
+		liege = k_ufaliracci
+	}
+	762.2.7 = {
+		holder = watumimba_corkkattirkana_73
+		government = feudal_government
+	}
+	779.2.23 = {
+		holder = watumimba_corkkattirkana_75
+	}
+	813.2.17 = {
+		holder = watumimba_corkkattirkana_78
+	}
+	826.11.20 = {
+		holder = watumimba_corkkattirkana_80
+	}
+	863.5.17 = {
+		holder = watumimba_corkkattirkana_84
+	}
+	882.11.22 = {
+		holder = watumimba_corkkattirkana_97
+	}
+	899.12.29 = {
+		holder = watumimba_corkkattirkana_46
+	}
+	1185.11.10 = {
+		holder = watumimba_corkkattirkana_2
+		liege = k_spice_cities
+	}
+	1210.3.19 = {
+		holder = westernimperial_aversarinas_aagiokrata_202
+		government = military_unit_government
+	}
+	1218.3.1 = {
+		holder = 0
+	}
+}
+d_kawelpal = {
+	788.10.6 = {
+		holder = watumimba_corkkattirkana_34
+	}
+	801.11.29 = {
+		holder = watumimba_corkkattirkana_36
+	}
+	818.7.22 = {
+		holder = watumimba_corkkattirkana_37
+	}
+	820.2.1 = {
+		holder = watumimba_corkkattirkana_38
+	}
+	820.10.3 = { 
+		holder = watumimba_corkkattirkana_39
+	}
+	847.3.1 = {
+		holder = watumimba_corkkattirkana_45
+	}
+	899.12.29 = {
+		holder = watumimba_corkkattirkana_46
+	}
+	926.4.12 = {
+		holder = watumimba_corkkattirkana_48
+	}
+	935.7.1 = { 
+		holder = watumimba_corkkattirkana_50
+	}
+	941.3.6 = {
+		holder = watumimba_corkkattirkana_51
+	}
+	954.10.10 = {
+		holder = 0
+	}
+	1238.5.6 = {
+		holder = arolyan_yakasak_1
+		government = pirate_government
+		change_development_level = 5
+	}
+}

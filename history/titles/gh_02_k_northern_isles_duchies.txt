@@ -1,0 +1,10 @@
+d_duchytest1111 = {
+	1250.1.1 = {
+		change_development_level = 4
+	}
+}
+d_duchytesti87 = {
+	1250.1.1 = {
+		change_development_level = 4
+	}
+}

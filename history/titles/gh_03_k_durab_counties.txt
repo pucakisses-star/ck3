@@ -1,0 +1,162 @@
+#c_beyn_darreh = {
+#	1244.1.1 = {
+#		holder = amsari_mahndayana_22
+#		liege = e_amsari
+#	}
+#}
+c_tarkunj = {
+	1162.4.4 = {
+		holder = amsari_mahndayana_300
+		liege = e_amsari
+	}
+	1188.2.18 = {
+		holder = amsari_mahndayana_301
+		liege = e_amsari
+	}
+	1202.1.25 = {
+		holder = amsari_mahndayana_306
+		liege = e_amsari
+	}
+	1235.6.18 = {
+		holder = amsari_mahndayana_308
+		liege = e_amsari
+	}
+}
+c_jan_qaleh = {
+	1168.2.1 = {
+		holder = amsari_mahndayana_305
+		liege = d_takyeh
+	}
+	1195.1.17 = {
+		holder = amsari_mahndayana_306
+		liege = d_takyeh
+	}
+	1235.6.18 = {
+		holder = amsari_mahndayana_308
+		liege = e_amsari
+	}
+}
+#c_kuhe_piza = {
+#	1244.1.1 = {
+#		holder = amsari_mahndayana_22
+#		liege = e_amsari
+#	}
+#}
+c_damdama = {
+	1251.4.7 = {
+		holder = siralagi_mahndayana_13
+		liege = d_shastakan
+	}
+}
+c_ahmadabad = {
+	1250.1.1 = {
+		holder = siralagi_mahndayana_12
+		liege = k_durab
+	}
+}
+#c_siah_ettefaqe_pain = {
+#	1250.1.1 = {
+#		holder = siralagi_mahndayana_5
+#		liege = k_durab
+#	}
+#}
+#c_chahe_ali = {
+#	1253.1.1 = {
+#		holder = amsari_mahndayana_63
+#		liege = d_shastakan
+#	}
+#}
+#c_palang_pareh = {
+#	1253.1.1 = {
+#		holder = amsari_mahndayana_65
+#		liege = d_makalvan
+#	}
+#}
+#c_dareh_senji = {
+#	1253.1.1 = {
+#		holder = amsari_mahndayana_66
+#		liege = d_makalvan
+#	}
+#}
+c_hormozabad = {
+	1109.5.12 = {
+		holder = siralagi_mahndayana_1
+		liege = e_amsari
+	}
+	1151.2.11 = {
+		holder = siralagi_mahndayana_2
+		liege = e_amsari
+	}
+	1176.11.3 = {
+		holder = siralagi_mahndayana_3
+		liege = e_amsari
+	}
+	1180.3.7 = {
+		holder = siralagi_mahndayana_4
+		liege = e_amsari
+	}
+	1200.10.27 = {
+		change_development_level = 20
+	}	
+	1204.1.22 = {
+		holder = siralagi_mahndayana_5
+		liege = e_amsari
+	}
+	1245.8.9 = {
+		holder = siralagi_mahndayana_16
+		liege = d_shastakan
+	}
+	1253.3.6 = {
+		holder = siralagi_mahndayana_14
+		liege = d_shastakan
+	}
+}
+#c_eskrytia = {
+#	1230.1.1 = { 
+#		holder = siralagi_mahndayana_5
+#		liege = e_amsari
+#	}
+#}
+c_estakhr = {
+	1162.4.4 = {
+		holder = amsari_mahndayana_300
+		liege = e_amsari
+	}
+	1169.2.11 = {
+		holder = siralagi_mahndayana_2
+		liege = e_amsari
+	}
+	1176.11.3 = {
+		holder = siralagi_mahndayana_3
+		liege = e_amsari
+	}
+	1180.3.7 = {
+		holder = siralagi_mahndayana_4
+		liege = e_amsari
+	}
+	1204.1.22 = {
+		holder = siralagi_mahndayana_5
+		liege = e_amsari
+	}	
+	1200.1.1 = {
+		change_development_level = 20
+	}
+}
+#c_qalehye_abdollah_khan = {
+#	1230.1.1 = { 
+#		holder = siralagi_mahndayana_5
+#		liege = e_amsari
+#	}
+#}
+#c_dulabi = {
+#	1230.1.1 = { 
+#		holder = siralagi_mahndayana_5
+#		liege = e_amsari
+#	}
+#}
+#c_newamsarcounty4 = {
+#	1200.3.1 = { 
+#		holder = siralagi_mahndayana_5
+#		liege = k_durab
+#	}
+#}

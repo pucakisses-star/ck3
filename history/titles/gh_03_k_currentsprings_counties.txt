@@ -1,0 +1,183 @@
+﻿c_shadowroot = { #id = 6539; Tinhung
+   	525.1.1 = {
+		holder = korlonalmic_korlacan_2  
+	}
+
+	535.3.9 = {
+		holder = nathanalmic_nattanan_13
+	}
+	1250.3.11 = {
+		holder = nathanalmic_nattanan_33
+	}
+}
+
+
+c_meanderreef = { #id = 6336 # HIGH PRIEST#; Bulolo
+	34.1.1 = {
+		holder = nathanalmic_nattanan_6 # Tarfal (18.1.1 - 330.1.1)
+	}
+
+	330.1.1 = {
+		holder = wasteland
+	}
+
+	448.10.8 = {
+		holder =  nathanalmic_nattanan_38 # Khin Thanda (410.11.30--534.3.9)
+		government = magocratic_government
+	}
+		
+	534.3.9 = {
+		holder = nathanalmic_nattanan_13 #Htun Myint, the Guru (472.6.14--588.7.18)
+		government = magocratic_government
+	}
+
+	588.7.18 = {
+		holder = nathanalmic_nattanan_14 # Hla Myint, the Elder (526.9.3--642.9.16) 
+		government = magocratic_government
+	}
+
+	642.9.16 = {
+		holder = nathanalmic_nattanan_15 #Soe Aung (580.12.25--694.4.2)
+		government = magocratic_government
+	}
+
+	694.4.2 = {
+		holder = nathanalmic_nattanan_16 #Kyaw Swar (632.7.8--746.11.20)
+		government = magocratic_government
+	}
+
+	746.11.20 = {
+		holder = nathanalmic_nattanan_17 #Aung Naing (684.5.19--799.6.7)
+		government = magocratic_government
+	}
+	
+	799.6.7 = {
+		holder = nathanalmic_nattanan_18 #Thet Naung (737.2.14--851.8.14)
+		government = magocratic_government
+	}
+	
+	851.8.14 = {
+		holder = nathanalmic_nattanan_19 #Thet Min Swar (789.5.30--904.10.1)
+		government = magocratic_government
+	}
+	
+	904.10.1 = {
+		holder = nathanalmic_nattanan_20 #Kyaw Min Thu (842.8.17--958.3.23)
+		government = magocratic_government
+	}
+	
+	958.3.23 = {
+		holder = nathanalmic_nattanan_21 #Aung Hlaing (896.11.5--1011.7.9)
+		government = magocratic_government
+	}
+	
+	1011.7.9 = {
+		holder = nathanalmic_nattanan_22 #Zaw Lin (949.3.21--1065.12.15)
+		government = magocratic_government
+	}
+	
+	1065.12.15 = {
+		holder = nathanalmic_nattanan_23 #Htun Aung (1003.9.8--1119.5.30)
+		government = magocratic_government
+	}
+	
+	1119.5.30 = {
+		holder = nathanalmic_nattanan_24 #U Maung Soe (1057.2.14--1172.9.11)
+		government = magocratic_government
+	}
+	
+	1172.9.11 = {
+		holder = nathanalmic_nattanan_25 #Thura Min (1165.6.30--1217.10.1)
+		government = magocratic_government
+	}
+	
+	1217.10.1 = {
+		holder = nathanalmic_nattanan_3 #Yaza Zin (1201.10.1--)
+		government = magocratic_government
+	}
+}
+
+c_herder_hills = {
+	1205.1.1 = {
+		holder = xasamdaas_ebohephai_olten_2
+		government = nomad_government
+	}
+
+	1215.1.1 = {
+		holder = nargul_ebohephai_olten_4
+		government = nomad_government
+	}
+
+	1225.1.1 = {
+		holder = xasamdaas_ebohephai_olten_3
+		government = nomad_government
+	}
+	
+	1251.1.1 = {
+		holder = nargul_ebohephai_olten_6
+		government = nomad_government
+	}
+}
+
+c_herdermi = {
+	1245.3.1 = {
+		holder = nathanalmic_nattanan_27
+		liege = d_the_sepattan
+		government = magocratic_government
+	}
+}
+
+c_spirit_springs = {
+	1205.1.1 = {
+		holder = xasamdaas_ebohephai_olten_2
+	}
+
+	1215.1.1 = {
+		holder = nargul_ebohephai_olten_4
+	}
+
+	1225.1.1 = {
+		holder = xasamdaas_ebohephai_olten_3
+	}
+	
+	1251.1.1 = {
+		holder = nargul_ebohephai_olten_6
+	}
+}
+
+#c_star_flowers_home = { # id = 5454; 
+#	1243.3.12 = {
+#		holder = nathanalmic_nattanan_28 
+#	}	 
+#}
+
+
+c_deepwood = {
+	1237.6.20 = {
+		holder = gotharnalmic_nattanan_4
+	}
+}
+
+c_battingcove = {
+	1251.6.20 = {
+		holder = katharnalmic_kyawkan_22
+	}
+}
+
+c_river_protected = {
+	1239.11.20 = {
+		holder = gotharnalmic_nattanan_5
+	}
+}
+
+c_leafdeep = {
+	1245.1.30 = {
+		holder = nathanalmic_nattanan_32
+	}
+}
+
+c_inverted_jungle = {
+	1210.5.30 = {
+		holder = nathanalmic_nattanan_34
+	}
+}	

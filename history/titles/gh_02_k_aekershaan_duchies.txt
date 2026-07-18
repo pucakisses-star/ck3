@@ -1,0 +1,14 @@
+
+d_gilhadu = {
+	1202.1.12 = {
+		holder = aaoyuotaa_ahridar_3
+	}
+	1212.9.17 = {
+		holder = 0
+	}
+}
+d_dazat = {
+	1251.1.1 = {
+		change_development_level = 3
+	}
+}

@@ -1,0 +1,150 @@
+
+c_connac = {
+	880.1.1 = { #Seized during the Anarchy
+		holder = voyagen_lifepath_37 #Widen den va Seignon
+	}
+	890.1.2 = {
+		holder = voyagen_lifepath_38 #Louise den va Seignon
+	}
+	902.2.22 = {
+		holder = voyagen_lifepath_39 #Gardfrei den va Seignon
+	}
+	1253.1.1 = {
+		liege = "k_de_porte_de_bastione"
+		holder = trustians_lifepath_4
+	}
+}
+c_tireic = {
+	1.1.2 = {
+		holder = unsorted_30
+	}
+	1253.11.16 = {
+		liege = "k_varrdevet"
+		holder = carsavisians_lifepath_17
+	}
+}
+c_guizforte = {
+	1.1.2 = {
+		holder = unsorted_30
+	}
+	875.1.1 = {
+		holder = salisians_lifepath_13 #Gofrei Monteaux
+	}
+	1014.11.18 = {
+		holder = voyagen_lifepath_88 # Anton Descradau
+	}
+	1253.11.16 = {
+		liege = "k_varrdevet"
+		holder = trustians_lifepath_9
+	}
+}
+c_raincourt = {
+	1.1.2 = {
+		holder = unsorted_30
+	}
+	1253.11.16 = {
+		liege = "k_varrdevet"
+		holder = trustians_lifepath_10
+	}
+}
+c_volheis = {
+	1.1.2 = {
+		holder = unsorted_24
+	}
+	60.1.1 = {
+		holder = wasteland
+	}
+	1215.4.1 = {
+		liege = "e_chevalie"
+		holder = trustians_lifepath_29
+	}
+	1253.11.12 = {
+		liege = "k_varrdevet"
+		holder = trustians_lifepath_7
+	}
+}
+c_jochendie = {
+	1.1.2 = {
+		holder = unsorted_24
+	}
+	60.1.1 = {
+		holder = wasteland
+	}
+	1215.4.1 = {
+		liege = "e_chevalie"
+		holder = trustians_lifepath_29
+	}
+	1253.11.12 = {
+		liege = "k_varrdevet"
+		holder = trustians_lifepath_7
+	}
+}
+c_davoi = {
+	1.1.2 = {
+		holder = unsorted_24
+	}
+	60.1.1 = {
+		holder = wasteland
+	}
+	1029.5.25  = {
+		liege = k_varrdevet
+		holder = voyagen_lifepath_89
+	}
+	1215.4.1 = {
+		liege = "e_chevalie"
+		holder = trustians_lifepath_29
+	}
+	1253.11.12 = {
+		liege = "k_varrdevet"
+		holder = trustians_lifepath_7
+	}
+}
+c_suidskolone = {
+	1.1.2 = {
+		holder = unsorted_24
+	}
+	60.1.1 = {
+		holder = wasteland
+	}
+	1253.11.17 = {
+		liege = "d_ferrond"
+		holder = trustians_lifepath_13
+	}
+}
+c_mandigny = {
+	900.1.1 = {
+		holder = voyagen_lifepath_45 #Credon den va Seignon
+	}
+	903.1.1 = {
+		holder = salisians_lifepath_13 #Gofrei Monteaux
+	}
+	1253.11.17 = {
+		liege = "d_devex"
+		holder = trustians_lifepath_14
+	}
+}
+c_arubosc = {
+	1.1.2 = {
+		holder = unsorted_30
+	}
+	878.3.7 = {
+		holder = salisians_lifepath_13
+	}
+	#933.3.24 = {
+	#	holder = 0
+	#}
+	1253.11.12 = {
+		holder = salisians_lifepath_14
+		government = theocracy_government
+		change_development_level = 8
+	}
+}
+c_verheid = {
+	1.1.2 = {
+		holder = unsorted_30
+	}
+	1253.11.12 = {
+		holder = voyagen_lifepath_9
+		change_development_level = 8
+	}
+}

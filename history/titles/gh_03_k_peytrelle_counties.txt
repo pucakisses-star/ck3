@@ -1,0 +1,667 @@
+
+c_moratuvina = {
+	640.2.21 = {
+		holder = watumimba_corkkattirkana_17
+	}
+	662.1.14 = {
+		holder = watumimba_corkkattirkana_23
+	}
+	726.3.10 = {
+		holder = watumimba_corkkattirkana_26
+	}
+	734.9.13 = {
+		holder = watumimba_corkkattirkana_27
+	}
+	734.12.12 = {
+		holder = watumimba_corkkattirkana_28
+	}
+	745.12.14 = {
+		holder = watumimba_corkkattirkana_30
+	}
+	778.1.3 = {
+		holder = watumimba_corkkattirkana_32
+	}
+	788.10.6 = {
+		holder = watumimba_corkkattirkana_34
+	}
+	791.4.17 = {
+		holder = watumimba_corkkattirkana_68
+	}
+	801.11.29 = {
+		holder = watumimba_corkkattirkana_36
+	}
+	818.7.22 = {
+		holder = watumimba_corkkattirkana_37
+	}
+	820.2.1 = {
+		holder = watumimba_corkkattirkana_38
+	}
+	820.10.3 = { 
+		holder = watumimba_corkkattirkana_39
+	}
+	847.3.1 = {
+		holder = watumimba_corkkattirkana_45
+	}
+	899.12.29 = {
+		holder = watumimba_corkkattirkana_46
+	}
+	926.4.12 = {
+		holder = watumimba_corkkattirkana_48
+	}
+	935.7.1 = { 
+		holder = watumimba_corkkattirkana_50
+	}
+	941.3.6 = {
+		holder = watumimba_corkkattirkana_51
+	}
+	954.10.10 = {
+		holder = watumimba_corkkattirkana_58
+	}
+	968.5.4 = {
+		holder = watumimba_corkkattirkana_60
+	}
+	973.3.16 = {
+		holder = watumimba_corkkattirkana_53
+	}
+	1251.6.16 = {
+		holder = saruta_corkkattirkana_1
+		liege = k_peytrelle
+	}
+	1272.6.5 = {
+		holder = saruta_corkkattirkana_3
+	}
+}
+c_sarjacann = {
+	1200.2.3 = {
+		holder = vanaarik_yakasak_8
+		government = pirate_government
+	}
+	#1217.4.1 = {
+	#	holder = 0
+	#}
+	1221.4.2 = {
+		holder = vanaarik_yakasak_4
+		government = feudal_government
+	}
+	1242.7.6 = {
+		holder = vanaarik_yakasak_5
+		government = feudal_government
+	}
+	1272.5.8 = {
+		holder = vanaarik_yakasak_12
+	}
+	1292.5.28 = {
+		holder = vanaarik_yakasak_3
+	}
+	1294.11.26 = {
+		holder = vanaarik_yakasak_19
+	}
+}
+c_thrimbyso = {
+	660.2.21 = {
+		holder = watumimba_corkkattirkana_17
+	}
+	662.1.14 = {
+		holder = watumimba_corkkattirkana_23
+	}
+	726.3.10 = {
+		holder = watumimba_corkkattirkana_26
+	}
+	734.9.13 = {
+		holder = watumimba_corkkattirkana_27
+	}
+	734.12.12 = {
+		holder = watumimba_corkkattirkana_28
+	}
+	745.12.14 = {
+		holder = watumimba_corkkattirkana_30
+	}
+	778.1.3 = {
+		holder = watumimba_corkkattirkana_32
+	}
+	788.10.6 = {
+		holder = watumimba_corkkattirkana_34
+	}
+	801.11.29 = {
+		holder = watumimba_corkkattirkana_36
+	}
+	818.7.22 = {
+		holder = watumimba_corkkattirkana_37
+	}
+	820.2.1 = {
+		holder = watumimba_corkkattirkana_38
+	}
+	820.10.3 = { 
+		holder = watumimba_corkkattirkana_39
+	}
+	847.3.1 = {
+		holder = watumimba_corkkattirkana_45
+	}
+	899.12.29 = {
+		holder = watumimba_corkkattirkana_46
+	}
+	926.4.12 = {
+		holder = watumimba_corkkattirkana_48
+	}
+	935.7.1 = { 
+		holder = watumimba_corkkattirkana_50
+	}
+	941.3.6 = {
+		holder = watumimba_corkkattirkana_51
+	}
+	954.10.10 = {
+		holder = watumimba_corkkattirkana_58
+	}
+	968.5.4 = {
+		holder = watumimba_corkkattirkana_60
+	}
+	973.3.16 = {
+		holder = watumimba_corkkattirkana_53
+	}
+	1243.9.1 = {
+		holder = jakana_corkkattirkana_1
+	}
+	1245.6.6 = {
+		liege = k_peytrelle
+	}
+	1269.6.23 = {
+		holder = jakana_corkkattirkana_3
+	}
+	1280.1.1 = {
+		liege = k_ellawala_coalition
+	}
+	1296.1.15 = {
+		holder = jakana_corkkattirkana_5
+	}
+}
+c_magamor = {
+	1200.2.3 = {
+		holder = vanaarik_yakasak_8
+		government = pirate_government
+	}
+	#1217.4.1 = {
+	#	holder = 0
+	#}
+	1221.4.2 = {
+		holder = vanaarik_yakasak_4
+		government = feudal_government
+	}
+	1242.7.6 = {
+		holder = vanaarik_yakasak_5
+		government = feudal_government
+	}
+	1272.5.8 = {
+		holder = vanaarik_yakasak_12
+	}
+	1292.5.28 = {
+		holder = vanaarik_yakasak_3
+	}
+	1294.11.26 = {
+		holder = vanaarik_yakasak_19
+	}
+	1296.4.23 = {
+		holder = deraani_yakasak_4
+	}
+}
+c_kolonawaulla = {
+	566.10.7 = {
+		holder = watumimba_corkkattirkana_11
+	}
+	591.9.25 = {
+		holder = watumimba_corkkattirkana_13a
+	}
+	596.3.13 = {
+		holder = watumimba_corkkattirkana_13
+	}
+	607.8.28 = {
+		holder = watumimba_corkkattirkana_15
+	}
+	635.2.21 = {
+		holder = watumimba_corkkattirkana_17
+	}
+	662.1.14 = {
+		holder = watumimba_corkkattirkana_23
+	}
+	726.3.10 = {
+		holder = watumimba_corkkattirkana_26
+	}
+	734.9.13 = {
+		holder = watumimba_corkkattirkana_27
+	}
+	734.12.12 = {
+		holder = watumimba_corkkattirkana_28
+	}
+	745.12.14 = {
+		holder = watumimba_corkkattirkana_30
+	}
+	778.1.3 = {
+		holder = watumimba_corkkattirkana_32
+	}
+	788.10.6 = {
+		holder = watumimba_corkkattirkana_34
+	}
+	801.11.29 = {
+		holder = watumimba_corkkattirkana_36
+	}
+	818.7.22 = {
+		holder = watumimba_corkkattirkana_37
+	}
+	820.2.1 = {
+		holder = watumimba_corkkattirkana_38
+	}
+	820.10.3 = { 
+		holder = watumimba_corkkattirkana_39
+	}
+	847.3.1 = {
+		holder = watumimba_corkkattirkana_45
+	}
+	899.12.29 = {
+		holder = watumimba_corkkattirkana_46
+	}
+	926.4.12 = {
+		holder = watumimba_corkkattirkana_48
+	}
+	935.7.1 = { 
+		holder = watumimba_corkkattirkana_50
+	}
+	941.3.6 = {
+		holder = watumimba_corkkattirkana_51
+	}
+	954.10.10 = {
+		holder = watumimba_corkkattirkana_58
+	}
+	968.5.4 = {
+		holder = watumimba_corkkattirkana_60
+	}
+	973.3.16 = {
+		holder = watumimba_corkkattirkana_53
+	}
+	989.8.14 = {
+		holder = watumimba_corkkattirkana_61
+	}
+	999.4.15 = {
+		holder = watumimba_corkkattirkana_3
+	}
+	1010.12.6 = {
+		holder = saruta_yakasak_1
+		government = pirate_government
+	}
+	1229.9.26 = {
+		holder = deraani_yakasak_14
+	}
+	1248.11.16 = {
+		holder = deraani_yakasak_1
+		government = pirate_government
+		change_development_level = 5
+	}
+	1271.2.11 = {
+		holder = deraani_yakasak_4a
+	}
+	1271.3.1 = {
+		holder = deraani_yakasak_4
+	}
+}
+c_ambrahera = {
+	566.10.7 = {
+		holder = watumimba_corkkattirkana_11
+	}
+	591.9.25 = {
+		holder = watumimba_corkkattirkana_13a
+	}
+	596.3.13 = {
+		holder = watumimba_corkkattirkana_13
+	}
+	607.8.28 = {
+		holder = watumimba_corkkattirkana_15
+	}
+	635.2.21 = {
+		holder = watumimba_corkkattirkana_17
+	}
+	662.1.14 = {
+		holder = watumimba_corkkattirkana_23
+	}
+	726.3.10 = {
+		holder = watumimba_corkkattirkana_26
+	}
+	734.9.13 = {
+		holder = watumimba_corkkattirkana_27
+	}
+	734.12.12 = {
+		holder = watumimba_corkkattirkana_28
+	}
+	745.12.14 = {
+		holder = watumimba_corkkattirkana_30
+	}
+	778.1.3 = {
+		holder = watumimba_corkkattirkana_32
+	}
+	788.10.6 = {
+		holder = watumimba_corkkattirkana_34
+	}
+	801.11.29 = {
+		holder = watumimba_corkkattirkana_36
+	}
+	818.7.22 = {
+		holder = watumimba_corkkattirkana_37
+	}
+	820.2.1 = {
+		holder = watumimba_corkkattirkana_38
+	}
+	820.10.3 = { 
+		holder = watumimba_corkkattirkana_39
+	}
+	847.3.1 = {
+		holder = watumimba_corkkattirkana_45
+	}
+	899.12.29 = {
+		holder = watumimba_corkkattirkana_46
+	}
+	926.4.12 = {
+		holder = watumimba_corkkattirkana_48
+	}
+	935.7.1 = { 
+		holder = watumimba_corkkattirkana_50
+	}
+	941.3.6 = {
+		holder = watumimba_corkkattirkana_51
+	}
+	954.10.10 = {
+		holder = watumimba_corkkattirkana_58
+	}
+	968.5.4 = {
+		holder = watumimba_corkkattirkana_60
+	}
+	973.3.16 = {
+		holder = watumimba_corkkattirkana_53
+	}
+	1006.12.6 = {
+		holder = saruta_yakasak_1
+		government = pirate_government
+	}
+	1245.6.6 = {
+		liege = d_trinapaawa				
+		holder = ikanita_yakasak_10
+		government = pirate_government
+		change_development_level = 5
+	}
+}
+c_vingrihadra = {
+	560.10.7 = {
+		holder = watumimba_corkkattirkana_11
+	}
+	591.9.25 = {
+		holder = watumimba_corkkattirkana_13a
+	}
+	596.3.13 = {
+		holder = watumimba_corkkattirkana_13
+	}
+	607.8.28 = {
+		holder = watumimba_corkkattirkana_15
+	}
+	635.2.21 = {
+		holder = watumimba_corkkattirkana_17
+	}
+	662.1.14 = {
+		holder = watumimba_corkkattirkana_23
+	}
+	726.3.10 = {
+		holder = watumimba_corkkattirkana_26
+	}
+	734.9.13 = {
+		holder = watumimba_corkkattirkana_27
+	}
+	734.12.12 = {
+		holder = watumimba_corkkattirkana_28
+	}
+	745.12.14 = {
+		holder = watumimba_corkkattirkana_30
+	}
+	778.1.3 = {
+		holder = watumimba_corkkattirkana_32
+	}
+	788.10.6 = {
+		holder = watumimba_corkkattirkana_34
+	}
+	801.11.29 = {
+		holder = watumimba_corkkattirkana_36
+	}
+	818.7.22 = {
+		holder = watumimba_corkkattirkana_37
+	}
+	820.2.1 = {
+		holder = watumimba_corkkattirkana_38
+	}
+	820.10.3 = { 
+		holder = watumimba_corkkattirkana_39
+	}
+	847.3.1 = {
+		holder = watumimba_corkkattirkana_45
+	}
+	899.12.29 = {
+		holder = watumimba_corkkattirkana_46
+	}
+	926.4.12 = {
+		holder = watumimba_corkkattirkana_48
+	}
+	935.7.1 = { 
+		holder = watumimba_corkkattirkana_50
+	}
+	941.3.6 = {
+		holder = watumimba_corkkattirkana_51
+	}
+	954.10.10 = {
+		holder = watumimba_corkkattirkana_58
+	}
+	968.5.4 = {
+		holder = watumimba_corkkattirkana_60
+	}
+	973.3.16 = {
+		holder = watumimba_corkkattirkana_53
+	}
+	990.12.6 = {
+		holder = saruta_yakasak_1
+		government = pirate_government
+	}
+	1245.6.6 = {
+		liege = d_trinapaawa
+		holder = samayani_corkkattirkana_1
+		government = pirate_government
+		change_development_level = 5
+	}
+	1267.6.1 = {
+		holder = samayani_corkkattirkana_2
+		government = republic_playable_government
+	}
+}
+c_avissawella = {
+	1245.6.6 = {
+		holder = watumimba_yakasak_3
+		change_development_level = 5
+	}
+}
+c_kegapara = {
+	1245.6.6 = {
+		holder = rethara_yakasak_2 
+		change_development_level = 5
+	}
+}
+c_ampalle = {
+	1245.6.6 = {
+		holder = rethara_yakasak_2
+		change_development_level = 5
+	}
+}
+c_ampagoda = {
+	1245.6.6 = {
+		holder = prakaani_yakasak_1
+		government = pirate_government
+		change_development_level = 4
+	}
+	1271.2.10 = {
+		holder = prakaani_yakasak_3
+	}
+	1279.11.2 = {
+		holder = prakaani_yakasak_5
+	}
+	1280.2.14 = {
+		holder = prakaani_yakasak_7
+		liege = k_ellawala_coalition
+	}
+}
+c_ratnaparta = {
+	660.7.28 = {
+		holder = watumimba_corkkattirkana_63
+	}
+	707.12.14 = {
+		holder = watumimba_corkkattirkana_28
+	}
+	745.12.14 = {
+		holder = watumimba_corkkattirkana_30
+	}
+	778.1.3 = {
+		holder = watumimba_corkkattirkana_32
+	}
+	788.10.6 = {
+		holder = watumimba_corkkattirkana_34
+	}
+	801.11.29 = {
+		holder = watumimba_corkkattirkana_36
+	}
+	818.7.22 = {
+		holder = watumimba_corkkattirkana_37
+	}
+	820.2.1 = {
+		holder = watumimba_corkkattirkana_38
+	}
+	820.10.3 = { 
+		holder = watumimba_corkkattirkana_39
+	}
+	847.3.1 = {
+		holder = watumimba_corkkattirkana_45
+	}
+	1245.6.6 = {
+		holder = prakaani_yakasak_1
+		government = pirate_government
+		change_development_level = 3
+	}
+	1271.2.10 = {
+		holder = prakaani_yakasak_12
+		liege = d_rapagodacon
+	}
+	1295.9.26 = {
+		holder = prakaani_yakasak_15
+	}
+}
+c_hanwelavur = {
+	660.7.28 = {
+		holder = watumimba_corkkattirkana_63
+	}
+	707.12.14 = {
+		holder = watumimba_corkkattirkana_28
+	}
+	745.12.14 = {
+		holder = watumimba_corkkattirkana_30
+	}
+	778.1.3 = {
+		holder = watumimba_corkkattirkana_32
+	}
+	788.10.6 = {
+		holder = watumimba_corkkattirkana_34
+	}
+	801.11.29 = {
+		holder = watumimba_corkkattirkana_36
+	}
+	818.7.22 = {
+		holder = watumimba_corkkattirkana_37
+	}
+	820.2.1 = {
+		holder = watumimba_corkkattirkana_38
+	}
+	820.10.3 = { 
+		holder = watumimba_corkkattirkana_39
+	}
+	847.3.1 = {
+		holder = watumimba_corkkattirkana_45
+	}
+	899.12.29 = {
+		holder = watumimba_corkkattirkana_46
+	}
+	926.4.12 = {
+		holder = watumimba_corkkattirkana_48
+	}
+	1245.6.6 = {
+		holder = prakaani_yakasak_1
+		government = pirate_government
+		change_development_level = 4
+	}
+	1271.2.10 = {
+		holder = prakaani_yakasak_3
+	}
+	1279.11.2 = {
+		holder = prakaani_yakasak_5
+	}
+	1280.2.14 = {
+		holder = prakaani_yakasak_7
+	}
+	1295.8.14 = {
+		holder = deraani_yakasak_4
+	}
+	1295.10.6 = {
+		holder = deraani_yakasak_6
+		liege = k_ellawala_coalition
+	}
+
+}
+c_mitrigala = {
+	750.12.14 = {
+		holder = watumimba_corkkattirkana_30
+	}
+	778.1.3 = {
+		holder = watumimba_corkkattirkana_32
+	}
+	788.10.6 = {
+		holder = watumimba_corkkattirkana_34
+	}
+	801.11.29 = {
+		holder = watumimba_corkkattirkana_36
+	}
+	818.7.22 = {
+		holder = watumimba_corkkattirkana_37
+	}
+	820.2.1 = {
+		holder = watumimba_corkkattirkana_38
+	}
+	820.10.3 = { 
+		holder = watumimba_corkkattirkana_39
+	}
+	847.3.1 = {
+		holder = watumimba_corkkattirkana_45
+	}
+	899.12.29 = {
+		holder = watumimba_corkkattirkana_46
+	}
+	926.4.12 = {
+		holder = watumimba_corkkattirkana_48
+	}
+	935.7.1 = { 
+		holder = watumimba_corkkattirkana_50
+	}
+	941.3.6 = {
+		holder = watumimba_corkkattirkana_51
+	}
+	954.10.10 = {
+		holder = watumimba_corkkattirkana_58
+	}
+	968.5.4 = {
+		holder = watumimba_corkkattirkana_60
+	}
+	973.3.16 = {
+		holder = watumimba_corkkattirkana_53
+	}
+	1245.6.6 = {
+		holder = samayani_yakasak_2
+		government = pirate_government
+		liege = d_rapagodacon
+		change_development_level = 4
+	}
+}

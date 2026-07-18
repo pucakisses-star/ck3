@@ -1,0 +1,153 @@
+#d_psikai = {
+#	1250.1.1 = {
+#		change_development_level = 9
+#	}
+#	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+#		de_jure_liege = k_helski
+#	}
+#}
+
+#d_skyympene = {
+#	475.6.17 = {
+#		holder = centralimperial_aversarinas_aagiokrata_1
+#		liege = k_governorate_malcois_kingdom
+#		government = feudal_government
+#	}
+#	506.3.22 = {
+#		holder = centralimperial_aversarinas_aagiokrata_2
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	528.2.6 = {
+#		holder = centralimperial_aversarinas_aagiokrata_8
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	543.10.9 = {
+#		holder = centralimperial_aversarinas_aagiokrata_10
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	597.4.10 = {
+#		holder = centralimperial_aversarinas_aagiokrata_16
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	606.9.24 = {
+#		holder = centralimperial_aversarinas_aagiokrata_33
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	618.4.17 = {
+#		holder = centralimperial_aversarinas_aagiokrata_13
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	642.10.16 = {
+#		holder = centralimperial_aversarinas_aagiokrata_14
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	1230.1.1 = {
+#		liege = 0
+#		holder = centralimperial_aversarinas_aagiokrata_119
+#		change_development_level = 6
+#	}
+#	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+#		de_jure_liege = k_kradal
+#	}
+#}
+
+d_myris = {
+	475.6.17 = {
+		holder = centralimperial_aversarinas_aagiokrata_1
+		liege = k_governorate_malcois_kingdom
+		government = feudal_government
+	}
+	506.3.22 = {
+		holder = centralimperial_aversarinas_aagiokrata_2
+		liege = k_governorate_malcois_kingdom
+	}
+	528.2.6 = {
+		holder = centralimperial_aversarinas_aagiokrata_8
+		liege = k_governorate_malcois_kingdom
+	}
+	543.10.9 = {
+		holder = centralimperial_aversarinas_aagiokrata_10
+		liege = k_governorate_malcois_kingdom
+	}
+	597.4.10 = {
+		holder = centralimperial_aversarinas_aagiokrata_16
+		liege = k_governorate_malcois_kingdom
+	}
+	606.9.24 = {
+		holder = centralimperial_aversarinas_aagiokrata_33
+		liege = k_governorate_malcois_kingdom
+	}
+	618.4.17 = {
+		holder = centralimperial_aversarinas_aagiokrata_13
+		liege = k_governorate_malcois_kingdom
+	}
+	642.10.16 = {
+		holder = centralimperial_aversarinas_aagiokrata_14
+		liege = k_governorate_malcois_kingdom
+	}
+	1230.1.1 = {
+		liege = 0
+		holder = centralimperial_aversarinas_aagiokrata_119
+		change_development_level = 6
+	}
+	1240.4.15 = {
+		liege = 0
+		holder = centralimperial_militant_cliques_1
+		government = military_unit_government
+		change_development_level = 7
+	}
+}
+
+#d_herainai = {
+#	475.6.17 = {
+#		holder = centralimperial_aversarinas_aagiokrata_1
+#		liege = k_governorate_malcois_kingdom
+#		government = feudal_government
+#	}
+#	506.3.22 = {
+#		holder = centralimperial_aversarinas_aagiokrata_2
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	528.2.6 = {
+#		holder = centralimperial_aversarinas_aagiokrata_8
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	543.10.9 = {
+#		holder = centralimperial_aversarinas_aagiokrata_10
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	597.4.10 = {
+#		holder = centralimperial_aversarinas_aagiokrata_16
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	606.9.24 = {
+#		holder = centralimperial_aversarinas_aagiokrata_33
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	618.4.17 = {
+#		holder = centralimperial_aversarinas_aagiokrata_13
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	642.10.16 = {
+#		holder = centralimperial_aversarinas_aagiokrata_14
+#		liege = k_governorate_malcois_kingdom
+#	}
+#	1230.1.1 = {
+#		liege = 0
+#		holder = centralimperial_thixanonic_cult_2
+#		change_development_level = 7
+#	}
+#	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+#		de_jure_liege = k_sakc
+#	}
+#}
+#
+#d_pedi = { 
+#	1230.1.1 = {
+#		holder = deresstae_iyrossi_aagiokrata_2
+#		change_development_level = 8
+#	}
+#	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+#		de_jure_liege = k_dlak
+#	}
+#}

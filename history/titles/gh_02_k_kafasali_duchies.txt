@@ -1,0 +1,45 @@
+d_abdenaj = {
+	1200.3.1 = {
+		holder = tahanati_daramarjaratan_7
+		change_development_level = 8
+	}
+	1215.8.11 = {
+		holder = tahanati_daramarjaratan_4
+	}
+	1223.2.17 = {
+		holder = tahanati_daramarjaratan_2
+	}
+	1231.4.6 = {
+		holder = tahanati_daramarjaratan_1
+	}
+}
+d_magodoi = {
+	1200.3.1 = {
+		holder = karana_askevaryaa_5
+		change_development_level = 8
+	}
+	1204.11.16 = {
+		holder = karana_askevaryaa_2
+		liege = k_kafasali
+	}
+	1231.4.6 = {
+		holder = karana_askevaryaa_1
+		liege = 0
+	}
+}
+d_arambdeh = {
+	1200.3.1 = {
+		holder = xokola_vidvaookeyatra_4
+	}
+	1222.7.11 = {
+		holder = xokola_vidvaookeyatra_2
+		change_development_level = 8
+	}
+}
+#d_narozran = {
+#	1250.1.1 = {
+#		holder = xasamdaas_ebohephai_olten_1
+#		liege = k_magiyor		
+#		change_development_level = 12
+#	}
+#}

@@ -1,0 +1,14 @@
+d_al_miwf = {
+	1230.1.1 = {
+		holder = adnanari_badari_1
+		liege = "k_thaliteia"		
+	}
+	1230.1.1 = { change_development_level = 9 }
+}
+d_khekech = {
+	1230.1.1 = {
+		holder = mutsartan_badari_1
+		liege = "k_thaliteia"
+	}
+	1230.1.1 = { change_development_level = 8 }
+}

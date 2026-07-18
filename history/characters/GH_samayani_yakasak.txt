@@ -1,0 +1,42 @@
+﻿samayani_yakasak_1 = {
+	name = "Chanka"
+	religion = "yakasak"
+	culture = "samayani"
+
+	1200.6.6 = {
+		birth = yes
+	}
+}
+
+samayani_yakasak_2 = {
+	name = "Ransara"
+	religion = "corkkattirkana"
+	culture = "samayani"
+
+	1206.5.6 = {
+		birth = yes
+	}
+}
+
+samayani_yakasak_3 = {
+    name = "Akutoni" 
+    female = yes
+
+    religion = yakasak
+    culture = samayani
+
+    sexuality = heterosexual
+
+    trait = sadistic
+    trait = trusting
+    trait = arbitrary
+
+    1218.9.15 = {
+        birth = yes
+        trait = magic_good_2
+    }
+
+    1279.3.27 = {
+        death = { death_reason = death_mysterious }
+    }
+}

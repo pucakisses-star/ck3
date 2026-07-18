@@ -1,0 +1,10 @@
+﻿dawasid_thixanonic_cult_1 = {
+	name = "Uthman"
+	dynasty = dyn_central_empire_20
+	religion = "thixanonic_cult"
+	culture = "dawasid"
+
+	1215.4.12 = {
+		birth = yes
+	}
+}

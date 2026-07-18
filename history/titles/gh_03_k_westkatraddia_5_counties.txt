@@ -1,0 +1,93 @@
+c_westkatraddia_8aa = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_9cc = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1064.6.16 = {
+		holder = apokiakas_dikaynos_1
+	}
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_9dd = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_6bb = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_10ee = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_10dd = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_8dd = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_8gg = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_7aa = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+#c_westkatraddia_6cc = {
+#	1230.1.1 = {
+#		holder = fog_eaters_fogeater_20
+#		government = migratory_government
+#	}
+#}
+#c_westkatraddia_6dd = {
+#	1230.1.1 = {
+#		holder = fog_eaters_fogeater_20
+#		government = migratory_government
+#	}
+#}

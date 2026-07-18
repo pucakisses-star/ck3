@@ -1,0 +1,39 @@
+c_1132 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+
+c_1123 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+
+c_1133 = {
+	1.1.2 = {
+		holder = unsorted_44
+	}
+	200.1.1 = {
+		holder = wasteland
+	}
+}
+c_1113 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+
+c_1143 = {
+	1.1.2 = {
+		holder = unsorted_44
+	}
+	200.1.1 = {
+		holder = wasteland
+	}
+	1230.1.1 = {
+		holder = fog_eaters_fogeater_17
+		government = migratory_government
+	}
+}
+

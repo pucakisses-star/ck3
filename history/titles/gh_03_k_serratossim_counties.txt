@@ -1,0 +1,137 @@
+c_kety = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_1
+	}
+}
+
+c_bylbia = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_2
+	}
+}
+
+c_sidouane = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_3
+	}
+}
+
+c_adymxi = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_4
+	}
+}
+
+c_utitn = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_5
+	}
+}
+
+c_norresos = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_6
+	}
+}
+
+c_magala = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_7
+	}
+}
+
+c_utiz = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_8
+	}
+}
+
+c_malacru = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_9
+	}
+}
+
+c_silgaga = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_10
+	}
+}
+
+c_thapsir = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_11
+	}
+}
+
+c_onozi = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_12
+	}
+}
+
+c_adyxus = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_13
+	}
+}
+
+c_srbtw = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_14
+	}
+}
+
+c_sibyl = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_15
+	}
+}
+
+c_thapoea = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_16
+	}
+}
+
+c_bylbouane = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_17
+	}
+}
+
+c_hipossim = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_18
+	}
+}
+
+c_zirat = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_19
+	}
+}
+
+c_ktagit = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_20
+	}
+}
+
+c_srbaca = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_21
+	}
+}
+
+c_noxa = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_22
+	}
+}
+
+c_lixora = {
+	1250.1.1 = {
+		holder = aslalti_saratarat_23
+	}
+}

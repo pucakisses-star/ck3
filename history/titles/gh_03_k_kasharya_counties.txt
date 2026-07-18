@@ -1,0 +1,182 @@
+c_dabuti = {
+	1251.1.1 = {
+		holder = sarishta_vidvaookeyatra_2
+		liege = d_sundakana
+		change_development_level = 9
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+}
+c_palakot = {
+	1250.8.19 = {
+		holder = vastarnai_vidvaookeyatra_3
+		liege = k_kasharya
+		change_development_level = 9
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+}
+c_cuvagarha = {
+	1237.7.23 = {
+		holder = vastarnai_vidvaookeyatra_9
+	}
+	1253.12.27 = {
+		holder = vastarnai_vidvaookeyatra_1
+		change_development_level = 18
+	}
+}
+c_padintor = {
+	1237.7.23 = {
+		holder = vastarnai_vidvaookeyatra_9
+	}
+	1253.12.27 = {
+		holder = vastarnai_vidvaookeyatra_1
+	}
+}
+c_brakkatratta = {
+	1150.3.2 = {
+		holder = virlani_vidvaookeyatra_2
+		liege = k_kinilam
+	}
+	1199.6.16 = {
+		holder = virlani_vidvaookeyatra_4
+		liege = k_kinilam
+	}
+
+	1248.4.22 = {
+		holder = vaxanaka_vidvaookeyatra_4
+		liege = k_kinilam
+	}
+	1251.1.1 = {
+		holder = easternimperial_aironoian_aagiokrata_26
+		change_development_level = 7
+		government = pirate_government
+		liege = 0
+	}
+}
+c_vindamai = {
+	1251.1.1 = {
+		holder = vastarnai_vidvaookeyatra_8
+		change_development_level = 14
+		government = peasant_republic
+	}
+}
+c_pirodoho = {
+	1251.1.1 = {
+		holder = vastarnai_vidvaookeyatra_2
+		liege = k_kasharya
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+		change_development_level = 12
+	}
+}
+c_noth = {
+	1251.1.1 = {
+		holder = vastarnai_vidvaookeyatra_4
+		liege = d_jhanadahoo
+		change_development_level = 10
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+}
+c_kulasei = {
+	1251.1.1 = {
+		holder = parakh_vidvaookeyatra_1
+		liege = k_kasharya
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+		change_development_level = 7
+	}
+}
+c_kuttapatii = {
+		1250.1.1 = {
+			holder = vaxanaka_vidvaookeyatra_1
+			change_development_level = 12
+		}
+}
+c_sundaga = {
+	1250.1.1 = {
+		holder = vastarnai_vidvaookeyatra_3
+		liege = k_kasharya
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}	
+}
+c_sakhleput = {
+	1250.1.1 = {
+		holder = vastarnai_vidvaookeyatra_6
+		liege = k_kasharya
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}	
+}

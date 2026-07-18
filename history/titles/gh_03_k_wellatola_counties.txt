@@ -1,0 +1,59 @@
+
+c_monergua = {
+	998.3.1 = {
+		holder = saruta_yakasak_1
+		government = pirate_government
+	}
+	1179.8.6 = {
+		holder = ikanita_yakasak_4
+		government = pirate_government
+	}
+	1190.4.5 = {
+		holder = ikanita_yakasak_5
+		government = pirate_government
+	}
+	1206.3.7 = {
+		holder = ikanita_yakasak_1
+		government = pirate_government
+	}
+	1259.6.16 = {
+		holder = ikanita_yakasak_7
+	}
+	1276.9.18 = {
+		holder = ikanita_yakasak_11
+	}
+	1287.1.3 = {
+		holder = ikanita_yakasak_12
+	}
+}
+c_badulochich = {
+	1247.2.7 = {
+		holder = ikanita_yakasak_2
+		liege = k_wellatola
+		change_development_level = 10
+		government = pirate_government		
+	}
+	1273.2.21 = {
+		holder = ikanita_yakasak_15
+	}
+	1297.12.19 = {
+		holder = ikanita_yakasak_17
+	}
+}
+c_nuwarachi = {
+	1251.4.24 = {
+		holder = ikanita_yakasak_3
+		liege = k_wellatola
+		change_development_level = 8
+		government = pirate_government		
+	}
+	1259.10.3 = {
+		holder = ikanita_yakasak_7
+	}
+	1276.9.18 = {
+		holder = ikanita_yakasak_11
+	}
+	1280.6.8 = {
+		holder = deraani_yakasak_4
+	}
+}

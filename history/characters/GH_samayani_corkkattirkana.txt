@@ -1,0 +1,33 @@
+﻿samayani_corkkattirkana_1 = {
+	name = "Namal"
+	religion = "corkkattirkana"
+	culture = "samayani"
+
+	1208.3.3 = {
+		birth = yes
+	}
+
+	1228.3.3 = {
+		trait = chaste
+		trait = gregarious
+		trait = arrogant
+	}
+
+	1240.8.17 = {
+		trait = eunuch_1 
+	}
+
+	1267.6.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+samayani_corkkattirkana_2 = {
+	name = "Inaina"
+	religion = "corkkattirkana"
+	culture = "samayani"
+
+	1252.8.10 = {
+		birth = yes
+	}
+}

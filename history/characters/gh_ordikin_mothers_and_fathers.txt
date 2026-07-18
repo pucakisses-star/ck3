@@ -1,0 +1,249 @@
+﻿ordikin_mothers_and_fathers_1 = {
+	name = "Cosauc"
+	religion = "mothers_and_fathers"
+	culture = "ordikin"
+
+	1255.2.1 = {
+		birth = yes
+	}
+
+	1275.1.1 = {
+		trait = deceitful
+		trait = wrathful
+		trait = zealous
+		trait = education_martial_2
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:day_court }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+
+	1284.8.11 = {
+		death = { death_reason = death_execution killer = irmionoth_sjalvolki_18 }
+	}
+}
+
+ordikin_mothers_and_fathers_2 = {
+	name = "Eulast"
+	religion = "mothers_and_fathers"
+	culture = "ordikin"
+	female = yes
+
+	1237.3.20 = {
+		birth = yes
+		trait = beauty_good_1
+	}
+	1296.3.14 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+ordikin_mothers_and_fathers_3 = {
+	name = "Vylreu"
+	religion = "mothers_and_fathers"
+	culture = "ordikin"
+
+	1263.3.20 = {
+		birth = yes
+		trait = beauty_good_1
+	}
+
+	1283.1.1 = {
+		trait = deceitful
+		trait = lustful
+		trait = gregarious
+		trait = education_intrigue_3
+	}
+}
+
+ordikin_mothers_and_fathers_4 = {
+	name = "Avoreu"
+	religion = "mothers_and_fathers"
+	culture = "ordikin"
+
+	1259.9.6 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1279.1.1 = {
+		trait = trusting
+		trait = craven
+		trait = just
+		trait = education_diplomacy_2
+	}
+}
+
+
+ordikin_mothers_and_fathers_5 = {
+	name = "Taolna"
+	religion = "mothers_and_fathers"
+	culture = "ordikin"
+	female = yes
+	
+	1203.2.21 = {
+		birth = yes
+	}
+
+	1236.11.4 = {
+		death = { death_reason = death_ill }
+	}
+}
+
+ordikin_mothers_and_fathers_6 = {
+	name = "Vyceu"
+	religion = "mothers_and_fathers"
+	culture = "ordikin"
+
+	1218.9.11 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1238.9.11 = {
+		trait = education_arcana_3
+		trait = eccentric
+		trait = patient
+		trait = shy
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:night_court }
+			set_variable = { name = historical_magic_school_min_spells value = 5 }
+		}
+	}
+
+	1254.1.1 = {
+		effect = { add_character_flag = holdover_in_old_lands } 
+	}
+
+	1298.1.1 = {
+		trait = lifestyle_herbalist
+	}
+}
+
+ordikin_mothers_and_fathers_7 = {
+	name = "Avotteu"
+	religion = "mothers_and_fathers"
+	culture = "ordikin"
+
+	1248.1.11 = {
+		birth = yes
+	}
+}
+
+ordikin_mothers_and_fathers_8 = {
+	name = "Coseu"
+	religion = "mothers_and_fathers"
+	culture = ordikin
+
+	1254.11.6 = {
+		birth = yes
+	}
+
+	1285.4.2 = {
+		death = { death_reason = death_battle killer = urdermantern_lifepath_10 }
+	}
+}
+
+ordikin_mothers_and_fathers_9 = {
+	name = "Ettoelech"
+	religion = mothers_and_fathers
+	culture = ordikin
+
+	1237.10.2 = {
+		birth = yes
+		trait = wheezing
+	}
+
+	1254.1.1 = {
+		effect = { add_character_flag = holdover_in_old_lands } 
+	}
+
+	1292.7.16 = {
+		death = { death_reason = death_consumption }
+	}
+}
+
+ordikin_mothers_and_fathers_10 = {
+	name = "Ettoelech"
+	religion = mothers_and_fathers
+	culture = ordikin
+
+	father = ordikin_mothers_and_fathers_9 
+	
+	1276.7.30 = {
+		birth = yes
+		trait = wheezing
+	}
+
+	1296.1.1 = {
+		trait = education_intrigue_3
+		trait = fickle
+		trait = paranoid
+		trait = content
+		trait = contrite
+	}
+}
+
+ordikin_mothers_and_fathers_11 = {
+	name = "Ruelle"
+	religion = mothers_and_fathers
+	culture = ordikin
+	female = yes
+
+	1256.3.17 = {
+		birth = yes
+		trait = physique_good_2
+	}
+	1276.3.17 = {
+		trait = wrathful
+		trait = stubborn
+		trait = gregarious
+		trait = education_martial_2
+		trait = berserker
+	}
+}
+
+ordikin_mothers_and_fathers_12 = {
+	name = "Gyvreu"
+	religion = mothers_and_fathers
+	culture = ordikin
+
+	1257.11.3 = {
+		birth = yes
+	}
+	1277.11.3 = {
+		trait = content
+		trait = just
+		trait = patient
+		trait = education_diplomacy_4
+	}
+}
+
+ordikin_mothers_and_fathers_13 = {
+	name = "Gyvreu"
+	religion = mothers_and_fathers
+	culture = ordikin
+
+	1259.4.30 = {
+		birth = yes
+	}
+}
+
+ordikin_mothers_and_fathers_14 = {
+	name = "Vylreu"
+	religion = mothers_and_fathers
+	culture = ordikin
+
+	1216.6.24 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1254.1.1 = {
+		effect = { add_character_flag = holdover_in_old_lands } 
+	}
+
+	1270.3.2 = {
+		death = { death_reason = death_natural_causes }
+	}
+}

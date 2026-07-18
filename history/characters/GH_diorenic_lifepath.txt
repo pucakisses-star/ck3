@@ -1,0 +1,43 @@
+﻿diorenic_lifepath_1 = {
+	name = "Aleardo"
+	religion = lifepath
+	culture = diorenic
+	
+	1206.3.19 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1218.1.1 = {
+		trait = honest
+		trait = stubborn
+		trait = trusting
+	}
+
+	1222.3.19 = {
+		trait = education_diplomacy_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+diorenic_lifepath_2 = {
+	name = "Ubaldo"
+	religion = lifepath
+	culture = diorenic
+	1212.5.20 = {
+		birth = yes
+	}
+}
+
+diorenic_lifepath_3 = {
+	name = "Sesto"
+	religion = lifepath
+	culture = diorenic
+	1223.9.13 = {
+		birth = yes
+	}
+}

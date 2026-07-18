@@ -1,0 +1,256 @@
+127 = {
+	culture = ikanita
+	religion = yakasak
+	holding = castle_holding
+}
+
+854 = {
+	culture = iafarana
+	religion = varodaism
+	holding = castle_holding
+}
+
+917 = {
+	culture = iafarana
+	religion = varodaism
+	holding = castle_holding
+}
+
+
+1764 = {
+	holding = castle_holding
+}
+
+1839 = {
+	culture = iafarana
+	religion = varodaism
+	holding = castle_holding
+}
+
+1870 = {
+	holding = church_holding
+}
+
+1900 = {
+	holding = church_holding
+}
+
+
+2033 = {
+	culture = iafarana
+	religion = varodaism
+	holding = castle_holding
+}
+
+2089 = {
+	culture = hokanta
+	religion = varodaism
+	holding = castle_holding
+}
+
+
+2114 = {
+	holding = city_holding
+}
+
+2125 = {
+		
+}
+
+2182 = {
+	culture = hunawi
+	religion = varodaism
+	holding = castle_holding
+}
+
+2235 = {
+	culture = hunawi
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+
+
+2269 = {
+	culture = hokanta
+	religion = varodaism
+	holding = castle_holding
+}
+
+
+2857 = {
+	holding = castle_holding
+}
+
+3340 = {
+	culture = prapataro
+	religion = asritayka
+	holding = castle_holding
+}
+
+
+4409 = {
+	holding = church_holding
+}
+
+4414 = {
+	holding = church_holding
+}
+
+4421 = {
+	culture = ikanita
+	religion = yakasak
+	holding = castle_holding
+}
+
+4427 = {
+	holding = none
+}
+
+4442 = {
+	culture = prapataro
+	religion = asritayka
+	holding = castle_holding
+}
+
+4443 = {
+	holding = none
+}
+
+4447 = {
+	holding = none
+}
+
+4455 = {
+	culture = ikanita
+	religion = yakasak
+	holding = castle_holding
+	
+	1200.1.1 = {
+		special_building = 01_paccai_mines
+	}	
+}
+
+4461 = {
+	culture = hokanta
+	religion = varodaism
+	holding = castle_holding
+}
+
+4469 = {
+	culture = ikanita
+	religion = yakasak
+	holding = castle_holding
+}
+
+
+4510 = {
+	culture = prapataro
+	religion = asritayka
+	holding = castle_holding
+}
+
+4512 = {
+	culture = garami
+	religion = varodaism
+	holding = castle_holding
+}
+
+4516 = {
+	holding = church_holding
+}
+
+4522 = {
+	holding = none
+}
+
+
+4525 = {
+	holding = none
+}
+
+
+4527 = {
+	culture = saruta
+	religion = varodaism
+	holding = castle_holding
+}
+
+4533 = {
+	holding = castle_holding
+}
+
+4534 = {
+	holding = church_holding
+}
+
+4535 = {
+	culture = zalaka
+	religion = yakasak
+	holding = castle_holding
+}
+
+4537 = {
+	culture = garami
+	religion = varodaism
+	holding = castle_holding
+}
+
+4538 = {
+	holding = city_holding
+}
+
+
+
+4547 = {
+	holding = church_holding
+}
+
+4551 = {
+	holding = city_holding
+}
+
+4552 = {
+	culture = saruta
+	religion = varodaism
+	holding = castle_holding
+}
+
+
+
+4575 = {
+	holding = church_holding
+}
+
+4612 = {
+	holding = church_holding
+}
+
+5000 = {
+	holding = none
+}
+
+5331 = {
+	culture = tehaina
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+5379 = {
+	culture = tehaina
+	religion = varodaism
+	holding = castle_holding
+}
+
+6574 = {
+	culture = tehaina
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+
+8702 = {
+	culture = hokanta
+	religion = vidvaookeyatra
+	holding = castle_holding
+}
+

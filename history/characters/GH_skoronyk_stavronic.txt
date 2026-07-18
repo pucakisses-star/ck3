@@ -1,0 +1,16 @@
+﻿skoronyk_stavronic_1 = {
+	name = "Jakusz"
+	religion = stavronic
+	culture = skoronyk
+	1200.9.5 = {
+		birth = yes
+	}
+	1212.9.5 = {
+		trait = patient
+		trait = calm
+		trait = callous
+	}
+	1216.9.5 = {
+		trait = education_learning_3
+	}
+}

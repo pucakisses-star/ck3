@@ -1,0 +1,427 @@
+﻿#d_darundel
+thyssae_mahndayana_1 = {
+	name = "Mazdavireh"
+	dna = thyssae_mahndayana_1
+	religion = "mahndayana"
+	culture = "thyssae"
+	dynasty = dyn_amsari_5
+	female = yes
+
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_mena_02
+		}
+	}
+
+	1225.5.29 = {
+		birth = yes
+		trait = magic_good_3
+		effect = {
+			add_pressed_claim = title:d_sar_dasht
+		}
+	}
+
+	1237.1.1 = {
+		trait = ambitious
+		trait = arbitrary
+		trait = wrathful	
+	}
+
+	1241.5.29 = {
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:silentspeak }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+}
+
+thyssae_mahndayana_2 = {
+	name = "Gholshan"
+		dna = thyssae_mahndayana_2
+	religion = "mahndayana"
+	culture = "thyssae"
+	dynasty = dyn_amsari_10
+	female = yes
+	trait = diligent
+	trait = patient
+	trait = stubborn
+	trait = education_stewardship_3
+	disallow_random_traits = yes
+
+	1222.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+}
+
+#d_kulisarak
+thyssae_mahndayana_3 = {
+	name = "Atousa"
+	dna = thyssae_mahndayana_3
+	religion = "mahndayana"
+	culture = "thyssae"
+	dynasty = dyn_amsari_7
+	father = thyssae_mahndayana_9
+	female = yes
+	trait = patient
+	trait = trusting
+	trait = content
+	trait = beauty_good_1
+	trait = education_diplomacy_2
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp2_iberian_muslim_02
+		}
+	}
+
+	1215.1.1 = {
+		birth = yes
+	}
+}
+
+#d_sar_dasht
+thyssae_mahndayana_4 = {
+	name = "Shirin"
+	religion = "mahndayana"
+	culture = "thyssae"
+	dynasty = dyn_amsari_12
+	female = yes
+	trait = beauty_good_3
+	trait = ambitious
+	trait = zealous
+	trait = stubborn
+	trait = education_martial_3
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_mena_02
+		}
+	}
+
+	1233.1.1 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 2 }
+		}
+	}
+	1252.3.19 = {
+		give_nickname = nick_chariotbreaker
+	}
+}
+
+thyssae_mahndayana_5 = {
+	name = "Dinbanu"
+	dna = thyssae_mahndayana_5
+	religion = "mahndayana"
+	culture = "thyssae"
+	dynasty = dyn_amsari_4
+	female = yes
+
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_mena_01
+		}
+	}
+
+	1218.2.15 = {
+		birth = yes
+		trait = magic_good_2
+		effect = {
+			add_pressed_claim = title:d_sar_dasht
+			add_pressed_claim = title:d_darundel
+			#add_pressed_claim = title:d_dejkuh
+			add_pressed_claim = title:d_khvoshinane_sofla
+			add_pressed_claim = title:k_chupanlar
+		}
+	}
+
+	1230.1.1 = {
+		trait = zealous
+		trait = chaste
+		trait = patient	
+	}
+
+	1234.2.15 = {
+		trait = education_learning_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:silentspeak }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+}
+
+#c_kani_tarn
+thyssae_mahndayana_6 = {
+	name = "Nariman"
+	religion = "mahndayana"
+	culture = "thyssae"
+
+	1221.12.12 = {
+		birth = yes
+	}
+}
+
+#c_zargar
+thyssae_mahndayana_7 = {
+	name = "Kambiz"
+	religion = "tirazhidar"
+	culture = "thyssae"
+
+	1201.2.25 = {
+		birth = yes
+	}
+}
+
+#c_parum
+thyssae_mahndayana_8 = {
+	name = "Goshtasb"
+	religion = "mahndayana"
+	culture = "thyssae"
+
+	1241.7.18 = {
+		birth = yes
+	}
+}
+
+thyssae_mahndayana_9 = {
+	name = "Godarz"
+	religion = "mahndayana"
+	culture = "thyssae"
+	dynasty = dyn_amsari_7
+
+	1182.3.1 = {
+		birth = yes
+	}
+	1234.4.8 = {
+		death = yes
+	}
+}
+
+thyssae_mahndayana_10 = {
+	name = "Bahare"
+	religion = "mahndayana"
+	culture = "thyssae"
+	female = yes
+
+	1188.3.1 = {
+		birth = yes
+	}
+	1261.4.8 = {
+		death = yes
+	}
+}
+
+thyssae_mahndayana_11 = {
+	name = "Shahin"
+	religion = "mahndayana"
+	culture = "thyssae"
+	dynasty = dyn_amsari_7
+	father = thyssae_mahndayana_9
+	mother = thyssae_mahndayana_10
+
+	1212.7.18 = {
+		birth = yes
+	}
+	1269.2.11 = {
+		death = yes
+	}
+}
+
+
+
+
+
+thyssae_mahndayana_12 = {
+	name = "Jahangir"
+	religion = "mahndayana"
+	culture = "thyssae"
+
+	1241.7.18 = {
+		birth = yes
+	}
+	1246.7.18 = {
+		death = yes
+	}
+}
+
+thyssae_mahndayana_13 = {
+	name = "Yasaman"
+	religion = "mahndayana"
+	culture = "thyssae"
+	female = yes
+	1100.7.18 = {
+		birth = yes
+	}
+	1155.7.4 = {
+		death = yes
+	}
+}
+
+thyssae_mahndayana_14 = {
+	name = "Setar"
+	religion = "mahndayana"
+	culture = "thyssae"
+	mother = thyssae_mahndayana_13
+	female = yes
+	1126.1.29 = {
+		birth = yes
+	}
+	1174.9.22 = {
+		death = yes
+	}
+}
+
+thyssae_mahndayana_15 = {
+	name = "Zahak"
+	religion = "mahndayana"
+	culture = "thyssae"
+	mother = thyssae_mahndayana_14
+	
+	1152.9.8 = {
+		birth = yes
+	}
+	1196.7.11 = {
+		death = yes
+	}
+}
+
+thyssae_mahndayana_16 = {
+	name = "Humayun"
+	religion = "mahndayana"
+	culture = "thyssae"
+	father = thyssae_mahndayana_15
+
+	1184.2.1 = {
+		birth = yes
+	}
+	1209.4.12 = {
+		death = yes
+	}
+}
+
+thyssae_mahndayana_17 = {
+	name = "Ardivusura"
+	religion = "mahndayana"
+	culture = "thyssae"
+	female = yes
+	sexuality = bisexual
+	dynasty = dyn_thyssae_1
+	
+	trait = diligent
+	trait = brave
+	trait = patient
+	trait = education_martial_4
+	trait = intellect_good_1
+	trait = organizer
+
+	731.2.1 = {
+		birth = yes
+	}
+
+	748.2.16 = {
+		learn_language = language_amsari
+		learn_language = language_hixite
+		learn_language = language_sarth
+	}
+
+	751.2.16 = {
+		give_nickname = nick_kemsari_slayer
+	}
+	
+	794.7.30 = {
+		death = yes
+	}
+}
+
+thyssae_mahndayana_18 = {
+	name = "Azimir"
+	religion = "mahndayana"
+	culture = "thyssae"
+	female = yes
+	mother = thyssae_mahndayana_17
+	dynasty = dyn_thyssae_1
+
+	752.2.1 = {
+		birth = yes
+	}
+	
+	839.2.22 = {
+		death = yes
+	}
+}
+
+thyssae_mahndayana_19 = {
+	name = "Orkeith"
+	religion = "mahndayana"
+	culture = "thyssae"
+	mother = thyssae_mahndayana_18
+	dynasty = dyn_thyssae_1
+
+	801.2.1 = {
+		birth = yes
+	}
+	
+	876.2.22 = {
+		death = yes
+	}
+}
+
+thyssae_mahndayana_20 = {
+	name = "Azadeh"
+	religion = "mahndayana"
+	culture = "thyssae"
+	dynasty = dyn_thyssae_1
+
+	909.1.1 = {
+		birth = yes
+	}
+	
+	979.1.1 = {
+		death = yes
+	}
+}
+
+thyssae_mahndayana_21 = {
+	name = "Gholshan"
+	religion = "mahndayana"
+	culture = "thyssae"
+	female = yes
+	father = thyssae_mahndayana_20
+	dynasty = dyn_thyssae_1
+
+	951.1.1 = {
+		birth = yes
+	}
+	
+	1002.1.1 = {
+		death = yes
+	}
+}
+
+thyssae_mahndayana_22 = {
+	name = "Hurmat"
+	religion = "mahndayana"
+	culture = "thyssae"
+	mother = thyssae_mahndayana_21
+	dynasty = dyn_thyssae_1
+
+	987.2.1 = {
+		birth = yes
+	}
+	
+	1006.1.1 = {
+		death = yes
+	}
+}

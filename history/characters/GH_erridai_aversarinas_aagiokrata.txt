@@ -1,0 +1,48 @@
+﻿erridai_aversarinas_aagiokrata_1 = { # Vounill priest, helps institute the 100 Year Truce with Cenware, protecting the Scarlet Chosen from warfare by law for a century 
+	name = "Meletios"
+	religion = "aversarinas_aagiokrata"
+	culture = "erridai"
+
+	1231.1.1 = {
+		birth = yes
+	}
+
+	1271.3.1 = {
+		give_nickname = nick_the_peacemaker
+	}
+
+	1293.1.2 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+erridai_aversarinas_aagiokrata_2 = {
+	name = "Kallistos"
+	religion = "aversarinas_aagiokrata"
+	culture = "erridai"
+
+	1229.1.1 = {
+		birth = yes
+	}
+
+	1292.1.15 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+erridai_aversarinas_aagiokrata_3 = { # Add 100 Year Truce Modifier
+	name = "Qamphrion"
+	religion = aversarinas_aagiokrata
+	culture = erridai
+
+	1269.3.10 = {
+		birth = yes
+	}
+
+	1289.3.10 = {
+		trait = patient
+		trait = just
+		trait = diligent
+		trait = education_diplomacy_3
+	}
+}

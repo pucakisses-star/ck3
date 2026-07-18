@@ -1,0 +1,36 @@
+﻿symvolix_theryionist_1 = {
+    name = "Eos"
+    religion = theryionist
+    culture = symvolix
+    1229.11.4 = {
+        birth = yes
+    }
+    1241.11.4 = {
+        trait = patient
+        trait = cynical
+        trait = lazy
+    }
+    1245.11.4 = {
+        trait = education_diplomacy_2
+    }
+}
+
+symvolix_theryionist_2 = {
+	name = "Aelitios"
+	religion = "arthenaxian"
+	culture = "symvolix"
+
+	1220.11.1 = {
+		birth = yes
+	}
+}
+
+symvolix_theryionist_3 = {
+    name = "Clytomedes"
+    religion = "arthenaxian"
+    culture = "symvolix"
+
+    1213.2.6 = {
+        birth = yes
+    }
+}

@@ -1,0 +1,12 @@
+﻿centralimperial_militant_cliques_1 = { # Legio IV Elenos
+	name = "Pylartes"
+	dynasty = dyn_central_empire_15
+	religion = "militant_cliques"
+	culture = "centralimperial"
+	trait = gh_legon
+	trait = education_martial_3
+
+	1215.4.12 = {
+		birth = yes
+	}
+}

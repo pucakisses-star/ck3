@@ -1,0 +1,42 @@
+﻿easternimperial_forgotten_1 = { # Osethos, member of Kleiphos' sect
+	name = "Osethos"
+	religion = aversarinas_aagiokrata
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	dna = osethos
+
+	martial = 7
+	diplomacy = 7
+	intrigue = 9
+	stewardship = 5
+	learning = 6
+	prowess = 8
+
+	1055.5.2 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+
+	1067.1.1 = {
+		trait = greedy
+		trait = zealous
+		trait = calm
+	}
+
+	1071.5.2 = {
+		trait = education_diplomacy_3
+	}
+
+	1092.11.3 = {
+		trait = depressed_1
+	}
+
+	1092.12.17 = {
+		religion = forgotten
+		death = {
+			death_reason = death_magic_fire
+			killer = southernimperial_aversarinas_aagiokrata_109
+		}
+	}
+}

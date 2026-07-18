@@ -1,0 +1,56 @@
+﻿astilik_astiliak_1 = { # Astiliak revolt khan
+	name = "Asarei"
+	religion = astiliak
+	culture = astilik
+
+	1224.8.8 = {
+		birth = yes
+	}
+}
+
+astilik_astiliak_2 = { # Child emperor that got whooped by ERTOMAX
+	name = "Haldita"
+	religion = astiliak
+	culture = astilik
+
+	175.6.20 = {
+		birth = yes
+	}
+	192.5.11 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+astilik_astiliak_3 = { # An Astilik warrior during the Warmic Wars
+	name = "Atamaita"
+	religion = astiliak
+	culture = astilik
+
+	prowess = 10
+
+	10.10.10 = {
+		birth = yes
+		trait = physique_good_2
+		trait = magic_good_4
+	}
+	26.10.10 = {
+		trait = vengeful
+		trait = stubborn
+		trait = brave
+		trait = education_martial_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:auroral_cycle }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+	36.10.10 = {
+		trait = scarred
+		trait = depressed_1
+		trait = gh_historical_blademaster_3
+		give_nickname = nick_the_moonwender
+	}
+	86.3.27 = {
+		death = { death_reason = death_old_age }
+	}
+}

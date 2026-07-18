@@ -1,0 +1,160 @@
+﻿object={
+	name="Khand rock 01"
+	render_pass=Map
+	clamp_to_water_level=no
+	generated_content=no
+	layer="building_layer"
+	pdxmesh="rock_khand_01_mesh"
+	count=0
+}
+object={
+	name="Khand rock 02"
+	render_pass=Map
+	clamp_to_water_level=no
+	generated_content=no
+	layer="building_layer"
+	pdxmesh="rock_khand_02_mesh"
+	count=0
+}
+object={
+	name="Khand rock 03"
+	render_pass=Map
+	clamp_to_water_level=no
+	generated_content=no
+	layer="building_layer"
+	pdxmesh="rock_khand_03_mesh"
+	count=0
+}
+object={
+	name="Khand rock 04"
+	render_pass=Map
+	clamp_to_water_level=no
+	generated_content=no
+	layer="building_layer"
+	pdxmesh="rock_khand_04_mesh"
+	count=0
+}
+object={
+	name="Khand rock 06"
+	render_pass=Map
+	clamp_to_water_level=no
+	generated_content=no
+	layer="building_layer"
+	pdxmesh="rock_khand_06_mesh"
+	count=0
+}
+object={
+	name="Khand rock 07"
+	render_pass=Map
+	clamp_to_water_level=no
+	generated_content=no
+	layer="building_layer"
+	pdxmesh="rock_khand_07_mesh"
+	count=0
+}
+object={
+	name="Khand rock 08"
+	render_pass=Map
+	clamp_to_water_level=no
+	generated_content=no
+	layer="building_layer"
+	pdxmesh="rock_khand_08_mesh"
+	count=0
+}
+object={
+	name="Khand rock 09"
+	render_pass=Map
+	clamp_to_water_level=no
+	generated_content=no
+	layer="building_layer"
+	pdxmesh="rock_khand_09_mesh"
+	count=0
+}
+object={
+	name="Khand rock 10"
+	render_pass=Map
+	clamp_to_water_level=no
+	generated_content=no
+	layer="building_layer"
+	pdxmesh="rock_khand_10_mesh"
+	count=0
+}
+object={
+	name="Khand rock 11"
+	render_pass=Map
+	clamp_to_water_level=no
+	generated_content=no
+	layer="building_layer"
+	pdxmesh="rock_khand_11_mesh"
+	count=0
+}
+object={
+	name="mountain 01 snow"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="building_layer"
+	pdxmesh="mountain_01_mesh"
+	count=1
+	transform="3008.555176 0.000000 2430.358887 0.000000 0.456394 0.000000 0.889778 1.000000 1.000000 1.000000
+"}
+object={
+	name="mountain 02 snow"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="building_layer"
+	pdxmesh="mountain_02_mesh"
+	count=3
+	transform="1466.299194 0.000000 1688.590942 0.000000 -0.997911 0.000000 -0.064608 1.000000 1.000000 1.000000
+5333.267090 0.000000 1145.089233 0.000000 -0.942012 0.000000 0.335579 1.280078 1.280078 1.280078
+3008.265625 0.000000 2412.845215 0.000000 -0.856165 0.000000 0.516702 1.000000 1.000000 1.000000
+"}
+object={
+	name="mountain 03 snow"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="building_layer"
+	pdxmesh="mountain_03_mesh"
+	count=1
+	transform="3006.835938 0.000000 2402.044922 0.000000 0.040089 0.000000 0.999196 0.875879 0.875879 0.875879
+"}
+object={
+	name="mountain 04"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="building_layer"
+	pdxmesh="mountain_04_mesh"
+	count=6
+	transform="2950.574707 0.000000 2185.543213 0.000000 0.000000 0.000000 1.000000 1.000000 1.000000 1.000000
+2966.325928 0.000000 2127.111816 0.000000 0.794221 0.000000 0.607629 1.000000 1.000000 1.000000
+2943.971191 0.000000 2147.979492 0.000000 0.951513 0.000000 0.307608 1.000000 1.000000 1.000000
+2790.641602 0.000000 2268.328369 0.000000 -0.618769 0.000000 0.785573 1.000000 1.000000 1.000000
+2978.994385 0.000000 2448.411865 0.000000 0.114191 0.000000 0.993459 0.398003 0.398003 0.398003
+3002.495605 0.000000 2420.489746 0.000000 -0.775209 0.000000 -0.631705 0.676349 0.676349 0.676349
+"}
+object={
+	name="mountain 05"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="building_layer"
+	pdxmesh="mountain_05_mesh"
+	count=4
+	transform="2961.269043 0.000000 2174.645508 0.000000 0.347543 0.000000 0.937664 1.000000 1.000000 1.000000
+2892.059814 0.000000 2197.244629 0.000000 -0.051339 0.000000 0.998681 1.000000 1.000000 1.000000
+3046.462402 0.000000 2174.021240 0.000000 0.304039 0.000000 0.952660 1.000000 1.000000 1.000000
+2987.601562 0.000000 2455.982178 0.000000 -0.340380 0.000000 0.940288 0.773896 0.773896 0.773896
+"}
+object={
+	name="mountain 06"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="building_layer"
+	pdxmesh="mountain_06_mesh"
+	count=1
+	transform="2931.819092 0.000000 2165.956055 0.000000 -0.519317 0.000000 0.854582 1.000000 1.000000 1.000000
+"}

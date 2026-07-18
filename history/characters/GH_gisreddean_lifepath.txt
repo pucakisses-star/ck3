@@ -1,0 +1,673 @@
+﻿gisreddean_lifepath_1 = { # Marcher Anti-Magi Magi
+	name = "Mardenic"
+	religion = "lifepath"
+	culture = "gisreddean"
+
+	1214.3.21 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1226.1.1 = {
+		trait = cynical
+		trait = brave
+		trait = patient
+	}
+
+	1230.3.21 = {
+		trait = order_member
+		trait = way_of_crows_follower
+		trait = education_arcana_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+
+	1253.11.2 = {
+		death = yes
+	}
+}
+
+# Lean den va Calmenson, enigmatic duke of Grande Gisredde
+gisreddean_lifepath_2 = {
+	name = "Lean"
+	dna = gisreddean_lifepath_2
+	dynasty = dyn_marcher_3
+	religion = "lifepath"
+	culture = "gisreddean"
+	diplomacy = 5
+	martial = 5
+	intrigue = 3
+	stewardship = 6
+	learning = 6
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_western_02
+			custom_hair = male_hair_fp2_iberian_muslim_01
+		}
+	}
+
+	1221.11.4 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 3 }
+		}
+	}
+	father = marcher_1002 #Boevel den va Calmenson
+	trait = education_learning_1
+	trait = trusting
+	trait = fickle
+	trait = content
+}
+
+marcher_1002 = {
+	name = "Boevel" # Boevel den va Calmenson
+	dna = marcher_1002
+	dynasty = dyn_marcher_3
+	religion = "lifepath"
+	culture = "gisreddean"
+
+	mother = gisreddan_lifepath_16
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_09
+			custom_beards = male_beard_western_03
+		}
+	}
+
+	1179.5.14 = {
+		birth = yes
+	}
+
+	1245.12.11 = {
+		death = yes
+	}
+	trait = education_diplomacy_4
+	trait = ambitious
+	trait = deceitful
+	trait = diligent
+	trait = shrewd
+	trait = diplomat
+	diplomacy = 9
+	martial = 3
+	intrigue = 8
+	stewardship = 9
+	learning = 4
+}
+
+# Gaweł den va Sobycarz, descended from Oejeynican refugees in Gisredde
+# recently elected chancellor at the front of the craftsmen and middle class
+gisreddean_lifepath_3 = {
+	name = "Gavel"
+	dna = gisreddean_lifepath_3
+	dynasty = dyn_marcher_4
+	religion = "lifepath"
+	culture = "gisreddean"
+
+	
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_fp2_iberian_christian_01
+			custom_hair = male_hair_fp1_07
+		}
+	}
+
+	1211.3.13 = {
+		birth = yes
+	}
+	trait = education_diplomacy_2
+	trait = honest
+	trait = paranoid
+	trait = gregarious
+	diplomacy = 6
+	martial = 4
+	intrigue = 6
+	stewardship = 8
+	learning = 4
+}
+
+gisreddan_lifepath_4 ={ # Court Magi of Gavel in 1254
+	name = "Aresinde"
+	female = yes
+	religion = "lifepath"
+	culture = "gisreddean"
+
+	1214.11.2 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1226.1.1 = {
+		trait = ambitious
+		trait = fickle
+		trait = brave	
+	}
+
+	1230.11.2 = {
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:illuminated_order_of_holy_principles }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1254.1.1 = {
+		employer = gisreddean_lifepath_3
+		give_council_position = councillor_court_magi
+	}
+}
+
+gisreddan_lifepath_5 = { # Ayr den va Seychund, led the Coup of the Wayfathers
+	name = "Ayr"
+	dna = ayr
+	dynasty = dyn_marcher_29
+	religion = "lifepath"
+	culture = "gisreddean"
+	disallow_random_traits = yes
+	
+	martial = 3
+	diplomacy = 5
+	stewardship = 5
+	intrigue = 2
+	learning = 8
+	prowess = 5
+
+	727.2.22 = {
+		birth = yes
+	}
+
+	729.1.1 = {
+		trait = zealous
+		trait = ambitious
+		trait = greedy
+	}
+
+	733.2.22 = {
+		trait = education_learning_3
+		trait = way_of_justice_follower
+	}
+
+	790.6.27 = {
+		death = {
+			death_reason = death_assassination
+		}
+	}
+}
+
+gisreddan_lifepath_6 = { # Chancellor Perrit of Peti Gisredde, slain by High King Thamean
+	name = "Perrit"
+	dna = perrit
+	religion = "lifepath"
+	culture = "gisreddean"
+	disallow_random_traits = yes
+	
+	martial = 3
+	diplomacy = 7
+	stewardship = 6
+	intrigue = 2
+	learning = 6
+	prowess = 8
+
+	832.11.30 = {
+		birth = yes
+	}
+
+	844.1.1 = {
+		trait = fickle
+		trait = ambitious
+		trait = greedy
+	}
+
+	848.11.30 = {
+		trait = education_diplomacy_4
+		trait = way_of_coins_follower
+	}
+
+	878.3.7 = {
+		death = {
+			death_reason = death_execution
+			killer = voyagen_lifepath_32 # Thamean
+		}
+	}
+}
+
+gisreddan_lifepath_7 = { # Viycon Calmenson, first Duke of Grande Gisredde
+	name = "Viycon"
+	dna = viycon
+	religion = "lifepath"
+	culture = "gisreddean"
+	dynasty = dyn_marcher_3
+	disallow_random_traits = yes
+
+	martial = 8
+	diplomacy = 5
+	stewardship = 8
+	intrigue = 6
+	learning = 7
+	prowess = 6
+
+	897.6.11 = {
+		birth = yes
+		trait = intellect_good_2
+	}
+
+	909.1.1 = {
+		trait = generous
+		trait = ambitious
+		trait = diligent
+	}
+
+	913.6.11 = {
+		trait = education_stewardship_4
+		trait = way_of_crowns_follower
+		trait = architect
+	}
+
+	967.7.30 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+gisreddan_lifepath_8 = { # Chancellor Kourvad of Peti Gisredde, declared a Waysaint upon his death
+	name = "Kourvad"
+	religion = "lifepath"
+	culture = "gisreddean"
+	disallow_random_traits = yes
+
+	martial = 3
+	diplomacy = 7
+	stewardship = 2
+	intrigue = 6
+	learning = 8
+	prowess = 1
+
+	943.10.1 = {
+		birth = yes
+	}
+
+	955.1.1 = {
+		trait = cynical
+		trait = greedy
+		trait = arrogant
+	}
+
+	959.10.1 = {
+		trait = education_intrigue_3
+		trait = way_of_coins_follower
+	}
+
+	1004.3.4 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+gisreddan_lifepath_9 = { # Chancellor Maywait of Peti Gisredde, coined the term of the era 'Glorious Gisredde'
+	name = "Maywait"
+	dna = maywait
+	religion = "lifepath"
+	culture = "gisreddean"
+	disallow_random_traits = yes
+
+	martial = 7
+	diplomacy = 3
+	stewardship = 6
+	intrigue = 2
+	learning = 7
+	prowess = 4
+
+	963.12.25 = {
+		birth = yes
+	}
+
+	975.1.1 = {
+		trait = trusting
+		trait = ambitious
+		trait = arrogant
+	}
+
+	979.12.25 = {
+		trait = education_diplomacy_4
+		trait = poet
+		trait = way_of_knowledge_follower
+	}
+
+	1040.8.11 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+gisreddan_lifepath_10 = { # Son of Duke Viycon Calmenson, 2nd Duke of Grande Gisredde
+	name = "Valoric"
+	religion = "becledienism"
+	culture = "gisreddean"
+	dynasty = dyn_marcher_3
+	disallow_random_traits = yes
+
+	father = gisreddan_lifepath_7
+
+	martial = 6
+	diplomacy = 3
+	stewardship = 3
+	intrigue = 2
+	learning = 4
+	prowess = 8
+
+	964.4.8 = {
+		birth = yes
+	}
+
+	976.1.1 = {
+		trait = gregarious
+		trait = brave
+		trait = zealous
+	}
+
+	980.4.8 = {
+		trait = education_martial_4
+		trait = way_of_swords_follower
+		trait = cautious_leader
+		trait = holy_warrior
+	}
+
+	1015.12.17 = {
+		death = {
+			death_reason = death_battle # War of the Heretic Princes
+		}
+	}
+}
+
+gisreddan_lifepath_11 = { # Grandson of Duke Viycon Calmenson, 3rd Duke of Grande Gisredde
+	name = "Guiles"
+	religion = "lifepath"
+	culture = "gisreddean"
+	dynasty = dyn_marcher_3
+	disallow_random_traits = yes
+
+	father = gisreddan_lifepath_10
+
+	martial = 6
+	diplomacy = 7
+	stewardship = 7
+	intrigue = 5
+	learning = 7
+	prowess = 4
+
+	1003.2.21 = {
+		birth = yes
+	}
+
+	1015.1.1 = {
+		trait = lustful
+		trait = deceitful
+		trait = sadistic
+	}
+
+	1019.2.21 = {
+		trait = education_intrigue_2
+		trait = way_of_crowns_follower
+		trait = shrewd
+		trait = deviant
+	}
+
+	1075.1.29 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+gisreddan_lifepath_12 = { # 4th Duke of Grande Gisredde
+	name = "Viycon"
+	religion = "lifepath"
+	culture = "gisreddean"
+	dynasty = dyn_marcher_3
+	disallow_random_traits = yes
+
+	father = gisreddan_lifepath_11
+
+	martial = 8
+	diplomacy = 3
+	stewardship = 2
+	intrigue = 5
+	learning = 2
+	prowess = 2
+
+	1043.10.18 = {
+		birth = yes
+		trait = beauty_good_2
+	}
+
+	1055.1.1 = {
+		trait = lustful
+		trait = stubborn
+		trait = patient
+	}
+
+	1059.10.18 = {
+		trait = education_diplomacy_2
+		trait = way_of_family_follower
+		trait = rakish
+		trait = lovers_pox
+	}
+
+	1091.4.12 = {
+		death = {
+			death_reason = death_fell_bedchamber
+		}
+	}
+}
+
+gisreddan_lifepath_13 = { # Sir Quile Calmenson, Anti-Magi Ordermaster
+	name = "Quile"
+	religion = "lifepath"
+	culture = "gisreddean"
+	dynasty = dyn_marcher_3
+	disallow_random_traits = yes
+
+	father = gisreddan_lifepath_11
+
+	martial = 5
+	diplomacy = 4
+	stewardship = 8
+	intrigue = 3
+	learning = 8
+	prowess = 7
+
+	1052.12.17 = {
+		birth = yes
+		trait = physique_good_1
+	}
+
+	1064.1.1 = {
+		trait = brave
+		trait = stubborn
+		trait = diligent
+	}
+
+	1068.12.17 = {
+		trait = education_martial_3
+		trait = unyielding_defender
+		trait = way_of_nullification_follower
+		trait = scholar
+	}
+
+	1130.11.21 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+gisreddan_lifepath_14 = { # 1st Duchess of Grande Gisredde
+	name = "Armine"
+	religion = "lifepath"
+	culture = "gisreddean"
+	dynasty = dyn_marcher_3
+	disallow_random_traits = yes
+	female = yes
+
+	father = gisreddan_lifepath_12
+
+	martial = 5
+	diplomacy = 5
+	stewardship = 6
+	intrigue = 6
+	learning = 3
+	prowess = 2
+
+	1081.11.24 = {
+		birth = yes
+		trait = beauty_bad_1
+	}
+
+	1093.1.1 = {
+		trait = zealous
+		trait = gregarious
+		trait = diligent
+	}
+
+	1097.11.24 = {
+		trait = education_diplomacy_3
+		trait = way_of_crowns_follower
+	}
+
+	1155.5.27 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+gisreddan_lifepath_15 = { # Son of Duchess Armine
+	name = "Viycon"
+	religion = "lifepath"
+	culture = "gisreddean"
+	dynasty = dyn_marcher_3
+	disallow_random_traits = yes
+
+	mother = gisreddan_lifepath_14
+
+	martial = 6
+	diplomacy = 6
+	stewardship = 8
+	intrigue = 5
+	learning = 2
+	prowess = 2
+
+	1113.3.23 = {
+		birth = yes
+	}
+
+	1125.1.1 = {
+		trait = lazy
+		trait = gregarious
+		trait = gluttonous
+	}
+
+	1129.3.23 = {
+		trait = education_stewardship_1
+		trait = way_of_coins_follower
+	}
+
+	1144.4.17 = {
+		death = {
+			death_reason = death_tumultuous_guts
+		}
+	}
+}
+
+gisreddan_lifepath_16 = { # 2nd Duchess of Grande Gisredde, Duke Lean's grandmother
+	name = "Celise"
+	religion = "lifepath"
+	culture = "gisreddean"
+	dynasty = dyn_marcher_3
+	disallow_random_traits = yes
+	female = yes
+
+	father = gisreddan_lifepath_15
+
+	martial = 7
+	diplomacy = 8
+	stewardship = 5
+	intrigue = 3
+	learning = 5
+	prowess = 2
+
+	1142.10.18 = {
+		birth = yes
+	}
+
+	1154.1.1 = {
+		trait = calm
+		trait = shy
+		trait = just
+	}
+
+	1158.10.18 = {
+		trait = education_learning_3
+		trait = way_of_justice_follower
+	}
+
+	1179.5.14 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+gisreddan_lifepath_17 = { # Colonial Gisreddan, stern and orderly
+	name = "Astar"
+	religion = "lifepath"
+	culture = "gisreddean"
+
+	1209.8.16 = {
+		birth = yes
+	}
+
+	1229.8.16 = {
+		trait = just
+		trait = wrathful
+		trait = diligent
+		trait = education_stewardship_3
+		trait = way_of_justice_follower
+	}
+}
+
+gisreddan_lifepath_18 = { # Ruler of Grande Gisredde's Finest in 1254
+	name = "Ranouard"
+	religion = "lifepath"
+	culture = "gisreddean"
+	
+	martial = 6
+	diplomacy = 2
+	stewardship = 1
+	intrigue = 3
+	learning = 2
+	prowess = 3
+
+	1227.6.18 = {
+		birth = yes
+	}
+
+	1239.1.1 = {
+		trait = arrogant
+		trait = impatient
+		trait = lazy
+	}
+	
+	1243.6.18 = {
+		trait = education_martial_3
+		trait = way_of_swords_follower
+	}
+}

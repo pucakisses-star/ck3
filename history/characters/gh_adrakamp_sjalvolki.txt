@@ -1,0 +1,850 @@
+﻿adrakamp_sjalvolki_1 = { # Mother of Witikind
+	name = "Danaraeda"
+	religion = "sjalvolki"
+	culture = "adrakamp"
+	female = yes
+	sexuality = heterosexual
+
+	1203.5.21 = {
+		birth = yes
+	}
+}
+
+adrakamp_sjalvolki_2 = { # Father of Witikind
+	name = "Witigast" #Formerly Dubrov
+	religion = "sjalvolki"
+	culture = "adrakamp"
+	dynasty = dyn_sjalvolki_8
+
+	trait = physique_good_3
+
+	1198.3.2 = {
+		birth = yes
+	}
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_sjalvolki
+		death = {
+			death_reason = death_elysian_pass
+			killer = westernimperial_aversarinas_aagiokrata_208
+		}
+	}
+}
+
+adrakamp_sjalvolki_3 = { # Sister of Witikind
+	name = "Maeda"
+	religion = "sjalvolki"
+	culture = "adrakamp"
+	female = yes
+	sexuality = heterosexual
+	father = adrakamp_sjalvolki_2
+	mother = adrakamp_sjalvolki_1
+	dynasty = dyn_sjalvolki_8
+
+	trait = physique_good_2
+
+	1219.5.11 = {
+		birth = yes
+	}
+	1252.1.2 = {
+		add_spouse = etrandanexi_aversarinas_aagiokrata_1 #Garniex requested her hand in return for 'bravery' at the Elysian Pass
+	}
+}
+
+adrakamp_sjalvolki_4 = {
+	name = "Witikind"
+	dna = adrakamp_sjalvolki_4
+	religion = "sjalvolki"
+	culture = "adrakamp"
+	father = adrakamp_sjalvolki_2
+	mother = adrakamp_sjalvolki_1
+	dynasty = dyn_sjalvolki_8
+
+	trait = brave
+	trait = wrathful
+	trait = impatient
+	trait = education_martial_1
+	trait = giant
+	trait = reaver
+	trait = physique_good_3
+	trait = berserker
+
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_mena_02
+			custom_hair = male_hair_fp1_05
+		}
+	}
+
+	1220.4.12 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 1 }
+		}
+	}
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_sjalvolki
+		trait = gh_historical_track_hunter_2
+		give_nickname = nick_above_the_eye
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+			create_character_memory = { # Battle of the Elysian Pass
+				type = fought_in_elysian_pass_sjalvolki
+			}
+		}
+	}
+
+	1252.6.14 = {
+		add_spouse = adrakamp_sjalvolki_30
+	}
+
+	1260.1.1 = {
+		set_relation_lover = character:adrakamp_sjalvolki_30
+	}
+
+	1278.4.13 = {
+		death = { death_reason = death_crocotta }
+	}
+}
+
+adrakamp_sjalvolki_5 = { # Karthig, former leader of the Sjalvolki in Artesmos until he totally wasn't murdered by Dragos
+	name = "Karthig"
+	religion = "sjalvolki"
+	culture = "adrakamp"
+
+	trait = stubborn
+	trait = brave
+	trait = ambitious
+
+	1211.2.1 = {
+		birth = yes
+	}
+
+	1251.2.12 = {
+		death = {
+			death_reason = death_mysterious
+			killer = adrakamp_sjalvolki_6
+		}
+	}
+}
+
+adrakamp_sjalvolki_6 = {
+	name = "Draga"
+	dna = adrakamp_sjalvolki_6
+	religion = "sjalvolki"
+	culture = "adrakamp"
+	dynasty = dyn_sjalvolki_5
+	
+	martial = 6
+	learning = 9
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			#custom_gh_neck_accessories = male_empty
+			custom_beards = male_beard_custom_07
+			custom_hair = male_hair_fp1_05
+		}
+	}
+
+	1205.12.15 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1217.1.1 = {
+		trait = ambitious
+		trait = wrathful
+		trait = deceitful	
+	}
+
+	1221.12.15 = {
+		trait = education_intrigue_1
+		trait = schemer
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:silentspeak }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1227.4.5 = {
+		give_nickname = nick_serpent_speaker
+	}
+
+	1252.1.5 = {
+		religion = sjalvolki_aagiokrata
+		name = "Dragos"
+		spawn_army = { 
+			name = army_oathsworn
+			uses_supply = yes
+			inheritable = no
+			location = province:4050
+			men_at_arms = {
+				type = sjalvolki_berserkers
+				stacks = 10
+			}
+		}
+		set_relation_friend = character:adrakamp_sjalvolki_aagiokrata_1
+		effect = {
+			add_character_flag = sjalvolki_vanguard
+		}
+	}
+	
+	1263.2.3 = {
+		death = {
+			death_reason = death_burned_by_mob
+		}
+	}
+}
+
+adrakamp_sjalvolki_7 = {
+	name = "Moriwalth" #Formerly Kosmin
+	religion = "sjalvolki"
+	culture = "adrakamp"
+
+	1219.2.23 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1235.2.23 = {
+		trait = schemer
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1251.1.12 = {
+		set_relation_grudge = character:adrakamp_sjalvolki_6
+	}
+}
+
+adrakamp_sjalvolki_8 = {
+	name = "Irmonth" #Formerly Serapion
+	religion = "sjalvolki"
+	culture = "adrakamp"
+
+	1222.1.1 = {
+		birth = yes
+	}
+}
+
+adrakamp_sjalvolki_9 = {
+	name = "Aldimar"
+	religion = "sjalvolki"
+	culture = "adrakamp"
+
+	1232.1.1 = {
+		birth = yes
+	}
+}
+
+adrakamp_sjalvolki_10 = {
+	name = "Valchrau" #Formerly Dmitar
+	religion = "sjalvolki"
+	culture = "adrakamp"
+
+	1202.1.1 = {
+		birth = yes
+	}
+
+	#1252.1.5 = {
+	#	religion = sjalvolki_aagiokrata
+	#}
+}
+
+adrakamp_sjalvolki_11 = {
+	name = "Ilthogar" #Formerly Ilija
+	religion = "sjalvolki"
+	culture = "adrakamp"
+
+	1220.1.1 = {
+		birth = yes
+	}
+
+	#1252.1.5 = {
+	#	religion = sjalvolki_aagiokrata
+	#}
+}
+
+adrakamp_sjalvolki_12 = {
+	name = "Iskra"
+	dna = adrakamp_sjalvolki_12
+	female = yes
+	religion = "sjalvolki"
+	culture = "adrakamp"
+
+	trait = beauty_good_3
+	trait = giant
+	trait = education_martial_2
+	trait = gh_historical_blademaster_1
+	trait = physique_good_3
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp1_03
+		}
+	}
+
+	1228.1.1 = {
+		birth = yes
+	}
+}
+
+adrakamp_sjalvolki_14 = {
+	name = "Luka"
+	religion = "sjalvolki"
+	culture = "adrakamp"
+
+	1220.4.12 = {
+		birth = yes
+	}
+
+	1257.4.19 = {
+		death = { death_reason = death_battle } # Killed in Etepezea
+	}
+}
+
+adrakamp_sjalvolki_15 = {
+	name = "Reinmar"
+	religion = "sjalvolki"
+	culture = "adrakamp"
+
+	1220.4.12 = {
+		birth = yes
+	}
+
+	1263.6.6 = {
+		death = {
+			death_reason = death_execution
+			killer = daukeni_sjalvolki_1
+		}
+	}
+}
+
+adrakamp_sjalvolki_16 = {
+	name = "Maridach"
+	religion = "sjalvolki"
+	culture = "adrakamp"
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+
+adrakamp_sjalvolki_17 = {
+	name = "Orthiwulf"
+	religion = "sjalvolki"
+	culture = "adrakamp"
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+
+adrakamp_sjalvolki_19 = {
+	name = "Hamorich"
+	religion = "sjalvolki"
+	culture = "adrakamp"
+
+	1220.4.12 = {
+		birth = yes
+	}
+
+	1271.4.18 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+adrakamp_sjalvolki_20 = { # Desitrei Iron-Oak, Cenware's friend and envoy to the Fenvir
+	name = "Desitrei" #Formerly Dothlau, formerly Detleff
+	religion = "sjalvolki"
+	culture = "adrakamp"
+	dynasty = dyn_sjalvolki_34
+	dna = adrakamp_sjalvolki_20
+	disallow_random_traits = yes
+
+	martial = 8
+	diplomacy = 5
+	stewardship = 6
+	intrigue = 7
+	learning = 3
+	prowess = 6
+
+        portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_fp1_03
+			custom_hair=m_hair_fp3_iranian_01
+                        custom_headgear = male_headgear_religious_northern_high_01
+		}
+	}
+
+	1220.4.12 = {
+		birth = yes
+	}
+
+	1232.1.1 = {
+		trait = humble
+		trait = zealous
+		trait = brave
+	}
+
+	1236.4.12 = {
+		trait = education_diplomacy_3
+		trait = gh_historical_blademaster_1
+		trait = unyielding_defender
+	}
+
+	1241.4.1 = {
+		give_nickname = nick_iron_oak
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	1241.5.8 = {
+		effect = {
+			set_relation_friend = { 
+				target = character:daukeni_sjalvolki_1 
+				reason = friend_shieldbrother
+			}
+		}
+	}
+
+	1247.3.15 = {
+		trait = scarred
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+
+	1247.3.20 = {
+		trait = gh_one_handed
+	}
+}
+
+adrakamp_sjalvolki_21 = {
+    name = "Harivolth" 
+
+    dynasty = dyn_sjalvolki_55
+    religion = sjalvolki
+    culture = adrakamp
+
+    sexuality = heterosexual
+
+    trait = sadistic
+    trait = just
+    trait = humble
+
+    1220.2.3 = {
+        birth = yes
+    }
+
+    1252.9.19 = {
+        add_spouse = adrakamp_sjalvolki_22
+    }
+
+    1274.8.26 = {
+        death = { death_reason = death_fall  }
+    }
+}
+
+adrakamp_sjalvolki_22 = {
+    name = "Arlinth" 
+    female = yes
+
+    religion = sjalvolki
+    culture = adrakamp
+
+    sexuality = heterosexual
+
+    trait = zealous
+    trait = calm
+    trait = greedy
+
+    1235.11.28 = {
+        birth = yes
+    }
+
+    1294.2.10 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+adrakamp_sjalvolki_23 = {
+    name = "Irmingoth" 
+
+    dynasty = dyn_sjalvolki_55
+    religion = sjalvolki
+    culture = adrakamp
+
+    father = adrakamp_sjalvolki_21
+    mother = adrakamp_sjalvolki_22
+
+    sexuality = heterosexual
+
+    trait = honest
+    trait = lazy
+    trait = humble
+
+    1252.5.24 = {
+        birth = yes
+    }
+
+    1276.7.26 = {
+        add_spouse = adrakamp_sjalvolki_24
+    }
+
+    1286.3.25 = {
+    	trait = gh_widow
+    }
+
+    1293.10.23 = {
+        death = { death_reason = death_ended_on_feast_table  } # Died to Islander Cannibals
+    }
+}
+
+adrakamp_sjalvolki_24 = {
+    name = "Ramnilth" 
+    female = yes
+
+    religion = sjalvolki
+    culture = adrakamp
+
+    sexuality = heterosexual
+
+    trait = just
+    trait = cynical
+    trait = diligent
+
+    1259.4.22 = {
+        birth = yes
+    }
+
+    1286.3.25 = {
+        death = { death_reason = death_ill }
+    }
+}
+
+adrakamp_sjalvolki_25 = {
+    name = "Orthraun" 
+
+    dynasty = dyn_sjalvolki_55
+    religion = sjalvolki
+    culture = adrakamp
+
+    father = adrakamp_sjalvolki_23
+    mother = adrakamp_sjalvolki_24
+
+    sexuality = heterosexual
+
+    trait = shy
+    trait = temperate
+    trait = paranoid
+
+    1280.4.7 = {
+        birth = yes
+        trait = twin
+    }
+
+    1297.10.26 = {
+        add_spouse = adrakamp_sjalvolki_26
+    }
+
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+adrakamp_sjalvolki_26 = {
+    name = "Davircha" 
+    female = yes
+
+    religion = sjalvolki
+    culture = adrakamp
+
+    sexuality = heterosexual
+
+    trait = generous
+    trait = lustful
+    trait = arrogant
+
+    1280.4.7 = {
+        birth = yes
+        trait = twin
+    }
+}
+
+adrakamp_sjalvolki_27 = {
+    name = "Ramnircha" 
+    female = yes
+
+    religion = sjalvolki
+    culture = adrakamp
+
+    father = adrakamp_sjalvolki_23
+    mother = adrakamp_sjalvolki_24
+
+    sexuality = heterosexual
+
+    trait = shy
+    trait = content
+    trait = sadistic
+
+    1283.2.23 = {
+        birth = yes
+    }
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+adrakamp_sjalvolki_28 = {
+    name = "Askidau" 
+    female = yes
+
+    religion = sjalvolki
+    culture = adrakamp
+
+    father = adrakamp_sjalvolki_21
+    mother = adrakamp_sjalvolki_22
+
+    1253.8.22 = {
+        birth = yes
+    }
+
+    1264.10.8 = {
+        death = { death_reason = death_consumption }
+    }
+}
+
+adrakamp_sjalvolki_29 = {
+    name = "Dachruna" 
+    female = yes
+
+    religion = sjalvolki
+    culture = adrakamp
+
+    father = adrakamp_sjalvolki_21
+    mother = adrakamp_sjalvolki_22
+
+    sexuality = heterosexual
+
+    trait = vengeful
+    trait = content
+    trait = sadistic
+
+    1256.5.4 = {
+        birth = yes
+    }
+
+    1296.8.28 = {
+        death = { death_reason = death_accident  }
+    }
+}
+
+
+
+adrakamp_sjalvolki_30 = {
+    name = "Euska" 
+    female = yes
+
+    religion = sjalvolki
+    culture = adrakamp
+    father = irmionoth_sjalvolki_1
+    sexuality = heterosexual
+
+    trait = lustful
+    trait = greedy
+    trait = diligent
+
+    1228.4.5 = {
+        birth = yes
+        trait = legitimized_bastard
+        trait = beauty_good_1
+    }
+
+    1290.12.6 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+adrakamp_sjalvolki_31 = {
+    name = "Arlimonth" 
+
+    dynasty = dyn_sjalvolki_8
+    religion = sjalvolki
+    culture = adrakamp
+
+    father = adrakamp_sjalvolki_4
+    mother = adrakamp_sjalvolki_30
+
+    sexuality = heterosexual
+
+    trait = craven
+    trait = cynical
+    trait = humble
+
+    trait = education_arcana_3
+
+    1253.8.14 = {
+        birth = yes
+        trait = wheezing
+    }
+
+    1275.6.19 = {
+        add_spouse = adrakamp_sjalvolki_32
+    }
+
+    1278.4.30 = {
+    	trait = gh_one_handed
+    }
+}
+
+adrakamp_sjalvolki_32 = {
+    name = "Adrilth" 
+    female = yes
+
+    religion = sjalvolki
+    culture = adrakamp
+
+    sexuality = heterosexual
+
+    trait = zealous
+    trait = lazy
+    trait = content
+
+    1255.7.26 = {
+        birth = yes
+    }
+}
+
+adrakamp_sjalvolki_33 = {
+    name = "Askidau" 
+    female = yes
+
+    dynasty = dyn_sjalvolki_8
+
+    religion = sjalvolki
+    culture = adrakamp
+
+    father = adrakamp_sjalvolki_31
+    mother = adrakamp_sjalvolki_32
+
+    sexuality = heterosexual
+
+    trait = wrathful
+    trait = gluttonous
+    trait = lustful
+
+    1274.7.3 = {
+        birth = yes
+    }
+
+    1297.10.9 = {
+        death = { death_reason = death_cancer }
+    }
+}
+
+adrakamp_sjalvolki_34 = {
+    name = "Arlimonth" 
+
+    dynasty = dyn_sjalvolki_8
+    religion = sjalvolki
+    culture = adrakamp
+
+    father = adrakamp_sjalvolki_31
+    mother = adrakamp_sjalvolki_32
+
+    sexuality = heterosexual
+
+    trait = calm
+    trait = generous
+    trait = stubborn
+
+    trait = education_martial_4
+
+    1278.2.22 = {
+        birth = yes
+        trait = physique_good_2
+    }
+
+    1296.1.1 = {
+        trait = gh_historical_track_hunter_2
+    }
+
+    1297.1.1 = {
+    	give_nickname = nick_hauntsbane
+    }
+}
+
+
+adrakamp_sjalvolki_43 = {
+    name = "Ramnotha" 
+    female = yes
+
+    religion = sjalvolki
+    culture = adrakamp
+
+    father = adrakamp_sjalvolki_31
+    mother = adrakamp_sjalvolki_32
+
+    sexuality = heterosexual
+
+    trait = temperate
+    trait = cynical
+    trait = trusting
+
+    1282.2.3 = {
+        birth = yes
+    }
+
+    1292.4.9 = {
+        death = { death_reason = death_consumption }
+    }
+}
+
+adrakamp_sjalvolki_44 = {
+    name = "Ochriwal"
+
+    religion = sjalvolki
+    culture = adrakamp
+
+    sexuality = homosexual
+
+    1248.4.30 = {
+        birth = yes
+    }
+
+    1268.4.30 = {
+        trait = ambitious
+        trait = chaste
+        trait = brave
+        trait = education_martial_4
+        trait = reaver
+        trait = gh_historical_blademaster_3
+    }
+
+    1295.12.3 = {
+        give_nickname = nick_unlucky
+        death = { death_reason = death_sea_storm }
+    }
+}

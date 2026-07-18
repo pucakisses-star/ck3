@@ -1,0 +1,56 @@
+﻿guillater_aversarian_aversarinas_aagiokrata_1 = {
+	name = "Nikephoros"
+	religion = aversarinas_aagiokrata
+	culture = guillater_aversarian
+	trait = intellect_good_2
+	1223.9.14 = {
+		birth = yes
+	}
+	1235.9.14 = {
+		trait = generous
+		trait = temperate
+		trait = zealous
+	}
+	1239.9.14 = {
+		trait = education_learning_3
+	}
+}
+
+guillater_aversarian_aversarinas_aagiokrata_2 = { # Kleon Keen-Eye, a notorious Neophretitan pirate that once served as Saint Calysto's second mate and navigator aboard the Maiden's Key, later a captain in his own right and held the Central Isles
+	name = "Kleon"
+	religion = "aversarinas_aagiokrata"
+	culture = "guillater_aversarian"
+
+	sexuality = heterosexual
+
+	martial = 8
+	diplomacy = 6
+	stewardship = 4
+	intrigue = 4
+	learning = 5
+	prowess = 11
+
+	1056.3.3 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1068.1.1 = {
+		trait = gregarious
+		trait = impatient
+		trait = diligent
+	}
+
+	1072.3.3 = {
+		trait = education_diplomacy_1
+		give_nickname = nick_keeneye
+		trait = gh_historical_blademaster_1
+	}
+
+	1088.12.1 = {
+		death = {
+			death_reason = death_battle
+			killer = islander_aversarinas_aagiokrata_144 # Legon Stauros of Marine Legion Legio CLXXXVI 'Intrepid'
+		}
+	}
+}

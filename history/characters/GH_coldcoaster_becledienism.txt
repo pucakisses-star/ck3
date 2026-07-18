@@ -1,0 +1,9 @@
+﻿coldcoaster_becledienism_1 = {
+	name = "Audofleda"
+	female = yes
+	religion = becledienism
+	culture = coldcoaster
+	1208.4.18 = {
+		birth = yes
+	}
+}

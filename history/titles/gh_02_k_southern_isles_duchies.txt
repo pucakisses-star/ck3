@@ -1,0 +1,26 @@
+d_duchytesti822 = {
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1205.1.1 = {
+		holder = 0
+	}
+	1250.1.1 = {
+		change_development_level = 4
+	}
+}
+d_ascalar_archipelago = {
+	1250.1.1 = {
+		change_development_level = 5
+	}
+}
+d_green_isle = {
+	1250.1.1 = {
+		change_development_level = 5
+	}
+}
+#d_etepezean_arc = {
+#	1250.1.1 = {
+#		change_development_level = 5
+#	}
+#}

@@ -1,0 +1,128 @@
+#c_abirut = {
+#	1230.1.1 = {
+#		liege = "e_nitsafai"
+#		government = theocracy_government
+#		holder = kawoch_nitsafai_1
+#	}
+#	1230.1.1 = {
+#		change_development_level = 11
+#	}
+#}
+c_siralab = {
+	1230.1.1 = {
+		liege = "e_nitsafai"
+		government = theocracy_government
+		holder = kawoch_nitsafai_1
+	}
+	1230.1.1 = {
+		change_development_level = 9
+	}
+	1267.7.19 = {
+		holder = kawoch_nitsafai_3
+	}
+	1271.3.2 = {
+		holder = kawoch_nitsafai_5
+	}
+	1294.11.13 = {
+		holder = kawoch_nitsafai_11
+	}
+}
+c_repeza = {
+	1170.1.1 = {
+		holder = kawoch_mogowai_25
+	}
+	1230.1.1 = {
+		liege = "e_nitsafai"
+		government = theocracy_government
+		holder = kawoch_nitsafai_3
+	}
+	1230.1.1 = {
+		change_development_level = 12
+	}
+	1268.4.15 = {
+		holder = kawoch_mogowai_12
+	}
+}
+#c_niberoi = {
+#	1230.1.1 = {
+#		liege = "e_nitsafai"
+#		government = theocracy_government
+#		holder = kawoch_nitsafai_3
+#	}
+#	1230.1.1 = {
+#		change_development_level = 11
+#	}
+#}
+#c_jabali = {
+#	1230.1.1 = {
+#		liege = "d_meheda"
+#		government = theocracy_government
+#		holder = kawoch_nitsafai_5
+#	}
+#	1230.1.1 = {
+#		change_development_level = 8
+#	}
+#}
+#c_dariko = {
+#	1230.1.1 = {
+#		liege = "e_nitsafai"
+#		government = theocracy_government
+#		holder = kawoch_nitsafai_7
+#	}
+#	1230.1.1 = {
+#		change_development_level = 13
+#	}
+#}
+#c_rezelut = {
+#	1230.1.1 = {
+#		liege = "e_nitsafai"
+#		government = theocracy_government
+#		holder = kawoch_nitsafai_7
+#	}
+#	1230.1.1 = {
+#		change_development_level = 7
+#	}
+#}
+c_orunlaz = {
+	1230.1.1 = {
+		liege = "e_nitsafai"
+		government = theocracy_government
+		holder = kawoch_nitsafai_6
+	}
+	1230.1.1 = {
+		change_development_level = 14
+	}
+}
+#c_debali = {
+#	1230.1.1 = {
+#		#liege = "d_kawuzak"
+#		government = theocracy_government
+#		holder = kawoch_nitsafai_10
+#	}
+#	1230.1.1 = {
+#		change_development_level = 10
+#	}
+#}
+#c_dabakem = {
+#	1230.1.1 = {
+#		liege = "e_nitsafai"
+#		government = theocracy_government
+#		holder = kawoch_nitsafai_2
+#	}
+#	1230.1.1 = {
+#		change_development_level = 11
+#	}
+#}
+#c_bilete = {
+#	1170.1.1 = {
+#		holder = kawoch_mogowai_20
+#	}
+#	1230.1.1 = {
+#		liege = "e_nitsafai"
+#		government = theocracy_government
+#		holder = kawoch_nitsafai_2
+#	}
+#	1230.1.1 = {
+#		change_development_level = 10
+#	}
+#}

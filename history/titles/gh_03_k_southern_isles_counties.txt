@@ -1,0 +1,86 @@
+﻿c_drygoses = {
+	1250.1.1 = {
+		change_development_level = 7
+	}
+	1251.1.1 = {
+		holder = dasulanoi_aversarinas_aagiokrata_2
+	}
+}
+c_zireddca = {
+	1250.1.1 = {
+		change_development_level = 4
+	}
+	1251.1.1 = {
+		holder = dasulanoi_aeschraes_aagiokrata_1
+	}
+	1266.12.1 = {
+		holder = vrodkin_sjalvolki_8
+	}
+	1276.3.13 = {
+		holder = vrodkin_sjalvolki_57
+		liege = 0
+	}
+}
+c_palai_zkhni = {
+	1250.1.1 = {
+		change_development_level = 6
+	}
+	1251.1.1 = {
+		holder = symvolix_drakanorix_aagiokrata_1
+	}
+}
+c_notableisle = {
+	1251.1.1 = {
+		holder = guillater_aversarian_aversarinas_aagiokrata_1
+	}
+}
+c_eldenring = {
+	1251.1.1 = {
+		holder = symvolix_theryionist_1
+	}
+}
+c_dasterix_twins = {
+	1251.1.1 = {
+		holder = guillater_aversarian_calystoanistism_3
+	}
+}
+c_dragonteeth = {
+	1251.1.1 = {
+		holder = dasulanoi_theryionist_1
+	}
+}
+c_provincenew8981 = {
+	1251.1.1 = {
+		holder = dasulanoi_blood_veneration_1
+	}
+}
+c_phalex_isle = {
+	1251.1.1 = {
+		holder = dasulanoi_theryionist_2
+	}
+}
+c_shipbreaker_isle = {
+	1251.1.1 = {
+		holder = dasulanoi_aversarinas_aagiokrata_1
+	}
+}
+c_gamerisle = {
+	1251.1.1 = {
+		holder = dasulanoi_arthenaxian_2
+	}
+}
+c_shaderix_isle = {
+	1251.1.1 = {
+		holder = dasulanoi_aversarinas_practitioner_1
+	}
+}
+c_kosherix = {
+	1251.1.1 = {
+		holder = dasulanoi_aversarian_axiaotheaism_1
+	}
+}
+c_provincenew6239 = {
+	1251.1.1 = {
+		holder = dasulanoi_drakanorix_aagiokrata_1
+	}
+}

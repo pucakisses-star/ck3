@@ -1,0 +1,55 @@
+d_peonopnes = {
+	1170.12.8 = {
+		holder = westernimperial_aversarinas_aagiokrata_71
+		liege = e_mayikprolollan
+		government = magocratic_government
+	}
+	1184.4.1 = {
+		holder = 0
+	}
+}
+
+d_thothous = {
+	1170.12.8 = {
+		holder = westernimperial_aversarinas_aagiokrata_71
+		liege = e_mayikprolollan
+		government = magocratic_government
+	}
+	1184.4.1 = {
+		holder = 0
+	}
+	1249.1.1 = {
+		holder = mineris_dejorig_1
+		liege = 0
+		government = tribal_government
+	}
+	1230.1.1 = { change_development_level = 0 }
+}
+
+d_oseinia = {
+	1170.12.8 = {
+		holder = westernimperial_aversarinas_aagiokrata_71
+		liege = e_mayikprolollan
+		government = magocratic_government
+	}
+	1184.4.1 = {
+		holder = 0
+	}
+}
+
+d_clamae = {
+	1249.1.1 = {
+		government = magocratic_government
+		holder = practitioner_aversarinas_aagiokrata_12
+		liege = e_mayikprolollan
+	}
+	1230.1.1 = { change_development_level = 2 }
+}
+
+d_tadi = {
+	1249.1.1 = {
+		government = magocratic_government
+		holder = practitioner_aversarinas_aagiokrata_5
+	}
+	1230.1.1 = { change_development_level = 1 }
+}

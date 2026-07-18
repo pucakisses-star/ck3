@@ -1,0 +1,16 @@
+#d_nastal = {
+#	1250.1.1 = {
+#		holder = mithaista_vidvaookeyatra_2
+#		liege = k_hyratan
+#		change_development_level = 6
+#	}
+#}
+
+d_hyratan = {
+	1.1.1 = {
+		change_development_level = 1
+	}
+	1240.1.1 = {
+		holder = mithaista_vidvaookeyatra_1
+	}
+}

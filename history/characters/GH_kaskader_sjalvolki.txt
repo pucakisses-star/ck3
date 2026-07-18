@@ -1,0 +1,27 @@
+﻿kaskader_sjalvolki_1 = {
+	name = "Oledmir"
+	religion = orispolj_rite
+	culture = daukeni #kaskader
+
+	1258.4.24 = {
+		birth = yes
+	}
+}
+
+kaskader_sjalvolki_2 = { # bastard child of a disgraced count, comes back during the Bastonport Brother's War and manages to take the port from under them with the help of sympathetic burghers and merchants in the city.
+	name = "Ildravos"
+	religion = orispolj_rite
+	culture = daukeni #kaskader
+	father = vrodkin_sjalvolki_9
+	1256.2.20 = {
+		birth = yes
+		trait = legitimized_bastard
+	}
+	1276.2.20 = {
+		trait = vengeful
+		trait = generous
+		trait = lustful
+		trait = education_martial_3
+		trait = shrewd
+	}
+}

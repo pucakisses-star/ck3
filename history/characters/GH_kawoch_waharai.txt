@@ -1,0 +1,94 @@
+﻿kawoch_waharai_1 = { # heretic rebel against the kingdom
+	name = "Revelum"
+	religion = waharai
+	culture = kawoch
+	sexuality = heterosexual
+	
+	dynasty = dyn_damota_7
+	
+	diplomacy = 10
+	martial = 8
+	stewardship = 6
+	intrigue = 7
+	learning = 7
+	
+	1214.2.28 = {
+		birth = yes
+	}
+	1226.2.28 = {
+		trait = zealous
+		trait = arrogant
+		trait = ambitious
+	}
+	1230.2.28 = {
+		trait = education_diplomacy_2
+	}
+	1234.9.11 = {
+		# Lonely Note: Set to historical since this was set incorrectly before, replace with something more relevant if applicable (or remove this comment if not)
+		# Scion Note: changed the nemesis relation to be a character memory instead
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 2 }
+			create_character_memory = {
+				type = became_rivals
+				participants = {
+					rival = character:kawoch_mogowai_4 # Gareleb Belar
+				}
+			}
+		}
+	}
+}
+
+kawoch_waharai_2 = { # broke away from above after the rebellion
+	name = "Zaberi"
+	religion = waharai
+	culture = kawoch
+	
+	1219.6.1 = {
+		birth = yes
+	}
+	1231.6.1 = {
+		trait = forgiving
+		trait = patient
+		trait = lustful
+	}
+	1235.6.1 = {
+		trait = education_martial_3
+	}
+}
+
+kawoch_waharai_3 = { # broke away as well
+	name = "Kalore"
+	religion = waharai
+	culture = kawoch
+	female = yes
+	
+	1212.9.15 = {
+		birth = yes
+	}
+	1224.9.15 = {
+		trait = ambitious
+		trait = deceitful
+		trait = just
+	}
+	1228.9.15 = {
+		trait = education_stewardship_2
+	}
+}
+
+kawoch_waharai_4 = { # last breakaway
+	name = "Ladeli"
+	religion = waharai
+	culture = kawoch
+	
+	1223.12.17 = {
+		birth = yes
+	}
+	1235.12.17 = {
+		trait = temperate
+		trait = arrogant
+		trait = lustful
+	}
+	1239.12.17 = {
+		trait = education_intrigue_4
+	}
+}

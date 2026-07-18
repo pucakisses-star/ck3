@@ -1,0 +1,89 @@
+﻿makryenis_philanthrios_1 = { # Golden hand
+	name = "Philatar"
+	dna = makryenis_philanthrios_1
+	religion = "philanthrios"
+	culture = "makryenis"
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_indian_01
+			custom_beards = male_beard_fp1_01
+		}
+	}
+
+	1213.8.9 = {
+		birth = yes
+	}
+
+	1225.1.1 = {
+		trait = lustful
+		trait = gluttonous
+		trait = gregarious
+	}
+
+	1229.8.9 = {
+		trait = education_stewardship_1
+		trait = drunkard
+		trait = rakish
+		trait = gh_historical_reveler_3
+	}
+
+	1241.1.1 = {
+		effect = {
+			add_gold = 1000
+		}
+	}
+}
+
+makryenis_philanthrios_2 = { # Golden hand
+	name = "Agamede"
+	religion = "philanthrios"
+	culture = "makryenis"
+	female = yes
+
+	1216.2.25 = {
+		birth = yes
+	}
+
+	1232.2.25 = {
+		trait = education_martial_3
+		trait = greedy
+		trait = sadistic
+		trait = wrathful
+	}
+}
+
+makryenis_philanthrios_3 = { # Golden hand
+	name = "Adrastos"
+	religion = "philanthrios"
+	culture = "makryenis"
+
+	1221.3.11 = {
+		birth = yes
+	}
+
+	1237.3.11 = {
+		trait = education_diplomacy_2
+		trait = greedy
+		trait = gregarious
+		trait = callous
+	}
+}
+
+makryenis_philanthrios_4 = { # Golden hand
+	name = "Lasthena"
+	religion = "philanthrios"
+	culture = "makryenis"
+	female = yes
+
+	1220.11.27 = {
+		birth = yes
+	}
+
+	1236.11.27 = {
+		trait = education_stewardship_3
+		trait = generous
+		trait = temperate
+		trait = diligent
+	}
+}

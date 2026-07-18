@@ -1,0 +1,29 @@
+﻿diorenic_abathonic_cult_1 = {
+	name = "Vittore"
+	religion = abathonic_cult
+	culture = diorenic
+	
+	1228.7.16 = {
+		birth = yes
+	}
+}
+
+diorenic_abathonic_cult_2 = {
+	name = "Eduardo"
+	religion = abathonic_cult
+	culture = diorenic
+
+	1224.4.9 = {
+		birth = yes
+	}
+}
+
+diorenic_abathonic_cult_3 = {
+	name = "Giuseppe"
+	religion = abathonic_cult
+	culture = diorenic
+
+	1231.4.9 = {
+		birth = yes
+	}
+}

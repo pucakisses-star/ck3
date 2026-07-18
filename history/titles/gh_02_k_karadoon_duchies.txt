@@ -1,0 +1,31 @@
+d_central_sarradon2 = {
+	1230.1.1 = { change_development_level = 3 }
+}
+d_al_jafemmam = {
+	1230.1.1 = { change_development_level = 5 }
+} 
+#d_dartibou = {
+#	1230.1.1 = {
+#		holder = erimatos_aversarinas_aagiokrata_3
+#		government = pirate_government
+#	}
+#	1230.1.1 = { change_development_level = 4 }
+#}
+#d_zazakirmid = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_20
+#	}
+#	1230.1.1 = { change_development_level = 6 }
+#	1240.1.1 = {
+#		liege = "k_karadoon"
+#	}
+#} 
+d_tall_hillana = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_20
+	}
+	1250.1.1 = {
+		liege = "k_karadoon"
+	}
+	1230.1.1 = { change_development_level = 4 }
+} 

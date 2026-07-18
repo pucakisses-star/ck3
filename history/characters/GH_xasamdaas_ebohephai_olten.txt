@@ -1,0 +1,27 @@
+﻿xasamdaas_ebohephai_olten_1 = { # Oltenic vassals-3rd clan duke
+	name = "Dodai"
+	religion = "ebohephai_olten"
+	culture = "xasamdaas"
+	1203.8.8 = {
+		birth = yes
+	}
+}
+
+xasamdaas_ebohephai_olten_2 = { # Oltenic vassals
+	name = "Uighurtai"
+	religion = "ebohephai_olten"
+	culture = "xasamdaas"
+	1185.8.8 = {
+		birth = yes
+	}
+}
+
+
+xasamdaas_ebohephai_olten_3 = { # Oltenic vassals
+	name = "Zharkent"
+	religion = "ebohephai_olten"
+	culture = "xasamdaas"
+	1195.8.8 = {
+		birth = yes
+	}
+}

@@ -1,0 +1,268 @@
+﻿paidem_vidvaookeyatra_1 = { # 1200-1239 Depressed Lord
+	name = "Kanvarpala"
+	religion = "vidvaookeyatra"
+	culture = "paidem"
+	sexuality = heterosexual
+	dynasty = dyn_paidem_1
+
+	1177.2.17 = {
+		birth = yes
+	}
+	1189.2.17 = {
+		trait = stubborn
+		trait = temperate
+		trait = gregarious
+	}
+	1193.2.17 = {
+		trait = education_stewardship_2
+	}
+	1194.10.17 = {
+		add_spouse = xrahantiia_vidvaookeyatra_2
+	}
+	1239.11.14 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+paidem_vidvaookeyatra_2 = { # 1254 Xokola Duchess husband
+	name = "Harpal"
+	religion = "vidvaookeyatra"
+	culture = "paidem"
+	sexuality = heterosexual
+
+	1205.11.6 = {
+		birth = yes
+	}
+	1217.11.6 = {
+		trait = brave
+		trait = gregarious
+		trait = lustful
+		trait = strong
+	}
+	1221.11.6 = {
+		trait = education_martial_2
+	}
+	1226.7.4 = {
+		add_matrilineal_spouse = xokola_vidvaookeyatra_2
+	}
+}
+
+paidem_vidvaookeyatra_3 = { # 1254 Mad Lord
+	name = "Gandadeva"
+	religion = "vidvaookeyatra"
+	culture = "paidem"
+	sexuality = heterosexual
+	dynasty = dyn_paidem_1
+	father = paidem_vidvaookeyatra_1
+	mother = xrahantiia_vidvaookeyatra_2
+
+	1196.4.10 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 2 }
+		}
+	}
+	1208.4.10 = {
+		trait = paranoid
+		trait = sadistic
+		trait = wrathful
+	}
+	1212.4.10 = {
+		trait = education_intrigue_3
+	}
+	1215.10.9 = {
+		add_spouse = zabari_vidvaookeyatra_3
+	}
+	1253.3.29 = {
+		trait = murderer
+		trait = irritable
+		trait = lunatic_1
+		effect = {
+			set_relation_rival = character:paidem_vidvaookeyatra_6
+			set_relation_rival = character:paidem_vidvaookeyatra_9
+
+			imprison = {
+				target = character:paidem_vidvaookeyatra_6
+				type = house_arrest
+			}
+		}
+	}
+	1253.9.14 = {
+		effect = {
+			imprison = {
+				target = character:paidem_vidvaookeyatra_9
+				type = house_arrest
+			}
+		}
+	}
+}
+
+paidem_vidvaookeyatra_4 = { # 1254 Mad Lord's dead son, the promised heir
+	name = "Kunwarpal"
+	religion = "vidvaookeyatra"
+	culture = "paidem"
+	dynasty = dyn_paidem_1
+	father = paidem_vidvaookeyatra_3
+	mother = zabari_vidvaookeyatra_3
+
+	1216.8.8 = {
+		birth = yes
+	}
+	1224.1.22 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+
+paidem_vidvaookeyatra_5 = { # 1254 Mad Lord's sister, the mother of potential heirs
+	name = "Mahidevi"
+	religion = "vidvaookeyatra"
+	culture = "paidem"
+	sexuality = heterosexual
+	dynasty = dyn_paidem_1
+	father = paidem_vidvaookeyatra_1
+	mother = xrahantiia_vidvaookeyatra_2
+	female = yes
+
+	1198.6.15 = {
+		birth = yes
+	}
+	1210.6.15 = {
+		trait = fickle
+		trait = chaste
+		trait = gluttonous
+	}
+	1214.6.15 = {
+		trait = education_diplomacy_3
+	}
+	1218.6.12 = {
+		add_matrilineal_spouse = virlani_vidvaookeyatra_1
+	}
+}
+
+paidem_vidvaookeyatra_6 = { # 1254 Mad Lord's brother and rival
+	name = "Kakhopal"
+	religion = "vidvaookeyatra"
+	culture = "paidem"
+	sexuality = heterosexual
+	father = paidem_vidvaookeyatra_1
+	mother = xrahantiia_vidvaookeyatra_2
+	dynasty = dyn_paidem_1
+
+	1200.2.29 = {
+		birth = yes
+	}
+	1212.2.29 = {
+		trait = lustful
+		trait = deceitful
+		trait = gregarious
+	}
+	1216.2.29 = {
+		trait = education_intrigue_2
+		trait = rakish
+	}
+	1224.2.9 = {
+		add_spouse = sakankra_vidvaookeyatra_28
+	}
+}
+
+paidem_vidvaookeyatra_7 = { # 1254 Mad Lord's elder niece
+	name = "Dattadevi"
+	religion = "vidvaookeyatra"
+	culture = "paidem"
+	sexuality = homosexual
+	dynasty = dyn_paidem_1
+	father = virlani_vidvaookeyatra_1
+	mother = paidem_vidvaookeyatra_5
+	female = yes
+
+	1221.5.9 = {
+		birth = yes
+	}
+	1233.5.9 = {
+		trait = gluttonous
+		trait = lazy
+		trait = callous
+	}
+	1237.5.9 = {
+		trait = education_intrigue_1
+	}
+}
+
+paidem_vidvaookeyatra_8 = { # 1254 Mad Lord's younger niece
+	name = "Kakanvati"
+	religion = "vidvaookeyatra"
+	culture = "paidem"
+	sexuality = heterosexual
+	dynasty = dyn_paidem_1
+	father = virlani_vidvaookeyatra_1
+	mother = paidem_vidvaookeyatra_5
+	female = yes
+
+	1223.12.22 = {
+		birth = yes
+	}
+	1235.12.22 = {
+		trait = patient
+		trait = craven
+		trait = forgiving
+	}
+	1239.12.22 = {
+		trait = education_learning_4
+	}
+	1247.11.2 = {
+		add_matrilineal_spouse = karkit_vidvaookeyatra_2
+	}
+}
+
+paidem_vidvaookeyatra_9 = { # 1254 Mad Lord's nephew
+	name = "Rijhpala"
+	religion = "vidvaookeyatra"
+	culture = "paidem"
+	sexuality = heterosexual
+	father = paidem_vidvaookeyatra_6
+	mother = sakankra_vidvaookeyatra_28
+	dynasty = dyn_paidem_1
+	trait = magic_good_2
+
+	1228.3.3 = {
+		birth = yes
+	}
+	1240.3.3 = {
+		trait = lustful
+		trait = brave
+		trait = trusting
+	}
+	1244.3.3 = {
+		trait = education_martial_2
+		trait = profligate
+	}
+}
+
+paidem_vidvaookeyatra_10 = { # 1254 Mad Lord's great-nephew
+	name = "Hammiravarman"
+	religion = "vidvaookeyatra"
+	culture = "paidem"
+	sexuality = asexual
+	father = karkit_vidvaookeyatra_2
+	mother = paidem_vidvaookeyatra_8
+	dynasty = dyn_paidem_1
+	trait = beauty_good_1
+	trait = intellect_bad_1
+
+	1250.6.9 = {
+		birth = yes
+	}
+}
+
+paidem_vidvaookeyatra_11 = {
+	name = "Vamana"
+	religion = "vidvaookeyatra"
+	culture = "paidem"
+	1202.8.8 = {
+		birth = yes
+	}
+}

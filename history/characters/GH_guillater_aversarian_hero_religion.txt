@@ -1,0 +1,18 @@
+﻿guillater_aversarian_hero_religion_1 = {
+	name = "Eusebia"
+	female = yes
+	religion = hero_religion
+	culture = guillater_aversarian
+	1223.8.11 = {
+		birth = yes
+	}
+	1235.8.11 = {
+		trait = arbitrary
+		trait = lustful
+		trait = cynical
+	}
+	1239.8.11 = {
+		trait = education_intrigue_2
+		set_relation_friend = character:guillater_karoxos_cult_1
+	}
+}

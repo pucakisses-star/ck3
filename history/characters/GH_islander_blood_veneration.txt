@@ -1,0 +1,19 @@
+﻿islander_blood_veneration_1 = {
+	name = "Adazon"
+	religion = "blood_veneration"
+	culture = "islander"
+
+	1219.12.17 = {
+		birth = yes
+	}
+}
+
+islander_blood_veneration_2 = {
+	name = "Athressirios"
+	religion = "blood_veneration"
+	culture = "islander"
+
+	1236.11.15 = {
+		birth = yes
+	}
+}

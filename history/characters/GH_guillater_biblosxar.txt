@@ -1,0 +1,17 @@
+﻿guillater_biblosxar_1 = {
+	name = "Bruxon"
+	female = yes
+	religion = biblosxar
+	culture = guillater
+	1211.2.24 = {
+		birth = yes
+	}
+	1223.2.24 = {
+		trait = ambitious
+		trait = brave
+		trait = chaste
+	}
+	1227.2.24 = {
+		trait = education_martial_2
+	}
+}

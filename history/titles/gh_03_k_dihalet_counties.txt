@@ -1,0 +1,154 @@
+#c_inwany = {
+#	1230.1.1 = {
+#		liege = "d_sahate"
+#		government = feudal_government
+#		holder = kawoch_mogowai_2
+#	}
+#	1230.1.1 = {
+#		change_development_level = 8
+#	}
+#} 
+c_rehelja = {
+	1230.1.1 = {
+		government = feudal_government
+		holder = kawoch_waharai_1
+		change_development_level = 6
+	}
+	#1249.5.16 = {
+	#	liege = "k_dihalet"
+	#	holder = kawoch_mogowai_3
+	#}
+}
+c_darmalej = {
+	1230.1.1 = {
+		liege = "k_dihalet"
+		government = feudal_government
+		holder = kawoch_mogowai_4
+		change_development_level = 14
+	}
+	1249.5.16 = {
+		liege = "k_dihalet"
+		holder = kawoch_mogowai_3
+	}
+}
+c_talakmayi = {
+	1230.1.1 = {
+		liege = "k_dihalet"
+		government = feudal_government
+		holder = kawoch_mogowai_4
+	}
+	1249.5.16 = {
+		liege = "k_dihalet"
+		holder = kawoch_mogowai_3
+	}
+}
+#c_lelagol = {
+#	1230.1.1 = {
+#		liege = "k_dihalet"
+#		government = feudal_government
+#		holder = kawoch_mogowai_5
+#	}
+#	1230.1.1 = {
+#		change_development_level = 10
+#	}
+#}
+#c_dosali = {
+#	1230.1.1 = {
+#		liege = "k_dihalet"
+#		government = feudal_government
+#		holder = kawoch_mogowai_6
+#	}
+#	1230.1.1 = {
+#		change_development_level = 11
+#	}
+#}
+#c_berilab = {
+#	1230.1.1 = {
+#		#liege = "d_zurba"
+#		government = feudal_government
+#		holder = kawoch_waharai_1
+#	}
+#	1230.1.1 = {
+#		change_development_level = 9
+#	}
+#}
+c_berebowi = {
+	1230.1.1 = {
+		#liege = "d_zurba"
+		government = feudal_government
+		holder = kawoch_waharai_2
+	}
+	1230.1.1 = {
+		change_development_level = 5
+	}
+}
+#c_sevelaz = {
+#	1230.1.1 = {
+#		#liege = "d_zurba"
+#		government = feudal_government
+#		holder = kawoch_waharai_1
+#	}
+#	1230.1.1 = {
+#		change_development_level = 11
+#	}
+#}
+#c_yinaskul = {
+#	1230.1.1 = {
+#		government = feudal_government
+#		holder = kawoch_waharai_2
+#	}
+#	1230.1.1 = {
+#		change_development_level = 10
+#	}
+#}
+#c_konale = {
+#	1230.1.1 = {
+#		government = feudal_government
+#		holder = kawoch_waharai_3
+#	}
+#	1230.1.1 = {
+#		change_development_level = 9
+#	}
+#}
+c_lastira = {
+	1230.1.1 = {
+		government = feudal_government
+		holder = kawoch_waharai_4
+	}
+	1230.1.1 = {
+		change_development_level = 5
+	}
+}
+c_sariya = {
+	1230.1.1 = {
+		government = feudal_government
+		holder = kawoch_waharai_3
+		change_development_level = 7
+	}
+	1250.1.1 = {
+		liege = "e_nitsafai"
+		government = theocracy_government
+		holder = kawoch_nitsafai_2
+	}
+	
+}
+#c_jerilut = {
+#	1230.1.1 = {
+#		#liege = "d_kawuzak"
+#		government = theocracy_government
+#		holder = kawoch_nitsafai_8
+#	}
+#	1230.1.1 = {
+#		change_development_level = 7
+#	}
+#}
+#c_irawi = {
+#	1230.1.1 = {
+#		#liege = "d_kawuzak"
+#		government = theocracy_government
+#		holder = kawoch_nitsafai_9
+#	}
+#	1230.1.1 = {
+#		change_development_level = 6
+#	}
+#}

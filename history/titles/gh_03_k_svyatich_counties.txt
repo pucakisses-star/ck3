@@ -1,0 +1,83 @@
+﻿c_the_drums = {
+	1250.10.23 = {
+		holder = etrandanexi_lifepath_2
+		liege = k_adrakamp
+		government = republic_playable_government
+	}
+}
+c_drenchroot = {
+	1253.1.1 = {
+		liege = "e_migrant_coalition"
+		holder = kardwens_kardawai_2
+		government = tribal_government
+	}
+}
+c_seafury = {
+	1253.1.1 = {
+		liege = "k_kardwen_confederacy"
+		holder = kardwens_kardawai_3
+		government = tribal_government
+	}
+}
+c_tempestcourt = {
+	1232.5.1 = {
+		holder = northernimperial_aversarinas_aagiokrata_49
+		liege = k_varicadd_imperial_clique
+	}
+	1251.11.19 = {
+		liege = "e_migrant_coalition"
+		holder = northernimperial_aversarinas_aagiokrata_50
+		government = feudal_government
+	}
+}
+c_wetstone = {
+	1253.1.1 = {
+		liege = "e_migrant_coalition"
+		holder = kardwens_kardawai_2
+		government = tribal_government
+	}
+}
+c_mudsprout = {
+	1253.1.1 = {
+		liege = "e_migrant_coalition"
+		holder = kardwens_kardawai_2
+		government = tribal_government
+	}
+}
+c_thousandcap = {
+	1253.11.24 = {
+		liege = "e_migrant_coalition"
+		holder = corvosnari_wyrdpath_5
+		government = continental_clan_government
+	}
+}	
+c_kanice = {
+	1253.1.1 = {
+		liege = "e_migrant_coalition"
+		holder = kardwens_kardawai_1
+		government = tribal_government
+	}
+}
+c_grandthorn = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	66.11.14 = {
+		holder = wasteland
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_rovanjska = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	66.11.14 = {
+		holder = wasteland
+	}
+	1253.1.1 = {
+		holder = curgerski_sjalvolki_2
+		government = continental_clan_government
+	}
+}

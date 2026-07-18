@@ -1,0 +1,55 @@
+﻿adabyann_adabyssian_1 = { # ##fort captain
+	name = "Abubakar"
+	dna = adabyann_adabyssian_1
+	dynasty = dyn_hadiyan_1
+	religion = "adabyssian"
+	culture = "adabyann"
+	
+	trait = stubborn
+	trait = content
+	trait = brave
+	trait = strong
+	trait = education_martial_4
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_sub_saharan_01
+			custom_hair = male_hair_special_01
+		}
+	}
+
+	1226.2.21 = {
+		birth = yes
+	}
+
+	1246.1.1 = {
+		spawn_army = {
+			uses_supply = no
+			inheritable = yes
+			location = province:1618
+			
+			name = adabyss_event_troops
+			
+			men_at_arms = {
+				type = golden_spears
+				stacks = 40
+			}
+			men_at_arms = {
+					type = golem_infantry
+					stacks = 20
+			}
+			men_at_arms = {
+					type = autocrossbowmen
+					stacks = 30
+			}
+			men_at_arms = {
+					type = arcane_auxiliaries
+					stacks = 20
+			}
+			men_at_arms = {
+					type = armored_horsemen
+					stacks = 20
+			}
+		}
+	}
+}

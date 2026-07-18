@@ -1,0 +1,40 @@
+﻿aersodiaxian_islander_drakanorix_aagiokrata_1 = {
+    name = "Maximos"
+    religion = drakanorix_aagiokrata
+    culture = aersodiaxian_islander
+    1216.1.11 = {
+        birth = yes
+        trait = magic_good_1
+    }
+    1228.1.11 = {
+        trait = temperate
+        trait = compassionate
+        trait = humble
+    }
+    1232.1.11 = {
+        trait = education_stewardship_2
+        trait = gh_historical_school
+        effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+    }
+}
+
+aersodiaxian_islander_drakanorix_aagiokrata_2 = {
+    name = "Periaxis"
+    religion = drakanorix_aagiokrata
+    culture = aersodiaxian_islander
+    trait = shrewd
+    1225.5.7 = {
+        birth = yes
+    }
+    1237.5.7 = {
+        trait = calm
+        trait = gregarious
+        trait = gluttonous
+    }
+    1241.5.7 = {
+        trait = education_diplomacy_3
+    }
+}

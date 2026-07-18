@@ -1,0 +1,13 @@
+d_bahazradad = {
+	1230.1.1 = { change_development_level = 20 }
+}
+d_zakhred = { 
+	1230.1.1 = {
+		holder = auzangeb_ruidari_21
+		liege = e_ayyar
+	}
+	1230.1.1 = { change_development_level = 15 }
+}
+d_vabhrund = {
+	1230.1.1 = { change_development_level = 16 }
+}

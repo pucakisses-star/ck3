@@ -1,0 +1,69 @@
+﻿aeviaxian_aerasodiax_1 = { # Dhaci'xen attempted to stop the spread of the Aagiokratia, seeing it as cruel and twisted in comparison to the 'old ways', in many ways being the last gasp of Aversarian culture not dominated by the Aelarvisians worst zealots. Sadly, his forces ended up fighting a civil war over the matter in the War of the Thousand Dragons, and while it stalemated, Dhaci'xen according to ancient legends, was so horrified at the bloodshed at the first great magical war and worried for his comrade Anatar'ianax, his dragon mount and Lord of Aversaria's dragons, that he ventured out to meet Phanago'rax of the rebel forces. In the trap, Dhaci'xen, his loyal guard, and Anatar'ianax were captured and killed through a dozen days of public torture in front of Oraispol. They only slit his throat once the gates were opened and the garrison surrendered. The city was shortly burned to the ground, and the Aagiokratia was triumphant.
+	name = "Dhacixen"
+	dna = dhacixen
+	religion = "aerasodiax"
+	culture = "aeviaxian"
+
+	father = aelarvisian_aerasodiax_5
+
+	142.2.2 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	154.1.1 = {
+		trait = brave
+		trait = diligent
+		trait = compassionate	
+	}
+
+	158.2.2 = {
+		trait = scholar
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	170.7.11 = {
+		death = {
+			death_reason = death_torture
+			killer = aelarvisian_aversarinas_aagiokrata_3
+		}
+	}
+}
+
+aeviaxian_aerasodiax_2 = { # Kalliphix, considered the father of the Aversarian field of anatomy.
+	name = "Kaliphix"	# Archaic variant of "Gallephon"
+	religion = "aerasodiax"
+	culture = "aeviaxian"
+
+	1.3.3 = {	# GH TODO: Change this to a BI date once we get in support for them
+		birth = yes
+		trait = magic_good_1
+	}
+
+	12.1.1 = {
+		trait = chaste
+		trait = diligent
+		trait = callous
+	}
+
+	16.3.3 = {
+		trait = education_learning_4
+		trait = lifestyle_physician
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	93.1.19 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}

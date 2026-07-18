@@ -1,0 +1,9 @@
+﻿leviden_adabyssian_1 = { # Does not appear anywhere in the mod
+	name = darude
+	religion = "adabyssian"
+	culture = "leviden"
+
+	1231.6.18 = {
+		birth = yes
+	}
+}

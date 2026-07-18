@@ -1,0 +1,35 @@
+﻿c_eastern_undercity_19 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_eastern_undercity_41 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_eastern_undercity_40 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_eastern_undercity_16 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_eastern_undercity_44 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_eastern_undercity_46 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_eastern_undercity_38 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

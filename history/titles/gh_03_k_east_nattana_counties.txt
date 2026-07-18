@@ -1,0 +1,72 @@
+﻿c_batreef = { # id = 8876; Henbereng; held by the Heretic's younger son
+
+	85.1.1 = {
+		holder = korlenalmic_korlacan_5
+	}
+	
+	185.1.1 = {
+		holder = nathanalmic_nattanan_5
+	}
+
+	300.1.1 = {
+		holder = wasteland
+	}
+
+	1216.3.1 = {
+		holder = nathanalmic_nattanan_26
+	}
+	1252.1.1 = {
+		holder = korlenalmic_korlacan_4
+	}
+}
+
+c_misty_paths = {
+	1245.10.9 = {
+		holder = gotharnalmic_nattanan_1
+	}
+}
+	
+
+c_stonerigg = {
+	1243.05.9 = {
+		holder = gotharnalmic_nattanan_2
+	}
+}
+
+c_karnatar = {
+	1250.09.5 = {
+		holder = gotharnalmic_nattanan_3
+	}
+}
+
+
+c_chan_jerneim_suleaan = {
+	1200.3.1 = {
+		holder = nathanalmic_nattanan_1
+	}
+	1215.6.12 = {
+		holder = nathanalmic_nattanan_4
+		government = magocratic_government
+
+	}
+}
+
+
+c_chapelwaterfall = {
+	1201.09.5 = {
+		holder = nathanalmic_nattanan_35
+	}
+}
+	
+
+c_star_flowers_home = {
+	1215.5.10 = {
+		holder = nathanalmic_nattanan_36
+	}
+}
+
+c_sogo_jern = {
+	1222.11.10 = {
+		holder = nathanalmic_nattanan_37
+	}
+}

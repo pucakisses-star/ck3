@@ -1,0 +1,16 @@
+d_taliwahin = {
+	1200.1.1 = { change_development_level = 12 }
+}
+d_hadirah = {
+	1230.1.1 = {
+		holder = utyalid_harthahi_1
+		liege = k_eastern_frontier
+	}
+	1230.1.1 = { change_development_level = 2 }
+}
+d_babojarm = {
+	1230.1.1 = { change_development_level = 2 }
+}
+d_ebed01 = {
+	1230.1.1 = { change_development_level = 2 }
+}

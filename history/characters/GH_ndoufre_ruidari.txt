@@ -1,0 +1,9 @@
+﻿ndoufre_ruidari_1 = {
+	name = "Dothou"
+	religion = "ruidari"
+	culture = "ndoufre"
+
+	1227.8.5 = {
+		birth = yes
+	}
+}

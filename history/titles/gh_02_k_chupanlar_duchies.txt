@@ -1,0 +1,75 @@
+d_khvoshinane_sofla = {
+	1175.5.14 = {
+		holder = sarthian_mahndayana_7
+		liege = e_amsari
+		government = clan_government
+	}
+	1184.6.11 = {
+		holder = sarthian_mahndayana_8
+		liege = e_amsari
+	}
+	1219.2.7 = {
+		holder = sarthian_mahndayana_9
+		liege = e_amsari
+	}
+	1232.6.16 = {
+		holder = sarthian_mahndayana_10
+		liege = e_amsari
+	}
+	1239.4.7 = {
+		holder = sarthian_mahndayana_4
+		liege = e_amsari
+	}
+	1230.1.1 = { change_development_level = 15 }
+}
+#d_dejkuh = {
+#	1244.1.1 = {
+#		holder = sarthian_mahndayana_2
+#		liege = e_amsari
+#		government = clan_government
+#	}
+#	1230.1.1 = { change_development_level = 14 }
+#}
+d_darundel = {
+	1244.1.1 = {
+		holder = thyssae_mahndayana_1
+		liege = e_amsari
+		government = clan_government
+	}	
+	1230.1.1 = { change_development_level = 13 }
+}
+d_sar_dasht = {
+	1244.1.1 = {
+		holder = thyssae_mahndayana_4
+		liege = e_amsari
+		government = clan_government
+	}
+	1230.1.1 = { change_development_level = 4 }
+}
+
+#d_amsar_duchy1 = {
+#	#1121.5.8 = {
+#	#	holder = thyssae_mahndayana_12
+#	#	liege = e_amsari
+#	#}
+#	#1122.12.5 = {
+#	#	holder = thyssae_mahndayana_13
+#	#	liege = e_amsari
+#	#}
+#	1230.1.1 = { change_development_level = 4 }
+#	1155.7.4 = {
+#		holder = thyssae_mahndayana_14
+#		liege = e_amsari
+#	}
+#	1174.9.22 = {
+#		holder = thyssae_mahndayana_15
+#		liege = e_amsari
+#	}
+#	1196.7.11 = {
+#		holder = thyssae_mahndayana_16
+#		liege = e_amsari
+#	}	
+#	1205.12.5 = {
+#		holder = 0
+#	}
+#}

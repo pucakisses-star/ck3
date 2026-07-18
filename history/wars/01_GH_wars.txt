@@ -1,0 +1,274 @@
+﻿############
+## 1254 WARS
+
+# Cenware's invasion of Assocaea
+war = {
+	name = "war_1254_sjalvolki_invasion"
+	start_date = 1252.8.16
+	end_date = 1256.2.14
+	targeted_titles = {
+		k_assocaea
+	}
+	casus_belli = sjalvolki_conquest_cb
+	attackers = { daukeni_sjalvolki_1 }
+	defenders = { westernimperial_aversarinas_aagiokrata_154 westernimperial_aversarinas_aagiokrata_203 westernimperial_aversarinas_aagiokrata_181 westernimperial_aversarinas_aagiokrata_182 westernimperial_aversarinas_aagiokrata_155 }
+	claimant = daukeni_sjalvolki_1
+
+	daukeni_sjalvolki_1 = {
+		1254.1.1 = {
+			location = 3459
+		}
+	}
+	westernimperial_aversarinas_aagiokrata_154 = {
+		1254.1.1 = {
+			location = 3459
+		}
+	}
+}
+
+# Rene's Landing
+# GH_EP3_TODO: Commented this war for now since Rene starts as a LAAMP for EP3
+#war = {
+#	name = "war_1254_renes_landing"
+#	start_date = 1253.11.29
+#	end_date = 1254.2.24
+#	targeted_titles = {
+#		c_permapilese
+#	}
+#	casus_belli = claim_cb
+#	attackers = { voyagen_lifepath_8 }
+#	defenders = { voyagen_lifepath_17 }
+#	claimant = voyagen_lifepath_8
+#
+#	voyagen_lifepath_8 = {
+#		1254.1.1 = {
+#			location = 2452
+#		}
+#	}
+#	voyagen_lifepath_17 = {
+#		1254.1.1 = {
+#			location = 2452
+#		}
+#	}
+#}
+
+#Wardenite Reclamation
+war = {
+	name = "war_1254_reclamation"
+	start_date = 1253.11.29
+	end_date = 1254.2.24
+	targeted_titles = {
+		d_chalciana
+	}
+	casus_belli = claim_cb
+	attackers = { tasurmad_wardenism_1 }
+	defenders = { voyagen_lifepath_49 }
+	claimant = tasurmad_wardenism_1
+
+	tasurmad_wardenism_1 = {
+		1254.1.1 = {
+			location = 1195
+		}
+	}
+	voyagen_lifepath_49 = {
+		1254.1.1 = {
+			location = 1221
+		}
+	}
+}
+
+# Ulfirx's Landing
+war = {
+	name = "war_1254_ulfirxs_landing"
+	start_date = 1253.11.29
+	end_date = 1254.2.24
+	targeted_titles = {
+		c_molos
+	}
+	casus_belli = claim_cb
+	attackers = { centralislander_aversarinas_aagiokrata_1 }
+	defenders = { vrodkin_sjalvolki_1 }
+	claimant = centralislander_aversarinas_aagiokrata_1
+
+	centralislander_aversarinas_aagiokrata_1 = {
+		1253.11.29 = {
+			location = 2452
+		}
+	}
+	vrodkin_sjalvolki_1 = {
+		1253.11.29 = {
+			location = 6109
+		}
+	}
+}
+
+# Melane's rebellion
+war = {
+	name = "war_1254_melane_civil_war"
+	start_date = 1253.10.12
+	end_date = 1254.2.24
+	casus_belli = depose_war
+	attackers = {
+		centralislander_aversarinas_aagiokrata_2
+		centralislander_aversarinas_aagiokrata_4
+	}
+	defenders = { centralislander_aversarinas_aagiokrata_1 }
+
+	centralislander_aversarinas_aagiokrata_2 = {
+		1253.12.2 = {
+			location = 5620
+		}
+	}
+	centralislander_aversarinas_aagiokrata_1 = {
+		1253.10.12 = {
+			location = 9107
+		}
+	}
+}
+
+# Mercenary Rebellion
+war = {
+	name = "war_1254_mercenary_civil_war"
+	start_date = 1253.12.2
+	end_date = 1254.2.24
+	casus_belli = independence_war
+	attackers = { westernimperial_aversarinas_aagiokrata_158 }
+	defenders = { centralislander_aversarinas_aagiokrata_1 }
+
+	centralislander_aversarinas_aagiokrata_1 = {
+		1253.12.2 = {
+			location = 9107
+		}
+	}
+	westernimperial_aversarinas_aagiokrata_158 = {
+		1253.12.2 = {
+			location = 5661
+		}
+	}
+}
+
+# Independence war against Dexios
+war = {
+	name = "war_1254_isles_independence"
+	start_date = 1253.12.4
+	end_date = 1254.2.24
+	casus_belli = independence_faction_war
+	attackers = {
+		centralislander_aversarinas_aagiokrata_6
+		centralislander_aversarinas_aagiokrata_7
+		#vrodkin_sjalvolki_10
+	}
+	defenders = { centralislander_aversarinas_aagiokrata_1 }
+
+	centralislander_aversarinas_aagiokrata_1 = {
+		1253.12.4 = {
+			location = 9107
+		}
+	}
+	centralislander_aversarinas_aagiokrata_6 = {
+		1253.12.4 = {
+			location = 8607
+		}
+	}
+}
+
+# Kashti Offensive Against the False Regent
+war = {
+	name = "war_1254_kashti_surprise"
+	start_date = 1251.10.3
+	end_date = 1257.5.20
+	targeted_titles = {
+		d_thinder
+	}
+	casus_belli = claim_cb
+	attackers = { vastarnai_vidvaookeyatra_1 }
+	defenders = { hokanta_vidvaookeyatra_33 }
+	claimant = vastarnai_vidvaookeyatra_1
+
+	vastarnai_vidvaookeyatra_1 = {
+		1254.1.1 = {
+			location = 8979
+		}
+	}
+
+	hokanta_vidvaookeyatra_33 = {
+		1254.1.1 = {
+			location = 3409
+		}
+	}
+}
+
+# Kinilam Rebels Against the False Regent
+war = {
+	name = "war_1254_kinilam_independence"
+	start_date = 1250.12.4
+	end_date = 1256.2.20
+	casus_belli = nation_fracturing_faction_war
+	targeted_titles = {
+		c_sakhtagat
+		c_lamai
+		c_chintallamadur
+		c_irhat
+		c_natawalaga
+		c_welituva
+	}
+	attackers = {
+		zabari_vidvaookeyatra_2
+		qoltaam_vidvaookeyatra_1
+		kadwana_vidvaookeyatra_2
+		hokanta_vidvaookeyatra_2
+	}
+	defenders = { hokanta_vidvaookeyatra_33 }
+
+	zabari_vidvaookeyatra_2 = {
+		1253.12.4 = {
+			location = 2235
+		}
+	}
+	qoltaam_vidvaookeyatra_1 = {
+		1253.12.4 = {
+			location = 2235
+		}
+	}
+	kadwana_vidvaookeyatra_2 = {
+		1253.12.4 = {
+			location = 2235
+		}
+	}
+	hokanta_vidvaookeyatra_2 = {
+		1253.12.4 = {
+			location = 2235
+		}
+	}
+}
+
+
+##############################################################
+# 1298 WARS
+##############################################################
+
+#Anti-Imperrech march into Aterispol
+war = {
+	name = "war_1298_aterispol"
+	start_date = 1298.3.2
+	end_date = 1298.9.24
+	targeted_titles = {
+		c_ullabahd
+	}
+	casus_belli = county_conquest_cb
+	attackers = { theugombrians_cnevobarthane_13 }
+	defenders = { easternimperial_aironoian_aagiokrata_89 }
+}
+
+# Coalition vs Wellatolla War
+war = {
+	name = "war_1298_paccai_malai_war"
+	start_date = 1297.7.16
+	end_date = 1300.6.1
+	targeted_titles = {
+		c_monergua
+	}
+	casus_belli = county_conquest_cb
+	attackers = { deraani_yakasak_4 }
+	defenders = { ikanita_yakasak_12 }
+}

@@ -1,0 +1,84 @@
+﻿adani_nabbarek_1 = { # 1200 Adani Duke, betrayed and slaughtered by the Sakankra
+	name = "Sobhanaraja"
+	religion = "nabbarek"
+	culture = "adani"
+	dynasty = dyn_adani_1
+	sexuality = heterosexual
+
+	1175.9.4 = {
+		birth = yes
+	}
+	1187.9.4 = {
+		trait = zealous
+		trait = arrogant
+		trait = paranoid
+	}
+	1191.9.4 = {
+		trait = education_martial_2
+		trait = unyielding_defender
+		trait = overseer
+	}
+	1194.3.6 = {
+		add_spouse = adani_nabbarek_2
+	}
+	1220.9.19 = {
+		death = {
+			death_reason = death_battle
+			killer = sakankra_vidvaookeyatra_23
+		}
+	}
+}
+
+adani_nabbarek_2 = { # 1200 Adani Duchess
+	name = "Mahadevi"
+	religion = "nabbarek"
+	culture = "adani"
+	sexuality = heterosexual
+	female = yes
+
+	1177.3.26 = {
+		birth = yes
+	}
+	1189.3.26 = {
+		trait = zealous
+		trait = humble
+		trait = trusting
+	}
+	1193.3.26 = {
+		trait = education_learning_2
+	}
+	1220.9.23 = {
+		death = {
+			death_reason = death_suicide
+		}
+	}
+}
+
+adani_nabbarek_3 = { # 1200 Adani Duke's second son
+	name = "Vinita"
+	religion = "nabbarek"
+	culture = "adani"
+	father = adani_nabbarek_1
+	mother = adani_nabbarek_2
+	dynasty = dyn_adani_1
+	sexuality = homosexual
+
+	1199.2.22 = {
+		birth = yes
+	}
+	1211.2.22 = {
+		trait = arrogant
+		trait = brave
+		trait = lazy
+	}
+	1215.2.22 = {
+		trait = education_intrigue_2
+		trait = flexible_leader
+	}
+	1220.9.19 = {
+		death = {
+			death_reason = death_battle
+			killer = sakankra_vidvaookeyatra_23
+		}
+	}
+}

@@ -1,0 +1,8 @@
+﻿marndeoticeni_marndeoticeni_cult_1 = {
+	name = "Xathos"
+	culture = "marndeoticeni"
+	religion = "marndeoticeni_cult"
+	1229.1.1 = {
+		birth = yes
+	}
+}

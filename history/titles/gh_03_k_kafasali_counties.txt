@@ -1,0 +1,150 @@
+
+c_salavolu = {
+	1251.1.1 = {
+		holder = xasamdaas_ebohephai_olten_2
+		liege = k_magiyor
+		change_development_level = 8
+		government = nomad_government
+	}
+}
+c_nhurapan = {
+	1251.1.1 = {
+		holder = latur_ebohephai_olten_2
+		liege = k_magiyor
+		change_development_level = 8
+		government = nomad_government
+	}
+}
+c_vembaja = {
+	1251.1.1 = {
+		holder = nargul_ebohephai_olten_3
+		liege = k_magiyor
+		change_development_level = 11
+		government = nomad_government
+	}
+}
+c_khandrapaktal = {
+	1200.3.1 = {
+		holder = xokola_vidvaookeyatra_4
+	}
+	1222.7.11 = {
+		holder = xokola_vidvaookeyatra_2
+		change_development_level = 8
+	}	
+}
+c_rumhora = {
+	1194.4.16 = {
+		holder = rahikaya_vidvaookeyatra_1
+	}
+	1226.6.9 = {
+		holder = rahikaya_vidvaookeyatra_7
+	}
+	1230.1.9 = {
+		holder = rahikaya_vidvaookeyatra_11
+		change_development_level = 18
+	}
+}
+c_birasar = {
+	827.8.14 = {
+		holder = rahikaya_vidvaookeyatra_14
+		government = magocratic_government
+		liege = 0  
+	}
+	1245.5.9 = {
+		holder = zakhirun_askevaryaa_1
+		government = feudal_government
+		liege = 0  
+		change_development_level = 5
+	}	
+}
+c_malroni = {
+	1200.3.1 = {
+		holder = tahanati_daramarjaratan_7
+		change_development_level = 8
+	}
+	1215.8.11 = {
+		holder = tahanati_daramarjaratan_4
+	}
+	1223.2.17 = {
+		holder = tahanati_daramarjaratan_2
+	}
+	1231.4.6 = {
+		holder = tahanati_daramarjaratan_1
+	}	
+}
+c_turoha = {
+	1200.3.1 = {
+		holder = tahanati_daramarjaratan_7
+		change_development_level = 8
+	}
+	1215.8.11 = {
+		holder = tahanati_daramarjaratan_4
+	}
+	1223.2.17 = {
+		holder = tahanati_daramarjaratan_2
+	}
+	1231.4.6 = {
+		holder = tahanati_daramarjaratan_1
+	}  
+}
+c_mahla = {
+	1200.3.1 = {
+		holder = karana_askevaryaa_5
+		change_development_level = 8
+	}
+	1204.11.16 = {
+		holder = karana_askevaryaa_2
+	}
+	1231.4.6 = {
+		holder = karana_askevaryaa_1
+	}	
+}
+c_provinceal_tawazeraa = {
+	1200.3.1 = {
+		holder = xokola_vidvaookeyatra_4
+	}
+	1222.7.11 = {
+		holder = xokola_vidvaookeyatra_2
+		change_development_level = 8
+	}	
+}
+
+c_hachigi = {
+	1194.4.16 = {
+		holder = rahikaya_vidvaookeyatra_1
+	}
+	1226.6.9 = {
+		holder = rahikaya_vidvaookeyatra_7
+	}
+	1230.1.9 = {
+		holder = rahikaya_vidvaookeyatra_11
+	}
+	# Lonely Note: Giving a null holder to a county triggers an error, make a placeholder
+	# character and remove when possible.
+	#1231.4.6 = {
+	#	holder = 0
+	#}
+	1250.1.1 = {
+		holder = nargul_ebohephai_olten_1
+	}
+}
+c_baisipur = {
+	1194.4.16 = {
+		holder = rahikaya_vidvaookeyatra_1
+	}
+	1226.6.9 = {
+		holder = rahikaya_vidvaookeyatra_7
+	}
+	1230.1.9 = {
+		holder = rahikaya_vidvaookeyatra_11
+	}
+	# Lonely Note: Giving a null holder to a county triggers an error, make a placeholder
+	# character and remove when possible.
+	#1231.4.6 = {
+	#	holder = 0
+	#}
+	1250.1.1 = {
+		holder = nargul_ebohephai_olten_1
+		government = nomad_government
+	}
+}

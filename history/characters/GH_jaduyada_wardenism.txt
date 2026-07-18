@@ -1,0 +1,187 @@
+﻿jaduyada_wardenism_1 = {
+	name = "Obarek"
+	dna = jaduyada_wardenism_1
+	religion = "wardenism"
+	culture = "jaduyada"
+	dynasty = dyn_warden_1
+
+	trait = magic_good_5
+	trait = gregarious
+	trait = chaste
+	trait = deceitful
+	trait = brave
+	trait = education_diplomacy_4
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_02
+			custom_beards = male_beard_northern_01
+			custom_gh_headgear = hood_sarradon
+		}
+	}
+
+	1276.2.6 = {
+		birth = yes
+	}
+	1288.1.1 = {
+		death = yes
+	}
+}
+
+jaduyada_wardenism_2 = {
+	name = "AghlI_b"
+	religion = "wardenism"
+	culture = "jaduyada"
+	dynasty = dyn_warden_6
+
+	mother = jaduyada_wardenism_9
+	
+	1224.1.13 = {
+		birth = yes
+		trait = magic_good_5
+	}
+	1240.1.13 = {
+		trait = vengeful
+		trait = impatient
+		trait = ambitious
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:school_of_manifestations }
+			set_variable = { name = historical_magic_school_min_spells value = 12 }
+		}
+	
+	}
+}
+
+jaduyada_wardenism_3 = {
+	name = "ShamI_r"
+	religion = "wardenism"
+	culture = "jaduyada"
+
+	1231.2.15 = {
+		birth = yes
+	}
+}
+
+jaduyada_wardenism_4 = {
+	name = "Habib"
+	religion = "wardenism"
+	culture = "jaduyada"
+
+	1220.4.14 = {
+		birth = yes
+	}
+}
+
+jaduyada_wardenism_5 = {
+	name = "Dhahhak"
+	religion = "wardenism"
+	culture = "jaduyada"
+
+	1217.12.24 = {
+		birth = yes
+	}
+}
+
+jaduyada_wardenism_6 = {
+	name = "Umar"
+	religion = "wardenism"
+	culture = "jaduyada"
+
+	1234.3.22 = {
+		birth = yes
+	}
+}
+
+jaduyada_wardenism_7 = {
+	name = "Idris"
+	religion = "wardenism"
+	culture = "jaduyada"
+
+	1237.4.15 = {
+		birth = yes
+	}
+}
+
+jaduyada_wardenism_8 = { # High Judge Mudabariq, founder of the Maridai’a Traditionalist school
+    name = "Mudabariq"
+    religion = "wardenism"
+    culture = "jaduyada"
+    dynasty = dyn_warden_6
+
+    sexuality = heterosexual
+
+    martial = 9
+    diplomacy = 4
+    stewardship = 5
+    intrigue = 7
+    learning = 5
+    prowess = 5
+
+    1164.11.28 = {
+        birth = yes
+        trait = magic_good_4
+        trait = intellect_good_1
+    }
+
+    1176.1.1 = {
+        trait = arrogant
+        trait = calm
+        trait = gregarious
+    }
+
+    1180.11.28 = {
+        effect = { set_base_arcana = { AMOUNT = 6 } }
+        trait = education_diplomacy_4
+        trait = lifestyle_jurist
+        trait = scholar
+    }
+
+    1207.11.6 = { # Judges' Massacre
+        death = {
+            death_reason = death_murder
+        }
+    }
+}
+
+jaduyada_wardenism_9 = { #
+    name = "Rab_A_"
+    religion = "wardenism"
+    culture = "jaduyada"
+    dynasty = dyn_warden_6
+
+    father = jaduyada_wardenism_8
+    sexuality = heterosexual
+    female = yes
+
+    martial = 9
+    diplomacy = 5
+    stewardship = 7
+    intrigue = 8
+    learning = 3
+    prowess = 8
+
+    1191.6.28 = {
+        birth = yes
+        trait = magic_good_3
+    }
+
+    1203.1.1 = {
+        trait = chaste
+        trait = diligent
+        trait = brave
+    }
+
+    1207.6.28 = {
+        effect = { set_base_arcana = { AMOUNT = 4 } }
+        trait = education_diplomacy_1
+        trait = lifestyle_jurist
+    }
+
+    1227.9.14 = { # Faghira-Jalil Revolt
+        death = {
+            death_reason = death_murder
+        }
+    }
+}

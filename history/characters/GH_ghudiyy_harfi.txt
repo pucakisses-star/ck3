@@ -1,0 +1,68 @@
+﻿ghudiyy_harfi_1 = { # Bagration's Nomad
+	name = "AbaruhSaqiq"
+	dna = ghudiyy_harfi_1
+	religion = "harfi"
+	culture = "ghudiyy"
+	sexuality = heterosexual
+	dynasty = dyn_ghudiyy_1
+	trait = intellect_good_1
+
+	martial = 8
+	diplomacy = 6
+	stewardship = 5
+	intrigue = 5
+	learning = 7
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_mena_01
+			custom_beards = male_beard_mena_02
+		}
+	}
+
+	1225.11.9 = {
+		birth = yes
+	}
+	1237.11.9 = {
+		trait = brave
+		trait = just
+		trait = ambitious
+	}
+	1241.11.9 = {
+		trait = education_martial_2
+		trait = adventurer
+		trait = poet
+		trait = scarred
+		trait = gh_historical_blademaster_3
+	}
+}
+
+ghudiyy_harfi_2 = {
+	name = "Amasin"
+	religion = "harfi"
+	culture = "ghudiyy"
+
+	1207.5.29 = {
+		birth = yes
+	}
+}
+
+ghudiyy_harfi_3 = {
+	name = "Adherbal"
+	religion = "harfi"
+	culture = "ghudiyy"
+
+	1215.5.17 = {
+		birth = yes
+	}
+}
+
+ghudiyy_harfi_4 = {
+	name = "Aklouf"
+	religion = "harfi"
+	culture = "ghudiyy"
+
+	1230.11.1 = {
+		birth = yes
+	}
+}

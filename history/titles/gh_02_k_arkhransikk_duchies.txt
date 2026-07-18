@@ -1,0 +1,5 @@
+d_reveun = {
+	1230.1.1 = {
+		holder = redrunner_aversarinas_aagiokrata_5
+	}
+}

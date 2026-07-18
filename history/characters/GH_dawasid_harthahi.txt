@@ -1,0 +1,40 @@
+﻿dawasid_harthahi_1 = {
+	name = "YusU_f"
+	dynasty = dyn_khenemhat_11
+	religion = "harthahi"
+	culture = "dawasid"
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+
+	1220.1.1 = {
+		birth = yes
+	}
+}
+
+dawasid_harthahi_2 = {
+	name = "Ilyaas"
+	dynasty = dyn_khenemhat_12
+	religion = "harthahi"
+	culture = "dawasid"
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+
+	1227.1.1 = {
+		birth = yes
+	}
+}
+
+dawasid_harthahi_3 = {
+	name = "Hartha"
+	dynasty = dyn_khenemhat_15
+	religion = "harthahi"
+	culture = "dawasid"
+
+	1230.1.1 = {
+		birth = yes
+	}
+}

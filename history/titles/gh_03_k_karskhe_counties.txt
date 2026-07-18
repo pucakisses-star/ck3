@@ -1,0 +1,86 @@
+c_mendvo = {
+	1200.3.1 = {
+		holder = draneti_izaerto_bosar_6
+		change_development_level = 8
+	}
+	1238.4.11 = {
+		holder = draneti_izaerto_bosar_1
+	}
+}
+c_mishtekti = {
+	1200.3.1 = {
+		holder = draneti_izaerto_bosar_6
+		change_development_level = 7
+	}
+	1238.4.11 = {
+		liege = d_ksakho
+		holder = amaghean_amaghean_aagiokrata_118
+		change_development_level = 7
+	}
+}
+c_laghotredia = {
+	1199.4.24 = {
+		# liege = d_javento # GH TODO: Javento removed, get new duchy
+		holder = amaghean_amaghean_aagiokrata_40
+		change_development_level = 6
+	}
+	1240.1.19 = {
+		liege = d_ksakho
+		holder = amaghean_amaghean_aagiokrata_17
+	}
+	1250.12.10 = {
+		# liege = d_shagerali # GH TODO: Shagerali removed, get a new duchy
+		holder = draneti_izaerto_bosar_3 
+	}
+}
+#c_isle_provinces = {
+#	1199.4.24 = {
+#		# liege = d_javento # GH TODO: Javento removed, get new duchy
+#		holder = amaghean_amaghean_aagiokrata_40
+#		change_development_level = 7
+#	}
+#	1240.1.19 = {
+#		liege = d_ksakho
+#		holder = amaghean_amaghean_aagiokrata_17
+#	}
+#	1250.12.10 = {
+#		# liege = d_shagerali # GH TODO: Shagerali removed, get a new duchy
+#		holder = draneti_izaerto_bosar_5 
+#	}
+#}
+c_oni = {
+	1232.1.1 = {
+		liege = d_tsojita
+		holder = yylaxxaz_xaxbaxakanax_1
+	}
+}
+c_honghi = {
+	1199.4.24 = {
+		# liege = d_javento # GH TODO: Javento removed, get new duchy
+		holder = amaghean_amaghean_aagiokrata_40
+		change_development_level = 6
+	}
+	1240.1.19 = {
+		liege = d_ksakho
+		holder = amaghean_amaghean_aagiokrata_17
+	}
+	1250.12.10 = {
+		# liege = d_shagerali # GH TODO: Shagerali removed, get a new duchy
+		holder = amaghean_amaghean_aagiokrata_117 
+	}
+}
+c_rustti = {
+	1200.3.1 = {
+		# liege = d_shagerali # GH TODO: Shagerali removed, get a new duchy
+		holder = charchac_daminkar_2 
+		change_development_level = 6
+	}
+	1240.11.15 = {
+		# liege = d_shagerali # GH TODO: Shagerali removed, get a new duchy
+		holder = charchac_alau_koev_2
+	}
+	1250.12.10 = {
+		# liege = d_shagerali # GH TODO: Shagerali removed, get a new duchy
+		holder = draneti_izaerto_bosar_2 
+	}
+}

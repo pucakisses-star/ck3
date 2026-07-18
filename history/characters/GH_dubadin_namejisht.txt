@@ -1,0 +1,18 @@
+﻿dubadin_namejisht_1 = {
+	name = "Misama"
+	dynasty = dyn_central_empire_18
+	religion = "namejisht"
+	culture = "dubadin"
+
+	father = centralimperial_aversarinas_aagiokrata_126
+
+	trait = ambitious
+	trait = compassionate
+	trait = gregarious
+	trait = education_diplomacy_2
+	trait = beauty_good_1
+
+	1216.4.12 = {
+		birth = yes
+	}
+}

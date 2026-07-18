@@ -1,0 +1,1312 @@
+﻿greulokin_sjalvolki_1 = { # Kral of the Greulokin
+	name = "Prahomil" #Formerly Balthasar
+	dynasty = dyn_sjalvolki_11
+	religion = "sjalvolki"
+	culture = "greulokin"
+
+	father = greulokin_sjalvolki_15
+	mother = greulokin_sjalvolki_14
+
+	diplomacy = 10
+	martial = 5
+	stewardship = 7
+	intrigue = 1
+	learning = 3
+	prowess = 9
+
+	1232.4.22 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 2 }
+		}
+	}
+
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_sjalvolki
+		trait = deceitful
+		trait = stubborn
+		trait = calm
+		trait = magic_good_1
+		trait = education_diplomacy_3
+		effect = {
+			create_character_memory = { # Battle of the Elysian Pass
+				type = fought_in_elysian_pass_sjalvolki
+			}
+		}
+	}
+
+	1257.2.8 = {
+	    add_spouse = greulokin_sjalvolki_21
+	}
+
+	1293.3.28 = {
+	    death = { death_reason = death_ill }
+	}
+}
+
+greulokin_sjalvolki_2 = {
+	name = "Arilvog" #Formerly Theodoric
+	religion = "sjalvolki"
+	culture = "greulokin"
+
+	1217.1.23 = {
+		birth = yes
+	}
+}
+
+greulokin_sjalvolki_3 = {
+	name = "Jozdar" #Formerly Isidor
+	religion = "sjalvolki"
+	culture = "greulokin"
+
+	1230.11.8 = {
+		birth = yes
+	}
+}
+
+greulokin_sjalvolki_4 = {
+	name = "Voprinj" #Formerly Jacob
+	religion = "sjalvolki"
+	culture = "greulokin"
+
+	1221.9.11 = {
+		birth = yes
+	}
+}
+
+greulokin_sjalvolki_5 = {
+	name = "Unwan"
+	dynasty = dyn_sjalvolki_57
+	religion = sjalvolki
+	culture = greulokin
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = craven
+	trait = deceitful
+
+	1215.9.4 = {
+	    birth = yes
+	}
+
+	1235.10.26 = {
+	    add_spouse = greulokin_sjalvolki_27
+	}
+
+	1280.11.17 = {
+	    death = { death_reason = death_natural_causes }
+	}
+}
+
+greulokin_sjalvolki_6 = {
+	name = "Cetjmir" #Formerly Adalgod
+	religion = "sjalvolki"
+	culture = "greulokin"
+	dynasty = dyn_sjalvolki_58
+
+	1223.4.12 = {
+		birth = yes
+	}
+
+	1245.1.10 = {
+		add_spouse = greulokin_sjalvolki_35
+	}
+
+	1274.1.13 = {
+		add_spouse = greulokin_sjalvolki_36
+	}
+
+	1289.9.25 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+greulokin_sjalvolki_7 = {
+	name = "Tjosce" #Formerly Teodosije
+	religion = "sjalvolki"
+	culture = "greulokin"
+
+	1219.8.12 = {
+		birth = yes
+	}
+
+	1296.1.13 = {
+		death = { death_reason = death_coup_failed killer = greulokin_sjalvolki_22 }
+	}
+}
+
+greulokin_sjalvolki_8 = {
+	name = "Ljudevit"
+	dynasty = dyn_sjalvolki_26
+	religion = "sjalvolki"
+	culture = "greulokin"
+
+	sexuality = heterosexual
+
+
+	1218.11.27 = {
+	    birth = yes
+	}
+
+	1238.1.1 = {
+		trait = humble
+		trait = fickle
+		trait = gluttonous
+
+		trait = education_martial_3
+	}
+
+	1253.8.17 = {
+	    add_spouse = greulokin_sjalvolki_40
+	}
+
+	1286.8.24 = {
+	    death = { death_reason = death_natural_causes }
+	}
+}
+
+greulokin_sjalvolki_9 = { # Herberd wife
+	name = "Vulkina" #Formerly Ulfrina
+	religion = "sjalvolki"
+	culture = "greulokin"
+	female = yes
+	sexuality = heterosexual
+	trait = stubborn
+	trait = diligent
+	trait = gregarious
+	trait = lifestyle_herbalist
+	trait = education_learning_3
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp1_01							  
+		}
+	}
+	
+	1205.3.11 = {
+		birth = yes
+	}
+
+	1278.10.24 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+greulokin_sjalvolki_10 = {
+	name = "Boravoj" #Formerly Frode
+	dynasty = dyn_central_empire_6
+	religion = "sjalvolki"
+	culture = "greulokin"
+
+	1225.4.12 = {
+		birth = yes
+	}
+	1250.1.1 = {
+		spawn_army = {
+			name = sjalvolki_incursion_troops
+			uses_supply = yes
+			inheritable = no
+			location = province:4137
+			levies = {
+				value = 100
+			}
+			men_at_arms = {
+				type = sjalvolki_berserkers
+				stacks = 1
+			}
+		}
+	}
+}
+
+greulokin_sjalvolki_11 = { #Drazhic ‘Metal-Maker’, Sjalvolki champion at the Battle of Ten Trees
+	name = "Drazhic"
+	religion = "sjalvolki"
+	culture = "greulokin"
+	dynasty = dyn_sjalvolki_39
+	disallow_random_traits = yes
+
+	father = greulokin_sjalvolki_13
+
+	martial = 5
+	diplomacy = 6
+	stewardship = 4
+	intrigue = 3
+	learning = 4
+	prowess = 7
+
+	1212.4.21 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+
+	1224.1.1 = {
+		trait = diligent
+		trait = wrathful
+		trait = shy
+	}
+
+	1228.4.21 = {
+		trait = education_stewardship_4
+	}
+
+	1235.5.15 = {
+		trait = strong
+		trait = architect
+		give_nickname = nick_metal_maker
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	1247.3.15 = { # Ten Trees
+		death = {
+			death_reason = death_battle
+			killer = northernimperial_aversarinas_aagiokrata_52
+		}
+	}
+}
+
+greulokin_sjalvolki_12 = { #Dragonic ‘Iron-Hewer’, Sjalvolki champion at the Battle of Ten Trees
+	name = "Dragonic"
+	religion = "sjalvolki"
+	culture = "greulokin"
+	dynasty = dyn_sjalvolki_39
+	disallow_random_traits = yes
+
+	father = greulokin_sjalvolki_13
+
+	martial = 4
+	diplomacy = 5
+	stewardship = 3
+	intrigue = 6
+	learning = 4
+	prowess = 9
+
+	1220.10.6 = {
+		birth = yes
+		trait = physique_good_1
+	}
+
+	1232.1.1 = {
+		trait = gregarious
+		trait = generous
+		trait = temperate
+	}
+
+	1234.10.6 = {
+		trait = education_intrigue_1
+		trait = strong
+		trait = berserker
+	}
+
+	1247.3.15 = { # Ten Trees
+		give_nickname = nick_iron_hewer
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+greulokin_sjalvolki_13 = { # Previous chieftain of the Greulokin clanrech, died to the Fog
+	name = "Boravoj"
+	religion = "sjalvolki"
+	culture = "greulokin"
+	dynasty = dyn_sjalvolki_39
+	disallow_random_traits = yes
+
+	father = greulokin_sjalvolki_16
+
+	martial = 7
+	diplomacy = 5
+	stewardship = 3
+	intrigue = 2
+	learning = 5
+	prowess = 8
+
+	1185.3.20 = {
+		birth = yes
+	}
+
+	1197.1.1 = {
+		trait = zealous
+		trait = temperate
+		trait = diligent
+	}
+
+	1201.3.20 = {
+		trait = education_diplomacy_2
+		trait = gh_historical_track_hunter_3
+	}
+
+	1226.2.12 = {
+		death = {
+			death_reason = death_fog
+		}
+	}
+}
+
+greulokin_sjalvolki_14 = { #1254 Greulokin chieftain's mother
+	name = "Irvolka"
+	religion = "sjalvolki"
+	culture = "greulokin"
+	dynasty = dyn_sjalvolki_39
+	disallow_random_traits = yes
+	female = yes
+
+	father = greulokin_sjalvolki_16
+
+	martial = 4
+	diplomacy = 8
+	stewardship = 6
+	intrigue = 7
+	learning = 9
+	prowess = 5
+
+	1196.10.17 = {
+		birth = yes
+	}
+
+	1208.1.1 = {
+		trait = stubborn
+		trait = brave
+		trait = gregarious
+	}
+
+	1230.5.18 = {
+		add_spouse = greulokin_sjalvolki_15
+	}
+
+	1212.10.17 = {
+		trait = education_learning_3
+	}
+
+	1260.3.1 = { death = { death_reason = death_natural_causes } }
+
+}
+
+greulokin_sjalvolki_15 = { #1254 Greulokin chieftain's father
+	name = "Hromkvel"
+	religion = "sjalvolki"
+	culture = "greulokin"
+	dynasty = dyn_sjalvolki_11
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 7
+	stewardship = 6
+	intrigue = 5
+	learning = 2
+	prowess = 3
+
+	1200.9.5 = {
+		birth = yes
+	}
+
+	1212.1.1 = {
+		trait = humble
+		trait = fickle
+		trait = brave
+	}
+
+	1216.9.5 = {
+		trait = education_martial_4
+		trait = berserker
+		trait = aggressive_attacker
+	}
+
+	1247.3.15 = { # Ten Trees
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+
+greulokin_sjalvolki_16 = { #1254 Greulokin chieftain's grandfather
+	name = "Radikvel"
+	religion = "sjalvolki"
+	culture = "greulokin"
+	dynasty = dyn_sjalvolki_39
+	disallow_random_traits = yes
+
+	martial = 9
+	diplomacy = 5
+	stewardship = 6
+	intrigue = 7
+	learning = 3
+	prowess = 6
+
+	1159.2.27 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+
+	1171.1.1 = {
+		trait = callous
+		trait = zealous
+		trait = brave
+	}
+
+	1175.2.27 = {
+		trait = education_martial_4
+		trait = berserker
+		trait = aggressive_attacker
+	}
+
+	1223.7.28 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+greulokin_sjalvolki_17 = { # Drazhic's son, claimant to Greulokin Clanrech
+	name = "Radikvel"
+	religion = "sjalvolki"
+	culture = "greulokin"
+	dynasty = dyn_sjalvolki_39
+	disallow_random_traits = yes
+
+	father = greulokin_sjalvolki_11
+
+	martial = 6
+	diplomacy = 5
+	stewardship = 7
+	intrigue = 5
+	learning = 5
+	prowess = 6
+
+	1240.1.16 = {
+		birth = yes
+	}
+
+	1246.1.16 = {
+		trait = pensive
+	}
+
+	1252.1.1 = {
+		trait = lazy
+		trait = paranoid
+		trait = humble
+	}
+}
+
+greulokin_sjalvolki_18 = { # Father of Captain Wrath-Braid
+	name = "Drahanic"
+	religion = "sjalvolki"
+	culture = "greulokin"
+	dynasty = dyn_sjalvolki_49
+
+	sexuality = heterosexual
+
+	disallow_random_traits = yes
+
+	diplomacy = 5
+	martial = 3
+	stewardship = 8
+	intrigue = 2
+	learning = 5
+	prowess = 4
+
+	1237.1.20 = {
+		birth = yes
+		trait = wheezing
+	}
+
+	1253.1.20 = {
+		trait = compassionate
+		trait = content
+		trait = gregarious
+		trait = education_stewardship_2
+		employer = greulokin_sjalvolki_1
+		give_nickname = nick_the_croaker
+	}
+
+	1288.12.15 = {
+		trait = comfort_eater
+	}
+
+	1290.11.6 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+greulokin_sjalvolki_19 = { # Capitan Wrath-Braid
+    name = "JuzA_nn" 
+    female = yes
+	dna = greulokin_sjalvolki_19
+	dynasty = dyn_sjalvolki_49
+
+    religion = "sjalvolki"
+    culture = "greulokin"
+
+    sexuality = heterosexual
+
+	disallow_random_traits = yes
+
+	father = greulokin_sjalvolki_18
+	mother = sarminians_salacad_12a
+
+	diplomacy = 10
+	martial = 14
+	stewardship = 6
+	intrigue = 4
+	learning = 5
+	prowess = 18
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_western_10
+		}
+	}
+
+    1269.3.22 = {
+        birth = yes
+    }
+
+	1285.3.22 = {
+		trait = wrathful
+   		trait = impatient
+		trait = callous
+		trait = education_martial_2
+	}
+
+	1291.8.4 = {
+		trait = berserker
+		trait = reaver
+		give_nickname = nick_wrath_braid
+	}
+
+	1295.1.1 = {
+		effect = {
+			spawn_army = {
+				name = wrath_braid_crew
+				levies = { value = 500 }
+				men_at_arms = {
+					type = sjalvolki_berserkers
+					stacks = 2
+				}
+				location = province:4898
+				inheritable = no
+				uses_supply = yes
+			}
+		}
+	}
+}
+
+greulokin_sjalvolki_20 = {	# Valkvel Teyberl, founder of the eponymous Sjalvolki empire
+	name = "Valkvel"
+	religion = "sjalvolki"
+	culture = "greulokin"
+	dynasty = dyn_sjalvolki_41
+	disallow_random_traits = yes
+
+	martial = 12
+	diplomacy = 9
+	stewardship = 4
+	intrigue = 7
+	learning = 2
+	prowess = 10
+
+	311.5.13 = {
+		birth = yes
+		trait = intellect_good_1
+		trait = physique_good_2
+	}
+	323.1.1 = {
+		trait = ambitious
+		trait = callous
+		trait = gregarious
+	}
+	327.5.13 = {
+		trait = education_diplomacy_5
+	}
+	399.8.31 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+greulokin_sjalvolki_21 = {
+    name = "Vordva" 
+    female = yes
+
+    religion = sjalvolki
+    culture = greulokin
+
+    sexuality = heterosexual
+
+    trait = lustful
+    trait = generous
+    trait = deceitful
+
+    1240.10.25 = {
+        birth = yes
+    }
+
+    1291.7.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+greulokin_sjalvolki_22 = {
+    name = "Mirkvel" 
+
+    dynasty = dyn_sjalvolki_11
+    religion = sjalvolki
+    culture = greulokin
+
+    father = greulokin_sjalvolki_1
+    mother = greulokin_sjalvolki_21
+
+    sexuality = heterosexual
+
+    trait = generous
+    trait = calm
+    trait = fickle
+
+    1262.6.28 = {
+        birth = yes
+    }
+
+    1291.6.20 = {
+        add_spouse = greulokin_sjalvolki_23
+        trait = education_diplomacy_3
+    }
+}
+
+greulokin_sjalvolki_23 = {
+    name = "Arkrona" 
+    female = yes
+    dynasty = dyn_sjalvolki_58
+    father = greulokin_sjalvolki_6
+    mother = greulokin_sjalvolki_36
+
+    religion = sjalvolki
+    culture = greulokin
+
+    sexuality = heterosexual
+
+    trait = stubborn
+    trait = cynical
+    trait = temperate
+
+    1274.12.1 = {
+        birth = yes
+    }
+
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+greulokin_sjalvolki_24 = {
+    name = "Drazjek" 
+
+    dynasty = dyn_sjalvolki_56
+    religion = sjalvolki
+    culture = greulokin
+
+    father = greulokin_sjalvolki_22
+    mother = greulokin_sjalvolki_23
+
+    sexuality = heterosexual
+
+    trait = lustful
+    trait = calm
+    trait = diligent
+
+    1295.11.3 = {
+        birth = yes
+    }
+
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+greulokin_sjalvolki_25 = {
+	name = "Ebislonj"
+
+	dynasty = dyn_sjalvolki_11
+	religion = sjalvolki
+	culture = greulokin
+
+	father = greulokin_sjalvolki_1
+	mother = greulokin_sjalvolki_21
+
+	1258.2.13 = {
+		birth = yes
+	}
+
+	1278.9.22 = {
+		death = { death_reason = death_cut_off_by_enemy_troops_offensive } # Killed in an ambush by Hecaeda's Magi during the Imperrech wars in Aironoi
+	}
+}
+
+greulokin_sjalvolki_25a = {
+	name = "Ebislonj"
+
+	dynasty = dyn_sjalvolki_11
+	religion = sjalvolki
+	culture = greulokin
+
+	father = greulokin_sjalvolki_25
+
+	1278.1.14 = {
+		birth = yes
+		trait = albino
+	}
+}
+
+greulokin_sjalvolki_26 = {
+	name = "Lipajca"
+
+	female = yes
+	dynasty = dyn_sjalvolki_11
+	religion = sjalvolki
+	culture = greulokin
+
+	father = greulokin_sjalvolki_1
+	mother = greulokin_sjalvolki_21
+
+	1260.6.2 = {
+		birth = yes
+	}
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+
+greulokin_sjalvolki_27 = {
+    name = "Arloba" 
+    female = yes
+
+    religion = sjalvolki
+    culture = greulokin
+
+    sexuality = heterosexual
+
+    trait = impatient
+    trait = greedy
+    trait = stubborn
+
+    1218.4.6 = {
+        birth = yes
+    }
+
+    1272.3.28 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+greulokin_sjalvolki_28 = {
+    name = "Saumrjelc" 
+
+    dynasty = dyn_sjalvolki_57
+    religion = sjalvolki
+    culture = greulokin
+
+    father = greulokin_sjalvolki_5
+    mother = greulokin_sjalvolki_27
+
+    sexuality = heterosexual
+
+    trait = temperate
+    trait = humble
+    trait = just
+
+    1242.3.24 = {
+        birth = yes
+    }
+
+    1275.5.6 = {
+        add_spouse = greulokin_sjalvolki_29
+    }
+
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+greulokin_sjalvolki_29 = {
+    name = "Vedjva" 
+    female = yes
+
+    dynasty = dyn_sjalvolki_26
+    religion = sjalvolki
+    culture = greulokin
+
+    father = greulokin_sjalvolki_8
+    mother = greulokin_sjalvolki_40
+    sexuality = heterosexual
+
+    trait = impatient
+    trait = content
+    trait = gluttonous
+
+    1258.6.7 = {
+        birth = yes
+    }
+
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+greulokin_sjalvolki_30 = {
+    name = "Lipajca" 
+    female = yes
+
+    religion = sjalvolki
+    culture = greulokin
+
+    father = greulokin_sjalvolki_28
+    mother = greulokin_sjalvolki_29
+
+    sexuality = bisexual
+
+    trait = trusting
+    trait = ambitious
+    trait = diligent
+
+    1278.9.22 = {
+        birth = yes
+    }
+
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+greulokin_sjalvolki_31 = {
+    name = "Jozdar" 
+
+    dynasty = dyn_sjalvolki_57
+    religion = sjalvolki
+    culture = greulokin
+
+    father = greulokin_sjalvolki_28
+    mother = greulokin_sjalvolki_29
+
+    sexuality = heterosexual
+
+    trait = impatient
+    trait = arbitrary
+    trait = gluttonous
+
+    1280.6.26 = {
+        birth = yes
+    }
+
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+
+greulokin_sjalvolki_33 = {
+    name = "Radlova" 
+    female = yes
+
+    religion = sjalvolki
+    culture = greulokin
+
+    father = greulokin_sjalvolki_28
+    mother = greulokin_sjalvolki_29
+
+    sexuality = heterosexual
+
+    trait = ambitious
+    trait = humble
+    trait = just
+
+    1281.6.14 = {
+        birth = yes
+    }
+
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+greulokin_sjalvolki_34 = {
+    name = "Prohinjek"
+
+    dynasty = dyn_sjalvolki_57
+    religion = sjalvolki
+    culture = greulokin
+
+    father = greulokin_sjalvolki_5
+    mother = greulokin_sjalvolki_27
+
+    1239.6.1 = {
+        birth = yes
+    }
+
+    1264.6.1 = {
+        trait = brave
+        trait = content
+        trait = generous
+        trait = education_martial_3
+    }
+    1270.1.1 = {
+        trait = adventurer
+        trait = poet
+        trait = disinherited
+    }
+    1298.1.1 = {
+        employer = urdermantern_lifepath_9 # Adventuring in Foreign Lands
+        religion = orispolj_rite
+    }
+}
+
+greulokin_sjalvolki_35 = {
+	name = "Nabomila"
+	religion = sjalvolki
+	culture = greulokin
+	female = yes
+	dynasty = dyn_sjalvolki_11
+	father = greulokin_sjalvolki_15
+	mother = greulokin_sjalvolki_14
+
+	1225.7.27 = {
+		birth = yes
+	}
+
+	1264.10.8 = {
+		death = { death_reason = death_ill }
+	}
+}
+greulokin_sjalvolki_36 = {
+	name = "Dobraha"
+	religion = sjalvolki
+	culture = greulokin
+	female = yes
+
+	father = greulokin_sjalvolki_18
+	mother = sarminians_salacad_12a
+
+	1255.4.16 = {
+		birth = yes
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+greulokin_sjalvolki_37 = {
+	dynasty = dyn_sjalvolki_58
+	father = greulokin_sjalvolki_6
+	mother = greulokin_sjalvolki_35
+
+	name = "Warin"
+	religion = sjalvolki
+	culture = greulokin
+
+	1252.4.13 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1272.4.13 = {
+		trait = temperate
+		trait = stubborn
+		trait = arbitrary
+		trait = education_diplomacy_4
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+greulokin_sjalvolki_38 = {
+	dynasty = dyn_sjalvolki_58
+	father = greulokin_sjalvolki_6
+	mother = greulokin_sjalvolki_36
+
+	name = "Vopraj"
+	religion = sjalvolki
+	culture = greulokin
+
+	1279.10.30 = {
+		birth = yes
+	}
+
+	1298.1.1 = {
+		trait = fickle
+		trait = brave
+		trait = diligent
+		trait = education_martial_2
+		religion = orispolj_rite
+	}
+}
+
+
+
+greulokin_sjalvolki_40 = {
+    name = "Sava" 
+    female = yes
+
+    religion = sjalvolki
+    culture = greulokin
+
+    sexuality = heterosexual
+
+    trait = craven
+    trait = callous
+    trait = forgiving
+
+    diplomacy = 6
+    martial = 7
+    stewardship = 3
+    intrigue = 6
+    learning = 6
+    prowess = 5
+
+    trait = education_martial_3
+
+    1231.3.23 = {
+        birth = yes
+    }
+
+    1281.9.6 = {
+        death = { death_reason = death_natural_causes }
+    }
+
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+greulokin_sjalvolki_41 = {
+    name = "Dragonic" 
+
+    dynasty = dyn_sjalvolki_26
+    religion = sjalvolki
+    culture = greulokin
+
+    father = greulokin_sjalvolki_8
+    mother = greulokin_sjalvolki_40
+
+    sexuality = heterosexual
+
+    trait = paranoid
+    trait = humble
+    trait = sadistic
+
+    diplomacy = 5
+    martial = 7
+    stewardship = 10
+    intrigue = 5
+    learning = 6
+    prowess = 4
+
+    trait = education_stewardship_4
+
+    1263.12.20 = {
+        birth = yes
+    }
+
+    1290.12.28 = {
+        add_spouse = adrakamp_sjalvolki_33
+    }
+
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+greulokin_sjalvolki_43 = {
+    name = "Dobvoja" 
+    female = yes
+
+    religion = sjalvolki
+    culture = greulokin
+
+    father = greulokin_sjalvolki_41
+    mother = adrakamp_sjalvolki_33
+
+    sexuality = heterosexual
+
+    1291.8.6 = {
+        birth = yes
+    }
+
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+greulokin_sjalvolki_44 = {
+    name = "Ajlrig" 
+
+    dynasty = dyn_sjalvolki_26
+    religion = sjalvolki
+    culture = greulokin
+
+    father = greulokin_sjalvolki_41
+    mother = adrakamp_sjalvolki_33
+
+    1293.11.6 = {
+        birth = yes
+    }
+
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+
+greulokin_sjalvolki_46 = {
+    name = "Cetjmir" 
+
+    dynasty = dyn_sjalvolki_26
+    religion = sjalvolki
+    culture = greulokin
+
+    father = greulokin_sjalvolki_41
+    mother = adrakamp_sjalvolki_33
+
+    1295.6.12 = {
+        birth = yes
+    }
+
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+
+greulokin_sjalvolki_48 = {
+    name = "Volker" 
+
+    dynasty = dyn_sjalvolki_26
+    religion = sjalvolki
+    culture = greulokin
+
+    father = greulokin_sjalvolki_41
+    mother = adrakamp_sjalvolki_33
+    1296.9.26 = {
+        birth = yes
+    }
+
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+greulokin_sjalvolki_50 = {
+    name = "Ljudevit" 
+
+    dynasty = dyn_sjalvolki_26
+    religion = sjalvolki
+    culture = greulokin
+
+    father = greulokin_sjalvolki_41
+    mother = adrakamp_sjalvolki_33
+
+    1297.8.15 = {
+        birth = yes
+    }
+
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+
+greulokin_sjalvolki_52 = {
+    name = "Ovrenj" 
+
+    dynasty = dyn_sjalvolki_26
+    religion = sjalvolki
+    culture = greulokin
+
+    father = greulokin_sjalvolki_8
+    mother = greulokin_sjalvolki_40
+
+    sexuality = heterosexual
+
+    trait = lustful
+    trait = gregarious
+    trait = ambitious
+
+    diplomacy = 4
+    martial = 2
+    stewardship = 5
+    intrigue = 6
+    learning = 9
+    prowess = 6
+
+    trait = education_learning_3
+
+    1265.9.25 = {
+        birth = yes
+    }
+
+    1296.2.27 = {
+        add_spouse = greulokin_sjalvolki_53
+    }
+
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+greulokin_sjalvolki_53 = {
+    name = "Radjavca" 
+    female = yes
+
+    religion = sjalvolki
+    culture = greulokin
+
+    sexuality = heterosexual
+
+    trait = impatient
+    trait = sadistic
+    trait = stubborn
+
+    diplomacy = 6
+    martial = 6
+    stewardship = 7
+    intrigue = 4
+    learning = 6
+    prowess = 6
+
+    trait = education_stewardship_4
+
+    1279.2.5 = {
+        birth = yes
+    }
+
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+greulokin_sjalvolki_54 = {
+    name = "Zjelvolk" 
+
+    dynasty = dyn_sjalvolki_26
+    religion = sjalvolki
+    culture = greulokin
+
+    father = greulokin_sjalvolki_52
+    mother = greulokin_sjalvolki_53
+
+    1296.8.13 = {
+        birth = yes
+    }
+
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+

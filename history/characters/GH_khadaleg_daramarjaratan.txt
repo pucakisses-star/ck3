@@ -1,0 +1,8 @@
+﻿khadaleg_daramarjaratan_1 = { # Dead Magi-Lich worshipper
+	name = "Gzak"
+	religion = "daramarjaratan"
+	culture = "khadaleg"
+	1213.8.8 = {
+		birth = yes
+	}
+}

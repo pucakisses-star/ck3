@@ -1,0 +1,37 @@
+﻿mithaista_vidvaookeyatra_1 = { # Duke of hyrastan
+	name = "Shennu"
+	religion = "vidvaookeyatra"
+	culture = "mithaista"
+	1204.8.8 = {
+		birth = yes
+	}
+
+	1224.3.1 = {
+		trait = compassionate
+		trait = fickle
+		trait = impatient
+		trait = education_diplomacy_2
+	}
+
+	1234.5.6 = {
+		trait = lifestyle_gardener
+	}
+}
+
+mithaista_vidvaookeyatra_2 = { # Count under king
+	name = "Viyus"
+	religion = "vidvaookeyatra"
+	culture = "mithaista"
+	1220.8.8 = {
+		birth = yes
+	}
+}
+
+mithaista_vidvaookeyatra_3 = { # Count under king
+	name = "Avyaman"
+	religion = "vidvaookeyatra"
+	culture = "mithaista"
+	1222.8.8 = {
+		birth = yes
+	}
+}

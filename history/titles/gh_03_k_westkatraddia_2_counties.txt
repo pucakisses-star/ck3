@@ -1,0 +1,139 @@
+c_provinceprovince12593 = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1235.1.1 = {
+		holder = centralimperial_aversarinas_aagiokrata_7
+		government = military_unit_government
+	}
+	1252.11.1 = {
+		liege = "d_legio_xxvi_exodian"
+	}
+}
+c_westkatraddia_82 = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_36 = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_30 = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_23 = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_28 = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_27 = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_79 = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_43 = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_3911 = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_83 = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_41 = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_40 = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_32 = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westkatraddia_37 = {
+	1.1.1 = {
+		holder = wasteland
+	}
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}

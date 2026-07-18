@@ -1,0 +1,258 @@
+﻿makryenis_katharitos_1 = {
+	name = "Narses"
+	dna = makryenis_katharitos_1
+	religion = "katharitos"
+	culture = "makryenis"
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_05
+			custom_beards = male_beard_fp2_iberian_christian_02
+		}
+	}
+
+	1205.1.23 = {
+		birth = yes
+	}
+
+	1217.1.1 = {
+		trait = vengeful
+		trait = wrathful
+		trait = arrogant
+	}
+
+	1221.1.23 = {
+		trait = diplomat
+		trait = education_intrigue_3
+	}
+}
+
+makryenis_katharitos_2 = {
+	name = "Callimorphus"
+	religion = "katharitos"
+	culture = "makryenis"
+
+	1210.9.5 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+
+	1222.9.5 = {
+		trait = arrogant
+		trait = callous
+		trait = zealous
+	}
+
+	1226.9.5 = {
+		trait = education_learning_4
+	}
+}
+
+makryenis_katharitos_3 = {
+	name = "Aikaterine"
+	religion = "katharitos"
+	culture = "makryenis"
+	female = yes
+
+	1214.6.18 = {
+		birth = yes
+	}
+}
+
+makryenis_katharitos_4 = {
+	name = "Cilix"
+	religion = "katharitos"
+	culture = "makryenis"
+
+	1227.6.18 = {
+		birth = yes
+	}
+}
+
+makryenis_katharitos_5 = {
+	name = "Chryses"
+	religion = "katharitos"
+	culture = "makryenis"
+
+	1225.6.23 = {
+		birth = yes
+		trait = physique_good_2
+		trait = beauty_good_1
+	}
+
+	1237.1.1 = {
+		trait = brave
+		trait = sadistic
+		trait = arrogant
+	}
+
+	1241.6.23 = {
+		trait = education_martial_2
+		trait = gh_historical_blademaster_2
+	}
+}
+
+makryenis_katharitos_6 = {
+	name = "Antipatra"
+	religion = "katharitos"
+	culture = "makryenis"
+	female = yes
+
+	1215.6.18 = {
+		birth = yes
+	}
+}
+
+makryenis_katharitos_7 = {
+	name = "Hypatia"
+	religion = "katharitos"
+	culture = "makryenis"
+	female = yes
+
+	1221.5.18 = {
+		birth = yes
+	}
+
+	1233.1.1 = {
+		trait = arbitrary
+		trait = deceitful
+		trait = greedy
+	}
+
+	1237.5.18 = {
+		trait = education_intrigue_3
+	}
+}
+
+makryenis_katharitos_8 = {
+	name = "Thyrsis"
+	religion = "katharitos"
+	culture = "makryenis"
+	female = yes
+
+	1220.6.18 = {
+		birth = yes
+	}
+}
+
+makryenis_katharitos_9 = {
+	name = "Protogenes"
+	religion = "katharitos"
+	culture = "makryenis"
+
+	1229.6.18 = {
+		birth = yes
+	}
+
+	1241.1.1 = {
+		trait = arbitrary
+		trait = cynical
+		trait = ambitious
+	}
+
+	1245.6.18 = {
+		trait = education_intrigue_4
+	}
+}
+
+makryenis_katharitos_10 = {
+	name = "Iambulus"
+	religion = "katharitos"
+	culture = "makryenis"
+
+	1216.6.18 = {
+		birth = yes
+	}
+}
+
+makryenis_katharitos_11 = {
+	name = "Eudokia"
+	religion = "katharitos"
+	culture = "makryenis"
+	female = yes
+
+	1226.6.18 = {
+		birth = yes
+	}
+
+	1238.1.1 = {
+		trait = arrogant
+		trait = vengeful
+		trait = stubborn
+	}
+
+	1242.5.18 = {
+		trait = education_diplomacy_1
+	}
+}
+
+makryenis_katharitos_12 = {
+	name = "Hippokratides"
+	religion = "katharitos"
+	culture = "makryenis"
+
+	1211.2.16 = {
+		birth = yes
+	}
+
+	1223.1.1 = {
+		trait = humble
+		trait = compassionate
+		trait = temperate
+	}
+
+	1227.2.16 = {
+		trait = education_learning_3
+	}
+}
+
+makryenis_katharitos_13 = {
+	name = "Ilus"
+	religion = "katharitos"
+	culture = "makryenis"
+
+	1227.6.18 = {
+		birth = yes
+	}
+
+	1229.1.1 = {
+		trait = callous
+		trait = greedy
+		trait = temperate
+	}
+
+	1227.2.16 = {
+		trait = education_intrigue_2
+	}
+}
+
+makryenis_katharitos_14 = {
+	name = "Haedras"
+	religion = "katharitos"
+	culture = "makryenis"
+	female = yes
+
+	1232.5.18 = {
+		birth = yes
+	}
+
+	1244.1.1 = {
+		trait = gregarious
+		trait = compassionate
+		trait = ambitious
+	}
+
+	1248.5.18 = {
+		trait = education_diplomacy_4
+	}
+}
+
+makryenis_katharitos_15 = {
+	name = "Galenus"
+	religion = "katharitos"
+	culture = "makryenis"
+
+	1219.6.18 = {
+		birth = yes
+	}
+}

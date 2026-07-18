@@ -1,0 +1,86 @@
+d_sundakana = {
+	1243.8.4 = {
+		holder = yonata_vidvaookeyatra_4
+		liege = k_taleshtadendar
+		change_development_level = 4
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+}
+d_mahvisatam = {
+	1183.8.13 = {
+		holder = yonata_vidvaookeyatra_1
+		liege = k_taleshtadendar
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+	1200.3.1 = {
+		holder = 0
+	}
+	1249.2.26 = {
+		holder = yonata_vidvaookeyatra_5
+	}
+}
+d_sarmataj = {
+	1238.2.16 = {
+		holder = yevanya_vidvaookeyatra_1
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+}
+#d_sundjitan = {
+#	1183.8.13 = {
+#		holder = yonata_vidvaookeyatra_1
+#		liege = k_taleshtadendar
+#	}
+#	1200.3.1 = {
+#		holder = yonata_vidvaookeyatra_6
+#		liege = k_taleshtadendar
+#	}
+#	1246.10.26 = {
+#		holder = 0
+#	}
+#}
+#d_eshatabad = {
+#	1183.3.19 = {
+#		holder = yonata_vidvaookeyatra_7
+#		liege = k_taleshtadendar
+#	}
+#	1200.2.26 = {
+#		holder = yonata_vidvaookeyatra_8
+#		liege = k_taleshtadendar
+#	}
+#	1240.8.7 = {
+#		holder = 0
+#	}
+#}

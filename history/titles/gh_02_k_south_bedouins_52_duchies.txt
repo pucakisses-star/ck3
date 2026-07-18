@@ -1,0 +1,6 @@
+d_south_bedouins_53 = {
+	1230.1.1 = { change_development_level = 1 }
+}
+d_south_bedouins_57 = {
+	1230.1.1 = { change_development_level = 1 }
+}

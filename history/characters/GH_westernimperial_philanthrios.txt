@@ -1,0 +1,81 @@
+﻿westernimperial_philantrios_1 = { # Legon Ultirnos of Legio XVIII 'Philantros', joined the Agionist Cause
+	name = "Ultirnos" 
+	dna = ultirnos
+	religion = aversarinas_aagiokrata
+	culture = westernimperial
+	disallow_random_traits = yes
+
+	martial = 10
+	diplomacy = 6
+	intrigue = 1
+	stewardship = 9
+	learning = 8
+	prowess = 2
+
+	1055.5.5 = {
+		birth = yes
+	}
+
+	1067.1.1 = {
+		trait = zealous
+		trait = brave
+		trait = generous
+	}
+
+	1071.5.5 = {
+		trait = education_martial_4
+		trait = gallant
+		trait = holy_warrior
+	}
+
+	1085.2.13 ={
+		trait = gh_legon
+	}
+
+	1092.1.4 = {
+		religion = philanthrios
+		death = {
+			death_reason = death_battle
+			killer = westernimperial_aversarinas_aagiokrata_127 # Legan Dethona Aercargiad
+		}
+	}
+}
+
+westernimperial_philantrios_2 = { # Despexir Santhos Philogios of Zacope 
+	name = "Santhos" 
+	religion = philanthrios
+	culture = westernimperial
+	dynasty = dyn_western_aversarian_13
+	disallow_random_traits = yes
+
+	father = westernimperial_aversarinas_aagiokrata_65
+
+	martial = 5
+	diplomacy = 8
+	intrigue = 3
+	stewardship = 3
+	learning = 5
+	prowess = 2
+
+	1039.10.28 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1051.1.1 = {
+		trait = generous
+		trait = humble
+		trait = compassionate
+	}
+
+	1055.10.28 = {
+		trait = education_stewardship_3
+		trait = administrator
+	}
+
+	1086.9.8 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}

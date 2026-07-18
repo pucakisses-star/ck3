@@ -1,0 +1,14 @@
+d_miavaz = {
+	1230.1.1 = {
+		holder = dawasid_wardenism_1
+		liege = k_eastern_frontier
+	}
+	1230.1.1 = { change_development_level = 2 }
+}
+d_baimar = {
+	1230.1.1 = {
+		holder = utyalid_harthahi_2
+		liege = k_eastern_frontier
+	}
+	1230.1.1 = { change_development_level = 3 }
+}

@@ -1,0 +1,46 @@
+﻿guillater_aversarian_calystoanistism_1 = {
+	name = "Ambrosia"
+	female = yes
+	religion = calystoanistism
+	culture = guillater_aversarian
+	1214.10.5 = {
+		birth = yes
+	}
+	1226.10.5 = {
+		trait = stubborn
+		trait = wrathful
+		trait = honest
+	}
+	1230.10.5 = {
+		trait = education_martial_3
+		trait = unyielding_defender
+	}
+}
+
+guillater_aversarian_calystoanistism_2 = {
+	name = "Dionysia"
+	female = yes
+	religion = calystoanistism
+	culture = guillater_aversarian
+	1199.6.9 = {
+		birth = yes
+	}
+	1211.6.9 = {
+		trait = zealous
+		trait = just
+		trait = honest
+	}
+	1215.6.9 = {
+		trait = education_learning_2
+	}
+}
+
+guillater_aversarian_calystoanistism_3 = {
+	name = "Ailiktia" #Renamed from the male name Iatrokles, TRANS!
+	female = yes
+	religion = calystoanistism
+	culture = guillater_aversarian
+	1204.10.22 = {
+		birth = yes
+	}
+}

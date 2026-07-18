@@ -1,0 +1,54 @@
+﻿drothacny_dethedklann_1 = {
+	name = "Vulid_kar" #Vulfidkar
+	dynasty = dyn_mond_2
+	religion = "dethedklann"
+	culture = "drothacny"
+
+	1212.1.1 = {
+		birth = yes
+	}
+
+	1224.1.1 = {
+		trait = brave
+		trait = fickle
+		trait = vengeful
+	}
+
+	1228.1.1 = {
+		trait = education_martial_3
+		trait = flexible_leader
+	}
+
+	1247.3.15 = {
+		trait = gallant
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+}
+
+drothacny_dethedklann_2 = {
+	name = "Svinthilk"
+	religion = "dethedklann"
+	culture = "drothacny"
+
+	1226.1.1 = {
+		birth = yes
+	}
+}
+
+drothacny_dethedklann_3 = {
+	name = "KaD_isenn"
+	female = yes
+	religion = "dethedklann"
+	culture = "drothacny"
+	
+	father = drothacny_dethedklann_1
+
+	1235.1.1 = {
+		birth = yes
+		trait = legitimized_bastard
+	}
+}

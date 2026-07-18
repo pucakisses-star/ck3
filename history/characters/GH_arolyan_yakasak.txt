@@ -1,0 +1,322 @@
+﻿arolyan_yakasak_1 = {
+	name = "Thrana"
+	culture = "arolyan"
+	religion = "yakasak"
+	dynasty = dyn_pirate_coast_7
+
+	1225.1.1 = {
+		birth = yes
+	}
+
+	1255.10.1 = {
+		add_matrilineal_spouse = ikanita_yakasak_8
+		trait = scarred
+	}
+
+	1283.8.20 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+arolyan_yakasak_1a = {
+	name = "Gambhir"
+	culture = "arolyan"
+	religion = "yakasak"
+	dynasty = dyn_pirate_coast_7
+
+	1197.3.18 = {
+		birth = yes
+	}
+	1250.9.11 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+arolyan_yakasak_2 = {
+	name = "Amithnal"
+	religion = "yakasak"
+	culture = "arolyan"
+	female = yes
+	1223.3.3 = {
+		birth = yes
+	}
+
+	1290.1.4 = {
+		death = { death_reason = death_magic_earthquake killer = arolyan_yakasak_15 }
+	}
+}
+
+arolyan_yakasak_4 = {
+    name = "Nihalray" 
+
+    dynasty = dyn_pirate_coast_7
+    religion = yakasak
+    culture = arolyan
+
+    father = arolyan_yakasak_1
+    mother = ikanita_yakasak_8
+
+    sexuality = heterosexual
+
+    trait = wrathful
+    trait = just
+    trait = cynical
+
+    1248.9.4 = {
+        birth = yes
+    }
+
+    1279.10.3 = {
+        add_spouse = arolyan_yakasak_5
+    }
+
+    1289.6.26 = {
+        death = { death_reason = death_smallpox }
+    }
+}
+
+arolyan_yakasak_5 = {
+    name = "Kumaradevi" 
+    female = yes
+
+    religion = yakasak
+    culture = arolyan
+
+    sexuality = heterosexual
+
+    trait = greedy
+    trait = shy
+    trait = temperate
+
+    1262.10.17 = {
+        birth = yes
+    }
+}
+
+arolyan_yakasak_6 = {
+    name = "Bacchdev" 
+
+    dynasty = dyn_pirate_coast_7
+    religion = yakasak
+    culture = arolyan
+
+    father = arolyan_yakasak_4
+    mother = arolyan_yakasak_5
+
+    sexuality = heterosexual
+
+    trait = stubborn
+    trait = generous
+    trait = lustful
+
+    1280.3.26 = {
+        birth = yes
+    }
+
+    1297.7.24 = {
+        add_spouse = arolyan_yakasak_7
+    }
+}
+
+arolyan_yakasak_7 = {
+    name = "Kumaradevi" 
+    female = yes
+
+    religion = yakasak
+    culture = arolyan
+    father = arolyan_yakasak_17
+
+    sexuality = heterosexual
+
+    trait = shy
+    trait = content
+    trait = sadistic
+
+    1280.3.3 = {
+        birth = yes
+    }
+}
+
+arolyan_yakasak_8 = {
+    name = "Nabe" 
+    female = yes
+
+    religion = yakasak
+    culture = arolyan
+
+    father = arolyan_yakasak_4
+    mother = arolyan_yakasak_5
+
+    sexuality = heterosexual
+
+    1282.6.6 = {
+        birth = yes
+    }
+}
+
+arolyan_yakasak_9 = {
+    name = "Lakshman" 
+    female = yes
+
+    religion = yakasak
+    culture = arolyan
+
+    father = arolyan_yakasak_4
+    mother = arolyan_yakasak_5
+
+    sexuality = heterosexual
+
+    1283.5.1 = {
+        birth = yes
+    }
+}
+
+arolyan_yakasak_10 = {
+    name = "Gambhir" 
+
+    dynasty = dyn_pirate_coast_7
+    religion = yakasak
+    culture = arolyan
+
+    father = arolyan_yakasak_4
+    mother = arolyan_yakasak_5
+
+    sexuality = heterosexual
+
+    1284.7.20 = {
+        birth = yes
+    }
+}
+
+
+arolyan_yakasak_13 = {
+    name = "Maharani" 
+    female = yes
+
+    religion = yakasak
+    culture = arolyan
+
+    sexuality = heterosexual
+
+    trait = humble
+    trait = craven
+    trait = deceitful
+
+    1285.7.6 = {
+        birth = yes
+    }
+}
+
+arolyan_yakasak_14 = {
+    name = "Dehanagadevi" 
+    female = yes
+
+    religion = yakasak
+    culture = arolyan
+
+    father = arolyan_yakasak_1
+    mother = ikanita_yakasak_8
+    dynasty = dyn_pirate_coast_7
+
+    sexuality = homosexual
+
+    trait = sadistic
+    trait = paranoid
+    trait = generous
+
+    1253.9.5 = {
+        birth = yes
+    }
+}
+
+arolyan_yakasak_15 = {
+	name = "Irir"
+	religion = yakasak
+	culture = arolyan
+
+	1269.5.18 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1289.5.18 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 7 }
+		}
+		trait = callous
+		trait = patient
+		trait = arrogant
+	}
+
+    1290.4.1 = {
+        trait = murderer
+    }
+}
+
+arolyan_yakasak_16 = {
+	name = "Somasi"
+	religion = "yakasak"
+	culture = "arolyan"
+
+	1218.4.1 = {
+		birth = yes
+	}
+
+	1243.1.1 = {
+		add_matrilineal_spouse = arolyan_yakasak_2
+	}
+
+	1287.5.13 = {
+		death = { death_reason = death_old_age }
+	}
+}
+arolyan_yakasak_17 = {
+	name = "Mihira"
+	religion = "yakasak"
+	culture = "arolyan"
+	father = arolyan_yakasak_16
+	mother = arolyan_yakasak_2
+
+	1249.2.10 = {
+		birth = yes
+		trait = beauty_good_1
+	}
+
+	1290.1.4 = {
+		death = { death_reason = death_magic_earthquake killer = arolyan_yakasak_15 }
+	}
+}
+arolyan_yakasak_18 = {
+	name = "Jaspal"
+	religion = "yakasak"
+	culture = "arolyan"
+	father = arolyan_yakasak_16
+	mother = arolyan_yakasak_2
+
+
+	1253.10.16 = {
+		birth = yes
+	}
+
+	1290.1.4 = {
+		death = { death_reason = death_magic_earthquake killer = arolyan_yakasak_15 }
+	}
+}
+arolyan_yakasak_19 = {
+	name = "Kanwar"
+	religion = "yakasak"
+	culture = "arolyan"
+	female = yes
+	father = arolyan_yakasak_17
+
+	1277.10.3 = {
+		birth = yes
+		trait = beauty_good_1
+	}
+
+	1290.1.4 = {
+		death = { death_reason = death_magic_earthquake killer = arolyan_yakasak_15 }
+	}
+}

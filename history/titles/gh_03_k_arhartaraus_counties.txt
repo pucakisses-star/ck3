@@ -1,0 +1,21 @@
+c_mrdern = {
+	1230.1.1 = {
+		holder = redlander_screaming_host_2
+		government = magocratic_government
+		change_development_level = 4
+	}
+}
+c_zirkamnars = {
+	1230.1.1 = {
+		holder = redlander_screaming_host_1
+		government = magocratic_government
+		change_development_level = 1
+	}
+}
+c_ofnammm = {
+	1230.1.1 = {
+		holder = redlander_spider_feast_2
+		government = magocratic_government
+		change_development_level = 1
+	}
+}

@@ -1,0 +1,20 @@
+﻿saruta_yakasak_1 = {
+	name = "Gavan"
+	religion = "yakasak"
+	culture = "saruta"
+
+	967.8.21 = {
+		birth = yes
+		trait = physique_good_1
+		trait = gh_gedeora_child
+	}
+
+	1002.1.1 = {
+		give_nickname = nick_iron_eye_gavan
+	}
+
+	1010.12.7 = {
+		trait = blind
+		death = { death_reason = death_eyes_gouged }
+	}
+}

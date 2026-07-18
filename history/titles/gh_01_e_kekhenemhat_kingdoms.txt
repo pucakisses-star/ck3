@@ -1,0 +1,20 @@
+k_isle_of_visions = {
+	1168.1.1 = {
+		holder = erimatos_aversarinas_aagiokrata_9
+	}
+	1230.1.1 = {
+		holder = makryenis_forgotten_1
+		government = landed_order_government
+	}
+}
+k_aglabolu = {
+	1219.1.1 = {
+		holder = madikirib_manats_1
+	}
+	1239.7.13 = {
+		holder = madikirib_manats_13
+	}
+	1249.1.1 = {
+		holder = tasurmad_harthahi_1
+	}
+}

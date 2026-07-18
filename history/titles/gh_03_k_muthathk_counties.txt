@@ -1,0 +1,99 @@
+c_udharaya_dei = {
+	1238.3.14 = {
+		holder = muhadamd_cumani_12
+		government = feudal_government
+	}
+	1230.1.1 = {
+		holder = muhadamd_cumani_21
+		government = feudal_government
+	}
+
+	1198.1.1 = {
+		holder = muhadamd_cumani_22
+		government = feudal_government
+	}
+}
+c_medalan = {
+	1238.3.14 = {
+		holder = muhadamd_cumani_12
+		government = feudal_government
+	}
+	1230.1.1 = {
+		holder = muhadamd_cumani_21
+		government = feudal_government
+	}
+
+	1198.1.1 = {
+		holder = muhadamd_cumani_22
+		government = feudal_government
+	}
+}
+c_mugadar = {
+	1250.3.14 = {
+		holder = muhadamd_cumani_15
+		liege = k_muthathk
+		government = feudal_government
+	}
+	1215.1.4 = {
+		holder = muhadamd_cumani_23
+		liege = k_muthathk
+		government = feudal_government
+	}
+	1186.9.2 = {
+		holder = muhadamd_cumani_24
+		liege = k_muthathk
+		government = feudal_government
+	}
+}
+c_ahatarr = {
+	1249.11.8 = {
+		holder = muhadamd_cumani_16
+		liege = d_kallin
+		government = feudal_government
+	}
+	1223.11.4 = {
+		holder = muhadamd_cumani_31
+		liege = d_kallin
+		government = feudal_government
+	}
+	1200.1.1 = {
+		holder = muhadamd_cumani_32
+		liege = d_kallin
+		government = feudal_government
+	}
+}
+c_horod = {
+	1238.3.14 = {
+		holder = muhadamd_cumani_12
+		government = feudal_government
+	}
+	1230.1.1 = {
+		holder = muhadamd_cumani_21
+		government = feudal_government
+	}
+	1198.1.1 = {
+		holder = muhadamd_cumani_22
+		government = feudal_government
+	}
+}
+
+c_gaydvd = {
+	1242.12.14 = {
+		holder = muhadamd_arayymorog_1
+		government = herder_government
+		change_development_level = 4
+		liege = 0
+	}
+}
+
+c_insanexes = {
+	1000.1.1 = {
+		holder = wasteland
+	}
+}
+
+c_instania = {
+	1000.1.1 = {
+		holder = wasteland
+	}
+}

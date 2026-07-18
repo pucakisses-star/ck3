@@ -1,0 +1,126 @@
+﻿#c_cizrybin = {
+#	1240.1.1 = {
+#		holder = mtuwe_kyaalic_1
+#		government = tribal_government
+#	}
+#}
+
+c_baashaqiq = {
+	1235.1.1 = {
+		holder = hmaceak_kaosahetam_01
+		government = tribal_government
+		change_development_level = 10
+	}
+}
+
+c_baja = {
+	1240.1.1 = {
+		holder = mtuwe_kyaalic_1
+		government = tribal_government
+	}
+}
+
+#c_karasin = {
+#	1230.1.1 = {
+#		holder = mtuwe_kyaalic_2
+#		government = tribal_government
+#	}
+#}
+#
+#c_beytoz = {
+#	1230.1.1 = {
+#		holder = hmaceak_kaosahetam_02
+#		government = tribal_government
+#	}
+#}
+
+c_kubaja = {
+	1230.1.1 = {
+		holder = hmaceak_kaosahetam_02
+		government = tribal_government
+	}
+}
+
+#c_jajhir = {
+#	1230.1.1 = {
+#		holder = hmaceak_kaosahetam_03
+#		government = tribal_government
+#	}
+#}
+
+c_vayki = {
+	1230.1.1 = {
+		holder = hmaceak_kaosahetam_04
+		government = tribal_government
+	}
+}
+
+#c_darutra = {
+#	1230.1.1 = {
+#		holder = ualeren_orgarrd_01
+#		government = tribal_government
+#	}
+#}
+
+c_aghadik = {
+	1230.1.1 = {
+		holder = ualeren_orgarrd_01
+		government = tribal_government
+	}
+}
+
+#c_uwaybok = {
+#	1230.1.1 = {
+#		holder = ualeren_orgarrd_02
+#		government = tribal_government
+#	}
+#}
+#
+#c_pitchdal = {
+#	1230.1.1 = {
+#		holder = ualeren_orgarrd_03
+#		government = tribal_government
+#	}
+#}
+#
+#c_lachish = {
+#	1230.1.1 = {
+#		holder = ualeren_orgarrd_04
+#		government = tribal_government
+#	}
+#}
+#
+#c_hakkati = {
+#	1230.1.1 = {
+#		holder = ualeren_orgarrd_05
+#		government = tribal_government
+#	}
+#}
+#
+#c_mosara = {
+#	1230.1.1 = {
+#		holder = ualeren_orgarrd_05
+#		government = tribal_government
+#	}
+#}
+
+c_dughkan = {
+	1230.1.1 = {
+		holder = hmaceak_kaosahetam_01
+		government = tribal_government
+	}
+}
+
+#c_bakhdisul = {
+#	1230.1.1 = {
+#		holder = hmaceak_kaosahetam_01
+#		government = tribal_government
+#	}
+#}
+#
+#c_kelbatili = {
+#	1230.1.1 = {
+#		holder = hmaceak_kaosahetam_01
+#		government = tribal_government
+#	}
+#}

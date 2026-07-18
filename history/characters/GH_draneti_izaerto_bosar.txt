@@ -1,0 +1,194 @@
+﻿draneti_izaerto_bosar_1 = { # Weak breakaway Draneti
+	name = "Reziko"
+	culture = "draneti"
+	religion = "izaerto_bosar"
+	sexuality = heterosexual
+	mother = draneti_izaerto_bosar_6
+	trait = wheezing
+
+	martial = 5
+	diplomacy = 8
+	stewardship = 7
+	intrigue = 4
+	learning = 6
+
+	1205.10.25 = {
+		birth = yes
+	}
+	1217.10.25 = {
+		trait = calm
+		trait = lazy
+		trait = compassionate
+	}
+	1221.10.25 = {
+		trait = education_diplomacy_2
+	}
+}
+
+draneti_izaerto_bosar_2 = { # Puppet Draneti leader
+	name = "Othmer"
+	dna = draneti_izaerto_bosar_2
+	religion = "izaerto_bosar"
+	culture = "draneti"
+	sexuality = homosexual
+	trait = intellect_good_2
+	trait = spindly
+
+	martial = 3
+	diplomacy = 7
+	stewardship = 10
+	intrigue = 4
+	learning = 6
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_byzantine_02
+		}
+	}
+
+	1226.11.1 = {
+		birth = yes
+	}
+	1238.11.1 = {
+		trait = temperate
+		trait = shy
+		trait = content
+	}
+	1242.11.1 = {
+		trait = education_stewardship_3
+	}
+}
+
+draneti_izaerto_bosar_3 = { # Learned draneti vassal
+	name = "Jarji"
+	religion = "izaerto_bosar"
+	culture = "draneti"
+	sexuality = heterosexual
+	trait = shrewd
+	trait = scaly
+
+	martial = 4
+	diplomacy = 8
+	stewardship = 6
+	intrigue = 5
+	learning = 9
+
+	1215.1.17 = {
+		birth = yes
+	}
+	1227.1.17 = {
+		trait = cynical
+		trait = shy
+		trait = patient
+	}
+	1231.1.17 = {
+		trait = education_learning_4
+	}
+}
+
+draneti_izaerto_bosar_4 = { # Scheming draneti vassaal
+	name = "Taplo"
+	religion = "izaerto_bosar"
+	culture = "draneti"
+	sexuality = asexual
+	female = yes
+
+	martial = 4
+	diplomacy = 5
+	stewardship = 6
+	intrigue = 8
+	learning = 4
+
+	1209.4.15 = {
+		birth = yes
+	}
+	1221.4.15 = {
+		trait = paranoid
+		trait = arbitrary
+		trait = calm
+	}
+	1225.4.15 = {
+		trait = education_intrigue_2
+	}
+}
+
+draneti_izaerto_bosar_5 = { # Warrior drnaeti vassal
+	name = "Ia"
+	religion = "izaerto_bosar"
+	culture = "draneti"
+	sexuality = bisexual
+	female = yes
+	trait = physique_good_2
+
+	martial = 9
+	diplomacy = 4
+	stewardship = 6
+	intrigue = 3
+	learning = 4
+
+	1231.6.8 = {
+		birth = yes
+	}
+	1243.6.8 = {
+		trait = brave
+		trait = stubborn
+		trait = honest
+	}
+	1248.6.8 = {
+		trait = education_martial_3
+	}
+}
+
+draneti_izaerto_bosar_6 = { # Reziko's mother, the 1200 Draneti leader
+	name = "Endzela"
+	religion = "izaerto_bosar"
+	culture = "draneti"
+	sexuality = bisexual
+	female = yes
+
+	1176.5.9 = {
+		birth = yes
+	}
+	1188.5.9 = {
+		trait = brave
+		trait = ambitious
+		trait = temperate
+	}
+	1192.5.9 = {
+		trait = education_stewardship_4
+	}
+	1200.3.1 = {
+		trait = peasant_leader
+	}
+	1238.4.11 = {
+		death = {
+			death_reason = death_murder
+			killer = amaghean_amaghean_aagiokrata_6
+		}
+	}
+}
+
+draneti_izaerto_bosar_7 = { # 1228 Duke of Tsnemo
+	name = "Teimuraz"
+	religion = "izaerto_bosar"
+	culture = "draneti"
+	sexuality = homosexual
+
+	1194.10.15 = {
+		birth = yes
+	}
+	1206.10.15 = {
+		trait = humble
+		trait = calm
+		trait = arbitrary
+	}
+	1210.10.15 = {
+		trait = education_learning_3
+	}
+	1250.2.12 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}

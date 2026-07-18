@@ -1,0 +1,27 @@
+﻿theygundarope_theygundaropi_cult_1 = {
+    name = "Brennus"
+    culture = theygundarope
+    religion = theygundaropei_cult
+    trait = physique_good_1
+
+    1219.6.20 = {
+        birth = yes
+        trait = magic_good_1
+    }
+
+    1231.6.20 = {
+        trait = zealous
+        trait = stubborn
+        trait = just
+    }
+    
+    1235.6.20 = {
+        trait = education_learning_2
+        trait = athletic
+        trait = gh_historical_school
+        effect = {
+            set_variable = { name = historical_magic_school value = flag:amber_cup_rites }
+            set_variable = { name = historical_magic_school_min_spells value = 4 }
+        }
+    }
+}

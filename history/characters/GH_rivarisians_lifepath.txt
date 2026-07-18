@@ -1,0 +1,284 @@
+﻿rivarisians_lifepath_1 = {
+	name = "Lagarde"
+	religion = "lifepath"
+	culture = "rivarisians"
+
+	1218.1.1 = {
+		birth = yes
+	}
+}
+
+rivarisians_lifepath_2 = {
+	name = "Ascelina"
+	female = yes
+	religion = "lifepath"
+	culture = "rivarisians"
+	dynasty = dyn_marcher_42
+
+	father = rivarisians_lifepath_3
+
+	1211.4.23 = {
+		birth = yes
+	}
+}
+
+rivarisians_lifepath_3 = { # Duc of Vallguedoc, driven out by the League during the Black-Gold War, restored to his position by Gardfrei
+	name = "Guiles"
+	religion = lifepath
+	culture = rivarisians
+	dynasty = dyn_marcher_42
+	disallow_random_traits = yes
+
+	martial = 7
+	diplomacy = 6
+	stewardship = 9
+	intrigue = 6
+	learning = 5
+	prowess = 8
+
+	1174.1.24 = {
+		birth = yes
+	}
+
+	1186.1.1 = {
+		trait = compassionate
+		trait = chaste
+		trait = wrathful
+	}
+
+	1190.1.24 = {
+		trait = education_stewardship_1
+		trait = way_of_harvests_follower
+	}
+
+	1236.11.20 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+rivarisians_lifepath_4 = { # Duc of Grascoi, slain during the Black-Gold War in the Battle of Gravosc
+	name = "Melthew"
+	religion = lifepath
+	culture = rivarisians
+	dynasty = dyn_marcher_43
+	disallow_random_traits = yes
+
+	martial = 5
+	diplomacy = 5
+	stewardship = 6
+	intrigue = 5
+	learning = 5
+	prowess = 8
+
+	1193.7.3 = {
+		birth = yes
+	}
+
+	1205.1.1 = {
+		trait = stubborn
+		trait = patient
+		trait = wrathful
+	}
+
+	1209.7.3 = {
+		trait = education_martial_2
+		trait = way_of_swords_follower
+	}
+
+	1227.4.30 = {
+		death = {
+			death_reason = death_battle
+			killer = salisians_lifepath_2
+		}
+	}
+}
+
+rivarisians_lifepath_6 = {
+	name = "Eensvrij"
+	female = yes
+
+	religion = "lifepath"
+	culture = "rivarisians"
+
+	mother = konijkmener_lifepath_48
+
+	1115.6.24 = {
+		birth = yes
+		trait = possessed_1
+	}
+
+	1131.6.24 = {
+		trait = arbitrary
+		trait = stubborn
+		trait = arrogant
+		trait = way_of_nullification_follower
+		trait = education_martial_2
+	}
+
+	1154.11.19 = {
+		death = {
+			death_reason = death_punishment
+			killer = urdermantern_lifepath_4
+		}
+	}
+}
+
+
+rivarisians_lifepath_7 = {
+	name = "Mathilde"
+	female = yes
+
+	religion = "lifepath"
+	culture = "rivarisians"
+
+	mother = rivarisians_lifepath_6
+
+	1138.1.17 = {
+		birth = yes
+	}
+
+	1154.1.17 = {
+		trait = vengeful
+		trait = cynical
+		trait = impatient
+		trait = education_stewardship_3
+		trait = way_of_swords_follower
+	}
+
+	1164.1.1 = {
+		trait = one_eyed
+		trait = tourney_participant
+	}
+
+	1210.8.3 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+rivarisians_lifepath_8 = {
+	name = "Haabriel"
+
+	religion = "lifepath"
+	culture = "rivarisians"
+
+	mother = rivarisians_lifepath_7
+
+	1157.10.26 = {
+		birth = yes
+		trait = scaly
+	}
+
+	1173.10.26 = {
+		trait = impatient
+		trait = humble
+		trait = lazy
+		trait = way_of_crowns_follower
+		trait = education_diplomacy_1
+	}
+
+	1220.11.18 = {
+		death = { death_reason = death_stress }
+	}
+}
+
+rivarisians_lifepath_9 = {
+	name = "Haabriel"
+
+	religion = "lifepath"
+	culture = "rivarisians"
+
+	father = rivarisians_lifepath_8
+
+	1177.1.9 = {
+		birth = yes
+		trait = scaly
+	}
+
+	1193.1.9 = {
+		trait = education_intrigue_2
+		trait = way_of_crows_follower
+		trait = arbitrary
+		trait = stubborn
+		trait = paranoid
+	}
+
+	1220.11.20 = {
+		death = {
+			death_reason = death_siege
+			killer = rivarisians_lifepath_4
+		}
+	}
+}
+
+rivarisians_lifepath_10 = {
+	name = "Hijdraag"
+
+	religion = "lifepath"
+	culture = "rivarisians"
+
+	father = rivarisians_lifepath_9
+
+	1211.9.8 = {
+		birth = yes
+		trait = scaly
+	}
+
+	1227.1.1 = {
+		trait = education_stewardship_2
+		trait = way_of_knowledge_follower
+		trait = wrathful
+		trait = zealous
+		trait = chaste
+	}
+}
+
+rivarisians_lifepath_11 = {
+	name = "Galobert"
+
+	religion = "lifepath"
+	culture = "rivarisians"
+
+	1098.2.2 = {
+		birth = yes
+	}
+
+	1113.2.2 = {
+		trait = education_martial_2
+		trait = way_of_swords_follower
+		trait = ambitious
+		trait = zealous
+		trait = arrogant
+		trait = strong
+	}
+
+	1220.11.20 = {
+		death = {
+			death_reason = death_siege
+			killer = rivarisians_lifepath_4
+		}
+	}
+}
+
+rivarisians_lifepath_12 = {
+	name = "Alesijn"
+	female = yes
+	religion = "lifepath"
+	culture = "rivarisians"
+	dynasty = dyn_marcher_42
+	father = rivarisians_lifepath_3
+	1213.3.6 = {
+		birth = yes
+	}
+	1233.2.2 = {
+		trait = generous
+		trait = impatient
+		trait = content
+		trait = education_diplomacy_2
+		trait = way_of_crowns_follower
+	}
+	1271.3.24 = {
+		death = { death_reason = death_old_age }
+	}
+}

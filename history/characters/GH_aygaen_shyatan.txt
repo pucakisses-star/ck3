@@ -1,0 +1,41 @@
+﻿aygaen_shyatan_1 = { # Last Aygaen rebel, the bane of 1217 Amaghea
+	name = "Archolo"
+	religion = "shyatan"
+	culture = "aygaen"
+	sexuality = heterosexual
+	dynasty = dyn_lerrardin_8
+	trait = intellect_good_1
+	trait = beauty_good_1
+
+	martial = 7
+	diplomacy = 5
+	stewardship = 4
+	intrigue = 6
+	learning = 5
+
+	1183.5.15 = {
+		birth = yes
+	}
+	1195.5.15 = {
+		trait = zealous
+		trait = vengeful
+		trait = diligent
+	}
+	1199.5.15 = {
+		trait = education_martial_2
+	}
+	1216.4.17 = {
+		trait = peasant_leader
+		trait = rough_terrain_expert
+		trait = cautious_leader
+	}
+	1217.3.2 = {
+		trait = one_eyed
+		give_nickname = nick_the_marked_archolo
+	}
+	1220.9.14 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}

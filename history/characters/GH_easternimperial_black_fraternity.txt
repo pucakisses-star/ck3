@@ -1,0 +1,18 @@
+﻿easternimperial_black_fraternity_1 = { # Black Practitioner, placeholder fn
+	name = "Lysikos"
+	religion = "black_fraternity"
+	culture = "easternimperial"
+
+	1172.3.4 = {
+		birth = yes
+	}
+	1188.3.4 = {
+		trait = magic_good_5
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+}

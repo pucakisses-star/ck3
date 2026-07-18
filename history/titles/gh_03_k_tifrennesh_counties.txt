@@ -1,0 +1,151 @@
+b_misakhabad = {
+	1246.1.1 = {
+		holder = ee_nd_2
+	}
+}
+#c_sajj_usul = {
+#	1230.1.1 = {
+#		holder = makryenis_katharitos_11
+#		liege = k_tifrennesh
+#		government = landed_order_government
+#	}
+#}
+#c_dech_al_wansah = {
+#	1230.1.1 = {
+#		holder = makryenis_katharitos_13
+#		liege = k_tifrennesh
+#		government = landed_order_government
+#	}
+#}
+#c_dihodin = {
+#	1230.1.1 = {
+#		holder = makryenis_katharitos_13
+#		liege = k_tifrennesh
+#		government = landed_order_government
+#	}
+#}
+#c_wadi_sayh = {
+#	1230.1.1 = {
+#		holder = makryenis_katharitos_12
+#		liege = k_tifrennesh
+#		government = landed_order_government
+#	}
+#}
+c_ihedum_and_nettlewreath = {
+	1230.1.1 = {
+		holder = makryenis_katharitos_13
+		liege = k_tifrennesh
+		government = landed_order_government
+	}
+}
+c_sophocene = {
+	1230.1.1 = {
+		holder = makryenis_katharitos_1
+		government = landed_order_government
+	}
+}
+#c_ibran = {
+#	1230.1.1 = {
+#		holder = makryenis_katharitos_15
+#		liege = k_tifrennesh
+#	}
+#}
+#c_temermaht = {
+#	1185.7.13 = {
+#		holder = makryenis_eos_2
+#	}
+#	1253.12.27 = {
+#		holder = makryenis_eos_1
+#	}
+#}
+c_gardens_of_nalqart = {
+	30.1.1 = {
+		holder = qushyed_hubarism_1
+	}
+	
+	87.1.1 = {
+		holder = qushyed_hubarism_2
+	}
+	
+	164.1.1 = {
+		holder = qushyed_hubarism_3
+	}
+	
+	199.3.5 = {
+		holder = mazunic_hubarism_2
+	}
+	
+	312.1.1 = {
+		holder = qushyed_hubarism_4
+	}
+	
+	378.1.1 = {
+		holder = qushyed_hubarism_5
+	}
+	
+	523.1.1 = {
+		holder = mazunic_hubarism_3
+	}
+	
+	1230.1.1 = {
+		holder = mazunic_hubarism_1
+	}
+}
+#c_shuyek_al_shub = {
+#	1230.1.1 = {
+#		holder = mazunic_wardenism_2
+#		liege = d_radnaabah
+#	}
+#}
+c_angelgrave = {
+	1230.1.1 = {
+		holder =  mazunic_wardenism_1
+	}
+}
+
+c_palmsouk = {
+	1230.1.1 = {
+		holder = makryenis_philanthrios_1
+		government = landed_order_government
+	}
+}
+
+
+#c_hemman_badi = {
+#	1230.1.1 = {
+#		holder = makryenis_philanthrios_2
+#		government = landed_order_government
+#		liege = d_tibah
+#	}
+#}
+c_sunmere = {
+	1185.7.13 = {
+		holder = makryenis_eos_2
+		government = landed_order_government
+	}
+	1253.12.27 = {
+		holder = makryenis_eos_1
+	}
+}
+c_anarchia = {
+	1230.1.1 = {
+		holder = makryenis_philanthrios_1
+		government = landed_order_government
+	}
+	1230.1.1 = { change_development_level = 4 }
+}
+
+c_highroad = {
+	1230.1.1 = {
+		holder = makryenis_philanthrios_1
+		government = landed_order_government
+	}
+	1230.1.1 = { change_development_level = 4 }
+}
+#c_roshan = {
+#	1230.1.1 = {
+#		holder = makryenis_philanthrios_4
+#		liege = d_tibah
+#		government = landed_order_government
+#	}
+#}

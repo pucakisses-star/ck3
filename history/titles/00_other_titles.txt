@@ -1,0 +1,3309 @@
+﻿e_darmirat = {
+	1254.1.1 = {
+		liege = 0
+	}
+}
+e_naavjagarad = {
+	1254.1.1 = {
+		liege = 0
+	}
+}
+e_rovarksa = {
+	1254.1.1 = {
+		liege = 0
+	}
+}
+e_abyssal_pits = {
+	1254.1.1 = {
+		liege = 0
+	}
+}
+e_eastern_catacombs = {
+	1254.1.1 = {
+		liege = 0
+	}
+}
+e_eastern_undercity = {
+	1254.1.1 = {
+		liege = 0
+	}
+}
+e_iron_spines = {
+	1254.1.1 = {
+		liege = 0
+	}
+}
+e_taryaad_saramsaasan ={
+	904.1.27 = {
+		holder = neshalar_asritayka_1
+		government = administrative_government
+	}
+	945.2.7 = {
+		holder = neshalar_asritayka_2
+	}
+	972.7.12 = {
+		holder = neshalar_asritayka_3
+	}
+	1004.1.23 = {
+		holder = neshalar_asritayka_4
+	}
+	1024.5.9 = {
+		holder = 0
+	}
+}
+e_mayikprolollan = {
+	#1186.1.1 = {
+	#	government = magocratic_government
+	#	holder = westernimperial_aeschraes_aagiokrata_1
+	#}
+	755.6.15 = {
+		holder = westernimperial_aversarinas_aagiokrata_63
+		government = magocratic_government
+		succession_laws = { magocratic_elective_title_succession_law }
+	}
+	1094.10.12 = {
+		holder = westernimperial_aversarinas_aagiokrata_63
+		government = magocratic_government
+	}
+
+	1179.2.2 = {
+		holder = practitioner_aversarinas_aagiokrata_1
+		government = magocratic_government
+	}
+
+	1184.4.1 = {
+		holder = southernimperial_aversarinas_aagiokrata_16
+		government = magocratic_government
+	}
+
+	1195.5.26 = {
+		holder = practitioner_aversarinas_aagiokrata_2
+		government = magocratic_government
+	}
+
+	1230.1.1 = { change_development_level = 8 }
+	
+	1230.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_5
+		government = magocratic_government
+	}
+}
+e_tower_isles = {
+	243.3.3 = { # Maklea
+		holder = westernimperial_aversarinas_aagiokrata_119
+	}
+	265.5.15 = {
+		holder = 0
+	}
+}
+e_scriptoriums = {
+	1254.1.1 = {
+		liege = 0
+	}
+}
+e_ethylisiaddi_empire = {
+	1.1.1 = {
+		holder = unsorted_17
+	}
+	40.2.21 = {
+		holder = 0
+	}
+}
+e_gurdurbok = {
+	1240.7.12 = {
+		holder = sarridians_aversarinas_aagiokrata_1 #the eponymous Gurdurbok
+	}
+	1247.10.17 = {
+		holder = 0
+	}
+}
+e_red_chasm = {
+	1254.1.1 = {
+		liege = 0
+	}
+}
+e_sunken_depths = {
+	1254.1.1 = {
+		liege = 0
+	}
+}
+e_western_undercity = {
+	1254.1.1 = {
+		liege = 0
+	}
+}
+e_sarradon = {
+	161.1.14 = { # GH TODO: Decide on a date for the Worldeater dying / Rehdyia taking over
+		holder = jaduyada_ritualist_1
+	}
+	199.4.12 = { # Alqad
+		holder = jaduyada_ritualist_3
+	}
+	201.11.21 = { # Dead with the successor, but had been effectively doomed from the moment Rehdyia died
+		holder = 0
+	}
+#	793.9.12 = {
+#		holder = tasurmad_wardenism_7
+#	}
+#	809.3.17 = {
+#		holder = tasurmad_wardenism_8
+#	}
+#	865.3.17 ={
+#		holder = tasurmad_wardenism_9
+#	}
+#	874.12.12 = {
+#		holder = tasurmad_wardenism_10
+#	}
+#	899.10.11 = {
+#		holder = tasurmad_wardenism_11
+#	}
+#	956.10.11 = {
+#		holder = tasurmad_wardenism_12
+#	}
+#	966.10.11 = {
+#		holder = tasurmad_wardenism_13
+#	}
+#	979.10.11 = {
+#		holder = tasurmad_wardenism_14
+#	}
+#	1002.10.11 = {
+#		holder = tasurmad_wardenism_15
+#	}
+#	1049.10.11 = {
+#		holder = tasurmad_wardenism_16
+#	}
+#	1099.10.11 = {
+#		holder = tasurmad_wardenism_17
+#	}
+#	1179.10.11 = {
+#		holder = tasurmad_wardenism_18
+#	}
+#	1183.10.11 = {
+#		holder = tasurmad_wardenism_19
+#	}
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_1
+#	}
+#	1266.3.11 = {
+#		holder = tasurmad_wardenism_94
+#	}
+#	1281.12.1 = {
+#		holder = tasurmad_wardenism_90
+#	}
+}
+e_crater = {
+	290.1.1 = {
+		holder = utyalid_wardenism_21
+	}
+	362.12.8 = {
+		holder = 0
+	}
+}
+e_cyrat = {
+	1254.1.1 = {
+		liege = 0
+	}
+}
+e_seratossim = {
+	1254.1.1 = {
+		liege = 0
+	}
+}
+e_the_sands = {
+	1254.1.1 = {
+		liege = 0
+	}
+}
+e_astilik_empire = {
+	188.4.13 = {
+		holder = astilik_astiliak_2
+	}
+	192.5.11 = {
+		holder = 0
+	}
+}
+e_amsari = { 
+	201.11.14 = { 
+		holder = amsari_mahndayana_1
+		succession_laws = { amsari_succession_law }
+	}
+	242.3.16 = {
+		holder = amsari_mahndayana_122
+	} # Adarayan
+	278.1.1 = {
+		holder = amsari_mahndayana_126
+	} # Mehran
+	286.1.1 = {
+		holder = amsari_mahndayana_127
+	} # Zarvandar
+	313.1.1 = {
+		holder = amsari_mahndayana_129
+	} # Yahziri
+	362.1.1 = {
+		holder = amsari_mahndayana_131
+	} # Mehran II
+	382.1.1 = {
+		holder = amsari_mahndayana_132
+	} # Vahhab
+	427.1.1 = {
+		holder = amsari_mahndayana_133
+	} # Iralya
+	456.1.1 = {
+		holder = amsari_mahndayana_137
+	} # Nuya
+	493.1.1 = {
+		holder = amsari_mahndayana_141
+	} # Navrosh
+	529.1.1 = {
+		holder = amsari_mahndayana_142
+	} # Shahr_Nira
+	551.1.1 = {
+		holder = amsari_mahndayana_143
+	} # Oshvari
+	579.1.1 = {
+		holder = amsari_mahndayana_144
+	} # Kavashid
+	582.1.1 = {
+		holder = amsari_mahndayana_145
+	} # DestAran
+	649.1.1 = {
+		holder = amsari_mahndayana_147
+	} # Mehran
+	674.1.1 = {
+		holder = amsari_mahndayana_148
+	} # Ashakhet
+	682.1.1 = {
+		holder = amsari_mahndayana_149
+	} # Javareh
+	709.1.1 = {
+		holder = amsari_mahndayana_150
+	} # Mazdari ########################
+	720.1.1 = { 
+		holder = amsari_mahndayana_154
+	} # Arika #########################
+	731.1.1 = {
+		holder = amsari_mahndayana_151
+	} # Rouzbeh
+	747.1.1 = {
+		holder = amsari_mahndayana_155
+	} # Rouzbeh II
+	763.1.1 = {
+		holder = amsari_mahndayana_175
+	} # Ardava
+	786.1.1 = {
+		holder = amsari_mahndayana_176
+	} # Zartosht
+	818.1.1 = {
+		holder = amsari_mahndayana_182
+	} # Zayar
+	865.1.1 = {
+		holder = amsari_mahndayana_184
+	} # Gholshan
+	899.1.1 = {
+		holder = amsari_mahndayana_189
+	} # Adarva (899-906 IS)
+	906.1.1 = {
+		holder = amsari_mahndayana_197
+	} # Bahran (906-908 IS)
+	908.1.1 = {
+		holder = amsari_mahndayana_186
+	} # Aushedar (908-913 IS)
+	913.1.1 = {
+		holder = amsari_mahndayana_198
+	} # Majhra (913-924 IS)
+	924.1.1 = {
+		holder = amsari_mahndayana_199
+	} # Majhra II (924-933 IS)
+	933.1.1 = {
+		holder = amsari_mahndayana_193
+	} # Yazarith (933-957 IS) - His reign saw Zoen and Rexil set the Amsari Hikhlan ablaze.
+	957.1.1 = {
+		holder = amsari_mahndayana_241
+	} # Itet (957-966 IS)
+	966.1.1 = {
+		holder = amsari_mahndayana_247
+	} # Farvan (966-978 IS)
+	978.1.1 = {
+		holder = amsari_mahndayana_268
+	} # Zayar (978-999 IS)
+	999.1.1 = {
+		holder = amsari_mahndayana_269
+	} # Aushedar (999-1046 IS)
+	1046.1.1 = {
+		holder = amsari_mahndayana_270 
+	} # Razemi (1046-1074 IS)
+	1074.1.1 = {
+		holder = amsari_mahndayana_271
+	} # ParashAd (1074-1118 IS)
+	1118.1.1 = {
+		holder = amsari_mahndayana_272
+	} # Tova (1118-1148 IS)
+	1148.1.1 = {
+		holder = amsari_mahndayana_274
+	} # Israyana (1148-1169 IS)
+	1169.1.1 = {
+		holder = amsari_mahndayana_275
+	} # Jahanshah (1169-1184 IS)
+	1184.1.1 = {
+		holder = amsari_mahndayana_2
+	} # Pejman (1184-1257 IS)
+}
+d_sheharddi_rel = {
+	1230.1.1 = {
+		holder = simevian_sheharddi_1
+		government = theocracy_government
+	}
+}
+e_ayyar = {
+	1200.1.1 = {
+		holder = auzangeb_ruidari_22
+	}
+	1230.1.1 = {
+		holder = auzangeb_ruidari_1
+	}
+}
+e_chevalie = {
+	39.1.11 = {
+		holder = shewigad_starvayrd_1 #Good King Bastione
+	}
+	85.1.12 = {
+		holder = shewigad_starvayrd_2 #Magi-King Vercigex
+	}
+	139.2.11 = {
+		holder = 0
+	}
+	234.1.11 = {
+		holder = shewigad_lifepath_1 #Aloysian den va Metedryx
+	}
+	262.3.15 = {
+		holder = carsavisians_lifepath_32 #Ardorac den va Metedryx
+	}
+	311.8.3 = {
+		holder = carsavisians_lifepath_33 #Genvuis den va Metedryx
+	}
+	324.9.23 = {
+		holder = carsavisians_lifepath_34 #Abrouin den va Metedryx
+	}
+	339.10.30 = {
+		holder = 0
+	}
+	401.2.2 = {
+		holder = carsavisians_lifepath_26 #Piette
+	}
+	442.6.16 = {
+		holder = 0 #Post-Northmarch anarchy
+	}
+	631.1.2 = {
+		holder = trustians_lifepath_26 #Rosier, signed Dialacendian Compromise
+	}
+	631.5.15 = {
+		holder = 0
+	}
+	752.4.21 = {
+		holder = trustians_lifepath_22 #Arelli, established Ziemojycz for surviving Oejeynicans
+	}
+	779.2.24 = {
+		holder = 0
+	}
+	825.4.2 = {
+		holder = voyagen_lifepath_32 #Thamean
+	}
+	878.3.8 = {
+		holder = 0
+	}
+	950.1.1 = {
+		holder = voyagen_lifepath_31 #Huegons
+	}
+	963.5.15 = {
+		holder = voyagen_lifepath_30 #Agiers
+	}
+	974.12.22 = {
+		holder = voyagen_lifepath_29 #Rémis
+	}
+	#1001.4.21 = { 		
+	#	holder = 0
+	#}
+	#1019.9.4 = {
+	#	holder = voyagen_lifepath_29 #Rémis
+	#}
+	1025.4.26 = {
+		holder = voyagen_lifepath_28 #Bredan
+	}
+	1055.2.30 = {
+		holder = voyagen_lifepath_27 #Oliers
+	}
+	1077.4.27 = {
+		holder = voyagen_lifepath_26 #Valden
+	}
+	1101.2.30 = {
+		holder = 0
+	}
+	1151.7.26 = {
+		holder = voyagen_lifepath_23 #Chrysé
+	}
+	1199.9.26 = {
+		holder = voyagen_lifepath_22 #Dendon
+	}
+	1217.4.12 = {
+		holder = voyagen_lifepath_1 #Gardfrei
+	}
+	1253.11.12 = {
+		holder = 0
+	}
+}
+e_cornucopia = {
+	1181.4.14 = {
+		holder = centralimperial_aversarinas_aagiokrata_45
+	}
+	1186.11.15 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1205.1.1 = {
+		holder = 0
+	}
+	1219.7.15 = {
+		holder = northernimperial_aversarinas_aagiokrata_19
+	}
+	1229.11.3 = {
+		holder = 0
+	}
+	1250.1.1 = {
+		 
+	}
+}
+e_the_reach = {
+	381.10.5 = {
+		holder = etrandanexi_lifepath_1	# High King Marcomer 'the Hesitant'
+	}
+	402.1.26 = {
+		holder = 0
+	}
+	631.2.25 = {
+		holder = northernimperial_aversarinas_aagiokrata_64	# Governor Thysalion
+	}
+	654.4.1 = {
+		holder = dailennir_kathanouxiac_18	# Carttuen 'Silver-Hair', very briefly at the culmination of the War of the Black Yew
+	}
+	1181.4.14 = {
+		holder = centralimperial_aversarinas_aagiokrata_45
+	}
+	1186.11.15 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1205.1.1 = {
+		holder = 0
+	}
+	1221.7.15 = {
+		holder = northernimperial_aversarinas_aagiokrata_19
+	}
+	1229.11.3 = {
+		holder = northernimperial_aversarinas_aagiokrata_20
+	}
+	1247.11.10 = {
+		holder = 0
+	}
+	1250.1.1 = {
+		 
+	}
+}
+e_east_lichdoms = {
+	1254.1.1 = {
+		liege = 0
+	}
+}
+e_west_lichdoms_1 = {
+	1254.1.1 = {
+		liege = 0
+	}
+}
+e_aironoi = {
+	#1194.1.2 = {
+	#	holder = easternimperial_aversarian_axiaotheaism_1
+	#}
+	1200.2.30 = {
+		holder = 0
+	}
+}
+e_etepezea = {
+	243.3.3 = { # Maklea
+		holder = westernimperial_aversarinas_aagiokrata_119
+	}
+	1181.4.14 = {
+		holder = centralimperial_aversarinas_aagiokrata_45
+	}
+	1186.11.15 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1231.8.13 = {
+		holder = westernimperial_aversarinas_aagiokrata_250
+		liege = 0
+	}
+	1236.2.13 = {
+		holder = 0
+	}
+}
+e_malcois = {
+	243.3.3 = { # Maklea
+		holder = westernimperial_aversarinas_aagiokrata_119
+	}
+	1181.4.14 = {
+		holder = centralimperial_aversarinas_aagiokrata_45
+	}
+	1186.2.14 = {
+		holder = 0
+	}
+	1200.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1250.1.1 = {
+		holder = 0
+	}
+}
+e_opakhasia = {
+	243.3.3 = { # Maklea
+		holder = westernimperial_aversarinas_aagiokrata_119
+	}
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1203.8.19 = {
+		holder = centralimperial_aeschraes_aagiokrata_1
+	}
+	1229.11.3 = { 		
+		holder = 0
+	}
+}
+
+e_rite_authority_rel = {
+	1250.1.1 = {
+	}
+}
+e_central_mamuramat = {
+	641.1.1 = {
+		holder = tasurmad_wardenism_110
+	}
+	650.6.21 = {
+		holder = tasurmad_wardenism_108
+	}
+	674.1.1 = {
+		holder = tasurmad_wardenism_107
+	}
+	707.5.25 = {
+		holder = tasurmad_wardenism_105
+	}
+	719.3.1 = {
+		holder = tasurmad_wardenism_102
+	}
+	725.10.1 = {
+		holder = tasurmad_wardenism_101
+	}
+	730.12.12 = {
+		holder = tasurmad_wardenism_100
+	}
+	741.12.12 = {
+		holder = tasurmad_wardenism_99
+	}
+	793.9.12 = {
+		holder = tasurmad_wardenism_7
+	}
+	809.3.17 = {
+		holder = tasurmad_wardenism_8
+	}
+	865.12.3 ={
+		holder = tasurmad_wardenism_9
+	}
+	874.12.12 = {
+		holder = tasurmad_wardenism_10
+	}
+	899.10.11 = {
+		holder = tasurmad_wardenism_11
+	}
+	956.10.11 = {
+		holder = tasurmad_wardenism_12
+	}
+	966.10.11 = {
+		holder = tasurmad_wardenism_13
+	}
+	979.10.11 = {
+		holder = tasurmad_wardenism_14
+	}
+	1002.10.11 = {
+		holder = tasurmad_wardenism_15
+	}
+	1049.10.11 = {
+		holder = tasurmad_wardenism_16
+	}
+	1099.10.11 = {
+		holder = tasurmad_wardenism_17
+	}
+	1179.10.11 = {
+		holder = tasurmad_wardenism_18
+	}
+	1183.10.11 = {
+		holder = tasurmad_wardenism_19
+	}
+	1200.1.1 = {
+		change_development_level = 11
+	}
+	1230.1.1 = {
+		holder = tasurmad_wardenism_1
+	}
+	1266.3.11 = {
+		holder = tasurmad_wardenism_94
+	}
+	1281.12.1 = {
+		holder = tasurmad_wardenism_90
+	}
+}
+e_aversarinas_aautokrata = {
+	0.1.1 = { # Dhace'nox
+		holder = aelarvisian_aerasodiax_1
+	}
+	64.11.12 = { # Nokie'sex
+		holder = aelarvisian_aerasodiax_3
+	}
+	86.3.1 = { # Thoe'nex
+		holder = aelarvisian_aerasodiax_4
+	}
+	93.11.14 = { # Phanago'rax
+		holder = aelarvisian_aversarinas_aagiokrata_1
+	}
+	132.7.11 = { # Memnub'ion
+		holder = aelarvisian_aerasodiax_5
+	}
+	151.2.1 = { # Dhaci'xen
+		holder = aeviaxian_aerasodiax_1
+	}
+	170.7.11 = { # Aexionarax
+		holder = aelarvisian_aversarinas_aagiokrata_3
+	}
+	188.4.21 = { # Aessocianix
+		holder = westernimperial_aversarinas_aagiokrata_1
+	}
+	210.3.14 = { # Akalionixos
+		holder = westernimperial_aversarinas_aagiokrata_118
+	}
+	243.3.3 = { # Maklea
+		holder = westernimperial_aversarinas_aagiokrata_119
+	}
+	265.5.15 = { # Post Maklea Interregnum
+		holder = 0
+	}
+	# 284.9.2 = { # Dellinos - defeated Ultimox, Mari'dox and Crethos to take the throne but was killed by Theryion in the Widow War
+	#	holder =
+	# }
+	340.11.16 = { # Throne empty after Dellinos killed by Theryion in the Widow War
+		holder = 0
+	}
+	347.7.13 = { # Pathos
+		holder = westernimperial_aversarinas_aagiokrata_111
+ 	}
+ 	# 405.2.17 = { # Unknown heir of Pathos - killed by Dragonfire
+ 	#	holder =
+ 	# }
+ 	421.9.18 = { # Arthenaxian Anarchy
+ 		holder = 0
+ 	}
+	439.5.4 = { # Aeliadias
+		holder = westernimperial_aversarinas_aagiokrata_500
+ 	}
+ 	599.10.25 = { # Aeladaxos 'the Child Aautokratir'
+ 		holder = southernimperial_aversarinas_aagiokrata_133
+ 	}
+	618.4.17 = { # Kethemodes
+		holder = centralimperial_aversarinas_aagiokrata_33
+	}
+	725.5.29 = { # Eramos
+		holder = centralimperial_aversarinas_aagiokrata_64
+	}
+	756.10.3 = { # Theyssia
+		holder = southernimperial_aversarinas_aagiokrata_1
+	}
+	892.3.17 = { # Mythix
+		holder = northernimperial_aversarinas_aagiokrata_2
+	}
+	901.1.12 = { # Nothyx
+		holder = westernimperial_aversarinas_aagiokrata_84
+	}
+	949.7.17 = { # Oliatos
+		holder = westernimperial_aversarinas_aagiokrata_116
+	}
+	952.4.3 = { # Clytomedes
+		holder = westernimperial_aversarinas_aagiokrata_115
+	}
+	954.4.3 = { # Alcandrea
+		holder = westernimperial_aversarinas_aagiokrata_114
+	}
+	987.4.3 = { # Isocrates
+		holder = westernimperial_aversarinas_aagiokrata_113
+	}
+	1025.5.5 = { # Exaduis
+		holder = northernimperial_aversarinas_aagiokrata_41
+	}
+	1076.7.13 = { # Phancis
+		holder = westernimperial_aversarinas_aagiokrata_82
+	}
+	1099.3.14 = { # Biton
+		holder = westernimperial_aversarinas_aagiokrata_81
+	}
+	1117.2.12 = { # Maeonias
+		holder = westernimperial_aversarinas_aagiokrata_80
+	}
+	1120.3.14 = { # Ischenios
+		holder = westernimperial_aversarinas_aagiokrata_79
+	}
+	1172.3.14 = { # Turmoil of the 16 Aautokratirs
+		holder = 0
+	}
+	1181.4.14 = { # Anesimasios
+		holder = centralimperial_aversarinas_aagiokrata_45
+	}
+	1186.2.14 = { # ICW
+		holder = 0
+	}
+}
+e_nitsafai = {
+	1230.1.1 = {
+		holder = kawoch_nitsafai_1
+	}
+	1267.7.19 = {
+		holder = kawoch_nitsafai_3
+	}
+	1271.3.2 = {
+		holder = kawoch_nitsafai_5
+	}
+	1294.11.13 = {
+		holder = kawoch_nitsafai_11
+	}
+}
+e_migrant_coalition = {
+	1242.2.16 = {
+		holder = daukeni_sjalvolki_1
+		government = continental_clan_government
+	}
+}
+e_asiupoli_aautokrata = {
+	1175.11.28 = { # Aeolus
+		holder = easternimperial_aversarinas_aagiokrata_89
+	}
+	1186.11.15 = { # Axiaothea
+		holder = easternimperial_aversarian_axiaotheaism_1
+	}
+	1200.3.1 = {
+		holder = 0
+	}
+}
+e_oraispol_aautokrata = {
+	1177.7.17 = { # Theodian
+		holder = westernimperial_aversarinas_aagiokrata_78
+	}
+	1179.1.12 = { # Crios
+		holder = westernimperial_aversarinas_aagiokrata_77
+	}
+	1186.11.15 = { # Aeschraes
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1254.1.2 = {
+		holder = 0
+	}
+}
+e_kattradia_autokrat1 = {
+	1172.3.14 = { # Thresatos
+		holder = apokiakas_aversarinas_aagiokratia_22
+	}
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_2
+	}
+	1203.3.18 = {
+		holder = 0
+	}
+}
+k_adabyss_borderfort = {
+	1230.1.1 = {
+		holder = adabyann_adabyssian_1	# GH URGENT: Figure out what to do about this guy's government
+		government = administrative_bureaucracy_government
+	}
+}
+k_black_gold_league = {
+	1218.1.11 = {
+		holder = salisians_lifepath_7
+	}
+
+	1224.6.2 = {
+		holder = salisians_lifepath_16
+	}
+
+	1227.10.19 = {
+		holder = 0
+	}
+}
+k_calagonii = { 
+	1230.1.1 = {
+		holder = voluntic_partic_1
+		government = continental_clan_government
+	}
+}
+k_high_kingdom_of_the_isles = {
+	1234.1.1 = {
+		holder = centralislander_aversarinas_aagiokrata_1
+		government = pirate_government
+	}
+}
+k_the_bloodied_throne = {
+	1248.1.14 = {
+		holder = southernimperial_aversarian_gorassos_1
+	}
+	1274.7.15 = {
+		holder = 0
+	}
+}
+k_governorate_the_reach_kingdom = {
+	1221.7.15 = {
+		holder = northernimperial_aversarinas_aagiokrata_19
+		liege = e_aversarinas_aautokrata
+	}
+	1229.11.3 = {
+		 holder = 0
+	}
+}
+k_governorate_cornucopia_kingdom = {
+	1159.6.7 = {
+		holder = northernimperial_aversarinas_aagiokrata_44
+		liege = e_aversarinas_aautokrata
+	}
+	1200.3.1 = {
+		holder = northernimperial_aversarinas_aagiokrata_42
+		liege = e_aversarinas_aautokrata
+	}
+	1209.10.3 = {
+		holder = northernimperial_aversarinas_aagiokrata_45
+	}
+	1218.7.27 = {
+		 holder = 0
+	}
+	1221.7.15 = {
+		holder = northernimperial_aversarinas_aagiokrata_19
+		liege = e_aversarinas_aautokrata
+	}
+	1229.11.3 = {
+		 holder = 0
+	}
+}
+k_governorate_opakhasia_kingdom = {
+	1081.4.10 = {
+		holder = southernimperial_aversarinas_aagiokrata_116
+		liege = e_aversarinas_aautokrata
+	}
+	1086.9.24 = {
+		holder = southernimperial_aversarinas_aagiokrata_95
+		liege = e_aversarinas_aautokrata
+	}
+	1113.2.25 = {
+		holder = southernimperial_aversarinas_aagiokrata_97
+	}
+	1151.7.13 = {
+		holder = southernimperial_aversarinas_aagiokrata_99
+	}
+	1200.3.1 = {
+		holder = 0
+	}
+}
+d_governorate_opakhasia_duchy = {
+	1081.4.10 = {
+		holder = southernimperial_aversarinas_aagiokrata_116
+		liege = e_aversarinas_aautokrata
+	}
+	1086.9.24 = {
+		holder = southernimperial_aversarinas_aagiokrata_95
+		liege = e_aversarinas_aautokrata
+	}
+	1113.2.25 = {
+		holder = southernimperial_aversarinas_aagiokrata_97
+	}
+	1151.7.13 = {
+		holder = southernimperial_aversarinas_aagiokrata_99
+	}
+	1200.3.1 = {
+		holder = southernimperial_aversarinas_aagiokrata_101
+	}
+	1219.6.24 = {
+		holder = southernimperial_aversarinas_aagiokrata_104
+	}
+	1222.10.25 = {
+		holder = southernimperial_aversarinas_aagiokrata_30
+		government = feudal_government
+	}
+}
+k_governorate_etepezea_kingdom = {
+	958.7.24 = {
+		holder = westernimperial_aversarinas_aagiokrata_519
+		liege = e_aversarinas_aautokrata
+	}
+	976.11.20 = {
+		holder = westernimperial_aversarinas_aagiokrata_520
+	}
+	979.3.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_521
+	}
+	985.10.27 = {
+		holder = westernimperial_aversarinas_aagiokrata_523
+	}
+	1025.5.5 = { # Qavartox Mythatrixar did not inherit
+		holder = 0
+	}
+	1034.7.8 = {
+		holder = westernimperial_aversarinas_aagiokrata_522
+	}
+	1055.9.7 = {
+		holder = westernimperial_aversarinas_aagiokrata_524
+	}
+	1073.10.13 = {
+		holder = westernimperial_aversarinas_aagiokrata_528
+	}
+	1099.3.14 = { # TO ADD
+		holder = 0
+	}
+	1168.12.2 = { # Dacianos Askarellon
+		holder = westernimperial_aversarinas_aagiokrata_539
+	}	
+	1179.7.25 = { # Iatrokles Aercargiad
+		holder = westernimperial_aversarinas_aagiokrata_104
+	}
+	1186.12.19 = { # Overthrown by Aesch, given to Arios Aercargiad
+		holder = westernimperial_aversarinas_aagiokrata_107
+		liege = e_oraispol_aautokrata
+	}
+	1198.6.11 = { # To add holder after Arios
+		holder = 0
+	}
+	1223.4.15 = { # Lycus Xenepheron
+		holder = westernimperial_aversarinas_aagiokrata_250
+	}
+	1229.11.3 = { # Vilnian Assault
+		liege = 0
+	}
+}
+k_governorate_katraddia_kingdom = {
+	1200.3.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_31
+		government = feudal_government
+		liege = 0
+	}
+	1219.2.4 = {
+		holder = apokiakas_aversarinas_aagiokratia_32
+	}
+	1240.1.1 = {
+		holder = 0
+	}
+}
+k_military_governorate_malcois_kingdom = {
+	461.8.18 = {
+		holder = centralimperial_aversarinas_aagiokrata_17
+		government = military_unit_government
+	}
+	497.9.13 = {
+		holder = 0
+	}
+}
+k_governorate_malcois_kingdom = {
+	475.6.17 = {
+		holder = centralimperial_aversarinas_aagiokrata_1
+		liege = e_aversarinas_aautokrata
+	}
+	506.3.22 = {
+		holder = centralimperial_aversarinas_aagiokrata_2
+		liege = e_aversarinas_aautokrata
+	}
+	528.2.6 = {
+		holder = centralimperial_aversarinas_aagiokrata_19
+		liege = e_aversarinas_aautokrata
+	}
+	539.12.3 = {
+		holder = centralimperial_aversarinas_aagiokrata_20
+		liege = e_aversarinas_aautokrata
+	}
+	560.12.20 = {
+		holder = centralimperial_aversarinas_aagiokrata_3
+		liege = e_aversarinas_aautokrata
+	}
+	600.6.29 = {
+		holder = centralimperial_aversarinas_aagiokrata_12
+		liege = e_aversarinas_aautokrata
+	}
+	603.9.6 = {
+		holder = centralimperial_aversarinas_aagiokrata_21
+		liege = e_aversarinas_aautokrata
+	}
+	610.1.12 = {
+		holder = centralimperial_aversarinas_aagiokrata_33
+		liege = e_aversarinas_aautokrata
+	}
+	618.4.17 = {
+		holder = centralimperial_aversarinas_aagiokrata_13
+		liege = e_aversarinas_aautokrata
+	}
+	642.10.16 = {
+		holder = centralimperial_aversarinas_aagiokrata_14
+		liege = e_aversarinas_aautokrata
+	}
+	1058.6.15 = {
+		holder = centralimperial_aversarinas_aagiokrata_185
+		liege = e_aversarinas_aautokrata
+	}
+	1180.4.15 = {
+		holder = centralimperial_aversarinas_aagiokrata_99
+	}
+	1200.3.1 = {
+		holder = centralimperial_aversarinas_aagiokrata_100
+		liege = e_etepezea
+	}
+	1238.4.15 = {
+		holder = centralimperial_aversarinas_aagiokrata_98
+	}
+	1240.8.13 = {
+		holder = 0
+	}
+}
+k_legio_vii_anthiope = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_6
+		government = military_unit_government
+
+	}
+	1201.3.22 = {
+		holder = apokiakas_aeschraes_aagiokrata_1
+		government = military_unit_government
+	}
+	1219.10.3 = {
+		holder = apokiakas_aeschraes_aagiokrata_2
+		government = military_unit_government
+	}
+	1221.1.2 = {
+		holder = 0
+	}
+}
+k_legio_lxi_anoterion = {
+	1119.2.11 = {
+		holder = easternimperial_aversarinas_aagiokrata_91
+ 	}
+	1153.1.11 = {
+		holder = easternimperial_aironoian_aagiokrata_88
+ 	}
+	1168.3.1 = {
+		holder = easternimperial_aversarinas_aagiokrata_88
+ 	}
+	1200.3.1 = {
+		holder = easternimperial_aversarinas_aagiokrata_86
+ 	}
+	1253.11.12 = {
+		holder = easternimperial_aironoian_aagiokrata_1
+		government = feudal_government
+	}
+}
+k_legio_xcv_viesuados = {
+	1180.1.1 = {
+		holder = yevamarai_aversarinas_aagiokrata_11
+		government = military_unit_government		
+	}
+
+	1200.3.1 = {
+		holder = centralimperial_aversarinas_aagiokrata_130
+		government = military_unit_government
+	}
+
+	1205.6.9 = {
+		holder = easternislander_aversarinas_aagiokrata_7
+		government = military_unit_government
+	}
+
+	1207.3.3 = {
+		holder = centralislander_aversarinas_aagiokrata_3
+		government = military_unit_government
+	}
+
+	1209.3.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_202
+		government = military_unit_government
+	}
+
+	1210.3.14 = {
+		holder = outerislander_aversarinas_aagiokrata_1
+		government = military_unit_government 
+	}
+
+	1210.3.24 = {
+		holder = 0
+	}
+}
+k_legio_xvii_stereon = {
+	1230.1.1 = {
+		holder = southernimperial_aversarinas_aagiokrata_66
+		government = military_unit_government
+	}
+}
+k_legio_xxi_axiaothea = {
+	1071.8.23 = {
+ 		holder = westernimperial_aversarinas_aagiokrata_127
+		government = military_unit_government
+	}
+	1184.2.16 = {
+ 		holder = westernimperial_aeschraes_aagiokrata_1
+		government = military_unit_government
+	}
+	1187.1.1 = {
+ 		holder = easternimperial_aversarinas_aagiokrata_87
+		government = military_unit_government
+	}
+	1200.3.1 = {
+ 		holder = northernimperial_aversarinas_aagiokrata_6
+		government = military_unit_government
+	}
+	1229.11.3 = { 
+		holder = southernimperial_aversarian_axiaotheaism_1
+		government = military_unit_government
+	}
+}
+k_winter_legion = {
+	1214.3.11 = {
+		holder = apokiakas_militant_cliques_1
+		government = military_unit_government
+	}
+	1250.4.6 = {
+		liege = e_migrant_coalition
+	}
+}
+k_mayikprolollan_sto_thallas = {
+	1250.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_6
+		government = magocratic_republic
+	}
+}
+k_mayikprolollan_to_spathas = {
+	1253.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_10
+		government = magocratic_government
+		succession_laws = { magocratic_elective_title_succession_law }
+	}
+}
+k_mayikprolollan_aironoiakaan = {
+	1193.7.5 = {
+		holder = easternimperial_aversarian_axiaotheaism_12
+		government = magocratic_government
+	}
+	1199.8.12 = {
+		holder = easternimperial_aversarinas_practitioner_1
+		government = magocratic_government
+	}
+	1200.3.1 = {
+		holder = 0
+	}
+}
+k_bleeding_martyr = {
+	1241.7.8 = {
+		holder = makryenis_thysia_1
+		government = landed_order_government
+		succession_laws = { landed_order_elective_title_succession_law }
+	}
+}
+k_blind_watcher = {
+	1237.9.4 = {
+		holder = makryenis_dikaynos_1
+		government = landed_order_government
+		succession_laws = { landed_order_elective_title_succession_law }
+	}
+}
+k_forgotten_saint = {
+	1095.3.15 = {
+		holder = westernimperial_forgotten_1
+	}
+	1241.7.8 = {
+		holder = makryenis_forgotten_1
+		government = landed_order_government
+		succession_laws = { landed_order_elective_title_succession_law }
+	}
+}
+k_forlorn_guardian = {
+	1185.7.13 = {
+		holder = makryenis_eos_2
+		government = landed_order_government
+		succession_laws = { landed_order_elective_title_succession_law }
+	}
+	1253.12.27 = {
+		holder = makryenis_eos_1
+	}
+}
+k_golden_hand = {
+	1241.7.8 = {
+		holder = makryenis_philanthrios_1
+		government = landed_order_government
+		succession_laws = { landed_order_elective_title_succession_law }
+	}
+}
+k_pure_heart = {
+	1241.7.8 = {
+		holder = makryenis_katharitos_1
+		government = landed_order_government
+		succession_laws = { landed_order_elective_title_succession_law }
+	}
+}
+k_saint_calystos_key = {
+	1092.4.8 = {
+		holder = northernimperial_calysto_1
+		government = landed_order_government
+		succession_laws = { landed_order_elective_title_succession_law }
+	}
+	1241.7.8 = {
+		holder = makryenis_calysto_1
+	}
+}
+k_saint_sansias_rose = {
+	1087.3.23 = {
+		holder = centralimperial_sansia_1
+		government = landed_order_government
+		succession_laws = { landed_order_elective_title_succession_law }
+	}
+	1241.7.8 = {
+		holder = makryenis_sansia_1
+	}
+}
+k_the_safe_harbors = {
+	1200.3.15 = {
+		government = military_unit_government
+		holder = easternimperial_militant_cliques_1
+	}
+	1213.5.17 = {
+		holder = tretosai_militant_cliques_1
+	}
+	1217.7.16 = {
+		holder = 0
+	}
+}
+k_epavarion = {
+	1251.10.11 = {
+		holder = apokiakas_aversarinas_aagiokratia_23
+	}
+}
+d_aversarian_priesthood = {
+	1231.8.13 = {
+		government = theocracy_government
+		holder = westernimperial_omitilos_aagiokrata_1
+		liege = k_palitake
+	}
+	1257.12.5 = {
+		holder = 0
+	}
+}
+d_manats_rel = {
+	1200.1.1 = {
+		holder = madikirib_manats_10
+	}
+	1219.1.1 = {
+		liege = 0
+	}
+	1221.4.8 = {
+		holder = madikirib_manats_3
+	}
+	
+	1244.1.1 = {
+		holder = 0
+	}
+}
+d_warden_1 = {
+	793.9.12 = {
+		holder = tasurmad_wardenism_7
+	}
+	809.3.17 = {
+		holder = tasurmad_wardenism_8
+	}
+	865.12.3 = {
+		holder = 0
+	}
+	1230.1.1 = {
+		holder = tasurmad_wardenism_1
+	}
+	1266.3.11 = {
+		holder = tasurmad_wardenism_94
+	}
+	1281.12.1 = {
+		holder = tasurmad_wardenism_90
+	}
+}
+d_the_dragon_cult_rel = {
+	1252.1.1 = {
+		government = theocracy_government
+		holder = guillater_aversarian_the_dragon_cult_2
+	}
+}
+d_cult_of_the_bitter_wave_rel = {
+	1252.1.1 = {
+		government = theocracy_government
+		holder = lorodegi_cult_of_the_bitter_wave_4
+	}
+}
+#d_cleansed_ones_rel = {
+#	1249.2.4 = {
+#		government = theocracy_government
+#		holder = guillater_aversarian_cleansed_ones_2
+#	}
+#}
+d_distant_shore_rel = {
+	1252.1.1 = {
+		government = theocracy_government
+		holder = aguadosian_distant_shore_cult_2
+	}
+}
+d_deep_one_cult_rel = {
+	1252.1.1 = {
+		government = theocracy_government
+		holder = guillater_deep_one_cult_1
+	}
+}
+d_lifepath_rel = {
+	1200.1.1 = {
+		liege = e_chevalie
+	}
+	1250.1.1 = {
+		holder = salisians_lifepath_14
+		government = theocracy_government
+		liege = k_varrdevet
+	}
+}
+d_mountain_order = {
+	1230.1.1 = {
+		holder = mazunic_haradar_1
+		government = landed_order_government
+	}
+}
+d_badrs_expedition_order = {
+	1281.12.1 = {
+		holder = tasurmad_haradar_14
+		government = landed_order_government
+	}
+}
+#d_aagiokratian_archailogikos_sokoinias = {
+#	1250.6.21 = {
+#		holder = erimatos_aversarinas_aagiokrata_2
+#	}
+#}
+k_colonia_authority = {
+	1160.11.28 = {
+		holder = erimatos_aversarinas_aagiokrata_11
+		government = republic_playable_government
+	}
+	1182.5.25 = {
+		holder = erimatos_aversarinas_aagiokrata_12
+	}
+	1207.1.18 = {
+		holder = erimatos_aversarinas_aagiokrata_16
+	}
+	1227.9.6 = {
+		holder = 0
+	}
+}
+d_colonia_authority = {
+	1227.9.6 = {
+		holder = erimatos_aversarinas_aagiokrata_17
+	}
+	1248.2.5 = {
+			holder = easternimperial_aversarinas_aagiokrata_8
+	}
+	1252.9.11 = {
+		holder = erimatos_aversarinas_aagiokrata_4
+	}
+}
+d_company_of_the_crownmans_sword = {
+	1246.1.1 = {
+		holder = voyagen_lifepath_5
+	}
+	1295.12.5 = {
+		holder = 0
+	}
+}
+d_company_of_the_roseate_swan = {
+	1244.3.17 = {
+		holder = voyagen_lifepath_73
+	}
+	1247.3.15 = {
+		holder = 0
+	}
+}
+d_heraklios = {
+	1234.1.1 = {
+		holder = erimatos_aversarinas_aagiokrata_3
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+d_band_of_bastards = {
+	1244.1.1 = {
+		holder = voyagen_lifepath_8
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			holder = { add_realm_law_skip_effects = camp_purpose_legitimists }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+d_company_of_the_watchful_sickle = {
+	1247.4.11 = {
+		holder = trustians_lifepath_30
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			holder = { add_realm_law_skip_effects = camp_purpose_mercenaries }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+d_grande_gisreddes_finest = {
+	1253.6.4 = {
+		holder = gisreddan_lifepath_18
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+d_far_flung = {
+	1237.4.16 = {
+		holder = doffore_mogowai_21
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 1254.1.1 }
+		}
+	}
+}
+d_yenusaawi_boqtada = {
+	1170.1.1 = {
+		holder = kawoch_mogowai_27
+	}
+	1230.1.1 = {
+		holder = kawoch_mogowai_9
+	}
+}
+k_hibyaalki_damotada = {
+	1285.4.19 = {
+		holder = kawoch_mogowai_9
+	}
+	1294.7.27 = {
+		holder = kawoch_mogowai_32
+	}
+}
+k_governorate_aironoi_kingdom = {
+	960.8.1 = {
+		holder = easternimperial_aversarinas_aagiokrata_76
+		liege = e_aversarinas_aautokrata
+	}
+	980.5.14 = {
+		holder = easternimperial_aversarinas_aagiokrata_77
+		liege = e_aversarinas_aautokrata
+	}
+	1148.2.21 = {
+		holder = easternimperial_aversarinas_aagiokrata_19
+		liege = e_aversarinas_aautokrata
+	}
+	1164.5.3 = {
+		holder = easternimperial_aversarinas_aagiokrata_15
+		liege = e_aversarinas_aautokrata
+	}
+	1186.6.21 = {
+		holder = easternimperial_aversarian_axiaotheaism_1
+	}
+	1200.3.1 = {
+		holder = 0
+	}
+}
+d_governorate_aironoi_duchy = {
+	960.8.1 = {
+		holder = easternimperial_aversarinas_aagiokrata_76
+		liege = e_aversarinas_aautokrata
+	}
+	980.5.14 = {
+		holder = easternimperial_aversarinas_aagiokrata_77
+		liege = e_aversarinas_aautokrata
+	}
+	1148.2.21 = {
+		holder = easternimperial_aversarinas_aagiokrata_19
+		liege = e_aversarinas_aautokrata
+	}
+	1164.5.3 = {
+		holder = easternimperial_aversarinas_aagiokrata_15
+		liege = e_aversarinas_aautokrata
+	}
+	1186.6.21 = {
+		holder = easternimperial_aversarian_axiaotheaism_1
+	}
+	1200.3.1 = {
+		holder = easternimperial_aversarinas_aagiokrata_1
+		liege = "k_kalliados"
+		government = feudal_government
+	}
+}
+d_legio_iv_elenos = {
+	1230.1.1 = {
+		holder = centralimperial_militant_cliques_1
+		government = military_unit_government
+	}
+}
+d_legio_lxxx_shield_of_the_north = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_7
+		government = military_unit_government
+	}
+	1240.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_30
+		government = military_unit_government
+	}
+}
+d_legio_vii_parataros = {
+	1252.11.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_155
+		government = military_unit_government
+	}
+	1263.4.12 = {
+		holder = 0
+	}
+}
+d_legio_xiv_chainforgers = {
+	1086.3.2 = {
+		holder = southernimperial_aversarinas_aagiokrata_15
+	}
+	1185.2.12 = {
+		holder = centralimperial_aeschraes_aagiokrata_1
+	}
+	1249.9.12 = {
+		holder = centralimperial_aversarinas_aagiokrata_30
+	}
+	1252.1.1 = {
+		holder = 0
+	}
+}
+d_legio_xxvi_exodian = {
+	1194.3.18 = {
+		holder = apokiakas_aversarinas_aagiokratia_20
+		government = military_unit_government
+	}
+	1221.3.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_21
+		government = military_unit_government
+	}
+	1252.11.1 = {
+		holder = centralimperial_aversarinas_aagiokrata_5
+		government = military_unit_government
+	}
+}
+d_legio_lix_parfovos = {
+	1198.3.5 = {
+		holder = nimakiroi_aversarian_axiaotheaism_1
+		government = military_unit_government
+	}
+	1209.8.13 = {
+		holder = 0
+	}
+}
+d_magi_auxiliaros_corpus_xii = {
+	1230.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_203
+		government = military_unit_government
+	}
+	1256.5.25 = {
+		holder = 0
+	}
+}
+d_waymakers_of_velos = {
+	1250.1.1 = {
+		government = landed_order_government
+	}
+	1297.6.26 = {
+		holder = caemansi_sjalvolki_32
+	}
+}
+# GH TODO: Reimplement when we figure out how we're going to handle knightly orders
+#d_chosen_of_ranos = {
+#	1202.11.1 = {
+#		holder = voyagen_lifepath_4
+#		government = holy_order_government
+#	}
+#}
+#d_followers_of_the_star = {
+#	1232.11.11 = {
+#		holder = trustians_lifepath_2
+#		government = holy_order_government
+#	}
+#}
+#d_grey_watchers = {
+#	1227.1.1 = {
+#		holder = gisreddean_lifepath_1
+#		government = holy_order_government
+#	}
+#	1253.11.2 = {
+#		holder = 0
+#	}
+#}
+#d_knights_illuminated = {
+#	1231.6.15 = {
+#		holder = carsavisians_lifepath_1
+#		government = holy_order_government
+#	}
+#}
+#d_knights_of_the_grave = {
+#	1214.4.1 = {
+#		holder = oejeynica_lifepath_1
+#		government = holy_order_government
+#	}
+#}
+#d_slayers_of_darkness = {
+#	1252.6.6 = {
+#		holder = voyagen_lifepath_3
+#		government = holy_order_government
+#	}
+#}
+#d_sons_of_the_champion = {
+#	1241.7.8 = {
+#		holder = antimagi_9
+#		government = holy_order_government
+#	}
+#}
+#d_the_wardens = {
+#	1243.4.14 = {
+#		holder = voyagen_lifepath_2
+#		government = holy_order_government
+#	}
+#}
+#d_the_order_particular = {
+#	1199.1.2 = {
+#		holder = konijkmener_lifepath_2 
+#		government = holy_order_government
+#	}
+#	1245.6.1 = {
+#		holder = ee_2
+#	}
+#}
+d_legio_lxxvii_pirateslayers = {
+	1230.1.1 = {
+		holder = vonatolis_aversarinas_aagiokrata_1
+		government = military_unit_government
+	}
+}
+
+d_legio_xciv_shipbreakers = {
+	1227.6.1 = {
+		holder = ypsikenai_aversarinas_aagiokrata_1
+		government = pirate_government
+	}
+}
+
+d_riverauthority = {
+	1230.2.6 = {
+		holder = easternimperial_aironoian_aagiokrata_47
+		government = military_unit_government
+	}
+	1241.3.16 = {
+		holder = easternimperial_aironoian_aagiokrata_89
+		government = military_unit_government
+	}
+}
+
+d_three_cities_league = {
+	1130.6.17 = {
+		holder = easternimperial_aironoian_aagiokrata_58
+	}
+	1168.3.14 = {
+		holder = easternimperial_aironoian_aagiokrata_13
+	}
+	1188.9.25 = {
+		holder = 0
+	}
+	1199.9.26 = {
+		holder = easternimperial_aironoian_aagiokrata_15
+	}
+	1244.10.12 = {
+		holder = easternimperial_aironoian_aagiokrata_3
+	}
+}
+
+d_legio_xxxiv_heartfire = {
+	1194.4.6 = {
+		holder = easternimperial_aversarian_axiaotheaism_2
+		government = military_unit_government
+		liege = e_asiupoli_aautokrata
+	}
+	1200.3.1 = {
+		holder = 0
+	}
+}
+
+d_vaycovolki_kymbela = {
+	1220.1.1 = {
+		holder = theugombrians_cnevobarthane_1
+		government = tribal_government
+	}
+	1266.1.1 = {
+		holder = theugombrians_cnevobarthane_13
+	}
+}
+
+d_legio_xcv_viesuados_heir = {
+	1207.3.2 = {
+		holder = easternislander_aversarinas_aagiokrata_7
+		government = military_unit_government
+	}
+	1207.8.6 = {
+		holder = centralislander_aversarinas_aagiokrata_3
+		government = military_unit_government
+	}
+	1213.5.7 = {
+		holder = outerislander_aversarinas_aagiokrata_1
+		government = military_unit_government
+	}
+	1232.8.6 = {
+		holder = islander_aversarinas_aagiokrata_15
+		government = military_unit_government
+	}
+	1274.10.25 = {
+		holder = 0
+	}
+}
+
+d_legio_xcv_viesuados_wrath = {
+	1232.6.6 = {
+		holder = easternislander_aversarinas_aagiokrata_8
+		government = pirate_government
+	}
+	1267.2.1 = {
+		holder = 0
+	}
+}
+
+d_legio_xcv_viesuados_jackals = {
+	1210.1.20 = {
+		holder = westernimperial_aversarinas_aagiokrata_202
+		government = military_unit_government
+	}
+	1218.5.10 = {
+		holder = 0
+	}
+}
+
+d_marcher_amsari_republic = { 
+	1220.1.1 = {
+		government = republic_playable_government
+		holder = voyagen_lifepath_46
+	}
+}
+
+d_marcher_piratecoast_republic = {
+	1274.9.14 = {
+		government = republic_playable_government
+		holder = voyagen_coastpath_2
+	}
+}
+
+k_governorate_oreikalos = {
+	1207.1.1 = {
+		holder = easternimperial_aeschraes_aagiokrata_1
+	}
+}
+
+k_governorate_eastriver = {
+	1099.5.29 = {
+		holder = easternimperial_aironoian_aagiokrata_82
+		government = feudal_government
+	}
+	1129.8.25 = {
+		holder = easternimperial_aironoian_aagiokrata_46
+		government = feudal_government
+	}
+	1162.2.3 = {
+		holder = easternimperial_aironoian_aagiokrata_41
+	}
+	1175.4.22 = {
+		holder = easternimperial_aironoian_aagiokrata_42
+	}
+	1215.2.3 = {
+		holder = 0
+	}
+}
+
+d_legio_liv_particulars = {
+	577.8.30 = {
+		holder = easternimperial_aversarinas_aagiokrata_75
+		government = military_unit_government
+	}
+	1191.2.7 = {
+		holder = easternimperial_aversarian_axiaotheaism_10
+		government = military_unit_government
+	}
+	1199.8.19 = {
+		holder = 0
+	}
+}
+
+d_legio_xlv_silverbloods = {
+	1166.2.17 = {
+		holder = easternimperial_militant_cliques_2
+		government = military_unit_government
+	}
+	1199.8.26 = {
+		holder = 0
+	}
+}
+
+d_legio_xxxix_protemaxos = {
+	1175.3.30 = {
+		holder = easternimperial_aironoian_aagiokrata_27
+		government = military_unit_government
+	}
+	1200.3.1 = {
+		holder = 0
+	}
+}
+
+d_legio_lxxii_potirion = {
+	1177.9.30 = {
+		holder = zelkavani_sunarwei_aagiokrata_1
+		government = military_unit_government
+	}
+	1199.8.26 = {
+		holder = 0
+	}
+}
+
+d_legio_lxxi_brassarms = {
+	1195.9.1 = {
+		holder = easternimperial_aironoian_aagiokrata_28
+		government = military_unit_government
+	}
+	1225.11.11 = {
+		holder = easternimperial_aironoian_aagiokrata_30
+		government = military_unit_government
+	}
+}
+
+d_legio_lxxiii_goldclad = {
+	1194.11.5 = {
+		holder = easternimperial_aironoian_aagiokrata_29
+		government = military_unit_government
+	}
+	1200.2.26 = {
+		holder = 0
+	}
+}
+
+d_legio_lxv_axedancers = {
+	1193.9.21 = {
+		holder = jarakmar_ertomax_13
+		government = military_unit_government
+	}
+	1200.2.27 = {
+		holder = 0
+	}
+}
+
+d_legio_li_riverfiends = {
+	1198.2.11 = {
+		holder = easternimperial_aversarian_axiaotheaism_11
+		government = military_unit_government
+	}
+	1199.8.19 = {
+		holder = 0
+	}
+}
+
+k_legio_xxv_flamestriders = {
+	1192.1.14 = {
+		holder = southernimperial_aversarinas_aagiokrata_19
+		government = military_unit_government
+	}
+	1200.3.1 = {
+		holder = 0
+	}
+}
+
+k_legio_xxxiii_blackeyes = {
+	1197.9.23 = {
+		holder = easternimperial_aversarian_axiaotheaism_9
+		government = military_unit_government
+	}
+	1200.3.1 = {
+		holder = 0
+	}
+}
+
+d_legio_xcii_swords_of_tharenion = {
+	1138.9.15 = {
+		holder = easternimperial_aironoian_aagiokrata_32
+		government = military_unit_government
+	}
+	1173.5.19 = {
+		holder = easternimperial_aironoian_aagiokrata_34
+		government = military_unit_government
+	}
+	1186.2.8 = {
+		holder = 0
+	}
+}
+
+d_legio_xxxviii_vigilant = {
+	1180.7.3 = {
+		holder = easternimperial_aironoian_aagiokrata_36
+		government = military_unit_government
+	}
+	1199.11.12 = {
+		holder = 0
+	}
+}
+
+d_legio_lxxiv_riverwards = {
+	1186.8.17 = {
+		holder = easternimperial_aironoian_aagiokrata_40
+		government = military_unit_government
+	}
+	1200.11.19 = {
+		holder = easternimperial_aironoian_aagiokrata_47
+		government = military_unit_government
+	}
+	1241.3.16 = {
+		holder = 0
+	}
+}
+
+d_legio_xxi_heartrenders = {
+	1183.7.30 = {
+		holder = redrunner_aversarinas_aagiokrata_11
+		government = military_unit_government
+	}
+	1186.2.1 = {
+		holder = 0
+	}
+}
+
+d_legio_xliv_kartharaddis_fear = {
+	1185.11.16 = {
+		holder = amaghean_amaghean_aagiokrata_119
+		government = military_unit_government
+	}
+	1186.2.1 = {
+		holder = 0
+	}
+}
+
+d_legio_lxiv_gravitas = {
+	1180.2.17 = {
+		holder = easternimperial_aversarinas_aagiokrata_9
+		government = military_unit_government
+	}
+	1186.2.1 = {
+		holder = 0
+	}
+}
+
+d_legio_lxxxvii_shatter_swords = {
+	1088.9.18 = {
+		holder = imperialislander_aversarinas_aagiokrata_1
+		government = military_unit_government
+	}
+	1094.11.3 = {
+		holder = 0
+	}
+}
+
+d_legio_xviii_philantros = {
+	1085.2.13 = {
+		holder = westernimperial_philantrios_1
+		government = military_unit_government
+	}
+	1092.1.4 = {
+		holder = 0
+	}
+}
+
+d_legio_xii_sea_walkers = {
+	1081.9.2 = {
+		holder = easternimperial_aironoian_aagiokrata_87
+		government = military_unit_government
+	}
+	1091.10.12 = {
+		holder = easternimperial_aironoian_aagiokrata_73
+		government = military_unit_government
+	}
+	1158.8.7 = {
+		holder = 0
+	}
+}
+
+d_legio_v_golems_fury = {
+	1079.3.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_55
+		government = military_unit_government
+	}
+	1118.6.17 = {
+		holder = 0
+	}
+}
+
+d_legio_xliii_firstborn = {
+	1238.10.24 = {
+		holder = imperialislander_aversarinas_aagiokrata_2
+		government = military_unit_government
+	}
+	1252.1.1 = {
+		holder = 0
+	}
+}
+
+d_legio_xx_conclaves_own = {
+	1243.9.6 = {
+		holder = westernimperial_omitilos_aagiokrata_3
+		government = military_unit_government
+	}
+	1252.1.1 = {
+		holder = 0
+	}
+}
+
+d_legio_xxviii_the_invincibles = {
+	1195.9.16 = {
+		holder = westernimperial_aversarinas_aagiokrata_59
+		government = military_unit_government
+	}
+	1236.10.21 = {
+		holder = westernimperial_aversarinas_aagiokrata_178
+		government = military_unit_government
+	}
+	1252.1.1 = {
+		holder = 0
+	}
+}
+
+d_legio_x_bravest = {
+	1243.7.20 = {
+		holder = westernimperial_aversarinas_aagiokrata_440
+		government = military_unit_government
+	}
+	1252.1.1 = {
+		holder = 0
+	}
+}
+
+d_legio_xix_mavia = {
+	1074.12.1 = {
+		holder = centralimperial_aversarinas_aagiokrata_59
+		government = military_unit_government
+	}
+	1240.1.5 = {
+		holder = northernimperial_aversarinas_aagiokrata_27
+		government = military_unit_government
+	}
+	1252.1.1 = {
+		holder = 0
+	}
+}
+
+d_legio_viii_enortax = {
+	1244.10.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_167
+		government = military_unit_government
+	}
+	1252.1.1 = {
+		holder = 0
+	}
+}
+
+d_legio_xvii_pathos = {
+	1230.3.11 = {
+		holder = northernimperial_aversarinas_aagiokrata_29
+		government = military_unit_government
+	}
+	1251.11.19 = {
+		holder = 0
+	}
+}
+
+d_legio_ii_proudest = {
+	1230.11.3 = {
+		holder = northernimperial_aversarinas_aagiokrata_28
+		government = military_unit_government
+	}
+	1251.11.19 = {
+		holder = 0
+	}
+}
+
+d_legio_xliv_stalwart = {
+	863.4.23 = {
+		holder = northernimperial_aversarinas_aagiokrata_30
+		government = military_unit_government
+	}
+	899.9.11 = {
+		holder = 0
+	}
+}
+
+d_legio_xxxv_diyotesmaxos = {
+	733.3.29 = {
+		holder = easternimperial_aversarinas_aagiokrata_2
+		government = military_unit_government
+	}
+	750.8.20 = {
+		holder = 0
+	}
+	1182.3.2 = {
+		holder = easternimperial_aversarinas_aagiokrata_3
+		government = military_unit_government
+	}
+	1186.12.15 = {
+		holder = 0
+	}
+}
+
+d_legio_xxiii_greenfingers = {
+	1099.1.8 = {
+		holder = westernimperial_aversarinas_aagiokrata_60
+		government = military_unit_government
+	}
+	1108.3.15 = {
+		holder = 0
+	}
+}
+
+k_legio_xlii_pride_of_aversaria = {
+	760.10.17 = {
+		holder = westernimperial_aversarinas_aagiokrata_61
+		government = military_unit_government
+	}
+	1179.4.9 = {
+		holder = westernimperial_aversarinas_aagiokrata_62
+		government = military_unit_government
+	}
+	1198.2.5 = {
+		holder = 0
+	}
+}
+
+d_legio_viii_tomanyros = {
+	1053.7.11 = {
+		holder = centralimperial_aversarinas_aagiokrata_31
+		government = military_unit_government
+	}
+	1226.7.19 = {
+		holder = centralimperial_aversarinas_aagiokrata_32
+		government = military_unit_government
+	}
+	1235.10.6 = {
+		holder = 0
+	}
+}
+
+d_legio_xlix_starward = {
+	1242.1.14 = {
+		holder = etrandanexi_aversarinas_aagiokrata_9
+		government = military_unit_government
+	}
+	1247.3.15 = {
+		holder = 0
+	}
+}
+
+d_legio_clxxxvi_intrepid = {
+	1084.8.19 = {
+		holder = islander_aversarinas_aagiokrata_144
+		government = military_unit_government
+	}
+	1088.12.1 = {
+		holder = 0
+	}
+}
+
+d_legio_lxviii_trailblazers = {
+	1184.11.23 = {
+		holder = westernimperial_aeschraes_aagiokrata_7
+		government = military_unit_government
+	}
+	1200.3.1 = {
+		holder = 0
+	}
+}
+
+d_shattered_legions = {
+	1232.8.17 = {
+		holder = apokiakas_aversarinas_aagiokratia_24
+		government = military_unit_government
+	}
+	1251.10.11 = {
+		liege = k_epavarion
+	}
+}
+
+k_kresoxian_league = {
+	1231.9.26 = {
+		holder = northernimperial_aversarinas_aagiokrata_48
+		government = military_unit_government
+	}
+	1251.11.19 = {
+		holder = 0
+	}
+}
+
+k_varicadd_imperial_clique = {
+	1232.5.1 = {
+		holder = northernimperial_aversarinas_aagiokrata_49
+		government = feudal_government
+	}
+	1251.11.19 = {
+		holder = 0
+	}
+}
+
+k_crotyrosian_cult = {
+	1196.7.26 = {
+		holder = northernimperial_aversarinas_aagiokrata_51
+		government = magocratic_government
+	}
+	1247.3.15 = {
+		holder = 0
+	}
+}
+
+d_mayikprolollan_dendraxathas = {
+	1227.4.14 = {
+		holder = northernimperial_aversarinas_aagiokrata_53
+		liege = k_governorate_cornucopia_kingdom
+		government = magocratic_government
+	}
+	1229.11.3 = {
+		liege = 0
+	}
+	1237.7.13 = {
+		liege = k_crotyrosian_cult
+	}
+	1247.3.15 = {
+		holder = 0
+	}
+}
+
+d_legio_xxxviii_winters_wolves = {
+	1230.9.11 = {
+		holder = northernimperial_aversarinas_aagiokrata_55
+		liege = 0
+		government = military_unit_government
+	}
+	1237.7.13 = {
+		liege = k_crotyrosian_cult
+	}
+	1247.3.15 = {
+		holder = 0
+	}
+}
+
+k_scarlet_chosen = {
+	1251.4.14 = {
+		holder = erridai_aversarinas_aagiokrata_1
+		liege = 0
+		government = landed_order_government
+	}
+	1293.1.2 = {
+		holder = erridai_aversarinas_aagiokrata_3
+	}
+}
+
+d_red_guard_vounill = {
+	1059.12.23 = {
+		holder = erridai_forgotten_2
+		liege = k_scarlet_chosen
+		government = landed_order_government
+	}
+	1086.8.22 = {
+		holder = westernimperial_aversarinas_aagiokrata_498
+	}
+	1236.2.8 = {
+		holder = lomonios_aversarinas_aagiokrata_1
+		liege = 0
+	}
+	1256.12.27 = {
+		holder = 0
+	}
+}
+
+k_legio_xiii_aautosaxias = {
+	1182.8.27 = {
+		holder = centralimperial_aeschraes_aagiokrata_5
+		government = military_unit_government
+	}
+	1197.12.26 = {
+		holder = northernimperial_aeschraes_aagiokrata_1
+	}
+	1229.11.3 = {
+		holder = northernimperial_aversarinas_aagiokrata_56
+	}
+	1247.3.15 = {
+		holder = 0
+	}
+}
+
+d_legio_xxi_veracity = {
+	1088.7.8 = {
+		holder = centralimperial_aversarinas_aagiokrata_166
+		government = military_unit_government
+	}
+	1121.7.7 = {
+		holder = 0
+	}
+}
+
+d_legio_vi_manherders = {
+	1077.9.23 = {
+		holder = centralimperial_aversarinas_aagiokrata_170
+		government = military_unit_government
+	}
+	1088.1.26 = {
+		holder = centralimperial_aversarinas_aagiokrata_171
+	}
+	1117.2.10 = {
+		holder = 0
+	}
+}
+
+d_legio_xxii_resplendent = {
+	1083.10.3 = {
+		holder = easternimperial_aversarinas_aagiokrata_92
+		government = military_unit_government
+	}
+	1093.7.21 = {
+		holder = 0
+	}
+}
+
+k_legio_lii_redrock_guard = {
+	726.06.12 = {
+		holder = redrunner_aversarinas_aagiokrata_26
+		government = military_unit_government
+	}
+
+	821.03.15 = {
+		holder = redrunner_aversarinas_aagiokrata_27
+		government = military_unit_government
+	}
+
+	875.07.01 = {
+		holder = redrunner_aversarinas_aagiokrata_28
+		government = military_unit_government
+	}
+
+	932.10.15 = {
+		holder = redrunner_aversarinas_aagiokrata_29
+		government = military_unit_government
+	}
+
+	982.12.25 = {
+		holder = redrunner_aversarinas_aagiokrata_30
+		government = military_unit_government
+	}
+
+	1042.06.12 = {
+		holder = redrunner_aversarinas_aagiokrata_31
+		government = military_unit_government
+	}
+
+	1098.11.27 = {
+		holder = redrunner_aversarinas_aagiokrata_32
+		government = military_unit_government
+	}
+
+	1150.05.04 = {
+		holder = redrunner_aversarinas_aagiokrata_33
+		government = military_unit_government
+	}
+
+	1203.08.18 = {
+		holder = redrunner_aversarinas_aagiokrata_34
+		government = military_unit_government
+	}
+
+	1247.03.01 = {
+		holder = redrunner_aversarinas_aagiokrata_35
+		government = military_unit_government
+	}
+
+	1250.3.14 = {
+		holder = redrunner_aversarinas_aagiokrata_9
+		government = military_unit_government
+	}
+}
+
+k_legio_xi_silverwind = {
+	1168.9.11 = {
+		holder = easternimperial_militant_cliques_3
+		government = military_unit_government
+	}
+	1193.4.2 = {
+		holder = 0
+	}
+}
+
+d_legio_lxxxv_iron_wolves = {
+	1180.12.3 = {
+		holder = apokiakas_militant_cliques_2
+		government = military_unit_government
+	}
+	1193.12.7 = {
+		holder = 0
+	}
+}
+
+####################
+# MAMURAMAT TITLES #
+####################
+
+
+
+#########################
+# CYRAT/ROJIHLAT TITLES #
+#########################
+
+d_ketruna = {
+	1230.1.1 = {
+		holder = surugin_ehatm_11
+		government = tribal_government
+	}
+}
+
+d_uakaklo_rel = {
+	1230.1.1 = {
+		holder = tlakalak_uakaklo_1
+		government = theocracy_government
+	}
+}
+
+
+# Cenware's captital, to ensure it's placed correctly
+c_lapidon = {
+	1250.1.1 = {
+		holder = daukeni_sjalvolki_1
+		government = continental_clan_government
+	}
+}
+d_knights_of_the_silvergarter = {
+	1230.1.1 = {
+		holder = voyagen_lifepath_47
+	}
+}
+
+d_dasikgara_sanarsa = {
+	1251.1.1 = {
+		holder = goans_gethian_1
+		liege = e_migrant_coalition
+	}
+}
+
+k_kinilam_regency = {
+	1248.11.11 = {
+		holder = hokanta_vidvaookeyatra_33
+	}
+}
+
+k_daukeni = {
+	1226.4.11 = {
+		holder = daukeni_sjalvolki_1
+		government = continental_clan_government
+		 
+	}
+}
+k_adrakamp = {
+	1237.11.5 = {
+		holder = adrakamp_sjalvolki_4
+		liege = e_migrant_coalition
+		government = continental_clan_government	 
+	}
+	1267.5.6 = {
+		holder = 0
+	}
+}
+k_greulokin = {
+	341.7.19 = {
+		holder = greulokin_sjalvolki_20
+		government = tribal_government
+	}
+	399.8.31 = {
+		holder = 0
+	}
+	1222.1.1 = {
+		holder = greulokin_sjalvolki_16
+		liege = 0
+		government = continental_clan_government
+	}
+	1223.7.28 = {
+		holder = greulokin_sjalvolki_13
+		liege = e_migrant_coalition
+	}
+	1226.2.12 = {
+		holder = greulokin_sjalvolki_11
+		liege = e_migrant_coalition
+	}
+	1247.3.15 = {
+		holder = greulokin_sjalvolki_1
+		liege = e_migrant_coalition
+	}
+	1275.9.2 = {
+		holder = 0
+	}
+}
+k_fenvir = {
+	1170.1.1 = {
+		holder = fenvir_sjalvolki_27
+		government = continental_clan_government
+	}
+	1217.4.12 = {
+		holder = fenvir_sjalvolki_1
+		government = continental_clan_government
+		 
+	}
+}
+
+k_tribocicai = {
+	1245.2.2 = {
+		holder = tribocicai_sjalvolki_11
+		liege = e_migrant_coalition
+		government = continental_clan_government
+		 
+	}
+	1247.3.15 = {
+		holder = tribocicai_sjalvolki_3
+		liege = e_migrant_coalition
+ 	}
+}
+
+k_vrodkin = {
+	1249.1.1 = {
+		holder = vrodkin_sjalvolki_2
+		liege = e_migrant_coalition
+		government = continental_clan_government
+		 
+	}
+
+	1256.3.16 = {
+		holder = 0
+	}
+}
+
+k_warisnik = {
+	1242.2.16 = {
+		holder = warisnik_sjalvolki_5
+		government = continental_clan_government
+	}
+	1247.3.15 = {
+		holder = warisnik_sjalvolki_2
+		government = continental_clan_government 
+	}
+}
+
+k_mastikigni = {
+	1243.1.4 = {
+		holder = mastikigni_sjalvolki_10
+		government = continental_clan_government 
+		liege = e_migrant_coalition
+	}
+	1249.10.25 = {
+		liege = 0
+	}
+	1250.4.9 = {
+		holder = mastikigni_sjalvolki_2
+	}
+}
+
+k_barki = {
+	1219.3.18 = {
+		holder = barki_sjalvolki_11
+		government = continental_clan_government
+	}
+	1247.3.15 = {
+		holder = barki_sjalvolki_2
+		liege = e_migrant_coalition
+	}
+	1260.1.1 = {
+		holder = 0
+	}
+}
+
+k_caemansi = {
+	1248.11.1 = {
+		holder = caemansi_sjalvolki_6
+		government = continental_clan_government
+		liege = e_migrant_coalition
+	}
+	1259.3.2 = {
+		holder = caemansi_sjalvolki_14
+	}
+	1260.1.1 = {
+		holder = 0
+	}
+}
+
+k_irmionoth = {
+	1237.8.16 = {
+		holder = irmionoth_sjalvolki_1
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1260.1.1 = {
+		holder = 0
+	}
+}
+
+k_curgerski = {
+	1249.3.6 = {
+		holder = curgerski_sjalvolki_2
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	# GH TODO: Figure out when these titulars get disbanded
+	1260.1.1 = {
+		holder = 0
+	}
+}
+
+k_hromihils_kingdom = {
+	1297.11.9 = {
+		holder = daukeni_sjalvolki_107
+		de_jure_liege = e_etepezea
+	}
+}
+
+k_opakasija = {
+	1295.12.3 = {
+		holder = voyagen_lifepath_5
+	}
+}
+
+k_archexate_ti_karanthos = {
+	1247.3.15 = {
+		holder = huegodocs_apti_3
+		liege = e_migrant_coalition
+		government = feudal_government
+	}
+	# GH TODO: Figure out when these titulars get disbanded
+	1260.1.1 = {
+		holder = 0
+	}
+}
+
+k_kardwen_confederacy = {
+	1239.11.8 = {
+		holder = kardwens_kardawai_1
+		liege = e_migrant_coalition
+		government = tribal_government
+	}
+}
+
+k_sarminian_confederacy = { # The Salazsek Confederation
+	1214.4.16 = {
+		holder = sarminians_salacad_4
+		government = tribal_government
+	}
+	1238.11.8 = {
+		holder = sarminians_salacad_3
+		liege = e_migrant_coalition
+	}
+	1252.2.3 = {
+		holder = 0
+	}
+}
+
+k_samazonas = { # Kingdom in the Clouds
+	678.1.30 = {
+		holder = izikalek_nalmavast_28
+		government = nomad_government
+	}
+	708.8.4 = {
+		holder = 0
+	}
+}
+
+d_vhadrodizen = {
+	1248.1.1 = {
+		liege = e_migrant_coalition
+		holder = drothacny_dethedklann_1
+		government = tribal_government
+	}
+}
+
+k_marrudolem = {
+	1249.8.20 = {
+		holder = mondecny_portenchant_1
+		liege = e_migrant_coalition
+		government = tribal_government
+	}
+}
+
+d_sayuha_ko_wedo = {
+	1241.3.27 = {
+		liege = e_migrant_coalition
+		holder = goans_gethian_3
+		government = tribal_government
+	}
+}
+
+d_sayuha_ko_khoya = {
+	1241.3.27 = {
+		liege = e_migrant_coalition
+		holder = goans_gethian_2
+		government = tribal_government
+	}
+}
+
+#######################
+# Pirate Coast Titles #
+#######################
+
+d_roving_fiends = {
+	1244.9.3 = {
+		holder = rethara_yakasak_1
+		government = pirate_government
+	}
+	1265.6.8 = {
+		holder = 0
+	}
+}
+
+k_spice_cities = {
+	1184.5.20 = {
+		holder = watumimba_yakasak_5
+		government = administrative_republic_playable_government
+	}
+	1193.7.15 = {
+		holder = watumimba_yakasak_4
+		government = administrative_republic_playable_government
+	}
+	1203.11.2 = {
+		holder = watumimba_corkkattirkana_2
+		government = administrative_republic_playable_government
+	}
+	1210.3.19 = {
+		holder = 0
+	}
+}
+
+k_ufaliracci = {
+	566.10.7 = { # Founder of Ufaliracci, learned to fight in Sarradon, migrated eastward over time, develops a skill with magic while in Rovarksa
+		holder = watumimba_corkkattirkana_11
+		government = feudal_government
+	}
+	591.9.25 = { # Self-conscious and self serious eldest son, ultimately killed drowning trying to win a bet over his brother
+		holder = watumimba_corkkattirkana_13
+	}
+	596.3.13 = { # Depressed & sullen monarch after causing elder brothers death, rules a period of economic stability and expansion with the establishment of the Mdala Hasira system
+		holder = watumimba_corkkattirkana_13a
+	}
+	607.8.28 = { # Most notably crushes an uprising of Wellatolla natives angry over the construction of a great mine & number of smaller ones across their island, governed with the help of powerful Regents that begin a doctrine of naval trade supremacy
+		holder = watumimba_corkkattirkana_15
+	}
+	643.2.15 = { # Reinforces Monarch authority after a period of Regency. Expands the Mdala Hasiras, establishing key shipping ports throughout the Pirate Coast such as Mji'Safi
+		holder = watumimba_corkkattirkana_17
+	}
+	664.1.14 = { # The Magi-King, takes thrown from nephew, begins to notably shown signs of Vampirism in elder years, ultimately killed in a palace coup by backstabbing royal guard & general
+		holder = watumimba_corkkattirkana_23
+	}
+	726.3.10 = { # Takes control through a coup against the Magi-King, crushes dissent, forces the royal family into exile in Dahangon & later KathunKai, ultimately killed with poison in his sleep
+		holder = watumimba_corkkattirkana_26
+	}
+	734.9.13 = { # Child of the Betrayer, killed in an "accident" before Jamyras' father takes the thrown 
+		holder = watumimba_corkkattirkana_27
+	}
+	734.12.20 = { # Establishes the 2nd Dynasty of Ufaliracci, expanding control of spice trade, expands Mji'Safi Port
+		holder = watumimba_corkkattirkana_28
+	}
+	745.12.14 = { # Kattupu Jamryas, Warrior Poet & Smith, created & planned the Silver Palace complex, expanded Ufaliracci to its greatest territorial extent, mocked for refusing to take a new wife in his later life to protect his children's interests
+		holder = watumimba_corkkattirkana_30
+	}
+	778.1.3 = { # Killed in a climbing accident on Ma'Taa, otherwise competent ruler whose unexpected death convinces KK to support 1st Dynasty's claim against Ufaliracci
+		holder = watumimba_corkkattirkana_32
+	}
+	788.10.6 = { # Manages to fend off a claim war against Ufaliracci supported by Kathuni privateers & pirates from the South
+		holder = watumimba_corkkattirkana_34
+	}
+	801.11.29 = { # More focused on scholarship, funds several chronicles covering Ufaliracci early history, astronomy, & development of mining practices for Ma'Taa's crystal veins
+		holder = watumimba_corkkattirkana_36
+	}
+	818.7.22 = { # Boisterous and proud, leads a failed campaign against the Mainland, dies at sea
+		holder = watumimba_corkkattirkana_37
+	}
+	820.2.1 = { # Attempts to continue the war of his brother, but is assassinated
+		holder = watumimba_corkkattirkana_38
+	}
+	820.10.3 = { # Succeeds where her brothers failed, taking Ulfairacci's first continental ports & negotiating deals with the Dye & Spice Cities along the Sarradonian coast
+		holder = watumimba_corkkattirkana_39
+	}
+	847.3.1 = { # Rules a long and peaceful reign, untested, before being sureptisiouly murdered in his sleep along with much of the royal family during the Murtuy ka Varha, killed by cultists seeking to become a Lich
+		holder = watumimba_corkkattirkana_45
+	}
+	899.12.15 = {
+		holder = lich_culture_rejection_21
+		government = lichdom_government
+	}
+	899.12.29 = { # Overwhelms the Salt-Lich in the Duel of Silver Moons, establishing the 3rd Dynasty 
+		holder = watumimba_corkkattirkana_46
+		government = feudal_government
+	}
+	926.4.12 = { # Loses control of the Sarradonian ports besides Mji'Safi to Magaala & the burdgeoning Spice League, stuck in disputes with Kathuni traders
+		holder = watumimba_corkkattirkana_48
+	}
+	935.7.1 = { # Known for little beyond extravagant feasts, crippling debt, and nearly being couped by her siblings 
+		holder = watumimba_corkkattirkana_50
+	}
+	941.3.6 = { # Known for little, dies of illness shortly into their reign, younger sibling takes over
+		holder = watumimba_corkkattirkana_51
+	}
+	954.10.10 = { # Known for expanding the silver trade, losing war against Cinnamon Cities
+		holder = watumimba_corkkattirkana_58
+	}
+	968.5.4 = { # Known for little, dies untested as a child
+		holder = watumimba_corkkattirkana_60
+	}
+	973.3.16 = { # Loses ground to pirates in the east and west, loses the lucrative Ma'Taa trade route, but averts disaster at Mji'Safi
+		holder = watumimba_corkkattirkana_53
+	}
+	989.8.14 = { # Killed in an assassination by Cinnamon traders, sees the loss of Mji'Safi to Cinnamon Cities & Fortifies the capital island, expands the fleet, but fails to make gains
+		holder = watumimba_corkkattirkana_61
+	}
+	999.4.15 = {
+		holder = watumimba_corkkattirkana_3
+	}
+	1010.12.7 = {
+		holder = 0
+	}
+}
+
+k_gavan_coalition = {
+	1001.7.20 = {
+		holder = saruta_yakasak_1
+		government = pirate_government
+	}
+	1010.12.7 = {
+		holder = 0
+	}
+}
+
+k_ellawala_coalition = {
+	1276.6.2 = {
+		holder = deraani_yakasak_4
+		government = pirate_government 
+	}
+}
+
+##################
+# Karadun Titles #
+##################
+
+e_karadun_empire = {
+	1180.1.1 = {
+		holder = saruyad_ritualist_01
+	}
+	1214.7.18 = {
+		holder = saruyad_ritualist_03
+	}
+	1233.8.19 = {
+		holder = 0
+	}
+}
+
+###################
+# Dahangon Titles #
+###################
+
+e_dahangon = {
+	485.2.26 = {
+		holder = banwagul_dahala_17
+	}
+	585.2.26 = {
+		holder = banwagul_dahala_19
+	}
+	590.5.16 = {
+		holder = 0
+	}
+}
+
+k_bronzeport = {
+#	1028.9.14 = {
+#		holder = 0
+#	}
+	1039.11.26 = {
+		holder = lakoeng_fourteen_heavenly_methods_23
+		government = republic_playable_government
+	}
+	1054.5.14 = {
+		holder = lakoeng_fourteen_heavenly_methods_29
+	}
+	1061.5.6 = {
+		holder = lakoeng_fourteen_heavenly_methods_22
+	}
+	1091.7.3 = {
+		holder = lakoeng_fourteen_heavenly_methods_20
+	}
+	1094.5.11 = {
+		holder = lakoeng_fourteen_heavenly_methods_30
+	}
+	1124.5.1 = {
+		holder = lakoeng_fourteen_heavenly_methods_13
+	}
+	1135.4.3 = {
+		holder = lakoeng_fourteen_heavenly_methods_24
+	}
+	1159.1.1 = {
+		holder = lakoeng_fourteen_heavenly_methods_25
+	}
+	1169.7.13 = {
+		holder = lakoeng_fourteen_heavenly_methods_17
+	}
+	1182.7.2 = {
+		holder = lakoeng_fourteen_heavenly_methods_16
+	}
+	1195.8.27 = {
+		holder = lakoeng_fourteen_heavenly_methods_27
+	}
+	1240.3.8 = {
+		holder = lakoeng_fourteen_heavenly_methods_15
+	}
+	1243.4.4 = {
+		holder = lakoeng_fourteen_heavenly_methods_1
+		government = feudal_government
+	}
+}
+
+d_southern_corsairs = {
+	1224.1.8 = {
+		holder = banwagul_narina_1
+		government = pirate_government
+	}
+}
+
+k_lay_redaka_banwagul = {
+	1237.5.6 = {
+		holder = banwagul_dahala_1
+	}
+	1242.12.21 = {
+		holder = banwagul_dahala_2
+	}
+}
+
+k_vehangun = {
+	581.2.26 = {
+		holder = dayarka_dahala_1
+	}
+	1246.1.6 = {
+		holder = dayarka_dahala_2
+	}
+}
+
+k_miat_shrunfan = {
+	1248.10.11 = {
+		holder = saielaian_bayn_huac_2
+	}
+}
+
+k_protectorate_of_the_southlands = {
+	1236.5.5 = {
+		holder = kathunian_mogudorism_1
+	}
+}
+
+k_orydian_dynastic_league = {
+	1169.9.13 = {
+		holder = southernimperial_aversarinas_aagiokrata_121
+	}
+	1186.11.15 = {
+		liege = e_oraispol_aautokrata
+	}
+	1193.4.22 = {
+		holder = centralislander_aversarinas_aagiokrata_23
+	}
+	1195.7.21 = {
+		holder = 0
+	}
+}
+
+k_governorate_central_isles = {
+	1210.1.29 = {
+		holder = centralislander_aversarinas_aagiokrata_17
+		liege = e_oraispol_aautokrata
+	}
+	1217.12.10 = {
+		holder = 0
+	}
+}
+
+k_central_island_magistariate = {
+	1217.12.10 = {
+		holder = northernimperial_aeschraes_aagiokrata_2
+		liege = e_oraispol_aautokrata
+	}
+	1229.11.3 = {
+		liege = 0
+	}
+	1231.3.10 = {
+		holder = centralislander_aversarinas_aagiokrata_1
+	}
+	1234.1.1 = {
+		holder = 0
+	}
+}
+
+k_bloodwater_pact = {
+	1194.3.9 = {
+		holder = northernimperial_aeschraes_aagiokrata_2
+	}
+	1231.8.12 = {
+		holder = 0
+	}
+}
+d_conclave_historical = {
+	1181.11.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_538
+	}
+	1196.8.19 = {
+		holder = 0
+	}
+}
+
+##################
+## Lonely Light ##
+##################
+e_lonelylight = {
+	1203.7.16 = {
+		holder = sceyfig_lighter_aegispact_2
+		government = tribal_government
+	}
+	1241.11.16 = {
+		holder = sceyfig_lighter_aegispact_3
+	}
+	1253.1.1 = {
+		holder = sceyfig_lighter_aegispact_1
+	}
+}
+
+
+##################
+## Sepattan Magocracy ##
+##################
+
+d_the_sepattan = {
+	448.10.8 = { #the Sundering of Thura Bawadi
+		holder = nathanalmic_nattanan_38 # Khin Thanda
+		government = magocratic_government
+		succession_laws = { magocratic_elective_title_succession_law }
+	}
+	534.3.9 = { #Emergence of the High Sepattan as regional power following the  and the Fall of the First Nattanan King
+		holder = nathanalmic_nattanan_13 # Htun Myint
+		government = magocratic_government
+		succession_laws = { magocratic_elective_title_succession_law }
+	}
+	
+	588.7.18 = {
+		holder = nathanalmic_nattanan_14 # Hla Myint, the Guru
+		government = magocratic_government
+	}
+	
+	642.9.16 = {
+		holder = nathanalmic_nattanan_15 #Soe Aung
+		government = magocratic_government
+	}
+	
+	694.4.2 = {
+		holder = nathanalmic_nattanan_16 #Kyaw Swar
+		government = magocratic_government
+	}
+	
+	746.11.20 = {
+		holder = nathanalmic_nattanan_17 #Aung Naing
+		government = magocratic_government
+	}
+	
+	799.6.7 = {
+		holder = nathanalmic_nattanan_18 #Thet Naung
+		government = magocratic_government
+	}
+	
+	851.8.14 = {
+		holder = nathanalmic_nattanan_19 #Thet Min Swar
+		government = magocratic_government
+	}
+	
+	904.10.1 = {
+		holder = nathanalmic_nattanan_20 #Kyaw Min Thu
+		government = magocratic_government
+	}
+	
+	958.3.23 = {
+		holder = nathanalmic_nattanan_21 #Aung Hlaing
+		government = magocratic_government
+	}
+	
+	1011.7.9 = {
+		holder = nathanalmic_nattanan_22 #Zaw Lin
+		government = magocratic_government
+	}
+	
+	1065.12.15 = {
+		holder = nathanalmic_nattanan_23 #Htun Aung
+		government = magocratic_government
+	}
+	
+	1119.5.30 = {
+		holder = nathanalmic_nattanan_24 #U Maung Soe; for some reason he wasn't showing up as a Sepattan...
+		government = magocratic_government
+	}
+	
+	1172.9.11 = {
+		holder = nathanalmic_nattanan_25 #Thura Min
+		government = magocratic_government
+	}
+	
+	1217.10.1 = {
+		holder = nathanalmic_nattanan_3 #Yaza Zin
+		government = magocratic_government
+	}
+}
+
+k_thura_bawadi = {
+	185.1.1 = {
+		holder = nathanalmic_nattanan_6 # Tarfal
+	 	government = magocratic_government
+	}
+	
+	330.1.1 = { #Sundering of Thura Bawadi title; title is destroyed
+		holder = 0
+	}
+}
+k_disuwai_republic = {
+	1149.7.20 = {
+		government = judicial_republic_government
+		holder = amuaad_kathsiti_22
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = roads_to_power 
+				}
+				holder = { add_realm_law_skip_effects = republican_centralization_3 }
+			}
+			
+		}
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					holder = { has_government = judicial_republic_government }
+				}
+				set_state_faith = faith:kathsiti
+			}
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = republic_playable_government
+				}
+			}
+		}
+	}
+	1158.12.1 = {
+		holder = amuaad_kathsiti_24
+	}
+	1230.1.1 = {
+		holder = amuaad_kathsiti_13
+	}
+}
+#######
+#Korlacan Priesthood#
+######
+k_eternal_flame = { #check on this again...
+	500.1.1 = {
+		holder = korlonalmic_korlacan_1
+		government = magocratic_government
+	}
+	525.1.1 = {
+		holder = korlonalmic_korlacan_2
+		government = magocratic_government
+	}
+	575.1.1 = {
+		holder = korlonalmic_korlacan_3
+		government = magocratic_government
+	}
+	625.1.1 = {
+		holder = korlonalmic_korlacan_4
+		government = magocratic_government
+	}
+	695.1.1 = {
+		holder = korlonalmic_korlacan_5
+		government = magocratic_government
+	}
+	730.1.1 = {
+		holder = korlonalmic_korlacan_6 # Killed by Aung Naing (Sepattan High priest)
+		government = magocratic_government
+	}
+	750.1.1 = {
+		holder = korlonalmic_korlacan_7
+		government = magocratic_government
+	}
+	751.1.2 = {
+		holder = 0
+	}
+}
+
+#######################
+# Kashiryan Academies #
+#######################
+
+d_haryaadad_academy = {
+	827.8.14 = {
+		holder = rahikaya_vidvaookeyatra_14
+		government = magocratic_government
+		succession_laws = { magocratic_elective_title_succession_law }
+	}
+	835.4.20 = {
+		holder = 0
+	}
+}
+
+d_dorajpor_academy = {
+	882.8.22 = {
+		holder = yadaniya_vidvaookeyatra_1
+		government = magocratic_government
+		succession_laws = { magocratic_elective_title_succession_law }
+	}
+	904.9.21 = {
+		holder = neshalar_vidvaookeyatra_1
+		liege = e_taryaad_saramsaasan
+	}
+	962.3.12 = {
+		holder = neshalar_vidvaookeyatra_2
+	}
+	992.10.27 = {
+		holder = 0
+	}
+	1024.5.9 = {
+		liege = 0
+	}
+	1031.5.27 = {
+		holder = yadaniya_vidvaookeyatra_2
+	}
+	1038.10.20 = { # End of the Chojakaan ka Ghatada
+		holder = 0
+	}
+}

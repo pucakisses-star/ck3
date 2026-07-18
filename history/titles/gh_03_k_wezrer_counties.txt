@@ -1,0 +1,175 @@
+c_kometta = {
+	1230.1.1 = {
+		government = feudal_government
+		holder = kawoch_mogowai_7
+	}
+	1230.1.1 = {
+		change_development_level = 10
+	}
+	1275.8.19 = {
+		holder = kawoch_nitsafai_4
+	}
+}
+c_tiru_biyaki = {
+	1230.1.1 = {
+		government = feudal_government
+		holder = kawoch_mogowai_7
+	}
+	1230.1.1 = {
+		change_development_level = 6
+	}
+	1275.8.19 = {
+		holder = kawoch_nitsafai_4
+	}
+}
+c_iaf_shenit = {
+	1230.1.1 = {
+		government = feudal_government
+		holder = kawoch_mogowai_7
+	}
+	1230.1.1 = {
+		change_development_level = 10
+	}
+	1275.8.19 = {
+		holder = kawoch_nitsafai_4
+	}
+}
+#c_adahle = {
+#	1230.1.1 = {
+#		liege = "d_meheda"
+#		government = theocracy_government
+#		holder = kawoch_nitsafai_4
+#	}
+#	1230.1.1 = {
+#		change_development_level = 10
+#	}
+#}
+#c_durali = {
+#	1170.1.1 = {
+#		holder = kawoch_mogowai_17
+#	}
+#	1170.1.1 = {
+#		change_development_level = 13
+#	}
+#	1230.1.1 = {
+#		liege = "k_dihalet"
+#		government = feudal_government
+#		holder = kawoch_mogowai_8
+#	}
+#	1230.1.1 = {
+#		change_development_level = 9
+#	}
+#}
+c_qalisul = {
+	1170.1.1 = {
+		holder = kawoch_mogowai_27
+	}
+	1170.1.1 = {
+		change_development_level = 13
+	}
+	
+	1230.1.1 = {
+		liege = "d_yenusaawi_boqtada"
+		government = feudal_government
+		holder = kawoch_mogowai_9
+	}
+	1230.1.1 = {
+		change_development_level = 9
+	}
+	1294.7.27 = {
+		holder = kawoch_mogowai_32
+	}
+}
+c_zahali = {
+	1170.1.1 = {
+		holder = kawoch_mogowai_29
+	}
+	1170.1.1 = {
+		change_development_level = 17
+	}
+	
+	1230.1.1 = {
+		liege = "d_libizi"
+		government = feudal_government
+		holder = kawoch_mogowai_10
+	}
+	1230.1.1 = {
+		change_development_level = 12
+	}
+	1279.9.19 = {
+		holder = kawoch_mogowai_9
+	}
+	1294.7.27 = {
+		holder = kawoch_mogowai_32
+	}
+}
+#c_purtet = {
+#	1170.1.1 = {
+#		holder = kawoch_mogowai_31
+#	}
+#	1170.1.1 = {
+#		change_development_level = 13
+#	}
+#	
+#	1230.1.1 = {
+#		liege = "d_libizi"
+#		government = feudal_government
+#		holder = kawoch_mogowai_11
+#	}
+#	1230.1.1 = {
+#		change_development_level = 10
+#	}
+#}
+c_ralolaz = {
+	1170.1.1 = {
+		holder = kawoch_mogowai_30
+	}
+	1170.1.1 = {
+		change_development_level = 12
+	}
+	
+	1230.1.1 = {
+		liege = "d_libizi"
+		government = feudal_government
+		holder = kawoch_mogowai_10
+	}
+	1230.1.1 = {
+		change_development_level = 8
+	}
+	1276.7.18 = {
+		holder = kawoch_mogowai_8
+	}
+}
+c_kaselej = {
+	1170.1.1 = {
+		holder = kawoch_mogowai_29
+	}
+	1170.1.1 = {
+		change_development_level = 13
+	}
+	
+	1230.1.1 = {
+		government = feudal_government
+		holder = kawoch_mogowai_12
+	}
+	1230.1.1 = {
+		change_development_level = 7
+	}
+	1280.4.8 = {
+		holder = kawoch_mogowai_8
+	}
+}
+#c_derabet = {
+#	
+#	1170.1.1 = {
+#		change_development_level = 11
+#	}
+#	
+#	1230.1.1 = {
+#		government = feudal_government
+#		holder = kawoch_mogowai_13
+#	}
+#	1230.1.1 = {
+#		change_development_level = 8
+#	}
+#}

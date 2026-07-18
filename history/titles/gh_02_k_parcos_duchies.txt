@@ -1,0 +1,79 @@
+d_dragonmarch = {
+	11.11.11 = {
+		holder = unsorted_14
+		liege = 0
+	}
+	40.1.3 = {
+		holder = 0
+	}
+	1180.1.1 = { change_development_level = 22 }
+
+	1158.5.16 = {
+		holder = westernimperial_aversarinas_aagiokrata_539
+	}
+
+	1179.7.25 = {
+		holder = westernimperial_aversarinas_aagiokrata_540
+	}
+
+	1194.4.9 = {
+		holder = westernimperial_aversarinas_aagiokrata_252
+	}
+
+	1200.1.1 = {
+		change_development_level = 9
+	}
+
+	1249.3.14 = {
+		holder = westernimperial_aversarinas_aagiokrata_253
+	}
+
+	1254.8.13 = {
+		holder = 0
+	}
+
+	1298.1.1 = {
+		de_jure_liege = k_hromihils_kingdom
+	}
+}
+d_naxithos = {
+	1180.1.1 = { change_development_level = 19 }
+
+	1124.3.15 = {
+		holder = westernimperial_aversarinas_aagiokrata_3
+	}
+
+	1200.1.1 = { change_development_level = 10 }
+
+	1201.3.4 = {
+		holder = 0
+	}
+
+	1230.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_154
+	}
+	1254.8.13 = {
+		holder = vrodkin_sjalvolki_31
+	}
+
+	1274.5.15 = {
+		holder = 0
+	}
+}
+#d_oenares = {
+#	1180.1.1 = { change_development_level = 18 }
+#
+#	1190.5.27 = {
+#		holder = westernimperial_aversarinas_aagiokrata_3
+#	}
+#
+#	1200.1.1 = { change_development_level = 7 }
+#
+#	1201.3.4 = {
+#		holder = 0
+#	}
+#
+#	1230.1.1 = {
+#		holder = westernimperial_aversarinas_aagiokrata_154
+#	}
+#}

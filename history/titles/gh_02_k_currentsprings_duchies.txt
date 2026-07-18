@@ -1,0 +1,17 @@
+﻿d_lowlandtide = { 
+	1.1.1 = {
+		change_development_level = 3 
+	}
+}
+
+d_deep_jungle = { 
+	1.1.1 = {
+		change_development_level = 3 
+	}
+}
+
+d_spirit_hills = { 
+	1.1.1 = {
+		change_development_level = 3 
+	}
+}

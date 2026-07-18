@@ -1,0 +1,2606 @@
+﻿scusstari_iyrossi_aagiokrata_1 = { # Mother of Sirras, murdered by Gorassos, descendent of Pothacleas
+	name = "Iria"
+	dna = scusstari_iyrossi_aagiokrata_1
+	religion = "iyrossi_aagiokrata"
+	culture = "scusstari"
+	dynasty = dyn_iyrossi_8
+	mother = scusstari_iyrossi_aagiokrata_8
+	father = scusstari_iyrossi_aagiokrata_9
+	female = yes
+
+		
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_byzantine_01		 
+		}
+	} 
+
+	1204.4.14 = {
+		birth = yes
+	}
+
+	1221.5.11 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_7
+	}
+
+	1236.1.16 = {
+		death = {
+			death_reason = death_head_ripped_off
+			killer = southernimperial_aversarian_gorassos_1
+		}
+	}
+}
+
+scusstari_iyrossi_aagiokrata_2 = { # Uncle of Sirras, murdered by Gorassos
+	name = "Jorgron"
+	religion = "iyrossi_aagiokrata"
+	culture = "scusstari"
+	dynasty = dyn_iyrossi_8
+	mother = scusstari_iyrossi_aagiokrata_8
+	father = scusstari_iyrossi_aagiokrata_9
+	
+
+
+	1199.5.11 = {
+		birth = yes
+	}
+
+	1236.1.16 = {
+		death = {
+			death_reason = death_battle
+			killer = southernimperial_aversarian_gorassos_1
+		}
+	}
+}
+
+scusstari_iyrossi_aagiokrata_3 = { # Sister of Sirras, murdered by Gorassos
+	name = "Riza"
+	dna = scusstari_iyrossi_aagiokrata_3
+	religion = "iyrossi_aagiokrata"
+	culture = "scusstari"
+	dynasty = dyn_iyrossi_8
+	mother = scusstari_iyrossi_aagiokrata_1
+	father = scusstari_iyrossi_aagiokrata_7
+	female = yes
+	
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_byzantine_02	 
+		}
+	}
+
+	1232.3.5 = {
+		birth = yes
+	}
+
+	1236.1.16 = {
+		death = {
+			death_reason = death_whipping
+			killer = southernimperial_aversarian_gorassos_1
+		}
+	}
+}
+
+scusstari_iyrossi_aagiokrata_4 = { # Brother of Sirras, murdered by Gorassos
+	name = "Tudarn"
+	dna = scusstari_iyrossi_aagiokrata_4
+	religion = "iyrossi_aagiokrata"
+	culture = "scusstari"
+	dynasty = dyn_iyrossi_8
+	mother = scusstari_iyrossi_aagiokrata_1
+	father = scusstari_iyrossi_aagiokrata_7
+	
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_byzantine_02
+			custom_beards = male_beard_fp2_iberian_christian_01		 
+		}
+	}
+
+	1233.7.21 = {
+		birth = yes
+	}
+
+	1236.1.16 = {
+		death = {
+			death_reason = death_whipping
+			killer = southernimperial_aversarian_gorassos_1
+		}
+	}
+}
+
+scusstari_iyrossi_aagiokrata_5 = { # Aunt of Sirras, died in childbirth
+	name = "Vadisina"
+	religion = "iyrossi_aagiokrata"
+	culture = "scusstari"
+	dynasty = dyn_iyrossi_8
+	mother = scusstari_iyrossi_aagiokrata_8
+	father = scusstari_iyrossi_aagiokrata_9
+	female = yes
+	
+
+	1200.10.11 = {
+		birth = yes
+	}
+
+	1229.4.21 = {
+		death = {
+			death_reason = death_delivery
+		}
+	}
+}
+
+scusstari_iyrossi_aagiokrata_6 = { # Cousin of Sirras, died in childbirth
+	name = "Doran"
+	religion = "iyrossi_aagiokrata"
+	culture = "scusstari"
+	dynasty = dyn_iyrossi_8
+	mother = scusstari_iyrossi_aagiokrata_5
+	
+
+	1229.4.21 = {
+		birth = yes
+	}
+
+	1229.4.21 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+scusstari_iyrossi_aagiokrata_7 = { # Father of Sirras, murdered by Gorassos
+	name = "Dazidan"
+	dna = scusstari_iyrossi_aagiokrata_7
+	religion = "iyrossi_aagiokrata"
+	culture = "scusstari"
+	
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_03
+			custom_beards = male_beard_fp2_iberian_christian_03		 
+		}
+	}
+
+	1198.11.12 = {
+		birth = yes
+	}
+
+	1236.1.16 = {
+		death = {
+			death_reason = death_execution_blood_eagle
+			killer = southernimperial_aversarian_gorassos_1
+		}
+	}
+}
+
+scusstari_iyrossi_aagiokrata_8 = { # Grandmother of Sirras (mothers side), murdered by Gorassos
+	name = "Sida"
+	religion = "iyrossi_aagiokrata"
+	culture = "scusstari"
+	father = scusstari_iyrossi_aagiokrata_10
+	female = yes
+
+	1179.4.4 = {
+		birth = yes
+	}
+
+	1195.4.5 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_9
+	}
+
+	1236.1.16 = {
+		death = {
+			death_reason = death_beaten
+			killer = southernimperial_aversarian_gorassos_1
+		}
+	}
+}
+
+scusstari_iyrossi_aagiokrata_9 = { # Grandfather of Sirras (mothers side)
+	name = "Agron"
+	religion = "iyrossi_aagiokrata"
+	culture = "scusstari"
+	father = scusstari_iyrossi_aagiokrata_12
+
+	1170.1.2 = {
+		birth = yes
+	}
+
+	1211.1.2 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+scusstari_iyrossi_aagiokrata_10 = { # Great grandfather of Sirras (mothers side)
+	name = "Badar"
+	religion = "iyrossi_aagiokrata"
+	culture = "scusstari"
+	father = scusstari_iyrossi_aagiokrata_11
+
+	1148.3.4 = {
+		birth = yes
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+scusstari_iyrossi_aagiokrata_11 = { # Great great grandfather of Sirras (mothers side)
+	name = "Byoukos"
+	religion = "iyrossi_aagiokrata"
+	culture = "scusstari"
+
+	1080.2.8 = {
+		birth = yes
+	}
+
+	1150.7.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+scusstari_iyrossi_aagiokrata_12 = { # Great grandfather of Sirras (fathers side)
+	name = "Bato"
+	religion = "iyrossi_aagiokrata"
+	culture = "scusstari"
+	dynasty = dyn_iyrossi_8
+	father = scusstari_iyrossi_aagiokrata_19
+	mother = scusstari_iyrossi_aagiokrata_20
+	
+
+	1115.4.6 = {
+		birth = yes
+	}
+
+	1190.5.3 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+scusstari_iyrossi_aagiokrata_13 = {
+	name = "Sirras"
+	dna = iyrossi_9
+	dynasty = dyn_iyrossi_8
+	religion = "iyrossi_aagiokrata"
+	culture = "scusstari"
+	mother = scusstari_iyrossi_aagiokrata_1
+	father = scusstari_iyrossi_aagiokrata_7
+	sexuality = homosexual
+	trait = stubborn
+	trait = vengeful
+	trait = patient
+	trait = magic_good_3
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_western_09
+		}
+	}
+
+	1230.4.12 = {
+		birth = yes
+		effect = {
+			add_character_flag = dont_generate_family
+			if = {
+				limit = { NOT = { has_dlc_feature = legends } }
+				dynasty = {
+					add_dynasty_perk = pothacleas_legacy_1
+				}
+			}
+		}
+	}
+
+	1246.4.12 = {
+		trait = gh_historical_blademaster_3
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1251.2.23 = {
+		give_nickname = nick_blackguard
+		add_pressed_claim = title:k_mytidon
+		set_relation_grudge = {
+			target = character:southernimperial_aversarian_gorassos_1 # Gorassos Skull-Taker
+			reason = nemesis_killed_father
+			involved_character = character:scusstari_iyrossi_aagiokrata_7
+		}
+	}
+}
+
+scusstari_iyrossi_aagiokrata_14 = {
+	name = "Tilur"
+	dynasty = dyn_iyrossi_10
+	religion = "iyrossi_aagiokrata"
+	culture = "scusstari"
+	father = scusstari_iyrossi_aagiokrata_15
+
+	1193.4.12 = {
+		birth = yes
+	}
+
+}
+
+scusstari_iyrossi_aagiokrata_15 = {
+	name = "Annos"
+	dynasty = dyn_iyrossi_10
+	religion = "iyrossi_aagiokrata"
+	culture = "scusstari"
+
+	1176.7.4 = {
+		birth = yes
+	}
+
+	1215.1.1 = {
+		death = yes
+	}
+}
+
+scusstari_iyrossi_aagiokrata_16 = {
+	name = "Thekla"
+	dynasty = dyn_iyrossi_11
+	religion = "iyrossi_aagiokrata"
+	culture = "scusstari"
+	female = yes
+	father = scusstari_iyrossi_aagiokrata_17
+
+	1201.4.12 = {
+		birth = yes
+	}
+
+	1236.12.12 = {
+		death = yes
+	}
+}
+
+scusstari_iyrossi_aagiokrata_17 = {
+	name = "Zenon"
+	dynasty = dyn_iyrossi_11
+	religion = "iyrossi_aagiokrata"
+	culture = "scusstari"
+
+	1175.6.15 = {
+		birth = yes
+	}
+
+	1220.8.4 = {
+		death = yes
+	}
+}
+
+scusstari_iyrossi_aagiokrata_18 = {
+	name = "Helene"
+	religion = "iyrossi_aagiokrata"
+	culture = "scusstari"
+	female = yes
+
+	1188.2.16 = {
+		birth = yes
+	}
+
+	1212.8.1 = {
+		death = yes
+	}
+}
+
+scusstari_iyrossi_aagiokrata_19 = {
+	name = "Plannios"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_21
+	mother = scusstari_iyrossi_aagiokrata_22
+
+	sexuality = heterosexual
+
+	trait = generous
+	trait = temperate
+	trait = zealous
+
+	diplomacy = 6
+	martial = 8
+	stewardship = 8
+	intrigue = 7
+	learning = 5
+	prowess = 4
+
+	trait = education_martial_4
+
+	1027.1.27 = {
+		birth = yes
+	}
+
+	1060.4.12 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_20
+	}
+
+	1070.5.9 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_20 = {
+	name = "Koursolabia"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = deceitful
+	trait = compassionate
+	trait = generous
+
+	diplomacy = 4
+	martial = 4
+	stewardship = 6
+	intrigue = 8
+	learning = 3
+	prowess = 10
+
+	trait = education_intrigue_4
+
+	1043.4.16 = {
+		birth = yes
+	}
+
+	1090.5.16 = {
+		death = { death_reason = death_great_pox }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_21 = {
+	name = "Pantadienos"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_73
+	mother = scusstari_iyrossi_aagiokrata_74
+
+	sexuality = heterosexual
+
+	trait = deceitful
+	trait = stubborn
+	trait = ambitious
+
+	diplomacy = 6
+	martial = 5
+	stewardship = 8
+	intrigue = 6
+	learning = 7
+	prowess = 6
+
+	trait = education_learning_4
+
+	1007.8.2 = {
+		birth = yes
+	}
+
+	1023.5.11 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_22
+	}
+
+	1091.11.19 = {
+		death = { death_reason = death_great_pox }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_22 = {
+	name = "Tito"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = calm
+	trait = humble
+	trait = deceitful
+
+	diplomacy = 6
+	martial = 8
+	stewardship = 6
+	intrigue = 7
+	learning = 7
+	prowess = 6
+
+	trait = education_martial_4
+
+	1006.12.11 = {
+		birth = yes
+	}
+
+	1098.2.23 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_23 = {
+	name = "Iettos"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+	father = scusstari_iyrossi_1
+
+	sexuality = heterosexual
+
+	trait = wrathful
+	trait = sadistic
+	trait = craven
+
+	diplomacy = 7
+	martial = 4
+	stewardship = 8
+	intrigue = 4
+	learning = 4
+	prowess = 4
+
+	trait = education_stewardship_3
+
+	119.2.22 = {
+		birth = yes
+	}
+
+	137.7.2 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_25
+	}
+
+	214.11.16 = {
+		death = { death_reason = death_consumption }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_24 = {
+	name = "Tilur"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_21
+	mother = scusstari_iyrossi_aagiokrata_22
+
+	sexuality = heterosexual
+
+	trait = fickle
+	trait = wrathful
+	trait = lazy
+
+	diplomacy = 27
+	martial = 24
+	stewardship = 18
+	intrigue = 31
+	learning = 18
+	prowess = 29
+
+	trait = education_intrigue_4
+
+	1031.11.6 = {
+		birth = yes
+	}
+
+	1048.1.3 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_26
+	}
+
+	1064.7.3 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_25 = {
+	name = "Dasto"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = arbitrary
+	trait = brave
+	trait = zealous
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 7
+	intrigue = 8
+	learning = 7
+	prowess = 6
+
+	trait = education_intrigue_3
+
+	120.11.8 = {
+		birth = yes
+	}
+
+	195.6.10 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_26 = {
+	name = "Tritto"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = calm
+	trait = brave
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 8
+	intrigue = 6
+	learning = 9
+	prowess = 7
+
+	trait = education_learning_3
+
+	1026.12.12 = {
+		birth = yes
+	}
+
+	1122.4.25 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_27 = {
+	name = "Tritonos"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_23
+	mother = scusstari_iyrossi_aagiokrata_25
+
+	sexuality = heterosexual
+
+	trait = zealous
+	trait = callous
+	trait = fickle
+
+	diplomacy = 5
+	martial = 5
+	stewardship = 8
+	intrigue = 5
+	learning = 10
+	prowess = 7
+
+	trait = education_learning_3
+
+	142.9.20 = {
+		birth = yes
+	}
+
+	166.1.10 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_28
+	}
+
+	230.6.18 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_28 = {
+	name = "Pantia"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = wrathful
+	trait = ambitious
+
+	diplomacy = 6
+	martial = 6
+	stewardship = 2
+	intrigue = 5
+	learning = 8
+	prowess = 8
+
+	trait = education_learning_2
+
+	141.3.5 = {
+		birth = yes
+	}
+
+	176.3.23 = {
+		death = { death_reason = death_cancer }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_29 = {
+	name = "Skenobarbos"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_27
+	mother = scusstari_iyrossi_aagiokrata_28
+
+	sexuality = heterosexual
+
+	trait = greedy
+	trait = vengeful
+	trait = paranoid
+
+	diplomacy = 6
+	martial = 8
+	stewardship = 11
+	intrigue = 4
+	learning = 4
+	prowess = 8
+
+	trait = education_stewardship_2
+
+	169.11.14 = {
+		birth = yes
+	}
+
+	194.6.25 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_31
+	}
+
+	240.7.13 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_30 = {
+	name = "Tritos"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_29
+	mother = scusstari_iyrossi_aagiokrata_31
+
+	sexuality = heterosexual
+
+	trait = wrathful
+	trait = patient
+	trait = compassionate
+
+	diplomacy = 6
+	martial = 8
+	stewardship = 8
+	intrigue = 4
+	learning = 6
+	prowess = 6
+
+	trait = education_martial_4
+
+	200.2.2 = {
+		birth = yes
+	}
+
+	236.4.16 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_54
+	}
+
+	271.1.18 = {
+		death = { death_reason = death_consumption }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_31 = {
+	name = "Seio"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = fickle
+	trait = zealous
+
+	diplomacy = 3
+	martial = 6
+	stewardship = 6
+	intrigue = 5
+	learning = 5
+	prowess = 4
+
+	trait = education_martial_3
+
+	170.1.21 = {
+		birth = yes
+	}
+
+	268.1.22 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_32 = {
+	name = "Implaios"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_30
+	mother = scusstari_iyrossi_aagiokrata_54
+
+	sexuality = heterosexual
+
+	trait = lazy
+	trait = vengeful
+	trait = greedy
+
+	diplomacy = 8
+	martial = 4
+	stewardship = 7
+	intrigue = 9
+	learning = 8
+	prowess = 5
+
+	trait = education_intrigue_4
+
+	244.10.18 = {
+		birth = yes
+	}
+
+	287.10.21 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_55
+	}
+
+	297.5.11 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_33 = {
+	name = "Daitor"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_32
+	mother = scusstari_iyrossi_aagiokrata_55
+
+	sexuality = heterosexual
+
+	trait = generous
+	trait = just
+	trait = gregarious
+
+	diplomacy = 7
+	martial = 7
+	stewardship = 6
+	intrigue = 7
+	learning = 4
+	prowess = 4
+
+	trait = education_diplomacy_2
+
+	295.3.15 = {
+		birth = yes
+	}
+
+	332.6.23 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_56
+	}
+
+	365.8.14 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_34 = {
+	name = "Massurios"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_33
+	mother = scusstari_iyrossi_aagiokrata_56
+
+	sexuality = heterosexual
+
+	trait = forgiving
+	trait = deceitful
+	trait = brave
+
+	diplomacy = 6
+	martial = 8
+	stewardship = 5
+	intrigue = 7
+	learning = 1
+	prowess = 5
+
+	trait = education_martial_3
+
+	339.11.7 = {
+		birth = yes
+	}
+
+	381.6.26 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_57
+	}
+
+	391.7.5 = {
+		death = { death_reason = death_maimed }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_35 = {
+	name = "Platourios"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_34
+	mother = scusstari_iyrossi_aagiokrata_57
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = greedy
+	trait = ambitious
+
+	diplomacy = 2
+	martial = 8
+	stewardship = 7
+	intrigue = 3
+	learning = 8
+	prowess = 8
+
+	trait = education_martial_4
+
+	386.3.18 = {
+		birth = yes
+	}
+
+	416.7.23 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_58
+	}
+
+	445.5.11 = {
+		death = { death_reason = death_mysterious }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_36 = {
+	name = "Daor"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_35
+	mother = scusstari_iyrossi_aagiokrata_58
+
+	sexuality = heterosexual
+
+	trait = gregarious
+	trait = sadistic
+	trait = arrogant
+
+	diplomacy = 7
+	martial = 2
+	stewardship = 7
+	intrigue = 8
+	learning = 6
+	prowess = 6
+
+	trait = education_martial_2
+
+	421.6.13 = {
+		birth = yes
+	}
+
+	451.2.13 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_59
+	}
+
+	464.3.23 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_37 = {
+	name = "Baidaros"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_36
+	mother = scusstari_iyrossi_aagiokrata_59
+
+	sexuality = heterosexual
+
+	trait = greedy
+	trait = stubborn
+	trait = calm
+
+	diplomacy = 8
+	martial = 6
+	stewardship = 5
+	intrigue = 11
+	learning = 7
+	prowess = 9
+
+	trait = education_intrigue_4
+
+	455.5.18 = {
+		birth = yes
+	}
+
+	490.10.20 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_60
+	}
+
+	520.6.6 = {
+		death = { death_reason = death_consumption }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_38 = {
+	name = "Baizo"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_37
+	mother = scusstari_iyrossi_aagiokrata_60
+
+	sexuality = heterosexual
+
+	trait = zealous
+	trait = chaste
+	trait = calm
+
+	diplomacy = 6
+	martial = 8
+	stewardship = 7
+	intrigue = 6
+	learning = 2
+	prowess = 5
+
+	trait = education_martial_3
+
+	492.4.21 = {
+		birth = yes
+	}
+
+	523.3.24 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_61
+	}
+
+	533.4.12 = {
+		death = { death_reason = death_disappearance }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_39 = {
+	name = "Panes"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_38
+	mother = scusstari_iyrossi_aagiokrata_61
+
+	sexuality = heterosexual
+
+	trait = trusting
+	trait = stubborn
+	trait = ambitious
+
+	diplomacy = 3
+	martial = 4
+	stewardship = 6
+	intrigue = 5
+	learning = 6
+	prowess = 5
+
+	trait = education_stewardship_3
+
+	533.12.2 = {
+		birth = yes
+	}
+
+	557.7.6 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_62
+	}
+
+	567.8.17 = {
+		death = { death_reason = death_consumption }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_40 = {
+	name = "Daitor"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_39
+	mother = scusstari_iyrossi_aagiokrata_62
+
+	sexuality = heterosexual
+
+	trait = honest
+	trait = brave
+	trait = impatient
+
+	diplomacy = 7
+	martial = 8
+	stewardship = 2
+	intrigue = 4
+	learning = 2
+	prowess = 2
+
+	trait = education_martial_3
+
+	561.10.25 = {
+		birth = yes
+	}
+
+	580.3.3 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_63
+	}
+
+	661.5.10 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_41 = {
+	name = "Panes"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_40
+	mother = scusstari_iyrossi_aagiokrata_63
+
+	sexuality = heterosexual
+
+	trait = cynical
+	trait = brave
+	trait = arrogant
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 4
+	intrigue = 6
+	learning = 3
+	prowess = 7
+
+	trait = education_diplomacy_2
+
+	588.7.24 = {
+		birth = yes
+	}
+
+	610.5.20 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_64
+	}
+
+	634.4.4 = {
+		death = { death_reason = death_attacked }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_42 = {
+	name = "Karbanios"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_41
+	mother = scusstari_iyrossi_aagiokrata_64
+
+	sexuality = heterosexual
+
+	trait = compassionate
+	trait = shy
+	trait = fickle
+
+	diplomacy = 8
+	martial = 9
+	stewardship = 3
+	intrigue = 8
+	learning = 4
+	prowess = 7
+
+	trait = education_martial_3
+
+	622.7.13 = {
+		birth = yes
+	}
+
+	663.3.25 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_65
+	}
+
+	680.9.25 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_43 = {
+	name = "Berzoulos"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_42
+	mother = scusstari_iyrossi_aagiokrata_65
+
+	sexuality = heterosexual
+
+	trait = temperate
+	trait = generous
+	trait = zealous
+
+	diplomacy = 4
+	martial = 7
+	stewardship = 2
+	intrigue = 5
+	learning = 5
+	prowess = 8
+
+	trait = education_martial_1
+
+	669.4.27 = {
+		birth = yes
+	}
+
+	695.5.3 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_66
+	}
+
+	729.7.10 = {
+		death = { death_reason = death_typhus }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_44 = {
+	name = "Baizo"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_43
+	mother = scusstari_iyrossi_aagiokrata_66
+
+	sexuality = heterosexual
+
+	trait = temperate
+	trait = vengeful
+	trait = calm
+
+	diplomacy = 7
+	martial = 5
+	stewardship = 9
+	intrigue = 7
+	learning = 6
+	prowess = 6
+
+	trait = education_stewardship_4
+
+	697.7.8 = {
+		birth = yes
+	}
+
+	737.12.13 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_67
+	}
+
+	747.5.12 = {
+		death = { death_reason = death_pneumonic }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_45 = {
+	name = "Glaucias"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_44
+	mother = scusstari_iyrossi_aagiokrata_67
+
+	sexuality = heterosexual
+
+	trait = lustful
+	trait = calm
+	trait = fickle
+
+	diplomacy = 6
+	martial = 7
+	stewardship = 6
+	intrigue = 5
+	learning = 9
+	prowess = 7
+
+	trait = education_learning_3
+
+	745.1.1 = {
+		birth = yes
+	}
+
+	764.3.6 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_68
+	}
+
+	798.12.10 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_46 = {
+	name = "Sirras"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_45
+	mother = scusstari_iyrossi_aagiokrata_68
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = zealous
+	trait = brave
+
+	diplomacy = 5
+	martial = 3
+	stewardship = 7
+	intrigue = 3
+	learning = 6
+	prowess = 4
+
+	trait = education_stewardship_3
+
+	772.1.23 = {
+		birth = yes
+	}
+
+	806.8.21 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_69
+	}
+
+	816.10.24 = {
+		death = { death_reason = death_typhus }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_47 = {
+	name = "Heirax"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_46
+	mother = scusstari_iyrossi_aagiokrata_69
+
+	sexuality = heterosexual
+
+	trait = brave
+	trait = compassionate
+	trait = lustful
+
+	diplomacy = 4
+	martial = 4
+	stewardship = 4
+	intrigue = 5
+	learning = 7
+	prowess = 8
+
+	trait = education_learning_3
+
+	813.6.27 = {
+		birth = yes
+	}
+
+	837.5.6 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_70
+	}
+
+	861.5.26 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_48 = {
+	name = "Dazos"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_47
+	mother = scusstari_iyrossi_aagiokrata_70
+
+	sexuality = heterosexual
+
+	trait = brave
+	trait = deceitful
+	trait = gluttonous
+
+	diplomacy = 10
+	martial = 6
+	stewardship = 6
+	intrigue = 5
+	learning = 6
+	prowess = 6
+
+	trait = education_diplomacy_3
+
+		838.6.4 = {
+		birth = yes
+	}
+
+	857.7.5 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_71
+	}
+
+	867.2.17 = {
+		death = { death_reason = death_vanished }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_49 = {
+	name = "Likkaios"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_48
+	mother = scusstari_iyrossi_aagiokrata_71
+
+	sexuality = heterosexual
+
+	trait = gregarious
+	trait = stubborn
+	trait = temperate
+
+	diplomacy = 4
+	martial = 5
+	stewardship = 10
+	intrigue = 7
+	learning = 4
+	prowess = 6
+
+	trait = education_stewardship_2
+
+	865.3.10 = {
+		birth = yes
+	}
+
+	893.6.12 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_53
+	}
+
+	928.3.9 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_50 = {
+	name = "Dasmenos"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_49
+	mother = scusstari_iyrossi_aagiokrata_53
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = ambitious
+	trait = lazy
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 5
+	intrigue = 9
+	learning = 7
+	prowess = 4
+
+	trait = education_intrigue_4
+
+	894.1.20 = {
+		birth = yes
+	}
+
+	927.3.20 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_52
+	}
+
+	973.10.11 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_51 = {
+	name = "Loantios"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_50
+	mother = scusstari_iyrossi_aagiokrata_52
+
+	sexuality = heterosexual
+
+	trait = generous
+	trait = temperate
+	trait = wrathful
+
+	diplomacy = 6
+	martial = 8
+	stewardship = 3
+	intrigue = 6
+	learning = 8
+	prowess = 7
+
+	trait = education_martial_3
+
+	928.1.5 = {
+		birth = yes
+	}
+
+	970.2.14 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_72
+	}
+
+	980.4.16 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_52 = {
+	name = "Iato"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = lustful
+	trait = patient
+	trait = stubborn
+
+	diplomacy = 7
+	martial = 4
+	stewardship = 7
+	intrigue = 3
+	learning = 5
+	prowess = 7
+
+	trait = education_diplomacy_2
+
+	907.11.25 = {
+		birth = yes
+	}
+
+	959.5.2 = {
+		death = { death_reason = death_leper }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_53 = {
+	name = "Glabikida"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = lustful
+	trait = generous
+
+	diplomacy = 8
+	martial = 1
+	stewardship = 11
+	intrigue = 7
+	learning = 4
+	prowess = 4
+
+	trait = education_stewardship_2
+
+	872.4.28 = {
+		birth = yes
+	}
+
+	914.4.20 = {
+		death = { death_reason = death_consumption }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_54 = {
+	name = "Mellito"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = humble
+	trait = vengeful
+	trait = compassionate
+
+	diplomacy = 6
+	martial = 5
+	stewardship = 6
+	intrigue = 6
+	learning = 10
+	prowess = 5
+
+	trait = education_learning_1
+
+	219.1.26 = {
+		birth = yes
+	}
+
+	255.12.2 = {
+		death = { death_reason = death_plotting }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_55 = {
+	name = "Poia"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = wrathful
+	trait = temperate
+
+	diplomacy = 4
+	martial = 4
+	stewardship = 4
+	intrigue = 8
+	learning = 6
+	prowess = 6
+
+	trait = education_intrigue_4
+
+	270.3.11 = {
+		birth = yes
+	}
+
+	305.3.18 = {
+		death = { death_reason = death_pneumonic }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_56 = {
+	name = "Barro"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = homosexual
+
+	trait = paranoid
+	trait = deceitful
+	trait = gregarious
+
+	diplomacy = 5
+	martial = 9
+	stewardship = 7
+	intrigue = 10
+	learning = 6
+	prowess = 4
+
+	trait = education_intrigue_4
+
+	315.12.13 = {
+		birth = yes
+	}
+
+	342.11.6 = {
+		death = { death_reason = death_horse_riding_accident }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_57 = {
+	name = "Deidmou"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = fickle
+	trait = temperate
+
+	diplomacy = 6
+	martial = 5
+	stewardship = 8
+	intrigue = 9
+	learning = 7
+	prowess = 4
+
+	trait = education_intrigue_2
+
+	363.1.13 = {
+		birth = yes
+	}
+
+	431.10.15 = {
+		death = { death_reason = death_smallpox }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_58 = {
+	name = "Dennaia"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = gregarious
+	trait = greedy
+
+	diplomacy = 8
+	martial = 6
+	stewardship = 4
+	intrigue = 5
+	learning = 7
+	prowess = 5
+
+	trait = education_diplomacy_3
+
+	394.12.21 = {
+		birth = yes
+	}
+
+	458.12.20 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_59 = {
+	name = "Nebato"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = gluttonous
+	trait = vengeful
+
+	diplomacy = 7
+	martial = 7
+	stewardship = 7
+	intrigue = 4
+	learning = 8
+	prowess = 6
+
+	trait = education_learning_4
+
+	426.3.26 = {
+		birth = yes
+	}
+
+	524.1.1 = {
+		death = { death_reason = death_leper }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_60 = {
+	name = "Testo"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = temperate
+	trait = chaste
+	trait = fickle
+
+	diplomacy = 7
+	martial = 3
+	stewardship = 5
+	intrigue = 4
+	learning = 3
+	prowess = 5
+
+	trait = education_diplomacy_4
+
+	473.2.24 = {
+		birth = yes
+	}
+
+	554.5.20 = {
+		death = { death_reason = death_cancer }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_61 = {
+	name = "Deidmou"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = temperate
+	trait = brave
+	trait = fickle
+
+	diplomacy = 9
+	martial = 8
+	stewardship = 6
+	intrigue = 7
+	learning = 8
+	prowess = 3
+
+	trait = education_diplomacy_2
+
+	506.2.21 = {
+		birth = yes
+	}
+
+	583.7.18 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_62 = {
+	name = "Tritto"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = diligent
+	trait = brave
+	trait = vengeful
+
+	diplomacy = 5
+	martial = 6
+	stewardship = 7
+	intrigue = 5
+	learning = 8
+	prowess = 5
+
+	trait = education_learning_2
+
+	535.4.23 = {
+		birth = yes
+	}
+
+	612.2.8 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_63 = {
+	name = "Samountio"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = generous
+	trait = honest
+	trait = brave
+
+	diplomacy = 3
+	martial = 8
+	stewardship = 5
+	intrigue = 3
+	learning = 5
+	prowess = 7
+
+	trait = education_martial_1
+
+	563.9.7 = {
+		birth = yes
+	}
+
+	624.11.9 = {
+		death = { death_reason = death_pneumonic }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_64 = {
+	name = "Arbo"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = deceitful
+	trait = brave
+	trait = gluttonous
+
+	diplomacy = 5
+	martial = 8
+	stewardship = 9
+	intrigue = 6
+	learning = 6
+	prowess = 5
+
+	trait = education_stewardship_4
+
+	593.4.22 = {
+		birth = yes
+	}
+
+	658.1.28 = {
+		death = { death_reason = death_training_accident }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_65 = {
+	name = "Kato"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = homosexual
+
+	trait = deceitful
+	trait = sadistic
+	trait = patient
+
+	diplomacy = 9
+	martial = 5
+	stewardship = 4
+	intrigue = 8
+	learning = 6
+	prowess = 6
+
+	trait = education_diplomacy_2
+
+	646.9.3 = {
+		birth = yes
+	}
+
+	673.6.4 = {
+		death = { death_reason = death_murder }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_66 = {
+	name = "Platino"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = stubborn
+	trait = lustful
+	trait = forgiving
+
+	diplomacy = 4
+	martial = 3
+	stewardship = 7
+	intrigue = 6
+	learning = 8
+	prowess = 7
+
+	trait = education_learning_4
+
+	678.6.4 = {
+		birth = yes
+	}
+
+	743.8.13 = {
+		death = { death_reason = death_smallpox }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_67 = {
+	name = "Arbo"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = gregarious
+	trait = diligent
+	trait = gluttonous
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 8
+	intrigue = 4
+	learning = 6
+	prowess = 4
+
+	trait = education_stewardship_3
+
+	718.8.3 = {
+		birth = yes
+	}
+
+	795.1.7 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_68 = {
+	name = "Mabida"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = fickle
+	trait = paranoid
+
+	diplomacy = 3
+	martial = 6
+	stewardship = 6
+	intrigue = 8
+	learning = 6
+	prowess = 4
+
+	trait = education_intrigue_2
+
+	747.1.9 = {
+		birth = yes
+	}
+
+	825.7.10 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_69 = {
+	name = "Sicou"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = lustful
+	trait = temperate
+	trait = cynical
+
+	diplomacy = 4
+	martial = 2
+	stewardship = 6
+	intrigue = 5
+	learning = 5
+	prowess = 7
+
+	trait = education_stewardship_2
+
+	785.12.8 = {
+		birth = yes
+	}
+
+	854.6.5 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_70 = {
+	name = "Samountio"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = patient
+	trait = deceitful
+
+	diplomacy = 4
+	martial = 6
+	stewardship = 6
+	intrigue = 7
+	learning = 4
+	prowess = 8
+
+	trait = education_intrigue_4
+
+	820.6.9 = {
+		birth = yes
+	}
+
+	896.4.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_71 = {
+	name = "Labinkia"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = wrathful
+	trait = ambitious
+	trait = diligent
+
+	diplomacy = 6
+	martial = 5
+	stewardship = 7
+	intrigue = 8
+	learning = 5
+	prowess = 9
+
+	trait = education_intrigue_2
+
+	840.3.13 = {
+		birth = yes
+	}
+
+	867.6.9 = {
+		death = { death_reason = death_leper }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_72 = {
+	name = "Adunabeth"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = chaste
+	trait = just
+	trait = vengeful
+
+	diplomacy = 5
+	martial = 6
+	stewardship = 8
+	intrigue = 8
+	learning = 6
+	prowess = 5
+
+	trait = education_stewardship_1
+
+	953.2.16 = {
+		birth = yes
+	}
+
+	981.1.13 = {
+		death = { death_reason = death_pneumonic }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_73 = {
+	name = "Souttis"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_51
+	mother = scusstari_iyrossi_aagiokrata_72
+
+	sexuality = heterosexual
+
+	trait = cynical
+	trait = just
+	trait = brave
+
+	diplomacy = 3
+	martial = 6
+	stewardship = 5
+	intrigue = 6
+	learning = 8
+	prowess = 7
+
+	trait = education_learning_3
+
+	980.5.6 = {
+		birth = yes
+	}
+
+	1001.6.26 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_74
+	}
+
+	1013.4.26 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_74 = {
+	name = "Stennato"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = sadistic
+	trait = brave
+	trait = temperate
+
+	diplomacy = 3
+	martial = 11
+	stewardship = 6
+	intrigue = 6
+	learning = 4
+	prowess = 7
+
+	trait = education_martial_1
+
+	980.11.6 = {
+		birth = yes
+	}
+
+	1032.2.16 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_75 = {
+	name = "Dasantilla"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_73
+	mother = scusstari_iyrossi_aagiokrata_74
+
+	sexuality = heterosexual
+
+	trait = patient
+	trait = humble
+	trait = arbitrary
+
+	diplomacy = 8
+	martial = 6
+	stewardship = 7
+	intrigue = 6
+	learning = 6
+	prowess = 6
+
+	trait = education_diplomacy_3
+
+	1004.3.2 = {
+		birth = yes
+	}
+
+	1080.11.20 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_76 = {
+	name = "Surio"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_73
+	mother = scusstari_iyrossi_aagiokrata_74
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = arrogant
+	trait = sadistic
+
+	diplomacy = 9
+	martial = 8
+	stewardship = 8
+	intrigue = 5
+	learning = 7
+	prowess = 4
+
+	trait = education_diplomacy_4
+
+	1006.9.23 = {
+		birth = yes
+	}
+
+	1034.2.3 = {
+		death = { death_reason = death_typhus }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_77 = {
+	name = "Statanios"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_19
+	mother = scusstari_iyrossi_aagiokrata_20
+
+	sexuality = heterosexual
+
+	trait = greedy
+	trait = vengeful
+	trait = fickle
+
+	diplomacy = 4
+	martial = 6
+	stewardship = 3
+	intrigue = 7
+	learning = 5
+	prowess = 7
+
+	trait = education_intrigue_2
+
+	1063.1.6 = {
+		birth = yes
+	}
+
+	1105.3.15 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_81
+	}
+
+	1115.5.4 = {
+		death = { death_reason = death_typhus }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_78 = {
+	name = "Arsa"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_21
+	mother = scusstari_iyrossi_aagiokrata_22
+
+	sexuality = bisexual
+
+	trait = diligent
+	trait = temperate
+	trait = vengeful
+
+	diplomacy = 6
+	martial = 9
+	stewardship = 6
+	intrigue = 7
+	learning = 8
+	prowess = 6
+
+	trait = education_martial_3
+
+	1030.2.25 = {
+		birth = yes
+	}
+
+	1098.7.5 = {
+		death = { death_reason = death_smallpox }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_79 = {
+	name = "Annos"
+
+	dynasty = dyn_iyrossi_8
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_24
+	mother = scusstari_iyrossi_aagiokrata_26
+
+	sexuality = heterosexual
+
+	trait = cynical
+	trait = vengeful
+	trait = humble
+
+	diplomacy = 6
+	martial = 5
+	stewardship = 4
+	intrigue = 6
+	learning = 5
+	prowess = 7
+
+	trait = education_diplomacy_3
+
+	1055.8.10 = {
+		birth = yes
+	}
+
+	1084.1.9 = {
+		add_spouse = scusstari_iyrossi_aagiokrata_82
+	}
+
+	1117.2.27 = {
+		death = { death_reason = death_siege }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_80 = {
+	name = "Nebato"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	father = scusstari_iyrossi_aagiokrata_50
+	mother = scusstari_iyrossi_aagiokrata_52
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = arrogant
+	trait = brave
+
+	diplomacy = 7
+	martial = 5
+	stewardship = 8
+	intrigue = 4
+	learning = 10
+	prowess = 3
+
+	trait = education_learning_2
+
+	931.9.1 = {
+		birth = yes
+	}
+
+	957.1.22 = {
+		death = { death_reason = death_smallpox }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_81 = {
+	name = "Adunabeth"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = brave
+	trait = lazy
+	trait = cynical
+
+	diplomacy = 4
+	martial = 5
+	stewardship = 4
+	intrigue = 3
+	learning = 7
+	prowess = 8
+
+	trait = education_learning_4
+
+	1088.11.15 = {
+		birth = yes
+	}
+
+	1172.9.9 = {
+		death = { death_reason = death_typhus }
+	}
+}
+
+scusstari_iyrossi_aagiokrata_82 = {
+	name = "Testo"
+	female = yes
+
+	religion = iyrossi_aagiokrata
+	culture = scusstari
+
+	sexuality = heterosexual
+
+	trait = stubborn
+	trait = just
+	trait = forgiving
+
+	diplomacy = 4
+	martial = 5
+	stewardship = 7
+	intrigue = 6
+	learning = 5
+	prowess = 7
+
+	trait = education_stewardship_2
+
+	1060.5.26 = {
+		birth = yes
+	}
+
+	1157.9.23 = {
+		death = { death_reason = death_pneumonic }
+	}
+}

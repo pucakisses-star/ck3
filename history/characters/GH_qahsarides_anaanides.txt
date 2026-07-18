@@ -1,0 +1,22 @@
+﻿qahsarides_anaanides_1 = { # Last Anaanide
+	name = "Riyalli"
+	religion = "anaanides"
+	culture = "qahsarides"
+	dynasty = dyn_anaanides_1
+
+	martial = 4
+	diplomacy = 2
+	stewardship = 4
+	intrigue = 8
+	learning = 5
+
+	trait = zealous
+	trait = deceitful
+	trait = impatient
+
+	trait = education_intrigue_2
+
+	1217.8.26 = {
+		birth = yes
+	}
+}

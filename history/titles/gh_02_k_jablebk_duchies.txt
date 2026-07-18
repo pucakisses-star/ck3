@@ -1,0 +1,162 @@
+d_first_kingdom = {
+	793.9.12 = {
+		holder = tasurmad_wardenism_7
+	}
+	809.3.17 = {
+		holder = tasurmad_wardenism_8
+	}
+	865.3.17 ={
+		holder = tasurmad_wardenism_9
+	}
+	874.12.12 = {
+		holder = tasurmad_wardenism_10
+	}
+	899.10.11 = {
+		holder = tasurmad_wardenism_11
+	}
+	956.10.11 = {
+		holder = tasurmad_wardenism_12
+	}
+	966.10.11 = {
+		holder = tasurmad_wardenism_13
+	}
+	979.10.11 = {
+		holder = tasurmad_wardenism_14
+	}
+	1002.10.11 = {
+		holder = tasurmad_wardenism_15
+	}
+	1049.10.11 = {
+		holder = tasurmad_wardenism_16
+	}
+	1099.10.11 = {
+		holder = tasurmad_wardenism_17
+	}
+	1179.10.11 = {
+		holder = tasurmad_wardenism_18
+	}
+	1183.10.11 = {
+		holder = tasurmad_wardenism_19
+	}
+	1230.1.1 = {
+		holder = tasurmad_wardenism_1
+		#change_development_level = 10
+	}
+	1266.3.11 = {
+		holder = tasurmad_wardenism_94
+	}
+	1281.12.1 = {
+		holder = tasurmad_wardenism_90
+	}
+}
+#d_bir_zekra = {
+#	10.4.15 = {
+#		holder = tasurmad_wardenism_qasimid_1
+#	}
+#	76.8.4 = {
+#		holder = tasurmad_wardenism_qasimid_3
+#	}
+#	103.11.27 = {
+#		holder = tasurmad_wardenism_qasimid_5
+#	}
+#	167.9.24 = {
+#		holder = tasurmad_wardenism_qasimid_7
+#	}
+#	186.7.24 = {
+#		holder = tasurmad_wardenism_qasimid_9
+#	}
+#	235.6.14 = {
+#		holder = tasurmad_wardenism_qasimid_11 
+#	}
+#	293.8.28 = {
+#		holder = tasurmad_wardenism_qasimid_13
+#	}
+#	350.4.8 = {
+#		holder = tasurmad_wardenism_qasimid_15
+#	}
+#	409.7.24 = {
+#		holder = tasurmad_wardenism_qasimid_17
+#	}
+#	456.3.15 = {
+#		holder = tasurmad_wardenism_qasimid_19
+#	}
+#	526.4.14 = {
+#		holder = tasurmad_wardenism_qasimid_21
+#	}
+#	549.1.1 = {
+#		holder = tasurmad_wardenism_qasimid_23
+#	}
+#	610.8.9 = {
+#		holder = tasurmad_wardenism_qasimid_25
+#		liege = "e_sihnamiyah"
+#	}
+#	626.10.28 = {
+#		holder = tasurmad_wardenism_qasimid_27
+#		liege = "e_sihnamiyah"
+#	}
+#	673.4.1 = {
+#		holder = tasurmad_wardenism_qasimid_29
+#		liege = "e_sihnamiyah"
+#	}
+#	723.6.13 = {
+#		holder = tasurmad_wardenism_qasimid_31
+#		liege = "e_sihnamiyah"
+#	}
+#	786.10.17 = {
+#		holder = tasurmad_wardenism_qasimid_33
+#		liege = "e_sihnamiyah"
+#	}
+#	830.7.17 = {
+#		holder = tasurmad_wardenism_qasimid_35
+#		liege = "e_sihnamiyah"
+#	}
+#	881.7.22 = {
+#		holder = tasurmad_wardenism_qasimid_37
+#		liege = "e_sihnamiyah"
+#	}
+#	920.1.1 = {
+#		holder = tasurmad_wardenism_qasimid_39
+#		liege = "e_sihnamiyah"
+#	}
+#	981.5.22 = {
+#		holder = tasurmad_wardenism_qasimid_41
+#		liege = "e_sihnamiyah"
+#	}
+#	1030.8.6 = {
+#		holder = tasurmad_wardenism_qasimid_43
+#		liege = "e_sihnamiyah"
+#	}
+#	1080.12.19 = {
+#		holder = tasurmad_wardenism_qasimid_45
+#		liege = "e_sihnamiyah"
+#	}
+#	1157.8.8 = {
+#		holder = tasurmad_wardenism_qasimid_47
+#		liege = "e_sihnamiyah"
+#	}
+#	1174.11.19 = {
+#		holder = tasurmad_wardenism_qasimid_49
+#		liege = "e_sihnamiyah"
+#	}
+#	1218.10.20 = {
+#		holder = tasurmad_wardenism_qasimid_53
+#		liege = "e_sihnamiyah"
+#	}
+#	1230.1.1 = { change_development_level = 2 }
+#	1267.9.24 = {
+#		holder = tasurmad_wardenism_qasimid_55
+#		liege = "e_sihnamiyah"
+#	}
+#	
+#	1295.1.1 = {
+#		holder = tasurmad_wardenism_91
+#	}
+#}
+
+d_dakhani_arg = {
+	1230.1.1 = {
+		holder = tasurmad_wardenism_53
+		liege = "k_four_rivers"
+	}
+	1230.1.1 = { change_development_level = 6 }
+}

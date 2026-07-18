@@ -1,0 +1,1777 @@
+﻿salisians_lifepath_1 = {
+	name = "Ansfrei" # Ansfrei den va Seignon
+	dna = salisians_lifepath_1
+	dynasty = dyn_marcher_1
+	martial = 6
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 7
+	religion = "lifepath"
+	culture = "salisians"
+	sexuality = homosexual
+	trait = chaste
+	trait = temperate
+	trait = humble
+	trait = education_learning_2
+	trait = way_of_knowledge_follower
+	father = voyagen_lifepath_1 # Gardfrei den va Seignon
+	mother = voyagen_lifepath_64 # Mathilde den va Seignon
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_western_07
+			custom_hair = male_hair_fp2_iberian_christian_02
+		}
+	}
+
+	1231.4.12 = {
+		birth = yes
+		effect = {
+			add_pressed_claim = title:e_chevalie
+		}
+	}
+
+	1241.4.12 = {
+		effect = {
+			create_character_memory = {
+				type = met_friend_first_time
+				participants = {
+					friend = character:carsavisians_lifepath_6 # Duke Rhaon II
+				}
+			}
+		}
+	}
+
+	1248.1.12 = {
+		trait = celibate
+	}
+
+	1248.11.28 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+
+	1251.10.11 = {
+		effect = {
+			create_character_memory = { # Won the Ash War
+				type = war_won
+
+				participants = {
+					winner = character:salisians_lifepath_1
+					loser = character:apokiakas_aversarinas_aagiokratia_23
+				}
+			}
+		}
+	}
+
+	1251.10.13 = {
+		effect = {
+			create_character_memory = {
+				type = friend_died_known_killer
+				participants = {
+					dead_relation = character:carsavisians_lifepath_6 # Duke Rhaon II
+				}
+			}
+
+			set_relation_rival = {
+				target = character:voluntic_partic_10
+				reason = nemesis_killed_friend
+				involved_character = character:carsavisians_lifepath_6
+			}
+		}
+	}
+
+	1251.12.21 = {
+		effect = {
+			create_character_memory = { # Lost territories in Rohr
+				type = war_lost
+
+				participants = {
+					winner = character:voluntic_partic_1
+					loser = character:salisians_lifepath_1
+				}
+			}
+		}
+	}
+
+	1253.1.1 = {
+		add_character_modifier = {
+			modifier = claimant_to_the_high_kingdom
+		}
+	}
+}
+
+salisians_lifepath_2 = {
+	name = "Teryn" # Teryn Valadec, Gardfrei's cousin and childhood friend - then enemy in the civil war of the Black-Gold League
+	dynasty = dyn_marcher_16
+	dna = salisians_lifepath_2
+	religion = "lifepath"
+	culture = "salisians"
+
+	father = salisians_lifepath_7
+	mother = salisians_lifepath_17
+
+	martial = 5
+	learning = 4
+	diplomacy = 5
+	stewardship = 6
+	intrigue = 6
+	prowess = 10
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_07
+			custom_beards = mena_curled_mustache_chinstrap_01
+		}
+	}
+
+	1205.7.22 = {
+		birth = yes
+		trait = intellect_good_1
+		trait = beauty_good_1
+	}
+
+	1215.7.22 = {
+		effect = {
+			create_character_memory = {
+				type = met_friend_first_time
+				participants = {
+					friend = character:voyagen_lifepath_1 # Gardfrei
+				}
+			}
+			dynasty = { add_dynasty_prestige_level = 3 }
+		}
+	}
+
+	1217.1.1 = {
+		trait = calm
+		trait = patient
+		trait = diligent	
+	}
+
+	1218.1.11 = {
+		effect = {
+			create_character_memory = { # Black-Gold War
+				type = fought_in_black_gold_war
+			}
+		}
+	}
+
+	1221.7.22 = {
+		trait = education_stewardship_4
+		trait = way_of_crowns_follower
+		trait = shrewd
+		trait = gh_historical_blademaster_2
+	}
+
+	1223.11.15 = {
+		give_nickname = nick_blackclaw
+	}
+
+	1248.11.28 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+
+	1248.11.28 = {
+		set_relation_rival = {
+			target = character:apokiakas_aversarinas_aagiokratia_23 # Nicanoneus
+			reason = rival_troublesome_warrior
+		}
+	}
+
+	1251.10.13 = {
+		set_relation_rival = {
+			target = character:voluntic_partic_1 # Eoghar-Argeadh
+			reason = betrayed_ash_war
+		}
+	}
+}
+
+salisians_lifepath_3 = {
+	name = "Courbis" # Teryns half brother, attempted to capitalise on the Sjalvolki invasion by conquering parts of the south east
+	#Scion Note: Made him Teryn's full brother for now, unless there is a lore reason not to
+	dynasty = dyn_marcher_16
+	religion = "lifepath"
+	culture = "salisians"
+
+	father = salisians_lifepath_7
+	mother = salisians_lifepath_17
+
+	trait = sickly
+	trait = ambitious
+	trait = education_martial_2
+
+	1219.1.1 = {
+		birth = yes
+	}
+
+	1248.11.28 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+}
+
+salisians_lifepath_4 = {
+	name = "Odel"
+	dynasty = dyn_marcher_17
+	religion = "lifepath"
+	culture = "salisians"
+
+	father = salisians_lifepath_16
+	mother = salisians_lifepath_21
+
+	martial = 12
+	diplomacy = 6
+	stewardship = 11
+	intrigue = 4
+	learning = 4
+
+	trait = disputed_heritage
+
+	1223.1.14 = {
+		birth = yes
+		effect = {
+			set_real_father = character:salisians_lifepath_19 #Alderic II
+			dynasty = { add_dynasty_prestige_level = 3 }
+		}
+	}
+
+	1235.1.1 = {
+		trait = content
+		trait = brave
+		trait = gregarious
+	}
+
+	1239.1.14 = {
+		trait = education_martial_2
+		trait = way_of_crowns_follower
+	}
+
+	1248.11.28 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+}
+
+salisians_lifepath_5 = {
+	name = "Thevenet"
+	dynasty = dyn_marcher_27
+	religion = "lifepath"
+	culture = "salisians"
+	sexuality = bisexual
+
+	martial = 11
+	diplomacy = 6
+	stewardship = 5
+	intrigue = 6
+	learning = 1
+
+	1201.8.24 = {
+		birth = yes
+	}
+
+	1213.1.1 = {
+		trait = wrathful
+		trait = arrogant
+		trait = stubborn
+	}
+
+	1218.1.11 = {
+		effect = {
+			create_character_memory = { # Black-Gold War
+				type = fought_in_black_gold_war
+			}
+		}
+	}
+
+	1217.8.24 = {
+		trait = education_martial_2
+		trait = way_of_swords_follower
+	}
+
+	1219.6.5 = {
+		add_spouse = salisians_lifepath_18
+	}
+
+	1248.11.28 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+}
+
+salisians_lifepath_6 = { # Marcher adventurer in Sarradon
+	name = "Allemand"
+	religion = "lifepath"
+	culture = "salisians"
+
+	1231.1.1 = {
+		birth = yes
+	}
+}
+
+salisians_lifepath_7 = {
+	name = "Edwin" # Edwin Valadec - totally not Tywin Lannister, believed to have offed Gardfrei's	father
+	dna = edwin
+	martial = 6
+	diplomacy = 9
+	intrigue = 9
+	stewardship = 9
+	learning = 4
+	religion = "lifepath"
+	culture = "salisians"
+	father = salisians_lifepath_8
+	trait = calm
+	trait = vengeful
+	trait = ambitious
+	trait = schemer
+	trait = education_intrigue_4
+	trait = intellect_good_2
+	trait = way_of_crowns_follower
+	dynasty = dyn_marcher_16
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_mena_02
+			custom_beards = male_beard_western_8c
+		}
+	}
+
+	1178.11.6 = {
+		birth = yes
+	}
+
+	1200.3.8 = {
+		add_spouse = salisians_lifepath_17
+	}
+
+	1242.4.26 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+salisians_lifepath_8 = {
+	name = "Loden" # Edwin Valadec's father
+	religion = "lifepath"
+	culture = "salisians"
+
+	trait = way_of_justice_follower
+	dynasty = dyn_marcher_16
+	mother = salisians_lifepath_9
+
+	1139.5.12 = {
+		birth = yes
+	}
+
+	1183.2.2 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+salisians_lifepath_9 = {
+	name = "Metile" # Loden Valadec's mother
+	religion = "lifepath"
+	culture = "salisians"
+	female = yes
+	trait = way_of_nullification_follower
+	dynasty = dyn_marcher_16
+
+	father = salisians_lifepath_33
+
+	trait = brave
+	trait = chaste
+	trait = zealous
+
+	1114.4.21 = {
+		birth = yes
+	}
+
+	1141.1.15 = {
+		give_nickname = nick_rose_of_the_north
+	}
+
+	1143.3.25 = {
+		death = {
+			death_reason = death_lich_duel
+			killer = lich_culture_rejection_13 # Crasmer Crasvir
+		}
+	}
+}
+
+salisians_lifepath_10 = {
+	name = "Tanis" # Edwin Valadec daughter
+	dna = tanis
+	female = yes
+	religion = "lifepath"
+	culture = "salisians"
+	father = salisians_lifepath_7
+	trait = calm
+	trait = chaste
+	trait = content
+	trait = education_intrigue_1
+	trait = way_of_crowns_follower
+	dynasty = dyn_marcher_16
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_western_07
+		}
+	}
+
+	1201.1.1 = {
+		birth = yes
+	}
+	1251.4.26 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+salisians_lifepath_11 = { # Boaméd Valadec - King of Marroux during the Anarchy of the Five Crowns, was a minor landowner to the Rysol family which was wiped out in the Brutality
+	name = "Boamed"
+	dna = boamed
+	religion = "lifepath"
+	culture = "salisians"
+
+	trait = way_of_nullification_follower
+	dynasty = dyn_marcher_16
+
+	850.5.21 = {
+		birth = yes
+	}
+
+	903.4.4 = {
+		death = {
+			death_reason = death_suicide
+		}
+	}
+}
+
+salisians_lifepath_12 = { # Son of Boaméd Valadec, took over after his father's suicide and became an ally of the Champion of Chevalie, died holding off Silas Stavro as the last Marcher forces escaped west through the pass at Grande Lafadai
+	name = "Pierre"
+	dna = pierre
+	religion = "lifepath"
+	culture = "salisians"
+	dynasty = dyn_marcher_16
+	father = salisians_lifepath_11
+	trait = brave
+	trait = zealous
+	trait = stubborn
+	trait = way_of_justice_follower
+	trait = education_martial_3
+
+	878.3.15 = {
+		birth = yes
+	}
+
+	935.1.12 = {
+		death = {
+			death_reason = death_lich_duel
+		}
+	}
+}
+
+salisians_lifepath_13 = { # Gofrei was the Duke of Devex during the Brutality but was spared thanks to having been on excursion in the Lichdoms at the time. He quickly rallied his forces and began fighting the War of the Five Kings, and was the only original King alive at the time of Silas' invasion. He attempted to rally the other Kings to fight Silas, but his forces were betrayed by the Pontagets and he was killed by Silas soon after.
+	name = "Gofrei"
+	dna = gofrei
+	religion = "lifepath"
+	culture = "salisians"
+	dynasty = dyn_marcher_17
+	trait = brave
+	trait = just
+	trait = ambitious
+	trait = physique_good_2
+	trait = way_of_nullification_follower
+	trait = education_martial_4
+
+	860.1.12 = {
+		birth = yes
+	}
+
+	933.3.24 = {
+		death = {
+			death_reason = death_lich_duel
+		}
+	}
+}
+
+salisians_lifepath_14 = { # Previously salisians_lifepath_14
+	name = "Marsuerur"
+	religion = lifepath
+	culture = salisians
+
+	trait = diligent
+	trait = ambitious
+	trait = deceitful
+	trait = way_of_harvests_follower
+	trait = education_learning_3
+
+	1204.5.15 = {
+		birth = yes
+	}
+	1253.11.16 = {
+		give_council_position = councillor_court_chaplain
+	}
+}
+
+salisians_lifepath_15 = { # Duc Valomer Monteaux, led the Gold Faction in the Black-Gold War
+	name = "Valomer"
+	dynasty = dyn_marcher_17
+	religion = "lifepath"
+	culture = "salisians"
+	disallow_random_traits = yes
+
+	father = salisians_lifepath_41
+
+	martial = 3
+	diplomacy = 8
+	stewardship = 6
+	intrigue = 10
+	learning = 1
+
+	1157.10.11 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+
+	1169.1.1 = {
+		trait = deceitful
+		trait = ambitious
+		trait = greedy
+	}
+
+	1173.10.11 = {
+		trait = education_stewardship_4
+		trait = way_of_crowns_follower
+		trait = avaricious
+		trait = shrewd
+	}
+
+	1221.6.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+salisians_lifepath_16 = { #Incompetent son of Valomer, executed after the Black-Gold War
+	name = "Alderic"
+	dynasty = dyn_marcher_17
+	religion = "lifepath"
+	culture = "salisians"
+	disallow_random_traits = yes
+	
+	father = salisians_lifepath_15
+
+	martial = 5
+	diplomacy = 8
+	stewardship = 2
+	intrigue = 5
+	learning = 10
+
+	1180.4.23 = {
+		birth = yes
+		trait = twin
+	}
+
+	1192.1.1 = {
+		trait = craven
+		trait = gluttonous
+		trait = greedy
+	}
+
+	1196.4.23 = {
+		trait = education_diplomacy_2
+		trait = way_of_family_follower
+	}
+
+	1201.2.6 = {
+		add_spouse = leegenders_lifepath_7
+	}
+
+	1216.6.24 = {
+		add_spouse = salisians_lifepath_21
+	}
+
+	1227.10.19 = {
+		death = {
+			death_reason = death_punishment
+			killer = voyagen_lifepath_1 #Gardfrei, at the end of Black-Gold War
+		}
+	}
+}
+
+salisians_lifepath_17 = { #Teryn Blackclaw's kind old mom
+	name = "Alesint"
+	dynasty = dyn_marcher_17
+	religion = "lifepath"
+	culture = "salisians"
+	disallow_random_traits = yes
+
+	female = yes
+	
+	father = salisians_lifepath_15
+
+	martial = 1
+	diplomacy = 8
+	stewardship = 7
+	intrigue = 5
+	learning = 8
+
+	1180.4.23 = {
+		birth = yes
+		trait = twin
+		trait = intellect_good_1
+	}
+
+	1192.1.1 = {
+		trait = compassionate
+		trait = content
+		trait = honest
+	}
+
+	1196.4.23 = {
+		trait = education_diplomacy_3
+		trait = way_of_family_follower
+	}
+	1272.12.25 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+salisians_lifepath_18 = { #Richaude claimant's mother
+	name = "Lusine"
+	dynasty = dyn_marcher_17
+	religion = "lifepath"
+	culture = "salisians"
+	disallow_random_traits = yes
+
+	female = yes
+	
+	father = salisians_lifepath_16
+	mother = leegenders_lifepath_7
+
+	martial = 7
+	diplomacy = 2
+	stewardship = 3
+	intrigue = 5
+	learning = 8
+
+	1202.9.2 = {
+		birth = yes
+	}
+
+	1214.1.1 = {
+		trait = compassionate
+		trait = just
+		trait = zealous
+	}
+
+	1218.9.2 = {
+		trait = education_learning_3
+		trait = way_of_justice_follower
+	}
+}
+
+salisians_lifepath_19 = { #Monteaux heir that died in the Black-Gold War
+	name = "Alderic"
+	dynasty = dyn_marcher_17
+	religion = "lifepath"
+	culture = "salisians"
+	disallow_random_traits = yes
+	
+	father = salisians_lifepath_16
+	mother = leegenders_lifepath_7
+
+	martial = 8
+	diplomacy = 7
+	stewardship = 2
+	intrigue = 8
+	learning = 4
+
+	1204.11.4 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+
+	1216.1.1 = {
+		trait = lustful
+		trait = brave
+		trait = gregarious
+	}
+
+	1220.11.4 = {
+		trait = education_martial_3
+		trait = way_of_swords_follower
+	}
+
+	1227.4.30 = {
+		death = {
+			death_reason = death_battle
+			killer = voyagen_lifepath_1
+		}
+	}
+}
+
+salisians_lifepath_20 = { 
+# Marcomer, Patriarch of House Rocheault
+# Old dukes of Evrinesgoen, lost half of their land after the Black-Gold War
+	name = "Marcomer"
+	dynasty = dyn_marcher_26
+	religion = "lifepath"
+	culture = "salisians"
+	disallow_random_traits = yes
+
+	martial = 7
+	diplomacy = 2
+	stewardship = 6
+	intrigue = 3
+	learning = 8
+	prowess = 8
+
+	1171.2.17 = {
+		birth = yes
+	}
+
+	1183.1.1 = {
+		trait = gregarious
+		trait = generous
+		trait = impatient
+	}
+
+	1187.2.17 = {
+		trait = education_diplomacy_4
+		trait = way_of_crowns_follower
+		trait = gh_historical_blademaster_1
+	}
+
+	1227.10.19 = {
+		death = {
+			death_reason = death_punishment
+			killer = voyagen_lifepath_1 #Gardfrei, at the end of Black-Gold War
+		}
+	}
+}
+
+salisians_lifepath_21 = { #Second wife of Alderic, had affair with stepson
+	name = "Helouide"
+	dynasty = dyn_marcher_26
+	religion = "lifepath"
+	culture = "salisians"
+	disallow_random_traits = yes
+
+	female = yes
+	
+	father = salisians_lifepath_20
+
+	martial = 4
+	diplomacy = 7
+	stewardship = 4
+	intrigue = 7
+	learning = 4
+
+	1200.2.6 = {
+		birth = yes
+		trait = beauty_good_2
+	}
+
+	1212.1.1 = {
+		trait = lustful
+		trait = ambitious
+		trait = temperate
+	}
+
+	1216.2.6 = {
+		trait = education_intrigue_3
+		trait = way_of_crows_follower
+		trait = seducer
+	}
+
+	1227.4.30 = {
+		trait = depressed_1
+	}
+
+	1247.2.28 = {
+		death = {
+			death_reason = death_depressed
+		}
+	}
+}
+
+salisians_lifepath_22 = { # Marcher Duke killed by the Partics in the Rohrian Annex
+	name = "Beroulf"
+	dynasty = dyn_marcher_26
+	religion = "lifepath"
+	culture = "salisians"
+	disallow_random_traits = yes
+	
+	father = salisians_lifepath_20
+
+	martial = 5
+	diplomacy = 4
+	stewardship = 8
+	intrigue = 2
+	learning = 5
+	prowess = 5
+
+	1203.1.12 = {
+		birth = yes
+	}
+
+	1215.1.1 = {
+		trait = diligent
+		trait = calm
+		trait = fickle
+	}
+
+	1219.1.12 = {
+		trait = education_learning_1
+		trait = way_of_knowledge_follower
+	}
+
+	1251.10.13 = {
+		death = {
+			death_reason = death_battle
+			killer = voluntic_partic_12
+		}
+	}
+}
+
+salisians_lifepath_23 = {	# Last survivor of House Rocheault
+	name = "Hugomer"
+	dynasty = dyn_marcher_26
+	religion = "lifepath"
+	culture = "salisians"
+	disallow_random_traits = yes
+	
+	father = salisians_lifepath_22
+
+	martial = 6
+	diplomacy = 5
+	stewardship = 1
+	intrigue = 7
+	learning = 3
+	prowess = 5
+
+	1235.10.2 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 1 }
+		}
+	}
+
+	1247.1.1 = {
+		trait = vengeful
+		trait = ambitious
+		trait = greedy
+		trait = shrewd
+	}
+
+	1251.10.2 = {
+		trait = education_intrigue_2
+		trait = way_of_crows_follower
+	}
+
+	1251.10.13 = {
+		set_relation_rival = {
+			target = character:voluntic_partic_12
+			reason = nemesis_killed_father
+			involved_character = character:salisians_lifepath_22
+		}
+	}
+
+	1251.12.21 = {
+		add_pressed_claim = title:d_neufrisa
+	}
+}
+
+salisians_lifepath_24 = { # Claimant to the Duchies of Marenoc and Irenux
+	name = "Baudouin"
+	dynasty = dyn_marcher_27
+	religion = "lifepath"
+	culture = "salisians"
+	disallow_random_traits = yes
+	
+	father = salisians_lifepath_5
+	mother = salisians_lifepath_18
+
+	martial = 6
+	diplomacy = 8
+	stewardship = 5
+	intrigue = 7
+	learning = 5
+	prowess = 7
+
+	1221.7.15 = {
+		birth = yes
+	}
+
+	1223.10.19 = {
+		#add_pressed_claim = title:d_marenoc
+		add_pressed_claim = title:d_irenux
+		add_pressed_claim = title:k_black_gold_league
+	}
+
+	1233.1.1 = {
+		trait = callous
+		trait = ambitious
+		trait = brave
+	}
+
+	1237.7.15 = {
+		trait = education_intrigue_4
+		trait = way_of_crowns_follower
+	}
+
+	1248.11.28 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+}
+
+salisians_lifepath_25 = { # Meline Valadec, Mother of Gardfrei
+	name = "Meline"
+	dynasty = dyn_marcher_16
+	religion = "lifepath"
+	culture = "salisians"
+	female = yes
+	disallow_random_traits = yes
+	
+	father = salisians_lifepath_8
+
+	martial = 3
+	diplomacy = 8
+	stewardship = 6
+	intrigue = 3
+	learning = 7
+	prowess = 1
+
+	1174.11.18 = {
+		birth = yes
+	}
+
+	1186.1.1 = {
+		trait = calm
+		trait = content
+		trait = just
+	}
+
+	1190.11.18 = {
+		trait = education_diplomacy_3
+		trait = way_of_justice_follower
+	}
+
+	1241.4.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+salisians_lifepath_26 = { # Ean Segradde, Marcher mercenary that fought in the Elysian Pass
+	name = "Ean"
+	dna = ean
+	dynasty = dyn_marcher_30
+	religion = "lifepath"
+	culture = "salisians"
+	disallow_random_traits = yes
+	
+	martial = 4
+	diplomacy = 4
+	stewardship = 5
+	intrigue = 7
+	learning = 2
+	prowess = 6
+
+	1221.6.22 = {
+		birth = yes
+	}
+
+	1233.1.1 = {
+		trait = zealous
+		trait = compassionate
+		trait = paranoid
+	}
+
+	1237.6.22 = {
+		trait = education_martial_2
+		trait = cautious_leader
+		trait = way_of_swords_follower
+		trait = gh_historical_blademaster_2
+	}
+
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_marcher
+		trait = scarred
+		trait = lunatic_1 # Scarred for life by Elysian Pass
+		trait = depressed_1
+		effect = {
+			create_character_memory = { # Battle of the Elysian Pass
+				type = fought_in_elysian_pass_marcher
+			}
+		}
+	}
+
+	1253.12.1 = {
+		employer = salisians_lifepath_1
+	}
+}
+
+salisians_lifepath_27 = { # Sir Audohar, knight slain by the Lich Crasmer Crasvir
+	name = "Audohar"
+	religion = "lifepath"
+	culture = salisians
+	disallow_random_traits = yes
+
+	martial = 3
+	diplomacy = 6
+	stewardship = 6
+	intrigue = 7
+	learning = 4
+	prowess = 7
+
+	1121.6.27 = {
+		birth = yes
+		trait = physique_good_2
+	}
+
+	1133.1.1 = {
+		trait = content
+		trait = patient
+		trait = arrogant
+	}
+
+	1137.6.27 = {
+		trait = education_martial_1
+		trait = gh_historical_blademaster_1
+		trait = way_of_swords_follower
+	}
+
+	1143.3.25 = {
+		death = {
+			death_reason = death_lich_battle
+			killer = lich_culture_rejection_13 # Crasmer Crasvir
+		}
+	}
+}
+
+salisians_lifepath_28 = { # Hugobert Valadec, was not able to hold the throne of Marroux after his father's death, still ruled ably as Duc of Varusiex
+	name = "Hugobert"
+	religion = "lifepath"
+	culture = salisians
+	dynasty = dyn_marcher_16
+	disallow_random_traits = yes
+
+	father = salisians_lifepath_12
+
+	martial = 6
+	diplomacy = 7
+	stewardship = 9
+	intrigue = 5
+	learning = 6
+	prowess = 3
+
+	906.4.21 = {
+		birth = yes
+		trait = physique_good_2
+	}
+
+	918.1.1 = {
+		trait = craven
+		trait = gregarious
+		trait = ambitious
+	}
+
+	922.4.21 = {
+		trait = education_stewardship_3
+		trait = way_of_crowns_follower
+	}
+
+	985.2.7 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+salisians_lifepath_29 = { # Marcomer Valadec
+	name = "Marcomer"
+	religion = "lifepath"
+	culture = salisians
+	dynasty = dyn_marcher_16
+	disallow_random_traits = yes
+
+	father = salisians_lifepath_28
+
+	martial = 7
+	diplomacy = 7
+	stewardship = 11
+	intrigue = 5
+	learning = 6
+	prowess = 6
+
+	944.7.2 = {
+		birth = yes
+	}
+
+	956.1.1 = {
+		trait = honest
+		trait = generous
+		trait = paranoid
+	}
+
+	960.7.2 = {
+		trait = education_learning_1
+		trait = way_of_family_follower
+	}
+
+	1003.3.12 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+salisians_lifepath_30 = { # Lynet Valadec
+	name = "Lynet"
+	religion = "lifepath"
+	culture = salisians
+	dynasty = dyn_marcher_16
+	disallow_random_traits = yes
+
+	female = yes
+
+	father = salisians_lifepath_29
+
+	martial = 6
+	diplomacy = 4
+	stewardship = 7
+	intrigue = 7
+	learning = 7
+	prowess = 8
+
+	970.4.20 = {
+		birth = yes
+		trait = physique_good_1
+	}
+
+	982.1.1 = {
+		trait = ambitious
+		trait = humble
+		trait = forgiving
+	}
+
+	986.4.20 = {
+		trait = education_stewardship_2
+		trait = way_of_coins_follower
+	}
+
+	1025.2.9 = { # War of the Heretic Princes
+		death = {
+			death_reason = death_siege
+		}
+	}
+}
+
+salisians_lifepath_31 = { # Ansfrei Valadec, stabilized Marroux after the War of the Heretic Princes, thereafter known as Ansfrei the Able
+	name = "Ansfrei"
+	religion = "lifepath"
+	culture = salisians
+	dynasty = dyn_marcher_16
+	disallow_random_traits = yes
+
+	mother = salisians_lifepath_30
+
+	martial = 7
+	diplomacy = 3
+	stewardship = 7
+	intrigue = 7
+	learning = 2
+	prowess = 6
+
+	1004.6.20 = {
+		birth = yes
+		trait = intellect_good_2
+	}
+
+	1016.1.1 = {
+		trait = gregarious
+		trait = temperate
+		trait = patient
+	}
+
+	1020.6.20 = {
+		trait = education_diplomacy_4
+		trait = way_of_justice_follower
+		give_nickname = nick_the_able_ansfrei
+	}
+
+	1074.2.5 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+salisians_lifepath_32 = { # Seryc Valadec
+	name = "Seryc"
+	religion = "lifepath"
+	culture = salisians
+	dynasty = dyn_marcher_16
+	disallow_random_traits = yes
+
+	father = salisians_lifepath_31
+
+	martial = 8
+	diplomacy = 4
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	prowess = 6
+
+	1040.4.2 = {
+		birth = yes
+	}
+
+	1052.1.1 = {
+		trait = greedy
+		trait = callous
+		trait = arrogant
+	}
+
+	1056.4.2 = {
+		trait = education_diplomacy_2
+		trait = way_of_crowns_follower
+		trait = gh_historical_reveler_1
+	}
+
+	1090.7.6 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+salisians_lifepath_33 = { # Ansfrei II Valadec
+	name = "Ansfrei"
+	religion = "lifepath"
+	culture = salisians
+	dynasty = dyn_marcher_16
+	disallow_random_traits = yes
+
+	father = salisians_lifepath_32
+
+	martial = 8
+	diplomacy = 8
+	stewardship = 7
+	intrigue = 6
+	learning = 8
+	prowess = 6
+
+	1077.12.14 = {
+		birth = yes
+	}
+
+	1089.1.1 = {
+		trait = honest
+		trait = temperate
+		trait = trusting
+	}
+
+	1093.12.14 = {
+		trait = education_stewardship_3
+		trait = way_of_harvests_follower
+		trait = inappetetic
+	}
+
+	1117.11.6 = {
+		death = {
+			death_reason = death_malnourishment
+		}
+	}
+}
+
+salisians_lifepath_34 = { # Odel Monteaux, son of King Gofrei of Varrdevet, spirited away by loyal servants to the Isle of Lassoix after his father's death
+	name = "Odel"
+	religion = "lifepath"
+	culture = salisians
+	dynasty = dyn_marcher_17
+	disallow_random_traits = yes
+
+	father = salisians_lifepath_13
+
+	martial = 8
+	diplomacy = 8
+	stewardship = 3
+	intrigue = 6
+	learning = 6
+	prowess = 8
+
+	897.6.27 = {
+		birth = yes
+		trait = physique_good_1
+	}
+
+	909.1.1 = {
+		trait = humble
+		trait = shy
+		trait = zealous
+	}
+
+	913.6.27 = {
+		trait = education_diplomacy_3
+		trait = way_of_nullification_follower
+	}
+
+	961.3.2 = {
+		death = {
+			death_reason = death_cloven_in_half
+		}
+	}
+}
+
+salisians_lifepath_35 = { # Theudobert Monteaux, attempted to take over Irenux through guile but failed in the attempt
+	name = "Theudobert"
+	religion = "lifepath"
+	culture = salisians
+	dynasty = dyn_marcher_17
+	disallow_random_traits = yes
+
+	father = salisians_lifepath_34
+
+	martial = 6
+	diplomacy = 6
+	stewardship = 8
+	intrigue = 9
+	learning = 4
+	prowess = 4
+
+	937.8.19 = {
+		birth = yes
+	}
+
+	949.1.1 = {
+		trait = arbitrary
+		trait = fickle
+		trait = wrathful
+	}
+
+	953.8.19 = {
+		trait = education_intrigue_3
+		trait = way_of_family_follower
+		trait = shrewd
+	}
+
+	976.12.7 = {
+		death = {
+			death_reason = death_siege
+		}
+	}
+}
+
+salisians_lifepath_36 = { # Dageric Monteaux
+	name = "Dageric"
+	religion = "lifepath"
+	culture = salisians
+	dynasty = dyn_marcher_17
+	disallow_random_traits = yes
+
+	father = salisians_lifepath_35
+
+	martial = 10
+	diplomacy = 5
+	stewardship = 5
+	intrigue = 7
+	learning = 5
+	prowess = 7
+
+	971.11.23 = {
+		birth = yes
+		trait = intellect_bad_2
+	}
+
+	983.1.1 = {
+		trait = lustful
+		trait = diligent
+		trait = content
+	}
+
+	987.11.23 = {
+		trait = education_diplomacy_2
+		trait = way_of_family_follower
+	}
+
+	1037.11.28 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+salisians_lifepath_37 = { # Duc Marouil Monteaux, finally conquered Irenux
+	name = "Marouil"
+	religion = "lifepath"
+	culture = salisians
+	dynasty = dyn_marcher_17
+	disallow_random_traits = yes
+
+	father = salisians_lifepath_36
+
+	martial = 5
+	diplomacy = 4
+	stewardship = 5
+	intrigue = 6
+	learning = 5
+	prowess = 2
+
+	1005.4.19 = {
+		birth = yes
+		trait = physique_good_2
+	}
+
+	1017.1.1 = {
+		trait = brave
+		trait = stubborn
+		trait = patient
+	}
+
+	1021.4.19 = {
+		trait = education_martial_3
+		trait = way_of_crowns_follower
+	}
+
+	1066.11.25 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+salisians_lifepath_38 = { # Duc Perrit Monteaux, sus start, sus end
+	name = "Perrit"
+	religion = "lifepath"
+	culture = salisians
+	dynasty = dyn_marcher_17
+	disallow_random_traits = yes
+
+	father = salisians_lifepath_37
+
+	martial = 4
+	diplomacy = 4
+	stewardship = 7
+	intrigue = 10
+	learning = 7
+	prowess = 6
+
+	1040.3.4 = {
+		birth = yes
+	}
+
+	1052.1.1 = {
+		trait = sadistic
+		trait = greedy
+		trait = temperate
+	}
+
+	1056.3.4 = {
+		trait = education_intrigue_2
+		trait = way_of_swords_follower
+	}
+
+	1078.1.17 = {
+		death = {
+			death_reason = death_fall
+		}
+	}
+}
+
+salisians_lifepath_39 = { # Duc Hanouet Monteaux, began expansion into Marenoc
+	name = "Hanouet"
+	religion = "lifepath"
+	culture = salisians
+	dynasty = dyn_marcher_17
+	disallow_random_traits = yes
+
+	father = salisians_lifepath_38
+
+	martial = 5
+	diplomacy = 5
+	stewardship = 7
+	intrigue = 5
+	learning = 6
+	prowess = 7
+
+	1068.12.8 = {
+		birth = yes
+	}
+
+	1080.1.1 = {
+		trait = brave
+		trait = honest
+		trait = arrogant
+	}
+
+	1084.12.8 = {
+		trait = education_stewardship_3
+		trait = way_of_crowns_follower
+	}
+
+	1130.2.20 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+salisians_lifepath_40 = { # Duc Odel Monteaux, known as Odel the Opulent, completed conquest of Marenoc and built the Citadel of Swords, died in Chryse den va Seignon's conquest of Chevalie
+	name = "Odel"
+	religion = "lifepath"
+	culture = salisians
+	dynasty = dyn_marcher_17
+	disallow_random_traits = yes
+
+	father = salisians_lifepath_39
+
+	martial = 9
+	diplomacy = 4
+	stewardship = 6
+	intrigue = 5
+	learning = 6
+	prowess = 2
+
+	1095.5.17 = {
+		birth = yes
+		trait = intellect_good_2
+	}
+
+	1107.1.1 = {
+		trait = ambitious
+		trait = impatient
+		trait = callous
+	}
+
+	1111.5.17 = {
+		trait = education_stewardship_4
+		trait = way_of_crowns_follower
+		trait = avaricious
+		give_nickname = nick_the_opulent_odel
+	}
+
+	1151.7.2 = { #Chryse den va Seignon's invasion of Chevalie
+		death = {
+			death_reason = death_siege
+			killer = voyagen_lifepath_23
+		}
+	}
+}
+
+salisians_lifepath_41 = { # Duc Seyres Monteaux, hated the Seignons, and raised his son to be the same
+	name = "Seyres"
+	religion = "lifepath"
+	culture = salisians
+	dynasty = dyn_marcher_17
+	disallow_random_traits = yes
+
+	father = salisians_lifepath_40
+
+	martial = 6
+	diplomacy = 6
+	stewardship = 7
+	intrigue = 7
+	learning = 11
+	prowess = 2
+
+	1127.7.20 = {
+		birth = yes
+	}
+
+	1139.1.1 = {
+		trait = stubborn
+		trait = vengeful
+		trait = greedy
+	}
+
+	1143.7.20 = {
+		trait = education_learning_3
+		trait = way_of_coins_follower
+		trait = irritable
+	}
+
+	1184.11.20 = {
+		death = {
+			death_reason = death_stress
+		}
+	}
+}
+
+salisians_lifepath_42 = { # Varusiex forest vassal
+	name = "Manohar"
+	religion = "lifepath"
+	culture = salisians
+	dynasty = dyn_marcher_40
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 5
+	stewardship = 8
+	intrigue = 7
+	learning = 5
+	prowess = 5
+
+	1180.9.20 = {
+		birth = yes
+	}
+
+	1192.1.1 = {
+		trait = stubborn
+		trait = vengeful
+		trait = temperate
+	}
+
+	1196.9.20 = {
+		trait = education_martial_2
+		trait = way_of_crows_follower
+		trait = forest_fighter
+	}
+
+	1225.7.11 = { # Black-Gold War, Varusiex Campaign
+		death = {
+			death_reason = death_battle
+			killer = voyagen_lifepath_1
+		}
+	}
+}
+
+salisians_lifepath_43 = {
+	name = "Seryc"
+	religion = "lifepath"
+	culture = salisians
+	dynasty = dyn_marcher_40
+	disallow_random_traits = yes
+
+	father = salisians_lifepath_42
+
+	martial = 6
+	diplomacy = 5
+	stewardship = 7
+	intrigue = 5
+	learning = 8
+	prowess = 4
+
+	1211.9.3 = {
+		birth = yes
+	}
+
+	1223.1.1 = {
+		trait = trusting
+		trait = patient
+		trait = temperate
+	}
+
+	1227.9.3 = {
+		trait = education_learning_3
+		trait = way_of_crows_follower
+		trait = lifestyle_herbalist
+	}
+}
+
+salisians_lifepath_44 = { # Varusiex hill vassal, slain in Black-Gold War
+	name = "Theufrei"
+	religion = "lifepath"
+	culture = salisians
+	dynasty = dyn_marcher_41
+	disallow_random_traits = yes
+
+	martial = 3
+	diplomacy = 4
+	stewardship = 7
+	intrigue = 5
+	learning = 8
+	prowess = 3
+
+	1183.5.20 = {
+		birth = yes
+	}
+
+	1195.1.1 = {
+		trait = content
+		trait = sadistic
+		trait = gregarious
+	}
+
+	1199.5.20 = {
+		trait = education_diplomacy_4
+		trait = way_of_coins_follower
+	}
+
+	1222.5.20 = { # Black-Gold War, Varusiex Campaign
+		death = {
+			death_reason = death_battle
+			killer = trustians_lifepath_29
+		}
+	}
+}
+
+salisians_lifepath_45 = { # Michon Andreaux, author of the book 'On Womanly Knights'
+    name = "Michon"
+    religion = "lifepath"
+    culture = "salisians"
+
+    dynasty = dyn_marcher_49
+    sexuality = heterosexual
+    dna = michon
+
+    martial = 5
+    diplomacy = 5
+    stewardship = 5
+    intrigue = 5
+    learning = 5
+    prowess = 6
+
+    1020.11.13 = {
+        birth = yes
+    }
+
+    1032.1.1 = {
+        trait = impatient
+        trait = fickle
+        trait = callous
+    }
+
+    1036.11.13 = {
+        effect = { set_base_arcana = { AMOUNT = 7 } }
+        trait = education_learning_3
+        trait = way_of_knowledge_follower
+        trait = journaller
+        trait = scholar
+    }
+
+   	1083.3.13 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}

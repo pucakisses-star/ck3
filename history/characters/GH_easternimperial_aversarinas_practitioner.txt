@@ -1,0 +1,60 @@
+﻿easternimperial_aversarinas_practitioner_1 = { # Magister Velaras 'Bleak Speaker', main instigator of the Blue Robe Revolt
+	name = "Velaras"
+	dynasty = dyn_aversarian_99
+	religion = aversarinas_practitioner
+	culture = easternimperial
+	disallow_random_traits = yes
+
+	dna = easternimperial_aversarinas_practitioner_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair=male_hair_western_02
+			custom_beards=male_beard_western_09
+		}
+	}
+
+	father = easternimperial_aironoian_aagiokrata_25
+
+	martial = 3
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 5
+	learning = 10
+	prowess = 6
+
+	1126.3.10 = {
+		birth = yes
+		trait = magic_good_6
+		trait = intellect_good_2
+	}
+
+	1138.1.1 = {
+		trait = arrogant
+		trait = stubborn
+		trait = wrathful
+	}
+
+	1142.3.10 = {
+		trait = education_arcana_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+		trait = scholar
+		trait = journaller
+	}
+
+	1172.11.22 = {
+		give_nickname = "nick_bleak_speaker"
+		trait = gh_glowing_eyes
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}

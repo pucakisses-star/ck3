@@ -1,0 +1,85 @@
+﻿yadaniya_vidvaookeyatra_1 = { # Navad Javhad, infamous Kashiryan scholar that was responsible for the Murtuy ka Varha
+    name = "Navad"
+    religion = "vidvaookeyatra"
+    culture = "yadaniya"
+    dynasty = dyn_yadaniya_1
+
+    sexuality = heterosexual
+    dna = navad
+
+    martial = 6
+    diplomacy = 9
+    stewardship = 6
+    intrigue = 9
+    learning = 7
+    prowess = 6
+
+    856.8.22 = {
+        birth = yes
+        trait = magic_good_5
+        trait = intellect_good_1
+    }
+
+    868.1.1 = {
+        trait = callous
+        trait = diligent
+        trait = arrogant
+    }
+
+    872.8.22 = {
+        effect = { set_base_arcana = { AMOUNT = 8 } }
+        trait = education_learning_3
+        trait = gh_historical_school
+        trait = scholar
+    }
+
+   	904.9.21 = {
+		death = {
+			death_reason = death_beaten_by_mob
+		}
+	}
+}
+
+yadaniya_vidvaookeyatra_2 = { # youngest Chief Scholar of Dorajpor in its history, was responsible for the Chojakaan ka Ghatada 
+    name = "Goggiraja"
+    religion = "vidvaookeyatra"
+    culture = "yadaniya"
+
+    sexuality = heterosexual
+
+    martial = 7
+    diplomacy = 5
+    stewardship = 9
+    intrigue = 6
+    learning = 7
+    prowess = 5
+
+    1005.5.2 = {
+        birth = yes
+        trait = magic_good_5
+        trait = intellect_good_2
+    }
+
+    1017.1.1 = {
+        trait = zealous
+        trait = brave
+        trait = greedy
+    }
+
+    1021.5.2 = {
+        effect = { set_base_arcana = { AMOUNT = 8 } }
+        trait = education_arcana_4
+        trait = gh_historical_school
+    }
+
+    1031.5.27 = { # Became chief scholar
+        trait = scholar
+    }
+
+    1038.10.20 = {
+        death = {
+            death_reason = death_duel
+            killer = karana_karitkarmaic_1
+        }
+    }
+}

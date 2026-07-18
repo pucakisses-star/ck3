@@ -1,0 +1,51 @@
+#d_arth = {
+#	1249.1.1 = {
+#		holder = meistras_oirigan_3
+#	}
+#	1230.1.1 = { change_development_level = 1 }
+#}
+d_vredynai = {
+	1168.11.11 = {
+		holder = skorikiakas_aversarinas_aagiokrata_1
+		liege = e_mayikprolollan
+		government = magocratic_government
+	}
+	1200.3.1 = {
+		holder = 0
+	}
+	1249.1.1 = {
+		holder = meistras_oirigan_2
+		liege = 0
+		government = feudal_government
+	}
+	1230.1.1 = { change_development_level = 2 }
+}
+
+d_mayik_mountain_1 = {
+	1.1.1 = {
+		holder = unsorted_17
+	}
+	40.2.21 = {
+		holder = 0
+	}
+}
+
+d_mayik_mountain_4 = {
+	1168.11.11 = {
+		holder = skorikiakas_aversarinas_aagiokrata_1
+		liege = e_mayikprolollan
+		government = magocratic_government
+	}
+	1200.3.1 = {
+		holder = 0
+	}
+}
+
+d_emiodi = {
+	1249.1.1 = {
+		government = magocratic_government
+		holder = practitioner_aversarinas_aagiokrata_11
+		liege = e_mayikprolollan
+	}
+	1230.1.1 = { change_development_level = 10 }
+}

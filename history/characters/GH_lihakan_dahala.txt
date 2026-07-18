@@ -1,0 +1,83 @@
+﻿lihakan_dahala_1 = { # Legendary blacksmith
+	name = "Dahasay"
+	religion = "dahala"
+	culture = "lihakan"
+
+	martial = 5
+	diplomacy = 4
+	intrigue = 7
+	stewardship = 5
+	learning = 5
+	prowess = 7
+
+	1177.7.23 = {
+		birth = yes
+		trait = intellect_good_3
+		trait = beauty_bad_3
+		trait = scaly
+	}
+
+	1189.1.1 = {
+		trait = diligent
+		trait = greedy
+		trait = brave
+	}
+
+	1193.7.23 = {
+		trait = education_learning_4
+		trait = architect
+		give_nickname = nick_bronzesinger
+	}
+
+	1242.12.21 = {
+		effect = {
+			create_character_memory = { # Ratarakaw
+				type = saw_ratarakaw
+			}
+		}
+	}
+}
+
+lihakan_dahala_2 = { # Duke of Tatau
+	name = "Tubad"
+	religion = "dahala"
+	culture = "lihakan"
+	dynasty = dyn_tanarka_5
+
+	martial = 5
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 5
+	learning = 5
+	prowess = 8
+
+	1207.9.15 = {
+		birth = yes
+	}
+
+	1219.1.1 = {
+		trait = stubborn
+		trait = patient
+		trait = wrathful
+	}
+
+	1223.9.15 = {
+		trait = education_stewardship_2
+	}
+
+	1243.2.3 = {
+		death = {
+			death_reason = death_battle
+			killer = banwagul_narina_1
+		}
+	}
+}
+
+lihakan_dahala_3 = { # Duke of Tatau
+	name = "Jakan"
+	religion = "dahala"
+	culture = "lihakan"
+	1223.4.16= {
+		birth = yes
+	}
+}

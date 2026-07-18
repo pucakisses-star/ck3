@@ -1,0 +1,140 @@
+﻿jakana_corkkattirkana_1 = {
+	name = "Eranga"
+	culture = "jakana"
+	religion = "corkkattirkana"
+
+	1213.1.14 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1229.1.14 = {
+		trait = shrewd
+		trait = education_learning_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:school_of_night_scrying }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1243.11.17 = {
+	    add_spouse = jakana_corkkattirkana_2
+	}
+
+	1252.11.11 = {
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = religious_rights
+				level = 1
+			}
+			vassal_contract_set_obligation_level = {
+				type = title_revocation_rights
+				level = 1
+			}
+		}
+	}
+
+	1269.6.23 = {
+	    death = { death_reason = death_natural_causes }
+	}
+}
+
+jakana_corkkattirkana_2 = {
+    name = "Manui" 
+    female = yes
+
+    religion = corkkattirkana
+    culture = jakana
+
+    sexuality = heterosexual
+
+    trait = callous
+    trait = forgiving
+    trait = arbitrary
+
+    1226.7.4 = {
+        birth = yes
+    }
+
+    1260.10.2 = {
+        death = { death_reason = death_ill }
+    }
+}
+
+jakana_corkkattirkana_3 = {
+    name = "Na_ilano" 
+
+    dynasty = dyn_pirate_coast_9
+    religion = corkkattirkana
+    culture = jakana
+
+    father = jakana_corkkattirkana_1
+    mother = jakana_corkkattirkana_2
+
+    sexuality = heterosexual
+
+    trait = ambitious
+    trait = arrogant
+    trait = cynical
+
+    1253.10.23 = {
+        birth = yes
+    }
+
+    1288.9.16 = {
+        add_spouse = jakana_corkkattirkana_4
+    }
+
+    1296.1.15 = {
+        death = { death_reason = death_crushed_by_elephant }
+    }
+}
+
+jakana_corkkattirkana_4 = {
+    name = "Puri" 
+    female = yes
+
+    religion = corkkattirkana
+    culture = jakana
+
+    sexuality = heterosexual
+
+    trait = arbitrary
+    trait = callous
+    trait = brave
+
+    1271.9.24 = {
+        birth = yes
+    }
+}
+
+jakana_corkkattirkana_5 = {
+    name = "Padai" 
+
+    dynasty = dyn_pirate_coast_9
+    religion = corkkattirkana
+    culture = jakana
+
+    father = jakana_corkkattirkana_3
+    mother = jakana_corkkattirkana_4
+
+    sexuality = heterosexual
+
+    1294.10.27 = {
+        birth = yes
+    }
+
+    1298.1.1 = {
+    	effect = {
+    		vassal_contract_set_obligation_level = {
+    			type = religious_rights
+    			level = 1
+    		}
+    		vassal_contract_set_obligation_level = {
+    			type = title_revocation_rights
+    			level = 1
+    		}
+    	}
+    }
+}

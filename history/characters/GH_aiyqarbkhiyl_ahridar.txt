@@ -1,0 +1,203 @@
+﻿aiyqarbkhiyl_ahridar_1 = { # Tiglath
+	name = "Tiglath"
+	dna = ahridar_1
+	religion = ahridar
+	culture = aiyqarbkhiyl
+	sexuality = heterosexual
+	dynasty = dyn_ahridar_1
+
+	diplomacy = 8
+	martial = 11
+	stewardship = 5
+	intrigue = 7
+	learning = 4
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_sub_saharan_01
+			custom_hair = no_hair
+		}
+	}
+
+	1182.5.19 = {
+		birth = yes
+	}
+	1182.5.20 = {
+		trait = magic_good_3
+	}
+	1198.5.19 = {
+		trait = zealous
+		trait = brave
+		trait = chaste
+		trait = ambitious
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:sungazers }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+	1217.3.28 = {
+		death = yes
+	}
+}
+
+aiyqarbkhiyl_ahridar_2 = { # Taduesz, Tiglath's incompetent son
+	name = "Taduesz"
+	dna = aiyqarbkhiyl_ahridar_2
+	religion = ahridar
+	culture = aiyqarbkhiyl
+	dynasty = dyn_ahridar_1
+
+	father = aiyqarbkhiyl_ahridar_1
+
+	diplomacy = 2
+	martial = 8
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_sub_saharan_03
+			custom_hair = male_hair_mena_01
+		}
+	}
+
+	1201.1.1 = {
+		birth = yes
+	}
+	1201.1.2 = {
+		trait = magic_good_1
+	}
+	1217.2.15 = {
+		trait = gluttonous
+		trait = greedy
+		trait = arrogant
+		trait = education_martial_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:sungazers }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+}
+
+aiyqarbkhiyl_ahridar_3 = {
+	name = "Ieshu"
+	religion = ahridar
+	culture = aiyqarbkhiyl
+	1208.1.1 = {
+		birth = yes
+	}
+	1224.1.1 = {
+		trait = stubborn
+		trait = callous
+		trait = humble
+	}
+}
+
+aiyqarbkhiyl_ahridar_4 = {
+	name = "Youkhanna"
+	religion = ahridar
+	culture = aiyqarbkhiyl
+	1184.2.12 = {
+		birth = yes
+	}
+	1255.7.8 = {
+		death = yes
+	}
+}
+
+aiyqarbkhiyl_ahridar_5 = {
+	name = "Mesrey"
+	religion = ahridar
+	culture = aiyqarbkhiyl
+	1205.10.24 = {
+		birth = yes
+	}
+	1269.4.9 = {
+		death = yes
+	}
+}
+
+aiyqarbkhiyl_ahridar_6 = {
+	name = "Iesdan"
+	religion = ahridar
+	culture = aiyqarbkhiyl
+	1201.9.17 = {
+		birth = yes
+	}
+	1248.11.1 = {
+		death = yes
+	}
+}
+
+aiyqarbkhiyl_ahridar_7 = {
+	name = "Jilwa"
+	religion = ahridar
+	culture = aiyqarbkhiyl
+	1197.7.4 = {
+		birth = yes
+	}
+	1245.10.20 = {
+		death = yes
+	}
+}
+
+aiyqarbkhiyl_ahridar_8 = {
+	name = "Ilaytmas"
+	religion = ahridar
+	culture = aiyqarbkhiyl
+	1195.3.17 = {
+		birth = yes
+	}
+	1255.5.3 = {
+		death = yes
+	}
+}
+
+aiyqarbkhiyl_ahridar_9 = {
+	name = "Ezena"
+	religion = ahridar
+	culture = aiyqarbkhiyl
+	1197.7.27 = {
+		birth = yes
+	}
+	1249.4.20 = {
+		death = yes
+	}
+}
+
+aiyqarbkhiyl_ahridar_10 = {
+	name = "Afoud"
+	religion = ahridar
+	culture = aiyqarbkhiyl
+	1188.6.27 = {
+		birth = yes
+	}
+	1257.8.10 = {
+		death = yes
+	}
+}
+
+aiyqarbkhiyl_ahridar_11 = {
+	name = "Badaz"
+	religion = ahridar
+	culture = aiyqarbkhiyl
+	1204.10.27 = {
+		birth = yes
+	}
+	1261.4.13 = {
+		death = yes
+	}
+}
+
+aiyqarbkhiyl_ahridar_12 = {
+	name = "Aserdhil"
+	religion = ahridar
+	culture = aiyqarbkhiyl
+	1183.10.11 = {
+		birth = yes
+	}
+	1255.9.24 = {
+		death = yes
+	}
+}

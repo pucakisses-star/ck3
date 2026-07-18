@@ -1,0 +1,36 @@
+﻿guillater_shattered_stars_cult_1 = {
+	name = "Kynthos"
+	religion = sacred_stars_cult
+	culture = guillater
+	1217.9.26 = {
+		birth = yes
+	}
+	1229.9.26 = {
+		trait = vengeful
+		trait = impatient
+		trait = zealous
+	}
+	1233.9.26 = {
+		trait = athletic
+		trait = education_martial_3
+		trait = gh_historical_blademaster_2
+	}
+}
+
+guillater_shattered_stars_cult_2 = {
+	name = "Engilbert"
+	religion = shattered_stars_cult
+	culture = guillater
+	trait = shrewd
+	1232.2.27 = {
+		birth = yes
+	}
+	1244.2.27 = {
+		trait = patient
+		trait = zealous
+		trait = honest
+	}
+	1248.2.27 = {
+		trait = education_learning_3
+	}
+}

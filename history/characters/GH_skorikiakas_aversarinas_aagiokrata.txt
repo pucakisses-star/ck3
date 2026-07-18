@@ -1,0 +1,443 @@
+﻿skorikiakas_aversarinas_aagiokrata_1 = { # Magister Ilion Drevagda
+	name = "Ilion"
+	religion = aversarinas_aagiokrata
+	culture = skorikiakas
+	disallow_random_traits = yes
+	dynasty = dyn_central_empire_28
+
+	father = skorikiakas_aversarinas_aagiokrata_2
+
+	martial = 9
+	diplomacy = 2
+	intrigue = 7
+	stewardship = 4
+	learning = 3
+	prowess = 4
+
+	1141.8.9 = {
+		birth = yes
+		trait = magic_good_6
+		trait = intellect_good_1
+	}
+
+	1153.1.1 = {
+		trait = arrogant
+		trait = wrathful
+		trait = cynical
+	}
+
+	1157.8.9 = {
+		trait = gh_glowing_veins
+		# trait = gh_boneshape # GH UREGNT: Removed, replace these with modifiersd_strong_1
+		trait = education_arcana_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+skorikiakas_aversarinas_aagiokrata_2 = { # Despexir Varios Drevagda
+	name = "Varios"
+	religion = aversarinas_aagiokrata
+	culture = skorikiakas
+	disallow_random_traits = yes
+	dynasty = dyn_central_empire_28
+
+	martial = 5
+	diplomacy = 4
+	intrigue = 6
+	stewardship = 5
+	learning = 3
+	prowess = 6
+
+	1110.8.11 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1122.1.1 = {
+		trait = arrogant
+		trait = stubborn
+		trait = honest
+	}
+
+	1126.8.11 = {
+		trait = education_stewardship_4
+		trait = administrator
+	}
+
+	1170.7.27 = {
+		death = {
+			death_reason = death_assassination
+		}
+	}
+}
+
+skorikiakas_aversarinas_aagiokrata_3 = { # Despexir Volax Drevagda
+	name = "Volax"
+	religion = aversarinas_aagiokrata
+	culture = skorikiakas
+	disallow_random_traits = yes
+	dynasty = dyn_central_empire_28
+
+	father = skorikiakas_aversarinas_aagiokrata_2
+
+	martial = 6
+	diplomacy = 8
+	intrigue = 3
+	stewardship = 8
+	learning = 6
+	prowess = 6
+
+	1135.1.14 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1147.1.1 = {
+		trait = chaste
+		trait = paranoid
+		trait = zealous
+	}
+
+	1151.1.14 = {
+		trait = education_martial_1
+		trait = holy_warrior
+	}
+
+	1203.6.25 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+skorikiakas_aversarinas_aagiokrata_4 = { # Despexa Ixrina Drevagda
+	name = "Ixrina"
+	religion = aversarinas_aagiokrata
+	culture = skorikiakas
+	disallow_random_traits = yes
+	dynasty = dyn_central_empire_28
+	female = yes
+
+	father = skorikiakas_aversarinas_aagiokrata_3
+
+	martial = 8
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 3
+	learning = 5
+	prowess = 5
+
+	1173.11.14 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1185.1.1 = {
+		trait = brave
+		trait = lazy
+		trait = just
+	}
+
+	1189.11.14 = {
+		trait = education_martial_3
+		trait = reckless
+	}
+
+	1234.12.30 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+skorikiakas_aversarinas_aagiokrata_5 = { # Despexir Gavlian Drevagda, died in the Battle of Ten Trees
+	name = "Gavlian"
+	religion = aversarinas_aagiokrata
+	culture = skorikiakas
+	disallow_random_traits = yes
+	dynasty = dyn_central_empire_28
+
+	mother = skorikiakas_aversarinas_aagiokrata_4
+
+	martial = 4
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 6
+	learning = 4
+	prowess = 7
+
+	1194.8.28 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1206.1.1 = {
+		trait = diligent
+		trait = impatient
+		trait = zealous
+	}
+
+	1210.8.28 = {
+		trait = education_martial_1
+		trait = aggressive_attacker
+	}
+
+	1247.3.15 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+skorikiakas_aversarinas_aagiokrata_6 = { # Ludic Drevagda, died in the Battle of Ten Trees
+	name = "Ludic"
+	religion = aversarinas_aagiokrata
+	culture = skorikiakas
+	disallow_random_traits = yes
+	dynasty = dyn_central_empire_28
+
+	father = skorikiakas_aversarinas_aagiokrata_5
+
+	martial = 9
+	diplomacy = 7
+	intrigue = 4
+	stewardship = 4
+	learning = 4
+	prowess = 5
+
+	1221.7.29 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1233.1.1 = {
+		trait = generous
+		trait = shy
+		trait = sadistic
+	}
+
+	1237.7.29 = {
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1247.3.15 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+skorikiakas_aversarinas_aagiokrata_7 = { # Sevxa Drevagda, last survivor of her dynasty, living in exile at Skyympene
+	name = "Sevxa"
+	religion = aversarinas_aagiokrata
+	culture = skorikiakas
+	disallow_random_traits = yes
+	dynasty = dyn_central_empire_28
+	female = yes
+
+	father = skorikiakas_aversarinas_aagiokrata_5
+
+	martial = 8
+	diplomacy = 8
+	intrigue = 7
+	stewardship = 7
+	learning = 3
+	prowess = 3
+
+	1230.11.4 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1242.1.1 = {
+		trait = fickle
+		trait = arbitrary
+		trait = patient
+	}
+
+	1246.11.4 = {
+		trait = education_diplomacy_1
+	}
+
+	#1247.3.15 = { ##Is landed cannot be employed
+	#	employer = centralimperial_aversarinas_aagiokrata_119
+	#}
+}
+
+skorikiakas_aversarinas_aagiokrata_8 = { # Ilrig Bled-Bane's mother
+	name = "Xidaria"
+	religion = aversarinas_aagiokrata
+	culture = skorikiakas
+	disallow_random_traits = yes
+	dynasty = dyn_aversarian_133
+	female = yes
+
+	father = skorikiakas_aversarinas_aagiokrata_9
+
+	martial = 5
+	diplomacy = 4
+	intrigue = 6
+	stewardship = 4
+	learning = 6
+	prowess = 4
+
+	1020.11.21 = {
+		birth = yes
+		trait = magic_good_7
+	}
+
+	1032.1.1 = {
+		trait = chaste
+		trait = compassionate
+		trait = arrogant
+	}
+
+	1036.11.4 = {
+		trait = education_learning_1
+	}
+
+	1065.1.24 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+skorikiakas_aversarinas_aagiokrata_9 = { # Ilrig Bled-Bane's grandfather
+	name = "Ilrig"
+	religion = aversarinas_aagiokrata
+	culture = skorikiakas
+	disallow_random_traits = yes
+	dynasty = dyn_aversarian_133
+
+	martial = 7
+	diplomacy = 7
+	intrigue = 11
+	stewardship = 5
+	learning = 6
+	prowess = 6
+
+	1000.10.11 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	1012.1.1 = {
+		trait = honest
+		trait = generous
+		trait = paranoid
+	}
+
+	1016.10.11 = {
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1062.10.14 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+skorikiakas_aversarinas_aagiokrata_10 = {
+	name = "Vroxiv"
+	religion = aversarinas_aagiokrata
+	culture = skorikiakas
+
+	1257.10.5 = {
+		birth = yes
+	}
+}
+skorikiakas_aversarinas_aagiokrata_11 = {
+	name = "Xaniane"
+	religion = aversarinas_aagiokrata
+	culture = skorikiakas
+	female = yes
+
+	1255.6.23 = {
+		birth = yes
+	}
+	
+}
+
+skorikiakas_aversarinas_aagiokrata_12 = {
+	name = "Ixrian"
+	religion = aversarinas_aagiokrata
+	culture = skorikiakas
+
+	1250.3.27 = {
+		birth = yes
+	}
+}
+
+skorikiakas_aversarinas_aagiokrata_13 = {
+	name = "Rhiliana"
+	religion = aversarinas_aagiokrata
+	culture = skorikiakas
+
+	1248.8.30 = {
+		birth = yes
+	}
+}
+
+skorikiakas_aversarinas_aagiokrata_14 = { # Bryn Archos Aldanawodizi, cartographer-initiate slain by the Aesch-aligned Order of the Pureblood
+	name = "Bryn_Archos"
+	religion = "aversarinas_aagiokrata"
+	culture = "skorikiakas"
+
+	dynasty = dyn_aversarian_157 # Skorikiakas house descended from ancient Karz nobility
+	sexuality = heterosexual
+	dna = bryn
+
+	martial = 8
+	diplomacy = 4
+	stewardship = 5
+	intrigue = 6
+	learning = 9
+	prowess = 8
+
+	1155.10.2 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1167.1.1 = {
+		trait = impatient
+		trait = stubborn
+		trait = gregarious
+	}
+
+	1171.10.2 = {
+		effect = { set_base_arcana = { AMOUNT = 4 } }
+		trait = education_learning_3
+		trait = journaller
+	}
+
+	1187.2.20 = {
+		death = {
+			death_reason = death_strangled_with_own_intestines
+			killer = islander_aversarinas_aagiokrata_145
+		}
+	}
+}

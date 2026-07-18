@@ -1,0 +1,79 @@
+c_east_sarradon14 = {
+	1230.1.1 = {
+		holder = surugin_ehatm_11
+		government = tribal_government
+	}
+}
+#c_idalitus = {
+#	1230.1.1 = {
+#		holder = surugin_ehatm_11
+#		government = tribal_government
+#	}
+#}
+#c_kyriton = {
+#	1230.1.1 = {
+#		holder = surugin_ehatm_4
+#		government = tribal_government
+#	}
+#}
+#c_amarion = {
+#	1230.1.1 = {
+#		holder = surugin_ehatm_4
+#		government = tribal_government
+#	}
+#}
+c_kouhos = {
+	1230.1.1 = {
+		holder = surugin_ehatm_4
+		government = tribal_government
+	}
+}
+c_kouris = {
+	1230.1.1 = {
+		holder = surugin_ehatm_3
+		government = tribal_government
+	}
+}
+#c_chytassos = {
+#	1230.1.1 = {
+#		holder = surugin_ehatm_6
+#		government = tribal_government
+#	}
+#}
+c_kourithos = {
+	1230.1.1 = {
+		holder = surugin_ehatm_6
+		government = tribal_government
+	}
+}
+c_tamasol = {
+	1230.1.1 = {
+		holder = surugin_ehatm_7
+		government = tribal_government
+	}
+}
+#c_kokkrinagusta = {
+#	1230.1.1 = {
+#		holder = surugin_ehatm_7
+#		government = tribal_government
+#	}
+#}
+c_tamarenia = {
+	1230.1.1 = {
+		holder = tlakalak_uakaklo_1
+		government = theocracy_government
+	}
+}
+c_salmito = {
+	1230.1.1 = {
+		holder = tlakalak_uakaklo_1
+		government = theocracy_government
+	}
+}
+#c_papaca = {
+#	1230.1.1 = {
+#		holder = tlakalak_uakaklo_2
+#		government = tribal_government
+#		liege = d_uakaklo_rel
+#	}
+#}

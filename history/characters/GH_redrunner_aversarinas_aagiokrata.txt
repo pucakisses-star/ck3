@@ -1,0 +1,776 @@
+﻿redrunner_aversarinas_aagiokrata_15 = { 
+	# Former governor who purchased his title from redrunner_aversarinas_aagiokrata_17
+	name = "Lykaon"
+	dynasty = dyn_redrunner_aversarinas_aagiokrata_1
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+	sexuality = heterosexual
+	female = no
+	
+	diplomacy = 4
+	intrigue = 6
+	learning = 3
+	martial = 2
+	stewardship = 5
+
+	1200.5.15 = {
+		birth = yes
+	}
+	1225.6.1 = {
+		trait = ambitious
+		trait = greedy
+		trait = deceitful
+	}
+	1228.2.15 = {
+		trait = education_stewardship_3
+	}
+	1230.8.10 = {
+		add_spouse = redrunner_aversarinas_aagiokrata_16  # Married to Theophana
+	}
+	1248.8.20 = {
+		death = { death_reason = death_hunting_accident }
+	}
+}
+
+
+
+redrunner_aversarinas_aagiokrata_16 = { 
+	name = "Theophana"
+	dynasty = dyn_redrunner_aversarinas_aagiokrata_1
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+	sexuality = heterosexual
+	female = yes
+
+	diplomacy = 5
+	intrigue = 2
+	learning = 6
+	martial = 1
+	stewardship = 4
+
+	1205.8.10 = {
+		birth = yes
+	}
+	1225.3.1 = {
+		trait = zealous
+		trait = compassionate
+		trait = stubborn
+	}
+	1228.2.15 = {
+		trait = education_learning_3
+	}
+	1230.8.10 = {
+		add_spouse = redrunner_aversarinas_aagiokrata_15  # Married to Lykaon
+	}
+	1250.12.5 = {
+		death = { death_reason = death_viciously_dismembered }
+	}
+}
+
+
+# Greskos Kallistos, son of the previous magistrate of the Redlands (who himself purchased the title from his predecessor)
+# Incompetent and not suited in the slightest for the disastrous predicament the redrunner colonies are in. Extra unfortunately, lacks self-awareness of this.
+
+redrunner_aversarinas_aagiokrata_1 = { # son of the last governor who purchased his title from the other governor, freaking the fuck out, hardly keeping the cults down, not at all suited for this job, probably a dick
+	name = "Greskos"
+	dynasty = dyn_redrunner_aversarinas_aagiokrata_1
+	religion = "aversarinas_aagiokrata"
+	female = no
+	culture = "redrunner"
+	sexuality = heterosexual
+	father = redrunner_aversarinas_aagiokrata_15 
+	mother = redrunner_aversarinas_aagiokrata_16
+	
+	diplomacy = 2
+	intrigue = 0
+	learning = 1
+	martial = 0
+	stewardship = 2
+
+	1232.2.21 = {
+		birth = yes
+	}
+	1244.1.1 = {
+		trait = arrogant
+		trait = fickle
+		trait = trusting
+	}
+	1248.2.21 = {
+		trait = education_stewardship_1
+	}
+}
+
+redrunner_aversarinas_aagiokrata_2 = {
+	name = "Gerasimos"
+	culture = "redrunner"
+	religion = "aversarinas_aagiokrata"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+redrunner_aversarinas_aagiokrata_3 = { # rich merchant who has broken off for that fat stacks
+	name = "Begrosthea" #Renamed from the male Bergrosthos. TRANS
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+	female = yes
+
+	1221.4.14 = {
+		birth = yes
+	}
+}
+
+redrunner_aversarinas_aagiokrata_4 = {
+	name = "Pantoleon"
+	culture = "redrunner"
+	religion = "aversarinas_aagiokrata"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+redrunner_aversarinas_aagiokrata_5 = {
+	name = "Rhadas"
+	culture = "redrunner"
+	religion = "aversarinas_aagiokrata"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+redrunner_aversarinas_aagiokrata_6 = {
+	name = "Amongios"
+	culture = "redrunner"
+	religion = "aversarinas_aagiokrata"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+redrunner_aversarinas_aagiokrata_7 = {
+	name = "Kalthios"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+redrunner_aversarinas_aagiokrata_8 = { # aversarian warlord who has gone tribal
+	name = "Henlacin"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+	female = yes
+
+	1224.11.15 = {
+		birth = yes
+	}
+}
+
+redrunner_aversarinas_aagiokrata_9 = { # Olymphoras, noble legan in the Redlands desperately trying to keep some semblance of order on the mainland and prevent it from falling to cultists. trying to take a city back from some pirate fuck before she gets eaten.
+	name = "Olymphoras"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+	female = yes
+
+	1219.2.25 = {
+		birth = yes
+	}
+	1231.1.1 = {
+		trait = brave
+		trait = wrathful
+		trait = honest
+	}
+	1235.2.25 = {
+		trait = education_martial_3
+	}
+	1250.3.14 = {
+		trait = gh_legon
+	}
+	1253.12.11 = {
+		trait = wounded_2 # Hit by Cultists
+	}
+}
+
+redrunner_aversarinas_aagiokrata_10 = { # dumbfuck local notable about to be eaten by cultists
+	name = "Norassos"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+
+	1231.5.16 = {
+		birth = yes
+	}
+}
+
+redrunner_aversarinas_aagiokrata_11 = { # Legon Hexon Laxapiodes of Legio XXI 'Heartrenders', slain at the Three Cities War
+	name = "Hexon"
+	religion = aversarinas_aagiokrata
+	culture = redrunner
+	dynasty = dyn_aversarian_107
+	disallow_random_traits = yes
+
+	martial = 3
+	diplomacy = 6
+	intrigue = 10
+	stewardship = 6
+	learning = 10
+	prowess = 11
+
+	1161.8.10 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1173.1.1 = {
+		trait = brave
+		trait = vengeful
+		trait = shy
+	}
+
+	1177.8.10 = {
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+		trait = gh_glowing_veins
+		trait = gh_legon
+	}
+
+	1186.2.1 = {
+		death = { 
+			death_reason = death_battle
+			killer = easternimperial_aironoian_aagiokrata_63 # Aelitios Bhatajarrax
+		}
+	}
+}
+
+redrunner_aversarinas_aagiokrata_12 = {
+	name = "Athkanox"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+
+	1220.9.9 = {
+		birth = yes
+	}
+}
+
+redrunner_aversarinas_aagiokrata_13 = {
+	name = "Phraathios"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+
+	1211.1.2 = {
+		birth = yes
+	}
+}
+
+redrunner_aversarinas_aagiokrata_14 = {
+	name = "Selagus"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+
+	1221.12.16 = {
+		birth = yes
+	}
+}
+
+redrunner_aversarinas_aagiokrata_17 = { 
+	# Former governor who sold his title to Lykaon, possibly due to financial troubles or political pressure.
+	name = "Kleon"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+	sexuality = heterosexual
+	
+	diplomacy = 3
+	intrigue = 4
+	learning = 2
+	martial = 1
+	stewardship = 6
+
+	1175.4.12 = {
+		birth = yes
+	}
+	1200.5.20 = {
+		trait = ambitious
+		trait = paranoid
+		trait = greedy
+	}
+	1205.6.15 = { # presumably inherits the d_kurdirik title before 1220
+		trait = education_stewardship_3
+	}
+
+	1250.11.10 = {
+		death = { death_reason = death_disappearance }
+	}
+}
+
+redrunner_aversarinas_aagiokrata_18 = {
+	name = "Telanus"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+
+	1180.05.10 = {
+		birth = yes
+	}
+	1208.07.01 = {
+		death = { death_reason = death_heart_ripped_out }
+	}
+}
+
+redrunner_aversarinas_aagiokrata_19 = {
+	name = "Aristophis"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+
+	1185.03.22 = {
+		birth = yes
+	}
+	1216.11.15 = {
+		death = { death_reason = death_viciously_dismembered }
+	}
+}
+
+redrunner_aversarinas_aagiokrata_20 = {
+	name = "Eumathius"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+
+	1190.11.11 = {
+		birth = yes
+	}
+	1225.04.10 = {
+		death =  { death_reason = death_skull_cracked_open }
+	}
+}
+
+redrunner_aversarinas_aagiokrata_21 = {
+	name = "Pheron"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+
+	1195.08.24 = {
+		birth = yes
+	}
+	1232.03.25 = {
+		death = { death_reason = death_decapitated }
+	}
+}
+
+redrunner_aversarinas_aagiokrata_22 = {
+	name = "Lycander"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+
+	1200.02.19 = {
+		birth = yes
+	}
+	1235.12.01 = {
+		death = { death_reason = death_ripped_apart_limb_by_limb }
+	}
+}
+
+redrunner_aversarinas_aagiokrata_23 = {
+	name = "Nearchus"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+
+	1202.09.15 = {
+		birth = yes
+	}
+	1238.05.17 = {
+		death = { death_reason = death_strangled_with_own_intestines }
+	}
+}
+
+redrunner_aversarinas_aagiokrata_24 = {
+	name = "Theonides"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+
+	1228.08.19 = {
+		birth = yes
+	}
+	1240.01.01 = {
+		death = { death_reason = death_murder }
+	}
+}
+
+redrunner_aversarinas_aagiokrata_25 = {
+	name = "Meleander"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+
+	1230.11.06 = {
+		birth = yes
+	}
+	1240.04.15 = {
+		death = { death_reason = death_execution }
+	}
+}
+
+redrunner_aversarinas_aagiokrata_26 = {
+	name = "Erastus"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+	martial = 19
+	prowess = 21
+	stewardship = 12
+	learning = 17
+	intrigue = 14
+	diplomacy = 22
+
+	710.06.12 = {
+		birth = yes
+	}
+
+	726.06.12 = {
+		trait = gh_legon
+		trait = education_martial_3
+	}
+
+	776.12.31 = {
+		death = { death_reason = death_smallpox }
+	}
+
+	disallow_random_traits = yes
+}
+
+redrunner_aversarinas_aagiokrata_27 = {
+	name = "Xanthus"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+	martial = 17
+	prowess = 19
+	stewardship = 10
+	learning = 15
+	intrigue = 18
+	diplomacy = 24
+
+	750.09.17 = {
+		birth = yes
+	}
+
+	766.09.17 = {
+		trait = gh_legon
+		trait = education_martial_4
+	}
+
+	821.03.15 = {
+		death = { death_reason = death_battle }
+	}
+
+	disallow_random_traits = yes
+}
+
+redrunner_aversarinas_aagiokrata_28 = {
+	name = "Mithradates"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+	martial = 20
+	prowess = 22
+	stewardship = 11
+	learning = 18
+	intrigue = 19
+	diplomacy = 21
+
+	795.04.20 = {
+		birth = yes
+	}
+
+	811.04.20 = {
+		trait = gh_legon
+		trait = education_martial_3
+	}
+
+	875.07.01 = {
+		death = { death_reason = death_piteously_cut_down }
+	}
+
+	disallow_random_traits = yes
+}
+
+redrunner_aversarinas_aagiokrata_29 = {
+	name = "Polyxenus"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+	martial = 18
+	prowess = 20
+	stewardship = 14
+	learning = 16
+	intrigue = 20
+	diplomacy = 23
+
+	850.01.23 = {
+		birth = yes
+	}
+
+	866.01.23 = {
+		trait = gh_legon
+		trait = education_martial_4
+	}
+
+	932.10.15 = {
+		death = { death_reason = death_heart_ripped_out }
+	}
+
+	disallow_random_traits = yes
+}
+
+redrunner_aversarinas_aagiokrata_30 = {
+	name = "Aretas"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+	martial = 22
+	prowess = 24
+	stewardship = 13
+	learning = 20
+	intrigue = 17
+	diplomacy = 19
+
+	900.02.11 = {
+		birth = yes
+	}
+
+	916.02.11 = {
+		trait = gh_legon
+		trait = education_martial_5
+		trait = giant
+		trait = physique_good_3
+	}
+
+	982.12.25 = {
+		death = { death_reason = death_execution }
+	}
+
+	disallow_random_traits = yes
+}
+
+redrunner_aversarinas_aagiokrata_31 = {
+	name = "Seleucus"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+	martial = 21
+	prowess = 23
+	stewardship = 15
+	learning = 19
+	intrigue = 16
+	diplomacy = 25
+
+	950.05.05 = {
+		birth = yes
+	}
+
+	966.05.05 = {
+		trait = gh_legon
+		trait = education_martial_4
+	}
+
+	1042.06.12 = {
+		death = { death_reason = death_typhus }
+	}
+
+	disallow_random_traits = yes
+}
+
+redrunner_aversarinas_aagiokrata_32 = {
+	name = "Antigonus"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+	martial = 19
+	prowess = 21
+	stewardship = 12
+	learning = 17
+	intrigue = 18
+	diplomacy = 22
+
+	1000.08.19 = {
+		birth = yes
+	}
+
+	1016.08.19 = {
+		trait = gh_legon
+		trait = education_martial_3
+	}
+
+	1098.11.27 = {
+		death = { death_reason = death_battle }
+	}
+
+	disallow_random_traits = yes
+}
+
+redrunner_aversarinas_aagiokrata_33 = {
+	name = "Aristodemus"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+	martial = 20
+	prowess = 25
+	stewardship = 11
+	learning = 18
+	intrigue = 21
+	diplomacy = 20
+
+	1050.12.02 = {
+		birth = yes
+	}
+
+	1066.12.02 = {
+		trait = gh_legon
+		trait = education_martial_4
+		trait = giant
+		trait = physique_good_3
+	}
+
+	1150.05.04 = {
+		death = { death_reason = death_typhus }
+	}
+
+	disallow_random_traits = yes
+}
+
+redrunner_aversarinas_aagiokrata_34 = {
+	name = "Agathocles"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+	martial = 18
+	prowess = 15
+	stewardship = 10
+	learning = 14
+	intrigue = 16
+	diplomacy = 15
+
+	1110.03.15 = {
+		birth = yes
+	}
+
+	1126.03.15 = {
+		trait = gh_legon
+		trait = education_martial_3
+	}
+
+	1203.08.18 = {
+		death = { death_reason = death_cloven_in_half }
+	}
+
+	disallow_random_traits = yes
+}
+
+redrunner_aversarinas_aagiokrata_35 = {
+	name = "Pericles"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+	martial = 23
+	prowess = 25
+	stewardship = 15
+	learning = 21
+	intrigue = 19
+	diplomacy = 24
+
+	1165.10.08 = {
+		birth = yes
+	}
+
+	1181.10.08 = {
+		trait = gh_legon
+		trait = education_martial_4
+	}
+
+	1247.03.01 = {
+		death = { 
+			death_reason = death_battle
+			killer = tretosai_aversarinas_aagiokrata_2
+		}
+	}
+	disallow_random_traits = yes
+}
+
+redrunner_aversarinas_aagiokrata_36 = {
+	name = "Diogenes"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+	martial = 24
+	prowess = 14
+	stewardship = 9
+	learning = 12
+	intrigue = 15
+	diplomacy = 18
+
+	1200.12.25 = {
+		birth = yes
+	}
+
+	1216.12.25 = {
+		trait = education_martial_3
+	}
+
+	1235.12.01 = {
+		death = { death_reason = death_skull_cracked_open }
+	}
+
+	disallow_random_traits = yes
+}
+
+redrunner_aversarinas_aagiokrata_37 = {
+	name = "Euphronios"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+
+	1210.08.11 = {
+		birth = yes
+	}
+
+	1247.3.26 = {
+		death = { 
+			death_reason = death_sacrificed_to_gods
+			killer = redlander_elated_victim_1
+		}
+	}
+}
+
+redrunner_aversarinas_aagiokrata_38 = {
+	name = "Zenon"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+
+	1225.03.02 = {
+		birth = yes
+	}
+
+	1250.01.01 = {
+		death = { death_reason = death_sacrificed_to_gods }
+	}  
+}
+
+redrunner_aversarinas_aagiokrata_39 = {
+	name = "Callisthenes"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+
+	1200.11.17 = {
+		birth = yes
+	}
+
+	1237.3.28 = {
+		death = { death_reason = death_sacrificed_to_gods }
+	}  
+}
+
+
+redrunner_aversarinas_aagiokrata_40 = {
+	name = "Demetrios"
+	religion = "aversarinas_aagiokrata"
+	culture = "redrunner"
+
+	1200.11.17 = {
+		birth = yes
+	}
+
+	1247.3.26 = {
+		death = { 
+			death_reason = death_sacrificed_to_gods
+			killer = redlander_elated_victim_1
+		}
+	} 
+}

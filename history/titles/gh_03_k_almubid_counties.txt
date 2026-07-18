@@ -1,0 +1,128 @@
+c_the_eye = {
+	1230.1.1 = {
+		holder = makryenis_forgotten_1
+	}
+}
+#c_saasazeh = {
+#	1230.1.1 = {
+#		holder = makryenis_forgotten_2
+#		liege = k_isle_of_visions
+#		government = landed_order_government
+#	}
+#}
+c_faceless_mans_haunt = {
+	1230.1.1 = {
+		holder = makryenis_forgotten_3
+		liege = k_isle_of_visions		
+		government = landed_order_government
+	}
+}
+c_forlorn_approach = {
+	1230.1.1 = {
+		holder = makryenis_forgotten_4
+		liege = k_isle_of_visions		
+		government = landed_order_government
+	}
+}
+c_dragontree = {
+	1230.1.1 = {
+		holder = makryenis_forgotten_5
+		liege = d_eastern_dreamrend_isles		
+		government = landed_order_government
+	}
+}
+c_provinceprovince13696 = {
+	1230.1.1 = {
+		holder = makryenis_forgotten_5
+		liege = d_eastern_dreamrend_isles		
+		government = landed_order_government
+	}
+}
+c_zarrichan = {
+	1230.1.1 = {
+		government = landed_order_government 
+		holder = makryenis_forgotten_7
+		liege = k_isle_of_visions		
+	}
+}
+c_habaden = {
+	1230.1.1 = {
+		holder = makryenis_forgotten_8
+		liege = k_isle_of_visions		
+		government = landed_order_government
+	}
+}
+c_shadebrush = {
+	1230.1.1 = {
+		holder = makryenis_forgotten_9
+		liege = d_isle_of_visions
+		government = landed_order_government
+	}
+}
+c_forbidden_quarter = {
+	1230.1.1 = {
+		government = theocracy_government	
+		holder = makryenis_forgotten_10
+		liege = k_isle_of_visions		
+	}
+}
+c_coffeeports = {
+	1230.1.1 = {
+		holder = makryenis_forgotten_11
+		liege = k_isle_of_visions		
+		government = landed_order_government
+	}
+}
+c_al_iskamarra = {
+	1230.1.1 = {
+		holder = makryenis_forgotten_11
+		liege = k_isle_of_visions		
+		government = landed_order_government
+	}
+}
+c_zabashli = {
+	1230.1.1 = { 
+		holder = makryenis_forgotten_12
+		liege = k_isle_of_visions		
+	}
+}
+c_nevolice = {
+	1230.1.1 = { 
+		holder = makryenis_forgotten_11
+		liege = k_isle_of_visions		
+	}
+}
+c_east_sarradon7 = {
+	1230.1.1 = { 
+		holder = makryenis_forgotten_7
+		liege = k_isle_of_visions		
+	}
+	1262.12.23 = {
+		holder = daukeni_sjalvolki_56
+		liege = 0
+	}
+}
+c_east_sarradon8 = {
+	1230.1.1 = { 
+		holder = makryenis_forgotten_7
+		liege = k_isle_of_visions		
+	}
+}
+c_provincenewphasos = {
+	1230.1.1 = { 
+		holder = makryenis_forgotten_7
+		liege = k_isle_of_visions		
+	}
+}
+c_governor_isle = {
+	1230.1.1 = { 
+		holder = makryenis_forgotten_7
+		liege = k_isle_of_visions		
+	}
+}
+c_east_sarradon9 = {
+	1230.1.1 = { 
+		holder = makryenis_forgotten_7
+		liege = k_isle_of_visions		
+	}
+}

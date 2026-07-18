@@ -1,0 +1,157 @@
+c_vivennescour = {
+	1171.2.17 = {
+		holder = salisians_lifepath_20
+	}
+
+	1227.10.19 = {
+		holder = leegenders_lifepath_6
+	}
+
+	1233.6.1 = {
+		holder = leegenders_lifepath_8
+	}
+
+	1251.10.11 = {
+		holder = leegenders_lifepath_1
+	}
+
+	1251.12.21 = {
+		liege = "d_baresc"
+		holder = salisians_lifepath_23
+	}
+}
+c_buis = {
+	1251.12.21 = {
+		liege = "k_calagonii"
+		holder = voluntic_partic_1
+		government = tribal_government
+	}
+}
+c_grassceu = {
+	1157.9.5 = {
+		liege = "e_chevalie"
+		holder = carsavisians_lifepath_2
+		government = feudal_government
+	}
+	1200.3.1 = {
+		holder = carsavisians_lifepath_3
+	}
+	1233.12.25 = {
+		holder = carsavisians_lifepath_4
+	}
+	1245.12.25 = {
+		holder = carsavisians_lifepath_6
+	}
+	1251.10.13 = {
+		holder = carsavisians_lifepath_5
+	}
+	1251.12.21 = {
+		liege = "k_calagonii"
+		holder = voluntic_partic_12
+		government = tribal_government
+	}
+}
+c_provincedeadlatt = {
+	1157.9.5 = {
+		liege = "e_chevalie"
+		holder = carsavisians_lifepath_2
+		government = feudal_government
+	}
+	1200.3.1 = {
+		holder = carsavisians_lifepath_3
+	}
+	1233.12.25 = {
+		holder = carsavisians_lifepath_4
+	}
+	1245.12.25 = {
+		holder = carsavisians_lifepath_6
+	}
+	1251.10.13 = {
+		holder = carsavisians_lifepath_5
+	}
+	1251.12.21 = {
+		liege = "k_calagonii"
+		holder = voluntic_partic_12
+		government = tribal_government
+	}
+}
+c_sarvede = {
+	1157.9.5 = {
+		liege = "e_chevalie"
+		holder = carsavisians_lifepath_2
+		government = feudal_government
+	}
+	1200.3.1 = {
+		holder = carsavisians_lifepath_3
+	}
+	1233.12.25 = {
+		holder = carsavisians_lifepath_4
+	}
+	1245.12.25 = {
+		holder = carsavisians_lifepath_6
+	}
+	1251.10.13 = {
+		holder = carsavisians_lifepath_5
+	}
+	1251.12.21 = {
+		liege = "k_calagonii"
+		holder = voluntic_partic_20
+		government = tribal_government
+	}
+}
+c_hornde_au_hornde = {
+	1230.1.1 = {
+		holder = carsavisians_lifepath_13
+		government = peasant_republic
+		liege = 0
+	}
+}
+c_plaffinmont = {
+	1.1.2 = {
+		holder = unsorted_26
+	}
+	60.1.1 = {
+		holder = wasteland
+	}
+	1230.1.1 = {
+		holder = carsavisians_lifepath_14
+	}
+}
+c_prefallias = {
+	1230.1.1 = {
+		holder = carsavisians_lifepath_5
+		liege = 0
+	}
+}
+c_chevalliette = {
+	1230.1.1 = {
+		holder = carsavisians_lifepath_16
+	}
+	1230.1.1 = {
+		liege = 0
+	}
+}
+c_rozalie = {
+	1.1.2 = {
+		holder = unsorted_26
+	}
+	60.1.1 = {
+		holder = wasteland
+	}
+	1177.6.16 = {
+		holder = carsavisians_lifepath_7
+	}
+	1212.12.12 = {
+		holder = carsavisians_lifepath_9
+	}
+	1249.12.4 = {
+		holder = carsavisians_lifepath_15
+		government = feudal_government
+	}
+}
+c_pekwarde = {
+	1253.11.16 = {
+		liege = 0
+		holder = voyagen_lifepath_9
+	}
+}

@@ -1,0 +1,9 @@
+﻿kathunian_thuantyan_sraidyan_1 = {
+	name = "ZawLin"
+	religion = "thuantyan_sraidyan"
+	culture = "kathunian"
+
+	1219.3.22 = {
+		birth = yes
+	}
+}

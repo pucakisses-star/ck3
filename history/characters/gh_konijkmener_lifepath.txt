@@ -1,0 +1,3584 @@
+﻿konijkmener_lifepath_0 = { # First Kanzeler
+	name = "Broeden"
+	dna = bruden
+	religion = "lifepath"
+	culture = "konijkmener"
+	dynasty = dyn_konijkmener_11
+
+	1053.5.6 = { #Same birthday as Robespierre
+		birth = yes
+	}
+
+	1100.8.20 = { #Same as the lynching of the brothers De Witt
+		death = {
+			death_reason = death_hanged_and_disemboweled_by_mob #Revolutions man
+		}
+	}
+}
+
+konijkmener_lifepath_1 = {
+	name = Ambroos
+	religion = "lifepath"
+	culture = "rivarisians"
+	father = konijkmener_lifepath_49
+	1142.6.26 = {
+		birth = yes
+	}
+
+	1162.6.26 = {
+		trait = way_of_harvests_follower
+		trait = education_stewardship_3
+		trait = shy
+		trait = fickle
+		trait = cynical
+	}
+	1169.1.1 = {
+		add_spouse = konijkmener_lifepath_1a
+	}
+	1200.3.1 = {
+		trait = gh_widow
+		trait = depressed_1
+	}
+	1213.2.11 = {
+		death = {
+			death_reason = death_suicide
+		}
+	}
+}
+
+konijkmener_lifepath_1a = { # Ambroos Wife & Children, killed during Frod while he was on expedition
+	name = "Lijriet"
+	female = yes
+	religion = "lifepath"
+	culture = "konijkmener"
+
+	1148.2.9 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1168.2.9 = {
+		trait = way_of_crowns_follower
+		trait = education_diplomacy_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+
+	1200.3.1 = {
+		death = { 
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+konijkmener_lifepath_1b = {
+	name = "Rauhard"
+	religion = "lifepath"
+	culture = "konijkmener"
+
+	father = konijkmener_lifepath_1
+	mother = konijkmener_lifepath_1a
+
+	1170.8.8 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	1190.8.8 = {
+		trait = way_of_knowledge_follower
+		trait = education_martial_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+konijkmener_lifepath_1c = {
+	name = "Agdtte"
+	religion = "lifepath"
+	culture = "konijkmener"
+	female = yes
+	father = konijkmener_lifepath_1
+	mother = konijkmener_lifepath_1a
+
+	1190.4.18 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+konijkmener_lifepath_1d = {
+	name = "Kieldtte"
+	religion = "lifepath"
+	culture = "konijkmener"
+	female = yes
+	father = konijkmener_lifepath_1
+	mother = konijkmener_lifepath_1a
+
+	1177.2.29 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	1197.8.8 = {
+		trait = way_of_justice_follower
+		trait = education_stewardship_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+konijkmener_lifepath_2 = { # Anti-Magi Chapter Grandmaster
+	name = "Leeuw" #Lean
+	religion = "lifepath"
+	culture = "konijkmener"
+	
+	trait = way_of_coins_follower
+	trait = gh_historical_blademaster_1
+	trait = intellect_good_3
+	trait = cynical
+	trait = shy
+	trait = brave
+	trait = order_member
+
+	1204.4.4 = {
+		birth = yes
+	}
+
+	1245.6.1 = {
+		death = {
+			death_reason = death_head_ripped_off
+			killer = ee_2
+		}
+	}
+}
+
+konijkmener_lifepath_3 = { #Head of the Unitarian Clique
+	name = "Catenhorst"
+	dynasty = dyn_konijkmener_3
+	religion = "lifepath"
+	culture = "konijkmener"
+	mother = konijkmener_lifepath_3b
+	trait = way_of_harvests_follower #Populist
+	trait = improvident
+	trait = ambitious
+	trait = education_diplomacy_4
+
+	1198.1.1 = {
+		birth = yes
+	}
+
+	1229.11.10 = {
+		add_spouse = rivarisians_lifepath_12
+	}
+
+	1253.1.1 = {
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = title_revocation_rights
+				level = 1
+			}
+		}
+	}
+
+	1266.4.15 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+konijkmener_lifepath_3a = {
+	name = "Ielve"
+	dynasty = dyn_konijkmener_3
+	religion = "lifepath"
+	culture = "konijkmener"
+	female = yes
+	1132.9.2 = {
+		birth = yes
+		trait = giant
+	}
+	1152.1.1 = {
+		trait = way_of_crowns_follower
+		trait = wrathful
+		trait = lustful
+		trait = patient
+		trait = education_martial_2
+	}
+
+	1194.10.10 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+konijkmener_lifepath_3b = {
+	name = "Ielve"
+	dynasty = dyn_konijkmener_3
+	religion = "lifepath"
+	culture = "konijkmener"
+	female = yes
+	mother = konijkmener_lifepath_3a
+	1160.3.3 = {
+		birth = yes
+	}
+	1180.3.3 = {
+		trait = way_of_family_follower
+		trait = education_diplomacy_3
+		trait = calm
+		trait = fickle
+		trait = generous
+	}
+
+	1218.12.1 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+konijkmener_lifepath_5 = {
+	name = "Mathijn"
+	dynasty = dyn_konijkmener_10
+	religion = "lifepath"
+	culture = "konijkmener"
+
+	father = konijkmener_lifepath_38
+	mother = konijkmener_lifepath_37
+
+	1193.1.1 = {
+		birth = yes
+	}
+
+	1215.2.2 = {
+		add_spouse = konijkmener_lifepath_93
+	}
+
+	1218.1.11 = {
+		effect = {
+			create_character_memory = { # Black-Gold War
+				type = fought_in_black_gold_war
+			}
+		}
+	}
+
+
+	1253.1.1 = {
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = title_revocation_rights
+				level = 1
+			}
+		}
+	}
+
+	1257.4.2 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+konijkmener_lifepath_6 = { # give a marcher or north ave wife
+	name = "Jurrien"
+	dynasty = dyn_konijkmener_5
+	religion = "lifepath"
+	culture = "konijkmener"
+	
+	father = konijkmener_lifepath_14
+	mother = konijkmener_lifepath_17
+
+	1215.2.5 = {
+		birth = yes
+		trait = magic_good_3
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 1 }
+		}
+	}
+	1231.2.5 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:alchimuur }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+		trait = fickle
+		trait = deceitful
+		trait = arrogant
+		trait = education_intrigue_3
+	}
+	1253.1.1 = {
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = title_revocation_rights
+				level = 1
+			}
+		}
+	}
+	1253.8.28 = {
+	    add_spouse = northernimperial_aversarinas_aagiokrata_8
+	}
+	1257.4.1 = {
+		trait = gh_historical_track_hunter_2
+	}
+	1281.4.26 = {
+		give_nickname = nick_griffon_feed
+		death = { death_reason = death_griffon }
+	}
+}
+
+konijkmener_lifepath_7 = {
+	name = "Raaf" #Bomhoffe
+	dynasty = dyn_konijkmener_2
+	religion = "lifepath"
+	culture = "konijkmener"
+
+	1218.1.1 = {
+		birth = yes
+	}
+	1253.1.1 = {
+		#effect = {
+		#	vassal_contract_set_obligation_level = {
+		#		type = title_revocation_rights
+		#		level = 1
+		#	}
+		#}
+	}
+	1268.4.3 = {
+		trait = gh_widow
+	}
+	1276.8.12 = {
+		death = { death_reason = death_disappearance }
+	}
+}
+
+konijkmener_lifepath_8 = {
+	name = "Wielraadt" #Driessens
+	dynasty = dyn_konijkmener_7
+	religion = "lifepath"
+	culture = "konijkmener"
+	
+	father = konijkmener_lifepath_15
+
+	1225.2.2 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 1 }
+		}
+	}
+	1278.3.2 = {
+		death = { death_reason = death_ended_on_feast_table }
+	}
+}
+
+konijkmener_lifepath_9 = {
+	name = "Arrel" #Velde
+	dynasty = dyn_konijkmener_8
+	religion = "lifepath"
+	culture = "konijkmener"
+	
+	father = konijkmener_lifepath_10
+
+	1228.1.1 = {
+		birth = yes
+	}
+	1253.1.1 = {
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = title_revocation_rights
+				level = 1
+			}
+		}
+	}
+	1256.9.10 = {
+	    add_spouse = konijkmener_lifepath_114
+	}
+	1289.3.3 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_10a = {
+	name = "Merthwi"
+	religion = "lifepath"
+	culture = "konijkmener"
+	dynasty = dyn_konijkmener_8
+
+	1144.6.4 = {
+		birth = yes
+		trait = gh_peasant_birth
+	}
+
+	1219.1.4 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+konijkmener_lifepath_10 = {
+	name = "Littink"
+	dynasty = dyn_konijkmener_8
+	religion = "lifepath"
+	culture = "konijkmener"
+
+	father = konijkmener_lifepath_10a
+
+	1192.1.1 = {
+		birth = yes
+	}
+
+	1218.1.11 = {
+		effect = {
+			create_character_memory = { # Black-Gold War
+				type = fought_in_black_gold_war
+			}
+		}
+	}
+
+	1253.1.1 = {
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = title_revocation_rights
+				level = 1
+			}
+		}
+	}
+	1266.4.30 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+konijkmener_lifepath_11 = {
+	name = "Roel" #Weggeman
+	dynasty = dyn_konijkmener_9
+	religion = "lifepath"
+	culture = "konijkmener"
+	father = konijkmener_lifepath_11a
+	1224.1.1 = {
+		birth = yes
+	}
+	1253.1.1 = {
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = title_revocation_rights
+				level = 1
+			}
+		}
+	}
+	1268.9.3 = {
+		trait = gout_ridden
+	}
+	1274.8.10 = {
+		death = { death_reason = death_gout_ridden }
+	}
+}
+
+konijkmener_lifepath_11a = {
+	name = "Roel"
+	dynasty = dyn_konijkmener_9
+	religion = "lifepath"
+	culture = "konijkmener"
+
+	1182.7.20 = {
+		birth = yes
+	}
+
+	1198.7.20 = {
+		trait = way_of_nullification_follower
+		trait = education_diplomacy_2
+	}
+
+	1220.1.1 = {
+		trait = drunkard
+	}
+	1237.8.2 = {
+		death = {
+			death_reason = death_drinking_passive
+		}
+	}
+}
+
+konijkmener_lifepath_12 = { # Random Konijkmener so that Helverik is independent
+	name = "Florijn"
+	dynasty = dyn_konijkmener_8
+	religion = "lifepath"
+	culture = "konijkmener"
+	
+	father = konijkmener_lifepath_10
+
+	1226.2.8 = {
+		birth = yes
+	}
+
+	1269.5.12 = {
+		add_spouse = konijkmener_lifepath_110
+	}
+
+	1292.9.14 = {
+		death = { death_reason = death_fell_bedchamber }
+	}
+}
+
+konijkmener_lifepath_13 = { # Kanzeleren Ard var Haakethaar
+	name = "Ard"
+	dna = konijkmener_lifepath_13
+	dynasty = dyn_konijkmener_1
+	martial = 5
+	diplomacy = 3
+	intrigue = 7
+	stewardship = 8
+	learning = 2
+	religion = "lifepath"
+	culture = "konijkmener"
+	father = konijkmener_lifepath_13a
+	mother = konijkmener_lifepath_13b
+	
+	trait = deceitful
+	trait = schemer
+	trait = generous
+	trait = diligent
+	trait = murderer
+	trait = intellect_good_1
+	trait = education_stewardship_4
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_fp2_iberian_christian_04
+			custom_hair = male_hair_western_09
+		}
+	}
+
+	1207.2.2 = {
+		birth = yes
+		effect = {
+			add_pressed_claim = title:k_de_kanzelerij
+		}
+	}
+
+	1248.8.12 = {
+		effect = {
+			set_relation_rival = character:konijkmener_lifepath_6 #Murdered dad
+		}
+		add_spouse = konijkmener_lifepath_20
+	}
+
+	1266.2.20 = {
+		death = { death_reason = death_murder killer = konijkmener_lifepath_88 }
+	}
+}
+
+konijkmener_lifepath_13a = {
+	name = "Ard"
+	religion = "lifepath"
+	culture = "konijkmener"
+	dynasty = dyn_konijkmener_1
+
+	1180.10.3 = {
+		birth = yes
+		trait = gh_peasant_birth
+	}
+
+	1205.1.1 = {
+		add_spouse = konijkmener_lifepath_13b
+	}
+
+	1227.10.4 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+konijkmener_lifepath_13b = {
+	name = "Barwiege"
+	religion = "lifepath"
+	culture = "konijkmener"
+	female = yes
+
+	1184.7.21 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+	1250.1.4 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+konijkmener_lifepath_14 = { # Kanzeleren Gust, murdered by Ard
+	name = "Gust"
+	dynasty = dyn_konijkmener_5
+	religion = "lifepath"
+	culture = "konijkmener"
+
+	father = konijkmener_lifepath_46
+	mother = konijkmener_lifepath_47
+
+	1189.3.15 = {
+		birth = yes
+		add_pressed_claim = title:k_de_kanzelerij
+	}
+	
+	1214.1.1 = {
+		add_spouse = konijkmener_lifepath_17
+	}
+
+	1248.8.12 = {
+		death = {
+			death_reason = death_murder_known
+			killer = konijkmener_lifepath_13
+		}
+	}
+}
+
+konijkmener_lifepath_15 = { # Kanzeleren Rogier, murdered by Ard
+	name = "Rogier"
+	dynasty = dyn_konijkmener_7
+	religion = "lifepath"
+	culture = "konijkmener"
+	father = konijkmener_lifepath_29
+	mother = konijkmener_lifepath_29a
+
+	1182.1.13 = {
+		birth = yes
+		add_pressed_claim = title:k_de_kanzelerij
+	}
+
+	1245.6.2 = {
+		death = {
+			death_reason = death_murder
+			killer = konijkmener_lifepath_13
+		}
+	}
+}
+
+konijkmener_lifepath_17 = {
+	name = "Maakke"
+	female = yes
+	dynasty = dyn_konijkmener_4
+	religion = "lifepath"
+	culture = "konijkmener"
+	
+	father = konijkmener_gestanwoder_1
+
+	1197.9.3 = {
+		birth = yes
+		add_unpressed_claim = title:k_de_kanzelerij
+	}
+
+	1278.6.23 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+konijkmener_lifepath_18 = {
+	name = "Anijt"
+	female = yes
+	dynasty = dyn_konijkmener_4
+	religion = "lifepath"
+	culture = "konijkmener"
+	
+	father = konijkmener_gestanwoder_1
+
+	1199.2.14 = {
+		birth = yes
+		add_unpressed_claim = title:k_de_kanzelerij
+	}
+
+	1263.2.24 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+konijkmener_lifepath_19 = {
+	name = "Rimaak"
+	dynasty = dyn_konijkmener_4
+	religion = "lifepath"
+	culture = "konijkmener"
+	
+	father = konijkmener_gestanwoder_1
+
+	1213.9.4 = {
+		birth = yes
+		#trait = bastard
+		add_unpressed_claim = title:k_de_kanzelerij
+	}
+	
+	1248.3.8 = {
+		#remove_trait = bastard
+		trait = bastard_founder
+		dynasty_house = "house_roedrui"
+		effect = {
+			set_relation_friend = character:urdermantern_lifepath_1
+		}
+	}
+}
+
+konijkmener_lifepath_20 = {
+	name = "Leijne"
+	female = yes
+	dynasty = dyn_konijkmener_4
+	religion = "lifepath"
+	culture = "konijkmener"
+	
+	father = konijkmener_gestanwoder_1
+
+	1225.12.18 = {
+		birth = yes
+		add_unpressed_claim = title:k_de_kanzelerij
+	}
+	1269.3.14 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+konijkmener_lifepath_22 = { # Admiral Guillate
+    name = "Guillate"
+    dynasty = dyn_guillate_1
+    religion = "lifepath"
+    culture = "konijkmener"
+
+    father = konijkmener_lifepath_23
+    mother = northernimperial_aversarinas_aagiokrata_30
+
+    1067.9.15 = {
+        birth = yes
+    }
+    1083.9.15 = {
+        trait = brave
+        trait = cynical
+        trait = calm
+        trait = shrewd
+        trait = education_martial_5
+        trait = way_of_nullification_follower
+    }
+    1088.1.1 = {
+        trait = forder
+        trait = flexible_leader
+    }
+    1090.2.3 = {
+    	add_spouse = dasulanoi_lifepath_1
+    }
+    1133.9.5 = {
+        trait = gh_widow
+    }
+    1149.11.3 = {
+        death = { death_reason = death_old_age }
+    }
+}
+
+konijkmener_lifepath_23 = {
+    name = "Bernijn"
+    dynasty = dyn_guillate_1
+    religion = "lifepath"
+    culture = "konijkmener"
+
+    1041.8.2 = {
+        birth = yes
+    }
+    1066.9.1 = {
+    	add_spouse = northernimperial_aversarinas_aagiokrata_30
+    }
+    1074.9.1 = {
+        death = { death_reason = death_accident }
+    }
+}
+
+konijkmener_lifepath_24 = {
+    name = "Weevre"
+    religion = "lifepath"
+    culture = "konijkmener"
+
+    1037.11.1 = {
+        birth = yes
+    }
+    1060.11.1 = {
+    	trait = way_of_justice_follower
+    	trait = chaste
+    	trait = greedy
+    	trait = stubborn
+    	trait = education_diplomacy_3
+    }
+    1102.7.4 = {
+        death = { death_reason = death_mysterious }
+    }
+}
+
+konijkmener_lifepath_25 = {
+	name = "Waalrijk"
+	religion = "lifepath"
+	culture = "konijkmener"
+	dynasty = dyn_konijkmener_10
+
+	1075.1.27 = {
+		birth = yes
+		trait = beauty_bad_1
+		trait = magic_good_1
+	}
+	1095.2.18 = {
+	    add_spouse = konijkmener_lifepath_34
+	}
+	1101.1.27 = {
+		trait = way_of_coins_follower
+		trait = vengeful
+		trait = greedy
+		trait = zealous
+		trait = education_stewardship_4
+	}
+	1137.12.23 = {
+		death = { death_reason = death_horse_riding_accident }
+	}
+}
+
+konijkmener_lifepath_26 = {
+	name = "Folbrand"
+	religion = "lifepath"
+	culture = "konijkmener"
+
+	1073.4.2 = {
+		birth = yes
+		trait = wheezing
+		trait = intellect_good_1
+	}
+	1089.4.2 = {
+		trait = way_of_crowns_follower
+		trait = diligent
+		trait = paranoid
+		trait = cynical
+		trait = education_intrigue_3
+	}
+	1138.7.1 = {
+		death = { death_reason = death_ill }
+	}
+}
+
+konijkmener_lifepath_28 = {
+	name = "Maanwroos"
+
+    religion = lifepath
+    culture = konijkmener
+    dynasty = dyn_konijkmener_5
+
+    trait = paranoid
+    trait = brave
+    trait = deceitful
+
+    1113.9.17 = {
+    	birth = yes
+    }
+
+    1120.9.17 = {
+    	trait = way_of_justice_follower
+    	trait = education_martial_3
+    	trait = strategist
+    }
+
+    1167.2.6 = {
+    	death = { death_reason = death_stress }
+    }
+
+}
+
+konijkmener_lifepath_29 = {
+	name = "Roetwaan"
+	religion = "lifepath"
+	culture = "konijkmener"
+	dynasty = dyn_konijkmener_7
+
+	1130.4.1 = {
+		birth = yes
+		trait = beauty_good_2
+		trait = magic_good_1
+	}
+	1146.4.1 = {
+		trait = way_of_crows_follower
+		trait = generous
+		trait = arbitrary
+		trait = deceitful
+		trait = education_intrigue_3
+		trait = schemer
+	}
+	1155.3.2 = {
+		add_spouse = konijkmener_lifepath_29a
+	}
+	1180.1.1 = {
+		trait = cancer
+	}
+	1189.7.9 = {
+		death = { death_reason = death_cancer }
+	}	
+}
+
+konijkmener_lifepath_29a = {
+	name = "Ermiege"
+	religion = "lifepath"
+	culture = "konijkmener"
+	father = konijkmener_lifepath_28
+	dynasty = dyn_konijkmener_5
+	female = yes
+	1135.9.15 = {
+		birth = yes
+	}
+
+	1150.1.1 = {
+		trait = way_of_family_follower
+		trait = patient
+		trait = fickle
+		trait = trusting
+	}
+
+	1169.10.5 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+konijkmener_lifepath_30 = {
+	name =  "Thienoelf"
+	religion = "lifepath"
+	culture = "konijkmener"
+
+	1065.11.9 = {
+		birth = yes
+	}
+
+	1081.11.9 = {
+		trait = way_of_harvests_follower
+		trait = lifestyle_gardener
+		trait = generous
+		trait = calm
+		trait = just
+		trait = education_learning_3
+	}
+
+	1086.1.1 = {
+		add_spouse = konijkmener_lifepath_32f
+	}
+
+	1099.12.20 = {
+		trait = poet
+	}
+
+	1104.1.2 = {
+		death = { 
+			death_reason = death_execution
+			killer = konijkmener_lifepath_31
+		}
+	}
+}
+
+konijkmener_lifepath_31 = {
+	name = "Maadlauw"
+	religion = "lifepath"
+	culture = "konijkmener"
+	father = konijkmener_lifepath_40a
+	mother = konijkmener_lifepath_41
+	dynasty = dyn_konijkmener_14
+
+	1074.9.17 = {
+		birth = yes
+		trait = physique_bad_1
+	}
+
+	1090.9.17 = {
+		trait = shrewd
+		trait = ambitious
+		trait = trusting
+		trait = lustful
+		trait = education_intrigue_1
+	}
+
+	1107.9.1 = {
+		trait = lunatic_1
+#		remove_trait = trusting
+#		remove_trait = lustful
+#		trait = sadistic These create errors in history because dead people can't lose traits and these traits are incompatible with his starting traits. Maybe solve this with on_start effect?
+#		trait = paranoid
+	}
+
+	1109.6.21 = {
+		give_nickname = nick_the_mad_maadlauw
+	}
+
+	1115.8.13 = {
+		death = { death_reason = death_dungeon }
+	}
+}
+
+konijkmener_lifepath_32 = {
+	name = "Iesdtte"
+	female = yes
+	religion = "lifepath"
+	culture = "konijkmener"
+	father = konijkmener_lifepath_32b
+	mother = konijkmener_lifepath_32c
+
+	sexuality = asexual
+
+	1068.12.4 = {
+		birth = yes
+	}
+
+	1088.12.4 = {
+		trait = strong
+		trait = gregarious
+		trait = chaste
+		trait = temperate
+		trait = athletic
+		trait = education_diplomacy_4
+	}
+
+	1100.1.1 = {
+		trait = celibate
+		give_nickname = nick_the_maiden_fair_iesdtte
+	}
+
+	1113.3.20 = {
+		death = {
+			death_reason = death_defenestration
+			killer = konijkmener_lifepath_31
+		}
+	}
+}
+
+konijkmener_lifepath_32a = {
+	name = "Lauwe"
+	religion = "lifepath"
+	culture = "konijkmener"
+	sexuality = homosexual
+	father = konijkmener_lifepath_32b
+	mother = konijkmener_lifepath_32c
+	1079.3.22 = {
+		birth = yes
+		trait = gh_gedeora_child
+		trait = physique_good_2
+	}
+	1099.3.22 = {
+		trait = way_of_knowledge_follower
+		trait = education_learning_3
+	}
+	1100.1.1 = {
+		add_spouse = konijkmener_lifepath_32d
+	}
+	1117.12.29 = {
+		trait = lifestyle_herbalist
+		trait = hashishiyah
+		trait = deviant
+	}
+	1149.1.1 = {
+		give_nickname = nick_the_old_lauwe
+	}
+	1169.3.23 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+
+konijkmener_lifepath_32b = {
+	name = "Oerdte"
+	religion = "lifepath"
+	culture = "konijkmener"
+
+	1048.9.2 = {
+		birth = yes
+	}
+
+	1068.1.1 = {
+		trait = way_of_harvests_follower
+	}
+
+	1068.2.2 = {
+		add_spouse = konijkmener_lifepath_32c
+	}
+
+	1100.1.5 = {
+		death = {
+			death_reason = death_attacked
+		}
+	}
+}
+
+konijkmener_lifepath_32c = {
+	name = "Hielzogt"
+	religion = "lifepath"
+	culture = "konijkmener"
+	female = yes
+	1049.10.22 = {
+		birth = yes
+	}
+
+	1065.10.22 = {
+		trait = way_of_harvests_follower
+	}
+
+	1105 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+konijkmener_lifepath_32d = {
+	name = "Katielle"
+	religion = "lifepath"
+	culture = "konijkmener"
+	female = yes
+	1080.7.4 = {
+		birth = yes
+	}
+	1099.1.1 = {
+		trait = way_of_family_follower
+	}
+
+	1143.4.2 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+konijkmener_lifepath_32e = {
+	name = "Waasoelf"
+	religion = "lifepath"
+	culture = "konijkmener"
+	father = konijkmener_lifepath_32a
+	mother = konijkmener_lifepath_32d
+	1111.9.16 = {
+		birth = yes
+	}
+
+	1133.9.16 = {
+		trait = way_of_coins_follower
+		trait = education_stewardship_1
+		trait = lazy
+		trait = fickle
+		trait = gluttonous
+	}
+
+	1182.4.3 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+konijkmener_lifepath_32f = {
+	name = "Hielzogt"
+	religion = "lifepath"
+	culture = "konijkmener"
+	father = konijkmener_lifepath_32b
+	mother = konijkmener_lifepath_32c
+	female = yes
+	1069.2.20 = {
+		birth = yes
+	}
+
+	1089.2.20 = {
+		trait = way_of_justice_follower
+		trait = education_diplomacy_2
+		trait = lustful
+		trait = just
+		trait = gregarious
+	}
+
+	1104.1.2 = {
+		death = { 
+			death_reason = death_execution
+			killer = konijkmener_lifepath_31
+		}
+	}
+}
+
+konijkmener_lifepath_33 = {
+	name = "Paadt"
+
+    religion = lifepath
+    culture = konijkmener
+    dynasty = dyn_konijkmener_4
+
+
+    trait = greedy
+    trait = lazy
+    trait = zealous
+
+    1111.9.17 = {
+    	birth = yes
+    }
+
+    1120.9.17 = {
+    	trait = way_of_coins_follower
+    	trait = education_stewardship_1
+    }
+    1150.1.1 = {
+    	add_spouse = konijkmener_lifepath_40
+    }
+
+    1171.11.29 = {
+    	death = { death_reason = death_drowned }
+    }
+
+}
+
+konijkmener_lifepath_34 = {
+    name = "Jaate" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_40a
+    mother = konijkmener_lifepath_41
+    dynasty = dyn_konijkmener_14
+
+    sexuality = bisexual
+
+    trait = zealous
+    trait = craven
+    trait = callous
+
+    trait = education_stewardship_2
+
+    1078.1.12 = {
+        birth = yes
+    }
+
+    1133.11.11 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_35 = {
+    name = "Baudte" 
+
+    dynasty = dyn_konijkmener_10
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_25
+    mother = konijkmener_lifepath_34
+
+    sexuality = heterosexual
+
+    trait = lazy
+    trait = paranoid
+    trait = humble
+
+    diplomacy = 2
+    martial = 1
+    stewardship = 3
+    intrigue = 1
+    learning = 0
+    prowess = 1
+
+    trait = education_intrigue_2
+
+    1097.9.18 = {
+        birth = yes
+    }
+
+    1098.2.2 = {
+        give_nickname = nick_the_dull_baudte
+    }
+
+    1121.8.14 = {
+        add_spouse = konijkmener_lifepath_36
+    }
+
+    1161.7.14 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_36 = {
+    name = "Machtelt" 
+    female = yes
+    father = urdermantern_lifepath_4a
+    dynasty = dyn_konijkmener_13
+    religion = lifepath
+    culture = konijkmener
+
+    sexuality = heterosexual
+
+    trait = humble
+    trait = wrathful
+    trait = gluttonous
+    trait = legitimized_bastard
+
+    diplomacy = 5
+    martial = 3
+    stewardship = 5
+    intrigue = 5
+    learning = 5
+    prowess = 9
+
+    trait = education_diplomacy_4
+
+    1104.6.10 = {
+        birth = yes
+    }
+
+    1158.7.21 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_37 = {
+    name = "Bietbij" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+
+    dynasty = dyn_konijkmener_10
+
+    father = konijkmener_lifepath_35
+    mother = konijkmener_lifepath_36
+
+    sexuality = heterosexual
+
+    trait = lustful
+    trait = just
+    trait = generous
+
+    diplomacy = 6
+    martial = 7
+    stewardship = 5
+    intrigue = 7
+    learning = 4
+    prowess = 4
+
+    trait = education_martial_3
+
+    1143.9.12 = {
+        birth = yes
+    }
+
+    1163.12.1 = {
+    	add_matrilineal_spouse = konijkmener_lifepath_38
+    }
+
+    1213.11.28 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_38 = {
+	name = "Toelf"
+	religion = "lifepath"
+	culture = "konijkmener"
+	dynasty = dyn_konijkmener_12
+	sexuality = homosexual 
+
+	father = konijkmener_lifepath_59
+	mother = konijkmener_lifepath_60
+
+	trait = twin
+	trait = lustful
+	trait = shy
+	trait = patient
+
+	1140.8.20 = {
+		birth = yes
+	}
+
+	1210.1.9 = {
+		death = { death_reason = death_natural_causes }
+	}
+
+}
+
+konijkmener_lifepath_40 = {
+    name = "Willemine" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_43
+    mother = konijkmener_lifepath_44
+
+    sexuality = heterosexual
+
+    trait = arrogant
+    trait = generous
+    trait = wrathful
+
+    1130.4.5 = {
+        birth = yes
+    }
+
+    1174.1.21 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_40a = {
+    name = "Maadeeuw" 
+
+    religion = lifepath
+    culture = konijkmener
+    dynasty = dyn_konijkmener_14
+    sexuality = heterosexual
+
+    trait = generous
+    trait = paranoid
+    trait = arbitrary
+
+    1043.12.12 = {
+        birth = yes
+    }
+    
+    1102.4.25 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_41 = {
+    name = "Alele" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+
+    sexuality = heterosexual
+
+    trait = shy
+    trait = generous
+    trait = patient
+
+    1057.7.19 = {
+        birth = yes
+    }
+
+    1112.5.15 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_43 = {
+    name = "Leeuwaard" 
+
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_40a
+    mother = konijkmener_lifepath_41
+    dynasty = dyn_konijkmener_14
+    sexuality = heterosexual
+
+    trait = arbitrary
+    trait = cynical
+    trait = forgiving
+
+    1084.9.28 = {
+        birth = yes
+    }
+
+    1102.10.13 = {
+        add_spouse = konijkmener_lifepath_44
+    }
+
+    1135.6.4 = {
+        death = { death_reason = death_training_accident  }
+    }
+}
+
+konijkmener_lifepath_44 = {
+    name = "Joedtke" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_30
+    mother = konijkmener_lifepath_32f
+
+    sexuality = heterosexual
+
+    trait = honest
+    trait = ambitious
+    trait = humble
+
+    1089.12.19 = {
+        birth = yes
+    }
+
+    1150.1.6 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_45 = {
+    name = "Eensvrij" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_43
+    mother = konijkmener_lifepath_44
+    dynasty = dyn_konijkmener_14
+    sexuality = heterosexual
+
+    trait = content
+    trait = arbitrary
+    trait = temperate
+
+    1119.6.19 = {
+        birth = yes
+    }
+
+    1140.1.1 = {
+    	add_matrilineal_spouse = konijkmener_lifepath_45a
+    }
+
+    1154.4.20 = {
+    	trait = gh_widow
+    }
+
+    1190.10.9 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_45a = {
+	name = "Hijdraag"
+
+	religion = "lifepath"
+	culture = "konijkmener"
+	mother = konijkmener_lifepath_48
+
+	1119.8.1 = {
+		birth = yes
+	}
+
+	1139.8.1 = {
+		trait = way_of_justice_follower
+		trait = brave
+		trait = just
+		trait = gluttonous
+	}
+
+	1154.4.20 = {
+		death = { 
+			death_reason = death_battle
+			killer = urdermantern_lifepath_4
+		}
+	}
+}
+
+konijkmener_lifepath_45b = {
+	name = "Hijdraag"
+
+	father = konijkmener_lifepath_45a
+	mother = konijkmener_lifepath_45
+	dynasty = dyn_konijkmener_14
+	religion = "lifepath"
+	culture = "konijkmener"
+
+	1141.2.25 = {
+		birth = yes
+	}
+
+	1154.12.20 = {
+		death = {
+			death_reason = death_dungeon
+			killer = urdermantern_lifepath_4
+		}
+	}
+}
+
+konijkmener_lifepath_46 = {
+	name = "Gerward"
+	dynasty = dyn_konijkmener_5
+	religion = "lifepath"
+	culture = "konijkmener"
+
+	father = konijkmener_lifepath_28
+
+	1156.9.3 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1170.9.3 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+		trait = education_learning_2
+		trait = way_of_knowledge_follower
+	}
+
+	1175.1.18 = {
+		add_spouse = konijkmener_lifepath_47
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+konijkmener_lifepath_47a = {
+	name = "Oelderijk"
+	religion = "lifepath"
+	culture = "konijkmener"
+	sexuality = homosexual
+	dynasty = dyn_konijkmener_5
+	father = konijkmener_lifepath_28
+
+	1159.2.1 = {
+		birth = yes
+		trait = legitimized_bastard
+	}
+
+	1179.2.1 = {
+		trait = education_stewardship_1
+		trait = way_of_justice_follower
+	}
+
+	1221.12.7 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+konijkmener_lifepath_47 = {
+	name = "Aasebijn"
+	religion = "lifepath"
+	culture = "konijkmener"
+	female = yes
+
+	1160.9.3 = {
+		birth = yes
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+konijkmener_lifepath_48 = {
+	name = "Noenne"
+	religion = "lifepath"
+	culture = "rivarisians"
+	female = yes
+
+	1087.2.20 = {
+		birth = yes
+	}
+	1107.2.20 = {
+		trait = way_of_swords_follower
+		trait = education_martial_3
+		trait = ambitious
+		trait = brave
+		trait = compassionate
+		trait = strategist
+	}
+	1145.10.2 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+konijkmener_lifepath_49 = {
+	name = "Weefdt"
+	religion = "lifepath"
+	culture = "rivarisians"
+
+	mother = konijkmener_lifepath_48
+
+	1110.9.5 = {
+		birth = yes
+	}
+
+	1130.1.1 = {
+		trait = way_of_harvests_follower
+		trait = education_diplomacy_2
+	}
+	1154.11.19 = {
+		death = {
+			death_reason = death_battle
+			killer = urdermantern_lifepath_4
+		}
+	}
+
+}
+
+konijkmener_lifepath_50 = {
+	name = "Sefien"
+	religion = "lifepath"
+	culture = "konijkmener"
+	female = yes
+
+	father = konijkmener_lifepath_30
+	mother = konijkmener_lifepath_32f
+
+	1087.9.6 = {
+		birth = yes
+	}
+
+	1103.9.6 = {
+		trait = way_of_knowledge_follower
+		trait = education_stewardship_3
+	}
+
+	1109.10.23 = {
+		death = { death_reason = death_childbirth }
+	}
+
+
+}
+
+## Hayrdweng Dynasty
+
+konijkmener_lifepath_51 = { # Monarch of Kanzelerij at the turn of the 11th century, Konen's father
+    name = "Eerden" #Aardt is a very peasant name
+
+    dynasty = dyn_konijkmener_12
+    religion = lifepath
+    culture = konijkmener
+
+    sexuality = heterosexual
+
+    trait = humble
+    trait = fickle
+    trait = gluttonous
+
+    diplomacy = 8
+    martial = 5
+    stewardship = 7
+    intrigue = 1
+    learning = 6
+    prowess = 4
+
+    trait = education_diplomacy_4
+
+    989.5.18 = {
+        birth = yes
+    }
+
+    1020.5.18 = {
+        trait = way_of_crowns_follower
+    }
+    1025.9.6 = {
+        add_spouse = konijkmener_lifepath_52
+    }
+
+    1035.9.25 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_52 = { # Wife of Aardt, princess of the High Kingdom
+    name = "Cimnia" 
+    female = yes
+
+    religion = lifepath
+    culture = voyagen
+
+    sexuality = bisexual
+    dynasty = dyn_marcher_9
+    father = voyagen_lifepath_29
+
+    trait = zealous
+    trait = craven
+    trait = callous
+
+    diplomacy = 5
+    martial = 6
+    stewardship = 7
+    intrigue = 3
+    learning = 6
+    prowess = 6
+
+    trait = education_stewardship_2
+    trait = way_of_justice_follower
+
+    1008.8.2 = {
+        birth = yes
+    }
+
+    1072.11.1 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_53 = { # Monarch during the Great Isle War of 1088, fell into a coma following an awful illness, never to awake
+    name = "Conen" 
+
+    dynasty = dyn_konijkmener_12
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_51
+    mother = konijkmener_lifepath_52
+
+    sexuality = heterosexual
+
+    trait = shy
+    trait = paranoid
+    trait = stubborn
+    trait = weak
+
+    diplomacy = 3
+    martial = 1
+    stewardship = 2
+    intrigue = 5
+    learning = 3
+    prowess = 4
+
+    trait = education_intrigue_3
+    trait = way_of_crows_follower
+
+    1030.5.13 = {
+        birth = yes
+    }
+
+    1075.9.12 = {
+        add_spouse = konijkmener_lifepath_54
+    }
+
+    1084.4.11 = {
+        trait = incapable
+    }
+
+    1091.9.19 = {
+        death = { death_reason = death_ill }
+    }
+}
+
+konijkmener_lifepath_54 = { # Northern Aversarian spouse of Konen, would fall from a window days after his death.
+    name = "Eurynome" 
+    female = yes
+
+    religion = lifepath
+    culture = northernimperial
+    mother = northernimperial_aversarinas_aagiokrata_5
+    father = tasurmad_wardenism_16
+
+
+    sexuality = heterosexual
+
+    trait = humble
+    trait = wrathful
+    trait = gluttonous
+
+    diplomacy = 6
+    martial = 3
+    stewardship = 5
+    intrigue = 3
+    learning = 4
+    prowess = 3
+
+    trait = education_diplomacy_3
+    trait = way_of_coins_follower
+
+    1058.1.23 = {
+        birth = yes
+    }
+
+    1098.9.22 = {
+        death = { death_reason = death_mysterious }
+    }
+}
+
+konijkmener_lifepath_55 = { # Last King of Kanzelerij
+    name = "Causen" 
+
+    religion = lifepath
+    culture = konijkmener
+    dynasty = dyn_konijkmener_12
+
+    father = konijkmener_lifepath_53
+    mother = konijkmener_lifepath_54
+
+    sexuality = homosexual
+
+    trait = stubborn
+    trait = paranoid
+    trait = brave
+
+    diplomacy = 2
+    martial = 5
+    stewardship = 3
+    intrigue = 6
+    learning = 1
+    prowess = 5
+
+
+    1080.5.10 = {
+        birth = yes
+    }
+
+    1096.5.10 = {
+        trait = education_martial_1
+        trait = way_of_crowns_follower
+    }
+
+    1116.12.23 = {
+    	give_nickname = nick_the_last_causen
+    }
+    1116.12.24 = {
+        death = { death_reason = death_battle }
+    }
+}
+
+
+konijkmener_lifepath_57 = {
+    name = "Eezag" 
+
+    dynasty = dyn_konijkmener_12
+    religion = lifepath
+    culture = konijkmener
+    father = konijkmener_lifepath_53
+    mother = konijkmener_lifepath_54
+    sexuality = heterosexual
+
+    trait = humble
+    trait = fickle
+    trait = gluttonous
+
+    diplomacy = 9
+    martial = 1
+    stewardship = 4
+    intrigue = 6
+    learning = 4
+    prowess = 3
+
+    trait = education_diplomacy_3
+
+    1082.5.15 = {
+        birth = yes
+    }
+
+    1104.5.7 = {
+        add_spouse = konijkmener_lifepath_58
+    }
+
+    1171.1.10 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_58 = {
+    name = "Claernen" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+
+    sexuality = bisexual
+
+    trait = zealous
+    trait = craven
+    trait = callous
+
+    diplomacy = 5
+    martial = 6
+    stewardship = 7
+    intrigue = 3
+    learning = 6
+    prowess = 6
+
+    trait = education_stewardship_2
+
+    1087.8.2 = {
+        birth = yes
+    }
+
+    1147.2.10 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_59 = {
+    name = "Folinbraht" 
+
+    dynasty = dyn_konijkmener_12
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_57
+    mother = konijkmener_lifepath_58
+
+    sexuality = heterosexual
+
+    trait = lazy
+    trait = paranoid
+    trait = humble
+
+    diplomacy = 4
+    martial = 5
+    stewardship = 7
+    intrigue = 10
+    learning = 5
+    prowess = 6
+
+    trait = education_intrigue_2
+
+    1112.10.7 = {
+        birth = yes
+    }
+
+
+    1137.3.12 = {
+        add_spouse = konijkmener_lifepath_60
+    }
+
+    1186.12.1 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_60 = {
+    name = "Auys" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+
+    sexuality = heterosexual
+
+    trait = humble
+    trait = wrathful
+    trait = gluttonous
+
+    diplomacy = 5
+    martial = 3
+    stewardship = 5
+    intrigue = 5
+    learning = 5
+    prowess = 9
+
+    trait = education_diplomacy_4
+
+    1120.6.21 = {
+        birth = yes
+    }
+
+    1190.6.9 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_61 = {
+    name = "Katielle" 
+    female = yes
+
+    dynasty = dyn_konijkmener_12
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_59
+    mother = konijkmener_lifepath_60
+
+    sexuality = heterosexual
+
+    trait = twin
+    trait = lustful
+    trait = just
+    trait = generous
+
+    diplomacy = 6
+    martial = 7
+    stewardship = 5
+    intrigue = 7
+    learning = 4
+    prowess = 4
+
+    trait = education_martial_3
+
+    1140.8.20 = {
+        birth = yes
+    }
+
+    1213.6.7 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_62 = {
+    name = "Jamitte" 
+    female = yes
+    dynasty = dyn_konijkmener_12
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_59
+    mother = konijkmener_lifepath_60
+
+    sexuality = heterosexual
+
+    trait = lazy
+    trait = gluttonous
+    trait = vengeful
+
+    diplomacy = 5
+    martial = 9
+    stewardship = 7
+    intrigue = 7
+    learning = 6
+    prowess = 3
+
+    trait = education_martial_3
+
+    1147.12.28 = {
+        birth = yes
+    }
+
+    1167.1.1 = {
+        trait = order_member
+    }
+
+    1209.1.9 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_63 = {
+    name = "Hijdraag" 
+
+    dynasty = dyn_konijkmener_12
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_57
+    mother = konijkmener_lifepath_58
+
+    sexuality = heterosexual
+
+    trait = brave
+    trait = deceitful
+    trait = compassionate
+
+    diplomacy = 7
+    martial = 6
+    stewardship = 6
+    intrigue = 6
+    learning = 2
+    prowess = 6
+
+    trait = education_diplomacy_2
+
+    1118.3.17 = {
+        birth = yes
+    }
+
+    1155.2.25 = {
+        add_spouse = konijkmener_lifepath_64
+    }
+
+    1195.1.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_64 = {
+    name = "Nieske" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+
+    sexuality = heterosexual
+
+    trait = vengeful
+    trait = shy
+    trait = lustful
+
+    diplomacy = 2
+    martial = 2
+    stewardship = 7
+    intrigue = 6
+    learning = 4
+    prowess = 9
+
+    trait = education_stewardship_3
+
+    1138.11.3 = {
+        birth = yes
+    }
+
+    1165.1.7 = {
+        death = { death_reason = death_dog_attack  }
+    }
+}
+
+konijkmener_lifepath_65 = {
+    name = "Woelf" 
+
+    dynasty = dyn_konijkmener_12
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_63
+    mother = konijkmener_lifepath_64
+
+    sexuality = heterosexual
+
+    trait = gluttonous
+    trait = gregarious
+    trait = humble
+
+    diplomacy = 2
+    martial = 4
+    stewardship = 3
+    intrigue = 4
+    learning = 5
+    prowess = 4
+
+    trait = education_learning_1
+
+    1159.5.20 = {
+        birth = yes
+    }
+
+    1185.6.6 = {
+        add_spouse = konijkmener_lifepath_66
+    }
+
+    1237.11.28 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_66 = {
+    name = "Kuurlien" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+
+    sexuality = heterosexual
+
+    trait = trusting
+    trait = calm
+    trait = content
+
+    diplomacy = 7
+    martial = 6
+    stewardship = 5
+    intrigue = 4
+    learning = 7
+    prowess = 9
+
+    trait = education_diplomacy_3
+
+    1168.11.4 = {
+        birth = yes
+    }
+
+    1231.2.23 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_67 = {
+    name = "Eelve" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_65
+    mother = konijkmener_lifepath_66
+
+    sexuality = heterosexual
+
+    trait = gregarious
+    trait = content
+    trait = stubborn
+
+    trait = education_intrigue_2
+
+    1191.9.10 = {
+        birth = yes
+    }
+
+    1252.8.11 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_68 = {
+    name = "Osninward" 
+
+    dynasty = dyn_konijkmener_12
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_63
+    mother = konijkmener_lifepath_64
+
+    sexuality = heterosexual
+
+    trait = arbitrary
+    trait = diligent
+    trait = wrathful
+
+    diplomacy = 5
+    martial = 8
+    stewardship = 5
+    intrigue = 5
+    learning = 6
+    prowess = 5
+
+    trait = education_martial_2
+
+    1161.9.14 = {
+        birth = yes
+    }
+
+    1181.3.28 = {
+        add_spouse = konijkmener_lifepath_69
+    }
+
+    1239.4.24 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_69 = {
+    name = "Corneria" 
+    female = yes
+    dynasty = dyn_konijkmener_7
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_29
+
+    sexuality = heterosexual
+
+    trait = zealous
+    trait = humble
+    trait = temperate
+
+    diplomacy = 9
+    martial = 5
+    stewardship = 6
+    intrigue = 3
+    learning = 7
+    prowess = 6
+
+    trait = education_diplomacy_4
+
+    1164.3.24 = {
+        birth = yes
+    }
+
+    1226.4.3 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_70 = {
+    name = "Mabelnen" 
+    female = yes
+
+    dynasty = dyn_konijkmener_12
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_68
+    mother = konijkmener_lifepath_69
+
+    sexuality = heterosexual
+
+    trait = forgiving
+    trait = lustful
+    trait = gregarious
+
+    diplomacy = 4
+    martial = 8
+    stewardship = 4
+    intrigue = 2
+    learning = 5
+    prowess = 6
+
+    trait = education_martial_4
+
+    1191.11.6 = {
+        birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 4 }
+		}
+    }
+    1280.1.2 = {
+    	death = { death_reason = death_old_age }
+    }
+}
+
+konijkmener_lifepath_71 = {
+    name = "Rijger" 
+
+    dynasty = dyn_konijkmener_12
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_63
+    mother = konijkmener_lifepath_64
+
+    sexuality = heterosexual
+
+    trait = trusting
+    trait = arbitrary
+    trait = impatient
+
+    diplomacy = 5
+    martial = 1
+    stewardship = 1
+    intrigue = 7
+    learning = 4
+    prowess = 6
+
+    trait = education_intrigue_3
+
+    1163.3.26 = {
+        birth = yes
+    }
+
+    1187.4.3 = {
+        add_spouse = konijkmener_lifepath_72
+    }
+
+    1247.5.15 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_72 = {
+    name = "Magdalise" #Margareta
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+
+    sexuality = heterosexual
+
+    trait = shy
+    trait = ambitious
+    trait = arrogant
+
+    diplomacy = 6
+    martial = 7
+    stewardship = 8
+    intrigue = 5
+    learning = 3
+    prowess = 3
+
+    trait = education_stewardship_2
+
+    1170.10.1 = {
+        birth = yes
+    }
+
+    1230.2.17 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_73 = {
+    name = "Uuldbald" 
+
+    dynasty = dyn_konijkmener_12
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_71
+    mother = konijkmener_lifepath_72
+
+    sexuality = heterosexual
+
+    trait = zealous
+    trait = gregarious
+    trait = content
+
+    diplomacy = 3
+    martial = 2
+    stewardship = 8
+    intrigue = 4
+    learning = 5
+    prowess = 4
+
+    trait = education_stewardship_4
+
+    1193.11.23 = {
+        birth = yes
+    }
+
+    1236.11.6 = {
+        add_spouse = konijkmener_lifepath_74
+    }
+
+    1246.7.14 = {
+        death = { death_reason = death_horse_riding_accident  }
+    }
+}
+
+konijkmener_lifepath_74 = {
+    name = "Agdtte" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+
+    sexuality = heterosexual
+
+    trait = gregarious
+    trait = chaste
+    trait = content
+
+    diplomacy = 3
+    martial = 7
+    stewardship = 6
+    intrigue = 4
+    learning = 2
+    prowess = 6
+
+    trait = education_martial_3
+
+    1219.2.15 = {
+        birth = yes
+    }
+
+    1254.1.1 = {
+    	employer = konijkmener_lifepath_13
+    }
+    1257.7.6 = {
+    	death = { death_reason = death_suicide }
+    }
+}
+
+konijkmener_lifepath_75 = {
+    name = "Riekvool" 
+
+    dynasty = dyn_konijkmener_12
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_73
+    mother = konijkmener_lifepath_74
+
+    diplomacy = 2
+    martial = 6
+    stewardship = 6
+    intrigue = 5
+    learning = 10
+    prowess = 5
+
+    1240.6.23 = {
+        birth = yes
+        add_unpressed_claim = title:k_de_kanzelerij
+    }
+
+    1254.1.1 = {
+    	employer = konijkmener_lifepath_13
+    }
+}
+
+konijkmener_lifepath_76 = {
+    name = "Geerwroos" 
+
+    dynasty = dyn_konijkmener_12
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_73
+    mother = konijkmener_lifepath_74
+    sexuality = homosexual
+    diplomacy = 5
+    martial = 6
+    stewardship = 4
+    intrigue = 6
+    learning = 1
+    prowess = 6
+
+
+    1241.4.14 = {
+        birth = yes
+        add_unpressed_claim = title:k_de_kanzelerij
+    }
+
+    1254.1.1 = {
+    	employer = konijkmener_lifepath_13
+    }
+
+    1275.4.4 = {
+    	death = { death_reason = death_mysterious killer = konijkmener_lifepath_6 }
+    }
+}
+
+konijkmener_lifepath_77 = { # Bastard child of Causen, hidden away to a new life.
+    name = "Causen" 
+
+    dynasty = dynasty_hayrd
+    religion = lifepath
+    culture = konijkmener
+    father = konijkmener_lifepath_55
+    1115.9.8 = {
+        birth = yes
+        trait = bastard
+    }
+    1157.4.9 = {
+        add_spouse = konijkmener_lifepath_78
+    }
+
+    1169.5.28 = {
+        death = { death_reason = death_consumption }
+    }
+}
+
+konijkmener_lifepath_78 = {
+    name = "Corneria" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+
+    sexuality = heterosexual
+
+    trait = deceitful
+    trait = compassionate
+    trait = greedy
+
+    trait = education_diplomacy_2
+
+    1140.8.4 = {
+        birth = yes
+    }
+
+    1197.8.21 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_79 = { # Killed by the previous tyrant of Isle along with his wife
+    name = "Theer" 
+
+    dynasty = dynasty_hayrd
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_77
+    mother = konijkmener_lifepath_78
+
+    sexuality = heterosexual
+
+
+    1168.7.15 = {
+        birth = yes
+    }
+
+    1211.4.25 = {
+        add_spouse = konijkmener_lifepath_80
+    }
+
+    1239.5.11 = {
+        death = { death_reason = death_dog_attack  }
+    }
+}
+
+konijkmener_lifepath_80 = {
+    name = "Vergtte" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+
+    trait = education_learning_1
+
+    1194.10.19 = {
+        birth = yes
+    }
+
+    1239.5.11 = {
+        death = { death_reason = death_dog_attack  }
+    }
+}
+
+konijkmener_lifepath_81 = { # Last surviving descendant of the Hayrdweng dynasty, unknowningly. Mercenary under Rene
+    name = "Arrel" 
+
+    dynasty = dynasty_hayrd
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_79
+    mother = konijkmener_lifepath_80
+
+    sexuality = heterosexual
+
+    trait = trusting
+    trait = calm
+    trait = content
+
+    diplomacy = 4
+    martial = 5
+    stewardship = 4
+    intrigue = 7
+    learning = 9
+    prowess = 6
+
+    trait = education_martial_2
+
+    1219.9.2 = {
+        birth = yes
+    }
+
+    1249.3.1 = {
+    	effect = {
+            set_relation_friend = { reason = friend_generic_history target = character:voyagen_lifepath_8 } # Fought with each other for years
+        }
+    }
+
+    1252.1.1 = {
+    	trait = way_of_swords_follower
+    }
+    1252.2.3 = {
+    	trait = gh_veteran_of_elysia_marcher
+    	effect = {
+    		create_character_memory = { # Battle of the Elysian Pass
+    			type = fought_in_elysian_pass_marcher
+    		}
+    	}
+    }
+    1253.1.1 = {
+    	employer = voyagen_lifepath_8
+    }
+    1262.10.2 = {
+    	death = { death_reason = death_battle } #Give a killer
+    }
+}
+
+konijkmener_lifepath_82 = {
+    name = "Haarrijk" 
+
+    dynasty = dyn_guillate_1
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_22
+    mother = dasulanoi_lifepath_1
+
+    sexuality = heterosexual
+
+    trait = lazy
+    trait = paranoid
+    trait = humble
+
+    trait = education_intrigue_2
+    trait = way_of_harvests_follower
+
+    1103.10.23 = {
+        birth = yes
+    }
+
+
+    1150.4.19 = {
+        add_spouse = konijkmener_lifepath_83
+    }
+
+    1179.2.10 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_83 = {
+    name = "Bietbij" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+
+    sexuality = heterosexual
+
+    trait = humble
+    trait = wrathful
+    trait = gluttonous
+
+    diplomacy = 5
+    martial = 3
+    stewardship = 5
+    intrigue = 5
+    learning = 5
+    prowess = 9
+
+    trait = education_diplomacy_4
+
+    1123.2.1 = {
+        birth = yes
+    }
+
+    1205.4.15 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+konijkmener_lifepath_84 = {
+    name = "Riesterijk" 
+
+    dynasty = dyn_guillate_1
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_22
+    mother = dasulanoi_lifepath_1
+
+
+    1100.10.28 = {
+        birth = yes
+    }
+
+    1107.12.1 = {
+        death = { death_reason = death_drowned }
+    }
+}
+
+
+konijkmener_lifepath_85 = {
+    name = "Haabriel" 
+
+    dynasty = dyn_guillate_1
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_22
+    mother = dasulanoi_lifepath_1
+
+    sexuality = heterosexual
+
+    trait = temperate
+    trait = wrathful
+    trait = just
+
+    1111.11.9 = {
+        birth = yes
+    }
+
+    1158.11.11 = {
+        add_spouse = guillater_aversarian_lifepath_1
+    }
+
+    1176.6.24 = {
+        death = { death_reason = death_old_age }
+    }
+}
+
+konijkmener_lifepath_86 = {
+	name = "Nieske" #Velde
+	dynasty = dyn_konijkmener_8
+	religion = "lifepath"
+	culture = "konijkmener"
+	female = yes
+	father = konijkmener_lifepath_9
+
+	1260.8.21 = {
+		birth = yes
+	}
+
+	1280.8.21 = {
+		trait = lustful
+		trait = gluttonous
+		trait = wrathful
+		trait = strong
+	}
+}
+
+konijkmener_lifepath_87 = {
+	name = "Alesijn" #Velde
+	dynasty = dyn_konijkmener_8
+	religion = "lifepath"
+	culture = "konijkmener"
+	female = yes
+	father = konijkmener_lifepath_10
+
+	1230.2.16 = {
+		birth = yes
+	}
+	1297.2.3 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+konijkmener_lifepath_88 = {
+	name = "Goetrijk"
+	religion = lifepath
+	culture = konijkmener
+	father = konijkmener_lifepath_13
+	mother = konijkmener_lifepath_20
+	dynasty = dyn_konijkmener_1
+	1249.6.11 = {
+		birth = yes
+		trait = gh_gedeora_child
+	}
+	1273.6.11 = {
+		trait = paranoid
+		trait = callous
+		trait = deceitful
+		trait = education_intrigue_3
+		trait = way_of_crows_follower
+	}
+	1269.10.4 = {
+		death = { death_reason = death_dungeon killer = konijkmener_lifepath_89 }
+	}
+}
+konijkmener_lifepath_89 = {
+	name = "Perrijn"
+	religion = lifepath
+	culture = konijkmener
+	father = konijkmener_lifepath_13
+	mother = konijkmener_lifepath_20
+	dynasty = dyn_konijkmener_1
+	female = yes
+	1253.3.20 = {
+		birth = yes
+	}
+	1278.3.20 = {
+		trait = wrathful
+		trait = generous
+		trait = impatient
+		trait = education_diplomacy_3
+	}
+}
+konijkmener_lifepath_90 = {
+	name = "Hielzoet"
+	religion = lifepath
+	culture = konijkmener
+	father = konijkmener_lifepath_3
+	mother = rivarisians_lifepath_12
+	dynasty = dyn_konijkmener_3
+	female = yes
+	1231.3.3 = {
+		birth = yes
+	}
+	1251.3.3 = {
+		trait = content
+		trait = fickle
+		trait = brave
+		trait = education_diplomacy_1
+		trait = way_of_crowns_follower
+	}
+	1255.9.3 = {
+		add_matrilineal_spouse = konijkmener_lifepath_7
+	}
+	1268.4.3 = {
+		death = { death_reason = death_cancer }
+	}
+}
+konijkmener_lifepath_91 = {
+	name = "Anijt"
+	religion = lifepath
+	culture = konijkmener
+	father = konijkmener_lifepath_3
+	mother = rivarisians_lifepath_12
+	dynasty = dyn_konijkmener_3
+	sexuality = homosexual
+	female = yes
+	1236.4.16 = {
+		birth = yes
+	}
+	1254.1.1 = {
+		trait = ambitious
+		trait = compassionate
+		trait = stubborn
+		trait = education_stewardship_3
+		trait = way_of_justice_follower
+	}
+	1255.6.3 = {
+		add_matrilineal_spouse = konijkmener_lifepath_8
+	}
+	1288.5.29 = {
+		death = { death_reason = death_accident }
+	}
+}
+konijkmener_lifepath_92 = {
+	name = "Metielle"
+	religion = lifepath
+	culture = konijkmener
+	father = konijkmener_lifepath_3
+	mother = rivarisians_lifepath_12
+	dynasty = dyn_konijkmener_3
+	female = yes
+	1243.7.3 = {
+		birth = yes
+	}
+	1263.7.3 = {
+		trait = deceitful
+		trait = shy
+		trait = cynical
+		trait = education_learning_3
+		trait = way_of_knowledge_follower
+	}
+}
+konijkmener_lifepath_93 = {
+	name = "Hielzoet"
+	dynasty = dyn_konijkmener_5
+	religion = "lifepath"
+	culture = "konijkmener"
+	female = yes
+	father = konijkmener_lifepath_46
+	mother = konijkmener_lifepath_47
+
+	1193.9.21 = {
+		birth = yes
+	}
+	1213.1.1 = {
+		trait = lustful
+		trait = deceitful
+		trait = cynical
+		trait = education_intrigue_3
+	}
+	1233.1.1 = {
+		trait = adulterer
+		trait = schemer
+	}
+	1261.3.5 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+konijkmener_lifepath_94 = {
+	name = "Waalrijk"
+	religion = lifepath
+	culture = konijkmener
+	father = konijkmener_lifepath_5
+	mother = konijkmener_lifepath_93
+	dynasty = dyn_konijkmener_10
+	
+	1218.3.2 = {
+		birth = yes
+	}
+
+	1242.1.30 = {
+		add_spouse = urdermantern_lifepath_12
+	}
+
+	1271.6.27 = {
+		death = { death_reason = death_tumultuous_guts }
+	}
+}
+
+konijkmener_lifepath_95 = { #GHTODOMOM
+	name = "Roel"
+	religion = lifepath
+	culture = konijkmener
+	father = konijkmener_lifepath_11
+	dynasty = dyn_konijkmener_9
+	1248.5.13 = {
+		birth = yes
+	}
+	1268.2.1 = {
+		add_spouse = konijkmener_lifepath_92
+	}
+	1296.8.19 = {
+		death = { death_reason = death_drowned }
+	}
+}
+konijkmener_lifepath_96 = {
+	name = "Roel"
+	religion = lifepath
+	culture = konijkmener
+	father = konijkmener_lifepath_95
+	mother = konijkmener_lifepath_92
+	dynasty = dyn_konijkmener_9
+	1279.1.25 = {
+		birth = yes
+	}
+}
+konijkmener_lifepath_97 = {
+	name = "Ielve"
+	religion = lifepath
+	culture = konijkmener
+	female = yes
+	mother = konijkmener_lifepath_91
+	father = konijkmener_lifepath_8
+	dynasty = dyn_konijkmener_3
+	1258.6.3 = {
+		birth = yes
+	}
+	1278.6.3 = {
+		trait = stubborn
+		trait = generous
+		trait = wrathful
+		trait = education_martial_4
+		trait = way_of_nullification_follower
+	}
+}
+konijkmener_lifepath_98 = {
+	name = "Corneria"
+	religion = lifepath
+	culture = konijkmener
+	female = yes
+	mother = konijkmener_lifepath_91
+	father = konijkmener_lifepath_8
+	dynasty = dyn_konijkmener_3
+	1261.2.14 = {
+		birth = yes
+	}
+	1281.2.14 = {
+		trait = calm
+		trait = greedy
+		trait = chaste
+		trait = education_learning_2
+		trait = way_of_knowledge_follower
+	}
+}
+
+
+konijkmener_lifepath_99 = {
+	name = "Raagwrij"
+	religion = lifepath
+	culture = konijkmener
+	dynasty = dyn_konijkmener_10
+	father = konijkmener_lifepath_94
+	mother = urdermantern_lifepath_12
+
+	1244.6.4 = {
+		birth = yes
+	}
+
+	1287.1.5 = {
+		death = { death_reason = death_heart_attack }
+	}
+}
+
+konijkmener_lifepath_100 = {
+	name = "Wielraadt"
+	religion = lifepath
+	culture = konijkmener
+	dynasty = dyn_konijkmener_10
+	father = konijkmener_lifepath_99
+
+	1273.11.22 = {
+		birth = yes
+	}
+	1293.11.22 = {
+		trait = vengeful
+		trait = gregarious
+		trait = fickle
+		trait = education_martial_3
+		trait = way_of_swords_follower
+	}
+}
+
+
+konijkmener_lifepath_101 = {
+	name = "Waasoelf"
+	religion = lifepath
+	culture = konijkmener
+	dynasty = dyn_konijkmener_5
+	father = konijkmener_lifepath_6
+	mother = northernimperial_aversarinas_aagiokrata_8
+	1253.12.25 = {
+		birth = yes
+		trait = magic_good_1
+		trait = beauty_good_1
+	}
+	1276.6.8 = {
+		trait = paranoid
+		trait = brave
+		trait = deceitful
+		trait = education_intrigue_3
+		trait = way_of_crows_follower
+	}
+	1278.7.18 = {
+		add_spouse = konijkmener_lifepath_103
+	}
+}
+konijkmener_lifepath_103 = {
+	name = "Maarke" 
+    female = yes
+    dynasty = dyn_konijkmener_12
+    religion = lifepath
+    culture = konijkmener
+    father = konijkmener_lifepath_75
+    sexuality = heterosexual
+
+    trait = shy
+    trait = forgiving
+    trait = generous
+
+    1261.12.13 = {
+    	birth = yes
+    }
+}
+
+konijkmener_lifepath_104 = {
+    name = "Waalbrien" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+    dynasty = dyn_konijkmener_5
+    father = konijkmener_lifepath_101
+    mother = konijkmener_lifepath_103
+
+    sexuality = bisexual
+
+    1286.8.12 = {
+        birth = yes
+    }
+}
+
+konijkmener_lifepath_105 = {
+    name = "Gaartrien" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+    dynasty = dyn_konijkmener_5
+    father = konijkmener_lifepath_101
+    mother = konijkmener_lifepath_103
+
+    sexuality = heterosexual
+
+    1291.2.11 = {
+        birth = yes
+    }
+}
+
+konijkmener_lifepath_106 = {
+    name = "Erdt" 
+
+    dynasty = dyn_konijkmener_5
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_6
+    mother = northernimperial_aversarinas_aagiokrata_8
+
+    sexuality = heterosexual
+
+    trait = vengeful
+    trait = wrathful
+    trait = gluttonous
+    trait = education_martial_2
+    trait = way_of_swords_follower
+
+    1263.2.10 = {
+        birth = yes
+    }
+
+    1283.12.9 = {
+        add_spouse = konijkmener_lifepath_107
+    }
+}
+
+konijkmener_lifepath_107 = {
+    name = "Lijsbeen" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+
+    sexuality = heterosexual
+
+    trait = paranoid
+    trait = brave
+    trait = ambitious
+    trait = education_martial_4
+    trait = gh_historical_blademaster_3
+    1266.5.28 = {
+        birth = yes
+    }
+}
+
+konijkmener_lifepath_108 = {
+    name = "Waalbrien" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+    dynasty = dyn_konijkmener_5
+    father = konijkmener_lifepath_106
+    mother = konijkmener_lifepath_107
+
+    sexuality = heterosexual
+
+    1283.11.13 = {
+        birth = yes
+    }
+}
+
+konijkmener_lifepath_109 = {
+    name = "Eenwaar" 
+
+    dynasty = dyn_konijkmener_5
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_106
+    mother = konijkmener_lifepath_107
+
+    1293.7.17 = {
+        birth = yes
+    }
+}
+
+
+konijkmener_lifepath_110 = {
+    name = "Maatlier" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+
+    sexuality = heterosexual
+
+    trait = compassionate
+    trait = wrathful
+    trait = greedy
+
+    1252.5.11 = {
+        birth = yes
+    }
+}
+
+konijkmener_lifepath_112 = {
+    name = "Kielmijs" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+    dynasty = dyn_konijkmener_8
+    father = konijkmener_lifepath_12
+    mother = konijkmener_lifepath_110
+
+    sexuality = heterosexual
+
+    trait = lazy
+    trait = arbitrary
+    trait = wrathful
+
+    1271.5.23 = {
+        birth = yes
+    }
+}
+
+konijkmener_lifepath_113 = {
+    name = "Maakse" 
+
+    religion = lifepath
+    culture = konijkmener
+    dynasty = dyn_konijkmener_8
+    father = konijkmener_lifepath_12
+    mother = konijkmener_lifepath_110
+
+    sexuality = heterosexual
+
+    trait = fickle
+    trait = diligent
+    trait = gregarious
+
+    1272.6.28 = {
+        birth = yes
+    }
+}
+
+
+konijkmener_lifepath_114 = {
+    name = "Amaalbij" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+
+    sexuality = heterosexual
+
+    trait = patient
+    trait = content
+    trait = generous
+
+    1239.6.1 = {
+        birth = yes
+    }
+}
+
+konijkmener_lifepath_115 = {
+    name = "Aagedirk" 
+
+    dynasty = dyn_konijkmener_8
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_9
+    mother = konijkmener_lifepath_114
+
+    sexuality = heterosexual
+
+    trait = generous
+    trait = shy
+    trait = ambitious
+
+    1256.8.9 = {
+        birth = yes
+    }
+
+    1291.5.1 = {
+        add_spouse = konijkmener_lifepath_116
+    }
+}
+
+konijkmener_lifepath_116 = {
+    name = "Suzijke" 
+    female = yes
+
+    dynasty = dyn_konijkmener_5
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_6
+    mother = northernimperial_aversarinas_aagiokrata_8
+
+    sexuality = heterosexual
+
+    trait = cynical
+    trait = forgiving
+    trait = fickle
+
+    1274.8.5 = {
+        birth = yes
+    }
+}
+
+konijkmener_lifepath_117 = {
+    name = "Kliesse" 
+    female = yes
+
+    religion = lifepath
+    culture = konijkmener
+
+    father = konijkmener_lifepath_9
+    mother = konijkmener_lifepath_114
+
+    sexuality = heterosexual
+
+    trait = ambitious
+    trait = humble
+    trait = forgiving
+
+    1259.7.10 = {
+        birth = yes
+    }
+}
+
+konijkmener_lifepath_119 = { # LAAMP
+	name = "Trant"
+	dynasty = dyn_konijkmener_15
+	martial = 7
+	diplomacy = 5
+	intrigue = 3
+	stewardship = 1
+	learning = 0
+	prowess = 9
+	religion = "lifepath"
+	culture = "konijkmener"
+	
+	trait = arrogant
+	trait = gregarious
+	trait = brave
+	trait = intellect_bad_1
+	trait = education_martial_3
+	trait = strong
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_rtt_01
+			custom_hair = male_hair_fp1_05
+		}
+	}
+
+	1233.2.2 = {
+		birth = yes
+	}
+
+	1251.1.1 = {
+	trait = gh_historical_blademaster_2
+	trait = way_of_swords_follower
+	}
+
+	1266.2.20 = {
+		death = { death_reason = death_mysterious }
+	}
+}
+
+konijkmener_lifepath_121 = { #Littincksmag the weirdo
+    name = "Littincksmag" 
+
+    religion = lifepath
+    culture = konijkmener
+
+    trait = callous
+    trait = eccentric
+    trait = gluttonous
+
+    1222.1.10 = {
+        birth = yes
+    }
+	1237.1.10 = {
+		trait = education_diplomacy_2
+		trait = way_of_crows_follower
+	}
+	
+	1241.1.1 = {
+		trait = lifestyle_mystic
+	}
+}
+
+konijkmener_lifepath_122 = { #Mariet who would be queen
+    name = "Mariet" 
+	female = yes
+    religion = lifepath
+    culture = konijkmener
+
+    trait = callous
+    trait = ambitious
+    trait = intellect_good_2
+	trait = brave
+	
+    1228.4.2 = {
+        birth = yes
+    }
+	1244.4.2 = {
+		trait = education_stewardship_4
+		trait = way_of_coins_follower
+	}
+}
+
+konijkmener_lifepath_123 = { #Heldt the cowardly lion
+    name = "Heldt" 
+
+    religion = lifepath
+    culture = konijkmener
+
+    trait = craven
+    trait = forgiving
+    trait = gregarious
+	
+    1222.3.2 = {
+        birth = yes
+    }
+	1238.2.2 = {
+		trait = education_martial_3
+		trait = way_of_swords_follower
+	}
+}

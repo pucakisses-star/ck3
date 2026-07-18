@@ -1,0 +1,20 @@
+﻿jassi_iyrossi_aagiokrata_1 = {
+	name = "Latean"
+	dynasty = dyn_iyrossi_6
+	religion = "iyrossi_aagiokrata"
+	culture = "jassi"
+
+	1222.4.12 = {
+		birth = yes
+	}
+}
+
+jassi_iyrossi_aagiokrata_2 = {
+	name = "Petros"
+	religion = "iyrossi_aagiokrata"
+	culture = "jassi"
+
+	1215.4.12 = {
+		birth = yes
+	}
+}

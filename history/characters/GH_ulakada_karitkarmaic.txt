@@ -1,0 +1,17 @@
+﻿ulakada_karitkarmaic_1 = { # 1254 harmless vassal of the Rahikaya
+	name = "Kiratpal"
+	religion = "karitkarmaic"
+	culture = "ulakada"
+	sexuality = heterosexual
+	1199.6.15 = {
+		birth = yes
+	}
+	1209.6.15 = {
+		trait = stubborn
+		trait = chaste
+		trait = gluttonous
+	}
+	1213.6.15 = {
+		trait = education_diplomacy_1
+	}
+}

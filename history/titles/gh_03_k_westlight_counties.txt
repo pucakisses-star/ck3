@@ -1,0 +1,123 @@
+﻿c_new_lonelylight_county_32 = {
+	1203.7.16 = {
+		holder = sceyfig_lighter_aegispact_2
+		government = tribal_government
+	}
+	1241.11.16 = {
+		holder = sceyfig_lighter_aegispact_1
+	}
+}
+c_new_lonelylight_county_45 = {
+	1203.7.16 = {
+		holder = sceyfig_lighter_aegispact_2
+		government = tribal_government
+	}
+	1241.11.16 = {
+		holder = sceyfig_lighter_aegispact_1
+	}
+}
+c_new_lonelylight_county_31 = {
+	1200.1.1 = {
+		holder = aeonyhara_aegispact_1
+		government = theocracy_government
+	}
+}
+c_new_lonelylight_county_30 = {
+	1200.1.1 = {
+		holder = aeonyhara_aegispact_1
+		government = theocracy_government
+	}
+}
+c_new_lonelylight_county_29 = {
+	1200.1.1 = {
+		holder = aeonyhara_aegispact_1
+		government = theocracy_government
+	}
+}
+c_new_lonelylight_county_27 = {
+	1203.7.16 = {
+		holder = sceyfig_lighter_aegispact_2
+		government = tribal_government
+	}
+	1241.11.16 = {
+		holder = sceyfig_lighter_aegispact_3
+	}
+	1253.1.1 = {
+		holder = sceyfig_lighter_aegispact_1
+	}
+}
+c_new_lonelylight_county_36 = {
+	1229.4.15 = {
+		holder = amyenarri_aegispact_3
+		government = tribal_government
+	}
+	1253.1.1 = {
+		liege = 0
+	}
+}
+c_new_lonelylight_county_42 = {
+	1203.7.16 = {
+		holder = sceyfig_lighter_aegispact_2
+		government = tribal_government
+	}
+	1241.11.16 = {
+		holder = sceyfig_lighter_aegispact_3
+	}
+	1253.1.1 = {
+		holder = sceyfig_lighter_aegispact_1
+	}
+}
+c_durandae = {
+	1238.4.21 = {
+		holder = amyenarri_aegispact_1
+		government = tribal_government
+	}
+	1253.1.1 = {
+		liege = 0
+	}
+}
+c_clarephonyc = {
+	1232.3.15 = {
+		holder = amyenarri_aegispact_2
+		government = tribal_government
+	}
+	1253.1.1 = {
+		liege = 0
+	}
+}
+c_new_lonelylight_county_17 = {
+	1229.4.15 = {
+		holder = amyenarri_aegispact_3
+		government = tribal_government
+	}
+	1253.1.1 = {
+		liege = 0
+	}
+}
+c_new_lonelylight_county_15 = {
+	1230.1.1 = {
+		holder = amyenarri_aegispact_5
+		liege = d_alcraddozy_war_pacts
+		government = tribal_government
+	}
+}
+c_new_lonelylight_county_16 = {
+	1230.1.1 = {
+		holder = amyenarri_aegispact_6
+		liege = d_alcraddozy_war_pacts
+		government = tribal_government
+	}
+}
+c_new_lonelylight_county_19 = {
+	1200.1.1 = {
+		holder = amyenarri_aegispact_4
+		government = tribal_government
+	}
+}
+c_new_lonelylight_county_20 = {
+	1200.1.1 = {
+		holder = amyenarri_aegispact_4
+		government = tribal_government
+		liege = 0
+	}
+}

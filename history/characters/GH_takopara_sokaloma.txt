@@ -1,0 +1,39 @@
+﻿takopara_sokaloma_1 = {
+	name = "Vaphaama"
+	religion = "sokaloma"
+	culture = "takopara"
+
+	1219.11.15 = {
+		birth = yes
+	}
+}
+
+takopara_sokaloma_2 = {
+	name = "Tavihauthoa"
+	religion = "sokaloma"
+	culture = "takopara"
+
+	1227.12.5 = {
+		birth = yes
+	}
+}
+
+takopara_sokaloma_3 = {
+	name = "Teuraiterai"
+	religion = "sokaloma"
+	culture = "takopara"
+
+	1205.11.22 = {
+		birth = yes
+	}
+}
+
+takopara_sokaloma_4 = {
+	name = "Fataia"
+	religion = "sokaloma"
+	culture = "takopara"
+
+	1211.10.30 = {
+		birth = yes
+	}
+}

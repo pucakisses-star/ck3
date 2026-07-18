@@ -1,0 +1,67 @@
+
+c_mayik_corridor_18 = {
+	1250.1.1 = {
+		holder = mineris_dejorig_1
+		government = feudal_government
+	}
+}
+c_mayik_corridor_30b = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_caves_22 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_ruins_18 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_room_20 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_ruins_19 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_room_18 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_corridor_17 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_caves_32 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_room_15 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_17 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_caves_34d = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_room_13d = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

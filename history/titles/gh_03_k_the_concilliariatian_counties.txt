@@ -1,0 +1,65 @@
+c_western_undercity_36 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_western_undercity_35 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_western_undercity_41 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_western_undercity_51 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_western_undercity_45 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_western_undercity_33 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_western_undercity_39 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_western_undercity_52 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_western_undercity_31 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_western_undercity_62 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_western_undercity_30 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_western_undercity_60 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_western_undercity_55 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

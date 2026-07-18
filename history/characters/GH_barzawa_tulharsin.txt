@@ -1,0 +1,81 @@
+﻿barzawa_tulharsin_1 = { #Barbarian King invading Sihnamiyah
+	name = "Kummayaziti"
+	religion = "tulharsin"
+	culture = "barzawa"
+
+	1232.1.1 = {
+		birth = yes
+	}
+	1248.1.1 = {
+		trait = ambitious
+		trait = vengeful
+		trait = cynical
+		trait = education_martial_4
+	}
+}
+
+barzawa_tulharsin_2 = { #Son of Kummayaziti
+	name = "Kummayaziti"
+	religion = "tulharsin"
+	culture = "barzawa"
+	father = barzawa_tulharsin_1
+	1252.1.1 = {
+		birth = yes
+		trait = twin
+	}
+	1268.1.1 = {
+		trait = just
+		trait = greedy
+		trait = ambitious
+		trait = education_martial_2
+	}
+}
+
+barzawa_tulharsin_3 = { #Son2 of Kummayaziti
+	name = "Miliyaziti"
+	religion = "tulharsin"
+	culture = "barzawa"
+	father = barzawa_tulharsin_1
+	1252.1.1 = {
+		birth = yes
+		trait = twin
+	}
+	1268.1.1 = {
+		trait = arbitrary
+		trait = cynical
+		trait = craven
+		trait = education_stewardship_1
+	}
+}
+barzawa_tulharsin_4 = { #Son3 of Kummayaziti
+	name = "Naninshi"
+	religion = "tulharsin"
+	culture = "barzawa"
+	father = barzawa_tulharsin_1
+	1260.1.1 = {
+		birth = yes
+		trait = giant
+	}
+	1276.1.1 = {
+		trait = vengeful
+		trait = brave
+		trait = impatient
+		trait = education_martial_3
+	}
+}
+
+barzawa_tulharsin_5 = { #Son4 of Kummayaziti
+	name = "Sibbaziti"
+	religion = "tulharsin"
+	culture = "barzawa"
+	father = barzawa_tulharsin_1
+	1268.1.1 = {
+		birth = yes
+	}
+	1284.1.1 = {
+		trait = lustful
+		trait = greedy
+		trait = stubborn
+		trait = education_diplomacy_1
+	}
+}

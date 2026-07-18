@@ -1,0 +1,39 @@
+﻿leriseb_sheharddi_1 = {
+	name = Nasan
+	religion = sheharddi
+	culture = simevian
+
+	1202.4.27 = {
+		birth = yes
+		trait = strong
+	}
+
+	1222.4.27 = {
+		trait = ambitious
+		trait = shy
+		trait = calm
+		trait = shrewd
+		trait = education_martial_3
+	}
+}
+
+leriseb_sheharddi_2 = { 
+	name = Moshe
+	dynasty = dyn_israel_7
+	religion = "sheharddi"
+	culture = "leriseb"
+
+	1210.4.14 = {
+		birth = yes
+	}
+}
+
+leriseb_sheharddi_3 = { 
+	name = Omer
+	religion = "sheharddi"
+	culture = "ashital"
+
+	1232.1.22 = {
+		birth = yes
+	}
+}

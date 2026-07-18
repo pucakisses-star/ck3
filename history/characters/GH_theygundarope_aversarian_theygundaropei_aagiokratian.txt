@@ -1,0 +1,157 @@
+﻿theygundarope_aversarian_theygundaropei_aagiokratian_1 = {
+	name = "Thestia"
+	female = yes
+	religion = theygundaropei_aagiokratian
+	culture = theygundarope_aversarian
+	trait = shrewd
+	1211.2.24 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	1233.2.24 = {
+		trait = patient
+		trait = arbitrary
+		trait = ambitious
+	}
+	1237.2.24 = {
+		trait = education_intrigue_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+	1253.2.11 = {
+		set_relation_rival = character:northernimperial_aversarinas_aagiokrata_11
+		set_relation_friend = character:theygundarope_aversarian_theygundaropei_aagiokratian_3
+		add_pressed_claim = title:c_convergence
+	}
+}
+
+theygundarope_aversarian_theygundaropei_aagiokratian_2 = {
+	name = "Plikasnas"
+	religion = theygundaropei_aagiokratian
+	culture = theygundarope_aversarian
+	1215.7.2 = {
+		birth = yes
+		trait = magic_good_2
+	}
+	1227.7.2 = {
+		trait = content
+		trait = shy
+		trait = trusting
+	}
+	1231.7.2 = {
+		trait = education_stewardship_2
+	}
+	#1250.1.1 = {
+	#	effect = {
+	#		vassal_contract_set_obligation_level = {
+	#			type = feudal_government_taxes
+	#			level = 3
+	#		}
+	#		vassal_contract_set_obligation_level = {
+	#			type = feudal_government_levies
+	#			level = 3
+	#		}
+	#		vassal_contract_set_obligation_level = {
+	#			type = title_revocation_rights
+	#			level = 1
+	#		}
+	#	}
+	#}
+}
+
+theygundarope_aversarian_theygundaropei_aagiokratian_3 = {
+	name = "Iacus"
+	religion = theygundaropei_aagiokratian
+	culture = theygundarope_aversarian
+	1225.7.25 = {
+		birth = yes
+		trait = magic_good_2
+	}
+	1237.7.25 = {
+		trait = arbitrary
+		trait = wrathful
+		trait = callous
+	}
+	1241.7.25 = {
+		trait = education_stewardship_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+}
+
+theygundarope_aversarian_theygundaropei_aagiokratian_4 = {
+	name = "Aessicunia"
+	female = yes
+	religion = theygundaropei_aagiokratian
+	culture = theygundarope_aversarian
+	trait = beauty_good_1
+
+	1201.11.20 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	1213.11.20 = {
+		trait = generous
+		trait = just
+		trait = impatient
+	}
+	1217.11.20 = {
+		trait = education_diplomacy_2
+	}
+	1250.1.1 = {
+		#effect = {
+		#	vassal_contract_set_obligation_level = {
+		#		type = religious_rights
+		#		level = 1
+		#	}
+		#	vassal_contract_set_obligation_level = {
+		#		type = title_revocation_rights
+		#		level = 1
+		#	}
+		#	vassal_contract_set_obligation_level = {
+		#		type = council_rights
+		#		level = 1
+		#	}
+		#}
+	}
+}
+
+theygundarope_aversarian_theygundaropei_aagiokratian_5 = {
+	name = "Prasutagus"
+	religion = theygundaropei_aagiokratian
+	culture = theygundarope_aversarian
+	1221.10.25 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	1233.10.25 = {
+		trait = paranoid
+		trait = fickle
+		trait = arrogant
+	}
+	1237.10.25 = {
+		trait = education_learning_3
+	}
+	1250.1.1 = {
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = religious_rights
+				level = 1
+			}
+			vassal_contract_set_obligation_level = {
+				type = title_revocation_rights
+				level = 1
+			}
+			vassal_contract_set_obligation_level = {
+				type = council_rights
+				level = 1
+			}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+c_1211 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_1213 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_1241 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_31
+	}
+	1200.3.1 = {
+		holder = fog_eaters_fogeater_15
+		government = migratory_government
+	}
+}
+c_1215 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_1233 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_1222 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_1244 = {
+	1230.1.1 = {
+		holder = fog_eaters_fogeater_16
+		government = migratory_government
+	}
+}

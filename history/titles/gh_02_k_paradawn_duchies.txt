@@ -1,0 +1,7 @@
+d_checoryda = {
+	1230.1.1 = {
+		liege = k_kteumaxa
+		holder = murarut_cumani_8
+		government = nomad_government
+	}
+}

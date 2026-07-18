@@ -1,0 +1,50 @@
+c_sunken_depths_39 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_sunken_depths_40 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_sunken_depths_50 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_sunken_depths_52 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_sunken_depths_49 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_sunken_depths_56 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_sunken_depths_51 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_sunken_depths_44 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_sunken_depths_53 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_sunken_depths_48 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

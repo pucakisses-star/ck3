@@ -1,0 +1,8 @@
+﻿coldcoaster_darrallianism_1 = {
+	name = "Ageric"
+	religion = darrallianism
+	culture = coldcoaster
+	1196.11.25 = {
+		birth = yes
+	}
+}

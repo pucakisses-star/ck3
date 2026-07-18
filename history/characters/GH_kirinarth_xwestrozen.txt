@@ -1,0 +1,242 @@
+﻿# The Birikirav dynasty, rulers of Birkir
+kirinarth_xwestrozen_1 = { # Current ruler of Birkir in the year 1256
+	name = "Thifrar"
+	religion = xwestrozen
+	culture = kirinarth
+	female = yes
+	dynasty_house = house_birikirav
+	mother = kirinarth_xwestrozen_3
+	1205.3.14 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 2 }
+		}
+	}
+	1218.3.14 = {
+		trait = craven
+		trait = cynical
+		trait = education_martial_1
+	}
+	1222.3.14 = {
+		religion = stranuni
+	}
+	1254.1.1 = {
+		#effect = { #TODO GH: Verify if it's just remanent of an older version, cause she real dead rn
+		#	vassal_contract_set_obligation_level = {
+		#		type = religious_rights
+		#		level = 1
+		#	}
+		#	vassal_contract_set_obligation_level = {
+		#		type = title_revocation_rights
+		#		level = 1
+		#	}
+		#}
+	}
+}
+
+kirinarth_xwestrozen_2 = { # Thifrar older sister, died in the fighting
+	name = "Kahina"
+	religion = xwestrozen
+	culture = kirinarth
+	female = yes
+	dynasty_house = house_birikirav
+	mother = kirinarth_xwestrozen_3
+
+	1201.6.20 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1217.6.20 = {
+		trait = brave
+		trait = education_martial_4
+		trait = gh_historical_blademaster_1
+	}
+	1221.11.17 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+kirinarth_xwestrozen_3 = { # Thifrar's mother, died in the fighting with Kahina
+	name = "Asa"
+	religion = xwestrozen
+	culture = kirinarth
+	female = yes
+	dynasty_house = house_birikirav
+	mother = kirinarth_xwestrozen_4
+	1175.9.16 = {
+		birth = yes
+	}
+	1191.9.16 = {
+		trait = humble
+		trait = brave
+		trait = impatient
+		trait = education_martial_2
+	}
+	1221.11.17 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+kirinarth_xwestrozen_4 = { # Asa's mother
+	name = "Tazirit"
+	religion = xwestrozen
+	culture = kirinarth
+	female = yes
+	dynasty_house = house_birikirav
+	mother = kirinarth_xwestrozen_5
+	1145.7.8 = {
+		birth = yes
+	}
+	1161.7.8 = {
+		trait = patient
+		trait = humble
+		trait = content
+		trait = education_diplomacy_1
+	}
+	1193.9.23 = {
+		death = {
+			death_reason = death_disappearance
+		}
+	}
+}
+
+kirinarth_xwestrozen_5 = { # Tazirit's mother
+	name = "Thirnis"
+	religion = xwestrozen
+	culture = kirinarth
+	female = yes
+	dynasty_house = house_birikirav
+	1119.3.21 = {
+		birth = yes
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+#Ezralin Dynasty
+kirinarth_xwestrozen_101 = { # current ruler of Erziwas. Was not intended to rule and had planned on following the path of scholarship
+	name = "Illi"
+	religion = xwestrozen
+	culture = kirinarth
+	female = yes
+	mother = kirinarth_xwestrozen_102
+	1175.1.13 = {
+		birth = yes
+	}
+	1191.1.13 = {
+		trait = education_learning_2
+		trait = shy
+		trait = calm
+	}
+}
+
+kirinarth_xwestrozen_102 = { # Mother of Illi
+	name = "Tayyurt"
+	religion = xwestrozen
+	culture = kirinarth
+	female = yes
+	1147.12.11 = {
+		birth = yes
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+kirinarth_xwestrozen_103 = { # Sister of Illi and favored child to the throne	
+	name = "Tfoulla"
+	religion = xwestrozen
+	culture = kirinarth
+	female = yes
+	mother = kirinarth_xwestrozen_102
+	1173.5.20 = {
+		birth = yes
+	}
+	1189.5.20 = {
+		trait = education_diplomacy_3
+		trait = diligent
+		trait = compassionate
+		trait = gregarious
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+kirinarth_xwestrozen_104 = {	
+	name = "Tifayour"
+	religion = xwestrozen
+	culture = kirinarth
+	female = yes
+	1183.4.26 = {
+		birth = yes
+	}
+}
+
+kirinarth_xwestrozen_201 = {
+	name = "Tamayourt"
+	religion = xwestrozen
+	culture = kirinarth
+	female = yes
+	1165.3.8 = {
+		birth = yes
+	}
+}
+
+kirinarth_xwestrozen_8 = {
+	name = "Merkida"
+	religion = xwestrozen
+	culture = kirinarth
+	female = yes
+	1172.3.11 = {
+		birth = yes
+	}
+	1254.1.1 = {
+		#effect = { #TODO: Veryify is why is she alive?
+		#	vassal_contract_set_obligation_level = {
+		#		type = religious_rights
+		#		level = 1
+		#	}
+		#	vassal_contract_set_obligation_level = {
+		#		type = title_revocation_rights
+		#		level = 1
+		#	}
+		#}
+	}
+}
+
+kirinarth_xwestrozen_9 = {
+	name = "Slima"
+	religion = xwestrozen
+	culture = kirinarth
+	female = yes
+	1173.3.13 = {
+		birth = yes
+	}
+	1254.1.1 = {
+		#effect = { #TODO: Veryify is why is she alive?
+		#	vassal_contract_set_obligation_level = {
+		#		type = religious_rights
+		#		level = 1
+		#	}
+		#	vassal_contract_set_obligation_level = {
+		#		type = title_revocation_rights
+		#		level = 1
+		#	}
+		#}
+	}
+}

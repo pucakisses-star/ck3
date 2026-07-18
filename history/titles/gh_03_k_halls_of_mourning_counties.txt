@@ -1,0 +1,41 @@
+﻿
+c_eastcatacombs_54 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_eastcatacombs_6896952 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_eastcatacombs_50 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_eastcatacombs_51 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_eastcatacombs_44 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_eastcatacombs_45 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_eastcatacombs_42 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_eastcatacombs_47 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

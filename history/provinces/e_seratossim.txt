@@ -1,0 +1,138 @@
+2541 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+
+3041 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+
+3042 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+
+3045 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+
+3051 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+
+3054 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+
+3067 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+
+3072 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+
+3073 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+
+3075 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+
+3079 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+
+3080 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+
+3085 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+
+3092 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+
+3095 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+
+3097 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+
+3105 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+
+3113 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+
+3128 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+
+3132 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+
+3388 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+
+3389 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+
+3390 = {
+	culture = aslalti
+	religion = saratarat
+	holding = castle_holding
+}
+

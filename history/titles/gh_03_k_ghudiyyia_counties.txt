@@ -1,0 +1,37 @@
+
+c_muhatt = {
+	1223.7.6 = {
+		holder = ghudiyy_wardenism_1
+	}
+}
+c_tharfis = {
+	1241.11.9 = {
+		holder = ghudiyy_harfi_1
+		government = migratory_government
+	}
+}
+c_northern_undercrossing = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_thadou = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_arradis = {
+	1250.1.1 = {
+		holder = mazunic_haradar_1
+	}
+}
+c_geelweshur = {
+	1250.1.1 = {
+		holder = ghudiyy_harfi_4
+	}
+}
+c_twayara = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}

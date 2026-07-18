@@ -1,0 +1,81 @@
+﻿object={
+	name="GH - Bones - Dragon Ribcage"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_bones"
+	entity="gh_bones_dragon_ribcage_entity"
+	count=4
+	transform="2642.509277 -1.226562 2232.013672 0.000000 -0.560838 0.000000 0.827925 0.663623 0.663623 0.663623
+2579.175781 -2.121582 2179.790283 0.000000 -0.968114 0.000000 -0.250512 1.000000 1.000000 1.000000
+2733.266357 0.000000 1866.790283 0.000000 -0.497347 0.000000 0.867552 0.475903 0.475903 0.475903
+2441.251221 -3.263672 2710.583740 0.000000 0.000000 0.000000 1.000000 1.248047 1.248047 1.248047
+"}
+object={
+	name="GH - Bones - Dragon Skull"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_bones"
+	entity="gh_bones_dragon_skull_entity"
+	count=2
+	transform="2645.594238 -0.787598 2229.604248 0.000000 -0.202687 0.000000 0.979243 0.726538 0.726538 0.726538
+2734.718506 0.000000 1866.181763 0.000000 -0.542231 0.000000 0.840230 0.499121 0.499121 0.499121
+"}
+object={
+	name="GH - Bones - Mammoth Neck"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_bones"
+	entity="gh_bones_mammoth_neck_entity"
+	count=2
+	transform="2508.320312 -2.486572 2196.812988 0.000000 -0.252191 0.000000 0.967677 5.759863 5.759863 5.759863
+2638.585205 -0.520752 2232.641602 0.000000 -0.657318 0.000000 0.753613 2.214906 2.214906 2.214906
+"}
+object={
+	name="GH - Bones - Mammoth Ribcage"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_bones"
+	entity="gh_bones_mammoth_ribcage_entity"
+	count=0
+}
+object={
+	name="GH - Bones - Mammoth Skull"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_bones"
+	entity="gh_bones_mammoth_skull_entity"
+	count=0
+}
+object={
+	name="GH - Bones - Whale Ribs"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_bones"
+	entity="gh_bones_whale_ribs_entity"
+	count=0
+}
+object={
+	name="GH - Bones - Whale Skull"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_bones"
+	entity="gh_bones_whale_skull_entity"
+	count=0
+}
+object={
+	name="GH - Bones - Whale Spine"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="gh_bones"
+	entity="gh_bones_whale_spine_entity"
+	count=1
+	transform="2564.724121 -2.126709 2289.128662 0.000000 -0.765244 -0.000000 -0.643740 1.000000 1.000000 1.000000
+"}

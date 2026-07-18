@@ -1,0 +1,85 @@
+k_helenai = {
+	1186.11.15 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1205.1.1 = {
+		holder = 0
+	}
+}
+k_adgos = {
+	1186.11.15 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1209.3.1 = {
+		holder = centralimperial_aversarinas_aagiokrata_126
+	}
+	1243.6.9 = {
+		holder = 0
+	}
+}
+k_cyrocaea = {
+	1186.11.15 = {
+		holder = easternimperial_aversarian_axiaotheaism_1
+	}
+	1200.3.1 = {
+		holder = 0
+	}
+}
+#k_delphilikos = {
+#	1186.11.15 = {
+#		holder = westernimperial_aeschraes_aagiokrata_1
+#	}
+#	1205.1.1 = {
+#		holder = 0
+#	}
+#}
+k_kallios = {
+	1186.11.15 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1205.1.1 = {
+		holder = 0
+	}
+}
+k_kasmiene = {
+	1186.11.15 = {
+		holder = easternimperial_aversarian_axiaotheaism_1
+		change_development_level = 23
+	}
+	1200.3.1 = {
+		holder = 0
+		change_development_level = 11
+	}
+	1227.3.14 = {
+		change_development_level = 8
+		 
+		holder = southernimperial_manikos_aagiokrata_1
+		liege = 0
+	}
+}
+k_mytidon = { 
+	1.1.2 = {
+		holder = unsorted_42
+	}
+	81.5.12 = {
+		holder = scusstari_iyrossi_1
+	}
+	81.5.12 = {
+		change_development_level = 3
+	}
+	119.6.17 = {
+		holder = 0
+	}
+	1000.1.1 = {
+		change_development_level = 32
+	}
+	1180.4.15 = {
+		change_development_level = 30
+	}
+	1200.1.1 = {
+		change_development_level = 11
+	}
+	1240.8.13 = {
+		change_development_level = 8
+	}
+}

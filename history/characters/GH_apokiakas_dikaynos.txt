@@ -1,0 +1,49 @@
+﻿apokiakas_dikaynos_1 = { # Pascos 'the Heathen', Katraddian noble that joined the Agionist Cause
+	name = "Pascos"
+	religion = aversarinas_aagiokrata
+	culture = apokiakas
+	disallow_random_traits = yes
+	dynasty = dyn_aversarian_134
+
+	dna = pascos
+
+	martial = 6
+	diplomacy = 4
+	intrigue = 8
+	stewardship = 8
+	learning = 8
+	prowess = 5
+
+	1042.1.23 = {
+		birth = yes
+	}
+
+	1054.1.1 = {
+		trait = just
+		trait = fickle
+		trait = paranoid
+	}
+
+	1058.1.23 = {
+		trait = education_learning_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1064.6.16 = {
+		trait = gh_glowing_veins
+		trait = gh_ritual_tattoos
+		give_nickname = nick_the_heathen_pascos
+	}
+
+	1092.1.4 = {
+		religion = dikaynos
+		death = {
+			death_reason = death_battle
+			killer = southernimperial_aversarinas_aagiokrata_15 # Legon Tharesix of Legio XIV 'Chain-Forgers'
+		}
+	}
+}

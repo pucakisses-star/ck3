@@ -1,0 +1,1210 @@
+﻿542 = {
+	holding = none
+}
+
+889 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	holding = metro_holding
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+	1240.1.1 = {
+		culture = irmionoth
+		religion = sjalvolki
+	}
+	1280.1.1 = {
+		holding = metro_holding
+		#culture = rohfulka
+		religion = orispolj_rite
+	}
+}
+
+1315 = {
+	holding = city_holding
+}
+
+1882 = {
+	holding = city_holding
+}
+
+1994 = {
+	holding = ruin_holding
+}
+
+
+
+2152 = {
+	holding = city_holding
+}
+
+2351 = {
+	holding = none
+}
+
+2354 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = ordikin
+		religion = mothers_and_fathers
+	}
+	holding = castle_holding
+}
+
+2358 = {
+	1200.1.1 = {
+		special_building = 01_listikraxos
+	}
+	holding = city_holding
+}
+
+2363 = {
+	holding = none
+}
+
+2365 = {
+	holding = none
+}
+
+2367 = {
+	holding = none
+}
+
+2368 = {
+	holding = none
+}
+
+2370 = {
+	holding = none
+}
+
+2371 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = irmionoth
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+2372 = {
+	holding = none
+}
+
+2375 = {
+	holding = none
+}
+
+2378 = {
+	holding = none
+}
+
+2382 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = irmionoth
+		religion = sjalvolki
+	}
+	
+	1200.1.1 = {
+		special_building = 01_listikraxos
+	}
+	holding = castle_holding
+}
+
+2384 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		religion = wasteland_faith
+		culture = wasteland
+	}
+}
+
+2386 = {
+	holding = none
+}
+
+2388 = {
+	holding = none
+}
+
+2401 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	724.3.14 = {
+		special_building = 01_listikraxos
+	}
+	1240.1.1 = {
+		culture = daukeni
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+2403 = {
+	holding = none
+}
+
+2406 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = daukeni
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+2410 = {
+	holding = church_holding
+}
+
+2412 = {
+	holding = none
+}
+
+2415 = {
+	holding = none
+}
+
+2421 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = ordikin
+		religion = mothers_and_fathers
+	}
+	holding = tribal_holding
+}
+
+2423 = {
+	holding = none
+}
+
+2424 = {
+	holding = none
+}
+
+2430 = {
+	holding = none
+}
+
+2434 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = auteonic
+		religion = partic
+	}
+	holding = tribal_holding
+}
+
+2435 = {
+	holding = none
+}
+
+2437 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = auteonic
+		religion = partic
+	}
+	holding = castle_holding
+}
+
+2438 = {
+	holding = none
+}
+
+2442 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	724.3.14 = {
+		special_building = 01_listikraxos
+	}
+	1240.1.1 = {
+		culture = adrakamp
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+2445 = {
+	holding = none
+}
+
+2452 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = auteonic
+		religion = partic
+	}
+	holding = tribal_holding
+}
+
+2453 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = auteonic
+		religion = partic
+	}
+	holding = tribal_holding
+}
+
+2458 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = adrakamp
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+2465 = {
+	holding = none
+}
+
+2467 = {
+	holding = none
+}
+
+2470 = {
+	culture = symvolix
+	religion = hero_religion
+	holding = castle_holding
+}
+
+2473 = {
+	holding = none
+}
+
+2476 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = ordikin
+		religion = mothers_and_fathers
+	}
+	holding = castle_holding
+}
+
+2478 = {
+	holding = none
+}
+
+2481 = {
+	holding = church_holding
+}
+
+2699 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	724.3.14 = {
+		special_building = 01_listikraxos
+	}
+	1240.1.1 = {
+		culture = adrakamp
+		religion = sjalvolki
+	}
+}
+
+2486 = {
+	holding = none
+}
+
+2488 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = adrakamp
+		religion = sjalvolki
+	}
+	holding = tribal_holding
+}
+
+2490 = {
+	holding = none
+}
+
+2496 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = irmionoth
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+2499 = {
+	holding = none
+}
+
+2505 = {
+	holding = ruin_holding
+	1290.3.1 = {
+		holding = church_holding
+	}
+}
+
+2506 = {
+	holding = none
+}
+
+2510 = {
+	holding = ruin_holding
+	1297.1.1 = {
+		holding = castle_holding
+	}
+}
+
+2513 = {
+	holding = none
+}
+
+2514 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = irmionoth
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+2518 = {
+	holding = none
+}
+
+2522 = {
+	holding = none
+}
+
+2527 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = irmionoth
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+2528 = {
+	holding = none
+}
+
+2532 = {
+	holding = none
+}
+
+2534 = {
+	holding = none
+}
+
+2538 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = vrodkin
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+2540 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	1200.1.1 = {
+		culture = wasteland
+		religion = wasteland_faith
+		holding = wasteland_empty_holding
+	}
+}
+
+2545 = {
+	holding = none
+}
+
+2548 = {
+	holding = none
+}
+
+2551 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	1282.3.15 = {
+		religion = wasteland_faith
+		culture = wasteland
+		holding = ruin_holding
+		special_building = 03_special_aervalr_shard
+	}
+}
+
+2553 = {
+	holding = castle_holding
+	
+	724.3.14 = {
+		special_building = 01_listikraxos
+	}
+
+	1282.3.15 = {
+		holding = ruin_holding
+	}
+}
+
+2557 = {
+	holding = none
+}
+
+2559 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = ordikin
+		religion = mothers_and_fathers
+	}
+	holding = castle_holding
+}
+
+2562 = {
+	holding = none
+}
+
+2563 = {
+	holding = none
+}
+
+2564 = {
+	holding = city_holding
+}
+
+2568 = {
+	holding = none
+}
+
+2569 = {
+	holding = none
+}
+
+2571 = {
+	holding = none
+}
+
+2572 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	holding = metro_holding
+	
+	744.3.15 = {
+		special_building = 01_bastonport
+	}
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+	
+	1240.1.1 = {
+		culture = vrodkin
+		religion = sjalvolki
+		
+		buildings = {
+			
+			
+			
+			
+			gh_walls_02
+		}
+	}
+}
+
+2575 = {
+	holding = none
+}
+
+2576 = {
+	holding = none
+}
+
+2581 = {
+	culture = greulokin
+	religion = sjalvolki
+	holding = castle_holding
+}
+
+2583 = {
+	holding = none
+}
+
+2587 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	1240.1.1 = {
+		culture = greulokin
+		religion = sjalvolki
+		holding = castle_holding
+	}
+}
+
+2589 = {
+	holding = ruin_holding
+}
+
+2590 = {
+	holding = none
+}
+
+2595 = {
+	holding = ruin_holding
+}
+
+2599 = {
+	1200.1.1 = {
+		holding = ruin_holding
+	}
+	1240.1.1 = {
+		culture = greulokin
+		religion = sjalvolki
+		holding = castle_holding
+	}
+}
+
+2605 = {
+	religion = aversarinas_aagiokrata
+	culture = northernimperial
+	1240.1.1 = {
+		culture = vrodkin
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+
+2606 = {
+	holding = none
+}
+
+2609 = {
+	holding = city_holding
+}
+
+2611 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = vrodkin
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+2613 = {
+	holding = none
+}
+
+2616 = {
+	holding = none
+}
+
+2617 = {
+	religion = aversarinas_aagiokrata
+	culture = northernimperial
+	1240.1.1 = {
+		culture = vrodkin
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+
+
+2621 = {
+	holding = none
+}
+
+2624 = {
+	holding = none
+}
+
+2626 = {
+	holding = none
+}
+
+2627 = {
+	holding = none
+}
+
+2629 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = vrodkin
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+
+2630 = {
+	holding = none
+}
+
+2634 = {
+	holding = none
+}
+
+2635 = {
+	holding = none
+}
+
+2637 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	1197.1.1 = {
+		culture = wasteland
+		religion = wasteland_faith
+		holding = wasteland_empty_holding
+	}
+}
+
+2640 = {
+	holding = none
+}
+
+2641 = {
+	holding = none
+}
+
+2645 = {
+	religion = aversarinas_aagiokrata
+	culture = northernimperial
+	1240.1.1 = {
+		culture = vrodkin
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+2647 = {
+	holding = none
+}
+
+2650 = {
+	holding = none
+}
+
+2652 = {
+	holding = none
+}
+
+2654 = {
+	holding = none
+}
+
+2657 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = vrodkin
+		religion = sjalvolki
+		#special_building = 01_elysian_pass
+	}
+	holding = castle_holding
+}
+
+2658 = {
+	religion = aversarinas_aagiokrata
+	culture = northernimperial
+	1240.1.1 = {
+		culture = vrodkin
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+2660 = {
+	holding = none
+}
+
+2663 = {
+	holding = none
+}
+
+2666 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = caemansi
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+2669 = {
+	holding = none
+}
+
+2670 = {
+	holding = none
+}
+
+2671 = {
+	religion = aversarinas_aagiokrata
+	culture = northernimperial
+	1240.1.1 = {
+		culture = caemansi
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+2675 = {
+	religion = aversarinas_aagiokrata
+	culture = northernimperial
+	holding = metro_holding
+
+	367.11.11 = {
+		special_building = 01_pathospalace
+	}
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+	1240.1.1 = {
+		culture = vrodkin
+		religion = sjalvolki
+		
+		buildings = {
+			
+			
+			luxury_goods_01
+			
+		}
+	}
+}
+
+2676 = {
+	holding = none
+}
+
+2679 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = vrodkin
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+2682 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = caemansi
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+2684 = {
+	holding = none
+}
+
+2685 = {
+	holding = none
+}
+
+2686 = {
+	holding = none
+}
+
+2690 = {
+	holding = none
+}
+
+2691 = {
+	holding = none
+}
+
+2692 = {
+	holding = church_holding
+}
+
+2694 = {
+	holding = none
+}
+
+2695 = {
+	holding = none
+}
+
+2696 = {
+	holding = none
+}
+
+2697 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = corvosnari
+		religion = wyrdpath
+	}
+	holding = castle_holding
+}
+
+2700 = {
+	holding = none
+}
+
+2701 = {
+	holding = none
+}
+
+2702 = {
+	holding = none
+}
+
+2710 = {
+	holding = none
+}
+
+2712 = {
+	holding = none
+}
+
+2715 = {
+	holding = none
+}
+
+2717 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = adrakamp
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+2718 = {
+	holding = none
+}
+
+2719 = {
+	holding = none
+}
+
+2722 = {
+	holding = city_holding
+}
+
+
+2731 = {
+	holding = none
+}
+
+2873 = {
+	1240.1.1 = {
+		holding = tribal_holding
+		culture = sarminians
+		religion = salacad
+	}
+}
+
+2987 = {
+	culture = theygundarope
+	religion = theygundaropei_aagiokratian
+	holding = castle_holding
+}
+
+3036 = {
+	culture = vrodkin
+	religion = sjalvolki
+	holding = tribal_holding
+	1298.1.1 = {
+		holding = city_holding
+	}
+}
+
+3277 = {
+	holding = city_holding
+}
+
+3292 = {
+	holding = city_holding
+}
+
+3381 = {
+	holding = none
+}
+
+3391 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = daukeni
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+3392 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = daukeni
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+3393 = {
+	holding = none
+}
+
+3396 = {
+	holding = church_holding
+}
+
+3397 = {
+	holding = none
+}
+
+3398 = {
+	holding = none
+}
+
+3403 = {
+	holding = none
+}
+
+3405 = {
+	holding = none
+}
+
+3410 = {
+	religion = sjalvolki
+	culture = daukeni
+
+	0.1.1 = {
+		special_building = 01_oetanai_mines
+	}
+	holding = tribal_holding
+}
+
+3411 = {
+	holding = none
+}
+
+3412 = {
+	religion = aversarinas_aagiokrata
+	culture = practitioner
+	holding = metro_holding
+
+	898.6.14 = {
+		special_building = 01_portacademy
+	}
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+	800.1.1 = {
+		buildings = {
+			
+			
+			
+			
+		}
+	}
+}
+
+3417 = {
+	religion = portenchant
+	culture = mondecny
+	holding = tribal_holding
+}
+
+3419 = {
+	holding = none
+}
+
+3423 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = mondecny
+		religion = portenchant
+	}
+	holding = tribal_holding
+}
+
+3426 = {
+	holding = none
+}
+
+3427 = {
+	holding = none
+}
+
+
+3431 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = mondecny
+		religion = portenchant
+	}
+	holding = castle_holding
+}
+
+3433 = {
+	holding = none
+}
+
+3434 = {
+	religion = portenchant
+	culture = mondecny
+	holding = tribal_holding
+}
+
+
+
+3440 = {
+	religion = portenchant
+	culture = mondecny
+	holding = tribal_holding
+}
+
+3442 = {
+	holding = none
+}
+
+3849 = {
+	holding = church_holding
+}
+
+4609 = {
+	holding = none
+}
+
+4611 = {
+	culture = northernimperial
+	religion = aversarinas_aagiokrata
+	1240.1.1 = {
+		culture = irmionoth
+		religion = sjalvolki
+	}
+	holding = castle_holding
+}
+
+5301 = {
+	holding = none
+}
+
+5400 = {
+	culture = dielecender
+	religion = lifepath
+	holding = castle_holding
+
+	1200.3.15 = {
+		culture = wasteland
+		religion = wasteland_faith
+		holding = wasteland_empty_holding
+	}
+}
+
+3696 = {
+	culture = theygundarope
+	religion = theygundaropei_cult
+	holding = castle_holding
+	
+}
+
+5513 = {
+	culture = theygundarope
+	religion = theygundaropei_aagiokratian
+	holding = castle_holding
+	
+}
+
+5644 = {
+	culture = ordikin
+	religion = mothers_and_fathers
+	holding = castle_holding
+}
+
+5800 = {
+	culture = theygundarope
+	religion = theygundaropei_cult
+	holding = castle_holding
+	
+}
+
+5865 = {
+	culture = yadaniya
+	religion = andaronshak
+	holding = castle_holding
+}
+
+
+5922 = {
+	holding = none
+	
+}
+
+5929 = {
+	holding = none
+}
+
+5931 = {
+	culture = mondecny
+	religion = portenchant
+	holding = tribal_holding
+	
+}
+
+5952 = {
+	culture = aguadosian
+	religion = hero_religion
+	holding = castle_holding
+}
+
+7556 = {
+	holding = none
+}
+
+7581 = {
+	holding = none
+}
+
+7816 = {
+	holding = none
+}
+
+7890 = {
+	culture = etrandanexi
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	724.3.14 = {
+		special_building = 01_listikraxos
+	}
+}

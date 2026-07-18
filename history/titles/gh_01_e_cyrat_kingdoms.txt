@@ -1,0 +1,10 @@
+k_stanthos = {
+	1200.1.1 = {
+		change_development_level = 0
+	}
+}
+k_tamthus = {
+	1200.1.1 = {
+		change_development_level = 0
+	}
+}

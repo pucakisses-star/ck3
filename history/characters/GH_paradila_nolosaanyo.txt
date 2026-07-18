@@ -1,0 +1,9 @@
+﻿paradila_nolosaanyo_1 = {
+	name = "Upul"
+	culture = "paradila"
+	religion = "nolosaanyo"
+
+	1220.1.1 = {
+		birth = yes
+	}
+}

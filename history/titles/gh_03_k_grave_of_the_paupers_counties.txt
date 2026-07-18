@@ -1,0 +1,65 @@
+c_western_undercity_49 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_4aa = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_3aa = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_8cc = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_5cc = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_9bb = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_6cc = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_5ee = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_4gg = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_3dd = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_6ee = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_7aa = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_aaaaa = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

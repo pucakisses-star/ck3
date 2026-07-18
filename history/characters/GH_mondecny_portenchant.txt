@@ -1,0 +1,186 @@
+﻿mondecny_portenchant_1 = {
+	name = "StaD_rek" #Athulagild
+	dynasty = dyn_mond_1
+	religion = "portenchant"
+	culture = "mondecny"
+
+	1214.4.12 = {
+		birth = yes
+	}
+	1230.4.12 = {
+		trait = education_diplomacy_3
+	}
+	1250.5.12 = {
+		add_spouse = mondecny_portenchant_5
+	}
+}
+
+mondecny_portenchant_2 = {
+	name = "Fritkerr"
+	religion = "portenchant"
+	culture = "mondecny"
+
+	1210.4.12 = {
+		birth = yes
+	}
+}
+
+mondecny_portenchant_3 = {
+	name = "Tevek" #Tiweks
+	religion = "portenchant"
+	culture = "mondecny"
+
+	1222.4.12 = {
+		birth = yes
+	}
+}
+
+mondecny_portenchant_4 = {
+	name = "Dolmenn" #Arnntt
+	religion = "portenchant"
+	culture = "mondecny"
+	dynasty = dyn_mond_3
+
+	father = mondecny_portenchant_8
+
+	1231.4.12 = {
+		birth = yes
+	}
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+}
+
+mondecny_portenchant_5 = {
+	name = "KeD_rri"
+	female = yes
+	religion = "portenchant"
+	culture = "mondecny"
+
+	1229.2.17 = {
+		birth = yes
+	}
+	1245.2.17 = {
+		trait = education_stewardship_5
+	}
+	1250.5.12 = {
+		add_spouse = mondecny_portenchant_1
+	}
+}
+
+mondecny_portenchant_6 = {
+	name = "Kavhar" #Mond Cenware
+	religion = "portenchant"
+	culture = "mondecny"
+	father = mondecny_portenchant_1
+	mother = mondecny_portenchant_5
+
+	1250.12.12 = {
+		birth = yes
+	}
+}
+
+mondecny_portenchant_7 = { #Uloven the Aversarian, Mondekni traitor
+	name = "Uloven"
+	religion = "portenchant"
+	culture = "mondecny"
+	dynasty = dyn_mond_3
+	disallow_random_traits = yes
+
+	father = mondecny_portenchant_8
+
+	martial = 7
+	diplomacy = 6
+	stewardship = 6
+	intrigue = 6
+	learning = 5
+	prowess = 6
+
+	1223.6.4 = {
+		birth = yes
+	}
+
+	1235.1.1 = {
+		trait = compassionate
+		trait = brave
+		trait = deceitful
+	}
+
+	1239.6.4 = {
+		trait = education_diplomacy_2
+		trait = diplomat
+		trait = gh_historical_blademaster_1
+	}
+
+	1245.11.16 = {
+		give_nickname = nick_the_aversarian_uloven
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	1247.3.15 = { # Ten Trees
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+mondecny_portenchant_8 = { #Uloven the Aversarian's father
+	name = "KroD_har"
+	religion = "portenchant"
+	culture = "mondecny"
+	dynasty = dyn_mond_3
+	disallow_random_traits = yes
+
+	martial = 4
+	diplomacy = 6
+	stewardship = 5
+	intrigue = 7
+	learning = 6
+	prowess = 4
+
+	1198.3.7 = {
+		birth = yes
+	}
+
+	1210.1.1 = {
+		trait = calm
+		trait = craven
+		trait = shy
+	}
+
+	1214.3.7 = {
+		trait = education_intrigue_4
+	}
+
+	1244.7.11 = { # Ten Trees
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+mondecny_portenchant_9 = {
+	name = "Frithkerr"
+	religion = "portenchant"
+	culture = "mondecny"
+
+	1238.8.10 = {
+		birth = yes
+	}
+	1258.8.10 = {
+		trait = zealous
+		trait = arrogant
+		trait = wrathful
+		trait = education_martial_2
+		trait = strong
+	}
+}

@@ -1,0 +1,40 @@
+﻿
+fey_mothers_and_fathers_1 = { # The Fairy of Lake Migraddr
+	name = "Fairy_of_Migraddr"
+	religion = mothers_and_fathers
+	culture = fey_culture
+	
+	female = yes
+	
+	sexuality = asexual
+	
+	trait = deceitful
+	trait = sadistic
+	trait = eccentric
+	
+	trait = beauty_good_3
+	
+	diplomacy = 16
+	martial = 17
+	stewardship = 14
+	intrigue = 15
+	learning = 14
+	prowess = 0	# Not an incorporeal being, all prowess comes from magic
+	
+	0.1.1 = {
+		birth = yes
+		
+		effect = {
+			set_variable = gh_is_vindeon_shade
+		}
+	}
+	650.7.14 = {	# Grieveously wounded during the battle of Tur Senach
+		trait = wounded_3
+	}
+	709.12.9 = {
+		death = {
+			death_reason = death_ritual_torture	# Essence ground down and used to make Chyvar's Panopticon
+			killer = kartharaddi_orphecian_1	# General Chyvar
+		}
+	}
+}

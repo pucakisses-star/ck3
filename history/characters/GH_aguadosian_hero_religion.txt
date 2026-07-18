@@ -1,0 +1,17 @@
+﻿aguadosian_hero_religion_1 = {
+	name = "Attilio"
+	religion = hero_religion
+	culture = aguadosian
+	1227.10.11 = {
+		birth = yes
+	}
+}
+
+aguadosian_hero_religion_2 = {
+	name = "Sciarra"
+	religion = hero_religion
+	culture = aguadosian
+	1203.2.2 = {
+		birth = yes
+	}
+}

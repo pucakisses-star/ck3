@@ -1,0 +1,49 @@
+﻿adnanari_harfi_1 = {
+	name = "Khinizir"
+	dna = central_empire_12
+	dynasty = dyn_central_empire_1
+	religion = "harfi"
+	culture = "adnanari"
+
+	trait = peasant_leader
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = no_hair
+			custom_beards = male_mustache_iranian_05
+		}
+	}
+
+	1218.4.12 = {
+		birth = yes
+	}
+
+	1236.4.12 = {
+		trait = education_martial_2
+	trait = strong
+	trait = brave
+	trait = ambitious
+	trait = zealous
+	}
+}
+
+adnanari_harfi_2 = {
+	name = "Bakir"
+	dynasty = dyn_central_empire_16
+	religion = "harfi"
+	culture = "adnanari"
+
+	1225.4.12 = {
+		birth = yes
+	}
+}
+
+adnanari_harfi_3 = {
+	name = "HusA_m"
+	religion = "harfi"
+	culture = "adnanari"
+
+	1232.1.1 = {
+		birth = yes
+	}
+}

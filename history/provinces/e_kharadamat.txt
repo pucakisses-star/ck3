@@ -1,0 +1,972 @@
+595 = {
+	culture = saradoixa
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+751 = {
+	culture = hudi
+	religion = yuagaug
+	holding = castle_holding
+}
+
+
+
+752 = {
+	holding = church_holding
+}
+
+753 = {
+	holding = none
+}
+
+
+
+760 = {
+	holding = castle_holding
+	culture = makryenis
+	religion = sansia
+}
+
+
+764 = {
+	holding = church_holding
+}
+
+766 = {
+	holding = none
+}
+
+767 = {
+	holding = none
+}
+
+
+
+771 = {
+	religion = philanthrios
+	culture = mazunic
+	holding = castle_holding
+
+}
+
+774 = {
+	culture = mazunic
+	religion = hubarism
+	holding = castle_holding
+}
+
+775 = {
+	culture = hudi
+	religion = wardenism
+	holding = castle_holding
+}
+
+
+
+776 = {
+	holding = city_holding
+}
+
+
+
+
+779 = {
+	culture = mazunic
+	religion = hubarism
+	holding = castle_holding
+}
+
+780 = {
+	holding = city_holding
+}
+
+781 = {
+	holding = none
+}
+
+
+782 = {
+	culture = hudi
+	religion = yuagaug
+	holding = castle_holding
+	0.1.1 = {
+		special_building = 01_westerncabal
+	}
+}
+
+
+784 = {
+	holding = none
+}
+
+
+
+
+
+
+
+788 = {
+	holding = none
+}
+
+
+789 = {
+	holding = none
+}
+
+
+
+797 = {
+	culture = hudi
+	religion = wardenism
+	holding = castle_holding
+
+	1200.1.1 = {
+		special_building = 01_lygudista_mines
+	}
+}
+
+799 = {
+	holding = none
+}
+
+800 = {
+	holding = city_holding
+}
+
+
+803 = {
+	culture = hudi
+	religion = yuagaug
+	holding = castle_holding
+}
+
+804 = {
+	holding = none
+}
+
+807 = {
+	holding = church_holding
+}
+
+808 = {
+	holding = none
+}
+
+810 = {
+	culture = jaduyada
+	religion = wardenism
+	holding = castle_holding
+}
+
+
+813 = {
+	holding = none
+}
+
+
+
+
+814 = {
+	holding = church_holding
+}
+
+
+816 = {
+	holding = none
+}
+
+
+818 = {
+	culture = jaduyada
+	religion = eabuyad_al_duhaad_khubir
+	holding = castle_holding
+}
+
+819 = {
+	holding = none
+}
+
+823 = {
+	holding = city_holding
+}
+
+826 = {
+	holding = church_holding
+}
+
+828 = {
+	culture = erimatos
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+831 = {
+	culture = erimatos
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+832 = {
+	holding = church_holding
+}
+
+834 = {
+	holding = city_holding
+}
+
+
+
+837 = {
+	holding = none
+}
+
+838 = {
+	culture = makryenis
+	religion = calysto
+	holding = castle_holding
+}
+
+
+840 = {
+	holding = none
+}
+
+842 = {
+	culture = makryenis
+	religion = calysto
+	holding = castle_holding
+}
+
+
+843 = {
+	holding = none
+}
+
+
+845 = {
+
+	holding = castle_holding
+}
+
+
+
+
+849 = {
+	holding = none
+}
+
+850 = {
+	holding = church_holding
+}
+
+
+851 = {
+	culture = mazunic
+	religion = hanaaist
+	holding = castle_holding
+}
+
+853 = {
+	holding = city_holding
+}
+
+
+858 = {
+	culture = mazunic
+	religion = hubarism
+	holding = castle_holding
+}
+
+
+859 = {
+	holding = city_holding
+}
+
+860 = {
+	holding = none
+}
+
+865 = {
+	culture = makryenis
+	religion = eos
+	holding = castle_holding
+}
+
+
+
+867 = {
+	holding = church_holding
+}
+
+868 = {
+	holding = city_holding
+}
+
+
+
+
+
+
+873 = {
+	holding = none
+}
+
+875 = {
+	holding = church_holding
+}
+
+876 = {
+	holding = none
+}
+
+877 = {
+	culture = mazunic
+	religion = hubarism
+	holding = castle_holding
+}
+
+878 = {
+	holding = none
+}
+
+879 = {
+	holding = none
+}
+
+880 = {
+	holding = none
+}
+
+
+882 = {
+	holding = city_holding
+}
+
+
+885 = {
+	holding = none
+}
+
+
+
+
+886 = {
+	holding = none
+}
+
+888 = {
+	holding = none
+}
+
+
+
+
+
+
+900 = {
+	holding = none
+}
+
+901 = {
+	holding = church_holding
+}
+
+
+903 = {
+	culture = jaduyada
+	religion = suleimania
+	holding = castle_holding
+}
+
+
+908 = {
+	holding = city_holding
+}
+
+
+
+910 = {
+	culture = jaduyada
+	religion = hulawite
+	holding = castle_holding
+}
+
+
+
+
+
+911 = {
+	holding = none
+}
+
+
+
+912 = {
+	holding = church_holding
+}
+
+
+913 = {
+	culture = jaduyada
+	religion = ritualist
+	holding = castle_holding
+
+	344.1.11 = {
+		special_building = 02_sophocos
+	}
+}
+
+
+
+
+918 = {
+	holding = none
+}
+
+
+
+920 = {
+	culture = jaduyada
+	religion = hanaaist
+	holding = castle_holding
+}
+
+
+
+923 = {
+	holding = none
+}
+
+924 = {
+	holding = city_holding
+}
+
+
+
+
+926 = {
+	culture = makryenis
+	holding = none
+}
+
+
+
+929 = {
+	holding = city_holding
+}
+
+
+931 = {
+	holding = castle_holding
+	culture = makryenis
+	religion = katharitos
+}
+
+
+
+934 = {
+	holding = none
+}
+
+938 = {
+	holding = none
+}
+
+946 = {
+	culture = jaduyada
+	religion = akhawwat
+	holding = castle_holding
+}
+
+
+948 = {
+	holding = city_holding
+}
+
+
+950 = {
+	culture = jaduyada
+	religion = sabiat_al_malaikiya
+	holding = castle_holding
+}
+
+
+952 = {
+	holding = church_holding
+}
+
+953 = {
+	culture = makryenis
+	religion = calysto
+	holding = castle_holding
+}
+
+
+
+956 = {
+	holding = city_holding
+}
+
+957 = {
+	culture = makryenis
+	religion = calysto
+	holding = castle_holding
+}
+
+1012 = {
+	culture = jaduyada
+	religion = sabiat_al_malaikiya
+	holding = castle_holding
+}
+
+1013 = {
+	holding = none
+}
+
+
+
+
+1016 = {
+	holding = none
+}
+
+
+
+1018 = {
+	holding = church_holding
+}
+
+
+1020 = {
+	holding = city_holding
+}
+
+1021 = {
+	holding = none
+}
+
+
+1023 = {
+	holding = none
+}
+
+
+1024 = {
+	holding = none
+}
+
+
+1029 = {
+	holding = none
+}
+
+1030 = {
+	religion = suleimania
+	culture = jaduyada
+	holding = castle_holding
+}
+
+1031 = {
+	holding = church_holding
+}
+
+1032 = {
+	holding = church_holding
+}
+
+1034 = {
+	religion = thysia
+	culture = jaduyada
+	holding = castle_holding
+}
+
+
+
+1039 = {
+	culture = makryenis
+	religion = thysia
+	holding = castle_holding
+}
+
+1040 = {
+	holding = none
+}
+
+1041 = {
+	holding = church_holding
+}
+
+
+1044 = {
+	holding = none
+}
+
+
+1047 = {
+	culture = jaduyada
+	religion = eirbaadit_al_hukadir
+	holding = castle_holding
+}
+
+
+1048 = {
+	holding = city_holding
+}
+
+1979 = {
+	holding = city_holding
+}
+
+
+2034 = {
+	holding = none
+}
+
+2041 = {
+	holding = city_holding
+}
+
+
+2056 = {
+	culture = jaduyada
+	religion = ritualist
+	holding = metro_holding
+	
+	1.1.1 = {
+		special_building = 01_qasmudha
+	}
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+}
+
+2083 = {
+	culture = saradoixa
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+2111 = {
+	culture = karadamos
+	religion = the_dragon_cult
+	holding = castle_holding
+}
+
+2172 = {
+	holding = none
+}
+
+2646 = {
+	holding = church_holding
+}
+
+2741 = {
+	holding = city_holding
+}
+
+2762 = {
+	culture = jaduyada
+	religion = hanaaist
+	holding = castle_holding
+}
+
+2863 = {
+	holding = city_holding
+}
+
+3084 = {
+	holding = city_holding
+}
+
+3100 = {
+	holding = church_holding
+}
+
+3104 = {
+	culture = karadamos
+	religion = kamayed
+	holding = castle_holding
+}
+
+3110 = {
+	culture = karadamos
+	religion = the_dragon_cult
+	holding = castle_holding
+}
+
+3111 = {
+	holding = church_holding
+}
+
+3135 = {
+	holding = city_holding
+}
+
+3140 = {
+	culture = karadamos
+	religion = calysto
+	holding = castle_holding
+}
+
+3274 = {
+	holding = none
+}
+
+
+3374 = {
+	holding = church_holding
+}
+
+3380 = {
+	holding = church_holding
+}
+
+
+3420 = {
+	culture = saradoixa
+	religion = kidarian_dance
+	holding = castle_holding
+}
+
+
+3430 = {
+	holding = none
+}
+
+3450 = {
+	holding = none
+}
+
+3472 = {
+	holding = church_holding
+}
+
+3504 = {
+	holding = city_holding
+}
+
+3525 = {
+	culture = saradoixa
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3531 = {
+	culture = jaduyada
+	religion = wardenism
+	holding = castle_holding
+}
+
+3550 = {
+	culture = jaduyada
+	religion = wardenism
+	holding = castle_holding
+}
+
+3735 = {
+	holding = city_holding
+}
+
+3749 = {
+	holding = church_holding
+}
+
+
+3756 = {
+	religion = wardenism
+	culture = adnanari
+	holding = castle_holding
+}
+
+3764 = {
+	religion = wardenism
+	culture = adnanari
+	holding = castle_holding
+}
+
+3768 = {
+	culture = saradoixa
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3907 = {
+	holding = city_holding
+}
+
+3918 = {
+	culture = karadamos
+	religion = calysto
+	holding = castle_holding
+}
+
+
+4373 = {
+	holding = church_holding
+}
+
+
+4615 = {
+	holding = city_holding
+}
+
+
+5107 = {
+	holding = none
+}
+
+5364 = {
+	culture = karadamos
+	religion = kidarian_dance
+	holding = castle_holding
+}
+
+
+5574 = {
+	holding = city_holding
+}
+
+5808 = {
+	holding = city_holding
+}
+
+5875 = {
+	holding = none
+}
+
+5891 = {
+	holding = church_holding
+}
+
+5898 = {
+	holding = city_holding
+}
+
+5951 = {
+	holding = church_holding
+}
+
+5993 = {
+	culture = jaduyada
+	religion = wardenism
+	holding = castle_holding
+}
+
+6015 = {
+	holding = church_holding
+}
+
+
+6685 = {
+	culture = jaduyada
+	religion = wardenism
+	holding = castle_holding
+}
+
+6769 = {
+	holding = none
+}
+
+
+6843 = {
+	holding = none
+}
+
+7254 = {
+	holding = church_holding
+}
+
+7259 = {
+	holding = none
+}
+
+7335 = {
+	culture = hudi
+	religion = yuagaug
+	holding = castle_holding
+}
+
+7367 = {
+	holding = none
+}
+
+
+7443 = {
+	holding = city_holding
+}
+
+
+7757 = {
+	culture = jaduyada
+	religion = eirbaadit_al_hukadir
+	holding = castle_holding
+}
+
+
+7994 = {
+	holding = none
+}
+
+
+8072 = {
+	holding = church_holding
+}
+
+8099 = {
+	holding = city_holding
+}
+
+8100 = {
+	religion = suleimania
+	culture = jaduyada
+	holding = castle_holding
+}
+
+8156 = {
+	culture = jaduyada
+	religion = eirbaadit_al_hukadir
+	holding = castle_holding
+}
+
+
+
+8509 = {
+	holding = none
+}
+
+
+
+8860 = {
+	culture = jaduyada
+	religion = ataabay_zatanai
+	holding = castle_holding
+}
+
+9162 = {
+	holding = city_holding
+}
+
+9163 = {
+	holding = church_holding
+	
+}
+
+9164 = {
+	culture = jaduyada
+	religion = wardenism
+	holding = metro_holding
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+}
+

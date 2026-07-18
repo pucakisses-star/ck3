@@ -1,0 +1,406 @@
+c_apolariax = {
+	1130.6.17 = {
+		liege = d_serbar
+		holder = easternimperial_aironoian_aagiokrata_58
+		government = feudal_government
+	}
+	1168.3.14 = {
+		liege = d_serbar
+		holder = easternimperial_aironoian_aagiokrata_13
+		government = feudal_government
+	}
+	1188.9.25 = {
+		liege = d_serbar
+		holder = easternimperial_aversarian_axiaotheaism_15
+		government = feudal_government
+	}
+	1194.11.7 = {
+		liege = d_serbar
+		holder = easternimperial_aversarian_axiaotheaism_16
+		government = feudal_government
+	}
+	1218.7.6 = {
+		liege = d_serbar
+		holder = easternimperial_aversarian_axiaotheaism_18
+		government = feudal_government
+	}
+	1245.10.18 = {
+		liege = d_taliron
+		holder = easternimperial_aironoian_aagiokrata_5
+		government = pirate_government
+		change_development_level = 5
+	}
+}
+c_orkattar = {
+	1130.6.17 = {
+		liege = d_serbar
+		holder = easternimperial_aironoian_aagiokrata_58
+		government = feudal_government
+	}
+	1168.3.14 = {
+		liege = d_serbar
+		holder = easternimperial_aironoian_aagiokrata_13
+		government = feudal_government
+	}
+	1188.9.25 = {
+		liege = d_serbar
+		holder = easternimperial_aversarian_axiaotheaism_15
+		government = feudal_government
+	}
+	1194.11.7 = {
+		liege = d_serbar
+		holder = easternimperial_aversarian_axiaotheaism_16
+		government = feudal_government
+	}
+	1218.7.6 = {
+		liege = d_serbar
+		holder = easternimperial_aversarian_axiaotheaism_18
+		government = feudal_government
+	}
+	1245.10.18 = {
+		liege = d_serbar
+		holder = easternimperial_aversarian_axiaotheaism_14
+		government = feudal_government
+		change_development_level = 11
+	}
+}
+c_choird = {
+	1130.6.17 = {
+		liege = d_serbar
+		holder = easternimperial_aironoian_aagiokrata_58
+		government = feudal_government
+	}
+	1168.3.14 = {
+		liege = d_serbar
+		holder = easternimperial_aironoian_aagiokrata_13
+		government = feudal_government
+	}
+	1188.9.25 = {
+		liege = d_serbar
+		holder = easternimperial_aversarian_axiaotheaism_15
+		government = feudal_government
+	}
+	1194.11.7 = {
+		liege = d_serbar
+		holder = easternimperial_aversarian_axiaotheaism_16
+		government = feudal_government
+	}
+	1218.7.6 = {
+		liege = d_serbar
+		holder = easternimperial_aversarian_axiaotheaism_18
+		government = feudal_government
+	}
+	1245.10.18 = {
+		liege = d_serbar
+		holder = easternimperial_aversarian_axiaotheaism_14
+		government = feudal_government
+		change_development_level = 8
+	}
+}
+c_tsetarva = {
+	1096.10.7 = {
+		holder = easternimperial_aironoian_aagiokrata_49
+		government = feudal_government
+	}
+	1147.3.15 = {
+		holder = easternimperial_aironoian_aagiokrata_19
+		government = feudal_government
+	}
+	1175.8.10 = {
+		holder = easternimperial_aironoian_aagiokrata_17
+		government = feudal_government
+	}
+	1188.9.25 = {
+		holder = easternimperial_aironoian_aagiokrata_18
+		government = feudal_government
+	}
+	1220.10.3 = {
+		holder = easternimperial_aironoian_aagiokrata_20
+		government = feudal_government
+	}
+	1250.6.22 = {
+		holder = easternimperial_aironoian_aagiokrata_21
+		government = feudal_government
+	}
+	1252.8.27 = {
+		holder = easternimperial_aironoian_aagiokrata_7
+		government = feudal_government
+		change_development_level = 4
+		liege = 0
+	}
+}
+c_zamynod = {
+	1130.6.17 = {
+		liege = d_serbar
+		holder = easternimperial_aironoian_aagiokrata_58
+		government = feudal_government
+	}
+	1168.3.14 = {
+		liege = d_serbar
+		holder = easternimperial_aironoian_aagiokrata_13
+		government = feudal_government
+	}
+	1188.9.25 = {
+		holder = easternimperial_aversarian_axiaotheaism_15
+		government = feudal_government
+	}
+	1194.11.7 = {
+		holder = easternimperial_aversarian_axiaotheaism_16
+		government = feudal_government
+	}
+	1218.7.6 = {
+		holder = easternimperial_aversarian_axiaotheaism_18
+		government = feudal_government
+	}
+	1245.10.18 = {
+		liege = 0
+		holder = easternimperial_aversarian_axiaotheaism_19
+		government = feudal_government
+		change_development_level = 7
+	}
+}
+c_murun = {
+	1096.10.7 = {
+		holder = easternimperial_aironoian_aagiokrata_49
+		government = feudal_government
+	}
+	1147.3.15 = {
+		holder = easternimperial_aironoian_aagiokrata_19
+		government = feudal_government
+	}
+	1175.8.10 = {
+		holder = easternimperial_aironoian_aagiokrata_17
+		government = feudal_government
+	}
+	1188.9.25 = {
+		holder = easternimperial_aironoian_aagiokrata_18
+		government = feudal_government
+	}
+	1220.10.3 = {
+		holder = easternimperial_aironoian_aagiokrata_20
+		government = feudal_government
+	}
+	1250.6.22 = {
+		holder = easternimperial_aironoian_aagiokrata_21
+		change_development_level = 9
+	}
+}
+c_dethnys = {
+	1141.7.5 = {
+		holder = zelkavani_sunarwei_1
+		government = tribal_government
+	}
+	1189.8.26 = {
+		holder = zelkavani_sunarwei_2
+		government = feudal_government
+	}
+	1202.12.8 = {
+		holder = lattani_sunwarwei_aagiokrata_3
+		government = tribal_government
+	}
+	1218.7.6 = {
+		liege = d_batset
+		holder = lattani_sunwarwei_aagiokrata_4
+		government = tribal_government
+	}
+	1220.3.4 = {
+		liege = d_batset
+		holder = lattani_sunwarwei_aagiokrata_6
+		government = tribal_government
+		change_development_level = 3
+	}
+}
+c_dzeltahn = {
+	1099.10.5 = {
+		holder = easternimperial_aironoian_aagiokrata_54
+		government = feudal_government
+	}
+	1152.5.14 = {
+		holder = easternimperial_aironoian_aagiokrata_53
+		government = feudal_government
+	}
+	1168.2.19 = {
+		holder = easternimperial_aironoian_aagiokrata_12
+		government = feudal_government
+	}
+	1188.9.25 = {
+		holder = easternimperial_aironoian_aagiokrata_16
+		government = feudal_government
+	}
+	1201.3.29 = {
+		holder = lattani_sunwarwei_aagiokrata_3
+		government = tribal_government
+	}
+	1220.3.4 = {
+		holder = jaduyada_eabuyad_ilah_al_atilaam_3
+		government = tribal_government
+	}
+	1237.9.23 = {
+		holder = jaduyada_eabuyad_ilah_al_atilaam_2
+		government = tribal_government
+	}
+	1239.7.14 = {
+		holder = jaduyada_eabuyad_ilah_al_atilaam_1
+		government = tribal_government
+		change_development_level = 4
+	}
+}
+c_orkahk = {
+	1099.10.5 = {
+		holder = easternimperial_aironoian_aagiokrata_54
+		government = feudal_government
+	}
+	1152.5.14 = {
+		holder = easternimperial_aironoian_aagiokrata_53
+		government = feudal_government
+	}
+	1168.2.19 = {
+		holder = easternimperial_aironoian_aagiokrata_12
+		government = feudal_government
+	}
+	1188.9.25 = {
+		holder = easternimperial_aironoian_aagiokrata_16
+		government = feudal_government
+	}
+	1201.3.29 = {
+		holder = lattani_sunwarwei_aagiokrata_3
+		government = tribal_government
+	}
+	1218.7.6 = {
+		holder = lattani_sunwarwei_aagiokrata_5
+		government = tribal_government
+	}
+	1242.12.14 = {
+		holder = lattani_sunwarwei_aagiokrata_1
+		government = tribal_government
+		change_development_level = 4
+	}
+	1252.8.27 = {
+		holder = easternimperial_aironoian_aagiokrata_7
+		government = feudal_government
+		change_development_level = 6
+		liege = 0
+	}
+}
+c_sarool = {
+	1169.12.17 = {
+		holder = lattani_sunwarwei_aagiokrata_2
+		government = tribal_government
+	}
+	1200.2.26 = {
+		holder = lattani_sunwarwei_aagiokrata_3
+		government = tribal_government
+	}
+	1218.7.6 = {
+		holder = lattani_sunwarwei_aagiokrata_5
+		government = tribal_government
+	}
+	1242.12.14 = {
+		holder = lattani_sunwarwei_aagiokrata_1
+		government = tribal_government
+		change_development_level = 3
+	}
+}
+c_getyrn = {
+	1141.7.5 = {
+		holder = zelkavani_sunarwei_1
+		government = tribal_government
+	}
+	1189.8.26 = {
+		holder = zelkavani_sunarwei_2
+		government = feudal_government
+	}
+	1202.12.8 = {
+		holder = zelkavani_sunarwei_3
+		government = feudal_government
+	}
+	1242.12.14 = {
+		holder = zelkavani_sunarwei_aagiokrata_2
+		government = feudal_government
+		change_development_level = 3
+	}
+}
+c_ulastarin = {
+	1141.7.5 = {
+		holder = zelkavani_sunarwei_1
+		government = tribal_government
+	}
+	1189.8.26 = {
+		holder = zelkavani_sunarwei_2
+		government = feudal_government
+	}
+	1202.12.8 = {
+		holder = lattani_sunwarwei_aagiokrata_3
+		government = tribal_government
+	}
+	1218.7.6 = {
+		liege = d_batset
+		holder = lattani_sunwarwei_aagiokrata_4
+		government = tribal_government
+	}
+	1220.3.4 = {
+		liege = d_batset
+		holder = lattani_sunwarwei_aagiokrata_7
+		government = tribal_government
+		change_development_level = 5
+	}
+}
+c_krakel = {
+	1169.12.17 = {
+		holder = lattani_sunwarwei_aagiokrata_2
+		government = tribal_government
+	}
+	1200.2.26 = {
+		holder = lattani_sunwarwei_aagiokrata_3
+		government = tribal_government
+	}
+	1218.7.6 = {
+		holder = lattani_sunwarwei_aagiokrata_5
+		government = tribal_government
+	}
+	1242.12.14 = {
+		holder = lattani_sunwarwei_aagiokrata_1
+		government = tribal_government
+		change_development_level = 3
+	}
+}
+
+c_rirder = {
+	1193.7.5 = {
+		holder = easternimperial_aversarian_axiaotheaism_12
+		government = magocratic_government
+	}
+	1199.8.12 = {
+		holder = easternimperial_aversarinas_practitioner_1
+		government = magocratic_government
+	}
+	1230.1.1 = {
+		holder = redrunner_aversarinas_aagiokrata_2
+		government = tribal_government
+		change_development_level = 5
+	}
+}
+
+c_hutagus = {
+	1000.1.1 = {
+		holder = wasteland
+	}
+}
+
+c_tarrahundar = {
+	1000.1.1 = {
+		holder = wasteland
+	}
+}
+
+c_dirrahhh = {
+	1000.1.1 = {
+		holder = wasteland
+	}
+}
+
+c_eguur = {
+	1000.1.1 = {
+		holder = wasteland
+	}
+}

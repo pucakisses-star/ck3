@@ -1,0 +1,2494 @@
+﻿centralislander_aversarinas_aagiokrata_1 = { # ILLUSTRIOUS HIGH KING OF THE ISLES AND ALL OF THE SEAS OF THE RIGHTFUL AAUTOKRATA DEXIOS THE GLORIOUS FUCK YOU MERCENARY SCUM BAG TRAITOR FUCKS FUCK YOU ULFIRX YOU LITTLE CRAFTY SHIT PLOTTING MY DEMISE FROM THE START FUCK YOU CHILDREN PLOTTING AGAINST ME ILL FUCKING SHOW ALL OF YOU FUCK SHIT GOD DAMN IT FUCK LISTEN TO ME I WILL KILL ALL OF YOU WHAT THE FUCK DID YOU JUST SAY TO ME YOU LITTLE BITCH ILL FUCXGNSO IGNSOINGH ASJONFHASD;JHN ;ASDKJBFH ND;ASJONF HFUCK YOU FUCK GHFUFC KFUCK FUCK FOY YOU FUCK YOU AAAAAAAAAAAAAAAA I DONT HAVE A NAPOLEON COMPLEX YOU DO (not an amazing dude)
+	name = "Dexios"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_4
+	sexuality = heterosexual
+	dna = dexios_centralislander_aversarinas_aagiokrata_1
+	
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_indian_01
+			custom_beards = no_beard
+		}
+	}
+
+	father = centralislander_aversarinas_aagiokrata_17
+	mother = southernimperial_aversarinas_aagiokrata_119
+
+	martial = 2
+	diplomacy = 3
+	stewardship = 2
+	intrigue = 7
+	learning = 4
+	prowess = 5
+
+	1205.10.10 = {
+		birth = yes
+		trait = magic_good_2
+        effect = {
+            dynasty = { add_dynasty_prestige_level = 1 }
+        }
+        effect = {
+            set_base_arcana = { AMOUNT = 6 }
+        }
+	}
+
+	1217.1.1 = {
+		trait = vengeful
+		trait = paranoid
+		trait = arrogant
+	}
+
+	1221.10.10 = {
+		trait = education_stewardship_3
+	}
+
+	1234.4.14 = {
+		give_nickname = nick_the_glorious_dexios
+	}
+}
+
+centralislander_aversarinas_aagiokrata_2 = { # Dexios's daughter who he once doted on completely as his perfect child. Badass general girl and probably the only competent person in the High Kingdom. Was planning on a coup with the mercenaries and was literally in the first stage of launching it when Ulfirx dropped on top of the mercs and set the whole region on fire. After the coup failed we retreated with what few men weren't mercenaries or idiots and is now trying to depose her father for the betterment of everyone caught in the middle of the nonsense.
+	name = "Melane" # Melane
+	dna = melane_centralislander_aversarinas_aagiokrata_2
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+	dynasty = dyn_aversarian_4
+	female = yes
+
+	father = centralislander_aversarinas_aagiokrata_1
+	
+	martial = 9
+	diplomacy = 7
+	stewardship = 7
+	intrigue = 5
+	learning = 5
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp2_iberian_christian_02
+		}
+	}
+
+	1223.11.24 = {
+		birth = yes
+		trait = magic_good_3
+		effect = { set_base_arcana = { AMOUNT = 8 } }
+	}
+
+	1235.1.1 = {
+		trait = just
+		trait = diligent
+		trait = arrogant	
+	}
+
+	1239.11.24 = {
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_3 = { # GH: was viesuados_2
+	name = "Stythis"
+	culture = "centralislander"
+	religion = "aversarinas_aagiokrata"
+
+	1167.6.6 = {
+		birth = yes
+	}
+
+	1213.5.7 = {
+		death = {
+			death_reason = death_magic_earthquake
+			killer = vanaarik_yakasak_8
+		}
+	}
+
+}
+
+centralislander_aversarinas_aagiokrata_4 = { # Thrown in to give High King vassals
+	name = "Traianos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	1188.3.14 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1204.3.14 = {
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_5 = { # Thrown in to give High King vassals
+	name = "Briseis"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+	female = yes
+
+	1235.2.11 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1251.2.11 = {
+		trait = education_learning_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}	
+}
+
+centralislander_aversarinas_aagiokrata_6 = { # Thrown in to give High King vassals
+	name = "Gerasimos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	1222.5.21 = {
+		birth = yes
+	}
+}
+
+centralislander_aversarinas_aagiokrata_7 = { # Thrown in to give High King vassals
+	name = "Kleiphos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	1211.2.13 = {
+		birth = yes
+	}
+}
+
+centralislander_aversarinas_aagiokrata_8 = { # Thrown in to give High King vassals
+	name = "Maklea"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+	female = yes
+
+	1211.2.13 = {
+		birth = yes
+	}
+}
+
+centralislander_aversarinas_aagiokrata_9 = {
+	name = "Dryanius"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+centralislander_aversarinas_aagiokrata_10 = {
+	name = "Narses"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+centralislander_aversarinas_aagiokrata_11 = {
+	name = "Demetra"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+	female = yes
+
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+centralislander_aversarinas_aagiokrata_12 = {
+	name = "Nothox"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+	1233.8.27 = {
+		birth = yes
+	}
+}
+
+centralislander_aversarinas_aagiokrata_13 = {
+	name = "Osethos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+	1226.11.23 = {
+		birth = yes
+	}
+}
+
+centralislander_aversarinas_aagiokrata_14 = {
+	name = "Venerandus"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+	1223.10.10 = {
+		birth = yes
+	}
+	1268.6.15 = {
+		death = { death_reason = death_battle killer = caemansi_sjalvolki_4 }
+	}
+}
+
+centralislander_aversarinas_aagiokrata_15 = {
+	name = "Laxathos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+	1212.9.30 = {
+		birth = yes
+	}
+}
+
+centralislander_aversarinas_aagiokrata_16 = {
+	name = "Iskhraie"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+	father = centralislander_aversarinas_aagiokrata_14
+	female = yes
+	1258.2.20 = {
+		birth = yes
+	}
+}
+
+centralislander_aversarinas_aagiokrata_17 = { # Dexios' dad
+	name = "Ios"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_4
+	sexuality = heterosexual
+
+	father = centralislander_aversarinas_aagiokrata_67
+
+	martial = 8
+	diplomacy = 6
+	stewardship = 4
+	intrigue = 4
+	learning = 5
+	prowess = 11
+
+	1164.11.11 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1176.1.1 = {
+		trait = gregarious
+		trait = impatient
+		trait = ambitious
+	}
+
+	1180.11.11 = {
+		trait = education_diplomacy_1
+	}
+
+	1194.12.16 = {
+		add_spouse = southernimperial_aversarinas_aagiokrata_119
+	}
+
+	1217.12.10 = {
+		death = {
+			death_reason = death_assassination
+			killer = westernimperial_aeschraes_aagiokrata_1 # Aeschraes
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_18 = { # Dexios' siblings
+	name = "Zekos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_4
+	sexuality = homosexual
+
+	father = centralislander_aversarinas_aagiokrata_17
+	mother = southernimperial_aversarinas_aagiokrata_119
+
+	martial = 9
+	diplomacy = 2
+	stewardship = 7
+	intrigue = 3
+	learning = 7
+	prowess = 7
+
+	1197.11.1 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1209.1.1 = {
+		trait = gregarious
+		trait = stubborn
+		trait = lustful
+	}
+
+	1213.11.1 = {
+		trait = education_diplomacy_3
+	}
+
+	1217.12.10 = {
+		death = {
+			death_reason = death_eyes_gouged
+			killer = centralimperial_aeschraes_aagiokrata_1 # Karthyn Delenel
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_19 = { # Dexios' siblings
+	name = "Melane"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_4
+	female = yes
+	sexuality = heterosexual
+
+	father = centralislander_aversarinas_aagiokrata_17
+	mother = southernimperial_aversarinas_aagiokrata_119
+
+	martial = 5
+	diplomacy = 5
+	stewardship = 8
+	intrigue = 5
+	learning = 4
+	prowess = 4
+
+	1195.8.19 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1207.1.1 = {
+		trait = honest
+		trait = gregarious
+		trait = humble
+	}
+
+	1211.8.19 = {
+		trait = education_stewardship_2
+	}
+
+	1217.12.10 = {
+		death = {
+			death_reason =  death_chopped_to_pieces
+			killer = centralimperial_aeschraes_aagiokrata_1 # Karthyn Delenel
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_20 = { # Oryd's grandson, groomed to be the next leader of the Orydian Dynastic League, suspected of treason (correctly) and slain during Odrstund
+	name = "Mataex"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_152
+	sexuality = heterosexual
+
+	father = southernimperial_aversarinas_aagiokrata_122
+	mother = centralislander_aversarinas_aagiokrata_34
+
+	martial = 5
+	diplomacy = 6
+	stewardship = 7
+	intrigue = 9
+	learning = 5
+	prowess = 2
+
+	1113.2.2 = {
+		birth = yes
+		trait = magic_good_3
+		trait = disputed_heritage # rumors that he was sired by his grandfather
+		trait = intellect_good_2
+	}
+
+	1125.1.1 = {
+		trait = gregarious
+		trait = temperate
+		trait = sadistic
+	}
+
+	1139.2.2 = {
+		trait = education_stewardship_3
+	}
+
+	1168.11.20 = {
+		death = {
+			death_reason = death_burned
+			killer = southernimperial_aversarinas_aagiokrata_121
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_21 = { # Oryd's great grandson, slain with his father during Odrstund
+	name = "Dakaedrios"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_152
+	sexuality = heterosexual
+
+	father = centralislander_aversarinas_aagiokrata_20
+
+	martial = 8
+	diplomacy = 2
+	stewardship = 6
+	intrigue = 3
+	learning = 7
+	prowess = 4
+
+	1146.12.13 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1158.1.1 = {
+		trait = greedy
+		trait = arrogant
+		trait = arbitrary
+	}
+
+	1162.12.13 = {
+		trait = education_diplomacy_2
+	}
+
+	1168.11.20 = {
+		death = {
+			death_reason = death_burned
+			killer = southernimperial_aversarinas_aagiokrata_121
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_22 = { # Oryd's great-great grandson, exiled after Odrstund, returned after Frod as a pirate lord
+	name = "Bathonex"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_152
+	sexuality = heterosexual
+
+	father = centralislander_aversarinas_aagiokrata_21
+
+	martial = 7
+	diplomacy = 4
+	stewardship = 10
+	intrigue = 4
+	learning = 7
+	prowess = 3
+
+	1165.2.8 = {
+		birth = yes
+	}
+
+	1177.1.1 = {
+		trait = fickle
+		trait = ambitious
+		trait = greedy
+	}
+
+	1181.2.8 = {
+		trait = education_martial_3
+		trait = gh_historical_blademaster_1
+	}
+
+	1168.11.20 = {
+		trait = gallowsbait
+		trait = disinherited
+	}
+
+	1214.8.18 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_23 = { # Oryd's grand-daughter, named after Aeschraes' father
+	name = "Epistonea"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_152
+	sexuality = heterosexual
+	female = yes
+
+	father = southernimperial_aversarinas_aagiokrata_126
+
+	martial = 7
+	diplomacy = 3
+	stewardship = 5
+	intrigue = 5
+	learning = 6
+	prowess = 5
+
+	1131.4.5 = {
+		birth = yes
+		trait = magic_good_3
+		trait = intellect_good_1
+	}
+
+	1143.1.1 = {
+		trait = arrogant
+		trait = sadistic
+		trait = deceitful
+	}
+
+	1147.4.5 = {
+		trait = education_intrigue_4
+		trait = shrewd
+		trait = schemer
+	}
+
+	1195.7.21 = {
+		death = {
+			death_reason = death_execution
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_24 = { # son of Kratailios Oryd
+	name = "Anathreos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_152
+	sexuality = asexual
+
+	father = southernimperial_aversarinas_aagiokrata_124
+
+	martial = 8
+	diplomacy = 6
+	stewardship = 5
+	intrigue = 7
+	learning = 8
+	prowess = 5
+
+	1134.3.1 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1146.1.1 = {
+		trait = shy
+		trait = lazy
+		trait = craven
+	}
+
+	1150.3.1 = {
+		trait = education_learning_1
+	}
+
+	1182.9.14 = {
+		death = {
+			death_reason = death_drowned
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_25 = { # son of Kratailios Oryd, slain in ICW
+	name = "Hyrcanos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_152
+	sexuality = heterosexual
+
+	father = southernimperial_aversarinas_aagiokrata_124
+
+	martial = 6
+	diplomacy = 5
+	stewardship = 8
+	intrigue = 4
+	learning = 6
+	prowess = 11
+
+	1136.5.5 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1148.1.1 = {
+		trait = greedy
+		trait = impatient
+		trait = content
+	}
+
+	1152.5.5 = {
+		trait = education_martial_4
+		trait = gh_historical_blademaster_1
+	}
+
+	1186.9.27 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_26 = { # daughter of Hyrcanos Oryd, died in childbirth
+	name = "Sansia"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_152
+	sexuality = heterosexual
+	female = yes
+
+	father = centralislander_aversarinas_aagiokrata_25
+
+	martial = 5
+	diplomacy = 6
+	stewardship = 5
+	intrigue = 8
+	learning = 3
+	prowess = 4
+
+	1155.5.25 = {
+		birth = yes
+	}
+
+	1167.1.1 = {
+		trait = vengeful
+		trait = just
+		trait = gluttonous
+	}
+
+	1169.5.25 = {
+		trait = education_intrigue_3
+	}
+
+	1185.8.21 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_27 = { # son of Hyrcanos Oryd
+	name = "Banthissos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_152
+	sexuality = heterosexual
+
+	father = centralislander_aversarinas_aagiokrata_25
+
+	martial = 3
+	diplomacy = 4
+	stewardship = 7
+	intrigue = 5
+	learning = 8
+	prowess = 6
+
+	1159.5.4 = {
+		birth = yes
+	}
+
+	1171.1.1 = {
+		trait = vengeful
+		trait = eccentric
+		trait = paranoid
+	}
+
+	1175.5.4 = {
+		trait = education_arcana_2
+	}
+
+	1194.9.17 = { # ODL downfall
+		death = {
+			death_reason = death_battle
+			killer = centralimperial_aeschraes_aagiokrata_1 # Delenel
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_28 = { # son of Banthissos Oryd
+	name = "Esterax"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_152
+	sexuality = heterosexual
+
+	father = centralislander_aversarinas_aagiokrata_27
+
+	martial = 2
+	diplomacy = 1
+	stewardship = 3
+	intrigue = 1
+	learning = 2
+	prowess = 3
+
+	1191.8.14 = {
+		birth = yes
+	}
+
+	1194.9.17 = { # ODL downfall
+		death = {
+			death_reason = death_magic_fire
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_29 = { # son of Epistonea Oryd
+	name = "Zilicion"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_152
+	sexuality = heterosexual
+
+	mother = centralislander_aversarinas_aagiokrata_23
+
+	martial = 6
+	diplomacy = 4
+	stewardship = 6
+	intrigue = 8
+	learning = 8
+	prowess = 8
+
+	1154.1.4 = {
+		birth = yes
+	}
+
+	1166.1.1 = {
+		trait = vengeful
+		trait = patient
+		trait = diligent
+	}
+
+	1170.1.4 = {
+		trait = education_intrigue_3
+		trait = torturer
+	}
+
+	1195.7.21 = { # ODL Downfall
+		death = {
+			death_reason = death_execution
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_30 = { # grandson of Epistonea Oryd
+	name = "Vissioxas"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_152
+	sexuality = heterosexual
+
+	father = centralislander_aversarinas_aagiokrata_29
+
+	martial = 2
+	diplomacy = 1
+	stewardship = 1
+	intrigue = 1
+	learning = 4
+	prowess = 4
+
+	1181.5.13 = {
+		birth = yes
+	}
+
+	1193.1.1 = {
+		trait = craven
+		trait = shy
+		trait = cynical
+	}
+
+	1194.9.17 = { # ODL downfall
+		death = {
+			death_reason = death_magic_fire
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_31 = { # son of Terros
+	name = "Phanos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_153
+	sexuality = heterosexual
+
+	father = centralimperial_aversarinas_aagiokrata_186
+
+	martial = 9
+	diplomacy = 5
+	stewardship = 7
+	intrigue = 10
+	learning = 5
+	prowess = 6
+
+	1086.6.15 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1098.1.1 = {
+		trait = lazy
+		trait = humble
+		trait = patient
+	}
+
+	1102.6.15 = {
+		trait = education_intrigue_1
+	}
+
+	1119.5.8 = {
+		death = {
+			death_reason = death_killed_while_attempting_murder
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_32 = { # son of Terros
+	name = "Axos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_153
+	sexuality = heterosexual
+
+	father = centralimperial_aversarinas_aagiokrata_186
+
+	martial = 5
+	diplomacy = 3
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	prowess = 9
+
+	1090.7.6 = {
+		birth = yes
+		trait = magic_good_5
+		trait = twin
+	}
+
+	1102.1.1 = {
+		trait = calm
+		trait = arrogant
+		trait = temperate
+	}
+
+	1106.7.6 = {
+		trait = education_diplomacy_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1137.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_33 = { # daughter of Terros
+	name = "Axas"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_153
+	sexuality = heterosexual
+	female = yes
+
+	father = centralimperial_aversarinas_aagiokrata_186
+
+	martial = 5
+	diplomacy = 3
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	prowess = 9
+
+	1090.7.6 = {
+		birth = yes
+		trait = magic_good_5
+		trait = twin
+	}
+
+	1102.1.1 = {
+		trait = lustful
+		trait = just
+		trait = generous
+	}
+
+	1106.7.6 = {
+		trait = education_arcana_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 3 }
+		}
+	}
+
+	1173.3.28 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_34 = { # daughter of Terros, wed to Athressirios Oryd
+	name = "Xuthia"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_153
+	sexuality = heterosexual
+	female = yes
+
+	father = centralimperial_aversarinas_aagiokrata_186
+
+	martial = 9
+	diplomacy = 7
+	stewardship = 7
+	intrigue = 6
+	learning = 3
+	prowess = 6
+
+	1092.12.19 = {
+		birth = yes
+		trait = magic_good_2
+		trait = beauty_good_1
+	}
+
+	1104.1.1 = {
+		trait = temperate
+		trait = vengeful
+		trait = fickle
+	}
+
+	1108.12.19 = {
+		trait = education_stewardship_3
+		trait = lifestyle_gardener
+	}
+
+	1122.5.27 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_35 = { # Son of Phanos Xanis
+	name = "Zekos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_153
+	sexuality = heterosexual
+
+	father = centralislander_aversarinas_aagiokrata_31
+
+	martial = 6
+	diplomacy = 6
+	stewardship = 6
+	intrigue = 5
+	learning = 5
+	prowess = 6
+
+	1109.7.10 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1121.1.1 = {
+		trait = deceitful
+		trait = compassionate
+		trait = greedy
+	}
+
+	1125.7.10 = {
+		trait = education_martial_1
+		trait = reckless
+	}
+
+	1149.7.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_36 = { # Daughter of Zekos Xanis
+	name = "Ionde"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_153
+	sexuality = heterosexual
+	female = yes
+
+	father = centralislander_aversarinas_aagiokrata_35
+
+	martial = 6
+	diplomacy = 5
+	stewardship = 7
+	intrigue = 6
+	learning = 4
+	prowess = 9
+
+	1134.12.11 = {
+		birth = yes
+		trait = magic_good_3
+		trait = beauty_good_1
+	}
+
+	1146.1.1 = {
+		trait = vengeful
+		trait = shy
+		trait = lustful
+	}
+
+	1150.12.11 = {
+		trait = education_stewardship_3
+	}
+
+	1185.3.16 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_37 = { # Daughter of Zekos Xanis
+	name = "Rhiake"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_153
+	sexuality = heterosexual
+	female = yes
+
+	father = centralislander_aversarinas_aagiokrata_35
+
+	martial = 2
+	diplomacy = 4
+	stewardship = 3
+	intrigue = 4
+	learning = 5
+	prowess = 4
+
+	1137.11.15 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1149.1.1 = {
+		trait = temperate
+		trait = arrogant
+		trait = shy
+	}
+
+	1153.11.15 = {
+		trait = education_learning_1
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_38 = { # Son of Axos Xanis
+	name = "Iolaxios"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_153
+	sexuality = heterosexual
+
+	father = centralislander_aversarinas_aagiokrata_32
+
+	martial = 7
+	diplomacy = 6
+	stewardship = 5
+	intrigue = 4
+	learning = 7
+	prowess = 9
+
+	1115.1.24 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1127.1.1 = {
+		trait = zealous
+		trait = craven
+		trait = callous
+	}
+
+	1131.1.24 = {
+		trait = education_stewardship_2
+	}
+
+	1169.6.16 = {
+		trait = irritable
+		death = {
+			death_reason = death_stress
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_39 = { # Daughter of Axos Xanis
+	name = "Iria"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_153
+	sexuality = heterosexual
+	female = yes
+
+	father = centralislander_aversarinas_aagiokrata_32
+
+	martial = 7
+	diplomacy = 6
+	stewardship = 5
+	intrigue = 4
+	learning = 7
+	prowess = 9
+
+	1121.12.11 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	1133.1.1 = {
+		trait = stubborn
+		trait = gregarious
+		trait = ambitious
+	}
+
+	1137.12.11 = {
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1185.7.9 = {
+		death = {
+			death_reason = death_ritual_mistake
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_40 = { # Son of Iolaxios Xanis, led the ODL fleet
+	name = "Mataex"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_153
+	sexuality = bisexual
+
+	father = centralislander_aversarinas_aagiokrata_38
+
+	martial = 5
+	diplomacy = 6
+	stewardship = 7
+	intrigue = 3
+	learning = 6
+	prowess = 6
+
+	1133.11.19 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1145.1.1 = {
+		trait = paranoid
+		trait = wrathful
+		trait = ambitious
+	}
+
+	1149.11.19 = {
+		trait = education_martial_3
+		trait = organizer
+		trait = marine_commander
+	}
+
+	1184.3.26 = {
+		death = {
+			death_reason = death_sea_storm
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_41 = { # Daughter of Iolaxios Xanis
+	name = "Avrioxa"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_153
+	sexuality = heterosexual
+	female = yes
+
+	father = centralislander_aversarinas_aagiokrata_38
+
+	martial = 9
+	diplomacy = 5
+	stewardship = 7
+	intrigue = 10
+	learning = 5
+	prowess = 6
+
+	1135.12.13 = {
+		birth = yes
+		trait = magic_good_5
+		trait = intellect_bad_1
+	}
+
+	1147.1.1 = {
+		trait = lazy
+		trait = paranoid
+		trait = humble
+	}
+
+	1151.12.13 = {
+		trait = education_learning_1
+	}
+
+	1182.5.22 = { # Mysteriously vanished alongside her niece
+		death = {
+			death_reason = death_disappearance
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_42 = { # Daughter of Iolaxios Xanis
+	name = "Maithyra"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_153
+	sexuality = heterosexual
+	female = yes
+
+	father = centralislander_aversarinas_aagiokrata_38
+
+	martial = 5
+	diplomacy = 3
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	prowess = 9
+
+	1142.1.9 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	1154.1.1 = {
+		trait = wrathful
+		trait = gluttonous
+		trait = humble
+	}
+
+	1158.1.9 = {
+		trait = education_arcana_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1184.1.1 = {
+		death = {
+			death_reason = death_poison
+			killer = centralislander_aversarinas_aagiokrata_23 # Epistonea
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_43 = { # Daughter of Mataex Xanis
+	name = "Kyriake"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_153
+	sexuality = heterosexual
+	female = yes
+
+	father = centralislander_aversarinas_aagiokrata_40
+
+	martial = 7
+	diplomacy = 5
+	stewardship = 7
+	intrigue = 4
+	learning = 4
+	prowess = 6
+
+	1163.6.14 = {
+		birth = yes
+		trait = magic_good_1
+		trait = beauty_good_2
+	}
+
+	1175.1.1 = {
+		trait = lustful
+		trait = just
+		trait = generous
+	}
+
+	1179.6.14 = {
+		trait = education_diplomacy_4
+	}
+
+	1185.6.13 = {
+		death = {
+			death_reason = death_assassinated_by_soldiers
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_44 = { # Daughter of Mataex Xanis
+	name = "Kalysthia"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_153
+	sexuality = heterosexual
+	female = yes
+
+	father = centralislander_aversarinas_aagiokrata_40
+
+	martial = 9
+	diplomacy = 7
+	stewardship = 7
+	intrigue = 6
+	learning = 3
+	prowess = 6
+
+	1165.11.15 = {
+		birth = yes
+		trait = beauty_good_2
+	}
+
+	1177.1.1 = {
+		trait = temperate
+		trait = forgiving
+		trait = just
+	}
+
+	1181.11.15 = {
+		trait = education_diplomacy_3
+	}
+
+	1182.5.22 = { # Mysteriously vanished alongside her aunt
+		death = {
+			death_reason = death_disappearance
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_45 = { # Son of Kyriake Xanis, last of his house
+	name = "Kytharos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_153
+
+	mother = centralislander_aversarinas_aagiokrata_43
+
+	martial = 1
+	diplomacy = 1
+	stewardship = 1
+	intrigue = 0
+	learning = 0
+	prowess = 1
+
+	1182.7.1 = {
+		birth = yes
+		trait = beauty_good_1
+	}
+
+	1185.6.13 = {
+		death = {
+			death_reason = death_fall
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_46 = { # Naexiosix Kathallios, savvy islander merchant, provided ships to Orydian expedition
+	name = "Naexiosix"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_154
+	sexuality = heterosexual
+
+	martial = 4
+	diplomacy = 7
+	stewardship = 10
+	intrigue = 7
+	learning = 6
+	prowess = 5
+
+	1058.4.18 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1070.1.1 = {
+		trait = eccentric
+		trait = ambitious
+		trait = patient
+	}
+
+	1074.4.18 = {
+		trait = education_stewardship_2
+		trait = shrewd
+		trait = avaricious
+	}
+	
+	1122.4.2 = {
+		death = {
+			death_reason = death_typhus
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_47 = { # Aranthios Kathallios, son of Naexiosix
+	name = "Aranthios"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_154
+	sexuality = heterosexual
+
+	father = centralislander_aversarinas_aagiokrata_46
+
+	martial = 3
+	diplomacy = 6
+	stewardship = 3
+	intrigue = 7
+	learning = 7
+	prowess = 6
+
+	1082.5.26 = {
+		birth = yes
+		trait = magic_good_2
+	}
+	
+	1094.1.1 = {
+		trait = content
+		trait = callous
+		trait = trusting
+	}
+	
+	1100.5.26 = {
+		trait = education_intrigue_1
+	}
+
+	1106.11.5 = {
+		add_spouse = centralislander_aversarinas_aagiokrata_33
+	}
+	
+	1122.4.2 = {
+		death = {
+			death_reason = death_typhus
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_48 = { # Aerkhion Kathallios, son of Aranthios
+	name = "Aerkhion"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_154
+	sexuality = heterosexual
+
+	father = centralislander_aversarinas_aagiokrata_47
+	mother = centralislander_aversarinas_aagiokrata_33
+
+	martial = 5
+	diplomacy = 6
+	stewardship = 7
+	intrigue = 7
+	learning = 4
+	prowess = 7
+
+	1108.11.14 = {
+		birth = yes
+		trait = magic_good_3
+	}
+	
+	1120.1.1 = {
+		trait = stubborn
+		trait = diligent
+		trait = arrogant
+	}
+	
+	1124.11.14 = {
+		trait = education_stewardship_4
+		trait = administrator
+	}
+	
+	1147.4.15 = {
+		death = {
+			death_reason = death_false_kraken
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_49 = { # Ioliaxos Kathallios, son of Aranthios
+	name = "Ioliaxos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_154
+	sexuality = heterosexual
+
+	father = centralislander_aversarinas_aagiokrata_47
+	mother = centralislander_aversarinas_aagiokrata_33
+
+	martial = 5
+	diplomacy = 6
+	stewardship = 2
+	intrigue = 5
+	learning = 7
+	prowess = 3
+
+	1112.9.4 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	
+	1124.1.1 = {
+		trait = cynical
+		trait = lustful
+		trait = shy
+	}
+	
+	1128.9.4 = {
+		trait = education_arcana_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 3 }
+		}
+	}
+	
+	1181.7.14 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_50 = { # Xythia Kathallios, daughter of Aranthios
+	name = "Xythia"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_154
+	sexuality = heterosexual
+	female = yes
+
+	father = centralislander_aversarinas_aagiokrata_47
+	mother = centralislander_aversarinas_aagiokrata_33
+
+	martial = 9
+	diplomacy = 8
+	stewardship = 9
+	intrigue = 4
+	learning = 9
+	prowess = 4
+
+	1115.9.18 = {
+		birth = yes
+		trait = magic_good_5
+	}
+	
+	1127.1.1 = {
+		trait = fickle
+		trait = impatient
+		trait = diligent
+	}
+	
+	1131.9.18 = {
+		trait = education_diplomacy_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+	
+	1150.5.16 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_51 = { # Maikhixos Kathallios, son of Aerkhion
+	name = "Maikhixos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_154
+	sexuality = heterosexual
+
+	father = centralislander_aversarinas_aagiokrata_48
+
+	martial = 5
+	diplomacy = 3
+	stewardship = 5
+	intrigue = 5
+	learning = 6
+	prowess = 5
+
+	1134.12.2 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	
+	1146.1.1 = {
+		trait = gluttonous
+		trait = sadistic
+		trait = gregarious
+	}
+	
+	1150.12.2 = {
+		trait = education_stewardship_3
+		trait = avaricious
+		trait = comfort_eater
+	}
+	
+	1194.9.17 = { # ODL downfall
+		death = {
+			death_reason = death_magic_fire
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_52 = { # Naexiosix Kathallios, son of Maikhixos
+	name = "Naexiosix"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_154
+	sexuality = heterosexual
+
+	father = centralislander_aversarinas_aagiokrata_51
+
+	martial = 11
+	diplomacy = 2
+	stewardship = 6
+	intrigue = 3
+	learning = 7
+	prowess = 4
+
+	1160.12.20 = {
+		birth = yes
+	}
+	
+	1172.1.1 = {
+		trait = greedy
+		trait = arrogant
+		trait = arbitrary
+	}
+	
+	1176.12.20 = {
+		trait = education_diplomacy_2
+	}
+	
+	1194.9.17 = { # ODL downfall
+		death = {
+			death_reason = death_magic_fire
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_53 = { # Diodaxos Kathallios, son of Naesiosix
+	name = "Diodaxos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_154
+	sexuality = heterosexual
+
+	father = centralislander_aversarinas_aagiokrata_52
+
+	martial = 1
+	diplomacy = 3
+	stewardship = 2
+	intrigue = 1
+	learning = 3
+	prowess = 1
+
+	1187.2.3 = {
+		birth = yes
+	}
+	
+	1194.9.17 = { # ODL downfall
+		death = {
+			death_reason = death_magic_fire
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_54 = { # Maikhidon Kathallios, son of Ioliaxos, betrayed his house but was executed all the same
+	name = "Maikhidon"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_154
+	sexuality = heterosexual
+
+	father = centralislander_aversarinas_aagiokrata_49
+
+	martial = 7
+	diplomacy = 5
+	stewardship = 10
+	intrigue = 4
+	learning = 7
+	prowess = 3
+
+	1136.4.9 = {
+		birth = yes
+		trait = magic_good_4
+		trait = intellect_good_1
+	}
+	
+	1148.1.1 = {
+		trait = fickle
+		trait = ambitious
+		trait = greedy
+	}
+	
+	1152.4.9 = {
+		trait = education_stewardship_3
+		trait = avaricious
+	}
+	
+	1195.7.21 = {
+		death = {
+			death_reason = death_execution
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_55 = { # Ioliaxos Kathallios, son of Maikhidon, joined Bathonex Oryd's pirate crew after his father's death
+	name = "Ioliaxos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_154
+	sexuality = heterosexual
+
+	father = centralislander_aversarinas_aagiokrata_54
+
+	martial = 11
+	diplomacy = 6
+	stewardship = 1
+	intrigue = 7
+	learning = 7
+	prowess = 5
+
+	1162.9.22 = {
+		birth = yes
+		trait = magic_good_2
+	}
+	
+	1174.1.1 = {
+		trait = calm
+		trait = vengeful
+		trait = brave
+	}
+	
+	1178.9.22 = {
+		trait = education_diplomacy_3
+	}
+
+	1195.7.21 = {
+		trait = gallowsbait
+		trait = disinherited
+	}
+	
+	1210.5.11 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+
+centralislander_aversarinas_aagiokrata_56 = { # Eramasios Velathrex, son of Qathrioxes
+	name = "Eramasios"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_155
+	sexuality = homosexual
+
+	father = easternimperial_aversarinas_aagiokrata_94
+
+	martial = 11
+	diplomacy = 6
+	stewardship = 7
+	intrigue = 7
+	learning = 8
+	prowess = 9
+
+	1085.9.12 = {
+		birth = yes
+		trait = magic_good_2
+		trait = beauty_good_1
+	}
+	
+	1097.1.1 = {
+		trait = fickle
+		trait = cynical
+		trait = patient
+	}
+	
+	1101.9.12 = {
+		trait = education_diplomacy_2
+		trait = diplomat
+	}
+	
+	1134.4.25 = {
+		death = {
+			death_reason = death_death_jelly
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_57 = { # Aeliaetia Velathrex, daughter of Qathrioxes
+	name = "Aeliaetia"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_155
+	sexuality = heterosexual
+	female = yes
+
+	father = easternimperial_aversarinas_aagiokrata_94
+
+	martial = 7
+	diplomacy = 10
+	stewardship = 4
+	intrigue = 3
+	learning = 6
+	prowess = 7
+
+	1085.12.19 = {
+		birth = yes
+		trait = magic_good_3
+		trait = beauty_good_3
+		trait = legitimized_bastard
+	}
+	
+	1097.1.1 = {
+		trait = arrogant
+		trait = cynical
+		trait = brave
+	}
+	
+	1101.12.19 = {
+		trait = education_intrigue_3
+		trait = seducer
+	}
+	
+	1168.12.4 = {
+		death = {
+			death_reason = death_poison
+			killer = centralislander_aversarinas_aagiokrata_23 #Epistonea
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_58 = { # Qathrioxes Velathrex, son of Aeliaetia
+	name = "Qathrioxes"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_155
+	sexuality = heterosexual
+
+	mother = centralislander_aversarinas_aagiokrata_57
+
+	martial = 7
+	diplomacy = 6
+	stewardship = 7
+	intrigue = 7
+	learning = 8
+	prowess = 4
+
+	1114.3.24 = {
+		birth = yes
+		trait = magic_good_1
+		trait = beauty_good_2
+	}
+	
+	1126.1.1 = {
+		trait = brave
+		trait = eccentric
+		trait = lazy
+	}
+	
+	1130.3.24 = {
+		trait = education_learning_1
+		trait = improvident
+	}
+
+	1140.12.22 = {
+		add_spouse = centralislander_aversarinas_aagiokrata_39 # Iria Xanis
+	}
+	
+	1160.8.27 = {
+		death = {
+			death_reason = death_sea_mutant
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_59 = { # Mytria Velathrex, daughter of Qathrioxes
+	name = "Mytria"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_155
+	sexuality = heterosexual
+	female = yes
+
+	father = centralislander_aversarinas_aagiokrata_58
+	mother = centralislander_aversarinas_aagiokrata_39
+
+	martial = 3
+	diplomacy = 8
+	stewardship = 8
+	intrigue = 4
+	learning = 7
+	prowess = 7
+
+	1144.5.27 = {
+		birth = yes
+		trait = magic_good_4
+	}
+	
+	1156.1.1 = {
+		trait = arbitrary
+		trait = ambitious
+		trait = chaste
+	}
+	
+	1160.5.27 = {
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+	
+	1169.2.6 = {
+		death = {
+			death_reason = death_slain_in_riot
+			killer = centralislander_aversarinas_aagiokrata_23 #Epistonea
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_60 = { # Kythare Velathrex, daughter of Qathrioxes
+	name = "Kythare"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_155
+	sexuality = heterosexual
+	female = yes
+
+	father = centralislander_aversarinas_aagiokrata_58
+	mother = centralislander_aversarinas_aagiokrata_39
+
+	martial = 4
+	diplomacy = 7
+	stewardship = 6
+	intrigue = 5
+	learning = 7
+	prowess = 6
+
+	1146.2.24 = {
+		birth = yes
+		trait = magic_good_2
+		trait = beauty_good_1
+	}
+	
+	1158.1.1 = {
+		trait = arrogant
+		trait = brave
+		trait = chaste
+	}
+	
+	1162.2.24 = {
+		trait = education_martial_3
+		trait = gh_historical_blademaster_1
+		give_nickname = nick_youngthorn
+	}
+	
+	1168.12.4 = {
+		death = {
+			death_reason = death_poison
+			killer = centralislander_aversarinas_aagiokrata_23 #Epistonea
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_61 = { # Drexinaxos Velathrex, son of Qathrioxes
+	name = "Drexinaxos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_155
+	sexuality = heterosexual
+
+	father = centralislander_aversarinas_aagiokrata_58
+	mother = centralislander_aversarinas_aagiokrata_39
+
+	martial = 5
+	diplomacy = 6
+	stewardship = 4
+	intrigue = 3
+	learning = 7
+	prowess = 6
+
+	1149.6.2 = {
+		birth = yes
+		trait = magic_good_1
+	}
+		
+	1163.8.21 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_62 = { # Philoixos Mataxion, captain of Mataex Oryd's house guard, later given Vixia after the Velathrex' downfall
+	name = "Philoixos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_156
+	sexuality = heterosexual
+
+	martial = 6
+	diplomacy = 8
+	stewardship = 7
+	intrigue = 7
+	learning = 7
+	prowess = 7
+
+	1129.5.12 = {
+		birth = yes
+		trait = physique_good_2
+	}
+	
+	1141.1.1 = {
+		trait = gregarious
+		trait = greedy
+		trait = stubborn
+	}
+	
+	1145.5.12 = {
+		trait = education_martial_3
+		trait = loyal
+		trait = unyielding_defender
+	}
+	
+	1178.4.27 = {
+		death = {
+			death_reason = death_seaspirit
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_63 = { # Iskhronos Mataxion, son of Philoixos
+	name = "Iskhronos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_156
+	sexuality = heterosexual
+
+	father = centralislander_aversarinas_aagiokrata_62
+
+	martial = 3
+	diplomacy = 6
+	stewardship = 7
+	intrigue = 5
+	learning = 7
+	prowess = 7
+
+	1158.2.24 = {
+		birth = yes
+		trait = physique_good_1
+	}
+	
+	1170.1.1 = {
+		trait = calm
+		trait = compassionate
+		trait = stubborn
+	}
+	
+	1174.2.24 = {
+		trait = education_stewardship_3
+	}
+
+	1181.12.24 = {
+		add_spouse = centralislander_aversarinas_aagiokrata_44
+	}
+	
+	1186.3.3 = {
+		death = {
+			death_reason = death_magic_petrify
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_64 = { # Bathonex Mataxion, son of Iskhronos
+	name = "Bathonex"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_156
+	sexuality = heterosexual
+
+	father = centralislander_aversarinas_aagiokrata_63
+	mother = centralislander_aversarinas_aagiokrata_44
+
+	martial = 2
+	diplomacy = 3
+	stewardship = 2
+	intrigue = 3
+	learning = 1
+	prowess = 2
+
+	1182.5.16 = {
+		birth = yes
+		trait = physique_good_1
+		trait = magic_good_2
+	}
+	
+	1192.6.21 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_65 = { # Dethamania Mataxion, daughter of Philoixos
+	name = "Dethamania"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_156
+	sexuality = heterosexual
+	female = yes
+
+	father = centralislander_aversarinas_aagiokrata_62
+
+	martial = 4
+	diplomacy = 11
+	stewardship = 5
+	intrigue = 4
+	learning = 5
+	prowess = 4
+
+	1164.9.13 = {
+		birth = yes
+		trait = twin
+	}
+	
+	1176.1.1 = {
+		trait = honest
+		trait = calm
+		trait = lazy
+	}
+	
+	1180.9.13 = {
+		trait = education_martial_3
+		trait = strategist
+		trait = logistician
+	}
+	
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_66 = { # Oiktimnos Mataxion, son of Philoixos
+	name = "Oiktimnos"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_156
+	sexuality = heterosexual
+
+	father = centralislander_aversarinas_aagiokrata_62
+
+	martial = 8
+	diplomacy = 6
+	stewardship = 6
+	intrigue = 4
+	learning = 6
+	prowess = 4
+
+	1164.9.13 = {
+		birth = yes
+		trait = twin
+		trait = physique_good_1
+	}
+	
+	1176.1.1 = {
+		trait = honest
+		trait = sadistic
+		trait = forgiving
+	}
+	
+	1180.9.13 = {
+		trait = education_diplomacy_3
+	}
+	
+	1194.3.27 = { # ODL Downfall (first to fall)
+		death = {
+			death_reason = death_siege
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_67 = { # Mataex Messchrian, son of Phalox, named after Mataex Oryd
+	name = "Mataex"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_4
+	sexuality = bisexual
+
+	father = centralimperial_aversarinas_aagiokrata_187
+	mother = southernimperial_aversarinas_aagiokrata_123
+
+	martial = 5
+	diplomacy = 6
+	stewardship = 7
+	intrigue = 3
+	learning = 6
+	prowess = 6
+
+	1128.5.20 = {
+		birth = yes
+		trait = magic_good_5
+	}
+	
+	1140.1.1 = {
+		trait = zealous
+		trait = callous
+		trait = craven
+	}
+	
+	1144.5.20 = {
+		trait = education_stewardship_2
+	}
+	
+	1182.4.5 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_68 = { # Iskhadaios Messchrian, younger son of Mataex, inherited the isles while his brother Ios inherited the mainland holdings
+	name = "Iskhadaios"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	dynasty = dyn_aversarian_4
+	sexuality = heterosexual
+
+	father = centralislander_aversarinas_aagiokrata_67
+
+	martial = 9
+	diplomacy = 2
+	stewardship = 7
+	intrigue = 3
+	learning = 7
+	prowess = 7
+
+	1168.2.24 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1180.1.1 = {
+		trait = gregarious
+		trait = stubborn
+		trait = lustful
+	}
+
+	1184.2.24 = {
+		trait = education_martial_3
+	}
+
+	1195.7.21 = {
+		death = {
+			death_reason = death_execution
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_69 = { # Local Islander Lord - Paflaakes, minor lord
+	name = "Lethaios"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	sexuality = heterosexual
+
+	martial = 5
+	diplomacy = 5
+	stewardship = 8
+	intrigue = 5
+	learning = 5
+	prowess = 4
+
+	1061.12.24 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1073.1.1 = {
+		trait = deceitful
+		trait = shy
+		trait = arrogant
+	}
+
+	1077.12.24 = {
+		trait = education_stewardship_2
+	}
+
+	1089.8.28 = { # Orydian Expedition, first to fall
+		death = {
+			death_reason = death_siege
+			killer = southernimperial_aversarinas_aagiokrata_121
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_70 = { # Local Islander Lord - Sycus, old powerful magi of ancient stock
+	name = "Aeltheniax"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	sexuality = heterosexual
+
+	martial = 4
+	diplomacy = 4
+	stewardship = 7
+	intrigue = 8
+	learning = 5
+	prowess = 8
+
+	992.9.16 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	1004.1.1 = {
+		trait = arrogant
+		trait = ambitious
+		trait = sadistic
+	}
+
+	1008.9.16 = {
+		trait = education_intrigue_3
+		trait = overseer
+		trait = torturer
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+		trait = gh_glowing_eyes
+	}
+
+	1090.4.22 = { # Orydian Expedition, final duel at Sycus
+		death = {
+			death_reason = death_magic_fire
+			killer = southernimperial_aversarinas_aagiokrata_121
+		}
+	}
+}
+
+centralislander_aversarinas_aagiokrata_71 = { # Local Islander Lord - Syndis and Vixia
+	name = "Haedras"
+	religion = "aversarinas_aagiokrata"
+	culture = "centralislander"
+
+	sexuality = asexual
+	female = yes
+
+	martial = 8
+	diplomacy = 7
+	stewardship = 5
+	intrigue = 3
+	learning = 7
+	prowess = 4
+
+	1042.11.22 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1054.1.1 = {
+		trait = trusting
+		trait = ambitious
+		trait = just
+	}
+
+	1058.11.22 = {
+		trait = education_diplomacy_3
+		trait = shrewd
+	}
+
+	1090.1.4 = { # Orydian Expedition, second to fall
+		death = {
+			death_reason = death_murder_known
+			killer = easternimperial_aversarinas_aagiokrata_94
+		}
+	}
+}

@@ -1,0 +1,19 @@
+﻿symvolix_arthenaxian_1 = {
+	name = "Tharesix"
+	religion = "arthenaxian"
+	culture = "symvolix"
+
+	1231.2.5 = {
+		birth = yes
+	}
+}
+
+symvolix_arthenaxian_2 = {
+	name = "Antidoros"
+	religion = "arthenaxian"
+	culture = "symvolix"
+
+	1219.2.27 = {
+		birth = yes
+	}
+}

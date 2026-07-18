@@ -1,0 +1,1735 @@
+﻿amaghean_amaghean_aagiokrata_1 = { # hedonist brother
+	name = "Tarnaz"
+	dna = amaghean_amaghean_aagiokrata_1
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	father = amaghean_amaghean_aagiokrata_8
+	mother = easternimperial_amaghean_aagiokrata_1
+	dynasty = dyn_lerrardin_1
+
+	trait = beauty_good_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_mena_04
+		}
+	}
+
+	1226.7.19 = {
+		birth = yes
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 3 }
+		}
+	}
+	1226.7.20 = {
+		trait = magic_good_1
+	}
+	1238.7.19 = {
+		trait = lustful
+		trait = ambitious
+		trait = arrogant
+	}
+	1242.7.19 = {
+		trait = education_intrigue_2
+		trait = lunatic_1
+		trait = profligate
+		trait = gh_historical_reveler_2
+
+		effect = {
+			imprison = {
+				target = character:easternimperial_amaghean_aagiokrata_1
+				type = house_arrest
+			}
+		}
+
+		set_relation_rival = {
+			target = character:amaghean_amaghean_aagiokrata_6 # Uncle Dracula
+			reason = nemesis_killed_father
+			involved_character = character:amaghean_amaghean_aagiokrata_8
+		}
+
+		set_relation_rival = {
+			target = character:amaghean_amaghean_aagiokrata_2
+			reason = rival_covetted_claim
+		}
+
+		set_relation_rival = {
+			target = character:amaghean_amaghean_aagiokrata_3
+			reason = rival_covetted_claim
+		}
+
+		add_pressed_claim = title:d_ksakho
+		add_pressed_claim = title:d_tshkigri
+	}
+	1250.1.7 = {
+		add_spouse = southernimperial_aversarinas_aagiokrata_106
+	}
+	1250.1.8 = {
+		add_spouse = centralimperial_aversarinas_aagiokrata_131
+	}
+	1250.1.9 = {
+		set_relation_lover = {
+			target = character:amaghean_amaghean_aagiokrata_13
+			reason = lover_party_baron
+		}
+	}
+	1250.1.10 = {
+		set_relation_lover = {
+			target = character:amaghean_amaghean_aagiokrata_14
+			reason = lover_party_baron
+		}
+	}
+	1250.1.11 = {
+		set_relation_lover = {
+			target = character:amaghean_amaghean_aagiokrata_15
+			reason = lover_party_baron
+		}
+	}
+	1250.1.12 = {
+		set_relation_lover = {
+			target = character:amaghean_amaghean_aagiokrata_16
+			reason = lover_party_baron
+		}
+	}
+	1250.1.13 = {
+		set_relation_friend = {
+			target = character:amaghean_amaghean_aagiokrata_108
+			reason = friend_feast_bonding
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_2 = { # paranoid Magi brother
+	name = "Parnaz"
+	dna = amaghean_amaghean_aagiokrata_2
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	father = amaghean_amaghean_aagiokrata_8
+	mother = easternimperial_amaghean_aagiokrata_1
+	dynasty = dyn_lerrardin_1
+
+	learning = 12
+	health = 6
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_sub_saharan_02
+			custom_hair = male_hair_mena_01
+		}
+	}
+
+	1227.7.16 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1239.7.16 = {
+		trait = paranoid
+		trait = vengeful
+		trait = sadistic
+	}
+
+	1243.7.16 = {
+		trait = theologian
+		trait = lunatic_1
+		trait = reclusive
+		trait = education_arcana_3
+
+		set_relation_rival = {
+			target = character:amaghean_amaghean_aagiokrata_6 # Uncle Dracula
+			reason = nemesis_killed_father
+			involved_character = character:amaghean_amaghean_aagiokrata_8
+		}
+
+		add_pressed_claim = title:d_ksakho
+		add_pressed_claim = title:d_tshkigri
+
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:silentspeak }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+	1248.7.16 = {
+		set_relation_friend = {
+			target = character:amaghean_amaghean_aagiokrata_103
+			reason = friend_common_interests
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_3 = { # barbarian brother
+	name = "Khvicha"
+	dna = amaghean_amaghean_aagiokrata_3
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	father = amaghean_amaghean_aagiokrata_8
+	mother = easternimperial_amaghean_aagiokrata_1
+	dynasty = dyn_lerrardin_1
+
+	martial = 14
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_western_03
+		}
+	}
+
+	1229.3.1 = {
+		birth = yes
+	}
+	1229.3.2 = {
+		trait = intellect_bad_3
+		trait = physique_good_3
+	}
+	1241.3.1 = {
+		trait = brave
+		trait = ambitious
+		trait = wrathful
+	}
+	1245.3.1 = {
+		trait = education_martial_2
+		trait = aggressive_attacker
+		trait = gh_historical_blademaster_2
+
+		set_relation_rival = {
+			target = character:amaghean_amaghean_aagiokrata_2
+			reason = rival_covetted_claim
+		}
+
+		set_relation_rival = {
+			target = character:amaghean_amaghean_aagiokrata_6 # Uncle Dracula
+			reason = nemesis_killed_father
+			involved_character = character:amaghean_amaghean_aagiokrata_8
+		}
+
+		add_pressed_claim = title:d_ksakho
+	}
+}
+
+amaghean_amaghean_aagiokrata_4 = {
+	name = "Petimer"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+	father = amaghean_amaghean_aagiokrata_19
+	trait = intellect_good_1
+
+	martial = 5
+	diplomacy = 6
+	stewardship = 9
+	intrigue = 3
+	learning = 6
+
+	1214.5.11 = {
+		birth = yes
+	}
+	1226.5.11 = {
+		trait = diligent
+		trait = fickle
+		trait = just
+	}
+	1230.5.11 = {
+		trait = education_stewardship_3
+		trait = architect
+	}
+}
+
+amaghean_amaghean_aagiokrata_5 = {
+	name = "Notrdore"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+	father = amaghean_amaghean_aagiokrata_23
+	trait = physique_good_2
+
+	martial = 5
+	diplomacy = 6
+	stewardship = 9
+	intrigue = 3
+	learning = 6
+
+	1219.8.6 = {
+		birth = yes
+	}
+	1231.8.6 = {
+		trait = brave
+		trait = zealous
+		trait = wrathful
+	}
+	1236.8.6 = {
+		trait = education_martial_1
+		trait = poet
+		trait = gh_historical_blademaster_3
+	}
+}
+
+amaghean_amaghean_aagiokrata_6 = { # Uncle Dracula
+	name = "Vakhtan"
+	dna = amaghean_amaghean_aagiokrata_6
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	father = amaghean_amaghean_aagiokrata_9
+	dynasty = dyn_lerrardin_1
+	sexuality = asexual
+	trait = intellect_good_2
+	trait = gh_gedeora_child
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_mena_03
+		}
+	}
+
+	1187.8.14 = {
+		birth = yes
+	}
+
+	1187.8.15 = {
+		trait = magic_good_9
+	}
+
+	1199.8.14 = {
+		trait = sadistic
+		trait = ambitious
+		trait = wrathful
+	}
+
+	1203.8.14 = {
+		# trait = vampiric
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+		trait = torturer
+		trait = overseer
+		trait = legitimized_bastard
+		trait = gh_historical_blademaster_2
+		trait = education_martial_3
+	}
+
+	1242.11.3 = {
+		trait = kinslayer_3
+		give_nickname = nick_the_bloody_vakhtan
+	}
+
+	1250.1.1 = {
+		# add_trait = gh_extended_life
+		effect = {
+			upgrade_stacking_modifier_by_level_effect = { MODIFIER = magic_life_extension_modifier TYPE = character LEVEL = 5 YEARS = -1  } 
+			upgrade_stacking_modifier_by_level_effect = { MODIFIER = magic_arcane_degeneration_modifier TYPE = character LEVEL = 1 YEARS = -1  } 
+			set_variable = {
+				name = life_extention_amount_raw
+				value = 5
+			}
+		}
+		add_pressed_claim = title:d_tshkigri
+	}
+
+	1250.2.12 = {
+		set_relation_friend = {
+			target = character:amaghean_amaghean_aagiokrata_11
+			reason = friend_right_hand_man
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_8 = { # Brothers Father
+	name = "Tamaz"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	father = amaghean_amaghean_aagiokrata_9
+	mother = amaghean_amaghean_aagiokrata_10
+	dynasty = dyn_lerrardin_1
+
+	1189.9.20 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1200.3.1 = {
+		add_pressed_claim = title:k_svatavego
+	}
+	1203.9.20 = {
+		trait = compassionate
+		trait = shy
+		trait = content
+	}
+	1205.9.20 = {
+		trait = education_learning_3
+	}
+	1225.6.14 = {
+		add_spouse = easternimperial_amaghean_aagiokrata_1
+	}
+	1242.11.3 = {
+		death = {
+			death_reason = death_murder_known
+			killer = amaghean_amaghean_aagiokrata_6
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_9 = { # first Vashvili
+	name = "Revaz"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	dynasty = dyn_lerrardin_1
+	trait = physique_good_2
+	trait = magic_good_4
+
+	1144.1.5 = {
+		birth = yes
+	}
+
+	1160.12.12 = {
+		trait = education_martial_1
+		trait = gh_historical_blademaster_1
+		trait = ambitious
+		trait = callous
+		trait = brave
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1176.5.4 = {
+		add_pressed_claim = title:k_svatavego
+		trait = overseer
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_10 = {
+	name = "Makvala"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	female = yes
+
+	1153.4.3 = {
+		birth = yes
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_11 = { # the white lion
+	name = "Akakih"
+	dna = amaghean_amaghean_aagiokrata_11
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+	dynasty = dyn_lerrardin_2
+	father = amaghean_amaghean_aagiokrata_30
+	trait = albino
+	trait = physique_good_1
+
+	martial = 9
+	diplomacy = 5
+	stewardship = 7
+	intrigue = 8
+	learning = 3
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_mustache_iranian_05
+			custom_hair = male_hair_byzantine_01
+		}
+	}
+
+	1212.5.14 = {
+		birth = yes
+	}
+	1224.5.14 = {
+		trait = brave
+		trait = zealous
+		trait = ambitious
+	}
+	1228.5.14 = {
+		trait = education_martial_3
+		trait = cautious_leader
+		trait = gallant
+		trait = gh_historical_blademaster_2
+	}
+	1250.2.12 = {
+		trait = scarred
+		give_nickname = nick_the_white_lion_akakih
+	}
+}
+
+amaghean_amaghean_aagiokrata_12 = { # mountain brute
+	name = "Levanh"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = bisexual
+	trait = strong
+	trait = gh_historical_blademaster_1
+
+	martial = 8
+	diplomacy = 4
+	stewardship = 6
+	intrigue = 6
+	learning = 5
+
+	1219.7.19 = {
+		birth = yes
+	}
+	1231.7.19 = {
+		trait = wrathful
+		trait = vengeful
+		trait = impatient
+	}
+	1235.7.19 = {
+		trait = education_martial_2
+		effect = {
+			set_relation_rival = character:amaghean_amaghean_aagiokrata_11
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_13 = { # Tarnaz lover 1
+	name = "Ana"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+	trait = shrewd
+	trait = beauty_good_1
+	female = yes
+
+	1229.7.19 = {
+		birth = yes
+	}
+	1241.7.19 = {
+		trait = compassionate
+		trait = lazy
+		trait = honest
+	}
+	1245.7.19 = {
+		trait = education_diplomacy_3
+	}
+}
+
+amaghean_amaghean_aagiokrata_14 = { # Tarnaz lover 2
+	name = "Lamara"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+	female = yes
+
+	1230.1.17 = {
+		birth = yes
+	}
+	1242.1.17 = {
+		trait = paranoid
+		trait = vengeful
+		trait = ambitious
+	}
+	1246.1.17 = {
+		trait = education_martial_2
+	}
+}
+
+amaghean_amaghean_aagiokrata_15 = { # Tarnaz lover 3
+	name = "Tatiah"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+	trait = beauty_good_2
+	female = yes
+
+	1232.5.6 = {
+		birth = yes
+	}
+	1244.5.6 = {
+		trait = deceitful
+		trait = patient
+		trait = callous
+	}
+	1248.5.6 = {
+		trait = education_intrigue_4
+	}
+}
+
+amaghean_amaghean_aagiokrata_16 = { # Tarnaz lover 4
+	name = "Suliko"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = bisexual
+	trait = beauty_good_1
+	female = yes
+
+	1228.11.2 = {
+		birth = yes
+	}
+	1240.11.2 = {
+		trait = arrogant
+		trait = deceitful
+		trait = sadistic
+	}
+	1244.11.2 = {
+		trait = education_intrigue_2
+	}
+}
+
+amaghean_amaghean_aagiokrata_17 = { # Scholar Amaghean
+	name = "Zalden"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+	trait = intellect_good_1
+
+	1198.4.12 = {
+		birth = yes
+	}
+	1210.4.12 = {
+		trait = zealous
+		trait = temperate
+		trait = stubborn
+	}
+	1214.4.12 = {
+		trait = education_learning_4
+		trait = poet
+	}
+	1238.9.7 = {
+		trait = depressed_1
+		trait = scholar
+	}
+}
+
+amaghean_amaghean_aagiokrata_18 = { # 1200 Duke Onemo
+	name = "Zviad"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+
+	1162.2.24 = {
+		birth = yes
+	}
+	1174.2.24 = {
+		trait = trusting
+		trait = fickle
+		trait = calm
+	}
+	1178.2.24 = {
+		trait = education_diplomacy_3
+	}
+	1239.1.14 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_19 = { # 1200 Duke Sighali
+	name = "Gurgen"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = homosexual
+	trait = intellect_bad_2
+
+	1174.11.6 = {
+		birth = yes
+	}
+	1186.11.6 = {
+		trait = impatient
+		trait = trusting
+		trait = forgiving
+	}
+	1190.11.6 = {
+		trait = education_diplomacy_1
+	}
+	1223.7.11 = {
+		death = {
+			death_reason = death_murder
+			killer = amaghean_amaghean_aagiokrata_20
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_20 = { # 1200 Duke Irritarvo
+	name = "Jarji"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+	dynasty = dyn_aversarian_114
+	trait = intellect_good_1
+
+	1188.4.9 = {
+		birth = yes
+	}
+	1200.4.9 = {
+		trait = vengeful
+		trait = greedy
+		trait = deceitful
+	}
+	1204.4.9 = {
+		trait = education_intrigue_3
+	}
+	1242.11.3 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_21 = { # 1200 Duke Touvardnadha
+	name = "Kakhi"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = asexual
+	trait = physique_good_2
+
+	1109.6.11 = {
+		birth = yes
+	}
+	1121.6.11 = {
+		trait = stubborn
+		trait = content
+		trait = calm
+	}
+	1125.6.11 = {
+		trait = education_stewardship_3
+	}
+	1206.12.4 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_22 = { # 1217 Duke Touvardnadha
+	name = "Ia"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+	female = yes
+	father = amaghean_amaghean_aagiokrata_21
+	trait = physique_good_1
+
+	1159.12.3 = {
+		birth = yes
+	}
+	1171.12.3 = {
+		trait = shy
+		trait = patient
+		trait = calm
+	}
+	1175.12.3 = {
+		trait = education_learning_2
+	}
+	1240.1.9 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_23 = { # 1200 Duke Ksageri
+	name = "Zurab"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = bisexual
+	trait = physique_good_2
+
+	1193.5.8 = {
+		birth = yes
+	}
+	1205.5.8 = {
+		trait = callous
+		trait = arrogant
+		trait = ambitious
+	}
+	1209.5.8 = {
+		trait = education_martial_3
+	}
+	1242.11.3 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_24 = { # 1200 Duke Messopus
+	name = "Padla"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+	trait = schemer
+	trait = lisping
+	trait = magic_good_6
+	trait = gh_ritual_tattoos
+
+	martial = 9
+	diplomacy = 5
+	stewardship = 6
+	intrigue = 10
+	learning = 9
+
+	1180.3.14 = {
+		birth = yes
+	}
+	1192.3.14 = {
+		trait = paranoid
+		trait = zealous
+		trait = ambitious
+	}
+	1196.3.14 = {
+		trait = education_intrigue_2
+	}
+	1216.4.17 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_25 = { # 1200 Duke Athoduta
+	name = "Eliso"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = homosexual
+	female = yes
+
+	1180.3.14 = {
+		birth = yes
+	}
+	1192.3.14 = {
+		trait = compassionate
+		trait = patient
+		trait = honest
+	}
+	1196.3.14 = {
+		trait = education_diplomacy_3
+	}
+	1249.4.17 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_26 = { # 1200 Duke Tshkigri
+	name = "Tinatinh"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+	female = yes
+
+	1138.7.8 = {
+		birth = yes
+	}
+	1150.7.8 = {
+		trait = greedy
+		trait = stubborn
+		trait = arrogant
+	}
+	1154.7.8 = {
+		trait = education_stewardship_1
+	}
+	1226.2.4 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_27 = { # 1200 Duke Amaghean Isles
+	name = "Giorgi"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = bisexual
+	dynasty = dyn_lerrardin_4
+	trait = beauty_good_2
+
+	1154.9.11 = {
+		birth = yes
+	}
+	1166.9.11 = {
+		trait = deceitful
+		trait = cynical
+		trait = lustful
+	}
+	1170.9.11 = {
+		trait = education_intrigue_3
+	}
+	1216.4.17 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_28 = { # 1200 Count Oranision
+	name = "Shota"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+
+	1121.6.15 = {
+		birth = yes
+	}
+	1133.6.15 = {
+		trait = compassionate
+		trait = calm
+		trait = forgiving
+	}
+	1137.6.15 = {
+		trait = education_diplomacy_2
+	}
+	1194.5.11 = {
+		trait = blind
+	}
+	1202.2.9 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_29 = { # 1200 Count Ashtar
+	name = "Kaikhosro"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+
+	1166.8.1 = {
+		birth = yes
+	}
+	1178.8.1 = {
+		trait = brave
+		trait = diligent
+		trait = gluttonous
+	}
+	1182.8.1 = {
+		trait = education_martial_2
+	}
+	1216.4.17 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_30 = { # 1200 Count Demioeiro
+	name = "Konstantine"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+	dynasty = dyn_lerrardin_2
+
+	father = amaghean_amaghean_aagiokrata_120
+
+	1165.3.22 = {
+		birth = yes
+	}
+	1177.3.22 = {
+		trait = temperate
+		trait = generous
+		trait = honest
+	}
+	1181.3.22 = {
+		trait = education_stewardship_3
+	}
+	1220.6.29 = {
+		death = {
+			death_reason = death_murder
+			killer = amaghean_amaghean_aagiokrata_20
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_31 = { # 1200 Count Illitavi
+	name = "Merab"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = asexual
+
+	1177.4.16 = {
+		birth = yes
+	}
+	1189.4.16 = {
+		trait = zealous
+		trait = impatient
+		trait = arrogant
+	}
+	1193.4.16 = {
+		trait = education_learning_1
+	}
+	1218.9.4 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_32 = { # 1200 Slaver-duke of Tsnemo
+	name = "Nikoloz"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+	father = amaghean_amaghean_aagiokrata_27
+	dynasty = dyn_lerrardin_4
+	trait = bastard
+	trait = beauty_good_1
+
+	1177.2.26 = {
+		birth = yes
+	}
+	1189.2.26 = {
+		trait = sadistic
+		trait = lazy
+		trait = greedy
+	}
+	1193.4.16 = {
+		trait = education_intrigue_3
+	}
+	1197.8.30 = {
+		give_nickname = nick_the_black_sheep_nikoloz
+		trait = deviant
+		set_relation_friend = character:amaghean_amaghean_aagiokrata_34
+		set_relation_friend = character:amaghean_amaghean_aagiokrata_33
+	}
+	1209.11.6 = {
+		trait = scarred
+	}
+	1224.9.4 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_33 = { # 1200 Slaver-duke of Ksagro
+	name = "Mikheil"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = homosexual
+	father = amaghean_amaghean_aagiokrata_27
+	dynasty = dyn_lerrardin_4
+	trait = bastard
+	trait = beauty_good_1
+
+	1179.7.11 = {
+		birth = yes
+	}
+	1191.7.11 = {
+		trait = callous
+		trait = arrogant
+		trait = vengeful
+	}
+	1195.7.11 = {
+		trait = education_martial_2
+	}
+	1197.8.30 = {
+		give_nickname = nick_the_heartless_mikheil
+		set_relation_friend = character:amaghean_amaghean_aagiokrata_34
+	}
+	1209.11.6 = {
+		trait = one_legged
+	}
+	1224.9.4 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_34 = { # 1200 Slaver-duke of Tsano
+	name = "Gabrieli"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+	father = amaghean_amaghean_aagiokrata_27
+	dynasty = dyn_lerrardin_4
+	trait = bastard
+	trait = beauty_good_1
+	trait = giant
+
+	1180.3.2 = {
+		birth = yes
+	}
+	1192.3.2 = {
+		trait = brave
+		trait = arbitrary
+		trait = wrathful
+	}
+	1196.3.2 = {
+		trait = education_martial_3
+	}
+	1197.8.30 = {
+		give_nickname = nick_the_mountain_that_strikes_gabrieli
+	}
+	1209.11.6 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_35 = { # 1200 Duke of Dumao
+	name = "Koba"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+
+	1171.5.12 = {
+		birth = yes
+	}
+	1183.5.12 = {
+		trait = craven
+		trait = just
+		trait = trusting
+	}
+	1187.5.12 = {
+		trait = education_diplomacy_2
+	}
+	1209.11.6 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_36 = { # 1200 Duke of Detbora
+	name = "Bakur"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+
+	1163.1.9 = {
+		birth = yes
+	}
+	1175.1.9 = {
+		trait = paranoid
+		trait = gluttonous
+		trait = deceitful
+	}
+	1179.1.9 = {
+		trait = education_intrigue_2
+	}
+	1209.11.6 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_37 = { # 1200 Duke of Jatsl
+	name = "Anzori"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+
+	1171.5.12 = {
+		birth = yes
+	}
+	1183.5.12 = {
+		trait = chaste
+		trait = just
+		trait = trusting
+	}
+	1187.5.12 = {
+		trait = education_diplomacy_2
+	}
+	1215.9.18 = {
+		death = {
+			death_reason = death_murder
+			killer = easternislander_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_38 = { # 1200 Duke of Athodun
+	name = "Aleksandre"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+
+	1184.1.2 = {
+		birth = yes
+	}
+	1196.1.2 = {
+		trait = fickle
+		trait = content
+		trait = trusting
+	}
+	1200.1.2 = {
+		trait = education_diplomacy_3
+	}
+	1239.9.18 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_39 = { # 1200 Duke of Tsavo
+	name = "Rusudan"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+	female = yes
+
+	1182.7.14 = {
+		birth = yes
+	}
+	1194.7.14 = {
+		trait = stubborn
+		trait = just
+		trait = compassionate
+	}
+	1198.7.14 = {
+		trait = education_stewardship_2
+	}
+	1248.4.9 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_40 = { # 1200 Duke of Javento
+	name = "Malkhazi"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+
+	1180.6.3 = {
+		birth = yes
+	}
+	1192.6.3 = {
+		trait = arbitrary
+		trait = honest
+		trait = compassionate
+	}
+	1196.6.3 = {
+		trait = education_diplomacy_2
+	}
+	1240.1.19 = {
+		death = {
+			death_reason = death_murder
+			killer = amaghean_amaghean_aagiokrata_6
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_41 = { # 1228 Duke of Tshkigri
+	name = "Iese"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+
+	1194.5.12 = {
+		birth = yes
+	}
+	1206.5.12 = {
+		trait = shy
+		trait = generous
+		trait = gluttonous
+	}
+	1210.5.12 = {
+		trait = education_diplomacy_2
+	}
+	1249.6.7 = {
+		death = {
+			death_reason = death_murder
+			killer = amaghean_amaghean_aagiokrata_6
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_101 = { # Tarnaz daughter
+	name = "Zhenobiah"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+	dynasty = dyn_lerrardin_1
+	female = yes
+	mother = centralimperial_aversarinas_aagiokrata_131
+	father = amaghean_amaghean_aagiokrata_1
+	trait = beauty_good_1
+
+	1252.6.11 = {
+		birth = yes
+	}
+}
+
+amaghean_amaghean_aagiokrata_102 = { # Khvicha's unwilling servant
+	name = "Teimuraz"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+
+	1205.6.11 = {
+		birth = yes
+	}
+	1217.6.11 = {
+		trait = humble
+		trait = stubborn
+		trait = craven
+	}
+	1221.6.11 = {
+		trait = education_stewardship_1
+	}
+}
+
+amaghean_amaghean_aagiokrata_103 = { # Mad Parnaz's mad little jester
+	name = "Zhurab"
+	dna = amaghean_amaghean_aagiokrata_103
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = asexual
+
+	health = 6
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_headgear = male_headgear_secular_ep1_jester_01
+			custom_clothes = male_clothes_secular_ep1_jester_01
+			custom_beards = male_beard_steppe_02
+			custom_hair = male_hair_fp2_iberian_christian_01
+		}
+	}
+
+	1221.2.4 = {
+		birth = yes
+		trait = magic_good_3
+		trait = beauty_bad_1
+	}
+
+	1233.2.4 = {
+		trait = callous
+		trait = honest
+		trait = arbitrary
+	}
+
+	1237.2.4 = {
+		trait = schemer
+		trait = lunatic_1
+		trait = poet
+		trait = reclusive
+		trait = irritable
+		trait = blind
+		trait = gh_riftsight_3
+		trait = gh_historical_reveler_3
+		trait = education_intrigue_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:silentspeak }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1249.6.11 = {
+		give_nickname = nick_the_free_one
+	}
+}
+
+amaghean_amaghean_aagiokrata_104 = { # Tarnaz's guard vassal doesn't have land
+	name = "Anzori"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+
+	1180.4.16 = {
+		birth = yes
+	}
+	1192.4.16 = {
+		trait = honest
+		trait = brave
+		trait = zealous
+	}
+	1196.4.16 = {
+		trait = education_martial_3
+	}
+	1204.9.11 = {
+		trait = gallant
+		trait = gh_historical_blademaster_3
+	}
+	1209.6.11 = {
+		add_spouse = amaghean_amaghean_aagiokrata_109
+	}
+	1218.10.14 = {
+		trait = confider
+	}
+	1221.2.5 = {
+		trait = gh_widow
+	}
+	1240.2.5 = {
+		give_nickname = nick_the_old_guard
+	}
+}
+
+amaghean_amaghean_aagiokrata_105 = { # Tarnaz's war criminal who hates the Aygaens
+	name = "Shanshe"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+
+	1208.3.19 = {
+		birth = yes
+	}
+	1220.3.19 = {
+		trait = sadistic
+		trait = wrathful
+		trait = gregarious
+	}
+	1224.3.19 = {
+		trait = education_stewardship_3
+	}
+	1230.3.19 = {
+		trait = avaricious
+		trait = gh_historical_track_hunter_2
+	}
+}
+
+amaghean_amaghean_aagiokrata_106 = { # Tarnaz's pathetic Magi
+	name = "Iese"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+	trait = magic_good_2
+
+	1227.8.20 = {
+		birth = yes
+	}
+	1239.8.20 = {
+		trait = arrogant
+		trait = ambitious
+		trait = craven
+	}
+	1243.8.20 = {
+		trait = education_arcana_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_107 = { # Tarnaz's bored bureaucrat
+	name = "Padla"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+
+	1193.11.7 = {
+		birth = yes
+	}
+	1205.11.7 = {
+		trait = content
+		trait = temperate
+		trait = fickle
+	}
+	1209.11.7 = {
+		trait = education_stewardship_4
+	}
+	1249.2.6 = {
+		trait = depressed_1
+	}
+}
+
+amaghean_amaghean_aagiokrata_108 = { # Tarnaz's lusty vassal
+	name = "Hirakle"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = homosexual
+
+	1230.9.6 = {
+		birth = yes
+	}
+	1242.9.6 = {
+		trait = arrogant
+		trait = paranoid
+		trait = lustful
+	}
+	1246.9.6 = {
+		trait = education_intrigue_2
+	}
+	1251.9.6 = {
+		trait = rakish
+		effect = {
+			add_secret = { type = secret_deviant }
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_109 = { # Tarnaz guard dead wife
+	name = "Lamzira"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+	female = yes
+
+	1185.10.10 = {
+		birth = yes
+	}
+	1197.10.10 = {
+		trait = generous
+		trait = trusting
+		trait = calm
+	}
+	1201.10.10 = {
+		trait = education_diplomacy_2
+	}
+	1221.2.5 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_110 = { # Tarnaz guard's son
+	name = "Tornike"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+	father = amaghean_amaghean_aagiokrata_104
+	mother = amaghean_amaghean_aagiokrata_109
+
+	1209.6.11 = {
+		birth = yes
+	}
+	1221.6.11 = {
+		trait = humble
+		trait = brave
+		trait = honest
+	}
+	1225.6.11 = {
+		trait = education_martial_2
+	}
+}
+
+amaghean_amaghean_aagiokrata_111 = { # Tarnaz bastard 1
+	name = "Davit"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	dynasty = dyn_lerrardin_1
+	father = amaghean_amaghean_aagiokrata_1
+	mother = amaghean_amaghean_aagiokrata_16
+	trait = bastard
+	trait = beauty_good_1
+
+	1247.5.9 = {
+		birth = yes
+	}
+}
+
+amaghean_amaghean_aagiokrata_112 = { # Tarnaz bastard 2
+	name = "Elene"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	dynasty = dyn_lerrardin_1
+	father = amaghean_amaghean_aagiokrata_1
+	mother = amaghean_amaghean_aagiokrata_13
+	female = yes
+	trait = bastard
+	trait = beauty_good_2
+
+	1249.3.2 = {
+		birth = yes
+	}
+}
+
+amaghean_amaghean_aagiokrata_113 = { # Tarnaz bastard 3
+	name = "Tamaz"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	dynasty = dyn_lerrardin_1
+	father = amaghean_amaghean_aagiokrata_1
+	mother = amaghean_amaghean_aagiokrata_16
+	trait = bastard
+
+	1250.12.6 = {
+		birth = yes
+	}
+}
+
+amaghean_amaghean_aagiokrata_114 = { # Tarnaz bastard 4
+	name = "Ushisha"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	dynasty = dyn_lerrardin_1
+	father = amaghean_amaghean_aagiokrata_1
+	mother = amaghean_amaghean_aagiokrata_14
+	trait = bastard
+	trait = stuttering
+
+	1252.1.4 = {
+		birth = yes
+	}
+}
+
+amaghean_amaghean_aagiokrata_115 = { # Tarnaz bastard 5
+	name = "Zalden"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	dynasty = dyn_lerrardin_1
+	father = amaghean_amaghean_aagiokrata_1
+	mother = amaghean_amaghean_aagiokrata_15
+	trait = bastard
+	trait = beauty_good_3
+
+	1252.8.9 = {
+		birth = yes
+	}
+}
+
+amaghean_amaghean_aagiokrata_116 = { # Tarnaz bastard 6
+	name = "Khetevanh"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	dynasty = dyn_lerrardin_1
+	father = amaghean_amaghean_aagiokrata_1
+	mother = amaghean_amaghean_aagiokrata_13
+	female = yes
+	trait = bastard
+	trait = beauty_good_1
+
+	1253.2.4 = {
+		birth = yes
+	}
+}
+
+amaghean_amaghean_aagiokrata_117 = { # Dracula's simp vassal
+	name = "Gvantsa"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	female = yes
+	trait = beauty_good_1
+	trait = magic_good_2
+
+	1225.4.16 = {
+		birth = yes
+	}
+	1237.4.16 = {
+		trait = deceitful
+		trait = sadistic
+		trait = vengeful
+	}
+	1241.4.16 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+		trait = seducer
+		trait = education_intrigue_2
+	}
+}
+
+amaghean_amaghean_aagiokrata_118 = { # Dracula's brutal lieutenant
+	name = "Bakur"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	trait = magic_good_1
+
+	1218.10.2 = {
+		birth = yes
+	}
+	1230.10.2 = {
+		trait = wrathful
+		trait = sadistic
+		trait = paranoid
+	}
+	1234.10.2 = {
+		trait = education_martial_2
+		trait = irritable
+		trait = scarred
+		trait = gh_historical_track_hunter_3
+	}
+}
+
+amaghean_amaghean_aagiokrata_119 = { # Legon Nikoloz Kazvelli of Legio XLIV 'the Kartharaddi's Fear', slain during the Three Cities War
+	name = "Nikoloz"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+	dynasty = dyn_lerrardin_2
+	disallow_random_traits = yes
+
+	father = amaghean_amaghean_aagiokrata_120
+
+	martial = 4
+	diplomacy = 8
+	stewardship = 3
+	intrigue = 1
+	learning = 5
+	prowess = 8
+
+	1166.1.24 = {
+		birth = yes
+	}
+
+	1177.1.1 = {
+		trait = arrogant
+		trait = gregarious
+		trait = honest
+	}
+
+	1181.7.24 = {
+		trait = education_martial_2
+		trait = reckless
+		trait = gh_legon
+	}
+
+	1186.2.1 = {
+		death = {
+			death_reason = death_battle
+			killer = easternimperial_aironoian_aagiokrata_17 # Thrasalioxas Ouarzieh
+		}
+	}
+}
+
+amaghean_amaghean_aagiokrata_120 = { # Akakih's grandfather
+	name = "Bakur"
+	religion = "amaghean_aagiokrata"
+	culture = "amaghean"
+	sexuality = heterosexual
+	dynasty = dyn_lerrardin_2
+	disallow_random_traits = yes
+
+	martial = 2
+	diplomacy = 3
+	stewardship = 8
+	intrigue = 2
+	learning = 7
+	prowess = 5
+
+	1140.9.24 = {
+		birth = yes
+	}
+
+	1152.1.1 = {
+		trait = just
+		trait = generous
+		trait = honest
+	}
+
+	1156.9.24 = {
+		trait = education_diplomacy_2
+	}
+
+	1209.5.10 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}

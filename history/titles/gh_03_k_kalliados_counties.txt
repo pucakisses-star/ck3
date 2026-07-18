@@ -1,0 +1,139 @@
+#c_iofoopol = {
+#	1230.1.1 = { change_development_level = 1 }
+#	1234.1.1 = {
+#	liege = "k_kalliados"
+#		holder = easternimperial_aversarinas_aagiokrata_52
+#	}	
+#}
+c_messenai = {
+	1246.7.11 = {
+		holder = fenvir_sjalvolki_1
+		government = continental_clan_government
+	}
+}
+c_pergike = {
+	1234.1.1 = {
+		holder = easternimperial_aironoian_aagiokrata_1
+	}
+}
+c_pavleus = {
+	1159.7.12 = {
+		liege = k_governorate_aironoi_kingdom
+		holder = easternimperial_aversarinas_aagiokrata_93
+	}
+	1181.5.10 = {
+		holder = easternimperial_aversarinas_aagiokrata_15
+	}
+	1186.6.21 = {
+		holder = easternimperial_aversarian_axiaotheaism_1
+	}
+	1189.12.18 = {
+		holder = etrandanexi_aversarian_axiaotheaism_1
+	}
+	1200.3.2 = {
+		liege = 0
+		holder = etrandanexi_aversarian_axiaotheaism_2
+	}
+	1232.1.9 = {
+		holder = etrandanexi_aversarian_axiaotheaism_3
+	}
+	1234.1.1 = {
+		liege = "k_kalliados"
+	}
+}
+c_nysion = {
+	1148.2.21 = {
+		holder = easternimperial_aversarinas_aagiokrata_19
+	}
+	1164.5.3 = {
+		holder = easternimperial_aversarinas_aagiokrata_15
+	}
+	1186.6.21 = {
+		holder = easternimperial_aversarian_axiaotheaism_1
+	}
+	1200.3.1 = {
+		liege = "k_kalliados"
+		holder = easternimperial_aversarinas_aagiokrata_1
+	}
+}
+c_ptelamnus = {
+	1234.1.1 = {
+		liege = d_paeschaes
+		holder = easternimperial_aversarinas_aagiokrata_51
+	}
+}
+c_vitharon = {
+	1152.1.12 = {
+		liege = "k_kalliados"
+		holder = easternimperial_aversarinas_aagiokrata_79
+	}
+	1174.7.9 = {
+		liege = "k_kalliados"
+		holder = easternimperial_aversarinas_aagiokrata_1
+	}
+}
+c_asiupoli = {
+	756.10.3 = { # Theyssia
+		holder = southernimperial_aversarinas_aagiokrata_1
+		liege = e_aversarinas_aautokrata
+	}
+	960.8.1 = {
+		holder = easternimperial_aversarinas_aagiokrata_76
+		liege = k_governorate_aironoi_kingdom
+	}
+	980.5.14 = {
+		holder = easternimperial_aversarinas_aagiokrata_77
+	}
+	1117.2.12 = { # Maeonias
+		holder = westernimperial_aversarinas_aagiokrata_80
+	}
+	1120.3.14 = { # Ischenios
+		holder = westernimperial_aversarinas_aagiokrata_79
+	}
+	1172.3.14 = {
+		holder = easternimperial_aversarinas_aagiokrata_15
+	}
+	1175.11.28 = { # Aeolus
+		holder = easternimperial_aversarinas_aagiokrata_89
+	}
+	1177.7.17 = {
+		holder = easternimperial_aversarinas_aagiokrata_15
+	}
+	1186.6.21 = {
+		holder = easternimperial_aversarian_axiaotheaism_1
+	}
+	1200.3.1 = {
+		holder = easternimperial_aversarinas_aagiokrata_1
+	}
+	1246.7.11 = {
+		holder = fenvir_sjalvolki_1
+		government = continental_clan_government
+	}
+	1230.1.1 = { change_development_level = 1 }
+}
+c_itorus = {
+	1250.1.1 = {
+		liege = k_fenvir
+		holder = fenvir_sjalvolki_2
+		government = continental_clan_government
+	}
+}
+c_bhrytenion = {
+	1250.1.1 = {
+		liege = k_fenvir
+		holder = fenvir_sjalvolki_2
+		government = continental_clan_government
+	}
+}
+c_saaigive = {
+	1247.1.1 = {
+		holder = fenvir_sjalvolki_1
+		government = continental_clan_government
+	}
+}
+#c_methyniax = {
+	#1234.1.1 = {
+		#liege = "k_kalliados"
+		#holder = easternimperial_aversarinas_aagiokrata_1
+	#}
+#}

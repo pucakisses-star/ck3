@@ -1,0 +1,612 @@
+1703 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+1713 = {
+	holding = wasteland_empty_holding
+}
+
+1983 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+2593 = {
+	holding = wasteland_empty_holding
+}
+
+3237 = {
+	holding = none
+}
+
+3352 = {
+	holding = wasteland_empty_holding
+}
+
+3743 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4649 = {
+	holding = wasteland_empty_holding
+}
+
+4651 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5076 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5341 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5410 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5647 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+5933 = {
+	holding = wasteland_empty_holding
+}
+
+5996 = {
+	holding = wasteland_empty_holding
+}
+
+6245 = {
+	holding = wasteland_empty_holding
+}
+
+
+6482 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6742 = {
+	holding = wasteland_empty_holding
+}
+
+6754 = {
+	holding = wasteland_empty_holding
+}
+
+6801 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+6826 = {
+	holding = wasteland_empty_holding
+}
+
+7561 = {
+	holding = wasteland_empty_holding
+}
+
+7576 = {
+	holding = none
+}
+
+7589 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+2162 = {
+	holding = none
+}
+
+8172 = {
+	holding = none
+}
+
+8374 = {
+	holding = wasteland_empty_holding
+}
+
+8375 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+8466 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8579 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+8658 = {
+	holding = wasteland_empty_holding
+}
+
+8701 = {
+	holding = wasteland_empty_holding
+}
+
+8711 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8751 = {
+	holding = wasteland_empty_holding
+}
+
+8792 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8901 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+8903 = {
+	holding = wasteland_empty_holding
+}
+
+9018 = {
+	holding = none
+}
+
+9041 = {
+	holding = none
+}
+
+9044 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9045 = {
+	holding = wasteland_empty_holding
+}
+
+9046 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9047 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+
+9048 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+9049 = {
+	holding = wasteland_empty_holding
+}
+
+9050 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9051 = {
+	holding = wasteland_empty_holding
+}
+
+9054 = {
+	holding = wasteland_empty_holding
+}
+
+9055 = {
+	holding = wasteland_empty_holding
+}
+
+9056 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+9057 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+9059 = {
+	holding = wasteland_empty_holding
+}
+
+9061 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9064 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9065 = {
+	holding = wasteland_empty_holding
+}
+
+9066 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9067 = {
+	holding = wasteland_empty_holding
+}
+
+9068 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9069 = {
+	holding = wasteland_empty_holding
+}
+
+9070 = {
+	holding = wasteland_empty_holding
+}
+
+9071 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+9075 = {
+	holding = wasteland_empty_holding
+}
+
+9077 = {
+	holding = wasteland_empty_holding
+}
+
+9078 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9080 = {
+	holding = wasteland_empty_holding
+}
+
+9082 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9085 = {
+	holding = wasteland_empty_holding
+}
+
+9087 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9089 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9091 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+9092 = {
+	holding = wasteland_empty_holding
+}
+
+9093 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+
+9094 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9095 = {
+	holding = wasteland_empty_holding
+}
+
+9097 = {
+	holding = none
+}
+
+9098 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+9099 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9100 = {
+	holding = wasteland_empty_holding
+}
+
+9101 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9102 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9103 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9104 = {
+	holding = wasteland_empty_holding
+}
+
+9106 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9107 = {
+	holding = none
+}
+
+9108 = {
+	holding = wasteland_empty_holding
+}
+
+9109 = {
+	holding = wasteland_empty_holding
+}
+
+9110 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9111 = {
+	holding = wasteland_empty_holding
+}
+
+9112 = {
+	holding = wasteland_empty_holding
+}
+
+9113 = {
+	holding = wasteland_empty_holding
+}
+
+9114 = {
+	holding = wasteland_empty_holding
+}
+
+9115 = {
+	holding = wasteland_empty_holding
+}
+
+9116 = {
+	holding = wasteland_empty_holding
+}
+
+9117 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9119 = {
+	holding = none
+}
+
+9121 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9123 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9125 = {
+	holding = wasteland_empty_holding
+}
+
+9126 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9127 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+9128 = {
+	holding = wasteland_empty_holding
+}
+
+9130 = {
+	holding = none
+}
+
+9131 = {
+	holding = wasteland_empty_holding
+}
+
+9133 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9135 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9136 = {
+	holding = wasteland_empty_holding
+}
+
+9138 = {
+	holding = wasteland_empty_holding
+}
+
+9139 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9140 = {
+	holding = wasteland_empty_holding
+}
+
+9142 = {
+	holding = wasteland_empty_holding
+}
+
+9143 = {
+	holding = wasteland_empty_holding
+}
+
+9144 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9145 = {
+	holding = wasteland_empty_holding
+}
+
+9147 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+9148 = {
+	holding = wasteland_empty_holding
+}
+
+9150 = {
+	holding = wasteland_empty_holding
+}
+
+9152 = {
+	holding = wasteland_empty_holding
+}
+
+9153 = {
+	holding = wasteland_empty_holding
+}
+
+9154 = {
+	holding = wasteland_empty_holding
+}
+
+9155 = {
+	holding = wasteland_empty_holding
+}
+
+9156 = {
+	holding = wasteland_empty_holding
+}
+
+9157 = {
+	holding = wasteland_empty_holding
+}
+
+
+

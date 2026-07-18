@@ -1,0 +1,29 @@
+﻿lakaloi_aversarinas_aagiokrata_1 = {
+	name = "Syacos"
+	religion = "aversarinas_aagiokrata"
+	culture = "lakaloi"
+
+	1230.2.5 = {
+		birth = yes
+	}
+}
+
+lakaloi_aversarinas_aagiokrata_2 = {
+	name = "Arthean"
+	religion = "aversarinas_aagiokrata"
+	culture = "lakaloi"
+
+	1214.3.2 = {
+		birth = yes
+	}
+}
+
+lakaloi_aversarinas_aagiokrata_3 = {
+	name = "Phraestion"
+	religion = "aversarinas_aagiokrata"
+	culture = "lakaloi"
+
+	1229.2.11 = {
+		birth = yes
+	}
+}

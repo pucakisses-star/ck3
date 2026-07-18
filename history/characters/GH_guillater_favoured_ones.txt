@@ -1,0 +1,17 @@
+﻿guillater_favoured_ones_1 = {
+	name = "Ingohildis"
+	female = yes
+	religion = favoured_ones
+	culture = guillater
+	1203.3.19 = {
+		birth = yes
+	}
+	1215.3.19 = {
+		trait = content
+		trait = trusting
+		trait = generous
+	}
+	1219.3.19 = {
+		trait = education_learning_2
+	}
+}

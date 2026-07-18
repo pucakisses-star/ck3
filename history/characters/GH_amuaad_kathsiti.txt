@@ -1,0 +1,1303 @@
+﻿amuaad_kathsiti_1 = {
+	name = "SamI_"
+	religion = "kathsiti"
+	culture = "amuaad"
+
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+amuaad_kathsiti_2 = {
+	name = "AghlI_b"
+	religion = "kathsiti"
+	culture = "amuaad"
+
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+amuaad_kathsiti_3 = {
+	name = "YaH_iyah"
+	religion = "kathsiti"
+	culture = "amuaad"
+
+	1234.1.1 = {
+		birth = yes
+	}
+}
+
+amuaad_kathsiti_4 = {
+	name = "MurH_ajdI_l" #Formerly Muhammad
+	religion = "kathsiti"
+	culture = "amuaad"
+
+	1218.1.1 = {
+		birth = yes
+	}
+}
+
+amuaad_kathsiti_5 = {
+	name = "Mahdi"
+	religion = "kathsiti"
+	culture = "amuaad"
+
+	1215.1.1 = {
+		birth = yes
+	}
+}
+
+amuaad_kathsiti_6 = {
+	name = "IsA_la_dil" #Formerly Abdullah
+	religion = "kathsiti"
+	culture = "amuaad"
+
+	1220.1.1 = {
+		birth = yes
+	}
+}
+
+amuaad_kathsiti_7 = {
+	name = "AghlI_b"
+	religion = "kathsiti"
+	culture = "amuaad"
+
+	1228.1.1 = {
+		birth = yes
+	}
+}
+
+amuaad_kathsiti_8 = {
+	name = "KhulA_l"
+	religion = "kathsiti"
+	culture = "amuaad"
+
+	1227.1.1 = {
+		birth = yes
+	}
+}
+
+amuaad_kathsiti_9 = {
+	name = "MarUH_" #Formerly Mahmud
+	religion = "kathsiti"
+	culture = "amuaad"
+
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+amuaad_kathsiti_10 = {
+	name = "BaHI_r"
+	religion = "kathsiti"
+	culture = "amuaad"
+
+	1232.1.1 = {
+		birth = yes
+	}
+}
+
+amuaad_kathsiti_11 = {
+	name = "Muslihiddin"
+	religion = "kathsiti"
+	culture = "amuaad"
+
+	1227.1.1 = {
+		birth = yes
+	}
+}
+
+amuaad_kathsiti_12 = {
+	name = "Malik"
+	religion = "kathsiti"
+	culture = "amuaad"
+
+	1232.1.1 = {
+		birth = yes
+	}
+}
+
+amuaad_kathsiti_13 = {
+	name = "Aden"
+	religion = "kathsiti"
+	culture = "amuaad"
+
+	1231.3.1 = {
+		birth = yes
+	}
+	
+	1247.3.1 = {
+		trait = craven
+		trait = lustful
+		trait = arrogant
+		trait = education_learning_2
+	}
+}
+
+amuaad_kathsiti_14 = {
+	name = "YusU_f"
+	religion = "kathsiti"
+	culture = "amuaad"
+
+	1219.1.1 = {
+		birth = yes
+	}
+}
+
+
+amuaad_kathsiti_16 = {
+    name = "Obarek" 
+
+    religion = kathsiti
+    culture = amuaad
+
+    sexuality = heterosexual
+
+    trait = calm
+    trait = trusting
+    trait = lustful
+
+    diplomacy = 6
+    martial = 8
+    stewardship = 9
+    intrigue = 7
+    learning = 8
+    prowess = 6
+
+    trait = education_stewardship_3
+
+    1195.6.10 = {
+        birth = yes
+    }
+
+    1226.2.28 = {
+        add_spouse = amuaad_kathsiti_17
+    }
+
+    1246.9.19 = {
+        death = { death_reason = death_battle }
+    }
+}
+
+amuaad_kathsiti_17 = {
+    name = "Shahzadah" 
+    female = yes
+
+    religion = kathsiti
+    culture = amuaad
+
+    sexuality = heterosexual
+
+    trait = chaste
+    trait = impatient
+    trait = sadistic
+
+    diplomacy = 6
+    martial = 6
+    stewardship = 3
+    intrigue = 3
+    learning = 6
+    prowess = 7
+
+    trait = education_diplomacy_2
+
+    1200.12.23 = {
+        birth = yes
+    }
+
+    1257.4.6 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+amuaad_kathsiti_15 = {
+    name = "ShamI_r" 
+
+    religion = kathsiti
+    culture = amuaad
+
+    father = amuaad_kathsiti_16
+    mother = amuaad_kathsiti_17
+
+    sexuality = heterosexual
+
+    trait = eccentric
+    trait = content
+    trait = just
+
+    diplomacy = 10
+    martial = 6
+    stewardship = 7
+    intrigue = 7
+    learning = 15
+    prowess = 7
+
+    trait = education_learning_4
+
+    1221.7.15 = {
+        birth = yes
+    }
+
+	1236.7.15 = {
+		trait = lifestyle_jurist
+	}
+    1276.12.1 = {
+        add_spouse = amuaad_kathsiti_19
+    }
+
+    1286.2.16 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+amuaad_kathsiti_19 = {
+    name = "Khadijah" 
+    female = yes
+
+    religion = kathsiti
+    culture = amuaad
+
+    sexuality = heterosexual
+
+    trait = humble
+    trait = deceitful
+    trait = sadistic
+
+    diplomacy = 7
+    martial = 7
+    stewardship = 6
+    intrigue = 6
+    learning = 4
+    prowess = 7
+
+    trait = education_diplomacy_1
+
+    1259.10.26 = {
+        birth = yes
+    }
+
+    1328.1.3 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+amuaad_kathsiti_20 = {
+    name = "Zeyd" 
+
+    religion = kathsiti
+    culture = amuaad
+
+    father = amuaad_kathsiti_16
+    mother = amuaad_kathsiti_17
+
+    sexuality = heterosexual
+
+    trait = ambitious
+    trait = temperate
+    trait = compassionate
+
+    diplomacy = 7
+    martial = 4
+    stewardship = 5
+    intrigue = 6
+    learning = 6
+    prowess = 7
+
+    trait = education_diplomacy_3
+
+    1232.7.12 = {
+        birth = yes
+    }
+
+    1286.11.4 = {
+        add_spouse = amuaad_kathsiti_21
+    }
+
+    1297.6.11 = {
+        death = { death_reason = death_smallpox }
+    }
+}
+
+amuaad_kathsiti_21 = {
+    name = "Zaynab" 
+    female = yes
+
+    religion = kathsiti
+    culture = amuaad
+
+    sexuality = heterosexual
+
+    trait = chaste
+    trait = sadistic
+    trait = ambitious
+
+    diplomacy = 4
+    martial = 6
+    stewardship = 4
+    intrigue = 10
+    learning = 6
+    prowess = 10
+
+    trait = education_intrigue_4
+
+    1269.1.24 = {
+        birth = yes
+    }
+
+    1334.3.11 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+amuaad_kathsiti_22 = {
+    name = "Arrashd" 
+
+    religion = kathsiti
+    culture = amuaad
+	dynasty = dyn_tashfar
+    sexuality = heterosexual
+	father = amuaad_kathsiti_25
+    mother = amuaad_kathsiti_26
+
+    trait = ambitious
+    trait = wrathful
+    trait = zealous
+
+    diplomacy = 10
+    martial = 3
+    stewardship = 5
+    intrigue = 3
+    learning = 12
+    prowess = 4
+
+    trait = education_learning_4
+
+    1119.1.24 = {
+        birth = yes
+    }
+	
+	1139.1.20 = {
+		trait = lifestyle_jurist
+	}
+    1171.3.11 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+amuaad_kathsiti_23 = {
+	#brief merchant backed rival for authority to Rishad
+    name = "Khanijah" 
+	female = yes
+    religion = kathsiti
+    culture = amuaad
+
+    sexuality = heterosexual
+
+    trait = temperate
+    trait = forgiving
+    trait = paranoid
+
+    diplomacy = 4
+    martial = 7
+    stewardship = 12
+    intrigue = 8
+    learning = 9
+    prowess = 2
+
+    trait = education_stewardship_3
+
+    1109.6.14 = {
+        birth = yes
+    }
+	
+	1129.1.20 = {
+		trait = lifestyle_jurist
+	}
+    1155.7.11 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+amuaad_kathsiti_24 = {
+	#General who overthrows Rishad
+    name = "Talba" 
+    religion = kathsiti
+    culture = amuaad
+	dynasty = dyn_maswar
+    sexuality = bisexual
+
+    trait = ambitious
+    trait = cynical
+    trait = deceitful
+	
+	father = amuaad_kathsiti_32
+    mother = amuaad_kathsiti_33
+	
+    diplomacy = 4
+    martial = 12
+    stewardship = 8
+    intrigue = 10
+    learning = 7
+    prowess = 12
+
+    trait = education_martial_4
+
+    1128.4.4 = {
+        birth = yes
+    }
+	1159.12.14 = {
+        add_spouse = amuaad_kathsiti_35
+    }
+    1188.5.15 = {
+        death = { death_reason = death_battle }
+    }
+}
+
+#25 through 31 is a pregen meant to be Rishad's family
+
+amuaad_kathsiti_25 = {
+    name = "Sallam" 
+
+    dynasty = dyn_tashfar
+    religion = kathsiti
+    culture = amuaad
+
+    sexuality = bisexual
+
+    trait = vengeful
+    trait = zealous
+    trait = generous
+
+    diplomacy = 9
+    martial = 5
+    stewardship = 7
+    intrigue = 5
+    learning = 7
+    prowess = 7
+
+    trait = education_diplomacy_1
+
+    1085.9.20 = {
+        birth = yes
+    }
+
+    1118.3.19 = {
+        add_spouse = amuaad_kathsiti_26
+    }
+
+    1130.12.19 = {
+        death = { death_reason = death_siege }
+    }
+}
+
+amuaad_kathsiti_26 = {
+    name = "Shahzadah" 
+    female = yes
+
+    religion = kathsiti
+    culture = amuaad
+
+    sexuality = heterosexual
+
+    trait = just
+    trait = arrogant
+    trait = gregarious
+
+    diplomacy = 7
+    martial = 6
+    stewardship = 8
+    intrigue = 5
+    learning = 6
+    prowess = 4
+
+    trait = education_stewardship_1
+
+    1101.9.26 = {
+        birth = yes
+    }
+
+    1134.7.19 = {
+        death = { death_reason = death_typhus }
+    }
+}
+
+amuaad_kathsiti_27 = {
+    name = "Zulfiqar" 
+
+    dynasty = dyn_tashfar
+    religion = kathsiti
+    culture = amuaad
+
+    father = amuaad_kathsiti_25
+    mother = amuaad_kathsiti_26
+
+    sexuality = heterosexual
+
+    trait = patient
+    trait = deceitful
+    trait = arbitrary
+
+    diplomacy = 6
+    martial = 6
+    stewardship = 3
+    intrigue = 7
+    learning = 6
+    prowess = 5
+
+    trait = education_intrigue_4
+
+    1127.8.7 = {
+        birth = yes
+    }
+
+    1164.8.4 = {
+        add_spouse = amuaad_kathsiti_28
+    }
+
+    1174.7.16 = {
+        death = { death_reason = death_adventuring }
+    }
+}
+
+amuaad_kathsiti_28 = {
+    name = "Zunayra" 
+    female = yes
+
+    religion = kathsiti
+    culture = amuaad
+
+    sexuality = heterosexual
+
+    trait = paranoid
+    trait = cynical
+    trait = wrathful
+
+    diplomacy = 7
+    martial = 8
+    stewardship = 6
+    intrigue = 4
+    learning = 4
+    prowess = 6
+
+    trait = education_martial_3
+
+    1147.11.6 = {
+        birth = yes
+    }
+
+    1214.6.16 = {
+        death = { death_reason = death_bubonic_plague }
+    }
+}
+
+amuaad_kathsiti_29 = {
+    name = "Munabbih" 
+
+    dynasty = dyn_tashfar
+    religion = kathsiti
+    culture = amuaad
+
+    father = amuaad_kathsiti_27
+    mother = amuaad_kathsiti_28
+
+    sexuality = bisexual
+
+    trait = humble
+    trait = trusting
+    trait = deceitful
+
+    diplomacy = 21
+    martial = 13
+    stewardship = 26
+    intrigue = 21
+    learning = 21
+    prowess = 21
+
+    trait = education_stewardship_4
+
+    1166.1.25 = {
+        birth = yes
+    }
+
+    1167.12.7 = {
+        give_nickname = nick_the_wise
+        effect = {
+            add_character_flag = {
+                flag = had_nickname_event
+            }
+        }
+    }
+
+    1192.12.12 = {
+        add_spouse = amuaad_kathsiti_30
+    }
+
+    1202.9.10 = {
+        death = { death_reason = death_smallpox }
+    }
+}
+
+amuaad_kathsiti_30 = {
+    name = "Paywand" 
+    female = yes
+
+    religion = kathsiti
+    culture = amuaad
+
+    sexuality = heterosexual
+
+    trait = forgiving
+    trait = shy
+    trait = content
+
+    diplomacy = 8
+    martial = 6
+    stewardship = 8
+    intrigue = 6
+    learning = 5
+    prowess = 6
+
+    trait = education_diplomacy_4
+
+    1175.10.25 = {
+        birth = yes
+    }
+
+    1202.9.19 = {
+        death = { death_reason = death_typhus }
+    }
+}
+
+amuaad_kathsiti_31 = {
+    name = "Taliba" 
+    female = yes
+
+    religion = kathsiti
+    culture = amuaad
+
+    father = amuaad_kathsiti_27
+    mother = amuaad_kathsiti_28
+
+    sexuality = heterosexual
+
+    trait = fickle
+    trait = calm
+    trait = lustful
+
+    diplomacy = 7
+    martial = 3
+    stewardship = 6
+    intrigue = 6
+    learning = 8
+    prowess = 5
+
+    trait = education_learning_3
+
+    1168.3.16 = {
+        birth = yes
+    }
+
+    1236.1.9 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+#32 through 44 are Talba's family pregenerated
+
+amuaad_kathsiti_32 = {
+    name = "NajI_b" 
+
+    dynasty = dyn_maswar
+    religion = kathsiti
+    culture = amuaad
+
+    sexuality = heterosexual
+
+    trait = zealous
+    trait = generous
+    trait = compassionate
+
+    diplomacy = 8
+    martial = 6
+    stewardship = 6
+    intrigue = 6
+    learning = 5
+    prowess = 7
+
+    trait = education_diplomacy_1
+
+    1081.7.27 = {
+        birth = yes
+    }
+
+    1124.3.1 = {
+        add_spouse = amuaad_kathsiti_33
+    }
+
+    1134.10.13 = {
+        death = { death_reason = death_smallpox }
+    }
+}
+
+amuaad_kathsiti_33 = {
+    name = "Qamara" 
+    female = yes
+
+    religion = kathsiti
+    culture = amuaad
+
+    sexuality = heterosexual
+
+    trait = temperate
+    trait = wrathful
+    trait = callous
+
+    diplomacy = 6
+    martial = 7
+    stewardship = 5
+    intrigue = 3
+    learning = 5
+    prowess = 5
+
+    trait = education_martial_3
+
+    1107.9.5 = {
+        birth = yes
+    }
+
+    1174.8.28 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+amuaad_kathsiti_34 = {
+    name = "Ahnaf" 
+
+    dynasty = dyn_maswar
+    religion = kathsiti
+    culture = amuaad
+
+    father = amuaad_kathsiti_32
+    mother = amuaad_kathsiti_33
+
+    sexuality = heterosexual
+
+    trait = calm
+    trait = humble
+    trait = generous
+
+    diplomacy = 5
+    martial = 6
+    stewardship = 7
+    intrigue = 5
+    learning = 6
+    prowess = 7
+
+    trait = education_stewardship_2
+
+    1127.6.1 = {
+        birth = yes
+    }
+
+    1132.2.19 = {
+        give_nickname = nick_the_silly
+        effect = {
+            add_character_flag = {
+                flag = had_nickname_event
+            }
+        }
+    }
+
+    1169.6.13 = {
+        death = { death_reason = death_accident  }
+    }
+}
+
+amuaad_kathsiti_35 = {
+    name = "Khadijah" 
+    female = yes
+
+    religion = kathsiti
+    culture = amuaad
+
+    sexuality = heterosexual
+
+    trait = arrogant
+    trait = diligent
+    trait = paranoid
+
+    diplomacy = 7
+    martial = 7
+    stewardship = 4
+    intrigue = 6
+    learning = 3
+    prowess = 4
+
+    trait = education_diplomacy_2
+
+    1142.7.10 = {
+        birth = yes
+    }
+
+    1203.12.15 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+amuaad_kathsiti_36 = {
+    name = "Ikrima" 
+
+    dynasty = dyn_maswar
+    religion = kathsiti
+    culture = amuaad
+
+    father = amuaad_kathsiti_24
+    mother = amuaad_kathsiti_35
+
+    sexuality = heterosexual
+
+    trait = sadistic
+    trait = lazy
+    trait = stubborn
+
+    diplomacy = 4
+    martial = 5
+    stewardship = 11
+    intrigue = 5
+    learning = 2
+    prowess = 7
+
+    trait = education_stewardship_2
+
+    1160.5.3 = {
+        birth = yes
+    }
+
+    1188.6.5 = {
+        add_spouse = amuaad_kathsiti_37
+    }
+
+    1198.10.3 = {
+        death = { death_reason = death_stress }
+    }
+}
+
+amuaad_kathsiti_37 = {
+    name = "Maymuna" 
+    female = yes
+
+    religion = kathsiti
+    culture = amuaad
+
+    sexuality = heterosexual
+
+    trait = generous
+    trait = callous
+    trait = forgiving
+
+    diplomacy = 9
+    martial = 8
+    stewardship = 5
+    intrigue = 8
+    learning = 5
+    prowess = 3
+
+    trait = education_diplomacy_2
+
+    1171.10.15 = {
+        birth = yes
+    }
+
+    1241.10.15 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+amuaad_kathsiti_38 = {
+    name = "Yagana" 
+    female = yes
+
+    religion = kathsiti
+    culture = amuaad
+
+    father = amuaad_kathsiti_36
+    mother = amuaad_kathsiti_37
+
+    sexuality = heterosexual
+
+    trait = stubborn
+    trait = temperate
+    trait = zealous
+
+    diplomacy = 7
+    martial = 6
+    stewardship = 4
+    intrigue = 5
+    learning = 10
+    prowess = 8
+
+    trait = education_learning_1
+
+    1191.7.26 = {
+        birth = yes
+    }
+
+    1254.8.25 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+amuaad_kathsiti_39 = {
+    name = "Khaireddin" 
+
+    dynasty = dyn_maswar
+    religion = kathsiti
+    culture = amuaad
+
+    father = amuaad_kathsiti_36
+    mother = amuaad_kathsiti_37
+
+    sexuality = heterosexual
+
+    trait = shy
+    trait = calm
+    trait = zealous
+
+    diplomacy = 6
+    martial = 6
+    stewardship = 7
+    intrigue = 9
+    learning = 9
+    prowess = 6
+
+    trait = education_intrigue_2
+
+    1193.5.20 = {
+        birth = yes
+    }
+
+    1218.3.5 = {
+        add_spouse = amuaad_kathsiti_40
+    }
+
+    1243.6.6 = {
+        death = { death_reason = death_leper }
+    }
+}
+
+amuaad_kathsiti_40 = {
+    name = "Taliba" 
+    female = yes
+
+    religion = kathsiti
+    culture = amuaad
+
+    sexuality = heterosexual
+
+    trait = arrogant
+    trait = ambitious
+    trait = honest
+
+    diplomacy = 7
+    martial = 7
+    stewardship = 4
+    intrigue = 5
+    learning = 5
+    prowess = 6
+
+    trait = education_diplomacy_1
+
+    1201.8.22 = {
+        birth = yes
+    }
+
+    1248.9.16 = {
+        death = { death_reason = death_typhus }
+    }
+}
+
+amuaad_kathsiti_41 = {
+    name = "Wuhayb" 
+
+    dynasty = dyn_maswar
+    religion = kathsiti
+    culture = amuaad
+
+    father = amuaad_kathsiti_39
+    mother = amuaad_kathsiti_40
+
+    sexuality = heterosexual
+
+    trait = arrogant
+    trait = paranoid
+    trait = impatient
+
+    diplomacy = 5
+    martial = 8
+    stewardship = 4
+    intrigue = 8
+    learning = 10
+    prowess = 7
+
+    trait = education_learning_4
+
+    1218.5.18 = {
+        birth = yes
+    }
+
+    1273.2.16 = {
+        add_spouse = amuaad_kathsiti_42
+    }
+
+    1283.12.13 = {
+        death = { death_reason = death_smallpox }
+    }
+}
+
+amuaad_kathsiti_42 = {
+    name = "Zunayra" 
+    female = yes
+
+    religion = kathsiti
+    culture = amuaad
+
+    sexuality = heterosexual
+
+    trait = deceitful
+    trait = generous
+    trait = lustful
+
+    diplomacy = 6
+    martial = 6
+    stewardship = 4
+    intrigue = 6
+    learning = 5
+    prowess = 7
+
+    trait = education_diplomacy_3
+
+    1256.7.17 = {
+        birth = yes
+    }
+
+    1283.3.4 = {
+        death = { death_reason = death_plotting  }
+    }
+}
+
+amuaad_kathsiti_43 = {
+    name = "SajaH_" 
+    female = yes
+
+    religion = kathsiti
+    culture = amuaad
+
+    father = amuaad_kathsiti_36
+    mother = amuaad_kathsiti_37
+
+    sexuality = heterosexual
+
+    trait = paranoid
+    trait = craven
+    trait = lazy
+
+    diplomacy = 7
+    martial = 9
+    stewardship = 8
+    intrigue = 6
+    learning = 5
+    prowess = 8
+
+    trait = education_martial_2
+
+    1194.4.24 = {
+        birth = yes
+    }
+
+    1269.11.20 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+amuaad_kathsiti_44 = {
+    name = "SajaH_" 
+    female = yes
+
+    religion = kathsiti
+    culture = amuaad
+
+    father = amuaad_kathsiti_34
+    mother = amuaad_kathsiti_35
+
+    sexuality = heterosexual
+
+    trait = gluttonous
+    trait = craven
+    trait = callous
+
+    diplomacy = 8
+    martial = 6
+    stewardship = 7
+    intrigue = 6
+    learning = 5
+    prowess = 7
+
+    trait = education_diplomacy_2
+
+    1162.5.26 = {
+        birth = yes
+    }
+
+    1164.7.27 = {
+        death = { death_reason = death_ill }
+    }
+}
+
+amuaad_kathsiti_45 = {
+    name = "Khulal" 
+
+    religion = kathsiti
+    culture = amuaad
+
+
+    sexuality = heterosexual
+
+    trait = content
+    trait = craven
+    trait = just
+
+    trait = education_learning_3
+
+    1222.3.26 = {
+        birth = yes
+    }
+
+    1289.2.27 = {
+        death = { death_reason = death_ill }
+    }
+}
+
+amuaad_kathsiti_46 = {
+    name = "Muslihiddin" 
+
+    religion = kathsiti
+    culture = amuaad
+
+
+    sexuality = heterosexual
+
+    trait = stubborn
+    trait = cynical
+    trait = content
+
+    trait = education_diplomacy_2
+
+    1233.2.26 = {
+        birth = yes
+    }
+
+    1257.3.27 = {
+        death = { death_reason = death_battle }
+    }
+}
+
+amuaad_kathsiti_47 = {
+    name = "Wuhayb" 
+
+    religion = kathsiti
+    culture = amuaad
+
+    trait = stubborn
+    trait = cynical
+    trait = content
+
+    1227.2.26 = {
+        birth = yes
+    }
+	
+	1243.2.26 = {
+		trait = lifestyle_jurist
+		trait = education_diplomacy_3
+	}
+
+    1268.3.27 = {
+        death = { death_reason = death_ill }
+    }
+}
+
+amuaad_kathsiti_48 = {
+    name = "Talba" 
+
+    religion = kathsiti
+    culture = amuaad
+
+    trait = patient
+    trait = humble
+    trait = zealous
+
+    1201.2.26 = {
+        birth = yes
+    }
+	
+	1217.2.26 = {
+		trait = education_learning_5
+		trait = lifestyle_jurist
+	}
+
+    1299.3.27 = {
+        death = { death_reason = death_ill }
+    }
+}
+
+amuaad_kathsiti_49 = {
+     name = "Khadijah" 
+     female = yes
+ 
+
+    religion = kathsiti
+    culture = amuaad
+
+    trait = diligent
+    trait = just
+    trait = arrogant
+
+    1224.1.1 = {
+        birth = yes
+    }
+	
+	1241.2.26 = {
+		trait = education_stewardship_4
+		trait = lifestyle_jurist
+	}
+
+    1299.3.27 = {
+        death = { death_reason = death_ill }
+    }
+}
+
+amuaad_kathsiti_50 = {
+     name = "SajaH_" 
+     female = yes
+ 
+
+    religion = kathsiti
+    culture = amuaad
+
+    trait = impatient
+    trait = vengeful
+    trait = ambitious
+	trait = wrathful
+
+    1234.1.1 = {
+        birth = yes
+    }
+	
+	1251.2.26 = {
+		trait = education_intrigue_3
+	}
+
+    1299.3.27 = {
+        death = { death_reason = death_ill }
+    }
+}

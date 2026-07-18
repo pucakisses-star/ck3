@@ -1,0 +1,1380 @@
+﻿# Demthox 'Heart-Eater', Katraddian warlord and would-be Apokiakas Aautokratir
+# Slain by Aeschraes in a battlefield duel
+apokiakas_aversarinas_aagiokratia_1 = {
+	name = "Demthox"
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	sexuality = heterosexual
+	
+	diplomacy = 3
+	intrigue = 7
+	learning = 2
+	martial = 9
+	stewardship = 1
+	
+	trait = magic_good_10
+	trait = physique_good_3
+	trait = beauty_bad_3
+	
+	1156.12.3 = {
+		birth = yes
+	}
+	1168.1.1 = {
+		trait = sadistic
+		trait = wrathful
+		trait = brave
+	}
+	1172.12.3 = {
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+		trait = gh_historical_blademaster_3
+	}
+	1178.3.18 = {
+		trait = cannibal
+		trait = gh_glowing_veins
+		trait = gh_ritual_scars_1
+		give_nickname = nick_the_heart_eater
+	}
+	1186.2.6 = {
+		death = {
+			death_reason = death_battle
+			killer = westernimperial_aeschraes_aagiokrata_1		# Aeschraes	
+		}
+	}
+}
+
+# Kathalitos 'Five-Lives', major Katraddian warlord and Apokiakas Aautokratir. Seemingly unkillable.
+# Fled into the wilderness of the north, ultimate fate unknown but presumed dead.
+apokiakas_aversarinas_aagiokratia_2 = {
+	name = "Kathalitos"
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	sexuality = heterosexual
+	
+	diplomacy = 10
+	intrigue = 8
+	learning = 4
+	martial = 8
+	stewardship = 3
+	
+	trait = magic_good_2
+	trait = intellect_good_2
+	
+	1152.6.29 = {
+		birth = yes
+	}
+	1164.1.1 = {
+		trait = stubborn
+		trait = arrogant
+		trait = brave
+	}
+	1168.6.29 = {
+		trait = education_intrigue_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+		trait = shrewd
+		trait = gh_historical_blademaster_2
+	}
+	1200.3.18 = {
+		give_nickname = nick_five_lives
+	}
+	1207.4.4 = {
+		death = {
+			death_reason = death_vanished
+		}
+	}
+}
+
+# Maxios Kourkas. Loose Aeschraes supporter during the civil war, immediately turncloaked after Frodbrokna and tried to make himself Apokiakas Aautokratir
+# Defeated and executed by Kathalitos 'Five-Lives'.
+apokiakas_aversarinas_aagiokratia_3 = {
+	name = "Maxios"
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	sexuality = heterosexual
+	
+	diplomacy = 6
+	intrigue = 7
+	learning = 5
+	martial = 10
+	stewardship = 5
+	
+	1166.8.4 = {
+		birth = yes
+	}
+	1178.1.1 = {
+		trait = deceitful
+		trait = ambitious
+		trait = impatient
+	}
+	1182.8.4 = {
+		trait = education_intrigue_4
+	}
+	1187.1.1 = {
+		religion = "aeschraes_aagiokrata"
+	}
+	1200.3.1 = {
+		religion = "aversarinas_aagiokrata"
+	}
+	1203.3.18 = {
+		death = {
+			death_reason = death_execution
+			killer = apokiakas_aversarinas_aagiokratia_2	# Kathalitos 'Five-Lives'
+		}
+	}
+}
+
+# Methodiox of Zimtovo. Soldier of fortune and one of Kathalitos' supporters. Granted command over parts of north Katraddia Mikra in preparation for Kathalitos' advance westward
+# After his overlord's defeat remained in control of said lands before being crushed by Legio VII 'Anthiope'
+apokiakas_aversarinas_aagiokratia_4 = {
+	name = "Methodiox"
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	sexuality = heterosexual
+	
+	diplomacy = 11
+	intrigue = 8
+	learning = 2
+	martial = 3
+	stewardship = 7
+	
+	1171.2.26 = {
+		birth = yes
+	}
+	1183.1.1 = {
+		trait = vengeful
+		trait = arrogant
+		trait = gregarious
+	}
+	1187.2.26 = {
+		trait = education_diplomacy_2
+	}
+	1211.10.19 = {
+		death = {
+			death_reason = death_execution
+			killer = apokiakas_aeschraes_aagiokrata_1 # Legan Eupraxia of Legio VII 'Anthiope' 
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_6 = {
+	name = "Conexum"
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	trait = education_martial_2
+	trait = gh_legon
+
+	1132.5.2 = {
+		birth = yes
+	}
+	1201.3.22 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_7 = {
+	name = "Tenevulm"
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+
+	1152.8.9 = {
+		birth = yes
+	}
+
+	1216.9.24 = {
+		death = {
+			death_reason = death_battle
+			killer = apokiakas_aversarinas_aagiokratia_36
+		}
+	}	
+}
+
+apokiakas_aversarinas_aagiokratia_8 = {
+	name = "Pataicos"
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	sexuality = heterosexual
+	trait = magic_good_2
+	
+	1147.2.16 = {
+		birth = yes
+	}
+	1159.2.16 = {
+		trait = callous
+		trait = zealous
+		trait = lazy
+	}
+	1163.2.16 = {
+		trait = education_martial_2
+	}
+	1174.1.5 = {
+		trait = one_eyed
+		trait = scarred
+		trait = forest_fighter
+	}
+	1204.10.8 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_9 = {
+	name = "Ulton"
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	sexuality = homosexual
+	trait = magic_good_3
+	
+	1151.6.18 = {
+		birth = yes
+	}
+	1163.6.18 = {
+		trait = compassionate
+		trait = temperate
+		trait = honest
+	}
+	1167.6.18 = {
+		trait = education_arcana_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_10 = {
+	name = "Icarion" #Renamed from Iakobos
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	sexuality = heterosexual
+	trait = beauty_bad_1
+	
+	1139.11.5 = {
+		birth = yes
+	}
+	1151.11.5 = {
+		trait = brave
+		trait = impatient
+		trait = fickle
+	}
+	1155.11.5 = {
+		trait = education_martial_3
+	}
+	1166.9.14 = {
+		trait = scarred
+		trait = overseer
+		trait = forder
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_11 = {
+	name = "Calixtus"
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	sexuality = bisexual
+	trait = physique_good_1
+	
+	1162.1.21 = {
+		birth = yes
+	}
+	1174.1.21 = {
+		trait = sadistic
+		trait = calm
+		trait = ambitious
+	}
+	1178.1.21 = {
+		trait = education_intrigue_3
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_12 = {
+	name = "Kimonion"
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	sexuality = heterosexual
+	trait = magic_good_6
+	
+	1147.12.3 = {
+		birth = yes
+	}
+	1159.12.3 = {
+		trait = greedy
+		trait = lustful
+		trait = ambitious
+	}
+	1163.12.3 = {
+		trait = schemer
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+	1170.12.3 = {
+		trait = gh_glowing_eyes
+		trait = rakish
+	}
+	1180.12.3 = {
+		# trait = gh_boneshape # GH UREGNT: Removed, replace these with modifiersd_beauty_1
+		trait = gh_necronic_skin
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_13 = {
+	name = "Damiane"
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	sexuality = heterosexual
+	female = yes
+	trait = magic_good_1
+	
+	1129.7.11 = {
+		birth = yes
+	}
+	1141.7.11 = {
+		trait = stubborn
+		trait = generous
+		trait = gregarious
+	}
+	1145.7.11 = {
+		trait = education_stewardship_4
+	}
+	1170.12.3 = {
+		trait = architect
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_14 = {
+	name = "Valeria"
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	sexuality = bisexual
+	female = yes
+	trait = beauty_good_1
+	
+	1155.2.14 = {
+		birth = yes
+	}
+	1167.2.14 = {
+		trait = lustful
+		trait = deceitful
+		trait = diligent
+	}
+	1171.2.14 = {
+		trait = education_intrigue_3
+	}
+	1180.12.3 = {
+		trait = seducer
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_15 = {
+	name = "Exaduis"
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	sexuality = heterosexual
+	
+	1133.4.20 = {
+		birth = yes
+	}
+	1145.4.20 = {
+		trait = content
+		trait = shy
+		trait = paranoid
+	}
+	1149.4.20 = {
+		trait = education_learning_3
+	}
+	1180.12.3 = {
+		trait = scholar
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_16 = {
+	name = "Phokis"
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	sexuality = asexual
+	trait = intellect_bad_1
+	
+	1146.3.30 = {
+		birth = yes
+	}
+	1158.3.30 = {
+		trait = trusting
+		trait = chaste
+		trait = forgiving
+	}
+	1162.3.30 = {
+		trait = education_diplomacy_2
+	}
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_17 = {
+	name = "Kyra"
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	sexuality = heterosexual
+	female = yes
+	
+	1159.7.2 = {
+		birth = yes
+	}
+	1171.7.2 = {
+		trait = wrathful
+		trait = vengeful
+		trait = brave
+	}
+	1175.7.2 = {
+		trait = education_martial_3
+	}
+	1180.12.3 = {
+		trait = reckless
+		trait = winter_soldier
+	}
+	1219.2.18 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_18 = {
+	name = "Tryphon"
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	sexuality = heterosexual
+	
+	1161.8.10 = {
+		birth = yes
+	}
+	1173.8.10 = {
+		trait = patient
+		trait = just
+		trait = arrogant
+	}
+	1177.8.10 = {
+		trait = education_stewardship_2
+	}
+	1206.10.22 = {
+		death = {
+			death_reason = death_vanished
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokrata_19 = {
+	name = Akakios
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_20 = { # GH: Legon Iolianos of Legio XXVI 'Exodian', died of sickness in the homeward march
+	name = "Iolianos"
+	dna = iolianos
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	disallow_random_traits = yes
+
+	martial = 5
+	diplomacy = 6
+	intrigue = 7
+	stewardship = 6
+	learning = 9
+	prowess = 4
+	
+	1168.10.6 = {
+		birth = yes
+	}
+
+	1180.1.1 = {
+		trait = paranoid
+		trait = gregarious
+		trait = temperate
+	}
+
+	1184.10.6 = {
+		trait = education_martial_2
+		trait = organizer
+	}
+
+	1204.3.18 = {
+		trait = gh_legon
+	}
+
+	1221.3.1 = {
+		death = {
+			death_reason = death_march_malaise
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_21 = { # Legon Velyx of Legio XXVI 'Exodian', died to the Fog
+	name = "Velyx"
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 4
+	intrigue = 8
+	stewardship = 6
+	learning = 3
+	prowess = 6
+	
+	1184.9.3 = {
+		birth = yes
+		trait = physique_good_2
+	}
+
+	1196.1.1 = {
+		trait = diligent
+		trait = stubborn
+		trait = compassionate
+	}
+
+	1200.9.3 = {
+		trait = education_martial_3
+		trait = logistician
+	}
+
+	1221.3.1 = {
+		trait = gh_legon
+	}
+
+	1252.11.1 = {
+		death = {
+			death_reason = death_fog
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_22 = { # Aautokratir Thresatos
+	name = "Thresatos"
+	dna = thresatos
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_01
+			custom_beards = male_beard_fp2_iberian_muslim_01
+		}
+	}
+
+	1153.1.2 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1169.1.2 = {
+		add_spouse = westernimperial_aversarinas_aagiokrata_88
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1175.11.28 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_23 = { # Nicanoneus 'the Black Sun'
+	name = "Nicanoneus"
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	dna = nicanoneus_clanlands_imperial_1
+	dynasty = dyn_aversarian_1
+	sexuality = asexual
+
+	father = apokiakas_aversarinas_aagiokratia_32
+	mother = barki_sjalvolki_13
+
+	martial = 10
+	diplomacy = 10
+	stewardship = 9
+	intrigue = 11
+	learning = 12
+	prowess = 6
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = m_hair_ep3_byzantine_01
+			custom_beards = no_beard
+		}
+	}
+
+	1211.1.2 = {
+		birth = yes
+		trait = magic_good_2
+		trait = intellect_good_2
+		effect = {
+			add_character_flag = dont_generate_family
+			add_character_flag = has_scripted_appearance
+            dynasty = { add_dynasty_prestige_level = 3 }
+		}
+	}
+
+	1223.1.1 = {
+		trait = ambitious
+		trait = vengeful
+		trait = brave
+	}
+
+	1227.1.2 = {
+		trait = education_martial_4
+		trait = rough_terrain_expert
+		trait = organizer
+		trait = strategist
+		trait = gh_arch_legon
+		trait = gh_historical_blademaster_2
+	}
+
+	1232.1.1 = {
+		add_spouse = apokiakas_aversarinas_aagiokratia_28
+	}
+
+	1238.4.3 = {
+		trait = gh_widow
+	}
+
+	1247.2.14 = {
+		effect = {
+			create_character_memory = { # Black Mountain War
+				type = fought_in_black_mountain_war
+			}
+		}
+	}
+
+	1247.10.17 = {
+		effect = {
+			create_character_memory = { # Defeated Gurdurbrok
+				type = war_won
+
+				participants = {
+					winner = character:apokiakas_aversarinas_aagiokratia_23
+					loser = character:sarridians_aversarinas_aagiokrata_1
+				}
+			}
+		}
+	}
+
+	1247.11.10 = {
+		effect = {
+			create_character_memory = { # Defeated Methiad
+				type = war_won
+
+				participants = {
+					winner = character:apokiakas_aversarinas_aagiokratia_23
+					loser = character:northernimperial_aversarinas_aagiokrata_20
+				}
+			}
+		}
+	}
+
+	1248.11.28 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+
+	1251.10.11 = {
+		give_nickname = nick_the_black_sun
+		trait = disfigured
+		effect = {
+			create_character_memory = { # Lost the Ash War
+				type = war_lost
+
+				participants = {
+					winner = character:carsavisians_lifepath_6
+					loser = character:apokiakas_aversarinas_aagiokratia_23
+				}
+			}
+			add_character_flag = half_nosfed_face_bottom_flag
+		}
+		set_relation_rival = {
+			target = character:voluntic_partic_7
+			reason = disfigured_with_magic
+		}
+	}
+
+	1252.1.1 = {
+		effect = {
+		 # Event troops
+			spawn_army = {
+				name = legions_of_epavarion
+				men_at_arms = {
+					type = north_shields
+					stacks = 2
+				}
+				men_at_arms = {
+					type = magi_regular
+					stacks = 1
+				}
+				men_at_arms = {
+					type = bowmen
+					stacks = 1
+				}
+
+				location = province:3249
+				origin = province:3249
+				inheritable = no
+			}
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_24 = { # Shattered Legion Legon, lost his son in the Ash War
+	name = "Kirtanaes"
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+
+	dynasty = dyn_aversarian_164
+	sexuality = heterosexual
+
+    diplomacy = 5
+    martial = 6
+    stewardship = 7
+    intrigue = 3
+    learning = 6
+    prowess = 6
+
+	1196.6.20 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1208.1.1 = {
+		trait = vengeful
+		trait = wrathful
+		trait = chaste
+	}
+
+	1212.6.20 = {
+		effect = { set_base_arcana = { AMOUNT = 4 } }
+		trait = education_martial_3
+		trait = aggressive_attacker
+	}
+
+	1232.8.17 = {
+		trait = gh_legon
+	}
+
+	1247.2.14 = {
+		effect = {
+			create_character_memory = { # Black Mountain War
+				type = fought_in_black_mountain_war
+			}
+		}
+	}
+
+	1248.11.28 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+
+	1251.10.11 = {# son's death
+		trait = depressed_1
+		trait = one_eyed
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_25 = {
+	name = "Zekos"
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+
+	dynasty = dyn_aversarian_164
+	sexuality = heterosexual
+	father = apokiakas_aversarinas_aagiokratia_24
+
+    diplomacy = 4
+    martial = 8
+    stewardship = 5
+    intrigue = 3
+    learning = 5
+    prowess = 5
+
+	1225.11.28 = {
+		birth = yes
+	}
+
+	1237.1.1 = {
+		trait = brave
+		trait = wrathful
+		trait = humble
+	}
+
+	1241.11.28 = {
+		effect = { set_base_arcana = { AMOUNT = 6 } }
+		trait = education_martial_2
+		trait = reckless
+	}
+
+	1251.10.11 = {
+		death = {
+			death_reason = death_battle
+			killer = salisians_lifepath_4
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_26 = { # Black Sun's useless son
+	name = "Cylon"
+	dna = apokiakas_aversarinas_aagiokratia_26
+	dynasty = dyn_aversarian_1
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	sexuality = heterosexual
+	trait = education_martial_1
+	trait = lazy
+	trait = lustful
+	trait = gluttonous
+	trait = drunkard
+	trait = poet
+	father = apokiakas_aversarinas_aagiokratia_23
+	mother = apokiakas_aversarinas_aagiokratia_28
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_06
+			custom_beards = male_beard_custom_02
+		}
+	}
+
+	1234.1.1 = {
+		birth = yes
+	}
+
+	1250.1.1 = {
+		trait = gh_historical_reveler_2
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_27 = { # Black Sun's useless daughter
+	name = "Despoina"
+	dna = apokiakas_aversarinas_aagiokratia_27
+	dynasty = dyn_aversarian_1
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	female = yes
+	trait = brave
+	trait = ambitious
+	trait = arbitrary
+	father = apokiakas_aversarinas_aagiokratia_23
+	mother = apokiakas_aversarinas_aagiokratia_28
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_western_cover
+		}
+	}
+
+	1236.3.29 = {
+		birth = yes
+	}
+
+	1252.3.29 = {
+		trait = education_martial_3
+		trait = gh_historical_blademaster_2
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_28 = { # Black Sun's wife, probably the only person he ever loved. RIP.
+	name = "Carvilia"
+	female = yes
+	dna = apokiakas_aversarinas_aagiokratia_28
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	
+	trait = education_learning_1
+	trait = shy
+	trait = ambitious
+	trait = compassionate
+	trait = poet
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_western_03
+		}
+	}
+
+	1213.1.2 = {
+		birth = yes
+	}
+
+		1234.1.1 = {
+		add_spouse = apokiakas_aversarinas_aagiokratia_23
+	}
+
+	1238.4.3 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_29 = { # Black Sun's other useless child, not to be confused with the other two useless children, or his grandfather who he's named after
+	name = "Delinox"
+	dna = apokiakas_aversarinas_aagiokratia_29
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	dynasty = dyn_aversarian_1
+	father = apokiakas_aversarinas_aagiokratia_23
+	mother = apokiakas_aversarinas_aagiokratia_28
+
+	diplomacy = 7
+	martial = 5
+	stewardship = 6
+	intrigue = 5
+	learning = 8
+
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_02
+			custom_beards = no_beard
+		}
+	}
+
+	1238.4.3 = {
+		birth = yes
+	}
+	1238.4.4 = {
+		trait = magic_good_3
+		trait = shy
+		trait = callous
+		trait = lazy
+		trait = charming
+	}
+
+	1253.1.1 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_30 = {
+	name = "Hykopas"
+	culture = "apokiakas"
+	religion = "aversarinas_aagiokrata"
+
+	1208.9.13 = {
+		birth = yes
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_31 = { # Nicanoneus' grandfather, Governor Delinox of Katraddia
+	name = "Delinox"
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+	dynasty = dyn_aversarian_1
+	trait = education_martial_3
+
+	1151.5.5 = {
+		birth = yes
+	}
+
+	1219.2.4 = {
+		death = {
+			death_reason = death_fog
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_32 = { #Nicanoneus' father, Governor Ioldon of Katraddia, slain by Cenware in battle
+    name = "Ioldon"
+    dna = ioldon
+    religion = "aversarinas_aagiokrata"
+    culture = "apokiakas"
+    dynasty = dyn_aversarian_1
+
+	father = apokiakas_aversarinas_aagiokratia_31
+
+	1185.9.10 = {
+		birth = yes
+	}
+
+	1201.9.10 = {
+		trait = education_martial_3
+	}
+
+	1209.1.22 = {
+		add_spouse = barki_sjalvolki_13
+	}
+
+	1240.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = daukeni_sjalvolki_1
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_33 = { # Thresatos' son
+	name = "Hektorios"
+	religion = "aversarinas_aagiokrata"
+	culture = "apokiakas"
+
+	father = apokiakas_aversarinas_aagiokratia_22
+	mother = westernimperial_aversarinas_aagiokrata_88
+
+	1171.9.17 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1183.1.1 = {
+		trait = zealous
+		trait = craven
+		trait = generous
+	}
+
+	1187.9.17 = {
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1249.1.29 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_34 = { # Tenex Anilarkhron, Legon of one of the four Black Legions that followed Nicanoneus, slain by Ilnar Illadir
+	name = "Tenex"
+	dynasty = dyn_aversarian_140
+	religion = aversarinas_aagiokrata
+	culture = apokiakas
+	disallow_random_traits = yes
+
+	martial = 9
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 8
+	learning = 5
+	prowess = 6
+
+	1188.9.1 = {
+		birth = yes
+	}
+
+	1200.1.1 = {
+		trait = diligent
+		trait = trusting
+		trait = arrogant
+	}
+
+	1204.9.1 = {
+		trait = education_martial_3
+		trait = rough_terrain_expert
+		trait = strong
+	}
+
+	1226.5.15 = {
+		trait = gh_legon
+	}
+
+	1251.10.11 = {
+		death = {
+			death_reason = death_battle
+			killer = lich_culture_rejection_19
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_35 = { # Anlia Anilarkhron
+	name = "Anlia"
+	dynasty = dyn_aversarian_140
+	religion = aversarinas_aagiokrata
+	culture = apokiakas
+	female = yes
+
+	father = apokiakas_aversarinas_aagiokratia_34
+
+	disallow_random_traits = yes
+
+	martial = 8
+	diplomacy = 8
+	intrigue = 7
+	stewardship = 9
+	learning = 6
+	prowess = 8
+
+	1227.2.18 = {
+		birth = yes
+	}
+
+	1239.1.1 = {
+		trait = brave
+		trait = trusting
+		trait = ambitious
+	}
+
+	1243.2.18 = {
+		trait = education_martial_2
+		trait = aggressive_attacker
+	}
+
+	1251.10.11 = {
+		employer = apokiakas_aversarinas_aagiokratia_23
+	}
+
+	1253.3.5 = {
+		trait = gh_historical_blademaster_1
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_36 = { #Kerkyon 'the Tollman', Katraddian warlord that trapped Legio Anthiope in the Katraddia Mikra Valley
+	name = "Kerkyon"
+	religion = aversarinas_aagiokrata
+	culture = apokiakas
+
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 7
+	intrigue = 9
+	stewardship = 5
+	learning = 6
+	prowess = 3
+
+	1186.11.21 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1198.1.1 = {
+		trait = greedy
+		trait = gregarious
+		trait = ambitious
+	}
+
+	1202.11.21 = {
+		trait = education_stewardship_3
+		trait = avaricious
+		give_nickname = nick_the_tollman	
+	}
+
+	1221.1.2 = {
+		death = {
+			death_reason = death_fog
+		}
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_37 = { # Legan Despoina, led one of the Black Legions that accompanied Nicky in his march south, was slain during the Ash War
+    name = "Despoina"
+    religion = "aversarinas_aagiokrata"
+    culture = "apokiakas"
+
+    female = yes
+
+    sexuality = heterosexual
+
+    martial = 7
+    diplomacy = 5
+    stewardship = 5
+    intrigue = 5
+    learning = 5
+    prowess = 3
+
+    1202.3.15 = {
+        birth = yes
+    }
+
+    1213.1.1 = {
+        trait = generous
+        trait = gregarious
+        trait = honest
+    }
+
+    1217.3.15 = {
+        effect = { set_base_arcana = { AMOUNT = 8 } }
+        trait = education_martial_3
+        trait = unyielding_defender
+    }
+
+    1230.3.5 = {
+    	trait = gh_legon # Black Legion
+    }
+
+    1248.11.28 = {
+        death = {
+            death_reason = death_battle
+            killer = etrandanexi_aversarinas_aagiokrata_12
+        }
+    }
+}
+
+apokiakas_aversarinas_aagiokratia_38 = { # Alarkos Malakios, 'chief' legon of the Black Legions
+    name = "Alarkos"
+    religion = "aversarinas_aagiokrata"
+    culture = "apokiakas"
+
+    dynasty = dyn_aversarian_165
+    sexuality = heterosexual
+
+    martial = 7
+    diplomacy = 5
+    stewardship = 5
+    intrigue = 5
+    learning = 5
+    prowess = 6
+
+    1192.11.26 = {
+        birth = yes
+    }
+
+    1204.1.1 = {
+        trait = diligent
+        trait = chaste
+        trait = callous
+    }
+
+    1208.11.26 = {
+        effect = { set_base_arcana = { AMOUNT = 5 } }
+        trait = education_martial_4
+        trait = unyielding_defender
+        trait = organizer
+        trait = gh_historical_blademaster_1
+        trait = gallant
+        trait = overseer
+    }
+
+    1220.9.21 = {
+    	trait = gh_legon # Black Legion
+    }
+
+	1253.1.1 = {
+		give_council_position = councillor_marshal
+	}
+}
+
+apokiakas_aversarinas_aagiokratia_39 = { # Xondar Halarkos, Black Legion legon assigned to mentor Cylon
+    name = "Xondar"
+    religion = "aversarinas_aagiokrata"
+    culture = "apokiakas"
+
+    dynasty = dyn_aversarian_166
+    sexuality = heterosexual
+
+    martial = 5
+    diplomacy = 9
+    stewardship = 7
+    intrigue = 7
+    learning = 6
+    prowess = 8
+
+    1215.11.21 = {
+        birth = yes
+        trait = magic_good_3
+    }
+
+    1227.1.1 = {
+        trait = lazy
+        trait = gluttonous
+        trait = deceitful
+    }
+
+    1231.11.21 = {
+        effect = { set_base_arcana = { AMOUNT = 8 } }
+        trait = education_martial_3
+        trait = flexible_leader
+        trait = shrewd
+        trait = gh_historical_blademaster_2
+        trait = gh_historical_reveler_1
+    }
+
+    1239.5.3 = {
+    	trait = gh_legon # Black Legion
+    }
+
+	1253.1.1 = {
+		employer = apokiakas_aversarinas_aagiokratia_26
+		give_council_position = councillor_chancellor
+	}
+}

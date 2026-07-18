@@ -1,0 +1,76 @@
+﻿agunaha_andaronshak_1 = {
+	name = "Bhoja"
+	religion = "andaronshak"
+	culture = "agunaha"
+	1221.8.8 = {
+		birth = yes
+	}
+}
+
+agunaha_andaronshak_2 = {
+	name = "Rajama"
+	religion = "andaronshak"
+	culture = "agunaha"
+	female = yes
+
+	trait = magic_good_2
+	trait = intellect_good_2
+
+	1227.6.5 = {
+		birth = yes
+	}
+
+	1239.1.1 = {
+		trait = zealous
+		trait = lustful
+		trait = diligent	
+	}
+
+	1243.6.5 = {
+		trait = education_learning_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:oraculars }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+}
+
+agunaha_andaronshak_3 = {
+	name = "Yedu"
+	religion = "andaronshak"
+	culture = "agunaha"
+
+	trait = magic_good_3
+	trait = intellect_good_1
+	trait = bastard
+
+	mother = vanaarik_yakasak_1
+
+	1227.6.5 = {
+		birth = yes
+	}
+
+	1239.1.1 = {
+		trait = lustful
+		trait = diligent
+		trait = humble	
+	}
+
+	1243.6.5 = {
+		trait = education_learning_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:oraculars }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1247.6.5 = {
+		set_relation_soulmate = character:agunaha_andaronshak_2
+	}
+	
+	1247.12.5 = {
+		add_matrilineal_spouse = agunaha_andaronshak_2
+	}
+}

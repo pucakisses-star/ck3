@@ -1,0 +1,36 @@
+c_kundriatta = {
+	1186.1.1 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+	1205.1.19 = {
+		holder = islander_aversarinas_practitioner_1
+	}
+	1232.4.5 = {
+		holder = islander_aversarinas_aagiokrata_13
+		government = peasant_republic
+	}	
+	1247.3.21 = {
+		holder = vrodkin_sjalvolki_43
+		government = continental_clan_government
+	}
+}
+c_menthos = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_issicianthan = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_stalaxanthanos = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_aersanoxthynx = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

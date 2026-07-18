@@ -1,0 +1,36 @@
+﻿guillater_karoxos_cult_1 = {
+	name = "Patrizia"
+	female = yes
+	religion = karoxos_cult
+	culture = guillater
+	trait = beauty_good_3
+	1232.1.1 = {
+		birth = yes
+	}
+	1244.1.1 = {
+		trait = gregarious
+		trait = content
+		trait = trusting
+	}
+	1248.1.1 = {
+		trait = education_stewardship_3
+	}
+}
+
+guillater_karoxos_cult_2 = {
+	name = "Adaltrude"
+	female = yes
+	religion = karoxos_cult
+	culture = guillater
+	1222.7.24 = {
+		birth = yes
+	}
+	1234.7.24 = {
+		trait = ambitious
+		trait = diligent
+		trait = zealous
+	}
+	1238.7.24 = {
+		trait = education_martial_3
+	}
+}

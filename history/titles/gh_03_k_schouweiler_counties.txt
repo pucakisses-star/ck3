@@ -1,0 +1,238 @@
+﻿c_abborrholmberget = {
+	1189.2.12 = {
+		holder = westernimperial_aversarinas_aagiokrata_3
+	}
+	
+	# Lonely Note: Giving a null holder to a county triggers an error, make a placeholder
+	# character and remove when possible.
+	#1201.3.4 = {
+	#	holder = 0
+	#}
+
+	1250.1.1 = {
+		holder = vrodkin_sjalvolki_2
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1256.2.1 = {
+		holder = barki_sjalvolki_2
+	}
+	1266.4.16 = {
+		holder = barki_sjalvolki_19
+	}
+	1275.1.1 = {
+		liege = 0
+	}
+	1287.6.9= {
+		holder = barki_sjalvolki_22
+	}
+}
+c_vernar = {
+	1250.1.1 = {
+		holder = vrodkin_sjalvolki_2
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1256.2.1 = {
+		holder = barki_sjalvolki_2
+	}
+	1266.4.16 = {
+		holder = barki_sjalvolki_19
+	}
+	1275.1.1 = {
+		liege = 0
+	}
+	1287.6.9= {
+		holder = barki_sjalvolki_22
+	}
+}
+c_zitavce = {
+
+	1250.1.1 = {
+		holder = wasteland
+		government = wasteland_government
+	}
+	1255.9.4 = {
+		holder = barki_sjalvolki_9
+	}
+	1259.3.28 = {
+		holder = barki_sjalvolki_31
+	}
+	1281.5.28 = {
+		holder = barki_sjalvolki_34
+	}
+	1298.1.1 = {
+		government = feudal_government
+	}
+}
+c_fentange = {
+	1159.6.7 = {
+		holder = northernimperial_aversarinas_aagiokrata_44
+	}
+
+	1200.3.1 = {
+		holder = northernimperial_aversarinas_aagiokrata_42
+	}
+
+	1209.10.3 = {
+		holder = northernimperial_aversarinas_aagiokrata_46
+	}
+
+	1217.7.7 = {
+		holder = northernimperial_aversarinas_aagiokrata_19
+	}
+	1250.1.1 = {
+		holder = vrodkin_sjalvolki_2
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1255.10.3 = {
+		holder = barki_sjalvolki_7
+	}
+	1266.11.7 = {
+		holder = barki_sjalvolki_45
+	}
+}
+
+c_besa = {
+
+	1250.1.1 = {
+		holder = vrodkin_sjalvolki_2
+		liege = k_vrodkin
+		government = continental_clan_government
+	}
+	1255.9.4 = {
+		holder = barki_sjalvolki_9
+		liege = k_pearlcoast
+	}
+	1259.3.28 = {
+		holder = barki_sjalvolki_31
+	}
+	1281.5.28 = {
+		holder = barki_sjalvolki_34
+	}
+	1298.1.1 = {
+		government = feudal_government
+	}
+}
+c_icksjo = {
+
+	1250.1.1 = {
+		holder = vrodkin_sjalvolki_31
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1254.8.22 = {
+		holder = barki_sjalvolki_6
+	}
+	1259.4.1 = {
+		holder = barki_sjalvolki_2
+	}
+	1260.1.1 = {
+		liege = k_pearlcoast
+		government = feudal_government
+	}
+	1266.4.16 = {
+		holder = barki_sjalvolki_24
+		liege = k_pearlcoast
+	}
+}
+c_ostrozno_brdo = {
+	348.7.13 = { # Pathos
+		holder = westernimperial_aversarinas_aagiokrata_111
+ 	}
+	1025.5.5 = { # Exaduis
+		holder = northernimperial_aversarinas_aagiokrata_41
+	}
+	1159.6.7 = { # Detheniax
+		holder = northernimperial_aversarinas_aagiokrata_44
+	}
+	1200.3.1 = {
+		holder = northernimperial_aversarinas_aagiokrata_42
+	}
+	1209.10.3 = {
+		holder = northernimperial_aversarinas_aagiokrata_45
+	}
+	1218.7.27 = {
+		holder = northernimperial_aversarinas_aagiokrata_19
+	}
+	1229.11.3 = {
+		holder = northernimperial_aversarinas_aagiokrata_14
+	}
+	1230.7.24 = {
+		holder = westernimperial_aeschraes_aagiokrata_6
+	}
+	1231.9.20 = {
+		holder = northernimperial_aversarinas_aagiokrata_14
+	}
+	1234.10.14 = {
+		holder = northernimperial_aversarinas_aagiokrata_15
+	}
+	1243.8.23 = {
+		holder = northernimperial_aversarinas_aagiokrata_16
+	}
+	1245.3.6 = {
+		holder = northernimperial_aversarinas_aagiokrata_17
+	}
+	1251.7.8 = {
+		holder = vrodkin_sjalvolki_31
+		government = continental_clan_government
+		liege = k_vrodkin
+	}
+	1255.8.15 = {
+		holder = huegodocs_apti_2
+	}
+	1283.1.1 = {
+		government = republic_playable_government
+		liege = 0
+	}
+}
+b_gonnhelheis = {
+	1250.1.1 = {
+		holder = vrodkin_sjalvolki_31
+	}
+}
+c_hartbrook = {
+
+	1250.1.1 = {
+		holder = vrodkin_sjalvolki_32
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1288.12.5 = {
+		holder = caemansi_sjalvolki_32
+		liege = 0
+	}
+}
+c_hegningen = {
+
+	1250.1.1 = {
+		holder = vrodkin_sjalvolki_32
+		government = continental_clan_government
+	}
+	1286.3.2 = {
+		holder = barki_sjalvolki_18a
+		liege = k_pearlcoast
+		government = feudal_government
+	}
+}
+
+#c_tetrigit = {
+	#1250.1.1 = {
+		#holder = vrodkin_sjalvolki_2
+		#liege = e_migrant_coalition
+		#government = continental_clan_government
+	#}
+	#1255.8.17 = {
+		#holder = barki_sjalvolki_5
+	#}
+#
+	#1260.1.1 = {
+		#liege = k_pearlcoast
+		#government = feudal_government
+	#}
+#
+	#1286.3.3 = {
+		#holder = barki_sjalvolki_47
+	#}
+#}

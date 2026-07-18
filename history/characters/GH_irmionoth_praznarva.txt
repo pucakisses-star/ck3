@@ -1,0 +1,226 @@
+﻿irmionoth_praznarva_1 = { # #blood drinking insane sjalvolki- #1 for southern empire in dev bible
+	name = "Magnach"
+	dynasty = dyn_sjalvolki_9 
+	dna = irmionoth_praznarva_1 
+	religion = "praznarva"
+	culture = "irmionoth"
+
+	father = irmionoth_praznarva_5
+
+	martial = 7
+	diplomacy = 1
+	learning = 3
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_09
+			custom_beards = male_beard_fp1_05		 
+		}
+	}
+
+	1218.11.18 = {
+		birth = yes
+		trait = lunatic_genetic
+		trait = magic_good_3
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 1 }
+		}
+	}
+
+	1230.1.1 = {
+		trait = sadistic
+		trait = ambitious
+		trait = wrathful
+	}
+
+	1234.11.18 = {
+		trait = cannibal
+		trait = reaver
+		trait = gh_historical_blademaster_2
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:wood_law }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1251.4.14 = {
+		spawn_army = { #leaves him still outnumbered by his neighbors but at least him gives a fighting chance
+			name = army_bloodhounds
+			uses_supply = yes
+			inheritable = no
+			location = province:5755
+			levies = 500
+			men_at_arms = {
+				type = sjalvolki_berserkers
+				stacks = 10
+			}
+		}
+		effect = {
+			add_character_flag = sjalvolki_vanguard
+		}
+	}
+}
+
+irmionoth_praznarva_2 = {
+	name = "Gaulnoth" #Formerly Egilmar
+	religion = "praznarva"
+	culture = "irmionoth"
+
+	1224.1.1 = {
+		birth = yes
+	}
+}
+
+irmionoth_praznarva_3 = {
+	name = "Hargost" #Formerly Harthgate
+	religion = "praznarva"
+	culture = "irmionoth"
+
+	1220.1.1 = {
+		birth = yes
+	}
+}
+
+irmionoth_praznarva_4 = {
+	name = "Halthirich" #Formerly Tymmeke
+	religion = "praznarva"
+	culture = "irmionoth"
+
+	1226.1.1 = {
+		birth = yes
+	}
+}
+
+irmionoth_praznarva_5 = { #1254 chieftain's father
+	name = "Arigoth"
+	religion = "praznarva"
+	culture = "irmionoth"
+	dynasty = dyn_sjalvolki_9
+	disallow_random_traits = yes
+
+	father = irmionoth_praznarva_7
+
+	martial = 4
+	diplomacy = 8
+	stewardship = 5
+	intrigue = 3
+	learning = 5
+	prowess = 5
+
+	1175.11.20 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1187.1.1 = {
+		trait = brave
+		trait = arrogant
+		trait = wrathful
+	}
+
+	1191.11.20 = {
+		trait = education_martial_2
+		trait = berserker
+	}
+
+	1237.5.5 = {
+		death = {
+			death_reason = death_ritual_unknown
+		}
+	}
+}
+
+irmionoth_praznarva_6 = { #Shaman Methardacc 'Love-Another'
+	name = "Methardacc"
+	religion = "praznarva"
+	culture = "irmionoth"
+	dynasty = dyn_sjalvolki_9
+	disallow_random_traits = yes
+
+	father = irmionoth_praznarva_7
+
+	martial = 6
+	diplomacy = 7
+	stewardship = 5
+	intrigue = 7
+	learning = 4
+	prowess = 4
+
+	1184.12.26 = {
+		birth = yes
+		trait = magic_good_4
+		trait = intellect_good_2
+	}
+
+	1196.1.1 = {
+		trait = diligent
+		trait = chaste
+		trait = compassionate
+	}
+
+	1200.12.26 = {
+		trait = education_arcana_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1210.11.1 = {
+		trait = gh_excessively_pale
+		give_nickname = nick_love_another
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	1234.6.22 = {
+		death = {
+			death_reason = death_raid
+		}
+	}
+}
+
+irmionoth_praznarva_7 = { #1254 chieftain's grandfather
+	name = "Valravoth"
+	religion = "praznarva"
+	culture = "irmionoth"
+	dynasty = dyn_sjalvolki_9
+	disallow_random_traits = yes
+
+	martial = 5
+	diplomacy = 9
+	stewardship = 7
+	intrigue = 7
+	learning = 6
+	prowess = 3
+
+	1142.3.1 = {
+		birth = yes
+		trait = magic_good_2
+		trait = intellect_good_1
+	}
+
+	1154.1.1 = {
+		trait = lazy
+		trait = gluttonous
+		trait = vengeful
+	}
+
+	1158.3.1 = {
+		trait = education_martial_3
+		trait = reaver
+		trait = berserker
+	}
+
+	1200.11.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}

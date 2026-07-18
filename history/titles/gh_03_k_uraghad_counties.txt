@@ -1,0 +1,195 @@
+c_disuwai = {
+	1149.7.20 = {
+		holder = amuaad_kathsiti_22
+	}
+	
+	1158.12.1 = {
+		holder = amuaad_kathsiti_24
+	}
+	1230.1.1 = {
+		holder = amuaad_kathsiti_13
+	}
+	1230.1.1 = { change_development_level = 15 }
+}
+#c_umloj = { #GH_TODO: Pretty sure this needs to exist somewhere
+#	1230.1.1 = {
+#		holder = amuaad_kathsiti_1
+#		liege = "d_first_kingdom"
+#	}
+#}
+c_ras_menoura = {
+	1000.1.1 = {
+		liege = "d_merrha"
+	}
+	1155.1.1 = {
+		government = republic_playable_government
+		succession_laws = { clique_republic_elective_title_succession_law }
+	}
+	1182.1.1 = {
+		holder = amuaad_kathsiti_36
+		#liege = "d_wadi_bharem"
+	}
+	1230.1.1 = {
+		holder = amuaad_kathsiti_2
+		liege = "d_merrha"
+	}
+}
+#c_layma = {
+#	1155.1.1 = {
+#		government = republic_playable_government
+#	}
+#	1230.1.1 = {
+#		holder = amuaad_kathsiti_3
+#		liege = "d_merrha"
+#	}
+#}
+c_jabal_um_al_maas = {
+	1155.1.1 = {
+		government = republic_playable_government
+	}
+	1182.1.1 = {
+		holder = amuaad_kathsiti_36
+		#liege = "d_wadi_bharem"
+	}
+	1230.1.1 = {
+		holder = amuaad_kathsiti_4
+	}
+}
+c_al_vas = {
+	1182.1.1 = {
+		holder = amuaad_kathsiti_36
+		#liege = "d_wadi_bharem"
+	}
+	1230.1.1 = {
+		holder = amuaad_kathsiti_5
+		liege = "d_khefyyih"
+	}
+}
+#c_zabrirah = {
+#	1230.1.1 = {
+#		holder = amuaad_kathsiti_6
+#	}
+#}
+#c_mamawa = {
+#	1230.1.1 = {
+#		holder = amuaad_kathsiti_6
+#	}
+#}
+#c_mubied = {
+#	1230.1.1 = {
+#		holder = amuaad_kathsiti_7
+#		liege = "d_al_saitan"
+#	}
+#}
+c_qawadmi = {
+	1149.7.20 = {
+		holder = amuaad_kathsiti_22
+	}
+	
+	1158.12.1 = {
+		holder = amuaad_kathsiti_24
+	}
+	1230.1.1 = {
+		holder = amuaad_kathsiti_8
+	}
+}
+c_muraydiyyah = {
+	1230.1.1 = {
+		holder = amuaad_kathsiti_8
+	}
+}
+c_zuniyyah = {
+	1000.1.1 = {
+		liege = "d_merrha"
+	}
+	1240.1.1 = {
+		holder = amuaad_kathsiti_41
+		liege = "d_merrha"
+	}
+}
+c_haizah = {
+	1000.1.1 = {
+		liege = "d_merrha"
+	}
+	1155.1.1 = {
+		government = republic_playable_government
+	}
+	1230.1.1 = {
+		holder = amuaad_kathsiti_10
+		liege = "d_merrha"
+	}
+}
+#c_dibba_dubais = {
+#	1230.1.1 = {
+#		holder = amuaad_kathsiti_11
+#		liege = "d_merrha"
+#	}
+#}
+c_asadsar = {
+	1155.1.1 = {
+		government = republic_playable_government
+	}
+	1230.1.1 = {
+		holder = amuaad_kathsiti_12
+	}
+}
+#c_baniqous = {
+#	1230.1.1 = {
+#		holder = amuaad_kathsiti_13
+#	}
+#}
+#c_tel_kebayr = {
+#	1230.1.1 = {
+#		holder = amuaad_kathsiti_13
+#	}
+#}
+c_central_sarradon1 = {
+	1149.7.20 = {
+		holder = amuaad_kathsiti_22
+	}
+	1158.12.1 = {
+		holder = amuaad_kathsiti_24
+	}
+	1230.1.1 = {
+		holder = amuaad_kathsiti_13
+	}
+}
+#c_alqullah = {
+#	1230.1.1 = {
+#		holder = amuaad_kathsiti_14
+#		liege = "d_lavagheh"
+#	}
+#}
+c_abdili = {
+	#1000.1.1 = {
+		#liege = "d_lavagheh"
+	#}
+	1230.1.1 = {
+		holder = amuaad_kathsiti_15
+#		liege = "d_lavagheh"
+	}
+	1241.10.24 = {
+		holder = amuaad_kathsiti_13
+	}
+}
+#c_sashtun = {
+#	1230.1.1 = {
+#		holder = tasurmad_wardenism_4
+#		liege = "k_four_rivers"
+#	}
+#}
+#c_central_sarradon2 = {
+#	1248.5.21 = {
+#		holder = barzawa_kothori_2
+#	}
+#}
+c_central_sarradon3 = {
+	1236.2.6 = {
+		holder = barzawa_kothori_3
+	}
+}
+#c_central_sarradon10 = {
+#	1230.1.1 = {
+#		holder = barzawa_kothori_4
+#	}
+#}

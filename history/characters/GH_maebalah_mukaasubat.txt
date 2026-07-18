@@ -1,0 +1,120 @@
+﻿maebalah_mukaasubat_01 = {
+	name = "Farroukh"
+	religion = "mukaasubat"
+	culture = "maebalah"
+	
+	1223.2.9 = {
+		birth = yes
+	}
+}
+
+maebalah_mukaasubat_02 = {
+	name = "Tahmash"
+	religion = "mukaasubat"
+	culture = "maebalah"
+	
+	1225.5.12 = {
+		birth = yes
+	}
+}
+
+maebalah_mukaasubat_03 = {
+	name = "Shahab"
+	religion = "mukaasubat"
+	culture = "maebalah"
+	
+	1219.12.4 = {
+		birth = yes
+	}
+}
+
+maebalah_mukaasubat_04 = {
+	name = "Ahmad"
+	religion = "mukaasubat"
+	culture = "maebalah"
+	
+	1220.9.20 = {
+		birth = yes
+	}
+}
+
+maebalah_mukaasubat_05 = {#Agetun, the scheming son of Kharmadhar. He invaded 
+	name = "Agetun"
+	dna = arapa_2
+	religion = "mukaasubat"
+	culture = "maebalah"
+	dynasty = dyn_farrindar
+	father = maebalah_mukaasubat_06
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_mena_02
+			custom_hair = male_hair_mena_04
+		}
+	}
+
+	trait = charming
+
+	1209.7.28 = {
+		birth = yes
+	}
+	1213.7.20 = {
+		# trait = charming
+	}
+	1225.7.20 = {
+		remove_trait = charming
+		trait = ambitious
+		trait = cynical
+		trait = deceitful
+		trait = education_intrigue_3
+	}
+	1254.1.1 = {
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = religious_rights
+				level = 1
+			}
+			vassal_contract_set_obligation_level = {
+				type = title_revocation_rights
+				level = 1
+			}
+		}
+	}
+}
+
+maebalah_mukaasubat_06 = { #Father of Agetun. Was murdered by his son
+	name = "Kharmandar"
+	religion = "mukaasubat"
+	culture = "maebalah"
+	dynasty = dyn_farrindar
+	
+	1182.8.30 = {
+		birth = yes
+	}
+	1198.8.30 = {
+		trait = education_diplomacy_2
+	}
+	1226.3.13 = {
+		death = {
+			death_reason = death_plotting
+		}
+	}
+}
+
+maebalah_mukaasubat_07 = { #Older sister of Agetun. Was murdered to ensure he ascended the throne only
+	name = "Mahtab"
+	religion = "mukaasubat"
+	culture = "maebalah"
+	female = yes
+	dynasty = dyn_farrindar
+	father = maebalah_mukaasubat_06
+
+	1205.10.24 = {
+		birth = yes
+	}
+	1225.11.21 = {
+		death = {
+			death_reason = death_plotting
+		}
+	}
+}

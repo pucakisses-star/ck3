@@ -1,0 +1,120 @@
+﻿dayarka_dahala_1 = { # Nari Daya, daughter of Naklan the Golden and legendary founder of the Dayarka
+	name = "Daya"
+	religion = "dahala"
+	culture = "banwagul"
+	#dynasty = dyn_tanarka_8
+
+	female = yes
+
+	father = banwagul_dahala_17
+
+	martial = 5
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 4
+	learning = 4
+	prowess = 5
+
+	463.9.5 = {
+		birth = yes
+		trait = physique_good_2
+		trait = beauty_good_3
+		trait = magic_good_7
+	}
+
+	475.1.1 = {
+		trait = ambitious
+		trait = wrathful
+		trait = temperate
+	}
+
+	479.9.5 = {
+		trait = education_martial_4
+		trait = strategist
+		trait = gh_historical_blademaster_2
+	}
+
+	600.1.1 = {
+		culture = "dayarka"
+	}
+
+	604.2.8 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+dayarka_dahala_2 = { # One of two Dayarkan throne contenders, leading one by 1254
+	name = "Liyaw"
+	religion = "dahala"
+	culture = "dayarka"
+	female = yes
+
+	martial = 6
+	diplomacy = 5
+	intrigue = 8
+	stewardship = 7
+	learning = 5
+	prowess = 5
+
+	1218.3.14 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		trait = vengeful
+		trait = stubborn
+		trait = greedy
+	}
+
+	1234.3.14 = {
+		trait = education_stewardship_4
+	}
+
+	1242.12.21 = {
+		effect = {
+			create_character_memory = { # Ratarakaw
+				type = saw_ratarakaw
+			}
+		}
+	}
+}
+
+
+dayarka_dahala_3 = { # One of two Dayarkan throne contenders
+	name = "Rangai"
+	religion = "dahala"
+	culture = "dayarka"
+	female = yes
+
+	martial = 7
+	diplomacy = 6
+	intrigue = 9
+	stewardship = 6
+	learning = 5
+	prowess = 8
+
+	1221.3.18 = {
+		birth = yes
+		trait = beauty_good_2
+	}
+
+	1233.1.1 = {
+		trait = compassionate
+		trait = chaste
+		trait = honest
+	}
+
+	1237.3.18 = {
+		trait = education_diplomacy_4
+	}
+
+	1242.12.21 = {
+		effect = {
+			create_character_memory = { # Ratarakaw
+				type = saw_ratarakaw
+			}
+		}
+	}
+}

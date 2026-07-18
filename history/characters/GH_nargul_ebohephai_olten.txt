@@ -1,0 +1,299 @@
+﻿nargul_ebohephai_olten_1 = { # Oltenic khan
+	name = "Nomolun"
+	religion = "ebohephai_olten"
+	culture = "nargul"
+	1215.8.8 = {
+		birth = yes
+	}
+	1235.8.8 = {
+		trait = cynical
+		trait = just
+		trait = vengeful
+		trait = education_diplomacy_4
+	}
+	1245.8.8 = {
+		trait = shrewd
+		trait = gh_historical_blademaster_2
+		trait = adventurer
+		spawn_army = {
+			name = nomoluns_riders
+			uses_supply = yes
+			inheritable = no
+			location = province:213
+			men_at_arms = {
+				type = oltenic_horse_archers
+				stacks = 4
+			}
+			men_at_arms = {
+				type = oltenic_light_horsemen
+				stacks = 4
+			}
+		}
+	}
+}
+
+nargul_ebohephai_olten_2 = { # Oltenic vassals-powerful duke
+	name = "Bogen"
+	religion = "ebohephai_olten"
+	culture = "nargul"
+	1203.2.1 = {
+		birth = yes
+	}
+}
+
+nargul_ebohephai_olten_3 = { # Oltenic vassals-smaller count
+	name = "Alchidai"
+	religion = "ebohephai_olten"
+	culture = "nargul"
+	1224.12.15 = {
+		birth = yes
+	}
+}
+
+nargul_ebohephai_olten_7 = {
+	name = "Nursultan"
+	religion = "ebohephai_olten"
+	culture = "nargul"
+	dynasty = dyn_nursultan
+
+	disallow_random_traits = yes
+	martial = 7
+	prowess = 10
+	diplomacy = 8
+	intrigue = 7
+	stewardship = 5
+	1160.3.15 = {
+		birth = yes
+	}
+
+	1176.1.1 = {
+		trait = brave
+		trait = wrathful
+		trait = ambitious
+		trait = education_martial_3
+		trait = gh_historical_blademaster_3
+		trait = physique_good_2
+		trait = reaver
+		trait = strategist
+	}
+
+	1183.6.1 = {
+		add_spouse = nargul_ebohephai_olten_8 # Beksultan's mother
+	}
+
+	1184.8.8 = {
+		# Beksultan's birth date
+	}
+
+	1205.9.20 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+
+nargul_ebohephai_olten_8 = {
+	name = "Aizhan"
+	religion = "ebohephai_olten"
+	culture = "nargul"
+	female = yes
+	disallow_random_traits = yes
+	martial = 8
+	prowess = 3
+	diplomacy = 6
+	intrigue = 3
+	stewardship = 4
+	1165.7.22 = {
+		birth = yes
+	}
+
+	1181.1.1 = {
+		trait = patient
+		trait = gregarious
+		trait = compassionate
+		trait = education_diplomacy_3
+		trait = beauty_good_2
+		trait = administrator
+		trait = stubborn
+	}
+
+	1183.6.1 = {
+		add_spouse = nargul_ebohephai_olten_7 # Beksultan's father
+	}
+
+
+	1230.11.3 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+
+nargul_ebohephai_olten_9 = {
+	name = "Yerbolat"
+	religion = "ebohephai_olten"
+	culture = "nargul"
+	dynasty = dyn_nursultan
+
+	father = nargul_ebohephai_olten_7
+	mother = nargul_ebohephai_olten_8
+	disallow_random_traits = yes
+	martial = 2
+	prowess = 7
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 4
+	1180.3.15 = {
+		birth = yes
+	}
+
+	1196.1.1 = {
+		trait = ambitious
+		trait = arrogant
+		trait = cynical
+		trait = education_intrigue_2
+		trait = gh_historical_blademaster_1
+		trait = physique_good_1
+		trait = schemer
+	}
+
+	1240.8.12 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+
+nargul_ebohephai_olten_4 = {
+	name = "Beksultan"
+	religion = "ebohephai_olten"
+	culture = "nargul"
+	dynasty = dyn_nursultan
+
+	father = nargul_ebohephai_olten_7
+	mother = nargul_ebohephai_olten_8
+	disallow_random_traits = yes
+	martial = 10
+	prowess = 8
+	diplomacy = 5
+	intrigue = 4
+	stewardship = 4
+	1184.8.8 = {
+		birth = yes
+	}
+
+	1200.8.8 = {
+		trait = brave
+		trait = just
+		trait = zealous
+		trait = education_martial_1
+		trait = gh_historical_blademaster_3
+		trait = physique_good_3
+		trait = reaver
+		trait = giant
+		trait = organizer
+		trait = logistician
+	}
+
+	1205.1.1 = {
+		give_nickname = nick_the_mountain_that_rides # Kills Kath 9 aka the Golden Arrow
+	}
+
+	1214.1.1 = {
+		add_spouse = nargul_ebohephai_olten_5
+	}
+	
+	1225.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = katharnalmic_kyawkan_1 # Killed by Kath 1 in battle
+		}
+	}
+
+}
+
+nargul_ebohephai_olten_5 = { #mother of olten_6
+	name = "Aidana"
+	religion = "ebohephai_olten"
+	culture = "nargul"
+	dynasty = dyn_nursultan
+	female = yes
+
+	1190.5.5 = {
+		birth = yes
+	}
+
+	1206.5.5 = {
+		trait = zealous
+		trait = compassionate
+		trait = arbitrary
+		trait = education_martial_3
+		trait = giant
+	}
+
+	1214.1.1 = {
+		add_spouse = nargul_ebohephai_olten_4
+	}
+
+}
+
+
+nargul_ebohephai_olten_6 = { #
+	name = "Nurbek"
+	religion = "ebohephai_olten"
+	culture = "nargul"
+	dynasty = dyn_nursultan
+	
+	disallow_random_traits = yes
+	father = nargul_ebohephai_olten_4
+	mother = nargul_ebohephai_olten_5
+	martial = 5
+	prowess = 4
+	1215.8.8 = {
+		birth = yes
+	}
+
+	1225.1.1 = {
+		effect = {
+			set_relation_rival = character:katharnalmic_kyawkan_1
+		}
+	}
+	1231.8.8 = {
+		trait = brave
+		trait = sadistic
+		trait = zealous
+		trait = education_martial_4
+		trait = gh_historical_blademaster_2
+		trait = strong
+		trait = giant
+		trait = reaver
+		trait = organizer
+		trait = aggressive_attacker
+	}
+
+	1240.1.1 = { #name given for killing Kath 1 + 2
+		give_nickname = nick_the_black_whirlwind
+	}
+	1252.1.1 = {
+		effect = {
+			spawn_army = {
+				name = black_whirlwind_troops
+				levies = 500
+				men_at_arms = {
+					type = horse_archers
+					stacks = 2
+				}
+				men_at_arms = {
+					type = onager
+					stacks = 1
+				}
+			location = province:4478
+			origin = province:4478
+			inheritable = no
+			}
+		}
+	}
+}

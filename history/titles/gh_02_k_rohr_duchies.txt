@@ -1,0 +1,76 @@
+
+d_faisitelbouren = {
+	1157.9.5 = {
+		holder = carsavisians_lifepath_2
+	}
+	1200.3.1 = {
+		holder = carsavisians_lifepath_3
+	}
+	1233.12.25 = {
+		holder = carsavisians_lifepath_4
+	}
+	1245.12.25 = {
+		holder = carsavisians_lifepath_6
+	}
+	1251.10.13 = {
+		holder = carsavisians_lifepath_5
+	}
+	1251.12.21 = {
+		holder = voluntic_partic_1
+		government = tribal_government
+		change_development_level = 2 
+	}
+}
+d_montcornet = {
+	1.1.2 = {
+		holder = unsorted_26
+	}
+	60.1.1 = {
+		holder = wasteland
+	}
+	1230.1.1 = {
+		holder = carsavisians_lifepath_14
+		liege = 0
+		change_development_level = 5 
+	}
+}
+d_banereset = {
+	1177.6.16 = {
+		holder = carsavisians_lifepath_7
+	}
+	1212.12.12 = {
+		holder = carsavisians_lifepath_9
+	}
+	1230.1.1 = {
+		change_development_level = 2 
+	}
+	1249.12.4 = {
+		holder = carsavisians_lifepath_15
+		government = feudal_government
+	}
+}
+#d_faisitelbouren = {
+#	1157.9.5 = {
+#		holder = carsavisians_lifepath_2
+#	}
+#	1200.3.1 = {
+#		holder = carsavisians_lifepath_3
+#	}
+#	1230.1.1 = { 
+#		change_development_level = 3 
+#	}
+#	1233.12.25 = {
+#		holder = carsavisians_lifepath_4
+#	}
+#	1245.12.25 = {
+#		holder = carsavisians_lifepath_6
+#	}
+#	1251.10.13 = {
+#		holder = carsavisians_lifepath_5
+#	}
+#	1251.12.21 = {
+#		liege = "k_calagonii"
+#		holder = voluntic_partic_15
+#		government = tribal_government
+#	}
+#}

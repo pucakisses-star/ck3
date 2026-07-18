@@ -1,0 +1,135 @@
+﻿murarut_iek_otached_1 = { # Dodai Sagchi, the Voice of Kaigan, rode with Jajak Otroka in his Horde
+	name = "Dodai"
+	dynasty = dyn_murarut_2
+	religion = iek_otached
+	culture = murarut
+	disallow_random_traits = yes
+
+	martial = 4
+	diplomacy = 3
+	intrigue = 3
+	stewardship = 7
+	learning = 8
+	prowess = 5
+
+	1136.3.20 = {
+		birth = yes
+		trait = intellect_good_2
+	}
+
+	1148.1.1 = {
+		trait = zealous
+		trait = arrogant
+		trait = callous
+	}
+
+	1152.3.20 = {
+		trait = education_learning_4
+	}
+
+	1181.3.24 = {
+		trait = theologian
+		trait = gh_historical_mystic_3
+		give_nickname = nick_voice_kaigan
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	1220.5.12 = {
+		death = {
+			death_reason = death_disappearance
+		}
+	}
+}
+
+murarut_iek_otached_2 = { # Dodai Sagchi's son
+	name = "Mongke"
+	dynasty = dyn_murarut_2
+	religion = iek_otached
+	culture = murarut
+	disallow_random_traits = yes
+
+	father = murarut_iek_otached_1
+
+	martial = 4
+	diplomacy = 7
+	intrigue = 1
+	stewardship = 8
+	learning = 9
+	prowess = 3
+
+	1181.3.24 = {
+		birth = yes
+		trait = intellect_good_2
+	}
+
+	1193.1.1 = {
+		trait = zealous
+		trait = humble
+		trait = temperate
+	}
+
+	1197.3.24 = {
+		trait = education_stewardship_2
+	}
+
+	1246.1.20 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+murarut_iek_otached_3 = { # Dodai Sagchi's grandson
+	name = "Berke"
+	dynasty = dyn_murarut_2
+	religion = iek_otached
+	culture = murarut
+
+	father = murarut_iek_otached_2
+
+	martial = 4
+	diplomacy = 7
+	intrigue = 1
+	stewardship = 8
+	learning = 9
+	prowess = 3
+
+	1229.3.11 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+
+	1241.1.1 = {
+		trait = shy
+		trait = just
+		trait = temperate
+	}
+
+	1245.3.11 = {
+		trait = education_learning_3
+	}
+}
+
+murarut_iek_otached_4 = { # Vassal of Jajak's descendant 1
+	name = "Morokha"
+	religion = iek_otached
+	culture = murarut
+
+	1227.9.16 = {
+		birth = yes
+	}
+}
+
+murarut_iek_otached_5 = { # Vassal of Jajak's descendant 2
+	name = "Ghazan"
+	religion = iek_otached
+	culture = murarut
+
+	1233.2.28 = {
+		birth = yes
+	}
+}

@@ -1,0 +1,42 @@
+﻿karkit_vidvaookeyatra_1 = { # Unfaithful Sakankra lady who flits between the 1254 lords
+	name = "Ratnavati"
+	religion = "vidvaookeyatra"
+	culture = "karkit"
+	sexuality = heterosexual
+	female = yes
+
+	1224.6.12 = {
+		birth = yes
+	}
+	1236.6.12 = {
+		trait = lustful
+		trait = fickle
+		trait = callous
+	}
+	1240.6.12 = {
+		trait = education_intrigue_4
+		trait = seducer
+	}
+}
+
+karkit_vidvaookeyatra_2 = { # 1254 Mad Lord's nephew-by-marriage, really just a handsome slab of meat
+	name = "Sailobhava"
+	religion = "vidvaookeyatra"
+	culture = "karkit"
+	sexuality = heterosexual
+	trait = beauty_good_3
+	trait = intellect_bad_2
+
+	1224.8.12 = {
+		birth = yes
+	}
+	1236.8.12 = {
+		trait = stubborn
+		trait = gregarious
+		trait = brave
+	}
+	1240.8.12 = {
+		trait = education_martial_1
+		trait = gh_historical_reveler_2
+	}
+}

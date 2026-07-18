@@ -1,0 +1,167 @@
+c_new_yrim = {
+	161.1.14 = { # A few years after the Worldeater's death
+		holder = jaduyada_ritualist_1
+	}
+	199.4.12 = {
+		holder = jaduyada_ritualist_3
+	}
+	1230.1.1 = {
+		holder = makryenis_katharitos_14
+		liege = k_tifrennesh
+		government = landed_order_government
+	}
+	1230.1.1 = { change_development_level = 20 }
+}
+c_pearleye = {
+	1230.1.1 = {
+		holder = makryenis_katharitos_14
+		liege = k_tifrennesh
+		government = landed_order_government
+	}
+}
+c_fakkugat = {
+	1240.1.1 = {
+		holder = makryenis_calysto_1
+		government = landed_order_government
+	}
+	1240.1.1 = { change_development_level = 19 }
+}
+c_thermos = {
+	1233.11.9 = {
+		holder = islander_calysto_1
+		government = landed_order_government
+		liege = d_kulaybeh
+	}
+}
+c_central_sarradon19 = {
+	1240.1.1 = {
+		government = landed_order_government
+		holder = makryenis_calysto_3
+		liege = d_kulaybeh
+	}
+}
+c_central_sarradon20 = {
+	1240.1.1 = {
+		government = landed_order_government
+		holder = makryenis_calysto_3
+		liege = d_kulaybeh
+	}
+}
+c_mystral = {
+	1240.1.1 = {
+		government = landed_order_government
+		holder = makryenis_calysto_2
+		liege = d_kulaybeh
+	}
+}
+c_khashar = {
+	1240.1.1 = {
+		government = landed_order_government
+		holder = makryenis_calysto_2
+		liege = d_kulaybeh
+	}
+}
+c_byzaropolix = {
+	1230.1.1 = {
+		holder = makryenis_thysia_1
+	}
+}
+c_central_sarradon25 = {
+	1230.1.1 = {
+		holder = makryenis_thysia_1
+	}
+}
+c_carmine = {
+	1230.1.1 = {
+		holder = makryenis_thysia_2
+		liege = k_emporia
+		government = landed_order_government
+	}
+}
+c_ilinkum = {
+	1230.1.1 = {
+		holder = makryenis_thysia_2
+		liege = k_emporia
+		government = landed_order_government
+	}
+}
+c_central_sarradon14 = {
+	1230.1.1 = {
+		holder = makryenis_thysia_14
+		liege = k_emporia
+		government = landed_order_government
+	}
+}
+c_central_sarradon15 = {
+	1230.1.1 = {
+		holder = makryenis_thysia_14
+		liege = k_emporia
+		government = landed_order_government
+	}
+}
+c_central_sarradon16 = {
+	1230.1.1 = {
+		holder = makryenis_thysia_15
+		liege = d_central_sarradon4
+		government = landed_order_government
+	}
+	1295.3.30 = {
+		holder = greulokin_sjalvolki_19
+		liege = 0
+		government = pirate_government
+	}
+}
+c_provincenewgoldhausen = {
+	1230.1.1 = {
+		holder = makryenis_thysia_15
+		liege = d_central_sarradon4
+		government = landed_order_government
+	}
+	1295.3.30 = {
+		holder = greulokin_sjalvolki_19
+		liege = 0
+		government = pirate_government
+	}
+}
+c_tel_lahi = {
+	1230.1.1 = {
+		holder = makryenis_thysia_6
+		liege = d_tragoneia
+		government = landed_order_government
+	}
+}
+c_citrusine = {
+	1248.3.23 = {
+		holder = makryenis_thysia_7
+		government = landed_order_government
+		liege = k_emporia
+	}
+}
+c_oraispol_sarradonias = {
+	1230.1.1 = {
+		holder = makryenis_thysia_9
+		government = landed_order_government
+		liege = d_thronelands
+	}
+}
+c_adlayya = {
+	1230.1.1 = {
+		holder = makryenis_thysia_11
+		government = landed_order_government
+		liege = k_emporia
+	}
+}
+c_elaxion = {
+	1230.1.1 = {
+		holder = makryenis_thysia_13
+		government = landed_order_government
+		liege = k_emporia
+	}
+}
+c_provinceprovince14470 = {
+	1230.1.1 = {
+		holder = makryenis_thysia_13
+		government = landed_order_government
+		liege = k_emporia
+	}
+}

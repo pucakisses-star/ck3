@@ -1,0 +1,93 @@
+c_molos = {
+	1230.1.1 = { change_development_level = 2 }
+
+	1249.6.18 = {
+		holder = vrodkin_sjalvolki_1
+	}
+}
+c_sitissos = {
+	1186.3.23 = {
+		holder = southernimperial_aversarinas_aagiokrata_121
+		liege = k_orydian_dynastic_league
+	}
+	1193.4.22 = {
+		holder = centralislander_aversarinas_aagiokrata_23
+	}
+	1195.7.21 = {
+		holder = westernimperial_aeschraes_aagiokrata_7
+	}
+
+	1230.1.1 = { change_development_level = 10 }
+
+	1234.1.1 = {
+		holder = centralislander_aversarinas_aagiokrata_1
+	}
+	1262.8.17 = {
+		holder = daukeni_sjalvolki_41
+	}
+	1274.9.8 = {
+		holder = daukeni_sjalvolki_160
+	}
+}
+c_provincenewherbagos = {
+	1234.1.1 = {
+		holder = centralislander_aversarinas_aagiokrata_1
+	}
+
+	1253.12.2 = {
+		holder = westernimperial_aversarinas_aagiokrata_158
+		liege = k_high_kingdom_of_the_isles
+	}
+}
+c_provinceneworanisornos = {
+	1234.1.1 = {
+		holder = centralislander_aversarinas_aagiokrata_1
+	}
+
+	1253.12.2 = {
+		holder = vrodkin_sjalvolki_1
+	}
+}
+c_lofoarax = {
+	1234.1.1 = {
+		holder = centralislander_aversarinas_aagiokrata_1
+	}
+
+	1253.12.2 = {
+		holder = westernimperial_aversarinas_aagiokrata_158
+		liege = k_high_kingdom_of_the_isles
+	}
+}
+c_hippio = {
+	1230.1.1 = { change_development_level = 3 }
+
+	1230.1.1 = {
+		holder = islander_cult_of_the_waves_2
+	}
+}
+c_provincenewwafruba = {
+	1200.1.1 = { change_development_level = 3 }
+
+	1201.3.1 = {
+		holder = centralislander_aversarinas_aagiokrata_4
+	}
+}
+c_tylion = {
+	1201.3.1 = {
+		holder = centralislander_aversarinas_aagiokrata_4
+	}
+}
+c_hemikon = {
+	1234.1.1 = {
+		holder = centralislander_aversarinas_aagiokrata_1
+	}
+
+	1253.12.2 = {
+		holder = centralislander_aversarinas_aagiokrata_1
+	}
+}
+c_pheranais = {
+	1234.1.1 = {
+		holder = centralislander_aversarinas_aagiokrata_1
+	}
+}

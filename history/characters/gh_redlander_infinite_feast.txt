@@ -1,0 +1,29 @@
+﻿redlander_infinite_feast_1 = {
+	name = "Orfos"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1232.7.27 = {
+		birth = yes
+	}
+}
+
+redlander_infinite_feast_2 = {
+	name = "Casr"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1227.4.24 = {
+		birth = yes
+	}
+}
+
+redlander_infinite_feast_3 = {
+	name = "Twax"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1219.5.17 = {
+		birth = yes
+	}
+}

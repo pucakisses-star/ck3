@@ -1,0 +1,229 @@
+﻿utyalid_wardenism_1 = {
+	name = "Medghasen"
+	religion = "wardenism"
+	culture = "utyalid"
+	female = no
+	1219.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_wardenism_2 = {
+	name = "Caupussa"
+	religion = "wardenism"
+	culture = "utyalid"
+	female = no
+	1201.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_wardenism_3 = {
+	name = "Syphax"
+	religion = "wardenism"
+	culture = "utyalid"
+	female = no
+	1199.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_wardenism_4 = {
+	name = "Tacfarinas"
+	religion = "wardenism"
+	culture = "utyalid"
+	female = no
+	1212.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_wardenism_5 = {
+	name = "Mernis"
+	religion = "wardenism"
+	culture = "utyalid"
+	female = no
+	1187.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_wardenism_6 = {
+	name = "Massinissa"
+	religion = "wardenism"
+	culture = "utyalid"
+	female = no
+	1241.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_wardenism_7 = {
+	name = "Izmerten"
+	religion = "wardenism"
+	culture = "utyalid"
+	female = no
+	1231.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_wardenism_8 = {
+	name = "Arkhobarzane"
+	religion = "wardenism"
+	culture = "utyalid"
+	female = no
+	1178.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_wardenism_9 = {
+	name = "Azerzour"
+	religion = "wardenism"
+	culture = "utyalid"
+	female = no
+	1199.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_wardenism_10 = {
+	name = "Ajeddig"
+	religion = "wardenism"
+	culture = "utyalid"
+	female = no
+	1221.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_wardenism_11 = {
+	name = "Sadiq"
+	religion = "wardenism"
+	culture = "utyalid"
+	female = no
+	1201.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_wardenism_12 = {
+	name = "Adhughmas"
+	religion = "wardenism"
+	culture = "utyalid"
+	female = no
+	1204.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_wardenism_13 = {
+	name = "Afesdiyas"
+	religion = "wardenism"
+	culture = "utyalid"
+	female = no
+	1222.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_wardenism_14 = {
+	name = "Winaruz"
+	religion = "wardenism"
+	culture = "utyalid"
+	female = no
+	1223.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_wardenism_15 = {
+	name = "Micipsa"
+	religion = "wardenism"
+	culture = "utyalid"
+	female = no
+	1227.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_wardenism_16 = {
+	name = "Madghis"
+	religion = "wardenism"
+	culture = "utyalid"
+	female = no
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_wardenism_17 = {
+	name = "Masteabar"
+	religion = "wardenism"
+	culture = "utyalid"
+	female = no
+	1220.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_wardenism_18 = {
+	name = "Imruc"
+	religion = "wardenism"
+	culture = "utyalid"
+	female = no
+	1226.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_wardenism_19 = {
+	name = "Azerzour"
+	religion = "wardenism"
+	culture = "utyalid"
+	female = no
+	1219.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_wardenism_20 = {
+	name = "Yadisgan"
+	religion = "wardenism"
+	culture = "utyalid"
+	female = no
+	1215.1.1 = {
+		birth = yes
+	}
+}
+
+utyalid_wardenism_21 = {
+	name = "Usun"
+	religion = "wardenism"
+	culture = "utyalid"
+	dynasty = dyn_greatuprising_1
+	dna = greatuprising_1
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_mena_01
+			custom_beards = male_beard_mena_03
+		}
+	}
+
+	268.11.1 = {
+		birth = yes
+		trait = intellect_good_2
+	}
+
+	284.11.1 = {
+		trait = ambitious
+		trait = callous
+		trait = arbitrary
+	}
+
+	362.12.8 = {
+		death = yes
+	}
+}

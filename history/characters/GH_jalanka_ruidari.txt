@@ -1,0 +1,9 @@
+﻿jalanka_ruidari_1 = {
+	name = "Masane"
+	religion = "ruidari"
+	culture = "jalanka"
+
+	1200.4.9 = {
+		birth = yes
+	}
+}

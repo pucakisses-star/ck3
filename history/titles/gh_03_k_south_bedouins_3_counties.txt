@@ -1,0 +1,111 @@
+c_south_bedouins_13 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_south_bedouins_15 = {
+	1230.1.1 = {
+	 change_development_level = 4
+	 government = migratory_government
+	 holder = jalanka_wardenism_2
+  }
+}
+c_south_bedouins_392 = {
+ 	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_south_bedouins_391 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_south_bedouins_1021 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_south_bedouins1013 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_south_bedouins1011 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_south_bedouins_374 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_south_bedouins_373 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_south_bedouins_0311 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_south_bedouins_381 = {
+	1250.3.1 = {
+		government = migratory_government
+		holder = jalanka_harfi_2
+	 }
+}
+c_south_bedouins_0312 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_south_bedouins_7 = {
+  1200.3.1 = {
+	 government = migratory_government
+  }
+}
+c_south_bedouins_5 = {
+  1200.3.1 = {
+	 government = migratory_government
+  }
+}
+c_south_bedouins_1031 = {
+	1250.3.1 = {
+		government = migratory_government
+		holder = jalanka_harfi_1
+	 }
+}
+c_south_bedouins_1032 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+#c_south_bedouins_1033 = {
+#	1250.3.1 = {
+#		government = migratory_government
+#		holder = jalanka_ruidari_1
+#	 }
+#}
+c_south_bedouins_1043 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_new_sarradon_county8 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_new_sarradon_county3 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_nisrum = {
+	1250.3.1 = {
+		government = migratory_government
+		holder = jalanka_wardenism_1
+	 }
+  }

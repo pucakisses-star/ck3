@@ -1,0 +1,37 @@
+﻿hudi_ritualist_1 = { #Parshad the Black, Magi Warlord
+	name = "Parshad"
+	religion = "eirbaadit_al_hukadir"
+	culture = "hudi"
+
+	1253.1.1 = {
+		birth = yes
+		trait = magic_good_6
+		trait = intellect_good_1
+	}
+	1279.1.1 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 7 }
+		}
+		trait = education_intrigue_3
+		trait = callous
+		trait = ambitious
+		trait = generous
+	}
+}
+
+hudi_ritualist_2 = { #Parshad's Lackey 1
+	name = "Suraqa"
+	religion = "eirbaadit_al_hukadir"
+	culture = "hudi"
+	1269.1.1 = {
+		birth = yes
+	}
+	1285.1.1 = {
+		trait = education_stewardship_2
+		trait = content
+		trait = just
+		trait = trusting
+	}
+}

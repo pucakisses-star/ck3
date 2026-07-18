@@ -1,0 +1,10 @@
+d_cukirhaeus = {
+	1197.4.5 = {
+		holder = practitioner_aversarinas_aagiokrata_4
+		liege = e_mayikprolollan
+		government = magocratic_government
+	}
+	1244.3.2 = {
+		holder = 0
+	}
+}

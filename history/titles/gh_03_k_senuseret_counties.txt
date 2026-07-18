@@ -1,0 +1,167 @@
+#c_ahy = {
+#	1195.1.1 = {
+#		holder = alewui_kemsari_kemsar_11
+#		government = tribal_government
+#	}
+#	1244.1.1 = {
+#		holder = alewui_kemsari_kemsar_1
+#		government = tribal_government
+#	}
+#}
+c_peshty = {
+	1195.1.1 = {
+		holder = alewui_kemsari_kemsar_11
+		government = tribal_government
+	}
+	1244.1.1 = {
+		holder = alewui_kemsari_kemsar_1
+		government = tribal_government
+	}
+}
+c_nuwaysh = {
+	1195.1.1 = {
+		government = tribal_government
+		holder = alewui_kemsari_kemsar_12
+	}
+	1244.1.1 = {
+		government = tribal_government
+		holder = alewui_kemsari_kemsar_2
+	}
+}
+#c_nesharakh = {
+#		1244.1.1 = {
+#		government = tribal_government
+#		holder = alewui_kemsari_kemsar_7
+#		}
+#}
+#c_intekeresh = {
+#	1195.1.1 = {
+#		government = tribal_government
+#		holder = alewui_kemsari_kemsar_13
+#	}
+#	1244.1.1 = {
+#		government = tribal_government
+#		holder = alewui_kemsari_kemsar_2
+#	}
+#}
+c_kabekaman = {
+	1244.1.1 = {
+		government = tribal_government
+		holder = alewui_kemsari_vinderon_1
+	}
+}
+#c_ahurash = {
+#	1244.1.1 = {
+#		government = tribal_government
+#		holder = alewui_kemsari_vinderon_1
+#	}
+#}
+#c_ptahys = {
+#	1175.1.1 = {
+#		government = tribal_government
+#		holder = alewui_kemsari_kemsar_10
+#	}
+#	1244.1.1 = {
+#		government = tribal_government
+#		holder = alewui_kemsari_kemsar_3
+#	}
+#}
+c_ptarahamde = {
+	1175.1.1 = {
+		government = tribal_government
+		holder = alewui_kemsari_kemsar_10
+	}
+	1244.1.1 = {
+		government = tribal_government
+		holder = alewui_kemsari_kemsar_3
+	}
+}
+#c_haremakhet = {
+#	1195.1.1 = {
+#		government = tribal_government
+#		holder = alewui_kemsari_kemsar_10
+#	}
+#}
+#c_awaysh = {
+#	1195.1.1 = {
+#		government = tribal_government
+#		holder = alewui_kemsari_kemsar_17
+#		liege = d_deshsenuseret
+#	}
+#	1224.1.1 = {
+#		liege = 0
+#	}
+#	1244.1.1 = {
+#		government = tribal_government
+#		holder = alewui_kemsari_kemsar_4
+#	}
+#}
+#c_ptysuwaysh = {
+#	1195.1.1 = {
+#		government = tribal_government
+#		holder = alewui_kemsari_kemsar_14
+#	}
+#	1249.1.1 = {
+#		government = tribal_government
+#		holder = ran_kemsari_kemsar_18
+#	}
+#}
+#c_khereshthokh = {
+#		1195.1.1 = {
+#		government = tribal_government
+#		holder = alewui_kemsari_kemsar_15
+#		}
+#		1244.1.1 = {
+#		government = tribal_government
+#		holder = alewui_kemsari_kemsar_5
+#		}
+#}
+#c_thorekh = {
+#		1183.9.5 = {
+#			government = tribal_government
+#			holder = westernimperial_aversarinas_aagiokrata_156
+#		}
+#		1195.1.1 = {
+#			government = tribal_government
+#			holder = alewui_kemsari_kemsar_14
+#		}
+#		1244.1.1 = {
+#			government = tribal_government
+#			holder = alewui_kemsari_kemsar_6
+#		}
+#}
+#c_ayum = {
+#		1195.1.1 = {
+#		government = tribal_government
+#		holder = alewui_kemsari_kemsar_16
+#		}
+#		1244.1.1 = {
+#		government = tribal_government
+#		holder = alewui_kemsari_kemsar_8
+#		}
+#}
+c_isni = {
+	1154.1.1 = {
+		government = tribal_government
+		holder = ran_kemsari_kemsar_5
+	}
+	1244.1.1 = {
+		government = tribal_government
+		holder = alewui_kemsari_kemsar_9
+	}
+}
+#c_kemsar_county4 = {
+#	1200.3.1 = {
+#		holder = wasteland
+#	}
+#}
+#c_kemsar_county6 = {
+#	1200.3.1 = {
+#		holder = alewui_kemsari_kemsar_6
+#	}
+#}
+c_kemsar_county5 = {
+	1200.3.1 = {
+		holder = ran_kemsari_kemsar_13
+	}
+}

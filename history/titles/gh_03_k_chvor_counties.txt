@@ -1,0 +1,136 @@
+c_bayagan = {
+	1173.10.31 = {
+		holder = murarut_cumani_1
+		government = nomad_government
+	}
+	1200.3.1 = {
+		holder = murarut_cumani_2
+		government = nomad_government
+	}
+	1249.1.12 = {
+		holder = murarut_cumani_9
+		government = nomad_government
+		change_development_level = 4
+	}
+}
+c_nameer = {
+	1173.10.31 = {
+		holder = murarut_cumani_1
+		government = nomad_government
+	}
+	1200.3.1 = {
+		holder = murarut_cumani_2
+		government = nomad_government
+	}
+	1249.1.12 = {
+		holder = murarut_cumani_9
+		government = nomad_government
+		change_development_level = 4
+	}
+}
+c_bayslaguut = {
+	1161.3.18 = {
+		liege = d_churbay
+		holder = murarut_cumani_5
+		government = nomad_government
+	}
+	1194.6.14 = {
+		liege = d_churbay
+		holder = murarut_cumani_6
+		government = nomad_government
+	}
+	1227.12.5 = {
+		liege = d_churbay
+		holder = murarut_cumani_7
+		government = nomad_government
+		change_development_level = 3
+	}
+}
+c_narni = {
+	1230.1.1 = {
+		
+		holder = easternimperial_black_fraternity_1
+		change_development_level = 4
+	}
+}
+c_erderdi = {
+	1152.3.20 = {
+		liege = k_chvor
+		holder = murarut_iek_otached_1
+		government = nomad_government
+	}
+	1200.5.12 = {
+		liege = d_uladahn
+		government = nomad_government
+	}
+	1220.5.12 = {
+		liege = d_uladahn
+		holder = murarut_iek_otached_2
+		government = nomad_government
+	}
+	1246.1.20 = {
+		liege = d_uladahn
+		holder = murarut_iek_otached_3
+		government = nomad_government
+		change_development_level = 7
+	}
+}
+c_sharbayg = {
+	1152.3.20 = {
+		liege = k_chvor
+		holder = murarut_iek_otached_1
+		government = nomad_government
+	}
+	1200.5.12 = {
+		liege = d_uladahn
+		government = nomad_government
+	}
+	1220.5.12 = {
+		liege = d_uladahn
+		holder = murarut_iek_otached_2
+		government = nomad_government
+	}
+	1246.1.20 = {
+		liege = d_uladahn
+		holder = murarut_iek_otached_3
+		government = nomad_government
+		change_development_level = 5
+	}
+}
+c_togroyn = {
+	1152.3.20 = {
+		liege = k_chvor
+		holder = murarut_iek_otached_1
+		government = nomad_government
+	}
+	1200.5.12 = {
+		liege = d_uladahn
+		government = nomad_government
+	}
+	1220.5.12 = {
+		liege = d_uladahn
+		holder = murarut_iek_otached_2
+		government = nomad_government
+	}
+	1246.1.20 = {
+		liege = d_uladahn
+		holder = murarut_iek_otached_3
+		government = nomad_government
+		change_development_level = 4
+	}
+}
+c_alaghus = {
+	1173.10.31 = {
+		holder = murarut_cumani_1
+		government = nomad_government
+	}
+	1200.3.1 = {
+		holder = murarut_cumani_2
+		government = nomad_government
+	}
+	1249.1.12 = {
+		holder = murarut_cumani_9
+		government = nomad_government
+		change_development_level = 4
+	}
+}

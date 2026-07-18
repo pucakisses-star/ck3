@@ -1,0 +1,4220 @@
+﻿daukeni_sjalvolki_1 = {
+	name = "Cenware" # Cenware Witch-Breaker, could words in this humble dev-note truly capture the essence of the legend of the north?
+	dna = daukeni_sjalvolki_1
+	dynasty = dyn_sjalvolki_1
+	religion = "sjalvolki"
+	culture = "daukeni"
+	sexuality = heterosexual
+
+	father = daukeni_sjalvolki_14
+	mother = daukeni_sjalvolki_15
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_05
+			custom_beards = male_beard_northern_03
+		}
+	}
+
+	martial = 16
+	diplomacy = 15
+	intrigue = 12
+	stewardship = 14
+	learning = 32
+	prowess = 10
+
+	1219.6.18 = {
+		birth = yes
+		trait = beauty_good_2
+		trait = physique_good_3
+		trait = intellect_good_3
+	}
+
+	1231.1.1 = {
+		trait = brave
+		trait = ambitious
+		trait = just
+	}
+
+	1235.6.18 = {
+		trait = education_martial_5
+		trait = scarred
+		trait = confider
+		trait = conqueror
+		trait = gh_historical_blademaster_3
+		trait = gh_historical_track_hunter_3
+		effect = {
+			add_character_modifier = gh_imperrech_debuff_modifier
+			add_character_flag = ai_will_not_convert #please im begging
+		}
+	}
+
+	1242.2.16 = {
+		add_pressed_claim = title:e_migrant_coalition
+		learn_language = language_kholmvolki
+		learn_language = language_partic
+		learn_language = language_sarminian
+		learn_language = language_mondecny
+		learn_language = language_goan
+		learn_language = language_karzarad
+		learn_language = language_huegodoc
+		learn_language = language_kardwen
+		learn_language = language_aversarian
+		learn_language = language_varnigitiai
+		learn_language = language_theugombrian
+		add_perk = pedagogy_perk
+		add_perk = open_minded_perk
+	}
+
+	1244.6.24 = {
+		give_nickname = nick_witch_breaker
+		effect = {
+			add_prestige = 5000
+			add_prestige_experience = 5000
+			add_dread = 60
+			if = {
+				limit = { NOT = { has_dlc_feature = legends } }
+				dynasty = {
+					add_dynasty_perk = cenware_legacy_1
+				}
+			}
+			dynasty = { add_dynasty_prestige_level = 4 }
+		}
+	}
+
+	1244.9.12 = {
+		effect = {
+		 # Initial even troops
+			spawn_army = {
+				name = honored_of_cenware
+				levies = 2000
+				men_at_arms = {
+					type = armored_footmen
+					stacks = 10
+				}
+				men_at_arms = {
+					type = sjalvolki_berserkers
+					stacks = 14
+				}
+				men_at_arms = {
+					type = onager
+					stacks = 10
+				}
+
+				location = province:1942
+				origin = province:2225
+				inheritable = no
+			}
+		}
+	}
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_sjalvolki
+		effect = {
+			create_character_memory = { # Battle of the Elysian Pass
+				type = fought_in_elysian_pass_sjalvolki
+			}
+			add_dread = 40
+		}
+	}
+
+	1297.11.9 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+daukeni_sjalvolki_2 = { # Cenware's uncle who decided to settle his weary ol' bones down early but still made a showing at Elysia because he's a lad
+	name = Mihovil
+	dna = daukeni_sjalvolki_2
+	religion = "sjalvolki"
+	culture = "daukeni"
+	dynasty = dyn_sjalvolki_1
+	father = daukeni_sjalvolki_16
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_04
+			custom_beards = male_beard_fp1_01
+		}
+	}
+
+	1197.4.12 = {
+		birth = yes
+		trait = physique_good_2
+	}
+
+	1209.1.1 = {
+		trait = cynical
+		trait = gregarious
+		trait = calm
+	}
+
+	1213.4.12 = {
+		trait = education_martial_2
+		trait = gh_historical_blademaster_3
+		trait = gh_historical_track_hunter_2
+	}
+
+	1228.1.1 = {
+		add_spouse = daukeni_sjalvolki_3
+	}
+
+	1238.1.1 = {
+		add_spouse = daukeni_sjalvolki_4
+	}
+
+	1245.1.1 = {
+		effect = {
+			set_relation_friend = { target = character:daukeni_sjalvolki_1 reason = friend_generic_history }
+		}
+	}
+
+	1245.1.2 = {
+		effect = {
+			set_relation_friend = { target = character:daukeni_sjalvolki_20 reason = friend_generic_history }
+		}
+	}
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_sjalvolki
+		trait = one_eyed
+		trait = scarred
+		effect = {
+			create_character_memory = { # Battle of the Elysian Pass
+				type = fought_in_elysian_pass_sjalvolki
+			}
+		}
+	}
+}
+
+daukeni_sjalvolki_3 = {
+	name = Aniya # Mihovil's First Wife
+	female = yes
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	trait = beauty_good_1
+
+	1191.11.4 = {
+		birth = yes
+	}
+
+	1235.6.1 = {
+		trait = ill
+	}
+
+	1235.7.1 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+daukeni_sjalvolki_4 = {
+	name = Jovanka # Mihovil's Second Wife
+	female = yes
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1218.4.12 = {
+		birth = yes
+	}
+}
+
+daukeni_sjalvolki_5 = {
+	name = "Arikeni" #Formerly Hjallmar
+	dynasty = dyn_sjalvolki_1
+	religion = "sjalvolki"
+	culture = "daukeni"
+	father = daukeni_sjalvolki_2
+	mother = daukeni_sjalvolki_3
+	trait = physique_bad_2
+	trait = beauty_good_2
+
+
+
+	1214.1.1 = {
+		birth = yes
+	}
+
+	1218.1.1 = {
+		trait = pneumonic
+	}
+
+	1218.3.1 = {
+		death = {
+			death_reason = death_pneumonic
+		}
+	}
+}
+
+daukeni_sjalvolki_6 = {
+	name = "Arlovik" #Formerly Kjeld
+	dynasty = dyn_sjalvolki_1
+	religion = "sjalvolki"
+	culture = "daukeni"
+	father = daukeni_sjalvolki_2
+	mother = daukeni_sjalvolki_3
+	trait = sickly
+
+
+	1212.3.11 = {
+		birth = yes
+	}
+
+	1212.1.5 = {
+		death = {
+			death_reason = death_sickly
+		}
+	}
+}
+
+daukeni_sjalvolki_7 = {
+	name = "Ajleka" #Eilika
+	dynasty = dyn_sjalvolki_1
+	female = yes
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	trait = beauty_good_1
+
+	father = daukeni_sjalvolki_2
+	mother = daukeni_sjalvolki_3
+
+	1225.1.1 = {
+		birth = yes
+	}
+}
+
+daukeni_sjalvolki_8 = {
+	name = "Briha" #Formerly Freya
+	dynasty = dyn_sjalvolki_1
+	female = yes
+	religion = "sjalvolki"
+	culture = "daukeni"
+	father = daukeni_sjalvolki_2
+	mother = daukeni_sjalvolki_4
+
+
+
+	1245.4.12 = {
+		birth = yes
+	}
+}
+
+daukeni_sjalvolki_9 = {
+	name = "Ninosalj"
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1222.4.12 = {
+		birth = yes
+	}
+}
+
+daukeni_sjalvolki_10 = {
+	name = "Vojhrod" #Formerly Slobodan
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1224.4.12 = {
+		birth = yes
+	}
+}
+
+daukeni_sjalvolki_11 = {
+	name = "Visridaj" #Formerly Visaridag
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+
+daukeni_sjalvolki_12 = { # Shaman dude
+	name = Serapion
+	dna = daukeni_sjalvolki_12
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	trait = education_learning_3
+	trait = theologian
+	trait = zealous
+	trait = arrogant
+	trait = honest
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_northern_01
+			custom_beards = male_beard_fp1_05
+		}
+	}
+
+	1191.4.12 = {
+		birth = yes
+	}
+
+	1207.4.12 = {
+		trait = gh_historical_mystic_2
+	}
+}
+
+daukeni_sjalvolki_13 = { # Sjalvolki adventurer in the Mayik
+	name = "Vezlovik"
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+daukeni_sjalvolki_14 = { # Father of Cenware
+	name = "Sobekeni"
+	dna = daukeni_sjalvolki_14
+	religion = "sjalvolki"
+	culture = "daukeni"
+	dynasty = dyn_sjalvolki_1
+	female = no
+	trait = physique_good_2
+	sexuality = heterosexual
+	father = daukeni_sjalvolki_16
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_07
+			custom_beards = male_beard_western_03
+		}
+	}
+
+	1201.2.14 = {
+		birth = yes
+	}
+
+	1216.9.12 = {
+		add_spouse = daukeni_sjalvolki_15
+	}
+
+	1223.11.4 = {
+		death = yes
+	}
+}
+
+daukeni_sjalvolki_15 = { # Mother of Cenware
+	name = "Yarakeni"
+	dna = daukeni_sjalvolki_15
+	religion = "sjalvolki"
+	culture = "daukeni"
+	female = yes
+	trait = beauty_good_2
+	sexuality = heterosexual
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp1_03
+		}
+	}
+
+	1203.4.14 = {
+		birth = yes
+	}
+
+	1229.11.18 = {
+		death = yes
+	}
+}
+
+daukeni_sjalvolki_16 = { # Grandfather of Cenware
+	name = "Volkwin"
+	dna = daukeni_sjalvolki_16
+	religion = "sjalvolki"
+	culture = "daukeni"
+	dynasty = dyn_sjalvolki_1
+	female = no
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_03
+			custom_beards = male_beard_western_01
+		}
+	}
+
+	1163.12.3 = {
+		birth = yes
+	}
+
+	1203.4.14 = {
+		death = yes
+	}
+}
+
+daukeni_sjalvolki_17 = { # Lukar's mother
+	name = "Jagoda"
+	dna = daukeni_sjalvolki_17
+	female = yes
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	trait = content
+	trait = beauty_good_2
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_northern_02
+		}
+	}
+
+	1215.12.3 = {
+		birth = yes
+	}
+
+	1234.3.5 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+daukeni_sjalvolki_18 = { # Eofwine's son
+	name = "Sobekeni"
+	religion = "sjalvolki"
+	culture = "daukeni"
+	father = daukeni_sjalvolki_20
+	mother = vrodkin_sjalvolki_41
+	trait = physique_good_3
+	trait = intellect_bad_1
+
+		portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_09
+			custom_beards = no_beard
+		}
+	}
+
+	1249.1.1 = {
+		birth = yes
+	}
+}
+
+daukeni_sjalvolki_19 = {
+	name = "Jarogg" # Cenware's Magi
+	dna = jarogg
+	dynasty = dyn_partic_2
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	martial = 10
+	diplomacy = 8
+	intrigue = 12
+	learning = 18
+	prowess = 12
+
+	trait = intellect_good_1
+	trait = magic_good_7
+	trait = calm
+	trait = patient
+	trait = brave
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			#custom_gh_neck_accessories = male_empty
+			custom_hair = male_hair_northern_01
+			custom_beards = male_beard_fp2_iberian_muslim_02
+		}
+	}
+
+	1189.2.14 = {
+		birth = yes
+	}
+
+	1200.3.1 = { # Lost his sight on the night of Frodbrokna
+		trait = gh_nearly_blind
+	}
+
+	1215.6.24 = { # Would become extremely learned
+		trait = theologian
+		trait = scholar
+		trait = education_arcana_4
+	}
+
+	1223.9.14 = { # And would thereafter become the greatest known Mixed Magi alive, perhaps casting the first ritual of Riftsight to restore his vision
+		give_nickname = nick_crow_eye
+		trait = gh_riftsight_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:silentspeak }
+			set_variable = { name = historical_magic_school_min_spells value = 9 }
+		}
+		effect = { learn_global_spell_effect = { SPELL_IDENTIFIER = summonfog } }
+	}
+
+	1245.7.18 = { # Jarogg created strange rituals with the knowledge of the looted Mayikprolollan
+		learn_global_spell_effect = { SPELL_IDENTIFIER = spawn_ethereal_fogbeast_army }
+		learn_global_spell_effect = { SPELL_IDENTIFIER = ward_of_the_ancestors }
+	}
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_sjalvolki
+		effect = {
+			create_character_memory = { # Battle of the Elysian Pass
+				type = fought_in_elysian_pass_sjalvolki
+			}
+			add_dread = 40
+		}
+	}
+
+	1254.1.1 = {
+		employer = daukeni_sjalvolki_1
+		give_council_position = councillor_court_magi
+	}
+
+	1291.2.15 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+daukeni_sjalvolki_20 = { # Brother of Cenware
+	name = "Eofwine"
+	dna = daukeni_sjalvolki_20
+	religion = "sjalvolki"
+	culture = "daukeni"
+	female = no
+	dynasty = dyn_sjalvolki_1
+	father = daukeni_sjalvolki_14
+	mother = daukeni_sjalvolki_15
+	trait = content
+	trait = beauty_good_1
+	trait = physique_good_1
+	trait = brave
+	trait = impatient
+	trait = education_martial_2
+	trait = gh_historical_blademaster_1
+
+	sexuality = heterosexual
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_02
+			custom_beards = male_beard_western_10
+		}
+	}
+
+	1215.12.3 = {
+		birth = yes
+	}
+
+	1230.3.13 = {
+		effect = {
+			set_relation_friend = character:daukeni_sjalvolki_1
+		}
+	}
+
+	1246.6.21 = {
+		add_spouse = vrodkin_sjalvolki_41
+		trait = gh_historical_track_hunter_2
+	}
+
+	1250.3.13 = {
+		effect = {
+			set_relation_lover = character:vrodkin_sjalvolki_41
+		}
+	}
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_sjalvolki
+		effect = {
+			create_character_memory = { # Battle of the Elysian Pass
+				type = fought_in_elysian_pass_sjalvolki
+			}
+		}
+	}
+}
+
+daukeni_sjalvolki_21 = { # Cenwife
+	name = "Malina"
+	dna = daukeni_sjalvolki_21
+	female = yes
+	religion = "sjalvolki"
+	culture = "daukeni"
+	sexuality = heterosexual
+	martial = 4
+	diplomacy = 12
+	intrigue = 10
+	stewardship = 4
+	learning = 6
+	trait = education_diplomacy_4
+	trait = intellect_good_1
+	trait = beauty_good_3
+	trait = compassionate
+	trait = gregarious
+	trait = calm
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_fp1_02
+		}
+	}
+
+	1222.4.12 = {
+		birth = yes
+	}
+
+	1216.4.21 = {
+		give_nickname = nick_rosewolf
+	}
+
+	1244.6.21 = {
+		add_spouse = daukeni_sjalvolki_1
+	}
+
+	1244.1.1 = {
+		effect = {
+			set_relation_soulmate = character:daukeni_sjalvolki_1
+		}
+	}
+	1295.3.15 = {
+		#culture = radivolki
+	}
+	1298.1.1 = {
+		effect = {
+			set_employer = character:daukeni_sjalvolki_107
+		}
+	}
+}
+
+daukeni_sjalvolki_22 = { # Cenware's nephew who died at the Elysian Pass
+	name = "Lukar"
+	dynasty = dyn_sjalvolki_1
+	dna = daukeni_sjalvolki_22
+	religion = "sjalvolki"
+	culture = "daukeni"
+	female = no
+	father = daukeni_sjalvolki_20
+	mother = daukeni_sjalvolki_17
+	trait = legitimized_bastard
+	trait = education_martial_2
+	trait = impatient
+	trait = trusting
+	trait = brave
+	trait = physique_good_1
+	trait = berserker
+
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_rtt_01
+			custom_beards = male_beard_fp1_02
+		}
+	}
+
+	1234.3.5 = {
+		birth = yes
+	}
+
+	1252.1.1 = {
+	death = {
+		death_reason = death_elysian_pass
+		killer = westernimperial_aversarinas_aagiokrata_203 # Arch Letalagos Kallistos
+		}
+	}
+}
+
+daukeni_sjalvolki_23 = {
+	name = "Arilkeni" #Formerly Meinwerk
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1220.4.12 = {
+		birth = yes
+	}
+
+	1270.4.10 = {
+		death = {
+			death_reason = death_head_ripped_off
+			killer = southernimperial_aversarian_gorassos_1 # Gorassos
+		}
+	}
+}
+
+daukeni_sjalvolki_24 = {
+	name = "Radmiha" #Formerly Gertrud
+	religion = "sjalvolki"
+	culture = "daukeni"
+	female = yes
+
+	1218.1.1 = {
+		birth = yes
+	}
+
+	1234.1.1 = {
+		trait = gh_historical_track_hunter_1
+	}
+}
+
+daukeni_sjalvolki_25 = {
+	name = "Vezlovik"
+	dynasty = dyn_sjalvolki_21
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1217.1.1 = {
+		birth = yes
+	}
+
+	1258.3.12 = {
+		add_spouse = daukeni_sjalvolki_118
+	}
+	1268.5.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_26 = {
+	name = "Timoj" #Formerly Tymmeke
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1214.4.12 = {
+		birth = yes
+	}
+
+	1293.6.5 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+daukeni_sjalvolki_27 = {
+	name = "Aclidoj"
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1220.4.12 = {
+		birth = yes
+	}
+
+	1240.1.1 = {
+		trait = diligent
+		trait = brave
+		trait = cynical
+		trait = education_learning_3
+	}
+
+	1253.2.1 = {
+		add_spouse = daukeni_sjalvolki_132
+	}
+
+	1267.3.1 = {
+		trait = one_legged
+		trait = gh_one_handed
+		trait = shrewd
+		trait = lifestyle_herbalist
+		give_nickname = nick_sjal_legion_breaker
+	}
+
+	1293.2.6 = {
+		trait = gh_widow
+	}
+
+	1298.1.1 = {
+		trait = whole_of_body
+		#culture = radivolki
+		religion = orispolj_rite
+	}
+}
+
+daukeni_sjalvolki_28 = {
+	name = "Havramir" #Formerly Hgrolmir
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1223.1.23 = {
+		birth = yes
+		trait = intellect_bad_1
+		trait = physique_good_2
+	}
+	1235.1.1 = {
+		trait = stubborn
+		trait = calm
+		trait = brave
+	}
+	1239.1.23 = {
+		trait = education_martial_2
+	}
+	1243.1.1 = {
+		trait = gh_historical_track_hunter_2
+	}
+	1245.1.1 = {
+		give_nickname = nick_ironskull
+	}
+}
+
+daukeni_sjalvolki_29 = {
+	name = "Krihaj" #Formerly Kraig
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	trait = physique_good_3
+
+	1216.1.1 = {
+		birth = yes
+	}
+
+	1239.7.11 = {
+		give_nickname = nick_troll_slayer
+		trait = gh_historical_blademaster_2
+	}
+
+	1241.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = curgerski_sjalvolki_2
+		}
+	}
+}
+
+daukeni_sjalvolki_30 = {
+	name = "Mergos"
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	trait = brave
+	trait = shy
+
+	1212.1.1 = {
+		birth = yes
+	}
+
+	1239.7.11 = {
+		give_nickname = nick_silent_tongue_mergos
+		trait = gh_historical_blademaster_3
+	}
+
+	1242.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = curgerski_sjalvolki_2
+		}
+	}
+}
+
+daukeni_sjalvolki_31 = {
+	name = "Odda"
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1210.1.1 = {
+		birth = yes
+	}
+
+	1239.7.11 = {
+		trait = gh_historical_blademaster_2
+		give_nickname = nick_the_hunter_odda
+		trait = gh_historical_track_hunter_2
+	}
+
+	1243.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = curgerski_sjalvolki_2
+		}
+	}
+}
+
+daukeni_sjalvolki_32 = {
+	name = "Mimir"
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	trait = beauty_bad_1
+	trait = twin
+	trait = berserker
+	father = daukeni_sjalvolki_35
+
+	1216.1.1 = {
+		birth = yes
+	}
+
+	1239.7.11 = {
+		give_nickname = nick_the_twin_mimirsmir
+		trait = gh_historical_blademaster_2
+	}
+
+	1244.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = curgerski_sjalvolki_2
+		}
+	}
+}
+
+daukeni_sjalvolki_33 = {
+	name = "Smir"
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	trait = beauty_bad_1
+	trait = twin
+	trait = berserker
+	father = daukeni_sjalvolki_35
+
+	1216.1.1 = {
+		birth = yes
+	}
+
+	1239.7.11 = {
+		give_nickname = nick_the_twin_mimirsmir
+		trait = gh_historical_blademaster_2
+	}
+
+	1244.1.1 = {
+		death = {
+			death_reason = death_duel
+			killer = curgerski_sjalvolki_2
+		}
+	}
+}
+
+daukeni_sjalvolki_34 = {
+	name = "Krihoj" #Formerly Kraig
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	trait = beauty_good_1
+	trait = lustful
+	trait = adulterer
+
+	1212.1.1 = {
+		birth = yes
+	}
+
+	1239.7.11 = {
+		give_nickname = nick_the_wife_thief_krihoj
+		trait = gh_historical_blademaster_2
+	}
+
+	1241.7.1 = {
+		death = {
+			death_reason = death_duel
+			killer = curgerski_sjalvolki_2
+		}
+	}
+}
+
+daukeni_sjalvolki_35 = {
+	name = "Hromnodj" #Formerly Baldur
+	religion = "sjalvolki"
+	culture = "daukeni"
+	
+	trait = viking
+
+	1180.1.1 = {
+		birth = yes
+	}
+
+	1196.1.1 = {
+		trait = gh_historical_blademaster_3
+	}
+
+	1221.7.1 = {
+		death = {
+			death_reason = death_raid
+		}
+	}
+}
+
+daukeni_sjalvolki_36 = {
+	name = "Himroj" #Formerly Hinrik
+	dna = daukeni_sjalvolki_36
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_02
+			custom_beards = male_beard_fp1_02
+		}
+	}
+
+	1207.4.1 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1219.1.1 = {
+		trait = zealous
+		trait = just
+		trait = temperate
+	}
+
+	1223.4.1 = {
+		trait = education_learning_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+}
+
+daukeni_sjalvolki_37 = {
+	name = "Juries"
+	dna = daukeni_sjalvolki_37
+	religion = "sjalvolki"
+	culture = "daukeni"
+	female = no
+	trait = education_martial_1
+	trait = brave
+	trait = intellect_bad_1
+	trait = ambitious
+	trait = stubborn
+	trait = berserker
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_northern_02
+			custom_beards = male_beard_fp1_03
+		}
+	}
+
+	1227.1.1 = {
+		birth = yes
+	}
+
+	1247.2.14 = {
+		effect = {
+			create_character_memory = { # Black Mountain War
+				type = fought_in_black_mountain_war
+			}
+		}
+	}
+
+	1248.11.28 = {
+		effect = {
+			create_character_memory = { # Ash War
+				type = fought_in_ash_war
+			}
+		}
+	}
+}
+
+daukeni_sjalvolki_38 = { # Nabomil the Black Shaman
+	name = "Nabomil"
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1213.9.19 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1225.1.1 = {
+		trait = zealous
+		trait = sadistic
+		trait = vengeful
+	}
+
+	1229.9.19 = {
+		trait = education_learning_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:wood_law }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1235.1.1 = {
+		trait = gh_glowing_veins
+	}
+
+	1247.3.15 = {
+		effect = {
+			create_character_memory = { # Battle of Ten Trees
+				type = fought_in_ten_trees
+			}
+		}
+	}
+
+	1249.9.12 = {
+		effect = {
+			set_variable = {
+				name = sjalvolki_conquest_contribution
+				value = 20
+			}
+			add_character_flag = sjalvolki_vanguard
+		}
+		give_nickname = nick_the_black_shaman
+	}
+
+	1252.2.3 = {
+		trait = gh_veteran_of_elysia_sjalvolki
+		effect = {
+			create_character_memory = { # Battle of the Elysian Pass
+				type = fought_in_elysian_pass_sjalvolki
+			}
+			add_dread = 40
+		}
+	}
+
+	1278.7.6 = {
+		death = { death_reason = death_mysterious } # Killed in the wars in Aironoi against Hecaeda
+	}
+}
+
+daukeni_sjalvolki_39 = {
+	name = "Goran"
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1224.1.1 = {
+		birth = yes
+	}
+}
+
+daukeni_sjalvolki_40 = {
+	name = "Kracik" #Formerly Krsto
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1201.1.1 = {
+		birth = yes
+	}
+}
+
+daukeni_sjalvolki_41 = {
+	name = "Ratomir"
+	religion = "sjalvolki"
+	culture = "daukeni"
+	dynasty = dyn_sjalvolki_52
+	1212.1.1 = {
+		birth = yes
+	}
+	1242.3.15 = {
+		add_spouse = daukeni_sjalvolki_158
+	}
+	1274.9.8 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+daukeni_sjalvolki_42 = {
+	name = "Ulwin" #Formerly Liebwin
+	dynasty = dyn_sjalvolki_28
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1216.1.1 = {
+		birth = yes
+	}
+}
+
+daukeni_sjalvolki_43 = {
+	name = "Zeman"
+	religion = "sjalvolki"
+	culture = "daukeni"
+	father = daukeni_sjalvolki_153
+	dynasty_house = house_dyn_sjalvolki_50a
+	1234.1.1 = {
+		birth = yes
+	}
+
+	1252.3.2 = {
+		add_spouse = daukeni_sjalvolki_150
+	}
+
+	1290.1.1 = {
+		religion = orispolj_rite
+		trait = depressed_1
+	}
+	1295.3.16 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+daukeni_sjalvolki_44 = {
+	name = Immed
+	dynasty = dyn_sjalvolki_53
+	religion = sjalvolki
+	culture = daukeni
+
+	sexuality = heterosexual
+
+	trait = humble
+	trait = fickle
+	trait = gluttonous
+
+	1217.10.15 = {
+	    birth = yes
+	}
+
+	1257.5.10 = {
+	    add_spouse = daukeni_sjalvolki_163
+	}
+
+	1267.4.11 = {
+	    death = { death_reason = death_natural_causes }
+	}
+}
+
+daukeni_sjalvolki_45 = {
+	name = "Arl" #Formerly Reinbern
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1220.4.12 = {
+		birth = yes
+	}
+	1272.3.13 = {
+		death = { death_reason = death_battle } # killed in aironoi(?)
+	}
+}
+
+daukeni_sjalvolki_46 = {
+	name = "Brakan"
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1220.4.12 = {
+		birth = yes
+	}
+	1250.2.11 = {
+		add_spouse = irmionoth_sjalvolki_26
+	}
+
+	1281.12.18 = {
+		death = { death_reason = death_cancer }
+	}
+}
+
+daukeni_sjalvolki_47 = {
+	name = "Dvoroj" #Formerly Detleff
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1220.4.12 = {
+		birth = yes
+	}
+
+	1267.2.15 = {
+		death = { death_reason = death_execution killer = irmionoth_sjalvolki_29 } #killed by pirates
+	}
+}
+
+daukeni_sjalvolki_48 = {
+	name = "Mirohil" #Formerly Marbold
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1220.4.12 = {
+		birth = yes
+	}
+
+	1261.3.7 = {
+		death = { death_reason = death_battle } #Killed invading Opak
+	}
+}
+
+daukeni_sjalvolki_49 = {
+	name = "Olidmir" #Formerly Alebrand
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1208.4.12 = {
+		birth = yes
+	}
+
+	1262.10.6 = {
+		death = { death_reason = death_accident }
+	}
+}
+
+daukeni_sjalvolki_50 = {
+	name = "Wicho"
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1220.4.12 = {
+		birth = yes
+	}
+
+	1267.2.5 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+daukeni_sjalvolki_51 = {
+	name = "Dobrinodj" #Formerly Witta
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1220.4.12 = {
+		birth = yes
+	}
+
+	1263.10.16 = {
+		death = { death_reason = death_magic_crush_armor }
+	}
+}
+
+daukeni_sjalvolki_52 = {
+	name = "Draha"
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1220.4.12 = {
+		birth = yes
+	}
+
+	1284.4.7 = {
+		death = { death_reason = death_battle } #killed by partics
+	}
+}
+
+daukeni_sjalvolki_53 = {
+	name = "Dobirkvel" #Formerly Dobroslav
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1220.4.12 = {
+		birth = yes
+	}
+
+	1257.4.7 = {
+		death = { death_reason = death_battle } #killed by bandits in etepezea
+	}
+}
+
+daukeni_sjalvolki_54 = { # Migrates to Etepezea
+	name = "Urjev"
+	dynasty = dyn_sjalvolki_24
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1220.4.12 = {
+		birth = yes
+	}
+
+	1240.1.1 = {
+		trait = lustful
+		trait = wrathful
+		trait = paranoid
+		trait = education_intrigue_3
+	}
+
+	1250.1.1 = {
+		add_spouse = daukeni_sjalvolki_129
+	}
+
+	1254.1.1 = {
+		trait = lovers_pox
+	}
+
+	1265.8.13 = {
+		add_spouse = daukeni_sjalvolki_130
+	}
+
+	1288.10.18 = {
+		add_spouse = daukeni_sjalvolki_131
+		give_nickname = nick_sjal_bride_taker
+	}
+
+	1290.2.17 = {
+		trait = gout_ridden
+	}
+	1290.5.19 = {
+		death = { death_reason = death_gout_ridden }
+	}
+}
+
+daukeni_sjalvolki_55 = {
+	name = "Velosvir" #Formerly Balthasar
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1220.4.12 = {
+		birth = yes
+	}
+
+	1277.8.13 = {
+		death = { death_reason = death_battle } # Dies in Aironoi
+	}
+}
+
+daukeni_sjalvolki_55a = {
+	name = "Velosvir"
+	religion = "sjalvolki"
+	culture = daukeni
+	father = daukeni_sjalvolki_55
+	1248.11.3 = {
+		birth = yes
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+
+daukeni_sjalvolki_56 = {
+	name = "Porin"
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+
+daukeni_sjalvolki_57 = {
+	name = "Vejsrom" #Rudimir
+	dynasty = dyn_sjalvolki_22
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1214.1.1 = {
+		birth = yes
+	}
+
+	1243.7.2 = {
+        add_spouse = daukeni_sjalvolki_109
+    }
+
+	1275.8.15 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_58 = {
+	name = "Jagoda"
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1224.1.1 = {
+		birth = yes
+	}
+}
+
+daukeni_sjalvolki_59 = {
+	name = "Tihomir"
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1221.1.1 = {
+		birth = yes
+	}
+}
+
+daukeni_sjalvolki_60 = {
+	name = Nikodim
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1230.4.12 = {
+		birth = yes
+	}
+
+	1268.1.1 = {
+		trait = one_eyed
+		give_nickname = nick_sjal_spear_shaker
+	}
+
+	1269.1.1 = {
+		add_spouse = daukeni_sjalvolki_146
+	}
+
+	1296.10.21 = {
+		death = { death_reason = death_battle } # Killed by pirates
+	}
+}
+
+daukeni_sjalvolki_61 = {
+	name = Branimira
+	female = yes
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1224.4.12 = {
+		birth = yes
+	}
+}
+
+daukeni_sjalvolki_62 = {
+	name = Rastko
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1211.4.12 = {
+		birth = yes
+	}
+
+	1281.6.23 = {
+		death = { death_reason = death_heart_attack }
+	}
+}
+
+daukeni_sjalvolki_63 = {
+	name = Elena
+	female = yes
+	religion = "sjalvolki"
+	culture = "tribocicai"
+
+	1212.4.12 = {
+		birth = yes
+	}
+}
+
+daukeni_sjalvolki_64 = {
+	name = Lazar
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1223.4.12 = {
+		birth = yes
+	}
+}
+
+daukeni_sjalvolki_65 = {
+	name = "Drihaja" #Formerly Dragoslava
+	female = yes
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1229.4.12 = {
+		birth = yes
+	}
+
+	1284.10.10 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+daukeni_sjalvolki_66 = {
+	name = "Vorjavek" #Formerly Bertram
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1227.4.12 = {
+		birth = yes
+	}
+}
+
+daukeni_sjalvolki_67 = {
+	name = "Dragovir" #Formerly Giselher
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1228.4.12 = {
+		birth = yes
+	}
+}
+
+daukeni_sjalvolki_68 = {
+	name = Gavri
+	religion = "sjalvolki"
+	culture = "tribocicai"
+
+	1224.4.12 = {
+		birth = yes
+	}
+
+	1252.1.24 = {
+		add_spouse = daukeni_sjalvolki_65
+	}
+
+	1280.1.2 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+daukeni_sjalvolki_69 = {
+	name = "Ejlika" #Eilika
+	female = yes
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1217.4.12 = {
+		birth = yes
+	}
+}
+
+daukeni_sjalvolki_70 = {
+	name = Ansgar
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1222.4.12 = {
+		birth = yes
+	}
+}
+
+daukeni_sjalvolki_71 = {
+	name = "Ranlin" #Formerly Reginlint
+	religion = "sjalvolki"
+	female = yes
+	culture = "daukeni"
+
+	1220.4.12 = {
+		birth = yes
+	}
+}
+
+daukeni_sjalvolki_72 = {
+	name = "Volnavelj"
+	dynasty = dyn_sjalvolki_25
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1225.4.12 = {
+		birth = yes
+	}
+}
+
+daukeni_sjalvolki_73 = {
+	name = Cissa
+    dynasty = dyn_sjalvolki_54
+    religion = sjalvolki
+    culture = daukeni
+
+    sexuality = heterosexual
+
+    trait = lazy
+    trait = gluttonous
+    trait = vengeful
+
+    1229.11.17 = {
+        birth = yes
+    }
+
+    1254.2.8 = {
+        add_spouse = daukeni_sjalvolki_173
+    }
+
+    1273.1.3 = {
+    	death = {
+    		death_reason = death_head_ripped_off
+    		killer = southernimperial_aversarian_gorassos_1 # Gorassos
+    	}
+    }
+}
+
+daukeni_sjalvolki_74 = {
+	name = "Adjagost" #Formerly Radoslav
+	dynasty = dyn_sjalvolki_20
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1219.4.12 = {
+		birth = yes
+	}
+
+	1293.2.1 = {
+		death = { death_reason = death_ill }
+	}
+}
+
+daukeni_sjalvolki_75 = {
+	name = "Velosmir" #Formerly Danilo
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1209.4.12 = {
+		birth = yes
+	}
+
+	1242.1.15 = {
+		add_spouse = daukeni_sjalvolki_75a
+	}
+
+	1285.3.28 = {
+		death = { death_reason = death_ill }
+	}
+}
+
+daukeni_sjalvolki_75a = {
+	name = "Irvala"
+	religion = "sjalvolki"
+	culture = "vrodkin"
+	female = yes
+	1216.10.30 = {
+		birth = yes
+	}
+
+	1285.3.30 = {
+		death = { death_reason = death_ill }
+	}
+}
+
+daukeni_sjalvolki_76 = {
+	name = Dobovolk
+	dynasty = dyn_sjalvolki_29
+	religion = "sjalvolki"
+	culture = "daukeni"
+
+	1217.11.4 = {
+		birth = yes
+	}
+	1229.1.1 = {
+		trait = greedy
+		trait = impatient
+		trait = wrathful
+	}
+	1233.11.4 = {
+		trait = education_stewardship_2
+	}
+	1252.1.1 = {
+		give_nickname = nick_the_empty_handed
+	}
+
+	1253.10.7 = {
+		add_spouse = daukeni_sjalvolki_137
+	}
+
+	1271.7.10 = {
+		trait = murderer
+	}
+
+	1273.9.11 = {
+		death = { death_reason = death_execution killer = daukeni_sjalvolki_1 }
+	}
+}
+
+######################
+# HOUSE ČERNOBUKOVYĆ #
+######################
+
+daukeni_sjalvolki_77 = {
+    name = "Velosmir" 
+
+    dynasty = dyn_C_ernobukovyC_
+    religion = sjalvolki
+    culture = daukeni
+
+    sexuality = heterosexual
+
+    trait = compassionate
+    trait = craven
+    trait = stubborn
+
+    diplomacy = 11
+    martial = 16
+    stewardship = 24
+    intrigue = 17
+    learning = 15
+    prowess = 15
+
+    trait = education_stewardship_4
+
+    1113.4.7 = {
+        birth = yes
+    }
+
+    1148.9.14 = {
+        add_spouse = daukeni_sjalvolki_78
+    }
+
+    1164.5.8 = {
+        death = { death_reason = death_smallpox }
+    }
+}
+
+daukeni_sjalvolki_78 = {
+    name = "Veloskvela" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    sexuality = heterosexual
+
+    trait = cynical
+    trait = diligent
+    trait = honest
+
+    diplomacy = 6
+    martial = 4
+    stewardship = 8
+    intrigue = 11
+    learning = 3
+    prowess = 3
+
+    trait = education_intrigue_4
+
+    1131.10.5 = {
+        birth = yes
+    }
+
+    1218.11.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_79 = {
+    name = "Irvalvolk" 
+
+    dynasty = dyn_C_ernobukovyC_
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_77
+    mother = daukeni_sjalvolki_78
+
+    sexuality = heterosexual
+
+    trait = lustful
+    trait = sadistic
+    trait = stubborn
+
+    diplomacy = 9
+    martial = 8
+    stewardship = 7
+    intrigue = 7
+    learning = 10
+    prowess = 5
+
+    trait = education_learning_1
+
+    1157.11.19 = {
+        birth = yes
+    }
+
+    1193.6.12 = {
+        add_spouse = daukeni_sjalvolki_80
+    }
+
+    1236.1.10 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_80 = {
+    name = "Zjelvolka" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    sexuality = heterosexual
+
+    trait = impatient
+    trait = arbitrary
+    trait = arrogant
+
+    diplomacy = 2
+    martial = 10
+    stewardship = 9
+    intrigue = 5
+    learning = 6
+    prowess = 8
+
+    trait = education_martial_3
+
+    1176.8.21 = {
+        birth = yes
+    }
+
+    1242.2.4 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_81 = {
+    name = "Radikvel" 
+
+    dynasty = dyn_C_ernobukovyC_
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_79
+    mother = daukeni_sjalvolki_80
+
+    sexuality = heterosexual
+
+    trait = wrathful
+    trait = forgiving
+    trait = greedy
+
+    diplomacy = 9
+    martial = 9
+    stewardship = 8
+    intrigue = 4
+    learning = 8
+    prowess = 7
+
+    trait = education_diplomacy_1
+
+    1203.10.3 = {
+        birth = yes
+    }
+
+    1237.7.17 = {
+        add_spouse = daukeni_sjalvolki_82
+    }
+
+    1281.3.26 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_82 = {
+    name = "Radjavca" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    sexuality = heterosexual
+
+    trait = patient
+    trait = fickle
+    trait = generous
+
+    diplomacy = 5
+    martial = 7
+    stewardship = 7
+    intrigue = 5
+    learning = 6
+    prowess = 5
+
+    trait = education_martial_3
+
+    1220.7.9 = {
+        birth = yes
+    }
+
+    1298.7.4 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_83 = {
+    name = "Hromkvel" 
+
+    dynasty = dyn_C_ernobukovyC_
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_81
+    mother = daukeni_sjalvolki_82
+
+    sexuality = heterosexual
+
+    trait = lazy
+    trait = zealous
+    trait = just
+
+    diplomacy = 5
+    martial = 5
+    stewardship = 9
+    intrigue = 7
+    learning = 5
+    prowess = 7
+
+    trait = education_stewardship_4
+
+    1250.4.5 = {
+        birth = yes
+    }
+
+    1284.12.23 = {
+        add_spouse = daukeni_sjalvolki_84
+    }
+
+    1312.7.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_84 = {
+    name = "Arkrona" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    sexuality = homosexual
+
+    trait = chaste
+    trait = trusting
+    trait = ambitious
+
+    diplomacy = 11
+    martial = 5
+    stewardship = 5
+    intrigue = 6
+    learning = 7
+    prowess = 6
+
+    trait = education_diplomacy_3
+
+    1267.12.25 = {
+        birth = yes
+    }
+
+    1345.7.24 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_85 = {
+    name = "Soncemil" 
+
+    dynasty = dyn_C_ernobukovyC_
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_81
+    mother = daukeni_sjalvolki_82
+
+    sexuality = heterosexual
+
+    trait = generous
+    trait = arrogant
+    trait = zealous
+
+    diplomacy = 3
+    martial = 5
+    stewardship = 6
+    intrigue = 4
+    learning = 7
+    prowess = 3
+
+    trait = education_learning_2
+
+    1255.2.1 = {
+        birth = yes
+    }
+
+    1284.12.16 = {
+        add_spouse = daukeni_sjalvolki_86
+    }
+
+    1339.4.2 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_86 = {
+    name = "Arkloba" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    sexuality = heterosexual
+
+    trait = arrogant
+    trait = gluttonous
+    trait = generous
+
+    diplomacy = 5
+    martial = 4
+    stewardship = 5
+    intrigue = 8
+    learning = 6
+    prowess = 3
+
+    trait = education_intrigue_4
+
+    1267.12.27 = {
+        birth = yes
+    }
+
+    1357.11.26 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_87 = {
+    name = "Hromkvela" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_79
+    mother = daukeni_sjalvolki_80
+
+    sexuality = heterosexual
+
+    trait = ambitious
+    trait = arrogant
+    trait = callous
+
+    diplomacy = 7
+    martial = 7
+    stewardship = 6
+    intrigue = 7
+    learning = 6
+    prowess = 7
+
+    trait = education_diplomacy_3
+
+    1206.11.14 = {
+        birth = yes
+    }
+
+    1282.12.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_88 = {
+    name = "Dobovolka" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_79
+    mother = daukeni_sjalvolki_80
+
+    sexuality = heterosexual
+
+    trait = generous
+    trait = forgiving
+    trait = zealous
+
+    diplomacy = 4
+    martial = 9
+    stewardship = 8
+    intrigue = 7
+    learning = 6
+    prowess = 6
+
+    trait = education_martial_3
+
+    1207.8.2 = {
+        birth = yes
+    }
+
+    1282.4.6 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_89 = {
+    name = "Arkrona" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_77
+    mother = daukeni_sjalvolki_78
+
+    sexuality = heterosexual
+
+    trait = gluttonous
+    trait = callous
+    trait = arrogant
+
+    diplomacy = 9
+    martial = 3
+    stewardship = 7
+    intrigue = 7
+    learning = 5
+    prowess = 6
+
+    trait = education_diplomacy_2
+
+    1159.6.27 = {
+        birth = yes
+    }
+
+    1227.8.17 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_90 = {
+    name = "Boradova" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_77
+    mother = daukeni_sjalvolki_78
+
+    sexuality = bisexual
+
+    trait = arrogant
+    trait = honest
+    trait = lustful
+
+    diplomacy = 5
+    martial = 9
+    stewardship = 4
+    intrigue = 6
+    learning = 5
+    prowess = 6
+
+    trait = education_martial_3
+
+    1160.11.22 = {
+        birth = yes
+    }
+
+    1224.12.5 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_91 = {
+    name = "Veloskvel" 
+
+    dynasty = dyn_C_ernobukovyC_
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_77
+    mother = daukeni_sjalvolki_78
+
+    sexuality = heterosexual
+
+    trait = calm
+    trait = vengeful
+    trait = paranoid
+
+    diplomacy = 4
+    martial = 9
+    stewardship = 9
+    intrigue = 7
+    learning = 4
+    prowess = 3
+
+    trait = education_martial_3
+
+    1161.6.2 = {
+        birth = yes
+    }
+
+    1190.8.16 = {
+        add_spouse = daukeni_sjalvolki_92
+    }
+
+    1228.6.21 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_92 = {
+    name = "Zjelvolka" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    sexuality = heterosexual
+
+    trait = calm
+    trait = just
+    trait = stubborn
+
+    diplomacy = 2
+    martial = 7
+    stewardship = 6
+    intrigue = 4
+    learning = 8
+    prowess = 8
+
+    trait = education_learning_4
+
+    1173.4.24 = {
+        birth = yes
+    }
+
+    1258.7.28 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_93 = {
+    name = "Nabomila" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_91
+    mother = daukeni_sjalvolki_92
+
+    sexuality = heterosexual
+
+    trait = just
+    trait = honest
+    trait = humble
+
+    diplomacy = 6
+    martial = 5
+    stewardship = 5
+    intrigue = 6
+    learning = 8
+    prowess = 5
+
+    trait = education_learning_3
+
+    1199.3.13 = {
+        birth = yes
+    }
+
+    1270.4.15 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_94 = {
+    name = "Soncemila" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_91
+    mother = daukeni_sjalvolki_92
+
+    sexuality = heterosexual
+
+    trait = vengeful
+    trait = lustful
+    trait = cynical
+
+    diplomacy = 8
+    martial = 9
+    stewardship = 7
+    intrigue = 3
+    learning = 7
+    prowess = 5
+
+    trait = education_martial_4
+
+    1200.3.4 = {
+        birth = yes
+    }
+
+    1278.2.26 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_95 = {
+    name = "Arvolk" 
+
+    dynasty = dyn_C_ernobukovyC_
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_91
+    mother = daukeni_sjalvolki_92
+
+    sexuality = heterosexual
+
+    trait = vengeful
+    trait = wrathful
+    trait = arbitrary
+
+    diplomacy = 6
+    martial = 4
+    stewardship = 9
+    intrigue = 5
+    learning = 9
+    prowess = 9
+
+    trait = education_stewardship_4
+
+    1204.4.16 = {
+        birth = yes
+    }
+
+    1249.6.1 = {
+        add_spouse = daukeni_sjalvolki_96
+    }
+
+    1269.3.16 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_96 = {
+    name = "Arloba" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    sexuality = heterosexual
+
+    trait = callous
+    trait = temperate
+    trait = just
+
+    diplomacy = 5
+    martial = 6
+    stewardship = 5
+    intrigue = 6
+    learning = 7
+    prowess = 8
+
+    trait = education_learning_3
+
+    1232.6.3 = {
+        birth = yes
+    }
+
+    1319.10.13 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_97 = {
+    name = "Vetjdova" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni #svotsadi
+
+    father = daukeni_sjalvolki_95
+    mother = daukeni_sjalvolki_96
+
+    sexuality = heterosexual
+
+    trait = vengeful
+    trait = sadistic
+    trait = generous
+
+    diplomacy = 8
+    martial = 4
+    stewardship = 6
+    intrigue = 8
+    learning = 5
+    prowess = 3
+
+    trait = education_diplomacy_4
+
+    1257.4.8 = {
+        birth = yes
+    }
+
+    1332.5.19 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_98 = {
+    name = "Medvolka" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni #svotsadi
+
+    father = daukeni_sjalvolki_95
+    mother = daukeni_sjalvolki_96
+
+    sexuality = heterosexual
+
+    trait = temperate
+    trait = greedy
+    trait = forgiving
+
+    diplomacy = 7
+    martial = 2
+    stewardship = 5
+    intrigue = 5
+    learning = 5
+    prowess = 9
+
+    trait = education_diplomacy_3
+
+    1260.7.23 = {
+        birth = yes
+    }
+
+    1336.11.14 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_99 = {
+    name = "Prahomil" 
+
+    dynasty = dyn_C_ernobukovyC_
+    religion = sjalvolki
+    culture = daukeni #svotsadi
+
+    father = daukeni_sjalvolki_95
+    mother = daukeni_sjalvolki_96
+
+    sexuality = heterosexual
+
+    trait = impatient
+    trait = gregarious
+    trait = ambitious
+
+    diplomacy = 8
+    martial = 5
+    stewardship = 6
+    intrigue = 6
+    learning = 5
+    prowess = 5
+
+    trait = education_diplomacy_4
+
+    1262.5.6 = {
+        birth = yes
+    }
+
+    1283.12.3 = {
+        add_spouse = huegodocs_apti_9
+    }
+
+    1356.3.23 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_101 = {
+    name = "Irvalvolk" 
+
+    dynasty = dyn_C_ernobukovyC_
+    religion = sjalvolki
+    culture = daukeni #svotsadi
+
+    father = daukeni_sjalvolki_95
+    mother = daukeni_sjalvolki_96
+
+    sexuality = heterosexual
+
+    trait = callous
+    trait = gluttonous
+    trait = cynical
+
+    diplomacy = 7
+    martial = 3
+    stewardship = 5
+    intrigue = 9
+    learning = 7
+    prowess = 4
+
+    trait = education_intrigue_2
+
+    1263.8.6 = {
+        birth = yes
+    }
+
+    1289.4.12 = {
+        add_spouse = daukeni_sjalvolki_102
+    }
+
+    1340.4.19 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_102 = {
+    name = "Mirdova" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni #svotsadi
+
+    sexuality = heterosexual
+
+    trait = brave
+    trait = just
+    trait = diligent
+
+    diplomacy = 5
+    martial = 8
+    stewardship = 8
+    intrigue = 7
+    learning = 9
+    prowess = 2
+
+    trait = education_learning_3
+
+    1272.2.26 = {
+        birth = yes
+    }
+
+    1349.12.6 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_103 = {
+	name = "Vulkinj" 
+	religion = "sjalvolki"
+	culture = "daukeni"
+	father = daukeni_sjalvolki_49
+
+	1230.1.23 = {
+		birth = yes
+	}
+
+	1279.3.19 = {
+		death = { death_reason = death_mysterious}
+	}
+}
+
+daukeni_sjalvolki_104 = {
+	name = "Boravoj" 
+	religion = "sjalvolki"
+	culture = "daukeni"
+	father = daukeni_sjalvolki_103
+	1254.1.23 = {
+		birth = yes
+	}
+
+	1285.1.1 = {
+		religion = orispolj_rite
+	}
+
+	#1289.10.1 = {
+		#culture = kaskader
+	#}
+
+	1297.10.2 = {
+		death = { death_reason = death_cancer }
+	}
+}
+
+daukeni_sjalvolki_105 = {
+	name = "Ljudevit" 
+	religion = "sjalvolki"
+	culture = "daukeni"
+	father = daukeni_sjalvolki_104
+	1278.9.23 = {
+		birth = yes
+	}
+
+	1285.1.1 = {
+		religion = orispolj_rite
+	}
+
+	1289.10.1 = {
+		#culture = rohfulka
+	}
+}
+
+
+daukeni_sjalvolki_106 = { # Cenwares eldest son, arrogant paranoid but tactically minded bastard that fears he wont live up to his fathers legacy, favored to win amongst the brothers
+	name = "Radjavil"
+	religion = orispolj_rite
+	culture = daukeni
+	father = daukeni_sjalvolki_1
+	mother = daukeni_sjalvolki_21
+	dynasty = dyn_sjalvolki_1
+	dna = Cenwarekid1
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_03
+			custom_beards = male_beard_mena_04
+		}
+	}
+	1263.2.15 = {
+		birth = yes
+		trait = intellect_good_1
+		trait = physique_good_1
+	}
+	1283.1.1 = {
+		trait = paranoid
+		trait = vengeful
+		trait = arrogant
+		trait = cynical
+		trait = education_martial_3
+	}
+	1295.3.15 = {
+		#culture = radivolki
+	}
+}
+daukeni_sjalvolki_107 = { # Cenwares second son, a dark horse contender known for being the mother's favorite
+	name = "Hromihil"
+	religion = orispolj_rite
+	culture = daukeni
+	father = daukeni_sjalvolki_1
+	mother = daukeni_sjalvolki_21
+	dynasty = dyn_sjalvolki_1
+	dna = CenwareSecondKid
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_01
+			custom_beards = male_beard_western_04
+		}
+	}
+	1265.6.21 = {
+		birth = yes
+		trait = beauty_good_1
+		trait = intellect_good_1
+	}
+	1285.6.21 = {
+		trait = education_stewardship_2
+		trait = fickle
+		trait = patient
+		trait = just
+		trait = shy
+	}
+	1295.3.15 = {
+		#culture = radivolki
+	}
+}
+daukeni_sjalvolki_108 = { # Cenwares third son, a hedonist with a taste for all things magical, depressed in the wake of his fathers death.
+	name = "Vezlomir"
+	religion = orispolj_rite
+	culture = daukeni
+	father = daukeni_sjalvolki_1
+	mother = daukeni_sjalvolki_21
+	dynasty = dyn_sjalvolki_1
+	dna = CenwareThirdKid
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_05
+			custom_beards = male_mustache_iranian_05
+		}
+	}
+	1267.11.2 = {
+		birth = yes
+		trait = physique_good_2
+	}
+	1287.11.2 = {
+		trait = gluttonous
+		trait = cynical
+		trait = lustful
+		trait = eccentric
+		trait = education_arcana_3
+	}
+	1295.3.15 = {
+		#culture = radivolki
+	}
+
+	1297.10.29 = { # Married just before Cenny's death, Cenny neither approved nor disapproved of the match, but thought the young boy wasnt ready
+		add_spouse = auteonic_partic_10
+	}
+}
+
+
+daukeni_sjalvolki_109 = {
+    name = "Mirdva" 
+    female = yes
+
+    religion = orispolj_rite
+    culture = daukeni
+
+    sexuality = heterosexual
+
+    trait = humble
+    trait = temperate
+    trait = impatient
+
+    1226.11.21 = {
+        birth = yes
+    }
+
+    1289.3.20 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_110 = {
+    name = "Mirdoj" 
+
+    dynasty = dyn_sjalvolki_42a
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_57
+    mother = daukeni_sjalvolki_109
+
+    sexuality = heterosexual
+
+    trait = deceitful
+    trait = shy
+    trait = lazy
+
+    1244.1.23 = {
+        birth = yes
+    }
+
+    1269.9.15 = {
+        add_spouse = imperialislander_aversarinas_aagiokrata_9
+    }
+}
+
+daukeni_sjalvolki_112 = {
+    name = "Melnja" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_110
+    mother = imperialislander_aversarinas_aagiokrata_9
+
+    sexuality = heterosexual
+
+    trait = just
+    trait = lustful
+    trait = content
+
+    1270.8.11 = {
+        birth = yes
+    }
+}
+
+daukeni_sjalvolki_113 = {
+    name = "Novmila" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_110
+    mother = imperialislander_aversarinas_aagiokrata_9
+
+    sexuality = heterosexual
+
+    trait = greedy
+    trait = stubborn
+    trait = patient
+
+    1273.2.6 = {
+        birth = yes
+    }
+}
+
+daukeni_sjalvolki_114 = {
+    name = "Irsa" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_57
+    mother = daukeni_sjalvolki_109
+
+    sexuality = heterosexual
+
+    trait = gregarious
+    trait = impatient
+    trait = temperate
+
+    1249.1.12 = {
+        birth = yes
+    }
+
+    1263.5.21 = {
+        death = { death_reason = death_ill }
+    }
+}
+
+daukeni_sjalvolki_115 = {
+    name = "Orlin" 
+
+    dynasty = dyn_sjalvolki_42a
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_57
+    mother = daukeni_sjalvolki_109
+
+    sexuality = heterosexual
+
+    trait = trusting
+    trait = generous
+    trait = gregarious
+
+    1253.10.4 = {
+        birth = yes
+    }
+
+    1281.11.2 = {
+        add_spouse = daukeni_sjalvolki_116
+    }
+
+    1297.5.13 = {
+        death = { death_reason = death_disappearance  }
+    }
+}
+
+daukeni_sjalvolki_116 = {
+    name = "Dovriha" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    sexuality = heterosexual
+
+    trait = deceitful
+    trait = arrogant
+    trait = wrathful
+
+    1264.2.26 = {
+        birth = yes
+    }
+}
+
+daukeni_sjalvolki_117 = {
+    name = "Ovrek" 
+
+    dynasty = dyn_sjalvolki_42a
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_115
+    mother = daukeni_sjalvolki_116
+
+    sexuality = heterosexual
+    1292.8.19 = {
+        birth = yes
+    }
+}
+
+
+daukeni_sjalvolki_118 = {
+    name = "Kvalnja" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    sexuality = heterosexual
+
+    trait = patient
+    trait = craven
+    trait = generous
+
+    1231.1.26 = {
+        birth = yes
+    }
+
+    1294.8.11 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_119 = {
+    name = "Hrinjek" 
+
+    dynasty = dyn_sjalvolki_21
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_25
+    mother = daukeni_sjalvolki_118
+
+    sexuality = heterosexual
+
+    trait = callous
+    trait = zealous
+    trait = craven
+
+    1259.1.3 = {
+        birth = yes
+    }
+
+}
+
+daukeni_sjalvolki_120 = {
+    name = "Kalnavka" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_25
+    mother = daukeni_sjalvolki_118
+
+    sexuality = heterosexual
+
+    trait = fickle
+    trait = callous
+    trait = generous
+
+    1261.2.23 = {
+        birth = yes
+    }
+}
+
+daukeni_sjalvolki_121 = { #Cenware's eldest daughter has no desire to rule nor the ambition to, instead wants to be a landless adventurer. Starts in 1298 in Sarradon
+	name = "Vasinja"
+	religion = orispolj_rite
+	culture = daukeni
+	father = daukeni_sjalvolki_1
+	mother = daukeni_sjalvolki_21
+	dynasty = dyn_sjalvolki_1
+	female = yes
+	sexuality = bisexual
+	1257.10.27 = {
+		birth = yes
+		trait = physique_good_2
+		trait = beauty_good_1
+	}
+
+	1279.10.27 = {
+		trait = compassionate
+		trait = brave
+		trait = gregarious
+		trait = education_arcana_4
+	}
+
+	1285.4.6 = {
+		trait = disinherited # Asked Cenny to remove her from the line of succession so she could pursue her dream of exploring Sarradon, this was after eloping on her wedding day.
+	}
+
+	1298.1.1 = {
+		trait = adventurer
+		trait = lifestyle_traveler
+		trait = gh_historical_blademaster_1
+		employer = hudi_ritualist_1 # Needs potential better employer to start in 1298
+	}
+
+}
+
+daukeni_sjalvolki_122 = { # Cenwares youngest daughter, quite shrewd and married to the heir apparent of Dahagrad, adopted as an orphan that was trying to steal from malenia
+	name = "Arklea"
+	religion = orispolj_rite
+	culture = westernimperial
+	father = daukeni_sjalvolki_1
+	mother = daukeni_sjalvolki_21
+	dynasty = dyn_sjalvolki_1
+	female = yes
+
+
+	1269.7.18 = {
+		birth = yes
+	}
+
+	1289.7.18 = {
+		trait = content
+		trait = gregarious
+		trait = diligent
+		trait = education_stewardship_2
+	}
+
+	1298.1.1 = {
+		trait = shrewd
+	}
+}
+
+daukeni_sjalvolki_123 = {
+	name = "Radjavca"
+	religion = "sjalvolki"
+	culture = daukeni
+	father = daukeni_sjalvolki_75
+	mother = daukeni_sjalvolki_75a
+	female = yes
+
+	prowess = 8
+	1247.12.1 = {
+		birth = yes
+		trait = giant
+	}
+
+	1267.1.1 = {
+		trait = arrogant
+		trait = gregarious
+		trait = gluttonous
+		trait = education_martial_4
+		give_nickname = nick_sjal_tall
+	}
+	1298.1.1 = {
+		#culture = radivolki
+		religion = orispolj_rite
+	}
+}
+
+daukeni_sjalvolki_124 = {
+	name = "Novmila"
+	religion = "sjalvolki"
+	culture = daukeni
+	father = daukeni_sjalvolki_75
+	mother = daukeni_sjalvolki_75a
+	female = yes
+
+	1251.10.14 = {
+		birth = yes
+	}
+
+	1271.10.14 = {
+		trait = compassionate
+		trait = deceitful
+		trait = greedy
+		trait = education_intrigue_3
+	}
+
+	1298.1.1 = {
+		#culture = radivolki
+		religion = orispolj_rite
+	}
+}
+
+daukeni_sjalvolki_124a = { # Bastard child born on the march
+	name = "Michrav"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_54
+	1256.4.12 = {
+		birth = yes
+		trait = bastard
+	}
+
+	1276.4.12 = {
+		trait = arrogant
+		trait = vengeful
+		trait = fickle
+		trait = education_martial_2
+	}
+
+	1290.11.18 = {
+		trait = gh_one_handed
+		death = { death_reason = death_duel killer = daukeni_sjalvolki_126 }
+	}
+}
+daukeni_sjalvolki_125 = { # Bastard child born on the march
+	name = "Dovek"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_54
+	1257.3.26 = {
+		birth = yes
+		trait = bastard
+	}
+
+	1277.3.26 = {
+		trait = craven
+		trait = just
+		trait = stubborn
+		trait = education_diplomacy_2
+	}
+
+	1298.1.1 = {
+		#culture = radivolki
+		religion = orispolj_rite
+	}
+}
+daukeni_sjalvolki_126 = {  # Bastard child born on the march
+	name = "Ilraj"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_54
+	1261.7.16 = {
+		birth = yes
+		trait = bastard
+	}
+
+	1281.7.16 = {
+		trait = strong
+		trait = patient
+		trait = brave
+		trait = shy
+		trait = education_martial_3
+	}
+
+	1290.11.18 = {
+		trait = one_eyed
+	}
+
+	1298.1.1 = {
+		#culture = radivolki
+		religion = orispolj_rite
+	}
+}
+daukeni_sjalvolki_127 = { # Legitimate heir, lost the title to elder sibling in the Dovatkning
+	name = "AC_lek"
+	religion = sjalvolki
+	culture = daukeni
+	dynasty = dyn_sjalvolki_24
+	father = daukeni_sjalvolki_54
+	mother = daukeni_sjalvolki_130
+	1271.4.25 = {
+		birth = yes
+	}
+
+	1291.1.1 = {
+		trait = compassionate
+		trait = just
+		trait = patient
+		trait = education_diplomacy_3
+	}
+
+	1298.1.1 = {
+		#culture = radivolki
+		religion = orispolj_rite
+	}
+}
+daukeni_sjalvolki_128 = {
+	name = "BorC_a"
+	religion = sjalvolki
+	culture = daukeni
+	dynasty = dyn_sjalvolki_24
+	father = daukeni_sjalvolki_54
+	mother = daukeni_sjalvolki_131
+	female = yes
+	1290.3.19 = {
+		birth = yes
+	}
+
+	1298.1.1 = {
+		#culture = radivolki
+		religion = orispolj_rite
+	}
+}
+daukeni_sjalvolki_129 = { # Urjevs first wife, dies in dungeon accused of scheming against him
+	name = "Mirilda"
+	religion = sjalvolki
+	culture = daukeni
+	female = yes
+	1227.3.19 = {
+		birth = yes
+	}
+
+	1263.4.19 = {
+		death = { death_reason = death_dungeon killer = daukeni_sjalvolki_54 }
+	}
+}
+daukeni_sjalvolki_130 = { # Urjevs second wife, dies in childbirth
+	name = "Irsa"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_27
+	female = yes
+	1243.5.29 = {
+		birth = yes
+	}
+
+	1276.4.19 = {
+		death = { death_reason = death_childbirth }
+	}
+}
+daukeni_sjalvolki_131 = { # Urjevs third wife, recently gave birth to young daughter
+	name = "Kvalivka"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_25
+	mother = daukeni_sjalvolki_118
+	female = yes
+	1268.10.7 = {
+		birth = yes
+	}
+
+	1288.1.1 = {
+		trait = deceitful
+		trait = gluttonous
+		trait = compassionate
+		trait = education_diplomacy_4
+	}
+
+	1298.1.1 = {
+		#culture = radivolki
+		religion = orispolj_rite
+	}
+}
+
+daukeni_sjalvolki_132 = {
+	name = "Joradja"
+	religion = sjalvolki
+	culture = daukeni
+	female = yes
+	1225.3.19 = {
+		birth = yes
+	}
+
+	1293.2.6 = {
+		death = { death_reason = death_old_age }
+	}
+}
+daukeni_sjalvolki_133 = {
+	name = "S_ernko"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_27
+	mother = daukeni_sjalvolki_132
+
+	1254.1.1 = {
+		birth = yes
+	}
+
+	1256.8.27 = {
+		death = { death_reason = death_sickly }
+	}
+}
+daukeni_sjalvolki_134 = {
+	name = "Mirdva"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_27
+	mother = daukeni_sjalvolki_132
+	female = yes
+
+	1256.8.19 = {
+		birth = yes
+	}
+
+	1276.8.19 = {
+		trait = brave
+		trait = arbitrary
+		trait = trusting
+		trait = education_martial_1
+		trait = gh_historical_blademaster_2
+	}
+
+	1279.4.30 = {
+		death = { death_reason = death_battle }
+	}
+}
+daukeni_sjalvolki_135 = {
+	name = "Reklev"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_27
+	mother = daukeni_sjalvolki_132
+
+	1258.3.20 = {
+		birth  = yes
+	}
+
+	1278.3.20 = {
+		trait = patient
+		trait = callous
+		trait = greedy
+		trait = education_stewardship_2
+	}
+
+	1298.1.1 = {
+		#culture = radivolki
+	}
+}
+daukeni_sjalvolki_136 = {
+	name = "Orlin"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_27
+	mother = daukeni_sjalvolki_132
+
+	1260.7.27 = {
+		birth = yes
+	}
+
+	1280.1.1 = {
+		trait = diligent
+		trait = impatient
+		trait = paranoid
+		trait = education_arcana_2
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+		#culture = radivolki
+	}
+}
+
+daukeni_sjalvolki_137 = {
+	name = "Irvala"
+	religion = sjalvolki
+	culture = daukeni
+	female = yes
+
+	1228.4.15 = {
+		birth = yes
+	}
+}
+daukeni_sjalvolki_138 = {
+	name = "Velosmir"
+	religion = sjalvolki
+	culture = daukeni
+	dynasty = dyn_sjalvolki_29
+	father = daukeni_sjalvolki_76
+	mother = daukeni_sjalvolki_137
+	1257.8.29 = {
+		birth = yes
+	}
+
+	1277.8.29 = {
+		trait = generous
+		trait = eccentric
+		trait = content
+		trait = education_stewardship_4
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+		#culture = radivolki
+	}
+}
+
+daukeni_sjalvolki_139 = {
+	name = "Oledmir"
+	religion = sjalvolki
+	culture = daukeni
+
+	1250.2.2 = {
+		birth = yes
+	}
+
+	1270.2.2 = {
+		trait = stubborn
+		trait = trusting
+		trait = cynical
+		trait = education_martial_2
+		trait = rough_terrain_expert
+		trait = aggressive_attacker
+	}
+
+	1298.1.1 = {
+		#culture = radivolki
+		religion = orispolj_rite
+	}
+}
+
+daukeni_sjalvolki_140 = {
+	name = "Arilkeni"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_23
+	mother = daukeni_sjalvolki_141
+	1261.4.17 = {
+		birth = yes
+	}
+
+	1281.4.17 = {
+		trait = arrogant
+		trait = cynical
+		trait = shy
+		trait = education_learning_3
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+		#culture = radivolki
+	}
+}
+
+daukeni_sjalvolki_141 = {
+	name = "Ljudevit"
+	religion = sjalvolki
+	culture = daukeni
+	female = yes
+
+	1226.3.21 = {
+		birth = yes
+	}
+
+	1280.4.4 = {
+		death = { death_reason = death_ill }
+	}
+}
+
+daukeni_sjalvolki_142 = {
+	name = "Sokovolk"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_26
+	1259.10.19 = {
+		birth = yes
+	}
+	1279.1.1 = {
+		trait = gluttonous
+		trait = generous
+		trait = fickle
+		trait = education_stewardship_1
+	}
+	1290.1.1 = {
+		trait = drunkard
+	}
+	1298.1.1 = {
+		religion = orispolj_rite
+		#culture = radivolki
+	}
+}
+
+daukeni_sjalvolki_143 = {
+	name = "Mirhrav"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_62
+	1247.5.26 = {
+		birth = yes
+	}
+
+	1288.12.4 = {
+		death = { death_reason = death_sea_storm }
+	}
+}
+
+daukeni_sjalvolki_144 = {
+	name = "Jozdar"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_60
+	mother = daukeni_sjalvolki_146
+
+	1270.2.4 = {
+		birth = yes
+	}
+
+	1290.1.1 = {
+		trait = arrogant
+		trait = brave
+		trait = cynical
+		trait = strong
+		trait = education_martial_1
+	}
+
+	1298.1.1 = {
+		#culture = radivolki
+		religion = orispolj_rite 
+	}
+}
+daukeni_sjalvolki_145 = {
+	name = "Cetjmir"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_60
+	mother = daukeni_sjalvolki_146
+	1273.9.26 = {
+		birth = yes
+	}
+	
+	1290.1.1 = {
+		trait = arrogant
+		trait = callous
+		trait = zealous
+		trait = strong
+		trait = education_martial_1
+	}
+
+	1298.1.1 = {
+		#culture = radivolki
+		religion = orispolj_rite 
+	}
+}
+
+daukeni_sjalvolki_146 = {
+	name = "Vasnica"
+	religion = sjalvolki
+	culture = daukeni
+	female = yes
+	1233.2.28 = {
+		birth = yes
+	}
+	1298.1.1 = {
+		trait = depressed_1
+	}
+}
+
+daukeni_sjalvolki_147 = {
+	name = "Radikval"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_43
+	mother = daukeni_sjalvolki_150
+	1253.8.1 = {
+		birth = yes
+	}
+	1276.4.20 = {
+		death = { death_reason = death_accident }
+	}
+}
+daukeni_sjalvolki_148 = {
+	name = "Mirkvel"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_43
+	mother = daukeni_sjalvolki_150
+	1257.5.5 = {
+		birth = yes
+	}
+	1260.1.20 = {
+		death = { death_reason = death_sickly }
+	}
+}
+daukeni_sjalvolki_149 = {
+	name = "HavriC_a"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_43
+	mother = daukeni_sjalvolki_150
+	female = yes
+
+	1259.3.2 = {
+		birth = yes
+	}
+	1279.3.2 = {
+		trait = vengeful
+		trait = ambitious
+		trait = humble
+		trait = education_diplomacy_2
+	}
+	1298.1.1 = {
+		religion = orispolj_rite
+		#culture = radivolki
+	}
+}
+daukeni_sjalvolki_150 = {
+	name = "Bukmila"
+	religion = sjalvolki
+	culture = daukeni
+	female = yes
+	1233.2.20 = {
+		birth = yes
+	}
+	1285.4.2 = {
+		death = { death_reason = death_ill }
+	}
+}
+
+daukeni_sjalvolki_151 = {
+	name = "Dvirkvel"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_68
+	mother = daukeni_sjalvolki_65
+
+	1262.9.27 = {
+		birth = yes
+	}
+
+	1282.1.1 = {
+		trait = wrathful
+		trait = impatient
+		trait = gluttonous
+		trait = education_martial_3
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+		#culture = radivolki
+	}
+}
+
+daukeni_sjalvolki_152 = {
+	name = "Havril"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_153
+	dynasty_house = house_dyn_sjalvolki_50b
+	1237.8.26 = {
+		birth = yes
+	}
+	1257.8.26 = {
+		trait = content
+		trait = brave
+		trait = shy
+		trait = education_martial_2
+	}
+	1281.2.17 = {
+		death = { death_reason = death_battle }
+	}
+}
+daukeni_sjalvolki_153 = {
+	name = "Vetjcin"
+	religion = sjalvolki
+	culture = daukeni
+	1205.9.21 = {
+		birth = yes
+		trait = gh_peasant_birth
+	}
+	1240.1.4 = {
+		death = { death_reason = death_fog }
+	}
+}
+daukeni_sjalvolki_154 = {
+	name = "CerS_il"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_152
+
+	1263.8.7 = {
+		birth = yes
+		trait = legitimized_bastard
+	}
+
+	1283.8.7 = {
+		trait = compassionate
+		trait = eccentric
+		trait = diligent
+		trait = education_diplomacy_3
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+		#culture = radivolki
+	}
+}
+
+daukeni_sjalvolki_155 = {
+	name = "Malnja"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_153
+	female = yes
+	dynasty_house = house_dyn_sjalvolki_50b
+	1239.10.27 = {
+		birth = yes
+	}
+	1297.4.2 = {
+		death = { death_reason = death_ill }
+	}
+}
+
+daukeni_sjalvolki_156 = {
+	name = "Cetjmir"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_38
+
+	1248.10.2 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1268.10.2 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:wood_law }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1290.1.1 = {
+		employer = caemansi_sjalvolki_15
+		give_council_position = councillor_court_magi
+	}
+}
+
+daukeni_sjalvolki_157 = {
+	name = "Ejlika"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_38
+	1251.6.17 = {
+		birth = yes
+		trait = magic_good_3
+	}
+	1271.6.17 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:wood_law }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+	1295.1.1 = {
+		employer = caemansi_sjalvolki_9
+		give_council_position = councillor_court_magi
+	}
+}
+
+daukeni_sjalvolki_158 = {
+	name = "Radlova"
+	religion = sjalvolki
+	culture = caemansi
+	female = yes
+	1219.6.30 = {
+		birth = yes
+	}
+	1272.8.14 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+daukeni_sjalvolki_159 = {
+	name = "Jormiha"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_41
+	mother = daukeni_sjalvolki_158
+	dynasty = dyn_sjalvolki_52
+	female = yes
+	1246.9.29 = {
+		birth = yes
+	}
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+
+daukeni_sjalvolki_160 = {
+	name = "Islonj"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_41
+	mother = daukeni_sjalvolki_158
+	dynasty = dyn_sjalvolki_52
+	1250.2.1 = {
+		birth = yes
+	}
+
+	1279.3.1 = {
+		add_spouse = centralislander_aversarinas_aagiokrata_16
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+
+daukeni_sjalvolki_161 = {
+	name = "Dvoraj"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_160
+	mother = centralislander_aversarinas_aagiokrata_16
+	dynasty = dyn_sjalvolki_52
+
+	1281.3.13 = {
+		birth = yes
+		trait = twin
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+daukeni_sjalvolki_162 = {
+	name = "Dovuka"
+	religion = sjalvolki
+	culture = daukeni
+	father = daukeni_sjalvolki_160
+	mother = centralislander_aversarinas_aagiokrata_16
+	dynasty = dyn_sjalvolki_52
+
+	1281.3.13 = {
+		birth = yes
+		trait = twin
+	}
+
+	1298.1.1 = {
+		religion = orispolj_rite
+	}
+}
+
+daukeni_sjalvolki_163 = {
+    name = "S_terniC_a" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    sexuality = heterosexual
+
+    trait = patient
+    trait = craven
+    trait = generous
+
+    1240.12.1 = {
+        birth = yes
+    }
+
+    1297.7.7 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+daukeni_sjalvolki_164 = {
+    name = "Drahanic" 
+
+    dynasty = dyn_sjalvolki_53
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_44
+    mother = daukeni_sjalvolki_163
+
+    sexuality = heterosexual
+
+    trait = callous
+    trait = zealous
+    trait = craven
+
+    1260.9.18 = {
+        birth = yes
+    }
+
+    1283.11.16 = {
+        add_spouse = daukeni_sjalvolki_165
+    }
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+daukeni_sjalvolki_165 = {
+    name = "Vinja" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    sexuality = heterosexual
+
+    trait = temperate
+    trait = craven
+    trait = humble
+
+    1266.2.24 = {
+        birth = yes
+    }
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+daukeni_sjalvolki_166 = {
+    name = "Hromkvela" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_164
+    mother = daukeni_sjalvolki_165
+
+    sexuality = heterosexual
+
+    1290.5.24 = {
+        birth = yes
+    }
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+daukeni_sjalvolki_167 = {
+    name = "Mirkvel" 
+
+    dynasty = dyn_sjalvolki_53
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_44
+    mother = daukeni_sjalvolki_163
+
+    sexuality = asexual
+
+    trait = cynical
+    trait = ambitious
+    trait = patient
+
+    1261.8.9 = {
+        birth = yes
+    }
+
+    1262.8.20 = {
+        give_nickname = nick_sjal_grave_breaker
+    }
+
+    1297.6.9 = {
+        add_spouse = adrakamp_sjalvolki_26
+    }
+}
+
+
+daukeni_sjalvolki_172 = {
+    name = "SonciC_a" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_44
+    mother = daukeni_sjalvolki_163
+
+    sexuality = heterosexual
+
+    trait = content
+    trait = humble
+    trait = calm
+
+    1262.8.16 = {
+        birth = yes
+    }
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+daukeni_sjalvolki_173 = {
+    name = "SonciC_a" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    sexuality = heterosexual
+
+    trait = arrogant
+    trait = generous
+    trait = wrathful
+
+    1237.5.1 = {
+        birth = yes
+    }
+    1298.1.1 = {
+    	religion = orispolj_rite
+    }
+}
+
+daukeni_sjalvolki_174 = {
+    name = "Vetjcin" 
+
+    dynasty = dyn_sjalvolki_54
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_73
+    mother = daukeni_sjalvolki_173
+
+    sexuality = heterosexual
+
+    trait = paranoid
+    trait = brave
+    trait = deceitful
+
+    1262.7.24 = {
+        birth = yes
+    }
+
+    1277.4.1 = {
+    	effect = {
+    		set_relation_rival = {
+    			target = character:daukeni_sjalvolki_178
+    			reason = rival_covetted_claim
+    		}
+    		create_character_memory = { # Lost to Ten-Tree 
+    			type = war_lost
+
+    			participants = {
+    				winner = character:daukeni_sjalvolki_178
+    				loser = character:daukeni_sjalvolki_174
+    			}
+    		}
+    	}
+    }
+
+    1289.10.18 = {
+        add_spouse = daukeni_sjalvolki_175
+    }
+    1298.1.1 = {
+    	religion = orispolj_rite
+    	employer = voyagen_lifepath_5
+    }
+}
+
+daukeni_sjalvolki_175 = {
+    name = "Dobovolka" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    sexuality = heterosexual
+
+    trait = shy
+    trait = forgiving
+    trait = generous
+
+    1272.2.20 = {
+        birth = yes
+    }
+    1298.1.1 = {
+    	religion = orispolj_rite
+    	employer = voyagen_lifepath_5
+    }
+}
+
+daukeni_sjalvolki_176 = {
+    name = "Asdoba" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_174
+    mother = daukeni_sjalvolki_175
+
+    sexuality = bisexual
+
+    1289.9.11 = {
+        birth = yes
+    }
+    1298.1.1 = {
+    	religion = orispolj_rite
+    	employer = voyagen_lifepath_5
+    }
+}
+
+daukeni_sjalvolki_177 = {
+    name = "Vetjdova" 
+    female = yes
+
+    religion = sjalvolki
+    culture = daukeni
+
+    father = daukeni_sjalvolki_174
+    mother = daukeni_sjalvolki_175
+
+    1295.1.8 = {
+        birth = yes
+    }
+    1298.1.1 = {
+    	religion = orispolj_rite
+    	employer = voyagen_lifepath_5
+    }
+}
+
+daukeni_sjalvolki_178 = {
+	name = "Unwan"
+	religion = sjalvolki
+	culture = daukeni
+
+	1247.3.15 = {
+		birth = yes
+		trait = strong
+		trait = gh_peasant_birth
+		effect = {
+			create_character_memory = { # Born in the Battle of Ten-Trees
+				type = fought_in_ten_trees
+			}
+			give_nickname = nick_ten_tree
+		}
+	}
+	1267.1.14 = {
+		trait = ambitious
+		trait = calm
+		trait = patient
+		trait = education_martial_2
+		trait = berserker
+	}
+}

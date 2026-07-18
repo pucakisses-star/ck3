@@ -1,0 +1,76 @@
+﻿abdexorn_abdexorn_aagiokrata_1 = {
+	name = "Alexandros"
+	religion = abdexorn_aagiokrata
+	culture = abdexorn
+	trait = physique_good_2
+	1217.7.18 = {
+		birth = yes
+		trait = magic_good_1
+	}
+	1229.7.18 = {
+		trait = brave
+		trait = ambitious
+		trait = callous
+	}
+	1233.7.18 = {
+		trait = education_martial_4
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+		add_pressed_claim = title:c_thewesternone
+	}
+}
+
+abdexorn_abdexorn_aagiokrata_2 = {
+	name = "Meletios"
+	religion = abdexorn_aagiokrata
+	culture = abdexorn
+	1230.1.17 = {
+		birth = yes
+	}
+	1242.1.17 = {
+		trait = stubborn
+		trait = sadistic
+		trait = trusting
+	}
+	1246.1.17 = {
+		trait = education_stewardship_2
+	}
+}
+
+abdexorn_abdexorn_aagiokrata_3 = {
+	name = "Eugenia"
+	female = yes
+	religion = abdexorn_aagiokrata
+	culture = abdexorn
+	1202.10.7 = {
+		birth = yes
+	}
+	1214.10.7 = {
+		trait = generous
+		trait = compassionate
+		trait = fickle
+	}
+	1218.10.7 = {
+		trait = education_learning_2
+	}
+}
+
+abdexorn_abdexorn_aagiokrata_4 = {
+	name = "Gelios"
+	female = yes
+	religion = abdexorn_aagiokrata
+	culture = abdexorn
+	1207.3.12 = {
+		birth = yes
+	}
+	1214.10.7 = {
+		trait = brave
+		trait = wrathful
+		trait = patient
+	}
+	1218.10.7 = {
+		trait = education_intrigue_3
+	}
+}

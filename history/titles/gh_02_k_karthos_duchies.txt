@@ -1,0 +1,88 @@
+d_karthos_isles1 = {
+	1086.7.8 = {
+		holder = guillater_aversarian_aversarinas_aagiokrata_2
+		liege = 0
+	}
+	1088.12.1 = { # Warlordism after Agionist retreat
+		holder = 0
+	}
+	1090.4.22 = {
+		holder = southernimperial_aversarinas_aagiokrata_121
+	}
+	1186.11.15 = {
+		liege = e_oraispol_aautokrata
+	}
+	1193.4.22 = {
+		holder = centralislander_aversarinas_aagiokrata_23
+	}
+	1195.7.21 = {
+		holder = westernimperial_aeschraes_aagiokrata_7
+	}
+	1200.3.1 = {
+		holder = 0
+		liege = 0
+	}
+	1210.1.29 = {
+		holder = centralislander_aversarinas_aagiokrata_17
+		liege = e_oraispol_aautokrata
+	}
+	1217.12.10 = {
+		holder = northernimperial_aeschraes_aagiokrata_2
+	}
+	1229.11.3 = {
+		liege = 0
+	}
+	1231.3.10 = {
+		holder = centralislander_aversarinas_aagiokrata_1
+	}
+	1234.1.1 = {
+		liege = k_high_kingdom_of_the_isles
+	}
+	1250.1.1 = {
+		change_development_level = 9
+	}
+	1251.4.14 = {
+		holder = centralislander_aversarinas_aagiokrata_2
+		liege = 0
+	}
+
+}
+
+d_tegina = {
+	1.1.2 = {
+		holder = unsorted_36
+	}
+	100.1.1 = {
+		holder = 0
+	}
+	1074.5.13 = {
+		holder = southernimperial_aversarinas_aagiokrata_109
+		government = feudal_government
+	}
+
+	1133.1.8 = {
+		holder = southernimperial_aversarinas_aagiokrata_108
+	}
+
+	1142.8.5 = {
+		holder = southernimperial_aversarinas_aagiokrata_18
+	}
+
+	1169.10.3 = {
+		holder = southernimperial_aversarinas_aagiokrata_17
+	}
+	
+	1187.6.26 = {
+		holder = southernimperial_aeschraes_aagiokrata_1
+	}
+
+	1251.4.14 = {
+		change_development_level = 5
+	}
+	
+	1251.4.14 = {
+		holder = southernimperial_aversarian_axiaotheaism_1
+		government = military_unit_government
+		liege = 0
+	}
+}

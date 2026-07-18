@@ -1,0 +1,16 @@
+d_assila = {
+	1234.1.1 = {
+		liege = "k_kalliados"
+		holder = jaravad_cumani_7
+		government = nomad_government
+	}
+}
+
+d_he_vrerai = { 
+	1230.1.1 = {
+		holder = musar_cumani_1
+		government = nomad_government
+		change_development_level = 7
+	}
+}
+

@@ -1,0 +1,78 @@
+﻿c_orrdikakr = {
+    1230.1.1 = {
+		holder = redrunner_aversarinas_aagiokrata_7
+		liege = d_izzinarra
+		change_development_level = 6
+	}
+    
+    1242.03.01 = {
+        holder = redrunner_aversarinas_aagiokrata_38 # Zenon
+        government = feudal_government
+    }
+
+
+    1250.1.1 = {
+		holder = redlander_elated_victim_4 # Zuln
+        government = magocratic_government
+		liege = d_izzinarra
+		change_development_level = 6
+	}
+
+}
+c_zikti = {
+    736.12.31 = {
+        holder = redrunner_aversarinas_aagiokrata_26
+        government = military_unit_government
+    }
+
+    821.03.15 = {
+        holder = redrunner_aversarinas_aagiokrata_27
+        government = military_unit_government
+    }
+
+    875.07.01 = {
+        holder = redrunner_aversarinas_aagiokrata_28
+        government = military_unit_government
+    }
+
+    932.10.15 = {
+        holder = redrunner_aversarinas_aagiokrata_29
+        government = military_unit_government
+    }
+
+    982.12.25 = {
+        holder = redrunner_aversarinas_aagiokrata_30
+        government = military_unit_government
+    }
+
+    1042.06.12 = {
+        holder = redrunner_aversarinas_aagiokrata_31
+        government = military_unit_government
+    }
+
+    1098.11.27 = {
+        holder = redrunner_aversarinas_aagiokrata_32
+        government = military_unit_government
+    }
+
+    1150.05.04 = {
+        holder = redrunner_aversarinas_aagiokrata_33
+        government = military_unit_government
+    }
+
+    1203.08.18 = {
+        holder = redrunner_aversarinas_aagiokrata_34
+        government = military_unit_government
+    }
+
+    1247.03.01 = {
+        holder = redrunner_aversarinas_aagiokrata_35
+        government = military_unit_government
+    }
+
+    1251.03.04 = {
+        holder = tretosai_aversarinas_aagiokrata_2
+        government = pirate_government
+        change_development_level = 17
+    }
+}

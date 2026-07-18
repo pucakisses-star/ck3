@@ -1,0 +1,50 @@
+c_whisperveil6 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_whisperveil = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_provincenewprovince14328 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_whisperveial5a = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_provincenewprovince14338 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_whisperveil10 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_whisperveil9 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_whisperveil5 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_whisperveil8 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_whisperveil7 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}

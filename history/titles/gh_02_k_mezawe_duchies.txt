@@ -1,0 +1,21 @@
+d_zernakia = {
+	1170.1.1 = {
+		holder = fedagesh_mogowai_12
+	}
+	1194.4.6 = {
+		holder = 0
+	}
+}
+d_turale = {
+	1170.1.1 = {
+		holder = kutma_mogowai_5
+	}
+	1200.3.1 = {
+		holder = 0
+	}
+}
+d_gheccia = {
+	1261.4.27 = {
+		holder = adnanari_asdraqi_1
+	}
+}

@@ -1,0 +1,170 @@
+d_hinterwilds = {
+	1230.1.1 = {
+		change_development_level = 6
+	}
+}
+
+d_little_cornucopia = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	66.11.14 = {
+		holder = 0
+	}
+	1230.1.1 = {
+		change_development_level = 6
+	}
+}
+
+d_honeyreach = {
+	1230.1.1 = {
+		change_development_level = 6
+	}
+	1232.5.1 = {
+		holder = northernimperial_aversarinas_aagiokrata_49
+		liege = 0
+	}
+	1251.11.19 = {
+		holder = huegodocs_apti_3
+		government = feudal_government
+	}
+}
+
+d_nightbloom = {
+	1184.8.8 = {
+		liege = "e_oraispol_aautokrata"
+		holder = ardothanes_aversarinas_aagiokrata_1
+		government = feudal_government
+	}
+	1230.1.1 = {
+		change_development_level = 4
+	}
+	1232.7.26 = {
+		liege = 0
+		holder = ardothanes_aversarinas_aagiokrata_2
+	}
+	1247.3.15 = {
+		liege = "e_migrant_coalition"
+		holder = daukeni_sjalvolki_42
+		government = continental_clan_government
+	}
+}
+
+d_faegift_vale = {
+	1.1.1 = {
+		holder = dailennir_kathanouxiac_1
+	}
+	66.11.14 = {
+		holder = dailennir_kathanouxiac_2	# Cyn 'of the Golden Rowan'
+	}
+	91.12.15 = {
+		holder = dailennir_kathanouxiac_4	# Cottauc 'Forest-Friend'
+	}
+	118.11.11 = {
+		holder = dailennir_kathanouxiac_6	# Anovur
+	}
+	153.11.25 = {
+		holder = dailennir_kathanouxiac_10	# Maevis
+	}
+	172.9.26 = {
+		holder = dragon_beast_7	# Tyrandax 'the Dragon-King'
+	}
+	184.5.7 = {
+		holder = etrandanexi_lifepath_3	# Clothar I 'Dragonsbane'
+	}
+	215.2.20 = {
+		holder = etrandanexi_lifepath_5	# Rudohar
+	}
+	259.9.18 = {
+		holder = etrandanexi_lifepath_7	# Clothar II
+	}
+	306.9.17 = {
+		holder = etrandanexi_lifepath_10	# Clothar III 'Witchblood'
+	}
+	332.6.7 = {
+		holder = etrandanexi_lifepath_9		# Valoric I 'the Good'
+	}
+	354.6.7 = {
+		holder = etrandanexi_lifepath_11	# Leuhard 'the Worthy'
+	}
+	381.9.4 = {
+		holder = etrandanexi_lifepath_13	# Aloric 'the Haughty' (final independent king)
+	}
+	418.6.25 = {
+		holder = etrandanexi_lifepath_16	# Ansfrei (first baron)
+	}
+	450.11.6 = {
+		holder = etrandanexi_lifepath_18	# Gudoulf 'the Rotund'
+	}
+	477.7.18 = {
+		holder = etrandanexi_lifepath_20	# Dageric
+	}
+	521.8.21 = {
+		holder = etrandanexi_lifepath_22	# Marcomer
+	}
+	587.5.21 = {
+		holder = 0
+	}
+	911.10.3 = {
+		holder = northernimperial_aversarinas_aagiokrata_65	# Metrilos
+	}
+	937.9.15 = {
+		holder = northernimperial_aversarinas_aagiokrata_67	# Eurynike 'the Placid'
+	}
+	954.8.20 = {
+		holder = northernimperial_aversarinas_aagiokrata_69	# Phraestion 'the Coin-Clutcher'
+	}
+	1230.1.1 = {
+		change_development_level = 4
+	}
+	1253.1.1 = {
+		liege = "e_migrant_coalition"
+		holder = sarminians_salacad_1
+		government = tribal_government
+	}
+}
+
+d_old_marches = {
+	1.1.1 = {
+		holder = unsorted_17
+	}
+	40.2.21 = {
+		holder = 0
+	}
+	1158.5.27 = {
+		holder = etrandanexi_aversarinas_aagiokrata_5
+		government = feudal_government
+		liege = e_the_reach
+	}
+	1190.12.12 = {
+		holder = etrandanexi_aversarinas_aagiokrata_6
+	}
+	1212.10.6 = {
+		holder = etrandanexi_aversarinas_aagiokrata_7
+	}
+	1230.1.1 = {
+		change_development_level = 5 
+	}
+	1242.4.6 = {
+		holder = salisians_lifepath_3
+		liege = 0
+	}
+}
+
+d_popelna = {
+	1.1.1 = {
+		holder = unsorted_17
+	}
+	40.2.21 = {
+		holder = 0
+	}
+	1253.1.1 = {
+		liege = "e_migrant_coalition"
+		holder = kardwens_kardawai_1
+		government = tribal_government
+	}
+	1230.1.1 = {
+		change_development_level = 5
+	}
+}
+

@@ -1,0 +1,91 @@
+#c_kathott = {
+#	1230.1.1 = {
+#		holder = surugin_ehatm_11
+#		government = tribal_government
+#	}
+#}
+c_tamadra = {
+	1230.1.1 = {
+		holder = surugin_ehatm_11
+		government = tribal_government
+	}
+}
+#c_chytremmos = {
+#	1230.1.1 = {
+#		holder = surugin_ehatm_8
+#		government = tribal_government
+#	}
+#}
+c_lapedra = {
+	1230.1.1 = {
+		holder = surugin_ehatm_9
+		government = tribal_government
+	}
+}
+#c_afarin = {
+#	1230.1.1 = {
+#		holder = surugin_ehatm_11
+#		government = tribal_government
+#	}
+#}
+#c_kithos = {
+#	1230.1.1 = {
+#		holder = tlakalak_uakaklo_3
+#		government = tribal_government
+#		liege = d_uakaklo_rel
+#	}
+#}
+c_hibarkhan = {
+	1230.1.1 = {
+		holder = tlakalak_uakaklo_4
+		government = tribal_government
+	}
+}
+#c_badaqish = {
+#	1230.1.1 = {
+#		holder = tlakalak_uakaklo_6
+#		government = tribal_government
+#	}
+#}
+c_bugmar = {
+	1230.1.1 = {
+		holder = tlakalak_uakaklo_6
+		government = tribal_government
+	}
+}
+c_mojin = {
+	1230.1.1 = {
+		holder = tlakalak_uakaklo_5
+		government = tribal_government
+	}
+}
+c_jatharad = {
+	1230.1.1 = {
+		holder = tlakalak_uakaklo_8
+		government = tribal_government
+	}
+}
+#c_laparion = {
+#	1230.1.1 = {
+#		holder = tlakalak_mitikaka_3
+#		government = tribal_government
+#	}
+#}
+c_chythus = {
+	1230.1.1 = {
+		holder = tlakalak_mitikaka_3
+		government = tribal_government
+	}
+}
+c_solamis = {
+	1230.1.1 = {
+		holder = tlakalak_uakaklo_7
+		government = tribal_government
+	}
+}
+#c_arisarca = {
+#	1230.1.1 = {
+#		holder = tlakalak_uakaklo_7
+#		government = tribal_government
+#	}
+#}

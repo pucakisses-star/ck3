@@ -1,0 +1,250 @@
+﻿aelarvisian_aversarinas_aagiokrata_1 = { # Ancient Imperial, founded Anthrokati Aftokratios
+	name = "Phanagorax"
+	dna = phanagorax
+	religion = "aversarinas_aagiokrata"
+	culture = "aelarvisian"
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_06
+			custom_beards = male_beard_custom_06
+		}
+	}
+	
+	67.12.11 = {
+		birth = yes
+		trait = magic_good_4
+		trait = intellect_good_3
+	}
+
+	79.1.1 = {
+		trait = cynical
+		trait = diligent
+		trait = sadistic
+	}
+
+	83.12.11 = {
+		trait = education_arcana_4
+		trait = scholar
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	132.7.11 = {
+		death = {
+			death_reason = death_mysterious
+		}
+	}
+}
+
+aelarvisian_aversarinas_aagiokrata_2 = { # son of Phanagorax who founded the Aagiokratia. Not super important, Phanagorax wasn't super popular and the Aagiokratia was largely founded to secure their own power instead of a religious reason, but it quickly caught on amongst Magi and the populace and went out of control. Most important for giving birth to Aexionarax.
+	name = "Lethigianex"
+	religion = "aversarinas_aagiokrata"
+	culture = "aelarvisian"
+
+	father = aelarvisian_aversarinas_aagiokrata_1
+
+	91.2.14 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	103.1.1 = {
+		trait = compassionate
+		trait = zealous
+	}
+
+	107.2.14 = {
+		trait = diplomat
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	141.2.11 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+aelarvisian_aversarinas_aagiokrata_3 = { # Led the Imperial faction in the War of the Thousand Dragons that killed Aerasodiaxian belief for good. Tortured Dhacixen, his dragon, family and guard in front of Oraispol until they dropped the gates and then murdered all of them. Also proceeded to genocide the fuck out of the dragons, seeing their use as over and their resistance to the Aagiokratian belief as a threat, beginning the legend of Aversarians being dragon riders who put down their pets for trying to steal the gift of magic Began the centralization and modernization of Aversarian culture, a project that was only finished by his successor.
+	name = "Aexionarax"
+	religion = "aversarinas_aagiokrata"
+	culture = "aelarvisian"
+
+	father = aelarvisian_aversarinas_aagiokrata_2
+
+	dna = aexionarax
+
+	112.7.19 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	124.1.1 = {
+		trait = ambitious
+		trait = brave
+		trait = sadistic	
+	}
+
+	128.7.19 = {
+		trait = gh_historical_blademaster_3
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	188.4.21 = {
+		death = {
+			death_reason = death_assassination
+		}
+	}
+}
+
+aelarvisian_aversarinas_aagiokrata_4 = {
+	name = "Thoenex"
+
+	dynasty = dyn_aversarian_6
+	religion = aversarinas_aagiokrata
+	culture = aelarvisian
+
+	father = aelarvisian_aerasodiax_2
+	mother = aelarvisian_aerasodiax_6
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = deceitful
+	trait = ambitious
+
+	diplomacy = 2
+	martial = 7
+	stewardship = 4
+	intrigue = 4
+	learning = 4
+	prowess = 8
+
+	trait = education_martial_2
+
+	74.3.23 = {
+		birth = yes
+	}
+
+	119.10.24 = {
+		add_spouse = aelarvisian_aversarinas_aagiokrata_5
+	}
+
+	133.4.19 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+aelarvisian_aversarinas_aagiokrata_5 = {
+	name = "Xene"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = aelarvisian
+
+	sexuality = heterosexual
+
+	trait = trusting
+	trait = shy
+	trait = cynical
+
+	diplomacy = 5
+	martial = 9
+	stewardship = 7
+	intrigue = 7
+	learning = 9
+	prowess = 7
+
+	trait = education_martial_2
+
+	102.1.15 = {
+		birth = yes
+	}
+
+	129.10.28 = {
+		death = { death_reason = death_smallpox }
+	}
+}
+
+aelarvisian_aversarinas_aagiokrata_6 = {
+	name = "Kuthanaxion"
+
+	dynasty = dyn_aversarian_6
+	religion = aversarinas_aagiokrata
+	culture = aelarvisian
+
+	father = aelarvisian_aversarinas_aagiokrata_4
+	mother = aelarvisian_aversarinas_aagiokrata_5
+
+	sexuality = heterosexual
+
+	trait = callous
+	trait = vengeful
+	trait = ambitious
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 7
+	intrigue = 8
+	learning = 6
+	prowess = 8
+
+	trait = education_intrigue_3
+
+	124.10.11 = {
+		birth = yes
+	}
+
+	166.12.3 = {
+		add_spouse = aelarvisian_aversarinas_aagiokrata_7
+	}
+
+	176.12.6 = {
+		death = { death_reason = death_smallpox }
+	}
+}
+
+aelarvisian_aversarinas_aagiokrata_7 = {
+	name = "Aakliane"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = aelarvisian
+
+	sexuality = bisexual
+
+	trait = honest
+	trait = content
+	trait = sadistic
+
+	diplomacy = 4
+	martial = 7
+	stewardship = 8
+	intrigue = 4
+	learning = 6
+	prowess = 5
+
+	trait = education_stewardship_1
+
+	149.10.13 = {
+		birth = yes
+	}
+
+	221.3.8 = {
+		death = { death_reason = death_natural_causes }
+	}
+}

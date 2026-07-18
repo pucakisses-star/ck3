@@ -1,0 +1,17 @@
+﻿walakon_hero_religion_1 = {
+    name = "Ivomai"
+    religion = hero_religion
+    culture = walakon
+    1201.2.25 = {
+        birth = yes
+    }
+    1213.2.25 = {
+        trait = vengeful
+        trait = diligent
+        trait = stubborn
+    }
+    1217.2.25 = {
+        trait = education_stewardship_2
+        trait = gh_historical_blademaster_1
+    }
+}

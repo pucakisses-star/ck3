@@ -1,0 +1,152 @@
+c_thunderstony = {
+	1235.6.18 = {
+		holder = dathanites_labaqiri_7
+		government = feudal_government
+		liege = d_journey_upland
+	}
+	1243.12.15 = {
+		holder = dathanites_labaqiri_9 # First pirate invasion
+		government = pirate_government
+		liege = 0
+	}
+}
+ 
+c_rivervale = {
+	1235.6.18 = {
+		holder = dathanites_labaqiri_7
+		government = feudal_government
+		liege = d_journey_upland
+	}
+	1245.6.12 = {
+		holder = dathanites_labaqiri_8
+	}
+	1250.7.3 = {
+		liege = 0
+	}
+}
+c_seastream = {
+  1200.3.1 = {
+		government = pirate_government
+	}
+}
+ 
+c_witchnook = {
+	1248.10.11 = {
+		holder = saielaian_bayn_huac_2
+		government = feudal_government
+	}
+}
+ 
+# c_harpysdrain = {
+#   1200.3.1 = {
+# 		holder = wasteland
+# 	}
+# }
+
+c_domeglen = {
+	1248.10.11 = {
+		holder = saielaian_bayn_huac_2
+		government = feudal_government
+	}
+}
+
+c_catcherburg = {
+  1245.12.16 = {
+		holder = saielaian_bayn_huac_1
+		government = feudal_government
+	}
+}
+
+c_witchs_stead = {
+	1248.10.11 = {
+		holder = saielaian_bayn_huac_2
+		government = feudal_government
+	}
+}
+
+c_piratecove = {
+	1235.6.18 = {
+		holder = dathanites_labaqiri_5
+		government = republic_playable_government
+	}
+	1245.6.12 = {
+		holder = dathanites_labaqiri_6
+	}
+}
+
+c_channel_acorn = {
+  1242.9.17 = {
+		holder = dathanites_labaqiri_4
+		government = feudal_government
+		liege = d_journey_upland
+	}
+	1250.7.3 = {
+		liege = 0
+	}
+}
+
+c_listpeak = {
+	1242.9.17 = {
+		holder = dathanites_labaqiri_4
+		government = feudal_government
+		liege = d_journey_upland
+	}
+	1250.7.3 = {
+		liege = 0
+	}
+}
+
+c_sanctuaryenclosure = {
+	1246.1.6 = {
+		holder = dayarka_dahala_2
+		government = feudal_government
+	}
+}
+
+c_dayaflower = {
+	1246.1.6 = {
+		holder = dayarka_dahala_2
+		government = feudal_government
+	}
+}
+
+c_dayasgrave = {
+	1246.1.6 = {
+		holder = dayarka_dahala_2
+		government = feudal_government
+	}
+}
+
+c_freedomshore = {
+	1246.1.6 = {
+		holder = dayarka_dahala_2
+		government = feudal_government
+	}
+}
+
+c_oasisnarrow = {
+	1246.1.6 = {
+		holder = dayarka_dahala_3
+		government = feudal_government
+	}
+}
+
+c_hugreservoir = {
+  1245.12.16 = {
+		holder = saielaian_bayn_huac_1
+		government = feudal_government
+	}
+}
+
+c_coldcoast = {
+  1245.12.16 = {
+		holder = saielaian_bayn_huac_1
+		government = feudal_government
+	}
+}
+
+c_fragranttree = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

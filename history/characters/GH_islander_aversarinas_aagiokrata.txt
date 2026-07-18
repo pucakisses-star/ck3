@@ -1,0 +1,4573 @@
+﻿islander_aversarinas_aagiokrata_1 = {
+	name = "Kyllophex" #Renamed from Grego
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	trait = intellect_bad_1
+
+	1231.3.3 = {
+		birth = yes
+	}
+
+	1269.3.30 = {
+		death = { death_reason = death_raid killer = vrodkin_sjalvolki_1 }
+	}
+}
+
+islander_aversarinas_aagiokrata_2 = {
+	name = "Pamphilios"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_4
+	mother = islander_aversarinas_aagiokrata_5
+
+	sexuality = heterosexual
+
+	diplomacy = 7
+	martial = 7
+	stewardship = 5
+	intrigue = 9
+	learning = 7
+	prowess = 7
+
+	1022.11.27 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1034.1.1 = {
+		trait = greedy
+		trait = ambitious
+		trait = cynical
+	}
+
+	1038.11.27 = {
+		trait = education_intrigue_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+			upgrade_stacking_modifier_by_level_effect = { MODIFIER = magic_life_extension_modifier TYPE = character LEVEL = 10 YEARS = -1  } 
+			upgrade_stacking_modifier_by_level_effect = { MODIFIER = magic_arcane_degeneration_modifier TYPE = character LEVEL = 1 YEARS = -1  } 
+			set_variable = {
+				name = life_extention_amount_raw
+				value = 10
+			}
+		}
+	}
+
+	1149.4.14 = {
+		add_spouse = islander_aversarinas_aagiokrata_3
+	}
+
+	1171.6.27 = {
+		death = { death_reason = death_vanished }
+	}
+}
+
+islander_aversarinas_aagiokrata_3 = {
+	name = "Viviana"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = wrathful
+	trait = greedy
+	trait = content
+
+	diplomacy = 6
+	martial = 4
+	stewardship = 5
+	intrigue = 4
+	learning = 8
+	prowess = 7
+
+	trait = education_learning_1
+
+	1132.10.3 = {
+		birth = yes
+	}
+
+	1178.10.24 = {
+		death = { death_reason = death_cancer }
+	}
+}
+
+islander_aversarinas_aagiokrata_4 = {
+	name = "Eirenaios"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_33
+	mother = islander_aversarinas_aagiokrata_34
+
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = ambitious
+	trait = cynical
+
+	diplomacy = 5
+	martial = 6
+	stewardship = 8
+	intrigue = 8
+	learning = 7
+	prowess = 8
+
+	trait = education_stewardship_2
+
+	970.7.21 = {
+		birth = yes
+	}
+
+	1019.1.11 = {
+		add_spouse = islander_aversarinas_aagiokrata_5
+	}
+
+	1029.2.3 = {
+		death = { death_reason = death_duel }
+	}
+}
+
+islander_aversarinas_aagiokrata_5 = {
+	name = "Simonis"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = cynical
+	trait = ambitious
+	trait = arbitrary
+
+	diplomacy = 6
+	martial = 5
+	stewardship = 8
+	intrigue = 9
+	learning = 6
+	prowess = 5
+
+	trait = education_intrigue_2
+
+	1002.11.1 = {
+		birth = yes
+	}
+
+	1095.1.23 = {
+		death = { death_reason = death_bubonic_plague }
+	}
+}
+
+islander_aversarinas_aagiokrata_6 = {
+	name = "Antonios"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_33
+	mother = islander_aversarinas_aagiokrata_34
+
+	sexuality = heterosexual
+
+	diplomacy = 6
+	martial = 5
+	stewardship = 6
+	intrigue = 4
+	learning = 6
+	prowess = 8
+
+	968.4.14 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	980.1.1 = {
+		trait = deceitful
+		trait = greedy
+		trait = diligent
+	}
+
+	984.4.14 = {
+		trait = gh_glowing_eyes
+		trait = gh_glowing_veins
+		trait = education_learning_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1009.9.8 = {
+		add_spouse = islander_aversarinas_aagiokrata_32
+	}
+
+	1092.3.11 = {
+		death = { 
+			death_reason = death_agionists
+			killer = iyronisti_forgotten_1
+		}
+	}
+}
+
+islander_aversarinas_aagiokrata_7 = { # Magi-Archailogokist Xan Tovis
+	name = "Xan"
+	dynasty = dyn_aversarian_121
+	religion = aversarinas_aagiokrata
+	culture = islander
+	disallow_random_traits = yes
+
+	father = islander_aversarinas_aagiokrata_8
+
+	martial = 5
+	diplomacy = 4
+	intrigue = 3
+	stewardship = 6
+	learning = 9
+	prowess = 6
+
+	1168.5.15 = {
+		birth = yes
+		trait = magic_good_7
+	}
+
+	1180.1.1 = {
+		trait = fickle
+		trait = diligent
+		trait = ambitious
+	}
+
+	1184.5.15 = {
+		trait = education_arcana_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+		trait = scholar
+	}
+
+	1222.5.13 = {
+		death = {
+			death_reason = death_fog
+		}
+	}
+}
+
+islander_aversarinas_aagiokrata_8 = { # Euchrios Tovis
+	name = "Eukhrios"
+	dynasty = dyn_aversarian_121
+	religion = aversarinas_aagiokrata
+	culture = islander
+	disallow_random_traits = yes
+
+	martial = 8
+	diplomacy = 7
+	intrigue = 9
+	stewardship = 7
+	learning = 5
+	prowess = 3
+
+	1139.11.11 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1141.1.1 = {
+		trait = patient
+		trait = vengeful
+		trait = just
+	}
+
+	1145.11.11 = {
+		trait = education_diplomacy_3
+	}
+
+	1218.6.23 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+islander_aversarinas_aagiokrata_9 = { # Crathis Tovis
+	name = "Krathios" #Renamed from Crathis
+	dynasty = dyn_aversarian_121
+	religion = aversarinas_aagiokrata
+	culture = islander
+	disallow_random_traits = yes
+
+	father = islander_aversarinas_aagiokrata_8
+
+	martial = 6
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 5
+	learning = 4
+	prowess = 7
+
+	1166.12.23 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1178.1.1 = {
+		trait = wrathful
+		trait = brave
+		trait = shy
+	}
+
+	1182.12.23 = {
+		trait = education_diplomacy_3
+	}
+
+	1209.1.6 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+islander_aversarinas_aagiokrata_10 = { # Anthelis Tovis, died in Elysian Pass
+	name = "Anthelis"
+	dynasty = dyn_aversarian_121
+	religion = aversarinas_aagiokrata
+	culture = islander
+	disallow_random_traits = yes
+	female = yes
+
+	father = islander_aversarinas_aagiokrata_9
+
+	martial = 6
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 8
+	learning = 7
+	prowess = 6
+
+	1204.11.8 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1216.1.1 = {
+		trait = temperate
+		trait = callous
+		trait = trusting
+	}
+
+	1220.11.8 = {
+		trait = education_intrigue_1
+	}
+
+	1252.1.1 = {
+		death = {
+			death_reason = death_elysian_pass
+			killer = daukeni_sjalvolki_20
+		}
+	}
+}
+
+islander_aversarinas_aagiokrata_11 = { # Syacos Tovis
+	name = "Voixtos" #Renamed from Syacos
+	dynasty = dyn_aversarian_121
+	religion = aversarinas_aagiokrata
+	culture = islander
+	disallow_random_traits = yes
+
+	mother = islander_aversarinas_aagiokrata_10
+
+	martial = 6
+	diplomacy = 5
+	intrigue = 2
+	stewardship = 8
+	learning = 8
+	prowess = 7
+
+	1236.8.23 = {
+		birth = yes
+	}
+
+	1248.1.1 = {
+		trait = ambitious
+		trait = calm
+		trait = compassionate
+	}
+
+	1252.8.23 = {
+		trait = education_martial_3
+		trait = flexible_leader
+	}
+}
+
+islander_aversarinas_aagiokrata_12 = { # Saint Calysto
+	name = "Calysto"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+	dna = calysto
+	#dynasty = dyn_calysto_1
+
+	diplomacy = 6
+	martial = 6
+	stewardship = 6
+	intrigue = 6
+	learning = 6
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_western_07
+			custom_beards = male_beard_western_07
+		}
+	}
+
+	1051.11.9 = {
+		birth = yes
+		trait = intellect_bad_1 # Should be replaced with some sort of trait to represent dyslexia
+		trait = disputed_heritage
+		trait = fecund
+		trait = physique_good_2
+	}
+
+	1063.1.1 = {
+		trait = diligent
+		trait = gregarious
+		trait = vengeful	
+	}
+	
+	1067.11.9 = {
+		trait = education_martial_2
+		trait = education_martial_prowess_3
+		trait = strategist
+		trait = journaller
+		trait = one_eyed
+		trait = adventurer
+		trait = scarred
+		trait = gh_historical_blademaster_2
+		give_nickname = nick_wave_rider
+	}
+	1095.5.3 = {
+		death = {
+			death_reason = death_scuffle_with_soldiers
+		}
+	}
+}
+
+islander_aversarinas_aagiokrata_13 = {
+	# leader of slave rebellion who killed previously reigning magi, later killed by sjalvolki 
+	name = "Themiox"
+	female = no
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+	trait = peasant_leader
+	
+	1210.8.28 = {
+		birth = yes
+	}
+	1247.3.21 = {
+		death = {
+			death_reason = death_duel
+			killer = vrodkin_sjalvolki_43
+		}
+	}
+}
+
+islander_aversarinas_aagiokrata_14 = { # Not-spartacus?
+	name = "Kallistos"
+	dna = islander_aversarinas_aagiokrata_14
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+
+	trait = peasant_leader
+	trait = brave
+	trait = honest
+	trait = diligent
+	sexuality = heterosexual
+	martial = 10
+	diplomacy = 8
+	stewardship = 6
+	intrigue = 6
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_03
+			custom_beards = no_beard
+		}
+	}
+
+	1222.6.18 = {
+		birth = yes
+	}
+
+	1238.6.18 = {
+		trait = education_martial_4
+		trait = gh_historical_blademaster_3
+	}
+}
+
+islander_aversarinas_aagiokrata_15 = { # GH: was viesuados_3
+	name = "Yiorgos"
+	culture = "islander"
+	religion = "aversarinas_aagiokrata"
+	sexuality = homosexual
+	dynasty = dyn_aversarian_149
+
+	dna = islander_aversarinas_aagiokrata_15
+	
+    portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair=male_hair_byzantine_02
+			custom_beards=no_beard
+		}
+	}
+
+	diplomacy = 7
+	martial = 5
+	stewardship = 6
+	intrigue = 6
+	learning = 7
+
+	1213.7.8 = {
+		birth = yes
+	}
+	1225.7.8 = {
+		trait = brave
+		trait = calm
+		trait = sadistic
+	}
+	1229.7.8 = {
+		trait = education_martial_3
+	}
+	1235.11.11 = {
+		add_unpressed_claim = title:c_peliya
+		add_unpressed_claim = title:c_polawatta
+	}
+	1245.1.1 = {
+		set_relation_rival = { target = character:easternislander_aversarinas_aagiokrata_8 reason = nemesis_broke_up_with_lover }
+		effect = {
+			add_character_flag = dont_generate_family	
+		}
+	}
+	1267.2.1 = {
+		trait = depressed_1
+	}
+	1274.10.25 = {
+		death = { death_reason = death_ill }
+	}
+}
+
+islander_aversarinas_aagiokrata_16 = { # Archaeologists
+	name = "Kyros"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+	dynasty = dyn_aversaria_western_isle_1
+	father = islander_aversarinas_aagiokrata_17
+	mother = islander_aversarinas_aagiokrata_18
+	trait = education_learning_3
+	trait = scholar
+
+	1232.6.18 = {
+		birth = yes
+	}
+}
+
+islander_aversarinas_aagiokrata_17 = { # Archaeologists
+	name = "Timoxenos"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+	dynasty = dyn_aversaria_western_isle_1
+
+	1205.5.5 = {
+		birth = yes
+	}
+
+	1231.9.1 = {
+		add_spouse = islander_aversarinas_aagiokrata_18
+	}
+
+	1244.1.1 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+
+islander_aversarinas_aagiokrata_18 = { # Archaeologists
+	name = "Nikaia"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+	female = yes
+
+	1206.5.13 = {
+		birth = yes
+	}
+
+	1250.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+islander_aversarinas_aagiokrata_19 = { # Archaeologists
+	name = "Nastox"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+	dynasty = dyn_aversaria_western_isle_1
+	father = islander_aversarinas_aagiokrata_17
+	mother = islander_aversarinas_aagiokrata_18
+
+	1235.2.18 = {
+		birth = yes
+	}
+}
+
+islander_aversarinas_aagiokrata_20 = { # Archaeologists
+	name = "Kleio"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+	female = yes
+	dynasty = dyn_aversaria_western_isle_1
+	father = islander_aversarinas_aagiokrata_17
+	mother = islander_aversarinas_aagiokrata_18
+
+	1237.8.1 = {
+		birth = yes
+	}
+}
+
+islander_aversarinas_aagiokrata_21 = {
+	name = "Eusebios"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+	dynasty = dyn_aversaria_western_isle_3
+	father = islander_aversarinas_aagiokrata_22
+	mother = islander_aversarinas_aagiokrata_23
+	trait = lustful
+	trait = seducer
+
+	1196.6.18 = {
+		birth = yes
+	}
+
+	1250.1.1 = {
+		set_relation_lover = character:islander_aversarinas_aagiokrata_20
+	}
+}
+
+islander_aversarinas_aagiokrata_22 = {
+	name = "Evenios"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+	dynasty = dyn_aversaria_western_isle_3
+
+	1165.6.18 = {
+		birth = yes
+	}
+
+	1194.9.1 = {
+		add_spouse = islander_aversarinas_aagiokrata_23
+	}
+
+	1240.1.1 = {
+		death = {
+			death_reason = death_fall
+		}
+	}
+}
+
+islander_aversarinas_aagiokrata_23 = {
+	name = "Antikleia"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+	female = yes
+
+	1170.6.18 = {
+		birth = yes
+	}
+
+	1250.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+islander_aversarinas_aagiokrata_24 = {
+	name = "Polyphemnos"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+	dynasty = dyn_aversaria_western_isle_3
+	father = islander_aversarinas_aagiokrata_22
+	mother = islander_aversarinas_aagiokrata_23
+
+	1199.9.4 = {
+		birth = yes
+	}
+
+	1239.2.14 = {
+		death = {
+		death_reason = death_accident
+		}
+	}
+}
+
+islander_aversarinas_aagiokrata_25 = {
+	name = "Konon"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+	dynasty = dyn_aversaria_western_isle_3
+	father = islander_aversarinas_aagiokrata_22
+	mother = islander_aversarinas_aagiokrata_23
+
+	1201.9.4 = {
+		birth = yes
+	}
+}
+
+islander_aversarinas_aagiokrata_26 = {
+	name = "Artemidora"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+	female = yes
+	dynasty = dyn_aversaria_western_isle_3
+	father = islander_aversarinas_aagiokrata_22
+	mother = islander_aversarinas_aagiokrata_23
+
+	1220.1.4 = {
+		birth = yes
+	}
+
+	1283.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_27 = {
+	name = "Aketa"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+	female = yes
+	dynasty = dyn_aversaria_western_isle_3
+	father = islander_aversarinas_aagiokrata_21
+	trait = bastard
+
+	1236.2.4 = {
+		birth = yes
+	}
+}
+
+islander_aversarinas_aagiokrata_28 = {
+	name = "Midas"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+	dynasty = dyn_aversaria_western_isle_3
+	father = islander_aversarinas_aagiokrata_21
+	trait = bastard
+
+	1240.2.2 = {
+		birth = yes
+	}
+}
+
+islander_aversarinas_aagiokrata_29 = {
+	name = "Kybele"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+	female = yes
+	dynasty = dyn_aversaria_western_isle_3
+	father = islander_aversarinas_aagiokrata_21
+	trait = bastard
+
+	1244.2.2 = {
+		birth = yes
+	}
+}
+
+islander_aversarinas_aagiokrata_30 = {
+	name = "Aristarchos"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+	dynasty = dyn_aversaria_western_isle_3
+	father = islander_aversarinas_aagiokrata_21
+	trait = bastard
+
+	1244.2.2 = {
+		birth = yes
+	}
+}
+
+islander_aversarinas_aagiokrata_31 = {
+	name = "Deianeira"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+	dynasty = dyn_aversaria_western_isle_3
+	female = yes
+
+	1165.6.18 = {
+		birth = yes
+	}
+
+	1190.9.1 = {
+		add_spouse = imperialislander_aversarinas_aagiokrata_22
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+islander_aversarinas_aagiokrata_32 = {
+	name = "Alkimnaie"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = craven
+	trait = vengeful
+	trait = callous
+
+	diplomacy = 8
+	martial = 3
+	stewardship = 5
+	intrigue = 5
+	learning = 6
+	prowess = 9
+
+	trait = education_diplomacy_4
+
+	992.12.24 = {
+		birth = yes
+	}
+
+	1056.10.25 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_33 = {
+	name = "Mekhixos"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_37
+	mother = islander_aversarinas_aagiokrata_38
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = ambitious
+	trait = cynical
+
+	diplomacy = 8
+	martial = 8
+	stewardship = 7
+	intrigue = 7
+	learning = 6
+	prowess = 4
+
+	trait = education_diplomacy_2
+
+	912.7.15 = {
+		birth = yes
+	}
+
+	965.12.15 = {
+		add_spouse = islander_aversarinas_aagiokrata_34
+	}
+
+	976.1.12 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_34 = {
+	name = "Valeria"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = greedy
+	trait = deceitful
+	trait = impatient
+
+	diplomacy = 3
+	martial = 2
+	stewardship = 3
+	intrigue = 6
+	learning = 6
+	prowess = 10
+
+	trait = education_intrigue_3
+
+	948.11.23 = {
+		birth = yes
+	}
+
+	1013.12.20 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_35 = {
+	name = "Leontia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_37
+	mother = islander_aversarinas_aagiokrata_38
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = temperate
+	trait = vengeful
+
+	diplomacy = 5
+	martial = 10
+	stewardship = 8
+	intrigue = 8
+	learning = 10
+	prowess = 6
+
+	trait = education_martial_3
+
+	908.2.18 = {
+		birth = yes
+	}
+
+	972.7.10 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_36 = {
+	name = "Kale"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_37
+	mother = islander_aversarinas_aagiokrata_38
+
+	sexuality = heterosexual
+
+	trait = cynical
+	trait = compassionate
+	trait = arrogant
+
+	diplomacy = 6
+	martial = 2
+	stewardship = 3
+	intrigue = 6
+	learning = 5
+	prowess = 2
+
+	trait = education_diplomacy_3
+
+	916.4.23 = {
+		birth = yes
+	}
+
+	993.10.9 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_37 = {
+	name = "Rhemnon" #Renamed from Romanos
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_44
+	mother = islander_aversarinas_aagiokrata_45
+
+	sexuality = heterosexual
+
+	trait = cynical
+	trait = deceitful
+	trait = humble
+
+	diplomacy = 6
+	martial = 8
+	stewardship = 8
+	intrigue = 4
+	learning = 8
+	prowess = 7
+
+	trait = education_martial_4
+
+	889.6.16 = {
+		birth = yes
+	}
+
+	905.12.15 = {
+		add_spouse = islander_aversarinas_aagiokrata_38
+	}
+
+	930.4.27 = {
+		death = { death_reason = death_maimed }
+	}
+}
+
+islander_aversarinas_aagiokrata_38 = {
+	name = "Eupraxia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = asexual
+
+	trait = cynical
+	trait = brave
+	trait = greedy
+
+	diplomacy = 7
+	martial = 8
+	stewardship = 7
+	intrigue = 7
+	learning = 8
+	prowess = 5
+
+	trait = education_martial_3
+
+	888.9.8 = {
+		birth = yes
+	}
+
+	958.7.22 = {
+		death = { death_reason = death_vanished }
+	}
+}
+
+islander_aversarinas_aagiokrata_39 = {
+	name = "Sabas"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_37
+	mother = islander_aversarinas_aagiokrata_38
+
+	sexuality = heterosexual
+
+	trait = deceitful
+	trait = forgiving
+	trait = diligent
+
+	diplomacy = 5
+	martial = 9
+	stewardship = 7
+	intrigue = 6
+	learning = 5
+	prowess = 6
+
+	trait = education_martial_4
+
+	906.9.9 = {
+		birth = yes
+	}
+
+	926.11.18 = {
+		add_spouse = islander_aversarinas_aagiokrata_47
+	}
+
+	981.11.26 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_40 = {
+	name = "Aknimynas" #Renamed from Mehixos
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_37
+	mother = islander_aversarinas_aagiokrata_38
+
+	sexuality = heterosexual
+
+	trait = fickle
+	trait = cynical
+	trait = forgiving
+
+	diplomacy = 8
+	martial = 4
+	stewardship = 1
+	intrigue = 7
+	learning = 2
+	prowess = 7
+
+	trait = education_diplomacy_2
+
+	914.3.19 = {
+		birth = yes
+	}
+
+	939.3.4 = {
+		add_spouse = islander_aversarinas_aagiokrata_49
+	}
+
+	980.6.27 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_41 = {
+	name = "Nikarete"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_44
+	mother = islander_aversarinas_aagiokrata_45
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = callous
+	trait = arrogant
+
+	diplomacy = 8
+	martial = 6
+	stewardship = 5
+	intrigue = 3
+	learning = 3
+	prowess = 7
+
+	trait = education_diplomacy_3
+
+	888.6.20 = {
+		birth = yes
+	}
+
+	960.9.26 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_42 = {
+	name = "Astyoche"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_39
+	mother = islander_aversarinas_aagiokrata_47
+
+	sexuality = heterosexual
+
+	trait = patient
+	trait = sadistic
+	trait = gluttonous
+
+	diplomacy = 5
+	martial = 9
+	stewardship = 5
+	intrigue = 8
+	learning = 8
+	prowess = 3
+
+	trait = education_martial_2
+
+	929.11.9 = {
+		birth = yes
+	}
+
+	990.2.26 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_43 = {
+	name = "Konstantine"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_39
+	mother = islander_aversarinas_aagiokrata_47
+
+	sexuality = heterosexual
+
+	trait = temperate
+	trait = arrogant
+	trait = cynical
+
+	diplomacy = 9
+	martial = 5
+	stewardship = 7
+	intrigue = 4
+	learning = 6
+	prowess = 8
+
+	trait = education_diplomacy_2
+
+	934.5.25 = {
+		birth = yes
+	}
+
+	1031.6.3 = {
+		death = { death_reason = death_pneumonic }
+	}
+}
+
+islander_aversarinas_aagiokrata_44 = {
+	name = "Ketrynos"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_61
+	mother = islander_aversarinas_aagiokrata_62
+
+	sexuality = heterosexual
+
+	trait = brave
+	trait = forgiving
+	trait = content
+
+	diplomacy = 2
+	martial = 4
+	stewardship = 5
+	intrigue = 5
+	learning = 10
+	prowess = 6
+
+	trait = education_learning_2
+
+	827.2.15 = {
+		birth = yes
+	}
+
+	883.7.20 = {
+		add_spouse = islander_aversarinas_aagiokrata_45
+	}
+
+	893.8.1 = {
+		death = { death_reason = death_dungeon }
+	}
+}
+
+islander_aversarinas_aagiokrata_45 = {
+	name = "Eupraxia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = forgiving
+	trait = sadistic
+	trait = diligent
+
+	diplomacy = 8
+	martial = 8
+	stewardship = 3
+	intrigue = 4
+	learning = 8
+	prowess = 7
+
+	trait = education_diplomacy_4
+
+	866.8.10 = {
+		birth = yes
+	}
+
+	935.7.17 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_46 = {
+	name = "Lauphilion"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_44
+	mother = islander_aversarinas_aagiokrata_45
+
+	sexuality = heterosexual
+
+	trait = shy
+	trait = fickle
+	trait = gluttonous
+
+	diplomacy = 7
+	martial = 7
+	stewardship = 3
+	intrigue = 6
+	learning = 5
+	prowess = 2
+
+	trait = education_diplomacy_3
+
+	885.11.5 = {
+		birth = yes
+	}
+
+	922.8.24 = {
+		add_spouse = islander_aversarinas_aagiokrata_64
+	}
+
+	935.8.15 = {
+		death = { death_reason = death_dungeon }
+	}
+}
+
+islander_aversarinas_aagiokrata_47 = {
+	name = "Timandaria"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = lustful
+	trait = gluttonous
+
+	diplomacy = 6
+	martial = 2
+	stewardship = 2
+	intrigue = 6
+	learning = 7
+	prowess = 6
+
+	trait = education_learning_3
+
+	909.7.4 = {
+		birth = yes
+	}
+
+	972.6.18 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_48 = {
+	name = "Kleimetros" #Renamed from Clytomedes
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_39
+	mother = islander_aversarinas_aagiokrata_47
+
+	sexuality = heterosexual
+
+	trait = wrathful
+	trait = compassionate
+	trait = ambitious
+
+	diplomacy = 3
+	martial = 7
+	stewardship = 6
+	intrigue = 5
+	learning = 11
+	prowess = 4
+
+	trait = education_learning_2
+
+	941.7.28 = {
+		birth = yes
+	}
+
+	993.1.16 = {
+		add_spouse = islander_aversarinas_aagiokrata_66
+	}
+
+	1007.2.23 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_49 = {
+	name = "Nikasepolis"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = callous
+	trait = brave
+
+	diplomacy = 7
+	martial = 7
+	stewardship = 7
+	intrigue = 5
+	learning = 5
+	prowess = 8
+
+	trait = education_diplomacy_3
+
+	922.8.22 = {
+		birth = yes
+	}
+
+	998.6.28 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_50 = {
+	name = "Rhaiamnos" #Renamed from Romanos
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_40
+	mother = islander_aversarinas_aagiokrata_49
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = greedy
+	trait = deceitful
+
+	diplomacy = 6
+	martial = 6
+	stewardship = 6
+	intrigue = 7
+	learning = 9
+	prowess = 4
+
+	trait = education_learning_2
+
+	940.5.23 = {
+		birth = yes
+	}
+
+	980.7.13 = {
+		add_spouse = islander_aversarinas_aagiokrata_67
+	}
+
+	1041.7.5 = {
+		death = { death_reason = death_murder }
+	}
+}
+
+islander_aversarinas_aagiokrata_51 = {
+	name = "Ioulia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_61
+	mother = islander_aversarinas_aagiokrata_62
+
+	sexuality = homosexual
+
+	trait = gregarious
+	trait = generous
+	trait = arbitrary
+
+	diplomacy = 6
+	martial = 2
+	stewardship = 2
+	intrigue = 6
+	learning = 6
+	prowess = 7
+
+	trait = education_diplomacy_3
+
+	822.9.12 = {
+		birth = yes
+	}
+
+	901.5.10 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_52 = {
+	name = "Basiane"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_46
+	mother = islander_aversarinas_aagiokrata_64
+
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = generous
+	trait = ambitious
+
+	diplomacy = 7
+	martial = 5
+	stewardship = 2
+	intrigue = 7
+	learning = 6
+	prowess = 5
+
+	trait = education_diplomacy_3
+
+	923.3.27 = {
+		birth = yes
+	}
+
+	1023.10.9 = {
+		death = { death_reason = death_ended_on_feast_table }
+	}
+}
+
+islander_aversarinas_aagiokrata_53 = {
+	name = "Pataekos"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_48
+	mother = islander_aversarinas_aagiokrata_66
+
+	sexuality = heterosexual
+
+	trait = cynical
+	trait = fickle
+	trait = ambitious
+
+	diplomacy = 6
+	martial = 5
+	stewardship = 7
+	intrigue = 7
+	learning = 9
+	prowess = 3
+
+	trait = education_learning_2
+
+	995.5.23 = {
+		birth = yes
+	}
+
+	1039.3.21 = {
+		add_spouse = islander_aversarinas_aagiokrata_71
+	}
+
+	1049.6.8 = {
+		death = { death_reason = death_typhus }
+	}
+}
+
+islander_aversarinas_aagiokrata_54 = {
+	name = "Paratheniox"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_48
+	mother = islander_aversarinas_aagiokrata_66
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = paranoid
+	trait = wrathful
+
+	diplomacy = 4
+	martial = 7
+	stewardship = 5
+	intrigue = 6
+	learning = 5
+	prowess = 4
+
+	trait = education_martial_2
+
+	998.7.4 = {
+		birth = yes
+	}
+
+	1033.8.27 = {
+		add_spouse = islander_aversarinas_aagiokrata_72
+	}
+
+	1052.2.7 = {
+		death = { death_reason = death_smallpox }
+	}
+}
+
+islander_aversarinas_aagiokrata_55 = {
+	name = "Rhemnia" #Renamed from Romylia
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_48
+	mother = islander_aversarinas_aagiokrata_66
+
+	sexuality = heterosexual
+
+	trait = brave
+	trait = sadistic
+	trait = trusting
+
+	diplomacy = 6
+	martial = 6
+	stewardship = 7
+	intrigue = 4
+	learning = 5
+	prowess = 8
+
+	trait = education_stewardship_3
+
+	1000.1.19 = {
+		birth = yes
+	}
+
+	1066.5.15 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_56 = {
+	name = "Theognosia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_48
+	mother = islander_aversarinas_aagiokrata_66
+
+	sexuality = heterosexual
+
+	trait = stubborn
+	trait = brave
+	trait = arrogant
+
+	diplomacy = 5
+	martial = 2
+	stewardship = 4
+	intrigue = 8
+	learning = 8
+	prowess = 4
+
+	trait = education_intrigue_3
+
+	1002.10.26 = {
+		birth = yes
+	}
+
+	1082.11.14 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_57 = {
+	name = "Gregoras"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_48
+	mother = islander_aversarinas_aagiokrata_66
+
+	sexuality = heterosexual
+
+	trait = cynical
+	trait = callous
+	trait = ambitious
+
+	diplomacy = 6
+	martial = 3
+	stewardship = 8
+	intrigue = 4
+	learning = 4
+	prowess = 4
+
+	trait = education_stewardship_2
+
+	1003.5.25 = {
+		birth = yes
+	}
+
+	1047.9.13 = {
+		add_spouse = islander_aversarinas_aagiokrata_73
+	}
+
+	1070.12.19 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_58 = {
+	name = "Telemnos" #Renamed from Telemachion
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_50
+	mother = islander_aversarinas_aagiokrata_67
+
+	sexuality = heterosexual
+
+	trait = lustful
+	trait = sadistic
+	trait = greedy
+
+	diplomacy = 5
+	martial = 5
+	stewardship = 6
+	intrigue = 3
+	learning = 6
+	prowess = 6
+
+	trait = education_stewardship_3
+
+	994.5.5 = {
+		birth = yes
+	}
+
+	1019.4.28 = {
+		add_spouse = islander_aversarinas_aagiokrata_74
+	}
+
+	1058.6.26 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_59 = {
+	name = "Ratiamnae" #Renamed from Romane
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_61
+	mother = islander_aversarinas_aagiokrata_62
+
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = greedy
+	trait = vengeful
+
+	diplomacy = 7
+	martial = 7
+	stewardship = 9
+	intrigue = 8
+	learning = 5
+	prowess = 8
+
+	trait = education_stewardship_3
+
+	830.5.21 = {
+		birth = yes
+	}
+
+	905.8.2 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_60 = {
+	name = "Hippodamia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_61
+	mother = islander_aversarinas_aagiokrata_62
+
+	sexuality = heterosexual
+
+	trait = deceitful
+	trait = calm
+	trait = ambitious
+
+	diplomacy = 4
+	martial = 7
+	stewardship = 9
+	intrigue = 6
+	learning = 5
+	prowess = 6
+
+	trait = education_stewardship_3
+
+	832.7.11 = {
+		birth = yes
+	}
+
+	870.12.5 = {
+		death = { death_reason = death_poison }
+	}
+}
+
+islander_aversarinas_aagiokrata_61 = {
+	name = "Avrioxis" #Renamed from Andreas
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_76
+	mother = islander_aversarinas_aagiokrata_77
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = arrogant
+	trait = forgiving
+
+	diplomacy = 6
+	martial = 6
+	stewardship = 4
+	intrigue = 7
+	learning = 2
+	prowess = 5
+
+	trait = education_intrigue_1
+
+	774.8.6 = {
+		birth = yes
+	}
+
+	822.12.2 = {
+		add_spouse = islander_aversarinas_aagiokrata_62
+	}
+
+	843.11.22 = {
+		death = { death_reason = death_duel }
+	}
+}
+
+islander_aversarinas_aagiokrata_62 = {
+	name = "Zenobia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = stubborn
+	trait = deceitful
+	trait = just
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 10
+	intrigue = 5
+	learning = 8
+	prowess = 3
+
+	trait = education_stewardship_3
+
+	805.2.9 = {
+		birth = yes
+	}
+
+	875.10.18 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_63 = {
+	name = "Kharomnais" #Renamed from Cromus
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_61
+	mother = islander_aversarinas_aagiokrata_62
+
+	sexuality = heterosexual
+
+	trait = sadistic
+	trait = ambitious
+	trait = wrathful
+
+	diplomacy = 8
+	martial = 6
+	stewardship = 7
+	intrigue = 7
+	learning = 4
+	prowess = 5
+
+	trait = education_diplomacy_2
+
+	823.12.18 = {
+		birth = yes
+	}
+
+	860.11.15 = {
+		add_spouse = islander_aversarinas_aagiokrata_78
+	}
+
+	894.3.28 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_64 = {
+	name = "Valeria"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = greedy
+	trait = ambitious
+
+	diplomacy = 8
+	martial = 9
+	stewardship = 6
+	intrigue = 4
+	learning = 7
+	prowess = 6
+
+	trait = education_martial_2
+
+	905.6.10 = {
+		birth = yes
+	}
+
+	965.10.21 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_65 = {
+	name = "Calysto"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_46
+	mother = islander_aversarinas_aagiokrata_64
+
+	sexuality = heterosexual
+
+	trait = cynical
+	trait = ambitious
+	trait = diligent
+
+	diplomacy = 6
+	martial = 7
+	stewardship = 5
+	intrigue = 5
+	learning = 1
+	prowess = 6
+
+	trait = education_martial_3
+
+	925.1.17 = {
+		birth = yes
+	}
+
+	941.9.12 = {
+		add_spouse = islander_aversarinas_aagiokrata_80
+	}
+
+	1004.4.5 = {
+		death = { death_reason = death_typhus }
+	}
+}
+
+islander_aversarinas_aagiokrata_66 = {
+	name = "Kynthia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = generous
+	trait = wrathful
+
+	diplomacy = 5
+	martial = 8
+	stewardship = 5
+	intrigue = 9
+	learning = 5
+	prowess = 5
+
+	trait = education_intrigue_3
+
+	976.3.9 = {
+		birth = yes
+	}
+
+	1029.4.17 = {
+		death = { death_reason = death_smallpox }
+	}
+}
+
+islander_aversarinas_aagiokrata_67 = {
+	name = "Laodamia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = craven
+	trait = arrogant
+	trait = cynical
+
+	diplomacy = 6
+	martial = 6
+	stewardship = 8
+	intrigue = 6
+	learning = 4
+	prowess = 5
+
+	trait = education_stewardship_4
+
+	953.12.13 = {
+		birth = yes
+	}
+
+	1028.8.5 = {
+		death = { death_reason = death_dungeon }
+	}
+}
+
+islander_aversarinas_aagiokrata_68 = {
+	name = "Agamede"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_65
+	mother = islander_aversarinas_aagiokrata_80
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = temperate
+	trait = brave
+
+	diplomacy = 8
+	martial = 3
+	stewardship = 8
+	intrigue = 7
+	learning = 4
+	prowess = 5
+
+	trait = education_diplomacy_3
+
+	941.5.15 = {
+		birth = yes
+	}
+
+	1013.8.28 = {
+		death = { death_reason = death_murder }
+	}
+}
+
+islander_aversarinas_aagiokrata_69 = {
+	name = "Theognosia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_65
+	mother = islander_aversarinas_aagiokrata_80
+
+	sexuality = heterosexual
+
+	trait = humble
+	trait = brave
+	trait = ambitious
+
+	diplomacy = 5
+	martial = 8
+	stewardship = 4
+	intrigue = 6
+	learning = 8
+	prowess = 8
+
+	trait = education_martial_3
+
+	943.12.11 = {
+		birth = yes
+	}
+
+	1008.1.24 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_70 = {
+	name = "Gregoria"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_65
+	mother = islander_aversarinas_aagiokrata_80
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = sadistic
+	trait = deceitful
+
+	diplomacy = 6
+	martial = 7
+	stewardship = 6
+	intrigue = 7
+	learning = 5
+	prowess = 6
+
+	trait = education_martial_3
+
+	954.2.15 = {
+		birth = yes
+	}
+
+	963.12.2 = {
+		death = { death_reason = death_consumption }
+	}
+}
+
+islander_aversarinas_aagiokrata_71 = {
+	name = "Theoktiste"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = deceitful
+	trait = ambitious
+	trait = lazy
+
+	diplomacy = 2
+	martial = 5
+	stewardship = 7
+	intrigue = 7
+	learning = 8
+	prowess = 7
+
+	trait = education_learning_4
+
+	1022.4.24 = {
+		birth = yes
+	}
+
+	1112.7.20 = {
+		death = { death_reason = death_plotting }
+	}
+}
+
+islander_aversarinas_aagiokrata_72 = {
+	name = "Philomela"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = callous
+	trait = fickle
+	trait = vengeful
+
+	diplomacy = 2
+	martial = 5
+	stewardship = 4
+	intrigue = 9
+	learning = 8
+	prowess = 10
+
+	trait = education_intrigue_1
+
+	1016.8.4 = {
+		birth = yes
+	}
+
+	1043.6.7 = {
+		death = { death_reason = death_horse_riding_accident }
+	}
+}
+
+islander_aversarinas_aagiokrata_73 = {
+	name = "Sergia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = honest
+	trait = greedy
+	trait = cynical
+
+	diplomacy = 5
+	martial = 5
+	stewardship = 4
+	intrigue = 5
+	learning = 9
+	prowess = 7
+
+	trait = education_learning_2
+
+	1030.12.8 = {
+		birth = yes
+	}
+
+	1110.8.7 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_74 = {
+	name = "Theoktiste"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = cynical
+	trait = brave
+
+	diplomacy = 3
+	martial = 5
+	stewardship = 5
+	intrigue = 10
+	learning = 5
+	prowess = 5
+
+	trait = education_intrigue_2
+
+	1002.11.14 = {
+		birth = yes
+	}
+
+	1072.11.4 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_75 = {
+	name = "Helene"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_76
+	mother = islander_aversarinas_aagiokrata_77
+
+	sexuality = heterosexual
+
+	trait = calm
+	trait = lustful
+	trait = cynical
+
+	diplomacy = 3
+	martial = 7
+	stewardship = 2
+	intrigue = 4
+	learning = 5
+	prowess = 7
+
+	trait = education_martial_2
+
+	775.7.6 = {
+		birth = yes
+	}
+
+	867.12.16 = {
+		death = { death_reason = death_pneumonic }
+	}
+}
+
+islander_aversarinas_aagiokrata_76 = {
+	name = "Demostriox" #Renamed from Demetrilav
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_97
+	mother = islander_aversarinas_aagiokrata_98
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = sadistic
+	trait = arrogant
+
+	diplomacy = 9
+	martial = 4
+	stewardship = 10
+	intrigue = 6
+	learning = 7
+	prowess = 8
+
+	trait = education_stewardship_2
+
+	726.5.27 = {
+		birth = yes
+	}
+
+	770.11.9 = {
+		add_spouse = islander_aversarinas_aagiokrata_77
+	}
+
+	780.11.5 = {
+		death = { death_reason = death_disappearance }
+	}
+}
+
+islander_aversarinas_aagiokrata_77 = {
+	name = "Zenobia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = gregarious
+	trait = sadistic
+	trait = wrathful
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 10
+	intrigue = 7
+	learning = 6
+	prowess = 3
+
+	trait = education_stewardship_3
+
+	753.7.21 = {
+		birth = yes
+	}
+
+	822.7.18 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_78 = {
+	name = "Phyllis"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = wrathful
+	trait = ambitious
+	trait = compassionate
+
+	diplomacy = 6
+	martial = 4
+	stewardship = 4
+	intrigue = 8
+	learning = 7
+	prowess = 3
+
+	trait = education_intrigue_4
+
+	843.10.13 = {
+		birth = yes
+	}
+
+	881.3.9 = {
+		death = { death_reason = death_typhus }
+	}
+}
+
+islander_aversarinas_aagiokrata_79 = {
+	name = "Photios"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_63
+	mother = islander_aversarinas_aagiokrata_78
+
+	sexuality = heterosexual
+
+	trait = paranoid
+	trait = greedy
+	trait = impatient
+
+	diplomacy = 5
+	martial = 7
+	stewardship = 5
+	intrigue = 7
+	learning = 9
+	prowess = 3
+
+	trait = education_learning_2
+
+	878.7.16 = {
+		birth = yes
+	}
+
+	917.10.22 = {
+		add_spouse = islander_aversarinas_aagiokrata_100
+	}
+
+	939.1.5 = {
+		death = { death_reason = death_poison }
+	}
+}
+
+islander_aversarinas_aagiokrata_80 = {
+	name = "Theoktiste"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = brave
+	trait = ambitious
+	trait = stubborn
+
+	diplomacy = 5
+	martial = 6
+	stewardship = 6
+	intrigue = 6
+	learning = 2
+	prowess = 5
+
+	trait = education_martial_3
+
+	924.6.17 = {
+		birth = yes
+	}
+
+	985.3.28 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_81 = {
+	name = "Ioannikios"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_65
+	mother = islander_aversarinas_aagiokrata_80
+
+	sexuality = heterosexual
+
+	trait = compassionate
+	trait = forgiving
+	trait = trusting
+
+	diplomacy = 8
+	martial = 2
+	stewardship = 9
+	intrigue = 7
+	learning = 5
+	prowess = 5
+
+	trait = education_stewardship_3
+
+	946.10.8 = {
+		birth = yes
+	}
+
+	966.8.7 = {
+		add_spouse = islander_aversarinas_aagiokrata_102
+	}
+
+	1023.9.17 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_82 = {
+	name = "Epistrophos"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_65
+	mother = islander_aversarinas_aagiokrata_80
+
+	sexuality = heterosexual
+
+	trait = callous
+	trait = wrathful
+	trait = lustful
+
+	diplomacy = 6
+	martial = 2
+	stewardship = 2
+	intrigue = 5
+	learning = 3
+	prowess = 6
+
+	trait = education_diplomacy_3
+
+	951.8.28 = {
+		birth = yes
+	}
+
+	1000.2.3 = {
+		add_spouse = islander_aversarinas_aagiokrata_103
+	}
+
+	1010.11.5 = {
+		death = { death_reason = death_training_accident }
+	}
+}
+
+islander_aversarinas_aagiokrata_83 = {
+	name = "Eustathia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_97
+	mother = islander_aversarinas_aagiokrata_98
+
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = wrathful
+	trait = patient
+
+	diplomacy = 8
+	martial = 10
+	stewardship = 4
+	intrigue = 6
+	learning = 5
+	prowess = 3
+
+	trait = education_martial_2
+
+	714.1.22 = {
+		birth = yes
+	}
+
+	808.4.26 = {
+		death = { death_reason = death_accident }
+	}
+}
+
+islander_aversarinas_aagiokrata_84 = {
+	name = "Nonna"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_97
+	mother = islander_aversarinas_aagiokrata_98
+
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = generous
+	trait = ambitious
+
+	diplomacy = 7
+	martial = 5
+	stewardship = 2
+	intrigue = 6
+	learning = 5
+	prowess = 9
+
+	trait = education_diplomacy_2
+
+	718.5.19 = {
+		birth = yes
+	}
+
+	784.12.17 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_85 = {
+	name = "Pelagia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_97
+	mother = islander_aversarinas_aagiokrata_98
+
+	sexuality = heterosexual
+
+	trait = cynical
+	trait = greedy
+	trait = chaste
+
+	diplomacy = 5
+	martial = 10
+	stewardship = 5
+	intrigue = 7
+	learning = 9
+	prowess = 3
+
+	trait = education_martial_1
+
+	724.4.6 = {
+		birth = yes
+	}
+
+	787.12.22 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_86 = {
+	name = "Phaedre"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_79
+	mother = islander_aversarinas_aagiokrata_100
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = arbitrary
+	trait = greedy
+
+	diplomacy = 4
+	martial = 5
+	stewardship = 4
+	intrigue = 10
+	learning = 6
+	prowess = 6
+
+	trait = education_intrigue_2
+
+	919.10.4 = {
+		birth = yes
+	}
+
+	925.2.25 = {
+		death = { death_reason = death_fall }
+	}
+}
+
+islander_aversarinas_aagiokrata_87 = {
+	name = "Aithria" #Renamed from Gabrielia
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_79
+	mother = islander_aversarinas_aagiokrata_100
+
+	sexuality = heterosexual
+
+	trait = temperate
+	trait = stubborn
+	trait = arrogant
+
+	diplomacy = 4
+	martial = 2
+	stewardship = 10
+	intrigue = 5
+	learning = 5
+	prowess = 4
+
+	trait = education_stewardship_3
+
+	926.11.21 = {
+		birth = yes
+	}
+
+	966.1.3 = {
+		death = { death_reason = death_dungeon }
+	}
+}
+
+islander_aversarinas_aagiokrata_88 = {
+	name = "Pyxarxos"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_81
+	mother = islander_aversarinas_aagiokrata_102
+
+	sexuality = homosexual
+
+	trait = just
+	trait = lazy
+	trait = deceitful
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 3
+	intrigue = 8
+	learning = 6
+	prowess = 6
+
+	trait = education_intrigue_2
+
+	969.8.11 = {
+		birth = yes
+	}
+
+	1018.10.24 = {
+		add_spouse = islander_aversarinas_aagiokrata_108
+	}
+
+	1034.11.5 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_89 = {
+	name = "Vissarion"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_81
+	mother = islander_aversarinas_aagiokrata_102
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = arrogant
+	trait = deceitful
+
+	diplomacy = 8
+	martial = 6
+	stewardship = 6
+	intrigue = 6
+	learning = 7
+	prowess = 10
+
+	trait = education_diplomacy_4
+
+	971.8.18 = {
+		birth = yes
+	}
+
+	994.1.10 = {
+		add_spouse = islander_aversarinas_aagiokrata_109
+	}
+
+	1061.9.23 = {
+		death = { death_reason = death_pneumonic }
+	}
+}
+
+islander_aversarinas_aagiokrata_90 = {
+	name = "Niphon"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_81
+	mother = islander_aversarinas_aagiokrata_102
+
+	sexuality = heterosexual
+
+	trait = callous
+	trait = arrogant
+	trait = honest
+
+	diplomacy = 7
+	martial = 5
+	stewardship = 7
+	intrigue = 10
+	learning = 5
+	prowess = 4
+
+	trait = education_intrigue_2
+
+	973.7.8 = {
+		birth = yes
+	}
+
+	997.8.25 = {
+		add_spouse = islander_aversarinas_aagiokrata_110
+	}
+
+	1017.6.18 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+islander_aversarinas_aagiokrata_91 = {
+	name = "Eupraxia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_81
+	mother = islander_aversarinas_aagiokrata_102
+
+	sexuality = heterosexual
+
+	trait = deceitful
+	trait = arrogant
+	trait = callous
+
+	diplomacy = 3
+	martial = 7
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	prowess = 4
+
+	trait = education_martial_2
+
+	974.6.12 = {
+		birth = yes
+	}
+
+	1038.3.14 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_92 = {
+	name = "Brixais"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_81
+	mother = islander_aversarinas_aagiokrata_102
+
+	sexuality = heterosexual
+
+	trait = humble
+	trait = callous
+	trait = generous
+
+	diplomacy = 4
+	martial = 5
+	stewardship = 7
+	intrigue = 10
+	learning = 7
+	prowess = 8
+
+	trait = education_intrigue_2
+
+	976.5.14 = {
+		birth = yes
+	}
+
+	1008.3.23 = {
+		death = { death_reason = death_typhus }
+	}
+}
+
+islander_aversarinas_aagiokrata_93 = {
+	name = "Deodox"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_82
+	mother = islander_aversarinas_aagiokrata_103
+
+	sexuality = homosexual
+
+	trait = ambitious
+	trait = vengeful
+	trait = deceitful
+
+	diplomacy = 6
+	martial = 5
+	stewardship = 7
+	intrigue = 9
+	learning = 8
+	prowess = 6
+
+	trait = education_intrigue_3
+
+	1000.4.26 = {
+		birth = yes
+	}
+
+	1049.1.12 = {
+		add_spouse = islander_aversarinas_aagiokrata_111
+	}
+
+	1059.12.8 = {
+		death = { death_reason = death_script_cruelty }
+	}
+}
+
+islander_aversarinas_aagiokrata_94 = {
+	name = "Theophano"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_82
+	mother = islander_aversarinas_aagiokrata_103
+
+	sexuality = heterosexual
+
+	trait = wrathful
+	trait = sadistic
+	trait = lustful
+
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	prowess = 9
+
+	trait = education_diplomacy_3
+
+	1002.7.12 = {
+		birth = yes
+	}
+
+	1076.7.2 = {
+		death = { death_reason = death_feast_accident }
+	}
+}
+
+islander_aversarinas_aagiokrata_95 = {
+	name = "Rhodanthe"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_82
+	mother = islander_aversarinas_aagiokrata_103
+
+	sexuality = heterosexual
+
+	trait = wrathful
+	trait = cynical
+	trait = impatient
+
+	diplomacy = 9
+	martial = 7
+	stewardship = 8
+	intrigue = 7
+	learning = 3
+	prowess = 7
+
+	trait = education_diplomacy_4
+
+	1003.3.18 = {
+		birth = yes
+	}
+
+	1028.2.7 = {
+		death = { death_reason = death_consumption }
+	}
+}
+
+islander_aversarinas_aagiokrata_96 = {
+	name = "Maklea"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_82
+	mother = islander_aversarinas_aagiokrata_103
+
+	sexuality = heterosexual
+
+	trait = shy
+	trait = ambitious
+	trait = arrogant
+
+	diplomacy = 8
+	martial = 6
+	stewardship = 5
+	intrigue = 7
+	learning = 10
+	prowess = 6
+
+	trait = education_learning_3
+
+	1004.5.21 = {
+		birth = yes
+	}
+
+	1070.11.13 = {
+		death = { death_reason = death_smallpox }
+	}
+}
+
+islander_aversarinas_aagiokrata_97 = {
+	name = "Photios"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_112
+	mother = islander_aversarinas_aagiokrata_113
+
+	sexuality = heterosexual
+
+	trait = cynical
+	trait = wrathful
+	trait = gluttonous
+
+	diplomacy = 8
+	martial = 8
+	stewardship = 4
+	intrigue = 4
+	learning = 7
+	prowess = 6
+
+	trait = education_diplomacy_3
+
+	655.11.19 = {
+		birth = yes
+	}
+
+	713.3.12 = {
+		add_spouse = islander_aversarinas_aagiokrata_98
+	}
+
+	732.6.16 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_98 = {
+	name = "Theodora"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = bisexual
+
+	trait = temperate
+	trait = compassionate
+	trait = just
+
+	diplomacy = 6
+	martial = 6
+	stewardship = 6
+	intrigue = 8
+	learning = 6
+	prowess = 5
+
+	trait = education_intrigue_3
+
+	696.5.17 = {
+		birth = yes
+	}
+
+	768.7.16 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_99 = {
+	name = "Kallistos"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_97
+	mother = islander_aversarinas_aagiokrata_98
+
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = cynical
+	trait = temperate
+
+	diplomacy = 7
+	martial = 3
+	stewardship = 3
+	intrigue = 7
+	learning = 6
+	prowess = 5
+
+	trait = education_diplomacy_3
+
+	721.4.16 = {
+		birth = yes
+	}
+
+	745.10.17 = {
+		add_spouse = islander_aversarinas_aagiokrata_114
+	}
+
+	755.12.11 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+islander_aversarinas_aagiokrata_100 = {
+	name = "Theodosia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = diligent
+	trait = arrogant
+	trait = sadistic
+
+	diplomacy = 5
+	martial = 6
+	stewardship = 4
+	intrigue = 9
+	learning = 6
+	prowess = 10
+
+	trait = education_intrigue_3
+
+	900.10.19 = {
+		birth = yes
+	}
+
+	964.4.13 = {
+		death = { death_reason = death_crushed }
+	}
+}
+
+islander_aversarinas_aagiokrata_101 = {
+	name = "Onaios"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_79
+	mother = islander_aversarinas_aagiokrata_100
+
+	sexuality = heterosexual
+
+	trait = sadistic
+	trait = diligent
+	trait = wrathful
+
+	diplomacy = 4
+	martial = 6
+	stewardship = 5
+	intrigue = 6
+	learning = 10
+	prowess = 8
+
+	trait = education_learning_3
+
+	931.9.20 = {
+		birth = yes
+	}
+
+	984.6.2 = {
+		add_spouse = islander_aversarinas_aagiokrata_116
+	}
+
+	994.11.24 = {
+		death = { death_reason = death_poison }
+	}
+}
+
+islander_aversarinas_aagiokrata_102 = {
+	name = "Brixaes"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = compassionate
+	trait = cynical
+	trait = wrathful
+
+	diplomacy = 6
+	martial = 5
+	stewardship = 4
+	intrigue = 5
+	learning = 6
+	prowess = 6
+
+	trait = education_diplomacy_4
+
+	939.11.4 = {
+		birth = yes
+	}
+
+	1009.5.20 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_103 = {
+	name = "Konstantine"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = content
+	trait = cynical
+	trait = arrogant
+
+	diplomacy = 7
+	martial = 5
+	stewardship = 10
+	intrigue = 7
+	learning = 8
+	prowess = 6
+
+	trait = education_stewardship_2
+
+	983.8.24 = {
+		birth = yes
+	}
+
+	1061.9.17 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_104 = {
+	name = "Georgia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_112
+	mother = islander_aversarinas_aagiokrata_113
+
+	sexuality = homosexual
+
+	trait = lustful
+	trait = gregarious
+	trait = greedy
+
+	diplomacy = 6
+	martial = 7
+	stewardship = 6
+	intrigue = 4
+	learning = 7
+	prowess = 6
+
+	trait = education_martial_2
+
+	649.12.11 = {
+		birth = yes
+	}
+
+	724.10.15 = {
+		death = { death_reason = death_leper }
+	}
+}
+
+islander_aversarinas_aagiokrata_105 = {
+	name = "Thomais"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_112
+	mother = islander_aversarinas_aagiokrata_113
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = chaste
+	trait = shy
+
+	diplomacy = 9
+	martial = 6
+	stewardship = 7
+	intrigue = 3
+	learning = 3
+	prowess = 4
+
+	trait = education_diplomacy_3
+
+	652.1.7 = {
+		birth = yes
+	}
+
+	679.4.19 = {
+		death = { death_reason = death_smallpox }
+	}
+}
+
+islander_aversarinas_aagiokrata_106 = {
+	name = "Alkamnae"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_112
+	mother = islander_aversarinas_aagiokrata_113
+
+	sexuality = heterosexual
+
+	trait = craven
+	trait = sadistic
+	trait = generous
+
+	diplomacy = 8
+	martial = 6
+	stewardship = 8
+	intrigue = 8
+	learning = 7
+	prowess = 10
+
+	trait = education_diplomacy_2
+
+	653.11.12 = {
+		birth = yes
+	}
+
+	719.9.15 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_107 = {
+	name = "Rhodanthe"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_112
+	mother = islander_aversarinas_aagiokrata_113
+
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = ambitious
+	trait = honest
+
+	diplomacy = 9
+	martial = 6
+	stewardship = 9
+	intrigue = 10
+	learning = 10
+	prowess = 4
+
+	trait = education_intrigue_3
+
+	654.3.3 = {
+		birth = yes
+	}
+
+	745.4.12 = {
+		death = { death_reason = death_cancer }
+	}
+}
+
+islander_aversarinas_aagiokrata_108 = {
+	name = "Kyriake"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = temperate
+	trait = shy
+	trait = arrogant
+
+	diplomacy = 7
+	martial = 8
+	stewardship = 7
+	intrigue = 3
+	learning = 8
+	prowess = 6
+
+	trait = education_martial_2
+
+	995.3.11 = {
+		birth = yes
+	}
+
+	1094.2.26 = {
+		death = { death_reason = death_training_accident }
+	}
+}
+
+islander_aversarinas_aagiokrata_109 = {
+	name = "Pulcheria"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = callous
+	trait = brave
+	trait = greedy
+
+	diplomacy = 2
+	martial = 8
+	stewardship = 4
+	intrigue = 6
+	learning = 2
+	prowess = 9
+
+	trait = education_martial_4
+
+	977.6.16 = {
+		birth = yes
+	}
+
+	1069.4.5 = {
+		death = { death_reason = death_accident }
+	}
+}
+
+islander_aversarinas_aagiokrata_110 = {
+	name = "Thekla"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = cynical
+	trait = callous
+
+	diplomacy = 6
+	martial = 6
+	stewardship = 5
+	intrigue = 8
+	learning = 8
+	prowess = 10
+
+	trait = education_intrigue_4
+
+	980.6.10 = {
+		birth = yes
+	}
+
+	1045.3.10 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_111 = {
+	name = "Margarita"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = paranoid
+	trait = impatient
+	trait = vengeful
+
+	diplomacy = 7
+	martial = 2
+	stewardship = 4
+	intrigue = 10
+	learning = 5
+	prowess = 5
+
+	trait = education_intrigue_1
+
+	1032.10.10 = {
+		birth = yes
+	}
+
+	1128.1.27 = {
+		death = { death_reason = death_typhus }
+	}
+}
+
+islander_aversarinas_aagiokrata_112 = {
+	name = "Ixoduis"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_123
+	mother = islander_aversarinas_aagiokrata_124
+
+	sexuality = heterosexual
+
+	trait = just
+	trait = ambitious
+	trait = humble
+
+	diplomacy = 4
+	martial = 7
+	stewardship = 5
+	intrigue = 6
+	learning = 6
+	prowess = 4
+
+	trait = education_martial_3
+
+	607.1.3 = {
+		birth = yes
+	}
+
+	645.10.13 = {
+		add_spouse = islander_aversarinas_aagiokrata_113
+	}
+
+	678.9.22 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_113 = {
+	name = "Kale"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = arrogant
+	trait = cynical
+	trait = stubborn
+
+	diplomacy = 7
+	martial = 7
+	stewardship = 6
+	intrigue = 3
+	learning = 2
+	prowess = 5
+
+	trait = education_diplomacy_4
+
+	628.6.2 = {
+		birth = yes
+	}
+
+	696.7.9 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_114 = {
+	name = "Theophano"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = cynical
+	trait = ambitious
+	trait = arrogant
+
+	diplomacy = 6
+	martial = 7
+	stewardship = 7
+	intrigue = 11
+	learning = 11
+	prowess = 9
+
+	trait = education_intrigue_3
+
+	728.1.23 = {
+		birth = yes
+	}
+
+	824.5.14 = {
+		death = { death_reason = death_smallpox }
+	}
+}
+
+islander_aversarinas_aagiokrata_115 = {
+	name = "Markos"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_99
+	mother = islander_aversarinas_aagiokrata_114
+
+	sexuality = heterosexual
+
+	trait = impatient
+	trait = craven
+	trait = arrogant
+
+	diplomacy = 6
+	martial = 4
+	stewardship = 5
+	intrigue = 8
+	learning = 5
+	prowess = 6
+
+	trait = education_intrigue_4
+
+	745.12.2 = {
+		birth = yes
+	}
+
+	793.3.11 = {
+		add_spouse = islander_aversarinas_aagiokrata_125
+	}
+
+	803.1.3 = {
+		death = { death_reason = death_raid }
+	}
+}
+
+islander_aversarinas_aagiokrata_116 = {
+	name = "Otonia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = callous
+	trait = lazy
+	trait = trusting
+
+	diplomacy = 6
+	martial = 6
+	stewardship = 7
+	intrigue = 8
+	learning = 5
+	prowess = 7
+
+	trait = education_intrigue_4
+
+	967.8.8 = {
+		birth = yes
+	}
+
+	994.3.10 = {
+		death = { death_reason = death_fall }
+	}
+}
+
+islander_aversarinas_aagiokrata_117 = {
+	name = "Klaiothenix" #Renamed from Clytomedes
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_101
+	mother = islander_aversarinas_aagiokrata_116
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = callous
+	trait = cynical
+
+	diplomacy = 5
+	martial = 5
+	stewardship = 7
+	intrigue = 6
+	learning = 9
+	prowess = 11
+
+	trait = education_learning_3
+
+	985.9.11 = {
+		birth = yes
+	}
+
+	1014.7.6 = {
+		add_spouse = islander_aversarinas_aagiokrata_128
+	}
+
+	1024.11.28 = {
+		death = { death_reason = death_dog_attack }
+	}
+}
+
+islander_aversarinas_aagiokrata_118 = {
+	name = "Zenobia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_115
+	mother = islander_aversarinas_aagiokrata_125
+
+	sexuality = heterosexual
+
+	trait = sadistic
+	trait = ambitious
+
+	diplomacy = 8
+	martial = 5
+	stewardship = 8
+	intrigue = 5
+	learning = 5
+	prowess = 4
+
+	trait = education_diplomacy_2
+
+	793.9.5 = {
+		birth = yes
+	}
+
+	870.6.9 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_119 = {
+	name = "Laodamia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_115
+	mother = islander_aversarinas_aagiokrata_125
+
+	sexuality = heterosexual
+
+	trait = greedy
+	trait = arbitrary
+	trait = humble
+
+	diplomacy = 4
+	martial = 8
+	stewardship = 10
+	intrigue = 2
+	learning = 4
+	prowess = 9
+
+	trait = education_stewardship_2
+
+	795.9.19 = {
+		birth = yes
+	}
+
+	894.4.15 = {
+		death = { death_reason = death_consumption }
+	}
+}
+
+islander_aversarinas_aagiokrata_120 = {
+	name = "Kynthia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_117
+	mother = islander_aversarinas_aagiokrata_128
+
+	sexuality = heterosexual
+
+	trait = brave
+	trait = chaste
+	trait = sadistic
+
+	diplomacy = 4
+	martial = 8
+	stewardship = 6
+	intrigue = 4
+	learning = 7
+	prowess = 7
+
+	trait = education_martial_2
+
+	1018.9.15 = {
+		birth = yes
+	}
+
+	1081.11.11 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_121 = {
+	name = "Eothos"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_117
+	mother = islander_aversarinas_aagiokrata_128
+
+	sexuality = heterosexual
+
+	trait = trusting
+	trait = vengeful
+	trait = sadistic
+
+	diplomacy = 2
+	martial = 6
+	stewardship = 6
+	intrigue = 6
+	learning = 6
+	prowess = 8
+
+	trait = education_martial_3
+
+	1021.6.9 = {
+		birth = yes
+	}
+
+	1070.9.23 = {
+		add_spouse = islander_aversarinas_aagiokrata_122
+	}
+
+	1080.9.13 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+islander_aversarinas_aagiokrata_122 = {
+	name = "Iana"
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+	female = yes
+
+	sexuality = heterosexual
+
+	trait = trusting
+	trait = arbitrary
+	trait = sadistic
+
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	prowess = 5
+
+	trait = education_diplomacy_2
+
+	1048.7.10 = {
+		birth = yes
+	}
+
+	1108.8.12 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+islander_aversarinas_aagiokrata_123 = {
+	name = "Methodiox"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = craven
+	trait = vengeful
+	trait = arrogant
+
+	diplomacy = 9
+	martial = 6
+	stewardship = 8
+	intrigue = 5
+	learning = 9
+	prowess = 7
+
+	trait = education_diplomacy_3
+
+	553.10.18 = {
+		birth = yes
+	}
+
+	598.6.15 = {
+		add_spouse = islander_aversarinas_aagiokrata_124
+	}
+
+	640.2.21 = {
+		death = { death_reason = death_typhus }
+	}
+}
+
+islander_aversarinas_aagiokrata_124 = {
+	name = "Konstantine"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = patient
+	trait = ambitious
+	trait = greedy
+
+	diplomacy = 4
+	martial = 5
+	stewardship = 7
+	intrigue = 7
+	learning = 5
+	prowess = 8
+
+	trait = education_stewardship_3
+
+	581.11.6 = {
+		birth = yes
+	}
+
+	677.3.28 = {
+		death = { death_reason = death_feast_accident }
+	}
+}
+
+islander_aversarinas_aagiokrata_125 = {
+	name = "Theochariste"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = homosexual
+
+	trait = sadistic
+	trait = ambitious
+	trait = temperate
+
+	diplomacy = 6
+	martial = 7
+	stewardship = 7
+	intrigue = 7
+	learning = 6
+	prowess = 8
+
+	trait = education_martial_3
+
+	776.10.1 = {
+		birth = yes
+	}
+
+	845.7.18 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_126 = {
+	name = "Heliodos"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_115
+	mother = islander_aversarinas_aagiokrata_125
+
+	sexuality = heterosexual
+
+	trait = vengeful
+	trait = ambitious
+	trait = callous
+
+	diplomacy = 8
+	martial = 4
+	stewardship = 5
+	intrigue = 11
+	learning = 6
+	prowess = 5
+
+	trait = education_intrigue_2
+
+	797.6.1 = {
+		birth = yes
+	}
+
+	831.2.9 = {
+		add_spouse = islander_aversarinas_aagiokrata_127
+	}
+
+	841.9.13 = {
+		death = { death_reason = death_pneumonic }
+	}
+}
+
+islander_aversarinas_aagiokrata_127 = {
+	name = "Alexeia"
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+	female = yes
+
+	sexuality = heterosexual
+
+	trait = deceitful
+	trait = ambitious
+	trait = sadistic
+
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	prowess = 5
+
+	trait = education_diplomacy_2
+
+	810.7.10 = {
+		birth = yes
+	}
+
+	870.8.12 = {
+		death = { death_reason = death_old_age }
+	}
+}
+
+islander_aversarinas_aagiokrata_128 = {
+	name = "Leontia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = temperate
+	trait = arrogant
+	trait = wrathful
+
+	diplomacy = 6
+	martial = 2
+	stewardship = 6
+	intrigue = 4
+	learning = 1
+	prowess = 4
+
+	trait = education_diplomacy_2
+
+	997.2.27 = {
+		birth = yes
+	}
+
+	1073.4.6 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_129 = {
+	name = "Nikolaos"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_6
+	mother = islander_aversarinas_aagiokrata_32
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = lazy
+	trait = vengeful
+
+	diplomacy = 5
+	martial = 9
+	stewardship = 7
+	intrigue = 6
+	learning = 7
+	prowess = 7
+
+	trait = education_martial_3
+
+	1009.3.7 = {
+		birth = yes
+	}
+
+	1066.5.23 = {
+		add_spouse = islander_aversarinas_aagiokrata_134
+	}
+
+	1076.12.13 = {
+		death = { death_reason = death_attacked }
+	}
+}
+
+islander_aversarinas_aagiokrata_130 = {
+	name = "Maklea"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_6
+	mother = islander_aversarinas_aagiokrata_32
+
+	sexuality = bisexual
+
+	trait = arrogant
+	trait = cynical
+	trait = arbitrary
+
+	diplomacy = 8
+	martial = 4
+	stewardship = 4
+	intrigue = 7
+	learning = 4
+	prowess = 5
+
+	trait = education_diplomacy_3
+
+	1016.12.19 = {
+		birth = yes
+	}
+
+	1092.3.11 = {
+		death = { 
+			death_reason = death_agionists
+			killer = southernimperial_forgotten_1
+		}
+	}
+}
+
+islander_aversarinas_aagiokrata_131 = {
+	name = "Narsissios"
+
+	dynasty = dyn_aversaria_western_isle_6
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_6
+	mother = islander_aversarinas_aagiokrata_32
+
+	sexuality = heterosexual
+
+	trait = cynical
+	trait = ambitious
+	trait = craven
+
+	diplomacy = 6
+	martial = 9
+	stewardship = 2
+	intrigue = 3
+	learning = 10
+	prowess = 6
+
+	trait = education_learning_3
+
+	1019.7.25 = {
+		birth = yes
+	}
+
+	1077.10.15 = {
+		add_spouse = islander_aversarinas_aagiokrata_135
+	}
+
+	1092.3.11 = {
+		death = { 
+			death_reason = death_agionists
+		}
+	}
+}
+
+islander_aversarinas_aagiokrata_132 = {
+	name = "Maklea"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_6
+	mother = islander_aversarinas_aagiokrata_32
+
+	sexuality = heterosexual
+
+	trait = cynical
+	trait = gluttonous
+	trait = ambitious
+
+	diplomacy = 6
+	martial = 5
+	stewardship = 6
+	intrigue = 5
+	learning = 8
+	prowess = 5
+
+	trait = education_learning_3
+
+	1020.9.12 = {
+		birth = yes
+	}
+
+	1092.3.11 = {
+		death = { death_reason = death_agionists }
+	}
+}
+
+islander_aversarinas_aagiokrata_133 = { # The Magi Delendea, appointed executioner of the Forgotten Saint, executed by Phancis after the Saint disappeared
+	name = "Delendea"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	father = islander_aversarinas_aagiokrata_4
+	mother = islander_aversarinas_aagiokrata_5
+
+	sexuality = heterosexual
+	disallow_random_traits = yes
+
+	diplomacy = 7
+	martial = 3
+	stewardship = 6
+	intrigue = 8
+	learning = 1
+	prowess = 4
+
+	1023.5.15 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	1035.1.1 = {
+		trait = wrathful
+		trait = greedy
+		trait = trusting
+	}
+
+	1039.5.15 = {
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1095.6.10 = {
+		death = { 
+			death_reason = death_punishment
+			killer = westernimperial_aversarinas_aagiokrata_82
+		}
+	}
+}
+
+islander_aversarinas_aagiokrata_134 = {
+	name = "Sergia"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = diligent
+	trait = ambitious
+	trait = sadistic
+
+	diplomacy = 8
+	martial = 7
+	stewardship = 9
+	intrigue = 8
+	learning = 5
+	prowess = 8
+
+	trait = education_stewardship_4
+
+	1049.12.6 = {
+		birth = yes
+	}
+
+	1109.5.27 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_135 = {
+	name = "Theophano"
+	female = yes
+
+	religion = aversarinas_aagiokrata
+	culture = islander
+
+	sexuality = heterosexual
+
+	trait = just
+	trait = lazy
+	trait = ambitious
+
+	diplomacy = 8
+	martial = 8
+	stewardship = 1
+	intrigue = 4
+	learning = 7
+	prowess = 7
+
+	trait = education_diplomacy_2
+
+	1059.9.6 = {
+		birth = yes
+	}
+
+	1123.8.5 = {
+		death = { death_reason = death_mysterious }
+	}
+}
+
+islander_aversarinas_aagiokrata_136 = {
+	name = "Amyris"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+
+	1219.10.17 = {
+		birth = yes
+	}
+}
+
+islander_aversarinas_aagiokrata_137 = {
+	name = "Iolianos"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+
+	1203.12.27 = {
+		birth = yes
+	}
+}
+
+islander_aversarinas_aagiokrata_139 = {
+	name = "Serapaxos"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+
+	1236.9.25 = {
+		birth = yes
+	}
+
+	1258.2.15 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+islander_aversarinas_aagiokrata_140 = {
+	name = "Bathonex"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+
+	1229.12.18 = {
+		birth = yes
+	}
+
+	1283.6.21 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+islander_aversarinas_aagiokrata_141 = {
+	name = "Paxior"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+
+	1205.7.14 = {
+		birth = yes
+	}
+}
+
+islander_aversarinas_aagiokrata_142 = {
+	name = "Eukhrios"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+
+	1226.3.17 = {
+		birth = yes
+	}
+}
+
+islander_aversarinas_aagiokrata_143 = {
+	name = "Pavron"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+
+	1206.9.23 = {
+		birth = yes
+	}
+}
+
+islander_aversarinas_aagiokrata_144 = { # Legon Stauros of Marine Legion Legio CLXXXVI 'Intrepid', drove the rebels out of the Central Isles but died in the process
+	name = "Stauros"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+
+	sexuality = bisexual
+
+	martial = 5
+	diplomacy = 7
+	stewardship = 5
+	intrigue = 3
+	learning = 9
+	prowess = 5
+
+	1060.1.27 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1072.1.1 = {
+		trait = vengeful
+		trait = fickle
+		trait = arbitrary
+	}
+
+	1076.1.27 = {
+		trait = education_martial_3
+		trait = aggressive_attacker
+	}
+
+	1084.8.19 = {
+		trait = gh_legon
+	}
+
+	1088.12.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+islander_aversarinas_aagiokrata_145 = { # Maikhidon the Mauler, leader of the Order of the Pureblood mercenary group
+	name = "Maikhidon"
+	religion = "aversarinas_aagiokrata"
+	culture = "islander"
+
+	sexuality = heterosexual
+
+	martial = 7
+	diplomacy = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	prowess = 3
+
+	1139.6.17 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1151.1.1 = {
+		trait = sadistic
+		trait = zealous
+		trait = gregarious
+	}
+
+	1155.6.17 = {
+		trait = education_martial_3
+		trait = aggressive_attacker
+		trait = strong
+		trait = torturer
+		trait = gh_historical_blademaster_1
+		give_nickname = nick_the_mauler
+	}
+
+	1195.2.8 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}

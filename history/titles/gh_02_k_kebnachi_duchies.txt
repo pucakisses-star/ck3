@@ -1,0 +1,59 @@
+﻿d_gegapalle = {
+	1121.4.15 = {
+		holder = saruta_varodaism_5
+		liege = 0
+	}
+	1145.8.7 = {
+		holder = saruta_varodaism_5a
+		liege = 0
+	}
+	1172.4.3 = {
+		holder = saruta_varodaism_7
+		liege = k_kebnachi
+	}
+	1200.3.1 = {
+		holder = saruta_varodaism_9
+		liege = k_kebnachi
+	}
+	1212.6.22 = {
+		holder = saruta_varodaism_10
+		liege = k_kebnachi
+	}
+	1249.7.28 = {
+		holder = saruta_varodaism_1
+		liege = k_kebnachi
+		change_development_level = 13
+		government = pirate_government
+		succession_laws = { lawless_succession_law }
+	}
+}
+d_anudsawa = {
+	1188.9.4 = {
+		holder = garami_varodaism_1a
+	}
+	1200.3.1 = {
+		holder = garami_varodaism_1b
+	}
+	1218.5.10 = {
+		holder = garami_varodaism_3
+		liege = k_kebnachi
+		change_development_level = 12
+	}
+}
+#d_jaltulam = {
+#	1177.12.4 = {
+#		holder = watumimba_yakasak_5
+#	}
+#	1193.7.15 = {
+#		holder = watumimba_yakasak_1
+#		liege = 0
+#	}
+#	1213.7.8 = {
+#		holder = garami_varodaism_1b
+#	}
+#	1218.1.1 = {
+#		holder = garami_varodaism_4
+#		liege = k_kebnachi
+#		change_development_level = 14
+#	}
+#}

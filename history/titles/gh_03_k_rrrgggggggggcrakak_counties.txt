@@ -1,0 +1,31 @@
+c_abyssal_pits_41 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_abyssal_pits_43 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_abyssal_pits_47 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_abyssal_pits_45 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_abyssal_pits_59 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_abyssal_pits_38 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+

@@ -1,0 +1,40 @@
+c_provincenewasoro = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+	1252.11.1 = {
+		holder = centralimperial_aversarinas_aagiokrata_5
+		government = military_unit_government
+	}
+}
+c_easternkatraddia62 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia60 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia52 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia67 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia65 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_easternkatraddia69 = {
+	1230.1.1 = {
+		holder = fog_eaters_fogeater_13
+		government = migratory_government
+	}
+}

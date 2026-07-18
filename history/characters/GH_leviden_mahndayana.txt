@@ -1,0 +1,342 @@
+﻿leviden_mahndayana_1 = { #Father leviden_mahndayana_4
+	name = "Shahbaz"
+	religion = mahndayana
+	culture = leviden
+	
+	trait = sadistic
+	trait = lazy
+
+	1179.1.29 = {
+		birth = yes
+	}
+
+	1202.5.8 = {
+		add_spouse = leviden_mahndayana_2
+	}
+
+	1229.3.8 = {
+		death = yes
+	}
+}
+
+leviden_mahndayana_2 = { #Mother leviden_mahndayana_4
+	name = "Darya"
+	religion = mahndayana
+	culture = amsari
+	female = yes
+	
+	trait = patient
+	trait = intellect_good_1
+
+	1184.5.22 = {
+		birth = yes
+	}
+
+	1233.12.7 = {
+		death = yes
+	}
+}
+
+leviden_mahndayana_3 = { #Brother leviden_mahndayana_4
+	name = "Bakhtiar"
+	religion = mahndayana
+	culture = leviden
+	father = leviden_mahndayana_1
+	mother = leviden_mahndayana_2
+	
+	trait = brave
+	trait = lazy
+
+	1204.2.13 = {
+		birth = yes
+	}
+
+	1220.2.13 = {
+		trait = education_martial_2
+	}
+
+	1234.6.7 = {
+		death = {
+			death_reason = death_mysterious # Wonder why...
+		}
+	}
+}
+
+leviden_mahndayana_4 = {  #Holder of d_prathatha
+	name = "Menashe"
+	religion = mahndayana
+	culture = leviden
+	father = leviden_mahndayana_1
+	mother = leviden_mahndayana_2
+	sexuality = heterosexual
+	
+	trait = ambitious
+	trait = deceitful
+	trait = patient
+	trait = intellect_good_1
+	disallow_random_traits = yes
+
+	diplomacy = 5
+	martial = 4
+	stewardship = 7
+	intrigue = 2
+	learning = 3
+	
+	1211.2.13 = {
+		birth = yes
+	}
+
+	1227.2.13 = {
+		trait = education_intrigue_4
+	}
+
+	1222.3.14 = {
+		trait = scarred
+	}
+	
+	1236.12.5 = {
+		give_nickname = nick_bitterkin
+	}
+
+	1238.12.5 = {
+		add_spouse = leviden_mahndayana_5
+	}
+
+	1239.5.1 = {
+		set_relation_lover = character:leviden_mahndayana_5
+	}
+}
+
+leviden_mahndayana_5 = { #Wife leviden_mahndayana_4
+	name = "Nazilla"
+	religion = mahndayana
+	culture = leviden
+	female = yes
+	sexuality = heterosexual
+	
+	trait = ambitious
+	trait = humble
+	trait = wrathful	
+	
+	1218.9.3 = {
+		birth = yes
+	}
+
+	1234.9.3 = {
+		trait = education_intrigue_2
+	}
+}
+
+leviden_mahndayana_6 = { #daughter leviden_mahndayana_4
+	name = "Arshab"
+	religion = mahndayana
+	culture = leviden
+	father = leviden_mahndayana_4
+	mother = leviden_mahndayana_5
+	
+	trait = sickly
+	
+	1239.2.26 = {
+		birth = yes
+	}
+	1240.6.16 = {
+		death = yes
+	}
+}
+
+leviden_mahndayana_7 = { #daughter leviden_mahndayana_4
+	name = "Chiri"
+	religion = mahndayana
+	culture = leviden
+	female = yes
+	father = leviden_mahndayana_4
+	mother = leviden_mahndayana_5
+	
+	1245.4.23 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1261.4.23 = {
+		trait = education_intrigue_4
+	}
+}
+
+leviden_mahndayana_8 = { #Son leviden_mahndayana_4
+	name = "Manuchihr"
+
+	religion = mahndayana
+	culture = leviden
+	father = leviden_mahndayana_4
+	mother = leviden_mahndayana_5
+	1246.11.1 = {
+		birth = yes
+	}
+
+	1262.11.1 = {
+		trait = education_stewardship_2
+	}
+}
+
+leviden_mahndayana_9 = { #Son leviden_mahndayana_4
+	name = "Humayun"
+	religion = mahndayana
+	culture = leviden
+	father = leviden_mahndayana_4
+	mother = leviden_mahndayana_5
+	
+	1249.11.1 = {
+		birth = yes
+	}
+
+	1265.11.1 = {
+		trait = education_intrigue_1
+	}
+}
+
+leviden_mahndayana_10 = {  #Holder of c_bherak
+	name = "Ahmad"
+	religion = mahndayana
+	culture = leviden
+	father = leviden_mahndayana_18
+	
+	trait = craven
+	trait = greedy
+	
+	1197.2.13 = {
+		birth = yes
+	}
+
+	1218.2.13 = {
+		trait = education_martial_2
+	}
+
+	1223.12.5 = {
+		add_spouse = leviden_mahndayana_11
+	}
+}
+
+leviden_mahndayana_11 = { #Wife of leviden_mahndayana_10
+	name = "Tajbanu"
+	religion = mahndayana
+	culture = leviden
+	female = yes
+	
+	trait = brave
+	
+	1205.2.13 = {
+		birth = yes
+	}
+
+	1221.2.13 = {
+		trait = education_diplomacy_1
+	}
+}
+
+leviden_mahndayana_12 = { ##Daughter of leviden_mahndayana_10
+	name = "Zeynab"
+	religion = mahndayana
+	culture = leviden
+	female = yes
+	father = leviden_mahndayana_10
+	mother = leviden_mahndayana_11
+	trait = brave
+	trait = greedy
+	trait = content
+	
+	1227.7.5 = {
+		birth = yes
+	}
+
+	1243.7.5 = {
+		trait = education_martial_3
+	}
+}
+
+
+leviden_mahndayana_13 = {
+	name = "Shahrokh"
+	religion = mahndayana
+	culture = leviden
+	
+	1197.7.5 = {
+		birth = yes
+	}
+
+	1273.7.5 = {
+		death = yes
+	}
+}
+
+leviden_mahndayana_14 = {
+	name = "Ammi"
+	religion = mahndayana
+	culture = leviden
+	
+	1175.3.1 = {
+		birth = yes
+	}
+
+	1212.1.1 = {
+		death = yes
+	}
+}
+
+leviden_mahndayana_15 = {
+	name = "Kalonymos"
+	religion = mahndayana
+	culture = leviden
+	father = leviden_mahndayana_14
+	
+	1193.3.8 = {
+		birth = yes
+	}
+
+	1223.1.1 = {
+		death = yes
+	}
+}
+
+leviden_mahndayana_16 = {
+	name = "Nechemiah"
+	religion = sheharddi
+	culture = leviden
+	
+	1146.2.16 = {
+		birth = yes
+	}
+
+	1194.12.4 = {
+		death = yes
+	}
+}
+
+leviden_mahndayana_17 = {
+	name = "Yaakov"
+	religion = mahndayana
+	culture = leviden
+	father = leviden_mahndayana_16
+	
+	1169.4.1 = {
+		birth = yes
+	}
+
+	1198.5.7 = {
+		death = yes
+	}
+}
+
+leviden_mahndayana_18 = {
+	name = "Afshar"
+	religion = mahndayana
+	culture = leviden
+	father = leviden_mahndayana_16
+	
+	1171.3.8 = {
+		birth = yes
+	}
+
+	1222.5.7 = {
+		death = yes
+	}
+}

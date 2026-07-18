@@ -1,0 +1,76 @@
+c_rhedola = {
+	1250.1.1 = {
+		holder = daukeni_sjalvolki_60
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+	1263.2.18 = {
+		holder = mondecny_portenchant_9
+		government = feudal_government
+	}
+}
+c_ascos = {
+	1247.3.15 = {
+		holder = tribocicai_sjalvolki_3
+		liege = e_migrant_coalition
+ 	}
+}
+c_othedryres = {
+	1087.6.16 = {
+		holder = centralimperial_calysto_1
+		liege = 0
+		government = peasant_republic
+	}
+	1250.1.1 = {
+		holder = daukeni_sjalvolki_63
+		liege = k_tribocicai
+		government = continental_clan_government
+	}
+}
+c_chiboi = {
+	1250.1.1 = {
+		holder = tribocicai_sjalvolki_4
+		liege = k_tribocicai
+		government = continental_clan_government
+	}
+	1263.2.18 = {
+		holder = mondecny_portenchant_9
+	}
+	1298.1.1 = {
+		government = feudal_government
+	}
+}
+c_chopphos = {
+	1250.1.1 = {
+		holder = daukeni_sjalvolki_68
+		liege = k_tribocicai
+		government = continental_clan_government
+	}
+	1263.2.18 = {
+		holder = mondecny_portenchant_9
+	}
+	1298.1.1 = {
+		government = feudal_government
+	}
+}
+c_rhece = {
+	1250.1.1 = {
+		holder = tribocicai_sjalvolki_3
+		liege = e_migrant_coalition
+		government = continental_clan_government
+	}
+}
+c_delolki = {
+	1250.1.1 = {
+		holder = daukeni_sjalvolki_67
+		liege = d_oedi
+		government = military_unit_government
+	}
+}
+c_dubes = {
+	1250.1.1 = {
+		holder = apokiakas_militant_cliques_1
+		liege = e_migrant_coalition
+		government = military_unit_government
+	}
+}

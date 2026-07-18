@@ -1,0 +1,28 @@
+﻿#This file is here to store the DNA for characters we want to use in future visions that aren't yet implemented
+#into the game. If you fully implement a character who's DNA is listed here, feel free to delete the DNA
+#Holder and edit the corrosponding Vision
+
+vision_1 = { #For use with event 3004
+	name = "Silas"
+	dna = silas
+	culture = oejeynica
+	religion = graveright
+	
+	1.1.1 = {
+		birth = yes
+		trait = magic_good_4
+		make_unprunable = yes
+	}
+
+	16.1.1 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	32.1.2 = {
+		death = yes
+	}
+}

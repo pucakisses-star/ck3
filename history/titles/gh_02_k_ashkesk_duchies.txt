@@ -1,0 +1,34 @@
+d_yasi = {
+	1230.1.1 = { change_development_level = 4 }
+}
+d_forlorn_coast = {
+	1230.1.1 = { change_development_level = 5 }
+}
+d_boneyard = {
+	1230.1.1 = { change_development_level = 3 }
+}
+d_exiles_cities = {
+	1150.5.14 = {
+		holder = erimatos_aversarinas_aagiokrata_11
+		liege = k_colonia_authority
+	}
+	1182.5.25 = {
+		holder = erimatos_aversarinas_aagiokrata_12
+	}
+	1207.1.18 = {
+		holder = erimatos_aversarinas_aagiokrata_14
+	}
+	1227.9.6 = {
+		holder = adnanari_wardenism_1
+		liege = 0
+	}
+
+	1230.1.1 = { change_development_level = 3 }
+	
+	1230.1.1 = {
+		liege = k_eastern_frontier
+	}
+	1247.1.22 = {
+		holder = adnanari_harthahi_9
+	}
+}

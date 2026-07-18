@@ -1,0 +1,60 @@
+﻿maebalah_masaagnite_01 = {
+	name = "Ali"
+	religion = "masaagnite"
+	culture = "maebalah"
+	
+	1220.5.19 = {
+		birth = yes
+	}
+}
+
+maebalah_masaagnite_02 = {
+	name = "Keykhosrau"
+	religion = "masaagnite"
+	culture = "maebalah"
+	
+	1221.3.19 = {
+		birth = yes
+	}
+}
+
+maebalah_masaagnite_03 = {
+	name = "Nawid"
+	religion = "masaagnite"
+	culture = "maebalah"
+	
+	1227.12.11 = {
+		birth = yes
+	}
+}
+
+maebalah_masaagnite_04 = {
+	name = "Jahandar"
+	religion = "masaagnite"
+	culture = "maebalah"
+	
+	1224.9.10 = {
+		birth = yes
+	}
+}
+
+maebalah_masaagnite_05 = {
+	name = "Khodadad"
+	religion = "masaagnite"
+	culture = "maebalah"
+	
+	1217.1.23 = {
+		birth = yes
+	}
+}
+
+maebalah_masaagnite_06 = {
+	name = "Maziar"
+	religion = "masaagnite"
+	culture = "maebalah"
+	
+	1230.2.1 = {
+		birth = yes
+	}
+}
+

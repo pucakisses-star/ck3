@@ -1,0 +1,218 @@
+c_southkatraddia_74 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_7
+		government = feudal_government
+	}
+	1216.9.24 = {
+		holder = apokiakas_aversarinas_aagiokratia_36
+	}
+	1221.1.2 = {
+		holder = wasteland
+	}
+}
+c_southkatraddia_72 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_7
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+#c_provinceprovince10023 = {
+#	1186.1.1 = {
+#		holder = apokiakas_aversarinas_aagiokratia_13
+#	}
+#	1200.3.1 = {
+#		holder = wasteland
+#	}
+#}
+
+#c_southkatraddia_59 = {
+#	1186.1.1 = {
+#		holder = apokiakas_aversarinas_aagiokratia_14
+#	}
+#	1200.3.1 = {
+#		holder = wasteland
+#	}
+#}
+#c_southkatraddia_54 = {
+#	1186.1.1 = {
+#		holder = apokiakas_aversarinas_aagiokratia_14
+#	}
+#	1200.3.1 = {
+#		holder = wasteland
+#	}
+#}
+c_southkatraddia_49 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_12
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_southkatraddia_53 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_14
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_southkatraddia_51 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_12
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_southkatraddia_52 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_12
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+#c_southkatraddia_55 = {
+#	1186.1.1 = {
+#		holder = apokiakas_aversarinas_aagiokratia_14
+#	}
+#	1200.3.1 = {
+#		holder = wasteland
+#	}
+#}
+#c_southkatraddia_50 = {
+#	1186.1.1 = {
+#		holder = apokiakas_aversarinas_aagiokratia_12
+#	}
+#	1200.3.1 = {
+#		holder = wasteland
+#	}
+#}
+c_provinceprovince11630 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_14
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_southkatraddia_58 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_15
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_southkatraddia_60 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_17
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+#c_southkatraddia_64 = {
+#	1186.1.1 = {
+#		holder = apokiakas_aversarinas_aagiokratia_7
+#	}
+#	1200.3.1 = {
+#		holder = wasteland
+#	}
+#}
+c_southkatraddia_56 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_15
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+#c_southkatraddia_61 = {
+#	1186.1.1 = {
+#		holder = apokiakas_aversarinas_aagiokratia_17
+#	}
+#	1200.3.1 = {
+#		holder = wasteland
+#	}
+#}
+#c_southkatraddia_57 = {
+#	1186.1.1 = {
+#		holder = apokiakas_aversarinas_aagiokratia_15
+#	}
+#	1200.3.1 = {
+#		holder = wasteland
+#	}
+#}
+#c_southkatraddia_67 = {
+#	1186.1.1 = {
+#		holder = apokiakas_aversarinas_aagiokratia_7
+#	}
+#	1200.3.1 = {
+#		holder = wasteland
+#	}
+#}
+#c_southkatraddia_62 = {
+#	1186.1.1 = {
+#		holder = apokiakas_aversarinas_aagiokratia_17
+#	}
+#	1200.3.1 = {
+#		holder = wasteland
+#	}
+#}
+c_southkatraddia_63 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_16
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_southkatraddia_73 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_7
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_southkatraddia_66 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_7
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_southkatraddia_68 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_7
+	}
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_southkatraddia_69 = {
+	1186.1.1 = {
+		holder = apokiakas_aversarinas_aagiokratia_18
+	}
+	1200.3.1 = {
+		holder = fog_eaters_fogeater_14
+		government = migratory_government
+	}
+}
+#c_southkatraddia_70 = {
+#	1230.1.1 = {
+#		holder = fog_eaters_fogeater_14
+#		government = migratory_government
+#	}
+#}
+c_southkatraddia_71 = {
+	1230.1.1 = {
+		holder = fog_eaters_fogeater_14
+		government = migratory_government
+	}
+}

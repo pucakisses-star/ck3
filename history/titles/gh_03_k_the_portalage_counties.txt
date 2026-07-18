@@ -1,0 +1,70 @@
+c_mayik_room_1 = {
+	1094.10.12 = {
+		holder = westernimperial_aversarinas_aagiokrata_63
+	}
+
+	1179.2.2 = {
+		holder = practitioner_aversarinas_aagiokrata_1
+	}
+
+	1184.4.1 = {
+		holder = southernimperial_aversarinas_aagiokrata_16
+	}
+
+	1195.5.26 = {
+		holder = practitioner_aversarinas_aagiokrata_2
+	}
+	1230.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_5
+	}
+}
+c_mayik_corridor_6 = {
+	1230.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_5
+	}
+}
+c_mayik_corridor_4 = {
+	1230.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_5
+	}
+}
+c_mayik_corridor_5 = {
+	1230.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_5
+	}
+}
+c_mayik_room_2 = {
+	1230.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_5
+	}
+}
+c_mayik_corridor_9 = {
+	1230.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_5
+	}
+}
+c_mayik_corridor_7 = {
+	1230.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_5
+	}
+}
+c_mayik_corridor_8 = {
+	1230.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_5
+	}
+}
+c_mayik_corridor_1 = {
+	1230.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_5
+	}
+}
+c_mayik_corridor_2 = {
+	1230.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_5
+	}
+}
+c_mayik_corridor_3 = {
+	1230.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_5
+	}
+}

@@ -1,0 +1,42 @@
+c_mayik_caves_23 = {
+	1250.1.1 = {
+		holder = penetworin_ethowos_2
+		liege = 0
+		government = migratory_government
+	}
+}
+c_mayik_caves_29 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_caves_28 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_caves_26 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_caves_60d = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_mayik_duchy_30 = {
+	1197.4.5 = {
+		holder = practitioner_aversarinas_aagiokrata_4
+		liege = e_mayikprolollan
+		government = magocratic_government
+	}
+	1244.3.2 = {
+		holder = practitioner_aversarinas_aagiokrata_5
+	}
+}
+c_diai = {
+	1230.1.1 = {
+		holder = practitioner_aversarinas_aagiokrata_5
+	}
+}

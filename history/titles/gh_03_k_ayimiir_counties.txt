@@ -1,0 +1,35 @@
+c_sunken_depths_21 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_sunken_depths_19 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_abyssal_pits_84 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_abyssal_pits_80 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_sunken_depths_23 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_abyssal_pits_81 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_abyssal_pits_88 = {
+  1200.3.1 = {
+		holder = wasteland
+	}
+}

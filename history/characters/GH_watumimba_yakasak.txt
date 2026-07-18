@@ -1,0 +1,137 @@
+﻿watumimba_yakasak_1 = { # Ginting Windblade
+	name = "Ginting"
+	religion = "yakasak"
+	culture = "watumimba"
+
+	dna = watumimba_yakasak_1
+
+	portrait_override = {
+		portrait_modifier_overrides={
+			custom_hair=male_hair_sub_saharan_02
+			custom_beards=male_beard_fp1_01
+		}
+	}
+
+	prowess = 14
+
+	1179.2.2 = {
+		birth = yes
+		trait = blind
+	}
+	1195.2.2 = {
+		trait = education_martial_3
+		trait = ambitious
+		trait = lustful
+		trait = greedy
+		trait = adventurer
+		trait = intellect_good_2
+		trait = flexible_leader
+		give_nickname = nick_wind_blade
+		trait = gh_historical_blademaster_3
+	}
+	1228.6.5 = {
+		death = {
+			death_reason = death_duel
+			killer = ikanita_yakasak_1
+		}
+	}
+}
+
+watumimba_yakasak_2 = { # Bastard child of Ginting
+	name = "Kobiraj"
+	culture = "watumimba"
+	religion = "yakasak"
+	father = watumimba_yakasak_1
+
+	dna = watumimba_yakasak_2
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair=no_hair
+			custom_beards = male_beard_mena_04
+		}
+	}
+
+	1220.12.1 = {
+		birth = yes
+		trait = bastard
+		add_perk = beasthunter_perk
+		add_perk = home_turf_perk
+		trait = gh_historical_blademaster_2
+		trait = gh_historical_track_beasthunter_2
+	}
+	1236.12.1 = {
+		trait = patient
+		trait = lustful
+		trait = arrogant
+	}
+
+	1247.5.26 = {
+		add_spouse = watumimba_corkkattirkana_9
+	}
+	
+	1258.1.1 = {
+		religion = corkkattirkana
+	}
+	1281.2.23 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+watumimba_yakasak_3 = {
+	name = "Illangage"
+	religion = "yakasak"
+	culture = "watumimba"
+
+	1230.3.3 = {
+		birth = yes
+	}
+}
+
+watumimba_yakasak_4 = {
+	name = "KulO_ttunka"
+	religion = "yakasak"
+	culture = "watumimba"
+
+	1155.11.25 = {
+		birth = yes
+	}
+	1185.1.1 = {
+		trait = greedy
+		trait = craven
+		trait = ambitious
+	}
+	1200.3.1 = {
+		trait = scarred
+	}
+	1203.11.2 = {
+		death = {
+			death_reason = death_execution
+			killer = watumimba_yakasak_1
+		}
+	}
+}
+
+watumimba_yakasak_5 = {
+	name = "Barakat"
+	religion = "yakasak"
+	culture = "watumimba"
+
+	1152.9.17 = {
+		birth = yes
+	}
+
+	1162.1.1 = {
+		trait = greedy
+		trait = zealous
+		trait = callous
+		trait = shrewd
+	}
+
+	1193.7.15 = {
+		death = {
+			death_reason = death_battle
+			killer = watumimba_yakasak_1
+		}
+	}
+}

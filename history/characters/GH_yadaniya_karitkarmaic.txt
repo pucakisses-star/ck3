@@ -1,0 +1,17 @@
+﻿yadaniya_karitkarmaic_1 = {
+	name = "Anantadeva"
+	religion = "andaronshak"
+	culture = "yadaniya"
+	1235.8.8 = {
+		birth = yes
+	}
+}
+
+yadaniya_karitkarmaic_2 = {
+	name = "Narendra"
+	religion = "andaronshak"
+	culture = "yadaniya"
+	1229.8.8 = {
+		birth = yes
+	}
+}

@@ -1,0 +1,62 @@
+
+
+c_westcatacombs_13ff = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_13aa = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_14gg = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_14aa = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_14ee = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_16aa = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_16cc = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_16dd = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_16gg = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_15cc = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_15ff = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}
+c_westcatacombs_15gg = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}

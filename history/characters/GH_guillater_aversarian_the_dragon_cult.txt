@@ -1,0 +1,28 @@
+﻿guillater_aversarian_the_dragon_cult_1 = {
+	name = "Asimnos" #Renamed from Symeon
+	religion = the_dragon_cult
+	culture = guillater_aversarian
+	1230.3.21 = {
+		birth = yes
+	}
+	1244.3.1 = {
+		trait = arbitrary
+		trait = patient
+		trait = paranoid
+	}
+	1248.3.21 = {
+		trait = education_diplomacy_2
+		set_relation_rival = character:abdexorn_abdexorn_aagiokrata_1
+	}
+}
+
+guillater_aversarian_the_dragon_cult_2 = {
+	name = "Ixthyria" #Renamed from Konstantine
+	female = yes
+	religion = the_dragon_cult
+	culture = guillater_aversarian
+
+	1224.2.1 = {
+		birth = yes
+	}
+}

@@ -1,0 +1,1615 @@
+﻿
+2190 = {
+	holding = castle_holding
+}
+
+2457 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+2544 = {
+	holding = castle_holding
+	765.1.1 = {
+		special_building = 01_champion_grounds
+	}
+}
+
+2787 = {
+	holding = church_holding
+}
+
+2905 = {
+	holding = none
+}
+
+2932 = {
+	holding = none
+}
+
+2945 = {
+	holding = none
+}
+
+2948 = {
+	holding = none
+}
+
+
+3001 = {
+	holding = none
+}
+
+3032 = {
+	holding = none
+}
+
+3040 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+3059 = {
+	holding = none
+}
+
+3320 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+3321 = {
+	holding = city_holding
+}
+
+3328 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+3368 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+3612 = {
+	holding = none
+}
+
+3737 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+3857 = {
+	holding = none
+}
+
+3868 = {
+	culture = centralislander
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3869 = {
+	holding = city_holding
+}
+
+3870 = {
+	holding = none
+}
+
+3871 = {
+	holding = none
+}
+
+3873 = {
+	holding = castle_holding
+}
+
+3874 = {
+	holding = none
+}
+
+3876 = {
+	holding = city_holding
+}
+
+3880 = {
+	culture = southislander
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3885 = {
+	holding = city_holding
+}
+
+3891 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = metro_holding
+	156.11.11 = {
+		special_building = 01_palaceofthegoldenmartyrs
+	}
+	1000.1.1 = {
+		buildings = {
+			metro_02
+		}
+	}
+	1200.1.1 = {
+		buildings = {
+			
+			
+			luxury_goods_04
+			
+			gh_walls_01
+			
+		}
+	}
+}
+
+3892 = {
+	holding = none
+}
+
+394 = {
+	holding = none
+}
+
+3893 = {
+	holding = none
+}
+
+3898 = {
+	holding = none
+}
+
+3900 = {
+	holding = city_holding
+}
+
+3906 = {
+	holding = none
+}
+
+3910 = {
+	culture = southislander
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3911 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3912 = {
+	holding = city_holding
+}
+
+3915 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3916 = {
+	holding = none
+}
+
+3919 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3921 = {
+	holding = none
+}
+
+3923 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3927 = {
+	holding = none
+}
+
+3929 = {
+	holding = none
+}
+
+3930 = {
+	holding = none
+}
+
+3935 = {
+	holding = city_holding
+}
+
+3938 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3942 = {
+	holding = none
+}
+
+3943 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3952 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = city_holding
+}
+
+3954 = {
+	holding = church_holding
+}
+
+3957 = {
+	holding = castle_holding
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	104.12.15 = {
+		special_building = 01_mountainport
+	}
+}
+
+3960 = {
+	holding = none
+}
+
+3962 = {
+	holding = none
+}
+
+3966 = {
+	culture = erridai
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+
+	0.1.1 = {
+		special_building = 01_phanapetra_mines
+	}
+}
+
+3969 = {
+	culture = erridai
+	religion = aversarian_axiaotheaism
+	holding = castle_holding
+}
+
+3970 = {
+	holding = none
+}
+
+3971 = {
+	holding = none
+}
+
+3972 = {
+	holding = city_holding
+}
+
+3973 = {
+	holding = none
+}
+
+
+
+
+
+
+3978 = {
+	holding = church_holding
+}
+
+3979 = {
+	culture = southislander
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+3980 = {
+	holding = none
+}
+
+3981 = {
+	holding = none
+}
+
+3983 = {
+	culture = southislander
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+3988 = {
+	holding = none
+}
+
+
+
+
+3996 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+3998 = {
+	holding = city_holding
+}
+
+
+3999 = {
+	holding = none
+}
+
+4001 = {
+	culture = practitioner
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+4003 = {
+	holding = none
+}
+
+4004 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4005 = {
+	holding = none
+}
+
+4006 = {
+	holding = none
+}
+
+4007 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4008 = {
+	holding = none
+}
+
+
+4009 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4010 = {
+	holding = none
+}
+
+4011 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4013 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4014 = {
+	holding = none
+}
+
+
+4015 = {
+	culture = practitioner
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4016 = {
+	holding = none
+}
+
+4018 = {
+	holding = none
+}
+
+4019 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4020 = {
+	holding = none
+}
+
+4021 = {
+	culture = practitioner
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4022 = {
+	culture = practitioner
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4024 = {
+	holding = city_holding
+}
+
+4025 = {
+	culture = southislander
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4026 = {
+	holding = city_holding
+}
+
+
+4029 = {
+	holding = ruin_holding
+}
+
+4030 = {
+	holding = none
+}
+
+4033 = {
+	holding = none
+}
+
+4039 = {
+	culture = irmionoth
+	religion = praznarva
+	holding = castle_holding
+}
+
+4040 = {
+	culture = southernimperial
+	religion = aversarian_axiaotheaism
+	holding = castle_holding
+}
+
+4045 = {
+	culture = southernimperial
+	religion = aversarian_axiaotheaism
+	holding = castle_holding
+}
+
+4050 = {
+	holding = none
+}
+
+4054 = {
+	holding = none
+}
+
+4053 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+
+
+4066 = {
+	holding = none
+}
+
+
+4087 = {
+	holding = church_holding
+	439.1.1 = {
+		special_building = 01_blackbonesofarthenax
+	}
+}
+
+4098 = {
+	holding = city_holding
+}
+
+4101 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = city_holding
+}
+
+4104 = {
+	holding = none
+}
+
+4106 = {
+	holding = none
+}
+
+4112 = {
+	holding = none
+}
+
+4113 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4114 = {
+	holding = none
+}
+
+4116 = {
+	holding = church_holding
+}
+
+4120 = {
+	holding = none
+}
+
+4121 = {
+	culture = erridai
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+
+	1200.1.1 = {
+		buildings = {
+			temple_02
+		}
+		special_building = 01_vounill
+	}
+}
+
+4122 = {
+	holding = none
+}
+
+4127 = {
+	holding = church_holding
+}
+
+
+4131 = {
+	culture = southernimperial
+	religion = aversarian_axiaotheaism
+	holding = castle_holding
+}
+
+4134 = {
+	holding = city_holding
+}
+
+4135 = {
+	holding = none
+}
+
+4136 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4138 = {
+	holding = church_holding
+}
+
+
+4142 = {
+	culture = adrakamp
+	religion = sjalvolki
+	holding = castle_holding
+}
+
+4146 = {
+	holding = none
+}
+
+4147 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = church_holding
+}
+
+4149 = {
+	holding = none
+}
+
+4150 = {
+	culture = adrakamp
+	religion = sjalvolki
+	holding = castle_holding
+}
+
+4152 = {
+	holding = city_holding
+}
+
+4153 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+
+4155 = {
+	holding = none
+}
+
+4156 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4158 = {
+	holding = none
+}
+
+4160 = {
+	holding = none
+}
+
+4162 = {
+	holding = none
+}
+
+4163 = {
+	holding = none
+}
+
+
+4172 = {
+	holding = none
+}
+
+4175 = {
+	holding = none
+}
+
+4176 = {
+	holding = none
+}
+
+4178 = {
+	holding = city_holding
+}
+
+4180 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4181 = {
+	holding = none
+}
+
+4183 = {
+	culture = southernimperial
+	religion = aversarian_gorassos
+	holding = castle_holding
+}
+
+4185 = {
+	holding = none
+}
+
+4189 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4190 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4191 = {
+	culture = southernimperial
+	religion = aversarian_gorassos
+	holding = castle_holding
+}
+
+4192 = {
+	holding = none
+}
+
+4197 = {
+	holding = none
+}
+
+4200 = {
+	holding = none
+}
+
+4201 = {
+	holding = none
+}
+
+4202 = {
+	holding = none
+}
+
+4207 = {
+	holding = castle_holding
+
+	0.1.1 = {
+		special_building = 01_epidaphos_mines
+	}
+}
+
+4211 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4214 = {
+	holding = church_holding
+}
+
+4216 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+
+	1.1.1 = {
+		special_building = 01_kasmeze_cathedral
+	}
+	1240.1.1 = {
+		special_building = 02_kasmeze_cathedral
+	}
+}
+
+4218 = {
+	holding = none
+}
+
+4223 = {
+	holding = city_holding
+}
+
+4225 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4226 = {
+	holding = none
+}
+
+4229 = {
+	holding = none
+}
+
+4231 = {
+	holding = none
+}
+
+4236 = {
+	culture = southernimperial
+	religion = aversarian_axiaotheaism
+	holding = castle_holding
+}
+
+4239 = {
+	holding = none
+}
+
+
+4243 = {
+	holding = none
+}
+
+4246 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4247 = {
+	holding = none
+}
+
+4248 = {
+	culture = fenvir
+	religion = sjalvolki
+	holding = castle_holding
+}
+
+4252 = {
+	holding = none
+}
+
+4254 = {
+	holding = none
+}
+
+4255 = {
+	culture = fenvir
+	religion = sjalvolki
+	holding = castle_holding
+}
+
+4256 = {
+	holding = none
+}
+
+4258 = {
+	holding = church_holding
+}
+
+4261 = {
+	culture = fenvir
+	religion = sjalvolki
+	holding = castle_holding
+}
+
+4263 = {
+	holding = none
+}
+
+4265 = {
+	holding = none
+}
+
+
+
+
+4268 = {
+	holding = none
+}
+
+4270 = {
+	culture = fenvir
+	religion = sjalvolki
+	holding = castle_holding
+	1200.1.1 = {
+		special_building = 01_mountain_tower
+	}
+}
+
+4356 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+4369 = {
+	culture = southernimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+4389 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4416 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4420 = {
+	holding = none
+}
+
+4431 = {
+	holding = none
+}
+
+4460 = {
+	holding = none
+}
+
+4481 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4488 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4493 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+4627 = {
+	religion = aversarinas_aagiokrata
+	culture = southernimperial
+	holding = castle_holding
+}
+
+4982 = {
+	holding = none
+	
+}
+
+5253 = {
+	holding = city_holding
+}
+
+5255 = {
+	holding = none
+	
+}
+
+
+5262 = {
+	culture = lakaloi
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	
+}
+
+5263 = {
+	culture = lakaloi
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	
+}
+
+5264 = {
+	holding = church_holding
+}
+
+5275 = {
+	holding = city_holding
+}
+
+5277 = {
+	holding = city_holding
+}
+
+5282 = {
+	holding = none
+}
+
+
+5290 = {
+	holding = none
+}
+
+5304 = {
+	holding = none
+}
+
+5313 = {
+	culture = lakaloi
+	religion = calystoanistism
+	holding = castle_holding
+}
+
+5317 = {
+	holding = none
+}
+
+5328 = {
+	culture = southislander
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5330 = {
+	holding = none
+}
+
+5332 = {
+	holding = none
+}
+
+5333 = {
+	holding = church_holding
+}
+
+5338 = {
+	culture = southislander
+	religion = black_fraternity
+	holding = castle_holding
+}
+
+5347 = {
+	holding = none
+}
+
+5353 = {
+	holding = none
+}
+
+5355 = {
+	holding = none
+}
+
+5359 = {
+	holding = none
+	
+}
+
+5360 = {
+	holding = none
+}
+
+5365 = {
+	holding = none
+}
+
+5370 = {
+	culture = agiopadis
+	religion = saintly_order
+	holding = castle_holding
+}
+
+5374 = {
+	culture = enynanthari
+	religion = mountain_sun_temple
+	holding = castle_holding
+}
+
+5377 = {
+	holding = none
+}
+
+5383 = {
+	holding = none
+}
+
+5388 = {
+	culture = southislander
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5389 = {
+	holding = none
+}
+
+5391 = {
+	holding = none
+}
+
+5394 = {
+	holding = city_holding
+}
+
+5395 = {
+	holding = none
+}
+
+5396 = {
+	holding = city_holding
+}
+
+5402 = {
+	holding = none
+}
+
+5406 = {
+	holding = none	
+}
+
+5414 = {
+	holding = none
+}
+
+5416 = {
+	holding = none
+}
+
+5418 = {
+	holding = none
+}
+
+5424 = {
+	holding = none
+}
+
+5427 = {
+	holding = none
+}
+
+5432 = {
+	holding = city_holding
+}
+
+5433 = {
+	culture = southislander
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5435 = {
+	holding = none
+}
+
+5443 = {
+	holding = none
+}
+
+5456 = {
+	holding = none
+}
+
+5460 = {
+	holding = none	
+}
+
+5461 = {
+	holding = none
+}
+
+5465 = {
+	culture = easternimperial
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5466 = {
+	culture = lakaloi
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5467 = {
+	holding = none
+}
+
+5475 = {
+	holding = none
+}
+
+5488 = {
+	holding = none
+}
+
+
+5499 = {
+	holding = none
+	
+}
+
+5503 = {
+	holding = none
+}
+
+5508 = {
+	holding = none
+	
+}
+
+5511 = {
+	holding = church_holding
+}
+
+5514 = {
+	holding = none
+}
+
+5515 = {
+	holding = none
+}
+
+
+5528 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5532 = {
+	culture = centralislander
+	religion = aversarinas_aagiokrata
+	holding = castle_holding	
+}
+
+5533 = {
+	holding = none
+}
+
+5534 = {
+	culture = centralislander
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5539 = {
+	culture = guillater
+	religion = sacred_stars_cult
+	holding = city_holding
+}
+
+5546 = {
+	holding = none
+}
+
+5547 = {
+	holding = none
+}
+
+5551 = {
+	holding = none
+	
+}
+
+5580 = {
+	culture = centralislander
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5588 = {
+	culture = centralislander
+	religion = aversarinas_aagiokrata
+	holding = church_holding
+}
+
+5596 = {
+	holding = none
+}
+
+5599 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5604 = {
+	holding = city_holding
+}
+
+5605 = {
+	culture = easternislander
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+
+
+5611 = {
+	holding = city_holding
+}
+
+
+5618 = {
+	holding = none
+}
+
+5619 = {
+	holding = none
+}
+
+5620 = {
+	culture = centralislander
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	
+}
+
+
+5626 = {
+	culture = lakaloi
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	
+}
+
+5627 = {
+	culture = centralislander
+	religion = aversarinas_aagiokrata
+	holding = city_holding
+}
+
+
+
+5641 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5642 = {
+	holding = none
+}
+
+5646 = {
+	holding = none
+}
+
+5656 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5657 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+
+
+5674 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5675 = {
+	holding = none
+}
+
+
+5680 = {
+	holding = none
+	
+}
+
+5687 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5694 = {
+	holding = none
+}
+
+5695 = {
+	culture = centralislander
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	
+}
+
+5699 = {
+	holding = city_holding
+}
+
+
+5702 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5705 = {
+	holding = none
+}
+
+5709 = {
+	holding = city_holding
+}
+
+5710 = {
+	holding = none
+}
+
+5726 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5756 = {
+	holding = none
+}
+
+5761 = {
+	culture = agiopadis
+	religion = saintly_order
+	holding = castle_holding
+	
+}
+
+
+5784 = {
+	culture = centralislander
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	
+}
+
+
+5792 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+
+5817 = {
+	holding = city_holding
+}
+
+5818 = {
+	holding = none
+	
+}
+
+
+
+
+
+
+5845 = {
+	culture = agiopadis
+	religion = agiopolei
+	holding = castle_holding
+	1100.1.1 = {
+		special_building = 01_tombofthesaints
+	}
+
+	
+}
+
+
+5877 = {
+	culture = lakaloi
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+	
+}
+
+5892 = {
+	holding = none
+	
+}
+
+5897 = {
+	holding = none
+}
+
+
+5941 = {
+	culture = agiopadis
+	religion = saintly_order
+	holding = castle_holding
+	
+}
+
+5945 = {
+	holding = none
+}
+
+
+
+5953 = {
+	religion = wasteland_faith
+	culture = wasteland
+	holding = wasteland_empty_holding
+}
+
+5954 = {
+	culture = fenvir
+	religion = sjalvolki
+	holding = castle_holding
+}
+
+5956 = {
+	holding = none
+}
+
+5959 = {
+	culture = agiopadis
+	religion = agiopolei
+	holding = castle_holding
+}
+
+
+5963 = {
+	culture = fenvir
+	religion = sjalvolki
+	holding = castle_holding
+	
+}
+
+
+
+5967 = {
+	culture = agiopadis
+	religion = agiopolei
+	holding = castle_holding
+	
+}
+
+5968 = {
+	culture = agiopadis
+	religion = saintly_order
+	holding = castle_holding
+}
+
+5970 = {
+	culture = southislander
+	religion = aversarinas_aagiokrata
+	holding = castle_holding
+}
+
+5977 = {
+	holding = none
+	
+}
+
+
+5982 = {
+	holding = none
+}
+
+5985 = {
+	culture = iseni
+	religion = zaragett_aagiokrata
+	holding = castle_holding
+	
+}
+
+5986 = {
+	culture = southislander
+	religion = aversarinas_aagiokrata
+	holding = none
+	
+}
+
+
+5990 = {
+	culture = southislander
+	religion = aversarinas_aagiokrata
+	holding = city_holding
+	
+}
+
+5991 = {
+	holding = none
+	
+}
+
+5997 = {
+	holding = none
+	
+}
+
+

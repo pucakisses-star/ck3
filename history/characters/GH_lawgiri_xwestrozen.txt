@@ -1,0 +1,86 @@
+﻿lawgiri_xwestrozen_1 = {
+	name = "Tazirit"
+	religion = xwestrozen
+	culture = lawgiri
+	female = yes
+	1171.1.5 = {
+		birth = yes
+	}
+}
+
+lawgiri_xwestrozen_2 = {
+	name = "Buyan"
+	religion = xwestrozen
+	culture = lawgiri
+	female = yes
+	1181.11.1 = {
+		birth = yes
+	}
+}
+
+lawgiri_xwestrozen_3 = { # Member of a somewhat prestigous, long running dynasty that has controlled Xurelok for several generations
+	name = "Masana"
+	religion = xwestrozen
+	culture = lawgiri
+	female = yes
+	1164.8.21 = {
+		birth = yes
+	}
+}
+
+lawgiri_xwestrozen_4 = { # Led a small cult of Silarin to Baridya, where she has sense set up residence. She hasn't been kicked out yet pretty much purely because Sinasan is too busy with other things, and tecemayt tried to resolve things diplomatically
+	name = "Ouzza"
+	religion = xwestrozen # Make Silarin when implemented
+	culture = lawgiri
+	female = yes
+	1166.12.7 = {
+		birth = yes
+	}
+	1182.12.7 = {
+		trait = paranoid
+		trait = fickle
+		trait = zealous
+		trait = education_learning_2
+		trait = heresiarch
+	}
+}
+
+lawgiri_xwestrozen_5 = {
+	name = "Buyan"
+	religion = xwestrozen
+	culture = lawgiri
+	female = yes
+	1189.11.1 = {
+		birth = yes
+	}
+}
+
+lawgiri_xwestrozen_6 = {
+	name = "Telgumas"
+	religion = xwestrozen
+	culture = lawgiri
+	female = yes
+	1161.11.1 = {
+		birth = yes
+	}
+}
+
+lawgiri_xwestrozen_7 = {
+	name = "Tajedjigt"
+	religion = xwestrozen
+	culture = lawgiri
+	female = yes
+	1172.6.9 = {
+		birth = yes
+	}
+}
+
+lawgiri_xwestrozen_8 = {
+	name = "Taha"
+	religion = xwestrozen
+	culture = lawgiri
+	female = yes
+	1194.8.9 = {
+		birth = yes
+	}
+}

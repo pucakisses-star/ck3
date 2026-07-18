@@ -1,0 +1,28 @@
+﻿bricotaves_wyrdpath_1 = {
+	name = "Anovur"
+	culture = bricotaves
+	religion = wyrdpath
+
+	1236.2.13 = {
+		birth = yes
+	}
+}
+
+bricotaves_wyrdpath_2 = {
+	name = "Basovur"
+	culture = bricotaves
+	religion = wyrdpath
+	1243.5.23 = {
+		birth = yes
+	}
+}
+
+bricotaves_wyrdpath_3 = {
+	name = "Vylloech"
+	culture = ardothanes
+	religion = wyrdpath
+
+	1240.6.1 = {
+		birth = yes
+	}
+}

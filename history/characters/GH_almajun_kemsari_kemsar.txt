@@ -1,0 +1,769 @@
+﻿almajun_kemsari_kemsar_1 = { # Giant
+	name = "Bakheperuneb"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+	dynasty = dyn_kemsar_4
+	dna = kemsar_16
+	trait = giant
+	trait = wrathful
+	trait = sadistic
+	trait = ambitious
+	trait = education_martial_3
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_sub_saharan_01
+		}
+	}
+
+	1217.1.1 = {
+		birth = yes
+		effect = {
+			give_nickname = nick_the_ferocious_giant_imhotep
+			dynasty = { add_dynasty_prestige_level = 1 }
+		}
+	}
+}
+
+almajun_kemsari_kemsar_2 = { # The Liberator
+	name = "Atim"
+	dna = kemsar_17
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	female = yes
+	trait = humble
+	trait = zealous
+	trait = just
+	trait = education_martial_4
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_sub_saharan_02
+		}
+	}
+
+	1223.1.1 = {
+		birth = yes
+		effect = {
+			give_nickname = nick_the_liberator_atim
+		}
+	}
+}
+
+almajun_kemsari_kemsar_3 = { # THE WHITE SHADOW
+	name = "Senb"
+	dna = kemsar_21
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+	dynasty = dyn_kemsar_2
+
+	father = almajun_kemsari_kemsar_8
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_sub_saharan_01
+		}
+	}
+
+	1227.1.28 = {
+		birth = yes
+		trait = magic_good_2
+		trait = albino
+		trait = intellect_good_3
+		effect = {
+			dynasty = { add_dynasty_prestige_level = 2 }
+			give_nickname = nick_the_pale_sphinx
+		}
+	}
+
+	1239.1.1 = {
+		trait = deceitful
+		trait = ambitious
+		trait = sadistic
+	}
+
+	1243.1.28 = {
+		trait = education_intrigue_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:rites_of_the_land_beyond }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+almajun_kemsari_kemsar_4 = {
+	name = "Takhat"
+	dna = almajun_kemsari_kemsar_4
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	female = yes
+	martial = 20
+	trait = stubborn
+	trait = ambitious
+	trait = unyielding_defender
+	trait = education_martial_4
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_sub_saharan_03
+		}
+	}
+
+	1235.1.1 = {
+		birth = yes
+		effect = {
+			give_nickname = nick_the_inevitable_takhat
+			add_pressed_claim = title:c_urumkhadesh
+			#add_pressed_claim = title:c_anuw_surash
+			add_pressed_claim = title:c_nezerakh
+			#add_pressed_claim = title:c_anuw_bannan
+			#add_pressed_claim = title:d_djedemhor
+		}
+	}
+}
+
+almajun_kemsari_kemsar_5 = { # First child of king Tef-Af-Hosep, Asheem was always his favorite. He promised he the largest part of his kingdom when he passes away. Asheem made sure this promise was kept in good time.
+	name = "A_hsim"
+	dna = almajun_kemsari_kemsar_5
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	female = yes
+	dynasty = dyn_kemsar_2
+	father = almajun_kemsari_kemsar_10
+	trait = sadistic
+	trait = arrogant
+	trait = ambitious
+	trait = education_intrigue_2
+	trait = beauty_good_2
+	trait = schemer
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_sub_saharan_02
+		}
+	}
+
+	1171.5.24 = {
+		birth = yes
+		effect = {
+			#add_pressed_claim = title:d_temys
+			add_pressed_claim = title:d_kdahheresh
+		}
+	}
+
+	1233.8.9 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+almajun_kemsari_kemsar_6 = { # Second child of king Tef-Ah_hosep, Murtark served as his general for many years. He was very close to his twin brother, and was devastated on his death. When his	father dying but a year later, Murtark has been struggleing with the grief.
+	name = "Mutriah" #Murtark
+	dna = almajun_kemsari_kemsar_6
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	dynasty = dyn_kemsar_2
+	father = almajun_kemsari_kemsar_10
+	trait = brave
+	trait = compassionate
+	trait = calm
+	trait = education_martial_2
+	trait = intellect_good_1
+	trait = twin
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = no_hair
+		}
+	}
+
+	1173.2.8 = {
+		birth = yes
+		effect = {
+			add_character_modifier = stress_frozen_grief
+			#add_pressed_claim = title:d_temys
+			add_pressed_claim = title:d_kdahheresh
+			#add_pressed_claim = title:d_sammur
+		}
+	}
+
+	1233.8.9 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+almajun_kemsari_kemsar_7 = { # Third child of king Tef-Ah_hosep and twin of Murtark, Jabalil served as a steward for his	father. He unfortunatly was bitten by a venomous snake
+	name = "IahbA_l" #Jabalil
+	dna = almajun_kemsari_kemsar_7
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	dynasty = dyn_kemsar_2
+	father = almajun_kemsari_kemsar_10
+	trait = just
+	trait = temperate
+	trait = calm
+	trait = education_stewardship_2
+	trait = intellect_good_1
+	trait = twin
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_sub_saharan_01
+		}
+	}
+
+	1173.2.8 = {
+		birth = yes
+	}
+
+	1198.3.17 = {
+		death = {
+			death_reason = death_plotting
+		}
+	}
+}
+
+almajun_kemsari_kemsar_8 = { # Fourth child of king Tef-Af-Hosep, Uzaffard was strong with magic from a young age. However, he was ostrascized from his family due to his leperosy. When king Tef-Af-Hosep died, he was given only a small scrap of land on the very edge of the kingdom. Embittered and resentful, he now seeks to use his magic to bring ruin upon his siblings.
+	name = "Usrifri" #Uzaffard
+	dna = almajun_kemsari_kemsar_8
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+	dynasty = dyn_kemsar_2
+
+	father = almajun_kemsari_kemsar_10
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_sub_saharan_02
+		}
+	}
+
+	1178.3.21 = {
+		birth = yes
+		trait = magic_good_4
+		trait = intellect_good_2
+		effect = {
+			#add_pressed_claim = title:d_temys
+			add_pressed_claim = title:d_kdahheresh
+			#add_pressed_claim = title:d_sammur
+			give_nickname = nick_the_pariah_uzaffard
+		}
+	}
+
+	1190.1.1 = {
+		trait = callous
+		trait = cynical
+		trait = diligent
+	}
+
+	1194.3.21 = {
+		trait = leper
+		trait = education_learning_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:rites_of_the_land_beyond }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1233.8.9 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+almajun_kemsari_kemsar_9 = { # Fifth child of king Tef-Af_Hosep, Munyu was declared by many to be the fairest of the kingdom, much to the annoyance of her older sister. She trained in the arts of	diplomacy, impressing and befriending many. Now that her	father is dead, she feels it is her task to re-unite the kingdom, with as little bloodshed as possible
+	name = "Muniah" #Munyu
+	dna = almajun_kemsari_kemsar_9
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	female = yes
+	dynasty = dyn_kemsar_2
+	father = almajun_kemsari_kemsar_10
+	trait = gregarious
+	trait = honest
+	trait = patient
+	trait = education_diplomacy_3
+	trait = magic_good_1
+	trait = beauty_good_3
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_sub_saharan_03
+		}
+	}
+
+	1182.8.19 = {
+		birth = yes
+		effect = {
+			#add_pressed_claim = title:d_temys
+			add_pressed_claim = title:d_kdahheresh
+			#add_pressed_claim = title:d_sammur
+		}
+	}
+
+	1233.8.9 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+almajun_kemsari_kemsar_10 = { # Took over most of the kingdom of Ankhur. However, he died under mysterious circumstances, and his realm was divided between his four children
+	name = "Tep_Af_Hosep"
+	dna = almajun_kemsari_kemsar_10
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	diplomacy = 4
+	martial = 6
+	stewardship =10
+	intrigue = 5
+	learning = 4
+	prowess = 5
+	dynasty = dyn_kemsar_2
+	trait = trusting
+	trait = ambitious
+	trait = wrathful
+	trait = beauty_good_1
+	trait = intellect_good_1
+	trait = magic_good_1
+	trait = education_martial_3
+	trait = rough_terrain_expert
+	trait = strategist
+	trait = gallant
+	disallow_random_traits = yes
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = no_beard
+			custom_hair = male_hair_sub_saharan_01
+		}
+	}
+
+	1154.5.9 = {
+		birth = yes
+		effect = {
+			give_nickname = nick_the_noble_tepafhosep
+		}
+	}
+
+	1199.8.9 = {
+		death = {
+			death_reason = death_plotting
+		}
+	}
+}
+
+almajun_kemsari_kemsar_11 = { #missing county
+	name = "Fai_nofre"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	1238.1.1 = {
+		birth = yes
+	}
+}
+
+almajun_kemsari_kemsar_12 = {
+	name = "Arnebaskenis"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	1234.1.1 = {
+		birth = yes
+	}
+}
+
+almajun_kemsari_kemsar_13 = {
+	name = "Hon_t_mit_heb"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	female = yes
+
+	1233.1.1 = {
+		birth = yes
+	}
+}
+
+almajun_kemsari_kemsar_14 = {
+	name = "Scemiophris"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	female = yes
+
+	1236.1.1 = {
+		birth = yes
+	}
+}
+
+almajun_kemsari_kemsar_15 = {
+	name = "Tes_bast_peru"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	female = yes
+	1222.1.1 = {
+		birth = yes
+	}
+}
+
+almajun_kemsari_kemsar_16 = { #missing county
+	name = "Hathor"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	female = yes
+
+	1237.1.1 = {
+		birth = yes
+	}
+}
+
+almajun_kemsari_kemsar_17 = {
+	name = "Rhamschosi"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	1225.1.1 = {
+		birth = yes
+	}
+}
+
+almajun_kemsari_kemsar_18 = { #missing county
+	name = "Khety"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	1238.1.1 = {
+		birth = yes
+	}
+}
+
+almajun_kemsari_kemsar_19 = {
+	name = "Fai_nofre"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+almajun_kemsari_kemsar_20 = { #missing county
+	name = "Sechet"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	female = yes
+
+	1222.1.1 = {
+		birth = yes
+	}
+}
+
+almajun_kemsari_kemsar_21 = {
+	name = "Sotemeit"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	female = yes
+
+	1227.1.1 = {
+		birth = yes
+	}
+}
+
+almajun_kemsari_kemsar_22 = {
+	name = "Teh_Ka_Rahk"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	female = yes
+
+	1176.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+almajun_kemsari_kemsar_23 = { #missing county
+	name = "Jalil"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	1185.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+almajun_kemsari_kemsar_24 = { #missing county
+	name = "Semeah"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	female = yes
+
+	1168.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+almajun_kemsari_kemsar_25 = { #missing county
+	name = "Hanifa"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	female = yes
+
+	1179.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+almajun_kemsari_kemsar_26 = { #missing county
+	name = "Tanaz"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	female = yes
+
+	1167.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+almajun_kemsari_kemsar_27 = {
+	name = "Khuit"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	female = yes
+
+	1178.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+almajun_kemsari_kemsar_28 = { #missing county
+	name = "Sahba"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	female = yes
+
+	1169.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+almajun_kemsari_kemsar_29 = {
+	name = "Shahrbano"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	female = yes
+
+	1167.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+almajun_kemsari_kemsar_30 = { #missing county
+	name = "Yahya"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	1180.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+almajun_kemsari_kemsar_31 = { #missing county
+	name = "Maryam"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	female = yes
+
+	1183.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+almajun_kemsari_kemsar_32 = {
+	name = "Zaynab"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	female = yes
+
+	1178.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+almajun_kemsari_kemsar_33 = {
+	name = "Nasr"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	1172.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+almajun_kemsari_kemsar_34 = {
+	name = "Tentamun"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	female = yes
+
+	1182.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+almajun_kemsari_kemsar_35 = {
+	name = "Burhanaddin"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	1165.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+almajun_kemsari_kemsar_36 = { #missing county
+	name = "Hafiz"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	1164.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+almajun_kemsari_kemsar_37 = {
+	name = "Qawurd"
+	religion = "kemsar"
+	culture = "almajun_kemsari"
+
+	1180.1.1 = {
+		birth = yes
+	}
+
+	1230.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}

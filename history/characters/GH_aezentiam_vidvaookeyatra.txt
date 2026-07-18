@@ -1,0 +1,54 @@
+﻿aezentiam_vidvaookeyatra_1 = { # Mercenary count
+	name = "Kharstrang"
+	dna = aezentiam_vidvaookeyatra_1
+	religion = "vidvaookeyatra"
+	culture = "aezentiam"
+	sexuality = heterosexual
+	dynasty = dyn_aezentiam_1
+	trait = shrewd
+
+	martial = 7
+	diplomacy = 5
+	stewardship = 6
+	intrigue = 6
+	learning = 4
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_beards = male_beard_western_03
+			custom_hair = male_hair_mena_02
+		}
+	}
+
+	1216.9.14 = {
+		birth = yes
+	}
+	1229.9.14 = {
+		trait = brave
+		trait = greedy
+		trait = ambitious
+	}
+	1233.9.14 = {
+		trait = education_martial_3
+		trait = adventurer
+		trait = organizer
+		trait = flexible_leader
+		trait = gh_historical_blademaster_2
+		trait = scarred
+		spawn_army = {
+			name = kharstrang_spears
+			uses_supply = yes
+			inheritable = no
+			location = province:1934
+			levies = 1000
+			men_at_arms = {
+				type = pikemen_unit
+				stacks = 3
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 1
+			}
+		}
+	}
+}

@@ -1,0 +1,92 @@
+﻿iafarana_varodaism_1 = {
+	name = "Katunkon"
+	religion = "varodaism"
+	culture = "iafarana"
+	dynasty = dynasty_iafarana_1
+	father = iafarana_varodaism_4
+	mother = iafarana_varodaism_5
+	1216.8.8 = {
+		birth = yes
+	}
+
+	1252.1.1 = {
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = religious_rights
+				level = 1
+			}
+			vassal_contract_set_obligation_level = {
+				type = title_revocation_rights
+				level = 1
+			}
+		}
+	}
+}
+
+iafarana_varodaism_2 = {
+	name = "IrA_cA_tirA_catevar"
+	religion = "varodaism"
+	culture = "iafarana"
+	dynasty = dynasty_iafarana_1
+	father = iafarana_varodaism_4
+	mother = iafarana_varodaism_5
+	1213.8.8 = {
+		birth = yes
+	}
+}
+
+iafarana_varodaism_3 = {
+	name = "KulO_ttunka"
+	religion = "varodaism"
+	culture = "iafarana"
+	dynasty = dynasty_iafarana_1
+	father = iafarana_varodaism_4
+	mother = iafarana_varodaism_5
+	1208.8.8 = {
+		birth = yes
+	}
+}
+
+iafarana_varodaism_4 = {
+	name = "IrA_cA_tirA_catevar"
+	religion = "varodaism"
+	culture = "iafarana"
+	dynasty = dynasty_iafarana_1
+
+	1181.10.4 = {
+		birth = yes
+		trait = intellect_good_1
+	}
+
+	1197.10.4 = {
+		trait = brave
+		trait = cynical
+		trait = vengeful
+	}
+	1206.2.5 = {
+		add_spouse = iafarana_varodaism_5
+	}
+	1229.9.18 = {
+		death = { death_reason = death_fall }
+	}
+}
+
+iafarana_varodaism_5 = {
+	name = "Netuntukkai"
+	religion = "varodaism"
+	culture = "saruta"
+	female = yes
+	dynasty = dynasty_saruta_1
+	father = saruta_varodaism_7
+	mother = hokanta_vidvaookeyatra_38
+
+	1189.4.25 = {
+		birth = yes
+	}
+
+	1209.1.1 = {
+		trait = temperate
+		trait = gregarious
+		trait = ambitious
+	}
+}

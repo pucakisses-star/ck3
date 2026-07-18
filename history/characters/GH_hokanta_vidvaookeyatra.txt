@@ -1,0 +1,1559 @@
+﻿hokanta_vidvaookeyatra_1 = { # Previous ruler murdered by the Regent
+	name = "Kyaswa"
+	religion = "varodaism"
+	culture = "hokanta"
+	father = hokanta_vidvaookeyatra_18
+	mother = hokanta_vidvaookeyatra_11
+	dynasty = dynasty_mysaalo
+
+	dna = hokanta_vidvaookeyatra_1
+
+	1196.8.8 = {
+		birth = yes
+	}
+	1213.3.1 = {
+		trait = poet
+		trait = fickle
+		trait = paranoid
+		trait = craven
+		trait = administrative_court_1
+	}
+	1214.5.4 = {
+		add_spouse = hokanta_vidvaookeyatra_12
+	}
+
+	1248.11.10 = {
+		death = {
+			death_reason = death_assassination
+			killer = hokanta_vidvaookeyatra_33
+		}
+	}
+}
+
+hokanta_vidvaookeyatra_2 = { # Majapahit
+	name = "Uzana"
+    dynasty = dynasty_hokanta_1
+    religion = varodaism
+    culture = hunawi
+
+    father = hokanta_vidvaookeyatra_42
+    mother = hokanta_vidvaookeyatra_43
+
+    sexuality = heterosexual
+
+	1198.8.8 = {
+		birth = yes
+	}
+}
+
+hokanta_vidvaookeyatra_3 = { # Majapahit
+	name = "Sawrahan"
+	religion = "varodaism"
+	culture = "hokanta"
+	dynasty = dynasty_hokanta_2
+	father = hokanta_vidvaookeyatra_48
+	mother = hokanta_vidvaookeyatra_49
+	1227.8.8 = {
+		birth = yes
+	}
+}
+
+hokanta_vidvaookeyatra_4 = {
+	name = "Kyiso"
+
+	dynasty = dynasty_mysaalo
+	religion = varodaism
+	culture = hokanta
+
+	sexuality = heterosexual
+
+	trait = humble
+	trait = fickle
+	trait = gluttonous
+
+	diplomacy = 16
+	martial = 15
+	stewardship = 16
+	intrigue = 15
+	learning = 11
+	prowess = 15
+
+	trait = education_diplomacy_4
+
+	1050.5.21 = {
+		birth = yes
+	}
+
+	1079.8.16 = {
+		add_spouse = hokanta_vidvaookeyatra_5
+	}
+
+	1112.1.14 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+hokanta_vidvaookeyatra_5 = {
+	name = "Linlun"
+	female = yes
+
+	religion = varodaism
+	culture = hokanta
+
+	sexuality = bisexual
+
+	trait = zealous
+	trait = craven
+	trait = callous
+
+	diplomacy = 5
+	martial = 6
+	stewardship = 7
+	intrigue = 3
+	learning = 6
+	prowess = 6
+
+	trait = education_stewardship_2
+
+	1062.8.15 = {
+		birth = yes
+	}
+
+	1120.7.21 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+hokanta_vidvaookeyatra_6 = {
+	name = "Pyusawhti"
+
+	dynasty = dynasty_mysaalo
+	religion = varodaism
+	culture = hokanta
+
+	father = hokanta_vidvaookeyatra_4
+	mother = hokanta_vidvaookeyatra_5
+
+	sexuality = heterosexual
+
+	trait = diligent
+	trait = paranoid
+	trait = humble
+
+	diplomacy = 4
+	martial = 5
+	stewardship = 15
+	intrigue = 2
+	learning = 5
+	prowess = 6
+
+	trait = education_stewardship_3
+
+	1080.4.28 = {
+		birth = yes
+	}
+
+	1081.12.9 = {
+		give_nickname = nick_the_watchfire_pyusawhti
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	1115.12.3 = {
+		add_spouse = hokanta_vidvaookeyatra_7
+	}
+
+	1135.4.2 = {
+		death = { death_reason = death_mysterious }
+	}
+}
+
+hokanta_vidvaookeyatra_7 = {
+	name = "Sajang"
+	female = yes
+
+	religion = varodaism
+	culture = hokanta
+
+	sexuality = heterosexual
+
+	trait = humble
+	trait = wrathful
+	trait = gluttonous
+
+	diplomacy = 5
+	martial = 3
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	prowess = 9
+
+	trait = education_diplomacy_4
+
+	1098.3.28 = {
+		birth = yes
+	}
+
+	1165.11.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+hokanta_vidvaookeyatra_8 = {
+	name = "Thinzar"
+	female = yes
+
+	religion = vidvaookeyatra
+	culture = hokanta
+
+	father = hokanta_vidvaookeyatra_6
+	mother = hokanta_vidvaookeyatra_7
+
+	sexuality = heterosexual
+
+	trait = lustful
+	trait = just
+	trait = generous
+
+	diplomacy = 6
+	martial = 7
+	stewardship = 5
+	intrigue = 7
+	learning = 4
+	prowess = 4
+
+	trait = education_martial_3
+
+	1125.7.27 = {
+		birth = yes
+	}
+
+	1189.11.16 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+hokanta_vidvaookeyatra_9 = {
+	name = "Thawdar"
+	female = yes
+
+	religion = varodaism
+	culture = hokanta
+
+	father = hokanta_vidvaookeyatra_6
+	mother = hokanta_vidvaookeyatra_7
+
+	sexuality = heterosexual
+
+	trait = lazy
+	trait = gluttonous
+	trait = vengeful
+
+	diplomacy = 5
+	martial = 9
+	stewardship = 7
+	intrigue = 7
+	learning = 6
+	prowess = 3
+
+	trait = education_martial_3
+
+	1127.4.27 = {
+		birth = yes
+	}
+
+	1184.2.17 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+hokanta_vidvaookeyatra_10 = {
+	name = "Kyiso"
+
+	dynasty = dynasty_mysaalo
+	religion = varodaism
+	culture = hokanta
+
+	father = hokanta_vidvaookeyatra_6
+	mother = hokanta_vidvaookeyatra_7
+
+	sexuality = heterosexual
+
+	trait = brave
+	trait = deceitful
+	trait = compassionate
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 6
+	intrigue = 6
+	learning = 5
+	prowess = 6
+
+	trait = education_diplomacy_2
+
+	1128.2.6 = {
+		birth = yes
+	}
+
+	1140.1.13 = {
+		death = { death_reason = death_mysterious killer = hokanta_vidvaookeyatra_14 }
+	}
+}
+
+hokanta_vidvaookeyatra_11 = {
+	name = "Ravindu"
+	religion = "varodaism"
+	culture = "hokanta"
+	female = yes
+	1170.5.6 = {
+		birth = yes
+	}
+	1213.3.1 = {
+		death = {
+			death_reason = death_torture
+			killer = tapuso_yakasak_3
+		}
+	}
+}
+
+hokanta_vidvaookeyatra_12 = {
+	name = "Nithurja"
+	dynasty = dynasty_hokanta_1
+	religion = vidvaookeyatra
+	culture = hunawi
+
+    father = hokanta_vidvaookeyatra_42
+    mother = hokanta_vidvaookeyatra_43
+
+	female = yes
+
+	dna = hokanta_vidvaookeyatra_12
+
+	1199.4.3 = {
+		birth = yes
+	}
+
+	1252.12.10 = {
+		death = {
+			death_reason = death_execution
+			killer = hokanta_vidvaookeyatra_33
+		}
+	}
+}
+
+hokanta_vidvaookeyatra_13 = {
+	name = "Tharahpi"
+	female = yes
+
+	religion = varodaism
+	culture = hokanta
+
+	father = hokanta_vidvaookeyatra_4
+	mother = hokanta_vidvaookeyatra_5
+
+	sexuality = heterosexual
+
+	trait = forgiving
+	trait = lustful
+	trait = gregarious
+
+	diplomacy = 4
+	martial = 11
+	stewardship = 4
+	intrigue = 2
+	learning = 5
+	prowess = 6
+
+	trait = education_martial_4
+
+	1085.9.5 = {
+		birth = yes
+	}
+
+	1158.11.2 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+hokanta_vidvaookeyatra_14 = {
+	name = "Payang"
+
+	dynasty = dynasty_mysaalo
+	religion = varodaism
+	culture = hokanta
+
+	father = hokanta_vidvaookeyatra_4
+	mother = hokanta_vidvaookeyatra_5
+
+	sexuality = homosexual
+
+	trait = trusting
+	trait = arbitrary
+	trait = impatient
+
+	diplomacy = 5
+	martial = 6
+	stewardship = 6
+	intrigue = 10
+	learning = 4
+	prowess = 6
+
+	1086.5.7 = {
+		birth = yes
+	}
+
+	1102.5.7 = {
+		trait = education_intrigue_3
+	}
+
+	1123.12.18 = {
+		add_spouse = hokanta_vidvaookeyatra_15
+		trait = shrewd
+	}
+
+	1140.9.5 = {
+		give_nickname = nick_the_king_of_thorns_payang
+	}
+
+	1147.4.26 = {
+		death = { death_reason = death_ill }
+	}
+}
+
+hokanta_vidvaookeyatra_15 = {
+	name = "Gadau"
+	female = yes
+
+	religion = varodaism
+	culture = hokanta
+
+	sexuality = heterosexual
+
+	trait = shy
+	trait = ambitious
+	trait = arrogant
+
+	diplomacy = 6
+	martial = 7
+	stewardship = 8
+	intrigue = 5
+	learning = 5
+	prowess = 5
+
+	trait = education_stewardship_2
+
+	1106.12.19 = {
+		birth = yes
+	}
+
+	1176.9.25 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+hokanta_vidvaookeyatra_16 = {
+	name = "Sithu"
+
+	dynasty = dynasty_mysaalo
+	religion = varodaism
+	culture = hokanta
+
+	father = hokanta_vidvaookeyatra_14
+	mother = hokanta_vidvaookeyatra_15
+
+	sexuality = heterosexual
+
+	trait = zealous
+	trait = gregarious
+	trait = content
+
+	diplomacy = 7
+	martial = 7
+	stewardship = 8
+	intrigue = 4
+	learning = 8
+	prowess = 4
+
+	trait = education_stewardship_4
+
+	1124.7.4 = {
+		birth = yes
+	}
+
+	1157.4.28 = {
+		add_spouse = hokanta_vidvaookeyatra_17
+	}
+
+	1178.8.20 = {
+		death = { death_reason = death_horse_riding_accident }
+	}
+}
+
+hokanta_vidvaookeyatra_17 = {
+	name = "Hnin"
+	female = yes
+
+	religion = varodaism
+	culture = hokanta
+
+	sexuality = heterosexual
+
+	trait = gregarious
+	trait = chaste
+	trait = content
+
+	diplomacy = 3
+	martial = 7
+	stewardship = 6
+	intrigue = 6
+	learning = 4
+	prowess = 6
+
+	trait = education_martial_3
+
+	1140.9.4 = {
+		birth = yes
+	}
+
+	1188.8.6 = {
+		death = { death_reason = death_leper }
+	}
+}
+
+hokanta_vidvaookeyatra_18 = {
+	name = "Kyaswa"
+	religion = "varodaism"
+	culture = "hokanta"
+	dynasty = dynasty_mysaalo
+	father = hokanta_vidvaookeyatra_16
+	mother = hokanta_vidvaookeyatra_17
+
+	1168.4.6 = {
+		birth = yes
+	}
+	1184.4.6 = {
+		trait = drunkard
+		trait = ambitious
+		trait = paranoid
+		trait = stubborn
+		trait = administrative_court_1
+		trait = education_stewardship_3
+		trait = shrewd
+	}
+	1188.4.9 = {
+		add_spouse = hokanta_vidvaookeyatra_11
+	}
+	1213.8.26 = {
+		death = {
+			death_reason = death_beaten
+			killer = tapuso_yakasak_3
+		}
+	}
+}
+
+hokanta_vidvaookeyatra_19 = {
+	name = "Jeyya"
+
+	dynasty = dynasty_mysaalo
+	religion = varodaism
+	culture = hokanta
+
+	father = hokanta_vidvaookeyatra_16
+	mother = hokanta_vidvaookeyatra_17
+
+	sexuality = heterosexual
+
+	trait = sadistic
+	trait = ambitious
+	trait = vengeful
+
+	diplomacy = 5
+	martial = 6
+	stewardship = 4
+	intrigue = 6
+	learning = 10
+	prowess = 6
+
+	trait = education_learning_4
+
+	1170.9.28 = {
+		birth = yes
+	}
+
+	1193.2.10 = {
+		add_spouse = hokanta_vidvaookeyatra_20
+	}
+
+	1219.2.28 = {
+		death = { death_reason = death_battle killer = prapataro_asritayka_7 }
+	}
+}
+
+hokanta_vidvaookeyatra_20 = {
+	name = "Thinzar"
+	female = yes
+
+	religion = vidvaookeyatra
+	culture = hokanta
+
+	sexuality = heterosexual
+
+	trait = calm
+	trait = temperate
+	trait = patient
+
+	diplomacy = 6
+	martial = 4
+	stewardship = 5
+	intrigue = 5
+	learning = 8
+	prowess = 3
+
+	trait = education_learning_3
+
+	1176.7.7 = {
+		birth = yes
+	}
+
+	1241.8.27 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+hokanta_vidvaookeyatra_21 = {
+	name = "Siha"
+
+	dynasty = dynasty_mysaalo
+	religion = varodaism
+	culture = hokanta
+
+	father = hokanta_vidvaookeyatra_16
+	mother = hokanta_vidvaookeyatra_17
+
+	sexuality = heterosexual
+
+	trait = sadistic
+	trait = trusting
+	trait = arbitrary
+
+	diplomacy = 8
+	martial = 6
+	stewardship = 4
+	intrigue = 9
+	learning = 8
+	prowess = 7
+
+	trait = education_intrigue_3
+
+	1172.6.5 = {
+		birth = yes
+	}
+
+	1182.3.4 = {
+		add_spouse = hokanta_vidvaookeyatra_22
+	}
+
+	1227.7.4 = {
+		death = { death_reason = death_mysterious }
+	}
+}
+
+hokanta_vidvaookeyatra_22 = {
+	name = "Thinzar"
+	female = yes
+
+	religion = varodaism
+	culture = hokanta
+
+	sexuality = heterosexual
+
+	trait = shy
+	trait = generous
+	trait = wrathful
+
+	diplomacy = 5
+	martial = 7
+	stewardship = 8
+	intrigue = 6
+	learning = 4
+	prowess = 8
+
+	trait = education_stewardship_2
+
+	1165.7.5 = {
+		birth = yes
+	}
+
+	1232.3.27 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+hokanta_vidvaookeyatra_23 = {
+	name = "Sanda"
+	female = yes
+
+	religion = varodaism
+	culture = hokanta
+
+	father = hokanta_vidvaookeyatra_14
+	mother = hokanta_vidvaookeyatra_15
+
+	sexuality = heterosexual
+
+	trait = lazy
+	trait = content
+	trait = forgiving
+
+	diplomacy = 1
+	martial = 7
+	stewardship = 8
+	intrigue = 5
+	learning = 7
+	prowess = 6
+
+	trait = education_stewardship_4
+
+	1131.2.10 = {
+		birth = yes
+	}
+
+	1194.7.11 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+hokanta_vidvaookeyatra_24 = {
+	name = "Narathu"
+
+	dynasty = dynasty_mysaalo
+	religion = varodaism
+	culture = hokanta
+
+	father = hokanta_vidvaookeyatra_14
+	mother = hokanta_vidvaookeyatra_15
+
+	sexuality = heterosexual
+
+	trait = generous
+	trait = stubborn
+	trait = patient
+
+	diplomacy = 8
+	martial = 4
+	stewardship = 6
+	intrigue = 9
+	learning = 5
+	prowess = 9
+
+	trait = education_martial_3
+
+	1133.5.22 = {
+		birth = yes
+	}
+
+	1134.8.9 = {
+		give_nickname = nick_the_tactician_narathu
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	1163.6.28 = {
+		add_spouse = hokanta_vidvaookeyatra_25
+	}
+
+	1203.5.20 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+hokanta_vidvaookeyatra_25 = {
+	name = "Ekari"
+	female = yes
+
+	religion = varodaism
+	culture = hokanta
+
+	sexuality = heterosexual
+
+	trait = cynical
+	trait = humble
+	trait = diligent
+
+	diplomacy = 8
+	martial = 3
+	stewardship = 6
+	intrigue = 7
+	learning = 5
+	prowess = 5
+
+	trait = education_diplomacy_2
+
+	1146.12.6 = {
+		birth = yes
+	}
+
+	1219.9.7 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+hokanta_vidvaookeyatra_26 = {
+	name = "Thang"
+
+	dynasty = dynasty_mysaalo
+	religion = varodaism
+	culture = hokanta
+
+	father = hokanta_vidvaookeyatra_24
+	mother = hokanta_vidvaookeyatra_25
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = calm
+	trait = cynical
+
+	diplomacy = 7
+	martial = 9
+	stewardship = 5
+	intrigue = 9
+	learning = 8
+	prowess = 6
+
+	trait = education_martial_3
+
+	1164.9.4 = {
+		birth = yes
+	}
+
+	1185.11.28 = {
+		death = { death_reason = death_hunting_accident }
+	}
+}
+
+hokanta_vidvaookeyatra_27 = {
+	name = "Thawdar"
+
+	dynasty = dynasty_mysaalo
+	religion = vidvaookeyatra
+	culture = hokanta
+
+	father = hokanta_vidvaookeyatra_24
+	mother = hokanta_vidvaookeyatra_25
+
+	sexuality = asexual
+
+	trait = generous
+	trait = fickle
+	trait = temperate
+
+	diplomacy = 8
+	martial = 4
+	stewardship = 4
+	intrigue = 2
+	learning = 4
+	prowess = 5
+
+	trait = education_diplomacy_4
+
+	1166.8.22 = {
+		birth = yes
+	}
+
+	1167.4.17 = {
+		give_nickname = nick_the_resplendent_thawdar
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+
+	1211.12.6 = {
+		trait = eunuch_1
+	}
+	1233.12.16 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+hokanta_vidvaookeyatra_28 = {
+	name = "Wanna"
+
+	dynasty = dynasty_mysaalo
+	religion = varodaism
+	culture = hokanta
+
+	father = hokanta_vidvaookeyatra_24
+	mother = hokanta_vidvaookeyatra_25
+
+	sexuality = heterosexual
+
+	trait = ambitious
+	trait = forgiving
+	trait = humble
+
+	diplomacy = 6
+	martial = 6
+	stewardship = 6
+	intrigue = 3
+	learning = 6
+	prowess = 4
+
+	trait = education_diplomacy_4
+
+	1168.11.21 = {
+		birth = yes
+	}
+
+	1193.1.14 = {
+		add_spouse = hokanta_vidvaookeyatra_29
+	}
+
+	1240.2.28 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+hokanta_vidvaookeyatra_29 = {
+	name = "Cho"
+	female = yes
+
+	religion = varodaism
+	culture = hokanta
+
+	sexuality = heterosexual
+
+	trait = generous
+	trait = trusting
+	trait = sadistic
+
+	diplomacy = 5
+	martial = 4
+	stewardship = 7
+	intrigue = 2
+	learning = 5
+	prowess = 7
+
+	trait = education_stewardship_2
+
+	1176.2.1 = {
+		birth = yes
+	}
+
+	1236.6.18 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+hokanta_vidvaookeyatra_30 = {
+	name = "Inzali"
+	female = yes
+
+	religion = vidvaookeyatra
+	culture = hokanta
+
+	father = hokanta_vidvaookeyatra_24
+	mother = hokanta_vidvaookeyatra_25
+
+	sexuality = heterosexual
+
+	trait = deceitful
+	trait = fickle
+	trait = trusting
+
+	diplomacy = 5
+	martial = 5
+	stewardship = 6
+	intrigue = 8
+	learning = 6
+	prowess = 7
+
+	trait = education_intrigue_3
+
+	1170.7.26 = {
+		birth = yes
+	}
+
+	1201.6.14 = {
+		death = { death_reason = death_vanished }
+	}
+}
+
+hokanta_vidvaookeyatra_31 = {
+	name = "Kra"
+	female = yes
+
+	religion = varodaism
+	culture = hokanta
+
+	father = hokanta_vidvaookeyatra_4
+	mother = hokanta_vidvaookeyatra_5
+
+	sexuality = heterosexual
+
+	trait = honest
+	trait = ambitious
+	trait = humble
+
+	diplomacy = 7
+	martial = 6
+	stewardship = 9
+	intrigue = 5
+	learning = 7
+	prowess = 8
+
+	trait = education_stewardship_2
+
+	1090.12.16 = {
+		birth = yes
+	}
+
+	1152.2.24 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+hokanta_vidvaookeyatra_32 = {
+	name = "Thandar"
+	female = yes
+
+	religion = varodaism
+	culture = hokanta
+
+	father = hokanta_vidvaookeyatra_4
+	mother = hokanta_vidvaookeyatra_5
+
+	sexuality = asexual
+
+	trait = temperate
+	trait = humble
+	trait = lazy
+
+	diplomacy = 6
+	martial = 8
+	stewardship = 8
+	intrigue = 3
+	learning = 6
+	prowess = 6
+
+	trait = education_martial_1
+
+	1093.9.10 = {
+		birth = yes
+	}
+
+	1117.11.2 = {
+		death = { death_reason = death_typhus }
+	}
+}
+
+hokanta_vidvaookeyatra_33 = { # Regent of !Majapahit, Assassinated previous ruler and attempted to kill the heir, who is now a Pirate
+	name = "Shantos"
+	religion = "vidvaookeyatra"
+	culture = "hokanta"
+
+	dna = hokanta_vidvaookeyatra_33
+
+	1208.4.3 = {
+		birth = yes
+	}
+	1225.4.4 = {
+		trait = education_intrigue_3
+		trait = cynical
+		trait = callous
+		trait = vengeful
+	}
+	1249.1.1 = {
+		effect = {
+			add_character_modifier = kinilam_regency_modifier
+		}
+	}
+}
+
+hokanta_vidvaookeyatra_34 = { # True heir to the throne of Kinilam
+	name = "Narathu"
+	religion = "varodaism"
+	culture = "hokanta"
+	dynasty = dynasty_mysaalo
+	father = hokanta_vidvaookeyatra_1
+	mother = hokanta_vidvaookeyatra_12
+
+	dna = hokanta_vidvaookeyatra_34
+
+	portrait_override={
+		portrait_modifier_overrides={
+			custom_beards=no_beard
+			beards=has_no_beard
+			hairstyles=indian_curly
+		}
+	}
+
+	1235.11.10 = {
+		birth = yes
+		effect = {
+			add_character_flag = dont_generate_family
+			add_character_flag = has_scripted_appearance
+			dynasty = { add_dynasty_prestige_level = 3 }
+		}
+	}
+
+	1251.11.10 = {
+		trait = fickle
+		trait = ambitious
+		trait = gregarious
+		trait = vengeful
+		trait = adventurer
+		trait = strong
+		add_perk = beasthunter_perk
+		add_perk = home_turf_perk
+		give_nickname = nick_coatl_slayer
+		trait = gh_historical_track_beasthunter_2
+	}
+	
+	1253.7.6 = {
+		effect = {
+			set_relation_soulmate = { target = character:garami_varodaism_1d reason = soulmate_pirates }
+			set_relation_nemesis = { target = character:hokanta_vidvaookeyatra_33 reason = killed_my_mother }
+		}
+	}
+}
+
+hokanta_vidvaookeyatra_35 = {
+    name = "Tarabya" 
+
+    dynasty = dynasty_hokanta_1
+    religion = varodaism
+    culture = hunawi
+
+    sexuality = heterosexual
+
+    trait = craven
+    trait = cynical
+    trait = shy
+    trait = magic_good_4
+
+    1110.1.1 = {
+        birth = yes
+    }
+
+    1121.5.22 = {
+        add_spouse = hokanta_vidvaookeyatra_36
+    }
+
+    1167.6.18 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+hokanta_vidvaookeyatra_36 = {
+    name = "Nilar" 
+    female = yes
+
+    religion = varodaism
+    culture = hokanta
+
+    sexuality = heterosexual
+
+    trait = deceitful
+    trait = craven
+    trait = trusting
+
+    1114.2.2 = {
+        birth = yes
+    }
+
+    1170.2.10 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+hokanta_vidvaookeyatra_37 = {
+    name = "Myine" 
+    female = yes
+
+    religion = varodaism
+    culture = hokanta
+
+    father = hokanta_vidvaookeyatra_35
+    mother = hokanta_vidvaookeyatra_36
+
+    sexuality = heterosexual
+
+    trait = lustful
+    trait = impatient
+    trait = ambitious
+    trait = magic_good_2
+
+    1139.11.11 = {
+        birth = yes
+    }
+
+    1200.3.1 = {
+        death = {
+            death_reason = death_frodbrokna
+            killer = westernimperial_aeschraes_aagiokrata_1
+        }
+    }
+}
+
+hokanta_vidvaookeyatra_38 = {
+    name = "Manyju" 
+    female = yes
+
+    religion = varodaism
+    culture = hokanta
+
+    father = hokanta_vidvaookeyatra_35
+    mother = hokanta_vidvaookeyatra_36
+
+    sexuality = heterosexual
+
+    trait = impatient
+    trait = chaste
+    trait = greedy
+    trait = magic_good_1
+
+    1141.4.14 = {
+        birth = yes
+    }
+
+    1200.3.1 = {
+        death = {
+            death_reason = death_frodbrokna
+            killer = westernimperial_aeschraes_aagiokrata_1
+        }
+    }
+}
+
+hokanta_vidvaookeyatra_39 = {
+    name = "Minkhaung" 
+
+    dynasty = dynasty_hokanta_1
+    religion = varodaism
+    culture = hunawi
+
+    father = hokanta_vidvaookeyatra_35
+    mother = hokanta_vidvaookeyatra_36
+
+    sexuality = heterosexual
+
+    trait = fickle
+    trait = calm
+    trait = arrogant
+    trait = magic_good_3
+
+    1144.8.6 = {
+        birth = yes
+    }
+
+    1159.5.19 = {
+        add_spouse = hokanta_vidvaookeyatra_40
+    }
+
+    1200.3.1 = {
+        death = {
+            death_reason = death_frodbrokna
+            killer = westernimperial_aeschraes_aagiokrata_1
+        }
+    }
+}
+
+hokanta_vidvaookeyatra_40 = {
+    name = "Hnin" 
+    female = yes
+
+    religion = vidvaookeyatra
+    culture = hokanta
+
+    sexuality = heterosexual
+
+    trait = just
+    trait = lustful
+    trait = cynical
+    trait = magic_good_2
+
+    1152.1.9 = {
+        birth = yes
+    }
+
+    1200.3.1 = {
+        death = {
+            death_reason = death_frodbrokna
+            killer = westernimperial_aeschraes_aagiokrata_1
+        }
+    }
+}
+
+hokanta_vidvaookeyatra_41 = {
+    name = "Hkyairi" 
+    female = yes
+
+    religion = varodaism
+    culture = hokanta
+
+    father = hokanta_vidvaookeyatra_39
+    mother = hokanta_vidvaookeyatra_40
+
+    sexuality = heterosexual
+
+    trait = shy
+    trait = craven
+    trait = temperate
+
+    1171.5.18 = {
+        birth = yes
+    }
+
+    1236.8.9 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+hokanta_vidvaookeyatra_42 = {
+    name = "Bayinnaung" 
+
+    dynasty = dynasty_hokanta_1
+    religion = varodaism
+    culture = hunawi
+
+    father = hokanta_vidvaookeyatra_39
+    mother = hokanta_vidvaookeyatra_40
+
+    sexuality = heterosexual
+
+    trait = shy
+    trait = brave
+    trait = arbitrary
+    trait = magic_good_3
+
+    1174.2.3 = {
+        birth = yes
+    }
+
+    1175.1.25 = {
+        give_nickname = nick_the_whisperer
+        effect = {
+            add_character_flag = {
+                flag = had_nickname_event
+            }
+        }
+    }
+
+    1197.5.8 = {
+        add_spouse = hokanta_vidvaookeyatra_43
+    }
+
+    1242.12.24 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+hokanta_vidvaookeyatra_43 = {
+    name = "Ohmar" 
+    female = yes
+
+    religion = varodaism
+    culture = hunawi
+
+    sexuality = heterosexual
+
+    trait = callous
+    trait = patient
+    trait = content
+
+    1180.8.19 = {
+        birth = yes
+    }
+
+    1200.3.1 = {
+        death = {
+            death_reason = death_frodbrokna
+            killer = westernimperial_aeschraes_aagiokrata_1
+        }
+    }
+}
+
+hokanta_vidvaookeyatra_44 = {
+    name = "Kywe" 
+
+    dynasty = dynasty_hokanta_2
+    religion = vidvaookeyatra
+    culture = hokanta
+
+    sexuality = asexual
+
+    trait = humble
+    trait = temperate
+    trait = fickle
+
+    1132.1.23 = {
+        birth = yes
+    }
+
+    1153.9.1 = {
+        add_spouse = hokanta_vidvaookeyatra_45
+    }
+
+    1197.10.10 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+hokanta_vidvaookeyatra_45 = {
+    name = "Inzali" 
+    female = yes
+
+    religion = varodaism
+    culture = hokanta
+
+    sexuality = heterosexual
+
+    trait = zealous
+    trait = shy
+    trait = ambitious
+
+    1136.2.1 = {
+        birth = yes
+    }
+
+    1204.8.9 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+hokanta_vidvaookeyatra_46 = {
+    name = "Sawrahan" 
+
+    dynasty = dynasty_hokanta_2
+    religion = varodaism
+    culture = hokanta
+
+    father = hokanta_vidvaookeyatra_44
+    mother = hokanta_vidvaookeyatra_45
+
+    sexuality = asexual
+
+    trait = craven
+    trait = sadistic
+    trait = paranoid
+
+    1162.6.8 = {
+        birth = yes
+    }
+
+    1183.9.11 = {
+        add_spouse = hokanta_vidvaookeyatra_47
+    }
+
+    1230.1.9 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+hokanta_vidvaookeyatra_47 = {
+    name = "Mra" 
+    female = yes
+
+    religion = varodaism
+    culture = hokanta
+
+    sexuality = heterosexual
+
+    trait = arbitrary
+    trait = lazy
+    trait = callous
+
+    1166.8.10 = {
+        birth = yes
+    }
+
+    1231.12.24 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+
+hokanta_vidvaookeyatra_48 = {
+    name = "Sawrahan" 
+
+    dynasty = dynasty_hokanta_2
+    religion = vidvaookeyatra
+    culture = hokanta
+
+    father = hokanta_vidvaookeyatra_46
+    mother = hokanta_vidvaookeyatra_47
+
+    sexuality = heterosexual
+
+    trait = zealous
+    trait = greedy
+    trait = vengeful
+
+    1203.11.11 = {
+        birth = yes
+    }
+
+    1225.8.26 = {
+        add_spouse = hokanta_vidvaookeyatra_49
+    }
+
+    1252.4.3 = {
+        death = { death_reason = death_execution killer = korlona_dravadari_1 }
+    }
+}
+
+hokanta_vidvaookeyatra_49 = {
+    name = "Cho" 
+    female = yes
+
+    religion = varodaism
+    culture = hokanta
+
+    sexuality = heterosexual
+
+    trait = craven
+    trait = callous
+    trait = humble
+
+    1208.11.14 = {
+        birth = yes
+    }
+
+    1253.2.24 = {
+        death = { death_reason = death_execution killer = korlona_dravadari_1 }
+    }
+}
+
+hokanta_vidvaookeyatra_50 = {
+    name = "Myintzu" 
+    female = yes
+
+    religion = vidvaookeyatra
+    culture = hokanta
+
+    father = hokanta_vidvaookeyatra_44
+    mother = hokanta_vidvaookeyatra_45
+
+    sexuality = heterosexual
+
+    trait = vengeful
+    trait = deceitful
+    trait = lustful
+
+    1165.5.8 = {
+        birth = yes
+    }
+
+    1231.2.14 = {
+        death = { death_reason = death_natural_causes }
+    }
+}
+

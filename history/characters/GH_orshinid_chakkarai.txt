@@ -1,0 +1,20 @@
+﻿orshinid_chakkarai_1 = { # Otached
+	name = "Khudu"
+	religion = "chakkarai"
+	culture = "orshinid"
+	1205.8.8 = {
+		birth = yes
+	}
+	1254.1.1 = {
+		employer = orshinid_chakkarai_2
+	}
+}
+
+orshinid_chakkarai_2 = { # Otached holdouts
+	name = "Khudu"
+	religion = "chakkarai"
+	culture = "orshinid"
+	1208.8.8 = {
+		birth = yes
+	}
+}

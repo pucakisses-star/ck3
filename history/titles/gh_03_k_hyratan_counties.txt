@@ -1,0 +1,25 @@
+c_cumiak = {
+	1240.1.1 = {
+		holder = mithaista_vidvaookeyatra_1
+	}
+}
+c_dhodoli = {
+	1251.1.1 = {
+		holder = aezentiam_vidvaookeyatra_1
+		change_development_level = 4
+	}
+}
+c_visakhrjor = {
+	1251.1.1 = {
+		holder = armanas_cuthanagi_1
+		liege = d_hyratan
+		change_development_level = 7
+	}
+}
+c_umoragha = {
+	1251.1.1 = {
+		holder = armanas_cuthanagi_1
+		liege = d_hyratan
+		change_development_level = 7
+	}
+}

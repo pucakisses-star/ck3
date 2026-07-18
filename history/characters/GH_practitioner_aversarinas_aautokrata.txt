@@ -1,0 +1,608 @@
+﻿practitioner_aversarinas_aagiokrata_1 = { # Arch-Magi Olitaxinos of the Mayikrata, led the Mayik during Aesch and Axi's stay there, slain by the latter, also Terrox' dad
+	name = "Olitaxinos" 
+	religion = aversarinas_aagiokrata
+	culture = practitioner
+	dynasty = dyn_aversarian_15
+	disallow_random_traits = yes
+
+	martial = 7
+	diplomacy = 5
+	intrigue = 4
+	stewardship = 3
+	learning = 6
+	prowess = 2
+
+	1125.4.30 = {
+		birth = yes
+		trait = magic_good_6
+	}
+
+	1137.1.1 = {
+		trait = ambitious
+		trait = arrogant
+		trait = greedy
+	}
+
+	1141.4.30 = {
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+		trait = gh_excessively_pale
+	}
+
+	1184.4.1 = {
+		death = {
+			death_reason = death_magic_fire
+			killer = easternimperial_aversarian_axiaotheaism_1 # Axiaothea
+		}
+	}
+}
+
+practitioner_aversarinas_aagiokrata_2 = { # Arch-Magi Simoisius of the Mayikrata, Arch-Magi during Frodbrokna
+	name = "Simoisius"
+	dna = simoisius
+	religion = aversarinas_aagiokrata
+	culture = practitioner
+	disallow_random_traits = yes
+
+	martial = 7
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 2
+	learning = 7
+	prowess = 6
+
+	1123.9.10 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1135.1.1 = {
+		trait = fickle
+		trait = arbitrary
+		trait = callous
+	}
+
+	1139.9.10 = {
+		trait = education_arcana_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+		trait = gh_glowing_veins
+	}
+
+	1200.3.1 = {
+		death = {
+			death_reason = death_frodbrokna
+			killer = westernimperial_aeschraes_aagiokrata_1
+		}
+	}
+}
+
+practitioner_aversarinas_aagiokrata_3 = { # Magister Ludic Mscra
+	name = "Ludic"
+	religion = aversarinas_aagiokrata
+	culture = practitioner
+	disallow_random_traits = yes
+	dynasty = dyn_aversarian_118
+
+	martial = 4
+	diplomacy = 7
+	intrigue = 6
+	stewardship = 6
+	learning = 7
+	prowess = 5
+
+	1154.9.15 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1166.1.1 = {
+		trait = sadistic
+		trait = calm
+		trait = gregarious
+	}
+
+	1170.9.15 = {
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+		trait = poet
+	}
+
+	1229.1.21 = {
+		death = {
+			death_reason = death_murder_known
+			killer = practitioner_aversarinas_aagiokrata_5
+		}
+	}
+}
+
+practitioner_aversarinas_aagiokrata_4 = { # Rev Zanuga, was willing to let Terrox take the reins despite his greater power. Slain by Cenware in the raid.
+	name = "Rev"
+	religion = aversarinas_aagiokrata
+	culture = practitioner
+	disallow_random_traits = yes
+	dynasty = dyn_aversarian_122
+
+	martial = 2
+	diplomacy = 4
+	intrigue = 2
+	stewardship = 8
+	learning = 8
+	prowess = 3
+
+	1168.2.6 = {
+		birth = yes
+		trait = magic_good_5
+	}
+
+	1180.1.1 = {
+		trait = content
+		trait = humble
+		trait = stubborn
+	}
+
+	1184.2.6 = {
+		trait = scholar
+		trait = education_arcana_4
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+
+	1244.3.2 = {
+		death = {
+			death_reason = death_battle
+			killer = daukeni_sjalvolki_1
+		}
+	}
+}
+
+practitioner_aversarinas_aagiokrata_5 = { # Salty incel
+	name = "Terrox"
+	dna = terrox
+	dynasty = dyn_aversarian_15
+	religion = "aversarinas_aagiokrata"
+	culture = "practitioner"
+
+	father = practitioner_aversarinas_aagiokrata_1
+	
+	1169.7.23 = {
+		birth = yes
+		trait = magic_good_4
+		trait = beauty_bad_2
+		trait = intellect_good_1
+		trait = weak
+		trait = stuttering
+	}
+
+	1181.1.1 = {
+		trait = arrogant
+		trait = ambitious
+		trait = craven
+	}
+
+	1185.7.23 = {
+		trait = schemer
+		trait = education_learning_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+
+	1200.3.1 = {
+		trait = depressed_1
+		effect = {
+			set_relation_rival = character:westernimperial_aeschraes_aagiokrata_1 # Killed his wife-to-be, Axiaothea
+		}
+	}
+
+	1230.1.2 = {
+		capital = c_mayik_room_1
+	}
+}
+
+practitioner_aversarinas_aagiokrata_6 = {
+	name = Lycaon
+	religion = "aversarinas_aagiokrata"
+	culture = "practitioner"
+	dynasty = dyn_aversarian_86
+
+	1204.3.12 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1220.3.12 = {
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	1230.1.1 = {
+		capital = c_poios
+	}
+}
+
+practitioner_aversarinas_aagiokrata_7 = {
+	name = Inachus
+	religion = "aversarinas_aagiokrata"
+	culture = "practitioner"
+	
+	1211.6.16 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1227.6.16 = {
+		trait = education_arcana_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+}
+
+practitioner_aversarinas_aagiokrata_8 = {
+	name = Vaeox
+	religion = "aversarinas_aagiokrata"
+	culture = "practitioner"
+
+	1187.2.16 = {
+		birth = yes
+		trait = magic_good_3
+	}
+	1203.2.16 = {
+		trait = education_intrigue_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+practitioner_aversarinas_aagiokrata_9 = {
+	name = Murdonyx
+	religion = "aversarinas_aagiokrata"
+	culture = "practitioner"
+
+	1181.8.29 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1197.8.29 = {
+		trait = education_arcana_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+}
+
+practitioner_aversarinas_aagiokrata_10 = {
+	name = "Vdeligun"
+	religion = "aversarinas_aagiokrata"
+	culture = "practitioner"
+	dynasty = dyn_aversarian_85
+	
+	1206.6.29 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1222.6.29 = {
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+
+	#1253.2.2 = {
+	#	capital = c_apenia
+	#}
+}
+
+practitioner_aversarinas_aagiokrata_11 = {
+	name = "Evantia"
+	religion = "aversarinas_aagiokrata"
+	culture = "practitioner"
+	female = yes
+	
+	1207.3.1 = {
+		birth = yes
+		trait = magic_good_2
+		add_pressed_claim = title:e_mayikprolollan
+	}
+
+	1219.1.1 = {
+		trait = deceitful
+		trait = ambitious
+		trait = sadistic
+	}
+
+	1223.3.1 = {
+		trait = education_learning_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+#d_clamae
+practitioner_aversarinas_aagiokrata_12 = {
+	name = "Kerkyon"
+	religion = "aversarinas_aagiokrata"
+	culture = "practitioner"
+	female = no
+	
+	1213.7.6 = {
+		birth = yes
+		trait = magic_good_2
+		add_pressed_claim = title:e_mayikprolollan
+	}
+
+	1225.1.1 = {
+		trait = deceitful
+		trait = ambitious
+		trait = sadistic
+	}
+
+	1229.7.6 = {
+		trait = education_learning_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+practitioner_aversarinas_aagiokrata_13 = {
+	name = "Eruzor" 
+	religion = "aversarinas_aagiokrata"
+	culture = "practitioner"
+
+	sexuality = heterosexual
+
+	trait = humble
+	trait = fickle
+	trait = gluttonous
+
+	diplomacy = 6
+	martial = 7
+	stewardship = 7
+	intrigue = 7
+	learning = 7
+	prowess = 9
+
+	trait = education_martial_4
+
+	1216.11.12 = {
+		birth = yes
+	}
+
+	1251.3.27 = {
+		add_spouse = practitioner_aversarinas_aagiokrata_14
+	}
+}
+
+practitioner_aversarinas_aagiokrata_14 = {
+	name = "Urifel" 
+	female = yes
+	religion = "aversarinas_aagiokrata"
+	culture = "practitioner"
+
+	sexuality = bisexual
+
+	trait = zealous
+	trait = craven
+	trait = callous
+
+	diplomacy = 5
+	martial = 6
+	stewardship = 7
+	intrigue = 3
+	learning = 6
+	prowess = 6
+
+	trait = education_stewardship_2
+
+	1230.12.22 = {
+		birth = yes
+	}
+}
+
+practitioner_aversarinas_aagiokrata_15 = {
+	name = "Azrufel" 
+	female = no
+
+	religion = "aversarinas_aagiokrata"
+	culture = "practitioner"
+
+	sexuality = heterosexual
+
+	trait = trusting
+	trait = vengeful
+	trait = fickle
+
+	diplomacy = 11
+	martial = 7
+	stewardship = 12
+	intrigue = 8
+	learning = 15
+	prowess = 9
+
+	trait = education_diplomacy_3
+
+	1239.4.23 = {
+		birth = yes
+	}
+}
+
+practitioner_aversarinas_aagiokrata_16 = {
+	name = "Parakios"
+	
+	religion = "aversarinas_aagiokrata"
+	culture = "practitioner"
+
+	1201.3.15 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1217.3.15 = {
+		trait = education_martial_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+}
+
+practitioner_aversarinas_aagiokrata_17 = {
+	name = "Gabriel"
+	religion = "aversarinas_aagiokrata"
+	culture = "practitioner"
+
+	1212.9.3 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1228.9.3 = {
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+practitioner_aversarinas_aagiokrata_18 = {
+	name = "Konstas"
+	religion = "aversarinas_aagiokrata"
+	culture = "practitioner"
+
+	1231.8.6 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1247.8.6 = {
+		trait = education_arcana_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+}
+
+practitioner_aversarinas_aagiokrata_19 = {
+	name = "Komitas"
+	religion = "aversarinas_aagiokrata"
+	culture = "practitioner"
+
+	1220.11.3 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1236.11.3 = {
+		trait = education_stewardship_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+}
+
+practitioner_aversarinas_aagiokrata_20 = {
+	name = "Helene"
+	female = yes
+	religion = "aversarinas_aagiokrata"
+	culture = "practitioner"
+
+	1222.5.15 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1238.5.15 = {
+		trait = education_arcana_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+practitioner_aversarinas_aagiokrata_21 = {
+	name = "Polykarpos"
+	religion = "aversarinas_aagiokrata"
+	culture = "practitioner"
+
+	1210.6.24 = {
+		birth = yes
+		trait = magic_good_1
+	}
+
+	1226.6.24 = {
+		trait = education_arcana_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+}
+
+practitioner_aversarinas_aagiokrata_22 = {
+	name = "Demetra"
+	female = yes
+	religion = "aversarinas_aagiokrata"
+	culture = "practitioner"
+
+	1214.8.7 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1230.8.7 = {
+		trait = education_arcana_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+}

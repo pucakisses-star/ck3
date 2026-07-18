@@ -1,0 +1,100 @@
+﻿apokiakas_militant_cliques_1 = { # Dethas 'the Last Legionnaire'
+	name = "Dethas"
+	religion = "militant_cliques"
+	culture = "apokiakas"
+	dynasty = dyn_aversarian_150
+	dna = apokiakas_militant_cliques_1_dna
+	female = yes
+	diplomacy = 10
+	martial = 15
+	stewardship = 10
+	intrigue = 9
+	learning = 14
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = female_hair_custom_06
+		}
+	}
+
+	1185.3.14 = {
+		birth = yes
+	}
+		1185.3.15 = {
+		trait = magic_good_2
+	}
+	1207.3.14 = {
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+		trait = education_stewardship_4
+		trait = just
+		trait = forgiving
+		trait = brave
+	}
+	1240.3.15 = {
+		trait = gh_arch_legon
+		trait = depressed_1
+		trait = reclusive
+		trait = inappetetic
+		trait = athletic
+		trait = faith_warrior
+		trait = forest_fighter
+		trait = gh_historical_blademaster_3
+		give_nickname = nick_the_last_legionnaire
+		effect = {
+			add_character_flag = {
+				flag = had_nickname_event
+			}
+		}
+	}
+}
+
+apokiakas_militant_cliques_2 = { # Legon Mechondagr
+    name = "Mechondagr"
+    religion = "militant_cliques"
+    culture = "apokiakas"
+    dna = mechondagr
+
+    sexuality = heterosexual
+
+    martial = 5
+    diplomacy = 6
+    stewardship = 7
+    intrigue = 5
+    learning = 8
+    prowess = 8
+
+    1152.11.1 = {
+        birth = yes
+        trait = magic_good_3
+        trait = strong
+    }
+
+    1164.1.1 = {
+        trait = arbitrary
+        trait = sadistic
+        trait = vengeful
+    }
+
+    1168.11.1 = {
+        effect = { set_base_arcana = { AMOUNT = 3 } }
+        trait = education_martial_3
+        trait = gh_historical_school
+        trait = overseer
+        trait = aggressive_attacker
+    }
+
+    1180.12.3 = {
+    	trait = gh_legon
+    }
+
+    1193.12.7 = { # ICW
+        death = {
+            death_reason = death_execution
+            killer = westernimperial_aeschraes_aagiokrata_1
+        }
+    }
+}

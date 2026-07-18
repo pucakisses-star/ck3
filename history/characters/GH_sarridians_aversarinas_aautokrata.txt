@@ -1,0 +1,121 @@
+﻿sarridians_aversarinas_aagiokrata_1 = {
+ # Oulnir Gordabrok
+	name = "Oulnir"
+	dna = oulnir
+	dynasty = dyn_aversarian_13
+	religion = "aversarinas_aagiokrata"
+	culture = "sarridians"
+
+	1213.1.13 = {
+		birth = yes
+		trait = physique_good_2
+		trait = intellect_good_1
+		trait = giant
+	}
+
+	1225.1.1 = {
+		trait = ambitious
+		trait = callous
+		trait = calm
+		trait = scholar
+		trait = gh_historical_blademaster_2
+	}
+
+	1229.1.13 = {
+		trait = education_learning_4
+		trait = scarred
+	}
+
+	1247.10.17 = {
+		death = {
+			death_reason = death_battle
+			killer = apokiakas_aversarinas_aagiokratia_23 # Ganked by Black Sun
+		}
+	}
+}
+
+sarridians_aversarinas_aagiokrata_2 = { # Eldradd 'Bane-Star', Sarridian warlord and Gurdurbrok loyalist, assassinated on the orders of Nicanoneus
+	name = "Eldradd"
+	dynasty = dyn_aversarian_141
+	religion = aversarinas_aagiokrata
+	culture = sarridians
+
+	dna = eldradd
+	disallow_random_traits = yes
+
+	martial = 4
+	diplomacy = 8
+	intrigue = 5
+	stewardship = 3
+	learning = 5
+	prowess = 5
+
+	1200.3.1 = {
+		birth = yes
+		trait = physique_good_3
+	}
+
+	1212.1.1 = {
+		trait = brave
+		trait = humble
+		trait = wrathful
+	}
+
+	1216.3.1 = {
+		trait = education_martial_2
+		trait = reckless
+		trait = gh_historical_blademaster_1
+		give_nickname = nick_bane_star
+	}
+
+	1247.9.3 = {
+		death = {
+			death_reason = death_assassination
+			killer = apokiakas_aversarinas_aagiokratia_23 # Ganked by Black Sun
+		}
+	}
+}
+
+sarridians_aversarinas_aagiokrata_3 = { # Sarridian warlord under the Partics
+	name = "Roulir"
+	dynasty = dyn_aversarian_141
+	religion = aversarinas_aagiokrata
+	culture = sarridians
+
+	father = sarridians_aversarinas_aagiokrata_2
+
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 7
+	learning = 4
+	prowess = 4
+
+	1225.2.25 = {
+		birth = yes
+		trait = physique_good_2
+	}
+
+	1237.1.1 = {
+		trait = chaste
+		trait = vengeful
+		trait = just
+	}
+
+	1241.2.25 = {
+		trait = education_martial_3
+		trait = organizer
+	}
+}
+
+sarridians_aversarinas_aagiokrata_4 = {
+	name = "Marce"
+	religion = aversarinas_aagiokrata
+	culture = sarridians
+
+	1233.3.11 = {
+		birth = yes
+	}
+}

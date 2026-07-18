@@ -1,0 +1,29 @@
+﻿zakhirun_askevaryaa_1 = { 
+    name = "Shivaji"
+    religion = "askevaryaa"
+    culture = "zakhirun"
+
+    sexuality = heterosexual
+
+    martial = 7
+    diplomacy = 7
+    stewardship = 9
+    intrigue = 8
+    learning = 7
+    prowess = 7
+
+    1190.5.19 = {
+        birth = yes
+    }
+
+    1202.1.1 = {
+        trait = impatient
+        trait = cynical
+        trait = lustful
+    }
+
+    1206.5.19 = {
+        effect = { set_base_arcana = { AMOUNT = 6 } }
+        trait = education_stewardship_3
+    }
+}

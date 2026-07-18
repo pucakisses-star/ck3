@@ -1,0 +1,73 @@
+d_vavkebcha = {
+	1149.7.6 = {
+		holder = prapataro_asritayka_3
+		liege = k_kinilam
+	}
+	1167.12.23 = {
+		holder = prapataro_asritayka_5
+		liege = k_kinilam
+	}
+	1216.10.9 = {
+		holder = prapataro_asritayka_7
+		liege = 0
+	}
+	1236.8.5 = {
+		holder = prapataro_asritayka_11
+		liege = 0
+	}
+	1251.11.11 = {
+		holder = prapataro_asritayka_2
+		liege = 0
+	}
+	1252.1.11 = {
+		holder = prapataro_asritayka_1
+		government = pirate_government
+		change_development_level = 12
+	}
+}
+#d_codoladuran = {
+#	1149.7.6 = {
+#		holder = prapataro_asritayka_3
+#		liege = k_kinilam
+#	}
+#	1167.12.23 = {
+#		holder = prapataro_asritayka_5
+#		liege = k_kinilam
+#	}
+#	1216.10.9 = {
+#		holder = prapataro_asritayka_8
+#		liege = 0
+#	}
+#	1223.12.20 = {
+#		holder = prapataro_asritayka_7
+#		liege = 0
+#	}
+#	1236.8.5 = {
+#		holder = prapataro_asritayka_11
+#		liege = 0
+#	}
+#	1251.11.11 = {
+#		holder = prapataro_asritayka_2
+#		liege = 0
+#		change_development_level = 12
+#	}
+#}
+d_moprakatt = {
+	1131.2.26 = {
+		holder = hokanta_vidvaookeyatra_35
+		liege = k_kinilam
+	}
+	1167.6.18 = {
+		holder = hokanta_vidvaookeyatra_39
+		liege = k_kinilam
+	}
+	1200.3.1 = {
+		holder = hokanta_vidvaookeyatra_42
+		liege = k_kinilam
+	}
+	1242.12.24 = {
+		holder = hokanta_vidvaookeyatra_2
+		liege = k_kinilam
+		change_development_level = 13
+	}
+}

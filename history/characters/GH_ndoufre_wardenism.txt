@@ -1,0 +1,9 @@
+﻿ndoufre_wardenism_1 = {
+	name = "Yaya"
+	religion = "wardenism"
+	culture = "ndoufre"
+
+	1236.5.30 = {
+		birth = yes
+	}
+}

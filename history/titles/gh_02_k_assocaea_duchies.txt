@@ -1,0 +1,93 @@
+d_toskopeion = {
+
+	1191.3.14 = {
+		holder = westernimperial_aversarinas_aagiokrata_184
+		# liege = k_dragonmarch # Removed in province rework, replace
+	}
+	1200.1.1 = { change_development_level = 8 }
+
+	1246.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_183
+		liege = 0
+	}
+
+	1259.6.30 = {
+		holder = goans_gethian_1
+	}
+}
+d_kameirerna = {
+	1.1.2 = {
+		holder = unsorted_31
+	}
+	90.1.1 = {
+		holder = 0
+	}
+	1118.6.17 = {
+		holder = westernimperial_aversarinas_aagiokrata_57
+	}
+
+	1162.3.11 = {
+		holder = westernimperial_aversarinas_aagiokrata_77
+	}
+
+	1181.4.14 = {
+		holder = westernimperial_aversarinas_aagiokrata_117
+	}
+
+	1200.1.1 = { change_development_level = 12 }
+
+	1212.3.1 = {
+		liege = 0
+	}
+
+	1256.3.19 = {
+		holder = vrodkin_sjalvolki_2
+	}
+
+	1277.6.26 = {
+		holder = vrodkin_sjalvolki_1
+	}
+
+	1293.7.3 = {
+		holder = vrodkin_sjalvolki_78
+	}
+}
+#d_vasyma = {
+#	1118.6.17 = {
+#		holder = westernimperial_aversarinas_aagiokrata_57
+#	}
+#
+#	1162.3.11 = {
+#		holder = westernimperial_aversarinas_aagiokrata_77
+#	}
+#
+#	1181.4.14 = {
+#		holder = westernimperial_aversarinas_aagiokrata_117
+#	}
+#
+#	1200.1.1 = {
+#		change_development_level = 10
+#	}
+#
+#	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+#		de_jure_liege = k_casked
+#	}
+#}
+#d_edapeze = {
+#	1200.1.1 = { change_development_level = 8 }
+#
+#	1193.4.15 = {
+#		holder = westernimperial_aversarinas_aagiokrata_194
+#		liege = k_dragonmarch
+#	}
+#
+#	1252.1.1 = {
+#		government = republic_playable_government
+#		holder = westernimperial_aversarinas_aagiokrata_191
+#		liege = k_governorate_etepezea_kingdom
+#	}
+#
+#	1260.1.1 = { # GENERIC 1298 HISTORY DATE, CHANGE BEFORE RELEASE!
+#		de_jure_liege = k_casked
+#	}
+#}

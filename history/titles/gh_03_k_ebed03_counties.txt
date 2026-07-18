@@ -1,0 +1,6 @@
+
+c_ebed22 = {
+	1200.3.1 = {
+		holder = wasteland
+	}
+}

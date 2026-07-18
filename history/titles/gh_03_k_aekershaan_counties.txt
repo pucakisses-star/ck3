@@ -1,0 +1,105 @@
+﻿c_akaya = {
+	1199.3.20 = {
+		holder = aiyqarbkhiyl_ahridar_1
+	}
+	1242.3.29 = {
+		holder = aiyqarbkhiyl_ahridar_2
+		change_development_level = 2
+	}
+}
+c_tehratta = {
+	1190.4.3 = {
+		holder = aaoyuotaa_ahridar_4
+	}
+	1202.9.12 = {
+		holder = aaoyuotaa_ahridar_3
+	}
+	1230.1.1 = {
+		holder = aaoyuotaa_ahridar_1
+		change_development_level = 10
+	}
+}
+c_kuqia = {
+	1195.6.25 = {
+		holder = aaoyuotaa_ahridar_3
+	}
+	1230.1.1 = {
+		holder = aaoyuotaa_ahridar_1
+		change_development_level = 10
+	}
+}
+c_gatasuq = {
+	1212.10.28 = {
+		holder = aiyqarbkhiyl_ahridar_10
+	}
+}
+c_darmandu = {
+	1202.4.11 = {
+		holder = aiyqarbkhiyl_ahridar_1
+	}
+	1232.1.1 = {
+		holder = aiyqarbkhiyl_ahridar_3
+		change_development_level = 2
+	}
+}
+c_aramid = {
+	1200.3.1 = {
+		holder = aiyqarbkhiyl_ahridar_4
+	}
+}
+c_aspasos = {
+	1225.1.1 = {
+		holder = tagrodar_ahridar_2
+		government = tribal_government
+	}
+}
+c_gazagol = {
+	1242.1.1 = {
+		holder = aiyqarbkhiyl_ahridar_11
+		government = tribal_government
+		change_development_level = 5
+	}
+}
+c_hatadia = {
+	1200.1.1 = {
+		holder = wasteland
+	}
+}
+c_troasos = {
+	1200.3.25 = {
+		holder = aaoyuotaa_ahridar_3
+	}
+	1248.1.1 = {
+		holder = aaoyuotaa_ahridar_2
+		change_development_level = 9
+	}
+}
+#c_ishatra = {
+#	1251.1.1 = {
+#		holder = tagrodar_ahridar_1
+#	}
+#}
+c_urhay = {
+	1203.10.11 = {
+		holder = aiyqarbkhiyl_ahridar_12
+	}
+}
+c_amidanya = {
+	1203.10.11 = {
+		holder = aiyqarbkhiyl_ahridar_12
+	}	
+}
+#c_eremia = {
+#	1200.3.1 = {
+#		holder = tagrodar_ahridar_7
+#	}
+#	1212.10.28 = {
+#		holder = tagrodar_ahridar_5
+#	}
+#}
+
+c_gilhon = {
+	1252.10.14 = {
+		holder = tagrodar_ahridar_8
+	}
+}

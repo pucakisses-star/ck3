@@ -1,0 +1,82 @@
+﻿avihana_askevaryaa_1 = { # King of adlurbad
+	name = "Bhramkarod"
+	dna = avihana_askevaryaa_1
+	religion = "askevaryaa"
+	culture = "avihana"
+	martial = 5
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 4
+	learning = 3
+	dynasty = dyn_avihana_3
+	trait = paranoid
+	trait = vengeful
+	trait = wrathful
+	trait = education_intrigue_2
+	trait = torturer
+	trait = irritable
+	trait = lunatic_1
+	trait = reclusive
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_indian_02
+			custom_beards = male_mustache_iranian_05
+		}
+	}
+
+	1207.11.13 = {
+		birth = yes
+	}
+
+	1227.4.22 = {
+		add_spouse = avihana_daramarjaratan_1
+	}
+
+	1250.6.17 = {
+		give_nickname = nick_scourge_of_death
+	}
+	1251.9.14 = {
+		effect = {
+			add_character_modifier = krikatama_purges_modifier
+		}
+	}
+}
+
+avihana_askevaryaa_2 = { # Avihana vassal
+	name = "Hajo"
+	religion = "askevaryaa"
+	culture = "avihana"
+	1215.8.8 = {
+		birth = yes
+	}
+}
+
+avihana_askevaryaa_4 = { # Avihana vassal
+	name = "Chandranarayan"
+	religion = "askevaryaa"
+	culture = "avihana"
+
+	1245.8.8 = {
+		birth = yes
+	}
+}
+
+avihana_askevaryaa_5 = { # Avihana vassal
+	name = "Himadrija"
+	religion = "askevaryaa"
+	culture = "avihana"
+	female = yes
+	1232.8.8 = {
+		birth = yes
+	}
+}
+
+avihana_askevaryaa_6 = { # Avihana vassal
+	name = "Roopnarayan"
+	religion = "askevaryaa"
+	culture = "avihana"
+	1222.8.8 = {
+		birth = yes
+	}
+}

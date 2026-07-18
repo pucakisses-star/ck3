@@ -1,0 +1,29 @@
+﻿redlander_zegarillian_dance_1 = {
+	name = "Lexn"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1232.7.22 = {
+		birth = yes
+	}
+}
+
+redlander_zegarillian_dance_2 = {
+	name = "Zull"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1223.3.20 = {
+		birth = yes
+	}
+}
+
+redlander_zegarillian_dance_3 = {
+	name = "Zaron"
+	religion = "redland_cults"
+	culture = "redlander"
+
+	1216.1.22 = {
+		birth = yes
+	}
+}

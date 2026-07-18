@@ -1,0 +1,305 @@
+﻿easternislander_aversarinas_aagiokrata_1 = {
+	name = "Aeacus"
+	culture = "easternislander"
+	religion = "aversarinas_aagiokrata"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+easternislander_aversarinas_aagiokrata_2 = {
+	name = "Susios"
+	culture = "easternislander"
+	religion = "aversarinas_aagiokrata"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+easternislander_aversarinas_aagiokrata_3 = {
+	name = "Bakaril"
+	culture = "easternislander"
+	religion = "aversarinas_aagiokrata"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+easternislander_aversarinas_aagiokrata_4 = {
+	name = "Tryphon"
+	culture = "easternislander"
+	religion = "aversarinas_aagiokrata"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+easternislander_aversarinas_aagiokrata_5 = {
+	name = "Valeron"
+	culture = "easternislander"
+	religion = "aversarinas_aagiokrata"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+easternislander_aversarinas_aagiokrata_6 = {
+	name = "Ultion"
+	culture = "easternislander"
+	religion = "aversarinas_aagiokrata"
+	1229.1.1 = {
+		birth = yes
+	}
+}
+
+easternislander_aversarinas_aagiokrata_7 = { # GH: was viesuados_4
+	name = "Manulis"
+	culture = "easternislander"
+	religion = "aversarinas_aagiokrata"
+
+	1164.11.3 = {
+		birth = yes
+	}
+
+	1207.8.6 = {
+		death = {
+			death_reason = death_typhus
+		}
+	}
+
+}
+
+easternislander_aversarinas_aagiokrata_8 = { # GH: was viesuados_5
+	name = "Makis"
+	culture = "easternislander"
+	religion = "aversarinas_aagiokrata"
+	sexuality = homosexual
+	dna = easternislander_aversarinas_aagiokrata_8
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_indian_01
+			custom_beards = no_beard
+		}
+	}
+
+	diplomacy = 6
+	martial = 7
+	stewardship = 7
+	intrigue = 5
+	learning = 5
+
+	1211.7.6 = {
+		birth = yes
+	}
+	1223.7.6 = {
+		trait = wrathful
+		trait = greedy
+		trait = patient
+	}
+	1227.7.6 = {
+		trait = education_martial_2
+	}
+	1235.11.11 = {
+		add_unpressed_claim = title:c_lavangur
+		add_unpressed_claim = title:c_peliya
+		effect = {
+			add_character_flag = dont_generate_family	
+		}
+	}
+
+	1267.2.1 = {
+		death = {
+			death_reason = death_ritual_cannibalism
+			killer = rethara_yakasak_1
+		}
+	}
+}
+
+easternislander_aversarinas_aagiokrata_9 = {
+	name = "Arios"
+	religion = aversarinas_aagiokrata
+	culture = easternislander
+	dynasty_house = house_chrysomon
+
+	father = southernimperial_aversarinas_aagiokrata_112
+
+	disallow_random_traits = yes
+
+	martial = 5
+	diplomacy = 4
+	intrigue = 6
+	stewardship = 4
+	learning = 11
+	prowess = 4
+
+	1179.5.9 = {
+		birth = yes
+		trait = beauty_good_1
+		trait = magic_good_2
+		trait = twin
+	}
+
+	1191.1.1 = {
+		trait = chaste
+		trait = compassionate
+		trait = arrogant
+	}
+
+	1195.5.9 = {
+		trait = education_arcana_1
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:living_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 4 }
+		}
+	}
+
+	1237.11.19 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+easternislander_aversarinas_aagiokrata_10 = { # Founded Dikaynos' Aironoian cadet dynasty
+	name = "Phraestion"
+	religion = aversarinas_aagiokrata
+	culture = easternislander
+	dynasty_house = house_nixephales
+
+	father = easternislander_aversarinas_aagiokrata_9
+
+	disallow_random_traits = yes
+
+	martial = 6
+	diplomacy = 7
+	intrigue = 9
+	stewardship = 5
+	learning = 6
+	prowess = 3
+
+	1198.11.20 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1210.1.1 = {
+		trait = brave
+		trait = gregarious
+		trait = ambitious
+	}
+
+	1214.11.20 = {
+		trait = education_stewardship_4
+		trait = administrator
+		trait = shrewd
+	}
+
+	1253.7.17 = {
+		death = {
+			death_reason = death_sea_storm
+		}
+	}
+}
+
+easternislander_aversarinas_aagiokrata_11 = {
+	name = "Euchenor"
+	religion = aversarinas_aagiokrata
+	culture = easternislander
+	dynasty_house = house_nixephales
+
+	father = easternislander_aversarinas_aagiokrata_10
+
+	disallow_random_traits = yes
+
+	martial = 5
+	diplomacy = 8
+	intrigue = 6
+	stewardship = 4
+	learning = 7
+	prowess = 7
+
+	1230.8.27 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1242.1.1 = {
+		trait = ambitious
+		trait = honest
+		trait = humble
+	}
+
+	1246.8.27 = {
+		trait = education_martial_3
+		trait = reaver
+	}
+
+	1250.4.17 = {
+		trait = gh_historical_blademaster_1
+	}
+}
+
+easternislander_aversarinas_aagiokrata_12 = {
+	name = "Euneas"
+	culture = "easternislander"
+	religion = "aversarinas_aagiokrata"
+	1221.9.10 = {
+		birth = yes
+	}
+}
+
+easternislander_aversarinas_aagiokrata_13 = {
+	name = "Euthynos"
+	culture = "easternislander"
+	religion = "aversarinas_aagiokrata"
+	1225.6.4 = {
+		birth = yes
+	}
+}
+
+easternislander_aversarinas_aagiokrata_14 = {
+	name = "Pathos"
+	culture = "easternislander"
+	religion = "aversarinas_aagiokrata"
+	1216.10.26 = {
+		birth = yes
+	}
+}
+
+easternislander_aversarinas_aagiokrata_15 = {
+	name = "Eramos"
+	culture = "easternislander"
+	religion = "aversarinas_aagiokrata"
+	1233.12.17 = {
+		birth = yes
+	}
+}
+
+easternislander_aversarinas_aagiokrata_16 = {
+	name = "Arthion"
+	culture = "easternislander"
+	religion = "aversarinas_aagiokrata"
+	1221.4.2 = {
+		birth = yes
+	}
+}
+
+easternislander_aversarinas_aagiokrata_17 = {
+	name = "Bruxon"
+	culture = "easternislander"
+	religion = "aversarinas_aagiokrata"
+	1210.12.3 = {
+		birth = yes
+	}
+}
+
+easternislander_aversarinas_aagiokrata_18 = {
+	name = "Idaeus"
+	culture = "easternislander"
+	religion = "aversarinas_aagiokrata"
+	1222.3.13 = {
+		birth = yes
+	}
+}

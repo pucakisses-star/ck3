@@ -1,0 +1,172 @@
+c_posinda = {
+	1.1.2 = {
+		holder = unsorted_39
+	}
+	1094.4.14 = { 
+		holder = southernimperial_aversarinas_aagiokrata_7
+	}
+	1188.2.14 = { 
+		holder = southernimperial_aversarinas_aagiokrata_6
+	}
+	1200.3.1 = { 
+		holder = southernimperial_aversarinas_aagiokrata_5
+	}
+	1229.4.15 = {
+		holder = southernimperial_aversarian_gorassos_1
+	}
+	1274.7.15 = {
+		holder = southernimperial_aversarian_gorassos_4
+	}
+	1275.9.2 = {
+		holder = greulokin_sjalvolki_1
+	}
+	1293.3.28 = {
+		holder = greulokin_sjalvolki_22
+	}
+}
+c_tylai = {
+	1094.4.14 = { 
+		holder = southernimperial_aversarinas_aagiokrata_7
+	}
+	1188.2.14 = { 
+		holder = southernimperial_aversarinas_aagiokrata_6
+	}
+	1200.3.1 = { 
+		holder = southernimperial_aversarinas_aagiokrata_5
+	}
+	1229.4.15 = {
+		holder = southernimperial_aversarian_gorassos_1
+	}
+	1274.7.15 = {
+		holder = southernimperial_aversarian_gorassos_4
+	}
+	1275.9.2 = {
+		holder = greulokin_sjalvolki_1
+	}
+	1293.3.28 = {
+		holder = greulokin_sjalvolki_22
+	}
+}
+#c_olynthicus = {
+#	1230.2.14 = {
+#		holder = southernimperial_aversarinas_aagiokrata_62
+#	}
+#	1251.4.14 = {
+#		liege = "k_day"
+#	}
+#}
+c_tanada_isles3 = {
+	1160.1.1 = {
+		holder = centralimperial_aversarinas_aagiokrata_42
+		liege = "e_oraispol_aautokrata"
+	}
+	1186.6.21 = {
+		holder = centralimperial_aeschraes_aagiokrata_1
+	}
+	1229.12.12 = {
+		holder = southernimperial_aversarinas_aagiokrata_62
+	}
+	1251.4.14 = {
+		liege = "k_the_bloodied_throne"
+	}
+}
+c_tanada_isles4 = {
+	1160.1.1 = {
+		holder = centralimperial_aversarinas_aagiokrata_42
+		liege = "e_oraispol_aautokrata"
+	}
+	1186.6.21 = {
+		holder = centralimperial_aeschraes_aagiokrata_1
+	}
+	1229.12.12 = {
+		holder = southernimperial_aversarinas_aagiokrata_62
+	}
+	1251.4.14 = {
+		liege = "k_the_bloodied_throne"
+	}
+}
+c_stymphasae = {
+	1.1.2 = {
+		holder = unsorted_40
+	}
+	1211.2.12 = {
+		holder = southernimperial_aversarinas_aagiokrata_13
+		liege = "k_the_bloodied_throne"
+	}
+	1251.4.14 = {
+		holder = southernimperial_aversarian_gorassos_4
+		liege = "k_the_bloodied_throne"
+	}
+
+	1274.6.19 = {
+		holder = greulokin_sjalvolki_6
+		liege = k_day
+	}
+
+	1289.9.25 = {
+		holder = greulokin_sjalvolki_37
+	}
+}
+c_lindela = {
+	1.1.2 = {
+		holder = unsorted_40
+	}
+	1251.4.14 = {
+		holder = southernimperial_aversarian_gorassos_9
+		liege = "k_the_bloodied_throne"
+	}
+	1268.3.15 = {
+		holder = greulokin_sjalvolki_5
+		liege = k_day
+	}
+	1280.11.17 = {
+		holder = greulokin_sjalvolki_28
+	}
+}
+c_lamathon = {
+	1.1.2 = {
+		holder = unsorted_40
+	}
+	1251.4.14 = {
+		holder = southernimperial_aversarian_gorassos_10
+		liege = "k_the_bloodied_throne"
+	}
+	1274.3.1 = {
+		holder = greulokin_sjalvolki_3
+		liege = k_day
+	}
+	1298.1.1 = {
+		government = feudal_government
+	}
+}
+c_orarnacia = {
+	1.1.2 = {
+		holder = unsorted_40
+	}
+	1216.11.12 = {
+		holder = southernimperial_aversarinas_aagiokrata_8
+	}
+	1251.4.14 = {
+		holder = southernimperial_aversarian_gorassos_5
+		liege = "k_the_bloodied_throne"
+	}
+	1265.1.1 = { #GHTODO TIMELINE
+		holder = greulokin_sjalvolki_7
+		liege = k_day
+	}
+	1296.1.13 = {
+		holder = greulokin_sjalvolki_25a
+	}
+}
+c_histrynthos = {
+	1.1.2 = {
+		holder = unsorted_39
+	}
+	1220.2.11 = {
+		holder = southernimperial_aversarinas_aagiokrata_12
+	}
+	1251.4.14 = {
+		holder = southernimperial_aversarian_gorassos_7
+		liege = "k_the_bloodied_throne"
+	}
+}

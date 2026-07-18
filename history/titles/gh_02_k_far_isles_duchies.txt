@@ -1,0 +1,21 @@
+d_duchytesti666 = {
+	1250.1.1 = {
+		change_development_level = 3
+	}
+}
+d_duchytest111 = {
+	1186.1.1 = {
+		holder = voyagen_lifepath_23
+	}
+	1205.1.1 = {
+		holder = 0
+	}
+	1250.1.1 = {
+		change_development_level = 6
+	}
+}
+d_chevalie_islands_7 = {
+	1250.1.1 = {
+		change_development_level = 6
+	}
+}

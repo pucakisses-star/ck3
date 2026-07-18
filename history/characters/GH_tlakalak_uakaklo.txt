@@ -1,0 +1,224 @@
+﻿tlakalak_uakaklo_1 = { # High priest of the temple complex, sinking into pessimism, and apathetically is willing to watch as the Uakaklo fall apart
+	name = "Acoacatl"
+	religion = uakaklo
+	culture = tlakalak
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 4
+	stewardship = 4
+	intrigue = 5
+	learning = 8
+	
+	1225.3.23 = {
+		birth = yes
+	}
+	1237.3.23 = {
+		trait = just
+		trait = callous
+		trait = content
+	}
+	1241.3.23 = {
+		trait = education_learning_4
+	}
+}
+
+tlakalak_uakaklo_2 = { # tribal vassal of 1
+	name = "Xiloco"
+	religion = uakaklo
+	culture = tlakalak
+	sexuality = bisexual
+	
+	diplomacy = 6
+	martial = 6
+	stewardship = 5
+	intrigue = 5
+	learning = 4
+	
+	1232.10.15 = {
+		birth = yes
+		trait = magic_good_3
+	}
+
+	1237.10.15 = {
+		trait = impatient
+		trait = ambitious
+		trait = chaste
+	}
+
+	1241.10.15 = {
+		trait = gh_historical_blademaster_1
+		trait = education_martial_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+tlakalak_uakaklo_3 = { # Another tribal vassal of 1
+	name = "Abitbatl"
+	religion = uakaklo
+	culture = tlakalak
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 5
+	stewardship = 4
+	intrigue = 6
+	learning = 6
+	
+	1228.4.17 = {
+		birth = yes
+	}
+	1240.4.17 = {
+		trait = deceitful
+		trait = shy
+		trait = vengeful
+	}
+	1241.4.17 = {
+		trait = education_intrigue_2
+	}
+}
+
+tlakalak_uakaklo_4 = { # Ruler of Hibarkhan, mostly hides from his surroundings (understandable, living in Cyrat)
+	name = "Burkitoco"
+	religion = uakaklo
+	culture = tlakalak
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 4
+	stewardship = 5
+	intrigue = 5
+	learning = 7
+	
+	1223.8.1 = {
+		birth = yes
+	}
+	1235.8.1 = {
+		trait = greedy
+		trait = craven
+		trait = forgiving
+	}
+	1239.8.1 = {
+		trait = education_stewardship_2
+	}
+}
+
+tlakalak_uakaklo_5 = { # Ruler of Mojin
+	name = "Ot-Axi"
+	religion = uakaklo
+	culture = tlakalak
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 6
+	stewardship = 5
+	intrigue = 5
+	learning = 4
+	
+	1231.4.7 = {
+		birth = yes
+	}
+	1243.4.7 = {
+		trait = lustful
+		trait = callous
+		trait = trusting
+	}
+	1247.4.7 = {
+		trait = education_martial_2
+	}
+}
+
+tlakalak_uakaklo_6 = { # Ruler of Badqish and Bugmar
+	name = Itzmaiili
+	religion = uakaklo
+	culture = tlakalak
+	sexuality = heterosexual
+	
+	diplomacy = 6
+	martial = 5
+	stewardship = 5
+	intrigue = 4
+	learning = 5
+	
+	1226.12.26 = {
+		birth = yes
+		trait = magic_good_2
+	}
+
+	1238.12.26 = {
+		trait = arrogant
+		trait = cynical
+		trait = calm
+	}
+
+	1242.12.26 = {
+		trait = education_stewardship_2
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 6 }
+		}
+	}
+}
+
+tlakalak_uakaklo_7 = { # Ruler of c_solamis and c_ariscara
+	name = "Huehueoco"
+	religion = uakaklo
+	culture = tlakalak
+	sexuality = heterosexual
+	
+	diplomacy = 5
+	martial = 6
+	stewardship = 4
+	intrigue = 4
+	learning = 5
+	
+	1225.9.2 = {
+		birth = yes
+		trait = magic_good_4
+	}
+
+	1236.9.2 = {
+		trait = greedy
+		trait = sadistic
+		trait = impatient
+	}
+
+	1240.9.2 = {
+		trait = education_learning_3
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:dead_magic }
+			set_variable = { name = historical_magic_school_min_spells value = 8 }
+		}
+	}
+}
+
+tlakalak_uakaklo_8 = { # Ruler of c_jatharad, about to die
+	name = "Panpaton"
+	religion = uakaklo
+	culture = tlakalak
+	sexuality = heterosexual
+	
+	diplomacy = 4
+	martial = 5
+	stewardship = 4
+	intrigue = 5
+	learning = 6
+	
+	1197.3.14 = {
+		birth = yes
+	}
+	1209.3.14 = {
+		trait = brave
+		trait = deceitful
+		trait = patient
+	}
+	1213.3.14 = {
+		trait = education_learning_3
+	}
+}

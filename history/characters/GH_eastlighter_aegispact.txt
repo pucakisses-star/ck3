@@ -1,0 +1,27 @@
+﻿# Saerdyciard Queenship
+eastlighter_aegispact_1 = {
+	name = "Maud"
+	religion = aegispact
+	culture = eastlighter
+	female = yes
+
+	1224.10.3 = {
+		birth = yes
+	}
+
+	1244.10.3 = {
+		trait = just
+		trait = ambitious
+		trait = callous
+		trait = education_martial_3
+	}
+
+	1250.1.1 = {
+		trait = strategist
+		trait = shrewd
+		give_nickname = nick_stormroar
+		effect = {
+			add_realm_law = female_only_law
+		}
+	}
+}

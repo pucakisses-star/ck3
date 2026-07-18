@@ -1,0 +1,144 @@
+k_palitake = {
+	1.1.1 = {
+		holder = aelarvisian_aerasodiax_1
+	}
+	1121.1.12 = { change_development_level = 47 }
+	1203.1.1 = {
+		change_development_level = 16
+		holder = westernimperial_aversarinas_aagiokrata_250
+		liege = e_etepezea
+	}
+	1231.8.13 = {
+		change_development_level = 10
+		holder = westernimperial_aversarinas_aagiokrata_250
+		liege = 0
+	}
+	1240.2.13 = {
+		change_development_level = 8
+		holder = westernimperial_omitilos_aagiokrata_2
+	}
+	1257.7.10 = {
+		holder = 0
+	}
+	1260.1.1 = {
+		holder = daukeni_sjalvolki_1
+	}
+	1297.11.9 = {
+		holder = daukeni_sjalvolki_106
+	}
+}
+k_assocaea = {
+	1186.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_172
+		liege = e_etepezea
+	}
+	1200.1.1 = {
+		holder = westernimperial_aversarinas_aagiokrata_171
+		liege = e_etepezea
+		change_development_level = 8
+	}
+	1240.1.1 = {
+		 
+		holder = westernimperial_aversarinas_aagiokrata_154
+	}
+	1254.8.13 = {
+		holder = 0
+	}
+	1256.3.19 = {
+		holder = vrodkin_sjalvolki_2
+	}
+
+	1277.6.26 = {
+		holder = vrodkin_sjalvolki_1
+	}
+
+	1293.7.3 = {
+		holder = vrodkin_sjalvolki_78
+	}
+}
+k_kollos = {
+	1186.11.15 = {
+		holder = westernimperial_aeschraes_aagiokrata_1
+	}
+
+	1205.1.1 = {
+		holder = 0
+	}
+}
+#k_neokhrion = {
+#	1200.1.1 = {
+#		holder = 0
+#	}
+#}
+#k_dragonmarch = {
+#	1180.1.1 = { change_development_level = 21 }
+#
+#	1191.2.14 = {
+#		 
+#		holder = westernimperial_aversarinas_aagiokrata_3
+#		liege = e_etepezea
+#	}
+#
+#	1200.1.1 = { change_development_level = 7 }
+#
+#	1201.3.4 = {
+#		holder = 0
+#	}
+#
+#	1254.1.1 = {
+#		 
+#		holder = westernimperial_aversarinas_aagiokrata_253
+#	}
+#}
+k_pergicos = {
+	1121.1.12 = {
+		holder = westernimperial_aversarinas_aagiokrata_104
+		change_development_level = 16
+	}
+	1186.12.19 = {
+		holder = westernimperial_aversarinas_aagiokrata_107
+		liege = e_etepezea
+	}
+	1198.6.11 = {
+		holder = 0
+	}
+	1200.1.1 = {
+		change_development_level = 8
+	}
+	1265.10.10 = {
+		holder = caemansi_sjalvolki_14
+	}
+	1278.9.22 = {
+		holder = caemansi_sjalvolki_15
+	}
+}
+k_southwestern_isles = {
+	1.1.1 = {
+		holder = aelarvisian_aerasodiax_1
+	}
+
+	64.11.12 = {
+		holder = 0
+	}
+}
+k_southeastern_isles = {
+	1.1.1 = {
+		holder = aelarvisian_aerasodiax_1
+	}
+	64.11.12 = {
+		holder = 0
+	}
+	1186.1.1 = {
+		holder = imperialislander_aversarinas_aagiokrata_27
+		liege = "e_etepezea"
+	}
+	1200.1.1 = {
+		holder = imperialislander_aversarinas_aagiokrata_22
+	}
+	1216.1.1 = {
+		holder = 0
+	}
+	1297.11.9 = {
+		holder = daukeni_sjalvolki_108
+	}
+}

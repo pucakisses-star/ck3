@@ -1,0 +1,160 @@
+﻿makryenis_forgotten_1 = {
+	name = "Ariston"
+	religion = "forgotten"
+	culture = "makryenis"
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+
+	1213.8.24 = {
+		birth = yes
+		trait = intellect_good_3
+		trait = magic_good_4
+		effect = { set_base_arcana = { AMOUNT = 10 } }
+	}
+
+	1225.1.1 = {
+		trait = ambitious
+		trait = callous
+		trait = deceitful
+	}
+
+	1229.8.24 = {
+		trait = education_intrigue_4
+		trait = schemer
+		trait = blind
+		trait = gh_riftsight_3
+		trait = shrewd
+		trait = gh_historical_school
+		effect = {
+			set_variable = { name = historical_magic_school value = flag:silentspeak }
+			set_variable = { name = historical_magic_school_min_spells value = 10 }
+		}
+	}
+}
+
+makryenis_forgotten_2 = {
+	name = "Sibylla"
+	religion = "forgotten"
+	culture = "makryenis"
+	female = yes
+
+	1221.6.18 = {
+		birth = yes
+	}
+}
+
+makryenis_forgotten_3 = {
+	name = "Phyllis"
+	religion = "forgotten"
+	culture = "makryenis"
+	female = yes
+
+	1221.6.18 = {
+		birth = yes
+	}
+}
+
+makryenis_forgotten_4 = {
+	name = "Egorus"
+	religion = "forgotten"
+	culture = "makryenis"
+
+	1221.6.18 = {
+		birth = yes
+	}
+}
+
+makryenis_forgotten_5 = {
+	name = "Pavlina"
+	religion = "forgotten"
+	culture = "makryenis"
+	female = yes
+
+	1221.6.18 = {
+		birth = yes
+	}
+}
+
+makryenis_forgotten_6 = {
+	name = "Valeria"
+	religion = "forgotten"
+	culture = "makryenis"
+	female = yes
+
+	1221.6.18 = {
+		birth = yes
+	}
+}
+
+makryenis_forgotten_7 = {
+	name = "Oenion"
+	religion = "forgotten"
+	culture = "makryenis"
+
+	1221.6.18 = {
+		birth = yes
+	}
+}
+
+makryenis_forgotten_8 = {
+	name = "Sibyrtius"
+	religion = "forgotten"
+	culture = "makryenis"
+
+	1221.6.18 = {
+		birth = yes
+	}
+}
+
+makryenis_forgotten_9 = {
+	name = "Charander"
+	religion = "forgotten"
+	culture = "makryenis"
+
+	1221.6.18 = {
+		birth = yes
+	}
+}
+
+makryenis_forgotten_10 = {
+	name = "Menedemus"
+	religion = "forgotten"
+	culture = "makryenis"
+
+	1221.6.18 = {
+		birth = yes
+	}
+}
+
+makryenis_forgotten_11 = {
+	name = "Lemerus"
+	religion = "forgotten"
+	culture = "makryenis"
+
+	1221.6.18 = {
+		birth = yes
+	}
+}
+
+makryenis_forgotten_12 = {
+	name = "Asander"
+	religion = "forgotten"
+	culture = "makryenis"
+
+	1221.6.18 = {
+		birth = yes
+	}
+}
+
+makryenis_forgotten_13 = {
+	name = "Athanasia"
+	religion = "forgotten"
+	culture = "makryenis"
+	female = yes
+
+	1221.6.18 = {
+		birth = yes
+	}
+}

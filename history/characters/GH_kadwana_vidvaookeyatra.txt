@@ -1,0 +1,73 @@
+﻿kadwana_vidvaookeyatra_1 = {
+	name = "Madhavrao"
+	religion = "vidvaookeyatra"
+	culture = "kadwana"
+	1222.8.8 = {
+		birth = yes
+	}
+}
+
+kadwana_vidvaookeyatra_2 = {
+	name = "Jaskarn"
+	religion = "vidvaookeyatra"
+	culture = "kadwana"
+	father = kadwana_vidvaookeyatra_4
+	mother = kadwana_vidvaookeyatra_5
+	1234.8.8 = {
+		birth = yes
+	}
+
+	1250.12.4 = {
+		effect = { add_character_flag = should_become_independent }
+	}
+}
+
+kadwana_vidvaookeyatra_3 = {
+	name = "Ramapala"
+	religion = "vidvaookeyatra"
+	culture = "kadwana"
+	1229.8.8 = {
+		birth = yes
+	}
+}
+
+kadwana_vidvaookeyatra_4 = {
+	name = "Madhavrao"
+	religion = "vidvaookeyatra"
+	culture = "kadwana"
+	1199.3.6 = {
+		birth = yes
+		trait = dwarf
+	}
+	1217.1.1 = {
+		trait = just
+		trait = cynical
+		trait = paranoid
+		trait = education_intrigue_3
+	}
+	1230.1.1 = {
+		add_spouse = kadwana_vidvaookeyatra_5
+	}
+	1249.11.1 = {
+		death = {
+			death_reason = death_execution
+			killer = hokanta_vidvaookeyatra_33
+		}
+	}
+}
+
+kadwana_vidvaookeyatra_5 = {
+	name = "Khivi"
+	religion = "vidvaookeyatra"
+	culture = "kadwana"
+	female = yes
+	1203.12.10 = {
+		birth = yes
+	}
+	1249.11.1 = {
+		death = {
+			death_reason = death_execution
+			killer = hokanta_vidvaookeyatra_33
+		}
+	}
+}

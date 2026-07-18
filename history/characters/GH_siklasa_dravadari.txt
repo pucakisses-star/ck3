@@ -1,0 +1,8 @@
+﻿siklasa_dravadari_1 = {
+	name = "Ekoji"
+	religion = "dravadari"
+	culture = "siklasa"
+	1230.8.8 = {
+		birth = yes
+	}
+}

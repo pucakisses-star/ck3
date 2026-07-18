@@ -1,0 +1,86 @@
+﻿mutsartan_badari_1 = { # D_avsu-credit to zilis, he made these dudes
+	name = "Ihaab"
+	dynasty = dyn_khenemhat_1
+	religion = "badari"
+	culture = "mutsartan"
+	martial = 10
+	diplomacy = 10
+	intrigue = 10
+	stewardship = 10
+
+	1212.1.1 = {
+		birth = yes
+	}
+
+	1240.1.1 = {
+		add_spouse = mutsartan_badari_5
+	}
+}
+
+mutsartan_badari_2 = {
+	name = "Waseef"
+	religion = "badari"
+	culture = "mutsartan"
+
+	1225.1.1 = {
+		birth = yes
+	}
+}
+
+mutsartan_badari_3 = {
+	name = "Saahir"
+	religion = "badari"
+	culture = "mutsartan"
+
+	1230.1.1 = {
+		birth = yes
+	}
+}
+
+mutsartan_badari_4 = {
+	name = "Saabir"
+	religion = "badari"
+	culture = "mutsartan"
+
+	1222.1.1 = {
+		birth = yes
+	}
+}
+
+mutsartan_badari_5 = { # D_avsu wife
+	name = "Azema"
+	religion = "badari"
+	culture = "mutsartan"
+	female = yes
+
+	1222.1.1 = {
+		birth = yes
+	}
+}
+
+mutsartan_badari_6 = { # D_avsu son 1
+	name = "Muhsin"
+	dynasty = dyn_khenemhat_1
+	religion = "badari"
+	culture = "mutsartan"
+	father = mutsartan_badari_1
+	mother = mutsartan_badari_5
+
+	1241.1.1 = {
+		birth = yes
+	}
+}
+
+mutsartan_badari_7 = { # D_avsu daughter 1
+	name = "Ishaaba"
+	dynasty = dyn_khenemhat_1
+	religion = "badari"
+	culture = "mutsartan"
+	female = yes
+	father = mutsartan_badari_1
+	mother = mutsartan_badari_5
+
+	1248.1.1 = {
+		birth = yes
+	}
+}

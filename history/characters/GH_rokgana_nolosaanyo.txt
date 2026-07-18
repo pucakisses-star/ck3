@@ -1,0 +1,9 @@
+﻿rokgana_nolosaanyo_1 = {
+    name = "Soraj"
+    culture = "rokgana"
+    religion = "nolosaanyo"
+
+    1220.1.1 = {
+        birth = yes
+    }
+}

@@ -1,0 +1,32 @@
+﻿mahratian_omrayytor_1 = { # Khvicha's Mahratian warlord
+	name = "Koba"
+	religion = "omrayytor"
+	culture = "mahratian"
+	sexuality = heterosexual
+
+	1220.5.28 = {
+		birth = yes
+	}
+	1232.5.28 = {
+		trait = gluttonous
+		trait = gregarious
+		trait = diligent
+	}
+	1236.5.28 = {
+		trait = education_diplomacy_3
+		trait = gh_historical_reveler_3
+	}
+	1252.11.6 = {
+		effect = {
+			vassal_contract_set_obligation_level = {
+				type = religious_rights
+				level = 1
+			}
+			vassal_contract_set_obligation_level = {
+				type = title_revocation_rights
+				level = 1
+			}
+		}
+		add_gold = 200
+	}
+}
