@@ -1,0 +1,95 @@
+pdxmesh = {
+	name = "broken_statue_mesh"
+	file = "broken_statue.mesh"
+
+	lod_percentages = {
+		lod = { index = 1 percent = 10.0 }
+		lod = { index = 2 percent = 5.0 }
+	}
+
+	meshsettings = {
+		name = "vounil_LOD_0Shape"
+		index = 0
+		texture_diffuse = "broken_statue_color.dds"
+		texture_normal = "broken_statue_normal.dds"
+		texture_specular = "broken_statue_properties.dds"
+		texture = { file = "broken_statue_unique.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "vounil_LOD_1Shape"
+		index = 0
+		texture_diffuse = "broken_statue_color.dds"
+		texture_normal = "broken_statue_normal.dds"
+		texture_specular = "broken_statue_properties.dds"
+		texture = { file = "broken_statue_unique.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "vounil_LOD_2Shape"
+		index = 0
+		texture_diffuse = "broken_statue_color.dds"
+		texture_normal = "broken_statue_normal.dds"
+		texture_specular = "broken_statue_properties.dds"
+		texture = { file = "broken_statue_unique.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+pdxmesh = {
+	name = "broken_statue_arm_mesh"
+	file = "broken_statue_arm.mesh"
+
+	lod_percentages = {
+		lod = { index = 1 percent = 10.0 }
+		lod = { index = 2 percent = 5.0 }
+	}
+
+	meshsettings = {
+		name = "vounil_arm_LOD_0Shape"
+		index = 0
+		texture_diffuse = "broken_statue_arm_color.dds"
+		texture_normal = "broken_statue_arm_normal.dds"
+		texture_specular = "broken_statue_arm_properties.dds"
+		texture = { file = "broken_statue_arm_unique.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "vounil_arm_LOD_1Shape"
+		index = 0
+		texture_diffuse = "broken_statue_arm_color.dds"
+		texture_normal = "broken_statue_arm_normal.dds"
+		texture_specular = "broken_statue_arm_properties.dds"
+		texture = { file = "broken_statue_arm_unique.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "vounil_arm_LOD_2Shape"
+		index = 0
+		texture_diffuse = "broken_statue_arm_color.dds"
+		texture_normal = "broken_statue_arm_normal.dds"
+		texture_specular = "broken_statue_arm_properties.dds"
+		texture = { file = "broken_statue_arm_unique.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "broken_statue_entity"
+	pdxmesh = "broken_statue_mesh"
+}
+
+entity = {
+	name = "broken_statue_arm_entity"
+	pdxmesh = "broken_statue_arm_mesh"
+}

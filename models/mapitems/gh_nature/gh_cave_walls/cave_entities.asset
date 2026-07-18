@@ -1,0 +1,544 @@
+#columns
+pdxmesh = {
+	name = "column_01_mesh"
+	file = "column_01.mesh"
+
+	meshsettings = {
+		name = "column_01"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "column_01_entity"
+	pdxmesh = "column_01_mesh"
+}
+
+pdxmesh = {
+	name = "column_02_mesh"
+	file = "column_02.mesh"
+
+	meshsettings = {
+		name = "column_02"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "column_02_entity"
+	pdxmesh = "column_02_mesh"
+}
+pdxmesh = {
+	name = "column_03_mesh"
+	file = "column_03.mesh"
+	
+
+	meshsettings = {
+		name = "column_03"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "column_03_entity"
+	pdxmesh = "column_03_mesh"
+}
+
+#ravine walls
+pdxmesh = {
+	name = "ravine_wall_01_mesh"
+	file = "ravine_wall_01.mesh"
+	
+
+	meshsettings = {
+		name = "ravine_wall_01"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "ravine_wall_01_entity"
+	pdxmesh = "ravine_wall_01_mesh"
+}
+
+pdxmesh = {
+	name = "ravine_wall_02_mesh"
+	file = "ravine_wall_02.mesh"
+	
+
+	meshsettings = {
+		name = "ravine_wall_02"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "ravine_wall_02_entity"
+	pdxmesh = "ravine_wall_02_mesh"
+}
+
+pdxmesh = {
+	name = "ravine_wall_03_mesh"
+	file = "ravine_wall_03.mesh"
+	
+
+	meshsettings = {
+		name = "ravine_wall_03"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "ravine_wall_03_entity"
+	pdxmesh = "ravine_wall_03_mesh"
+}
+
+pdxmesh = {
+	name = "ravine_wall_04_mesh"
+	file = "ravine_wall_04.mesh"
+	
+
+	meshsettings = {
+		name = "ravine_wall_04"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "ravine_wall_04_entity"
+	pdxmesh = "ravine_wall_04_mesh"
+}
+
+pdxmesh = {
+	name = "ravine_wall_05_mesh"
+	file = "ravine_wall_05.mesh"
+	
+
+	meshsettings = {
+		name = "ravine_wall_05"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "ravine_wall_05_entity"
+	pdxmesh = "ravine_wall_05_mesh"
+}
+
+#rough boulders
+pdxmesh = {
+	name = "rough_boulder_01_mesh"
+	file = "rough_boulder_01.mesh"
+	
+
+	meshsettings = {
+		name = "rough_boulder_01"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "rough_boulder_01_entity"
+	pdxmesh = "rough_boulder_01_mesh"
+}
+
+pdxmesh = {
+	name = "rough_boulder_02_mesh"
+	file = "rough_boulder_02.mesh"
+	
+
+	meshsettings = {
+		name = "rough_boulder_02"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "rough_boulder_02_entity"
+	pdxmesh = "rough_boulder_02_mesh"
+}
+
+pdxmesh = {
+	name = "rough_boulder_03_mesh"
+	file = "rough_boulder_03.mesh"
+	
+
+	meshsettings = {
+		name = "rough_boulder_03"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "rough_boulder_03_entity"
+	pdxmesh = "rough_boulder_03_mesh"
+}
+
+#stalactites and stalagmites
+pdxmesh = {
+	name = "stalactite_01_mesh"
+	file = "stalactite_01.mesh"
+	
+
+	meshsettings = {
+		name = "stalactite_01"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "stalactite_01_entity"
+	pdxmesh = "stalactite_01_mesh"
+}
+
+pdxmesh = {
+	name = "stalagmite_01_mesh"
+	file = "stalagmite_01.mesh"
+	
+
+	meshsettings = {
+		name = "stalagmite_01"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "stalagmite_01_entity"
+	pdxmesh = "stalagmite_01_mesh"
+}
+
+pdxmesh = {
+	name = "stalagmite_02_mesh"
+	file = "stalagmite_02.mesh"
+	
+
+	meshsettings = {
+		name = "stalagmite_02"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "stalagmite_02_entity"
+	pdxmesh = "stalagmite_02_mesh"
+}
+
+pdxmesh = {
+	name = "stalactite_wall_01_mesh"
+	file = "stalactite_wall_01.mesh"
+	
+
+	meshsettings = {
+		name = "stalactite_wall_01"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "stalactite_wall_01_entity"
+	pdxmesh = "stalactite_wall_01_mesh"
+}
+
+pdxmesh = {
+	name = "stalactite_wall_02_mesh"
+	file = "stalactite_wall_02.mesh"
+	
+
+	meshsettings = {
+		name = "stalactite_wall_02"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "stalactite_wall_02_entity"
+	pdxmesh = "stalactite_wall_02_mesh"
+}
+
+pdxmesh = {
+	name = "stalactite_wall_03_mesh"
+	file = "stalactite_wall_03.mesh"
+	
+
+	meshsettings = {
+		name = "stalactite_wall_03"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "stalactite_wall_03_entity"
+	pdxmesh = "stalactite_wall_03_mesh"
+}
+
+#worked
+pdxmesh = {
+	name = "worked_column_01_mesh"
+	file = "worked_column_01.mesh"
+	
+
+	meshsettings = {
+		name = "worked_column_01"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "worked_column_01_entity"
+	pdxmesh = "worked_column_01_mesh"
+}
+
+pdxmesh = {
+	name = "worked_column_line_01_mesh"
+	file = "worked_column_line_01.mesh"
+	
+
+	meshsettings = {
+		name = "worked_column_line_01"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "worked_column_line_01_entity"
+	pdxmesh = "worked_column_line_01_mesh"
+}
+
+pdxmesh = {
+	name = "worked_wall_01_mesh"
+	file = "worked_wall_01.mesh"
+	
+
+	meshsettings = {
+		name = "worked_wall_01"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "worked_wall_01_entity"
+	pdxmesh = "worked_wall_01_mesh"
+}
+
+pdxmesh = {
+	name = "worked_wall_02_mesh"
+	file = "worked_wall_02.mesh"
+	
+
+	meshsettings = {
+		name = "worked_wall_02"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "worked_wall_02_entity"
+	pdxmesh = "worked_wall_02_mesh"
+}
+
+pdxmesh = {
+	name = "worked_gate_01_mesh"
+	file = "worked_gate_01.mesh"
+	
+
+	meshsettings = {
+		name = "worked_gate_01"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "worked_gate_01_entity"
+	pdxmesh = "worked_gate_01_mesh"
+}
+
+#long
+
+pdxmesh = {
+	name = "karst_wall_01_mesh"
+	file = "karst_wall_01.mesh"
+	
+
+	meshsettings = {
+		name = "karst_wall_01"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "karst_wall_01_entity"
+	pdxmesh = "karst_wall_01_mesh"
+}
+
+pdxmesh = {
+	name = "karst_wall_02_mesh"
+	file = "karst_wall_02.mesh"
+	
+
+	meshsettings = {
+		name = "karst_wall_02"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "karst_wall_02_entity"
+	pdxmesh = "karst_wall_02_mesh"
+}
+
+
+pdxmesh = {
+	name = "rough_wall_01_mesh"
+	file = "rough_wall_01.mesh"
+	
+
+	meshsettings = {
+		name = "rough_wall_01"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "rough_wall_01_entity"
+	pdxmesh = "rough_wall_01_mesh"
+}
+
+pdxmesh = {
+	name = "rough_wall_02_mesh"
+	file = "rough_wall_02.mesh"
+	
+
+	meshsettings = {
+		name = "rough_wall_02"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "rough_wall_02_entity"
+	pdxmesh = "rough_wall_02_mesh"
+}
+
+pdxmesh = {
+	name = "rough_wall_03_mesh"
+	file = "rough_wall_03.mesh"
+	
+
+	meshsettings = {
+		name = "rough_wall_03"
+		index = 0
+		texture_diffuse = "cave_diffuse.dds"
+		texture_normal = "cave_normal.dds"
+		texture_specular = "cave_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "rough_wall_03_entity"
+	pdxmesh = "rough_wall_03_mesh"
+}

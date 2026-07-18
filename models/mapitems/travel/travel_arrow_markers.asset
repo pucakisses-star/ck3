@@ -1,0 +1,131 @@
+pdxmesh = {
+	name = "travel_arrow_destination_marker_mesh"
+	file = "travel_arrow_marker.mesh"
+	scale = 0.8
+	
+	meshsettings =
+	{
+		shader = travel_arrow_marker
+		texture_diffuse = "travel_arrow_marker.dds"
+		texture_normal = "null_normal.dds"
+		texture_specular = "null_gloss.dds"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+pdxmesh = {
+	name = "travel_arrow_destination_visited_marker_mesh"
+	file = "travel_arrow_marker.mesh"
+	scale = 0.8
+
+	meshsettings =
+	{
+		shader = travel_arrow_marker
+		texture_diffuse = "travel_arrow_marker_visited.dds"
+		texture_normal = "null_normal.dds"
+		texture_specular = "null_gloss.dds"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+pdxmesh = {
+	name = "travel_arrow_destination_marker_solid_mesh"
+	file = "travel_arrow_marker.mesh"
+	scale = 0.8
+
+	meshsettings =
+	{
+		shader = travel_arrow_marker
+		texture_diffuse = "travel_arrow_marker_solid.dds"
+		texture_normal = "null_normal.dds"
+		texture_specular = "null_gloss.dds"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+pdxmesh = {
+	name = "travel_arrow_destination_visited_marker_solid_mesh"
+	file = "travel_arrow_marker.mesh"
+	scale = 0.8
+
+	meshsettings =
+	{
+		shader = travel_arrow_marker
+		texture_diffuse = "travel_arrow_marker_solid_visited.dds"
+		texture_normal = "null_normal.dds"
+		texture_specular = "null_gloss.dds"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "travel_arrow_destination_marker"
+	pdxmesh = "travel_arrow_destination_marker_mesh"
+}
+entity = {
+	name = "travel_arrow_destination_visited_marker"
+	pdxmesh = "travel_arrow_destination_visited_marker_mesh"
+}
+
+entity = {
+	name = "travel_arrow_destination_flatmap_marker"
+	pdxmesh = "travel_arrow_destination_marker_solid_mesh"
+	scale = 1.5
+}
+entity = {
+	name = "travel_arrow_destination_visited_flatmap_marker"
+	pdxmesh = "travel_arrow_destination_visited_marker_solid_mesh"
+	scale = 1.5
+}
+
+###################
+
+pdxmesh = {
+	name = "travel_arrow_waypoint_marker_mesh"
+	file = "travel_arrow_marker.mesh"
+	scale = 0.2
+
+	meshsettings =
+	{
+		shader = travel_arrow_marker
+		texture_diffuse = "travel_arrow_marker_solid.dds"
+		texture_normal = "null_normal.dds"
+		texture_specular = "null_gloss.dds"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+pdxmesh = {
+	name = "travel_arrow_waypoint_visited_marker_mesh"
+	file = "travel_arrow_marker.mesh"
+	scale = 0.2
+
+	meshsettings =
+	{
+		shader = travel_arrow_marker
+		texture_diffuse = "travel_arrow_marker_solid_visited.dds"
+		texture_normal = "null_normal.dds"
+		texture_specular = "null_gloss.dds"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "travel_arrow_waypoint_marker"
+	pdxmesh = "travel_arrow_waypoint_marker_mesh"
+}
+entity = {
+	name = "travel_arrow_waypoint_visited_marker"
+	pdxmesh = "travel_arrow_waypoint_visited_marker_mesh"
+}
+
+entity = {
+	name = "travel_arrow_waypoint_flatmap_marker"
+	pdxmesh = "travel_arrow_waypoint_marker_mesh"
+	scale = 0 # intentionally hidden
+}
+entity = {
+	name = "travel_arrow_waypoint_visited_flatmap_marker"
+	pdxmesh = "travel_arrow_waypoint_visited_marker_mesh"
+	scale = 0 # intentionally hidden
+}

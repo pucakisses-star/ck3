@@ -1,0 +1,83 @@
+pdxmesh = {
+	name = "tgp_bridge_japanese_mesh"
+	file = "tgp_bridge_japanese.mesh"
+	scale = 1
+	lod_percentages = {
+		lod = { index = 1 percent = 40.0 }
+		lod = { index = 2 percent = 30.0 }
+	}
+
+	meshsettings = {
+		name = "bridge_japanese_decal_LOD0Shape"
+		index = 0
+
+		texture_diffuse = "western_city_01_decal_diffuse.dds"
+		texture_normal = "western_city_01_decal_normal.dds"
+		texture_specular = "western_city_01_decal_properties.dds"
+		
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+
+	meshsettings = {
+		name = "bridge_japanese_decal_LOD1Shape"
+		index = 0
+		texture_diffuse = "western_city_01_decal_diffuse.dds"
+		texture_normal = "western_city_01_decal_normal.dds"
+		texture_specular = "western_city_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+	
+	meshsettings = {
+		name = "bridge_japanese_decal_LOD2Shape"
+		index = 0
+		texture_diffuse = "western_city_01_decal_diffuse.dds"
+		texture_normal = "western_city_01_decal_normal.dds"
+		texture_specular = "western_city_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+
+	meshsettings = {
+		name = "bridge_japanese_LOD0Shape"
+		index = 0
+		texture_diffuse = "building_japanese_atlas_diffuse.dds"
+		texture_normal = "building_japanese_atlas_normal.dds"
+		texture_specular = "building_japanese_atlas_properties.dds"
+		texture = { file = "tgp_bridge_japanese_unique.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "bridge_japanese_LOD1Shape"
+		index = 0
+		texture_diffuse = "building_japanese_atlas_diffuse.dds"
+		texture_normal = "building_japanese_atlas_normal.dds"
+		texture_specular = "building_japanese_atlas_properties.dds"
+		texture = { file = "tgp_bridge_japanese_unique.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "bridge_japanese_LOD2Shape"
+		index = 0
+		texture_diffuse = "building_japanese_atlas_diffuse.dds"
+		texture_normal = "building_japanese_atlas_normal.dds"
+		texture_specular = "building_japanese_atlas_properties.dds"
+		texture = { file = "tgp_bridge_japanese_unique.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+
+entity = {
+	name = "tgp_bridge_japanese_entity"
+	pdxmesh = "tgp_bridge_japanese_mesh"
+}

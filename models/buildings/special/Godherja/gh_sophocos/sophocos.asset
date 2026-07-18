@@ -1,0 +1,635 @@
+pdxmesh = {
+	name = "sophocos_01_mesh"
+	file = "sophocos_01.mesh"
+	scale = 2.5
+
+	lod_percentages = {
+		lod = { index = 1 percent = 10.0 }
+		lod = { index = 2 percent = 5.0 }
+	}
+
+	meshsettings = {
+		name = "sophocos_LOD_0Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "sophocos_LOD_1Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "sophocos_LOD_2Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "aersanon_tower_sophocos_LOD_0Shape"
+		index = 0
+		texture_diffuse = "aersanon_tower_diffuse.dds"
+		texture_normal = "aersanon_tower_normal.dds"
+		texture_specular = "aersanon_tower_properties.dds"
+		texture = { file = "sophocos_terrain_blend.dds" index = 8 }
+		shader = "GH_standard_terrain_blend"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "aersanon_tower_sophocos_LOD_1Shape"
+		index = 0
+		texture_diffuse = "aersanon_tower_diffuse.dds"
+		texture_normal = "aersanon_tower_normal.dds"
+		texture_specular = "aersanon_tower_properties.dds"
+		texture = { file = "sophocos_terrain_blend.dds" index = 8 }
+		shader = "GH_standard_terrain_blend"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "aersanon_tower_sophocos_LOD_2Shape"
+		index = 0
+		texture_diffuse = "aersanon_tower_diffuse.dds"
+		texture_normal = "aersanon_tower_normal.dds"
+		texture_specular = "aersanon_tower_properties.dds"
+		texture = { file = "sophocos_terrain_blend.dds" index = 8 }
+		shader = "GH_standard_terrain_blend"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "sophocos_top_plain_LOD_0Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "sophocos_top_plain_LOD_1Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "sophocos_top_plain_LOD_2Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+pdxmesh = {
+	name = "sophocos_02_mesh"
+	file = "sophocos_02.mesh"
+	scale = 2.5
+
+	lod_percentages = {
+		lod = { index = 1 percent = 10.0 }
+		lod = { index = 2 percent = 5.0 }
+	}
+
+	meshsettings = {
+		name = "sophocos_LOD_0Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "sophocos_LOD_1Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "sophocos_LOD_2Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "aersanon_tower_sophocos_LOD_0Shape"
+		index = 0
+		texture_diffuse = "aersanon_tower_diffuse.dds"
+		texture_normal = "aersanon_tower_normal.dds"
+		texture_specular = "aersanon_tower_properties.dds"
+		texture = { file = "sophocos_terrain_blend.dds" index = 8 }
+		shader = "GH_standard_terrain_blend"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "aersanon_tower_sophocos_LOD_1Shape"
+		index = 0
+		texture_diffuse = "aersanon_tower_diffuse.dds"
+		texture_normal = "aersanon_tower_normal.dds"
+		texture_specular = "aersanon_tower_properties.dds"
+		texture = { file = "sophocos_terrain_blend.dds" index = 8 }
+		shader = "GH_standard_terrain_blend"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "aersanon_tower_sophocos_LOD_2Shape"
+		index = 0
+		texture_diffuse = "aersanon_tower_diffuse.dds"
+		texture_normal = "aersanon_tower_normal.dds"
+		texture_specular = "aersanon_tower_properties.dds"
+		texture = { file = "sophocos_terrain_blend.dds" index = 8 }
+		shader = "GH_standard_terrain_blend"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "tree_cypress_01_LOD_0Shape"
+		index = 0
+		texture_diffuse = "tree_leaf_01_diffuse.dds"
+		texture_normal = "tree_leaf_01_normal.dds"
+		texture_specular = "tree_leaf_01_properties.dds"
+		texture = { file = "tree_jungle_01_tint.dds" index = 3 srgb = yes }
+		shader = "tree"
+		shader_file = "gfx/FX/tree.shader"
+	}
+
+	meshsettings = {
+		name = "tree_cypress_01_LOD_1Shape"
+		index = 0
+		texture_diffuse = "tree_leaf_01_diffuse.dds"
+		texture_normal = "tree_leaf_01_normal.dds"
+		texture_specular = "tree_leaf_01_properties.dds"
+		texture = { file = "tree_jungle_01_tint.dds" index = 3 srgb = yes }
+		shader = "tree"
+		shader_file = "gfx/FX/tree.shader"
+	}
+
+	meshsettings = {
+		name = "tree_cypress_01_LOD_2Shape"
+		index = 0
+		texture_diffuse = "tree_leaf_01_diffuse.dds"
+		texture_normal = "tree_leaf_01_normal.dds"
+		texture_specular = "tree_leaf_01_properties.dds"
+		texture = { file = "tree_jungle_01_tint.dds" index = 3 srgb = yes }
+		shader = "tree"
+		shader_file = "gfx/FX/tree.shader"
+	}
+	
+	meshsettings = {
+		name = "sophocos_mena_city_1_LOD_0Shape"
+		index = 0
+		texture_diffuse = "building_mena_atlas_diffuse.dds"
+		texture_normal = "building_mena_atlas_normal.dds"
+		texture_specular = "building_mena_atlas_properties.dds"
+		texture = { file = "building_mena_city_01_unique.dds" index = 5 }
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "sophocos_mena_city_1_LOD_1Shape"
+		index = 0
+		texture_diffuse = "building_mena_atlas_diffuse.dds"
+		texture_normal = "building_mena_atlas_normal.dds"
+		texture_specular = "building_mena_atlas_properties.dds"
+		texture = { file = "building_mena_city_01_unique.dds" index = 5 }
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "sophocos_mena_city_1_LOD_2Shape"
+		index = 0
+		texture_diffuse = "building_mena_atlas_diffuse.dds"
+		texture_normal = "building_mena_atlas_normal.dds"
+		texture_specular = "building_mena_atlas_properties.dds"
+		texture = { file = "building_mena_city_01_unique.dds" index = 5 }
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "sophocos_add_1_LOD_0Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "sophocos_add_1_LOD_1Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "sophocos_add_1_LOD_2Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+pdxmesh = {
+	name = "sophocos_03_mesh"
+	file = "sophocos_03.mesh"
+	scale = 2.5
+
+	lod_percentages = {
+		lod = { index = 1 percent = 10.0 }
+		lod = { index = 2 percent = 5.0 }
+	}
+
+	meshsettings = {
+		name = "sophocos_LOD_0Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "sophocos_LOD_1Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "sophocos_LOD_2Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "aersanon_tower_sophocos_LOD_0Shape"
+		index = 0
+		texture_diffuse = "aersanon_tower_diffuse.dds"
+		texture_normal = "aersanon_tower_normal.dds"
+		texture_specular = "aersanon_tower_properties.dds"
+		texture = { file = "sophocos_terrain_blend.dds" index = 8 }
+		shader = "GH_standard_terrain_blend"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "aersanon_tower_sophocos_LOD_1Shape"
+		index = 0
+		texture_diffuse = "aersanon_tower_diffuse.dds"
+		texture_normal = "aersanon_tower_normal.dds"
+		texture_specular = "aersanon_tower_properties.dds"
+		texture = { file = "sophocos_terrain_blend.dds" index = 8 }
+		shader = "GH_standard_terrain_blend"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "aersanon_tower_sophocos_LOD_2Shape"
+		index = 0
+		texture_diffuse = "aersanon_tower_diffuse.dds"
+		texture_normal = "aersanon_tower_normal.dds"
+		texture_specular = "aersanon_tower_properties.dds"
+		texture = { file = "sophocos_terrain_blend.dds" index = 8 }
+		shader = "GH_standard_terrain_blend"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "tree_cypress_01_LOD_0Shape"
+		index = 0
+		texture_diffuse = "tree_leaf_01_diffuse.dds"
+		texture_normal = "tree_leaf_01_normal.dds"
+		texture_specular = "tree_leaf_01_properties.dds"
+		texture = { file = "tree_jungle_01_tint.dds" index = 3 srgb = yes }
+		shader = "tree"
+		shader_file = "gfx/FX/tree.shader"
+	}
+
+	meshsettings = {
+		name = "tree_cypress_01_LOD_1Shape"
+		index = 0
+		texture_diffuse = "tree_leaf_01_diffuse.dds"
+		texture_normal = "tree_leaf_01_normal.dds"
+		texture_specular = "tree_leaf_01_properties.dds"
+		texture = { file = "tree_jungle_01_tint.dds" index = 3 srgb = yes }
+		shader = "tree"
+		shader_file = "gfx/FX/tree.shader"
+	}
+
+	meshsettings = {
+		name = "tree_cypress_01_LOD_2Shape"
+		index = 0
+		texture_diffuse = "tree_leaf_01_diffuse.dds"
+		texture_normal = "tree_leaf_01_normal.dds"
+		texture_specular = "tree_leaf_01_properties.dds"
+		texture = { file = "tree_jungle_01_tint.dds" index = 3 srgb = yes }
+		shader = "tree"
+		shader_file = "gfx/FX/tree.shader"
+	}
+	
+	meshsettings = {
+		name = "sophocos_mena_city_2_LOD_0Shape"
+		index = 0
+		texture_diffuse = "building_mena_atlas_diffuse.dds"
+		texture_normal = "building_mena_atlas_normal.dds"
+		texture_specular = "building_mena_atlas_properties.dds"
+		texture = { file = "building_mena_city_01_unique.dds" index = 5 }
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "sophocos_mena_city_2_LOD_1Shape"
+		index = 0
+		texture_diffuse = "building_mena_atlas_diffuse.dds"
+		texture_normal = "building_mena_atlas_normal.dds"
+		texture_specular = "building_mena_atlas_properties.dds"
+		texture = { file = "building_mena_city_01_unique.dds" index = 5 }
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "sophocos_mena_city_2_LOD_2Shape"
+		index = 0
+		texture_diffuse = "building_mena_atlas_diffuse.dds"
+		texture_normal = "building_mena_atlas_normal.dds"
+		texture_specular = "building_mena_atlas_properties.dds"
+		texture = { file = "building_mena_city_01_unique.dds" index = 5 }
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "sophocos_add_2_LOD_0Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "sophocos_add_2_LOD_1Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "sophocos_add_2_LOD_2Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+pdxmesh = {
+	name = "sophocos_04_mesh"
+	file = "sophocos_04.mesh"
+	scale = 2.5
+
+	lod_percentages = {
+		lod = { index = 1 percent = 10.0 }
+		lod = { index = 2 percent = 5.0 }
+	}
+
+	meshsettings = {
+		name = "sophocos_LOD_0Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "sophocos_LOD_1Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "sophocos_LOD_2Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "aersanon_tower_sophocos_LOD_0Shape"
+		index = 0
+		texture_diffuse = "aersanon_tower_diffuse.dds"
+		texture_normal = "aersanon_tower_normal.dds"
+		texture_specular = "aersanon_tower_properties.dds"
+		texture = { file = "sophocos_terrain_blend.dds" index = 8 }
+		shader = "GH_standard_terrain_blend"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "aersanon_tower_sophocos_LOD_1Shape"
+		index = 0
+		texture_diffuse = "aersanon_tower_diffuse.dds"
+		texture_normal = "aersanon_tower_normal.dds"
+		texture_specular = "aersanon_tower_properties.dds"
+		texture = { file = "sophocos_terrain_blend.dds" index = 8 }
+		shader = "GH_standard_terrain_blend"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "aersanon_tower_sophocos_LOD_2Shape"
+		index = 0
+		texture_diffuse = "aersanon_tower_diffuse.dds"
+		texture_normal = "aersanon_tower_normal.dds"
+		texture_specular = "aersanon_tower_properties.dds"
+		texture = { file = "sophocos_terrain_blend.dds" index = 8 }
+		shader = "GH_standard_terrain_blend"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "tree_cypress_01_LOD_0Shape"
+		index = 0
+		texture_diffuse = "tree_leaf_01_diffuse.dds"
+		texture_normal = "tree_leaf_01_normal.dds"
+		texture_specular = "tree_leaf_01_properties.dds"
+		texture = { file = "tree_jungle_01_tint.dds" index = 3 srgb = yes }
+		shader = "tree"
+		shader_file = "gfx/FX/tree.shader"
+	}
+
+	meshsettings = {
+		name = "tree_cypress_01_LOD_1Shape"
+		index = 0
+		texture_diffuse = "tree_leaf_01_diffuse.dds"
+		texture_normal = "tree_leaf_01_normal.dds"
+		texture_specular = "tree_leaf_01_properties.dds"
+		texture = { file = "tree_jungle_01_tint.dds" index = 3 srgb = yes }
+		shader = "tree"
+		shader_file = "gfx/FX/tree.shader"
+	}
+
+	meshsettings = {
+		name = "tree_cypress_01_LOD_2Shape"
+		index = 0
+		texture_diffuse = "tree_leaf_01_diffuse.dds"
+		texture_normal = "tree_leaf_01_normal.dds"
+		texture_specular = "tree_leaf_01_properties.dds"
+		texture = { file = "tree_jungle_01_tint.dds" index = 3 srgb = yes }
+		shader = "tree"
+		shader_file = "gfx/FX/tree.shader"
+	}
+	
+	meshsettings = {
+		name = "sophocos_mena_city_3_LOD_0Shape"
+		index = 0
+		texture_diffuse = "building_mena_atlas_diffuse.dds"
+		texture_normal = "building_mena_atlas_normal.dds"
+		texture_specular = "building_mena_atlas_properties.dds"
+		texture = { file = "building_mena_city_01_unique.dds" index = 5 }
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "sophocos_mena_city_3_LOD_1Shape"
+		index = 0
+		texture_diffuse = "building_mena_atlas_diffuse.dds"
+		texture_normal = "building_mena_atlas_normal.dds"
+		texture_specular = "building_mena_atlas_properties.dds"
+		texture = { file = "building_mena_city_01_unique.dds" index = 5 }
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "sophocos_mena_city_3_LOD_2Shape"
+		index = 0
+		texture_diffuse = "building_mena_atlas_diffuse.dds"
+		texture_normal = "building_mena_atlas_normal.dds"
+		texture_specular = "building_mena_atlas_properties.dds"
+		texture = { file = "building_mena_city_01_unique.dds" index = 5 }
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "sophocos_add_3_LOD_0Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "sophocos_add_3_LOD_1Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "sophocos_add_3_LOD_2Shape"
+		index = 0
+		texture_diffuse = "sophocos_diffuse.dds"
+		texture_normal = "sophocos_normal.dds"
+		texture_specular = "sophocos_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+pdxmesh = {
+	name = "sophocos_broken_top_mesh"
+	file = "sophocos_broken_top.mesh"
+	scale = 2.5
+	
+	meshsettings = {
+		name = "sophocos_broken_top"
+		index = 0
+		texture_diffuse = "aersanon_tower_diffuse.dds"
+		texture_normal = "aersanon_tower_normal.dds"
+		texture_specular = "aersanon_tower_properties.dds"
+		texture = { file = "sophocos_terrain_blend.dds" index = 8 }
+		shader = "GH_snap_to_terrain_terrain_blend"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "sophocos_broken_top_entity"
+	pdxmesh = "sophocos_broken_top_mesh"
+}

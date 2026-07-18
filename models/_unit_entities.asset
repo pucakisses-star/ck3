@@ -1,0 +1,153 @@
+### Unit Select
+
+
+entity = {
+	name = "unit_select"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+	state = { name = "idle"
+	state_time = 5
+		looping = no
+		next_state = idle
+
+		event = { 	
+			time = 0
+			node = "part1"
+			particle = "unit_select"
+			trigger_once = yes
+			keep_particle = yes
+			life = 5}
+	}
+	
+}
+
+### Dust Trail
+
+
+entity = {
+	name = "unit_dust_trail_3"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+	state = { name = "idle"
+	state_time = 5
+		looping = no
+		next_state = idle
+
+		event = { time = 0 node = "part1" particle = "dust_trail_3" trigger_once = yes life = 5}
+	}
+	
+}
+
+entity = {
+	name = "battle_start"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 looping = no next_state = idle
+		event = { time = 0 node = "part1" particle = "units/battle_start" trigger_once = yes}
+	}
+	
+}
+
+### Gather army
+
+entity = {
+	name = "unit_gather_army_effect"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+	state = { name = "idle"
+	state_time = 5
+		looping = no
+		next_state = idle
+
+		event = { time = 0 node = "part1" particle = "unit_gather_army" trigger_once = yes life = 5}
+	}
+	
+}
+
+entity = {
+	name = "unit_gather_army_effect_02"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+	state = { name = "idle"
+	state_time = 5
+		looping = no
+		next_state = idle
+
+		event = { time = 0 node = "part1" particle = "unit_gather_army_02" trigger_once = yes life = 5}
+	}
+	
+}
+
+entity = {
+	name = "unit_gather_army_effect_03"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+	state = { name = "idle"
+	state_time = 5
+		looping = no
+		next_state = idle
+
+		event = { time = 0 node = "part1" particle = "unit_gather_army_03" trigger_once = yes life = 5}
+	}
+	
+}
+
+entity = {
+	name = "unit_gather_army_effect_04"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+	state = { name = "idle"
+	state_time = 5
+		looping = no
+		next_state = idle
+
+		event = { time = 0 node = "part1" particle = "unit_gather_army_04" trigger_once = yes life = 5}
+	}
+	
+}
+
+entity = {
+	name = "unit_gather_army_effect_05"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+	state = { name = "idle"
+	state_time = 5
+		looping = no
+		next_state = idle
+
+		event = { time = 0 node = "part1" particle = "unit_gather_army_05" trigger_once = yes life = 5}
+	}
+	
+}
+
+entity = {
+	name = "horse_dust"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+	state = { name = "idle"
+	state_time = 5
+		looping = no
+		next_state = idle
+
+		event = { time = 0 node = "part1" particle = "horse_dust" trigger_once = yes life = 5}
+	}
+	
+}

@@ -1,0 +1,20 @@
+pdxmesh = {
+	name = "rock_hardened_lava_01_e_mesh"
+	file = "rock_hardened_lava_01_e.mesh"
+	scale = 1.2
+
+	meshsettings = {
+		name = "rock_hardened_lava_01_e"
+		index = 0
+		texture_diffuse = "rock_hardened_lava_01_diffuse.dds"
+		texture_normal = "rock_hardened_lava_01_normal.dds"
+		texture_specular = "rock_hardened_lava_01_properties.dds"
+		shader = "tree"
+		shader_file = "gfx/FX/tree.shader"
+	}
+}
+
+entity = {
+	name = "rock_hardened_lava_01_e_entity"
+	pdxmesh = "rock_hardened_lava_01_e_mesh"
+}

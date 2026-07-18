@@ -1,0 +1,80 @@
+pdxmesh = {
+	name = "fp4_pyre_01_a_mesh"
+	file = "fp4_pyre_01_a.mesh"
+
+	lod_percentages = {
+		lod = { index = 1 percent = 3.0 }
+	}
+
+	meshsettings = {
+		name = "fp4_pyre_01_a_LOD0Shape"
+		index = 0
+		texture_diffuse = "fp4_pyre_01_a_diffuse.dds"
+		texture_normal = "fp4_pyre_01_a_normal.dds"
+		texture_specular = "fp4_pyre_01_a_properties.dds"
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "fp4_pyre_decal_01_a_LOD0Shape"
+		index = 0
+		texture_diffuse = "fp4_pyre_decal_01_a_diffuse.dds"
+		texture_normal = "fp4_pyre_decal_01_a_normal.dds"
+		texture_specular = "fp4_pyre_decal_01_a_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+
+	meshsettings = {
+		name = "fp4_cart_corpse_01_a_LOD0Shape"
+		index = 0
+		texture_diffuse = "healers_building_western_atlas_diffuse.dds"
+		texture_normal = "healers_building_western_atlas_normal.dds"
+		texture_specular = "building_western_atlas_properties.dds"
+		texture = { file = "fp4_cart_corpse_unique_diffuse.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "fp4_pyre_01_a_LOD1Shape"
+		index = 0
+		texture_diffuse = "fp4_pyre_01_a_diffuse.dds"
+		texture_normal = "fp4_pyre_01_a_normal.dds"
+		texture_specular = "fp4_pyre_01_a_properties.dds"
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "fp4_pyre_decal_01_a_LOD1Shape"
+		index = 0
+		texture_diffuse = "fp4_pyre_decal_01_a_diffuse.dds"
+		texture_normal = "fp4_pyre_decal_01_a_normal.dds"
+		texture_specular = "fp4_pyre_decal_01_a_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+
+	meshsettings = {
+		name = "fp4_cart_corpse_01_a_LOD1Shape"
+		index = 0
+		texture_diffuse = "healers_building_western_atlas_diffuse.dds"
+		texture_normal = "healers_building_western_atlas_normal.dds"
+		texture_specular = "building_western_atlas_properties.dds"
+		texture = { file = "fp4_cart_corpse_unique_diffuse.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "fp4_pyre_01_a_entity"
+	pdxmesh = "fp4_pyre_01_a_mesh"
+
+	locator = { name = "pyre_01" position = { 0 .3 0 }  }
+	attach = {         "pyre_01" = "pyre" }	
+}
