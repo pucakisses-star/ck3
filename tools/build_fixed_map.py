@@ -807,6 +807,109 @@ for _name, _bucket in sorted(_cls.items()):
     _pa += 1
 print(f"  scenic art: {_pa} images in {len(art_pools)} pools")
 
+# the game's illustration library: terrain paintings, holding exteriors and
+# outdoor event scenes join the same pools (interiors/character scenes skipped)
+ILLUST_TERRAIN = {  # illustrations/terrain_types/<name>.dds -> bucket
+    "coastal_sea": "coast", "sea": "coast", "desert": "desert",
+    "desert_mountains": "desert", "drylands": "desert", "oasis": "desert",
+    "farmlands": "farm", "terraced_hills": "farm", "floodplains": "river",
+    "forest": "forest", "taiga": "snow", "hills": "plains", "plains": "plains",
+    "steppe": "plains", "impassable": "mountain", "mountains": "mountain",
+    "jungle": "jungle", "wetlands": "swamp",
+    "mpo_season_abudant_grazing": "plains", "mpo_season_blessing_blue_sky": "plains",
+    "mpo_season_everlasting_summer": "plains", "mpo_season_severe_drought": "desert",
+    "mpo_season_cold_zud": "snow", "mpo_season_white_zud": "snow",
+    "mpo_season_havsarsan_zud": "snow",
+}
+ILLUST_SCENES = {  # illustrations/event_scenes/<name>.dds -> bucket
+    "bp1_desert": "desert", "desert": "desert", "drylands": "desert",
+    "desert_settlement": "desert", "ep2_travel_desert": "desert",
+    "ep3_camp_arid_terrain": "desert", "fp4_legendary_oasis": "desert",
+    "bp1_docks_tribal": "port", "docks": "port", "fp3_docks": "port",
+    "tgp_docks_asia": "port", "tgp_village_sea": "port",
+    "bp3_coast": "coast", "fp1_beached_longship": "coast",
+    "fp1_ocean": "coast", "fp1_ocean_norse": "coast",
+    "bp1_hills": "plains", "bp1_plains": "plains", "steppe": "plains",
+    "ep2_travel_hills": "plains", "ep2_travel_steppe": "plains",
+    "mpo_steppe_evening": "plains", "mpo_hunt_steppe": "plains",
+    "fp1_runestone": "plains", "fp1_runestone_circle": "plains",
+    "bp1_crossroads_inn": "plains", "tgp_crossroad_inn_asia": "plains",
+    "bp1_jungle": "jungle", "bp1_wetlands": "swamp",
+    "bp3_hills_winter": "snow", "bp3_mountain_winter": "snow",
+    "bp3_plains_winter": "snow", "bp3_steppe_winter": "snow",
+    "bp3_wetlands_winter": "snow", "ep2_hunt_snowy_forest": "snow",
+    "bp3_riverside": "river", "ep2_travel_bridge": "river",
+    "fp4_legendary_spring": "river", "tgp_overflowing_river": "river",
+    "church": "temple", "mosque": "temple", "temple": "temple",
+    "fp1_tribal_temple": "temple", "fp2_temple": "temple", "fp3_temple": "temple",
+    "tgp_temple_asia": "temple", "mpo_temple_steppe": "temple",
+    "ep2_holysite_indian": "temple", "ep2_holysite_jerusalem": "temple",
+    "ep2_holysite_mecca": "temple", "ep2_holysite_mena": "temple",
+    "ep2_holysite_tribal": "temple", "ep2_holysite_western": "temple",
+    "ep3_holysite_orthodox": "temple", "ep3_hagia_sophia": "temple",
+    "tgp_holysite_asia": "temple",
+    "courtyard": "castle", "bp1_courtyard_indian": "castle",
+    "bp1_courtyard_mena": "castle", "bp2_courtyard": "castle",
+    "fp2_courtyard": "castle", "tgp_courtyard_asia": "castle",
+    "ep2_hunt_foggy_forest": "forest", "ep2_hunt_forest_managed": "forest",
+    "ep2_hunt_generic": "forest", "ep2_hunt_poachers_camp": "forest",
+    "tgp_hunt_generic_asia": "forest", "forest": "forest", "forest_pine": "forest",
+    "ep2_hunt_cave_entrance": "mountain", "mountains": "mountain",
+    "ep2_travel_mountains": "mountain",
+    "farms": "farm", "ep2_travel_farm": "farm", "tgp_farm_asia": "farm",
+    "tgp_rice_fields": "farm", "mpo_rural_village_asian": "farm",
+    "ep2_village_festival_western": "farm", "garden": "farm",
+    "bp1_garden_mena_day": "farm", "bp2_indian_garden": "farm",
+    "fp2_garden": "farm", "tgp_garden_asia": "farm",
+    "ep3_city_gate": "city", "ep3_constantinople": "city",
+    "ep3_medi_estate": "city", "ep3_medi_market": "city",
+    "market_east": "city", "market_tribal": "city", "market_west": "city",
+    "tgp_market_asia": "city", "mpo_city_steppe": "city",
+    "tgp_chinese_city": "city", "tgp_japanese_city": "city",
+    "desert_nomad": "tribal", "genericcamp": "tribal", "mpo_camp_steppe": "tribal",
+    "mpo_campfire_steppe": "tribal", "ep3_campfire": "tribal",
+    "fp4_condemned_village": "ruin", "fp4_legendary_battlefield": "ruin",
+    "tgp_ruined_holding": "ruin", "raid_burning": "ruin",
+    "mpo_raid_burning_asian": "ruin",
+}
+def _holding_bucket(name):
+    n = name.lower()
+    if "pagoda" in n or "temple" in n or "shinto" in n:
+        return "temple"
+    if "castle" in n:
+        return "castle"
+    if "city" in n:
+        return "city"
+    if "tribe" in n or "herder" in n or "nomad" in n:
+        return "tribal"
+    return None
+
+_ill = 0
+for _dir, _rule in (
+    ("illustrations/terrain_types", ILLUST_TERRAIN.get),
+    ("illustrations/event_scenes", ILLUST_SCENES.get),
+    ("illustrations/holding_types", _holding_bucket),
+):
+    _d = ROOT / _dir
+    if not _d.is_dir():
+        continue
+    for _f in sorted(_d.glob("*.dds")):
+        _bucket = _rule(_f.stem)
+        if not _bucket:
+            continue
+        try:
+            _im = Image.open(_f).convert("RGB")
+        except Exception:
+            continue
+        if _im.width > 720:
+            _im = _im.resize((720, max(1, int(_im.height * 720 / _im.width))), Image.LANCZOS)
+        _out = f"pa_{_pa}.jpg"
+        _im.save(UI / _out, quality=82, optimize=True)
+        art_pools.setdefault(_bucket, []).append(_out)
+        _pa += 1
+        _ill += 1
+print(f"  illustration art: {_ill} images; pools now {sum(len(v) for v in art_pools.values())} in {len(art_pools)}")
+
 # per-faith icons (index-named so the app can derive the path)
 n_ficons = 0
 for fk, fi in fa_idx.items():
