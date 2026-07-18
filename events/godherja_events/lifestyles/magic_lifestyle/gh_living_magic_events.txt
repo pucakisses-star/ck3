@@ -1,0 +1,163 @@
+﻿namespace = living_magic
+
+living_magic.0001 = { #Surrounding Flames
+    type = character_event
+    content_source = dlc_gh
+    title = living_magic.0001.t
+    desc = living_magic.0001.desc
+    theme = learning_scholarship_focus
+    override_background = { reference = bedchamber }
+    left_portrait = root
+
+    trigger = {
+        NOT = {
+            has_character_flag = had_event_living_magic_0001
+        }
+    }
+
+    #weight_multiplier = {
+	#	base = 1
+	#	upweight_for_focus_modifier = { FOCUS =  }
+	#}
+
+    immediate = {
+        add_character_flag = {
+            flag = had_event_living_magic_0001
+            days = 365
+        }
+    }
+
+    option = {
+        name = living_magic.0001.a
+		custom_tooltip = living_magic.0001.a.tt
+		every_courtier = {
+			add_opinion = {
+				modifier = angry_opinion
+				target = root
+				opinion = -5
+			}
+		}
+		add_arcana_lifestyle_xp = minor_lifestyle_xp
+		if = {
+			limit = {
+				exists = var:uncapped_magic_gain_activated
+				NOT = { has_stored_magic_trigger = { VALUE = character_extended_magic_baseline_value } }
+			}
+			gain_magical_power_capped_effect = { VALUE = small_magic_value CAP = character_extended_magic_baseline_value }
+		}
+		else = {
+			limit = { NOT = { has_stored_magic_trigger = { VALUE = character_magic_baseline_value } } }
+			gain_magical_power_capped_effect = { VALUE = small_magic_value CAP = character_magic_baseline_value }
+		}
+	}
+	option = {
+		name = living_magic.0001.b
+		stress_impact = {
+			craven = minor_stress_impact_gain
+		}
+		random_list = {
+			60 = {
+				if = {
+					limit = { NOT = { exists = var:uncapped_magic_gain_activated } }
+					custom_tooltip = capped_magic.tt
+				}
+				modifier = {
+					add = {
+						value = root.var:magic_prowess
+						multiply = 2
+					}
+				}
+				add_arcana_lifestyle_xp = minor_lifestyle_xp
+				if = {
+					limit = {
+						exists = var:uncapped_magic_gain_activated
+						NOT = { has_stored_magic_trigger = { VALUE = character_extended_magic_baseline_value } }
+					}
+					gain_magical_power_capped_effect = { VALUE = medium_magic_value CAP = character_extended_magic_baseline_value }
+				}
+				else = {
+					limit = { NOT = { has_stored_magic_trigger = { VALUE = character_magic_baseline_value } } }
+					gain_magical_power_capped_effect = { VALUE = medium_magic_value CAP = character_magic_baseline_value }
+				}
+			}
+			40 = {
+				modifier = {
+					add = {
+						value = root.var:magic_prowess
+						multiply = -2
+					}
+				}
+				send_interface_toast = {
+					title = living_magic.0001.b.failure.t
+					left_icon = root
+					add_character_modifier = {
+						modifier = burnt_quarters_modifier
+						years = 1
+					}
+				}
+			}	
+		}
+    }
+	option = {
+		name = living_magic.0001.c
+		stress_impact = {
+			craven = minor_stress_impact_gain
+		}
+		remove_short_term_gold = minor_gold_value
+		random_courtier = {
+			save_scope_as = bonfire_victim
+		}
+		random_list = {
+			40 = {
+				if = {
+					limit = { NOT = { exists = var:uncapped_magic_gain_activated } }
+					custom_tooltip = capped_magic.tt
+				}
+				modifier = {
+					add = {
+						value = var:magic_prowess
+						multiply = 3
+					}
+				}
+				add_arcana_lifestyle_xp = medium_lifestyle_xp
+				if = {
+					limit = {
+						exists = var:uncapped_magic_gain_activated
+						NOT = { has_stored_magic_trigger = { VALUE = character_extended_magic_baseline_value } }
+					}
+					gain_magical_power_capped_effect = { VALUE = medium_magic_value CAP = character_extended_magic_baseline_value }
+				}
+				else = {
+					limit = { NOT = { has_stored_magic_trigger = { VALUE = character_magic_baseline_value } } }
+					gain_magical_power_capped_effect = { VALUE = medium_magic_value CAP = character_magic_baseline_value }
+				}
+			}
+			60 = {
+				modifier = {
+					add = {
+						value = var:magic_prowess
+						multiply = -3
+					}
+				}
+				send_interface_toast = {
+					title = living_magic.0001.c.failure.t
+					left_icon = scope:bonfire_victim
+					scope:bonfire_victim = {
+						increase_wounds_effect = { REASON = bonfire_accident }
+						add_opinion = {
+							target = root
+							modifier = wounded_me
+							opinion = -25
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = living_magic.0001.d
+		stress_impact = {
+			ambitious = minor_stress_impact_gain
+		}
+	}
+}

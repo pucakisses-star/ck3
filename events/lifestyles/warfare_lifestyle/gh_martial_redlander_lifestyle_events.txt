@@ -1,0 +1,98 @@
+﻿# Events for redlanders with martial focus 
+#(ideally individual lifestyle focuses will get implemented later#
+
+namespace = gh_martial_redlander
+
+gh_martial_redlander.0001 = { #Great commander arrives bearing two potential slaves or sacrifices...you decide what to do with them...
+	type = character_event
+	title = gh_martial_redlander.0001.t
+	desc = gh_martial_redlander.0001.desc
+	theme = martial_strategy_focus
+	override_background = {
+		reference = armory
+	}
+
+	left_portrait = root
+	right_portrait = { 
+		character = scope:great_commander
+	}
+	lower_right_portrait = {
+		character = scope:incompetent_thrall_1
+		animation = severelywounded
+	}
+	
+	lower_center_portrait = {
+		character = scope:incompetent_thrall_2
+		animation = severelywounded
+	}
+
+	trigger = {
+		culture = { has_cultural_pillar = heritage_redlander }
+	}
+
+	immediate = {
+		create_character = {
+			template = great_commander
+			location = root.capital_province
+			save_scope_as = great_commander
+		}
+		create_character = {
+			template = incompetent_thrall
+			location = root.capital_province
+			save_scope_as = incompetent_thrall_1
+		}
+		create_character = {
+			template = incompetent_thrall
+			location = root.capital_province
+			save_scope_as = incompetent_thrall_2
+		}
+	}
+
+	option = { #OPTION A: Sacrifice all 3 to your Dark Gods
+		name = gh_martial_redlander.0001.a
+		scope:incompetent_thrall_1 = { 
+			death = { 
+				death_reason = death_sacrificed_to_gods
+				killer = root
+			} 
+		}
+		scope:incompetent_thrall_2 = { 
+			death = { 
+				death_reason = death_sacrificed_to_gods
+				killer = root
+			} 
+		}
+		scope:great_commander = { 
+			death = { 
+				death_reason = death_sacrificed_to_gods
+				killer = root
+			} 
+		}
+		add_piety = 750
+	}
+	option = { #OPTION B: recruit the commander, sacrifce the 2 thralls to your Dark Gods
+		name = gh_martial_redlander.0001.b
+		scope:great_commander = {
+			add_trait = loyal
+		}
+		add_courtier = scope:great_commander
+		scope:incompetent_thrall_1 = { 
+			death = { 
+				death_reason = death_sacrificed_to_gods
+				killer = root
+			} 
+		}
+		scope:incompetent_thrall_2 = { 
+			death = { 
+				death_reason = death_sacrificed_to_gods
+				killer = root
+			} 
+		}
+		add_hook = {
+			target = scope:great_commander
+			type = loyalty_hook
+		}
+		add_piety = 500
+	}
+	
+}

@@ -1,0 +1,513 @@
+﻿#namespace = pantheon
+#
+##PANTHEON EVENTS TABLE OF CONTENTS
+##0001-0009 = Izcatotl Events
+##0010-0019 = Alitikatl Events
+##
+##
+##
+##
+##0100 = General events
+#
+##############################
+##Temple of Izcatotl
+##By UltimateVictory
+##############################
+#
+#pantheon.0001 = { #Intro event for the temple
+#	type = character_event
+#	title = pantheon.0001.t
+#	desc = pantheon.0001.desc
+#	
+#	theme = faith
+#	
+#	left_portrait = {
+#		character = root
+#		animation = beg
+#	}
+#	
+#	
+#	option = { #Personal prowess buff
+#		name = pantheon.0001.a
+#		trigger_event = pantheon.0002
+#	}
+#	option = { #Aid with torture
+#		name = pantheon.0001.b
+#		trigger_event = pantheon.0003
+#	}
+#	option = { #Ward off beasts
+#		name = pantheon.0001.c
+#		trigger_event = pantheon.0004
+#	}
+#	option = { #Ritual blood supply
+#		name = pantheon.0001.d
+#		trigger = { #THIS IS MESSY, I KNOW
+#			root = {
+#				OR = {
+#					has_trait = magic_good_1
+#					has_trait = magic_good_2
+#					has_trait = magic_good_3
+#					has_trait = magic_good_4
+#					has_trait = magic_good_5
+#					has_trait = magic_good_6
+#					has_trait = magic_good_7
+#					has_trait = magic_good_8
+#					has_trait = magic_good_9
+#					has_trait = magic_good_10
+#					has_trait = magic_good_11
+#					has_trait = magic_good_12
+#					has_trait = magic_good_13
+#					has_trait = magic_good_14
+#					has_trait = magic_good_15
+#					has_trait = magic_good_16
+#					has_trait = magic_good_17
+#					has_trait = magic_good_18
+#					has_trait = magic_good_19
+#				}
+#				NOT = {
+#					has_trait = gh_dehanded
+#				}
+#			}
+#		}
+#		trigger_event = pantheon.0005
+#	}
+#}
+#
+#pantheon.0002 = { #Ask for a personal prowess buff, get told that you must undergo torture
+#	type = character_event
+#	title = pantheon.0002.t
+#	desc = pantheon.0002.desc
+#	
+#	theme = faith
+#	
+#	left_portrait = {
+#		character = root
+#		animation = beg
+#	}
+#	
+#	option = { #Receive the ritual
+#		name = pantheon.0002.a
+#			
+#		duel = {
+#			25 = { #effective ritual without longterm wounds
+#				desc = pantheon.0002.a.tt_success
+#				send_interface_toast = {
+#					title = pantheon.0002.a.tt_success
+#					left_icon = root
+#					add_character_modifier = {
+#						modifier = izcatotl_prowess
+#					}
+#				}
+#			}
+#			30 = {
+#				desc = pantheon.0002.a.tt_success_wound_1
+#				send_interface_toast = {
+#					title = pantheon.0002.a.tt_success_wound_1
+#					left_icon = root
+#					add_character_modifier = {
+#						modifier = izcatotl_prowess
+#					}
+#					add_trait = wounded_1
+#				}
+#			}
+#			25 = { #Success with modest wounds
+#				desc = pantheon.0002.a.tt_success_wound_2
+#				send_interface_toast = {
+#					title = pantheon.0002.a.tt_success_wound_2
+#					left_icon = root
+#					add_character_modifier = {
+#						modifier = izcatotl_prowess
+#					}
+#					add_trait = wounded_2
+#				}
+#			}
+#			10 = { #nothing but minor wounds
+#				desc = pantheon.0002.a.tt_failure_wound_1
+#				send_interface_toast = {
+#					title = pantheon.0002.a.tt_failure_wound_1
+#					left_icon = root
+#					add_trait = wounded_1
+#				}
+#			}
+#			7.5 = { #modest wounds but failure
+#				desc = pantheon.0002.a.tt_failure_wound_2
+#				send_interface_toast = {
+#					title = pantheon.0002.a.tt_failure_wound_2
+#					left_icon = root
+#					add_trait = wounded_3
+#				}
+#			}
+#			2.5 = { #You die in the ritual
+#				desc = pantheon.0002.a.tt_failure_death
+#				death = {
+#					death_reason = death_ritual
+#				}
+#			}
+#		}
+#	}
+#	option = { #Chicken out
+#		name = pantheon.0002.b
+#		custom_tooltip = pantheon.abandon.tt
+#	}
+#}
+#
+######################
+## Aid with Torture
+## By UltimateVictory
+######################
+#
+#pantheon.0003 = {
+#	type = character_event
+#	title = pantheon.0003.t
+#	desc = pantheon.0003.desc
+#	
+#	theme = faith
+#	
+#	left_portrait = {
+#		character = root
+#		animation = beg
+#	}
+#	
+#	lower_left_portrait = {
+#		character = scope:initiate_child
+#		animation = worry
+#	}
+#	
+#	immediate = {
+#		root = {
+#			if = {
+#				limit = {
+#					root = {
+#						any_child = {
+#							effective_age < 8
+#						}
+#					}
+#				}
+#				random_child = {
+#					limit = {
+#						effective_age < 8
+#					}
+#					save_scope_as = initiate_child
+#				}
+#			}
+#		}
+#	}
+#	
+#	option = { #Offer a child initiate
+#		name = pantheon.0003.a
+#		custom_tooltip = pantheon.0003.a.tt
+#		trigger = {
+#			exists = scope:initiate_child
+#		}
+#		scope:initiate_child = {
+#			add_opinion = {
+#				modifier = demanded_taking_vows
+#				target = root
+#			}
+#			add_trait = devoted
+#			add_piety_level = 1			
+#			if = {
+#				limit = {
+#					exists = betrothed
+#				}
+#				break_betrothal = betrothed
+#			}
+#		}
+#		add_character_modifier = {
+#			modifier = izcatotl_fear
+#			years = 12
+#		}
+#
+#		stress_impact = {
+#			compassionate = major_stress_impact_gain
+#			sadistic = medium_stress_impact_loss
+#		}
+#	}
+#	
+#	option = { #Offer funding
+#		name = pantheon.0003.b
+#		remove_short_term_gold = medium_gold_value
+#		add_character_modifier = {
+#			modifier = izcatotl_fear
+#		}
+#		stress_impact = {
+#			compassionate = major_stress_impact_gain
+#			sadistic = medium_stress_impact_loss
+#		}
+#	}
+#	
+#	option = { #Back out
+#		name = pantheon.0003.c
+#		custom_tooltip = pantheon.abandon.tt
+#
+#	}
+#}
+#
+############################
+## Ward off beasts
+## By UltimateVictory
+############################
+#
+#pantheon.0004 = { #ask for them to get rid of some monsters, costs child or money
+#	type = character_event
+#	title = pantheon.0004.t
+#	desc = pantheon.0004.desc
+#	
+#	theme = faith
+#	
+#	left_portrait = {
+#		character = root
+#		animation = beg
+#	}
+#	
+#	lower_left_portrait = {
+#		character = scope:initiate_child
+#		animation = worry
+#	}
+#	
+#	immediate = {
+#		root = {
+#			if = {
+#				limit = {
+#					root = {
+#						any_child = {
+#							effective_age < 8
+#						}
+#					}
+#				}
+#				random_child = {
+#					limit = {
+#						effective_age < 8
+#					}
+#					save_scope_as = initiate_child
+#				}
+#			}
+#		}
+#	}
+#	
+#	option = { #Offer a child initiate
+#		name = pantheon.0004.a
+#		custom_tooltip = pantheon.0003.a.tt
+#		trigger = {
+#			exists = scope:initiate_child
+#		}
+#		scope:initiate_child = {
+#			add_opinion = {
+#				modifier = demanded_taking_vows
+#				target = root
+#			}
+#			add_trait = devoted
+#			add_piety_level = 1			
+#			if = {
+#				limit = {
+#					exists = betrothed
+#				}
+#				break_betrothal = betrothed
+#			}
+#		}
+#		root = {
+#			every_held_title = {
+#				limit = {
+#					tier = tier_county
+#				}
+#				add_county_modifier = {
+#					modifier = izcatotl_ward
+#				}
+#			}
+#		}
+#	}
+#	
+#	option = { #Offer funding
+#		name = pantheon.0004.b
+#		remove_short_term_gold = large_gold_value
+#		root = {
+#			every_held_title = {
+#				limit = {
+#					tier = tier_county
+#				}
+#				add_county_modifier = {
+#					modifier = izcatotl_ward
+#				}
+#			}
+#		}
+#	}
+#	
+#	option = { #Back out
+#		name = pantheon.0004.c
+#		custom_tooltip = pantheon.abandon.tt
+#
+#	}
+#}
+#
+############################
+## Ritual Blood Supply
+## By UltimateVictory
+############################
+#
+#pantheon.0005 = {
+#	type = character_event
+#	title = pantheon.0004.t
+#	desc = pantheon.0004.desc
+#	
+#	theme = faith
+#	
+#	left_portrait = {
+#		character = root
+#		animation = beg
+#	}
+#	
+#	option = { #Offer funding
+#		name = pantheon.0004.b
+#		remove_short_term_gold = medium_gold_value
+#		root = {
+#			add_character_modifier = {
+#				modifier = izcatotl_blood
+#			}
+#		}
+#	}
+#	
+#	option = { #Back out
+#		name = pantheon.0004.c
+#		custom_tooltip = pantheon.abandon.tt
+#
+#	}
+#}
+#
+#######################
+## Temple of Alitikatl
+## By UltimateVictory
+#######################
+#
+#pantheon.0010 = {
+#	type = character_event
+#	title = pantheon.0004.t
+#	desc = pantheon.0004.desc
+#	
+#	theme = faith
+#
+#	left_portrait = {
+#		character = root
+#		animation = personality_bold
+#	}
+#
+#	option = { #Ask for them to pray for you
+#		name = pantheon.0010.a
+#		custom_tooltip = pantheon.0010.a.tt
+#		trigger_event = pantheon.0011
+#	}
+#	option = { #Ask about assistance in magic
+#		name = pantheon.0010.b
+#		trigger = {
+#			has_magi_potency_trigger = yes
+#			has_education_magic_trigger = yes
+#		}
+#		custom_tooltip = pantheon.0010.b.tt
+#		trigger_event = pantheon.0012
+#	}
+#	option = { #educate my heir
+#		name = pantheon.0010.a
+#		custom_tooltip = pantheon.0010.c.tt
+#	}
+#	option = { #buff your lands
+#		name = pantheon.0010.a
+#		custom_tooltip = pantheon.0010.d.tt
+#	}
+#}
+#
+#pantheon.0011 = {
+#	type = character_event
+#	title = pantheon.0011.t
+#	desc = pantheon.0011.desc
+#	
+#	theme = faith
+#
+#	left_portrait = {
+#		character = root
+#		animation = personality_bold
+#	}
+#
+#	option = { 
+#		name = pantheon.0011.a
+#
+#		duel = {
+#			35 = { #Works as intended
+#				desc = pantheon.0011.a.tt_success
+#				send_interface_toast = {
+#					title = pantheon.0011.a.tt_success
+#					left_icon = root
+#					add_character_modifier = {
+#						modifier = alitikatl_blessing
+#					}
+#				}
+#			}
+#			40 = { #Works but you get mind fuckery
+#				desc = pantheon.0011.a.tt_success_damage
+#				send_interface_toast = {
+#					title = pantheon.0011.a.tt_success_wound_damage
+#					left_icon = root
+#					add_character_modifier = {
+#						modifier = alitikatl_blessing
+#					}
+#					add_trait = gh_wracked_by_voices
+#				}
+#			}
+#			20 = { #Just mind fuckery
+#				desc = pantheon.0011.a.tt_failure
+#				send_interface_toast = {
+#					title = pantheon.0011.a.tt_failure
+#					left_icon = root
+#					add_trait = gh_wracked_by_voices
+#				}
+#			}
+#			5 = { #Your mind is lost in the ritual
+#				desc = pantheon.0011.a.tt_mind_loss
+#				send_interface_toast = {
+#					title = pantheon.0011.a.tt_mind_loss
+#					left_icon = root
+#					add_trait = gh_wracked_by_voices
+#					add_trait = gh_beset_by_visions
+#					add_trait = gh_stimulated
+#					add_trait = lunatic_1
+#				}
+#			}
+#		}
+#	}
+#	option = { #Back out
+#		name = pantheon.0011.b
+#		custom_tooltip = pantheon_abandon.tt
+#	}
+#}
+#
+#pantheon.0012.a = {
+#	type = character_event
+#	title = pantheon.0012.t
+#	desc = pantheon.0012.desc
+#	
+#	theme = faith
+#
+#	left_portrait = {
+#		character = root
+#		animation = personality_bold
+#	}
+#
+#	option = { #Cash money
+#		name = pantheon.0012.a
+#		remove_short_term_gold = medium_gold_value
+#		add_character_modifier = {
+#			modifier = alitikatl_lore
+#		}
+#	}
+#	option = { #magic power
+#		name = pantheon.0012.b
+#		change_variable = {
+#			name = magic_counter
+#			add = -200
+#		}
+#		add_character_modifier = {
+#			modifier = alitikatl_lore
+#		}
+#	}
+#	option = { #Nope out
+#		name = pantheon.0012.b
+#	}
+#}

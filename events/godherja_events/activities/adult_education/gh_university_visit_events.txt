@@ -1,0 +1,705 @@
+﻿##################################################
+##			GH University Visit Events			##
+#
+# gh_university_visit_events.1000 - The Book of Discord
+#
+##################################################
+
+namespace = gh_university_visit_events
+
+##################################################
+
+scripted_trigger appreciates_marcher_literature = { # Character is an avid reader of Marcher literature
+	OR = {
+		faith_is_religion_or_syncretic_trigger = { RELIGION = lifepath_religion }
+		knows_language = language_marcher
+		knows_language = language_rivarisian
+		knows_language = language_ojyczayn
+		knows_language = language_konijkmener
+		culture = {
+			OR = {
+				has_cultural_pillar = heritage_marcher
+				has_cultural_pillar = heritage_konijkmener
+				has_cultural_pillar = language_marcher
+				has_cultural_pillar = language_rivarisian
+				has_cultural_pillar = language_ojyczayn
+				has_cultural_pillar = language_konijkmener
+				has_cultural_tradition = tradition_chevalien_identity
+			}
+		}
+	}
+}
+
+scripted_trigger appreciates_aversarian_literature = { # Character is an avid reader of Aversarian literature
+	OR = {
+		faith_is_religion_or_syncretic_trigger = { RELIGION = aversarinas_aagiokrata_religion }
+		faith_is_religion_or_syncretic_trigger = { RELIGION = agionism_religion }
+		knows_language = language_aversarian
+		culture = {
+			OR = {
+				has_cultural_pillar = heritage_aversarian
+				has_cultural_pillar = language_aversarian
+				has_cultural_tradition = tradition_legacy_of_aversaria
+				has_cultural_tradition = tradition_legacy_of_aversaria_lesser
+			}
+		}
+	}
+}
+
+scripted_trigger appreciates_sarradonian_literature = { # Character is an avid reader of Sarradonian literature
+	OR = {
+		faith_is_religion_or_syncretic_trigger = { RELIGION = wardenism_religion }
+		faith_is_religion_or_syncretic_trigger = { RELIGION = ritualist_religion }
+		knows_language = language_thalite
+		knows_language = language_koshar
+		knows_language = language_dezhunic
+		culture = {
+			OR = {
+				has_cultural_pillar = heritage_sarradonian
+				has_cultural_pillar = heritage_kosharan
+				has_cultural_pillar = heritage_kharadamatian
+				has_cultural_pillar = heritage_dezhunic
+				has_cultural_pillar = heritage_dawic
+				has_cultural_pillar = language_thalite
+				has_cultural_pillar = language_koshar
+				has_cultural_pillar = language_dezhunic
+			}
+		}
+	}
+}
+
+gh_university_visit_events.1000 = { # The Book of Discord
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_university_visit_events.1000.t
+	desc = {
+		desc = gh_university_visit_events.1000.desc.intro
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:gh_event_1000_book = {
+						OR = {
+							this = flag:hestoree_cheavalee
+							this = flag:clockwork_city
+							this = flag:abael_venodau
+							this = flag:chernivmala_cheskovara
+							this = flag:life_of_jacot
+							this = flag:sir_koeveux
+							this = flag:last_hippogriff
+						}
+					}
+				}
+				desc = gh_university_visit_events.1000.desc.chevalien
+			}
+			triggered_desc = {
+				trigger = {
+					scope:gh_event_1000_book = {
+						OR = {
+							this = flag:two_cities
+							this = flag:worlds_edge
+							this = flag:fifty_shades
+							this = flag:love_death_asiupoli
+							this = flag:sound_of_air
+							this = flag:ninety_six_tasks
+							this = flag:redlands_adventure
+							this = flag:dragon_scorpion
+							this = flag:liliac_grove
+						}
+					}
+				}
+				desc = gh_university_visit_events.1000.desc.aversarian
+			}
+			triggered_desc = {
+				trigger = {
+					scope:gh_event_1000_book = {
+						OR = {
+							this = flag:sanisia_trials
+							this = flag:rending_chains
+							this = flag:katharitos_travels
+						}
+					}
+				}
+				desc = gh_university_visit_events.1000.desc.agionist
+			}
+			triggered_desc = {
+				trigger = {
+					scope:gh_event_1000_book = {
+						OR = {
+							this = flag:fields_pits
+							this = flag:1001_steps
+						}
+					}
+				}
+				desc = gh_university_visit_events.1000.desc.sarradonian
+			}
+		}
+		desc = gh_university_visit_events.1000.desc.outro
+	}
+	theme = university
+
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	center_portrait = {
+		character = scope:student_1
+		animation = anger
+	}
+	right_portrait = {
+		character = scope:student_2
+		animation = eyeroll
+	}
+	artifact = {
+		target = scope:book
+		position = lower_center_portrait
+	}
+
+	trigger = {
+		NOT = { scope:activity = { has_variable = has_had_gh_event_1000 } }
+		scope:activity = {
+			any_attending_character = {
+				OR = {
+					has_character_flag = student_1
+					has_character_flag = student_2
+				}
+			}
+		}
+	}
+
+	immediate = {
+		scope:activity = {
+			set_variable = has_had_gh_event_1000
+			activity_location = { save_scope_as = location }
+			random_attending_character = {
+				limit = { has_character_flag = student_1 }
+				save_scope_as = student_1
+			}
+			random_attending_character = {
+				limit = { has_character_flag = student_2 }
+				save_scope_as = student_2
+			}
+		}
+		random_list = {
+			1 = { # A Fyne Hestoree od de Lunde av Cheavalee
+				modifier = {
+					scope:student_1 = { appreciates_marcher_literature = yes }
+					add = 5
+				}
+				save_scope_value_as = {
+					name = gh_event_1000_book
+					value = flag:hestoree_cheavalee
+				}
+				create_artifact_afynehestoree_book_effect = { OWNER = scope:student_1 }
+			}
+			1 = { # The Tale of Two Cities
+				modifier = {
+					scope:student_1 = { appreciates_aversarian_literature = yes }
+					add = 5
+				}
+				save_scope_value_as = {
+					name = gh_event_1000_book
+					value = flag:two_cities
+				}
+				create_artifact_ataleoftwocities_book_effect = { OWNER = scope:student_1 }
+			}
+			1 = { # The Clockwork City
+				modifier = {
+					scope:student_1 = { appreciates_marcher_literature = yes }
+					add = 5
+				}
+				save_scope_value_as = {
+					name = gh_event_1000_book
+					value = flag:clockwork_city
+				}
+				create_artifact_clockworkcity_book_effect = { OWNER = scope:student_1 }
+			}
+			1 = { # Compiled Works of Abaël Venodau
+				modifier = {
+					scope:student_1 = { appreciates_marcher_literature = yes }
+					add = 5
+				}
+				save_scope_value_as = {
+					name = gh_event_1000_book
+					value = flag:abael_venodau
+				}
+				create_artifact_compiledworksofvenodau_book_effect = { OWNER = scope:student_1 }
+			}
+			1 = { # The World's Edge
+				modifier = {
+					scope:student_1 = { appreciates_aversarian_literature = yes }
+					add = 5
+				}
+				save_scope_value_as = {
+					name = gh_event_1000_book
+					value = flag:worlds_edge
+				}
+				create_artifact_edgeoftheworld_book_effect = { OWNER = scope:student_1 }
+			}
+			1 = { # Fifty Shades of Blood
+				modifier = {
+					scope:student_1 = { appreciates_aversarian_literature = yes }
+					add = 5
+				}
+				save_scope_value_as = {
+					name = gh_event_1000_book
+					value = flag:fifty_shades
+				}
+				create_artifact_fiftyshades_book_effect = { OWNER = scope:student_1 }
+			}
+			1 = { # Personal Dictations of Chernivmala Cheskovara
+				modifier = {
+					scope:student_1 = { appreciates_marcher_literature = yes }
+					add = 5
+				}
+				save_scope_value_as = {
+					name = gh_event_1000_book
+					value = flag:chernivmala_cheskovara
+				}
+				create_artifact_godslaverdictations_fix_book_effect = { OWNER = scope:student_1 }
+			}
+			1 = { # The Hundred Trials of Saint Sansia
+				trigger = {
+					scope:student_2 = {
+						OR = {
+							NOT = { religion = religion:agionism_religion }
+							has_trait = cynical
+						}
+					}
+				}
+				modifier = {
+					scope:student_1 = { appreciates_aversarian_literature = yes }
+					add = 5
+				}
+				save_scope_value_as = {
+					name = gh_event_1000_book
+					value = flag:sanisia_trials
+				}
+				create_artifact_hundredtrials_book_effect = { OWNER = scope:student_1 }
+			}
+			1 = { # The Life of Jacot den va Waldisse
+				modifier = {
+					scope:student_1 = { appreciates_marcher_literature = yes }
+					add = 5
+				}
+				save_scope_value_as = {
+					name = gh_event_1000_book
+					value = flag:life_of_jacot
+				}
+				create_artifact_jacotwaldisse_book_effect = { OWNER = scope:student_1 }
+			}
+			1 = { # Love and Death in Asiupoli
+				modifier = {
+					scope:student_1 = { appreciates_aversarian_literature = yes }
+					add = 5
+				}
+				save_scope_value_as = {
+					name = gh_event_1000_book
+					value = flag:love_death_asiupoli
+				}
+				create_artifact_loveanddeathinasiupoli_book_effect = { OWNER = scope:student_1 }
+			}
+			1 = { # The Fields of Pearls and Pits Full of Gold
+				modifier = {
+					scope:student_1 = { appreciates_sarradonian_literature = yes }
+					add = 5
+				}
+				save_scope_value_as = {
+					name = gh_event_1000_book
+					value = flag:fields_pits
+				}
+				create_artifact_masenmalik_book_effect = { OWNER = scope:student_1 }
+			}
+			1 = { # The Sound of the Air
+				modifier = {
+					scope:student_1 = { appreciates_aversarian_literature = yes }
+					add = 5
+				}
+				save_scope_value_as = {
+					name = gh_event_1000_book
+					value = flag:sound_of_air
+				}
+				create_artifact_nameofthewindknockoff_book_effect = { OWNER = scope:student_1 }
+			}
+			1 = { # Ninety-Six Tasks of Nauci'axa
+				modifier = {
+					scope:student_1 = { appreciates_aversarian_literature = yes }
+					add = 5
+				}
+				save_scope_value_as = {
+					name = gh_event_1000_book
+					value = flag:ninety_six_tasks
+				}
+				create_artifact_ninetysixtasks_book_effect = { OWNER = scope:student_1 }
+			}
+			1 = { # Adventure in the Redlands
+				modifier = {
+					scope:student_1 = { appreciates_aversarian_literature = yes }
+					add = 5
+				}
+				save_scope_value_as = {
+					name = gh_event_1000_book
+					value = flag:redlands_adventure
+				}
+				create_artifact_redlandsadventure_book_effect = { OWNER = scope:student_1 }
+			}
+			1 = { # Rending the Chains by Saint Calysto
+				trigger = {
+					scope:student_2 = {
+						OR = {
+							NOT = { religion = religion:agionism_religion }
+							has_trait = cynical
+						}
+					}
+				}
+				modifier = {
+					scope:student_1 = { appreciates_aversarian_literature = yes }
+					add = 5
+				}
+				save_scope_value_as = {
+					name = gh_event_1000_book
+					value = flag:rending_chains
+				}
+				create_artifact_rendingthechains_book_effect = { OWNER = scope:student_1 }
+			}
+			1 = { # 1001 Sarradonian Steps
+				modifier = {
+					scope:student_1 = { appreciates_sarradonian_literature = yes }
+					add = 5
+				}
+				save_scope_value_as = {
+					name = gh_event_1000_book
+					value = flag:1001_steps
+				}
+				create_artifact_sarradoniansteps_book_effect = { OWNER = scope:student_1 }
+			}
+			1 = { # The Tale of Sir Koeveux
+				modifier = {
+					scope:student_1 = { appreciates_marcher_literature = yes }
+					add = 5
+				}
+				save_scope_value_as = {
+					name = gh_event_1000_book
+					value = flag:sir_koeveux
+				}
+				create_artifact_taleofsirkoeveux_book_effect = { OWNER = scope:student_1 }
+			}
+			1 = { # The Dragon and the Scorpion
+				modifier = {
+					scope:student_1 = { appreciates_aversarian_literature = yes }
+					add = 5
+				}
+				save_scope_value_as = {
+					name = gh_event_1000_book
+					value = flag:dragon_scorpion
+				}
+				create_artifact_thedragonandthescorpion_book_effect = { OWNER = scope:student_1 }
+			}
+			1 = { # The Travels of Saint Katharitos
+				trigger = {
+					scope:student_2 = {
+						OR = {
+							NOT = { religion = religion:agionism_religion }
+							has_trait = cynical
+						}
+					}
+				}
+				modifier = {
+					scope:student_1 = { appreciates_aversarian_literature = yes }
+					add = 5
+				}
+				save_scope_value_as = {
+					name = gh_event_1000_book
+					value = flag:katharitos_travels
+				}
+				create_artifact_travelsofsaintkatharitos_book_effect = { OWNER = scope:student_1 }
+			}
+			1 = { # The Lilac Grove by Karthyn Delenel
+				modifier = {
+					scope:student_1 = { appreciates_aversarian_literature = yes }
+					add = 5
+				}
+				save_scope_value_as = {
+					name = gh_event_1000_book
+					value = flag:liliac_grove
+				}
+				create_artifact_delenelbook_book_effect = { OWNER = scope:student_1 }
+			}
+			1 = { # The Last Hippogriff
+				modifier = {
+					scope:student_1 = { appreciates_marcher_literature = yes }
+					add = 5
+				}
+				save_scope_value_as = {
+					name = gh_event_1000_book
+					value = flag:last_hippogriff
+				}
+				create_artifact_lasthippogriff_book_effect = { OWNER = scope:student_1 }
+			}
+		}
+		hidden_effect_new_object = { scope:newly_created_artifact = { save_scope_as = book } }
+	}
+
+	option = { # It insists upon itself
+		name = gh_university_visit_events.1000.a
+		flavor = gh_university_visit_events.1000.a.flavor
+		trigger = {
+			OR = {
+				learning >= high_skill_rating
+				has_trait = scholar
+			}
+		}
+		custom_tooltip = adult_education_tt_positive_massive
+		scope:activity = { activity_special_type_progression_massive = yes }
+		if = {
+			limit = { NOT = { has_trait = scholar } }
+			random = {
+				chance = 10
+				add_trait = scholar
+			}
+		}
+		ai_chance = { base = 100 }
+	}
+
+	option = { # Agree with Student 1
+		name = gh_university_visit_events.1000.b
+		flavor = gh_university_visit_events.1000.b.flavor
+		duel = {
+			skill = learning
+			target = scope:student_2
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				desc = gh_university_visit_events.1000.b.success
+				send_interface_toast = {
+					title = gh_university_visit_events.1000.b.success.tt
+					left_icon = scope:student_2
+					scope:activity = {
+						add_activity_log_entry = {
+							key = gh_university_literary_debate_won_log
+							score = 25
+							tags = { positive }
+							character = root
+							target = scope:student_2
+							custom_tooltip = adult_education_tt_positive_major
+							scope:activity = { activity_special_type_progression_major = yes }
+						}
+					}
+					stress_impact = {
+						diligent = minor_stress_impact_loss
+						gregarious = minor_stress_impact_loss
+					}
+				}
+				reverse_add_opinion = {
+					target = scope:student_1
+					modifier = grateful_opinion
+					opinion = 20
+				}
+			}
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				desc = gh_university_visit_events.1000.b.failure
+				send_interface_toast = {
+					title = gh_university_visit_events.1000.b.failure.tt
+					left_icon = scope:student_2
+					scope:activity = {
+						add_activity_log_entry = {
+							key = university_debate_won_log
+							score = 25
+							tags = { negative }
+							character = scope:student_2
+							target = root
+						}
+					}
+					progress_towards_rival_effect = {
+						CHARACTER = scope:student_2
+						REASON = rival_bested_me_in_debate
+						OPINION = 0
+					}
+					stress_impact = {
+					   ambitious = medium_stress_impact_gain
+					   arrogant = medium_stress_impact_gain
+					   diligent = medium_stress_impact_gain
+					   scholar = major_stress_impact_gain
+					}
+				}
+			}
+		}
+		ai_chance = { base = 10 }
+	}
+
+	option = { # Agree with Student 2
+		name = gh_university_visit_events.1000.c
+		flavor = gh_university_visit_events.1000.c.flavor
+		duel = {
+			skill = learning
+			target = scope:student_1
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				desc = gh_university_visit_events.1000.c.success
+				send_interface_toast = {
+					title = gh_university_visit_events.1000.c.success.tt
+					left_icon = scope:student_1
+					scope:activity = {
+						add_activity_log_entry = {
+							key = gh_university_literary_debate_won_log
+							score = 25
+							tags = { positive }
+							character = root
+							target = scope:student_1
+							custom_tooltip = adult_education_tt_positive_major
+							scope:activity = { activity_special_type_progression_major = yes }
+						}
+					}
+					stress_impact = {
+						diligent = minor_stress_impact_loss
+						gregarious = minor_stress_impact_loss
+					}
+				}
+				reverse_add_opinion = {
+					target = scope:student_2
+					modifier = grateful_opinion
+					opinion = 20
+				}
+			}
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				desc = gh_university_visit_events.1000.c.failure
+				send_interface_toast = {
+					title = gh_university_visit_events.1000.c.failure.tt
+					left_icon = scope:student_1
+					scope:activity = {
+						add_activity_log_entry = {
+							key = university_debate_won_log
+							score = 25
+							tags = { negative }
+							character = scope:student_1
+							target = root
+						}
+					}
+					progress_towards_rival_effect = {
+						CHARACTER = scope:student_1
+						REASON = rival_bested_me_in_debate
+						OPINION = 0
+					}
+					stress_impact = {
+					   ambitious = medium_stress_impact_gain
+					   arrogant = medium_stress_impact_gain
+					   diligent = medium_stress_impact_gain
+					   scholar = major_stress_impact_gain
+					}
+				}
+			}
+		}
+		ai_chance = { base = 10 }
+	}
+
+	option = { # Buy the book
+		name = gh_university_visit_events.1000.d
+		flavor = gh_university_visit_events.1000.d.flavor
+		send_interface_toast = {
+			title = gh_university_visit_events.1000.d.tt
+			right_icon = scope:book
+			pay_short_term_gold = {
+				target = scope:student_1
+				gold = tiny_gold_value
+			}
+			scope:book = { set_owner = root }
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				gold <= tiny_gold_value
+			}
+		}
+	}
+
+	option = { # Let them fight
+		name = gh_university_visit_events.1000.e
+		flavor = gh_university_visit_events.1000.e.flavor
+		trigger = {
+			OR = {
+				has_trait = sadistic
+				has_trait = callous
+				has_trait = arbitrary
+				has_trait = fickle
+				has_trait = eccentric
+			}
+		}
+		scope:student_1 = {
+			duel = {
+				skill = prowess
+				target = scope:student_2
+				50 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = 3.5
+						min = -49
+					}
+					desc = gh_university_visit_events.1000.e.student_1.success
+					root = {
+						send_interface_toast = {
+							title = gh_university_visit_events.1000.e.student_1.success.tt
+							right_icon = scope:student_1
+							left_icon = scope:student_2
+							scope:student_2 = {
+								increase_wounds_effect = { REASON = fight }
+								set_relation_rival = {
+									target = scope:student_1
+									reason = rival_literary_debate
+								}
+							}
+						}
+					}
+				}
+				50 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = -3.5
+						min = -49
+					}
+					desc = gh_university_visit_events.1000.e.student_2.success
+					root = {
+						send_interface_toast = {
+							title = gh_university_visit_events.1000.e.student_2.success.tt
+							right_icon = scope:student_2
+							left_icon = scope:student_1
+							scope:student_1 = {
+								increase_wounds_effect = { REASON = fight }
+								set_relation_rival = {
+									target = scope:student_2
+									reason = rival_literary_debate
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		stress_impact = {
+			sadistic = major_stress_impact_loss
+			callous = medium_stress_impact_loss
+			eccentric = medium_stress_impact_loss
+			fickle = minor_stress_impact_loss
+			arbitrary = minor_stress_impact_loss
+			just = minor_stress_impact_gain
+			compassionate = medium_stress_impact_gain
+		}
+		ai_chance = { base = 100 }
+	}
+}

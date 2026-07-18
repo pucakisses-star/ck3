@@ -1,0 +1,1741 @@
+﻿namespace = gh_pilgrimage
+
+##################################################
+
+### GH Pilgrimage Events
+
+# gh_pilgrimage.0001 - Oraispol
+# gh_pilgrimage.0002 - Vounill
+# gh_pilgrimage.0003 - Mayikprolollan
+# gh_pilgrimage.0004 - Drakavil
+# gh_pilgrimage.0005 - Tower Watch
+# gh_pilgrimage.0009 - The Ḥāseti Mekab
+# gh_pilgrimage.0010 - The Tabik Bētemisīt
+# gh_pilgrimage.0011 - The Irōchi Damotada
+# gh_pilgrimage.0012 - The Nāgóm Kakezihī
+# gh_pilgrimage.0021 - Site of the First Vision
+# gh_pilgrimage.0022 - The Holy Capital
+# gh_pilgrimage.0025 - Crucible
+# gh_pilgrimage.0026 - Many-Trees
+# gh_pilgrimage.0027 - Wehydka'ha
+# gh_pilgrimage.0028 - Birthplace of the Prophet
+# gh_pilgrimage.0040 - Southern Mamur
+# gh_pilgrimage.0041 - Temple of the Wrath Wielder
+# gh_pilgrimage.0083 - Fendikyah
+# gh_pilgrimage.0084 - Ifralimane
+# gh_pilgrimage.0085 - Gharstir
+# gh_pilgrimage.0086 - Saidal
+# gh_pilgrimage.0315 - Sacreinux
+# gh_pilgrimage.0316 - Tillyes
+# gh_pilgrimage.0317 - Prefallias
+# gh_pilgrimage.0401 - The Neck of Kasiryat, Discus
+# gh_pilgrimage.0402 - The Farthest Bank, Chariots
+# gh_pilgrimage.0403 - The Branching, Running
+# gh_pilgrimage.0404 - The Holy Precincts, Javelins
+# gh_pilgrimage.0405 - The Emptying, Theater
+# gh_pilgrimage.0406 - The Cup of Kasiryat, Wrasslin'
+# gh_pilgrimage.0407 - The Cave of Towersight
+# gh_pilgrimage.0408 - The Isle of Liberation
+# gh_pilgrimage.0409 - The Field of Ascention
+# gh_pilgrimage.0410 - The Gilded Palace
+# gh_pilgrimage.0411 - Sophocos, unclimbable
+# gh_pilgrimage.0412 - Mamur of the Center
+
+##################################################
+
+gh_pilgrimage.0001 = { # Oraispol
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0001.t
+	desc = gh_pilgrimage.0001.desc.aversarian
+	theme = pilgrimage_destination
+	override_background = { reference = alley_day }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_oraispol }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0001.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0002 = { # Vounill
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0002.t
+	desc = gh_pilgrimage.0002.desc.aversarian
+	theme = pilgrimage_destination
+	override_background = { reference = terrain_activity }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_rhamnythrae }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0002.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0003 = { # Mayikprolollan
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0003.t
+	desc = gh_pilgrimage.0003.desc.aversarian
+	theme = pilgrimage_destination
+	override_background = { reference = terrain_activity }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_atce }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0003.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+
+	option = {
+		name = gh_pilgrimage.0003.b
+		trigger = { has_trait = cynical }
+		give_pilgrimage_reward_effect =yes
+	}
+}
+
+gh_pilgrimage.0004 = { # Drakavil
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0004.t
+	desc = gh_pilgrimage.0004.desc.aversarian
+	theme = pilgrimage_destination
+	override_background = { reference = terrain_activity }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_palinia }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0004.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0005 = { # Tower Watch
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0005.t
+	desc = gh_pilgrimage.0005.desc.aversarian
+	theme = pilgrimage_destination
+	override_background = { reference = terrain_activity }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_thebastro }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0005.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0009 = { # The Ḥāseti Mekab
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0009.t
+	desc = gh_pilgrimage.0009.desc.mogowai
+	theme = pilgrimage_destination
+	override_background = { reference = terrain_activity }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_siralab }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0009.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0010 = { # The Tabik Bētemisīt
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0010.t
+	desc = gh_pilgrimage.0010.desc.mogowai
+	theme = pilgrimage_destination
+	override_background = { reference = alley_day }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_zahali }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0010.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0011 = { # The Irōchi Damotada
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0011.t
+	desc = gh_pilgrimage.0011.desc.mogowai
+	theme = pilgrimage_destination
+	override_background = { reference = terrain_activity }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_kilahijan }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0011.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0012 = { # The Nāgóm Kakezihī
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0012.t
+	desc = gh_pilgrimage.0012.desc.mogowai
+	theme = pilgrimage_destination
+	override_background = { reference = terrain_activity }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_adabyssfort }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0012.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0021 = { # Site of the First Vision
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0021.t
+	desc = gh_pilgrimage.0021.desc.mahndayanism
+	theme = pilgrimage_destination
+	override_background = { reference = alley_day }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_bandar_ozbak }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0021.a
+		give_pilgrim_trait_or_xp_effect = yes
+	
+	}
+}
+
+gh_pilgrimage.0022 = { # The Holy Capital
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0022.t
+	desc = gh_pilgrimage.0022.desc.mahndayanism
+	theme = pilgrimage_destination
+	override_background = { reference = alley_day }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_tchouran }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0022.a
+		give_pilgrim_trait_or_xp_effect = yes
+	}
+}
+
+gh_pilgrimage.0025 = { # Crucible
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0025.t
+	desc = gh_pilgrimage.0025.desc
+	theme = pilgrimage_destination
+	override_background = { reference = armory }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+	artifact = {
+		target = scope:christian_saint_bone_scope
+		position = lower_right_portrait
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_rozalie }
+
+	immediate = {
+		#save_holy_site_for_loc_effect = yes # GH URGENT: Missing, fix /// UPD: Seems to be depreciated in vanilla
+		play_music_cue = mx_cue_pilgrimage_arrival
+		christian_saint_bone_creation_effect = yes
+	}
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0026.a
+		if = { # Lonely Note: Fold into give_pilgrim_trait_or_xp_effect
+			limit = { has_trait = way_of_nullification_follower }
+			add_prowess_skill = 4
+			add_martial_skill = 2
+		}
+		give_pilgrim_trait_or_xp_effect = yes
+	}
+}
+
+gh_pilgrimage.0026 = { # Many-Trees
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0026.t
+	desc = gh_pilgrimage.0026.desc
+	theme = pilgrimage_destination
+	override_background = { reference = wilderness_forest }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = {
+		scope:activity.activity_location.county = title:c_sugarholt
+		religion = religion:kardawai_religion
+	}
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0026.a
+		give_pilgrim_trait_or_xp_effect = yes
+	}
+}
+
+gh_pilgrimage.0027 = { # Wehydka'ha
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0027.t
+	desc = gh_pilgrimage.0027.desc.mahndayanism
+	theme = pilgrimage_destination
+	override_background = { reference = alley_day }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_kani_tarn }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0027.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0028 = { # Birthplace of the Prophet
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0028.t
+	desc = gh_pilgrimage.0028.desc.mahndayanism
+	theme = pilgrimage_destination
+	override_background = { reference = alley_day }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_kalatehye_kabireh }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0028.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0040 = { # Southern Mamur
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0040.t
+	desc = gh_pilgrimage.0040.desc.wardenite
+	theme = pilgrimage_destination
+	override_background = { reference = alley_day }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_zahali }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0040.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0041 = { # Temple of the Wrath Wielder
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0041.t
+	desc = gh_pilgrimage.0041.desc.uakaklo
+	theme = pilgrimage_destination
+	override_background = { reference = alley_day }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_tamarenia } 
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0041.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0083 = { # Fendikyah
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0083.t
+	desc = gh_pilgrimage.0083.desc.quwazaw
+	theme = pilgrimage_destination
+	override_background = { reference = alley_day }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_mirrorgaol }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0083.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0084 = { # Ifralimane
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0084.t
+	desc = gh_pilgrimage.0084.desc.quwazaw
+	theme = pilgrimage_destination
+	override_background = { reference = alley_day }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_tanar } 
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0084.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0085 = { # Gharstir
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0085.t
+	desc = gh_pilgrimage.0085.desc.quwazaw
+	theme = pilgrimage_destination
+	override_background = { reference = alley_day }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_kudahhar }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0085.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0086 = { # Saidal
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0086.t
+	desc = gh_pilgrimage.0086.desc.quwazaw
+	theme = pilgrimage_destination
+	override_background = { reference = alley_day }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_blooming_sands }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0085.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0315 = { # Sacreinux
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0315.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { faith = faith:gravewatch }
+				desc = gh_pilgrimage.0318.desc.graveward
+			}
+			desc = gh_pilgrimage.0315.desc.graveright
+		}
+	}
+	theme = pilgrimage_destination
+	override_background = { reference = alley_day }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_deceiex }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0315.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0316 = { # Tillyes
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0316.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { faith = faith:gravewatch }
+				desc = gh_pilgrimage.0319.desc.graveward
+			}
+			desc = gh_pilgrimage.0316.desc.graveright
+		}
+	}
+	theme = pilgrimage_destination
+	override_background = { reference = alley_day }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_shrascens } # GH TODO: Removed in province rework, restore
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0316.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0317 = { # Prefallias
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0317.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { faith = faith:gravewatch }
+				desc = gh_pilgrimage.0320.desc.graveward
+			}
+			desc = gh_pilgrimage.0317.desc.graveright
+		}
+	}
+	theme = pilgrimage_destination
+	override_background = { reference = alley_day }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_prefallias }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0317.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0401 = { # The Neck of Kasiryat, Discus
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0401.t
+	desc = gh_pilgrimage.0401.desc.gftg
+	theme = pilgrimage_destination
+	override_background = { reference = terrain_scope }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_ullabahd }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+	
+	option = { # Participate!
+		name = gh_pilgrimage.0401.a
+		duel = {
+			skill = prowess
+			value = decent_skill_rating
+			10 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				add_prowess_skill = 1
+				add_prestige = medium_prestige_gain
+				add_piety = minor_piety_gain
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0401.a.excellent
+					left_icon = root
+				}
+				desc = gh_pilgrimage.0401.a.excellent
+			}
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				add_prestige = minor_prestige_gain
+				add_piety = minor_piety_gain
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0401.a.good
+					left_icon = root
+				}
+				desc = gh_pilgrimage.0401.a.good
+			}
+			15 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				add_prestige = minor_prestige_loss
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0401.a.failure
+					left_icon = root
+				}
+				desc = gh_pilgrimage.0401.a.failure
+			}
+		}
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+	
+	option = { # Watch the games from the stands
+		name = gh_pilgrimage.0401.b
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+		add_stress = medium_stress_loss
+	}
+}
+
+gh_pilgrimage.0402 = { # The Farthest Bank, Chariots
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0402.t
+	desc = gh_pilgrimage.0402.desc
+	theme = pilgrimage_destination
+	override_background = { reference = terrain_scope }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_sestaclea }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+	
+	option = { # Participate! It's dangerous though!
+		name = gh_pilgrimage.0402.a
+		duel = {
+			skill = martial
+			value = decent_skill_rating
+			10 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				desc = gh_pilgrimage.0402.a.excellent
+				add_prestige = medium_prestige_gain
+				add_piety = minor_piety_gain
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0402.a.excellent
+					left_icon = root
+					add_martial_skill = 1
+				}
+			}
+			25 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				desc = gh_pilgrimage.0402.a.good
+				add_prestige = minor_prestige_gain
+				add_piety = minor_piety_gain
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0402.a.good
+					left_icon = root
+				}
+			}
+			25 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				desc = gh_pilgrimage.0402.a.failure
+				add_prestige = minor_prestige_loss
+				add_piety = minor_piety_gain
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0402.a.failure
+					left_icon = root
+					increase_wounds_no_death_effect = { REASON = training_accident }
+				}
+			}
+			10 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				add_prestige = minor_prestige_loss
+				add_piety = minor_piety_gain
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0402.a.badfailure
+					left_icon = root
+					hidden_effect = { increase_wounds_no_death_effect = { REASON = training_accident } }
+					increase_wounds_no_death_effect = { REASON = training_accident }
+				}
+				desc = gh_pilgrimage.0402.a.badfailure
+			}
+			5 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				desc = gh_pilgrimage.0402.a.death
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0402.a.death
+					left_icon = root
+					death = { death_reason = death_chariot_accident }
+				}
+				
+			}
+		}
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+	
+	option = { # Watch the games from the stands
+		name = gh_pilgrimage.0402.b
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+		add_stress = medium_stress_loss
+	}
+}
+
+gh_pilgrimage.0403 = { # The Branching, Running
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0403.t
+	desc = gh_pilgrimage.0403.desc
+	theme = pilgrimage_destination
+	override_background = { reference = terrain_scope }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_dzuga }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+	
+	option = { # Participate!
+		name = gh_pilgrimage.0403.a
+		duel = {
+			skill = prowess
+			value = decent_skill_rating
+			25 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				add_prowess_skill = 1
+				add_prestige = medium_prestige_gain
+				add_piety = minor_piety_gain
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0403.a.excellent
+					left_icon = root
+				}
+				desc = gh_pilgrimage.0403.a.excellent
+			}
+			40 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				add_prestige = minor_prestige_gain
+				add_piety = minor_piety_gain
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0403.a.good
+					left_icon = root
+				}
+				desc = gh_pilgrimage.0403.a.good
+			}
+			10 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				add_prestige = minor_prestige_loss
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0403.a.failure
+					left_icon = root
+				}
+				desc = gh_pilgrimage.0403.a.failure
+			}
+			5 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				add_prestige = medium_prestige_loss
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0403.a.badfailure
+					left_icon = root
+					increase_wounds_no_death_effect = { REASON = training_accident }
+				}
+				desc = gh_pilgrimage.0403.a.badfailure
+			}
+		}
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+
+	option = { # Watch the games from the stands
+		name = gh_pilgrimage.0403.b
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+		add_stress = medium_stress_loss
+	}
+}
+
+gh_pilgrimage.0404 = { # The Holy Precincts, Javelins
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0404.t
+	desc = gh_pilgrimage.0404.desc
+	theme = pilgrimage_destination
+	override_background = { reference = terrain_scope }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_choirgai }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+	
+	option = { # Participate!
+		name = gh_pilgrimage.0404.a
+		duel = {
+			skill = prowess
+			value = decent_skill_rating
+			15 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				add_prowess_skill = 1
+				add_prestige = medium_prestige_gain
+				add_piety = minor_piety_gain
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0405.a.excellent
+					left_icon = root
+				}
+				desc = gh_pilgrimage.0405.a.excellent
+			}
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				add_prestige = minor_prestige_gain
+				add_piety = minor_piety_gain
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0405.a.good
+					left_icon = root
+				}
+				desc = gh_pilgrimage.0405.a.good
+			}
+			25 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				add_prestige = minor_prestige_loss
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0405.a.failure
+					left_icon = root
+				}
+				desc = gh_pilgrimage.0405.a.failure
+			}
+			5 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				add_prestige = medium_prestige_loss
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0405.a.failure
+					left_icon = root
+					increase_wounds_no_death_effect = { REASON = training_accident }
+				}
+				desc = gh_pilgrimage.0405.a.failure
+			}
+		}
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+	option = { # Watch the games from the stands
+		name = gh_pilgrimage.0404.b
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+		if = {
+			limit = { is_available_healthy_adult = yes }
+			add_prestige = medium_prestige_loss
+			add_piety = medium_piety_loss
+		}
+		else = { add_stress = medium_stress_loss }
+	}
+}
+
+gh_pilgrimage.0405 = { # The Emptying, Theater
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0405.t
+	desc = gh_pilgrimage.0405.desc
+	theme = pilgrimage_destination
+	override_background = { reference = terrain_scope }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = {  scope:activity.activity_location.county = title:c_sainhad }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+	
+	option = { # Participate!
+		name = gh_pilgrimage.0405.a
+		duel = {
+			skill = diplomacy
+			value = decent_skill_rating
+			20 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				add_diplomacy_skill = 1
+				add_prestige = medium_prestige_gain
+				add_piety = minor_piety_gain
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0405.a.excellent
+					left_icon = root
+				}
+				desc = gh_pilgrimage.0405.a.excellent
+			}
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 6.0
+					min = -49
+				}
+				add_prestige = minor_prestige_gain
+				add_piety = minor_piety_gain
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0405.a.good
+					left_icon = root
+				}
+				desc = gh_pilgrimage.0405.a.good
+			}
+			20 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0405.a.failure
+					left_icon = root
+				}
+				desc = gh_pilgrimage.0405.a.failure
+			}
+			10 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				add_prestige = minor_prestige_loss
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					left_icon = root
+					desc = gh_pilgrimage.0405.a.badfailure
+				}
+				desc = gh_pilgrimage.0405.a.badfailure
+			}
+		}
+	}
+
+	option = { # Watch the games from the stands
+		name = gh_pilgrimage.0405.b
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+		add_stress = medium_stress_loss
+	}
+}
+
+gh_pilgrimage.0406 = { # The Cup of Kasiryat, Wrasslin'
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0406.t
+	desc = gh_pilgrimage.0406.desc
+	theme = pilgrimage_destination
+	override_background = { reference = terrain_scope }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_tseteretii }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+	
+	option = { # Participate!
+		name = gh_pilgrimage.0406.a
+		duel = {
+			skill = prowess
+			value = decent_skill_rating
+			20 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				add_prowess_skill = 1
+				add_prestige = medium_prestige_gain
+				add_piety = minor_piety_gain
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0406.excellent
+					left_icon = root
+				}
+				desc = gh_pilgrimage.0406.excellent
+			}
+			25 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				add_prestige = minor_prestige_gain
+				add_piety = minor_piety_gain
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0406.good
+					left_icon = root
+				}
+				desc = gh_pilgrimage.0406.good
+			}
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.5
+					min = -49
+				}
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0406.neutral
+					left_icon = root
+				}
+				desc = gh_pilgrimage.0406.neutral
+			}
+			20 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				add_prestige = minor_prestige_loss
+					send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0406.failure
+					left_icon = root
+				}
+				desc = gh_pilgrimage.0406.failure
+			}
+			5 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				add_prestige = minor_prestige_loss
+				send_interface_toast = {
+					title = gh_pilgrimage.0401.toast
+					desc = gh_pilgrimage.0406.badfailure
+					left_icon = root
+					increase_wounds_no_death_effect = { REASON = training_accident }
+				}
+				desc = gh_pilgrimage.0406.badfailure
+			}
+		}
+	}
+
+	option = { # Watch the games from the stands
+		name = gh_pilgrimage.0406.b
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+		add_stress = medium_stress_loss
+	}
+}
+
+gh_pilgrimage.0407 = { # The Cave of Towersight
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0407.t
+	desc = gh_pilgrimage.0407.desc.anaanides
+	theme = pilgrimage_destination
+	override_background = { reference = wilderness_mountains }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_ihedum_and_nettlewreath } # GH TODO: Removed in province rework, restore
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0407.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0408 = { # The Isle of Liberation
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0408.t
+	desc = gh_pilgrimage.0408.desc.anaanides
+	theme = pilgrimage_destination
+	override_background = { reference = market_west }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_fakkugat }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0408.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0409 = { # The Field of Ascention
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0409.t
+	desc = gh_pilgrimage.0409.desc.anaanides
+	theme = pilgrimage_destination
+	override_background = { reference = wilderness_steppe }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_oldthrone }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0409.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0410 = { # The Gilded Palace
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0410.t
+	desc = gh_pilgrimage.0410.desc.anaanides
+	theme = pilgrimage_destination
+	override_background = { reference = alley_day }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_chalcamahos }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0410.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0411 = { # Sophocos - Al Wadilah
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0411.t
+	desc = gh_pilgrimage.0411.desc.ritualist
+	orphan = yes ## GH TODO: Figure out if the event is needed at all
+	theme = pilgrimage_destination
+	override_background = { reference = alley_day }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_sophocene }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0411.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}
+
+gh_pilgrimage.0412 = { # Mamur of the Center
+	type = activity_event
+	content_source = dlc_gh
+	title = gh_pilgrimage.0412.t
+	desc = gh_pilgrimage.0412.desc.wardenite
+	theme = pilgrimage_destination
+	override_background = { reference = alley_day }
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			animation = sadness
+		}
+		animation = happiness
+	}
+
+	trigger = { scope:activity.activity_location.county = title:c_el_qulatha }
+
+	immediate = { play_music_cue = mx_cue_pilgrimage_arrival }
+
+	option = { # Alright
+		name = {
+			trigger = { has_variable = pilgrimage_death_bury_home }
+			text = pilgrimage.4001.a_dead
+		}
+		name = {
+			trigger = { has_trait = cynical }
+			text = pilgrimage.4001.a_cynical
+		}
+		name = gh_pilgrimage.0407.a
+		give_pilgrim_trait_or_xp_effect = yes
+		pilgrimage_arrival_stress_loss_effect = yes
+	}
+}

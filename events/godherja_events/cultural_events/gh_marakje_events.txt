@@ -1,0 +1,17 @@
+﻿namespace = visvasavrak
+
+visvasavrak.0001 = {
+	hidden = yes
+	trigger = {
+		culture = {
+			has_cultural_parameter = visvasavrak_gains_claim
+		}
+		employs_court_position = visvasavrak_court_position
+	}
+	immediate = {
+		every_court_position_holder = {
+			type = visvasavrak_court_position
+			add_unpressed_claim = root.primary_title
+		}
+	}
+}

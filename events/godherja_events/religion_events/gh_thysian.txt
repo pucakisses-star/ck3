@@ -1,0 +1,427 @@
+﻿namespace = thysian
+
+##################################################
+#
+# 0001 - Thysian physician education
+# 0010 - 0020 - Thysian Offer Treatment Events
+##################################################
+
+
+
+##################################################
+# Chance for Thysians to gain physician trait with learning education
+# by Bommelom
+# 0001
+##################################################
+
+# Chance to give physician traits to Thysian children with learning education
+
+thysian.0001 = {
+	type = character_event
+	hidden = yes
+	
+	trigger = {
+		faith = { has_doctrine_parameter = thysian_physician_education }
+		has_trait = education_learning
+	}
+	
+	immediate = {
+		random = {
+			chance = 5
+			modifier = {
+				add = 5
+				has_trait_rank = {
+					trait = education_learning
+					rank > 1
+				}
+			}
+			modifier = {
+				add = 10
+				has_trait_rank = {
+					trait = education_learning
+					rank > 2
+				}
+			}
+			modifier = {
+				add = 10
+				has_trait_rank = {
+					trait = education_learning
+					rank > 3
+				}
+			}
+			add_trait = lifestyle_physician
+		}	
+	}
+}
+
+# Events for the offer_treatment interaction
+
+# Offer Treatment Response: Accepted
+thysian.0010 = {
+	type = letter_event
+	opening = {
+		desc = thysian.0010.opening
+	}
+	desc = thysian.0010.desc
+	sender = scope:recipient
+
+	immediate = {
+		scope:sick_character = { set_worst_disease_effect = yes }
+		custom_tooltip = offer_treatment_begin_tt
+		trigger_event = {
+			id = thysian.0012
+			days = 3
+		}
+	}
+
+	option = {
+		name = thysian.0010.a
+	}
+}
+
+# Offer Treatment Response: Refused
+thysian.0011 = {
+	type = letter_event
+	opening = {
+		desc = thysian.0011.opening
+	}
+	desc = thysian.0011.desc
+		
+	sender = {
+		character = scope:recipient
+		animation = dismissal
+	}
+
+	option = {
+		name = thysian.0011.a
+	}
+}
+
+thysian.0012 = {
+	type = character_event
+	title = thysian.0012.t
+	desc = thysian.0012.desc
+	theme = learning
+	left_portrait = {
+		character = scope:physician
+		triggered_animation = {
+			trigger = { scope:physician = { ai_compassion > 10 }  }
+			animation = worry
+		}
+		triggered_animation = {
+			trigger = { scope:physician = { ai_rationality >= 0 ai_compassion <= 10 } } #Don't look rational if you're not
+			animation = personality_rational
+		}
+		animation = idle
+	}
+	
+	immediate = {
+		scope:sick_character = { set_worst_disease_effect = yes }
+	}
+	
+	option = { # Normal Treatment
+		name = thysian.0012.a
+		thysian_safe_disease_treatment_effect = { PATIENT = scope:sick_character TREATMENT_PICKER = scope:physician }
+		ai_chance = { base = 10 }
+	}
+	
+	option = { # Risky Treatment
+		name = thysian.0012.b
+		thysian_risky_disease_treatment_effect = { PATIENT = scope:sick_character TREATMENT_PICKER = scope:physician }
+		ai_chance = { base = 1 }
+	}
+	
+	option = { # Mystic Treatment
+		name = thysian.0012.c
+		trigger = { has_trait = lifestyle_mystic }
+		thysian_mystic_disease_treatment_effect = { PATIENT = scope:sick_character TREATMENT_PICKER = scope:physician }
+		ai_chance = {
+			base = 0.5
+			modifier = {
+				add = -0.5
+				ai_zeal >= 0
+			}
+		}
+	}
+
+}
+
+#SAFE TREATMENT: SUCCESS
+thysian.0013 = {
+	type = character_event
+	title = thysian.0013.t
+	desc = thysian.0013.desc
+	
+	theme = healthcare
+	
+	left_portrait = {
+		character = scope:physician
+		triggered_animation = {
+			trigger = {
+				OR = {
+					opinion = {
+						target = root
+						value >= high_positive_opinion
+					}
+					ai_compassion >= medium_positive_compassion
+				}
+			}
+			animation = happiness
+		}
+		animation = personality_rational
+	}
+
+	immediate = {
+		#Adds modifiers, sends return visit event in 1-5 years, shows a tooltip if physician ranked up
+		scope:sick_character = { disease_treatment_results_effect = { TREATMENT = safe OUTCOME = success } }
+	}
+
+	option = {
+		name = thysian.0013.a	
+	}
+}
+
+#SAFE TREATMENT: FAILURE
+thysian.0014 = {
+	type = character_event
+	title = thysian.0014.t
+	desc = thysian.0014.desc
+	
+	theme = healthcare
+	
+	left_portrait = {
+		character = scope:physician
+		triggered_animation = {
+			trigger = {
+				OR = {
+					opinion = {
+						target = scope:sick_character
+						value >= high_positive_opinion
+					}
+					ai_compassion >= medium_positive_compassion
+				}
+			}
+			animation = fear
+		}
+		animation = shame
+	}
+
+	immediate = {
+		#Adds modifiers, sends return visit event in 1-5 years, shows a tooltip if physician ranked up
+		scope:sick_character = { disease_treatment_results_effect = { TREATMENT = safe OUTCOME = failure } }
+	}
+
+	option = {
+		name = thysian.0014.a	
+	}
+}
+
+#RISKY TREATMENT: CRITICAL SUCCESS
+thysian.0015 = {
+	type = character_event
+	title = thysian.0015.t
+	desc = thysian.0015.desc
+	
+	theme = healthcare
+	
+	left_portrait = {
+		character = scope:physician
+		triggered_animation = {
+			trigger = {
+				OR = {
+					opinion = {
+						target = root
+						value >= high_positive_opinion
+					}
+					ai_compassion >= medium_positive_compassion
+				}
+			}
+			animation = happiness
+		}
+		animation = personality_rational
+	}
+
+	immediate = {
+		#Adds modifiers, sends return visit event in 1-5 years, shows a tooltip if physician ranked up
+		scope:sick_character = { disease_treatment_results_effect = { TREATMENT = risky OUTCOME = critical_success } }
+	}
+
+	option = {
+		name = thysian.0015.a	
+	}
+}
+
+#RISKY TREATMENT: SUCCESS
+thysian.0016 = {
+	type = character_event
+	title = thysian.0016.t
+	desc = thysian.0016.desc
+	
+	theme = healthcare
+	
+	left_portrait = {
+		character = scope:physician
+		triggered_animation = {
+			trigger = {
+				OR = {
+					opinion = {
+						target = root
+						value >= high_positive_opinion
+					}
+					ai_compassion >= medium_positive_compassion
+				}
+			}
+			animation = happiness
+		}
+		animation = personality_rational
+	}
+
+	immediate = {
+		#Adds modifiers, sends return visit event in 1-5 years, shows a tooltip if physician ranked up
+		scope:sick_character = { disease_treatment_results_effect = { TREATMENT = risky OUTCOME = success } }
+	}
+
+	option = {
+		name = thysian.0016.a	
+	}
+}
+
+#RISKY TREATMENT: FAILURE
+thysian.0017 = {
+	type = character_event
+	title = thysian.0017.t
+	desc = thysian.0017.desc
+	
+	theme = healthcare
+	
+	left_portrait = {
+		character = scope:physician
+		triggered_animation = {
+			trigger = {
+				OR = {
+					opinion = {
+						target = scope:sick_character
+						value >= high_positive_opinion
+					}
+					ai_compassion >= medium_positive_compassion
+				}
+			}
+			animation = fear
+		}
+		animation = shame
+	}
+
+	immediate = {
+		#Adds modifiers, sends return visit event in 1-5 years, shows a tooltip if physician ranked up
+		scope:sick_character = { disease_treatment_results_effect = { TREATMENT = risky OUTCOME = failure } }
+	}
+
+	option = {
+		name = thysian.0017.a	
+	}
+}
+
+#MYSTIC TREATMENT: CRITICAL SUCCESS
+thysian.0018 = {
+	type = character_event
+	title = thysian.0018.t
+	desc = thysian.0018.desc
+	
+	theme = healthcare
+	
+	left_portrait = {
+		character = scope:physician
+		triggered_animation = {
+			trigger = {
+				OR = {
+					opinion = {
+						target = root
+						value >= high_positive_opinion
+					}
+					ai_compassion >= medium_positive_compassion
+				}
+			}
+			animation = happiness
+		}
+		animation = personality_rational
+	}
+
+	immediate = {
+		#Adds modifiers, sends return visit event in 1-5 years, shows a tooltip if physician ranked up
+		scope:sick_character = { disease_treatment_results_effect = { TREATMENT = mystic OUTCOME = critical_success } }
+	}
+
+	option = {
+		name = thysian.0018.a	
+	}
+}
+
+#MYSTIC TREATMENT: SUCCESS
+thysian.0019 = {
+	type = character_event
+	title = thysian.0019.t
+	desc = thysian.0019.desc
+	
+	theme = healthcare
+	
+	left_portrait = {
+		character = scope:physician
+		triggered_animation = {
+			trigger = {
+				OR = {
+					opinion = {
+						target = root
+						value >= high_positive_opinion
+					}
+					ai_compassion >= medium_positive_compassion
+				}
+			}
+			animation = happiness
+		}
+		animation = personality_rational
+	}
+
+	immediate = {
+		#Adds modifiers, sends return visit event in 1-5 years, shows a tooltip if physician ranked up
+		scope:sick_character = { disease_treatment_results_effect = { TREATMENT = mystic OUTCOME = success } }
+	}
+
+	option = {
+		name = thysian.0019.a	
+	}
+}
+
+#MYSTIC TREATMENT: FAILURE
+thysian.0020 = {
+	type = character_event
+	title = thysian.0020.t
+	desc = thysian.0020.desc
+	
+	theme = healthcare
+	
+	left_portrait = {
+		character = scope:physician
+		triggered_animation = {
+			trigger = {
+				OR = {
+					opinion = {
+						target = scope:sick_character
+						value >= high_positive_opinion
+					}
+					ai_compassion >= medium_positive_compassion
+				}
+			}
+			animation = fear
+		}
+		animation = shame
+	}
+
+	immediate = {
+		#Adds modifiers, sends return visit event in 1-5 years, shows a tooltip if physician ranked up
+		scope:sick_character = { disease_treatment_results_effect = { TREATMENT = mystic OUTCOME = failure } }
+	}
+
+	option = {
+		name = thysian.0020.a	
+	}
+}		

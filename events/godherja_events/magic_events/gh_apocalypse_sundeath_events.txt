@@ -1,0 +1,338 @@
+﻿namespace = apocalypse_sundeath
+
+# Add all counties in the world to a list from which they'll be pulled over time to make them go completely dark
+scripted_effect initialize_midnight_countdown_county_list_effect = {
+	every_county = {
+		add_to_global_variable_list = {
+			name = midnight_countdown_county_list
+			target = this
+		}
+	}
+}
+
+# Make a county lightbearing. This will also remove it from the variable list of counties that need to go dark eventually. 
+scripted_effect add_lightbearing_county_effect = {
+	set_variable = lightbearing_county
+	duchy = { 
+		set_variable = lightbearing_duchy
+	}
+	remove_list_global_variable = { 
+		name = midnight_countdown_county_list 
+		target = this 
+	}
+}
+
+# Pick a number of counties that will receive some extremely limited twilight (and not completely freeze)
+scripted_effect pick_lightbearing_counties_effect = {
+	# The lands around the Sea Tower will almost always remain lightbearing
+	every_county = {
+		limit = { title_province = { geographical_region = tower_isles_biozone } }
+		add_lightbearing_county_effect = yes
+	}
+	every_county = {
+		random = {
+			chance = 10
+			add_lightbearing_county_effect = yes
+		}
+	}
+}
+
+# Sundeath Step I: Sun turns red and turns black over the course of around a year or two
+apocalypse_sundeath.0001 = {
+	hidden = yes
+	
+	immediate = {
+		initialize_midnight_countdown_county_list_effect = yes # Add all counties to a list; the monthly effect that makes places go completely dark will pull at random from this list
+		pick_lightbearing_counties_effect = yes	# Pick a lucky few counties that will manage to evade total night
+		
+		set_permanent_moon_phase_effect = { MOON_PHASE = sundeath_moon }	# No more Aervlar phases
+		trigger_event = apocalypse_sundeath.0002
+		
+		every_living_character = {
+			limit = { NOT = { this = global_var:sundeath_initiator } }
+			trigger_event = apocalypse_sundeath.0003
+		}
+		global_var:sundeath_initiator = {
+			trigger_event = apocalypse_sundeath.0004
+		}
+	}
+}
+
+apocalypse_sundeath.0002 = {
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				NOT = { exists = global_var:gh_sun_brightness }
+			}
+			set_global_variable = {
+				name = gh_sun_brightness
+				value = 0.95
+			}
+			trigger_event = {
+				id = apocalypse_sundeath.0002
+				months = 1
+			}
+		}
+		else_if = {
+			limit = {
+				global_var:gh_sun_brightness > 0
+			}
+			change_global_variable = {
+				name = gh_sun_brightness
+				subtract = 0.05
+			}
+			trigger_event = {
+				id = apocalypse_sundeath.0002
+				months = 1
+			}
+		}
+		else = {
+			trigger_event = {
+				id = apocalypse_sundeath.0011
+				days = { 7 20 }
+			}
+		}
+	}
+}
+
+# Event for everyone in the world
+apocalypse_sundeath.0003 = {
+	type = character_event
+	window = fullscreen_event
+	title = apocalypse_sundeath.0003.t
+	desc = apocalypse_sundeath.0003.desc
+	
+	theme = faith
+	override_background = { reference = gh_sundeath }
+	
+	option = {
+		name = apocalypse_sundeath.0003.a
+		
+		add_stress = massive_stress_gain
+		random = {
+			chance = 10
+			add_trait = depressed_1
+		}
+	}
+}
+
+# Event for the apocalypse-causer
+apocalypse_sundeath.0004 = {
+	type = character_event
+	window = fullscreen_event
+	title = apocalypse_sundeath.0004.t
+	desc = apocalypse_sundeath.0004.desc
+	
+	theme = faith
+	override_background = { reference = gh_sundeath }
+	
+	option = {
+		name = apocalypse_sundeath.0004.a
+	}
+}
+
+# Sundeath Step III: Vegetation across the world is almost entirely dead by this point. Turn everything into wasteland graphically (this does not necessarily mean that the province becomes unowned, at least not yet)
+apocalypse_sundeath.0011 = {
+	hidden = yes
+	
+	immediate = {
+		every_county = {
+			limit = {
+				this.title_province = {
+  					NOT = { geographical_region = world_ga_mayikprolollan }
+				}
+			}
+			add_county_modifier = magic_sundeath_twilight_modifier
+		}
+		every_duchy = {
+			limit = { 
+				NOT = { 
+					this.title_province = {
+  						NOT = { geographical_region = world_ga_mayikprolollan }
+					}
+				}
+			}
+			gh_set_dynamic_terrain_variant_effect = { VARIANT = wasteland }
+
+		}
+		set_global_variable = sundeath_phase_1_start
+	}
+}
+
+##################################################
+# Sun Goes Completely Dark in a County
+# by Hapchazzard
+# 0021 - 0030
+##################################################
+
+# Turn a county from twilight into total darkness
+scripted_effect start_eternal_midnight_county_effect = {
+	remove_county_modifier = magic_sundeath_twilight_modifier
+	if = {
+		limit = {
+			this.title_province = {
+  				NOT = { geographical_region = world_ga_mayikprolollan }
+			}
+		}
+		add_county_modifier = magic_sundeath_night_modifier
+	}
+	if = {
+		limit = {
+			is_redlander = no
+			this.title_province = {
+  				NOT = { geographical_region = world_ga_mayikprolollan }
+			}
+		}
+		devastate_county_effect = yes
+	}
+	remove_list_global_variable = { 
+		name = midnight_countdown_county_list 
+		target = this
+	}
+}
+
+scripted_effect devastate_county_effect = {	# GH URGENT: Make this into a generic scripted effect and finally introduce some consistency to these county devastation calls (i.e. make Aervalr Shards and Magic use them too) 
+	change_development_level = -100
+	every_county_province = {
+		save_temporary_scope_as = province_turning_to_wasteland_scope
+		barony.holder ?= {
+			if = {
+				limit = { location ?= scope:province_turning_to_wasteland_scope }
+				trigger_event = apocalypse_sundeath.0023
+			}
+			else = {
+				trigger_event = apocalypse_sundeath.0022
+			}
+			every_courtier_or_guest = {
+				limit = { location ?= scope:province_turning_to_wasteland_scope }
+				trigger_event = apocalypse_sundeath.0023
+			}
+		}
+	}
+    ruin_county_effect = yes
+}
+
+# Sundeath Step IV: Twilight is replaced by total darkness in a county; within a few months, it will finally turn into a completely uninhabitable arctic wasteland
+apocalypse_sundeath.0021 = {
+	hidden = yes
+	
+	immediate = {
+		random_in_global_list = {
+			variable = midnight_countdown_county_list
+			
+			debug_log = "COUNTY GOING DARK:"
+			debug_log_scopes = yes
+			
+			add_to_list = counties_going_dark_county_list
+			duchy = {
+				if = {
+					limit = { 
+						NOT = { 
+							exists = var:lightbearing_duchy	# If a duchy has at least one lightbearing county, it should remain just a barren wasteland
+							this.capital_county.title_province = {
+  								NOT = { geographical_region = world_ga_mayikprolollan }
+							}
+						}
+					}
+					every_in_de_jure_hierarchy = {
+						limit = { tier = tier_county }
+						add_to_list = counties_going_dark_county_list
+					}
+					if = {
+						limit = {
+							NOT = {
+								prev = { title_province = { geographical_region = sarradonian_desert_biozone } }	# Deserts aren't humid enough to have actual snow 
+								prev = { title_province = { geographical_region = world_ga_mayikprolollan } }	# No snow in the Mayik
+							}
+						}
+						gh_set_dynamic_terrain_variant_effect = { VARIANT = arctic }
+					}
+				}
+			}
+		}
+		every_in_list = {
+			list = counties_going_dark_county_list
+			start_eternal_midnight_county_effect = yes
+		}
+	}
+}
+
+# Notify county holders that their county is going completely dark
+apocalypse_sundeath.0022 = {
+	type = character_event
+	title = apocalypse_sundeath.0022.t
+	desc = apocalypse_sundeath.0022.desc
+	theme = intrigue
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+	
+	option = {
+		name = apocalypse_sundeath.0022.a
+	}
+}
+
+# Event for people in the county itself, with a chance of dying
+apocalypse_sundeath.0023 = {
+	type = character_event
+	title = apocalypse_sundeath.0023.t
+	desc = apocalypse_sundeath.0023.desc
+	theme = intrigue
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+	
+	immediate = {
+		# Pick a county to potentially run away to
+		random_county = {
+			limit = {
+				NOT = { has_county_modifier = magic_sundeath_night_modifier }
+				title_province = {
+					squared_distance = {
+						target = root.location
+						value <= squared_distance_large #250 map-pixels. Roughly one Ireland away (top to bottom).
+					}
+				}
+			}
+			save_scope_as = escape_county
+		}
+	}
+	
+	option = {
+		name = apocalypse_sundeath.0023.a
+		
+		if = {
+			limit = { exists = scope:escape_county }
+			# Check whether you survive the ensuing upheaval
+			duel = {
+				skill = prowess
+				value = very_high_skill_rating
+				40 = {	# You survive
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = 3.5
+						min = -49
+					}
+					min = 5
+					set_location = scope:escape_county.title_province
+				}
+				60 = {	# You die
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = -3.5
+						min = -49
+					}
+					min = 10
+					death = { death_reason = death_sundeath }
+				}
+			}
+		}
+		else = {
+			death = { death_reason = death_sundeath }
+		}
+	}
+}

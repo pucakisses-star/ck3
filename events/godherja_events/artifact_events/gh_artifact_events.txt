@@ -1,0 +1,867 @@
+﻿namespace = gh_artifact
+
+##################################################
+# STANDARD YEARLIES
+
+##################################################
+# A Book Seller Arrives
+# by Hapchazzard
+# 0001 - 0010
+##################################################
+
+scripted_effect generate_random_historical_book_effect = {
+	random_list = {
+		# 1 = { create_artifact_five_fathers_book_effect = { OWNER = scope:book_seller } } # GH URGENT: Book is missing, track it down
+		1 = { create_artifact_seventy_seven_cities_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_pocket_guide_to_aversaria_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_skull_of_the_purest_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_kam_gutaran_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_dragon_tale_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_bookofmaps_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_grimoireofmethinoire_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_burntgrimoire_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_afynehestoree_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_amazingslaves_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_fraternityofmagi_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_aversariancookinginformational_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_marcherswhatdoweknow_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_mightmagibuxommaiden_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_fiftyshades_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_adabyssianreport_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_taleofsirkoeveux_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_imperialcivilwar_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_nameofthewindknockoff_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_tragedyinoejeynica_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_sarradoniansteps_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_chivalriccode_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_griffonbestiary_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_lasthippogriff_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_howtomaimadragon_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_loveanddeathinasiupoli_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_silastavroaliveordead_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_howtoreadabook_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_purelifefifth_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_purebodyfifth_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_puremindfifth_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_purelifefirst_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_purebodyfirst_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_puremindfirst_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_travelsofsaintkatharitos_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_hundredtrials_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_bookofremedies_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_saintslawbook_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_rendingthechains_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_calystojournal_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_eosianswordcharter_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_dangerofathousandstars_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_bannediyrossipoetry_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_aeladaxostoaeliadias_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_compiledworksofvenodau_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_pillarsofaversaria_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_ontheoriginofmankind_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_ataleoftwocities_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_parthenaxiada_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_edgeoftheworld_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_ninetysixtasks_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_natureofmatter_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_ruleofmany_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_thedragonandthescorpion_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_arakkariacwar_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_lostpolis_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_masenmalik_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_mawtalmunininguide_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_expeditiontothenorth_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_howtheendbegan_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_refutation_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_inquiryintothefog_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_clockworkcity_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_annalsofblank_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_whenaervalbleed_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_treatiseofgoodpractice_book_effect = { OWNER = scope:book_seller } }
+		# 1 = { create_artifact_chevalienknightinoraispol_book_effect = { OWNER = scope:book_seller } }
+		# 1 = { create_artifact_witchbreakerhero_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_sjalvolkipoetry_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_bookofthefallen_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_jacotwaldisse_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_delenelbook_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_redlandsadventure_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_fourlodges_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_journalofseekers_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_godslaverdictations_fix_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_thekardwenwhatweknow_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_manswelbestiarium_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_womanknights_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_dethediaxnotes_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_dethediaxiancodex_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_bluerobetreatise_book_effect = { OWNER = scope:book_seller } }
+		1 = { create_artifact_boqqarofknives_book_effect = { OWNER = scope:book_seller } }
+	}
+}
+
+#	A book seller visits your court (hidden spawn event)
+gh_artifact.0001 = {
+	hidden = yes
+
+	trigger = {
+		#Standard checks.
+		is_available_even_at_war_adult = yes
+		#NOT = { has_variable = recently_visited_by_book_seller }
+		is_landed = yes
+		# Expensive & unnecessary for counts or below
+		highest_held_title_tier > tier_duchy
+		is_ruin = no
+	}
+
+	weight_multiplier = {
+		base = 1
+	}
+
+	immediate = {
+		#Assign a home county for the book seller.
+		# GH_TODO: Why is this guy not spawning?
+	}
+}
+
+#	A book seller visits your court
+gh_artifact.0002 = {
+	type = character_event
+	content_source = dlc_gh
+	title = gh_artifact.0002.t
+	desc = gh_artifact.0002.desc
+	theme = learning_scholarship_focus
+	orphan = yes
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:book_seller
+		animation = personality_rational
+	}
+	artifact = {
+		target = scope:first_displayed_artifact
+		position = lower_left_portrait
+		trigger = { exists = scope:first_displayed_artifact }
+	}
+	artifact = {
+		target = scope:second_displayed_artifact
+		position = lower_center_portrait
+		trigger = { exists = scope:second_displayed_artifact }
+	}
+	artifact = {
+		target = scope:third_displayed_artifact
+		position = lower_right_portrait
+		trigger = { exists = scope:third_displayed_artifact }
+	}
+
+	trigger = {
+		#Standard checks.
+		is_available_even_at_war_adult = yes
+		NOT = { has_variable = recently_visited_by_book_seller }
+		is_landed = yes
+		is_human = yes
+		exists = scope:book_seller
+	}
+
+	immediate = {
+		set_variable = {
+			name = recently_visited_by_book_seller
+			days = 3650
+		}
+		hidden_effect = {
+			random_county = {
+				limit = {
+					squared_distance = {
+						target = root.capital_county
+						value <= squared_distance_huge
+					}
+					NOR = {
+						culture = culture:wasteland
+						religion = religion:wasteland_religion
+					}
+				}
+				save_scope_as = book_seller_origin_county
+			}
+			#Create the book seller.
+			create_character = {
+				location = root.capital_province
+				template = book_seller_template
+				save_scope_as = book_seller
+			}
+			scope:book_seller = { 
+				generate_random_historical_book_effect = yes
+				scope:newly_created_artifact = { save_scope_as = first_displayed_artifact }
+				generate_random_historical_book_effect = yes
+				scope:newly_created_artifact = { save_scope_as = second_displayed_artifact }
+				generate_random_historical_book_effect = yes
+				scope:newly_created_artifact = { save_scope_as = third_displayed_artifact }
+			}
+		}
+	}
+	
+	option = {
+		name = gh_artifact.0002.steal_all_books
+		trigger = {  
+			OR = {
+				has_trait = sadistic
+				has_trait = callous
+				has_trait = arbitrary
+			}
+			NOT = { has_trait = just }
+		}
+		add_prestige = major_prestige_loss
+		if = {
+			limit = {
+				faith = {
+					NOR = {
+						trait_is_virtue = sadistic
+						trait_is_virtue = callous
+						trait_is_virtue = arbitrary
+					}
+				}
+			}
+			add_piety = major_piety_loss
+		}
+		scope:book_seller = {
+			every_character_artifact = {
+				set_owner = root
+			}
+		}
+	}
+	
+	option = {
+		name = gh_artifact.0002.a
+		trigger = { exists = scope:first_displayed_artifact }
+		pay_short_term_gold = {
+			target = scope:book_seller
+			gold = scope:first_displayed_artifact.artifact_book_gold_value
+		}
+		scope:first_displayed_artifact = {
+			set_owner = root
+		}
+	}
+	
+	option = {
+		name = gh_artifact.0002.b
+		trigger = { exists = scope:second_displayed_artifact }
+		pay_short_term_gold = {
+			target = scope:book_seller
+			gold = scope:second_displayed_artifact.artifact_book_gold_value
+		}
+		scope:second_displayed_artifact = {
+			set_owner = root
+		}
+	}
+	
+	option = {
+		name = gh_artifact.0002.c
+		trigger = { exists = scope:third_displayed_artifact }
+		pay_short_term_gold = {
+			target = scope:book_seller
+			gold = scope:third_displayed_artifact.artifact_book_gold_value
+		}
+		scope:third_displayed_artifact = {
+			set_owner = root
+		}
+	}
+	
+	option = {
+		name = gh_artifact.0002.d
+	}
+}
+
+#cripted_effect pick_random_stall_effect = {
+#	random_list = {
+#		#10 = {
+#		#	trigger = {
+#		#		NOT = { has_character_flag = weapon_stall } 
+#		#	}
+#		#	add_character_flag = { flag = weapon_stall days = 30 }
+#		#}
+#		10 = {
+#			trigger = {
+#				NOT = { has_character_flag = book_stall }
+#			}
+#			add_character_flag = { flag = book_stall days = 30 }
+#		}
+#		10 = {
+#			trigger = {
+#				NOT = { has_character_flag = menagerie_stall }
+#			}
+#			add_character_flag = { flag = menagerie_stall days = 30 }
+#		}
+#		10 = {
+#			trigger = {
+#				NOT = { has_character_flag = arcana_stall }
+#			}
+#			add_character_flag = { flag = arcana_stall days = 30 }
+#		}
+#	}
+#
+#
+#cripted_effect add_artifact_to_slot = {
+#	add_character_flag = {
+#		flag = $ARTIFACT_NAME$_slot_$SLOT$
+#		days = 30
+#	}
+#	add_character_flag = {
+#		flag = already_picked_$ARTIFACT_NAME$
+#		days = 30
+#	}
+#	set_variable = {
+#		name = slot_$SLOT$_price
+#		value = $VALUE$
+#		days = 30
+#	}
+#
+#
+#cripted_effect fetch_artifact_from_slot = {
+#	if = {
+#		limit = { has_character_flag = $ARTIFACT_NAME$_slot_$SLOT$ }
+#		add_artifact = {ARTIFACT = $ARTIFACT_NAME$ }
+#	}
+#
+#
+#rtifact.0001 = {		# Market event, lets you pick one of two randomly selected stalls
+#	title = artifact.0001.t
+#	desc = artifact.0001.desc
+#	theme = stewardship
+#	type = character_event
+#	left_portrait = root
+#
+#	immediate = {
+#		pick_random_stall_effect = yes	# Pick two random stalls
+#		pick_random_stall_effect = yes 
+#	}
+#
+#	option = {
+#		#Weapon stall
+#		name = artifact.0001.a
+#		trigger = { has_character_flag = weapon_stall }
+#		hidden_effect = {
+#			trigger_event = artifact.0002
+#		}
+#	}
+#
+#	option = {
+#		#Book cart
+#		name = artifact.0001.b
+#		trigger = { has_character_flag = book_stall }
+#		hidden_effect = {
+#			trigger_event = artifact.0003
+#		}
+#	}
+#	
+#	option = {
+#		#Menagerie
+#		name = artifact.0001.c
+#		trigger = { has_character_flag = menagerie_stall }
+#		hidden_effect = {
+#			trigger_event = artifact.0004
+#		}
+#	}
+#	
+#	option = {
+#		#Arcana tent
+#		name = artifact.0001.d
+#		trigger = { has_character_flag = arcana_stall }
+#		hidden_effect = {
+#			trigger_event = artifact.0005
+#		}
+#	}
+#	
+#	option = {
+#		#Nothing
+#		name = artifact.0001.e
+#	}
+#
+#
+#rtifact.0002 = {		# Market event, lets you pick one of three randomly selected artifacts (weapon stall)
+#	title = artifact.0002.t
+#	desc = artifact.0002.desc
+#	theme = stewardship
+#	type = character_event
+#	left_portrait = root
+#
+#	immediate = {
+#		# This, bizarrely, does not work for some reason. Since we're getting vanilla artifacts soon enough and
+#		# this entire event chain is getting reworked, I'm just going to comment it out for this version - Hap
+#		#pick_random_artifact_weapon = { SLOT = 1 }
+#		#pick_random_artifact_weapon = { SLOT = 2 }
+#		#pick_random_artifact_weapon = { SLOT = 3 }
+#	}
+#
+#	option = {
+#		name = artifact.0002.a
+#		fetch_all_artifacts_for_slot = { SLOT = 1 }
+#		remove_short_term_gold = var:slot_1_price
+#	}
+#	option = {
+#		name = artifact.0002.b
+#		fetch_all_artifacts_for_slot = { SLOT = 2 }
+#		remove_short_term_gold = var:slot_2_price
+#	}
+#	option = {
+#		name = artifact.0002.c
+#		fetch_all_artifacts_for_slot = { SLOT = 3 }
+#		remove_short_term_gold = var:slot_3_price
+#	}
+#	option = {
+#		#Nothing
+#		name = artifact.0002.d
+#	}
+#
+#
+#rtifact.0003 = {		# Market event, lets you pick one of three randomly selected artifacts (book stall)
+#	title = artifact.0003.t
+#	desc = artifact.0003.desc
+#	theme = stewardship
+#	type = character_event
+#	left_portrait = root
+#
+#	immediate = {
+#		pick_random_artifact_book = { SLOT = 1 }
+#		pick_random_artifact_book = { SLOT = 2 }
+#		pick_random_artifact_book = { SLOT = 3 }
+#	}
+#
+#	option = {
+#		name = artifact.0003.a
+#		fetch_all_artifacts_for_slot = { SLOT = 1 }
+#		remove_short_term_gold = var:slot_1_price
+#	}
+#	option = {
+#		name = artifact.0003.b
+#		fetch_all_artifacts_for_slot = { SLOT = 2 }
+#		remove_short_term_gold = var:slot_2_price
+#	}
+#	option = {
+#		name = artifact.0003.c
+#		fetch_all_artifacts_for_slot = { SLOT = 3 }
+#		remove_short_term_gold = var:slot_3_price
+#	}
+#	option = {
+#		#Nothing
+#		name = artifact.0003.d
+#	}
+#
+#
+#rtifact.0004 = {		# Market event, lets you pick one of three randomly selected artifacts (menagerie)
+#	title = artifact.0004.t
+#	desc = artifact.0004.desc
+#	theme = stewardship
+#	type = character_event
+#	left_portrait = root
+#
+#	immediate = {
+#		pick_random_artifact_menagerie = { SLOT = 1 }
+#		pick_random_artifact_menagerie = { SLOT = 2 }
+#		pick_random_artifact_menagerie = { SLOT = 3 }
+#	}
+#
+#	option = {
+#		name = artifact.0002.a
+#		fetch_all_artifacts_for_slot = { SLOT = 1 }
+#		remove_short_term_gold = var:slot_1_price
+#	}
+#	option = {
+#		name = artifact.0002.b
+#		fetch_all_artifacts_for_slot = { SLOT = 2 }
+#		remove_short_term_gold = var:slot_2_price
+#	}
+#	option = {
+#		name = artifact.0002.c
+#		fetch_all_artifacts_for_slot = { SLOT = 3 }
+#		remove_short_term_gold = var:slot_3_price
+#	}
+#	option = {
+#		#Nothing
+#		name = artifact.0004.d
+#	}
+#
+#
+#rtifact.0005 = {		# Market event, lets you pick one of three randomly selected artifacts (arcana stall)
+#	title = artifact.0005.t
+#	desc = artifact.0005.desc
+#	theme = stewardship
+#	type = character_event
+#	left_portrait = root
+#
+#	immediate = {
+#		pick_random_artifact_arcana = { SLOT = 1 }
+#		pick_random_artifact_arcana = { SLOT = 2 }
+#		pick_random_artifact_arcana = { SLOT = 3 }
+#	}
+#
+#	option = {
+#		name = artifact.0005.a
+#		fetch_all_artifacts_for_slot = { SLOT = 1 }
+#		remove_short_term_gold = var:slot_1_price
+#	}
+#	option = {
+#		name = artifact.0005.b
+#		fetch_all_artifacts_for_slot = { SLOT = 2 }
+#		remove_short_term_gold = var:slot_2_price
+#	}
+#	option = {
+#		name = artifact.0005.c
+#		fetch_all_artifacts_for_slot = { SLOT = 3 }
+#		remove_short_term_gold = var:slot_3_price
+#	}
+#	option = {
+#		#Nothing
+#		name = artifact.0005.d
+#	}
+#
+#
+#rtifact.0010 = {		# Menagerie event, lets you make one in exchange for money
+#	title = artifact.0010.t
+#	desc = artifact.0010.desc
+#	theme = stewardship
+#	type = character_event
+#	
+#	left_portrait = {
+#		character = root
+#		animation = personality_rational
+#	}
+#	right_portrait = {
+#		character = scope:menagerie_merchant
+#		animation = admiration
+#	}
+#	
+#	immediate = {
+#		hidden_effect = {
+#			random_list = {
+#				50 = {
+#					trigger = { any_county = { culture = culture:easternimperial } }
+#					random_county = {
+#						limit = {
+#							culture = culture:easternimperial
+#						}
+#						save_scope_as = origin_county
+#					}
+#				}
+#				50 = {
+#					random_county = {
+#						limit = {
+#							NOT = { faith = faith:fogeater }
+#						}
+#						save_scope_as = origin_county
+#					}
+#				}
+#			}
+#			create_character = {
+#				template = menagerie_merchant_template
+#				save_scope_as = menagerie_merchant
+#				location = root.capital_province
+#			}
+#			pick_random_artifact_menagerie = { SLOT = 1 }
+#			pick_random_artifact_menagerie = { SLOT = 2 }
+#			pick_random_artifact_menagerie = { SLOT = 3 }
+#		}
+#	}
+#	
+#	option = {
+#		name = artifact.0010.a
+#		fetch_all_artifacts_for_slot = { SLOT = 1 }
+#		remove_short_term_gold = var:slot_1_price
+#		ai_chance = {
+#			base = 10
+#			modifier = {
+#				factor = 0.1
+#				has_trait = greedy
+#			}
+#			modifier = {
+#				factor = 2
+#				has_trait = arrogant
+#			}
+#			modifier = {
+#				factor = 0
+#				gold < var:slot_1_price
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = artifact.0010.b
+#		fetch_all_artifacts_for_slot = { SLOT = 2 }
+#		remove_short_term_gold = var:slot_2_price
+#		ai_chance = {
+#			base = 10
+#			modifier = {
+#				factor = 0.1
+#				has_trait = greedy
+#			}
+#			modifier = {
+#				factor = 2
+#				has_trait = arrogant
+#			}
+#			modifier = {
+#				factor = 0
+#				gold < var:slot_2_price
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = artifact.0010.c
+#		fetch_all_artifacts_for_slot = { SLOT = 3 }
+#		remove_short_term_gold = var:slot_3_price
+#		ai_chance = {
+#			base = 10
+#			modifier = {
+#				factor = 0.1
+#				has_trait = greedy
+#			}
+#			modifier = {
+#				factor = 2
+#				has_trait = arrogant
+#			}
+#			modifier = {
+#				factor = 0
+#				gold < var:slot_3_price
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = artifact.0010.d
+#		fetch_all_artifacts_for_slot = { SLOT = 1 }
+#		fetch_all_artifacts_for_slot = { SLOT = 2 }
+#		fetch_all_artifacts_for_slot = { SLOT = 3 }
+#		capital_county = { add_county_modifier = menagerie_modifier }
+#		add_prestige = major_prestige_value
+#		remove_short_term_gold = artifact_menagerie_price
+#		ai_chance = {
+#			base = 5
+#			modifier = {
+#				factor = 0
+#				has_trait = greedy
+#			}
+#			modifier = {
+#				factor = 10
+#				has_trait = arrogant
+#			}
+#			modifier = {
+#				factor = 5
+#				has_trait = ambitious
+#			}
+#			modifier = {
+#				factor = 0
+#				gold < artifact_menagerie_price
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = artifact.0010.e
+#	}
+#	
+#	after = {
+#		hidden_effect = {
+#			scope:menagerie_merchant = { death = { death_reason = death_vanished } }
+#		}
+#	}
+#
+#
+#rtifact.0011 = {		# Court Chaplain event, your chaplain tells you to read a book for once in your life
+#	title = artifact.0011.t
+#	desc = artifact.0011.desc
+#	theme = learning
+#	type = character_event
+#	left_portrait = {
+#		character = root
+#		animation = personality_rational
+#	}
+#	right_portrait = {
+#		character = cp:councillor_court_chaplain
+#		animation = personality_zealous
+#	}
+#	
+#	immediate = {
+#		hidden_effect = {
+#				50 = {
+#					random_county = {
+#						limit = {
+#							NOT = { faith = faith:fogeater }
+#						}
+#						save_scope_as = origin_county
+#					}
+#				}
+#		}
+#	}
+#	
+#	option = {
+#		name = artifact.0011.a
+#		trigger_event = artifact.0012
+#		ai_chance = {
+#			base = 10
+#			modifier = {
+#				factor = 1
+#				has_trait = diligent
+#			}
+#			modifier = {
+#				factor = 2
+#				has_trait = genius
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = artifact.0011.b
+#		add_prestige = -10
+#		ai_chance = {
+#			base = 5
+#			modifier = {
+#				factor = 5
+#				has_trait = slothful
+#			}
+#			modifier = {
+#				factor = 5
+#				has_trait = Imbecile
+#			}
+#		}
+#	}
+#
+#
+#rtifact.0012 = {		# continuation of the book event
+#	title = artifact.0012.t
+#	desc = artifact.0012.desc
+#	theme = learning
+#	type = character_event
+#	left_portrait = {
+#		character = root
+#		animation = personality_zealous
+#	}
+#	
+#	
+#	immediate = {
+#		hidden_effect = {
+#				50 = {
+#					random_county = {
+#						limit = {
+#							NOT = { faith = faith:fogeater }
+#						}
+#						save_scope_as = origin_county
+#					}
+#				}
+#				pick_random_artifact_book = { SLOT = 1 }
+#				pick_random_artifact_book = { SLOT = 2 }
+#				pick_random_artifact_book = { SLOT = 3 }
+#		}
+#	}
+#	
+#	option = {
+#		name = artifact.0012.a
+#		duel = {
+#			skill = learning
+#			value = 10
+#			50 = {		
+#				compare_modifier = {
+#					value = scope:duel_value
+#					multiplier = 3.5
+#					min = -49
+#				}
+#				desc = artifact.0012.a.success
+#				add_prestige = medium_prestige_gain
+#				fetch_all_artifacts_for_slot = { SLOT = 1 }
+#				show_as_tooltip = {
+#				}
+#			}
+#			50 = {		
+#				compare_modifier = {
+#					value = scope:duel_value
+#					multiplier = -3.5
+#					min = -49
+#				}
+#				desc = artifact.0012.a.failure
+#				add_prestige = minor_prestige_loss
+#				show_as_tooltip = {
+#				}
+#			}
+#		}
+#		ai_chance = {
+#			base = 10
+#			modifier = {
+#				factor = 1
+#				has_trait = diligent
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = artifact.0012.b
+#		duel = {
+#			skill = learning
+#			value = 10
+#			50 = {		
+#				compare_modifier = {
+#					value = scope:duel_value
+#					multiplier = 2.5
+#					min = -49
+#				}
+#				desc = artifact.0012.a.success
+#				fetch_all_artifacts_for_slot = { SLOT = 2 }
+#				add_prestige = medium_prestige_gain
+#				show_as_tooltip = {
+#				}
+#			}
+#			50 = {		
+#				compare_modifier = {
+#					value = scope:duel_value
+#					multiplier = -2.5
+#					min = -49
+#				}
+#				desc = artifact.0012.a.failure
+#				add_prestige = minor_prestige_loss
+#				show_as_tooltip = {
+#				}
+#			}
+#		}
+#		ai_chance = {
+#			base = 5
+#			modifier = {
+#				factor = 5
+#				has_trait = prideful
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = artifact.0012.c
+#		duel = {
+#			skill = learning
+#			value = 10
+#			50 = {		
+#				compare_modifier = {
+#					value = scope:duel_value
+#					multiplier = 1.5
+#					min = -49
+#				}
+#				desc = artifact.0012.a.success
+#				fetch_all_artifacts_for_slot = { SLOT = 3 }
+#				add_prestige = medium_prestige_gain
+#				show_as_tooltip = {
+#				}
+#			}
+#			50 = {		
+#				compare_modifier = {
+#					value = scope:duel_value
+#					multiplier = -1.5
+#					min = -49
+#				}
+#				desc = artifact.0012.a.failure
+#				add_prestige = minor_prestige_loss
+#				show_as_tooltip = {
+#				}
+#			}
+#		}
+#		ai_chance = {
+#			base = 2
+#			modifier = {
+#				factor = 10
+#				has_trait = genius
+#			}
+#		}
+#	}
+#}

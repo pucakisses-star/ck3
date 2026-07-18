@@ -1,0 +1,1352 @@
+﻿# Events for handling the Hunt activity
+
+namespace = gh_hunt
+
+## GH Hunt events
+## by Lonely Knightess and ThatOneGuy
+
+############################
+## Setup and maintenance events
+## 0000-0999
+############################
+
+## ENDING EVENTS 1000+
+
+gh_hunt.1001 = {
+	type = activity_event
+	title = gh_hunt.1001.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_adze_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.adze
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_akapura_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.akapura
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_almas_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.almas
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_apep-ibizan_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.apep_ibizan
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_banshee_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.banshee
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_bhramar_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.bhramar
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_chimera_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.chimera
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_coatl_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.coatl
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_cockatrice_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.cockatrice
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_cor_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.cor
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_crocotta_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.crocotta
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_dire_mosquito_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.dire_mosquito
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_dire_stag_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.dire_stag
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_djinn_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.djinn
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_doyarchu_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.doyarchu
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_dreadleech_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.dreadleech
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_false_hydra_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.false_hydra
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_forest_troll_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.forest_troll
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_gajara_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.gajara
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_gargoyle_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.gargoyle
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_gaunt_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.gaunt
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_giant_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.giant
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_giant_bee_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.giant_bee
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_giant_spider_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.giant_spider
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_great_rahksasa_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.great_rahksasa
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_griffon_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.griffon
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_hieracosphinx_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.hieracosphinx
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_karkadann_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.karkadann
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_kursha_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.kursha
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_spriggan_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.spriggan
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_living_blizzard_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.living_blizzard
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_lymrill_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.lymrill
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_manticore_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.manticore
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_myrmeke_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.myrmeke
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_naga_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.naga
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_owlbear_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.owlbear
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_roaring_lizard_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.roaring_lizard
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_rock_giant_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.rock_giant
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_running_raptor_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.running_raptor
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_shade_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.shade
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_spirit_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.spirit
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_tarasque_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.tarasque
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_twin-serpent_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.twin_serpent
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_ubir_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.ubir
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_ugkilrrrmag_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.ugkilrrrmag
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_ukhinbooum_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.ukhinbooum
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_urmahlullu_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.urmahlullu
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_whisperwind_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.whisperwind
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_wyrm_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.wyrm
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_zilant_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.zilant
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_ground_dweller_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1001.desc.ground_dweller
+			}
+			desc = hunt.1001.desc_dangerous
+		}
+	}
+	theme = hunt_activity
+	override_background = { reference = wilderness_activity }
+	left_portrait = {
+		character = scope:host
+		animation = shock
+	}
+	right_portrait = {
+		character = scope:hunt_participant
+		animation = hunting_horn
+	}
+	center_portrait = {
+		character = root
+		trigger = {
+			NOR = {
+				scope:hunt_participant ?= this
+				this = scope:host
+			}
+		}
+	}
+	cooldown = { weeks = 1 }
+
+	trigger = {
+		trigger_if = {
+			limit = {
+				NOT = { this = scope:host }
+			}
+			is_ai = no
+		}
+
+		scope:activity = {
+			has_activity_option = { category = special_type option = hunt_type_monster_hunt }
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = { this = scope:host }
+			hunt_activity_random_subordinate_participant_effect = {
+				ARCHETYPE = hunter
+				COMBATANT = yes
+				SCOPE = hunt_participant
+			}
+			if = {
+				limit = { exists = scope:hunt_participant }
+				scope:activity = {
+					set_variable = {
+						name = participant_to_use
+						value = scope:hunt_participant
+						years = 1
+					}
+				}
+			}
+		}
+		else = { hunt_story_tooltip_effect = yes }
+	}
+
+	option = { # Enter the Lair 
+		name = gh_hunt.1001.a
+		flavor = {
+			random_valid = {
+				desc = hunt.1001.a.flavor_1
+				desc = hunt.1001.a.flavor_2
+				desc = hunt.1001.a.flavor_3
+				desc = hunt.1001.a.flavor_4
+			}
+		}
+		trigger = { this = scope:host }
+		if = {
+			limit = {
+				is_landless_adventurer = yes
+			}
+			add_prestige = miniscule_prestige_gain
+		}
+		else = {
+			add_prestige = minor_prestige_gain
+		}
+		hunt_activity_method_effect = { STORY = lair }
+		hunt_activity_success_change_effect = { CHANGE = increase_medium }
+		custom_tooltip = hunt.1001.a.tt
+		add_character_flag = {
+			flag = dangerous_road
+			months = 3
+		}
+		stress_impact = {
+			patient = minor_stress_impact_gain
+			craven = minor_stress_impact_gain
+			lazy = minor_stress_impact_gain
+			content = minor_stress_impact_gain
+			calm = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 40
+				OR = {
+					has_trait = arrogant
+					has_trait = brave
+					has_trait = impatient
+				}
+			}
+		}
+	}
+
+	option = { # Guest acknowledgement
+		name = hunt.1001.d
+		trigger = {
+			NOT = { this = scope:host }
+		}
+	}
+
+	after = {
+		if = {
+			limit = { this = scope:host }
+			scope:activity = {
+				every_attending_character = { trigger_event = gh_hunt.1001 }
+			}
+		}
+	}
+}
+
+# Lair success
+gh_hunt.1003 = {
+	type = activity_event
+	title = gh_hunt.1001.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:activity = {
+						OR = {
+							GH_hunt_activity_almas_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_giant_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_gaunt_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_urmahlullu_trigger = { VAR = var:animal_type }
+						}
+					}
+				}
+				desc = gh_hunt.1003.humanoid
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = {
+						OR = {
+							GH_hunt_activity_dire_mosquito_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_giant_bee_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_giant_spider_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_bhramar_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_myrmeke_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_false_hydra_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_ugkilrrrmag_trigger = { VAR = var:animal_type }
+						}
+					}
+				}
+				desc = gh_hunt.1003.arthropod
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = {
+						OR = {
+							GH_hunt_activity_ukhinbooum_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_ubir_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_adze_trigger = { VAR = var:animal_type }
+						}
+					}
+				}
+				desc = gh_hunt.1003.gross_insect
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = {
+						OR = {
+							GH_hunt_activity_dire_stag_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_lymrill_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_crocotta_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_apep-ibizan_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_kursha_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_owlbear_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_karkadann_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_armazli_rhinoceros_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_gajara_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_manticore_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_chimera_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_hieracosphinx_trigger = { VAR = var:animal_type }
+						}
+					}
+				}
+				desc = gh_hunt.1003.beast
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = {
+						OR = {
+							GH_hunt_activity_spirit_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_banshee_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_cor_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_djinn_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_shade_trigger = { VAR = var:animal_type }
+						}
+					}
+				}
+				desc = gh_hunt.1003.spirit
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = {
+						OR = {
+							GH_hunt_activity_rock_giant_trigger = { VAR = var:animal_type }
+						}
+					}
+				}
+				desc = gh_hunt.1003.rock_giant
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = {
+						OR = {
+							GH_hunt_activity_griffon_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_cockatrice_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_zilant_trigger = { VAR = var:animal_type }
+						}
+					}
+				}
+				desc = gh_hunt.1003.flying
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = {
+						OR = {
+							GH_hunt_activity_dreadleech_trigger = { VAR = var:animal_type }
+						}
+					}
+				}
+				desc = gh_hunt.1003.worm
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = {
+						OR = {
+							GH_hunt_activity_naga_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_coatl_trigger = { VAR = var:animal_type }
+						}
+					}
+				}
+				desc = gh_hunt.1003.snake
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = {
+						OR = {
+							GH_hunt_activity_doyarchu_trigger = { VAR = var:animal_type }
+						}
+					}
+				}
+				desc = gh_hunt.1003.swamp
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = {
+						OR = {
+							GH_hunt_activity_great_rahksasa_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_running_raptor_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_roaring_lizard_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_akapura_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_tarasque_trigger = { VAR = var:animal_type }
+						}
+					}
+				}
+				desc = gh_hunt.1003.giant_reptile
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = {
+						OR = {
+							GH_hunt_activity_living_blizzard_trigger = { VAR = var:animal_type }
+							GH_hunt_activity_whisperwind_trigger = { VAR = var:animal_type }
+						}
+					}
+				}
+				desc = gh_hunt.1003.elemental
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = {
+						OR = {
+							GH_hunt_activity_wyrm_trigger = { VAR = var:animal_type }
+						}
+					}
+				}
+				desc = gh_hunt.1003.draconic
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = {
+						GH_hunt_activity_lymrill_trigger = { VAR = var:animal_type }
+					}
+				}
+				desc = gh_hunt.1003.lymrill
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = {
+						GH_hunt_activity_kursha_trigger = { VAR = var:animal_type }
+					}
+				}
+				desc = gh_hunt.1003.kursha
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = {
+						GH_hunt_activity_spriggan_trigger = { VAR = var:animal_type }
+					}
+				}
+				desc = gh_hunt.1003.spriggan
+			}
+			triggered_desc = {
+				trigger = {
+					scope:activity = { GH_hunt_activity_ground_dweller_trigger = { VAR = var:animal_type } }
+				}
+				desc = gh_hunt.1003.ground_dweller
+			}
+			desc = gh_hunt.1003.generic
+		}
+
+	}
+	theme = hunt_activity
+	override_background = { reference = wilderness_activity }
+	left_portrait = {
+		character = scope:host
+		triggered_animation = {
+			trigger = {
+				can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = scope:host }
+			}
+			animation = throne_room_two_handed_passive_1
+		}
+		triggered_animation = {
+			trigger = {
+				NOT = {
+					can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = scope:host }
+				}
+			}
+			animation = shock
+		}
+	}
+	right_portrait = {
+		trigger = { exists = scope:hunt_participant }
+		character = scope:hunt_participant
+		triggered_animation = {
+			trigger = {
+				can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = scope:host }
+			}
+			animation = marshal
+		}
+		triggered_animation = {
+			trigger = {
+				NOT = {
+					can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = scope:host }
+				}
+			}
+			animation = admiration
+		}
+	}
+	lower_right_portrait = {
+		trigger = {
+			exists = scope:intentee
+			NOT = { scope:hunt_participant ?= scope:intentee }
+		}
+		character = scope:intentee
+	}
+	cooldown = { weeks = 1 }
+
+	widget = {
+		gui = "event_window_widget_activity_intent"
+		container = "custom_widgets_container"
+	}
+
+	trigger = {
+		hunt_story_trigger = { STORY = lair }
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = { add = involved_activity.var:hunt_success_chance }
+	}
+
+	immediate = {
+		play_sound_effect = "event:/DLC/EP2/SFX/Events/Grand_Activities/Hunts/ConstructionKits/ep2_event_grand_hunt_ck_beast_roar"
+		scope:activity = {
+			set_variable = {
+				name = hunt_success
+				value = flag:yes
+			}
+			if = {
+				limit = { exists = var:tame_animal_type } # to stop errors
+				save_scope_as = small_local_game
+			}
+		}
+		scope:activity = {
+			random_attending_character = {
+				limit = {
+					NOT = { this = scope:host }
+					can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = scope:host }
+				}
+				save_scope_as = hunt_participant
+			}
+		}
+		save_scope_as = hunt_ending
+		hunt_outcome_scope_effect = yes
+		hunt_all_attendee_xp_effect = { CHANGE = 2 RANDOM = 1 } # Guest XP gain for success
+		if = {
+			limit = { hunt_murder_target_trigger = yes }
+			hidden_effect = { hunt_save_murder_target_effect = yes }
+		}
+	}
+
+	option = { # ONE SHOT, ONE OPPURTUNITY
+		name = hunt.1003.a
+		flavor = hunt.1003.a.flavor
+		trigger = {
+			can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = scope:host }
+			NOR = { # Redo these to better fit the unique monsters with gumption
+				GH_hunt_activity_pig_trigger = { VAR = var:animal_type }
+				GH_hunt_activity_buffalo_trigger = { VAR = var:animal_type }
+			}
+		}		
+		# Duel
+		hunt_animal_bow_kill_effect = { DEATH = no VAR = scope:activity.var:animal_type }
+		# Opinion
+		hunt_dharmic_pacificism_effect = yes
+		# Stress
+		hunt_humble_hunter_stress_effect = yes
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_boldness = 0.5
+				ai_energy = 0.5
+				ai_greed = 0.5
+			}
+		}
+	}
+
+	option = { # Kill it solo
+		name = hunt.1003.b
+		flavor = hunt.1003.b.flavor
+		trigger = {
+			can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = scope:host }
+		}		
+		# Duel
+		hunt_animal_melee_kill_effect = { DEATH = yes VAR = scope:activity.var:animal_type }
+		# Opinion
+		hunt_dharmic_pacificism_effect = yes
+		# Stress
+		hunt_humble_hunter_stress_effect = yes
+		if = {
+			limit = { is_alive = yes }
+			stress_impact = {
+				craven = minor_stress_impact_gain
+				arrogant = minor_stress_impact_loss
+				ambitious = minor_stress_impact_loss
+			}
+		}
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_boldness = 0.5
+				ai_energy = 0.5
+				ai_greed = 0.5
+			}
+		}
+	}
+
+	option = { # Give shot
+		name = hunt.1003.c
+		trigger = {
+			exists = scope:pertinent
+			NOT = { this = scope:pertinent }
+			NAND = {
+				has_activity_intent = murder_attendee_intent
+				intent_target = scope:pertinent
+			}
+			NOR = {
+				GH_hunt_activity_pig_trigger = { VAR = var:animal_type }
+				GH_hunt_activity_buffalo_trigger = { VAR = var:animal_type }
+			}
+		}
+		flavor = hunt.1003.a.flavor	
+		scope:pertinent = {
+			# Opinion/intent progress
+			hunt_animal_slayer_bow_opinion_effect = { VAR = scope:activity.var:animal_type }
+			# Kill outcome, prestige, injuries, etc.
+			hunt_animal_bow_kill_effect = { DEATH = no VAR = scope:activity.var:animal_type }
+			# Stress
+			hunt_dharmic_pacificism_stress_effect = yes
+		}
+		scope:activity = {
+			set_variable = {
+				name = hunt_credit_taker
+				value = scope:pertinent
+			}
+		}
+		# Opinion and Stress for Dharmic Pacificism
+		hunt_dharmic_pacificism_effect = yes
+		# Stress
+		hunt_jealous_hunter_stress_effect = yes
+		ai_chance = {
+			base = 50
+			opinion_modifier = {
+				opinion_target = scope:pertinent
+				multiplier = 0.25
+			}
+			modifier = {
+				factor = 0.25
+				has_activity_intent = murder_attendee_intent
+				intent_target = scope:pertinent
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					has_activity_intent = woo_attendee_intent
+					has_activity_intent = befriend_attendee_intent
+				}
+				intent_target = {
+					this = scope:pertinent
+					hunt_dharmic_pacificist_trigger = no
+				}
+			}
+			ai_value_modifier = {
+				ai_boldness = 0.5
+				ai_energy = 0.5
+				ai_greed = 0.5
+			}
+		}
+	}
+
+	option = { #Murder attempt
+		name = hunt.1003.i
+		trigger = {
+			exists = scope:murder_target
+			NOR = {
+				scope:activity.var:animal_type = flag:fox
+				scope:activity.var:animal_type = flag:hare
+			}
+			OR = {
+				can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = scope:host }
+				AND = {
+					exists = scope:accomplice
+					scope:accomplice = {
+						can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = scope:host }
+					}
+				}
+			}
+		}
+		flavor = hunt.1003.i.flavor
+		add_internal_flag = special
+		save_scope_as = animal_slayer
+		save_scope_as = group_murder
+		set_variable = {
+			name = hunt_murder_attempt
+			value = scope:murder_target
+		}
+		hunt_increment_murder_accident_attempt = yes #So it doesn't get silly, we track attempts and make chance to succeed lower for each recent one
+		# Kill outcome, prestige, injuries, etc.
+		hunt_all_attendee_xp_effect = { CHANGE = 1 RANDOM = 1 }
+		scope:murder_target = {
+			save_scope_as = injury_target
+			hunt_wound_select_effect = yes
+		}
+		save_scope_as = group_kill
+		# Outcome
+		duel = {
+			skills = { intrigue prowess }
+			target = scope:murder_target
+			10 = { # Animal is slain
+				desc = hunt_kill_murder_missed
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -0.5
+				}
+				trigger_event = {
+					id = hunt.1008
+					days = 1
+				}
+				save_scope_as = group_success
+				show_as_tooltip = {
+					every_in_list = {
+						list = animal_slayers
+						custom = hunt_every_hunter_tt
+						add_prestige = hunt_prestige_melee_group_value
+					}
+				}
+			}
+			10 = { # ...but target is injured
+				desc = hunt_kill_murder_injured
+				trigger = {
+					NOT = {
+						scope:murder_target = {
+							has_trait_rank = {
+								trait = wounded
+								rank = 3
+							}
+						}
+					}
+				}
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 0.5
+				}
+				modifier = { add = hunt_melee_kill_prowess_value }
+				modifier = { add = hunt_melee_danger_value }
+				custom_tooltip = hunt_target_attendee_injured_tt
+				hidden_effect = {
+					random_list = {
+						50 = {
+							modifier = { add = root.intrigue }						
+							trigger_event = {
+								id = hunt.1006
+								days = 1
+							}
+						}
+						50 = {
+							modifier = { add = scope:murder_target.intrigue }
+							trigger_event = {
+								id = hunt.1007
+								days = 1
+							}
+						}					
+					}
+				}
+				save_scope_as = group_failure
+				show_as_tooltip = {
+					every_in_list = {
+						list = animal_slayers
+						custom = hunt_every_hunter_tt
+						add_prestige = hunt_prestige_melee_wound_group_value
+					}
+				}
+				custom_tooltip = hunt_murder_involvement_discovered_tt
+			}
+			10 = { # ...but target is killed
+				desc = hunt_kill_murder_killed
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 0.5
+				}
+				modifier = { add = hunt_melee_kill_prowess_value }
+				modifier = {
+					OR = {
+						has_trait = one_legged
+						age >= 50
+						health < fine_health
+						prowess < mediocre_skill_rating
+					}
+					factor = 0.5
+				}
+				save_scope_as = group_critical
+				custom_tooltip = hunt_target_attendee_killed_tt
+				trigger_event = {
+					id = hunt.1005
+					days = 1
+				}
+			}
+		}
+		# Chance for no pelt reward
+		show_as_tooltip = { hunt_chance_for_no_pelt_effect = yes } # Chance for no pelt reward 
+		# Opinion and Stress for Dharmic Pacificism
+		hunt_dharmic_pacificism_effect = yes
+		scope:activity = {
+			every_attending_character = {
+				limit = { is_ai = no }
+				trigger_event = hunt.1202
+			}
+		}
+		# Stress
+		stress_impact = {
+			ambitious = miniscule_stress_impact_gain
+			arrogant = miniscule_stress_impact_gain
+			greedy = miniscule_stress_impact_gain
+		}
+		ai_chance = {
+			base = 25
+			ai_value_modifier = {
+				ai_boldness = -1
+				ai_energy = -1
+				ai_greed = -1
+				ai_compassion = 0.5
+				ai_rationality = 0.5
+			}
+		}
+	}
+
+	option = { #Group kill
+		name = hunt.1003.e
+		trigger = {
+			NOT = { has_trait = craven }
+		}
+		flavor = hunt.1003.e.flavor
+		save_scope_as = animal_slayer
+		if = {
+			limit = {
+				can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = scope:host }
+			}
+			add_internal_flag = dangerous
+		}
+		hunt_chance_for_no_pelt_effect = yes # Chance for no pelt reward
+		# Kill outcome, prestige, injuries, etc.
+		hunt_animal_melee_kill_group_effect = { DEATH = yes VAR = scope:activity.var:animal_type }
+		# Opinion and Stress for Dharmic Pacificism
+		hunt_dharmic_pacificism_effect = yes
+		# Stress
+		stress_impact = {
+			ambitious = miniscule_stress_impact_gain
+			arrogant = miniscule_stress_impact_gain
+			greedy = miniscule_stress_impact_gain
+		}
+		ai_chance = {
+			base = 25
+			ai_value_modifier = {
+				ai_boldness = -1
+				ai_energy = -1
+				ai_greed = -1
+				ai_compassion = 0.5
+				ai_rationality = 0.5
+			}
+		}
+	}
+
+	option = { #Kill it!
+		name = hunt.1003.h
+		flavor = hunt.1003.h.flavor
+		trigger = { has_trait = craven }
+		save_scope_as = animal_slayer
+		# Penalties for not living up to role
+		if = {
+			limit = {
+				can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = scope:host }
+			}
+			add_prestige = minor_prestige_loss
+			stress_impact = {
+				brave = miniscule_stress_impact_gain
+				lifestyle_hunter = minor_stress_impact_gain
+			}
+		}
+		# Exclude character from kill risks/rewards
+		add_character_flag = {
+			flag = not_slaying
+			weeks = 1
+		}
+		save_scope_as = group_craven
+		# Chance for no pelt reward
+		hunt_chance_for_no_pelt_effect = yes
+		# Kill outcome, prestige, injuries, etc.
+		hunt_animal_melee_kill_group_effect = { DEATH = yes VAR = scope:activity.var:animal_type }
+		# Opinion and Stress for Dharmic Pacificism
+		hunt_dharmic_pacificism_effect = yes
+		
+		scope:activity = {
+			every_attending_character = {
+				limit = { is_ai = no }
+				trigger_event = hunt.1202
+			}
+		}
+		ai_chance = {
+			base = 25
+			ai_value_modifier = {
+				ai_boldness = -1
+				ai_energy = -1
+				ai_greed = -0.5
+				ai_compassion = -1
+			}
+		}
+	}
+}
+
+# Lair failure
+gh_hunt.1004 = {
+	type = activity_event
+	title = gh_hunt.1001.t
+	desc = {
+		first_valid = {
+			desc = gh_hunt.1004.desc
+			triggered_desc = {
+				trigger = { exists = scope:wounded_guest }
+				desc = hunt.1004.wounded
+			}
+			triggered_desc = {
+				trigger = { exists = scope:wounded_host }
+				desc = hunt.1004.wounded_host
+			}
+		}
+	}
+	theme = hunt_activity
+	override_background = { reference = wilderness_activity }
+	left_portrait = {
+		character = scope:host
+		animation = disapproval
+	}
+	right_portrait = {
+		character = scope:hunt_participant
+		animation = stress
+	}
+	center_portrait = {
+		character = root
+		animation = worry
+		trigger = {
+			NOR = {
+				scope:host ?= this
+				scope:hunt_participant ?= this
+			}
+		}
+	}
+	cooldown = { weeks = 1 }
+
+	trigger = {
+		hunt_story_trigger = { STORY = lair }
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			add = {
+				value = 100
+				subtract = involved_activity.var:hunt_success_chance
+			}
+		}
+	}
+
+	immediate = {
+		play_sound_effect = "event:/DLC/EP2/SFX/Events/Grand_Activities/Hunts/ConstructionKits/ep2_event_grand_hunt_ck_dogs_bark"
+		if = {
+			limit = { this = scope:host }
+			save_scope_as = hunt_ending
+			scope:activity = {
+				set_variable = {
+					name = hunt_success
+					value = flag:no
+				}
+			}
+			if = {
+				limit = { exists = scope:activity.var:accident_target }
+				if = {
+					limit = { scope:activity.var:accident_target = scope:host }
+					scope:activity.var:accident_target = { save_scope_as = wounded_host }
+				}
+				else = {
+					scope:activity.var:accident_target = { save_scope_as = wounded_guest }
+				}
+			}
+			if = {
+				limit = { exists = scope:activity.var:participant_to_use }
+				scope:activity.var:participant_to_use = { save_scope_as = hunt_participant }
+			}
+			else = {
+				hunt_activity_random_subordinate_participant_effect = {
+					ARCHETYPE = hunter
+					COMBATANT = yes
+					SCOPE = hunt_participant
+				}
+			}
+			hunt_all_attendee_xp_effect = { CHANGE = 1 RANDOM = 1 } # Guest XP gain for success
+		}
+		custom_tooltip = hunt_fails_tt
+	}
+
+	option = { #Drat!
+		name = hunt.1004.a
+		ai_chance = {
+			base = 25
+		}
+	}
+
+	option = { #You slowed us down!
+		name = hunt.1004.b
+		trigger = {
+			this = scope:host
+			exists = scope:wounded_guest
+		}
+		reverse_add_opinion = {
+			target = scope:wounded_guest			
+			modifier = insulted_opinion
+			opinion = -10
+		}
+		stress_impact = {
+			wrathful = minor_stress_impact_loss
+			arrogant = minor_stress_impact_loss
+			ambitious = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 25
+			modifier = {
+				factor = 0.5
+				exists = intent_target
+				OR = {
+					has_activity_intent = woo_attendee_intent
+					has_activity_intent = befriend_attendee_intent
+				}
+				intent_target = scope:wounded_guest
+			}
+			ai_value_modifier = {
+				ai_honor = -0.5
+				ai_compassion = -0.5
+				ai_boldness = 1
+			}
+		}
+	}
+
+	after = {
+		if = {
+			limit = {
+				this = scope:host
+			}
+			scope:activity = {
+				remove_variable = participant_to_use
+				every_attending_character = {
+					limit = {
+						is_ai = no
+						NOT = { this = scope:host }
+					}
+					trigger_event = hunt.1004
+				}
+			}
+			remove_character_flag = dangerous_road
+		}
+	}
+}
+
+## SIGHTING EVENTS 9000+
+
+
+gh_hunt.9520 = { # Monster Sighting
+	type = character_event
+	content_source = dlc_gh
+	title = gh_hunt.9520.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = court_position:master_of_hunt_court_position
+					scope:sighting_character = court_position:master_of_hunt_court_position
+				}
+				desc = hunt.2500.opening_master
+			}
+			triggered_desc = {
+				trigger = {
+					scope:sighting_character = { has_trait = lifestyle_hunter }
+				}
+				desc = hunt.2500.opening_hunter
+			}
+			desc = hunt.2500.opening
+		}
+		desc = gh_hunt.9520.desc
+	}
+	theme = hunt_activity
+	override_background = { reference = relaxing_room }
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:sighting_character
+		animation = hunting_knife_start
+	}
+
+	trigger = {
+		# Must be available, and a hunter/employ one
+		hunt_sighting_event_trigger = yes
+		# No extant Dangerous sightings
+		NOR = {
+			any_sub_realm_county = { has_county_modifier = hunt_sighting_dangerous_modifier }
+			any_sub_realm_county = { has_county_modifier = hunt_sighting_monster_modifier }
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		hunt_activity_lifestyle_modifier = { TRACK = hunter } # Lifestyle affects frequency
+		hunt_activity_realm_size_modifier = yes
+	}
+
+	immediate = {
+		hunt_activity_sighting_master_effect = { TYPE = hunter }
+		random_sub_realm_county = {
+			limit = { hunt_activity_recent_hunt_sighting_trigger = no }
+			weight = {
+				base = 1
+				hunt_activity_sighting_county_modifier = yes
+			}
+			random_county_province = {
+				weight = {
+					base = 1
+					hunt_activity_sighting_terrain_modifier = yes
+					hunt_activity_sighting_building_modifier = { PROVINCE = this }
+					hunt_activity_game_building_modifier = { PROVINCE = this }
+				}
+				save_scope_as = sighting_province
+			}
+			save_scope_as = sighting_county
+			GH_hunt_activity_monstrous_game_effect = { PROVINCE = scope:sighting_province }
+			# Create new sighting
+			hunt_create_sighting_effect = {
+				TYPE = monster
+				ANIMAL = var:animal_type
+				OWNER = root
+			}
+		}
+	}
+
+	option = { # Interesting
+		name = hunt.2500.a
+		ai_chance = {
+			base = 25
+		}
+	}
+
+	option = { # Bother me not
+		name = hunt.2500.b
+		add_character_flag = disabled_hunt_sightings_flag
+		custom_tooltip = hunt.2000.b.tt
+		stress_impact = {
+			lifestyle_hunter = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}

@@ -1,0 +1,4093 @@
+﻿#scripted_trigger yearly_2000_foreign_traveler_trigger = {
+#	is_adult = yes
+#	NOR = {
+#		faith.religion = root.faith.religion
+#		has_same_culture_group_as = root
+#		has_trait = zealous
+#		has_trait = arrogant
+#	}
+#}
+#
+#scripted_trigger yearly_2000_foreign_ruler_for_creation_trigger = {
+#	in_diplomatic_range = root
+#	NOR = {
+#		faith.religion = root.faith.religion
+#		has_same_culture_group_as = root
+#	}
+#}
+#
+#scripted_effect yearly_2000_add_courtier_effect = {
+#	save_scope_as = new_courtier
+#	hidden_effect = { root = { add_courtier = scope:new_courtier } }
+#	custom_tooltip = yearly_2000_add_courtier_effect.tt
+#	add_opinion = {
+#		target = root
+#		modifier = grateful_opinion
+#		opinion = $OPINION$
+#	}
+#}
+
+#scripted_effect pick_random_artifact_weapon = {
+#	random_list = {
+#		0 = {	# Fine Lance
+#			trigger = {
+#				NOT = { has_character_flag = already_picked_artifact_20 }
+#			}
+#			compare_modifier = {
+#				value = artifact_market_chance_level_1 
+#			}
+#		}
+#		0 = {	# Chain Mail
+#			trigger = {
+#				NOT = { has_character_flag = already_picked_artifact_28 }
+#			}
+#			compare_modifier = {
+#				value = artifact_market_chance_level_1
+#			}
+#		}
+#		0 = {	# A Response to The Fraternity of Magi
+#			trigger = {
+#				NOT = { has_character_flag = already_picked_artifact_fraternityofmagi }
+#			}
+#			compare_modifier = {
+#				value = artifact_market_chance_level_1
+#			}
+#		}
+#		0 = {	# Aversarian Cooking Informational
+#			trigger = {
+#				NOT = { has_character_flag = already_picked_artifact_aversariancookinginformational }
+#			}
+#			compare_modifier = {
+#				value = artifact_market_chance_level_1
+#			}
+#		}
+#		0 = {	# Marchers What do WE Know
+#			trigger = {
+#				NOT = { has_character_flag = already_picked_artifact_marcherswhatdoweknow }
+#			}
+#			compare_modifier = {
+#				value = artifact_market_chance_level_1
+#			}
+#		}
+#		0 = {	# The Mighty Magi and the Buxom Maiden
+#			trigger = {
+#				NOT = { has_character_flag = already_picked_artifact_mightmagibuxommaiden }
+#			}
+#			compare_modifier = {
+#				value = artifact_market_chance_level_1
+#			}
+#		}
+#		0 = {	# Fifty Shades of Blood
+#			trigger = {
+#				NOT = { has_character_flag = already_picked_artifact_fiftyshades }
+#			}
+#			compare_modifier = {
+#				value = artifact_market_chance_level_1
+#			}
+#		}
+#		0 = {	# The Sound of Air
+#			trigger = {
+#				NOT = { has_character_flag = already_picked_artifact_nameofthewindknockoff }
+#			}
+#			compare_modifier = {
+#				value = artifact_market_chance_level_1
+#			}
+#		}
+#		0 = {	# A Tragedy in Oejeynica
+#			trigger = {
+#				NOT = { has_character_flag = already_picked_artifact_tragedyinoejeynica }
+#			}
+#			compare_modifier = {
+#				value = artifact_market_chance_level_1
+#			}
+#		}
+#		0 = {	# The Chivalric Code
+#			trigger = {
+#				NOT = { has_character_flag = already_picked_artifact_chivalriccode }
+#			}
+#			compare_modifier = {
+#				value = artifact_market_chance_level_1
+#			}
+#		}
+#		0 = {	# Love and Death in Asiupoli
+#			trigger = {
+#				NOT = { has_character_flag = already_picked_artifact_loveanddeathinasiupoli }
+#			}
+#			compare_modifier = {
+#				value = artifact_market_chance_level_1
+#			}
+#		}
+#		0 = {	# Silas Stavro - Alive or Dead!?
+#			trigger = {
+#				NOT = { has_character_flag = already_picked_artifact_silastavroaliveordead }
+#			}
+#			compare_modifier = {
+#				value = artifact_market_chance_level_1
+#			}
+#		}
+#		0 = {	# How to Read a Book
+#			trigger = {
+#				NOT = { has_character_flag = already_picked_artifact_howtoreadabook }
+#			}
+#			compare_modifier = {
+#				value = artifact_market_chance_level_1
+#			}
+#		}
+#		0 = {	# On Living a Pure Life - Fifth Edition
+#			trigger = {
+#				NOT = { has_character_flag = already_picked_artifact_purelifefifth }
+#			}
+#			compare_modifier = {
+#				value = artifact_market_chance_level_1
+#			}
+#		}
+#		0 = {	# On Earning a Pure Body - Fifth Edition
+#			trigger = {
+#				NOT = { has_character_flag = already_picked_artifact_purebodyfifth }
+#			}
+#			compare_modifier = {
+#				value = artifact_market_chance_level_1
+#			}
+#		}
+#		0 = {	# On Creating a Pure Mind - Fifth Edition
+#			trigger = {
+#				NOT = { has_character_flag = already_picked_artifact_puremindfifth }
+#			}
+#			compare_modifier = {
+#				value = artifact_market_chance_level_1
+#			}
+#		}
+#		0 = {	# Rending the Chains by Saint Calysto
+#			trigger = {
+#				NOT = { has_character_flag = already_picked_artifact_rendingthechains }
+#			}
+#			compare_modifier = {
+#				value = artifact_market_chance_level_1
+#			}
+#		}
+#		0 = {	# Skull of Pridni the Younger
+#			trigger = {
+#				NOT = { has_character_flag = already_picked_artifact_skullofpridni }
+#				is_unique_artifact_trigger = { ARTIFACT_NAME = artifact_skullofpridni }
+#			}
+#			compare_modifier = {
+#				value = artifact_market_chance_level_1
+#			}
+#
+#		}
+#		0 = {	# Skull of Duvaken
+#			trigger = {
+#				NOT = { has_character_flag = already_picked_artifact_skullofduvaken }
+#				is_unique_artifact_trigger = { ARTIFACT_NAME = artifact_skullofduvaken }
+#			}
+#			compare_modifier = {
+#				value = artifact_market_chance_level_1
+#			}
+#		}
+#		0 = {	# Bone of the Worldeater
+#			trigger = {
+#				NOT = { has_character_flag = already_picked_artifact_boneoftheworldeater }
+#			}
+#			compare_modifier = {
+#				value = artifact_market_chance_level_1
+#			}
+#		}
+#	}
+#}
+
+
+#yearly.2000 = { 
+#	type = character_event
+#	title = yearly.2000.t
+#	desc = yearly.2000.desc
+#
+#	theme = crown
+#	override_background = {
+#		reference = throne_room_west
+#	}
+#	left_portrait = {
+#		character = scope:traveler
+#		animation = beg
+#	}
+#
+#	trigger = {
+#		OR = {
+#			any_pool_character = {
+#				province = root.capital_province
+#				yearly_2000_foreign_traveler_trigger = yes
+#			}
+#			AND = {
+#				is_ai = no #Expensive so only for players
+#				any_independent_ruler = {
+#					yearly_2000_foreign_ruler_for_creation_trigger = yes
+#				}
+#			}
+#		}
+#	}
+#
+#	weight_multiplier = {
+#		base = 1
+#		modifier = {
+#			number_of_knights < max_number_of_knights
+#			add = 1
+#		}
+#	}
+#
+#	immediate = {
+#		hidden_effect = {
+#			random_pool_character = {
+#				province = root.capital_province
+#				limit = { yearly_2000_foreign_traveler_trigger = yes }
+#				weight = {
+#					base = 10
+#
+#					# Likes root
+#					compatibility_modifier = {
+#						compatibility_target = root
+#					}
+#					opinion_modifier = {
+#						opinion_target = root
+#					}
+#					ai_value_modifier = {
+#						ai_compassion = 0.5
+#						ai_zeal = -1
+#					}
+#
+#					# Would be good candidate
+#					modifier = {
+#						guest_knight_candidate_trigger = { HOST = root }
+#						add = {
+#							value = prowess
+#							if = {
+#								limit = { number_of_knights < max_number_of_knights }
+#								multiply = 20
+#							}
+#							else = {
+#								multiply = 10
+#							}
+#						}
+#					}
+#					modifier = {
+#						guest_commander_candidate_trigger = { HOST = root }
+#						add = {
+#							value = martial
+#							multiply = 30
+#						}
+#					}
+#					modifier = {
+#						guest_vassal_candidate_good_traits_trigger = yes
+#						add = 50
+#					}
+#				}
+#				save_scope_as = traveler
+#			}
+#
+#			#No such character? Let's make one
+#			if = {
+#				limit = { NOT = { exists = scope:traveler } }
+#
+#				random_independent_ruler = {
+#					limit = { yearly_2000_foreign_ruler_for_creation_trigger = yes }
+#					save_scope_as = creation_template_ruler
+#				}
+#
+#				random_list = {
+#					3 = {
+#						modifier = {
+#							number_of_knights < max_number_of_knights
+#							add = 10
+#						}
+#						create_character = {
+#							location = root.capital_province
+#							template = pool_repopulate_prowess
+#							culture = scope:creation_template_ruler.culture
+#							faith = scope:creation_template_ruler.faith
+#							save_scope_as = traveler
+#						}
+#					}
+#				}
+#			}
+#		}
+#	}
+#
+#	# They seem good, and get paid to stay
+#	option = {
+#		name = yearly.2000.a
+#		
+#		remove_short_term_gold = medium_gold_value
+#		scope:traveler = {
+#			yearly_2000_add_courtier_effect = { OPINION = 20 }
+#		}
+#
+#		stress_impact = {
+#			paranoid = medium_stress_impact_gain
+#			callous = minor_stress_impact_gain
+#			sadistic = medium_stress_impact_gain
+#		}
+#
+#		hidden_effect = {
+#			if = {
+#				limit = { can_set_relation_potential_friend_trigger = { CHARACTER = scope:traveler } }
+#				set_relation_potential_friend = scope:traveler
+#			}
+#		}
+#
+#		ai_chance = {
+#			base = 100
+#
+#			ai_value_modifier = {
+#				ai_compassion = 1
+#				ai_honor = 1
+#				min = -90
+#			}
+#		}
+#	}
+#	# Pay to find an artefact
+#	option = {
+#		name = yearly.2000.b
+#		
+#		remove_short_term_gold = medium_gold_value
+#		pick_random_artifact_weapon = yes
+#	}
+#	
+#	# I have no room for you
+#	option = {
+#		name = yearly.2000.c
+#
+#		stress_impact = {
+#			compassionate = medium_stress_impact_gain
+#			generous = medium_stress_impact_gain
+#			gregarious = minor_stress_impact_gain
+#		}
+#
+#		ai_chance = {
+#			base = 50
+#			ai_value_modifier = {
+#				ai_compassion = -1
+#				ai_honor = -1
+#			}
+#			modifier = {
+#				faith = {
+#				faith_hostility_level = {
+#					target = scope:traveler.faith
+#					value = faith_astray_level
+#				}
+#			}
+#			add = 50
+#			}
+#			modifier = {
+#				faith = {
+#				faith_hostility_level = {
+#					target = scope:traveler.faith
+#					value = faith_hostile_level
+#				}
+#			}
+#			add = 100
+#			}
+#			modifier = {
+#				faith = {
+#				faith_hostility_level = {
+#					target = scope:traveler.faith
+#					value = faith_evil_level
+#				}
+#			}
+#			add = 200
+#			}
+#		}
+#	}
+#}
+
+namespace = artifacts_flavor
+
+artifacts_flavor.1000 = { #That awful little automata is very creepy by Mayor
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1000.t
+	desc = artifacts_flavor.1000.desc
+	theme = crown
+	left_portrait = {
+		character = root
+		animation = beg
+	}
+	artifact = {
+		target = scope:dancing_automata
+		position = lower_center_portrait
+	}
+	
+	trigger = {
+		any_character_artifact = { has_variable = dancing_automata }
+	}
+
+	immediate = {
+		every_character_artifact = {
+			limit = { has_variable = dancing_automata }
+			save_scope_as = dancing_automata
+		}
+	}
+
+	option = {
+		name = artifacts_flavor.1000.a
+		root = {
+			add_stress = 35
+		}
+		stress_impact = {
+			paranoid = minor_stress_impact_gain
+		}
+	}
+}
+
+artifacts_flavor.1001 = { #opener for studying Malik's Cipher by Mayor
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1001.t
+	desc = artifacts_flavor.1001.desc
+	theme = crown
+	left_portrait = {
+		character = root
+		animation = beg
+	}
+	
+	trigger = {
+			any_character_artifact = {
+				has_artifact_feature = book_topic_masenmalik
+			}
+		}
+	option = {
+		name = artifacts_flavor.1001.a
+		root = {
+			add_stress = 75
+		}
+		duel = {
+			skill = learning
+			value = average_skill_rating
+			
+			10 = { #Exceptional Success, big rewards!
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 2
+				}
+				desc = artifacts_flavor.1001.a.exceptional_success
+				trigger_event = {
+					id = artifacts_flavor.1002
+					days = 45
+				}
+			}
+			25 = { #Success, modest rewards!
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 5
+				}
+				desc = artifacts_flavor.1001.a.success
+				trigger_event = {
+					id = artifacts_flavor.1003
+					days = 35
+				}
+			}
+			25 = { #failure, you gain nothing but stress
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3
+				}
+				desc = artifacts_flavor.1001.a.failure
+				trigger_event = {
+					id = artifacts_flavor.1004
+					days = 45
+				}
+			}
+			5 = { #disaster, the book has tricks and Malik's patron wanted to ensure the unworthy had a nasty surprise waiting for them
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.5
+				}
+				desc = artifacts_flavor.1001.a.dramatic_failure
+				trigger_event = {
+					id = artifacts_flavor.1005
+					days = 45
+				}
+			}
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_boldness = 0.50
+				ai_greed = 0.50
+				ai_energy = 0.50
+			}
+		}
+	}
+	option = {
+		name = artifacts_flavor.1001.b
+		root = {
+			add_stress = 25
+		}
+		stress_impact = {
+			paranoid = minor_stress_impact_gain
+		}
+		duel = {
+			skill = learning
+			value = average_skill_rating
+			1 = { #Exceptional Success, big rewards! but you're being careful so less chance of it 
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1
+				}
+				desc = artifacts_flavor.1001.a.exceptional_success
+				trigger_event = {
+					id = artifacts_flavor.1002
+					days = 45
+				}
+			}
+			25 = { #Success, modest rewards!
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 5
+				}
+				desc = artifacts_flavor.1001.a.success
+				trigger_event = {
+					id = artifacts_flavor.1003
+					days = 35
+				}
+			}
+			25 = { #failure, you gain nothing but stress
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3
+				}
+				desc = artifacts_flavor.1001.a.failure
+				trigger_event = {
+					id = artifacts_flavor.1004
+					days = 45
+				}
+			}
+			1 = { #disaster, the book has tricks and Malik's patron wanted to ensure the unworthy had a nasty surprise waiting for them but you're being careful so less chance of it
+				compare_modifier = {
+					value = scope:duel_value
+				}
+				desc = artifacts_flavor.1001.a.dramatic_failure
+				trigger_event = {
+					id = artifacts_flavor.1005
+					days = 45
+				}
+			}
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_rationality = 0.25
+			}
+		}
+	}
+	option = {
+		name = artifacts_flavor.1001.c
+		add_arcana_lifestyle_xp = 100
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_boldness = -0.50
+				ai_greed = -0.50
+				ai_energy = -0.50
+			}
+		}
+	}
+}
+
+artifacts_flavor.1002 = { #very good result!
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1002.t
+	desc = artifacts_flavor.1002.desc
+	theme = crown
+	left_portrait = {
+		character = root
+		animation = beg
+	}
+	option = {
+		name = artifacts_flavor.1002.a
+		add_arcana_lifestyle_xp = 2000
+		add_learning_skill = 1
+		random_list = {
+			50 = {
+				send_interface_toast = {
+					left_icon = root
+					title = artifacts_flavor.1002.a.exceptionalsuccess
+					add_learning_skill = 1
+					#change_trait_rank = {
+					#	trait = education_dead_magic
+					#	rank = 1
+					#	max = 4
+					#}
+				}
+			}
+			50 = {
+				send_interface_toast = {
+					left_icon = root
+					title = artifacts_flavor.1002.a.exceptionalsuccess
+					#change_trait_rank = {
+					#	trait = education_dead_magic
+					#	rank = 2
+					#	max = 4
+					#}
+				}
+			}
+		}
+	}
+}
+artifacts_flavor.1003 = { #good result!
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1003.t
+	desc = artifacts_flavor.1003.desc
+	theme = crown
+	left_portrait = {
+		character = root
+		animation = beg
+	}
+	option = {
+		name = artifacts_flavor.1003.a
+		add_arcana_lifestyle_xp = 1000
+		random_list = {
+			50 = {
+				send_interface_toast = {
+					left_icon = root
+					title = artifacts_flavor.1003.a.success
+					add_learning_skill = 1
+				}
+			}
+			50 = {
+				send_interface_toast = {
+					left_icon = root
+					title = artifacts_flavor.1003.a.success
+					#change_trait_rank = {
+					#	trait = education_dead_magic
+					#	rank = 1
+					#	max = 4
+					#}
+				}
+			}
+		}
+	}
+}
+artifacts_flavor.1004 = { #neutral failure result
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1004.t
+	desc = artifacts_flavor.1004.desc
+	theme = crown
+	left_portrait = {
+		character = root
+		animation = beg
+	}
+	option = {
+		name = artifacts_flavor.1004.a
+		send_interface_toast = {
+			left_icon = root
+			title = artifacts_flavor.1004.a.failure
+		}
+	}
+}
+artifacts_flavor.1005 = { #very bad result
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1005.t
+	desc = artifacts_flavor.1005.desc
+	theme = crown
+	left_portrait = {
+		character = root
+		animation = beg
+	}
+	option = {
+		name = artifacts_flavor.1005.a
+		duel = {
+			skill = prowess
+			value = average_skill_rating
+			10 = { #You survive unharmed 
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1
+				}
+				desc = artifacts_flavor.1005.a.exceptional_success
+				change_trait_rank = {
+						trait = magicsickness
+						rank = 1
+						max = 3
+					}
+			}
+			25 = { #Success, modest rewards!
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 5
+				}
+				change_trait_rank = {
+						trait = wounded
+						rank = 2
+						max = 3
+					}
+				change_trait_rank = {
+						trait = magicsickness
+						rank = 1
+						max = 3
+					}
+				desc = artifacts_flavor.1005.a.success
+			}
+			25 = { #failure, you gain nothing but stress
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3
+				}
+				change_trait_rank = {
+						trait = wounded
+						rank = 3
+						max = 3
+					}
+				change_trait_rank = {
+						trait = magicsickness
+						rank = 2
+						max = 3
+					}
+				desc = artifacts_flavor.1005.a.failure
+			}
+			1 = { #disaster, the book has tricks and Malik's patron wanted to ensure the unworthy had a nasty surprise waiting for them but you're being careful so less chance of it
+				compare_modifier = {
+					value = scope:duel_value
+				}
+				death = natural
+				desc = artifacts_flavor.1005.a.dramatic_failure
+			}
+		}
+	}
+}
+
+#artifacts_flavor.1006 = { #placeholder to be filled in upon implementation of lich mechanics
+#	type = character_event
+#	title = artifacts_flavor.1006.t
+#	desc = artifacts_flavor.1006.desc
+#	theme = crown
+#}
+#
+#artifacts_flavor.1007 = { #placeholder to be filled in upon implementation of lich mechanics
+#	type = character_event
+#	title = artifacts_flavor.1007.t
+#	desc = artifacts_flavor.1007.desc
+#	theme = crown
+#	
+#}
+
+artifacts_flavor.1008 = { # Event for Using the Black Horn 
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1008.t
+	desc = {
+		first_valid = {
+			random_valid = {
+				triggered_desc = {
+					trigger = { has_trait = craven }
+					desc = artifacts_flavor.1008.desc_craven
+				}
+				triggered_desc = {
+					trigger = { has_trait = brave }
+					desc = artifacts_flavor.1008.desc_brave
+				}
+			}
+			#desc = artifacts_flavor.1008.desc_worry
+		}
+		desc = artifacts_flavor.1008.desc
+	}
+	theme = death
+	override_background = {
+	  		reference = alley_night
+	  	}
+	right_portrait = {
+		character = root
+		animation = fear
+	}
+
+	immediate = {
+		blackhorn_troops_effect = yes
+		add_character_flag = {
+			flag = black_horn_timer
+		}
+	}
+
+	option = {
+		name = artifacts_flavor.1008.a
+
+		trigger_event = {
+			on_action = on_artifact_black_horn_theft
+			years = 1
+		}
+
+		add_stress = medium_stress_gain
+	}
+}
+
+artifacts_flavor.1009 = { # Horn comes for You
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1009.t
+	desc = artifacts_flavor.1009.desc
+	theme = death
+	override_background = {
+	  		reference = corridor_night
+	  	}
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+
+	option = { # Say bye!
+		name = artifacts_flavor.1009.a
+		death_by_blackhorn_effect = yes
+	}
+
+	option = {
+		name = artifacts_flavor.1008.b # Maaybe I'll run away!
+		trigger = {
+			intrigue >= high_skill_rating
+		}
+		custom_tooltip = evaded_fate_tooltip
+		duel = {
+			skill = intrigue
+			value = 15
+
+			50 = {
+				add_stress = massive_stress_gain
+
+				
+				trigger_event = {
+					id = artifacts_flavor.1010
+					years = 5
+				}
+			}
+			50 = {
+				death_by_blackhorn_effect = yes
+				every_character_artifact = {
+					limit = { has_variable = blackhorn }
+					destroy_artifact = this
+				}
+			}
+		}
+	}
+}
+
+artifacts_flavor.1010 = { # You evaded fate once. You will not do so again. 
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1008.t
+	desc = artifacts_flavor.1008.desc
+	theme = death
+	override_background = {
+	  		reference = bedchamber
+	  	}
+	right_portrait = {
+		character = root
+		animation = fear
+	}
+	left_portrait = {
+		character = scope:heir
+		animation = fear
+	}
+
+	immediate = {
+		scope:heir = {
+			if = {
+				limit = {
+					NOT = { has_trait = lunatic }
+				}
+				add_trait = lunatic_1
+			}
+			else = {
+				add_trait = possessed_1
+			}
+		}
+	}
+
+	option = {
+		name = artifacts_flavor.1010.a
+
+		death_by_blackhorn_effect = yes
+	}
+}
+
+artifacts_flavor.1011 = { # For the Neighbors 
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1011.t
+	desc = artifacts_flavor.1011.desc
+	theme = war
+
+	right_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = {
+				OR = {
+					has_trait = craven
+					has_trait = lazy
+					has_trait = compassionate
+				}
+			}
+			animation = fear
+		}
+		triggered_animation = {
+			trigger = {
+				NOR = {
+					has_trait = craven
+					has_trait = lazy
+					has_trait = compassionate
+				}
+			}
+			animation = shock
+		}
+	}
+	left_portrait = {
+		character = scope:black_horn_user
+	}
+
+	option = {
+		name = artifacts_flavor.1011.a
+	}
+	option = {
+		name = artifacts_flavor.1011.b
+	}
+}
+
+artifacts_flavor.1012 = { # For the War Target 
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1012.t
+	desc = artifacts_flavor.1012.desc
+	theme = war
+
+	right_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = {
+				OR = {
+					has_trait = craven
+					has_trait = lazy
+					has_trait = compassionate
+				}
+			}
+			animation = fear
+		}
+		triggered_animation = {
+			trigger = {
+				NOR = {
+					has_trait = craven
+					has_trait = lazy
+					has_trait = compassionate
+				}
+			}
+			animation = shock
+		}
+	}
+	left_portrait = {
+		character = scope:black_horn_user
+	}
+
+	option = {
+		name = artifacts_flavor.1012.a
+	}
+
+	option = {
+		name = artifacts_flavor.1012.b
+	}
+}
+
+artifacts_flavor.1013 = { # The horn gets stolen!
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1013.t
+	desc = artifacts_flavor.1013.desc
+	theme = war
+
+	immediate = {
+		every_character_artifact = {
+			limit = {
+				has_variable = blackhorn
+			}
+			destroy_artifact = this
+		}
+	}
+
+	option = {
+		name = artifacts_flavor.1013.a
+	}
+}
+
+artifacts_flavor.1014 = { # Achromatic Mirror is being creepy again
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1014.t
+	desc = artifacts_flavor.1014.desc
+	theme = secret
+	cooldown = { years = 10 }
+	left_portrait = {
+		character = root
+		animation = paranoia
+	}
+	right_portrait = { # The reflection
+		character = root
+		animation = paranoia
+		hide_info = yes
+	}
+	artifact = {
+		target = scope:achromatic_mirror
+		position = lower_center_portrait
+	}
+	
+	trigger = {
+		is_ai = no
+		is_adult = yes
+		any_character_artifact = {
+			AND = { # Check that the artifact is present and yet unimproved
+				has_variable = achromatic_mirror
+				NOT = { rarity = illustrious }
+			}
+		}
+		NOT = { has_character_modifier = vitrific_grace_modifier }
+	}
+
+	weight_multiplier = {
+		base = 0.5
+		modifier = {
+			add = 0.5
+			OR = {
+				has_trait = lunatic_1
+				has_trait = lunatic_genetic
+			}
+		}
+		modifier = {
+			add = 0.75
+			has_trait = eccentric
+		}
+	}
+
+	immediate = {
+		every_character_artifact = {
+			limit = { has_variable = achromatic_mirror }
+			save_scope_as = achromatic_mirror
+		}
+	}
+
+	option = { # Ignore it
+		name = artifacts_flavor.1014.a
+		custom_tooltip = artifacts_flavor.1014.a.tt
+		stress_impact = {
+			calm = miniscule_stress_impact_loss
+			lazy = miniscule_stress_impact_loss
+			paranoid = medium_stress_impact_gain
+		}
+	}
+
+	option = { # Sell the artifact
+		name = artifacts_flavor.1014.b
+		custom_tooltip = artifacts_flavor.1014.b.tt
+		destroy_artifact = scope:achromatic_mirror
+		add_gold = minor_gold_value
+		stress_impact = {
+			paranoid = minor_stress_impact_loss
+			lazy = minor_stress_impact_loss
+			greedy = minor_stress_impact_gain
+		}
+	}
+
+	option = { # Shatter the artifact
+		name = artifacts_flavor.1014.c
+		custom_tooltip = artifacts_flavor.1014.c.tt
+		destroy_artifact = scope:achromatic_mirror
+		add_piety = miniscule_piety_gain
+		stress_impact = {
+			paranoid = medium_stress_impact_loss
+			zealous = minor_stress_impact_loss
+			wrathful = minor_stress_impact_loss
+			temperate = miniscule_stress_gain
+		}
+	}
+
+	option = { # Try to trick it
+		name = artifacts_flavor.1014.d
+		trigger = {
+			OR = { # Are we REALLY doing this?
+				has_trait = lunatic_1
+				has_trait = lunatic_genetic
+				has_trait = paranoid
+				has_trait = eccentric
+			}
+			NOT = { has_character_flag = fooled_by_the_mirror }
+		}
+		custom_tooltip = artifacts_flavor.1014.d.tt
+		hidden_effect = {
+			duel = {
+				skills = { intrigue prowess }
+				value = very_high_skill_rating
+	
+				70 = { # Nothing happens
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = -1
+					}
+					trigger_event = artifacts_flavor.1015
+				}
+				30 = { # Something happens
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = 1
+					}
+					trigger_event = artifacts_flavor.1016
+				}
+			}
+		}
+	}
+
+	option = { # Try to trick it, again
+		name = artifacts_flavor.1014.e
+		trigger = {
+			OR = { # Are we REALLY doing this?
+				has_trait = lunatic_1
+				has_trait = lunatic_genetic
+				has_trait = paranoid
+				has_trait = eccentric
+			}
+			has_character_flag = fooled_by_the_mirror
+		}
+		custom_tooltip = artifacts_flavor.1014.e.tt
+		hidden_effect = {
+			duel = {
+				skills = { intrigue prowess }
+				value = very_high_skill_rating
+	
+				60 = { # Nothing happens
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = -1
+					}
+					trigger_event = artifacts_flavor.1015
+				}
+				40 = { # Something happens
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = 1
+					}
+					trigger_event = artifacts_flavor.1016
+				}
+			}
+		}
+	}
+}
+
+artifacts_flavor.1015 = { # You do not fool the Achromatic Mirror
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1015.t
+	desc = artifacts_flavor.1015.desc
+	theme = secret
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = { # The reflection
+		character = root
+		animation = worry
+		hide_info = yes
+	}
+	artifact = {
+		target = scope:achromatic_mirror
+		position = lower_center_portrait
+	}
+
+	immediate = { add_character_flag = fooled_by_the_mirror }
+
+	option = { # Dang
+		name = artifacts_flavor.1015.a
+		stress_impact = {
+			cynical = miniscule_stress_impact_gain
+			paranoid = minor_stress_impact_gain
+			eccentric = minor_stress_impact_loss
+		}
+	}
+}
+
+artifacts_flavor.1016 = { # The Achromatic Mirror is fooled
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1016.t
+	desc = artifacts_flavor.1016.desc
+	theme = secret
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+	right_portrait = { # The reflection
+		character = root
+		animation = war_attacker
+		hide_info = yes
+	}
+	artifact = {
+		target = scope:achromatic_mirror
+		position = lower_center_portrait
+	}
+
+	immediate = { remove_character_flag = fooled_by_the_mirror }
+
+	option = { # Upgrade the artifact
+		name = artifacts_flavor.1016.a
+		scope:achromatic_mirror = {
+			set_artifact_rarity = illustrious
+			custom_tooltip = artifacts_flavor.1016.a.tt
+			hidden_effect = { # Assign new effects to the artifact
+				clear_artifact_modifiers = yes
+				add_artifact_modifier = artifact_achromatic_mirror_unlocked_modifier
+			}
+		}
+		stress_impact = {
+			eccentric = medium_stress_impact_loss
+			paranoid = medium_stress_impact_loss
+			ambitious = minor_stress_impact_loss
+		}
+	}
+
+	option = { # Shatter the artifact
+		name = artifacts_flavor.1016.b
+		destroy_artifact = scope:achromatic_mirror
+		if = { # Determine piety change based on character faith
+			limit = { root.faith = { has_doctrine = doctrine_magic_supremacy } }
+			add_piety = medium_piety_loss
+		}
+		else_if = {
+			limit = { root.faith = { has_doctrine = doctrine_magic_honored } }
+			add_piety = minor_piety_loss
+		}
+		else_if = {
+			limit = { root.faith = { has_doctrine = doctrine_magic_shunned } }
+			add_piety = medium_piety_gain
+		}
+		else_if = {
+			limit = { root.faith = { has_doctrine = doctrine_magic_crime } }
+			add_piety = major_piety_gain
+		}
+		else = { add_piety = minor_piety_gain }
+		stress_impact = {
+			paranoid = major_stress_impact_loss
+			zealous = minor_stress_impact_loss
+			wrathful = minor_stress_impact_loss
+		}
+	}
+
+	option = { # Step into the mirror
+		name = artifacts_flavor.1016.c
+		trigger = {
+			OR = { # Are we REALLY doing this?
+				has_trait = lunatic_1
+				has_trait = lunatic_genetic
+				has_trait = paranoid
+				has_trait = eccentric
+			}
+		}
+		custom_tooltip = artifacts_flavor.1016.c.tt
+		hidden_effect = {
+			send_interface_toast = { # Add the relevant modifier
+				title = artifacts_flavor.1016.c.step
+				add_character_modifier = vitrific_grace_modifier
+			}
+		}
+	}
+}
+
+artifacts_flavor.1017 = { # Consopite Effigy murders an agent, schemer side
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1017.t
+	desc = artifacts_flavor.1017.desc
+	theme = murder_scheme
+	right_portrait = {
+		character = scope:agent
+		animation = idle
+	}
+	artifact = {
+		target = scope:consopite_effigy
+		position = lower_center_portrait
+	}
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+	
+	trigger = {
+		scope:target = {
+			any_character_artifact = { has_variable = consopite_effigy }
+			is_available_healthy_adult = yes
+			NOT = { has_character_flag = was_target_in_event_artifacts_flavor.1017 }
+		}
+		scope:scheme = {
+			scheme_type = murder
+			is_scheme_exposed = no
+			any_scheme_agent_character = {
+				NOR = {
+					is_close_family_of = scope:target
+					is_spouse_of = scope:target
+				}
+				highest_held_title_tier < tier_county
+			}	
+		}
+	}
+
+	immediate = {
+		scope:scheme = {
+			random_scheme_agent_character = {
+				limit = {
+					NOR = {
+						is_close_family_of = scope:target
+						is_spouse_of = scope:target
+					}
+					highest_held_title_tier < tier_county
+				}
+				save_scope_as = agent
+				death = { death_reason = death_consopite_effigy }
+			}
+			hidden_effect = {
+				expose_scheme = yes
+				expose_scheme_agent = scope:agent
+				add_scheme_progress = scheme_progress_loss
+			}
+		}
+		scope:target = {
+			every_character_artifact = {
+				limit = { has_variable = consopite_effigy }
+				save_scope_as = consopite_effigy
+			}
+			add_character_flag = was_target_in_event_artifacts_flavor.1017
+			trigger_event = artifacts_flavor.1018
+		}
+	}
+
+	option = {
+		name = artifacts_flavor.1017.a
+		show_as_tooltip = {
+			show_as_tooltip = {
+				scope:scheme = {
+					expose_scheme = yes
+					expose_scheme_agent = scope:agent
+					add_scheme_progress = scheme_progress_loss
+				}
+			}
+		}
+		stress_impact = {
+			paranoid = minor_stress_impact_gain
+			ambitious = miniscule_stress_impact_gain
+			diligent = miniscule_stress_impact_gain
+		}
+	}
+}
+
+artifacts_flavor.1018 = { # Consopite Effigy murders an agent, target side
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1018.t
+	desc = artifacts_flavor.1018.desc
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = paranoia
+	}
+	right_portrait = {
+		character = scope:agent
+		animation = idle
+	}
+	artifact = {
+		target = scope:consopite_effigy
+		position = lower_center_portrait
+	}
+
+	immediate = { show_as_tooltip = { scope:agent = { death = { death_reason = death_consopite_effigy } } } }
+
+	option = {
+		name = artifacts_flavor.1018.a
+		show_as_tooltip = {
+			scope:scheme = {
+				expose_scheme = yes
+				expose_scheme_agent = scope:agent
+				add_scheme_progress = scheme_progress_loss
+			}
+		}
+		stress_impact = {
+			paranoid = minor_stress_impact_gain
+			callous = minor_stress_impact_loss
+			sadistic = minor_stress_impact_loss
+		}
+	}
+}
+
+artifacts_flavor.1019 = { # Defiled Nadir mask user has died
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1019.t
+	desc = {
+		desc = artifacts_flavor.1019.desc.intro
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:recently_dead_owner = { has_education_diplomacy_trigger = yes } }
+				desc = artifacts_flavor.1019.desc.diplomacy
+			}
+			triggered_desc = {
+				trigger = { scope:recently_dead_owner = { has_education_martial_trigger = yes } }
+				desc = artifacts_flavor.1019.desc.martial
+			}
+			triggered_desc = {
+				trigger = { scope:recently_dead_owner = { has_education_stewardship_trigger = yes } }
+				desc = artifacts_flavor.1019.desc.stewardship
+			}
+			triggered_desc = {
+				trigger = { scope:recently_dead_owner = { has_education_intrigue_trigger = yes } }
+				desc = artifacts_flavor.1019.desc.intrigue
+			}
+			triggered_desc = {
+				trigger = { scope:recently_dead_owner = { has_education_learning_trigger = yes } }
+				desc = artifacts_flavor.1019.desc.learning
+			}
+			triggered_desc = {
+				trigger = { scope:recently_dead_owner = { has_education_arcana_trigger = yes } }
+				desc = artifacts_flavor.1019.desc.arcana
+			}
+			desc = artifacts_flavor.1019.desc.fallback
+		}
+		desc = artifacts_flavor.1019.desc.transition
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:defiled_nadir_mask.var:defiled_nadir_progression_counter = 1 }
+				desc = artifacts_flavor.1019.desc.progression_1
+			}
+			triggered_desc = {
+				trigger = { scope:defiled_nadir_mask.var:defiled_nadir_progression_counter = 2 }
+				desc = artifacts_flavor.1019.desc.progression_2
+			}
+			desc = artifacts_flavor.1019.desc.progression_3
+		}
+	}
+	theme = realm
+	right_portrait = {
+		character = scope:recently_dead_owner
+		animation = dead
+	}
+	artifact = {
+		target = scope:defiled_nadir_mask
+		position = lower_center_portrait
+	}
+
+	immediate = {
+		scope:defiled_nadir_mask = {
+			if = {
+				limit = {
+					scope:defiled_nadir_mask = {
+						NOT = {
+							is_target_in_variable_list = {
+								name = boundees
+								target = root
+							}
+						}
+					}
+				}
+				custom_tooltip = artifacts_flavor.1019.tt
+				set_artifact_name = awakened_mask_name_dormant
+			}
+			if = {
+				limit = { var:defiled_nadir_progression_counter = 1 }
+				show_as_tooltip = { set_artifact_rarity = illustrious }
+			}
+			if = {
+				limit = { scope:recently_dead_owner = { has_education_diplomacy_trigger = yes } }
+				custom_tooltip = artifacts_flavor.1019.diplomacy.tt
+			}
+			else_if = {
+				limit = { scope:recently_dead_owner = { has_education_martial_trigger = yes } }
+				custom_tooltip = artifacts_flavor.1019.martial.tt
+			}
+			else_if = {
+				limit = { scope:recently_dead_owner = { has_education_stewardship_trigger = yes } }
+				custom_tooltip = artifacts_flavor.1019.stewardship.tt
+			}
+			else_if = {
+				limit = { scope:recently_dead_owner = { has_education_intrigue_trigger = yes } }
+				custom_tooltip = artifacts_flavor.1019.intrigue.tt
+			}
+			else_if = {
+				limit = { scope:recently_dead_owner = { has_education_learning_trigger = yes } }
+				custom_tooltip = artifacts_flavor.1019.learning.tt
+			}
+			else_if = { # Identical to learning rn
+				limit = { scope:recently_dead_owner = { has_education_arcana_trigger = yes } }
+				custom_tooltip = artifacts_flavor.1019.learning.tt
+			}
+			else = { custom_tooltip = artifacts_flavor.1019.fallback.tt }
+		}
+	}
+
+	option = { # Understandable
+		name = artifacts_flavor.1019.a
+	}
+}
+
+artifacts_flavor.1020 = { # Defiled Nadir mask beckons
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1020.t
+	desc = artifacts_flavor.1020.desc
+	theme = mental_break
+	override_background = { reference = corridor_night }
+	left_portrait = {
+		character = root
+		animation = sick
+	}
+	artifact = {
+		target = scope:defiled_nadir_mask
+		position = lower_center_portrait
+	}
+
+	option = { # What is happening?
+		name = artifacts_flavor.1020.a
+		custom_tooltip = artifacts_flavor.1020.a.tt
+		trigger_event = artifacts_flavor.1021
+	}
+}
+
+scripted_effect artifacts_flavor_1020_submit = { # Chosen to submit to the spirits
+	show_as_tooltip = { destroy_artifact = scope:defiled_nadir_mask }
+	if = {
+		limit = { oltenic_mask_user_religious_trigger = yes }
+		add_piety = massive_piety_loss
+		add_piety_level = -3
+	}
+	else = { add_piety = major_piety_loss }
+	add_arcana_skill = { VALUE = 20 }
+	add_character_modifier = magic_spirithost_modifier
+	scope:defiled_nadir_mask.var:associated_defiled_nadir_story = { end_story = yes }
+	hidden_effect = { destroy_artifact = scope:defiled_nadir_mask }
+}
+
+scripted_effect artifacts_flavor_1020_resist = { # Chosen to resist the spirits
+	scope:spirit = {
+		set_variable = {
+			name = defiled_nadir_round_counter
+			value = 0
+		}
+		set_variable = {
+			name = defiled_nadir_victory_counter
+			value = 0
+		}
+		set_variable = {
+			name = defiled_nadir_loss_counter
+			value = 0
+		}
+	}
+	trigger_event = artifacts_flavor.1022
+	custom_tooltip = artifacts_flavor.1021.b.tt
+}
+
+artifacts_flavor.1021 = { # Awakened Oltenic Mask attempts to take over!
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1021.t
+	desc = artifacts_flavor.1021.desc
+	theme = mental_break
+	override_background = { reference = corridor_night }
+	right_portrait = {
+		character = scope:spirit
+		animation = personality_irrational
+		outfit_tags = { no_clothes defiled_nadir_spirit }
+		hide_info = yes
+	}
+	artifact = {
+		target = scope:defiled_nadir_mask
+		position = lower_center_portrait
+	}
+
+	immediate = {
+		scope:recently_dead_owner = { save_scope_as = copied_character }
+		create_character = { ## GH TODO: Make generic version
+			template = historical_vision_template
+			age = scope:copied_character.age
+			location = root.location
+			save_scope_as = spirit
+		}
+		scope:spirit = {
+			add_character_flag = has_scripted_appearance
+			hidden_effect = { copy_inheritable_appearance_from = scope:recently_dead_owner }
+			set_variable = gh_is_red_shade
+		}
+		random_list = { # Place the resist event option somewhere random
+			10 = {
+				set_variable = {
+					name = resist_event_option
+					value = 1
+				}
+			}
+			10 = {
+				set_variable = {
+					name = resist_event_option
+					value = 2
+				}
+			}
+			10 = {
+				set_variable = {
+					name = resist_event_option
+					value = 3
+				}
+			}
+			10 = {
+				set_variable = {
+					name = resist_event_option
+					value = 4
+				}
+			}
+		}
+	}
+
+	option = { # AI submit option
+		name = artifacts_flavor.1021.a
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.b
+		trigger = {
+			is_ai = no
+			var:resist_event_option = 1
+		}
+		artifacts_flavor_1020_resist = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.b
+		trigger = {
+			is_ai = no
+			var:resist_event_option = 2
+		}
+		artifacts_flavor_1020_resist = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.b
+		trigger = {
+			is_ai = no
+			var:resist_event_option = 3
+		}
+		artifacts_flavor_1020_resist = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.a
+		trigger = { is_ai = no }
+		artifacts_flavor_1020_submit = yes
+	}
+	option = {
+		name = artifacts_flavor.1021.b
+		trigger = {
+			is_ai = no
+			var:resist_event_option = 4
+		}
+		artifacts_flavor_1020_resist = yes
+	}
+
+	after = {
+		remove_variable = resist_event_option
+	}
+}
+
+scripted_effect spirit_duel_effect = {
+	duel = {
+		skills = { $SKILL_1$ $SKILL_2$ }
+		target = scope:copied_character
+		50 = {
+			compare_modifier = {
+				value = scope:duel_value
+				multiplier = 3.5
+				min = -49
+			}
+			scope:spirit = {
+				change_variable = {
+					name = defiled_nadir_victory_counter
+					add = 1
+				}
+				set_variable = {
+					name = defiled_nadir_recent_outcome
+					value = flag:victory
+				}
+			}
+			desc = artifacts_flavor.1022.tt.duel_victory
+			custom_tooltip = artifacts_flavor.1022.tt.victory
+		}
+		50 = {
+			scope:spirit = {
+				set_variable = {
+					name = defiled_nadir_recent_outcome
+					value = flag:draw
+				}
+			}
+			desc = artifacts_flavor.1022.tt.duel_draw
+			custom_tooltip = artifacts_flavor.1022.tt.draw
+		}
+		50 = {
+			compare_modifier = {
+				value = scope:duel_value
+				multiplier = -3.5
+				min = -49
+			}
+			scope:spirit = {
+				change_variable = {
+					name = defiled_nadir_loss_counter
+					add = 1
+				}
+				set_variable = {
+					name = defiled_nadir_recent_outcome
+					value = flag:loss
+				}
+			}
+			desc = artifacts_flavor.1022.tt.duel_loss
+			custom_tooltip = artifacts_flavor.1022.tt.loss
+		}
+	}
+	if = {
+		limit = { scope:spirit.var:defiled_nadir_round_counter = 3 }
+		if = {
+			limit = { scope:spirit = { var:defiled_nadir_victory_counter > var:defiled_nadir_loss_counter } }
+			trigger_event = artifacts_flavor.1023
+		}
+		else = { trigger_event = artifacts_flavor.1024 }
+	}
+	else = { trigger_event = artifacts_flavor.1022 }
+}
+
+artifacts_flavor.1022 = { # You attempt to resist the spirits
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1022.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:spirit.var:defiled_nadir_round_counter = 1 }
+				desc = artifacts_flavor.1022.desc.initial
+			}
+			desc = artifacts_flavor.1022.desc.repeat
+		}
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:copied_character = { has_education_diplomacy_trigger = yes } }
+				desc = artifacts_flavor.1022.desc.diplomacy
+			}
+			triggered_desc = {
+				trigger = { scope:copied_character = { has_education_martial_trigger = yes } }
+				desc = artifacts_flavor.1022.desc.martial
+			}
+			triggered_desc = {
+				trigger = { scope:copied_character = { has_education_stewardship_trigger = yes } }
+				desc = artifacts_flavor.1022.desc.stewardship
+			}
+			triggered_desc = {
+				trigger = { scope:copied_character = { has_education_intrigue_trigger = yes } }
+				desc = artifacts_flavor.1022.desc.intrigue
+			}
+			triggered_desc = {
+				trigger = { scope:copied_character = { has_education_learning_trigger = yes } }
+				desc = artifacts_flavor.1022.desc.learning
+			}
+			triggered_desc = {
+				trigger = { scope:copied_character = { has_education_arcana_trigger = yes } }
+				desc = artifacts_flavor.1022.desc.arcana
+			}
+			desc = artifacts_flavor.1022.desc.fallback
+		}
+		desc = artifacts_flavor.1022.desc.conclusion
+	}
+	theme = mental_break
+	override_background = { reference = corridor_night }
+	right_portrait = {
+		character = scope:challenger_spirit
+		triggered_animation = {
+			trigger = { scope:copied_character = { has_education_diplomacy_trigger = yes } }
+			animation = personality_compassionate
+		}
+		triggered_animation = {
+			trigger = { scope:copied_character = { has_education_martial_trigger = yes } }
+			animation = personality_bold
+		}
+		triggered_animation = {
+			trigger = { scope:copied_character = { has_education_stewardship_trigger = yes } }
+			animation = personality_rational
+		}
+		triggered_animation = {
+			trigger = { scope:copied_character = { has_education_intrigue_trigger = yes } }
+			animation = scheme
+		}
+		triggered_animation = {
+			trigger = { scope:copied_character = { has_education_learning_trigger = yes } }
+			animation = personality_zealous
+		}
+		triggered_animation = {
+			trigger = { scope:copied_character = { has_education_arcana_trigger = yes } }
+			animation = personality_cynical
+		}
+		animation = boredom
+		outfit_tags = { no_clothes defiled_nadir_spirit }
+		hide_info = yes
+	}
+	artifact = {
+		target = scope:defiled_nadir_mask
+		position = lower_center_portrait
+	}
+
+	immediate = {
+		scope:defiled_nadir_mask = {
+			random_in_list = {
+				variable = boundees
+				limit = {
+					is_alive = no
+					NOR = {
+						this = scope:spirit
+						this = scope:copied_character
+					}
+				}
+				remove_from_list = boundees
+				save_scope_as = copied_character
+			}
+		}
+		create_character = { ## GH TODO: Make generic version
+			template = historical_vision_template
+			age = scope:copied_character.age
+			location = root.location
+			save_scope_as = challenger_spirit
+		}
+		scope:challenger_spirit = {
+			add_character_flag = has_scripted_appearance
+			hidden_effect = { copy_inheritable_appearance_from = scope:copied_character }
+			set_variable = gh_is_red_shade
+		}
+		scope:spirit = {
+			change_variable = {
+				name = defiled_nadir_round_counter
+				add = 1
+			}
+		}
+		if = { # We do it here instead of the options themselves to prevent event option highlighting
+			limit = { scope:copied_character = { has_education_diplomacy_trigger = yes } }
+			set_variable = {
+				name = spirit_duel_education_skill
+				value = flag:diplomacy
+			}
+		}
+		else_if = {
+			limit = { scope:copied_character = { has_education_martial_trigger = yes } }
+			set_variable = {
+				name = spirit_duel_education_skill
+				value = flag:martial
+			}
+		}
+		else_if = {
+			limit = { scope:copied_character = { has_education_stewardship_trigger = yes } }
+			set_variable = {
+				name = spirit_duel_education_skill
+				value = flag:stewardship
+			}
+		}
+		else_if = {
+			limit = { scope:copied_character = { has_education_intrigue_trigger = yes } }
+			set_variable = {
+				name = spirit_duel_education_skill
+				value = flag:intrigue
+			}
+		}
+		else_if = {
+			limit = {
+				scope:copied_character = {
+					OR = {
+						has_education_learning_trigger = yes
+						has_education_arcana_trigger = yes
+					}
+			} }
+			set_variable = {
+				name = spirit_duel_education_skill
+				value = flag:learning_arcana
+			}
+		}
+		else = {
+			set_variable = {
+				name = spirit_duel_education_skill
+				value = flag:fallback
+			}
+		}
+		if = { # Show a tooltip announcing the past result
+			limit = { exists = scope:spirit.var:defiled_nadir_recent_outcome }
+			if = {
+				limit = { scope:spirit.var:defiled_nadir_recent_outcome = flag:victory }
+				custom_tooltip = artifacts_flavor.1022.tt.recent_victory
+			}
+			else_if = {
+				limit = { scope:spirit.var:defiled_nadir_recent_outcome = flag:loss }
+				custom_tooltip = artifacts_flavor.1022.tt.recent_loss
+			}
+			else = { custom_tooltip = artifacts_flavor.1022.tt.recent_draw }
+		}
+	}
+
+	option = { # Diplomacy + Martial
+		name = artifacts_flavor.1022.diplomacy.martial
+		trigger = { var:spirit_duel_education_skill = flag:diplomacy }
+		spirit_duel_effect = { SKILL_1 = diplomacy SKILL_2 = martial }
+	}
+
+	option = { # Diplomacy + Intrigue
+		name = artifacts_flavor.1022.diplomacy.intrigue
+		trigger = { var:spirit_duel_education_skill = flag:diplomacy }
+		spirit_duel_effect = { SKILL_1 = diplomacy SKILL_2 = intrigue }
+	}
+
+	option = { # Diplomacy + Learning
+		name = artifacts_flavor.1022.diplomacy.learning
+		trigger = { var:spirit_duel_education_skill = flag:diplomacy }
+		spirit_duel_effect = { SKILL_1 = diplomacy SKILL_2 = learning }
+	}
+
+	option = { # Martial + Diplomacy
+		name = artifacts_flavor.1022.martial.diplomacy
+		trigger = { var:spirit_duel_education_skill = flag:martial }
+		spirit_duel_effect = { SKILL_1 = martial SKILL_2 = diplomacy }
+	}
+
+	option = { # Martial + Stewardship
+		name = artifacts_flavor.1022.martial.stewardship
+		trigger = { var:spirit_duel_education_skill = flag:martial }
+		spirit_duel_effect = { SKILL_1 = martial SKILL_2 = stewardship }
+	}
+
+	option = { # Martial + Intrigue
+		name = artifacts_flavor.1022.martial.intrigue
+		trigger = { var:spirit_duel_education_skill = flag:martial }
+		spirit_duel_effect = { SKILL_1 = martial SKILL_2 = intrigue }
+	}
+
+	option = { # Stewardship + Diplomacy
+		name = artifacts_flavor.1022.stewardship.diplomacy
+		trigger = { var:spirit_duel_education_skill = flag:stewardship }
+		spirit_duel_effect = { SKILL_1 = stewardship SKILL_2 = diplomacy }
+	}
+
+	option = { # Stewardship + Martial
+		name = artifacts_flavor.1022.stewardship.martial
+		trigger = { var:spirit_duel_education_skill = flag:stewardship }
+		spirit_duel_effect = { SKILL_1 = stewardship SKILL_2 = martial }
+	}
+
+	option = { # Stewardship + Learning
+		name = artifacts_flavor.1022.stewardship.learning
+		trigger = { var:spirit_duel_education_skill = flag:stewardship }
+		spirit_duel_effect = { SKILL_1 = stewardship SKILL_2 = learning }
+	}
+
+	option = { # Intrigue + Diplomacy
+		name = artifacts_flavor.1022.intrigue.diplomacy
+		trigger = { var:spirit_duel_education_skill = flag:intrigue }
+		spirit_duel_effect = { SKILL_1 = intrigue SKILL_2 = diplomacy }
+	}
+
+	option = { # Intrigue + Martial
+		name = artifacts_flavor.1022.intrigue.martial
+		trigger = { var:spirit_duel_education_skill = flag:intrigue }
+		spirit_duel_effect = { SKILL_1 = intrigue SKILL_2 = martial }
+	}
+
+	option = { # Intrigue + Learning
+		name = artifacts_flavor.1022.intrigue.learning
+		trigger = { var:spirit_duel_education_skill = flag:intrigue }
+		spirit_duel_effect = { SKILL_1 = intrigue SKILL_2 = learning }
+	}
+
+	option = { # Learning + Diplomacy
+		name = artifacts_flavor.1022.learning.diplomacy
+		trigger = { var:spirit_duel_education_skill = flag:learning_arcana }
+		spirit_duel_effect = { SKILL_1 = learning SKILL_2 = diplomacy }
+	}
+
+	option = { # Learning + Stewardship
+		name = artifacts_flavor.1022.learning.stewardship
+		trigger = { var:spirit_duel_education_skill = flag:learning_arcana }
+		spirit_duel_effect = { SKILL_1 = learning SKILL_2 = stewardship }
+	}
+
+	option = { # Learning + Intrigue
+		name = artifacts_flavor.1022.learning.intrigue
+		trigger = { var:spirit_duel_education_skill = flag:learning_arcana }
+		spirit_duel_effect = { SKILL_1 = learning SKILL_2 = intrigue }
+	}
+
+	option = { # Fallback
+		name = artifacts_flavor.1022.fallback
+		trigger = { var:spirit_duel_education_skill = flag:fallback }
+		spirit_duel_effect = { SKILL_1 = martial SKILL_2 = learning }
+	}
+
+	after = {
+		scope:challenger_spirit = { silent_disappearance_effect = yes }
+	}
+}
+
+artifacts_flavor.1023 = { # Broken Spirits
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1023.t
+	desc = artifacts_flavor.1023.desc
+	theme = mental_break
+	override_background = { reference = corridor_day }
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	artifact = {
+		target = scope:defiled_nadir_mask
+		position = lower_center_portrait
+	}
+
+	immediate = {
+		scope:spirit = { silent_disappearance_effect = yes }
+	}
+
+	option = { # I am me, I am mine
+		name = artifacts_flavor.1023.a
+		show_as_tooltip = { destroy_artifact = scope:defiled_nadir_mask }
+		custom_tooltip = artifacts_flavor.1023.a.tt
+		if = {
+			limit = { scope:defiled_nadir_mask.var:defiled_nadir_diplomacy > 0 }
+			add_diplomacy_skill = scope:defiled_nadir_mask.var:defiled_nadir_diplomacy
+		}
+		if = {
+			limit = { scope:defiled_nadir_mask.var:defiled_nadir_martial > 0 }
+			add_martial_skill = scope:defiled_nadir_mask.var:defiled_nadir_martial
+		}
+		if = {
+			limit = { scope:defiled_nadir_mask.var:defiled_nadir_stewardship > 0 }
+			add_stewardship_skill = scope:defiled_nadir_mask.var:defiled_nadir_stewardship
+		}
+		if = {
+			limit = { scope:defiled_nadir_mask.var:defiled_nadir_intrigue > 0 }
+			add_intrigue_skill = scope:defiled_nadir_mask.var:defiled_nadir_intrigue
+		}
+		if = {
+			limit = { scope:defiled_nadir_mask.var:defiled_nadir_learning > 0 }
+			add_learning_skill = scope:defiled_nadir_mask.var:defiled_nadir_learning
+		}
+		if = {
+			limit = { scope:defiled_nadir_mask.var:defiled_nadir_arcana > 0 }
+			add_arcana_skill = { VALUE = scope:defiled_nadir_mask.var:defiled_nadir_arcana }
+		}
+		set_artifact_rarity_illustrious = yes
+		create_artifact = {
+			name = spiritshard
+			description = spiritshard_desc
+			modifier = artifact_monthly_arcana_lifestyle_xp_4_modifier
+			wealth = scope:wealth
+			quality = scope:quality
+			type = spiritshard
+			visuals = spiritshard
+			decaying = no
+			save_scope_as = newly_created_artifact
+		}
+		hidden_effect_new_object = {
+			scope:newly_created_artifact = {
+				add_artifact_magic_regeneration_modifier_effect = { VALUE = 12 }
+				add_artifact_aspect_modifier_effect = { NAME = ethereal VALUE = 8 }
+			}
+		}
+		if = {
+			limit = { oltenic_mask_user_religious_trigger = yes }
+			add_piety = massive_piety_gain
+		}
+		scope:defiled_nadir_mask.var:associated_defiled_nadir_story = { end_story = yes }
+		hidden_effect = { destroy_artifact = scope:defiled_nadir_mask }
+	}
+}
+
+artifacts_flavor.1024 = { # Broken Vessel
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1024.t
+	desc = artifacts_flavor.1024.desc
+	theme = mental_break
+	override_background = { reference = corridor_night }
+	left_portrait = {
+		character = root
+		animation = grief
+	}
+	artifact = {
+		target = scope:defiled_nadir_mask
+		position = lower_center_portrait
+	}
+
+	immediate = {
+		scope:spirit = { silent_disappearance_effect = yes }
+	}
+
+	option = { # Is there anything left of me?
+		name = artifacts_flavor.1024.a
+		show_as_tooltip = { destroy_artifact = scope:defiled_nadir_mask }
+		add_trait = depressed_1
+		add_character_modifier = magic_broken_vessel_modifier
+		scope:defiled_nadir_mask.var:associated_defiled_nadir_story = { end_story = yes }
+		hidden_effect = { destroy_artifact = scope:defiled_nadir_mask }
+	}
+}
+
+artifacts_flavor.1025 = { # You have been separated from your bound mask momentarily
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1025.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:defiled_nadir_mask.artifact_owner = { this = root } }
+				desc = artifacts_flavor.1025.unequipped.desc
+			}
+			desc = artifacts_flavor.1025.lost.desc
+		}
+		desc = artifacts_flavor.1025.desc
+	}
+	theme = witchcraft
+	left_portrait = {
+		character = scope:root_scope
+		animation = grief
+	}
+	right_portrait = {
+		character = scope:new_artifact_owner
+		animation = personality_bold
+	}
+	artifact = {
+		target = scope:defiled_nadir_mask
+		position = lower_center_portrait
+	}
+
+	immediate = {
+		if = { # For when we own the artifact but do not have it equipped
+			limit = { scope:defiled_nadir_mask.artifact_owner = { this = root } }
+			root = { save_scope_as = root_scope }
+		}
+		else = { scope:defiled_nadir_mask.artifact_owner = { save_scope_as = new_artifact_owner } }
+	}
+
+	option = { # Equip it
+		name = artifacts_flavor.1025.a
+		trigger = { exists = scope:root_scope }
+		hidden_effect = { scope:defiled_nadir_mask = { equip_artifact_to_owner_replace = yes } }
+		custom_tooltip = artifacts_flavor.1025.a.tt
+	}
+
+	option = { # Choose to suffer for some reason
+		name = artifacts_flavor.1025.b
+		trigger = {
+			is_ai = no
+			exists = scope:root_scope
+		}
+		add_character_modifier = magic_defiled_nadir_separation_modifier
+		custom_tooltip = artifacts_flavor.1025.warning.tt
+		trigger_event = {
+			id = artifacts_flavor.1026
+			days = { 360 600 }
+		}
+	}
+
+	option = { # I need it back
+		name = artifacts_flavor.1025.c
+		trigger = { NOT = { exists = scope:root_scope } }
+		if = {
+			limit = { NOT = { has_personal_artifact_claim = scope:defiled_nadir_mask } }
+			add_personal_artifact_claim = scope:defiled_nadir_mask
+		}
+		add_character_modifier = magic_defiled_nadir_separation_modifier
+		custom_tooltip = artifacts_flavor.1025.warning.tt
+		trigger_event = {
+			id = artifacts_flavor.1026
+			days = { 360 600 }
+		}
+	}
+}
+
+artifacts_flavor.1026 = { # You have been separated from your bound mask for too long, or it has been destroyed
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1026.t
+	desc = {
+		desc = artifacts_flavor.1026.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = scope:defiled_nadir_mask } }
+				desc = artifacts_flavor.1026.destroyed.desc
+			}
+			desc = artifacts_flavor.1026.separated.desc
+		}
+	}
+	theme = mental_break
+	override_background = { reference = corridor_night }
+	left_portrait = {
+		character = root
+		animation = sick
+	}
+	artifact = {
+		target = scope:defiled_nadir_mask
+		position = lower_center_portrait
+	}
+	
+	trigger = {
+		has_variable = defiled_nadir_bound_mask
+	}
+
+	immediate = {
+		scope:defiled_nadir_mask ?= {
+			random_in_list = {
+				variable = boundees
+				limit = { this = root }
+				remove_from_list = boundees
+			}
+		}
+		remove_variable = defiled_nadir_bound_mask
+	}
+
+	option = { # How did it come to this?
+		name = artifacts_flavor.1026.a
+		hidden_effect = {
+			if = {
+				limit = { has_character_modifier = magic_defiled_nadir_separation_modifier }
+				remove_character_modifier = magic_defiled_nadir_separation_modifier
+			}
+		}
+		remove_character_modifier = magic_defiled_nadir_modifier
+		add_character_modifier = {
+			modifier = magic_defiled_nadir_broken_bond_modifier
+			years = 5
+		}
+		if = {
+			limit = { exists = scope:defiled_nadir_mask }
+			custom_tooltip = artifacts_flavor.1026.a.exists.tt
+		}
+		else = { custom_tooltip = artifacts_flavor.1026.a.lost.tt }
+	}
+}
+
+scripted_trigger is_valid_past_spouse_trigger = {
+	NOR = { # Weird edge cases
+		this = root
+		this = root.primary_spouse
+		is_spouse_of_even_if_dead = root
+		is_concubine_of = root
+	}
+	OR = {
+		AND = {
+			root.primary_spouse = { is_female = yes }
+			this = { is_female = yes }
+		}
+		AND = {
+			root.primary_spouse = { is_female = no }
+			this = { is_female = no }
+		}
+	}
+}
+
+artifacts_flavor.1027 = { # Defiled Nadir mask makes you misremember the name of your spouse
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1027.t
+	desc = artifacts_flavor.1027.desc
+	theme = mental_break
+	override_background = { reference = council_chamber }
+	cooldown = { years = 20 }
+	left_portrait = {
+		character = root
+		animation = disbelief
+	}
+	right_portrait = {
+		character = scope:present_spouse
+		animation = dismissal
+	}
+	lower_left_portrait = scope:past_boundee
+	lower_right_portrait = scope:past_boundee_spouse
+	artifact = {
+		target = scope:defiled_nadir_mask
+		position = lower_center_portrait
+	}
+	
+	trigger = {
+		primary_spouse ?= { location = root.location }
+		scope:defiled_nadir_mask = { # Any past boundee must have a valid spouse
+			any_in_list = {
+				variable = boundees
+				is_alive = no
+				NOT = { this = root }
+				any_spouse = {
+					even_if_dead = yes
+					is_valid_past_spouse_trigger = yes
+				}
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = { add = scope:defiled_nadir_mask.var:defiled_nadir_progression_counter }
+	}
+
+	immediate = {
+		primary_spouse = { save_scope_as = present_spouse }
+		scope:defiled_nadir_mask = { # Get past boundee and their valid spouse
+			random_in_list = {
+				variable = boundees
+				limit = {
+					is_alive = no
+					NOT = { this = root }
+					any_spouse = {
+						even_if_dead = yes
+						is_valid_past_spouse_trigger = yes
+					}
+				}
+				save_scope_as = past_boundee
+				random_spouse = {
+					even_if_dead = yes
+					limit = { is_valid_past_spouse_trigger = yes }
+					save_scope_as = past_boundee_spouse
+				}
+			}
+		}
+	}
+
+	option = { # I swear, this is a misunderstanding...
+		name = artifacts_flavor.1027.a
+		duel = {
+			skills = { diplomacy }
+			target = scope:present_spouse
+			45 = { # You convince your spouse
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				send_interface_toast = {
+					title = artifacts_flavor.1027.a.success
+					right_icon = scope:present_spouse
+					reverse_add_opinion = {
+						target = scope:present_spouse
+						modifier = trust_opinion
+						opinion = 10
+					}
+				}
+				desc = artifacts_flavor.1027.a.duel_success
+			}
+			45 = { # Your spouse is unconvinced
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				send_interface_toast = {
+					title = artifacts_flavor.1027.a.failure
+					right_icon = scope:present_spouse
+					reverse_add_opinion = {
+						target = scope:present_spouse
+						modifier = suspicion_opinion
+						opinion = -20
+					}
+				}
+				desc = artifacts_flavor.1027.a.duel_failure
+			}
+			10 = { # You dig yourself deeper
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.5
+					min = -9
+				}
+				send_interface_toast = {
+					title = artifacts_flavor.1027.a.critical_failure
+					right_icon = scope:present_spouse
+					reverse_add_opinion = {
+						target = scope:present_spouse
+						modifier = betrayal_opinion
+						opinion = -40
+					}
+					add_trait = adulterer
+				}
+				desc = artifacts_flavor.1027.a.duel_critical_failure
+			}
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_honor = 0.5
+				ai_rationality = 0.5
+				ai_compassion = 0.3
+				ai_sociability = 0.3
+				ai_energy = -0.5
+			}
+		}
+	}
+
+	option = { # So what?
+		name = artifacts_flavor.1027.b
+		reverse_add_opinion = {
+			target = scope:present_spouse
+			modifier = angry_opinion
+			opinion = -30
+		}
+		stress_impact = {
+			arbitrary = minor_stress_impact_loss
+			fickle = minor_stress_impact_loss
+			eccentric = minor_stress_impact_loss
+			callous = minor_stress_impact_loss
+			sadistic = minor_stress_impact_loss
+			compassionate = medium_stress_impact_gain
+			chaste = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_compassion = -0.5
+				ai_sociability = -0.3
+				ai_energy = 1
+			}
+		}
+	}
+
+	option = { # Dear, you ARE them
+		name = artifacts_flavor.1027.c
+		trigger = {
+			OR = {
+				has_trait = callous
+				has_trait = sadistic
+				has_trait = arbitrary
+				has_trait = eccentric
+				has_trait = lunatic_1
+				has_trait = lunatic_genetic
+			}
+		}
+		custom_tooltip = artifacts_flavor.1027.c.tt
+		reverse_add_opinion = {
+			target = scope:present_spouse
+			modifier = hate_opinion
+			opinion = -60
+		}
+		hidden_effect = { scope:present_spouse = { change_first_name = { template_character = scope:past_boundee_spouse } } }
+		stress_impact = {
+			arbitrary = medium_stress_impact_loss
+			eccentric = medium_stress_impact_loss
+			callous = minor_stress_impact_loss
+			sadistic = minor_stress_impact_loss
+			just = medium_stress_impact_gain
+			compassionate = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 200
+			ai_value_modifier = {
+				ai_rationality = -0.5
+				ai_compassion = -1
+			}
+		}
+	}
+}
+
+scripted_trigger has_valid_different_sexuality_trigger = {
+	OR = {
+		AND = {
+			root = { has_sexuality = heterosexual }
+			OR = {
+				AND = {
+					root = { is_male = yes }
+					NOT = { has_sexuality = heterosexual }
+					is_male = yes
+				}
+				AND = {
+					root = { is_female = yes }
+					NOT = { has_sexuality = heterosexual }
+					is_female = yes
+				}
+				AND = {
+					root = { is_male = yes }
+					NOT = { has_sexuality = homosexual }
+					is_female = yes
+				}
+				AND = {
+					root = { is_female = yes }
+					NOT = { has_sexuality = homosexual }
+					is_male = yes
+				}
+			}
+		}
+		AND = {
+			root = { has_sexuality = homosexual }
+			OR = {
+				AND = {
+					root = { is_male = yes }
+					NOT = { has_sexuality = homosexual }
+					is_male = yes
+				}
+				AND = {
+					root = { is_female = yes }
+					NOT = { has_sexuality = homosexual }
+					is_female = yes
+				}
+				AND = {
+					root = { is_male = yes }
+					NOT = { has_sexuality = heterosexual }
+					is_female = yes
+				}
+				AND = {
+					root = { is_female = yes }
+					NOT = { has_sexuality = heterosexual }
+					is_male = yes
+				}
+			}
+		}
+		AND = {
+			root = { has_sexuality = bisexual }
+			NOT = { has_sexuality = bisexual }
+		}
+		AND = {
+			root = { has_sexuality = asexual }
+			NOT = { has_sexuality = asexual }
+		}
+	}
+}
+
+artifacts_flavor.1028 = { # Defiled Nadir mask makes you question your own sexuality
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1028.t
+	desc = {
+		desc = artifacts_flavor.1028.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					is_male = yes
+					OR = {
+						AND = {
+							has_sexuality = heterosexual
+							scope:past_boundee = {
+								OR = {
+									has_sexuality = homosexual
+									has_sexuality = bisexual
+								}
+							}
+						}
+						AND = {
+							has_sexuality = homosexual
+							scope:past_boundee = {
+								OR = {
+									has_sexuality = heterosexual
+									has_sexuality = bisexual
+								}
+							}
+						}
+					}
+				}
+				desc = artifacts_flavor.1028.server_boy_gained_interest
+			}
+			triggered_desc = {
+				trigger = {
+					is_female = yes
+					OR = {
+						AND = {
+							has_sexuality = heterosexual
+							scope:past_boundee = {
+								OR = {
+									has_sexuality = homosexual
+									has_sexuality = bisexual
+								}
+							}
+						}
+						AND = {
+							has_sexuality = homosexual
+							scope:past_boundee = {
+								OR = {
+									has_sexuality = heterosexual
+									has_sexuality = bisexual
+								}
+							}
+						}
+					}
+				}
+				desc = artifacts_flavor.1028.server_girl_gained_interest
+			}
+			triggered_desc = {
+				trigger = {
+					has_sexuality = asexual
+					scope:past_boundee = {
+						OR = {
+							AND = {
+								is_male = yes
+								has_sexuality = homosexual
+							}
+						}
+						OR = {
+							AND = {
+								is_female = yes
+								has_sexuality = heterosexual
+							}
+						}
+					}
+				}
+				desc = artifacts_flavor.1028.server_boy_asexual_gained_interest
+			}
+			triggered_desc = {
+				trigger = {
+					has_sexuality = asexual
+					scope:past_boundee = {
+						OR = {
+							AND = {
+								is_male = yes
+								has_sexuality = heterosexual
+							}
+						}
+						OR = {
+							AND = {
+								is_female = yes
+								has_sexuality = homosexual
+							}
+						}
+					}
+				}
+				desc = artifacts_flavor.1028.server_girl_asexual_gained_interest
+			}
+			triggered_desc = {
+				trigger = {
+					has_sexuality = asexual
+					scope:past_boundee = { has_sexuality = bisexual }
+				}
+				desc = artifacts_flavor.1028.server_boy_girl_asexual_gained_interest
+			}
+			triggered_desc = {
+				trigger = {
+					OR = {
+						AND = {
+							OR = {
+								AND = {
+									is_male = yes
+									has_sexuality = heterosexual
+								}
+								AND = {
+									is_female = yes
+									has_sexuality = homosexual
+								}
+							}
+							scope:past_boundee = { has_sexuality = asexual }
+						}
+						AND = {
+							has_sexuality = bisexual
+							scope:past_boundee = {
+								OR = {
+									AND = {
+										is_male = yes
+										has_sexuality = homosexual
+									}
+									AND = {
+										is_female = yes
+										has_sexuality = heterosexual
+									}
+								}
+							}
+						}
+					}
+				}
+				desc = artifacts_flavor.1028.server_girl_lost_interest
+			}
+			triggered_desc = {
+				trigger = {
+					OR = {
+						AND = {
+							OR = {
+								AND = {
+									is_male = yes
+									has_sexuality = homosexual
+								}
+								AND = {
+									is_female = yes
+									has_sexuality = heterosexual
+								}
+							}
+							scope:past_boundee = { has_sexuality = asexual }
+						}
+						AND = {
+							has_sexuality = bisexual
+							scope:past_boundee = {
+								OR = {
+									AND = {
+										is_male = yes
+										has_sexuality = heterosexual
+									}
+									AND = {
+										is_female = yes
+										has_sexuality = homosexual
+									}
+								}
+							}
+						}
+					}
+				}
+				desc = artifacts_flavor.1028.server_boy_lost_interest
+			}
+			triggered_desc = {
+				trigger = {
+					has_sexuality = bisexual
+					scope:past_boundee = { has_sexuality = asexual }
+				}
+				desc = artifacts_flavor.1028.server_boy_girl_lost_interest
+			}
+		}
+		desc = artifacts_flavor.1028.desc.ending
+	}
+	theme = mental_break
+	override_background = { reference = tavern }
+	cooldown = { years = 50 }
+	left_portrait = {
+		character = root
+		animation = toast
+	}
+	lower_left_portrait = scope:past_boundee
+	artifact = {
+		target = scope:defiled_nadir_mask
+		position = lower_center_portrait
+	}
+	
+	trigger = {
+		has_sexual_orientation_trigger = yes
+		scope:defiled_nadir_mask = { # Any past boundee must have a different sexuality
+			any_in_list = {
+				variable = boundees
+				is_alive = no
+				NOT = { this = root }
+				has_valid_different_sexuality_trigger = yes
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = { add = scope:defiled_nadir_mask.var:defiled_nadir_progression_counter }
+	}
+
+	immediate = {
+		scope:defiled_nadir_mask = { # Get valid past boundee
+			random_in_list = {
+				variable = boundees
+				limit = {
+					is_alive = no
+					NOT = { this = root }
+					has_valid_different_sexuality_trigger = yes
+				}
+				save_scope_as = past_boundee
+			}
+		}
+	}
+
+	option = { # Have I always been this way?
+		name = artifacts_flavor.1028.a
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						OR = {
+							has_sexuality = bisexual
+							has_sexuality = asexual
+						}
+						OR = {
+							AND = {
+								is_male = yes
+								scope:past_boundee = {
+									OR = {
+										AND = {
+											is_male = yes
+											has_sexuality = heterosexual
+										}
+										AND = {
+											is_female = yes
+											has_sexuality = homosexual
+										}
+									}
+								}
+							}
+							AND = {
+								is_female = yes
+								scope:past_boundee = {
+									OR = {
+										AND = {
+											is_male = yes
+											has_sexuality = homosexual
+										}
+										AND = {
+											is_female = yes
+											has_sexuality = heterosexual
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			set_sexuality = heterosexual
+		}
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						OR = {
+							has_sexuality = bisexual
+							has_sexuality = asexual
+						}
+						OR = {
+							AND = {
+								is_male = yes
+								scope:past_boundee = {
+									OR = {
+										AND = {
+											is_male = yes
+											has_sexuality = homosexual
+										}
+										AND = {
+											is_female = yes
+											has_sexuality = heterosexual
+										}
+									}
+								}
+							}
+							AND = {
+								is_female = yes
+								scope:past_boundee = {
+									OR = {
+										AND = {
+											is_male = yes
+											has_sexuality = heterosexual
+										}
+										AND = {
+											is_female = yes
+											has_sexuality = homosexual
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			set_sexuality = homosexual
+		}
+		else_if = {
+			limit = {
+				OR = {
+					scope:past_boundee = { has_sexuality = bisexual }
+					AND = {
+						has_sexuality = heterosexual
+						OR = {
+							AND = {
+								is_male = yes
+								scope:past_boundee = {
+									OR = {
+										AND = {
+											is_female = yes
+											has_sexuality = heterosexual
+										}
+										AND = {
+											is_male = yes
+											has_sexuality = homosexual
+										}
+									}
+								}
+							}
+							AND = {
+								is_female = yes
+								scope:past_boundee = {
+									OR = {
+										AND = {
+											is_male = yes
+											has_sexuality = heterosexual
+										}
+										AND = {
+											is_female = yes
+											has_sexuality = homosexual
+										}
+									}
+								}
+							}
+						}
+					}
+					AND = {
+						has_sexuality = homosexual
+						OR = {
+							AND = {
+								is_male = yes
+								scope:past_boundee = {
+									OR = {
+										AND = {
+											is_male = yes
+											has_sexuality = heterosexual
+										}
+										AND = {
+											is_female = yes
+											has_sexuality = homosexual
+										}
+									}
+								}
+							}
+							AND = {
+								is_female = yes
+								scope:past_boundee = {
+									OR = {
+										AND = {
+											is_female = yes
+											has_sexuality = heterosexual
+										}
+										AND = {
+											is_male = yes
+											has_sexuality = homosexual
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			set_sexuality = bisexual
+		}
+		else = { set_sexuality = asexual }
+		stress_impact = {
+			fickle = minor_stress_impact_loss
+			chaste = minor_stress_impact_gain
+			stubborn = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_compassion = 0.2
+				ai_sociability = 0.2
+			}
+		}
+	}
+
+	option = { # No, surely not.
+		name = artifacts_flavor.1028.b
+		custom_tooltip = artifacts_flavor.1028.b.tt
+		stress_impact = {
+			base = medium_stress_gain
+			fickle = minor_stress_impact_gain
+			stubborn = minor_stress_impact_loss
+		}
+		
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_compassion = -0.2
+				ai_sociability = -0.2
+			}
+		}
+	}
+}
+
+artifacts_flavor.1029 = { # Defiled Nadir mask makes you murder your child
+	type = character_event
+	content_source = dlc_gh
+	title = artifacts_flavor.1029.t
+	desc = artifacts_flavor.1029.desc
+	theme = mental_break
+	override_background = { reference = corridor_night }
+	cooldown = { years = 50 }
+	left_portrait = {
+		character = root
+		animation = assassin
+	}
+	right_portrait = {
+		character = scope:present_child
+		animation = happiness
+	}
+	lower_left_portrait = scope:past_boundee
+	lower_right_portrait = scope:past_boundee_child
+	artifact = {
+		target = scope:defiled_nadir_mask
+		position = lower_center_portrait
+	}
+	
+	trigger = {
+		scope:defiled_nadir_mask = { # Any past boundee must have a valid dead child
+			any_in_list = {
+				variable = boundees
+				is_alive = no
+				NOT = { this = root }
+				any_child = {
+					even_if_dead = yes
+					is_alive = no
+					is_adult = yes
+					save_temporary_scope_as = dead_child
+				}
+				root = {
+					any_child = {
+						is_adult = yes
+						OR = {
+							AND = {
+								is_male = yes
+								scope:dead_child = { is_male = yes }
+							}
+							AND = {
+								is_female = yes
+								scope:dead_child = { is_female = yes }
+							}
+						}
+						scope:dead_child = { age_difference_to_prev < 5 }
+						location = root.location
+					}
+				}
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = { add = scope:defiled_nadir_mask.var:defiled_nadir_progression_counter }
+	}
+
+	immediate = {
+		scope:defiled_nadir_mask = { # Get past boundee and their valid dead child
+			random_in_list = {
+				variable = boundees
+				limit = {
+					is_alive = no
+					NOT = { this = root }
+					any_child = {
+						even_if_dead = yes
+						is_alive = no
+						is_adult = yes
+						save_temporary_scope_as = dead_child
+					}
+					root = {
+						any_child = {
+							is_adult = yes
+							OR = {
+								AND = {
+									is_male = yes
+									scope:dead_child = { is_male = yes }
+								}
+								AND = {
+									is_female = yes
+									scope:dead_child = { is_female = yes }
+								}
+							}
+							scope:dead_child = { age_difference_to_prev < 5 }
+							location = root.location
+							save_temporary_scope_as = living_child
+						}
+					}
+				}
+				save_scope_as = past_boundee
+			}
+		}
+		scope:dead_child = { save_scope_as = past_boundee_child }
+		scope:living_child = { save_scope_as = present_child }
+	}
+
+	option = { # You die tonight, wretch!
+		name = artifacts_flavor.1029.a
+		custom_tooltip = artifacts_flavor.1029.a.tt
+		hidden_effect = {
+			unknown_murder_effect = {
+				VICTIM = scope:present_child
+				MURDERER = root
+				REASON = death_mysterious
+			}
+		}
+		stress_impact = {
+			paranoid = major_stress_impact_loss
+			sadistic = medium_stress_impact_loss
+			callous = medium_stress_impact_loss
+			vengeful = minor_stress_impact_loss
+			brave = minor_stress_impact_loss
+			compassionate = major_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_rationality = -2
+				ai_vengefulness = 0.5
+				ai_compassion = -1
+			}
+		}
+	}
+
+	option = { # I was, ah, going to the kitchens
+		name = artifacts_flavor.1029.b
+		stress_impact = {
+			base = massive_stress_impact_gain
+			paranoid = massive_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_energy = -1
+				ai_boldness = -1
+			}
+		}
+	}
+}

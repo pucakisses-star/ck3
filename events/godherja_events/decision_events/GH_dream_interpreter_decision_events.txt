@@ -1,0 +1,675 @@
+﻿namespace = gh_consult_dream_interpreter_decision
+
+##################################################
+# Consult Dream Interpreter
+# by Askil
+##################################################
+
+gh_consult_dream_interpreter_decision.0001 = {
+	type = character_event	
+	theme = faith
+	title = {
+		random_valid = {
+			desc = gh_consult_dream_interpreter_decision.0001.t.first
+			desc = gh_consult_dream_interpreter_decision.0001.t.second
+		}
+	}
+	desc = {
+		random_valid = {
+			desc = gh_consult_dream_interpreter_decision.0001.desc.first
+			desc = gh_consult_dream_interpreter_decision.0001.desc.second
+		}
+	}
+	
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+
+	option = {
+		name = gh_consult_dream_interpreter_decision.0001.a
+		trigger = { 
+			any_held_title = {
+				tier = tier_county
+				any_county_province = {
+					has_building_or_higher = gh_house_of_dreams_01
+				}
+			}
+		}
+		add_character_flag = {
+			flag = visit_house_of_dream
+			days = 5
+		}
+	}
+	option = {
+		name = gh_consult_dream_interpreter_decision.0001.b
+		trigger = { 
+			employs_court_position = dream_interpreter_court_position
+			any_court_position_holder = {
+				type = dream_interpreter_court_position
+				is_physically_able_adult = yes
+				has_court_event_flag = no
+				is_ai = yes
+			}
+		}
+		add_character_flag = {
+			flag = visit_dream_interpreter
+			days = 5
+		}
+	}
+	option = {
+		name = gh_consult_dream_interpreter_decision.0001.c
+	}
+
+	after = {
+		if = { 
+			limit = { has_character_flag = visit_dream_interpreter }
+			random_court_position_holder = {
+				type = dream_interpreter_court_position
+				save_scope_as = dream_interpreter
+			}
+			trigger_event = { on_action = consult_dream_interpreter_events }
+		}
+		else_if = {
+			limit = { has_character_flag = visit_house_of_dream }
+			create_character = {
+				location = root.capital_province
+				template = priest_character_template
+				save_scope_as = dream_interpreter
+			}
+			trigger_event = { on_action = consult_dream_interpreter_events }
+		}
+	}
+}
+
+gh_consult_dream_interpreter_decision.0002 = {
+	type = character_event	
+	theme = faith
+	title = {
+		random_valid = {
+			desc = gh_consult_dream_interpreter_decision.0002.t.first
+			desc = gh_consult_dream_interpreter_decision.0002.t.second
+			desc = gh_consult_dream_interpreter_decision.0002.t.third
+		}
+	}
+	desc = {
+		random_valid = {
+			desc = gh_consult_dream_interpreter_decision.0002.desc.first
+			desc = gh_consult_dream_interpreter_decision.0002.desc.second
+			desc = gh_consult_dream_interpreter_decision.0002.desc.third
+		}
+	}
+	
+	left_portrait = {
+		character = root
+		animation = rationnal
+	}
+	right_portrait = {
+		character = scope:dream_interpreter
+		animation = thinking
+	}
+
+	option = {
+		name = {
+			text = {
+				random_valid = {
+					desc = gh_consult_dream_interpreter_decision.0002.a.first
+					desc = gh_consult_dream_interpreter_decision.0002.a.second
+				}
+			}
+		}
+	}
+}
+
+gh_consult_dream_interpreter_decision.0003 = {
+	type = character_event	
+	theme = faith
+	title = gh_consult_dream_interpreter_decision.0003.t
+	desc = {
+		random_valid = {
+			desc = gh_consult_dream_interpreter_decision.0003.desc.first
+			desc = gh_consult_dream_interpreter_decision.0003.desc.second
+		}
+	}
+	
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = scope:dream_interpreter
+		animation = thinking
+	}
+
+	immediate = {
+		add_character_modifier = {
+			modifier = gh_consult_dream_bad_omen_modifier
+			years = 3
+		}
+	}
+	option = {
+		name = gh_consult_dream_interpreter_decision.0003.a
+		
+		stress_impact = {
+			craven = minor_stress_impact_gain
+			brave = miniscule_stress_impact_gain
+		}
+		
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_boldness = 1.5
+			}
+			modifier = {
+				factor = 2
+				has_trait = ambitious
+			}
+		}
+	}
+	option = {
+		name = {
+			text = {
+				random_valid = {
+					desc = gh_consult_dream_interpreter_decision.0003.b.first
+					desc = gh_consult_dream_interpreter_decision.0003.b.second
+				}
+			}
+		}
+		
+		stress_impact = {
+			zealous = miniscule_stress_impact_gain
+			cynical = miniscule_stress_impact_loss
+		}
+		
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_boldness = -0.5
+			}
+		}
+	}
+}
+
+gh_consult_dream_interpreter_decision.0004 = {
+	type = character_event	
+	theme = faith
+	title = gh_consult_dream_interpreter_decision.0004.t
+	desc = {
+		random_valid = {
+			desc = gh_consult_dream_interpreter_decision.0004.desc.first
+			desc = gh_consult_dream_interpreter_decision.0004.desc.second
+		}
+	}
+	
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	right_portrait = {
+		character = scope:dream_interpreter
+		animation = thinking
+	}
+
+	immediate = {
+		add_character_modifier = {
+			modifier = gh_consult_dream_good_omen_modifier
+			years = 3
+		}
+	}
+	option = {
+		name = gh_consult_dream_interpreter_decision.0004.a
+		stress_impact = {
+			zealous = miniscule_stress_impact_loss
+			cynical = miniscule_stress_impact_gain
+		}
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_rationality = -0.5
+			}
+		}
+	}
+}
+
+gh_consult_dream_interpreter_decision.0005 = {
+	type = character_event	
+	theme = faith
+	title = gh_consult_dream_interpreter_decision.0005.t
+	desc = gh_consult_dream_interpreter_decision.0005.desc
+	
+	trigger = {
+		any_targeting_scheme = {
+			is_scheme_exposed = no
+			scheme_defender = root
+			scheme_type = murder
+		}
+	}
+	
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = scope:dream_interpreter
+		animation = thinking
+	}
+
+	immediate = {
+		random_targeting_scheme = {
+			limit = {
+				is_scheme_exposed = no
+				scheme_defender = root
+				scheme_type = murder
+			}
+			expose_scheme = yes
+		}
+	}
+	option = {
+		name = gh_consult_dream_interpreter_decision.0005.a
+		trigger = {
+			exists = cp:councillor_spymaster
+			cp:councillor_spymaster ?= {
+				NOT = { is_performing_council_task = task_disrupt_schemes }
+			}
+		}
+		
+		cp:councillor_spymaster = {
+			set_council_task = {
+				task_type = task_disrupt_schemes
+				target = root
+			}
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				OR = {
+					has_trait = sadistic
+					has_trait = callous
+					has_trait = torturer
+					has_trait = wrathful
+					has_trait = vengeful
+				}
+				add = 50
+			}
+			modifier = {
+				has_trait = cynical
+				add = 50
+			}
+		}
+	}
+	option = {
+		name = gh_consult_dream_interpreter_decision.0005.b
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+gh_consult_dream_interpreter_decision.0006 = {
+	type = character_event	
+	theme = faith
+	title = gh_consult_dream_interpreter_decision.0006.t
+	desc = gh_consult_dream_interpreter_decision.0006.desc
+	
+	trigger = {
+		any_targeting_scheme = {
+			is_scheme_exposed = no
+			scheme_defender = root
+			scheme_type = murder
+		}
+	}
+	
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+	right_portrait = {
+		character = scope:dream_interpreter
+		animation = thinking
+	}
+
+	immediate = {
+		stress_impact = {
+			paranoid = minor_stress_impact_gain
+			ambitious = miniscule_stress_impact_gain
+			diligent = miniscule_stress_impact_gain
+		}
+		random_targeting_scheme = {
+			limit = {
+				is_scheme_exposed = no
+				scheme_defender = root
+				scheme_type = murder
+			}
+			scheme_owner = { save_scope_as = murder_schemer }
+			expose_scheme = yes
+			add_scheme_progress = scheme_progress_loss
+		}	
+		attempted_murder_opinion_effect = {
+			VICTIM = root
+			MURDERER = scope:murder_schemer
+		}
+	}
+	option = {
+		name = gh_consult_dream_interpreter_decision.0006.a
+		stress_impact = {
+			paranoid = minor_stress_impact_gain
+			ambitious = miniscule_stress_impact_loss
+		}
+		start_scheme = {
+			type = murder
+			target_character = scope:murder_schemer
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_vengefulness = 1
+			}
+			modifier = {
+				OR = {
+					has_trait = sadistic
+					has_trait = callous
+					has_trait = torturer
+					has_trait = wrathful
+					has_trait = vengeful
+				}
+				add = 50
+			}
+			modifier = {
+				factor = 0
+				any_scheme = {
+					scheme_type = murder
+					scheme_owner = root
+				}
+			}
+		}
+	}
+	option = {
+		name = gh_consult_dream_interpreter_decision.0006.b
+		stress_impact = {
+			paranoid = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+gh_consult_dream_interpreter_decision.0007 = {
+	type = character_event	
+	theme = faith
+	title = gh_consult_dream_interpreter_decision.0007.t
+	desc = gh_consult_dream_interpreter_decision.0007.desc
+
+	trigger = {
+		any_targeting_scheme = {
+			scheme_target_character = root
+			scheme_type = seduce
+		}
+	}
+	
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	right_portrait = {
+		character = scope:dream_interpreter
+		animation = thinking
+	}	
+	
+	option = {
+		name = gh_consult_dream_interpreter_decision.0007.a
+		trigger = {
+			exists = cp:councillor_spymaster
+			cp:councillor_spymaster ?= {
+				NOT = { is_performing_council_task = task_disrupt_schemes }
+			}
+		}
+		
+		cp:councillor_spymaster = {
+			set_council_task = {
+				task_type = task_disrupt_schemes
+				target = root
+			}
+		}
+		stress_impact = {
+			lustful = minor_stress_impact_loss
+			callous = miniscule_stress_impact_gain
+		}
+		
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_rationality = -0.5
+			}
+		}
+	}
+
+	option = {
+		name = gh_consult_dream_interpreter_decision.0007.b
+	}
+}
+
+gh_consult_dream_interpreter_decision.0008 = {
+	type = character_event	
+	theme = faith
+	title = gh_consult_dream_interpreter_decision.0008.t
+	desc = gh_consult_dream_interpreter_decision.0008.desc
+	
+	trigger = {
+		any_targeting_scheme = {
+			is_scheme_exposed = no
+			scheme_target_character = root
+			scheme_type = abduct
+		}
+	}
+	
+	left_portrait = {
+		character = root
+		animation = happiness
+	}
+	right_portrait = {
+		character = scope:dream_interpreter
+		animation = thinking
+	}
+
+	immediate = {
+		random_targeting_scheme = {
+			limit = {
+				is_scheme_exposed = no
+				scheme_target_character = root
+				scheme_type = abduct
+			}
+		}
+	}
+	option = {
+		name = gh_consult_dream_interpreter_decision.0008.a
+		trigger = {
+			exists = cp:councillor_spymaster
+			cp:councillor_spymaster ?= {
+				NOT = { is_performing_council_task = task_disrupt_schemes }
+			}
+		}
+		
+		cp:councillor_spymaster = {
+			set_council_task = {
+				task_type = task_disrupt_schemes
+				target = root
+			}
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				OR = {
+					has_trait = sadistic
+					has_trait = callous
+					has_trait = torturer
+					has_trait = wrathful
+					has_trait = vengeful
+				}
+				add = 50
+			}
+			modifier = {
+				has_trait = cynical
+				add = -50
+			}
+		}
+	}
+	option = {
+		name = gh_consult_dream_interpreter_decision.0008.b
+		ai_chance = {
+			base = 50
+			modifier = {
+				has_trait = cynical
+				add = 50
+			}
+		}
+	}
+}
+
+
+gh_consult_dream_interpreter_decision.0009 = {
+	type = character_event	
+	theme = faith
+	title = gh_consult_dream_interpreter_decision.0009.t
+	desc = gh_consult_dream_interpreter_decision.0009.desc
+	
+	trigger = {
+		any_scheme = {
+			OR = {
+				scheme_type = murder
+				scheme_type = befriend
+				scheme_type = seduce
+				scheme_type = courting
+				scheme_type = learn_language
+			}
+		}
+	}
+	
+	left_portrait = {
+		character = root
+		animation = happiness
+	}
+	right_portrait = {
+		character = scope:dream_interpreter
+		animation = thinking
+	}
+
+	immediate = {
+		random_scheme = {
+			limit = {
+				OR = {
+					scheme_type = murder
+					scheme_type = befriend
+					scheme_type = seduce
+					scheme_type = courting
+					scheme_type = learn_language
+				}
+			}
+			add_scheme_progress = scheme_progress_gain
+		}
+	}
+	option = {
+		name = gh_consult_dream_interpreter_decision.0009.a
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+gh_consult_dream_interpreter_decision.0010 = {
+	type = character_event	
+	theme = faith
+	title = gh_consult_dream_interpreter_decision.0010.t
+	desc = gh_consult_dream_interpreter_decision.0010.desc
+	
+	trigger = {
+		any_scheme = {
+			OR = {
+				scheme_type = murder
+				scheme_type = befriend
+				scheme_type = seduce
+				scheme_type = courting
+				scheme_type = learn_language
+			}
+		}
+	}
+	
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+	right_portrait = {
+		character = scope:dream_interpreter
+		animation = thinking
+	}
+
+	immediate = {
+		random_scheme = {
+			limit = {
+				OR = {
+					scheme_type = murder
+					scheme_type = befriend
+					scheme_type = seduce
+					scheme_type = courting
+					scheme_type = learn_language
+				}
+			}
+			add_scheme_progress = scheme_progress_gain
+		}
+	}
+	option = {
+		name = gh_consult_dream_interpreter_decision.0010.a
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+gh_consult_dream_interpreter_decision.0011 = {
+	type = character_event	
+	theme = faith
+	title = gh_consult_dream_interpreter_decision.0011.t
+	desc = gh_consult_dream_interpreter_decision.0011.desc
+	
+	trigger = {
+		any_scheme = {
+			OR = {
+				scheme_type = murder
+				scheme_type = befriend
+				scheme_type = seduce
+				scheme_type = courting
+				scheme_type = learn_language
+			}
+		}
+	}
+	
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+	right_portrait = {
+		character = scope:dream_interpreter
+		animation = thinking
+	}
+
+	immediate = {
+		random_scheme = {
+			limit = {
+				OR = {
+					scheme_type = murder
+					scheme_type = befriend
+					scheme_type = seduce
+					scheme_type = courting
+					scheme_type = learn_language
+				}
+			}
+			add_scheme_progress = scheme_progress_loss
+		}
+	}
+	option = {
+		name = gh_consult_dream_interpreter_decision.0011.a
+		ai_chance = {
+			base = 50
+		}
+	}
+}

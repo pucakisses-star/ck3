@@ -1,0 +1,472 @@
+﻿##################################################
+##			Redrunner Flavour Events			##
+# by: doodleSM
+# gh_redrunner_events.0001 - Fleeing Courtier
+# gh_redrunner_events.0002 - Commander's Plead
+# gh_redrunner_events.0003 - Merchant Stall's Empty
+##												##
+##################################################
+
+namespace = gh_redrunner_events
+
+##################################################
+
+gh_redrunner_events.0001 = { # Courtier Fleeing
+	type = character_event
+	content_source = dlc_gh
+	title = gh_redrunner_events.0001.t
+
+	trigger = {
+		custom_tooltip = {
+			text = redlands_crisis_must_be_active
+			# Check to make sure that the crisis is currently active
+			exists = global_var:redlands_crisis
+		}
+		has_culture = culture:redrunner
+		root = {
+			is_ai = no
+			any_neighboring_top_liege_realm_owner = {
+				has_religion = religion:redland_cults_religion
+				is_ruler = yes
+			} #TODO add requirement w/ neighboring county being Redlander.
+		}
+	}
+
+	immediate = {
+		title:c_digniadartd.title_province = { save_scope_as = background_terrain_scope }
+		every_courtier = {
+			limit = {
+				OR = {
+					has_trait = craven
+					has_trait = fickle
+				}
+			}
+			save_scope_as = runaway
+		}
+	}
+
+	desc = {
+		desc = gh_redrunner_events.0001.desc.intro
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					root = {
+						is_ai = no
+					}
+				}
+				desc = gh_redrunner_events.0001.desc.thought
+			}
+		}
+	}
+
+	theme = dread ## TEMPORARY! TODO REPLACE
+	override_background = { reference = terrain_scope }
+
+	right_portrait = {
+		character = scope:runaway
+		animation = shame
+	}
+
+	option = { #force them to stay
+		name = gh_redrunner_events.0001.a
+		scope:runaway = {
+			add_opinion = {
+				modifier = redlander_runaway_stopped
+				years = 10
+				target = root
+			}
+		}
+		add_dread = 5
+		clear_saved_scope = runaway
+	}
+
+	option = { #let them leave
+		name = gh_redrunner_events.0001.b
+		root = {
+			add_prestige = minor_prestige_loss
+		}
+		scope:runaway = {
+			move_to_pool = yes
+		}
+		clear_saved_scope = runaway
+	}
+
+	option = { #sadistic
+		name = gh_redrunner_events.0001.c
+		scope:runaway = {
+			move_to_pool = yes
+		}
+		root = {
+			add_dread = 10
+		}
+		trigger = {
+			root = {
+				has_trait = sadistic
+			} 
+		}
+		clear_saved_scope = runaway
+	}
+}
+
+scripted_trigger competent_martial_trigger_0002 = {
+	is_available_healthy_ai_adult = yes
+	OR = {
+		is_knight = yes
+		has_council_position = councillor_marshal
+	}
+	martial >= 6
+}
+
+gh_redrunner_events.0002 = { # Commander's Plead
+	type = character_event
+	content_source = dlc_gh
+	title = gh_redrunner_events.0002.t
+	theme = martial
+
+	right_portrait = {
+		character = scope:pleading_legon_officer
+		animation = worry
+	}
+
+	desc = {
+		desc = gh_redrunner_events.0002.desc.intro
+		desc = gh_redrunner_events.0002.separator
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:pleading_legon_officer = {
+						has_trait = deceitful
+					}
+				}
+				desc = gh_redrunner_events.0002.desc.altbody
+			}
+			triggered_desc = {
+				trigger = {
+					scope:pleading_legon_officer = {
+						NOT = {
+							has_trait = deceitful
+						}
+					}
+				}
+				desc = gh_redrunner_events.0002.desc.body
+			}
+		}
+		desc = gh_redrunner_events.0002.desc.ending
+	}
+
+	trigger = {
+		is_in_civil_war = no
+		is_landed = yes
+		custom_tooltip = {
+			text = redlands_crisis_must_be_active
+			# Check to make sure that the crisis is currently active
+			exists = global_var:redlands_crisis
+		}
+		OR = {
+			AND = {
+				exists = cp:councillor_marshal
+				cp:councillor_marshal = { competent_martial_trigger_0002 = yes }
+			}
+			any_knight = {
+				competent_martial_trigger_0002 = yes
+			}
+		}
+		OR = { 
+			root.capital_province = { geographical_region = GH_geographic_redlands_mainland }
+			root.capital_province = { geographical_region = GH_geographic_redrunner_islands }
+		}
+		NOT = {
+			culture = { has_cultural_pillar = heritage_redlander }
+			root = {
+				has_character_flag = had_redrunner_commander_plead_flavor_0002
+			}
+		}
+		trigger_if = {
+			limit = { has_government = military_unit_government }
+			current_military_strength > 600
+		}
+		trigger_else = {
+			current_military_strength > 400
+		}
+	}
+
+	immediate = {
+		title:c_digniadartd.title_province = { save_scope_as = background_terrain_scope }
+
+		hidden_effect = {
+			add_character_flag = {
+				flag = had_redrunner_commander_plead_flavor_0002
+				years = 10
+			}
+		}
+
+		if = {
+			limit = {
+				exists = cp:councillor_marshal
+				cp:councillor_marshal = { competent_martial_trigger_0002 = yes }
+			}
+			cp:councillor_marshal = { add_to_list = possible_propositioners_rr }
+		}
+
+		if = {
+			limit = {
+				exists = capital_county
+			}
+			capital_county = {
+				save_scope_as = capital
+			}
+		}
+
+		every_knight = {
+			limit = { competent_martial_trigger_0002 = yes }
+			add_to_list = possible_propositioners_rr
+		}
+
+		random_in_list = {
+			list = possible_propositioners_rr
+			weight = {
+				base = 1
+				modifier = {
+					add = 3
+					has_council_position = councillor_marshal
+				}
+				modifier = {
+					martial >= high_skill_rating
+					add = 4
+				}
+			}
+			save_scope_as = pleading_legon_officer
+			scope:pleading_legon_officer = {
+				add_character_flag = {
+					flag = is_pleading_rr_commander
+					years = 10
+				}
+			}
+		}
+	}
+
+	# Take a chance on the officer's plan
+	option = {
+		name = gh_redrunner_events.0002.a
+
+		stress_impact = {
+			paranoid = medium_stress_impact_gain
+			lazy = minor_stress_impact_loss
+		}
+		
+		random_list = {
+			10 = {
+				modifier = {
+					NOT = {
+						has_trait = lazy
+						has_trait = deceitful
+					}
+					add = 20
+				}
+
+				modifier = {
+					martial >= high_skill_rating
+					factor = 1.5
+				}
+
+				scope:capital = {
+					add_county_modifier = {
+						modifier = redrunner_recruitment_effort
+						years = 5
+					}
+				}
+			}
+
+			10 = {
+				modifier = {
+					has_trait = deceitful
+					add = 20
+				}
+
+				scope:capital = {
+					add_county_modifier = {
+						modifier = redrunner_recruitment_malus
+						years = 5
+					}
+				}
+			}
+		}
+	}
+
+	# Take on the project yourself!
+	option = {
+		name = gh_redrunner_events.0002.b
+		trigger = {
+			root = {
+				NOT = {
+					has_trait = lazy
+				}
+			}
+		}
+
+		random_list = {
+			10 = {
+				modifier = {
+					has_trait_rank = {
+						trait = education_martial
+						rank >= 3
+					}
+					factor = 1.3
+				}
+
+				every_in_list = {
+					list = possible_propositioners_rr
+					limit = {
+						NOT = {
+							scope:pleading_legon_officer = {
+								has_character_flag = is_pleading_rr_commander
+							}
+						}
+					}
+					add_opinion = {
+						modifier = redrunner_diligent_recruitment
+						target = root
+					}
+				}
+
+				scope:capital = {
+					add_county_modifier = {
+						modifier = redrunner_recruitment_effort
+						years = 5
+					}
+				}
+			}
+
+			20 = {
+				modifier = {
+					NOT = {
+						has_trait_rank = {
+							trait = education_martial
+							rank >= 3
+						}
+					}
+					factor = 1.2
+				}
+
+				every_in_list = {
+					list = possible_propositioners_rr
+					limit = {
+						NOR = {
+							has_relation_best_friend = root
+							has_relation_lover = root
+						}
+						NOT = {
+							is_close_family_of = root
+						}
+					}
+
+					add_opinion = {
+						modifier = redrunner_failed_recruitment
+						target = root
+					}
+				}
+
+				scope:capital = {
+					add_county_modifier = {
+						modifier = redrunner_recruitment_malus
+						years = 5
+					}
+				}
+			}
+		}
+	}
+
+	# Take the officer's idea as your own. Discredit the officer.
+	#option = {
+	#	name = gh_redrunner_events.0002.c
+	#	trigger = {
+	#		root = {
+	#			OR = {
+	#				has_trait = ambitious
+	#				has_trait = paranoid
+	#			}
+	#			NOR = {
+	#				has_trait = trusting
+	#				has_trait = humble
+	#				has_trait = just
+	#			}
+	#		}
+	#	}
+	#}
+
+	# Decline Offer
+	option = {
+		name = gh_redrunner_events.0002.d
+		trigger = {
+			root = {
+				NOT = {
+					has_trait = arrogant
+				}
+			}
+		}
+		scope:pleading_legon_officer = {
+			add_opinion = {
+				modifier = redrunner_legon_decline
+				years = { 1 5 }
+				target = root
+			}
+		}
+	}
+
+	#Arrogant Decline
+	option = {
+		name = gh_redrunner_events.0002.e
+		trigger = {
+			root = {
+				has_trait = arrogant
+			}
+		}
+		random_list = {
+			10 = {
+				modifier = {
+					scope:pleading_legon_officer = {
+						OR = {
+							has_trait = calm
+							has_trait = content
+							has_trait = patient
+							has_trait = forgiving
+						}
+					}
+					factor = 1.5
+				}
+
+				scope:pleading_legon_officer = {
+						add_opinion = {
+						modifier = redrunner_legon_decline
+						years = { 1 5 }
+						target = root
+					}
+				}
+			}
+
+			10 = {
+				modifier = {
+					scope:pleading_legon_officer = {
+						OR = {
+							has_trait = arrogant
+							has_trait = ambitious
+							has_trait = stubborn
+							has_trait = wrathful
+						}
+					}
+					factor = 1.6
+				}
+			}
+
+			10 = {
+				scope:pleading_legon_officer = {
+					add_opinion = {
+						modifier = redrunner_legon_arrogant_decline
+						years = { 5 10 }
+						target = root
+					}
+				}
+			}
+		}
+	}
+}

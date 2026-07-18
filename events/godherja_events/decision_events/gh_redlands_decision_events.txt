@@ -1,0 +1,326 @@
+﻿namespace = redlands_decision
+
+####################################################
+
+### redlands decision events ###
+
+#Selling Abyssal Prism
+
+# 0001 Sell Abyssal Prism
+
+# 1000 Redlands Decay
+
+####################################
+
+redlands_decision.0001 = { # Sell Abyssal Prism
+	title = redlands_decision.0001.title
+	desc = redlands_decision.0001.desc
+	type = character_event
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	
+	immediate = {
+		random_character_artifact = {
+			limit = {
+				has_variable = abyssal_prism
+			}
+			save_scope_as = abyssal_prism
+			set_variable = sold
+		}
+	}
+	
+	option = {
+		name = redlands_decision.0001.a
+		random_list = {
+			50 = {
+				random_ruler = {
+					limit = {
+						location = {
+							geographical_region = world_ga_kashirya
+						}
+					}
+					custom_tooltip = redlands_decision.0001.kashirya.tt
+					save_scope_as = prism_buyer
+				}
+			}
+			50 = {
+				random_ruler = {
+					limit = {
+						location = {
+							geographical_region = world_es_eastern_coast
+						}
+					}
+					custom_tooltip = redlands_decision.0001.sarradon.tt
+					save_scope_as = prism_buyer
+				}
+			}
+			50 = {
+				random_ruler = {
+					limit = {
+						location = {
+							geographical_region = world_ga_eastern_marcher_kingdoms
+						}
+					}
+					custom_tooltip = redlands_decision.0001.chevalie.tt
+					save_scope_as = prism_buyer
+				}
+			}
+		}
+		hidden_effect = {
+			scope:abyssal_prism = {
+				set_owner = scope:prism_buyer
+			}
+		}
+	}
+}
+
+redlands_decision.1000 = { # Choice between Wasteland & Settling
+	type = character_event
+	title = redlands_decision.1000.t
+	desc = redlands_decision.1000.desc
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+	theme = realm
+	override_background = { reference = terrain }
+
+
+	# Turn the county into a wasteland
+	option = {
+		name = redlands_decision.1000.a
+		if = {
+			limit = { exists = scope:redlands_decay_target }
+			spawn_ruin = { COUNTY = scope:redlands_decay_target }
+		}
+		add_gold = redlander_decay_county_interaction_gold_gain
+		add_piety = redlander_decay_county_interaction_piety_gain
+		scope:redlands_decay_target = {
+			remove_county_modifier = redlands_decay_modifier
+		}
+		custom_tooltip = redlander_decision.1000.magic_gain_tt
+		if = {
+		    limit = {
+		        exists = var:uncapped_magic_gain_activated
+		        NOT = { has_stored_magic_trigger = { VALUE = character_extended_magic_baseline_value } }
+		    }
+		    gain_magical_power_capped_effect = { VALUE = redlander_decay_county_interaction_mana_gain CAP = character_extended_magic_baseline_value }
+		}
+		else = {
+		    limit = { NOT = { has_stored_magic_trigger = { VALUE = character_magic_baseline_value } } }
+		    gain_magical_power_capped_effect = { VALUE = redlander_decay_county_interaction_mana_gain CAP = character_magic_baseline_value }
+		}
+	}
+
+	# Turn the county into redlanders
+	option = {
+		name = redlands_decision.1000.b
+		trigger = {
+		    custom_description = {
+		        text = not_enough_magic_tt
+		        has_variable = magic_counter
+		        var:magic_counter >= redlander_decay_county_interaction_mana_cost
+		    }
+		}
+		show_as_unavailable = {
+			var:magic_counter < redlander_decay_county_interaction_mana_cost
+		}
+		if = {
+			limit = { exists = scope:redlands_decay_target }
+			scope:redlands_decay_target = {
+				set_county_culture = root.culture
+				set_county_faith = root.faith
+				remove_county_modifier = redlands_decay_modifier
+			}
+			remove_short_term_gold = redlander_decay_county_interaction_gold_cost
+			add_piety = redlander_decay_county_interaction_piety_cost
+			custom_tooltip = redlander_decision.1000.magic_cost_tt
+			if = {
+			    limit = {
+			        exists = var:uncapped_magic_gain_activated
+			        NOT = { has_stored_magic_trigger = { VALUE = character_extended_magic_baseline_value } }
+			    }
+			    gain_magical_power_capped_effect = { VALUE = redlander_decay_county_interaction_mana_cost CAP = character_extended_magic_baseline_value }
+			}
+			else = {
+			    limit = { NOT = { has_stored_magic_trigger = { VALUE = character_magic_baseline_value } } }
+			    gain_magical_power_capped_effect = { VALUE = redlander_decay_county_interaction_mana_cost CAP = character_magic_baseline_value }
+			}
+		}
+	}
+}
+
+#################################
+# Redlands Crisis Ending Events #
+#################################
+
+redlands_decision.2001 = {
+	type = character_event
+	title = redlands_decision.2001.t
+
+	desc = {
+		desc = redlands_decision.2001.desc
+	}
+
+	theme = arcana
+
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+
+	immediate = {
+		if = {
+			limit = { NOT = { exists = global_var:redlander_victory } }
+			set_global_variable = redlander_victory
+		}
+		custom_tooltip = redlands_crisis_ended_tooltip
+	}
+
+	option = {
+		name = redlands_decision.2001.a
+
+		stress_impact = {
+			base = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+redlands_decision.2002 = {
+	type = character_event
+	title = redlands_decision.2002.t
+
+	desc = {
+		desc = redlands_decision.2002.desc
+	}
+
+	theme = arcana
+
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+
+	immediate = {
+		custom_tooltip = redlands_crisis_ended_tooltip
+	}
+
+	option = {
+		name = redlands_decision.2002.a
+
+		stress_impact = {
+			base = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+redlands_decision.2003 = {
+	type = character_event
+	title = redlands_decision.2003.t
+
+	desc = {
+		desc = redlands_decision.2003.desc
+	}
+
+	theme = arcana
+
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+
+	immediate = {
+		custom_tooltip = redlands_crisis_ended_tooltip
+	}
+
+	option = {
+		name = redlands_decision.2003.a
+
+		stress_impact = {
+			base = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+redlands_decision.2004 = {
+	type = character_event
+	title = redlands_decision.2004.t
+
+	desc = {
+		desc = redlands_decision.2004.desc
+	}
+
+	theme = arcana
+
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+
+	immediate = {
+		custom_tooltip = redlands_crisis_ended_tooltip
+	}
+
+	option = {
+		name = redlands_decision.2004.a
+
+		stress_impact = {
+			base = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+redlands_decision.2005 = {
+	type = character_event
+	title = redlands_decision.2005.t
+
+	desc = {
+		desc = redlands_decision.2005.desc
+	}
+
+	theme = arcana
+
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+
+	immediate = {
+		if = {
+			limit = { NOT = { exists = global_var:redlander_sun_victory } }
+			set_global_variable = redlander_sun_victory
+		}
+		custom_tooltip = redlands_crisis_ended_tooltip
+	}
+
+	option = {
+		name = redlands_decision.2005.a
+
+		stress_impact = {
+			base = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+}

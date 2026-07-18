@@ -1,0 +1,1408 @@
+﻿#
+#namespace = elephant_race
+#
+#############################
+### The Elephant Races
+### by Archduke
+#############################
+## 0001 - The Games Begin
+#
+## 1001 - Jewellery merchant
+## 1002 - Sweet Vendor
+## 1003 - Wrestling
+## 1004 - Drinking
+## 1005 - Pompous Patron
+#
+## 2001 - Whispers in the Stands
+## 2002 - Elephant Cruelty
+## 2003 - Disgusting Display
+#
+## 3001 - Elephant Selection
+## 3002 - Champion succeeds
+## 3003 - Champion fails
+## 3004 - Newcomer succeeds
+## 3005 - Newcomer fails
+## 3006 - Sham race succeeds
+## 3007 - Sham race fails
+#
+## 9001 - Returning a victor
+## 9002 - Returning a failure
+#
+##Games open
+#elephant_race.0001 = {
+	#type = character_event
+	#title = elephant_race.0001.t
+	#desc = elephant_race.0001.desc
+	#theme = martial_strategy_focus
+	#override_background = {
+		#reference = army_camp
+	#}
+	#left_portrait = {
+		#character = root
+		#animation = happiness
+	#}
+#
+	#option = { # See what you find
+		#name = elephant_race.0001.a
+		#trigger_event = {
+			#on_action = elephant_race_festivities_events
+			#days = { 5 10 }
+		#}
+		#ai_chance = {
+			#base = 70
+		#}
+	#}
+#	
+	#option = { # Back out
+		#name = elephant_race.0001.b
+		#scope:activity = {
+			#complete_activity = yes
+		#}
+		#remove_character_flag = planning_an_activity
+		#remove_decision_cooldown = elephant_race_decision
+		#ai_chance = {
+			#base = 30
+		#}
+	#}
+#}
+#
+##jewellery merchant
+#elephant_race.1001 = {
+	#type = character_event
+	#title = elephant_race.1001.t
+	#desc = elephant_race.1001.desc
+	#theme = stewardship_wealth_focus
+	#override_background = {
+		#reference = army_camp
+	#}
+	#left_portrait = {
+		#character = root
+		#animation = happiness
+	#}
+	#right_portrait = {
+		#character = scope:trinket_merchant
+		#animation = personality_greedy
+	#}
+#
+	#immediate = {
+		#hidden_effect = {
+#			
+			#create_character = {
+				#location = root.capital_province
+				#age = { 20 60 }
+				#random_traits = yes
+				#faith = root.faith
+				#culture = root.culture
+				#gender_female_chance = 50 
+				#random_traits_list = {
+					#count = 1
+					#greedy = {}
+					#lustful = {}
+					#gluttonous = {}
+					#callous = {}
+					#ambitious = {}
+				#}
+				#save_scope_as = trinket_merchant
+			#}
+			#hidden_effect = {
+				#scope:trinket_merchant = { 
+					#set_to_lowborn = yes
+				#}
+				#random_list = {
+					#60 = {
+						#scope:trinket_merchant = { add_trait = avaricious }
+					#}
+					#40 = {
+						#scope:trinket_merchant = { add_trait = administrator }
+					#}
+				#}
+			#}
+		#}
+	#}
+#
+	#option = { # Buy it
+		#name = elephant_race.1001.a
+		#remove_short_term_gold = medium_gold_value
+		#create_artifact_brooch_effect = {
+			#OWNER = root
+			#SMITH = scope:owner
+		#}
+		#stress_impact = {
+			#cynical = minor_stress_impact_gain
+			#greedy = miniscule_stress_impact_gain
+		#}
+	#}
+#	
+	#option = { # Haggle
+		#name = elephant_race.1001.b
+#
+		#duel = {
+			#skill = stewardship
+			#value = decent_skill_rating
+			#12 = {		
+				#desc = elephant_race.1001.b.success
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1
+				#}
+				#remove_short_term_gold = minor_gold_value
+				#create_artifact_brooch_effect = {
+					#OWNER = root
+					#SMITH = scope:owner
+				#}
+				#send_interface_toast = {	
+					#title = elephant_race.1001.b.success.t
+				#}
+			#}
+			#12 = {		
+				#desc = elephant_race.1001.b.failure
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = -1
+				#}
+				#remove_short_term_gold = major_gold_value
+				#create_artifact_brooch_effect = {
+					#OWNER = root
+					#SMITH = scope:owner
+				#}
+				#send_interface_toast = {	
+					#title = elephant_race.1001.b.failure.t
+					#add_prestige = minor_prestige_loss
+				#}
+			#}
+		#}
+		#stress_impact = {
+			#impatient = minor_stress_impact_gain
+			#wrathful = minor_stress_impact_gain
+			#arrogant = minor_stress_impact_gain
+			#sadistic = minor_stress_impact_gain
+		#}
+		#ai_chance = {
+			#base = 50
+			#modifier = {
+				#add = 20
+				#OR = {
+					#has_trait = gregarious
+					#has_trait = calm
+					#has_trait = temperate
+				#}
+			#}
+			#compare_modifier = {
+			#target = root
+				#value = stewardship
+				#step = 2
+				#multiplier = 0.2
+			#}
+		#}
+	#}
+#
+	#option = { # I think not
+		#name = elephant_race.1001.c
+		#add_prestige = miniscule_prestige_gain
+		#stress_impact = {
+			#base = minor_stress_impact_gain
+		#}		
+	#}
+#	
+	#after = {
+		#hidden_effect = {
+			#scope:trinket_merchant = {
+				#death = { death_reason = death_disappearance }
+			#}
+		#}
+		#trigger_event = {
+			#on_action = elephant_race_games_events
+			#days = 5
+		#}
+	#}
+#}
+#
+##Sweet exchange
+#elephant_race.1002 = {
+	#type = character_event
+	#title = elephant_race.1002.t
+	#desc = elephant_race.1002.desc
+	#theme = feast_activity
+	#override_background = {
+		#reference = alley_night
+	#}
+	#left_portrait = {
+		#character = root
+		#animation = anger
+	#}
+	#right_portrait = {
+		#character = scope:servant
+		#animation = beg
+	#}
+#
+	#immediate = {
+		#hidden_effect = {
+#			
+			#create_character = {
+				#location = root.capital_province
+				#age = { 16 20 }
+				#random_traits = yes
+				#faith = root.faith
+				#culture = root.culture
+				#gender_female_chance = 50 
+				#random_traits_list = {
+					#count = 1
+					#shy = {}
+					#humble = {}
+					#content = {}
+					#compassionate = {}
+					#generous = {}
+				#}
+				#save_scope_as = servant
+			#}
+			#hidden_effect = {
+				#scope:servant = { 
+					#set_to_lowborn = yes
+				#}
+			#}
+		#}
+	#}
+#
+	#option = { # Accept the treat
+		#name = elephant_race.1002.a
+		#remove_short_term_gold = tiny_gold_value
+		#add_piety = minor_piety_gain
+		#stress_impact = {
+			#wrathful = minor_stress_impact_gain
+			#vengeful = miniscule_stress_impact_gain
+			#arrogant = miniscule_stress_impact_gain
+		#}
+	#}
+#	
+	#option = { # Refuse the treat
+		#name = elephant_race.1002.b
+		#add_prestige = miniscule_prestige_gain
+		#stress_impact = {
+			#compassionate = minor_stress_impact_gain
+			#generous = miniscule_stress_impact_gain
+			#trusting = miniscule_stress_impact_gain
+		#}
+	#}
+#
+	#option = { # Slap them
+		#name = elephant_race.1002.c
+		#trigger = {
+			#OR = {
+			#has_trait = wrathful 
+			#has_trait = vengeful
+			#}
+		#}
+		#add_dread = miniscule_dread_gain
+		#stress_impact = {
+			#gregarious = miniscule_stress_impact_gain
+			#compassionate = minor_stress_impact_gain
+			#calm = miniscule_stress_impact_gain
+			#forgiving = minor_stress_impact_gain
+			#wrathful = minor_stress_impact_loss
+			#vengeful = minor_stress_impact_loss
+			#sadistic = miniscule_stress_impact_loss
+		#}	
+	#}
+#
+	#option = { # Mad ramblings
+		#name = elephant_race.1002.d
+		#trigger = {
+			#has_trait = lunatic
+		#}
+		#add_prestige = minor_prestige_loss
+		#add_character_modifier = {
+			#modifier = pink_skin_modifier
+			#years = 2
+		#}
+	#}
+#	
+	#after = {
+		#hidden_effect = {
+			#scope:servant = {
+				#death = { death_reason = death_disappearance }
+			#}
+		#}
+		#trigger_event = {
+			#on_action = elephant_race_games_events
+			#days = 5
+		#}
+	#}
+#}
+#
+##Wrestling
+#elephant_race.1003 = {
+	#type = character_event
+	#title = elephant_race.1003.t
+	#desc = elephant_race.1003.desc
+	#theme = martial_chivalry_focus
+	#override_background = {
+		#reference = 	army_camp
+	#}
+	#left_portrait = {
+		#character = root
+		#animation = personality_rational
+	#}
+	#right_portrait = {
+		#character = scope:wrestler
+		#animation = rage
+	#}
+#
+	#immediate = {
+		#hidden_effect = {
+#			
+			#create_character = {
+				#location = root.capital_province
+				#age = { 18 45 }
+				#random_traits = yes
+				#faith = root.faith
+				#culture = root.culture
+				#gender = male
+				#prowess = 10
+				#trait = reckless
+				#random_traits_list = {
+					#count = 2
+					#arrogant = {}
+					#wrathful = {}
+					#brave = {}
+					#ambitious = {}
+					#vengeful = {}
+				#}
+				#save_scope_as = wrestler
+			#}
+			#hidden_effect = {
+				#scope:wrestler = { 
+					#set_to_lowborn = yes
+				#}
+			#}
+		#}
+	#}
+#
+	#option = { # Challenge him
+		#name = elephant_race.1003.a
+		#duel = {
+			#skill = prowess
+			#value = 15
+			#50 = {		
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 4
+					#min = -49
+				#}
+				#desc = elephant_race.1003.a.success
+				#show_as_tooltip = {
+					#add_prestige = medium_prestige_gain
+					#reverse_add_opinion = {
+						#target = scope:wrestler
+						#modifier = respect_opinion
+						#opinion = medium_positive_opinion
+					#}
+				#}
+			#}
+			#50 = {		
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = -4
+					#min = -49
+				#}
+				#desc = elephant_race.1003.a.failure
+				#show_as_tooltip = {
+					#add_prestige = minor_prestige_loss
+					#increase_wounds_effect = { REASON = fight }
+					#reverse_add_opinion = {
+						#target = scope:wrestler
+						#modifier = respect_opinion
+						#opinion = low_positive_opinion
+					#}
+					#scope:wrestler = {
+						#increase_wounds_effect = { REASON = fight }
+					#}
+				#}
+			#}
+		#}
+		#stress_impact = {
+			#wrathful = medium_stress_loss
+			#impatient = minor_stress_impact_loss
+			#brave = minor_prestige_value
+			#craven = major_stress_impact_gain
+			#calm = medium_stress_impact_gain
+			#patient = minor_stress_impact_gain
+			#compassionate = minor_stress_impact_gain
+		#}
+	#}
+#	
+	#option = { # Offer him a place
+		#name = elephant_race.1003.b
+		#duel = {
+			#skill = diplomacy
+			#value = 15
+#
+			#50 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 3.5
+					#min = -49
+				#}
+#				
+#
+				#desc = elephant_race.1003.b.success
+				#send_interface_toast = {
+					#title = elephant_race.1003.b.success.t
+					#left_icon = scope:wrestler
+#
+					#add_courtier = scope:wrestler
+					#add_prestige = minor_prestige_gain
+				#}
+			#}
+			#50 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = -3.5
+					#min = -49
+				#}
+#
+				#desc = elephant_race.1003.b.failure
+				#send_interface_toast = {
+					#title = elephant_race.1003.b.failure.t
+					#left_icon = scope:wrestler
+					#right_icon = root
+#
+					#add_prestige = minor_prestige_loss
+				#}
+			#}
+		#}
+	#}
+#
+	#option = { # ignore the display
+		#name = elephant_race.1003.c
+		#add_piety = minor_piety_gain
+		#stress_impact = {
+			#gregarious = miniscule_stress_impact_gain
+			#compassionate = minor_stress_impact_gain
+			#calm = miniscule_stress_impact_gain
+			#forgiving = minor_stress_impact_gain
+			#wrathful = minor_stress_impact_loss
+			#vengeful = minor_stress_impact_loss
+			#sadistic = miniscule_stress_impact_loss
+		#}	
+	#}
+#	
+	#after = {
+		#trigger_event = {
+			#on_action = elephant_race_games_events
+			#days = 5
+		#}
+	#}
+#}
+#
+##Drinking
+#elephant_race.1004 = {
+	#type = character_event
+	#title = elephant_race.1004.t
+	#desc = elephant_race.1004.desc
+	#theme = feast_activity
+	#override_background = {
+		#reference = tavern
+	#}
+	#left_portrait = {
+		#character = scope:drunkard
+		#animation = admiration
+	#}
+	#right_portrait = {
+		#character = root
+		#animation = disbelief
+	#}
+#
+	#immediate = {
+		#hidden_effect = {
+#			
+			#create_character = {
+				#location = root.capital_province
+				#age = { 25 60 }
+				#random_traits = yes
+				#faith = root.faith
+				#culture = root.culture
+				#gender_female_chance = 50 
+				#trait = drunkard
+				#save_scope_as = drunkard
+			#}
+			#hidden_effect = {
+				#scope:drunkard = { 
+					#set_to_lowborn = yes
+				#}
+			#}
+		#}
+	#}
+#
+	#option = { # join for a drink
+		#name = elephant_race.1004.a
+		#random_list = {
+			#75 = { add_stress = -20 }
+			#15 = { add_stress = -30 add_trait = reveler_1 }
+			#10 = { add_stress = -40 add_trait = drunkard }
+		#}
+		#stress_impact = {
+			#shy = medium_stress_impact_gain
+			#drunkard = minor_stress_impact_loss
+			#reveler_1 = miniscule_stress_impact_loss
+			#reveler_2 = miniscule_stress_impact_loss
+			#reveler_3 = miniscule_stress_impact_loss
+		#}
+		#remove_short_term_gold = minor_gold_value
+	#}
+#	
+	#option = { # you're a drunk already, why not more?
+		#name = elephant_race.1004.b
+		#trigger = {
+			#has_trait = drunkard
+		#}
+		#add_piety = medium_piety_loss
+		#stress_impact = {
+			#shy = minor_stress_impact_gain
+			#drunkard = medium_stress_impact_loss
+			#reveler_1 = minor_stress_impact_loss
+			#reveler_2 = minor_stress_impact_loss
+			#reveler_3 = minor_stress_impact_loss
+		#}
+	#}
+#
+	#option = { # walk away
+		#name = elephant_race.1004.c
+		#add_prestige = minor_prestige_loss
+		#stress_impact = {
+			#compassionate = minor_stress_impact_gain
+			#gregarious = minor_stress_impact_gain
+			#drunkard = medium_stress_impact_gain
+			#reveler_1 = medium_stress_impact_gain
+			#reveler_2 = medium_stress_impact_gain
+			#reveler_3 = medium_stress_impact_gain
+		#}
+	#}
+#	
+	#after = {
+		#trigger_event = {
+			#on_action = elephant_race_games_events
+			#days = 5
+		#}
+	#}
+#}
+#
+##Pompous Patron
+#elephant_race.1005 = {
+	#type = character_event
+	#title = elephant_race.1005.t
+	#desc = elephant_race.1005.desc
+	#theme = intrigue_intimidation_focus
+	#override_background = {
+		#reference = army_camp
+	#}
+	#left_portrait = {
+		#character = scope:patron
+		#animation = personality_vengeful
+	#}
+	#right_portrait = {
+		#character = root
+		#animation = disapproval
+	#}
+#
+	#immediate = {
+		#hidden_effect = {
+#			
+			#create_character = {
+				#location = root.capital_province
+				#age = { 35 65 }
+				#random_traits = yes
+				#faith = root.faith
+				#culture = root.culture
+				#gender_female_chance = 50 
+				#trait = arrogant
+				#save_scope_as = patron
+			#}
+			#hidden_effect = {
+				#scope:patron = { 
+					#set_to_lowborn = no
+				#}
+			#}
+		#}
+	#}
+#	
+	#option = { # Call them out
+		#name = elephant_race.1005.a
+		#duel = {
+			#skill = diplomacy
+			#value = 10
+#
+			#50 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 3.5
+					#min = -49
+				#}
+				#modifier = {
+					#add = 10
+					#has_trait = torturer
+				#}
+				#desc = elephant_race.1005.a.success
+				#send_interface_toast = {
+					#title = elephant_race.1005.a.success.t
+					#left_icon = scope:patron
+					#add_prestige = minor_prestige_gain
+				#}
+			#}
+			#50 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = -3.5
+					#min = -49
+				#}
+#
+				#desc = elephant_race.1005.a.failure
+				#send_interface_toast = {
+					#title = elephant_race.1005.a.failure.t
+					#left_icon = scope:patron
+					#right_icon = root
+					#add_prestige = minor_prestige_loss
+				#}
+			#}
+		#}
+		#stress_impact = {
+			#forgiving = minor_stress_impact_gain
+			#patient = miniscule_stress_impact_gain
+		#}
+	#}
+#	
+	#option = { # walk away
+		#name = elephant_race.1005.b
+		#stress_impact = {
+			#vengeful = minor_stress_impact_gain
+			#wrathful = minor_stress_impact_gain
+			#impatient = minor_stress_impact_gain
+			#sadistic = minor_stress_impact_gain
+			#paranoid = minor_stress_impact_gain
+			#callous = miniscule_stress_impact_loss
+		#}
+	#}
+#
+	#option = { # insult
+		#name = elephant_race.1005.c
+		#trigger = {
+			#has_trait = poet
+		#}
+		#stress_impact = {
+			#vengeful = minor_stress_impact_loss
+			#wrathful = minor_stress_impact_loss
+			#impatient = minor_stress_impact_loss
+			#sadistic = minor_stress_impact_loss
+			#forgiving = major_stress_impact_gain
+		#}
+	#}
+#	
+	#after = {
+		#trigger_event = {
+			#on_action = elephant_race_games_events
+			#days = 5
+		#}
+	#}
+#}
+#
+#scripted_trigger elephant_race.2001_secret_knower_trigger = {
+	#opinion = {
+		#target = root
+		#value > 0
+	#}
+	#any_known_secret = {
+		#NOR = {
+			#secret_owner = root
+			#is_known_by = root
+			#secret_owner = prev
+		#}
+		#secret_owner = {
+			#OR = {
+				#is_of_major_interest_trigger = {
+					#CHARACTER = root
+				#}
+				#is_of_minor_interest_trigger = {
+					#CHARACTER = root
+				#}
+			#}
+		#}
+	#}
+#}
+#
+##Whispers in the Stands
+#elephant_race.2001 = {
+	#type = character_event
+	#title = elephant_race.2001.t
+	#desc = elephant_race.2001.desc
+	#theme = intrigue
+	#override_background = {
+		#reference = army_camp
+	#}
+	#left_portrait = {
+		#character = root
+		#animation = boredom
+	#}
+#
+	#trigger = {
+		#scope:activity = {
+			#any_in_list = {
+				#variable = potential_race_participants
+				#is_alive = yes
+				#elephant_race.2001_secret_knower_trigger = yes
+			#}
+		#}
+	#}
+#
+	#immediate = {
+		#scope:activity = {
+			#random_in_list = {
+				#variable = potential_race_participants
+				#limit = {
+					#is_alive = yes
+					#elephant_race.2001_secret_knower_trigger = yes
+				#}
+				#save_scope_as = secret_sharer
+				#random_known_secret = {
+					#limit = { #Prefer a secret about someone highly relevant to activity_owner
+						#NOR = {
+							#secret_owner = root
+							#is_known_by = root
+							#secret_owner = prev
+						#}
+						#secret_owner = {
+							#is_of_major_interest_trigger = {
+								#CHARACTER = root
+							#}
+						#}
+					#}
+					#alternative_limit = { #Fallback to minor interest characters
+						#NOR = {
+							#secret_owner = root
+							#is_known_by = root
+							#secret_owner = prev
+						#}
+						#secret_owner = {
+							#is_of_minor_interest_trigger = {
+								#CHARACTER = root
+							#}
+						#}
+					#}
+					#save_scope_as = secret_to_share
+					#secret_owner = {
+						#save_scope_as = secret_owner
+					#}
+				#}
+			#}
+		#}
+	#}
+#
+	#option = { # See what you can hear
+		#name = elephant_race.2001.a
+		#duel = {
+			#skill = intrigue
+			#value = 10
+#
+			#40 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 3.5
+					#min = -49
+				#}
+				#modifier = {
+					#add = 10
+					#has_trait = schemer
+				#}
+				#modifier = {
+					#add = 5
+					#has_trait = education_intrigue_2
+				#}
+				#modifier = {
+					#add = 10
+					#has_trait = education_intrigue_3
+				#}
+				#modifier = {
+					#add = 15
+					#has_trait = education_intrigue_4
+				#}
+				#desc = elephant_race.2001.a.success
+				#hidden_effect = {
+					#scope:secret_to_share = {
+						#reveal_to = root
+					#}
+				#}
+				#send_interface_toast = {
+					#title = elephant_race.2001.a.success.t
+					#left_icon = root
+				#}
+			#}
+			#60 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = -3.5
+					#min = -49
+				#}
+#
+				#desc = elephant_race.2001.a.failure
+				#send_interface_toast = {
+					#title = elephant_race.2001.a.failure.t
+					#left_icon = root
+					#add_prestige = minor_prestige_loss
+				#}
+			#}
+		#}
+		#stress_impact = {
+			#content = minor_stress_impact_gain
+			#shy = miniscule_stress_impact_gain
+		#}	
+	#}
+#	
+	#option = { # Do nothing
+		#name = elephant_race.2001.b
+		#stress_impact = {
+			#ambitious = medium_stress_impact_gain
+			#paranoid = minor_stress_impact_gain
+		#}
+	#}
+#
+	#after = {
+		#trigger_event = {
+			#id = elephant_race.3001
+			#days = 5
+		#}
+	#}
+#	
+#}
+#
+##Elephant cruelty
+#elephant_race.2002 = {
+	#type = character_event
+	#title = elephant_race.2002.t
+	#desc = elephant_race.2002.desc
+	#theme = diplomacy
+	#override_background = {
+		#reference = army_camp
+	#}
+	#left_portrait = {
+		#character = root
+		#animation = disgust
+	#}
+	#right_portrait = {
+		#character = scope:cruel_trainer
+		#animation = paranoia
+	#}
+#
+	#immediate = {
+		#hidden_effect = {
+#			
+			#create_character = {
+				#location = root.capital_province
+				#age = { 18 50 }
+				#random_traits = yes
+				#faith = root.faith
+				#culture = root.culture
+				#gender_female_chance = 50 
+				#trait = sadistic
+				#trait = craven
+				#save_scope_as = cruel_trainer
+			#}
+			#hidden_effect = {
+				#scope:cruel_trainer = { 
+					#set_to_lowborn = yes
+				#}
+			#}
+		#}
+	#}
+#
+	#option = { # Wave nonchalently
+		#name = elephant_race.2002.a
+		#add_prestige = miniscule_prestige_loss
+		#add_dread = miniscule_dread_loss
+		#stress_impact = {
+			#compassionate = medium_stress_impact_gain
+			#sadistic = minor_stress_impact_loss
+		#}
+	#}
+#	
+	#option = { # Stop them
+		#name = elephant_race.2002.b
+		#duel = {
+			#skill = prowess
+			#value = 10
+#
+			#50 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 3.5
+					#min = -49
+				#}
+				#desc = elephant_race.2002.b.success
+				#send_interface_toast = {
+					#title = elephant_race.2002.b.success.t
+					#left_icon = root
+					#add_prestige = medium_prestige_gain
+					#add_piety = minor_piety_gain
+				#}
+			#}
+			#50 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = -3.5
+					#min = -49
+				#}
+#
+				#desc = elephant_race.2002.b.failure
+				#send_interface_toast = {
+					#title = elephant_race.2002.b.failure.t
+					#left_icon = root
+					#add_prestige = medium_prestige_loss
+					#add_dread = miniscule_dread_gain
+				#}
+			#}
+		#}
+		#stress_impact = {
+			#content = minor_stress_impact_gain
+			#shy = miniscule_stress_impact_gain
+			#sadistic = major_stress_impact_gain
+		#}
+	#}
+#
+	#after = {
+		#trigger_event = {
+			#id = elephant_race.3001
+			#days = 5
+		#}
+	#}
+#		
+#}
+#
+##Disgusting display
+#elephant_race.2003 = {
+	#type = character_event
+	#title = elephant_race.2003.t
+	#desc = elephant_race.2003.desc
+	#theme = party
+	#override_background = {
+		#reference = army_camp
+	#}
+	#left_portrait = {
+		#character = scope:poor_trainer
+		#animation = grief
+	#}
+	#right_portrait = {
+		#character = root
+		#animation = schadenfreude
+	#}
+#
+	#immediate = {
+		#hidden_effect = {
+#			
+			#create_character = {
+				#location = root.capital_province
+				#age = { 20 45 }
+				#random_traits = yes
+				#faith = root.faith
+				#culture = root.culture
+				#gender_female_chance = 50 
+				#trait = trusting
+				#save_scope_as = poor_trainer
+			#}
+			#hidden_effect = {
+				#scope:poor_trainer = { 
+					#set_to_lowborn = yes
+				#}
+			#}
+		#}
+	#}
+#	
+	#option = { # it's funny
+		#name = elephant_race.2003.a
+		#add_prestige = minor_prestige_loss
+		#add_piety = minor_piety_loss
+		#stress_impact = {
+			#lunatic_1 = minor_stress_impact_loss
+			#lunatic_genetic = minor_stress_impact_loss
+			#compassionate = major_stress_impact_gain
+			#sadistic = major_stress_impact_loss
+		#}
+	#}
+#	
+	#option = { # it's not funny
+		#name = elephant_race.2003.b
+		#stress_impact = {
+			#callous = minor_stress_impact_loss
+			#sadistic = medium_stress_impact_gain
+		#}
+	#}
+#
+	#after = {
+		#trigger_event = {
+			#id = elephant_race.3001
+			#days = 5
+		#}
+	#}
+#
+#}
+#
+##Picking an elephant
+#elephant_race.3001 = {
+	#type = character_event
+	#title = elephant_race.3001.t
+	#desc = elephant_race.3001.desc
+	#theme = martial_strategy_focus
+	#override_background = {
+		#reference = garden
+	#}
+	#left_portrait = {
+		#character = root
+		#animation = personality_rational
+	#}
+#
+	#option = { # Champion
+		#name = elephant_race.3001.a
+		#hidden_effect = {
+			#random_list = {
+				#50 = {
+					#modifier = {
+						#add = 15
+						#has_trait = gh_elephant_racer
+					#}
+					#trigger_event = {
+						#id = elephant_race.3002
+						#days = 1
+					#}
+				#}
+				#50 = {
+					#trigger_event = {
+						#id = elephant_race.3003
+						#days = 1
+					#}
+				#}
+			#}
+		#}
+		#remove_short_term_gold = minor_gold_value
+	#}
+#
+	#option = { # Newcomer
+		#name = elephant_race.3001.b
+		#hidden_effect = {
+			#random_list = {
+				#40 = {
+					#modifier = {
+						#add = 15
+						#has_trait = gh_elephant_racer
+					#}
+					#trigger_event = {
+						#id = elephant_race.3004
+						#days = 1
+					#}
+				#}
+				#60 = {
+					#trigger_event = {
+						#id = elephant_race.3005
+						#days = 1
+					#}
+				#}
+			#}
+		#}
+		#remove_short_term_gold = minor_gold_value
+	#}
+#
+	#option = { # Staged
+		#name = elephant_race.3001.c
+		#trigger = {
+			#OR = {
+				#has_trait = schemer
+				#culture = { has_cultural_parameter = elephant_racer_intrigue }
+			#}
+		#}
+		#hidden_effect = {
+			#random_list = {
+				#85 = {
+					#trigger_event = {
+						#id = elephant_race.3006
+						#days = 1
+					#}
+				#}
+				#15 = {
+					#trigger_event = {
+						#id = elephant_race.3007
+						#days = 1
+					#}
+				#}
+			#}
+		#}
+		#remove_short_term_gold = minor_gold_value
+	#}
+#}
+#
+##Your Champion wins
+#elephant_race.3002 = {
+	#type = character_event
+	#title = elephant_race.3002.t
+	#desc = elephant_race.3002.desc
+	#theme = martial_strategy_focus
+	#override_background = {
+		#reference = farmland
+	#}
+#
+	#right_portrait = {
+		#character = root
+		#animation = ecstasy
+	#}
+#
+	#option = { #celebrate!
+		#name = elephant_race.3002.a
+		#add_prestige = medium_prestige_gain
+		#add_gold = 150
+	#}
+#
+	#after = {
+		#trigger_event = {
+			#id = elephant_race.9001
+			#days = 5
+		#}
+	#}
+#}
+#
+##Your Champion fails
+#elephant_race.3003 = {
+	#type = character_event
+	#title = elephant_race.3003.t
+	#desc = elephant_race.3003.desc
+	#theme = martial_strategy_focus
+	#override_background = {
+		#reference = farmland
+	#}
+#
+	#right_portrait = {
+		#character = root
+		#animation = disbelief
+	#}
+#
+	#option = { #accept defeat
+		#name = elephant_race.3003.a
+		#add_prestige = minor_prestige_loss
+	#}
+#
+	#option = { #demand recompense
+		#name = elephant_race.3003.b
+		#trigger = {
+			#OR = {
+				#has_trait = wrathful
+				#has_trait = deceitful
+			#}
+		#}
+		#add_prestige = medium_prestige_loss
+		#add_gold = tiny_gold_value
+	#}
+#
+	#after = {
+		#trigger_event = {
+			#id = elephant_race.9002
+			#days = 5
+		#}
+	#}
+#}
+#
+##Your Newcomer wins
+#elephant_race.3004 = {
+	#type = character_event
+	#title = elephant_race.3004.t
+	#desc = elephant_race.3004.desc
+	#theme = martial_strategy_focus
+	#override_background = {
+		#reference = farmland
+	#}
+#
+	#right_portrait = {
+		#character = root
+		#animation = ecstasy
+	#}
+#
+	#option = { #celebrate!
+		#name = elephant_race.3004.a
+		#add_prestige = medium_prestige_gain
+		#add_gold = 200
+	#}
+#
+	#after = {
+		#trigger_event = {
+			#id = elephant_race.9001
+			#days = 5
+		#}
+	#}
+#}
+#
+##Your Newcomer fails
+#elephant_race.3005 = {
+	#type = character_event
+	#title = elephant_race.3005.t
+	#desc = elephant_race.3005.desc
+	#theme = martial_strategy_focus
+	#override_background = {
+		#reference = farmland
+	#}
+#
+	#right_portrait = {
+		#character = root
+		#animation = disbelief
+	#}
+#
+	#option = { #accept defeat
+		#name = elephant_race.3005.a
+		#add_prestige = minor_prestige_loss
+	#}
+#
+	#option = { #demand recompense
+		#name = elephant_race.3005.b
+		#trigger = {
+			#OR = {
+				#has_trait = wrathful
+				#has_trait = vengeful
+			#}
+		#}
+		#add_prestige = medium_prestige_loss
+		#add_character_modifier = { 
+			#modifier = kashiryan_elephant_trophy_modifier
+			#years = 5 
+		#}
+	#}
+#
+	#after = {
+		#trigger_event = {
+			#id = elephant_race.9002
+			#days = 5
+		#}
+	#}
+#}
+#
+##Your Sham race goes as planned
+#elephant_race.3006 = {
+	#type = character_event
+	#title = elephant_race.3006.t
+	#desc = elephant_race.3006.desc
+	#theme = martial_strategy_focus
+	#override_background = {
+		#reference = farmland
+	#}
+#
+	#right_portrait = {
+		#character = root
+		#animation = ecstasy
+	#}
+#
+	#option = { #celebrate!
+		#name = elephant_race.3006.a
+		#add_prestige = medium_prestige_loss
+		#add_gold = 250
+	#}
+#
+	#after = {
+		#trigger_event = {
+			#id = elephant_race.9001
+			#days = 5
+		#}
+	#}
+#}
+#
+##Your Sham race fails
+#elephant_race.3007 = {
+	#type = character_event
+	#title = elephant_race.3007.t
+	#desc = elephant_race.3007.desc
+	#theme = martial_strategy_focus
+	#override_background = {
+		#reference = farmland
+	#}
+#
+	#right_portrait = {
+		#character = root
+		#animation = shame
+	#}
+#
+	#option = { #accept defeat
+		#name = elephant_race.3007.a
+		#add_prestige = major_prestige_loss
+	#}
+#
+	#after = {
+		#trigger_event = {
+			#id = elephant_race.9002
+			#days = 5
+		#}
+	#}
+#}
+#
+##Returning a victor
+#elephant_race.9001 = {
+	#type = character_event
+	#title = elephant_race.9001.t
+	#desc = elephant_race.9001.desc
+	#theme = martial_strategy_focus
+	#override_background = {
+		#reference = army_camp
+	#}
+	#right_portrait = {
+		#character = root
+		#animation = happiness
+	#}
+#
+	#option = { # Going home
+		#name = elephant_race.9001.a
+	#}
+#
+	#immediate = {
+		#hidden_effect = {
+			#random_list = {
+				#75 = {
+					#add_trait = gh_elephant_racer
+				#}
+				#25 = {
+					#add_prestige = minor_prestige_gain
+				#}
+			#}
+		#}
+	#}
+#
+	#after = {
+		##End the activity
+		#if = {
+			#limit = {
+				#exists = scope:activity
+			#}
+			#scope:activity = {
+				#complete_activity = yes
+			#}
+		#}	
+	#}
+#}
+#
+##Returning in shame
+#elephant_race.9002 = {
+	#type = character_event
+	#title = elephant_race.9002.t
+	#desc = elephant_race.9002.desc
+	#theme = martial_strategy_focus
+	#override_background = {
+		#reference = army_camp
+	#}
+	#right_portrait = {
+		#character = root
+		#animation = shame
+	#}
+#
+	#option = { # Going home
+		#name = elephant_race.9002.a
+	#}
+#
+	#after = {
+		##End the activity
+		#if = {
+			#limit = {
+				#exists = scope:activity
+			#}
+			#scope:activity = {
+				#complete_activity = yes
+			#}
+		#}	
+	#}
+#}

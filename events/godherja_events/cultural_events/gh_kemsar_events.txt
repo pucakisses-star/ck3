@@ -1,0 +1,19 @@
+﻿namespace = kemsar
+kemsar.0001 = {
+	type = character_event
+	content_source = dlc_gh
+	title = kemsar_flavor.0001.t
+	desc = kemsar_flavor.0001.desc
+	theme = war
+	left_portrait = {
+		character = root
+		animation = personality_vengeful
+	}
+	override_background = { reference = wilderness_desert }
+
+	option = {
+		name = kemsar.0001.a
+		add_trait = gh_kemsari_warlord
+		add_pressed_claim = title:e_amsari
+	}
+}

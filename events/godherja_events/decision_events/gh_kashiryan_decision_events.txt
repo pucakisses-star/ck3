@@ -1,0 +1,118 @@
+﻿namespace = kashirya_decision
+
+####################################################
+
+### Kashirya decision events ###
+
+#Forming the Taryaad Saramsaasan(reformer event)
+#Forming the Taryaad Saramsaasan(foreign ruler event)
+#Forming the Taryaad Saramsaasan(Kashiryan ruler event)
+
+# 1000-1099 Otachedian Restoration Events
+
+
+####################################
+
+#####################################
+###Forming the Taryaad Saramsaasan###
+## By Darth Plague
+#####################################
+
+kashirya_decision.0001 = {
+	title = taryaad_reformed.0001.t
+	desc = taryaad_reformed.0001.desc
+	type = character_event
+	content_source = dlc_gh
+	theme = realm
+	left_portrait = {
+		character = scope:taryaad_reformer
+		animation = personality_bold
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"	
+		form_taryaad_saramsaasan_effect = yes
+
+		if = {
+			limit = { NOT = { government_allows = administrative } }
+			convert_to_administrative_from_feudalism_effect = yes
+		}
+	}
+
+	option = {
+		name = taryaad_reformed.0001.a
+		remove_nickname = yes
+		give_nickname = nick_true_heir_of_asojiva # 'The True Heir Of Asojiva'
+		if = {
+			limit = {
+				prestige_level < 5
+			}
+			add_prestige_level = 1
+		}
+		
+		add_trait = gh_heir_of_asojiva 
+		
+		dynasty = {
+			add_dynasty_prestige = 250
+		}
+	}
+}
+
+kashirya_decision.0002 = {
+	title = taryaad_reformed.0002.t
+	desc = taryaad_reformed.0002.desc
+	type = character_event
+	content_source = dlc_gh
+	theme = realm
+	right_portrait = {
+		character = scope:taryaad_reformer
+		animation = personality_bold
+	}	
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"	
+	}
+	option = {
+		name = taryaad_reformed.0002.a
+	}
+}
+
+kashirya_decision.0003 = {
+	title = taryaad_reformed.0003.t
+	desc = taryaad_reformed.0003.desc
+	type = character_event
+	content_source = dlc_gh
+	theme = realm
+	right_portrait = {
+		character = scope:taryaad_reformer
+		animation = personality_bold
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"	
+	}
+	option = {
+		name = taryaad_reformed.0003.a
+	}
+}
+
+kashirya_decision.1001 = {
+	title = kashirya_decision.1001.t
+	desc = kashirya_decision.1001.desc
+	type = character_event
+	window = fullscreen_event
+	content_source = dlc_gh
+	theme = realm
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
+	override_background = { reference = fp3_fullscreen_rekindle }
+
+	immediate = {
+		otachedian_restoration_decision_effects = yes
+		title:e_otached_empire = { save_scope_as = otached_loc } #Gets renamed 
+		if = {
+			limit = { NOT = { government_allows = administrative } }
+			convert_to_administrative_from_feudalism_effect = yes
+		}
+	}
+	option = {
+		name = kashirya_decision.1001.a
+	}
+}

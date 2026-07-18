@@ -1,0 +1,168 @@
+﻿namespace = study_magic
+
+##################################################
+
+### Magic Study Events
+
+# 0001-0010 - Generic Magic Study Success
+# 0011-0020 - Generic Magic Study Failure
+
+##################################################
+
+##################################################
+# Generic Magic Study Success
+# by Hapchazzard
+# 0001 - 0010
+##################################################
+
+study_magic.0001 = {
+	type = character_event
+	content_source = dlc_gh
+	title = study_magic.0001.t
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:scheme.var:knowledge_gain
+					scope:scheme.var:knowledge_gain < 3
+				}
+				desc = study_magic.0001.desc.minor
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:scheme.var:knowledge_gain
+					scope:scheme.var:knowledge_gain < 10
+					scope:scheme.var:knowledge_gain > 5
+				}
+				desc = study_magic.0001.desc.major
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:scheme.var:knowledge_gain
+					scope:scheme.var:knowledge_gain >= 10
+				}
+				desc = study_magic.0001.desc.epic
+			}
+			desc = study_magic.0001.desc.mid
+		}
+	}
+	theme = education
+	left_portrait = {
+		character = root
+		animation = happiness
+	}
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+	
+	immediate = {
+		scope:scheme.var:study_magic_school = { pick_random_valid_aspect_to_increase_from_scheme_effect = yes }
+		#if = {
+		#	limit = { NOT = { exists = scope:spell_being_studied_scope } }
+		#	random_in_global_list = {
+		#		variable = global_spell_list
+		#		limit = { 
+		#			NOT = {  
+		#				root = {
+		#					is_target_in_variable_list = {
+		#						name = known_spell_list
+		#						target = prev
+		#					}
+		#				}
+		#			} 
+		#		}
+		#		weight = {
+		#			base = 1
+		#			modifier = {
+		#				add = 10
+		#				spell_level_value < 3
+		#			}
+		#		}
+		#		save_scope_as = spell_being_studied_scope
+		#	}
+		#}
+	}
+
+	option = {
+		name = study_magic.0001.a
+		
+		scope:scheme = {
+			end_scheme = yes
+		}
+		magic_aspect_effect = { MODE = increase_from_scheme }
+		#learn_spell_effect = { SPELL = scope:spell_being_studied_scope }
+	}
+}
+
+##################################################
+# Generic Magic Study Failure
+# by Hapchazzard
+# 0011 - 0020
+##################################################
+
+study_magic.0011 = {
+	type = character_event
+	content_source = dlc_gh
+	title = study_magic.0011.t
+	desc = study_magic.0011.desc
+	theme = education
+
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	option = {
+		name = study_magic.0011.a
+		scope:scheme = {
+			end_scheme = yes
+		}
+	}
+
+	option = {
+		name = study_magic.0011.b
+		add_stress = massive_stress_gain
+		custom_tooltip = scheme_loses_half_progress
+		hidden_effect = {
+			scope:scheme = {
+				add_scheme_progress = -5
+			}
+		}
+	}
+}
+
+##################################################
+# Spend Gold For Progress
+# by Hapchazzard
+# 0101 - 0110
+##################################################
+
+
+#study_magic.0101 = {
+#	type = character_event
+#	content_source = dlc_gh
+#	title = study_magic.0101.t
+#	desc = study_magic.0101.desc
+#	theme = education
+#	left_portrait = {
+#		character = root
+#		animation = rage
+#	}
+#	widget = {
+#		gui = "event_window_widget_scheme"
+#		container = "custom_widgets_container"
+#	}
+#
+#	option = {
+#		name = study_magic.0101.a
+#		scope:scheme = {
+#			end_scheme = yes
+#		}
+#	}
+#}

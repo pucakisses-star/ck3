@@ -1,0 +1,227 @@
+﻿#
+#
+#				   .* *.			   `o`o`
+#				   *. .*			  o`o`o`o	  ^,^,^
+#					 * \			   `o`o`	 ^,^,^,^,^
+#						\	 ***		|	   ^,^,^,^,^
+#						 \   *****	   |		/^,^,^
+#						  \   ***		|	   /
+#			  ~@~*~@~	  \   \		 |	  /
+#			~*~@~*~@~*~	 \   \		|	 /
+#			~*~@smd@~*~	  \   \	   |	/	 #$#$#		.`'.;.
+#			~*~@~*~@~*~	   \   \	  |   /	 #$#$#$#   00  .`,.',
+#			  ~@~*~@~ \		\   \	 |  /	  /#$#$#   /|||  `.,'
+#_______________________\________\___\____|_/______/_________|\/\___||______
+#
+#
+#
+#
+#
+#								  ___________
+#							 .---'::'		`---.
+#							(::::::'			  )
+#							|`-----._______.-----'|
+#							|			  :::::::|
+#						   .|			   ::::::!-.
+#						   \|			   :::::/|/
+#							|			   ::::::|
+#							|   GH PERFECT(ISH):::|
+#							|  ATTENDANCE AWARD:::|
+#							|  FROM PANZY TO TB:::|
+#							|   XOXOXOXOXOXOXO::::|
+#							J			  :::::::F
+#							 \			:::::::/
+#							  `.		.:::::::'
+#								`-._  .::::::-'
+#____________________________________|  """|"_________________________________________
+#									|  :::|
+#									F   ::J
+#								   /	 ::\										
+#							  __.-'	  :::`-.__
+#							 (_		   ::::::_)
+#							   `"""---------"""'
+#
+# TO ALL WHO SHALL SEE THESE PRESENTS, GREETING! KNOW YE, THAT REPOSING SPECIAL TRUST AND
+# CONFIDENCE IN THE FIDELITY AND ABILITIES OF TBPINEAPPLE, I, LEAD DEVELOPER JAKOB ANTHONY
+# ZABOROWSKI 'LONELY KNIGHT' DOES APPOINT TBPINEAPPLE AS THE RECIPIENT OF THIS ALMOST PER-
+# FECT ATTENDANCE AWARD (NOT COUNTING ALL THOSE TIMES THEY WEREN'T WORKING, AS LAZINESS AND
+# FAILURE TO RESPOND TO THE VERY REASONABLE AMOUNT OF DAILY PINGS FROM MYSELF IS AN INSIDIOUS
+# AND TERRIBLE CURSE AMONG THE SLAVES OF THE DEV TEAM) ON THIS DAY OF OUR LORD, EIGTH OF
+# JUNE, TWO THOUSAND TWENTY-TWO, TWO MONTHS, TWO DAYS, AND TWO YEARS AFTER THE FORMATION OF
+# THE GODHERJA TEAM IN ITS GREAT GLORY AND DILIGENCE AND SOMEWHAT FUNCTIONING CODE.
+#
+# TBPineapple has been with us since December 18th, 2020, nearly two entire years. He has,
+# despite many on our little team not knowing him very well due to his stoic and noble de-
+# meanor, been with Godherja since the first error we dropped into the mod without caring
+# all the way to the present day where we have grinded through tens of thousands to clean up
+# the sins that old nerds like him put upon us. He's always been here, has always been a friend,
+# and even though we might miss when he was a bit more active, I'm extremely glad he's still
+# here with us. Largely since he's a living fossil for the team to oooh and aaah at.
+#
+# This file was going to be deleted as it was sitting in the mod just shooting errors for
+# years without ever being implemented. When Divination was implemented, this file had been
+# forgotten and left behind. It was one of the oldest in the mod when it was about to be deleted 
+# but that was until TB informed us it was his first ever contribution to the mod, and the first
+# code he added to a mod.
+#
+# With that said, it was impossible for us to delete this file in good conscious. So instead it'll
+# be here as a monument to TBPineapple sometimes showing up, largely only when he's personally
+# effected by something happening thanks to a 'I got mine' mercenary attitude that has seen
+# him ruthlessly destroy his opposition in order to survive the brutal darwinism of modding
+# under Lonely Knight.
+#
+# So to that, I say, TBPineapple, we salute you!
+#
+#	   .---.		 
+#  ___ /_____\		
+# /\.-`( '.' )		
+#/ /	\_-_/_		
+#\ `-.-"`'V'//-.	  
+# `.__,   |// , \	 
+#	 |Ll //Ll|\ \	
+#	 |__//   | \_\   
+#	/---|[]==| / /   
+#	\__/ |   \/\/	
+#	/_   | Ll_\|	 
+#	 |`^"""^`|	   
+#	 |   |   |	   
+#	 |   |   |	   
+#	 |   |   |	   
+#	 |   |   |	   
+#	 L___l___J	   
+#	  |_ | _|		
+#	 (___|___)	   
+#	  ^^^ ^^^		
+#
+##namespace = divination
+#
+#divination.0001 = {
+#	type = character_event
+#	theme = default
+#	desc = divination.0001.desc
+#WAIT
+#
+#
+# STOP
+#	option = {
+#		name = divination.0001.a
+#	}
+#}
+#
+# HOLD UP
+#
+#
+# LITERALLY MINUTES AFTER I FINISHED WRITING THIS GOD DAMN THING INSTEAD OF DOING MY IN REAL LIFE JOB
+# OR HELPING HAP NOT CRASH HIS GIT BECAUSE OF FILE NAMES OR WHATEVER TB INFORMED ME THAT HE WAS REMEMBERING
+# WRONG AND THIS ISNT HIS FIRST FILE
+#
+# THIS FILE MEANS NOTHING
+#
+# IT'S A MONUMENT TO LIES
+#
+# I FUCKING HATE TBPINEAPPLE HE'S THE WORST
+#
+# WHY IS HE EVEN STILL HERE
+#
+# WHY AM I EVEN STILL HERE?
+#
+# GOD DAMN IT
+#
+# TB WHEN YOU READ THIS I HATE YOU
+#
+#
+#
+#
+#
+#
+#
+#
+#divination.0002 = {
+#	type = character_event
+#	theme = default
+#	desc = divination.0002.desc
+#
+#	option = {
+#		name = divination.0002.a
+#	}
+#}
+#
+#divination.0003 = {
+#	type = character_event
+#	theme = default
+#	desc = divination.0003.desc
+#
+#	option = {
+#		name = divination.0003.a
+#	}
+#}
+#
+#divination.0004 = {
+#	type = character_event
+#	theme = default
+#	desc = divination.0004.desc
+#
+#	option = {
+#		name = divination.0004.a
+#	}
+#}
+#
+#divination.0005 = {
+#	type = character_event
+#	theme = default
+#	desc = divination.0005.desc
+#
+#	option = {
+#		name = divination.0005.a
+#	}
+#}
+#
+#divination.0006 = {
+#	type = character_event
+#	theme = default
+#	desc = divination.0006.desc
+#
+#	option = {
+#		name = divination.0006.a
+#	}
+#}
+#
+#divination.0007 = {
+#	type = character_event
+#	theme = default
+#	desc = divination.0007.desc
+#
+#	option = {
+#		name = divination.0007.a
+#	}
+#}
+#
+#divination.0008 = {
+#	type = character_event
+#	theme = default
+#	desc = divination.0008.desc
+#
+#	option = {
+#		name = divination.0008.a
+#	}
+#}
+#
+#divination.0009 = {
+#	type = character_event
+#	theme = default
+#	desc = divination.0009.desc
+#
+#	option = {
+#		name = divination.0009.a
+#	}
+#}
+#
+#divination.0010 = {
+#	type = character_event
+#	theme = default
+#	desc = divination.0010.desc
+#
+#	option = {
+#		name = divination.0010.a
+#	}
+#}

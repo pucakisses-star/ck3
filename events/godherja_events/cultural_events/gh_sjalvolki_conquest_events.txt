@@ -1,0 +1,6260 @@
+﻿namespace = sjalvolki_conquest
+
+##################################################
+# #Major Conquest Events
+# TO BE REORGANIZED
+#
+# #Flavour Conquest Events
+# 0101 - 0110	The Spoils of War - you find a nice villa to loot.
+##################################################
+
+# Call to arms to a vassal
+sjalvolki_conquest.0001 = {
+	type = character_event
+	content_source = dlc_gh
+	theme = war
+	title = sjalvolki_conquest.0001.t
+	desc = sjalvolki_conquest.0001.desc
+	
+	trigger = {
+		NOT = {
+			has_character_flag = aversarian_migration
+		}
+		OR = {
+			is_landed = yes
+			is_imperrech_landless_adventurer = yes	
+		}
+	}
+	
+	override_background = {
+		reference = throne_room_tribal
+	}
+	
+	left_portrait = {
+		character = scope:attacker
+		animation = war_attacker
+	}
+	
+	right_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	widget = {
+		gui = "event_window_widget_migration"
+		container = "custom_widgets_container"
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = sjalvolki_conquest_contribution
+				}
+			}
+			set_variable = {
+				name = sjalvolki_conquest_contribution
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_variable = sjalvolki_conquest_tribe_size
+				}
+			}
+			set_variable = {
+				name = sjalvolki_conquest_tribe_size
+				value = 14
+			}
+		}
+		if = {
+			limit = {
+				highest_held_title_tier = tier_county
+				NOT = {
+					has_character_flag = reduced_tribe_size
+				}
+			}
+			change_variable = {
+				name = sjalvolki_conquest_tribe_size
+				subtract = 5
+			}
+			add_character_flag = reduced_tribe_size
+		}
+		if = {
+			limit = {
+				highest_held_title_tier = tier_duchy
+				NOT = {
+					has_character_flag = reduced_tribe_size
+				}
+			}
+			change_variable = {
+				name = sjalvolki_conquest_tribe_size
+				subtract = 3
+			}
+			add_character_flag = reduced_tribe_size
+		}
+		if = {
+			limit = {
+				is_imperrech_landless_adventurer = yes
+				NOT = { has_character_flag = imperrech_landless_adventurer }
+			}
+			add_character_flag = imperrech_landless_adventurer
+		}
+	}
+	
+	option = {	# Gather up troops and fight yourself!
+		name = sjalvolki_conquest.0001.a
+		trigger = { 
+			NOR = { 
+				has_character_flag = holdover_in_old_lands 
+				has_character_flag = created_for_migration
+			}
+			trigger_if = {
+				limit = { is_landless_adventurer = yes }
+				domicile = {
+					provisions >= medium_provisions_value
+				}
+			}
+		}
+		custom_tooltip = risky_tt
+		custom_tooltip = current_contribution_tt
+		show_as_unavailable = {
+			always = yes
+		}
+		if = {
+			limit = { var:sjalvolki_conquest_tribe_size <= 0 }
+			remove_short_term_gold = medium_gold_value
+		}
+		if = {
+			limit = { is_landless_adventurer = yes }
+			domicile = {
+				change_provisions = medium_provisions_loss
+			}
+		}
+		else = {
+			custom_tooltip = saps_development_tt
+			change_variable = {
+				name = sjalvolki_conquest_tribe_size
+				subtract = 1
+			}
+		}
+		add_prestige = sjalvolki_conquest_prestige_from_gathering_troops_value
+		if = {
+			limit = { exists = dynasty }
+			dynasty = {
+				add_dynasty_prestige = prev.sjalvolki_conquest_contribution_from_gathering_troops_value
+			}
+		}
+		scope:attacker = {
+			if = {
+				limit = { NOT = { has_variable = sjalvolki_conquest_total_host_size } }
+				set_variable = {
+					name = sjalvolki_conquest_total_host_size
+					value = root.sjalvolki_conquest_gathered_troops_number_value
+				}
+			}
+			else = {
+				change_variable = {
+					name = sjalvolki_conquest_total_host_size
+					add = root.sjalvolki_conquest_gathered_troops_number_value
+				}
+			}
+		}
+		change_variable = {
+			name = sjalvolki_conquest_contribution
+			add = sjalvolki_conquest_contribution_from_gathering_troops_value
+		}
+		ai_chance = {
+			base = 90
+			modifier = {
+				factor = 5
+				has_trait = ambitious
+			}
+			modifier = {
+				factor = 0.2
+				has_trait = craven
+			}
+			modifier = {
+				factor = 0.1
+				OR = {
+					culture = { has_cultural_pillar = heritage_aversarian } # Aversarians should be less likely to seek fame and glory against Aversarians, generally
+					religion = religion:aversarinas_aagiokrata_religion
+				}
+			}
+			modifier = {
+				factor = 0
+				AND = {
+					has_trait = content	# Content characters will only join out of a sense of duty
+					NOR = {
+						has_trait = just
+						has_trait = honest
+						has_relation_friend = scope:attacker
+					}
+				}
+			}
+			modifier = { # They should be less interested in moving farther, generally
+				factor = 0.25
+				has_character_flag = sjalvolki_vanguard
+			}
+			modifier = { # Clanlanders shouldnt be interested 
+				factor = 0
+				culture = { has_cultural_pillar = heritage_clanlander }
+			}
+			ai_value_modifier = {
+				ai_boldness = 0.5
+			}
+		}
+		scope:war = {
+			if = {
+				limit = { 
+					root.highest_held_title_tier = tier_kingdom
+					NOT = { root = { is_participant_in_war = scope:war } }
+				}
+				add_attacker = ROOT
+			}
+		}
+		trigger_event = {
+			on_action = sjalvolki_conquest_events
+			days = { 15 30 }
+		}
+	}
+	
+	option = {	# Not interested at the moment
+		name = sjalvolki_conquest.0001.b
+		trigger = { 
+			NOR = { 
+				has_character_flag = holdover_in_old_lands 
+				has_character_flag = created_for_migration
+			}
+			
+		}
+		ai_chance = {	# AI will never pick this unless they have legitimate temporary circumstances that make participating difficult
+			base = 0
+			modifier = {
+				add = 150
+				is_pregnant = yes
+			}
+			modifier = {
+				add = 300
+				has_trait = wounded_3
+			}
+			modifier = {
+				add = 200
+				has_trait = wounded_2
+			}
+			modifier = {
+				add = 100
+				has_trait = wounded_1
+			}
+			modifier = {
+				add = 50
+				has_trait = ill
+			}
+			modifier = {	# Ambitious characters are extremely likely to stay in the conquest until they get a kingdom
+				factor = 0.5
+				has_trait = ambitious
+				NOR = {
+					highest_held_title_tier >= tier_kingdom
+					capital_county = { is_sjalvolki_kingdom_capital = yes }
+				}
+			}
+			modifier = {
+				add = 100
+				is_landless_adventurer = yes
+				domicile = {
+					provisions < medium_provisions_value
+				}
+			}
+		}
+	}
+	
+	option = {	# Not interested, ever
+		name = sjalvolki_conquest.0001.c
+		custom_tooltip = no_more_sjalvolki_conquest_tt
+		add_character_flag = aversarian_migration
+		every_child = { add_character_flag = aversarian_migration }
+		if = {
+			limit = {
+				is_landed = yes
+			}
+			if = {
+				limit = { 
+					var:sjalvolki_conquest_tribe_size > 0 
+					trigger_if = {
+						limit = { exists = capital_county }
+						NOT = { capital_county = { has_county_modifier = gh_sjalvolki_resettlement_modifier } }
+					}
+				}
+				capital_county = {
+					change_development_level = prev.var:sjalvolki_conquest_tribe_size
+					add_county_modifier = {
+						modifier = gh_sjalvolki_resettlement_modifier
+						years = 40
+					}
+				}
+			}
+			else = {
+				capital_county = {
+					add_county_modifier = {
+						modifier = gh_sjalvolki_resettlement_modifier
+						years = 30
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+					exists = capital_county
+					NOT = { culture = { has_cultural_pillar = heritage_clanlander } }
+				}
+				add_character_modifier = {
+					modifier = gh_sjalvolki_resettlement_focus_modifier
+					years = 30
+				}
+				root.capital_county = {
+					set_county_culture = root.culture
+					set_county_faith = root.faith
+				} 
+			}
+			if = { # We want Clanlanders to get a different modifier so they're able to access Vassalization wars more
+				limit = {
+					is_ai = yes
+					exists = capital_county
+					culture = { has_cultural_pillar = heritage_clanlander }
+				}
+				add_character_modifier = {
+					modifier = gh_sjalvolki_rebuilding_focus_modifier
+					years = 30
+				}
+				root.capital_county = {
+					set_county_culture = root.culture
+					set_county_faith = root.faith
+				} 
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier ={
+				factor = 0
+				years_from_game_start <= 10
+				NOR = {
+					has_character_flag = already_received_lands
+					has_character_flag = created_for_migration
+				}
+			}
+			modifier = {
+				factor = 0
+				AND = {
+					highest_held_title_tier >= tier_kingdom
+					years_from_game_start <= 12
+				}
+				NOR = {
+					has_character_flag = already_received_lands
+					has_character_flag = created_for_migration
+					has_character_flag = sjalvolki_vanguard
+				}
+			}
+			modifier = {
+				factor = 0
+				AND = {
+					has_religion = religion:sjalvolki_religion
+					years_from_game_start <= 7
+				}
+				NOR = {
+					has_character_flag = already_received_lands
+					has_character_flag = created_for_migration
+					has_character_flag = sjalvolki_vanguard
+				}
+			}
+			modifier = {
+				factor = 50
+				any_parent = {
+					has_character_flag = already_received_lands
+				}
+			}
+			modifier = {	# Ambitious characters are extremely likely to stay in the conquest until they get a kingdom
+				factor = 0.5
+				has_trait = ambitious
+				NOR = {
+					highest_held_title_tier >= tier_kingdom
+					capital_county = { is_sjalvolki_kingdom_capital = yes }
+				}
+			}
+			modifier = {	# Characters become drastically more likely to drop out after receiving land unless motivated by glory or duty
+				factor = 2
+				has_character_flag = already_received_lands
+				NOR = {
+					AND = {
+						has_trait = arrogant
+						OR = {
+							has_trait = brave
+							has_trait = ambitious
+						}
+					}
+					AND = {
+						has_trait = just
+						has_trait = honest
+					}
+					has_relation_friend = scope:attacker
+				}
+			}
+			modifier = {
+				factor = 4
+				capital_province = {
+					OR = {
+						GH_any_farmlands_terrain_trigger = yes
+						GH_any_floodplains_terrain_trigger = yes
+						GH_any_oasis_terrain_trigger = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 0.2
+				capital_province = {
+					OR = {
+						GH_any_desert_terrain_trigger = yes
+						GH_any_steppe_terrain_trigger = yes
+						GH_any_mountains_terrain_trigger = yes
+						GH_any_wetlands_terrain_trigger = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				capital_province = {
+					has_special_building = yes
+				}
+			}
+			modifier = { # Vanguard are likely to stick where they start
+				factor = 100 
+				OR = {
+					has_character_flag = sjalvolki_vanguard
+					liege = { has_title = title:k_fenvir } # just in case
+				}
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					culture = { has_cultural_pillar = heritage_aversarian } # Aversarians should be less likely to seek fame and glory against Aversarians, generally
+					religion = religion:aversarinas_aagiokrata_religion
+				}
+			}
+			modifier = {
+				factor = 100
+				OR = { # Clanlanders should be less likely to seek fame and glory, they already got their land back
+					culture = { has_cultural_pillar = heritage_clanlander }
+					religion = religion:clanlander_religion
+				}
+			}
+		}
+	}
+}
+
+# Hidden event for Cenware to get his troops
+sjalvolki_conquest.0002 = {
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = { 
+				has_variable = sjalvolki_conquest_total_host_size
+				is_at_war = yes
+			}
+			random_character_war = {
+				save_scope_as = imperrech_war
+			}
+			while = {
+				limit = {
+					root.var:sjalvolki_conquest_total_host_size > 12000
+				}
+				change_variable = {
+					name = sjalvolki_conquest_total_host_size
+					subtract = 12000
+				}
+				spawn_army = {
+					name = "IMPERRECH_HOST"
+					men_at_arms = {
+						type = armored_footmen
+						men = 12000
+					}
+					location = root.capital_province
+					war = scope:imperrech_war
+				}
+			}
+			spawn_army = {
+				name = "IMPERRECH_HOST"
+				men_at_arms = {
+					type = armored_footmen
+					men = root.var:sjalvolki_conquest_total_host_size
+				}
+				location = root.capital_province
+				war = scope:imperrech_war
+			}
+			debug_log = "IMPERRECH HOST SIZE: [THIS.Var('sjalvolki_conquest_total_host_size').GetValue|0]"
+		}
+		set_variable = {
+			name = sjalvolki_conquest_total_host_size
+			value = 0
+		}
+	}
+}
+
+# Offer to vanguard rulers to swear fealty
+sjalvolki_conquest.0003 = {
+	type = character_event
+	content_source = dlc_gh
+	theme = war
+	title = sjalvolki_conquest.0003.t
+	desc = sjalvolki_conquest.0003.desc
+	
+	override_background = {
+		reference = throne_room_tribal
+	}
+	
+	left_portrait = {
+		character = scope:attacker
+		animation = war_attacker
+	}
+
+	right_portrait = {
+		character = root
+		animation = war_over_win
+	}
+	
+	option = {	# Swear fealty
+		name = sjalvolki_conquest.0003.a
+		if = {
+			limit = {
+				trigger_if = {
+					limit = { exists = scope:war }
+					scope:war = {
+						any_war_defender = {
+							this = root
+						}
+					}
+				}
+			}
+			scope:war = {
+				remove_participant = root
+			}
+		}
+		set_variable = sjalvolki_vanguard
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = title_change
+			add_claim_on_loss = no
+		}
+		change_liege = {
+			liege = scope:attacker
+			change = scope:title_change
+		}
+		resolve_title_and_vassal_change = scope:title_change
+		custom_tooltip = sjalvolki_conquest_vanguard_tt
+		every_held_title = { # Migrate the Vanguard's culture into their personally held counties
+			limit = { tier = tier_county }
+			set_county_culture = root.culture
+			set_county_faith = root.faith
+		}
+		every_vassal = {
+			limit = { highest_held_title_tier >= tier_county }
+			trigger_event = sjalvolki_conquest.0014
+		}
+		ai_chance = {
+			base = 100
+			modifier = {	# Some characters will never beg for mercy
+				factor = 0
+				character_behavior_wont_beg_for_mercy_trigger = yes
+			}
+		}
+	}
+	
+	option = {	# Die on this hill, for some reason
+		name = sjalvolki_conquest.0003.b
+		
+		if = {
+			limit = {
+				trigger_if = {
+					limit = { exists = scope:war }
+					scope:war = {
+						NOT = {
+							any_war_defender = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+			scope:war = {
+				add_defender = prev
+			}
+		}
+		ai_chance = {
+			base = 0
+			modifier = {	# Some characters will never beg for mercy
+				factor = 100
+				character_behavior_wont_beg_for_mercy_trigger = yes
+			}
+		}
+	}
+}
+
+# Offer to Aversarian rulers to grovel for mercy
+sjalvolki_conquest.0004 = {
+	type = character_event
+	content_source = dlc_gh
+	theme = war
+	title = sjalvolki_conquest.0004.t
+	desc = sjalvolki_conquest.0004.desc
+	
+	override_background = {
+		reference = throne_room
+	}
+	
+	left_portrait = {
+		character = scope:attacker
+		animation = war_attacker
+	}
+
+	right_portrait = {
+		character = root
+		animation = worry
+	}
+	
+	option = {	# Beg for mercy
+		name = sjalvolki_conquest.0004.a
+		add_prestige = -500
+		custom_tooltip = sjalvolki_conquest_request_submission_aversarian_tt
+		trigger = {
+			character_behavior_wont_beg_for_mercy_trigger = no
+		}
+		save_scope_as = aversarian_mercy_requester
+		scope:attacker = {
+			trigger_event = sjalvolki_conquest.0005
+		}
+		
+		ai_chance = {
+			base = 10
+			ai_value_modifier = {
+				ai_rationality = 0.5
+			}
+			ai_value_modifier = {
+				ai_energy = -0.25
+			}
+			ai_value_modifier = {
+				ai_honor = -0.25
+			}
+			ai_value_modifier = {
+				ai_boldness = -0.5
+			}
+			modifier = {
+				factor = 0.25
+				has_trait = brave
+			}
+			modifier = {
+				factor = 0.1
+				AND = {
+					has_trait = zealous
+					NOT = { this.religion = scope:attacker.religion }
+				}
+			}
+			modifier = {	# Some characters will never beg for mercy
+				factor = 0
+				character_behavior_wont_beg_for_mercy_trigger = yes
+			}
+			modifier = {	# Iordanes will always ask
+				add = 500
+				character_iordanes_trigger = yes # Iordanes
+			}
+			modifier = {
+				add = 75
+				culture = { has_cultural_tradition = tradition_islander }
+			}
+			modifier = { # Scarlet Chosen will always ask
+				add = 500
+				has_title = title:k_scarlet_chosen
+			}
+		}
+	}
+	
+	option = {	# Die like a true Aversarian!
+		name = sjalvolki_conquest.0004.b
+		ai_chance = {
+			base = 97
+			modifier = {	# Iordanes will always ask
+				factor = 0
+				character_iordanes_trigger = yes # Iordanes
+			}
+			modifier = { # Scarlet Chosen will always ask
+				factor = 0
+				has_title = title:k_scarlet_chosen
+			}
+			modifier = { # Sadists should generally not want to accept barbarian rule
+				factor = 3
+				has_trait = sadistic
+			}
+		}
+	}
+
+	option = { # EP3: Let's get out of dodge!
+		name = sjalvolki_conquest.0004.c
+		trigger = {
+			has_ep3_dlc_trigger = yes # gotta own RtP
+			is_valid_for_laampdom = yes
+		}
+		save_scope_as = adventurer
+		if = {
+			limit = {
+				player_heir ?= {
+					NOT = { this = root }
+					is_adult = yes
+				}
+			}
+			player_heir = {
+				save_scope_as = laamp_heir
+				save_scope_as = laamp_inheritor
+				custom_tooltip = become_landless_adventurer_decision_title_scope_tt
+			}
+		}
+		else_if = {
+			limit = { is_independent_ruler = no }
+			liege = {
+				save_scope_as = laamp_liege
+				save_scope_as = laamp_inheritor
+				custom_tooltip = become_landless_adventurer_decision_title_scope_tt
+			}
+		}
+		else = {
+			custom_tooltip = become_landless_adventurer_decision_title_created_tt
+			if = {
+				limit = {
+					NOT = { exists = scope:laamp_inheritor }
+				}
+				hidden_effect_new_object = {
+					create_character = {
+						template = laamp_inheritor_template
+						culture = root.capital_county.culture
+						faith = root.capital_county.faith
+						dynasty = generate
+						location = root.capital_province
+						after_creation = {
+							save_scope_as = laamp_inheritor
+							add_character_flag = new_laamp_inheritor
+						}
+					}
+				}
+			}
+		}
+		create_landless_adventurer_title_tooltip_effect = yes
+		show_as_tooltip = {
+			add_prestige = medium_prestige_gain
+			add_character_modifier = {
+				modifier = ep3_voluntary_laamp_character_modifier
+				years = 5
+			}
+		}
+		trigger_event = { id = ep3_laamps.0030 }
+		# Debug tracking
+		if = {
+			limit = {
+				is_ai = yes
+				debug_only = yes
+			}
+			if = {
+				limit = { exists = global_var:ai_voluntary_laamp_count }
+				change_global_variable = {
+					name = ai_voluntary_laamp_count
+					add = 1
+				}
+			}
+			else = {
+				set_global_variable = {
+					name = ai_voluntary_laamp_count
+					value = 1
+				}
+			}
+			debug_log = "AI became adventurer voluntarily"
+			debug_log_scopes = yes
+		}
+		stress_impact = {
+			craven = minor_stress_impact_gain
+			content = minor_stress_impact_gain
+			lazy = minor_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+sjalvolki_conquest.0005 = { # Event for Cenware when he receives an offer of submission from an Aversarian
+	type = character_event
+	content_source = dlc_gh
+	theme = war
+	title = sjalvolki_conquest.0005.t
+	desc = sjalvolki_conquest.0005.desc
+	
+	override_background = {
+		reference = throne_room_tribal
+	}
+	
+	left_portrait = {
+		character = root
+		animation = war_attacker
+	}
+
+	right_portrait = {
+		character = scope:aversarian_mercy_requester
+		animation = beg
+	}
+	
+	option = {	# Give refugee state
+		name = sjalvolki_conquest.0005.a
+		trigger = {
+			OR = {
+				scope:aversarian_mercy_requester = { 
+					highest_held_title_tier >= tier_duchy 
+					OR = {
+						AND = {
+							OR = {
+								has_trait = just
+								has_trait = compassionate
+							}
+							prestige_level >= 3
+						}
+						is_ai = no
+					}
+					NOR = {
+						has_trait = zealous
+						has_trait = sadistic
+						has_trait = arbitrary
+					}
+				}
+				scope:aversarian_mercy_requester = character:southernimperial_aversarinas_aagiokrata_30
+				scope:aversarian_mercy_requester = { has_title = title:k_scarlet_chosen }
+			}
+		}
+		scope:aversarian_mercy_requester = {
+			if = {
+				limit = { has_title = title:d_governorate_opakhasia_duchy }
+				destroy_title = title:d_governorate_opakhasia_duchy
+			}
+			trigger_event = sjalvolki_conquest.0012
+		}
+			
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = {
+					value = scope:aversarian_mercy_requester.diplomacy
+					multiply = 2
+				}
+			}
+			ai_value_modifier = {	# Cenware is far more likely to be merciful towards honorable and compassionate Aversarians
+				who = scope:aversarian_mercy_requester
+				ai_honor = 0.5
+				ai_compassion = 1.0
+			}
+			modifier = { # Will never accept if from these characters
+				factor = 0
+				scope:aversarian_mercy_requester = { character_behavior_wont_give_mercy_trigger = yes }
+			}
+			modifier = {	# Iordanes will always get the refugee state
+				add = 500
+				scope:aversarian_mercy_requester = character:southernimperial_aversarinas_aagiokrata_30		# Iordanes
+			}
+			modifier = { # The Scarlet Chosen shouldnt be getting wiped when cenwares moves through 
+				add = 500
+				has_title = title:k_scarlet_chosen
+			}
+			modifier = {
+				add = 500
+				scope:aversarian_mercy_requester = { is_ai = no }		# Player is heavily weighted towards getting a refugee state
+			}
+			modifier = {
+				add = {
+					value = global_var:number_of_refugee_states
+					multiply = -15
+				}
+				scope:aversarian_mercy_requester = { is_ai = yes }
+				NOT = {
+					scope:aversarian_mercy_requester = character:southernimperial_aversarinas_aagiokrata_30
+				}
+			}
+		}
+	}
+	
+	option = {	# Accept
+		name = sjalvolki_conquest.0005.b
+		scope:aversarian_mercy_requester = {
+			if = {
+				limit = { has_title = title:d_governorate_opakhasia_duchy }
+				destroy_title = title:d_governorate_opakhasia_duchy
+			}
+			trigger_event = sjalvolki_conquest.0006
+		}
+		ai_chance = {
+			base = 35
+			modifier = { # Will never accept if from these characters
+				factor = 0
+				scope:aversarian_mercy_requester = { character_behavior_wont_give_mercy_trigger = yes }
+			}
+			modifier = {
+				add = 75
+				scope:aversarian_mercy_requester = { culture = { has_cultural_tradition = tradition_islander } }
+			}
+		}
+	}
+
+	option = {	# Refuse
+		name = sjalvolki_conquest.0005.c
+		scope:aversarian_mercy_requester = {
+			trigger_event = sjalvolki_conquest.0007
+		}
+		ai_chance = {	# Will always accept from these characters
+			base = 25
+			ai_value_modifier = {	# Cenware is far more likely to be merciful towards honorable and compassionate Aversarians
+				who = scope:aversarian_mercy_requester
+				ai_honor = -0.5
+				ai_compassion = -1.0
+			}
+			modifier = {	
+				factor = 0
+				OR = {
+					scope:aversarian_mercy_requester = character:southernimperial_aversarinas_aagiokrata_30	# Iordanes
+					scope:aversarian_mercy_requester = character:westernimperial_omitilos_aagiokrata_2					# Cois
+					scope:aversarian_mercy_requester = { has_title = title:k_scarlet_chosen }
+				}
+			}
+			modifier = {
+				factor = 0.75
+				scope:aversarian_mercy_requester = { culture = { has_cultural_tradition = tradition_islander } }
+			}
+			modifier = { # Should be very hard for sadists to get accepted
+				factor = 3
+				scope:aversarian_mercy_requester = { has_trait = sadistic }
+			}
+		}
+	}
+}
+
+# Cenware accepted submission
+sjalvolki_conquest.0006 = {
+	type = character_event
+	content_source = dlc_gh
+	theme = war
+	title = sjalvolki_conquest.0006.t
+	desc = sjalvolki_conquest.0006.desc
+	
+	override_background = {
+		reference = throne_room_tribal
+	}
+	
+	left_portrait = {
+		character = scope:attacker
+		animation = war_attacker
+	}
+
+	right_portrait = {
+		character = root
+		animation = beg
+	}
+	
+	immediate = {
+		if = {
+			limit = { 
+				OR = {
+					primary_title = title:k_scarlet_chosen # this ensures that the Scarlet Chosen are protected through the migration as an exception
+					NOT = {
+						primary_title = title:d_cosmopol
+					}
+				}
+			}
+			primary_title = {
+				save_scope_as = title_to_be_kept
+			}
+		}
+		else_if = {
+			limit = {
+				any_held_title = {
+					NOT = { this = title:d_cosmopol }
+				}
+			}
+			if = {
+				limit = { 
+					NOT = { capital_county.duchy = title:d_cosmopol }
+				}
+				capital_county.duchy = { save_scope_as = title_to_be_kept }
+			}
+			else = {
+				random_held_title = {
+					limit = { 
+						tier = tier_duchy
+						NOT = { this = title:d_cosmopol }
+					}
+					save_scope_as = title_to_be_kept
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { capital_county = title:c_oraispol }
+			}
+			capital_county = { save_scope_as = title_to_be_kept }
+		}
+		else = {
+			random_held_title = {
+				limit = {
+					NOT = { this = title:c_oraispol }
+					tier = tier_county
+				}
+				save_scope_as = title_to_be_kept
+			}
+		}
+	}
+	
+	option = {	# Accept the terms of surrender
+		name = sjalvolki_conquest.0006.a
+		custom_tooltip = sjalvolki_conquest_aversarian_titled_redistributed_tt
+		scope:war = {
+			remove_participant = root
+		}
+		hidden_effect = {
+			every_held_title = {
+				limit = {
+					tier >= tier_duchy
+					NOT = { this = scope:title_to_be_kept }
+				}
+				scope:attacker = {
+					destroy_title = prev
+				}
+			}
+			every_vassal = {
+				limit = {
+					NOT = { primary_title.de_jure_liege = scope:title_to_be_kept }
+				}
+				create_title_and_vassal_change = {
+					type = independency
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				becomes_independent = {
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+				scope:war = {
+					add_defender = prev
+				}
+			}
+			every_held_title = {
+				limit = {
+					tier = tier_county
+					NOR = { 
+						this = scope:title_to_be_kept 
+						this.de_jure_liege = scope:title_to_be_kept
+						this = title:c_rhamnythrae # to make sure vounill gets kept
+					}
+				}
+				save_scope_as = abandoned_non_de_jure_county
+				random_neighboring_county = {
+					limit = { 
+						NOR = { 
+							holder = root
+							holder.liege = root
+							holder = { has_character_flag = cant_receive_migration_titles }
+							holder = { has_character_flag = aversarian_bent_the_knee }
+							holder = { is_ruin = yes }
+						}
+						holder.top_liege = { has_title = title:e_migrant_coalition }
+					}
+					holder = {
+						get_title = scope:abandoned_non_de_jure_county
+					}
+				}
+			}
+			every_vassal_or_below = {
+				limit = {
+					save_temporary_scope_as = vassal_at_war
+					scope:war = {
+						any_war_participant = {
+							this = scope:vassal_at_war
+						}
+					}
+				}
+				scope:war = {
+					remove_participant = prev
+				}
+			}
+
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				add_character_flag = aversarian_bent_the_knee
+			}
+		}
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = title_change
+			add_claim_on_loss = no
+		}
+		change_liege = {
+			liege = scope:attacker
+			change = scope:title_change
+		}
+		resolve_title_and_vassal_change = scope:title_change
+		tick_up_migration_time = yes
+	}
+	
+	option = {	# These terms suck, I change my mind
+		name = sjalvolki_conquest.0006.b
+		trigger = { is_ai = no }	# AI knows what its getting into with the first event already
+	}
+}
+
+# Cenware rejects submission
+sjalvolki_conquest.0007 = {
+	type = character_event
+	content_source = dlc_gh
+	theme = war
+	title = sjalvolki_conquest.0007.t
+	desc = sjalvolki_conquest.0007.desc
+	
+	override_background = {
+		reference = throne_room_tribal
+	}
+	
+	left_portrait = {
+		character = scope:attacker
+		animation = war_attacker
+	}
+
+	right_portrait = {
+		character = root
+		animation = rage
+	}
+	
+	option = {	# RIP
+		name = sjalvolki_conquest.0007.a
+	}
+}
+
+# Offered a conquered title
+sjalvolki_conquest.0010 = {
+	type = character_event
+	content_source = dlc_gh
+	theme = war
+	title = sjalvolki_conquest.0010.t
+	desc = sjalvolki_conquest.0010.desc
+	
+	override_background = {
+		reference = throne_room_tribal
+	}
+	
+	left_portrait = {
+		character = scope:attacker
+		animation = war_over_win
+	}
+	
+	right_portrait = {
+		character = root
+		animation = happiness
+	}
+
+	widget = {
+		gui = "event_window_widget_migration"
+		container = "custom_widgets_container"
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = sjalvolki_conquest_contribution
+				}
+			}
+			set_variable = {
+				name = sjalvolki_conquest_contribution
+				value = 0
+			}
+		}
+		set_variable = {
+			name = sjalvolki_conquest_contribution_previous	# For loc purposes
+			value = sjalvolki_conquest_contribution_value
+			days = 3
+		}
+		if = {
+			limit = { has_variable = sjalvolki_conquest_contribution_previous }
+			# What's the purpose of this utterly pointless looking line? Well, the error log gets spammed to the brim with warnings that the variable isn't used otherwise
+		}
+		scope:title_to_be_given = {
+			title_capital_county ?= {
+				save_scope_as = new_capital
+			}
+		}
+		root = { save_scope_as = actor } # Look I know this seems silly but it's unfortunately necessary due to how PDX handles culture_realm_size
+	}
+
+	option = { # Accept
+		name = sjalvolki_conquest.0010.a
+		trigger = {
+			NOT = { has_character_flag = already_received_lands }
+		}
+		custom_tooltip = current_contribution_post_conquest_tt
+		custom_tooltip = highest_contribution_character_tt
+		if = {
+			limit = { scope:title_to_be_given = { is_sjalvolki_kingdom_capital = yes } }
+			custom_tooltip = new_kingdom_capital_tt
+		}
+		if = {
+			limit = {
+				scope:title_to_be_given.tier = tier_kingdom
+			}
+			random_list = {
+				30 = {
+					custom_tooltip = possible_sjal_nick_tooltip
+					trigger = {
+						qualifies_for_sjal_nickname_trigger = yes
+						OR = {
+							has_any_nickname = no
+							has_bad_nickname = yes
+						}
+					}
+					trigger_event = {
+						on_action = sjal_migration_nickname_selection
+					}
+				}
+				70 = {
+					#No effect
+				}
+			}
+			set_variable = great_migration_kingdom_recipient
+			culture = {
+				set_variable = already_received_kingdom_in_great_migration
+			}
+		}
+		if = {
+			limit = { 
+				scope:title_to_be_given.tier >= tier_duchy
+			}
+			random_list = {
+				10 = {
+					custom_tooltip = possible_sjal_nick_tooltip
+					trigger = {
+						qualifies_for_sjal_nickname_trigger = yes
+						OR = {
+							has_any_nickname = no
+							has_bad_nickname = yes
+						}
+					}
+					trigger_event = {
+						on_action = sjal_migration_nickname_selection
+					}
+				}
+				90 = {
+					#No effect
+				}
+			}
+			scope:new_capital ?= {
+				remove_from_list = conquered_lands
+				set_variable = {
+					name = already_distributed
+					days = 10
+				}
+				root = {
+					if = {
+						limit = {
+							is_landless_adventurer = yes
+						}
+						add_character_flag = former_landless_adventurer
+					}
+					get_title = prev
+					set_realm_capital = prev
+					if = {
+						limit = {
+							NOT = {
+								has_character_flag = former_landless_adventurer 
+							}
+						}
+						hidden_effect = {
+							migrate_from_lands = yes
+						}
+					}
+					remove_character_flag = former_landless_adventurer
+				}
+				set_county_culture = root.culture
+				set_county_faith = root.faith
+				every_in_de_jure_hierarchy = {
+					limit = { NOT = { holder = scope:new_character } }
+					scope:new_character = { get_title = prev }
+				}
+				if = {
+					limit = { NOT = { duchy = scope:title_to_be_given } }
+					duchy = { remove_from_list = conquered_lands }
+					scope:new_character = { get_title = prev.duchy }
+				}
+			}
+			scope:title_to_be_given = {
+				remove_from_list = conquered_lands
+				set_variable = {
+					name = already_distributed
+					days = 10
+				}
+				root = {
+					get_title = prev
+				}
+			}
+		}
+		else = {
+			scope:title_to_be_given = {
+				remove_from_list = conquered_lands
+				
+				set_variable = {
+					name = already_distributed
+					days = 10
+				}
+				
+				root = {
+					if = {
+						limit = {
+							is_landless_adventurer = yes
+						}
+						add_character_flag = former_landless_adventurer
+					}
+					get_title = prev
+					set_realm_capital = prev
+					if = {
+						limit = {
+							NOT = { has_character_flag = former_landless_adventurer }
+						}
+						hidden_effect = {
+							migrate_from_lands = yes
+						}
+					}
+					remove_character_flag = former_landless_adventurer
+				}
+				set_county_culture = root.culture
+				set_county_faith = root.faith
+				every_in_de_jure_hierarchy = {
+					limit = { NOT = { holder = scope:new_character } }
+					scope:new_character = { get_title = prev }
+				}
+			}
+		}
+		
+		# Make the migrator a vassal of the new liege, if one exists
+		if = {
+			limit = { 
+				scope:title_to_be_given.tier = tier_duchy
+				exists = scope:title_to_be_given.kingdom.holder
+			}
+			create_title_and_vassal_change = {
+				type = granted
+				save_scope_as = liege_change
+				add_claim_on_loss = no
+			}
+			change_liege = {
+				liege = scope:title_to_be_given.kingdom.holder
+				change = scope:liege_change
+			}
+			resolve_title_and_vassal_change = scope:liege_change
+		}
+		else_if = {
+			limit = { 
+				scope:title_to_be_given.tier = tier_county
+				exists = scope:title_to_be_given.duchy.holder
+				NOR = {
+					scope:title_to_be_given.duchy = { has_variable = refugee_state }
+					scope:title_to_be_given.duchy.holder = { culture = { has_cultural_pillar = heritage_aversarian } }
+				}
+			}
+			create_title_and_vassal_change = {
+				type = granted
+				save_scope_as = liege_change
+				add_claim_on_loss = no
+			}
+			change_liege = {
+				liege = scope:title_to_be_given.duchy.holder
+				change = scope:liege_change
+			}
+			resolve_title_and_vassal_change = scope:liege_change
+		}
+		else_if = {
+			limit = { 
+				scope:title_to_be_given.tier = tier_county
+				exists = scope:title_to_be_given.kingdom.holder
+			}
+			create_title_and_vassal_change = {
+				type = granted
+				save_scope_as = liege_change
+				add_claim_on_loss = no
+			}
+			change_liege = {
+				liege = scope:title_to_be_given.kingdom.holder
+				change = scope:liege_change
+			}
+			resolve_title_and_vassal_change = scope:liege_change
+		}
+		
+		if = {
+			limit = { # we only want this for characters created for the conquest at the moment of them being given a title
+				is_ai = yes
+				has_character_flag = created_for_migration
+			}
+			# GH URGENT (not really but I want to remember)
+			# This is for assisting in keeping Kings generated for the migration from having no heirs & their land being inherited by cenware. I hate it! Once the migration system has been refactored to be better at it's job we'll want to make sure to change this too.
+			create_character = {
+				location = root.location
+				culture = root.culture
+				faith = root.faith
+				gender_female_chance = 50
+				template_character = root
+				random_traits = yes
+				age = { 2 5 }
+
+				save_scope_as = new_kingdom_heir
+			}
+			scope:new_kingdom_heir = {
+				add_character_flag = created_for_migration
+			}
+			if = {
+				limit = {
+					root = { is_female = yes }
+				}
+				scope:new_kingdom_heir = { 
+					set_mother = root
+					set_house = root.house
+				}
+			}
+			else = {
+				scope:new_kingdom_heir = { 
+					set_father = root
+					set_house = root.house
+				}
+			}
+		}
+		add_character_flag = already_received_lands
+		every_child = {
+			add_character_flag = already_received_lands
+		}
+		remove_from_list = migration_vassals
+		set_variable = {
+			name = sjalvolki_conquest_contribution
+			value = 0
+		}
+		ai_chance = {
+			base = 100
+			modifier = {	# Characters will never accept a title downgrade, unless a potential kingdom is in the cards
+				factor = 0.1
+				is_landless_adventurer = no # Technically a county is still an upgrade
+				scope:title_to_be_given.tier < highest_held_title_tier
+				NOR = {
+					scope:title_to_be_given.tier = tier_kingdom 
+					scope:title_to_be_given.tier = tier_duchy
+					scope:actor.culture.culture_realm_size <= 2 # Small cultures should be more willing to accept less
+				}
+			}
+			modifier = { # Kings should be a bit more willing to accept duchies 
+				factor = 0.50
+				is_landless_adventurer = no # Technically a county is still an upgrade
+				scope:title_to_be_given.tier < highest_held_title_tier
+				scope:title_to_be_given.tier = tier_duchy
+
+				scope:actor.culture.culture_realm_size <= 4 # Small cultures should be more willing to accept less
+			}
+			modifier = {	# Prominent Culture heads really want their own kingdom
+				factor = 0.25
+				NOT = { scope:title_to_be_given.tier = tier_kingdom }
+				highest_held_title_tier > tier_county
+				culture.culture_head = this
+				scope:actor.culture.culture_realm_size >= 4 # Small cultures should be more willing to accept less
+				NOT = { 
+					culture = { 
+						has_variable = already_received_kingdom_in_great_migration
+					}
+				}
+			}
+			modifier = { # If the title is county, you should be less likely to go for it over a duchy if you have higher tiers
+				factor = 0.2
+				scope:title_to_be_given.tier = tier_county
+				highest_held_title_tier > tier_county
+				is_landless_adventurer = no
+			}
+
+			modifier = { # Island duchies aren't as valuable
+				factor = 0.5
+				highest_held_title_tier > tier_county
+				scope:title_to_be_given = {
+					tier = tier_duchy
+					any_de_jure_county = {
+						percent = 0.75
+						any_county_province = {
+							terrain = archipelagic
+						}
+					}
+				}
+			}
+			modifier = { # Non-Sjalvolki should be "less interested" in Etepezea so more Sjals migrate into Etepezea 
+				factor = 0.1
+				scope:title_to_be_given = { de_jure_liege = title:e_etepezea }
+				NOT = { culture = { has_cultural_pillar = heritage_sjalvolki } }
+			}
+			modifier = {	# Ambitious characters will try and save up contribution for a duchy
+				factor = 0.25
+				AND = {
+					scope:title_to_be_given.tier < tier_duchy
+					has_trait = ambitious
+					is_landed = yes
+				}
+			}
+			modifier = { # Just incase, we dont want layabouts that already received land getting more
+				factor = 0 
+				OR = {
+					has_character_flag = already_received_lands
+					has_character_flag = aversarian_migration
+				}
+			}
+			modifier = { # Vanguard characters should be less likely to migrate further
+				factor = 0.3
+				has_variable = sjalvolki_vanguard
+			}
+			modifier = { # Landless characters really want land
+				factor = 5
+				is_landless_adventurer = yes
+			}
+		}
+	}
+
+	option = { # Refuse
+		name = sjalvolki_conquest.0010.b
+		trigger = {
+			NOR = { 
+				has_character_flag = already_received_lands 
+				has_character_flag = created_for_migration
+			}
+		}
+		custom_tooltip = choose_another_title_tt
+		set_variable = {
+			name = refused_title
+			value = scope:title_to_be_given
+			days = 10
+		}
+		assign_titles_to_characters_new_sjalvolki_conquest = {	
+			CHARACTER_LIST = migration_vassals
+			TITLE_LIST = conquered_lands
+		}
+		ai_chance = {	# AI never have a reason to be picky about a title within a kingdom, they only care about the tier
+			base = 0
+		}
+	}
+	
+	option = { # Refuse for the kingdom
+		name = sjalvolki_conquest.0010.c
+		trigger = {
+			NOT = { 
+				has_character_flag = already_received_lands
+			}
+			trigger_if = {
+				limit = { is_ai = yes }
+				has_character_flag = created_for_migration
+			}
+			trigger_else = {
+				always = yes
+			}
+		}
+		custom_tooltip = not_interested_in_title_tt
+		set_variable = {
+			name = refused_title
+			value = scope:title_to_be_given
+			days = 10
+		}	
+		assign_titles_to_characters_new_sjalvolki_conquest = {	
+			CHARACTER_LIST = migration_vassals
+			TITLE_LIST = conquered_lands
+		}	
+		debug_log = "A character has refused a title!"
+		debug_log_scopes = yes
+		ai_chance = {
+			base = 35
+		}
+	}
+	
+	option = { # Convert contribution to renown
+		name = sjalvolki_conquest.0010.d
+		trigger = {
+			NOT = { has_character_flag = created_for_migration }
+		}
+		custom_tooltip = convert_contribution_tt
+		remove_from_list = migration_vassals
+		add_prestige = sjalvolki_conquest_prestige_from_current_contribution
+		if = {
+			limit = { exists = dynasty }
+			dynasty = {
+				add_dynasty_prestige = prev.sjalvolki_conquest_renown_from_current_contribution
+			}
+		}
+		set_variable = {
+			name = sjalvolki_conquest_contribution
+			value = 0
+		}
+		set_variable = {
+			name = refused_title
+			value = scope:title_to_be_given
+			days = 10
+		}
+		assign_titles_to_characters_new_sjalvolki_conquest = {	
+			CHARACTER_LIST = migration_vassals
+			TITLE_LIST = conquered_lands
+		}
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 3
+				has_trait = arrogant
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { has_character_flag = already_received_lands  }
+			}
+		}
+	}
+	
+	after = {
+		scope:attacker = {
+			assign_titles_to_characters_new_sjalvolki_conquest = {
+				CHARACTER_LIST = migration_vassals
+				TITLE_LIST = conquered_lands
+			}
+		}
+	}
+}
+
+# Not offered a title (Player only)
+sjalvolki_conquest.0011 = {
+	type = character_event
+	content_source = dlc_gh
+	theme = war
+	title = sjalvolki_conquest.0011.t
+	desc = sjalvolki_conquest.0011.desc
+	
+	override_background = {
+		reference = throne_room_tribal
+	}
+	
+	left_portrait = {
+		character = scope:attacker
+		animation = war_over_win
+	}
+	
+	right_portrait = {
+		character = root
+		animation = happiness
+	}
+
+	widget = {
+		gui = "event_window_widget_migration"
+		container = "custom_widgets_container"
+	}
+	
+	immediate = {
+		set_variable = {
+			name = sjalvolki_conquest_contribution_previous	# For loc purposes
+			value = sjalvolki_conquest_contribution_value
+			days = 1
+		}
+	}
+	
+	option = { # Convert contribution to renown
+		name = sjalvolki_conquest.0011.a
+		custom_tooltip = convert_contribution_tt
+		custom_tooltip = current_contribution_post_conquest_tt
+		custom_tooltip = highest_contribution_character_tt
+		
+		add_prestige = sjalvolki_conquest_prestige_from_current_contribution
+		if = {
+			limit = { exists = dynasty }
+			dynasty = {
+				add_dynasty_prestige = prev.sjalvolki_conquest_renown_from_current_contribution
+			}
+		}
+		set_variable = {
+			name = sjalvolki_conquest_contribution
+			value = 0
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	
+	option = { # Refuse
+		name = sjalvolki_conquest.0011.b
+		trigger = {
+			NOR = { 
+				has_character_flag = already_received_lands
+				has_character_flag = created_for_migration
+				is_ai = yes
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	
+	after = {
+		remove_from_list = migration_vassals
+	}
+}
+
+# Cenware gives refugee state
+sjalvolki_conquest.0012 = {
+	type = character_event
+	content_source = dlc_gh
+	theme = war
+	title = sjalvolki_conquest.0012.t
+	desc = sjalvolki_conquest.0012.desc
+	
+	override_background = {
+		reference = throne_room_tribal
+	}
+	
+	left_portrait = {
+		character = scope:attacker
+		animation = war_over_win
+	}
+
+	right_portrait = {
+		character = root
+		animation = worry
+	}
+	
+	immediate = {
+		if = {
+			limit = { 
+				NOT = { primary_title = title:d_cosmopol }
+				OR = {
+					highest_held_title_tier = tier_duchy
+					primary_title = title:k_scarlet_chosen # this ensures that the Scarlet Chosen are protected through the migration as an exception
+				}
+			}
+			primary_title = {
+				save_scope_as = title_to_be_kept
+			}
+		}
+		else_if = {
+			limit = {
+				any_held_title = {
+					NOT = { this = title:d_cosmopol }
+				}
+			}
+			if = {
+				limit = { 
+					NOT = { capital_county.duchy = title:d_cosmopol }
+				}
+				capital_county.duchy = { save_scope_as = title_to_be_kept }
+			}
+			else = {
+				random_held_title = {
+					limit = { 
+						tier = tier_duchy
+						NOT = { this = title:d_cosmopol }
+					}
+					save_scope_as = title_to_be_kept
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				NOT = { capital_county = title:c_oraispol }
+			}
+			capital_county = { save_scope_as = title_to_be_kept }
+		}
+		else = {
+			random_held_title = {
+				limit = {
+					NOT = { this = title:c_oraispol }
+					tier = tier_county
+				}
+				save_scope_as = title_to_be_kept
+			}
+		}
+	}
+	
+	option = {	# Accept the terms of surrender
+		name = sjalvolki_conquest.0012.a
+		custom_tooltip = sjalvolki_conquest_aversarian_titled_redistributed_tt
+		scope:war = {
+			remove_participant = root
+		}
+		hidden_effect = {
+			every_held_title = {
+				limit = {
+					tier >= tier_duchy
+					NOT = { this = scope:title_to_be_kept }
+				}
+				scope:attacker = {
+					destroy_title = prev
+				}
+			}
+			every_vassal = {
+				limit = {
+					NOT = { primary_title.de_jure_liege = scope:title_to_be_kept }
+				}
+				create_title_and_vassal_change = {
+					type = independency
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				becomes_independent = {
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+				scope:war = {
+					add_defender = prev
+				}
+			}
+			every_vassal_or_below = {
+				limit = {
+					save_temporary_scope_as = vassal_at_war
+					scope:war = {
+						any_war_participant = {
+							this = scope:vassal_at_war
+						}
+					}
+				}
+				scope:war = {
+					remove_participant = prev
+				}
+			}
+			add_to_global_variable_list = { name = refugee_cultures target = root.culture }
+		}
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = title_change
+			add_claim_on_loss = no
+		}
+		change_liege = {
+			liege = scope:attacker
+			change = scope:title_change
+		}
+		add_character_flag = already_received_lands
+		remove_from_list = migration_vassals
+		add_character_flag = aversarian_migration
+		resolve_title_and_vassal_change = scope:title_change
+		
+		scope:title_to_be_kept = {
+			set_variable = refugee_state
+			every_in_de_jure_hierarchy = {
+				limit = { tier = tier_county }
+				set_variable = protected_from_automatic_culture_conversion
+			}
+			de_jure_liege = {
+				set_variable = unformed_kingdom
+			}
+		}
+
+		
+		if = {
+			limit = {
+				NOT = { exists = global_var:number_of_refugee_states }
+			}
+			set_global_variable = {
+				name = number_of_refugee_states
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				exists = global_var:number_of_refugee_states
+			}
+			change_global_variable = {
+				name = number_of_refugee_states
+				add = 1
+			}
+		}
+		tick_up_migration_time = yes
+	}
+	
+	
+	option = {	# These terms suck, I change my mind
+		name = sjalvolki_conquest.0006.b
+		trigger = { is_ai = no }	# AI knows what its getting into with the first event already
+	}
+}
+
+
+# Generate migration LAAMPs
+sjalvolki_conquest.0013 = {
+	hidden = yes
+	immediate = {
+		title:e_migrant_coalition.holder = { save_scope_as = coalition_leader }
+		generate_migration_laamp_leader = yes
+		if = {
+			limit = {
+				exists = scope:new_migration_laamp_leader
+			}
+			scope:new_migration_laamp_leader = {
+				create_landless_adventurer_title_effect = {
+					REASON = flag:voluntary
+					FLAVOR_CHAR = scope:new_migration_laamp_leader
+				}
+				if = {
+					limit = { is_independent_ruler = yes }
+					change_liege = { # to make sure they stay with the Imperrech
+						liege = scope:coalition_leader
+						change = scope:change
+					}
+				}
+				add_realm_law = camp_purpose_migration_band
+				domicile ?= {
+					change_provisions = major_provisions_gain
+				}
+			}
+			generate_migration_laamp_followers = {
+				LIST = new_migration_laamp_followers
+			}
+			every_in_list = {
+				list = new_migration_laamp_followers
+				scope:new_migration_laamp_leader = {
+					add_courtier = prev
+				}
+				remove_from_list = new_migration_laamp_followers
+			}
+		}
+	}
+}
+
+sjalvolki_conquest.0014 = { # Cleans up culture/faith for vanguards
+	hidden = yes
+	immediate = {
+		save_scope_as = vanguard_vassal
+		every_held_title = {
+			limit = { tier = tier_county }
+			set_county_culture = scope:vanguard_vassal.culture
+			set_county_faith = scope:vanguard_vassal.faith
+		}
+	}
+}
+
+##########################
+# RANDOM CONQUEST EVENTS #
+##########################
+
+# You die in battle
+# Lonely Note: Where should this be triggered from? Why does this exist?
+#sjalvolki_conquest.0100 = {
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0100.t
+#	desc = sjalvolki_conquest.0100.desc
+#	
+#	override_background = {
+#		reference = battlefield
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = severelywounded
+#	}
+#	
+#	immediate = {
+#		if = {
+#			limit = { NOT = { has_trait = wounded } }
+#			add_trait = wounded_2
+#		}
+#	}
+#	
+#	option = {
+#		name = sjalvolki_conquest.0100.a
+#		death = { death_reason = death_battle }
+#		remove_from_list = migration_vassals
+#	}
+#}
+
+##################################################
+# You Loot a Villa
+# by Hapchazzard
+# 0101 - 0110
+##################################################
+
+scripted_effect loot_villa_effect_gold = {
+	#save_scope_as = adventurer
+	duel = {
+		# Intrigue determines how efficient you are at ransacking the place for hidden valuables.
+		# Stewardship determines how good you are at actually turning a profit on them.
+		skill = intrigue
+		value = mediocre_skill_rating
+		13 = {
+			desc = sjalvolki_conquest.0101.good_profit
+			compare_modifier = {
+				value = scope:duel_value
+				multiplier = 1.0
+			}
+			modifier = {
+				factor = 2
+				exists = scope:being_extra_careful
+			}
+			send_interface_toast = {	
+				title = sjalvolki_conquest.0101.good_profit
+				left_icon = root
+
+				add_gold = {
+					value = stewardship
+					multiply = 10
+					min = medium_gold_value
+				}
+			}
+		}
+		37 = {
+			desc = sjalvolki_conquest.0101.decent_profit
+			send_interface_toast = {	
+				title = sjalvolki_conquest.0101.decent_profit
+				left_icon = root
+
+				add_gold = {
+					value = stewardship
+					multiply = 5
+					min = minor_gold_value
+				}
+			}
+		}
+		50 = {
+			desc = sjalvolki_conquest.0101.trifling_profit
+			compare_modifier = {
+				value = scope:duel_value
+				multiplier = -1.0
+			}
+			modifier = {
+				factor = 0.5
+				exists = scope:being_extra_careful
+			}
+			send_interface_toast = {	
+				title = sjalvolki_conquest.0101.trifling_profit
+				left_icon = root
+
+				add_gold = {
+					value = stewardship
+					multiply = 2
+					min = {
+						value = minor_gold_value
+						multiply = 0.5
+					}
+				}
+			}
+		}
+	}
+}
+scripted_effect loot_villa_effect_artifact = {
+	random_dummy_gender_effect = yes
+	random_list = {
+		1 = {}
+		15 = {}
+		10 = {
+			create_artifact_commemorative_coin_effect = {
+				OWNER = root
+				LOCATION = root.location
+			}
+		}
+		25 = {
+			create_artifact_vessel_earthware_effect = {
+				OWNER = root
+				POTTER = scope:dummy_gender
+				LOCATION = root.location
+			}
+		}
+		25 = {
+			create_artifact_votive_figure_effect = {
+				OWNER = root
+				LOCATION = root.location
+			}
+		}
+		25 = {
+			create_artifact_sacrificial_dagger_effect = {
+				OWNER = root
+				LOCATION = root.location
+			}
+		}
+		25 = {
+			create_artifact_aversarian_goblet_effect = {
+				OWNER = root
+				LOCATION = root.location
+			}
+		}
+		25 = {
+			create_artifact_marcher_casket_effect = {
+				OWNER = root
+				LOCATION = root.location
+			}
+		}
+	}
+}
+
+# You find a nice villa to loot
+sjalvolki_conquest.0101 = {
+	type = character_event
+	content_source = dlc_gh
+	title = sjalvolki_conquest.0101.t
+	desc = {
+		first_valid = { 
+			triggered_desc = {
+				trigger = {
+					has_trait = sadistic
+				}
+				desc = sjalvolki_conquest.0101.desc_intro_sadistic
+			}
+			desc = sjalvolki_conquest.0101.desc_intro
+		}
+		first_valid = { 
+			triggered_desc = {
+				trigger = {
+					exists = scope:occupants_present
+				}
+				desc = sjalvolki_conquest.0101.desc_owners_alive
+			}
+			desc = sjalvolki_conquest.0101.desc_owners_absent
+		}
+	}
+	theme = stewardship
+	left_portrait = {
+		character = root
+		animation = personality_greedy
+		outfit_tags = { military_outfit }
+	}
+	override_background = { reference = farmland }
+	widget = {
+		gui = "event_window_widget_migration"
+		container = "custom_widgets_container"
+	}
+	trigger = {
+		#Standard checks.
+		is_available_adult_or_is_commanding = yes
+		NOT = { has_character_flag = had_event_sjalvolki_conquest_0101 }
+		is_landed = yes
+	}
+	
+	weight_multiplier = {
+		base = 1
+		
+		#Weight up for greedy rulers, who would be going out of their way to find plunder.
+		modifier = {
+			add = 0.5
+			has_trait = greedy
+		}
+		modifier = {
+			add = 0.5
+			has_trait = avaricious
+		}
+		#Brave and impatient rulers are more likely to be setting out to untouched lands
+		modifier = {
+			add = 0.25
+			has_trait = brave
+		}
+		modifier = {
+			add = 0.25
+			has_trait = impatient
+		}
+
+		#Weight down for cautious rulers, who are less likely to be on the vanguard and thus encounter unlooted villas.
+		modifier = {
+			add = -0.25
+			has_trait = craven
+		}
+		modifier = {
+			add = -0.25
+			has_trait = patient
+		}
+	}
+	
+	immediate = {
+		add_character_flag = {
+			flag = had_event_sjalvolki_conquest_0101
+			days = 1825
+		}
+		scope:target_title = {
+			random_in_de_jure_hierarchy = {
+				limit = {
+					tier = tier_county
+					NOT = { holder.top_liege = scope:attacker }
+				}
+				save_scope_as = villa_location
+			}
+		}
+		# Check if the villa has occupants
+		random_list = {
+			35 = {
+				# No occupants
+			}
+			65 = {
+				# Occupants present
+				save_scope_value_as = {
+					name = occupants_present
+					value = yes
+				}
+			}
+		}
+	}
+	
+	# Loot the villa (no occupants)
+	option = {
+		name = {
+			text = {
+				first_valid = {
+					#Sadistic
+					triggered_desc = {
+						trigger = { 
+							has_trait = sadistic
+						}
+						desc = sjalvolki_conquest.0101.a_occupants_absent_sadistic
+					}
+					#Default
+					desc = sjalvolki_conquest.0101.a_occupants_absent
+				}
+			}
+		}
+		trigger = {
+			NOR = {
+				# Gets a bit of extra flavor
+				exists = scope:occupants_present
+				# These traits have a special replacement option
+				has_trait = patient
+				has_trait = greedy
+				has_trait = diligent
+			}
+		}
+		loot_villa_effect_gold = yes
+		hidden_effect = { loot_villa_effect_artifact = yes }
+		custom_tooltip = loot_villa_effect_artifact.tt
+		stress_impact = {
+			greedy = medium_stress_loss
+			generous = medium_stress_gain
+		}
+	}
+	
+	# Loot the villa (occupants)
+	option = {
+		name = {
+			text = {
+				first_valid = {
+					#Sadistic
+					triggered_desc = {
+						trigger = { 
+							has_trait = sadistic
+						}
+						desc = sjalvolki_conquest.0101.a_occupants_present_sadistic
+					}
+					#Default
+					desc = sjalvolki_conquest.0101.a_occupants_present
+				}
+			}
+		}
+		trait = sadistic
+		trigger = {
+			exists = scope:occupants_present
+			# These traits have a special replacement option
+			trigger_if = {
+				limit = { NOT = { has_trait = sadistic } }
+				NOR = {
+					has_trait = patient
+					has_trait = greedy
+					has_trait = diligent
+				}
+			}
+		}
+		
+		loot_villa_effect_gold = yes
+		hidden_effect = { loot_villa_effect_artifact = yes }
+		custom_tooltip = loot_villa_effect_artifact.tt
+		stress_impact = {
+			sadistic = medium_stress_impact_loss
+			greedy = medium_stress_impact_loss
+			callous = minor_stress_impact_gain
+			generous = medium_stress_impact_gain
+			compassionate = medium_stress_impact_gain
+			forgiving = minor_stress_impact_gain
+		}
+	}
+	
+	# Loot the villa while being extra careful
+	option = {
+		name = sjalvolki_conquest.0101.a_patient_or_greedy
+		trigger = {
+			OR = {
+				has_trait = patient
+				has_trait = greedy
+				has_trait = diligent
+			}
+		}
+		
+		save_scope_value_as = { name = being_extra_careful value = yes }
+		loot_villa_effect_gold = yes
+		hidden_effect = { loot_villa_effect_artifact = yes }
+		custom_tooltip = loot_villa_effect_artifact.tt
+		stress_impact = {
+			greedy = medium_stress_impact_loss
+			generous = medium_stress_impact_gain
+			impatient = medium_stress_impact_gain
+		}
+	}
+	
+	# Let your men have the spoils
+	option = {
+		name = sjalvolki_conquest.0101.c
+		trigger = {
+			OR = {
+				has_trait = gregarious
+				has_trait = generous
+			}
+		}
+		
+		# Prestige gain depends on your diplomacy
+		add_prestige = {
+			value = diplomacy
+			multiply = 10
+			min = minor_prestige_gain
+		}
+		stress_impact = {
+			greedy = medium_stress_impact_gain
+			generous = medium_stress_impact_loss
+			gregarious = medium_stress_impact_loss
+			humble = minor_stress_impact_loss
+		}
+	}
+	
+	# Don't loot it
+	option = {
+		name = {
+			text = {
+				first_valid = {
+					#Paranoid
+					triggered_desc = {
+						trigger = { 
+							has_trait = paranoid
+						}
+						desc = sjalvolki_conquest.0101.e_paranoid
+					}
+					#Default
+					desc = sjalvolki_conquest.0101.e
+				}
+			}
+		}
+		
+		trigger = {
+			# If it's empty, no reason to leave it to rot unless paranoid
+			OR = {
+				exists = scope:occupants_present
+				has_trait = paranoid
+			}
+		}
+		
+		add_prestige = miniscule_prestige_loss
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			paranoid = medium_stress_impact_loss
+			forgiving = minor_stress_impact_loss
+			greedy = medium_stress_impact_gain
+			sadistic = medium_stress_impact_gain
+			callous = minor_stress_impact_gain
+		}
+	}
+}
+
+##################################################
+# You Are Tasked With Taking a Stronghold
+# by Hapchazzard
+# 0111 - 0120
+##################################################
+
+# You are sent to besiege a stubborn stronghold
+sjalvolki_conquest.0111 = {
+	type = character_event
+	content_source = dlc_gh
+	title = sjalvolki_conquest.0111.t
+	desc = {
+		first_valid = { 
+			triggered_desc = {
+				trigger = {
+					exists = scope:already_tried_negotiating
+				}
+				desc = sjalvolki_conquest.0111.desc_failed_surrender
+			}
+			desc = sjalvolki_conquest.0111.desc
+		}
+	}
+	theme = martial_strategy_focus
+	left_portrait = {
+		character = root
+		animation = war_attacker
+		outfit_tags = { military_outfit }
+	}
+	widget = {
+		gui = "event_window_widget_migration"
+		container = "custom_widgets_container"
+	}
+	trigger = {
+		#Standard checks.
+		is_available_adult_or_is_commanding = yes
+		OR = {
+			NOT = { has_character_flag = had_event_sjalvolki_conquest_0111 }
+			exists = scope:already_tried_negotiating
+		}
+		is_landed = yes
+	}
+	
+	weight_multiplier = {
+		base = 1
+		
+		#Weight up for rulers that are known to get things done
+		modifier = {
+			add = 0.25
+			has_trait = brave
+		}
+		modifier = {
+			add = 0.5
+			has_trait = education_martial_4
+		}
+		modifier = {
+			add = 0.25
+			has_trait = education_martial_3
+		}
+		#Weight down for rulers that are known to be martially incompetent
+		modifier = {
+			add = -0.25
+			martial <= 6
+		}
+		modifier = {
+			add = -0.25
+			has_trait = craven
+		}
+	}
+	
+	immediate = {
+		add_character_flag = {
+			flag = had_event_sjalvolki_conquest_0111
+			days = 1825
+		}
+		scope:target_title = {
+			random_in_de_jure_hierarchy = {
+				limit = {
+					tier = tier_county
+					NOT = { holder.top_liege = scope:attacker }
+				}
+				save_scope_as = siege_location
+			}
+		}
+	}
+	
+	# Storm the castle with a few elite troops
+	option = {
+		name = sjalvolki_conquest.0111.a
+		trigger = {
+			NOT = { has_trait = craven }
+			OR = {
+				has_trait = brave
+				has_trait = arrogant
+			}
+		}
+		
+		custom_tooltip = lead_daring_assault_on_stronghold_tooltip
+		duel = {
+			skill = prowess
+			value = very_high_skill_rating
+			18 = {
+				desc = sjalvolki_conquest.0111.successfully_led_daring_assault
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0111.successfully_led_daring_assault
+					left_icon = root
+	
+					add_prestige = major_prestige_gain
+					add_conquest_contribution_effect = { VALUE = 50 }
+				}
+			}
+			18 = {
+				desc = sjalvolki_conquest.0111.daring_assault_fended_off
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0111.daring_assault_fended_off
+					left_icon = root
+	
+					add_prestige = medium_prestige_loss
+					change_trait_rank = {
+						trait = wounded
+						rank = 1
+						max = 3
+					}
+				}
+			}
+			18 = {
+				desc = sjalvolki_conquest.0111.killed_in_assault
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0111.killed_in_assault
+					left_icon = root
+	
+					death = {
+						death_reason = death_battle
+						#killer = scope:knight.killer
+					}
+				}
+			}
+		}
+		
+		stress_impact = {
+			patient = medium_stress_impact_gain
+			calm = minor_stress_impact_gain
+			arrogant = medium_stress_impact_loss
+			impatient = major_stress_impact_loss
+			brave = major_stress_impact_loss
+		}
+	}
+	
+	# Try and negotiate surrender (honest, diplomacy)
+	option = {
+		name = sjalvolki_conquest.0111.d
+		add_internal_flag = fancy_coloring
+		add_internal_flag = fancy_coloring_light_blue_stretch
+		trigger = {
+			OR = {
+				has_trait = compassionate
+				diplomacy >= decent_skill_rating
+			}
+			# If you're cruel, only make it an honest promise if you're just or honest
+			trigger_if = {
+				limit = {
+					OR = {
+						has_trait = sadistic
+						has_trait = callous
+					}
+				}
+				OR = {
+					has_trait = just
+					has_trait = honest
+				}
+			}
+			# Must not have already attempted negotiations
+			NOT = { exists = scope:already_tried_negotiating }
+		}
+		
+		duel = {
+			skill = diplomacy
+			value = very_high_skill_rating
+			18 = {
+				desc = sjalvolki_conquest.0111.successfully_negotiated_surrender
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -17
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0111.successfully_negotiated_surrender
+					left_icon = root
+	
+					add_prestige = medium_prestige_gain
+					add_conquest_contribution_effect = { VALUE = 40 }
+				}
+			}
+			18 = {
+				desc = sjalvolki_conquest.0111.unsuccessfully_negotiated_surrender
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -17
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0111.unsuccessfully_negotiated_surrender
+					left_icon = root
+					
+					add_prestige = minor_prestige_loss
+					custom_tooltip = will_be_able_to_try_other_options_tooltip
+					trigger_event = sjalvolki_conquest.0111
+				}
+			}
+		}
+		save_scope_value_as = {
+			name = already_tried_negotiating
+			value = yes
+		}
+		
+		stress_impact = {
+			patient = medium_stress_impact_loss
+			calm = minor_stress_impact_loss
+			brave = minor_stress_impact_gain
+			arrogant = medium_stress_impact_gain
+			impatient = major_stress_impact_gain
+		}
+	}
+	
+	# Try and negotiate surrender (dishonest, intrigue)
+	option = {
+		name = sjalvolki_conquest.0111.d_dishonest
+		add_internal_flag = fancy_coloring
+		add_internal_flag = fancy_coloring_purple_stretch
+		trigger = {
+			OR = {
+				has_trait = sadistic
+				has_trait = callous
+				has_trait = deceitful
+			}
+			NOR = {
+				has_trait = just
+				has_trait = honest
+				has_trait = compassionate
+			}
+			# Must not have already attempted negotiations
+			NOT = { exists = scope:already_tried_negotiating }
+		}
+		
+		save_scope_value_as = {
+			name = already_tried_negotiating
+			value = yes
+		}
+		custom_tooltip = surrender_offer_not_honest_tooltip
+		duel = {
+			skill = intrigue
+			value = very_high_skill_rating
+			18 = {
+				desc = sjalvolki_conquest.0111.successfully_negotiated_surrender
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -17
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0111.successfully_negotiated_surrender
+					left_icon = root
+			
+					add_prestige = medium_prestige_gain
+					add_conquest_contribution_effect = { VALUE = 40 }
+					add_dread = minor_dread_gain
+					
+					add_piety = piety_gain_from_dishonorable_action_value
+					
+					stress_impact = {
+						sadistic = medium_stress_impact_loss
+						deceitful = medium_stress_impact_loss
+						arbitrary = minor_stress_impact_loss
+						brave = minor_stress_impact_gain
+					}
+				}
+			}
+			18 = {
+				desc = sjalvolki_conquest.0111.unsuccessfully_negotiated_surrender
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -17
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0111.unsuccessfully_negotiated_surrender
+					left_icon = root
+					
+					add_prestige = minor_prestige_loss
+					custom_tooltip = will_be_able_to_try_other_options_tooltip
+					trigger_event = sjalvolki_conquest.0111
+				}
+			}
+		}
+	}
+	
+	# You order an assault on the castle
+	option = {
+		name = sjalvolki_conquest.0111.b
+		add_internal_flag = fancy_coloring
+		add_internal_flag = fancy_coloring_orange_stretch
+		trigger = {
+			# Have a special, upgraded version
+			NOR = {
+				blood_aspect_skill_trigger = { VALUE = 15 }
+				blood_aspect_skill_trigger = { VALUE = 20 }
+				stone_aspect_skill_trigger = { VALUE = 15 }
+				stone_aspect_skill_trigger = { VALUE = 20 }
+				ethereal_aspect_skill_trigger = { VALUE = 15 }
+				ethereal_aspect_skill_trigger = { VALUE = 20 }
+			}
+		}
+		
+		duel = {
+			skill = martial
+			value = decent_skill_rating
+			12 = {
+				desc = sjalvolki_conquest.0111.successfully_conducted_assault
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -7
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0111.successfully_conducted_assault
+					left_icon = root
+	
+					add_prestige = medium_prestige_gain
+					add_conquest_contribution_effect = { VALUE = 30 }
+				}
+			}
+			12 = {
+				desc = sjalvolki_conquest.0111.unsuccessfully_conducted_assault
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -7
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0111.unsuccessfully_conducted_assault
+					left_icon = root
+					
+					add_prestige = medium_prestige_loss
+					add_conquest_contribution_effect = { VALUE = -20 }	# Due to losing troops
+				}
+			}
+		}
+		
+		stress_impact = {
+			patient = medium_stress_impact_gain
+			calm = minor_stress_impact_gain
+			brave = minor_stress_impact_loss
+			arrogant = medium_stress_impact_loss
+			impatient = major_stress_impact_loss
+		}
+	}
+	
+	# You destroy the castle with magic
+	option = {
+		name = sjalvolki_conquest.0111.b_magic
+		add_internal_flag = fancy_coloring
+		add_internal_flag = fancy_coloring_teal_stretch
+		trigger = {
+			OR = {
+				blood_aspect_skill_trigger = { VALUE = 15 }
+				blood_aspect_skill_trigger = { VALUE = 20 }
+				stone_aspect_skill_trigger = { VALUE = 15 }
+				stone_aspect_skill_trigger = { VALUE = 20 }
+				ethereal_aspect_skill_trigger = { VALUE = 15 }
+				ethereal_aspect_skill_trigger = { VALUE = 20 }
+			}
+		}
+		
+		duel = {
+			value = destroy_fort_with_magic_duel_value
+			localization = magic_prowess_duel
+			0 = {
+				desc = sjalvolki_conquest.0111.annihilate_fortress
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 0.5
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0111.annihilate_fortress
+					left_icon = root
+	
+					add_prestige = major_prestige_gain
+					add_dread = minor_dread_gain
+					add_conquest_contribution_effect = { VALUE = 30 }
+				}
+			}
+			12 = {
+				desc = sjalvolki_conquest.0111.successfully_conducted_assault
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -11
+					max = 12
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0111.successfully_conducted_assault
+					left_icon = root
+	
+					add_prestige = medium_prestige_gain
+					add_conquest_contribution_effect = { VALUE = 30 }
+				}
+			}
+			12 = {
+				desc = sjalvolki_conquest.0111.unsuccessfully_conducted_assault
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -11
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0111.unsuccessfully_conducted_assault
+					left_icon = root
+					
+					add_prestige = medium_prestige_loss
+					add_conquest_contribution_effect = { VALUE = -20 }	# Due to losing troops
+				}
+			}
+		}
+		
+		stress_impact = {
+			patient = medium_stress_impact_gain
+			calm = minor_stress_impact_gain
+			brave = minor_stress_impact_loss
+			arrogant = medium_stress_impact_loss
+			impatient = major_stress_impact_loss
+		}
+	}
+	
+	# You conduct a normal siege
+	option = {
+		name = sjalvolki_conquest.0111.c
+		add_internal_flag = fancy_coloring
+		add_internal_flag = fancy_coloring_orange_stretch
+		trigger = {
+			# Have a special, upgraded option
+			NOR = {
+				has_trait = gregarious
+				has_trait = gluttonous
+				has_trait = lustful
+			}
+		}
+		
+		duel = {
+			skill = martial
+			value = mediocre_skill_rating
+			8 = {
+				desc = sjalvolki_conquest.0111.successfully_conducted_siege
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -7
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0111.successfully_conducted_siege
+					left_icon = root
+	
+					add_prestige = minor_prestige_gain
+					add_conquest_contribution_effect = { VALUE = 20 }
+				}
+			}
+			8 = {
+				desc = sjalvolki_conquest.0111.unsuccessfully_conducted_siege
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -7
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0111.unsuccessfully_conducted_siege
+					left_icon = root
+					
+					add_prestige = minor_prestige_loss
+				}
+			}
+		}
+		
+		stress_impact = {
+			patient = medium_stress_impact_loss
+			calm = minor_stress_impact_loss
+			brave = minor_stress_impact_gain
+			arrogant = medium_stress_impact_gain
+			impatient = major_stress_impact_gain
+		}
+	}
+	
+	# You conduct a siege while having a party outside the walls
+	option = {
+		name = sjalvolki_conquest.0111.c_decadent
+		add_internal_flag = fancy_coloring
+		add_internal_flag = fancy_coloring_orange_right
+		add_internal_flag = fancy_coloring_light_blue_left
+		trigger = {
+			OR = {
+				has_trait = gregarious
+				has_trait = gluttonous
+				has_trait = lustful
+			}
+		}
+		
+		duel = {
+			skill = martial
+			value = decent_skill_rating
+			10 = {
+				desc = sjalvolki_conquest.0111.successfully_conducted_siege
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -7
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0111.successfully_conducted_siege
+					left_icon = root
+	
+					add_prestige = minor_prestige_gain
+					add_conquest_contribution_effect = { VALUE = 20 }
+				}
+			}
+			10 = {
+				desc = sjalvolki_conquest.0111.unsuccessfully_conducted_siege
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -7
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0111.unsuccessfully_conducted_siege
+					left_icon = root
+					
+					add_prestige = minor_prestige_loss
+				}
+			}
+		}
+		duel = {
+			skill = diplomacy
+			value = decent_skill_rating
+			10 = {
+				desc = sjalvolki_conquest.0111.threw_a_good_siege_party
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -9
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0111.threw_a_good_siege_party
+					left_icon = root
+	
+					add_prestige = {
+						value = diplomacy
+						multiply = 10
+						min = minor_prestige_gain
+					}
+				}
+			}
+			10 = {
+				desc = sjalvolki_conquest.0111.boring_siege
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -9
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0111.boring_siege
+					left_icon = root
+				}
+			}
+		}
+		
+		stress_impact = {
+			patient = medium_stress_impact_loss
+			calm = minor_stress_impact_loss
+			brave = minor_stress_impact_gain
+			arrogant = medium_stress_impact_gain
+			impatient = major_stress_impact_gain
+		}
+	}
+}
+
+##################################################
+# Arrogant Aversarian
+# by Hapchazzard
+# 0121 - 0130
+##################################################
+
+# You are sent to negotiate with an especially obnoxious Aversarian
+sjalvolki_conquest.0121 = {
+	type = character_event
+	content_source = dlc_gh
+	title = sjalvolki_conquest.0121.t
+	desc = {
+		desc = sjalvolki_conquest.0121.intro
+		first_valid = { 
+			triggered_desc = {
+				trigger = {
+					OR = {
+						has_trait = calm
+						has_trait = patient
+					}
+				}
+				desc = sjalvolki_conquest.0121.desc_calm_or_patient
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = wrathful
+				}
+				desc = sjalvolki_conquest.0121.desc_wrathful
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = sadistic
+				}
+				desc = sjalvolki_conquest.0121.desc_sadistic
+			}
+			desc = sjalvolki_conquest.0121.desc_generic
+		}
+		desc = sjalvolki_conquest.0121.outro
+	}
+	theme = diplomacy_foreign_affairs_focus
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { 
+				OR = {
+					has_trait = calm
+					has_trait = patient
+				}
+			}
+  			animation = personality_rational
+  		}
+		triggered_animation = {
+			trigger = { 
+				has_trait = wrathful
+			}
+  			animation = rage
+  		}
+		triggered_animation = {
+			trigger = { 
+				NOR = {
+					has_trait = calm
+					has_trait = patient
+					has_trait = wrathful
+				}
+			}
+  			animation = anger
+  		}
+	}
+	right_portrait = {
+		character = scope:arrogant_aversarian
+		animation = dismissal
+	}
+	widget = {
+		gui = "event_window_widget_migration"
+		container = "custom_widgets_container"
+	}
+	trigger = {
+		#Standard checks.
+		is_available_adult_or_is_commanding = yes
+		is_landed = yes
+		NOT = { has_character_flag = had_event_sjalvolki_conquest_0121 }
+	}
+	
+	weight_multiplier = {
+		base = 1
+		
+		#Weight up for rulers that are more diplomatically oriented
+		modifier = {
+			add = 0.5
+			has_trait = education_diplomacy_4
+		}
+		modifier = {
+			add = 0.25
+			has_trait = education_diplomacy_3
+		}
+		#Weight up for rulers that know Aversarian
+		modifier = {
+			add = 0.5
+			knows_language = language_aversarian
+		}
+		#Weight down for rulers that have previously gone apeshit on these kinds of assignments
+		modifier = {
+			add = -0.9
+			has_variable = has_killed_aversarian_host
+		}
+	}
+	
+	immediate = {
+		add_character_flag = {
+			flag = had_event_sjalvolki_conquest_0121
+			days = 1825
+		}
+		scope:target_title = {
+			random_in_de_jure_hierarchy = {
+				limit = {
+					tier = tier_county
+					NOT = { holder.top_liege = scope:attacker }
+				}
+				culture = { save_scope_as = aversarian_culture }
+				faith = { save_scope_as = aversarian_faith }
+			}
+			save_scope_as = arrogant_aversarian_county
+		}
+		create_character = {
+			template = arrogant_aversarian_template
+			save_scope_as = arrogant_aversarian
+			culture = scope:aversarian_culture
+			faith = scope:aversarian_faith
+			location = scope:arrogant_aversarian_county.holder.capital_province
+		}
+		scope:arrogant_aversarian = {
+			save_scope_as = throne_room_scope
+		}
+	}
+	
+	# You lose your cool
+	option = {
+		name = sjalvolki_conquest.0121.a
+		
+		trigger = {
+			# Have special options
+			NOR = { 
+				has_trait = wrathful
+				has_trait = vengeful
+				has_trait = sadistic
+				has_trait = just
+				has_trait = zealous
+				has_trait = compassionate
+			}
+		}
+		
+		add_prestige = miniscule_prestige_gain
+		add_conquest_contribution_effect = { VALUE = -30 }
+		
+		stress_impact = {
+			calm = medium_stress_impact_gain
+			patient = medium_stress_impact_gain
+			sadistic = medium_stress_impact_loss
+			vengeful = medium_stress_impact_loss
+			wrathful = major_stress_impact_loss
+		}
+	}
+	
+	# You lose your cool. Violently.
+	option = {
+		name = {
+			text = {
+				first_valid = {
+					#Cruel
+					triggered_desc = {
+						trigger = { 
+							OR = {
+								has_trait = sadistic
+								has_trait = callous
+							}
+						}
+						desc = sjalvolki_conquest.0121.a_sadistic
+					}
+					#Wrathful and murderous
+					triggered_desc = {
+						trigger = { 
+							has_trait = wrathful
+							ai_compassion < 0
+						}
+						desc = sjalvolki_conquest.0121.a_wrathful_murderous
+					}
+					#Nonmurderous
+					desc = sjalvolki_conquest.0121.a_wrathful_nonmurderous
+				}
+			}
+		}
+		
+		trigger = {
+			OR = {
+				has_trait = wrathful
+				has_trait = vengeful
+				has_trait = sadistic
+			}
+		}
+		
+		add_dread = minor_dread_gain
+		add_prestige = minor_prestige_gain
+		if = {
+			limit = {  
+				OR = {
+					has_trait = sadistic
+					has_trait = callous
+				}
+			}
+			scope:arrogant_aversarian = {
+				death = {
+					killer = root
+					death_reason = death_torture
+				}
+			}
+			add_conquest_contribution_effect = { VALUE = -100 }
+			add_piety = major_piety_loss
+			set_variable = has_killed_aversarian_host
+		}
+		else_if = {
+			limit = { ai_compassion < 0 }
+			scope:arrogant_aversarian = {
+				death = {
+					death_reason = death_beaten
+					killer = root
+				}
+			}
+			add_conquest_contribution_effect = { VALUE = -50 }
+			add_piety = medium_piety_loss
+			set_variable = has_killed_aversarian_host
+		}
+		else = {
+			scope:arrogant_aversarian = {
+				change_trait_rank = {
+					trait = wounded
+					rank = 2
+					max = 3
+				}
+			}
+			add_conquest_contribution_effect = { VALUE = -30 }
+			add_piety = minor_piety_loss
+		}
+		
+		stress_impact = {
+			compassionate = medium_stress_impact_gain
+			calm = medium_stress_impact_gain
+			patient = medium_stress_impact_gain
+			sadistic = medium_stress_impact_loss
+			vengeful = medium_stress_impact_loss
+			wrathful = major_stress_impact_loss
+		}
+	}
+	
+	# You engage in a battle of snark with the Aversarian
+	option = {
+		name = sjalvolki_conquest.0121.c
+		add_internal_flag = fancy_coloring
+		add_internal_flag = fancy_coloring_light_blue_stretch
+		trigger = {
+			OR = {
+				has_trait = gregarious
+				has_trait = arrogant
+				diplomacy >= decent_skill_rating
+			}
+		}
+		
+		duel = {
+			skill = diplomacy
+			target = scope:arrogant_aversarian
+			# Much easier to do since you retain your composure
+			50 = {
+				desc = sjalvolki_conquest.0121.snark_victory
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.0
+					min = -49
+				}
+				modifier = {
+					factor = 1.5
+					knows_language = language_aversarian
+				}
+				modifier = {
+					factor = 1.5
+					has_trait = calm
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0121.snark_victory
+					left_icon = root
+	
+					add_prestige = {
+						value = diplomacy
+						multiply = 5
+						min = minor_prestige_gain
+					}
+				}
+			}
+			50 = {
+				desc = sjalvolki_conquest.0121.snark_defeat
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.0
+					min = -49
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0121.snark_defeat
+					left_icon = root
+					
+					add_prestige = minor_prestige_loss
+				}
+			}
+		}
+		duel = {
+			skill = diplomacy
+			value = high_skill_rating
+			# Less likely to succeed since you are actively insulting them
+			15 = {
+				desc = sjalvolki_conquest.0121.negotiated_good_terms
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -14
+				}
+				modifier = {
+					factor = 1.5
+					knows_language = language_aversarian
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0121.negotiated_good_terms
+					left_icon = root
+	
+					add_prestige = {
+						value = diplomacy
+						multiply = 10
+						min = medium_prestige_gain
+					}
+					add_conquest_contribution_effect = { VALUE = 30 }
+				}
+			}
+			15 = {
+				desc = sjalvolki_conquest.0121.failed_to_negotiate_terms
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -14
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0121.failed_to_negotiate_terms
+					left_icon = root
+					
+					add_prestige = minor_prestige_loss
+				}
+			}
+		}
+	}
+	
+	# You denounce the Aversarian's evil ways
+	option = {
+		name = sjalvolki_conquest.0121.d
+		add_internal_flag = fancy_coloring
+		add_internal_flag = fancy_coloring_light_blue_stretch
+		trigger = {
+			OR = {
+				has_trait = just
+				has_trait = zealous
+				has_trait = compassionate
+			}
+		}
+		
+		duel = {
+			skill = diplomacy
+			value = decent_skill_rating
+			# How good is your denouncement?
+			15 = {
+				desc = sjalvolki_conquest.0121.successful_denouncement
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -14
+				}
+				modifier = {
+					factor = 1.5
+					knows_language = language_aversarian
+				}
+				# Easier to do and gives more prestige the more generally loathsome the Aversarian is to your faith
+				modifier = {
+					factor = 2
+					scope:arrogant_aversarian = { num_sinful_traits = { value >= 3 faith = root.faith } }
+				}
+				modifier = {
+					factor = 1.5
+					scope:arrogant_aversarian = { num_sinful_traits = { value = 2 faith = root.faith } }
+				}
+				modifier = {
+					factor = 1.25
+					scope:arrogant_aversarian = { num_sinful_traits = { value = 1 faith = root.faith } }
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0121.successful_denouncement
+					left_icon = root
+	
+					add_piety = {
+						value = diplomacy
+						multiply = 5
+						add = {
+							value = 0
+							if = {
+								limit = { scope:arrogant_aversarian = { num_sinful_traits = { value >= 3 faith = root.faith } } }
+								add = 150
+							}
+							else_if = {
+								limit = { scope:arrogant_aversarian = { num_sinful_traits = { value = 2 faith = root.faith } } }
+								add = 100
+							}
+							else_if = {
+								limit = { scope:arrogant_aversarian = { num_sinful_traits = { value = 1 faith = root.faith } } }
+								add = 50
+							}
+						}
+						min = minor_prestige_gain
+					}
+				}
+			}
+			15 = {
+				desc = sjalvolki_conquest.0121.unsuccessful_denouncement
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -14
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0121.unsuccessful_denouncement
+					left_icon = root
+					
+					add_prestige = minor_prestige_loss
+				}
+			}
+		}
+		duel = {
+			skill = diplomacy
+			value = high_skill_rating
+			# Less likely to succeed since you are actively insulting them
+			15 = {
+				desc = sjalvolki_conquest.0121.negotiated_good_terms
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -14
+				}
+				modifier = {
+					factor = 1.5
+					knows_language = language_aversarian
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0121.negotiated_good_terms
+					left_icon = root
+	
+					add_prestige = {
+						value = diplomacy
+						multiply = 10
+						min = medium_prestige_gain
+					}
+					add_conquest_contribution_effect = { VALUE = 30 }
+				}
+			}
+			15 = {
+				desc = sjalvolki_conquest.0121.failed_to_negotiate_terms
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -14
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0121.failed_to_negotiate_terms
+					left_icon = root
+					
+					add_prestige = minor_prestige_loss
+				}
+			}
+		}
+	}
+	
+	# You try and work out a deal under the table that benefits you both
+	option = {
+		name = sjalvolki_conquest.0121.e
+		add_internal_flag = fancy_coloring
+		add_internal_flag = fancy_coloring_light_blue_left
+		add_internal_flag = fancy_coloring_purple_right
+		trigger = {
+			OR = {
+				has_trait = ambitious
+				has_trait = greedy
+			}
+		}
+		
+		duel = {
+			skill = intrigue
+			value = high_skill_rating
+			# Does your underhanded approach pass by unnoticed?
+			15 = {
+				desc = sjalvolki_conquest.0121.successfully_hid_underhanded_negotiations
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -14
+				}
+				# Easier to hide if you aren't using an interpreter
+				modifier = {
+					factor = 1.5
+					knows_language = language_aversarian
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0121.successfully_hid_underhanded_negotiations
+					left_icon = root
+				}
+			}
+			15 = {
+				desc = sjalvolki_conquest.0121.unsuccessfully_hid_underhanded_negotiations
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -14
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0121.unsuccessfully_hid_underhanded_negotiations
+					left_icon = root
+					
+					add_prestige = medium_prestige_loss
+					add_piety = medium_piety_loss
+					add_conquest_contribution_effect = { VALUE = -20 }
+				}
+			}
+		}
+		duel = {
+			skill = diplomacy
+			value = high_skill_rating
+			15 = {
+				desc = sjalvolki_conquest.0121.negotiated_good_personal_terms
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -14
+				}
+				modifier = {
+					factor = 1.5
+					knows_language = language_aversarian
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0121.negotiated_good_personal_terms
+					left_icon = root
+					
+					add_gold = medium_gold_value
+				}
+			}
+			15 = {
+				desc = sjalvolki_conquest.0121.failed_to_negotiate_good_personal_terms
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -14
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0121.failed_to_negotiate_good_personal_terms
+					left_icon = root
+					
+					add_prestige = minor_prestige_loss
+				}
+			}
+		}
+		stress_impact = {
+			zealous = medium_stress_impact_gain
+			just = medium_stress_impact_gain
+			honest = major_stress_impact_gain
+		}
+	}
+	
+	# You remain composed, if barely
+	option = {
+		name = sjalvolki_conquest.0121.b
+		add_internal_flag = fancy_coloring
+		add_internal_flag = fancy_coloring_light_blue_stretch
+		trigger = {
+			NOR = {
+				has_trait = calm
+				has_trait = patient
+				has_trait = forgiving
+			}
+		}
+		
+		duel = {
+			skill = diplomacy
+			value = decent_skill_rating
+			10 = {
+				desc = sjalvolki_conquest.0121.negotiated_good_terms
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -19
+				}
+				modifier = {
+					factor = 1.5
+					knows_language = language_aversarian
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0121.negotiated_good_terms
+					left_icon = root
+	
+					add_prestige = {
+						value = diplomacy
+						multiply = 10
+						min = medium_prestige_gain
+					}
+					add_conquest_contribution_effect = { VALUE = 30 }
+				}
+			}
+			10 = {
+				desc = sjalvolki_conquest.0121.failed_to_negotiate_terms
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -9
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0121.failed_to_negotiate_terms
+					left_icon = root
+					
+					add_prestige = minor_prestige_loss
+				}
+			}
+		}
+		stress_impact = {
+			base = minor_stress_impact_gain
+			vengeful = medium_stress_impact_gain
+			arrogant = medium_stress_impact_gain
+			wrathful = major_stress_impact_gain
+		}
+	}
+	
+	# You effortlessly remain composed
+	option = {
+		name = sjalvolki_conquest.0121.b_calm
+		add_internal_flag = fancy_coloring
+		add_internal_flag = fancy_coloring_light_blue_stretch
+		trigger = {
+			OR = {
+				has_trait = calm
+				has_trait = patient
+				has_trait = forgiving
+			}
+		}
+		
+		custom_tooltip = sjalvolki_conquest_0121_ignore_insults_tooltip
+		add_prestige = minor_prestige_gain
+		duel = {
+			skill = diplomacy
+			value = decent_skill_rating
+			# Much easier to do since you retain your composure
+			20 = {
+				desc = sjalvolki_conquest.0121.negotiated_good_terms
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -19
+				}
+				modifier = {
+					factor = 1.5
+					knows_language = language_aversarian
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0121.negotiated_good_terms
+					left_icon = root
+	
+					add_prestige = {
+						value = diplomacy
+						multiply = 10
+						min = medium_prestige_gain
+					}
+					add_conquest_contribution_effect = { VALUE = 30 }
+				}
+			}
+			10 = {
+				desc = sjalvolki_conquest.0121.failed_to_negotiate_terms
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -9
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0121.failed_to_negotiate_terms
+					left_icon = root
+					
+					add_prestige = minor_prestige_loss
+				}
+			}
+		}
+		stress_impact = {
+			patient = medium_stress_impact_loss
+			calm = minor_stress_impact_loss
+			arrogant = medium_stress_impact_gain
+			wrathful = major_stress_impact_gain
+		}
+	}
+	
+	after = {
+		if = {
+			limit = { scope:arrogant_aversarian = { is_alive = yes } }
+			scope:arrogant_aversarian = {
+				death = {
+					death_reason = death_vanished
+				}
+			}
+		}
+	}
+}
+
+##################################################
+# Uncooperative Locals
+# by Hapchazzard
+# 0131 - 0140
+##################################################
+
+# The locals of a county are giving you grief
+sjalvolki_conquest.0131 = {
+	type = character_event
+	content_source = dlc_gh
+	title = sjalvolki_conquest.0131.t
+	desc = {
+		desc = sjalvolki_conquest.0131.desc
+	}
+	theme = martial_authority_focus
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { 
+				has_trait = sadistic
+			}
+  			animation = personality_vengeful
+  		}
+		triggered_animation = {
+			trigger = { 
+				NOT = {
+					has_trait = sadistic
+				}
+			}
+  			animation = personality_rational
+  		}
+	}
+	widget = {
+		gui = "event_window_widget_migration"
+		container = "custom_widgets_container"
+	}
+	trigger = {
+		#Standard checks.
+		is_available_adult_or_is_commanding = yes
+		is_landed = yes
+		NOT = { has_character_flag = had_event_sjalvolki_conquest_0131 }
+	}
+	
+	weight_multiplier = {
+		base = 1
+		
+		#Weight up for rulers that know Aversarian
+		modifier = {
+			add = 0.5
+			knows_language = language_aversarian
+		}
+	}
+	
+	immediate = {
+		add_character_flag = {
+			flag = had_event_sjalvolki_conquest_0131
+			days = 1825
+		}
+		scope:target_title = {
+			random_in_de_jure_hierarchy = {
+				limit = {
+					tier = tier_county
+					NOT = { holder.top_liege = scope:attacker }
+				}
+				save_scope_as = uncooperative_locals_county
+			}
+		}
+	}
+	
+	# You try to police the locals
+	option = {
+		name = sjalvolki_conquest.0131.a
+		add_internal_flag = fancy_coloring
+		add_internal_flag = fancy_coloring_orange_stretch
+		trigger = {
+			OR = {
+				has_trait = compassionate
+				NOR = {
+					has_trait = sadistic
+					has_trait = callous
+					has_trait = vengeful
+				}
+			}
+		}
+		
+		duel = {
+			skill = martial
+			value = high_skill_rating
+			# Much easier to do since you retain your composure
+			15 = {
+				desc = sjalvolki_conquest.0131.successfully_policed_locals
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -14
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0131.successfully_policed_locals
+					left_icon = root
+					
+					add_prestige = {
+						value = martial
+						multiply = 10
+						min = minor_prestige_gain
+					}
+					add_conquest_contribution_effect = { VALUE = 20 }
+				}
+			}
+			15 = {
+				desc = sjalvolki_conquest.0131.unsuccessfully_policed_locals
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -14
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0131.unsuccessfully_policed_locals
+					left_icon = root
+					
+					add_prestige = minor_prestige_loss
+				}
+			}
+		}
+	}
+	
+	# You teach the locals a lesson about the perils of defiance
+	option = {
+		name = sjalvolki_conquest.0131.a_sadistic
+		add_internal_flag = fancy_coloring
+		add_internal_flag = fancy_coloring_orange_stretch
+		trigger = {
+			NOT = { has_trait = compassionate }
+			OR = {
+				has_trait = sadistic
+				has_trait = callous
+				has_trait = vengeful
+			}
+		}
+		
+		add_piety = medium_piety_loss
+		duel = {
+			skill = martial
+			value = decent_skill_rating
+			# Much easier to do since you retain your composure
+			12 = {
+				desc = sjalvolki_conquest.0131.successfully_subdued_locals
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -11
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0131.successfully_subdued_locals
+					left_icon = root
+					
+					add_prestige = {
+						value = martial
+						multiply = 10
+						min = minor_prestige_gain
+					}
+					add_dread = minor_dread_gain
+					add_gold = minor_gold_value
+					add_conquest_contribution_effect = { VALUE = 10 }
+				}
+			}
+			12 = {
+				desc = sjalvolki_conquest.0131.unsuccessfully_subdued_locals
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -11
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0131.unsuccessfully_subdued_locals
+					left_icon = root
+					
+					add_prestige = medium_prestige_loss
+				}
+			}
+		}
+		stress_impact = {
+			sadistic = medium_stress_impact_loss
+			callous = minor_stress_impact_loss
+			vengeful = minor_stress_impact_loss
+			wrathful = minor_stress_impact_loss
+			impatient = minor_stress_impact_loss
+			forgiving = major_stress_impact_gain
+		}
+	}
+	
+	# You try to sweep the problem under the rug
+	option = {
+		name = sjalvolki_conquest.0131.c
+		add_internal_flag = fancy_coloring
+		add_internal_flag = fancy_coloring_purple_stretch
+		trigger = {
+			OR = {
+				has_trait = lazy
+				has_trait = deceitful
+			}
+		}
+		
+		duel = {
+			skill = intrigue
+			value = very_high_skill_rating
+			18 = {
+				desc = sjalvolki_conquest.0131.successfully_swept_problem_under_the_rug
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -17
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0131.successfully_swept_problem_under_the_rug
+					left_icon = root
+					
+					add_prestige = {
+						value = intrigue
+						multiply = 10
+						min = minor_prestige_gain
+					}
+					add_conquest_contribution_effect = { VALUE = 20 }
+					random = {
+						chance = 50
+						custom_tooltip = will_have_another_conquest_event
+						trigger_event = {
+							on_action = sjalvolki_conquest_events
+							days = { 30 60 }
+						}
+					}
+				}
+			}
+			18 = {
+				desc = sjalvolki_conquest.0131.unsuccessfully_swept_problem_under_the_rug
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -17
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0131.unsuccessfully_swept_problem_under_the_rug
+					left_icon = root
+					
+					add_prestige = major_prestige_loss
+					add_piety = medium_piety_loss
+					add_conquest_contribution_effect = { VALUE = -30 }
+				}
+			}
+		}
+		
+		stress_impact = {
+			lazy = medium_stress_impact_loss
+			deceitful = minor_stress_impact_loss
+			honest = major_stress_impact_gain
+			just = major_stress_impact_gain
+		}
+	}
+	
+	# You try and eliminate the problem-makers
+	option = {
+		name = {
+			text = {
+				first_valid = {
+					#Sadistic
+					triggered_desc = {
+						trigger = { 
+							OR = {
+								has_trait = sadistic
+								has_trait = callous
+							}
+						}
+						desc = sjalvolki_conquest.0131.d_sadistic
+					}
+					#Default
+					desc = sjalvolki_conquest.0131.d
+				}
+			}
+		}
+		add_internal_flag = fancy_coloring
+		add_internal_flag = fancy_coloring_purple_stretch
+		trigger = {
+			OR = {
+				has_trait = paranoid
+				intrigue >= high_skill_rating
+			}
+		}
+		
+		duel = {
+			skill = intrigue
+			value = high_skill_rating
+			15 = {
+				desc = sjalvolki_conquest.0131.successfully_eliminated_troublemakers
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -14
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0131.successfully_eliminated_troublemakers
+					left_icon = root
+					
+					add_prestige = {
+						value = intrigue
+						multiply = 10
+						min = minor_prestige_gain
+					}
+					add_conquest_contribution_effect = { VALUE = 30 }
+				}
+			}
+			15 = {
+				desc = sjalvolki_conquest.0131.unsuccessfully_eliminated_troublemakers
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -14
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0131.unsuccessfully_eliminated_troublemakers
+					left_icon = root
+					
+					add_prestige = medium_prestige_loss
+				}
+			}
+		}
+		
+		stress_impact = {
+			lazy = medium_stress_impact_loss
+			deceitful = minor_stress_impact_loss
+			honest = major_stress_impact_gain
+			just = major_stress_impact_gain
+		}
+	}
+	
+	# You try and win hearts and minds
+	option = {
+		name = sjalvolki_conquest.0131.b_generous
+		add_internal_flag = fancy_coloring
+		add_internal_flag = fancy_coloring_light_blue_stretch
+		trigger = {
+			OR = {
+				has_trait = gregarious
+				has_trait = generous
+				has_trait = compassionate
+			}
+		}
+		
+		remove_short_term_gold = minor_gold_value
+		add_piety = minor_piety_gain
+		duel = {
+			skill = diplomacy
+			value = decent_skill_rating
+			12 = {
+				desc = sjalvolki_conquest.0131.successfully_persuaded_locals
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -11
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0131.successfully_persuaded_locals
+					left_icon = root
+					
+					add_prestige = {
+						value = diplomacy
+						multiply = 20
+						min = medium_prestige_gain
+					}
+					add_conquest_contribution_effect = { VALUE = 30 }
+				}
+			}
+			12 = {
+				desc = sjalvolki_conquest.0131.unsuccessfully_persuaded_locals
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -11
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0131.unsuccessfully_persuaded_locals
+					left_icon = root
+					
+					add_prestige = medium_prestige_loss
+				}
+			}
+		}
+	}
+	
+	# You try and persuade the locals to cooperate
+	option = {
+		name = sjalvolki_conquest.0131.b
+		add_internal_flag = fancy_coloring
+		add_internal_flag = fancy_coloring_light_blue_stretch
+		trigger = {
+			# Have a special, upgraded version
+			NOR = {
+				has_trait = gregarious
+				has_trait = generous
+				has_trait = compassionate
+			}
+		}
+		
+		duel = {
+			skill = diplomacy
+			value = high_skill_rating
+			15 = {
+				desc = sjalvolki_conquest.0131.successfully_persuaded_locals
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -14
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0131.successfully_persuaded_locals
+					left_icon = root
+					
+					add_prestige = {
+						value = diplomacy
+						multiply = 10
+						min = minor_prestige_gain
+					}
+					add_conquest_contribution_effect = { VALUE = 30 }
+				}
+			}
+			15 = {
+				desc = sjalvolki_conquest.0131.unsuccessfully_persuaded_locals
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -14
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0131.unsuccessfully_persuaded_locals
+					left_icon = root
+					
+					add_prestige = medium_prestige_loss
+				}
+			}
+		}
+	}
+}
+
+##################################################
+# Lax Discipline
+# by Hapchazzard
+# 0141 - 0150
+##################################################
+
+# Your troops have become unruly
+sjalvolki_conquest.0141 = {
+	type = character_event
+	content_source = dlc_gh
+	title = sjalvolki_conquest.0141.t
+	desc = {
+		desc = sjalvolki_conquest.0141.desc_intro
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:gluttonous_knight
+				}
+				desc = sjalvolki_conquest.0141.desc_intro_gluttonous_knight_exists
+			}
+			desc = sjalvolki_conquest.0141.desc_intro_gluttonous_knight_does_not_exist
+		}
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:drunken_knight
+				}
+				desc = sjalvolki_conquest.0141.desc_intro_drunken_knight_exists
+			}
+			desc = sjalvolki_conquest.0141.desc_intro_drunken_knight_does_not_exist
+		}
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:lustful_knight
+					is_attracted_to_women = yes
+				}
+				desc = sjalvolki_conquest.0141.desc_intro_lustful_knight_exists_female_attracted
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:lustful_knight
+					is_attracted_to_men = yes
+				}
+				desc = sjalvolki_conquest.0141.desc_intro_lustful_knight_exists_male_attracted
+			}
+			desc = sjalvolki_conquest.0141.desc_intro_lustful_knight_does_not_exist
+		}
+		desc = sjalvolki_conquest.0141.desc_outro
+	}
+	theme = martial_authority_focus
+	override_background = {
+		reference = army_camp
+	}
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = {
+				NOR = {
+					has_trait = gluttonous
+					has_trait = lustful
+					has_trait = cynical
+				}
+			}
+  			animation = disapproval
+  		}
+		triggered_animation = {
+			trigger = { 
+				OR = {
+					has_trait = gluttonous
+					has_trait = lustful
+					has_trait = cynical
+				}
+			}
+  			animation = personality_rational
+  		}
+		outfit_tags = { military_outfit }
+	}
+	right_portrait = {
+		character = scope:scapegoat_knight
+		animation = ecstasy
+		outfit_tags = { military_outfit }
+		trigger = { exists = scope:scapegoat_knight }
+	}
+	widget = {
+		gui = "event_window_widget_migration"
+		container = "custom_widgets_container"
+	}
+	trigger = {
+		#Standard checks.
+		is_available_adult_or_is_commanding = yes
+		is_landed = yes
+		NOT = { has_character_flag = had_event_sjalvolki_conquest_0141 }
+	}
+	
+	weight_multiplier = {
+		base = 1
+		
+		#Weight up for rulers that are likely to let the situation get out of hand due to inaction and lack of care
+		modifier = {
+			add = 0.5
+			OR = {
+				has_trait = lazy
+				has_trait = craven
+				has_trait = cynical
+			}
+		}
+		
+		#Weight up for rulers that are likely to let the situation get out of hand due to actively enjoying it
+		modifier = {
+			add = 0.5
+			OR = {
+				has_trait = gluttonous
+				has_trait = lustful
+				has_trait = drunkard
+			}
+		}
+	}
+	
+	immediate = {
+		add_character_flag = {
+			flag = had_event_sjalvolki_conquest_0141
+			days = 1825
+		}
+		# For loc purposes
+		random_knight = {
+			limit = {
+				OR = {
+					has_trait = gluttonous
+					has_trait = comfort_eater
+				}
+			}
+			save_scope_as = gluttonous_knight
+			add_to_list = potential_scapegoat_knights
+		}
+		random_knight = {
+			limit = {
+				NOT = { has_trait = temperate }
+				OR = {
+					has_trait = gluttonous
+					has_trait = gregarious
+					has_trait = drunkard
+				}
+				trigger_if = {
+					limit = { exists = scope:gluttonous_knight }
+					NOT = { this = scope:gluttonous_knight }
+				}
+			}
+			save_scope_as = drunken_knight
+			add_to_list = potential_scapegoat_knights
+		}
+		random_knight = {
+			limit = {
+				NOT = { has_trait = temperate }
+				OR = {
+					has_trait = lustful
+					has_trait = rakish
+				}
+				trigger_if = {
+					limit = { exists = scope:gluttonous_knight }
+					NOT = { this = scope:gluttonous_knight }
+				}
+				trigger_if = {
+					limit = { exists = scope:drunken_knight }
+					NOT = { this = scope:drunken_knight }
+				}
+			}
+			save_scope_as = lustful_knight
+			add_to_list = potential_scapegoat_knights
+		}
+		random_in_list = {
+			list = potential_scapegoat_knights
+			limit = { 
+				is_ai = yes
+				highest_held_title_tier <= tier_county
+			}
+			save_scope_as = scapegoat_knight
+			save_scope_as = recipient
+		}
+		# Pick out the potential punishment for the scapegoat in advance
+		if = {
+			limit = { exists = scope:scapegoat_knight }
+			random_list = {
+				3 = {
+					save_scope_value_as = {
+						name = punishment_method
+						value = flag:beating
+					}
+				}
+				1 = {
+					trigger = {
+						ai_compassion <= -50
+						exists = scope:lustful_knight
+						scope:scapegoat_knight = { 
+							this = scope:lustful_knight
+							is_female = no
+							NOT = { has_trait = eunuch }
+						}
+					}
+					modifier = {
+						add = 1
+						has_trait = sadistic
+					}
+					modifier = {
+						add = 1
+						has_trait = wrathful
+					}
+					save_scope_value_as = {
+						name = punishment_method
+						value = flag:castration
+					}
+				}
+				1 = {
+					trigger = {
+						ai_compassion <= -50
+					}
+					modifier = {
+						add = 1
+						has_trait = sadistic
+					}
+					modifier = {
+						add = 1
+						has_trait = wrathful
+					}
+					save_scope_value_as = {
+						name = punishment_method
+						value = flag:execution
+					}
+				}
+			}
+		}
+	}
+	
+	# You make an example of someone
+	option = {
+		name = sjalvolki_conquest.0141.a
+		trigger = {
+			OR = {
+				has_trait = sadistic
+				has_trait = callous
+				has_trait = wrathful
+				has_trait = vengeful
+				has_trait = irritable
+			}
+			NOT = {
+				has_trait = compassionate
+			}
+		}
+		
+		if = {
+			limit = {
+				exists = scope:scapegoat_knight
+				exists = scope:punishment_method
+			}
+			if = {
+				limit = { scope:punishment_method = flag:beating }
+				scope:scapegoat_knight = {
+					change_trait_rank = {
+						trait = wounded
+						rank = 1
+						max = 3
+					}
+					add_opinion = {
+						modifier = cruelty_opinion
+						opinion = -20
+						target = root
+					}
+				}
+				add_dread = miniscule_dread_gain
+			}
+			else_if = {
+				limit = { scope:punishment_method = flag:castration }
+				scope:recipient = {
+					add_character_flag = {
+						flag = is_being_tortured
+						months = 6
+					}
+				}
+				imprison_character_effect = {
+					TARGET = scope:recipient
+					IMPRISONER = root
+				}
+				torture_interaction_actor_effect = yes #Stress & dread
+				scope:recipient = {
+					add_trait = eunuch_1
+				}
+				torture_blind_castrate_disfigure_opinion_effect = { VERB = castrated }
+				every_in_list = {
+					list = potential_scapegoat_knights
+					limit = {
+						NOT = { this = scope:recipient } 
+						ai_compassion >= 50
+					}
+					add_opinion = {
+						modifier = cruelty_opinion
+						opinion = -20
+						target = root
+					}
+				}
+			}
+			else_if = {
+				limit = { scope:punishment_method = flag:execution }
+				execute_prisoner_effect = {
+					VICTIM = scope:recipient
+					EXECUTIONER = root
+				}
+				add_dread = medium_dread_gain
+				every_in_list = {
+					list = potential_scapegoat_knights
+					limit = {
+						NOT = { this = scope:recipient } 
+						ai_compassion >= 50
+					}
+					add_opinion = {
+						modifier = cruelty_opinion
+						opinion = -20
+						target = root
+					}
+				}
+			}
+		}
+	}
+	
+	# You try to crack down on the lack of discipline
+	option = {
+		name = sjalvolki_conquest.0141.b
+		add_internal_flag = fancy_coloring
+		add_internal_flag = fancy_coloring_orange_stretch
+		
+		duel = {
+			skill = martial
+			value = high_skill_rating
+			15 = {
+				desc = sjalvolki_conquest.0141.successfully_restored_discipline
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -14
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0141.successfully_restored_discipline
+					left_icon = root
+					
+					add_prestige = miniscule_prestige_gain
+				}
+			}
+			15 = {
+				desc = sjalvolki_conquest.0141.unsuccessfully_restored_discipline
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -14
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0141.unsuccessfully_restored_discipline
+					left_icon = root
+					
+					add_prestige = minor_prestige_loss
+					add_conquest_contribution_effect = { VALUE = -10 }
+				}
+			}
+		}
+	}
+	
+	# Lead by virtuous example
+	option = {
+		name = sjalvolki_conquest.0141.c
+		add_internal_flag = fancy_coloring
+		add_internal_flag = fancy_coloring_light_blue_stretch
+		trigger = {
+			OR = {
+				has_trait = chaste
+				has_trait = temperate
+				has_trait = zealous
+			}
+		}
+		
+		duel = {
+			skill = diplomacy
+			value = high_skill_rating
+			15 = {
+				desc = sjalvolki_conquest.0141.successfully_restored_discipline
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -14
+				}
+				send_interface_toast = {
+					title = sjalvolki_conquest.0141.successfully_restored_discipline
+					left_icon = root
+					
+					add_prestige = minor_prestige_gain
+					add_piety = {
+						value = minor_piety_gain
+						if = {
+							limit = { faith = { trait_is_virtue = temperate } }
+							add = minor_piety_gain
+						}
+						if = {
+							limit = { faith = { trait_is_virtue = chaste } }
+							add = minor_piety_gain
+						}
+					}
+				}
+			}
+			15 = {
+				desc = sjalvolki_conquest.0141.unsuccessfully_restored_discipline
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -14
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0141.unsuccessfully_restored_discipline
+					left_icon = root
+					
+					add_prestige = minor_prestige_loss
+					add_conquest_contribution_effect = { VALUE = -10 }
+				}
+			}
+		}
+	}
+	
+	# Profit
+	option = {
+		name = sjalvolki_conquest.0141.d
+		add_internal_flag = fancy_coloring
+		add_internal_flag = fancy_coloring_purple_left
+		add_internal_flag = fancy_coloring_green_right
+		trigger = {
+			OR = {
+				has_trait = greedy
+				has_trait = arbitrary
+				has_trait = cynical
+				has_trait = shrewd
+				stewardship >= very_high_skill_rating
+			}
+		}
+		
+		custom_tooltip = sjalvolki_conquest.0141.charge_for_amenities_tooltip
+		duel = {
+			skill = stewardship
+			value = decent_skill_rating
+			15 = {
+				desc = sjalvolki_conquest.0141.successfully_profited_from_price_gouging
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -14
+				}
+				send_interface_toast = {
+					title = sjalvolki_conquest.0141.successfully_profited_from_price_gouging
+					left_icon = root
+					
+					add_gold = minor_gold_value
+				}
+			}
+			5 = {
+				desc = sjalvolki_conquest.0141.unsuccessfully_profited_from_price_gouging
+				compare_modifier = {
+					value = scope:duel_value
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0141.unsuccessfully_profited_from_price_gouging
+					left_icon = root
+				}
+			}
+			5 = {
+				desc = sjalvolki_conquest.0141.critically_failed_profited_from_price_gouging
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -4
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0141.critically_failed_profited_from_price_gouging
+					left_icon = root
+					
+					remove_short_term_gold = minor_gold_value
+				}
+			}
+		}
+		
+		duel = {
+			skill = intrigue
+			value = high_skill_rating
+			15 = {
+				desc = sjalvolki_conquest.0141.successfully_restored_discipline_price_gouging
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1.0
+					min = -14
+				}
+				send_interface_toast = {
+					title = sjalvolki_conquest.0141.successfully_restored_discipline_price_gouging
+					left_icon = root
+					
+					add_prestige = miniscule_prestige_gain
+				}
+			}
+			15 = {
+				desc = sjalvolki_conquest.0141.unsuccessfully_restored_discipline_price_gouging
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.0
+					min = -14
+				}
+				send_interface_toast = {	
+					title = sjalvolki_conquest.0141.unsuccessfully_restored_discipline_price_gouging
+					left_icon = root
+					
+					add_prestige = medium_prestige_loss
+					add_piety = minor_piety_loss
+					add_conquest_contribution_effect = { VALUE = -10 }
+				}
+			}
+		}
+		
+		random = {
+			chance = 20
+			add_stewardship_lifestyle_xp = medium_lifestyle_xp
+		}
+		random = {
+			chance = {
+				value = 20
+				subtract = {
+					value = stewardship
+					multiply = 0.5
+				}
+				min = 1
+			}
+			add_stewardship_skill = 1
+		}
+	}
+	
+	# Let the warriors have their fun
+	option = {
+		name = sjalvolki_conquest.0141.e
+		trigger = {
+			NOR = {
+				has_trait = gluttonous
+				has_trait = lustful
+				has_trait = gregarious
+				has_trait = generous
+				has_trait = lifestyle_reveler
+			}
+		}
+		
+		add_prestige = miniscule_prestige_gain
+		add_piety = medium_piety_loss
+		add_conquest_contribution_effect = { VALUE = -10 }
+	}
+	
+	# Indulge in the party yourself
+	option = {
+		name = sjalvolki_conquest.0141.f
+		trigger = {
+			OR = {
+				has_trait = gluttonous
+				has_trait = lustful
+				has_trait = gregarious
+				has_trait = lifestyle_reveler
+			}
+		}
+
+		add_piety = medium_piety_loss
+		add_conquest_contribution_effect = { VALUE = -10 }
+		random = {
+			chance = 20
+			add_diplomacy_lifestyle_xp = medium_lifestyle_xp
+		}
+		if = {
+			limit = { 
+				OR = { 
+					NOT = { has_trait = lifestyle_reveler }
+					has_trait_xp = {
+						trait = lifestyle_reveler
+						value < 100
+					}
+				}
+			}
+			if = {
+				limit = { has_trait = lifestyle_reveler }
+				add_trait_xp = {
+					trait = lifestyle_reveler
+					value = 10
+				}
+			}
+			else = {
+				add_trait_force_tooltip = lifestyle_reveler
+			}
+		}
+		random = {
+			chance = {
+				value = 20
+				subtract = {
+					value = diplomacy
+					multiply = 0.5
+				}
+				min = 1
+			}
+			add_diplomacy_skill = 1
+		}
+		
+		every_in_list = {
+			list = potential_scapegoat_knights
+			add_opinion = {
+				target = root
+				modifier = friendliness_opinion
+				opinion = 20
+			}
+		}
+		
+		stress_impact = {
+			base = minor_stress_impact_loss
+			gregarious = medium_stress_impact_loss
+			lustful = medium_stress_impact_loss
+			gluttonous = medium_stress_impact_loss
+			shy = minor_stress_impact_gain
+			chaste = minor_stress_impact_gain
+			temperate = medium_stress_impact_gain
+			lifestyle_reveler = medium_stress_impact_loss
+		}
+	}
+	
+	# Drinks are on the house!
+	option = {
+		name = sjalvolki_conquest.0141.g
+		add_internal_flag = fancy_coloring
+		add_internal_flag = fancy_coloring_teal_stretch
+		trigger = {
+			has_trait = generous
+		}
+		
+		add_prestige = {
+			value = diplomacy
+			multiply = 10
+			min = minor_prestige_gain
+		} 
+		add_piety = medium_piety_loss
+		add_conquest_contribution_effect = { VALUE = -10 }
+		
+		every_in_list = {
+			list = potential_scapegoat_knights
+			add_opinion = {
+				target = root
+				modifier = friendliness_opinion
+				opinion = 20
+			}
+			random = {
+				chance = {
+					value = 20
+					add = root.diplomacy
+				}
+				root = {
+					add_hook = {
+						type = favor_hook
+						target = prev
+					}
+				}
+			}
+		}
+		
+		stress_impact = {
+			base = minor_stress_impact_loss
+			gregarious = medium_stress_impact_loss
+			lustful = medium_stress_impact_loss
+			gluttonous = medium_stress_impact_loss
+			shy = minor_stress_impact_gain
+			chaste = minor_stress_impact_gain
+			temperate = medium_stress_impact_gain
+			lifestyle_reveler = medium_stress_impact_loss
+		}
+	}
+}
+
+###events- wolverine422 0120 to 0129
+# You come across an aversarian slave plantation
+#sjalvolki_conquest.0120 = {
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0120.t
+#	desc = sjalvolki_conquest.0120.desc
+#	
+#	override_background = {
+#		reference = burning_building
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = personality_vengeful
+#	}
+#	
+#	immediate = {
+#		scope:target_title = {
+#			random_in_de_jure_hierarchy = {
+#				limit = {
+#					tier = tier_county
+#					NOT = { holder.top_liege = scope:attacker }
+#				}
+#				save_scope_as = plantation_location
+#			}
+#		}
+#	}
+#	
+#	option = { ###wait it out and move on
+#		name = sjalvolki_conquest.0120.a
+#		add_gold = 200
+#		add_prestige = -50
+#		stress_impact = {
+#			greedy = medium_stress_loss
+#			generous = medium_stress_gain
+#		}
+#	}
+#
+#	
+#	option = { ###aid the slaves
+#		name = sjalvolki_conquest.0120.b	
+#		duel = {
+#			skill = prowess
+#			value = 12
+#			15 = {
+#				desc = sjalvolki_conquest.0120.b.success
+#				compare_modifier = {
+#					value = scope:duel_value
+#					multiplier = 0.5
+#				}
+#				send_interface_toast = {		
+#					title = sjalvolki_conquest.0120.b.success		
+#				}
+#				trigger_event = sjalvolki_conquest.0121
+#				custom_tooltip = defeat_plantation_aversarians
+#			}
+#			6 = {
+#				desc = sjalvolki_conquest.0120.b.injured
+#				send_interface_toast = {	
+#					title = sjalvolki_conquest.0120.b.injured				
+#					increase_wounds_effect = { REASON = hunting_accident }
+#				}
+#				custom_tooltip = defeat_plantation_aversarians
+#				trigger_event = sjalvolki_conquest.0121
+#			}
+#			1 = {
+#				desc = sjalvolki_conquest.0120.b.death
+#				compare_modifier = {
+#					value = scope:duel_value
+#					multiplier = -0.5
+#				}
+#				send_interface_toast = {	
+#					title = sjalvolki_conquest.0120.b.death				
+#					death = {
+#						death_reason = death_battle
+#					}
+#				}
+#			}
+#		}
+#	}
+#}
+###event after helping the slaves
+#sjalvolki_conquest.0121 = {
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0121.t
+#	desc = sjalvolki_conquest.0121.desc
+#	
+#	override_background = {
+#		reference = burning_building
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = war_over_win
+#	}
+#	
+#	right_portrait = {
+#		character = scope:slave_leader
+#		animation = admiration
+#	}	
+#	
+#	immediate = {
+#		create_character = {
+#			template = aversarian_slave_character_template
+#			save_scope_as = slave_leader
+#			location = root.capital_province
+#		}
+#	}
+#
+#	option = { ###have them join you
+#		name = sjalvolki_conquest.0121.a
+#		add_prestige = medium_prestige_gain
+#		add_courtier = scope:slave_leader
+#		spawn_slave_troops_effect = yes
+#	}
+#
+#	option = { ###have them help in the war effort
+#		name = sjalvolki_conquest.0121.b
+#		add_prestige = medium_prestige_gain
+#		random_list = {
+#			70 = {
+#				custom_tooltip = gain_5_contribution
+#				hidden_effect = {
+#					change_variable = {
+#						name = sjalvolki_conquest_contribution
+#						add = 5
+#					}
+#				}
+#			}
+#			20 = {
+#				custom_tooltip = gain_15_contribution
+#				hidden_effect = {
+#					change_variable = {
+#						name = sjalvolki_conquest_contribution
+#						add = 15
+#					}
+#				}
+#			}
+#			10 = {
+#				custom_tooltip = gain_30_contribution
+#				hidden_effect = {
+#					change_variable = {
+#						name = sjalvolki_conquest_contribution
+#						add = 30
+#					}
+#				}
+#			}
+#		}
+#		stress_impact = {
+#			greedy = medium_stress_gain
+#			generous = medium_stress_loss
+#		}
+#		hidden_effect = {
+#			scope:slave_leader = {
+#				death = {
+#					death_reason = death_vanished
+#				}
+#			}
+#		}
+#	}
+#}
+#
+####ruin event	
+#sjalvolki_conquest.0122 = {
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0122.t
+#	desc = sjalvolki_conquest.0122.desc
+#	
+#	override_background = {
+#		reference = farmland
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = happiness
+#	}
+#
+#	option = { ##appreciate the ruin, remark on the past
+#		name = sjalvolki_conquest.0122.a
+#		add_learning_lifestyle_xp = minor_lifestyle_xp
+#	}
+#	
+#	option = { ##something witty about the fall of empires
+#		name = sjalvolki_conquest.0122.b
+#		trigger = { has_trait = cynical }
+#		add_learning_lifestyle_xp = minor_lifestyle_xp
+#	}	
+#	
+#	option = { ##study the ruins
+#		name = sjalvolki_conquest.0122.c
+#		trigger = { 
+#			OR = {
+#				has_trait = education_learning_4
+#				has_trait = education_learning_3
+#				has_trait = education_learning_2
+#				has_trait = education_learning_1
+#				learning >= high_skill_rating
+#			}
+#		}					
+#		add_learning_lifestyle_xp = major_lifestyle_xp
+#		add_prestige = 100
+#	}
+#	
+#	option = { ##tear it down for the war effort
+#		name = sjalvolki_conquest.0122.d
+#		custom_tooltip = gain_5_contribution
+#		hidden_effect = {
+#			change_variable = {
+#				name = sjalvolki_conquest_contribution
+#				add = 5
+#			}
+#		}
+#	}
+#}	
+###art event
+#sjalvolki_conquest.0123 = {
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0123.t
+#	desc = sjalvolki_conquest.0123.desc
+#	
+#	override_background = {
+#		reference = burning_building
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = happiness
+#	}
+#
+#	option = { ##appreciate the art, remark on its beauty
+#		name = sjalvolki_conquest.0123.a
+#		add_learning_lifestyle_xp = minor_lifestyle_xp
+#	}
+#	
+#	option = { ##maybe something witty about how aversarian art blows
+#		name = sjalvolki_conquest.0123.b
+#		trigger = { has_trait = cynical }
+#		add_learning_lifestyle_xp = minor_lifestyle_xp
+#	}	
+#	
+#	option = { ##sell it
+#		name = sjalvolki_conquest.0123.c
+#		trigger = { has_trait = greedy }
+#		add_gold = 150
+#	}
+#	
+#	option = { ##burn heathen crap
+#		name = sjalvolki_conquest.0123.d
+#		trigger = { has_trait = zealous }
+#		add_piety = major_piety_gain
+#	}	
+#}
+####fossil collector its based off a book i read!! ppl did this!!
+#sjalvolki_conquest.0124 = {  
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0124.t
+#	desc = sjalvolki_conquest.0124.desc
+#	
+#	override_background = {
+#		reference = farmland
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = personality_bold
+#	}
+#	
+#	right_portrait = {
+#		character = scope:collector
+#		animation = beg
+#	}	
+#	
+#	immediate = {
+#		create_character = {
+#			save_scope_as = collector
+#			location = root.capital_province
+#			faith = faith:aversarinas_aagiokrata
+#			culture = culture:westernimperial
+#			age = { 50 70 }
+#			gender_female_chance = 20
+#			random_traits = yes
+#			trait = education_learning_3
+#			trait = scholar
+#			trait = content
+#			trait = shy
+#			trait = stubborn
+#		}
+#	}
+#
+#	option = { ##kill the old fool, take anything of value
+#		name = sjalvolki_conquest.0124.a
+#		add_gold = 100
+#		custom_tooltip = gain_5_contribution
+#		hidden_effect = {
+#			change_variable = {
+#				name = sjalvolki_conquest_contribution
+#				add = 5
+#			}
+#		}
+#		scope:collector = {
+#			death = {
+#				death_reason = death_execution
+#			}
+#		}		
+#	}
+#	
+#	option = { ##spare the guy, let him live in peace
+#		name = sjalvolki_conquest.0124.b
+#		trigger_event = sjalvolki_conquest.0125	
+#		custom_tooltip = collector_customtooltip
+#	}		
+#}
+####event where u talk with the collector, he talks about his collections/wonders of the natural world
+#sjalvolki_conquest.0125 = { 
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0125.t
+#	desc = sjalvolki_conquest.0125.desc
+#	
+#	override_background = {
+#		reference = farmland
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = boredom
+#	}
+#	
+#	right_portrait = {
+#		character = scope:collector
+#		animation = happiness
+#	}	
+#	
+#	option = { ##gives u cool artifact as thanks (aelfir skull)
+#		name = sjalvolki_conquest.0125.a
+#		hidden_effect = {
+#			add_artifact = {ARTIFACT = artifact_skullofanancient}
+#		}		
+#		custom_tooltip = strange_skull
+#	}	
+#	
+#	option = { #nah u keep it
+#		name = sjalvolki_conquest.0125.b
+#		add_prestige = 25
+#	}
+#}	
+#
+####recruitment events- a soldier in your army did cool shit, can now recruit them
+#sjalvolki_conquest.0126 = {  ##Berserker
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0126.t
+#	desc = sjalvolki_conquest.0126.desc
+#	
+#	override_background = {
+#		reference = battlefield
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = personality_bold
+#	}
+#	
+#	right_portrait = {
+#		character = scope:berserker
+#		animation = personality_bold
+#	}
+#		
+#	
+#	immediate = {
+#	
+#		create_character = {
+#			save_scope_as = berserker
+#			location = root.capital_province
+#			culture = culture:vrodkin
+#			faith = faith:sjalvolki
+#			gender_female_chance = 0
+#			trait = berserker
+#			trait = brave
+#			trait = stubborn
+#			trait = gregarious
+#			trait = strong
+#			trait = physique_good_2
+#			trait = aggressive_attacker
+#			age = { 18 40 }
+#			random_traits_list = {
+#				count = 1
+#				education_martial_2 = {}
+#				education_martial_3 = {}
+#				education_martial_4 = {}
+#			}
+#			martial = 10
+#			prowess = 20
+#		}
+#	}
+#
+#	option = { #join me
+#		name = sjalvolki_conquest.0126.a
+#		add_courtier = scope:berserker
+#	}	
+#	
+#	option = { #im good
+#		name = sjalvolki_conquest.0126.b
+#	}	
+#}
+#sjalvolki_conquest.0127 = {  ##Sarminian Shieldmaiden (sarminians have alot of female warriors)
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0127.t
+#	desc = sjalvolki_conquest.0127.desc
+#	
+#	override_background = {
+#		reference = battlefield
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = personality_bold
+#	}
+#	
+#	right_portrait = {
+#		character = scope:shieldmaiden
+#		animation = personality_bold
+#	}
+#		
+#	
+#	immediate = {
+#	
+#		create_character = {
+#			save_scope_as = shieldmaiden
+#			location = root.capital_province
+#			culture = culture:sarminians
+#			faith = faith:salacad
+#			gender_female_chance = 100
+#			trait = brave
+#			trait = impatient
+#			trait = gregarious
+#			trait = physique_good_1
+#			trait = blademaster_3
+#			trait = open_terrain_expert
+#			age = { 18 30 }
+#			random_traits_list = {
+#				count = 1
+#				education_martial_2 = {}
+#				education_martial_3 = {}
+#				education_martial_4 = {}
+#			}
+#			martial = 10
+#			prowess = 15
+#		}
+#	}
+#
+#	option = { #join me
+#		name = sjalvolki_conquest.0127.a
+#		add_courtier = scope:shieldmaiden
+#	}	
+#	
+#	option = { #im good
+#		name = sjalvolki_conquest.0127.b
+#	}	
+#}	
+#sjalvolki_conquest.0128 = {  ##Moonkin (light infantry mondecny men at arms)
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0128.t
+#	desc = sjalvolki_conquest.0128.desc
+#	
+#	override_background = {
+#		reference = battlefield
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = personality_bold
+#	}
+#	
+#	right_portrait = {
+#		character = scope:moonkin
+#		animation = personality_bold
+#	}
+#		
+#	
+#	immediate = {
+#	
+#		create_character = {
+#			save_scope_as = moonkin
+#			location = root.capital_province
+#			culture = culture:mondecny
+#			faith = faith:portenchant
+#			gender_female_chance = 15
+#			trait = calm
+#			trait = deceitful
+#			trait = ambitious
+#			trait = physique_good_1
+#			trait = blademaster_2
+#			trait = forest_fighter
+#			age = { 18 35 }
+#			random_traits_list = {
+#				count = 1
+#				education_martial_2 = {}
+#				education_martial_3 = {}
+#				education_martial_4 = {}
+#			}
+#			martial = 12
+#			intrigue = 12
+#			prowess = 15
+#		}
+#	}
+#
+#	option = { #join me
+#		name = sjalvolki_conquest.0128.a
+#		add_courtier = scope:moonkin
+#	}	
+#	
+#	option = { #im good
+#		name = sjalvolki_conquest.0128.b
+#	}	
+#}
+#sjalvolki_conquest.0129 = {  ##sjalvolki reaver
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0129.t
+#	desc = sjalvolki_conquest.0129.desc
+#	
+#	override_background = {
+#		reference = battlefield
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = personality_bold
+#	}
+#	
+#	right_portrait = {
+#		character = scope:reaver
+#		animation = personality_bold
+#	}
+#		
+#	
+#	immediate = {
+#
+#		create_character = {
+#			save_scope_as = reaver
+#			location = root.capital_province
+#			culture = culture:adrakamp
+#			faith = faith:sjalvolki
+#			gender_female_chance = 10
+#			trait = gregarious
+#			trait = wrathful
+#			trait = brave
+#			trait = strong
+#			trait = reaver
+#			trait = forder
+#			age = { 18 35 }
+#			random_traits_list = {
+#				count = 1
+#				education_martial_2 = {}
+#				education_martial_3 = {}
+#				education_martial_4 = {}
+#			}
+#			martial = 15
+#			prowess = 18
+#		}
+#	}
+#
+#	option = { #join me
+#		name = sjalvolki_conquest.0129.a
+#		add_courtier = scope:reaver
+#	}	
+#	
+#	option = { #im good
+#		name = sjalvolki_conquest.0129.b
+#	}	
+#}
+###kardwens eating fallen soldiers
+#sjalvolki_conquest.0130 = {  
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0130.t
+#	desc = sjalvolki_conquest.0130.desc
+#	
+#	override_background = {
+#		reference = battlefield
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = shock
+#	}
+#	
+#	right_portrait = {
+#		character = scope:kardwen_soldier
+#		animation = ecstasy
+#	}
+#	
+#	immediate = {
+#		create_character = {
+#			save_scope_as = kardwen_soldier
+#			location = root.capital_province
+#			gender_female_chance = 0
+#			culture = culture:kardwens
+#			faith = faith:kardawai
+#			random_traits = yes
+#			random_traits_list = {
+#				count = 1
+#				education_martial_2 = {}
+#				education_martial_3 = {}
+#				education_martial_4 = {}
+#			}
+#			martial = 15
+#			age = { 20 50 }
+#		}
+#	}
+#	
+#	option = { #interesting...
+#		name = sjalvolki_conquest.0130.a
+#		add_prestige = 25
+#	}
+#
+#	option = { #hang them
+#		name = sjalvolki_conquest.0130.b
+#		scope:kardwen_soldier = {
+#			death = {
+#				death_reason = death_execution
+#			}
+#		}				
+#	}	
+#
+#	option = { #join in on the fun!
+#		name = sjalvolki_conquest.0130.c
+#		trigger = { 
+#			OR = {
+#				has_trait = cannibal
+#				has_trait = lunatic_genetic
+#				has_trait = lunatic_1
+#				has_religion = religion:kardawai_religion
+#			}
+#		}
+#		add_character_modifier = feast_hearty_diet_modifier	
+#	}		
+#}
+###animal menagerie
+#sjalvolki_conquest.0131 = {  
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0131.t
+#	desc = sjalvolki_conquest.0131.desc
+#	
+#	override_background = {
+#		reference = burning_building
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = personality_greedy
+#	}
+#	
+#	option = { 
+#		name = sjalvolki_conquest.0131.a
+#		hidden_effect = {
+#			add_artifact = {ARTIFACT = artifact_mountdreadwolf }
+#		}		
+#		duel = {
+#			skill = prowess
+#			value = 12
+#			15 = {
+#				desc = sjalvolki_conquest.0131.a.success
+#				compare_modifier = {
+#					value = scope:duel_value
+#					multiplier = 0.5
+#				}
+#				send_interface_toast = {		
+#					title = sjalvolki_conquest.0131.a.success		
+#				}
+#				custom_tooltip = tamewolf_tooltip
+#			}
+#			6 = {
+#				desc = sjalvolki_conquest.0131.a.injured
+#				send_interface_toast = {	
+#					title = sjalvolki_conquest.0131.a.injured				
+#					increase_wounds_effect = { REASON = hunting_accident }
+#				}
+#				custom_tooltip = tamewolf_tooltip
+#			}
+#			1 = {
+#				desc = sjalvolki_conquest.0131.a.death
+#				compare_modifier = {
+#					value = scope:duel_value
+#					multiplier = -0.5
+#				}
+#				send_interface_toast = {	
+#					title = sjalvolki_conquest.0131.a.death				
+#					death = {
+#						death_reason = death_hunting_accident
+#					}
+#				}
+#			}
+#		}
+#	}	
+#	
+#	option = { 
+#		name = sjalvolki_conquest.0131.b
+#		hidden_effect = {
+#			add_artifact = {ARTIFACT = artifact_mountwarhorse }
+#		}		
+#		custom_tooltip = gethorse_tooltip
+#	}
+#
+#	option = { 
+#		name = sjalvolki_conquest.0131.c
+#		hidden_effect = {
+#			add_artifact = {ARTIFACT = artifact_mountmammoth }
+#		}		
+#		duel = {
+#			skill = prowess
+#			value = 12
+#			6 = {
+#				desc = sjalvolki_conquest.0131.c.success
+#				compare_modifier = {
+#					value = scope:duel_value
+#					multiplier = 0.5
+#				}
+#				send_interface_toast = {		
+#					title = sjalvolki_conquest.0131.c.success		
+#				}
+#				custom_tooltip = tamemammoth_tooltip
+#			}
+#			10 = {
+#				desc = sjalvolki_conquest.0131.c.injured
+#				send_interface_toast = {	
+#					title = sjalvolki_conquest.0131.c.injured				
+#					increase_wounds_effect = { REASON = mammoth }
+#				}
+#			}
+#			6 = {
+#				desc = sjalvolki_conquest.0131.c.death
+#				compare_modifier = {
+#					value = scope:duel_value
+#					multiplier = -0.5
+#				}
+#				send_interface_toast = {	
+#					title = sjalvolki_conquest.0131.c.death				
+#					death = {
+#						death_reason = death_mammoth
+#					}
+#				}
+#			}
+#		}
+#	}
+#
+#	option = { #maybe this can help the war effort
+#		name = sjalvolki_conquest.0131.d
+#		custom_tooltip = gain_5_contribution
+#		hidden_effect = {
+#			change_variable = {
+#				name = sjalvolki_conquest_contribution
+#				add = 5
+#			}
+#		}
+#	}
+#}	
+###city loot event chain-uses stuff from the artifact market-kinda buggy rn
+#sjalvolki_conquest.0132 = {  
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0132.t
+#	desc = sjalvolki_conquest.0132.desc
+#	
+#	override_background = {
+#		reference = burning_building
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = personality_greedy
+#	}
+#	
+#	option = { #armory
+#		name = sjalvolki_conquest.0132.a
+#		trigger_event = sjalvolki_conquest.0133
+#	}	
+#	
+#	option = { #library
+#		name = sjalvolki_conquest.0132.b
+#		trigger_event = sjalvolki_conquest.0134
+#	}	
+#
+#	option = { #vault
+#		name = sjalvolki_conquest.0132.c
+#		trigger_event = sjalvolki_conquest.0135
+#	}
+#		
+#	option = { #nevermind
+#		name = sjalvolki_conquest.0132.d
+#	}
+#}
+#sjalvolki_conquest.0133 = {  #armory
+#	hidden = yes	# TODO: Port this to the new artifact system
+#	#type = character_event
+#	#theme = war
+#	#title = sjalvolki_conquest.0133.t
+#	#desc = sjalvolki_conquest.0133.desc
+#	#
+#	#override_background = {
+#	#	reference = armory
+#	#}
+#	#
+#	#left_portrait = {
+#	#	character = root
+#	#	animation = personality_greedy
+#	#}
+#	#
+#	immediate = {
+#	
+#	}
+#	#
+#	#option = {
+#	#	name = sjalvolki_conquest.0133.a
+#	#	fetch_all_artifacts_for_slot = { SLOT = 1 }
+#	#}
+#	#option = {
+#	#	name = sjalvolki_conquest.0133.b
+#	#	fetch_all_artifacts_for_slot = { SLOT = 2 }
+#	#}
+#
+#	option = { #Nothing
+#		name = sjalvolki_conquest.0133.c
+#	}
+#}	
+#sjalvolki_conquest.0134 = {  #library
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0134.t
+#	desc = sjalvolki_conquest.0134.desc
+#	
+#	override_background = {
+#		reference = study
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = personality_greedy
+#	}
+#	
+#	immediate = {
+#		pick_random_artifact_book = { SLOT = 1 }
+#		pick_random_artifact_book = { SLOT = 2 }
+#	}
+#
+#	option = {
+#		name = sjalvolki_conquest.0134.a
+#		fetch_all_artifacts_for_slot = { SLOT = 1 }
+#	}
+#	option = {
+#		name = sjalvolki_conquest.0134.b
+#		fetch_all_artifacts_for_slot = { SLOT = 2 }
+#	}
+#
+#	option = { #Nothing
+#		name = sjalvolki_conquest.0134.c
+#	}
+#}
+#sjalvolki_conquest.0135 = {  #vault
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0135.t
+#	desc = sjalvolki_conquest.0135.desc
+#	
+#	override_background = {
+#		reference = corridor_night
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = personality_greedy
+#	}
+#	
+#	immediate = {
+#		pick_random_artifact_arcana = { SLOT = 1 }
+#		pick_random_artifact_arcana = { SLOT = 2 }
+#	}
+#
+#	option = {
+#		name = sjalvolki_conquest.0135.a
+#		fetch_all_artifacts_for_slot = { SLOT = 1 }
+#	}
+#	option = {
+#		name = sjalvolki_conquest.0135.b
+#		fetch_all_artifacts_for_slot = { SLOT = 2 }
+#	}
+#
+#	option = { #Nothing
+#		name = sjalvolki_conquest.0135.c
+#	}
+#}
+##can use 136 and 137
+####campfire/religious ceremony
+#sjalvolki_conquest.0138 = { 
+#	type = character_event
+#	theme = faith
+#	title = sjalvolki_conquest.0138.t
+#	desc = sjalvolki_conquest.0138.desc
+#	
+#	override_background = {
+#		reference = wilderness_forest_pine
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = admiration
+#	}	
+#	
+#	right_portrait = {
+#		character = scope:realm_priest
+#		animation = personality_zealous
+#	}
+#	
+#	immediate = {
+#		cp:councillor_court_chaplain = {
+#			save_scope_as = realm_priest
+#		}
+#	}
+#
+#	trigger = {
+#		has_religion = religion:sjalvolki_religion
+#	}
+#	
+#	option = { ##why do we fight wise one (talks about the homeland)
+#		name = sjalvolki_conquest.0138.a
+#		trigger_event = sjalvolki_conquest.0139
+#		add_piety = 25
+#	}
+#
+#	option = { ##I wish to hear of the gods this night
+#		name = sjalvolki_conquest.0138.b
+#		trigger_event = sjalvolki_conquest.0140
+#		add_piety = 25
+#	}
+#	
+#	option = { ##I have no time for this, bring out the ale
+#		name = sjalvolki_conquest.0138.c
+#		add_piety = -10
+#	}	
+#}	
+#sjalvolki_conquest.0139 = { ##why do we fight wise one (talks about the homeland)
+#	type = character_event
+#	theme = faith
+#	title = sjalvolki_conquest.0139.t
+#	desc = sjalvolki_conquest.0139.desc
+#	
+#	override_background = {
+#		reference = wilderness_forest_pine
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = admiration
+#	}	
+#	
+#	right_portrait = {
+#		character = scope:realm_priest
+#		animation = personality_zealous
+#	}
+#
+#	option = { #we have come so far
+#		name = sjalvolki_conquest.0139.a
+#		custom_tooltip = gain_5_contribution
+#		hidden_effect = {
+#			change_variable = {
+#				name = sjalvolki_conquest_contribution
+#				add = 5
+#			}
+#		}		
+#	}
+#	
+#	option = { #and have so far to go
+#		name = sjalvolki_conquest.0139.b
+#		custom_tooltip = gain_5_contribution
+#		hidden_effect = {
+#			change_variable = {
+#				name = sjalvolki_conquest_contribution
+#				add = 5
+#			}
+#		}		
+#	}
+#}
+#sjalvolki_conquest.0140 = { ##distorted story about velos/sjalvolki religion (actually the godherja)
+#	type = character_event
+#	theme = faith
+#	title = sjalvolki_conquest.0140.t
+#	desc = sjalvolki_conquest.0140.desc
+#	
+#	override_background = {
+#		reference = wilderness_forest_pine
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = admiration
+#	}	
+#	
+#	right_portrait = {
+#		character = scope:realm_priest
+#		animation = personality_zealous
+#	}
+#	
+#	option = { #a time of legends long past
+#		name = sjalvolki_conquest.0140.a
+#		custom_tooltip = gain_5_contribution
+#		hidden_effect = {
+#			change_variable = {
+#				name = sjalvolki_conquest_contribution
+#				add = 5
+#			}
+#		}		
+#	}
+#	
+#	option = { #just stories right?
+#		name = sjalvolki_conquest.0140.b
+#		custom_tooltip = gain_5_contribution
+#		hidden_effect = {
+#			change_variable = {
+#				name = sjalvolki_conquest_contribution
+#				add = 5
+#			}
+#		}		
+#	}
+#}	
+##partic stuff
+#sjalvolki_conquest.0141 = { ##patrolling your camp, see some partics hanging around some trees
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0141.t
+#	desc = sjalvolki_conquest.0141.desc
+#	
+#	override_background = {
+#		reference = army_camp
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = personality_cynical
+#	}	
+#
+#	trigger = {
+#		NOT = { has_religion = religion:partic_religion }
+#	}
+#	
+#	option = { #how strange
+#		name = sjalvolki_conquest.0141.a
+#	}
+#	
+#	option = { #investigate further
+#		name = sjalvolki_conquest.0141.b
+#		trigger_event = sjalvolki_conquest.0142
+#	}
+#}
+#sjalvolki_conquest.0142 = { ##their guard says some weird partic shit, druids all babbling
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0142.t
+#	desc = sjalvolki_conquest.0142.desc
+#	
+#	override_background = {
+#		reference = wilderness_forest
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = personality_cynical
+#	}
+#
+#	option = { #oh...cool haha
+#		name = sjalvolki_conquest.0142.a
+#	}
+#	
+#	option = { #hey we got a job to do, no lollygagging
+#		name = sjalvolki_conquest.0142.b
+#		trigger_event = sjalvolki_conquest.0143
+#		custom_tooltip = dontdothisoryoullgetshanked
+#	}	
+#}
+#sjalvolki_conquest.0143 = { ##you get stabbed, try to defend youself
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0143.t
+#	desc = sjalvolki_conquest.0143.desc
+#	
+#	trigger = { is_ai = no }
+#	
+#	override_background = {
+#		reference = wilderness_forest
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = shock
+#	}
+#
+#	option = { #you get jumped
+#		name = sjalvolki_conquest.0143.a
+#		duel = {
+#			skill = prowess
+#			value = 12
+#			6 = {
+#				desc = sjalvolki_conquest.0143.a.failure
+#				send_interface_toast = {	
+#					title = sjalvolki_conquest.0143.a.failure				
+#					increase_wounds_effect = { REASON = fight }
+#				}
+#			}
+#			6 = {
+#				desc = sjalvolki_conquest.0143.a.critical_failure
+#				compare_modifier = {
+#					value = scope:duel_value
+#					multiplier = -0.5
+#				}
+#				send_interface_toast = {	
+#					title = sjalvolki_conquest.0143.a.critical_failure				
+#					death = {
+#						death_reason = death_fight
+#					}
+#				}
+#			}
+#		}
+#	}
+#}
+#fueding tribes
+#sjalvolki_conquest.0144 = { ##two clans fueding need to come up w/ a good conflict
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0144.t
+#	desc = sjalvolki_conquest.0144.desc
+#	
+#	override_background = {
+#		reference = army_camp
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = personality_cynical
+#	}
+#	
+#	option = { #one tribe wants to use resources for themselves
+#		name = sjalvolki_conquest.0144.a
+#		add_gold = 100
+#	}
+#	
+#	option = { #another wants to share? contribution
+#		name = sjalvolki_conquest.0144.b
+#		custom_tooltip = gain_5_contribution
+#		hidden_effect = {
+#			change_variable = {
+#				name = sjalvolki_conquest_contribution
+#				add = 5
+#			}
+#		}
+#	}
+#	
+#	option = { #bring me a drink, i want to see the fight
+#		name = sjalvolki_conquest.0144.c
+#		add_prestige = 100
+#	}
+#}
+#sjalvolki_conquest.0145 = { ##captured aversarian Magi, gave us info
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0145.t
+#	desc = sjalvolki_conquest.0145.desc
+#	
+#	override_background = {
+#		reference = battlefield
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = personality_cynical
+#	}
+#	
+#	right_portrait = {
+#		character = scope:aversarian_magi
+#		animation = beg
+#	}
+#	
+#	immediate = {
+#		create_character = {
+#			save_scope_as = aversarian_magi
+#			location = root.capital_province
+#			faith = faith:aversarinas_aagiokrata
+#			culture = culture:westernimperial
+#			age = { 30 60 }
+#			gender_female_chance = 30
+#			random_traits = yes
+#			trait = education_intrigue_3
+#			trait = magic_good_3
+#			trait = education_living_magic_3
+#			trait = cynical
+#			trait = arbitrary
+#			trait = patient
+#		}
+#	}
+#	
+#	option = { #kill him
+#		name = sjalvolki_conquest.0145.a
+#		add_piety = 100
+#		add_prestige = 100
+#		scope:aversarian_magi = {
+#			death = {
+#				death_reason = death_execution_blood_eagle
+#			}
+#		}
+#	}
+#	
+#	option = { #hand chop
+#		name = sjalvolki_conquest.0145.b
+#		scope:aversarian_magi = { add_trait = gh_dehanded }
+#		add_piety = 100
+#		add_prestige = 100
+#	}
+#	
+#	option = { #recruit?
+#		name = sjalvolki_conquest.0145.c
+#		add_piety = -100
+#		add_prestige = -100
+#		add_courtier = scope:aversarian_magi
+#	}
+#}
+#sjalvolki_conquest.0146 = { ##city looting, lose control of your soldiers
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0146.t
+#	desc = sjalvolki_conquest.0146.desc
+#	
+#	override_background = {
+#		reference = burning_building
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = personality_cynical
+#	}
+#	
+#	option = { #let the boys have their fun
+#		name = sjalvolki_conquest.0146.a
+#		add_gold = 200
+#		trigger_event = sjalvolki_conquest.0147
+#		stress_impact = {
+#			compassionate = major_stress_gain
+#			honest = medium_stress_gain
+#			just = major_stress_gain
+#		}
+#	}
+#	
+#	option = { #order the men to stop
+#		name = sjalvolki_conquest.0146.b
+#		add_prestige = -25
+#	}
+#}
+#sjalvolki_conquest.0147 = { ##day after, reflect on the carnage
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0147.t
+#	desc = sjalvolki_conquest.0147.desc
+#	
+#	override_background = {
+#		reference = burning_building
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = shame
+#	}
+#	
+#	option = { #it is what it is
+#		name = sjalvolki_conquest.0147.a
+#		add_dread = medium_dread_gain
+#	}
+#	
+#	option = { #damn this messed up
+#		name = sjalvolki_conquest.0147.b
+#		add_dread = medium_dread_gain
+#	}
+#}	
+###priest/refugee events
+#sjalvolki_conquest.0148 = { ##priest w/ refugees at temple, asks for safe passage-notice some shifty folks in the back
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0148.t
+#	desc = sjalvolki_conquest.0148.desc
+#	
+#	override_background = {
+#		reference = farmland
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = personality_cynical
+#	}
+#	
+#	right_portrait = {
+#		character = scope:aversarian_priest
+#		animation = beg
+#	}
+#	
+#	immediate = {
+#		create_character = {
+#			save_scope_as = aversarian_priest
+#			location = root.capital_province
+#			faith = faith:aversarinas_aagiokrata
+#			culture = culture:westernimperial
+#			age = { 40 75 }
+#			gender_female_chance = 20
+#			random_traits = yes
+#			trait = education_learning_3
+#			trait = theologian
+#			trait = gregarious
+#			trait = zealous
+#			trait = patient
+#		}
+#	}
+#	
+#	option = { #they are suffering-let them go/leave them in peace
+#		name = sjalvolki_conquest.0148.a
+#		trigger_event = {
+#		id = sjalvolki_conquest.0149
+#		days = 15
+#		}
+#	}
+#	
+#	option = { #better keep them contained
+#		name = sjalvolki_conquest.0148.b
+#		trigger_event = {
+#		id = sjalvolki_conquest.0150
+#		days = 3
+#		}
+#	}
+#}
+#sjalvolki_conquest.0149 = { ##got ambushed by those soldiers a few days later
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0149.t
+#	desc = sjalvolki_conquest.0149.desc
+#	
+#	override_background = {
+#		reference = battlefield
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = personality_vengeful
+#	}
+#
+#	option = { #shouldve known
+#		name = sjalvolki_conquest.0149.a
+#		add_prestige = -50
+#	}
+#
+#	option = { #aversarian dogs!
+#		name = sjalvolki_conquest.0149.b
+#		add_prestige = -50
+#	}
+#}
+#sjalvolki_conquest.0150 = { ##stuff gets out of hand at the temple/ aversarians complaining
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0150.t
+#	desc = sjalvolki_conquest.0150.desc
+#	
+#	override_background = {
+#		reference = temple_church
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = personality_cynical
+#	}
+#	
+#	right_portrait = {
+#		character = scope:aversarian_priest
+#		animation = personality_zealous
+#	}
+#	
+#	option = { #let them go/gave them some money
+#		name = sjalvolki_conquest.0150.a
+#		trigger_event = {
+#		id = sjalvolki_conquest.0149
+#		days = 15
+#		}
+#	}
+#	
+#	option = { #buzz off-lock them in
+#		name = sjalvolki_conquest.0150.b
+#		trigger_event = {
+#		id = sjalvolki_conquest.0151
+#		days = 3
+#		}
+#	}
+#}	
+#sjalvolki_conquest.0151 = { ##fire breaks out
+#	type = character_event
+#	theme = war
+#	title = sjalvolki_conquest.0151.t
+#	desc = sjalvolki_conquest.0151.desc
+#	
+#	override_background = {
+#		reference = burning_building
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#		animation = personality_cynical
+#	}
+#	
+#	option = { ##dear god...
+#		name = sjalvolki_conquest.0151.a
+#		stress_impact = {
+#			compassionate = major_stress_gain
+#			honest = medium_stress_gain
+#			just = major_stress_gain
+#		}
+#		add_dread = major_dread_gain
+#	}
+#	
+#	option = { ##let them burn
+#		name = sjalvolki_conquest.0151.b
+#		trigger = { 
+#			OR = {
+#				has_trait = sadistic
+#				has_trait = wrathful
+#				has_trait = arbitrary
+#			}
+#		}
+#		add_dread = major_dread_gain
+#	}
+#}
+
+
+sjalvolki_conquest.1000 = {
+	hidden = yes
+	orphan = yes
+	immediate = {
+		every_in_list = {
+			list = migration_vassals
+			limit = { is_ai = no }
+			trigger_event = sjalvolki_conquest.0011
+		}
+	}
+}
+
+# One of the few outright cheats AI Cenware has, but only because the AI is just so bloody terrible. For Assocaea only
+#sjalvolki_conquest.1002 = {
+#	hidden = yes
+#	
+#	trigger = {
+#		is_ai = yes
+#		any_in_list = {
+#			list = target_titles
+#			this = title:k_assocaea
+#		}
+#		NOT = {
+#			any_in_list = {
+#				list = defenders
+#				is_ai = no
+#			}
+#		}
+#	}
+#	
+#	immediate = {
+#		every_character_war = {
+#			limit = {
+#				casus_belli = sjalvolki_conquest_cb
+#			}
+#			end_war = attacker
+#		}
+#	}
+#}

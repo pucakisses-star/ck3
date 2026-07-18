@@ -1,0 +1,202 @@
+﻿namespace = haradar_flavor
+
+# haradar_flavor.1000 - Get your trait for beating some elderly street magician to death with a brick or w/e
+# by Mayor and Lonely Knight
+#######################
+
+#######################
+# Get your trait for beating some elderly street magician to death with a brick or w/e
+# by Mayor, edited and polished by Lonely Knight
+#######################
+
+haradar_flavor.1000 = { # GH TODO: Add unique events for specific Magi and such - this also needs to trigger outside of straight execution
+	type = character_event
+	hidden = yes
+
+	trigger = { scope:murdered_magi = { has_trait = magic_good } } # Just in case
+
+	immediate = {
+		root = { # GH QUESTION: Is the root call necessary here?
+			if = { # If the magimurder tracking variable does not yet exist, create it.
+				limit = { NOT = { has_variable = haradar_event_1000_tracker } }
+				set_variable = {
+					name = haradar_event_1000_tracker
+					value = 1
+				}
+				add_trait = magikill_1 # GH TODO: Add an event for your first Magi kill
+			}
+			else = { # Triggered in the else since magic_kill_value is more about the number of Magi than the power - GH TODO: Possibly change that, seems odd its using a variable for that
+				change_variable = { # Lonely Note: Cleaned up the file and moved this to a script value
+					name = haradar_event_1000_tracker
+					add = magic_kill_value
+				}
+			}
+
+			if = { #assigns the 2nd level trait. threshold is 16-25
+				limit = {
+					var:haradar_event_1000_tracker >= 16
+					var:haradar_event_1000_tracker < 26
+				}
+				change_trait_rank = {
+					trait = magikill
+					rank = 1
+					max = 2
+				}
+			}
+			else_if = { #assigns the lvl 3 trait. threshold is 26-40
+				limit = {
+					var:haradar_event_1000_tracker >= 26
+					var:haradar_event_1000_tracker <= 40
+				}
+				change_trait_rank = {
+					trait = magikill
+					rank = 1
+					max = 3
+				}
+			}
+			else_if = { #assigns the lvl 4 trait. threshold is 41-55
+				limit = {
+					var:haradar_event_1000_tracker >= 41
+					var:haradar_event_1000_tracker <= 55
+				}
+				change_trait_rank = {
+					trait = magikill
+					rank = 1
+					max = 4
+				}
+			}
+			else_if = { #assigns the lvl 5 trait. threshold is 56-70
+				limit = {
+					var:haradar_event_1000_tracker >= 56
+					var:haradar_event_1000_tracker <= 70
+				}
+				change_trait_rank = {
+					trait = magikill
+					rank = 1
+					max = 5
+				}
+			}
+			else_if = { #assigns the lvl 6 trait. threshold is 71-99
+				limit = {
+					var:haradar_event_1000_tracker >= 71
+					var:haradar_event_1000_tracker <= 99
+
+				}
+				change_trait_rank = {
+					trait = magikill
+					rank = 1
+					max = 6
+				}
+			}
+			else_if = { #If the brave serial killer has accumulated 100 magimurderpoints, fire the level their trait to the max'
+				limit = {
+					var:haradar_event_1000_tracker > 99
+				}
+				# Fire the event which gives them their cool trait.
+				change_trait_rank = {
+					trait = magikill
+					rank = 1
+					max = 7
+				}
+			}
+		}
+	}
+}
+
+# GH NOTE: Couldn't see a reason why this needed to be a separate hidden event (in another file no less) so I've merged these into the above event - let Lonely know if they were dumb for doing this
+#haradar_flavor.2001 = {
+#	hidden = yes
+#	scope = character
+#
+#	immediate = { root = { add_trait = magikill_1 } }
+#}
+#haradar_flavor.2002 = { 
+#	hidden = yes
+# 
+#	immediate = {
+#		root = {
+#			change_trait_rank = {
+#				trait = magikill
+#				rank = 1
+#				max = 2
+#			}
+#		}
+#	}
+#}
+#haradar_flavor.2003 = { 
+#	hidden = yes
+# 
+#	immediate = {
+#		root = {
+#			change_trait_rank = {
+#				trait = magikill
+#				rank = 1
+#				max = 3
+#			}
+#		}
+#	}
+#}
+#haradar_flavor.2004 = { 
+#	hidden = yes
+# 
+#	immediate = {
+#		root = {
+#			change_trait_rank = {
+#				trait = magikill
+#				rank = 1
+#				max = 4
+#			}
+#		}
+#	}
+#}
+#haradar_flavor.2005 = { 
+#	hidden = yes
+# 
+#	immediate = {
+#		root = {
+#			change_trait_rank = {
+#				trait = magikill
+#				rank = 1
+#				max = 5
+#			}
+#		}
+#	}
+#}
+#haradar_flavor.2006 = { 
+#	hidden = yes
+# 
+#	immediate = {
+#		root = {
+#			change_trait_rank = {
+#				trait = magikill
+#				rank = 1
+#				max = 6
+#			}
+#		}
+#	}
+#}
+#haradar_flavor.2007 = { 
+#	hidden = yes
+# 
+#	immediate = {
+#		root = {
+#			change_trait_rank = {
+#				trait = magikill
+#				rank = 1
+#				max = 7
+#			}
+#		}
+#	}
+#}
+
+#haradar_flavor.2008 = {  #test event to check variables, serves no purpose outside of troubleshooting.
+#	hidden = yes
+#	immediate = {
+#		root = {
+#			change_variable = {
+#				name = haradar_event_1000_tracker
+#				add = 14
+#			}
+#		}
+#	}
+#}

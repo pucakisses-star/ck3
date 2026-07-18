@@ -1,0 +1,802 @@
+﻿namespace = gh_realm_maintenance
+
+# Destroys Agionist holy order titles if held by an infidel
+# TBD make a distinction between other Agionists, Aversarians and Sarradonians. Allow the option to instead downgrade them to a duchy
+gh_realm_maintenance.0001 = {
+	hidden = yes
+	
+	trigger = {
+		NOT = {
+			religion = religion:agionism_religion
+		}
+		OR = {
+			scope:title = title:k_saint_sansias_rose
+			scope:title = title:k_forlorn_guardian
+			scope:title = title:k_golden_hand
+			scope:title = title:k_saint_calystos_key
+			scope:title = title:k_bleeding_martyr
+			scope:title = title:k_pure_heart
+			scope:title = title:k_blind_watcher
+			scope:title = title:k_forgotten_saint
+		}
+	}
+	
+	immediate = {
+		destroy_title = scope:title
+	}
+}
+
+# Destroys Mamuramat titles if taken by a rival Mamuramat or school that doesn't allow them
+gh_realm_maintenance.0011 = {
+	hidden = yes
+	
+	trigger = {
+		scope:title = { has_variable = is_mamuramat_title }
+		OR = {
+			#faith = { has_doctrine_parameter = ideal_tradition_choice }
+			#faith = { has_doctrine_parameter = rad_tradition_choice }
+			any_held_title = {
+				NOT = {
+					this = scope:title
+				}
+				has_variable = is_mamuramat_title
+			}
+		}
+	}
+	
+	immediate = {
+		destroy_title = scope:title
+		update_mamuramat_name = yes
+		random_held_title = {
+			limit = { has_variable = is_mamuramat_title }
+			save_scope_as = main_mamuramat_title
+		}
+		religion:wardenism_religion = {
+			every_faith = {	# Make all mainliners recognize the new sole Mamuramat
+				limit = { has_doctrine_parameter = one_mamur_recognized }
+				set_variable = {	# Mainliners only recognize one Mamuramat, the Central, at start
+					name = recognised_mamuramat
+					value = scope:main_mamuramat_title
+				}
+				if = {
+					limit = { 
+						religious_head_title = {
+							trigger_if = {
+								limit = { is_title_created = yes }
+								NOT = { holder = root }
+							}
+							trigger_else = {
+								always = no
+							}
+						}
+					}
+					religious_head_title = { save_temporary_scope_as = religious_head_title_to_be_destroyed }
+					root = { destroy_title = scope:religious_head_title_to_be_destroyed }
+				}
+				else_if = {
+					limit = {
+						this = root.faith
+						NOT = { religious_head = root }
+					}
+					religious_head_title = { save_temporary_scope_as = title_to_get }
+					root = { get_title = scope:title_to_get }
+				}
+			}
+		}
+	}
+}
+
+# Destroys or gives away clique-bearing titles if seized by someone that's already holding a clique-bearing title
+#gh_realm_maintenance.0021 = {
+#	hidden = yes
+#	
+#	trigger = {
+#		scope:title = { has_variable = clique_number }
+#		any_held_title = {
+#			NOT = { this = scope:title }
+#			has_variable = clique_number
+#			tier >= scope:title.tier	# Only do this if the already held title is the same or higher tier
+#		}
+#	}
+#	
+#	immediate = {
+#		if = {
+#			limit = { scope:previous_holder = { is_alive = yes } }
+#			save_scope_as = potential_
+#		}
+#	}
+#	
+#	option = {
+#		# 
+#	}
+#}
+
+gh_realm_maintenance.0031 = { #Destroys Imperrech if Cenware is not leader
+	hidden = yes
+	trigger = {
+		scope:title = title:e_migrant_coalition
+		character_cenware_trigger = no
+	}
+	immediate = {
+		force_end_the_conquest = yes
+	}
+}
+
+gh_realm_maintenance.0032 = { #Destroys the Conclave if non-Aagiokratian is the leader 
+	hidden = yes
+	trigger = {
+		scope:title = title:d_aversarian_priesthood
+		NOT = {
+			religion = religion:aversarinas_aagiokrata_religion
+		}
+	}
+
+	immediate = {
+		destroy_title = scope:title
+	}
+}
+
+gh_realm_maintenance.0033 = { #Destroys Imperrech Titulars if inherited by Cenware
+	hidden = yes
+	trigger = {
+		OR = {
+			scope:title = title:k_fenvir
+			scope:title = title:k_adrakamp
+			scope:title = title:k_tribocicai
+			scope:title = title:k_vrodkin
+			scope:title = title:k_greulokin
+			scope:title = title:k_caemansi
+			scope:title = title:k_barki
+			scope:title = title:k_warisnik
+			scope:title = title:k_mastikigni
+			scope:title = title:k_irmionoth
+			scope:title = title:k_curgerski
+			scope:title = title:k_archexate_ti_karanthos
+			scope:title = title:k_kardwen_confederacy
+			scope:title = title:k_sarminian_confederacy
+			scope:title = title:k_marrudolem
+			scope:title = title:d_sayuha_ko_wedo
+			scope:title = title:d_sayuha_ko_khoya
+			scope:title = title:d_vhadrodizen
+			scope:title = title:k_winter_legion
+		}
+		character_cenware_trigger = yes
+	}
+
+	immediate = {
+		destroy_title = scope:title
+	}
+}
+
+gh_realm_maintenance.0034 = {
+	hidden = yes
+	trigger = {
+		root = { has_title_migrant_coalition_trigger = yes } 
+		is_ai = yes
+	}
+	immediate = {
+		if = { #Is that still useful? Don't he have it handled in another effect
+			limit = {
+				scope:title = {
+					OR = {
+						tier = tier_kingdom
+						#tier = tier_duchy
+					}
+					NOT = { de_jure_liege = title:e_etepezea }
+				}
+			}
+			destroy_title = scope:title
+		}
+		#if = { # This thing is the source of the problem
+		#	limit = {
+		#		scope:title = { 
+		#			tier = tier_county 
+		#			NOT = { this = root.capital_county }
+		#			NOT = { de_jure_liege = title:e_etepezea }
+		#		}
+		#	}
+		#	scope:title = {
+		#		random_neighboring_county = {
+		#			holder = { save_scope_as = new_holder }
+		#		}
+		#	}
+		#	scope:new_holder = {
+		#		get_title = scope:title 
+		#	}
+		#}
+	}
+}
+
+## Republican Maintenance Events ##
+gh_realm_maintenance.0035 = {
+	scope = none
+	hidden = yes
+	orphan = yes
+
+	immediate = {
+		every_ruler = {
+			limit = {
+				government_has_flag = government_is_administrative_republic
+				highest_held_title_tier >= tier_county
+			}
+			trigger_event = {
+				id = gh_realm_maintenance.0036
+			}
+		}
+	}
+}
+
+gh_realm_maintenance.0036 = {
+	type = character_event
+	title = gh_realm_maintenance.0036.t
+	desc = gh_realm_maintenance.0036.desc
+	theme = realm
+	override_background = { reference = market }
+	   right_portrait = root
+
+	trigger = {
+		highest_held_title_tier >= tier_duchy
+		government_has_flag = government_is_administrative_republic
+		primary_title = {
+			is_noble_family_title = no
+		}
+	}
+
+	option = { #Mercantile
+		name = gh_realm_maintenance.0036.a
+		add_realm_law_skip_effects = mercantile_election_law
+		
+		if = {
+			limit = {is_independent_ruler = yes }
+			primary_title = { add_title_law = mercantile_elective_law }
+			every_held_title = {
+				limit = { has_title_law_flag = republican_succession_law }
+				clear_title_laws = yes
+				add_title_law = mercantile_elective_law
+			}
+		}
+		
+		
+		ai_chance = {
+			base = 1
+			modifier = {
+				OR = {
+					has_realm_law_flag = mercantile_elective_law
+					any_held_title = {
+						has_title_law_flag = republican_succession_law
+						has_title_law_flag = mercantile_elective_law
+					}
+				}
+				add = 9999
+			}
+
+			modifier = {
+				OR = {
+					stewardship >= high_skill_rating
+					has_education_stewardship_trigger = yes
+				}
+				add = 8
+			}
+
+		}
+	}
+
+	option = { #Oligarchic
+		name = gh_realm_maintenance.0036.b
+		add_realm_law_skip_effects = oligarchic_election_law
+		
+		if = {
+			limit = {is_independent_ruler = yes }
+			primary_title = { add_title_law = oligarchic_elective_law }
+			every_held_title = {
+				limit = { has_title_law_flag = republican_succession_law }
+				clear_title_laws = yes
+				add_title_law = oligarchic_elective_law
+			}
+		}
+		
+		
+		ai_chance = {
+			base = 1
+			modifier = {
+				OR = {
+					has_realm_law_flag = oligarchic_election_law
+					any_held_title = {
+						has_title_law_flag = republican_succession_law
+						has_title_law_flag = oligarchic_succession_law
+					}
+				}
+				add = 9999
+			}
+
+		}
+
+	}
+	
+	option = { #Blood
+		name = gh_realm_maintenance.0036.c
+		add_realm_law_skip_effects = blood_election_law
+		
+		if = {
+			limit = {is_independent_ruler = yes }
+			primary_title = { add_title_law = blood_elective_law }
+			every_held_title = {
+				limit = { has_title_law_flag = republican_succession_law }
+				clear_title_laws = yes
+				add_title_law = blood_elective_law
+			}
+		}
+		
+		
+		ai_chance = {
+			base = 1
+			modifier = {
+				OR = {
+					has_realm_law_flag = blood_elective_law
+					any_held_title = {
+						has_title_law_flag = republican_succession_law
+						has_title_law_flag = blood_succession_law
+					}
+				}
+				add = 9999
+			}
+
+		}
+	}
+	
+	option = { #Stratocratic
+		name = gh_realm_maintenance.0036.d
+		add_realm_law_skip_effects = stratocratic_election_law
+		
+		if = {
+			limit = {is_independent_ruler = yes }
+			primary_title = { add_title_law = stratocratic_elective_law }
+			every_held_title = {
+				limit = { has_title_law_flag = republican_succession_law }
+				clear_title_laws = yes
+				add_title_law = stratocratic_elective_law
+			}
+		}
+		
+		
+		ai_chance = {
+			base = 1
+			modifier = {
+				OR = {
+					has_realm_law_flag = stratocratic_elective_law
+					any_held_title = {
+						has_title_law_flag = republican_succession_law
+						has_title_law_flag = stratocratic_succession_law
+					}
+				}
+				add = 9999
+			}
+
+			modifier = {
+				OR = {
+					has_lifestyle = martial_lifestyle
+					martial >= high_skill_rating
+					has_education_martial_trigger = yes
+				}
+				add = 8
+			}
+		}
+	}
+}
+
+gh_realm_maintenance.0037 = {
+	type = character_event
+	title = gh_realm_maintenance.0037.t
+	desc = gh_realm_maintenance.0037.desc
+	theme = realm
+	override_background = { reference = market }
+	right_portrait = root
+
+	trigger = {
+		liege = root
+		OR = {
+			government_has_flag = government_is_administrative_republic
+			government_has_flag=  government_is_judicial_republic
+		}
+		government_allows = administrative
+		highest_held_title_tier < tier_kingdom
+		is_landed = no
+	}
+
+	immediate = {
+		save_scope_as = landless_republican
+		every_vassal = { # you shouldnt have any at all!
+			limit = {
+				highest_held_title_tier >= tier_county
+			}
+			create_title_and_vassal_change = {
+				type = independency
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			becomes_independent = { change = scope:change }
+			resolve_title_and_vassal_change = scope:change
+		}
+	}
+
+	option = {
+		name = gh_realm_maintenance.0037.a
+
+		every_held_title = {
+			limit = { is_noble_family_title = yes }
+			save_temporary_scope_as = family_title
+			root = { destroy_title = scope:family_title }
+		}
+		
+		ai_chance = {
+			base = 1
+		}
+	}	
+
+	option = { #Move somewhere distant
+		name = gh_realm_maintenance.0037.b
+
+		trigger = {
+			any_independent_ruler = {
+				OR = {
+					government_has_flag = government_is_administrative_republic
+					government_has_flag = government_is_judicial_republic
+				}
+				government_allows = administrative
+				highest_held_title_tier >= tier_kingdom
+				capital_province ?= {
+					squared_distance = {
+						target = scope:landless_republican.domicile.domicile_location
+						value < 2402500
+					}
+				}
+			}
+		}
+
+		random_independent_ruler = {
+			limit = {
+				OR = {
+					government_has_flag = government_is_administrative_republic
+					government_has_flag = government_is_judicial_republic
+				}
+				government_allows = administrative
+				highest_held_title_tier >= tier_kingdom
+				capital_province ?= {
+					squared_distance = {
+						target = scope:landless_republican.domicile.domicile_location
+						value < 2402500
+					}
+				}
+			}
+			save_scope_as = new_liege
+		}
+			
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = change
+		}
+		change_liege = {
+			liege = scope:new_liege
+			change = scope:change
+		}
+		
+		resolve_title_and_vassal_change = scope:change
+		
+		domicile = {
+			move_domicile = scope:new_liege.capital_province
+		}
+
+		ai_chance = {
+			base = 1
+		}
+	}
+	
+	option = { #Move somewhere closer
+		name = gh_realm_maintenance.0037.c
+
+		trigger = {
+			any_independent_ruler = {
+				OR = {
+					government_has_flag = government_is_administrative_republic
+					government_has_flag = government_is_judicial_republic
+				}
+				government_allows = administrative
+				highest_held_title_tier >= tier_kingdom
+				capital_province ?= {
+					squared_distance = {
+						target = scope:landless_republican.domicile.domicile_location
+						value < 422500
+					}
+				}
+			}
+		}
+
+		random_independent_ruler = {
+			limit = {
+				OR = {
+					government_has_flag = government_is_administrative_republic
+					government_has_flag = government_is_judicial_republic
+				}
+				government_allows = administrative
+				highest_held_title_tier >= tier_kingdom
+				capital_province ?= {
+					squared_distance = {
+						target = scope:landless_republican.domicile.domicile_location
+						value < 422500
+					}
+				}
+			}
+			save_scope_as = new_liege
+		}
+			
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = change
+		}
+		change_liege = {
+			liege = scope:new_liege
+			change = scope:change
+		}
+		
+		resolve_title_and_vassal_change = scope:change
+		
+		domicile = {
+			move_domicile = scope:new_liege.capital_province
+		}
+
+		ai_chance = {
+			base = 1
+		}
+	}
+	
+	option = { #Move to another admin realm if it's close enough
+		name = gh_realm_maintenance.0037.d
+
+		trigger = {
+			any_independent_ruler = {
+				NOR = {
+					government_has_flag = government_is_administrative_republic
+					government_has_flag = government_is_judicial_republic
+				}
+				government_allows = administrative
+				highest_held_title_tier >= tier_kingdom
+				#is_within_diplo_range = { CHARACTER = scope:landless_republican }
+				capital_province ?= {
+					squared_distance = {
+						target = scope:landless_republican.domicile.domicile_location
+						value < 422500
+					}
+				}
+			}
+		}
+
+		random_independent_ruler = {
+			limit = {
+				NOR = {
+					government_has_flag = government_is_administrative_republic
+					government_has_flag = government_is_judicial_republic
+				}
+				government_allows = administrative
+				highest_held_title_tier >= tier_kingdom
+				#is_within_diplo_range = { CHARACTER = scope:landless_republican }
+				capital_province ?= {
+					squared_distance = {
+						target = scope:landless_republican.domicile.domicile_location
+						value < 422500
+					}
+				}
+			}
+			save_scope_as = new_liege
+		}
+			
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = change
+		}
+		change_liege = {
+			liege = scope:new_liege
+			change = scope:change
+		}
+		
+		resolve_title_and_vassal_change = scope:change
+		
+		domicile = {
+			move_domicile = scope:new_liege.capital_province
+		}
+		change_to_administrative_effect = yes
+
+		ai_chance = {
+			base = 1
+		}
+	}
+	
+	option = { #Become an adventurer!
+		name = gh_realm_maintenance.0037.e
+		
+		trigger = {
+			is_ai = yes
+		}
+
+		if = {
+			limit = { is_ruler = yes }
+			primary_title = {
+				save_scope_as = old_title
+			}
+			depose = yes
+		}
+		create_landless_adventurer_title_effect = {
+			REASON = flag:voluntary
+			FLAVOR_CHAR = scope:recipient
+		}
+
+		destroy_title = scope:old_title
+		
+		add_gold = 150
+		add_prestige = 150
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				OR = {
+					culture = { has_cultural_parameter = unlock_voluntary_laampdom }
+					faith = { has_doctrine_parameter = unlock_voluntary_laampdom_faith }
+				}
+				add = 5
+			}
+		}
+	}
+}
+
+gh_realm_maintenance.0038 = {
+	type = character_event
+	title = gh_realm_maintenance.0038.t
+	desc = gh_realm_maintenance.0038.desc
+	theme = realm
+	override_background = { reference = market }
+    right_portrait = root
+
+	trigger = {
+		#liege = root # I.e. root is independent
+		NOT = { government_has_flag = government_is_administrative_republic }
+		any_held_title = { has_variable = republic_titular_title }
+	}
+
+	option = { #We're not a republic anymore!
+		name = gh_realm_maintenance.0038.a
+		
+		every_held_title = {
+			limit = {
+				OR = {
+					is_noble_family_title = yes
+					has_variable = republic_titular_title
+				}
+			}
+			save_temporary_scope_as = republican_title
+			root = { destroy_title = scope:republican_title }
+		}
+		
+		ai_chance = {
+			base = 10
+			
+			#if this is your main title now and you like republics, go for it!
+			modifier = {
+				primary_title = { has_variable = republic_titular_title }
+				factor = 0
+			}
+		}
+	}
+
+	option = { #Restore the republic!
+		name = gh_realm_maintenance.0038.b
+		
+		change_to_administrative_republic_effect = yes
+		
+		ai_chance = {
+			base = 1
+			
+			#if you already had other high titles, you shouldn't become a republic
+			modifier = {
+				primary_title = { NOT = { has_variable = republic_titular_title } }
+				factor = 0
+			}	
+		}
+	}	
+}
+
+gh_realm_maintenance.0039 = {
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				is_independent_ruler = yes
+				highest_held_title_tier >= tier_duchy
+				OR = {
+					government_has_flag = government_is_administrative_republic
+					#government_has_flag = government_is_military_unit
+				}
+				primary_title = {
+					is_noble_family_title = no
+				}
+			}
+			#if = {
+			#	limit = { 
+			#		government_has_flag = government_is_military_unit
+			#		NOT = { has_realm_law = stratocratic_election_law }
+			#	}
+			#	add_realm_law_skip_effects = stratocratic_election_law
+			#	primary_title = { add_title_law = stratocratic_elective_law }
+			#	every_held_title = {
+			#		clear_title_laws = yes
+			#		add_title_law = stratocratic_elective_law
+			#	}
+			#}
+			if = {
+				limit = { 
+					culture = { has_cultural_tradition = tradition_maritime_mercantilism }
+					NOT = { has_realm_law = mercantile_election_law }
+				}
+				add_realm_law_skip_effects = mercantile_election_law
+				primary_title = { add_title_law = mercantile_elective_law }
+				every_held_title = {
+					limit = { has_title_law_flag = republican_succession_law }
+					clear_title_laws = yes
+					add_title_law = mercantile_elective_law
+				}	
+			}
+			else = {
+				add_realm_law_skip_effects = oligarchic_election_law
+				every_held_title = {
+					limit = { has_title_law_flag = republican_succession_law }
+					clear_title_laws = yes
+					add_title_law = oligarchic_elective_law
+				}
+			}
+		}
+		#else_if = {
+		#	limit = {
+		#		is_independent_ruler = no
+		#		highest_held_title_tier >= tier_duchy
+		#		government_has_flag = government_is_military_unit
+		#		NOT = { has_realm_law = stratocratic_election_law }
+		#	}
+		#	add_realm_law_skip_effects = stratocratic_election_law
+		#	primary_title = { add_title_law = stratocratic_elective_law }
+		#	every_held_title = {
+		#		clear_title_laws = yes
+		#		add_title_law = stratocratic_elective_law
+		#	}
+		#}
+	}
+}
+
+gh_realm_maintenance.0040 = {
+	hidden = yes
+	trigger = {
+		is_ruler = yes
+		highest_held_title_tier >= tier_duchy
+		NOT = { government_has_flag = government_is_administrative_republic }
+		any_held_title = { has_title_law_flag = republican_succession_law }
+	}
+	immediate = {
+		every_held_title = {
+			limit = { has_title_law_flag = republican_succession_law }
+			every_direct_de_facto_vassal_title = {
+				holder = {
+					trigger_event = {
+						id = ep3_decisions_event.4070
+						days = 2
+					}
+					every_vassal_or_below = {
+						limit = { highest_held_title_tier >= tier_county
+						}
+						trigger_event = {
+							id = ep3_decisions_event.4070
+							days = 2
+						}
+					}					
+				}
+			}
+		}
+	}
+}

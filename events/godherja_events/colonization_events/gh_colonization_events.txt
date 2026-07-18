@@ -1,0 +1,1295 @@
+﻿##################################################
+##		   Colonization Flavour Events		    ##
+#
+# 				  by Yogsothoth
+#
+# gh_colonization_events.0001 - Peace and Prosperity
+# gh_colonization_events.0002 - A Plague of Brigands
+# gh_colonization_events.0003 - Food Shortage
+# gh_colonization_events.0004 - An Incompetent Administrator
+# gh_colonization_events.0005 - Monster Infestation
+# gh_colonization_events.0006 - Struck Gold!
+# gh_colonization_events.0007 - Migrant Influx
+# gh_colonization_events.0008 - Exceptional Harvest
+#
+# Regional events
+#
+# gh_colonization_events.0010 - Colony in Eripomnuvo disappears
+#
+##################################################
+
+namespace = gh_colonization_events
+
+##################################################
+
+gh_colonization_events.0001 = { # Peace and Prosperity
+	type = character_event
+	content_source = dlc_gh
+	title = gh_colonization_events.0001.t
+	desc = gh_colonization_events.0001.desc
+	theme = realm
+	override_background = { reference = terrain_scope }
+	left_portrait = {
+		character = scope:acting_character
+		triggered_animation = {
+			trigger = {
+				NOT = { has_trait = lazy }
+				is_ai = no
+			}
+			animation = personality_rational
+		}
+		triggered_animation = {
+			trigger = {
+				has_trait = lazy
+				is_ai = no
+			}
+			animation = boredom
+		}
+		triggered_animation = {
+			trigger = { is_ai = yes }
+			animation = chancellor
+		}
+	}
+
+	trigger = {
+		NOT = { has_character_flag = had_event_gh_colonization_events_0001 }
+		scope:colony = { NOT = { exists = var:had_event_gh_colonization_events_0001 } }
+	}
+
+	weight_multiplier = {
+		base = 1
+	}
+	
+	immediate = {
+		if = {
+			limit = { any_court_position_holder = { type = colonial_administrator_court_position } }
+			random_court_position_holder = {
+				type = colonial_administrator_court_position
+				save_scope_as = acting_character
+			}
+		}
+		scope:colony = {
+			title_province = { save_scope_as = background_terrain_scope }
+			set_variable = {
+				name = had_event_gh_colonization_events_0001
+				years = 10
+			}
+		}
+		add_character_flag = {
+			flag = had_event_gh_colonization_events_0001
+			years = 10
+		}
+	}
+
+	option = { # Let the colony prosper
+		name = gh_colonization_events.0001.a
+		scope:colony = {
+			add_county_modifier = {
+				modifier = colonial_boom_modifier
+				years = 5
+			}
+		}
+		stress_impact = {
+			generous = miniscule_stress_impact_loss
+			greedy = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_honor = 0.4
+				ai_greed = -1
+				ai_rationality = 0.2
+				ai_energy = -0.2
+				ai_compassion = 0.2
+			}
+		}
+	}
+
+	option = { # Tax the colony
+		name = gh_colonization_events.0001.b
+		scope:colony = {
+			add_county_modifier = {
+				modifier = colonial_prosperity_modifier
+				years = 5
+			}
+		}
+		add_gold = minor_gold_value
+		stress_impact = {
+			greedy = medium_stress_impact_loss
+			generous = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = 1
+				ai_compassion = -0.5
+			}
+		}
+	}
+
+	option = { # Invest in infrastructure
+		name = gh_colonization_events.0001.c
+		scope:colony = {
+			add_county_modifier = {
+				modifier = infrastructure_expansion_modifier
+				years = 15
+			}
+		}
+		stress_impact = {
+			ambitious = medium_stress_impact_loss
+			diligent = medium_stress_impact_loss
+			greedy = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = -0.5
+				ai_rationality = 1
+				ai_energy = 0.5
+			}
+		}
+	}
+
+	option = { # Implement draconic taxation
+		name = gh_colonization_events.0001.d
+		trigger = {
+			OR = {
+				has_trait = greedy
+				has_trait = arbitrary
+				has_trait = avaricious
+			}
+		}
+		scope:story = {
+			change_variable = {
+				name = colonization_progress
+				add = -20
+			}
+		}
+		custom_tooltip = gh_colonization_events.0001.d.tt
+		add_gold = major_gold_value
+		stress_impact = {
+			greedy = major_stress_impact_loss
+			fickle = minor_stress_impact_loss
+			arbitrary = minor_stress_impact_loss
+			compassionate = medium_stress_impact_gain
+			just = medium_stress_impact_gain
+			generous = massive_stress_impact_gain
+		}
+		ai_chance = {
+			base = 200
+			ai_value_modifier = {
+				ai_honor = -0.5
+				ai_greed = 2
+				ai_rationality = -0.5
+				ai_compassion = -0.5
+			}
+		}
+	}
+}
+
+gh_colonization_events.0002 = { # A Plague of Brigands
+	type = character_event
+	content_source = dlc_gh
+	title = gh_colonization_events.0002.t
+	desc = gh_colonization_events.0002.desc
+	theme = realm
+	override_background = { reference = terrain_scope }
+	left_portrait = {
+		character = scope:acting_character
+		triggered_animation = {
+			trigger = {
+				NOT = { has_trait = lazy }
+				is_ai = no
+			}
+			animation = personality_rational
+		}
+		triggered_animation = {
+			trigger = {
+				has_trait = lazy
+				is_ai = no
+			}
+			animation = boredom
+		}
+		triggered_animation = {
+			trigger = { is_ai = yes }
+			animation = chancellor
+		}
+	}
+	right_portrait = {
+		character = scope:court_adventurer
+		animation = marshal
+	}
+
+	trigger = {
+		NOT = { has_character_flag = had_event_gh_colonization_events_0002 }
+		scope:colony = {
+			NOT = { exists = var:had_event_gh_colonization_events_0002 }
+			any_neighboring_county = {
+				holder = root
+				title_province = { NOT = { has_holding_type = colony_holding } }
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			add = -0.5
+			has_perk = surety_of_supply_perk
+		}
+		modifier = {
+			add = 0.5
+			any_court_position_holder = {
+				type = colonial_administrator_court_position
+				has_character_flag = colonial_administrator_attend_colonial_affairs_flag
+			}
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = { any_court_position_holder = { type = colonial_administrator_court_position } }
+			random_court_position_holder = {
+				type = colonial_administrator_court_position
+				save_scope_as = acting_character
+			}
+		}
+		scope:colony = {
+			title_province = { save_scope_as = background_terrain_scope }
+			set_variable = {
+				name = had_event_gh_colonization_events_0002
+				years = 10
+			}
+		}
+		if = {
+			limit = { any_court_position_holder = { type = court_adventurer_court_position } }
+			random_court_position_holder = {
+				type = court_adventurer_court_position
+				save_scope_as = court_adventurer
+			}
+		}
+		add_character_flag = {
+			flag = had_event_gh_colonization_events_0002
+			years = 10
+		}
+	}
+
+	option = { # Do nothing
+		name = gh_colonization_events.0002.a
+		scope:colony = {
+			add_county_modifier = {
+				modifier = bandit_stronghold_modifier
+				years = 5
+			}
+		}
+		custom_tooltip = {
+			text = gh_colonization_events.0002.a.tt
+			scope:colony = {
+				every_neighboring_county = {
+					limit = {
+						holder = {
+							OR = {
+								this = root
+								is_vassal_of = root
+							}
+						}
+					}
+					change_county_control = medium_county_control_loss
+				}
+			}
+		}
+		add_legitimacy = minor_legitimacy_loss
+		stress_impact = {
+			craven = medium_stress_impact_loss
+			lazy = minor_stress_impact_loss
+			just = medium_stress_impact_gain
+			brave = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_honor = -1
+				ai_greed = 0.5
+				ai_rationality = -0.5
+				ai_energy = 1
+				ai_boldness = -1
+				ai_vengefulness = -0.5
+				ai_compassion = -0.2
+			}
+		}
+	}
+
+	option = { # Increase patrols
+		name = gh_colonization_events.0002.b
+		scope:colony = {
+			add_county_modifier = {
+				modifier = frontier_banditry_modifier
+				years = 5
+			}
+		}
+		remove_short_term_gold = medium_gold_value
+		stress_impact = {
+			paranoid = minor_stress_impact_loss
+			greedy = miniscule_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = -0.5
+				ai_rationality = 1
+			}
+		}
+	}
+
+	option = { # Hunt down the bandits
+		name = gh_colonization_events.0002.c
+		remove_short_term_gold = massive_gold_value
+		scope:colony = {
+			add_county_modifier = {
+				modifier = safe_roads_modifier
+				years = 5
+			}
+		}
+		stress_impact = {
+			brave = medium_stress_impact_loss
+			just = medium_stress_impact_loss
+			diligent = minor_stress_impact_loss
+			greedy = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_honor = 1
+				ai_greed = -1
+				ai_rationality = 0.5
+				ai_energy = 1
+				ai_boldness = 1
+			}
+		}
+	}
+
+	option = { # Have the court adventurer deal with it
+		name = gh_colonization_events.0002.d
+		trigger = { exists = scope:court_adventurer }
+		custom_tooltip = gh_colonization_events.0002.d.tt
+		scope:colony = {
+			add_county_modifier = {
+				modifier = adventurer_patrols_modifier
+				years = 5
+			}
+		}
+		add_prestige = medium_prestige_gain
+		stress_impact = {
+			ambitious = medium_stress_impact_loss
+			diligent = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 200
+			ai_value_modifier = {
+				ai_greed = -0.8
+				ai_rationality = 1
+				ai_energy = 0.7
+				ai_boldness = 0.7
+			}
+		}
+	}
+}
+
+gh_colonization_events.0003 = { # Food Shortage
+	type = character_event
+	content_source = dlc_gh
+	title = gh_colonization_events.0003.t
+	desc = gh_colonization_events.0003.desc
+	theme = realm
+	override_background = { reference = terrain_scope }
+	left_portrait = {
+		character = scope:acting_character
+		triggered_animation = {
+			trigger = {
+				NOT = { has_trait = lazy }
+				is_ai = no
+			}
+			animation = personality_rational
+		}
+		triggered_animation = {
+			trigger = {
+				has_trait = lazy
+				is_ai = no
+			}
+			animation = boredom
+		}
+		triggered_animation = {
+			trigger = { is_ai = yes }
+			animation = chancellor
+		}
+	}
+	
+	trigger = {
+		NOT = { has_character_flag = had_event_gh_colonization_events_0003 }
+		scope:colony = { NOT = { exists = var:had_event_gh_colonization_events_0003 } }
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			add = -0.5
+			has_perk = surety_of_supply_perk
+		}
+		modifier = {
+			add = 0.5
+			any_court_position_holder = {
+				type = colonial_administrator_court_position
+				has_character_flag = colonial_administrator_attend_colonial_affairs_flag
+			}
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = { any_court_position_holder = { type = colonial_administrator_court_position } }
+			random_court_position_holder = {
+				type = colonial_administrator_court_position
+				save_scope_as = acting_character
+			}
+		}
+		scope:colony = {
+			title_province = { save_scope_as = background_terrain_scope }
+			set_variable = {
+				name = had_event_gh_colonization_events_0003
+				years = 10
+			}
+		}
+		add_character_flag = {
+			flag = had_event_gh_colonization_events_0003
+			years = 10
+		}
+	}
+
+	option = { # Do nothing
+		name = gh_colonization_events.0003.a
+		scope:colony = {
+			add_county_modifier = {
+				modifier = acute_food_shortages_modifier
+				years = 2
+			}
+			custom_tooltip = gh_colonization_events.0003.a.tt
+		}
+		scope:story = {
+			change_variable = {
+				name = colonization_progress
+				add = -30
+			}
+		}
+		stress_impact = {
+			callous = minor_stress_impact_loss
+			just = medium_stress_impact_gain
+			generous = medium_stress_impact_gain
+			compassionate = major_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_honor = -1
+				ai_greed = 0.5
+				ai_rationality = -1
+				ai_energy = -0.5
+				ai_compassion = 1
+			}
+		}
+	}
+
+	option = { # Increase food shipments
+		name = gh_colonization_events.0003.b
+		remove_short_term_gold = medium_gold_value
+		stress_impact = {
+			compassionate = medium_stress_impact_loss
+			just = medium_stress_impact_loss
+			generous = medium_stress_impact_loss
+			greedy = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = -1
+				ai_rationality = 2
+				ai_energy = 0.5
+				ai_compassion = 2
+			}
+		}
+	}
+}
+
+gh_colonization_events.0004 = { # An Incompetent Administrator
+	type = character_event
+	content_source = dlc_gh
+	title = gh_colonization_events.0004.t
+	desc = gh_colonization_events.0004.desc
+	theme = realm
+	override_background = { reference = dungeon }
+	right_portrait = {
+		character = scope:idiot
+		animation = prisondungeon
+	}
+	left_portrait = {
+		character = scope:jailor
+		animation = marshal
+	}
+	
+	trigger = {
+		NOT = { has_character_flag = had_event_gh_colonization_events_0004 }
+		scope:colony = { NOT = { exists = var:had_event_gh_colonization_events_0004 } }
+		any_knight = {
+			exists = yes
+			is_healthy = yes
+			location = root.location
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			add = -0.5
+			has_perk = surety_of_supply_perk
+		}
+		modifier = {
+			add = 0.5
+			any_court_position_holder = {
+				type = colonial_administrator_court_position
+				has_character_flag = colonial_administrator_attend_colonial_affairs_flag
+			}
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = { any_court_position_holder = { type = colonial_administrator_court_position } }
+			random_court_position_holder = {
+				type = colonial_administrator_court_position
+				save_scope_as = acting_character
+			}
+		}
+		scope:colony = {
+			title_province = { save_scope_as = background_terrain_scope }
+			set_variable = {
+				name = had_event_gh_colonization_events_0004
+				years = 10
+			}
+			add_county_modifier = {
+				modifier = colonial_mismanagement_modifier
+				years = 5
+			}
+		}
+		add_character_flag = {
+			flag = had_event_gh_colonization_events_0004
+			years = 10
+		}
+		create_character = {
+			template = incompetent_administrator_template
+			location = root.capital_province
+			save_scope_as = idiot
+		}
+		random_knight = {
+			limit = {
+				is_healthy = yes
+				location = root.location
+			}
+			save_scope_as = jailor
+		}
+	}
+
+	option = { # Get them out of my sight
+		name = gh_colonization_events.0004.a
+		custom_tooltip = gh_colonization_events.0004.a.tt
+		scope:idiot = { silent_disappearance_effect = yes }
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_energy = -0.3
+				ai_vengefulness = -0.2
+				ai_compassion = 0.5
+			}
+		}
+	}
+
+	option = { # They will rot in my dungeon
+		name = gh_colonization_events.0004.b
+		imprison = {
+			target = scope:idiot
+			type = dungeon
+		}
+		stress_impact = {
+			callous = minor_stress_impact_loss
+			forgiving = minor_stress_impact_gain
+			compassionate = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_vengefulness = 0.4
+				ai_compassion = -0.5
+			}
+		}
+	}
+
+	option = { # Kill this fool
+		name = gh_colonization_events.0004.c
+		execute_prisoner_effect = {
+			VICTIM = scope:idiot
+			EXECUTIONER = root
+		}
+		stress_impact = {
+			sadistic = medium_stress_impact_loss
+			callous = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_vengefulness = 1
+				ai_compassion = -1
+			}
+		}
+	}
+}
+
+gh_colonization_events.0005 = { # Monster Infestation
+	type = character_event
+	content_source = dlc_gh
+	title = gh_colonization_events.0005.t
+	desc = gh_colonization_events.0005.desc
+	theme = realm
+	override_background = { reference = terrain_scope }
+	left_portrait = {
+		character = scope:acting_character
+		triggered_animation = {
+			trigger = {
+				NOT = { has_trait = lazy }
+				is_ai = no
+			}
+			animation = personality_rational
+		}
+		triggered_animation = {
+			trigger = {
+				has_trait = lazy
+				is_ai = no
+			}
+			animation = boredom
+		}
+		triggered_animation = {
+			trigger = { is_ai = yes }
+			animation = chancellor
+		}
+	}
+	right_portrait = {
+		character = scope:court_adventurer
+		animation = marshal
+	}
+	
+	trigger = {
+		NOT = { has_character_flag = had_event_gh_colonization_events_0005 }
+		scope:colony = { NOT = { exists = var:had_event_gh_colonization_events_0005 } }
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			add = -0.5
+			has_perk = surety_of_supply_perk
+		}
+		modifier = {
+			add = 0.5
+			any_court_position_holder = {
+				type = colonial_administrator_court_position
+				has_character_flag = colonial_administrator_attend_colonial_affairs_flag
+			}
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = { any_court_position_holder = { type = colonial_administrator_court_position } }
+			random_court_position_holder = {
+				type = colonial_administrator_court_position
+				save_scope_as = acting_character
+			}
+		}
+		scope:colony = {
+			title_province = { save_scope_as = background_terrain_scope }
+			set_variable = {
+				name = had_event_gh_colonization_events_0005
+				years = 10
+			}
+		}
+		if = {
+			limit = { any_court_position_holder = { type = court_adventurer_court_position } }
+			random_court_position_holder = {
+				type = court_adventurer_court_position
+				save_scope_as = court_adventurer
+			}
+		}
+		add_character_flag = {
+			flag = had_event_gh_colonization_events_0005
+			years = 10
+		}
+	}
+
+	option = { # Let the monsters eat them
+		name = gh_colonization_events.0005.a
+		scope:colony = {
+			add_county_modifier = {
+				modifier = monster_infestation_modifier
+				years = 5
+			}
+			custom_tooltip = gh_colonization_events.0005.a.tt
+		}
+		scope:story = {
+			change_variable = {
+				name = colonization_progress
+				add = -15
+			}
+		}
+		stress_impact = {
+			craven = medium_stress_impact_loss
+			callous = minor_stress_impact_loss
+			brave = medium_stress_impact_gain
+			just = medium_stress_impact_gain
+			compassionate = major_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_honor = 0.4
+				ai_greed = -0.5
+				ai_rationality = -0.5
+				ai_energy = -0.5
+				ai_boldness = -1
+				ai_compassion = 0.5
+			}
+		}
+	}
+
+	option = { # Commission adventurers
+		name = gh_colonization_events.0005.b
+		remove_short_term_gold = medium_gold_value
+		scope:colony = {
+			add_county_modifier = {
+				modifier = adventurer_influx_modifier
+				years = 5
+			}
+		}
+		stress_impact = {
+			lazy = minor_stress_impact_loss
+			greedy = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = -1
+				ai_rationality = 0.5
+				ai_energy = -0.5
+				ai_boldness = -0.5
+			}
+		}
+	}
+
+	option = { # Use your retinue
+		name = gh_colonization_events.0005.c
+		add_character_modifier = {
+			modifier = monster_exterminators_modifier
+			years = 10
+		}
+		stress_impact = {
+			brave = medium_stress_impact_loss
+			impatient = miniscule_stress_impact_loss
+			craven = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_energy = 1
+				ai_boldness = 1
+			}
+		}
+	}
+
+	option = { # Have the court adventurer deal with it
+		name = gh_colonization_events.0005.d
+		trigger = { exists = scope:court_adventurer }
+		custom_tooltip = gh_colonization_events.0005.d.tt
+		scope:colony = {
+			add_county_modifier = {
+				modifier = adventurer_patrols_modifier
+				years = 5
+			}
+		}
+		add_prestige = medium_prestige_gain
+		stress_impact = {
+			ambitious = medium_stress_impact_loss
+			diligent = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 200
+			ai_value_modifier = {
+				ai_greed = -0.8
+				ai_rationality = 1
+				ai_energy = 0.7
+				ai_boldness = 0.7
+			}
+		}
+	}
+}
+
+gh_colonization_events.0006 = { # Struck Gold!
+	type = character_event
+	content_source = dlc_gh
+	title = gh_colonization_events.0006.t
+	desc = gh_colonization_events.0006.desc
+	theme = realm
+	override_background = { reference = terrain_scope }
+	left_portrait = {
+		character = scope:acting_character
+		animation = ecstasy
+	}
+	
+	trigger = {
+		NOT = { has_character_flag = had_event_gh_colonization_events_0006 }
+		scope:colony = {
+			NOT = { exists = var:had_event_gh_colonization_events_0006 }
+			title_province = {
+				OR = {
+					GH_any_mountains_terrain_trigger = yes
+					GH_any_hills_terrain_trigger = yes
+					GH_any_underground_terrain_trigger = yes
+				}
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+	}
+	
+	immediate = {
+		if = {
+			limit = { any_court_position_holder = { type = colonial_administrator_court_position } }
+			random_court_position_holder = {
+				type = colonial_administrator_court_position
+				save_scope_as = acting_character
+			}
+		}
+		scope:colony = {
+			title_province = { save_scope_as = background_terrain_scope }
+			set_variable = {
+				name = had_event_gh_colonization_events_0006
+				years = 10
+			}
+			add_county_modifier = {
+				modifier = gold_rush_modifier
+				years = 10
+			}
+		}
+		add_character_flag = {
+			flag = had_event_gh_colonization_events_0006
+			years = 10
+		}
+	}
+
+	option = { # Accept the gold
+		name = gh_colonization_events.0006.a
+		add_gold = major_gold_value
+		stress_impact = {
+			greedy = major_stress_impact_loss
+			ambitious = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = 1
+				ai_energy = -0.2
+			}
+		}
+	}
+
+	option = { # Reinvest the gold
+		name = gh_colonization_events.0006.b
+		scope:colony = {
+			add_county_modifier = {
+				modifier = thriving_economy_modifier
+				years = 25
+			}
+		}
+		add_gold = medium_gold_value
+		stress_impact = {
+			ambitious = medium_stress_impact_loss
+			diligent = minor_stress_impact_loss
+			greedy = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = -1
+				ai_energy = 0.5
+			}
+		}
+	}
+}
+
+gh_colonization_events.0007 = { # Migrant Influx
+	type = character_event
+	content_source = dlc_gh
+	title = gh_colonization_events.0007.t
+	desc = gh_colonization_events.0007.desc
+	theme = realm
+	override_background = { reference = terrain_scope }
+	left_portrait = {
+		character = scope:acting_character
+		triggered_animation = {
+			trigger = {
+				NOT = { has_trait = lazy }
+				is_ai = no
+			}
+			animation = personality_rational
+		}
+		triggered_animation = {
+			trigger = {
+				has_trait = lazy
+				is_ai = no
+			}
+			animation = boredom
+		}
+		triggered_animation = {
+			trigger = { is_ai = yes }
+			animation = chancellor
+		}
+	}
+	
+	trigger = {
+		NOT = { has_character_flag = had_event_gh_colonization_events_0007 }
+		scope:colony = {
+			NOT = { exists = var:had_event_gh_colonization_events_0007 }
+			kingdom = {
+				any_de_jure_county = {
+					holder = { is_ruin = no }
+					culture = {
+						NOR = { ## GH TODO: Make a generic trigger for special cultures
+							this = scope:colony.culture
+							has_cultural_pillar = heritage_fog_eaters
+							has_cultural_pillar = heritage_redlander
+							has_cultural_pillar = heritage_hadiyan
+						}
+					}
+				}
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+	}
+	
+	immediate = {
+		if = {
+			limit = { any_court_position_holder = { type = colonial_administrator_court_position } }
+			random_court_position_holder = {
+				type = colonial_administrator_court_position
+				save_scope_as = acting_character
+			}
+		}
+		scope:colony = {
+			title_province = { save_scope_as = background_terrain_scope }
+			set_variable = {
+				name = had_event_gh_colonization_events_0007
+				years = 10
+			}
+			kingdom = {
+				random_de_jure_county = {
+					limit = {
+						holder = { is_ruin = no }
+						culture = {
+							NOR = { ## GH TODO: Make a generic trigger for special cultures
+								this = scope:colony.culture
+								has_cultural_pillar = heritage_fog_eaters
+								has_cultural_pillar = heritage_redlander
+								has_cultural_pillar = heritage_hadiyan
+							}
+						}
+					}
+					save_scope_as = migrant_origin
+				}
+			}
+		}
+		add_character_flag = {
+			flag = had_event_gh_colonization_events_0007
+			years = 10
+		}
+	}
+
+	option = { # Don't interfere with them
+		name = gh_colonization_events.0007.a
+		scope:colony = {
+			add_county_modifier = {
+				modifier = migrant_influx_modifier
+				years = 5
+			}
+		}
+		stress_impact = {
+			lazy = minor_stress_impact_loss
+			compassionate = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_energy = 1
+				ai_compassion = 0.5
+			}
+		}
+	}
+
+	option = { # Tax them
+		name = gh_colonization_events.0007.b
+		scope:story = {
+			change_variable = {
+				name = colonization_progress
+				add = 10
+			}
+		}
+		custom_tooltip = gh_colonization_events.0007.b.tt
+		add_gold = minor_gold_value
+		stress_impact = {
+			greedy = minor_stress_impact_loss
+			just = miniscule_stress_impact_loss
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = 1
+				ai_compassion = -0.2
+			}
+		}
+	}
+
+	option = { # They can settle this county for me
+		name = gh_colonization_events.0007.c
+		scope:colony = {
+			set_county_culture = scope:migrant_origin.culture
+			if = {
+				limit = { scope:migrant_origin.faith = { NOT = { this = scope:colony.faith } } }
+				set_county_faith = scope:migrant_origin.faith
+			}
+			custom_tooltip = gh_colonization_events.0007.c.tt
+		}
+		scope:story = {
+			change_variable = {
+				name = colonization_progress
+				add = 30
+			}
+		}
+		stress_impact = {
+			compassionate = major_stress_impact_loss
+			paranoid = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_honor = 0.2
+				ai_compassion = 1
+			}
+		}
+	}
+}
+
+gh_colonization_events.0008 = { # Exceptional Harvest
+	type = character_event
+	content_source = dlc_gh
+	title = gh_colonization_events.0008.t
+	desc = gh_colonization_events.0008.desc
+	theme = realm
+	override_background = { reference = terrain_scope }
+	left_portrait = {
+		character = scope:acting_character
+		triggered_animation = {
+			trigger = {
+				NOT = { has_trait = lazy }
+				is_ai = no
+			}
+			animation = personality_rational
+		}
+		triggered_animation = {
+			trigger = {
+				has_trait = lazy
+				is_ai = no
+			}
+			animation = boredom
+		}
+		triggered_animation = {
+			trigger = { is_ai = yes }
+			animation = chancellor
+		}
+	}
+	
+	trigger = {
+		NOT = { has_character_flag = had_event_gh_colonization_events_0008 }
+		scope:colony = {
+			NOT = { exists = var:had_event_gh_colonization_events_0008 }
+			title_province = {
+				NOR = { ## GH TODO: Generic trigger for viable farming
+					GH_any_mountains_terrain_trigger = yes
+					GH_any_redlands_trigger = yes
+					GH_any_forest_or_taiga_terrain_trigger = yes
+					GH_any_underground_terrain_trigger = yes
+					GH_any_desert_terrain_trigger = yes
+					terrain = archipelagic
+				}
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+	}
+	
+	immediate = {
+		if = {
+			limit = { any_court_position_holder = { type = colonial_administrator_court_position } }
+			random_court_position_holder = {
+				type = colonial_administrator_court_position
+				save_scope_as = acting_character
+			}
+		}
+		scope:colony = {
+			title_province = { save_scope_as = background_terrain_scope }
+			set_variable = {
+				name = had_event_gh_colonization_events_0008
+				years = 10
+			}
+		}
+		add_character_flag = {
+			flag = had_event_gh_colonization_events_0008
+			years = 10
+		}
+	}
+
+	option = { # Do nothing
+		name = gh_colonization_events.0008.a
+		scope:colony = {
+			add_county_modifier = {
+				modifier = colonial_prosperity_modifier
+				years = 5
+			}
+		}
+		stress_impact = {
+			lazy = minor_stress_impact_loss
+			content = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_honor = 0.5
+				ai_greed = -1
+				ai_energy = -1
+				ai_boldness = -0.2
+				ai_compassion = 0.5
+			}
+		}
+	}
+
+	option = { # Take a little
+		name = gh_colonization_events.0008.b
+		add_character_modifier = {
+			modifier = food_surplus_modifier
+			years = 5
+		}
+		add_gold = minor_gold_value
+		stress_impact = {
+			ambitious = minor_stress_impact_loss
+			greedy = minor_stress_impact_loss
+			generous = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = 0.5
+				ai_boldness = 0.5
+				ai_compassion = -0.5
+			}
+		}
+	}
+
+	option = { # Take a lot
+		name = gh_colonization_events.0008.c
+		add_tyranny = 20
+		add_character_modifier = {
+			modifier = food_abundance_modifier
+			years = 5
+		}
+		scope:colony = {
+			add_county_modifier = {
+				modifier = unruly_population_modifier
+				years = 25
+			}
+		}
+		add_gold = medium_gold_value
+		stress_impact = {
+			greedy = medium_stress_impact_loss
+			callous = minor_stress_impact_loss
+			generous = medium_stress_impact_gain
+			compassionate = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = 2
+				ai_boldness = 1
+				ai_compassion = -2
+			}
+		}
+	}
+}
+
+gh_colonization_events.0010 = { # Colony in Eripomnuvo disappears
+	type = character_event
+	content_source = dlc_gh
+	title = gh_colonization_events.0010.t
+	desc = gh_colonization_events.0010.desc
+	theme = realm
+	override_background = { reference = terrain_scope }
+	left_portrait = {
+		character = scope:acting_character
+		animation = worry
+	}
+
+	weight_multiplier = {
+		base = 1
+	}
+	
+	immediate = {
+		scope:colony = { title_province = { save_scope_as = background_terrain_scope } }
+		every_living_character = {
+			limit = {
+				location ?= scope:colony.title_province
+				is_ruin = no
+			}
+			save_scope_as = dead_person
+			custom_tooltip = {
+				text = gh_colonization_events.0010.tt
+				death = { death_reason = death_disappearance }
+			}
+		}
+		spawn_ruin = { COUNTY = scope:colony }
+		if = {
+			limit = { any_court_position_holder = { type = colonial_administrator_court_position } }
+			random_court_position_holder = {
+				type = colonial_administrator_court_position
+				save_scope_as = acting_character
+			}
+		}
+	}
+
+	option = { # What.
+		name = gh_colonization_events.0010.a
+		stress_impact = {
+			paranoid = major_stress_impact_gain
+			compassionate = medium_stress_impact_gain
+			ambitious = minor_stress_impact_gain
+		}
+	}
+}

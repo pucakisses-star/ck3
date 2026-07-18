@@ -1,0 +1,414 @@
+﻿namespace = protoshliti
+
+##################################################
+
+### Protoshliti Decision Events
+
+# 0001 - Recruit Protoshliti-Trained Warrior
+# 0002 - Recruit Protoshliti-Trained Legon
+
+##################################################
+
+##################################################
+# Recruit Protoshliti-Trained Warrior
+# by ScionEol
+##################################################
+
+protoshliti.0001 = { # Search for a Protoshliti-trained warrior
+	type = character_event
+	content_source = dlc_gh
+	title = protoshliti.0001.t
+	desc = protoshliti.0001.desc
+	theme = martial
+	left_portrait = scope:excellent_protoshliti_warrior_option
+	right_portrait = scope:normal_protoshliti_warrior_1_option
+	lower_center_portrait = scope:normal_protoshliti_warrior_2_option
+
+	immediate = {
+		create_character = { # Valedictorian
+			location = root.capital_province
+			template = pool_repopulate_prowess
+			prowess = medium_skill_rating
+			random_traits = yes
+			gender_female_chance = root_faith_dominant_gender_adjusted_female_chance
+			culture = root.culture
+			faith = root.faith
+			dynasty = none
+			random_traits_list = {
+				count = { 0 1 }
+				strong = {}
+				physique_good_2 = {}
+				wrathful = {}
+				brave = {}
+				diligent = {}
+				vengeful = {}
+				sadistic = {}
+			}
+			age = { 20 35 }
+			after_creation = {
+				add_trait = lifestyle_blademaster
+				add_random_tiered_trait_xp_effect = {
+					TRAIT = lifestyle_blademaster
+					LEVEL_1 = yes
+					LEVEL_3 = yes
+				}
+			}
+			save_scope_as = excellent_protoshliti_warrior_option
+		}
+		create_character = { # Graduate 1
+			location = root.capital_province
+			template = pool_repopulate_prowess
+			prowess = medium_skill_rating
+			random_traits = yes
+			gender_female_chance = root_faith_dominant_gender_adjusted_female_chance
+			culture = root.culture
+			faith = root.faith
+			dynasty = none
+			random_traits_list = {
+				count = { 0 1 }
+				physique_good_1 = {}
+				wrathful = {}
+				brave = {}
+				diligent = {}
+			}
+			age = { 20 35 }
+			after_creation = {
+				add_trait = lifestyle_blademaster
+				add_random_tiered_trait_xp_effect = {
+					TRAIT = lifestyle_blademaster
+					LEVEL_1 = yes
+					LEVEL_3 = no
+				}
+			}
+			save_scope_as = normal_protoshliti_warrior_1_option
+		}
+		create_character = { # Graduate 2
+			location = root.capital_province
+			template = pool_repopulate_prowess
+			prowess = medium_skill_rating
+			random_traits = yes
+			gender_female_chance = root_faith_dominant_gender_adjusted_female_chance
+			culture = root.culture
+			faith = root.faith
+			dynasty = none
+			random_traits_list = {
+				lifestyle_blademaster = { weight = { base = 50 } }
+			}
+			random_traits_list = {
+				count = { 0 1 }
+				physique_good_1 = {}
+				vengeful = {}
+				sadistic = {}
+				diligent = {}
+			}
+			age = { 20 35 }
+			after_creation = {
+				add_trait = lifestyle_blademaster
+				add_random_tiered_trait_xp_effect = {
+					TRAIT = lifestyle_blademaster
+					LEVEL_1 = yes
+					LEVEL_3 = no
+				}
+			}
+			save_scope_as = normal_protoshliti_warrior_2_option
+		}
+	}
+
+	option = { # Valedictorian
+		name = protoshliti.0001.a
+		pay_short_term_gold = {
+			target = scope:excellent_protoshliti_warrior_option
+			gold = 500
+		}
+		add_courtier = scope:excellent_protoshliti_warrior_option
+		reverse_add_opinion = {
+			target = scope:excellent_protoshliti_warrior_option
+			modifier = hired_me_opinion
+		}
+		scope:normal_protoshliti_warrior_1_option = { silent_disappearance_effect = yes }
+		scope:normal_protoshliti_warrior_2_option = { silent_disappearance_effect = yes }
+		ai_chance = {
+			base = 100
+			modifier = {
+				short_term_gold < 500
+				factor = 0
+			}
+		}
+	}
+
+	option = { # Graduate 1
+		name = protoshliti.0001.b
+		pay_short_term_gold = {
+			target = scope:normal_protoshliti_warrior_1_option
+			gold = 300
+		}
+		add_courtier = scope:normal_protoshliti_warrior_1_option
+		reverse_add_opinion = {
+			target = scope:normal_protoshliti_warrior_1_option
+			modifier = hired_me_opinion
+		}
+		scope:excellent_protoshliti_warrior_option = { silent_disappearance_effect = yes }
+		scope:normal_protoshliti_warrior_2_option = { silent_disappearance_effect = yes }
+		ai_chance = {
+			base = 50
+			modifier = {
+				short_term_gold < medium_gold_value
+				factor = 0
+			}
+		}
+	}
+
+	option = { # Graduate 2
+		name = protoshliti.0001.c
+		pay_short_term_gold = {
+			target = scope:normal_protoshliti_warrior_2_option
+			gold = 300
+		}
+		add_courtier = scope:normal_protoshliti_warrior_2_option
+		reverse_add_opinion = {
+			target = scope:normal_protoshliti_warrior_2_option
+			modifier = hired_me_opinion
+		}
+		scope:excellent_protoshliti_warrior_option = { silent_disappearance_effect = yes }
+		scope:normal_protoshliti_warrior_1_option = { silent_disappearance_effect = yes }
+		ai_chance = {
+			base = 20
+		}
+	}
+
+	option = { # I'm not really into searching for warriors right now
+		name = protoshliti.0001.d
+		remove_decision_cooldown = hire_protoshliti_warrior_decision
+		scope:excellent_protoshliti_warrior_option = { silent_disappearance_effect = yes }
+		scope:normal_protoshliti_warrior_1_option = { silent_disappearance_effect = yes }
+		scope:normal_protoshliti_warrior_2_option = { silent_disappearance_effect = yes }
+		ai_chance = {
+			base = 20
+		}
+	}
+}
+
+##################################################
+# Recruit Protoshliti-Trained Legon
+# by ScionEol
+##################################################
+
+protoshliti.0002 = { # Search for a Protoshliti-trained Legon
+	type = character_event
+	content_source = dlc_gh
+	title = protoshliti.0002.t
+	desc = protoshliti.0002.desc
+	theme = martial
+	left_portrait = scope:battle_protoshliti_legon_option
+	right_portrait = scope:devious_protoshliti_legon_option
+	lower_center_portrait = scope:logistics_protoshliti_legon_option
+
+	immediate = {
+		create_character = { # Battle Legon
+			location = root.capital_province
+			template = pool_repopulate_martial
+			martial = decent_skill_rating
+			random_traits = yes
+			gender_female_chance = root_faith_dominant_gender_adjusted_female_chance
+			culture = root.culture
+			faith = root.faith
+			dynasty = none
+			random_traits_list = {
+				education_martial_3 = { weight = { base = 60 } }
+				education_martial_2 = { weight = { base = 30 } }
+				education_martial_4 = { weight = { base = 10 } }
+			}
+			random_traits_list = {
+				count = { 1 2 }
+				aggressive_attacker = { weight = { base = 25 } }
+				open_terrain_expert = { weight = { base = 25 } }
+				rough_terrain_expert = { weight = { base = 25 } }
+				holy_warrior = { weight = { base = 25 } }
+			}
+			random_traits_list = {
+				count = { 1 2 }
+				wrathful = {}
+				brave = {}
+				diligent = {}
+				ambitious = {}
+			}
+			random_traits_list = {
+				count = { 0 1 }
+				strategist = {}
+				physique_good_2 = {}
+				intellect_good_2 = {}
+				shrewd = {}
+			}
+			trait = gh_legon
+			age = { 30 45 }
+			after_creation = {
+				add_trait = lifestyle_blademaster
+				add_random_tiered_trait_xp_effect = {
+					TRAIT = lifestyle_blademaster
+					LEVEL_1 = yes
+					LEVEL_3 = yes
+				}
+			}
+			save_scope_as = battle_protoshliti_legon_option
+		}
+		create_character = { # Devious Legon
+			location = root.capital_province
+			template = pool_repopulate_martial
+			martial = decent_skill_rating
+			random_traits = yes
+			gender_female_chance = root_faith_dominant_gender_adjusted_female_chance
+			culture = root.culture
+			faith = root.faith
+			dynasty = none
+			random_traits_list = {
+				education_martial_3 = { weight = { base = 60 } }
+				education_martial_2 = { weight = { base = 30 } }
+				education_martial_4 = { weight = { base = 10 } }
+			}
+			random_traits_list = {
+				count = { 1 2 }
+				flexible_leader = { weight = { base = 25 } }
+				organizer = { weight = { base = 25 } }
+				forest_fighter = { weight = { base = 25 } }
+				forder = { weight = { base = 25 } }
+			}
+			random_traits_list = {
+				count = { 1 2 }
+				deceitful = {}
+				sadistic = {}
+				diligent = {}
+				ambitious = {}
+			}
+			random_traits_list = {
+				count = { 0 1 }
+				strategist = {}
+				physique_good_2 = {}
+				intellect_good_2 = {}
+				shrewd = {}
+			}
+			trait = gh_legon
+			age = { 30 45 }
+			after_creation = {
+				add_trait = lifestyle_blademaster
+				add_random_tiered_trait_xp_effect = {
+					TRAIT = lifestyle_blademaster
+					LEVEL_1 = yes
+					LEVEL_3 = yes
+				}
+			}
+			save_scope_as = devious_protoshliti_legon_option
+		}
+		create_character = { # Logistics Legon
+			location = root.capital_province
+			template = pool_repopulate_martial
+			martial = decent_skill_rating
+			random_traits = yes
+			gender_female_chance = root_faith_dominant_gender_adjusted_female_chance
+			culture = root.culture
+			faith = root.faith
+			dynasty = none
+			random_traits_list = {
+				education_martial_3 = { weight = { base = 60 } }
+				education_martial_2 = { weight = { base = 30 } }
+				education_martial_4 = { weight = { base = 10 } }
+			}
+			random_traits_list = {
+				count = { 1 2 }
+				logistician = { weight = { base = 25 } }
+				military_engineer = { weight = { base = 25 } }
+				cautious_leader = { weight = { base = 25 } }
+				unyielding_defender = { weight = { base = 25 } }
+			}
+			random_traits_list = {
+				count = { 1 2 }
+				patient = {}
+				calm = {}
+				diligent = {}
+				ambitious = {}
+			}
+			random_traits_list = {
+				count = { 0 1 }
+				strategist = {}
+				physique_good_2 = {}
+				intellect_good_2 = {}
+				shrewd = {}
+			}
+			trait = gh_legon
+			age = { 30 45 }
+			after_creation = {
+				add_trait = lifestyle_blademaster
+				add_random_tiered_trait_xp_effect = {
+					TRAIT = lifestyle_blademaster
+					LEVEL_1 = yes
+					LEVEL_3 = yes
+				}
+			}
+			save_scope_as = logistics_protoshliti_legon_option
+		}
+	}
+
+	option = { # Battle Legon
+		name = protoshliti.0002.a
+		pay_short_term_gold = {
+			target = scope:battle_protoshliti_legon_option
+			gold = 1000
+		}
+		add_courtier = scope:battle_protoshliti_legon_option
+		reverse_add_opinion = {
+			target = scope:battle_protoshliti_legon_option
+			modifier = hired_me_opinion
+		}
+		scope:devious_protoshliti_legon_option = { silent_disappearance_effect = yes }
+		scope:logistics_protoshliti_legon_option = { silent_disappearance_effect = yes }
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = { # Devious Legon
+		name = protoshliti.0002.b
+		pay_short_term_gold = {
+			target = scope:devious_protoshliti_legon_option
+			gold = 1000
+		}
+		add_courtier = scope:devious_protoshliti_legon_option
+		reverse_add_opinion = {
+			target = scope:devious_protoshliti_legon_option
+			modifier = hired_me_opinion
+		}
+		scope:battle_protoshliti_legon_option = { silent_disappearance_effect = yes }
+		scope:logistics_protoshliti_legon_option = { silent_disappearance_effect = yes }
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = { # Logistics Legon
+		name = protoshliti.0002.c
+		pay_short_term_gold = {
+			target = scope:logistics_protoshliti_legon_option
+			gold = 1000
+		}
+		add_courtier = scope:logistics_protoshliti_legon_option
+		reverse_add_opinion = {
+			target = scope:logistics_protoshliti_legon_option
+			modifier = hired_me_opinion
+		}
+		scope:battle_protoshliti_legon_option = { silent_disappearance_effect = yes }
+		scope:devious_protoshliti_legon_option = { silent_disappearance_effect = yes }
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = { # I'm not really into searching for warriors right now
+		name = protoshliti.0002.d
+		remove_decision_cooldown = hire_protoshliti_legon_decision
+		scope:battle_protoshliti_legon_option = { silent_disappearance_effect = yes }
+		scope:devious_protoshliti_legon_option = { silent_disappearance_effect = yes }
+		scope:logistics_protoshliti_legon_option = { silent_disappearance_effect = yes }
+		ai_chance = {
+			base = 50
+		}
+	}
+}

@@ -1,0 +1,951 @@
+﻿##################################################
+##			Partic Flavour Events				##
+#
+# gh_partic_events.0001 - Post battle, if mortally wounded/limb lost, it's mysteriously healed with a wooden prosthetic (Custom trait?)
+#
+# Partic Secrets Event Chain
+# gh_partic_events.0101 - Secrets to be Shared
+# 	gh_partic_events.0102 - Secrets to be Shared: Approached
+# 		gh_partic_events.0103 - Secrets to be Shared: Arcane Insights
+# 		gh_partic_events.0104 - Secrets to be Shared: Tales of Our People
+# 			gh_partic_events.0105 - Tales of the Partic: The Severing of the Vales
+# 			gh_partic_events.0106 - Tales of the Partic: Circles of the Greensea
+# 			gh_partic_events.0107 - Tales of the Partic: The Arch-Council
+# gh_partic_events.0108 - To Pry into the Partic
+# 	gh_partic_events.0109 - Secrets to be Shared: Approached Outsider Vers.
+##################################################
+
+namespace = gh_partic_events
+
+##################################################
+
+#gh_partic_events.0001 = { Will come back to this
+#	title = gh_partic_events.0001.t
+#	desc = gh_partic_events.0001.desc
+#	type = character_event
+#	content_source = dlc_gh
+#	theme = realm
+#
+#}
+
+##################################################
+#
+# Partic Secrets Event Chain
+#
+# Either player Partic, or player who's friends with Partic
+# Is prompted to share/ask for secrets of the Partic
+# Options include:
+# Magical Spells/Arcana buff
+# Learning about fleeing from the fog
+# Learning about the structure of Partic society
+# Learning about the beliefs/arcane of the Partic
+# Forgoing knowledge gain for opinion/closer relationship
+#
+# gh_partic_events.0101 - gh_partic_events.0110
+#
+# by MaxxxEC
+
+gh_partic_events.0101 = { # Secrets to be Shared
+	title = gh_partic_events.0101.t
+	desc = gh_partic_events.0101.desc
+	type = character_event
+	content_source = dlc_gh
+	theme = education
+
+	right_portrait = {
+		character = scope:outsider
+		animation = personality_honorable
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	trigger = {
+		NOT = { has_character_flag = had_event_gh_partic_events_0101 }
+		OR = {
+			culture = { has_cultural_pillar = heritage_partic }
+			faith.religion = religion:partic_religion
+		}
+		any_relation = {
+			type = friend
+			type = lover
+			type = ward
+			NOT = {
+				has_character_flag = had_event_gh_partic_events_0101
+				culture = { has_cultural_pillar = heritage_partic }
+				faith.religion = religion:partic_religion
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+	}
+
+	immediate = {
+		save_scope_as = partic_sharer
+		add_character_flag = had_event_gh_partic_events_0101
+		random_relation = {
+			type = friend
+			type = lover
+			type = ward
+			limit = {
+				NOT = {
+					has_character_flag = had_event_gh_partic_events_0101
+					culture = { has_cultural_pillar = heritage_partic }
+					faith.religion = religion:partic_religion
+				}
+			}
+			save_scope_as = outsider
+		}
+		scope:outsider = {
+			add_character_flag = {
+				flag = had_event_gh_partic_events_0101
+			}
+		}
+	}
+
+	option = { # Offer knowledge to your friend/lover/ward
+		name = gh_partic_events.0101.a
+		custom_tooltip = gh_partic_events.0101.a.tt
+		add_piety = medium_piety_loss
+		add_character_modifier = {
+			modifier = partic_secrets_revealed_modifier
+			years = 10
+		}
+		hidden_effect = {
+			scope:outsider = {
+				trigger_event = {
+					id = gh_partic_events.0102
+					days = { 3 5 }
+				}
+			}
+		}
+		stress_impact = {
+			zealous = minor_stress_impact_gain
+			compassionate = minor_stress_impact_loss
+			generous = minor_stress_impact_loss
+			trusting = miniscule_stress_impact_loss
+			cynical = minor_stress_impact_loss
+			paranoid = minor_stress_impact_gain
+			shy = miniscule_stress_impact_gain
+			confider = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 150
+			ai_value_modifier = {
+				ai_greed = -0.2
+				ai_zeal = -0.2
+				ai_compassion = 0.5
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					has_trait = compassionate
+					has_trait = cynical
+					has_trait = generous
+				}
+			}
+		}
+	}
+
+	option = { # No lmao
+		name = gh_partic_events.0101.b
+		add_piety = medium_piety_gain
+		stress_impact = {
+			zealous = minor_stress_impact_loss
+			generous = minor_stress_impact_gain
+			trusting = miniscule_stress_impact_gain
+			cynical = minor_stress_impact_gain
+			paranoid = minor_stress_impact_loss
+			shy = miniscule_stress_impact_loss
+			confider = medium_stress_impact_gain
+		}
+		scope:outsider = {
+			remove_character_flag = had_event_gh_partic_events_0101
+		}
+		ai_chance = {
+			base = 10
+			ai_value_modifier = {
+				ai_greed = 0.2
+				ai_zeal = 0.2
+				ai_compassion = -0.2
+			}
+			modifier = {
+				factor = 1.5
+				NOR = {
+					has_trait = compassionate
+					has_trait = cynical
+					has_trait = generous
+				}
+			}
+		}
+	}
+}
+
+gh_partic_events.0102 = { # Secrets to be Shared: Approached
+	title = gh_partic_events.0102.t
+	desc = gh_partic_events.0102.desc
+	type = character_event
+	content_source = dlc_gh
+	theme = education
+
+	right_portrait = {
+		character = scope:partic_sharer
+		animation = personality_bold
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	weight_multiplier = {
+		base = 1
+	}
+
+	option = { # Learn arcane/spells
+		name = gh_partic_events.0102.a
+		custom_tooltip = gh_partic_events.0102.a.tt
+		scope:partic_sharer = {
+			trigger_event = {
+				id = gh_partic_events.0103
+				days = { 3 5 }
+			}
+		}
+		stress_impact = {
+			curious = minor_stress_impact_loss
+			pensive = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = -0.2
+				ai_zeal = -0.2
+				ai_compassion = 0.5
+			}
+			modifier = {
+				factor = 3
+				can_access_magic = yes
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					can_access_magic = yes
+					scope:partic_sharer = { can_access_magic = yes }
+				}
+			}
+			scope:partic_sharer = {
+				random_in_list = {
+					variable = known_magic_school_list
+					save_scope_as = magic_school_to_learn_from_partic
+				}
+			}
+			learn_magic_knowledge_from_character_and_magic_school_effect = { 
+				MENTOR = scope:partic_sharer 
+				MAGIC_SCHOOL = scope:magic_school_to_learn_from_partic
+				MIN_SPELLS = 1
+				MAX_SPELLS = 3
+				MAX_SPELL_LEVEL = 3
+			}
+		}
+		random_list = {
+			10 = {
+				modifier = {
+					learning >= 20
+					add = 20
+				}
+				add_arcana_skill = { VALUE = 4 }
+				add_arcana_lifestyle_perk_points = 1
+			}
+			10 = {
+				modifier = {
+					learning >= 15
+					learning < 20
+					add = 20
+				}
+				add_arcana_skill = { VALUE = 2 }
+			}
+			10 = {
+				modifier = {
+					learning >= 10
+					learning < 15
+					add = 20
+				}
+				add_arcana_skill = { VALUE = 1 }
+			}
+		}
+	}
+
+	option = { # Learn lore
+		name = gh_partic_events.0102.b
+		custom_tooltip = gh_partic_events.0102.b.tt
+		scope:partic_sharer = {
+			trigger_event = {
+				id = gh_partic_events.0104
+				days = { 3 5 }
+			}
+		}
+		stress_impact = {
+			curious = minor_stress_impact_loss
+			pensive = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = -0.2
+				ai_zeal = -0.2
+				ai_compassion = 0.5
+			}
+			modifier = {
+				factor = 3
+				can_access_magic = no
+			}
+		}
+		random_list = {
+			10 = {
+				custom_tooltip = gh_partic_events.0102.ba.tt
+				show_as_tooltip = {
+					add_character_modifier = {
+						modifier = partic_secrets_severing_modifier
+						years = 15
+					}
+				}
+			}
+			10 = {
+				custom_tooltip = gh_partic_events.0102.bb.tt
+				show_as_tooltip = {
+					add_character_modifier = {
+						modifier = partic_secrets_circles_modifier
+						years = 15
+					}
+				}
+			}
+			10 = {
+				custom_tooltip = gh_partic_events.0102.bc.tt
+				show_as_tooltip = {
+					add_character_modifier = {
+						modifier = partic_secrets_council_modifier
+						years = 15
+					}
+				}
+			}
+		}
+	}
+
+	option = { # Refuse their knowledge
+		name = gh_partic_events.0102.c
+		scope:partic_sharer = {
+			send_interface_toast = {
+				type = event_toast_effect_neutral
+				title = gh_partic_events.0102.refusedtoast.particsharer
+				left_icon = scope:outsider
+			}
+			add_opinion = {
+				modifier = trust_opinion
+				opinion = 30
+				target = root
+			}
+		}
+		add_prestige = medium_prestige_gain
+		stress_impact = {
+			curious = minor_stress_impact_gain
+			pensive = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 10
+			ai_value_modifier = {
+				ai_greed = -0.2
+				ai_compassion = 0.1
+			}
+			modifier = {
+				factor = -1.5
+				OR = {
+					has_trait = magic_good
+					has_trait = education_arcana
+					has_trait = greedy
+					has_trait = ambitious
+					has_trait = curious
+					has_trait = pensive
+				}
+			}
+		}
+	}
+}
+
+gh_partic_events.0103 = { # Secrets to be Shared: Arcane Insights
+	title = gh_partic_events.0103.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					can_access_magic = yes
+				}
+				desc = gh_partic_events.0103.desc.a
+			}
+			desc = gh_partic_events.0103.desc.b
+		}
+	}
+
+	type = character_event
+	content_source = dlc_gh
+	theme = education
+
+	right_portrait = {
+		character = scope:outsider
+		animation = interested
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	weight_multiplier = {
+		base = 1
+	}
+
+	option = { # Have a chill time
+		name = gh_partic_events.0103.a
+		add_prestige = medium_prestige_gain
+		if = {
+			limit = { NOT = { has_trait = confider } }
+			random_list = {
+				1 = { add_trait = confider }
+				9 = {}
+			}
+		}
+		if = {
+			limit = {
+				scope:outsider = {
+					has_trait = education_martial
+				}
+			}
+			random_list = {
+				1 = { add_martial_lifestyle_xp = massive_lifestyle_xp }
+				1 = { add_martial_lifestyle_xp = major_lifestyle_xp }
+				1 = { add_martial_lifestyle_xp = medium_lifestyle_xp }
+			}
+		}
+		else_if = {
+			limit = {
+				scope:outsider = {
+					has_trait = education_diplomacy
+				}
+			}
+			random_list = {
+				1 = { add_diplomacy_lifestyle_xp = massive_lifestyle_xp }
+				1 = { add_diplomacy_lifestyle_xp = major_lifestyle_xp }
+				1 = { add_diplomacy_lifestyle_xp = medium_lifestyle_xp }
+			}
+		}
+		else_if = {
+			limit = {
+				scope:outsider = {
+					has_trait = education_stewardship
+				}
+			}
+			random_list = {
+				1 = { add_stewardship_lifestyle_xp = massive_lifestyle_xp }
+				1 = { add_stewardship_lifestyle_xp = major_lifestyle_xp }
+				1 = { add_stewardship_lifestyle_xp = medium_lifestyle_xp }
+			}
+		}
+		else_if = {
+			limit = {
+				scope:outsider = {
+					has_trait = education_intrigue
+				}
+			}
+			random_list = {
+				1 = { add_intrigue_lifestyle_xp = massive_lifestyle_xp }
+				1 = { add_intrigue_lifestyle_xp = major_lifestyle_xp }
+				1 = { add_intrigue_lifestyle_xp = medium_lifestyle_xp }
+			}
+		}
+		else_if = {
+			limit = {
+				scope:outsider = {
+					has_trait = education_learning
+				}
+			}
+			random_list = {
+				1 = { add_learning_lifestyle_xp = massive_lifestyle_xp }
+				1 = { add_learning_lifestyle_xp = major_lifestyle_xp }
+				1 = { add_learning_lifestyle_xp = medium_lifestyle_xp }
+			}
+		}
+		else_if = {
+			limit = {
+				scope:outsider = {
+					has_trait = education_arcana
+				}
+			}
+			random_list = {
+				1 = { add_arcana_lifestyle_xp = massive_lifestyle_xp }
+				1 = { add_arcana_lifestyle_xp = major_lifestyle_xp }
+				1 = { add_arcana_lifestyle_xp = medium_lifestyle_xp }
+			}
+		}
+		scope:outsider = {
+			add_opinion = {
+				modifier = trust_opinion
+				opinion = 30
+				target = root
+			}
+		}
+	}
+}
+
+gh_partic_events.0104 = { # Secrets to be Shared: Tales of Our People
+	title = gh_partic_events.0104.t
+	desc = gh_partic_events.0104.desc
+	type = character_event
+	content_source = dlc_gh
+	theme = education
+
+	right_portrait = {
+		character = scope:outsider
+		animation = interested
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	weight_multiplier = {
+		base = 1
+	}
+
+	immediate = {
+		add_prestige = medium_prestige_gain
+	}
+
+	option = { # Tell of the Severing of the Vales
+		name = gh_partic_events.0104.a
+		custom_tooltip = gh_partic_events.0104.a.tt
+		scope:outsider = {
+			trigger_event = {
+				id = gh_partic_events.0105
+				days = { 3 5 }
+			}
+			show_as_tooltip = {
+				scope:outsider = {
+					add_character_modifier = {
+						modifier = partic_secrets_severing_modifier
+						years = 15
+					}
+				}
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+
+	option = { # Tell of the Circles of the Greensea
+		name = gh_partic_events.0104.b
+		custom_tooltip = gh_partic_events.0104.b.tt
+		scope:outsider = {
+			trigger_event = {
+				id = gh_partic_events.0106
+				days = { 3 5 }
+			}
+			show_as_tooltip = {
+				scope:outsider = {
+					add_character_modifier = {
+						modifier = partic_secrets_circles_modifier
+						years = 15
+					}
+				}
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+
+	option = { # Tell of the Arch-Council
+		name = gh_partic_events.0104.c
+		custom_tooltip = gh_partic_events.0104.c.tt
+		scope:outsider = {
+			trigger_event = {
+				id = gh_partic_events.0107
+				days = { 3 5 }
+			}
+			show_as_tooltip = {
+				scope:outsider = {
+					add_character_modifier = {
+						modifier = partic_secrets_council_modifier
+						years = 15
+					}
+				}
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+gh_partic_events.0105 = { # Tales of the Partic: The Severing of the Vales
+	title = gh_partic_events.0105.t
+	desc = gh_partic_events.0105.desc
+	type = character_event
+	content_source = dlc_gh
+	theme = education
+
+	right_portrait = {
+		character = scope:partic_sharer
+		animation = personality_rational
+	}
+
+	left_portrait = {
+		character = root
+		animation = interested
+	}
+
+	weight_multiplier = {
+		base = 1
+	}
+
+	option = { 
+		name = gh_partic_events.0105.a
+		add_character_modifier = {
+			modifier = partic_secrets_severing_modifier
+			years = 15
+		}
+		scope:partic_sharer = {
+			send_interface_toast = {
+				type = event_toast_effect_good
+				title = gh_partic_events.0105.yaytoast.particsharer
+				left_icon = scope:outsider
+				scope:outsider = {
+					add_opinion = {
+						modifier = trust_opinion
+						opinion = 30
+						target = prev
+					}
+				}
+			}
+		}
+	}
+}
+
+gh_partic_events.0106 = { # Tales of the Partic: Circles of the Greensea
+	title = gh_partic_events.0106.t
+	desc = gh_partic_events.0106.desc
+	type = character_event
+	content_source = dlc_gh
+	theme = education
+
+	right_portrait = {
+		character = scope:partic_sharer
+		animation = personality_rational
+	}
+
+	left_portrait = {
+		character = root
+		animation = interested
+	}
+
+	weight_multiplier = {
+		base = 1
+	}
+
+	option = { 
+		name = gh_partic_events.0106.a
+		add_character_modifier = {
+			modifier = partic_secrets_circles_modifier
+			years = 15
+		}
+		scope:partic_sharer = {
+			send_interface_toast = {
+				type = event_toast_effect_good
+				title = gh_partic_events.0105.yaytoast.particsharer
+				left_icon = scope:outsider
+				scope:outsider = {
+					add_opinion = {
+						modifier = trust_opinion
+						opinion = 30
+						target = prev
+					}
+				}
+			}
+		}
+	}
+}
+
+gh_partic_events.0107 = { # Tales of the Partic: The Arch-Council
+	title = gh_partic_events.0107.t
+	desc = gh_partic_events.0107.desc
+	type = character_event
+	content_source = dlc_gh
+	theme = education
+
+	right_portrait = {
+		character = scope:partic_sharer
+		animation = personality_rational
+	}
+
+	left_portrait = {
+		character = root
+		animation = interested
+	}
+
+	weight_multiplier = {
+		base = 1
+	}
+
+	option = { 
+		name = gh_partic_events.0107.a
+		add_character_modifier = {
+			modifier = partic_secrets_council_modifier
+			years = 15
+		}
+		scope:partic_sharer = {
+			send_interface_toast = {
+				type = event_toast_effect_good
+				title = gh_partic_events.0105.yaytoast.particsharer
+				left_icon = scope:outsider
+				scope:outsider = {
+					add_opinion = {
+						modifier = trust_opinion
+						opinion = 30
+						target = prev
+					}
+				}
+			}
+		}
+	}
+}
+
+gh_partic_events.0108 = { # To Pry into the Partic
+	title = gh_partic_events.0108.t
+	desc = gh_partic_events.0108.desc
+	type = character_event
+	content_source = dlc_gh
+	theme = education
+
+	right_portrait = {
+		character = scope:partic_sharer
+		animation = personality_honorable
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	trigger = {
+		NOT = {
+			has_character_flag = had_event_gh_partic_events_0101
+			culture = { has_cultural_pillar = heritage_partic }
+			faith.religion = religion:partic_religion
+		}
+		any_relation = {
+			type = friend
+			type = lover
+			NOT = {
+				has_character_flag = had_event_gh_partic_events_0101
+			}
+			OR = {
+				culture = { has_cultural_pillar = heritage_partic }
+				faith.religion = religion:partic_religion
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+	}
+
+	immediate = {
+		save_scope_as = outsider
+		add_character_flag = had_event_gh_partic_events_0101
+		random_relation = {
+			type = friend
+			type = lover
+			limit = {
+				NOT = { has_character_flag = had_event_gh_partic_events_0101 }
+				OR = {
+					culture = { has_cultural_pillar = heritage_partic }
+					faith.religion = religion:partic_religion
+				}
+			}
+			save_scope_as = partic_sharer
+		}
+		scope:partic_sharer = {
+			add_character_flag = had_event_gh_partic_events_0101
+		}
+	}
+
+	option = { # Try to pry knowledge from your friend/lover
+		name = gh_partic_events.0108.a
+		custom_tooltip = gh_partic_events.0108.a.tt
+		scope:partic_sharer = {
+			trigger_event = {
+				id = gh_partic_events.0109
+				days = { 3 5 }
+			}
+		}
+		stress_impact = {
+			shy = miniscule_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = 0.2
+				ai_zeal = 0.2
+				ai_compassion = -0.2
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					has_trait = greedy
+					can_access_magic = yes
+				}
+			}
+		}
+	}
+
+	option = { # Don't pry
+		name = gh_partic_events.0108.b
+		add_prestige = medium_prestige_gain
+		stress_impact = {
+			content = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 10
+			ai_value_modifier = {
+				ai_greed = -0.2
+				ai_zeal = -0.2
+				ai_compassion = 0.2
+			}
+			modifier = {
+				factor = -2
+				OR = {
+					has_trait = greedy
+					can_access_magic = yes
+				}
+			}
+		}
+		scope:partic_sharer = {
+			add_opinion = {
+				modifier = trust_opinion
+				opinion = 30
+				target = root
+			}
+			remove_character_flag = had_event_gh_partic_events_0101
+		}
+	}
+}
+
+gh_partic_events.0109 = { # Secrets to be Shared/Approached by Outsider
+	title = gh_partic_events.0109.t
+	desc = gh_partic_events.0109.desc
+	type = character_event
+	content_source = dlc_gh
+	theme = education
+
+	right_portrait = {
+		character = scope:outsider
+		animation = personality_honorable
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	option = { # Offer knowledge to your friend/lover
+		name = gh_partic_events.0101.a
+		custom_tooltip = gh_partic_events.0101.a.tt
+		add_piety = medium_piety_loss
+		add_character_modifier = {
+			modifier = partic_secrets_revealed_modifier
+			years = 10
+		}
+		hidden_effect = {
+			scope:outsider = {
+				trigger_event = {
+					id = gh_partic_events.0102
+					days = { 3 5 }
+				}
+			}
+		}
+		stress_impact = {
+			zealous = minor_stress_impact_gain
+			compassionate = minor_stress_impact_loss
+			generous = minor_stress_impact_loss
+			trusting = miniscule_stress_impact_loss
+			cynical = minor_stress_impact_loss
+			paranoid = minor_stress_impact_gain
+			shy = miniscule_stress_impact_gain
+			confider = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = -0.2
+				ai_zeal = -0.2
+				ai_compassion = 0.5
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					has_trait = compassionate
+					has_trait = cynical
+					has_trait = generous
+				}
+			}
+		}
+	}
+
+	option = { # No lmao
+		name = gh_partic_events.0101.b
+		add_piety = medium_piety_gain
+		scope:outsider = {
+			remove_character_flag = had_event_gh_partic_events_0101
+			send_interface_toast = {
+				type = event_toast_effect_neutral
+				title = gh_partic_events.0102.refused.outsider
+				left_icon = scope:partic
+			}
+			add_opinion = {
+				modifier = trust_opinion
+				opinion = -20
+				target = root
+			}
+		}
+		stress_impact = {
+			zealous = minor_stress_impact_loss
+			generous = minor_stress_impact_gain
+			trusting = miniscule_stress_impact_gain
+			cynical = minor_stress_impact_gain
+			paranoid = minor_stress_impact_loss
+			shy = miniscule_stress_impact_loss
+			confider = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 10
+			ai_value_modifier = {
+				ai_greed = 0.2
+				ai_zeal = 0.2
+				ai_compassion = -0.2
+			}
+			modifier = {
+				factor = 1.5
+				NOR = {
+					has_trait = compassionate
+					has_trait = cynical
+					has_trait = generous
+				}
+			}
+		}
+	}
+}

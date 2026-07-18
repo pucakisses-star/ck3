@@ -1,0 +1,277 @@
+﻿namespace = world_story
+
+world_story.0001 = { #The Fall of Oraispol
+	title = world_story.0001.t
+	type = character_event
+	content_source = dlc_gh
+	theme = battle
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					culture = { has_cultural_pillar = heritage_aversarian }
+				}
+				desc = world_story.0001.desc # Aversarian
+			}
+			triggered_desc = {
+				trigger = {
+					culture = { has_cultural_pillar = heritage_sjalvolki }
+				}
+				desc = world_story.0001.desc.sjalvolki # Sjavolki
+			}
+			triggered_desc = {
+				trigger = {
+					culture = { has_cultural_pillar = heritage_iyrossi }
+				}
+				desc = world_story.0001.desc.iyrossi # Iyrossi
+			}
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						OR = {
+							culture = { has_cultural_pillar = heritage_aversarian }
+							culture = { has_cultural_pillar = heritage_iyrossi }
+							culture = { has_cultural_pillar = heritage_sjalvolki }
+						}
+					}
+				}
+				desc = world_story.0001.desc.generic # Generic
+			}
+		}
+	}
+	
+	right_portrait = { 
+		character = scope:oraispol_conqueror
+		animation = marshal
+	}
+
+	option = {
+		trigger = {
+			culture = { has_cultural_pillar = heritage_aversarian }
+		}
+		name = world_story.0001.a
+	}
+	option = {
+		trigger = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_iyrossi }
+				culture = { has_cultural_pillar = heritage_sjalvolki }
+			}
+		}
+		name = world_story.0001.b
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					culture = { has_cultural_pillar = heritage_aversarian }
+					culture = { has_cultural_pillar = heritage_iyrossi }
+					culture = { has_cultural_pillar = heritage_sjalvolki }
+				}
+			}
+		}
+		name = world_story.0001.c
+	}
+}
+
+# Lonely Note: Remove direct character links
+world_story.0002 = { # Cenware dies
+	title = world_story.0002.t
+	desc = world_story.0002.desc
+	type = character_event
+	content_source = dlc_gh
+	theme = death
+	
+	left_portrait = {
+		character = root
+		animation = disbelief
+	}
+	
+	right_portrait = {
+		character = character:daukeni_sjalvolki_1
+		animation = idle
+	}
+	
+	option = {
+		name = world_story.0002.a
+	}
+}
+
+world_story.0003 = { # Cenware dies - vassal
+	title = world_story.0003.t
+	desc = world_story.0003.desc
+	type = character_event
+	content_source = dlc_gh
+	theme = death
+	
+	left_portrait = {
+		character = root
+		animation = disbelief
+	}
+	
+	right_portrait = {
+		character = character:daukeni_sjalvolki_1
+		animation = idle
+	}
+	
+	option = {
+		name = world_story.0003.a
+	}
+}
+	
+
+world_story.0100 = { # Niconaneus takes Oraispol
+	title = world_story.0100.t
+	#desc = world_story.0100.desc
+	type = character_event
+	content_source = dlc_gh
+	theme = battle
+	
+	desc = world_story.0100.desc
+	
+	right_portrait = { 
+		character = root
+		animation = marshal
+	}
+
+	immediate = {
+		title:c_oraispol = { save_scope_as = new_capital }
+		title:e_aversaria_voreias = { save_scope_as = aversarian_polity }
+	}
+
+	option = { # There is still much to be done
+		name = world_story.0100.a
+		add_prestige = 1500
+		add_prestige_level = 1
+		if = { # Relocate the capital
+			limit = { primary_title = title:e_aversaria_voreias }
+			title:e_aversaria_voreias = { set_capital_county = title:c_oraispol }
+			custom_tooltip = world_story.0100.tt
+		}
+	}
+}
+
+world_story.0101 = { # Niconaneus takes Bastonport
+	title = world_story.0101.t
+	#desc = world_story.0101.desc
+	type = character_event
+	content_source = dlc_gh
+	theme = battle
+	
+	desc = world_story.0101.desc
+	
+	right_portrait = { 
+		character = root
+		animation = marshal
+	}
+
+	option = {
+		name = world_story.0101.a
+		add_prestige = massive_prestige_gain
+		custom_tooltip = world_story.0101.a.tt
+		title:c_kankaanviisa = {
+			set_title_name = NICONEAPOL_NAME
+		}
+		title:b_hinterreckenberg = {
+			set_title_name = NICONEAPOL_NAME
+		}
+	}
+	option = {
+		name = world_story.0101.b
+		add_prestige = massive_piety_gain
+	}
+}
+
+world_story.0150 = {
+	title = world_story.0150.t
+	type = character_event
+	content_source = dlc_gh
+	theme = battle
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					culture = { has_cultural_pillar = heritage_marcher }
+				}
+				desc = world_story.0150.desc # Marchers
+			}
+			triggered_desc = {
+				trigger = {
+					OR = {
+						culture = { has_cultural_pillar = heritage_zarasadari }
+						culture = { has_cultural_pillar = heritage_thyssae }
+					}
+				}
+				desc = world_story.0150.desc.amsari # Amsari
+			}
+			triggered_desc = {
+				trigger = {
+					NOT = {
+						OR = {
+							culture = { has_cultural_pillar = heritage_marcher }
+							culture = { has_cultural_pillar = heritage_zarasadari }
+							culture = { has_cultural_pillar = heritage_thyssae }
+						}
+					}
+				}
+				desc = world_story.0150.desc.generic # Neutral
+			}
+		}
+	}
+	
+	right_portrait = { 
+		character = scope:tchouran_conquerer
+		animation = marshal
+	}
+
+	option = {
+		trigger = {
+			culture = { has_cultural_pillar = heritage_marcher }
+		}
+		name = world_story.0150.a
+	}
+	option = {
+		trigger = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_zarasadari }
+				culture = { has_cultural_pillar = heritage_thyssae }
+			}
+		}
+		name = world_story.0150.b
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					culture = { has_cultural_pillar = heritage_marcher }
+					culture = { has_cultural_pillar = heritage_zarasadari }
+					culture = { has_cultural_pillar = heritage_thyssae }
+				}
+			}
+		}
+		name = world_story.0150.c
+	}
+}
+
+# Old Song of Sarradon warning, removed
+#world_story.1001 = {
+#	title = world_story.1001.t
+#	theme = dread
+#	
+#	desc = world_story.1001.desc
+#	
+#	left_portrait = { 
+#		character = character:ee_2
+#		animation = happiness
+#	}
+#	right_portrait = {
+#		character = character:easternimperial_aversarinas_aagiokrata_7
+#		animation = happiness
+#	}
+#	
+#	option = {
+#		name = world_story.1001.a
+#	}
+#}

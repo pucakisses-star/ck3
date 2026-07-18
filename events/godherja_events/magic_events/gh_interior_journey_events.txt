@@ -1,0 +1,316 @@
+﻿namespace = interior_journey
+
+##################################################
+
+### General catalogue of events
+# My initial vision was that this would send you through a challenge against an internet "daimon" or shard of your personality. On first release of magic it'll just be a single event without the challenge, but you can see the directory below 
+# 0001 - Opener
+# 0011 - Brave
+# 0021 - Craven
+# 0300 - Calm
+# 1001 - Wrathful
+# 1011 - Chaste
+# 1016 - Lustful
+# 1021 - Content
+# 1026 - Ambitious
+# 1041 - Diligent
+# 1101 - Lazy
+# 1201 - Fickle
+# 2150 - Stubborn
+# 2200 - Forgiving
+# 2250 - Vengeful
+# 2300 - Generous
+# 2350 - Greedy
+# 2400 - Gregarious
+# 2420 - Shy
+# 2450 - Honest
+# 2500 - Deceitful
+# 2550 - Humble
+# 2600 - Arrogant
+# 2700 - Just
+# 2800 - Arbitrary
+# 2900 - Patient
+# 3000 - Impatient
+# 3100 - Temperate
+# 3200 - Gluttonous
+# 3300 - Trusting
+# 3400 - Paranoid
+# 3500 - Zealous
+# 3600 - Cynical
+# 3700 - Compassioante
+# 3800 - Callous
+# 3900 - Sadistic
+
+##################################################
+
+##################################################
+# Interior Journey sort out events
+# by Mayor
+# 0001 - 0010
+##################################################
+
+interior_journey.0001 = {
+	type = character_event
+	content_source = dlc_gh
+	title = interior_journey.0001.t
+	desc = interior_journey.0001.desc
+	theme = intrigue
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+	
+	option = {
+		name = interior_journey.0001.brave
+		trigger = {
+			has_trait = brave
+		}
+		
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_brave 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }	
+	}
+	option = {
+		name = interior_journey.0001.craven
+		trigger = {
+			has_trait = craven
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_craven 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.calm
+		trigger = {
+			has_trait = calm
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_calm 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.wrathful
+		trigger = {
+			has_trait = wrathful
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_wrathful 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.chaste
+		trigger = {
+			has_trait = chaste
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_chaste 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.lustful
+		trigger = {
+			has_trait = lustful
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_lustful 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.content
+		trigger = {
+			has_trait = content
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_content 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.ambitious
+		trigger = {
+			has_trait = ambitious
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_ambitious 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.diligent
+		trigger = {
+			has_trait = diligent
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_diligent 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.lazy
+		trigger = {
+			has_trait = lazy
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_lazy 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.fickle
+		trigger = {
+			has_trait = fickle
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_fickle 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.stubborn
+		trigger = {
+			has_trait = stubborn
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_stubborn 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.forgiving
+		trigger = {
+			has_trait = forgiving
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_forgiving 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.vengeful
+		trigger = {
+			has_trait = vengeful
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_vengeful 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.generous
+		trigger = {
+			has_trait = generous
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_generous 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.greedy
+		trigger = {
+			has_trait = greedy
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_greedy 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.gregarious
+		trigger = {
+			has_trait = gregarious
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_gregarious 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.shy
+		trigger = {
+			has_trait = shy
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_shy 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.honest
+		trigger = {
+			has_trait = honest
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_honest 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.deceitful
+		trigger = {
+			has_trait = deceitful
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_deceitful 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.humble
+		trigger = {
+			has_trait = humble
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_humble 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.arrogant
+		trigger = {
+			has_trait = arrogant
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_arrogant 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.just
+		trigger = {
+			has_trait = just
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_just 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.arbitrary
+		trigger = {
+			has_trait = arbitrary
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_arbitrary 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.patient
+		trigger = {
+			has_trait = patient
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_patient 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.impatient
+		trigger = {
+			has_trait = impatient
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_impatient 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.temperate
+		trigger = {
+			has_trait = temperate
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_temperate 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.gluttonous
+		trigger = {
+			has_trait = gluttonous
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_gluttonous 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.trusting
+		trigger = {
+			has_trait = trusting
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_trusting 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.paranoid
+		trigger = {
+			has_trait = paranoid
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_paranoid 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.zealous
+		trigger = {
+			has_trait = zealous
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_zealous 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.cynical
+		trigger = {
+			has_trait = cynical
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_cynical 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.compassionate
+		trigger = {
+			has_trait = compassionate
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_compassionate 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.callous
+		trigger = {
+			has_trait = callous
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_callous 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.sadistic
+		trigger = {
+			has_trait = sadistic
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_sadistic 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+	option = {
+		name = interior_journey.0001.eccentric
+		trigger = {
+			has_trait = eccentric
+		}
+		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = magic_trait_synergy_eccentric 		TYPE = character LEVEL = scope:aspect_level_value			 YEARS = 15 }
+	}
+}	

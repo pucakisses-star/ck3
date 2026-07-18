@@ -1,0 +1,730 @@
+﻿namespace = gh_health
+#1001-1100: Fools Curse
+#2001-2100: Shade-Stricken
+#5900-5999: Shade Apocalypse Miasma
+
+namespace = gh_health
+
+scripted_trigger gh_health_event_is_worried_trigger = {
+	OR = {
+		ai_compassion >= medium_positive_ai_value
+		dread_modified_ai_boldness = {
+			dreaded_character = $CHARACTER$
+			value <= medium_negative_ai_value
+		}
+		has_relation_friend = $CHARACTER$
+		has_relation_lover = $CHARACTER$
+		opinion = {
+			target = $CHARACTER$
+			value >= high_positive_opinion
+		}
+	}
+	$CHARACTER$.health < fine_health
+}
+
+#You recover from pellagra
+gh_health.1000 = {
+	type = character_event
+	title = gh_health.1000.t
+	desc = gh_health.1000.desc
+	theme = recovery
+	override_background = {
+		trigger = { is_travelling = yes }
+		reference = terrain
+	}
+	override_background = { reference = bedchamber }
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	trigger = {
+		has_trait = pellagra
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_peace_ensues"
+		recover_from_disease_effect = { DISEASE = pellagra } #Removes the trait, sends event "gh_health.2202" to those who care
+		remove_disease_treatment_effect = yes
+	}
+
+	option = {
+		name = gh_health.1000.a
+	}
+}
+
+#You contract pellagra
+gh_health.1010 = {
+	type = character_event
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { is_travelling = yes }
+				desc = gh_health.1010.travel.t
+			}
+			desc = gh_health.1010.t
+		}
+	}
+	desc = {
+		desc = gh_health.1010.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					court_physician_available_trigger = yes
+					liege_picks_treatment_trigger = no
+				}
+				desc = gh_health.1010.court_physician.desc
+			}
+			desc = gh_health.1010.end.desc
+		}
+	}
+	
+	theme = healthcare
+	override_background = {
+		trigger = { is_travelling = yes }
+		reference = terrain
+	}
+	left_portrait = {
+		character = root
+		animation = sick
+	}
+	right_portrait = {
+		trigger = {
+			trigger_if = {
+				limit = { is_travelling = yes }
+				current_travel_plan = {
+					any_entourage_character = {
+						has_court_position = court_physician_court_position
+					}
+				}
+			}
+		}
+		character = scope:physician
+		triggered_animation = {
+			trigger = { scope:physician = { gh_health_event_is_worried_trigger = { CHARACTER = root } } }
+			animation = worry
+		}
+		triggered_animation = {
+			trigger = { scope:physician = { ai_rationality >= 0 } } #Don't look rational if you're not
+			animation = personality_rational
+		}
+		animation = idle
+	}
+
+	override_background = {
+		trigger = { is_travelling = yes }
+		reference = terrain_travel
+	}
+
+	trigger = {
+		can_contract_disease_trigger = { DISEASE = pellagra }
+	}
+
+	weight_multiplier = {
+		base = 1
+
+		modifier = {
+			health <= fine_health
+			factor = 1.1
+		}
+		modifier = {
+			health <= poor_health
+			factor = 1.1
+		}
+		modifier = {
+			is_adult = no
+			factor = 1.5
+		}
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_illness"
+		save_court_physician_as_effect = { SCOPE_NAME = physician }
+		contract_disease_effect = { DISEASE = pellagra TREATMENT_EVENT = no } #Adds the trait, sends event "gh_health.2101" about contagious disease to liege/host/imprisoner, sends event "gh_health.2201" to those who care
+	}
+
+	###NO COURT PHYSICIAN OPTIONS###
+	#Find physician
+	option = {
+		trigger = {
+			court_physician_available_trigger = no
+			is_ruler = yes
+			is_travelling = no 
+		}
+		name = health.3101.e
+		find_court_physician_effect = yes
+		ai_chance = { base = 5 }
+	}
+
+	#OK
+	option = {
+		trigger = {
+			trigger_if = {
+				limit = { exists = scope:physician }
+				liege_picks_treatment_trigger = yes
+			}
+			trigger_else = {
+				always = yes
+			}
+		}
+		name = gh_health.1010.a
+		ai_chance = { base = 1 }
+	}
+	### TRAVEL- GO HOME
+	option = {
+		name = health.travel.option.home
+		flavor = health.travel.option.home.flavor
+		trigger = {
+			is_travelling = yes
+			current_travel_plan ={
+				travel_plan_owner = root
+				can_cancel = yes 
+			}
+			involved_activity ?= {
+				NOR = {
+					has_activity_type = activity_tour
+					is_required_special_guest = root
+				}
+			}
+		}
+		current_travel_plan = { cancel_travel_plan = yes }
+		ai_chance = { base = 1 }
+	}
+	###COURT PHYSICIAN OPTIONS###
+	#Safe treatment
+	option = {
+		trigger = {
+			exists = scope:physician
+			liege_picks_treatment_trigger = no
+			court_physician_available_when_traveling_trigger = yes
+		}
+		name = health.3101.a
+		safe_disease_treatment_effect = { PATIENT = root TREATMENT_PICKER = root }
+		ai_chance = { base = 10 }
+	}
+
+	#Risky treatment
+	option = {
+		trigger = {
+			exists = scope:physician
+			liege_picks_treatment_trigger = no
+			court_physician_available_when_traveling_trigger = yes
+		}
+		name = health.3101.b
+		risky_disease_treatment_effect = { PATIENT = root TREATMENT_PICKER = root }
+		ai_chance = { base = 1 }
+	}
+	
+	#Mystic treatment
+	option = {
+		trigger = {
+			court_physician_available_trigger = yes
+			liege_picks_treatment_trigger = no
+			scope:physician = { has_trait = lifestyle_mystic }
+		}
+		name = health.3101.c
+		mystic_disease_treatment_effect = { PATIENT = root TREATMENT_PICKER = root }
+		ai_chance = {
+			base = 0.5
+			modifier = {
+				add = -0.5
+				ai_zeal >= 0
+			}
+		}
+	}
+
+	#No treatment
+	option = {
+		name = {
+			text = {
+				first_valid = {
+					triggered_desc = {
+						trigger = { is_travelling = yes }
+						desc = health.travel.option.continue
+					}
+					desc = health.3101.d
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = scope:physician
+				liege_picks_treatment_trigger = no
+				court_physician_available_when_traveling_trigger = yes
+			}
+			no_disease_treatment_effect = yes
+		}
+		ai_chance = { base = 0 }
+	}
+}
+
+gh_health.1001 = {
+	type = character_event
+	content_source = dlc_gh
+	title = gh_health.1001.t
+	desc = gh_health.1001.desc
+	theme = healthcare
+	left_portrait = {
+		character = scope:cursed_fool
+		animation = sick
+	}
+
+	immediate = {
+		contract_disease_effect = { DISEASE = fools_curse TREATMENT_EVENT = no }
+		save_scope_as = cursed_fool
+
+	}
+
+	###NO COURT PHYSICIAN OPTIONS###
+	#Find physician
+	option = {
+		trigger = {
+			NOT = { exists = scope:physician }
+			is_landed = yes
+			is_travelling = no
+		}
+		name = health.3101.e
+		find_court_physician_effect = yes
+		ai_chance = { base = 5 }
+	}
+
+	#OK
+	option = {
+		trigger = {
+			exists = scope:physician
+			liege_picks_treatment_trigger = yes
+		}
+		name = health.1004.a
+		ai_chance = { base = 1 }
+	}
+	### TRAVEL- GO HOME
+	option = {
+		name = health.travel.option.home
+		flavor = health.travel.option.home.flavor
+		trigger = {
+			is_travelling = yes
+			current_travel_plan ={
+				travel_plan_owner = root
+				can_cancel = yes 
+			}
+			involved_activity ?= {
+				NOR = {
+					has_activity_type = activity_tour
+					is_required_special_guest = root
+				}
+			}
+		}
+		current_travel_plan = { cancel_travel_plan = yes }
+		ai_chance = { base = 1 }
+	}
+}
+
+# Recovered from Shade Sickness
+gh_health.2001 = {
+	type = character_event
+	title = gh_health.2001.t
+	desc = gh_health.2001.desc
+	theme = recovery
+	override_background = {
+		trigger = { is_travelling = yes }
+		reference = terrain
+	}
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	trigger = {
+		has_trait = shade_stricken
+	}
+
+
+	immediate = {
+		play_music_cue = "mx_cue_peace_ensues"
+		hidden_effect = {
+			recover_from_disease_effect = { DISEASE = shade_stricken } #Removes the trait, sends event "health.2202" to those who care & liege/host/imprisoner, adds immunity flag
+			remove_disease_treatment_effect = yes
+		}
+	}
+
+	option = {
+		name = gh_health.2001.a
+		#custom_tooltip = gh_health.2001.a.tt
+		show_as_tooltip = { #show the trait actually shows up in the tooltip
+			remove_trait_force_tooltip = shade_stricken
+		}
+	}
+}
+
+# Contracted Shade-Shrickening
+gh_health.2002 = {
+	type = character_event
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { is_travelling = yes }
+				desc = health.travel.t
+			}
+			desc = gh_health.2002.t
+		}
+	}
+	desc = {
+		desc = gh_health.2002.desc
+		triggered_desc = {
+			trigger = {
+				court_physician_available_trigger = yes
+				liege_picks_treatment_trigger = no
+			}
+			desc = gh_health.2002.court_physician.desc
+		}
+	}
+	theme = healthcare
+	override_background = {
+		trigger = { is_travelling = yes }
+		reference = terrain
+	}
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+	right_portrait = {
+		trigger = {
+			NOT = { root = scope:physician }
+			trigger_if = {
+				limit = { is_travelling = yes }
+				current_travel_plan = {
+					any_entourage_character = {
+						has_court_position = court_physician_court_position
+					}
+				}
+			}
+		}
+		character = scope:physician
+		triggered_animation = {
+			trigger = { scope:physician = { gh_health_event_is_worried_trigger = { CHARACTER = scope:sick_character } } }
+			animation = worry
+		}
+		triggered_animation = {
+			trigger = { scope:physician = { ai_rationality >= 0 } } #Don't look rational if you're not
+			animation = personality_rational
+		}
+		animation = idle
+	}
+
+	override_background = {
+		trigger = { is_travelling = yes }
+		reference = terrain_travel
+	}
+
+	trigger = {
+		can_contract_disease_trigger = { DISEASE = shade_stricken }
+	}
+
+	weight_multiplier = {
+		base = 1
+
+		modifier = {
+			factor = 0.1
+		}
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_illness"
+		save_court_physician_as_effect = { SCOPE_NAME = physician }
+		contract_disease_effect = { DISEASE = shade_stricken TREATMENT_EVENT = no } #Adds the trait, sends event "health.2101" about contagious disease to liege/host/imprisoner, sends event "health.2201" to those who care
+	}
+
+	###NO COURT PHYSICIAN OPTIONS###
+	#Find physician
+	option = {
+		trigger = {
+			NOT = { exists = scope:physician }
+			is_landed = yes
+			is_imprisoned = no 
+			is_travelling = no 
+		}
+		name = health.3101.e
+		find_court_physician_effect = yes
+		ai_chance = { base = 5 }
+	}
+
+	#OK
+	option = {
+		trigger = {
+			exists = scope:physician
+			liege_picks_treatment_trigger = yes
+		}
+		name = gh_health.2002.a
+		ai_chance = { base = 1 }
+	}
+	### TRAVEL- GO HOME
+	option = {
+		name = health.travel.option.home
+		flavor = health.travel.option.home.flavor 
+		trigger = {
+			is_travelling = yes
+			current_travel_plan ={
+				travel_plan_owner = root
+				can_cancel = yes 
+			}
+			involved_activity ?= {
+				NOR = {
+					has_activity_type = activity_tour
+					is_required_special_guest = root
+				}
+			}
+		}
+		current_travel_plan = { cancel_travel_plan = yes }
+		ai_chance = { base = 1 }
+	}
+	###COURT PHYSICIAN OPTIONS###
+	#Safe treatment
+	option = {
+		trigger = {
+			exists = scope:physician
+			liege_picks_treatment_trigger = no
+			court_physician_available_when_traveling_trigger = yes
+		}
+		name = health.3101.a
+		safe_disease_treatment_effect = { PATIENT = root TREATMENT_PICKER = root }
+		ai_chance = { base = 10 }
+	}
+
+	#Risky treatment
+	option = {
+		trigger = {
+			exists = scope:physician
+			liege_picks_treatment_trigger = no
+			court_physician_available_when_traveling_trigger = yes
+		}
+		name = health.3101.b
+		risky_disease_treatment_effect = { PATIENT = root TREATMENT_PICKER = root }
+		ai_chance = { base = 1 }
+	}
+	
+	#Mystic treatment
+	option = {
+		trigger = {
+			court_physician_available_trigger = yes
+			liege_picks_treatment_trigger = no
+			scope:physician = { has_trait = lifestyle_mystic }
+		}
+		name = health.3101.c
+		mystic_disease_treatment_effect = { PATIENT = root TREATMENT_PICKER = root }
+		ai_chance = {
+			base = 0.5
+			modifier = {
+				add = -0.5
+				ai_zeal >= 0
+			}
+		}
+	}
+
+	#No treatment
+	option = {
+		name = {
+			text = {
+				first_valid = {
+					triggered_desc = {
+						trigger = { is_travelling = yes }
+						desc = health.travel.option.continue
+					}
+					desc = health.3101.d
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = scope:physician
+				liege_picks_treatment_trigger = no
+				court_physician_available_when_traveling_trigger = yes
+			}
+			no_disease_treatment_effect = yes
+		}
+		ai_chance = { base = 0 }
+	}
+
+	#You're going to rot away in prison most likely
+	option = {
+		trigger = {
+			is_imprisoned = yes 
+		}
+		name = health.3101.f
+	}
+}
+
+
+
+# THE MIASMA
+# ALL WHO DO NOT KILL THE SPREADING SHADOW SHALL SUFFER IN ITS DARKNESS
+# LET HE WHO SEEKS THE LIGHT GUIDE US
+# AND DELIVER US FROM THE SUFFERING
+# PRAISE THE MAKER
+# - a proverb of unknown origin, found written in blood after the Shaded City of Virayl's destruction
+
+gh_health.5998 = { #The Miasma story cycle pacing control
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				any_neighboring_top_liege_realm_owner = {
+					has_character_flag = shade_stricken_splash
+				}
+			}
+			if = {
+				limit = {
+					has_character_flag = shade_stricken_closer
+				}
+				remove_character_flag = shade_stricken_closer
+			}
+			add_character_flag = shade_stricken_nearby
+		}
+		else_if = {
+			limit = {
+				any_neighboring_top_liege_realm_owner = {
+					any_neighboring_top_liege_realm_owner = {
+						has_character_flag = shade_stricken_splash
+					}
+				}
+			}	
+			add_character_flag = shade_stricken_closer
+		}
+		if = {
+			limit = {
+				OR = {
+					has_character_flag = shade_stricken_closer
+					has_character_flag = shade_stricken_nearby
+				}
+				NOT = {
+					has_character_flag = shade_stricken_info_event
+				}
+			}
+			trigger_event = {
+				id = gh_health.5999
+				days = { 2 4 }
+			}
+		}
+	}
+}
+
+# The Miasma is closing in
+# Used to trigger The Miasma Story cycle
+# by Nick Meredith
+gh_health.5999 = {
+	type = character_event
+	title = gh_health.5999.t
+	desc = gh_health.5999.desc
+	theme = plague
+	content_source = dlc_gh
+	override_background = { reference = study }
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	cooldown = { years = 100 }
+
+	trigger = {
+		is_ai = no
+		#has_dlc_feature = legends_of_the_dead
+		is_available_adult = yes
+		is_travelling = no
+		NOR = {
+			any_sub_realm_county = { #Black Plague is already here, no need to talk about it closing in
+				any_county_province = {
+					any_province_epidemic = {
+						this = global_var:shade_miasma
+					}
+				}
+			}
+		}
+	}
+
+	on_trigger_fail = {
+		trigger_event = {
+			id = gh_health.5999
+			days = { 7 14 }
+		}
+	}
+
+	immediate = {		
+		play_music_cue = mx_cue_death
+		add_character_flag = shade_stricken_info_event
+		if = {
+			limit = {
+				NOR = {
+					has_character_flag = shade_stricken_closer
+					has_character_flag = shade_stricken_nearby
+				}
+			}
+			add_character_flag = shade_stricken_closer
+		}
+	}
+
+	option = { # Ha, let them die!
+		name = gh_health.5999.a
+
+		trigger = {
+			has_trait = callous
+		}
+
+		flavor = gh_health.5999.a.tt
+
+		stress_impact = {
+			base = medium_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_compassion = -1
+			}
+		}
+	}
+
+	option = { # The end times are upon us!
+		name = gh_health.5999.b
+
+		trigger = {
+			has_trait = paranoid
+		}
+
+		flavor = gh_health.5999.b.tt
+
+		add_character_modifier = {
+			modifier = plague_tales
+			years = 15
+		}
+
+		stress_impact = {
+			base = minor_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_rationality = 0.5
+				ai_greed = -1
+			}
+		}
+	}
+
+	option = { # Oh no
+		name = {
+			text = epidemic_events.5999.c.notchristian
+		}
+
+		stress_impact = {
+			base = miniscule_stress_impact_gain
+			craven = minor_stress_impact_gain
+			paranoid = minor_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_energy = -0.5
+			}
+		}
+	}
+}

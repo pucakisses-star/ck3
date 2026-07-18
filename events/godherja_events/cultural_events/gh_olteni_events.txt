@@ -1,0 +1,861 @@
+﻿##################################################
+##			Olteni Flavour Events				##
+#
+# gh_olteni_events.0001 - Character loots an Olteni mask in battle
+#
+# A Wandering Elder Event Chain
+# gh_olteni_events.0101 - A Wanderer
+# 	gh_olteni_events.0102 - A Wanderer: Mystic
+# 	gh_olteni_events.0103 - A Wanderer: Scholar
+# 	gh_olteni_events.0104 - A Wanderer: Vagrant
+# 	gh_olteni_events.0105 - A Wanderer: Magi
+# 	gh_olteni_events.0106 - A Wanderer: Vanished
+# 	gh_olteni_events.0107 - A Wanderer: Rejected
+#	gh_olteni_events.0108 - Moving Forward
+#	gh_olteni_events.0109 - Mortality and Knowledge
+#	gh_olteni_events.0110 - Hollow Efforts
+#
+##################################################
+
+namespace = gh_olteni_events
+
+##################################################
+
+gh_olteni_events.0001 = { # Character loots an Olteni mask in battle
+	type = character_event
+	content_source = dlc_gh
+	title = gh_olteni_events.0001.t
+	desc = gh_olteni_events.0001.desc
+	theme = battle
+
+	left_portrait = {
+		character = root
+		scripted_animation = duel_celebrate
+	}
+	artifact = {
+		target = scope:looted_mask
+		position = lower_center_portrait
+	}
+	lower_right_portrait = scope:dead_combatant
+
+	weight_multiplier = {
+		base = 1
+	}
+
+	immediate = {
+		show_as_tooltip = {
+			scope:dead_combatant = {
+				death = {
+					death_reason = death_battle
+					killer = root
+				}
+			}
+		}
+		scope:looted_mask = {
+			if = {
+				limit = { exists = artifact_owner.house }
+				artifact_owner.house = { save_scope_as = looted_mask_house }
+			}
+			set_owner = {
+				target = root
+				history = {
+					type = taken_in_battle
+					actor = scope:dead_combatant
+					recipient = root
+					location = root.location
+				}
+			}
+			if = {
+				limit = {
+					exists = scope:looted_mask_house
+					NOT = { any_artifact_house_claimant = { this = scope:looted_mask_house } }
+				}
+				scope:looted_mask_house = { add_house_artifact_claim = prev }
+			}
+		}
+		hidden_effect = {
+			scope:dead_combatant = {
+				death = {
+					death_reason = death_battle
+					killer = root
+				}
+			}
+		}
+	}
+
+	option = {
+		name = gh_olteni_events.0001.a
+		add_prestige = medium_prestige_gain
+		stress_impact = {
+			ambitious = medium_stress_impact_loss
+			brave = minor_stress_impact_loss
+			arrogant = minor_stress_impact_loss
+		}
+	}
+}
+
+##################################################
+#
+# A Wandering Elder Event Chain
+#
+# A wandering elder is spotted in the realm, prompting
+# the player to either seek them out or do nothing.
+# Should the player decide to seek the elder out,
+# with the following outcomes:
+# A mystic, granting relevant trait xp
+# A scholar, granting learning
+# A useless vagrant
+# A Magi to teach the Defiled Nadir spell + outcomes
+# The elder disappears without trace
+# The elder refuses to meet a sinful character
+#
+# gh_olteni_events.0101 - gh_olteni_events.0110
+#
+# by Deadr0x
+
+gh_olteni_events.0101 = { # A Wanderer
+	type = character_event
+	content_source = dlc_gh
+	title = gh_olteni_events.0101.t
+	desc = gh_olteni_events.0101.desc
+	theme = realm
+
+	right_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	trigger = {
+		NOT = { has_character_flag = had_event_gh_olteni_events_0101 }
+		oltenic_mask_user_cultural_trigger = yes
+		is_available_at_peace_adult = yes
+	}
+
+	weight_multiplier = {
+		base = 1
+	}
+
+	immediate = {
+		add_character_flag = {
+			flag = had_event_gh_olteni_events_0101
+			years = 20
+		}
+	}
+
+	option = { # Extend an offer of hospitality
+		name = gh_olteni_events.0101.a
+		custom_tooltip = gh_olteni_events.0101.a.tt
+		remove_short_term_gold = tiny_gold_value
+		add_piety = minor_piety_gain
+		hidden_effect = {
+			random_list = {
+				10 = { # Mystic
+					trigger_event = {
+						id = gh_olteni_events.0102
+						days = { 3 14 }
+					}
+				}
+				10 = { # Scholar
+					trigger_event = {
+						id = gh_olteni_events.0103
+						days = { 3 14 }
+					}
+				}
+				10 = { # Vagrant
+					trigger_event = {
+						id = gh_olteni_events.0104
+						days = { 3 14 }
+					}
+				}
+				5 = { # Magi
+					trigger = {
+						can_access_magic = yes
+						NOT = { magic_spell_is_known_by_trigger = { MAGI = root SPELL = global_var:defiled_nadir } }
+					}
+					modifier = {
+						add = {
+							add = 3
+							multiply = num_virtuous_traits
+						}
+					}
+					trigger_event = {
+						id = gh_olteni_events.0105
+						days = { 3 14 }
+					}
+				}
+				10 = { # Disappeared
+					trigger_event = {
+						id = gh_olteni_events.0106
+						days = { 14 28 }
+					}
+				}
+				0 = { # Refused to come
+					modifier = {
+						add = {
+							add = 20
+							multiply = num_sinful_traits
+						}
+					}
+					modifier = {
+						add = 50
+						piety_level < 1
+					}
+					modifier = {
+						factor = 0
+						piety_level > 2
+					}
+					trigger_event = {
+						id = gh_olteni_events.0107
+						days = { 3 14 }
+					}
+				}
+			}
+		}
+		stress_impact = {
+			zealous = minor_stress_impact_loss
+			compassionate = minor_stress_impact_loss
+			generous = minor_stress_impact_loss
+			trusting = miniscule_stress_impact_loss
+			cynical = minor_stress_impact_gain
+			paranoid = minor_stress_impact_gain
+			greedy = miniscule_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = -0.2
+				ai_zeal = 0.5
+				ai_compassion = 0.2
+			}
+			modifier = {
+				add = {
+					add = 20
+					multiply = num_virtuous_traits
+				}
+				add = {
+					add = -20
+					multiply = num_sinful_traits
+				}
+			}
+		}
+	}
+
+	option = { # Ignore them
+		name = gh_olteni_events.0101.b
+		add_piety = miniscule_piety_loss
+		stress_impact = {
+			paranoid = medium_stress_impact_loss
+			shy = minor_stress_impact_loss
+			cynical = minor_stress_impact_loss
+			lazy = miniscule_stress_impact_loss
+			zealous = medium_stress_impact_gain
+			compassionate = minor_stress_impact_gain
+			generous = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_energy = -0.3
+				ai_zeal = -0.5
+				ai_compassion = -0.1
+			}
+			modifier = {
+				add = {
+					add = -20
+					multiply = num_virtuous_traits
+				}
+				add = {
+					add = 20
+					multiply = num_sinful_traits
+				}
+			}
+		}
+	}
+}
+
+gh_olteni_events.0102 = { # A Wanderer: Mystic
+	type = character_event
+	content_source = dlc_gh
+	title = gh_olteni_events.0102.t
+	desc = gh_olteni_events.0102.desc
+	theme = realm
+	override_background = { reference = study }
+
+	right_portrait = {
+		character = scope:elder
+		animation = personality_zealous
+	}
+
+	immediate = {
+		create_character = {
+			template = olteni_elder_mystic_template
+			location = root.capital_province
+			save_scope_as = elder
+		}
+	}
+
+	option = { # We should learn from each other!
+		name = gh_olteni_events.0102.a
+		trigger = {
+			has_trait_xp = {
+				trait = lifestyle_mystic
+				value = 100
+			}
+		}
+		trait = lifestyle_mystic
+		add_learning_skill = 3
+		add_piety = major_piety_gain
+		ai_chance = {
+			base = 200
+			ai_value_modifier = {
+				ai_energy = 0.5
+				ai_sociability = 0.5
+			}
+		}
+	}
+
+	option = { # Learn mystical knowledge
+		name = gh_olteni_events.0102.b
+		trigger = {
+			NOT = {
+				has_trait_xp = {
+					trait = lifestyle_mystic
+					value = 100
+				}
+			}
+		}
+		custom_tooltip = gh_olteni_events.0102.b.tt
+		if = {
+			limit = { NOT = { has_trait = lifestyle_mystic } }
+			add_trait = lifestyle_mystic
+			add_trait_xp = {
+				trait = lifestyle_mystic
+				value = { 10 30 }
+			}
+		}
+		else = { 
+			add_trait_xp = {
+				trait = lifestyle_mystic
+				value = { 20 40 }
+			}
+		}
+		stress_impact = {
+			zealous = medium_stress_impact_loss
+			cynical = minor_stress_impact_gain
+			paranoid = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_energy = 0.2
+				ai_zeal = 0.5
+			}
+			modifier = {
+				has_trait = lifestyle_mystic
+				add = 100
+			}
+		}
+	}
+
+	option = { # Just let them stay
+		name = gh_olteni_events.0103.c
+		add_piety = minor_piety_gain
+		stress_impact = {
+			paranoid = medium_stress_impact_loss
+			zealous = minor_stress_impact_gain
+			ambitious = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_energy = -0.3
+				ai_zeal = -0.5
+				ai_sociability = -0.2
+			}
+			modifier = {
+				add = {
+					add = -20
+					multiply = num_virtuous_traits
+				}
+				add = {
+					add = 20
+					multiply = num_sinful_traits
+				}
+			}
+		}
+	}
+
+	after = {
+		scope:elder = { silent_disappearance_effect = yes }
+	}
+}
+
+gh_olteni_events.0103 = { # A Wanderer: Scholar
+	type = character_event
+	content_source = dlc_gh
+	title = gh_olteni_events.0103.t
+	desc = gh_olteni_events.0103.desc
+	theme = realm
+	override_background = { reference = study }
+
+	right_portrait = {
+		character = scope:elder
+		animation = personality_rational
+	}
+
+	immediate = {
+		create_character = {
+			template = olteni_elder_scholar_template
+			location = root.capital_province
+			save_scope_as = elder
+		}
+	}
+
+	option = { # We should compare notes!
+		name = gh_olteni_events.0103.a
+		trigger = { has_trait = scholar }
+		trait = scholar
+		add_learning_skill = 4
+		ai_chance = {
+			base = 200
+			ai_value_modifier = {
+				ai_energy = 0.5
+				ai_sociability = 0.5
+			}
+		}
+	}
+
+	option = { # Learn scholarly knowledge
+		name = gh_olteni_events.0103.b
+		trigger = { NOT = { has_trait = scholar } }
+		send_interface_toast = {
+			title = gh_olteni_events.0103.b.tt
+			random_list = {
+				20 = { add_learning_skill = 2 }
+				50 = { add_learning_skill = 3 }
+				20 = { add_learning_skill = 4 }
+				10 = { add_trait = scholar }
+			}
+		}
+		stress_impact = {
+			diligent = minor_stress_impact_loss
+			lazy = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_energy = 0.3
+				ai_sociability = 0.3
+			}
+		}
+	}
+
+	option = { # Just let them stay
+		name = gh_olteni_events.0103.c
+		add_piety = minor_piety_gain
+		stress_impact = {
+			paranoid = medium_stress_impact_loss
+			ambitious = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_energy = -0.4
+				ai_sociability = -0.2
+			}
+		}
+	}
+
+	after = {
+		scope:elder = { silent_disappearance_effect = yes }
+	}
+}
+
+gh_olteni_events.0104 = { # A Wanderer: Vagrant
+	type = character_event
+	content_source = dlc_gh
+	title = gh_olteni_events.0104.t
+	desc = gh_olteni_events.0104.desc
+	theme = realm
+	override_background = { reference = dungeon }
+
+	right_portrait = {
+		character = scope:elder
+		animation = prisondungeon
+	}
+
+	left_portrait = {
+		character = scope:jailor
+		animation = marshal
+	}
+
+	trigger = {
+		any_knight = {
+			exists = yes
+			is_healthy = yes
+			location = root.location
+		}
+	}
+
+	immediate = {
+		create_character = {
+			template = olteni_elder_vagrant_template
+			location = root.capital_province
+			save_scope_as = elder
+		}
+		random_knight = {
+			limit = {
+				is_healthy = yes
+				location = root.location
+			}
+			save_scope_as = jailor
+		}
+	}
+
+	option = { # Flay them
+		name = gh_olteni_events.0104.a
+		trigger = {
+			OR = {
+				has_trait = sadistic
+				has_trait = callous
+				has_trait = torturer
+			}
+		}
+		trait = sadistic
+		trait = callous
+		trait = torturer
+		execute_prisoner_effect = {
+			VICTIM = scope:elder
+			EXECUTIONER = root
+		}
+		stress_impact = {
+			sadistic = medium_stress_impact_loss
+			callous = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 200
+			ai_value_modifier = {
+				ai_vengefulness = 0.5
+				ai_compassion = -1
+			}
+		}
+	}
+
+	option = { # Let them rot
+		name = gh_olteni_events.0104.b
+		imprison = {
+			target = scope:elder
+			type = dungeon
+		}
+		stress_impact = {
+			callous = minor_stress_impact_loss
+			forgiving = minor_stress_impact_gain
+			compassionate = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_vengefulness = 0.4
+				ai_compassion = -0.5
+			}
+		}
+	}
+
+	option = { # Kick them out
+		name = gh_olteni_events.0104.c
+		custom_tooltip = gh_olteni_events.0104.c.tt
+		scope:elder = { silent_disappearance_effect = yes }
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_energy = -0.3
+				ai_vengefulness = -0.2
+				ai_compassion = 0.5
+			}
+		}
+	}
+}
+
+gh_olteni_events.0105 = { # A Wanderer: Magi
+	type = character_event
+	content_source = dlc_gh
+	title = gh_olteni_events.0105.t
+	desc = gh_olteni_events.0105.desc
+	theme = realm
+	override_background = { reference = study }
+
+	right_portrait = {
+		character = scope:elder
+		animation = personality_rational
+	}
+
+	immediate = {
+		create_character = {
+			template = olteni_elder_magi_template
+			location = root.capital_province
+			save_scope_as = elder
+		}
+		defiled_nadir_setup_effect = { CASTER = scope:elder }
+	}
+
+	option = { # Agree to have them as your Mentor
+		name = gh_olteni_events.0105.a
+		custom_tooltip = gh_olteni_events.0105.a.tt
+		add_visiting_courtier = scope:elder
+		set_relation_mentor = scope:elder
+		set_variable = {
+			name = elder_mentor
+			value = scope:elder
+		}
+		hidden_effect = {
+			start_scheme = {
+				type = learn_magic_spell_scheme
+				target_character = scope:elder
+			}
+			random_scheme = {
+				limit = {
+					scheme_type = learn_magic_spell_scheme
+					scheme_target_character = scope:elder
+				}
+				set_variable = {
+					name = spell_to_learn_from_character
+					value = global_var:defiled_nadir
+				}
+			}
+		}
+		create_story = defiled_nadir_study_story
+		stress_impact = {
+			zealous = minor_stress_impact_loss
+			cynical = minor_stress_impact_gain
+			paranoid = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 300
+			ai_value_modifier = {
+				ai_energy = 0.4
+				ai_zeal = 1
+				ai_sociability = 0.2
+			}
+		}
+	}
+
+	option = { # Only let them stay
+		name = gh_olteni_events.0105.b
+		add_piety = minor_piety_gain
+		scope:elder = { silent_disappearance_effect = yes }
+		stress_impact = {
+			paranoid = medium_stress_impact_loss
+			cynical = minor_stress_impact_loss
+			lazy = miniscule_stress_impact_loss
+			zealous = medium_stress_impact_gain
+			compassionate = minor_stress_impact_gain
+			generous = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_energy = -0.3
+				ai_zeal = -1
+				ai_sociability = -0.1
+			}
+		}
+	}
+}
+
+gh_olteni_events.0106 = { # A Wanderer: Vanished
+	type = character_event
+	content_source = dlc_gh
+	title = gh_olteni_events.0106.t
+	desc = gh_olteni_events.0106.desc
+	theme = realm
+
+	right_portrait = {
+		character = root
+		animation = disbelief
+	}
+
+	option = { # Disappointing
+		name = gh_olteni_events.0106.a
+		custom_tooltip = gh_olteni_events.0106.tt
+		stress_impact = {
+			shy = minor_stress_impact_loss
+			ambitious = minor_stress_impact_gain
+		}
+		ai_chance = { base = 100 }
+	}
+}
+
+gh_olteni_events.0107 = { # A Wanderer: Rejected
+	type = character_event
+	content_source = dlc_gh
+	title = gh_olteni_events.0107.t
+	desc = gh_olteni_events.0107.desc
+	theme = realm
+
+	right_portrait = {
+		character = root
+		animation = disbelief
+	}
+
+	option = { # Shameful
+		name = gh_olteni_events.0107.a
+		if = {
+			limit = { piety_level < 1 }
+			custom_tooltip = gh_olteni_events.0107.tt.piety
+		}
+		else = { custom_tooltip = gh_olteni_events.0107.tt.sinful }
+		stress_impact = {
+			zealous = medium_stress_impact_gain
+			arrogant = minor_stress_impact_gain
+			ambitious = minor_stress_impact_gain
+		}
+		ai_chance = { base = 100 }
+	}
+}
+
+gh_olteni_events.0108 = { # Moving Forward
+	type = character_event
+	content_source = dlc_gh
+	title = gh_olteni_events.0108.t
+	desc = gh_olteni_events.0108.desc
+	theme = witchcraft
+
+	right_portrait = {
+		character = scope:elder
+		animation = personality_rational
+	}
+
+	immediate = {
+		scope:story = {
+			var:defiled_nadir_mentor = { save_scope_as = elder }
+			end_story = yes
+		}
+	}
+
+	option = { # Thank you, and farewell
+		name = gh_olteni_events.0108.a
+		custom_tooltip = gh_olteni_events.0108.a.tt
+		add_piety = major_piety_gain
+		stress_impact = {
+			zealous = medium_stress_impact_loss
+			diligent = medium_stress_impact_loss
+			ambitious = medium_stress_impact_loss
+		}
+		ai_chance = { base = 100 }
+	}
+
+	option = { # Ask them to stay
+		name = gh_olteni_events.0108.b
+		duel = {
+			skill = diplomacy
+			value = high_skill_rating
+			50 = {
+				desc = gh_olteni_events.0108.b.success
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+			   }
+				send_interface_toast = {	
+					title = gh_olteni_events.0108.b.success.tt
+					left_icon = scope:elder
+					if = {
+						limit = { NOT = { is_employer_of = scope:elder } }
+						add_courtier = scope:elder
+					}
+					if = {
+						limit = { can_set_relation_friend_trigger = { CHARACTER = scope:elder } }
+						set_relation_friend = {
+							reason = friend_took_lessons_to_heart
+							target = scope:elder
+						}
+					}
+				}
+			}
+			50 = {
+				desc = gh_olteni_events.0108.b.failure
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+			    }
+				send_interface_toast = {	
+					title = gh_olteni_events.0108.b.failure.tt
+					add_piety = minor_piety_loss
+					scope:elder = { silent_disappearance_effect = yes }
+				}
+			}
+		}
+		stress_impact = {
+			zealous = medium_stress_impact_loss
+			diligent = medium_stress_impact_loss
+			ambitious = medium_stress_impact_loss
+		}
+		ai_chance = { base = 100 }
+	}
+}
+
+gh_olteni_events.0109 = { # Mortality and Knowledge
+	type = character_event
+	content_source = dlc_gh
+	title = gh_olteni_events.0109.t
+	desc = gh_olteni_events.0109.desc
+	theme = witchcraft
+
+	right_portrait = {
+		character = root
+		animation = disbelief
+	}
+
+	immediate = {
+		scope:story = {
+			var:defiled_nadir_mentor = { save_scope_as = elder }
+			end_story = yes
+		}
+	}
+
+	option = {
+		name = gh_olteni_events.0109.a
+		add_piety = major_piety_gain
+		stress_impact = {
+			diligent = minor_stress_impact_loss
+			ambitious = medium_stress_impact_loss
+		}
+		ai_chance = { base = 100 }
+	}
+}
+
+gh_olteni_events.0110 = { # Hollow Efforts
+	type = character_event
+	content_source = dlc_gh
+	title = gh_olteni_events.0110.t
+	desc = gh_olteni_events.0110.desc
+	theme = witchcraft
+
+	right_portrait = {
+		character = scope:elder
+		animation = disapproval
+	}
+
+	immediate = {
+		scope:story = {
+			var:defiled_nadir_mentor = { save_scope_as = elder }
+			end_story = yes
+		}
+	}
+
+	option = {
+		name = gh_olteni_events.0110.a
+		custom_tooltip = gh_olteni_events.0110.a.tt
+		stress_impact = {
+			diligent = medium_stress_impact_gain
+			ambitious = medium_stress_impact_gain
+			zealous = minor_stress_impact_gain
+		}
+		ai_chance = { base = 100 }
+	}
+
+	after = {
+		scope:elder = { silent_disappearance_effect = yes }
+	}
+}

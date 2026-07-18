@@ -1,0 +1,2207 @@
+﻿namespace = glimpse_reality
+
+###############
+#Glimpse Reality Events
+#By Thundershield
+###############
+
+#opening event for glimpse reality, where you will get a choice of what vision to pursue
+glimpse_reality.0001 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.0001.t
+	desc = glimpse_reality.0001.desc
+	theme = medicine
+	override_background = {
+		reference = magic_ritual
+	}
+
+	left_portrait = root
+
+	immediate = {
+		glimpse_reality_selection_effect = { CHOICE = choice_1 }
+		glimpse_reality_selection_effect = { CHOICE = choice_2 }
+		glimpse_reality_selection_effect = { CHOICE = choice_3 }
+		glimpse_reality_selection_effect = { CHOICE = choice_4 }
+		glimpse_reality_selection_effect = { CHOICE = choice_5 }
+	}
+
+	option = {
+		name = glimpse_reality.0001.a
+		glimpse_reality_choice_effect = { CHOICE = choice_1 }
+	}
+	option = {
+		trigger = { dream_aspect_skill_trigger = { VALUE = 10 } }
+		name = glimpse_reality.0001.b
+		glimpse_reality_choice_effect = { CHOICE = choice_5 }
+	}
+	option = {
+		trigger = { dream_aspect_skill_trigger = { VALUE = 15 } }
+		name = glimpse_reality.0001.c
+		glimpse_reality_choice_effect = { CHOICE = choice_4 }
+	}
+	option = {
+		trigger = { dream_aspect_skill_trigger = { VALUE = 20 } }
+		name = glimpse_reality.0001.d
+		glimpse_reality_choice_effect = { CHOICE = choice_3 }
+	}
+	option = {
+		name = glimpse_reality.0001.e
+		glimpse_reality_choice_effect = { CHOICE = choice_2 }
+	}
+	after = {
+		remove_variable = glimpse_reality_choice_1
+		remove_variable = glimpse_reality_choice_2
+		remove_variable = glimpse_reality_choice_3
+		clear_variable_list = glimpse_reality_choices
+		set_variable = {
+			name = vision_event
+			days = 1
+		}
+	}
+}
+
+################################
+# 0010 - 0500 : Diplomacy Events
+################################
+#Generic Diplomacy. Writing by Hapchazzard
+glimpse_reality.0010 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.0010.t
+	desc = glimpse_reality.0010.desc
+	theme = diplomacy
+
+	left_portrait = {
+		character = root
+		animation = shock
+	}
+
+	option = {
+		name = glimpse_reality.0010.a
+		add_character_modifier = {
+			modifier = diplomacy_vision
+			years = 5
+		}
+	}
+}
+
+glimpse_reality.0011 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.0011.t
+	desc = glimpse_reality.0011.desc
+	theme = hunting
+
+	left_portrait = {
+		character = root
+		animation = spymaster
+	}
+
+	option = {
+		trigger = {
+			has_trait = compassionate
+			NOT = { has_trait = lifestyle_hunter }
+		}
+		name = glimpse_reality.0011.a
+		add_character_modifier = {
+			modifier = empathy_to_animals
+			years = 10
+		}
+	}
+	option = {
+		trigger = {
+			has_trait = compassionate
+			has_trait = lifestyle_hunter
+		}
+		name = glimpse_reality.0011.b
+		add_character_modifier = {
+			modifier = empathy_to_animals
+			years = 5
+		}
+		add_stress = medium_stress_impact_gain
+	}
+	option = {
+		trigger = {
+			NOT = {
+				has_trait = compassionate
+				has_trait = lifestyle_hunter
+			}
+		}
+		name = glimpse_reality.0011.a
+		add_character_modifier = {
+			modifier = empathy_to_animals
+			years = 10
+		}
+	}
+}
+
+#Written by Mayor
+glimpse_reality.0012 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.0012.t
+	desc = glimpse_reality.0012.desc
+	theme = marriage
+
+	immediate = {
+		hidden_effect = {
+			create_historical_vision_of_character_effect = { CHARACTER = tasurmad_wardenism_66 AGE = 23 }
+			create_historical_vision_of_character_effect = { CHARACTER = tasurmad_wardenism_8 AGE = 24 }
+		}
+	}
+
+	left_portrait = {
+		character = scope:tasurmad_wardenism_8_scope
+		animation = personality_honorable
+		hide_info = yes
+	}
+
+	right_portrait = {
+		character = scope:tasurmad_wardenism_66_scope
+		animation = personality_rational
+		hide_info = yes
+	}
+	option = {
+		name = glimpse_reality.0012.a
+		add_character_modifier = {
+			modifier = diplomacy_vision
+			years = 5
+		}
+	}
+	after = {
+		hidden_effect = {
+			scope:tasurmad_wardenism_66_scope = {
+				death = {
+					death_reason = death_vanished
+				}
+			}
+			scope:tasurmad_wardenism_8_scope = {
+				death = {
+					death_reason = death_vanished
+				}
+			}
+		}
+	}
+}
+
+#Written by pwsoap
+glimpse_reality.0013 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.0013.t
+	desc = glimpse_reality.0013.desc
+	theme = battle
+
+	immediate = {
+		hidden_effect = {
+			create_historical_vision_of_character_effect = { CHARACTER = daukeni_sjalvolki_1 AGE = 33 }
+			create_historical_vision_of_character_effect = { CHARACTER = daukeni_sjalvolki_19 AGE = 43 }
+			scope:daukeni_sjalvolki_1035_scope = {
+				add_trait = magic_good_1
+				add_trait = education_arcana_4
+			}
+		}
+	}
+
+	left_portrait = {
+		character = scope:daukeni_sjalvolki_1_scope
+		animation = sadness
+		hide_info = yes
+	}
+
+	right_portrait = {
+		character = scope:daukeni_sjalvolki_19_scope
+		animation = personality_dishonorable
+		hide_info = yes
+	}
+	option = {
+		name = glimpse_reality.0013.a
+		add_character_modifier = {
+			modifier = diplomacy_vision
+			years = 5
+		}
+	}
+	after = {
+		hidden_effect = {
+			scope:daukeni_sjalvolki_1_scope = {
+				death = {
+					death_reason = death_vanished
+				}
+			}
+			scope:daukeni_sjalvolki_19_scope = {
+				death = {
+					death_reason = death_vanished
+				}
+			}
+		}
+	}
+}
+
+#break truce. Written by Thundershield
+glimpse_reality.0014 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.0014.t
+	desc = glimpse_reality.0014.desc
+	theme = diplomacy
+
+	immediate = {
+		random_truce_target = {
+			save_scope_as = target
+		}
+	}
+
+	left_portrait = root
+	right_portrait = scope:target
+	option = {
+		trigger = {
+			has_trait = diplomat
+		}
+		name = glimpse_reality.0014.a
+		add_character_modifier = {
+			modifier = reasonable_negotiator
+			years = 10
+		}
+		add_hook = {
+			type = favor_hook
+			target = scope:target
+		}
+		scope:target = {
+			add_opinion = {
+				modifier = grateful_opinion
+				target = root
+				opinion = 20
+			}
+		}
+	}
+	option = {
+		name = glimpse_reality.0014.b
+		add_character_modifier = {
+			modifier = reasonable_negotiator
+			years = 10
+		}
+		scope:target = {
+			add_opinion = {
+				modifier = grateful_opinion
+				target = root
+				opinion = 20
+			}
+		}
+	}
+	option = {
+		name = glimpse_reality.0014.c
+		cancel_truce_one_way = scope:target
+		stress_impact = {
+			craven = minor_stress_gain
+		}
+	}
+}
+
+##############################
+# 0501 - 1000 : Martial Events
+##############################
+
+#Cenwares conquest of Oraispol. Code by thundershield. Writing by Hapchazzard
+glimpse_reality.0501 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.0501.t
+	desc = glimpse_reality.0501.desc
+	theme = war
+	override_background = {
+		reference = market_west
+	}
+
+	immediate = {
+		hidden_effect = {
+			create_historical_vision_of_character_effect = { CHARACTER = daukeni_sjalvolki_1 AGE = 38 }
+			create_historical_vision_of_character_effect = { CHARACTER = westernimperial_omitilos_aagiokrata_2 AGE = 21 }
+		}
+	}
+
+	left_portrait = {
+		character = scope:daukeni_sjalvolki_1_scope
+		animation = war_over_win
+		outfit_tags = { northern_war fp1_norse }
+		hide_info = yes
+	}
+	
+	right_portrait = {
+		character = scope:westernimperial_omitilos_aagiokrata_2_scope
+		animation = beg
+		hide_info = yes
+	}
+
+
+	option = {#Aversarian Culture before the fall of Oraispol
+		trigger = {
+			culture = { has_cultural_pillar = heritage_aversarian }
+			has_trait = arrogant
+			NOT = { has_global_variable = oraispol_fallen }
+		}
+		name = glimpse_reality.0501.a
+		add_character_modifier = {
+			modifier = martial_vision
+			years = 5
+		}
+	}
+	option = {#Aversarian Culture before the fall of Oraispol
+		trigger = {
+			culture = { has_cultural_pillar = heritage_aversarian }
+			NOT = { has_global_variable = oraispol_fallen }
+		}
+		name = glimpse_reality.0501.b
+		add_character_modifier = {
+			modifier = refusal_of_visions
+			years = 5
+		}
+	}
+	option = {#Aversarian Culture after the fall of Oraispol
+		trigger = {
+			culture = { has_cultural_pillar = heritage_aversarian }
+			has_global_variable = oraispol_fallen
+		}
+		name = glimpse_reality.0501.c
+		add_character_modifier = {
+			modifier = filled_with_vengeance
+			years = 5
+		}
+	}
+	option = {#Sjalvolki Culture before the fall of Oraispol
+		trigger = {
+			culture = { has_cultural_pillar = heritage_sjalvolki }
+			NOT = { has_global_variable = oraispol_fallen }
+		}
+		name = glimpse_reality.0501.d
+		add_character_modifier = {
+			modifier = great_martial_vision
+			years = 5
+		}
+	}
+	option = {#Sjalvolki Culture after the fall of Oraispol
+		trigger = {
+			culture = { has_cultural_pillar = heritage_sjalvolki }
+			has_global_variable = oraispol_fallen
+		}
+		name = glimpse_reality.0501.e
+		add_character_modifier = {
+			modifier = great_martial_vision
+			years = 5
+		}
+	}
+	option = {#Everyone else
+		trigger = {
+			NOR = {
+				culture = { has_cultural_pillar = heritage_aversarian }
+				culture = { has_cultural_pillar = heritage_sjalvolki }
+			}
+		}
+		name = glimpse_reality.0501.f
+		add_character_modifier = {
+			modifier = martial_vision
+			years = 5
+		}
+	}
+	after = {
+		hidden_effect = {
+			scope:daukeni_sjalvolki_1_scope = {
+				death = {
+					death_reason = death_vanished
+				}
+			}
+			scope:westernimperial_omitilos_aagiokrata_2_scope = {
+				death = {
+					death_reason = death_vanished
+				}
+			}
+		}
+	}
+}
+#Generic martial vision. Writing by Hapchazzard
+glimpse_reality.0502 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.0502.t
+	desc = glimpse_reality.0502.desc
+	theme = war
+	option = {
+		name = glimpse_reality.0502.a
+		add_character_modifier = {
+			modifier = martial_vision
+			years = 5
+		}
+	}
+}
+#marcher battle of the elysian pass. Writing by pwsoap
+#Note to self, gussy this up once I have time
+glimpse_reality.0503 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.0503.t
+	desc = glimpse_reality.0503.desc
+	theme = battle
+
+	option = {
+		name = glimpse_reality.0503.a
+		add_character_modifier = {
+			modifier = martial_vision
+			years = 5
+		}
+	}
+}
+
+glimpse_reality.0505 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.0505.t
+	desc = glimpse_reality.0505.desc
+	theme = battle
+
+	immediate = {
+		hidden_effect = {
+			create_historical_vision_of_character_effect = { CHARACTER = voyagen_lifepath_26 AGE = 20 }
+			scope:voyagen_lifepath_26_scope = {
+				add_trait = beauty_good_3
+			}
+		}
+	}
+
+	left_portrait = {
+		character = scope:voyagen_lifepath_26_scope
+		animation = personality_bold
+		hide_info = yes
+	}
+
+	option = {
+		name = glimpse_reality.0505.a
+		add_character_modifier = {
+			modifier = martial_vision
+			years = 5
+		}
+	}
+}
+
+##################################
+# 1001 - 1500 : Stewardship Events
+##################################
+
+#Generic stewardship vision. Writing by Hapchazzard
+glimpse_reality.1001 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.1001.t
+	desc = glimpse_reality.1001.desc
+	theme = stewardship_domain_focus
+
+	option = {
+		name = glimpse_reality.1001.a
+		add_character_modifier = {
+			modifier = stewardship_vision
+			years = 5
+		}
+	}
+}
+
+#Writing by Hapchazzard
+glimpse_reality.1002 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.1002.t
+	desc = glimpse_reality.1002.desc
+	theme = stewardship_wealth_focus
+
+	override_background = {
+		reference = wilderness_desert
+	}
+
+	option = {
+		name = glimpse_reality.1002.a
+		add_character_modifier = {
+			modifier = feats_of_engineering
+			years = 5
+		}
+	}
+}
+
+glimpse_reality.1003 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.1003.t
+	desc = {
+		desc = glimpse_reality.1003.desc.a
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_character_flag = gold_1
+				}
+				desc = glimpse_reality.1003.desc.1
+			}
+			triggered_desc = {
+				trigger = {
+					has_character_flag = gold_2
+				}
+				desc = glimpse_reality.1003.desc.2
+			}
+			triggered_desc = {
+				trigger = {
+					has_character_flag = gold_3
+				}
+				desc = glimpse_reality.1003.desc.3
+			}
+			triggered_desc = {
+				trigger = {
+					has_character_flag = gold_4
+				}
+				desc = glimpse_reality.1003.desc.4
+			}
+			triggered_desc = {
+				trigger = {
+					has_character_flag = gold_5
+				}
+				desc = glimpse_reality.1003.desc.5
+			}
+		}
+		desc = glimpse_reality.1003.desc.b
+	}
+	theme = stewardship_domain_focus
+
+	override_background = {
+		reference = dungeon
+	}
+
+	immediate = {
+		random_list = {
+			45 = {
+				add_character_flag = {
+					flag = gold_1
+					days = 1
+				}
+			}
+			40 = {
+				add_character_flag = {
+					flag = gold_2
+					days = 1
+				}
+			}
+			10 = {
+				add_character_flag = {
+					flag = gold_3
+					days = 1
+				}
+			}
+			4 = {
+				add_character_flag = {
+					flag = gold_4
+					days = 1
+				}
+			}
+			1 = {
+				add_character_flag = {
+					flag = gold_5
+					days = 1
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = {
+			has_character_flag = gold_1
+		}
+		name = glimpse_reality.1003.a
+		add_gold = 15
+	}
+	option = {
+		trigger = {
+			has_character_flag = gold_2
+		}
+		name = glimpse_reality.1003.b
+		add_gold = 50
+		stress_impact = {
+			greedy = miniscule_stress_impact_loss
+		}
+	}
+	option = {
+		trigger = {
+			has_character_flag = gold_3
+		}
+		name = glimpse_reality.1003.c
+		add_gold = 100
+		stress_impact = {
+			greedy = minor_stress_impact_loss
+		}
+	}
+	option = {
+		trigger = {
+			has_character_flag = gold_4
+		}
+		name = glimpse_reality.1003.d
+		add_gold = 500
+		stress_impact = {
+			greedy = medium_stress_impact_loss
+		}
+	}
+	option = {
+		trigger = {
+			has_character_flag = gold_5
+		}
+		name = glimpse_reality.1003.e
+		add_gold = 2000
+		stress_impact = {
+			greedy = major_stress_impact_loss
+		}
+	}
+}
+
+glimpse_reality.1004 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.1004.t
+	desc = glimpse_reality.1004.desc
+	theme = stewardship
+
+	left_portrait = {
+		character = root
+		animation = steward
+	}
+
+	immediate = {
+		random_held_county = { save_scope_as = development_vision_county }
+	}
+	option = {
+		name = glimpse_reality.1004.a
+
+		scope:development_vision_county = {
+			change_development_level = 1
+		}
+	}
+}
+
+glimpse_reality.1005 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.1005.t
+	desc = glimpse_reality.1005.desc
+	theme = stewardship
+
+	left_portrait = {
+		character = root
+		animation = steward
+	}
+
+	immediate = {
+		random_held_county = { save_scope_as = development_vision_county }
+	}
+	option = {
+		name = glimpse_reality.1005.a
+
+		scope:development_vision_county = {
+			change_development_level = -1
+		}
+	}
+}
+
+###############################
+# 1501 - 2000 : Intrigue Events
+###############################
+
+#Generic Intrigue Vision. Code by thundershield. Writing by Hapchazzard
+glimpse_reality.1501 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.1501.t
+	desc = glimpse_reality.1501.desc
+	theme = intrigue
+
+	left_portrait = {
+		character = root
+		animation = spymaster
+	}
+
+	option = {
+		name = glimpse_reality.1501.a
+		add_character_modifier = {
+			modifier = intrigue_vision
+			years = 5
+		}
+	}
+}
+
+#Find out a secret. Code by thundershield. Writing by Parzival 
+glimpse_reality.1502 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.1502.t
+	desc = glimpse_reality.1502.desc
+	theme = intrigue
+
+	immediate = {
+		every_neighboring_and_across_water_top_liege_realm_owner = {
+			limit = {
+				any_secret = {
+					NOT = { is_known_by = root }
+				}
+			}
+			add_to_list = targets
+		}
+		every_vassal = {
+			limit = {
+				any_secret = {
+					NOT = { is_known_by = root }
+				}
+				NOT = { highest_held_title_tier = tier_barony }
+			}
+			add_to_list = targets
+		}
+		every_liege_or_above = {
+			limit = {
+				any_secret = {
+					NOT = { is_known_by = root }
+				}
+			}
+			add_to_list = targets
+		}
+		random_in_list = {
+			list = targets
+			save_scope_as = target
+		}
+	}
+	left_portrait = scope:target
+	option = {
+		name = glimpse_reality.1502.a
+		scope:target = {
+			random_secret = {
+				limit = {
+					NOT = { is_known_by = root }
+				}
+				reveal_to = root
+			}
+		}
+	}
+}
+
+###############################
+# 2001 - 2500 : Learning Events
+###############################
+
+glimpse_reality.2001 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.2001.t
+	theme = witchcraft
+	override_background = {
+		reference = magic_ritual
+	}
+	
+	desc = {
+		desc = glimpse_reality.2001.desc.a
+		triggered_desc = {
+			trigger = {
+				faith = faith:vidvaookeyatra
+			}
+			desc = glimpse_reality.2001.desc.vidvaookeyatra
+		}
+		desc = glimpse_reality.2001.desc.b
+	}
+
+	left_portrait = {
+		character = root
+		animation = shock
+	}
+
+	option = {
+		name = glimpse_reality.2001.a
+		add_character_modifier = {
+			modifier = learning_vision
+			years = 5
+		}
+	}
+}
+
+#Northbound
+glimpse_reality.2002 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.2002.t
+	desc = glimpse_reality.2002.desc
+	theme = crown
+
+	immediate = {
+		hidden_effect = {
+			create_historical_vision_of_character_effect = { CHARACTER = voyagen_lifepath_1 AGE = 48 }
+			create_character = {
+				location = root.capital_province
+				culture = culture:carsavisians
+				gender_female_chance = 50
+				save_scope_as = beggar
+			}
+			scope:beggar = {
+				add_trait = spindly
+				add_trait = maimed
+			}
+		}
+	}
+
+	left_portrait = {
+		character = scope:voyagen_lifepath_1_scope
+		animation = disapproval
+		outfit_tags = { northern_war fp1_norse }
+		hide_info = yes
+	}
+	
+	right_portrait = {
+		character = scope:beggar
+		animation = beg
+		hide_info = yes
+	}
+
+	override_background = {
+		reference = alley_day
+	}
+
+	option = {
+		name = glimpse_reality.2002.a
+		add_character_modifier = {
+			modifier = learning_vision
+			years = 5
+		}
+	}
+	after = {
+		scope:beggar = {
+			silent_disappearance_effect = yes
+		}
+		scope:voyagen_lifepath_1_scope = {
+			silent_disappearance_effect = yes
+		}
+	}
+}
+
+#Forgotten. Writing by Hapchazzard
+glimpse_reality.2005 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.2005.t
+	desc = glimpse_reality.2005.desc
+	theme = crown
+
+	immediate = {
+		if = {
+			limit = {
+				title:k_forgotten_saint = {
+					is_title_created  = yes
+					holder = {
+						has_faith = faith:forgotten
+					}
+				}
+			}
+			title:k_forgotten_saint = {
+				holder =  {
+					save_scope_as = makryenis_forgotten_1_scope
+				}
+			}
+		}
+		else = {
+			hidden_effect = {
+				create_historical_vision_of_character_effect = { CHARACTER = makryenis_forgotten_1 AGE = 40 }
+			}
+		}
+	}
+
+	left_portrait = {
+		character = root
+		#hide_info = yes
+	}
+	
+	right_portrait = {
+		character = scope:makryenis_forgotten_1_scope
+		animation = disapproval
+		#hide_info = yes
+	}
+
+	override_background = {
+		reference = magic_ritual
+	}
+
+	option = {
+		name = glimpse_reality.2005.a
+		add_character_modifier = {
+			modifier = forbidden_secrets
+			years = 5
+		}
+	}
+	after = {
+		if = {
+			limit = {
+				NOT = {
+					title:k_forgotten_saint = {
+						is_title_created  = yes
+						holder = {
+							has_faith = faith:forgotten
+						}
+					}
+				}
+			}
+			scope:makryenis_forgotten_1_scope = {
+				silent_disappearance_effect = yes
+			}
+		}
+	}
+}
+
+glimpse_reality.2006 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.2006.t
+	desc = glimpse_reality.2006.desc
+	theme = witchcraft
+	override_background = {
+		reference = magic_ritual
+	}
+
+	left_portrait = {
+		character = root
+		animation = shock
+	}
+
+	option = {
+		name = glimpse_reality.2006.a
+		add_character_modifier = {
+			modifier = feats_of_engineering
+			years = 5
+		}
+	}
+}
+
+
+##############################
+# 2501 - 3000 : Prowess Events
+##############################
+
+############################
+# 3001 - 35000 : Magic Events
+############################
+
+#Generic Magic. Writing by Pinkpanzer
+glimpse_reality.3001 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.3001.t
+	desc = glimpse_reality.3001.desc
+	theme = witchcraft
+	override_background = {
+		reference = magic_ritual
+	}
+
+	left_portrait = {
+		character = root
+		animation = shock
+	}
+
+	option = {
+		name = glimpse_reality.3001.a
+		add_character_modifier = {
+			modifier = magic_vision
+			years = 5
+		}
+	}
+}
+
+#First fogeater. Writing by Hapchazzard
+glimpse_reality.3002 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.3002.t
+	desc = glimpse_reality.3002.desc
+	theme = hunting
+
+	immediate = {
+		create_character = {
+			culture = culture:fog_eaters
+			gender = male
+			location = root.location
+			save_scope_as = first_fogeater
+		}
+	}
+
+	left_portrait = {
+		character = scope:first_fogeater
+		animation = shock
+		hide_info = yes
+	}
+
+	option = {
+		name = glimpse_reality.3002.a
+		add_character_modifier = {
+			modifier = insights_of_the_fog
+			years = 5
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			scope:first_fogeater = {
+				death = {
+					death_reason = death_vanished
+				}
+			}
+		}
+	}
+}
+
+#Tower Vindeon. Writing by pwsoap
+glimpse_reality.3003 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.3003.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					OR = {
+						culture = { has_cultural_pillar = heritage_kemsari }
+						culture = { has_cultural_pillar = heritage_zarasadari }
+						culture = { has_cultural_pillar = heritage_thyssae }
+					}
+				}
+				desc = glimpse_reality.3003.desc.a
+			}
+			desc = glimpse_reality.3003.desc.b
+		}
+	}
+	theme = secret
+
+	override_background = {
+		reference = wilderness_desert
+	}
+
+	left_portrait = {
+		character = root
+		animation = shock
+		hide_info = yes
+	}
+
+	option = {
+		name = glimpse_reality.3003.a
+		add_character_modifier = {
+			modifier = fascinated_by_the_towers
+			years = 5
+		}
+	}
+}
+
+glimpse_reality.3004 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.3004.t
+	desc = glimpse_reality.3004.desc
+	theme = skull
+	override_background = {
+		reference = magic_ritual
+	}
+
+	left_portrait = {
+		character = scope:vision_1_scope
+		hide_info = yes
+		animation = scheme
+	}
+
+	immediate = {
+		hidden_effect = {
+			create_historical_vision_of_character_effect = { CHARACTER = vision_1 AGE = 31 }
+			scope:vision_1_scope = {
+				add_trait = magic_good_1
+			}
+		}
+	}
+	option = {
+		trigger = {
+			OR = {
+				has_trait = humble
+				has_trait = content
+			}
+			NOR = {
+				has_trait = ambitious
+				has_trait = arrogant
+			}
+		}
+		name = glimpse_reality.3004.b
+		add_character_modifier = {
+			modifier = great_magic_vision
+			years = 5
+		}
+	}
+	option = {
+		name = glimpse_reality.3004.a
+		add_character_modifier = {
+			modifier = magic_vision
+			years = 5
+		}
+	}
+	after = {
+		hidden_effect = {
+			scope:vision_1_scope = {
+				death = {
+					death_reason = death_vanished
+				}
+			}
+		}
+	}
+}
+
+glimpse_reality.3005 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.3005.t
+	desc = glimpse_reality.3005.desc
+	theme = hunt_activity
+	override_background = {
+		reference = wilderness_forest_pine
+	}
+
+	option = {
+		name = glimpse_reality.3005.a
+		add_character_modifier = {
+			modifier = magic_vision
+			years = 5
+		}
+	}
+}
+
+glimpse_reality.3006 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.3006.t
+	desc = glimpse_reality.3006.desc
+	theme = witchcraft
+	override_background = {
+		reference = corridor_night
+	}
+
+	option = {
+		name = glimpse_reality.3006.a
+		add_character_modifier = {
+			modifier = frozen_secrets
+			years = 5
+		}
+		add_character_flag = has_frozen_secrets
+	}
+}
+
+glimpse_reality.3007 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.3007.t
+	desc = glimpse_reality.3007.desc
+	theme = witchcraft
+	override_background = {
+		reference = corridor_night
+	}
+
+	option = {
+		name = glimpse_reality.3007.a
+		add_character_modifier = {
+			modifier = magic_vision
+			years = 5
+		}
+	}
+}
+
+glimpse_reality.3008 = { # A Dream of Wings
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.3008.t
+	desc = {
+		desc = glimpse_reality.3008.desc.start
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					OR = { # Must know a core Oltenic language (Xajirkel excluded)
+						knows_language = language_vhanavid
+						knows_language = language_sycharceg
+						knows_language = language_khokhuud 
+					}
+				}
+				desc = glimpse_reality.3008.desc.familiar
+			}
+			desc = glimpse_reality.3008.desc.unfamiliar
+		}
+		desc = glimpse_reality.3008.desc.conclusion
+	}
+	theme = secret
+	override_background = { reference = wilderness_steppe }
+
+	artifact = {
+		target = scope:newly_created_artifact
+		position = lower_center_portrait
+	}
+
+	immediate = {
+		create_artifact = { # Vanilla uses this instead of dedicated scripted effects for similar trinket artifacts
+			name = odd_feather
+			description = odd_feather_desc
+			modifier = artifact_monthly_arcana_lifestyle_xp_1_modifier
+			type = miscellaneous
+			visuals = bird_feather
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = { add_artifact_aspect_modifier_effect = { NAME = dream VALUE = 2 } }
+	}
+
+	option = { # Salacad Option
+		trigger = {
+			faith = {
+				OR = {
+					religion = religion:salacad_religion
+					has_doctrine = tenet_salacad_religion_syncretism
+				}
+			}
+		}
+		name = glimpse_reality.3007.salacad
+		add_piety = major_piety_gain
+		add_character_modifier = {
+			modifier = chronic_nosebleeds_modifier
+			years = 5
+		}
+	}
+
+	option = { # Generic Option
+		trigger = {
+			faith = {
+				NOR = {
+					religion = religion:salacad_religion
+					has_doctrine = tenet_salacad_religion_syncretism
+				}
+			}
+		}
+		name = glimpse_reality.3007.generic
+		add_character_modifier = {
+			modifier = chronic_nosebleeds_modifier
+			years = 5
+		}
+	}
+}
+
+glimpse_reality.3009 = { # The Titan and the Spear
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.3009.t
+	desc = glimpse_reality.3009.desc
+	theme = memory_stress
+	override_background = { reference = ocean }
+	widget = {
+		gui = "event_window_widget_vfx_lightning_storm"
+		container = "foreground_shader_vfx_container"
+	}
+	left_portrait = {
+		character = root
+		animation = survey
+	}
+
+	option = {
+		name = glimpse_reality.3009.a
+		add_aspect_skill_effect = { ASPECT = light VALUE = 1 }
+		add_aspect_skill_effect = { ASPECT = sand VALUE = 1 }
+	}
+}
+
+##########################################
+# 3501 - 4000 : Character Recruitment Events
+##########################################
+
+#Poet. Writing by Kehrim
+glimpse_reality.3501 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.3501.t
+	desc = glimpse_reality.3501.desc
+	theme = diplomacy
+	override_background = {
+		reference = garden
+	}
+
+	immediate = {
+		create_character = {
+			template = poet_template
+			location = root.location
+			save_scope_as = poet
+		}
+	}
+
+	left_portrait = scope:poet
+
+	option = {
+		name = glimpse_reality.3501.a
+		pay_short_term_gold = {
+			target = scope:poet
+			gold = minor_gold_min_value
+		}
+		add_courtier = scope:poet
+	}
+	option = {
+		name = glimpse_reality.3501.b
+	}
+}
+
+#Scallywag. Writing by Kehrim
+glimpse_reality.3502 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.3502.t
+	desc = glimpse_reality.3502.desc
+	theme = feast_activity
+	override_background = {
+		reference = tavern
+	}
+
+	immediate = {
+		create_character = {
+			template = scallywag_template
+			location = root.capital_province
+			save_scope_as = scallywag
+		}
+	}
+
+	left_portrait = scope:scallywag
+
+	option = {
+		name = glimpse_reality.3502.a
+		pay_short_term_gold = {
+			target = scope:scallywag
+			gold = minor_gold_min_value
+		}
+		add_courtier = scope:scallywag
+	}
+	option = {
+		name = glimpse_reality.3502.b
+	}
+}
+
+#Recruit Commander. Code by Thundershield, Writing by Parzival
+glimpse_reality.3511 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.3511.t
+	desc = glimpse_reality.3511.desc
+	theme = martial
+	override_background = {
+		reference = army_camp
+	}
+
+	immediate = {
+		create_character = {
+			location = root.capital_province
+			template = new_commander_character
+			faith = root.faith
+			culture = root.culture
+			save_scope_as = commander
+			gender_female_chance = {
+				if = {
+					limit = {
+						root.faith = { has_doctrine = doctrine_gender_male_dominated }
+					}
+					add = 0
+				}
+				else_if = {
+					limit = {
+						root.faith = { has_doctrine = doctrine_gender_female_dominated }
+					}
+					add = 100
+				}
+				else = {
+					add = 50
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = glimpse_reality.3511.a
+		pay_short_term_gold = {
+			target = scope:commander
+			gold = minor_gold_min_value
+		}
+		add_courtier = scope:commander
+	}
+	option = {
+		name = glimpse_reality.3511.b
+	}
+}
+
+#Recruit Warrior. Writing by Kehrim
+glimpse_reality.3512 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.3512.t
+	desc = glimpse_reality.3512.desc
+	theme = battle
+
+	immediate = {
+		create_character = {
+			location = root.capital_province
+			template = great_fighter_template
+			faith = root.faith
+			culture = root.culture
+			save_scope_as = fighter
+		}
+	}
+
+	left_portrait = {
+		character = scope:fighter
+		animation = marshal
+	}
+
+	option = {
+		name = glimpse_reality.3512.a
+		pay_short_term_gold = {
+			target = scope:fighter
+			gold = minor_gold_min_value
+		}
+		add_courtier = scope:fighter
+	}
+	option = {
+		name = glimpse_reality.3512.b
+	}
+}
+
+#Skilled Merchant. By Kehrim
+glimpse_reality.3521 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.3521.t
+	desc = glimpse_reality.3521.desc
+	theme = stewardship
+
+	immediate = {
+		create_character = {
+			template = skilled_merchant_template
+			location = root.capital_province
+			save_scope_as = merchant
+		}
+	}
+
+	left_portrait = scope:merchant
+
+	option = {
+		name = glimpse_reality.3521.a
+		pay_short_term_gold = {
+			target = scope:merchant
+			gold = medium_gold_value
+		}
+		add_courtier = scope:merchant
+	}
+	option = {
+		name = glimpse_reality.3521.b
+	}
+}
+
+#Recruit Assasin. Code by Thundershield. Writing by Hapchazzard
+glimpse_reality.3531 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.3531.t
+	desc = glimpse_reality.3531.desc
+	theme = intrigue
+	override_background = {
+		reference = alley_night
+	}
+
+	immediate = {
+		create_character = {
+			template = assassin_template
+			location = root.capital_province
+			save_scope_as = assassin
+		}
+	}
+
+	left_portrait = {
+		character = scope:assassin
+		animation = spymaster
+	}
+
+	option = {
+		name = glimpse_reality.3531.a
+		pay_short_term_gold = {
+			target = scope:assassin
+			gold = minor_gold_min_value
+		}
+		add_courtier = scope:assassin
+	}
+	option = {
+		name = glimpse_reality.3531.b
+	}
+}
+
+#Recruit Docter. Code by Thundershield. Writing by Kehrim
+glimpse_reality.3541 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.3541.t
+	desc = glimpse_reality.3541.desc
+	theme = healthcare
+
+	immediate = {
+		create_character = {
+			template = physician_template
+			location = root.capital_province
+			save_scope_as = physician
+		}
+		create_character = {
+			random_traits = yes
+			faith = root.faith
+			gender_female_chance = 50
+			culture = root.culture
+			location = root.capital_province
+			save_scope_as = patient
+		}
+		hidden_effect = {
+			scope:patient = {
+				add_trait = wounded_3
+			}
+		}
+	}
+
+	left_portrait = {
+		character = scope:physician
+	}
+
+	right_portrait = {
+		character = scope:patient
+		animation = pain
+		hide_info = yes
+	}
+
+	option = {
+		name = glimpse_reality.3541.a
+		trigger_event = {
+			id = glimpse_reality.3542
+			days = 5
+		}
+	}
+	option = {
+		name = glimpse_reality.3541.b
+	}
+}
+#Follow up event
+glimpse_reality.3542 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.3542.t
+	desc = glimpse_reality.3542.desc
+	theme = healthcare
+	immediate = {
+		scope:patient = {
+			remove_trait = wounded_3
+		}
+	}
+	left_portrait = {
+		character = scope:physician
+	}
+	right_portrait = {
+		character = scope:patient
+	}
+	option = {
+		name = glimpse_reality.3542.a
+		pay_short_term_gold = {
+			target = scope:assassin
+			gold = minor_gold_min_value
+		}
+		add_courtier = scope:physician
+	}
+	option = {
+		name = glimpse_reality.3542.b
+		scope:physician = {
+			silent_disappearance_effect = yes
+		}
+	}
+	after = {
+		scope:partient = {
+			silent_disappearance_effect = yes
+		}
+	}
+}
+#Outcast Priest. Writing by Kehrim
+glimpse_reality.3543 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.3543.t
+	desc = glimpse_reality.3543.desc
+	theme = hunt_activity
+	override_icon = {
+		reference = "gfx/interface/icons/event_types/type_learning.dds"
+	}
+	immediate = {
+		create_character = {
+			template = outcast_priest_template
+			location = root.capital_province
+			save_scope_as = priest
+		}
+	}
+
+	left_portrait = scope:priest
+	option = {
+		name = glimpse_reality.3543.a
+		pay_short_term_gold = {
+			target = scope:priest
+			gold = minor_gold_min_value
+		}
+		add_courtier = scope:priest
+	}
+	option = {
+		name = glimpse_reality.3543.b
+	}
+}
+
+#Child Prodigy. Writing by Kehrim
+glimpse_reality.3561 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.3561.t
+	desc = glimpse_reality.3561.desc
+	theme = witchcraft
+	override_background = {
+		reference = burning_building
+	}
+	immediate = {
+		random_list = {
+			10 = {
+				create_character = {
+					template = child_prodigy_intellect_template
+					location = root.capital_province
+					dynasty = none
+					save_scope_as = child_prodigy
+				}
+			}
+			10 = {
+				create_character = {
+					template = child_prodigy_magic_template
+					location = root.capital_province
+					dynasty = none
+					save_scope_as = child_prodigy
+				}
+			}
+		}
+	}
+	left_portrait = {
+		character = scope:child_prodigy
+		hide_info = no
+	}
+	option = {
+		name = glimpse_reality.3561.a
+		add_courtier = scope:child_prodigy
+	}
+	option = {
+		name = glimpse_reality.3561.b
+		hidden_effect = {
+			scope:child_prodigy = {
+				death = {
+					death_reason = death_vanished
+				}
+			}
+		}
+	}
+}
+
+#Mixed Magi. Writing by Kehrim
+glimpse_reality.3562 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.3562.t
+	desc = glimpse_reality.3562.desc
+	theme = witchcraft
+	override_background = {
+		reference = corridor_night	
+	}
+	immediate = {
+		create_character = {
+			template = random_magi_template
+			location = root.capital_province
+			dynasty = none
+			save_scope_as = generated_magi
+		}
+	}
+	left_portrait = {
+		character = scope:generated_magi
+		hide_info = no
+	}
+	option = {
+		name = glimpse_reality.3562.a
+		add_courtier = scope:generated_magi
+	}
+	option = {
+		name = glimpse_reality.3562.b
+		hidden_effect = {
+			scope:generated_magi = {
+				death = {
+					death_reason = death_vanished
+				}
+			}
+		}
+	}
+}
+
+##############################
+# 4501 - 5000 : Rare Events
+##############################
+
+#IQ. Writing by Ultimate Victory
+glimpse_reality.4501 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.4501.t
+	desc = {
+		desc = glimpse_reality.4501.desc.1
+		triggered_desc = {
+			trigger = {
+				has_character_flag = has_frozen_secrets
+			}
+			desc = glimpse_reality.4501.desc.frozen_secrets
+		}
+		desc = glimpse_reality.4501.desc.2
+	}
+	theme = witchcraft
+	override_background = {
+		reference = corridor_night	
+	}
+	left_portrait = {
+		character = root
+		#animation = personality_coward
+	}
+	option = {
+		name = glimpse_reality.4501.a
+		flavor = glimpse_reality.4501.a.flavor
+		custom_tooltip = magic_prowess_duel
+		random_list = {
+			30 = {
+				modifier = {
+					add = {
+						value = var:magic_prowess
+						multiply = 2
+					}
+				}
+				custom_tooltip = glimpse_reality.4501.success.tt
+				trigger_event = glimpse_reality.4502
+			}
+			70 = {
+				modifier = {
+					add = {
+						value = var:magic_prowess
+						multiply = -2
+					}
+				}
+				trigger_event = glimpse_reality.4503
+				custom_tooltip = glimpse_reality.4501.failure.tt
+			}
+		}
+	}
+	option = {
+		name = glimpse_reality.4501.b
+		flavor = glimpse_reality.4501.b.flavor
+		add_character_modifier = {
+			modifier = great_magic_vision
+			years = 5
+		}
+	}
+}
+#Success
+glimpse_reality.4502 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.4502.t
+	desc = glimpse_reality.4502.desc
+	theme = witchcraft
+	override_background = {
+		reference = corridor_night	
+	}
+	left_portrait = {
+		character = root
+		#animation = personality_coward
+	}
+	immediate = {
+		learn_global_spell_effect = { SPELL_IDENTIFIER = inter_in_ice }
+	}
+	option = {
+		name = glimpse_reality.4502.a
+	}
+}
+#Failure
+glimpse_reality.4503 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.4503.t
+	desc = glimpse_reality.4503.desc
+	theme = witchcraft
+	override_background = {
+		reference = corridor_night	
+	}
+	left_portrait = {
+		character = root
+		animation = pain
+	}
+	immediate = {
+		add_character_modifier = {
+			modifier = frozen_mind
+		}
+	}
+	option = {
+		name = glimpse_reality.4503.a
+	}
+}
+
+#Staff. Written by Mayor
+glimpse_reality.4511 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.4511.t
+	desc = glimpse_reality.4511.desc
+	theme = witchcraft
+	override_background = {
+		reference = magic_ritual	
+	}
+	left_portrait = {
+		character = root
+		#animation = personality_coward
+	}
+	option = {
+		name = glimpse_reality.4511.a
+		flavor = glimpse_reality.4511.a.flavor
+		custom_tooltip = magic_prowess_duel
+		random_list = {
+			50 = {
+				modifier = {
+					add = {
+						value = var:magic_prowess
+						multiply = 4
+					}
+				}
+				modifier = {
+					add = {
+						value = magi_potency
+						multiply = -10
+					}
+				}
+				max = 95
+				custom_tooltip = glimpse_reality.4511.success.tt
+				trigger_event = glimpse_reality.4512
+			}
+			50 = {
+				modifier = {
+					add = {
+						value = var:magic_prowess
+						multiply = -4
+					}
+				}
+				modifier = {
+					add = {
+						value = magi_potency
+						multiply = 10
+					}
+				}
+				min = 5
+				trigger_event = glimpse_reality.4513
+				custom_tooltip = glimpse_reality.4511.failure.tt
+			}
+		}
+	}
+	option = {
+		name = glimpse_reality.4511.b
+		flavor = glimpse_reality.4511.b.flavor
+		add_character_modifier = {
+			modifier = great_magic_vision
+			years = 5
+		}
+	}
+}
+
+#Success
+glimpse_reality.4512 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.4512.t
+	desc = glimpse_reality.4512.desc
+	theme = witchcraft
+	override_background = {
+		reference = magic_ritual	
+	}
+	left_portrait = {
+		character = root
+		#animation = personality_coward
+	}
+	immediate = {
+		add_character_modifier = {
+			modifier = freezing_touch
+		}
+	}
+	option = {
+		name = glimpse_reality.4512.a
+		learn_global_spell_effect = { SPELL_IDENTIFIER = freeze_the_earth }
+	}
+}
+#Failure
+glimpse_reality.4513 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.4513.t
+	desc = glimpse_reality.4513.desc
+	theme = witchcraft
+	override_background = {
+		reference = magic_ritual	
+	}
+	left_portrait = {
+		character = root
+		animation = pain
+	}
+	immediate = {
+		add_character_modifier = {
+			modifier = frozen_mind
+		}
+	}
+	option = {
+		name = glimpse_reality.4513.a
+	}
+}
+
+# Agionists Encounter the Eye, by Hap
+glimpse_reality.4515 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.4515.t
+	desc = glimpse_reality.4515.desc
+	theme = witchcraft
+	override_background = {
+		reference = magic_ritual	
+	}
+	left_portrait = {
+		character = root
+		#animation = personality_coward
+	}
+	option = {
+		name = glimpse_reality.4515.a
+		flavor = glimpse_reality.4515.a.flavor
+		custom_tooltip = magic_prowess_duel
+		random_list = {
+			50 = {
+				modifier = {
+					add = {
+						value = var:magic_prowess
+						multiply = 4
+					}
+				}
+				modifier = {
+					add = {
+						value = magi_potency
+						multiply = -10
+					}
+				}
+				max = 95
+				custom_tooltip = glimpse_reality.4515.success.tt
+				trigger_event = glimpse_reality.4516
+			}
+			50 = {
+				modifier = {
+					add = {
+						value = var:magic_prowess
+						multiply = -4
+					}
+				}
+				modifier = {
+					add = {
+						value = magi_potency
+						multiply = 10
+					}
+				}
+				min = 5
+				trigger_event = glimpse_reality.4517
+				custom_tooltip = glimpse_reality.4515.failure.tt
+			}
+		}
+	}
+	option = {
+		name = glimpse_reality.4515.b
+		flavor = glimpse_reality.4515.b.flavor
+		add_character_modifier = {
+			modifier = great_magic_vision
+			years = 5
+		}
+	}
+}
+
+glimpse_reality.4516 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.4516.t
+	desc = glimpse_reality.4516.desc
+	theme = witchcraft
+	override_background = {
+		reference = magic_ritual	
+	}
+	left_portrait = {
+		character = root
+		#animation = personality_coward
+	}
+	option = {
+		name = glimpse_reality.4516.a
+		add_learning_skill = 2
+		add_intrigue_skill = 2
+		add_stress = medium_stress_impact_gain
+	}
+}
+#Failure
+glimpse_reality.4517 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.4517.t
+	desc = glimpse_reality.4517.desc
+	theme = witchcraft
+	override_background = {
+		reference = magic_ritual	
+	}
+	left_portrait = {
+		character = root
+		animation = pain
+	}
+	immediate = {
+	}
+	option = {
+		name = glimpse_reality.4517.a
+		add_learning_skill = 1
+		add_stress = major_stress_impact_gain
+	}
+}
+
+#Generic Failure Events
+glimpse_reality.9501 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.9501.t
+	desc = glimpse_reality.9501.desc
+	theme = witchcraft
+	override_background = {
+		reference = magic_ritual	
+	}
+	left_portrait = {
+		character = root
+		animation = pain
+	}
+	immediate = {
+		add_character_modifier = {
+			modifier = refusal_of_visions
+		}
+	}
+	option = {
+		name = glimpse_reality.9501.a
+	}
+}
+
+glimpse_reality.9502 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.9502.t
+	desc = glimpse_reality.9502.desc
+	theme = witchcraft
+	override_background = {
+		reference = magic_ritual	
+	}
+	left_portrait = {
+		character = root
+		animation = pain
+	}
+	immediate = {
+		add_character_modifier = {
+			modifier = imprisoned_soul
+		}
+	}
+	option = {
+		name = glimpse_reality.9502.a
+	}
+}
+
+glimpse_reality.9503 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.9503.t
+	desc = glimpse_reality.9503.desc
+	theme = witchcraft
+	override_background = {
+		reference = magic_ritual	
+	}
+	left_portrait = {
+		character = root
+		animation = pain
+	}
+	immediate = {
+		add_stress = medium_stress_impact_gain
+	}
+	option = {
+		name = glimpse_reality.9503.a
+	}
+}
+
+glimpse_reality.9504 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.9504.t
+	desc = glimpse_reality.9504.desc
+	theme = witchcraft
+	override_background = {
+		reference = magic_ritual	
+	}
+	left_portrait = {
+		character = root
+		animation = pain
+	}
+	immediate = {
+		add_character_modifier = {
+			modifier = sorrow_of_the_dragons
+		}
+	}
+	option = {
+		name = glimpse_reality.9504.a
+	}
+}
+
+glimpse_reality.9505 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.9505.t
+	desc = glimpse_reality.9505.desc
+	theme = witchcraft
+	override_background = {
+		reference = magic_ritual	
+	}
+	left_portrait = {
+		character = root
+		animation = pain
+	}
+	immediate = {
+		add_character_modifier = {
+			modifier = beheld_the_void
+		}
+	}
+	option = {
+		name = glimpse_reality.9505.a
+	}
+}
+
+glimpse_reality.9506 = {
+	type = character_event
+	content_source = dlc_gh
+	title = glimpse_reality.9506.t
+	desc = glimpse_reality.9506.desc
+	theme = witchcraft
+	override_background = {
+		reference = magic_ritual	
+	}
+	left_portrait = {
+		character = root
+		animation = pain
+	}
+	immediate = {
+		add_character_modifier = {
+			modifier = unsettling_vision
+		}
+	}
+	option = {
+		name = glimpse_reality.9506.a
+	}
+}

@@ -1,0 +1,391 @@
+﻿##################################################
+##			Izikalek Flavour Events				##
+#
+# gh_izikalek_events.0001 - Hidden Event: Chance to Overturn a Minor Herdstone
+#
+# gh_izikalek_events.0002 - Less Hidden Event: A Minor Herdstone has been Overturned
+#
+# gh_izikalek_events.0003 - Nalmavast Priesthood has been Re-Established
+#
+# gh_izikalek_events.0004 - Nalmavast Priesthood has been Re-Established (notification version)
+#
+##################################################
+
+namespace = gh_izikalek_events
+
+##################################################
+
+gh_izikalek_events.0001 = { # Hidden Event: Chance to Overturn a Minor Herdstone
+	hidden = yes
+	scope = army
+
+	trigger = {
+		scope:barony = {
+			holder = {
+				culture = { has_cultural_parameter = enable_herdstone_building }
+				NOT = { has_character_flag = had_event_gh_izikalek_events_0002 }
+			}
+			title_province = { is_any_metropolis_or_ruined_district_trigger = no }
+		}
+		scope:county = {
+			culture = { has_cultural_parameter = enable_herdstone_building }
+			NOT = { has_county_modifier = recently_sacked_modifier }
+		}
+		scope:raider = { # The raider must not value herdstones
+			faith = {
+				NOR = {
+					has_doctrine = tenet_nalmavast_religion_syncretism
+					religion = religion:nalmavast_religion
+				}
+			}
+			culture = { NOT = { has_cultural_parameter = enable_herdstone_building } }
+		}
+	}
+
+	immediate = {
+		random = {
+			chance = 80
+			modifier = { # Destroy idolatry
+				add = 5
+				scope:raider = { has_trait = zealous }
+			}
+			modifier = { # Take pleasure in the suffering of others
+				add = 15
+				scope:raider = { has_trait = sadistic }
+			}
+			scope:barony = {
+				save_scope_as = desecrated_barony
+				county = { save_scope_as = desecrated_county }
+				holder = { trigger_event = gh_izikalek_events.0002 }
+			}
+		}
+	}
+}
+
+gh_izikalek_events.0002 = {	# Less Hidden Event: A Minor Herdstone has been Overturned
+	type = character_event
+	content_source = dlc_gh
+	title = gh_izikalek_events.0002.t
+	desc = gh_izikalek_events.0002.desc
+	theme = battle
+	override_background = { reference = burning_building }
+	left_portrait = {
+		character = root
+		animation = worry
+		triggered_animation = {
+			trigger = {
+				ai_vengefulness >= medium_positive_ai_value
+				ai_boldness > high_negative_ai_value
+			}
+			animation = rage
+		}
+	}
+	right_portrait = {
+		character = scope:herdstone_overturner
+		animation = anger
+	}
+
+	immediate = {
+		add_character_flag = {
+			flag = had_event_gh_izikalek_events_0002
+			years = 5
+		}
+		scope:raider = { save_scope_as = herdstone_overturner }
+		scope:desecrated_county = { change_county_control = -50 }
+	}
+
+	option = { # Rebuild
+		name = gh_izikalek_events.0002.a
+		remove_short_term_gold = medium_gold_value
+		scope:desecrated_county = {
+			add_county_modifier = {
+				modifier = recovery_efforts_modifier
+				years = 5
+			}
+		}
+		stress_impact = {
+			compassionate = minor_stress_impact_loss
+			generous = miniscule_stress_impact_loss
+			stubborn = miniscule_stress_impact_loss
+			greedy = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = -0.5
+				ai_compassion = 0.5
+			}
+			modifier = {
+				add = 50
+				has_trait = stubborn
+			}
+		}
+	}
+
+	option = { # Neglect
+		name = gh_izikalek_events.0002.b
+		scope:desecrated_county = {
+			add_county_modifier = {
+				modifier = county_neglect_modifier
+				years = 5
+			}
+		}
+		add_prestige = medium_prestige_loss
+		stress_impact = {
+			compassionate = medium_stress_impact_gain
+			generous = minor_stress_impact_gain
+			stubborn = minor_stress_impact_gain
+			greedy = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = 0.75
+				ai_compassion = -0.5
+			}
+			modifier = {
+				add = -50
+				has_trait = stubborn
+			}
+		}
+	}
+
+	option = { # Revenge
+		name = gh_izikalek_events.0002.c
+		trigger = {
+			OR = {
+				any_scheme = {
+					scheme_type = murder
+					scheme_target_character = scope:herdstone_overturner
+				}
+				can_start_scheme = {
+					type = murder
+					target_character = scope:herdstone_overturner
+				}
+			}
+		}
+		scope:desecrated_county = {
+			add_county_modifier = {
+				modifier = county_neglect_modifier
+				years = 5
+			}
+		}
+		scope:herdstone_overturner = {
+			progress_towards_rival_effect = {
+				REASON = rival_crows_feet
+				CHARACTER = root
+				OPINION = 0
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_scheme = {
+						scheme_type = murder
+						scheme_target_character = scope:herdstone_overturner
+					}
+				}
+			}
+			start_scheme = {
+				type = murder
+				target_character = scope:herdstone_overturner
+			}
+		}
+		custom_tooltip = gh_izikalek_events.0002.c.tt
+		hidden_effect = {
+			random_scheme = {
+				limit = {
+					scheme_type = murder
+					scheme_target_character = scope:herdstone_overturner
+				}
+				add_scheme_modifier = { type = extra_success_chance_modifier }
+			}
+		}
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_vengefulness = 0.5
+				ai_honor = 0.25
+			}
+		}
+	}
+}
+
+gh_izikalek_events.0003 = {
+	type = character_event
+	title = gh_izikalek_events.0003.t
+	desc = gh_izikalek_events.0003.desc
+	theme = faith
+	override_background = { reference = temple }
+	left_portrait = root
+	right_portrait = root.faith.religious_head
+	
+	immediate = {
+		save_scope_as = reformer
+		custom_tooltip = {
+			text = gh_izikalek_events_0003_tt
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			if = { # Decide who will be the new HoF
+				limit = { any_theocratic_vassal = { faith = root.faith } }
+				ordered_theocratic_vassal = {
+					limit = { faith = root.faith }
+					order_by = head_of_faith_selection_weight
+					save_scope_as = new_religious_head
+				}
+			}
+			else = {	
+				create_character = {
+					location = root.capital_province
+					age = { 30 50 }
+					gender_female_chance = root_faith_clergy_gender_female_chance
+					trait = education_learning_4
+					faith = root.faith
+					culture = root.culture
+					learning = { 14 22 }
+					save_scope_as = new_religious_head
+				}
+			}
+			title:d_nalmavast_rel = {
+				change_title_holder = {
+					holder = scope:new_religious_head
+					change = scope:change
+				}
+				save_scope_as = priesthood
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+		every_player = { # Notify everyone to whom it might be relevant
+			limit = {
+				NOT = { this = root }
+				OR = {
+					faith = root.faith
+					is_vassal_of = root
+					is_liege_or_above_of = root
+				}
+			}
+			trigger_event = gh_izikalek_events.0004
+		}
+	}
+
+	option = {
+		name = gh_izikalek_events.0003.a
+		trigger = { scope:nalmavast_tradition = yes }
+		root.faith = {
+			remove_doctrine = unreformed_faith_doctrine
+			remove_doctrine = special_doctrine_not_allowed_to_hof
+		}
+	}
+
+	option = {
+		name = gh_izikalek_events.0003.b
+		trigger = { scope:nalmavast_pluralist = yes }
+		root.faith = {
+			remove_doctrine = unreformed_faith_doctrine
+			remove_doctrine = special_doctrine_not_allowed_to_hof
+			restore_nalmavast_priesthood_decision_pluralist = yes
+		}
+	}
+
+	option = {
+		name = gh_izikalek_events.0003.c
+		trigger = { scope:nalmavast_righteous = yes }
+		root.faith = {
+			remove_doctrine = unreformed_faith_doctrine
+			remove_doctrine = special_doctrine_not_allowed_to_hof
+			restore_nalmavast_priesthood_decision_righteous = yes
+		}
+	}
+
+	option = {
+		name = gh_izikalek_events.0003.d
+		trigger = { scope:nalmavast_fundamentalist = yes }
+		root.faith = {
+			remove_doctrine = unreformed_faith_doctrine
+			remove_doctrine = special_doctrine_not_allowed_to_hof
+			restore_nalmavast_priesthood_decision_fundamentalist = yes
+		}
+	}
+}
+
+gh_izikalek_events.0004 = {
+	type = character_event
+	title = gh_izikalek_events.0004.t
+	desc = {
+		desc = gh_izikalek_events.0004.desc
+		triggered_desc = {
+			trigger = { scope:nalmavast_tradition = yes }
+			desc = gh_izikalek_events.0004.desc.tradition
+		}
+		triggered_desc = {
+			trigger = { scope:nalmavast_pluralist = yes }
+			desc = gh_izikalek_events.0004.desc.pluralist
+		}
+		triggered_desc = {
+			trigger = { scope:nalmavast_righteous = yes }
+			desc = gh_izikalek_events.0004.desc.righteous
+		}
+		triggered_desc = {
+			trigger = { scope:nalmavast_fundamentalist = yes }
+			desc = gh_izikalek_events.0004.desc.fundamentalist
+		}
+	}
+	theme = faith
+	override_background = { reference = temple }
+	left_portrait = scope:reformer
+	lower_center_portrait = scope:new_religious_head
+	right_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { has_trait = cynical }
+			animation = boredom
+		}
+	}
+
+	immediate = {
+		custom_tooltip = gh_izikalek_events_0003_tt
+		show_as_tooltip = {
+			scope:reformer.faith = {
+				remove_doctrine = unreformed_faith_doctrine
+				remove_doctrine = special_doctrine_not_allowed_to_hof
+				if = {
+					limit = { scope:nalmavast_pluralist = yes }
+					restore_nalmavast_priesthood_decision_pluralist = yes
+				}
+				if = {
+					limit = { scope:nalmavast_righteous = yes }
+					restore_nalmavast_priesthood_decision_righteous = yes
+				}
+				if = {
+					limit = { scope:nalmavast_fundamentalist = yes }
+					restore_nalmavast_priesthood_decision_fundamentalist = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = {
+			faith = scope:reformer.faith
+			NOT = { has_trait = cynical }
+		}
+		name = gh_izikalek_events.0004.a
+	}
+
+	option = {
+		trait = cynical
+		trigger = {
+			faith = scope:reformer.faith
+			has_trait = cynical
+		}
+		name = gh_izikalek_events.0004.b
+	}
+
+	option = {
+		trigger = { NOT = { faith = scope:reformer.faith } }
+		name = gh_izikalek_events.0004.c
+	}
+}

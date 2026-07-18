@@ -1,0 +1,3672 @@
+﻿namespace = sjal_nicknames
+
+##############################################################################################
+# 0001-0100: Generic nicknames
+# 0101-0200: Trait-based nicknames
+# 0301-0500: Action-based nicknames
+#	301-400: Against aversarians or specific to migrations
+#	401-500: Other
+# 0501-: Unique, set global flag
+##############################################################################################
+
+sjal_nicknames.1000 = { #Shown new nickname, chance to react in various ways
+	type = character_event
+	content_source = dlc_gh
+	title = sjal_nicknames.1.t
+	desc = sjal_nicknames.1.desc
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = {
+				has_bad_nickname = yes
+			}
+  			animation = shame
+  		}
+	}
+	theme = dynasty
+	trigger = {
+		has_any_nickname = yes
+	}
+
+	option = { #Accept nickname
+		name = sjal_nicknames.1.a #Memorable
+		trigger = {
+			has_bad_nickname = no
+		}
+		add_prestige = minor_prestige_gain
+		ai_chance = {
+			base = 1
+		}
+	}
+	
+	option = { #Accept bad nickname
+		name = {
+			trigger = {
+				OR = {
+					has_trait = humble
+					has_trait = trusting
+					has_trait = forgiving
+					has_trait = content
+					has_trait = calm
+				}
+				NOR = {
+					has_trait = arrogant
+				}
+			}
+			text = sjal_nicknames.1.a_bad_1 #I guess it fits me...
+		}
+		name = sjal_nicknames.1.a_bad_2 #What?! These absolute...
+		trigger = {
+			has_bad_nickname = yes
+		}
+		stress_impact = {
+			base = medium_stress_impact_gain
+			humble = minor_stress_impact_gain
+			arrogant = major_stress_impact_gain
+		}
+		add_prestige = minor_prestige_loss
+		ai_chance = {
+			base = 1
+		}
+	}
+
+	option = { #Reject nickname
+		name = {
+			trigger = {
+				OR = {
+					NOR = {
+						has_trait = humble
+						has_trait = trusting
+						has_trait = forgiving
+						has_trait = content
+						has_trait = calm
+					}
+					has_trait = arrogant
+				}
+			}
+			text = sjal_nicknames.1.b_1 #I will not be remembered this way!
+		}
+		name = sjal_nicknames.1.b_2 #They can do better than that
+		trigger = {
+			has_bad_nickname = no
+		}
+		random_list = {
+			50 = {
+				desc = sjal_nicknames.1.b.success
+				remove_nickname = yes
+			}
+			25 = {
+				desc = sjal_nicknames.1.b.failure
+				add_stress = minor_stress_gain
+			}
+			25 = {
+				desc = sjal_nicknames.1.b.new_nickname
+				trigger_event = {
+					on_action = sjal_general_nickname_selection
+				}
+			}
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = { #Reject bad nickname
+		name = sjal_nicknames.1.b_bad #I will not be remembered this way!
+		trigger = {
+			has_bad_nickname = yes
+		}
+		random_list = {
+			50 = {
+				desc = sjal_nicknames.1.b.success
+				remove_nickname = yes
+			}
+			25 = {
+				desc = sjal_nicknames.1.b.failure
+				add_stress = medium_stress_impact_gain
+				add_prestige = medium_prestige_loss
+			}
+			25 = {
+				desc = sjal_nicknames.1.b.new_nickname
+				trigger_event = {
+					on_action = sjal_general_nickname_selection
+				}
+			}
+		}
+		ai_chance = {
+			base = 2
+		}
+	}
+
+	option = { #Take clan-name
+		name = {
+			trigger = {
+				has_bad_nickname = yes
+			}
+			text = sjal_nicknames.1.c_1 #I will wear it with honor
+		}
+		name = sjal_nicknames.1.c_2 #My kin will remember me
+		add_internal_flag = special
+		trigger = {
+			sjal_nickname_has_translation = yes
+		}
+		
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = house
+					exists = house.house_head
+					is_house_head = no
+				}
+				found_cadet_house_decision_effect = {
+					CHARACTER = root
+					PRESTIGE = 0
+				}
+			}
+		}
+		translate_sjalvolki_nickname_effect = yes
+		if = {
+			limit = {
+				has_bad_nickname = yes
+			}
+			add_stress = minor_stress_impact_gain
+			add_prestige = medium_prestige_loss
+		}
+		else = {
+			add_prestige = minor_prestige_gain
+		}
+		dynasty = { add_dynasty_prestige = minor_dynasty_prestige_gain }
+		
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+###Generics###
+sjal_nicknames.0001 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_thin_hair
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_thin_hair }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_thin_hair
+		}
+    }
+}
+sjal_nicknames.0002 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_flat_nose
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_flat_nose }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_flat_nose
+		}
+    }
+}
+sjal_nicknames.0003 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_two_handed
+		} }
+		#NOT = {
+		#	has_trait = one_hand #This trait does not exist whoops
+		#}
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_two_handed }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_two_handed
+		}
+    }
+}
+sjal_nicknames.0004 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_black_eyes
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_black_eyes }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_black_eyes
+		}
+    }
+}
+sjal_nicknames.0005 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_long_tusk
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_long_tusk }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_long_tusk
+		}
+    }
+}
+sjal_nicknames.0006 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_bear_cloak
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_bear_cloak }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_bear_cloak
+		}
+    }
+}
+sjal_nicknames.0007 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_hoar_frost
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_hoar_frost }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_hoar_frost
+		}
+    }
+}
+sjal_nicknames.0008 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_horse_wolf
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_horse_wolf }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_horse_wolf
+		}
+    }
+}
+sjal_nicknames.0009 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_bee_wolf
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_bee_wolf }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_bee_wolf
+		}
+    }
+}
+sjal_nicknames.0010 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_boar_tooth
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_boar_tooth }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_boar_tooth
+		}
+    }
+}
+sjal_nicknames.0011 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_reed_born
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_reed_born }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_reed_born
+		}
+    }
+}
+sjal_nicknames.0012 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_black_shield
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_black_shield }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_black_shield
+		}
+    }
+}
+sjal_nicknames.0013 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_white_shield
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_white_shield }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_white_shield
+		}
+    }
+}
+sjal_nicknames.0014 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_red_shield
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+		modifier = {
+			factor = 0.5
+			NOR = {
+				has_trait = wrathful
+				has_trait = berserker
+			}
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_red_shield }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_red_shield
+		}
+    }
+}
+sjal_nicknames.0015 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_stone_jaw
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_stone_jaw }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_stone_jaw
+		}
+    }
+}
+sjal_nicknames.0016 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_hang_jaw
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_hang_jaw }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_hang_jaw
+		}
+    }
+}
+sjal_nicknames.0017 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_red_mane
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_red_mane }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_red_mane
+		}
+    }
+}
+sjal_nicknames.0018 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_long_mane
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_long_mane }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_long_mane
+		}
+    }
+}
+sjal_nicknames.0019 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_left_handed
+		} }
+	}
+	weight_multiplier = {
+		base = 1
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_left_handed }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_left_handed
+		}
+    }
+}
+sjal_nicknames.0020 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_longbraids
+		} }
+	}
+	weight_multiplier = {
+		base = 1
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_longbraids }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_longbraids
+		}
+    }
+}
+sjal_nicknames.0021 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_right_brow
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_right_brow }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_right_brow
+		}
+    }
+}
+sjal_nicknames.0022 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_oak_breast
+		} }
+	}
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			factor = 2
+			is_female = yes
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_oak_breast }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_oak_breast
+		}
+    }
+}
+sjal_nicknames.0023 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_far_host
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_far_host }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_far_host
+		}
+    }
+}
+sjal_nicknames.0024 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_fur_cloak
+		} }
+	}
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			factor = 2
+			has_trait = lifestyle_hunter
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_fur_cloak }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_fur_cloak
+		}
+    }
+}
+sjal_nicknames.0025 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_bright_helm
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_bright_helm }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_bright_helm
+		}
+    }
+}
+sjal_nicknames.0026 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_broad_neck
+		} }
+	}
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			factor = 2
+			has_strong_trait_trigger = yes
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_broad_neck }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_broad_neck
+		}
+    }
+}
+sjal_nicknames.0027 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_dog_lover
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_dog_lover }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_dog_lover
+		}
+    }
+}
+sjal_nicknames.0028 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_mare_led
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_mare_led }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_mare_led
+		}
+    }
+}
+sjal_nicknames.0029 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_blue_grin
+		} }
+	}
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			factor = 2
+			age >= 50
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_blue_grin }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_blue_grin
+		}
+    }
+}
+
+###Trait-based###
+sjal_nicknames.0101 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_long_beard
+		} }
+		age >= 40
+		is_female = no
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_long_beard }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_long_beard
+		}
+    }
+}
+sjal_nicknames.0102 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_long_braid
+		} }
+	}
+	weight_multiplier = {
+		base = 1 #actually generic cause no way 2 check appearance
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_long_braid }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_long_braid
+		}
+    }
+}
+sjal_nicknames.0103 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_bend_back
+		} }
+		has_trait = hunchbacked
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_bend_back }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_bend_back
+		}
+    }
+}
+sjal_nicknames.0104 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_strong_arm
+		} }
+		has_strong_trait_trigger = yes
+	}
+	weight_multiplier = {
+		base = 5
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_strong_arm }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_strong_arm
+		}
+    }
+}
+sjal_nicknames.0105 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_all_sister
+		} }
+		has_trait = family_first
+		is_female = yes
+	}
+	weight_multiplier = {
+		base = 5
+		modifier = {
+			factor = 0.5
+			has_trait_malicious_trigger = yes
+		}
+		modifier = {
+			factor = 2
+			has_trait_benevolent_trigger = yes
+		}
+		modifier = {
+			factor = 2
+			has_trait_extroverted_trigger = yes
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_all_sister }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_all_sister
+		}
+    }
+}
+sjal_nicknames.0106 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_hot_blood
+		} }
+		OR = {
+			calc_true_if = {
+				amount >= 2
+				has_trait = berserker
+				has_trait = lustful
+				has_trait = wrathful
+				has_trait = vengeful
+				has_trait = impatient
+				has_trait = zealous
+			}
+		}
+	}
+	weight_multiplier = {
+		base = 5
+		modifier = {
+			factor = 2
+			has_trait = gh_glowing_veins
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_hot_blood }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_hot_blood
+		}
+    }
+}
+sjal_nicknames.0107 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_red_blood
+		} }
+		OR = {
+			calc_true_if = {
+				amount >= 2
+				has_trait = berserker
+				has_trait = lustful
+				has_trait = wrathful
+				has_trait = vengeful
+				has_trait = impatient
+				has_trait = zealous
+			}
+		}
+	}
+	weight_multiplier = {
+		base = 5
+		modifier = {
+			factor = 2
+			has_trait = gh_glowing_veins
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_red_blood }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_red_blood
+		}
+    }
+}
+sjal_nicknames.0108 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_ring_giver
+		} }
+		OR = {
+			# has_trait = augustus # GH CHANGE: Augustus is not a trait in GH
+			prestige_level >= 3
+		}
+	}
+	weight_multiplier = {
+		base = 5
+		modifier = {
+			factor = 2
+			prestige_level >= 5
+		}
+		modifier = {
+			factor = 2
+			prestige_level >= 7
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_ring_giver }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_ring_giver
+		}
+    }
+}
+sjal_nicknames.0109 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_shield_born
+		} }
+		OR = {
+			# has_trait = augustus # GH CHANGE: Augustus is not a trait in GH
+			prestige_level >= 3
+		}
+	}
+	weight_multiplier = {
+		base = 5
+		modifier = {
+			factor = 2
+			prestige_level >= 5
+		}
+		modifier = {
+			factor = 2
+			prestige_level >= 7
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_shield_born }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_shield_born
+		}
+    }
+}
+sjal_nicknames.0110 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_way_finder
+		} }
+		OR = {
+			has_trait = logistician
+			has_religion = religion:lifepath_religion
+		}
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_way_finder }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_way_finder
+		}
+    }
+}
+sjal_nicknames.0111 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_wayfinder
+		} }
+		OR = {
+			has_trait = logistician
+			has_religion = religion:lifepath_religion
+		}
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_wayfinder }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_wayfinder
+		}
+    }
+}
+sjal_nicknames.0112 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_blade_tongue
+		} }
+		calc_true_if = {
+			amount >= 2
+			has_trait = gregarious
+			has_trait = deceitful
+			has_trait = schemer
+			has_trait = sadistic
+		}
+	}
+	weight_multiplier = {
+		base = 5
+		modifier = {
+			factor = 2
+			is_female = yes #really makes you think smh
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_blade_tongue }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_blade_tongue
+		}
+    }
+}
+sjal_nicknames.0113 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_grey_beard
+		} }
+		age >= 60
+		is_female = no
+	}
+	weight_multiplier = {
+		base = 5
+		modifier = {
+			factor = 2
+			age >= 70
+		}
+		modifier = {
+			factor = 2
+			age >= 80
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_grey_beard }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_grey_beard
+		}
+    }
+}
+sjal_nicknames.0114 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_cold_eyes
+		} }
+		OR = {
+			has_trait = callous
+			has_trait = sadistic
+		}
+	}
+	weight_multiplier = {
+		base = 5
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_cold_eyes }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_cold_eyes
+		}
+    }
+}
+sjal_nicknames.0115 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_farm_hand
+		} }
+		OR = {
+			culture = { has_cultural_tradition = tradition_bounty_of_ureha }
+			culture = { has_cultural_tradition = tradition_agrarian }
+		}
+	}
+	weight_multiplier = {
+		base = 2
+		modifier = {
+			factor = 2
+			culture = { has_cultural_tradition = tradition_hard_working }
+		}
+		modifier = {
+			factor = 2
+			OR = { 
+				has_trait = humble
+				has_trait = diligent
+			}
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_farm_hand }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_farm_hand
+		}
+    }
+}
+sjal_nicknames.0116 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_spring_caller
+		} }
+		culture = {
+			has_cultural_tradition = tradition_bounty_of_ureha
+		}
+	}
+	weight_multiplier = {
+		base = 3
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_spring_caller }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_spring_caller
+		}
+    }
+}
+sjal_nicknames.0117 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_warm_hearth
+		} }
+		culture = {
+			has_cultural_tradition = tradition_bounty_of_ureha
+		}
+	}
+	weight_multiplier = {
+		base = 2
+		modifier = {
+			factor = 2
+			AND = { 
+				has_trait_benevolent_trigger = yes
+				has_trait_malicious_trigger = no
+			}
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_warm_hearth }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_warm_hearth
+		}
+    }
+}
+sjal_nicknames.0118 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_forge_hand
+		} }
+		OR = {
+			culture = { has_cultural_tradition = tradition_artisans }
+			culture = { has_cultural_tradition = tradition_hard_working }
+		}
+	}
+	weight_multiplier = {
+		base = 2
+		modifier = {
+			factor = 2
+			has_trait = humble
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_forge_hand }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_forge_hand
+		}
+    }
+}
+sjal_nicknames.0119 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_shape_steel
+		} }
+		OR = {
+			culture = { has_cultural_tradition = tradition_artisans }
+			culture = { has_cultural_tradition = tradition_hard_working }
+		}
+	}
+	weight_multiplier = {
+		base = 3
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_shape_steel }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_shape_steel
+		}
+    }
+}
+sjal_nicknames.0120 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_far_sung
+		} }
+		OR = {
+			# has_trait = augustus # GH CHANGE: Augustus is not a trait in GH
+			prestige_level >= 3
+		}
+	}
+	weight_multiplier = {
+		base = 5
+		modifier = {
+			factor = 2
+			prestige_level >= 5
+		}
+		modifier = {
+			factor = 2
+			prestige_level >= 7
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_far_sung }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_far_sung
+		}
+    }
+}
+sjal_nicknames.0121 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_tall_stride
+		} }
+		has_trait = giant
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_tall_stride }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_tall_stride
+		}
+    }
+}
+sjal_nicknames.0122 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_gold_cloak
+		} }
+		OR = {
+			has_trait = avaricious
+			has_trait = greedy
+			has_trait = lifestyle_reveler
+		}
+	}
+	weight_multiplier = {
+		base = 2
+		modifier = {
+			factor = 2
+			calc_true_if = {
+				amount >= 2
+				has_trait = avaricious
+				has_trait = greedy
+				has_trait = lifestyle_reveler
+			}
+		}
+		modifier = {
+			factor = 2
+			calc_true_if = {
+				amount >= 3
+				has_trait = avaricious
+				has_trait = greedy
+				has_trait = lifestyle_reveler
+			}
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_gold_cloak }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_gold_cloak
+		}
+    }
+}
+sjal_nicknames.0123 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_gold_wreath
+		} }
+		OR = {
+			has_trait = avaricious
+			has_trait = greedy
+			has_trait = lifestyle_reveler
+		}
+	}
+	weight_multiplier = {
+		base = 2
+		modifier = {
+			factor = 2
+			calc_true_if = {
+				amount >= 2
+				has_trait = avaricious
+				has_trait = greedy
+				has_trait = lifestyle_reveler
+			}
+		}
+		modifier = {
+			factor = 2
+			calc_true_if = {
+				amount >= 3
+				has_trait = avaricious
+				has_trait = greedy
+				has_trait = lifestyle_reveler
+			}
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_gold_wreath }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_gold_wreath
+		}
+    }
+}
+sjal_nicknames.0124 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_rock_hewn
+		} }
+		has_strong_trait_trigger = yes
+	}
+	weight_multiplier = {
+		base = 5
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_rock_hewn }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_rock_hewn
+		}
+    }
+}
+sjal_nicknames.0125 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_shield_bearer
+		} }
+		OR = {
+			has_trait = shieldmaiden
+			has_trait = loyal
+		}
+	}
+	weight_multiplier = {
+		base = 5
+		modifier = {
+			factor = 2
+			AND = {
+				has_trait = shieldmaiden
+				has_trait = loyal
+			}
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_shield_bearer }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_shield_bearer
+		}
+    }
+}
+sjal_nicknames.0126 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_shield_bearer
+		} }
+		OR = {
+			has_trait = shieldmaiden
+			has_trait = loyal
+		}
+	}
+	weight_multiplier = {
+		base = 5
+		modifier = {
+			factor = 2
+			AND = {
+				has_trait = shieldmaiden
+				has_trait = loyal
+			}
+		}
+	}
+
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_shield_bearer }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_shield_bearer
+		}
+    }
+}
+sjal_nicknames.0127 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_beardless
+		} }
+		age <= 20
+		is_female = no
+	}
+	weight_multiplier = {
+		base = 4
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_beardless }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_beardless
+		}
+    }
+}
+sjal_nicknames.0128 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_shaggy
+		} }
+		age >= 40
+		is_female = no
+	}
+	weight_multiplier = {
+		base = 1
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_shaggy }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_shaggy
+		}
+    }
+}
+sjal_nicknames.0129 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_shaggy
+		} }
+		age >= 40
+		is_female = no
+	}
+	weight_multiplier = {
+		base = 1
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_shaggy }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_shaggy
+		}
+    }
+}
+sjal_nicknames.0130 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_stone
+		} }
+		has_strong_trait_trigger = yes
+	}
+	weight_multiplier = {
+		base = 1
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_stone }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_stone
+		}
+    }
+}
+sjal_nicknames.0131 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_stone
+		} }
+		has_strong_trait_trigger = yes
+	}
+	weight_multiplier = {
+		base = 1
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_stone }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_stone
+		}
+    }
+}
+sjal_nicknames.0132 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_ragged
+		} }
+		OR = {
+			stress_level >= 2
+			debt_level >= 3
+		}
+	}
+	weight_multiplier = {
+		base = 3
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_ragged }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_ragged
+		}
+    }
+}
+sjal_nicknames.0133 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_bleak
+		} }
+		has_trait = depressed
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_bleak }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_bleak
+		}
+    }
+}
+sjal_nicknames.0134 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_pale
+		} }
+		OR = {
+			has_trait = albino
+			has_trait = gh_excessively_pale
+		}
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_pale }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_pale
+		}
+    }
+}
+sjal_nicknames.0135 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_mad
+		} }
+		OR = {
+			has_trait = lunatic_1
+			has_trait = lunatic_genetic
+		}
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_mad }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_mad
+		}
+    }
+}
+sjal_nicknames.0136 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_tall
+		} }
+		has_trait = giant
+	}
+	weight_multiplier = {
+		base = 4
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_tall }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_tall
+		}
+    }
+}
+sjal_nicknames.0137 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_thane
+		} }
+		OR = {
+			# has_trait = augustus # GH CHANGE: Augustus is not a trait in GH
+			prestige_level >= 3
+		}
+	}
+	weight_multiplier = {
+		base = 2
+		modifier = {
+			factor = 2
+			prestige_level >= 5
+		}
+		modifier = {
+			factor = 2
+			prestige_level >= 7
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_thane }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_thane
+		}
+    }
+}
+sjal_nicknames.0138 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_screaming
+		} }
+		has_trait = berserker
+	}
+	weight_multiplier = {
+		base = 5
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_screaming }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_screaming
+		}
+    }
+}
+sjal_nicknames.0139 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_whistling
+		} }
+		culture = { has_name_list = name_list_kholmvolki_outer }
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_whistling }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_whistling
+		}
+    }
+}
+sjal_nicknames.0140 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_flute
+		} }
+		culture = { has_name_list = name_list_kholmvolki_outer }
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_flute }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_flute
+		}
+    }
+}
+sjal_nicknames.0141 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_bloodbrother
+		} }
+		has_trait = family_first
+		is_female = no
+	}
+	weight_multiplier = {
+		base = 4
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_bloodbrother }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_bloodbrother
+		}
+    }
+}
+sjal_nicknames.0142 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_bowman
+		} }
+		has_trait = lifestyle_hunter
+		is_female = no
+	}
+	weight_multiplier = {
+		base = 3
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_bowman }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_bowman
+		}
+    }
+}
+sjal_nicknames.0143 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_talker
+		} }
+		OR = {
+			has_trait = gregarious
+		}
+	}
+	weight_multiplier = {
+		base = 3
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_talker }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_talker
+		}
+    }
+}
+sjal_nicknames.0144 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_long_spear
+		} }
+		is_female = no
+		has_lustful_adjacent_trait_trigger = yes
+	}
+	weight_multiplier = {
+		base = 3
+		modifier = {
+			factor = 2
+			has_strong_trait_trigger = yes
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_long_spear }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_long_spear
+		}
+    }
+}
+sjal_nicknames.0145 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_horse_drawn
+		} }
+		has_trait = arrogant
+	}
+	weight_multiplier = {
+		base = 3
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_horse_drawn }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_horse_drawn
+		}
+    }
+}
+sjal_nicknames.0146 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_white_ears
+		} }
+		has_sexuality = asexual
+	}
+	weight_multiplier = {
+		base = 5
+		modifier = {
+			factor = 0.5
+			is_female = yes
+		}
+		modifier = {
+			factor = 2
+			has_trait = celibate
+		}
+		modifier = {
+			factor = 2
+			has_trait = chaste
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_white_ears }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_white_ears
+		}
+    }
+}
+sjal_nicknames.0147 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_white_heart
+		} }
+		has_trait = compassionate
+	}
+	weight_multiplier = {
+		base = 3
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_white_heart }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_white_heart
+		}
+    }
+}
+sjal_nicknames.0148 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_of_the_sworn_oath
+		} }
+		has_trait = loyal
+	}
+	weight_multiplier = {
+		base = 3
+		modifier = {
+			factor = 2
+			has_trait = just
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_of_the_sworn_oath }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_of_the_sworn_oath
+		}
+    }
+}
+sjal_nicknames.0149 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_bale_song
+		} }
+		OR = {
+			#culture = { has_cultural_tradition = tradition_poetry }
+			culture = { has_cultural_tradition = tradition_fp1_northern_stories }
+		}
+		OR = {
+			diplomacy < mediocre_skill_rating
+			probably_unintelligent_trigger = yes
+		}
+	}
+	weight_multiplier = {
+		base = 5
+		modifier = {
+			factor = 2
+			has_court_position = court_musician_court_position
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_bale_song }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_bale_song
+		}
+    }
+}
+sjal_nicknames.0150 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_yore_tongue
+		} }
+		OR = {
+			culture = { has_cultural_tradition = tradition_storytellers }
+			culture = { has_cultural_tradition = tradition_poetry }
+			culture = { has_cultural_tradition = tradition_fp1_northern_stories }
+		}
+		OR = {
+			diplomacy >= high_skill_rating
+			probably_intelligent_trigger = yes
+		}
+	}
+	weight_multiplier = {
+		base = 5
+		modifier = {
+			factor = 2
+			learning >= high_skill_rating
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_yore_tongue }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_yore_tongue
+		}
+    }
+}
+sjal_nicknames.0151= {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_stone_singer
+		} }
+		OR = {
+			culture = { has_cultural_tradition = tradition_poetry }
+			culture = { has_cultural_tradition = tradition_fp1_northern_stories }
+		}
+		OR = {
+			diplomacy >= high_skill_rating
+		}
+	}
+	weight_multiplier = {
+		base = 5
+		modifier = {
+			factor = 2
+			has_court_position = court_musician_court_position
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_stone_singer }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_stone_singer
+		}
+    }
+}
+sjal_nicknames.0152= {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_of_godspeech
+		} }
+		OR = {
+			culture = { has_cultural_tradition = tradition_fp1_northern_stories }
+		}
+		OR = {
+			diplomacy >= high_skill_rating
+			has_trait = poet
+		}
+	}
+	weight_multiplier = {
+		base = 5
+		modifier = {
+			factor = 2
+			has_court_position = court_poet_court_position
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_of_godspeech }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_of_godspeech
+		}
+    }
+}
+sjal_nicknames.0153 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_war_skald
+		} }
+		OR = {
+			AND = {
+				culture = { has_cultural_tradition = tradition_fp1_northern_stories }
+				martial >= high_skill_rating
+			}
+			AND = {
+				culture = { has_cultural_tradition = tradition_warriors_of_velos }
+				has_trait = poet
+			}
+		}
+	}
+	weight_multiplier = {
+		base = 5
+		modifier = {
+			factor = 2
+			has_court_position = court_poet_court_position
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_war_skald }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_war_skald
+		}
+    }
+}
+sjal_nicknames.0154 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_blood_skald
+		} }
+		OR = {
+			AND = {
+				culture = { has_cultural_tradition = tradition_fp1_northern_stories }
+				OR = {
+					has_trait = berserker
+					has_trait = wrathful
+					has_trait = vengeful
+				}
+				has_trait_levelheaded_trigger = no
+			}
+			AND = {
+				culture = { has_cultural_tradition = tradition_warriors_of_velos }
+				has_trait = poet
+			}
+		}
+	}
+	weight_multiplier = {
+		base = 5
+		modifier = {
+			factor = 2
+			has_court_position = court_poet_court_position
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_blood_skald }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_blood_skald
+		}
+    }
+}
+sjal_nicknames.0155 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_blood_brow
+		} }
+		OR = {
+			culture = { has_cultural_tradition = tradition_warriors_of_velos }
+			culture = { culture_likes_hunting_trigger = yes }
+		}
+		has_trait = lifestyle_hunter
+	}
+	weight_multiplier = {
+		base = 5
+		modifier = {
+			factor = 2
+			has_strong_trait_trigger = yes
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_blood_brow }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_blood_brow
+		}
+    }
+}
+sjal_nicknames.0156 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_bride_fed
+		} }
+		OR = {
+			culture = { has_cultural_tradition = tradition_warriors_of_velos }
+			culture = { culture_likes_hunting_trigger = yes }
+		}
+		NOR = {
+			has_trait = lifestyle_hunter
+			martial >= mediocre_skill_rating
+			has_strong_trait_trigger = yes
+		}
+		is_female = no
+		is_married = yes
+	}
+	weight_multiplier = {
+		base = 5
+		modifier = {
+			factor = 2
+			has_weak_trait_trigger = yes
+		}
+		modifier = {
+			factor = 2
+			primary_spouse = {
+				has_trait = lifestyle_hunter
+			}
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_bride_fed }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_bride_fed
+		}
+    }
+}
+sjal_nicknames.0157 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_witch_blood
+		} }
+		OR = {
+			faith = { has_doctrine_parameter = magic_shunned }
+			faith = { has_doctrine_parameter = magic_illegal }
+		}
+		has_trait = magic_good
+	}
+	weight_multiplier = {
+		base = 20
+		modifier = {
+			factor = 2
+			has_education_magic_trigger = no
+		}
+		modifier = {
+			factor = 0.2
+			has_trait = magic_good_1
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_witch_blood }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_witch_blood
+		}
+    }
+}
+sjal_nicknames.0158 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_blood_curse
+		} }
+		OR = {
+			faith = { has_doctrine_parameter = magic_shunned }
+			faith = { has_doctrine_parameter = magic_illegal }
+		}
+		has_trait = magic_good
+	}
+	weight_multiplier = {
+		base = 10
+		modifier = {
+			factor = 2
+			has_education_magic_trigger = no
+		}
+		modifier = {
+			factor = 0.2
+			has_trait = magic_good_1
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_blood_curse }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_blood_curse
+		}
+    }
+}
+sjal_nicknames.0159 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_curse_blood
+		} }
+		OR = {
+			faith = { has_doctrine_parameter = magic_shunned }
+			faith = { has_doctrine_parameter = magic_illegal }
+		}
+		has_trait = magic_good
+	}
+	weight_multiplier = {
+		base = 5
+		modifier = {
+			factor = 2
+			has_education_magic_trigger = no
+		}
+		modifier = {
+			factor = 0.2
+			has_trait = magic_good_1
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_curse_blood }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_curse_blood
+		}
+    }
+}
+sjal_nicknames.0160 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_unborn
+		} }
+		OR = {
+			has_trait = bastard
+			has_trait = legitimized_bastard
+		}
+	}
+	weight_multiplier = {
+		base = 4
+		modifier = {
+			factor = 0.5
+			has_trait = legitimized_bastard
+		}
+		modifier = {
+			factor = 2
+			age <= 10
+		}
+		modifier = {
+			factor = 4
+			age < 1
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_unborn }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_unborn
+		}
+    }
+}
+sjal_nicknames.0161 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_whelp
+		} }
+		AND = {
+			is_ruler = yes
+			is_adult = no
+		}
+	}
+	weight_multiplier = {
+		base = 3
+		modifier = {
+			factor = 2
+			age <= 10
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_whelp }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_whelp
+		}
+    }
+}
+sjal_nicknames.0162 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_half_troll
+		} }
+		OR = {
+			has_trait = beauty_bad
+			has_trait = hunchbacked
+			has_trait = scaly
+			has_trait = dwarf
+			has_trait = gh_necronic_skin
+			has_trait = gh_deep_mutation
+		}
+	}
+	weight_multiplier = {
+		base = 3
+		modifier = {
+			factor = 2
+			calc_true_if = {
+				amount >= 2
+				has_trait = beauty_bad
+				has_trait = hunchbacked
+				has_trait = scaly
+				has_trait = dwarf
+				has_trait = gh_necronic_skin
+				has_trait = gh_deep_mutation
+			}
+		}
+		modifier = {
+			factor = 2
+			age <= 3
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_half_troll }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_half_troll
+		}
+    }
+}
+
+###Action-based###
+#victory against aversaria
+sjal_nicknames.0301 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_witch_hater
+		} }
+		OR = {
+			faith = { has_doctrine_parameter = magic_shunned }
+			faith = { has_doctrine_parameter = magic_illegal }
+		}
+	}
+	weight_multiplier = {
+		base = 10
+		modifier = {
+			factor = 5
+			has_trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_trait = compassionate
+				has_trait = magic_good
+			}
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_witch_hater }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_witch_hater
+		}
+    }
+}
+sjal_nicknames.0302 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_legion_breaker
+		} }
+	}
+	weight_multiplier = {
+		base = 25 #Double in on_action if opposing army is actually a legion
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_legion_breaker }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_legion_breaker
+		}
+    }
+}
+sjal_nicknames.0303 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_sun_taker
+		} }
+	}
+	weight_multiplier = {
+		base = 25 #Double in on_action if opposing army is led by nicky
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_sun_taker }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_sun_taker
+		}
+    }
+}
+sjal_nicknames.0304 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_blood_breaker
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+		modifier = {
+			factor = 5
+			has_magi_potency_trigger = no
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_blood_breaker }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_blood_breaker
+		}
+    }
+}
+sjal_nicknames.0305 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_magi_slayer
+		} }
+	}
+	weight_multiplier = {
+		base = 25
+		modifier = {
+			factor = 2
+			has_magi_potency_trigger = no
+			has_education_magic_trigger = no
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_magi_slayer }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_magi_slayer
+		}
+    }
+}
+sjal_nicknames.0306 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_death_of_legions
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_death_of_legions }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_death_of_legions
+		}
+    }
+}
+sjal_nicknames.0307 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_fear_of_magi
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_fear_of_magi }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_fear_of_magi
+		}
+    }
+}
+sjal_nicknames.0308 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_land_taker
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_land_taker }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_land_taker
+		}
+    }
+}
+sjal_nicknames.0309 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_all_thane
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_all_thane }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_all_thane
+		}
+    }
+}
+sjal_nicknames.0310 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_axe_crowned
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_axe_crowned }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_axe_crowned
+		}
+    }
+}
+sjal_nicknames.0311 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_south_crown
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_south_crown }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_south_crown
+		}
+    }
+}
+sjal_nicknames.0312 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_gold_throne
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = greedy
+				has_trait = arrogant
+			}
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_trait = generous
+				has_trait = humble
+			}
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_gold_throne }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_gold_throne
+		}
+    }
+}
+sjal_nicknames.0313 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_southron
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_southron }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_southron
+		}
+    }
+}
+sjal_nicknames.0314 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_unread
+		} }
+		has_trait = zealous
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_unread }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_unread
+		}
+    }
+}
+sjal_nicknames.0315 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_hand_taker
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+		modifier = {
+			factor = 2
+			AND = {
+				has_trait = zealous
+				OR = {
+					faith = { has_doctrine_parameter = magic_shunned }
+					faith = { has_doctrine_parameter = magic_illegal }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_trait = compassionate
+				has_trait = magic_good
+			}
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_hand_taker }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_hand_taker
+		}
+    }
+}
+sjal_nicknames.0316 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_hand_ring
+		} }
+	}
+	weight_multiplier = {
+		base = 15
+		modifier = {
+			factor = 3
+			AND = {
+				has_trait = zealous
+				OR = {
+					faith = { has_doctrine_parameter = magic_shunned }
+					faith = { has_doctrine_parameter = magic_illegal }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_trait = compassionate
+				has_trait = magic_good
+			}
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_hand_ring }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_hand_ring
+		}
+    }
+}
+sjal_nicknames.0317 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_banner_cloak
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+		modifier = {
+			factor = 2
+			has_trait = arrogant
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_banner_cloak }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_banner_cloak
+		}
+    }
+}
+sjal_nicknames.0318 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_wail_rider
+		} }
+		NOT = { has_trait = compassionate }
+	}
+	weight_multiplier = {
+		base = 10
+		modifier = {
+			factor = 0.2
+			NOR = {
+				has_trait = callous
+				has_trait = sadistic
+			}
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_wail_rider }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_wail_rider
+		}
+    }
+}
+sjal_nicknames.0319 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_sun_breaker
+		} }
+	}
+	weight_multiplier = {
+		base = 25
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_sun_breaker }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_sun_breaker
+		}
+    }
+}
+#Victory against anyone
+sjal_nicknames.0401 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_spear_shaker
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_spear_shaker }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_spear_shaker
+		}
+    }
+}
+sjal_nicknames.0402 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_shield_breaker
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_shield_breaker }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_shield_breaker
+		}
+    }
+}
+sjal_nicknames.0403 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_break_shield
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_break_shield }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_break_shield
+		}
+    }
+}
+sjal_nicknames.0404 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_bloodless
+		} }
+		NOR = {
+			has_trait = wounded
+			has_trait = maimed
+			has_trait = scarred
+			has_character_modifier = infected_wound_modifier
+		}
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_bloodless }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_bloodless
+		}
+    }
+}
+sjal_nicknames.0405 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_ash_sower
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+		modifier = {
+			factor = 2
+			has_trait = reaver
+		}
+		modifier = {
+			factor = 0.5
+			NOR = {
+				has_trait = callous
+				has_trait = sadistic
+				has_trait = wrathful
+			}
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_ash_sower }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_ash_sower
+		}
+    }
+}
+sjal_nicknames.0406 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_gallow_knot
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+		modifier = {
+			factor = 0.5
+			has_trait_malicious_trigger = no
+		}
+		modifier = {
+			factor = 0.5
+			has_trait_benevolent_trigger = yes
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_gallow_knot }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_gallow_knot
+		}
+    }
+}
+sjal_nicknames.0407 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_above_the_slain
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_above_the_slain }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_above_the_slain
+		}
+    }
+}
+sjal_nicknames.0408 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_salt_sower
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+		modifier = {
+			factor = 2
+			has_trait = reaver
+		}
+		modifier = {
+			factor = 0.5
+			NOR = {
+				has_trait = callous
+				has_trait = sadistic
+				has_trait = wrathful
+			}
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_salt_sower }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_salt_sower
+		}
+    }
+}
+sjal_nicknames.0409 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_throne_breaker
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_throne_breaker }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_throne_breaker
+		}
+    }
+}
+sjal_nicknames.0410 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_ash_hair
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_ash_hair }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_ash_hair
+		}
+    }
+}
+sjal_nicknames.0411 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_black_brand
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+		modifier = {
+			factor = 0.2
+			has_trait = compassionate
+		}
+		modifier = {
+			factor = 0.5
+			NOR = {
+				has_trait = callous
+				has_trait = sadistic
+				has_trait = wrathful
+			}
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_black_brand }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_black_brand
+		}
+    }
+}
+sjal_nicknames.0412 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_grave_breaker
+		} }
+	}
+	weight_multiplier = {
+		base = 5
+		modifier = {
+			factor = 2
+			has_trait = cynical
+		}
+		modifier = {
+			factor = 0.5
+			has_trait = zealous
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_grave_breaker }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_grave_breaker
+		}
+    }
+}
+sjal_nicknames.0413 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_crow_herald
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+		modifier = {
+			factor = 2
+			has_trait = reaver
+		}
+		modifier = {
+			factor = 0.5
+			NOR = {
+				has_trait = callous
+				has_trait = sadistic
+				has_trait = wrathful
+			}
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_crow_herald }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_crow_herald
+		}
+    }
+}
+sjal_nicknames.0414 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_horn_called
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_horn_called }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_horn_called
+		}
+    }
+}
+sjal_nicknames.0415 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_before_the_banners
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+		modifier = {
+			factor = 2
+			has_trait = brave
+		}
+		modifier = {
+			factor = 0.1
+			has_trait = craven
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_before_the_banners }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_before_the_banners
+		}
+    }
+}
+sjal_nicknames.0416 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_snow_thunder
+		} }
+		has_trait = winter_soldier
+	}
+	weight_multiplier = {
+		base = 50
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_snow_thunder }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_snow_thunder
+		}
+    }
+}
+sjal_nicknames.0417 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_son_taker
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+		modifier = {
+			factor = 0.1
+			NOR = {
+				has_trait = callous
+				has_trait = sadistic
+			}
+		}
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_son_taker }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_son_taker
+		}
+    }
+}
+sjal_nicknames.0418 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_thrall_skin
+		} }
+		OR = {
+			has_trait = torturer
+			has_trait = sadistic
+		}
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_thrall_skin }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_thrall_skin
+		}
+    }
+}
+sjal_nicknames.0419 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_tan_cloak
+		} }
+		OR = {
+			has_trait = torturer
+			has_trait = sadistic
+		}
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_tan_cloak }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_tan_cloak
+		}
+    }
+}
+sjal_nicknames.0420 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_turn_tail
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_turn_tail }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_turn_tail
+		}
+    }
+}
+sjal_nicknames.0421 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_far_flight
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_far_flight }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_far_flight
+		}
+    }
+}
+sjal_nicknames.0422 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_gutless
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_gutless }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_gutless
+		}
+    }
+}
+sjal_nicknames.0423 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_lack_heart
+		} }
+	}
+	weight_multiplier = {
+		base = 10
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_lack_heart }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_lack_heart
+		}
+    }
+}
+sjal_nicknames.0424 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_milk_drinker
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_milk_drinker }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_milk_drinker
+		}
+    }
+}
+sjal_nicknames.0425 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_raw_rent
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_raw_rent }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_raw_rent
+		}
+    }
+}
+sjal_nicknames.0426 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_girl_arm
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_girl_arm }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_girl_arm
+		}
+    }
+}
+sjal_nicknames.0427 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_red_writ
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_red_writ }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_red_writ
+		}
+    }
+}
+sjal_nicknames.0428 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_holm_thane
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_the_holm_thane }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_the_holm_thane
+		}
+    }
+}
+sjal_nicknames.0429 = {
+	hidden = yes
+	trigger = {
+		NOT = { is_target_in_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_of_the_man_price
+		} }
+	}
+	weight_multiplier = {
+		base = 2
+	}
+
+    immediate = {
+		set_nickname_effect = { NICKNAME = nick_sjal_of_the_man_price }
+		add_to_global_variable_list = {
+			name = nickname_already_given
+			target = flag:nick_sjal_of_the_man_price
+		}
+    }
+}

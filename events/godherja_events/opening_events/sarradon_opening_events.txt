@@ -1,0 +1,215 @@
+﻿namespace = opening_event_sarradon
+
+opening_event_sarradon.1 = { #Opener for aarif
+	title = opening_event_sarradon.1.t
+	desc = opening_event_sarradon.1.desc
+	theme = battle
+	left_portrait = { 
+		character = root
+		animation = marshal
+	}
+
+	trigger = {
+		is_ai = no
+		this = character:tasurmad_wardenism_2
+		current_date = 1254
+	}
+
+	option = {
+		name = opening_event_sarradon.1.a
+	}
+}
+
+opening_event_sarradon.2 = { #Opener for Pejman's vassals
+	title = opening_event_sarradon.2.t
+	desc = opening_event_sarradon.2.desc
+	theme = realm
+	left_portrait = { 
+		character = root
+		animation = personality_vengeful
+	}
+
+	trigger = {
+		NOT = { this = character:amsari_mahndayana_2 }
+		is_vassal_or_below_of = character:amsari_mahndayana_2
+	}
+
+	option = {
+		name = opening_event_sarradon.2.a
+	}
+}
+
+opening_event_sarradon.3 = { #Opener for the Mamur
+	title = opening_event_sarradon.3.t
+	desc = opening_event_sarradon.3.desc
+	theme = learning_theology_focus
+	left_portrait = { 
+		character = root
+		animation = worry
+	}
+
+	trigger = {
+		is_ai = no
+		this = character:tasurmad_wardenism_1
+	}
+
+	option = {
+		name = opening_event_sarradon.3.a
+	}
+}
+
+opening_event_sarradon.4 = { #Opener for Harthah
+	title = opening_event_sarradon.4.t
+	desc = opening_event_sarradon.4.desc
+	theme = battle
+	left_portrait = { 
+		character = root
+		animation = personality_vengeful
+	}
+
+	trigger = {
+		is_ai = no
+		this = character:tasurmad_harthahi_1
+	}
+
+	option = {
+		name = opening_event_sarradon.4.a
+	}
+}
+
+opening_event_sarradon.5 = { #Opener for Pejman 
+	title = opening_event_sarradon.5.t
+	desc = opening_event_sarradon.5.desc
+	theme = realm
+	left_portrait = { 
+		character = root
+		animation = personality_forgiving
+	}
+
+	trigger = {
+		is_ai = no
+		this = character:amsari_mahndayana_2
+	}
+
+	option = {
+		name = opening_event_sarradon.5.a
+	}
+}
+
+opening_event_sarradon.6 = { #Opener for West Royal Trading Company
+	title = opening_event_sarradon.6.t
+	desc = opening_event_sarradon.6.desc
+	theme = realm
+	left_portrait = { 
+		character = root
+		animation = scheme
+	}
+
+	trigger = {
+		is_ai = no
+		this = character:voyagen_lifepath_46
+	}
+
+	option = {
+		name = opening_event_sarradon.6.a
+	}
+}
+
+opening_event_sarradon.7 = { #Opener for Zealous Manat
+	title = opening_event_sarradon.7.t
+	desc = opening_event_sarradon.7.desc
+	theme = realm
+	left_portrait = { 
+		character = root
+		animation = sadness
+	}
+
+	trigger = {
+		is_ai = no
+		this = character:madikirib_manats_2
+	}
+
+	option = {
+		name = opening_event_sarradon.7.a
+	}
+}
+
+opening_event_sarradon.8 = { #Opener for Pad'eyil
+	title = opening_event_sarradon.8.t
+	desc = opening_event_sarradon.8.desc
+	theme = realm
+	left_portrait = { 
+		character = root
+		animation = personality_zealous
+	}
+
+	trigger = {
+		is_ai = no
+		this = character:mazunic_hubarism_1
+	}
+
+	option = {
+		name = opening_event_sarradon.8.a
+	}
+}
+
+opening_event_sarradon.9 = { #Opener for Aghlab
+	title = opening_event_sarradon.9.t
+	desc = opening_event_sarradon.9.desc
+	theme = realm
+	left_portrait = { 
+		character = root
+		animation = scheme
+	}
+
+	trigger = {
+		is_ai = no
+		this = character:jaduyada_wardenism_2
+	}
+
+	option = {
+		name = opening_event_sarradon.8.a
+	}
+}
+
+opening_event_sarradon.10 = { #Opener for Abu-Jaleel
+	title = opening_event_sarradon.10.t
+	desc = opening_event_sarradon.10.desc
+	theme = realm
+	left_portrait = { 
+		character = root
+		animation = personality_zealous
+	}
+
+	trigger = {
+		is_ai = no
+		this = character:tasurmad_wardenism_58
+	}
+
+	option = {
+		name = opening_event_sarradon.10.a
+	}
+}
+
+opening_event_sarradon.11 = { #Opener for Angobo
+	title = opening_event_sarradon.11.t
+	desc = opening_event_sarradon.11.desc
+	theme = realm
+	left_portrait = { 
+		character = root
+		animation = sadness
+	}
+	
+	right_portrait = {
+		character = character:madikirib_manats_1
+	}
+
+	trigger = {
+		is_ai = no
+		this = character:madikirib_manats_13
+	}
+
+	option = {
+		name = opening_event_sarradon.11.a
+	}
+}

@@ -1,0 +1,269 @@
+﻿#Events fired for the settlement of declaration of war
+
+namespace = gh_war_event
+
+##############################
+
+# Event for vassals to join a multi-realm war
+gh_war_event.4000 = {
+	type = character_event
+	content_source = dlc_gh
+	title = gh_war_event.4000.t
+	desc = gh_war_event.4000.desc # text should be about liege under attack in a big war, ask if you want to join to contribute more troops
+
+	theme = war
+	left_portrait = {
+		character = scope:defender
+		animation = war_defender
+	}
+	right_portrait = {
+		character = scope:attacker
+		animation = war_attacker
+	}
+
+	# Join the war to help fight
+	option = {
+		name = gh_war_event.4000.a
+		ai_chance = {
+			base = 10
+			modifier = { # Very likely to join if they would lose all their land
+				add = 80
+				any_sub_realm_county = {
+					percent = 1
+					this.kingdom = scope:target_title
+				}
+			}
+			modifier = { # Increase chance if they would lose significant land
+				add = 50
+				any_sub_realm_county = {
+					percent > 0.4
+					this.kingdom = scope:target_title
+				}
+			}
+			modifier = { # Modifiers based on opinion
+				add = 20
+				opinion = {
+					target = top_liege
+					value > 25
+				}
+			}
+			modifier = {
+				add = 20
+				opinion = {
+					target = top_liege
+					value > 50
+				}
+			}
+			modifier = {
+				add = 20
+				opinion = {
+					target = top_liege
+					value > 75
+				}
+			}
+			modifier = { # Slight increase if their direct liege joined the war, don't apply this for characters whose top liege is their liege
+				add = 10
+				AND = {
+					NOT = {
+						liege = top_liege
+					}
+					# is_defender = liege
+				}
+			}
+			modifier = { # Slight increase if the attacker has a different religion
+				add = 5
+				AND = {
+					has_trait = zealous
+					scope:attacker = {
+						NOT = {
+							has_religion = prev.religion
+						}
+					}
+				}
+			}
+			# ai_value_modifier = { # increase for brave characters
+			# 	ai_boldness = 0.1
+			# }
+		}
+
+		scope:war = {
+			add_defender = prev
+		}
+		top_liege = {
+			add_opinion = {
+				target = prev
+				modifier = accepted_multi_realm_war_call
+			}
+		}
+	}
+
+	# Don't join, only send obligatory levies
+	option = {
+		name = gh_war_event.4000.b
+		ai_chance = {
+			factor = 90
+			#ai_value_modifier = { # increase for cowardly characters
+			#	ai_boldness = -0.1
+			#}
+
+			modifier = {
+				add = 20
+				opinion = {
+					target = top_liege
+					value < -25
+				}
+			}
+			modifier = {
+				add = 20
+				opinion = {
+					target = top_liege
+					value < -50
+				}
+			}
+			modifier = {
+				add = 20
+				opinion = {
+					target = top_liege
+					value < -75
+				}
+			}
+		}
+
+		top_liege = {
+			add_opinion = {
+				target = prev
+				modifier = rejected_multi_realm_war_call
+			}
+		}
+	}
+}
+
+# Notification of a Marcher Reunification war
+gh_war_event.4002 = {
+	title = gh_war_event.4002.t
+	desc = gh_war_event.4002.desc
+	type = character_event
+	content_source = dlc_gh
+
+	theme = war
+	left_portrait = {
+		character = scope:attacker
+		animation = war_attacker
+	}
+	right_portrait = {
+		character = scope:defender
+		animation = war_defender
+	}
+
+	option = {
+		name = gh_war_event.4002.a
+	}
+}
+
+# Notification of a successful Marcher Reunification war
+gh_war_event.4003 = {
+	title = gh_war_event.4003.t
+	desc = gh_war_event.4003.desc
+	type = character_event
+	content_source = dlc_gh
+
+	theme = war
+	left_portrait = {
+		character = scope:attacker
+		animation = war_over_win
+	}
+	right_portrait = {
+		character = scope:defender
+		animation = severelyinjured
+	}
+
+	option = {
+		name = gh_war_event.4003.a
+	}
+}
+
+# War declaration for Iyrossi Slave wars
+#war_event.4004 = { # GH Question: Do we want to make this work or should it be removed?
+#	type = empty
+#	hidden = yes
+#
+#	theme = war
+#
+#	option = {
+#		name = war_event.4004.a
+#
+#		debug_log = iyrossi_war
+#		random_character_to_title_neighboring_county = {
+#			limit = {
+#				empire = title:e_malcois
+#				holder.top_liege.culture = { has_cultural_pillar = heritage_aversarian }
+#			}
+#			save_scope_as = defender_title
+#			holder.top_liege = {
+#				save_scope_as = defender_target
+#			}
+#		}
+#		start_war = {
+#			cb = sjalvolki_conquest_cb
+#			target = scope:defender_target
+#			target_title = scope:defender_title
+#		}
+#	}
+#}
+
+# Event for sacking the Vounil/Scarlet Chosen
+gh_war_event.5001 = {
+	title = gh_war_event.5001.t
+	desc = gh_war_event.5001.desc
+	type = character_event
+	content_source = dlc_gh
+
+	theme = war
+
+	left_portrait = {
+		character = scope:vounill_conqueror
+		animation = war_over_win
+	}
+	right_portrait = {
+		character = scope:defender
+		animation = war_over_loss
+	}
+
+	trigger = {
+		any_realm_province = { has_building = 01_vounill } # This needs to be actively operating
+	}
+
+	immediate = {
+		if = {
+			limit = { exists = scope:vounill_conqueror }
+			scope:vounill_conqueror = {
+				add_gold = medium_gold_value
+			}
+		}
+	}
+
+	option = {
+		name = gh_war_event.5001.a
+		add_character_modifier = { modifier = sacked_vounill_modifier years = 30 }
+		spawn_ruin = { COUNTY = scope:vounill_site }
+	}
+	after = {
+		every_player = { 
+			send_interface_message = {
+				type = event_generic_bad_with_text
+				title = sacked_vounill_war.notif_title
+				desc = sacked_vounill_war.notif_desc # Players who get this: "why do I hear boss music?" (It is meant to sound vaguely threatening)
+				left_icon = scope:vounill_conqueror
+
+				show_as_tooltip = {
+					scope:vounill_conqueror = {
+						add_character_modifier = {
+							modifier = sacked_vounill_modifier
+							years = 30
+						}
+					}
+				}
+			}
+		} 
+	}
+}

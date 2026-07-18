@@ -1,0 +1,5562 @@
+﻿#namespace = sjalvolki_hunt
+#
+###################################################
+#
+#### Sjalvolki Hunt Events
+#
+## 0001 - Setup
+#
+###################################################
+#
+###################################################
+## Setup
+## by Mayor
+## 0001 - 0010
+##
+## Random Events
+## 7000-7025
+###################################################
+#
+###################################################
+## TODO
+###################################################
+##	Begin work on implementing legendary hunts
+##	Allow filtering for tracks if you have medium proficiency against the game
+##	Weather (?)
+##	Nearby landmarks (?)
+##	Morale (?)
+##	Companion system
+##	Implement unconventional game
+	## Mutants (DONE)
+	## Rogue Necromancers (?)
+	## Bone Abominations (low priority)
+##	Realm neglect mechanics
+##	Implement random tracking phase events
+##	Ambushes
+#	Improved location picking with regards to Fog - make it not pick fogswept areas for non-Foglands, and try to avoid #going insanely deep into the Foglands when there
+##	Attributes
+	## Shapeshifter - implement
+	## Exposure Sickness - make Magi have an easier time tracking
+##	Fogbeast generation
+	## Shapeshifters
+##	Integrate magic
+	## Living
+	## Dead 
+	## Mixed
+##	Making the Sjalvolki Hunt tenet actually do as advertised
+##	Make it so Sjalvolki can purchase pelt
+##	Figure out how to handle Sjalvolki Syncretism
+##	Make pilgrimages count as journeys
+##	Make the AI understand all of this....
+#
+#sjalvolki_hunt.0001 = {
+	#type = character_event
+	#title = sjalvolki_hunt.0001.t
+	#desc = sjalvolki_hunt.0001.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = personality_rational
+	#}
+	#override_background = {
+		#trigger = { GH_is_any_tribal_government_trigger = yes }
+		#reference = fp1_throneroom_tribal
+	#}
+	#override_background = {
+		#trigger = { GH_is_any_tribal_government_trigger = no }
+		#reference = fp1_throneroom_nontribal
+	#}
+#	
+	#immediate = {
+		#add_character_flag = sjalvolki_hunt_ongoing
+	#}
+#	
+	#option = {	# Standard hunt
+		#name = sjalvolki_hunt.0001.a
+		#custom_tooltip = normal_hunt_tooltip
+		#trigger_event = sjalvolki_hunt.0021
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.0001.b
+		#trigger = {
+			#always = no
+		#}
+		#show_as_unavailable = {
+			#always = yes # Until we implement it
+		#}
+	#}
+#	
+	#option = {	# Actually, nah
+		#name = sjalvolki_hunt.0001.c
+	#}
+#}
+#
+###################################################
+## Pick a Biozone
+## by Hapchazzard
+## 0021 - 0030
+###################################################
+#
+#sjalvolki_hunt.0021 = {
+	#type = character_event
+	#title = sjalvolki_hunt.0021.t
+	#desc = sjalvolki_hunt.0021.desc
+	#theme = learning
+	#left_portrait = {
+		#character = root
+		#animation = personality_rational
+	#}
+#	
+	#override_icon = {
+		#reference = "gfx/interface/icons/event_types/type_hunt.dds"
+	#}
+#	
+	#widget = {
+		#gui = "event_window_widget_biozone"
+		#container = "custom_widgets_container_large"
+	#}
+#	
+	#immediate = {
+		#save_scope_as = biozone_picker_character
+		#set_variable = {
+			#name = displaying_large_event_widget
+			#days = 1
+		#}
+		#biozone_effect = { MODE = home }
+		#capital_barony = {
+			#save_scope_as = start_barony
+		#}
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.0021.home_region
+		#trigger = { exists = scope:home_biozone }
+		#scope:home_biozone = { save_scope_as = hunt_biozone }
+		#biozone_effect = { MODE = display_home_info }
+		#hidden_effect = {
+			#capital_barony.title_province = {
+				#spawn_activity = {
+					#type = activity_sjalvolki_hunt
+					#owner = root
+				#}
+			#}
+			#set_variable = {
+				#name = hunting_in_home_biozone_var
+				#days = 10
+			#}
+		#}
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.0021.accept
+#		
+		#trigger = {
+			#custom_description = {
+				#OR = {
+					#faith = { has_doctrine_parameter = hunt_travel_enabled }
+					#has_perk = beasthunter_perk
+				#}
+				#text = must_have_hunt_travel_enabled
+			#}
+		#}
+		#show_as_unavailable = { always = yes }
+		#if = {
+			#limit = { exists = var:selected_biozone_var }
+			#var:selected_biozone_var.var:biozone_name = { save_scope_as = hunt_biozone }
+			#var:selected_biozone_var.var:biozone_activity_location = { save_scope_as = hunting_target }
+			#calculate_hunt_distance_effect = { HUNTING_TARGET = root.var:selected_biozone_var.var#:biozone_activity_location }
+			#biozone_effect = { MODE = display_selected_biozone_info }
+		#}
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.0021.exit
+	#}
+#	
+	#after = {
+		#remove_variable = displaying_large_event_widget
+		#remove_variable = selected_biozone_var
+		#if = {
+			#limit = { exists = scope:hunt_biozone }
+			#scope:hunt_biozone = {
+				#root = {
+					#set_variable = {
+						#name = temporary_hunt_biozone_variable	# In order to transfer the flag to the activity
+						#value = prev
+					#}
+				#}
+			#}
+		#}
+	#}
+#}
+#
+###################################################
+## Assemble a Hunting Party
+## by Mayor
+## 0031 - 0040
+###################################################
+#
+#sjalvolki_hunt.0031 = {
+	#type = character_event
+	#title = sjalvolki_hunt.0031.t
+	#desc = sjalvolki_hunt.0031.desc
+	#theme = hunt_activity
+	#left_portrait = root
+	#lower_center_portrait = scope:sjalvolki_hunting_courtier_2
+	#right_portrait = scope:sjalvolki_hunting_courtier_1
+	#override_background = {
+		#trigger = { GH_is_any_tribal_government_trigger = yes }
+		#reference = fp1_throneroom_tribal
+	#}
+	#override_background = {
+		#trigger = { GH_is_any_tribal_government_trigger = no }
+		#reference = fp1_throneroom_nontribal
+	#}
+	#immediate = {
+		#if = {
+			#limit = { has_variable = temporary_hunt_biozone_variable }
+			#var:temporary_hunt_biozone_variable = { save_scope_as = hunt_biozone }
+		#}
+		#if = {
+			#limit = { has_variable = hunting_in_home_biozone_var }
+			#save_scope_value_as = {
+				#name = hunting_in_home_biozone
+				#value = yes
+			#}
+		#}
+		#biozone_effect = { MODE = select }
+		#scope:activity = {
+			#random_in_list = {
+				#variable = potential_hunt_participants
+				#limit = {
+					#is_alive = yes
+				#}
+				#alternative_limit = {
+					#is_powerful_vassal = yes
+				#}
+				#save_scope_as = sjalvolki_hunting_courtier_1
+				#add_to_list = hunting_party
+			#}
+			#random_in_list = {
+				#variable = potential_hunt_participants
+				#limit = {
+					#is_alive = yes
+				#}
+				#alternative_limit = {
+					#is_powerful_vassal = yes
+				#}
+				#save_scope_as = sjalvolki_hunting_courtier_2
+				#add_to_list = hunting_party
+			#}
+		#}
+		#create_character = {
+			#age = { 20 35 }
+			#random_traits = yes
+			#random_traits_list = {
+				#count = 1
+				#hunter_2 = {}
+				#hunter_3 = {}
+			#}
+			#gender_female_chance = 50
+			#dynasty = none
+			#faith = root.faith
+			#culture = root.culture
+			#location = scope:activity.activity_location
+			#save_scope_as = sjalvolki_hunting_courtier_3
+		#}
+	#}
+#
+	#option = {
+		#name = sjalvolki_hunt.0031.a #party as is
+	#}
+#
+	##option = { #invest in tools and provisions
+	##	name = sjalvolki_hunt.0031.b
+	##	remove_short_term_gold = minor_gold_value
+	##	add_character_flag = {
+	##		flag = well_provisioned
+	##		days = 400
+	##	}
+	##}
+	##option = { #hire a very skilled hunter
+	##	name = sjalvolki_hunt.0031.c
+	##	send_interface_toast = {
+	##		title = sjalvolki_hunt.0031.c.toast
+	##		left_icon = root
+	##		right_icon = scope:sjalvolki_hunting_courtier_3
+	##	}
+	##}
+	#after = {
+		#trigger_event = {
+			#id = sjalvolki_hunt.0051
+			#days = 2
+		#}
+	#}
+#}
+#
+###################################################
+## Intro & Check What Tracks are Available
+## by Hapchazzard
+## 0051 - 0060
+###################################################
+#
+#sjalvolki_hunt.0051 = {	# Intro, short description of the biozone
+	#type = character_event
+	#title = sjalvolki_hunt.0051.t
+	#desc = sjalvolki_hunt.0051.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#triggered_animation = {
+			#trigger = {
+				#exists = scope:idyllic
+			#}
+			#animation = happiness	# If the environment is nice, be happy
+		#}
+		#triggered_animation = {
+			#trigger = {
+				#NOT = { exists = scope:idyllic }
+			#}
+			#animation = personality_rational
+		#}
+	#}
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#	
+	#option = { # Let's get started
+		#name = sjalvolki_hunt.0051.a
+		#hidden_effect = {
+			#if = {
+				#limit = { has_perk = professional_monster_slayer_perk }
+				#generate_biozone_hunting_quests_effect = { COUNT = 3 }
+			#}
+		#}
+	#}
+#
+	#after = {
+		#trigger_event = sjalvolki_hunt.0052
+	#}
+#}
+#
+#sjalvolki_hunt.0052 = {
+	#type = character_event
+	#title = sjalvolki_hunt.0052.t
+	#desc = sjalvolki_hunt.0052.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = personality_rational
+	#}
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#	
+	#immediate = {
+		#hunting_game_effect = { MODE = get_allowed }
+		#biozone_effect = { MODE = pick_all_game }
+		#finalize_game_options_effect = yes
+	#}
+#	
+	#option = { # First Option
+		#name = sjalvolki_hunt.0052.a
+		#trigger = {
+			#exists = scope:first_game_option
+			#has_variable = first_game_option_var
+			#custom_description = {
+				#scope:first_game_option = { is_in_list = allowed_game }
+				#text = must_have_hunt_travel_enabled
+			#}
+		#}
+		#show_as_unavailable = {
+			#exists = scope:first_game_option
+			#has_variable = first_game_option_var
+		#}
+		#scope:first_game_option = { save_scope_as = hunt_target_game }
+		#display_proficiency_info = { NAME = scope:first_game_option }
+		#hunting_game_effect = { MODE = get_tags }
+		#set_variable = {
+			#name = chosen_hunt_game_var
+			#value = scope:first_game_option
+		#}
+		#display_hunting_quests_effect = yes
+	#}
+#	
+	#option = { # Second Option
+		#name = sjalvolki_hunt.0052.b
+		#trigger = {
+			#exists = scope:second_game_option
+			#has_variable = second_game_option_var
+			#custom_description = {
+				#scope:second_game_option = { is_in_list = allowed_game }
+				#text = must_have_hunt_travel_enabled
+			#}
+		#}
+		#show_as_unavailable = {  
+			#exists = scope:second_game_option
+			#has_variable = second_game_option_var
+		#}
+		#scope:second_game_option = { save_scope_as = hunt_target_game }
+		#display_proficiency_info = { NAME = scope:second_game_option }
+		#hunting_game_effect = { MODE = get_tags }
+		#set_variable = {
+			#name = chosen_hunt_game_var
+			#value = scope:second_game_option
+		#}
+		#display_hunting_quests_effect = yes
+	#}
+#
+	#option = { # Third Option
+		#name = sjalvolki_hunt.0052.c
+		#trigger = {
+			#exists = scope:third_game_option
+			#has_variable = third_game_option_var
+			#custom_description = {
+				#scope:third_game_option = { is_in_list = allowed_game }
+				#text = must_have_hunt_travel_enabled
+			#}
+		#}
+		#show_as_unavailable = {  
+			#exists = scope:third_game_option
+			#has_variable = third_game_option_var
+		#}
+		#scope:third_game_option = { save_scope_as = hunt_target_game }
+		#display_proficiency_info = { NAME = scope:third_game_option }
+		#hunting_game_effect = { MODE = get_tags }
+		#set_variable = {
+			#name = chosen_hunt_game_var
+			#value = scope:third_game_option
+		#}
+		#display_hunting_quests_effect = yes
+	#}
+#	
+	#option = { # Special Option
+		#name = sjalvolki_hunt.0052.f
+		#trigger = {
+			#exists = scope:special_game_option
+			#has_variable = special_game_option_var
+		#}
+		#add_internal_flag = special
+		#scope:special_game_option = { save_scope_as = hunt_target_game }
+		#display_proficiency_info = { NAME = scope:special_game_option }
+		#hunting_game_effect = { MODE = get_tags }
+		#set_variable = {
+			#name = chosen_hunt_game_var
+			#value = scope:special_game_option
+		#}
+		#display_hunting_quests_effect = yes
+	#}
+#	
+	#option = { # Keep Trying
+		#name = sjalvolki_hunt.0052.d
+		#stress_impact = {
+			#lazy = minor_stress_gain
+		#}
+		#apply_environmental_effects = yes
+		#if = {
+			#limit = { exists = scope:first_game_option }
+			#clear_saved_scope = first_game_option
+			#remove_variable = first_game_option_var
+		#}
+		#if = {
+			#limit = { exists = scope:second_game_option }
+			#clear_saved_scope = second_game_option
+			#remove_variable = second_game_option_var
+		#}
+		#if = {
+			#limit = { exists = scope:third_game_option }
+			#clear_saved_scope = third_game_option
+			#remove_variable = third_game_option_var
+		#}
+		#trigger_event = {
+			#id = sjalvolki_hunt.0052
+			#days = 1
+		#}
+	#}
+#	
+	#option = { # Ask around for rumours
+		#name = sjalvolki_hunt.0052.e
+		#trigger = { 
+			#has_perk = unconventional_game_perk
+			#NOT = { exists = scope:already_asked_around_for_rumours }
+		#}
+		#skill = intrigue
+		#custom_tooltip = will_ask_around_for_rumours_tooltip
+		#remove_short_term_gold = minor_gold_value
+		#save_scope_value_as = {
+			#name = already_asked_around_for_rumours
+			#value = yes
+		#}
+		#duel = {
+			#skill = intrigue
+			#value = 10
+			#10 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+				#}
+				#custom_tooltip = special_game_option_revealed_tooltip
+				#hidden_effect = {
+					#save_scope_value_as = {
+						#name = choosing_special_game_option
+						#value = yes
+					#}
+					#special_game_effect = { MODE = pick }
+					#finalize_special_game_option_effect = yes
+				#}
+			#}
+			#25 = {
+				#custom_tooltip = no_special_game_option_tooltip
+			#}
+		#}
+		#trigger_event = {
+			#id = sjalvolki_hunt.0052
+			#days = 1
+		#}
+	#}
+#	
+	#option = { # Give Up
+		#name = sjalvolki_hunt.0052.g
+		#if = {
+			#limit = {
+				#exists = scope:activity
+			#}
+			#scope:activity = {
+				#complete_activity = yes
+			#}
+		#}
+	#}
+#
+	#after = {
+		#if = {
+			#limit = { exists = scope:hunt_target_game }
+			#hunting_game_effect = { MODE = get_tier }
+			#trigger_event = {
+				#id = sjalvolki_hunt.0061
+				#days = { 5 7 }
+			#}
+			#set_variable = {
+				#name = tracking_progress
+				#value = 0
+			#}
+			#remove_variable = special_game_option_var
+		#}
+	#}
+#}
+#
+###################################################
+## Pick Who Takes Point
+## by Mayor
+## 0061 - 0070
+###################################################
+#
+#sjalvolki_hunt.0061 = {
+	#type = character_event
+	#title = sjalvolki_hunt.0061.t
+	#desc = sjalvolki_hunt.0061.desc
+	#theme = hunt_activity
+	#left_portrait = root
+	#lower_center_portrait = scope:sjalvolki_hunting_courtier_2
+	#right_portrait = scope:sjalvolki_hunting_courtier_1
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#option = {	# Lead yourself
+		#name = sjalvolki_hunt.0061.a
+		#set_tracker_noscope = yes
+	#}
+#
+	#option = { # Have person 1 lead
+		#name = sjalvolki_hunt.0061.b
+		#trigger = {
+			#trigger_if = {
+				#limit = { exists = scope:sjalvolki_hunting_courtier_1 }
+				#scope:sjalvolki_hunting_courtier_1 = { is_alive = yes }
+			#}
+			#trigger_else = { always = no }
+		#}
+		#set_tracker = { TRACKER = scope:sjalvolki_hunting_courtier_1 }
+	#}
+#	
+	#option = { # Have person 2 lead
+		#name = sjalvolki_hunt.0061.c
+		#trigger = {
+			#trigger_if = {
+				#limit = { exists = scope:sjalvolki_hunting_courtier_2 }
+				#scope:sjalvolki_hunting_courtier_2 = { is_alive = yes }
+			#}
+			#trigger_else = { always = no }
+		#}
+		#set_tracker = { TRACKER = scope:sjalvolki_hunting_courtier_2 }
+	#}
+#	
+	#option = { # Have person 3 lead
+		#name = sjalvolki_hunt.0061.d
+		#trigger = {
+			#trigger_if = {
+				#limit = { exists = scope:sjalvolki_hunting_courtier_3 }
+				#scope:sjalvolki_hunting_courtier_3 = { is_alive = yes }
+			#}
+			#trigger_else = { always = no }
+		#}
+		#set_tracker = { TRACKER = scope:sjalvolki_hunting_courtier_3 }
+	#}
+#	
+	#after = {
+		#trigger_event = {
+			#id = sjalvolki_hunt.0101
+			#days = 2
+		#}
+	#}
+#}
+#
+###################################################
+## Tracking Phase
+## by Hapchazzard
+## 0101 - 0110
+###################################################
+#
+#sjalvolki_hunt.0101 = {
+	#type = character_event
+	#title = sjalvolki_hunt.0101.t
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#triggered_animation = {	# Be anxious in the Foglands unless you have some serious guts
+			#trigger = {
+				#exists = scope:fogswept
+				#NOT = { ai_boldness >= 100 }
+			#}
+			#animation = worry
+		#}
+		#triggered_animation = {
+			#trigger = {
+				#OR = {
+					#NOT = { exists = scope:fogswept }
+					#ai_boldness >= 100
+				#}
+			#}
+			#animation = war_attacker
+		#}
+	#}
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#	
+	#desc = {
+		#triggered_desc = {
+			#trigger = {
+				#exists = scope:mediterranean
+				#exists = scope:idyllic
+			#}
+			#desc = sjalvolki_hunt.0101.desc.intro.idyllic_mediterranean
+		#}
+		#triggered_desc = {
+			#trigger = {
+				#exists = scope:fogswept
+			#}
+			#desc = sjalvolki_hunt.0101.desc.intro.foglands
+		#}
+		#triggered_desc = {
+			#trigger = {
+				#exists = scope:woodland
+			#}
+			#desc = sjalvolki_hunt.0101.desc.intro.woodland
+		#}
+		#desc = sjalvolki_hunt.0101.desc.mid
+	#}
+#	
+	#immediate = {
+		#if = {
+			#limit = { scope:tracker = { is_alive = no } }
+			#save_scope_as = tracker
+		#}
+		#if = {
+			#limit = { NOT = { has_variable = tracking_progress } }
+			#set_variable = {
+				#name = tracking_progress
+				#value = 0
+			#}
+		#}
+	#}
+#	
+	#option = { # Keep on Tracking
+		#name = sjalvolki_hunt.0101.a
+		#apply_environmental_effects = yes
+		#if = {
+			#limit = { 
+				#trigger_if = {
+					#limit = { has_variable = lost_level }
+					#var:lost_level <= 0
+				#} 
+				#trigger_else = { always = yes }
+			#}
+			#apply_tracking_effects = yes
+		#}
+	#}
+#	
+	#option = { # Set an Ambush
+		#name = sjalvolki_hunt.0101.b
+		#trigger = { NOT = { exists = scope:sixth_sense } }
+		#apply_environmental_effects = yes
+		#if = {
+			#limit = { 
+				#trigger_if = {
+					#limit = { has_variable = lost_level }
+					#var:lost_level <= 0
+				#} 
+				#trigger_else = { always = yes }
+			#}
+			#apply_ambush_effects = yes
+		#}
+	#}
+#	
+	#option = { # Forage
+		#name = sjalvolki_hunt.0101.c
+		#trait = hunter_1
+		#trait = hunter_2
+		#trait = hunter_3
+		#trait = hunter_4
+		#trait = hunter_5
+		#trigger = {
+			#OR = { 
+				#has_trait = lifestyle_hunter
+				#has_trait = lifestyle_beasthunter
+				#has_trait = lifestyle_herbalist
+			#}
+			#has_character_modifier = hunger_modifier
+			#trigger_if = {
+				#limit = { has_perk = skilled_forager_perk }
+				#NOT = { exists = scope:barren }
+			#}
+			#trigger_else = {
+				#OR = {
+					#exists = scope:verdant
+					#exists = scope:idyllic
+				#}
+			#}
+		#}
+		#apply_environmental_effects = yes
+		#apply_forage_effects = yes
+	#}
+#
+	#option = { # Rest
+		#name = sjalvolki_hunt.0101.e
+		#trait = hunter_1
+		#trait = hunter_2
+		#trait = hunter_3
+		#trait = hunter_4
+		#trait = hunter_5
+		#trait = physician_1
+		#trait = physician_2
+		#trait = physician_3
+		#trigger = {
+			#OR = {
+				#has_trait = lifestyle_hunter
+				#has_trait = lifestyle_beasthunter
+				#has_trait = lifestyle_physician
+			#}
+			#OR = {
+				#has_trait = wounded_1
+				#has_trait = wounded_2
+				#has_trait = wounded_3
+			#}
+		#}
+		#apply_environmental_effects = yes
+		#duel = {
+			#skill = learning
+			#value = average_skill_rating
+#
+			#50 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+				#}
+				#desc = sjalvolki_hunt.0101.good_rest
+				#if = {
+					#limit = { has_trait = wounded_1 }
+					#remove_trait = wounded_1
+				#}
+				#else_if = {
+					#limit = { has_trait = wounded_2 }
+					#remove_trait = wounded_2
+					#add_trait = wounded_1
+				#}
+				#else_if = {
+					#limit = { has_trait = wounded_3 }
+					#remove_trait = wounded_3
+					#add_trait = wounded_2
+				#}
+			#}
+			#25 = { 
+				#compare_modifier = {
+					#value = scope:duel_value
+				#}
+				#desc = sjalvolki_hunt.0101.rest
+				#stress_impact = {
+					#base = miniscule_stress_impact_gain
+				#}
+			#}
+		#}
+#
+		#if = {
+			#limit = {
+				#trigger_if = {
+					#limit = { has_variable = tracking_progress }
+					#var:tracking_progress >= 1
+				#}
+				#trigger_else = {
+					#always = no
+				#}
+			#}
+			#custom_tooltip = lose_tracking_progress_tooltip
+			#change_variable = {
+				#name = tracking_progress
+				#subtract = 1
+			#}
+		#}
+#
+		#if = {
+			#limit = {
+				#trigger_if = {
+					#limit = { has_variable = lost_level }
+					#var:lost_level <= 0
+				#}
+				#trigger_else = { always = yes }
+			#}
+			#trigger_event = {	# You don't track it down and lose tracking progress
+				#on_action = tracking_events_on_action
+				#days = 2
+			#}
+		#}
+	#}
+#	
+	#option = { # Give Up
+		#name = sjalvolki_hunt.0101.d
+		#if = {
+			#limit = {
+				#exists = scope:activity
+			#}
+			#scope:activity = {
+				#complete_activity = yes
+			#}
+		#}
+	#}
+#}
+#
+## You get lost
+#sjalvolki_hunt.0111 = {
+	#type = character_event
+	#title = sjalvolki_hunt.0111.t
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = worry
+	#}
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#	
+	#desc = sjalvolki_hunt.0111.desc
+#	
+	#option = {
+		#name = sjalvolki_hunt.0111.a
+		#apply_environmental_effects = yes
+	#}
+#}
+#
+###################################################
+## Combat Phase
+## by Hapchazzard
+## 0201 - 0210
+###################################################
+#
+#sjalvolki_hunt.0201 = {	# Event that notifies you that combat is about to commence
+	#type = character_event
+	#title = sjalvolki_hunt.0201.t
+	#desc = sjalvolki_hunt.0201.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#triggered_animation = {	# Be anxious in the Foglands unless you have some serious guts
+			#trigger = {
+				#exists = scope:fogswept
+				#NOT = { ai_boldness >= 100 }
+			#}
+			#animation = worry
+		#}
+		#triggered_animation = {
+			#trigger = {
+				#OR = {
+					#NOT = { exists = scope:fogswept }
+					#ai_boldness >= 100
+				#}
+			#}
+			#animation = war_attacker
+		#}
+	#}
+	#right_portrait = {
+		#character = scope:right_portrait_character
+		#triggered_animation = {	# Be anxious in the Foglands unless you have some serious guts
+			#trigger = {
+				#exists = scope:fogswept
+				#NOT = { ai_boldness >= 100 }
+			#}
+			#animation = worry
+		#}
+		#triggered_animation = {
+			#trigger = {
+				#OR = {
+					#NOT = { exists = scope:fogswept }
+					#ai_boldness >= 100
+				#}
+			#}
+			#animation = war_attacker
+		#}
+	#}
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#	
+	#immediate = {
+		#scope:sjalvolki_hunting_courtier_1 = { save_scope_as = right_portrait_character }
+		#if = {
+			#limit = { NOT = { has_variable = long_range_weapon } }
+			#set_variable = {
+				#name = long_range_weapon
+				#value = flag:bow
+			#}
+		#}
+		#if = {
+			#limit = { NOT = { has_variable = medium_range_weapon } }
+			#set_variable = {
+				#name = medium_range_weapon
+				#value = flag:huntingsword
+			#}
+		#}
+		#if = {
+			#limit = { NOT = { has_variable = short_range_weapon } }
+			#set_variable = {
+				#name = short_range_weapon
+				#value = flag:dagger
+			#}
+		#}
+		#if = {	# Play a spooky cue once you encounter a fogbeast
+			#limit = { 
+				#exists = scope:fogswept
+				#NOT = { exists = scope:fogbeast_already_generated }
+			#}
+			#hidden_effect = {
+				#save_scope_value_as = {
+					#name = fogbeast_already_generated
+					#value = yes
+				#}
+				#random_list = {
+					#60 = { generate_fogbeast_of_mutation_effect = yes }
+					#40 = { generate_fogbeast_of_thought_effect = yes }
+				#}
+				#game_tag_table_effect = { MODE = copy }
+			#}
+			#play_music_cue = "mx_cue_murder"
+		#}
+		#if = {
+			#limit = {
+				#exists = scope:abyssal_sea
+				#NOT = { exists = scope:seamonster_already_generated }
+			#}
+			#hidden_effect = {
+				#save_scope_value_as = {
+					#name = seamonster_already_generated
+					#value = yes
+				#}
+				#generate_seamonster_effect = yes
+				#game_tag_table_effect = { MODE = copy }
+			#}
+			#play_music_cue = "mx_cue_murder"
+		#}
+		#if = {
+			#limit = {
+				#exists = scope:abyssal_sea
+				#NOT = { exists = scope:sea_mutant_already_generated }
+			#}
+			#hidden_effect = {
+				#save_scope_value_as = {
+					#name = sea_mutant_already_generated
+					#value = yes
+				#}
+				#generate_sea_mutant_effect = yes
+				#game_tag_table_effect = { MODE = copy }
+			#}
+			#play_music_cue = "mx_cue_murder"
+		#}
+		#if = {
+			#limit = {
+				#exists = scope:abyssal_sea
+				#NOT = { exists = scope:seaspirit_already_generated }
+			#}
+			#hidden_effect = {
+				#save_scope_value_as = {
+					#name = seaspirit_already_generated
+					#value = yes
+				#}
+				#generate_seaspirit_effect = yes
+				#game_tag_table_effect = { MODE = copy }
+			#}
+			#play_music_cue = "mx_cue_murder"
+		#}
+		#if = {
+			#limit = {
+				#exists = scope:mutants
+				#NOT = { exists = scope:terrestrial_mutant_already_generated }
+			#}
+			#hidden_effect = {
+				#save_scope_value_as = {
+					#name = terrestrial_mutant_already_generated
+					#value = yes
+				#}
+				#generate_terrestrial_mutant_effect = yes
+				#game_tag_table_effect = { MODE = copy }
+			#}
+			#play_music_cue = "mx_cue_murder"
+		#}
+		#else_if = {	# Generate a Vampire
+			#limit = { 
+				#scope:hunt_target_game = flag:vampire
+			#}
+			#hidden_effect = {
+				#generate_vampire_effect = yes
+			#}
+		#}
+	#}
+#	
+	#option = { # Engage!
+		#name = sjalvolki_hunt.0201.a
+		#display_all_possible_tags_effect = yes
+		#if = {
+			#limit = { exists = scope:successful_ambush }
+			#custom_tooltip = successful_ambush_tooltip
+		#}
+		#hunting_game_effect = { MODE = combat }
+	#}
+#	
+	##option = {
+	##	name = sjalvolki_hunt.0201.smokebombs
+	##	add_internal_flag = special
+	##	trigger = { has_character_modifier = artifact_sackofsmokebombs_modifier }
+	##	remove_artifact = { ARTIFACT = artifact_sackofsmokebombs }
+	##	remove_character_modifier = artifact_sackofsmokebombs_modifier
+	##	save_scope_value_as = {
+	##		name = smokebombs_used
+	##		value = yes
+	##	}
+	##	custom_tooltip = smokebomb_hunting_tooltip
+	##	custom_tooltip = other_effects_apply_tooltip
+	##	show_as_tooltip = {
+	##		hunting_game_effect = { MODE = combat }
+	##	}
+	##	trigger_event = sjalvolki_hunt.0201
+	##}
+#	
+	#option = {
+		#name = sjalvolki_hunt.0201.firearbalest
+		#add_internal_flag = special
+		#trigger = { 
+			#any_equipped_character_artifact = {
+				#has_variable = fire_arbalest
+			#}
+			#NOT = { exists = scope:firearbalest_used }
+		#}
+		#custom_tooltip = firearbalest_hunting_tooltip
+		#custom_tooltip = firearbalest_scary_hunting_tooltip
+		#custom_tooltip = firearbalest_negative_prestige_hunting_tooltip
+		#custom_tooltip = other_effects_apply_tooltip
+		#set_variable = {
+			#name = long_range_weapon
+			#value = flag:firearbalest
+		#}
+		#set_variable = {
+			#name = medium_range_weapon
+			#value = flag:firearbalest
+		#}
+		#save_scope_value_as = {
+			#name = firearbalest_used
+			#value = yes
+		#}
+		#show_as_tooltip = {
+			#hunting_game_effect = { MODE = combat }
+		#}
+		#trigger_event = sjalvolki_hunt.0202
+	#}
+#	
+	#option = { # I don't like these odds...
+		#name = sjalvolki_hunt.0201.b
+		#trigger = {
+			#custom_description = {
+				#trigger_if = {
+					#limit = { exists = scope:sixth_sense }
+					#exists = scope:sedentary
+				#}
+				#trigger_else = {
+					#always = yes
+				#}
+				#text = sixth_sense_trigger
+			#}
+		#}
+		#show_as_unavailable = { exists = scope:sixth_sense }
+		#if = {
+			#limit = {
+				#exists = scope:activity
+			#}
+			#scope:activity = {
+				#complete_activity = yes
+			#}
+		#}
+	#}
+#
+	##option = { # Pokemon!
+	##	name = sjalvolki_hunt.0201.c
+	##	trigger = {
+	##		AND = {
+	##			exists = scope:aquatic
+	##			faith = { has_doctrine_parameter = can_catch_sea_creatures }
+	##		}
+	##		NOR = {
+	##			exists = scope:small
+	##			exists = scope:tiny
+	##			exists = scope:spirit
+	##			AND = {
+	##				exists = scope:unyielding
+	##				exists = scope:variable_size
+	##			}
+	##		}
+	##	}
+	##
+	##	hunting_game_effect = { MODE = tame }
+	##}
+#}
+#
+#sjalvolki_hunt.0202 = {	# You win!
+	#type = character_event
+	#title = sjalvolki_hunt.0202.t
+	#desc = sjalvolki_hunt.0202.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = war_over_win
+	#}
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+	#artifact = {
+		#target = scope:first_reward_artifact
+		#position = lower_left_portrait
+		#trigger = { exists = scope:first_reward_artifact }
+	#}
+#	
+	#immediate = {
+		#save_scope_value_as = {
+			#name = killed_quarry
+			#value = yes
+		#}
+		#if = {
+			#limit = { exists = scope:vampire }
+			#scope:vampire = {
+				#death = {
+					#killer = root
+					#death_reason = death_duel
+				#}
+			#}
+		#}
+		#hunting_game_effect = { MODE = add_to_hunted_list }
+		#hunting_game_effect = { MODE = increase_proficiency }
+		#hunting_game_effect = { MODE = get_reward }
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.0202.a
+		#trigger = {  # So you can have the fancier option displayed instead with the appropriate focus
+			#NOR = {
+				#has_focus = adventure_glory_focus
+				#exists = scope:prowess_upgraded
+			#}
+		#}
+		#hunting_game_effect = { MODE = hunt_end }
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.0202.glory
+		#add_internal_flag = special
+		#trigger = {  # Fancy glory focus option
+			#has_focus = adventure_glory_focus
+		#}
+		#hunting_game_effect = { MODE = hunt_end }
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.0202.prowess
+		#skill = prowess
+		#trigger = {  # Fancy enlightenment focus option
+			#exists = scope:prowess_upgraded
+		#}
+		#hunting_game_effect = { MODE = hunt_end }
+	#}
+#	
+	#after = {
+		#if = {
+			#limit = { should_level_up_hunting_skill_trigger = yes }
+			#game_level_up_hunting_skill_reward_effect = yes
+		#}
+		#hidden_effect = {
+			#if = {
+				#limit = { exists = scope:activity }
+				#scope:activity = {
+					#complete_activity = yes
+				#}
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.0204 = {	# You lose, but keep your head
+	#type = character_event
+	#title = sjalvolki_hunt.0204.t
+	#desc = sjalvolki_hunt.0204.desc
+	#theme = hunt_activity
+	#left_portrait = root
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#	
+	#immediate = {
+		#change_trait_rank = {
+			#trait = wounded
+			#rank = 1
+			#max = 3
+		#}
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.0204.a
+		#hunting_game_effect = { MODE = hunt_end }
+	#}
+#	
+	#after = {
+		#if = {
+			#limit = { exists = scope:vampire }
+			#death = {
+				#death_reason = death_vanished
+			#}
+		#}
+		#hidden_effect = {
+			#if = {
+				#limit = { exists = scope:activity }
+				#scope:activity = {
+					#complete_activity = yes
+				#}
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.0205 = {	# You bite the bullet
+	#type = character_event
+	#title = sjalvolki_hunt.0205.t
+	#desc = sjalvolki_hunt.0205.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = fear
+	#}
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.0205.a
+		#if = {
+			#limit = {
+				#exists = scope:activity
+			#}
+			#scope:activity = {
+				#complete_activity = yes
+			#}
+		#}
+		#death = { death_reason = death_accident }
+	#}
+#	
+	#after = {
+		#hidden_effect = {
+			#if = {
+				#limit = { exists = scope:activity }
+				#scope:activity = {
+					#complete_activity = yes
+				#}
+			#}
+		#}
+		#hidden_effect = {
+			#if = {
+				#limit = { exists = scope:activity }
+				#scope:activity = {
+					#complete_activity = yes
+				#}
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.0206 = {	# Your prey gets away
+	#type = character_event
+	#title = sjalvolki_hunt.0206.t
+	#desc = sjalvolki_hunt.0206.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#triggered_animation = {
+			#trigger = {
+				#has_trait = calm
+			#}
+			#animation = personality_rational	# Calm characters will stay largely nonplussed
+		#}
+		#triggered_animation = {
+			#trigger = {
+				#NOT = { has_trait = calm }
+			#}
+			#animation = rage
+		#}
+	#}
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.0206.a
+		#trigger = { NOT = { has_trait = calm } }
+		#stress_impact = {
+			#ambitious = minor_stress_gain
+			#wrathful = minor_stress_gain
+			#arrogant = minor_stress_gain
+		#}
+	#}
+#	
+	#option = {	# Calm characters shrug off all stress impacts
+		#name = sjalvolki_hunt.0206.b
+		#trigger = { has_trait = calm }
+	#}
+#	
+	#after = {
+		#hidden_effect = {
+			#if = {
+				#limit = { exists = scope:activity }
+				#scope:activity = {
+					#complete_activity = yes
+				#}
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.0207 = {	# You get chased down by social game (Hidden for now)
+	#hidden = yes
+#	
+	#immediate = {
+		#death = { death_reason = death_accident }
+	#}
+#}
+#
+##sjalvolki_hunt.0208 = { # You successfully tame your prey
+##	type = character_event
+##	title = sjalvolki_hunt.0208.t
+##	desc = sjalvolki_hunt.0208.desc
+##	theme = hunt_activity
+##	left_portrait = {
+##		character = root
+##		animation = war_over_win
+##	}
+##	override_background = {
+##		reference = hunting_wilderness_scope
+##	}
+##	immediate = {
+##		hunting_game_effect = { MODE = add_to_hunted_list }
+##		hunting_game_effect = { MODE = increase_proficiency }
+##		#hunting_game_effect = { MODE = get_tame_reward }
+##	}
+##
+##
+##	option = {
+##		name = sjalvolki_hunt.0202.glory
+##		add_internal_flag = special
+##		trigger = {  # Fancy glory focus option
+##			has_focus = adventure_glory_focus
+##		}
+##		hunting_game_effect = { MODE = hunt_end }
+##	}
+##	
+##	option = {
+##		name = sjalvolki_hunt.0202.prowess
+##		skill = prowess
+##		trigger = {  # Fancy enlightenment focus option
+##			exists = scope:prowess_upgraded
+##		}
+##		hunting_game_effect = { MODE = hunt_end }
+##	}
+##	
+##	after = {
+##		if = {
+##			limit = { should_level_up_hunting_skill_trigger = yes }
+##			game_level_up_hunting_skill_reward_effect = yes
+##		}
+##		hidden_effect = {
+##			if = {
+##				limit = { exists = scope:activity }
+##				scope:activity = {
+##					complete_activity = yes
+##				}
+##			}
+##		}
+##	}
+##}
+#
+###################################################
+## Get a Nickname
+## by Hapchazzard
+## 0211 - 0220
+###################################################
+#
+#sjalvolki_hunt.0211 = {
+	#type = character_event
+	#title = sjalvolki_hunt.0211.t
+	#desc = sjalvolki_hunt.0211.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = war_over_win
+	#}
+	#right_portrait = {
+		#character = scope:sjalvolki_hunting_courtier_1
+		#animation = war_over_win
+	#}
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.0211.a
+		#hunting_game_effect = { MODE = get_reward }
+	#}
+#	
+	#option = {	# No thanks
+		#name = sjalvolki_hunt.0211.b
+	#}
+#}
+#
+###################################################
+## Gain an Expert Proficiency
+## by Hapchazzard
+## 0221 - 0230
+###################################################
+#
+#sjalvolki_hunt.0221 = {
+	#type = character_event
+	#title = sjalvolki_hunt.0221.t
+	#desc = sjalvolki_hunt.0221.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = war_over_win
+	#}
+	#right_portrait = {
+		#character = scope:sjalvolki_hunting_courtier_1
+		#animation = war_over_win
+	#}
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.0221.a
+		#hunting_game_effect = { MODE = set_expert_proficiency }
+	#}
+#	
+	#option = {	# No thanks
+		#name = sjalvolki_hunt.0221.b
+	#}
+#}
+#
+###################################################
+## Level up Hunting Skill
+## by Hapchazzard
+## 0231 - 0240
+###################################################
+#
+#sjalvolki_hunt.0231 = {
+	#type = character_event
+	#title = sjalvolki_hunt.0231.t
+	#desc = {
+		#first_valid = {
+			#triggered_desc = {
+				#trigger = {
+					#NOR = {
+						#has_trait = lifestyle_hunter
+						#has_trait = lifestyle_beasthunter
+					#}
+				#}
+				#desc = sjalvolki_hunt.0231.desc.beginner
+			#}
+			#desc = sjalvolki_hunt.0231.desc
+		#}
+	#}
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = war_over_win
+	#}
+	#right_portrait = {
+		#character = scope:sjalvolki_hunting_courtier_1
+		#animation = war_over_win
+	#}
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.0231.a
+		#add_internal_flag = special
+		#trigger = {
+			#should_use_advanced_hunting_traits = yes
+		#}
+		#game_level_up_hunting_skill_reward_effect = yes
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.0231.b
+		#add_internal_flag = special
+		#trigger = {
+			#should_use_advanced_hunting_traits = no
+			#has_perk = beasthunter_perk
+		#}
+		#game_level_up_hunting_skill_reward_effect = yes
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.0231.b
+		#trigger = {
+			#should_use_advanced_hunting_traits = no
+			#NOT = { has_perk = beasthunter_perk }
+		#}
+		#game_level_up_hunting_skill_reward_effect = yes
+	#}
+#}
+#
+###################################################
+## Generate Fogbeast (DEBUG)
+## by Hapchazzard
+## 1000
+###################################################
+#
+#sjalvolki_hunt.1000 = {
+	#type = character_event
+	#orphan = yes
+	#title = sjalvolki_hunt.1000.t
+	#desc = sjalvolki_hunt.1000.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#triggered_animation = {	# Be anxious in the Foglands unless you have some serious guts
+			#trigger = {
+				#exists = scope:fogswept
+				#NOT = { ai_boldness >= 100 }
+			#}
+			#animation = worry
+		#}
+		#triggered_animation = {
+			#trigger = {
+				#OR = {
+					#NOT = { exists = scope:fogswept }
+					#ai_boldness >= 100
+				#}
+			#}
+			#animation = war_attacker
+		#}
+	#}
+#	
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#	
+	#immediate = {
+		#play_music_cue = mx_cue_murder
+		#save_scope_value_as = {
+			#name = fogswept
+			#value = yes
+		#}
+		#save_scope_value_as = {
+			#name = sixth_sense
+			#value = yes
+		#}
+		#save_scope_value_as = {
+			#name = unyielding
+			#value = yes
+		#}
+		#generate_fogbeast_of_thought_effect = yes
+		#game_tag_table_effect = { MODE = copy }
+		#save_scope_value_as = {
+			#name = hunt_target_game
+			#value = flag:fogbeast
+		#}
+		#set_variable = {
+			#name = chosen_hunt_game_var
+			#value = flag:fogbeast
+			#days = 2
+		#}
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.1000.a
+		#display_all_possible_tags_effect = yes
+		#if = {
+			#limit = { exists = scope:successful_ambush }
+			#custom_tooltip = successful_ambush_tooltip
+		#}
+		##if = {
+		##	limit = { has_character_modifier = artifact_manswelbestiarium_modifier }
+		##	custom_tooltip = bestiarium_bonus_tooltip
+		##}
+		#hunting_game_effect = { MODE = combat }
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.1000.b
+		#trigger = {
+			#custom_description = {
+				#NOT = { exists = scope:sixth_sense }
+				#text = sixth_sense_trigger
+			#}
+		#}
+		#show_as_unavailable = { exists = scope:sixth_sense }
+	#}
+#}
+#
+#sjalvolki_hunt.1001 = {
+	#type = character_event
+	#orphan = yes
+	#title = sjalvolki_hunt.1001.t
+	#desc = sjalvolki_hunt.1001.desc
+	#theme = hunt_activity
+	#right_portrait = {
+		#character = scope:vampire
+	#}
+#	
+	#immediate = {
+		#capital_county = { save_scope_as = vampire_county }
+		#create_character = {
+			#location = scope:vampire_county.title_province
+			#template = vampire_template
+			#dynasty = none
+			#save_scope_as = vampire
+		#}
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.1001.a
+	#}
+#}
+#
+#############################
+## Generate Sea Monster DEBUG
+#############################
+#sjalvolki_hunt.1002 = { 
+	#type = character_event
+	#orphan = yes
+	#title = sjalvolki_hunt.1002.t
+	#desc = sjalvolki_hunt.1002.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#triggered_animation = {
+			#trigger = { always = yes }
+			#animation = worry
+		#}
+	#}
+#	
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#	
+	#immediate = {
+		#play_music_cue = mx_cue_murder
+		#save_scope_value_as = {
+			#name = sixth_sense
+			#value = yes
+		#}
+		#save_scope_value_as = {
+			#name = unyielding
+			#value = yes
+		#}
+		#generate_seamonster_effect = yes
+		#game_tag_table_effect = { MODE = copy }
+		#save_scope_value_as = {
+			#name = hunt_target_game
+			#value = flag:seamonster
+		#}
+		#set_variable = {
+			#name = chosen_hunt_game_var
+			#value = flag:seamonster
+			#days = 2
+		#}
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.1002.a
+		#display_all_possible_tags_effect = yes
+		#if = {
+			#limit = { exists = scope:successful_ambush }
+			#custom_tooltip = successful_ambush_tooltip
+		#}
+		##if = {
+		##	limit = { has_character_modifier = artifact_manswelbestiarium_modifier }
+		##	custom_tooltip = bestiarium_bonus_tooltip
+		##}
+		#hunting_game_effect = { MODE = combat }
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.1002.b
+		#trigger = {
+			#custom_description = {
+				#NOT = { exists = scope:sixth_sense }
+				#text = sixth_sense_trigger
+			#}
+		#}
+		#show_as_unavailable = { exists = scope:sixth_sense }
+	#}
+#}
+#
+#############################
+## Generate Sea Spirit DEBUG
+#############################
+#sjalvolki_hunt.1003 = { 
+	#type = character_event
+	#orphan = yes
+	#title = sjalvolki_hunt.1003.t
+	#desc = sjalvolki_hunt.1003.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#triggered_animation = {
+			#trigger = { always = yes }
+			#animation = worry
+		#}
+	#}
+#	
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#	
+	#immediate = {
+		#play_music_cue = mx_cue_murder
+		#save_scope_value_as = {
+			#name = sixth_sense
+			#value = yes
+		#}
+		#save_scope_value_as = {
+			#name = unyielding
+			#value = yes
+		#}
+		#generate_seaspirit_effect = yes
+		#game_tag_table_effect = { MODE = copy }
+		#save_scope_value_as = {
+			#name = hunt_target_game
+			#value = flag:seaspirit
+		#}
+		#set_variable = {
+			#name = chosen_hunt_game_var
+			#value = flag:seaspirit
+			#days = 2
+		#}
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.1003.a
+		#display_all_possible_tags_effect = yes
+		#if = {
+			#limit = { exists = scope:successful_ambush }
+			#custom_tooltip = successful_ambush_tooltip
+		#}
+		##if = {
+		##	limit = { has_character_modifier = artifact_manswelbestiarium_modifier }
+		##	custom_tooltip = bestiarium_bonus_tooltip
+		##}
+		#hunting_game_effect = { MODE = combat }
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.1003.b
+		#trigger = {
+			#custom_description = {
+				#NOT = { exists = scope:sixth_sense }
+				#text = sixth_sense_trigger
+			#}
+		#}
+		#show_as_unavailable = { exists = scope:sixth_sense }
+	#}
+#}
+##################
+## RANDOM EVENTS #
+##################
+#
+#scripted_effect loot_ruins_effect = {
+	#duel = {
+		## Intrigue determines how efficient you are at ransacking the place for hidden valuables.
+		## Stewardship determines how good you are at actually turning a profit on them.
+		#skill = intrigue
+		#value = mediocre_skill_rating
+		#13 = {
+			#desc = sjalvolki_conquest.0101.good_profit
+			#compare_modifier = {
+				#value = scope:duel_value
+				#multiplier = 1.0
+			#}
+			#modifier = {
+				#factor = 2
+				#exists = scope:being_extra_careful
+			#}
+			#send_interface_toast = {	
+				#title = sjalvolki_conquest.0101.good_profit
+				#left_icon = root
+#
+				#add_gold = {
+					#value = stewardship
+					#multiply = 10
+					#min = medium_gold_value
+				#}
+			#}
+		#}
+		#37 = {
+			#desc = sjalvolki_conquest.0101.decent_profit
+			#send_interface_toast = {	
+				#title = sjalvolki_conquest.0101.decent_profit
+				#left_icon = root
+#
+				#add_gold = {
+					#value = stewardship
+					#multiply = 5
+					#min = minor_gold_value
+				#}
+			#}
+		#}
+		#50 = {
+			#desc = sjalvolki_conquest.0101.trifling_profit
+			#compare_modifier = {
+				#value = scope:duel_value
+				#multiplier = -1.0
+			#}
+			#modifier = {
+				#factor = 0.5
+				#exists = scope:being_extra_careful
+			#}
+			#send_interface_toast = {	
+				#title = sjalvolki_conquest.0101.trifling_profit
+				#left_icon = root
+#
+				#add_gold = {
+					#value = stewardship
+					#multiply = 2
+					#min = {
+						#value = minor_gold_value
+						#multiply = 0.5
+					#}
+				#}
+			#}
+		#}
+	#}
+	#if = {
+		#limit = {
+			#exists = scope:hunt_biozone
+				#OR = {
+					#scope:hunt_biozone = flag:kalath_old_growth
+					#scope:hunt_biozone = flag:pathos_delta
+					#scope:hunt_biozone = flag:sulzegg_basin
+					#scope:hunt_biozone = flag:kalath_redwoods
+					#scope:hunt_biozone = flag:southern_kalath
+					#scope:hunt_biozone = flag:knokidbes
+					#scope:hunt_biozone = flag:migraddar
+					#scope:hunt_biozone = flag:etepezea
+					#scope:hunt_biozone = flag:malcois
+					#scope:hunt_biozone = flag:the_isles
+					#scope:hunt_biozone = flag:imperial_isle
+					#scope:hunt_biozone = flag:guillate_rocks
+					#scope:hunt_biozone = flag:tower_isles
+					#scope:hunt_biozone = flag:central_isles
+					#scope:hunt_biozone = flag:mayikprolollan
+					#scope:hunt_biozone = flag:chevalie
+					#scope:hunt_biozone = flag:black_mountains
+					#scope:hunt_biozone = flag:konijkmener
+					#scope:hunt_biozone = flag:vyshtanka
+					#scope:hunt_biozone = flag:western_aironoi
+					#scope:hunt_biozone = flag:hyrea
+				#}
+		#}
+		#custom_tooltip = {
+			#text = loot_ruins_tooltip
+			#random_list = {
+				#45 = {}
+				#15 = {
+					#create_artifact_aversarian_goblet_effect = {
+						#OWNER = root
+						#LOCATION = root.location
+					#}
+				#}
+				#15 = {
+					#create_artifact_vessel_earthware_effect = {
+						#OWNER = root
+						#LOCATION = root.location
+					#}
+				#}
+				#15 = {
+					#create_artifact_commemorative_coin_effect = {
+						#OWNER = root
+						#LOCATION = root.location
+					#}
+				#}
+				#15 = {
+					#create_artifact_marcher_casket_effect = {
+						#OWNER = root
+						#LOCATION = root.location
+					#}
+				#}
+				#15 = {
+					#create_artifact_sacrificial_dagger_effect = {
+						#OWNER = root
+						#LOCATION = root.location
+					#}
+				#}
+			#}
+		#}
+	#}
+	#if = {
+		#limit = {
+			#exists = scope:hunt_biozone
+			#OR = {
+				#scope:hunt_biozone = flag:kharadamat
+				#scope:hunt_biozone = flag:sinhamiyah
+				#scope:hunt_biozone = flag:sirwali_coast
+				#scope:hunt_biozone = flag:khenemhat
+				#scope:hunt_biozone = flag:aglabolu
+				#scope:hunt_biozone = flag:ayyar_coast
+				#scope:hunt_biozone = flag:kemsar
+				#scope:hunt_biozone = flag:amsar
+				#scope:hunt_biozone = flag:sarradonian_mountains
+				#scope:hunt_biozone = flag:sarradonian_desert
+			#}
+		#}
+		#custom_tooltip = {
+			#text = loot_ruins_tooltip
+			#random_list = {
+				#45 = {}
+				#10 = {
+					#create_artifact_aversarian_goblet_effect = {
+						#OWNER = root
+						#LOCATION = root.location
+					#}
+				#}
+				#10 = {
+					#create_artifact_vessel_earthware_effect = {
+						#OWNER = root
+						#LOCATION = root.location
+					#}
+				#}
+				#20 = {
+					#create_artifact_stone_tablet_effect = {
+						#OWNER = root
+						#LOCATION = root.location
+					#}
+				#}
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.7001 = {
+	#type = character_event
+	#title = sjalvolki_hunt.7001.t
+	#desc = sjalvolki_hunt.7001.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = admiration
+	#}
+	#right_portrait = {
+		#character = scope:sjalvolki_hunting_courtier_1
+		#animation = happiness
+	#}
+	#lower_center_portrait = scope:sjalvolki_hunting_courtier_2
+#
+	#trigger = {
+		#has_character_flag = sjalvolki_hunt_ongoing
+		#not = {
+			#has_character_flag = sjalvolki_hunt_7001
+		#}
+	#}
+#
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#option = {
+		#name = sjalvolki_hunt.7001.a
+		#duel = {
+			#skill = diplomacy
+			#value = 4
+			#20 = { #success! The men are in high spirits
+			#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1
+				#}
+				#desc = sjalvolki_hunt.7001.a.exceptionalsuccess
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7001.a.exceptionalsuccess
+					#change_variable = {
+						#name = tracking_progress
+						#add = 3
+					#}
+				#}
+			#}
+			#8 = { #Well they like the drinks at least
+			#compare_modifier = {
+					#value = scope:duel_value
+				#}
+				#custom_tooltip = gain_tracking_progress_tooltip
+				#desc = sjalvolki_hunt.7001.a.success
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7001.a.success
+					#change_variable = {
+							#name = tracking_progress
+							#add = 1
+					#}
+				#}
+			#}
+			#5 = { #You ruin the evening
+			#compare_modifier = {
+					#value = scope:duel_value
+				#}
+				#custom_tooltip = lose_tracking_progress_tooltip
+				#desc = sjalvolki_hunt.7001.a.failure
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7001.a.failure
+					#change_variable = {
+							#name = tracking_progress
+							#add = -1
+					#}
+				#}
+			#}
+		#}
+		#stress_impact = {
+			#impatient = miniscule_stress_impact_gain
+			#callous = miniscule_stress_impact_gain
+			#gregarious = minor_stress_impact_loss
+			#shy = minor_stress_impact_gain
+			#deceitful = minor_stress_impact_loss
+		#}
+	#}
+	#option = {
+		#name = sjalvolki_hunt.7001.b
+#
+		#stress_impact = {
+			#shy = minor_stress_impact_loss
+			#gregarious = minor_stress_impact_gain
+			#patient = miniscule_stress_impact_loss
+			#callous = miniscule_stress_impact_loss
+		#}
+	#}
+	#after = {
+		#add_character_flag = {
+			#flag = sjalvolki_hunt_7001
+			#days = 1000
+		#}
+		#if = {
+			#limit = {
+				#root = {
+				#has_character_flag = sjalvolki_hunt_ongoing
+				#}
+			#}
+			#trigger_event = {
+				#on_action = tracking_events_on_action
+				#days = 2 
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.7002 = { #A River Blocks Your Path
+	#type = character_event
+	#title = sjalvolki_hunt.7002.t
+	#desc = sjalvolki_hunt.7002.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = worry
+	#}
+	#trigger = {
+		#has_character_flag = sjalvolki_hunt_ongoing
+		#NOR = {
+			#has_character_flag = hunt_7002
+			#exists = scope:barren 
+		#}
+	#}
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#option = {
+		#name = sjalvolki_hunt.7002.a
+		#apply_tracking_effects = yes
+		#remove_short_term_gold = minor_gold_value
+		#custom_tooltip = gain_tracking_progress_tooltip
+		#change_variable = {
+			#name = tracking_progress
+			#add = 2
+		#}
+		#stress_impact = {
+			#greedy = minor_stress_impact_gain
+			#lazy = minor_stress_impact_loss
+			#brave = miniscule_stress_impact_gain
+			#stubborn = miniscule_stress_impact_gain
+			#craven = minor_stress_impact_loss
+		#}
+	#}
+	#option = {
+		#name = sjalvolki_hunt.7002.b
+		#duel = {
+			#skill = prowess
+			#value = 12
+			#40 = { #success! You ford the swollen river
+				#compare_modifier = {
+					#value = scope:duel_value
+				#}
+				#desc = sjalvolki_hunt.7002.a.success
+				#custom_tooltip = gain_tracking_progress_tooltip
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7002.a.success
+					#left_icon = root
+					#change_variable = {
+						#name = tracking_progress
+						#add = 2
+					#}
+				#}
+				#apply_tracking_effects = yes
+				#apply_environmental_effects = yes
+			#}
+			#15 = { #Success! You ford the river but less well
+				#compare_modifier = {
+					#value = scope:duel_value
+				#}
+				#desc = sjalvolki_hunt.7002.a.success
+				#apply_tracking_effects = yes
+				#apply_environmental_effects = yes
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7002.a.success
+					#left_icon = root
+				#}
+			#}
+			#10 = { #You are wounded in the process.
+				#compare_modifier = {
+					#value = scope:duel_value
+				#}
+				#desc = sjalvolki_hunt.7002.a.failure
+				#apply_tracking_effects = yes
+				#apply_environmental_effects = yes
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7002.a.failure
+					#left_icon = root
+					#change_trait_rank = {
+						#trait = wounded
+						#rank = 1
+						#max = 3
+					#}
+				#}
+			#}
+		#}
+		#stress_impact = {
+			#lazy = minor_stress_impact_gain
+			#brave = minor_stress_impact_loss
+			#arrogant = miniscule_stress_impact_loss
+			#craven = minor_stress_impact_gain
+		#}
+	#}
+	#option = {
+		#name = sjalvolki_hunt.7002.c
+		#custom_tooltip = lose_tracking_progress_tooltip
+		#change_variable = {
+			#name = tracking_progress
+			#add = -1
+		#}
+		#apply_tracking_effects = yes
+		#apply_environmental_effects = yes
+		#stress_impact = {
+			#lazy = minor_stress_impact_loss
+			#greedy = minor_stress_impact_loss
+			#stubborn = minor_stress_impact_gain
+			#brave = minor_stress_impact_gain
+			#arrogant = minor_stress_impact_gain
+		#}
+	#}
+	#after = {
+		#add_character_flag = {
+			#flag = hunt_7002
+			#days = 1000
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.7003 = { #diversion for cash/treasure?
+	#type = character_event
+	#title = sjalvolki_hunt.7003.t
+	#desc = sjalvolki_hunt.7003.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = ecstasy
+	#}
+	#trigger = {
+		#has_character_flag = sjalvolki_hunt_ongoing
+		#not = {
+			#has_character_flag = hunt_7003
+		#}
+	#}
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+	#option = {
+		#name = sjalvolki_hunt.7003.a
+		#loot_ruins_effect = yes
+		#custom_tooltip = lose_tracking_progress_tooltip
+		#change_variable = {
+			#name = tracking_progress
+			#add = -2
+		#}
+		#stress_impact = {
+			#greedy = minor_stress_impact_loss
+			#impatient = minor_stress_impact_gain
+			#brave = minor_stress_impact_loss
+			#ambitious = minor_stress_impact_loss
+			#craven = minor_stress_impact_gain
+			#lazy = miniscule_stress_impact_gain
+		#}
+	#}
+	#option = {
+		#name = sjalvolki_hunt.7003.b
+		#custom_tooltip = gain_tracking_progress_tooltip
+		#change_variable = {
+			#name = tracking_progress
+			#add = 2
+		#}
+		#stress_impact = {
+			#impatient = miniscule_stress_impact_loss
+			#greedy = minor_stress_impact_gain
+			#brave = miniscule_stress_impact_gain
+			#ambitious = miniscule_stress_impact_gain
+			#craven = minor_stress_impact_loss
+			#lazy = minor_stress_impact_loss
+		#}
+	#}
+	#after = {
+		#add_character_flag = {
+			#flag = hunt_7003
+			#days = 1000
+		#}
+		#if = {
+			#limit = {
+				#root = {
+				#has_character_flag = sjalvolki_hunt_ongoing
+				#}
+			#}
+			#trigger_event = {
+				#on_action = tracking_events_on_action
+				#days = 2
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.7004 = { #low on supplies, what/whom do you eat????
+	#type = character_event
+	#title = sjalvolki_hunt.7004.t
+	#desc = sjalvolki_hunt.7004.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = pain
+	#}
+	#right_portrait = scope:sjalvolki_hunting_courtier_1
+	#lower_right_portrait = scope:sjalvolki_hunting_courtier_2
+	#trigger = {
+		#has_character_flag = sjalvolki_hunt_ongoing
+		#NOT = {
+			#has_character_flag = hunt_7004
+		#}
+	#}
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+	#option = {
+		#name = sjalvolki_hunt.7004.a
+		#trigger = {
+			#not = {
+				#has_character_flag = well_provisioned
+			#}
+		#}
+#		
+		#add_character_modifier = {
+			#modifier = low_food
+			#days = 100
+		#}
+		#apply_tracking_effects = yes
+		#apply_environmental_effects = yes
+	#}
+	#option = {
+		#name = sjalvolki_hunt.7004.b
+		#custom_tooltip = greatly_lose_tracking_progress_tooltip
+		#change_variable = {
+			#name = tracking_progress
+			#add = -3
+		#}
+		#apply_tracking_effects = yes
+		#apply_environmental_effects = yes
+	#}
+	#option = {
+		#name = sjalvolki_hunt.7004.c
+		#trigger = {
+			#OR = {
+				#has_character_flag = well_provisioned
+				#has_character_modifier = surplus_food
+				#has_trait = lifestyle_herbalist
+				#has_trait = lifestyle_gardener
+			#}
+		#}
+		#apply_tracking_effects = yes
+		#apply_environmental_effects = yes
+	#}
+	#option = {
+		#name = sjalvolki_hunt.7004.d
+		#add_internal_flag = fancy_coloring
+		#add_internal_flag = fancy_coloring_orange_stretch
+		#trigger = {
+			#has_trait = cannibal
+			#exists = scope:sjalvolki_hunting_courtier_1
+			#scope:sjalvolki_hunting_courtier_1 = {
+				#is_alive = yes
+			#}
+		#}
+		#scope:sjalvolki_hunting_courtier_1 = {
+			#death = {
+				#killer = root
+				#death_reason = death_eaten
+			#}
+		#}
+		#apply_tracking_effects = yes
+		#apply_environmental_effects = yes
+	#}
+	#option = {
+		#name = sjalvolki_hunt.7004.e
+		#trigger ={
+			#has_trait = cannibal
+			#exists = scope:sjalvolki_hunting_courtier_2
+			#scope:sjalvolki_hunting_courtier_2 = {
+				#is_alive = yes
+			#}
+		#}
+		#scope:sjalvolki_hunting_courtier_2 = {
+			#death = {
+				#killer = root
+				#death_reason = death_eaten
+			#}
+		#}
+		#apply_tracking_effects = yes
+		#apply_environmental_effects = yes
+	#}
+	#option = {
+		#name = sjalvolki_hunt.7004.f
+		#trigger ={
+			#has_trait = cannibal
+			#exists = scope:sjalvolki_hunting_courtier_3
+			#scope:sjalvolki_hunting_courtier_3 = {
+				#is_alive = yes
+			#}
+		#}
+		#scope:sjalvolki_hunting_courtier_3 = {
+			#death = {
+				#killer = root
+				#death_reason = death_eaten
+			#}
+		#}
+		#apply_tracking_effects = yes
+		#apply_environmental_effects = yes
+	#}
+	#after = {
+		#add_character_flag = {
+			#flag = hunt_7004
+			#days = 1000
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.7005 = { #Betrayed by the hired hunter! Bandits!
+	#type = character_event
+	#title = sjalvolki_hunt.7005.t
+	#desc = sjalvolki_hunt.7005.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = fear
+	#}
+	#right_portrait = scope:sjalvolki_hunting_courtier_3
+	#trigger = {
+		#has_character_flag = sjalvolki_hunt_ongoing
+		#not = {
+			#has_character_flag = sjalvolki_hunt_7005
+		#}
+		#scope:sjalvolki_hunting_courtier_3 = {
+			#exists = yes
+			#is_alive = yes
+			#OR = {
+				#has_trait = deceitful
+				#has_trait = greedy
+			#}
+		#}
+	#}
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#option = {
+		#name = sjalvolki_hunt.7005.a
+		#duel = {
+			#skill = prowess
+			#target = scope:sjalvolki_hunting_courtier_3
+			#20 = { #You slay the cur and rout the bandits
+				#compare_modifier = {
+					#value = scope:duel_value
+				#}
+				#desc = sjalvolki_hunt.7005.a.success
+				#scope:sjalvolki_hunting_courtier_3 = {
+					#death = {
+						#killer = root
+						#death_reason = death_duel
+					#}
+				#}
+				#custom_tooltip = gain_tracking_progress_tooltip
+				#change_variable = {
+						#name = tracking_progress
+						#add = 2
+				#}
+			#}
+			#10 = { #You rout the bandits, but are wounded in the process
+				#compare_modifier = {
+					#value = scope:duel_value
+				#}
+				#change_variable = {
+						#name = tracking_progress
+						#add = 1
+				#}
+				#desc = sjalvolki_hunt.7005.a.success
+				#scope:sjalvolki_hunting_courtier_3 = {
+					#death = {
+						#death_reason = death_vanished
+					#}
+				#}
+			#}
+			#5 = { #You are robbed and left for dead. Hunt severely penalized. 
+				#compare_modifier = {
+					#value = scope:duel_value
+				#}
+				#custom_tooltip = lose_tracking_progress_tooltip
+				#change_variable = {
+						#name = tracking_progress
+						#add = -6
+				#}
+				#change_trait_rank = {
+					#trait = wounded
+					#rank = 1
+					#max = 3
+				#}
+				#scope:sjalvolki_hunting_courtier_3 = {
+					#death = {
+						#death_reason = death_vanished
+					#}
+				#}
+				#desc = sjalvolki_hunt.7005.a.failure
+			#}
+		#}
+		#stress_impact = {
+			#brave = major_stress_impact_loss
+			#wrathful = minor_stress_impact_loss
+			#vengeful = minor_stress_impact_loss
+			#arrogant = minor_stress_impact_loss
+			#craven = major_stress_impact_gain
+			#greedy = miniscule_stress_impact_loss
+			#compassionate = miniscule_stress_impact_gain
+		#}
+	#}
+	#option = {
+		#name = sjalvolki_hunt.7005.b
+		#remove_short_term_gold = medium_gold_value
+		#custom_tooltip = lose_tracking_progress_tooltip
+		#change_variable = {
+			#name = tracking_progress
+			#add = -1
+		#}
+		#hidden_effect = {
+			#scope:sjalvolki_hunting_courtier_3 = {
+				#death = {
+					#death_reason = death_vanished
+				#}
+			#}
+		#}
+		#stress_impact = {
+			#greedy = minor_stress_impact_gain
+			#brave = minor_stress_impact_gain
+			#wrathful = minor_stress_impact_gain
+			#vengeful = minor_stress_impact_gain
+			#craven = major_stress_impact_loss
+			#shy = minor_stress_impact_loss
+			#compassionate = miniscule_stress_impact_loss
+		#}
+	#}
+	#after = {
+		#add_character_flag = {
+			#flag = sjalvolki_hunt_7005
+			#days = 3000
+		#}
+		#if = {
+			#limit = {
+				#root = {
+				#has_character_flag = sjalvolki_hunt_ongoing
+				#}
+			#}
+			#trigger_event = {
+				#on_action = tracking_events_on_action
+				#days = 2 
+			#}
+		#}
+	#}
+#}
+##GH_TODO
+##sjalvolki_hunt.7006 = {
+##	type = character_event
+##	desc = sjalvolki_hunt.7006.desc
+##	theme = hunt_activity
+##	left_portrait = root
+##	right_portrait = scope:hunting_paramour
+##	trigger = {
+##		or = {
+##			and = {
+##				is_attracted_to_gender_of = scope:sjalvolki_hunting_courtier_1
+##				scope:sjalvolki_hunting_courtier_1 = {
+##					is_alive = yes
+##					}
+##				scope:sjalvolki_hunting_courtier_1 = {
+##					is_attracted_to_gender_of = root
+##				}
+##			}
+##			and = {
+##				is_attracted_to_gender_of = scope:sjalvolki_hunting_courtier_2
+##				scope:sjalvolki_hunting_courtier_2 = {
+##					is_alive = yes
+##					}
+##				scope:sjalvolki_hunting_courtier_2 = {
+##					is_attracted_to_gender_of = root
+##				}
+##			}
+##			and = {
+##				is_attracted_to_gender_of = scope:sjalvolki_hunting_courtier_3
+##				scope:sjalvolki_hunting_courtier_3 = {
+##					is_alive = yes
+##					}
+##				scope:sjalvolki_hunting_courtier_3 = {
+##					is_attracted_to_gender_of = root
+##				}
+##			}
+##		}
+##		not = {
+##			has_character_flag = hunt_7006
+##		}
+##	}
+##	override_background = {
+##		reference = hunting_wilderness_scope
+##	}
+##
+##	immediate = {
+##		if = {
+##			limit = {
+##				is_attracted_to_gender_of = scope:sjalvolki_hunting_courtier_1
+##				scope:sjalvolki_hunting_courtier_1 = {
+##					is_alive = yes
+##				}
+##			}
+##			save_scope_as = hunting_paramour
+##		}
+##		else_if = {
+##			limit = {
+##				is_attracted_to_gender_of = scope:sjalvolki_hunting_courtier_2
+##				scope:sjalvolki_hunting_courtier_2 = {
+##					is_alive = yes
+##				}
+##			}
+##			save_scope_as = hunting_paramour
+##		}
+##		else_if = {
+##			limit = {
+##				is_attracted_to_gender_of = scope:sjalvolki_hunting_courtier_3
+##				scope:sjalvolki_hunting_courtier_3 = {
+##					is_alive = yes
+##				}
+##			}
+##			save_scope_as = hunting_paramour
+##		}
+##	}
+##	option = {
+##		name = sjalvolki_hunt.7006.a
+##		random_list = {
+##			50  ={
+##				set_relation_lover = scope:hunting_paramour
+##				had_sex_with_effect = {
+##					CHARACTER = scope:hunting_paramour
+##					PREGNANCY_CHANCE = seduce_pregnancy_chance
+##				}
+##			}
+##			50 = {
+##				had_sex_with_effect = {
+##					CHARACTER = scope:hunting_paramour
+##					PREGNANCY_CHANCE = seduce_pregnancy_chance
+##				}
+##			}
+##		}
+##	}
+##	option = {
+##		name = sjalvolki_hunt.7006.b
+##	}
+##	after = {
+##		add_character_flag = {
+##			flag = hunt_7006
+##			days = 400
+##		}
+##		if = {
+##			limit = {
+##				root = {
+##				has_character_flag = sjalvolki_hunt_ongoing
+##				}
+##			}
+##			trigger_event = {
+##				on_action = tracking_events_on_action
+##				days = 2 
+##			}
+##		}
+##	}
+##}
+#
+#sjalvolki_hunt.7007 = { # Finding a Child after defeating the Simurgh
+	#type = character_event
+	#title = sjalvolki_hunt.7007.t
+	#desc = sjalvolki_hunt.7007.desc
+#	
+	#theme = hunt_activity
+	#left_portrait = scope:foundling
+#
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#immediate = {
+		#create_character = {
+			#location = scope:county.title_province
+			#template = peasant_villager_foundling_character
+			#gender = male 
+			#save_scope_as = foundling
+		#}
+	#}
+	#option = { #Bring the child to court
+		#name = sjalvolki_hunt.7007.a
+		#add_courtier = scope:foundling
+		#scope:foundling = {
+			#add_opinion = {
+				#modifier = grateful_opinion
+				#target = root
+				#opinion = 50
+			#}
+		#}
+#		
+		#stress_impact = {
+			#callous = minor_stress_impact_gain
+			#sadistic = minor_stress_impact_gain
+		#}
+		#ai_chance = {
+			#base = 100
+			#ai_value_modifier = {
+				#ai_honor = 0.5
+			#}
+		#}
+	#}
+#
+	#option = { #Leave the child with some villagers
+		#name = sjalvolki_hunt.7007.b
+		#ai_chance = {
+			#base = 100
+			#ai_value_modifier = {
+				#ai_rationality = 1
+			#}
+		#}
+	#}
+	#option = { #Leave the child on the mountain
+		#name = sjalvolki_hunt.7007.c
+		#ai_chance = {
+			#base = 100
+			#ai_value_modifier = {
+				#ai_rationality = 1
+			#}
+		#}
+		#scope:foundling = {
+			#death = {
+				#death_reason = death_disappearance
+				#killer = root
+			#}
+		#}
+		#stress_impact = {
+			#compassionate = medium_stress_impact_gain
+		#}	
+	#}
+#}
+#
+#sjalvolki_hunt.7008 = { #You've gone insane from encountering a mindrender
+	#type = character_event
+	#title = sjalvolki_hunt.7008.t
+	#desc = sjalvolki_hunt.7008.desc
+#
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = fear
+	#}
+#
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#option = { # If not already insane, gives the lunatic trait
+		#name = sjalvolki_hunt.7008.a
+		#trigger = { 
+			#NOT = { has_trait = lunatic }
+		#}
+#
+		#add_trait = lunatic_1
+		#ai_chance = {
+			#base = 100
+		#}
+	#}
+	#option = {	#If already insane, gives major stress impact instead
+		#name = sjalvolki_hunt.7008.b
+		#trigger = { 
+			#has_trait = lunatic
+		#}
+		#stress_impact = {
+			#base = major_stress_impact_gain
+		#}
+		#ai_chance = {
+			#base = 10
+			#modifier = {	# Weight up for stress.
+				#add = 20
+				#has_trait = cynical
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.7009 = { #Challenged by Sjalvolki Hunters for Hunting Rights
+	#type = character_event
+	#title = sjalvolki_hunt.7009.t
+	#desc = sjalvolki_hunt.7009.desc
+#
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = shock	
+	#}
+	#right_portrait = {
+		#character = scope:sjalvolki_rival_hunter
+		#animation = anger
+	#}
+#
+	#trigger = {
+		#NOT = { has_character_flag = sjalvolki_hunt.7009 }
+	#}
+#
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#weight_multiplier = {
+		#base = 1
+		#modifier = {
+			#add = -0.6
+			#is_ai = no
+		#}
+	#}
+#
+	#immediate = {
+		#add_character_flag = {
+			#flag = sjalvolki_hunt.7009
+			#days = 1000
+		#}
+		#hidden_effect = {
+			#create_character = {
+				#location = scope:activity.activity_location
+				#template = sjalvolki_hunter_template
+				#save_scope_as = sjalvolki_rival_hunter
+			#}
+		#}
+	#}
+	#option = { #Agree to duel
+		#name = sjalvolki_hunt.7009.a
+		#configure_start_single_combat_effect = {
+			#SC_INITIATOR = root
+			#SC_ATTACKER = root
+			#SC_DEFENDER = scope:sjalvolki_rival_hunter
+			#FATALITY = no
+			#FIXED = no
+			#LOCALE = terrain_scope
+			#OUTPUT_EVENT = sjalvolki_hunt.7010
+			#INVALIDATION_EVENT = sjalvolki_hunt.7010
+		#}
+		#ai_chance = {
+			#base = 100
+			#ai_value_modifier = {
+				#ai_boldness = 1
+				#ai_greed = 0.25
+				#ai_honor = -0.5
+			#}
+		#}
+	#}
+	#option = {
+		#name = sjalvolki_hunt.7009.b
+		#custom_tooltip = lose_tracking_progress_tooltip
+		#change_variable = {
+			#name = tracking_progress
+			#add = -1
+		#}
+		#trigger_event = {
+			#on_action = tracking_events_on_action
+			#days = 2 
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.7010 = {
+	#type = character_event
+	#hidden = yes
+#
+	#immediate = {
+		#send_interface_toast = {
+			#title = sjalvolki_hunt.7010.t
+			#left_icon = scope:sc_victor
+			#right_icon = scope:sc_loser
+			#scope:sc_victor = { add_prestige = medium_prestige_gain }
+		#}
+	#}
+#
+	#after = {
+		#hidden_effect = {
+			#trigger_event = {
+				#on_action = tracking_events_on_action
+				#days = 2 
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.7011 = { #Discover a Rotten Battlefield
+	#type = character_event
+	#title = sjalvolki_hunt.7011.t
+	#desc = sjalvolki_hunt.7011.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = idle
+	#}
+	#right_portrait = {
+		#character = scope:sjalvolki_hunting_courtier_2
+		#animation = worry
+	#}
+#
+	#trigger = {
+		#NOT = {
+			#has_character_flag = sjalvolki_hunt.7011
+		#}
+	#}
+#
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#immediate = {
+		#add_character_flag = {
+			#flag = sjalvolki_hunt.7011
+			#days = 1000
+		#}
+		#scope:activity = {
+			#activity_location = {
+				#county = {
+					#save_scope_as = county
+					#holder = {
+						#save_scope_as = land_owner
+					#}
+				#}
+			#}
+		#}
+	#}
+#
+	#option = {
+		#name = sjalvolki_hunt.7011.a
+		#custom_tooltip = sjalvolki_hunt.7011.tooltip
+		#duel = {
+			#skill = prowess
+			#value = average_skill_rating
+			#10 = {
+				#desc = sjalvolki_hunt.7011.a.success
+				#compare_modifier = {
+					#value = scope:duel_value
+				#}
+				#send_interface_toast = {		
+					#title = sjalvolki_hunt.7011.a.success		
+				#}
+				#custom_tooltip = lose_tracking_progress_tooltip
+				#change_variable = {
+					#name = tracking_progress
+					#add = -1
+				#}
+				#random_list = {
+					#1 = { add_gold = massive_gold_value }
+					#1 = { add_gold = major_gold_value }
+					#1 = { add_gold = medium_gold_value }
+				#}
+				#add_adventure_lifestyle_xp = miniscule_lifestyle_xp
+			#}
+			#5 = {
+				#desc = sjalvolki_hunt.7011.a.failure
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 0.4
+				#}
+				#send_interface_toast = {	
+					#title = sjalvolki_hunt.7011.a.failure				
+					#increase_wounds_no_death_effect = { REASON = wild_animal }				
+				#}
+			#}
+			#2 = {
+				#desc = sjalvolki_hunt.7011.a.failure
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 0.2
+				#}
+				#send_interface_toast = {	
+					#title = sjalvolki_hunt.7011.a.failure				
+					#death = {
+						#death_reason = death_hunting_accident
+					#}
+				#}
+			#}
+		#}
+		#stress_impact = {
+			#compassionate = minor_stress_impact_gain
+			#humble = minor_stress_impact_gain
+			#craven = minor_stress_impact_gain
+			#greedy = minor_stress_impact_loss
+			#cynical = minor_stress_impact_loss
+			#callous = miniscule_stress_impact_loss
+		#}
+	#}
+	#option = {
+		#name = sjalvolki_hunt.7011.b
+#		
+#
+		#stress_impact = {
+			#compassionate = minor_stress_impact_loss
+			#greedy = minor_stress_impact_gain
+			#callous = miniscule_stress_impact_gain
+			#craven = minor_stress_impact_loss
+			#humble = minor_stress_impact_loss
+			#brave = miniscule_stress_impact_gain
+		#}
+	#}
+#
+	#after = {
+		#hidden_effect = {
+			#trigger_event = {
+				#on_action = tracking_events_on_action
+				#days = 2 
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.7012 = { #Encounter Graves in the Wild
+	#type = character_event
+	#title = sjalvolki_hunt.7012.t
+	#desc = sjalvolki_hunt.7012.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = personality_cynical
+	#}
+#
+	#trigger = {
+		#NOT = {
+			#has_character_flag = sjalvolki_hunt.7012
+		#}
+	#}
+#
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#weight_multiplier = {
+		#base = 1
+		#modifier = {
+			#add = 0.2
+			#has_trait = diligent
+		#}
+		#modifier = {
+			#add = -0.2
+			#has_trait = lazy
+		#}
+		#modifier = {
+			#add = 0.2
+			#has_trait = paranoid
+		#}
+		#modifier = {
+			#add = -0.2
+			#has_trait = trusting
+		#}
+		#modifier = {
+			#add = 0.2
+			#has_trait = calm
+		#}
+		#modifier = {
+			#add = -0.2
+			#has_trait = wrathful
+		#}
+	#}
+#
+#
+	#immediate = {
+		#add_character_flag = {
+			#flag = sjalvolki_hunt.7012
+			#days = 1000
+		#}
+	#}
+	#option = { #Carry on with Hunt
+		#name = sjalvolki_hunt.7012.a
+		#add_prestige = minor_prestige_gain
+		#stress_impact = {
+			#lazy = miniscule_stress_impact_gain
+			#diligent = miniscule_stress_impact_loss
+		#}
+	#}
+#
+	#option = {
+		#name = sjalvolki_hunt.7012.b
+		#add_piety = minor_piety_gain
+		#stress_impact = {
+			#cynical = miniscule_stress_impact_gain
+			#zealous = miniscule_stress_impact_loss
+		#}
+	#}
+#
+	#after = {
+		#hidden_effect = {
+			#trigger_event = {
+				#on_action = tracking_events_on_action
+				#days = 2 
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.7013 = { #Ask Villagers for Food
+	#type = character_event
+	#title = sjalvolki_hunt.7013.t
+	#desc = sjalvolki_hunt.7013.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = personality_martial
+	#}
+	#trigger = {
+		#NOR = {
+			#has_character_flag = sjalvolki_hunt.7013
+			#scope:hunt_biozone = flag:foglands
+		#}
+	#}
+#
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#weight_multiplier = {
+		#base = 1
+		#modifier = {
+			#add = 0.2
+			#has_trait = gregarious
+		#}
+		#modifier = {
+			#add = -0.2
+			#has_trait = shy
+		#}
+		#modifier = {
+			#add = 0.2
+			#has_trait = humble
+		#}
+		#modifier = {
+			#add = -0.2
+			#has_trait = arrogant
+		#}
+		#modifier = {
+			#add = 0.2
+			#has_trait = trusting
+		#}
+		#modifier = {
+			#add = -0.2
+			#has_trait = paranoid
+		#}
+	#}
+#
+#
+	#immediate = {
+		#add_character_flag = {
+			#flag = sjalvolki_hunt.7013
+			#days = 1000
+		#}
+	#}
+	#option = { # Move along without asking 
+		#name = sjalvolki_hunt.7013.a
+	#}
+#
+	#option = {
+		#name = sjalvolki_hunt.7013.b
+#
+		#remove_short_term_gold = 20
+		#if = {
+			#limit = {
+				#has_character_modifier = low_food
+			#}
+			#remove_character_modifier = low_food
+		#}
+		#else = {
+			#add_character_modifier = {
+				#modifier = surplus_food
+				#days = 100
+			#}
+		#}
+		#stress_impact = {
+			#greedy = minor_stress_impact_gain
+		#}
+	#}
+#
+	#option = {
+		#name = sjalvolki_hunt.7013.c
+		#add_dread = 20
+		#if = {
+			#limit = {
+				#has_character_modifier = low_food
+			#}
+			#remove_character_modifier = low_food
+		#}
+		#else = {
+			#add_character_modifier = {
+				#modifier = surplus_food
+				#days = 100
+			#}
+		#}
+		#stress_impact = {
+			#generous = minor_stress_impact_gain
+			#compassionate = minor_stress_impact_gain
+			#just = minor_stress_impact_gain
+			#humble = minor_stress_impact_gain
+			#callous = minor_stress_impact_loss
+			#sadistic = minor_stress_impact_loss
+		#}
+	#}
+#
+	#after = {
+		#hidden_effect = {
+			#trigger_event = {
+				#on_action = tracking_events_on_action
+				#days = 2 
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.7014 = { #You encounter an Iye while lost in Aironoi
+	#type = character_event 
+	#title = sjalvolki_hunt.7014.t
+	#desc = sjalvolki_hunt.7014.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = fear
+	#}
+	#trigger = {
+		#NOT = { has_character_flag = had_sjalvolki_hunt_7014 }
+		#trigger_if = {
+			#limit = { has_variable = lost_level }
+			#var:lost_level > 0
+		#}
+		#trigger_else = { always = no }
+		#AND = {
+			#exists = scope:hunt_biozone
+			#OR = {
+				#scope:hunt_biozone = flag:western_aironoi
+				#scope:hunt_biozone = flag:great_steppe
+				#scope:hunt_biozone = flag:brass_sea_coasts
+			#}
+		#}
+	#} 
+#
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#immediate = {
+		#hidden_effect = {
+			#add_character_flag = {
+				#flag = had_sjalvolki_hunt_7014
+				#days = 3500
+			#}
+			#if = {
+				#limit = {
+					#num_virtuous_traits >= 1
+				#}
+				#add_character_flag = {
+					#flag = iye_virtuous
+					#days = 15
+				#}
+			#}
+		#}
+	#}
+#
+	#option = { #Approach
+		#name = sjalvolki_hunt.7014.a
+		#custom_tooltip = sjalvolki_hunt.7014.tooltip
+#
+		#if = {
+			#limit = {
+				#has_character_flag = iye_virtuous
+			#}
+			#trigger_event = sjalvolki_hunt.7016
+		#}
+		#else = {
+			#trigger_event = sjalvolki_hunt.7015
+		#}
+#
+		#stress_impact = {
+			#diligent = minor_stress_impact_loss
+			#brave = minor_stress_impact_loss
+			#humble = minor_stress_impact_loss
+		#}
+	#}
+#
+	#option = { #Run Away!
+		#name = sjalvolki_hunt.7014.b
+#
+		#stress_impact = {
+			#craven = minor_stress_impact_loss
+			#lazy = minor_stress_impact_loss
+			#brave = major_stress_impact_gain
+		#}
+#
+		#trigger_event = sjalvolki_hunt.7017
+	#}
+#}
+#
+#sjalvolki_hunt.7015 = { 	#Iye considers you a sinner
+	#type = character_event
+	#title = sjalvolki_hunt.7015.t
+	#desc = sjalvolki_hunt.7015.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = fear
+	#}
+#
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#option = {
+		#name = sjalvolki_hunt.7015.a
+#
+			#duel = {
+				#skill = prowess
+				#value = 30
+#
+				#90 = {
+					#compare_modifier = {
+						#value = scope:duel_value
+						#multiplier = 2
+					#}
+					#death = { death_reason  = death_vanished }
+				#}
+#
+				#10 = {
+					#compare_modifier = {
+						#value = scope:duel_value
+						#multiplier = 0.5
+					#}
+					#maimed_in_battle_effect = yes
+#
+					##End the activity
+					#if = {
+						#limit = {
+							#exists = scope:activity
+						#}
+						#scope:activity = {
+							#complete_activity = yes
+						#}
+					#}
+					#remove_variable = sjalvolki_hunt_outcome
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.7016 = { #You are considered Virtuous
+	#type = character_event
+	#title = sjalvolki_hunt.7016.t
+	#desc = sjalvolki_hunt.7016.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = fear
+	#}
+#
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#option = {
+		#name = sjalvolki_hunt.7016.a
+#
+		#create_artifact_iye_effect = {
+				#OWNER = root
+				#HUNTER = root
+				#LOCATION = scope:sjalvolki_hunt_province.county
+		#}
+		#save_scope_value_as = {
+			#name = iye_crystal
+			#value = yes
+		#}
+	#}
+#
+	#after = {
+		#hidden_effect = {
+			#trigger_event = {
+				#id = sjalvolki_hunt.0111
+				#days = 1
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.7017 = { #Event for Running Away
+	#type = character_event
+	#title = sjalvolki_hunt.7017.t
+	#desc = sjalvolki_hunt.7017.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = fear
+	#}
+#
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#	
+	#option = {
+		#name = sjalvolki_hunt.7017.a
+#
+		##End the activity
+		#if = {
+			#limit = {
+				#exists = scope:activity
+			#}
+			#scope:activity = {
+				#complete_activity = yes
+			#}
+		#}
+		#remove_variable = sjalvolki_hunt_outcome
+	#}
+#}
+#
+#sjalvolki_hunt.7018 = { # Your companion discovers a cave by falling inside
+	#type = character_event
+	#title = sjalvolki_hunt.7018.t
+	#desc = sjalvolki_hunt.7018.desc
+	#theme = hunt_activity
+	#right_portrait = {
+		#character = root 
+		#animation = worry
+	#}
+	#trigger = {
+		#NOT = { has_character_flag = had_sjalvolki_hunt_7018 }
+		#AND = {
+			#exists = scope:hunt_biozone
+			#OR = {
+				#scope:hunt_biozone = flag:kalath_old_growth
+				#scope:hunt_biozone = flag:pathos_delta
+				#scope:hunt_biozone = flag:sulzegg_basin
+				#scope:hunt_biozone = flag:kalath_redwoods
+			#}
+		#}
+	#}
+#
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#immediate = {
+		#hidden_effect = {
+			#add_character_flag = {
+				#flag = had_sjalvolki_hunt_7018
+				#days = 3500
+			#}
+		#}
+	#}
+#
+	#option = { # Climb down and help them/investigate
+		#name = sjalvolki_hunt.7018.a
+		#custom_tooltip = sjalvolki_hunt.7018.tooltip
+		#duel = {
+			#skill = prowess
+			#value = 7
+#
+			#60 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1
+				#}
+				#trigger_event = sjalvolki_hunt.7019
+			#}
+			#40 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1
+				#}
+				#increase_wounds_effect = { REASON = fall }
+				#trigger_event = sjalvolki_hunt.7019
+			#}
+		#}
+#
+		#stress_impact = {
+			#lazy = minor_stress_impact_gain
+			#brave = minor_stress_impact_loss
+			#craven = minor_stress_impact_gain
+			#diligent = miniscule_stress_impact_loss
+		#}
+	#}
+#
+	#option = { #Pull them out and carry on with the hunt
+		#name = sjalvolki_hunt.7018.b
+		#add_character_modifier = {
+			#modifier = cold_modifier
+			#days = 60
+		#}
+		#stress_impact = {
+			#lazy = minor_stress_impact_gain
+			#brave = minor_stress_impact_gain
+			#arrogant = minor_stress_impact_loss
+			#craven = minor_stress_impact_loss
+			#diligent = miniscule_stress_impact_loss
+		#}
+		#apply_tracking_effects = yes
+		#apply_environmental_effects = yes
+	#}
+#
+	#option = { #Leave them behind and carry on
+		#name = sjalvolki_hunt.7018.c
+#
+		#trigger = {
+			#OR = {
+				#has_trait = callous
+				#has_trait = sadistic
+			#}
+			#exists = scope:sjalvolki_hunting_courtier_1
+			#scope:sjalvolki_hunting_courtier_1 = {
+				#is_alive = yes
+			#}
+		#}
+		#scope:sjalvolki_hunting_courtier_1 = {
+			#death = {
+				#death_reason = death_hunting_accident
+			#}
+		#}
+		#change_variable = {
+			#name = tracking_progress
+			#add = 1
+		#}
+		#add_character_modifier = {
+			#modifier = cold_modifier
+			#days = 60
+		#}
+		#add_dread = 15
+		#stress_impact = {
+			#craven = minor_stress_impact_loss
+			#sadistic = minor_stress_impact_loss
+			#brave = minor_stress_impact_gain
+			#diligent = minor_stress_impact_gain
+		#}
+		#apply_tracking_effects = yes
+		#apply_environmental_effects = yes
+	#}
+#}
+#
+#sjalvolki_hunt.7019 = { #Finds cave painting
+	#type = character_event
+	#title = sjalvolki_hunt.7019.t
+	#desc = sjalvolki_hunt.7019.desc
+	#theme = hunt_activity
+	#left_portrait = root
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#	
+	#option = { #Copy and study the paintings
+		#name = sjalvolki_hunt.7019.a
+#
+		#if = {
+			#limit = { has_character_modifier = cold_modifier }
+			#remove_character_modifier = cold_modifier
+		#}
+		#add_adventure_lifestyle_xp = medium_lifestyle_xp
+		#add_stress = minor_stress_impact_gain
+	#}
+#
+	#option = { #Get a good nights rest
+		#name = sjalvolki_hunt.7019.b
+#
+		#if = {
+			#limit = { has_character_modifier = cold_modifier }
+			#remove_character_modifier = cold_modifier
+		#}
+		#add_stress = major_stress_impact_loss
+	#}
+#
+	#after = {
+		#hidden_effect = {
+			#trigger_event = {
+				#on_action = tracking_events_on_action
+				#days = 2 
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.7020 = { #An Avalanche blocked the path ahead
+	#type = character_event
+	#title = sjalvolki_hunt.7020.t
+	#desc = sjalvolki_hunt.7020.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = disbelief
+	#}
+	#right_portrait = {
+		#character = scope:sjalvolki_hunting_courtier_1
+		#animation = worry
+	#}
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+	#trigger = {
+		#NOT = { has_character_flag = had_sjalvolki_hunt_7020 }
+		#exists = scope:mountainous 
+	#}
+	#immediate = {
+		#hidden_effect = {
+			#add_character_flag = {
+				#flag = had_sjalvolki_hunt_7020
+				#days = 1000
+			#}
+		#}
+	#}
+	#option = { #Try to climb over it
+		#name = sjalvolki_hunt.7020.a
+		#duel = {
+			#skill = prowess
+			#value = 7
+			#60 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1
+				#}
+				#custom_tooltip = gain_tracking_progress_tooltip
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7020.a.success
+					#left_icon = root 
+#
+					#change_variable = {
+						#name = tracking_progress
+						#add = 2
+					#}
+				#}
+			#}
+			#40 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1
+				#}
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7020.a.failure
+					#left_icon = root
+#
+					#add_character_modifier = {
+						#modifier = cold_modifier
+						#days = 60
+					#}
+					#apply_injury_effect = yes
+				#}
+			#}
+		#}
+		#stress_impact = {
+			#brave = minor_stress_impact_loss
+			#stubborn = minor_stress_impact_loss
+			#lazy = minor_stress_impact_gain
+		#}
+	#}
+	#option = { #Find another way around
+		#name = sjalvolki_hunt.7020.b
+		#custom_tooltip = lose_tracking_progress_tooltip
+		#change_variable = {
+			#name = tracking_progress
+			#add = -1
+		#}
+		#stress_impact = {
+			#brave = minor_stress_impact_gain
+			#stubborn = minor_stress_impact_gain
+			#lazy = minor_stress_impact_loss
+		#}
+	#}
+	#option = { #Strong/Athletic Characters can just get right through
+		#name = sjalvolki_hunt.7020.c
+		#add_internal_flag = fancy_coloring
+		#add_internal_flag = fancy_coloring_orange_stretch
+		#trigger = {
+			#OR = {
+				#has_trait = strong
+				#has_trait = physique_good_2
+				#has_trait = physique_good_3
+				#has_trait = athletic
+			#}
+		#}
+		#custom_tooltip = gain_tracking_progress_tooltip
+		#send_interface_toast = {
+			#title = sjalvolki_hunt.7020.a.success
+			#left_icon = root
+#
+			#change_variable = {
+				#name = tracking_progress
+				#add = 2
+			#}
+		#}
+	#}
+	#option = { #Dead Magi can blow through it 
+		#name = sjalvolki_hunt.7020.d
+		#add_internal_flag = fancy_coloring
+		#add_internal_flag = fancy_coloring_teal_stretch
+		#trigger = {
+			#AND = {
+				#has_trait = education_dead_magic
+				#has_variable = magic_counter
+				#var:magic_counter > 50
+			#}
+		#}
+		#custom_tooltip = sjalvolki_hunt_magic_cost_medium_tooltip
+		#change_variable = {
+			#name = magic_counter
+			#add = -50
+		#}
+		#custom_tooltip = gain_tracking_progress_tooltip
+		#send_interface_toast = {
+			#title = sjalvolki_hunt.7020.a.success
+			#left_icon = root
+#
+			#change_variable = {
+				#name = tracking_progress
+				#add = 2
+			#}
+		#}
+	#}
+#
+	#after = {
+		#hidden_effect = {
+			#trigger_event = {
+				#on_action = tracking_events_on_action
+				#days = 2 
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.7021 = { #Party member gets bit by a wild snake
+	#type = character_event
+	#title = sjalvolki_hunt.7021.t
+	#desc = sjalvolki_hunt.7021.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = worry
+	#}
+	#right_portrait = {
+		#character = scope:sjalvolki_hunting_courtier_2
+		#animation = sick
+	#}
+	#trigger = {
+		#NOT = { has_character_flag = had_sjalvolki_hunt_7021 }
+		#AND = {
+			#exists = scope:hunt_biozone
+			#OR = {
+				#scope:hunt_biozone = flag:etepezea
+				#scope:hunt_biozone = flag:knokidbes
+			#}
+		#}
+		#scope:sjalvolki_hunting_courtier_2 = {
+			#exists = yes
+			#is_alive = yes
+		#}
+	#}
+#
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#immediate = {
+		#hidden_effect = {
+			#add_character_flag = {
+				#flag = had_sjalvolki_hunt_7021
+				#days = 30
+			#}
+			#scope:sjalvolki_hunting_courtier_2 = {
+				#add_character_modifier = {
+					#modifier = snake_bite_modifier
+					#days = 120
+				#}
+			#}
+		#}
+	#}
+#
+	#option = { #Act quickly to save them!
+		#name = sjalvolki_hunt.7021.a
+#
+		#duel = {
+			#skill = learning
+			#value = average_skill_rating
+			#35 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1
+				#}
+				#scope:sjalvolki_hunting_courtier_2 = {
+					#remove_character_modifier = snake_bite_modifier
+					#add_opinion = {
+						#modifier = grateful_opinion
+						#target = root
+						#opinion = 25
+					#}
+				#}
+				#add_piety = minor_piety_gain
+				#add_prestige = miniscule_prestige_gain
+			#}
+			#35 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1
+				#}
+				#scope:sjalvolki_hunting_courtier_2 = {
+					#remove_character_modifier = snake_bite_modifier
+					#add_opinion = {
+						#modifier = grateful_opinion
+						#target = root
+						#opinion = 25
+					#}
+				#}
+				#add_piety = minor_piety_gain
+				#add_prestige = miniscule_prestige_gain
+				#set_variable = {
+					#name = animal_toxin_type
+					#value = flag:snake
+					#days = 2
+				#}
+				#custom_tooltip = may_gain_artifact_hide_tooltip
+				#create_artifact_animal_toxin_effect = {
+					#OWNER = root
+					#HUNTER = root
+					#LOCATION = scope:sjalvolki_hunt_province.county
+				#}
+				#add_adventure_lifestyle_xp = miniscule_lifestyle_experience
+			#}
+			#15 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1
+				#}
+				#add_character_modifier = {
+					#modifier = snake_bite_modifier
+					#days = 60
+				#}
+			#}
+			#2 = {
+				#death = {
+					#death_reason = death_poison
+				#}
+			#}
+		#}
+#
+		#stress_impact = {
+			#diligent = minor_stress_impact_loss
+			#craven = minor_stress_impact_gain
+			#brave = minor_stress_impact_loss
+			#callous = minor_stress_impact_gain
+			#sadistic = minor_stress_impact_gain
+		#}
+	#}
+#
+	#option = { #This calls for amputation!
+		#name = sjalvolki_hunt.7021.b
+#
+		#duel = {
+			#skill = prowess
+			#value = average_skill_rating
+#
+			#60 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1
+				#}
+				#scope:sjalvolki_hunting_courtier_2 = {
+					#remove_character_modifier = snake_bite_modifier
+					#if = {
+						#limit = { has_trait = one_legged }
+						#add_trait = incapable
+					#}
+					#else = { add_trait = one_legged }
+					#add_opinion = {
+						#modifier = grateful_opinion
+						#target = root
+						#opinion = 5
+					#}
+				#}
+			#}
+#
+			#35 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1
+				#}
+				#scope:sjalvolki_hunting_courtier_2 = {
+					#maimed_in_battle_effect = yes
+				#}
+			#}
+#
+		#}
+#
+		#stress_impact = {
+			#diligent = minor_stress_impact_loss
+			#craven = minor_stress_impact_gain
+			#compassionate = minor_stress_impact_gain
+			#callous = miniscule_stress_impact_loss
+			#sadistic = miniscule_stress_impact_loss
+		#}
+	#}
+#
+	#option = { # Doctors & Herbalists get an easy win
+		#name = sjalvolki_hunt.7021.c
+		#add_internal_flag = fancy_coloring
+		#add_internal_flag = fancy_coloring_orange_stretch
+		#trigger = {
+			#OR = {
+				#has_trait = physician_1
+				#has_trait = physician_2
+				#has_trait = physician_3
+				#has_trait = lifestyle_herbalist
+			#}
+		#}
+#
+		#duel = {
+			#skill = learning
+			#value = low_skill_rating
+			#35 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1
+				#}
+				#scope:sjalvolki_hunting_courtier_2 = {
+					#remove_character_modifier = snake_bite_modifier
+					#add_opinion = {
+						#modifier = grateful_opinion
+						#target = root
+						#opinion = 25
+					#}
+				#}
+				#add_piety = minor_piety_gain
+				#add_prestige = miniscule_prestige_gain
+			#}
+			#65 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1
+				#}
+				#scope:sjalvolki_hunting_courtier_2 = {
+					#remove_character_modifier = snake_bite_modifier
+					#add_opinion = {
+						#modifier = grateful_opinion
+						#target = root
+						#opinion = 25
+					#}
+				#}
+				#add_piety = minor_piety_gain
+				#add_prestige = minor_prestige_gain
+				#set_variable = {
+					#name = animal_toxin_type
+					#value = flag:snake
+					#days = 2
+				#}
+				#custom_tooltip = may_gain_artifact_hide_tooltip
+				#create_artifact_animal_toxin_effect = {
+					#OWNER = root
+					#HUNTER = root
+					#LOCATION = scope:sjalvolki_hunt_province.county
+				#}
+				#add_adventure_lifestyle_xp = miniscule_lifestyle_experience
+			#}
+		#}
+		#stress_impact = {
+			#diligent = minor_stress_impact_loss
+			#compassionate = minor_stress_impact_loss
+			#sadistic = minor_stress_impact_gain
+			#callous = minor_stress_impact_gain
+		#}
+	#}
+#
+	#option = { #Sadists & Callous can just let them die
+		#name = sjalvolki_hunt.7021.d
+		#add_internal_flag = fancy_coloring
+		#add_internal_flag = fancy_coloring_purple_stretch
+		#trigger = {
+			#OR = {
+				#has_trait = sadistic
+				#has_trait = callous 
+			#}
+		#}
+#
+		#scope:sjalvolki_hunting_courtier_2 = {
+			#death = {
+				#death_reason = death_poison
+			#}
+		#}
+	#}
+#
+	#option = { #Maybe it'll just heal!
+		#name = sjalvolki_hunt.7021.e
+#
+		#stress_impact = {
+			#craven = minor_stress_impact_loss
+			#brave = minor_stress_impact_gain
+			#compassionate = minor_stress_impact_gain
+			#callous = miniscule_stress_impact_loss
+			#lazy = minor_stress_impact_loss
+		#}
+	#}
+#
+	#option = { #Living Magi can heal this
+		#name = sjalvolki_hunt.7021.f
+		#add_internal_flag = fancy_coloring
+		#add_internal_flag = fancy_coloring_teal_stretch
+		#trigger = {
+			#AND = {
+				#blood_aspect_skill_trigger = { VALUE = 5 }
+				#has_variable = magic_counter
+				#var:magic_counter > 20
+			#}
+		#}
+		#custom_tooltip = sjalvolki_hunt_magic_cost_small_tooltip
+		#change_variable = {
+			#name = magic_counter
+			#add = -20
+		#}
+		#scope:sjalvolki_hunting_courtier_2 = {
+			#remove_character_modifier = snake_bite_modifier
+			#add_opinion = {
+				#modifier = grateful_opinion
+				#target = root
+				#opinion = 25
+			#}
+		#}
+		#add_piety = minor_piety_gain
+		#add_prestige = miniscule_prestige_gain
+		#custom_tooltip = may_gain_artifact_hide_tooltip
+		#set_variable = {
+			#name = animal_toxin_type
+			#value = flag:snake
+			#days = 2
+		#}
+		#create_artifact_animal_toxin_effect = {
+			#OWNER = root
+			#HUNTER = root
+			#LOCATION = scope:sjalvolki_hunt_province.county
+		#}
+#
+		#stress_impact = {
+			#diligent = minor_stress_impact_loss
+			#compassionate = minor_stress_impact_loss
+			#sadistic = minor_stress_impact_gain
+			#callous = minor_stress_impact_gain
+		#}
+	#}
+#
+	#after = {
+		#hidden_effect = {
+			#trigger_event = {
+				#on_action = tracking_events_on_action
+				#days = 2 
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.7022 = { #Find Ruins of a Marcher Baron Fort
+	#type = character_event
+	#title = sjalvolki_hunt.7022.t
+	#desc = sjalvolki_hunt.7022.desc
+	#theme = hunt_activity
+	#right_portrait = {
+		#character = root 
+		#animation = happiness
+	#}
+	#trigger = {
+		#NOT = { has_character_flag = had_sjalvolki_hunt_7022 }
+		#AND = {
+			#exists = scope:hunt_biozone
+			#OR = {
+				#scope:hunt_biozone = flag:kalath_old_growth
+				#scope:hunt_biozone = flag:pathos_delta
+				#scope:hunt_biozone = flag:sulzegg_basin
+				#scope:hunt_biozone = flag:kalath_redwoods
+				#scope:hunt_biozone = flag:southern_kalath
+				#scope:hunt_biozone = flag:migraddar
+			#}
+		#}
+	#}
+#
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#immediate = {
+		#hidden_effect = {
+			#add_character_flag = {
+				#flag = had_sjalvolki_hunt_7022
+				#days = 3500
+			#}
+		#}
+	#}
+#
+	#option = { #Attempt the climb
+		#name = sjalvolki_hunt.7022.a
+#
+		#duel = {
+			#skill = prowess
+			#value = average_skill_rating
+#
+			#40 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1
+				#}
+				#custom_tooltip = lose_tracking_progress_tooltip
+				#change_variable = {
+					#name = tracking_progress
+					#add = -1
+				#}
+				#add_adventure_lifestyle_xp = miniscule_lifestyle_xp
+				#loot_ruins_effect = yes
+			#}
+			#35 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1
+				#}
+				#add_prestige = minor_prestige_loss
+				#custom_tooltip = lose_tracking_progress_tooltip
+				#change_variable = {
+					#name = tracking_progress
+					#add = -1
+				#}
+				#add_character_modifier = {
+					#modifier = cold_modifier
+					#days = 60
+				#}
+				#increase_wounds_no_death_effect = { REASON = fall }
+			#}
+		#}
+#
+		#stress_impact = {
+			#brave = minor_stress_impact_loss
+			#craven = minor_stress_impact_gain
+			#lazy = minor_stress_impact_gain
+			#diligent = minor_stress_impact_loss
+			#impatient = miniscule_stress_impact_gain
+			#arrogant = minor_stress_impact_loss
+			#content = miniscule_stress_impact_gain
+			#greedy = minor_stress_impact_loss
+		#}
+	#}
+	#option = { # Have a Courtier try
+		#name = sjalvolki_hunt.7022.b
+#
+		#custom_tooltip = lose_tracking_progress_tooltip
+		#change_variable = {
+			#name = tracking_progress
+			#add = -1
+		#}
+#
+		#scope:sjalvolki_hunting_courtier_2 = {
+			#duel = {
+				#skill = prowess
+				#value = average_skill_rating
+#
+				#40 = {
+					#compare_modifier = {
+						#value = scope:duel_value
+						#multiplier = 1
+					#}
+					#loot_ruins_effect = yes
+				#}
+				#60 = {
+					#compare_modifier = {
+						#value = scope:duel_value
+						#multiplier = 1
+					#}
+					#increase_wounds_effect = { REASON = fall }
+				#}
+			#}
+			#add_opinion = {
+				#modifier = respect_opinion
+				#target = root
+				#opinion = -10
+			#}
+		#}
+#
+		#stress_impact = {
+			#brave = minor_stress_impact_gain
+			#craven = minor_stress_impact_loss
+			#impatient = minor_stress_impact_gain
+			#patient = miniscule_stress_impact_loss
+			#arrogant = minor_stress_impact_gain
+			#content = miniscule_stress_impact_gain
+			#greedy = minor_stress_impact_loss
+		#}
+	#}
+#
+	#option = {
+		#name = sjalvolki_hunt.7022.c
+#
+		#custom_tooltip = gain_tracking_progress_tooltip
+		#change_variable = {
+			#name = tracking_progress
+			#add = 1
+		#}
+#
+		#stress_impact = {
+			#brave = minor_stress_impact_gain
+			#craven = minor_stress_impact_loss
+			#impatient = minor_stress_impact_loss
+			#arrogant = minor_stress_impact_gain
+			#content = miniscule_stress_impact_loss
+			#greedy = minor_stress_impact_gain
+		#}
+	#}
+#
+	#option = { # Strong/Athletic Characters can easily do this climb
+		#name = sjalvolki_hunt.7022.d
+		#add_internal_flag = fancy_coloring
+		#add_internal_flag = fancy_coloring_orange_stretch
+		#trigger = {
+			#OR = {
+				#has_trait = strong
+				#has_trait = athletic
+				#has_trait = physique_good_2
+				#has_trait = physique_good_3
+			#}
+		#}
+		#custom_tooltip = lose_tracking_progress_tooltip
+		#change_variable = {
+			#name = tracking_progress
+			#add = -1
+		#}
+		#add_adventure_lifestyle_xp = miniscule_lifestyle_xp
+		#loot_ruins_effect = yes
+#
+#
+		#stress_impact = {
+			#brave = minor_stress_impact_loss
+			#craven = minor_stress_impact_gain
+			#impatient = minor_stress_impact_gain
+			#patient = miniscule_stress_impact_loss
+			#arrogant = minor_stress_impact_loss
+			#content = miniscule_stress_impact_gain
+			#greedy = minor_stress_impact_loss
+		#}
+	#}
+#
+	#after = {
+		#hidden_effect = {
+			#trigger_event = {
+				#on_action = tracking_events_on_action
+				#days = 2 
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.7023 = { #find a ship wreck in the isles
+	#type = character_event
+	#title = sjalvolki_hunt.7023.t
+	#desc = sjalvolki_hunt.7023.desc
+	#theme = hunt_activity
+	#right_portrait = {
+		#character = root 
+		#animation = happiness
+	#}
+	#trigger = {
+		#NOT = { has_character_flag = had_sjalvolki_hunt_7023 }
+		#AND = {
+			#exists = scope:hunt_biozone
+			#OR = {
+				#scope:hunt_biozone = flag:the_isles
+				#scope:hunt_biozone = flag:guillate_rocks
+			#}
+		#}
+	#}
+#
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#immediate = {
+		#hidden_effect = {
+			#add_character_flag = {
+				#flag = had_sjalvolki_hunt_7023
+				#days = 3500
+			#}
+		#}
+	#}
+#
+#
+	#option = {
+		#name = sjalvolki_hunt.7023.a
+#
+		#duel = {
+			#skill = prowess
+			#value = very_high_skill_rating
+#
+			#40 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1
+				#}
+				#custom_tooltip = lose_tracking_progress_tooltip
+				#change_variable = {
+					#name = tracking_progress
+					#add = -1
+				#}
+				#add_adventure_lifestyle_xp = minor_lifestyle_xp
+				#loot_ruins_effect = yes
+			#}
+			#35 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1
+				#}
+				#add_prestige = minor_prestige_loss
+				#custom_tooltip = lose_tracking_progress_tooltip
+				#change_variable = {
+					#name = tracking_progress
+					#add = -1
+				#}
+				#add_character_modifier = {
+					#modifier = cold_modifier
+					#days = 60
+				#}
+				#increase_wounds_no_death_effect = { REASON = fall }
+			#}
+		#}
+#
+#
+		#stress_impact = {
+			#brave = minor_stress_impact_loss
+			#craven = minor_stress_impact_gain
+			#impatient = minor_stress_impact_gain
+			#patient = miniscule_stress_impact_loss
+			#arrogant = miniscule_stress_impact_loss
+			#content = miniscule_stress_impact_gain
+			#greedy = minor_stress_impact_loss
+		#}
+	#}
+	#option = { #Strong Characters got it easy
+		#name = sjalvolki_hunt.7023.b
+#
+		#add_internal_flag = fancy_coloring
+		#add_internal_flag = fancy_coloring_orange_stretch
+		#trigger = {
+			#OR = {
+				#has_trait = strong
+				#has_trait = athletic
+				#has_trait = physique_good_2
+				#has_trait = physique_good_3
+			#}
+		#}
+		#custom_tooltip = lose_tracking_progress_tooltip
+		#change_variable = {
+			#name = tracking_progress
+			#add = -1
+		#}
+		#add_adventure_lifestyle_xp = miniscule_lifestyle_xp
+		#loot_ruins_effect = yes
+#
+#
+		#stress_impact = {
+			#brave = minor_stress_impact_loss
+			#craven = minor_stress_impact_gain
+			#impatient = minor_stress_impact_gain
+			#patient = miniscule_stress_impact_loss
+			#arrogant = minor_stress_impact_gain
+			#content = miniscule_stress_impact_gain
+			#greedy = minor_stress_impact_loss
+		#}
+	#}
+#
+	#option = { #Lunatics/Brave think they can swim!
+		#name = sjalvolki_hunt.7023.c
+		#add_internal_flag = fancy_coloring
+		#add_internal_flag = fancy_coloring_teal_stretch
+#
+		#duel = {
+			#skill = prowess
+			#value = high_skill_rating
+#
+			#50 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1
+				#}
+				#custom_tooltip = lose_tracking_progress_tooltip
+				#change_variable = {
+					#name = tracking_progress
+					#add = -1
+				#}
+				#add_character_modifier = {
+					#modifier = cold_modifier
+					#days = 60
+				#}
+				#add_adventure_lifestyle_xp = minor_lifestyle_xp
+				#add_prestige = medium_prestige_gain
+				#loot_ruins_effect = yes
+			#}
+			#40 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1
+				#}
+				#add_prestige = minor_prestige_loss
+				#custom_tooltip = greatly_lose_tracking_progress_tooltip
+				#change_variable = {
+					#name = tracking_progress
+					#add = -3
+				#}
+				#add_character_modifier = {
+					#modifier = cold_modifier
+					#days = 60
+				#}
+				#increase_wounds_effect = { REASON = fall }
+			#}
+		#}
+#
+#
+		#stress_impact = {
+			#brave = minor_stress_impact_loss
+			#craven = minor_stress_impact_gain
+			#impatient = minor_stress_impact_gain
+			#patient = miniscule_stress_impact_loss
+			#arrogant = minor_stress_impact_gain
+			#content = miniscule_stress_impact_gain
+			#greedy = minor_stress_impact_loss
+		#}
+	#}
+#
+	#option = { #Move on
+		#name = sjalvolki_hunt.7023.d
+		#custom_tooltip = gain_tracking_progress_tooltip
+		#change_variable = {
+			#name = tracking_progress
+			#add = 1
+		#}
+#
+		#stress_impact = {
+			#brave = minor_stress_impact_gain
+			#craven = minor_stress_impact_loss
+			#impatient = minor_stress_impact_loss
+			#arrogant = minor_stress_impact_gain
+			#content = miniscule_stress_impact_loss
+			#greedy = minor_stress_impact_gain
+		#}
+	#}
+#
+	#after = {
+		#hidden_effect = {
+			#trigger_event = {
+				#on_action = tracking_events_on_action
+				#days = 2 
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.7024 = { #Encounter a Torkyll Migration
+	#type = character_event
+	#title = sjalvolki_hunt.7024.t
+	#desc = sjalvolki_hunt.7024.desc
+	#theme = hunt_activity
+	#right_portrait = {
+		#character = root 
+		#animation = disbelief
+	#}
+	#left_portrait = {
+		#character = scope:sjalvolki_hunting_courtier_1
+		#animation = shock
+	#}
+	#lower_center_portrait = scope:sjalvolki_hunting_courtier_2
+	#trigger = {
+		#NOT = { has_character_flag = had_sjalvolki_hunt_7024 }
+		#AND = {
+			#exists = scope:hunt_biozone
+			#scope:hunt_biozone = flag:the_isles
+		#}
+	#}
+#
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#immediate = {
+		#hidden_effect = {
+			#add_character_flag = {
+				#flag = had_sjalvolki_hunt_7024
+				#days = 3500
+			#}
+		#}
+	#}
+#
+	#option = { #Watch the migration
+		#name = sjalvolki_hunt.7024.a
+#		
+		#add_prestige = minor_prestige_gain
+		#add_adventure_lifestyle_xp = miniscule_lifestyle_xp
+		#apply_tracking_effects = yes
+		#apply_environmental_effects = yes
+#
+		#stress_impact = {
+			#base = minor_stress_impact_loss
+			#patient = minor_stress_impact_loss
+			#impatient = minor_stress_impact_gain
+			#compassionate = minor_stress_impact_loss
+			#sadistic = medium_stress_impact_gain
+		#}
+	#}
+#	
+	#option = { #Lets catch one!
+		#name = sjalvolki_hunt.7024.b
+		#custom_tooltip = sjalvolki_hunt.7024.tt
+		#save_scope_value_as = {
+			#name = poisonous
+			#value = yes
+		#}
+		#save_scope_value_as = {
+			#name = social
+			#value = yes
+		#}
+		#save_scope_value_as = {
+			#name = moonbound
+			#value = yes
+		#}
+		#game_tag_table_effect = { MODE = copy }
+		#save_scope_value_as = {
+			#name = hunt_target_game
+			#value = flag:torkyll
+		#}
+		#set_variable = {
+			#name = chosen_hunt_game_var
+			#value = flag:torkyll
+			#days = 2
+		#}
+		#trigger_event = sjalvolki_hunt.0201	
+#
+		#stress_impact = {
+			#brave = medium_stress_impact_loss
+			#craven = medium_stress_impact_gain
+			#impatient = minor_stress_impact_loss
+			#content = miniscule_stress_impact_gain
+		#}
+	#}
+#
+	#option = { #There's no time for resting!
+		#name = sjalvolki_hunt.7024.c
+#
+		#apply_tracking_effects = yes
+		#apply_environmental_effects = yes
+#
+		#stress_impact = {
+			#brave = minor_stress_impact_gain
+			#impatient = miniscule_stress_impact_loss
+			#patient = miniscule_stress_impact_gain
+			#arrogant = minor_stress_impact_gain
+			#craven = minor_stress_impact_loss
+		#}
+	#}
+#
+	#option = { #Hunters get a Special Option
+		#name = sjalvolki_hunt.7024.d
+		#add_internal_flag = fancy_coloring
+		#add_internal_flag = fancy_coloring_orange_stretch
+		#trigger = {
+			#OR = { 
+				#has_trait = lifestyle_hunter
+				#has_trait = lifestyle_beasthunter
+			#}
+		#}
+#
+		#duel = {
+			#skill = prowess 
+			#value = average_skill_rating
+#
+			#25 = {
+				#custom_tooltip = successfully_ambush_game_tooltip
+				#save_scope_value_as = {
+					#name = successful_ambush
+					#value = yes
+				#}
+				#save_scope_value_as = {
+					#name = poisonous
+					#value = yes
+				#}
+				#save_scope_value_as = {
+					#name = social
+					#value = yes
+				#}
+				#save_scope_value_as = {
+					#name = moonbound
+					#value = yes
+				#}
+				#game_tag_table_effect = { MODE = copy }
+				#save_scope_value_as = {
+					#name = hunt_target_game
+					#value = flag:torkyll
+				#}
+				#set_variable = {
+					#name = chosen_hunt_game_var
+					#value = flag:torkyll
+					#days = 2
+				#}
+				#trigger_event = sjalvolki_hunt.0201	
+			#}
+			#35 = {
+				#custom_tooltip = sjalvolki_hunt.7024.tt_hunter
+				#save_scope_value_as = {
+					#name = poisonous
+					#value = yes
+				#}
+				#save_scope_value_as = {
+					#name = social
+					#value = yes
+				#}
+				#save_scope_value_as = {
+					#name = moonbound
+					#value = yes
+				#}
+				#game_tag_table_effect = { MODE = copy }
+				#save_scope_value_as = {
+					#name = hunt_target_game
+					#value = flag:torkyll
+				#}
+				#set_variable = {
+					#name = chosen_hunt_game_var
+					#value = flag:torkyll
+					#days = 2
+				#}
+				#trigger_event = sjalvolki_hunt.0201	
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.7025 = { #Encounter a Hermit Magi brewing potions
+	#type = character_event
+	#title = sjalvolki_hunt.7025.t
+	#desc = sjalvolki_hunt.7025.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#animation = personality_rational
+	#}
+	#right_portrait = {
+		#character = scope:hermit_magi
+		#animation = scheme
+	#}
+	#trigger = {
+		#NOR = {
+			#has_character_flag = had_sjalvolki_hunt_7025
+			#exists = scope:home_biozone
+		#}	
+	#}
+#
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#immediate = {
+		#hidden_effect = {
+			#add_character_flag = {
+				#flag = had_sjalvolki_hunt_7025
+				#days = 5000
+			#}
+		#}
+		##To create the Magi
+		#create_character = {
+			#age = { 35 75 }
+			#trait = education_dead_magic_2
+			#trait = magic_good_2
+			#gender_female_chance = 50
+			#dynasty = none
+			#faith = this.faith
+			#culture = this.culture
+			#LOCATION = scope:sjalvolki_hunt_province
+			#save_scope_as = hermit_magi
+		#}
+	#}
+#
+	#option = { #Buy a potion
+		#name = sjalvolki_hunt.7025.a
+#
+		#custom_tooltip = sjalvolki_hunt.7025.tt
+		#remove_short_term_gold = medium_gold_value
+		#create_artifact_elixir_effect = {
+			#OWNER = root
+			#ALCHEMIST = scope:hermit_magi
+		#}
+		#save_scope_value_as = {
+			#name = elixirs
+			#value = yes
+		#}
+#
+		#stress_impact = {
+			#greedy = medium_stress_impact_gain
+			#generous = medium_stress_impact_loss
+			#content = medium_stress_impact_gain
+			#brave = medium_stress_impact_loss
+			#ambitious = medium_stress_impact_loss
+			#craven = medium_stress_impact_gain
+		#}
+	#}
+#
+	#option = { #Take it by force
+		#name = sjalvolki_hunt.7025.b
+#
+		#duel = {
+			#skill = prowess
+			#value = very_high_skill_rating
+#
+			#45 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1
+				#}
+				#custom_tooltip = sjalvolki_hunt.7025.tt
+				#create_artifact_elixir_effect = {
+					#OWNER = root
+					#ALCHEMIST = scope:hermit_magi
+				#}
+				#save_scope_value_as = {
+					#name = elixirs
+					#value = yes
+				#}
+				#unknown_murder_effect = {
+					#VICTIM = scope:hermit_magi
+					#MURDERER = root
+					#REASON = death_hunting_accident
+				#}
+			#}
+			#25 = {
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1
+				#}
+				#increase_wounds_effect = { REASON = duel }
+			#}
+		#}
+#
+		#stress_impact = {
+			#sadistic = minor_stress_impact_loss
+			#compassionate = medium_stress_impact_gain
+			#just = medium_stress_impact_gain
+			#craven = medium_stress_impact_gain
+			#brave = minor_stress_impact_loss
+		#}
+	#}
+#
+	#option = { #Carry on 
+		#name = sjalvolki_hunt.7025.c
+#
+		#stress_impact = {
+			#greedy = medium_stress_impact_loss
+			#content = medium_stress_impact_loss
+			#brave = medium_stress_impact_gain
+			#ambitious = medium_stress_impact_gain
+			#craven = medium_stress_impact_gain
+		#}
+	#}
+#
+	#option = { #Good Stewards can haggle
+		#name = sjalvolki_hunt.7025.d
+		#add_internal_flag = fancy_coloring
+		#add_internal_flag = fancy_coloring_orange_stretch
+#
+		#trigger = {
+			#OR = {
+				#has_trait = shrewd
+				#stewardship >= high_skill_rating
+			#}			
+		#}
+#
+		#custom_tooltip = sjalvolki_hunt.7025.tt
+		#duel = {
+			#skill = stewardship
+			#value = decent_skill_rating
+			#15 = {
+				#desc = sjalvolki_hunt.7025.successfully_lowered_price
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1.0
+					#min = -14
+				#}
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7025.successfully_lowered_price
+					#left_icon = root
+#
+					#remove_short_term_gold = minor_gold_value
+					#create_artifact_elixir_effect = {
+						#OWNER = root
+						#ALCHEMIST = scope:hermit_magi
+					#}
+					#save_scope_value_as = {
+						#name = elixirs
+						#value = yes
+					#}
+				#}
+			#}
+			#10 = {
+				#desc = sjalvolki_hunt.7025.no_price_change
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1.0
+					#min = -14
+				#}
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7025.no_price_change
+					#left_icon = root
+#
+					#remove_short_term_gold = medium_gold_value
+					#create_artifact_elixir_effect = {
+						#OWNER = root
+						#ALCHEMIST = scope:hermit_magi
+					#}
+					#save_scope_value_as = {
+						#name = elixirs
+						#value = yes
+					#}
+				#}
+			#}
+			#5 = {
+				#desc = sjalvolki_hunt.7025.accidental_increase
+				#compare_modifier = {
+					#value = scope:duel_value
+					#multiplier = 1.0
+					#min = -14
+				#}
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7025.accidental_increase
+					#left_icon = root
+#
+					#remove_short_term_gold = major_gold_value
+					#create_artifact_elixir_effect = {
+						#OWNER = root
+						#ALCHEMIST = scope:hermit_magi
+					#}
+					#save_scope_value_as = {
+						#name = elixirs
+						#value = yes
+					#}
+				#}
+			#}
+		#}
+#
+		#stress_impact = {
+			#base = miniscule_stress_impact_gain
+		#}
+	#}
+#
+	#after = {
+		#hidden_effect = {
+			#trigger_event = {
+				#on_action = tracking_events_on_action
+				#days = 2 
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.7026 = { #Accidentally Lose Bearings in the Fog
+	#type = character_event
+	#title = sjalvolki_hunt.7026.t
+	#desc = sjalvolki_hunt.7026.desc
+	#theme = hunt_activity
+	#left_portrait = {
+		#character = root
+		#triggered_animation = {	# Be anxious in the Foglands unless you have some serious guts
+			#trigger = {
+				#exists = scope:fogswept
+				#NOT = { ai_boldness >= 100 }
+			#}
+			#animation = paranoia
+		#}
+		#triggered_animation = {
+			#trigger = {
+				#OR = {
+					#NOT = { exists = scope:fogswept }
+					#ai_boldness >= 100
+				#}
+			#}
+			#animation = paranoia
+		#}
+	#}
+	#trigger = {
+		#NOT = { has_character_flag = had_sjalvolki_hunt_7026 }
+		#AND = {
+			#exists = scope:hunt_biozone
+			#scope:hunt_biozone = flag:foglands
+		#}
+	#}
+#
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#immediate = {
+		#hidden_effect = {
+			#add_character_flag = {
+				#flag = had_sjalvolki_hunt_7026
+				#days = 3500
+			#}
+			#add_character_modifier = {
+				#modifier = ambushed_modifier
+				#days = 4
+			#}
+		#}
+	#}
+#
+	#option = { #Call out for help
+		#name = sjalvolki_hunt.7026.a
+#
+		#random_list = {
+			#33 = {
+				#desc = sjalvolki_hunt.7026.no_malus
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7026.no_malus
+					#left_icon = root
+#
+					#apply_tracking_effects = yes
+					#apply_environmental_effects = yes
+				#}
+			#}
+			#20 = {
+				#desc = sjalvolki_hunt.7026.long_wait
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7026.long_wait
+					#left_icon = root
+#
+					#add_character_modifier = {
+						#modifier = cold_modifier
+						#days = 60
+					#}
+					#add_character_modifier = {
+						#modifier = hunger_modifier
+						#days = 60
+					#}
+					#apply_tracking_effects = yes
+					#apply_environmental_effects = yes
+				#}
+			#}
+			#15 = {
+				#desc = sjalvolki_hunt.7026.ambushed_by_fogbeast
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7026.ambushed_by_fogbeast
+					#left_icon = root
+#
+					#trigger_event = sjalvolki_hunt.0201	
+				#}
+			#}
+		#}
+	#}
+#
+	#option = { #Run Away!
+		#name = sjalvolki_hunt.7026.b
+#
+		#random_list = {
+			#33 = {
+				#desc = sjalvolki_hunt.7026.no_malus
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7026.no_malus
+					#left_icon = root
+#
+					#apply_tracking_effects = yes
+					#apply_environmental_effects = yes
+				#}
+			#}
+			#20 = {
+				#desc = sjalvolki_hunt.7026.long_wait
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7026.long_wait
+					#left_icon = root
+#
+					#add_character_modifier = {
+						#modifier = cold_modifier
+						#days = 60
+					#}
+					#add_character_modifier = {
+						#modifier = hunger_modifier
+						#days = 60
+					#}
+					#apply_tracking_effects = yes
+					#apply_environmental_effects = yes
+				#}
+			#}
+			#19 = {
+				#desc = sjalvolki_hunt.7026.ambushed_by_fogbeast
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7026.ambushed_by_fogbeast
+					#left_icon = root
+#
+					#trigger_event = sjalvolki_hunt.0201	
+				#}
+			#}
+			#5 = {
+				#desc = sjalvolki_hunt.7026.lost_to_the_fog
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7026.lost_to_the_fog
+					#left_icon = root
+#
+					#death = { death_reason = death_vanished }
+				#}
+			#}
+		#}
+	#}
+#
+	#option = { #Wait Patiently
+		#name = sjalvolki_hunt.7026.c
+		#random_list = {
+			#33 = {
+				#desc = sjalvolki_hunt.7026.no_malus
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7026.no_malus
+					#left_icon = root
+#
+					#apply_tracking_effects = yes
+					#apply_environmental_effects = yes
+				#}
+			#}
+			#20 = {
+				#desc = sjalvolki_hunt.7026.long_wait
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7026.long_wait
+					#left_icon = root
+#
+					#add_character_modifier = {
+						#modifier = cold_modifier
+						#days = 60
+					#}
+					#add_character_modifier = {
+						#modifier = cold_modifier
+						#days = 60
+					#}
+					#add_character_modifier = {
+						#modifier = hunger_modifier
+						#days = 60
+					#}
+					#add_character_modifier = {
+						#modifier = hunger_modifier
+						#days = 60
+					#}
+					#apply_tracking_effects = yes
+					#apply_environmental_effects = yes
+				#}
+			#}
+			#19 = {
+				#desc = sjalvolki_hunt.chance_of_ambush
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7026.ambushed_by_fogbeast
+					#left_icon = root
+#
+					#trigger_event = sjalvolki_hunt.0201	
+				#}
+			#}
+		#}
+	#}
+#
+	#option = { #Fog Magi Can Find Their Way 
+		#name = sjalvolki_hunt.7026.d
+		#add_internal_flag = fancy_coloring
+		#add_internal_flag = fancy_coloring_purple_stretch
+		#trigger = {
+			#AND = {
+				#has_trait = education_mixed_magic
+				#has_variable = magic_counter
+				#var:magic_counter > 20
+			#}
+		#}
+		#custom_tooltip = sjalvolki_hunt_magic_cost_small_tooltip
+		#change_variable = {
+			#name = magic_counter
+			#add = -20
+		#}
+		#apply_tracking_effects = yes
+		#apply_environmental_effects = yes
+	#}
+#}
+#
+#sjalvolki_hunt.7027 = { #Your Food Rots Unnaturally in the Fog
+	#type = character_event
+	#title = sjalvolki_hunt.7027.t
+	#desc = sjalvolki_hunt.7027.desc
+	#theme = hunt_activity
+	#right_portrait = {
+		#character = root
+		#triggered_animation = {	# Be anxious in the Foglands unless you have some serious guts
+			#trigger = {
+				#exists = scope:fogswept
+				#NOT = { ai_boldness >= 100 }
+			#}
+			#animation = stress
+		#}
+		#triggered_animation = {
+			#trigger = {
+				#OR = {
+					#NOT = { exists = scope:fogswept }
+					#ai_boldness >= 100
+				#}
+			#}
+			#animation = worry
+		#}
+	#}
+	#left_portrait = {
+		#character = scope:sjalvolki_hunting_courtier_1
+		#animation = paranoia 
+	#}
+	#trigger = {
+		#NOT = { has_character_flag = had_sjalvolki_hunt_7027 }
+		#AND = {
+			#exists = scope:hunt_biozone
+			#scope:hunt_biozone = flag:foglands
+		#}
+	#}
+#
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#immediate = {
+		#hidden_effect = {
+			#add_character_flag = {
+				#flag = had_sjalvolki_hunt_7027
+				#days = 3500
+			#}
+		#}
+	#}
+#
+	#option = {
+		#name = sjalvolki_hunt.7027.a
+#
+		#add_character_modifier = {
+			#modifier = hunger_modifier
+			#days = 60
+		#}
+	#}
+#
+	#after = {
+		#hidden_effect = {
+			#trigger_event = {
+				#on_action = tracking_events_on_action
+				#days = 2 
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.7028 = { #Seeing Things in the Fog
+	#type = character_event
+	#title = sjalvolki_hunt.7028.t
+	#desc = sjalvolki_hunt.7028.desc
+	#theme = hunt_activity
+	#right_portrait = {
+		#character = root
+		#triggered_animation = {	# Be anxious in the Foglands unless you have some serious guts
+			#trigger = {
+				#exists = scope:fogswept
+				#NOT = { ai_boldness >= 100 }
+			#}
+			#animation = worry
+		#}
+		#triggered_animation = {
+			#trigger = {
+				#OR = {
+					#NOT = { exists = scope:fogswept }
+					#ai_boldness >= 100
+				#}
+			#}
+			#animation = war_attacker
+		#}
+	#}
+	#trigger = {
+		#NOT = { has_character_flag = had_sjalvolki_hunt_7028 }
+		#AND = {
+			#exists = scope:hunt_biozone
+			#scope:hunt_biozone = flag:foglands
+		#}
+	#}
+#
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#immediate = {
+		#hidden_effect = {
+			#add_character_flag = {
+				#flag = had_sjalvolki_hunt_7028
+				#days = 3500
+			#}
+		#}
+	#}
+#
+	#option = { #Stop paying attention
+		#name = sjalvolki_hunt.7028.a
+#
+		#random_list = {
+			#70 = {
+				#add_stress = major_stress_gain
+			#}
+			#30 = {
+				#desc = sjalvolki_hunt.chance_of_ambush
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7026.ambushed_by_fogbeast
+					#left_icon = root
+#
+					#trigger_event = sjalvolki_hunt.0201	
+				#}
+			#}
+		#}
+	#}
+#
+	#option = {#Camp for the night
+		#name = sjalvolki_hunt.7028.b
+#
+		#random_list = {
+			#50 = {
+				#desc = sjalvolki_hunt.chance_of_ambush
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7026.ambushed_by_fogbeast
+					#left_icon = root
+#
+					#trigger_event = sjalvolki_hunt.0201	
+				#}
+			#}
+			#50 = {
+				#add_character_modifier = {
+					#modifier = hunger_modifier
+					#days = 60
+				#}
+				#add_character_modifier = {
+					#modifier = hunger_modifier
+					#days = 60
+				#}
+			#}
+		#}
+	#}
+#
+	#option = {#Look at the ground!
+		#name = sjalvolki_hunt.7028.c
+#
+		#random_list = {
+			#50 = {
+				#custom_tooltip = greatly_lose_tracking_progress_tooltip
+				#change_variable = {
+					#name = tracking_progress
+					#add = -5
+				#}
+			#}
+			#50 = {
+				#desc = sjalvolki_hunt.chance_of_ambush
+				#add_character_modifier = {
+					#modifier = ambushed_modifier
+					#days = 4
+				#}
+				#send_interface_toast = {
+					#title = sjalvolki_hunt.7026.ambushed_by_fogbeast
+					#left_icon = root
+#
+					#trigger_event = sjalvolki_hunt.0201	
+				#}
+			#}
+		#}
+	#}
+#
+	#after = {
+		#hidden_effect = {
+			#trigger_event = {
+				#on_action = tracking_events_on_action
+				#days = 2 
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.7029 = { #Encounter a Colossal Beehive
+	#type = character_event
+	#title = sjalvolki_hunt.7029.t
+	#desc = sjalvolki_hunt.7029.desc
+	#theme = hunt_activity
+	#right_portrait = {
+		#character = root 
+		#animation = worry
+	#}
+	#trigger = {
+		#NOT = { has_character_flag = had_sjalvolki_hunt_7029 }
+		#AND = {
+			#exists = scope:hunt_biozone
+			#OR = {
+				#scope:hunt_biozone = flag:kalath_old_growth
+				#scope:hunt_biozone = flag:pathos_delta
+				#scope:hunt_biozone = flag:sulzegg_basin
+				#scope:hunt_biozone = flag:kalath_redwoods
+				#scope:hunt_biozone = flag:southern_kalath
+				#scope:hunt_biozone = flag:knokidbes
+				#scope:hunt_biozone = flag:migraddar
+			#}
+		#}
+	#}
+#
+	#override_background = {
+		#reference = hunting_wilderness_scope
+	#}
+#
+	#immediate = {
+		#hidden_effect = {
+			#add_character_flag = {
+				#flag = had_sjalvolki_hunt_7029
+				#days = 3500
+			#}
+		#}
+	#}
+#
+	#option = { #Sneak Past
+		#name = sjalvolki_hunt.7029.a
+#		
+		#duel = {
+			#skill = intrigue
+			#value = low_skill_rating
+#
+			#35 = {
+				#add_adventure_lifestyle_xp = minor_lifestyle_xp
+				#add_prestige = minor_prestige_gain
+				#custom_tooltip = gain_tracking_progress_tooltip
+				#change_variable = {
+					#name = tracking_progress
+					#add = 2
+				#}
+				#apply_tracking_effects = yes
+				#apply_environmental_effects = yes
+			#}
+			#10 = {
+				#add_character_modifier = {
+					#modifier = ambushed_modifier
+					#days = 4
+				#}
+				#add_prestige = minor_prestige_loss
+				#save_scope_value_as = {
+					#name = fast
+					#value = yes
+				#}
+				#save_scope_value_as = {
+					#name = social
+					#value = yes
+				#}
+				#game_tag_table_effect = { MODE = copy }
+				#save_scope_value_as = {
+					#name = hunt_target_game
+					#value = flag:giant_bee
+				#}
+				#set_variable = {
+					#name = chosen_hunt_game_var
+					#value = flag:giant_bee
+					#days = 2
+				#}
+				#trigger_event = sjalvolki_hunt.0201	
+			#}
+		#}
+#
+		#stress_impact = {
+			#brave = minor_stress_impact_gain
+			#craven = minor_stress_impact_loss
+			#ambitious = minor_stress_impact_gain
+		#}
+	#}
+#
+	#option = { #Take the Honey too
+		#name = sjalvolki_hunt.7029.b
+#
+		#duel = {
+			#skill = intrigue
+			#value = high_skill_rating
+#
+			#25 = {
+				#add_adventure_lifestyle_xp = minor_lifestyle_xp
+				#add_prestige = minor_prestige_gain
+				#add_character_modifier = {
+					#modifier = giant_bee_trophy_modifier
+					#years = 5
+				#}
+				#custom_tooltip = gain_tracking_progress_tooltip
+				#change_variable = {
+					#name = tracking_progress
+					#add = 2
+				#}
+				#apply_tracking_effects = yes
+				#apply_environmental_effects = yes
+			#}
+			#15 = {
+				#add_character_modifier = {
+					#modifier = ambushed_modifier
+					#days = 4
+				#}
+				#add_prestige = minor_prestige_loss
+				#save_scope_value_as = {
+					#name = fast
+					#value = yes
+				#}
+				#save_scope_value_as = {
+					#name = social
+					#value = yes
+				#}
+				#game_tag_table_effect = { MODE = copy }
+				#save_scope_value_as = {
+					#name = hunt_target_game
+					#value = flag:giant_bee
+				#}
+				#set_variable = {
+					#name = chosen_hunt_game_var
+					#value = flag:giant_bee
+					#days = 2
+				#}
+				#trigger_event = sjalvolki_hunt.0201	
+			#}
+		#}
+		#stress_impact = {
+			#craven = minor_stress_impact_gain
+			#brave = miniscule_stress_impact_gain
+			#ambitious = miniscule_stress_impact_loss
+		#}
+	#}
+#
+	#option = { #Herbalists, Gardeners Get Unique Option
+		#name = sjalvolki_hunt.7029.c
+		#add_internal_flag = fancy_coloring
+		#add_internal_flag = fancy_coloring_orange_stretch
+		#trigger = {
+			#OR = {
+				#has_trait = lifestyle_herbalist
+				#has_trait = lifestyle_gardener
+			#}
+		#}
+#
+		#duel = {
+			#skill = learning
+			#value = average_skill_rating
+#
+#
+			#55 = {
+				#add_learning_lifestyle_xp = minor_lifestyle_xp
+				#add_adventure_lifestyle_xp = minor_lifestyle_xp
+				#add_prestige = minor_prestige_gain
+				#add_character_modifier = {
+					#modifier = giant_bee_trophy_modifier
+					#years = 5
+				#}
+				#custom_tooltip = gain_tracking_progress_tooltip
+				#change_variable = {
+					#name = tracking_progress
+					#add = 2
+				#}
+				#apply_tracking_effects = yes
+				#apply_environmental_effects = yes
+			#}
+			#10 = {
+				#add_character_modifier = {
+					#modifier = ambushed_modifier
+					#days = 4
+				#}
+				#add_prestige = minor_prestige_loss
+				#save_scope_value_as = {
+					#name = fast
+					#value = yes
+				#}
+				#save_scope_value_as = {
+					#name = social
+					#value = yes
+				#}
+				#game_tag_table_effect = { MODE = copy }
+				#save_scope_value_as = {
+					#name = hunt_target_game
+					#value = flag:giant_bee
+				#}
+				#set_variable = {
+					#name = chosen_hunt_game_var
+					#value = flag:giant_bee
+					#days = 2
+				#}
+				#trigger_event = sjalvolki_hunt.0201	
+			#}
+		#}
+#
+		#stress_impact = {
+			#compassionate = miniscule_stress_impact_loss
+			#brave = miniscule_stress_impact_loss
+			#ambitious = miniscule_stress_impact_loss
+			#craven = miniscule_stress_impact_gain
+		#}
+	#}
+#
+	#option = { #Magi Option
+		#name = sjalvolki_hunt.7029.d
+		#add_internal_flag = fancy_coloring
+		#add_internal_flag = fancy_coloring_teal_stretch
+		#trigger = {
+			#AND = {
+				#blood_aspect_skill_trigger = { VALUE = 5 }
+				#has_variable = magic_counter
+				#var:magic_counter > 10
+			#}
+		#}
+		#custom_tooltip = sjalvolki_hunt_magic_cost_small_tooltip
+		#change_variable = {
+			#name = magic_counter
+			#add = -10
+		#}
+#
+		#add_adventure_lifestyle_xp = minor_lifestyle_xp
+		#add_prestige = minor_prestige_gain
+		#add_character_modifier = {
+			#modifier = giant_bee_trophy_modifier
+			#years = 5
+		#}
+		#custom_tooltip = gain_tracking_progress_tooltip
+		#change_variable = {
+			#name = tracking_progress
+			#add = 2
+		#}
+		#apply_tracking_effects = yes
+		#apply_environmental_effects = yes
+	#}
+#
+	#option = { #Brave Option
+		#name = sjalvolki_hunt.7029.e
+		#add_internal_flag = fancy_coloring
+		#add_internal_flag = fancy_coloring_purple_stretch
+		#trigger = {
+			#AND = {
+				#has_trait = brave
+			#}
+		#}
+		#duel = {
+			#skill = prowess
+			#value = average_skill_rating
+#
+			#45 = {
+				#add_prestige = minor_prestige_gain
+				#custom_tooltip = gain_tracking_progress_tooltip
+				#change_variable = {
+					#name = tracking_progress
+					#add = 2
+				#}
+				#apply_tracking_effects = yes
+				#apply_environmental_effects = yes
+			#}
+			#15 = {
+				#add_character_modifier = {
+					#modifier = ambushed_modifier
+					#days = 4
+				#}
+				#add_prestige = minor_prestige_loss
+				#save_scope_value_as = {
+					#name = fast
+					#value = yes
+				#}
+				#save_scope_value_as = {
+					#name = social
+					#value = yes
+				#}
+				#game_tag_table_effect = { MODE = copy }
+				#save_scope_value_as = {
+					#name = hunt_target_game
+					#value = flag:giant_bee
+				#}
+				#set_variable = {
+					#name = chosen_hunt_game_var
+					#value = flag:giant_bee
+					#days = 2
+				#}
+				#trigger_event = sjalvolki_hunt.0201	
+			#}
+		#}
+	#}
+#}
+#
+#sjalvolki_hunt.9999 = {
+	#type = character_event
+	#hidden = yes
+	#immediate = {
+		##End the activity
+		#if = {
+			#limit = {
+				#exists = scope:activity
+			#}
+			#scope:activity = {
+				#complete_activity = yes
+			#}
+		#}
+		#remove_variable = sjalvolki_hunt_outcome
+	#}
+#}

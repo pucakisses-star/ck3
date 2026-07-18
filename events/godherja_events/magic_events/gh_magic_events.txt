@@ -1,0 +1,3697 @@
+﻿namespace = magic
+
+# TODO: REDO EVERYTHING HERE
+
+##################################################
+
+### General Magic Events
+
+# 0001 - Ritual Performance
+# 0011 - Affected By Ritual
+# 0101 - Recruiting a Magi
+# 0201 - Learning a Spell
+# 0300 - Domination and Charm Utility Events
+# 1001 - Poison Spell
+# 1011 - Fire Magick Spell
+# 1016 - Petrify Spell
+# 1021 - Crush Armor Spell
+# 1026 - Pull Meteor Spell
+# 1041 - Earthquake Spell
+# 1101 - Magical Trait Events
+# 1201 - Potent Magi Events
+# 2150 - Create Golem Events
+# 2200 - Craft Greater Golem Events
+# 2250 - Lunar Divination Events
+# 2300 - Aervalr's Guidance Events
+# 2350 - Annihilation Spell
+# 2400 - Death-related Utility Events
+# 2420 - Peculiar Insights perk events
+# 2450 - Magic-related Secret Events
+# 2500 - Channel the Rift Events
+# 2550 - Riftmark Events
+# 2600 - Sacrifice Population Events
+# 2700 - Consumption of Power
+
+### Misc Magic Events
+
+# 6001 - Silas Stavro in the Spider Library
+
+##################################################
+
+##################################################
+# Ritual Performance
+# by Hapchazzard
+# 0001 - 0010
+##################################################
+
+magic.0001 = {
+	type = character_event
+	content_source = dlc_gh
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { 
+					scope:selected_spell_scope.var:primary_spell_tag.var:spell_tag_name = flag:generate_magic
+					scope:selected_spell_scope = { spell_has_component_trigger = { COMPONENT_NAME = character_prisoner } }
+				}
+				desc = magic.0001.t.ritual_sacrifice
+			}
+			triggered_desc = {
+				trigger = { 
+					scope:selected_spell_scope.var:primary_spell_tag.var:spell_tag_name = flag:add_character_modifier_random_divination_modifier
+				}
+				desc = magic.0001.t.divination
+			}
+			desc = magic.0001.t
+		}
+	}
+	desc = {
+		desc = magic.0001.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = { 
+					scope:selected_spell_scope.var:unique_spell_identifier ?= flag:wisdom_of_the_leaf_whispers
+				}
+				desc = magic.0001.desc.wisdom_of_the_leaf_whispers.success
+			}
+			triggered_desc = {
+				trigger = { 
+					scope:selected_spell_scope.var:unique_spell_identifier ?= flag:cedar_witchs_hex
+				}
+				desc = magic.0001.desc.cedar_witchs_hex.success
+			}
+			triggered_desc = {
+				trigger = { 
+					scope:selected_spell_scope.var:unique_spell_identifier ?= flag:twin_gods_hex_of_wrath
+				}
+				desc = magic.0001.desc.twin_gods_hex_of_wrath.success
+			}
+			triggered_desc = {
+				trigger = { 
+					scope:selected_spell_scope.var:unique_spell_identifier ?= flag:embercrown_coronation
+				}
+				desc = magic.0001.desc.embercrown_coronation.success
+			}
+		}
+	}
+	theme = witchcraft
+	override_background = {
+		reference = gh_ritual_site
+	}
+	override_effect_2d = {
+		trigger = { 
+			OR = {
+				scope:selected_spell_scope.var:unique_spell_identifier ?= flag:cedar_witchs_hex
+
+				scope:selected_spell_scope.var:unique_spell_identifier ?= flag:embercrown_coronation
+			}
+		}
+		reference = smoke	
+	}
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = {
+				exists = scope:unwanted_spell_target_scope
+			}
+			animation = scheme
+		}
+		triggered_animation = {
+			trigger = {
+				NOT = { exists = scope:unwanted_spell_target_scope }
+			}
+			animation = personality_rational
+		}
+	}
+	
+	trigger = {
+		is_physically_able = yes
+	}
+	
+	immediate = {
+		# Experimentation Perk Effects
+		if = {
+			limit = {
+				has_perk = arcana_erudition_perk1_tree3
+				scope:selected_spell_scope.spell_success_chance <= 50
+				trigger_if = {
+					limit = { has_variable_list = experimentation_perk_spell_list }
+					NOT = {
+						is_target_in_variable_list = {
+							name = experimentation_perk_spell_list
+							target = scope:selected_spell_scope
+						}
+					}
+				}
+			}
+			magic_aspect_effect = { MODE = add_aspect_skill_from_experimentation_perk }
+		}
+		
+		# Execute actual spell effects
+		execute_spell_effect = { SPELL = scope:selected_spell_scope }
+		
+		# Pick a hostile spell target, if it exists
+		if = {
+			limit = {
+				list_size = {
+					name = unwanted_spell_targets
+					value > 0
+				}
+			}
+			random_in_list = {
+				list = unwanted_spell_targets
+				save_scope_as = unwanted_spell_target_scope
+			}
+		}
+	}
+	
+	option = {
+		name = {
+			trigger = { scope:selected_spell_scope.var:primary_spell_tag.var:spell_tag_name = flag:destroy_sun }
+			text = magic.0001.a.sundeath
+		}
+		name = {
+			trigger = { NOT = { scope:selected_spell_scope.var:primary_spell_tag.var:spell_tag_name = flag:destroy_sun } }
+			text = magic.0001.a
+		}
+	}
+}
+
+##################################################
+# Affected By Ritual
+# by Hapchazzard
+# 0011 - 0020
+##################################################
+
+magic.0011 = {
+	type = character_event
+	content_source = dlc_gh
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { 
+					scope:spell_being_casted.var:unique_spell_identifier ?= flag:justice_of_the_primeval_garden
+				}
+				desc = magic.0011.t.justice_of_the_primeval_garden
+			}
+			triggered_desc = {
+				trigger = { 
+					scope:spell_being_casted.var:unique_spell_identifier ?= flag:cedar_witchs_hex
+				}
+				desc = magic.0011.t.cedar_witchs_hex
+			}
+			triggered_desc = {
+				trigger = { 
+					scope:spell_being_casted.var:unique_spell_identifier ?= flag:twin_gods_hex_of_wrath
+				}
+				desc = magic.0011.t.twin_gods_hex_of_wrath
+			}
+			desc = magic.0011.t
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { 
+					exists = scope:incurred_wound
+					scope:spell_being_casted = {
+						has_variable_list = spell_trigger_list
+						any_in_list = {
+							variable = spell_trigger_list
+							var:spell_tag_name ?= flag:activation_condition_wounding
+						}
+					} 
+				}
+				desc = magic.0011.desc.intro.wounding
+			}
+			desc = magic.0011.desc.intro.generic
+		}
+		first_valid = {
+			triggered_desc = {
+				trigger = { 
+					scope:spell_being_casted.var:unique_spell_identifier ?= flag:justice_of_the_primeval_garden
+				}
+				desc = magic.0011.desc.justice_of_the_primeval_garden
+			}
+			triggered_desc = {
+				trigger = { 
+					scope:spell_being_casted.var:unique_spell_identifier ?= flag:cedar_witchs_hex
+				}
+				desc = magic.0011.desc.cedar_witchs_hex
+			}
+			triggered_desc = {
+				trigger = { 
+					scope:spell_being_casted.var:unique_spell_identifier ?= flag:twin_gods_hex_of_wrath
+				}
+				desc = magic.0011.desc.twin_gods_hex_of_wrath
+			}
+			
+			triggered_desc = {
+				trigger = { 
+					can_access_magic = yes
+					exists = cp:councillor_court_magi
+				}
+				desc = magic.0011.desc.magi_court_magi
+			}
+			triggered_desc = {
+				trigger = { 
+					can_access_magic = yes
+					NOT = { exists = cp:councillor_court_magi }
+				}
+				desc = magic.0011.desc.magi_no_court_magi
+			}
+			triggered_desc = {
+				trigger = { 
+					can_access_magic = no
+					exists = cp:councillor_court_magi
+				}
+				desc = magic.0011.desc.non_magi_court_magi
+			}
+			desc = magic.0011.desc.non_magi_no_court_magi
+		}
+	}
+	theme = intrigue
+	left_portrait = {
+		character = root
+		triggered_animation = {	# GH TODO: Rather than hardcoding to spell, make this dependent on more general factors
+			trigger = {
+				NOR = { scope:spell_being_casted.var:unique_spell_identifier ?= flag:justice_of_the_primeval_garden }
+			}
+			animation = fear
+		}
+		triggered_animation = {
+			trigger = {
+				scope:spell_being_casted.var:unique_spell_identifier ?= flag:justice_of_the_primeval_garden
+			}
+			animation = throne_room_two_handed_passive_1
+		}
+	}
+	right_portrait = {
+		trigger = { 
+			exists = cp:councillor_court_magi
+			NOT = { exists = current_travel_plan }
+		}
+		character = cp:councillor_court_magi
+		animation = disbelief
+	}
+	
+	override_background = {
+		trigger = {
+			exists = current_travel_plan
+		}
+		reference = terrain_travel
+	}
+	override_background = {
+		trigger = {
+			NOT = { exists = current_travel_plan }
+		}
+		reference = corridor_night
+	}
+	override_effect_2d = {
+		trigger = { 
+			OR = {
+				scope:spell_being_casted.var:unique_spell_identifier ?= flag:cedar_witchs_hex
+			}
+		}
+		reference = smoke
+	}
+	override_effect_2d = {
+		trigger = { 
+			OR = {
+				scope:spell_being_casted.var:unique_spell_identifier ?= flag:embercrown_coronation
+				scope:spell_being_casted.var:unique_spell_identifier ?= flag:justice_of_the_primeval_garden
+				scope:spell_being_casted.var:unique_spell_identifier ?= flag:twin_gods_hex_of_wrath
+			}
+		}
+		reference = legend_glow
+	}
+	
+	immediate = {
+		apply_spell_effects_to_targets = { TARGET = target }
+	}
+	
+	option = {
+		name = magic.0011.a
+	}
+}
+
+##################################################
+# Recruiting a Magi
+# by Hapchazzard
+# 0101 - 0110
+##################################################
+
+scripted_trigger magic_0101_court_magi_basic_requirements_trigger = {
+	can_be_court_magi_trigger = { COURT_OWNER = root }
+}
+
+scripted_trigger magic_0101_excellent_skill_court_magi_trigger = {
+	magic_0101_court_magi_basic_requirements_trigger = yes
+	total_spellcasting_skill_value >= high_skill_rating
+}
+
+scripted_trigger magic_0101_high_skill_court_magi_trigger = {
+	magic_0101_court_magi_basic_requirements_trigger = yes	
+	OR = {
+		#Empire/kingdom
+		AND = {
+			root = { highest_held_title_tier >= tier_kingdom }
+			total_spellcasting_skill_value >= decent_skill_rating
+		}
+		#Duchy/county
+		AND = {
+			root = { highest_held_title_tier <= tier_duchy }
+			total_spellcasting_skill_value >= mediocre_skill_rating
+		}
+	}
+}
+
+scripted_trigger magic_0101_low_skill_court_magi_trigger = {
+	magic_0101_court_magi_basic_requirements_trigger = yes
+	OR = {
+		#Empire/kingdom
+		AND = {
+			root = { highest_held_title_tier >= tier_kingdom }
+			total_spellcasting_skill_value < decent_skill_rating
+			total_spellcasting_skill_value >= mediocre_skill_rating
+		}
+		#Duchy/county
+		AND = {
+			root = { highest_held_title_tier <= tier_duchy }
+			total_spellcasting_skill_value < medium_skill_rating
+			total_spellcasting_skill_value >= low_skill_rating
+		}
+	}
+}
+
+scripted_trigger magic_0101_low_skill_court_magi_light_trigger = {
+	magic_0101_court_magi_basic_requirements_trigger = yes
+	total_spellcasting_skill_value > low_skill_rating
+}
+
+scripted_effect set_court_magi_effect = {
+	$COURT_MAGI$ = {
+		if = {
+			limit = { 
+				NOT = { liege = $EMPLOYER$ }
+			}
+			$EMPLOYER$ = { add_courtier = $COURT_MAGI$ }
+		}
+	}
+	$EMPLOYER$ = {
+		#Replace existing court magi if one exists
+		if = {
+			limit = {
+				exists = cp:councillor_court_magi
+			}
+			cp:councillor_court_magi = {
+				save_temporary_scope_as = old_court_magi
+
+				$EMPLOYER$ = {
+					fire_councillor = scope:old_court_magi
+					assign_councillor_type = {
+						type = councillor_court_magi
+						target = $COURT_MAGI$
+					}
+					reverse_add_opinion = {
+						target = scope:old_court_magi
+						modifier = disappointed_opinion
+						opinion = -15
+					}
+					reverse_add_opinion = {
+						target = $COURT_MAGI$
+						modifier = hired_me_opinion
+					}
+				}
+			}
+		}
+		#Else just straight up appoint
+		else = {
+			assign_councillor_type = {
+				type = councillor_court_magi
+				target = $COURT_MAGI$
+			}
+			reverse_add_opinion = {
+				target = $COURT_MAGI$
+				modifier = hired_me_opinion
+			}
+		}
+	}
+}
+
+magic.0101 = {	# Search for a Magi decision event
+	type = character_event
+	content_source = dlc_gh
+	title = magic.0101.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { is_redlander = yes }
+				desc = magic.0101.redlander.desc
+			}
+			desc = magic.0101.desc
+		}
+		desc = magic.0101.ending.desc
+	}
+	theme = arcana
+	left_portrait = {
+		character = cp:councillor_chancellor
+		animation = flirtation
+	}
+	right_portrait = scope:high_skill_option
+	lower_left_portrait = scope:low_skill_option
+	lower_right_portrait = scope:excellent_skill_option
+	
+	trigger = { exists = capital_province } #If I lost it before I got this event, I shouldn't get a court magi
+	
+	immediate = {
+		hidden_effect = {
+			cp:councillor_chancellor = {
+				save_scope_as = chancellor
+			}
+			#Find some appropriate options
+
+			if = { #Performance heavy option finding is only for players
+				limit = { is_ai = no }
+
+				#EXCELLENT SKILL CHARACTER (for learned rulers)
+				if = {
+					limit = {
+						OR = {
+							blood_aspect_skill_trigger = { VALUE = 20 }
+							stone_aspect_skill_trigger = { VALUE = 20 }
+							ethereal_aspect_skill_trigger = { VALUE = 20 }
+							has_perk = arcana_erudition_perk3_tree3
+						}
+					}
+					random_pool_character = {
+						province = capital_province
+						limit = {
+							magic_0101_excellent_skill_court_magi_trigger = yes
+						}
+						weight = {
+							base = 1
+							modifier = {
+								faith = root.faith
+								factor = 10
+							}
+						}
+
+						save_scope_as = excellent_skill_option
+
+						#Backup generation
+						if = {
+							limit = { NOT = { exists = scope:excellent_skill_option } }
+
+							create_character = {
+								location = root.capital_province
+								gender_female_chance = root_court_magi_female_chance
+								template_character = root
+								random_traits_list = {
+									magic_good_2 = { weight = { base = 10 } }
+									magic_good_3 = { weight = { base = 25 } }
+									magic_good_4 = { weight = { base = 15 } }
+								}
+								random_traits_list = {
+									education_arcana_3 = { weight = { base = 10 } }
+									education_arcana_4 = { weight = { base = 5 } }
+									education_arcana_5 = { weight = { base = 2 } }
+								}
+								random_traits = yes
+								age = { 18 50 }
+								save_scope_as = excellent_skill_option
+							}
+							scope:excellent_skill_option = {
+								increase_congenital_magic_from_culture_parameter_effect = yes
+								increase_education_living_magic_from_culture_parameter_effect = yes
+								add_to_magi_list = yes
+								give_mixed_magi_riftsight_effect = yes
+								set_random_base_arcana = yes
+								learn_random_culture_magic_school_effect = {
+									MIN_SPELLS = generated_character_min_spells_default_value
+									MAX_SPELLS = generated_character_max_spells_default_value
+									MAX_SPELL_LEVEL = generated_character_max_spell_level_default_value
+								}
+							}
+						}
+					}				
+				}
+
+				#HIGH-SKILL CHARACTER
+				random_pool_character = {
+					province = capital_province
+					limit = {
+						magic_0101_high_skill_court_magi_trigger = yes
+						trigger_if = {
+							limit = {
+								exists = scope:excellent_skill_option
+							}
+							NOT = { this = scope:excellent_skill_option }
+						}
+					}
+					weight = {
+						base = 1
+						modifier = {
+							faith = root.faith
+							factor = 10
+						}
+					}
+					save_scope_as = high_skill_option
+				}
+
+				#Backup generation
+				if = {
+					limit = { NOT = { exists = scope:high_skill_option } }
+
+					create_character = {
+						location = root.capital_province
+						gender_female_chance = root_court_magi_female_chance
+						template_character = root
+						random_traits_list = {
+							magic_good_1 = { weight = { base = 10 } }
+							magic_good_2 = { weight = { base = 20 } }
+							magic_good_3 = { weight = { base = 15 } }
+							magic_good_4 = { weight = { base = 5 } }
+						}
+						random_traits_list = {
+							education_arcana_2 = { weight = { base = 15 } }
+							education_arcana_3 = { weight = { base = 10 } }
+							education_arcana_4 = { weight = { base = 5 } }
+						}
+						random_traits = yes
+						age = { 18 50 }
+						save_scope_as = high_skill_option
+					}
+					scope:high_skill_option = {
+						increase_congenital_magic_from_culture_parameter_effect = yes
+						increase_education_living_magic_from_culture_parameter_effect = yes
+						add_to_magi_list = yes
+						give_mixed_magi_riftsight_effect = yes
+						set_random_base_arcana = yes
+						learn_random_culture_magic_school_effect = {
+							MIN_SPELLS = generated_character_min_spells_default_value
+							MAX_SPELLS = generated_character_max_spells_default_value
+							MAX_SPELL_LEVEL = generated_character_max_spell_level_default_value
+						}
+					}
+				}
+
+				#Low-medium skill character
+				random_pool_character = {
+					province = root.capital_province
+					limit = { 
+						magic_0101_low_skill_court_magi_trigger = yes 
+						trigger_if = {
+							limit = {
+								exists = scope:excellent_skill_option
+							}
+							NOT = { this = scope:excellent_skill_option }
+						}
+						trigger_if = {
+							limit = {
+								exists = scope:high_skill_option
+							}
+							NOT = { this = scope:high_skill_option }
+						}
+					}
+					weight = {
+						base = 1
+						modifier = {
+							faith = root.faith
+							factor = 10
+						}
+					}
+					save_scope_as = low_skill_option
+				}
+				scope:low_skill_option = {
+					learn_random_culture_magic_school_effect = {
+						MIN_SPELLS = generated_character_min_spells_default_value
+						MAX_SPELLS = generated_character_max_spells_default_value
+						MAX_SPELL_LEVEL = generated_character_max_spell_level_default_value
+					}
+				}
+			}
+			else = { #Ai get someone simple
+				create_character = {
+					location = root.capital_province
+					gender_female_chance = root_court_magi_female_chance
+					template_character = root
+					random_traits_list = {
+						magic_good_1 = { weight = { base = 10 } }
+						magic_good_2 = { weight = { base = 25 } }
+						magic_good_3 = { weight = { base = 15 } }
+					}
+					random_traits_list = {
+						education_arcana_1 = { weight = { base = 15 } }
+						education_arcana_2 = { weight = { base = 10 } }
+						education_arcana_3 = { weight = { base = 5 } }
+					}
+					random_traits = yes
+					age = { 18 50 }
+					save_scope_as = low_skill_option
+				}
+				scope:low_skill_option = {
+					increase_congenital_magic_from_culture_parameter_effect = yes
+					increase_education_living_magic_from_culture_parameter_effect = yes
+					add_to_magi_list = yes
+					give_mixed_magi_riftsight_effect = yes
+					set_random_base_arcana = yes
+					learn_random_culture_magic_school_effect = {
+						MIN_SPELLS = generated_character_min_spells_default_value
+						MAX_SPELLS = generated_character_max_spells_default_value
+						MAX_SPELL_LEVEL = generated_character_max_spell_level_default_value
+					}
+				}
+			}
+			
+			#Backup generation
+			if = {
+				limit = { NOT = { exists = scope:low_skill_option } }
+
+				create_character = {
+					location = root.capital_province
+					gender_female_chance = root_court_magi_female_chance
+					template_character = root
+					random_traits_list = {
+						magic_good_1 = { weight = { base = 10 } }
+						magic_good_2 = { weight = { base = 25 } }
+						magic_good_3 = { weight = { base = 15 } }
+					}
+					random_traits_list = {
+						education_arcana_1 = { weight = { base = 15 } }
+						education_arcana_2 = { weight = { base = 10 } }
+						education_arcana_3 = { weight = { base = 5 } }
+					}
+					random_traits = yes
+					age = { 18 50 }
+					save_scope_as = low_skill_option
+				}
+				scope:low_skill_option = {
+					increase_congenital_magic_from_culture_parameter_effect = yes
+					increase_education_living_magic_from_culture_parameter_effect = yes
+					add_to_magi_list = yes
+					give_mixed_magi_riftsight_effect = yes
+					set_random_base_arcana = yes
+					learn_random_culture_magic_school_effect = {
+						MIN_SPELLS = generated_character_min_spells_default_value
+						MAX_SPELLS = generated_character_max_spells_default_value
+						MAX_SPELL_LEVEL = generated_character_max_spell_level_default_value
+					}
+				}
+			}
+		}
+	}
+	
+	#Amazing skill
+	option = {
+		trigger = {
+			exists = scope:excellent_skill_option
+			is_landed = yes #extra check to make sure they haven't lost their status
+		}
+		name = magic.0101.c
+		trait = education_arcana_4
+		trait = education_arcana_5
+		skill = learning
+
+		pay_short_term_gold = {
+			target = scope:excellent_skill_option
+			gold = high_skill_court_magi_cost
+		}
+
+		set_court_magi_effect = {
+			EMPLOYER = root
+			COURT_MAGI = scope:excellent_skill_option
+		}
+
+		ai_chance = {
+			factor = 500
+			modifier = {
+				short_term_gold < medium_gold_value
+				factor = 0
+			}
+		}
+	}
+
+	#High skill
+	option = {
+		trigger = {
+			is_landed = yes #extra check to make sure they haven't lost their status
+			exists = scope:high_skill_option #Doesn't exists for AI
+		}
+		name = magic.0101.b
+		
+		pay_short_term_gold = {
+			target = scope:high_skill_option
+			gold = high_skill_court_magi_cost
+		}
+
+		set_court_magi_effect = {
+			EMPLOYER = root
+			COURT_MAGI = scope:high_skill_option
+		}
+
+		ai_chance = {
+			factor = 100
+			modifier = {
+				short_term_gold < medium_gold_value
+				factor = 0
+			}
+		}
+	}
+
+	#Low
+	option = {
+		trigger = {
+			is_landed = yes #extra check to make sure they haven't lost their status
+		}
+		name = magic.0101.a
+		
+		if = {
+			limit = {
+				OR = {
+					is_ai = no
+					short_term_gold >= low_skill_court_magi_cost #Because AI would never have enough money
+				}
+			}
+			pay_short_term_gold = {
+				target = scope:low_skill_option
+				gold = low_skill_court_magi_cost
+			}
+		}
+
+		set_court_magi_effect = {
+			EMPLOYER = root
+			COURT_MAGI = scope:low_skill_option
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	#None...
+	option = {
+		name = magic.0101.d
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+##################################################
+# Learning a Spell
+# by Hapchazzard
+# 0201 - 0210
+##################################################
+
+magic.0201 = {	# Recipient accepts sharing a spell with you
+	type = character_event
+	content_source = dlc_gh
+	title = magic.0201.t
+	desc = magic.0201.desc
+	theme = learning
+	left_portrait = root
+	right_portrait = scope:recipient
+	
+	option = {
+		name = magic.0201.a
+		
+		scope:actor = {
+			if = { # Primarily for AI characters.
+				limit = {
+					NOT = { exists = var:spell_to_learn_from_character}
+				}
+				scope:recipient = {
+					random_in_list = {
+						variable = known_spell_list
+						limit = {
+							NOT = { magic_spell_is_known_by_trigger = { MAGI = scope:actor SPELL = prev } }
+						}
+						save_scope_as = magic_spell_taught
+					}
+				}
+				set_variable = {
+					name = spell_to_learn_from_character
+					value = scope:magic_spell_taught
+				}
+			}
+		}
+		scope:actor = {
+			start_scheme = {
+				type = learn_magic_spell_scheme
+				target_character = scope:recipient
+			}
+			random_scheme = {
+				limit = {
+					scheme_type = learn_magic_spell_scheme
+					scheme_target_character = scope:recipient
+				}
+				set_variable = {
+					name = spell_to_learn_from_character
+					value = scope:actor.var:spell_to_learn_from_character
+				}
+			}
+		}
+		scope:recipient = {
+			add_hook = {
+				target = scope:actor
+				type = favor_hook
+			}
+		}
+	}
+}
+
+magic.0202 = {	# Recipient declines sharing a spell with you
+	type = character_event
+	content_source = dlc_gh
+	title = magic.0202.t
+	desc = magic.0202.desc
+	theme = learning
+	left_portrait = root
+	right_portrait = scope:target
+	
+	immediate = {
+		hidden_effect = {
+			scope:actor = {
+				if = { # Primarily for AI characters.
+					limit = {
+						NOT = { exists = var:spell_to_learn_from_character}
+					}
+					scope:recipient = {
+						random_in_list = {
+							variable = known_spell_list
+							limit = {
+								NOT = { magic_spell_is_known_by_trigger = { MAGI = scope:actor SPELL = prev } }
+							}
+							save_scope_as = magic_spell_taught
+						}
+					}
+					set_variable = {
+						name = spell_to_learn_from_character
+						value = scope:magic_spell_taught
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			scope:actor = {
+				start_scheme = {
+					type = learn_magic_spell_scheme
+					target_character = scope:recipient
+				}
+				random_scheme = {
+					limit = {
+						scheme_type = learn_magic_spell_scheme
+						scheme_target_character = scope:recipient
+					}
+					set_variable = {
+						name = spell_to_learn_from_character
+						value = scope:actor.var:spell_to_learn_from_character
+					}
+					save_scope_as = learn_spell_scheme
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = magic.0202.a
+		scope:learn_spell_scheme = { end_scheme = yes }
+	}
+	
+	option = {
+		name = magic.0202.b
+		
+		remove_short_term_gold = minor_gold_value
+		
+		duel = {
+			skill = intrigue
+			target = scope:recipient
+			
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				modifier = {
+					has_perk = arcana_erudition_perk5_tree3
+					factor = 1.18
+				}
+				show_as_tooltip = {
+					scope:actor = {
+						start_scheme = {
+							type = learn_magic_spell_scheme
+							target_character = scope:recipient
+						}
+						random_scheme = {
+							limit = {
+								scheme_type = learn_magic_spell_scheme
+								scheme_target_character = scope:recipient
+							}
+							set_variable = {
+								name = spell_to_learn_from_character
+								value = scope:actor.var:spell_to_learn_from_character
+							}
+						}
+					}
+				}
+			}
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				add_prestige = medium_prestige_loss
+				scope:learn_spell_scheme = { end_scheme = yes }
+			}
+		}
+	}
+}
+
+magic.0210 = { # Recipient accepts learning a spell from you
+	type = character_event
+	content_source = dlc_gh
+	title = magic.0201.t
+	desc = magic.0201.desc
+	theme = learning
+	left_portrait = root
+	right_portrait = scope:recipient
+	
+	option = {
+		name = magic.0201.a
+		
+		scope:recipient = {
+			if = { # Primarily for AI characters.
+				limit = {
+					NOT = { exists = var:spell_to_learn_from_character}
+				}
+				scope:actor = {
+					random_in_list = {
+						variable = known_spell_list
+						limit = {
+							NOT = { magic_spell_is_known_by_trigger = { MAGI = scope:recipient SPELL = prev } }
+						}
+						save_scope_as = magic_spell_taught
+					}
+				}
+				set_variable = {
+					name = spell_to_learn_from_character
+					value = scope:magic_spell_taught
+				}
+			}
+		}
+		scope:actor = {
+			start_scheme = {
+				type = teach_magic_spell_scheme
+				target_character = scope:recipient
+			}
+			random_scheme = {
+				limit = {
+					scheme_type = teach_magic_spell_scheme
+					scheme_target_character = scope:recipient
+				}
+				set_variable = {
+					name = spell_to_learn_from_character
+					value = scope:recipient.var:spell_to_learn_from_character
+				}
+			}
+		}
+	}
+}
+
+##################################################
+# Poison Spell
+# by Hapchazzard
+# 1001 - 1010
+##################################################
+
+# Hit by a poison spell
+#magic.1001 = {
+#	title = magic.1001.t
+#	desc = magic.1001.desc
+#	theme = murder_scheme
+#	override_background = {
+#		reference = magic_ritual
+#	}
+#	left_portrait = {
+#		character = root
+#		animation = worry
+#	}
+#	right_portrait = {
+#		character = scope:caster
+#		animation = personality_dishonorable
+#	}
+#	
+#	option = {
+#		name = magic.1001.a
+#	}
+#}
+
+## Hit by a poison spell (backfire)
+#magic.1002 = {
+#	title = magic.1002.t
+#	desc = magic.1002.desc
+#	theme = murder_scheme
+#	override_background = {
+#		reference = magic_ritual
+#	}
+#	left_portrait = {
+#		character = root
+#		animation = fear
+#	}
+#	
+#	option = {
+#		name = magic.1002.a
+#	}
+#}
+
+##################################################
+# Fire Magick
+# by Hapchazzard
+# 1011 - 1015
+##################################################
+#magic.1012 = {
+#	title = magic.1012.t
+#	desc = magic.1012.desc
+#	theme = murder_scheme
+#	override_background = {
+#		reference = magic_ritual
+#	}
+#	left_portrait = {
+#		character = root
+#		animation = fear
+#	}
+#	
+#	
+#	option = {
+#		name = magic.1012.a
+#	}
+#}
+
+##################################################
+# Petrify
+# by Bommelom
+# 1016 - 1020
+##################################################
+#magic.1016 = {
+#	title = magic.1016.t
+#	desc = magic.1016.desc
+#	theme = murder_scheme
+#	override_background = {
+#		reference = magic_ritual
+#	}
+#	left_portrait = {
+#		character = root
+#		animation = worry
+#	}
+#	
+#	right_portrait = {
+#		character = scope:caster
+#		animation = personality_dishonorable
+#	}
+#	
+#	option = {
+#		name = magic.1016.a
+#	}
+#}
+
+#magic.1017 = {
+#	title = magic.1017.t
+#	desc = magic.1017.desc
+#	theme = murder_scheme
+#	override_background = {
+#		reference = magic_ritual
+#	}
+#	left_portrait = {
+#		character = root
+#		animation = fear
+#	}
+#	
+#	option = {
+#		name = magic.1017.a
+#	}
+#}
+
+##################################################
+# Crush Armor
+# by Bommelom
+# 1021 - 1025
+##################################################
+#magic.1021 = {
+#	title = magic.1021.t
+#	desc = magic.1021.desc
+#	theme = murder_scheme
+#	override_background = {
+#		reference = magic_ritual
+#	}
+#	left_portrait = {
+#		character = root
+#		animation = worry
+#	}
+#	
+#	right_portrait = {
+#		character = scope:caster
+#		animation = personality_dishonorable
+#	}
+#	
+#	option = {
+#		name = magic.1021.a
+#	}
+#}
+#
+#magic.1022 = {
+#	title = magic.1022.t
+#	desc = magic.1022.desc
+#	theme = murder_scheme
+#	override_background = {
+#		reference = magic_ritual
+#	}
+#	left_portrait = {
+#		character = root
+#		animation = fear
+#	}
+#	
+#	option = {
+#		name = magic.1022.a
+#	}
+#}
+
+##################################################
+# Pull Meteor
+# by Bommelom
+# 1026 - 1040
+##################################################
+#magic.1026 = {
+#	title = magic.1026.t
+#	desc = magic.1026.desc
+#	theme = murder_scheme
+#	override_background = {
+#		reference = magic_ritual
+#	}
+#	left_portrait = {
+#		character = root
+#		animation = worry
+#	}
+#	
+#	right_portrait = {
+#		character = scope:caster
+#		animation = personality_dishonorable
+#	}
+#	
+#	option = {
+#		name = magic.1021.a
+#	}
+#}
+#
+#magic.1027 = {
+#	title = magic.1027.t
+#	desc = magic.1027.desc
+#	theme = murder_scheme
+#	override_background = {
+#		reference = magic_ritual
+#	}
+#	left_portrait = {
+#		character = root
+#		animation = fear
+#	}
+#	
+#	option = {
+#		name = magic.1027.a
+#	}
+#}
+
+# level 2 meteor: randomly injure characters there - less dangerous than Annihilation, since it hits a smaller area
+#magic.1028 = {	
+#	title = magic.1028.t
+#	desc = magic.1028.desc
+#	theme = intrigue
+#
+#	immediate = {
+#		magic_calculate_multi_resistable_at_county_effect = {
+#			COUNTY = scope:affected_county
+#			SUCCESS50_VALUE = 3
+#			RESIST_VALUE = magic_resist_prowess 
+#		}
+#	}
+#
+#	option = {
+#		name = magic.1028.a
+#		magic_apply_multi_resistable_hurt_effect = {
+#			CASTER = scope:caster DEATH_REASON = death_magic_meteor
+#		}
+#	}
+#}
+
+# level 3 meteor: turn the county to wasteland and randomly injure characters there - less dangerous than Annihilation, since it hits a smaller area
+#magic.1029 = {	
+#	title = magic.1029.t
+#	desc = magic.1029.desc
+#	theme = intrigue
+#	
+#	immediate = {
+#		magic_calculate_multi_resistable_at_county_effect = {
+#			COUNTY = scope:affected_county
+#			SUCCESS50_VALUE = 12
+#			RESIST_VALUE = magic_resist_prowess 
+#		}
+#		scope:affected_county = {
+#			if = {
+#				limit = {
+#					development_level <= 0
+#				}
+#				hidden_effect = {
+#					smash_random_holding_effect = yes
+#				}
+#			}
+#		}
+#	}
+#
+#	option = {
+#		name = magic.1029.a
+#	
+#		# if we've reduced development to 0, then smash all buildings in a random county
+#		scope:affected_county = {
+#			if = {
+#				limit = {
+#					development_level <= 0
+#				}
+#				show_smash_random_holding_effect = yes
+#			}
+#		}
+#		magic_apply_multi_resistable_hurt_effect = {
+#			CASTER = scope:caster DEATH_REASON = death_magic_meteor
+#		}
+#	}
+#}
+
+##################################################
+# Earthquake
+# by Bommelom
+# 1041 - 1045
+##################################################
+#magic.1041 = {
+#	title = magic.1041.t
+#	desc = magic.1041.desc
+#	theme = murder_scheme
+#	override_background = {
+#		reference = magic_ritual
+#	}
+#	left_portrait = {
+#		character = root
+#		animation = worry
+#	}
+#	
+#	right_portrait = {
+#		character = scope:caster
+#		animation = personality_dishonorable
+#	}
+#	
+#	option = {
+#		name = magic.1021.a
+#	}
+#}
+#
+#magic.1042 = {
+#	title = magic.1042.t
+#	desc = magic.1042.desc
+#	theme = murder_scheme
+#	override_background = {
+#		reference = magic_ritual
+#	}
+#	left_portrait = {
+#		character = root
+#		animation = fear
+#	}
+#	
+#	option = {
+#		name = magic.1042.a
+#	}
+#}
+#
+## level 2 earthquake: randomly injure characters there - MUCH less dangerous than meteor or Annihilation
+#magic.1043 = {	
+#	title = magic.1043.t
+#	desc = magic.1043.desc
+#	theme = intrigue
+#
+#	immediate = {
+#		magic_calculate_multi_resistable_at_county_effect = {
+#			COUNTY = scope:affected_county
+#			SUCCESS50_VALUE = 1
+#			RESIST_VALUE = magic_resist_prowess 
+#		}
+#	}
+#
+#	option = {
+#		name = magic.1043.a
+#		magic_apply_multi_resistable_hurt_effect = {
+#			CASTER = scope:caster DEATH_REASON = death_magic_meteor
+#		}
+#	}
+#}
+#
+## level 3 meteor: smash all county buildings and randomly injure characters there - far less dangerous than Annihilation and meteor
+#magic.1044 = {
+#	title = magic.1044.t
+#	desc = magic.1044.desc
+#	theme = intrigue
+#	
+#	immediate = {
+#		magic_calculate_multi_resistable_at_county_effect = {
+#			COUNTY = scope:affected_county
+#			SUCCESS50_VALUE = 3
+#			RESIST_VALUE = magic_resist_prowess 
+#		}
+#		scope:affected_county = {
+#			if = {
+#				limit = {
+#					development_level <= 0
+#				}
+#				hidden_effect = {
+#					smash_all_holdings_effect = yes
+#				}
+#			}
+#		}
+#		every_in_list = {
+#			list = earthquake_neighbours
+#			save_scope_as = earthquake_neighbour
+#			magic_calculate_multi_resistable_at_county_effect = {
+#				COUNTY = scope:earthquake_neighbour
+#				SUCCESS50_VALUE = 1
+#				RESIST_VALUE = magic_resist_prowess 
+#			}
+#			if = {
+#				limit = {
+#					development_level <= 0
+#				}
+#				hidden_effect = {
+#					smash_all_holdings_effect = yes
+#				}
+#			}
+#		}
+#	}
+#
+#	option = {
+#		name = magic.1044.a
+#	
+#		# if we've reduced development to 0, then smash all buildings in a random county
+#		scope:affected_county = {
+#			if = {
+#				limit = {
+#					development_level <= 0
+#				}
+#				show_smash_all_holdings_effect = yes
+#			}
+#		}
+#		every_in_list = {
+#			list = earthquake_neighbours
+#			save_scope_as = affected_county
+#			if = {
+#				limit = {
+#					development_level <= 0
+#				}
+#				show_smash_all_holdings_effect = yes
+#			}
+#		}
+#		magic_apply_multi_resistable_hurt_effect = {
+#			CASTER = scope:caster DEATH_REASON = death_magic_earthquake
+#		}
+#	}
+#}
+
+##################################################
+# Earth Magic Generic Backfire
+# by Bommelom
+# 1046 - 1050
+##################################################
+#magic.1046 = {
+#	title = magic.1046.t
+#	desc = magic.1046.desc
+#	theme = murder_scheme
+#	override_background = {
+#		reference = magic_ritual
+#	}
+#	left_portrait = {
+#		character = root
+#		animation = fear
+#	}
+#	
+#	
+#	option = {
+#		name = magic.1046.a
+#	}
+#}
+
+##################################################
+# Plant Growth
+# by Bommelom
+# 1051 - 1060
+##################################################
+
+#magic.1052 = {
+#	title = magic.1052.t
+#	desc = magic.1052.desc
+#	theme = murder_scheme
+#	override_background = {
+#		reference = magic_ritual
+#	}
+#	left_portrait = {
+#		character = root
+#		animation = fear
+#	}
+#	
+#	
+#	option = {
+#		name = magic.1052.a
+#	}
+#}
+
+##################################################
+# Magical Trait Events
+# by Hapchazzard
+# 1101 - 1110
+##################################################
+magic.1101 = {
+	title = magic.1101.t
+	desc = magic.1101.desc
+	theme = physical_health
+	override_background = {
+		reference = magic_ritual
+	}
+	left_portrait = {
+		character = root
+		animation = boredom
+	}
+
+	immediate = {
+		gh_achiev_magicman_check = yes
+	}
+	
+	option = {
+		name = magic.1101.a
+		trigger = {
+			NOR = {
+				has_trait = lazy
+				has_trait = diligent
+			}
+		}
+		add_trait = gh_exhausted
+	}
+	
+	option = {
+		name = magic.1101.a.diligent
+		trait = diligent
+		trigger = {
+			has_trait = diligent
+		}
+		stress_impact = {
+			diligent = medium_stress_gain
+		}
+		add_trait = gh_exhausted
+	}
+	
+	option = {
+		name = magic.1101.a.lazy
+		trait = lazy
+		trigger = {
+			has_trait = lazy
+		}
+		stress_impact = {
+			lazy = medium_stress_loss
+		}
+		add_trait = gh_exhausted
+	}
+}
+
+# Gain Stimulated
+magic.1102 = {
+	title = magic.1102.t
+	desc = magic.1102.desc
+	theme = physical_health
+	override_background = {
+		reference = magic_ritual
+	}
+	left_portrait = {
+		character = root
+		animation = paranoia
+	}
+
+	immediate = {
+		gh_achiev_magicman_check = yes
+	}
+	
+	option = {
+		name = magic.1102.a
+		trigger = {
+			NOR = {
+				has_trait = lazy
+				has_trait = diligent
+			}
+		}
+		add_trait = gh_stimulated
+	}
+	
+	option = {
+		name = magic.1102.a.diligent
+		trait = diligent
+		trigger = {
+			has_trait = diligent
+		}
+		stress_impact = {
+			diligent = medium_stress_loss
+		}
+		add_stewardship_skill = 1
+		add_trait = gh_stimulated
+	}
+	
+	option = {
+		name = magic.1102.a.lazy
+		trait = lazy
+		trigger = {
+			has_trait = lazy
+		}
+		stress_impact = {
+			lazy = medium_stress_gain
+		}
+		add_trait = gh_stimulated
+	}
+}
+
+# Gain Racked by Voices
+magic.1103 = {
+	title = magic.1103.t
+	desc = magic.1103.desc
+	theme = physical_health
+	override_background = {
+		reference = magic_ritual
+	}
+	left_portrait = {
+		character = root
+		animation = paranoia
+	}
+
+	immediate = {
+		gh_achiev_magicman_check = yes
+	}
+	
+	option = {
+		name = magic.1103.a
+		trigger = {
+			NOR = {
+				has_trait = lunatic_1
+				has_trait = brave
+				has_trait = craven
+				has_trait = paranoid
+			}
+		}
+		add_trait = gh_racked_by_voices
+		add_stress = medium_stress_gain
+	}
+	
+	option = {
+		name = magic.1103.a.lunatic
+		trait = lunatic_1
+		trigger = {
+			has_trait = lunatic_1
+		}
+		stress_impact = {
+			lunatic_1 = medium_stress_loss
+		}
+		add_trait = gh_racked_by_voices
+	}
+	
+	option = {
+		name = magic.1103.a.craven
+		trait = craven
+		trait = paranoid
+		trigger = {
+			OR = {
+				has_trait = craven
+				has_trait = paranoid
+			}
+			NOR = { 
+				has_trait = brave
+				has_trait = lunatic_1
+			}
+		}
+		stress_impact = {
+			craven = major_stress_gain
+			paranoid = major_stress_gain
+		}
+		add_trait = gh_racked_by_voices
+	}
+	
+	option = {
+		name = magic.1103.a.brave
+		trait = brave
+		trigger = {
+			has_trait = brave
+			NOT = { has_trait = lunatic_1 }
+		}
+		add_trait = gh_racked_by_voices
+	}
+}
+
+# Gain Beset by Visions
+magic.1105 = {
+	title = magic.1105.t
+	desc = magic.1105.desc
+	theme = physical_health
+	override_background = {
+		reference = magic_ritual
+	}
+	left_portrait = {
+		character = root
+		animation = paranoia
+	}
+
+	immediate = {
+		gh_achiev_magicman_check = yes
+	}
+	
+	option = {
+		name = magic.1105.a
+		trigger = {
+			NOR = {
+				has_trait = lunatic_1
+				has_trait = brave
+				has_trait = craven
+				has_trait = paranoid
+			}
+		}
+		add_trait = gh_beset_by_visions
+		add_stress = medium_stress_gain
+	}
+	
+	option = {
+		name = magic.1105.a.lunatic
+		trait = lunatic_1
+		trigger = {
+			has_trait = lunatic_1
+		}
+		stress_impact = {
+			lunatic_1 = medium_stress_loss
+		}
+		add_trait = gh_beset_by_visions
+	}
+	
+	option = {
+		name = magic.1105.a.craven
+		trait = craven
+		trait = paranoid
+		trigger = {
+			OR = {
+				has_trait = craven
+				has_trait = paranoid
+			}
+			NOR = { 
+				has_trait = brave
+				has_trait = lunatic_1
+			}
+		}
+		stress_impact = {
+			craven = major_stress_gain
+			paranoid = major_stress_gain
+		}
+		add_trait = gh_beset_by_visions
+	}
+	
+	option = {
+		name = magic.1105.a.brave
+		trait = brave
+		trigger = {
+			has_trait = brave
+			NOT = { has_trait = lunatic_1 }
+		}
+		add_trait = gh_beset_by_visions
+	}
+}
+
+# Gain Glowing Red Eyes
+magic.1106 = {
+	title = magic.1106.t
+	desc = magic.1106.desc
+	theme = physical_health
+	override_background = {
+		reference = magic_ritual
+	}
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	immediate = {
+		gh_achiev_magicman_check = yes
+	}
+	
+	option = {
+		name = magic.1106.a
+		add_glowing_mutation_trait_effect = { MUTATION = eyes }
+	}
+}
+
+# Gain Excessively Pale
+magic.1107 = {
+	title = magic.1107.t
+	desc = magic.1107.desc
+	theme = physical_health
+	override_background = {
+		reference = magic_ritual
+	}
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	immediate = {
+		gh_achiev_magicman_check = yes
+	}
+	
+	option = {
+		name = magic.1107.a
+		add_trait = gh_excessively_pale
+	}
+}
+
+# Gain Glowing Veins
+magic.1108 = {
+	title = magic.1108.t
+	desc = magic.1108.desc
+	theme = physical_health
+	override_background = {
+		reference = magic_ritual
+	}
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	immediate = {
+		gh_achiev_magicman_check = yes
+	}
+	
+	option = {
+		name = magic.1108.a
+		add_glowing_mutation_trait_effect = { MUTATION = veins }
+	}
+}
+
+# Gain Glowing Green Eyes
+magic.1109 = {
+	title = magic.1109.t
+	desc = magic.1109.desc
+	theme = physical_health
+	override_background = {
+		reference = magic_ritual
+	}
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	immediate = {
+		gh_achiev_magicman_check = yes
+	}
+	
+	option = {
+		name = magic.1109.a
+		add_glowing_mutation_trait_effect = { MUTATION = eyes }
+	}
+}
+
+# Gain Ethiadd's Ash
+magic.1110 = {
+	title = magic.1110.t
+	desc = magic.1110.desc
+	theme = physical_health
+	override_background = {
+		reference = magic_ritual
+	}
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	immediate = {
+		gh_achiev_magicman_check = yes
+	}
+	
+	option = {
+		name = magic.1110.a
+		add_trait = gh_necronic_skin
+	}
+}
+
+# Gain Aervalrian Curse
+magic.1111 = {
+	title = magic.1111.t
+	desc = magic.1111.desc
+	theme = physical_health
+	override_background = {
+		reference = magic_ritual
+	}
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	immediate = {
+		gh_achiev_magicman_check = yes
+	}
+	
+	option = {
+		name = magic.1111.a
+		add_trait = gh_aervalrian_curse
+	}
+}
+
+##################################################
+# Potent Magi Events
+# by Hapchazzard
+# 1201 - 1210
+##################################################
+magic.1201 = {
+	scope = none
+	hidden = yes
+	immediate = {
+		random_list = {
+			90 = {}	# Should only happen once every 10 years
+			10 = {
+				random_living_character = {
+					limit = {
+						is_pregnant = yes
+						OR = {
+							highest_held_title_tier >= tier_county
+							trigger_if = {
+								limit = { exists = pregnancy_real_father }
+								pregnancy_real_father = {
+									highest_held_title_tier >= tier_county
+								}
+							}
+							any_close_family_member = {
+								highest_held_title_tier >= tier_county
+							}
+						}
+					}
+					weight = {
+						base = 1
+						# Rapidly becomes more likely to high level Magi parents
+						modifier = {
+							has_trait = magic_good_1
+							factor = 10
+						}
+						modifier = {
+							has_trait = magic_good_2
+							factor = 20
+						}
+						modifier = {
+							has_trait = magic_good_3
+							factor = 30
+						}
+						modifier = {
+							has_trait = magic_good_4
+							factor = 40
+						}
+						modifier = {
+							has_trait = magic_good_5
+							factor = 50
+						}
+						modifier = {
+							has_trait = magic_good_6
+							factor = 60
+						}
+						modifier = {
+							has_trait = magic_good_7
+							factor = 60
+						}
+						modifier = {
+							has_trait = magic_good_8
+							factor = 60
+						}
+						modifier = {
+							has_trait = magic_good_9
+							factor = 60
+						}
+						modifier = {
+							has_trait = magic_good_10
+							factor = 100
+						}
+						modifier = {
+							has_trait = magic_good_11
+							factor = 110
+						}
+						modifier = {
+							has_trait = magic_good_12
+							factor = 120
+						}
+						modifier = {
+							has_trait = magic_good_13
+							factor = 130
+						}
+						modifier = {
+							has_trait = magic_good_14
+							factor = 140
+						}
+						modifier = {
+							has_trait = magic_good_15
+							factor = 150
+						}
+						modifier = {
+							has_trait = magic_good_16
+							factor = 160
+						}
+						modifier = {
+							has_trait = magic_good_17
+							factor = 170
+						}
+						modifier = {
+							has_trait = magic_good_18
+							factor = 180
+						}
+						modifier = {
+							has_trait = magic_good_19
+							factor = 190
+						}
+						modifier = {
+							has_trait = magic_good_20
+							factor = 200
+						}
+						
+						modifier = {
+							pregnancy_real_father = { has_trait = magic_good_1 }
+							factor = 10
+						}
+						modifier = {
+							pregnancy_real_father = { has_trait = magic_good_2 }
+							factor = 20
+						}
+						modifier = {
+							pregnancy_real_father = { has_trait = magic_good_3 }
+							factor = 30
+						}
+						modifier = {
+							pregnancy_real_father = { has_trait = magic_good_4 }
+							factor = 40
+						}
+						modifier = {
+							pregnancy_real_father = { has_trait = magic_good_5 }
+							factor = 50
+						}
+						modifier = {
+							pregnancy_real_father = { has_trait = magic_good_6 }
+							factor = 60
+						}
+						modifier = {
+							pregnancy_real_father = { has_trait = magic_good_7 }
+							factor = 60
+						}
+						modifier = {
+							pregnancy_real_father = { has_trait = magic_good_8 }
+							factor = 60
+						}
+						modifier = {
+							pregnancy_real_father = { has_trait = magic_good_9 }
+							factor = 60
+						}
+						modifier = {
+							pregnancy_real_father = { has_trait = magic_good_10 }
+							factor = 100
+						}
+						modifier = {
+							pregnancy_real_father = { has_trait = magic_good_11 }
+							factor = 110
+						}
+						modifier = {
+							pregnancy_real_father = { has_trait = magic_good_12 }
+							factor = 120
+						}
+						modifier = {
+							pregnancy_real_father = { has_trait = magic_good_13 }
+							factor = 130
+						}
+						modifier = {
+							pregnancy_real_father = { has_trait = magic_good_14 }
+							factor = 140
+						}
+						modifier = {
+							pregnancy_real_father = { has_trait = magic_good_15 }
+							factor = 150
+						}
+						modifier = {
+							pregnancy_real_father = { has_trait = magic_good_16 }
+							factor = 160
+						}
+						modifier = {
+							pregnancy_real_father = { has_trait = magic_good_17 }
+							factor = 170
+						}
+						modifier = {
+							pregnancy_real_father = { has_trait = magic_good_18 }
+							factor = 180
+						}
+						modifier = {
+							pregnancy_real_father = { has_trait = magic_good_19 }
+							factor = 190
+						}
+						modifier = {
+							pregnancy_real_father = { has_trait = magic_good_20 }
+							factor = 200
+						}
+					}
+					set_variable = {
+						name = carrying_powerful_magi_child
+						months = 10
+					}
+				}
+			}
+		}
+	}
+}
+
+magic.1202 = {
+	type = character_event
+	content_source = dlc_gh
+	hidden = yes
+	
+	trigger = {
+		has_character_flag = potent_magi
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					blood_aspect_skill_trigger = { VALUE = 5 }
+					stone_aspect_skill_trigger = { VALUE = 5 }
+					ethereal_aspect_skill_trigger = { VALUE = 5 }
+				}
+			}
+			give_mixed_magi_riftsight_effect = yes
+			add_to_magi_list = yes
+		}
+		set_global_variable = {
+			name = recent_potent_magi
+			value = this
+			months = 3
+		}
+	}
+}
+
+##################################################
+# Create Golem Events
+# by Bommelom
+# 2150 - 2160
+##################################################
+#magic.2150 = {
+#	hidden = yes
+#	
+#	immediate = {
+#		if = {
+#			limit = { exists = capital_province }
+#			capital_province = { save_temporary_scope_as = location }
+#			if = {
+#				limit ={
+#					root.var:magic_lvl = 0
+#				}
+#				spawn_army = {
+#					name = "GOLEM_HOST"
+#					location = scope:location
+#					men_at_arms = {
+#						type = golems
+#						stacks = 1
+#					}
+#					inheritable = no
+#					uses_supply = no
+#				}
+#			}
+#			else_if = {
+#				limit ={
+#					root.var:magic_lvl = 1
+#				}
+#				spawn_army = {
+#					name = "GOLEM_HOST"
+#					location = scope:location
+#					men_at_arms = {
+#						type = golems
+#						stacks = 5
+#					}
+#					inheritable = no
+#					uses_supply = no
+#				}
+#			}
+#			else_if = {
+#				limit ={
+#					root.var:magic_lvl = 2
+#				}
+#				spawn_army = {
+#					name = "GOLEM_HOST"
+#					location = scope:location
+#					men_at_arms = {
+#						type = golems
+#						stacks = 10
+#					}
+#					inheritable = no
+#					uses_supply = no
+#				}
+#			}
+#			else_if = {
+#				limit ={
+#					root.var:magic_lvl = 3
+#				}
+#				spawn_army = {
+#					name = "GOLEM_HOST"
+#					location = scope:location
+#					men_at_arms = {
+#						type = golems
+#						stacks = 25
+#					}
+#					inheritable = no
+#					uses_supply = no
+#				}
+#			}
+#		}
+#	}
+#}
+
+##################################################
+# Craft Greater Golem Events
+# by Bommelom
+# 2200 - 2210
+##################################################
+#magic.2200 = {
+#	title = magic.2200.t
+#	type = character_event
+#	content_source = dlc_gh
+#	desc = magic.2200.d
+#	theme = skull
+#
+#	left_portrait = {
+#		character = root
+#	}
+#		
+#	option = { #Combat
+#		name = magic.2200.a
+#		if = {
+#			limit ={
+#				scope:caster.var:magic_lvl = 0
+#			}
+#			#add_artifact = {ARTIFACT = artifact_mountgreater_battle_golem_1}
+#			add_prestige = minor_prestige_gain
+#			}
+#		
+#		else_if = {
+#			limit ={
+#				scope:caster.var:magic_lvl = 1
+#			}
+#			#add_artifact = {ARTIFACT = artifact_mountgreater_battle_golem_2}
+#			add_prestige = minor_prestige_gain
+#			}
+#		else_if = {
+#			limit ={
+#				scope:caster.var:magic_lvl = 2
+#			}
+#			#add_artifact = {ARTIFACT = artifact_mountgreater_battle_golem_3}
+#			add_prestige = minor_prestige_gain
+#			}
+#		else_if = {
+#			limit ={
+#				scope:caster.var:magic_lvl = 3
+#			}
+#			#add_artifact = {ARTIFACT = artifact_mountgreater_battle_golem_4}
+#			add_prestige = minor_prestige_gain
+#		}
+#
+#		ai_chance = {
+#			base = 100
+#		}
+#	}
+#
+#	option = { #Siege
+#		name = magic.2200.b
+#		if = {
+#			limit ={
+#				scope:caster.var:magic_lvl = 0
+#			}
+#			#add_artifact = {ARTIFACT = artifact_mountgreater_siege_golem_1}
+#			add_prestige = minor_prestige_gain
+#			}
+#		
+#		else_if = {
+#			limit ={
+#				scope:caster.var:magic_lvl = 1
+#			}
+#			#add_artifact = {ARTIFACT = artifact_mountgreater_siege_golem_2}
+#			add_prestige = minor_prestige_gain
+#			}
+#		else_if = {
+#			limit ={
+#				scope:caster.var:magic_lvl = 2
+#			}
+#			#add_artifact = {ARTIFACT = artifact_mountgreater_siege_golem_3}
+#			add_prestige = minor_prestige_gain
+#			}
+#		else_if = {
+#			limit ={
+#				scope:caster.var:magic_lvl = 3
+#			}
+#			#add_artifact = {ARTIFACT = artifact_mountgreater_siege_golem_4}
+#		add_prestige = minor_prestige_gain}
+#
+#		ai_chance = {
+#			base = 100
+#		}
+#	}
+#	
+#	option = { #Construction
+#		name = magic.2200.c
+#		if = {
+#			limit ={
+#				scope:caster.var:magic_lvl = 0
+#			}
+#			#add_artifact = {ARTIFACT = artifact_mountgreater_building_golem_1}
+#			add_prestige = minor_prestige_gain
+#			}
+#		
+#		else_if = {
+#			limit ={
+#				scope:caster.var:magic_lvl = 1
+#			}
+#			#add_artifact = {ARTIFACT = artifact_mountgreater_building_golem_2}
+#			add_prestige = minor_prestige_gain
+#			}
+#		else_if = {
+#			limit ={
+#				scope:caster.var:magic_lvl = 2
+#			}
+#			#add_artifact = {ARTIFACT = artifact_mountgreater_building_golem_3}
+#			add_prestige = minor_prestige_gain
+#			}
+#		else_if = {
+#			limit ={
+#				scope:caster.var:magic_lvl = 3
+#			}
+#			#add_artifact = {ARTIFACT = artifact_mountgreater_building_golem_4}
+#		add_prestige = minor_prestige_gain
+#		}
+#
+#		ai_chance = {
+#			base = 1
+#		}
+#	}	
+#}
+
+##################################################
+# Lunar Divination Events
+# by Bommelom
+# 2250 - 2260
+##################################################
+#magic.2250 = {
+#	title = magic.2250.t
+#	type = character_event
+#	desc = magic.2250.desc
+#	theme = learning
+#	
+#	left_portrait = {
+#		character = root
+#	}
+#	
+#	immediate = {
+#		read_moon_random_effect = yes
+#		read_moon_random_effect = yes
+#		read_moon_random_effect = yes
+#	}
+#		
+#	option = { # War divination
+#		name = magic.2250.a
+#		trigger = {
+#			has_character_flag = moon_read_war
+#			}
+#			set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = moon_read_battle_mod TYPE = character LEVEL = 2 YEARS = 5 }
+#		 
+#		ai_chance = {
+#			base = 50
+#			modifier = {
+#				add = 200
+#				is_at_war = yes
+#			}
+#		}
+#	}
+#	option = { # Wealth	divination
+#		name = magic.2250.b
+#		trigger = {
+#			has_character_flag = moon_read_wealth
+#			}
+#		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = moon_read_wealth_mod TYPE = character LEVEL = 2 YEARS = 5 }
+#		 
+#		ai_chance = {
+#			base = 100
+#		}
+#	}
+#	option = { # Friendship	divination
+#		name = magic.2250.c
+#		trigger = {
+#			has_character_flag = moon_read_friendship
+#			}
+#		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = moon_read_friendship_mod TYPE = character LEVEL = 2 YEARS = 5 }
+#		 
+#		ai_chance = {
+#			base = 100
+#		}
+#	}
+#	option = { # Love divination
+#		name = magic.2250.d
+#		trigger = {
+#			has_character_flag = moon_read_love
+#			}
+#		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = moon_read_love_mod TYPE = character LEVEL = 2 YEARS = 5 }
+#		ai_chance = {
+#			base = 100
+#		}
+#	}
+#	option = { # Safety divination
+#		name = magic.2250.e
+#		trigger = {
+#			has_character_flag = moon_read_safety
+#			}
+#		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = moon_read_safety_mod TYPE = character LEVEL = 2 YEARS = 5 }
+#		 
+#		ai_chance = {
+#			base = 100
+#		}
+#	}
+#	option = { # Killing divination
+#		name = magic.2250.f
+#		trigger = {
+#			has_character_flag = moon_read_kill
+#			}
+#		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = moon_read_kill_mod TYPE = character LEVEL = 2 YEARS = 5 }
+#		 
+#		ai_chance = {
+#			base = 100
+#		}
+#	}
+#	option = { # Learning divination
+#		name = magic.2250.g
+#		trigger = {
+#			has_character_flag = moon_read_learning
+#			}
+#		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = moon_read_learn_mod TYPE = character LEVEL = 2 YEARS = 5 }
+#		 
+#		ai_chance = {
+#			base = 100
+#		}
+#	}
+#	option = { # Rulership divination
+#		name = magic.2250.h
+#		trigger = {
+#			has_character_flag = moon_read_rulership
+#			}	
+#		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = moon_read_rulership_mod TYPE = character LEVEL = 2 YEARS = 5 }
+#		 
+#		ai_chance = {
+#			base = 100
+#		}
+#	}
+#	option = { # I don't WANT to hear about the future
+#		name = magic.2250.i	
+#		ai_chance = {
+#			base = 0
+#		}
+#	}
+#}
+#
+#magic.2251 = {
+	#title = magic.2251.t
+	#type = character_event
+	#desc = magic.2251.desc
+	#theme = learning
+	#left_portrait = {
+		#character = root
+	#}
+#	
+	#option = {
+		#name = magic.2251.a
+		#custom_tooltip = moon_read_random_backfire.tt
+#
+	#}
+#}
+#
+###################################################
+## Aervalr's Guidance Events
+## by Bommelom
+## 2300 - 2310
+###################################################
+#
+#magic.2300 = {
+#	title = magic.2300.t
+#	type = character_event
+#	desc = magic.2300.desc
+#	theme = learning
+#	
+#	left_portrait = {
+#		character = root
+#	}
+#		
+#	option = { # War Guidance
+#		name = magic.2300.a
+#		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = moon_guidance_war_mod TYPE = character LEVEL = 2 YEARS = 1 }
+#		 
+#		ai_chance = {
+#			base = 100
+#			modifier = {
+#				add = 400
+#				is_at_war = yes
+#			}
+#		}
+#	}
+#	option = { # Wealth	Guidance
+#		name = magic.2300.b
+#		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = moon_guidance_wealth_mod TYPE = character LEVEL = 2 YEARS = 1 }
+#		 
+#		ai_chance = {
+#			base = 200
+#		}
+#	}
+#	option = { # Scheme Guidance
+#		name = magic.2300.c
+#		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = moon_guidance_scheme_mod TYPE = character LEVEL = 2 YEARS = 1 }
+#		 
+#		ai_chance = {
+#			base = 100
+#		}
+#	}
+#	option = { # Scheme Discovery Guidance
+#		name = magic.2300.d
+#		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = moon_guidance_scheme_discovery_mod TYPE = character LEVEL = 2 YEARS = 1 }
+#
+#		ai_chance = {
+#			base = 100
+#		}
+#	}
+#	option = { # Learning Guidance
+#		name = magic.2300.e
+#		set_stacking_modifier_to_level_with_overflow_effect = { MODIFIER = moon_guidance_learn_mod TYPE = character LEVEL = 2 YEARS = 1 }
+#		 
+#		ai_chance = {
+#			base = 200
+#		}
+#	}
+#}
+#
+#magic.2301 = {
+#	title = magic.2301.t
+#	type = character_event
+#	desc = magic.2301.desc
+#	theme = learning
+#	left_portrait = {
+#		character = root
+#	}
+#	
+#	option = {
+#		name = magic.2301.a
+#		moon_guidance_backfire_effect_from_event = yes
+#		custom_tooltip = moon_read_random_backfire.tt
+#	}
+#}
+
+
+##################################################
+# Annihilation Events
+# by d&f
+# 2350 - 2399
+##################################################
+
+# level 2 annihilation: randomly injure characters there
+#magic.2350 = {	
+#	title = magic.2350.t
+#	desc = magic.2350.desc
+#	theme = war
+#	
+#	left_portrait = {
+#		character = root
+#		animation = personality_callous
+#	}
+#	
+#	right_portrait = {
+#		character = scope:affected_county.holder
+#		animation = fear
+#	}
+#
+#	immediate = {
+#		magic_calculate_multi_resistable_at_county_effect = {
+#			COUNTY = scope:affected_county
+#			SUCCESS50_VALUE = 5
+#			RESIST_VALUE = magic_resist_prowess 
+#		}
+#		scope:affected_county = {
+#			if = {
+#				limit = {
+#					development_level <= 0
+#				}
+#				spawn_ruin = { COUNTY = scope:affected_county }
+#			}
+#		}
+#	}
+#
+#	option = {
+#		name = magic.2350.a
+#		magic_apply_multi_resistable_hurt_effect = {
+#			CASTER = scope:caster DEATH_REASON = death_magic_fire
+#		}
+#		
+#	}
+#}
+#
+## level 3 annihilation: turn the county to wasteland and randomly injure characters there
+#magic.2351 = {
+#	title = magic.2351.t
+#	desc = magic.2351.desc
+#	theme = war
+#	
+#	left_portrait = {
+#		character = root
+#		animation = personality_callous
+#	}
+#	
+#	right_portrait = {
+#		character = scope:affected_county.holder
+#		animation = fear
+#	}
+#	
+#	immediate = {
+#		magic_calculate_multi_resistable_at_county_effect = {
+#			COUNTY = scope:affected_county
+#			SUCCESS50_VALUE = 20
+#			RESIST_VALUE = magic_resist_prowess 
+#		}
+#	}
+#
+#	option = {
+#		name = magic.2351.a
+#	
+#		# if we've reduced development to 0, then waste the county
+#		scope:affected_county = {
+#			if = {
+#				limit = {
+#					development_level <= 0
+#				}
+#				spawn_ruin = { COUNTY = scope:affected_county }
+#			}
+#		}
+#		magic_apply_multi_resistable_hurt_effect = {
+#			CASTER = scope:caster DEATH_REASON = death_magic_fire
+#		}
+#	}
+#}
+
+##################################################
+# Death-Related Utility Events
+# by d&f
+# 2400-2419
+##################################################
+
+# TODO: we can get rid of these when azure comes out and CTD in death effects
+# called from UI is fixed
+
+# scope:caster "secretly" kills root via targeted spell
+#magic.2400 = {
+#	hidden = yes
+#	type = character_event
+#	content_source = dlc_gh
+#	
+#	immediate = {
+#		magic_unknown_murder_effect = {
+#			REASON = death_magic_targeted_spell
+#			CASTER = scope:caster
+#			VICTIM = root
+#		}
+#	}
+#}
+
+# as above, but death reason is petrify
+#magic.2401 = {
+#	hidden = yes
+#	type = character_event
+#	content_source = dlc_gh
+#	
+#	immediate = {
+#		magic_unknown_murder_effect = {
+#			REASON = death_magic_petrify
+#			CASTER = scope:caster
+#			VICTIM = root
+#		}
+#	}
+#}
+#
+## as above, but death reason is crush armor
+#magic.2402 = {
+#	hidden = yes
+#	type = character_event
+#	content_source = dlc_gh
+#	
+#	immediate = {
+#		magic_unknown_murder_effect = {
+#			REASON = death_magic_crush_armor
+#			CASTER = scope:caster
+#			VICTIM = root
+#		}
+#	}
+#}
+
+##################################################
+# Peculiar Insights Perk Events
+# by d&f
+# 2420-2449
+##################################################
+
+magic.2420 = {
+	title = magic.2420.t
+	desc = magic.2420.desc
+	theme = intrigue
+
+	option = {
+		name = magic.2420.a
+		add_learning_skill = 1
+	}
+
+}
+
+
+
+##################################################
+# Magic Secret Events
+# by d&f
+# 2450-2499
+##################################################
+
+# These are copies of secrets.0115 and secrets.0117. Ideally magic-murder and
+# regular-murder behave the same in terms of their opinion modifiers; unfortunately,
+# we can't just reuse the same events because the secret_exposed_owner_effects_effect
+# has hard-coded secret types that it checks for.
+# TODO: get custom loc for these
+
+# I have been exposed as someone who cast harmful spells
+magic.2450 = {
+	type = character_event
+	content_source = dlc_gh
+	title = secrets.0001.t
+	desc = {
+		desc = secrets.0115.start.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:victim = { is_alive = yes } }
+				desc = secrets.0115.victim_alive.desc
+			}
+			desc = secrets.0115.victim_dead.desc
+		}
+	}
+	theme = secret
+	left_portrait = scope:secret_exposer
+	right_portrait = scope:victim
+	
+	immediate = {
+		magic_secret_exposed_owner_effects_effect = { SECRET = scope:secret POV = root }
+		secret_exposed_owner_opinion_effects_effect = yes
+		play_music_cue = "mx_cue_murder"
+	}
+
+	option = {
+		name = secrets.0115.a
+	}
+}	
+
+#I have been exposed as a (magical) murderer
+magic.2451 = {
+	type = character_event
+	content_source = dlc_gh
+	title = secrets.0001.t
+	desc = {
+		desc = secrets.0117.start.desc
+		first_valid = {
+			triggered_desc = { #Dynastic murder, dynastic head will be angry
+				trigger = {
+					murdering_character_is_kinslaying_in_my_or_same_dynasty_lieges_faith_trigger = { CHARACTER = scope:victim }
+					has_dynasty = yes
+					dynasty = {
+						NOT = { dynast = { this = root } }
+					}
+				}
+				desc = secrets.0117.kinslayer.desc
+			}
+			triggered_desc = { #Dynastic murder, dynasty will be angry
+				trigger = {
+					murdering_character_is_kinslaying_in_my_or_same_dynasty_lieges_faith_trigger = { CHARACTER = scope:victim }
+					has_dynasty = yes
+					dynasty = {
+						dynast = { this = root }
+					}
+				}
+				desc = secrets.0117.kinslayer_dynasty_head.desc
+			}
+			desc = secrets.0117.regular.desc
+		}
+	}
+
+	theme = secret
+	left_portrait = scope:secret_exposer
+	right_portrait = scope:victim
+	
+	immediate = {
+		magic_secret_exposed_owner_effects_effect = { SECRET = scope:secret POV = root }
+		secret_exposed_owner_opinion_effects_effect = yes
+		play_music_cue = "mx_cue_murder"
+		if = {
+			limit = {
+				exists = dynasty
+				exists = dynasty.dynast
+			}
+			dynasty.dynast = { save_scope_as = dynast }
+		}
+	}
+
+	option = {
+		name = secrets.0117.a
+	}
+}	
+
+
+##################################################
+# Channel the Rift (power generation) Events
+# by d&f
+# 2500-2549
+##################################################
+
+#scripted_trigger channel_the_rift_has_all_minor_complications_trigger = {
+#	has_character_modifier = channel_the_rift_overtaxed_mod
+#	has_character_modifier = channel_the_rift_frayed_mod
+#}
+
+#scripted_effect channel_the_rift_random_minor_complication_effect = {
+#	custom_tooltip = magic.2500.minor_complication_tt
+#	# these modifiers stack
+#	random_list = {
+#		10 = {
+#			# overtaxed
+#			trigger_event = magic.2501
+#		}
+#		10 = {
+#			# mindfrayed
+#			trigger_event = magic.2502
+#		}
+#	}
+#}
+
+#scripted_effect channel_the_rift_random_major_complication_effect = {
+#	custom_tooltip = magic.2500.major_complication_tt
+#	random_list = {
+#		1000 = {
+#			trigger = {
+#				has_trait_rank = {
+#					trait = gh_mind_fog
+#					rank < 3
+#				}
+#			}
+#			trigger_event = magic.2503
+#		}
+#		1000 = {
+#			trigger = {
+#				has_trait_rank = {
+#					trait = gh_rift_insanity
+#					rank < 3
+#				}
+#			}
+#			trigger_event = magic.2504
+#		}
+#		1000 = {
+#			trigger = {
+#				has_trait_rank = {
+#					trait = gh_riftmark
+#					rank < 3
+#				}
+#			}
+#			trigger_event = magic.2505
+#		}
+#		1 = { }
+#	}
+#}
+
+#scripted_effect channel_the_rift_random_complication_effect = {
+#	random_list = {
+#		$MAJOR_COMPLICATION_CHANCE$ = {
+#			# if you already have all minor complications, get a major
+#			# complication instead
+#			modifier = {
+#				add = $MINOR_COMPLICATION_CHANCE$
+#				channel_the_rift_has_all_minor_complications_trigger = yes
+#			}
+#			channel_the_rift_random_major_complication_effect = yes
+#		}
+#		$MINOR_COMPLICATION_CHANCE$ = {
+#			trigger = {
+#				NOT = { channel_the_rift_has_all_minor_complications_trigger = yes }
+#			}
+#			channel_the_rift_random_minor_complication_effect = yes
+#		}
+#		$NO_COMPLICATION_CHANCE$ = { }
+#	}
+#}
+
+# base event; called by casting the spell
+#magic.2500 = { # GH TODO: Was causing errors and wasn't triggered anywhere, reimplement this or cut it
+#	title = magic.2500.t
+#	desc = magic.2500.desc
+#	theme = intrigue
+
+#	option = {
+#		name = magic.2500.a
+#		custom_tooltip = t1_magic_gen_tt
+#		change_variable = {
+#			name = magic_counter
+#			add = tier_1_gen
+#		}
+#		add_stress = minor_stress_gain
+#	}
+#	option = {
+#		name = magic.2500.b
+#		custom_tooltip = t2_magic_gen_tt
+#		change_variable = {
+#			name = magic_counter
+#			add = tier_2_gen
+#		}
+#		add_stress = medium_stress_gain
+#		channel_the_rift_random_complication_effect = {
+#			MAJOR_COMPLICATION_CHANCE = 0
+#			MINOR_COMPLICATION_CHANCE = 10
+#			NO_COMPLICATION_CHANCE = 90
+#		}
+#	}
+#	option = {
+#		name = magic.2500.c
+#		custom_tooltip = t3_magic_gen_tt
+#		change_variable = {
+#			name = magic_counter
+#			add = tier_3_gen
+#		}
+#		add_stress = major_stress_gain
+#		channel_the_rift_random_complication_effect = {
+#			MAJOR_COMPLICATION_CHANCE = 10
+#			MINOR_COMPLICATION_CHANCE = 20
+#			NO_COMPLICATION_CHANCE = 70
+#		}
+#	}
+#	option = {
+#		name = magic.2500.d
+#		custom_tooltip = t4_magic_gen_tt
+#		change_variable = {
+#			name = magic_counter
+#			add = tier_4_gen
+#		}
+#		add_stress = massive_stress_gain
+#		channel_the_rift_random_complication_effect = {
+#			MAJOR_COMPLICATION_CHANCE = 30
+#			MINOR_COMPLICATION_CHANCE = 40
+#			NO_COMPLICATION_CHANCE = 30
+#		}
+#	}
+#}
+
+# random complication from the rift: overchanneled
+#magic.2501 = {
+#	title = magic.2501.t
+#	desc = magic.2501.desc
+#	theme = intrigue
+#
+#	option = {
+#		name = magic.2501.a
+#		add_character_modifier = {
+#			modifier = channel_the_rift_overtaxed_mod 
+#			years = 1
+#		}
+#	}
+#}
+
+# random complication from the rift: mindfrayed
+#magic.2502 = {
+#	title = magic.2502.t
+#	desc = magic.2502.desc
+#	theme = intrigue
+#
+#	option = {
+#		name = magic.2502.a
+#		add_character_modifier = {
+#			modifier = channel_the_rift_frayed_mod 
+#			years = 1
+#		}
+#	}
+#}
+#
+## random severe complication from the rift: mindfogged
+#magic.2503 = {
+#	title = magic.2503.t
+#	desc = magic.2503.desc
+#	theme = intrigue
+#
+#	option = {
+#		name = magic.2503.a
+#		change_trait_rank = {
+#			trait = gh_mind_fog
+#			rank = 1
+#		}
+#	}
+#}
+#
+## random severe complication from the rift: riftcrazed
+#magic.2504 = {
+#	title = magic.2504.t
+#	desc = magic.2504.desc
+#	theme = intrigue
+#
+#	option = {
+#		name = magic.2504.a
+#		change_trait_rank = {
+#			trait = gh_rift_insanity
+#			rank = 1
+#		}
+#	}
+#}
+#
+## random severe complication from the rift: riftmarked
+#magic.2505 = {
+#	title = magic.2505.t
+#	desc = magic.2505.desc
+#	theme = intrigue
+#
+#	option = {
+#		name = magic.2505.a
+#		change_trait_rank = {
+#			trait = gh_riftmark
+#			rank = 1
+#		}
+#	}
+#}
+
+# "final" severe complication from the rift: unravel yourself
+#magic.2506 = {
+#	title = magic.2506.t
+#	desc = magic.2506.desc
+#	theme = intrigue
+#
+#	option = {
+#		name = magic.2506.a
+#		# TODO: add unravel effect here once we implement it
+#	}
+#}
+
+##################################################
+# Riftmark Events
+# by d&f
+# 2550-2599
+##################################################
+
+# Hit by a riftmark spell
+#magic.2550 = {
+#	title = magic.2550.t
+#	desc = magic.2550.desc
+#	theme = murder_scheme
+#	override_background = {
+#		reference = magic_ritual
+#	}
+#	left_portrait = {
+#		character = root
+#		animation = worry
+#	}
+#	right_portrait = {
+#		character = scope:caster
+#		animation = personality_dishonorable
+#	}
+#	
+#	option = {
+#		name = magic.2550.a
+#	}
+#}
+#
+#magic.2551 = {
+#	title = magic.2551.t
+#	desc = magic.2551.desc
+#	theme = murder_scheme
+#	override_background = {
+#		reference = magic_ritual
+#	}
+#	left_portrait = {
+#		character = root
+#		animation = worry
+#	}
+#	right_portrait = {
+#		character = scope:caster
+#		animation = personality_dishonorable
+#	}
+#	
+#	option = {
+#		name = magic.2551.a
+#	}
+#}
+
+##################################################
+# Sacrifice Population Events
+# by Bommelom
+# 2601-2650
+##################################################
+
+#scripted_effect set_sacrifice_population_value_to_0 = {
+#	set_variable = {
+#		name = total_sacrifice_population_value_min
+#		value = 0
+#		days = 1
+#	}
+#	set_variable = {
+#		name = total_sacrifice_population_value_mid
+#		value = 0
+#		days = 1
+#	}
+#	set_variable = {
+#		name = total_sacrifice_population_value_major
+#		value = 0
+#		days = 1
+#	}
+#	set_variable = {
+#		name = total_sacrifice_population_value_huge
+#		value = 0
+#		days = 1
+#	}
+#}
+#
+#scripted_effect sacrifice_population_caster_effect = {
+#	custom_tooltip = sacrifice_population_total_value_$SEVERITY$.tt
+#	every_in_list = {
+#		variable = spell_l_targets
+#		limit = {
+#			holder = root
+#		}
+#		sacrifice_population_county_effect = { SEVERITY = $SEVERITY$ }
+#	}
+#	set_sacrifice_population_value_to_0 = yes
+#	#if = {
+#	#	limit = { has_perk = livingmagic_perk2_tree1 }
+#	#	generate_prowess_or_intrigue = yes
+#	#}
+#}
+#
+#scripted_effect sacrifice_population_county_effect = {
+#	save_scope_as = sacrifice_population_county
+#	root = {
+#		change_variable = {
+#			name = magic_counter
+#			add = scope:sacrifice_population_county.sacrifice_population_magic_$SEVERITY$
+#		}
+#		add_tyranny = scope:sacrifice_population_county.sacrifice_population_county_tyranny_$SEVERITY$
+#		add_dread = scope:sacrifice_population_county.sacrifice_population_county_$SEVERITY$
+#		if = {
+#			limit = { faith = { has_doctrine = tenet_aeschraes_legacy } }
+#		add_piety = scope:sacrifice_population_county.sacrifice_population_piety_$SEVERITY$
+#		}
+#		#if = {
+#		#	limit = { has_perk = livingmagic_perk6_tree1 }
+#		#	add_stress = scope:sacrifice_population_county.sacrifice_population_control_malus_$SEVERITY$
+#		#}
+#	}
+#	set_variable = {
+#		name = sacrifice_population_decrementor
+#		value = sacrifice_population_county_$SEVERITY$
+#	}
+#	change_development_level = sacrifice_population_dev_malus_$SEVERITY$
+#	change_county_control = sacrifice_population_control_malus_$SEVERITY$
+#	custom_tooltip = sacrifice_population_stack.tt
+#	hidden_effect = {
+#		while = {
+#			limit = { var:sacrifice_population_decrementor > 0 }
+#			add_county_modifier = {
+#				modifier = sacrificed_population_stack_mod
+#				years = 10
+#			}
+#			change_variable = {
+#				name = sacrifice_population_decrementor
+#				subtract = 1
+#			}
+#		}
+#	}
+#}
+
+#magic.2601 = {
+#	title = magic.2601.t
+#	type = character_event
+#	content_source = dlc_gh
+#	desc = magic.2601.desc
+#	theme = learning
+#	override_background = {
+#		reference = magic_ritual
+#	}
+#	
+#	left_portrait = {
+#		character = root
+#	}
+#	
+#	immediate = {
+#		# Precalculating sacrifice gain
+#		set_sacrifice_population_value_to_0 = yes
+#		every_in_list = {
+#			variable = spell_l_targets
+#			limit = { holder = root }
+#			save_scope_as = sacrifice_population_counties
+#			root = {
+#				change_variable = {
+#					name = total_sacrifice_population_value_min
+#					add = scope:sacrifice_population_counties.sacrifice_population_magic_min
+#				}
+#				change_variable = {
+#					name = total_sacrifice_population_value_mid
+#					add = scope:sacrifice_population_counties.sacrifice_population_magic_mid
+#				}
+#				change_variable = {
+#					name = total_sacrifice_population_value_major
+#					add = scope:sacrifice_population_counties.sacrifice_population_magic_major
+#				}
+#				change_variable = {
+#					name = total_sacrifice_population_value_huge
+#					add = scope:sacrifice_population_counties.sacrifice_population_magic_huge
+#				}
+#			}
+#		}
+#		
+#	}
+#		
+#	option = {
+#		name = magic.2601.a
+#		sacrifice_population_caster_effect = { SEVERITY = min }
+#	}
+#	
+#	option = {
+#		name = magic.2601.b
+#		sacrifice_population_caster_effect = { SEVERITY = mid }
+#	}
+#	option = {
+#		name = magic.2601.c
+#		sacrifice_population_caster_effect = { SEVERITY = major }
+#	}
+#	option = {
+#		name = magic.2601.d
+#		sacrifice_population_caster_effect = { SEVERITY = huge }
+#	}
+#	option = {
+#		name = magic.2601.e
+#		set_sacrifice_population_value_to_0 = yes
+#	}
+#}
+
+#magic.2700 = {
+#	hidden = yes
+#	
+#	immediate = {	
+#		death = { death_reason = death_ritual_cannibalism killer = scope:caster  }
+#		scope:caster = {
+#			remove_list_variable = {
+#				name = spell_targets
+#				target = prev
+#			}
+#		}
+#	}
+#}
+
+magic.2750 = {
+	type = character_event
+	content_source = dlc_gh
+	title = magic.2750.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:inter_in_ice_prisoner_scope = {
+						ai_boldness >= high_positive_boldness
+					}
+				}
+				desc = magic.2750.desc.brave_victim
+			}
+			triggered_desc = {
+				trigger = {
+					scope:inter_in_ice_prisoner_scope = {
+						ai_boldness < high_positive_boldness
+						ai_boldness > high_negative_boldness
+					}
+				}
+				desc = magic.2750.desc.neutral_victim
+			}
+			triggered_desc = {
+				trigger = {
+					scope:inter_in_ice_prisoner_scope = {
+						ai_boldness <= high_negative_boldness
+					}
+				}
+				desc = magic.2750.desc.craven_victim
+			}
+		}
+	}
+	theme = witchcraft
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = {
+				OR = {
+					has_trait = sadistic
+					has_trait = callous
+					ai_compassion <= high_negative_compassion
+				}
+			}
+			animation = personality_callous
+		}
+		triggered_animation = {
+			trigger = {
+				NOR = {
+					has_trait = sadistic
+					has_trait = callous
+					ai_compassion <= high_negative_compassion
+				}
+			}
+			animation = personality_cynical
+		}
+	}
+	right_portrait = {
+		character = scope:inter_in_ice_prisoner_scope
+		triggered_animation = {
+			trigger = {
+				scope:inter_in_ice_prisoner_scope = {
+					ai_boldness >= high_positive_boldness
+				}
+			}
+			animation = personality_bold
+		}
+		triggered_animation = {
+			trigger = {
+				scope:inter_in_ice_prisoner_scope = {
+					ai_boldness < high_positive_boldness
+					ai_boldness > high_negative_boldness
+				}
+			}
+			animation = worry
+		}
+		triggered_animation = {
+			trigger = {
+				scope:inter_in_ice_prisoner_scope = {
+					ai_boldness <= high_negative_boldness
+				}
+			}
+			animation = beg
+		}
+	}
+	override_background = { reference = magic_ritual }
+	
+	
+	option = {
+		name = magic.2750.a
+		if = {
+			limit = {
+				has_dlc_feature = royal_court
+				exists = scope:inter_in_ice_prisoner_scope
+			}
+			custom_tooltip = magic.2750.tt
+			create_artifact_ice_sculpture_effect = {
+				VICTIM = scope:inter_in_ice_prisoner_scope
+				OWNER = root
+			}
+		}
+		else = {
+			add_dread = medium_dread_gain
+		}
+		sacrifice_prisoner_ritual_effect = {
+			VICTIM = scope:inter_in_ice_prisoner_scope
+			EXECUTIONER = root
+			SACRIFICE_METHOD = death_freeze
+		}
+	}
+}
+
+
+#########################
+## MAGIC FLAVOR EVENTS ##
+#########################
+
+magic.3001 = { # Life of the Party by TOG ## GH TODO: Should this be moved to the rest of our feast events?
+	type = character_event
+	content_source = dlc_gh
+	title = magic.3001.t
+	desc = magic.3001.desc
+	theme = feast_activity
+	left_portrait = {
+		character = scope:guest_to_harm
+		animation = pain
+	}
+	right_portrait = {
+		character = scope:bad_magi
+		animation = shame
+	}
+
+	trigger = {
+		NOT = {
+			exists = local_var:had_magic_3001
+		}
+		scope:activity = {
+			has_activity_type = activity_feast
+			any_attending_character = {
+				has_education_magic_trigger = yes
+			}
+		}
+	}
+
+	weight_multiplier = { # Dont want this to happen too often
+		base = 0.20
+		modifier = {
+			add = 0.5
+			scope:activity = {
+				has_activity_type = activity_feast
+				any_attending_character = { # unless theyre drunk
+					has_education_magic_trigger = yes
+					has_trait = drunkard
+				}
+			}
+		}
+	}
+
+	immediate = {
+		set_local_variable = {
+			name = had_magic_3001
+		}
+		scope:activity = {
+			random_attending_character = {
+				limit = {
+					has_education_magic_trigger = yes
+				}
+				save_scope_as = bad_magi
+			}
+			random_attending_character = {
+				limit = {
+					NOT = { this = scope:bad_magi }
+				}
+				save_scope_as = guest_to_harm
+			}
+		}
+		scope:guest_to_harm = {
+			random_list = { # picks a bad result of the magic trick
+				5 = {
+					trigger = { NOT = { has_trait = disfigured } }
+					add_trait = disfigured
+				}
+				5 = {
+					trigger = { NOT = { has_trait = gh_nearly_blind } }
+					add_trait = gh_nearly_blind
+				}
+				5 = {
+					trigger = { NOT = { has_trait = albino } }
+					add_trait = albino
+				}
+				5 = {
+					trigger = { has_trait = beauty_good }
+					remove_trait = beauty_good_1
+					remove_trait = beauty_good_2
+					remove_trait = beauty_good_3
+					add_trait = beauty_bad_1
+				}
+				5 = {
+					trigger = { NOT = { has_trait = gh_deep_mutation } }
+					add_trait = gh_deep_mutation
+				}
+			}
+		}
+	}
+
+	option = { # Arrest the Magi 
+		name = magic.3001.a
+
+		rightfully_imprison_character_effect = {
+			TARGET = scope:bad_magi
+			IMPRISONER = root
+		}
+
+		add_opinion = {
+			target = scope:guest_to_harm
+			modifier = grateful_opinion
+			opinion = 20
+		}
+
+		scope:guest_to_harm = {
+			progress_towards_rival_effect = {
+				REASON = rival_ruined_with_magic
+				CHARACTER = scope:bad_magi
+				OPINION = 0
+			}
+		}
+		stress_impact = {
+			callous = medium_stress_impact_gain
+			sadistic = medium_stress_impact_gain
+			just = medium_stress_impact_loss
+			forgiving = massive_stress_impact_gain
+
+		}
+
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = generous
+					has_trait = compassionate
+					has_trait = forgiving
+				}
+			}
+		}
+	}
+	option = { # Berate them for their failure
+		name = magic.3001.b
+
+		duel = {
+			skill = diplomacy
+			target = scope:bad_magi
+			65 = { # You completely demolish them
+				compare_modifier = {
+					value = scope:duel_value 
+					multiplier = 1.5
+				}
+				add_prestige = 200
+				add_hook = {
+					target = scope:bad_magi
+					type = threat_hook
+				}
+				scope:bad_magi = {
+					add_prestige = -300
+				}
+				scope:guest_to_harm = {
+					progress_towards_rival_effect = {
+						REASON = rival_ruined_with_magic
+						CHARACTER = scope:bad_magi
+						OPINION = default_rival_opinion
+					}
+				}
+			}
+			35 = { # You look daft and childlike
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -1.5
+				}
+				add_prestige = -300
+				progress_towards_rival_effect = {
+					REASON = attempted_belittling
+					CHARACTER = scope:bad_magi
+					OPINION = default_rival_opinion
+				}
+				scope:guest_to_harm = {
+					progress_towards_rival_effect = {
+						REASON = rival_ruined_with_magic
+						CHARACTER = scope:bad_magi
+						OPINION = default_rival_opinion
+					}
+				}
+			}
+		}
+
+		stress_impact = {
+			shy = major_stress_impact_gain
+			lazy = medium_stress_impact_gain
+			gregarious = medium_stress_impact_loss
+			sadistic = major_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+					OR = {
+						has_trait = shy
+						has_trait = lazy
+						has_trait = sadistic
+					}
+			}
+		}
+	}
+	option = { # Kill them where they stand
+		name = magic.3001.c
+		trigger = {
+			OR = {
+				has_trait = wrathful
+				has_trait = berserker
+				has_trait = sadistic
+			}
+		}
+		if = {
+			limit = { has_trait = berserker }
+			scope:bad_magi = {
+				death = {
+					death_reason = death_head_ripped_off
+					killer = root
+				}
+			}
+		}
+		else = {
+			scope:bad_magi = {
+				death = {
+					death_reason = death_execution
+					killer = root 
+				}
+			}
+		}
+		scope:guest_to_harm = {
+			progress_towards_rival_effect = {
+				REASON = rival_ruined_with_magic
+				CHARACTER = scope:bad_magi
+				OPINION = default_rival_opinion
+			}
+		}
+		stress_impact = {
+			compassionate = major_stress_impact_gain
+			sadistic = medium_stress_impact_loss
+			lazy = medium_stress_impact_gain
+			calm = major_stress_impact_gain
+			just = major_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+					OR = {
+						has_trait = calm
+						has_trait = compassionate
+						has_trait = lazy
+					}
+			}
+		}
+	}
+	option = { # Ha! What a funny prank 
+		name = magic.3001.d
+		trigger = {
+			OR = {
+				has_trait = sadistic
+				has_trait = callous
+			}
+		}
+		add_opinion = {
+			target = scope:guest_to_harm
+			modifier = grateful_opinion
+			opinion = 15
+		}
+
+		progress_towards_rival_effect = {
+			REASON = rival_insensitive_asshole
+			CHARACTER = scope:guest_to_harm
+			OPINION = default_rival_opinion
+		}
+
+		scope:guest_to_harm = {
+			progress_towards_rival_effect = {
+				REASON = rival_ruined_with_magic
+				CHARACTER = scope:bad_magi
+				OPINION = default_rival_opinion
+			}
+		}
+
+		stress_impact = {
+			compassionate = medium_stress_impact_gain
+			sadistic = medium_stress_impact_loss
+			callous = medium_stress_impact_loss
+			just = minor_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+					OR = {
+						has_trait = compassionate
+						has_trait = shy
+						has_trait = just
+					}
+			}
+		}
+	}
+	option = { # Ugh, more wine! 
+		name = magic.3001.e
+		trigger = {
+			has_trait = drunkard
+		}
+
+		progress_towards_rival_effect = {
+			REASON = rival_insensitive_asshole
+			CHARACTER = scope:guest_to_harm
+			OPINION = default_rival_opinion
+		}
+
+		scope:guest_to_harm = {
+			progress_towards_rival_effect = {
+				REASON = rival_ruined_with_magic
+				CHARACTER = scope:bad_magi
+				OPINION = default_rival_opinion
+			}
+		}
+	}
+}
+
+magic.6001 = { # Silas Stavro in the Spider Library
+	title = magic.6001.t
+	type = character_event
+	content_source = dlc_gh
+	desc = magic.6001.desc
+	theme = memory_stress
+	override_background = { reference = bp1_indian_corridor_night }
+	override_effect_2d = fog
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+	right_portrait = {
+		character = scope:skeleton
+		animation = reading
+		outfit_tags = { bald }
+		hide_info = yes
+	}
+
+	trigger = {
+		NOT = { has_character_flag = met_stavro_in_spider_library }
+	}
+
+	immediate = {
+		add_character_flag = met_stavro_in_spider_library
+		create_character = {
+			location = root.location
+			template = silas_stavro_placeholder_template
+			save_scope_as = skeleton
+		}
+	}
+
+	option = {
+		name = magic.6001.a
+		add_aspect_skill_effect = { ASPECT = death VALUE = 3 }
+	}
+
+	after = {
+		scope:skeleton = { silent_disappearance_effect = yes }
+	}
+}

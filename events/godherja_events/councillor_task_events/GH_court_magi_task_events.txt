@@ -1,0 +1,154 @@
+﻿#Events related to the Court Magi's tasks - should probably rename this later
+
+namespace = court_magi_task
+
+#Level up living magic - displayed to guardian if player
+#court_magi_task.0010 = {
+#	title = court_magi_task.0010.t
+#	desc = court_magi_task.0010.desc
+#	theme = education
+#	
+#	right_portrait = {
+#		character = scope:magic_educator
+#		animation = happiness
+#	}
+#	left_portrait = {
+#		character = scope:magic_tutored_child
+#		animation = happiness
+#	}
+#
+#	
+#	option = {
+#		name = court_magi_task.0010.a
+#		scope:magic_tutored_child ?= {
+#			upgrade_magic_education_effect = { MAGIC_TYPE = living_magic }
+#		}
+#	}
+#}
+#
+##Level up living magic - displayed to guardian if player
+#court_magi_task.0011 = {
+#	title = court_magi_task.0011.t
+#	desc = court_magi_task.0011.desc
+#	theme = education
+#	
+#	right_portrait = {
+#		character = scope:magic_educator
+#		animation = happiness
+#	}
+#	left_portrait = {
+#		character = scope:magic_tutored_child
+#		animation = happiness
+#	}
+#	
+#	option = {
+#		name = court_magi_task.0010.a
+#		scope:magic_tutored_child ?= {
+#			upgrade_magic_education_effect = { MAGIC_TYPE = living_magic }
+#		}
+#	}
+#}
+#
+##Level up dead magic - displayed to guardian if player
+#court_magi_task.0020 = {
+#	title = court_magi_task.0020.t
+#	desc = court_magi_task.0020.desc
+#	theme = education
+#	
+#	right_portrait = {
+#		character = scope:magic_educator
+#		animation = happiness
+#	}
+#	left_portrait = {
+#		character = scope:magic_tutored_child
+#		animation = happiness
+#	}
+#	
+#	option = {
+#		name = court_magi_task.0020.a
+#		scope:magic_tutored_child ?= {
+#			upgrade_magic_education_effect = { MAGIC_TYPE = dead_magic }
+#		}
+#	}
+#}
+#
+##Level up dead magic - displayed to guardian if player
+#court_magi_task.0021 = {
+#	title = court_magi_task.0021.t
+#	desc = court_magi_task.0021.desc
+#	theme = education
+#	
+#	right_portrait = {
+#		character = scope:magic_educator
+#		animation = happiness
+#	}
+#	left_portrait = {
+#		character = scope:magic_tutored_child
+#		animation = happiness
+#	}
+#	
+#	option = {
+#		name = court_magi_task.0020.a
+#		scope:magic_tutored_child ?= {
+#			upgrade_magic_education_effect = { MAGIC_TYPE = dead_magic }
+#		}
+#	}
+#}
+#
+##Level up mixed magic - displayed to guardian if player
+#court_magi_task.0030 = {
+#	title = court_magi_task.0030.t
+#	desc = court_magi_task.0030.desc
+#	theme = education
+#	
+#	right_portrait = {
+#		character = scope:magic_educator
+#		animation = happiness
+#	}
+#	left_portrait = {
+#		character = scope:magic_tutored_child
+#		animation = happiness
+#	}
+#	
+#	option = {
+#		name = court_magi_task.0030.a
+#		scope:magic_tutored_child ?= {
+#			upgrade_magic_education_effect = { MAGIC_TYPE = mixed_magic }
+#			give_mixed_magi_riftsight_effect = yes
+#		}
+#	}
+#}
+#
+##Level up mixed magic - displayed to guardian if player
+#court_magi_task.0031 = {
+#	title = court_magi_task.0031.t
+#	desc = court_magi_task.0031.desc
+#	theme = education
+#	
+#	right_portrait = {
+#		character = scope:magic_educator
+#		animation = happiness
+#	}
+#	left_portrait = {
+#		character = scope:magic_tutored_child
+#		animation = happiness
+#	}
+#	
+#	option = {
+#		name = court_magi_task.0030.a
+#		scope:magic_tutored_child ?= {
+#			upgrade_magic_education_effect = { MAGIC_TYPE = mixed_magic }
+#			give_mixed_magi_riftsight_effect = yes
+#		}
+#	}
+#}
+
+#######
+
+court_magi_task.0100 = {
+	hidden = yes
+
+	immediate = {
+		#childhood_magic_education_base_effect = yes
+	}
+}

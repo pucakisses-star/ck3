@@ -1,0 +1,643 @@
+﻿namespace = gh_scroll
+
+gh_scroll.0001 = {
+	title = gh_scroll.0001.t
+	desc = gh_scroll.0001.desc
+	theme = realm
+	cooldown = { years = 10 }
+	right_portrait = { 
+		character = scope:great_magi
+		animation = throne_room_messenger_1
+	}
+	left_portrait = root
+
+	trigger = {
+		exists = cp:councillor_court_magi
+		can_access_magic = yes
+		highest_held_title_tier >= tier_kingdom
+	}
+
+	immediate = {
+		create_character = {
+			template = great_magi
+			location = root.capital_province
+			save_scope_as = great_magi
+		}
+	}
+	
+	option = { #OPTION A: ARCANA SPECIAL PRICE INCLUDED
+		name = gh_scroll.0001.a
+			if = { 
+				limit = { 
+					OR = { 
+						has_trait = education_arcana_4
+						has_trait = education_arcana_5
+					}
+				}
+				pay_short_term_gold = {
+					gold = 250
+					target = scope:great_magi
+				}
+			}
+			else = {
+				pay_short_term_gold = {
+					gold = 500
+					target = scope:great_magi
+				}
+			}
+			add_hook = {
+				target = scope:great_magi
+				type = loyalty_hook
+			}
+			scope:great_magi = {
+				add_trait = loyal
+			}
+			add_courtier = scope:great_magi	
+			trigger_event = {
+				id = gh_scroll.0002
+			}
+		}
+
+	option = { #OPTION B: challenge magi to duel for the scroll
+		name = gh_scroll.0001.b
+		trigger_event = {
+			id = gh_scroll.0003	
+		}
+	}
+
+	option = { #OPTION C you try to imprison him --> leads to a duel
+		name = gh_scroll.0001.c
+		stress_impact = {
+			shy = massive_stress_impact_gain
+			craven = massive_stress_impact_gain
+			compassionate = massive_stress_impact_gain
+			humble = major_stress_impact_gain
+			forgiving = medium_stress_impact_gain
+			content = medium_stress_impact_gain
+			trusting = medium_stress_impact_gain
+			just = medium_stress_impact_gain
+			humble = medium_stress_impact_gain
+			cynical = medium_stress_impact_loss
+			greedy = medium_stress_impact_loss
+			gregarious = medium_stress_impact_loss
+			arrogant = medium_stress_impact_loss
+			vengeful = medium_stress_impact_loss
+			arbitrary = medium_stress_impact_loss
+			callous = major_stress_impact_loss
+			sadistic = massive_stress_impact_loss
+		}
+		trigger_event = {
+			id = gh_scroll.0003 #DUEL FOR THE SCROLL#
+		}
+	}
+
+	option = { #OPTION D you try to kill him --> leads to a duel
+		name = gh_scroll.0001.d
+		stress_impact = {
+			shy = massive_stress_impact_gain
+			craven = massive_stress_impact_gain
+			compassionate = massive_stress_impact_gain
+			humble = major_stress_impact_gain
+			forgiving = medium_stress_impact_gain
+			content = medium_stress_impact_gain
+			trusting = medium_stress_impact_gain
+			just = medium_stress_impact_gain
+			humble = medium_stress_impact_gain
+			cynical = medium_stress_impact_loss
+			greedy = medium_stress_impact_loss
+			gregarious = medium_stress_impact_loss
+			arrogant = medium_stress_impact_loss
+			vengeful = medium_stress_impact_loss
+			arbitrary = medium_stress_impact_loss
+			callous = major_stress_impact_loss
+			sadistic = massive_stress_impact_loss
+		}
+		trigger_event = {
+			id = gh_scroll.0003 #DUEL FOR THE gh_scroll#
+		}
+	}
+}
+	
+
+
+
+gh_scroll.0002 = { # Rare Mysterious gh_scroll Simulator--TADA##
+	title = gh_scroll.0002.t
+	desc = gh_scroll.0002.desc
+	theme = realm
+	
+	left_portrait = { 
+		character = scope:great_magi
+		animation = throne_room_messenger_1
+	}
+	right_portrait = root
+
+	trigger = {
+		exists = cp:councillor_court_magi
+		can_access_magic = yes
+		highest_held_title_tier >= tier_kingdom
+	}
+
+	immediate = {
+		cp:councillor_court_magi = { save_scope_as = royal_magi }
+		create_artifact = {
+			name = random_magical_scroll
+			description = random_magical_scroll
+			rarity = famed
+			visuals = scroll
+			type = magical_scroll
+			creator = scope:great_magi
+			modifier = artifact_random_magical_scroll_modifier
+			save_scope_as = random_magical_scroll_artifact
+		}
+	}
+	option = {
+		name = gh_scroll.0002.a
+		add_prestige = minor_prestige_gain
+		custom_tooltip = {
+			text = scroll_mysterious_tooltip
+			scope:random_magical_scroll_artifact = {
+				set_variable = { name = writing_culture value = root.culture}
+				random_list = {
+					8 = { # 8% chance for Nature
+						add_artifact_aspect_modifier_effect = { NAME = nature VALUE = 3 }
+						random_list = {
+							20 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_nature_elementals_army } }
+							20 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_woodland_hydra_army } }
+							20 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_wild_leshens_armies } }
+							#20 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:shape_change } }
+							20 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_vine_elementals_army } }
+						}
+					}
+					5 = { # 5% chance for Sand
+						add_artifact_aspect_modifier_effect = { NAME = sand VALUE = 3 }
+						random_list = {
+							50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_desert_mirage_elementals_army } }
+							50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_dune_reaper_elementals_army } }
+						}
+					}
+					8 = { # 8% chance for Water
+						add_artifact_aspect_modifier_effect = { NAME = water VALUE = 3 }
+						random_list = {
+							50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_water_elementals_army } }
+							50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_quicksilver_elementals_army } }
+						}
+					}
+					8 = { # 8% chance for Fire
+						add_artifact_aspect_modifier_effect = { NAME = fire VALUE = 3 }
+						random_list = {
+							33 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_fire_elementals_army } }
+							33 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_lightning_elementals_army } }
+							33 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_magma_golem_armies } }
+						}
+					}
+					8 = { # 8% chance for Air
+						add_artifact_aspect_modifier_effect = { NAME = air VALUE = 3 }
+						random_list = {
+							50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_air_elementals_army } }
+							50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_lightning_elementals_army } }
+						}
+					}
+					5 = { # 5% chance for Light
+						add_artifact_aspect_modifier_effect = { NAME = light VALUE = 3 }
+						random_list = {
+							50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_light_elementals_army }}
+							50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_seraph_melacham_army }}
+						}
+					}
+					5 = { # 5% chance for Stone
+						add_artifact_aspect_modifier_effect = { NAME = stone VALUE = 3 }
+						random_list = {
+							33 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_stone_elementals_army } }
+							33 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_magma_golem_armies } }
+							33 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_stone_golem_armies } }
+						}
+					}
+					5 = { # 5% chance for Dream
+						add_artifact_aspect_modifier_effect = { NAME = dream VALUE = 3 }
+						assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_dream_elementals_army }
+					}
+					8 = { # 8% chance for Dark
+						add_artifact_aspect_modifier_effect = { NAME = dark VALUE = 3 }
+						random_list = {
+							50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_dark_elementals_army } }
+							50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_night_gaunts_army } }
+						}
+					}
+					5 = { # 5% chance for Ice
+						add_artifact_aspect_modifier_effect = { NAME = ice VALUE = 3 }
+						random_list = {
+							50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_ice_elementals_army } }
+							50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_ice_golem_armies } }
+						}
+					
+					}
+					8 = { # 8% chance for Death
+						add_artifact_aspect_modifier_effect = { NAME = death VALUE = 3 }
+						assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_death_elementals_army }
+					}
+					5 = { # 5% chance for Blood
+						add_artifact_aspect_modifier_effect = { NAME = blood VALUE = 3 }
+						assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_blood_elementals_army }
+					}
+					8 = { # 8% chance for Metal
+						add_artifact_aspect_modifier_effect = { NAME = metal VALUE = 3 }
+						random_list = {
+							25 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_metal_elementals_army } }
+							25 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_quicksilver_elementals_army } }
+							25 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_metal_golem_armies } }
+							25 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_bronze_golem_armies } }
+						}
+					}
+					5 = { # 5% chance for Ethereal
+						add_artifact_aspect_modifier_effect = { NAME = ethereal VALUE = 3 }
+						assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_ethereal_elementals_army }
+					}
+					8 = { # 8% chance for Celestial
+						add_artifact_aspect_modifier_effect = { NAME = celestial VALUE = 3 }
+						random_list = {
+							50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_celestial_elementals_army } }
+							50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_seraph_melacham_army } }
+						}
+					}
+				}
+			}
+		}	
+	}
+}	
+
+
+
+gh_scroll.0003 = { # duel the magi
+	title = gh_scroll.0003.t
+		desc = gh_scroll.0003.desc
+		theme = unfriendly
+		right_portrait = { 
+			character = scope:great_magi
+			animation = marshal
+		}
+		left_portrait = { 
+			character = root
+			animation = marshal
+		}	
+
+		trigger = {
+			can_access_magic = yes
+			highest_held_title_tier >= tier_kingdom
+		}
+	
+		option = {
+			name = gh_scroll.0003.a
+			duel = {
+				skill = prowess
+				value = 15
+				50 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = 3.5
+						min = -49
+					}
+					desc = gh_scroll.0003.a.duel.success
+					custom_tooltip = {
+						text = mysterious_after_effect_duel_success_tooltip
+						trigger_event = { 
+							id = gh_scroll.0004 #Outcome--you dueled magi and win --> gives you chance to recruit/take gh_scroll, imprison magi or kill magi
+						}
+					}
+					send_interface_toast = {
+						title = gh_scroll.0003.a.duel.success
+						left_icon = root
+						add_prestige = medium_prestige_gain
+					}
+				}
+				50 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = -3.5
+						min = -49
+					}
+					desc = gh_scroll.0003.a.duel.failure
+					random_list = {
+						65 = { add_trait = wounded_1 }
+						20 = { add_trait = wounded_2 }
+						15 = { add_trait = wounded_3 }
+					}
+					send_interface_toast = {
+						title = gh_scroll.0003.a.duel.failure
+						left_icon = root
+						add_prestige = medium_prestige_loss
+					}
+					trigger_event = {
+						id = gh_scroll.0005 #outcome--you dueled magi and lost
+					}
+				}	
+			}
+		}
+	}
+
+
+gh_scroll.0004 = { #You beat the magi in a duel and get the scroll
+	title = gh_scroll.0004.t
+	desc = gh_scroll.0004.desc
+	theme = realm
+	left_portrait = { 
+		character = scope:great_magi
+		animation = loss_1
+	}
+	right_portrait = {
+		character = root
+		animation = celebrate_sword
+	}
+	trigger = {
+		can_access_magic = yes
+		highest_held_title_tier >= tier_kingdom
+    }
+	immediate = {
+		cp:councillor_court_magi = { save_scope_as = royal_magi }
+		create_artifact = {
+			name = random_magical_scroll
+			description = random_magical_scroll
+			rarity = famed
+			visuals = scroll
+			type = magical_scroll
+			creator = scope:great_magi
+			modifier = artifact_random_magical_scroll_modifier
+			save_scope_as = random_magical_scroll_artifact
+		}
+		add_prestige = medium_prestige_gain
+		custom_tooltip = {
+			text = scroll_mysterious_tooltip
+				scope:random_magical_scroll_artifact = {
+					set_variable = { name = writing_culture value = root.culture}
+					random_list = {
+						8 = { # 8% chance for Nature
+							add_artifact_aspect_modifier_effect = { NAME = nature VALUE = 3 }
+							random_list = {
+								20 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_nature_elementals_army } }
+								20 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_woodland_hydra_army } }
+								20 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_wild_leshens_armies } }
+								#20 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:shape_change } }
+								20 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_vine_elementals_army } }							}
+						}
+						5 = { # 5% chance for Sand
+							add_artifact_aspect_modifier_effect = { NAME = sand VALUE = 3 }
+							random_list = {
+								50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_desert_mirage_elementals_army } }
+								50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_dune_reaper_elementals_army } }
+							}
+						}
+						8 = { # 8% chance for Water
+							add_artifact_aspect_modifier_effect = { NAME = water VALUE = 3 }
+							random_list = {
+								50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_water_elementals_army } }
+								50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_quicksilver_elementals_army } }
+							}
+						}
+						8 = { # 8% chance for Fire
+							add_artifact_aspect_modifier_effect = { NAME = fire VALUE = 3 }
+							random_list = {
+								33 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_fire_elementals_army } }
+								33 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_lightning_elementals_army } }
+								33 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_magma_golem_armies } }
+							}
+						}
+						8 = { # 8% chance for Air
+							add_artifact_aspect_modifier_effect = { NAME = air VALUE = 3 }
+							random_list = {
+								50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_air_elementals_army } }
+								50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_lightning_elementals_army } }
+							}
+						}
+						5 = { # 5% chance for Light
+							add_artifact_aspect_modifier_effect = { NAME = light VALUE = 3 }
+							random_list = {
+								50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_light_elementals_army }}
+								50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_seraph_melacham_army }}
+							}
+						}
+						5 = { # 5% chance for Stone
+							add_artifact_aspect_modifier_effect = { NAME = stone VALUE = 3 }
+							random_list = {
+								33 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_stone_elementals_army } }
+								33 = { assign_spell_to_magic_school_effect = { SPELL = global_var:spawn_magma_golem_armies } }
+								33 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_stone_golem_armies } }
+							}
+						}
+						5 = { # 5% chance for Dream
+							add_artifact_aspect_modifier_effect = { NAME = dream VALUE = 3 }
+							assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_dream_elementals_army }
+						}
+						8 = { # 8% chance for Dark
+							add_artifact_aspect_modifier_effect = { NAME = dark VALUE = 3 }
+							random_list = {
+								50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_dark_elementals_army } }
+								50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_night_gaunts_army } }
+							}
+						}
+						5 = { # 5% chance for Ice
+							add_artifact_aspect_modifier_effect = { NAME = ice VALUE = 3 }
+							random_list = {
+								50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_ice_elementals_army } }
+								50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_ice_golem_armies } }
+							}
+						
+						}
+						8 = { # 8% chance for Death
+							add_artifact_aspect_modifier_effect = { NAME = death VALUE = 3 }
+							assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_death_elementals_army }
+						}
+						5 = { # 5% chance for Blood
+							add_artifact_aspect_modifier_effect = { NAME = blood VALUE = 3 }
+							assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_blood_elementals_army }
+						}
+						8 = { # 8% chance for Metal
+							add_artifact_aspect_modifier_effect = { NAME = metal VALUE = 3 }
+							random_list = {
+								25 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_metal_elementals_army } }
+								25 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_quicksilver_elementals_army } }
+								25 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_metal_golem_armies } }
+								25 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_bronze_golem_armies } }
+							}
+						}
+						5 = { # 5% chance for Ethereal
+							add_artifact_aspect_modifier_effect = { NAME = ethereal VALUE = 3 }
+							assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_ethereal_elementals_army }
+						}
+						8 = { # 8% chance for Celestial
+							add_artifact_aspect_modifier_effect = { NAME = celestial VALUE = 3 }
+							random_list = {
+								50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_celestial_elementals_army } }
+								50 = { assign_spell_knowledge_entry_effect = { SPELL = global_var:spawn_seraph_melacham_army } }
+							}
+						}
+					}
+				}
+			}	
+		}
+		option = { #recruit the magi for free and get the scroll
+			name = gh_scroll.0004.a 
+			add_courtier = scope:great_magi
+			
+		}
+		option = { #Imprisonment time
+			name = gh_scroll.0004.b
+			stress_impact = {
+				callous = medium_stress_impact_loss
+				sadistic = medium_stress_impact_loss
+				compassionate = massive_stress_impact_gain
+				forgiving = medium_stress_impact_gain
+				content = medium_stress_impact_gain
+				trusting = medium_stress_impact_gain
+				just = medium_stress_impact_gain
+				humble = medium_stress_impact_gain
+				cynical = medium_stress_impact_loss
+				greedy = medium_stress_impact_gain
+				craven = major_stress_impact_gain
+				humble = miniscule_stress_impact_loss
+				gregarious = miniscule_stress_impact_loss
+				arrogant = medium_stress_impact_loss
+				vengeful = medium_stress_impact_loss
+				arbitrary = medium_stress_impact_loss
+			}
+			
+			imprison = {
+				target = scope:great_magi
+				type = dungeon
+			}
+			
+			if = { 
+				# Doctrine: Magi Hunters Active
+				limit = { faith = { has_doctrine_parameter = magi_hunters_active } }
+				add_prestige = massive_prestige_gain
+				add_piety = massive_piety_gain
+			}
+			else_if = { 
+				# Doctrine: Magic Criminalized
+				limit = { faith = { has_doctrine_parameter = magic_illegal } }
+				add_prestige = major_prestige_gain
+				add_piety = major_piety_gain
+			}
+			else_if = { 
+				# Doctrine: Magic Shunned
+				limit = { faith = { has_doctrine_parameter = magic_shunned } }
+				add_prestige = medium_prestige_gain
+				add_piety = medium_piety_gain
+			}
+			else_if = { 
+				# Doctrine: Magic Accepted
+				limit = { faith = { has_doctrine_parameter = magic_accepted } }
+				add_prestige = minor_prestige_gain
+				add_piety = minor_piety_loss
+			}
+			else_if = { 
+				# Doctrine: Magic Honored
+				limit = { faith = { has_doctrine_parameter = magic_honored } }
+				add_prestige = medium_prestige_loss
+				add_piety = medium_piety_loss
+			}
+			else_if = { 
+				# Doctrine: Magic Supremacy
+				limit = { faith = { has_doctrine_parameter = magic_supreme } }
+				add_prestige = major_prestige_loss
+				add_piety = major_piety_loss
+			}			
+		}
+		option = { #MURDER TIME
+			name = gh_scroll.0004.c
+			stress_impact = {
+				callous = medium_stress_impact_loss
+				sadistic = medium_stress_impact_loss
+				compassionate = massive_stress_impact_gain
+				forgiving = medium_stress_impact_gain
+				content = medium_stress_impact_gain
+				trusting = medium_stress_impact_gain
+				just = medium_stress_impact_gain
+				humble = medium_stress_impact_gain
+				cynical = medium_stress_impact_loss
+				greedy = medium_stress_impact_gain
+				craven = major_stress_impact_gain
+				humble = miniscule_stress_impact_loss
+				gregarious = miniscule_stress_impact_loss
+				arrogant = medium_stress_impact_loss
+				vengeful = medium_stress_impact_loss
+				arbitrary = medium_stress_impact_loss
+			}
+			scope:great_magi = {
+				death = {
+					killer = root
+					death_reason = death_execution
+				}
+			}
+			if = { 
+				# Doctrine: Magi Hunters Active
+				limit = { root.faith = { has_doctrine_parameter = magi_hunters_active } }
+				add_prestige = massive_prestige_gain
+				add_piety = massive_piety_gain
+			}
+			else_if = { 
+				# Doctrine: Magic Criminalized
+				limit = { root.faith = { has_doctrine_parameter = magic_illegal } }
+				add_prestige = major_prestige_gain
+				add_piety = major_piety_gain
+			}
+			else_if = { 
+				# Doctrine: Magic Shunned
+				limit = { root.faith = { has_doctrine_parameter = magic_shunned } }
+				add_prestige = medium_prestige_gain
+				add_piety = medium_piety_gain
+			}
+			else_if = { 
+				# Doctrine: Magic Accepted
+				limit = { root.faith = { has_doctrine_parameter = magic_accepted } }
+				add_prestige = minor_prestige_gain
+				add_piety = minor_piety_loss
+			}
+			else_if = { 
+				# Doctrine: Magic Honored
+				limit = { root.faith = { has_doctrine_parameter = magic_honored } }
+				add_prestige = medium_prestige_loss
+				add_piety = medium_piety_loss
+			}
+			else_if = { 
+				# Doctrine: Magic Supremacy
+				limit = { root.faith = { has_doctrine_parameter = magic_supreme } }
+				add_prestige = major_prestige_loss
+				add_piety = major_piety_loss
+			}	
+		}
+	} 
+
+
+
+gh_scroll.0005 = { #You lose to the magi in a duel
+    title = gh_scroll.0005.t
+    desc = gh_scroll.0005.desc
+    theme = realm
+    left_portrait = { 
+		character = scope:great_magi
+		animation = celebrate_sword
+	}
+    right_portrait = {
+		character = root
+		animation = loss_1
+	}  
+	trigger = {
+        
+        can_access_magic = yes
+		highest_held_title_tier >= tier_kingdom
+    }
+    option = { #Magi goes free
+		name = gh_scroll.0005.a
+		add_prestige = major_prestige_loss
+	}
+	after = {
+		hidden_effect = {
+			scope:great_magi = { death = { death_reason = death_mysterious } }
+		}
+	}
+}
+
+
+
+
+

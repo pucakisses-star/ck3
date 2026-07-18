@@ -1,0 +1,311 @@
+﻿namespace = opening_event
+
+opening_event.63 = { #Opener for the Hand that Bites
+	title = opening_event.63.t
+	desc = opening_event.63.desc
+	theme = dungeon
+	left_portrait = { 
+		character = root
+		animation = personality_callous
+	}
+
+	trigger = {
+		is_ai = no
+		this = character:rahikaya_vidvaookeyatra_8
+	}
+
+	option = {
+		name = opening_event.63.a
+	}
+}
+
+opening_event.64 = { #Opener for Hollow King Digbhanja of the Rahikaya
+	title = opening_event.64.t
+	desc = opening_event.64.desc
+	theme = realm
+	left_portrait = { 
+		character = root
+		animation = sadness
+	}
+
+	trigger = {
+		is_ai = no
+		this = character:rahikaya_vidvaookeyatra_11
+	}
+
+	option = {
+		name = opening_event.64.a
+	}
+}
+
+opening_event.65 = { #Opener for Gandadeva the Madlad of the Paidem
+	title = opening_event.65.t
+	desc = opening_event.65.desc
+	theme = murder_scheme
+	left_portrait = { 
+		character = root
+		animation = paranoia
+	}
+
+	trigger = {
+		is_ai = no
+		this = character:paidem_vidvaookeyatra_3
+	}
+
+	option = {
+		name = opening_event.65.a
+	}
+}
+
+opening_event.66 = { #Opener for Duke Bhagwant the Scar bound
+	title = opening_event.66.t
+	desc = opening_event.66.desc
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_vengeful
+	}
+
+	trigger = {
+		is_ai = no
+		this = character:vastarnai_vidvaookeyatra_3
+	}
+
+	option = {
+		name = opening_event.66.a 
+	}
+}
+
+opening_event.67 = { #Opener for 1254 Tahanati Duchess, Ahilyabai
+	title = opening_event.67.t
+	desc = opening_event.67.desc
+	theme = stewardship_domain_focus
+	left_portrait = { 
+		character = root
+		animation = personality_cynical
+	}
+
+	trigger = {
+		is_ai = no
+		this = character:tahanati_daramarjaratan_1
+	}
+
+	option = {
+		name = opening_event.67.a
+	}
+}
+
+opening_event.68 = { #Opener for 1254 Karana Duke, Nahusa
+	title = opening_event.68.t
+	desc = opening_event.68.desc
+	theme = war
+	left_portrait = { 
+		character = root
+		animation = personality_zealous
+	}
+
+	trigger = {
+		is_ai = no
+		this = character:karana_askevaryaa_1
+	}
+
+	option = {
+		name = opening_event.68.a
+	}
+}
+
+opening_event.69 = { #Opener for 1254 Sheytaran Queen Nahana
+	title = opening_event.69.t
+	desc = opening_event.69.desc
+	theme = intrigue
+	left_portrait = { 
+		character = root
+		animation = personality_cynical
+	}
+
+	trigger = {
+		is_ai = no
+		this = character:lainar_vidvaookeyatra_1
+	}
+
+	option = {
+		name = opening_event.69.a
+	}
+}
+
+opening_event.70 = { #Opener for 1254 Omkhur Duke, Naivarman
+	title = opening_event.70.t
+	desc = opening_event.70.desc
+	theme = realm
+	left_portrait = { 
+		character = root
+		animation = personality_forgiving
+	}
+
+	trigger = {
+		is_ai = no
+		character_naivarman_trigger = yes
+	}
+
+	option = {
+		name = opening_event.70.a
+	}
+}
+
+opening_event.71 = { #Opener for 1254 Sakankra Duke, Damodara
+	title = opening_event.71.t
+	desc = opening_event.71.desc
+	theme = martial_strategy_focus
+	left_portrait = { 
+		character = root
+		animation = personality_vengeful
+	}
+
+	trigger = {
+		is_ai = no
+		this = character:sakankra_vidvaookeyatra_18
+	}
+
+	option = {
+		name = opening_event.71.a
+	}
+}
+
+opening_event.75 = { #Opener for Kresjsla Kraken-Eater
+	title = opening_event.75.t
+	desc = opening_event.75.desc
+	theme = war
+	left_portrait = { 
+		character = root
+		animation = personality_bold
+	}
+
+	trigger = {
+		is_ai = no
+		this = character:fenvir_sjalvolki_21
+	}
+
+	option = {
+		name = opening_event.75.a
+	}
+}
+
+opening_event.93 = {
+	title = opening_event.93.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { this = character:islander_aversarinas_aagiokrata_15 }
+				desc = opening_event.93.desc.viesuados_heirs
+			}
+			triggered_desc = {
+				trigger = { this = character:easternislander_aversarinas_aagiokrata_8 }
+				desc = opening_event.93.desc.viesuados_wrath
+			}
+		}
+	}
+	theme = realm
+	left_portrait = {
+		character = scope:viesuados_wrath_leader
+		animation = anger
+	}
+	right_portrait = {
+		character = scope:viesuados_heirs_leader
+		animation = anger
+	}
+
+	trigger = {
+		is_ai = no
+		OR = {
+			this = character:islander_aversarinas_aagiokrata_15
+			this = character:easternislander_aversarinas_aagiokrata_8
+		}
+	}
+
+	immediate = {
+		title:d_legio_xcv_viesuados_wrath.holder = { save_scope_as = viesuados_wrath_leader }
+		title:d_legio_xcv_viesuados_heir.holder = { save_scope_as = viesuados_heirs_leader }
+	}
+	option = {
+		name = opening_event.93.a
+		trigger = { this = character:islander_aversarinas_aagiokrata_15 }
+	}
+	option = {
+		name = opening_event.93.b
+		trigger = { this = character:easternislander_aversarinas_aagiokrata_8 }
+	}
+}
+
+opening_event.94 = {
+	title = opening_event.94.t
+	desc = opening_event.94.desc
+	theme = dungeon
+	left_portrait = {
+		character = root
+		animation = personality_vengeful
+	}
+
+	trigger = {
+		is_ai = no
+		this = character:avihana_askevaryaa_1
+	}
+
+	option = {
+		name = opening_event.94.a
+	}
+}
+
+opening_event.99 = {
+	title = opening_event.99.t
+	desc = opening_event.99.desc
+	theme = dungeon
+	left_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+
+	trigger = {
+		is_ai = no
+		this = character:avihana_daramarjaratan_1
+	}
+
+	option = {
+		name = opening_event.99.a
+	}
+}
+
+opening_event.98 = {
+	title = opening_event.98.t
+	desc = opening_event.98.desc
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	trigger = {
+		is_ai = no
+		this = character:ilahanai_daramarjaratan_1
+	}
+
+	option = {
+		name = opening_event.98.a
+	}
+}
+
+opening_event.120 = {
+	hidden = yes
+
+	immediate = {
+		title:d_hyratan.holder = { save_scope_as = hyratan }
+		title:c_dhodoli.holder = { save_scope_as = mercenary }
+
+		scope:mercenary = {
+			add_truce_both_ways = {
+				character = scope:hyratan
+				years = 10
+				name = GH_KHARSTRANG_TRUCE
+			}
+		}
+	}
+}

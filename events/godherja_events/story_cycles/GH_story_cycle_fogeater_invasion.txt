@@ -1,0 +1,993 @@
+﻿namespace = fogeater_invasion
+
+# This really should be a story cycle...
+# Oh well, I'll refactor the last vestiges of great auld code at some point in the future
+
+fogeater_invasion.0001 = { # Setting up the invastion
+	scope = none
+	hidden = yes
+
+	trigger = { NOT = { has_game_rule = never_fogeater_invasion } }
+
+	immediate = {
+		if = {
+			limit = { has_game_rule = default_fogeater_invasion }
+			if = { # 1254 bookmark
+				limit = { game_start_date < 1260.1.1 }
+				trigger_event = {
+					id = fogeater_invasion.0002
+					years = { 76 96 }
+				}
+			}
+			else_if = { # 1298 bookmark
+				limit = { game_start_date < 1300.1.1 }
+				trigger_event = {
+					id = fogeater_invasion.0002
+					years = { 32 52 }
+				}
+			}
+		}
+		else_if = {
+			limit = { has_game_rule = random_fogeater_invasion }
+			if = { # 1254 bookmark
+				limit = { game_start_date < 1260.1.1 }
+				trigger_event = {
+					id = fogeater_invasion.0002
+					years = { 5 150 }
+				}
+			}
+			else_if = { # 1298 bookmark
+				limit = { game_start_date < 1300.1.1 }
+				trigger_event = {
+					id = fogeater_invasion.0002
+					years = { 5 100 }
+				}
+			}
+		}
+	}
+}
+
+fogeater_invasion.0002 = { # Fogeater buildup prior to the invasion
+	scope = none
+	hidden = yes
+
+	immediate = {
+		if = { # Decide spawn location
+			limit = { has_game_rule = default_fogeater_spawn_location }
+			random_list = {
+				70 = {
+					set_global_variable = {
+						name = fogeater_spawn_location_kalath
+						value = yes
+					}
+				}
+				30 = {
+					set_global_variable = {
+						name = fogeater_spawn_location_amaghea
+						value = yes
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { has_game_rule = kalath_fogeater_spawn_location }
+			set_global_variable = {
+				name = fogeater_spawn_location_kalath
+				value = yes
+			}
+		}
+		else_if = {
+			limit = { has_game_rule = aironoi_fogeater_spawn_location }
+			set_global_variable = {
+				name = fogeater_spawn_location_amaghea
+				value = yes
+			}
+		}
+		title:c_the_eternal_grove = { # Determine fogeater populations
+			if = {
+				limit = { has_global_variable = fogeater_spawn_location_kalath }
+				set_variable = {
+					name = pending_fogeater_population_kalath
+					value = { 11 14 }
+				}
+				set_variable = {
+					name = pending_fogeater_population_amaghea
+					value = { 6 9 }
+				}
+			}
+			else_if = {
+				limit = { has_global_variable = fogeater_spawn_location_amaghea }
+				set_variable = {
+					name = pending_fogeater_population_kalath
+					value = { 6 9 }
+				}
+				set_variable = {
+					name = pending_fogeater_population_amaghea
+					value = { 11 14 }
+				}
+			}
+			set_variable = {
+				name = pending_fogeater_population_eramasic_river_delta
+				value = { 9 12 }
+			}
+			set_variable = {
+				name = pending_fogeater_population_interior
+				value = { 5 8 }
+			}
+			set_variable = {
+				name = pending_fogeater_population_total
+				value = {
+					value = 0
+					add = var:pending_fogeater_population_kalath
+					add = var:pending_fogeater_population_amaghea
+					add = var:pending_fogeater_population_eramasic_river_delta
+					add = var:pending_fogeater_population_interior
+				}
+			}
+		}
+		while = {
+			count = title:c_the_eternal_grove.var:pending_fogeater_population_total
+			random_list = {
+				1 = {
+					trigger_event = {
+						id = fogeater_invasion.0003
+						years = { 5 45 }
+					}
+				}
+				1 = {
+					trigger_event = {
+						id = fogeater_invasion.0003
+						years = { 15 45 }
+					}
+				}
+				1 = {
+					trigger_event = {
+						id = fogeater_invasion.0003
+						years = { 25 45 }
+					}
+				}
+				1 = {
+					trigger_event = {
+						id = fogeater_invasion.0003
+						years = { 35 45 }
+					}
+				}
+			}
+		}
+		trigger_event = { # Imminent invasion
+			id = fogeater_invasion.0004
+			years = 45
+		}
+	}
+}
+
+scripted_effect populate_fogeater_tribes_effect = { # Spawn a new Fogeater tribe of random size
+	random_county_in_region = {
+		region = $REGION$
+		limit = {
+			holder = { is_ruin = yes }
+			duchy = { NOT = { exists = holder } }
+		}
+		save_scope_as = fogeater_county
+		create_character = {
+			location = scope:fogeater_county.title_province
+			template = fogeater_chieftain_template
+			save_scope_as = fogeater_county_holder
+		}
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = change
+			add_claim_on_loss = no
+		}
+		scope:fogeater_county = {
+			add_to_list = fogeater_tribe_titles
+			random_list = {
+				4 = { }
+				1 = { # Make it a multi-county Tribe
+					trigger = {
+						duchy = {
+							NOT = {
+								exists = holder
+								any_de_jure_county_holder = { is_ruin = no }
+							}
+						}
+					}
+					while = {
+						count = { 1 2 }
+						random_neighboring_county = {
+							limit = {
+								holder = { is_ruin = yes }
+								NOT = { is_in_list = fogeater_tribe_titles }
+							}
+							add_to_list = fogeater_tribe_titles
+						}
+					}
+				}
+				1 = { # Make it a Grand Tribe
+					trigger = {
+						duchy = {
+							NOT = {
+								exists = holder
+								any_de_jure_county_holder = { is_ruin = no }
+							}
+						}
+					}
+					duchy = { add_to_list = fogeater_tribe_titles }
+					while = {
+						count = { 1 2 }
+						random_neighboring_county = {
+							limit = {
+								holder = { is_ruin = yes }
+								NOT = { is_in_list = fogeater_tribe_titles }
+							}
+							add_to_list = fogeater_tribe_titles
+						}
+					}
+				}
+			}
+		}
+		every_in_list = {
+			list = fogeater_tribe_titles
+			change_title_holder = {
+				holder = scope:fogeater_county_holder
+				change = scope:change
+			}
+		}
+		scope:fogeater_county_holder = { becomes_independent = { change = scope:change } }
+		resolve_title_and_vassal_change = scope:change
+		scope:fogeater_county_holder = {
+			every_sub_realm_county = { remove_ruin = { COUNTY = this } }
+			if = {
+				limit = { NOT = { has_government = migratory_government } }
+				change_government = migratory_government
+			}
+			every_courtier = { convert_wasteland_to_fogeater_effect = yes }
+		}
+		while = {
+			count = { 7 14 }
+			create_character = {
+				gender_female_chance = 50
+				employer = scope:fogeater_county_holder
+				template = new_warrior_character
+				faith = scope:fogeater_county_holder.faith
+				culture = scope:fogeater_county_holder.culture
+			}
+		}
+	}
+}
+
+fogeater_invasion.0003 = { # Spawn a fogeater tribe
+	scope = none
+	hidden = yes
+
+	immediate = {
+		title:c_the_eternal_grove = {
+			random_list = {
+				1 = {
+					trigger = { var:pending_fogeater_population_kalath > 0 }
+					populate_fogeater_tribes_effect = { REGION = fogeater_buildup_region_kalathipsomi }
+					change_variable = {
+						name = pending_fogeater_population_kalath
+						add = -1
+					}
+					modifier = { add = var:pending_fogeater_population_kalath }
+				}
+				1 = {
+					trigger = { var:pending_fogeater_population_amaghea > 0 }
+					populate_fogeater_tribes_effect = { REGION = fogeater_buildup_region_amaghea }
+					change_variable = {
+						name = pending_fogeater_population_amaghea
+						add = -1
+					}
+					modifier = { add = var:pending_fogeater_population_amaghea }
+				}
+				1 = {
+					trigger = { var:pending_fogeater_population_eramasic_river_delta > 0 }
+					populate_fogeater_tribes_effect = { REGION = fogeater_buildup_region_eramasic_river_delta }
+					change_variable = {
+						name = pending_fogeater_population_eramasic_river_delta
+						add = -1
+					}
+					modifier = { add = var:pending_fogeater_population_eramasic_river_delta }
+				}
+				1 = {
+					trigger = { var:pending_fogeater_population_interior > 0 }
+					populate_fogeater_tribes_effect = { REGION = fogeater_buildup_region_interior }
+					change_variable = {
+						name = pending_fogeater_population_interior
+						add = -1
+					}
+					modifier = {
+						add = {
+							value = var:pending_fogeater_population_interior
+							multiply = 3
+						}
+					}
+				}
+			}
+			change_variable = {
+				name = pending_fogeater_population_total
+				add = -1
+			}
+			if = {
+				limit = { var:pending_fogeater_population_total = 0 }
+				remove_variable = pending_fogeater_population_kalath
+				remove_variable = pending_fogeater_population_amaghea
+				remove_variable = pending_fogeater_population_eramasic_river_delta
+				remove_variable = pending_fogeater_population_interior
+				remove_variable = pending_fogeater_population_total
+			}
+		}
+	}
+}
+
+fogeater_invasion.0004 = { # Invasion imminent in 5 years
+	scope = none
+	hidden = yes
+
+	immediate = {
+		trigger_event = { # Mundane warning ping
+			id = fogeater_invasion.0006
+			years = 3
+		}
+		trigger_event = { # The Moon warning ping
+			id = fogeater_invasion.0008
+			years = 4
+		}
+		trigger_event = { # Invasion begins
+			id = fogeater_invasion.0010
+			years = 5
+		}
+		every_player = { trigger_event = fogeater_invasion.0005 }
+	}
+}
+
+fogeater_invasion.0005 = { # Magi warning
+	type = character_event
+	content_source = dlc_gh
+	title = fogeater_invasion.0005.t
+	desc = fogeater_invasion.0005.desc
+	theme = death
+	override_background = { reference = foglands }
+	trigger = { ethereal_aspect_skill_trigger = { VALUE = 8 } }
+
+	option = {
+		name = fogeater_invasion.0005.a
+		stress_impact = {
+			base = medium_stress_gain
+			craven = major_stress_gain
+		}
+	}
+}
+
+fogeater_invasion.0006 = { # Ping players for a mundane warning
+	scope = none
+	hidden = yes
+
+	immediate = {
+		every_player = { trigger_event = fogeater_invasion.0007 }
+	}
+}
+
+fogeater_invasion.0007 = { # Mundane Warning
+	type = character_event
+	content_source = dlc_gh
+	title = fogeater_invasion.0007.t
+	desc = fogeater_invasion.0007.desc
+	theme = death
+	override_background = { reference = foglands }
+	trigger = { any_realm_province = { geographical_region = fogeater_invasion_danger_region } }
+
+	left_portrait = {
+		character = root
+		animation = map_worry
+	}
+
+	option = {
+		name = fogeater_invasion.0007.a
+	}
+}
+
+fogeater_invasion.0008 = { # Ping players for a moon warning
+	scope = none
+	hidden = yes
+
+	trigger = { ## GH TODO: Generalize
+		NOT = { has_global_variable = sundeath_phase_1_start }
+	}
+
+	immediate = {
+		set_permanent_moon_phase_effect = { MOON_PHASE = aelhyoer_moon } # Funky moon
+		set_global_variable = aelhyoer_moon_active
+		while = {
+			count = { 2 4 }
+			trigger_event = {
+				id = aervalr.0100
+				days = { 1 360 }
+			}
+		}
+		#every_player = { trigger_event = fogeater_invasion.0009 }
+	}
+}
+
+fogeater_invasion.0009 = { # The Moon starts to scream
+	type = character_event
+	content_source = dlc_gh
+	title = fogeater_invasion.0009.t
+	desc = fogeater_invasion.0009.desc
+	theme = gedeora
+	override_background = { reference = foglands }
+	orphan = yes
+
+	left_portrait = {
+		character = root
+		animation = map_worry
+	}
+
+	immediate = {
+		custom_tooltip = fogeater_invasion.0009.tt
+	}
+
+	option = { # You know what's going on
+		name = fogeater_invasion.0009.a
+		trigger = { ethereal_aspect_skill_trigger = { VALUE = 8 } }
+		custom_tooltip = fogeater_invasion.0009.tt.shards
+		add_aspect_skill_effect = { ASPECT = ethereal VALUE = 3 }
+		add_arcana_lifestyle_perk_points = 1
+		stress_impact = {
+			base = medium_stress_gain
+			craven = medium_stress_gain
+		}
+	}
+
+	option = { # You have a hunch what's going on
+		name = fogeater_invasion.0009.b
+		trigger = {
+			NOT = { ethereal_aspect_skill_trigger = { VALUE = 8 } }
+			any_realm_province = { geographical_region = fogeater_invasion_danger_region }
+		}
+		custom_tooltip = fogeater_invasion.0009.tt.shards
+		stress_impact = {
+			base = minor_stress_gain
+			craven = medium_stress_gain
+		}
+	}
+
+	option = { # You find it useful, if a bit strange
+		name = fogeater_invasion.0009.c
+		trigger = {
+			NAND = {
+				ethereal_aspect_skill_trigger = { VALUE = 8 }
+				any_realm_province = { geographical_region = fogeater_invasion_danger_region }
+			}
+			can_access_magic = yes
+		}
+		custom_tooltip = fogeater_invasion.0009.tt.shards
+		add_aspect_skill_effect = { ASPECT = ethereal VALUE = 1 }
+		add_arcana_lifestyle_xp = medium_lifestyle_xp
+	}
+
+	option = { # You find it mildly fascinating
+		name = fogeater_invasion.0009.d
+		trigger = {
+			NOR = {
+				ethereal_aspect_skill_trigger = { VALUE = 8 }
+				any_realm_province = { geographical_region = fogeater_invasion_danger_region }
+			}
+			has_trait = scholar
+		}
+		custom_tooltip = fogeater_invasion.0009.tt.shards
+		add_learning_lifestyle_xp = medium_lifestyle_xp
+	}
+
+	option = { # You are blissfully oblivious
+		name = fogeater_invasion.0009.e
+		trigger = {
+			NOR = {
+				ethereal_aspect_skill_trigger = { VALUE = 8 }
+				any_realm_province = { geographical_region = fogeater_invasion_danger_region }
+				can_access_magic = yes
+				has_trait = scholar
+			}
+		}
+		custom_tooltip = fogeater_invasion.0009.tt.shards
+	}
+}
+
+fogeater_invasion.0010 = { # Spawn the Invasion
+	scope = none
+	hidden = yes
+
+	immediate = {
+		debug_log = "Fogeaters appeared!"
+		debug_log_date = yes
+		spawn_fogeater_invader_effect = yes
+		spawn_fogeater_empire_effect = yes
+		spawn_fogeater_court_effect = yes
+		scope:fogeater_leader = {
+			spawn_fogeater_troops_effect = yes
+			create_story = story_fogeater_invasion
+		}
+		every_player = { trigger_event = fogeater_invasion.1001 }
+	}
+}
+
+fogeater_invasion.1001 = { # The Fogeater Invasion Starts
+	type = character_event
+	content_source = dlc_gh
+	window = fullscreen_event
+	title = fogeater_invasion.1001.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					OR = {
+						AND = {
+							has_global_variable = fogeater_spawn_location_kalath
+							any_realm_province = { geographical_region = special_fogeater_empire_kalathipsomi_conquest_extent }
+						}
+						AND = {
+							has_global_variable = fogeater_spawn_location_amaghea
+							any_realm_province = { geographical_region = special_fogeater_empire_aironoi_conquest_extent }
+						}
+					}
+				}
+				desc = fogeater_invasion.1001.desc.close
+			}
+			desc = fogeater_invasion.1001.desc.far
+		}
+	}
+	theme = war
+	override_background = { reference = gh_fogeater_invasion }
+
+	option = { # Close
+		name = { # Craven option
+			trigger = { has_trait = craven }
+			text = fogeater_invasion.1001.craven
+		}
+		name = { # The Grey Gates will hold
+			trigger = { has_global_variable = fogeater_spawn_location_kalath }
+			text = fogeater_invasion.1001.a.kalath
+		}
+		name = { # Amaghea will stop them
+			trigger = { has_global_variable = fogeater_spawn_location_amaghea }
+			text = fogeater_invasion.1001.a.amaghea
+		}
+		trigger = {
+			OR = {
+				AND = {
+					has_global_variable = fogeater_spawn_location_kalath
+					any_realm_province = { geographical_region = special_fogeater_empire_kalathipsomi_conquest_extent }
+				}
+				AND = {
+					has_global_variable = fogeater_spawn_location_amaghea
+					any_realm_province = { geographical_region = special_fogeater_empire_aironoi_conquest_extent }
+				}
+			}
+		}
+		exclusive = yes
+		custom_tooltip = fogeater_invasion.1001.tt
+		stress_impact = {
+			base = minor_stress_gain
+			craven = medium_stress_gain
+		}
+	}
+	
+	option = { # Distant
+		name = {
+			text = fogeater_invasion.1001.craven
+			trigger = { has_trait = craven }
+		}
+		name = {
+			text = fogeater_invasion.1001.b.north
+			trigger = { has_global_variable = fogeater_spawn_location_kalath }
+		}
+		name = {
+			text = fogeater_invasion.1001.b.east
+			trigger = { has_global_variable = fogeater_spawn_location_amaghea }
+		}
+		custom_tooltip = fogeater_invasion.1001.tt
+		stress_impact = { craven = minor_stress_gain }
+	}
+}
+
+fogeater_invasion.1003 = { # The Invasion is Beaten Back
+	type = character_event
+	content_source = dlc_gh
+	title = fogeater_invasion.1003.t
+	desc = fogeater_invasion.1003.desc
+	theme = war
+	override_background = { reference = battlefield }
+	trigger = {
+		OR = {
+			AND = {
+				has_global_variable = fogeater_spawn_location_kalath
+				any_realm_province = { geographical_region = special_fogeater_empire_kalathipsomi_conquest_extent }
+			}
+			AND = {
+				has_global_variable = fogeater_spawn_location_amaghea
+				any_realm_province = { geographical_region = special_fogeater_empire_aironoi_conquest_extent }
+			}
+		}
+	}
+
+	left_portrait = {
+		character = root
+		animation = celebrate_sword
+	}
+
+	option = { # The tide abates
+		name = fogeater_invasion.1003.a
+		custom_tooltip = fogeater_invasion.1003.a.tt
+		stress_impact = { base = miniscule_stress_loss }
+	}
+}
+
+fogeater_invasion.1004 = { # Second wave troops
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		spawn_army = {
+			uses_supply = no
+			inheritable = no
+			name = fogeater_event_troops
+			levies = {
+				value = 40000
+			}
+			men_at_arms = {
+				type = wodes
+				stacks = 50
+			}
+			men_at_arms = {
+				type = whisperers
+				stacks = 50
+			}
+			men_at_arms = {
+				type = mangonel
+				stacks = 20
+			}
+			men_at_arms = {
+				type = fogbeasts
+				stacks = 50
+			}
+			men_at_arms = {
+				type = fog_spirits
+				stacks = 50
+			}
+			location = capital_province
+		}
+	}
+}
+
+fogeater_invasion.1005 = { # The Invasion Ends
+	type = character_event
+	content_source = dlc_gh
+	window = fullscreen_event
+	title = fogeater_invasion.1005.t
+	desc = fogeater_invasion.1005.desc
+	theme = war
+	override_background = { reference = gh_fogeater_invasion }
+
+	option = { # End of an era
+		name = fogeater_invasion.1005.a
+		stress_impact = { base = minor_stress_loss }
+	}
+}
+
+fogeater_invasion.2001 = { # Unification of Fogeater Tribes
+	type = letter_event
+	opening = fogeater_invasion.2001.opening
+	desc = fogeater_invasion.2001.desc
+	sender = {
+		character = scope:fogeater_emperor
+		animation = personality_bold
+	}
+
+	trigger = {
+		NOT = { is_at_war_with = scope:fogeater_emperor }
+		NOT = { root = scope:fogeater_emperor }
+		NOT = { has_trait = gh_wasteland }
+	}
+
+	immediate = { save_scope_as = demand_recipient }
+
+	option = { # Submit
+		name = fogeater_invasion.2001.a
+		custom_tooltip = fogeater_invasion.2001.a.tt
+		hidden_effect = { scope:fogeater_emperor = { trigger_event = fogeater_invasion.2002 } }
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				is_fogeater = no
+			}
+		}
+	}
+
+	option = { # Resist
+		name = fogeater_invasion.2001.b
+		custom_tooltip = fogeater_invasion.2001.b.tt
+		add_internal_flag = dangerous
+		hidden_effect = { scope:fogeater_emperor = { trigger_event = fogeater_invasion.2003 } }
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				is_fogeater = yes
+			}
+		}
+	}
+}
+
+fogeater_invasion.2002 = { # Fogeaters submit
+	type = letter_event
+	opening = fogeater_invasion.2002.opening
+	desc = fogeater_invasion.2002.desc
+	sender = scope:demand_recipient
+
+	immediate = {
+		#create_title_and_vassal_change = {
+		#	type = swear_fealty
+		#	save_scope_as = title_change
+		#	add_claim_on_loss = no
+		#}
+		scope:demand_recipient = {
+			#change_liege = {
+			#	liege = root
+			#	change = scope:title_change
+			#}
+			every_realm_county = {
+				save_temporary_scope_as = fogeater_wastelands
+				spawn_ruin = { COUNTY = scope:fogeater_wastelands }
+			}
+		}
+		#resolve_title_and_vassal_change = scope:title_change
+	}
+
+	option = { # Wise choice
+		name = fogeater_invasion.2002.a
+	}
+}
+
+fogeater_invasion.2003 = { # Subjugation refused
+	type = letter_event
+	opening = fogeater_invasion.2003.opening
+	desc = fogeater_invasion.2003.desc
+	sender = {
+		character = scope:demand_recipient
+		animation = personality_bold
+	}
+
+	immediate = {
+		scope:demand_recipient.primary_title = { save_scope_as = target_title }
+	}
+
+	option = { # War it is
+		name = fogeater_invasion.2003.a
+		if = {
+			limit = { exists = scope:target_title.empire }
+			start_war = {
+				cb = fogeater_invasion_cb
+				target = scope:target_title.holder
+				target_title = scope:target_title.empire
+			}
+		}
+		else = {
+			start_war = {
+				cb = fogeater_invasion_cb
+				target = scope:target_title.holder
+				target_title = scope:target_title.holder.capital_province.empire
+			}
+		}
+	}
+}
+
+fogeater_invasion.3001 = { # Help attacked kingdom
+	type = character_event
+	content_source = dlc_gh
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { has_global_variable = arch_lich_active }
+				}
+				desc = fogeater_invasion.3001.t
+			}
+			triggered_desc = {
+				trigger = {
+					has_global_variable = arch_lich_active
+				}
+				desc = arch_lich_invasion.3001.t
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { has_global_variable = arch_lich_active }
+				}
+				desc = fogeater_invasion.3001.desc
+			}
+			triggered_desc = {
+				trigger = {
+					has_global_variable = arch_lich_active
+				}
+				desc = arch_lich_invasion.3001.desc
+			}
+		}
+	}
+	theme = war
+
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+
+	option = { # Join the coalition
+		name = fogeater_invasion.3001.a
+		add_prestige = medium_prestige_gain
+		scope:war = { add_defender = root }
+		add_character_flag = fogeater_defence_coalition_member
+		ai_chance = {
+			base = 15
+			ai_value_modifier = {
+				ai_honor = 0.2
+				ai_boldness = 0.2
+				ai_rationality = 0.4
+				ai_energy = 0.4
+				ai_zeal = 0.4
+			}
+			modifier = {
+				add = 800
+				OR = {
+					has_global_variable = fogeater_grey_gates
+					has_global_variable = fogeater_amaghea
+				}
+			}
+			modifier = {
+				add = 800
+				OR = {
+					has_global_variable = fogeater_kalath
+					has_global_variable = fogeater_asiupoli
+				}
+			}
+		}
+	}
+
+	option = { # FOR LE DEFENCE LA CHEVALIE
+		name = fogeater_invasion.3001.b
+		trigger = {
+			OR = {
+				root.faith.religion = religion:lifepath_religion
+				root.faith.religion = religion:graveright_religion
+			}
+			scope:target_title.empire = { this = title:e_chevalie }
+		}
+		add_prestige = medium_prestige_gain
+		scope:war = { add_defender = root }
+		add_character_flag = fogeater_defence_coalition_member
+		ai_chance = { base = 20000 }
+	}
+
+	option = { # Refuse
+		name = fogeater_invasion.3001.c
+		add_prestige = medium_prestige_loss
+		ai_chance = {
+			base = 400
+			modifier = { # Always pulls everyone in if Chevalie has fallen
+				add = -400
+				OR = {
+					has_global_variable = fogeater_chevalie
+					has_global_variable = fogeater_aironoi
+				}
+			}
+		}
+	}
+}
+
+# Fall events
+
+fogeater_invasion.4001 = { # Fall of the Grey Gates
+	type = character_event
+	content_source = dlc_gh
+	title = fogeater_invasion.4001.t
+	desc = fogeater_invasion.4001.desc
+	theme = death
+	override_background = { reference = foglands }
+
+	option = { # This is concerning
+		name = fogeater_invasion.4001.a
+	}
+}
+
+fogeater_invasion.4002 = { # Fall of Kalath
+	type = character_event
+	content_source = dlc_gh
+	title = fogeater_invasion.4002.t
+	desc = fogeater_invasion.4002.desc
+	theme = death
+	override_background = { reference = foglands }
+
+	option = { # This is very concerning
+		name = fogeater_invasion.4002.a
+	}
+}
+
+fogeater_invasion.4003 = { # Fall of Chevalie
+	type = character_event
+	content_source = dlc_gh
+	title = fogeater_invasion.4003.t
+	desc = fogeater_invasion.4003.desc
+	theme = death
+	override_background = { reference = foglands }
+
+	option = { # Good riddance!
+		name = fogeater_invasion.4003.a
+	}
+}
+
+fogeater_invasion.4004 = { # Fall of Amaghea
+	type = character_event
+	content_source = dlc_gh
+	title = fogeater_invasion.4004.t
+	desc = fogeater_invasion.4004.desc
+	theme = death
+	override_background = { reference = foglands }
+
+	option = { # Oh no! Anyway...
+		name = fogeater_invasion.4004.a
+	}
+}
+
+fogeater_invasion.4005 = { # Fall of Asiupoli
+	type = character_event
+	content_source = dlc_gh
+	title = fogeater_invasion.4005.t
+	desc = fogeater_invasion.4005.desc
+	theme = death
+	override_background = { reference = foglands }
+
+	option = { # Terrible news
+		name = fogeater_invasion.4005.a
+	}
+}
+
+fogeater_invasion.4006 = { # Fall of Aironoi
+	type = character_event
+	content_source = dlc_gh
+	title = fogeater_invasion.4006.t
+	desc = fogeater_invasion.4006.desc
+	theme = death
+	override_background = { reference = foglands }
+
+	option = { # Okay
+		name = fogeater_invasion.4006.a
+	}
+}
+
+fogeater_invasion.5000 = { # Give Aid to the Black Pass Against Fogeaters
+	type = character_event
+	content_source = dlc_gh
+	desc = fogeater_invasion.5000.desc
+	theme = secret
+
+	immediate = { title:d_bwlcheit = { holder.top_liege = { save_scope_as = black_pass_defender } } }
+
+	option = {
+		name = fogeater_invasion.5000.a
+		pay_short_term_gold = {
+			target = scope:black_pass_defender
+			gold = 200
+		}
+		add_prestige = medium_prestige_gain
+		ai_chance = {
+			base = 25
+		}
+	}
+
+	option = {
+		name = fogeater_invasion.5000.c
+	}
+}

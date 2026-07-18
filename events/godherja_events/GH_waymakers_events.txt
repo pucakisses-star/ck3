@@ -1,0 +1,1502 @@
+﻿namespace = waymakers_events
+
+###################################################
+## #Standard Events
+## 0001 - 0010	Waymakers offer a Retainer
+## 0011 - 0020	Waymakers terrorise their neighbours
+## 0021 - 0030	Waymakers send Event Troops
+## 0031 - 0040	SPARE
+## 0041 - 0050	Waymakers challenge a Dishonourable Norse Pagan Ruler to Holmgang
+##
+## #Special Events
+## 1001 - 1010	Waymakers Destroyed
+###################################################
+## #Generic Scripted Triggers
+
+scripted_trigger fp1_pious_enough_for_waymakers_reward_trigger = {
+	# You must share their faith.
+	faith = global_var:waymakers_title.holder.faith
+	# Piety level minimum.
+	piety_level >= high_piety_level
+	# Sin maximum.
+	num_sinful_traits <= 1
+	# Piety to spend.
+	piety >= major_piety_value
+	# The Grandmaster needs to not hate you also.
+	global_var:waymakers_title.holder = {
+		has_any_bad_relationship_with_root_trigger = no 
+		opinion = {
+			target = root
+			value >= low_negative_opinion
+		}
+	}
+}
+
+scripted_trigger fp1_waymakers_exist_in_range_trigger = {
+	# Do they exist at all?
+	exists = global_var:waymakers_title
+	# Are they within diplomatic range?
+	exists = global_var:waymakers_title.holder
+	in_diplomatic_range = global_var:waymakers_title.holder
+}
+
+###################################################
+## #Standard Events
+#
+###################################################
+## Jomsvikings offer a Retainer
+## by Ewan Cowhig Croft
+## 0001 - 0010
+###################################################
+
+##	You are rewarded for your piety with a loyal warrior.
+waymakers_events.0001 = {
+	type = character_event
+	title = waymakers_events.0001.t
+	desc = {
+		desc = waymakers_events.0001.desc.intro
+		# Describe scope:retainer_a.
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:retainer_a_descriptor = flag:zealous }
+				desc = waymakers_events.0001.desc.zealous
+			}
+			triggered_desc = {
+				trigger = { scope:retainer_a_descriptor = flag:wrathful }
+				desc = waymakers_events.0001.desc.wrathful
+			}
+			triggered_desc = {
+				trigger = { scope:retainer_a_descriptor = flag:impatient }
+				desc = waymakers_events.0001.desc.impatient
+			}
+			triggered_desc = {
+				trigger = { scope:retainer_a_descriptor = flag:arrogant }
+				desc = waymakers_events.0001.desc.arrogant
+			}
+			triggered_desc = {
+				trigger = { scope:retainer_a_descriptor = flag:brave }
+				desc = waymakers_events.0001.desc.brave
+			}
+			triggered_desc = {
+				trigger = { scope:retainer_a_descriptor = flag:ambitious }
+				desc = waymakers_events.0001.desc.ambitious
+			}
+			triggered_desc = {
+				trigger = { scope:retainer_a_descriptor = flag:diligent }
+				desc = waymakers_events.0001.desc.diligent
+			}
+			triggered_desc = {
+				trigger = { scope:retainer_a_descriptor = flag:gregarious }
+				desc = waymakers_events.0001.desc.gregarious
+			}
+			triggered_desc = {
+				trigger = { scope:retainer_a_descriptor = flag:stubborn }
+				desc = waymakers_events.0001.desc.stubborn
+			}
+			triggered_desc = {
+				trigger = { scope:retainer_a_descriptor = flag:fickle }
+				desc = waymakers_events.0001.desc.fickle
+			}
+			triggered_desc = {
+				trigger = { scope:retainer_a_descriptor = flag:vengeful }
+				desc = waymakers_events.0001.desc.vengeful
+			}
+			triggered_desc = {
+				trigger = { scope:retainer_a_descriptor = flag:viking }
+				desc = waymakers_events.0001.desc.viking
+			}
+		}
+		desc = waymakers_events.0001.desc.connector
+		# Describe scope:retainer_b.
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:retainer_b_descriptor = flag:zealous }
+				desc = waymakers_events.0001.desc.zealous
+			}
+			triggered_desc = {
+				trigger = { scope:retainer_b_descriptor = flag:wrathful }
+				desc = waymakers_events.0001.desc.wrathful
+			}
+			triggered_desc = {
+				trigger = { scope:retainer_b_descriptor = flag:impatient }
+				desc = waymakers_events.0001.desc.impatient
+			}
+			triggered_desc = {
+				trigger = { scope:retainer_b_descriptor = flag:arrogant }
+				desc = waymakers_events.0001.desc.arrogant
+			}
+			triggered_desc = {
+				trigger = { scope:retainer_b_descriptor = flag:brave }
+				desc = waymakers_events.0001.desc.brave
+			}
+			triggered_desc = {
+				trigger = { scope:retainer_b_descriptor = flag:ambitious }
+				desc = waymakers_events.0001.desc.ambitious
+			}
+			triggered_desc = {
+				trigger = { scope:retainer_b_descriptor = flag:diligent }
+				desc = waymakers_events.0001.desc.diligent
+			}
+			triggered_desc = {
+				trigger = { scope:retainer_b_descriptor = flag:gregarious }
+				desc = waymakers_events.0001.desc.gregarious
+			}
+			triggered_desc = {
+				trigger = { scope:retainer_b_descriptor = flag:stubborn }
+				desc = waymakers_events.0001.desc.stubborn
+			}
+			triggered_desc = {
+				trigger = { scope:retainer_b_descriptor = flag:fickle }
+				desc = waymakers_events.0001.desc.fickle
+			}
+			triggered_desc = {
+				trigger = { scope:retainer_b_descriptor = flag:vengeful }
+				desc = waymakers_events.0001.desc.vengeful
+			}
+			triggered_desc = {
+				trigger = { scope:retainer_b_descriptor = flag:viking }
+				desc = waymakers_events.0001.desc.viking
+			}
+		}
+		desc = waymakers_events.0001.desc.outro
+	}
+	theme = faith
+	left_portrait = {
+		character = scope:retainer_a
+		animation = personality_zealous
+	}
+	right_portrait = {
+		character = scope:retainer_b
+		animation = admiration
+	}
+	lower_center_portrait = scope:founder
+	override_background = { reference = throne_room }
+
+	trigger = {
+		# DLC check.
+		has_fp1_dlc_trigger = yes
+		# The Jomsvikings must exist; check this before the usual standard checks for best efficiency.
+		fp1_waymakers_exist_in_range_trigger = yes
+		# Standard checks.
+		is_available_at_peace_adult = yes
+		NOT = { has_character_flag = had_event_waymakers_events_0001 }
+		# You must fulfill their generic piety requirements.
+		fp1_pious_enough_for_waymakers_reward_trigger = yes
+	}
+
+	weight_multiplier = {
+		base = 1
+
+		# Weight up for excess levels of piety & high levels of prestige.
+		fp1_jomsvikings_approve_of_extra_piety_and_prestige_modifier = yes
+	}
+
+	immediate = {
+		add_character_flag = {
+			flag = had_event_waymakers_events_0001
+			days = 1825
+		}
+		# Grab the Grandmaster.
+		global_var:waymakers_title.holder = { save_scope_as = founder }
+		# Generate a brace of possible retainers.
+		## First a martial-focused character.
+		create_character = {
+			location = root.capital_province
+			template = fp1_waymaker_retainer_martial
+			save_scope_as = retainer_a
+		}
+		## Then a prowess-focused character.
+		create_character = {
+			location = root.capital_province
+			template = fp1_waymaker_retainer_prowess
+			save_scope_as = retainer_b
+		}
+		# Generate a descriptive string for each retainer.
+		## Twelve options of 8.3% each.
+		## First, retainer_a.
+		scope:retainer_a = {
+			random_list = {
+				# Zealous
+				100 = {
+					trigger = { has_trait = zealous }
+					save_scope_value_as = {
+						name = retainer_a_descriptor
+						value = flag:zealous
+					}
+				}
+				# Wrathful
+				100 = {
+					trigger = { has_trait = wrathful }
+					save_scope_value_as = {
+						name = retainer_a_descriptor
+						value = flag:wrathful
+					}
+				}
+				# Impatient
+				100 = {
+					trigger = { has_trait = impatient }
+					save_scope_value_as = {
+						name = retainer_a_descriptor
+						value = flag:impatient
+					}
+				}
+				# Arrogant
+				100 = {
+					trigger = { has_trait = arrogant }
+					save_scope_value_as = {
+						name = retainer_a_descriptor
+						value = flag:arrogant
+					}
+				}
+				# Brave
+				100 = {
+					trigger = { has_trait = brave }
+					save_scope_value_as = {
+						name = retainer_a_descriptor
+						value = flag:brave
+					}
+				}
+				# Ambitious
+				100 = {
+					trigger = { has_trait = ambitious }
+					save_scope_value_as = {
+						name = retainer_a_descriptor
+						value = flag:ambitious
+					}
+				}
+				# Diligent
+				100 = {
+					trigger = { has_trait = diligent }
+					save_scope_value_as = {
+						name = retainer_a_descriptor
+						value = flag:diligent
+					}
+				}
+				# Gregarious
+				100 = {
+					trigger = { has_trait = gregarious }
+					save_scope_value_as = {
+						name = retainer_a_descriptor
+						value = flag:gregarious
+					}
+				}
+				# Stubborn
+				100 = {
+					trigger = { has_trait = stubborn }
+					save_scope_value_as = {
+						name = retainer_a_descriptor
+						value = flag:stubborn
+					}
+				}
+				# Fickle
+				100 = {
+					trigger = { has_trait = fickle }
+					save_scope_value_as = {
+						name = retainer_a_descriptor
+						value = flag:fickle
+					}
+				}
+				# Vengeful
+				100 = {
+					trigger = { has_trait = vengeful }
+					save_scope_value_as = {
+						name = retainer_a_descriptor
+						value = flag:vengeful
+					}
+				}
+				# Viking
+				100 = {
+					trigger = { has_trait = viking }
+					save_scope_value_as = {
+						name = retainer_a_descriptor
+						value = flag:viking
+					}
+				}
+			}
+		}
+		## Then, retainer_b.
+		scope:retainer_b = {
+			random_list = {
+				# Zealous
+				100 = {
+					trigger = {
+						has_trait = zealous
+						NOT = { scope:retainer_a_descriptor = flag:zealous }
+					}
+					save_scope_value_as = {
+						name = retainer_b_descriptor
+						value = flag:zealous
+					}
+				}
+				# Wrathful
+				100 = {
+					trigger = {
+						has_trait = wrathful
+						NOT = { scope:retainer_a_descriptor = flag:wrathful }
+					}
+					save_scope_value_as = {
+						name = retainer_b_descriptor
+						value = flag:wrathful
+					}
+				}
+				# Impatient
+				100 = {
+					trigger = {
+						has_trait = impatient
+						NOT = { scope:retainer_a_descriptor = flag:impatient }
+					}
+					save_scope_value_as = {
+						name = retainer_b_descriptor
+						value = flag:impatient
+					}
+				}
+				# Arrogant
+				100 = {
+					trigger = {
+						has_trait = arrogant
+						NOT = { scope:retainer_a_descriptor = flag:arrogant }
+					}
+					save_scope_value_as = {
+						name = retainer_b_descriptor
+						value = flag:arrogant
+					}
+				}
+				# Brave
+				100 = {
+					trigger = {
+						has_trait = brave
+						NOT = { scope:retainer_a_descriptor = flag:brave }
+					}
+					save_scope_value_as = {
+						name = retainer_b_descriptor
+						value = flag:brave
+					}
+				}
+				# Ambitious
+				100 = {
+					trigger = {
+						has_trait = ambitious
+						NOT = { scope:retainer_a_descriptor = flag:ambitious }
+					}
+					save_scope_value_as = {
+						name = retainer_b_descriptor
+						value = flag:ambitious
+					}
+				}
+				# Diligent
+				100 = {
+					trigger = {
+						has_trait = diligent
+						NOT = { scope:retainer_a_descriptor = flag:diligent }
+					}
+					save_scope_value_as = {
+						name = retainer_b_descriptor
+						value = flag:diligent
+					}
+				}
+				# Gregarious
+				100 = {
+					trigger = {
+						has_trait = gregarious
+						NOT = { scope:retainer_a_descriptor = flag:gregarious }
+					}
+					save_scope_value_as = {
+						name = retainer_b_descriptor
+						value = flag:gregarious
+					}
+				}
+				# Stubborn
+				100 = {
+					trigger = {
+						has_trait = stubborn
+						NOT = { scope:retainer_a_descriptor = flag:stubborn }
+					}
+					save_scope_value_as = {
+						name = retainer_b_descriptor
+						value = flag:stubborn
+					}
+				}
+				# Fickle
+				100 = {
+					trigger = {
+						has_trait = fickle
+						NOT = { scope:retainer_a_descriptor = flag:fickle }
+					}
+					save_scope_value_as = {
+						name = retainer_b_descriptor
+						value = flag:fickle
+					}
+				}
+				# Vengeful
+				100 = {
+					trigger = {
+						has_trait = vengeful
+						NOT = { scope:retainer_a_descriptor = flag:vengeful }
+					}
+					save_scope_value_as = {
+						name = retainer_b_descriptor
+						value = flag:vengeful
+					}
+				}
+				# Viking
+				100 = {
+					trigger = {
+						has_trait = viking
+						NOT = { scope:retainer_a_descriptor = flag:viking }
+					}
+					save_scope_value_as = {
+						name = retainer_b_descriptor
+						value = flag:viking
+					}
+				}
+			}
+		}
+	}
+
+	# Scope:retainer_a looks formidable!
+	option = {
+		name = waymakers_events.0001.a
+
+		# Spend the piety cost.
+		add_piety = major_piety_loss
+		# Gain the courtier.
+		add_courtier = scope:retainer_a
+		# Send the other lad packing back to the Jomsvikings.
+		hidden_effect = {
+			scope:leader = { add_courtier = scope:retainer_b }
+		}
+
+		stress_impact = {
+			trusting = minor_stress_impact_loss
+			zealous = medium_stress_impact_loss
+			paranoid = medium_stress_impact_gain
+			cynical = major_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_zeal = 0.75
+				ai_sociability = 0.25
+			}
+			modifier = {	# Weight up for stress.
+				add = 10
+				has_trait = trusting
+			}
+			modifier = {	# Weight up for stress.
+				add = 20
+				has_trait = zealous
+			}
+			modifier = {	# Weight down for stress.
+				add = -20
+				has_trait = paranoid
+			}
+			modifier = {	# Weight down for stress.
+				add = -30
+				has_trait = cynical
+			}
+		}
+	}
+
+	# Scope:retainer_b shall serve me well.
+	option = {
+		name = waymakers_events.0001.b
+
+		# Spend the piety cost.
+		add_piety = major_piety_loss
+		# Gain the courtier.
+		add_courtier = scope:retainer_b
+		# Send the other lad packing back to the Jomsvikings.
+		hidden_effect = {
+			scope:founder = { add_courtier = scope:retainer_a }
+		}
+
+		stress_impact = {
+			trusting = minor_stress_impact_loss
+			zealous = medium_stress_impact_loss
+			paranoid = medium_stress_impact_gain
+			cynical = major_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_zeal = 0.75
+				ai_sociability = 0.25
+			}
+			modifier = {	# Weight up for stress.
+				add = 10
+				has_trait = trusting
+			}
+			modifier = {	# Weight up for stress.
+				add = 20
+				has_trait = zealous
+			}
+			modifier = {	# Weight down for stress.
+				add = -20
+				has_trait = paranoid
+			}
+			modifier = {	# Weight down for stress.
+				add = -30
+				has_trait = cynical
+			}
+		}
+	}
+
+	# I'm fine, thanks.
+	option = {
+		name = waymakers_events.0001.c
+
+		# Gain a little consolation prestige.
+		add_prestige = minor_prestige_gain
+		# Send both lads packing.
+		scope:founder = {
+			hidden_effect = {
+				add_courtier = scope:retainer_a
+				add_courtier = scope:retainer_b
+			}
+		}
+		# The Grandmaster considers this an insult.
+		scope:founder = {
+			add_opinion = {
+				target = root
+				modifier = insult_opinion
+				opinion = -30
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						can_set_relation_potential_rival_trigger = { CHARACTER = root }
+					}
+					set_relation_potential_rival = root
+				}
+			}
+		}
+
+		stress_impact = {
+			paranoid = medium_stress_impact_loss
+			cynical = major_stress_impact_loss
+			trusting = minor_stress_impact_gain
+			zealous = major_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_zeal = -0.5
+				ai_rationality = -0.25
+			}
+			modifier = {	# Weight up for stress.
+				add = 20
+				has_trait = paranoid
+			}
+			modifier = {	# Weight up for stress.
+				add = 30
+				has_trait = cynical
+			}
+			modifier = {	# Weight down for stress.
+				add = -10
+				has_trait = trusting
+			}
+			modifier = {	# Weight down for stress.
+				add = -30
+				has_trait = zealous
+			}
+		}
+	}
+}
+
+###################################################
+## Jomsvikings send Event Troops
+## by Ewan Cowhig Croft
+## 0021 - 0030
+###################################################
+
+#	The Jomsvikings offer you a force of loyal pirates.
+waymakers_events.0021 = {
+	type = character_event
+	title = waymakers_events.0021.t
+	desc = waymakers_events.0021.desc
+	theme = faith
+	right_portrait = {
+		character = scope:founder
+		animation = admiration
+	}
+	override_background = { reference = fp1_beached_longships }
+
+	trigger = {
+		# DLC check.
+		has_fp1_dlc_trigger = yes
+#		# The Jomsvikings must exist; check this beforethe usual standard checks for best efficiency.
+		fp1_waymakers_exist_in_range_trigger = yes
+		# Standard checks.
+		is_available_at_peace_adult = yes
+		NOT = { has_character_flag =had_event_waymakers_events_0021 }
+		# You must fulfill their generic pietyrequirements.
+		fp1_pious_enough_for_waymakers_reward_trigger= yes
+	}
+
+	weight_multiplier = {
+		base = 1
+	
+		# Weight up for excess levels of piety & highlevels of prestige.
+		fp1_jomsvikings_approve_of_extra_piety_and_prestige_modifier = yes
+	}
+
+	immediate = {
+		add_character_flag = {
+			flag = had_event_waymakers_events_0021
+			days = 1825
+		}
+		# Grab the Grandmaster.
+		global_var:waymakers_title.holder = {save_scope_as = founder }
+	}
+
+#	# Pirates? In *my* good Sjalvolki household? It's morelikely than you'd think!
+	option = {
+		name = waymakers_events.0021.a
+
+		# Spend the piety cost.
+		add_piety = major_piety_loss
+		# Explanatory tooltip.
+		custom_tooltip = waymakers_events.0021.a.tt
+		# Give the actual troops.
+		spawn_army = {
+			levies = 250
+			men_at_arms = {
+				type = sjalvolki_waymakers
+				stacks = 4
+			}
+			location = root.capital_province
+			origin = scope:founder.capital_province
+			name = fp1_jomsvikings_event_troops
+		}
+
+		stress_impact = {
+			ambitious = medium_stress_impact_loss
+			zealous = medium_stress_impact_loss
+			content = medium_stress_impact_gain
+			cynical = major_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_zeal = 0.75
+				ai_sociability = 0.25
+			}
+			modifier = {	# Weight up for stress.
+				add = 20
+				has_trait = ambitious
+			}
+			modifier = {	# Weight up for stress.
+				add = 20
+				has_trait = zealous
+			}
+			modifier = {	# Weight down for stress.
+				add = -20
+				has_trait = content
+			}
+			modifier = {	# Weight down for stress.
+				add = -30
+				has_trait = cynical
+			}
+		}
+	}
+#
+	# Perhaps some more reputable volunteers?
+	option = {
+		name = waymakers_events.0021.b
+
+		# Spend the piety cost.
+		add_piety = major_piety_loss
+		# Explanatory tooltip.
+		custom_tooltip = waymakers_events.0021.b.tt
+		# Give the actual troops.
+		spawn_army = {
+			levies = 250
+			men_at_arms = {
+				type = sjalvolki_berserkers
+				stacks = 4
+			}
+			location = root.capital_province
+			origin = scope:founder.capital_province
+			name = fp1_jomsvikings_event_troops
+		}
+
+		stress_impact = {
+			ambitious = medium_stress_impact_loss
+			zealous = medium_stress_impact_loss
+			content = medium_stress_impact_gain
+			cynical = major_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_zeal = 0.75
+				ai_sociability = 0.25
+			}
+			modifier = {	# Weight up for stress.
+				add = 20
+				has_trait = ambitious
+			}
+			modifier = {	# Weight up for stress.
+				add = 20
+				has_trait = zealous
+			}
+			modifier = {	# Weight down for stress.
+				add = -20
+				has_trait = content
+			}
+			modifier = {	# Weight down for stress.
+				add = -30
+				has_trait = cynical
+			}
+		}
+	}
+#
+	# I'm fine, thanks.
+	option = {
+		name = waymakers_events.0021.c
+
+		# Gain a little consolation prestige.
+		add_prestige = minor_prestige_gain
+		# The Grandmaster considers this an insult.
+		scope:founder = {
+			add_opinion = {
+				target = root
+				modifier = insult_opinion
+				opinion = -30
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						can_set_relation_potential_rival_trigger = { CHARACTER =root }
+					}
+					set_relation_potential_rival = root
+				}
+			}
+		}
+
+		stress_impact = {
+			paranoid = medium_stress_impact_loss
+			cynical = major_stress_impact_loss
+			trusting = minor_stress_impact_gain
+			zealous = major_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_zeal = -0.5
+				ai_rationality = -0.25
+			}
+			modifier = {	# Weight up for stress.
+				add = 20
+				has_trait = paranoid
+			}
+			modifier = {	# Weight up for stress.
+				add = 30
+				has_trait = cynical
+			}
+			modifier = {	# Weight down for stress.
+				add = -10
+				has_trait = trusting
+			}
+			modifier = {	# Weight down for stress.
+				add = -30
+				has_trait = zealous
+			}
+		}
+	}
+}
+
+###################################################
+## Jomsvikings challenge a Dishonourable Norse Pagan Ruler to Holmgang
+## by Ewan Cowhig Croft
+## 0041 - 0050
+###################################################
+
+scripted_trigger fp1_majorly_irked_waymakers_trigger = {
+	OR = {
+		## Trucebreaker.
+		has_character_modifier = broke_truce
+		## High tyranny.
+		tyranny >= high_tyranny
+	}
+}
+
+##	Considering you a blight on the faith, the Grandmaster of the Jomsvikings challenges you to the death.
+waymakers_events.0041 = {
+	type = character_event
+	title = waymakers_events.0041.t
+	desc = waymakers_events.0041.desc
+	theme = death
+	left_portrait = {
+		character = root
+		# Craven characters are terrifed.
+		triggered_animation = {
+			trigger = { has_trait = craven }
+			animation = fear
+		}
+		# Everyone else is just shocked.
+		triggered_animation = {
+			trigger = {
+				NOT = { has_trait = craven }
+			}
+			animation = shock
+		}
+	}
+	right_portrait = {
+		character = scope:founder
+		animation = rage
+	}
+	override_background = { reference = throne_room }
+
+	trigger = {
+		# DLC check.
+		has_fp1_dlc_trigger = yes
+		# The Jomsvikings must exist; check this before the usual standard checks for best efficiency.
+		fp1_waymakers_exist_in_range_trigger = yes
+		# Standard checks; make sure that scope:founder is available also.
+		is_landed = yes
+		is_available_at_peace_adult = yes
+		global_var:waymakers_title.holder = { is_available_at_peace_adult = yes }
+		NOT = { has_character_flag = had_event_waymakers_events_0041 }
+		# Must be following the right rite
+		faith = global_var:waymakers_title.holder.faith
+		# Eligibility checks.
+		## For holmgangs in general.
+		### Root.
+		can_start_single_combat_trigger = yes
+		can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = global_var:waymakers_title.holder }
+		### Scope:founder.
+		global_var:waymakers_title.holder = {
+			can_start_single_combat_trigger = yes
+			# No need to check whether scope:founder is an eligible warrior, as they're already the head of a warrior order.
+		}
+		## Is scope:founder either actually at all competent in a fight or dumb enough to think they are?
+		global_var:waymakers_title.holder = {
+			OR = {
+				prowess >= medium_scsk
+				has_trait = intellect_bad
+			}
+		}
+		# You must unequivocally a bastard for them to think you need to be removed.
+		OR = {
+			# Any serious reason is valid.
+			fp1_majorly_irked_waymakers_trigger = yes
+			# But a large amount of minor reasons are also good.
+			calc_true_if = {
+				amount >= 4
+				# The sinful.
+				num_sinful_traits >= 2
+				has_trait = cynical
+				# The shameful.
+				prestige_level <= 0
+				piety_level <= 0
+				tyranny >= medium_tyranny
+				dread >= high_dread
+				# Criminals.
+				## Kinslayer.
+				AND = {
+					has_trait = kinslayer_1
+					faith = { has_doctrine_parameter = kinslaying_any_dynasty_member_crime }
+				}
+				AND = {
+					has_trait = kinslayer_2
+					faith = { has_doctrine_parameter = kinslaying_extended_family_crime }
+				}
+				AND = {
+					has_trait = kinslayer_3
+					faith = { has_doctrine_parameter = kinslaying_close_kin_crime }
+				}
+				## Deviant.
+				AND = {
+					has_trait = deviant
+					faith = { has_doctrine_parameter = deviancy_illegal }
+				}
+				## Cannibal.
+				AND = {
+					has_trait = cannibal
+					NOT = {
+						faith = { has_doctrine_parameter = cannibalism_legal }
+					}
+				}
+				## Sodomite.
+				AND = {
+					has_trait = sodomite
+					faith = { has_doctrine_parameter = homosexuality_illegal }
+				}
+				## Incestuous.
+				AND = {
+					has_trait = incestuous
+					NOT = {
+						faith = { has_doctrine_parameter = consanguinity_unrestricted_incest }
+					}
+				}
+				## Adulterer.
+				AND = {
+					has_trait = adulterer
+					is_male = yes
+					faith = { has_doctrine_parameter = adultery_male_crime }
+				}
+				AND = {
+					has_trait = adulterer
+					is_female = yes
+					faith = { has_doctrine_parameter = adultery_female_crime }
+				}
+				## Fornicator.
+				AND = {
+					has_trait = fornicator
+					is_male = yes
+					faith = { has_doctrine_parameter = adultery_male_crime }
+				}
+				AND = {
+					has_trait = fornicator
+					is_female = yes
+					faith = { has_doctrine_parameter = adultery_female_crime }
+				}
+				## Murderer.
+				has_trait = murderer
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+	#
+		# We don't want to see this in the wild too much, so weight down against AI.
+		modifier = {
+			add = -0.5
+			is_ai = yes
+		}
+
+		# Weight it down a bit more if you lack any of the major reasons.
+		modifier = {
+			add = -0.25
+			fp1_majorly_irked_waymakers_trigger = no
+		}
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_murder"
+		add_character_flag = {
+			flag = had_event_waymakers_events_0041
+			days = 7300
+		}
+		# Grab the Grandmaster.
+		global_var:waymakers_title.holder = { save_scope_as = founder }
+		# Rip the Grandmaster's shirt off.
+		scope:leader = { add_character_flag = single_combat_stripped_to_waist }
+		# Is the Grandmaster hopelessly outmatched? Try to boost them up a little if so.
+		hidden_effect = {
+			if = {
+				limit = {
+					prowess_diff = {
+						target = scope:founder
+						value >= 10
+					}
+				}
+				scope:founder = {
+					# Give them berserker.
+					if = {
+						limit = {
+							NOT = { has_trait = berserker }
+						}
+						add_trait = berserker
+					}
+					# Or, failing that, raider.
+					else_if = {
+						limit = {
+							NOT = { has_trait = viking }
+						}
+						add_trait = viking
+					}
+					# Or else just a slight base prowess boost.
+					else = { add_prowess_skill = 4 }
+				}
+			}
+		}
+	}
+
+	# I'll send you to Valhöll with a smile.
+	option = {
+		name = waymakers_events.0041.a
+
+		# First, strip to the waist.
+		add_character_flag = single_combat_stripped_to_waist
+		# It's time to d-d-d-duel!
+		custom_tooltip = waymakers_events.0041.a.tt
+		configure_start_single_combat_effect = {
+			SC_INITIATOR = scope:founder
+			SC_ATTACKER = scope:founder
+			SC_DEFENDER = root
+			FATALITY = always
+			FIXED = no
+			LOCALE = throne_room
+			OUTPUT_EVENT = waymakers_events.0043
+			INVALIDATION_EVENT = waymakers_events.0042
+		}
+		# Show possible results.
+		show_as_tooltip = {
+			random_list = {
+				# Root wins.
+				50 = {
+					show_chance = no
+					desc = waymakers_events.0041.a.tt_success
+					scope:founder = {
+						death = {
+							killer = root
+							death_reason = death_duel
+						}
+					}
+					add_prestige = major_prestige_gain
+					add_kinslayer_trait_or_nothing_effect = { VICTIM = scope:founder }
+				}
+				# Scope:founder wins.
+				50 = {
+					show_chance = no
+					desc = waymakers_events.0041.a.tt_failure
+					death = {
+						killer = scope:founder
+						death_reason = death_duel
+					}
+					scope:founder = {
+						add_prestige = major_prestige_gain
+						add_kinslayer_trait_or_nothing_effect = { VICTIM = root }
+					}
+				}
+			}
+		}
+
+		stress_impact = {
+			arrogant = minor_stress_impact_loss
+			brave = major_stress_impact_loss
+			craven = major_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_honor = 0.5
+				ai_vengefulness = 0.25
+				ai_boldness = -0.25
+			}
+			modifier = {	# Weight up for stress.
+				add = 10
+				has_trait = arrogant
+			}
+			modifier = {	# Weight up for stress.
+				add = 30
+				has_trait = brave
+			}
+			modifier = {	# Weight down for stress.
+				add = -30
+				has_trait = craven
+			}
+		}
+	}
+#
+	# You were a fool to come alone. Guards!
+	option = {
+		name = waymakers_events.0041.b
+
+		# If possible, scope:founder immediately becomes your nemesis.
+		if = {
+			limit = {
+				NOT = { has_relation_nemesis = scope:founder }
+			}
+			# No matter what relationship you had or didn't have, they become your nemesis.
+			if = {
+				limit = { has_relation_best_friend = scope:founder }
+				remove_relation_best_friend = scope:founder
+				set_relation_nemesis = scope:founder
+			}
+			# If you have no relation or were friends, they become your rival.
+			else_if = {
+				limit = { has_relation_friend = scope:founder }
+				remove_relation_friend = scope:founder
+				set_relation_nemesis = scope:founder
+			}
+			else = { set_relation_nemesis = scope:founder }
+		}
+		else = {
+			reverse_add_opinion = {
+				target = scope:founder
+				modifier = hate_opinion
+				opinion = -50
+			}
+		}
+		# You attempt to capture scope:founder.
+		duel = {
+			skill = martial
+			target = scope:founder
+			# Scope:founder is shackled & hauled off to the dungeon.
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -40
+				}
+				desc = waymakers_events.0041.b.tt_success
+				send_interface_toast = {
+					title = waymakers_events.0041.b.tt_success
+					left_icon = scope:founder
+					# Scope:founder is tossed straight into the dungeon.
+					rightfully_imprison_character_effect = {
+						TARGET = scope:founder
+						IMPRISONER = root
+					}
+					hidden_effect = {
+						scope:founder = { change_prison_type = dungeon }
+					}
+					# You still lose a prestige level, since you're being an utter bastard.
+					add_prestige_level = -1
+					# But you do gain a good chunk of dread.
+					add_dread = medium_dread_gain
+				}
+			}
+			# Scope:leader effects a daring escape.
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -40
+				}
+				desc = waymakers_events.0041.b.tt_failure
+				send_interface_toast = {	
+					title = waymakers_events.0041.b.tt_failure
+					left_icon = scope:founder
+					# You lose a prestige level *and* take heftier penalties for your dishonour.
+					add_prestige_level = -1
+					add_prestige = monumental_prestige_loss
+				}
+			}
+		}
+
+		stress_impact = {
+			vengeful = medium_stress_impact_loss
+			arbitrary = major_stress_impact_loss
+			forgiving = medium_stress_impact_gain
+			just = major_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_vengefulness = 0.5
+				ai_honor = -0.75
+			}
+			modifier = {	# Weight up for stress.
+				add = 20
+				has_trait = vengeful
+			}
+			modifier = {	# Weight up for stress.
+				add = 30
+				has_trait = arbitrary
+			}
+			modifier = {	# Weight down for stress.
+				add = -20
+				has_trait = forgiving
+			}
+			modifier = {	# Weight down for stress.
+				add = -30
+				has_trait = just
+			}
+		}
+	}
+
+	# Hah, right, because I just fight any random pirate that walks into my castle?
+	option = {
+		name = waymakers_events.0041.c
+
+		# If possible, scope:leader immediately becomes your rival.
+		if = {
+			limit = {
+				NOR = {
+					has_relation_rival = scope:founder
+					has_relation_nemesis = scope:founder
+				}
+			}
+			# If you were best friends, they become your nemesis.
+			if = {
+				limit = { has_relation_best_friend = scope:founder }
+				remove_relation_best_friend = scope:founder
+				set_relation_nemesis = scope:founder
+			}
+			# If you have no relation or were friends, they become your rival.
+			else_if = {
+				limit = { has_relation_friend = scope:founder }
+				remove_relation_friend = scope:founder
+				set_relation_rival = scope:founder
+			}
+			else = { set_relation_rival = scope:founder }
+		}
+		else = {
+			reverse_add_opinion = {
+				target = scope:founder
+				modifier = hate_opinion
+				opinion = -50
+			}
+		}
+		# And you take some hefty prestige penalties for your refusal.
+		add_prestige_level = -1
+		add_prestige = massive_prestige_loss
+
+		stress_impact = {
+			craven = major_stress_impact_loss
+			arrogant = minor_stress_impact_gain
+			brave = major_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_rationality = 0.25
+				ai_vengefulness = -0.25
+				ai_boldness = -0.5
+			}
+			modifier = {	# Weight up for stress.
+				add = 30
+				has_trait = craven
+			}
+			modifier = {	# Weight down for stress.
+				add = -10
+				has_trait = arrogant
+			}
+			modifier = {	# Weight down for stress.
+				add = -30
+				has_trait = brave
+			}
+		}
+	}
+}
+
+#	Bout has invalidated, inform affected parties.
+waymakers_events.0042 = {
+	hidden = yes
+
+	immediate = {
+		# Inform root that the duel has invalidated.
+		root = {
+			send_interface_toast = {	
+				title = waymakers_events.0042.trigger_failure
+				left_icon = scope:founder
+			}
+		}
+	}
+}
+
+#	Bout ended, sort after effects.
+waymakers_events.0043 = {
+	hidden = yes
+
+	immediate = {
+		# If scope:founder won, give them their prestige/clothes and apply kinslayer stuff.
+		if = {
+			limit = { scope:sc_victor = scope:founder }
+			add_prestige = major_prestige_gain
+			remove_character_flag = single_combat_stripped_to_waist
+			single_combat_have_slain_kin_effect = {
+				ATTACKER = scope:founder
+				DEFENDER = root
+			}
+		}
+		# Otherwise, root won.
+		else = {
+			# Nothing complex here, just put your shirt back on & send out the event after a small delay (for layering).
+			root = {
+				remove_character_flag = single_combat_stripped_to_waist
+				trigger_event = {
+					id = waymakers_events.0044
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+#	Root won the bout, process their ending.
+waymakers_events.0044 = {
+	type = character_event
+	title = waymakers_events.0044.t
+	desc = waymakers_events.0044.desc
+	theme = death
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	right_portrait = {
+		character = scope:founder
+		animation = fear
+		outfit_tags = { no_clothes }
+	}
+	override_background = { reference = throne_room }
+
+	trigger = {
+		# DLC check.
+		has_fp1_dlc_trigger = yes
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_combat_stinger"
+		# Mention the death of scope:leader.
+		show_as_tooltip = {
+			scope:founder = {
+				death = {
+					killer = root
+					death_reason = death_duel
+				}
+			}
+		}
+		# Hand out root's prestige.
+		add_prestige = major_prestige_gain
+	}
+
+	# Anyone *else* want to have a go?
+	option = {
+		name = waymakers_events.0044.a
+
+		# And a fair amount of stress loss for coming through that.
+		add_stress = massive_stress_loss
+
+		# No stress impact for the standard option.
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_boldness = 0.5
+				ai_vengefulness = 0.25
+			}
+		}
+	}
+
+	# And the justness of my rule is proven again.
+	option = {
+		name = waymakers_events.0044.b
+		# No point reducing tyranny if you don't have any.
+		trigger = { tyranny >= 1 }
+
+		# Get a decent tyranny reduction for your troubles.
+		add_tyranny = massive_tyranny_loss
+
+		stress_impact = {
+			deceitful = major_stress_impact_loss
+			arbitrary = major_stress_impact_loss
+			honest = major_stress_impact_gain
+			just = major_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_rationality = 0.5
+				ai_honor = -0.5
+			}
+			modifier = {	# Weight up for stress.
+				add = 30
+				has_trait = deceitful
+			}
+			modifier = {	# Weight up for stress.
+				add = 30
+				has_trait = arbitrary
+			}
+			modifier = {	# Weight down for stress.
+				add = 30
+				has_trait = honest
+			}
+			modifier = {	# Weight down for stress.
+				add = 30
+				has_trait = just
+			}
+		}
+	}
+}
+
+
+###################################################
+## #Special Events
+#
+###################################################
+## Jomsvikings Destroyed
+## by Ewan Cowhig Croft
+## 1001 - 1010
+###################################################
+#
+#waymakers_events.1001 = { # GH TODO: Waymakers destruction event
+#	type = character_event
+#	title = waymakers_events.1001.t
+#	desc = {
+#		desc = waymakers_events.1001.desc.intro
+#		first_valid = {
+#			# If someone reformed Norse paganism, the Jomsvikings lament it.
+#			triggered_desc = {
+#				trigger = {
+#					religion:germanic_religion = {
+#						any_faith = {
+#							NOT = { has_doctrine = unreformed_faith_doctrine }
+#						}
+#					}
+#				}
+#				desc = waymakers_events.1001.desc.reformed_asatru_exists
+#			}
+#			# Otherwise, just a general big RIP.
+#			desc = waymakers_events.1001.desc.fallback
+#		}
+#		desc = waymakers_events.1001.desc.outro
+#	}
+#	theme = faith
+#	left_portrait = {
+#		character = scope:leader
+#		animation = shame
+#	}
+#
+#	trigger = {
+#		# DLC check.
+#		has_fp1_dlc_trigger = yes
+#	}
+#
+#	immediate = {
+#		# Huehuehue.
+#		play_music_cue = "mx_cue_peace_ensues"
+#		custom_tooltip = waymakers_events.1001.holy_order_destroyed
+#	}
+#
+#	# The gods forsake us!
+#	option = {
+#		name = waymakers_events.1001.a
+#		trigger = { faith = faith:norse_pagan }
+#
+#		# No more benefits for pious Norse pagans.
+#		custom_tooltip = waymakers_events.1001.a.tt
+#
+#		# No stress for a notification event.
+#		ai_chance = {
+#			# Notification event needs no AI chance.
+#			base = 100
+#		}
+#	}
+#	# Good riddance to bad rubbish!
+#	option = {
+#		name = waymakers_events.1001.b
+#		trigger = {
+#			NOT = { faith = faith:norse_pagan }
+#		}
+#
+#		# No more Jomsviking piracy!
+#		custom_tooltip = waymakers_events.1001.b.tt
+#
+#		# No stress for a notification event.
+#		ai_chance = {
+#			# Notification event needs no AI chance.
+#			base = 100
+#		}
+#	}
+#	# Yhomz-who?
+#	option = {
+#		name = waymakers_events.1001.c
+#		trigger = {
+#			NOT = { faith = faith:norse_pagan }
+#		}
+#
+#		# No more Jomsviking piracy!
+#		custom_tooltip = waymakers_events.1001.c.tt
+#
+#		# No stress for a notification event.
+#		ai_chance = {
+#			# Notification event needs no AI chance.
+#			base = 100
+#		}
+#	}
+#}

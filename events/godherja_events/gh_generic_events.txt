@@ -1,0 +1,12 @@
+﻿namespace = gh_events_generic
+
+gh_events_generic.0001 = {
+	hidden = yes
+	immediate = {
+		scope:attacker = {
+			death = {
+				death_reason = death_disappearance
+			}
+		}
+	}
+}

@@ -1,0 +1,72 @@
+﻿namespace = ethereal
+#
+ethereal.0001 = {
+	type = character_event
+	content_source = dlc_gh
+	title = ethereal.0001.t
+	desc = ethereal.0001.desc
+	theme = witchcraft
+	orphan = yes
+	override_background = { reference = magic_ritual }
+	left_portrait = root
+	option = {
+		name = ethereal.0001.a
+		custom_tooltip = ethereal.0001.a.tt
+		trigger_event = ethereal.0002
+	}
+	option = {
+		name = ethereal.0001.b
+		custom_tooltip = ethereal.0001.b.tt
+	}
+	option = {
+		name = ethereal.0001.c
+		custom_tooltip = ethereal.0001.c.tt
+	}
+	option = {
+		name = ethereal.0001.d
+	}
+}
+
+ethereal.0002 = {
+	type = character_event
+	content_source = dlc_gh
+	title = ethereal.0002.t
+	desc = ethereal.0002.desc
+	theme = witchcraft
+	override_background = { reference = magic_ritual }
+	left_portrait = root
+	right_portrait = {
+		character = character:makryenis_calysto_4
+		scripted_animation = duel_wield_weapon
+		hide_info = yes
+		outfit_tags = { military_outfit }
+	}
+	immediate = {
+		character:makryenis_calysto_4 = {
+			set_variable = {
+				name = gh_is_red_shade
+				value = this
+			}
+		}
+	}
+	option = {
+		name = ethereal.0002.a
+		custom_tooltip = ethereal.0002.a.tt
+		hidden_effect = {
+			send_interface_toast = {
+				title = ethereal.0002.toast
+				add_character_modifier = {
+					modifier = communed_with_erinitic_devil
+					years = 5
+				}
+			}
+		}
+	}
+	option = {
+		name = ethereal.0002.b
+		custom_tooltip = ethereal.0002.b.tt
+	}
+	option = {
+		name = ethereal.0002.c
+	}
+}

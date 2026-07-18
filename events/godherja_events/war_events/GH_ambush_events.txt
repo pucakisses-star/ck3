@@ -1,0 +1,107 @@
+﻿#Events fired for ambushes in hostile territory
+
+
+namespace = gh_ambush_events
+
+############################## 
+
+#Generic Ambush EVENTS - Army Owner
+gh_ambush_events.1001 = {
+	title = gh_ambush_events.1001.t
+	type = character_event 
+	trigger = {
+		exists = scope:army.location.county
+		scope:army = {
+			is_army_in_combat = no
+			#army_is_moving = yes
+		}
+		scope:army.location = {
+			OR = {
+				county = { has_county_modifier = fogswept_modifier }
+				terrain = deadlands
+				terrain = redlands_desert
+				terrain = redlands_drylands
+				terrain = redlands_mountains
+				terrain = redlands_chasms
+				county = { has_county_modifier = jerniems_protection_modifier }
+			}
+		}
+		scope:army.location.county.holder = { save_temporary_scope_as = shrek }
+		NOT = { top_liege = scope:shrek.top_liege }
+		NOT = {
+			root = { is_landless_adventurer = yes }
+		}
+		NOR = {
+			AND = {
+				root = { has_faith = faith:rejection }
+				scope:army.location = { terrain = deadlands }	
+			}
+			AND = {
+				root = { has_faith = faith:fogeater }
+				scope:army.location.county = { has_county_modifier = fogswept_modifier }	
+			}
+			AND = {
+				root = { has_faith = faith:redland_cults }
+				scope:army.location = {
+					OR = {
+						terrain = redlands_desert
+						terrain = redlands_drylands
+						terrain = redlands_mountains
+						terrain = redlands_chasms
+					}
+				}	
+			}
+			AND = {
+				root = { has_faith = faith:katharnalmic }
+				scope:army.location.county = { has_county_modifier = jerniems_protection_modifier }	
+			}
+			AND = {
+				root = { has_faith = faith:nathanalmic }
+				scope:army.location.county = { has_county_modifier = jerniems_protection_modifier }	
+			}
+			AND = {
+				root = { has_faith = faith:gotharnalmic }
+				scope:army.location.county = { has_county_modifier = jerniems_protection_modifier }	
+			}
+			AND = {
+				root = { has_faith = faith:korlonalmic }
+				scope:army.location.county = { has_county_modifier = jerniems_protection_modifier }	
+			}
+			AND = {
+				root = { has_faith = faith:korlenalmic }
+				scope:army.location.county = { has_county_modifier = jerniems_protection_modifier }	
+			}
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			root = {
+				scope:army = { location = { save_scope_as = target_location } }
+				gh_create_ambush = {
+					TARGET = root
+				}
+			}
+		}
+	}
+	theme = war
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	right_portrait = {
+		character = scope:ambusher
+		animation = aggressive_sword
+	}
+	desc = gh_ambush_events.1001.desc
+	option = {
+		name = gh_ambush_events.1001.a
+		stress_impact = {
+			craven = major_stress_impact_gain
+		}
+		gh_spawn_ambush_army = { TARGET = root }
+	}
+}
+

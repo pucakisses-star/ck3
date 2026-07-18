@@ -1,0 +1,474 @@
+﻿namespace = kherkeloi
+
+##################################################
+# SPECIAL FLAVOR
+
+##################################################
+# Ertomax's realm restored
+# by Archduke
+# 0001 - 0010
+##################################################
+
+#	Given to the new king of the Aruvasue
+kherkeloi.0001 = {
+	title  = kherkeloi.0001.t
+	desc = kherkeloi.0001.desc
+	type = character_event
+	content_source = dlc_gh
+	theme = realm
+	left_portrait = {
+		character = scope:ertomax_restorer
+		animation = personality_bold
+	}
+	
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"	
+		revive_ertomax_kingdom_decision_effects = yes
+	}
+	
+	option = { #Gain 'Greatest Son of Ertomax' nickname
+		name = kherkeloi.0001.a
+		remove_nickname = yes
+		give_nickname = nick_mat_ertomaxvor
+		if = {
+			limit = {
+				prestige_level < 5
+			}
+			add_prestige_level = 1
+		}		
+	}
+
+	option = { # Gain 'Lord of the Sunlands' Nickname
+		name = kherkeloi.0001.b
+		remove_nickname = yes
+		give_nickname = nick_aryvann_zerkyy
+		if = {
+			limit = {
+				prestige_level < 5
+			}
+			add_prestige_level = 1
+		}	
+	}
+
+	option = { # Gain 'Heir of Aruvas' Nickname
+		name = kherkeloi.0001.c
+		remove_nickname = yes
+		give_nickname = nick_tehet_aruvasuen
+		if = {
+			limit = {
+				prestige_level < 5
+			}
+			add_prestige_level = 1
+		}	
+	}
+}
+
+
+#	Notifies other rulers of the event.
+kherkeloi.0002 = {
+	title = kherkeloi.0002.t
+	desc = kherkeloi.0002.desc
+	type = character_event
+	content_source = dlc_gh
+	theme = realm
+	right_portrait = {
+		character = scope:ertomax_restorer
+		animation = personality_bold
+	}	
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"	
+	}
+	option = {
+		name = kherkeloi.0002.a
+	}
+}
+
+kherkeloi.0003 = {
+	title  = kherkeloi.0003.t
+	desc = {
+		desc = kherkeloi.0003.desc.intro
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					AND = {
+						any_county_in_region = {
+							region = custom_astilik_empire_north
+							percent >= astilik_empire_formable_percent_decimal_value
+							holder.top_liege = root
+						}
+					}
+				}
+				desc = kherkeloi.0003.desc.both
+			}
+			triggered_desc = {
+				trigger = {
+					any_county_in_region = {
+						region = custom_astilik_empire_north
+						percent >= astilik_empire_formable_percent_decimal_value
+						holder.top_liege = root
+					}
+				}
+				desc = kherkeloi.0003.desc.north
+			}
+			triggered_desc = {
+				trigger = {
+					any_county_in_region = {
+						region = custom_astilik_empire_east
+						percent >= astilik_empire_formable_percent_decimal_value
+						holder.top_liege = root
+					}
+				}
+				desc = kherkeloi.0003.desc.east
+			}
+		}
+		desc = kherkeloi.0003.desc.outro
+	}
+	type = character_event
+	content_source = dlc_gh
+	theme = realm
+	left_portrait = scope:restorer
+	
+	immediate = {	
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = no
+		}
+		title:e_astilik_empire = {
+			change_title_holder = {
+				holder = scope:restorer
+				change = scope:title_change
+			}
+		}
+		resolve_title_and_vassal_change = scope:title_change
+		if = {
+			limit = {
+				any_county_in_region = {
+					region = custom_astilik_empire_north
+					percent >= astilik_empire_formable_percent_decimal_value
+					holder.top_liege = root
+				}
+			}
+			custom_tooltip = {
+				text = kherkeloi.0003.north.tt
+				every_sub_realm_county = {
+					limit = {
+						culture = { NOT = { has_cultural_pillar = heritage_kherkeloi } }
+						title_province = { geographical_region = custom_astilik_empire }
+					}
+					add_county_modifier = {
+						modifier = restore_astilik_empire_culture_modifier
+						days = 3650
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				any_county_in_region = {
+					region = custom_astilik_empire_east
+					percent >= astilik_empire_formable_percent_decimal_value
+					holder.top_liege = root
+				}
+			}
+			custom_tooltip = {
+				text = kherkeloi.0003.east.tt
+				every_culture_global = {
+					limit = {
+						has_cultural_pillar = heritage_kherkeloi
+						NOT = { this = root.culture }
+					}
+					change_cultural_acceptance = {
+						target = root.culture
+						value = 100
+						desc = kherkeloi.0003.east.culture.tt
+					}
+				}
+			}
+		}
+		if = {
+			limit = { capital_county.culture = { NOT = { this = root.culture } } }
+			capital_county = { set_county_culture = root.culture }
+			if = {
+				limit = { capital_county.faith = { NOT = { this = root.faith } } }
+				capital_county = { set_county_faith = root.faith }
+			}
+		}
+		if = {
+			limit = { has_dlc_feature = legends }
+			create_legend_seed = {
+				type = legitimizing
+				quality = illustrious
+				chronicle = new_title
+				properties = {
+					title = title:e_astilik_empire
+					founder = root
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = kherkeloi.0003.a
+		give_nickname = nick_astilon_astilior
+		add_prestige_level = 1
+	}
+}
+
+kherkeloi.0004 = {
+	type = character_event
+	title = kherkeloi.0004.t
+	desc = kherkeloi.0004.desc
+	theme = realm
+	right_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = {
+				OR = {
+					religion = religion:astiliak_religion
+					culture = scope:restorer.culture
+				}
+				NOT = { highest_held_title_tier = tier_empire }
+			}
+			animation = happiness
+		}
+	}
+	left_portrait = scope:restorer
+
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					religion = religion:astiliak_religion
+					culture = {
+						OR = {
+							this = scope:restorer.culture
+							this = culture:astilik
+						}
+					}
+				}
+				NOT = { highest_held_title_tier = tier_empire }
+			}
+			play_music_cue = "mx_cue_epic_sacral_moment"
+		}
+		if = {
+			limit = { highest_held_title_tier = tier_empire }
+			play_music_cue = "mx_cue_combat_2"
+		}
+	}
+
+	option = {
+		trigger = {
+			OR = {
+				religion = religion:astiliak_religion
+				culture = {
+					OR = {
+						this = scope:restorer.culture
+						this = culture:astilik
+					}
+				}
+			}
+			NOT = { highest_held_title_tier = tier_empire }
+		}
+		name = kherkeloi.0004.a
+	}
+
+	option = {
+		trigger = {
+			OR = {
+				religion = religion:astiliak_religion
+				culture = {
+					OR = {
+						this = scope:restorer.culture
+						this = culture:astilik
+					}
+				}
+			}
+			highest_held_title_tier = tier_empire
+		}
+		name = kherkeloi.0004.b
+	}
+
+	option = {
+		trigger = {
+			NOR = {
+				religion = religion:astiliak_religion
+				culture = {
+					OR = {
+						this = scope:restorer.culture
+						this = culture:astilik
+					}
+				}
+			}
+			NOT = { highest_held_title_tier = tier_empire }
+		}
+		name = kherkeloi.0004.c
+	}
+
+	option = {
+		trigger = {
+			NOR = {
+				religion = religion:astiliak_religion
+				culture = {
+					OR = {
+						this = scope:restorer.culture
+						this = culture:astilik
+					}
+				}
+			}
+			highest_held_title_tier = tier_empire
+		}
+		name = kherkeloi.0004.d
+	}
+}
+
+kherkeloi.0005 = {
+	title  = kherkeloi.0005.t
+	desc = kherkeloi.0005.desc
+	type = character_event
+	content_source = dlc_gh
+	theme = crown
+	left_portrait = scope:patron
+	right_portrait = {
+		character = scope:temple_envoy
+		animation = marshal
+	}
+	
+	immediate = {	
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		add_piety_level = 1
+		culture = {
+			if = {
+				limit = { culture_knows_magic_school = { MAGIC_SCHOOL = global_var:wane_tender_harmoniarchy } }
+				custom_tooltip = { ## GH TODO: Needs to be a generic scripted effect
+					text = kherkeloi_0005_effect_mastery_tooltip
+					if = { # School is linked directly to the culture (mastery 1)
+						limit = {
+							any_in_list = {
+								variable = magic_school_list
+								var:magic_school = global_var:wane_tender_harmoniarchy
+								var:mastery = 1
+							}
+						}
+						remove_list_variable = { # Purge the direct link first
+							name = magic_school_list
+							target = global_var:wane_tender_harmoniarchy
+						}
+						random_ruler = { # Create storage story
+							create_story = {
+								type = story_generic_storage
+								save_scope_as = new_magic_school_mastery_scope
+							}
+						}
+						scope:new_magic_school_mastery_scope ?= { # Create mastery structure
+							set_variable = {
+								name = magic_school
+								value = global_var:wane_tender_harmoniarchy
+							}
+							set_variable = {
+								name = mastery
+								value = 2
+							}
+						}
+						add_to_variable_list = { # Link mastery structure to the culture
+							name = magic_school_list
+							target = scope:new_magic_school_mastery_scope
+						}
+					}
+					else = { # School is linked through a mastery structure
+						random_in_list = {
+							variable = magic_school_list
+							limit = { var:magic_school = global_var:wane_tender_harmoniarchy }
+							change_variable = {
+								name = mastery
+								add = 1
+							}
+						}
+					}
+				}
+			}
+			else = {
+				custom_tooltip = {
+					text = kherkeloi_0005_effect_school_tooltip
+					assign_magic_school_to_culture_effect = { MAGIC_SCHOOL = global_var:wane_tender_harmoniarchy MASTERY = 1 }
+				}
+			}
+		}
+		spawn_army = {
+			name = halite_temple_guards_army
+			location = root.location
+			men_at_arms = {
+				type = handpicked_faithful
+				stacks = 4
+			}
+			inheritable = yes
+			uses_supply = yes
+		}
+		if = {
+			limit = { has_dlc_feature = legends }
+			create_legend_seed = {
+				type = holy
+				quality = famed
+				chronicle = saintly_life
+				properties = { religion = root.religion }
+			}
+		}
+		create_character = {
+			location = prev.location
+			culture = title:c_vindamai.culture
+			faith = root.faith
+			template = temple_envoy_template
+			gender_female_chance = {
+				if = {
+					limit = { root.faith = { has_doctrine = doctrine_gender_male_dominated } }
+					add = 0
+				}
+				else_if = {
+					limit = { root.faith = { has_doctrine = doctrine_gender_female_dominated } }
+					add = 100
+				}
+				else = { add = 50 }
+			}
+			save_scope_as = temple_envoy
+		}
+		scope:temple_envoy = { add_character_flag = wear_armor }
+	}
+	
+	option = {
+		name = kherkeloi.0005.a
+		add_courtier = scope:temple_envoy
+	}
+
+	after = {
+		scope:temple_envoy = { remove_character_flag = wear_armor }
+	}
+}
+
+kherkeloi.0006 = {
+	type = character_event
+	title = kherkeloi.0006.t
+	desc = kherkeloi.0006.desc
+	theme = crown
+	left_portrait = scope:patron
+
+	immediate = {
+		culture = {
+			if = {
+				limit = {
+					any_in_list = {
+						variable = magic_school_list
+						var:magic_school = global_var:wane_tender_harmoniarchy
+						var:mastery = 1
+					}
+				}
+				custom_tooltip = kherkeloi_0005_effect_school_tooltip
+			}
+			else = { custom_tooltip = kherkeloi_0005_effect_mastery_tooltip }
+		}
+	}
+
+	option = {
+		name = kherkeloi.0006.a
+	}
+}

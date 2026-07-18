@@ -1,0 +1,711 @@
+﻿##################################################
+##			Korlacan Flavor Events			##
+#
+# gh_korlacan_events.0001 - Recruit from the Fire Temple
+#
+##################################################
+
+namespace = gh_korlacan_events
+
+scripted_effect gh_korlacan_events_0001_weak_pool_effect = { ## GH TODO: More interesting archetypes
+	random_list = {
+		10 = { # Default
+			create_character = {
+				template = weak_magi_korlacan
+				location = root.capital_province
+				save_scope_as = korlacan_option
+			}
+		}
+	}
+}
+
+scripted_effect gh_korlacan_events_0001_medium_pool_effect = { ## GH TODO: More interesting archetypes
+	random_list = {
+		10 = { # Default
+			create_character = {
+				template = medium_magi_korlacan
+				location = root.capital_province
+				save_scope_as = korlacan_option
+			}
+		}
+	}
+}
+
+scripted_effect gh_korlacan_events_0001_strong_pool_effect = { ## GH TODO: More interesting archetypes
+	random_list = {
+		10 = { # Default
+			create_character = {
+				template = strong_magi_korlacan
+				location = root.capital_province
+				save_scope_as = korlacan_option
+			}
+		}
+	}
+}
+
+scripted_effect gh_korlacan_events_0001_option_effect = { # Determine disciple quality
+	random_list = {
+		10 = { # Weak disciple
+			trigger = { piety_level < 3 }
+			modifier = {
+				add = 5
+				piety_level < 0
+			}
+			modifier = {
+				add = 5
+				piety_level < 1
+			}
+			modifier = {
+				add = -5
+			}
+			gh_korlacan_events_0001_weak_pool_effect = yes
+		}
+		10 = { # Medium disciple
+			trigger = { 
+				piety_level >= 3
+				piety_level < 5
+			 }
+			gh_korlacan_events_0001_medium_pool_effect = yes
+			modifier = {
+				add = -5
+			}
+		}
+		10 = { # Strong disciple
+			trigger = { piety_level = 5 }
+			gh_korlacan_events_0001_strong_pool_effect = yes
+			modifier = {
+				add = -5
+				piety_level = 5
+			}
+		}
+	}
+}
+scripted_effect set_korlacan_court_magi_effect = {
+	$COURT_MAGI$ = {
+		if = {
+			limit = { 
+				NOT = { liege = $EMPLOYER$ }
+			}
+			$EMPLOYER$ = { add_courtier = $COURT_MAGI$ }
+		}
+	}
+	$EMPLOYER$ = {
+		#Replace existing court magi if one exists
+		if = {
+			limit = {
+				exists = cp:councillor_court_magi
+			}
+			cp:councillor_court_magi = {
+				save_temporary_scope_as = old_court_magi
+
+				$EMPLOYER$ = {
+					fire_councillor = scope:old_court_magi
+					assign_councillor_type = {
+						type = councillor_court_magi
+						target = $COURT_MAGI$
+					}
+					reverse_add_opinion = {
+						target = scope:old_court_magi
+						modifier = disappointed_opinion
+						opinion = -15
+					}
+					reverse_add_opinion = {
+						target = $COURT_MAGI$
+						modifier = hired_me_opinion
+					}
+				}
+			}
+		}
+		#Else just straight up appoint
+		else = {
+			assign_councillor_type = {
+				type = councillor_court_magi
+				target = $COURT_MAGI$
+			}
+			reverse_add_opinion = {
+				target = $COURT_MAGI$
+				modifier = hired_me_opinion
+			}
+		}
+	}
+}
+
+gh_korlacan_events.0001 = { # Recruit from the Fire Temple
+	type = character_event
+	content_source = dlc_gh
+	title = gh_korlacan_events.0001.t
+	desc = gh_korlacan_events.0001.desc
+	theme = realm
+	override_background = { reference = terrain_scope }
+	trigger = {
+		can_access_magic = yes
+		culture = { has_cultural_pillar = heritage_korlacan }
+		AND = {
+			faith = faith:korlenalmic
+			faith = faith:korlonalmic
+		}
+	}
+
+	left_portrait = {
+		character = scope:first
+		triggered_animation = {
+			trigger = { scope:first = { has_education_diplomacy_trigger = yes } }
+			animation = personality_irrational
+		}
+		triggered_animation = {
+			trigger = { scope:first = { has_education_martial_trigger = yes } }
+			animation = marshal
+		}
+		triggered_animation = {
+			trigger = { scope:first = { has_education_stewardship_trigger = yes } }
+			animation = personality_content
+		}
+		triggered_animation = {
+			trigger = { scope:first = { has_education_intrigue_trigger = yes } }
+			animation = spymaster
+		}
+		triggered_animation = {
+			trigger = { scope:first = { has_education_learning_trigger = yes } }
+			animation = personality_zealous
+		}
+		triggered_animation = {
+			trigger = { scope:first = { has_education_arcana_trigger = yes } }
+			animation = personality_rational
+		}
+	}
+	right_portrait = {
+		character = scope:second
+		triggered_animation = {
+			trigger = { scope:second = { has_education_diplomacy_trigger = yes } }
+			animation = personality_compassionate
+		}
+		triggered_animation = {
+			trigger = { scope:second = { has_education_martial_trigger = yes } }
+			animation = personality_bold
+		}
+		triggered_animation = {
+			trigger = { scope:second = { has_education_stewardship_trigger = yes } }
+			animation = personality_greedy
+		}
+		triggered_animation = {
+			trigger = { scope:second = { has_education_intrigue_trigger = yes } }
+			animation = scheme
+		}
+		triggered_animation = {
+			trigger = { scope:second = { has_education_learning_trigger = yes } }
+			animation = personality_vengeful
+		}
+		triggered_animation = {
+			trigger = { scope:second = { has_education_arcana_trigger = yes } }
+			animation = personality_callous
+		}
+	}
+	immediate = {
+		title:c_meanderreef.title_province = { save_scope_as = background_terrain_scope }
+		gh_korlacan_events_0001_option_effect = yes
+		scope:korlacan_option = { save_scope_as = first }
+		gh_korlacan_events_0001_option_effect = yes
+		scope:korlacan_option = { save_scope_as = second }
+	}
+
+	option = { # Pick first option
+		name = gh_korlacan_events.0001.a
+		set_korlacan_court_magi_effect = {
+            EMPLOYER = root
+            COURT_MAGI = scope:first
+        }
+		hidden_effect = { scope:second = { silent_disappearance_effect = yes } }
+	}
+
+	option = { # Pick second option
+		name = gh_korlacan_events.0001.b
+		set_korlacan_court_magi_effect = {
+            EMPLOYER = root
+            COURT_MAGI = scope:second
+        }
+		hidden_effect = { scope:first = { silent_disappearance_effect = yes } }
+	}
+	option = {
+		name = gh_korlacan_events.0001.c
+		add_piety = 350
+		scope:first = {
+			duel = {
+				skill = prowess
+				value = 10
+				target = scope:second
+				50 = { 
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = 3.5
+						min = -49
+					}
+					desc = gh_korlacan_events.0001.c.duel.firstwins
+					send_interface_toast = {
+						left_icon = scope:first
+						right_icon = scope:second
+					}
+					scope:first = { add_prowess_skill = 5 }
+					set_korlacan_court_magi_effect = {
+						EMPLOYER = root
+						COURT_MAGI = scope:first
+					}
+					scope:second = {
+						death = {death_reason = death_duel}
+					}
+				}
+				50 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = -3.5
+						min = -49
+					}
+					desc = gh_korlacan_events.0001.c.duel.secondwins
+					send_interface_toast = {
+						left_icon = scope:first
+						right_icon = scope:second
+						scope:second = { add_prowess_skill = 5 }
+						set_korlacan_court_magi_effect = {
+							EMPLOYER = root
+							COURT_MAGI = scope:second
+						}				
+						scope:first = {
+							death = {death_reason = death_duel}
+						}
+					}
+				}
+			}
+		}   
+	}
+	option = { # Dismiss both
+		name = gh_korlacan_events.0001.d
+		trigger = { is_ai = no }
+		custom_tooltip = {
+			text = gh_korlacan_events.0001.d.tt
+			scope:first = { silent_disappearance_effect = yes }
+			scope:second = { silent_disappearance_effect = yes }
+		}
+		add_piety = 500
+	}
+}
+
+gh_korlacan_events.0002 = { # re-establish Priesthood of Eternal Flame
+	type = character_event
+	theme = realm
+	title = gh_korlacan_events.0002.t
+	desc = gh_korlacan_events.0002.desc
+	left_portrait = { 
+		character = root
+		animation = personality_zealous
+	}
+	option = {
+		name = gh_korlacan_events.0002.a
+		add_piety = 500
+	}   
+
+}
+
+
+gh_korlacan_events.0003 = { #Assert Korlacan Supremacy
+	type = character_event
+	theme = death
+	title = gh_korlacan_events.0003.t
+	desc = gh_korlacan_events.0003.desc
+	left_portrait = { 
+		character = root
+		animation = personality_zealous
+	}
+	lower_right_portrait = {
+		character = scope:shrewd
+		animation = dead
+	}
+
+	lower_center_portrait = {
+		character = scope:rose
+		animation = dead
+	}
+
+	lower_left_portrait = {
+		character = scope:qazaq
+		animation = dead
+	}
+
+	immediate = {
+		character:katharnalmic_kyawkan_3 = {save_scope_as = shrewd}
+		character:katharnalmic_kyawkan_4 = {save_scope_as = rose}
+		character:nargul_ebohephai_olten_6 = {save_scope_as = qazaq}
+
+	}
+
+	option = {
+		name = gh_korlacan_events.0003.a
+		add_piety = 500
+	}   
+}
+
+gh_korlacan_events.0004 = { #Korlacan Conquerer
+	type = character_event
+	title = gh_korlacan_events.0004.t
+	desc = gh_korlacan_events.0004.desc
+	theme = realm
+	left_portrait = {
+		character = scope:korlacan_conquerer
+		animation = personality_bold
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_positive_effect"
+		establish_aungkyi_thuriya_decision_effects = yes
+		legend_seed_great_deed_title_effect = {
+			TITLE = root.primary_title
+		}
+	}
+
+	option = {
+		name = gh_korlacan_events.0004.a
+		give_nickname = nick_the_conqueror
+	}
+}
+
+
+gh_korlacan_events.0005 = { #Korlacan Conquerer notification within diplo range
+	type = character_event
+	title = gh_korlacan_events.0005.t
+	desc = {
+		desc = gh_korlacan_events.0005.start.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_RelationToMe_relation = { CHARACTER = scope:korlacan_conquerer}
+				}
+				desc = gh_korlacan_events.0005.relation_former.desc
+			}
+			desc = gh_korlacan_events.0005.former.desc
+		}	
+		desc = gh_korlacan_events.0005.end.desc		
+	}
+	theme = realm
+	left_portrait = {
+		character = scope:korlacan_conquerer
+		animation = personality_bold
+	}
+	
+	option = {
+		name = name_i_see
+	}
+}
+
+
+gh_korlacan_events.0006 = { #Fires of Industry restored
+	type = character_event
+	title = gh_korlacan_events.0006.t
+	desc = gh_korlacan_events.0006.desc
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	option = {
+		name = gh_korlacan_events.0006.a
+	}
+}
+
+
+gh_korlacan_events.0007 = { #Forge built; can now recruit darksteel colossi and bombards
+	type = character_event
+	title = gh_korlacan_events.0007.t
+	desc = gh_korlacan_events.0007.desc
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	option = {
+		name = gh_korlacan_events.0007.a
+		add_prestige = 1500
+		add_piety = 1500
+		custom_tooltip = {
+			text = darksteel_contraptions_tooltip
+		}
+
+	}
+
+}
+
+
+scripted_effect gh_korlacan_events_0008_weak_pool_effect = { ## GH TODO: More interesting archetypes
+	random_list = {
+		10 = { # Default
+			create_character = {
+				template = weak_magi_korlacan
+				location = root.capital_province
+				save_scope_as = korlacan_option
+			}
+		}
+	}
+}
+
+scripted_effect gh_korlacan_events_0008_medium_pool_effect = { ## GH TODO: More interesting archetypes
+	random_list = {
+		10 = { # Default
+			create_character = {
+				template = medium_magi_korlacan
+				location = root.capital_province
+				save_scope_as = korlacan_option
+			}
+		}
+	}
+}
+
+scripted_effect gh_korlacan_events_0008_strong_pool_effect = { ## GH TODO: More interesting archetypes
+	random_list = {
+		10 = { # Default
+			create_character = {
+				template = strong_magi_korlacan
+				location = root.capital_province
+				save_scope_as = korlacan_option
+			}
+		}
+	}
+}
+
+scripted_effect gh_korlacan_events_0008_option_effect = { # Determine disciple quality
+	random_list = {
+		10 = { # Weak disciple
+			trigger = { piety_level < 3 }
+			modifier = {
+				add = 5
+				piety_level < 0
+			}
+			modifier = {
+				add = 5
+				piety_level < 1
+			}
+			modifier = {
+				add = -5
+			}
+			gh_korlacan_events_0008_weak_pool_effect = yes
+		}
+		10 = { # Medium disciple
+			trigger = { 
+				piety_level >= 3
+				piety_level < 5
+			 }
+			gh_korlacan_events_0008_medium_pool_effect = yes
+			modifier = {
+				add = -5
+			}
+		}
+		10 = { # Strong disciple
+			trigger = { piety_level = 5 }
+			gh_korlacan_events_0008_strong_pool_effect = yes
+			modifier = {
+				add = -5
+				piety_level = 5
+			}
+		}
+	}
+}
+
+
+gh_korlacan_events.0008 = { # Recruit an heir from the palace if you are HoF; if not it should be a court magi; #TOG please help here with syntax in options after fixing Nattanan and Korlacan magocratic HoF inheritance
+	type = character_event
+	content_source = dlc_gh
+	title = gh_korlacan_events.0008.t
+	desc = {
+		desc = gh_korlacan_events.0008.desc.intro
+		first_valid = {
+			triggered_desc = {
+				trigger = { primary_heir ?= { house = root.house } }
+				desc = gh_korlacan_events.0008.desc.heir
+			}
+			desc = gh_korlacan_events.0008.desc.no_heir
+		}
+	}
+	theme = realm
+	override_background = { reference = terrain_scope }
+
+	left_portrait = {
+		character = scope:first
+		triggered_animation = {
+			trigger = { scope:first = { has_education_diplomacy_trigger = yes } }
+			animation = personality_irrational
+		}
+		triggered_animation = {
+			trigger = { scope:first = { has_education_martial_trigger = yes } }
+			animation = marshal
+		}
+		triggered_animation = {
+			trigger = { scope:first = { has_education_stewardship_trigger = yes } }
+			animation = personality_content
+		}
+		triggered_animation = {
+			trigger = { scope:first = { has_education_intrigue_trigger = yes } }
+			animation = spymaster
+		}
+		triggered_animation = {
+			trigger = { scope:first = { has_education_learning_trigger = yes } }
+			animation = personality_zealous
+		}
+		triggered_animation = {
+			trigger = { scope:first = { has_education_arcana_trigger = yes } }
+			animation = personality_rational
+		}
+	}
+	right_portrait = {
+		character = scope:second
+		triggered_animation = {
+			trigger = { scope:second = { has_education_diplomacy_trigger = yes } }
+			animation = personality_compassionate
+		}
+		triggered_animation = {
+			trigger = { scope:second = { has_education_martial_trigger = yes } }
+			animation = personality_bold
+		}
+		triggered_animation = {
+			trigger = { scope:second = { has_education_stewardship_trigger = yes } }
+			animation = personality_greedy
+		}
+		triggered_animation = {
+			trigger = { scope:second = { has_education_intrigue_trigger = yes } }
+			animation = scheme
+		}
+		triggered_animation = {
+			trigger = { scope:second = { has_education_learning_trigger = yes } }
+			animation = personality_vengeful
+		}
+		triggered_animation = {
+			trigger = { scope:second = { has_education_arcana_trigger = yes } }
+			animation = personality_callous
+		}
+	}
+	lower_center_portrait = scope:old_heir
+
+	immediate = {
+		title:c_meanderreef.title_province = { save_scope_as = background_terrain_scope }
+		gh_korlacan_events_0008_option_effect = yes
+		scope:korlacan_option = { save_scope_as = first }
+		gh_korlacan_events_0008_option_effect = yes
+		scope:korlacan_option = { save_scope_as = second }
+		if = {
+			limit = {
+				exists = primary_heir
+				primary_heir.house = root.house
+			}
+			primary_heir = { save_scope_as = old_heir }
+		}
+	}
+
+	option = { # Pick first option
+		name = gh_korlacan_events.0008.a
+		add_courtier = scope:first
+		scope:first = { set_house = root.house }
+		if = { #TOG please help here with syntax after fixing Nattanan and Korlacan magocratic HoF inheritance
+			limit = {
+				is_female = yes
+			}
+			scope:first = { 
+				set_mother = root
+			}	
+		}
+		if = { #TOG please help here with syntax after fixing Nattanan and Korlacan magocratic HoF inheritance
+			limit = {
+				is_female = no
+			}
+			scope:first = { 
+				set_father = root
+			}
+		}
+		set_designated_heir = scope:first
+		scope:old_heir ?= {
+			add_opinion = {
+				target = root
+				opinion = -40
+				modifier = insulted_opinion
+			}
+			add_opinion = {
+				target = scope:first
+				opinion = -60
+				modifier = hate_opinion
+			}
+			if = {
+				limit = { NOT = { has_relation_rival = scope:first } }
+				set_relation_rival = {
+					target = scope:first
+					reason = rival_over_position
+				}
+			}
+			custom_tooltip = {
+				text = gh_korlacan_events.0008.claim_tt
+				root = {
+					every_held_title = {
+						limit = { tier > tier_barony }
+						scope:old_heir = { add_pressed_claim = prev }
+					}
+				}
+			}
+		}
+		hidden_effect = { scope:second = { silent_disappearance_effect = yes } }
+	}
+
+	option = { # Pick second option
+		name = gh_korlacan_events.0008.b
+		add_courtier = scope:second
+		scope:second = { set_house = root.house }
+		if = { #TOG please help here with syntax after fixing Nattanan and Korlacan magocratic HoF inheritance
+			limit = {
+				is_female = yes
+			}
+			scope:second = { 
+				set_mother = root
+			}	
+		}
+		if = { #TOG please help here with syntax after fixing Nattanan and Korlacan magocratic HoF inheritance
+			limit = {
+				is_female = no
+			}
+			scope:second = { 
+				set_father = root
+			}
+		}
+		set_designated_heir = scope:second
+		scope:old_heir ?= {
+			add_opinion = {
+				target = root
+				opinion = -40
+				modifier = insulted_opinion
+			}
+			add_opinion = {
+				target = scope:second
+				opinion = -60
+				modifier = hate_opinion
+			}
+			if = {
+				limit = { NOT = { has_relation_rival = scope:second } }
+				set_relation_rival = {
+					target = scope:second
+					reason = rival_over_position
+				}
+			}
+			custom_tooltip = {
+				text = gh_korlacan_events.0008.claim_tt
+				root = {
+					every_held_title = {
+						limit = { tier > tier_barony }
+						scope:old_heir = { add_pressed_claim = prev }
+					}
+				}
+			}
+		}
+		hidden_effect = { scope:first = { silent_disappearance_effect = yes } }
+	}
+
+	option = { # Dismiss both
+		name = gh_korlacan_events.0008.c
+		custom_tooltip = {
+			text = gh_korlacan_events.0008.c.tt
+			scope:first = { silent_disappearance_effect = yes }
+			scope:second = { silent_disappearance_effect = yes }
+		}
+		add_piety = 700
+	}
+}

@@ -1,0 +1,17 @@
+﻿namespace = exodian
+
+exodian.0001 = { # Fog those boyos
+	scope = none
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				exists = title:d_legio_xxvi_exodian.holder
+				title:d_legio_xxvi_exodian.holder = {
+					is_ai = yes
+				}
+			}
+		}
+		fog_exodian_holdouts = yes
+	}
+}

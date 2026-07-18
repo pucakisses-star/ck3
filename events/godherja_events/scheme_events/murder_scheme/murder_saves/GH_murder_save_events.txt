@@ -1,0 +1,283 @@
+﻿# Events for saving from a murder attempt (Godherja-specific)
+# GH TODO: Check if this can be reused somehow
+
+namespace = GH_murder_save
+
+#Events:
+# 0001 - Possibility of target being saved from an assassination by a protective spell
+
+#############################
+# Saved from Assassination by Magic
+# by Petter Vilberg
+#############################
+
+# Hidden effect for determining casting outcome
+GH_murder_save.0001 = {
+	hidden = yes
+	orphan = yes
+	trigger = {
+		NOT = { exists = scope:protective_spell_save_failed }
+		AND = {
+			OR = {
+				scope:murder_method = flag:used_poison
+				scope:murder_method = flag:creepy_crawly
+				scope:murder_method = flag:used_poisoned_drink
+			}
+			scope:target = {
+				any_in_list = {
+					variable = known_spell_list
+					spell_has_tag_trigger = { NAME = flag:resist_poison }
+					spell_has_tag_trigger = { NAME = flag:casting_condition_poisoned }
+				}
+			}
+		}
+	}
+
+	immediate = {
+		scope:target = {
+			save_temporary_scope_as = spell_organizer
+			save_temporary_scope_as = caster
+			random_in_list = {
+				variable = known_spell_list
+				limit = {
+					spell_has_tag_trigger = { NAME = flag:resist_poison }
+					spell_has_tag_trigger = { NAME = flag:casting_condition_poisoned }
+				}
+				save_scope_as = spell_being_casted 
+			}
+			scope:spell_being_casted = { apply_regular_spell_effects = yes }
+		}
+		
+		if = {
+			limit = { NOT = { exists = scope:murder_saved } }
+			save_scope_value_as = {
+				name = protective_spell_save_failed
+				value = yes
+			}
+			#trigger_event = {
+			#	on_action = murder_save_roll
+			#}
+		}
+		else = {
+			trigger_event = GH_murder_save.0002
+		}
+	}
+}
+
+# Event that notifies the scheme owner
+GH_murder_save.0002 = {
+	type = character_event
+	title = GH_murder_save.0002.t
+	desc = GH_murder_save.0002.desc
+	
+	theme = murder_scheme
+	left_portrait = {
+		character = scope:target
+		animation = shock
+	}
+	widget = {
+		gui = "event_window_widget_scheme"
+		container = "custom_widgets_container"
+	}
+
+	immediate = {
+		murder_failure_effect = yes # Fires the response for the target
+	}
+
+	option = {
+		name = murder_save.0001.a
+		show_as_tooltip = {
+			if = {
+				limit = { exists = scope:scheme_discovered }
+				add_dread = medium_dread_gain
+			}
+			scope:scheme = {
+				end_scheme = yes
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = murder_save.0001.b
+		show_as_tooltip = {
+			if = {
+				limit = { exists = scope:scheme_discovered }
+				add_dread = medium_dread_gain
+			}
+			start_scheme = {
+				type = murder
+				target_character = scope:target
+			}
+		}
+		hidden_effect = {
+			save_scope_value_as = {
+				name = restart_scheme
+				value = yes
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	#after = {
+	#	hidden_effect = {
+	#		trigger_event = murder_outcome.9999
+	#	}
+	#}
+}
+
+# Event for the victim
+GH_murder_save.0003 = {
+	type = character_event
+	title = GH_murder_save.0003.t
+	orphan = yes
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:murder_method = flag:used_poison
+				}
+				desc = GH_murder_save.0003.poisoned_duck
+			}
+			triggered_desc = {
+				trigger = {
+					scope:murder_method = flag:creepy_crawly
+				}
+				desc = {
+					desc = murder_outcome.5001.creepy_crawly_intro
+					first_valid = {
+						triggered_desc = {
+							trigger = {
+								OR = {
+									learning > 8
+									has_trait = lifestyle_hunter
+								}
+							}
+							desc = murder_outcome.5001.creepy_crawly_known
+						}
+						desc = murder_outcome.5001.creepy_crawly_unknown
+					}
+					desc = GH_murder_save.0003.creepy_crawly_end
+				}
+			}
+			triggered_desc = {
+				trigger = {
+					scope:murder_method = flag:used_poisoned_drink
+				}
+				desc = {
+					first_valid = {
+						triggered_desc = {
+						    trigger = {
+								drinks_alcohol_trigger = yes
+						    }
+						    desc = murder_outcome.5001.poisoned_drink_alcohol
+						}
+						desc = murder_outcome.5001.poisoned_drink_no_alcohol
+					}
+					desc = GH_murder_save.0003.poisoned_drink
+				}
+			}
+		}
+		triggered_desc = {
+			trigger = {
+				exists = scope:scheme_discovered
+				exists = scope:owner_to_reveal.house
+				exists = scope:bad_memory
+				OR = { # Murder methods with characters who can deliver messages
+					scope:murder_method = flag:hired_thugs
+					scope:murder_method = flag:riled_up_mob
+					scope:murder_method = flag:hired_assassin
+					scope:murder_method = flag:beat_to_death_in_dungeon
+					scope:murder_method = flag:unwelcome_guest_house_arrest
+				}
+			}
+			desc = murder_outcome.5002.memories_death
+		}
+		triggered_desc = {
+			trigger = {
+				exists = scope:scheme_discovered
+				exists = scope:owner_to_reveal
+				NOT = {
+					has_trait = incapable #No notification of identity for Incapable characters
+				}
+			}
+			desc = murder_outcome.5001.schemer_known
+		}
+
+		triggered_desc = {
+			trigger = {
+				existing_feud_against_target_trigger = { TARGET = scope:owner_to_reveal }
+			}
+			desc = murder_outcome.5002.house_feud
+		}
+	}
+	left_portrait = {
+		character = root
+		animation = shock
+	}
+	lower_left_portrait = scope:owner_revealed
+	theme = intrigue
+
+	trigger = {
+		exists = scope:murder_saved
+		scope:murder_saved = flag:protective_spell
+	}
+
+	immediate = {
+		set_variable = {
+			name = event_option_displayed_spell
+			value = scope:spell_being_casted
+			days = 1
+		}
+		gain_magical_power_effect = { VALUE = scope:spell_being_casted.total_spell_cost_inverted }
+		if = {
+			limit = { scope:spell_being_casted.total_spell_cost > 0 }
+			increase_exposure_spell = yes
+		}
+		show_as_tooltip = {
+			custom_tooltip = cast_spell_effect_tooltip
+			scope:spell_being_casted = { apply_regular_spell_effects = yes } 
+		}
+		if = {
+			limit = {
+				exists = scope:scheme_discovered
+			}
+			scope:owner = {
+				save_scope_as = owner_revealed
+			}
+		}
+	}
+
+	option = { #Who could do such a thing?
+		name = murder_save.1001.a
+		add_internal_flag = special
+		add_internal_flag = spell
+		trigger = {
+			NOT = {
+				exists = scope:scheme_discovered
+			}
+		}
+		custom_tooltip = murder_save.failure_unknown_owner_tt
+	}
+
+	option = { #Vengeance!
+		name = murder_save.1001.b
+		add_internal_flag = special
+		add_internal_flag = spell
+		trigger = {
+			exists = scope:scheme_discovered
+		}
+		custom_tooltip = murder_save.failure_known_owner_tt
+	}
+
+	after = {
+		add_character_modifier = {
+			modifier = watchful_modifier
+			days = watchful_modifier_duration
+		}
+	}
+}

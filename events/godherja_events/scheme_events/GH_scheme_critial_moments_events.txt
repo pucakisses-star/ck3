@@ -1,0 +1,128 @@
+﻿##################################################
+
+namespace = gh_scheme_critical_moments
+
+
+
+
+
+
+
+
+##################################################
+# GENERAL SCRIPTED TRIGGERS & EFFECTS
+
+# Simple effect for rolling if a scheme with no secrecy succeeded or failed. No thrills, no frills.
+scripted_effect gh_roll_scheme_success_or_failure_effect = {
+	random = {
+		chance = scope:scheme.scheme_success_chance
+		save_scope_value_as = {
+			name = scheme_successful
+			value = yes
+		}
+	}
+	scope:owner = {
+		if = {
+			limit = { exists = scope:scheme_successful }
+			trigger_event = $SUCCESS_EVENT$
+		}
+		else = { trigger_event = $FAILURE_EVENT$ }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+##################################################
+# Slay Pests
+# 1001 - 1003
+##################################################
+
+#	Results event.
+gh_scheme_critical_moments.1001 = {
+	hidden = yes
+
+	immediate = {
+		gh_roll_scheme_success_or_failure_effect = {
+			SUCCESS_EVENT = gh_laamp_base_contract_schemes.1002
+			FAILURE_EVENT = gh_laamp_base_contract_schemes.1003
+		}
+	}
+}
+
+## 1021 - 1023
+
+# Results event
+gh_scheme_critical_moments.1021 = {
+	hidden = yes
+
+	immediate = {
+		gh_roll_scheme_success_or_failure_effect = {
+			SUCCESS_EVENT = gh_laamp_base_contract_schemes.1022
+			FAILURE_EVENT = gh_laamp_base_contract_schemes.1023
+		}
+	}
+}
+
+###################################################
+# Resolve a Haunting
+# 1041 - 1043
+
+# Results event
+gh_scheme_critical_moments.1041 = {
+	hidden  =yes
+
+	immediate = {
+		gh_roll_scheme_success_or_failure_effect = {
+			SUCCESS_EVENT = gh_laamp_base_contract_schemes.1042
+			FAILURE_EVENT = gh_laamp_base_contract_schemes.1043
+		}
+	}
+}
+
+# Escort Refugees
+# 9001 - 9003
+gh_scheme_critical_moments.9001 = {
+	hidden = yes
+
+	immediate = {
+		gh_roll_scheme_success_or_failure_effect = {
+			SUCCESS_EVENT = gh_laamp_base_contract_schemes.9002
+			FAILURE_EVENT = gh_laamp_base_contract_schemes.9003
+		}
+	}
+}
+
+# 9011 - 9013
+# Negotiate with locals
+gh_scheme_critical_moments.9011 = {
+	hidden = yes
+
+	immediate = {
+		gh_roll_scheme_success_or_failure_effect = {
+			SUCCESS_EVENT = gh_laamp_base_contract_schemes.9012
+			FAILURE_EVENT = gh_laamp_base_contract_schemes.9013
+		}
+	}
+}
+
+
+# 9041 - 9043
+## Loot aversarian settlements
+#gh_scheme_critical_moments.9041 = {
+#	hidden = yes
+#
+#	immediate = {
+#		gh_roll_scheme_success_or_failure_effect = {
+#			SUCCESS_EVENT = gh_laamp_base_contract_schemes.9042
+#			FAILURE_EVENT = gh_laamp_base_contract_schemes.9043
+#		}
+#	}
+#}
