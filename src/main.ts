@@ -358,7 +358,12 @@ async function boot(): Promise<void> {
       .filter(Boolean).join('');
     if (sk) html += `<div class="grid" style="display:grid;grid-template-columns:auto 1fr;gap:3px 12px;font-size:13px;margin-top:6px">${sk}</div>`;
     if (ch.tr.length) {
-      html += `<div class="sect"><span class="k">Traits:</span> <b>${ch.tr.join('</b> · <b>')}</b></div>`;
+      const chips = ch.tr.map((t, i) => {
+        const ic = ch.ti?.[i] ?? -1;
+        const img = ic >= 0 ? `<img class="tric" src="map/ui/tr_${ic}.png" alt="">` : '';
+        return `<span class="trchip">${img}<b>${t}</b></span>`;
+      }).join(' ');
+      html += `<div class="sect"><span class="k">Traits:</span> ${chips}</div>`;
     }
     const title = ch.dy ? `${ch.n} of House ${ch.dy}` : ch.n;
     openDetail(title, life, html, null);

@@ -20,9 +20,21 @@ import numpy as np
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent
-PAT = ROOT / "gfx" / "coat_of_arms" / "patterns"
-EMB = ROOT / "gfx" / "coat_of_arms" / "colored_emblems"
-TEX = ROOT / "gfx" / "coat_of_arms" / "textured_emblems"
+
+def _first(*cands):
+    for c in cands:
+        if c.exists():
+            return c
+    return cands[0]
+
+# the game's heraldry art now sits at the repo root (older uploads had it
+# under gfx/)
+PAT = _first(ROOT / "coat_of_arms" / "patterns",
+             ROOT / "gfx" / "coat_of_arms" / "patterns")
+EMB = _first(ROOT / "coat_of_arms" / "colored_emblems",
+             ROOT / "gfx" / "coat_of_arms" / "colored_emblems")
+TEX = _first(ROOT / "coat_of_arms" / "textured_emblems",
+             ROOT / "gfx" / "coat_of_arms" / "textured_emblems")
 OUT = ROOT / "docs" / "map" / "ui" / "coa"
 OUT.mkdir(parents=True, exist_ok=True)
 for f in OUT.glob("*"):
@@ -138,8 +150,23 @@ def slot_colors(block, fallback):
                 cols[i] = c
     return cols
 
+def colorize_emblem(img, c1, c2, c3):
+    """Vanilla colored-emblem encoding: color1 is the base coat, the red
+    channel masks color2, the green channel masks color3, and the blue
+    channel is shading (0.5 neutral, lower darkens, higher lightens)."""
+    a = np.asarray(img.convert("RGBA")).astype(np.float32) / 255.0
+    r, g, b, al = a[..., 0], a[..., 1], a[..., 2], a[..., 3]
+    shade = np.clip(b * 2.0, 0.0, 2.0)
+    out = np.zeros_like(a)
+    for i in range(3):
+        col = (c1[i] / 255.0) * (1 - r) + (c2[i] / 255.0) * r
+        col = col * (1 - g) + (c3[i] / 255.0) * g
+        out[..., i] = col * shade
+    out[..., 3] = al
+    return np.clip(out * 255, 0, 255).astype(np.uint8)
+
 def decompose(img, c1, c2, c3):
-    """CK3 slot encoding: red->c1, yellow->c2, white->c3."""
+    """CK3 pattern encoding: red->c1, yellow->c2, white->c3."""
     a = np.asarray(img.convert("RGBA")).astype(np.float32) / 255.0
     r, g, b, al = a[..., 0], a[..., 1], a[..., 2], a[..., 3]
     w = b
@@ -226,7 +253,7 @@ def render_coa(block, title_color):
             continue
         ecols = slot_colors(v2, fallback)
         sprite = Image.fromarray(
-            decompose(raw, *ecols) if k2 == "colored_emblem"
+            colorize_emblem(raw, *ecols) if k2 == "colored_emblem"
             else np.asarray(raw.convert("RGBA")), "RGBA")
         insts = [b for k3, b in v2 if k3 == "instance" and isinstance(b, list)] or [[]]
         for inst in insts:

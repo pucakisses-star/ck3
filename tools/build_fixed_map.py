@@ -313,6 +313,22 @@ def trait_name(t):
         return f"{m.group(1).title()} Education"
     return re.sub(r"^(way_of_)", "", t).replace("_", " ").title()
 
+trait_icon_idx = {}   # trait key -> index into the exported ui/tr_{i}.png set
+def trait_icon(t):
+    """Export the game's icon for trait key t (lazily) and return its index."""
+    if t in trait_icon_idx:
+        return trait_icon_idx[t]
+    idx = -1
+    for rel in (f"icons/traits/{t}.dds", f"interface/icons/traits/{t}.dds",
+                f"gfx/interface/icons/traits/{t}.dds"):
+        if (ROOT / rel).exists():
+            idx = len([v for v in trait_icon_idx.values() if v >= 0])
+            _pending_trait_icons.append((rel, idx))
+            break
+    trait_icon_idx[t] = idx
+    return idx
+_pending_trait_icons = []   # exported after the ui/ dir is (re)created
+
 chars_out = {}   # charKey -> character card (only for referenced holders)
 def holder_of(title_key):
     """-> (display string, char key) or (None, None); registers the card."""
@@ -332,6 +348,7 @@ def holder_of(title_key):
             "f": 1 if info["f"] else 0,
             "sk": info["sk"],
             "tr": [trait_name(t) for t in info["tr"][:8]],
+            "ti": [trait_icon(t) for t in info["tr"][:8]],
             "b": info["b"], "dd": info["dd"],
         }
     return (f"{nm} {dn}" if dn else nm), ck
@@ -684,6 +701,10 @@ for _f in UI.glob("*"):
 
 def export_dds(rel, dest, max_side):
     src = ROOT / rel
+    if not src.exists() and rel.startswith("gfx/"):
+        # the game asset folders (interface/, icons/, ...) now sit at the
+        # repo root instead of under gfx/
+        src = ROOT / rel[4:]
     if not src.exists():
         return False
     try:
@@ -787,6 +808,13 @@ for fk, fi in fa_idx.items():
             n_ficons += 1
             break
 print(f"  ui art: {n_ficons} faith icons of {len(faiths)}")
+
+# trait icons referenced by the character cards (index-named)
+n_ticons = 0
+for rel, idx in _pending_trait_icons:
+    if export_dds(rel, f"tr_{idx}.png", 44):
+        n_ticons += 1
+print(f"  ui art: {n_ticons} trait icons")
 
 meta = {
     "W": W, "H": H,

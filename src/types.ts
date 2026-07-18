@@ -35,6 +35,8 @@ export type MapMode =
 export interface CharCard {
   n: string; dy: string | null; mo: string | null; f: number;
   sk: (number | null)[]; tr: string[];
+  /** icon index per trait (docs/map/ui/tr_{i}.png), -1 = no icon */
+  ti?: number[];
   b: number | null; dd: number | null;
 }
 
