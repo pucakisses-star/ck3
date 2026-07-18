@@ -1,0 +1,52 @@
+﻿# Each of these should have the following portrait_environments defined:
+# environment_<file>_main
+# environment_<file>_heir
+# environment_<file>_secondary
+# Where <file> is the file name without the file ending (E.G., "frontend_west")
+main_menu_background = {
+	texture = {
+		reference = "loading_screens/cabal.dds"
+
+		trigger = {
+			culture = { has_cultural_pillar = heritage_aversarian }
+		}
+	}
+
+	texture = {
+		reference = "loading_screens/crusaders.dds"
+
+		trigger = {
+			OR = {
+				religion = religion:agionism_religion
+				has_graphical_mena_region_trigger = yes
+			}
+		}
+	}
+
+	texture = {
+		reference = "loading_screens/laststand.dds"
+
+		trigger = {
+			OR = {
+				fp1_should_use_norse_graphics_trigger = yes
+				top_liege = { has_title_migrant_coalition_trigger = yes }
+			}
+		}
+	}
+
+	texture = {
+		reference = "loading_screens/mayikprolollan.dds"
+
+		trigger = {
+			fp1_should_use_norse_graphics_trigger = yes
+			GH_is_any_tribal_government_trigger = no
+		}
+	}
+
+	texture = {
+		reference = "loading_screens/frodbrokna.dds"
+	}
+	environment = {
+		reference = "environment_frontend_west_main"
+	}
+}

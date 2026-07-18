@@ -1,0 +1,22 @@
+﻿
+front_end_random_background = {
+	texture = {
+		reference = "loading_screens/cabal.dds"
+	}
+
+	texture = {
+		reference = "loading_screens/crusaders.dds"
+	}
+
+	texture = {
+		reference = "loading_screens/frodbrokna.dds"
+	}
+
+	texture = {
+		reference = "loading_screens/laststand.dds"
+	}
+	
+	texture = {
+		reference = "loading_screens/mayikprolollan.dds"
+	}
+}
