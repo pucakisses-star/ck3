@@ -1,0 +1,5 @@
+# Generated texture outputs (recreate with tools/generate_ck3_inspired_textures.py)
+assets/textures/*.png
+
+# Node
+node_modules/

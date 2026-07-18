@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Map of Godherja — 3D</title>
+<style>
+  :root{
+    --ink:#d9cba8; --muted:#a4977b; --gold:#c8a45e; --goldhi:#e5c87c;
+    --line:rgba(160,130,70,.35);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#0d1414;color:var(--ink);
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    -webkit-font-smoothing:antialiased;}
+  #gl{position:fixed;inset:0;display:block;cursor:grab;touch-action:none}
+  #gl.drag{cursor:grabbing}
+  #labels{position:fixed;inset:0;pointer-events:none;z-index:2}
+
+  /* ---- CK3 window skin (textures from the mod's gfx/interface) ---- */
+  .panel{position:fixed;z-index:5;color:var(--ink);
+    background:url("map/ui/skin_ttbg.png") #171512;background-size:300px 300px;
+    border:10px solid transparent;
+    border-image:url("map/ui/skin_frame.png") 34 / 10px stretch;
+    box-shadow:0 18px 50px rgba(0,0,0,.72), inset 0 0 60px rgba(0,0,0,.55)}
+  .panel .band{background:url("map/ui/skin_header.png") center/cover;
+    margin:-4px -4px 0;padding:9px 13px 7px;border-bottom:1px solid rgba(0,0,0,.7);
+    box-shadow:0 2px 6px rgba(0,0,0,.5)}
+  .panel .pad{padding:10px 12px 12px}
+  h1,h2{font-weight:600;text-transform:uppercase;letter-spacing:.09em;color:var(--goldhi);
+    text-shadow:0 1px 3px rgba(0,0,0,.9)}
+
+  #hud{left:14px;top:14px;width:292px;padding:0}
+  #hud h1{margin:0;font-size:15px}
+  #hud .sub{margin:0 0 8px;color:var(--muted);font-size:11.5px;line-height:1.45}
+  .row{display:flex;gap:8px;align-items:center;margin:7px 0}
+  .row label{flex:0 0 96px;font-size:12px;color:var(--muted)}
+  .row input[type=range]{flex:1;accent-color:var(--gold)}
+  .searchrow{position:relative;margin:2px 0 8px}
+  #search{flex:1;min-width:0;background:rgba(10,8,6,.72);color:var(--ink);
+    border:1px solid var(--line);border-radius:7px;padding:6px 9px;font:inherit;font-size:12.5px}
+  #search:focus{outline:none;border-color:var(--gold)}
+  #search::placeholder{color:#7d735d}
+  #results{position:absolute;left:0;right:0;top:100%;z-index:30;display:none;max-height:262px;overflow-y:auto;
+    background:url("map/ui/skin_ttbg.png") #14110e;background-size:300px 300px;
+    border:1px solid var(--gold);border-radius:0 0 8px 8px;box-shadow:0 14px 30px rgba(0,0,0,.65)}
+  #results .res{padding:5px 9px;font-size:12.5px;cursor:pointer;display:flex;gap:8px;align-items:baseline}
+  #results .res:hover,#results .res.hot{background:rgba(200,164,94,.18)}
+  #results .res .t{margin-left:auto;font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+  #results::-webkit-scrollbar{width:8px}
+  #results::-webkit-scrollbar-thumb{background:rgba(200,164,94,.45);border-radius:4px}
+  .val{flex:0 0 40px;text-align:right;font-size:12px;color:var(--gold)}
+
+  /* ---- CK3 fancy buttons (two-state sprite) ---- */
+  .btns{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+  button,a.btn{cursor:pointer;border:none;border-radius:12px;
+    background:url("map/ui/skin_btn.png") no-repeat;background-size:200% 100%;background-position:0 0;
+    color:#e2d0a2;padding:6px 14px;min-height:27px;
+    font:inherit;font-size:11.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+    text-decoration:none;display:inline-block;text-shadow:0 1px 2px rgba(0,0,0,.9);
+    box-shadow:0 2px 5px rgba(0,0,0,.5)}
+  button:hover,a.btn:hover{background-position:100% 0;color:#f6e6b4}
+  .modes{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+  .modes button{padding:4px 9px;min-height:24px;font-size:10.5px;letter-spacing:.04em;color:#c9ba88}
+  .modes button.on{color:#f6e6b4;box-shadow:0 0 0 1px var(--gold),0 2px 5px rgba(0,0,0,.5)}
+
+  /* ---- province viewer ---- */
+  #sel{right:14px;bottom:14px;width:344px;padding:0;display:none;overflow:hidden}
+  #sel .selpad{padding:10px 13px 12px}
+  #sel h2{margin:0;font-size:18px}
+  #sel .subt{font-size:12px;color:var(--muted);margin:2px 0 0}
+  #sel .band{padding:10px 13px 8px}
+  #sel .chips{display:flex;gap:5px;margin:8px 0 2px;flex-wrap:wrap}
+  #sel .chip{font-size:10.5px;font-weight:700;letter-spacing:.03em;padding:3px 8px 3px 20px;
+    border-radius:3px;border:1px solid rgba(0,0,0,.55);position:relative;color:#f6ecd4;
+    text-shadow:0 1px 2px rgba(0,0,0,.65);background:rgba(20,16,12,.72);
+    box-shadow:inset 0 0 0 1px rgba(200,164,94,.22)}
+  #sel .chip::before{content:"";position:absolute;left:5px;top:50%;transform:translateY(-50%);
+    width:10px;height:12px;background:var(--cc,#777);border:1px solid rgba(0,0,0,.5);
+    clip-path:polygon(0 0,100% 0,100% 62%,50% 100%,0 62%)}
+  #sel .chip.flagged::before{display:none}
+  #sel .chip .coa{position:absolute;left:4px;top:50%;transform:translateY(-50%);
+    width:13px;height:13px;image-rendering:auto}
+  #sel .grid{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:13px;margin-top:6px}
+  #sel .grid .k{color:var(--muted)}
+  #sel .swatch{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:6px;vertical-align:middle;border:1px solid rgba(0,0,0,.4)}
+  #sel .fic{width:17px;height:17px;vertical-align:-4px;margin-right:5px}
+  #sel .holders{margin-top:10px;padding-top:9px;font-size:12.5px;position:relative}
+  #sel .holders::before{content:"";position:absolute;top:0;left:-2px;right:-2px;height:7px;
+    background:url("map/ui/skin_dec.png") center/100% 100% no-repeat;opacity:.85}
+  #sel .holders div{margin:2px 0}
+  #sel .holders .k{color:var(--muted)}
+  #sel .holders b{color:#eadfb8;font-weight:600}
+  #sel .bars{margin-top:8px;font-size:11.5px;color:var(--muted);line-height:1.55;max-height:72px;overflow-y:auto}
+  #sel .bars b{color:#d8cba2;font-weight:600}
+  #sel .illu{display:block;width:100%;height:100px;object-fit:cover;
+    border-top:1px solid rgba(0,0,0,.8);box-shadow:0 -3px 9px rgba(0,0,0,.55);margin:-4px -4px;
+    width:calc(100% + 8px);opacity:.95}
+
+  /* ---- faith viewer ---- */
+  #faith{right:14px;bottom:14px;width:396px;max-height:calc(100vh - 90px);padding:0;display:none;overflow:hidden;
+    display:none;flex-direction:column}
+  #faith.open{display:flex}
+  #faith .selpad{padding:10px 13px 12px;overflow-y:auto}
+  #faith h2{margin:0;font-size:18px}
+  #faith .subt{font-size:12px;color:var(--muted);margin:2px 0 0}
+  #faith .band{padding:10px 13px 8px;flex:0 0 auto}
+  #faith .fic{width:26px;height:26px;vertical-align:-7px;margin-right:8px}
+  #faith .desc{font-size:12.5px;line-height:1.55;color:var(--ink);max-height:46vh;overflow-y:auto;
+    margin:2px 0 0;padding-right:6px}
+  /* visible scrollbars for the lore text and lists */
+  #faith .desc::-webkit-scrollbar,#faith .selpad::-webkit-scrollbar,#sel .bars::-webkit-scrollbar{width:8px}
+  #faith .desc::-webkit-scrollbar-track,#faith .selpad::-webkit-scrollbar-track,#sel .bars::-webkit-scrollbar-track{
+    background:rgba(0,0,0,.35);border-radius:4px}
+  #faith .desc::-webkit-scrollbar-thumb,#faith .selpad::-webkit-scrollbar-thumb,#sel .bars::-webkit-scrollbar-thumb{
+    background:rgba(200,164,94,.45);border-radius:4px;border:1px solid rgba(0,0,0,.4)}
+  #faith .desc::-webkit-scrollbar-thumb:hover{background:rgba(200,164,94,.7)}
+  #faith .desc{scrollbar-color:rgba(200,164,94,.45) rgba(0,0,0,.35);scrollbar-width:thin}
+  #faith .sect{margin-top:9px;padding-top:8px;font-size:12.5px;position:relative}
+  #faith .sect::before{content:"";position:absolute;top:0;left:-2px;right:-2px;height:7px;
+    background:url("map/ui/skin_dec.png") center/100% 100% no-repeat;opacity:.85}
+  #faith .sect .k{color:var(--muted)}
+  #faith .sect b{color:#eadfb8;font-weight:600}
+  #faith a.hsite{color:#d8c58c;text-decoration:none;border-bottom:1px dotted rgba(200,164,94,.4);cursor:pointer}
+  #faith a.hsite:hover{color:#f4e2b0}
+  #sel a.flink{color:inherit;text-decoration:none;border-bottom:1px dotted rgba(200,164,94,.45);cursor:pointer}
+  #sel a.flink:hover{color:#f4e2b0}
+  #sel .chip.rlink{cursor:pointer}
+  #sel .chip.rlink:hover{box-shadow:inset 0 0 0 1px var(--gold)}
+
+  /* ---- tooltip: the game's own tooltip skin ---- */
+  #tip{position:fixed;z-index:6;pointer-events:none;
+    background:url("map/ui/skin_ttbg.png") #14110e;background-size:300px 300px;
+    border:8px solid transparent;border-image:url("map/ui/skin_frame.png") 34 / 8px stretch;
+    padding:5px 9px;font-size:12px;display:none;max-width:260px;
+    box-shadow:0 10px 26px rgba(0,0,0,.6)}
+  #tip b{color:#f4e2b0}
+
+  #zoombar{right:14px;top:14px;display:flex;flex-direction:column;gap:6px;padding:6px}
+  #zoombar button{width:40px;height:32px;font-size:15px;padding:0}
+  #date{left:50%;transform:translateX(-50%);top:14px;padding:6px 18px;font-size:14px;
+    letter-spacing:.16em;color:#e7d6a6;text-transform:uppercase;
+    background:url("map/ui/skin_header.png") center/cover;
+    border:8px solid transparent;border-image:url("map/ui/skin_frame.png") 34 / 8px stretch}
+  #loading{position:fixed;inset:0;z-index:20;display:flex;align-items:center;justify-content:center;
+    background:#0d1414;color:var(--gold);font-size:16px;letter-spacing:.12em}
+  #hideui{position:fixed;z-index:5;left:14px;bottom:14px;padding:6px 12px}
+  .hidden{display:none!important}
+  .foot{margin-top:9px;font-size:10.5px;color:#8a7f66;line-height:1.4}
+</style>
+</head>
+<body>
+<canvas id="labels"></canvas>
+<div id="loading">Loading the map…</div>
+
+<section id="hud" class="panel">
+  <div class="band"><h1>Map of Godherja</h1></div>
+  <div class="pad">
+    <p class="sub">The real Godherja world in 3-D — actual de jure realms, rulers, cultures, faiths &amp; rivers from the mod data. Drag to pan · scroll to zoom · right-drag to rotate · click a province.</p>
+    <div class="row searchrow">
+      <input id="search" type="text" placeholder="Search places, realms, faiths…" autocomplete="off" spellcheck="false">
+      <div id="results"></div>
+    </div>
+    <div class="row"><label>Tilt</label><input id="tilt" type="range" min="0" max="100" step="1" value="48"><span id="tiltv" class="val">48</span></div>
+    <div class="btns">
+      <button id="reset">Reset view</button>
+      <button id="objs" title="Trees, settlements &amp; landmarks from the mod's 3-D models">Models</button>
+    </div>
+    <div class="modes" id="modes"></div>
+    <div class="btns">
+      <a id="dl" class="btn" download="godherja-map.png">Export PNG</a>
+      <a id="dljson" class="btn" download="godherja-provinces.json">Export data</a>
+    </div>
+    <div class="foot">Provinces, titles, realm colours, cultures, faiths &amp; rivers from the Godherja mod data.</div>
+  </div>
+</section>
+
+<div id="zoombar" class="panel">
+  <button id="zin">+</button>
+  <button id="zout">–</button>
+</div>
+
+<div id="date" class="panel">1066 · Anno Aldermarki</div>
+
+<section id="sel" class="panel">
+  <div id="selHead" class="band"><h2 id="selName">—</h2><div id="selSub" class="subt"></div><div id="selChips" class="chips"></div></div>
+  <div class="selpad">
+    <div id="selBody" class="grid"></div>
+    <div id="selHolders" class="holders"></div>
+    <div id="selBars" class="bars"></div>
+    <div class="btns"><button id="center">Center camera</button><button id="clearSel">Close</button></div>
+  </div>
+  <img id="selIllu" class="illu" alt="" style="display:none">
+</section>
+
+<section id="faith" class="panel">
+  <div id="faithHead" class="band"><h2 id="faithName">—</h2><div id="faithSub" class="subt"></div></div>
+  <div class="selpad">
+    <div id="faithBody"></div>
+    <div class="btns"><button id="faithMode">Show on map</button><button id="faithClose">Close</button></div>
+  </div>
+</section>
+
+<div id="tip"></div>
+<button id="hideui" class="panel">Hide UI</button>
+
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
