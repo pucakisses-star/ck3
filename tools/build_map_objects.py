@@ -28,9 +28,18 @@ from PIL import Image
 
 Image.MAX_IMAGE_PIXELS = None
 ROOT = Path(__file__).resolve().parent.parent
-GFX = ROOT / "gfx" / "models"
+def _first(*cands: Path) -> Path:
+    for c in cands:
+        if c.exists():
+            return c
+    return cands[0]
+
+# the game asset folders now sit at the repo root (older uploads had them
+# under gfx/)
+GFX = _first(ROOT / "models", ROOT / "gfx" / "models")
 MASKS = ROOT / "content_source" / "map_objects" / "masks"
-MOD = ROOT / "gfx" / "map" / "map_object_data"
+MOD = _first(ROOT / "map" / "map_object_data",
+             ROOT / "gfx" / "map" / "map_object_data")
 OUT = ROOT / "docs" / "map" / "objects"
 OUT.mkdir(parents=True, exist_ok=True)
 for stale in OUT.glob("*"):
@@ -111,7 +120,9 @@ for af in GFX.rglob("*.asset"):
         td = re.search(r'texture_diffuse\s*=\s*"([^"]+)"', blk)
         asset_index.setdefault(nm.group(1), (
             af.parent / fl.group(1), float(sc.group(1)) if sc else 1.0,
-            td.group(1) if td else None))
+            # a texture_diffuse override naming a decal belongs to the ground
+            # plane, not the real geometry — never force it onto all parts
+            td.group(1) if td and "decal" not in td.group(1).lower() else None))
 print(f"{len(asset_index)} pdxmesh entries in .asset files")
 
 # ------------------------------------------------------------ texture output
@@ -125,6 +136,13 @@ def write_texture(src: Path, max_side: int, tint=None) -> str | None:
     except Exception as e:
         print(f"  ! texture {src.name}: {e}")
         return None
+    # several vanilla atlases use the diffuse alpha as an emissive/winter
+    # mask, fully 0 — that is NOT transparency, so make those opaque
+    arr = np.asarray(im)
+    if arr[:, :, 3].max() == 0:
+        arr = arr.copy()
+        arr[:, :, 3] = 255
+        im = Image.fromarray(arr, "RGBA")
     if max(im.size) > max_side:
         r = max_side / max(im.size)
         im = im.resize((max(1, int(im.width * r)), max(1, int(im.height * r))),
@@ -153,12 +171,17 @@ def tint_for(mesh_path: Path):
     return None
 
 def find_texture(name: str, near: Path) -> Path | None:
-    for d in (near, near.parent):
-        c = d / name
-        if c.exists():
-            return c
-    hits = list(GFX.rglob(name))
-    return hits[0] if hits else None
+    # some materials reference a .png that only ships as .dds (or vice versa)
+    stem = Path(name).stem
+    for cand in (name, stem + ".dds", stem + ".png"):
+        for d in (near, near.parent):
+            c = d / cand
+            if c.exists():
+                return c
+        hits = list(GFX.rglob(cand))
+        if hits:
+            return hits[0]
+    return None
 
 # ------------------------------------------------------- geometry extraction
 def extract_model(mesh_path: Path, scale: float, diffuse_override: str | None,
@@ -186,6 +209,8 @@ def extract_model(mesh_path: Path, scale: float, diffuse_override: str | None,
                 diff = diffuse_override or (mat["props"].get("diff", [None])[0] if mat else None)
                 if not diff:
                     continue
+                if "decal" in diff.lower():
+                    continue  # flat ground-projection planes, not real geometry
                 # bake the .asset scale straight into the vertices so all
                 # exported geometry is in game units
                 v = np.asarray(msh["props"]["p"], np.float32).reshape(-1, 3) * scale
@@ -280,9 +305,7 @@ TREES = {
     "tree_palm_01_mask":            ("acacia",  "tree_acacia_01_a_mesh"),
     "tree_dead_01_mask":            ("dead",    "tree_dead_01_a_mesh"),
     "tree_dead_01_paintable_mask":  ("dead",    None),
-    # the pink tree's diffuse is a vanilla texture the mod doesn't ship;
-    # its (tiny) mask reuses the yellow-leaf tree instead
-    "tree_leaf_pink_01_mask":       ("yellow",  None),
+    "tree_leaf_pink_01_mask":       ("pink",    "tree_leaf_pink_01_a_mesh"),
     "tree_leaf_yellow_mask":        ("yellow",  "tree_leaf_yellow_01_a_mesh"),
     "tree_redwood_01_mask":         ("redwood", "tree_redwood_01_a_mesh"),
     "rock_desert_01_mask":          ("rockd",   "rock_desert_01_a_mesh"),
@@ -344,13 +367,28 @@ for mask, a in mask_px.items():
 STYLES = [
     {"castle": "chinese_castle_01_mesh", "city": "building_chinese_city_01_mesh",
      "temple": "pagoda_01_mesh"},
-    # (the levantine/punic set needs a vanilla atlas the mod doesn't ship)
-    {"castle": "building_sea_castle_01_mesh", "city": "building_sea_city_01_mesh",
-     "temple": "building_sea_temple_01_mesh"},
+    {"castle": "punic_castle_01_mesh", "city": "punic_city_01_a_mesh",
+     "temple": "punic_temple_01_mesh"},
     {"castle": "slavic_castle_01_mesh", "city": "slavic_city_01_a_mesh",
      "temple": "slavic_temple_01_mesh"},
     {"castle": "building_celtic_hillfort_01_mesh", "city": "building_celtic_city_01_mesh",
      "temple": "building_celtic_temple_01_mesh"},
+    {"castle": "building_mediterranean_castle_01_mesh",
+     "city": "building_mediterranean_city_01_mesh",
+     "temple": "building_mediterranean_temple_generic_01_mesh"},
+    {"castle": "building_mena_castle_01_mesh", "city": "building_mena_city_01_mesh",
+     "temple": "building_mena_temple_generic_01_mesh"},
+    # (the western/norse sets key off building_western_atlas, whose baked
+    # normals render unlit in our viewer — use iberian & SEA sets instead)
+    {"castle": "fp2_building_iberian_castle_01_mesh",
+     "city": "fp2_building_iberian_city_01_mesh",
+     "temple": "fp2_building_iberian_christian_01_mesh"},
+    {"castle": "building_sea_castle_01_mesh", "city": "building_sea_city_01_mesh",
+     "temple": "building_sea_temple_01_mesh"},
+    {"castle": "ep3_byzantine_castle_01_a_mesh", "city": "ep3_byzantine_city_01_mesh",
+     "temple": "building_mediterranean_temple_orthodox_01_mesh"},
+    {"castle": "building_indian_castle_01_mesh", "city": "building_india_city_01_mesh",
+     "temple": "building_indian_temple_generic_01_mesh"},
 ]
 print("extracting holding models ...")
 bkeys = {}

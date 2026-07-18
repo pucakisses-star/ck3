@@ -28,7 +28,7 @@ function b64bytes(s: string): Uint8Array {
 function baseScaleFor(key: string, hgt: number, foot: number): number {
   let targetH = 2.6, maxFoot = 5; // trees
   if (key.startsWith('rock')) { targetH = 1.4; maxFoot = 3.8; }
-  else if (key.startsWith('b')) {
+  else if (/^b\d+_/.test(key)) {
     if (key.endsWith('castle')) { targetH = 4.4; maxFoot = 4; }
     else if (key.endsWith('temple')) { targetH = 3.9; maxFoot = 4.4; }
     else { targetH = 3.2; maxFoot = 5; } // city
@@ -125,7 +125,7 @@ export async function loadMapObjects(base: string, scene: MapScene): Promise<THR
     if (!model) continue;
     const bytes = b64bytes(packed.d);
     const n = packed.n;
-    const foliage = !key.startsWith('b') && !key.startsWith('rock');
+    const foliage = !/^b\d+_/.test(key) && !key.startsWith('rock');
     const baseScale = baseScaleFor(key, model.hgt, footprintOf(model));
     const gs = getGeoms(key);
     const meshes = gs.map((g, gi) => {
