@@ -1,0 +1,58 @@
+﻿pdxmesh = {
+	name = "gh_bones_whale_ribs_mesh"
+	file = "gh_bones_whale_ribs.mesh"
+	scale = 1.0
+
+	meshsettings = {
+		name = "gh_bones_whale_ribsShape"
+		index = 0
+		texture_diffuse = "gh_bones_whale_diffuse.dds"
+		texture_normal = "gh_bones_whale_normal.dds"
+		texture_specular = "gh_bones_whale_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+pdxmesh = {
+	name = "gh_bones_whale_skull_mesh"
+	file = "gh_bones_whale_skull.mesh"
+	scale = 1.0
+
+	meshsettings = {
+		name = "gh_bones_whale_skullShape"
+		index = 0
+		texture_diffuse = "gh_bones_whale_diffuse.dds"
+		texture_normal = "gh_bones_whale_normal.dds"
+		texture_specular = "gh_bones_whale_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+pdxmesh = {
+	name = "gh_bones_whale_spine_mesh"
+	file = "gh_bones_whale_spine.mesh"
+	scale = 1.0
+
+	meshsettings = {
+		name = "gh_bones_whale_spineShape"
+		index = 0
+		texture_diffuse = "gh_bones_whale_diffuse.dds"
+		texture_normal = "gh_bones_whale_normal.dds"
+		texture_specular = "gh_bones_whale_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "gh_bones_whale_ribs_entity"
+	pdxmesh = "gh_bones_whale_ribs_mesh"
+}
+entity = {
+	name = "gh_bones_whale_skull_entity"
+	pdxmesh = "gh_bones_whale_skull_mesh"
+}
+entity = {
+	name = "gh_bones_whale_spine_entity"
+	pdxmesh = "gh_bones_whale_spine_mesh"
+}

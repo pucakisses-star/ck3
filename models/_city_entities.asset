@@ -1,0 +1,193 @@
+entity = {
+	name = "city_siege_effect"
+	
+	locator = { name = part1 }
+	
+	default_state = "no_breach"
+	state = { name = "no_breach" state_time = 10 looping = yes
+		event = { time = 0 node = "part1" particle = "city/city_siege_smoke" keep_particle = yes trigger_once = yes life = 5 }
+		event = { trigger_once = yes sound = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Siege/sfx_amb_3d_holdings_siege_amb" } soundparameter = { "Tier" = 1 } keep_sound = yes }
+	}
+	state = { name = "breached" state_time = 10 looping = yes
+		event = { time = 0 node = "part1" particle = "city/city_siege_breached" keep_particle = yes trigger_once = yes life = 5 }
+		event = { trigger_once = yes sound = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Siege/sfx_amb_3d_holdings_siege_amb" } soundparameter = { "Tier" = 0 } keep_sound = yes }
+	}
+}
+
+entity = {
+	name = "smoke_chimney"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "part1" particle = "city/smoke_chimney" trigger_once = yes}
+	}
+	
+}
+
+entity = {
+	name = "construction_dust"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 looping = no
+		event = { time = 0 node = "part1" particle = "city/construction_dust_looping" trigger_once = yes}
+	}
+	
+}
+
+entity = {
+	name = "construction_dust_complete"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 looping = no next_state = "idle"
+		event = { time = 0 node = "part1" particle = "city/construction_dust_end" trigger_once = yes}
+	}
+	
+}
+
+entity = {
+	name = "god_rays"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "part1" particle = "god_rays" trigger_once = yes}
+	}
+	
+}
+
+
+
+entity = {
+	name = "city_siege_trebuchet_projectile"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "part1" particle = "siege_projectile" trigger_once = yes}
+	}
+	scale = 1
+}
+
+entity = {
+	name = "epidemic_minor"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+
+	state = {
+		name = "idle"
+		state_time = 5
+
+		start_event = { node = "part1" particle = "disease/crows_random" trigger_once = yes soundparameter = {"fp4_epidemic" = 0 } sound = { soundeffect = "event:/DLC/FP4/SFX/Ambience/3D/sfx_3d_epidemic_vfx"} }
+	}
+}
+
+entity = {
+	name = "epidemic_major"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+
+	state = {
+		name = "idle"
+		state_time = 5
+
+		start_event = { node = "part1" particle = "disease/crows_random" trigger_once = yes soundparameter = {"fp4_epidemic" = 1 } sound = { soundeffect = "event:/DLC/FP4/SFX/Ambience/3D/sfx_3d_epidemic_vfx"} }
+
+	}
+}
+
+entity = {
+	name = "epidemic_apocalyptic"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+
+	state = {
+		name = "idle"
+		state_time = 5
+
+		start_event = { node = "part1" particle = "disease/crows_random" trigger_once = yes soundparameter = {"fp4_epidemic" = 2 } sound = { soundeffect = "event:/DLC/FP4/SFX/Ambience/3D/sfx_3d_epidemic_vfx"} }
+		start_event = { node = "part1" particle = "disease/smoke" trigger_once = yes }
+	}
+}
+
+entity = {
+	name = "epidemic_recovery"
+}
+
+entity = {
+	name = "epidemic_model_minor"
+}
+
+entity = {
+	name = "epidemic_model_major"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+
+	state = {
+		name = "idle"
+		start_event = { node = "part1" entity = "fp4_burial_mass_01_a_entity" entity_fade_speed = 2.0 trigger_once = yes soundparameter = {"fp4_epidemic" = 1 } sound = { soundeffect = "event:/DLC/FP4/SFX/Ambience/3D/sfx_3d_epidemic_model"} }
+	}
+}
+
+entity = {
+	name = "epidemic_model_apocalyptic"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+
+	state = {
+		name = "idle"
+		start_event = { node = "part1" entity = "fp4_pyre_01_a_entity" entity_fade_speed = 2.0 trigger_once = yes soundparameter = {"fp4_epidemic" = 2 } sound = { soundeffect = "event:/DLC/FP4/SFX/Ambience/3D/sfx_3d_epidemic_model"} }
+	}
+}
+
+entity = {
+	name = "epidemic_model_recovery"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+
+	state = {
+		name = "idle"
+		start_event = { node = "part1" entity = "fp4_healers_camp_01_a_entity" entity_fade_speed = 2.0 trigger_once = yes soundparameter = {"fp4_epidemic" = 0 } sound = { soundeffect = "event:/DLC/FP4/SFX/Ambience/3D/sfx_3d_epidemic_model"} }
+	}
+}
+
+entity = {
+	name = "pyre"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "part1" particle = "city/pyre_01" trigger_once = yes}
+	}
+}
+
+entity = {
+	name = "pyre_02"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "part1" particle = "city/pyre_02" trigger_once = yes}
+	}
+}

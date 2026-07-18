@@ -1,0 +1,65 @@
+###GH###
+
+entity = {
+	name = "env_undead"
+	scale = 1
+	locator = { name = part1 position = { 0 0 0} rotation = { 0 0 0 }}
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "part1" particle = "env_undead" trigger_once = yes}
+	}
+	locator = { name = "temp" position = { 0 -10 0 } }
+
+}
+
+entity = {
+	name = "env_red_desert"
+	
+	locator = { name = part1 }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "part1" particle = "env_red_desert" trigger_once = yes}
+	}
+	locator = { name = "temp" position = { 0 -10 0 } }
+}
+
+entity = {
+	name = "env_towermagic"
+	scale = 1
+	locator = { name = part1 position = { 0 0 0} rotation = { 0 0 0 }}
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "part1" particle = "env_towermagic" trigger_once = yes}
+	}
+	locator = { name = "temp" position = { 0 -10 0 } }
+
+}
+
+entity = {
+	name = "env_mist_fog"
+	scale = 1
+	locator = { name = part1 position = { 0 0 0} rotation = { 0 0 0 }}
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "part1" particle = "gh_env_mist_fog" trigger_once = yes}
+	}
+	locator = { name = "temp" position = { 0 -10 0 } }
+
+}
+
+entity = {
+	name = "env_rain"
+	scale = 1
+	locator = { name = part1 position = { 0 0 0} rotation = { 0 0 0 }}
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "part1" particle = "rain" trigger_once = yes}
+	}
+	locator = { name = "temp" position = { 0 -10 0 } }
+
+}

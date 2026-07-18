@@ -1,0 +1,20 @@
+﻿pdxmesh = {
+	name = "gh_statue_griffon_mesh"
+	file = "gh_statue_griffon.mesh"
+	scale = 1.0
+
+	meshsettings = {
+		name = "gh_statue_griffonShape"
+		index = 0
+		texture_diffuse = "gh_statue_griffon_diffuse.dds"
+		texture_normal = "gh_statue_griffon_normal.dds"
+		texture_specular = "gh_statue_griffon_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "gh_statue_griffon_entity"
+	pdxmesh = "gh_statue_griffon_mesh"
+}

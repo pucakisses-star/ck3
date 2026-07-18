@@ -1,0 +1,20 @@
+pdxmesh = {
+	name = "rock_desert_01_f_mesh"
+	file = "rock_desert_01_f.mesh"
+	scale = 0.5
+
+	meshsettings = {
+		name = "rock_desert_01_f"
+		index = 0
+		texture_diffuse = "rock_desert_01_diffuse.dds"
+		texture_normal = "rock_desert_01_normal.dds"
+		texture_specular = "rock_desert_01_properties.dds"
+		shader = "tree"
+		shader_file = "gfx/FX/tree.shader"
+	}
+}
+
+entity = {
+	name = "rock_desert_01_f_entity"
+	pdxmesh = "rock_desert_01_f_mesh"
+}

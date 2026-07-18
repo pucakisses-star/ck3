@@ -1,0 +1,31 @@
+pdxmesh = {
+	name = "bridge_mediterranean_mesh"
+	file = "bridge_mediterranean.mesh"
+
+	meshsettings = {
+		name = "bridge_mediterraneanShape"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		texture = { file = "bridge_mediterranean_unique.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "bridge_mediterranean_decalShape"
+		index = 0
+		texture_diffuse = "western_city_01_decal_diffuse.dds"
+		texture_normal = "western_city_01_decal_normal.dds"
+		texture_specular = "western_city_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+
+entity = {
+	name = "bridge_mediterranean_entity"
+	pdxmesh = "bridge_mediterranean_mesh"
+}

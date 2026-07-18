@@ -1,0 +1,20 @@
+pdxmesh = {
+	name = "grave_01_c_mesh"
+	file = "grave_01_c.mesh"
+	scale = 0.5
+
+	meshsettings = {
+		name = "grave_01_c"
+		index = 0
+		texture_diffuse = "grave_01_diffuse.dds"
+		texture_normal = "grave_01_normal.dds"
+		texture_specular = "grave_01_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "grave_01_c_entity"
+	pdxmesh = "grave_01_c_mesh"
+}
