@@ -729,6 +729,16 @@ HOLD_ART = {
 for hi, rel in HOLD_ART.items():
     export_dds(rel, f"holding_{hi}.png", 720)
 
+# the game's flat-map paper textures shipped at the repo root: tiled over
+# land/sea by the terrain shader, plus the screen-edge fog vignette
+PAPER_ART = {
+    "paper_land.png": ("parchment_land.png", 512),
+    "paper_sea.png":  ("muted_sea.png", 512),
+    "vignette.png":   ("fog_vignette_overlay.png", 512),
+}
+for dest, (rel, side) in PAPER_ART.items():
+    export_dds(rel, dest, side)
+
 # CK3 window-skin textures for the web UI (panels, tooltip, buttons)
 SKIN_ART = {
     "skin_win.png":    ("gfx/interface/component_tiles/tile_window_background.dds", 700),

@@ -54,6 +54,16 @@ async function boot(): Promise<void> {
   const idImage = await idImagePromise;
   const scene = new MapScene(world, texCanvas, document.body, idImage, base.snow);
   const gl = scene.renderer.domElement;
+  scene.setPaperTextures(BASE + 'map/ui/paper_land.png', BASE + 'map/ui/paper_sea.png');
+
+  // the game's screen-edge fog vignette, blended over the map but under the UI
+  {
+    const vig = document.createElement('img');
+    vig.src = BASE + 'map/ui/vignette.png';
+    vig.id = 'vig';
+    vig.alt = '';
+    document.body.appendChild(vig);
+  }
 
   // ---- map modes: the political/culture/faith/development washes live in a
   // per-province GPU LUT; only elevation needs a CPU rebake of the texture

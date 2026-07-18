@@ -35,6 +35,13 @@ export class MapScene {
     provDark: { value: 0.1 },
     hierK: { value: 1 },
   };
+  /** the game's flat-map paper sheets (loaded lazily; K gates each blend) */
+  private paperUniforms = {
+    paperLand: { value: new THREE.Texture() as THREE.Texture },
+    paperSea: { value: new THREE.Texture() as THREE.Texture },
+    paperKL: { value: 0 },
+    paperKS: { value: 0 },
+  };
   private washData!: Uint8Array;
   private washTex!: THREE.DataTexture;
   private idW = 0; private idH = 0;
@@ -239,6 +246,10 @@ export class MapScene {
       shader.uniforms.hierK = this.modeUniforms.hierK;
       shader.uniforms.hoverId = this.hlUniforms.hoverId;
       shader.uniforms.selId = this.hlUniforms.selId;
+      shader.uniforms.paperLand = this.paperUniforms.paperLand;
+      shader.uniforms.paperSea = this.paperUniforms.paperSea;
+      shader.uniforms.paperKL = this.paperUniforms.paperKL;
+      shader.uniforms.paperKS = this.paperUniforms.paperKS;
       shader.fragmentShader = shader.fragmentShader
         .replace('void main() {', `
       uniform sampler2D detailMap;
@@ -252,6 +263,10 @@ export class MapScene {
       uniform float hierK;
       uniform vec2 hoverId;
       uniform vec2 selId;
+      uniform sampler2D paperLand;
+      uniform sampler2D paperSea;
+      uniform float paperKL;
+      uniform float paperKS;
       float idAt( vec2 uv ) {
         vec2 t = texture2D( provMap, uv ).rg;
         return floor( t.x * 255.0 + 0.5 ) + floor( t.y * 255.0 + 0.5 ) * 256.0;
@@ -305,7 +320,9 @@ export class MapScene {
       float landF = smoothstep( 0.030, 0.085, ss.b );
       float provLand = step( 0.5, tB.b );
       float fillF = provLand * ( 1.0 - landF );          // land px painted as sea
-      diffuseColor.rgb = mix( diffuseColor.rgb, vec3( 0.655, 0.615, 0.485 ) * shd, fillF * 0.9 );
+      vec3 pl = texture2D( paperLand, vMapUv * vec2( 12.0, 6.0 ) ).rgb;
+      vec3 parch = mix( vec3( 0.655, 0.615, 0.485 ), pl * 1.06, paperKL );
+      diffuseColor.rgb = mix( diffuseColor.rgb, parch * shd, fillF * 0.9 );
       float cutF = ( 1.0 - provLand ) * landF;           // sea px painted as land
       diffuseColor.rgb = mix( diffuseColor.rgb, vec3( 0.322, 0.392, 0.392 ), cutF * 0.85 );
 
@@ -370,7 +387,17 @@ export class MapScene {
       if ( max( abs( mod( pid, 256.0 ) - hoverId.x ), abs( floor( pid / 256.0 ) - hoverId.y ) ) < 0.5 )
         diffuseColor.rgb = mix( diffuseColor.rgb, vec3( 1.0 ), 0.16 * provLand );
       if ( max( abs( mod( pid, 256.0 ) - selId.x ), abs( floor( pid / 256.0 ) - selId.y ) ) < 0.5 )
-        diffuseColor.rgb = mix( diffuseColor.rgb, vec3( 1.0, 0.9, 0.58 ), 0.30 * provLand );`);
+        diffuseColor.rgb = mix( diffuseColor.rgb, vec3( 1.0, 0.9, 0.58 ), 0.30 * provLand );
+
+      // the game's flat-map paper: parchment grain over land (mottles the
+      // political wash) and the muted sea sheet over open water
+      float pgl = dot( pl, vec3( 0.3333 ) ) * 1.88;
+      diffuseColor.rgb *= mix( 1.0, pgl, 0.30 * provLand * paperKL );
+      vec3 ps = texture2D( paperSea, vMapUv * vec2( 12.0, 6.0 ) ).rgb;
+      float pgs = dot( ps, vec3( 0.3333 ) ) * 3.03;
+      float seaF = ( 1.0 - provLand ) * paperKS;
+      diffuseColor.rgb *= mix( 1.0, pgs, seaF * 0.42 );
+      diffuseColor.rgb = mix( diffuseColor.rgb, ps * 1.10, seaF * 0.15 );`);
     };
     this.terrain = new THREE.Mesh(geo, mat);
     this.scene.add(this.terrain);
@@ -452,6 +479,25 @@ export class MapScene {
   }
 
   invalidate(): void { this.needsRender = true; }
+
+  /** Load the game's flat-map paper sheets; each blend activates on load. */
+  setPaperTextures(landUrl: string, seaUrl: string): void {
+    const loader = new THREE.TextureLoader();
+    const pairs: [string, { value: THREE.Texture }, { value: number }][] = [
+      [landUrl, this.paperUniforms.paperLand, this.paperUniforms.paperKL],
+      [seaUrl, this.paperUniforms.paperSea, this.paperUniforms.paperKS],
+    ];
+    for (const [url, tex, k] of pairs) {
+      loader.load(url, (t) => {
+        t.wrapS = t.wrapT = THREE.RepeatWrapping;
+        t.minFilter = THREE.LinearMipmapLinearFilter;
+        t.anisotropy = Math.min(4, this.renderer.capabilities.getMaxAnisotropy());
+        tex.value = t;
+        k.value = 1;
+        this.invalidate();
+      });
+    }
+  }
 
   /** GPU province highlight by RAW definition id: pass -1 to clear. */
   setHover(rid: number): void {
