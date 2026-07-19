@@ -184,21 +184,48 @@ def find_texture(name: str, near: Path) -> Path | None:
     return None
 
 # ------------------------------------------------------- geometry extraction
+def decimate(v, u, t, grid):
+    """Grid vertex clustering: snap verts to a grid over the bbox, merge each
+    cell to its first vertex (positions/UVs preserved), drop collapsed tris."""
+    lo = v.min(0)
+    span = np.maximum(v.max(0) - lo, 1e-6)
+    cell = np.clip(((v - lo) / span * grid).astype(np.int64), 0, grid - 1)
+    key = (cell[:, 0] * grid + cell[:, 1]) * grid + cell[:, 2]
+    uniq, first, remap = np.unique(key, return_index=True, return_inverse=True)
+    nt = remap[t.reshape(-1, 3)].astype(np.uint32)
+    keep = (nt[:, 0] != nt[:, 1]) & (nt[:, 1] != nt[:, 2]) & (nt[:, 0] != nt[:, 2])
+    return v[first], u[first], nt[keep].ravel()
+
 def extract_model(mesh_path: Path, scale: float, diffuse_override: str | None,
-                  tex_side: int, tint=None):
+                  tex_side: int, tint=None, lod_pref=0, decim=0):
     """-> dict(parts=[...], scale, hgt) or None"""
     try:
         root = parse_pdx(mesh_path.read_bytes())
     except Exception as e:
         print(f"  ! mesh {mesh_path.name}: {e}")
         return None
+    # pick the LOD level closest to lod_pref (mass-instanced models can use
+    # the game's own reduced meshes); shapes without lod info always pass
+    lods_present = set()
+    for obj in root["children"]:
+        if obj["name"] != "object":
+            continue
+        for shape in obj["children"]:
+            lod = shape["props"].get("lod")
+            if lod:
+                lods_present.add(lod[0])
+    lod_want = 0
+    if lods_present:
+        le = [l for l in lods_present if l <= lod_pref]
+        lod_want = max(le) if le else min(lods_present)
+
     by_tex = {}
     for obj in root["children"]:
         if obj["name"] != "object":
             continue
         for shape in obj["children"]:
             lod = shape["props"].get("lod")
-            if lod and lod[0] != 0:
+            if lod and lod[0] != lod_want:
                 continue
             if "decal" in shape["name"].lower():
                 continue  # flat ground-projection planes, not real geometry
@@ -224,6 +251,8 @@ def extract_model(mesh_path: Path, scale: float, diffuse_override: str | None,
     parts, hgt = [], 0.0
     for diff, (vs, us, ts, _) in by_tex.items():
         v = np.concatenate(vs); u = np.concatenate(us); t = np.concatenate(ts)
+        if decim and len(v) > 400:
+            v, u, t = decimate(v, u, t, decim)
         src = find_texture(diff, mesh_path.parent)
         tex = write_texture(src, tex_side, tint) if src else None
         if tex is None:
@@ -246,7 +275,7 @@ def extract_model(mesh_path: Path, scale: float, diffuse_override: str | None,
         return None
     return {"parts": parts, "scale": scale, "hgt": round(hgt, 3)}
 
-def model_from_asset(mesh_name: str, tex_side: int, tint=None):
+def model_from_asset(mesh_name: str, tex_side: int, tint=None, lod_pref=0, decim=0):
     ent = asset_index.get(mesh_name)
     if not ent:
         print(f"  ! no .asset for {mesh_name}")
@@ -255,7 +284,7 @@ def model_from_asset(mesh_name: str, tex_side: int, tint=None):
     if not path.exists():
         print(f"  ! missing mesh file {path}")
         return None
-    return extract_model(path, scale, diff, tex_side, tint)
+    return extract_model(path, scale, diff, tex_side, tint, lod_pref, decim)
 
 # ---------------------------------------------------------------- world grid
 print("loading world grid ...")
@@ -395,7 +424,9 @@ bkeys = {}
 for si, st in enumerate(STYLES):
     for kind, mesh_name in st.items():
         k = f"b{si}_{kind}"
-        mdl = model_from_asset(mesh_name, 512)
+        # thousands of instances per settlement model: take the game's own
+        # reduced LOD when one ships, then grid-decimate the rest of the way
+        mdl = model_from_asset(mesh_name, 512, lod_pref=1, decim=36)
         if mdl:
             bkeys[(si, kind)] = k
             models[k] = mdl

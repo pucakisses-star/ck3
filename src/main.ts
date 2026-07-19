@@ -651,10 +651,11 @@ async function boot(): Promise<void> {
     scene.cam.dist = Math.min(scene.cam.dist, 420);
     scene.clampCamera(); scene.applyCamera();
   };
+  let objectsOn = true;
   $('objs').onclick = () => {
     if (!objects) return;
-    objects.visible = !objects.visible;
-    $('objs').className = objects.visible ? 'on' : '';
+    objectsOn = !objectsOn;
+    $('objs').className = objectsOn ? 'on' : '';
     scene.invalidate();
   };
   $('hideui').onclick = () => {
@@ -701,6 +702,12 @@ async function boot(): Promise<void> {
 
   // ---- render loop ----
   const loop = () => {
+    // like the game's flat map: at empire zoom the 3-D objects are sub-pixel,
+    // so skip drawing all ~80k of them and let the paper map carry the view
+    if (objects) {
+      const show = objectsOn && scene.cam.dist < scene.fitDist * 0.55;
+      if (objects.visible !== show) { objects.visible = show; scene.invalidate(); }
+    }
     scene.render();
     if (labelsDirty) { labelsDirty = false; drawLabels(lctx, labels, scene, BASE + 'map/ui/coa/', () => { labelsDirty = true; }); }
     requestAnimationFrame(loop);
