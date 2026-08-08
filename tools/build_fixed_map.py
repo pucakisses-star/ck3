@@ -18,6 +18,7 @@ Outputs (docs/map/):
 import colorsys
 import json
 import re
+import os
 from pathlib import Path
 
 import numpy as np
@@ -25,8 +26,11 @@ from PIL import Image
 
 Image.MAX_IMAGE_PIXELS = None
 ROOT = Path(__file__).resolve().parent.parent
-MD = ROOT / "map_data"
-OUT = ROOT / "docs" / "map"
+# Env overrides let CI build a second map (e.g. the invented world under
+# worldsource/) with the same pipeline; defaults are the Godherja mod files.
+MD = Path(os.environ.get("GH_MAP_DATA", ROOT / "map_data"))
+OUT = Path(os.environ.get("GH_OUT_DIR", ROOT / "docs" / "map"))
+TERRAIN_FILE = Path(os.environ.get("GH_TERRAIN_FILE", ROOT / "00_province_terrain.txt"))
 OUT.mkdir(parents=True, exist_ok=True)
 
 W, H = 4096, 2048
@@ -449,7 +453,7 @@ with open(MD / "definition.csv", encoding="utf-8-sig") as f:
             id_name[i] = disp_name
 
 id_terr = {}
-with open(ROOT / "00_province_terrain.txt", encoding="utf-8-sig") as f:
+with open(TERRAIN_FILE, encoding="utf-8-sig") as f:
     for line in f:
         line = line.strip()
         if not line or line.startswith("#") or "=" not in line:

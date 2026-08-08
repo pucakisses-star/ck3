@@ -28,6 +28,7 @@ on:
       - 'interface/**'
       - 'icons/**'
       - 'content_source/map_objects/**'
+      - 'worldsource/**'
       - '.github/workflows/build-map.yml'
   workflow_dispatch:
 
@@ -68,6 +69,23 @@ jobs:
           npm ci
           rm -rf docs/assets
           npm run build
+
+      # Second page: the invented world drawn in worldsource/worldmap.png.
+      # Its map_data set is pre-generated locally (tools/build_world_from_image.py
+      # needs scipy/scikit-image) and committed under worldsource/map_data/;
+      # here we only run the standard pipeline on it and bundle the app with
+      # the /ck3/world/ base so Pages serves it at <site>/world/.
+      - name: Generate world-page map assets
+        run: python tools/build_fixed_map.py
+        env:
+          GH_MAP_DATA: worldsource/map_data
+          GH_TERRAIN_FILE: worldsource/map_data/00_province_terrain.txt
+          GH_OUT_DIR: docs/world/map
+
+      - name: Build world page into docs/world/
+        run: |
+          rm -rf docs/world/assets
+          npx vite build --base=/ck3/world/ --outDir docs/world
 
       - name: Commit built site
         run: |
