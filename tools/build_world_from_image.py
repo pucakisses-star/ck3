@@ -224,10 +224,27 @@ print(f"  land {land.mean():.3f}  (+{n_islet} small islands kept)")
 # channels through the continents now that the coastline morphology is light;
 # seal water that is thin everywhere (<=6px to land) while leaving lakes,
 # bays and real straits open
-thin = ndimage.binary_closing(land, structure=np.ones((3, 3)), iterations=8) & ~land
-dthin = ndimage.distance_transform_edt(~land)
-land |= thin & (dthin <= 8.0)
-del thin, dthin
+# seal by opening the SEA: erode it, then regrow from the wide water that
+# survives -- channels narrower than ~16px never come back and become land.
+# (closing the land instead leaves 1px seams down the middle of channels
+# just wider than the reach, which used to turn into thread provinces)
+sea_er = ndimage.binary_erosion(~land, structure=np.ones((3, 3)), iterations=8,
+                                border_value=1)
+sea_op = ndimage.binary_dilation(sea_er, structure=np.ones((3, 3)), iterations=8)
+land |= ~land & ~sea_op
+del sea_er, sea_op
+# safety: no land component may be a hairline sliver
+ll2, ln2 = ndimage.label(land)
+for lab, sl in enumerate(ndimage.find_objects(ll2), start=1):
+    if sl is None:
+        continue
+    bh = sl[0].stop - sl[0].start
+    bw = sl[1].stop - sl[1].start
+    if min(bh, bw) <= 2:
+        reg = land[sl]
+        reg[ll2[sl] == lab] = False
+        land[sl] = reg
+del ll2
 
 sea0 = ~land
 # classification context: ALL dark sea marks, including those inside letter
@@ -414,10 +431,42 @@ for c, sl in enumerate(ndimage.find_objects(comp), start=1):
     for yy, xx in zip(sy, sx):
         mk += 1
         markers[yy, xx] = mk
-# watershed grows markers over land only, following the terrain a little
-elev = ndimage.gaussian_filter(-dc, 2.0) + (lown - 0.5) * 8.0
-lab_land = watershed(elev, markers, mask=land)
+# watershed grows markers over land only, following the terrain a little.
+# The coast-distance term must stay a MILD tilt: at full strength its 1px/px
+# gradient dwarfs the noise and shreds basins into flow-line streaks (the
+# hairline provinces); scaled down, the noise shapes rounded cells and a
+# touch of compactness guarantees no basin degenerates
+elev = ndimage.gaussian_filter(-dc, 2.0) * 0.05 + (lown - 0.5) * 8.0
+lab_land = watershed(elev, markers, mask=land, compactness=0.003)
 del elev, markers
+# the interior elevation is nearly planar, and watershed tie-breaking on
+# such ramps can pinch a basin into a 1px axis-aligned corridor; dissolve
+# any hairline basin into its neighbours (an isolated island basin has no
+# land neighbour and is kept, however thin)
+objs = ndimage.find_objects(lab_land)
+bad = []
+for lab in range(1, mk + 1):
+    sl = objs[lab - 1] if lab - 1 < len(objs) else None
+    if sl is None:
+        continue
+    bh = sl[0].stop - sl[0].start
+    bw = sl[1].stop - sl[1].start
+    if min(bh, bw) > 4:
+        continue
+    ys0 = max(0, sl[0].start - 2); xs0 = max(0, sl[1].start - 2)
+    win = lab_land[ys0:sl[0].stop + 2, xs0:sl[1].stop + 2]
+    ring = ndimage.binary_dilation(win == lab, iterations=2) & (win > 0) & (win != lab)
+    if ring.any():
+        bad.append(lab)
+if bad:
+    badm = np.isin(lab_land, bad)
+    lab_land[badm] = 0
+    src_ok = land & (lab_land > 0)
+    idxs = ndimage.distance_transform_edt(~src_ok, return_distances=False,
+                                          return_indices=True)
+    fill = lab_land[tuple(idxs)]
+    lab_land = np.where(land & (lab_land == 0), fill, lab_land)
+    print(f"  dissolved {len(bad)} hairline basins")
 # sea provinces: coarser jittered grid over all water
 smark = np.zeros((CH, CW), np.int32)
 gy, gx = np.mgrid[0:CH:128, 0:CW:128]
