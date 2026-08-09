@@ -133,6 +133,25 @@
   #sel .chip.rlink{cursor:pointer}
   #sel .chip.rlink:hover{box-shadow:inset 0 0 0 1px var(--gold)}
 
+  /* ---- province editor ---- */
+  #edit{right:14px;bottom:14px;width:344px;padding:0;display:none;overflow:hidden}
+  #edit .band{padding:10px 13px 8px}
+  #edit h2{margin:0;font-size:18px}
+  #edit .subt{font-size:12px;color:var(--muted);margin:2px 0 0}
+  #edit .selpad{padding:10px 13px 12px}
+  #edit .egrid{display:grid;grid-template-columns:86px 1fr;gap:7px 10px;align-items:center;font-size:12.5px}
+  #edit .egrid label{color:var(--muted);font-size:12px}
+  #edit input[type=text],#edit input[type=number],#edit select{
+    width:100%;background:rgba(10,8,6,.72);color:var(--ink);
+    border:1px solid var(--line);border-radius:7px;padding:5px 8px;font:inherit;font-size:12.5px}
+  #edit input:focus,#edit select:focus{outline:none;border-color:var(--gold)}
+  #edit select{appearance:auto;cursor:pointer}
+  #edit select option,#edit select optgroup{background:#171512;color:var(--ink)}
+  #edit .eprev{display:block;width:100%;height:86px;object-fit:cover;margin-top:9px;
+    border:1px solid var(--line);border-radius:6px;opacity:.95}
+  #edit .enote{margin-top:8px;font-size:10.5px;color:#8a7f66;line-height:1.4}
+  #editbtn.on{color:#f6e6b4;box-shadow:0 0 0 1px var(--gold),0 2px 5px rgba(0,0,0,.5)}
+
   /* ---- tooltip: the game's own tooltip skin ---- */
   #tip{position:fixed;z-index:6;pointer-events:none;
     background:url("map/ui/skin_ttbg.png") #14110e;background-size:300px 300px;
@@ -153,7 +172,7 @@
   .hidden{display:none!important}
   .foot{margin-top:9px;font-size:10.5px;color:#8a7f66;line-height:1.4}
 </style>
-  <script type="module" crossorigin src="/ck3/world/assets/index-DZeQcrJJ.js"></script>
+  <script type="module" crossorigin src="/ck3/world/assets/index-CDF2DN5u.js"></script>
 </head>
 <body>
 <canvas id="labels"></canvas>
@@ -171,11 +190,13 @@
     <div class="btns">
       <button id="reset">Reset view</button>
       <button id="objs" title="Trees, settlements &amp; landmarks from the mod's 3-D models">Models</button>
+      <button id="editbtn" title="Click provinces to change their name, terrain, culture, faith &amp; more">Edit</button>
     </div>
     <div class="modes" id="modes"></div>
     <div class="btns">
       <a id="dl" class="btn" download="godherja-map.png">Export PNG</a>
       <a id="dljson" class="btn" download="godherja-provinces.json">Export data</a>
+      <a id="dledits" class="btn" download="map-edits.json" style="display:none">Save edits</a>
     </div>
     <div class="foot">Provinces, titles, realm colours, cultures, faiths &amp; rivers from the Godherja mod data.</div>
   </div>
@@ -197,6 +218,24 @@
     <div class="btns"><button id="center">Center camera</button><button id="clearSel">Close</button></div>
   </div>
   <img id="selIllu" class="illu" alt="" style="display:none">
+</section>
+
+<section id="edit" class="panel">
+  <div class="band"><h2 id="edTitle">Edit Province</h2><div id="edSub" class="subt"></div></div>
+  <div class="selpad">
+    <div class="egrid">
+      <label for="edName">Name</label><input id="edName" type="text" autocomplete="off" spellcheck="false">
+      <label for="edTerr">Terrain</label><select id="edTerr"></select>
+      <label for="edCult">Culture</label><select id="edCult"></select>
+      <label for="edFaith">Faith</label><select id="edFaith"></select>
+      <label for="edHold">Holding</label><select id="edHold"></select>
+      <label for="edDev">Development</label><input id="edDev" type="number" min="0" max="100" step="1">
+      <label for="edArt">Picture</label><select id="edArt"></select>
+    </div>
+    <img id="edPrev" class="eprev" alt="" style="display:none">
+    <div class="enote">Changes apply to the map instantly and live in this browser session. Save edits (in the menu) downloads them as a JSON file.</div>
+    <div class="btns"><button id="edRevert">Revert province</button><button id="edClose">Close</button></div>
+  </div>
 </section>
 
 <section id="faith" class="panel">

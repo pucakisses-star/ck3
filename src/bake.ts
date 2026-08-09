@@ -155,6 +155,39 @@ export function buildBase(w: World): BaseResult {
   return { baseBuf, snow };
 }
 
+/** Repaint one province's cells of the baked base texture after its terrain
+ *  was edited — same colour math as buildBase's land branch (grain, snow via
+ *  the stored per-cell strength, river ink, coast darkening), bounded to the
+ *  province's bounding box so edits apply instantly. */
+export function repaintProvinceBase(w: World, base: BaseResult, p: number): void {
+  const { W, H, terr, shade, land, river, prov } = w;
+  const { baseBuf, snow } = base;
+  const x0 = Math.max(0, w.pMinX[p]), x1 = Math.min(W - 1, w.pMaxX[p]);
+  const y0 = Math.max(0, w.pMinY[p]), y1 = Math.min(H - 1, w.pMaxY[p]);
+  for (let y = y0; y <= y1; y++) {
+    for (let x = x0; x <= x1; x++) {
+      const i = y * W + x;
+      if (prov[i] !== p) continue;
+      const t = terr[i], s = shade[i], c = TCOL[t];
+      const cl = w.cloudAt(x, y);
+      const grain = (cl - 0.5) * 9 + ((((x * 131 + y * 57) ^ (x * 13 + y * 151)) % 13) - 6) * 0.9;
+      let r = c[0] * s + grain, g = c[1] * s + grain, b = c[2] * s + grain;
+      const st = snow[i] / 255;
+      if (st > 0) {
+        const ss = Math.min(1.05, s);
+        r = r * (1 - st) + 228 * ss * st;
+        g = g * (1 - st) + 231 * ss * st;
+        b = b * (1 - st) + 234 * ss * st;
+      }
+      if (river[i] && land[i]) { r = r * 0.15 + 50 * 0.85; g = g * 0.15 + 84 * 0.85; b = b * 0.15 + 118 * 0.85; }
+      const coast = (x > 0 && !land[i - 1]) || (x < W - 1 && !land[i + 1])
+        || (y > 0 && !land[i - W]) || (y < H - 1 && !land[i + W]);
+      if (coast) { r *= 0.66; g *= 0.66; b *= 0.66; }
+      baseBuf[i] = packRGB(r, g, b);
+    }
+  }
+}
+
 export function devColor(d: number): [number, number, number] {
   const t = d / 100;
   const a: [number, number, number] = [120, 120, 96];

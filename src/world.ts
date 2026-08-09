@@ -316,6 +316,7 @@ export async function loadFixedMap(seed: number, base: string): Promise<World> {
 
   return {
     W, H, N, height, seaBase, terr, land, prov, cloud, river, coastD,
+    cloudAt: (x: number, y: number) => cloudNz.fbm(x / W * 2.4 + 13, y / H * 2.4 + 21, 3),
     shade: new Float32Array(0), // filled by computeShade
     np, provName, pTerr, pArea, pCX, pCY, pMinX, pMinY, pMaxX, pMaxY, padj,
     nCounty: meta.counties.length, nDuchy: meta.duchies.length,
