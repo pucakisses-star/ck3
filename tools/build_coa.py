@@ -22,6 +22,12 @@ from pathlib import Path
 # they read as banners rather than plain colour boxes. Off by default so
 # the Godherja root map's existing unauthored-title look never changes.
 SYNTH_PATTERN = os.environ.get("GH_SYNTH_PATTERN") == "1"
+# When set, titles with no authored heraldry borrow a real Godherja coat of
+# arms instead: each realm is deterministically assigned one of the mod's
+# authored tier-matched designs (kingdoms draw from k_ blocks, empires from
+# e_ blocks), so the invented world flies genuine Godherja banners. The
+# synthetic pattern above remains the last-resort fallback.
+BORROW_COA = os.environ.get("GH_BORROW_COA") == "1"
 SYNTH_PATTERNS = ["chief", "base", "pale", "fess", "bend", "cross", "saltire",
                    "quarterly", "vertical_split", "horizontal_split",
                    "diagonal_split_01", "diagonal_split_02", "checkers"]
@@ -325,14 +331,47 @@ def frame(img):
     a[2:4, 2:-2] = a[-4:-2, 2:-2] = a[2:-2, 2:4] = a[2:-2, -4:-2] = (166, 138, 82)
     return Image.fromarray(a).resize((FINAL, FINAL), Image.LANCZOS)
 
+def _renderable(block):
+    """True when the block's pattern actually resolves to art (a shipped
+    pattern file or a procedural shape) — keeps borrowed flags from
+    degenerating into flat colour squares."""
+    pattern = None
+    for k2, v2 in block:
+        if k2 == "pattern" and not isinstance(v2, list):
+            pattern = v2.strip('"')
+    if not pattern:
+        return False
+    if (PAT / pattern).exists():
+        return True
+    n = pattern.lower()
+    return any(w in n for w in ("split", "checkers", "chief", "base", "champagne",
+                                "pale", "fess", "stripe", "bend", "cross", "plus",
+                                "saltire", "quarterly", "quadrants"))
+
+borrow_pool = {}
+if BORROW_COA:
+    import random as _random
+    _rng = _random.Random(4242)
+    for tier in ("k", "e"):
+        pool = sorted(k for k, v in coa_defs.items()
+                      if k.startswith(tier + "_") and _renderable(v))
+        _rng.shuffle(pool)
+        borrow_pool[tier] = pool
+    print("borrow pools:", {t: len(p) for t, p in borrow_pool.items()})
+
 meta = json.load(open(META_FILE))
-made = authored = 0
+made = authored = borrowed = 0
 for kind, table in (("k", meta["kingdoms"]), ("e", meta["empires"])):
     for i, ent in enumerate(table):
         key = ent.get("t")
         block = coa_defs.get(key, [])
         if block:
             authored += 1
+        elif BORROW_COA:
+            pool = borrow_pool.get(kind) or borrow_pool.get("k") or []
+            if pool:
+                block = coa_defs[pool[i % len(pool)]]
+                borrowed += 1
         col = cl(ent["c"]) if ent.get("c") else None
         if not block and col and SYNTH_PATTERN:
             img = synthetic_coa(col, i * 7 + (1 if kind == "e" else 0))
@@ -340,4 +379,4 @@ for kind, table in (("k", meta["kingdoms"]), ("e", meta["empires"])):
             img = render_coa(block, col)
         frame(img).save(OUT / f"{kind}_{i}.png", optimize=True)
         made += 1
-print(f"{made} flags rendered ({authored} from authored heraldry)")
+print(f"{made} flags rendered ({authored} authored, {borrowed} borrowed)")
