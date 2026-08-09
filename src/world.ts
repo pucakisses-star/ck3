@@ -286,6 +286,13 @@ export async function loadFixedMap(seed: number, base: string): Promise<World> {
     if (countyOf[p] < 0) continue;
     landCX += pCX[p] * pArea[p]; landCY += pCY[p] * pArea[p]; landN += pArea[p];
   }
+  if (landN === 0) {
+    // a world with no settled realms (blank politics): frame all land
+    for (let p = 0; p < np; p++) {
+      if (pTerr[p] <= T.SHALLOW) continue;
+      landCX += pCX[p] * pArea[p]; landCY += pCY[p] * pArea[p]; landN += pArea[p];
+    }
+  }
   landCX /= Math.max(1, landN); landCY /= Math.max(1, landN);
 
   return {
