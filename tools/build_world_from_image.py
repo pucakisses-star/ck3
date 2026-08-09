@@ -435,6 +435,34 @@ for c, sl in enumerate(ndimage.find_objects(comp), start=1):
 elev = ndimage.gaussian_filter(-dc, 2.0) + (lown - 0.5) * 8.0
 lab_land = watershed(elev, markers, mask=land)
 del elev, markers
+# the interior elevation is nearly planar, and watershed tie-breaking on
+# such ramps can pinch a basin into a 1px axis-aligned corridor; dissolve
+# any hairline basin into its neighbours (an isolated island basin has no
+# land neighbour and is kept, however thin)
+objs = ndimage.find_objects(lab_land)
+bad = []
+for lab in range(1, mk + 1):
+    sl = objs[lab - 1] if lab - 1 < len(objs) else None
+    if sl is None:
+        continue
+    bh = sl[0].stop - sl[0].start
+    bw = sl[1].stop - sl[1].start
+    if min(bh, bw) > 4:
+        continue
+    ys0 = max(0, sl[0].start - 2); xs0 = max(0, sl[1].start - 2)
+    win = lab_land[ys0:sl[0].stop + 2, xs0:sl[1].stop + 2]
+    ring = ndimage.binary_dilation(win == lab, iterations=2) & (win > 0) & (win != lab)
+    if ring.any():
+        bad.append(lab)
+if bad:
+    badm = np.isin(lab_land, bad)
+    lab_land[badm] = 0
+    src_ok = land & (lab_land > 0)
+    idxs = ndimage.distance_transform_edt(~src_ok, return_distances=False,
+                                          return_indices=True)
+    fill = lab_land[tuple(idxs)]
+    lab_land = np.where(land & (lab_land == 0), fill, lab_land)
+    print(f"  dissolved {len(bad)} hairline basins")
 # sea provinces: coarser jittered grid over all water
 smark = np.zeros((CH, CW), np.int32)
 gy, gx = np.mgrid[0:CH:128, 0:CW:128]
