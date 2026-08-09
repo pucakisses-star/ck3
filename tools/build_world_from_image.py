@@ -446,9 +446,18 @@ rkeep[0] = False
 river = rkeep[rl_]
 del rl_
 print(f"  stitched {n_link} gaps, {n_mouth} mouths to water")
-# fatten just enough that the strokes survive the pipeline's halving and
-# the renderer's mip filtering without reading as broad ribbons
-river = ndimage.binary_dilation(river, iterations=2) & land
+# uniform width: collapse the stitched network to its centreline, prune
+# short spurs (skeleton whiskers of the wide patches), then re-thicken —
+# otherwise detected patches render as beads between thin stitch lines
+skel = skeletonize(river)
+near_water = ndimage.binary_dilation(~land, iterations=3)
+for _ in range(14):
+    nb8 = ndimage.convolve(skel.astype(np.uint8), np.ones((3, 3), np.uint8), mode="constant")
+    tips = skel & (nb8 == 2) & ~near_water        # keep river mouths anchored
+    if not tips.any():
+        break
+    skel &= ~tips
+river = ndimage.binary_dilation(skel, iterations=2) & land
 riv_img = np.zeros((CH, CW, 3), np.uint8)
 riv_img[land] = (255, 255, 255)
 riv_img[sea] = (255, 0, 128)          # magenta = water per the pipeline parser
