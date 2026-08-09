@@ -38,6 +38,7 @@ from PIL import Image
 from scipy import ndimage
 from scipy.spatial import cKDTree
 from skimage.measure import regionprops
+from skimage.morphology import skeletonize
 from skimage.segmentation import watershed
 
 Image.MAX_IMAGE_PIXELS = None
@@ -76,10 +77,18 @@ rbm = np.asarray(ndimage.mean((r - b).astype(np.float32), hl, hidx))
 wid = np.asarray(ndimage.maximum(ndimage.distance_transform_edt(holes), hl, hidx))
 is_lake = (rbm < 12) & (wid >= 6.0) & (hs >= 350)
 fill = np.zeros(hn + 1, bool)
-fill[1:] = (hs < 1600) & ~is_lake
-land = land | fill[hl]
-lakes_mask = holes & ~fill[hl]
-print(f"  lakes kept as water: {int(is_lake.sum()) + int(((hs >= 1600)).sum())}")
+fill[1:] = ~is_lake                     # every non-lake hole fills, ANY size:
+land = land | fill[hl]                  # big river-network holes must become
+retained = holes & ~fill[hl]            # land or the river tracer misses them
+# a retained hole can be a lake WITH river arms drawn into it — keep only the
+# wide water as lake, the thin arms turn to land (and trace as rivers later)
+dwat = ndimage.distance_transform_edt(retained)
+lake_core = dwat >= 5.0
+lakes_mask = ndimage.binary_dilation(lake_core, iterations=5) & retained
+land |= retained & ~lakes_mask
+del dwat, lake_core, retained
+ln_, lc_ = ndimage.label(lakes_mask)
+print(f"  lakes kept as water: {lc_}")
 
 # --- sea-name lettering must not become islands -------------------------
 # The drawing's big sea names ("THE PASSAPARTAGOS", "LVNMARE", ...) have
@@ -376,17 +385,47 @@ print("tracing the drawn rivers ...")
 # the artist drew the river network: thin grey-green lines over the tan
 # land (the same pixels the channel seal turned into land). Rasterize those
 # directly so the map's rivers match the drawing 1:1
-riv_col = land & ((r - b) < 20) & (ssum > 360) & (ssum < 680)
-# bridge the little gaps where ink ticks or labels cross a river
-riv_col = ndimage.binary_closing(riv_col, structure=np.ones((3, 3)), iterations=2)
-riv_col &= land
-# drop lone speckle (paper grain, shading dots) — keep connected strokes
-rl_, rn_ = ndimage.label(riv_col)
+# the strokes are thin and anti-aliased: most of their pixels blend with the
+# tan ground, so a single colour window only catches scattered core dots.
+# Hysteresis fixes that — a strict core grows through a relaxed shell — and
+# endpoint stitching joins the stylistic dashes into continuous courses.
+core = land & ((r - b) < 20) & (ssum > 360) & (ssum < 680)
+shell = land & ((r - b) < 38) & (ssum > 360) & (ssum < 712)
+river = ndimage.binary_propagation(core, mask=shell)
+river = ndimage.binary_closing(river, np.ones((3, 3)), iterations=6) & land
+rl_, rn_ = ndimage.label(river)
 rsz = np.bincount(rl_.ravel(), minlength=rn_ + 1)
-rkeep = rsz >= 40
+rkeep = rsz >= 200
 rkeep[0] = False
 river = rkeep[rl_]
 del rl_
+# stitch dash gaps: link nearby endpoints of different segments
+skel = skeletonize(river)
+nb8 = ndimage.convolve(skel.astype(np.uint8), np.ones((3, 3), np.uint8), mode="constant")
+ey, ex = np.nonzero(skel & (nb8 == 2))
+rl_, _ = ndimage.label(river, structure=np.ones((3, 3)))
+elab = rl_[ey, ex]
+del rl_
+pts = np.column_stack([ey, ex]).astype(np.float64)
+if len(pts):
+    tree = cKDTree(pts)
+    used = set()
+    pairs = sorted(tree.query_pairs(45.0),
+                   key=lambda p_: np.hypot(*(pts[p_[0]] - pts[p_[1]])))
+    n_link = 0
+    for i_, j_ in pairs:
+        if elab[i_] == elab[j_] or i_ in used or j_ in used:
+            continue
+        used.add(i_); used.add(j_)
+        p1, p2 = pts[i_], pts[j_]
+        n_ = int(max(abs(p2[0] - p1[0]), abs(p2[1] - p1[1]))) + 1
+        yy = np.linspace(p1[0], p2[0], n_).round().astype(int)
+        xx = np.linspace(p1[1], p2[1], n_).round().astype(int)
+        river[yy, xx] = True
+        n_link += 1
+    print(f"  stitched {n_link} river gaps")
+# fatten: at map resolution a 1-2px line vanishes into mip filtering
+river = ndimage.binary_dilation(river, iterations=4) & land
 # widen the strokes a touch so rivers stay visible once the pipeline
 # halves the resolution
 river = ndimage.binary_dilation(river, iterations=4) & land

@@ -101,7 +101,7 @@ export class MapScene {
 
     this.texture = new THREE.CanvasTexture(textureCanvas);
     this.texture.colorSpace = THREE.SRGBColorSpace;
-    this.texture.anisotropy = Math.min(8, this.renderer.capabilities.getMaxAnisotropy());
+    this.texture.anisotropy = this.renderer.capabilities.getMaxAnisotropy();
     this.texture.generateMipmaps = true;
     this.texture.minFilter = THREE.LinearMipmapLinearFilter;
     this.texture.magFilter = THREE.LinearFilter;
