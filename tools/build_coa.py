@@ -17,6 +17,15 @@ import os
 import re
 from pathlib import Path
 
+# When set, titles with no authored heraldry (every invented-world title)
+# get a two-tone procedural pattern instead of a flat colour swatch, so
+# they read as banners rather than plain colour boxes. Off by default so
+# the Godherja root map's existing unauthored-title look never changes.
+SYNTH_PATTERN = os.environ.get("GH_SYNTH_PATTERN") == "1"
+SYNTH_PATTERNS = ["chief", "base", "pale", "fess", "bend", "cross", "saltire",
+                   "quarterly", "vertical_split", "horizontal_split",
+                   "diagonal_split_01", "diagonal_split_02", "checkers"]
+
 import numpy as np
 from PIL import Image
 
@@ -295,6 +304,21 @@ def render_coa(block, title_color):
             out.alpha_composite(sp, (int(px * S - sp.width / 2), int(py * S - sp.height / 2)))
     return out
 
+def synthetic_coa(col, seed):
+    """A two-tone procedural banner for a title with no authored heraldry:
+    picks a geometric pattern by seed and a contrasting second colour
+    (roughly complementary hue, opposite lightness) so it reads as a flag
+    rather than a flat colour swatch."""
+    pat = SYNTH_PATTERNS[seed % len(SYNTH_PATTERNS)]
+    h, s, v = colorsys.rgb_to_hsv(col[0] / 255, col[1] / 255, col[2] / 255)
+    h2 = (h + 0.5 + (((seed * 0.618) % 0.2) - 0.1)) % 1.0
+    s2 = min(1.0, s * 0.85 + 0.15)
+    v2 = 0.32 if v > 0.55 else 0.85
+    r2, g2, b2 = colorsys.hsv_to_rgb(h2, s2, v2)
+    c2 = (int(r2 * 255), int(g2 * 255), int(b2 * 255))
+    canvas = procedural_pattern(pat, col, c2)
+    return Image.fromarray(canvas, "RGB").convert("RGBA")
+
 def frame(img):
     a = np.asarray(img.convert("RGB")).copy()
     a[:2, :] = a[-2:, :] = a[:, :2] = a[:, -2:] = (46, 38, 28)
@@ -310,7 +334,10 @@ for kind, table in (("k", meta["kingdoms"]), ("e", meta["empires"])):
         if block:
             authored += 1
         col = cl(ent["c"]) if ent.get("c") else None
-        img = render_coa(block, col)
+        if not block and col and SYNTH_PATTERN:
+            img = synthetic_coa(col, i * 7 + (1 if kind == "e" else 0))
+        else:
+            img = render_coa(block, col)
         frame(img).save(OUT / f"{kind}_{i}.png", optimize=True)
         made += 1
 print(f"{made} flags rendered ({authored} from authored heraldry)")

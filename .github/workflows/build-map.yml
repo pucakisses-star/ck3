@@ -96,6 +96,7 @@ jobs:
         env:
           GH_META_FILE: docs/world/map/meta.json
           GH_COA_OUT_DIR: docs/world/map/ui/coa
+          GH_SYNTH_PATTERN: "1"
 
       - name: Build world page into docs/world/
         run: |
