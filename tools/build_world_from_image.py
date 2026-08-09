@@ -112,17 +112,17 @@ np.fill_diagonal(Dm, 1e9)
 sim = (np.minimum(Ch[:, None], Ch[None, :]) * 1.9 >= np.maximum(Ch[:, None], Ch[None, :]))
 adjm = (Dm >= 40) & (Dm <= 340) & sim
 
-def _grow(i, j):
+def _grow(P, A, i, j):
     chain = [i, j]
     while True:
         a_, b_ = chain[-2], chain[-1]
-        v = Cyx[b_] - Cyx[a_]
+        v = P[b_] - P[a_]
         d0 = np.linalg.norm(v)
         best, bestdev = -1, 1e9
-        for kk in np.flatnonzero(adjm[b_]):
+        for kk in np.flatnonzero(A[b_]):
             if kk in chain:
                 continue
-            w = Cyx[kk] - Cyx[b_]
+            w = P[kk] - P[b_]
             d1 = np.linalg.norm(w)
             if not (0.55 * d0 <= d1 <= 1.8 * d0):
                 continue
@@ -140,7 +140,7 @@ is_text = np.zeros(nC, bool)
 chain_dir = {}
 for i in range(nC):
     for j in np.flatnonzero(adjm[i]):
-        ch = _grow(i, int(j))
+        ch = _grow(Cyx, adjm, i, int(j))
         if len(ch) < 5 or Crb[ch].mean() >= 37:
             continue
         for t, m in enumerate(ch):
@@ -162,6 +162,14 @@ for i in range(nC):
             is_text[i] = True
             break
 text_labels = {cands[i][0] for i in range(nC) if is_text[i]} - wl_labels
+
+# zones where lettering was removed: serif fragments and dark outlines in
+# them must not survive as islets
+text_zone = np.zeros((CH, CW), bool)
+for p in props:
+    if p.label in text_labels:
+        y0c, x0c, y1c, x1c = p.bbox
+        text_zone[max(0, y0c - 14):y1c + 14, max(0, x0c - 14):x1c + 14] = True
 
 # component filter: big landmasses always stay; small ones stay when they are
 # compact blobs (real islets) rather than dashed-gridline segments, judged by
@@ -190,15 +198,15 @@ for p in props:
         continue
     if p.solidity < 0.72:
         continue
+    if text_zone[int(p.centroid[0]), int(p.centroid[1])]:
+        continue
     keep[p.label] = True
     n_islet += 1
 print(f"  text components removed {len(text_labels)}, whitelisted {len(wl_labels)}")
-# zones where lettering/ornaments were removed: their dark outlines survive in
-# the ink layer and must not be resurrected as islets later
-text_zone = np.zeros((CH, CW), bool)
+# extend the zone with the other dropped mid-size components (ornaments,
+# shape-filter rejects) so the ink pass can't resurrect their outlines
 for p in props:
-    if p.label in text_labels or (p.label not in wl_labels and not keep[p.label]
-                                  and p.area >= 300):
+    if p.label not in wl_labels and not keep[p.label] and p.area >= 300:
         y0c, x0c, y1c, x1c = p.bbox
         text_zone[max(0, y0c - 14):y1c + 14, max(0, x0c - 14):x1c + 14] = True
 land = keep[ll]
@@ -216,9 +224,9 @@ print(f"  land {land.mean():.3f}  (+{n_islet} small islands kept)")
 # channels through the continents now that the coastline morphology is light;
 # seal water that is thin everywhere (<=6px to land) while leaving lakes,
 # bays and real straits open
-thin = ndimage.binary_closing(land, structure=np.ones((3, 3)), iterations=6) & ~land
+thin = ndimage.binary_closing(land, structure=np.ones((3, 3)), iterations=8) & ~land
 dthin = ndimage.distance_transform_edt(~land)
-land |= thin & (dthin <= 6.0)
+land |= thin & (dthin <= 8.0)
 del thin, dthin
 
 sea0 = ~land
@@ -237,7 +245,25 @@ if cands:
     cent = np.array([c for _, c in cands])
     tree = cKDTree(cent)
     n_near = np.array([len(tree.query_ball_point(c, 30)) - 1 for c in cent])
-    lone = [cands[i][0] for i in range(len(cands)) if n_near[i] <= 1]
+    li = [i for i in range(len(cands)) if n_near[i] <= 1]
+    # ghost letters: sea names whose pale fill never passed the warm test
+    # leave one dark outline fragment per letter -- dots that line up in
+    # regularly-spaced chains spell words, real skerries scatter irregularly
+    if len(li) >= 5:
+        Pd = cent[li]
+        Dd = np.linalg.norm(Pd[:, None, :] - Pd[None, :, :], axis=2)
+        np.fill_diagonal(Dd, 1e9)
+        Ad = (Dd >= 40) & (Dd <= 340)
+        ghost = np.zeros(len(li), bool)
+        for i_ in range(len(li)):
+            for j_ in np.flatnonzero(Ad[i_]):
+                ch = _grow(Pd, Ad, i_, int(j_))
+                if len(ch) >= 5:
+                    for m_ in ch:
+                        ghost[m_] = True
+        li = [li[i_] for i_ in range(len(li)) if not ghost[i_]]
+        print(f"  {int(ghost.sum())} ghost-letter dots dropped")
+    lone = [cands[i][0] for i in li]
     if lone:
         dots = np.isin(il, lone)
         dots = ndimage.binary_dilation(dots, iterations=2)
