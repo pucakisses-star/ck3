@@ -431,9 +431,13 @@ for c, sl in enumerate(ndimage.find_objects(comp), start=1):
     for yy, xx in zip(sy, sx):
         mk += 1
         markers[yy, xx] = mk
-# watershed grows markers over land only, following the terrain a little
-elev = ndimage.gaussian_filter(-dc, 2.0) + (lown - 0.5) * 8.0
-lab_land = watershed(elev, markers, mask=land)
+# watershed grows markers over land only, following the terrain a little.
+# The coast-distance term must stay a MILD tilt: at full strength its 1px/px
+# gradient dwarfs the noise and shreds basins into flow-line streaks (the
+# hairline provinces); scaled down, the noise shapes rounded cells and a
+# touch of compactness guarantees no basin degenerates
+elev = ndimage.gaussian_filter(-dc, 2.0) * 0.05 + (lown - 0.5) * 8.0
+lab_land = watershed(elev, markers, mask=land, compactness=0.003)
 del elev, markers
 # the interior elevation is nearly planar, and watershed tie-breaking on
 # such ramps can pinch a basin into a 1px axis-aligned corridor; dissolve
