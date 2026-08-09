@@ -399,36 +399,56 @@ rkeep = rsz >= 200
 rkeep[0] = False
 river = rkeep[rl_]
 del rl_
-# stitch dash gaps: link nearby endpoints of different segments
-skel = skeletonize(river)
-nb8 = ndimage.convolve(skel.astype(np.uint8), np.ones((3, 3), np.uint8), mode="constant")
-ey, ex = np.nonzero(skel & (nb8 == 2))
-rl_, _ = ndimage.label(river, structure=np.ones((3, 3)))
-elab = rl_[ey, ex]
-del rl_
-pts = np.column_stack([ey, ex]).astype(np.float64)
-if len(pts):
+# stitch until continuous: rounds of endpoint linking with growing reach,
+# then run every remaining loose end into nearby water (river mouths), and
+# drop orphan dashes that never joined a network
+def _endpoints(mask):
+    sk = skeletonize(mask)
+    nb8 = ndimage.convolve(sk.astype(np.uint8), np.ones((3, 3), np.uint8), mode="constant")
+    ey_, ex_ = np.nonzero(sk & (nb8 == 2))
+    lab_, _ = ndimage.label(mask, structure=np.ones((3, 3)))
+    return np.column_stack([ey_, ex_]).astype(np.float64), lab_[ey_, ex_]
+
+def _draw(mask, p1, p2):
+    n_ = int(max(abs(p2[0] - p1[0]), abs(p2[1] - p1[1]))) + 1
+    yy = np.linspace(p1[0], p2[0], n_).round().astype(int)
+    xx = np.linspace(p1[1], p2[1], n_).round().astype(int)
+    mask[yy, xx] = True
+
+n_link = 0
+for reach in (60.0, 90.0, 130.0):
+    pts, elab = _endpoints(river)
+    if len(pts) < 2:
+        break
     tree = cKDTree(pts)
     used = set()
-    pairs = sorted(tree.query_pairs(45.0),
-                   key=lambda p_: np.hypot(*(pts[p_[0]] - pts[p_[1]])))
-    n_link = 0
-    for i_, j_ in pairs:
+    for i_, j_ in sorted(tree.query_pairs(reach),
+                         key=lambda p_: np.hypot(*(pts[p_[0]] - pts[p_[1]]))):
         if elab[i_] == elab[j_] or i_ in used or j_ in used:
             continue
         used.add(i_); used.add(j_)
-        p1, p2 = pts[i_], pts[j_]
-        n_ = int(max(abs(p2[0] - p1[0]), abs(p2[1] - p1[1]))) + 1
-        yy = np.linspace(p1[0], p2[0], n_).round().astype(int)
-        xx = np.linspace(p1[1], p2[1], n_).round().astype(int)
-        river[yy, xx] = True
+        _draw(river, pts[i_], pts[j_])
         n_link += 1
-    print(f"  stitched {n_link} river gaps")
-# fatten: at map resolution a 1-2px line vanishes into mip filtering
-river = ndimage.binary_dilation(river, iterations=4) & land
-# widen the strokes a touch so rivers stay visible once the pipeline
-# halves the resolution
-river = ndimage.binary_dilation(river, iterations=4) & land
+pts, elab = _endpoints(river)
+wy_, wx_ = np.nonzero(~land)
+wtree = cKDTree(np.column_stack([wy_, wx_]))
+n_mouth = 0
+if len(pts):
+    dd_, ii_ = wtree.query(pts, k=1)
+    for k_ in range(len(pts)):
+        if dd_[k_] <= 50:
+            _draw(river, pts[k_], (float(wy_[ii_[k_]]), float(wx_[ii_[k_]])))
+            n_mouth += 1
+rl_, _ = ndimage.label(river, structure=np.ones((3, 3)))
+rsz = np.bincount(rl_.ravel())
+rkeep = rsz >= 400
+rkeep[0] = False
+river = rkeep[rl_]
+del rl_
+print(f"  stitched {n_link} gaps, {n_mouth} mouths to water")
+# fatten just enough that the strokes survive the pipeline's halving and
+# the renderer's mip filtering without reading as broad ribbons
+river = ndimage.binary_dilation(river, iterations=2) & land
 riv_img = np.zeros((CH, CW, 3), np.uint8)
 riv_img[land] = (255, 255, 255)
 riv_img[sea] = (255, 0, 128)          # magenta = water per the pipeline parser
