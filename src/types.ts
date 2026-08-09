@@ -55,6 +55,9 @@ export interface World {
   shade: Float32Array;
   /** low-frequency cloud field (freed after base bake) */
   cloud: Float32Array | null;
+  /** recompute the cloud value at a cell (for partial repaints after the
+   *  full field has been freed) */
+  cloudAt(x: number, y: number): number;
 
   np: number;
   provName: string[];

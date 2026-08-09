@@ -1,7 +1,7 @@
 /** Boot: load fixed Godherja assets → bake texture → Three.js scene → UI. */
 import { T, TNAME, type MapMode, type World } from './types';
 import { loadFixedMap } from './world';
-import { computeShade, buildBase, bakeMode, devColor } from './bake';
+import { computeShade, buildBase, bakeMode, devColor, repaintProvinceBase } from './bake';
 import { MapScene } from './scene3d';
 import { loadMapObjects } from './objects3d';
 import { buildLabels, drawLabels, type Labels } from './labels';
@@ -128,7 +128,7 @@ async function boot(): Promise<void> {
   // ---- labels overlay ----
   const labelCanvas = $('labels') as unknown as HTMLCanvasElement;
   const lctx = labelCanvas.getContext('2d')!;
-  const labels: Labels = buildLabels(world);
+  let labels: Labels = buildLabels(world);
   let labelsDirty = true;
   const DPR = Math.min(2, window.devicePixelRatio || 1);
   const sizeLabelCanvas = () => {
@@ -174,7 +174,11 @@ async function boot(): Promise<void> {
       [T.SNOW]: pool(['terr_mtn'], 'snow', 'mountain'),
     } as Record<number, string[]>,
   };
+  /** editor overrides: panel artwork chosen by hand per province */
+  const artOverride = new Map<number, string>();
   function artFor(p: number): string {
+    const ov = artOverride.get(p);
+    if (ov) return ov;
     const h = world.holdingOf[p], t = world.pTerr[p], c = world.countyOf[p];
     const pick = (arr: string[]) => arr[p % arr.length];
     if (c >= 0) {
@@ -432,6 +436,251 @@ async function boot(): Promise<void> {
     applyMode(detailMode);
   };
 
+  // ---- map editor: rename & reclassify provinces, download the changes ----
+  const LAND_TERR = [T.BEACH, T.PLAINS, T.FARM, T.FOREST, T.HILLS, T.DRY, T.WET, T.MTN, T.SNOW];
+  interface EditRec { name?: string; terrain?: number; culture?: number; faith?: number; holding?: number; dev?: number; art?: string }
+  interface OrigRec { name: string; terrain: number; culture: number; faith: number; holding: number; dev: number }
+  const edits = new Map<number, EditRec>();
+  const orig = new Map<number, OrigRec>();
+  let editMode = false;
+  let editProv = -1;
+
+  const edPanel = $('edit');
+  const edName = $('edName') as HTMLInputElement;
+  const edTerr = $('edTerr') as HTMLSelectElement;
+  const edCult = $('edCult') as HTMLSelectElement;
+  const edFaith = $('edFaith') as HTMLSelectElement;
+  const edHold = $('edHold') as HTMLSelectElement;
+  const edDev = $('edDev') as HTMLInputElement;
+  const edArt = $('edArt') as HTMLSelectElement;
+  const edPrev = $('edPrev') as HTMLImageElement;
+  const saveLink = $('dledits') as HTMLAnchorElement;
+
+  {
+    const opt = (v: string, label: string) => {
+      const o = document.createElement('option');
+      o.value = v; o.textContent = label;
+      return o;
+    };
+    for (const t of LAND_TERR) edTerr.appendChild(opt(String(t), TNAME[t]));
+    edCult.appendChild(opt('-1', '(none)'));
+    world.cultName.forEach((n, i) => edCult.appendChild(opt(String(i), n)));
+    edFaith.appendChild(opt('-1', '(none)'));
+    world.faithName.forEach((n, i) => edFaith.appendChild(opt(String(i), n)));
+    HOLDING_NAME.forEach((n, i) => edHold.appendChild(opt(String(i), n)));
+    // picture choices: every panel artwork, grouped like the auto-pick pools
+    edArt.appendChild(opt('', 'Auto (terrain & holding)'));
+    const seen = new Set<string>();
+    const group = (label: string, files: string[]) => {
+      const g = document.createElement('optgroup');
+      g.label = label;
+      for (const f of files) {
+        if (seen.has(f)) continue;
+        seen.add(f);
+        g.appendChild(opt(f, f.replace(/\.png$/, '').replace(/^(art_|terr_|holding_)/, '').replace(/_/g, ' ')));
+      }
+      if (g.children.length) edArt.appendChild(g);
+    };
+    group('Castles', ART.castle); group('Cities', ART.city); group('Ports', ART.port);
+    group('Temples', ART.temple); group('Tribal', ART.tribal);
+    for (const t of LAND_TERR) group(TNAME[t], ART.terr[t] ?? []);
+  }
+
+  function refreshSave(): void {
+    saveLink.style.display = edits.size ? '' : 'none';
+    saveLink.textContent = `Save edits (${edits.size})`;
+  }
+  /** ensure the original values are remembered, return the edit record */
+  function rec(p: number): EditRec {
+    if (!orig.has(p)) {
+      orig.set(p, {
+        name: world.provName[p], terrain: world.pTerr[p], culture: world.cultureOf[p],
+        faith: world.faithOf[p], holding: world.holdingOf[p], dev: world.devOf[p],
+      });
+    }
+    let r = edits.get(p);
+    if (!r) { r = {}; edits.set(p, r); }
+    return r;
+  }
+  /** drop fields set back to their original value; drop empty records */
+  function trimRec(p: number): void {
+    const r = edits.get(p), o = orig.get(p);
+    if (!r || !o) return;
+    if (r.name === o.name) delete r.name;
+    if (r.terrain === o.terrain) delete r.terrain;
+    if (r.culture === o.culture) delete r.culture;
+    if (r.faith === o.faith) delete r.faith;
+    if (r.holding === o.holding) delete r.holding;
+    if (r.dev === o.dev) delete r.dev;
+    if (r.art === '') delete r.art;
+    if (!Object.keys(r).length) edits.delete(p);
+    refreshSave();
+  }
+  /** retype a province's terrain and repaint its patch of the baked texture */
+  function setTerrain(p: number, t: number): void {
+    world.pTerr[p] = t;
+    for (let y = world.pMinY[p]; y <= world.pMaxY[p]; y++) {
+      for (let x = world.pMinX[p]; x <= world.pMaxX[p]; x++) {
+        const i = y * world.W + x;
+        if (world.prov[i] === p) world.terr[i] = t;
+      }
+    }
+    repaintProvinceBase(world, base, p);
+    bakeMode(world, base, currentMode, texImage);
+    texCtx.putImageData(texImage, 0, 0);
+    scene.texture.needsUpdate = true;
+    scene.invalidate();
+  }
+  function updPrev(): void {
+    if (editProv < 0) return;
+    edPrev.style.display = 'block';
+    edPrev.onerror = () => { edPrev.style.display = 'none'; };
+    edPrev.src = `${BASE}map/ui/${artFor(editProv)}`;
+  }
+  function openEditor(p: number): void {
+    editProv = p;
+    scene.setSelected(p < 0 ? -1 : world.rawOf[p]);
+    if (p < 0) { edPanel.style.display = 'none'; return; }
+    $('sel').style.display = 'none';
+    $('faith').classList.remove('open');
+    const c = world.countyOf[p];
+    $('edTitle').textContent = world.provName[p];
+    $('edSub').textContent = (c >= 0 ? `County of ${world.countyName[c]}` : 'Uncolonised wasteland')
+      + ` · province ${world.rawOf[p]}`;
+    edName.value = world.provName[p];
+    edTerr.value = String(world.pTerr[p]);
+    edCult.value = String(world.cultureOf[p]);
+    edFaith.value = String(world.faithOf[p]);
+    edHold.value = String(world.holdingOf[p]);
+    edDev.value = String(world.devOf[p]);
+    edArt.value = artOverride.get(p) ?? '';
+    updPrev();
+    edPanel.style.display = 'block';
+  }
+
+  edName.oninput = () => {
+    if (editProv < 0) return;
+    const v = edName.value.trim();
+    if (!v) return;
+    const r = rec(editProv); // capture originals BEFORE mutating
+    world.provName[editProv] = v;
+    $('edTitle').textContent = v;
+    r.name = v;
+    trimRec(editProv);
+  };
+  edName.onchange = () => { labels = buildLabels(world); labelsDirty = true; };
+  edTerr.onchange = () => {
+    if (editProv < 0) return;
+    const t = +edTerr.value;
+    const r = rec(editProv);
+    setTerrain(editProv, t);
+    r.terrain = t;
+    trimRec(editProv);
+    updPrev(); // auto artwork follows the terrain
+  };
+  edCult.onchange = () => {
+    if (editProv < 0) return;
+    const cu = +edCult.value;
+    const r = rec(editProv);
+    world.cultureOf[editProv] = cu;
+    world.rawCult[world.rawOf[editProv]] = cu;
+    r.culture = cu;
+    trimRec(editProv);
+    applyMode(currentMode);
+  };
+  edFaith.onchange = () => {
+    if (editProv < 0) return;
+    const f = +edFaith.value;
+    const r = rec(editProv);
+    world.faithOf[editProv] = f;
+    world.rawFaith[world.rawOf[editProv]] = f;
+    r.faith = f;
+    trimRec(editProv);
+    applyMode(currentMode);
+  };
+  edHold.onchange = () => {
+    if (editProv < 0) return;
+    const h = +edHold.value;
+    const r = rec(editProv);
+    world.holdingOf[editProv] = h;
+    r.holding = h;
+    trimRec(editProv);
+    updPrev();
+  };
+  edDev.onchange = () => {
+    if (editProv < 0) return;
+    const v = Math.max(0, Math.min(100, Math.round(+edDev.value || 0)));
+    edDev.value = String(v);
+    const r = rec(editProv);
+    world.devOf[editProv] = v;
+    rawDev[world.rawOf[editProv]] = v;
+    r.dev = v;
+    trimRec(editProv);
+    applyMode(currentMode);
+  };
+  edArt.onchange = () => {
+    if (editProv < 0) return;
+    const v = edArt.value;
+    const r = rec(editProv);
+    if (v) artOverride.set(editProv, v); else artOverride.delete(editProv);
+    r.art = v;
+    trimRec(editProv);
+    updPrev();
+  };
+  $('edRevert').onclick = () => {
+    const p = editProv;
+    if (p < 0) return;
+    const o = orig.get(p);
+    if (o) {
+      world.provName[p] = o.name;
+      if (world.pTerr[p] !== o.terrain) setTerrain(p, o.terrain);
+      world.cultureOf[p] = o.culture; world.rawCult[world.rawOf[p]] = o.culture;
+      world.faithOf[p] = o.faith; world.rawFaith[world.rawOf[p]] = o.faith;
+      world.holdingOf[p] = o.holding;
+      world.devOf[p] = o.dev; rawDev[world.rawOf[p]] = o.dev;
+    }
+    artOverride.delete(p);
+    edits.delete(p);
+    refreshSave();
+    labels = buildLabels(world); labelsDirty = true;
+    applyMode(currentMode);
+    openEditor(p);
+  };
+  $('edClose').onclick = () => {
+    edPanel.style.display = 'none';
+    editProv = -1;
+    scene.setSelected(selProv >= 0 ? world.rawOf[selProv] : -1);
+  };
+  $('editbtn').onclick = () => {
+    editMode = !editMode;
+    $('editbtn').className = editMode ? 'on' : '';
+    if (!editMode) {
+      edPanel.style.display = 'none';
+      editProv = -1;
+    } else {
+      $('sel').style.display = 'none';
+      $('faith').classList.remove('open');
+      if (selProv >= 0) openEditor(selProv);
+    }
+  };
+  saveLink.onclick = () => {
+    const out: Record<string, unknown>[] = [];
+    for (const [p, r] of edits) {
+      const e: Record<string, unknown> = { id: world.rawOf[p], province: world.provName[p] };
+      if (r.name !== undefined) e.name = r.name;
+      if (r.terrain !== undefined) e.terrain = TNAME[r.terrain];
+      if (r.culture !== undefined) e.culture = r.culture >= 0 ? world.cultName[r.culture] : null;
+      if (r.faith !== undefined) e.faith = r.faith >= 0 ? world.faithName[r.faith] : null;
+      if (r.holding !== undefined) e.holding = HOLDING_NAME[r.holding];
+      if (r.dev !== undefined) e.development = r.dev;
+      if (r.art !== undefined) e.picture = r.art;
+      out.push(e);
+    }
+    const data = { type: 'map-edits', generated: new Date().toISOString(), edited: out.length, edits: out };
+    saveLink.href = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }));
+  };
+  refreshSave();
+
   const provAt = (clientX: number, clientY: number): number => {
     const g = scene.pickGround(clientX, clientY);
     if (!g) return -1;
@@ -502,7 +751,10 @@ async function boot(): Promise<void> {
     const wasClick = (dragging || rotating) && !dragMoved && e.button !== 2 && e.button !== 1;
     dragging = false; rotating = false; grab = null;
     gl.classList.remove('drag');
-    if (wasClick) selectProvince(provAt(e.clientX, e.clientY));
+    if (wasClick) {
+      const p = provAt(e.clientX, e.clientY);
+      if (editMode) openEditor(p); else selectProvince(p);
+    }
   };
   gl.addEventListener('pointerup', endDrag);
   gl.addEventListener('pointerleave', () => { tip.style.display = 'none'; setHover(-1); });
@@ -603,9 +855,9 @@ async function boot(): Promise<void> {
     input.onblur = () => setTimeout(() => { hits = []; render(); }, 150);
   }
 
-  // keyboard pan (disabled while typing in the search box)
+  // keyboard pan (disabled while typing in the search box or the editor)
   const typing = () => document.activeElement instanceof HTMLInputElement
-    && document.activeElement.type === 'text';
+    || document.activeElement instanceof HTMLSelectElement;
   const keys: Record<string, boolean> = {};
   window.addEventListener('keydown', (e) => { if (!typing()) keys[e.key.toLowerCase()] = true; });
   window.addEventListener('keyup', (e) => { keys[e.key.toLowerCase()] = false; });
@@ -725,6 +977,7 @@ async function boot(): Promise<void> {
   for (let i = 0; i < pos.count; i++) { const y = pos.getY(i); if (y < zMin) zMin = y; if (y > zMax) zMax = y; }
   (window as unknown as Record<string, unknown>).__APP = {
     scene, world, selectProvince, showFaith, showCulture, showChar, showRealm,
+    openEditor, edits,
     info: {
       webgl2: scene.renderer.getContext() instanceof WebGL2RenderingContext,
       rendererType: 'WebGLRenderer',
