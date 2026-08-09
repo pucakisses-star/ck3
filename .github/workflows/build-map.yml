@@ -86,6 +86,11 @@ jobs:
           GH_OUT_DIR: docs/world/map
           GH_NAMES_FILE: worldsource/map_data/names.csv
 
+      - name: Invent the world's realms, cultures and faiths
+        run: python tools/build_world_polity.py
+        env:
+          GH_OUT_DIR: docs/world/map
+
       - name: Build world page into docs/world/
         run: |
           rm -rf docs/world/assets
