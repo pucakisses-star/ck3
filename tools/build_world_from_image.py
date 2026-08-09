@@ -501,9 +501,9 @@ if bad:
 # than the land; every water body (lakes included) still gets at least one
 # seed so it becomes a real province
 smark = np.zeros((CH, CW), np.int32)
-gy, gx = np.mgrid[0:CH:256, 0:CW:256]
-sy = (gy + RNG.integers(-72, 73, gy.shape)).clip(0, CH - 1)
-sx = (gx + RNG.integers(-72, 73, gx.shape)).clip(0, CW - 1)
+gy, gx = np.mgrid[0:CH:362, 0:CW:362]
+sy = (gy + RNG.integers(-100, 101, gy.shape)).clip(0, CH - 1)
+sx = (gx + RNG.integers(-100, 101, gx.shape)).clip(0, CW - 1)
 smk = 0
 for yy, xx in zip(sy.ravel(), sx.ravel()):
     if sea[yy, xx]:
