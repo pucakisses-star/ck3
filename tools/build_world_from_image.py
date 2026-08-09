@@ -169,7 +169,7 @@ text_zone = np.zeros((CH, CW), bool)
 for p in props:
     if p.label in text_labels:
         y0c, x0c, y1c, x1c = p.bbox
-        text_zone[max(0, y0c - 14):y1c + 14, max(0, x0c - 14):x1c + 14] = True
+        text_zone[max(0, y0c - 30):y1c + 30, max(0, x0c - 30):x1c + 30] = True
 
 # component filter: big landmasses always stay; small ones stay when they are
 # compact blobs (real islets) rather than dashed-gridline segments, judged by
@@ -232,38 +232,38 @@ del thin, dthin
 sea0 = ~land
 ink = dark & sea0 & ~ndimage.binary_dilation(land, iterations=4) & ~text_zone
 il, inn = ndimage.label(ink)
-cands = []
+# classify every dark sea component once: compact candidates may be skerries;
+# elongated ones are gridline dashes, whose neighbourhoods poison crossings
+info = []
 for p in regionprops(il):
-    if not (12 <= p.area <= 400):
-        continue
     bh = p.bbox[2] - p.bbox[0]
     bw = p.bbox[3] - p.bbox[1]
-    if max(bh, bw) / max(1, min(bh, bw)) > 3.0 or p.solidity < 0.6:
-        continue
-    cands.append((p.label, p.centroid))
-if cands:
-    cent = np.array([c for _, c in cands])
-    tree = cKDTree(cent)
-    n_near = np.array([len(tree.query_ball_point(c, 30)) - 1 for c in cent])
-    li = [i for i in range(len(cands)) if n_near[i] <= 1]
-    # ghost letters: sea names whose pale fill never passed the warm test
-    # leave one dark outline fragment per letter -- dots that line up in
-    # regularly-spaced chains spell words, real skerries scatter irregularly
-    if len(li) >= 5:
-        Pd = cent[li]
-        Dd = np.linalg.norm(Pd[:, None, :] - Pd[None, :, :], axis=2)
-        np.fill_diagonal(Dd, 1e9)
-        Ad = (Dd >= 40) & (Dd <= 340)
-        ghost = np.zeros(len(li), bool)
-        for i_ in range(len(li)):
-            for j_ in np.flatnonzero(Ad[i_]):
-                ch = _grow(Pd, Ad, i_, int(j_))
-                if len(ch) >= 5:
-                    for m_ in ch:
-                        ghost[m_] = True
-        li = [li[i_] for i_ in range(len(li)) if not ghost[i_]]
-        print(f"  {int(ghost.sum())} ghost-letter dots dropped")
-    lone = [cands[i][0] for i in li]
+    asp = max(bh, bw) / max(1, min(bh, bw))
+    info.append((p.label, p.centroid, p.area, asp, p.solidity))
+if info:
+    all_pts = np.array([i[1] for i in info])
+    all_area = np.array([i[2] for i in info])
+    all_asp = np.array([i[3] for i in info])
+    tree_all = cKDTree(all_pts)
+    dash_pts = all_pts[(all_area >= 10) & (all_asp >= 2.5)]
+    tree_dash = cKDTree(dash_pts) if len(dash_pts) else None
+    ci = [i for i, inf in enumerate(info)
+          if 12 <= inf[2] <= 400 and inf[3] <= 3.0 and inf[4] >= 0.6]
+    cpts = np.array([info[i][1] for i in ci])
+    tree_c = cKDTree(cpts) if len(ci) else None
+    lone = []
+    for i in ci:
+        c = info[i][1]
+        # near a gridline dash -> a graticule crossing, not an islet
+        if tree_dash is not None and len(tree_dash.query_ball_point(c, 45)):
+            continue
+        # dense dark neighbourhood -> tiny text or letter engraving
+        if len(tree_all.query_ball_point(c, 25)) - 1 >= 3:
+            continue
+        # crowded same-kind dots -> letter stipple rows
+        if len(tree_c.query_ball_point(c, 30)) - 1 > 1:
+            continue
+        lone.append(info[i][0])
     if lone:
         dots = np.isin(il, lone)
         dots = ndimage.binary_dilation(dots, iterations=2)
