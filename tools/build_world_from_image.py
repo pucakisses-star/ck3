@@ -59,17 +59,27 @@ x0 = (CW - src.width) // 2
 canvas[:src.height, x0:x0 + src.width] = np.asarray(src, dtype=np.int16)
 a = canvas
 r, g, b = a[..., 0], a[..., 1], a[..., 2]
-dark = (r.astype(np.int32) + g + b) < 430
+ssum = r.astype(np.int32) + g + b
+dark = ssum < 430
 warm = (r - b) > 24
 
 land = warm.copy()
 land = ndimage.binary_closing(land, structure=np.ones((3, 3)), iterations=2)
 holes = ndimage.binary_fill_holes(land) & ~land
 hl, hn = ndimage.label(holes)
-hs = ndimage.sum(np.ones_like(hl), hl, range(1, hn + 1))
-small = np.zeros(hn + 1, bool)
-small[1:] = hs < 1600
-land = land | small[hl]
+hidx = list(range(1, hn + 1))
+hs = np.asarray(ndimage.sum(np.ones_like(hl), hl, hidx))
+# holes that LOOK like water (grey-green fill, wide interior) are the
+# drawing's lakes and must stay water however small; every other small hole
+# (ink, shading, lettering counters) is filled
+rbm = np.asarray(ndimage.mean((r - b).astype(np.float32), hl, hidx))
+wid = np.asarray(ndimage.maximum(ndimage.distance_transform_edt(holes), hl, hidx))
+is_lake = (rbm < 12) & (wid >= 6.0) & (hs >= 350)
+fill = np.zeros(hn + 1, bool)
+fill[1:] = (hs < 1600) & ~is_lake
+land = land | fill[hl]
+lakes_mask = holes & ~fill[hl]
+print(f"  lakes kept as water: {int(is_lake.sum()) + int(((hs >= 1600)).sum())}")
 
 # --- sea-name lettering must not become islands -------------------------
 # The drawing's big sea names ("THE PASSAPARTAGOS", "LVNMARE", ...) have
@@ -233,6 +243,8 @@ sea_er = ndimage.binary_erosion(~land, structure=np.ones((3, 3)), iterations=8,
 sea_op = ndimage.binary_dilation(sea_er, structure=np.ones((3, 3)), iterations=8)
 land |= ~land & ~sea_op
 del sea_er, sea_op
+# the drawing's lakes stay open water whatever the seal did around them
+land &= ~lakes_mask
 # safety: no land component may be a hairline sliver
 ll2, ln2 = ndimage.label(land)
 for lab, sl in enumerate(ndimage.find_objects(ll2), start=1):
@@ -360,38 +372,24 @@ h16 = np.clip(h, 0, 1)
 Image.fromarray((h16 * 255).astype(np.uint8), mode="L").save(MD / "heightmap.png")
 
 # ------------------------------------------------------------- rivers
-print("flowing rivers ...")
-# flow accumulation on a coarse grid, steepest descent, then upscale mask.
-# Route on float elevation plus a small distance-to-coast tilt: the tilt
-# breaks flat plains (where 8-bit routing used to stall) and guarantees
-# every stream keeps moving toward the sea.
-rw, rh = 1536, 768
-zy, zx = rh / CH, rw / CW
-hs_ = ndimage.zoom(h16, (zy, zx), order=1).astype(np.float32)[:rh, :rw]
-dc_s = ndimage.zoom(dc, (zy, zx), order=1).astype(np.float32)[:rh, :rw]
-land_s = np.asarray(Image.fromarray((land * 255).astype(np.uint8)).resize((rw, rh), Image.NEAREST)) > 127
-route = hs_ + dc_s * 1e-4
-order = np.argsort(route.ravel())[::-1]         # high -> low
-acc = np.ones(rw * rh, np.float32)
-H_, W_ = rh, rw
-nb = np.array([-W_ - 1, -W_, -W_ + 1, -1, 1, W_ - 1, W_, W_ + 1])
-hflat = route.ravel()
-land_flat = land_s.ravel()
-for idx in order:
-    if not land_flat[idx]:
-        continue
-    y, x = divmod(idx, W_)
-    if y == 0 or y == H_ - 1 or x == 0 or x == W_ - 1:
-        continue
-    cand = idx + nb
-    lo = cand[np.argmin(hflat[cand])]
-    if hflat[lo] < hflat[idx]:
-        acc[lo] += acc[idx]
-acc = acc.reshape(H_, W_)
-river_s = land_s & (acc > 220)
-river_s = ndimage.binary_dilation(river_s, iterations=1)
-river = np.asarray(Image.fromarray((river_s * 255).astype(np.uint8)).resize((CW, CH), Image.NEAREST)) > 127
-river &= land
+print("tracing the drawn rivers ...")
+# the artist drew the river network: thin grey-green lines over the tan
+# land (the same pixels the channel seal turned into land). Rasterize those
+# directly so the map's rivers match the drawing 1:1
+riv_col = land & ((r - b) < 20) & (ssum > 360) & (ssum < 680)
+# bridge the little gaps where ink ticks or labels cross a river
+riv_col = ndimage.binary_closing(riv_col, structure=np.ones((3, 3)), iterations=2)
+riv_col &= land
+# drop lone speckle (paper grain, shading dots) — keep connected strokes
+rl_, rn_ = ndimage.label(riv_col)
+rsz = np.bincount(rl_.ravel(), minlength=rn_ + 1)
+rkeep = rsz >= 40
+rkeep[0] = False
+river = rkeep[rl_]
+del rl_
+# widen the strokes a touch so rivers stay visible once the pipeline
+# halves the resolution
+river = ndimage.binary_dilation(river, iterations=4) & land
 riv_img = np.zeros((CH, CW, 3), np.uint8)
 riv_img[land] = (255, 255, 255)
 riv_img[sea] = (255, 0, 128)          # magenta = water per the pipeline parser
@@ -499,7 +497,8 @@ if bad:
     fill = lab_land[tuple(idxs)]
     lab_land = np.where(land & (lab_land == 0), fill, lab_land)
     print(f"  dissolved {len(bad)} hairline basins")
-# sea provinces: coarser jittered grid over all water
+# sea provinces: coarser jittered grid over all water; every water body —
+# lakes included — gets at least one seed so it becomes a real province
 smark = np.zeros((CH, CW), np.int32)
 gy, gx = np.mgrid[0:CH:128, 0:CW:128]
 sy = (gy + RNG.integers(-36, 37, gy.shape)).clip(0, CH - 1)
@@ -509,6 +508,17 @@ for yy, xx in zip(sy.ravel(), sx.ravel()):
     if sea[yy, xx]:
         smk += 1
         smark[yy, xx] = smk
+scomp, scn = ndimage.label(sea)
+seeded = np.asarray(ndimage.maximum(smark, scomp, range(1, scn + 1)))
+for c, sl in enumerate(ndimage.find_objects(scomp), start=1):
+    if sl is None or seeded[c - 1] > 0:
+        continue
+    m = scomp[sl] == c
+    d = ndimage.distance_transform_edt(m)
+    yy, xx = np.unravel_index(np.argmax(d), d.shape)
+    smk += 1
+    smark[sl[0].start + yy, sl[1].start + xx] = smk
+del scomp
 lab_sea = watershed(np.zeros((CH, CW), np.float32), smark, mask=sea)
 del smark
 print(f"  land provinces {mk}, sea provinces {smk}")

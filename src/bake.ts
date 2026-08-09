@@ -98,7 +98,7 @@ export function buildBase(w: World): BaseResult {
           }
         }
       }
-      if (river[i] && land[i]) { r = r * 0.42 + 66 * 0.58; g = g * 0.42 + 96 * 0.58; b = b * 0.42 + 112 * 0.58; }
+      if (river[i] && land[i]) { r = r * 0.28 + 58 * 0.72; g = g * 0.28 + 88 * 0.72; b = b * 0.28 + 106 * 0.72; }
       baseBuf[i] = packRGB(r, g, b);
     }
   }
