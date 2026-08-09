@@ -71,26 +71,128 @@ small = np.zeros(hn + 1, bool)
 small[1:] = hs < 1600
 land = land | small[hl]
 
-# component filter: big landmasses always stay; small ones stay when they are
-# compact blobs (real islets) rather than dashed-gridline segments or thin
-# lettering strokes, judged by solidity and bounding-box shape
+# --- sea-name lettering must not become islands -------------------------
+# The drawing's big sea names ("THE PASSAPARTAGOS", "LVNMARE", ...) have
+# warm-pale fills that pass the land test and are the same size/shape as real
+# islands.  What letters have that islands don't is context: words are >=5
+# similar-size components in a regularly-spaced, locally-collinear chain.
+# Detected chains are removed, with a per-member colour veto (island-tan
+# fill r-b >= 39 stays land; letters measure ~26-35), plus an aligned
+# single-pass mop-up for word-initial stragglers.  A hand-checked whitelist
+# (source-image coords) restores archipelago islets the chains still graze,
+# and the two gold compass ornaments are dropped by colour+circularity.
 ll, ln = ndimage.label(land)
+props = [p for p in regionprops(ll)]
+WHITELIST = [(1111, 2232), (1173, 2438), (1194, 1320), (1210, 2274),
+             (1279, 5880), (1414, 1116), (1499, 2675), (1525, 2990),
+             (1576, 1816), (1616, 3203), (1797, 2839), (1918, 1997),
+             (1919, 3025), (1934, 1773), (1973, 1618), (2080, 1384),
+             (3797, 1479), (3801, 1650)]
+wl_labels = set()
+for wy, wx in WHITELIST:
+    lab = ll[wy, wx + x0]
+    if lab:
+        wl_labels.add(int(lab))
+
+cands = []
+for p in props:
+    if not (300 <= p.area <= 4500):
+        continue
+    y0c, x0c, y1c, x1c = p.bbox
+    sub = ll[y0c:y1c, x0c:x1c] == p.label
+    rbv = float((r[y0c:y1c, x0c:x1c][sub] - b[y0c:y1c, x0c:x1c][sub]).mean())
+    cands.append((p.label, p.centroid[0], p.centroid[1],
+                  float(max(y1c - y0c, x1c - x0c)), rbv))
+nC = len(cands)
+Cyx = np.array([[c[1], c[2]] for c in cands]) if nC else np.zeros((0, 2))
+Ch = np.array([c[3] for c in cands])
+Crb = np.array([c[4] for c in cands])
+Dm = np.linalg.norm(Cyx[:, None, :] - Cyx[None, :, :], axis=2)
+np.fill_diagonal(Dm, 1e9)
+sim = (np.minimum(Ch[:, None], Ch[None, :]) * 1.9 >= np.maximum(Ch[:, None], Ch[None, :]))
+adjm = (Dm >= 40) & (Dm <= 340) & sim
+
+def _grow(i, j):
+    chain = [i, j]
+    while True:
+        a_, b_ = chain[-2], chain[-1]
+        v = Cyx[b_] - Cyx[a_]
+        d0 = np.linalg.norm(v)
+        best, bestdev = -1, 1e9
+        for kk in np.flatnonzero(adjm[b_]):
+            if kk in chain:
+                continue
+            w = Cyx[kk] - Cyx[b_]
+            d1 = np.linalg.norm(w)
+            if not (0.55 * d0 <= d1 <= 1.8 * d0):
+                continue
+            cos = (v @ w) / (d0 * d1 + 1e-9)
+            if cos < np.cos(np.radians(30)):
+                continue
+            dev = np.degrees(np.arccos(np.clip(cos, -1, 1)))
+            if dev < bestdev:
+                best, bestdev = kk, dev
+        if best < 0:
+            return chain
+        chain.append(best)
+
+is_text = np.zeros(nC, bool)
+chain_dir = {}
+for i in range(nC):
+    for j in np.flatnonzero(adjm[i]):
+        ch = _grow(i, int(j))
+        if len(ch) < 5 or Crb[ch].mean() >= 37:
+            continue
+        for t, m in enumerate(ch):
+            if Crb[m] >= 39:
+                continue
+            is_text[m] = True
+            p0, p1 = ch[max(0, t - 1)], ch[min(len(ch) - 1, t + 1)]
+            v = Cyx[p1] - Cyx[p0]
+            chain_dir[m] = v / (np.linalg.norm(v) + 1e-9)
+for i in range(nC):
+    if is_text[i] or Crb[i] >= 36:
+        continue
+    for m in chain_dir:
+        if Dm[i, m] > 320 or not sim[i, m]:
+            continue
+        v = Cyx[i] - Cyx[m]
+        cos = abs(v @ chain_dir[m]) / (np.linalg.norm(v) + 1e-9)
+        if cos > np.cos(np.radians(25)):
+            is_text[i] = True
+            break
+text_labels = {cands[i][0] for i in range(nC) if is_text[i]} - wl_labels
+
+# component filter: big landmasses always stay; small ones stay when they are
+# compact blobs (real islets) rather than dashed-gridline segments, judged by
+# solidity and bounding-box shape
 keep = np.zeros(ln + 1, bool)
 n_islet = 0
-for p in regionprops(ll):
-    if p.area >= 800:
+for p in props:
+    if p.label in text_labels:
+        continue
+    bh = p.bbox[2] - p.bbox[0]
+    bw = p.bbox[3] - p.bbox[1]
+    asp = max(bh, bw) / max(1, min(bh, bw))
+    y0c, x0c, y1c, x1c = p.bbox
+    sub = ll[y0c:y1c, x0c:x1c] == p.label
+    rbv = float((r[y0c:y1c, x0c:x1c][sub] - b[y0c:y1c, x0c:x1c][sub]).mean())
+    # gold compass ornaments: circular, very saturated discs in open sea
+    if 2000 <= p.area <= 6000 and rbv >= 52 and p.solidity >= 0.88 and asp <= 1.35 \
+            and p.label not in wl_labels:
+        continue
+    if p.area >= 800 or p.label in wl_labels:
         keep[p.label] = True
         continue
     if p.area < 25:
         continue
-    bh = p.bbox[2] - p.bbox[0]
-    bw = p.bbox[3] - p.bbox[1]
-    if min(bh, bw) < 5 or max(bh, bw) / min(bh, bw) > 3.0:
+    if min(bh, bw) < 5 or asp > 3.0:
         continue
     if p.solidity < 0.72:
         continue
     keep[p.label] = True
     n_islet += 1
+print(f"  text components removed {len(text_labels)}, whitelisted {len(wl_labels)}")
 land = keep[ll]
 # smooth the big-coastline jaggies without erasing the small islands
 areas = np.bincount(ll.ravel(), minlength=ln + 1)
@@ -207,12 +309,15 @@ markers = np.zeros((CH, CW), np.int32)
 # land provinces: jittered-grid seeds per landmass; every island — however
 # small — gets at least one seed so it becomes a real province
 comp, ncomp = ndimage.label(land)
+csizes = np.bincount(comp.ravel(), minlength=ncomp + 1)
 STEP = 68
 mk = 0
-for c in range(1, ncomp + 1):
-    ys, xs = np.where(comp == c)
-    if len(xs) >= 480:
-        y0, y1, x0b, x1b = ys.min(), ys.max(), xs.min(), xs.max()
+for c, sl in enumerate(ndimage.find_objects(comp), start=1):
+    if sl is None:
+        continue
+    if csizes[c] >= 480:
+        y0, y1 = sl[0].start, sl[0].stop - 1
+        x0b, x1b = sl[1].start, sl[1].stop - 1
         gy, gx = np.mgrid[y0:y1 + 1:STEP, x0b:x1b + 1:STEP]
         sy = (gy + RNG.integers(-20, 21, gy.shape)).clip(0, CH - 1)
         sx = (gx + RNG.integers(-20, 21, gx.shape)).clip(0, CW - 1)
@@ -222,11 +327,10 @@ for c in range(1, ncomp + 1):
         sy, sx = np.array([], int), np.array([], int)
     if len(sx) == 0:
         # deepest interior point of the component
-        sub = (slice(ys.min(), ys.max() + 1), slice(xs.min(), xs.max() + 1))
-        m = comp[sub] == c
+        m = comp[sl] == c
         d = ndimage.distance_transform_edt(m)
         yy, xx = np.unravel_index(np.argmax(d), d.shape)
-        sy, sx = np.array([ys.min() + yy]), np.array([xs.min() + xx])
+        sy, sx = np.array([sl[0].start + yy]), np.array([sl[1].start + xx])
     for yy, xx in zip(sy, sx):
         mk += 1
         markers[yy, xx] = mk
@@ -262,21 +366,23 @@ def uniq_colors(n):
 
 nprov = mk + smk
 cols = uniq_colors(nprov)
-prov_rgb = np.zeros((CH, CW, 3), np.uint8)
 defs, terr = [], []
-lat = np.abs(np.linspace(-1, 1, CH))[:, None] * np.ones((1, CW), np.float32)
+lat = np.abs(np.linspace(-1, 1, CH, dtype=np.float32))[:, None] * np.ones((1, CW), np.float32)
 
+# vectorised per-province stats + colour LUTs (33M-px masks per province
+# would take hours as a Python loop)
+lcount = np.bincount(lab_land.ravel(), minlength=mk + 1)
+lidx = [m for m in range(1, mk + 1) if lcount[m] > 0]
+mm_ = ndimage.mean(mtn, lab_land, lidx)
+la_ = ndimage.mean(lat, lab_land, lidx)
+hh_ = ndimage.mean(h16, lab_land, lidx)
+lut_land = np.zeros((mk + 1, 3), np.uint8)
 k = 0
-for m in range(1, mk + 1):
-    sel = lab_land == m
-    if not sel.any():
-        continue
+for i, m in enumerate(lidx):
     pid_ = ID0 + k
     col = cols[k]
-    prov_rgb[sel] = col
-    mm = mtn[sel].mean()
-    la = lat[sel].mean()
-    hh = h16[sel].mean()
+    lut_land[m] = col
+    mm, la, hh = mm_[i], la_[i], hh_[i]
     if mm > 0.18 or hh > SEA + 0.34:
         t = "mountains"
     elif mm > 0.06 or hh > SEA + 0.16:
@@ -294,17 +400,20 @@ for m in range(1, mk + 1):
     k += 1
 
 sea_ids = []
+scount = np.bincount(lab_sea.ravel(), minlength=smk + 1)
+lut_sea = np.zeros((smk + 1, 3), np.uint8)
 for m in range(1, smk + 1):
-    sel = lab_sea == m
-    if not sel.any():
+    if scount[m] == 0:
         continue
     pid_ = ID0 + k
     col = cols[k]
-    prov_rgb[sel] = col
+    lut_sea[m] = col
     defs.append(f"{pid_};{col[0]};{col[1]};{col[2]};x;")
     terr.append(f"{pid_}=sea")
     sea_ids.append(pid_)
     k += 1
+
+prov_rgb = np.where((lab_land > 0)[..., None], lut_land[lab_land], lut_sea[lab_sea])
 
 # any unassigned pixels (rare watershed gaps) -> nearest coloured pixel
 gap = (prov_rgb.sum(2) == 0)
