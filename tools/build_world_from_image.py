@@ -193,6 +193,14 @@ for p in props:
     keep[p.label] = True
     n_islet += 1
 print(f"  text components removed {len(text_labels)}, whitelisted {len(wl_labels)}")
+# zones where lettering/ornaments were removed: their dark outlines survive in
+# the ink layer and must not be resurrected as islets later
+text_zone = np.zeros((CH, CW), bool)
+for p in props:
+    if p.label in text_labels or (p.label not in wl_labels and not keep[p.label]
+                                  and p.area >= 300):
+        y0c, x0c, y1c, x1c = p.bbox
+        text_zone[max(0, y0c - 14):y1c + 14, max(0, x0c - 14):x1c + 14] = True
 land = keep[ll]
 # smooth the big-coastline jaggies without erasing the small islands
 areas = np.bincount(ll.ravel(), minlength=ln + 1)
@@ -204,8 +212,17 @@ print(f"  land {land.mean():.3f}  (+{n_islet} small islands kept)")
 # ink-dot islets: compact dark specks in open sea, but only when isolated —
 # text glyphs and gridline dashes come in tight rows and are rejected by the
 # neighbour count
+# the drawing's rivers are thin non-warm lines that would otherwise cut sea
+# channels through the continents now that the coastline morphology is light;
+# seal water that is thin everywhere (<=6px to land) while leaving lakes,
+# bays and real straits open
+thin = ndimage.binary_closing(land, structure=np.ones((3, 3)), iterations=6) & ~land
+dthin = ndimage.distance_transform_edt(~land)
+land |= thin & (dthin <= 6.0)
+del thin, dthin
+
 sea0 = ~land
-ink = dark & sea0 & ~ndimage.binary_dilation(land, iterations=4)
+ink = dark & sea0 & ~ndimage.binary_dilation(land, iterations=4) & ~text_zone
 il, inn = ndimage.label(ink)
 cands = []
 for p in regionprops(il):
