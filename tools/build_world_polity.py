@@ -121,8 +121,43 @@ settled = [i for i in cnt
 sset = set(settled)
 print(f"  land {len(cnt)}, settled {len(settled)} ({len(settled)/len(cnt):.0%})")
 
-# ---------------------------------------------------------------- cultures
+# ------------------------------------- cultures & faiths: FROM GODHERJA
+# Reuse the Godherja mod's culture and faith tables verbatim (names,
+# colours, ethos, traditions, tenets, lore) instead of remaking them —
+# only their PLACEMENT on this map is invented. The world seeds the 60
+# most widespread Godherja cultures, grouped by heritage so neighbouring
+# regions get related cultures, and every province follows its culture's
+# dominant Godherja faith.
+print("importing Godherja cultures & faiths ...")
+REF = json.loads((ROOT / "docs" / "map" / "meta.json").read_text())
+cultures = REF["cultures"]
+faiths = REF["faiths"]
+# prominence + dominant faith per culture, measured on the Godherja map
+cprov = {}
+cfaith = {}
+for p in REF["provinces"].values():
+    cu, f = p.get("cu", -1), p.get("f", -1)
+    if p.get("s") or cu < 0:
+        continue
+    cprov[cu] = cprov.get(cu, 0) + 1
+    if f >= 0:
+        cfaith.setdefault(cu, {})
+        cfaith[cu][f] = cfaith[cu].get(f, 0) + 1
+def _pick_dom(fs):
+    # never a placeholder creed like "Wasteland Faith"
+    ranked = sorted(fs, key=fs.get, reverse=True)
+    for f in ranked:
+        if "wasteland" not in (faiths[f].get("n") or "").lower():
+            return f
+    return None
+domfaith = {cu: d for cu, fs in cfaith.items() if (d := _pick_dom(fs)) is not None}
+
 NCULT = 60
+top_cults = sorted(cprov, key=lambda cu: -cprov[cu])[:NCULT]
+# related cultures side by side: order the picks by heritage, and the seed
+# points by a coarse spatial sweep
+top_cults.sort(key=lambda cu: (cultures[cu].get("he") or "", -cprov[cu]))
+
 print("spreading cultures ...")
 order = sorted(settled, key=lambda i: -cnt[i])
 seeds = [order[0]]
@@ -132,82 +167,40 @@ for i in order:
     d = min((cy[i] - cy[s]) ** 2 + (cx[i] - cx[s]) ** 2 for s in seeds)
     if d > 120 ** 2:
         seeds.append(i)
+seeds.sort(key=lambda s: (int(cy[s] // 500), cx[s]))
+seed_cult = {s: top_cults[k] for k, s in enumerate(seeds)}
+
 cult_of = {}
 frontier = []
-for ci, s in enumerate(seeds):
-    cult_of[s] = ci
-    frontier.append((RNG.random(), s))
 import heapq
+for s in seeds:
+    cult_of[s] = seed_cult[s]
+    frontier.append((RNG.random(), s))
 heapq.heapify(frontier)
 while frontier:
     _, u = heapq.heappop(frontier)
     for v in adj[u]:
         if v in sset and v not in cult_of:
             cult_of[v] = cult_of[u]
-            heapq.heappush(frontier, (RNG.random() + 0.0, v))
+            heapq.heappush(frontier, (RNG.random(), v))
 for i in settled:                       # disconnected islands: nearest culture
     if i not in cult_of:
         s = min(seeds, key=lambda s_: (cy[i] - cy[s_]) ** 2 + (cx[i] - cx[s_]) ** 2)
         cult_of[i] = cult_of[s]
 
-cpack = [PACKS[int((cy[s] * 3 // H) * 3 + (cx[s] * 3 // W)) % len(PACKS)] for s in seeds]
-ETHOS = ["Bellicose", "Stoic", "Bureaucratic", "Spiritual", "Courtly", "Egalitarian"]
-MART = ["Men-at-Arms", "Male Only", "Equal", "Female Only"]
-TRAD = ["Hill Dwellers", "Seafarers", "Practiced Pirates", "Hardy Mountaineers",
-        "Agrarian", "Warrior Culture", "Hussar", "Astute Diplomats", "Loyal Subjects",
-        "Zealous People", "Stalwart Defenders", "Legalistic", "Mystical Ancestors",
-        "Sacred Groves", "Storytellers", "Fervent Temple Builders"]
-cultures = []
-for ci, s in enumerate(seeds):
-    nm = make_name(cpack[ci])
-    cultures.append(dict(
-        n=nm, c=wheel(ci, NCULT, 0.55, 0.72),
-        e=str(RNG.choice(ETHOS)), he=make_name(cpack[ci]) + "ic",
-        l=nm + ("ish" if nm[-1] not in "aeiou" else "n"),
-        m=str(RNG.choice(MART)),
-        t=[str(t) for t in RNG.choice(TRAD, size=3, replace=False)]))
+# every province worships its culture's dominant Godherja faith
+fcount = {}
+for p in REF["provinces"].values():
+    f = p.get("f", -1)
+    if f >= 0 and p.get("c", -1) >= 0:      # settled provinces only
+        fcount[f] = fcount.get(f, 0) + 1
+fallback_f = max((f for f in fcount
+                  if "wasteland" not in (faiths[f].get("n") or "").lower()),
+                 key=fcount.get)
+faith_of = {i: domfaith.get(cult_of[i], fallback_f) for i in settled}
 
-# ------------------------------------------------------------------ faiths
-NFAITH = 40
-print("kindling faiths ...")
-big_cults = sorted(range(NCULT), key=lambda ci: -sum(cnt[i] for i in settled if cult_of[i] == ci))
-fseeds = []
-for k in range(NFAITH):
-    ci = big_cults[k % min(len(big_cults), 28)]
-    pool = [i for i in settled if cult_of[i] == ci]
-    fseeds.append(int(RNG.choice(pool)))
-faith_of = {}
-frontier = []
-for fi, s in enumerate(fseeds):
-    faith_of[s] = fi
-    frontier.append((RNG.random(), s))
-heapq.heapify(frontier)
-while frontier:
-    _, u = heapq.heappop(frontier)
-    for v in adj[u]:
-        if v in sset and v not in faith_of:
-            faith_of[v] = faith_of[u]
-            heapq.heappush(frontier, (RNG.random(), v))
-for i in settled:
-    if i not in faith_of:
-        s = min(fseeds, key=lambda s_: (cy[i] - cy[s_]) ** 2 + (cx[i] - cx[s_]) ** 2)
-        faith_of[i] = faith_of[s]
-
-TEN = ["Communal Identity", "Ancestor Worship", "Sacred Childbirth", "Sun Worship",
-       "Esotericism", "Ritual Hospitality", "Pilgrimage", "Warmonger", "Pacifism",
-       "Mendicant Preachers", "Adaptive", "Divine Marriage", "Astrology", "Rite"]
-faiths = []
-for fi, s in enumerate(fseeds):
-    pk = cpack[cult_of[s]]
-    nm = make_name(pk)
-    fam = make_name(pk)
-    faiths.append(dict(
-        n=nm + ("ism" if nm[-1] not in "aeiou" else "sm"),
-        c=wheel(fi + 17, NFAITH, 0.6, 0.66),
-        r=fam + "ism", ad=nm + "ite",
-        d=f"The {nm}ite creed rose among the {cultures[cult_of[s]]['n']} and "
-          f"venerates the powers of sky, stone and tide.",
-        t=[str(t) for t in RNG.choice(TEN, size=3, replace=False)], hs=[]))
+# name flavour: one phonology pack per culture, stable by culture index
+cpack_of = {cu: PACKS[cu % len(PACKS)] for cu in top_cults}
 
 # ------------------------------------------------------- generic clustering
 def agglomerate(nodes, nadj, keyf, target, pos, wt, reach):
@@ -318,12 +311,12 @@ def holder(pack, faith_idx):
 
 # name every settled province in its culture's flavour
 for i in settled:
-    pm[str(i)]["n"] = make_name(cpack[cult_of[i]])
+    pm[str(i)]["n"] = make_name(cpack_of[cult_of[i]])
 
 counties = []
 for cg in county_groups:
     seat = max(cg, key=lambda i: cnt[i])
-    pk = cpack[cult_of[seat]]
+    pk = cpack_of[cult_of[seat]]
     hn, hk = holder(pk, faith_of[seat])
     counties.append(dict(n=pm[str(seat)]["n"], d=-1, h=hn, hk=hk))
     for i in cg:
@@ -333,7 +326,7 @@ duchies = []
 for dg in duchy_groups:
     seat_ct = max(dg, key=lambda c: sum(cnt[i] for i in county_groups[c]))
     seat = max(county_groups[seat_ct], key=lambda i: cnt[i])
-    pk = cpack[cult_of[seat]]
+    pk = cpack_of[cult_of[seat]]
     hn, hk = holder(pk, faith_of[seat])
     duchies.append(dict(n=make_name(pk), k=-1, h=hn, hk=hk))
     for c in dg:
@@ -344,7 +337,7 @@ for ki, kg in enumerate(king_groups):
     seat_d = kg[0]
     seat_ct = duchy_groups[seat_d][0]
     seat = max(county_groups[seat_ct], key=lambda i: cnt[i])
-    pk = cpack[cult_of[seat]]
+    pk = cpack_of[cult_of[seat]]
     hn, hk = holder(pk, faith_of[seat])
     kingdoms.append(dict(n=make_name(pk), c=wheel(ki, len(king_groups), 0.5, 0.78),
                          e=-1, h=hn, hk=hk, cap=int(seat_ct)))
@@ -358,7 +351,7 @@ for ei, eg in enumerate(emp_groups):
     seat_k = eg[0]
     cap = kingdoms[seat_k]["cap"]
     seat = max(county_groups[cap], key=lambda i: cnt[i])
-    pk = cpack[cult_of[seat]]
+    pk = cpack_of[cult_of[seat]]
     hn, hk = holder(pk, faith_of[seat])
     empires.append(dict(n=make_name(pk), c=wheel(ei + 5, len(emp_groups), 0.62, 0.55),
                         h=hn, hk=hk, cap=int(cap)))
@@ -368,12 +361,17 @@ print(f"  kingdoms sworn to empires: "
       f"{sum(1 for k in kingdoms if k['e'] >= 0)}/{len(kingdoms)}")
 
 # ------------------------------------------------------ faith holy sites
+# Godherja's holy-site county indices point at the OTHER map — remap each
+# faith present here onto counties in its world region (keeping the
+# original site names where available); absent faiths lose their sites
 for fi, f in enumerate(faiths):
     own = [i for i in settled if faith_of[i] == fi]
     RNG.shuffle(own)
+    ref_names = [s.get("n") for s in (f.get("hs") or []) if s.get("n")]
     sites = []
-    for i in own[:3]:
-        sites.append(dict(n=pm[str(i)]["n"], c=int(pm[str(i)]["c"])))
+    for k, i in enumerate(own[:3]):
+        nm = ref_names[k] if k < len(ref_names) else pm[str(i)]["n"]
+        sites.append(dict(n=nm, c=int(pm[str(i)]["c"])))
     f["hs"] = sites
 
 # --------------------------------------------------------------- development
@@ -387,7 +385,10 @@ for u, v in pairs:
         sea_touch.add(u)
     if v in cnt and u not in cnt:
         sea_touch.add(v)
-cores = [seeds[ci] for ci in big_cults[:6]]
+big_wcults = sorted(set(cult_of.values()),
+                    key=lambda cu: -sum(cnt[i] for i in settled if cult_of[i] == cu))
+core_cults = set(big_wcults[:6])
+cores = [s for s in seeds if cult_of[s] in core_cults][:6]
 dev = {}
 for i in settled:
     d = DEVBASE.get(pm[str(i)]["t"], 35) + (RNG.random() - 0.5) * 14
