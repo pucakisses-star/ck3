@@ -361,9 +361,9 @@ h = np.full((CH, CW), SEA, np.float32)
 # land: a firm rise from the coast + strong mountain uplift + low-freq roll
 coast_ramp = np.clip(dc / 160.0, 0, 1)
 land_base = SEA + 0.02 + coast_ramp * 0.10
-# mountains: blur the salmon field just enough to read as connected ridges
-# while keeping the ranges steep and pronounced
-uplift = ndimage.gaussian_filter(mtn, 8.0) * 0.95
+# mountains: blur the salmon field just enough to read as connected ridges;
+# moderate uplift so ranges stand out without towering over the terrain
+uplift = ndimage.gaussian_filter(mtn, 9.0) * 0.55
 lown = ndimage.gaussian_filter(
     ndimage.zoom(RNG.random((CH // 48, CW // 48)).astype(np.float32), 48, order=1), 16.0)
 py, px = CH - lown.shape[0], CW - lown.shape[1]
