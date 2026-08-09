@@ -419,6 +419,23 @@ for i in cnt:
     else:
         p["c"] = -1; p["cu"] = -1; p["f"] = -1; p["h"] = 0
 
+# faith icons: the panel loads map/ui/faith_{index}.png relative to THIS
+# page — copy the Godherja icons for every faith present here, and clear
+# the icon flag when no file exists so the panel falls back to a swatch
+import shutil
+src_ui = ROOT / "docs" / "map" / "ui"
+dst_ui = OUT / "ui"
+dst_ui.mkdir(parents=True, exist_ok=True)
+n_ic = 0
+for fi in sorted(set(faith_of.values())):
+    fsrc = src_ui / f"faith_{fi}.png"
+    if fsrc.exists():
+        shutil.copyfile(fsrc, dst_ui / fsrc.name)
+        n_ic += 1
+    else:
+        faiths[fi].pop("i", None)
+print(f"  copied {n_ic} faith icons")
+
 meta["counties"] = counties
 meta["duchies"] = duchies
 meta["kingdoms"] = kingdoms
