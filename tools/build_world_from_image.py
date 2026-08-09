@@ -531,8 +531,15 @@ seed_zone(mzone, 110, 30, tag=mtn_prov, one_per_comp=True)
 # The coast-distance term must stay a MILD tilt: at full strength its 1px/px
 # gradient dwarfs the noise and shreds basins into flow-line streaks (the
 # hairline provinces); scaled down, the noise shapes rounded cells and a
-# touch of compactness guarantees no basin degenerates
-elev = ndimage.gaussian_filter(-dc, 2.0) * 0.05 + (lown - 0.5) * 8.0
+# touch of compactness guarantees no basin degenerates.
+# A ridge laid along the rivers gives marker-controlled watershed a natural
+# place to meet: two basins flooding from either bank collide on the ridge,
+# so borders settle onto the drawn river instead of crossing it -- CK3
+# provinces are river-bounded far more often than not.
+driv = ndimage.distance_transform_edt(~river)
+river_ridge = np.exp(-driv / 9.0) * 7.0
+elev = ndimage.gaussian_filter(-dc, 2.0) * 0.05 + (lown - 0.5) * 8.0 + river_ridge
+del driv, river_ridge
 lab_low = watershed(elev, markers, mask=lowz, compactness=0.003)
 lab_mtn = watershed(elev, markers, mask=mzone, compactness=0.003)
 lab_land = np.where(mzone, lab_mtn, lab_low)
