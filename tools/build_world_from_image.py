@@ -575,16 +575,26 @@ if bad:
     print(f"  dissolved {len(bad)} hairline basins")
 # sea provinces: big uniform cells — the water needs far fewer provinces
 # than the land; every water body (lakes included) still gets at least one
-# seed so it becomes a real province
+# seed so it becomes a real province. Open ocean that never touches a
+# coast consolidates further, at roughly 1:4 (keep ~1/4 of its seeds, so
+# ~4 of the old cells merge into one) — only the coastal band stays at
+# full density, the way a real sea chart thins out past the shelf.
+COAST_BAND = 362.0
 smark = np.zeros((CH, CW), np.int32)
 gy, gx = np.mgrid[0:CH:362, 0:CW:362]
 sy = (gy + RNG.integers(-100, 101, gy.shape)).clip(0, CH - 1)
 sx = (gx + RNG.integers(-100, 101, gx.shape)).clip(0, CW - 1)
 smk = 0
+n_thin = 0
 for yy, xx in zip(sy.ravel(), sx.ravel()):
-    if sea[yy, xx]:
-        smk += 1
-        smark[yy, xx] = smk
+    if not sea[yy, xx]:
+        continue
+    if dsea[yy, xx] > COAST_BAND and RNG.random() >= 0.25:
+        n_thin += 1
+        continue
+    smk += 1
+    smark[yy, xx] = smk
+print(f"  open-ocean seeds thinned 1:4: dropped {n_thin}")
 scomp, scn = ndimage.label(sea)
 seeded = np.asarray(ndimage.maximum(smark, scomp, range(1, scn + 1)))
 for c, sl in enumerate(ndimage.find_objects(scomp), start=1):
