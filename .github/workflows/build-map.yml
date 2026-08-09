@@ -91,6 +91,12 @@ jobs:
         env:
           GH_OUT_DIR: docs/world/map
 
+      - name: Render the world's realm coats of arms
+        run: python tools/build_coa.py
+        env:
+          GH_META_FILE: docs/world/map/meta.json
+          GH_COA_OUT_DIR: docs/world/map/ui/coa
+
       - name: Build world page into docs/world/
         run: |
           rm -rf docs/world/assets

@@ -13,6 +13,7 @@ patterns procedurally; missing emblems are skipped).
 """
 import colorsys
 import json
+import os
 import re
 from pathlib import Path
 
@@ -20,6 +21,10 @@ import numpy as np
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent
+# Env overrides let CI render a second set of flags (e.g. the invented
+# world's kingdoms/empires under worldsource/) with the same heraldry art;
+# defaults are the Godherja mod's own map.
+META_FILE = Path(os.environ.get("GH_META_FILE", ROOT / "docs" / "map" / "meta.json"))
 
 def _first(*cands):
     for c in cands:
@@ -35,7 +40,7 @@ EMB = _first(ROOT / "coat_of_arms" / "colored_emblems",
              ROOT / "gfx" / "coat_of_arms" / "colored_emblems")
 TEX = _first(ROOT / "coat_of_arms" / "textured_emblems",
              ROOT / "gfx" / "coat_of_arms" / "textured_emblems")
-OUT = ROOT / "docs" / "map" / "ui" / "coa"
+OUT = Path(os.environ.get("GH_COA_OUT_DIR", ROOT / "docs" / "map" / "ui" / "coa"))
 OUT.mkdir(parents=True, exist_ok=True)
 for f in OUT.glob("*"):
     f.unlink()
@@ -296,7 +301,7 @@ def frame(img):
     a[2:4, 2:-2] = a[-4:-2, 2:-2] = a[2:-2, 2:4] = a[2:-2, -4:-2] = (166, 138, 82)
     return Image.fromarray(a).resize((FINAL, FINAL), Image.LANCZOS)
 
-meta = json.load(open(ROOT / "docs/map/meta.json"))
+meta = json.load(open(META_FILE))
 made = authored = 0
 for kind, table in (("k", meta["kingdoms"]), ("e", meta["empires"])):
     for i, ent in enumerate(table):
