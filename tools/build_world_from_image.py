@@ -230,10 +230,11 @@ land |= thin & (dthin <= 8.0)
 del thin, dthin
 
 sea0 = ~land
-ink = dark & sea0 & ~ndimage.binary_dilation(land, iterations=4) & ~text_zone
+# classification context: ALL dark sea marks, including those inside letter
+# zones -- excluding them beforehand blinds the density rules exactly where
+# ghosts appear; only the promoted candidates are zone-filtered
+ink = dark & sea0 & ~ndimage.binary_dilation(land, iterations=4)
 il, inn = ndimage.label(ink)
-# classify every dark sea component once: compact candidates may be skerries;
-# elongated ones are gridline dashes, whose neighbourhoods poison crossings
 info = []
 for p in regionprops(il):
     bh = p.bbox[2] - p.bbox[0]
@@ -247,13 +248,16 @@ if info:
     tree_all = cKDTree(all_pts)
     dash_pts = all_pts[(all_area >= 10) & (all_asp >= 2.5)]
     tree_dash = cKDTree(dash_pts) if len(dash_pts) else None
+    tiny_pts = all_pts[all_area <= 12]
+    tree_tiny = cKDTree(tiny_pts) if len(tiny_pts) else None
     ci = [i for i, inf in enumerate(info)
-          if 12 <= inf[2] <= 400 and inf[3] <= 3.0 and inf[4] >= 0.6]
+          if 12 <= inf[2] <= 400 and inf[3] <= 3.0 and inf[4] >= 0.6
+          and not text_zone[int(inf[1][0]), int(inf[1][1])]]
     cpts = np.array([info[i][1] for i in ci])
     tree_c = cKDTree(cpts) if len(ci) else None
     lone = []
-    for i in ci:
-        c = info[i][1]
+    for k_, i in enumerate(ci):
+        c = np.array(info[i][1])
         # near a gridline dash -> a graticule crossing, not an islet
         if tree_dash is not None and len(tree_dash.query_ball_point(c, 45)):
             continue
@@ -261,7 +265,31 @@ if info:
         if len(tree_all.query_ball_point(c, 25)) - 1 >= 3:
             continue
         # crowded same-kind dots -> letter stipple rows
-        if len(tree_c.query_ball_point(c, 30)) - 1 > 1:
+        if tree_c is not None and len(tree_c.query_ball_point(c, 30)) - 1 > 1:
+            continue
+        # on a finely-dotted graticule line
+        if tree_tiny is not None and len(tree_tiny.query_ball_point(c, 45)) >= 4:
+            continue
+        # two same-kind neighbours in opposite directions -> a dotted
+        # rhumb ring or line, not a skerry cluster
+        nb = [j for j in tree_c.query_ball_point(c, 70) if j != k_]
+        ring = False
+        for x_ in range(len(nb)):
+            v1 = cpts[nb[x_]] - c
+            d1 = np.linalg.norm(v1)
+            if d1 < 20:
+                continue
+            for y_ in range(x_ + 1, len(nb)):
+                v2 = cpts[nb[y_]] - c
+                d2 = np.linalg.norm(v2)
+                if d2 < 20:
+                    continue
+                if (v1 @ v2) / (d1 * d2 + 1e-9) < np.cos(np.radians(130)):
+                    ring = True
+                    break
+            if ring:
+                break
+        if ring:
             continue
         lone.append(info[i][0])
     if lone:
