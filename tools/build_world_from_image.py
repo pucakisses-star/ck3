@@ -494,7 +494,7 @@ def seed_zone(zone, step, jit, thin=None, tag=None, one_per_comp=False):
 # lowlands: dense near the coasts, sparse deep inland — interior provinces
 # come out several times larger, like CK3's settled coasts vs vast interiors
 seed_zone(lowz, 68, 20,
-          thin=lambda d_: np.clip(1.18 - d_ / 340.0, 0.05, 1.0))
+          thin=lambda d_: np.clip(1.30 - d_ / 220.0, 0.05, 1.0))
 # mountain ranges: ONE province per connected range
 seed_zone(mzone, 110, 30, tag=mtn_prov, one_per_comp=True)
 
