@@ -76,10 +76,18 @@ rbm = np.asarray(ndimage.mean((r - b).astype(np.float32), hl, hidx))
 wid = np.asarray(ndimage.maximum(ndimage.distance_transform_edt(holes), hl, hidx))
 is_lake = (rbm < 12) & (wid >= 6.0) & (hs >= 350)
 fill = np.zeros(hn + 1, bool)
-fill[1:] = (hs < 1600) & ~is_lake
-land = land | fill[hl]
-lakes_mask = holes & ~fill[hl]
-print(f"  lakes kept as water: {int(is_lake.sum()) + int(((hs >= 1600)).sum())}")
+fill[1:] = ~is_lake                     # every non-lake hole fills, ANY size:
+land = land | fill[hl]                  # big river-network holes must become
+retained = holes & ~fill[hl]            # land or the river tracer misses them
+# a retained hole can be a lake WITH river arms drawn into it — keep only the
+# wide water as lake, the thin arms turn to land (and trace as rivers later)
+dwat = ndimage.distance_transform_edt(retained)
+lake_core = dwat >= 5.0
+lakes_mask = ndimage.binary_dilation(lake_core, iterations=5) & retained
+land |= retained & ~lakes_mask
+del dwat, lake_core, retained
+ln_, lc_ = ndimage.label(lakes_mask)
+print(f"  lakes kept as water: {lc_}")
 
 # --- sea-name lettering must not become islands -------------------------
 # The drawing's big sea names ("THE PASSAPARTAGOS", "LVNMARE", ...) have
