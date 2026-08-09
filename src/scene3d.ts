@@ -499,7 +499,9 @@ export class MapScene {
     ];
     for (const [url, tex, k] of pairs) {
       loader.load(url, (t) => {
-        t.wrapS = t.wrapT = THREE.RepeatWrapping;
+        // mirrored repeat: the game sheets aren't tileable, and plain repeat
+        // draws their edge mismatch as a faint seam grid over the flat ocean
+        t.wrapS = t.wrapT = THREE.MirroredRepeatWrapping;
         t.minFilter = THREE.LinearMipmapLinearFilter;
         t.anisotropy = Math.min(4, this.renderer.capabilities.getMaxAnisotropy());
         tex.value = t;
