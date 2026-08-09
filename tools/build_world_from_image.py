@@ -224,10 +224,27 @@ print(f"  land {land.mean():.3f}  (+{n_islet} small islands kept)")
 # channels through the continents now that the coastline morphology is light;
 # seal water that is thin everywhere (<=6px to land) while leaving lakes,
 # bays and real straits open
-thin = ndimage.binary_closing(land, structure=np.ones((3, 3)), iterations=8) & ~land
-dthin = ndimage.distance_transform_edt(~land)
-land |= thin & (dthin <= 8.0)
-del thin, dthin
+# seal by opening the SEA: erode it, then regrow from the wide water that
+# survives -- channels narrower than ~16px never come back and become land.
+# (closing the land instead leaves 1px seams down the middle of channels
+# just wider than the reach, which used to turn into thread provinces)
+sea_er = ndimage.binary_erosion(~land, structure=np.ones((3, 3)), iterations=8,
+                                border_value=1)
+sea_op = ndimage.binary_dilation(sea_er, structure=np.ones((3, 3)), iterations=8)
+land |= ~land & ~sea_op
+del sea_er, sea_op
+# safety: no land component may be a hairline sliver
+ll2, ln2 = ndimage.label(land)
+for lab, sl in enumerate(ndimage.find_objects(ll2), start=1):
+    if sl is None:
+        continue
+    bh = sl[0].stop - sl[0].start
+    bw = sl[1].stop - sl[1].start
+    if min(bh, bw) <= 2:
+        reg = land[sl]
+        reg[ll2[sl] == lab] = False
+        land[sl] = reg
+del ll2
 
 sea0 = ~land
 # classification context: ALL dark sea marks, including those inside letter
