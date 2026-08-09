@@ -34,6 +34,7 @@ export class MapScene {
   private modeUniforms = {
     provDark: { value: 0.1 },
     hierK: { value: 1 },
+    washFlat: { value: 0 },
   };
   /** the game's flat-map paper sheets (loaded lazily; K gates each blend) */
   private paperUniforms = {
@@ -244,6 +245,7 @@ export class MapScene {
       shader.uniforms.provTexel = { value: new THREE.Vector2(1 / this.idW, 1 / this.idH) };
       shader.uniforms.provDark = this.modeUniforms.provDark;
       shader.uniforms.hierK = this.modeUniforms.hierK;
+      shader.uniforms.washFlat = this.modeUniforms.washFlat;
       shader.uniforms.hoverId = this.hlUniforms.hoverId;
       shader.uniforms.selId = this.hlUniforms.selId;
       shader.uniforms.paperLand = this.paperUniforms.paperLand;
@@ -261,6 +263,7 @@ export class MapScene {
       uniform vec2 provTexel;
       uniform float provDark;
       uniform float hierK;
+      uniform float washFlat;
       uniform vec2 hoverId;
       uniform vec2 selId;
       uniform sampler2D paperLand;
@@ -331,8 +334,15 @@ export class MapScene {
       diffuseColor.rgb = mix( diffuseColor.rgb, vec3( 0.76, 0.70, 0.53 ) * shd,
         beach * 0.42 * provLand * ( 1.0 - ss.g ) );
 
-      float washA = wash.a * ( 1.0 - ss.g * 0.85 ) * provLand;
-      diffuseColor.rgb = mix( diffuseColor.rgb, wash.rgb * shd, washA );
+      // flat mode (province map): full-strength fill, no snow cut-through and
+      // almost no relief shading — crisp cartographic colours like a paint map
+      float washA = wash.a * ( 1.0 - ss.g * 0.85 * ( 1.0 - washFlat ) ) * provLand;
+      float shdW = mix( shd, clamp( 0.86 + ss.r * 0.14, 0.0, 1.0 ), washFlat );
+      diffuseColor.rgb = mix( diffuseColor.rgb, wash.rgb * shdW, washA );
+      // flat mode: calm single-tone sea hiding the cloud fog baked into the
+      // base texture, so the coastline reads at id-map precision
+      diffuseColor.rgb = mix( diffuseColor.rgb, vec3( 0.302, 0.353, 0.373 ),
+        washFlat * ( 1.0 - provLand ) * 0.96 );
       vec2 off = max( provTexel, fwidth( vMapUv ) * 0.75 );
       float bd = 0.0;
       float nid;
@@ -392,10 +402,10 @@ export class MapScene {
       // the game's flat-map paper: parchment grain over land (mottles the
       // political wash) and the muted sea sheet over open water
       float pgl = dot( pl, vec3( 0.3333 ) ) * 1.88;
-      diffuseColor.rgb *= mix( 1.0, pgl, 0.30 * provLand * paperKL );
+      diffuseColor.rgb *= mix( 1.0, pgl, 0.30 * provLand * paperKL * ( 1.0 - washFlat * 0.8 ) );
       vec3 ps = texture2D( paperSea, vMapUv * vec2( 12.0, 6.0 ) ).rgb;
       float pgs = dot( ps, vec3( 0.3333 ) ) * 3.03;
-      float seaF = ( 1.0 - provLand ) * paperKS;
+      float seaF = ( 1.0 - provLand ) * paperKS * ( 1.0 - washFlat * 0.75 );
       diffuseColor.rgb *= mix( 1.0, pgs, seaF * 0.42 );
       diffuseColor.rgb = mix( diffuseColor.rgb, ps * 1.10, seaF * 0.15 );`);
     };
@@ -513,11 +523,12 @@ export class MapScene {
 
   /** Swap the per-province wash LUT (RGBA per raw id, 256x256) and the border
    *  style for a map mode — no texture rebake needed. */
-  setWash(lut: Uint8Array, provDark: number, hierarchy: boolean): void {
+  setWash(lut: Uint8Array, provDark: number, hierarchy: boolean, flat = false): void {
     this.washData.set(lut);
     this.washTex.needsUpdate = true;
     this.modeUniforms.provDark.value = provDark;
     this.modeUniforms.hierK.value = hierarchy ? 1 : 0;
+    this.modeUniforms.washFlat.value = flat ? 1 : 0;
     this.invalidate();
   }
 

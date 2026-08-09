@@ -74,7 +74,7 @@ async function boot(): Promise<void> {
     washLut.fill(0);
     const { rawCounty, rawCult, rawFaith, rawLand, cDuchy, dKing, kEmp, kColor, cultCol, faithCol } = world;
     void kEmp;
-    const ds = 0.16;
+    const ds = mode === 'province' ? 0 : 0.16;
     const put = (rid: number, col: [number, number, number] | number[], a: number) => {
       const lum = col[0] * 0.3 + col[1] * 0.59 + col[2] * 0.11;
       const o = rid * 4;
@@ -91,7 +91,7 @@ async function boot(): Promise<void> {
           if (k >= 0) put(rid, kColor[k], 0.52);
         } else if (mode === 'province') {
           const cc = (rid * 2654435761) >>> 0;
-          put(rid, [70 + (cc & 159), 70 + ((cc >> 8) & 159), 70 + ((cc >> 16) & 159)], 0.7);
+          put(rid, [80 + (cc & 175), 80 + ((cc >> 8) & 175), 80 + ((cc >> 16) & 175)], 0.97);
         } else if (mode === 'culture') {
           const c = rawCult[rid]; if (c >= 0) put(rid, cultCol[c], 0.5);
         } else if (mode === 'faith') {
@@ -103,7 +103,11 @@ async function boot(): Promise<void> {
     }
     const noBorders = mode === 'terrain' || mode === 'elevation';
     scene.setWash(washLut, noBorders ? 0 : mode === 'province' ? 0.42 : 0.1,
-      mode === 'political' || mode === 'culture' || mode === 'faith' || mode === 'development');
+      mode === 'political' || mode === 'culture' || mode === 'faith' || mode === 'development',
+      mode === 'province');
+    // the fog vignette fights the clean cartographic look of the province map
+    const vigEl = document.getElementById('vig');
+    if (vigEl) vigEl.style.display = mode === 'province' ? 'none' : '';
     const wantElev = mode === 'elevation';
     if (wantElev !== cpuElevation) {
       cpuElevation = wantElev;
