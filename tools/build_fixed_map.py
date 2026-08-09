@@ -452,6 +452,17 @@ with open(MD / "definition.csv", encoding="utf-8-sig") as f:
             disp_name = disp(nm) if nm.startswith("b_") else prettify("b_" + nm)
             id_name[i] = disp_name
 
+# curated display names (e.g. the invented world's oceans and ranges read
+# off the source artwork): "id;name" per line, overrides definition names
+NAMES_FILE = os.environ.get("GH_NAMES_FILE")
+if NAMES_FILE and Path(NAMES_FILE).exists():
+    with open(NAMES_FILE, encoding="utf-8") as f:
+        for line in f:
+            p = line.strip().split(";", 1)
+            if len(p) == 2 and p[0].isdigit():
+                id_name[int(p[0])] = p[1]
+    print(f"  curated names: {NAMES_FILE}")
+
 id_terr = {}
 with open(TERRAIN_FILE, encoding="utf-8-sig") as f:
     for line in f:

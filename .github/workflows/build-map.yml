@@ -75,12 +75,16 @@ jobs:
       # needs scipy/scikit-image) and committed under worldsource/map_data/;
       # here we only run the standard pipeline on it and bundle the app with
       # the /ck3/world/ base so Pages serves it at <site>/world/.
+      - name: Name the world's oceans and ranges
+        run: python tools/build_world_names.py
+
       - name: Generate world-page map assets
         run: python tools/build_fixed_map.py
         env:
           GH_MAP_DATA: worldsource/map_data
           GH_TERRAIN_FILE: worldsource/map_data/00_province_terrain.txt
           GH_OUT_DIR: docs/world/map
+          GH_NAMES_FILE: worldsource/map_data/names.csv
 
       - name: Build world page into docs/world/
         run: |

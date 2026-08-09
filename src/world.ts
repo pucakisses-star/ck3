@@ -278,6 +278,24 @@ export async function loadFixedMap(seed: number, base: string): Promise<World> {
     if (e.n < 1200) continue;
     seaLabels.push({ x: e.sx / e.n, y: e.sy / e.n, n: nm, a: e.n });
   }
+  // named mountain ranges label like seas: provinces sharing a real name
+  // pool into one label at their combined centroid
+  {
+    const mtnByName = new Map<string, { sx: number; sy: number; n: number }>();
+    for (let p = 0; p < np; p++) {
+      if (pTerr[p] !== T.MTN) continue;
+      const rid = rawOfList[p];
+      const nm = pm[rid]?.n;
+      if (!nm || isPlaceholder(nm)) continue;
+      let e = mtnByName.get(nm);
+      if (!e) { e = { sx: 0, sy: 0, n: 0 }; mtnByName.set(nm, e); }
+      e.sx += pCX[p] * pArea[p]; e.sy += pCY[p] * pArea[p]; e.n += pArea[p];
+    }
+    for (const [nm, e] of mtnByName) {
+      if (e.n < 600) continue;
+      seaLabels.push({ x: e.sx / e.n, y: e.sy / e.n, n: nm, a: e.n });
+    }
+  }
   seaLabels.sort((a, b) => b.a - a.a);
 
   // frame the settled realms, not the vast uncolonised wastelands
