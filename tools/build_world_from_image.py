@@ -416,10 +416,11 @@ markers = np.zeros((CH, CW), np.int32)
 mk = 0
 mtn_prov = set()                    # marker ids that are mountain provinces
 
-def seed_zone(zone, step, jit, thin=None, tag=None):
+def seed_zone(zone, step, jit, thin=None, tag=None, one_per_comp=False):
     """jittered-grid seeds per connected zone component; every component —
     however small — gets at least one seed. thin(dc_value) in [0,1] drops
-    seeds probabilistically (fewer seeds -> larger provinces)."""
+    seeds probabilistically (fewer seeds -> larger provinces).
+    one_per_comp skips the grid: exactly one seed per component."""
     global mk
     comp, _ = ndimage.label(zone)
     csizes = np.bincount(comp.ravel())
@@ -427,7 +428,7 @@ def seed_zone(zone, step, jit, thin=None, tag=None):
         if sl is None:
             continue
         sy = sx = np.array([], int)
-        if csizes[c] >= 480:
+        if not one_per_comp and csizes[c] >= 480:
             y0, y1 = sl[0].start, sl[0].stop - 1
             x0b, x1b = sl[1].start, sl[1].stop - 1
             gy, gx = np.mgrid[y0:y1 + 1:step, x0b:x1b + 1:step]
@@ -455,8 +456,8 @@ def seed_zone(zone, step, jit, thin=None, tag=None):
 # come out several times larger, like CK3's settled coasts vs vast interiors
 seed_zone(lowz, 68, 20,
           thin=lambda d_: np.clip(1.15 - d_ / 420.0, 0.14, 1.0))
-# mountain ranges: their own, somewhat larger provinces
-seed_zone(mzone, 110, 30, tag=mtn_prov)
+# mountain ranges: ONE province per connected range
+seed_zone(mzone, 110, 30, tag=mtn_prov, one_per_comp=True)
 
 # watershed per zone, then combine — basins never cross a range boundary.
 # The coast-distance term must stay a MILD tilt: at full strength its 1px/px
