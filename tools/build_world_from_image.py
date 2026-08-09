@@ -402,43 +402,73 @@ print(f"  river px {river.mean()*100:.2f}%")
 
 # ------------------------------------------------------------- provinces
 print("partitioning provinces ...")
+# land is carved in two zones so mountain ranges become their own provinces
+# whose borders trace the ranges: the salmon mountain fields (consolidated)
+# are partitioned separately from the lowlands
+mzone = ndimage.binary_closing(mtn_m, structure=np.ones((3, 3)), iterations=4) & land
+mzl, mzn = ndimage.label(mzone)
+mzs = np.bincount(mzl.ravel(), minlength=mzn + 1)
+mzone = (mzs >= 3000)[mzl]          # only sizable range pieces form the zone
+del mzl
+lowz = land & ~mzone
+
 markers = np.zeros((CH, CW), np.int32)
-# land provinces: jittered-grid seeds per landmass; every island — however
-# small — gets at least one seed so it becomes a real province
-comp, ncomp = ndimage.label(land)
-csizes = np.bincount(comp.ravel(), minlength=ncomp + 1)
-STEP = 68
 mk = 0
-for c, sl in enumerate(ndimage.find_objects(comp), start=1):
-    if sl is None:
-        continue
-    if csizes[c] >= 480:
-        y0, y1 = sl[0].start, sl[0].stop - 1
-        x0b, x1b = sl[1].start, sl[1].stop - 1
-        gy, gx = np.mgrid[y0:y1 + 1:STEP, x0b:x1b + 1:STEP]
-        sy = (gy + RNG.integers(-20, 21, gy.shape)).clip(0, CH - 1)
-        sx = (gx + RNG.integers(-20, 21, gx.shape)).clip(0, CW - 1)
-        inside = comp[sy, sx] == c
-        sy, sx = sy[inside], sx[inside]
-    else:
-        sy, sx = np.array([], int), np.array([], int)
-    if len(sx) == 0:
-        # deepest interior point of the component
-        m = comp[sl] == c
-        d = ndimage.distance_transform_edt(m)
-        yy, xx = np.unravel_index(np.argmax(d), d.shape)
-        sy, sx = np.array([sl[0].start + yy]), np.array([sl[1].start + xx])
-    for yy, xx in zip(sy, sx):
-        mk += 1
-        markers[yy, xx] = mk
-# watershed grows markers over land only, following the terrain a little.
+mtn_prov = set()                    # marker ids that are mountain provinces
+
+def seed_zone(zone, step, jit, thin=None, tag=None):
+    """jittered-grid seeds per connected zone component; every component —
+    however small — gets at least one seed. thin(dc_value) in [0,1] drops
+    seeds probabilistically (fewer seeds -> larger provinces)."""
+    global mk
+    comp, _ = ndimage.label(zone)
+    csizes = np.bincount(comp.ravel())
+    for c, sl in enumerate(ndimage.find_objects(comp), start=1):
+        if sl is None:
+            continue
+        sy = sx = np.array([], int)
+        if csizes[c] >= 480:
+            y0, y1 = sl[0].start, sl[0].stop - 1
+            x0b, x1b = sl[1].start, sl[1].stop - 1
+            gy, gx = np.mgrid[y0:y1 + 1:step, x0b:x1b + 1:step]
+            sy = (gy + RNG.integers(-jit, jit + 1, gy.shape)).clip(0, CH - 1).ravel()
+            sx = (gx + RNG.integers(-jit, jit + 1, gx.shape)).clip(0, CW - 1).ravel()
+            inside = comp[sy, sx] == c
+            sy, sx = sy[inside], sx[inside]
+            if thin is not None and len(sx):
+                p = thin(dc[sy, sx])
+                keep_s = RNG.random(len(sx)) < p
+                sy, sx = sy[keep_s], sx[keep_s]
+        if len(sx) == 0:
+            # deepest interior point of the component
+            m = comp[sl] == c
+            d = ndimage.distance_transform_edt(m)
+            yy, xx = np.unravel_index(np.argmax(d), d.shape)
+            sy, sx = np.array([sl[0].start + yy]), np.array([sl[1].start + xx])
+        for yy, xx in zip(sy, sx):
+            mk += 1
+            markers[yy, xx] = mk
+            if tag is not None:
+                tag.add(mk)
+
+# lowlands: dense near the coasts, sparse deep inland — interior provinces
+# come out several times larger, like CK3's settled coasts vs vast interiors
+seed_zone(lowz, 68, 20,
+          thin=lambda d_: np.clip(1.15 - d_ / 420.0, 0.14, 1.0))
+# mountain ranges: their own, somewhat larger provinces
+seed_zone(mzone, 110, 30, tag=mtn_prov)
+
+# watershed per zone, then combine — basins never cross a range boundary.
 # The coast-distance term must stay a MILD tilt: at full strength its 1px/px
 # gradient dwarfs the noise and shreds basins into flow-line streaks (the
 # hairline provinces); scaled down, the noise shapes rounded cells and a
 # touch of compactness guarantees no basin degenerates
 elev = ndimage.gaussian_filter(-dc, 2.0) * 0.05 + (lown - 0.5) * 8.0
-lab_land = watershed(elev, markers, mask=land, compactness=0.003)
-del elev, markers
+lab_low = watershed(elev, markers, mask=lowz, compactness=0.003)
+lab_mtn = watershed(elev, markers, mask=mzone, compactness=0.003)
+lab_land = np.where(mzone, lab_mtn, lab_low)
+del elev, markers, lab_low, lab_mtn
+print(f"  mountain-zone {mzone.mean()*100:.1f}% of map, {len(mtn_prov)} range provinces")
 # the interior elevation is nearly planar, and watershed tie-breaking on
 # such ramps can pinch a basin into a 1px axis-aligned corridor; dissolve
 # any hairline basin into its neighbours (an isolated island basin has no
@@ -512,7 +542,9 @@ for i, m in enumerate(lidx):
     col = cols[k]
     lut_land[m] = col
     mm, la, hh = mm_[i], la_[i], hh_[i]
-    if mm > 0.18 or hh > SEA + 0.34:
+    if m in mtn_prov:
+        t = "mountains"
+    elif mm > 0.18 or hh > SEA + 0.34:
         t = "mountains"
     elif mm > 0.06 or hh > SEA + 0.16:
         t = "hills"
