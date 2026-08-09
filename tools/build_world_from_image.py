@@ -302,6 +302,15 @@ sea = ~land
 rg = r - g
 mtn_m = warm & land & (rg >= 42)
 mtn_m = ndimage.binary_opening(mtn_m, iterations=2)
+# the continents' names are written in big red capitals whose strokes pass
+# the salmon test and would become letter-shaped mountains; real ranges are
+# huge connected fields, so drop small isolated components
+ml_, mn_ = ndimage.label(mtn_m)
+msz = np.bincount(ml_.ravel(), minlength=mn_ + 1)
+mkeep = msz >= 3000
+mkeep[0] = False
+mtn_m = mkeep[ml_]
+del ml_
 mtn = np.clip((rg - 38) / 70.0, 0, 1) * mtn_m
 mtn = ndimage.gaussian_filter(mtn.astype(np.float32), 4.0)
 
