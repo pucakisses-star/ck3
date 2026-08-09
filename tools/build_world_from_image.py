@@ -408,7 +408,9 @@ print("partitioning provinces ...")
 mzone = ndimage.binary_closing(mtn_m, structure=np.ones((3, 3)), iterations=4) & land
 mzl, mzn = ndimage.label(mzone)
 mzs = np.bincount(mzl.ravel(), minlength=mzn + 1)
-mzone = (mzs >= 3000)[mzl]          # only sizable range pieces form the zone
+zkeep = mzs >= 3000                 # only sizable range pieces form the zone
+zkeep[0] = False
+mzone = zkeep[mzl]
 del mzl
 lowz = land & ~mzone
 
