@@ -149,6 +149,32 @@
   #edit select option,#edit select optgroup{background:#171512;color:var(--ink)}
   #edit .eprev{display:block;width:100%;height:86px;object-fit:cover;margin-top:9px;
     border:1px solid var(--line);border-radius:6px;opacity:.95}
+  /* picture picker: custom dropdown with thumbnails (a native select can't) */
+  #edit .artpick{position:relative}
+  #edArtBtn{display:flex;align-items:center;gap:7px;width:100%;text-align:left;
+    background:rgba(10,8,6,.72);border:1px solid var(--line);border-radius:7px;padding:3px 8px;
+    box-shadow:none;text-transform:none;letter-spacing:0;font-weight:400;font-size:12.5px;
+    color:var(--ink);min-height:30px;text-shadow:none}
+  #edArtBtn:hover{background:rgba(10,8,6,.72);border-color:var(--gold);color:var(--ink)}
+  #edArtBtn img{width:44px;height:26px;object-fit:cover;border-radius:3px;border:1px solid rgba(0,0,0,.5)}
+  #edArtBtn .caret{margin-left:auto;color:var(--muted)}
+  /* hidden via visibility (not display) so the lazy thumbnails keep layout
+     and start loading as soon as the list opens */
+  #edArtList{position:absolute;left:0;right:0;bottom:100%;margin-bottom:4px;z-index:40;visibility:hidden;
+    max-height:300px;overflow-y:auto;
+    background:url("map/ui/skin_ttbg.png") #14110e;background-size:300px 300px;
+    border:1px solid var(--gold);border-radius:8px;box-shadow:0 -14px 30px rgba(0,0,0,.65)}
+  #edArtList.open{visibility:visible}
+  #edArtList .ahdr{padding:6px 9px 3px;font-size:10px;color:var(--gold);text-transform:uppercase;
+    letter-spacing:.08em;border-top:1px solid rgba(160,130,70,.25)}
+  #edArtList .arow{display:flex;align-items:center;gap:8px;padding:3px 9px;font-size:12px;cursor:pointer}
+  #edArtList .arow:hover{background:rgba(200,164,94,.18)}
+  #edArtList .arow.cur{background:rgba(200,164,94,.28)}
+  #edArtList .arow img{width:56px;height:32px;object-fit:cover;border-radius:3px;
+    border:1px solid rgba(0,0,0,.5);flex:0 0 auto}
+  #edArtList::-webkit-scrollbar{width:8px}
+  #edArtList::-webkit-scrollbar-thumb{background:rgba(200,164,94,.45);border-radius:4px;border:1px solid rgba(0,0,0,.4)}
+  #edArtList{scrollbar-color:rgba(200,164,94,.45) rgba(0,0,0,.35);scrollbar-width:thin}
   #edit .enote{margin-top:8px;font-size:10.5px;color:#8a7f66;line-height:1.4}
   #editbtn.on{color:#f6e6b4;box-shadow:0 0 0 1px var(--gold),0 2px 5px rgba(0,0,0,.5)}
 
@@ -229,7 +255,11 @@
       <label for="edFaith">Faith</label><select id="edFaith"></select>
       <label for="edHold">Holding</label><select id="edHold"></select>
       <label for="edDev">Development</label><input id="edDev" type="number" min="0" max="100" step="1">
-      <label for="edArt">Picture</label><select id="edArt"></select>
+      <label>Picture</label>
+      <div id="edArtWrap" class="artpick">
+        <button id="edArtBtn" type="button"><img id="edArtThumb" alt="" style="display:none"><span id="edArtLabel">(no picture)</span><span class="caret">▾</span></button>
+        <div id="edArtList"></div>
+      </div>
     </div>
     <img id="edPrev" class="eprev" alt="" style="display:none">
     <div class="enote">Changes apply to the map instantly and live in this browser session. Save edits (in the menu) downloads them as a JSON file.</div>
