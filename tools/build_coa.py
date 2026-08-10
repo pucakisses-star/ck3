@@ -349,28 +349,48 @@ def _renderable(block):
                                 "saltire", "quarterly", "quadrants"))
 
 borrow_pool = {}
+_borrow_used = set()
 if BORROW_COA:
     import random as _random
     _rng = _random.Random(4242)
-    for tier in ("k", "e"):
+    for tier in ("k", "e", "d"):
         pool = sorted(k for k, v in coa_defs.items()
                       if k.startswith(tier + "_") and _renderable(v))
         _rng.shuffle(pool)
         borrow_pool[tier] = pool
     print("borrow pools:", {t: len(p) for t, p in borrow_pool.items()})
 
+_BORROW_ORDER = {  # tier-matched design first, then whatever is still unworn
+    "e": ("e", "k", "d"), "k": ("k", "d", "e"),
+    "d": ("d", "k", "e"), "c": ("k", "d", "e"),
+}
+
+def borrow(kind):
+    """Next unused Godherja design for this tier — every flag on the invented
+    map is a distinct authored coat of arms until the pools run dry."""
+    for tier in _BORROW_ORDER[kind]:
+        for key in borrow_pool.get(tier, ()):
+            if key not in _borrow_used:
+                _borrow_used.add(key)
+                return coa_defs[key]
+    return []
+
 meta = json.load(open(META_FILE))
+tables = [("k", meta["kingdoms"]), ("e", meta["empires"])]
+if BORROW_COA:
+    # the invented world hangs a banner on every duchy and county as well,
+    # so (nearly) the whole Godherja armory flies somewhere on the map
+    tables += [("d", meta.get("duchies", [])), ("c", meta.get("counties", []))]
 made = authored = borrowed = 0
-for kind, table in (("k", meta["kingdoms"]), ("e", meta["empires"])):
+for kind, table in tables:
     for i, ent in enumerate(table):
         key = ent.get("t")
-        block = coa_defs.get(key, [])
+        block = coa_defs.get(key, []) if key else []
         if block:
             authored += 1
         elif BORROW_COA:
-            pool = borrow_pool.get(kind) or borrow_pool.get("k") or []
-            if pool:
-                block = coa_defs[pool[i % len(pool)]]
+            block = borrow(kind)
+            if block:
                 borrowed += 1
         col = cl(ent["c"]) if ent.get("c") else None
         if not block and col and SYNTH_PATTERN:
