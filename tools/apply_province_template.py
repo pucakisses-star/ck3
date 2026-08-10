@@ -101,30 +101,40 @@ land_vote = ndimage.mean(old_land.astype(np.float32), labels, range(n_comp))
 is_land = np.asarray(land_vote) >= 0.5
 
 # ---- tiny islands directly off a coast join that coastal province ----
-# The template colours islets as their own regions; a speck of land within
-# REACH of a bigger landmass shouldn't stand alone as a province.
-ISLAND_MAX = 3000      # canvas px: land-mask islets smaller than this merge
-REACH = 100            # ...but only when this close to other land
+# The template colours islets as their own regions; a speck of land hugging
+# a bigger landmass shouldn't stand alone as a province. Each qualifying
+# islet is merged WHOLE into the single nearest coastal province — an
+# island is never split between two provinces.
+ISLAND_MAX = 100       # canvas px: only land-mask islets smaller than this
+REACH = 10             # ...and only when this close to other land
 land_mask = is_land[labels]
 lm_lab, lm_n = ndimage.label(land_mask)
 lm_sizes = np.bincount(lm_lab.ravel(), minlength=lm_n + 1)
-tiny_flag = np.zeros(lm_n + 1, bool)
-tiny_flag[1:] = lm_sizes[1:] < ISLAND_MAX
-tiny_mask = tiny_flag[lm_lab]
-big_land = land_mask & ~tiny_mask
-if tiny_mask.any() and big_land.any():
+tiny_ids = np.flatnonzero(lm_sizes < ISLAND_MAX)
+tiny_ids = tiny_ids[tiny_ids != 0]
+big_land = land_mask & ~np.isin(lm_lab, tiny_ids)
+if len(tiny_ids) and big_land.any():
     dist, (iy, ix) = ndimage.distance_transform_edt(~big_land, return_indices=True)
-    sel = tiny_mask & (dist <= REACH)
-    n_islets = int(ndimage.label(sel)[1])
-    labels = np.where(sel, labels[iy, ix], labels)
+    objs = ndimage.find_objects(lm_lab)
+    merged = 0
+    for t in tiny_ids:
+        sl = objs[t - 1]
+        m = lm_lab[sl] == t
+        d = np.where(m, dist[sl], np.inf)
+        pos = np.unravel_index(np.argmin(d), d.shape)
+        if d[pos] > REACH:
+            continue
+        target = labels[iy[sl][pos], ix[sl][pos]]
+        labels[sl][m] = target
+        merged += 1
     uniq_vals, inv = np.unique(labels, return_inverse=True)
     labels = inv.reshape(CH, CW)
     is_land = is_land[uniq_vals]
     n_comp = len(uniq_vals)
-    print(f"  merged {n_islets} tiny coastal islets into their coastal provinces "
-          f"({n_comp} regions remain)")
-    del dist, iy, ix, sel
-del land_mask, lm_lab, lm_sizes, tiny_flag, tiny_mask, big_land
+    print(f"  merged {merged} tiny coastal islets whole into their coastal "
+          f"provinces ({n_comp} regions remain)")
+    del dist, iy, ix
+del land_mask, lm_lab, lm_sizes, tiny_ids, big_land
 
 print("  recomputing the mountain-colour field ...")
 src = Image.open(SRC).convert("RGB")
