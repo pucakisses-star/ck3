@@ -12,6 +12,9 @@ export interface SeaLabel { x: number; y: number; ext: number; name: string; are
 export interface Labels {
   king: RealmLabel[]; emp: RealmLabel[]; prov: ProvLabel[];
   sea: SeaLabel[]; straits: number[][];
+  /** flag-only anchors for duchy & county banners (drawn when the coa set
+   *  ships d_/c_ flags — the invented world hangs the whole armory) */
+  duchy: RealmLabel[]; county: RealmLabel[];
 }
 
 export function buildLabels(w: World): Labels {
@@ -70,7 +73,11 @@ export function buildLabels(w: World): Labels {
       area: pArea[p],
     });
   }
-  return { king, emp, prov, sea, straits: w.straits };
+  return {
+    king, emp, prov, sea, straits: w.straits,
+    duchy: pca(w.nDuchy, w.duchyOf, w.duchyName),
+    county: pca(w.nCounty, w.countyOf, w.countyName),
+  };
 }
 
 const SERIF = '"Iowan Old Style",Palatino,Georgia,serif';
@@ -89,7 +96,7 @@ function getFlag(url: string, onAsset: (() => void) | null): HTMLImageElement | 
 }
 
 export function drawLabels(ctx: CanvasRenderingContext2D, labels: Labels, scene: MapScene,
-  coaBase?: string, onAsset?: (() => void) | null): void {
+  coaBase?: string, onAsset?: (() => void) | null, subFlags?: { d: boolean; c: boolean }): void {
   const CW = window.innerWidth, CH = window.innerHeight;
   ctx.clearRect(0, 0, CW, CH);
   ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
@@ -169,17 +176,23 @@ export function drawLabels(ctx: CanvasRenderingContext2D, labels: Labels, scene:
   // ALL zoom levels, independent of whether the realm's name label fits —
   // banners never vanish with the text and never swap between zoom tiers.
   if (coaBase) {
-    const fs = Math.max(20, Math.min(46, 9000 / dist));
-    const flagRects: { x: number; y: number }[] = [];
-    const drawFlag = (kind: string, l: RealmLabel): void => {
+    const base = Math.max(20, Math.min(46, 9000 / dist));
+    const flagRects: { x: number; y: number; s: number }[] = [];
+    const drawFlag = (kind: string, l: RealmLabel, fs: number, blockText: boolean): void => {
       const cp = scene.projectGrid(l.capX ?? l.x, l.capY ?? l.y, 4);
       if (!cp) return;
       let fx = cp[0];
       const fy = cp[1];
       if (fx < -fs || fx > CW + fs || fy < -fs || fy > CH + fs * 2) return;
-      // shared capital spot (an empire seat inside its kingdom): hang side by side
-      for (const b of flagRects) {
-        if (Math.abs(fx - b.x) < fs && Math.abs(fy - b.y) < fs) fx = b.x + fs + 3;
+      // shared spot (an empire seat inside its kingdom): hang side by side
+      for (let guard = 0, moved = true; moved && guard < 8; guard++) {
+        moved = false;
+        for (const b of flagRects) {
+          if (Math.abs(fx - b.x) < (fs + b.s) / 2 && Math.abs(fy - b.y) < (fs + b.s) / 2) {
+            fx = b.x + (fs + b.s) / 2 + 3;
+            moved = true;
+          }
+        }
       }
       const img = getFlag(`${coaBase}${kind}_${l.idx}.png`, onAsset ?? null);
       if (!img) return;
@@ -187,12 +200,16 @@ export function drawLabels(ctx: CanvasRenderingContext2D, labels: Labels, scene:
       ctx.shadowColor = 'rgba(0,0,0,0.55)'; ctx.shadowBlur = 6; ctx.shadowOffsetY = 2;
       ctx.drawImage(img, fx - fs / 2, fy - fs, fs, fs);
       ctx.restore();
-      flagRects.push({ x: fx, y: fy });
-      // text labels dodge the banners
-      placed.push({ x: fx, y: fy - fs / 2, hw: fs / 2 + 3, hh: fs / 2 + 3 });
+      flagRects.push({ x: fx, y: fy, s: fs });
+      // realm text dodges the big banners; the small duchy/county pennants
+      // don't block it (names would never fit among hundreds of flags)
+      if (blockText) placed.push({ x: fx, y: fy - fs / 2, hw: fs / 2 + 3, hh: fs / 2 + 3 });
     };
-    for (const l of labels.emp) drawFlag('e', l);
-    for (const l of labels.king) drawFlag('k', l);
+    // top tiers claim their spots first; lower tiers shuffle aside
+    for (const l of labels.emp) drawFlag('e', l, base, true);
+    for (const l of labels.king) drawFlag('k', l, base, true);
+    if (subFlags?.d) for (const l of labels.duchy) drawFlag('d', l, base * 0.78, false);
+    if (subFlags?.c) for (const l of labels.county) drawFlag('c', l, base * 0.6, false);
   }
 
   // ---- strait / sea-route crossings (dashed, like the game) ----

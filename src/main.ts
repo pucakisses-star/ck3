@@ -130,6 +130,14 @@ async function boot(): Promise<void> {
   const lctx = labelCanvas.getContext('2d')!;
   let labels: Labels = buildLabels(world);
   let labelsDirty = true;
+  // duchy/county banners exist only where build_coa rendered the full armory
+  // (the invented world); probe once so the root map skips those tiers
+  const subFlags = { d: false, c: false };
+  for (const t of ['d', 'c'] as const) {
+    fetch(`${BASE}map/ui/coa/${t}_0.png`, { method: 'HEAD' })
+      .then((r) => { if (r.ok) { subFlags[t] = true; labelsDirty = true; } })
+      .catch(() => undefined);
+  }
   const DPR = Math.min(2, window.devicePixelRatio || 1);
   const sizeLabelCanvas = () => {
     labelCanvas.width = window.innerWidth * DPR;
@@ -967,7 +975,7 @@ async function boot(): Promise<void> {
       if (objects.visible !== show) { objects.visible = show; scene.invalidate(); }
     }
     scene.render();
-    if (labelsDirty) { labelsDirty = false; drawLabels(lctx, labels, scene, BASE + 'map/ui/coa/', () => { labelsDirty = true; }); }
+    if (labelsDirty) { labelsDirty = false; drawLabels(lctx, labels, scene, BASE + 'map/ui/coa/', () => { labelsDirty = true; }, subFlags); }
     requestAnimationFrame(loop);
   };
   requestAnimationFrame(loop);
