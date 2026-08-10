@@ -137,8 +137,7 @@ export function drawLabels(ctx: CanvasRenderingContext2D, labels: Labels, scene:
     return { sx: c[0], sy: c[1], screenExt: Math.hypot(b[0] - a[0], b[1] - a[1]), rot };
   }
 
-  function drawStretched(l: RealmLabel, fontPx: number, color: string, shadow: string, targetW: number, alpha: number,
-    flagKind?: string): void {
+  function drawStretched(l: RealmLabel, fontPx: number, color: string, shadow: string, targetW: number, alpha: number): void {
     const m = measure(l);
     if (!m) return;
     if (m.sx < -320 || m.sx > CW + 320 || m.sy < -200 || m.sy > CH + 200) return;
@@ -164,23 +163,36 @@ export function drawLabels(ctx: CanvasRenderingContext2D, labels: Labels, scene:
       cx += cw + sp;
     }
     ctx.restore();
-    // the realm's coat of arms, pinned at its capital when one is declared
-    if (flagKind && coaBase) {
-      const img = getFlag(`${coaBase}${flagKind}_${l.idx}.png`, onAsset ?? null);
-      if (img) {
-        const fs = Math.max(20, Math.min(fontPx * 1.25, 46));
-        let fx = m.sx, fy = m.sy - hh - fs - 4;
-        if (l.capX !== undefined && l.capY !== undefined) {
-          const cp = scene.projectGrid(l.capX, l.capY, 4);
-          if (cp) { fx = cp[0]; fy = cp[1] - fs; }
-        }
-        ctx.save();
-        ctx.globalAlpha = alpha;
-        ctx.shadowColor = 'rgba(0,0,0,0.55)'; ctx.shadowBlur = 6; ctx.shadowOffsetY = 2;
-        ctx.drawImage(img, fx - fs / 2, fy, fs, fs);
-        ctx.restore();
+  }
+
+  // ---- realm banners: every kingdom & empire flag hangs at its capital at
+  // ALL zoom levels, independent of whether the realm's name label fits —
+  // banners never vanish with the text and never swap between zoom tiers.
+  if (coaBase) {
+    const fs = Math.max(20, Math.min(46, 9000 / dist));
+    const flagRects: { x: number; y: number }[] = [];
+    const drawFlag = (kind: string, l: RealmLabel): void => {
+      const cp = scene.projectGrid(l.capX ?? l.x, l.capY ?? l.y, 4);
+      if (!cp) return;
+      let fx = cp[0];
+      const fy = cp[1];
+      if (fx < -fs || fx > CW + fs || fy < -fs || fy > CH + fs * 2) return;
+      // shared capital spot (an empire seat inside its kingdom): hang side by side
+      for (const b of flagRects) {
+        if (Math.abs(fx - b.x) < fs && Math.abs(fy - b.y) < fs) fx = b.x + fs + 3;
       }
-    }
+      const img = getFlag(`${coaBase}${kind}_${l.idx}.png`, onAsset ?? null);
+      if (!img) return;
+      ctx.save();
+      ctx.shadowColor = 'rgba(0,0,0,0.55)'; ctx.shadowBlur = 6; ctx.shadowOffsetY = 2;
+      ctx.drawImage(img, fx - fs / 2, fy - fs, fs, fs);
+      ctx.restore();
+      flagRects.push({ x: fx, y: fy });
+      // text labels dodge the banners
+      placed.push({ x: fx, y: fy - fs / 2, hw: fs / 2 + 3, hh: fs / 2 + 3 });
+    };
+    for (const l of labels.emp) drawFlag('e', l);
+    for (const l of labels.king) drawFlag('k', l);
   }
 
   // ---- strait / sea-route crossings (dashed, like the game) ----
@@ -210,7 +222,7 @@ export function drawLabels(ctx: CanvasRenderingContext2D, labels: Labels, scene:
     for (const l of [...labels.emp].sort((a, b) => b.area - a.area)) {
       const m = measure(l); if (!m) continue;
       const fs = Math.max(22, Math.min(m.screenExt * 2 * 0.15, 56));
-      drawStretched(l, fs, 'rgba(26,20,12,0.86)', 'rgba(238,228,198,0.4)', Math.min(m.screenExt * 2 * 0.9, CW * 0.62), 0.9, 'e');
+      drawStretched(l, fs, 'rgba(26,20,12,0.86)', 'rgba(238,228,198,0.4)', Math.min(m.screenExt * 2 * 0.9, CW * 0.62), 0.9);
     }
   }
   {
@@ -223,8 +235,7 @@ export function drawLabels(ctx: CanvasRenderingContext2D, labels: Labels, scene:
       if (fs * 0.62 > (screenExt * 0.95) / Math.max(3, l.name.length)) {
         fs = Math.max(12, (screenExt * 0.95) / (l.name.length * 0.62));
       }
-      drawStretched(l, fs, 'rgba(26,20,12,0.94)', 'rgba(238,226,192,0.5)', Math.min(screenExt * 0.86, CW * 0.5), alpha,
-        empPhase ? undefined : 'k');
+      drawStretched(l, fs, 'rgba(26,20,12,0.94)', 'rgba(238,226,192,0.5)', Math.min(screenExt * 0.86, CW * 0.5), alpha);
     }
   }
   // ---- named seas: quiet italic labels over open water ----
