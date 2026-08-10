@@ -100,6 +100,32 @@ print("classifying land/sea and terrain ...")
 land_vote = ndimage.mean(old_land.astype(np.float32), labels, range(n_comp))
 is_land = np.asarray(land_vote) >= 0.5
 
+# ---- tiny islands directly off a coast join that coastal province ----
+# The template colours islets as their own regions; a speck of land within
+# REACH of a bigger landmass shouldn't stand alone as a province.
+ISLAND_MAX = 3000      # canvas px: land-mask islets smaller than this merge
+REACH = 100            # ...but only when this close to other land
+land_mask = is_land[labels]
+lm_lab, lm_n = ndimage.label(land_mask)
+lm_sizes = np.bincount(lm_lab.ravel(), minlength=lm_n + 1)
+tiny_flag = np.zeros(lm_n + 1, bool)
+tiny_flag[1:] = lm_sizes[1:] < ISLAND_MAX
+tiny_mask = tiny_flag[lm_lab]
+big_land = land_mask & ~tiny_mask
+if tiny_mask.any() and big_land.any():
+    dist, (iy, ix) = ndimage.distance_transform_edt(~big_land, return_indices=True)
+    sel = tiny_mask & (dist <= REACH)
+    n_islets = int(ndimage.label(sel)[1])
+    labels = np.where(sel, labels[iy, ix], labels)
+    uniq_vals, inv = np.unique(labels, return_inverse=True)
+    labels = inv.reshape(CH, CW)
+    is_land = is_land[uniq_vals]
+    n_comp = len(uniq_vals)
+    print(f"  merged {n_islets} tiny coastal islets into their coastal provinces "
+          f"({n_comp} regions remain)")
+    del dist, iy, ix, sel
+del land_mask, lm_lab, lm_sizes, tiny_flag, tiny_mask, big_land
+
 print("  recomputing the mountain-colour field ...")
 src = Image.open(SRC).convert("RGB")
 canvas = np.full((CH, CW, 3), 245, np.int16)
