@@ -174,21 +174,12 @@ async function boot(): Promise<void> {
       [T.SNOW]: pool(['terr_mtn'], 'snow', 'mountain'),
     } as Record<number, string[]>,
   };
-  /** editor overrides: panel artwork chosen by hand per province */
+  /** Panel artwork is hand-assigned per province in the editor; provinces
+   *  start with no portrait, and an image already given to one province is
+   *  withdrawn from the choices offered for every other. */
   const artOverride = new Map<number, string>();
   function artFor(p: number): string {
-    const ov = artOverride.get(p);
-    if (ov) return ov;
-    const h = world.holdingOf[p], t = world.pTerr[p], c = world.countyOf[p];
-    const pick = (arr: string[]) => arr[p % arr.length];
-    if (c >= 0) {
-      if (h === 1) return pick(ART.castle);
-      if (h === 2) return t === T.BEACH ? pick(ART.port) : pick(ART.city);
-      if (h === 3) return pick(ART.temple);
-      if (h === 4) return pick(ART.tribal);
-    }
-    const arr = ART.terr[t];
-    return arr ? pick(arr) : 'holding_0.png';
+    return artOverride.get(p) ?? '';
   }
   const swatch = (col: [number, number, number] | number[]) =>
     `<span class="swatch" style="background:rgb(${col[0]},${col[1]},${col[2]})"></span>`;
@@ -279,11 +270,14 @@ async function boot(): Promise<void> {
       $('selBars').style.display = 'block';
     } else $('selBars').style.display = 'none';
 
-    // province artwork: scenic paintings & terrain illustrations from gfx/
+    // province artwork: only what the editor assigned (none by default)
     const illu = $('selIllu') as HTMLImageElement;
-    illu.src = `${BASE}map/ui/${artFor(p)}`;
-    illu.style.display = 'block';
-    illu.onerror = () => { illu.style.display = 'none'; };
+    const artFile = artFor(p);
+    if (artFile) {
+      illu.style.display = 'block';
+      illu.onerror = () => { illu.style.display = 'none'; };
+      illu.src = `${BASE}map/ui/${artFile}`;
+    } else illu.style.display = 'none';
 
     sel.style.display = 'block';
   }
@@ -456,34 +450,42 @@ async function boot(): Promise<void> {
   const edPrev = $('edPrev') as HTMLImageElement;
   const saveLink = $('dledits') as HTMLAnchorElement;
 
+  const opt = (v: string, label: string) => {
+    const o = document.createElement('option');
+    o.value = v; o.textContent = label;
+    return o;
+  };
   {
-    const opt = (v: string, label: string) => {
-      const o = document.createElement('option');
-      o.value = v; o.textContent = label;
-      return o;
-    };
     for (const t of LAND_TERR) edTerr.appendChild(opt(String(t), TNAME[t]));
     edCult.appendChild(opt('-1', '(none)'));
     world.cultName.forEach((n, i) => edCult.appendChild(opt(String(i), n)));
     edFaith.appendChild(opt('-1', '(none)'));
     world.faithName.forEach((n, i) => edFaith.appendChild(opt(String(i), n)));
     HOLDING_NAME.forEach((n, i) => edHold.appendChild(opt(String(i), n)));
-    // picture choices: every panel artwork, grouped like the auto-pick pools
-    edArt.appendChild(opt('', 'Auto (terrain & holding)'));
+  }
+  /** Picture choices, rebuilt per province: every panel artwork grouped by
+   *  scenery, minus images already assigned to OTHER provinces — each
+   *  painting can hang in only one province at a time. */
+  function rebuildArtOptions(p: number): void {
+    const taken = new Set<string>();
+    for (const [q, f] of artOverride) if (q !== p) taken.add(f);
+    edArt.innerHTML = '';
+    edArt.appendChild(opt('', '(no picture)'));
     const seen = new Set<string>();
     const group = (label: string, files: string[]) => {
       const g = document.createElement('optgroup');
       g.label = label;
       for (const f of files) {
-        if (seen.has(f)) continue;
+        if (seen.has(f) || taken.has(f)) continue;
         seen.add(f);
-        g.appendChild(opt(f, f.replace(/\.png$/, '').replace(/^(art_|terr_|holding_)/, '').replace(/_/g, ' ')));
+        g.appendChild(opt(f, f.replace(/\.(png|jpg)$/, '').replace(/^(art_|terr_|holding_)/, '').replace(/_/g, ' ')));
       }
       if (g.children.length) edArt.appendChild(g);
     };
     group('Castles', ART.castle); group('Cities', ART.city); group('Ports', ART.port);
     group('Temples', ART.temple); group('Tribal', ART.tribal);
     for (const t of LAND_TERR) group(TNAME[t], ART.terr[t] ?? []);
+    edArt.value = artOverride.get(p) ?? '';
   }
 
   function refreshSave(): void {
@@ -533,9 +535,11 @@ async function boot(): Promise<void> {
   }
   function updPrev(): void {
     if (editProv < 0) return;
+    const f = artFor(editProv);
+    if (!f) { edPrev.style.display = 'none'; return; }
     edPrev.style.display = 'block';
     edPrev.onerror = () => { edPrev.style.display = 'none'; };
-    edPrev.src = `${BASE}map/ui/${artFor(editProv)}`;
+    edPrev.src = `${BASE}map/ui/${f}`;
   }
   function openEditor(p: number): void {
     editProv = p;
@@ -553,7 +557,7 @@ async function boot(): Promise<void> {
     edFaith.value = String(world.faithOf[p]);
     edHold.value = String(world.holdingOf[p]);
     edDev.value = String(world.devOf[p]);
-    edArt.value = artOverride.get(p) ?? '';
+    rebuildArtOptions(p);
     updPrev();
     edPanel.style.display = 'block';
   }
@@ -576,7 +580,6 @@ async function boot(): Promise<void> {
     setTerrain(editProv, t);
     r.terrain = t;
     trimRec(editProv);
-    updPrev(); // auto artwork follows the terrain
   };
   edCult.onchange = () => {
     if (editProv < 0) return;
@@ -605,7 +608,6 @@ async function boot(): Promise<void> {
     world.holdingOf[editProv] = h;
     r.holding = h;
     trimRec(editProv);
-    updPrev();
   };
   edDev.onchange = () => {
     if (editProv < 0) return;
