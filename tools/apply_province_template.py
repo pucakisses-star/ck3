@@ -17,7 +17,9 @@ the CURRENT map_data (which already carries all the coastline cleanup —
 letter removal, island keeping, lake detection — done in the main
 generator); terrain type is reclassified from the committed heightmap and
 a freshly recomputed mountain-colour field, the same way the main
-generator does it. heightmap.png and rivers.png are untouched.
+generator does it. rivers.png is untouched; heightmap.png is only touched
+where the template draws brand-new islands over what used to be open water
+(a low island profile is sculpted so they rise from the sea).
 
 Dev-only: needs scipy (not the CI's pillow/numpy). Run locally and commit
 the map_data outputs; CI then rebuilds docs/ from them.
@@ -99,6 +101,57 @@ if len(tiny):
 print("classifying land/sea and terrain ...")
 land_vote = ndimage.mean(old_land.astype(np.float32), labels, range(n_comp))
 is_land = np.asarray(land_vote) >= 0.5
+
+# ---- islands drawn in the template are land even where the old map had
+# open water: a small region surrounded by ocean is an island by intent
+# (the author doesn't subdivide open sea into specks). Regions ringed by
+# land stay water — those are lakes.
+ISLAND_LAND_MAX = 25000     # canvas px: bigger water regions are real seas
+sizes2 = np.bincount(labels.ravel(), minlength=n_comp)
+cand = np.flatnonzero(~is_land & (sizes2 < ISLAND_LAND_MAX) & (sizes2 > 0))
+if len(cand):
+    la, lb = labels[:, :-1].ravel(), labels[:, 1:].ravel()
+    m_ = la != lb
+    pairs = np.stack([la[m_], lb[m_]])
+    la, lb = labels[:-1, :].ravel(), labels[1:, :].ravel()
+    m_ = la != lb
+    pairs = np.concatenate([pairs, np.stack([la[m_], lb[m_]])], axis=1)
+    pairs.sort(axis=0)
+    pk = pairs[0].astype(np.int64) * n_comp + pairs[1]
+    uk, uc = np.unique(pk, return_counts=True)
+    ua, ub = uk // n_comp, uk % n_comp
+    cand_set = set(cand.tolist())
+    flipped = 0
+    for c in cand:
+        sea_b = land_b = 0
+        for other, cnt in zip(np.concatenate([ub[ua == c], ua[ub == c]]),
+                              np.concatenate([uc[ua == c], uc[ub == c]])):
+            if other in cand_set:
+                continue
+            if is_land[other]:
+                land_b += cnt
+            else:
+                sea_b += cnt
+        if sea_b >= land_b and sea_b > 0:
+            is_land[c] = True
+            flipped += 1
+    print(f"  kept {flipped} template-drawn islands as land")
+
+# newly drawn islands may have no relief at all — sculpt a low island
+# profile into the heightmap so they rise from the water like the rest
+SEA = 0.34
+h16_full = np.asarray(Image.open(MD / "heightmap.png"), dtype=np.float32) / 255.0
+sunken = is_land[labels] & (h16_full < SEA + 0.005)
+if sunken.any():
+    din = ndimage.distance_transform_edt(sunken)
+    prof = SEA + 0.02 + np.clip(din / 60.0, 0, 1) * 0.06
+    h16_full = np.where(sunken, np.maximum(h16_full, prof), h16_full)
+    band = ndimage.binary_dilation(sunken, iterations=4)
+    h_sm = ndimage.gaussian_filter(h16_full, 2.0)
+    h16_full = np.where(band, h_sm, h16_full)
+    Image.fromarray((np.clip(h16_full, 0, 1) * 255).astype(np.uint8), mode="L").save(MD / "heightmap.png")
+    print(f"  sculpted relief under {int(ndimage.label(sunken)[1])} flat drawn islands")
+del h16_full
 
 # ---- tiny islands directly off a coast join that coastal province ----
 # The template colours islets as their own regions; a speck of land hugging
