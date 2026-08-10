@@ -388,7 +388,7 @@ if BORROW_COA:
     # the invented world hangs a banner on every duchy and county as well,
     # so (nearly) the whole Godherja armory flies somewhere on the map
     tables += [("d", meta.get("duchies", [])), ("c", meta.get("counties", []))]
-made = authored = borrowed = rejected = 0
+made = authored = borrowed = rejected = removed = 0
 for kind, table in tables:
     for i, ent in enumerate(table):
         key = ent.get("t")
@@ -411,6 +411,10 @@ for kind, table in tables:
                     break
                 rejected += 1
         if img is None:
+            if BORROW_COA:
+                # never invent a banner: no authentic design left -> no flag
+                removed += 1
+                continue
             if col and SYNTH_PATTERN:
                 img = synthetic_coa(col, i * 7 + (1 if kind == "e" else 0))
             else:
@@ -418,4 +422,4 @@ for kind, table in tables:
         frame(img).save(OUT / f"{kind}_{i}.png", optimize=True)
         made += 1
 print(f"{made} flags rendered ({authored} authored, {borrowed} borrowed, "
-      f"{rejected} blank designs skipped)")
+      f"{rejected} blank designs skipped, {removed} removed for lack of designs)")
