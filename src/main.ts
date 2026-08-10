@@ -454,7 +454,11 @@ async function boot(): Promise<void> {
   const edFaith = $('edFaith') as HTMLSelectElement;
   const edHold = $('edHold') as HTMLSelectElement;
   const edDev = $('edDev') as HTMLInputElement;
-  const edArt = $('edArt') as HTMLSelectElement;
+  const edArtWrap = $('edArtWrap');
+  const edArtBtn = $('edArtBtn') as HTMLButtonElement;
+  const edArtThumb = $('edArtThumb') as HTMLImageElement;
+  const edArtLabel = $('edArtLabel');
+  const edArtList = $('edArtList');
   const edPrev = $('edPrev') as HTMLImageElement;
   const saveLink = $('dledits') as HTMLAnchorElement;
 
@@ -471,29 +475,53 @@ async function boot(): Promise<void> {
     world.faithName.forEach((n, i) => edFaith.appendChild(opt(String(i), n)));
     HOLDING_NAME.forEach((n, i) => edHold.appendChild(opt(String(i), n)));
   }
-  /** Picture choices, rebuilt per province: every panel artwork grouped by
-   *  scenery, minus images already assigned to OTHER provinces — each
-   *  painting can hang in only one province at a time. */
+  const artName = (f: string): string =>
+    f.replace(/\.(png|jpg)$/, '').replace(/^(art_|terr_|holding_)/, '').replace(/_/g, ' ');
+  /** the picker button mirrors the current choice: thumbnail + name */
+  function setArtButton(p: number): void {
+    const f = artOverride.get(p) ?? '';
+    edArtLabel.textContent = f ? artName(f) : '(no picture)';
+    if (f) { edArtThumb.style.display = ''; edArtThumb.src = `${BASE}map/ui/${f}`; }
+    else edArtThumb.style.display = 'none';
+  }
+  /** Picture choices, rebuilt per province: every panel artwork with a lazy
+   *  thumbnail, grouped by scenery, minus images already hanging in OTHER
+   *  provinces — each painting can hang in only one province at a time.
+   *  (A custom dropdown: native selects can't show images in options.) */
   function rebuildArtOptions(p: number): void {
     const taken = new Set<string>();
     for (const [q, f] of artOverride) if (q !== p) taken.add(f);
-    edArt.innerHTML = '';
-    edArt.appendChild(opt('', '(no picture)'));
+    const cur = artOverride.get(p) ?? '';
+    let html = `<div class="arow${cur === '' ? ' cur' : ''}" data-f="">(no picture)</div>`;
     const seen = new Set<string>();
     const group = (label: string, files: string[]) => {
-      const g = document.createElement('optgroup');
-      g.label = label;
+      let rows = '';
       for (const f of files) {
         if (seen.has(f) || taken.has(f)) continue;
         seen.add(f);
-        g.appendChild(opt(f, f.replace(/\.(png|jpg)$/, '').replace(/^(art_|terr_|holding_)/, '').replace(/_/g, ' ')));
+        rows += `<div class="arow${f === cur ? ' cur' : ''}" data-f="${f}">`
+          + `<img loading="lazy" src="${BASE}map/ui/${f}" alt=""><span>${artName(f)}</span></div>`;
       }
-      if (g.children.length) edArt.appendChild(g);
+      if (rows) html += `<div class="ahdr">${label}</div>` + rows;
     };
     group('Castles', ART.castle); group('Cities', ART.city); group('Ports', ART.port);
     group('Temples', ART.temple); group('Tribal', ART.tribal);
     for (const t of LAND_TERR) group(TNAME[t], ART.terr[t] ?? []);
-    edArt.value = artOverride.get(p) ?? '';
+    edArtList.innerHTML = html;
+    edArtList.querySelectorAll<HTMLElement>('.arow').forEach((row) => {
+      row.onclick = () => pickArt(row.dataset.f ?? '');
+    });
+    setArtButton(p);
+  }
+  function pickArt(v: string): void {
+    edArtList.classList.remove('open');
+    if (editProv < 0) return;
+    const r = rec(editProv);
+    if (v) artOverride.set(editProv, v); else artOverride.delete(editProv);
+    r.art = v;
+    trimRec(editProv);
+    updPrev();
+    rebuildArtOptions(editProv);
   }
 
   function refreshSave(): void {
@@ -628,15 +656,10 @@ async function boot(): Promise<void> {
     trimRec(editProv);
     applyMode(currentMode);
   };
-  edArt.onchange = () => {
-    if (editProv < 0) return;
-    const v = edArt.value;
-    const r = rec(editProv);
-    if (v) artOverride.set(editProv, v); else artOverride.delete(editProv);
-    r.art = v;
-    trimRec(editProv);
-    updPrev();
-  };
+  edArtBtn.onclick = () => edArtList.classList.toggle('open');
+  document.addEventListener('pointerdown', (e) => {
+    if (!edArtWrap.contains(e.target as Node)) edArtList.classList.remove('open');
+  });
   $('edRevert').onclick = () => {
     const p = editProv;
     if (p < 0) return;
