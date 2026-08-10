@@ -375,28 +375,47 @@ def borrow(kind):
                 return coa_defs[key]
     return []
 
+def _blank(img):
+    """True when a rendered flag reads as a blank swatch — near-uniform, or
+    washed-out white (missing textures leave white/flat canvases)."""
+    a = np.asarray(img.convert("RGB"), dtype=np.float32)
+    L = a.mean(axis=-1)
+    return L.std() < 12 or (L.mean() > 195 and L.std() < 35)
+
 meta = json.load(open(META_FILE))
 tables = [("k", meta["kingdoms"]), ("e", meta["empires"])]
 if BORROW_COA:
     # the invented world hangs a banner on every duchy and county as well,
     # so (nearly) the whole Godherja armory flies somewhere on the map
     tables += [("d", meta.get("duchies", [])), ("c", meta.get("counties", []))]
-made = authored = borrowed = 0
+made = authored = borrowed = rejected = 0
 for kind, table in tables:
     for i, ent in enumerate(table):
         key = ent.get("t")
         block = coa_defs.get(key, []) if key else []
+        col = cl(ent["c"]) if ent.get("c") else None
+        img = None
         if block:
             authored += 1
-        elif BORROW_COA:
-            block = borrow(kind)
-            if block:
-                borrowed += 1
-        col = cl(ent["c"]) if ent.get("c") else None
-        if not block and col and SYNTH_PATTERN:
-            img = synthetic_coa(col, i * 7 + (1 if kind == "e" else 0))
-        else:
             img = render_coa(block, col)
+        elif BORROW_COA:
+            # keep borrowing until a design actually renders as a banner
+            while True:
+                block = borrow(kind)
+                if not block:
+                    break
+                cand = render_coa(block, col)
+                if not _blank(cand):
+                    img = cand
+                    borrowed += 1
+                    break
+                rejected += 1
+        if img is None:
+            if col and SYNTH_PATTERN:
+                img = synthetic_coa(col, i * 7 + (1 if kind == "e" else 0))
+            else:
+                img = render_coa([], col)
         frame(img).save(OUT / f"{kind}_{i}.png", optimize=True)
         made += 1
-print(f"{made} flags rendered ({authored} authored, {borrowed} borrowed)")
+print(f"{made} flags rendered ({authored} authored, {borrowed} borrowed, "
+      f"{rejected} blank designs skipped)")
