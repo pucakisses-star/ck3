@@ -31,8 +31,9 @@ from skimage.segmentation import watershed
 Image.MAX_IMAGE_PIXELS = None
 ROOT = Path(__file__).resolve().parent.parent
 MD = ROOT / "worldsource" / "map_data"
-RIVER_PULL = 120     # px: how far from water the pull is felt
-CORE_ERODE = 10      # px: how far a province core is pulled back from its edge
+RIVER_PULL = 250     # px: how far from water the pull is felt
+CORE_ERODE = 30      # px: how far a province core is pulled back, i.e. how
+                     # far a border may travel to reach the river it should follow
 
 print("loading province + river data ...")
 prov = np.asarray(Image.open(MD / "provinces.png").convert("RGB"), dtype=np.uint32)
@@ -71,25 +72,31 @@ dwater = ndimage.distance_transform_edt(~(river | water)).astype(np.float32)
 cost = 1.0 - np.clip(dwater / RIVER_PULL, 0, 1)
 cost = ndimage.gaussian_filter(cost, 1.5)
 
+# rivers are hard barriers: the watershed cannot flow across one, so a river
+# with different provinces on its banks becomes an exact border
+barrier = ndimage.binary_dilation(river, iterations=1)
+mask = land & ~barrier
+
 # ---- seeds: each land province's eroded core keeps its identity
 print("eroding province cores as seeds ...")
 land_ids = sorted(set(np.unique(idg[land]).tolist()) - {-1})
 markers = np.zeros(idg.shape, np.int32)
-kept = 0
 for pid in land_ids:
-    m = idg == pid
+    m = (idg == pid) & mask
     core = ndimage.binary_erosion(m, iterations=CORE_ERODE)
+    if not core.any():                              # small province: erode less
+        core = ndimage.binary_erosion(m, iterations=max(1, CORE_ERODE // 4))
     if not core.any():                              # tiny province: keep as is
-        core = m
+        core = m if m.any() else (idg == pid)
     markers[core] = pid
-    kept += 1
-print(f"  {kept} province cores seeded")
+print(f"  {len(land_ids)} province cores seeded")
 
 print("re-growing provinces through the cost field ...")
-new_id = watershed(cost, markers, mask=land)
-# any land the watershed missed keeps its old province
-new_id = np.where((new_id == 0) & land, idg, new_id)
-new_id = np.where(land, new_id, idg)
+new_id = watershed(cost, markers, mask=mask)
+# river pixels join whichever bank grew up to them
+ok = new_id > 0
+fidx = ndimage.distance_transform_edt(~ok, return_distances=False, return_indices=True)
+new_id = np.where(land, np.where(ok, new_id, new_id[tuple(fidx)]), idg)
 
 moved = int(((new_id != idg) & land).sum())
 lost = [p for p in land_ids if not (new_id == p).any()]
