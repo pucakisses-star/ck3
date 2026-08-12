@@ -165,19 +165,23 @@ print("classifying land/sea and terrain ...")
 land_vote = ndimage.mean(old_land.astype(np.float32), labels, range(n_comp))
 is_land = np.asarray(land_vote) >= 0.5
 
-# The template paints water in the game's magenta, exactly like rivers.png.
-# Where it does, that colour is the authority — voting against the PREVIOUS
-# map would keep a freshly drawn lake as land forever, because the vote can
-# only ever see what the old partition had there.
-tmpl_water = (tmpl[:, :, 0] > 200) & (tmpl[:, :, 1] < 80) & (tmpl[:, :, 2] > 80)
-WATER_AUTHORITATIVE = tmpl_water.mean() > 0.2
+# THE RIVER MAP SAYS WHERE THE WATER IS. rivers.png marks water in the
+# game's magenta and it is the drawing of record for seas and lakes — the
+# template's own magenta is close but not identical (it spills over bays and
+# inlets that are land in the river map), and voting against the PREVIOUS
+# partition can only ever repeat what used to be there, so a freshly drawn
+# lake would stay land forever. Hence: water == magenta in rivers.png.
+rv_auth = np.asarray(Image.open(MD / "rivers.png").convert("RGB"), dtype=np.int16)
+river_water = (rv_auth[:, :, 0] > 200) & (rv_auth[:, :, 1] < 80) & (rv_auth[:, :, 2] > 80)
+WATER_AUTHORITATIVE = river_water.mean() > 0.2
 if WATER_AUTHORITATIVE:
-    wfrac = np.asarray(ndimage.mean(tmpl_water.astype(np.float32), labels, range(n_comp)))
+    wfrac = np.asarray(ndimage.mean(river_water.astype(np.float32), labels, range(n_comp)))
     flipped_to_sea = int(((wfrac >= 0.5) & is_land).sum())
     flipped_to_land = int(((wfrac < 0.5) & ~is_land).sum())
     is_land = wfrac < 0.5
-    print(f"  template water colour is authoritative: {flipped_to_sea} regions "
+    print(f"  river map is authoritative for water: {flipped_to_sea} regions "
           f"become water, {flipped_to_land} become land")
+del rv_auth
 
 # ---- islands drawn in the template are land even where the old map had
 # open water: a small region surrounded by ocean is an island by intent
