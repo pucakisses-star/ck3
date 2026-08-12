@@ -97,6 +97,69 @@ if len(tiny):
     n_comp = len(uniq_vals)
     print(f"  merged {len(tiny)} stray regions under {MIN_SIZE}px")
 
+# ---- same colour across a narrow strait = one province ----
+# The template's palette repeats across unrelated regions, so same-colour
+# blobs are normally separate provinces. But when two blobs of one colour sit
+# only a sliver of water apart, the author drew one province split by a
+# channel — rejoin those. Unrelated regions that happen to share a colour are
+# hundreds of px apart and stay separate.
+STRAIT_GAP = 80        # canvas px: blobs closer than this rejoin
+print("rejoining same-colour blobs across narrow water ...")
+from scipy.spatial import cKDTree
+
+parent = list(range(n_comp))
+def find(a):
+    while parent[a] != a:
+        parent[a] = parent[parent[a]]
+        a = parent[a]
+    return a
+def union(a, b):
+    ra, rb = find(a), find(b)
+    if ra != rb:
+        parent[max(ra, rb)] = min(ra, rb)
+
+comp_col = np.zeros(n_comp, np.int64)
+comp_col[labels.ravel()] = key.ravel()
+by_col = {}
+for c in range(n_comp):
+    by_col.setdefault(int(comp_col[c]), []).append(c)
+sizes_c = np.bincount(labels.ravel(), minlength=n_comp)
+# only LAND blobs rejoin: two stretches of sea that happen to share a colour
+# are separate waters (and lakes must never be swallowed by the ocean)
+comp_land = np.asarray(ndimage.mean(old_land.astype(np.float32), labels, range(n_comp))) >= 0.5
+objs_c = ndimage.find_objects(labels + 1)
+joined = 0
+for col, comps in by_col.items():
+    comps = [c for c in comps if sizes_c[c] >= 200 and comp_land[c]]
+    if len(comps) < 2:
+        continue
+    edge_pts = {}
+    for c in comps:
+        sl = objs_c[c]
+        m = labels[sl] == c
+        b = m & ~ndimage.binary_erosion(m)
+        pts = np.argwhere(b)[::5]
+        if len(pts):
+            pts = pts + np.array([sl[0].start, sl[1].start])
+        edge_pts[c] = pts
+    for i in range(len(comps)):
+        for j in range(i + 1, len(comps)):
+            pa, pb = edge_pts[comps[i]], edge_pts[comps[j]]
+            if not len(pa) or not len(pb):
+                continue
+            d = cKDTree(pa).query(pb, k=1)[0].min()
+            if d <= STRAIT_GAP:
+                union(comps[i], comps[j])
+                joined += 1
+if joined:
+    remap = np.array([find(c) for c in range(n_comp)], np.int64)
+    labels = remap[labels]
+    uniq_vals, inv = np.unique(labels, return_inverse=True)
+    labels = inv.reshape(CH, CW)
+    n_comp = len(uniq_vals)
+    print(f"  rejoined {joined} blob pairs across water under {STRAIT_GAP}px "
+          f"({n_comp} regions remain)")
+
 # ------------------------------------------------------ land/sea + terrain
 print("classifying land/sea and terrain ...")
 land_vote = ndimage.mean(old_land.astype(np.float32), labels, range(n_comp))
