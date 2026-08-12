@@ -14,8 +14,10 @@ tools/build_fixed_map.py picks up via GH_NAMES_FILE.
 Needs only pillow+numpy (CI-safe).
 """
 import csv
+import re
 import numpy as np
 from PIL import Image
+from scipy import ndimage
 
 ROOT = __import__("pathlib").Path(__file__).resolve().parent.parent
 MD = ROOT / "worldsource" / "map_data"
@@ -107,10 +109,31 @@ def nearest(anchors, cy, cx):
                 best, bd = name, d
     return best, bd ** 0.5
 
+# inland lakes are not the ocean: a water province that belongs to a water
+# body which never reaches the map edge is a lake, and must not be handed an
+# ocean's name (a small lake stamped "Grandiver" reads as a sea, not a lake)
+sea_ids = [p for p, t in terr.items() if t == "sea"]
+pal = np.array(sorted(col2id), dtype=np.uint32)
+pal_id = np.array([col2id[int(c)] for c in pal], dtype=np.int32)
+pos = np.searchsorted(pal, key).clip(0, len(pal) - 1)
+idg = np.where(pal[pos] == key, pal_id[pos], -1)
+water = np.isin(idg, sea_ids)
+wlab, wn = ndimage.label(water)
+edge = set(np.unique(np.concatenate([wlab[0], wlab[-1], wlab[:, 0], wlab[:, -1]])).tolist()) - {0}
+lake_ids = set()
+for comp in range(1, wn + 1):
+    if comp in edge:
+        continue                      # touches the frame: open ocean
+    lake_ids |= set(np.unique(idg[wlab == comp]).tolist())
+lake_ids.discard(-1)
+print(f"  {len(lake_ids)} inland lake provinces kept out of the ocean names")
+
 names = {}
 n_sea = n_mtn = 0
 for pid, (cy, cx) in cent.items():
     t = terr.get(pid)
+    if pid in lake_ids:
+        continue
     if t == "sea":
         nm, d = nearest(SEAS, cy, cx)
         if nm and d <= SEA_CAP:
@@ -121,6 +144,28 @@ for pid, (cy, cx) in cent.items():
         if nm and d <= RANGE_CAP:
             names[pid] = nm
             n_mtn += 1
+
+# a lake is water but not a navigable sea zone: default.map lists it under
+# "lakes" instead of "sea_zones" (build_fixed_map counts both as water)
+dm_path = MD / "default.map"
+dm = dm_path.read_text(encoding="utf-8")
+head, zones = [], []
+for line in dm.splitlines():
+    m = re.match(r"^sea_zones = LIST \{ (.*) \}$", line.strip())
+    if m:
+        zones += [int(x) for x in m.group(1).split()]
+    else:
+        head.append(line)
+head = [h for h in head if not h.strip().startswith("lakes = LIST")]
+kept = [z for z in zones if z not in lake_ids]
+lakes = sorted(lake_ids)
+with open(dm_path, "w", encoding="utf-8") as f:
+    f.write("\n".join(head).rstrip("\n") + "\n")
+    for i in range(0, len(kept), 300):
+        f.write(f"sea_zones = LIST {{ {' '.join(str(x) for x in kept[i:i+300])} }}\n")
+    for i in range(0, len(lakes), 300):
+        f.write(f"lakes = LIST {{ {' '.join(str(x) for x in lakes[i:i+300])} }}\n")
+print(f"  moved {len(lakes)} lakes from sea_zones to the lakes list")
 
 with open(MD / "names.csv", "w", encoding="utf-8") as f:
     for pid in sorted(names):
