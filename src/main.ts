@@ -183,11 +183,14 @@ async function boot(): Promise<void> {
     } as Record<number, string[]>,
   };
   /** Panel artwork is hand-assigned per province in the editor; provinces
-   *  start with no portrait, and an image already given to one province is
-   *  withdrawn from the choices offered for every other. */
+   *  start with no portrait unless the world data curates one (world.picOf),
+   *  and an image already given to one province is withdrawn from the
+   *  choices offered for every other. */
   const artOverride = new Map<number, string>();
   function artFor(p: number): string {
-    return artOverride.get(p) ?? '';
+    const ov = artOverride.get(p);
+    if (ov !== undefined) return ov;
+    return world.picOf?.[p] ?? '';
   }
   const swatch = (col: [number, number, number] | number[]) =>
     `<span class="swatch" style="background:rgb(${col[0]},${col[1]},${col[2]})"></span>`;
@@ -479,7 +482,7 @@ async function boot(): Promise<void> {
     f.replace(/\.(png|jpg)$/, '').replace(/^(art_|terr_|holding_)/, '').replace(/_/g, ' ');
   /** the picker button mirrors the current choice: thumbnail + name */
   function setArtButton(p: number): void {
-    const f = artOverride.get(p) ?? '';
+    const f = artFor(p);
     edArtLabel.textContent = f ? artName(f) : '(no picture)';
     if (f) { edArtThumb.style.display = ''; edArtThumb.src = `${BASE}map/ui/${f}`; }
     else edArtThumb.style.display = 'none';
@@ -490,8 +493,12 @@ async function boot(): Promise<void> {
    *  (A custom dropdown: native selects can't show images in options.) */
   function rebuildArtOptions(p: number): void {
     const taken = new Set<string>();
-    for (const [q, f] of artOverride) if (q !== p) taken.add(f);
-    const cur = artOverride.get(p) ?? '';
+    for (let q = 0; q < world.np; q++) {
+      if (q === p) continue;
+      const f = artOverride.has(q) ? artOverride.get(q)! : (world.picOf?.[q] ?? '');
+      if (f) taken.add(f);
+    }
+    const cur = artFor(p);
     let html = `<div class="arow${cur === '' ? ' cur' : ''}" data-f="">(no picture)</div>`;
     const seen = new Set<string>();
     const group = (label: string, files: string[]) => {

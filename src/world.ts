@@ -5,7 +5,7 @@
 import { T, REALM_COLORS, type World, type CharCard } from './types';
 import { mulberry32, makeNoise, nameGen } from './rng';
 
-interface MetaProvince { n: string; t: number; s: number; c: number; cu: number; f: number; h?: number; dv?: number }
+interface MetaProvince { n: string; t: number; s: number; c: number; cu: number; f: number; h?: number; dv?: number; pic?: string }
 interface Meta {
   W: number; H: number;
   /** the mod's default bookmark year the holders are evaluated at */
@@ -89,6 +89,7 @@ export async function loadFixedMap(seed: number, base: string): Promise<World> {
   const pTerrList: number[] = [], pCountyList: number[] = [];
   const pCultList: number[] = [], pFaithList: number[] = [];
   const pHoldList: number[] = [], pDevList: number[] = [];
+  const pPicList: string[] = [];
   for (let y = 0; y < H; y++) {
     for (let x = 0; x < W; x++) {
       const i = y * W + x;
@@ -115,6 +116,7 @@ export async function loadFixedMap(seed: number, base: string): Promise<World> {
         pTerrList.push(m.t); pCountyList.push(m.c ?? -1);
         pCultList.push(m.cu ?? -1); pFaithList.push(m.f ?? -1);
         pHoldList.push(m.h ?? 0); pDevList.push(m.dv ?? -1);
+        pPicList.push(m.pic ?? '');
       }
       prov[i] = ci; land[i] = 1; terr[i] = m.t;
     }
@@ -338,6 +340,6 @@ export async function loadFixedMap(seed: number, base: string): Promise<World> {
     seaLabels, straits: meta.straits ?? [],
     rawOf: Int32Array.from(rawOfList), rawGrid,
     rawCounty, rawCult, rawFaith, rawLand, cDuchy, dKing, kEmp,
-    devOf, landCX, landCY, seed,
+    devOf, picOf: pPicList, landCX, landCY, seed,
   } as World;
 }
