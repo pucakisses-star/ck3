@@ -308,7 +308,7 @@ def classify(i):
     if la > 0.7:
         return "plains"
     if la < 0.28:
-        return "desert"
+        return "plains"              # the tropics are grassland here, not drylands
     pid_ = ID0 + i
     return "forest" if ((pid_ * 73) % 5 == 0) else ("farmlands" if (pid_ % 7 == 0) else "plains")
 

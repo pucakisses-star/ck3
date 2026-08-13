@@ -652,7 +652,7 @@ for i, m in enumerate(lidx):
     elif la > 0.7:
         t = "plains"
     elif la < 0.28:
-        t = "desert"
+        t = "plains"                 # the tropics are grassland here, not drylands
     else:
         t = "forest" if ((pid_ * 73) % 5 == 0) else ("farmlands" if (pid_ % 7 == 0) else "plains")
     defs.append(f"{pid_};{col[0]};{col[1]};{col[2]};x;")
