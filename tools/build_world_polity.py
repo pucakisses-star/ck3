@@ -436,24 +436,6 @@ for fi in sorted(set(faith_of.values())):
         faiths[fi].pop("i", None)
 print(f"  copied {n_ic} faith icons")
 
-# hand-curated panel artwork per province (worldsource/world_province_art.csv):
-# regions with a theme — e.g. the African-inspired Gakegan lands — get their
-# pictures assigned here so they survive a rebuild instead of living only in
-# a browser session. Each file is used once; the editor treats these as taken.
-_art_file = ROOT / "worldsource" / "world_province_art.csv"
-if _art_file.exists():
-    n_art = 0
-    for line in _art_file.read_text(encoding="utf-8").splitlines():
-        line = line.strip()
-        if not line or line.startswith("#") or ";" not in line:
-            continue
-        pid, pic = line.split(";", 1)
-        ent = meta["provinces"].get(pid.strip())
-        if ent is not None:
-            ent["pic"] = pic.strip()
-            n_art += 1
-    print(f"  assigned {n_art} curated province pictures")
-
 meta["counties"] = counties
 meta["duchies"] = duchies
 meta["kingdoms"] = kingdoms
