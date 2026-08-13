@@ -11,7 +11,7 @@ cap, so unnamed minor ranges keep their generated names).
 Writes worldsource/map_data/names.csv ("id;name") which
 tools/build_fixed_map.py picks up via GH_NAMES_FILE.
 
-Needs only pillow+numpy (CI-safe).
+Needs pillow, numpy and scipy (all installed by the build workflow).
 """
 import csv
 import re
