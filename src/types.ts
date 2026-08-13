@@ -119,6 +119,8 @@ export interface World {
   cultName: string[]; faithName: string[];
   cultCol: [number, number, number][]; faithCol: [number, number, number][];
   devOf: Uint8Array;
+  /** curated panel artwork per province ('' = none assigned) */
+  picOf: string[];
 
   landCX: number; landCY: number;
   seed: number;
