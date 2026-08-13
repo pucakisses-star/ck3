@@ -48,7 +48,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install pillow numpy
+      # scipy is only needed by build_world_names.py, which labels connected
+      # water bodies to tell inland lakes from the open ocean
+      - run: pip install pillow numpy scipy
 
       - uses: actions/setup-node@v4
         with:
