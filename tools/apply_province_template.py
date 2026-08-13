@@ -296,10 +296,20 @@ SEA = 0.34
 mm_ = np.asarray(ndimage.mean(mtn, labels, range(n_comp)))
 hh_ = np.asarray(ndimage.mean(h16, labels, range(n_comp)))
 la_ = np.asarray(ndimage.mean(lat, labels, range(n_comp)))
+# how much of the province the drawn ranges actually cover. The smoothed
+# intensity mean above averages a range away when it crosses one corner of a
+# big lowland province, which reads on the map as the range being swallowed by
+# its flat neighbour, so raw coverage gets a say of its own.
+mf_ = np.asarray(ndimage.mean(mtn_m.astype(np.float32), labels, range(n_comp)))
+MTN_COVER = 0.20
+
+def impassable(i):
+    """A province that is nothing but range: empty wilderness, no people."""
+    return mm_[i] > 0.18 or hh_[i] > SEA + 0.34
 
 def classify(i):
     mm, hh, la = mm_[i], hh_[i], la_[i]
-    if mm > 0.18 or hh > SEA + 0.34:
+    if impassable(i) or mf_[i] >= MTN_COVER:
         return "mountains"
     if mm > 0.06 or hh > SEA + 0.16:
         return "hills"
@@ -327,7 +337,7 @@ def uniq_colors(n):
 
 cols = uniq_colors(n_comp)
 prov_rgb = np.zeros((CH, CW, 3), np.uint8)
-defs, terr_lines, sea_ids = [], [], []
+defs, terr_lines, sea_ids, wild_ids = [], [], [], []
 land_order = [i for i in range(n_comp) if is_land[i]]
 sea_order = [i for i in range(n_comp) if not is_land[i]]
 remap = np.zeros(n_comp, np.int32)
@@ -338,6 +348,8 @@ for i in land_order:
     prov_rgb[labels == i] = col
     defs.append(f"{pid_};{col[0]};{col[1]};{col[2]};x;")
     terr_lines.append(f"{pid_}={classify(i)}")
+    if impassable(i):
+        wild_ids.append(pid_)
     remap[i] = pid_
     k += 1
 for i in sea_order:
@@ -367,5 +379,9 @@ with open(MD / "default.map", "w", encoding="utf-8") as f:
     for i in range(0, len(sea_ids), 300):
         chunk = " ".join(str(x) for x in sea_ids[i:i + 300])
         f.write(f"sea_zones = LIST {{ {chunk} }}\n")
+    for i in range(0, len(wild_ids), 300):
+        chunk = " ".join(str(x) for x in wild_ids[i:i + 300])
+        f.write(f"impassable_mountains = LIST {{ {chunk} }}\n")
 
+print(f"  {len(wild_ids)} impassable range provinces")
 print("done.")
