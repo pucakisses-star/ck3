@@ -654,6 +654,8 @@ for pid in present:
         "f": -1 if sea else faith_index(prov_faith.get(pid)),
         "h": 0 if sea else prov_holding.get(pid, 0),
     }
+    if pid in mtn_impass:
+        provinces[pid]["w"] = 1        # impassable wilderness: nobody lives here
 
 # capital counties (as county-table indices) for kingdoms & empires
 for _key, _i in k_idx.items():

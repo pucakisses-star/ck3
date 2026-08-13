@@ -9,7 +9,7 @@ GH_MAP_DATA / GH_TERRAIN_FILE / GH_OUT_DIR env overrides):
 
   provinces.png               unique colour per province (land + sea)
   definition.csv              colour -> id table
-  default.map                 lists the sea province ids
+  default.map                 sea zones + impassable mountain ranges
   heightmap.png               8-bit sculpted elevation
   rivers.png                  river mask (white land / magenta sea / blue river)
   adjacencies.csv             empty (no straits yet)
@@ -634,16 +634,27 @@ lidx = [m for m in range(1, mk + 1) if lcount[m] > 0]
 mm_ = ndimage.mean(mtn, lab_land, lidx)
 la_ = ndimage.mean(lat, lab_land, lidx)
 hh_ = ndimage.mean(h16, lab_land, lidx)
+# how much of the province the drawn ranges actually cover. The smoothed
+# intensity mean averages a range away when it crosses one corner of a big
+# lowland province, which reads on the map as the range being swallowed by its
+# flat neighbour, so raw coverage gets a say of its own.
+mf_ = ndimage.mean(mtn_m.astype(np.float32), lab_land, lidx)
+MTN_COVER = 0.20
 lut_land = np.zeros((mk + 1, 3), np.uint8)
+wild_ids = []
 k = 0
 for i, m in enumerate(lidx):
     pid_ = ID0 + k
     col = cols[k]
     lut_land[m] = col
     mm, la, hh = mm_[i], la_[i], hh_[i]
-    if m in mtn_prov:
+    # a province that is nothing but range is empty wilderness; one a range
+    # merely crosses is a mountain province that still holds people
+    wild = m in mtn_prov or mm > 0.18 or hh > SEA + 0.34
+    if wild:
         t = "mountains"
-    elif mm > 0.18 or hh > SEA + 0.34:
+        wild_ids.append(pid_)
+    elif mf_[i] >= MTN_COVER:
         t = "mountains"
     elif mm > 0.06 or hh > SEA + 0.16:
         t = "hills"
@@ -698,6 +709,9 @@ with open(MD / "default.map", "w", encoding="utf-8") as f:
     for i in range(0, len(sea_ids), 300):
         chunk = " ".join(str(x) for x in sea_ids[i:i + 300])
         f.write(f"sea_zones = LIST {{ {chunk} }}\n")
+    for i in range(0, len(wild_ids), 300):
+        chunk = " ".join(str(x) for x in wild_ids[i:i + 300])
+        f.write(f"impassable_mountains = LIST {{ {chunk} }}\n")
 
 (MD / "adjacencies.csv").write_text(
     "From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment;\n-1;-1;;-1;-1;-1;-1;-1;;\n",

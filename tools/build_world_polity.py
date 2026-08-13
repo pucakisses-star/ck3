@@ -115,9 +115,14 @@ for u, v in pairs:
         adj[u].add(v); adj[v].add(u)
 
 # ---------------------------------------------------------------- wasteland
-# mountain ranges stay impassable, tiny skerries stay uncolonised
+# impassable ranges stay empty, tiny skerries stay uncolonised. It is the
+# wilderness flag that empties a province, not the mountain terrain: a range
+# that merely crosses a big province makes it a mountain province, and people
+# still live on the lowland the rest of it covers.
+wild = any(p.get("w") for p in pm.values())
 settled = [i for i in cnt
-           if pm[str(i)]["t"] != MTN and cnt[i] >= 20]
+           if cnt[i] >= 20
+           and not (pm[str(i)].get("w") if wild else pm[str(i)]["t"] == MTN)]
 sset = set(settled)
 print(f"  land {len(cnt)}, settled {len(settled)} ({len(settled)/len(cnt):.0%})")
 
